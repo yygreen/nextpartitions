@@ -18,6 +18,10 @@ Working notes for the nextpartitions.com redesign and the installer directory. R
 - The real configurator (nextpartitions.com/get-a-quote) is a **quote request**, not a checkout. Never write "order" or "checkout" copy for it.
 - **Pilot area: Dallas–Fort Worth** (Texas hub, then the DFW area page). Texas has no statewide contractor license, so checks show city or state business registration.
 
+## Client relationship
+
+- The client (Abe Gold) will consider renewing for a full year if the first month goes well. Aim to overdeliver in month one: visible shipped work every week, and success measures agreed at onboarding with a day-30 review.
+
 ## Prototype pages (claude.ai artifacts)
 
 | Page | URL |
