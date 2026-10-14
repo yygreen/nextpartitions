@@ -1,0 +1,647 @@
+<title>DFW Partition Installers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<style>
+/* Layout: same 1292px container + 12-col grid as the homepage mockup. Listing (8 cols) + sticky request card (4 cols).
+   Light-only, nextpartitions.com tokens. */
+:root{
+  --bg:#fbfaf9; --band:#f4f2ee; --surface:#ffffff; --fg:#1c0e05; --muted:#6d6059;
+  --border:#e1ddd7; --accent:#e8630a; --accent-strong:#c95200; --accent-soft:#fdeee3; --on-accent:#ffffff;
+  --ink:#262626; --ink-fg:#f8f8f8; --ink-muted:#c9c2bc; --good:#1f7a4d; --good-soft:#e6f3ec; --gold:#b7791f;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --container:1360px; --gutter:34px; --gap:24px; --section:80px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter)}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--gap)}
+.c12{grid-column:span 12}.c7{grid-column:span 7}.c5{grid-column:span 5}.c8{grid-column:span 8}.c4{grid-column:span 4}.c6{grid-column:span 6}.c3{grid-column:span 3}
+@media (max-width:1024px){.c8,.c4{grid-column:span 12}.c3{grid-column:span 6}}
+@media (max-width:760px){:root{--gutter:16px;--gap:16px;--section:56px}.c6,.c3{grid-column:span 12}}
+.section{padding-block:var(--section)}
+.band{background:var(--band)}
+.mocknote{background:#fff3c4;border-bottom:1px solid #f0d98a;font-size:13px;color:#5c4400;text-align:center;padding:8px 16px}
+
+/* header (same as homepage mockup) */
+.topbar{background:var(--ink);color:var(--ink-fg);font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-block:9px;flex-wrap:wrap}
+.topbar .contact{display:flex;gap:20px;flex-wrap:wrap}
+.nav{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:env(safe-area-inset-top,0px);z-index:40}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:40px;width:auto}
+.brand b{display:block;font-size:19px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.menu{display:flex;gap:28px;font-weight:600}
+.menu a{text-decoration:none}
+.menu a.on{color:var(--accent-strong)}
+@media (max-width:980px){.menu{display:none}.topbar .tagline{display:none}}
+@media (max-width:520px){.brand small{display:none}.brand img{height:34px}.hero .btn{white-space:normal;text-align:center;width:100%}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;background:var(--accent);color:var(--on-accent);font:inherit;font-weight:700;font-size:16px;padding:12px 22px;min-height:46px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--accent-strong)}
+.btn.ghost{background:var(--surface);color:var(--accent-strong);border:2px solid var(--accent)}
+.btn.ghost:hover{background:var(--accent-soft)}
+.btn.sm{font-size:14px;padding:8px 14px;min-height:38px}
+.link{font:inherit;background:none;border:0;padding:0;color:var(--accent-strong);font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* hero */
+.crumbs{font-size:14px;color:var(--muted);padding-top:28px;display:flex;flex-wrap:wrap;gap:6px}
+.crumbs a{text-decoration:none}.crumbs a:hover{text-decoration:underline}
+.hero{padding-block:16px 40px;border-bottom:1px solid var(--border)}
+.hero h1{font-size:clamp(32px,4.2vw,50px);font-weight:900;letter-spacing:-.035em;line-height:1.06;margin:10px 0 14px;text-wrap:balance;max-width:20ch}
+.hero .lead{font-size:18px;color:var(--muted);max-width:62ch;margin:0 0 22px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin:0 0 26px;padding:0;list-style:none}
+.facts li{display:flex;flex-direction:column}
+.facts b{font-size:26px;font-weight:900;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1}
+.facts span{font-size:13px;color:var(--muted)}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+
+/* filters + cards */
+.filters{display:flex;flex-wrap:nowrap;align-items:center;gap:8px;margin:0 0 18px;overflow-x:auto;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+@media (min-width:601px){.filters .fchip{flex:1 1 auto;text-align:center}}
+.filters .lbl{font-size:13px;font-weight:700;color:var(--muted);margin-right:4px;text-transform:uppercase;letter-spacing:.06em}
+.fchip{font:inherit;font-size:14px;font-weight:600;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:6px 11px;cursor:pointer;white-space:nowrap;flex:none}
+.fchip[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent)}
+.count{font-size:14px;color:var(--muted);margin:0 0 12px}
+.card{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;background:var(--surface);border:1px solid var(--border);padding:20px;margin-bottom:14px}
+.card.pref{border-top:3px solid var(--accent);padding-top:18px}
+@media (max-width:620px){.card{grid-template-columns:1fr}}
+.card .ph{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--band)}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .ph span{position:absolute;left:6px;bottom:6px;font-size:11px;font-weight:600;background:rgba(28,14,5,.75);color:#fff;padding:2px 6px}
+.chead{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+.chead h3{margin:0;font-size:19px;font-weight:800;letter-spacing:-.01em}
+.tier{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border:1px solid}
+.tier.preferred{color:var(--accent-strong);border-color:var(--accent);background:var(--accent-soft)}
+.tier.certified{color:var(--good);border-color:#9fd1b7;background:var(--good-soft)}
+.tier.approved{color:var(--good);border-color:#9fd1b7;background:var(--good-soft)}
+.tier.verified{color:var(--muted);border-color:var(--border);background:var(--band)}
+.sample{font-size:11px;font-weight:700;color:#7a5a00;background:#fff3c4;padding:2px 6px}
+.meta{font-size:14px;color:var(--muted);margin:4px 0 8px}
+.stars{color:var(--gold);letter-spacing:1px}
+.checks{display:flex;flex-wrap:wrap;gap:6px 16px;list-style:none;margin:0 0 10px;padding:0;font-size:13px}
+.checks li{display:flex;align-items:center;gap:5px}
+.checks svg{width:15px;height:15px;color:var(--good);flex:none}
+.mats{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.mats span{font-size:12px;font-weight:600;border:1px solid var(--border);padding:3px 8px;background:var(--bg)}
+.cact{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
+.cact .web{font-size:13px;color:var(--muted)}
+.disc{font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--muted);padding:10px 12px;margin:4px 0 22px}
+.req .disc{margin:12px 0 0}
+.supply{font-size:13px;color:var(--good);font-weight:600;margin:0 0 10px}
+
+/* proximity map */
+.prox{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:20px;background:var(--surface);border:1px solid var(--border);padding:18px;margin:0 0 22px}
+@media (max-width:760px){.prox{grid-template-columns:1fr}}
+.mapbox{min-width:0}
+#map{width:100%;height:auto;display:block;background:#f3efe8;border:1px solid var(--border);cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none}
+#map.dragging{cursor:grabbing}
+.mapwrap{position:relative}
+.mapwrap:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mapctl{position:absolute;top:8px;right:8px;display:flex;flex-direction:column;gap:4px}
+.mapctl button{font:inherit;font-size:20px;font-weight:700;line-height:1;width:36px;height:36px;background:var(--surface);color:var(--fg);border:1px solid var(--border);box-shadow:0 2px 6px rgba(0,0,0,.08);cursor:pointer}
+.mapctl button.txt{font-size:11px;font-weight:700;width:36px;padding:0 2px}
+.mapctl button:hover{border-color:var(--accent);color:var(--accent-strong)}
+.mapctl button:disabled{color:var(--border);cursor:default;border-color:var(--border)}
+.zlevel{position:absolute;left:8px;bottom:8px;font-size:11px;font-weight:700;color:var(--muted);background:rgba(255,255,255,.85);padding:2px 6px}
+.maplegend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--muted);margin:8px 0 0}
+.maplegend span{display:inline-flex;align-items:center;gap:5px}
+.lg{display:inline-block;width:11px;height:11px;border-radius:50%}
+.lg.job{background:var(--accent);box-shadow:0 0 0 2px #fff,0 0 0 3px var(--accent)}
+.lg.base{background:var(--ink)}
+.lg.ring{border:1.5px dashed var(--good);background:transparent}
+.mapnote{margin-left:auto}
+.nearest{min-width:0;display:flex;flex-direction:column;gap:10px}
+.nearest .lab{display:block;font-weight:800;font-size:17px;margin-bottom:8px}
+.zrow{display:flex;gap:8px}
+.zrow input{flex:1;min-width:0;font:inherit;font-size:16px;border:1px solid var(--border);padding:9px 11px;min-height:42px}
+.zhint{font-size:12px;color:var(--muted);margin:6px 0 0}
+.nlist{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.nlist li{display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:10px;align-items:center;border:1px solid var(--border);padding:9px 10px;font-size:14px;cursor:pointer;background:var(--bg)}
+.nlist li:hover,.nlist li.hl{border-color:var(--accent);background:var(--accent-soft)}
+.nlist .rank{display:grid;place-items:center;width:24px;height:24px;background:var(--ink);color:#fff;font-weight:800;font-size:12px}
+.nlist b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nlist .d{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.nlist .d b{font-size:15px}
+.inside{color:var(--good);font-size:12px;font-weight:600}
+.outside{color:#9a5b00;font-size:12px;font-weight:600}
+.countrow{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin:0 0 12px}
+.countrow .count{margin:0}
+.sortby{display:flex;align-items:center;gap:8px}
+.sortby label{font-size:13px;color:var(--muted);font-weight:600}
+.sortby select{font:inherit;font-size:14px;font-weight:600;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:0 10px;min-height:38px;cursor:pointer}
+.dist{display:inline-flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;font-size:14px;margin:0 0 8px;padding:6px 10px;background:var(--bg);border:1px solid var(--border)}
+.dist b{font-variant-numeric:tabular-nums}
+/* hero ZIP search */
+.zipbar{max-width:640px;margin:0 0 10px}
+.zipbar label{display:block;font-weight:800;font-size:15px;margin-bottom:6px}
+.zipbar .zrow input{font-size:18px;min-height:52px}
+.zipbar .btn{min-height:52px;font-size:17px}
+@media (max-width:560px){.zipbar .zrow{flex-direction:column}.zipbar .btn{width:100%}}
+/* map column */
+.mapcard{position:sticky;top:88px;background:var(--surface);border:1px solid var(--border);padding:12px}
+.maptoggle{display:none;margin:0 0 12px}
+@media (max-width:1024px){.c7,.c5{grid-column:span 12}.mapcard{position:static;display:none}.mapcard.open{display:block}.maptoggle{display:inline-flex}
+  .listcol{order:1}aside.c5{order:0}}
+.card.hl{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.feeline{font-size:12px;color:var(--muted)}
+/* request drawer */
+.scrim{position:fixed;inset:0;background:rgba(28,14,5,.4);z-index:70}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);z-index:80;overflow-y:auto;background:var(--bg);box-shadow:-10px 0 30px rgba(0,0,0,.15);padding:calc(16px + env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px))}
+.drawer .req{position:static;box-shadow:none}
+.dclose{position:absolute;top:10px;right:12px;font:inherit;font-size:26px;line-height:1;background:none;border:0;cursor:pointer;color:var(--muted);padding:4px 8px}
+.drawer .req{position:relative}
+/* sticky request card */
+.req{position:sticky;top:88px;background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--accent);padding:22px;box-shadow:0 10px 30px rgba(28,14,5,.06)}
+.req h2{font-size:21px;font-weight:900;letter-spacing:-.02em;margin:0 0 4px}
+.req .sub{font-size:14px;color:var(--muted);margin:0 0 14px}
+.to{font-size:14px;background:var(--accent-soft);border:1px solid var(--accent);padding:8px 10px;margin:0 0 12px;display:flex;justify-content:space-between;gap:8px}
+.f{display:grid;gap:5px;margin-bottom:12px}
+.f label,.f .lab{font-size:14px;font-weight:600}
+.f input,.f select{font:inherit;font-size:15px;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:9px 11px;min-height:42px;width:100%}
+.seg{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--border)}
+.seg button{font:inherit;font-size:14px;font-weight:600;background:var(--surface);color:var(--fg);border:0;padding:9px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--border)}
+.seg button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent-strong)}
+.xsell{font-size:14px;background:var(--good-soft);border:1px solid #9fd1b7;padding:10px 12px;margin:0 0 12px}
+.xsell b{display:block;color:var(--good);margin-bottom:2px}
+.req .btn{width:100%}
+.req .fine{font-size:12px;color:var(--muted);margin:10px 0 0}
+.ok{font-size:15px}
+.ok h3{margin:0 0 6px;font-size:20px;font-weight:900}
+@media (max-width:1024px){.req{position:static}}
+
+/* content sections */
+.h2{font-size:clamp(24px,2.6vw,32px);font-weight:900;letter-spacing:-.03em;margin:0 0 8px;line-height:1.15}
+.intro{color:var(--muted);margin:0 0 28px;max-width:720px}
+.tablewrap{overflow-x:auto;border:1px solid var(--border);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:15px}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--border)}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--band)}
+td.num{font-variant-numeric:tabular-nums;font-weight:700}
+tr:last-child td{border-bottom:0}
+.note{font-size:13px;color:var(--muted);margin:10px 0 0}
+.job{background:var(--surface);border:1px solid var(--border);min-width:0}
+.job img{aspect-ratio:16/10;width:100%;object-fit:cover}
+.job .b{padding:16px}
+.job h3{margin:0 0 4px;font-size:17px;font-weight:800}
+.job p{margin:0;font-size:14px;color:var(--muted)}
+.guide h3{font-size:18px;font-weight:800;margin:0 0 8px}
+.guide ul{margin:0;padding-left:18px;color:var(--muted)}
+.guide li{margin-bottom:6px}
+.guide .card2{border-top:2px solid var(--border);padding-top:16px}
+details{border-bottom:1px solid var(--border);padding:14px 0}
+summary{font-weight:700;cursor:pointer;font-size:17px}
+details p{margin:8px 0 0;color:var(--muted);max-width:75ch}
+.xband{background:var(--ink);color:var(--ink-fg)}
+.xband .wrap{padding-block:56px}
+.xband h2{font-size:clamp(24px,2.6vw,32px);font-weight:900;letter-spacing:-.03em;margin:0 0 6px}
+.xband p{margin:0;color:var(--ink-muted);max-width:640px}
+.xband .grid{align-items:center}
+.xband .act{display:flex;justify-content:flex-end;gap:12px;flex-wrap:wrap}
+@media (max-width:1024px){.xband .act{justify-content:flex-start}}
+.recruit{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;background:var(--surface);border:1px dashed var(--border);padding:24px}
+.recruit h3{margin:0 0 4px;font-size:20px;font-weight:800}
+.recruit p{margin:0;color:var(--muted)}
+.nearby{display:flex;flex-wrap:wrap;gap:8px 24px;font-weight:600}
+.nearby a{color:var(--accent-strong)}
+
+/* profile view */
+.pfhead{display:grid;grid-template-columns:96px minmax(0,1fr);gap:20px;align-items:center}
+.logo{width:96px;height:96px;display:grid;place-items:center;background:var(--ink);color:#fff;font-weight:900;font-size:30px;letter-spacing:-.03em}
+.verify{background:var(--surface);border:1px solid var(--border);padding:20px}
+.verify h3{margin:0 0 10px;font-size:16px;font-weight:800}
+.verify dl{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;margin:0;font-size:14px}
+.verify dt{color:var(--muted)}
+.verify dd{margin:0;font-weight:600}
+.verify dd.ok{color:var(--good)}
+.review{background:var(--surface);border:1px solid var(--border);padding:18px;min-width:0}
+.review p{margin:6px 0 8px}
+.review small{color:var(--muted)}
+.vtag{font-size:11px;font-weight:700;color:var(--good);background:var(--good-soft);padding:2px 6px;margin-left:6px}
+.badgebox{display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center;background:var(--surface);border:1px solid var(--border);padding:22px}
+@media (max-width:700px){.badgebox{grid-template-columns:1fr}}
+pre{margin:8px 0 0;background:var(--band);border:1px solid var(--border);padding:12px;font-family:var(--mono);font-size:12px;overflow-x:auto;white-space:pre}
+.copy{margin-top:8px}
+
+/* footer */
+footer{background:#1a1a1a;color:#d8d2cc;font-size:14px}
+footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+</style>
+
+<div class="mocknote"><b>Mockup:</b> all installers, ratings, reviews, prices and job counts on this page are examples. Verification fields vary by state (Texas has no statewide general contractor license).</div>
+
+<div class="topbar"><div class="wrap"><div class="contact"><span>sales@nextpartitions.com</span><span>1-833-997-7489</span></div><div class="tagline">Authorized Distributor — All Major Brands</div></div></div>
+<nav class="nav" aria-label="Main"><div class="wrap">
+  <a class="brand" href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Commercial Partitions</small></span></a>
+  <div class="menu"><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Partitions</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Mounting Styles</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Hardware &amp; Parts</a><a href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener" class="on">Installers</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Resources</a></div>
+  <a class="btn" href="https://nextpartitions.com/get-a-quote" target="_blank" rel="noopener">Get a Quote</a>
+</div></nav>
+
+<!-- ================= METRO PAGE ================= -->
+<main id="metro">
+<div class="wrap">
+  <div class="crumbs" id="top"><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Home</a>›<a href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener">Installers</a>›<a href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener">Texas</a>›<span>Dallas–Fort Worth</span></div>
+  <header class="hero">
+    <h1>Bathroom Partition Installers in Dallas–Fort Worth</h1>
+    <p class="lead">Find independent, insured installers for toilet partitions and urinal screens throughout the Dallas–Fort Worth area. Enter your job-site ZIP code to find nearby installers and compare estimated drive times.</p>
+    <ul class="facts">
+      <li><b>4</b><span>approved installers</span></li>
+      <li><b>63</b><span>installs for our customers</span></li>
+      <li><b>★ 4.8</b><span>avg. rating from our customers</span></li>
+    </ul>
+    <form class="zipbar" id="zipForm" novalidate>
+      <label for="jobZip">Job-site ZIP</label>
+      <div class="zrow"><input id="jobZip" inputmode="numeric" maxlength="5" placeholder="e.g. 75201" autocomplete="postal-code"><button class="btn" type="submit">Find closest installers</button></div>
+      <p class="zhint" id="zipMsg" hidden></p>
+    </form>
+  </header>
+</div>
+
+<section class="section" style="padding-top:32px"><div class="wrap"><div class="grid">
+  <div class="c7 listcol" style="min-width:0">
+    <div class="filters" role="group" aria-label="Filter by material">
+      <button class="fchip" type="button" data-f="all" aria-pressed="true">All</button>
+      <button class="fchip" type="button" data-f="steel" aria-pressed="false">Powder coated</button>
+      <button class="fchip" type="button" data-f="hdpe" aria-pressed="false">HDPE</button>
+      <button class="fchip" type="button" data-f="phenolic" aria-pressed="false">Phenolic</button>
+      <button class="fchip" type="button" data-f="laminate" aria-pressed="false">Laminate</button>
+      <button class="fchip" type="button" data-f="stainless" aria-pressed="false">Stainless</button>
+    </div>
+    <div class="countrow"><p class="count" id="count">4 installers serving Dallas–Fort Worth</p>
+      <div class="sortby"><label for="sortSel">Sort by</label><select id="sortSel"><option value="score" selected>Installer Score</option><option value="near">Closest to job site</option><option value="rating">Highest rated</option><option value="jobs">Most installs</option></select></div></div>
+    <button type="button" class="btn ghost sm maptoggle" id="mapToggle" aria-expanded="false" aria-controls="mapcard">Show map</button>
+    <div id="list"></div>
+    <p class="disc">Installers are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work. <a class="link" href="#how">How this directory works</a></p>
+    <div class="recruit"><div><h3>Install partitions in DFW?</h3><p>Get install requests from customers buying partitions from us, plus trade pricing on partitions for your own jobs. No listing fee. You quote, contract and invoice customers directly.</p></div><a class="btn ghost" href="#top">Apply for a trade account</a></div>
+  </div>
+  <aside class="c5" style="min-width:0">
+    <div class="mapcard" id="mapcard">
+      <div class="mapwrap" id="mapwrap" tabindex="0" aria-label="Map. Use plus and minus to zoom, arrow keys to pan, 0 to reset.">
+        <svg id="map" viewBox="0 0 460 440" role="img" aria-label="Simplified map of Dallas–Fort Worth showing installer base areas and your job site"></svg>
+        <div class="mapctl" role="group" aria-label="Map zoom">
+          <button type="button" id="zIn" aria-label="Zoom in">+</button>
+          <button type="button" id="zOut" aria-label="Zoom out">−</button>
+          <button type="button" id="zReset" class="txt">Reset</button>
+          <button type="button" id="zFit" class="txt" hidden>Fit job</button>
+        </div>
+        <span class="zlevel" id="zLevel" aria-live="polite">1×</span>
+      </div>
+      <p class="maplegend"><span><i class="lg job"></i>Job site</span><span><i class="lg base"></i>Installer base area</span><span><i class="lg ring"></i>Service radius</span></p>
+      <p class="zhint">Scroll or pinch to zoom · drag to pan · click to set the job site. Simplified map; installers are shown by city, not street address. Distances are straight-line; drive times are estimates.</p>
+    </div>
+  </aside>
+</div></div></section>
+
+
+
+<section class="section band"><div class="wrap">
+  <h2 class="h2">What partition installation costs in DFW</h2>
+  <p class="intro">Typical prices quoted by DFW installers to our customers, per stall, for standard overhead-braced installs on existing finished floors.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Material</th><th>Install per stall</th><th>Typical 6-stall job</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>Powder coated steel</td><td class="num">$95–$125</td><td>1 day</td><td>Lightest panels; fastest install</td></tr>
+      <tr><td>Plastic laminate</td><td class="num">$100–$130</td><td>1 day</td><td>Similar to steel</td></tr>
+      <tr><td>Solid plastic (HDPE)</td><td class="num">$115–$145</td><td>1–1.5 days</td><td>Heavier; most common in schools and gyms</td></tr>
+      <tr><td>Phenolic</td><td class="num">$120–$155</td><td>1–1.5 days</td><td>Dense panels, precise drilling</td></tr>
+      <tr><td>Stainless steel</td><td class="num">$130–$160</td><td>1.5 days</td><td>Careful handling to avoid scratches</td></tr>
+    </tbody></table></div>
+  <p class="note">Example ranges. Add for removal of old partitions, floor-to-ceiling or ceiling-hung mounting, after-hours work, and travel beyond the installer's radius.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <h2 class="h2">Recent installs in Dallas–Fort Worth</h2>
+  <p class="intro">Photos and details from completed jobs, shared with the customer's permission.</p>
+  <div class="grid">
+    <article class="c4 job"><img src="img/solid-plastic.jpg" alt="Charcoal HDPE partitions in a school restroom" loading="lazy"><div class="b"><h3>Middle school, Plano</h3><p>12 stalls · HDPE · Overhead braced · 2 days · by Acme Partition Installs</p></div></article>
+    <article class="c4 job"><img src="img/phenolic.jpg" alt="Tan phenolic partitions with urinal screens" loading="lazy"><div class="b"><h3>Fitness center, Fort Worth</h3><p>6 stalls + 3 urinal screens · Phenolic · Floor mounted · 1.5 days · by Northwind Washroom Pros</p></div></article>
+    <article class="c4 job"><img src="img/stainless-steel.jpg" alt="Stainless steel partitions in an office restroom" loading="lazy"><div class="b"><h3>Office tower, Dallas</h3><p>8 stalls · Stainless · Ceiling hung · 2 days · by Acme Partition Installs</p></div></article>
+  </div>
+</div></section>
+
+<section class="section band"><div class="wrap guide">
+  <h2 class="h2">Hiring a partition installer in Texas</h2>
+  <p class="intro">What to expect, what to ask, and the Texas rules that affect commercial restroom projects.</p>
+  <div class="grid">
+    <div class="c3 card2"><h3>What installation includes</h3><ul><li>Receiving and checking the delivery</li><li>Layout, anchoring and leveling</li><li>Doors, hinges, latches and hardware</li><li>Final adjustment and cleanup</li></ul></div>
+    <div class="c3 card2"><h3>Questions to ask</h3><ul><li>Proof of general liability insurance?</li><li>Partition installs in the last 12 months?</li><li>Is removal of old stalls included?</li><li>How are callbacks handled?</li></ul></div>
+    <div class="c3 card2"><h3>Texas rules</h3><ul><li>Accessible stalls follow the Texas Accessibility Standards (TAS)</li><li>Many commercial and public projects need TDLR registration and inspection by a Registered Accessibility Specialist</li><li>Some cities require contractor registration</li></ul></div>
+    <div class="c3 card2"><h3>Typical timeline</h3><ul><li>Quote: 1–2 business days</li><li>Delivery to DFW: 5–10 business days</li><li>Install: 1–2 days for most restrooms</li><li>Final walk-through with your installer</li></ul></div>
+  </div>
+  <p class="note">Rules summarized for orientation; confirm requirements for your project with the authority having jurisdiction.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <h2 class="h2">Questions about partition installation in DFW</h2>
+  <div style="max-width:880px">
+    <details><summary>How much does it cost to install bathroom partitions in Dallas?</summary><p>Most DFW installs run $95–$160 per stall depending on material and mounting style. Removal of old partitions and ceiling-hung or floor-to-ceiling mounting add to that.</p></details>
+    <details><summary>Can you install partitions I bought somewhere else?</summary><p>Yes. Choose "Yes, install only" when you request quotes. Installers may ask for the manufacturer and hardware type first.</p></details>
+    <details id="how"><summary>How does this directory work?</summary><p>We sell partitions. This directory helps you find someone to install them. Installers are independent businesses: you get quotes from them, hire them and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work. Requests come from customers buying partitions from Next Partitions. Approved installers agree to quote installation for those partitions and not to substitute other products.</p></details>
+    <details><summary>What do the installer labels mean?</summary><p><b>Approved:</b> every installer listed here. They confirmed they install partitions customers already bought, and we have their insurance certificate and business or city registration on file (with the date we last checked), contacted references, have their signed listing agreement, and saw one completed job. <b>Established:</b> 10 or more installs for Next Partitions customers. <b>Top rated:</b> 4.8 or higher from 10 or more reviews. Labels describe these facts only. They aren't an endorsement or a guarantee of anyone's work. Reviews come only from customers who bought their partitions from us.</p></details>
+    <details><summary>How long does installation take?</summary><p>A typical 4–8 stall restroom takes one to two days once materials are on site.</p></details>
+  </div>
+</div></section>
+
+<section class="xband"><div class="wrap"><div class="grid">
+  <div class="c8"><h2>Buying partitions for a DFW project?</h2><p>Configure your partitions and we'll send your install request to approved installers who serve your ZIP. They quote and invoice you directly.</p></div>
+  <div class="c4 act"><a class="btn" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw" target="_blank" rel="noopener">Price partitions + installation</a></div>
+</div></div></section>
+
+<section class="section" style="padding-block:48px"><div class="wrap">
+  <h2 class="h2" style="font-size:22px">Partition installers in other Texas areas</h2>
+  <div class="nearby"><a href="#top">Houston</a><a href="#top">Austin</a><a href="#top">San Antonio</a><a href="#top">El Paso</a><a href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener">All Texas installers</a></div>
+</div></section>
+</main>
+
+<!-- ================= PROFILE PAGE ================= -->
+<main id="profile" hidden>
+<div class="wrap">
+  <div class="crumbs"><a href="#top">Home</a>›<a href="#top">Installers</a>›<a href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener">Texas</a>›<button class="link" type="button" id="backTo" style="font-weight:400">Dallas–Fort Worth</button>›<span id="pfCrumb"></span></div>
+  <header class="hero">
+    <div class="pfhead"><div class="logo" id="pfLogo"></div><div>
+      <div class="chead"><h1 id="pfName" style="margin:0;font-size:clamp(28px,3.4vw,42px)"></h1><span id="pfTier"></span><span class="sample">Sample</span></div>
+      <p class="meta" id="pfMeta" style="font-size:16px"></p>
+    </div></div>
+  </header>
+</div>
+<section class="section" style="padding-top:32px"><div class="wrap"><div class="grid">
+  <div class="c8" style="min-width:0">
+    <h2 class="h2" style="font-size:22px">About</h2>
+    <p id="pfAbout" style="color:var(--muted);max-width:70ch"></p>
+    <div class="mats" id="pfMats"></div>
+    <h2 class="h2" style="font-size:22px;margin-top:28px">Installs for Next Partitions customers</h2>
+    <div class="grid" id="pfJobs" style="margin-bottom:28px"></div>
+    <h2 class="h2" style="font-size:22px">Reviews from our customers</h2>
+    <div class="grid" id="pfReviews" style="margin-bottom:28px"></div>
+    <h2 class="h2" style="font-size:22px">Badge for this installer's website</h2>
+    <p style="color:var(--muted);margin:0 0 14px;max-width:70ch">Installers paste this on their site. The badge is served from nextpartitions.com, so it updates or switches off if the listing lapses, and it links back to this profile.</p>
+    <div class="badgebox"><div id="badgePreview"></div><div style="min-width:0"><b>Embed code</b><pre id="badgeCode"></pre><button class="btn ghost sm copy" type="button" id="copyBtn">Copy code</button></div></div>
+  </div>
+  <aside class="c4" style="min-width:0;display:grid;gap:16px;align-content:start">
+    <div class="verify"><h3>What we checked</h3><dl id="pfVerify"></dl></div>
+    <div class="req"><h2>Request a quote</h2><p class="sub">We pass your job scope to this installer. They reply within 1 business day and quote you directly.</p><button class="btn" type="button" id="pfReq">Request a quote</button><p class="fine" id="pfWeb"></p><p class="disc">Installers are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work.</p></div>
+  </aside>
+</div></div></section>
+</main>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="reqTitle" hidden>
+  <div class="req" id="req">
+    <button type="button" class="dclose" id="dclose" aria-label="Close">×</button>
+    <form id="reqForm" novalidate>
+      <h2 id="reqTitle">Get installation priced</h2>
+      <p class="sub">Free, no obligation. Installers get your job details. Your name, email and phone stay with us until you choose to share them.</p>
+      <div class="to" id="toLine"><span>Installer: <b id="toName">up to 3 best-matching installers</b></span><button type="button" class="link" id="toReset" hidden>Change</button></div>
+      <div class="f"><span class="lab" id="hasLbl">Do you already have the partitions?</span>
+        <div class="seg" role="group" aria-labelledby="hasLbl"><button type="button" data-has="no" aria-pressed="true">No, I need them</button><button type="button" data-has="yes" aria-pressed="false">Yes, install only</button></div></div>
+      <div id="npPath">
+        <div class="xsell"><b>Price both in the configurator</b>Your partitions are priced instantly, and <span id="npWho">approved DFW installers</span> estimate installation for your exact layout. Installation never holds up your order.</div>
+        <a class="btn" id="cfgLink" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw" target="_blank" rel="noopener">Price partitions + installation →</a>
+      </div>
+      <div id="ioPath" hidden>
+        <div class="f"><label for="rZip">Job-site ZIP</label><input id="rZip" inputmode="numeric" maxlength="5" placeholder="75201" autocomplete="postal-code"></div>
+        <div class="f"><label for="rStalls">Number of stalls</label><select id="rStalls"><option>1–3</option><option selected>4–8</option><option>9–15</option><option>16+</option></select></div>
+        <p class="fine" style="margin:0 0 12px">Installers reply to install-only requests as they have time.</p>
+        <div class="f"><label for="rEmail">Email</label><input id="rEmail" type="email" autocomplete="email" placeholder="name@company.com"></div>
+        <p class="fine" id="rErr" style="color:#b42318;font-weight:600;margin:0 0 10px" role="alert" hidden></p>
+        <button class="btn" type="submit">Request install quotes</button>
+      </div>
+      <p class="disc">Installers are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work.</p>
+    </form>
+    <div class="ok" id="reqOk" hidden></div>
+  </div>
+</aside>
+
+<footer><div class="wrap"><span>© 2026 Next Partitions. All rights reserved.</span><span>Terms &amp; Conditions · Privacy Policy</span></div></footer>
+
+<script>
+const I = [
+ {id:"acme", name:"Acme Partition Installs", init:"AP", tier:"preferred", city:"Dallas", lat:32.78, lon:-96.80, radius:60, fee:"$2/mi beyond 60 mi", rating:4.9, jobs:28, since:2011,
+  ins:"$2M general liability · on file, checked Sep 2026", reg:"City of Dallas contractor registration · on file, checked Sep 2026", cert:"Scranton Products trained",
+  mats:["HDPE","Phenolic","Stainless","Powder coated"], tags:["hdpe","phenolic","stainless","steel","ceiling"], mount:"Overhead braced, floor mounted, ceiling hung",
+  photo:"img/stainless-steel.jpg", photoCap:"Office tower, Dallas", web:"acme-installs.example", supply:true,
+  about:"Two install crews focused on commercial restrooms: schools, offices and medical buildings across Dallas, Collin and Denton counties. Handles removal of old partitions and after-hours work."},
+ {id:"northwind", name:"Northwind Washroom Pros", init:"NW", tier:"certified", city:"Fort Worth", lat:32.755, lon:-97.33, radius:50, fee:"$1.75/mi beyond 50 mi", rating:4.8, jobs:19, since:2016,
+  ins:"$1M general liability · on file, checked Aug 2026", reg:"Business registration · on file, checked Sep 2026", cert:"Bobrick installation course",
+  mats:["Phenolic","HDPE","Powder coated"], tags:["phenolic","hdpe","steel"], mount:"Overhead braced, floor mounted",
+  photo:"img/phenolic.jpg", photoCap:"Fitness center, Fort Worth", web:"northwind-washroom.example", supply:true,
+  about:"Restroom specialty contractor serving Tarrant County. Partitions, urinal screens and washroom accessories for gyms, churches and retail."},
+ {id:"contoso", name:"Contoso Specialty Contractors", init:"CS", tier:"certified", city:"Arlington", lat:32.735, lon:-97.11, radius:40, fee:"$150 flat beyond 40 mi", rating:4.7, jobs:11, since:2019,
+  ins:"$1M general liability · on file, checked Jul 2026", reg:"Business registration · on file, checked Sep 2026", cert:"",
+  mats:["Powder coated","Plastic laminate","HDPE"], tags:["steel","laminate","hdpe"], mount:"Overhead braced",
+  photo:"img/powder-coated.jpg", photoCap:"Retail store, Arlington", web:"contoso-specialty.example", supply:false,
+  about:"Division 10 specialties installer: partitions, lockers and accessories for retail and restaurant build-outs between Dallas and Fort Worth."},
+ {id:"fabrikam", name:"Fabrikam Facility Services", init:"FF", tier:"verified", city:"Denton", lat:33.215, lon:-97.13, radius:45, fee:"$2.50/mi beyond 45 mi", rating:4.6, jobs:5, since:2021,
+  ins:"$1M general liability · on file, checked Sep 2026", reg:"Business registration · on file, checked Sep 2026", cert:"",
+  mats:["Powder coated","HDPE"], tags:["steel","hdpe"], mount:"Overhead braced, floor mounted",
+  photo:"img/plastic-laminate.jpg", photoCap:"Church, Denton", web:"", supply:false,
+  about:"Facility maintenance company with a dedicated partition crew. Good fit for replacements and smaller restrooms north of Dallas."}
+];
+const TIER={preferred:"Top rated",certified:"Established",verified:""};
+const PROFILE="https://claude.ai/artifact/Hp9kJEgkaRXCtjoxWMkXPx";
+const $=id=>document.getElementById(id);
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const check='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg>';
+const stars=r=>"★★★★★".slice(0,Math.round(r))+"☆☆☆☆☆".slice(0,5-Math.round(r));
+let filter="all", target=null, has="no", job=null, sortBy="score", hover=null;
+// --- geography (mockup): a few DFW ZIPs; live site uses a geocoder + routing API for real drive times
+const ZIPS={"75201":["Downtown Dallas",32.787,-96.799],"76102":["Downtown Fort Worth",32.755,-97.331],"75024":["Plano",33.075,-96.81],"75087":["Rockwall",32.93,-96.44],"75165":["Waxahachie",32.40,-96.84],"76201":["Denton",33.21,-97.13],"76010":["Arlington",32.72,-97.08],"75034":["Frisco",33.15,-96.83],"75069":["McKinney",33.20,-96.62],"75061":["Irving",32.82,-96.95],"76063":["Mansfield",32.56,-97.14],"76086":["Weatherford",32.76,-97.80]};
+const B={lonMin:-97.62,lonMax:-96.33,latMin:32.33,latMax:33.30,W:460,H:440};
+const px=(lat,lon)=>[ (lon-B.lonMin)/(B.lonMax-B.lonMin)*B.W, (B.latMax-lat)/(B.latMax-B.latMin)*B.H ];
+const MI_PER_PX = ((B.lonMax-B.lonMin)*69.17*Math.cos(32.8*Math.PI/180))/B.W; // horizontal scale; vertical is close at this latitude
+function hav(a1,o1,a2,o2){const R=3958.8,r=Math.PI/180,dA=(a2-a1)*r,dO=(o2-o1)*r,h=Math.sin(dA/2)**2+Math.cos(a1*r)*Math.cos(a2*r)*Math.sin(dO/2)**2;return 2*R*Math.asin(Math.sqrt(h));}
+const miles=x=>hav(job.lat,job.lon,x.lat,x.lon);
+const driveMin=m=>Math.round(m*1.2/48*60+5); // road factor 1.2, ~48 mph mostly-highway average, +5 min local streets
+const fmtMin=n=>n<60?`${n} min`:`${Math.floor(n/60)} h ${n%60} min`;
+function distLine(x){const m=miles(x),inside=m<=x.radius;return `<p class="dist"><b>${Math.round(m)} mi</b> · ~${fmtMin(driveMin(m))} drive (est.) <span class="${inside?"inside":"outside"}">${inside?"Within service area":"Outside service area · travel fee "+x.fee}</span></p>`;}
+const CITIES=[["Dallas",32.78,-96.80],["Fort Worth",32.755,-97.33],["Arlington",32.735,-97.11],["Denton",33.215,-97.13],["Plano",33.02,-96.70],["Frisco",33.15,-96.82],["McKinney",33.20,-96.62],["Irving",32.81,-96.95],["Garland",32.91,-96.64],["Mesquite",32.77,-96.60],["Grand Prairie",32.70,-97.00],["Mansfield",32.56,-97.14],["Rockwall",32.93,-96.46],["Waxahachie",32.39,-96.85],["Weatherford",32.76,-97.80],["Lewisville",33.05,-96.99]];
+const ROADS=[ // simplified interstates / highways [label, [[lat,lon],...]]
+ ["I-35E",[[33.215,-97.13],[33.05,-96.99],[32.92,-96.89],[32.78,-96.80],[32.60,-96.84],[32.39,-96.85]]],
+ ["I-35W",[[33.215,-97.13],[33.00,-97.24],[32.85,-97.32],[32.755,-97.33],[32.55,-97.32],[32.33,-97.33]]],
+ ["I-30",[[32.76,-97.80],[32.755,-97.33],[32.75,-97.11],[32.76,-96.95],[32.78,-96.80],[32.83,-96.55],[32.93,-96.46],[33.05,-96.33]]],
+ ["I-20",[[32.70,-97.62],[32.68,-97.33],[32.68,-97.11],[32.68,-96.95],[32.67,-96.75],[32.70,-96.55],[32.72,-96.33]]],
+ ["US-75",[[32.78,-96.80],[32.90,-96.77],[33.02,-96.70],[33.20,-96.62],[33.30,-96.60]]],
+ ["DNT",[[32.80,-96.81],[32.95,-96.82],[33.15,-96.82],[33.30,-96.83]]],
+ ["I-635",[[32.93,-97.03],[32.92,-96.89],[32.92,-96.75],[32.88,-96.63],[32.78,-96.60],[32.68,-96.62]]],
+ ["SH-121",[[33.20,-96.62],[33.12,-96.85],[32.95,-97.06],[32.80,-97.20],[32.755,-97.33]]]
+];
+function drawMap(){
+  const k=view.w/B.W; // 1 at full view, smaller when zoomed in: keeps pins/labels the same on-screen size
+  const f=n=>(n*k).toFixed(2);
+  const pts=a=>a.map(([la,lo])=>px(la,lo).map(v=>v.toFixed(1)).join(",")).join(" ");
+  let g=`<rect x="0" y="0" width="${B.W}" height="${B.H}" fill="#f3efe8"/>`;
+  g+=`<ellipse cx="${px(33.07,-97.0)[0]}" cy="${px(33.07,-97.0)[1]}" rx="16" ry="11" fill="#cfe0ea"/><ellipse cx="${px(32.85,-96.51)[0]}" cy="${px(32.85,-96.51)[1]}" rx="6" ry="15" fill="#cfe0ea"/><ellipse cx="${px(32.97,-97.08)[0]}" cy="${px(32.97,-97.08)[1]}" rx="9" ry="6" fill="#cfe0ea"/>`;
+  ROADS.forEach(([l,a])=>{g+=`<polyline points="${pts(a)}" fill="none" stroke="#fff" stroke-width="${f(5)}" stroke-linejoin="round"/><polyline points="${pts(a)}" fill="none" stroke="#d9cfc2" stroke-width="${f(2.2)}" stroke-linejoin="round"/>`;});
+  ROADS.forEach(([l,a])=>{const [x,y]=px(...a[Math.floor(a.length/2)]);g+=`<text x="${x+4*k}" y="${y-4*k}" font-size="${f(9)}" font-weight="700" fill="#a39684" font-family="Inter,Arial" paint-order="stroke" stroke="#f3efe8" stroke-width="${f(3)}">${l}</text>`;});
+  const vis=I.filter(x=>filter==="all"||x.tags.includes(filter));
+  vis.forEach(x=>{const [cx,cy]=px(x.lat,x.lon),r=x.radius/MI_PER_PX,on=hover===x.id;g+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${on?"rgba(31,122,77,.08)":"none"}" stroke="${on?"#1f7a4d":"rgba(31,122,77,.35)"}" stroke-width="${f(on?2:1.2)}" stroke-dasharray="${f(5)} ${f(4)}"/>`;});
+  const baseCities=new Set(I.map(i=>i.city));
+  CITIES.forEach(([n,la,lo])=>{if(baseCities.has(n))return;const [x,y]=px(la,lo);g+=`<circle cx="${x}" cy="${y}" r="${f(2.2)}" fill="#a39684"/><text x="${x+5*k}" y="${y+3.5*k}" font-size="${f(10.5)}" fill="#6d6059" font-family="Inter,Arial">${n}</text>`;});
+  if(job){const [jx,jy]=px(job.lat,job.lon);
+    vis.forEach(x=>{const [bx,by]=px(x.lat,x.lon),on=hover===x.id;g+=`<line x1="${jx}" y1="${jy}" x2="${bx}" y2="${by}" stroke="${on?"#e8630a":"rgba(232,99,10,.35)"}" stroke-width="${f(on?2.2:1.2)}" stroke-dasharray="${on?"":f(3)+" "+f(3)}"/>`;});}
+  vis.forEach(x=>{const [bx,by]=px(x.lat,x.lon),on=hover===x.id,left=x.city==="Fort Worth";g+=`<g data-pin="${x.id}" style="cursor:pointer"><rect x="${bx-11*k}" y="${by-11*k}" width="${f(22)}" height="${f(22)}" fill="${on?"#e8630a":"#262626"}" stroke="#fff" stroke-width="${f(2)}"/><text x="${bx}" y="${by+4*k}" text-anchor="middle" font-size="${f(10)}" font-weight="800" fill="#fff" font-family="Inter,Arial">${x.init}</text><text x="${left?bx-15*k:bx+15*k}" y="${by+4*k}" text-anchor="${left?"end":"start"}" font-size="${f(11)}" font-weight="700" fill="#1c0e05" font-family="Inter,Arial" paint-order="stroke" stroke="#f3efe8" stroke-width="${f(3)}">${x.city}</text></g>`;});
+  if(job){const [jx,jy]=px(job.lat,job.lon);g+=`<circle cx="${jx}" cy="${jy}" r="${f(13)}" fill="rgba(232,99,10,.18)"/><circle cx="${jx}" cy="${jy}" r="${f(7)}" fill="#e8630a" stroke="#fff" stroke-width="${f(2.5)}"/><text x="${jx}" y="${jy-17*k}" text-anchor="middle" font-size="${f(11)}" font-weight="800" fill="#1c0e05" font-family="Inter,Arial" paint-order="stroke" stroke="#f3efe8" stroke-width="${f(3)}">Job site</text>`;}
+  $("map").innerHTML=g;
+  $("map").querySelectorAll("[data-pin]").forEach(el=>{el.addEventListener("mouseenter",()=>{if(drag||hover===el.dataset.pin)return;hover=el.dataset.pin;drawMap();});el.addEventListener("click",e=>{e.stopPropagation();if(moved)return;const c=$("card-"+el.dataset.pin);if(c){c.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"center"});c.classList.add("hl");setTimeout(()=>c.classList.remove("hl"),1600);}});});
+}
+// ---------- zoom / pan (viewBox) ----------
+const MAXZ=5;
+let view={x:0,y:0,w:B.W,h:B.H}, drag=null, moved=false;
+const ptrs=new Map();
+function clampView(v){
+  const w=Math.min(B.W,Math.max(B.W/MAXZ,v.w)), h=w*B.H/B.W;
+  return {w,h,x:Math.min(B.W-w,Math.max(0,v.x)),y:Math.min(B.H-h,Math.max(0,v.y))};
+}
+function applyView(){
+  $("map").setAttribute("viewBox",`${view.x.toFixed(2)} ${view.y.toFixed(2)} ${view.w.toFixed(2)} ${view.h.toFixed(2)}`);
+  const z=B.W/view.w; $("zLevel").textContent=(Math.round(z*10)/10)+"×";
+  $("zIn").disabled=z>=MAXZ-0.01; $("zOut").disabled=z<=1.01;
+  drawMap();
+}
+function toMap(clientX,clientY){const r=$("map").getBoundingClientRect();return [view.x+(clientX-r.left)/r.width*view.w, view.y+(clientY-r.top)/r.height*view.h];}
+function zoomAt(factor,mx,my){ // factor>1 zooms in, around map point (mx,my)
+  const nw=view.w/factor; const v=clampView({w:nw,x:mx-(mx-view.x)*(nw/view.w),y:my-(my-view.y)*(nw/view.w)});
+  view=v; applyView();
+}
+const center=()=>[view.x+view.w/2,view.y+view.h/2];
+$("zIn").addEventListener("click",()=>zoomAt(1.6,...center()));
+$("zOut").addEventListener("click",()=>zoomAt(1/1.6,...center()));
+$("zReset").addEventListener("click",()=>{view={x:0,y:0,w:B.W,h:B.H};applyView();});
+$("zFit").addEventListener("click",()=>fitJob());
+function fitJob(){
+  if(!job) return;
+  const vis=I.filter(x=>filter==="all"||x.tags.includes(filter));
+  const ranked=vis.slice().sort((a,b)=>miles(a)-miles(b));
+  const keep=ranked.filter(x=>miles(x)<=x.radius).slice(0,3); if(!keep.length&&ranked.length) keep.push(ranked[0]);
+  const P=[px(job.lat,job.lon),...keep.map(x=>px(x.lat,x.lon))];
+  let x0=Math.min(...P.map(p=>p[0])),x1=Math.max(...P.map(p=>p[0])),y0=Math.min(...P.map(p=>p[1])),y1=Math.max(...P.map(p=>p[1]));
+  const pad=40; x0-=pad;x1+=pad;y0-=pad;y1+=pad;
+  let w=Math.max(x1-x0,(y1-y0)*B.W/B.H);
+  view=clampView({w,x:(x0+x1)/2-w/2,y:(y0+y1)/2-(w*B.H/B.W)/2}); applyView();
+}
+const mapEl=$("map");
+mapEl.addEventListener("wheel",e=>{e.preventDefault();const [mx,my]=toMap(e.clientX,e.clientY);zoomAt(Math.exp(-e.deltaY*0.0015),mx,my);},{passive:false});
+mapEl.addEventListener("dblclick",e=>{e.preventDefault();const [mx,my]=toMap(e.clientX,e.clientY);zoomAt(1.8,mx,my);});
+mapEl.addEventListener("pointerdown",e=>{ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});moved=false;drag={x:e.clientX,y:e.clientY,view:{...view},dist:null};});
+mapEl.addEventListener("pointermove",e=>{
+  if(!drag||!ptrs.has(e.pointerId)) return;
+  ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  const r=mapEl.getBoundingClientRect();
+  if(ptrs.size===2){ // pinch
+    const [a,b]=[...ptrs.values()], d=Math.hypot(a.x-b.x,a.y-b.y), cx=(a.x+b.x)/2, cy=(a.y+b.y)/2;
+    if(drag.dist){const [mx,my]=toMap(cx,cy);zoomAt(d/drag.dist,mx,my);} drag.dist=d; moved=true; return;
+  }
+  const dx=e.clientX-drag.x, dy=e.clientY-drag.y;
+  if(!moved && Math.hypot(dx,dy)<4) return;
+  if(!moved){moved=true;mapEl.setPointerCapture(e.pointerId);mapEl.classList.add("dragging");}
+  view=clampView({w:drag.view.w,x:drag.view.x-dx/r.width*drag.view.w,y:drag.view.y-dy/r.height*drag.view.h}); applyView();
+});
+function endPtr(e){ptrs.delete(e.pointerId);if(ptrs.size===0){drag=null;mapEl.classList.remove("dragging");}else if(ptrs.size===1&&drag){const [p]=[...ptrs.values()];drag={x:p.x,y:p.y,view:{...view},dist:null};}}
+mapEl.addEventListener("pointerup",endPtr); mapEl.addEventListener("pointercancel",endPtr);
+$("mapwrap").addEventListener("keydown",e=>{
+  if(e.target!==$("mapwrap")) return;
+  const step=view.w*0.15, m={ArrowLeft:[-step,0],ArrowRight:[step,0],ArrowUp:[0,-step],ArrowDown:[0,step]};
+  if(e.key==="+"||e.key==="="){zoomAt(1.6,...center());e.preventDefault();}
+  else if(e.key==="-"){zoomAt(1/1.6,...center());e.preventDefault();}
+  else if(e.key==="0"){view={x:0,y:0,w:B.W,h:B.H};applyView();e.preventDefault();}
+  else if(m[e.key]){view=clampView({w:view.w,x:view.x+m[e.key][0],y:view.y+m[e.key][1]});applyView();e.preventDefault();}
+});
+function listNear(){}
+function setJob(lat,lon,label,zip,noFit){
+  job={lat,lon,label}; $("zFit").hidden=false; if(zip){$("jobZip").value=zip;$("rZip").value=zip;}
+  sortBy="near"; $("sortSel").value="near";
+  $("zipMsg").hidden=false,$("zipMsg").textContent=`Showing distances to ${label}${zip?" ("+zip+")":""}.`;
+  if(noFit) drawMap(); else fitJob(); listNear(); cards();
+}
+$("zipForm").addEventListener("submit",e=>{e.preventDefault();const z=$("jobZip").value.trim();
+  if(!/^\d{5}$/.test(z)){$("zipMsg").hidden=false,$("zipMsg").textContent="Enter a 5-digit ZIP code.";return;}
+  const hit=ZIPS[z]; if(!hit){$("zipMsg").hidden=false,$("zipMsg").textContent=`ZIP ${z} isn't in this mockup's sample data. The live site looks up any ZIP; you can also click the map.`;return;}
+  setJob(hit[1],hit[2],hit[0],z);});
+$("map").addEventListener("click",e=>{if(moved){moved=false;return;}const [x,y]=toMap(e.clientX,e.clientY);
+  const lon=B.lonMin+x/B.W*(B.lonMax-B.lonMin), lat=B.latMax-y/B.H*(B.latMax-B.latMin);
+  let near=CITIES.map(c=>[c[0],hav(lat,lon,c[1],c[2])]).sort((a,b)=>a[1]-b[1])[0];
+  setJob(lat,lon,near[1]<4?near[0]:"near "+near[0],"",true);});
+$("map").addEventListener("mouseleave",()=>{hover=null;drawMap();listNear();});
+$("sortSel").addEventListener("change",e=>{const v=e.target.value;if(v==="near"&&!job){e.target.value=sortBy;$("zipMsg").hidden=false,$("zipMsg").textContent="Enter the job-site ZIP first to sort by distance.";$("jobZip").focus();return;}sortBy=v;cards();});
+
+function cards(){
+  let rows=I.filter(x=>filter==="all"||x.tags.includes(filter));
+  if(job && sortBy==="near") rows=rows.slice().sort((a,b)=>miles(a)-miles(b));
+  else if(sortBy==="rating") rows=rows.slice().sort((a,b)=>b.rating-a.rating);
+  else if(sortBy==="jobs") rows=rows.slice().sort((a,b)=>b.jobs-a.jobs);
+  $("count").textContent=`${rows.length} installer${rows.length!==1?"s":""} serving Dallas–Fort Worth`;
+  $("list").innerHTML=rows.map(x=>`<article class="card ${x.tier==="preferred"?"pref":""}" id="card-${x.id}" data-card="${x.id}">
+    <div class="ph"><img src="${x.photo}" alt="Recent install by ${esc(x.name)}" loading="lazy"><span>${esc(x.photoCap)}</span></div>
+    <div style="min-width:0">
+      <div class="chead"><h3>${esc(x.name)}</h3><span class="tier approved">✓ Approved</span>${TIER[x.tier]?`<span class="tier ${x.tier==="certified"?"verified":x.tier}">${TIER[x.tier]}</span>`:""}<span class="sample">Sample</span></div>
+      <p class="meta"><span class="stars" aria-label="${x.rating} out of 5">${stars(x.rating)}</span> <b style="color:var(--fg)">${x.rating}</b> · ${x.jobs} installs for our customers · ${esc(x.city)} + ${x.radius} mi</p>
+      ${job?distLine(x):""}
+      <ul class="checks"><li>${check}Insured</li><li>${check}Registration checked</li><li>${check}References checked</li>${x.cert?`<li>${check}${esc(x.cert)}</li>`:""}</ul>
+      <div class="mats">${x.mats.map(m=>`<span>${m}</span>`).join("")}</div>
+      ${x.supply?`<p class="supply">Installs partitions supplied by Next Partitions</p>`:""}
+      <div class="cact"><button class="btn sm" type="button" data-req="${x.id}">Request a quote</button><a class="link" href="${PROFILE}#${x.id}" target="_blank" rel="noopener">View profile</a>${x.web&&x.tier!=="verified"?`<span class="web">Website: <a href="https://${x.web}/?utm_source=nextpartitions&amp;utm_medium=installer_directory" rel="nofollow noopener" target="_blank">${x.web}</a></span>`:""}</div>
+    </div></article>`).join("");
+  $("list").querySelectorAll("[data-req]").forEach(b=>b.addEventListener("click",()=>pick(b.dataset.req)));
+  $("list").querySelectorAll("[data-pf]").forEach(b=>b.addEventListener("click",()=>showProfile(b.dataset.pf)));
+  $("list").querySelectorAll("[data-card]").forEach(c=>{c.addEventListener("mouseenter",()=>{if(hover===c.dataset.card)return;hover=c.dataset.card;drawMap();});c.addEventListener("mouseleave",()=>{hover=null;drawMap();});});
+}
+let lastFocus=null;
+function openDrawer(){ lastFocus=document.activeElement; $("scrim").hidden=false; $("drawer").hidden=false; document.body.style.overflow="hidden"; ($("rZip").value?$("rEmail"):$("rZip")).focus(); }
+function closeDrawer(){ $("scrim").hidden=true; $("drawer").hidden=true; document.body.style.overflow=""; if(lastFocus) lastFocus.focus(); }
+function pick(id){ target=I.find(x=>x.id===id); $("toName").textContent=target.name; $("toReset").hidden=false; setCfg(); $("reqForm").hidden=false; $("reqOk").hidden=true; openDrawer(); }
+$("dclose").addEventListener("click",closeDrawer); $("scrim").addEventListener("click",closeDrawer);
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("drawer").hidden)closeDrawer();});
+$("mapToggle").addEventListener("click",()=>{const open=!$("mapcard").classList.contains("open");$("mapcard").classList.toggle("open",open);$("mapToggle").setAttribute("aria-expanded",String(open));$("mapToggle").textContent=open?"Hide map":"Show map";});
+$("toReset").addEventListener("click",()=>{target=null;$("toName").textContent="up to 3 best-matching installers";$("toReset").hidden=true;setCfg();});
+document.querySelectorAll(".fchip").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.f;document.querySelectorAll(".fchip").forEach(c=>c.setAttribute("aria-pressed",String(c===b)));cards();drawMap();listNear();}));
+function setCfg(){const ok=!!target;$("cfgLink").href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw"+(ok?"."+target.id:"");$("npWho").textContent=target?target.name:"approved DFW installers";}
+document.querySelectorAll("[data-has]").forEach(b=>b.addEventListener("click",()=>{has=b.dataset.has;document.querySelectorAll("[data-has]").forEach(c=>c.setAttribute("aria-pressed",String(c===b)));$("npPath").hidden=has!=="no";$("ioPath").hidden=has==="no";}));
+$("rZip").addEventListener("change",()=>{const z=$("rZip").value.trim();if(ZIPS[z])setJob(ZIPS[z][1],ZIPS[z][2],ZIPS[z][0],z);});
+$("reqForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const zip=$("rZip").value.trim(), em=$("rEmail").value.trim();
+  const err=!/^\d{5}$/.test(zip)?"Enter a 5-digit job-site ZIP code.":!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)?"Enter a valid email, like name@company.com.":"";
+  $("rErr").hidden=!err; $("rErr").textContent=err; if(err) return;
+  $("reqForm").hidden=true; $("reqOk").hidden=false;
+  $("reqOk").innerHTML=`<h3>Request sent</h3><p>${target?esc(target.name):"Up to 3 matched DFW installers"} will receive your job scope (ZIP ${esc(zip)}, ${esc($("rStalls").value)} stalls${has==="no"?", partitions from Next Partitions":", install only"}). Expect replies at <b>${esc(em)}</b> within 1 business day.${has==="no"?" Installers quote installation for the partitions on your Next Partitions quote"+($("rQuote").value.trim()?" ("+esc($("rQuote").value.trim())+")":"")+" and invoice you directly.":" Installers quote and invoice you directly."}</p>${has==="no"?`<p><a class="btn sm" href="https://nextpartitions.com/get-a-quote" target="_blank" rel="noopener">Configure your partitions now</a></p>`:""}<p class="fine">Mockup: nothing was sent.</p>`;
+});
+
+function badgeSVG(x){
+  const t=TIER[x.tier];
+  return `<svg width="220" height="76" viewBox="0 0 220 76" role="img" aria-label="Approved installer, Next Partitions 2026"><rect x="1" y="1" width="218" height="74" fill="#fff" stroke="#e1ddd7"/><rect x="1" y="1" width="6" height="74" fill="#e8630a"/><text x="20" y="25" font-family="Inter,Arial" font-size="11" font-weight="700" fill="#6d6059" letter-spacing="1">NEXT PARTITIONS</text><text x="20" y="48" font-family="Inter,Arial" font-size="19" font-weight="900" fill="#1c0e05">Approved Installer</text><text x="20" y="65" font-family="Inter,Arial" font-size="11" fill="#6d6059">Next Partitions directory · 2026</text></svg>`;
+}
+function showProfile(id){
+  const x=I.find(i=>i.id===id); if(!x) return;
+  $("pfCrumb").textContent=x.name; $("pfName").textContent=x.name; $("pfLogo").textContent=x.init;
+  $("pfTier").innerHTML=`<span class="tier ${x.tier}">${TIER[x.tier]}</span>`;
+  $("pfMeta").innerHTML=`<span class="stars">${stars(x.rating)}</span> <b style="color:var(--fg)">${x.rating}</b> · ${x.jobs} installs for our customers · Based in ${esc(x.city)}, serves ${x.radius} mi · In business since ${x.since}`;
+  $("pfAbout").textContent=x.about;
+  $("pfMats").innerHTML=x.mats.map(m=>`<span>${m}</span>`).join("")+`<span>${esc(x.mount)}</span>`;
+  const jobs=[[x.photo,x.photoCap,"8 stalls · 2 days"],["img/solid-plastic.jpg","School, Collin County","12 stalls · 2 days"],["img/powder-coated.jpg","Restaurant, Dallas","4 stalls · 1 day"]];
+  $("pfJobs").innerHTML=jobs.map(j=>`<article class="c4 job"><img src="${j[0]}" alt="${esc(j[1])}" loading="lazy"><div class="b"><h3>${esc(j[1])}</h3><p>${j[2]}</p></div></article>`).join("");
+  const rv=[["Facilities manager, school district","Crew arrived on the scheduled day and finished 12 stalls in two days. Doors all aligned at sign-off."],["General contractor, Dallas","Easy to coordinate with our schedule. Cleaned up fully and handled two door adjustments the next week."]];
+  $("pfReviews").innerHTML=rv.map(r=>`<div class="c6 review"><span class="stars">★★★★★</span><span class="vtag">Bought partitions from us</span><p>${r[1]}</p><small>${r[0]} · Sample review</small></div>`).join("");
+  $("pfVerify").innerHTML=`<dt>Insurance</dt><dd class="ok">${esc(x.ins)}</dd><dt>Registration</dt><dd class="ok">${esc(x.reg)}</dd><dt>References</dt><dd class="ok">2 contacted · Jun 2026</dd>${x.cert?`<dt>Training</dt><dd>${esc(x.cert)}</dd>`:""}<dt>Service area</dt><dd>${x.radius} mi from ${esc(x.city)} · travel fee ${esc(x.fee)}</dd><dt>Response time</dt><dd>Usually within 6 hours</dd><dt>Callbacks</dt><dd>1 reported by our customers, last 12 months</dd>`;
+  $("pfWeb").innerHTML=x.web&&x.tier!=="verified"?`Website: <a href="https://${x.web}/?utm_source=nextpartitions&amp;utm_medium=installer_profile" rel="nofollow noopener" target="_blank">${x.web}</a>`:"Website link unlocks at Established.";
+  $("pfReq").onclick=()=>pick(x.id);
+  $("badgePreview").innerHTML=badgeSVG(x);
+  $("badgeCode").textContent=`<a href="https://nextpartitions.com/installers/${x.id}/?ref=badge">\n  <img src="https://nextpartitions.com/badge/${x.id}.svg"\n       alt="Approved installer on Next Partitions"\n       width="220" height="76">\n</a>`;
+  $("metro").hidden=true; $("profile").hidden=false; window.scrollTo(0,0);
+}
+function showMetro(){ $("profile").hidden=true; $("metro").hidden=false; }
+$("backTo").addEventListener("click",()=>{showMetro();window.scrollTo(0,0);});
+$("copyBtn").addEventListener("click",async()=>{const t=$("badgeCode").textContent;try{await navigator.clipboard.writeText(t);$("copyBtn").textContent="Copied";}catch(e){const r=document.createRange();r.selectNodeContents($("badgeCode"));const s=getSelection();s.removeAllRanges();s.addRange(r);$("copyBtn").textContent="Selected — press Ctrl/Cmd+C";}setTimeout(()=>$("copyBtn").textContent="Copy code",2200);});
+cards();
+applyView();
+listNear();
+</script>

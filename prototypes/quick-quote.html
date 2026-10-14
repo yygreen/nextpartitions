@@ -1,0 +1,268 @@
+<title>Partition Quick Quote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<style>
+/* Layout: one homepage section, two question cards side by side (stacked on phones), recommendation card spanning below. Tokens mirror nextpartitions.com. */
+:root{
+  --bg:#fbfaf9; --surface:#ffffff; --surface-warm:#f7f5f1; --fg:#1c0e05; --muted:#6d6059;
+  --border:#e1ddd7; --accent:#e8630a; --accent-strong:#c95200; --accent-soft:#fdeee3; --on-accent:#ffffff;
+  --note-bg:#f2f0ec; --note-fg:#6d6059; --good:#1f7a4d;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.5;padding-inline:16px;padding-block:0 48px;-webkit-font-smoothing:antialiased}
+.note{background:var(--note-bg);color:var(--note-fg);font-size:13px;margin-inline:-16px;padding:8px 16px;text-align:center;border-bottom:1px solid var(--border)}
+.note b{color:var(--fg)}
+.note b{font-weight:700}
+.wrap{max-width:1000px;margin:0 auto}
+header.sec{text-align:center;padding-block:48px 28px}
+h1{font-size:clamp(28px,4vw,34px);font-weight:900;letter-spacing:-.03em;line-height:1.15;margin:0 0 10px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 auto;max-width:34em;font-size:17px}
+
+.grid{display:grid;grid-template-columns:1.35fr 1fr;gap:20px;align-items:start}
+@media (max-width:760px){.grid{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--border);padding:22px;min-width:0}
+.q{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;margin:0 0 14px;letter-spacing:-.01em}
+.q .n{display:inline-grid;place-items:center;width:24px;height:24px;background:var(--accent);color:var(--on-accent);font-size:13px;font-weight:800;flex:none}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-size:15px;font-weight:600;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:10px 14px;min-height:44px;cursor:pointer;transition:border-color .15s,background .15s}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--fg)}
+.chip:focus-visible,.btn:focus-visible,.link:focus-visible,.mat:focus-visible,.split button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.stalls{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.stalls .chip{padding:10px 0;text-align:center;font-size:17px}
+
+.followup{margin-top:18px;padding-top:16px;border-top:1px dashed var(--border)}
+.followup .lab{font-weight:700;font-size:15px;margin:0 0 10px}
+.field{margin-top:14px}
+.field label{display:block;font-size:14px;font-weight:600;margin-bottom:6px}
+.field label span{color:var(--muted);font-weight:500}
+.field input{width:100%;font:inherit;font-size:15px;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:10px 12px;min-height:44px}
+
+.rec{margin-top:20px;background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--accent);padding:24px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-strong);margin:0 0 6px}
+.rec h2{font-size:clamp(22px,3vw,26px);font-weight:900;letter-spacing:-.02em;margin:0 0 6px;line-height:1.2;text-wrap:balance}
+.why{color:var(--muted);margin:0 0 4px;max-width:60ch}
+.also{font-size:14px;color:var(--muted);margin:6px 0 0}
+.link{font:inherit;font-size:inherit;background:none;border:0;padding:0;color:var(--accent-strong);font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.price{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:18px 0 18px;padding:14px 0;border-block:1px solid var(--border)}
+.price .amt{font-size:30px;font-weight:900;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.price .per{color:var(--muted);font-size:15px}
+.price .incl{color:var(--good);font-weight:600;font-size:15px}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--on-accent);font-weight:700;font-size:17px;padding:14px 26px;min-height:48px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--accent-strong)}
+.small{font-size:14px;color:var(--muted);margin:16px 0 0}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px}
+@media (max-width:520px){.split{grid-template-columns:1fr}}
+.split button{font:inherit;text-align:left;background:var(--surface-warm);border:1px solid var(--border);padding:16px;cursor:pointer;color:var(--fg)}
+.split button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.split .t{display:block;font-size:13px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.split .m{display:block;font-weight:800;font-size:17px;margin:2px 0}
+.split .p{display:block;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+
+.mats{margin-top:18px;display:grid;gap:8px}
+.mat{display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:center;text-align:left;font:inherit;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:12px 14px;cursor:pointer;min-height:44px}
+.mat:hover{border-color:var(--accent)}
+.mat[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.mat .nm{font-weight:700}
+.mat .fr{font-size:14px;color:var(--accent-strong);font-weight:700;font-variant-numeric:tabular-nums}
+.mat .bf{grid-column:1/-1;font-size:14px;color:var(--muted)}
+.badge{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;background:var(--accent-soft);color:var(--accent-strong);margin-left:8px;vertical-align:middle;letter-spacing:.02em}
+
+.dev{margin-top:28px;font-size:13px;color:var(--muted)}
+.dev summary{cursor:pointer}
+.dev code{font-family:var(--mono);font-size:12.5px;background:var(--surface-warm);border:1px solid var(--border);padding:6px 8px;display:block;overflow-x:auto;white-space:nowrap;margin-top:6px;color:var(--fg)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="note"><b>Mockup</b> of the homepage quick-quote widget. Estimates use the site's advertised "From $/stall" prices as placeholders.</div>
+
+<div class="wrap">
+  <header class="sec">
+    <h1>Configure Your Partitions</h1>
+    <p class="sub">Tell us where the partitions are going and how many stalls. We'll recommend a material and show a ballpark before you configure.</p>
+  </header>
+
+  <div class="grid">
+    <section class="card" aria-labelledby="q1">
+      <h3 class="q" id="q1"><span class="n">1</span>Where are they going?</h3>
+      <div class="chips" id="facility" role="group" aria-labelledby="q1"></div>
+
+      <div class="followup" id="otherBox" hidden>
+        <p class="lab" id="q1b">What matters most?</p>
+        <div class="chips" id="priority" role="group" aria-labelledby="q1b"></div>
+        <div class="field">
+          <label for="space">What kind of space? <span>(optional)</span></label>
+          <input id="space" type="text" placeholder="e.g. church, hotel, warehouse" autocomplete="off">
+        </div>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="q2">
+      <h3 class="q" id="q2"><span class="n">2</span>How many stalls?</h3>
+      <div class="stalls" id="stalls" role="group" aria-labelledby="q2"></div>
+      <p class="small">Not counting urinal screens. You'll set exact widths in the configurator.</p>
+    </section>
+  </div>
+
+  <section class="rec" id="rec" aria-live="polite"></section>
+
+  <details class="dev"><summary>For your developer: link sent to the configurator</summary><code id="url"></code></details>
+</div>
+
+<script>
+const MATS = {
+  "powder-coated":    {name:"Powder Coated Steel",  from:358,  best:"Dry restrooms on a budget"},
+  "solid-plastic":    {name:"Solid Plastic (HDPE)", from:585,  best:"Wet, humid and high-traffic areas"},
+  "solid-phenolic":   {name:"Phenolic",             from:975,  best:"Heavy use and vandalism"},
+  "plastic-laminate": {name:"Plastic Laminate",     from:455,  best:"Dry rooms where design matters"},
+  "stainless-steel":  {name:"Stainless Steel",      from:1170, best:"Upscale, client-facing restrooms"}
+};
+const FACILITIES = [
+  {id:"schools",  label:"Schools",            noun:"schools",            mat:"solid-plastic",    why:"Graffiti and scratches sand out, and it carries a 25-year warranty.", also:"solid-phenolic", alsoNote:"for high schools with chronic vandalism"},
+  {id:"community",label:"Community Centers",  noun:"community centers",  mat:"solid-plastic",    why:"Handles rec rooms, pools and heavy public use without rusting.",       also:"powder-coated",  alsoNote:"for dry meeting halls and libraries"},
+  {id:"gyms",     label:"Gyms / Locker rooms",noun:"gyms",               mat:"solid-plastic",    why:"Waterproof and graffiti-resistant. Won't rust in humid locker rooms and showers.", also:"solid-phenolic", alsoNote:"for premium clubs and spa areas"},
+  {id:"offices",  label:"Offices",            noun:"offices",            mat:"plastic-laminate", why:"A clean, professional look for general office floors.",              also:"stainless-steel",alsoNote:"for executive floors and lobbies"},
+  {id:"restaurants",label:"Restaurants",      noun:"restaurants",        mat:"plastic-laminate", why:"Wide color and pattern choice for dry dining-room restrooms.",       also:"solid-phenolic", alsoNote:"for bars and restrooms cleaned with harsh chemicals"},
+  {id:"public",   label:"Public Restrooms",   noun:"public restrooms",   mat:"solid-phenolic",   why:"Resists vandalism, cutting, burning and moisture.",                 also:"solid-plastic",  alsoNote:"as the value pick"},
+  {id:"other",    label:"Other",              noun:null}
+];
+const PRIORITIES = [
+  {id:"cost",    label:"Lowest cost",                         mat:"powder-coated",   why:"Our most popular option and the most budget-friendly."},
+  {id:"wet",     label:"Wet or humid area (showers, pools)",  mat:"solid-plastic",   why:"Waterproof. Won't rust, swell or delaminate."},
+  {id:"vandal",  label:"Heavy use or vandalism",              mat:"solid-phenolic",  why:"The hardest surface we sell. Resists graffiti, cuts and burns."},
+  {id:"premium", label:"Premium look",                        mat:"stainless-steel", why:"Upscale finish that's easy to sanitize."},
+  {id:"unsure",  label:"Not sure",                            mat:null}
+];
+const STALLS = [1,2,3,4,5];
+
+const state = {facility:"gyms", priority:"wet", stalls:4, override:null, unsureChoice:null, showAll:false};
+const $ = id => document.getElementById(id);
+const money = n => "$" + Math.round(n).toLocaleString("en-US");
+
+function chip(label, pressed, onClick){
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "chip"; b.textContent = label;
+  b.setAttribute("aria-pressed", pressed ? "true" : "false");
+  b.addEventListener("click", onClick);
+  return b;
+}
+
+function renderChips(){
+  const f = $("facility"); f.replaceChildren(...FACILITIES.map(x => chip(x.label, state.facility===x.id, () => {
+    state.facility = x.id; state.override = null; state.showAll = false; render();
+  })));
+  const p = $("priority"); p.replaceChildren(...PRIORITIES.map(x => chip(x.label, state.priority===x.id, () => {
+    state.priority = x.id; state.override = null; state.unsureChoice = null; render();
+  })));
+  const s = $("stalls"); s.replaceChildren(...STALLS.map(n => chip(n===5 ? "5+" : String(n), state.stalls===n, () => {
+    state.stalls = n; render();
+  })));
+  $("otherBox").hidden = state.facility !== "other";
+}
+
+function current(){
+  // Returns {mat, eyebrow, headline, why, alsoHtml} or {unsure:true}
+  if (state.override){
+    const m = MATS[state.override];
+    return {mat:state.override, eyebrow:"Your choice", headline:m.name, why:"Best for: " + m.best.toLowerCase() + ".", also:null, chosen:true};
+  }
+  if (state.facility === "other"){
+    const pr = PRIORITIES.find(x => x.id === state.priority);
+    if (!pr.mat){
+      if (!state.unsureChoice) return {unsure:true};
+      const m = state.unsureChoice;
+      return {mat:m, eyebrow:"Recommended for your priorities", headline:MATS[m].name, why: m==="solid-plastic" ? "Waterproof. Won't rust, swell or delaminate in wet areas." : "Our most popular, budget-friendly option for dry restrooms.", also:null, unsureBack:true};
+    }
+    return {mat:pr.mat, eyebrow:"Recommended for your priorities", headline:MATS[pr.mat].name, why:pr.why, also:null};
+  }
+  const f = FACILITIES.find(x => x.id === state.facility);
+  return {mat:f.mat, eyebrow:"Recommended for " + f.noun, headline:MATS[f.mat].name, why:f.why, also:{id:f.also, note:f.alsoNote}};
+}
+
+function priceLine(matId){
+  const m = MATS[matId], n = state.stalls, plus = n===5 ? "+" : "";
+  return `<div class="price"><span class="amt">≈ ${money(m.from*n)}${plus}</span>
+    <span class="per">${n}${plus} stall${n>1||plus?"s":""} × from ${money(m.from)}/stall</span>
+    <span class="incl">All hardware included</span></div>`;
+}
+
+function materialList(selected){
+  const rec = current();
+  return `<div class="mats" role="group" aria-label="All materials">` + Object.entries(MATS).map(([id,m]) =>
+    `<button type="button" class="mat" data-mat="${id}" aria-pressed="${selected===id}">
+       <span class="nm">${m.name}${!state.override && rec.mat===id ? '<span class="badge">Recommended</span>' : ''}</span>
+       <span class="fr">from ${money(m.from)}/stall</span>
+       <span class="bf">Best for: ${m.best.toLowerCase()}</span></button>`).join("") + `</div>`;
+}
+
+function urlFor(matId){
+  const q = new URLSearchParams();
+  q.set("quantity", String(state.stalls));
+  if (matId) q.set("material", matId);
+  q.set("facility", state.facility);
+  if (state.facility==="other"){
+    q.set("priority", state.priority);
+    const sp = $("space").value.trim(); if (sp) q.set("space", sp);
+  }
+  if (state.override) q.set("source", "chosen"); else if (matId) q.set("source", "recommended");
+  return "https://nextpartitions.com/get-a-quote?" + q.toString();
+}
+
+function renderRec(){
+  const r = current(), box = $("rec");
+  if (r.unsure){
+    const opt = (id, t) => `<button type="button" data-unsure="${id}" aria-pressed="false">
+        <span class="t">${t}</span><span class="m">${MATS[id].name}</span>
+        <span class="p">${state.stalls}${state.stalls===5?"+":""} stalls ≈ ${money(MATS[id].from*state.stalls)}${state.stalls===5?"+":""}</span></button>`;
+    box.innerHTML = `<p class="eyebrow">One quick question</p>
+      <h2>Is the restroom dry, or wet and humid?</h2>
+      <p class="why">This decides most of it. Showers, pools and locker rooms count as wet.</p>
+      <div class="split">${opt("powder-coated","Dry restroom")}${opt("solid-plastic","Wet or humid")}</div>
+      <p class="small"><button type="button" class="link" id="cmp">Compare all materials</button></p>
+      ${state.showAll ? materialList(null) : ""}`;
+    box.querySelectorAll("[data-unsure]").forEach(b => b.addEventListener("click", () => { state.unsureChoice = b.dataset.unsure; render(); }));
+    $("cmp").addEventListener("click", () => { state.showAll = !state.showAll; render(); });
+    wireMats();
+    $("url").textContent = urlFor(null);
+    return;
+  }
+  const alsoHtml = r.also ? `<p class="also">Also consider <button type="button" class="link" data-mat="${r.also.id}">${MATS[r.also.id].name}</button> ${r.also.note}.</p>` : "";
+  const backHtml = r.unsureBack ? `<p class="also"><button type="button" class="link" id="back">Change dry / wet answer</button></p>` : "";
+  const resetHtml = r.chosen ? `<p class="also"><button type="button" class="link" id="reset">Back to our recommendation</button></p>` : "";
+  const url = urlFor(r.mat);
+  box.innerHTML = `<p class="eyebrow">${r.eyebrow}</p>
+    <h2>${r.headline}</h2>
+    <p class="why">${r.why}</p>${alsoHtml}${backHtml}${resetHtml}
+    ${priceLine(r.mat)}
+    <div class="actions">
+      <a class="btn" href="${url}" target="_blank" rel="noopener">See my exact price <span aria-hidden="true">→</span></a>
+      <button type="button" class="link" id="toggleAll" aria-expanded="${state.showAll}">${state.showAll ? "Hide materials" : "Or choose a different material"}</button>
+    </div>
+    ${state.showAll ? materialList(r.mat) : ""}
+    <p class="small">Have drawings? <a class="link" href="https://nextpartitions.com/get-a-quote" target="_blank" rel="noopener">Upload them and we'll quote it</a>.</p>`;
+  $("toggleAll").addEventListener("click", () => { state.showAll = !state.showAll; render(); });
+  const back = $("back"); if (back) back.addEventListener("click", () => { state.unsureChoice = null; render(); });
+  const reset = $("reset"); if (reset) reset.addEventListener("click", () => { state.override = null; render(); });
+  box.querySelectorAll(".also [data-mat]").forEach(b => b.addEventListener("click", () => { state.override = b.dataset.mat; render(); }));
+  wireMats();
+  $("url").textContent = url;
+}
+
+function wireMats(){
+  $("rec").querySelectorAll(".mat").forEach(b => b.addEventListener("click", () => {
+    state.override = b.dataset.mat; state.showAll = false; render();
+  }));
+}
+
+function render(){ renderChips(); renderRec(); }
+$("space").addEventListener("input", () => { $("url").textContent = urlFor(current().mat || null); });
+render();
+</script>
