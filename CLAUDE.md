@@ -36,6 +36,8 @@ All installers, rates, reviews and photos in the prototypes are fictional sample
 
 ## Research in this repo
 
+- `docs/onboarding-call-roadmap.md`: onboarding call agenda, what we need from Abe, day-30 success measures and the 30-day plan. The directory launches in month 2, once at least 3 installers are approved.
+
 - `research/installer-regulations.md`: who may install partitions, by state, city and building type. Includes the planned blog cluster and where each item appears on location pages.
 - `prototypes/`: HTML source of the mockups above (see its README).
 - `research/installer-keywords/`: the Semrush export (147 installer keywords, US, 2026-10-14) and the same list mapped to target pages.
