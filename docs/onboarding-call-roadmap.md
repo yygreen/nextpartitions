@@ -104,7 +104,7 @@ The directory goes live in **month 2**, once at least 3 installers are approved.
 For each one, get an answer in the call, or agree who decides and by when.
 
 1. **Directory model.** Is he OK with referral only, no responsibility for installation, and the listing agreement terms (install the partitions on the customer's Next Partitions order, no substitutes, report job status, delisting on breach)? Everything else in the directory depends on this.
-2. **Approval criteria and vetting.** Does he agree with the Approved checklist, who on his side vets installers (checking insurance, calling references), and how much time that takes per installer? This sets how fast we reach 3–5 approved installers.
+2. **Approval criteria and vetting.** Does he agree with the Approved checklist? *Agreed internally:* we do the vetting (checking insurance and registration, calling references), so it costs his team no time. After approval, ratings and reviews from verified customers keep quality up, with low ratings leading to a check and possible delisting. Ask him only to confirm, and to flag any installers he already trusts or wants excluded.
 3. **Pilot area.** DFW, or does his order history point elsewhere (e.g. Tampa)? The orders-by-ZIP data settles it. The prototypes are built for DFW, but switching is cheap now and expensive later.
 4. **Trade accounts.** Will he give installers trade pricing on partitions, or a rebate per referred order? This is the main reason an installer stays loyal, so it needs a number.
 5. **Install-only requests** (the customer bought partitions elsewhere). Accept them, put them behind requests from our own customers, or decline? Accepting brings more installer interest; declining keeps the directory focused on partition sales.

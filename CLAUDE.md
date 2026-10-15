@@ -14,6 +14,7 @@ Working notes for the nextpartitions.com redesign and the installer directory. R
   4. **Trade accounts** for installers.
   5. **Call tracking** on profile phone numbers.
 - **Labels:** every listed installer is **Approved** (installs customer-bought partitions, insurance and business or city registration on file, references contacted, signed listing agreement, one completed job). Earned extras: **Established** (10+ installs for our customers) and **Top rated** (4.8+ from 10+ reviews). Labels state facts, not endorsements.
+- **Vetting and ratings (agreed):** we (the agency) vet installers for the Approved checklist, not Abe's team. After approval, a ratings and review system keeps quality up: only customers with a completed job on a Next Partitions order can review, reviews are published unedited (bad ones included), and low ratings trigger a check and can lead to delisting.
 - **Configurator:** installers stay anonymous (a count and a price range only). Names come with the shop drawings. The exception is a visitor arriving from an installer profile, where that installer is included by name.
 - The real configurator (nextpartitions.com/get-a-quote) is a **quote request**, not a checkout. Never write "order" or "checkout" copy for it.
 - **Pilot area: Dallas–Fort Worth** (Texas hub, then the DFW area page). Texas has no statewide contractor license, so checks show city or state business registration.
