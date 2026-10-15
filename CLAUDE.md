@@ -36,6 +36,7 @@ All installers, rates, reviews and photos in the prototypes are fictional sample
 
 ## Research in this repo
 
+- `research/strategy-2026-02/`: the original February 2026 SEO and website strategy (report, keyword lists 1–4, blog and city-page calendars, technical checklist), with a status check of the live site and how it fits the directory work. **The live site follows its URL structure** (`/guides/`, `/service-area/[city]/`); new pages should too.
 - `docs/onboarding-call-roadmap.md`: onboarding call agenda, what we need from Abe, day-30 success measures and the 30-day plan. The directory launches in month 2, once at least 3 installers are approved.
 
 - `research/installer-regulations.md`: who may install partitions, by state, city and building type. Includes the planned blog cluster and where each item appears on location pages.
