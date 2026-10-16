@@ -9,10 +9,13 @@ Working notes for the nextpartitions.com redesign and the installer directory. R
   "Installers are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work."
 - Protection against installers buying around us comes from:
   1. **Order of steps:** partitions quote first, then installation.
-  2. **Contact details hidden** until the customer chooses an installer.
+  2. **Customer details hidden** (name, phone, email, site address) until the customer has chosen an installer **and** paid for the partitions order. Before that, installers get a blind job packet (scope, shop drawings, city/ZIP) and price it through Next Partitions.
   3. **Listing agreement:** install the partitions on the customer's Next Partitions order, no substitutes, report job status, delisting on breach.
   4. **Trade accounts** for installers.
   5. **Call tracking** on profile phone numbers.
+  6. **Next Partitions runs the middle:** one point of contact for the customer, presenting installer prices, lining up delivery and install dates and following job status. The installer still contracts and invoices installation directly (one combined bill needs legal review first). No markup on installation; our margin is on partitions.
+  7. **Non-circumvention clause** in the listing agreement (no going around us on referred customers; fee or delisting on breach).
+- **Directory and location pages list installers by name** (for search), but contact runs through us: "Get a quote with [installer]" opens the configurator, phone numbers are tracked, no direct email or website link. The **primary action on every location page is "Configure your partitions"**; browsing installers is secondary.
 - **Labels:** every listed installer is **Approved** (installs customer-bought partitions, insurance and business or city registration on file, references contacted, signed listing agreement, one completed job). Earned extras: **Established** (10+ installs for our customers) and **Top rated** (4.8+ from 10+ reviews). Labels state facts, not endorsements.
 - **Vetting and ratings (agreed):** we (the agency) vet installers for the Approved checklist, not Abe's team. After approval, a ratings and review system keeps quality up: only customers with a completed job on a Next Partitions order can review, reviews are published unedited (bad ones included), and low ratings trigger a check and can lead to delisting.
 - **Configurator:** installers stay anonymous (a count and a price range only). Names come with the shop drawings. The exception is a visitor arriving from an installer profile, where that installer is included by name.
