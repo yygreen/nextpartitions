@@ -63,6 +63,16 @@ img{max-width:100%;display:block}
 .facts b{font-size:26px;font-weight:900;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1}
 .facts span{font-size:13px;color:var(--muted)}
 .hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.startcfg{background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--accent);padding:22px;margin:0 0 22px;box-shadow:0 10px 30px rgba(28,14,5,.06);max-width:760px}
+.startcfg h2{font-size:22px;font-weight:900;letter-spacing:-.02em;margin:0 0 6px}
+.startcfg p{margin:0 0 14px;color:var(--muted)}
+.startcfg .btn{font-size:17px;min-height:52px;padding:14px 26px}
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0 0;padding:0;list-style:none;font-size:14px}
+.steps3 li{border-top:2px solid var(--border);padding-top:8px}.steps3 b{display:block;font-size:13px;color:var(--accent-strong)}
+@media (max-width:560px){.steps3{grid-template-columns:1fr}.startcfg .btn{width:100%}}
+.zipbar.secondary label{font-size:14px;color:var(--muted)}
+.mbar{display:none}
+@media (max-width:760px){.mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:45;background:var(--surface);border-top:1px solid var(--border);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}.mbar .btn{width:100%}body{padding-bottom:76px}}
 
 /* filters + cards */
 .filters{display:flex;flex-wrap:nowrap;align-items:center;gap:8px;margin:0 0 18px;overflow-x:auto;scrollbar-width:none}
@@ -243,25 +253,31 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
 <div class="topbar"><div class="wrap"><div class="contact"><span>sales@nextpartitions.com</span><span>1-833-997-7489</span></div><div class="tagline">Authorized Distributor — All Major Brands</div></div></div>
 <nav class="nav" aria-label="Main"><div class="wrap">
   <a class="brand" href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Commercial Partitions</small></span></a>
-  <div class="menu"><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Partitions</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Mounting Styles</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Hardware &amp; Parts</a><a href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener" class="on">Installers</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Resources</a></div>
+  <div class="menu"><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Partitions</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Mounting Styles</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Hardware &amp; Parts</a><a href="https://claude.ai/artifact/LZqngrbkARWrHC23dqswt5" target="_blank" rel="noopener" class="on">Installers</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Resources</a></div>
   <a class="btn" href="https://nextpartitions.com/get-a-quote" target="_blank" rel="noopener">Get a Quote</a>
 </div></nav>
 
 <!-- ================= METRO PAGE ================= -->
 <main id="metro">
 <div class="wrap">
-  <div class="crumbs" id="top"><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Home</a>›<a href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener">Installers</a>›<a href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener">Texas</a>›<span>Dallas–Fort Worth</span></div>
+  <div class="crumbs" id="top"><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Home</a>›<a href="https://claude.ai/artifact/LZqngrbkARWrHC23dqswt5" target="_blank" rel="noopener">Installers</a>›<a href="https://claude.ai/artifact/LZqngrbkARWrHC23dqswt5" target="_blank" rel="noopener">Texas</a>›<span>Dallas–Fort Worth</span></div>
   <header class="hero">
     <h1>Bathroom Partition Installers in Dallas–Fort Worth</h1>
-    <p class="lead">Find independent, insured installers for toilet partitions and urinal screens throughout the Dallas–Fort Worth area. Enter your job-site ZIP code to find nearby installers and compare estimated drive times.</p>
+    <p class="lead">Price your toilet partitions with us, and we match the job with approved, insured installers across Dallas–Fort Worth. You deal with one team from quote to installed restroom.</p>
     <ul class="facts">
       <li><b>4</b><span>approved installers</span></li>
       <li><b>63</b><span>installs for our customers</span></li>
       <li><b>★ 4.8</b><span>avg. rating from our customers</span></li>
     </ul>
-    <form class="zipbar" id="zipForm" novalidate>
-      <label for="jobZip">Job-site ZIP</label>
-      <div class="zrow"><input id="jobZip" inputmode="numeric" maxlength="5" placeholder="e.g. 75201" autocomplete="postal-code"><button class="btn" type="submit">Find closest installers</button></div>
+    <div class="startcfg">
+      <h2>Start with your partitions</h2>
+      <p>Configure your restroom in about 2 minutes. You see your partitions price right away, plus an installation estimate from approved DFW installers.</p>
+      <a class="btn" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw" target="_blank" rel="noopener">Configure your partitions →</a>
+      <ol class="steps3"><li><b>1 · Configure</b>Material, mounting, stall count. Instant partitions price.</li><li><b>2 · Installers confirm</b>Approved installers price your job through us. Your contact details stay with us.</li><li><b>3 · We coordinate</b>Delivery and install dates lined up for you.</li></ol>
+    </div>
+    <form class="zipbar secondary" id="zipForm" novalidate>
+      <label for="jobZip">Or browse installers near your job site</label>
+      <div class="zrow"><input id="jobZip" inputmode="numeric" maxlength="5" placeholder="e.g. 75201" autocomplete="postal-code"><button class="btn ghost" type="submit">Show nearby installers</button></div>
       <p class="zhint" id="zipMsg" hidden></p>
     </form>
   </header>
@@ -282,7 +298,7 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
     <button type="button" class="btn ghost sm maptoggle" id="mapToggle" aria-expanded="false" aria-controls="mapcard">Show map</button>
     <div id="list"></div>
     <p class="disc">Installers are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work. <a class="link" href="#how">How this directory works</a></p>
-    <div class="recruit"><div><h3>Install partitions in DFW?</h3><p>Get install requests from customers buying partitions from us, plus trade pricing on partitions for your own jobs. No listing fee. You quote, contract and invoice customers directly.</p></div><a class="btn ghost" href="#top">Apply for a trade account</a></div>
+    <div class="recruit"><div><h3>Install partitions in DFW?</h3><p>Get install requests from customers buying partitions from us, plus trade pricing on partitions for your own jobs. No listing fee. Jobs come through Next Partitions with shop drawings; you get the customer's details once they book you. You contract and invoice them directly.</p></div><a class="btn ghost" href="#top">Apply for a trade account</a></div>
   </div>
   <aside class="c5" style="min-width:0">
     <div class="mapcard" id="mapcard">
@@ -353,20 +369,20 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
 </div></section>
 
 <section class="xband"><div class="wrap"><div class="grid">
-  <div class="c8"><h2>Buying partitions for a DFW project?</h2><p>Configure your partitions and we'll send your install request to approved installers who serve your ZIP. They quote and invoice you directly.</p></div>
-  <div class="c4 act"><a class="btn" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw" target="_blank" rel="noopener">Price partitions + installation</a></div>
+  <div class="c8"><h2>Buying partitions for a DFW project?</h2><p>Configure your partitions and approved installers who serve your ZIP price the installation through us. You choose, and we line up delivery and install dates.</p></div>
+  <div class="c4 act"><a class="btn" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw" target="_blank" rel="noopener">Configure your partitions</a></div>
 </div></div></section>
 
 <section class="section" style="padding-block:48px"><div class="wrap">
   <h2 class="h2" style="font-size:22px">Partition installers in other Texas areas</h2>
-  <div class="nearby"><a href="#top">Houston</a><a href="#top">Austin</a><a href="#top">San Antonio</a><a href="#top">El Paso</a><a href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener">All Texas installers</a></div>
+  <div class="nearby"><a href="#top">Houston</a><a href="#top">Austin</a><a href="#top">San Antonio</a><a href="#top">El Paso</a><a href="https://claude.ai/artifact/LZqngrbkARWrHC23dqswt5" target="_blank" rel="noopener">All Texas installers</a></div>
 </div></section>
 </main>
 
 <!-- ================= PROFILE PAGE ================= -->
 <main id="profile" hidden>
 <div class="wrap">
-  <div class="crumbs"><a href="#top">Home</a>›<a href="#top">Installers</a>›<a href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener">Texas</a>›<button class="link" type="button" id="backTo" style="font-weight:400">Dallas–Fort Worth</button>›<span id="pfCrumb"></span></div>
+  <div class="crumbs"><a href="#top">Home</a>›<a href="#top">Installers</a>›<a href="https://claude.ai/artifact/LZqngrbkARWrHC23dqswt5" target="_blank" rel="noopener">Texas</a>›<button class="link" type="button" id="backTo" style="font-weight:400">Dallas–Fort Worth</button>›<span id="pfCrumb"></span></div>
   <header class="hero">
     <div class="pfhead"><div class="logo" id="pfLogo"></div><div>
       <div class="chead"><h1 id="pfName" style="margin:0;font-size:clamp(28px,3.4vw,42px)"></h1><span id="pfTier"></span><span class="sample">Sample</span></div>
@@ -389,7 +405,7 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
   </div>
   <aside class="c4" style="min-width:0;display:grid;gap:16px;align-content:start">
     <div class="verify"><h3>What we checked</h3><dl id="pfVerify"></dl></div>
-    <div class="req"><h2>Request a quote</h2><p class="sub">We pass your job scope to this installer. They reply within 1 business day and quote you directly.</p><button class="btn" type="button" id="pfReq">Request a quote</button><p class="fine" id="pfWeb"></p><p class="disc">Installers are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work.</p></div>
+    <div class="req"><h2>Get a quote with this installer</h2><p class="sub">Configure your partitions and this installer prices the installation through us. Your contact details are shared only after you choose them and place your partitions order.</p><a class="btn" id="pfCfg" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw" target="_blank" rel="noopener">Configure partitions + installation</a><p class="fine"><button class="link" type="button" id="pfReq">Already have partitions? Request install only</button></p><p class="disc">Installers are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work.</p></div>
   </aside>
 </div></div></section>
 </main>
@@ -400,7 +416,7 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
     <button type="button" class="dclose" id="dclose" aria-label="Close">×</button>
     <form id="reqForm" novalidate>
       <h2 id="reqTitle">Get installation priced</h2>
-      <p class="sub">Free, no obligation. Installers get your job details. Your name, email and phone stay with us until you choose to share them.</p>
+      <p class="sub">Free, no obligation. Installers see your job scope only. Your name, email, phone and site address stay with us until you choose an installer and place your partitions order.</p>
       <div class="to" id="toLine"><span>Installer: <b id="toName">up to 3 best-matching installers</b></span><button type="button" class="link" id="toReset" hidden>Change</button></div>
       <div class="f"><span class="lab" id="hasLbl">Do you already have the partitions?</span>
         <div class="seg" role="group" aria-labelledby="hasLbl"><button type="button" data-has="no" aria-pressed="true">No, I need them</button><button type="button" data-has="yes" aria-pressed="false">Yes, install only</button></div></div>
@@ -422,6 +438,7 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
   </div>
 </aside>
 
+<div class="mbar"><a class="btn" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw" target="_blank" rel="noopener">Configure your partitions →</a></div>
 <footer><div class="wrap"><span>© 2026 Next Partitions. All rights reserved.</span><span>Terms &amp; Conditions · Privacy Policy</span></div></footer>
 
 <script>
@@ -589,7 +606,7 @@ function cards(){
       <ul class="checks"><li>${check}Insured</li><li>${check}Registration checked</li><li>${check}References checked</li>${x.cert?`<li>${check}${esc(x.cert)}</li>`:""}</ul>
       <div class="mats">${x.mats.map(m=>`<span>${m}</span>`).join("")}</div>
       ${x.supply?`<p class="supply">Installs partitions supplied by Next Partitions</p>`:""}
-      <div class="cact"><button class="btn sm" type="button" data-req="${x.id}">Request a quote</button><a class="link" href="${PROFILE}#${x.id}" target="_blank" rel="noopener">View profile</a>${x.web&&x.tier!=="verified"?`<span class="web">Website: <a href="https://${x.web}/?utm_source=nextpartitions&amp;utm_medium=installer_directory" rel="nofollow noopener" target="_blank">${x.web}</a></span>`:""}</div>
+      <div class="cact"><a class="btn sm" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw.${x.id}" target="_blank" rel="noopener">Get a quote with ${esc(x.name.split(" ")[0])}</a><a class="link" href="${PROFILE}#${x.id}" target="_blank" rel="noopener">View profile</a><button class="link" type="button" data-req="${x.id}">Install only?</button></div>
     </div></article>`).join("");
   $("list").querySelectorAll("[data-req]").forEach(b=>b.addEventListener("click",()=>pick(b.dataset.req)));
   $("list").querySelectorAll("[data-pf]").forEach(b=>b.addEventListener("click",()=>showProfile(b.dataset.pf)));
@@ -632,7 +649,7 @@ function showProfile(id){
   const rv=[["Facilities manager, school district","Crew arrived on the scheduled day and finished 12 stalls in two days. Doors all aligned at sign-off."],["General contractor, Dallas","Easy to coordinate with our schedule. Cleaned up fully and handled two door adjustments the next week."]];
   $("pfReviews").innerHTML=rv.map(r=>`<div class="c6 review"><span class="stars">★★★★★</span><span class="vtag">Bought partitions from us</span><p>${r[1]}</p><small>${r[0]} · Sample review</small></div>`).join("");
   $("pfVerify").innerHTML=`<dt>Insurance</dt><dd class="ok">${esc(x.ins)}</dd><dt>Registration</dt><dd class="ok">${esc(x.reg)}</dd><dt>References</dt><dd class="ok">2 contacted · Jun 2026</dd>${x.cert?`<dt>Training</dt><dd>${esc(x.cert)}</dd>`:""}<dt>Service area</dt><dd>${x.radius} mi from ${esc(x.city)} · travel fee ${esc(x.fee)}</dd><dt>Response time</dt><dd>Usually within 6 hours</dd><dt>Callbacks</dt><dd>1 reported by our customers, last 12 months</dd>`;
-  $("pfWeb").innerHTML=x.web&&x.tier!=="verified"?`Website: <a href="https://${x.web}/?utm_source=nextpartitions&amp;utm_medium=installer_profile" rel="nofollow noopener" target="_blank">${x.web}</a>`:"Website link unlocks at Established.";
+  $("pfCfg").href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw."+x.id;
   $("pfReq").onclick=()=>pick(x.id);
   $("badgePreview").innerHTML=badgeSVG(x);
   $("badgeCode").textContent=`<a href="https://nextpartitions.com/installers/${x.id}/?ref=badge">\n  <img src="https://nextpartitions.com/badge/${x.id}.svg"\n       alt="Approved installer on Next Partitions"\n       width="220" height="76">\n</a>`;
