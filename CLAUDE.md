@@ -31,8 +31,8 @@ Working notes for the nextpartitions.com redesign and the installer directory. R
 | Page | URL |
 |---|---|
 | Homepage redesign (3 ways into a quote) | https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68 |
-| Texas installer hub | https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW |
-| DFW installer area page | https://claude.ai/artifact/JRhaXC9GfSmJveMYCJPSdL |
+| Texas installer hub | https://claude.ai/artifact/LZqngrbkARWrHC23dqswt5 |
+| DFW installer area page | https://claude.ai/artifact/Emsk4xQGarEUxTuXLLdm1q |
 | Installer profile template (`#acme`, `#northwind`, `#contoso`, `#fabrikam`) | https://claude.ai/artifact/Hp9kJEgkaRXCtjoxWMkXPx |
 | Configurator installation step (`#dfw`, `#<installer>.<material>.<mounting>.<stalls>`) | https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs |
 

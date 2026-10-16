@@ -38,8 +38,8 @@ Start with his goals so everything after can be tied back to them.
 Show the pages in this order. Together they follow one customer from the homepage to an installer.
 
 1. **Homepage redesign.** Three ways into a quote: price it yourself in the configurator, send drawings, or "help me choose" for buyers who don't know the material yet. The "Opener" toggle compares it with the facility-picker version, so he can choose or we can test both. https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68
-2. **Texas installer hub.** One level above the city pages. Visitors search by city or ZIP, see a coverage map, and get install options even where no installer is listed yet (so no visitor hits a dead end). https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW
-3. **DFW area page.** ZIP search with estimated drive times, the approved installers for the area, local installed prices and an FAQ. This is the page meant to rank for "toilet partition installers near me" in Dallas–Fort Worth. https://claude.ai/artifact/JRhaXC9GfSmJveMYCJPSdL
+2. **Texas installer hub.** One level above the city pages. Visitors search by city or ZIP, see a coverage map, and get install options even where no installer is listed yet (so no visitor hits a dead end). https://claude.ai/artifact/LZqngrbkARWrHC23dqswt5
+3. **DFW area page.** ZIP search with estimated drive times, the approved installers for the area, local installed prices and an FAQ. This is the page meant to rank for "toilet partition installers near me" in Dallas–Fort Worth. https://claude.ai/artifact/Emsk4xQGarEUxTuXLLdm1q
 4. **Installer profile.** What we checked (insurance, registration, references), job photos, reviews, a rate card that gives an instant estimate for the visitor's job, and a tracked phone number. https://claude.ai/artifact/Hp9kJEgkaRXCtjoxWMkXPx#acme
 5. **Configurator installation step.** A new step in the existing quote request: it shows how many approved installers cover the ZIP and a price range, without naming them. Then the normal "Request your quote" step, with installation shown in the estimate. https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs
 
