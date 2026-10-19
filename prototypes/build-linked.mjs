@@ -11,7 +11,8 @@ mkdirSync(out)
 cpSync(join(here, 'img'), join(out, 'img'), { recursive: true })
 
 const pages = {
-  'index.html': 'homepage-grid.html',
+  'index.html': 'start.html',
+  'home.html': 'homepage-grid.html',
   'texas.html': 'installers-texas.html',
   'dfw.html': 'installers-dfw.html',
   'profile.html': 'installer-profile.html',
@@ -19,7 +20,7 @@ const pages = {
 }
 // Every artifact id the prototypes have used for each page, old and new.
 const ids = {
-  EAVGm8PLp8dyhvnoFTei68: 'index.html',
+  EAVGm8PLp8dyhvnoFTei68: 'home.html',
   GTV4xGPD5C53v3ERHQyVAW: 'texas.html', LZqngrbkARWrHC23dqswt5: 'texas.html',
   JRhaXC9GfSmJveMYCJPSdL: 'dfw.html', Emsk4xQGarEUxTuXLLdm1q: 'dfw.html',
   Hp9kJEgkaRXCtjoxWMkXPx: 'profile.html',
