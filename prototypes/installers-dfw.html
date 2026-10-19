@@ -322,6 +322,25 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
 .passure{margin:-6px 0 24px;font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
 .passure span{color:#b9b1a8}
 @media (max-width:640px){.pwhy ul{grid-template-columns:1fr}}
+.pstallwrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:28px;align-items:start}
+.pnums{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px;max-width:460px;margin-bottom:18px}
+.pnums button{min-height:52px;border:1px solid var(--border);background:var(--surface);font:inherit;font-size:20px;font-weight:800;cursor:pointer}
+.pnums button:hover{border-color:var(--accent)}
+.pnums button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.pswitch{display:flex;gap:12px;align-items:flex-start;font-size:15px;cursor:pointer;padding:10px 0;border-top:1px solid var(--border);max-width:460px}
+.pswitch input{appearance:none;flex:none;width:40px;height:24px;margin:0;border-radius:12px;background:#d6d0c9;position:relative;cursor:pointer;transition:background .15s}
+.pswitch input::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:left .15s}
+.pswitch input:checked{background:var(--accent)}
+.pswitch input:checked::after{left:19px}
+.pswitch small{display:block;color:var(--muted);font-size:13px}
+.psizes{margin:6px 0 0;padding-top:10px;border-top:1px solid var(--border);font-size:14px;color:var(--muted);max-width:460px}
+.psizes b{color:var(--fg)}
+#pSizeBox{margin-top:14px}
+.pplan{margin:0;background:var(--band);border:1px solid var(--border);padding:14px}
+.pplan svg{width:100%;height:auto;display:block}
+.pplan figcaption{font-size:13px;color:var(--muted);text-align:center;margin-top:6px}
+@media (max-width:1024px){.pstallwrap{grid-template-columns:1fr}.pplan{max-width:420px}}
+@media (max-width:640px){.pnums{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .ptip{font-size:14px;color:var(--muted);margin:14px 0 0}
 .pnav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:24px;padding-top:18px;border-top:1px solid var(--border)}
 .pnav .btn{min-width:150px}
@@ -427,12 +446,21 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
             </div>
           </div>
           <div class="pslide" data-step="4" hidden>
-            <h3 tabindex="-1">How many stalls, and what size?</h3>
-            <p class="q">Standard sizes are already selected. Exact measurements come with the shop drawings.</p>
-            <div class="pgroup"><b id="pStL">Number of stalls</b><div class="pstepper" role="group" aria-labelledby="pStL"><button type="button" id="pMinus" aria-label="Fewer stalls">−</button><output id="pStalls" aria-live="polite">4</output><button type="button" id="pPlus" aria-label="More stalls">+</button></div></div>
-            <div class="pgroup"><b id="pWL">Stall width</b><div class="pchips" role="group" aria-labelledby="pWL" id="pWidth"></div></div>
-            <div class="pgroup"><b id="pDL">Stall depth</b><div class="pchips" role="group" aria-labelledby="pDL" id="pDepth"></div></div>
-            <label class="pcheck"><input type="checkbox" id="pPriv"><span><b>Extra privacy</b><small>Continuous hinges and privacy brackets close the gaps around doors</small></span></label>
+            <h3 tabindex="-1">How many stalls?</h3>
+            <p class="q">Count every toilet stall in the restroom, including the accessible one.</p>
+            <div class="pstallwrap">
+              <div>
+                <div class="pnums" role="group" aria-label="Number of stalls" id="pNums"></div>
+                <label class="pswitch"><input type="checkbox" id="pAda" checked><span><b>Include an accessible (ADA) stall</b><small>60" wide. Most commercial restrooms need one.</small></span></label>
+                <label class="pswitch"><input type="checkbox" id="pPriv"><span><b>Extra privacy</b><small>Continuous hinges and brackets close the gaps around doors</small></span></label>
+                <p class="psizes" id="pSizes"></p>
+                <div id="pSizeBox" hidden>
+                  <div class="pgroup"><b id="pWL">Standard stall width</b><div class="pchips" role="group" aria-labelledby="pWL" id="pWidth"></div></div>
+                  <div class="pgroup"><b id="pDL">Stall depth</b><div class="pchips" role="group" aria-labelledby="pDL" id="pDepth"></div></div>
+                </div>
+              </div>
+              <figure class="pplan"><div id="pPlan"></div><figcaption id="pPlanCap"></figcaption></figure>
+            </div>
           </div>
           <div class="pslide" data-step="5" hidden>
             <h3 tabindex="-1">Do you need urinal screens?</h3>
@@ -900,12 +928,12 @@ const PMNT=[
 const PCOL=[["Decide later",""],["White 2129","#f2f0ea"],["Almond 2103","#dccfb4"],["Sage 2141","#8a9a7b"],["Red 2145","#a52321"],["Dark Khaki 2109","#6b6250"],["Khaki 2115","#a89a7a"],["Burgundy 2148","#5c1f26"],["Gray 2125","#8a8a8a"],["Charcoal 2123","#3d3d3d"],["Metallic Silver 2171","#a8abae"],["Azure 2101","#4a7ba6"],["Royal Blue 2135","#1f3e7a"],["Sandy Beach 2150","#c9b393"],["Pepper Dust 3590","#6e6a63"],["Black 2127","#1a1a1a"]];
 // [name, side walls "l"/"r"/"lr"/"", stalls, entrance return "l"/"r"/""]
 const PLAY=[["Between walls","lr",3,""],["Corner left","l",3,""],["Corner right","r",3,""],["Free standing","",3,""],["Alcove, left door with stalls","lr",3,"l"],["Alcove, right door with stalls","lr",3,"r"],["Alcove, left with between-wall units","lr",2,"l"],["Alcove, right with between-wall units","lr",2,"r"],["Single alcove, left door","lr",1,"l"],["Single alcove, right door","lr",1,"r"]];
-const PWID=[["36","36\"","standard"],["32","32\""],["34","34\""],["60","60\"","ADA"]], PDEP=['54"','60"','66"','72"'];
+const PWID=[["32","32\""],["34","34\""],["36","36\"","standard"]], PDEP=['54"','60"','66"','72"'];
 // installer rates per stall (sample; same as the configurator prototype, stainless added)
 const PRATE={acme:{r:{hdpe:140,phen:160,pc:115,lam:120,ss:175},chA:45,min:700},contoso:{r:{hdpe:125,phen:145,pc:100,lam:105,ss:160},chA:40,min:500},
   northwind:{r:{hdpe:130,phen:150,pc:110,lam:110,ss:165},chA:40,min:600},fabrikam:{r:{hdpe:120,phen:140,pc:95,lam:100,ss:150},chA:35,min:450}};
 const PSTEPS=["Material","Bracing","Color","Layout","Stalls","Urinal screens","Your quote range"];
-const P={plans:null,email:null,m:"hdpe",n:"ob",c:0,lay:0,s:4,w:"36",dep:'60"',priv:false,u:0,ud:'18"',uh:'42"',inst:null,step:0,seen:0};
+const P={ada:true,sizes:false,plans:null,email:null,m:"hdpe",n:"ob",c:0,lay:0,s:4,w:"36",dep:'60"',priv:false,u:0,ud:'18"',uh:'42"',inst:null,step:0,seen:0};
 const pmoney=n=>"$"+Math.round(n).toLocaleString("en-US");
 const prng=(lo,hi)=>lo===hi?pmoney(lo):`${pmoney(lo)} – ${pmoney(hi)}`;
 const pm=()=>PMAT.find(x=>x.id===P.m), pn=()=>PMNT.find(x=>x.id===P.n);
@@ -916,6 +944,18 @@ function mountSvg(id){
   return `<svg viewBox="0 0 120 64" aria-hidden="true"><line x1="0" y1="4" x2="120" y2="4" stroke="#b9b1a8" stroke-width="2" stroke-dasharray="${top===4?"":"4 3"}"/><line x1="0" y1="58" x2="120" y2="58" stroke="#b9b1a8" stroke-width="2" stroke-dasharray="${bot===52?"":"4 3"}"/>
   <rect x="30" y="16" width="60" height="30" fill="#fdeee3" stroke="#e8630a"/>${id==="ob"?`<line x1="18" y1="12" x2="102" y2="12" stroke="#1c0e05" stroke-width="3"/>`:""}
   <rect x="22" y="${top}" width="7" height="${(bot===52?58:bot)-top}" fill="#1c0e05"/><rect x="91" y="${top}" width="7" height="${(bot===52?58:bot)-top}" fill="#1c0e05"/></svg>`;
+}
+// live floor plan for the stalls step: standard stalls plus a wider accessible one
+function planSvg(){
+  const ws=+P.w, list=Array.from({length:P.s},(_,k)=>P.ada&&k===P.s-1?60:ws), total=list.reduce((a,b)=>a+b,0);
+  const W=300, sc=Math.min(260/total,4.2), d=parseInt(P.dep)*sc*.62, x0=(W-total*sc)/2;
+  let x=x0, o=`<svg viewBox="0 0 ${W} ${d+40}" role="img" aria-label="Plan of ${P.s} stalls"><rect x="${x0-6}" y="6" width="${total*sc+12}" height="5" fill="#1c0e05"/>`;
+  list.forEach(w=>{const ww=w*sc, r=Math.min(ww*.55,22), ada=w===60&&P.ada;
+    o+=`<rect x="${x.toFixed(1)}" y="11" width="${ww.toFixed(1)}" height="${d.toFixed(1)}" fill="${ada?"#fff":"#fdeee3"}" stroke="#e8630a" stroke-width="1.5"/>`;
+    o+=`<path d="M${(x+ww/2-r/2).toFixed(1)} ${(11+d).toFixed(1)} a${r.toFixed(1)} ${r.toFixed(1)} 0 0 0 ${r.toFixed(1)} ${(-r).toFixed(1)}" fill="none" stroke="#e8630a" stroke-dasharray="3 2"/>`;
+    o+=`<text x="${(x+ww/2).toFixed(1)}" y="${(11+d+18).toFixed(1)}" text-anchor="middle" font-size="11" fill="#6d6059">${ada?"ADA ":""}${w}"</text>`;
+    x+=ww;});
+  return o+`</svg>`;
 }
 function laySvg([,walls,n,ret]){
   const L=walls.includes("l"),R=walls.includes("r"), x0=L?10:22, x1=R?110:98, w=(x1-x0)/n;
@@ -953,12 +993,12 @@ function pGoTo(i,quiet){
   document.querySelector(`.pslide[data-step="${i}"] h3`).focus({preventScroll:true});
 }
 function pricer(){
-  const per=pm().rate+pn().add+(P.priv?45:0)+(P.w==="60"?220:0);
-  const parts=P.s*per+P.u*(P.uh==='48"'?215:185);
+  const per=pm().rate+pn().add+(P.priv?45:0);
+  const parts=P.s*per+(P.ada?220:0)+P.u*(P.uh==='48"'?215:185);
   const ids=P.inst?[P.inst]:Object.keys(PRATE); const e=ids.map(pEst);
   const lo=Math.min(...e.map(x=>x[0])),hi=Math.max(...e.map(x=>x[1]));
   const who=P.inst?I.find(x=>x.id===P.inst).name:null;
-  const rows=[["Material",pm().name],["Bracing",pn().name],["Color",PCOL[P.c][0]],["Layout",P.plans?`From your drawings (${P.plans})`:PLAY[P.lay][0]],["Stalls",`${P.s} × ${P.w}" W × ${P.dep} D${P.priv?", extra privacy":""}`],["Urinal screens",P.u?`${P.u} × ${P.ud} D × ${P.uh} H`:"None"]];
+  const rows=[["Material",pm().name],["Bracing",pn().name],["Color",PCOL[P.c][0]],["Layout",P.plans?`From your drawings (${P.plans})`:PLAY[P.lay][0]],["Stalls",`${P.s} (${P.ada?(P.s>1?`${P.s-1} × ${P.w}" + 1 ADA`:"1 ADA"):`${P.s} × ${P.w}"`}, ${P.dep} deep${P.priv?", extra privacy":""})`],["Urinal screens",P.u?`${P.u} × ${P.ud} D × ${P.uh} H`:"None"]];
   $("pList").innerHTML=rows.map(([a,b],k)=>`<dt>${a}</dt><dd class="${k>P.seen?"todo":""}">${k>P.seen&&k>1?"—":b}</dd>`).join("");
   $("pReview").innerHTML=rows.map(([a,b],k)=>`<dt>${a}</dt><dd>${b}<button type="button" data-edit="${k}" aria-label="Change ${a.toLowerCase()}">Change</button></dd>`).join("")+(P.inst?"":`<dt>Installer</dt><dd>Any approved DFW installer</dd>`);
   $("pReview").querySelectorAll("[data-edit]").forEach(b=>b.onclick=()=>pGoTo(+b.dataset.edit));
@@ -978,7 +1018,13 @@ function pricer(){
   if(!open){$("pParts").textContent=$("pInst").textContent=$("pTotal").textContent="";}
   else $("pSent").textContent=`We've emailed a copy to ${P.email}. Installers price your job through us; your contact details stay with us until you book.`;
   $("pChip").hidden=!P.inst; if(P.inst)$("pChipName").textContent="Installer: "+who;
-  $("pStalls").textContent=P.s; $("pUrinals").textContent=P.u; $("pPriv").checked=P.priv;
+  $("pNums").innerHTML=Array.from({length:8},(_,k)=>`<button type="button" data-s="${k+1}" ${pressed(P.s,k+1)}>${k+1}</button>`).join("");
+  $("pNums").querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>{P.s=+b.dataset.s;pricer();});
+  $("pAda").checked=P.ada;
+  $("pSizes").innerHTML=`Sizes: <b>${P.w}" wide × ${P.dep} deep</b>${P.w==="36"&&P.dep==='60"'?" (standard)":""} <button class="link" type="button" id="pSizeBtn" aria-expanded="${P.sizes}">${P.sizes?"Done":"Change"}</button>`;
+  $("pSizeBtn").onclick=()=>{P.sizes=!P.sizes;pricer();}; $("pSizeBox").hidden=!P.sizes;
+  $("pPlan").innerHTML=planSvg(); $("pPlanCap").textContent=`${P.s} stall${P.s>1?"s":""}${P.ada?", 1 accessible":""} · seen from above`;
+  $("pUrinals").textContent=P.u; $("pPriv").checked=P.priv;
   $("pUOpts").hidden=!P.u;
   $("pBack").hidden=P.step===0; $("pNext").hidden=P.step===6;
   $("pNext").textContent=P.step===5?(P.email?"See my price →":"Get my quote range →"):`Next: ${PSTEPS[P.step+1]} →`;
@@ -996,8 +1042,7 @@ $("pPlansBtn").onclick=()=>{const o=$("pPlansBox").hidden;$("pPlansBox").hidden=
 $("pPlans").onchange=e=>{const f=e.target.files[0];P.plans=f?f.name:null;$("pPlansName").hidden=!f;$("pPlansName").textContent=f?`✓ ${f.name} attached. We'll use it for your layout.`:"";
   document.querySelectorAll("[data-l]").forEach(b=>b.setAttribute("aria-pressed","false"));pricer();if(f)setTimeout(()=>pGoTo(4),600);};
 $("pPriv").onchange=e=>{P.priv=e.target.checked;pricer();};
-$("pMinus").onclick=()=>{P.s=Math.max(1,P.s-1);pricer();};
-$("pPlus").onclick=()=>{P.s=Math.min(8,P.s+1);pricer();};
+$("pAda").onchange=e=>{P.ada=e.target.checked;pricer();};
 $("pUMinus").onclick=()=>{P.u=Math.max(0,P.u-1);pricerCards();pricer();};
 $("pUPlus").onclick=()=>{P.u=Math.min(12,P.u+1);pricerCards();pricer();};
 $("pChipClear").onclick=()=>{P.inst=null;pricer();};
