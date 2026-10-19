@@ -1,7 +1,7 @@
 // Standalone only: a copy of the live nextpartitions.com header and footer so the standalone app and the
 // preview look like the site. On merge, the live layout's own header and footer are used instead.
 import type { ReactNode } from 'react'
-import { configuratorHref, serviceAreaHref, stateHref } from '../directory/links'
+import { configuratorHref, serviceAreaHref } from '../directory/links'
 
 const LIVE = 'https://nextpartitions.com'
 const LOGO = `${LIVE}/__l5e/assets-v1/f0cc181a-5245-489b-b371-217b11a9cecc/next-icon.png`
@@ -57,7 +57,7 @@ export function SiteFooter() {
           <a href="mailto:sales@nextpartitions.com" className="text-white/85">sales@nextpartitions.com</a>
         </div>
         {col('Products', [['All Partitions', `${LIVE}/partitions`], ['Powder Coated Steel', `${LIVE}/partitions/powder-coated-steel`], ['Solid Plastic (HDPE)', `${LIVE}/partitions/solid-plastic-hdpe`], ['Phenolic', `${LIVE}/partitions/phenolic`], ['Hardware & Parts', `${LIVE}/hardware`]])}
-        {col('Resources', [['Our Service Area', serviceAreaHref()], ['Installers in Texas', stateHref('texas')], ['Stall Dimensions', `${LIVE}/guides/bathroom-stall-dimensions`], ['ADA Compliance', `${LIVE}/guides/ada-compliance`], ['Blog', `${LIVE}/blog`]])}
+        {col('Resources', [['Our Service Area', serviceAreaHref()], ['Stall Dimensions', `${LIVE}/guides/bathroom-stall-dimensions`], ['ADA Compliance', `${LIVE}/guides/ada-compliance`], ['Blog', `${LIVE}/blog`]])}
         {col('Brands', [['Bobrick', `${LIVE}/brands/bobrick`], ['ASI Global', `${LIVE}/brands/asiglobal`], ['Scranton Products', `${LIVE}/brands/scranton-products`], ['Bradley Corp', `${LIVE}/brands/bradley`], ['Metpar', `${LIVE}/brands/metpar`]])}
         {col('Company', [['About Us', `${LIVE}/about`], ['Contact Us', `${LIVE}/contact`], ['Get a Quote', configuratorHref({ from: 'hub' })]])}
       </div>
