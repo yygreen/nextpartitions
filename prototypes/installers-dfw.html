@@ -147,6 +147,7 @@ img{max-width:100%;display:block}
 .outside{color:#9a5b00;font-size:12px;font-weight:600}
 .countrow{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin:0 0 12px}
 .countrow .count{margin:0}
+.count .snote{display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:2px}
 .sortby{display:flex;align-items:center;gap:8px}
 .sortby label{font-size:13px;color:var(--muted);font-weight:600}
 .sortby select{font:inherit;font-size:14px;font-weight:600;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:0 10px;min-height:38px;cursor:pointer}
@@ -712,22 +713,22 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
 
 <script>
 const I = [
- {id:"acme", name:"Acme Partition Installs", init:"AP", tier:"preferred", city:"Dallas", lat:32.78, lon:-96.80, radius:60, fee:"$2/mi beyond 60 mi", rating:4.9, jobs:28, since:2011,
+ {id:"acme", replyH:6, name:"Acme Partition Installs", init:"AP", tier:"preferred", city:"Dallas", lat:32.78, lon:-96.80, radius:60, fee:"$2/mi beyond 60 mi", rating:4.9, jobs:28, since:2011,
   ins:"$2M general liability · on file, checked Sep 2026", reg:"City of Dallas contractor registration · on file, checked Sep 2026", cert:"Scranton Products trained",
   mats:["HDPE","Phenolic","Stainless","Powder coated"], tags:["hdpe","phenolic","stainless","steel","ceiling"], mount:"Overhead braced, floor mounted, ceiling hung",
   photo:"img/stainless-steel.jpg", photoCap:"Office tower, Dallas", web:"acme-installs.example", supply:true,
   about:"Two install crews focused on commercial restrooms: schools, offices and medical buildings across Dallas, Collin and Denton counties. Handles removal of old partitions and after-hours work."},
- {id:"northwind", name:"Northwind Washroom Pros", init:"NW", tier:"certified", city:"Fort Worth", lat:32.755, lon:-97.33, radius:50, fee:"$1.75/mi beyond 50 mi", rating:4.8, jobs:19, since:2016,
+ {id:"northwind", replyH:8, name:"Northwind Washroom Pros", init:"NW", tier:"certified", city:"Fort Worth", lat:32.755, lon:-97.33, radius:50, fee:"$1.75/mi beyond 50 mi", rating:4.8, jobs:19, since:2016,
   ins:"$1M general liability · on file, checked Aug 2026", reg:"Business registration · on file, checked Sep 2026", cert:"Bobrick installation course",
   mats:["Phenolic","HDPE","Powder coated"], tags:["phenolic","hdpe","steel"], mount:"Overhead braced, floor mounted",
   photo:"img/phenolic.jpg", photoCap:"Fitness center, Fort Worth", web:"northwind-washroom.example", supply:true,
   about:"Restroom specialty contractor serving Tarrant County. Partitions, urinal screens and washroom accessories for gyms, churches and retail."},
- {id:"contoso", name:"Contoso Specialty Contractors", init:"CS", tier:"certified", city:"Arlington", lat:32.735, lon:-97.11, radius:40, fee:"$150 flat beyond 40 mi", rating:4.7, jobs:11, since:2019,
+ {id:"contoso", replyH:20, name:"Contoso Specialty Contractors", init:"CS", tier:"certified", city:"Arlington", lat:32.735, lon:-97.11, radius:40, fee:"$150 flat beyond 40 mi", rating:4.7, jobs:11, since:2019,
   ins:"$1M general liability · on file, checked Jul 2026", reg:"Business registration · on file, checked Sep 2026", cert:"",
   mats:["Powder coated","Plastic laminate","HDPE"], tags:["steel","laminate","hdpe"], mount:"Overhead braced",
   photo:"img/powder-coated.jpg", photoCap:"Retail store, Arlington", web:"contoso-specialty.example", supply:false,
   about:"Division 10 specialties installer: partitions, lockers and accessories for retail and restaurant build-outs between Dallas and Fort Worth."},
- {id:"fabrikam", name:"Fabrikam Facility Services", init:"FF", tier:"verified", city:"Denton", lat:33.215, lon:-97.13, radius:45, fee:"$2.50/mi beyond 45 mi", rating:4.6, jobs:5, since:2021,
+ {id:"fabrikam", replyH:22, name:"Fabrikam Facility Services", init:"FF", tier:"verified", city:"Denton", lat:33.215, lon:-97.13, radius:45, fee:"$2.50/mi beyond 45 mi", rating:4.6, jobs:5, since:2021,
   ins:"$1M general liability · on file, checked Sep 2026", reg:"Business registration · on file, checked Sep 2026", cert:"",
   mats:["Powder coated","HDPE"], tags:["steel","hdpe"], mount:"Overhead braced, floor mounted",
   photo:"img/plastic-laminate.jpg", photoCap:"Church, Denton", web:"", supply:false,
@@ -739,6 +740,9 @@ const $=id=>document.getElementById(id);
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const check='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg>';
 const stars=r=>"★★★★★".slice(0,Math.round(r))+"☆☆☆☆☆".slice(0,5-Math.round(r));
+// Installer Score: rating, installs for our customers and how fast they answer job requests (sample weights)
+const iScore=x=>x.rating*20+Math.min(x.jobs,30)-x.replyH;
+const replyTxt=x=>x.replyH<=8?`Replies in ~${x.replyH} h`:"Replies next business day";
 let filter="all", target=null, has="no", job=null, sortBy="score", hover=null;
 // --- geography (mockup): a few DFW ZIPs; live site uses a geocoder + routing API for real drive times
 const ZIPS={"75201":["Downtown Dallas",32.787,-96.799],"76102":["Downtown Fort Worth",32.755,-97.331],"75024":["Plano",33.075,-96.81],"75087":["Rockwall",32.93,-96.44],"75165":["Waxahachie",32.40,-96.84],"76201":["Denton",33.21,-97.13],"76010":["Arlington",32.72,-97.08],"75034":["Frisco",33.15,-96.83],"75069":["McKinney",33.20,-96.62],"75061":["Irving",32.82,-96.95],"76063":["Mansfield",32.56,-97.14],"76086":["Weatherford",32.76,-97.80]};
@@ -865,12 +869,13 @@ function cards(){
   if(job && sortBy==="near") rows=rows.slice().sort((a,b)=>miles(a)-miles(b));
   else if(sortBy==="rating") rows=rows.slice().sort((a,b)=>b.rating-a.rating);
   else if(sortBy==="jobs") rows=rows.slice().sort((a,b)=>b.jobs-a.jobs);
-  $("count").textContent=`${rows.length} installer${rows.length!==1?"s":""} serving Dallas–Fort Worth`;
+  else rows=rows.slice().sort((a,b)=>iScore(b)-iScore(a));
+  $("count").innerHTML=`${rows.length} installer${rows.length!==1?"s":""} serving Dallas–Fort Worth${sortBy==="score"?'<small class="snote">Installer Score combines customer rating, installs for our customers and reply time.</small>':""}`;
   $("list").innerHTML=rows.map(x=>`<article class="card ${x.tier==="preferred"?"pref":""}" id="card-${x.id}" data-card="${x.id}">
     <div class="ph"><img src="${x.photo}" alt="Recent install by ${esc(x.name)}" loading="lazy"><span>${esc(x.photoCap)}</span></div>
     <div style="min-width:0">
       <div class="chead"><h3>${esc(x.name)}</h3><span class="tier approved">✓ Approved</span>${TIER[x.tier]?`<span class="tier ${x.tier==="certified"?"verified":x.tier}">${TIER[x.tier]}</span>`:""}<span class="sample">Sample</span></div>
-      <p class="meta"><span class="stars" aria-label="${x.rating} out of 5">${stars(x.rating)}</span> <b style="color:var(--fg)">${x.rating}</b> · ${x.jobs} installs for our customers · ${esc(x.city)} + ${x.radius} mi</p>
+      <p class="meta"><span class="stars" aria-label="${x.rating} out of 5">${stars(x.rating)}</span> <b style="color:var(--fg)">${x.rating}</b> · ${x.jobs} installs for our customers · ${esc(x.city)} + ${x.radius} mi · ${replyTxt(x)}</p>
       ${job?distLine(x):""}
       <ul class="checks"><li>${check}Insured</li><li>${check}Registration checked</li><li>${check}References checked</li>${x.cert?`<li>${check}${esc(x.cert)}</li>`:""}</ul>
       <div class="mats">${x.mats.map(m=>`<span>${m}</span>`).join("")}</div>
@@ -1041,7 +1046,7 @@ function pricer(){
   // prices stay out of the page until the visitor has given an email
   const open=!!P.email;
   if(open){$("pParts").textContent=pmoney(parts);
-  $("pInst").innerHTML=`${prng(lo,hi)}<small>${who?"Rates: "+who:ids.length+" approved DFW installers"}</small>`;
+  $("pInst").innerHTML=`${prng(lo,hi)}<small>${who?"From "+who+"'s agreed rates":"From the agreed rates of "+ids.length+" approved DFW installers"}. The installer confirms a firm price through us and bills installation directly.</small>`;
   $("pTotal").innerHTML=`${prng(parts+lo,parts+hi)}<small>Before tax and delivery</small>`;}
   $("pGate").hidden=open; $("pPrice").hidden=!open;
   $("pMini").textContent=open?prng(parts+lo,parts+hi):"$0,000 – $0,000"; $("pMini").classList.toggle("locked",!open); if(open)$("pMini").removeAttribute("aria-label");else $("pMini").setAttribute("aria-label","Shown after you enter your email");
