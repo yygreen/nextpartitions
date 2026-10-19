@@ -27,7 +27,7 @@ Working notes for the nextpartitions.com redesign and the installer directory. R
 - **Homepage: ideas for Marc, not our design.** Marc is the designer and owns the main site; the homepage prototype is a set of suggestions he can use as he sees fit. Present it that way to Abe and Marc.
 - **Homepage suggestion: three ways in** = Price it yourself (configurator), Send your plans, **Shop the catalogue** (`/products`: the existing shop with cart and checkout). No facility picker, "Help me choose" helper or grid toggle on the homepage; industry tiles link to the industry pages. Note: live robots.txt disallows `/products`, so the catalogue isn't indexed; check with Marc whether that's intended.
 - **Maps:** prototypes use simplified SVG maps. Production should use Google Maps (Maps JavaScript API with circles for service radii, Places for ZIP/address search, Routes for drive times), with an API key from Abe's Google Cloud account restricted to nextpartitions.com. Installers are shown by base city, never street address.
-- **Pilot area: Dallas–Fort Worth** (Texas hub, then the DFW area page). Texas has no statewide contractor license, so checks show city or state business registration.
+- **Dallas–Fort Worth is the example area** of the prototypes (Texas hub, then the DFW area page). Present it to Abe as sample pages; the real first area is chosen from his orders-by-ZIP data. Texas has no statewide contractor license, so checks show city or state business registration.
 
 ## Client relationship
 
