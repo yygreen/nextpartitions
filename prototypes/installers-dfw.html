@@ -311,6 +311,22 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
 .pdrop input{font:inherit;font-size:14px}
 .pdrop span{font-size:13px;color:var(--muted)}
 .pfile{margin:8px 0 0;font-weight:700}
+.pwhy{margin-top:24px;border-top:1px solid var(--border);padding-top:20px}
+.pwhy .gh2{display:block;font-size:17px;font-weight:900;margin:0 0 12px}
+.pwhy ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 20px}
+.pwhy li{display:flex;gap:10px;font-size:14px;color:var(--muted);line-height:1.4}
+.pwhy li i{flex:none;font-style:normal;width:28px;height:28px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-strong);font-weight:900;font-size:14px}
+.pwhy li b{display:block;color:var(--fg);font-size:15px;margin-bottom:2px}
+.phelp{margin:18px 0 0;font-size:14px;background:var(--band);border:1px solid var(--border);padding:12px 14px}
+.phelp a{color:var(--accent-strong);font-weight:700}
+.pticks{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:13px}
+.pticks li::before{content:"✓ ";color:var(--accent-strong);font-weight:900}
+.pticks a{color:var(--accent-strong);font-weight:700}
+.passure{list-style:none;margin:-8px 0 26px;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.passure li{border-left:3px solid var(--accent);padding:2px 0 2px 12px;font-size:14px;color:var(--muted);line-height:1.4}
+.passure b{display:block;color:var(--fg);font-size:15px}
+@media (max-width:1024px){.passure{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.pwhy ul{grid-template-columns:1fr}.passure{grid-template-columns:1fr}.psum .pticks{display:none}}
 .ptip{font-size:14px;color:var(--muted);margin:14px 0 0}
 .pnav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:24px;padding-top:18px;border-top:1px solid var(--border)}
 .pnav .btn{min-width:150px}
@@ -440,6 +456,18 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
               <div>
                 <div class="pchip" id="pChip" hidden style="margin-bottom:12px"><b id="pChipName"></b><button type="button" id="pChipClear">Use any approved installer</button></div>
                 <dl id="pReview"></dl>
+                <div class="pwhy">
+                  <b class="gh2">Why book through Next Partitions</b>
+                  <ul>
+                    <li><i aria-hidden="true">↔</i><span><b>One team, quote to installed restroom</b>We line up delivery and the install date with your installer and follow the job until it's done.</span></li>
+                    <li><i aria-hidden="true">✓</i><span><b>Approved installers only</b>Insurance and registration on file, references checked, rated only by customers with a completed job.</span></li>
+                    <li><i aria-hidden="true">$</i><span><b>No markup on installation</b>Installers price from rates agreed with us. Our margin is on the partitions, not the install.</span></li>
+                    <li><i aria-hidden="true">✎</i><span><b>Shop drawings in 24–48 hours</b>A measured layout and a firm quote before you commit to anything.</span></li>
+                    <li><i aria-hidden="true">→</i><span><b>Delivered to your job site</b>All hardware included. Stock items ship in 48–72 hours, custom orders in 10–15 business days.</span></li>
+                    <li><i aria-hidden="true">★</i><span><b>Authorized distributor, all major brands</b>Bobrick, ASI, Scranton Products, Bradley, Metpar and more. Purchase orders welcome from schools and public buyers.</span></li>
+                  </ul>
+                  <p class="phelp"><b>Questions? Talk to our team.</b> Call <a href="tel:18339977489">1-833-997-7489</a> or email <a href="mailto:sales@nextpartitions.com">sales@nextpartitions.com</a>.</p>
+                </div>
               </div>
               <form class="ptot2 pgate" id="pGate" novalidate>
                 <b class="gh">See your instant quote range</b>
@@ -470,9 +498,16 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
           <div class="pmini" aria-live="polite"><span>Your instant quote range</span><b id="pMini"></b></div>
           <button class="btn" type="button" id="pSkip">Get my instant quote range</button>
           <p class="fine2" id="pMiniNote">Partitions plus installation. Free, by email, no obligation.</p>
+          <ul class="pticks"><li>Shop drawings in 24–48 hours</li><li>Approved, insured installers</li><li>One team from quote to install</li><li>Questions? <a href="tel:18339977489">1-833-997-7489</a></li></ul>
         </aside>
       </div>
     </section>
+    <ul class="passure" aria-label="Why price your restroom with us">
+      <li><b>One team</b><span>We coordinate delivery and the install date with your installer</span></li>
+      <li><b>Approved installers</b><span>Insured, registered, references checked</span></li>
+      <li><b>No markup on installation</b><span>Installers price from rates agreed with us</span></li>
+      <li><b>Drawings in 24–48 hours</b><span>Firm quote before you commit</span></li>
+    </ul>
     <form class="zipbar secondary" id="zipForm" novalidate>
       <label for="jobZip">Or browse installers near your job site</label>
       <div class="zrow"><input id="jobZip" inputmode="numeric" maxlength="5" placeholder="e.g. 75201" autocomplete="postal-code"><button class="btn ghost" type="submit">Show nearby installers</button></div>
@@ -550,7 +585,7 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
     <div class="c3 card2"><h3>What installation includes</h3><ul><li>Receiving and checking the delivery</li><li>Layout, anchoring and leveling</li><li>Doors, hinges, latches and hardware</li><li>Final adjustment and cleanup</li></ul></div>
     <div class="c3 card2"><h3>Questions to ask</h3><ul><li>Proof of general liability insurance?</li><li>Partition installs in the last 12 months?</li><li>Is removal of old stalls included?</li><li>How are callbacks handled?</li></ul></div>
     <div class="c3 card2"><h3>Texas rules</h3><ul><li>Accessible stalls follow the Texas Accessibility Standards (TAS)</li><li>Many commercial and public projects need TDLR registration and inspection by a Registered Accessibility Specialist</li><li>Some cities require contractor registration</li></ul></div>
-    <div class="c3 card2"><h3>Typical timeline</h3><ul><li>Quote: 1–2 business days</li><li>Delivery to DFW: 5–10 business days</li><li>Install: 1–2 days for most restrooms</li><li>Final walk-through with your installer</li></ul></div>
+    <div class="c3 card2"><h3>Typical timeline</h3><ul><li>Quote and shop drawings: 24–48 hours</li><li>Delivery: stock items ship in 48–72 hours, custom orders in 10–15 business days</li><li>Install: 1–2 days for most restrooms</li><li>Final walk-through with your installer</li></ul></div>
   </div>
   <p class="note">Rules summarized for orientation; confirm requirements for your project with the authority having jurisdiction.</p>
 </div></section>
@@ -950,7 +985,7 @@ function pricer(){
   $("pMini").textContent=open?prng(parts+lo,parts+hi):"$0,000 – $0,000"; $("pMini").classList.toggle("locked",!open); if(open)$("pMini").removeAttribute("aria-label");else $("pMini").setAttribute("aria-label","Shown after you enter your email");
   $("pSkip").hidden=open; $("pMiniNote").textContent=open?"Partitions plus installation, before tax and delivery.":"Partitions plus installation. Free, by email, no obligation.";
   $("pFinalH").textContent=open?"Your restroom, priced":"Your instant quote range";
-  $("pFinalQ").textContent=open?"Sample estimate. Your quote and shop drawings follow within 2 business days.":"Check your answers, then enter your email to see the price range.";
+  $("pFinalQ").textContent=open?"Sample estimate. Your quote and shop drawings follow within 24–48 hours.":"Check your answers, then enter your email to see the price range.";
   if(!open){$("pParts").textContent=$("pInst").textContent=$("pTotal").textContent="";}
   else $("pSent").textContent=`We've emailed a copy to ${P.email}. Installers price your job through us; your contact details stay with us until you book.`;
   $("pChip").hidden=!P.inst; if(P.inst)$("pChipName").textContent="Installer: "+who;
