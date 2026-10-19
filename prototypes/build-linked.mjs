@@ -22,6 +22,11 @@ const pages = {
   'profile.html': 'installer-profile.html',
   'configurator.html': 'configurator-install.html',
   'portal.html': 'installer-portal.html',
+  'quote.html': 'customer-quote.html',
+  'apply.html': 'installer-apply.html',
+  'vetting.html': 'installer-vetting.html',
+  'review.html': 'review-request.html',
+  'emails.html': 'email-copy.html',
 }
 // Every artifact id the prototypes have used for each page, old and new.
 const ids = {

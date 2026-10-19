@@ -568,7 +568,7 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
     <button type="button" class="btn ghost sm maptoggle" id="mapToggle" aria-expanded="false" aria-controls="mapcard">Show map</button>
     <div id="list"></div>
     <p class="disc">Installers are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work. <a class="link" href="#how">How this directory works</a></p>
-    <div class="recruit"><div><h3>Install partitions in DFW?</h3><p>Get install requests from customers buying partitions from us, plus trade pricing on partitions for your own jobs. No listing fee. Jobs come through Next Partitions with shop drawings; you get the customer's details once they book you. You contract and invoice them directly.</p></div><a class="btn ghost" href="#top">Apply for a trade account</a></div>
+    <div class="recruit"><div><h3>Install partitions in DFW?</h3><p>Get install requests from customers buying partitions from us, plus trade pricing on partitions for your own jobs. No listing fee. Jobs come through Next Partitions with shop drawings; you get the customer's details once they book you. You contract and invoice them directly.</p></div><a class="btn ghost" href="apply.html">Apply to get listed</a></div>
   </div>
   <aside class="c5" style="min-width:0">
     <div class="mapcard" id="mapcard">
@@ -1054,7 +1054,7 @@ function pricer(){
   $("pFinalH").textContent=open?"Your restroom, priced":"Your instant quote range";
   $("pFinalQ").textContent=open?"Sample estimate. Your quote and shop drawings follow within 24–48 hours.":"Check your answers, then enter your email to see the price range.";
   if(!open){$("pParts").textContent=$("pInst").textContent=$("pTotal").textContent="";}
-  else $("pSent").textContent=`We've emailed a copy to ${P.email}. Installers price your job through us; your contact details stay with us until you book.`;
+  else $("pSent").innerHTML=`We've emailed a copy to ${esc(P.email)}. Installers price your job through us; your contact details stay with us until you book. <a class="link" href="emails.html#email-1">Prototype: see the email</a>`;
   $("pChip").hidden=!P.inst; if(P.inst)$("pChipName").textContent="Installer: "+who;
   $("pNums").innerHTML=Array.from({length:8},(_,k)=>`<button type="button" data-s="${k+1}" ${pressed(P.s,k+1)}>${k+1}</button>`).join("");
   $("pNums").querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>{P.s=+b.dataset.s;pricer();});

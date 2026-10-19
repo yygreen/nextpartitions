@@ -323,7 +323,7 @@ function action(j){
       <p class="vs" id="vsRate"></p>
       <label class="field">Note for the customer (optional)<textarea id="custNote" rows="2" placeholder="e.g. Includes removal and haul-away. Two-day install."></textarea></label>
       <div class="btns"><button class="btn" type="button" id="sendPrice">Send price</button><button class="btn quiet" type="button" id="askQ">Ask a question first</button><button class="link" type="button" id="decline">Decline this job</button></div>
-      <p class="note">Reply by ${j.due} (1 business day). Price valid for 30 days. Your median reply time: 6 h.</p>
+      <p class="note"><a class="link" href="emails.html#email-2">See the job request email</a>. Reply by ${j.due} (1 business day). Price valid for 30 days. Your median reply time: 6 h.</p>
       <div id="declineBox" hidden><label class="field">Why are you declining?<select id="declineWhy"><option>Fully booked for these dates</option><option>Outside the area I cover</option><option>Material or bracing I don't install</option><option>Other</option></select></label><button class="btn quiet sm" type="button" id="declineGo">Decline job</button></div>
     </div>`;
   }
@@ -339,7 +339,7 @@ function action(j){
     <label class="field">Photos of the finished restroom (optional)<input type="file" accept="image/*" multiple></label>
     <div class="btns"><button class="btn" type="button" id="markDone">Mark installed</button><button class="link" type="button" id="reschedule">Change date</button></div></div>`;
   if(j.status==="lost") return `<div class="card"><h3>The customer chose another installer</h3><p class="lead" style="margin:0">Your price was ${money(j.price)}. Thanks for replying quickly: reply time counts toward your Installer Score either way.</p></div>`;
-  return `<div class="card"><h3>Installed ${j.installDate}</h3><p style="margin:0 0 8px">Final price ${money(j.price)}, invoiced by you.</p>${j.review?`<p style="margin:0"><b>Customer review: ${"★".repeat(j.review[0])}</b> “${esc(j.review[1])}”</p>`:`<p class="note">We've asked the customer for a review.</p>`}</div>`;
+  return `<div class="card"><h3>Installed ${j.installDate}</h3><p style="margin:0 0 8px">Final price ${money(j.price)}, invoiced by you.</p>${j.review?`<p style="margin:0"><b>Customer review: ${"★".repeat(j.review[0])}</b> “${esc(j.review[1])}”</p>`:`<p class="note">We've asked the customer for a review. See <a class="link" href="emails.html#email-6">the review request</a> and <a class="link" href="review.html">the review form</a>.</p>`}</div>`;
 }
 
 function messages(j){
@@ -398,7 +398,7 @@ function wire(j){
     j.msgs.push(["me","You",`Install date set: ${j.installDate}.`]);render();};
   if($("reschedule"))$("reschedule").onclick=()=>{j.status="released";render();};
   if($("markDone"))$("markDone").onclick=()=>{j.status="installed";j.msgs.push(["np","Dana · Next Partitions","Thanks for marking it installed. We've asked the customer for a review."]);render();};
-  if($("present"))$("present").onclick=()=>{$("presented").textContent="Sent. The customer chooses an installer in their quote.";};
+  if($("present"))$("present").onclick=()=>{$("presented").innerHTML='Sent. <a class="link" href="quote.html#choose">See the customer\'s quote page</a> · <a class="link" href="emails.html#email-3">the email</a>';};
   $("msgGo").onclick=()=>{const t=$("msgIn").value.trim();if(!t)return;
     // before release, contact details are blacked out so nobody can take the job around Next Partitions
     let h=esc(t), hid=false;
