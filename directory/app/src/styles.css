@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Standalone stand-ins for the live site's shadcn/ui tokens. On merge, delete this block:
+   the components only use token classes (bg-primary, text-muted-foreground, border, ...). */
+@theme {
+  --color-background: #faf8f5;
+  --color-foreground: #1c0e05;
+  --color-card: #ffffff;
+  --color-muted: #f1ede8;
+  --color-muted-foreground: #6d6059;
+  --color-border: #e1ddd7;
+  --color-primary: #c8102e;
+  --color-primary-foreground: #ffffff;
+  --color-accent: #fdecef;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body { @apply bg-background text-foreground antialiased; }
