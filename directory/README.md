@@ -9,6 +9,7 @@ Built to drop into the live nextpartitions.com app. The live site is a Lovable p
 | `supabase/migrations/20261019000000_installer_directory.sql` | Tables, privacy rules (row-level security), triggers and public views | Done, tested |
 | `supabase/tests/` | A stand-in for Supabase's auth roles plus an automated test of the privacy rules | Done |
 | `supabase/migrations/20261019010000_directory_areas.sql` | Areas the directory covers (`published` stays false until 3+ installers are approved) | Done |
+| `supabase/migrations/20261020000000_job_routing.sql` | Who gets invited to price a job, closing the price window, widening the search when nobody prices, price checks, purchase orders counting for release, contact details hidden in messages, and an outbox for emails and the CRM (rules: `docs/job-routing.md`) | Done, tested |
 | `app/src/directory/` | The portable module: types, data access (Supabase or sample), server functions, estimate maths, components | Done, type-checked, unit-tested |
 | `app/src/routes/` | `/service-area/`, Texas hub `/service-area/texas`, area page `/service-area/$area` (with `?installer=` pre-selection), installer profile `/installers/$installer` | Done, server-rendered |
 | `app/src/directory/components/ConfigureStart.tsx` | "Price your restroom" step on area pages and profiles: material, mounting, stalls, removal → partitions price + installation estimate + total → hands off to the configurator with those choices | Done |
@@ -51,11 +52,18 @@ Set `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` (see `.env.example`) to read r
 ## Running the database tests locally
 
 ```sh
-createdb dirtest
-psql -d dirtest -f supabase/tests/supabase_shim.sql
-psql -d dirtest -f supabase/migrations/20261019000000_installer_directory.sql
-psql -d dirtest -f supabase/tests/rls_test.sql   # prints ALL TESTS PASSED
+supabase/tests/run.sh   # prints ALL TESTS PASSED and ROUTING TESTS PASSED
 ```
+
+It creates fresh databases, loads `supabase/tests/supabase_shim.sql` (a stand-in for Supabase's roles), every migration, then each test file.
+
+## Job routing: what runs where
+
+- `dir_route_job(job)` invites up to 3 installers when a quote request with drawings becomes a job. Call it from the server (service role) or as an admin.
+- `dir_sweep_jobs()` runs every 15 minutes (pg_cron, scheduled by the migration if the extension is on). It closes price windows, widens the search once to 75 mi when nobody priced, flags jobs for Dana (`needs_attention`) and sends 20-hour reminders.
+- `dir_invite_installer(job, installer)` is Dana's "invite by hand".
+- Every event that should send an email or update the CRM lands in `dir_outbox` (`job_invite`, `invite_reminder`, `invite_answered`, `prices_ready`, `search_widened`, `no_prices`, `installer_chosen`, `job_released`, `job_status`, `review_request`). A small worker (e.g. a Supabase Edge Function on a schedule) calls `dir_outbox_claim()`, sends the email or CRM update, then `dir_outbox_done(id)`. It needs the email service and the CRM, which aren't chosen yet.
+- Jobs need `lat`/`lng` (the ZIP's centre is enough) for routing. Distances are straight-line × 1.2 until Google Routes is connected.
 
 ## For Marc: how to merge it
 
@@ -68,4 +76,5 @@ psql -d dirtest -f supabase/tests/rls_test.sql   # prints ALL TESTS PASSED
 
 - Payment collection on the installer's behalf and the single checkout: needs the lawyer and CPA (adds payout fields).
 - How `quote_request_ref` links to the existing quote requests: needs a look at the live schema.
+- Rate cards hold a low and high per-stall price; estimates use the midpoint. If installers agree a single price per stall, set low = high.
 - Whether site-measure visits release the site address early (an extra release stage).

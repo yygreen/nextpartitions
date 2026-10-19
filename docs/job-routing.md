@@ -37,7 +37,7 @@ Triggers: no approved installer covers the site, every invited installer decline
 3. **Dana:** can invite an approved installer by hand at any point.
 4. **Still nothing after the wider search:** Dana calls the customer and offers partitions only, or their own installer. The job is logged as an uncovered area, which feeds installer recruiting there.
 
-Database changes needed: an invite deadline and a search round on each job, and a "needs attention" job state for Dana's list.
+Built in the database (`directory/supabase/migrations/20261020000000_job_routing.sql`, tested): invite deadlines and search rounds, the 15-minute sweep that closes windows and widens the search, Dana's "needs attention" list, manual invites, price flags, late replies and reminders.
 
 ## 4. Site visits without handing over the customer
 
