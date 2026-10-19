@@ -283,7 +283,6 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
 .ocards button{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:var(--surface);border:1px solid var(--border);padding:10px;font:inherit;font-size:15px;font-weight:700;cursor:pointer;text-align:left;min-width:0;transition:border-color .15s,box-shadow .15s}
 .ocards button:hover{border-color:var(--accent)}
 .ocards button small{font-weight:500;font-size:13px;color:var(--muted);line-height:1.35}
-.ocards button .from{font-size:13px;font-weight:700;color:var(--fg);margin-top:auto}
 .ocards img{width:100%;height:110px;object-fit:cover;display:block}
 .ocards svg{width:100%;height:auto;display:block;background:var(--band)}
 .ocards button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
@@ -334,6 +333,19 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
 .ptot2 .grand b{font-size:28px}
 .ptot2 small{display:block;font-size:12px;color:var(--muted);font-weight:500;text-align:right}
 .ptot2 .btn{width:100%;font-size:17px;min-height:54px}
+.pricer .ptot2 .btn{width:100%}
+.ptot2[hidden]{display:none}
+.pgate{gap:10px;border-top:4px solid var(--accent)}
+.pgate .gh{font-size:20px;font-weight:900;text-align:left}
+.pgate ul{margin:0 0 4px;padding:0;list-style:none;display:grid;gap:6px;font-size:14px}
+.pgate li{display:flex;gap:8px}.pgate li::before{content:"✓";color:var(--accent-strong);font-weight:900}
+.pgate label{font-size:14px;font-weight:700}
+.pgate input{font:inherit;min-height:50px;border:1px solid var(--border);padding:0 12px;background:#fff;width:100%}
+.pgate input[aria-invalid="true"]{border-color:#b42318}
+.perr{margin:0;color:#b42318;font-size:13px;min-height:0}
+.perr:empty{display:none}
+.psum .btn{width:100%;font-size:16px}
+.pmini b.locked{filter:blur(6px);user-select:none;color:var(--muted)}
 @media (min-width:1025px){.psum{position:sticky;top:84px;align-self:start}}
 @media (max-width:1024px){.pbody{grid-template-columns:1fr}.psum{border-left:0;border-top:1px solid var(--border)}.psum dl{display:none}.ocards.m5,.ocards.m5l{grid-template-columns:repeat(3,minmax(0,1fr))}.swatches{grid-template-columns:repeat(6,minmax(0,1fr))}.preview{grid-template-columns:1fr}}
 @media (max-width:640px){.prail{display:none}.pcount{display:block}.ocards.m5,.ocards.m4,.ocards.m5l{grid-template-columns:repeat(2,minmax(0,1fr))}.ocards.m2{grid-template-columns:repeat(2,minmax(0,1fr))}.ocards img{height:84px}.swatches{grid-template-columns:repeat(4,minmax(0,1fr))}.pstage,.pricer .phead{padding-inline:16px}.pstage{min-height:0}.pricer .pnav .btn{min-width:0;width:auto;flex:1}.pricer .pnav #pBack{flex:0 0 auto}.pmini{flex-direction:row;justify-content:space-between;align-items:baseline}.psum{padding:14px 16px}}
@@ -364,7 +376,7 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
       <div class="phead">
         <p class="eyebrow">Your price in about a minute</p>
         <h2 id="pricerH">Price your restroom</h2>
-        <p class="sub" id="pSub">Seven quick questions, the same as our configurator. You get a partitions price and an installation estimate from approved DFW installers.</p>
+        <p class="sub" id="pSub">Seven quick questions, the same as our configurator. Enter your email at the end and see an instant quote range: partitions plus installation by approved DFW installers.</p>
         <ol class="prail" id="pRail" aria-label="Steps"></ol>
         <p class="pcount" id="pCount" aria-live="polite"></p>
       </div>
@@ -409,19 +421,28 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
             </div>
           </div>
           <div class="pslide" data-step="6" hidden>
-            <h3 tabindex="-1">Your restroom, priced</h3>
-            <p class="q">Sample estimate. Your quote and shop drawings follow within 2 business days.</p>
+            <h3 tabindex="-1" id="pFinalH">Your instant quote range</h3>
+            <p class="q" id="pFinalQ">Check your answers, then enter your email to see the price range.</p>
             <div class="preview">
               <div>
                 <div class="pchip" id="pChip" hidden style="margin-bottom:12px"><b id="pChipName"></b><button type="button" id="pChipClear">Use any approved installer</button></div>
                 <dl id="pReview"></dl>
               </div>
-              <div class="ptot2" aria-live="polite">
+              <form class="ptot2 pgate" id="pGate" novalidate>
+                <b class="gh">See your instant quote range</b>
+                <ul><li>Partitions price for this configuration</li><li>Installation estimate from approved DFW installers</li><li>Estimated total, and a copy of your configuration by email</li></ul>
+                <label for="pEmail">Email</label>
+                <input id="pEmail" type="email" inputmode="email" autocomplete="email" placeholder="you@company.com" required aria-describedby="pEmailErr">
+                <p class="perr" id="pEmailErr" aria-live="polite"></p>
+                <button class="btn" type="submit">Show my quote range →</button>
+                <p class="fine2">Free, no obligation, no spam. Your details stay with Next Partitions and aren't shared with installers. <i>(Prototype: no email is sent.)</i></p>
+              </form>
+              <div class="ptot2" id="pPrice" aria-live="polite" hidden>
                 <div><span>Partitions (Next Partitions)</span><b id="pParts"></b></div>
                 <div><span>Installation estimate</span><b id="pInst"></b></div>
                 <div class="grand"><span>Estimated total</span><b id="pTotal"></b></div>
                 <a class="btn" id="pGo" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw">Continue to full quote →</a>
-                <p class="fine2">Free, no obligation. Installers price your job through us; your contact details stay with us until you book.</p>
+                <p class="fine2" id="pSent"></p>
               </div>
             </div>
           </div>
@@ -433,8 +454,9 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
         <aside class="psum" aria-labelledby="pSumH">
           <h3 id="pSumH">Your restroom so far</h3>
           <dl id="pList"></dl>
-          <div class="pmini" aria-live="polite"><span>Estimated total</span><b id="pMini"></b></div>
-          <p class="fine2">Partitions plus installation, before tax and delivery. <button class="link" type="button" id="pSkip">Skip to my price</button></p>
+          <div class="pmini" aria-live="polite"><span>Your instant quote range</span><b id="pMini"></b></div>
+          <button class="btn" type="button" id="pSkip">Get my instant quote range</button>
+          <p class="fine2" id="pMiniNote">Partitions plus installation. Free, by email, no obligation.</p>
         </aside>
       </div>
     </section>
@@ -845,8 +867,8 @@ const PWID=[["36","36\"","standard"],["32","32\""],["34","34\""],["60","60\"","A
 // installer rates per stall (sample; same as the configurator prototype, stainless added)
 const PRATE={acme:{r:{hdpe:140,phen:160,pc:115,lam:120,ss:175},chA:45,min:700},contoso:{r:{hdpe:125,phen:145,pc:100,lam:105,ss:160},chA:40,min:500},
   northwind:{r:{hdpe:130,phen:150,pc:110,lam:110,ss:165},chA:40,min:600},fabrikam:{r:{hdpe:120,phen:140,pc:95,lam:100,ss:150},chA:35,min:450}};
-const PSTEPS=["Material","Bracing","Color","Layout","Stalls","Urinal screens","Your price"];
-const P={m:"hdpe",n:"ob",c:0,lay:0,s:4,w:"36",dep:'60"',priv:false,u:0,ud:'18"',uh:'42"',inst:null,step:0,seen:0};
+const PSTEPS=["Material","Bracing","Color","Layout","Stalls","Urinal screens","Your quote range"];
+const P={email:null,m:"hdpe",n:"ob",c:0,lay:0,s:4,w:"36",dep:'60"',priv:false,u:0,ud:'18"',uh:'42"',inst:null,step:0,seen:0};
 const pmoney=n=>"$"+Math.round(n).toLocaleString("en-US");
 const prng=(lo,hi)=>lo===hi?pmoney(lo):`${pmoney(lo)} – ${pmoney(hi)}`;
 const pm=()=>PMAT.find(x=>x.id===P.m), pn=()=>PMNT.find(x=>x.id===P.n);
@@ -869,8 +891,7 @@ function laySvg([,walls,n,ret]){
 }
 const pressed=(a,b)=>`aria-pressed="${a===b}"`;
 function pricerCards(){
-  const minInst=id=>Math.min(...Object.values(PRATE).map(c=>c.r[id]));
-  $("pMats").innerHTML=PMAT.map(x=>`<button type="button" data-m="${x.id}" ${pressed(P.m,x.id)}><img src="${x.img}" alt="">${x.name}<small>${x.d}</small><span class="from">from ${pmoney(x.rate)}/stall</span></button>`).join("");
+  $("pMats").innerHTML=PMAT.map(x=>`<button type="button" data-m="${x.id}" ${pressed(P.m,x.id)}><img src="${x.img}" alt="">${x.name}<small>${x.d}</small></button>`).join("");
   $("pMnts").innerHTML=PMNT.map(x=>`<button type="button" data-n="${x.id}" ${pressed(P.n,x.id)}>${mountSvg(x.id)}${x.name}<small>${x.d}</small></button>`).join("");
   $("pColors").innerHTML=PCOL.map(([n,h],k)=>`<button type="button" data-c="${k}" ${pressed(P.c,k)}>${h?`<i style="background:${h}"></i>`:`<i class="later">?</i>`}${n}</button>`).join("");
   $("pLays").innerHTML=PLAY.map((l,k)=>`<button type="button" data-l="${k}" ${pressed(P.lay,k)}>${laySvg(l)}<small style="color:var(--fg);font-weight:700">${l[0]}</small></button>`).join("");
@@ -907,22 +928,33 @@ function pricer(){
   $("pRail").innerHTML=PSTEPS.map((t,k)=>`<li><button type="button" data-go="${k}" class="${k<P.step||(k<=P.seen&&k!==P.step)?"done":""}" ${k===P.step?'aria-current="step"':""} ${k>P.seen?"disabled":""}>${t}</button></li>`).join("");
   $("pRail").querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>pGoTo(+b.dataset.go));
   $("pCount").textContent=`Step ${P.step+1} of 7 · ${PSTEPS[P.step]}`;
-  $("pParts").textContent=pmoney(parts);
+  // prices stay out of the page until the visitor has given an email
+  const open=!!P.email;
+  if(open){$("pParts").textContent=pmoney(parts);
   $("pInst").innerHTML=`${prng(lo,hi)}<small>${who?"Rates: "+who:ids.length+" approved DFW installers"}</small>`;
-  $("pTotal").innerHTML=`${prng(parts+lo,parts+hi)}<small>Before tax and delivery</small>`;
-  $("pMini").textContent=prng(parts+lo,parts+hi);
+  $("pTotal").innerHTML=`${prng(parts+lo,parts+hi)}<small>Before tax and delivery</small>`;}
+  $("pGate").hidden=open; $("pPrice").hidden=!open;
+  $("pMini").textContent=open?prng(parts+lo,parts+hi):"$0,000 – $0,000"; $("pMini").classList.toggle("locked",!open); if(open)$("pMini").removeAttribute("aria-label");else $("pMini").setAttribute("aria-label","Shown after you enter your email");
+  $("pSkip").hidden=open; $("pMiniNote").textContent=open?"Partitions plus installation, before tax and delivery.":"Partitions plus installation. Free, by email, no obligation.";
+  $("pFinalH").textContent=open?"Your restroom, priced":"Your instant quote range";
+  $("pFinalQ").textContent=open?"Sample estimate. Your quote and shop drawings follow within 2 business days.":"Check your answers, then enter your email to see the price range.";
+  if(!open){$("pParts").textContent=$("pInst").textContent=$("pTotal").textContent="";}
+  else $("pSent").textContent=`We've emailed a copy to ${P.email}. Installers price your job through us; your contact details stay with us until you book.`;
   $("pChip").hidden=!P.inst; if(P.inst)$("pChipName").textContent="Installer: "+who;
   $("pStalls").textContent=P.s; $("pUrinals").textContent=P.u; $("pPriv").checked=P.priv;
   $("pUOpts").hidden=!P.u;
   $("pBack").hidden=P.step===0; $("pNext").hidden=P.step===6;
-  $("pNext").textContent=P.step===5?"See my price →":`Next: ${PSTEPS[P.step+1]} →`;
+  $("pNext").textContent=P.step===5?(P.email?"See my price →":"Get my quote range →"):`Next: ${PSTEPS[P.step+1]} →`;
   const hm=P.m==="ss"?"":P.m, hn=P.n==="fc"?"":P.n;   // the configurator prototype doesn't model these two yet
   $("pGo").href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#"+["dfw",P.inst,hm,hn,Math.max(2,Math.min(20,P.s))].filter(Boolean).join(".");
 }
 function pricerPick(id){P.inst=id;pricer();}
 $("pBack").onclick=()=>pGoTo(P.step-1);
 $("pNext").onclick=()=>pGoTo(P.step+1);
-$("pSkip").onclick=()=>pGoTo(6);
+$("pSkip").onclick=()=>{pGoTo(6);setTimeout(()=>$("pEmail").focus(),350);};
+$("pGate").onsubmit=e=>{e.preventDefault();const v=$("pEmail").value.trim(),ok=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+  $("pEmail").setAttribute("aria-invalid",String(!ok));$("pEmailErr").textContent=ok?"":"Enter a valid email address, like you@company.com.";
+  if(!ok){$("pEmail").focus();return;} P.email=v; pricer(); $("pFinalH").focus();};
 $("pPriv").onchange=e=>{P.priv=e.target.checked;pricer();};
 $("pMinus").onclick=()=>{P.s=Math.max(1,P.s-1);pricer();};
 $("pPlus").onclick=()=>{P.s=Math.min(8,P.s+1);pricer();};
