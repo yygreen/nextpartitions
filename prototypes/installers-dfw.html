@@ -267,6 +267,7 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
 .pbody.final .psum{display:none}
 .pstage{padding:24px;min-width:0;display:flex;flex-direction:column;min-height:420px}
 .pslide{flex:1}
+.pslide:not([data-step="6"]){min-height:var(--pmin,0)}
 .pslide.in{animation:pin .28s ease}
 @keyframes pin{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:none}}
 .pslide.back{animation-name:pback}
@@ -278,6 +279,9 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
 .ocards.m5{grid-template-columns:repeat(5,minmax(0,1fr))}
 .ocards.m4{grid-template-columns:repeat(4,minmax(0,1fr))}
 .ocards.m5l{grid-template-columns:repeat(5,minmax(0,1fr))}
+.ocards.m5l button{padding:8px;gap:4px}
+.ocards.m5l svg{height:62px}
+.ocards.m5l small{font-size:13px;line-height:1.25}
 .ocards.m2{grid-template-columns:repeat(2,minmax(0,220px))}
 .ocards.m2 button{padding-right:40px}
 .ocards button{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:var(--surface);border:1px solid var(--border);padding:10px;font:inherit;font-size:15px;font-weight:700;cursor:pointer;text-align:left;min-width:0;transition:border-color .15s,box-shadow .15s}
@@ -336,11 +340,18 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
 .psizes{margin:6px 0 0;padding-top:10px;border-top:1px solid var(--border);font-size:14px;color:var(--muted);max-width:460px}
 .psizes b{color:var(--fg)}
 #pSizeBox{margin-top:14px}
+#pSizeBox .pgroup{margin:0 0 8px;display:flex;align-items:center;gap:10px}
+#pSizeBox .pgroup>b{width:46px;margin:0;font-size:14px}
+#pSizeBox .pchips{gap:6px}
+#pSizeBox .pchips button{min-height:36px;padding:0 10px;font-size:14px}
+#pSizeBox .pchips small{display:none}
+.prow3{display:flex;flex-wrap:wrap;gap:0 32px}
+.pnums#pUNums{grid-template-columns:repeat(9,minmax(0,1fr));max-width:520px}
 .pplan{margin:0;background:var(--band);border:1px solid var(--border);padding:14px}
 .pplan svg{width:100%;height:auto;display:block}
 .pplan figcaption{font-size:13px;color:var(--muted);text-align:center;margin-top:6px}
 @media (max-width:1024px){.pstallwrap{grid-template-columns:1fr}.pplan{max-width:420px}}
-@media (max-width:640px){.pnums{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:640px){.pnums,.pnums#pUNums{grid-template-columns:repeat(5,minmax(0,1fr))}}
 .ptip{font-size:14px;color:var(--muted);margin:14px 0 0}
 .pnav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:24px;padding-top:18px;border-top:1px solid var(--border)}
 .pnav .btn{min-width:150px}
@@ -435,10 +446,9 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
           </div>
           <div class="pslide" data-step="3" hidden>
             <h3 tabindex="-1">What does the restroom look like?</h3>
-            <p class="q">Seen from above. Pick the closest; we check it on the shop drawings.</p>
+            <p class="q">Seen from above. Pick the closest; we check it on the shop drawings. <button class="link" type="button" id="pPlansBtn" aria-expanded="false" aria-controls="pPlansBox">Have drawings? Upload them instead</button></p>
             <div class="ocards m5l" role="group" aria-label="Layout" id="pLays"></div>
             <div class="pplans">
-              <button class="link" type="button" id="pPlansBtn" aria-expanded="false" aria-controls="pPlansBox">Have drawings? Upload them instead</button>
               <div id="pPlansBox" hidden>
                 <label class="pdrop"><b>Upload your drawings</b><span>PDF, DWG, DXF or a photo of a sketch. We read the layout and sizes from your drawings.</span><input type="file" id="pPlans" accept=".pdf,.dwg,.dxf,.png,.jpg,.jpeg,.heic"></label>
                 <p class="pfile" id="pPlansName" hidden></p>
@@ -454,20 +464,21 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
                 <label class="pswitch"><input type="checkbox" id="pAda" checked><span><b>Include an accessible (ADA) stall</b><small>60" wide. Most commercial restrooms need one.</small></span></label>
                 <label class="pswitch"><input type="checkbox" id="pPriv"><span><b>Extra privacy</b><small>Continuous hinges and brackets close the gaps around doors</small></span></label>
                 <p class="psizes" id="pSizes"></p>
+              </div>
+              <div>
+              <figure class="pplan"><div id="pPlan"></div><figcaption id="pPlanCap"></figcaption></figure>
                 <div id="pSizeBox" hidden>
-                  <div class="pgroup"><b id="pWL">Standard stall width</b><div class="pchips" role="group" aria-labelledby="pWL" id="pWidth"></div></div>
-                  <div class="pgroup"><b id="pDL">Stall depth</b><div class="pchips" role="group" aria-labelledby="pDL" id="pDepth"></div></div>
+                  <div class="pgroup"><b id="pWL">Width</b><div class="pchips" role="group" aria-labelledby="pWL" id="pWidth"></div></div>
+                  <div class="pgroup"><b id="pDL">Depth</b><div class="pchips" role="group" aria-labelledby="pDL" id="pDepth"></div></div>
                 </div>
               </div>
-              <figure class="pplan"><div id="pPlan"></div><figcaption id="pPlanCap"></figcaption></figure>
             </div>
           </div>
           <div class="pslide" data-step="5" hidden>
-            <h3 tabindex="-1">Do you need urinal screens?</h3>
-            <p class="q">The panels between urinals. Skip this if it's a women's or single-user restroom.</p>
-            <div class="ocards m2" role="group" aria-label="Urinal screens" id="pUYN"></div>
-            <div id="pUOpts" hidden style="margin-top:20px">
-              <div class="pgroup"><b id="pUrL">How many?</b><div class="pstepper" role="group" aria-labelledby="pUrL"><button type="button" id="pUMinus" aria-label="Fewer urinal screens">−</button><output id="pUrinals" aria-live="polite">0</output><button type="button" id="pUPlus" aria-label="More urinal screens">+</button></div></div>
+            <h3 tabindex="-1">How many urinal screens?</h3>
+            <p class="q">The panels between urinals. Choose 0 for a women's or single-user restroom.</p>
+            <div class="pnums" role="group" aria-label="Number of urinal screens" id="pUNums"></div>
+            <div id="pUOpts" class="prow3" hidden>
               <div class="pgroup"><b id="pUDL">Depth</b><div class="pchips" role="group" aria-labelledby="pUDL" id="pUDepth"></div></div>
               <div class="pgroup"><b id="pUHL">Height</b><div class="pchips" role="group" aria-labelledby="pUHL" id="pUHeight"></div></div>
             </div>
@@ -974,14 +985,11 @@ function pricerCards(){
   $("pLays").innerHTML=PLAY.map((l,k)=>`<button type="button" data-l="${k}" ${pressed(P.plans?-1:P.lay,k)}>${laySvg(l)}<small style="color:var(--fg);font-weight:700">${l[0]}</small></button>`).join("");
   $("pWidth").innerHTML=PWID.map(([v,t,s])=>`<button type="button" data-w="${v}" ${pressed(P.w,v)}>${t}${s?`<small>${s}</small>`:""}</button>`).join("");
   $("pDepth").innerHTML=PDEP.map(v=>`<button type="button" data-d='${v}' ${pressed(P.dep,v)}>${v}${v==='60"'?"<small>standard</small>":""}</button>`).join("");
-  $("pUYN").innerHTML=`<button type="button" data-u="0" ${pressed(P.u,0)}>No urinal screens<small>Skip this step</small></button><button type="button" data-u="1" aria-pressed="${P.u>0}">Yes, add screens<small>Choose how many and the size</small></button>`;
   $("pUDepth").innerHTML=['18"','24"'].map(v=>`<button type="button" data-ud='${v}' ${pressed(P.ud,v)}>${v}</button>`).join("");
   $("pUHeight").innerHTML=['42"','48"'].map(v=>`<button type="button" data-uh='${v}' ${pressed(P.uh,v)}>${v}</button>`).join("");
   const on=(sel,f,adv)=>document.querySelectorAll(sel).forEach(b=>b.onclick=()=>{f(b);pricerCards();pricer();if(adv)setTimeout(()=>pGoTo(P.step+1),260);});
   on("[data-m]",b=>P.m=b.dataset.m,1); on("[data-n]",b=>P.n=b.dataset.n,1); on("[data-c]",b=>P.c=+b.dataset.c,1); on("[data-l]",b=>{P.lay=+b.dataset.l;P.plans=null;$("pPlans").value="";$("pPlansName").hidden=true;},1);
   on("[data-w]",b=>P.w=b.dataset.w); on("[data-d]",b=>P.dep=b.dataset.d); on("[data-ud]",b=>P.ud=b.dataset.ud); on("[data-uh]",b=>P.uh=b.dataset.uh);
-  on("[data-u]",b=>{P.u=+b.dataset.u?Math.max(1,P.u):0;},0);
-  $("pUYN").querySelector('[data-u="0"]').onclick=()=>{P.u=0;pricerCards();pricer();setTimeout(()=>pGoTo(6),260);};
 }
 function pGoTo(i,quiet){
   i=Math.max(0,Math.min(6,i)); const back=i<P.step; P.step=i; P.seen=Math.max(P.seen,i);
@@ -1024,7 +1032,9 @@ function pricer(){
   $("pSizes").innerHTML=`Sizes: <b>${P.w}" wide × ${P.dep} deep</b>${P.w==="36"&&P.dep==='60"'?" (standard)":""} <button class="link" type="button" id="pSizeBtn" aria-expanded="${P.sizes}">${P.sizes?"Done":"Change"}</button>`;
   $("pSizeBtn").onclick=()=>{P.sizes=!P.sizes;pricer();}; $("pSizeBox").hidden=!P.sizes;
   $("pPlan").innerHTML=planSvg(); $("pPlanCap").textContent=`${P.s} stall${P.s>1?"s":""}${P.ada?", 1 accessible":""} · seen from above`;
-  $("pUrinals").textContent=P.u; $("pPriv").checked=P.priv;
+  $("pUNums").innerHTML=Array.from({length:9},(_,k)=>`<button type="button" data-u="${k}" ${pressed(P.u,k)}>${k}</button>`).join("");
+  $("pUNums").querySelectorAll("[data-u]").forEach(b=>b.onclick=()=>{P.u=+b.dataset.u;pricer();});
+  $("pPriv").checked=P.priv;
   $("pUOpts").hidden=!P.u;
   $("pBack").hidden=P.step===0; $("pNext").hidden=P.step===6;
   $("pNext").textContent=P.step===5?(P.email?"See my price →":"Get my quote range →"):`Next: ${PSTEPS[P.step+1]} →`;
@@ -1038,16 +1048,23 @@ $("pSkip").onclick=()=>{pGoTo(6);setTimeout(()=>$("pEmail").focus(),350);};
 $("pGate").onsubmit=e=>{e.preventDefault();const v=$("pEmail").value.trim(),ok=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
   $("pEmail").setAttribute("aria-invalid",String(!ok));$("pEmailErr").textContent=ok?"":"Enter a valid email address, like you@company.com.";
   if(!ok){$("pEmail").focus();return;} P.email=v; pricer(); $("pFinalH").focus();};
-$("pPlansBtn").onclick=()=>{const o=$("pPlansBox").hidden;$("pPlansBox").hidden=!o;$("pPlansBtn").setAttribute("aria-expanded",String(o));};
+$("pPlansBtn").onclick=()=>{const o=$("pPlansBox").hidden;$("pPlansBox").hidden=!o;$("pLays").hidden=o;$("pPlansBtn").setAttribute("aria-expanded",String(o));$("pPlansBtn").textContent=o?"Pick a layout instead":"Have drawings? Upload them instead";};
 $("pPlans").onchange=e=>{const f=e.target.files[0];P.plans=f?f.name:null;$("pPlansName").hidden=!f;$("pPlansName").textContent=f?`✓ ${f.name} attached. We'll use it for your layout.`:"";
   document.querySelectorAll("[data-l]").forEach(b=>b.setAttribute("aria-pressed","false"));pricer();if(f)setTimeout(()=>pGoTo(4),600);};
 $("pPriv").onchange=e=>{P.priv=e.target.checked;pricer();};
 $("pAda").onchange=e=>{P.ada=e.target.checked;pricer();};
-$("pUMinus").onclick=()=>{P.u=Math.max(0,P.u-1);pricerCards();pricer();};
-$("pUPlus").onclick=()=>{P.u=Math.min(12,P.u+1);pricerCards();pricer();};
 $("pChipClear").onclick=()=>{P.inst=null;pricer();};
 {const q=new URLSearchParams(location.search).get("installer");if(q&&PRATE[q])P.inst=q;}
 pricerCards();pGoTo(0,true);
+// same height for every question step, so Back/Next never move (open sections included)
+function pFix(){
+  const st=$("configure").querySelector(".pstage"); st.style.setProperty("--pmin","0px");
+  if(innerWidth<641)return;
+  const open=["pUOpts","pSizeBox"].map(id=>[$(id),$(id).hidden]); open.forEach(([e])=>e.hidden=false);
+  let max=0; document.querySelectorAll('.pslide:not([data-step="6"])').forEach(sl=>{const h=sl.hidden;sl.hidden=false;sl.style.flex="none";max=Math.max(max,sl.offsetHeight);sl.style.flex="";sl.hidden=h;});
+  open.forEach(([e,h])=>e.hidden=h); st.style.setProperty("--pmin",max+"px");
+}
+pFix(); addEventListener("load",pFix); addEventListener("resize",pFix);
 // the floating mobile button would cover the wizard while it's on screen
 new IntersectionObserver(([e])=>document.querySelector(".mbar").classList.toggle("away",e.isIntersecting)).observe($("configure"));
 </script>
