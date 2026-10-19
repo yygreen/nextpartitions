@@ -464,11 +464,11 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
           </div>
           <div class="pslide" data-step="4" hidden>
             <h3 tabindex="-1">How many stalls?</h3>
-            <p class="q">Count every toilet stall in the restroom, including the accessible one.</p>
+            <p class="q">Count every toilet stall in the restroom, including any accessible one.</p>
             <div class="pstallwrap">
               <div>
                 <div class="pnums" role="group" aria-label="Number of stalls" id="pNums"></div>
-                <label class="pswitch"><input type="checkbox" id="pAda" checked><span><b>Include an accessible (ADA) stall</b><small>60" wide. Most commercial restrooms need one.</small></span></label>
+                <label class="pswitch"><input type="checkbox" id="pAda"><span><b>Include an accessible (ADA) stall</b><small>60" wide. Most commercial restrooms need one.</small></span></label>
                 <label class="pswitch"><input type="checkbox" id="pPriv"><span><b>Extra privacy</b><small>Continuous hinges and brackets close the gaps around doors</small></span></label>
                 <p class="psizes" id="pSizes"></p>
                 <p class="podd" id="pOddP" hidden>Mixed sizes or an odd room? <button class="link" type="button" id="pOdd">Upload your drawings</button></p>
@@ -955,7 +955,7 @@ const inch=n=>Math.floor(n)+(PFR.find(f=>f[0]===n-Math.floor(n))||[0,""])[1]+'"'
 const PRATE={acme:{r:{hdpe:140,phen:160,pc:115,lam:120,ss:175},chA:45,min:700},contoso:{r:{hdpe:125,phen:145,pc:100,lam:105,ss:160},chA:40,min:500},
   northwind:{r:{hdpe:130,phen:150,pc:110,lam:110,ss:165},chA:40,min:600},fabrikam:{r:{hdpe:120,phen:140,pc:95,lam:100,ss:150},chA:35,min:450}};
 const PSTEPS=["Material","Bracing","Color","Layout","Stalls","Urinal screens","Your quote range"];
-const P={ada:true,sizes:false,plans:null,email:null,m:"hdpe",n:"ob",c:0,lay:0,s:4,w:36,dep:60,wOther:false,depOther:false,priv:false,u:0,ud:'18"',uh:'42"',inst:null,step:0,seen:0};
+const P={ada:false,sizes:false,plans:null,email:null,m:"hdpe",n:"ob",c:0,lay:0,s:4,w:36,dep:60,wOther:false,depOther:false,priv:false,u:0,ud:'18"',uh:'42"',inst:null,step:0,seen:0};
 const pmoney=n=>"$"+Math.round(n).toLocaleString("en-US");
 const prng=(lo,hi)=>lo===hi?pmoney(lo):`${pmoney(lo)} – ${pmoney(hi)}`;
 const pm=()=>PMAT.find(x=>x.id===P.m), pn=()=>PMNT.find(x=>x.id===P.n);
