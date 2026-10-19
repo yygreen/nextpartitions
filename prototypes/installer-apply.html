@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Listed as an Installer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<style>
+/* Installer application: public page in the directory section. Light-only, nextpartitions.com tokens. */
+:root{
+  --bg:#fbfaf9; --band:#f4f2ee; --surface:#ffffff; --fg:#1c0e05; --muted:#6d6059;
+  --border:#e1ddd7; --accent:#e8630a; --accent-strong:#c95200; --accent-soft:#fdeee3; --on-accent:#ffffff;
+  --ink:#262626; --ink-fg:#f8f8f8; --good:#1f7a4d; --good-soft:#e6f3ec; --bad:#b42318;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --container:1200px; --gutter:34px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter)}
+@media (max-width:760px){:root{--gutter:16px}}
+.mocknote{background:#fff3c4;border-bottom:1px solid #f0d98a;font-size:13px;color:#5c4400;text-align:center;padding:8px 16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;background:var(--accent);color:var(--on-accent);font:inherit;font-weight:700;font-size:16px;padding:12px 22px;min-height:46px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--accent-strong)}
+.btn.ghost{background:var(--surface);color:var(--accent-strong);border:2px solid var(--accent)}
+.btn.ghost:hover{background:var(--accent-soft)}
+.link{font:inherit;background:none;border:0;padding:0;color:var(--accent-strong);font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* header (lean directory header) */
+.nav{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:30}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:36px;width:auto}
+.brand b{display:block;font-size:18px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+@media (max-width:520px){.brand small{display:none}.nav .btn{padding:8px 12px;font-size:14px;min-height:38px}}
+
+/* hero */
+.hero{padding-block:40px 32px;border-bottom:1px solid var(--border)}
+.crumbs{font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.crumbs a{text-decoration:none}
+.hero h1{font-size:clamp(30px,4vw,46px);font-weight:900;letter-spacing:-.035em;line-height:1.08;margin:0 0 14px;max-width:22ch}
+.hero .lead{font-size:18px;color:var(--muted);max-width:62ch;margin:0 0 22px}
+.facts{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:15px}
+.facts li{display:flex;gap:8px;align-items:center}
+.facts li::before{content:"✓";color:var(--accent-strong);font-weight:900}
+
+section.s{padding-block:44px}
+section.s h2{font-size:26px;font-weight:900;letter-spacing:-.02em;margin:0 0 6px}
+section.s .sub{color:var(--muted);margin:0 0 22px;max-width:68ch}
+.band{background:var(--band)}
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.why div{background:var(--surface);border:1px solid var(--border);padding:18px}
+.why b{display:block;font-size:16px;margin-bottom:4px}
+.why span{font-size:14px;color:var(--muted)}
+@media (max-width:900px){.why{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.why{grid-template-columns:1fr}}
+.checks{display:grid;gap:0;background:var(--surface);border:1px solid var(--border)}
+.checks li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;padding:14px 18px;border-bottom:1px solid var(--border);font-size:15px}
+.checks li:last-child{border-bottom:0}
+.checks li i{font-style:normal;width:24px;height:24px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-strong);font-weight:900;font-size:13px}
+.checks small{display:block;color:var(--muted);font-size:13px}
+.checks{list-style:none;margin:0;padding:0}
+
+/* form */
+.formcard{background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--accent)}
+.rail{list-style:none;margin:0;padding:18px 22px 0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+.rail li{font-size:12px;font-weight:600;color:var(--muted);line-height:1.3}
+.rail li::before{content:"";display:block;height:4px;background:var(--border);margin-bottom:6px}
+.rail li.done{color:var(--fg)}.rail li.done::before{background:var(--fg)}
+.rail li.now{color:var(--accent-strong);font-weight:800}.rail li.now::before{background:var(--accent)}
+.count{display:none;margin:12px 22px 0;font-size:14px;font-weight:700}
+@media (max-width:640px){.rail{display:none}.count{display:block}}
+.fstep{padding:20px 22px 8px}
+.fstep h3{font-size:20px;font-weight:900;margin:0 0 4px;outline:0}
+.fstep .q{color:var(--muted);margin:0 0 18px;font-size:15px}
+.fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 18px}
+@media (max-width:640px){.fgrid{grid-template-columns:1fr}}
+.f{display:grid;gap:6px;font-size:14px;font-weight:600;min-width:0}
+.f.full{grid-column:1/-1}
+.f input,.f select,.f textarea{font:inherit;font-weight:400;font-size:15px;border:1px solid var(--border);padding:0 12px;min-height:46px;background:#fff;width:100%;min-width:0}
+.f textarea{padding:10px 12px;min-height:80px}
+.f small{font-weight:400;color:var(--muted);font-size:13px}
+.f input[aria-invalid="true"],.f select[aria-invalid="true"]{border-color:var(--bad)}
+.err{color:var(--bad);font-size:13px;font-weight:600;margin:10px 0 0}
+.err:empty{display:none}
+fieldset{border:0;margin:0 0 18px;padding:0}
+legend{font-size:15px;font-weight:700;margin-bottom:8px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:#fff;padding:0 14px;min-height:44px;font-size:15px;cursor:pointer}
+.chips input{width:18px;height:18px;accent-color:var(--accent);margin:0}
+.chips label:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+.upl{display:grid;gap:4px;border:2px dashed var(--border);background:var(--band);padding:14px 16px;cursor:pointer}
+.upl:hover{border-color:var(--accent)}
+.upl b{font-size:15px}
+.upl span{font-size:13px;color:var(--muted)}
+.upl input{font:inherit;font-size:14px;max-width:100%}
+.refs{display:grid;gap:12px}
+.ref{border:1px solid var(--border);padding:14px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.ref .t{grid-column:1/-1;font-weight:700;font-size:14px}
+@media (max-width:760px){.ref{grid-template-columns:1fr 1fr}}
+@media (max-width:420px){.ref{grid-template-columns:1fr}}
+table.rates{width:100%;border-collapse:collapse;font-size:15px}
+table.rates td{padding:8px 10px 8px 0;border-bottom:1px solid var(--border)}
+table.rates td:last-child{white-space:nowrap}
+table.rates input{font:inherit;width:90px;min-height:40px;border:1px solid var(--border);padding:0 8px;text-align:right}
+table.rates th{text-align:left;font-size:12px;color:var(--muted);font-weight:600;padding:8px 0;border-bottom:1px solid var(--border)}
+.tip{background:var(--band);border:1px solid var(--border);padding:12px 14px;font-size:14px;color:var(--muted);margin:0 0 16px}
+.terms{margin:0 0 16px;padding-left:20px;display:grid;gap:8px;font-size:15px}
+.agree{display:flex;gap:10px;align-items:flex-start;font-size:15px;margin:10px 0;cursor:pointer}
+.agree input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--accent);flex:none}
+.fnav{display:flex;justify-content:space-between;gap:12px;padding:16px 22px 22px;border-top:1px solid var(--border);margin-top:14px}
+.fnav .btn{min-width:140px}
+@media (max-width:520px){.fnav .btn{min-width:0;flex:1}.fnav #back{flex:0 0 auto}}
+.done{padding:28px 22px}
+.done h3{font-size:24px;font-weight:900;margin:0 0 6px;outline:0}
+.tl{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:0}
+.tl li{display:grid;grid-template-columns:32px minmax(0,1fr);gap:12px;padding:0 0 18px;position:relative}
+.tl li::after{content:"";position:absolute;left:15px;top:30px;bottom:0;width:2px;background:var(--border)}
+.tl li:last-child::after{display:none}
+.tl i{font-style:normal;width:32px;height:32px;display:grid;place-items:center;background:var(--fg);color:#fff;font-weight:800;font-size:14px}
+.tl li.first i{background:var(--accent)}
+.tl b{display:block}
+.tl span{color:var(--muted);font-size:14px}
+details{border-bottom:1px solid var(--border);padding:14px 0}
+details summary{font-weight:700;cursor:pointer;font-size:16px}
+details p{margin:8px 0 0;color:var(--muted)}
+.disc{font-size:13px;color:var(--muted);margin:24px 0 0;border-top:1px solid var(--border);padding-top:14px}
+footer{background:#1a1a1a;color:#d8d2cc;font-size:14px}
+footer .wrap{padding-block:28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+</style>
+</head>
+<body>
+
+<div class="mocknote"><b>Mockup:</b> the installer application. Nothing is sent; all names and numbers are fictional samples.</div>
+
+<header class="nav"><div class="wrap">
+  <a class="brand" href="dfw.html"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Installer directory</small></span></a>
+  <a class="btn" href="#apply">Apply now</a>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+  <div class="crumbs"><a href="texas.html">Installers</a>›<a href="dfw.html">Dallas–Fort Worth</a>›<span>Get listed</span></div>
+  <h1>Get listed as a partition installer in Dallas–Fort Worth</h1>
+  <p class="lead">Customers buy their toilet partitions from Next Partitions and need someone to install them. Get those install requests, price them from your own rates, and keep all of your installation fee.</p>
+  <ul class="facts"><li>No listing fee</li><li>No markup on your installation</li><li>You choose which jobs to price</li></ul>
+</div></section>
+
+<section class="s"><div class="wrap">
+  <h2>Why installers join</h2>
+  <p class="sub">You install. We handle the partitions, the drawings and the customer's questions before the job is yours.</p>
+  <div class="why">
+    <div><b>Install requests from our customers</b><span>Schools, offices, gyms and restaurants buying partitions from us in your service area.</span></div>
+    <div><b>You set the price</b><span>Customers see an instant estimate from your rates. You confirm a firm price on each job.</span></div>
+    <div><b>Your fee stays yours</b><span>We earn on the partitions, not the install. No markup and no commission on your price.</span></div>
+    <div><b>Jobs arrive ready to price</b><span>Shop drawings, hardware list, building type and delivery dates come with every request.</span></div>
+    <div><b>Trade pricing on partitions</b><span>Buy partitions for your own jobs at trade prices through an installer account.</span></div>
+    <div><b>No listing fee</b><span>Applying, getting listed and receiving requests are free.</span></div>
+  </div>
+</div></section>
+
+<section class="s band"><div class="wrap">
+  <h2>What we check</h2>
+  <p class="sub">Every listed installer has passed the same checks. They're facts we verify, shown on your profile, not an endorsement.</p>
+  <ul class="checks">
+    <li><i>1</i><span><b>You install customer-bought partitions</b><small>Including partitions you didn't supply yourself.</small></span></li>
+    <li><i>2</i><span><b>General liability insurance on file</b><small>$300,000 or more in DFW. For City of Dallas jobs, the City must be listed as certificate holder.</small></span></li>
+    <li><i>3</i><span><b>Business or city registration</b><small>Texas has no statewide contractor license. Dallas requires contractor registration to pull permits.</small></span></li>
+    <li><i>4</i><span><b>2–3 references we call</b><small>Customers or general contractors you've installed partitions for.</small></span></li>
+    <li><i>5</i><span><b>A test job request we time</b><small>Reply within 1 business day and send a firm price within 2.</small></span></li>
+    <li><i>6</i><span><b>A signed listing agreement</b><small>The short version is in step 6 of the application.</small></span></li>
+    <li><i>7</i><span><b>One completed job</b><small>Your profile shows the Approved label after your first job for a Next Partitions customer.</small></span></li>
+  </ul>
+</div></section>
+
+<section class="s" id="apply"><div class="wrap">
+  <h2>Apply</h2>
+  <p class="sub">About 10 minutes. Have your insurance certificate and registration number ready.</p>
+  <div class="formcard">
+    <ol class="rail" id="rail" aria-label="Application steps"></ol>
+    <p class="count" id="count" aria-live="polite"></p>
+    <form id="appForm" novalidate>
+      <div class="fstep" data-s="0">
+        <h3 tabindex="-1">Your business</h3><p class="q">Where you're based and how far you travel.</p>
+        <div class="fgrid">
+          <label class="f">Business name<input name="biz" required autocomplete="organization"></label>
+          <label class="f">Contact name<input name="contact" required autocomplete="name"></label>
+          <label class="f">Phone<input name="phone" type="tel" required autocomplete="tel" inputmode="tel"></label>
+          <label class="f">Email<input name="email" type="email" required autocomplete="email"></label>
+          <label class="f">Base city<input name="city" required placeholder="e.g. Garland"></label>
+          <label class="f">Base ZIP<input name="zip" required inputmode="numeric" maxlength="5" pattern="\d{5}"></label>
+          <label class="f">Service radius (miles)<input name="radius" type="number" min="5" max="200" value="50" required></label>
+          <label class="f">Years in business<input name="years" type="number" min="0" required></label>
+          <label class="f">Installers on your crew<select name="crew"><option>1–2</option><option selected>3–5</option><option>6–10</option><option>More than 10</option></select></label>
+        </div>
+      </div>
+      <div class="fstep" data-s="1" hidden>
+        <h3 tabindex="-1">What you install</h3><p class="q">Pick everything you're comfortable installing. You only get requests that match.</p>
+        <fieldset><legend>Materials</legend><div class="chips" id="mats"></div></fieldset>
+        <fieldset><legend>Bracing</legend><div class="chips" id="mounts"></div></fieldset>
+        <fieldset><legend>Extras</legend><div class="chips"><label><input type="checkbox" name="extra" value="removal" checked>Remove and haul away old stalls</label><label><input type="checkbox" name="extra" value="ada" checked>Accessible (ADA) stalls</label><label><input type="checkbox" name="extra" value="urinal" checked>Urinal screens</label></div></fieldset>
+        <label class="f full">Brands you've installed<input name="brands" placeholder="e.g. Scranton Products, Bobrick, ASI, Bradley"><small>Optional.</small></label>
+        <p class="err" id="err1"></p>
+      </div>
+      <div class="fstep" data-s="2" hidden>
+        <h3 tabindex="-1">Documents</h3><p class="q">We verify these before your first job request. They're never shown to customers.</p>
+        <div class="fgrid">
+          <label class="upl f full"><b>Certificate of general liability insurance</b><span>PDF or photo. $300,000 or more; for Dallas jobs, the City of Dallas as certificate holder.</span><input type="file" name="coi" accept=".pdf,image/*" required></label>
+          <label class="f">Registration number<input name="reg" required placeholder="e.g. City of Dallas contractor registration"><small>Business, city or state registration.</small></label>
+          <label class="upl f"><b>Registration document</b><span>Optional if we can look it up.</span><input type="file" name="regdoc" accept=".pdf,image/*"></label>
+          <label class="upl f full"><b>W-9</b><span>Optional. Only needed if you open a trade account.</span><input type="file" name="w9" accept=".pdf,image/*"></label>
+        </div>
+      </div>
+      <div class="fstep" data-s="3" hidden>
+        <h3 tabindex="-1">References</h3><p class="q">2–3 customers or general contractors you've installed partitions for in the last two years. We call them.</p>
+        <div class="refs" id="refs"></div>
+        <p class="err" id="err3"></p>
+      </div>
+      <div class="fstep" data-s="4" hidden>
+        <h3 tabindex="-1">Your rates</h3><p class="q">What you charge to install, before you see the drawings.</p>
+        <p class="tip">Customers see an instant estimate from these rates. You confirm a firm price on each job, so you can adjust for anything the drawings show.</p>
+        <table class="rates"><thead><tr><th>Per stall, by material</th><th>Rate ($)</th></tr></thead><tbody id="rateRows"></tbody></table>
+        <table class="rates" style="margin-top:14px"><thead><tr><th>Extras</th><th>Rate ($)</th></tr></thead><tbody>
+          <tr><td>Ceiling hung or floor to ceiling, extra per stall</td><td><input name="r_ch" inputmode="numeric" value="40" aria-label="Ceiling hung extra per stall"></td></tr>
+          <tr><td>Accessible (ADA) stall, extra</td><td><input name="r_ada" inputmode="numeric" value="40" aria-label="ADA stall extra"></td></tr>
+          <tr><td>Urinal screen, each</td><td><input name="r_ur" inputmode="numeric" value="45" aria-label="Urinal screen each"></td></tr>
+          <tr><td>Remove and haul away an old stall</td><td><input name="r_rm" inputmode="numeric" value="25" aria-label="Removal per stall"></td></tr>
+          <tr><td>Minimum charge per job</td><td><input name="r_min" inputmode="numeric" value="600" aria-label="Minimum charge"></td></tr>
+          <tr><td>Travel included (miles from your base)</td><td><input name="r_free" inputmode="numeric" value="50" aria-label="Travel included miles"></td></tr>
+          <tr><td>Travel beyond that, per mile</td><td><input name="r_mi" inputmode="numeric" value="2" aria-label="Travel per mile"></td></tr>
+        </tbody></table>
+      </div>
+      <div class="fstep" data-s="5" hidden>
+        <h3 tabindex="-1">Listing agreement</h3><p class="q">The short version. We send the full agreement to sign with your approval.</p>
+        <ul class="terms">
+          <li>Install the partitions on the customer's Next Partitions order. No substitutes, and no selling partitions on our jobs.</li>
+          <li>Price jobs through the installer portal and report job status (scheduled, installed).</li>
+          <li>Talk to customers through Next Partitions until the job is released to you.</li>
+          <li>Don't go around Next Partitions on customers we refer to you (non-circumvention). Breaches lead to a fee or delisting.</li>
+          <li>You contract and invoice installation directly with the customer. Next Partitions adds no markup to your price.</li>
+          <li>Keep your insurance and business or city registration current. We check them every year.</li>
+        </ul>
+        <label class="agree"><input type="checkbox" id="agree" required><span>I've read the summary and agree to sign the listing agreement if approved.</span></label>
+        <label class="f" style="max-width:420px">Type your full name to sign<input name="sig" id="sig" required autocomplete="name"></label>
+        <p class="err" id="err5"></p>
+      </div>
+      <div class="fnav"><button class="btn ghost" type="button" id="back" hidden>← Back</button><span></span><button class="btn" type="submit" id="next">Next →</button></div>
+    </form>
+    <div class="done" id="done" hidden>
+      <h3 tabindex="-1">Application received</h3>
+      <p style="margin:0;color:var(--muted)">Thanks, <b id="doneName"></b>. We've emailed a copy to <b id="doneEmail"></b>. <i>(Prototype: nothing is sent.)</i></p>
+      <ol class="tl">
+        <li class="first"><i>1</i><span><b>We check your documents</b><span>Insurance and registration, within 2 business days.</span></span></li>
+        <li><i>2</i><span><b>We call your references</b><span>Usually the same week.</span></span></li>
+        <li><i>3</i><span><b>We send you a test job request</b><span>A real-looking job in the portal. We time your reply (target: 1 business day) and your firm price (target: 2).</span></span></li>
+        <li><i>4</i><span><b>You sign the listing agreement and start receiving requests</b><span>Job requests in your service area arrive in the installer portal.</span></span></li>
+        <li><i>5</i><span><b>Approved label after your first completed job</b><span>Your profile goes live on the directory once you've installed for a Next Partitions customer.</span></span></li>
+      </ol>
+    </div>
+  </div>
+</div></section>
+
+<section class="s band"><div class="wrap">
+  <h2>Questions</h2>
+  <details><summary>What does it cost?</summary><p>Nothing. There's no listing fee and no commission on your installation price. Next Partitions earns its margin on the partitions.</p></details>
+  <details><summary>Is it exclusive?</summary><p>No. You keep your own customers and other work. The listing agreement only covers customers we refer to you.</p></details>
+  <details><summary>Who invoices the customer for installation?</summary><p>You do. You contract and invoice installation directly with the customer. Next Partitions isn't a party to the installation agreement.</p></details>
+  <details><summary>How are jobs assigned?</summary><p>The customer chooses among the approved installers who priced their job. The directory lists installers by Installer Score, which combines customer rating, installs for our customers and how fast you reply to job requests.</p></details>
+  <details><summary>When do I get customer contact details?</summary><p>When the customer has chosen you and paid for their partitions order. Before that you see the full job packet (scope, drawings, city and ZIP) and message the customer through us.</p></details>
+  <p class="disc">Listed installers are independent businesses. Customers hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work.</p>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Next Partitions</span><span>sales@nextpartitions.com · 1-833-997-7489</span></div></footer>
+
+<script>
+const $=id=>document.getElementById(id);
+const STEPS=["Business","What you install","Documents","References","Your rates","Agreement"];
+const MATS=[["pc","Powder coated",115],["hdpe","Solid plastic (HDPE)",140],["lam","Plastic laminate",120],["phen","Phenolic",160],["ss","Stainless steel",175]];
+const MOUNTS=["Overhead braced","Floor mounted","Ceiling hung","Floor to ceiling"];
+let step=0;
+$("mats").innerHTML=MATS.map(([v,n],k)=>`<label><input type="checkbox" name="mat" value="${v}" ${k<3?"checked":""}>${n}</label>`).join("");
+$("mounts").innerHTML=MOUNTS.map((n,k)=>`<label><input type="checkbox" name="mount" value="${n}" ${k<2?"checked":""}>${n}</label>`).join("");
+$("refs").innerHTML=[1,2,3].map(n=>`<div class="ref"><span class="t">Reference ${n}${n===3?" (optional)":""}</span>
+  <label class="f">Name<input name="ref${n}n" ${n<3?"required":""}></label><label class="f">Company<input name="ref${n}c"></label>
+  <label class="f">Phone<input name="ref${n}p" type="tel" inputmode="tel" ${n<3?"required":""}></label><label class="f">Job<input name="ref${n}j" placeholder="e.g. 8 HDPE stalls, 2025"></label></div>`).join("");
+function rateRows(){
+  const on=[...document.querySelectorAll('[name=mat]:checked')].map(i=>i.value);
+  $("rateRows").innerHTML=MATS.filter(m=>on.includes(m[0])).map(([v,n,r])=>`<tr><td>${n}</td><td><input name="r_${v}" inputmode="numeric" value="${r}" aria-label="${n} rate per stall"> per stall</td></tr>`).join("");
+}
+function show(i,focus){
+  step=i;
+  document.querySelectorAll(".fstep").forEach(s=>s.hidden=+s.dataset.s!==i);
+  $("rail").innerHTML=STEPS.map((t,k)=>`<li class="${k<i?"done":k===i?"now":""}">${t}</li>`).join("");
+  $("count").textContent=`Step ${i+1} of 6 · ${STEPS[i]}`;
+  $("back").hidden=i===0; $("next").textContent=i===5?"Submit application":`Next: ${STEPS[i+1]} →`;
+  if(i===4)rateRows();
+  if(focus){document.querySelector(`.fstep[data-s="${i}"] h3`).focus({preventScroll:true});$("apply").scrollIntoView({behavior:"smooth",block:"start"});}
+}
+// light validation: required fields in the current step, plus a few step-specific rules
+function valid(i){
+  const box=document.querySelector(`.fstep[data-s="${i}"]`); let ok=true, first=null;
+  box.querySelectorAll("input[required],select[required]").forEach(el=>{
+    let bad=el.type==="file"?!el.files.length:el.type==="checkbox"?!el.checked:!el.value.trim();
+    if(!bad&&el.type==="email")bad=!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(el.value);
+    if(!bad&&el.name==="zip")bad=!/^\d{5}$/.test(el.value);
+    el.setAttribute("aria-invalid",String(bad)); if(bad){ok=false;first=first||el;}
+  });
+  if(i===1){const m=document.querySelectorAll('[name=mat]:checked').length,n=document.querySelectorAll('[name=mount]:checked').length;
+    $("err1").textContent=m&&n?"":"Pick at least one material and one bracing type."; if(!m||!n)ok=false;}
+  if(i===5)$("err5").textContent=ok?"":"Tick the box and type your name to sign.";
+  if(first)first.focus();
+  return ok;
+}
+$("appForm").onsubmit=e=>{e.preventDefault(); if(!valid(step))return;
+  if(step<5){show(step+1,true);return;}
+  const f=$("appForm"); $("doneName").textContent=f.biz.value; $("doneEmail").textContent=f.email.value;
+  f.hidden=true; $("rail").innerHTML=STEPS.map(t=>`<li class="done">${t}</li>`).join(""); $("count").textContent="Submitted";
+  $("done").hidden=false; $("done").querySelector("h3").focus();};
+$("back").onclick=()=>show(step-1,true);
+show(0);
+</script>
+</body>
+</html>
