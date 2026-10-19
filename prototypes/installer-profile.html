@@ -347,9 +347,9 @@ dialog::backdrop{background:rgba(28,14,5,.45)}
       <div class="ok" id="reqOk" hidden></div>
     </div>
     <div class="contact">
-      <h3>Contact <span class="nmS"></span> directly</h3>
-      <div class="row" id="webRow"><span>Website</span><button type="button" class="link" id="webBtn"></button></div>
-      <div class="row"><span>Phone</span><button type="button" class="link" id="phoneBtn">Show phone number</button></div>
+      <h3>Prefer to call?</h3>
+      <div class="row" id="webRow" hidden><span>Website</span><button type="button" class="link" id="webBtn"></button></div>
+      <div class="row"><span>Phone (via Next Partitions)</span><button type="button" class="link" id="phoneBtn">Show phone number</button></div>
     </div>
   </aside>
 </div></div></section>
@@ -446,7 +446,8 @@ function render(){
   $("pMore").innerHTML=Object.entries(I).filter(([k])=>k!==id).map(([k,o])=>`<a href="#${k}"><span class="lg2" aria-hidden="true">${o.init}</span><span><b>${o.name}</b><small>★ ${o.rating} · ${o.city}${o.tier?" · "+o.tier:""}</small></span></a>`).join("");
   $("rMat").innerHTML=Object.keys(x.r).map(k=>`<option value="${k}"${k==="hdpe"?" selected":""}>${MATN[k]}</option>`).join("");
   $("rMount").innerHTML=x.mounts.map(m=>`<option value="${m}">${MOUNTN[m]}</option>`).join("");
-  $("webRow").hidden=!x.web;if(x.web){$("webBtn").textContent=x.web;$("goBtn").textContent="Continue to "+x.web;$("goBtn").href="https://example.com/?utm_source=nextpartitions&utm_medium=installer_profile";}
+  // Agreed: no direct website link on profiles; contact runs through Next Partitions.
+  $("webRow").hidden=true;if(false){$("webBtn").textContent=x.web;$("goBtn").textContent="Continue to "+x.web;$("goBtn").href="https://example.com/?utm_source=nextpartitions&utm_medium=installer_profile";}
   const pb=$("phoneBtn");if(pb){}else{const row=document.querySelector(".contact .row:last-of-type");row.innerHTML='<span>Phone</span><button type="button" class="link" id="phoneBtn">Show phone number</button>';document.querySelectorAll(".tracked").forEach(t=>t.remove());bindPhone();}
   $("msgs").innerHTML=`<div class="m bot">Hi! Questions about ${x.short} or the partitions for your job? We usually reply in a few minutes.</div>`;
   $("reqForm").hidden=false;$("reqOk").hidden=true;

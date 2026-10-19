@@ -12,3 +12,7 @@ Static HTML mockups. Open any file in a browser; keep `img/` next to them. Each 
 | `quick-quote.html` | Earlier quick-quote widget exploration |
 
 All installers, rates, reviews and photos are fictional samples. Product photos and brand logos come from nextpartitions.com.
+
+## Linked bundle
+
+`node build-linked.mjs` writes `linked/`: the five pages as one site with relative links (no claude.ai hops), `get-a-quote` pointed at the configurator prototype. Published at https://claude.ai/artifact/1EM6mvJkMTXTtfTNj5SrbQ.

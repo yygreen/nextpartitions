@@ -28,6 +28,8 @@ Working notes for the nextpartitions.com redesign and the installer directory. R
 
 ## Prototype pages (claude.ai artifacts)
 
+**Clickable prototype (all five pages linked, start here):** https://claude.ai/artifact/1EM6mvJkMTXTtfTNj5SrbQ — built by `node prototypes/build-linked.mjs` from the files in `prototypes/`. The prototypes are the approved design; the React build in `directory/app` must match them.
+
 | Page | URL |
 |---|---|
 | Homepage redesign (3 ways into a quote) | https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68 |
