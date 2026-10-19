@@ -52,3 +52,29 @@ Database changes needed: an invite deadline and a search round on each job, and 
 - Next Partitions checks it against the job packet and the rates, then the customer approves or declines it on their quote page. No extra work without approval. The installer bills it; we add nothing.
 - Frequent change orders lower the installer's score, so pricing low and raising it later doesn't pay.
 - Wrong partitions (size, quantity) are fixed by Next Partitions as part of the partitions order, not as an installation change order.
+
+## 6. Small jobs: an instant firm price instead of three quotes
+
+For a small job (1–3 stalls, or under about $800 of installation), asking three installers wastes everyone's time for a small saving.
+
+- The best-ranked available installer is offered the job at the price their agreed rates give. That becomes the customer's firm installation price straight away.
+- The installer confirms availability within 1 business day, or the next one by rank gets the offer.
+- Where two installers cover the area, the offer alternates between them.
+- Bigger jobs get the three-price comparison in section 1.
+
+## 7. After each job: how your price compared
+
+On jobs with 3 or more firm prices, each installer who wasn't chosen gets a short, anonymous note: "The chosen price was 5–10% below yours" (rounded to a band, no names). It helps installers learn the market without revealing a competitor's price. On jobs with fewer prices, there's no note, because it would give away the other installer's number.
+
+## 8. Areas with only one or two installers
+
+Where only one or two installers cover a job, the customer's protection comes from the benchmark, not from competing prices.
+
+- **Invite everyone who qualifies.** No ranking is needed.
+- **Agreed rates do the work.** Each installer agrees their rates with us separately and never sees anyone else's. A firm price more than 15% above their own rates, or above the area's typical price, goes to Dana before the customer sees it.
+- **Borrowed benchmark.** Until an area has its own price history, use DFW-wide (later Texas-wide) prices per stall by material, shown to the customer as "typical for your area: $X–$Y".
+- **Installers never learn how many others were asked.** Every invite says "you may be one of several installers asked".
+- **Widen for a third price.** Invite an installer from a neighbouring zone, with travel fees from their own rates.
+- **The customer's way out:** their own installer, with the install packet included.
+- **Recruit where it's thin.** The vetting screen tracks installers per ZIP group, aiming for at least 3 per zone. A thin or uncovered zone starts recruiting there (application page, manufacturers' dealer lists, Division 10 freelancers).
+- **DFW at launch:** the core (Dallas, Fort Worth, Arlington, Plano) should reach 3+ quickly. The edges (Granbury, Denton, McKinney) will be thin, and these rules cover them.
