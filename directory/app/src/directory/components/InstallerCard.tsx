@@ -9,7 +9,7 @@ export function InstallerCard({ installer: i, area }: { installer: Installer; ar
       <header className="flex flex-wrap items-center gap-2">
         <h3 className="text-lg font-bold mr-1"><a href={installerHref(i.slug)} className="hover:underline">{i.displayName}</a></h3>
         {labels.map((l) => (
-          <span key={l} className="text-xs font-semibold rounded-full px-2.5 py-0.5 bg-accent text-primary">{l === 'Approved' ? '✓ ' : ''}{l}</span>
+          <span key={l} className="text-xs font-semibold px-2.5 py-0.5 border border-brand-red/40 bg-brand-red/10 text-brand-red">{l === 'Approved' ? '✓ ' : ''}{l}</span>
         ))}
       </header>
       <p className="text-sm text-muted-foreground">
@@ -18,11 +18,11 @@ export function InstallerCard({ installer: i, area }: { installer: Installer; ar
         {i.medianReplyHours !== null && <> · usually replies within {Math.ceil(i.medianReplyHours)} h</>}
       </p>
       <ul className="flex flex-wrap gap-1.5 text-xs">
-        {i.materials.map((m) => <li key={m} className="border border-border rounded px-2 py-0.5">{MATERIAL_LABEL[m]}</li>)}
+        {i.materials.map((m) => <li key={m} className="border border-border rounded-sm px-2 py-0.5">{MATERIAL_LABEL[m]}</li>)}
       </ul>
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
         <ButtonLink href={priceWithHref(area, i.slug)} size="sm">Price with {i.displayName.split(' ')[0]}</ButtonLink>
-        <a href={installerHref(i.slug)} className="text-sm font-semibold text-primary hover:underline">View profile</a>
+        <a href={installerHref(i.slug)} className="text-sm font-semibold text-brand-red hover:underline">View profile</a>
         {i.trackedPhone && <a href={`tel:${i.trackedPhone.replace(/\D/g, '')}`} className="text-sm text-muted-foreground hover:underline">{i.trackedPhone}</a>}
       </div>
     </article>

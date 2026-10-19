@@ -38,9 +38,9 @@ export function ConfigureStart(props: {
   const href = configuratorHref({ area: props.areaSlug, installer: installer?.slug, material, mounting, stalls, removeOld, from: props.from })
 
   return (
-    <section id="configure" aria-labelledby="configure-h" className="scroll-mt-20 bg-card border border-border border-t-4 border-t-primary rounded-lg p-5 sm:p-6 shadow-sm grid gap-5">
+    <section id="configure" aria-labelledby="configure-h" className="scroll-mt-20 bg-card border border-border border-t-4 border-t-brand-red rounded-lg p-5 sm:p-6 shadow-sm grid gap-5">
       <div>
-        <p className="text-xs font-bold uppercase tracking-wide text-primary">Step 1 of your quote</p>
+        <p className="text-xs font-bold uppercase tracking-wide text-brand-red">Step 1 of your quote</p>
         <h2 id="configure-h" className="text-2xl font-extrabold tracking-tight">Price your restroom</h2>
         <p className="text-muted-foreground mt-1">
           Partitions from Next Partitions, installed by {installer ? installer.displayName : `an approved ${props.areaName} installer`}.
@@ -50,10 +50,10 @@ export function ConfigureStart(props: {
 
       {installer && (
         <p className="flex flex-wrap items-center gap-2 text-sm">
-          <span className="rounded-full bg-accent text-primary font-semibold px-3 py-1">Installer: {installer.displayName}</span>
+          <span className="border border-brand-red/40 bg-brand-red/10 text-brand-red font-semibold px-3 py-1">Installer: {installer.displayName}</span>
           {props.lockPreset
-            ? <a className="text-primary hover:underline" href={areaHref(props.areaSlug) + '#configure'}>Compare with other {props.areaName} installers</a>
-            : <button type="button" className="text-primary hover:underline" onClick={() => setInstaller(undefined)}>Use any approved installer</button>}
+            ? <a className="text-brand-red hover:underline" href={areaHref(props.areaSlug) + '#configure'}>Compare with other {props.areaName} installers</a>
+            : <button type="button" className="text-brand-red hover:underline" onClick={() => setInstaller(undefined)}>Use any approved installer</button>}
         </p>
       )}
 
@@ -61,7 +61,7 @@ export function ConfigureStart(props: {
         <legend className="text-sm font-semibold mb-1">Material</legend>
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
           {MATERIALS.map((m) => (
-            <label key={m} className={`border rounded-md px-3 py-2.5 text-sm cursor-pointer has-[:checked]:border-primary has-[:checked]:bg-accent has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-primary ${offered.has(m) ? 'border-border' : 'border-dashed border-border text-muted-foreground'}`}>
+            <label key={m} className={`border rounded-md px-3 py-2.5 text-sm cursor-pointer has-[:checked]:border-brand-red has-[:checked]:bg-brand-red/10 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-brand-red ${offered.has(m) ? 'border-border' : 'border-dashed border-border text-muted-foreground'}`}>
               <input type="radio" name="material" value={m} checked={material === m} onChange={() => setMaterial(m)} className="sr-only" />
               {MATERIAL_LABEL[m]}
             </label>
@@ -89,7 +89,7 @@ export function ConfigureStart(props: {
         </label>
       </div>
 
-      <dl aria-live="polite" className="grid sm:grid-cols-3 gap-3 bg-muted rounded-md p-4">
+      <dl aria-live="polite" className="grid sm:grid-cols-3 gap-3 bg-surface-warm border border-border p-4">
         <div><dt className="text-sm text-muted-foreground">Partitions (Next Partitions)</dt><dd className="text-xl font-bold">{formatUsd(partitions)}</dd></div>
         <div>
           <dt className="text-sm text-muted-foreground">Installation estimate</dt>

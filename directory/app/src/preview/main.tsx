@@ -3,7 +3,8 @@
 import '../styles.css'
 import { createRoot } from 'react-dom/client'
 import type { ReactNode } from 'react'
-import { configuratorHref, homeHref, setLinkMode } from '../directory/links'
+import { setLinkMode } from '../directory/links'
+import { SiteChrome } from '../shell/SiteChrome'
 import { sampleRepo as db } from '../directory/repo.sample'
 import { AreaView, InstallerView, ServiceAreaView, StateHubView } from '../directory/views'
 
@@ -41,14 +42,8 @@ page().then(({ title, view }) => {
   document.title = title
   createRoot(document.getElementById('root')!).render(
     <>
-      <div className="bg-foreground text-background text-sm text-center px-4 py-2">Clickable preview of the installer directory. Every link works; "Continue to full quote" opens the configurator prototype.</div>
-      <header className="bg-card border-b border-border">
-        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-          <a href={homeHref()} className="font-extrabold text-lg">Next Partitions</a>
-          <a href={configuratorHref({ from: 'hub' })} className="bg-primary text-primary-foreground font-semibold rounded-md px-4 py-2">Get a Quote</a>
-        </div>
-      </header>
-      {view}
+      <div className="bg-brand-red text-brand-red-foreground text-sm text-center px-4 py-2">Clickable preview of the installer directory. Every link works; "Continue to full quote" opens the configurator prototype.</div>
+      <SiteChrome logoSrc="img/logo.png">{view}</SiteChrome>
     </>,
   )
   if (location.hash) requestAnimationFrame(() => document.getElementById(location.hash.slice(1))?.scrollIntoView())
