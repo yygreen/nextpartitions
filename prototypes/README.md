@@ -10,6 +10,11 @@ Static HTML mockups. Open any file in a browser; keep `img/` next to them. Each 
 | `installer-profile.html` | Installer profile template for the four DFW sample installers (`#acme`, `#northwind`, `#contoso`, `#fabrikam`) |
 | `configurator-install.html` | New optional "Add Installation" step for the live configurator, plus the Request Quote step |
 | `installer-portal.html` | Installer portal (login only): job inbox, job packet without customer details, confirm your price from your rates, messages through Next Partitions (contact details hidden before release), schedule and mark installed; rates, performance, listing agreement. `#np` shows the same job from the Next Partitions side |
+| `customer-quote.html` | The customer's quote: approve shop drawings, choose an installer (firm prices, billed by the installer), pay for the partitions order (PO, card, ACH). `#choose` opens step 2 |
+| `installer-apply.html` | Public "Get listed" page: why join, the Approved checklist, six-step application ending with the listing agreement |
+| `installer-vetting.html` | Internal vetting screen: checklist with evidence per applicant, timed test job, approve or reject, DFW launch counter |
+| `review-request.html` | Review form for customers with a completed job; low ratings flag a check; `#used` and `#expired` states |
+| `email-copy.html` | The seven loop emails (quote range, job request, reminder, options ready, chosen, released, review request) with plain text |
 | `quick-quote.html` | Earlier quick-quote widget exploration |
 
 All installers, rates, reviews and photos are fictional samples. Product photos and brand logos come from nextpartitions.com.

@@ -45,6 +45,11 @@ Each page on its own link (built by `node prototypes/build-linked.mjs separate`;
 | Installer profile template (`#acme`, `#northwind`, `#contoso`, `#fabrikam`) | https://claude.ai/artifact/Wh2UPd1KDJ78JDQmZsySrN |
 | Configurator installation step (`#dfw`, `#<installer>.<material>.<mounting>.<stalls>`) | https://claude.ai/artifact/VSxudbJ4rsvR5bcDyU2xSs |
 | Installer portal (`#np` = Next Partitions view, `#NP-DFW-1048` = a job) | https://claude.ai/artifact/32L7EWz37XztbenrBwUKBj |
+| Customer's quote: approve drawings, choose installer, pay for partitions (`#choose`) | https://claude.ai/artifact/YJ7mS6GqUSktyydDMy8BDq |
+| Installer application (get listed) | https://claude.ai/artifact/RYzFiXDAUfUj1UbYaaf5N5 |
+| Installer vetting (internal, Approved checklist) | https://claude.ai/artifact/5m6eiBdee8mbWGpusQiEF5 |
+| Review form (`#used`, `#expired`) | https://claude.ai/artifact/KVKguYuwNK7AJkXXRseaM8 |
+| Email copy, 7 emails (`#email-1` … `#email-7`) | https://claude.ai/artifact/614jrzEpTZt1WMTuruh4BS |
 
 Older links (EAVGm8…, GTV4x…/LZqng…, JRhaX…/Emsk4…, Hp9kJ…, Gz25g…) are out of date; don't share them.
 
