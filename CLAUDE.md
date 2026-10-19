@@ -51,7 +51,7 @@ Each page on its own link (built by `node prototypes/build-linked.mjs separate`;
 | Review form (`#used`, `#expired`) | https://claude.ai/artifact/KVKguYuwNK7AJkXXRseaM8 |
 | Email copy, 10 emails (`#email-1` … `#email-10`; 8–10 = no installer prices) | https://claude.ai/artifact/614jrzEpTZt1WMTuruh4BS |
 
-Older links (EAVGm8…, GTV4x…/LZqng…, JRhaX…/Emsk4…, Hp9kJ…, Gz25g…) are out of date; don't share them.
+Older links (EAVGm8…, GTV4x…/LZqng…, JRhaX…/Emsk4…, Hp9kJ…, Gz25g…) are out of date, and UeLah… / PcA77… are stray duplicates of the profile and configurator; don't share them.
 
 All installers, rates, reviews and photos in the prototypes are fictional samples.
 
