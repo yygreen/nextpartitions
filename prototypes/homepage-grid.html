@@ -319,7 +319,7 @@ footer .col{grid-column:span 2}
 
 
 <section class="section" id="quote"><div class="wrap">
-  <div class="head"><div><h2 id="quoteTitle">Start your quote</h2><p id="quoteIntro">Price it yourself, send us your drawings, or let us recommend a material. Every route ends with a quote and shop drawings.</p></div></div>
+  <div class="head"><div><h2 id="quoteTitle">Start your quote</h2><p id="quoteIntro">Price a full layout yourself, send us your drawings, or shop parts and accessories straight from the catalogue.</p></div></div>
   <div class="grid doors" id="doors">
     <article class="c4 door primary">
       <p class="eyebrow">I know what I need</p>
@@ -341,14 +341,14 @@ footer .col{grid-column:span 2}
       <label class="btn lg dbtn ghostbtn" for="plans">Upload plans <span aria-hidden="true">→</span></label>
     </article>
     <article class="c4 door">
-      <p class="eyebrow">Not sure yet</p>
-      <h3>Help me choose</h3>
-      <p class="dtext">Tell us where the partitions are going. We'll recommend a material and show a ballpark price.</p>
-      <p class="dlist">Schools · Gyms · Offices · Restaurants · Healthcare · and more</p>
-      <button type="button" class="btn lg dbtn ghostbtn" id="helpDoor" aria-expanded="false" aria-controls="helper">Help me choose <span aria-hidden="true">→</span></button>
+      <p class="eyebrow">I know the exact parts</p>
+      <h3>Shop the catalogue</h3>
+      <p class="dtext">Browse every partition, door, hardware part and accessory with listed prices. Add to cart and check out online.</p>
+      <p class="dlist">Partitions · Doors · Hinges &amp; latches · Brackets · Accessories</p>
+      <a class="btn lg dbtn ghostbtn" href="https://nextpartitions.com/products">Shop all products <span aria-hidden="true">→</span></a>
     </article>
     <p class="c12 instline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg><span><b>Need it installed?</b> Add a local installer at the last step of the configurator. You'll see their estimate next to your partitions price.</span><a class="more" href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener">Find installers</a><a class="more" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs" target="_blank" rel="noopener">See how it works</a></p>
-    <p class="c12 talk">Prefer to talk it through? Call <b>1-833-997-7489</b> or email <b>sales@nextpartitions.com</b>.</p>
+    <p class="c12 talk">Not sure which material? <button type="button" class="link" id="helpDoor" aria-expanded="false" aria-controls="helper">Help me choose</button> by facility. Prefer to talk it through? Call <b>1-833-997-7489</b> or email <b>sales@nextpartitions.com</b>.</p>
   </div>
   <div class="grid uppanel" id="uppanel" hidden>
     <div class="c12 uphead"><h3>Send your plans</h3><button type="button" class="link" id="upClose">Close</button></div>
@@ -542,7 +542,7 @@ function render(){renderTiles();renderResult();}
 const HERO = {
   doors:  {sub:"Price it yourself in minutes, or send us your drawings for a quote within 24–48 hours. All hardware included with every order.",
            p:["Get instant pricing","https://nextpartitions.com/get-a-quote",true], s:["Upload plans","#uploadDoor"],
-           title:"Start your quote", intro:"Price it yourself, send us your drawings, or let us recommend a material. Every route ends with a quote and shop drawings."},
+           title:"Start your quote", intro:"Price a full layout yourself, send us your drawings, or shop parts and accessories straight from the catalogue."},
   picker: {sub:"Pick your facility, get a ballpark price in one tap. All hardware included with every order.",
            p:["Get my price","#quote",false], s:["Browse materials","#materials"],
            title:"Configure Your Partitions", intro:"Pick where they're going and see a ballpark price instantly. Exact sizes come next, in the configurator."}

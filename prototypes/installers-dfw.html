@@ -128,7 +128,7 @@ img{max-width:100%;display:block}
 .lg{display:inline-block;width:11px;height:11px;border-radius:50%}
 .lg.job{background:var(--accent);box-shadow:0 0 0 2px #fff,0 0 0 3px var(--accent)}
 .lg.base{background:var(--ink)}
-.lg.ring{border:1.5px dashed var(--good);background:transparent}
+.lg.ring{border:1.5px dashed var(--good);background:rgba(31,122,77,.08);border-radius:50%}
 .mapnote{margin-left:auto}
 .nearest{min-width:0;display:flex;flex-direction:column;gap:10px}
 .nearest .lab{display:block;font-weight:800;font-size:17px;margin-bottom:8px}
@@ -521,7 +521,7 @@ const stars=r=>"★★★★★".slice(0,Math.round(r))+"☆☆☆☆☆".slice(
 let filter="all", target=null, has="no", job=null, sortBy="score", hover=null;
 // --- geography (mockup): a few DFW ZIPs; live site uses a geocoder + routing API for real drive times
 const ZIPS={"75201":["Downtown Dallas",32.787,-96.799],"76102":["Downtown Fort Worth",32.755,-97.331],"75024":["Plano",33.075,-96.81],"75087":["Rockwall",32.93,-96.44],"75165":["Waxahachie",32.40,-96.84],"76201":["Denton",33.21,-97.13],"76010":["Arlington",32.72,-97.08],"75034":["Frisco",33.15,-96.83],"75069":["McKinney",33.20,-96.62],"75061":["Irving",32.82,-96.95],"76063":["Mansfield",32.56,-97.14],"76086":["Weatherford",32.76,-97.80]};
-const B={lonMin:-97.62,lonMax:-96.33,latMin:32.33,latMax:33.30,W:460,H:440};
+const B={lonMin:-98.45,lonMax:-95.55,latMin:31.70,latMax:34.00,W:460,H:440}; // wide enough to show each installer's full service radius
 const px=(lat,lon)=>[ (lon-B.lonMin)/(B.lonMax-B.lonMin)*B.W, (B.latMax-lat)/(B.latMax-B.latMin)*B.H ];
 const MI_PER_PX = ((B.lonMax-B.lonMin)*69.17*Math.cos(32.8*Math.PI/180))/B.W; // horizontal scale; vertical is close at this latitude
 function hav(a1,o1,a2,o2){const R=3958.8,r=Math.PI/180,dA=(a2-a1)*r,dO=(o2-o1)*r,h=Math.sin(dA/2)**2+Math.cos(a1*r)*Math.cos(a2*r)*Math.sin(dO/2)**2;return 2*R*Math.asin(Math.sqrt(h));}
@@ -549,7 +549,7 @@ function drawMap(){
   ROADS.forEach(([l,a])=>{g+=`<polyline points="${pts(a)}" fill="none" stroke="#fff" stroke-width="${f(5)}" stroke-linejoin="round"/><polyline points="${pts(a)}" fill="none" stroke="#d9cfc2" stroke-width="${f(2.2)}" stroke-linejoin="round"/>`;});
   ROADS.forEach(([l,a])=>{const [x,y]=px(...a[Math.floor(a.length/2)]);g+=`<text x="${x+4*k}" y="${y-4*k}" font-size="${f(9)}" font-weight="700" fill="#a39684" font-family="Inter,Arial" paint-order="stroke" stroke="#f3efe8" stroke-width="${f(3)}">${l}</text>`;});
   const vis=I.filter(x=>filter==="all"||x.tags.includes(filter));
-  vis.forEach(x=>{const [cx,cy]=px(x.lat,x.lon),r=x.radius/MI_PER_PX,on=hover===x.id;g+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${on?"rgba(31,122,77,.08)":"none"}" stroke="${on?"#1f7a4d":"rgba(31,122,77,.35)"}" stroke-width="${f(on?2:1.2)}" stroke-dasharray="${f(5)} ${f(4)}"/>`;});
+  vis.forEach(x=>{const [cx,cy]=px(x.lat,x.lon),r=x.radius/MI_PER_PX,on=hover===x.id;g+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${on?"rgba(31,122,77,.16)":"rgba(31,122,77,.05)"}" stroke="${on?"#1f7a4d":"rgba(31,122,77,.65)"}" stroke-width="${f(on?2.6:1.5)}" ${on?"":`stroke-dasharray="${f(6)} ${f(4)}"`}/>`;if(on){g+=`<text x="${cx}" y="${cy-r-6*k}" text-anchor="middle" font-size="${f(11)}" font-weight="800" fill="#1f7a4d" font-family="Inter,Arial" paint-order="stroke" stroke="#f3efe8" stroke-width="${f(3)}">${x.radius} mi service area</text>`;}});
   const baseCities=new Set(I.map(i=>i.city));
   CITIES.forEach(([n,la,lo])=>{if(baseCities.has(n))return;const [x,y]=px(la,lo);g+=`<circle cx="${x}" cy="${y}" r="${f(2.2)}" fill="#a39684"/><text x="${x+5*k}" y="${y+3.5*k}" font-size="${f(10.5)}" fill="#6d6059" font-family="Inter,Arial">${n}</text>`;});
   if(job){const [jx,jy]=px(job.lat,job.lon);
