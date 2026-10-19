@@ -72,6 +72,7 @@ img{max-width:100%;display:block}
 @media (max-width:560px){.steps3{grid-template-columns:1fr}.startcfg .btn{width:100%}}
 .zipbar.secondary label{font-size:14px;color:var(--muted)}
 .mbar{display:none}
+.mbar.away{visibility:hidden}
 @media (max-width:760px){.mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:45;background:var(--surface);border-top:1px solid var(--border);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}.mbar .btn{width:100%}body{padding-bottom:76px}}
 
 /* filters + cards */
@@ -246,58 +247,96 @@ pre{margin:8px 0 0;background:var(--band);border:1px solid var(--border);padding
 /* footer */
 footer{background:#1a1a1a;color:#d8d2cc;font-size:14px}
 footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-/* "Price your restroom": the configurator's six steps on the page, full width */
+/* "Price your restroom": the configurator's steps as a slide-by-slide wizard */
 .pricer{background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--accent);margin:0 0 22px;box-shadow:0 10px 30px rgba(28,14,5,.06);scroll-margin-top:96px}
-.pricer .phead{padding:22px 24px 0}
+.pricer .phead{padding:22px 24px 18px;border-bottom:1px solid var(--border)}
 .pricer .eyebrow{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-strong);margin:0}
 .pricer h2{font-size:26px;font-weight:900;letter-spacing:-.02em;margin:2px 0 6px}
 .pricer .sub{margin:0;color:var(--muted)}
-.pbody{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:0;margin-top:18px;border-top:1px solid var(--border)}
-.psteps{padding:8px 24px 24px;min-width:0}
-.pstep2{padding:18px 0;border-bottom:1px solid var(--border)}
-.pstep2:last-child{border-bottom:0}
-.pstep2 h3{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:800;margin:0 0 12px}
-.pstep2 h3 i{font-style:normal;display:inline-grid;place-items:center;width:24px;height:24px;background:var(--fg);color:#fff;font-size:12px}
-.pstep2 h3 small{font-weight:500;color:var(--muted);font-size:13px}
-.ocards{display:grid;gap:8px}
+.prail{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.prail button{width:100%;display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:none;border:0;padding:0;font:inherit;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;text-align:left}
+.prail button::before{content:"";display:block;width:100%;height:4px;background:var(--border)}
+.prail button.done{color:var(--fg)}
+.prail button.done::before{background:var(--fg)}
+.prail button[aria-current="step"]{color:var(--accent-strong);font-weight:800}
+.prail button[aria-current="step"]::before{background:var(--accent)}
+.prail button:disabled{cursor:default}
+.pcount{display:none;margin:12px 0 0;font-size:14px;font-weight:700}
+.pbody{display:grid;grid-template-columns:minmax(0,1fr) 300px}
+.pbody.final{grid-template-columns:1fr}
+.pbody.final .psum{display:none}
+.pstage{padding:24px;min-width:0;display:flex;flex-direction:column;min-height:420px}
+.pslide{flex:1}
+.pslide.in{animation:pin .28s ease}
+@keyframes pin{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:none}}
+.pslide.back{animation-name:pback}
+@keyframes pback{from{opacity:0;transform:translateX(-18px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.pslide.in{animation:none}}
+.pslide h3{font-size:22px;font-weight:900;letter-spacing:-.01em;margin:0 0 4px;outline:0}
+.pslide .q{margin:0 0 18px;color:var(--muted)}
+.ocards{display:grid;gap:10px}
 .ocards.m5{grid-template-columns:repeat(5,minmax(0,1fr))}
 .ocards.m4{grid-template-columns:repeat(4,minmax(0,1fr))}
-.ocards button{display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:var(--surface);border:1px solid var(--border);padding:8px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;text-align:left;min-width:0}
-.ocards button small{font-weight:500;font-size:12px;color:var(--muted);line-height:1.35}
-.ocards img{width:100%;height:64px;object-fit:cover;display:block}
+.ocards.m5l{grid-template-columns:repeat(5,minmax(0,1fr))}
+.ocards.m2{grid-template-columns:repeat(2,minmax(0,220px))}
+.ocards.m2 button{padding-right:40px}
+.ocards button{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:var(--surface);border:1px solid var(--border);padding:10px;font:inherit;font-size:15px;font-weight:700;cursor:pointer;text-align:left;min-width:0;transition:border-color .15s,box-shadow .15s}
+.ocards button:hover{border-color:var(--accent)}
+.ocards button small{font-weight:500;font-size:13px;color:var(--muted);line-height:1.35}
+.ocards button .from{font-size:13px;font-weight:700;color:var(--fg);margin-top:auto}
+.ocards img{width:100%;height:110px;object-fit:cover;display:block}
+.ocards svg{width:100%;height:auto;display:block;background:var(--band)}
 .ocards button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
-.swatches{display:flex;flex-wrap:wrap;gap:8px}
-.swatches button{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);padding:6px 10px 6px 6px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
-.swatches button i{width:22px;height:22px;border:1px solid rgba(0,0,0,.15);display:block}
+.ocards button[aria-pressed="true"]::after{content:"✓";position:absolute;top:8px;right:8px;width:24px;height:24px;display:grid;place-items:center;background:var(--accent);color:#fff;font-size:14px;font-weight:900}
+.swatches{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:10px}
+.swatches button{display:flex;flex-direction:column;align-items:stretch;gap:6px;background:var(--surface);border:1px solid var(--border);padding:6px;font:inherit;font-size:12px;font-weight:600;cursor:pointer;text-align:left;line-height:1.25}
+.swatches button i{height:52px;border:1px solid rgba(0,0,0,.12);display:block}
+.swatches button i.later{background:repeating-linear-gradient(45deg,#fff,#fff 6px,var(--band) 6px,var(--band) 12px);display:grid;place-items:center;font-style:normal;font-size:20px;color:var(--muted)}
 .swatches button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
-.prow2{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:flex-end}
-.pfield{display:grid;gap:6px;font-size:14px;font-weight:700}
-.pfield select{font:inherit;font-weight:500;min-height:44px;border:1px solid var(--border);background:var(--surface);padding:0 10px;min-width:180px}
+.pgroup{margin:0 0 20px}
+.pgroup>b{display:block;font-size:15px;margin:0 0 8px}
+.pchips{display:flex;flex-wrap:wrap;gap:8px}
+.pchips button{background:var(--surface);border:1px solid var(--border);min-height:44px;padding:0 16px;font:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.pchips button small{font-weight:500;color:var(--muted);margin-left:4px}
+.pchips button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent);color:var(--accent-strong)}
 .pstepper{display:flex;align-items:center;border:1px solid var(--border);background:var(--surface);width:max-content}
-.pstepper button{width:44px;height:44px;border:0;background:none;font-size:20px;cursor:pointer}
-.pstepper output{min-width:40px;text-align:center;font-weight:800;font-size:18px}
-.pcheck{display:flex;gap:10px;align-items:flex-start;font-size:14px;cursor:pointer;max-width:46ch}
-.pcheck input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--accent)}
+.pstepper button{width:56px;height:56px;border:0;background:none;font-size:24px;cursor:pointer}
+.pstepper button:hover{background:var(--band)}
+.pstepper output{min-width:56px;text-align:center;font-weight:900;font-size:24px}
+.pcheck{display:flex;gap:12px;align-items:flex-start;font-size:15px;cursor:pointer;max-width:52ch;border:1px solid var(--border);padding:12px 14px}
+.pcheck input{width:22px;height:22px;margin:1px 0 0;accent-color:var(--accent)}
 .pcheck small{display:block;color:var(--muted);font-weight:400}
+.ptip{font-size:14px;color:var(--muted);margin:14px 0 0}
+.pnav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:24px;padding-top:18px;border-top:1px solid var(--border)}
+.pnav .btn{min-width:150px}
+.pnav [hidden]{display:none}
 .psum{background:var(--band);border-left:1px solid var(--border);padding:20px 22px;display:flex;flex-direction:column;gap:14px}
 .psum h3{font-size:16px;font-weight:800;margin:0}
-.psum dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:14px}
-.psum dt{color:var(--muted)}
-.psum dd{margin:0;font-weight:600;text-align:right}
-.ptot2{border-top:1px solid var(--border);padding-top:12px;display:grid;gap:10px}
+.psum dl,.preview dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 12px;font-size:14px}
+.psum dt,.preview dt{color:var(--muted)}
+.psum dd,.preview dd{margin:0;font-weight:600;text-align:right}
+.psum dd.todo{color:var(--muted);font-weight:500}
+.pmini{border-top:1px solid var(--border);padding-top:12px;display:flex;flex-direction:column;gap:2px}
+.pmini span{font-size:14px;color:var(--muted)}
+.pmini b{font-size:20px;font-weight:900;font-variant-numeric:tabular-nums}
+.psum .fine2,.preview .fine2{font-size:13px;color:var(--muted);margin:0}
+.pchip{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px}
+.pchip b{background:var(--accent-soft);border:1px solid var(--accent);padding:4px 10px;color:var(--accent-strong)}
+.pchip button,.preview dd button{background:none;border:0;color:var(--accent-strong);font:inherit;text-decoration:underline;cursor:pointer;padding:0}
+.preview{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,400px);gap:28px;align-items:start}
+.preview dd{text-align:left}
+.preview dd button{font-size:13px;font-weight:500;margin-left:8px}
+.ptot2{background:var(--band);border:1px solid var(--border);padding:20px;display:grid;gap:12px}
 .ptot2 div{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
 .ptot2 span{font-size:14px;color:var(--muted)}
 .ptot2 b{font-size:18px;font-weight:900;font-variant-numeric:tabular-nums;text-align:right}
-.ptot2 .grand b{font-size:24px}
+.ptot2 .grand{border-top:1px solid var(--border);padding-top:12px}
+.ptot2 .grand b{font-size:28px}
 .ptot2 small{display:block;font-size:12px;color:var(--muted);font-weight:500;text-align:right}
-.pchip{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px}
-.pchip b{background:var(--accent-soft);border:1px solid var(--accent);padding:4px 10px;color:var(--accent-strong)}
-.pchip button{background:none;border:0;color:var(--accent-strong);font:inherit;text-decoration:underline;cursor:pointer;padding:0}
-.psum .btn{width:100%;font-size:17px;min-height:52px}
-.psum .fine2{font-size:13px;color:var(--muted);margin:0}
+.ptot2 .btn{width:100%;font-size:17px;min-height:54px}
 @media (min-width:1025px){.psum{position:sticky;top:84px;align-self:start}}
-@media (max-width:1024px){.pbody{grid-template-columns:1fr}.psum{border-left:0;border-top:1px solid var(--border)}.ocards.m5{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media (max-width:640px){.ocards.m5,.ocards.m4{grid-template-columns:repeat(2,minmax(0,1fr))}.psteps,.pricer .phead{padding-inline:16px}}
+@media (max-width:1024px){.pbody{grid-template-columns:1fr}.psum{border-left:0;border-top:1px solid var(--border)}.psum dl{display:none}.ocards.m5,.ocards.m5l{grid-template-columns:repeat(3,minmax(0,1fr))}.swatches{grid-template-columns:repeat(6,minmax(0,1fr))}.preview{grid-template-columns:1fr}}
+@media (max-width:640px){.prail{display:none}.pcount{display:block}.ocards.m5,.ocards.m4,.ocards.m5l{grid-template-columns:repeat(2,minmax(0,1fr))}.ocards.m2{grid-template-columns:repeat(2,minmax(0,1fr))}.ocards img{height:84px}.swatches{grid-template-columns:repeat(4,minmax(0,1fr))}.pstage,.pricer .phead{padding-inline:16px}.pstage{min-height:0}.pricer .pnav .btn{min-width:0;width:auto;flex:1}.pricer .pnav #pBack{flex:0 0 auto}.pmini{flex-direction:row;justify-content:space-between;align-items:baseline}.psum{padding:14px 16px}}
 </style>
 
 <div class="mocknote"><b>Mockup:</b> all installers, ratings, reviews, prices and job counts on this page are examples. Verification fields vary by state (Texas has no statewide general contractor license).</div>
@@ -323,45 +362,79 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
     </ul>
     <section class="pricer" id="configure" aria-labelledby="pricerH">
       <div class="phead">
-        <p class="eyebrow">Step 1 of your quote</p>
+        <p class="eyebrow">Your price in about a minute</p>
         <h2 id="pricerH">Price your restroom</h2>
-        <p class="sub" id="pSub">The same options as our configurator, with an installation estimate from approved DFW installers. You can change anything in the next step.</p>
+        <p class="sub" id="pSub">Seven quick questions, the same as our configurator. You get a partitions price and an installation estimate from approved DFW installers.</p>
+        <ol class="prail" id="pRail" aria-label="Steps"></ol>
+        <p class="pcount" id="pCount" aria-live="polite"></p>
       </div>
-      <div class="pbody">
-        <div class="psteps">
-          <div class="pstep2"><h3><i>1</i>Material</h3>
-            <div class="ocards m5" role="group" aria-label="Material" id="pMats"></div></div>
-          <div class="pstep2"><h3><i>2</i>Bracing</h3>
-            <div class="ocards m4" role="group" aria-label="Bracing" id="pMnts"></div></div>
-          <div class="pstep2"><h3><i>3</i>Color <small id="pColorName"></small></h3>
-            <div class="swatches" role="group" aria-label="Color" id="pColors"></div></div>
-          <div class="pstep2"><h3><i>4</i>Layout</h3>
-            <label class="pfield">Restroom layout<select id="pLayout"></select></label></div>
-          <div class="pstep2"><h3><i>5</i>Stalls &amp; sizes</h3>
-            <div class="prow2">
-              <div class="pfield"><span id="pStL">Stalls</span><div class="pstepper" role="group" aria-labelledby="pStL"><button type="button" id="pMinus" aria-label="Fewer stalls">−</button><output id="pStalls" aria-live="polite">4</output><button type="button" id="pPlus" aria-label="More stalls">+</button></div></div>
-              <label class="pfield">Stall width<select id="pWidth"><option value="36" selected>36" (standard)</option><option value="32">32"</option><option value="34">34"</option><option value="60">60" (ADA)</option></select></label>
-              <label class="pfield">Depth<select id="pDepth"><option>54"</option><option selected>60"</option><option>66"</option><option>72"</option></select></label>
-              <label class="pcheck"><input type="checkbox" id="pPriv"><span><b>Extra privacy</b><small>Continuous hinges and privacy brackets</small></span></label>
-            </div></div>
-          <div class="pstep2"><h3><i>6</i>Urinal screens <small>optional</small></h3>
-            <div class="prow2">
-              <div class="pfield"><span id="pUrL">Quantity</span><div class="pstepper" role="group" aria-labelledby="pUrL"><button type="button" id="pUMinus" aria-label="Fewer urinal screens">−</button><output id="pUrinals" aria-live="polite">0</output><button type="button" id="pUPlus" aria-label="More urinal screens">+</button></div></div>
-              <label class="pfield">Depth<select id="pUDepth"><option>18"</option><option>24"</option></select></label>
-              <label class="pfield">Height<select id="pUHeight"><option>42"</option><option>48"</option></select></label>
-            </div></div>
+      <div class="pbody" id="pBody">
+        <div class="pstage">
+          <div class="pslide" data-step="0">
+            <h3 tabindex="-1">Which material do you need?</h3>
+            <p class="q">Not sure? Most schools and gyms pick solid plastic; most offices pick powder coated.</p>
+            <div class="ocards m5" role="group" aria-label="Material" id="pMats"></div>
+          </div>
+          <div class="pslide" data-step="1" hidden>
+            <h3 tabindex="-1">How should the partitions be braced?</h3>
+            <p class="q">This depends on your floor and ceiling. Overhead braced works almost anywhere.</p>
+            <div class="ocards m4" role="group" aria-label="Bracing" id="pMnts"></div>
+          </div>
+          <div class="pslide" data-step="2" hidden>
+            <h3 tabindex="-1">Pick a color</h3>
+            <p class="q">Or decide later: color doesn't change the price. The full color chart depends on material and brand.</p>
+            <div class="swatches" role="group" aria-label="Color" id="pColors"></div>
+          </div>
+          <div class="pslide" data-step="3" hidden>
+            <h3 tabindex="-1">What does the restroom look like?</h3>
+            <p class="q">Seen from above. Pick the closest; we check it on the shop drawings.</p>
+            <div class="ocards m5l" role="group" aria-label="Layout" id="pLays"></div>
+          </div>
+          <div class="pslide" data-step="4" hidden>
+            <h3 tabindex="-1">How many stalls, and what size?</h3>
+            <p class="q">Standard sizes are already selected. Exact measurements come with the shop drawings.</p>
+            <div class="pgroup"><b id="pStL">Number of stalls</b><div class="pstepper" role="group" aria-labelledby="pStL"><button type="button" id="pMinus" aria-label="Fewer stalls">−</button><output id="pStalls" aria-live="polite">4</output><button type="button" id="pPlus" aria-label="More stalls">+</button></div></div>
+            <div class="pgroup"><b id="pWL">Stall width</b><div class="pchips" role="group" aria-labelledby="pWL" id="pWidth"></div></div>
+            <div class="pgroup"><b id="pDL">Stall depth</b><div class="pchips" role="group" aria-labelledby="pDL" id="pDepth"></div></div>
+            <label class="pcheck"><input type="checkbox" id="pPriv"><span><b>Extra privacy</b><small>Continuous hinges and privacy brackets close the gaps around doors</small></span></label>
+          </div>
+          <div class="pslide" data-step="5" hidden>
+            <h3 tabindex="-1">Do you need urinal screens?</h3>
+            <p class="q">The panels between urinals. Skip this if it's a women's or single-user restroom.</p>
+            <div class="ocards m2" role="group" aria-label="Urinal screens" id="pUYN"></div>
+            <div id="pUOpts" hidden style="margin-top:20px">
+              <div class="pgroup"><b id="pUrL">How many?</b><div class="pstepper" role="group" aria-labelledby="pUrL"><button type="button" id="pUMinus" aria-label="Fewer urinal screens">−</button><output id="pUrinals" aria-live="polite">0</output><button type="button" id="pUPlus" aria-label="More urinal screens">+</button></div></div>
+              <div class="pgroup"><b id="pUDL">Depth</b><div class="pchips" role="group" aria-labelledby="pUDL" id="pUDepth"></div></div>
+              <div class="pgroup"><b id="pUHL">Height</b><div class="pchips" role="group" aria-labelledby="pUHL" id="pUHeight"></div></div>
+            </div>
+          </div>
+          <div class="pslide" data-step="6" hidden>
+            <h3 tabindex="-1">Your restroom, priced</h3>
+            <p class="q">Sample estimate. Your quote and shop drawings follow within 2 business days.</p>
+            <div class="preview">
+              <div>
+                <div class="pchip" id="pChip" hidden style="margin-bottom:12px"><b id="pChipName"></b><button type="button" id="pChipClear">Use any approved installer</button></div>
+                <dl id="pReview"></dl>
+              </div>
+              <div class="ptot2" aria-live="polite">
+                <div><span>Partitions (Next Partitions)</span><b id="pParts"></b></div>
+                <div><span>Installation estimate</span><b id="pInst"></b></div>
+                <div class="grand"><span>Estimated total</span><b id="pTotal"></b></div>
+                <a class="btn" id="pGo" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw">Continue to full quote →</a>
+                <p class="fine2">Free, no obligation. Installers price your job through us; your contact details stay with us until you book.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pnav">
+            <button class="btn ghost" type="button" id="pBack">← Back</button>
+            <button class="btn" type="button" id="pNext">Next →</button>
+          </div>
         </div>
         <aside class="psum" aria-labelledby="pSumH">
-          <h3 id="pSumH">Your configuration</h3>
-          <div class="pchip" id="pChip" hidden><b id="pChipName"></b><button type="button" id="pChipClear">Use any approved installer</button></div>
+          <h3 id="pSumH">Your restroom so far</h3>
           <dl id="pList"></dl>
-          <div class="ptot2" aria-live="polite">
-            <div><span>Partitions (Next Partitions)</span><b id="pParts"></b></div>
-            <div><span>Installation estimate</span><b id="pInst"></b></div>
-            <div class="grand"><span>Estimated total</span><b id="pTotal"></b></div>
-          </div>
-          <a class="btn" id="pGo" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw">Continue to full quote →</a>
-          <p class="fine2">Free, no obligation. Shop drawings and your quote within 2 business days. Installers price your job through us; your contact details stay with us until you book.</p>
+          <div class="pmini" aria-live="polite"><span>Estimated total</span><b id="pMini"></b></div>
+          <p class="fine2">Partitions plus installation, before tax and delivery. <button class="link" type="button" id="pSkip">Skip to my price</button></p>
         </aside>
       </div>
     </section>
@@ -753,7 +826,7 @@ cards();
 applyView();
 listNear();
 
-// ---- Price your restroom: the configurator's six steps (sample prices; live pricing comes from the configurator)
+// ---- Price your restroom: the configurator's steps, one slide each (sample prices; live pricing comes from the configurator)
 const PMAT=[
   {id:"pc",name:"Powder coated",img:"img/powder-coated.jpg",d:"Most popular, economical",rate:470},
   {id:"ss",name:"Stainless steel",img:"img/stainless-steel.jpg",d:"Luxury, easy to clean",rate:1650},
@@ -766,22 +839,60 @@ const PMNT=[
   {id:"ch",name:"Ceiling hung",d:"Needs ceiling structure; clean floor line",add:60,inst:1},
   {id:"fc",name:"Floor to ceiling",d:"Heaviest duty; anchored both ends",add:90,inst:1}];
 const PCOL=[["Decide later",""],["White 2129","#f2f0ea"],["Almond 2103","#dccfb4"],["Sage 2141","#8a9a7b"],["Red 2145","#a52321"],["Dark Khaki 2109","#6b6250"],["Khaki 2115","#a89a7a"],["Burgundy 2148","#5c1f26"],["Gray 2125","#8a8a8a"],["Charcoal 2123","#3d3d3d"],["Metallic Silver 2171","#a8abae"],["Azure 2101","#4a7ba6"],["Royal Blue 2135","#1f3e7a"],["Sandy Beach 2150","#c9b393"],["Pepper Dust 3590","#6e6a63"],["Black 2127","#1a1a1a"]];
-const PLAY=["Between walls","Corner left","Corner right","Free standing","Alcove, left door with stalls","Alcove, right door with stalls","Alcove, left with between-wall units","Alcove, right with between-wall units","Single alcove, left door","Single alcove, right door"];
+// [name, side walls "l"/"r"/"lr"/"", stalls, entrance return "l"/"r"/""]
+const PLAY=[["Between walls","lr",3,""],["Corner left","l",3,""],["Corner right","r",3,""],["Free standing","",3,""],["Alcove, left door with stalls","lr",3,"l"],["Alcove, right door with stalls","lr",3,"r"],["Alcove, left with between-wall units","lr",2,"l"],["Alcove, right with between-wall units","lr",2,"r"],["Single alcove, left door","lr",1,"l"],["Single alcove, right door","lr",1,"r"]];
+const PWID=[["36","36\"","standard"],["32","32\""],["34","34\""],["60","60\"","ADA"]], PDEP=['54"','60"','66"','72"'];
 // installer rates per stall (sample; same as the configurator prototype, stainless added)
 const PRATE={acme:{r:{hdpe:140,phen:160,pc:115,lam:120,ss:175},chA:45,min:700},contoso:{r:{hdpe:125,phen:145,pc:100,lam:105,ss:160},chA:40,min:500},
   northwind:{r:{hdpe:130,phen:150,pc:110,lam:110,ss:165},chA:40,min:600},fabrikam:{r:{hdpe:120,phen:140,pc:95,lam:100,ss:150},chA:35,min:450}};
-const P={m:"hdpe",n:"ob",c:0,lay:0,s:4,w:"36",dep:'60"',priv:false,u:0,ud:'18"',uh:'42"',inst:null};
+const PSTEPS=["Material","Bracing","Color","Layout","Stalls","Urinal screens","Your price"];
+const P={m:"hdpe",n:"ob",c:0,lay:0,s:4,w:"36",dep:'60"',priv:false,u:0,ud:'18"',uh:'42"',inst:null,step:0,seen:0};
 const pmoney=n=>"$"+Math.round(n).toLocaleString("en-US");
 const prng=(lo,hi)=>lo===hi?pmoney(lo):`${pmoney(lo)} – ${pmoney(hi)}`;
 const pm=()=>PMAT.find(x=>x.id===P.m), pn=()=>PMNT.find(x=>x.id===P.n);
 function pEst(id){const c=PRATE[id];const t=P.s*(c.r[P.m]+(pn().inst?c.chA:0))+P.u*45;if(t<c.min)return[c.min,c.min];return[Math.round(t*.95/10)*10,Math.round(t*1.1/10)*10];}
+// small schematic drawings for the bracing and layout cards
+function mountSvg(id){
+  const top=id==="ch"||id==="fc"?4:12, bot=id==="ch"?44:52;
+  return `<svg viewBox="0 0 120 64" aria-hidden="true"><line x1="0" y1="4" x2="120" y2="4" stroke="#b9b1a8" stroke-width="2" stroke-dasharray="${top===4?"":"4 3"}"/><line x1="0" y1="58" x2="120" y2="58" stroke="#b9b1a8" stroke-width="2" stroke-dasharray="${bot===52?"":"4 3"}"/>
+  <rect x="30" y="16" width="60" height="30" fill="#fdeee3" stroke="#e8630a"/>${id==="ob"?`<line x1="18" y1="12" x2="102" y2="12" stroke="#1c0e05" stroke-width="3"/>`:""}
+  <rect x="22" y="${top}" width="7" height="${(bot===52?58:bot)-top}" fill="#1c0e05"/><rect x="91" y="${top}" width="7" height="${(bot===52?58:bot)-top}" fill="#1c0e05"/></svg>`;
+}
+function laySvg([,walls,n,ret]){
+  const L=walls.includes("l"),R=walls.includes("r"), x0=L?10:22, x1=R?110:98, w=(x1-x0)/n;
+  let s=`<svg viewBox="0 0 120 70" aria-hidden="true"><rect x="4" y="4" width="112" height="5" fill="#1c0e05"/>`;
+  if(L)s+=`<rect x="4" y="4" width="5" height="62" fill="#1c0e05"/>`; if(R)s+=`<rect x="111" y="4" width="5" height="62" fill="#1c0e05"/>`;
+  const r=Math.min(20,Math.round(w*.6));
+  for(let k=0;k<n;k++){const x=x0+k*w;s+=`<rect x="${x.toFixed(1)}" y="9" width="${w.toFixed(1)}" height="34" fill="#fdeee3" stroke="#e8630a"/><path d="M${(x+w/2-r/2).toFixed(1)} 43 a${r} ${r} 0 0 0 ${r} ${-r}" fill="none" stroke="#e8630a" stroke-dasharray="2 2"/>`;}
+  if(ret==="l")s+=`<rect x="40" y="61" width="76" height="5" fill="#1c0e05"/>`; if(ret==="r")s+=`<rect x="4" y="61" width="76" height="5" fill="#1c0e05"/>`;
+  return s+`</svg>`;
+}
+const pressed=(a,b)=>`aria-pressed="${a===b}"`;
 function pricerCards(){
-  $("pMats").innerHTML=PMAT.map(x=>`<button type="button" data-m="${x.id}" aria-pressed="${P.m===x.id}"><img src="${x.img}" alt="">${x.name}<small>${x.d}</small></button>`).join("");
-  $("pMnts").innerHTML=PMNT.map(x=>`<button type="button" data-n="${x.id}" aria-pressed="${P.n===x.id}">${x.name}<small>${x.d}</small></button>`).join("");
-  $("pColors").innerHTML=PCOL.map(([n,h],k)=>`<button type="button" data-c="${k}" aria-pressed="${P.c===k}">${h?`<i style="background:${h}"></i>`:""}${n}</button>`).join("");
-  $("pMats").querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>{P.m=b.dataset.m;pricerCards();pricer();});
-  $("pMnts").querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>{P.n=b.dataset.n;pricerCards();pricer();});
-  $("pColors").querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>{P.c=+b.dataset.c;pricerCards();pricer();});
+  const minInst=id=>Math.min(...Object.values(PRATE).map(c=>c.r[id]));
+  $("pMats").innerHTML=PMAT.map(x=>`<button type="button" data-m="${x.id}" ${pressed(P.m,x.id)}><img src="${x.img}" alt="">${x.name}<small>${x.d}</small><span class="from">from ${pmoney(x.rate)}/stall</span></button>`).join("");
+  $("pMnts").innerHTML=PMNT.map(x=>`<button type="button" data-n="${x.id}" ${pressed(P.n,x.id)}>${mountSvg(x.id)}${x.name}<small>${x.d}</small></button>`).join("");
+  $("pColors").innerHTML=PCOL.map(([n,h],k)=>`<button type="button" data-c="${k}" ${pressed(P.c,k)}>${h?`<i style="background:${h}"></i>`:`<i class="later">?</i>`}${n}</button>`).join("");
+  $("pLays").innerHTML=PLAY.map((l,k)=>`<button type="button" data-l="${k}" ${pressed(P.lay,k)}>${laySvg(l)}<small style="color:var(--fg);font-weight:700">${l[0]}</small></button>`).join("");
+  $("pWidth").innerHTML=PWID.map(([v,t,s])=>`<button type="button" data-w="${v}" ${pressed(P.w,v)}>${t}${s?`<small>${s}</small>`:""}</button>`).join("");
+  $("pDepth").innerHTML=PDEP.map(v=>`<button type="button" data-d='${v}' ${pressed(P.dep,v)}>${v}${v==='60"'?"<small>standard</small>":""}</button>`).join("");
+  $("pUYN").innerHTML=`<button type="button" data-u="0" ${pressed(P.u,0)}>No urinal screens<small>Skip this step</small></button><button type="button" data-u="1" aria-pressed="${P.u>0}">Yes, add screens<small>Choose how many and the size</small></button>`;
+  $("pUDepth").innerHTML=['18"','24"'].map(v=>`<button type="button" data-ud='${v}' ${pressed(P.ud,v)}>${v}</button>`).join("");
+  $("pUHeight").innerHTML=['42"','48"'].map(v=>`<button type="button" data-uh='${v}' ${pressed(P.uh,v)}>${v}</button>`).join("");
+  const on=(sel,f,adv)=>document.querySelectorAll(sel).forEach(b=>b.onclick=()=>{f(b);pricerCards();pricer();if(adv)setTimeout(()=>pGoTo(P.step+1),260);});
+  on("[data-m]",b=>P.m=b.dataset.m,1); on("[data-n]",b=>P.n=b.dataset.n,1); on("[data-c]",b=>P.c=+b.dataset.c,1); on("[data-l]",b=>P.lay=+b.dataset.l,1);
+  on("[data-w]",b=>P.w=b.dataset.w); on("[data-d]",b=>P.dep=b.dataset.d); on("[data-ud]",b=>P.ud=b.dataset.ud); on("[data-uh]",b=>P.uh=b.dataset.uh);
+  on("[data-u]",b=>{P.u=+b.dataset.u?Math.max(1,P.u):0;},0);
+  $("pUYN").querySelector('[data-u="0"]').onclick=()=>{P.u=0;pricerCards();pricer();setTimeout(()=>pGoTo(6),260);};
+}
+function pGoTo(i,quiet){
+  i=Math.max(0,Math.min(6,i)); const back=i<P.step; P.step=i; P.seen=Math.max(P.seen,i);
+  document.querySelectorAll(".pslide").forEach(s=>{const on=+s.dataset.step===i;s.hidden=!on;s.classList.remove("in","back");if(on&&!quiet){void s.offsetWidth;s.classList.add("in");if(back)s.classList.add("back");}});
+  $("pBody").classList.toggle("final",i===6);
+  pricer();
+  if(quiet)return;
+  const box=$("configure").getBoundingClientRect(); if(box.top<0||box.top>innerHeight*.5)$("configure").scrollIntoView({behavior:"smooth",block:"start"});
+  document.querySelector(`.pslide[data-step="${i}"] h3`).focus({preventScroll:true});
 }
 function pricer(){
   const per=pm().rate+pn().add+(P.priv?45:0)+(P.w==="60"?220:0);
@@ -789,29 +900,37 @@ function pricer(){
   const ids=P.inst?[P.inst]:Object.keys(PRATE); const e=ids.map(pEst);
   const lo=Math.min(...e.map(x=>x[0])),hi=Math.max(...e.map(x=>x[1]));
   const who=P.inst?I.find(x=>x.id===P.inst).name:null;
-  $("pList").innerHTML=[["Material",pm().name],["Bracing",pn().name],["Color",PCOL[P.c][0]],["Layout",PLAY[P.lay]],["Stalls",`${P.s} × ${P.w}" W × ${P.dep} D${P.priv?", extra privacy":""}`],["Urinal screens",P.u?`${P.u} × ${P.ud} D × ${P.uh} H`:"None"]].map(([a,b])=>`<dt>${a}</dt><dd>${b}</dd>`).join("");
+  const rows=[["Material",pm().name],["Bracing",pn().name],["Color",PCOL[P.c][0]],["Layout",PLAY[P.lay][0]],["Stalls",`${P.s} × ${P.w}" W × ${P.dep} D${P.priv?", extra privacy":""}`],["Urinal screens",P.u?`${P.u} × ${P.ud} D × ${P.uh} H`:"None"]];
+  $("pList").innerHTML=rows.map(([a,b],k)=>`<dt>${a}</dt><dd class="${k>P.seen?"todo":""}">${k>P.seen&&k>1?"—":b}</dd>`).join("");
+  $("pReview").innerHTML=rows.map(([a,b],k)=>`<dt>${a}</dt><dd>${b}<button type="button" data-edit="${k}" aria-label="Change ${a.toLowerCase()}">Change</button></dd>`).join("")+(P.inst?"":`<dt>Installer</dt><dd>Any approved DFW installer</dd>`);
+  $("pReview").querySelectorAll("[data-edit]").forEach(b=>b.onclick=()=>pGoTo(+b.dataset.edit));
+  $("pRail").innerHTML=PSTEPS.map((t,k)=>`<li><button type="button" data-go="${k}" class="${k<P.step||(k<=P.seen&&k!==P.step)?"done":""}" ${k===P.step?'aria-current="step"':""} ${k>P.seen?"disabled":""}>${t}</button></li>`).join("");
+  $("pRail").querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>pGoTo(+b.dataset.go));
+  $("pCount").textContent=`Step ${P.step+1} of 7 · ${PSTEPS[P.step]}`;
   $("pParts").textContent=pmoney(parts);
   $("pInst").innerHTML=`${prng(lo,hi)}<small>${who?"Rates: "+who:ids.length+" approved DFW installers"}</small>`;
   $("pTotal").innerHTML=`${prng(parts+lo,parts+hi)}<small>Before tax and delivery</small>`;
-  $("pColorName").textContent=P.c?"· "+PCOL[P.c][0]:"";
+  $("pMini").textContent=prng(parts+lo,parts+hi);
   $("pChip").hidden=!P.inst; if(P.inst)$("pChipName").textContent="Installer: "+who;
-  $("pStalls").textContent=P.s; $("pUrinals").textContent=P.u;
+  $("pStalls").textContent=P.s; $("pUrinals").textContent=P.u; $("pPriv").checked=P.priv;
+  $("pUOpts").hidden=!P.u;
+  $("pBack").hidden=P.step===0; $("pNext").hidden=P.step===6;
+  $("pNext").textContent=P.step===5?"See my price →":`Next: ${PSTEPS[P.step+1]} →`;
   const hm=P.m==="ss"?"":P.m, hn=P.n==="fc"?"":P.n;   // the configurator prototype doesn't model these two yet
   $("pGo").href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#"+["dfw",P.inst,hm,hn,Math.max(2,Math.min(20,P.s))].filter(Boolean).join(".");
 }
 function pricerPick(id){P.inst=id;pricer();}
-$("pLayout").innerHTML=PLAY.map((l,k)=>`<option value="${k}">${l}</option>`).join("");
-$("pLayout").onchange=e=>{P.lay=+e.target.value;pricer();};
-$("pWidth").onchange=e=>{P.w=e.target.value;pricer();};
-$("pDepth").onchange=e=>{P.dep=e.target.value;pricer();};
+$("pBack").onclick=()=>pGoTo(P.step-1);
+$("pNext").onclick=()=>pGoTo(P.step+1);
+$("pSkip").onclick=()=>pGoTo(6);
 $("pPriv").onchange=e=>{P.priv=e.target.checked;pricer();};
-$("pUDepth").onchange=e=>{P.ud=e.target.value;pricer();};
-$("pUHeight").onchange=e=>{P.uh=e.target.value;pricer();};
 $("pMinus").onclick=()=>{P.s=Math.max(1,P.s-1);pricer();};
 $("pPlus").onclick=()=>{P.s=Math.min(8,P.s+1);pricer();};
-$("pUMinus").onclick=()=>{P.u=Math.max(0,P.u-1);pricer();};
-$("pUPlus").onclick=()=>{P.u=Math.min(12,P.u+1);pricer();};
+$("pUMinus").onclick=()=>{P.u=Math.max(0,P.u-1);pricerCards();pricer();};
+$("pUPlus").onclick=()=>{P.u=Math.min(12,P.u+1);pricerCards();pricer();};
 $("pChipClear").onclick=()=>{P.inst=null;pricer();};
 {const q=new URLSearchParams(location.search).get("installer");if(q&&PRATE[q])P.inst=q;}
-pricerCards();pricer();
+pricerCards();pGoTo(0,true);
+// the floating mobile button would cover the wizard while it's on screen
+new IntersectionObserver(([e])=>document.querySelector(".mbar").classList.toggle("away",e.isIntersecting)).observe($("configure"));
 </script>
