@@ -5,7 +5,11 @@ import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const here = dirname(fileURLToPath(import.meta.url))
-const out = join(here, 'linked')
+// `node build-linked.mjs separate` builds separate/: one page per artifact, links pointing at each
+// page's own artifact URL (from separate-urls.json), opened in a new tab as the artifact viewer requires.
+const separate = process.argv[2] === 'separate'
+const urls = separate ? JSON.parse(readFileSync(join(here, 'separate-urls.json'), 'utf8')) : {}
+const out = join(here, separate ? 'separate' : 'linked')
 rmSync(out, { recursive: true, force: true })
 mkdirSync(out)
 cpSync(join(here, 'img'), join(out, 'img'), { recursive: true })
@@ -28,11 +32,22 @@ const ids = {
 }
 for (const [file, src] of Object.entries(pages)) {
   let html = readFileSync(join(here, src), 'utf8')
-  for (const [id, to] of Object.entries(ids)) html = html.replaceAll(`https://claude.ai/artifact/${id}`, to)
-  html = html.replaceAll('https://nextpartitions.com/get-a-quote', 'configurator.html')
-  html = html.replaceAll(' target="_blank" rel="noopener"', '').replaceAll(" target=\"_blank\"", '')
-  const left = html.match(/https:\/\/claude\.ai\/artifact\/[A-Za-z0-9]+/g)
-  if (left) throw new Error(`${src} still links to ${[...new Set(left)].join(', ')}`)
+  if (separate) {
+    for (const [id, to] of Object.entries(ids)) if (urls[to] && !to.startsWith('index')) html = html.replaceAll(`https://claude.ai/artifact/${id}`, urls[to])
+    html = html.replaceAll('https://nextpartitions.com/get-a-quote', urls['configurator.html'])
+    // relative links between pages (e.g. the start page) -> artifact URLs
+    for (const [f, u] of Object.entries(urls)) html = html.replaceAll(`href="${f}`, `target="_blank" rel="noopener" href="${u}`)
+    // every link to another prototype opens in a new tab (the artifact viewer won't navigate in place)
+    html = html.replace(/<a\b(?![^>]*\btarget=)([^>]*\bhref="https:\/\/claude\.ai\/artifact\/)/g, '<a target="_blank" rel="noopener"$1')
+    const stale = (html.match(/https:\/\/claude\.ai\/artifact\/[A-Za-z0-9]+/g) || []).filter((u) => !Object.values(urls).includes(u))
+    if (stale.length) throw new Error(`${src} still links to ${[...new Set(stale)].join(', ')}`)
+  } else {
+    for (const [id, to] of Object.entries(ids)) html = html.replaceAll(`https://claude.ai/artifact/${id}`, to)
+    html = html.replaceAll('https://nextpartitions.com/get-a-quote', 'configurator.html')
+    html = html.replaceAll(' target="_blank" rel="noopener"', '').replaceAll(" target=\"_blank\"", '')
+    const left = html.match(/https:\/\/claude\.ai\/artifact\/[A-Za-z0-9]+/g)
+    if (left) throw new Error(`${src} still links to ${[...new Set(left)].join(', ')}`)
+  }
   if (!/<meta charset/i.test(html)) html = '<!doctype html>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n' + html
   writeFileSync(join(out, file), html)
 }

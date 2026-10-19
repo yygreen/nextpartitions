@@ -33,13 +33,17 @@ Working notes for the nextpartitions.com redesign and the installer directory. R
 
 **Clickable prototype (all five pages linked, start here):** https://claude.ai/artifact/1EM6mvJkMTXTtfTNj5SrbQ — built by `node prototypes/build-linked.mjs` from the files in `prototypes/`. The prototypes are the approved design; the React build in `directory/app` must match them.
 
+Each page on its own link (built by `node prototypes/build-linked.mjs separate`; links in `prototypes/separate-urls.json`):
+
 | Page | URL |
 |---|---|
-| Homepage redesign (3 ways into a quote) | https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68 |
-| Texas installer hub | https://claude.ai/artifact/LZqngrbkARWrHC23dqswt5 |
-| DFW installer area page | https://claude.ai/artifact/Emsk4xQGarEUxTuXLLdm1q |
-| Installer profile template (`#acme`, `#northwind`, `#contoso`, `#fabrikam`) | https://claude.ai/artifact/Hp9kJEgkaRXCtjoxWMkXPx |
-| Configurator installation step (`#dfw`, `#<installer>.<material>.<mounting>.<stalls>`) | https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs |
+| Homepage redesign (3 ways in) | https://claude.ai/artifact/2nD3Ct6kJfCtps9SL8GPus |
+| Texas installer hub | https://claude.ai/artifact/NgMp8WdWWpwAfKPSwaDV29 |
+| DFW installer area page | https://claude.ai/artifact/6dhxph55HK2cQ8L89RKUBc |
+| Installer profile template (`#acme`, `#northwind`, `#contoso`, `#fabrikam`) | https://claude.ai/artifact/Wh2UPd1KDJ78JDQmZsySrN |
+| Configurator installation step (`#dfw`, `#<installer>.<material>.<mounting>.<stalls>`) | https://claude.ai/artifact/VSxudbJ4rsvR5bcDyU2xSs |
+
+Older links (EAVGm8…, GTV4x…/LZqng…, JRhaX…/Emsk4…, Hp9kJ…, Gz25g…) are out of date; don't share them.
 
 All installers, rates, reviews and photos in the prototypes are fictional samples.
 
