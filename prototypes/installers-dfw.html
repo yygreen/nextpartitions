@@ -246,35 +246,58 @@ pre{margin:8px 0 0;background:var(--band);border:1px solid var(--border);padding
 /* footer */
 footer{background:#1a1a1a;color:#d8d2cc;font-size:14px}
 footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-/* "Price your restroom": step 1 of the quote, on the page */
-.pricer{background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--accent);padding:22px;margin:0 0 22px;box-shadow:0 10px 30px rgba(28,14,5,.06);max-width:860px;scroll-margin-top:96px}
+/* "Price your restroom": the configurator's six steps on the page, full width */
+.pricer{background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--accent);margin:0 0 22px;box-shadow:0 10px 30px rgba(28,14,5,.06);scroll-margin-top:96px}
+.pricer .phead{padding:22px 24px 0}
 .pricer .eyebrow{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-strong);margin:0}
-.pricer h2{font-size:24px;font-weight:900;letter-spacing:-.02em;margin:2px 0 6px}
-.pricer .sub{margin:0 0 16px;color:var(--muted)}
-.pricer .lab{display:block;font-size:14px;font-weight:700;margin:0 0 6px}
-.pmats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:0 0 16px}
-.pmats button{display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:var(--surface);border:1px solid var(--border);padding:8px;font:inherit;font-size:14px;font-weight:600;cursor:pointer;text-align:left}
-.pmats img{width:100%;height:54px;object-fit:cover;display:block}
-.pmats button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
-.prow{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:end;margin:0 0 16px}
-.pseg{display:flex;flex-wrap:wrap;border:1px solid var(--border)}
-.pseg button{flex:1;min-height:44px;background:var(--surface);border:0;border-right:1px solid var(--border);font:inherit;font-size:14px;font-weight:600;padding:0 12px;cursor:pointer}
-.pseg button:last-child{border-right:0}
-.pseg button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent-strong)}
-.pstep{display:flex;align-items:center;border:1px solid var(--border);background:var(--surface)}
-.pstep button{width:44px;height:44px;border:0;background:none;font-size:20px;cursor:pointer}
-.pstep output{min-width:40px;text-align:center;font-weight:800;font-size:18px}
-.pchip{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px;margin:0 0 14px}
+.pricer h2{font-size:26px;font-weight:900;letter-spacing:-.02em;margin:2px 0 6px}
+.pricer .sub{margin:0;color:var(--muted)}
+.pbody{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:0;margin-top:18px;border-top:1px solid var(--border)}
+.psteps{padding:8px 24px 24px;min-width:0}
+.pstep2{padding:18px 0;border-bottom:1px solid var(--border)}
+.pstep2:last-child{border-bottom:0}
+.pstep2 h3{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:800;margin:0 0 12px}
+.pstep2 h3 i{font-style:normal;display:inline-grid;place-items:center;width:24px;height:24px;background:var(--fg);color:#fff;font-size:12px}
+.pstep2 h3 small{font-weight:500;color:var(--muted);font-size:13px}
+.ocards{display:grid;gap:8px}
+.ocards.m5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.ocards.m4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.ocards button{display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:var(--surface);border:1px solid var(--border);padding:8px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;text-align:left;min-width:0}
+.ocards button small{font-weight:500;font-size:12px;color:var(--muted);line-height:1.35}
+.ocards img{width:100%;height:64px;object-fit:cover;display:block}
+.ocards button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+.swatches{display:flex;flex-wrap:wrap;gap:8px}
+.swatches button{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);padding:6px 10px 6px 6px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+.swatches button i{width:22px;height:22px;border:1px solid rgba(0,0,0,.15);display:block}
+.swatches button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+.prow2{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:flex-end}
+.pfield{display:grid;gap:6px;font-size:14px;font-weight:700}
+.pfield select{font:inherit;font-weight:500;min-height:44px;border:1px solid var(--border);background:var(--surface);padding:0 10px;min-width:180px}
+.pstepper{display:flex;align-items:center;border:1px solid var(--border);background:var(--surface);width:max-content}
+.pstepper button{width:44px;height:44px;border:0;background:none;font-size:20px;cursor:pointer}
+.pstepper output{min-width:40px;text-align:center;font-weight:800;font-size:18px}
+.pcheck{display:flex;gap:10px;align-items:flex-start;font-size:14px;cursor:pointer;max-width:46ch}
+.pcheck input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--accent)}
+.pcheck small{display:block;color:var(--muted);font-weight:400}
+.psum{background:var(--band);border-left:1px solid var(--border);padding:20px 22px;display:flex;flex-direction:column;gap:14px}
+.psum h3{font-size:16px;font-weight:800;margin:0}
+.psum dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:14px}
+.psum dt{color:var(--muted)}
+.psum dd{margin:0;font-weight:600;text-align:right}
+.ptot2{border-top:1px solid var(--border);padding-top:12px;display:grid;gap:10px}
+.ptot2 div{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.ptot2 span{font-size:14px;color:var(--muted)}
+.ptot2 b{font-size:18px;font-weight:900;font-variant-numeric:tabular-nums;text-align:right}
+.ptot2 .grand b{font-size:24px}
+.ptot2 small{display:block;font-size:12px;color:var(--muted);font-weight:500;text-align:right}
+.pchip{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px}
 .pchip b{background:var(--accent-soft);border:1px solid var(--accent);padding:4px 10px;color:var(--accent-strong)}
 .pchip button{background:none;border:0;color:var(--accent-strong);font:inherit;text-decoration:underline;cursor:pointer;padding:0}
-.ptot{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;background:var(--band);border:1px solid var(--border);padding:14px 16px;margin:0 0 16px}
-.ptot dt{font-size:13px;color:var(--muted)}
-.ptot dd{margin:2px 0 0;font-size:20px;font-weight:900;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
-.ptot dd small{display:block;font-size:12px;font-weight:500;color:var(--muted);letter-spacing:0}
-.pcta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
-.pcta .btn{font-size:17px;min-height:52px;padding:14px 26px}
-.pcta p{margin:0;font-size:14px;color:var(--muted);max-width:42ch}
-@media (max-width:640px){.pmats{grid-template-columns:repeat(2,1fr)}.prow{grid-template-columns:1fr}.ptot{grid-template-columns:1fr}.pcta .btn{width:100%}}
+.psum .btn{width:100%;font-size:17px;min-height:52px}
+.psum .fine2{font-size:13px;color:var(--muted);margin:0}
+@media (min-width:1025px){.psum{position:sticky;top:84px;align-self:start}}
+@media (max-width:1024px){.pbody{grid-template-columns:1fr}.psum{border-left:0;border-top:1px solid var(--border)}.ocards.m5{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:640px){.ocards.m5,.ocards.m4{grid-template-columns:repeat(2,minmax(0,1fr))}.psteps,.pricer .phead{padding-inline:16px}}
 </style>
 
 <div class="mocknote"><b>Mockup:</b> all installers, ratings, reviews, prices and job counts on this page are examples. Verification fields vary by state (Texas has no statewide general contractor license).</div>
@@ -299,29 +322,48 @@ footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:spac
       <li><b>★ 4.8</b><span>avg. rating from our customers</span></li>
     </ul>
     <section class="pricer" id="configure" aria-labelledby="pricerH">
-      <p class="eyebrow">Step 1 of your quote</p>
-      <h2 id="pricerH">Price your restroom</h2>
-      <p class="sub" id="pSub">Partitions from Next Partitions, installed by an approved DFW installer. Pick the basics; colors, layout and sizes come next.</p>
-      <div class="pchip" id="pChip" hidden><b id="pChipName"></b><button type="button" id="pChipClear">Use any approved installer</button></div>
-      <span class="lab" id="pMatL">Material</span>
-      <div class="pmats" role="group" aria-labelledby="pMatL">
-        <button type="button" data-m="pc" aria-pressed="false"><img src="img/powder-coated.jpg" alt="">Powder coated</button>
-        <button type="button" data-m="hdpe" aria-pressed="true"><img src="img/solid-plastic.jpg" alt="">Solid plastic (HDPE)</button>
-        <button type="button" data-m="phen" aria-pressed="false"><img src="img/phenolic.jpg" alt="">Phenolic</button>
-        <button type="button" data-m="lam" aria-pressed="false"><img src="img/plastic-laminate.jpg" alt="">Plastic laminate</button>
+      <div class="phead">
+        <p class="eyebrow">Step 1 of your quote</p>
+        <h2 id="pricerH">Price your restroom</h2>
+        <p class="sub" id="pSub">The same options as our configurator, with an installation estimate from approved DFW installers. You can change anything in the next step.</p>
       </div>
-      <div class="prow">
-        <div><span class="lab" id="pMntL">Mounting</span>
-          <div class="pseg" role="group" aria-labelledby="pMntL"><button type="button" data-n="ob" aria-pressed="true">Overhead braced</button><button type="button" data-n="fm" aria-pressed="false">Floor mounted</button><button type="button" data-n="ch" aria-pressed="false">Ceiling hung</button></div></div>
-        <div><span class="lab" id="pStL">Stalls</span>
-          <div class="pstep" role="group" aria-labelledby="pStL"><button type="button" id="pMinus" aria-label="Fewer stalls">−</button><output id="pStalls" aria-live="polite">4</output><button type="button" id="pPlus" aria-label="More stalls">+</button></div></div>
+      <div class="pbody">
+        <div class="psteps">
+          <div class="pstep2"><h3><i>1</i>Material</h3>
+            <div class="ocards m5" role="group" aria-label="Material" id="pMats"></div></div>
+          <div class="pstep2"><h3><i>2</i>Bracing</h3>
+            <div class="ocards m4" role="group" aria-label="Bracing" id="pMnts"></div></div>
+          <div class="pstep2"><h3><i>3</i>Color <small id="pColorName"></small></h3>
+            <div class="swatches" role="group" aria-label="Color" id="pColors"></div></div>
+          <div class="pstep2"><h3><i>4</i>Layout</h3>
+            <label class="pfield">Restroom layout<select id="pLayout"></select></label></div>
+          <div class="pstep2"><h3><i>5</i>Stalls &amp; sizes</h3>
+            <div class="prow2">
+              <div class="pfield"><span id="pStL">Stalls</span><div class="pstepper" role="group" aria-labelledby="pStL"><button type="button" id="pMinus" aria-label="Fewer stalls">−</button><output id="pStalls" aria-live="polite">4</output><button type="button" id="pPlus" aria-label="More stalls">+</button></div></div>
+              <label class="pfield">Stall width<select id="pWidth"><option value="36" selected>36" (standard)</option><option value="32">32"</option><option value="34">34"</option><option value="60">60" (ADA)</option></select></label>
+              <label class="pfield">Depth<select id="pDepth"><option>54"</option><option selected>60"</option><option>66"</option><option>72"</option></select></label>
+              <label class="pcheck"><input type="checkbox" id="pPriv"><span><b>Extra privacy</b><small>Continuous hinges and privacy brackets</small></span></label>
+            </div></div>
+          <div class="pstep2"><h3><i>6</i>Urinal screens <small>optional</small></h3>
+            <div class="prow2">
+              <div class="pfield"><span id="pUrL">Quantity</span><div class="pstepper" role="group" aria-labelledby="pUrL"><button type="button" id="pUMinus" aria-label="Fewer urinal screens">−</button><output id="pUrinals" aria-live="polite">0</output><button type="button" id="pUPlus" aria-label="More urinal screens">+</button></div></div>
+              <label class="pfield">Depth<select id="pUDepth"><option>18"</option><option>24"</option></select></label>
+              <label class="pfield">Height<select id="pUHeight"><option>42"</option><option>48"</option></select></label>
+            </div></div>
+        </div>
+        <aside class="psum" aria-labelledby="pSumH">
+          <h3 id="pSumH">Your configuration</h3>
+          <div class="pchip" id="pChip" hidden><b id="pChipName"></b><button type="button" id="pChipClear">Use any approved installer</button></div>
+          <dl id="pList"></dl>
+          <div class="ptot2" aria-live="polite">
+            <div><span>Partitions (Next Partitions)</span><b id="pParts"></b></div>
+            <div><span>Installation estimate</span><b id="pInst"></b></div>
+            <div class="grand"><span>Estimated total</span><b id="pTotal"></b></div>
+          </div>
+          <a class="btn" id="pGo" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw">Continue to full quote →</a>
+          <p class="fine2">Free, no obligation. Shop drawings and your quote within 2 business days. Installers price your job through us; your contact details stay with us until you book.</p>
+        </aside>
       </div>
-      <dl class="ptot" aria-live="polite">
-        <div><dt>Partitions (Next Partitions)</dt><dd id="pParts"></dd></div>
-        <div><dt>Installation estimate</dt><dd id="pInst"></dd></div>
-        <div><dt>Estimated total</dt><dd id="pTotal"></dd></div>
-      </dl>
-      <div class="pcta"><a class="btn" id="pGo" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw">Continue to full quote →</a><p>Free, no obligation. Installers price your job through us; your contact details stay with us until you book.</p></div>
     </section>
     <form class="zipbar secondary" id="zipForm" novalidate>
       <label for="jobZip">Or browse installers near your job site</label>
@@ -711,33 +753,65 @@ cards();
 applyView();
 listNear();
 
-// ---- Price your restroom (sample prices: same as the configurator prototype) ----
-const PMAT={pc:{name:"powder coated",rate:470},hdpe:{name:"HDPE",rate:735},phen:{name:"phenolic",rate:1210},lam:{name:"plastic laminate",rate:590}};
-const PMNT={ob:{add:0,ch:0},fm:{add:25,ch:0},ch:{add:60,ch:1}};
-const PRATE={acme:{r:{hdpe:140,phen:160,pc:115,lam:120},chA:45,min:700},contoso:{r:{hdpe:125,phen:145,pc:100,lam:105},chA:40,min:500},
-  northwind:{r:{hdpe:130,phen:150,pc:110,lam:110},chA:40,min:600},fabrikam:{r:{hdpe:120,phen:140,pc:95,lam:100},chA:35,min:450}};
-let pm="hdpe",pn="ob",ps=4,pi=null;
+// ---- Price your restroom: the configurator's six steps (sample prices; live pricing comes from the configurator)
+const PMAT=[
+  {id:"pc",name:"Powder coated",img:"img/powder-coated.jpg",d:"Most popular, economical",rate:470},
+  {id:"ss",name:"Stainless steel",img:"img/stainless-steel.jpg",d:"Luxury, easy to clean",rate:1650},
+  {id:"hdpe",name:"Solid plastic (HDPE)",img:"img/solid-plastic.jpg",d:"Graffiti and moisture resistant",rate:735},
+  {id:"lam",name:"Plastic laminate",img:"img/plastic-laminate.jpg",d:"Many colors and patterns",rate:590},
+  {id:"phen",name:"Phenolic",img:"img/phenolic.jpg",d:"Premium, for heavy use and wet areas",rate:1210}];
+const PMNT=[
+  {id:"ob",name:"Overhead braced",d:"Most popular; no special floor or ceiling",add:0,inst:0},
+  {id:"fm",name:"Floor mounted",d:"Needs a concrete floor",add:25,inst:0},
+  {id:"ch",name:"Ceiling hung",d:"Needs ceiling structure; clean floor line",add:60,inst:1},
+  {id:"fc",name:"Floor to ceiling",d:"Heaviest duty; anchored both ends",add:90,inst:1}];
+const PCOL=[["Decide later",""],["White 2129","#f2f0ea"],["Almond 2103","#dccfb4"],["Sage 2141","#8a9a7b"],["Red 2145","#a52321"],["Dark Khaki 2109","#6b6250"],["Khaki 2115","#a89a7a"],["Burgundy 2148","#5c1f26"],["Gray 2125","#8a8a8a"],["Charcoal 2123","#3d3d3d"],["Metallic Silver 2171","#a8abae"],["Azure 2101","#4a7ba6"],["Royal Blue 2135","#1f3e7a"],["Sandy Beach 2150","#c9b393"],["Pepper Dust 3590","#6e6a63"],["Black 2127","#1a1a1a"]];
+const PLAY=["Between walls","Corner left","Corner right","Free standing","Alcove, left door with stalls","Alcove, right door with stalls","Alcove, left with between-wall units","Alcove, right with between-wall units","Single alcove, left door","Single alcove, right door"];
+// installer rates per stall (sample; same as the configurator prototype, stainless added)
+const PRATE={acme:{r:{hdpe:140,phen:160,pc:115,lam:120,ss:175},chA:45,min:700},contoso:{r:{hdpe:125,phen:145,pc:100,lam:105,ss:160},chA:40,min:500},
+  northwind:{r:{hdpe:130,phen:150,pc:110,lam:110,ss:165},chA:40,min:600},fabrikam:{r:{hdpe:120,phen:140,pc:95,lam:100,ss:150},chA:35,min:450}};
+const P={m:"hdpe",n:"ob",c:0,lay:0,s:4,w:"36",dep:'60"',priv:false,u:0,ud:'18"',uh:'42"',inst:null};
 const pmoney=n=>"$"+Math.round(n).toLocaleString("en-US");
 const prng=(lo,hi)=>lo===hi?pmoney(lo):`${pmoney(lo)} – ${pmoney(hi)}`;
-function pEst(id){const c=PRATE[id];const t=ps*(c.r[pm]+(PMNT[pn].ch?c.chA:0));if(t<c.min)return[c.min,c.min];return[Math.round(t*.95/10)*10,Math.round(t*1.1/10)*10];}
+const pm=()=>PMAT.find(x=>x.id===P.m), pn=()=>PMNT.find(x=>x.id===P.n);
+function pEst(id){const c=PRATE[id];const t=P.s*(c.r[P.m]+(pn().inst?c.chA:0))+P.u*45;if(t<c.min)return[c.min,c.min];return[Math.round(t*.95/10)*10,Math.round(t*1.1/10)*10];}
+function pricerCards(){
+  $("pMats").innerHTML=PMAT.map(x=>`<button type="button" data-m="${x.id}" aria-pressed="${P.m===x.id}"><img src="${x.img}" alt="">${x.name}<small>${x.d}</small></button>`).join("");
+  $("pMnts").innerHTML=PMNT.map(x=>`<button type="button" data-n="${x.id}" aria-pressed="${P.n===x.id}">${x.name}<small>${x.d}</small></button>`).join("");
+  $("pColors").innerHTML=PCOL.map(([n,h],k)=>`<button type="button" data-c="${k}" aria-pressed="${P.c===k}">${h?`<i style="background:${h}"></i>`:""}${n}</button>`).join("");
+  $("pMats").querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>{P.m=b.dataset.m;pricerCards();pricer();});
+  $("pMnts").querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>{P.n=b.dataset.n;pricerCards();pricer();});
+  $("pColors").querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>{P.c=+b.dataset.c;pricerCards();pricer();});
+}
 function pricer(){
-  const parts=ps*(PMAT[pm].rate+PMNT[pn].add);
-  const ids=pi?[pi]:Object.keys(PRATE); const e=ids.map(pEst); const lo=Math.min(...e.map(x=>x[0])),hi=Math.max(...e.map(x=>x[1]));
-  const who=pi?I.find(x=>x.id===pi).name:null;
-  $("pParts").innerHTML=pmoney(parts)+`<small>${ps} ${PMAT[pm].name} stalls</small>`;
+  const per=pm().rate+pn().add+(P.priv?45:0)+(P.w==="60"?220:0);
+  const parts=P.s*per+P.u*(P.uh==='48"'?215:185);
+  const ids=P.inst?[P.inst]:Object.keys(PRATE); const e=ids.map(pEst);
+  const lo=Math.min(...e.map(x=>x[0])),hi=Math.max(...e.map(x=>x[1]));
+  const who=P.inst?I.find(x=>x.id===P.inst).name:null;
+  $("pList").innerHTML=[["Material",pm().name],["Bracing",pn().name],["Color",PCOL[P.c][0]],["Layout",PLAY[P.lay]],["Stalls",`${P.s} × ${P.w}" W × ${P.dep} D${P.priv?", extra privacy":""}`],["Urinal screens",P.u?`${P.u} × ${P.ud} D × ${P.uh} H`:"None"]].map(([a,b])=>`<dt>${a}</dt><dd>${b}</dd>`).join("");
+  $("pParts").textContent=pmoney(parts);
   $("pInst").innerHTML=`${prng(lo,hi)}<small>${who?"Rates: "+who:ids.length+" approved DFW installers"}</small>`;
   $("pTotal").innerHTML=`${prng(parts+lo,parts+hi)}<small>Before tax and delivery</small>`;
-  $("pChip").hidden=!pi; if(pi)$("pChipName").textContent="Installer: "+who;
-  $("pSub").textContent=`Partitions from Next Partitions, installed by ${who||"an approved DFW installer"}. Pick the basics; colors, layout and sizes come next.`;
-  $("pGo").href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#dfw."+(pi?pi+".":"")+pm+"."+pn+"."+ps;
-  $("pStalls").textContent=ps;
+  $("pColorName").textContent=P.c?"· "+PCOL[P.c][0]:"";
+  $("pChip").hidden=!P.inst; if(P.inst)$("pChipName").textContent="Installer: "+who;
+  $("pStalls").textContent=P.s; $("pUrinals").textContent=P.u;
+  const hm=P.m==="ss"?"":P.m, hn=P.n==="fc"?"":P.n;   // the configurator prototype doesn't model these two yet
+  $("pGo").href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs#"+["dfw",P.inst,hm,hn,Math.max(2,Math.min(20,P.s))].filter(Boolean).join(".");
 }
-function pricerPick(id){pi=id;pricer();}
-document.querySelectorAll(".pmats [data-m]").forEach(b=>b.addEventListener("click",()=>{pm=b.dataset.m;document.querySelectorAll(".pmats [data-m]").forEach(c=>c.setAttribute("aria-pressed",String(c===b)));pricer();}));
-document.querySelectorAll(".pseg [data-n]").forEach(b=>b.addEventListener("click",()=>{pn=b.dataset.n;document.querySelectorAll(".pseg [data-n]").forEach(c=>c.setAttribute("aria-pressed",String(c===b)));pricer();}));
-$("pMinus").addEventListener("click",()=>{ps=Math.max(2,ps-1);pricer();});
-$("pPlus").addEventListener("click",()=>{ps=Math.min(20,ps+1);pricer();});
-$("pChipClear").addEventListener("click",()=>{pi=null;pricer();});
-{const q=new URLSearchParams(location.search).get("installer");if(q&&PRATE[q])pi=q;}
-pricer();
+function pricerPick(id){P.inst=id;pricer();}
+$("pLayout").innerHTML=PLAY.map((l,k)=>`<option value="${k}">${l}</option>`).join("");
+$("pLayout").onchange=e=>{P.lay=+e.target.value;pricer();};
+$("pWidth").onchange=e=>{P.w=e.target.value;pricer();};
+$("pDepth").onchange=e=>{P.dep=e.target.value;pricer();};
+$("pPriv").onchange=e=>{P.priv=e.target.checked;pricer();};
+$("pUDepth").onchange=e=>{P.ud=e.target.value;pricer();};
+$("pUHeight").onchange=e=>{P.uh=e.target.value;pricer();};
+$("pMinus").onclick=()=>{P.s=Math.max(1,P.s-1);pricer();};
+$("pPlus").onclick=()=>{P.s=Math.min(8,P.s+1);pricer();};
+$("pUMinus").onclick=()=>{P.u=Math.max(0,P.u-1);pricer();};
+$("pUPlus").onclick=()=>{P.u=Math.min(12,P.u+1);pricer();};
+$("pChipClear").onclick=()=>{P.inst=null;pricer();};
+{const q=new URLSearchParams(location.search).get("installer");if(q&&PRATE[q])P.inst=q;}
+pricerCards();pricer();
 </script>
