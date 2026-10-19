@@ -14,6 +14,13 @@ function repo(): { db: DirectoryRepo; sample: boolean } {
 
 const slug = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/).max(60)
 
+export const getServiceArea = createServerFn({ method: 'GET' }).handler(async () => {
+  const { db, sample } = repo()
+  const areas = await db.allAreas()
+  const states = [...new Set(areas.map((a) => a.stateSlug))].map((slug) => ({ slug, areas: areas.filter((a) => a.stateSlug === slug) }))
+  return { states, sample }
+})
+
 export const getStateHub = createServerFn({ method: 'GET' })
   .validator((d: unknown) => z.object({ state: slug }).parse(d))
   .handler(async ({ data }) => {
@@ -24,7 +31,7 @@ export const getStateHub = createServerFn({ method: 'GET' })
       const list = await db.installersInArea(a.slug)
       return { slug: a.slug, installers: list.length, installs: list.reduce((n, i) => n + i.installs, 0) }
     }))
-    return { areas, counts, sample }
+    return { state: data.state, areas, counts, sample }
   })
 
 export const getAreaDirectory = createServerFn({ method: 'GET' })

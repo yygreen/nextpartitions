@@ -10,7 +10,9 @@ Built to drop into the live nextpartitions.com app. The live site is a Lovable p
 | `supabase/tests/` | A stand-in for Supabase's auth roles plus an automated test of the privacy rules | Done |
 | `supabase/migrations/20261019010000_directory_areas.sql` | Areas the directory covers (`published` stays false until 3+ installers are approved) | Done |
 | `app/src/directory/` | The portable module: types, data access (Supabase or sample), server functions, estimate maths, components | Done, type-checked, unit-tested |
-| `app/src/routes/` | Texas hub `/service-area/texas`, area page `/service-area/$area`, installer profile `/installers/$installer` | Done, server-rendered |
+| `app/src/routes/` | `/service-area/`, Texas hub `/service-area/texas`, area page `/service-area/$area` (with `?installer=` pre-selection), installer profile `/installers/$installer` | Done, server-rendered |
+| `app/src/directory/components/ConfigureStart.tsx` | "Price your restroom" step on area pages and profiles: material, mounting, stalls, removal → partitions price + installation estimate + total → hands off to the configurator with those choices | Done |
+| `app/scripts/build-preview.mjs` | Clickable static preview (all links work, hands off to the configurator prototype): `npm run preview:build` → `dist-preview/` | Done |
 | Installer portal (job inbox, pricing, messages, status) and admin screens | | Next |
 
 ## The rules the database enforces
@@ -32,6 +34,10 @@ npm run typecheck
 ```
 
 Set `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` (see `.env.example`) to read real data instead of the fictional sample installers.
+
+## For Marc: configurator hand-off
+
+"Continue to full quote" opens the live configurator with `?area=&installer=&material=&mounting=&stalls=&remove_old=1&src=`. The configurator should pre-fill from these and keep `area`/`installer` with the quote request. The partitions prices in `partitions.ts` are samples taken from the configurator prototype; on merge, use the configurator's own pricing.
 
 ## What goes where on merge
 

@@ -66,6 +66,7 @@ const REVIEWS: Review[] = [
 ]
 
 export const sampleRepo: DirectoryRepo = {
+  async allAreas() { return AREAS },
   async areasInState(stateSlug) { return AREAS.filter((a) => a.stateSlug === stateSlug) },
   async area(slug) { return AREAS.find((a) => a.slug === slug) ?? null },
   async installersInArea(areaSlug) { return INSTALLERS.filter((i) => i.areas.includes(areaSlug)) },

@@ -32,6 +32,9 @@ export function supabaseRepo(url: string, key: string): DirectoryRepo {
   }
 
   return {
+    async allAreas() {
+      return must(await db.from('dir_areas').select('*').order('state_slug').order('name')).map(toArea)
+    },
     async areasInState(stateSlug) {
       return must(await db.from('dir_areas').select('*').eq('state_slug', stateSlug).order('name')).map(toArea)
     },
