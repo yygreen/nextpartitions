@@ -1,4 +1,4 @@
-// Builds linked/: the five prototypes as one clickable site with relative links (no claude.ai hops).
+// Builds linked/: the prototypes as one clickable site with relative links (no claude.ai hops).
 // Run: node prototypes/build-linked.mjs
 import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
@@ -21,6 +21,7 @@ const pages = {
   'dfw.html': 'installers-dfw.html',
   'profile.html': 'installer-profile.html',
   'configurator.html': 'configurator-install.html',
+  'portal.html': 'installer-portal.html',
 }
 // Every artifact id the prototypes have used for each page, old and new.
 const ids = {

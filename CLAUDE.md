@@ -33,7 +33,7 @@ Working notes for the nextpartitions.com redesign and the installer directory. R
 
 ## Prototype pages (claude.ai artifacts)
 
-**Clickable prototype (all five pages linked, start here):** https://claude.ai/artifact/1EM6mvJkMTXTtfTNj5SrbQ — built by `node prototypes/build-linked.mjs` from the files in `prototypes/`. The prototypes are the approved design; the React build in `directory/app` must match them.
+**Clickable prototype (all pages linked, start here):** https://claude.ai/artifact/1EM6mvJkMTXTtfTNj5SrbQ — built by `node prototypes/build-linked.mjs` from the files in `prototypes/`. The prototypes are the approved design; the React build in `directory/app` must match them.
 
 Each page on its own link (built by `node prototypes/build-linked.mjs separate`; links in `prototypes/separate-urls.json`):
 
@@ -44,6 +44,7 @@ Each page on its own link (built by `node prototypes/build-linked.mjs separate`;
 | DFW installer area page | https://claude.ai/artifact/6dhxph55HK2cQ8L89RKUBc |
 | Installer profile template (`#acme`, `#northwind`, `#contoso`, `#fabrikam`) | https://claude.ai/artifact/Wh2UPd1KDJ78JDQmZsySrN |
 | Configurator installation step (`#dfw`, `#<installer>.<material>.<mounting>.<stalls>`) | https://claude.ai/artifact/VSxudbJ4rsvR5bcDyU2xSs |
+| Installer portal (`#np` = Next Partitions view, `#NP-DFW-1048` = a job) | https://claude.ai/artifact/32L7EWz37XztbenrBwUKBj |
 
 Older links (EAVGm8…, GTV4x…/LZqng…, JRhaX…/Emsk4…, Hp9kJ…, Gz25g…) are out of date; don't share them.
 

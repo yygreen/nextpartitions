@@ -13,7 +13,7 @@ Built to drop into the live nextpartitions.com app. The live site is a Lovable p
 | `app/src/routes/` | `/service-area/`, Texas hub `/service-area/texas`, area page `/service-area/$area` (with `?installer=` pre-selection), installer profile `/installers/$installer` | Done, server-rendered |
 | `app/src/directory/components/ConfigureStart.tsx` | "Price your restroom" step on area pages and profiles: material, mounting, stalls, removal → partitions price + installation estimate + total → hands off to the configurator with those choices | Done |
 | `app/scripts/build-preview.mjs` | Clickable static preview (all links work, hands off to the configurator prototype): `npm run preview:build` → `dist-preview/` | Done |
-| Installer portal (job inbox, pricing, messages, status) and admin screens | | Next |
+| Installer portal (job inbox, pricing, messages, status) and coordinator screens | Designed: `prototypes/installer-portal.html`. Build in the app | Next |
 
 ## The rules the database enforces
 
