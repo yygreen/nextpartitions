@@ -13,7 +13,7 @@ alter table dir_jobs
   add column lng double precision,
   add column po_accepted_at timestamptz,                 -- purchase order accepted: counts as paid for release
   add column preferred_installer_id uuid references dir_installers (id), -- customer came from this profile
-  add column others_ok boolean not null default true,    -- also get prices from other installers
+  add column others_ok boolean not null default false,   -- with a chosen installer: also ask others (off by default)
   add column rush boolean not null default false,        -- close the window as soon as 2 prices are in
   add column requires_background_check boolean not null default false, -- school and public jobs
   add column needed_by date,
@@ -183,8 +183,9 @@ language sql security definer set search_path = public as $$
 $$;
 
 -- ---------- routing ----------
--- Invites up to p_max installers. Round 1: hard filters, the preferred installer (customer came from
--- their profile), 2 quality slots, 1 rotation slot, a 50% share ceiling. Round 2 (widened): up to 75 mi.
+-- Invites up to p_max installers. Round 1: hard filters, then either the installer the customer picked
+-- (only them, unless others_ok) or 2 quality slots + 1 rotation slot, with a 50% share ceiling.
+-- Round 2 (widened, also when a picked installer declines or misses the deadline): up to 75 mi.
 create function dir_route_job(p_job uuid, p_round smallint default 1, p_max integer default 3) returns integer
 language plpgsql security definer set search_path = public as $$
 declare

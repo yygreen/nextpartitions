@@ -262,6 +262,24 @@ do $$ begin
     'reminder missing or sent twice';
 end $$;
 
+-- 13b. A customer who picked Fabrikam gets only Fabrikam (default). If Fabrikam declines, the next
+--      sweep widens the search to other installers (Northwind, 49 mi; Acme is at capacity, Contoso away).
+insert into dir_jobs (id, area_slug, city, zip, lat, lng, scope, delivery_window, preferred_installer_id) values
+ ('20000000-0000-0000-0000-000000000006', 'dallas-fort-worth', 'Plano', '75074', 33.02, -96.70,
+  '{"material":"hdpe","mounting":"overhead_braced","stalls":4}', daterange('2026-12-01', '2026-12-05'), '10000000-0000-0000-0000-00000000000d');
+select dir_route_job('20000000-0000-0000-0000-000000000006');
+do $$ begin
+  assert (select array_agg(i.slug) from dir_job_invites v join dir_installers i on i.id = v.installer_id
+          where v.job_id = '20000000-0000-0000-0000-000000000006') = '{fabrikam}', 'picked installer should be the only invite by default';
+end $$;
+update dir_job_invites set declined = true where job_id = '20000000-0000-0000-0000-000000000006';
+select dir_sweep_jobs();
+do $$ begin
+  assert (select array_agg(i.slug) from dir_job_invites v join dir_installers i on i.id = v.installer_id
+          where v.job_id = '20000000-0000-0000-0000-000000000006' and v.invited_by = 'widened') = '{northwind}',
+    'declined pick should widen to other installers';
+end $$;
+
 -- 14. The outbox: hidden from installers, claimable by the email/CRM worker only.
 select pg_temp.as_user('00000000-0000-0000-0000-0000000000a1');
 do $$ begin

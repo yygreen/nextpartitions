@@ -18,7 +18,7 @@ Installers are invited only when the customer has asked for the full quote (draw
 - 1 rotation slot: the qualifying installer with the fewest recent invites. Newly approved installers get this slot first, so they can earn the completed job the Approved label needs.
 - Ceiling: no installer gets more than about half of an area's jobs.
 
-**Customer arriving from an installer's profile:** that installer is always invited (if they pass the filters), plus up to 2 others for comparison. The customer can untick "also get prices from other installers".
+**Customer who picks a specific installer** (e.g. "Price with Acme" from a profile): only that installer is invited, so the customer gets their firm price and no list to choose from. Other installers are asked only if that installer declines or misses the deadline (the wider search in section 3), or if the customer asks for more prices.
 
 ## 2. When the search closes
 
