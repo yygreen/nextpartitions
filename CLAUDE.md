@@ -44,12 +44,12 @@ Each page on its own link (built by `node prototypes/build-linked.mjs separate`;
 | DFW installer area page | https://claude.ai/artifact/6dhxph55HK2cQ8L89RKUBc |
 | Installer profile template (`#acme`, `#northwind`, `#contoso`, `#fabrikam`) | https://claude.ai/artifact/Wh2UPd1KDJ78JDQmZsySrN |
 | Configurator installation step (`#dfw`, `#<installer>.<material>.<mounting>.<stalls>`) | https://claude.ai/artifact/VSxudbJ4rsvR5bcDyU2xSs |
-| Installer portal (`#np` = Next Partitions view, `#NP-DFW-1048` = a job) | https://claude.ai/artifact/32L7EWz37XztbenrBwUKBj |
-| Customer's quote: approve drawings, choose installer, pay for partitions (`#choose`) | https://claude.ai/artifact/YJ7mS6GqUSktyydDMy8BDq |
+| Installer portal (`#np` = Next Partitions view, `#NP-DFW-1048` = a job, `#NP-DFW-1052` = no installer prices yet) | https://claude.ai/artifact/32L7EWz37XztbenrBwUKBj |
+| Customer's quote: approve drawings, choose installer, pay for partitions (`#choose`; `#searching` = still lining up installers) | https://claude.ai/artifact/YJ7mS6GqUSktyydDMy8BDq |
 | Installer application (get listed) | https://claude.ai/artifact/RYzFiXDAUfUj1UbYaaf5N5 |
 | Installer vetting (internal, Approved checklist) | https://claude.ai/artifact/5m6eiBdee8mbWGpusQiEF5 |
 | Review form (`#used`, `#expired`) | https://claude.ai/artifact/KVKguYuwNK7AJkXXRseaM8 |
-| Email copy, 7 emails (`#email-1` … `#email-7`) | https://claude.ai/artifact/614jrzEpTZt1WMTuruh4BS |
+| Email copy, 10 emails (`#email-1` … `#email-10`; 8–10 = no installer prices) | https://claude.ai/artifact/614jrzEpTZt1WMTuruh4BS |
 
 Older links (EAVGm8…, GTV4x…/LZqng…, JRhaX…/Emsk4…, Hp9kJ…, Gz25g…) are out of date; don't share them.
 
@@ -58,6 +58,7 @@ All installers, rates, reviews and photos in the prototypes are fictional sample
 ## Research in this repo
 
 - `research/strategy-2026-02/`: the original February 2026 SEO and website strategy (report, keyword lists 1–4, blog and city-page calendars, technical checklist), with a status check of the live site and how it fits the directory work. **The live site follows its URL structure** (`/guides/`, `/service-area/[city]/`); new pages should too.
+- `docs/job-routing.md`: proposal for who gets invited to price a job (filters, 3 invites, rotation), when the price window closes, the fallback when nobody prices, avoiding site visits before the deal, and change orders.
 - `docs/onboarding-call-roadmap.md`: onboarding call agenda, what we need from Abe, day-30 success measures and the 30-day plan. The directory launches in month 2, once at least 3 installers are approved.
 
 - `research/installer-regulations.md`: who may install partitions, by state, city and building type. Includes the planned blog cluster and where each item appears on location pages.

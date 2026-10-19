@@ -81,6 +81,9 @@ dl.spec dt{color:var(--muted)}dl.spec dd{margin:0;font-weight:600}
 .ok{background:var(--good-soft);border:1px solid #b9dcc8;color:#14532d;padding:12px 14px;font-size:14px;margin:12px 0 0}
 
 /* installer options */
+.waitbox{background:#fff3c4;border:1px solid #f0d98a;padding:14px 16px;margin-bottom:12px;font-size:14px}
+.waitbox b{display:block;font-size:16px;margin-bottom:4px}
+.waitbox p{margin:4px 0 0}
 .opts{display:grid;gap:10px}
 .opt{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;align-items:center;border:1px solid var(--border);padding:14px 16px;background:var(--surface)}
 .opt[aria-checked="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
@@ -249,11 +252,16 @@ const OPTS=[
   {id:"northwind",name:"Northwind Washroom Pros",price:1180,rating:4.8,jobs:19,city:"Fort Worth",reply:"Replies in ~8 h",inc:"Includes removal and haul-away of 6 old stalls · 2-day install"},
   {id:"contoso",name:"Contoso Specialty Contractors",price:null,rating:4.7,jobs:11,city:"Arlington",reply:"",inc:""},
   {id:"own",name:"I'll arrange my own installer",price:0,own:true,inc:"We include the install packet: layout, hardware list and install guide."}];
-const S={step:1,inst:null,pay:"po"};
+const S={step:1,inst:null,pay:"po",searching:location.hash==="#searching"};
+// #searching: no installer has priced yet, so the customer gets choices instead of a list of prices
+const LATER={id:"later",name:"Partitions only for now",price:0,later:true,inc:"Your partitions ship as planned. When installer prices come in, we email you and you can still choose one."};
 const STEPS=["Review drawings","Choose installation","Pay for partitions","Done"];
 
 function opts(){
-  $("opts").innerHTML=OPTS.map(o=>{
+  const list=S.searching?[LATER,OPTS[3]]:OPTS;
+  if(S.searching)document.querySelector("#s2 .sub").textContent="Approved installers price your job after seeing your drawings. Installation is quoted and billed by the installer. Next Partitions adds no markup and coordinates delivery and install dates.";
+  $("opts").innerHTML=(S.searching?`<div class="waitbox"><b>We're still lining up installers near your job site</b><p>The installers we asked first are booked for your dates, so we've widened the search. Expect firm prices by Thursday, Oct 23. You don't need to do anything: we'll email you as soon as they're in.</p><p>If you'd rather not wait, choose one of these. You can still add an approved installer later.</p></div>`:"")+list.map(o=>{
+    if(o.later) return `<div class="opt" role="radio" aria-checked="${S.inst==="later"}"><div><div class="nm">${o.name}</div><div class="inc">${o.inc}</div></div><div class="pr"><b>—</b><small>Add installation later</small></div><div class="act"><button class="btn" type="button" data-pick="later">Continue with partitions</button></div></div>`;
     if(o.own) return `<div class="opt" role="radio" aria-checked="${S.inst==="own"}"><div><div class="nm">${o.name}</div><div class="inc">${o.inc}</div></div><div class="pr"><b>—</b><small>Arranged by you</small></div><div class="act"><button class="btn ghost" type="button" data-pick="own">Choose own installer</button></div></div>`;
     if(o.price===null) return `<div class="opt pending" role="radio" aria-checked="false" aria-disabled="true"><div><div class="nm">${o.name}</div><div class="meta"><span class="stars" aria-hidden="true">★★★★★</span> ${o.rating} · ${o.jobs} installs for our customers · ${o.city}</div></div><div class="pr"><b style="font-size:16px">Price coming by Tue</b><small>We'll email you when it's in</small></div><div class="act"><a class="link" href="profile.html#${o.id}">View profile</a></div></div>`;
     const first=o.name.split(" ")[0];
@@ -262,7 +270,7 @@ function opts(){
       <div class="act"><button class="btn" type="button" data-pick="${o.id}">${S.inst===o.id?"✓ Chosen":"Choose "+first}</button><a class="link" href="profile.html#${o.id}">View profile</a></div></div>`;}).join("");
   $("opts").querySelectorAll("[data-pick]").forEach(b=>b.onclick=()=>{S.inst=b.dataset.pick;go(3);});
 }
-function pick(){return OPTS.find(o=>o.id===S.inst);}
+function pick(){return S.inst==="later"?LATER:OPTS.find(o=>o.id===S.inst);}
 
 function render(){
   $("steps").innerHTML=STEPS.map((t,k)=>`<li class="${k+1<S.step?"done":k+1===S.step?"now":""}">${t}</li>`).join("");
@@ -270,17 +278,18 @@ function render(){
   $("s1Body").hidden=S.step>1; $("s1Done").hidden=S.step<=1;
   $("opts").closest(".card").querySelector(".opts").style.display=S.step===2?"":"none";
   $("s2Done").hidden=S.step<=2; const o=pick();
-  if(o)$("s2Done").textContent=o.own?"✓ You'll arrange your own installer":`✓ ${o.name}, ${money(o.price)}`;
+  if(o)$("s2Done").textContent=o.later?"✓ Partitions only for now; we'll email installer prices when they're in":o.own?"✓ You'll arrange your own installer":`✓ ${o.name}, ${money(o.price)}`;
   $("s3Body").hidden=S.step!==3;
   $("s4").hidden=S.step!==4;
   $("dueLbl").textContent=S.step===4?(S.pay==="po"?"Purchase order sent":S.pay==="ach"?"Awaiting bank transfer":"Paid to Next Partitions"):"Due now to Next Partitions";
   // installation always stays a separate line: it's paid to the installer, not to us
   if(!o){$("instLbl").textContent="Installation";$("instAmt").innerHTML="Not chosen yet";}
   else if(o.own){$("instLbl").textContent="Installation";$("instAmt").innerHTML="Your own installer";}
+  else if(o.later){$("instLbl").textContent="Installation";$("instAmt").innerHTML="Add later";}
   else{$("instLbl").innerHTML=`Installation, ${o.name}<small>Paid to ${o.name.split(" ")[0]} after installation, invoiced by them</small>`;$("instAmt").textContent=money(o.price);}
-  $("instPayNote").textContent=!o||o.own?"":`Installation (${money(o.price)}) isn't included: you pay ${o.name.split(" ")[0]} after installation, invoiced by them.`;
-  if(S.step===4){const nm=o.own?null:o.name;
-    $("doneLead").textContent=nm?`${nm.split(" ")[0]} now has your contact details and site address to schedule the install. Delivery Nov 9–13. Dana will confirm the install date.`:"We've emailed the install packet to pat.lee@example.org. Delivery Nov 9–13. Dana will confirm the delivery date.";
+  $("instPayNote").textContent=!o||o.own||o.later?"":`Installation (${money(o.price)}) isn't included: you pay ${o.name.split(" ")[0]} after installation, invoiced by them.`;
+  if(S.step===4){const nm=o.own||o.later?null:o.name;
+    $("doneLead").textContent=o.later?"Your partitions are ordered. Delivery Nov 9–13. We'll email you installer prices as soon as they're in, and you can choose one then.":nm?`${nm.split(" ")[0]} now has your contact details and site address to schedule the install. Delivery Nov 9–13. Dana will confirm the install date.`:"We've emailed the install packet to pat.lee@example.org. Delivery Nov 9–13. Dana will confirm the delivery date.";
     $("timeline").innerHTML=[["d","Partitions ordered","Order confirmation sent to pat.lee@example.org"],["","Production and shipping","We email tracking when your order ships"],["","Delivery to the job site","Nov 9–13, 2026, liftgate delivery"],...(nm?[["","Installation by "+nm.split(" ")[0],"Install date confirmed with you and Dana; usually the week after delivery"],["","Review","We ask how the install went"]]:[])]
       .map(([c,t,s],k)=>`<li class="${c}"><i>${c?"✓":k+1}</i><span><b>${t}</b><small>${s}</small></span></li>`).join("");}
   opts();
@@ -295,7 +304,7 @@ document.querySelectorAll("[data-pay]").forEach(b=>b.onclick=()=>{S.pay=b.datase
   $("payPo").hidden=S.pay!=="po";$("payCard").hidden=S.pay!=="card";$("payAch").hidden=S.pay!=="ach";
   $("payGo").textContent=S.pay==="ach"?"Email me the bank details":S.pay==="po"?"Send purchase order":"Pay $5,655 for your partitions";});
 $("payGo").onclick=()=>{if(S.pay==="po"&&!$("poNum").value.trim()){$("payErr").hidden=false;$("payErr").textContent="Enter your PO number.";$("poNum").focus();return;}$("payErr").hidden=true;go(4);};
-if(location.hash==="#choose"){$("approve").checked=true;go(2,true);requestAnimationFrame(()=>$("h2").scrollIntoView());}
+if(location.hash==="#choose"||S.searching){$("approve").checked=true;go(2,true);requestAnimationFrame(()=>$("h2").scrollIntoView());}
 else render();
 $("payGo").textContent="Send purchase order";
 </script>

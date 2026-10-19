@@ -46,6 +46,7 @@ main{padding-block:24px 60px}
 .list small{display:block;font-size:12px;color:var(--muted)}
 .list .who{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border:1px solid var(--border);background:var(--band);margin-top:4px}
 .list .who.inst{background:#eef2f7;border-color:#cdd7e4}
+.list .who.np{background:#fff3c4;border-color:#f0d98a}
 .meta{background:var(--surface);border:1px solid var(--border);padding:14px 16px;margin-bottom:12px;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:14px}
 .meta dt{color:var(--muted)}
 .meta dd{margin:0;font-weight:600;min-width:0;overflow-wrap:anywhere}
@@ -168,6 +169,33 @@ const E=[
    ["p","It takes a minute. Only customers with a completed job on a Next Partitions order can review, and reviews are published unedited, good or bad."],
    ["p","If something isn't right, reply to this email or call 1-833-997-7489 and we'll help."],["p","Thanks for ordering with us,<br>Next Partitions"]],
   foot:FOOT_CUST+" This review link is for you only and works once."},
+ {id:8,who:"np",name:"Alert: no installer prices",to:"Dana Ruiz <dana@nextpartitions.com>",from:"Next Partitions jobs <jobs@nextpartitions.com>",
+  trigger:"Automatically when a job has no firm price by its deadline, every invited installer declines, or no approved installer covers the site. The search widens once to 75 mi at the same time.",
+  subject:"No installer prices: NP-DFW-1052, Granbury (search widened)",pre:"Northwind declined. Acme and Contoso invited from the wider search, due Thu 10 AM.",
+  body:[["p","Job NP-DFW-1052 has no firm installation price."],
+   ["kv",[["Job","4 phenolic stalls + 2 urinal screens, Granbury, TX 76048"],["Customer needs it by","Nov 26 (opens Dec 1)"],["First round","Northwind invited; declined (fully booked Nov 3–21)"],["Wider search, 75 mi","Acme (65 mi) and Contoso (45 mi) invited, with travel from their rates; due Thu 10 AM"],["Customer","Emailed: still lining up your installer"]]],
+   ["btn","Open the job","portal.html#NP-DFW-1052"],
+   ["ul",["Invite another installer by hand if you know one who's free.","If nobody prices by Thursday, call the customer: partitions only now and install later, or their own installer."]]],
+  foot:"Internal alert. Sent to the DFW job coordinator."},
+ {id:9,who:"inst",name:"Wider-area job request",to:"Contoso Specialty Contractors <office@contoso.example>",from:NP,
+  trigger:"When the search widens because nobody in range priced, or Dana invites an installer by hand.",
+  subject:"Can you take this one? 4 phenolic stalls in Granbury (reply by Thu 10 AM)",pre:"Outside your usual area. Your rates give $1,010 including $150 travel.",
+  body:[["p","Hi Contoso team,"],["p","The installers who cover Granbury are booked, so we're asking a few more. This job is 45 mi from your base, outside the 40 mi you cover."],
+   ["kv",[["Job","NP-DFW-1052"],["Location","Granbury, TX 76048"],["Building","Brewery taproom"],["Partitions","4 phenolic stalls incl. 1 ADA, floor mounted; 2 urinal screens"],["Delivery","Nov 12–18, 2026; install by Nov 26"],["Estimate from your rates","$1,010, including $150 travel"]]],
+   ["btn","Price this job","portal.html"],
+   ["p","Please reply by Thu 10:00 AM. If you can't take it, declining is fine and doesn't count against you for jobs outside your area."],
+   ["note","Customer name, contact details and site address are shared once the customer chooses you and pays for their partitions order."],["p","Dana Ruiz, Next Partitions"]],
+  foot:FOOT_INST},
+ {id:10,who:"cust",name:"Still lining up your installer",to:"Riley Brooks <riley@example.com>",from:NP,
+  trigger:"When the first installer deadline passes with no firm price (at the same time as the wider search).",
+  subject:"Your installation prices are taking a little longer",pre:"Your partitions quote is ready. Installer prices by Thursday, or go ahead without waiting.",
+  body:[["p","Hi Riley,"],["p","Your shop drawings and partitions quote are ready. The installers we asked first are booked for your dates, so we've asked more installers in the wider Granbury area. Expect firm installation prices by Thursday, Oct 23."],
+   ["p","You have three options:"],
+   ["ol",["Wait: no need to do anything. We'll email you as soon as prices are in.","Go ahead with partitions only: your partitions ship as planned and you can add an installer when prices come in.","Use your own installer: we include the install packet with layout, hardware list and install guide."]],
+   ["btn","See your options","quote.html#searching"],
+   ["p","You need everything installed by Nov 26, and we're planning around that date. If it changes, reply here."],
+   ["note",DISC],["p","Dana Ruiz, Next Partitions<br>1-833-997-7489"]],
+  foot:FOOT_CUST},
 ];
 let cur=E[0], fmt="html";
 
@@ -185,7 +213,7 @@ const text=e=>[`Subject: ${e.subject}`,`Preheader: ${e.pre}`,""].concat(e.body.m
   return b[1].map((x,k)=>(b[0]==="ol"?`${k+1}. `:"- ")+x).join("\n");})).concat(["","--",e.foot,ADDR]).join("\n\n").replace(/\n\n\n+/g,"\n\n");
 
 function render(){
-  $("list").innerHTML=E.map((e,k)=>`<button type="button" data-e="${e.id}" aria-current="${e===cur}"><b>${k+1}. ${esc(e.name)}</b><small>${esc(e.subject)}</small><span class="who ${e.who==="inst"?"inst":""}">To ${e.who==="inst"?"installer":"customer"}</span></button>`).join("");
+  $("list").innerHTML=E.map((e,k)=>`<button type="button" data-e="${e.id}" aria-current="${e===cur}"><b>${k+1}. ${esc(e.name)}</b><small>${esc(e.subject)}</small><span class="who ${e.who}">${e.who==="inst"?"To installer":e.who==="np"?"Internal":"To customer"}</span></button>`).join("");
   $("list").querySelectorAll("[data-e]").forEach(b=>b.onclick=()=>{cur=E.find(e=>e.id===+b.dataset.e);history.replaceState(null,"","#email-"+cur.id);render();if(innerWidth<1025)$("meta").scrollIntoView({behavior:"smooth"});});
   $("meta").innerHTML=`<dt>To</dt><dd>${esc(cur.to)}</dd><dt>From</dt><dd>${esc(cur.from)}</dd><dt>Sent when</dt><dd>${esc(cur.trigger)}</dd>`;
   document.querySelectorAll("[data-fmt]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.fmt===fmt)));

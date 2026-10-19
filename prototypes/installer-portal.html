@@ -138,6 +138,10 @@ dl.kv dd{margin:0;font-weight:600}
 .ctable th{text-align:left;font-size:12px;color:var(--muted);font-weight:600;padding:8px 10px 8px 0;border-bottom:1px solid var(--border)}
 .ctable td{padding:10px 10px 10px 0;border-bottom:1px solid var(--border)}
 .ctable td.num{text-align:right;font-variant-numeric:tabular-nums}
+.flog{margin:0 0 12px;padding-left:18px;display:grid;gap:6px;font-size:14px}
+.flog b{font-weight:700;margin-right:4px}
+.fbadd{display:inline-flex;gap:6px;align-items:center;flex-wrap:wrap}
+.fbadd select{font:inherit;min-height:44px;border:1px solid var(--border);padding:0 8px;background:#fff;max-width:100%}
 .custview{background:var(--band);border:1px solid var(--border);padding:16px;margin-top:14px}
 .custview h4{margin:0 0 4px;font-size:15px}
 .copt{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#fff;border:1px solid var(--border);padding:10px 12px;margin-top:8px;font-size:14px}
@@ -237,8 +241,8 @@ const money=n=>"$"+Math.round(n).toLocaleString("en-US");
 const RATE={mat:{pc:115,hdpe:140,lam:120,phen:160,ss:175},ch:45,ada:40,urinal:45,removal:25,min:700,free:60,perMi:2};
 const MATN={pc:"Powder coated",hdpe:"Solid plastic (HDPE)",lam:"Plastic laminate",phen:"Phenolic",ss:"Stainless steel"};
 const STEPS=["Request","Priced","Chosen","Released","Scheduled","Installed"];
-const ST={new:0,priced:1,chosen:2,released:3,scheduled:4,installed:5,lost:1};
-const LABEL={new:["New request","new"],priced:["Priced · waiting for customer","wait"],chosen:["Chosen · waiting for payment","wait"],released:["Released · schedule it","go"],scheduled:["Scheduled","go"],installed:["Installed","off"],lost:["Customer chose another installer","off"]};
+const ST={searching:0,new:0,priced:1,chosen:2,released:3,scheduled:4,installed:5,lost:1};
+const LABEL={searching:["No installer prices yet","wait"],new:["New request","new"],priced:["Priced · waiting for customer","wait"],chosen:["Chosen · waiting for payment","wait"],released:["Released · schedule it","go"],scheduled:["Scheduled","go"],installed:["Installed","off"],lost:["Customer chose another installer","off"]};
 
 const JOBS=[
  {id:"NP-DFW-1048",city:"Plano",zip:"75074",bldg:"School (elementary)",mat:"hdpe",mount:"Overhead braced",ch:false,color:"Sage 2141",layout:"Between walls",stalls:6,ada:true,w:'36"',d:'60"',priv:true,urinals:2,removal:6,
@@ -263,6 +267,13 @@ const JOBS=[
   cust:{name:"Alex Chen",org:"Noodle Bar Richardson",phone:"(972) 555-0177",email:"alex@example.com",site:"9 Example Blvd, Richardson, TX 75080",contact:"Alex"},
   msgs:[],others:[]},
 ];
+JOBS.push({id:"NP-DFW-1052",npOnly:true,city:"Granbury",zip:"76048",bldg:"Brewery taproom",mat:"phen",mount:"Floor mounted",ch:false,color:"Black 2127",layout:"Corner left",stalls:4,ada:true,w:'36"',d:'60"',priv:true,urinals:2,removal:0,
+  delivery:"Nov 12–18, 2026",deliveryDate:"2026-11-15",miles:65,status:"searching",sent:"Oct 17",due:"",notes:"Opening Dec 1. Concrete floor finished; walls tiled.",round:1,
+  cust:{name:"Riley Brooks",org:"Brazos Bend Brewing",phone:"(817) 555-0161",email:"riley@example.com",site:"300 Example Ln, Granbury, TX 76048",contact:"Riley"},
+  log:[["Oct 17, 9:00 AM","Drawings ready. 1 approved installer covers Granbury: Northwind (Fort Worth, 38 mi). Invited, due Oct 21, 10 AM."],
+       ["Oct 17, 2:10 PM","Northwind declined: fully booked Nov 3–21."],
+       ["Oct 17","Not invited: Acme (65 mi, covers 60), Contoso (45 mi, covers 40), Fabrikam (78 mi, covers 45)."]],
+  invites:[],msgs:[["np","Dana · Next Partitions","Internal note: customer opens Dec 1, so installation must be done by Nov 26."]],others:[]});
 let cur=JOBS[0].id, view="inst";
 const job=()=>JOBS.find(j=>j.id===cur);
 
@@ -280,9 +291,11 @@ function estimate(j){
 const sum=ls=>ls.reduce((a,l)=>a+(+l[1]||0),0);
 
 function inbox(){
-  const n=JOBS.filter(j=>j.status==="new").length; $("newCount").textContent=n; $("newCount").hidden=!n;
-  $("inboxSub").textContent=`${JOBS.length} jobs`;
-  $("inbox").innerHTML=JOBS.map(j=>{const [l,c]=LABEL[j.status];return `<button type="button" class="jrow" data-j="${j.id}" aria-current="${j.id===cur}">
+  const list=JOBS.filter(j=>view==="np"||!j.npOnly);
+  const n=list.filter(j=>j.status==="new"||j.status==="searching").length; $("newCount").textContent=n; $("newCount").hidden=!n;
+  $("inboxSub").textContent=`${list.length} jobs`;
+  if(view!=="np"&&job().npOnly)cur=list[0].id;
+  $("inbox").innerHTML=list.map(j=>{const [l,c]=LABEL[j.status];return `<button type="button" class="jrow" data-j="${j.id}" aria-current="${j.id===cur}">
     <span class="t"><b>${esc(j.city)} · ${j.stalls} stalls</b><span class="ref">${j.id}</span></span>
     <p>${MATN[j.mat]} · ${esc(j.bldg)}</p><span class="pill ${c}">${l}</span>${j.status==="new"?`<span class="due">Reply by ${j.due}</span>`:""}</button>`}).join("");
   $("inbox").querySelectorAll("[data-j]").forEach(b=>b.onclick=()=>{cur=b.dataset.j;render();if(innerWidth<1025)$("detail").scrollIntoView({behavior:"smooth"});});
@@ -350,6 +363,35 @@ function messages(j){
 }
 
 // what Next Partitions sees for the same job: every invited installer's reply, then the options the customer gets
+// nobody priced: what happened, the automatic rule, and what Dana can do
+const POOL=[["acme","Acme Partition Installs","Dallas",65,"covers 60 mi; travel $2/mi beyond",10],["contoso","Contoso Specialty Contractors","Arlington",45,"covers 40 mi; travel $150 flat beyond",150],["fabrikam","Fabrikam Facility Services","Denton",78,"covers 45 mi; travel $2.50/mi beyond",83]];
+function fallback(j){
+  const inv=j.invites, priced=inv.filter(i=>i.price);
+  const widened=j.round>1;
+  return `<div class="card act"><h3>${priced.length?`${priced.length} firm price${priced.length>1?"s":""} in`:"No installer prices yet"}</h3>
+    <ol class="flog">${j.log.map(([t,x])=>`<li><b>${t}</b> ${esc(x)}</li>`).join("")}</ol>
+    <p class="vs">Automatic rule: if no firm price is in by the deadline (or everyone declines, or nobody covers the site), the search widens once to 75 mi, with travel fees from each installer's rates. Dana is alerted, and the customer gets the “still lining up your installer” email.</p>
+    ${inv.length?`<table class="ctable"><thead><tr><th>Installer</th><th>Distance</th><th>Status</th><th style="text-align:right">Firm price</th></tr></thead><tbody>${inv.map(i=>`<tr><td>${esc(i.name)}</td><td>${i.mi} mi</td><td>${esc(i.st)}</td><td class="num">${i.price?money(i.price):"—"}</td></tr>`).join("")}</tbody></table>`:""}
+    ${priced.length?`<div class="custview"><h4>What the customer sees</h4>${priced.map(i=>`<div class="copt"><span>${esc(i.name)}<br><small style="color:var(--muted)">Installation incl. travel, quoted by the installer · earliest install ${i.date}</small></span><b>${money(i.price)}</b></div>`).join("")}
+      <div class="btns" style="margin-top:12px"><a class="btn sm" href="quote.html#choose">Send options to the customer</a></div></div>`:`
+    <div class="btns" style="margin-top:12px">
+      ${widened?"":`<button class="btn" type="button" id="fbWiden">Widen to 75 mi now</button>`}
+      <span class="fbadd"><select id="fbPick" aria-label="Installer to invite">${POOL.filter(p=>!inv.some(i=>i.id===p[0])).map(p=>`<option value="${p[0]}">${p[1]} · ${p[3]} mi</option>`).join("")}</select><button class="btn quiet" type="button" id="fbAdd">Invite by hand</button></span>
+    </div>
+    <div class="btns"><button class="btn quiet sm" type="button" id="fbMail">Email the customer</button><a class="link" href="quote.html#searching">Customer's options page</a><span class="note" id="fbMailed" style="margin:0"></span></div>
+    ${inv.length?`<div class="demo">Demo: <button type="button" id="fbReply">Contoso replies with a price</button><button type="button" id="fbNone">Nobody replies again</button></div>`:""}`}
+  </div>`;
+}
+function invite(j,id,how){const p=POOL.find(x=>x[0]===id); if(!p||j.invites.some(i=>i.id===id))return;
+  j.invites.push({id,name:p[1],mi:p[3],st:`Invited ${how}, due Thu 10 AM`});
+  j.log.push(["Today",`${p[1]} invited ${how} (${p[3]} mi, ${p[4]}).`]);}
+function wireFallback(j){
+  if($("fbWiden"))$("fbWiden").onclick=()=>{j.round=2;invite(j,"contoso","in the wider search");invite(j,"acme","in the wider search");render();};
+  if($("fbAdd"))$("fbAdd").onclick=()=>{invite(j,$("fbPick").value,"by Dana");render();};
+  if($("fbMail"))$("fbMail").onclick=()=>{$("fbMailed").innerHTML='Sent: <a class="link" href="emails.html#email-10">“We’re still lining up your installer”</a>';j.log.push(["Today","Customer emailed: still lining up an installer, options offered."]);};
+  if($("fbReply"))$("fbReply").onclick=()=>{const c=j.invites.find(i=>i.id==="contoso")||j.invites[0];c.price=c.id==="contoso"?1010:1090;c.st="Replied in 5 h";c.date="Nov 19";j.log.push(["Today",`${c.name} priced ${money(c.price)}, earliest install Nov 19.`]);render();};
+  if($("fbNone"))$("fbNone").onclick=()=>{j.invites.forEach(i=>i.st="No reply by deadline");j.log.push(["Thu 10 AM","No prices after the wider search. Dana calls the customer: partitions only now and install later, or their own installer (install packet included)."]);render();};
+}
 function coordinator(j){
   const mine=j.status==="new"?null:j.price;
   const rows=[["Acme Partition Installs",j.status==="new"?"Not replied yet":"Replied in 6 h",mine,sum(estimate(j))],...j.others.map(o=>[o[0],o[1],o[2],null])];
@@ -371,8 +413,8 @@ function render(){
   const [l,c]=LABEL[j.status];
   $("detail").innerHTML=`<div class="card"><div class="jhead"><div><h2>${esc(j.city)}, TX ${j.zip} · ${j.stalls} stalls</h2><p class="sub">${j.id} · ${esc(j.bldg)} · requested ${j.sent}</p></div><span class="pill ${c}">${l}</span></div>
     <ol class="steps">${STEPS.map((t,k)=>`<li class="${k<s||(k===s&&j.status==="installed")?"done":k===s?"now":""}">${t}</li>`).join("")}</ol></div>
-    ${view==="np"?coordinator(j):action(j)}${packet(j)}${customer(j)}${messages(j)}`;
-  wire(j);
+    ${view==="np"?(j.npOnly?fallback(j):coordinator(j)):action(j)}${packet(j)}${customer(j)}${messages(j)}`;
+  wire(j); if(view==="np"&&j.npOnly)wireFallback(j);
 }
 
 function wire(j){
@@ -424,7 +466,7 @@ document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>{view=b.datase
   $("whoAv").textContent=view==="np"?"DR":"AP";
   document.querySelectorAll('[data-tab]:not([data-tab="jobs"])').forEach(t=>t.hidden=view==="np");
   document.querySelector('[data-tab="jobs"]').click(); render();});
-{const h=location.hash.slice(1); if(JOBS.some(j=>j.id===h))cur=h; if(location.hash==="#np")document.querySelector('[data-view="np"]').click();}
+{const h=location.hash.slice(1), hj=JOBS.find(j=>j.id===h); if(hj)cur=h; if(h==="np"||(hj&&hj.npOnly))document.querySelector('[data-view="np"]').click();}
 rates(); render();
 </script>
 </body>
