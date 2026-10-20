@@ -220,7 +220,6 @@ function Start() {
           <li>When the job coordinator role moves from us to your team, and who takes it over.</li>
           <li>OK on the labels: Verified when listed, Approved after the first completed job.</li>
           <li>How customers pay for partitions: for now they choose PO, a card payment link or bank transfer and the job coordinator follows up. Paying by card on the quote page itself needs the site's payment provider (a question for Marc).</li>
-          <li>Pilot area: Dallas–Fort Worth, unless your orders point elsewhere.</li>
           <li>Trade pricing for installers on partitions (or a rebate per referred order): the main reason they keep buying from you rather than going around you.</li>
           <li>Whether an accepted purchase order releases the customer's details for every buyer, or only schools and public agencies.</li>
           <li>Marc keeping the area and chosen installer on each quote request, so a customer who wants installation is never missed.</li>
