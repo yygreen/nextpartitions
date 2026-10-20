@@ -7,6 +7,7 @@ import { setLinkMode } from '../directory/links'
 import { SiteChrome } from '../shell/SiteChrome'
 import { sampleRepo as db } from '../directory/repo.sample'
 import { AreaView, InstallerView, ServiceAreaView, StateHubView } from '../directory/views'
+import { PortalApp } from '../portal/components/PortalApp'
 
 setLinkMode('static')
 
@@ -38,7 +39,11 @@ async function page(): Promise<{ title: string; view: ReactNode }> {
   return { title: 'Bathroom Partition Installers in Texas', view: <StateHubView state="texas" areas={areas} counts={counts} sample /> }
 }
 
-page().then(({ title, view }) => {
+// The portal has its own header and runs on the in-memory sample (no Supabase keys in the preview build).
+if (document.body.dataset.page === 'portal') {
+  document.title = 'Installer portal'
+  createRoot(document.getElementById('root')!).render(<PortalApp />)
+} else page().then(({ title, view }) => {
   document.title = title
   createRoot(document.getElementById('root')!).render(
     <>

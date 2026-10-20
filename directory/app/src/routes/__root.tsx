@@ -1,6 +1,6 @@
 /// <reference types="vite/client" />
 import type { ReactNode } from 'react'
-import { createRootRoute, HeadContent, Outlet, Scripts } from '@tanstack/react-router'
+import { createRootRoute, HeadContent, Outlet, Scripts, useRouterState } from '@tanstack/react-router'
 import css from '../styles.css?url'
 import { SiteChrome } from '../shell/SiteChrome'
 
@@ -16,10 +16,16 @@ export const Route = createRootRoute({
   }),
   component: () => (
     <Document>
-      <SiteChrome><Outlet /></SiteChrome>
+      <Chrome><Outlet /></Chrome>
     </Document>
   ),
 })
+
+// The portal is a login-only tool with its own header, so it skips the public site's header and footer.
+function Chrome({ children }: { children: ReactNode }) {
+  const portal = useRouterState({ select: (s) => s.location.pathname.startsWith('/portal') })
+  return portal ? <>{children}</> : <SiteChrome>{children}</SiteChrome>
+}
 
 function Document({ children }: { children: ReactNode }) {
   return (

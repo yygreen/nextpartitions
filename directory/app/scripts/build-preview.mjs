@@ -12,6 +12,7 @@ const pages = [
   ['area-dallas.html', 'area', 'dallas'], ['area-houston.html', 'area', 'houston'], ['area-san-antonio.html', 'area', 'san-antonio'],
   ['installer-acme.html', 'installer', 'acme'], ['installer-northwind.html', 'installer', 'northwind'],
   ['installer-contoso.html', 'installer', 'contoso'], ['installer-gulfline.html', 'installer', 'gulfline'],
+  ['portal.html', 'portal', ''],
 ]
 for (const [file, page, slug] of pages) {
   writeFileSync(`${out}/${file}`, shell.replace('<body class="pb-20 sm:pb-0">', `<body class="pb-20 sm:pb-0" data-page="${page}" data-slug="${slug}">`))
