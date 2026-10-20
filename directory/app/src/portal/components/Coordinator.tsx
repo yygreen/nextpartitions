@@ -6,7 +6,7 @@ import { portal } from '../client'
 import { coordinatorLabel, dollarsToCents, formatDay, formatDelivery, formatWhen } from '../stage'
 import { CHECK_LABEL, type Invite, type InstallerSummary, type Job, type NewJob } from '../types'
 import { Thread } from './Thread'
-import { Badge, Button, Card, Field, INPUT, Notice, TEXTAREA, Tabs, useAction, useLoad } from './ui'
+import { Badge, Button, Card, Field, INPUT, Notice, TEXTAREA, Tabs, useAction, useLoad, openFile } from './ui'
 import { VettingView } from './Vetting'
 
 // The job coordinator's side: jobs needing attention first, then everything in progress. Until the site's
@@ -242,7 +242,7 @@ function Drawings({ job, reload }: { job: Job; reload: () => void }) {
   return (
     <div className="grid gap-2 border-t border-border pt-3 text-sm">
       <b>Shop drawings</b>
-      {job.drawingsPath && <Button variant="outline" busy={act.busy} onClick={() => act.run(async () => window.open(await portal().fileUrl('dir-drawings', job.drawingsPath!), '_blank', 'noopener'))}>Open</Button>}
+      {job.drawingsPath && <Button variant="outline" busy={act.busy} onClick={() => act.run(async () => openFile(await portal().fileUrl('dir-drawings', job.drawingsPath!)))}>Open</Button>}
       <label className="grid gap-1">{job.drawingsPath ? 'Replace' : 'Upload'} (PDF or image, up to 25 MB; invited installers can open them)
         <input type="file" accept="application/pdf,image/jpeg,image/png" className="font-normal" onChange={async (e) => {
           const f = e.target.files?.[0]
@@ -256,7 +256,7 @@ function Drawings({ job, reload }: { job: Job; reload: () => void }) {
 
 function PhotoLink({ path, n }: { path: string; n: number }) {
   const act = useAction()
-  return <> · <button type="button" className="underline" onClick={() => act.run(async () => window.open(await portal().fileUrl('dir-job-photos', path), '_blank', 'noopener'))}>photo {n}</button></>
+  return <> · <button type="button" className="underline" onClick={() => act.run(async () => openFile(await portal().fileUrl('dir-job-photos', path)))}>photo {n}</button></>
 }
 
 // ---------- new job ----------
@@ -393,7 +393,7 @@ function UploadReview({ u, installer, reload }: { u: Awaited<ReturnType<ReturnTy
   return (
     <Card>
       <div className="flex flex-wrap justify-between gap-2"><b>{installer} · {CHECK_LABEL[u.checkType]}</b><span className="text-sm text-muted-foreground">Sent {formatWhen(u.uploadedAt)}</span></div>
-      <div><Button variant="outline" busy={act.busy} onClick={() => act.run(async () => window.open(await portal().fileUrl('dir-documents', u.path), '_blank', 'noopener'))}>Open document</Button></div>
+      <div><Button variant="outline" busy={act.busy} onClick={() => act.run(async () => openFile(await portal().fileUrl('dir-documents', u.path)))}>Open document</Button></div>
       <div className="grid sm:grid-cols-2 gap-3">
         <Field label="Valid until" hint="Insurance: the policy end date. Leave empty if it doesn't expire."><input className={INPUT} type="date" value={expires} onChange={(e) => setExpires(e.target.value)} /></Field>
         <Field label="Note (the installer sees it)"><input className={INPUT} value={note} onChange={(e) => setNote(e.target.value)} placeholder="e.g. Certificate must name Next Partitions' customers as additional insured" /></Field>

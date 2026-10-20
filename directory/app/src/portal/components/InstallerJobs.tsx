@@ -7,7 +7,7 @@ import {
 } from '../stage'
 import type { Contact, Invite, InstallerSelf, Job } from '../types'
 import { Thread } from './Thread'
-import { Badge, Button, Card, Field, INPUT, Notice, Steps, TEXTAREA, useAction, useLoad } from './ui'
+import { Badge, Button, Card, Field, INPUT, Notice, Steps, TEXTAREA, useAction, useLoad, openFile } from './ui'
 
 type Row = { job: Job; invite: Invite; stage: Stage }
 
@@ -73,7 +73,7 @@ function JobDetail({ me, row: { job, invite, stage }, reload }: { me: InstallerS
         {s.notes && <p className="text-sm bg-muted px-3 py-2">{s.notes}</p>}
         <div className="flex flex-wrap gap-3 items-center">
           {job.drawingsPath
-            ? <Button variant="outline" busy={drawings.busy} onClick={() => drawings.run(async () => window.open(await portal().fileUrl('dir-drawings', job.drawingsPath!), '_blank', 'noopener'))}>Open shop drawings</Button>
+            ? <Button variant="outline" busy={drawings.busy} onClick={() => drawings.run(async () => openFile(await portal().fileUrl('dir-drawings', job.drawingsPath!)))}>Open shop drawings</Button>
             : <span className="text-sm text-muted-foreground">Shop drawings to follow</span>}
           {drawings.error && <span className="text-sm text-red-800">{drawings.error}</span>}
         </div>

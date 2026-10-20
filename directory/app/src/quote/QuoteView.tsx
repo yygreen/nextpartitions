@@ -3,7 +3,7 @@ import { DISCLAIMER } from '../directory/config'
 import { formatUsd } from '../directory/estimate'
 import { installerHref } from '../directory/links'
 import { MATERIAL_LABEL, MOUNTING_LABEL } from '../directory/types'
-import { Badge, Button, Card, Field, INPUT, Notice, TEXTAREA, WRAP, useAction, useLoad } from '../portal/components/ui'
+import { Badge, Button, Card, Field, INPUT, Notice, TEXTAREA, WRAP, useAction, useLoad, openFile } from '../portal/components/ui'
 import { formatDay, formatDelivery } from '../portal/stage'
 import { type CustomerQuote, type QuotePrice, QUOTE_SAMPLE_NOTICE, quotes } from './api'
 
@@ -93,7 +93,7 @@ function Drawings({ token, q, reload }: { token: string; q: CustomerQuote; reloa
         <Line k="Delivery" v={`${formatDelivery(q.delivery)}, to the job site`} />
       </dl>
       {q.hasDrawings
-        ? <div><Button variant="outline" busy={act.busy} onClick={() => act.run(async () => window.open(await quotes().drawingsUrl(token), '_blank', 'noopener'))}>Open shop drawings (PDF)</Button></div>
+        ? <div><Button variant="outline" busy={act.busy} onClick={() => act.run(async () => openFile(await quotes().drawingsUrl(token)))}>Open shop drawings (PDF)</Button></div>
         : <Notice>Your shop drawings are being prepared. We'll email you when they're ready (usually within 2 business days).</Notice>}
       {q.changeRequest && !q.drawingsApprovedAt && <Notice>You asked for a change: "{q.changeRequest}". We'll send updated drawings within 1 business day.</Notice>}
       {q.hasDrawings && !q.drawingsApprovedAt && !q.paid && (

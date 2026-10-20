@@ -111,3 +111,10 @@ export function errorText(e: unknown): string {
   if (e && typeof e === 'object' && 'message' in e && typeof e.message === 'string') return e.message
   return 'Something went wrong. Try again, or call Next Partitions at 1-833-997-7489.'
 }
+
+// Opens an uploaded file in a new tab. The sample has no real files (and a shared prototype can't open new
+// windows for most viewers), so it says what would open instead of doing nothing.
+export function openFile(url: string) {
+  if (url.startsWith('data:')) throw new Error('Sample file: on the live site this opens the uploaded document.')
+  window.open(url, '_blank', 'noopener')
+}

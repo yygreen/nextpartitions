@@ -4,7 +4,7 @@ import { MATERIAL_LABEL, MOUNTING_LABEL } from '../../directory/types'
 import { portal } from '../client'
 import { formatDay, formatWhen } from '../stage'
 import type { Applicant, ApplicantDetail, AreaCoverage, CheckDetail, CheckType, Reference } from '../types'
-import { Badge, Button, Card, Field, INPUT, Notice, TEXTAREA, useAction, useLoad } from './ui'
+import { Badge, Button, Card, Field, INPUT, Notice, TEXTAREA, useAction, useLoad, openFile } from './ui'
 
 // Installer vetting (prototypes/installer-vetting.html): applicants on the left, the Approved checklist on the
 // right. Listing (database status 'approved') makes the profile public with the Verified label; the first
@@ -261,7 +261,7 @@ function DocLinks({ paths }: { paths: (string | null | undefined)[] }) {
   if (!list.length) return <p className="text-sm text-muted-foreground">No document uploaded.</p>
   return (
     <p className="text-sm flex flex-wrap gap-3">
-      {list.map((p) => <button key={p} type="button" className="underline" onClick={() => act.run(async () => window.open(await portal().fileUrl('dir-documents', p), '_blank', 'noopener'))}>{p.split('/').pop()}</button>)}
+      {list.map((p) => <button key={p} type="button" className="underline" onClick={() => act.run(async () => openFile(await portal().fileUrl('dir-documents', p)))}>{p.split('/').pop()}</button>)}
       {act.error && <span className="text-red-800">{act.error}</span>}
     </p>
   )
