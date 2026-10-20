@@ -177,8 +177,8 @@ function Start() {
       <header className="grid gap-3">
         <p className="text-sm font-semibold uppercase tracking-wider text-brand-red">Prototype for Abe Gold · Next Partitions</p>
         <h1 className="text-3xl md:text-4xl font-black">How the installer directory works</h1>
-        <p className="text-lg max-w-[68ch]">You keep selling partitions. Checked local installers price and do the installation, and the customer hires and pays them directly. You earn on the partitions and take no liability for the install.</p>
-        <p className="text-sm text-muted-foreground max-w-[68ch]">Below is one job from first visit to installed restroom. Click through the steps in order; each one ticks off as you do it. Everything here is sample data and nothing is sent.</p>
+        <p className="text-lg max-w-[68ch]">The model is the one we went through on the call: you sell the partitions, and checked local installers quote and bill the installation directly. This is it built out, so you can see what your customers, the installers and your team each see on a real job.</p>
+        <p className="text-sm text-muted-foreground max-w-[68ch]">Follow one job from first visit to installed restroom; each step ticks off as you do it. Sample data only, nothing is sent.</p>
       </header>
 
       <section aria-labelledby="job-h" className="grid gap-3">
