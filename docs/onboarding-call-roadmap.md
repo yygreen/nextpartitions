@@ -139,7 +139,7 @@ Ask for logins during the call where possible; that saves days of back-and-forth
 **People**
 - [ ] **His developer or agency** (the site footer credits feder.media): for the configurator step and the directory templates. Ask about their availability in month 2.
 - [ ] **His lawyer:** for the listing agreement, website terms and the directory disclaimer.
-- [ ] **Who handles quote requests, installer job packets and WhatsApp confirmations:** the person who will forward jobs to installers.
+- [ ] **Who will be the job coordinator:** the person who handles quote requests, sends job packets to installers, checks flagged prices, calls customers when no installer prices, and sends WhatsApp confirmations. Nobody is in this role yet; the prototypes show **[Coordinator name]** as a placeholder. An existing team member, or a new hire once job volume needs one?
 - [ ] **Installers he already knows:** the fastest way to recruit the first 3–5.
 
 **Operations to confirm** (the site promises these, and the directory builds on them)

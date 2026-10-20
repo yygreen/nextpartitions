@@ -259,7 +259,7 @@ begin
   return n;
 end $$;
 
--- Dana invites an approved installer by hand (e.g. one she knows is free).
+-- The job coordinator invites an approved installer by hand (e.g. one they know is free).
 create function dir_invite_installer(p_job uuid, p_installer uuid) returns void
 language plpgsql security definer set search_path = public as $$
 declare j dir_jobs;
@@ -281,7 +281,7 @@ begin
 end $$;
 
 -- Run every 15 minutes (pg_cron, see the end of this file). Closes price windows, widens the search
--- once when nobody priced, flags jobs for Dana and sends 20-hour reminders.
+-- once when nobody priced, flags jobs for the job coordinator and sends 20-hour reminders.
 create function dir_sweep_jobs() returns jsonb
 language plpgsql security definer set search_path = public as $$
 declare j record; priced integer; pending integer; flagged integer; n integer;

@@ -60,8 +60,8 @@ It creates fresh databases, loads `supabase/tests/supabase_shim.sql` (a stand-in
 ## Job routing: what runs where
 
 - `dir_route_job(job)` invites up to 3 installers when a quote request with drawings becomes a job. Call it from the server (service role) or as an admin.
-- `dir_sweep_jobs()` runs every 15 minutes (pg_cron, scheduled by the migration if the extension is on). It closes price windows, widens the search once to 75 mi when nobody priced, flags jobs for Dana (`needs_attention`) and sends 20-hour reminders.
-- `dir_invite_installer(job, installer)` is Dana's "invite by hand".
+- `dir_sweep_jobs()` runs every 15 minutes (pg_cron, scheduled by the migration if the extension is on). It closes price windows, widens the search once to 75 mi when nobody priced, flags jobs for the job coordinator (`needs_attention`) and sends 20-hour reminders.
+- `dir_invite_installer(job, installer)` is the job coordinator's "invite by hand".
 - Every event that should send an email or update the CRM lands in `dir_outbox` (`job_invite`, `invite_reminder`, `invite_answered`, `prices_ready`, `search_widened`, `no_prices`, `installer_chosen`, `job_released`, `job_status`, `review_request`). A small worker (e.g. a Supabase Edge Function on a schedule) calls `dir_outbox_claim()`, sends the email or CRM update, then `dir_outbox_done(id)`. It needs the email service and the CRM, which aren't chosen yet.
 - Jobs need `lat`/`lng` (the ZIP's centre is enough) for routing. Distances are straight-line × 1.2 until Google Routes is connected.
 

@@ -248,20 +248,20 @@ const JOBS=[
  {id:"NP-DFW-1048",city:"Plano",zip:"75074",bldg:"School (elementary)",mat:"hdpe",mount:"Overhead braced",ch:false,color:"Sage 2141",layout:"Between walls",stalls:6,ada:true,w:'36"',d:'60"',priv:true,urinals:2,removal:6,
   delivery:"Nov 9–13, 2026",deliveryDate:"2026-11-11",miles:18,status:"new",sent:"Today, 8:12 AM",due:"Tue, 10:00 AM",notes:"Old stalls to be removed and hauled away. Ground floor, loading dock at the back.",
   cust:{name:"Pat Lee",org:"Plano ISD, Facilities",phone:"(214) 555-0100",email:"pat.lee@example.org",site:"1200 Example Pkwy, Plano, TX 75074",contact:"Front office, 7:30 AM–3:30 PM"},
-  msgs:[["np","Dana · Next Partitions","Hi Acme, new job in Plano. Shop drawings attached. The customer would like installation the week after delivery. Price by Tuesday 10 AM if you can."]],
+  msgs:[["np","[Coordinator name] · Next Partitions","Hi Acme, new job in Plano. Shop drawings attached. The customer would like installation the week after delivery. Price by Tuesday 10 AM if you can."]],
   others:[["Northwind Washroom Pros","Replied in 9 h",1180],["Contoso Specialty Contractors","Not replied yet",null]]},
  {id:"NP-DFW-1045",city:"Dallas",zip:"75201",bldg:"Office tower",mat:"phen",mount:"Floor mounted",ch:false,color:"Charcoal 2123",layout:"Alcove, left door with stalls",stalls:8,ada:true,w:'36"',d:'60"',priv:false,urinals:3,removal:0,
   delivery:"Nov 16–20, 2026",deliveryDate:"2026-11-18",miles:2,status:"priced",sent:"Oct 16",due:"",price:1540,notes:"After-hours install only (6 PM–6 AM). Freight elevator booked by building management.",
   cust:{name:"Morgan Reyes",org:"Elm Street Tower LLC",phone:"(214) 555-0144",email:"m.reyes@example.com",site:"500 Example St, Dallas, TX 75201",contact:"Security desk"},
-  msgs:[["np","Dana · Next Partitions","Thanks, your price is with the customer. They're comparing two options and expect to decide this week."]],others:[["Contoso Specialty Contractors","Replied in 20 h",1480]]},
+  msgs:[["np","[Coordinator name] · Next Partitions","Thanks, your price is with the customer. They're comparing two options and expect to decide this week."]],others:[["Contoso Specialty Contractors","Replied in 20 h",1480]]},
  {id:"NP-DFW-1041",city:"Irving",zip:"75038",bldg:"Gym",mat:"pc",mount:"Overhead braced",ch:false,color:"Gray 2125",layout:"Corner left",stalls:4,ada:false,w:'36"',d:'60"',priv:false,urinals:1,removal:0,
   delivery:"Nov 2–6, 2026",deliveryDate:"2026-11-04",miles:11,status:"chosen",sent:"Oct 12",due:"",price:700,notes:"",
   cust:{name:"Sam Ortiz",org:"Irving Fitness Co.",phone:"(972) 555-0190",email:"sam@example.com",site:"42 Example Rd, Irving, TX 75038",contact:"Sam, on site weekdays"},
-  msgs:[["np","Dana · Next Partitions","Good news: the customer chose you. Their details unlock as soon as they pay for the partitions order."]],others:[]},
+  msgs:[["np","[Coordinator name] · Next Partitions","Good news: the customer chose you. Their details unlock as soon as they pay for the partitions order."]],others:[]},
  {id:"NP-DFW-1036",city:"Garland",zip:"75040",bldg:"Community center",mat:"hdpe",mount:"Overhead braced",ch:false,color:"Almond 2103",layout:"Between walls",stalls:10,ada:true,w:'36"',d:'60"',priv:false,urinals:4,removal:10,
   delivery:"Oct 26–30, 2026",deliveryDate:"2026-10-28",miles:20,status:"released",sent:"Oct 3",due:"",price:2150,notes:"Building closed Sundays.",
   cust:{name:"Jordan Kim",org:"City of Garland, Parks",phone:"(972) 555-0120",email:"jkim@example.gov",site:"77 Example Ave, Garland, TX 75040",contact:"Jordan Kim, (972) 555-0120"},
-  msgs:[["np","Dana · Next Partitions","Partitions order paid; the job is yours. Delivery is booked for Oct 28. Please set your install date."]],others:[]},
+  msgs:[["np","[Coordinator name] · Next Partitions","Partitions order paid; the job is yours. Delivery is booked for Oct 28. Please set your install date."]],others:[]},
  {id:"NP-DFW-1029",city:"Richardson",zip:"75080",bldg:"Restaurant",mat:"lam",mount:"Floor mounted",ch:false,color:"White 2129",layout:"Single alcove, left door",stalls:2,ada:true,w:'36"',d:'60"',priv:false,urinals:0,removal:2,
   delivery:"Sep 28–Oct 2, 2026",deliveryDate:"2026-09-30",miles:14,status:"installed",sent:"Sep 15",due:"",price:700,installDate:"Oct 6, 2026",notes:"",review:[5,"On time, tidy, and the doors line up perfectly. Would book again."],
   cust:{name:"Alex Chen",org:"Noodle Bar Richardson",phone:"(972) 555-0177",email:"alex@example.com",site:"9 Example Blvd, Richardson, TX 75080",contact:"Alex"},
@@ -273,7 +273,7 @@ JOBS.push({id:"NP-DFW-1052",npOnly:true,city:"Granbury",zip:"76048",bldg:"Brewer
   log:[["Oct 17, 9:00 AM","Drawings ready. 1 approved installer covers Granbury: Northwind (Fort Worth, 38 mi). Invited, due Oct 21, 10 AM."],
        ["Oct 17, 2:10 PM","Northwind declined: fully booked Nov 3–21."],
        ["Oct 17","Not invited: Acme (65 mi, covers 60), Contoso (45 mi, covers 40), Fabrikam (78 mi, covers 45)."]],
-  invites:[],msgs:[["np","Dana · Next Partitions","Internal note: customer opens Dec 1, so installation must be done by Nov 26."]],others:[]});
+  invites:[],msgs:[["np","[Coordinator name] · Next Partitions","Internal note: customer opens Dec 1, so installation must be done by Nov 26."]],others:[]});
 let cur=JOBS[0].id, view="inst";
 const job=()=>JOBS.find(j=>j.id===cur);
 
@@ -363,14 +363,14 @@ function messages(j){
 }
 
 // what Next Partitions sees for the same job: every invited installer's reply, then the options the customer gets
-// nobody priced: what happened, the automatic rule, and what Dana can do
+// nobody priced: what happened, the automatic rule, and what the job coordinator can do
 const POOL=[["acme","Acme Partition Installs","Dallas",65,"covers 60 mi; travel $2/mi beyond",10],["contoso","Contoso Specialty Contractors","Arlington",45,"covers 40 mi; travel $150 flat beyond",150],["fabrikam","Fabrikam Facility Services","Denton",78,"covers 45 mi; travel $2.50/mi beyond",83]];
 function fallback(j){
   const inv=j.invites, priced=inv.filter(i=>i.price);
   const widened=j.round>1;
   return `<div class="card act"><h3>${priced.length?`${priced.length} firm price${priced.length>1?"s":""} in`:"No installer prices yet"}</h3>
     <ol class="flog">${j.log.map(([t,x])=>`<li><b>${t}</b> ${esc(x)}</li>`).join("")}</ol>
-    <p class="vs">Automatic rule: if no firm price is in by the deadline (or everyone declines, or nobody covers the site), the search widens once to 75 mi, with travel fees from each installer's rates. Dana is alerted, and the customer gets the “still lining up your installer” email.</p>
+    <p class="vs">Automatic rule: if no firm price is in by the deadline (or everyone declines, or nobody covers the site), the search widens once to 75 mi, with travel fees from each installer's rates. The job coordinator is alerted, and the customer gets the “still lining up your installer” email.</p>
     ${inv.length?`<table class="ctable"><thead><tr><th>Installer</th><th>Distance</th><th>Status</th><th style="text-align:right">Firm price</th></tr></thead><tbody>${inv.map(i=>`<tr><td>${esc(i.name)}</td><td>${i.mi} mi</td><td>${esc(i.st)}</td><td class="num">${i.price?money(i.price):"—"}</td></tr>`).join("")}</tbody></table>`:""}
     ${priced.length?`<div class="custview"><h4>What the customer sees</h4>${priced.map(i=>`<div class="copt"><span>${esc(i.name)}<br><small style="color:var(--muted)">Installation incl. travel, quoted by the installer · earliest install ${i.date}</small></span><b>${money(i.price)}</b></div>`).join("")}
       <div class="btns" style="margin-top:12px"><a class="btn sm" href="quote.html#choose">Send options to the customer</a></div></div>`:`
@@ -387,10 +387,10 @@ function invite(j,id,how){const p=POOL.find(x=>x[0]===id); if(!p||j.invites.some
   j.log.push(["Today",`${p[1]} invited ${how} (${p[3]} mi, ${p[4]}).`]);}
 function wireFallback(j){
   if($("fbWiden"))$("fbWiden").onclick=()=>{j.round=2;invite(j,"contoso","in the wider search");invite(j,"acme","in the wider search");render();};
-  if($("fbAdd"))$("fbAdd").onclick=()=>{invite(j,$("fbPick").value,"by Dana");render();};
+  if($("fbAdd"))$("fbAdd").onclick=()=>{invite(j,$("fbPick").value,"by the job coordinator");render();};
   if($("fbMail"))$("fbMail").onclick=()=>{$("fbMailed").innerHTML='Sent: <a class="link" href="emails.html#email-10">“We’re still lining up your installer”</a>';j.log.push(["Today","Customer emailed: still lining up an installer, options offered."]);};
   if($("fbReply"))$("fbReply").onclick=()=>{const c=j.invites.find(i=>i.id==="contoso")||j.invites[0];c.price=c.id==="contoso"?1010:1090;c.st="Replied in 5 h";c.date="Nov 19";j.log.push(["Today",`${c.name} priced ${money(c.price)}, earliest install Nov 19.`]);render();};
-  if($("fbNone"))$("fbNone").onclick=()=>{j.invites.forEach(i=>i.st="No reply by deadline");j.log.push(["Thu 10 AM","No prices after the wider search. Dana calls the customer: partitions only now and install later, or their own installer (install packet included)."]);render();};
+  if($("fbNone"))$("fbNone").onclick=()=>{j.invites.forEach(i=>i.st="No reply by deadline");j.log.push(["Thu 10 AM","No prices after the wider search. The job coordinator calls the customer: partitions only now and install later, or their own installer (install packet included)."]);render();};
 }
 function coordinator(j){
   const mine=j.status==="new"?null:j.price;
@@ -425,13 +425,13 @@ function wire(j){
     $("lineRows").querySelectorAll("[data-del]").forEach(b=>b.onclick=()=>{j.draft.splice(+b.dataset.del,1);render();});
     $("addLine").onclick=()=>{j.draft.push(["",0]);render();$("lineRows").querySelector("tr:last-child input").focus();};
     $("sendPrice").onclick=()=>{j.price=sum(j.draft);j.status="priced";j.sent="today";const n=$("custNote").value.trim();
-      j.msgs.push(["me","You",`Price sent: ${money(j.price)}.${n?" Note: "+esc(n):""}`],["np","Dana · Next Partitions","Thanks! We'll present it to the customer today with their partitions quote."]);render();};
+      j.msgs.push(["me","You",`Price sent: ${money(j.price)}.${n?" Note: "+esc(n):""}`],["np","[Coordinator name] · Next Partitions","Thanks! We'll present it to the customer today with their partitions quote."]);render();};
     $("askQ").onclick=()=>$("msgIn").focus();
     $("decline").onclick=()=>{$("declineBox").hidden=false;};
     $("declineGo").onclick=()=>{j.status="lost";j.price=0;j.msgs.push(["me","You","Declined: "+$("declineWhy").value]);render();};
   }
   document.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{j.status=b.dataset.go;
-    if(j.status==="released")j.msgs.push(["np","Dana · Next Partitions","The partitions order is paid, so the job is yours. Customer details are now in the job. Please set your install date."]);
+    if(j.status==="released")j.msgs.push(["np","[Coordinator name] · Next Partitions","The partitions order is paid, so the job is yours. Customer details are now in the job. Please set your install date."]);
     render();});
   if($("editPrice"))$("editPrice").onclick=()=>{j.status="new";j.due="as soon as you can";render();};
   if($("schedule"))$("schedule").onclick=()=>{const v=$("instDate").value,e=$("dateErr");
@@ -439,14 +439,14 @@ function wire(j){
     j.installDate=new Date(v+"T12:00").toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"});j.status="scheduled";
     j.msgs.push(["me","You",`Install date set: ${j.installDate}.`]);render();};
   if($("reschedule"))$("reschedule").onclick=()=>{j.status="released";render();};
-  if($("markDone"))$("markDone").onclick=()=>{j.status="installed";j.msgs.push(["np","Dana · Next Partitions","Thanks for marking it installed. We've asked the customer for a review."]);render();};
+  if($("markDone"))$("markDone").onclick=()=>{j.status="installed";j.msgs.push(["np","[Coordinator name] · Next Partitions","Thanks for marking it installed. We've asked the customer for a review."]);render();};
   if($("present"))$("present").onclick=()=>{$("presented").innerHTML='Sent. <a class="link" href="quote.html#choose">See the customer\'s quote page</a> · <a class="link" href="emails.html#email-4">the email</a>';};
   $("msgGo").onclick=()=>{const t=$("msgIn").value.trim();if(!t)return;
     // before release, contact details are blacked out so nobody can take the job around Next Partitions
     let h=esc(t), hid=false;
     if(ST[j.status]<3||j.status==="lost"){h=h.replace(/([\w.+-]+@[\w-]+\.[\w.]+)|(\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4})/g,m=>{hid=true;return `<span class="redact" title="Hidden until the job is released">${"x".repeat(m.length)}</span>`;});}
     j.msgs.push(["me","You",h+(hid?`<br><small style="margin-top:4px">Contact details hidden until the job is released.</small>`:"")]);
-    render(); setTimeout(()=>{j.msgs.push(["np","Dana · Next Partitions","Thanks, I'll check with the customer and get back to you today."]);if(job()===j)render();},900);};
+    render(); setTimeout(()=>{j.msgs.push(["np","[Coordinator name] · Next Partitions","Thanks, I'll check with the customer and get back to you today."]);if(job()===j)render();},900);};
   const th=$("thread"); if(th)th.scrollTop=th.scrollHeight;
 }
 
@@ -462,8 +462,8 @@ document.querySelectorAll("[data-tab]").forEach(b=>b.onclick=()=>{document.query
   document.querySelectorAll("[role=tabpanel]").forEach(p=>p.hidden=p.id!=="tab-"+b.dataset.tab);});
 document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>{view=b.dataset.view;document.querySelectorAll("[data-view]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
   $("portalName").textContent=view==="np"?"Job coordination":"Installer portal";
-  $("whoNm").innerHTML=view==="np"?"<b>Dana Ruiz</b><small>Next Partitions · DFW jobs</small>":"<b>Acme Partition Installs</b><small>Approved · Top rated · Dallas</small>";
-  $("whoAv").textContent=view==="np"?"DR":"AP";
+  $("whoNm").innerHTML=view==="np"?"<b>[Coordinator name]</b><small>Next Partitions · DFW jobs</small>":"<b>Acme Partition Installs</b><small>Approved · Top rated · Dallas</small>";
+  $("whoAv").textContent=view==="np"?"?":"AP";
   document.querySelectorAll('[data-tab]:not([data-tab="jobs"])').forEach(t=>t.hidden=view==="np");
   document.querySelector('[data-tab="jobs"]').click(); render();});
 {const h=location.hash.slice(1), hj=JOBS.find(j=>j.id===h); if(hj)cur=h; if(h==="np"||(hj&&hj.npOnly))document.querySelector('[data-view="np"]').click();}

@@ -148,7 +148,7 @@ dl.spec dt{color:var(--muted)}dl.spec dd{margin:0;font-weight:600}
   <header class="qhead">
     <p class="eyebrow">Quote Q-26-1048 · valid 30 days</p>
     <h1>Your restroom partitions, Plano</h1>
-    <p>For Pat Lee, Plano ISD Facilities · Elementary school, Plano, TX 75074 · prepared by Dana Ruiz, Next Partitions</p>
+    <p>For Pat Lee, Plano ISD Facilities · Elementary school, Plano, TX 75074 · prepared by [Coordinator name], Next Partitions</p>
     <ol class="steps" id="steps" aria-label="Steps"></ol>
   </header>
 
@@ -180,7 +180,7 @@ dl.spec dt{color:var(--muted)}dl.spec dd{margin:0;font-weight:600}
         <div id="s1Body">
           <label class="check" style="margin-top:16px"><input type="checkbox" id="approve"><span><b>The layout and sizes are correct</b><br><small style="color:var(--muted)">We order your partitions from these drawings.</small></span></label>
           <div class="btns"><button class="btn" type="button" id="s1Go" disabled>Approve drawings and choose installation →</button><button class="link" type="button" id="chg">Request a change</button></div>
-          <div id="chgBox" hidden><label class="field">What should change?<textarea id="chgTxt" rows="3" placeholder="e.g. The ADA stall should be on the left."></textarea></label><div class="btns"><button class="btn ghost" type="button" id="chgGo">Send to Dana</button></div></div>
+          <div id="chgBox" hidden><label class="field">What should change?<textarea id="chgTxt" rows="3" placeholder="e.g. The ADA stall should be on the left."></textarea></label><div class="btns"><button class="btn ghost" type="button" id="chgGo">Send to Next Partitions</button></div></div>
           <p class="ok" id="chgOk" hidden></p>
         </div>
         <p class="donemark" id="s1Done" hidden>✓ Drawings approved</p>
@@ -239,7 +239,7 @@ dl.spec dt{color:var(--muted)}dl.spec dd{margin:0;font-weight:600}
         <div class="l due"><span id="dueLbl">Due now to Next Partitions</span><b>$5,655</b></div>
         <div class="l sep"><span id="instLbl">Installation</span><b id="instAmt">Not chosen yet</b></div>
       </div>
-      <div class="help"><b>Questions?</b>Dana Ruiz, Next Partitions<br><a href="tel:18339977489">1-833-997-7489</a> · <a href="mailto:sales@nextpartitions.com">sales@nextpartitions.com</a><p class="note" style="margin-top:8px">Quote valid for 30 days, until Nov 18, 2026.</p></div>
+      <div class="help"><b>Questions?</b>[Coordinator name], Next Partitions<br><a href="tel:18339977489">1-833-997-7489</a> · <a href="mailto:sales@nextpartitions.com">sales@nextpartitions.com</a><p class="note" style="margin-top:8px">Quote valid for 30 days, until Nov 18, 2026.</p></div>
     </aside>
   </div>
 </main>
@@ -289,8 +289,8 @@ function render(){
   else{$("instLbl").innerHTML=`Installation, ${o.name}<small>Paid to ${o.name.split(" ")[0]} after installation, invoiced by them</small>`;$("instAmt").textContent=money(o.price);}
   $("instPayNote").textContent=!o||o.own||o.later?"":`Installation (${money(o.price)}) isn't included: you pay ${o.name.split(" ")[0]} after installation, invoiced by them.`;
   if(S.step===4){const nm=o.own||o.later?null:o.name;
-    $("doneLead").textContent=o.later?"Your partitions are ordered. Delivery Nov 9–13. We'll email you installer prices as soon as they're in, and you can choose one then.":nm?`${nm.split(" ")[0]} now has your contact details and site address to schedule the install. Delivery Nov 9–13. Dana will confirm the install date.`:"We've emailed the install packet to pat.lee@example.org. Delivery Nov 9–13. Dana will confirm the delivery date.";
-    $("timeline").innerHTML=[["d","Partitions ordered","Order confirmation sent to pat.lee@example.org"],["","Production and shipping","We email tracking when your order ships"],["","Delivery to the job site","Nov 9–13, 2026, liftgate delivery"],...(nm?[["","Installation by "+nm.split(" ")[0],"Install date confirmed with you and Dana; usually the week after delivery"],["","Review","We ask how the install went"]]:[])]
+    $("doneLead").textContent=o.later?"Your partitions are ordered. Delivery Nov 9–13. We'll email you installer prices as soon as they're in, and you can choose one then.":nm?`${nm.split(" ")[0]} now has your contact details and site address to schedule the install. Delivery Nov 9–13. We'll confirm the install date.`:"We've emailed the install packet to pat.lee@example.org. Delivery Nov 9–13. We'll confirm the delivery date.";
+    $("timeline").innerHTML=[["d","Partitions ordered","Order confirmation sent to pat.lee@example.org"],["","Production and shipping","We email tracking when your order ships"],["","Delivery to the job site","Nov 9–13, 2026, liftgate delivery"],...(nm?[["","Installation by "+nm.split(" ")[0],"Install date confirmed with you and Next Partitions; usually the week after delivery"],["","Review","We ask how the install went"]]:[])]
       .map(([c,t,s],k)=>`<li class="${c}"><i>${c?"✓":k+1}</i><span><b>${t}</b><small>${s}</small></span></li>`).join("");}
   opts();
 }
@@ -299,7 +299,7 @@ function go(n,quiet){S.step=n;render();if(quiet)return;const h=$(n===4?"h4":"h"+
 $("approve").onchange=e=>$("s1Go").disabled=!e.target.checked;
 $("s1Go").onclick=()=>go(2);
 $("chg").onclick=()=>{$("chgBox").hidden=false;$("chgTxt").focus();};
-$("chgGo").onclick=()=>{const t=$("chgTxt").value.trim();if(!t){$("chgTxt").focus();return;}$("chgBox").hidden=true;$("chgOk").hidden=false;$("chgOk").textContent="Sent to Dana. You'll get updated drawings within 1 business day.";};
+$("chgGo").onclick=()=>{const t=$("chgTxt").value.trim();if(!t){$("chgTxt").focus();return;}$("chgBox").hidden=true;$("chgOk").hidden=false;$("chgOk").textContent="Sent to Next Partitions. You'll get updated drawings within 1 business day.";};
 document.querySelectorAll("[data-pay]").forEach(b=>b.onclick=()=>{S.pay=b.dataset.pay;document.querySelectorAll("[data-pay]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
   $("payPo").hidden=S.pay!=="po";$("payCard").hidden=S.pay!=="card";$("payAch").hidden=S.pay!=="ach";
   $("payGo").textContent=S.pay==="ach"?"Email me the bank details":S.pay==="po"?"Send purchase order":"Pay $5,655 for your partitions";});

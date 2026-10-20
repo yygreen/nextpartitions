@@ -2,6 +2,8 @@
 
 Proposal for Abe (decisions 9–11 build on it). The installer portal prototype shows it: https://claude.ai/artifact/32L7EWz37XztbenrBwUKBj (`#np`, job NP-DFW-1052 for the fallback).
 
+> **The job coordinator isn't hired or named yet.** "The job coordinator" is the person at Next Partitions who sends jobs to installers, checks flagged prices and calls customers when no installer prices. Nobody has this role today. Abe decides who does it (an existing team member or a new hire); until then the prototypes show **[Coordinator name]** where that person's name goes.
+
 ## 1. Who gets invited to price a job
 
 Installers are invited only when the customer has asked for the full quote (drawings in hand), never for an email-gate lead on its own.
@@ -32,12 +34,12 @@ The fastest reply doesn't win the job. Speed counts toward the Installer Score o
 
 Triggers: no approved installer covers the site, every invited installer declines, or the deadline passes with no firm price.
 
-1. **Automatic:** the search widens once to 75 mi. The next installers by rank are invited, with travel fees from their own rates and a new deadline (1 business day). Dana is alerted (email 8). The installers get a wider-area request (email 9).
+1. **Automatic:** the search widens once to 75 mi. The next installers by rank are invited, with travel fees from their own rates and a new deadline (1 business day). The job coordinator is alerted (email 8). The installers get a wider-area request (email 9).
 2. **Customer:** emailed that prices are taking longer (email 10), with three choices on their quote page (`quote.html#searching`): wait; go ahead with partitions only and add installation later; or use their own installer (install packet included).
-3. **Dana:** can invite an approved installer by hand at any point.
-4. **Still nothing after the wider search:** Dana calls the customer and offers partitions only, or their own installer. The job is logged as an uncovered area, which feeds installer recruiting there.
+3. **The job coordinator:** can invite an approved installer by hand at any point.
+4. **Still nothing after the wider search:** the job coordinator calls the customer and offers partitions only, or their own installer. The job is logged as an uncovered area, which feeds installer recruiting there.
 
-Built in the database (`directory/supabase/migrations/20261020000000_job_routing.sql`, tested): invite deadlines and search rounds, the 15-minute sweep that closes windows and widens the search, Dana's "needs attention" list, manual invites, price flags, late replies and reminders.
+Built in the database (`directory/supabase/migrations/20261020000000_job_routing.sql`, tested): invite deadlines and search rounds, the 15-minute sweep that closes windows and widens the search, the job coordinator's "needs attention" list, manual invites, price flags, late replies and reminders.
 
 ## 4. Site visits without handing over the customer
 
@@ -71,7 +73,7 @@ On jobs with 3 or more firm prices, each installer who wasn't chosen gets a shor
 Where only one or two installers cover a job, the customer's protection comes from the benchmark, not from competing prices.
 
 - **Invite everyone who qualifies.** No ranking is needed.
-- **Agreed rates do the work.** Each installer agrees their rates with us separately and never sees anyone else's. A firm price more than 15% above their own rates, or above the area's typical price, goes to Dana before the customer sees it.
+- **Agreed rates do the work.** Each installer agrees their rates with us separately and never sees anyone else's. A firm price more than 15% above their own rates, or above the area's typical price, goes to the job coordinator before the customer sees it.
 - **Borrowed benchmark.** Until an area has its own price history, use DFW-wide (later Texas-wide) prices per stall by material, shown to the customer as "typical for your area: $X–$Y".
 - **Installers never learn how many others were asked.** Every invite says "you may be one of several installers asked".
 - **Widen for a third price.** Invite an installer from a neighbouring zone, with travel fees from their own rates.

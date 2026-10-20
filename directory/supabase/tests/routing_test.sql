@@ -117,7 +117,7 @@ do $$ declare a dir_job_invites := pg_temp.inv('20000000-0000-0000-0000-00000000
     'answers not queued';
 end $$;
 
--- 5. Deadline passes with one price in: the window closes and Dana is asked to check the flagged price.
+-- 5. Deadline passes with one price in: the window closes and the job coordinator is asked to check the flagged price.
 update dir_jobs set price_due_at = now() - interval '1 minute' where id = '20000000-0000-0000-0000-000000000001';
 select dir_sweep_jobs();
 do $$ begin
@@ -190,7 +190,7 @@ do $$ begin
 end $$;
 
 -- 10. Granbury: only Northwind covers it, and declines. The sweep widens once to 75 mi (Acme 75 mi,
---     Contoso 53 mi; Fabrikam is 79 mi and doesn't install phenolic). Both decline: no prices, Dana steps in.
+--     Contoso 53 mi; Fabrikam is 79 mi and doesn't install phenolic). Both decline: no prices, the job coordinator steps in.
 select pg_temp.as_user('00000000-0000-0000-0000-00000000000a');
 select dir_route_job('20000000-0000-0000-0000-000000000002');
 reset role;
@@ -215,7 +215,7 @@ do $$ begin
   assert exists (select 1 from dir_outbox where kind = 'no_prices' and job_id = '20000000-0000-0000-0000-000000000002'), 'no_prices not queued';
 end $$;
 
--- 11. Dana invites an installer by hand: reopens the window. An installer with expired insurance is refused.
+-- 11. The job coordinator invites an installer by hand: reopens the window. An installer with expired insurance is refused.
 select pg_temp.as_user('00000000-0000-0000-0000-00000000000a');
 select dir_invite_installer('20000000-0000-0000-0000-000000000002', '10000000-0000-0000-0000-00000000000d');
 do $$ begin

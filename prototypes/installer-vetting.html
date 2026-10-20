@@ -114,7 +114,7 @@ dl.kv dd{margin:0;font-weight:600;min-width:0;overflow-wrap:anywhere}
 
 <header class="phd"><div class="wrap">
   <a class="brand" href="portal.html#np"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Installer vetting</small></span></a>
-  <div class="who"><span class="nm"><b>Dana Ruiz</b><small>Next Partitions · DFW installers</small></span><span class="av">DR</span></div>
+  <div class="who"><span class="nm"><b>[Coordinator name]</b><small>Next Partitions · DFW installers</small></span><span class="av">?</span></div>
 </div></header>
 
 <div class="launch"><div class="wrap">
@@ -212,7 +212,7 @@ function render(){
     <div class="two" style="margin-top:16px"><dl class="kv"><dt>Contact</dt><dd>${esc(a.contact)}</dd><dt>Phone</dt><dd>${esc(a.phone)}</dd><dt>Email</dt><dd>${esc(a.email)}</dd><dt>In business</dt><dd>${a.years} years · crew ${a.crew}</dd></dl>
     <dl class="kv"><dt>Materials</dt><dd>${esc(a.mats)}</dd><dt>Bracing</dt><dd>${esc(a.mounts)}</dd><dt>Extras</dt><dd>${esc(a.extras)}</dd><dt>Brands</dt><dd>${esc(a.brands||"—")}</dd></dl></div></div>
     ${decide(a)}${checks(a)}
-    <p class="recheck"><b>Annual re-check:</b> insurance and registration are checked again every year. The installer and Dana get a reminder 30 days before a certificate expires; an expired certificate pauses new job requests until it's renewed.</p>`;
+    <p class="recheck"><b>Annual re-check:</b> insurance and registration are checked again every year. The installer and the job coordinator get a reminder 30 days before a certificate expires; an expired certificate pauses new job requests until it's renewed.</p>`;
   wire(a);
 }
 function wire(a){
