@@ -154,7 +154,7 @@ function Start() {
       text: <>Up to 3 checked installers near the job get the drawings and scope, never the customer's name or number. Open NP-DFW-1048 as Acme and send a firm price.</>,
       links: [["Installer's view (Acme)", portalHref('installer')]] },
     { done: shown, title: 'Your team shows the prices to the customer', who: 'Your team',
-      text: <>Your job coordinator sees every price, with any price more than 15% above the installer's own rates flagged. Open NP-DFW-1048 and click "Show prices on the customer's quote".</>,
+      text: <>The job coordinator sees every price, with any price more than 15% above the installer's own rates flagged. For the first months we run this role for you, until leads come in regularly and it outgrows the SEO scope. Open NP-DFW-1048 and click "Show prices on the customer's quote".</>,
       links: [["Your team's view", portalHref('coordinator')]] },
     { done: chosen && !!j?.quote.paymentMethod, title: 'The customer chooses an installer and pays you for the partitions', who: 'Customer',
       text: 'On their quote page they approve the drawings, pick an installer, and pay Next Partitions for the partitions (PO, card or bank transfer). Installation is billed by the installer, not by you.',
@@ -202,7 +202,7 @@ function Start() {
           ['The application form', applyHref()], ['Checking applicants (Vetting tab)', portalHref('coordinator')],
           ['A Verified installer, new to you', installerHref('contoso')], ['An Approved, Established installer', installerHref('acme')],
         ])}
-        {group("Your team's daily work", 'The job coordinator runs the middle: jobs that need attention come first, then documents to check and jobs to enter by hand. We do this for you for the first months.', [
+        {group("Your team's daily work", 'The job coordinator runs the middle: jobs that need attention come first, then documents to check and jobs to enter by hand.', [
           ['Jobs needing attention (Jobs tab)', portalHref('coordinator')], ['Documents to check (Documents tab)', portalHref('coordinator')],
           ['Entering a job by hand (New job tab)', portalHref('coordinator')], ['A quote with two installer prices (Irving)', quoteHref('sample-j1044')],
         ])}
@@ -216,8 +216,8 @@ function Start() {
 
       <section className="bg-surface-warm border border-border p-5 grid gap-2">
         <h2 className="text-xl">To discuss on our call</h2>
-        <p className="text-sm max-w-[75ch]"><b>The job coordinator role:</b> we handle it for the first months, until leads come in regularly and the work outgrows the SEO scope. Then it moves to someone on your team or a new hire; we'll agree when.</p>
         <ul className="list-disc pl-5 grid gap-1 text-sm max-w-[75ch]">
+          <li>When the job coordinator role moves from us to your team, and who takes it over.</li>
           <li>OK on the labels: Verified when listed, Approved after the first completed job.</li>
           <li>How customers pay for partitions: for now they choose PO, a card payment link or bank transfer and the job coordinator follows up. Paying by card on the quote page itself needs the site's payment provider (a question for Marc).</li>
           <li>Pilot area: Dallas–Fort Worth, unless your orders point elsewhere.</li>
