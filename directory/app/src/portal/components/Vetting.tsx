@@ -368,7 +368,7 @@ function TestJob({ a, d, locked, onResult, reload }: { a: Applicant; d: Applican
 }
 
 function Rates({ d }: { d: ApplicantDetail }) {
-  if (!d.rates.length) return null
+  if (!d.rates.length) return <Card title="Their rates"><p className="text-sm text-muted-foreground">Not set yet. They set them in the portal (Your rates) once they have a login; customers see estimates only after that.</p></Card>
   const ex = d.rates[0].extras
   return (
     <Card title="Their rates (from the application)">

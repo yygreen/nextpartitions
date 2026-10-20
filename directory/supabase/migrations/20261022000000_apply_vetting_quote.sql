@@ -346,11 +346,7 @@ begin
     where x in ('remove_old', 'ada', 'urinal_screens');
   if cardinality(mats) = 0 then raise exception 'Choose at least one material you install'; end if;
   if cardinality(mnts) = 0 then raise exception 'Choose at least one bracing type you install'; end if;
-  foreach m in array mats loop
-    if coalesce(rates->'per_stall'->>m, '') !~ int_ or (rates->'per_stall'->>m)::integer <= 0 then
-      raise exception 'Enter your per-stall rate for every material you install';
-    end if;
-  end loop;
+  -- Rates are optional here: most applicants set them in the installer portal ("Your rates") once they have a login.
 
   refs := coalesce(p->'references', '[]');
   if jsonb_typeof(refs) <> 'array' or jsonb_array_length(refs) < 2 or jsonb_array_length(refs) > 3 then
@@ -401,6 +397,7 @@ begin
     if coalesce(rates->>n, '') ~ int_ then extras_ := extras_ || jsonb_build_object(n, (rates->>n)::integer); end if;
   end loop;
   foreach m in array mats loop
+    continue when coalesce(rates->'per_stall'->>m, '') !~ int_ or (rates->'per_stall'->>m)::integer <= 0;
     foreach n in array mnts loop
       cents := (rates->'per_stall'->>m)::integer
         + case when n in ('ceiling_hung', 'floor_to_ceiling') and coalesce(rates->>'high_mount_extra_cents', '') ~ int_

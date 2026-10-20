@@ -379,7 +379,8 @@ export const sampleStore = {
       refs: (p.references ?? []).map((r: any) => ref(r.name, r.company || null, { phone: r.phone || null, email: r.email || null, jobNote: r.job_note || null })),
     }
     const ex = p.rates ?? {}
-    rates[id] = (p.materials ?? []).flatMap((m: any) => (p.mountings ?? []).map((mt: any): RateRow => {
+    // Rates are optional on the application (most installers set them in the portal): no rate, no rate card.
+    rates[id] = (p.materials ?? []).filter((m: any) => ex.per_stall?.[m] > 0).flatMap((m: any) => (p.mountings ?? []).map((mt: any): RateRow => {
       const per = (ex.per_stall?.[m] ?? 0) + (mt === 'ceiling_hung' || mt === 'floor_to_ceiling' ? ex.high_mount_extra_cents ?? 0 : 0)
       return { material: m, mounting: mt, perStallLowCents: per, perStallHighCents: per, minimumCents: ex.minimum_cents ?? 0,
         extras: Object.fromEntries(['ada_stall_cents', 'urinal_screen_cents', 'demo_per_stall_cents', 'free_miles', 'per_mile_cents'].filter((k) => ex[k] != null).map((k) => [k, ex[k]])) }

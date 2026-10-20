@@ -74,7 +74,14 @@ select pg_temp.as_user(null);
 select pg_temp.fails($q$select dir_submit_application(pg_temp.app('{"email": "nope"}'))$q$, 'Enter a valid email address');
 select pg_temp.fails($q$select dir_submit_application(pg_temp.app('{"base_zip": "752"}'))$q$, 'Enter a 5-digit ZIP code');
 select pg_temp.fails($q$select dir_submit_application(pg_temp.app('{"materials": ["bogus"]}'))$q$, 'Choose at least one material%');
-select pg_temp.fails($q$select dir_submit_application(pg_temp.app('{"materials": ["hdpe", "stainless"]}'))$q$, 'Enter your per-stall rate%');
+-- Rates are optional (set later in the portal): a material without a rate gets no rate card.
+select set_config('t.norates', dir_submit_application(pg_temp.app('{"materials": ["hdpe", "stainless"], "email": "norates@example.com", "business_name": "No Rates Co"}'))::text, false);
+reset role;
+do $$ declare a uuid := current_setting('t.norates')::uuid; begin
+  assert (select count(*) from dir_rate_cards where installer_id = a and material = 'stainless') = 0, 'rate card made without a rate';
+  assert (select count(*) from dir_rate_cards where installer_id = a and material = 'hdpe') > 0, 'given rate dropped';
+end $$;
+select pg_temp.as_user(null);
 select pg_temp.fails($q$select dir_submit_application(pg_temp.app('{"references": [{"name": "Kim", "phone": "1"}]}'))$q$, 'Give 2 or 3 references');
 select pg_temp.fails($q$select dir_submit_application(pg_temp.app('{"references": [{"name": "Kim", "phone": "1"}, {"name": "Ana"}]}'))$q$, 'Give each reference%');
 select pg_temp.fails($q$select dir_submit_application(pg_temp.app('{"agreement_name": " "}'))$q$, 'Type your full name to sign');
@@ -86,7 +93,8 @@ end $$;
 select pg_temp.fails($q$select dir_submit_application(pg_temp.app('{"business_name": "Fourth"}'))$q$, 'Too many applications%');
 reset role;
 do $$ begin
-  assert (select count(*) from dir_installers where status = 'applied') = 3, 'honeypot or validation created an installer';
+  -- 3 from this block plus the no-rates application above
+  assert (select count(*) from dir_installers where status = 'applied') = 4, 'honeypot or validation created an installer';
   assert (select slug from dir_installers where id = current_setting('t.app2')::uuid) = 'lone-star-partitions-2', 'slug not made unique';
 end $$;
 
