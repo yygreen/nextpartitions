@@ -16,7 +16,7 @@ const page = (html) => (/<meta charset/i.test(html) ? html : '<!doctype html>\n<
 const bar = `<nav style="background:#0a0a0a;color:#fff;font:12px/1.4 Inter,system-ui,sans-serif;padding:8px 16px;display:flex;flex-wrap:wrap;gap:6px 16px;position:relative;z-index:1000">
 <b style="text-transform:uppercase;letter-spacing:.08em;color:#ffffff99">Prototype</b>
 <a style="color:#fff" href="${APP}/">Start</a><a style="color:#fff" href="homepage.html">Homepage idea</a><a style="color:#fff" href="${APP}/area/dallas">Find an installer</a>
-<a style="color:#fff" href="configurator.html#dfw">Configurator</a><a style="color:#fff" href="${APP}/portal">Installer's view</a><a style="color:#fff" href="${APP}/portal/coordinator">Your team's view</a>
+<a style="color:#fff" href="configurator.html#dfw">Configurator (later phase)</a><a style="color:#fff" href="${APP}/portal">Installer's view</a><a style="color:#fff" href="${APP}/portal/coordinator">Your team's view</a>
 <a style="color:#fff" href="${APP}/quote/sample-j1048">Customer's quote</a><a style="color:#fff" href="${APP}/apply">Installer sign-up</a></nav>`
 // Added by script: some prototypes have no <body> tag to insert into.
 const withBar = (html) => `${html}\n<script>document.body.insertAdjacentHTML('afterbegin', ${JSON.stringify(bar)})</script>\n`

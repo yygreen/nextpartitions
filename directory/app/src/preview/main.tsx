@@ -116,7 +116,7 @@ function App() {
 // Always on top: the parts of the prototype in the order a job happens.
 function Bar() {
   const links: [string, string][] = [
-    ['Start', '#/'], ['Homepage idea', HOMEPAGE], ['Find an installer', areaHref('dallas')], ['Configurator', CONFIGURATOR],
+    ['Start', '#/'], ['Homepage idea', HOMEPAGE], ['Find an installer', areaHref('dallas')], ['Configurator (later phase)', CONFIGURATOR],
     ["Installer's view", portalHref('installer')], ["Your team's view", portalHref('coordinator')], ["Customer's quote", quoteHref('sample-j1048')],
     ['Installer sign-up', applyHref()],
   ]
@@ -148,8 +148,8 @@ function Start() {
       text: 'Someone searches "toilet partition installers Dallas". They land on the area page, which starts with pricing the partitions and then shows checked local installers.',
       links: [['Homepage idea (for Marc)', HOMEPAGE], ['Texas hub', stateHref('texas')], ['Dallas–Fort Worth page', areaHref('dallas')], ['Installer profile', installerHref('acme')]] },
     { title: 'They price the restroom and ask for a quote', who: 'Customer',
-      text: <>They pick material, mounting and stalls, see partitions plus an installation estimate, and send the quote request. An example customer in Plano has already done this: their request is job <b>NP-DFW-1048</b>.</>,
-      links: [['Price your restroom', `${areaHref('dallas')}?installer=acme#configure`], ['Configurator step', CONFIGURATOR]] },
+      text: <>On the area page they answer a few questions and see a price range for partitions and installation, then send the quote request through the configurator as it works today. An example customer in Plano has already done this: their request is job <b>NP-DFW-1048</b>.</>,
+      links: [['Price your restroom', `${areaHref('dallas')}?installer=acme#configure`]] },
     { done: priced, title: 'Installers price the job', who: 'Installer',
       text: <>Up to 3 checked installers near the job get the drawings and scope, never the customer's name or number. Open NP-DFW-1048 as Acme and send a firm price.</>,
       links: [["Installer's view (Acme)", portalHref('installer')]] },
@@ -207,6 +207,12 @@ function Start() {
           ['Entering a job by hand (New job tab)', portalHref('coordinator')], ['A quote with two installer prices (Irving)', quoteHref('sample-j1044')],
         ])}
       </div>
+
+      <section className="bg-card border border-dashed border-border p-5 grid gap-2">
+        <h2 className="text-xl">Later phase: installation inside the configurator</h2>
+        <p className="text-sm max-w-[75ch]">Reserved for when the directory has become an integral part of the site's success: an area with 3 or more listed installers pricing on time and first jobs installed well. Then the configurator gets an optional Installation step for the ZIP codes those installers cover. Until then the configurator stays as it is, and installation is reached through the directory pages above.</p>
+        <p className="text-sm font-semibold"><a className="text-brand-red hover:underline" href={CONFIGURATOR}>See the reserved Installation step →</a></p>
+      </section>
 
       <section className="bg-surface-warm border border-border p-5 grid gap-2">
         <h2 className="text-xl">What we need from you</h2>
