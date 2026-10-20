@@ -221,8 +221,6 @@ function Start() {
           <li>OK on the labels: Verified when listed, Approved after the first completed job.</li>
           <li>How customers pay for partitions: for now they choose PO, a card payment link or bank transfer and the job coordinator follows up. Paying by card on the quote page itself needs the site's payment provider (a question for Marc).</li>
           <li>Trade pricing for installers on partitions (or a rebate per referred order): the main reason they keep buying from you rather than going around you.</li>
-          <li>Marc keeping the area and chosen installer on each quote request, so a customer who wants installation is never missed.</li>
-          <li>Your lawyer reviewing how installers are invited and how prices are ordered, alongside the listing agreement and disclaimer.</li>
         </ul>
       </section>
       <p className="text-sm text-muted-foreground">All installers, customers, prices and reviews are fictional samples. Your clicks stay in this browser tab; "Reset sample data" in the bar starts over. Product links go to the live nextpartitions.com.</p>
