@@ -1,3 +1,4 @@
+import { quoteHref } from '../../directory/links'
 import { useState } from 'react'
 import { formatUsd } from '../../directory/estimate'
 import { MATERIAL_LABEL, MOUNTING_LABEL, type Material, type Mounting } from '../../directory/types'
@@ -90,6 +91,7 @@ function JobPanel({ job, invites, people, reload }: { job: Job; invites: Invite[
   const act = useAction()
   const [pick, setPick] = useState('')
   const [thread, setThread] = useState<string | null>(invites[0]?.installerId ?? null)
+  const [cancelling, setCancelling] = useState(false) // confirmed in the page: browser dialogs don't show everywhere
   const name = (id: string) => people.find((p) => p.id === id)?.displayName ?? 'Installer'
   const invitable = people.filter((p) => p.status === 'approved' && !invites.some((i) => i.installerId === p.id))
   const priced = invites.filter((i) => i.priceCents !== null && !i.declined)
@@ -224,7 +226,11 @@ function JobPanel({ job, invites, people, reload }: { job: Job; invites: Invite[
           </Card>
         )}
         {!job.releasedAt && job.status !== 'cancelled' && (
-          <Button variant="quiet" busy={act.busy} onClick={() => { if (confirm(`Cancel ${job.ref}? Invited installers stop seeing it as open.`)) go(() => portal().updateJob(job.id, { status: 'cancelled', needsAttention: false })) }}>Cancel job</Button>
+          cancelling
+            ? <div className="grid gap-2 text-sm"><span>Cancel {job.ref}? Invited installers stop seeing it as open.</span>
+                <span className="flex gap-3"><Button busy={act.busy} onClick={() => go(() => portal().updateJob(job.id, { status: 'cancelled', needsAttention: false }))}>Yes, cancel job</Button>
+                  <Button variant="outline" onClick={() => setCancelling(false)}>Keep it</Button></span></div>
+            : <Button variant="quiet" onClick={() => setCancelling(true)}>Cancel job</Button>
         )}
       </div>
     </div>
@@ -411,13 +417,14 @@ function QuoteCard({ jobId }: { jobId: string }) {
   if (!q) return null
   const form = f ?? { ref: q.quoteRef ?? '', parts: q.partitionsCents ? String(q.partitionsCents / 100) : '', freight: q.freightCents ? String(q.freightCents / 100) : '',
     tax: q.taxNote ?? '', until: q.validUntil ?? '' }
-  const link = `${typeof location !== 'undefined' ? location.origin : 'https://nextpartitions.com'}/quote/${q.token}`
+  const link = typeof location !== 'undefined' ? new URL(quoteHref(q.token), location.href).toString() : `https://nextpartitions.com/quote/${q.token}`
   const done = (s: string | null, label: string) => s && <li>{label}</li>
   return (
     <Card title="Customer quote page">
       <div className="flex gap-2">
         <input aria-label="Quote link" readOnly className={`${INPUT} text-xs`} value={link} onFocus={(e) => e.target.select()} />
-        <Button variant="outline" onClick={async () => { await navigator.clipboard?.writeText(link); setCopied(true) }}>{copied ? 'Copied' : 'Copy'}</Button>
+        <Button variant="outline" onClick={async () => { try { await navigator.clipboard?.writeText(link); setCopied(true) } catch { setCopied(false) } }}>{copied ? 'Copied' : 'Copy'}</Button>
+        <a className="inline-flex items-center px-3 min-h-11 border border-border font-semibold hover:bg-muted" href={link} target={portal().sample ? undefined : '_blank'} rel="noopener">Open</a>
       </div>
       <p className="text-xs text-muted-foreground">Send this link to the customer only. Anyone with it can see the quote and choose an installer.</p>
       <div className="grid grid-cols-2 gap-2">

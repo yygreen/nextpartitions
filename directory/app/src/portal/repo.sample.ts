@@ -44,7 +44,7 @@ const jobs: Job[] = [
   baseJob({ id: 'j1048', ref: 'NP-DFW-1048', quoteRequestRef: 'Q-20417', city: 'Plano', zip: '75074', requiresBackgroundCheck: true,
     scope: { material: 'hdpe', mounting: 'overhead_braced', stalls: 6, ada: true, urinal_screens: 2, remove_stalls: 6, building: 'School (elementary)',
       layout: 'Between walls', color: 'Sage', notes: 'Old stalls to be removed and hauled away. Ground floor, loading dock at the back.' } }),
-  baseJob({ id: 'j1044', ref: 'NP-DFW-1044', city: 'Irving', zip: '75038', createdAt: at(-2, 14), priceDueAt: at(0, 14),
+  baseJob({ id: 'j1044', ref: 'NP-DFW-1044', city: 'Irving', zip: '75038', createdAt: at(-2, 14), priceDueAt: at(0, 14), status: 'presented', windowClosedAt: at(0, 9),
     scope: { material: 'phenolic', mounting: 'floor_mounted', stalls: 4, ada: true, building: 'Office', notes: 'Fourth floor, freight elevator.' } }),
   baseJob({ id: 'j1041', ref: 'NP-DFW-1041', city: 'Dallas', zip: '75204', status: 'installer_chosen', chosenInstallerId: ACME, createdAt: at(-6, 14),
     windowClosedAt: at(-4, 14), scope: { material: 'hdpe', mounting: 'overhead_braced', stalls: 3, building: 'Restaurant' } }),
@@ -64,8 +64,10 @@ const inv = (jobId: string, installerId: string, o: Partial<Invite> = {}): Invit
 }
 const invites: Invite[] = [
   inv('j1048', ACME, { estimateCents: 214000 }), inv('j1048', NORTHWIND, { estimateCents: 198000 }),
-  inv('j1044', ACME, { estimateCents: 132000, priceCents: 138000, respondedAt: at(-1, 16), earliestInstallDate: addDays(today, 21) }),
-  inv('j1044', NORTHWIND, { estimateCents: 126000 }),
+  inv('j1044', ACME, { estimateCents: 132000, priceCents: 138000, respondedAt: at(-1, 16), earliestInstallDate: addDays(today, 21),
+    assumptions: 'Finished floor, blocking in place' }),
+  inv('j1044', NORTHWIND, { estimateCents: 126000, priceCents: 129000, respondedAt: at(-1, 18), earliestInstallDate: addDays(today, 24),
+    assumptions: 'Finished floor, freight elevator available 7 AM–5 PM' }),
   inv('j1041', ACME, { estimateCents: 92000, priceCents: 92000, respondedAt: at(-5, 15) }),
   inv('j1041', NORTHWIND, { estimateCents: 88000, priceCents: 104000, respondedAt: at(-5, 18), priceFlag: 'above_rates' }),
   inv('j1036', ACME, { estimateCents: 76000, priceCents: 76000, respondedAt: at(-11, 11) }),
@@ -111,8 +113,11 @@ const uploads: DocumentUpload[] = [
   { id: 'u1', installerId: NORTHWIND, checkType: 'insurance', path: 'sample/northwind-coi-2027.pdf', uploadedAt: at(-1, 15), reviewedAt: null, reviewNote: null },
 ]
 
-// The sample switches between the installer (Acme) and the coordinator with ?as=coordinator.
-const viewAs = () => (typeof location !== 'undefined' && new URLSearchParams(location.search).get('as') === 'coordinator' ? 'coordinator' : 'installer')
+// The sample switches between the installer (Acme) and the coordinator with ?as=coordinator, or the
+// clickable preview sets the role from its route.
+let role: 'installer' | 'coordinator' | null = null
+export const setSampleRole = (r: 'installer' | 'coordinator') => { role = r }
+const viewAs = () => role ?? (typeof location !== 'undefined' && new URLSearchParams(location.search).get('as') === 'coordinator' ? 'coordinator' : 'installer')
 const job = (id: string) => jobs.find((j) => j.id === id)!
 const hide = (b: string) => b.replace(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g, '[hidden until the job is released]')
   .replace(/(\+?1[\s.-]?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}/g, '[hidden until the job is released]')
@@ -344,3 +349,74 @@ const quotes: Record<string, QuoteAdmin> = {}
 const quoteFor = (jobId: string) => (quotes[jobId] ??= { token: `sample-${jobId}`, quoteRef: null, partitionsCents: null, freightCents: null, taxNote: null,
   validUntil: null, drawingsApprovedAt: null, changeRequest: null, customerChoice: null, paymentMethod: null, poNumber: null })
 Object.assign(quoteFor('j1044'), { quoteRef: 'Q-26-1044', partitionsCents: 412000, freightCents: 32000, validUntil: addDays(today, 25) })
+Object.assign(quoteFor('j1048'), { quoteRef: 'Q-26-1048', partitionsCents: 527000, freightCents: 38500, taxNote: 'Tax-exempt (school): send your certificate',
+  validUntil: addDays(today, 29) })
+
+// ---------- shared with the quote page and the application form in the clickable preview ----------
+// One store, so a customer's choice shows up for the coordinator and installer, and a new application in vetting.
+export const sampleStore = {
+  installers, jobs, invites, contacts, quoteFor,
+  byToken(token: string) {
+    const jobId = Object.keys(quotes).find((id) => quotes[id].token === token) ?? (token.startsWith('sample-') ? token.slice(7) : '')
+    const j = jobs.find((x) => x.id === jobId && !x.isTest)
+    return j ? { job: j, quote: quoteFor(j.id), contact: contacts[j.id], invites: invites.filter((i) => i.jobId === j.id), release: () => release(j) } : null
+  },
+  addApplicant(p: Record<string, any>) {
+    const id = `c0000000-0000-4000-8000-${String(Date.now()).slice(-12)}`
+    const slug = String(p.business_name).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'applicant'
+    installers.push({ id, slug, displayName: p.business_name, status: 'applied', baseCity: p.base_city, baseState: 'TX', baseZip: p.base_zip,
+      serviceRadiusMi: Number(p.service_radius_mi) || 40, materials: p.materials ?? [], mountings: p.mountings ?? [], about: null, photoUrl: null,
+      maxOpenJobs: 5, awayFrom: null, awayTo: null, hasLogin: false })
+    const now = new Date().toISOString()
+    vetting[id] = {
+      extra: { ...blank, legalName: p.business_name, contactName: p.contact_name, contactEmail: p.email, contactPhone: p.phone,
+        yearsInBusiness: p.years_in_business ? Number(p.years_in_business) : null, crewSize: p.crew_size, extras: p.extras ?? [], brands: p.brands || null,
+        registrationNumber: p.registration_number || null, agreementName: p.agreement_name, agreementAcceptedAt: now, appliedAt: now },
+      areas: [],
+      checks: [chk('insurance', 'pending', { documentPath: p.insurance_file ?? null }),
+        chk('business_registration', 'pending', { internalNote: p.registration_number ? `Registration number: ${p.registration_number}` : null }),
+        chk('references', 'pending'), chk('response_test', 'pending'), chk('listing_agreement', 'pending', { internalNote: `Agreed to sign if approved: ${p.agreement_name}` })],
+      refs: (p.references ?? []).map((r: any) => ref(r.name, r.company || null, { phone: r.phone || null, email: r.email || null, jobNote: r.job_note || null })),
+    }
+    const ex = p.rates ?? {}
+    rates[id] = (p.materials ?? []).flatMap((m: any) => (p.mountings ?? []).map((mt: any): RateRow => {
+      const per = (ex.per_stall?.[m] ?? 0) + (mt === 'ceiling_hung' || mt === 'floor_to_ceiling' ? ex.high_mount_extra_cents ?? 0 : 0)
+      return { material: m, mounting: mt, perStallLowCents: per, perStallHighCents: per, minimumCents: ex.minimum_cents ?? 0,
+        extras: Object.fromEntries(['ada_stall_cents', 'urinal_screen_cents', 'demo_per_stall_cents', 'free_miles', 'per_mile_cents'].filter((k) => ex[k] != null).map((k) => [k, ex[k]])) }
+    }))
+    if (p.insurance_file) uploads.unshift({ id: `u${uploads.length + 1}`, installerId: id, checkType: 'insurance', path: p.insurance_file, uploadedAt: now, reviewedAt: null, reviewNote: null })
+    save()
+    return id
+  },
+}
+
+// ---------- keep the sample across page loads (the preview's configurator and homepage are separate pages) ----------
+const KEY = 'np-prototype-sample-v1'
+const state = () => ({ installers, jobs, invites, messages, contacts, events, rates, checks, uploads, vetting, quotes, AREAS, msgSeq, refSeq })
+function save() {
+  try { sessionStorage.setItem(KEY, JSON.stringify(state())) } catch { /* private mode: the sample just resets */ }
+}
+function load() {
+  let s: ReturnType<typeof state> | null = null
+  try { s = JSON.parse(sessionStorage.getItem(KEY) ?? 'null') } catch { s = null }
+  if (!s) return
+  const fill = <T,>(arr: T[], from: T[]) => { arr.splice(0, arr.length, ...from) }
+  const put = (obj: Record<string, unknown>, from: Record<string, unknown>) => { for (const k of Object.keys(obj)) delete obj[k]; Object.assign(obj, from) }
+  fill(installers, s.installers); fill(jobs, s.jobs); fill(invites, s.invites); fill(messages, s.messages); fill(events, s.events)
+  fill(checks, s.checks); fill(uploads, s.uploads); fill(AREAS, s.AREAS)
+  put(contacts, s.contacts); put(rates, s.rates); put(vetting, s.vetting); put(quotes, s.quotes)
+  msgSeq = s.msgSeq; refSeq = s.refSeq
+}
+export function resetSample() {
+  try { sessionStorage.removeItem(KEY) } catch { /* nothing stored */ }
+}
+// Save after every change too: leaving the page doesn't always fire the events above in time.
+for (const [k, f] of Object.entries(samplePortal)) {
+  if (typeof f === 'function') (samplePortal as any)[k] = async (...a: unknown[]) => { const r = await f(...a); save(); return r }
+}
+if (typeof window !== 'undefined') {
+  load()
+  window.addEventListener('pagehide', save)
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') save() })
+}
+export const saveSample = save

@@ -1,5 +1,6 @@
 import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 import { type ApplicationForm, type Files, storageName, toPayload } from './form'
+import { sampleStore } from '../portal/repo.sample'
 
 // Sends an installer application. With Supabase keys it calls dir_submit_application as an anonymous
 // visitor, then uploads the documents into the applicant's own folder (allowed for 2 hours after
@@ -15,8 +16,9 @@ const client = () => (db ??= createClient(url!, key!, { auth: { persistSession: 
 // to email that file instead of applying twice.
 export async function submitApplication(form: ApplicationForm, files: Files): Promise<{ installerId: string; documentProblem?: string }> {
   if (sample) {
+    // Nothing is sent; in the clickable preview the application appears in the coordinator's Vetting tab.
     await new Promise((r) => setTimeout(r, 400))
-    return { installerId: 'sample' }
+    return { installerId: sampleStore.addApplicant({ ...toPayload(form), insurance_file: files.insurance?.name ?? null }) }
   }
   const { data: installerId, error } = await client().rpc('dir_submit_application', { p: toPayload(form) })
   if (error) throw error

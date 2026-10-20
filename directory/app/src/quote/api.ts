@@ -1,7 +1,8 @@
 import { createClient } from '@supabase/supabase-js'
-import type { Material, Mounting } from '../directory/types'
 import type { JobStatus, Scope } from '../portal/types'
 import { customerDrawingsUrl } from './server'
+import { sampleRepo } from '../directory/repo.sample'
+import { sampleStore, saveSample } from '../portal/repo.sample'
 
 // The customer's quote, read and answered through the dir_customer_* functions (supabase/migrations), keyed by
 // the secret token in the link. Browser-side with the publishable key: the database checks every rule.
@@ -96,48 +97,89 @@ function supabaseQuotes(url: string, key: string): QuoteApi {
   }
 }
 
-// ---------- FICTIONAL sample (no Supabase keys): the Plano quote from prototypes/customer-quote.html ----------
+// ---------- FICTIONAL sample (no Supabase keys) ----------
+// Reads and changes the portal's sample jobs (portal/repo.sample.ts), so in the clickable preview a customer's
+// choice shows up for the job coordinator and the installer. Tokens look like 'sample-j1044'.
 export const QUOTE_SAMPLE_NOTICE = 'Sample quote: the customer, installers and prices are fictional. Nothing is saved or paid.'
-const in_ = (d: number) => new Date(Date.now() + d * 864e5).toISOString().slice(0, 10)
-const sampleState = (): CustomerQuote => ({
-  ref: 'NP-DFW-1048', quoteRef: 'Q-26-1048', city: 'Plano', zip: '75074',
-  scope: { material: 'hdpe' as Material, mounting: 'overhead_braced' as Mounting, stalls: 6, ada: true, urinal_screens: 2, remove_stalls: 6,
-    building: 'School (elementary)', layout: 'Between walls', color: 'Sage' },
-  delivery: { from: in_(18), to: in_(22) }, status: 'presented', hasDrawings: true, drawingsApprovedAt: null,
-  partitionsCents: 527000, freightCents: 38500, taxNote: 'Tax-exempt (school): send your certificate', validUntil: in_(29),
-  customerName: 'Pat Lee', company: 'Plano ISD Facilities', email: 'pat.lee@example.org', changeRequest: null, customerChoice: null,
-  paymentMethod: null, poNumber: null, paid: false, releasedAt: null, installDate: null, windowClosed: true, searchRound: 1, chosenInstallerId: null,
-  prices: [
-    { installerId: 'a1', slug: 'acme', displayName: 'Acme Installations', baseCity: 'Dallas', listed: true, rating: 4.9, reviewCount: 11, installs: 14,
-      priceCents: 214000, earliestInstallDate: in_(23), assumptions: 'Finished floor, blocking in place, work during school hours' },
-    { installerId: 'a2', slug: 'northwind', displayName: 'Northwind Washroom', baseCity: 'Fort Worth', listed: true, rating: 4.7, reviewCount: 5, installs: 6,
-      priceCents: 198000, earliestInstallDate: in_(26), assumptions: 'Finished floor; removal includes haul-away' },
-    { installerId: 'a3', slug: 'metroplex', displayName: 'Metroplex Division 10', baseCity: 'Irving', listed: true, rating: null, reviewCount: 0, installs: 0,
-      priceCents: 205000, earliestInstallDate: in_(24), assumptions: null },
-  ],
-})
-const samples: Record<string, CustomerQuote> = {}
-const sq = (t: string) => (samples[t] ??= sampleState())
+const SHOWN: JobStatus[] = ['presented', 'installer_chosen', 'released', 'scheduled', 'installed', 'signed_off']
 const wait = () => new Promise((r) => setTimeout(r, 150))
+const need = (token: string) => {
+  const q = sampleStore.byToken(token)
+  if (!q) throw new Error('Quote not found')
+  return q
+}
+const visible = (q: NonNullable<ReturnType<typeof sampleStore.byToken>>) =>
+  SHOWN.includes(q.job.status) ? q.invites.filter((i) => i.priceCents !== null && !i.declined && i.priceFlag === null) : []
+const flag = (q: NonNullable<ReturnType<typeof sampleStore.byToken>>, reason: string) => {
+  q.job.needsAttention = true
+  q.job.attentionReason = reason
+}
 
 const sampleQuotes: QuoteApi = {
   sample: true,
-  async get(token) { await wait(); return structuredClone(sq(token)) },
-  async approveDrawings(token) { await wait(); sq(token).drawingsApprovedAt = new Date().toISOString() },
-  async requestChange(token, text) { await wait(); Object.assign(sq(token), { changeRequest: text, drawingsApprovedAt: null }) },
+  async get(token) {
+    await wait()
+    const q = sampleStore.byToken(token)
+    if (!q) return null
+    const prices = await Promise.all(visible(q).map(async (i): Promise<QuotePrice> => {
+      const who = sampleStore.installers.find((x) => x.id === i.installerId)!
+      const pub = await sampleRepo.installer(who.slug)
+      return { installerId: i.installerId, slug: who.slug, displayName: who.displayName, baseCity: who.baseCity, listed: who.status === 'approved',
+        rating: pub?.rating ?? null, reviewCount: pub?.reviewCount ?? 0, installs: pub?.installs ?? 0, priceCents: i.priceCents!,
+        earliestInstallDate: i.earliestInstallDate, assumptions: i.assumptions }
+    }))
+    const { job: j, quote: k, contact: c } = q
+    return structuredClone({
+      ref: j.ref, quoteRef: k.quoteRef, city: j.city, zip: j.zip, scope: j.scope, delivery: j.delivery, status: j.status, hasDrawings: !!j.drawingsPath,
+      drawingsApprovedAt: k.drawingsApprovedAt, partitionsCents: k.partitionsCents, freightCents: k.freightCents, taxNote: k.taxNote, validUntil: k.validUntil,
+      customerName: c?.customerName ?? 'Customer', company: c?.company ?? null, email: c?.email ?? '', changeRequest: k.changeRequest,
+      customerChoice: k.customerChoice, paymentMethod: k.paymentMethod, poNumber: k.poNumber, paid: !!(j.partitionsPaidAt || j.poAcceptedAt),
+      releasedAt: j.releasedAt, installDate: j.installDate, windowClosed: !!j.windowClosedAt, searchRound: j.searchRound,
+      chosenInstallerId: j.chosenInstallerId, prices,
+    })
+  },
+  async approveDrawings(token) {
+    await wait()
+    const q = need(token)
+    if (!q.job.drawingsPath) throw new Error("Your shop drawings aren't ready yet")
+    q.quote.drawingsApprovedAt ??= new Date().toISOString()
+  },
+  async requestChange(token, text) {
+    await wait()
+    const q = need(token)
+    Object.assign(q.quote, { changeRequest: text, drawingsApprovedAt: null })
+    flag(q, 'Customer asked for a drawing change')
+  },
   async choose(token, id) {
     await wait()
-    const q = sq(token)
-    if (!q.drawingsApprovedAt) throw new Error('Approve your drawings first')
-    Object.assign(q, { chosenInstallerId: id, status: 'installer_chosen' })
+    const q = need(token)
+    if (!q.quote.drawingsApprovedAt) throw new Error('Approve your shop drawings first')
+    if (q.job.chosenInstallerId) throw new Error("You've already chosen an installer. Call 1-833-997-7489 to change.")
+    if (q.job.status !== 'presented') throw new Error("Installer prices aren't ready yet")
+    if (!visible(q).some((i) => i.installerId === id)) throw new Error('That installer has no price on this quote')
+    Object.assign(q.job, { chosenInstallerId: id, status: 'installer_chosen' })
+    q.quote.customerChoice = null
+    q.release()
   },
-  async fallback(token, choice) { await wait(); sq(token).customerChoice = choice },
+  async fallback(token, choice) {
+    await wait()
+    const q = need(token)
+    q.quote.customerChoice = choice
+    flag(q, `Customer chose: ${({ wait: 'keep waiting for prices', partitions_only: 'partitions only, install later', own_installer: 'their own installer' } as const)[choice]}`)
+  },
   async payment(token, method, po) {
     await wait()
-    if (method === 'po' && !po) throw new Error('Enter your PO number')
-    Object.assign(sq(token), { paymentMethod: method, poNumber: po })
+    const q = need(token)
+    if (q.job.partitionsPaidAt || q.job.poAcceptedAt) throw new Error('Your partitions order is already paid')
+    if (method === 'po' && !po) throw new Error('Enter your purchase order number')
+    Object.assign(q.quote, { paymentMethod: method, poNumber: method === 'po' ? po : null })
+    flag(q, method === 'po' ? `Customer will pay by purchase order ${po}: accept the PO` : method === 'card' ? 'Customer will pay by card: send a payment link'
+      : 'Customer will pay by bank transfer: send bank details and a pro forma invoice')
   },
   async drawingsUrl() { return 'data:text/plain,Sample%20shop%20drawings%20(the%20real%20page%20opens%20the%20PDF)' },
+}
+for (const [k, f] of Object.entries(sampleQuotes)) {
+  if (typeof f === 'function') (sampleQuotes as any)[k] = async (...a: unknown[]) => { const r = await f(...a); saveSample(); return r }
 }
 
 let api: QuoteApi | null = null

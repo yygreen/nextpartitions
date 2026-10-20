@@ -1,3 +1,4 @@
+import { homeHref, portalHref } from '../../directory/links'
 import { type ReactNode, useEffect, useState } from 'react'
 import { onSignIn, portal, sendSignInLink } from '../client'
 import { PORTAL_SAMPLE_NOTICE } from '../repo.sample'
@@ -34,12 +35,12 @@ function Shell({ me, onSignOut, children }: { me?: Me; onSignOut?: () => void; c
     <div className="min-h-screen bg-background">
       {sample && (
         <div className="bg-surface-warm text-muted-foreground border-b border-border text-sm text-center px-4 py-2">
-          {PORTAL_SAMPLE_NOTICE} View as <a className="underline" href="?">installer (Acme)</a> or <a className="underline" href="?as=coordinator">job coordinator</a>.
+          {PORTAL_SAMPLE_NOTICE} View as <a className="underline" href={portalHref('installer')}>installer (Acme)</a> or <a className="underline" href={portalHref('coordinator')}>job coordinator</a>.
         </div>
       )}
       <header className="bg-primary text-primary-foreground">
         <div className={`${WRAP} flex flex-wrap justify-between items-center gap-3 py-4`}>
-          <a href="/" className="leading-tight"><b className="block text-lg">Next Partitions</b>
+          <a href={homeHref()} className="leading-tight"><b className="block text-lg">Next Partitions</b>
             <small className="text-primary-foreground/70">{me?.kind === 'coordinator' ? 'Job coordination' : 'Installer portal'}</small></a>
           {me && me.kind !== 'none' && (
             <div className="flex items-center gap-4 text-sm">
