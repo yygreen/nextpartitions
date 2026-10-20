@@ -202,7 +202,7 @@ function Start() {
           ['The application form', applyHref()], ['Checking applicants (Vetting tab)', portalHref('coordinator')],
           ['A Verified installer, new to you', installerHref('contoso')], ['An Approved, Established installer', installerHref('acme')],
         ])}
-        {group("Your team's daily work", 'One job coordinator runs the middle: jobs that need attention come first, then documents to check and jobs to enter by hand.', [
+        {group("Your team's daily work", 'The job coordinator runs the middle: jobs that need attention come first, then documents to check and jobs to enter by hand. We do this for you for the first months.', [
           ['Jobs needing attention (Jobs tab)', portalHref('coordinator')], ['Documents to check (Documents tab)', portalHref('coordinator')],
           ['Entering a job by hand (New job tab)', portalHref('coordinator')], ['A quote with two installer prices (Irving)', quoteHref('sample-j1044')],
         ])}
@@ -215,12 +215,16 @@ function Start() {
       </section>
 
       <section className="bg-surface-warm border border-border p-5 grid gap-2">
-        <h2 className="text-xl">What we need from you</h2>
+        <h2 className="text-xl">To discuss on our call</h2>
+        <p className="text-sm max-w-[75ch]"><b>The job coordinator role:</b> we handle it for the first months, until leads come in regularly and the work outgrows the SEO scope. Then it moves to someone on your team or a new hire; we'll agree when.</p>
         <ul className="list-disc pl-5 grid gap-1 text-sm max-w-[75ch]">
-          <li>Who will be the job coordinator (nobody holds the role yet).</li>
           <li>OK on the labels: Verified when listed, Approved after the first completed job.</li>
-          <li>How customers pay for partitions: for now they choose PO, a card payment link or bank transfer and your team follows up. Paying by card on the quote page itself needs the site's payment provider (a question for Marc).</li>
+          <li>How customers pay for partitions: for now they choose PO, a card payment link or bank transfer and the job coordinator follows up. Paying by card on the quote page itself needs the site's payment provider (a question for Marc).</li>
           <li>Pilot area: Dallas–Fort Worth, unless your orders point elsewhere.</li>
+          <li>Trade pricing for installers on partitions (or a rebate per referred order): the main reason they keep buying from you rather than going around you.</li>
+          <li>Whether an accepted purchase order releases the customer's details for every buyer, or only schools and public agencies.</li>
+          <li>Marc keeping the area and chosen installer on each quote request, so a customer who wants installation is never missed.</li>
+          <li>Your lawyer reviewing how installers are invited and how prices are ordered, alongside the listing agreement and disclaimer.</li>
         </ul>
       </section>
       <p className="text-sm text-muted-foreground">All installers, customers, prices and reviews are fictional samples. Your clicks stay in this browser tab; "Reset sample data" in the bar starts over. Product links go to the live nextpartitions.com.</p>

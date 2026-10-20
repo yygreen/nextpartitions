@@ -2,7 +2,7 @@
 
 Proposal for Abe (decisions 9–11 build on it). The installer portal prototype shows it: https://claude.ai/artifact/32L7EWz37XztbenrBwUKBj (`#np`, job NP-DFW-1052 for the fallback).
 
-> **The job coordinator isn't hired or named yet.** "The job coordinator" is the person at Next Partitions who sends jobs to installers, checks flagged prices and calls customers when no installer prices. Nobody has this role today. Abe decides who does it (an existing team member or a new hire); until then the prototypes show **[Coordinator name]** where that person's name goes.
+> **Who the job coordinator is.** "The job coordinator" sends jobs to installers, checks flagged prices and calls customers when no installer prices. We (the agency) handle the job coordinator role for the first months, until leads come in regularly and the work outgrows the SEO scope; then it moves to Abe's team or a hire. The prototypes show **[Coordinator name]** where that person's name goes.
 
 ## 1. Who gets invited to price a job
 
