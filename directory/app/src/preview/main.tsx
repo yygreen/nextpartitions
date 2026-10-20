@@ -6,7 +6,7 @@
 import '../styles.css'
 import { createRoot } from 'react-dom/client'
 import { type ReactNode, useEffect, useState } from 'react'
-import { applyHref, areaHref, configuratorHref, installerHref, portalHref, quoteHref, serviceAreaHref, setLinkMode, stateHref } from '../directory/links'
+import { applyHref, areaHref, configuratorHref, installerHref, portalHref, quoteHref, setLinkMode, stateHref } from '../directory/links'
 import { SiteChrome } from '../shell/SiteChrome'
 import { sampleRepo as db } from '../directory/repo.sample'
 import { AreaView, InstallerView, ServiceAreaView, StateHubView } from '../directory/views'
@@ -113,11 +113,12 @@ function App() {
   )
 }
 
-// Always on top: jump between the parts of the prototype.
+// Always on top: the parts of the prototype in the order a job happens.
 function Bar() {
   const links: [string, string][] = [
-    ['Start', '#/'], ['Homepage idea', HOMEPAGE], ['Directory', stateHref('texas')], ['Configurator', CONFIGURATOR],
-    ['Customer quote', quoteHref('sample-j1044')], ['Installer portal', portalHref('installer')], ['Coordinator', portalHref('coordinator')], ['Apply', applyHref()],
+    ['Start', '#/'], ['Homepage idea', HOMEPAGE], ['Find an installer', areaHref('dallas')], ['Configurator', CONFIGURATOR],
+    ["Installer's view", portalHref('installer')], ["Your team's view", portalHref('coordinator')], ["Customer's quote", quoteHref('sample-j1048')],
+    ['Installer sign-up', applyHref()],
   ]
   return (
     <nav aria-label="Prototype" className="bg-neutral-950 text-white text-xs">
@@ -131,58 +132,92 @@ function Bar() {
 }
 
 // ---------- start page ----------
+// Written for Abe: his business in the order things happen, one job from first visit to installed restroom.
+type Link = [label: string, href: string]
 function Start() {
   const j = sampleStore.byToken('sample-j1048')
   const acme = sampleStore.installers.find((i) => i.slug === 'acme')
-  const acmeInvite = j?.invites.find((i) => i.installerId === acme?.id)
-  const loop: [boolean, ReactNode][] = [
-    [!!acmeInvite?.priceCents, <>As <b>Acme</b>, open job NP-DFW-1048 (Plano) and send a firm price. <a className="underline" href={portalHref('installer')}>Installer portal</a></>],
-    [!!j && j.job.status !== 'quoting' && j.job.status !== 'new', <>As the <b>job coordinator</b>, open NP-DFW-1048 and click "Show prices on the customer's quote". The job panel has the customer's quote link. <a className="underline" href={portalHref('coordinator')}>Coordinator</a></>],
-    [!!j?.job.chosenInstallerId, <>As the <b>customer</b>, approve the drawings, choose an installer and say how you'll pay. <a className="underline" href={quoteHref('sample-j1048')}>Pat Lee's quote</a></>],
-    [!!(j?.job.partitionsPaidAt || j?.job.poAcceptedAt), <>As the <b>coordinator</b>, the job is flagged with the payment method: click "Purchase order accepted" (or "Partitions order paid"). <a className="underline" href={portalHref('coordinator')}>Coordinator</a></>],
-    [!!j?.job.installDate, <>As <b>Acme</b> (if chosen), the customer's details are now in the job: set the install date. <a className="underline" href={portalHref('installer')}>Installer portal</a></>],
+  const priced = !!j?.invites.find((i) => i.installerId === acme?.id)?.priceCents
+  const shown = !!j && !['new', 'routed', 'quoting'].includes(j.job.status)
+  const chosen = !!j?.job.chosenInstallerId
+  const paid = !!(j?.job.partitionsPaidAt || j?.job.poAcceptedAt)
+  const scheduled = !!j?.job.installDate
+
+  const steps: { done?: boolean; title: string; who: string; text: ReactNode; links: Link[] }[] = [
+    { title: 'A customer finds you', who: 'Customer',
+      text: 'Someone searches "toilet partition installers Dallas". They land on the area page, which starts with pricing the partitions and then shows checked local installers.',
+      links: [['Homepage idea (for Marc)', HOMEPAGE], ['Texas hub', stateHref('texas')], ['Dallas–Fort Worth page', areaHref('dallas')], ['Installer profile', installerHref('acme')]] },
+    { title: 'They price the restroom and ask for a quote', who: 'Customer',
+      text: <>They pick material, mounting and stalls, see partitions plus an installation estimate, and send the quote request. Pat Lee of Plano ISD has already done this: her request is job <b>NP-DFW-1048</b>.</>,
+      links: [['Price your restroom', `${areaHref('dallas')}?installer=acme#configure`], ['Configurator step', CONFIGURATOR]] },
+    { done: priced, title: 'Installers price the job', who: 'Installer',
+      text: <>Up to 3 checked installers near the job get the drawings and scope, never the customer's name or number. Open NP-DFW-1048 as Acme and send a firm price.</>,
+      links: [["Installer's view (Acme)", portalHref('installer')]] },
+    { done: shown, title: 'Your team shows the prices to the customer', who: 'Your team',
+      text: <>Your job coordinator sees every price, with any price more than 15% above the installer's own rates flagged. Open NP-DFW-1048 and click "Show prices on the customer's quote".</>,
+      links: [["Your team's view", portalHref('coordinator')]] },
+    { done: chosen && !!j?.quote.paymentMethod, title: 'The customer chooses an installer and pays you for the partitions', who: 'Customer',
+      text: 'On their quote page they approve the drawings, pick an installer, and pay Next Partitions for the partitions (PO, card or bank transfer). Installation is billed by the installer, not by you.',
+      links: [["Pat Lee's quote", quoteHref('sample-j1048')]] },
+    { done: paid && scheduled, title: 'Payment releases the job; the installer schedules and installs', who: 'Your team, then installer',
+      text: <>Your team marks the PO accepted. Only then does the installer get the customer's details and set the install date. Afterwards the customer is asked for a review.</>,
+      links: [["Your team's view", portalHref('coordinator')], ["Installer's view", portalHref('installer')]] },
   ]
-  const journey = (title: string, who: string, steps: [string, string][]) => (
-    <section className="bg-card border border-border p-5 grid gap-3 content-start">
+
+  const group = (title: string, intro: string, items: Link[]) => (
+    <section className="bg-card border border-border p-5 grid gap-2 content-start">
       <h2 className="text-xl">{title}</h2>
-      <p className="text-sm text-muted-foreground">{who}</p>
-      <ol className="grid gap-2 text-sm list-decimal pl-5">{steps.map(([l, h]) => <li key={l}><a className="underline hover:text-brand-red" href={h}>{l}</a></li>)}</ol>
+      <p className="text-sm text-muted-foreground">{intro}</p>
+      <ul className="grid gap-1.5 text-sm">{items.map(([l, h]) => <li key={l}><a className="underline hover:text-brand-red" href={h}>{l}</a></li>)}</ul>
     </section>
   )
+
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid gap-8">
-      <header className="grid gap-2">
-        <h1 className="text-3xl md:text-4xl font-black">Next Partitions: clickable prototype</h1>
-        <p className="text-muted-foreground max-w-[70ch]">The installer directory, the customer's quote, the installer portal and job coordination, built from the real code and running on fictional sample data. Everything is linked, and what you do in one part shows up in the others while this tab is open.</p>
+    <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid gap-8">
+      <header className="grid gap-3">
+        <p className="text-sm font-semibold uppercase tracking-wider text-brand-red">Prototype for Abe Gold · Next Partitions</p>
+        <h1 className="text-3xl md:text-4xl font-black">How the installer directory works</h1>
+        <p className="text-lg max-w-[68ch]">You keep selling partitions. Checked local installers price and do the installation, and the customer hires and pays them directly. You earn on the partitions and take no liability for the install.</p>
+        <p className="text-sm text-muted-foreground max-w-[68ch]">Below is one job from first visit to installed restroom. Click through the steps in order; each one ticks off as you do it. Everything here is sample data and nothing is sent.</p>
       </header>
-      <section className="bg-surface-warm border border-border p-5 grid gap-3">
-        <h2 className="text-xl">Try the whole loop: one job from price to install</h2>
-        <ol className="grid gap-2 text-sm">
-          {loop.map(([done, text], n) => (
-            <li key={n} className="flex gap-3 items-start">
-              <span className={`size-6 shrink-0 grid place-items-center border-2 font-bold ${done ? 'border-emerald-700 text-emerald-800' : 'border-border text-muted-foreground'}`}>{done ? '✓' : n + 1}</span>
-              <span>{text}</span>
+
+      <section aria-labelledby="job-h" className="grid gap-3">
+        <h2 id="job-h" className="text-2xl">One job, start to finish</h2>
+        <ol className="grid gap-3">
+          {steps.map((s, n) => (
+            <li key={s.title} className="bg-card border border-border p-4 grid grid-cols-[2rem_minmax(0,1fr)] gap-x-4 gap-y-1">
+              <span className={`size-8 grid place-items-center border-2 font-black ${s.done ? 'border-emerald-700 text-emerald-800 bg-emerald-50' : 'border-brand-red text-brand-red'}`} aria-label={s.done ? 'Done' : `Step ${n + 1}`}>{s.done ? '✓' : n + 1}</span>
+              <div className="grid gap-1.5">
+                <h3 className="text-lg leading-tight">{s.title} <span className="ml-1 align-middle text-xs font-semibold uppercase tracking-wider text-muted-foreground">{s.who}</span></h3>
+                <p className="text-sm max-w-[75ch]">{s.text}</p>
+                <p className="flex flex-wrap gap-x-4 gap-y-1 text-sm font-semibold">{s.links.map(([l, h]) => <a key={l} className="text-brand-red hover:underline" href={h}>{l} →</a>)}</p>
+              </div>
             </li>
           ))}
         </ol>
       </section>
-      <div className="grid md:grid-cols-3 gap-4">
-        {journey('Customer', 'Finds an installer, prices the restroom, gets a quote.', [
-          ['Homepage idea (for Marc)', HOMEPAGE], ['Texas installer hub', stateHref('texas')], ['Dallas–Fort Worth area page', areaHref('dallas')],
-          ['Installer profile (Approved)', installerHref('acme')], ['Installer profile (Verified, new)', installerHref('contoso')],
-          ['Price with Acme', `${areaHref('dallas')}?installer=acme#configure`], ['Configurator installation step', CONFIGURATOR],
-          ['Quote with two installer prices', quoteHref('sample-j1044')], ['Service area (all states)', serviceAreaHref()],
+
+      <div className="grid md:grid-cols-2 gap-4">
+        {group('Where installers come from', 'Installers apply in about 5 minutes. Your team checks insurance, registration and references and sends a timed test job. Pass, and they go live as Verified; their first completed job makes them Approved.', [
+          ['The application form', applyHref()], ['Checking applicants (Vetting tab)', portalHref('coordinator')],
+          ['A Verified installer, new to you', installerHref('contoso')], ['An Approved, Established installer', installerHref('acme')],
         ])}
-        {journey('Installer', 'Applies, gets checked, then prices and installs jobs.', [
-          ['Apply to get listed', applyHref()], ['Portal: job requests', portalHref('installer')],
-          ['A released job: customer details, install date', portalHref('installer')], ['Rates, profile and documents (tabs in the portal)', portalHref('installer')],
-        ])}
-        {journey('Job coordinator (Next Partitions)', 'Vets installers, runs each job, follows up payment.', [
-          ['Jobs needing attention', portalHref('coordinator')], ['Vetting: list Metroplex as Verified', portalHref('coordinator')],
-          ['New job entered by hand (New job tab)', portalHref('coordinator')], ['Documents to check (Documents tab)', portalHref('coordinator')],
+        {group("Your team's daily work", 'One job coordinator runs the middle: jobs that need attention come first, then documents to check and jobs to enter by hand.', [
+          ['Jobs needing attention (Jobs tab)', portalHref('coordinator')], ['Documents to check (Documents tab)', portalHref('coordinator')],
+          ['Entering a job by hand (New job tab)', portalHref('coordinator')], ['A quote with two installer prices (Irving)', quoteHref('sample-j1044')],
         ])}
       </div>
-      <p className="text-sm text-muted-foreground">All installers, customers, prices and reviews are fictional samples. Nothing is sent or paid. Use "Reset sample data" in the bar to start over. Links to the live nextpartitions.com product pages open the real site.</p>
+
+      <section className="bg-surface-warm border border-border p-5 grid gap-2">
+        <h2 className="text-xl">What we need from you</h2>
+        <ul className="list-disc pl-5 grid gap-1 text-sm max-w-[75ch]">
+          <li>Who will be the job coordinator (nobody holds the role yet).</li>
+          <li>OK on the labels: Verified when listed, Approved after the first completed job.</li>
+          <li>How customers pay for partitions: for now they choose PO, a card payment link or bank transfer and your team follows up. Paying by card on the quote page itself needs the site's payment provider (a question for Marc).</li>
+          <li>Pilot area: Dallas–Fort Worth, unless your orders point elsewhere.</li>
+        </ul>
+      </section>
+      <p className="text-sm text-muted-foreground">All installers, customers, prices and reviews are fictional samples. Your clicks stay in this browser tab; "Reset sample data" in the bar starts over. Product links go to the live nextpartitions.com.</p>
     </main>
   )
 }
