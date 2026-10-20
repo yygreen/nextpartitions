@@ -133,41 +133,10 @@ begin
   perform dir_enqueue('application_' || p_kind, null, p_installer, jsonb_build_object('note', note_, 'email', i.contact_email));
 end $$;
 
--- ---------- public listing after the first completed job ----------
--- Approved installers get job requests at once; their public profile appears once they've completed a
--- job for a Next Partitions customer (the 'completed_job' check, passed automatically on sign-off).
-create or replace view dir_public_installers with (security_invoker = false) as
-select
-  i.slug, i.display_name, i.base_city, i.base_state, i.lat, i.lng, i.service_radius_mi,
-  i.materials, i.mountings, i.about, i.photo_url, i.tracked_phone, i.approved_at,
-  coalesce(array_agg(distinct a.area_slug) filter (where a.area_slug is not null), '{}') as areas,
-  (select count(*) from dir_jobs j where j.chosen_installer_id = i.id and j.status = 'signed_off') as installs,
-  (select round(avg(r.rating)::numeric, 1) from dir_reviews r where r.installer_id = i.id and r.published_at is not null) as rating,
-  (select count(*) from dir_reviews r where r.installer_id = i.id and r.published_at is not null) as review_count,
-  (select round((extract(epoch from percentile_cont(0.5) within group (order by v.responded_at - v.sent_at)) / 3600)::numeric, 1)
-     from dir_job_invites v where v.installer_id = i.id and v.responded_at is not null) as median_reply_hours,
-  (select jsonb_agg(jsonb_build_object('label', c.public_label, 'verified', c.verified_at) order by c.check_type)
-     from dir_installer_checks c where c.installer_id = i.id and c.status = 'passed' and c.public_label is not null) as checks
-from dir_installers i
-left join dir_service_areas a on a.installer_id = i.id
-where i.status = 'approved'
-  and exists (select 1 from dir_installer_checks c where c.installer_id = i.id and c.check_type = 'completed_job' and c.status = 'passed')
-group by i.id;
-
-create or replace view dir_public_rate_cards with (security_invoker = false) as
-select i.slug, r.material, r.mounting, r.per_stall_low_cents, r.per_stall_high_cents, r.minimum_cents, r.extras
-from dir_rate_cards r join dir_installers i on i.id = r.installer_id
-where i.status = 'approved'
-  and exists (select 1 from dir_installer_checks c where c.installer_id = i.id and c.check_type = 'completed_job' and c.status = 'passed');
-
-create or replace view dir_public_reviews with (security_invoker = false) as
-select i.slug, r.rating, r.body, r.reviewer_display, r.published_at
-from dir_reviews r join dir_installers i on i.id = r.installer_id
-where r.published_at is not null and i.status = 'approved'
-  and exists (select 1 from dir_installer_checks c where c.installer_id = i.id and c.check_type = 'completed_job' and c.status = 'passed');
-
-grant select on dir_public_installers, dir_public_rate_cards, dir_public_reviews to anon, authenticated;
-
+-- ---------- first completed job ----------
+-- Approved installers are public at once and show the Verified label; signing off their first job for a
+-- Next Partitions customer passes the 'completed_job' check, which earns the Approved label (the public
+-- view's installs count goes from 0 to 1, and the check is listed under "What we checked").
 create function dir_jobs_completed_check() returns trigger
 language plpgsql security definer set search_path = public as $$
 begin

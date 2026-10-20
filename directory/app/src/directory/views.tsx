@@ -5,7 +5,7 @@ import { AreaInstallers } from './components/AreaInstallers'
 import { ConfigureStart } from './components/ConfigureStart'
 import { MobileConfigureBar, StartConfigure } from './components/StartConfigure'
 import { Breadcrumbs, Disclaimer, SampleBanner, Stars } from './components/ui'
-import { type Area, type Installer, labelsFor, MATERIAL_LABEL, MOUNTING_LABEL, type RateCard, type Review } from './types'
+import { type Area, type Installer, labelsFor, MATERIAL_LABEL, MOUNTING_LABEL, NEW_INSTALLER_NOTE, type RateCard, type Review } from './types'
 
 const STATE_NAME: Record<string, string> = { texas: 'Texas' }
 const WRAP = 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'
@@ -55,7 +55,7 @@ export function StateHubView({ state, areas, counts, sample }: {
       <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Service Area', href: serviceAreaHref() }, { label: name }]}
         title={`Bathroom Partition Installers in ${name}`}
         lead={`Price your toilet partitions with us, and we match the job with approved, insured installers in ${areas.length} ${name} areas. You deal with one team from quote to installed restroom.`}>
-        <p className="text-sm text-primary-foreground/70">{total} approved installers · Texas has no statewide contractor license, so we check city or state business registration.</p>
+        <p className="text-sm text-primary-foreground/70">{total} verified installers · Texas has no statewide contractor license, so we check city or state business registration.</p>
       </Hero>
       <main className={`${WRAP} py-10 grid gap-10`}>
         <section aria-labelledby="areas" className="grid gap-4">
@@ -107,9 +107,9 @@ export function InstallerView({ area, installer: i, rateCards, reviews, sample }
       <SampleBanner show={sample} />
       <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: STATE_NAME[area.stateSlug] ?? area.state, href: stateHref(area.stateSlug) }, { label: area.name, href: areaHref(area.slug) }, { label: i.displayName }]}
         title={i.displayName}
-        lead={`${i.installs} installs for Next Partitions customers · based in ${i.baseCity}, works up to ${i.serviceRadiusMi} mi`}>
+        lead={`${i.installs ? `${i.installs} installs for Next Partitions customers` : NEW_INSTALLER_NOTE} · based in ${i.baseCity}, works up to ${i.serviceRadiusMi} mi`}>
         <div className="flex flex-wrap items-center gap-2">
-          {labelsFor(i).map((l) => <span key={l} className="text-xs font-semibold px-2.5 py-0.5 border border-brand-red/60 bg-brand-red/20 text-primary-foreground">{l === 'Approved' ? '✓ ' : ''}{l}</span>)}
+          {labelsFor(i).map((l) => <span key={l} className="text-xs font-semibold px-2.5 py-0.5 border border-brand-red/60 bg-brand-red/20 text-primary-foreground">{l === 'Approved' || l === 'Verified' ? '✓ ' : ''}{l}</span>)}
           {i.rating !== null && <span className="text-sm text-primary-foreground/80"><Stars rating={i.rating} /> <b className="text-primary-foreground">{i.rating}</b> from {i.reviewCount} reviews</span>}
         </div>
       </Hero>

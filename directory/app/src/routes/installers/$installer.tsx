@@ -3,6 +3,7 @@ import { z } from 'zod'
 import { getInstallerProfile } from '@/directory/server'
 import { breadcrumbLd, pageHead, SITE } from '@/directory/seo'
 import { InstallerView } from '@/directory/views'
+import { labelsFor } from '@/directory/types'
 
 // /installers/[slug]/?area=dallas — area picks the breadcrumb when an installer serves several areas.
 export const Route = createFileRoute('/installers/$installer')({
@@ -11,7 +12,7 @@ export const Route = createFileRoute('/installers/$installer')({
   loader: ({ params, deps }) => getInstallerProfile({ data: { installer: params.installer, area: deps.area } }),
   head: ({ loaderData: d }) => d ? pageHead({
     title: `${d.installer.displayName}: Partition Installer in ${d.installer.baseCity}, ${d.installer.baseState} | Next Partitions`,
-    description: `${d.installer.displayName} installs commercial toilet partitions in ${d.area.name}. Approved by Next Partitions: ${d.installer.checks.map((c) => c.label.toLowerCase()).join(', ')}.`,
+    description: `${d.installer.displayName} installs commercial toilet partitions in ${d.area.name}. ${labelsFor(d.installer)[0]} by Next Partitions: ${d.installer.checks.map((c) => c.label.toLowerCase()).join(', ')}.`,
     path: `/installers/${d.installer.slug}/`,
     sample: d.sample,
     jsonLd: [

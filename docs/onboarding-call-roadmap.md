@@ -39,9 +39,9 @@ Show the pages in this order. Together they follow one customer from the homepag
 
 1. **Homepage redesign.** Three ways into a quote: price it yourself in the configurator, send drawings, or "help me choose" for buyers who don't know the material yet. The "Opener" toggle compares it with the facility-picker version, so he can choose or we can test both. https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68
 2. **Texas installer hub.** One level above the city pages. Visitors search by city or ZIP, see a coverage map, and get install options even where no installer is listed yet (so no visitor hits a dead end). https://claude.ai/artifact/LZqngrbkARWrHC23dqswt5
-3. **DFW area page.** ZIP search with estimated drive times, the approved installers for the area, local installed prices and an FAQ. This is the page meant to rank for "toilet partition installers near me" in Dallas–Fort Worth. https://claude.ai/artifact/Emsk4xQGarEUxTuXLLdm1q
+3. **DFW area page.** ZIP search with estimated drive times, the verified installers for the area, local installed prices and an FAQ. This is the page meant to rank for "toilet partition installers near me" in Dallas–Fort Worth. https://claude.ai/artifact/Emsk4xQGarEUxTuXLLdm1q
 4. **Installer profile.** What we checked (insurance, registration, references), job photos, reviews, a rate card that gives an instant estimate for the visitor's job, and a tracked phone number. https://claude.ai/artifact/Hp9kJEgkaRXCtjoxWMkXPx#acme
-5. **Configurator installation step.** A new step in the existing quote request: it shows how many approved installers cover the ZIP and a price range, without naming them. Then the normal "Request your quote" step, with installation shown in the estimate. https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs
+5. **Configurator installation step.** A new step in the existing quote request: it shows how many verified installers cover the ZIP and a price range, without naming them. Then the normal "Request your quote" step, with installation shown in the estimate. https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs
 
 Before the call: share the profile and configurator prototypes as "anyone with the link", or the links won't open for him.
 
@@ -59,7 +59,7 @@ All installers, rates, reviews and photos in the prototypes are fictional sample
   5. *Call tracking:* calls from profile pages are counted, so we see which referrals happened and can match them to orders.
 
 **Labels.**
-- Every listed installer is **Approved**: installs customer-bought partitions, insurance and business or city registration on file, references contacted, signed listing agreement, one completed job.
+- Every listed installer is at least **Verified**: installs customer-bought partitions, insurance and business or city registration on file, references contacted, test job request answered on time, signed listing agreement. Their first completed job for a Next Partitions customer earns **Approved**. Earned extras: **Established** (10+ installs) and **Top rated** (4.8+ from 10+ reviews).
 - **Established** (10+ installs for our customers) and **Top rated** (4.8+ from 10+ reviews) are earned extras.
 - The labels state facts, not endorsements, which keeps the liability position clean.
 
@@ -94,17 +94,17 @@ Agree on these during the call and repeat them in the recap, so the day-30 revie
 | Installer application page | Live and collecting applications | Starts the directory supply before the directory is public |
 | Search impressions on the new pages | Rising in Search Console from week 2–3 | The earliest signal that the content is working, before clicks and quotes follow |
 | Quote requests per week | Measured against this month's baseline | The business result he cares about |
-| Directory | Terms with his lawyer, templates on a test site, 3–5 DFW installers in vetting or approved | Ready to launch in month 2 without delay |
+| Directory | Terms with his lawyer, templates on a test site, 3–5 DFW installers in vetting or verified | Ready to launch in month 2 without delay |
 | Configurator installation step | Specced and with his developer | Build can start at the beginning of month 2 |
 
-The directory goes live in **month 2**, once at least 3 installers are approved. We don't publish a directory with sample installers: an empty or fake directory hurts trust more than no directory.
+The directory goes live in **month 2**, once at least 3 installers are verified. We don't publish a directory with sample installers: an empty or fake directory hurts trust more than no directory.
 
 ## 4. Decisions we need from Abe
 
 For each one, get an answer in the call, or agree who decides and by when.
 
 1. **Directory model.** Is he OK with referral only, no responsibility for installation, and the listing agreement terms (install the partitions on the customer's Next Partitions order, no substitutes, report job status, delisting on breach)? Everything else in the directory depends on this.
-2. **Approval criteria and vetting.** Does he agree with the Approved checklist? *Agreed internally:* we do the vetting (checking insurance and registration, calling references), so it costs his team no time. After approval, ratings and reviews from verified customers keep quality up, with low ratings leading to a check and possible delisting. Ask him only to confirm, and to flag any installers he already trusts or wants excluded.
+2. **Approval criteria and vetting.** Does he agree with the Verified checklist, and Approved after the first completed job? *Agreed internally:* we do the vetting (checking insurance and registration, calling references), so it costs his team no time. After approval, ratings and reviews from verified customers keep quality up, with low ratings leading to a check and possible delisting. Ask him only to confirm, and to flag any installers he already trusts or wants excluded.
 3. **Pilot area.** DFW, or does his order history point elsewhere (e.g. Tampa)? The orders-by-ZIP data settles it. The prototypes are built for DFW, but switching is cheap now and expensive later.
 4. **Trade accounts.** Will he give installers trade pricing on partitions, or a rebate per referred order? This is the main reason an installer stays loyal, so it needs a number.
 5. **Install-only requests** (the customer bought partitions elsewhere). Accept them, put them behind requests from our own customers, or decline? Accepting brings more installer interest; declining keeps the directory focused on partition sales.
@@ -156,7 +156,7 @@ Each week ships something he can see, while the directory is built in the backgr
 | 1 | Quick-win fixes live (category pages that open a dropdown instead of a page, the oversized call-to-action, small material swatches, mobile issues). Tracking and baseline set up. | Listing agreement and terms drafted for his lawyer; recruiting starts from Abe's contacts |
 | 2 | Installed-cost guide live. Installer application page live. | Vetting the first applicants: references, insurance, registration |
 | 3 | How-to-install guide and brand installation instructions page live. | Directory templates on the test site; quote routing and tracked numbers set up |
-| 4 | Report against the baseline, ready for the day-30 review | Configurator step spec with his developer; 3–5 DFW installers in vetting or approved |
+| 4 | Report against the baseline, ready for the day-30 review | Configurator step spec with his developer; 3–5 DFW installers in vetting or verified |
 
 **Month 2**
 - Texas hub and DFW area page live with real installers, then the installer profiles.

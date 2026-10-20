@@ -53,7 +53,7 @@ export function ConfigureStart(props: {
           <span className="border border-brand-red/40 bg-brand-red/10 text-brand-red font-semibold px-3 py-1">Installer: {installer.displayName}</span>
           {props.lockPreset
             ? <a className="text-brand-red hover:underline" href={areaHref(props.areaSlug) + '#configure'}>Compare with other {props.areaName} installers</a>
-            : <button type="button" className="text-brand-red hover:underline" onClick={() => setInstaller(undefined)}>Use any approved installer</button>}
+            : <button type="button" className="text-brand-red hover:underline" onClick={() => setInstaller(undefined)}>Use any verified installer</button>}
         </p>
       )}
 
@@ -94,7 +94,7 @@ export function ConfigureStart(props: {
         <div>
           <dt className="text-sm text-muted-foreground">Installation estimate</dt>
           <dd className="text-xl font-bold">{install ? `${formatUsd(install.lowCents)} – ${formatUsd(install.highCents)}` : 'Quoted after drawings'}</dd>
-          <dd className="text-xs text-muted-foreground">{install ? (installer ? `Rate card: ${installer.displayName}` : `${installersPricing} approved installer${installersPricing === 1 ? '' : 's'}`) : 'No rate card for this combination yet'}</dd>
+          <dd className="text-xs text-muted-foreground">{install ? (installer ? `Rate card: ${installer.displayName}` : `${installersPricing} verified installer${installersPricing === 1 ? '' : 's'}`) : 'No rate card for this combination yet'}</dd>
         </div>
         <div><dt className="text-sm text-muted-foreground">Estimated total</dt>
           <dd className="text-xl font-extrabold">{install ? `${formatUsd(partitions + install.lowCents)} – ${formatUsd(partitions + install.highCents)}` : `${formatUsd(partitions)} + installation`}</dd></div>

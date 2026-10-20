@@ -10,7 +10,7 @@ export function StartConfigure() {
       <ButtonLink href={configuratorHref({ from: 'hub' })} size="lg" className="w-full sm:w-auto">Configure your partitions →</ButtonLink>
       <ol className="grid sm:grid-cols-3 gap-3 mt-5 text-sm">
         <li className="border-t-2 border-border pt-2"><b className="block text-brand-red text-xs uppercase tracking-wide">1 · Configure</b>Material, mounting, stall count. Instant partitions price.</li>
-        <li className="border-t-2 border-border pt-2"><b className="block text-brand-red text-xs uppercase tracking-wide">2 · Installers confirm</b>Approved installers price your job through us. Your contact details stay with us.</li>
+        <li className="border-t-2 border-border pt-2"><b className="block text-brand-red text-xs uppercase tracking-wide">2 · Installers confirm</b>Verified installers price your job through us. Your contact details stay with us.</li>
         <li className="border-t-2 border-border pt-2"><b className="block text-brand-red text-xs uppercase tracking-wide">3 · We coordinate</b>Delivery and install dates lined up for you.</li>
       </ol>
     </section>

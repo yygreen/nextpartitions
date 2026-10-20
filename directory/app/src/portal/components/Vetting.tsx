@@ -7,7 +7,8 @@ import type { Applicant, ApplicantDetail, AreaCoverage, CheckDetail, CheckType, 
 import { Badge, Button, Card, Field, INPUT, Notice, TEXTAREA, useAction, useLoad } from './ui'
 
 // Installer vetting (prototypes/installer-vetting.html): applicants on the left, the Approved checklist on the
-// right. The database refuses approval unless the five checks pass, so the button here is a convenience.
+// right. Listing (database status 'approved') makes the profile public with the Verified label; the first
+// completed job earns the Approved label. The database refuses listing unless the five checks pass.
 const NEED = 3
 const REQUIRED: { key: string; label: string; ok: (c: CheckDetail[]) => boolean }[] = [
   { key: 'insurance', label: 'insurance', ok: (c) => passed(c, 'insurance') },
@@ -23,7 +24,7 @@ const CREW: Record<string, string> = { '1-2': '1–2', '3-5': '3–5', '6-10': '
 const EXTRA: Record<string, string> = { remove_old: 'removal', ada: 'ADA stalls', urinal_screens: 'urinal screens' }
 
 function pill(a: Applicant): { label: string; tone: 'new' | 'wait' | 'go' | 'off' | 'alert' } {
-  if (a.status === 'approved') return { label: 'Approved', tone: 'go' }
+  if (a.status === 'approved') return { label: 'Listed', tone: 'go' }
   if (a.status === 'delisted') return { label: a.decisionNote ? `Rejected: ${a.decisionNote}` : 'Delisted', tone: 'off' }
   if (a.status === 'suspended') return { label: 'Paused', tone: 'alert' }
   if (a.status === 'applied') return { label: a.decisionNote ? 'More info requested' : 'New application', tone: 'new' }
@@ -77,14 +78,13 @@ function Launch({ a, reload }: { a: AreaCoverage; reload: () => void }) {
   const ready = a.approved >= NEED
   return (
     <Card>
-      <b>{a.name}: {ready ? `${a.approved} approved installers` : `${a.approved} of ${NEED} approved installers needed`}</b>
+      <b>{a.name}: {ready ? `${a.approved} listed installers` : `${a.approved} of ${NEED} listed installers needed`}</b>
       <div className="flex gap-1" aria-hidden>{Array.from({ length: NEED }, (_, k) => <i key={k} className={`h-2 flex-1 ${k < a.approved ? 'bg-brand-red' : 'bg-muted'}`} />)}</div>
-      <p className="text-sm text-muted-foreground">{a.listed} with a public profile (after their first completed job). {a.published ? 'The area page is live.' : 'The area page stays unpublished until 3 installers are approved.'}</p>
+      <p className="text-sm text-muted-foreground">{a.approved ? `${a.withJob} with a completed job (Approved label); ${plural(a.approved - a.withJob, 'other')} shown as Verified. ` : ''}{a.published ? 'The area page is live.' : 'The area page stays unpublished until 3 installers are listed.'}</p>
       <div className="flex gap-3 items-center">
         {a.published
           ? <Button variant="outline" busy={act.busy} onClick={async () => { if (await act.run(() => portal().publishArea(a.slug, false))) reload() }}>Unpublish</Button>
           : <Button disabled={!ready} busy={act.busy} onClick={async () => { if (await act.run(() => portal().publishArea(a.slug, true))) reload() }}>Publish area page</Button>}
-        {a.published && a.listed < NEED && <span className="text-sm text-amber-800">Only {plural(a.listed, 'public profile')} so far</span>}
       </div>
       {act.error && <Notice tone="error">{act.error}</Notice>}
     </Card>
@@ -144,7 +144,7 @@ function Decision({ a, d, areas, reload }: { a: Applicant; d: ApplicantDetail; a
   if (a.status === 'approved') {
     return (
       <Card>
-        <Notice tone="ok"><b>Approved {a.approvedAt ? formatDay(a.approvedAt) : ''}.</b> {a.displayName} receives job requests in {a.areas.join(', ') || 'no area yet'}. {passed(d.checks, 'completed_job') ? 'Their profile is public.' : 'Their profile and the Approved label go live after their first completed job.'}</Notice>
+        <Notice tone="ok"><b>Listed {a.approvedAt ? formatDay(a.approvedAt) : ''}.</b> {a.displayName} receives job requests in {a.areas.join(', ') || 'no area yet'} and has a public profile with the {passed(d.checks, 'completed_job') ? 'Approved label (first job completed).' : 'Verified label. It changes to Approved after their first completed job.'}</Notice>
         <div><Button variant="outline" busy={act.busy} onClick={() => go(() => portal().setStatus(a.id, 'suspended'))}>Pause new job requests</Button></div>
         {act.error && <Notice tone="error">{act.error}</Notice>}
       </Card>
@@ -168,11 +168,11 @@ function Decision({ a, d, areas, reload }: { a: Applicant; d: ApplicantDetail; a
         </Field>
       </div>
       <div className="flex flex-wrap gap-3">
-        <Button disabled={missing.length > 0 || picked.length === 0} busy={act.busy} onClick={() => go(() => portal().approve(a.id, { areas: picked, trackedPhone: phone.trim() || null }))}>Approve</Button>
+        <Button disabled={missing.length > 0 || picked.length === 0} busy={act.busy} onClick={() => go(() => portal().approve(a.id, { areas: picked, trackedPhone: phone.trim() || null }))}>List as Verified</Button>
         <Button variant="outline" onClick={() => setMode(mode === 'info' ? 'none' : 'info')}>Ask for more info</Button>
         <Button variant="outline" onClick={() => setMode(mode === 'reject' ? 'none' : 'reject')}>Reject</Button>
       </div>
-      <p className="text-sm text-muted-foreground">{missing.length ? `Approve unlocks when these pass: ${missing.join(', ')}.` : 'All required checks pass. Approving lets them receive job requests now; we email them the listing agreement and next steps.'}</p>
+      <p className="text-sm text-muted-foreground">{missing.length ? `Listing unlocks when these pass: ${missing.join(', ')}.` : 'All required checks pass. Listing makes their profile public with the Verified label and starts job requests; we email them next steps.'}</p>
       {mode === 'info' && (
         <div className="grid gap-2">
           <Field label="What do you need? (emailed to the applicant)"><textarea className={TEXTAREA} rows={2} value={note} onChange={(e) => setNote(e.target.value)} placeholder="e.g. Please send an insurance certificate with the City of Dallas listed as certificate holder." /></Field>
@@ -231,8 +231,8 @@ function Checklist({ a, d, reload }: { a: Applicant; d: ApplicantDetail; reload:
           <SimplePass label="Mark signed" onPass={() => save('listing_agreement', { status: 'passed', verifiedAt: today(), publicLabel: 'Signed listing agreement' })} reload={reload} />
         )}
       </Row>
-      <Row title="First completed job" c={check('completed_job')}>
-        <p className="text-sm text-muted-foreground">Recorded automatically when their first job for a Next Partitions customer is signed off. The Approved label and public profile show after it. Not needed to start receiving job requests.</p>
+      <Row title="First completed job (Approved label)" c={check('completed_job')}>
+        <p className="text-sm text-muted-foreground">Recorded automatically when their first job for a Next Partitions customer is signed off. Their label then changes from Verified to Approved. Not needed to be listed.</p>
       </Row>
     </Card>
   )

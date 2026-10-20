@@ -100,7 +100,7 @@ export function ProfileTab({ me, onSaved }: { me: InstallerSelf; onSaved: () => 
   return (
     <div className="grid lg:grid-cols-2 gap-5 items-start">
       <Card title="Your profile">
-        <p className="text-sm text-muted-foreground">Shown on your public profile once you're approved. Your business name, status and phone number are managed by Next Partitions; ask us to change them.</p>
+        <p className="text-sm text-muted-foreground">Shown on your public profile once you're listed. Your business name, status and phone number are managed by Next Partitions; ask us to change them.</p>
         <Field label="About your business"><textarea className={TEXTAREA} rows={4} maxLength={800} value={about} onChange={(e) => setAbout(e.target.value)} /></Field>
         <Field label="Photo (your crew or a finished job)">
           <div className="flex gap-3 items-center">
@@ -201,7 +201,7 @@ export function PerformanceTab({ me }: { me: InstallerSelf }) {
       <span className={`text-xs font-semibold ${met ? 'text-emerald-800' : 'text-muted-foreground'}`}>{target}{met ? ' ✓' : ''}</span>
     </div>
   )
-  if (me.status !== 'approved') return <Card><p>Your numbers appear here once you're approved and pricing jobs.</p></Card>
+  if (me.status !== 'approved') return <Card><p>Your numbers appear here once you're listed and pricing jobs.</p></Card>
   if (!p) return <p>Loading…</p>
   return (
     <div className="grid gap-5">

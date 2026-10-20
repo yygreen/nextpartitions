@@ -275,7 +275,7 @@ export const samplePortal: PortalRepo = {
   async areas(): Promise<AreaCoverage[]> {
     const approved = installers.filter((i) => i.status === 'approved')
     return AREAS.map((a) => ({ ...a, approved: approved.filter((i) => vet(i.id).areas.includes(a.slug)).length,
-      listed: approved.filter((i) => vet(i.id).areas.includes(a.slug) && vet(i.id).checks.some((c) => c.checkType === 'completed_job' && c.status === 'passed')).length }))
+      withJob: approved.filter((i) => vet(i.id).areas.includes(a.slug) && vet(i.id).checks.some((c) => c.checkType === 'completed_job' && c.status === 'passed')).length }))
   },
   async publishArea(slug, published) { await pause(); AREAS.find((a) => a.slug === slug)!.published = published },
 }

@@ -1,5 +1,5 @@
 import { installerHref, priceWithHref } from '../links'
-import { type Installer, labelsFor, MATERIAL_LABEL } from '../types'
+import { type Installer, labelsFor, MATERIAL_LABEL, NEW_INSTALLER_NOTE } from '../types'
 import { ButtonLink, Stars } from './ui'
 
 export function InstallerCard({ installer: i, area }: { installer: Installer; area: string }) {
@@ -9,12 +9,12 @@ export function InstallerCard({ installer: i, area }: { installer: Installer; ar
       <header className="flex flex-wrap items-center gap-2">
         <h3 className="text-lg font-bold mr-1"><a href={installerHref(i.slug)} className="hover:underline">{i.displayName}</a></h3>
         {labels.map((l) => (
-          <span key={l} className="text-xs font-semibold px-2.5 py-0.5 border border-brand-red/40 bg-brand-red/10 text-brand-red">{l === 'Approved' ? '✓ ' : ''}{l}</span>
+          <span key={l} className="text-xs font-semibold px-2.5 py-0.5 border border-brand-red/40 bg-brand-red/10 text-brand-red">{l === 'Approved' || l === 'Verified' ? '✓ ' : ''}{l}</span>
         ))}
       </header>
       <p className="text-sm text-muted-foreground">
         {i.rating !== null && <><Stars rating={i.rating} /> <b className="text-foreground">{i.rating}</b> ({i.reviewCount}) · </>}
-        {i.installs} installs for our customers · {i.baseCity}, up to {i.serviceRadiusMi} mi
+        {i.installs ? `${i.installs} installs for our customers` : NEW_INSTALLER_NOTE} · {i.baseCity}, up to {i.serviceRadiusMi} mi
         {i.medianReplyHours !== null && <> · usually replies within {Math.ceil(i.medianReplyHours)} h</>}
       </p>
       <ul className="flex flex-wrap gap-1.5 text-xs">

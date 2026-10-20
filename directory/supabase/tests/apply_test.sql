@@ -1,4 +1,4 @@
--- Checks installer applications, vetting (approval rule, test job, decisions), the public listing gate
+-- Checks installer applications, vetting (approval rule, test job, decisions), Verified then Approved
 -- and the customer's quote link. Run after supabase_shim.sql and every migration.
 -- Every block raises an exception on failure; "APPLY TESTS PASSED" prints at the end.
 \set ON_ERROR_STOP on
@@ -177,19 +177,19 @@ do $$ begin
   assert (select payload->>'email' from dir_outbox where kind = 'application_rejected') = 'crew@lonestar.example', 'rejection email not queued';
 end $$;
 
--- 6. Public profile only after the first completed job (Acme, approved, has none either).
+-- 6. Public as soon as approved (Verified: no completed job yet); the first signed-off job earns Approved.
 do $$ begin
-  assert (select count(*) from dir_public_installers) = 0, 'listed before a completed job';
-  assert (select count(*) from dir_public_rate_cards) = 0, 'rates public before a completed job';
+  assert (select installs from dir_public_installers where slug = 'lone-star-partitions') = 0, 'not public once approved';
+  assert (select count(*) from dir_public_rate_cards where slug = 'lone-star-partitions') > 0, 'rates not public once approved';
+  assert coalesce((select checks::text from dir_public_installers where slug = 'lone-star-partitions'), '') not like '%Completed a job%', 'completed job shown too early';
 end $$;
 insert into dir_jobs (id, area_slug, city, zip, scope, delivery_window, chosen_installer_id, partitions_paid_at)
 values ('20000000-0000-0000-0000-000000000009', 'dallas', 'Dallas', '75201', '{"material":"hdpe","mounting":"overhead_braced","stalls":3}',
         daterange('2026-11-02', '2026-11-09'), current_setting('t.app')::uuid, now());
 update dir_jobs set status = 'signed_off' where id = '20000000-0000-0000-0000-000000000009';
 do $$ begin
-  assert (select slug from dir_public_installers) = 'lone-star-partitions', 'not listed after a signed-off job';
-  assert (select checks::text from dir_public_installers) like '%Completed a job for a Next Partitions customer%', 'completed job not shown';
-  assert (select installs from dir_public_installers) = 1, 'install not counted';
+  assert (select checks::text from dir_public_installers where slug = 'lone-star-partitions') like '%Completed a job for a Next Partitions customer%', 'completed job not shown';
+  assert (select installs from dir_public_installers where slug = 'lone-star-partitions') = 1, 'install not counted';
 end $$;
 
 -- 7. The customer's quote link.
@@ -236,7 +236,7 @@ update dir_jobs set status = 'presented' where id = '20000000-0000-0000-0000-000
 select pg_temp.as_user(null);
 do $$ declare p jsonb := dir_customer_quote(current_setting('t.token'))->'prices'; begin
   assert jsonb_array_length(p) = 1 and p->0->>'slug' = 'acme', 'flagged price shown or price missing';
-  assert (p->0->>'price_cents')::int = 200000 and not (p->0->>'listed')::boolean, 'price details wrong';
+  assert (p->0->>'price_cents')::int = 200000 and (p->0->>'listed')::boolean, 'price details wrong (approved installers are public)';
 end $$;
 select pg_temp.fails(format($q$select dir_customer_choose(%L, %L)$q$, current_setting('t.token'), current_setting('t.app')), 'That installer has no price on this quote');
 select dir_customer_request_change(current_setting('t.token'), 'The ADA stall should be on the left.');

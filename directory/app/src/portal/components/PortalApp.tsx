@@ -45,7 +45,7 @@ function Shell({ me, onSignOut, children }: { me?: Me; onSignOut?: () => void; c
             <div className="flex items-center gap-4 text-sm">
               <span className="text-right leading-tight">
                 <b className="block">{who ? who.displayName : 'Job coordinator'}</b>
-                {who && <small className="text-primary-foreground/70">{who.status === 'approved' ? 'Approved' : 'Not approved yet'} · {who.baseCity}</small>}
+                {who && <small className="text-primary-foreground/70">{who.status === 'approved' ? 'Listed' : 'Not listed yet'} · {who.baseCity}</small>}
               </span>
               {onSignOut && !sample && <button type="button" className="underline" onClick={onSignOut}>Sign out</button>}
             </div>

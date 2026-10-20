@@ -12,13 +12,13 @@ export function AreaInstallers({ area, installers }: { area: Area; installers: I
         <h2 id="installers" className="text-2xl font-extrabold tracking-tight">Partition installers in {area.name}</h2>
         <p className="text-muted-foreground mt-1">
           {installers.length
-            ? `${installers.length} approved installer${installers.length === 1 ? '' : 's'} serving ${area.cities.slice(0, 5).join(', ')}${area.cities.length > 5 ? ' and nearby' : ''}. We checked every listed installer: insurance, registration and references.`
+            ? `${installers.length} verified installer${installers.length === 1 ? '' : 's'} serving ${area.cities.slice(0, 5).join(', ')}${area.cities.length > 5 ? ' and nearby' : ''}. We checked every listed installer: insurance, registration and references.`
             : `We're vetting installers for ${area.name} now.`}
         </p>
       </div>
       <div className="grid gap-3">
         {rows.length === 0
-          ? <p className="bg-card border border-border rounded-lg p-4">No approved installers here yet. Price your restroom above and we'll arrange installation options for your job site.</p>
+          ? <p className="bg-card border border-border rounded-lg p-4">No verified installers here yet. Price your restroom above and we'll arrange installation options for your job site.</p>
           : rows.map((i) => <InstallerCard key={i.slug} installer={i} area={area.slug} />)}
       </div>
       <p className="text-sm text-muted-foreground">Install partitions in {area.name}? <a href={applyHref()} className="font-semibold text-brand-red hover:underline">Get listed as an installer</a></p>

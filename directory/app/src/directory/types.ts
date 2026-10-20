@@ -73,9 +73,13 @@ export interface Review {
   publishedAt: string
 }
 
-// Labels are earned facts (CLAUDE.md): Established = 10+ installs, Top rated = 4.8+ from 10+ reviews.
+// Labels are earned facts (CLAUDE.md). Verified = passed our checks (insurance, registration, references,
+// test job, listing agreement); Approved = also completed a job for a Next Partitions customer;
+// Established = 10+ installs; Top rated = 4.8+ from 10+ reviews.
+export const NEW_INSTALLER_NOTE = 'New to Next Partitions: no completed jobs with us yet'
+
 export function labelsFor(i: Installer): string[] {
-  const labels = ['Approved']
+  const labels = [i.installs >= 1 ? 'Approved' : 'Verified']
   if (i.installs >= 10) labels.push('Established')
   if (i.rating !== null && i.rating >= 4.8 && i.reviewCount >= 10) labels.push('Top rated')
   return labels

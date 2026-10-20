@@ -133,7 +133,7 @@ function Installation({ token, q, reload }: { token: string; q: CustomerQuote; r
 
   return (
     <Step n={2} title="Choose installation" done={chosen ? `${chosen.displayName} will install your partitions` : q.customerChoice === 'own_installer' ? "You're using your own installer. We've emailed the install packet." : q.customerChoice === 'partitions_only' ? 'Partitions only for now. Add installation any time before delivery.' : false}>
-      <p className="text-sm text-muted-foreground">Firm prices from approved installers who saw your drawings. Installation is quoted and billed by the installer. Next Partitions adds no markup and coordinates delivery and install dates.</p>
+      <p className="text-sm text-muted-foreground">Firm prices from verified installers who saw your drawings. Installation is quoted and billed by the installer. Next Partitions adds no markup and coordinates delivery and install dates.</p>
       {!ready && !chosen && (
         q.windowClosed || q.searchRound >= 2
           ? <>
@@ -145,7 +145,7 @@ function Installation({ token, q, reload }: { token: string; q: CustomerQuote; r
               </div>
               {q.customerChoice === 'wait' && <p className="text-sm">Thanks. We'll email you as soon as prices are in.</p>}
             </>
-          : <Notice>Approved installers near {q.city} are pricing your job from the drawings. We'll email you when prices are in, usually within 2 business days.</Notice>
+          : <Notice>Verified installers near {q.city} are pricing your job from the drawings. We'll email you when prices are in, usually within 2 business days.</Notice>
       )}
       {ready && !chosen && (
         <>
@@ -159,7 +159,7 @@ function Installation({ token, q, reload }: { token: string; q: CustomerQuote; r
               <li key={p.installerId} className="border border-border p-4 grid sm:grid-cols-[1fr_auto] gap-3 items-center">
                 <div className="grid gap-1">
                   <span className="flex flex-wrap gap-2 items-center"><b className="text-lg">{p.displayName}</b>{n === 0 && sort === 'value' && <Badge tone="new">Best value</Badge>}</span>
-                  <span className="text-sm text-muted-foreground">{p.baseCity} · Approved installer{p.rating !== null && p.reviewCount > 0 ? ` · ★ ${p.rating} (${p.reviewCount} reviews)` : ''}{p.installs ? ` · ${p.installs} installs for our customers` : ''}</span>
+                  <span className="text-sm text-muted-foreground">{p.baseCity} · {p.installs ? 'Approved installer' : 'Verified installer, new to Next Partitions'}{p.rating !== null && p.reviewCount > 0 ? ` · ★ ${p.rating} (${p.reviewCount} reviews)` : ''}{p.installs ? ` · ${p.installs} installs for our customers` : ''}</span>
                   {p.earliestInstallDate && <span className="text-sm">Earliest install {formatDay(p.earliestInstallDate)}</span>}
                   {p.assumptions && <span className="text-sm text-muted-foreground">Price assumes: {p.assumptions}</span>}
                   {p.listed && <a className="text-sm underline" href={installerHref(p.slug)} target="_blank" rel="noopener">See their profile and reviews</a>}

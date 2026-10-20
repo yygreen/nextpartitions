@@ -264,7 +264,7 @@ export interface AreaCoverage {
   name: string
   published: boolean
   approved: number // receiving job requests
-  listed: number   // public: approved with a completed job
+  withJob: number  // of those, with a completed job (Approved label); the others show as Verified
 }
 
 // ---------- customer quote (coordinator side) ----------

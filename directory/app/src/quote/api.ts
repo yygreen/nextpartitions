@@ -10,7 +10,7 @@ export interface QuotePrice {
   slug: string
   displayName: string
   baseCity: string
-  listed: boolean // has a public profile to link to
+  listed: boolean // has a public profile to link to (every listed installer, Verified or Approved)
   rating: number | null
   reviewCount: number
   installs: number
@@ -112,7 +112,7 @@ const sampleState = (): CustomerQuote => ({
       priceCents: 214000, earliestInstallDate: in_(23), assumptions: 'Finished floor, blocking in place, work during school hours' },
     { installerId: 'a2', slug: 'northwind', displayName: 'Northwind Washroom', baseCity: 'Fort Worth', listed: true, rating: 4.7, reviewCount: 5, installs: 6,
       priceCents: 198000, earliestInstallDate: in_(26), assumptions: 'Finished floor; removal includes haul-away' },
-    { installerId: 'a3', slug: 'metroplex', displayName: 'Metroplex Division 10', baseCity: 'Irving', listed: false, rating: null, reviewCount: 0, installs: 0,
+    { installerId: 'a3', slug: 'metroplex', displayName: 'Metroplex Division 10', baseCity: 'Irving', listed: true, rating: null, reviewCount: 0, installs: 0,
       priceCents: 205000, earliestInstallDate: in_(24), assumptions: null },
   ],
 })

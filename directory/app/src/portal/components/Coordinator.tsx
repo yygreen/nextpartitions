@@ -154,12 +154,12 @@ function JobPanel({ job, invites, people, reload }: { job: Job; invites: Invite[
           <div className="flex flex-wrap gap-3 items-end">
             {invites.length === 0 && <Button busy={act.busy} onClick={() => go(async () => {
               const n = await portal().routeJob(job.id)
-              if (n === 0) throw new Error('No approved installer covers this job. Invite one by hand, or offer partitions only.')
+              if (n === 0) throw new Error('No listed installer covers this job. Invite one by hand, or offer partitions only.')
             })}>Route job (invite up to 3)</Button>}
             {!job.chosenInstallerId && invitable.length > 0 && (
               <div className="flex flex-wrap gap-2 items-end">
                 <Field label="Invite by hand"><select className={INPUT} value={pick} onChange={(e) => setPick(e.target.value)}>
-                  <option value="">Choose an approved installer</option>
+                  <option value="">Choose a listed installer</option>
                   {invitable.map((p) => <option key={p.id} value={p.id}>{p.displayName} ({p.baseCity})</option>)}
                 </select></Field>
                 <Button variant="outline" disabled={!pick} busy={act.busy} onClick={() => go(async () => { await portal().inviteInstaller(job.id, pick); setPick('') })}>Invite</Button>
@@ -346,7 +346,7 @@ function NewJobForm({ people, onCreated }: { people: InstallerSummary[]; onCreat
 function InstallersList({ people, reload }: { people: InstallerSummary[]; reload: () => void }) {
   return (
     <Card title="Portal logins" className="max-w-4xl">
-      <p className="text-sm text-muted-foreground">Give an applicant a login once their documents check out, so they can answer the test job request; approved installers need one to receive jobs. They get an email to set it up. Checks and approval are in the Vetting tab.</p>
+      <p className="text-sm text-muted-foreground">Give an applicant a login once their documents check out, so they can answer the test job request; listed installers need one to receive jobs. They get an email to set it up. Checks and approval are in the Vetting tab.</p>
       <ul className="grid gap-2">{people.map((p) => <InstallerRow key={p.id} p={p} reload={reload} />)}</ul>
     </Card>
   )

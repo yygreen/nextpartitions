@@ -36,7 +36,7 @@ const INSTALLERS: Installer[] = [
     serviceRadiusMi: 35, materials: ['powder_coated', 'laminate'], mountings: ['overhead_braced', 'floor_mounted'],
     about: 'Retail and tenant-improvement specialists; night and weekend installs available.',
     photoUrl: null, trackedPhone: '(682) 555-0123', approvedAt: '2026-10-16', areas: ['dallas'],
-    installs: 3, rating: null, reviewCount: 0, medianReplyHours: 9, checks: checks('Arlington') },
+    installs: 0, rating: null, reviewCount: 0, medianReplyHours: 9, checks: checks('Arlington') },
   { slug: 'gulfline', displayName: 'Gulfline Interiors', baseCity: 'Houston', baseState: 'TX', lat: 29.76, lng: -95.37,
     serviceRadiusMi: 50, materials: ['hdpe', 'phenolic', 'powder_coated'], mountings: ['overhead_braced', 'floor_mounted'],
     about: 'Commercial specialties installer serving greater Houston.',

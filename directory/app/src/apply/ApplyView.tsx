@@ -27,7 +27,7 @@ const CHECKS: [string, string][] = [
   ['2–3 references we call', "Customers or general contractors you've installed partitions for."],
   ['A test job request we time', 'Reply within 1 business day and send a firm price within 2.'],
   ['A signed listing agreement', 'The short version is in step 6 of the application.'],
-  ['One completed job', 'Your profile shows the Approved label after your first job for a Next Partitions customer.'],
+  ['One completed job, later', 'Your profile goes live with the Verified label once the checks above pass. It shows Approved after your first job for a Next Partitions customer.'],
 ]
 const TERMS = [
   "Install the partitions on the customer's Next Partitions order. No substitutes, and no selling partitions on our jobs.",
@@ -41,8 +41,8 @@ const NEXT: [string, string][] = [
   ['We check your documents', 'Insurance and registration, within 2 business days.'],
   ['We call your references', 'Usually the same week.'],
   ['We send you a test job request', 'A real-looking job in the portal. We time your reply (target: 1 business day) and your firm price (target: 2).'],
-  ['You sign the listing agreement and start receiving requests', 'Job requests in your service area arrive in the installer portal.'],
-  ['Approved label after your first completed job', "Your profile goes live on the directory once you've installed for a Next Partitions customer."],
+  ['You sign the listing agreement and go live as Verified', 'Your profile appears on the directory and job requests in your service area arrive in the installer portal.'],
+  ['Approved label after your first completed job', "Once you've installed for a Next Partitions customer, your profile shows Approved instead of Verified."],
 ]
 const FAQ: [string, string][] = [
   ['What does it cost?', "Nothing. There's no listing fee and no commission on your installation price. Next Partitions earns its margin on the partitions."],

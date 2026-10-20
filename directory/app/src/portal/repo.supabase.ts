@@ -346,13 +346,13 @@ export function supabasePortal(url: string, key: string): PortalRepo & { db: Sup
         must(await db.from('dir_areas').select('slug, name, published').order('name')),
         must(await db.from('dir_installers').select('id, status')),
         must(await db.from('dir_service_areas').select('installer_id, area_slug')),
-        must(await db.from('dir_public_installers').select('slug, areas')),
+        must(await db.from('dir_public_installers').select('slug, areas, installs')),
       ])
       const approved = new Set(people.filter((p: any) => p.status === 'approved').map((p: any) => p.id))
       return areas.map((a: any): AreaCoverage => ({
         slug: a.slug, name: a.name, published: a.published,
         approved: links.filter((l: any) => l.area_slug === a.slug && approved.has(l.installer_id)).length,
-        listed: listed.filter((i: any) => (i.areas ?? []).includes(a.slug)).length,
+        withJob: listed.filter((i: any) => (i.areas ?? []).includes(a.slug) && Number(i.installs) > 0).length,
       }))
     },
     async publishArea(slug, published) {

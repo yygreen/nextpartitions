@@ -158,14 +158,14 @@ const A=[
   reg:{state:"todo",num:"Not provided",src:""},refs:{state:"todo",rows:[]},test:{state:"todo"},agr:{state:"todo"},status:"rejected",why:"No general liability insurance"},
 ];
 let approved=2, cur="metroplex";  // Acme and Northwind are already approved in DFW
-const STATUS={docs:["Documents in","wait"],test:["Test job sent","wait"],ready:["Ready to approve","new"],approved:["Approved · pending first job","go"],rejected:["Rejected","bad"],info:["More info requested","wait"]};
+const STATUS={docs:["Documents in","wait"],test:["Test job sent","wait"],ready:["Ready to list","new"],approved:["Listed · Verified","go"],rejected:["Rejected","bad"],info:["More info requested","wait"]};
 const app=()=>A.find(a=>a.id===cur);
 
 function launch(){
   const n=Math.min(approved,NEED);
-  $("launchT").textContent=approved>=NEED?`DFW launch: ${approved} approved installers. Ready to launch.`:`DFW launch: ${approved} of ${NEED} approved installers needed`;
+  $("launchT").textContent=approved>=NEED?`DFW launch: ${approved} listed installers. Ready to launch.`:`DFW launch: ${approved} of ${NEED} listed installers needed`;
   $("meter").innerHTML=Array.from({length:NEED},(_,k)=>`<i class="${k<n?"on":""}"></i>`).join("");
-  $("launchS").textContent=approved>=NEED?"The DFW area page can be published.":"The DFW area page stays unpublished until 3 installers are approved.";
+  $("launchS").textContent=approved>=NEED?"The DFW area page can be published.":"The DFW area page stays unpublished until 3 installers are listed.";
 }
 function list(){
   $("listSub").textContent=`${A.length} applicants`;
@@ -188,17 +188,17 @@ function checks(a){
     ${row("refs","References called",a.refs.rows.length?`<table class="refs"><thead><tr><th>Reference</th><th>Called</th><th>Notes</th><th>Rating</th></tr></thead><tbody>${a.refs.rows.map(x=>`<tr><td>${esc(x[0])}, ${esc(x[1])}</td><td>${esc(x[2])}</td><td>${esc(x[3])}</td><td>${x[4]?"★".repeat(x[4]):"—"}</td></tr>`).join("")}</tbody></table>`:"None provided.",btn("refs","Mark called")) }
     ${row("test","Test job request",testEv,t.state==="pass"||locked?"":t.state==="wait"?`<button class="btn quiet sm" type="button" data-test="reply">Demo: installer replies</button>`:"")}
     ${row("agr","Listing agreement signed",a.agr.state==="pass"?`Signed ${a.agr.signed}`:"Sent for signature with the approval email.",btn("agr","Mark signed"))}
-    <div class="crow ${a.status==="approved"?"wait":"todo"}"><span class="st">${a.status==="approved"?"…":""}</span><div><b>First completed job</b><div class="ev">The Approved label and public profile show after their first job for a Next Partitions customer. Not needed to start receiving job requests.</div></div><div></div></div>
+    <div class="crow ${a.status==="approved"?"wait":"todo"}"><span class="st">${a.status==="approved"?"…":""}</span><div><b>First completed job (Approved label)</b><div class="ev">Recorded when their first job for a Next Partitions customer is signed off; their label then changes from Verified to Approved. Not needed to be listed.</div></div><div></div></div>
   </div></div>`;
 }
 
 function decide(a){
-  if(a.status==="approved") return `<div class="card decide"><div class="ok"><b>Approved.</b> ${esc(a.name)} now receives job requests in their DFW service area. Their profile and the Approved label go live after their first completed job.</div><p class="note" style="margin:0">Approval email sent with the listing agreement and portal login. <i>(Prototype: nothing is sent.)</i></p></div>`;
+  if(a.status==="approved") return `<div class="card decide"><div class="ok"><b>Listed as Verified.</b> ${esc(a.name)} now has a public profile and receives job requests in their DFW service area. The label changes to Approved after their first completed job.</div><p class="note" style="margin:0">Approval email sent with the listing agreement and portal login. <i>(Prototype: nothing is sent.)</i></p></div>`;
   if(a.status==="rejected") return `<div class="card decide"><div class="no"><b>Rejected:</b> ${esc(a.why)}.</div><p class="note" style="margin:0">The applicant was told why and can reapply once it's fixed.</p></div>`;
   const ok=required(a), missing=["ins","reg","refs","test","agr"].filter(k=>a[k].state!=="pass").map(k=>({ins:"insurance",reg:"registration",refs:"references",test:"test job",agr:"listing agreement"})[k]);
   return `<div class="card decide"><h3>Decision</h3>
-    <div class="btns"><button class="btn" type="button" id="approve" ${ok?"":"disabled"}>Approve</button><button class="btn quiet" type="button" id="askInfo">Ask for more info</button><button class="btn bad" type="button" id="reject">Reject</button></div>
-    <p class="note">${ok?"All required checks pass. Approving lets them receive job requests now.":"Approve unlocks when these pass: "+missing.join(", ")+"."}</p>
+    <div class="btns"><button class="btn" type="button" id="approve" ${ok?"":"disabled"}>List as Verified</button><button class="btn quiet" type="button" id="askInfo">Ask for more info</button><button class="btn bad" type="button" id="reject">Reject</button></div>
+    <p class="note">${ok?"All required checks pass. Listing makes their profile public with the Verified label and starts job requests.":"Listing unlocks when these pass: "+missing.join(", ")+"."}</p>
     <div id="rejBox" hidden><label class="field">Reason<select id="rejWhy"><option>No general liability insurance</option><option>Insurance below $300,000</option><option>No business or city registration</option><option>References didn't check out</option><option>No reply to the test job</option><option>Doesn't install the partitions our customers buy</option></select></label>
       <label class="field">Note to the applicant<textarea id="rejNote" rows="2" placeholder="What they'd need to fix to reapply"></textarea></label><button class="btn bad sm" type="button" id="rejGo">Send rejection</button></div>
     <div id="infoBox" hidden><label class="field">What do you need?<textarea id="infoNote" rows="2">Please send an insurance certificate with the City of Dallas listed as certificate holder.</textarea></label><button class="btn quiet sm" type="button" id="infoGo">Send request</button></div>
