@@ -8,7 +8,7 @@ const job = (o: Partial<Job> = {}): Job => ({
   scope: { material: 'hdpe', mounting: 'overhead_braced', stalls: 6 }, drawingsPath: null, delivery: null,
   status: 'quoting', chosenInstallerId: null, preferredInstallerId: null, partitionsPaidAt: null, poAcceptedAt: null,
   releasedAt: null, installDate: null, neededBy: null, rush: false, requiresBackgroundCheck: false, searchRound: 1,
-  priceDueAt: null, windowClosedAt: null, needsAttention: false, attentionReason: null, createdAt: '2026-10-20T13:00:00Z', ...o,
+  priceDueAt: null, windowClosedAt: null, needsAttention: false, attentionReason: null, isTest: false, createdAt: '2026-10-20T13:00:00Z', ...o,
 })
 const invite = (o: Partial<Invite> = {}): Invite => ({
   jobId: 'j', installerId: ME, round: 1, invitedBy: 'auto', sentAt: '2026-10-20T13:00:00Z', dueAt: '2026-10-22T13:00:00Z',

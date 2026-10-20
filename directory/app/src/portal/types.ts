@@ -61,6 +61,7 @@ export interface Job {
   windowClosedAt: string | null
   needsAttention: boolean
   attentionReason: string | null
+  isTest: boolean // a timed test request sent to an applicant during vetting
   createdAt: string
 }
 
@@ -206,3 +207,79 @@ export type JobPatch = Partial<Pick<Job,
   'status' | 'chosenInstallerId' | 'partitionsPaidAt' | 'poAcceptedAt' | 'needsAttention' | 'attentionReason' | 'drawingsPath'>>
 
 export type Bucket = 'dir-documents' | 'dir-drawings' | 'dir-job-photos' | 'dir-profile-photos'
+
+// ---------- vetting (job coordinator only) ----------
+export type InstallerStatus = InstallerSelf['status']
+
+// Everything the application collected, plus what vetting adds. Private: never in the public views.
+export interface Applicant extends InstallerSelf {
+  legalName: string
+  contactName: string | null
+  contactEmail: string | null
+  contactPhone: string | null
+  yearsInBusiness: number | null
+  crewSize: string | null
+  extras: string[]
+  brands: string | null
+  registrationNumber: string | null
+  agreementName: string | null
+  agreementAcceptedAt: string | null
+  appliedAt: string | null
+  approvedAt: string | null
+  decisionNote: string | null
+  trackedPhone: string | null
+  hasLogin: boolean
+  areas: string[]
+}
+
+export interface CheckDetail extends CheckRow {
+  internalNote: string | null
+  documentPath: string | null
+}
+
+export type CheckPatch = Partial<Pick<CheckDetail, 'status' | 'verifiedAt' | 'expiresAt' | 'publicLabel' | 'internalNote'>>
+
+export interface Reference {
+  id: string
+  name: string
+  company: string | null
+  phone: string | null
+  email: string | null
+  jobNote: string | null
+  calledAt: string | null
+  outcome: 'good' | 'mixed' | 'bad' | 'no_answer' | null
+  note: string | null
+}
+
+export interface ApplicantDetail {
+  checks: CheckDetail[]
+  references: Reference[]
+  uploads: DocumentUpload[]
+  rates: RateRow[]
+  testJob: { job: Job; invite: Invite } | null // the latest test request, if one was sent
+}
+
+export interface AreaCoverage {
+  slug: string
+  name: string
+  published: boolean
+  approved: number // receiving job requests
+  listed: number   // public: approved with a completed job
+}
+
+// ---------- customer quote (coordinator side) ----------
+export interface QuoteAdmin {
+  token: string
+  quoteRef: string | null
+  partitionsCents: number | null
+  freightCents: number | null
+  taxNote: string | null
+  validUntil: string | null
+  drawingsApprovedAt: string | null
+  changeRequest: string | null
+  customerChoice: 'wait' | 'partitions_only' | 'own_installer' | null
+  paymentMethod: 'po' | 'card' | 'ach' | null
+  poNumber: string | null
+}
+
+export type QuotePatch = Partial<Pick<QuoteAdmin, 'quoteRef' | 'partitionsCents' | 'freightCents' | 'taxNote' | 'validUntil' | 'changeRequest'>>

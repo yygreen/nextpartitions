@@ -8,6 +8,7 @@ import { SiteChrome } from '../shell/SiteChrome'
 import { sampleRepo as db } from '../directory/repo.sample'
 import { AreaView, InstallerView, ServiceAreaView, StateHubView } from '../directory/views'
 import { PortalApp } from '../portal/components/PortalApp'
+import { ApplyView } from '../apply/ApplyView'
 
 setLinkMode('static')
 
@@ -25,6 +26,7 @@ async function page(): Promise<{ title: string; view: ReactNode }> {
     const preset = new URLSearchParams(location.search).get('installer') ?? undefined
     return { title: `Bathroom Partitions in ${area.name}`, view: <AreaView area={area} installers={installers} rateCards={rateCards} preset={preset} sample /> }
   }
+  if (kind === 'apply') return { title: 'Get Listed as an Installer', view: <ApplyView /> }
   if (kind === 'installer') {
     const installer = (await db.installer(slug))!
     const area = (await db.area(installer.areas[0]))!

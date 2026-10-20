@@ -2,28 +2,31 @@ import { useState } from 'react'
 import { formatUsd } from '../../directory/estimate'
 import { MATERIAL_LABEL, MOUNTING_LABEL, type Material, type Mounting } from '../../directory/types'
 import { portal } from '../client'
-import { coordinatorLabel, formatDay, formatDelivery, formatWhen } from '../stage'
+import { coordinatorLabel, dollarsToCents, formatDay, formatDelivery, formatWhen } from '../stage'
 import { CHECK_LABEL, type Invite, type InstallerSummary, type Job, type NewJob } from '../types'
 import { Thread } from './Thread'
 import { Badge, Button, Card, Field, INPUT, Notice, TEXTAREA, Tabs, useAction, useLoad } from './ui'
+import { VettingView } from './Vetting'
 
 // The job coordinator's side: jobs needing attention first, then everything in progress. Until the site's
 // quote requests and payments are connected (directory/README.md), jobs are entered and moved on here by hand.
-type Tab = 'jobs' | 'new' | 'installers' | 'documents'
+type Tab = 'jobs' | 'new' | 'vetting' | 'installers' | 'documents'
 
 export function CoordinatorView() {
   const [tab, setTab] = useState<Tab>('jobs')
   const jobs = useLoad(() => portal().allJobs(), [])
   const people = useLoad(() => portal().installers(), [])
   const docs = useLoad(() => portal().uploads(), [])
-  const attention = jobs.data?.filter((j) => j.job.needsAttention).length ?? 0
+  const attention = jobs.data?.filter((j) => j.job.needsAttention && !j.job.isTest).length ?? 0
+  const applicants = people.data?.filter((p) => p.status === 'applied').length
   const [openId, setOpenId] = useState<string | null>(null)
 
   return (
     <>
       <Tabs<Tab> value={tab} onChange={setTab} tabs={[
         { id: 'jobs', label: 'Jobs', count: attention }, { id: 'new', label: 'New job' },
-        { id: 'installers', label: 'Installers' }, { id: 'documents', label: 'Documents', count: docs.data?.length },
+        { id: 'vetting', label: 'Vetting', count: applicants }, { id: 'installers', label: 'Logins' },
+        { id: 'documents', label: 'Documents', count: docs.data?.length },
       ]} />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {jobs.error && <Notice tone="error">{jobs.error}</Notice>}
@@ -33,6 +36,7 @@ export function CoordinatorView() {
         {tab === 'new' && people.data && (
           <NewJobForm people={people.data} onCreated={(id) => { jobs.reload(); setOpenId(id); setTab('jobs') }} />
         )}
+        {tab === 'vetting' && <VettingView />}
         {tab === 'installers' && people.data && <InstallersList people={people.data} reload={people.reload} />}
         {tab === 'documents' && docs.data && people.data && <DocumentsQueue uploads={docs.data} people={people.data} reload={docs.reload} />}
       </main>
@@ -46,7 +50,7 @@ function JobsBoard({ rows, people, openId, setOpenId, reload }: {
 }) {
   const [showDone, setShowDone] = useState(false)
   const done = (j: Job) => j.status === 'signed_off' || j.status === 'cancelled'
-  const list = rows.filter((r) => showDone || !done(r.job))
+  const list = rows.filter((r) => !r.job.isTest && (showDone || !done(r.job)))
     .sort((a, b) => Number(b.job.needsAttention) - Number(a.job.needsAttention) || b.job.createdAt.localeCompare(a.job.createdAt))
   const open = rows.find((r) => r.job.id === openId)
   const name = (id: string | null) => people.find((p) => p.id === id)?.displayName ?? '–'
@@ -131,6 +135,7 @@ function JobPanel({ job, invites, people, reload }: { job: Job; invites: Invite[
                         {i.late && <Badge tone="wait">Late</Badge>}
                         {i.priceFlag && <Badge tone="alert">{i.priceFlag === 'above_rates' ? '15%+ above their rates' : '15%+ above the area price'}</Badge>}
                       </span>
+                      {i.priceFlag && <Button variant="quiet" busy={act.busy} onClick={() => go(() => portal().clearPriceFlag(job.id, i.installerId))}>Checked: show it to the customer</Button>}
                       {i.assumptions && <span className="block text-xs text-muted-foreground mt-1">Assumes: {i.assumptions}</span>}
                       {i.notes && <span className="block text-xs text-muted-foreground">Note: {i.notes}</span>}
                     </td>
@@ -161,7 +166,7 @@ function JobPanel({ job, invites, people, reload }: { job: Job; invites: Invite[
               </div>
             )}
             {!job.chosenInstallerId && priced.length > 0 && job.status !== 'presented' && (
-              <Button variant="outline" busy={act.busy} onClick={() => go(() => portal().updateJob(job.id, { status: 'presented' }))}>Prices sent to the customer</Button>
+              <Button variant="outline" busy={act.busy} onClick={() => go(() => portal().updateJob(job.id, { status: 'presented' }))}>Show prices on the customer's quote</Button>
             )}
           </div>
           {priced.length === 0 && job.windowClosedAt && !job.chosenInstallerId && (
@@ -209,6 +214,7 @@ function JobPanel({ job, invites, people, reload }: { job: Job; invites: Invite[
           ) : <p className="text-sm text-muted-foreground">No contact on file.</p>}
           <Drawings job={job} reload={reload} />
         </Card>
+        <QuoteCard jobId={job.id} />
         {invites.length > 0 && (
           <Card title="Messages">
             <select aria-label="Conversation with" className={INPUT} value={thread ?? ''} onChange={(e) => setThread(e.target.value)}>
@@ -339,8 +345,8 @@ function NewJobForm({ people, onCreated }: { people: InstallerSummary[]; onCreat
 // ---------- installers and logins ----------
 function InstallersList({ people, reload }: { people: InstallerSummary[]; reload: () => void }) {
   return (
-    <Card title="Installers" className="max-w-4xl">
-      <p className="text-sm text-muted-foreground">Approve installers and record checks in Supabase for now (the vetting screen is designed in prototypes/installer-vetting.html, not built yet). Give each approved installer a portal login here: they get an email to set it up.</p>
+    <Card title="Portal logins" className="max-w-4xl">
+      <p className="text-sm text-muted-foreground">Give an applicant a login once their documents check out, so they can answer the test job request; approved installers need one to receive jobs. They get an email to set it up. Checks and approval are in the Vetting tab.</p>
       <ul className="grid gap-2">{people.map((p) => <InstallerRow key={p.id} p={p} reload={reload} />)}</ul>
     </Card>
   )
@@ -390,6 +396,48 @@ function UploadReview({ u, installer, reload }: { u: Awaited<ReturnType<ReturnTy
         <Button busy={act.busy} onClick={async () => { if (await act.run(() => portal().reviewUpload(u.id, { accepted: true, expiresAt: expires || null, note: note.trim() || null }))) reload() }}>Accept</Button>
         <Button variant="outline" busy={act.busy} onClick={async () => { if (await act.run(() => portal().reviewUpload(u.id, { accepted: false, expiresAt: null, note: note.trim() || 'Not accepted' }))) reload() }}>Not accepted</Button>
       </div>
+      {act.error && <Notice tone="error">{act.error}</Notice>}
+    </Card>
+  )
+}
+
+// ---------- the customer's quote page ----------
+// The customer opens /quote/<token> from our email: no login, and installers never see the token or these prices.
+function QuoteCard({ jobId }: { jobId: string }) {
+  const { data: q, reload } = useLoad(() => portal().quote(jobId), [jobId])
+  const [f, setF] = useState<{ ref: string; parts: string; freight: string; tax: string; until: string } | null>(null)
+  const [copied, setCopied] = useState(false)
+  const act = useAction()
+  if (!q) return null
+  const form = f ?? { ref: q.quoteRef ?? '', parts: q.partitionsCents ? String(q.partitionsCents / 100) : '', freight: q.freightCents ? String(q.freightCents / 100) : '',
+    tax: q.taxNote ?? '', until: q.validUntil ?? '' }
+  const link = `${typeof location !== 'undefined' ? location.origin : 'https://nextpartitions.com'}/quote/${q.token}`
+  const done = (s: string | null, label: string) => s && <li>{label}</li>
+  return (
+    <Card title="Customer quote page">
+      <div className="flex gap-2">
+        <input aria-label="Quote link" readOnly className={`${INPUT} text-xs`} value={link} onFocus={(e) => e.target.select()} />
+        <Button variant="outline" onClick={async () => { await navigator.clipboard?.writeText(link); setCopied(true) }}>{copied ? 'Copied' : 'Copy'}</Button>
+      </div>
+      <p className="text-xs text-muted-foreground">Send this link to the customer only. Anyone with it can see the quote and choose an installer.</p>
+      <div className="grid grid-cols-2 gap-2">
+        <Field label="Quote number"><input className={INPUT} value={form.ref} onChange={(e) => setF({ ...form, ref: e.target.value })} /></Field>
+        <Field label="Valid until"><input className={INPUT} type="date" value={form.until} onChange={(e) => setF({ ...form, until: e.target.value })} /></Field>
+        <Field label="Partitions ($)"><input className={INPUT} inputMode="decimal" value={form.parts} onChange={(e) => setF({ ...form, parts: e.target.value })} /></Field>
+        <Field label="Freight ($)"><input className={INPUT} inputMode="decimal" value={form.freight} onChange={(e) => setF({ ...form, freight: e.target.value })} /></Field>
+      </div>
+      <Field label="Sales tax note"><input className={INPUT} value={form.tax} onChange={(e) => setF({ ...form, tax: e.target.value })} placeholder="e.g. Tax-exempt (school): send your certificate" /></Field>
+      <div><Button variant="outline" busy={act.busy} disabled={!f} onClick={async () => {
+        const ok = await act.run(() => portal().saveQuote(jobId, { quoteRef: form.ref.trim() || null, partitionsCents: dollarsToCents(form.parts), freightCents: dollarsToCents(form.freight),
+          taxNote: form.tax.trim() || null, validUntil: form.until || null }))
+        if (ok) { setF(null); reload() }
+      }}>Save quote</Button></div>
+      <ul className="text-sm list-disc pl-5">
+        {done(q.drawingsApprovedAt, `Drawings approved ${formatDay(q.drawingsApprovedAt)}`)}
+        {q.changeRequest && <li>Change requested: {q.changeRequest}</li>}
+        {q.customerChoice && <li>Customer chose: {({ wait: 'keep waiting for prices', partitions_only: 'partitions only, install later', own_installer: 'their own installer' } as const)[q.customerChoice]}</li>}
+        {q.paymentMethod && <li>Paying by {({ po: `purchase order ${q.poNumber ?? ''}`, card: 'card (send a payment link)', ach: 'bank transfer (send details and a pro forma invoice)' } as const)[q.paymentMethod]}</li>}
+      </ul>
       {act.error && <Notice tone="error">{act.error}</Notice>}
     </Card>
   )

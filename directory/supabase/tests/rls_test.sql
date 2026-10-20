@@ -18,6 +18,9 @@ insert into dir_service_areas values ('10000000-0000-0000-0000-000000000001', 'd
 insert into dir_installer_checks (installer_id, check_type, status, verified_at, public_label, internal_note)
 values ('10000000-0000-0000-0000-000000000001', 'city_registration', 'passed', '2026-10-15',
         'City of Dallas contractor registration', 'checked on DallasNow portal');
+-- Public profiles appear after the first completed job (20261022000000_apply_vetting_quote.sql).
+insert into dir_installer_checks (installer_id, check_type, status, verified_at, public_label)
+values ('10000000-0000-0000-0000-000000000001', 'completed_job', 'passed', '2026-10-15', 'Completed a job for a Next Partitions customer');
 insert into dir_jobs (id, area_slug, city, zip, scope, delivery_window)
 values ('20000000-0000-0000-0000-000000000001', 'dallas', 'Dallas', '75201',
         '{"material":"hdpe","mounting":"overhead_braced","stalls":6}', daterange('2026-11-02', '2026-11-09'));

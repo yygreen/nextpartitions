@@ -1,6 +1,7 @@
 import type {
-  Bucket, CheckRow, CheckType, Contact, DocumentUpload, Invite, InstallerSummary, Job, JobEvent, JobPatch, Me, Message,
-  NewJob, Performance, PriceAnswer, ProfilePatch, RateRow,
+  Applicant, ApplicantDetail, AreaCoverage, Bucket, CheckPatch, CheckRow, CheckType, Contact, DocumentUpload, Invite,
+  InstallerStatus, InstallerSummary, Job, JobEvent, JobPatch, Me, Message, NewJob, Performance, PriceAnswer, ProfilePatch,
+  QuoteAdmin, QuotePatch, RateRow, Reference,
 } from './types'
 
 // Portal data access, run as the logged-in user. Two implementations: Supabase (live, where row-level
@@ -41,4 +42,21 @@ export interface PortalRepo {
   // Accepting marks the matching check passed (verified today, new expiry); either way the upload is marked reviewed.
   reviewUpload(id: string, r: { accepted: boolean; expiresAt: string | null; note: string | null }): Promise<void>
   inviteLogin(installerId: string, email: string): Promise<void>
+  quote(jobId: string): Promise<QuoteAdmin | null>
+  saveQuote(jobId: string, patch: QuotePatch): Promise<void>
+  clearPriceFlag(jobId: string, installerId: string): Promise<void> // price checked: the customer may see it
+
+  // Vetting
+  applicants(): Promise<Applicant[]>
+  applicantDetail(installerId: string): Promise<ApplicantDetail>
+  saveCheck(installerId: string, checkType: CheckType, patch: CheckPatch): Promise<void>
+  saveReference(id: string, patch: Partial<Pick<Reference, 'calledAt' | 'outcome' | 'note'>>): Promise<void>
+  sendTestJob(installerId: string): Promise<string>
+  setStatus(installerId: string, status: InstallerStatus): Promise<void>
+  // Approval: service areas and tracked phone first, then the status (the database refuses it unless the
+  // five checks pass), then the approval email.
+  approve(installerId: string, o: { areas: string[]; trackedPhone: string | null }): Promise<void>
+  vettingNotice(installerId: string, kind: 'info_request' | 'rejected', note: string): Promise<void>
+  areas(): Promise<AreaCoverage[]>
+  publishArea(slug: string, published: boolean): Promise<void>
 }

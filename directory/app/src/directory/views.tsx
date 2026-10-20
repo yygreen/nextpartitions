@@ -11,7 +11,7 @@ const STATE_NAME: Record<string, string> = { texas: 'Texas' }
 const WRAP = 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'
 
 // Dark page header band, as on the live /service-area page.
-function Hero({ crumbs, title, lead, children }: { crumbs: { label: string; href?: string }[]; title: string; lead: string; children?: React.ReactNode }) {
+export function Hero({ crumbs, title, lead, children }: { crumbs: { label: string; href?: string }[]; title: string; lead: string; children?: React.ReactNode }) {
   return (
     <section className="bg-primary text-primary-foreground">
       <div className={`${WRAP} py-10 md:py-12 grid gap-3`}>

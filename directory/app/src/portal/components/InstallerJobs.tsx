@@ -31,6 +31,7 @@ export function InstallerJobs({ me, rows, reload }: { me: InstallerSelf; rows: R
                 <span className="flex justify-between gap-2"><b>{job.city} · {job.scope.stalls} stalls</b><span className="text-xs text-muted-foreground">{job.ref}</span></span>
                 <span className="text-sm text-muted-foreground">{MATERIAL_LABEL[job.scope.material]} · delivery {formatDelivery(job.delivery)}</span>
                 <span className="flex flex-wrap gap-1.5 items-center">
+                  {job.isTest && <Badge tone="alert">Test request</Badge>}
                   <Badge tone={STAGE[stage].tone}>{STAGE[stage].label}</Badge>
                   {(stage === 'new' || stage === 'late') && invite.dueAt && <span className="text-xs text-muted-foreground">Price by {formatWhen(invite.dueAt)}</span>}
                 </span>
@@ -57,6 +58,7 @@ function JobDetail({ me, row: { job, invite, stage }, reload }: { me: InstallerS
           <h2 className="text-2xl">{job.city} {job.zip}</h2>
           <span className="text-sm text-muted-foreground">{job.ref}{invite.invitedBy === 'preferred' ? ' · the customer asked for you' : ''}</span>
         </div>
+        {job.isTest && <Notice>This is a test job request from Next Partitions, part of getting listed. Price it as you would a real job; we time your reply and your firm price. There's no customer behind it.</Notice>}
         <Steps at={STAGE[stage].step} />
         <Badge tone={STAGE[stage].tone}>{STAGE[stage].label}</Badge>
         <dl className="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">

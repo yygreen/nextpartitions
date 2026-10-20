@@ -2,7 +2,9 @@ import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 import type { PortalRepo } from './repo'
 import { inviteInstallerLogin } from './server'
 import { formatDateRange, parseDateRange } from './stage'
-import type { CheckRow, Contact, DocumentUpload, Invite, InstallerSelf, Job, JobEvent, Message, RateRow } from './types'
+import type {
+  Applicant, AreaCoverage, CheckDetail, CheckRow, Contact, DocumentUpload, Invite, InstallerSelf, Job, JobEvent, Message, QuoteAdmin, RateRow, Reference,
+} from './types'
 
 // Browser-side, with the publishable key and the user's own session: every read and write below is
 // checked by row-level security (supabase/migrations). Nothing here relies on the UI hiding things.
@@ -27,7 +29,7 @@ export function supabasePortal(url: string, key: string): PortalRepo & { db: Sup
     partitionsPaidAt: r.partitions_paid_at, poAcceptedAt: r.po_accepted_at, releasedAt: r.released_at,
     installDate: r.install_date, neededBy: r.needed_by, rush: r.rush, requiresBackgroundCheck: r.requires_background_check,
     searchRound: r.search_round, priceDueAt: r.price_due_at, windowClosedAt: r.window_closed_at,
-    needsAttention: r.needs_attention, attentionReason: r.attention_reason, createdAt: r.created_at,
+    needsAttention: r.needs_attention, attentionReason: r.attention_reason, isTest: r.is_test ?? false, createdAt: r.created_at,
   })
   const toInvite = (r: any): Invite => ({
     jobId: r.job_id, installerId: r.installer_id, round: r.round, invitedBy: r.invited_by, sentAt: r.sent_at, dueAt: r.due_at,
@@ -46,6 +48,23 @@ export function supabasePortal(url: string, key: string): PortalRepo & { db: Sup
   const toUpload = (r: any): DocumentUpload => ({
     id: r.id, installerId: r.installer_id, checkType: r.check_type, path: r.path, uploadedAt: r.uploaded_at,
     reviewedAt: r.reviewed_at, reviewNote: r.review_note,
+  })
+
+  const toRate = (r: any): RateRow => ({
+    material: r.material, mounting: r.mounting, perStallLowCents: r.per_stall_low_cents, perStallHighCents: r.per_stall_high_cents,
+    minimumCents: r.minimum_cents, extras: r.extras ?? {},
+  })
+  const toApplicant = (r: any, areas: string[]): Applicant => ({
+    ...toInstaller(r), legalName: r.legal_name, contactName: r.contact_name, contactEmail: r.contact_email, contactPhone: r.contact_phone,
+    yearsInBusiness: r.years_in_business, crewSize: r.crew_size, extras: r.extras ?? [], brands: r.brands,
+    registrationNumber: r.registration_number, agreementName: r.agreement_name, agreementAcceptedAt: r.agreement_accepted_at,
+    appliedAt: r.applied_at ?? r.created_at, approvedAt: r.approved_at, decisionNote: r.decision_note, trackedPhone: r.tracked_phone,
+    hasLogin: r.user_id !== null, areas,
+  })
+  const toQuote = (r: any): QuoteAdmin => ({
+    token: r.token, quoteRef: r.quote_ref, partitionsCents: r.partitions_cents, freightCents: r.freight_cents, taxNote: r.tax_note,
+    validUntil: r.valid_until, drawingsApprovedAt: r.drawings_approved_at, changeRequest: r.change_request,
+    customerChoice: r.customer_choice, paymentMethod: r.payment_method, poNumber: r.po_number,
   })
 
   const uid = async () => (await db.auth.getUser()).data.user?.id ?? null
@@ -142,11 +161,7 @@ export function supabasePortal(url: string, key: string): PortalRepo & { db: Sup
       return db.storage.from('dir-profile-photos').getPublicUrl(path).data.publicUrl
     },
     async rateCards(installerId) {
-      return must(await db.from('dir_rate_cards').select('*').eq('installer_id', installerId).order('material').order('mounting'))
-        .map((r: any): RateRow => ({
-          material: r.material, mounting: r.mounting, perStallLowCents: r.per_stall_low_cents, perStallHighCents: r.per_stall_high_cents,
-          minimumCents: r.minimum_cents, extras: r.extras ?? {},
-        }))
+      return must(await db.from('dir_rate_cards').select('*').eq('installer_id', installerId).order('material').order('mounting')).map(toRate)
     },
     async saveRates(installerId, rows) {
       const keep = new Set(rows.map((r) => `${r.material}/${r.mounting}`))
@@ -244,6 +259,104 @@ export function supabasePortal(url: string, key: string): PortalRepo & { db: Sup
       const token = (await db.auth.getSession()).data.session?.access_token
       if (!token) throw new Error('Sign in again to invite installers')
       await inviteInstallerLogin({ data: { accessToken: token, installerId, email } })
+    },
+    async quote(jobId) {
+      const r = must(await db.from('dir_job_quotes').select('*').eq('job_id', jobId).maybeSingle())
+      return r ? toQuote(r) : null
+    },
+    async saveQuote(jobId, p) {
+      const row: Record<string, unknown> = { updated_at: new Date().toISOString() }
+      if (p.quoteRef !== undefined) row.quote_ref = p.quoteRef
+      if (p.partitionsCents !== undefined) row.partitions_cents = p.partitionsCents
+      if (p.freightCents !== undefined) row.freight_cents = p.freightCents
+      if (p.taxNote !== undefined) row.tax_note = p.taxNote
+      if (p.validUntil !== undefined) row.valid_until = p.validUntil
+      if (p.changeRequest !== undefined) row.change_request = p.changeRequest
+      ok(await db.from('dir_job_quotes').update(row).eq('job_id', jobId))
+    },
+    async clearPriceFlag(jobId, installerId) {
+      ok(await db.from('dir_job_invites').update({ price_flag: null }).eq('job_id', jobId).eq('installer_id', installerId))
+    },
+
+    async applicants() {
+      const [rows, areas] = await Promise.all([
+        must(await db.from('dir_installers').select('*').order('created_at', { ascending: false })),
+        must(await db.from('dir_service_areas').select('installer_id, area_slug')),
+      ])
+      return rows.map((r: any) => toApplicant(r, areas.filter((a: any) => a.installer_id === r.id).map((a: any) => a.area_slug)))
+    },
+    async applicantDetail(installerId) {
+      const [checks, refs, uploads, rates, tests] = await Promise.all([
+        db.from('dir_installer_checks').select('*').eq('installer_id', installerId),
+        db.from('dir_installer_references').select('*').eq('installer_id', installerId).order('created_at'),
+        db.from('dir_document_uploads').select('*').eq('installer_id', installerId).order('uploaded_at', { ascending: false }),
+        db.from('dir_rate_cards').select('*').eq('installer_id', installerId),
+        db.from('dir_job_invites').select('*, dir_jobs!inner(*)').eq('installer_id', installerId).eq('dir_jobs.is_test', true)
+          .order('sent_at', { ascending: false }).limit(1),
+      ])
+      const t = must(tests)[0]
+      return {
+        checks: must(checks).map((r: any): CheckDetail => ({
+          checkType: r.check_type, status: r.status, verifiedAt: r.verified_at, expiresAt: r.expires_at, publicLabel: r.public_label,
+          internalNote: r.internal_note, documentPath: r.document_path,
+        })),
+        references: must(refs).map((r: any): Reference => ({
+          id: r.id, name: r.name, company: r.company, phone: r.phone, email: r.email, jobNote: r.job_note,
+          calledAt: r.called_at, outcome: r.outcome, note: r.note,
+        })),
+        uploads: must(uploads).map(toUpload),
+        rates: must(rates).map(toRate),
+        testJob: t ? { job: toJob(t.dir_jobs), invite: toInvite(t) } : null,
+      }
+    },
+    async saveCheck(installerId, checkType, p) {
+      const row: Record<string, unknown> = { installer_id: installerId, check_type: checkType }
+      if (p.status !== undefined) row.status = p.status
+      if (p.verifiedAt !== undefined) row.verified_at = p.verifiedAt
+      if (p.expiresAt !== undefined) row.expires_at = p.expiresAt
+      if (p.publicLabel !== undefined) row.public_label = p.publicLabel
+      if (p.internalNote !== undefined) row.internal_note = p.internalNote
+      ok(await db.from('dir_installer_checks').upsert(row, { onConflict: 'installer_id,check_type' }))
+    },
+    async saveReference(id, p) {
+      const row: Record<string, unknown> = {}
+      if (p.calledAt !== undefined) row.called_at = p.calledAt
+      if (p.outcome !== undefined) row.outcome = p.outcome
+      if (p.note !== undefined) row.note = p.note
+      ok(await db.from('dir_installer_references').update(row).eq('id', id))
+    },
+    async sendTestJob(installerId) {
+      return must(await db.rpc('dir_send_test_job', { p_installer: installerId })) as string
+    },
+    async setStatus(installerId, status) {
+      ok(await db.from('dir_installers').update({ status }).eq('id', installerId))
+    },
+    async approve(installerId, o) {
+      ok(await db.from('dir_service_areas').delete().eq('installer_id', installerId))
+      if (o.areas.length) ok(await db.from('dir_service_areas').insert(o.areas.map((a) => ({ installer_id: installerId, area_slug: a }))))
+      ok(await db.from('dir_installers').update({ tracked_phone: o.trackedPhone }).eq('id', installerId))
+      ok(await db.from('dir_installers').update({ status: 'approved' }).eq('id', installerId))
+      ok(await db.rpc('dir_vetting_notice', { p_installer: installerId, p_kind: 'approved', p_note: null }))
+    },
+    async vettingNotice(installerId, kind, note) {
+      ok(await db.rpc('dir_vetting_notice', { p_installer: installerId, p_kind: kind, p_note: note }))
+    },
+    async areas() {
+      const [areas, people, links, listed] = await Promise.all([
+        must(await db.from('dir_areas').select('slug, name, published').order('name')),
+        must(await db.from('dir_installers').select('id, status')),
+        must(await db.from('dir_service_areas').select('installer_id, area_slug')),
+        must(await db.from('dir_public_installers').select('slug, areas')),
+      ])
+      const approved = new Set(people.filter((p: any) => p.status === 'approved').map((p: any) => p.id))
+      return areas.map((a: any): AreaCoverage => ({
+        slug: a.slug, name: a.name, published: a.published,
+        approved: links.filter((l: any) => l.area_slug === a.slug && approved.has(l.installer_id)).length,
+        listed: listed.filter((i: any) => (i.areas ?? []).includes(a.slug)).length,
+      }))
+    },
+    async publishArea(slug, published) {
+      ok(await db.from('dir_areas').update({ published }).eq('slug', slug))
     },
   }
 }

@@ -1,7 +1,8 @@
 import type { PortalRepo } from './repo'
 import { addDays } from './stage'
 import type {
-  CheckRow, Contact, DocumentUpload, Invite, InstallerSelf, InstallerSummary, Job, JobEvent, Me, Message, RateRow,
+  Applicant, AreaCoverage, CheckDetail, CheckRow, CheckType, Contact, DocumentUpload, Invite, InstallerSelf, InstallerSummary, Job,
+  JobEvent, Me, Message, QuoteAdmin, RateRow, Reference,
 } from './types'
 
 // FICTIONAL sample data, held in memory, so the portal runs without Supabase (development, preview).
@@ -36,7 +37,7 @@ const baseJob = (o: Partial<Job> & Pick<Job, 'id' | 'ref' | 'city' | 'zip' | 'sc
   quoteRequestRef: null, areaSlug: 'dallas', drawingsPath: 'sample/shop-drawings.pdf', delivery: { from: addDays(today, 18), to: addDays(today, 22) },
   status: 'quoting', chosenInstallerId: null, preferredInstallerId: null, partitionsPaidAt: null, poAcceptedAt: null, releasedAt: null,
   installDate: null, neededBy: null, rush: false, requiresBackgroundCheck: false, searchRound: 1, priceDueAt: at(2, 15),
-  windowClosedAt: null, needsAttention: false, attentionReason: null, createdAt: at(0, 13), ...o,
+  windowClosedAt: null, needsAttention: false, attentionReason: null, isTest: false, createdAt: at(0, 13), ...o,
 })
 
 const jobs: Job[] = [
@@ -224,4 +225,122 @@ export const samplePortal: PortalRepo = {
     if (r.accepted && c && u.installerId === ACME) Object.assign(c, { status: 'passed', verifiedAt: today, expiresAt: r.expiresAt })
   },
   async inviteLogin(installerId) { await pause(); installers.find((i) => i.id === installerId)!.hasLogin = true },
+  async quote(jobId) { return jobs.find((j) => j.id === jobId)?.isTest ? null : { ...quoteFor(jobId) } },
+  async saveQuote(jobId, p) { await pause(); Object.assign(quoteFor(jobId), p) },
+  async clearPriceFlag(jobId, installerId) { await pause(); invites.find((i) => i.jobId === jobId && i.installerId === installerId)!.priceFlag = null },
+
+  async applicants() {
+    return installers.map((i): Applicant => ({ ...i, ...vet(i.id).extra, areas: vet(i.id).areas }))
+  },
+  async applicantDetail(id) {
+    const v = vet(id)
+    const t = invites.filter((i) => i.installerId === id && job(i.jobId).isTest).at(-1)
+    return { checks: v.checks.map((c) => ({ ...c })), references: v.refs.map((r) => ({ ...r })), uploads: uploads.filter((u) => u.installerId === id),
+      rates: rates[id] ?? [], testJob: t ? { job: { ...job(t.jobId) }, invite: { ...t } } : null }
+  },
+  async saveCheck(id, type, p) {
+    await pause()
+    const v = vet(id), c = v.checks.find((x) => x.checkType === type)
+    if (c) Object.assign(c, p)
+    else v.checks.push({ checkType: type, status: 'pending', verifiedAt: null, expiresAt: null, publicLabel: null, internalNote: null, documentPath: null, ...p })
+  },
+  async saveReference(id, p) { await pause(); Object.assign(Object.values(vetting).flatMap((v) => v.refs).find((r) => r.id === id)!, p) },
+  async sendTestJob(id) {
+    await pause()
+    const i = installers.find((x) => x.id === id)!
+    const jid = `t${jobs.length}`
+    jobs.push(baseJob({ id: jid, ref: `TEST-${jobs.length}`, city: i.baseCity, zip: i.baseZip, status: 'routed', isTest: true, drawingsPath: null,
+      scope: { material: i.materials[0] ?? 'hdpe', mounting: i.mountings[0] ?? 'overhead_braced', stalls: 4, ada: true, building: 'Office',
+        notes: 'Test job request from Next Partitions: price it as you would a real job. We time your reply and your firm price.' } }))
+    invites.push(inv(jid, id, { sentAt: new Date().toISOString(), dueAt: at(2, 15), invitedBy: 'manual' }))
+    return jid
+  },
+  async setStatus(id, status) { await pause(); installers.find((i) => i.id === id)!.status = status },
+  async approve(id, o) {
+    await pause()
+    const v = vet(id)
+    const passed = (t: CheckType) => v.checks.some((c) => c.checkType === t && c.status === 'passed')
+    const missing = [['insurance', passed('insurance')], ['registration', passed('business_registration') || passed('city_registration')],
+      ['references', passed('references')], ['response test', passed('response_test')], ['listing agreement', passed('listing_agreement')]]
+      .filter(([, ok]) => !ok).map(([n]) => n)
+    if (missing.length) throw new Error(`Before approving, these checks must pass: ${missing.join(', ')}`)
+    v.areas = o.areas; v.extra.trackedPhone = o.trackedPhone; v.extra.approvedAt = new Date().toISOString()
+    installers.find((i) => i.id === id)!.status = 'approved'
+  },
+  async vettingNotice(id, kind, note) {
+    await pause()
+    vet(id).extra.decisionNote = note
+    if (kind === 'rejected') installers.find((i) => i.id === id)!.status = 'delisted'
+  },
+  async areas(): Promise<AreaCoverage[]> {
+    const approved = installers.filter((i) => i.status === 'approved')
+    return AREAS.map((a) => ({ ...a, approved: approved.filter((i) => vet(i.id).areas.includes(a.slug)).length,
+      listed: approved.filter((i) => vet(i.id).areas.includes(a.slug) && vet(i.id).checks.some((c) => c.checkType === 'completed_job' && c.status === 'passed')).length }))
+  },
+  async publishArea(slug, published) { await pause(); AREAS.find((a) => a.slug === slug)!.published = published },
 }
+
+// ---------- sample vetting data (the applicants from prototypes/installer-vetting.html) ----------
+const AREAS = [{ slug: 'dallas', name: 'Dallas–Fort Worth', published: false }, { slug: 'houston', name: 'Houston', published: false }]
+type Extra = Omit<Applicant, keyof InstallerSelf | 'hasLogin' | 'areas'>
+const blank: Extra = { legalName: '', contactName: null, contactEmail: null, contactPhone: null, yearsInBusiness: null, crewSize: null, extras: [],
+  brands: null, registrationNumber: null, agreementName: null, agreementAcceptedAt: null, appliedAt: null, approvedAt: null, decisionNote: null, trackedPhone: null }
+const chk = (checkType: CheckType, status: CheckDetail['status'], o: Partial<CheckDetail> = {}): CheckDetail =>
+  ({ checkType, status, verifiedAt: status === 'passed' ? addDays(today, -5) : null, expiresAt: null, publicLabel: null, internalNote: null, documentPath: null, ...o })
+let refSeq = 0
+const ref = (name: string, company: string, o: Partial<Reference> = {}): Reference =>
+  ({ id: `r${++refSeq}`, name, company, phone: '(214) 555-01' + String(10 + refSeq), email: null, jobNote: null, calledAt: null, outcome: null, note: null, ...o })
+const allPassed = (city: string) => [chk('insurance', 'passed', { expiresAt: addDays(today, 24), publicLabel: 'Insurance on file ($1M general liability)', documentPath: 'sample/coi.pdf' }),
+  chk('city_registration', 'passed', { publicLabel: `City of ${city} contractor registration` }), chk('references', 'passed', { publicLabel: '2 references contacted' }),
+  chk('response_test', 'passed'), chk('listing_agreement', 'passed', { publicLabel: 'Signed listing agreement' }),
+  chk('completed_job', 'passed', { publicLabel: 'Completed a job for a Next Partitions customer' })]
+
+const LONESTAR = 'b0000000-0000-4000-8000-000000000001', TARRANT = 'b0000000-0000-4000-8000-000000000002'
+const METROPLEX = 'b0000000-0000-4000-8000-000000000003', QUICKFIX = 'b0000000-0000-4000-8000-000000000004'
+const applicant = (id: string, slug: string, displayName: string, status: InstallerSelf['status'], baseCity: string, baseZip: string, radius: number,
+  materials: InstallerSelf['materials'], mountings: InstallerSelf['mountings']) =>
+  installers.push({ id, slug, displayName, status, baseCity, baseState: 'TX', baseZip, serviceRadiusMi: radius, materials, mountings, about: null,
+    photoUrl: null, maxOpenJobs: 5, awayFrom: null, awayTo: null, hasLogin: status !== 'applied' && status !== 'delisted' })
+applicant(LONESTAR, 'lone-star-restroom-installs', 'Lone Star Restroom Installs', 'applied', 'Garland', '75040', 45, ['hdpe', 'powder_coated', 'phenolic'], ['overhead_braced', 'floor_mounted'])
+applicant(TARRANT, 'tarrant-partition-co', 'Tarrant Partition Co.', 'vetting', 'Fort Worth', '76102', 60, ['hdpe', 'phenolic', 'stainless', 'laminate'], ['overhead_braced', 'floor_mounted', 'ceiling_hung', 'floor_to_ceiling'])
+applicant(METROPLEX, 'metroplex-division-10', 'Metroplex Division 10', 'vetting', 'Irving', '75038', 50, ['hdpe', 'powder_coated', 'laminate'], ['overhead_braced', 'floor_mounted', 'ceiling_hung'])
+applicant(QUICKFIX, 'quickfix-handyman', 'QuickFix Handyman', 'delisted', 'Mesquite', '75149', 30, ['powder_coated'], ['overhead_braced'])
+
+const vetting: Record<string, { extra: Extra; areas: string[]; checks: CheckDetail[]; refs: Reference[] }> = {
+  [ACME]: { extra: { ...blank, legalName: 'Acme Installations LLC', contactName: 'Jordan Whitfield', contactEmail: 'jordan@example.com', contactPhone: '(214) 555-0142',
+    yearsInBusiness: 15, crewSize: '3-5', approvedAt: at(-8), trackedPhone: '(214) 555-0142', appliedAt: at(-20) }, areas: ['dallas'], checks: allPassed('Dallas'), refs: [] },
+  [NORTHWIND]: { extra: { ...blank, legalName: 'Northwind Washroom Inc', contactName: 'Sam Reyes', contactEmail: 'sam@example.com', approvedAt: at(-6), appliedAt: at(-18) },
+    areas: ['dallas'], checks: allPassed('Fort Worth').filter((c) => c.checkType !== 'completed_job'), refs: [] },
+  [LONESTAR]: { extra: { ...blank, legalName: 'Lone Star Restroom Installs', contactName: 'Rosa Delgado', contactEmail: 'rosa@example.com', contactPhone: '(972) 555-0131',
+    yearsInBusiness: 9, crewSize: '3-5', extras: ['remove_old', 'ada', 'urinal_screens'], brands: 'Scranton Products, Bobrick', registrationNumber: 'Garland GC-2026-0412',
+    agreementName: 'Rosa Delgado', agreementAcceptedAt: at(-6), appliedAt: at(-6) }, areas: [],
+    checks: [chk('insurance', 'pending', { documentPath: 'sample/coi-lonestar.pdf' }), chk('business_registration', 'pending', { internalNote: 'Registration number: Garland GC-2026-0412' }),
+      chk('references', 'pending'), chk('response_test', 'pending'), chk('listing_agreement', 'pending', { internalNote: 'Agreed to sign if approved: Rosa Delgado' })],
+    refs: [ref('Mike Tran', 'Garland ISD', { jobNote: '12 HDPE stalls, 2025' }), ref('Kelly Hart', 'Hart Builders')] },
+  [TARRANT]: { extra: { ...blank, legalName: 'Tarrant Partition Co. LLC', contactName: 'Ben Okafor', contactEmail: 'ben@example.com', contactPhone: '(817) 555-0164',
+    yearsInBusiness: 14, crewSize: '6-10', extras: ['remove_old', 'ada', 'urinal_screens'], brands: 'Bobrick, ASI, Bradley', registrationNumber: 'Fort Worth FW-88213',
+    agreementName: 'Ben Okafor', agreementAcceptedAt: at(-12), appliedAt: at(-12) }, areas: [],
+    checks: [chk('insurance', 'passed', { expiresAt: '2027-01-15', documentPath: 'sample/coi-tarrant.pdf' }), chk('city_registration', 'passed', { internalNote: 'Checked on the City of Fort Worth lookup' }),
+      chk('references', 'passed'), chk('response_test', 'pending'), chk('listing_agreement', 'pending')],
+    refs: [ref('Ana Silva', 'Keller ISD', { calledAt: at(-10), outcome: 'good', note: 'On time, clean job, would hire again' }),
+      ref('Tom Rhee', 'Rhee Construction', { calledAt: at(-10), outcome: 'good', note: 'Once late by a day, told us ahead' })] },
+  [METROPLEX]: { extra: { ...blank, legalName: 'Metroplex Division 10 LLC', contactName: 'Lee Nguyen', contactEmail: 'lee@example.com', contactPhone: '(972) 555-0187',
+    yearsInBusiness: 7, crewSize: '3-5', extras: ['remove_old', 'ada'], brands: 'Scranton Products, Metpar', registrationNumber: 'Dallas CR-2025-77120',
+    agreementName: 'Lee Nguyen', agreementAcceptedAt: at(-19), appliedAt: at(-19) }, areas: [],
+    checks: allPassed('Dallas').filter((c) => c.checkType !== 'completed_job'),
+    refs: [ref('Chris Bell', 'Irving Medical Plaza', { calledAt: at(-17), outcome: 'good', note: 'Quick, tidy, fair price' }),
+      ref('Dee Moss', 'Moss & Co. GC', { calledAt: at(-17), outcome: 'good', note: 'Reliable on a 20-stall school job' })] },
+  [QUICKFIX]: { extra: { ...blank, legalName: 'QuickFix Handyman', contactName: 'Dan Ward', contactEmail: 'dan@example.com', yearsInBusiness: 2, crewSize: '1-2',
+    appliedAt: at(-21), decisionNote: 'No general liability insurance' }, areas: [], checks: [chk('insurance', 'failed')], refs: [] },
+}
+const vet = (id: string) => (vetting[id] ??= { extra: { ...blank }, areas: [], checks: [], refs: [] })
+
+// Tarrant's test request, sent and still waiting.
+jobs.push(baseJob({ id: 'tTarrant', ref: 'TEST-1', city: 'Fort Worth', zip: '76102', status: 'routed', isTest: true, drawingsPath: null, createdAt: at(-1, 14),
+  scope: { material: 'hdpe', mounting: 'overhead_braced', stalls: 4, ada: true, building: 'Office', notes: 'Test job request from Next Partitions.' } }))
+invites.push(inv('tTarrant', TARRANT, { invitedBy: 'manual', sentAt: at(-1, 14), dueAt: at(1, 14) }))
+
+const quotes: Record<string, QuoteAdmin> = {}
+const quoteFor = (jobId: string) => (quotes[jobId] ??= { token: `sample-${jobId}`, quoteRef: null, partitionsCents: null, freightCents: null, taxNote: null,
+  validUntil: null, drawingsApprovedAt: null, changeRequest: null, customerChoice: null, paymentMethod: null, poNumber: null })
+Object.assign(quoteFor('j1044'), { quoteRef: 'Q-26-1044', partitionsCents: 412000, freightCents: 32000, validUntil: addDays(today, 25) })

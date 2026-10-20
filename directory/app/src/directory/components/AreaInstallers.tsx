@@ -1,3 +1,4 @@
+import { applyHref } from '../links'
 import type { Area, Installer } from '../types'
 import { InstallerCard } from './InstallerCard'
 import { Disclaimer } from './ui'
@@ -20,6 +21,7 @@ export function AreaInstallers({ area, installers }: { area: Area; installers: I
           ? <p className="bg-card border border-border rounded-lg p-4">No approved installers here yet. Price your restroom above and we'll arrange installation options for your job site.</p>
           : rows.map((i) => <InstallerCard key={i.slug} installer={i} area={area.slug} />)}
       </div>
+      <p className="text-sm text-muted-foreground">Install partitions in {area.name}? <a href={applyHref()} className="font-semibold text-brand-red hover:underline">Get listed as an installer</a></p>
       <Disclaimer />
     </section>
   )

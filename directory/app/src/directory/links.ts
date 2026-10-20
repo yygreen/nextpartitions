@@ -13,6 +13,7 @@ export const serviceAreaHref = () => (mode === 'app' ? '/service-area/' : 'servi
 export const stateHref = (state: string) => (mode === 'app' ? `/service-area/${state}/` : 'index.html')
 export const areaHref = (area: string) => (mode === 'app' ? `/service-area/${area}/` : `area-${area}.html`)
 export const installerHref = (slug: string) => (mode === 'app' ? `/installers/${slug}/` : `installer-${slug}.html`)
+export const applyHref = () => (mode === 'app' ? '/installers/apply/' : 'apply.html')
 
 // "Price with Acme" on an area page: same page, configure step, installer pre-selected.
 export const priceWithHref = (area: string, slug: string) => `${areaHref(area)}?installer=${slug}#configure`
