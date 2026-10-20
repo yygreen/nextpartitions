@@ -86,13 +86,13 @@ const messages: Message[] = [
 ]
 
 const contacts: Record<string, Contact> = {
-  j1048: { customerName: 'Pat Lee', company: 'Plano ISD, Facilities', email: 'pat.lee@example.org', phone: '(214) 555-0100',
+  j1048: { customerName: 'Example customer', company: 'Example school district', email: 'customer@example.org', phone: '(214) 555-0100',
     siteAddress: '1200 Example Pkwy, Plano, TX 75074', siteContact: 'Front office, 7:30 AM–3:30 PM' },
-  j1044: { customerName: 'Sam Ortiz', company: 'Example Holdings', email: 'sam@example.com', phone: null, siteAddress: null, siteContact: null },
-  j1041: { customerName: 'Chris Wu', company: 'Example Grill', email: 'chris@example.com', phone: '(214) 555-0130', siteAddress: '45 Example St, Dallas, TX 75204', siteContact: null },
-  j1036: { customerName: 'Jamie Park', company: 'Example Fitness', email: 'jamie@example.com', phone: '(972) 555-0177',
+  j1044: { customerName: 'Example customer', company: 'Example office building', email: 'customer@example.com', phone: null, siteAddress: null, siteContact: null },
+  j1041: { customerName: 'Example customer', company: 'Example restaurant', email: 'customer@example.com', phone: '(214) 555-0130', siteAddress: '45 Example St, Dallas, TX 75204', siteContact: null },
+  j1036: { customerName: 'Example customer', company: 'Example gym', email: 'customer@example.com', phone: '(972) 555-0177',
     siteAddress: '800 Example Rd, Richardson, TX 75080', siteContact: 'Manager on duty, from 6 AM' },
-  j1052: { customerName: 'Robin Hale', company: 'Example Community Church', email: 'robin@example.org', phone: '(817) 555-0119', siteAddress: null, siteContact: null },
+  j1052: { customerName: 'Example customer', company: 'Example church', email: 'customer@example.org', phone: '(817) 555-0119', siteAddress: null, siteContact: null },
 }
 
 const events: (JobEvent & { jobId: string })[] = []
@@ -392,7 +392,7 @@ export const sampleStore = {
 }
 
 // ---------- keep the sample across page loads (the preview's configurator and homepage are separate pages) ----------
-const KEY = 'np-prototype-sample-v1'
+const KEY = 'np-prototype-sample-v2' // bump when the sample data changes, so stored copies reset
 const state = () => ({ installers, jobs, invites, messages, contacts, events, rates, checks, uploads, vetting, quotes, AREAS, msgSeq, refSeq })
 function save() {
   try { sessionStorage.setItem(KEY, JSON.stringify(state())) } catch { /* private mode: the sample just resets */ }
