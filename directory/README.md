@@ -47,7 +47,7 @@ Set `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` (see `.env.example`) to read r
 
 ## For Marc: configurator hand-off
 
-"Continue to full quote" opens the live configurator with `?area=&installer=&material=&mounting=&stalls=&remove_old=1&src=`. The configurator should pre-fill from these and keep `area`/`installer` with the quote request. The partitions prices in `partitions.ts` are samples taken from the configurator prototype; on merge, use the configurator's own pricing.
+"Continue to full quote" opens the live configurator with `?area=&installer=&material=&mounting=&stalls=&remove_old=1&ada=1|0&urinal_screens=&privacy=standard|extra&src=`. The configurator should pre-fill from these and keep `area`/`installer` with the quote request. The partitions prices in `partitions.ts` are samples taken from the configurator prototype; on merge, use the configurator's own pricing. The step shows no price until the ADA, urinal-screen and privacy questions are answered, and then only ranges (about -10% to +20% around the per-stall base, since sizes, colors and hardware come later).
 
 ## What goes where on merge
 

@@ -29,6 +29,9 @@ export interface Selection {
   mounting?: Mounting
   stalls?: number
   removeOld?: boolean
+  ada?: boolean
+  urinalScreens?: number
+  privacy?: 'standard' | 'extra'
   from?: 'directory' | 'profile' | 'hub'
 }
 
@@ -46,6 +49,7 @@ export function configuratorHref(s: Selection = {}): string {
   const set = (k: string, v: string | number | boolean | undefined) => { if (v !== undefined && v !== false) url.searchParams.set(k, String(v)) }
   set('area', s.area); set('installer', s.installer); set('material', s.material); set('mounting', s.mounting)
   set('stalls', s.stalls); set('remove_old', s.removeOld ? 1 : undefined)
+  set('ada', s.ada === undefined ? undefined : s.ada ? 1 : 0); set('urinal_screens', s.urinalScreens); set('privacy', s.privacy)
   url.searchParams.set('src', s.from === 'profile' ? 'installer_profile' : s.from === 'hub' ? 'installer_hub' : 'installer_directory')
   return url.toString()
 }

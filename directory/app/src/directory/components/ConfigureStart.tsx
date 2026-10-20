@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { estimateFor, formatUsd, rangeAcross } from '../estimate'
 import { areaHref, configuratorHref } from '../links'
-import { partitionsPriceCents } from '../partitions'
+import { partitionsRangeCents } from '../partitions'
 import { type Installer, MATERIAL_LABEL, MOUNTING_LABEL, type Material, type Mounting, type RateCard } from '../types'
 import { ButtonLink } from './ui'
 
@@ -10,6 +10,8 @@ const MOUNTINGS = Object.keys(MOUNTING_LABEL) as Mounting[]
 
 // Step 1 of the quote, right on the city page or profile: visitors price partitions + installation
 // with Next Partitions before they look at installers, then continue into the full configurator.
+// No number shows until the few answers that move the price most are given, and then only as ranges:
+// sizes, colors and hardware come later, in the configurator.
 export function ConfigureStart(props: {
   areaSlug: string
   areaName: string
@@ -27,15 +29,33 @@ export function ConfigureStart(props: {
   const [mounting, setMounting] = useState<Mounting>('overhead_braced')
   const [stalls, setStalls] = useState(4)
   const [removeOld, setRemoveOld] = useState(false)
+  const [ada, setAda] = useState<boolean | null>(null)
+  const [urinals, setUrinals] = useState<number | null>(null)
+  const [privacy, setPrivacy] = useState<'standard' | 'extra' | null>(null)
+  const left = [ada, urinals, privacy].filter((x) => x === null).length
 
-  const job = { material, mounting, stalls, removeOld }
-  const partitions = partitionsPriceCents(material, mounting, stalls)
+  const job = { material, mounting, stalls, removeOld, adaStalls: ada ? 1 : 0 }
+  const parts = partitionsRangeCents({ material, mounting, stalls, ada: !!ada, urinalScreens: urinals ?? 0, privacy: privacy ?? 'standard' })
   const cards = installer ? props.rateCards.filter((c) => c.slug === installer.slug) : props.rateCards
   const bySlug = [...new Set(cards.map((c) => c.slug))].map((s) => cards.filter((c) => c.slug === s))
   const install = installer ? estimateFor(cards, job) : rangeAcross(bySlug, job)
   const installersPricing = install && 'installers' in install ? install.installers : install ? 1 : 0
 
-  const href = configuratorHref({ area: props.areaSlug, installer: installer?.slug, material, mounting, stalls, removeOld, from: props.from })
+  const href = configuratorHref({ area: props.areaSlug, installer: installer?.slug, material, mounting, stalls, removeOld,
+    ada: ada ?? undefined, urinalScreens: urinals ?? undefined, privacy: privacy ?? undefined, from: props.from })
+  const range = (lo: number, hi: number) => `${formatUsd(lo)} – ${formatUsd(hi)}`
+  const choice = (name: string, label: string, options: [string, string][], value: string | null, set: (v: string) => void) => (
+    <fieldset className="grid gap-2">
+      <legend className="text-sm font-semibold mb-1">{label}</legend>
+      <div className="flex flex-wrap gap-2">
+        {options.map(([v, l]) => (
+          <label key={v} className="border border-border rounded-md px-3 min-h-11 inline-flex items-center text-sm cursor-pointer has-[:checked]:border-brand-red has-[:checked]:bg-brand-red/10 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-brand-red">
+            <input type="radio" name={name} value={v} checked={value === v} onChange={() => set(v)} className="sr-only" />{l}
+          </label>
+        ))}
+      </div>
+    </fieldset>
+  )
 
   return (
     <section id="configure" aria-labelledby="configure-h" className="scroll-mt-20 bg-card border border-border border-t-4 border-t-brand-red rounded-lg p-5 sm:p-6 shadow-sm grid gap-5">
@@ -43,8 +63,8 @@ export function ConfigureStart(props: {
         <p className="text-xs font-bold uppercase tracking-wide text-brand-red">Step 1 of your quote</p>
         <h2 id="configure-h" className="text-2xl font-extrabold tracking-tight">Price your restroom</h2>
         <p className="text-muted-foreground mt-1">
-          Partitions from Next Partitions, installed by {installer ? installer.displayName : `an approved ${props.areaName} installer`}.
-          Pick the basics; colors, layout and sizes come next.
+          Partitions from Next Partitions, installed by {installer ? installer.displayName : `a verified ${props.areaName} installer`}.
+          A few questions give you a price range; sizes, colors and layout come next.
         </p>
       </div>
 
@@ -89,16 +109,32 @@ export function ConfigureStart(props: {
         </label>
       </div>
 
-      <dl aria-live="polite" className="grid sm:grid-cols-3 gap-3 bg-surface-warm border border-border p-4">
-        <div><dt className="text-sm text-muted-foreground">Partitions (Next Partitions)</dt><dd className="text-xl font-bold">{formatUsd(partitions)}</dd></div>
-        <div>
-          <dt className="text-sm text-muted-foreground">Installation estimate</dt>
-          <dd className="text-xl font-bold">{install ? `${formatUsd(install.lowCents)} – ${formatUsd(install.highCents)}` : 'Quoted after drawings'}</dd>
-          <dd className="text-xs text-muted-foreground">{install ? (installer ? `Rate card: ${installer.displayName}` : `${installersPricing} verified installer${installersPricing === 1 ? '' : 's'}`) : 'No rate card for this combination yet'}</dd>
+      <div className="grid sm:grid-cols-3 gap-4">
+        {choice('ada', 'Include an accessible (ADA) stall?', [['yes', 'Yes'], ['no', 'No']], ada === null ? null : ada ? 'yes' : 'no', (v) => setAda(v === 'yes'))}
+        {choice('urinals', 'Urinal screens', [['0', 'None'], ['1', '1'], ['2', '2'], ['3', '3']], urinals === null ? null : String(urinals), (v) => setUrinals(Number(v)))}
+        {choice('privacy', 'Privacy', [['standard', 'Standard'], ['extra', 'Extra (no gaps)']], privacy, (v) => setPrivacy(v as 'standard' | 'extra'))}
+      </div>
+
+      {left > 0 ? (
+        <p aria-live="polite" className="bg-surface-warm border border-dashed border-border p-4 text-sm text-muted-foreground">
+          Answer {left === 3 ? 'the 3 questions' : left === 1 ? 'the last question' : `the ${left} questions`} above to see a price range for your restroom.
+        </p>
+      ) : (
+        <div aria-live="polite" className="grid gap-2 bg-surface-warm border border-border p-4">
+          <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground">Price range for {stalls} stall{stalls === 1 ? '' : 's'}, {MATERIAL_LABEL[material].toLowerCase()}</p>
+          <dl className="grid sm:grid-cols-3 gap-3">
+            <div><dt className="text-sm text-muted-foreground">Partitions (Next Partitions)</dt><dd className="text-xl font-bold">{range(parts.lowCents, parts.highCents)}</dd></div>
+            <div>
+              <dt className="text-sm text-muted-foreground">Installation</dt>
+              <dd className="text-xl font-bold">{install ? range(install.lowCents, install.highCents) : 'Quoted after drawings'}</dd>
+              <dd className="text-xs text-muted-foreground">{install ? (installer ? `From ${installer.displayName}${installer.displayName.endsWith('s') ? "'" : "'s"} rates` : `From ${installersPricing} verified installer${installersPricing === 1 ? "'s" : "s'"} rates`) : 'No rates for this combination yet'}</dd>
+            </div>
+            <div><dt className="text-sm text-muted-foreground">Total</dt>
+              <dd className="text-xl font-extrabold">{install ? range(parts.lowCents + install.lowCents, parts.highCents + install.highCents) : `${range(parts.lowCents, parts.highCents)} + installation`}</dd></div>
+          </dl>
+          <p className="text-xs text-muted-foreground">Stall sizes, colors and hardware set the exact price. Your quote comes with shop drawings within 2 business days.</p>
         </div>
-        <div><dt className="text-sm text-muted-foreground">Estimated total</dt>
-          <dd className="text-xl font-extrabold">{install ? `${formatUsd(partitions + install.lowCents)} – ${formatUsd(partitions + install.highCents)}` : `${formatUsd(partitions)} + installation`}</dd></div>
-      </dl>
+      )}
 
       <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
         <ButtonLink href={href} size="lg" className="w-full sm:w-auto">Continue to full quote →</ButtonLink>
