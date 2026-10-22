@@ -58,7 +58,7 @@ Set `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` (see `.env.example`) to read r
 | `src/routes/service-area/$area.tsx` | Don't copy if city pages already exist: add `<StartConfigure/>` near the top of the existing city page and `<AreaInstallers/>` as a section, with the loader's `getAreaDirectory`. |
 | `src/portal/`, `src/routes/portal/index.tsx` | Copy as is. The route renders in the browser only (`ssr: false`) and is noindex. If the live site's layout wraps every page in its header and footer, leave them off `/portal` (the standalone `__root.tsx` shows how). If the project already has a Supabase browser client, `client.ts` can reuse it. |
 | `src/apply/`, `src/routes/installers/apply.tsx`, `src/quote/`, `src/routes/quote/$token.tsx` | Copy as is. The quote page also needs `SUPABASE_SERVICE_ROLE_KEY` on the server for the drawings download. |
-| `src/routes/__root.tsx`, `src/styles.css`, `router.tsx` | Standalone only; the live site has its own. |
+| `src/routes/__root.tsx`, `src/styles.css`, `router.tsx`, `vite.config.ts` | Standalone only; the live site has its own. (`vite.config.ts` has the Nitro plugin for our Vercel staging; Lovable builds without it.) |
 
 ## Running the database tests locally
 
