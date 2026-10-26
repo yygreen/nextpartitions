@@ -25,7 +25,10 @@ const FONT = 'Inter, ui-sans-serif, system-ui, sans-serif'
 const S = 3.2 // px per inch in elevations
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;')
+// Drawings that explain a principle rather than follow a manufacturer's drawing say so on the drawing.
+const SCHEMATIC = new Set(['mounting-styles-compare', 'partition-anatomy', 'hinge-types', 'measure-replacement-door', 'stall-gaps', 'latch-keeper'])
 function svg(name, w, h, title, desc, body) {
+  if (SCHEMATIC.has(name)) { body += `<text x="8" y="${h + 14}" font-size="11" fill="${C.muted}">Schematic: shows the principle, not one manufacturer's product.</text>`; h += 22 }
   const out = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-labelledby="t-${name} d-${name}" font-family="${FONT}">
 <title id="t-${name}">${esc(title)}</title>
 <desc id="d-${name}">${esc(desc)}</desc>
@@ -87,7 +90,7 @@ function elevation({ x0 = 70, stalls = 4, P = 6, floor, ceiling = null, plenum =
   const hl = { fill: C.orange, stroke: C.orange }
   if (headrail) b += rect(X(0), Y(pil[1]) - 1, (runIn) * S, 2.2 * S, { ...hl, fill: C.orange })
   if (floorAnchors) for (const p of xs) {
-    b += rect(X(p) - 3, Y(3), P * S + 6, 3 * S, { fill: emphasis === 'floor' || emphasis === 'support' ? C.orange : C.part, stroke: C.orange, sw: 1.5 }) // shoe
+    b += rect(X(p) - 3, Y(4), P * S + 6, 4 * S, { fill: emphasis === 'floor' || emphasis === 'support' ? C.orange : C.part, stroke: C.orange, sw: 1.5 }) // shoe
     if (emphasis === 'floor') b += rect(X(p + 2), floor, 2 * S, 2 * S + 2, { fill: C.orange, stroke: C.orange, sw: 1 }) // anchor into slab
   }
   if (ceilingAnchors) for (const p of xs) b += rect(X(p) - 3, Y(ceiling), P * S + 6, 3 * S, { fill: C.orange, stroke: C.orange })
@@ -252,136 +255,215 @@ const doorDims = (e) => vdim(e.wallL - 12, e.Y(70), e.Y(12), '58"', 'left') + vd
 }
 
 // ---------- mounting-style sheets: plan, front elevation, side view, details ----------
-// Like a manufacturer's data sheet: several views of the same stalls, each its own SVG so they stack on a phone.
-// The sheet layout is in diagrams/sheets.json; the page build renders it as one figure.
-// Sourced sizes only: accessible 60" wide, 59" deep min (floor-mounted WC) and a 32" min clear door (2010 ADA
-// 604.8.1.1, 404.2.3); ambulatory 35–37" by 60" min (604.8.2.1); 30" by 60" min (IPC 405.3.1); toilet centerline
-// 16–18" / 17–19" from the side wall (604.2); anchors per style (Bobrick, NY OGS).
+// Like a manufacturer's data sheet, drawn from two of them (downloaded and read 2026-10-26):
+//   Bradley, Phenolic Floor-Mounted Overhead-Braced PH400 Series (media.bradleycorp.com/view/28555): the example
+//     layout (ADA 60-1/2", ambulatory 36-1/2", standard 36" + 36" = 169"; 61-1/4" to face), door positions and
+//     swings, 12" + 58" + 12" = 82" to the headrail, 4" shoes. Widths of doors and pilasters are scaled from its
+//     front view and not dimensioned.
+//   Bobrick 1080 Series technical data (bobrick.com/wp-content/uploads/1080_td.pdf): stile heights (floor-anchored
+//     69", overhead-braced 83", ceiling-hung 83" for a 96" ceiling, floor-to-ceiling up to 120"), the floor anchor
+//     (leveling bar, threaded rods, shoe retainer, wedge anchor, 4" shoe; 2" into 3" structural concrete), the
+//     ceiling leveling device (I-beam by others, bevel washer, spacer, threaded rod, leveling bar), the headrail
+//     (extruded aluminum, sloping top, grip-resistant face, wall bracket) and the U-bracket.
+//   Grab bars: 2010 ADA Standards 604.5 (side bar 42" min, 12" max from the rear wall; rear bar 36" min) and
+//     604.8.2.3 (ambulatory: both sides).
 const sheets = {}
+const LAYOUT = { stalls: [60.5, 36.5, 36, 36], depth: 61.25 } // Bradley PH400 example
+// Front, left to right (inches, scaled from Bradley's front view): pilaster, door, pilaster, door …
+const FRONT = [['p', 3.5], ['d', 36], ['p', 22], ['d', 34], ['p', 8.5], ['d', 24], ['p', 12], ['d', 24], ['p', 5]]
+const note = (x, y, t, anchor = 'start') => text(x, y, t, { size: 11, fill: C.muted, anchor, weight: 500 })
 
-
-// Plan, seen from above: back wall at the top, accessible + ambulatory + standard stall, doors and swings.
 function plan(name) {
-  const s = 3.2, x0 = 30, y0 = 40
+  const s = 3.2, x0 = 30, y0 = 64
   const X = (i) => x0 + 22 + i * s, Y = (i) => y0 + 14 + i * s
-  const widths = [60, 36, 30], depth = 60
-  const run = widths.reduce((a, b) => a + b, 0)
+  const { stalls, depth } = LAYOUT
+  const run = stalls.reduce((a, b) => a + b, 0)
   let b = ''
-  // walls: back (top), left, right
   b += rect(x0, y0, run * s + 44, 14, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(0), X(run), Y(0))
-  b += rect(x0, y0, 22, depth * s + 60, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(0), X(0), Y(depth) + 46)
-  b += rect(X(run), y0, 22, depth * s + 60, { fill: 'HATCH', stroke: 'none' }) + line(X(run), Y(0), X(run), Y(depth) + 46)
-  let cx = 0
-  const toilet = (c) => rect(X(c) - 10 * s / 2, Y(0) + 2, 20 * s / 2, 8 * s / 2 + 2, { rx: 2 }) + `<ellipse cx="${X(c)}" cy="${Y(15)}" rx="${7 * s / 2 + 2}" ry="${11 * s / 2 + 4}" fill="#fff" stroke="${C.ink}" stroke-width="1.5"/>`
-  widths.forEach((w, i) => {
-    const L = cx, R = cx + w
-    // dividing panel on the right of each stall except the last (the wall)
-    if (i < widths.length - 1) b += rect(X(R) - 1.5, Y(1), 3, (depth - 6) * s, { fill: C.part })
-    // front: pilasters at both ends, door between
-    const doorW = i === 0 ? 34 : i === 1 ? 32 : 22
-    const doorL = i === 0 ? R - 4 - doorW : L + (w - doorW) / 2 // accessible: door at the end away from the toilet (604.8.1.2)
-    b += rect(X(L) + (i ? 1.5 : 0), Y(depth) - 3, (doorL - L) * s - (i ? 1.5 : 0), 6, { fill: C.part })
-    b += rect(X(doorL + doorW), Y(depth) - 3, (R - doorL - doorW) * s - (i < 2 ? 1.5 : 0), 6, { fill: C.part })
-    // door leaf and swing: accessible and ambulatory swing out, standard swings in
-    const hx = X(doorL), out = i < 2
-    const ex = hx, ey = out ? Y(depth) + doorW * s : Y(depth) - doorW * s
+  b += rect(x0, y0, 22, depth * s + 50, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(0), X(0), Y(depth) + 36)
+  b += rect(X(run), y0, 22, depth * s + 50, { fill: 'HATCH', stroke: 'none' }) + line(X(run), Y(0), X(run), Y(depth) + 36)
+  const toilet = (c) => rect(X(c) - 8 * s / 2, Y(0) + 2, 16 * s / 2, 6 * s / 2, { rx: 2 }) + `<ellipse cx="${X(c)}" cy="${Y(17)}" rx="${7.5 * s}" ry="${12.5 * s}" fill="#fff" stroke="${C.ink}" stroke-width="1.5"/><ellipse cx="${X(c)}" cy="${Y(18.5)}" rx="${4.5 * s}" ry="${8 * s}" fill="none" stroke="${C.ink}" stroke-width="1"/>`
+  const bar = (x1, y1, x2, y2) => line(x1, y1, x2, y2, { stroke: C.orange, sw: 4, cap: true })
+  // dividing panels
+  let L = 0
+  const edges = stalls.map((w) => { const e = [L, L + w]; L += w; return e })
+  edges.slice(0, -1).forEach(([, R]) => { b += rect(X(R) - 1.5, Y(0), 3, depth * s - 2, { fill: C.part }) })
+  // front line with doors, positions from Bradley's plan
+  // ADA: door at the wall end, hinged at the wall pilaster, swings out; toilet against the dividing panel.
+  // Ambulatory: door hinged at its left, swings out. Standard: hinged at the left, swing in.
+  const fx = []; let cur = 0
+  for (const [k, w] of FRONT) { fx.push([k, cur, cur + w]); cur += w }
+  const doors = fx.filter((f) => f[0] === 'd')
+  fx.filter((f) => f[0] === 'p').forEach(([, a1, a2]) => { b += rect(X(a1), Y(depth) - 3, (a2 - a1) * s, 6, { fill: C.part }) })
+  doors.forEach(([, d1, d2], i) => {
+    const w = d2 - d1, out = i < 2, hx = X(d1)
+    const ang = out ? 25 : -25, rad = (ang * Math.PI) / 180
+    const ex = hx + Math.cos(rad) * w * s, ey = Y(depth) + Math.sin(rad) * w * s
     b += line(hx, Y(depth), ex, ey, { stroke: C.ink, sw: 2.5 })
-    b += `<path d="M${X(doorL + doorW)} ${Y(depth)} A${doorW * s} ${doorW * s} 0 0 ${out ? 1 : 0} ${ex} ${ey}" fill="none" stroke="${C.muted}" stroke-width="1" stroke-dasharray="5 5"/>`
-    // toilet: accessible 17" from the side wall, others centred
-    b += toilet(i === 0 ? L + 17 : L + w / 2)
-    // grab bars: accessible on the side wall and rear wall, ambulatory on both sides
-    if (i === 0) b += line(X(L) + 4, Y(12), X(L) + 4, Y(54), { stroke: C.orange, sw: 4, cap: true }) + line(X(L + 4), Y(0) + 4, X(L + 40), Y(0) + 4, { stroke: C.orange, sw: 4, cap: true })
-    if (i === 1) b += line(X(L) + 4, Y(12), X(L) + 4, Y(52), { stroke: C.orange, sw: 4, cap: true }) + line(X(R) - 5, Y(12), X(R) - 5, Y(52), { stroke: C.orange, sw: 4, cap: true })
-    b += text(X(L + w / 2), Y(30), ['Accessible', 'Ambulatory', 'Standard'][i], { size: 12, weight: 700, anchor: 'middle' })
-    b += hdim(Y(depth) + 36 * s + 30, X(L), X(R), ['60" min', '35–37"', '30" min'][i])
-    if (i === 0) b += `<path d="M${X(doorL)} ${Y(depth) + 8} h${doorW * s}" stroke="${C.orange}" stroke-width="1"/>` + text(X(doorL + doorW / 2), Y(depth) + 22, '32" min clear', { size: 11, fill: C.muted, anchor: 'middle', weight: 600 })
-    cx = R
+    b += `<path d="M${X(d2)} ${Y(depth)} A${w * s} ${w * s} 0 0 ${out ? 1 : 0} ${ex} ${ey}" fill="none" stroke="${C.muted}" stroke-width="1" stroke-dasharray="5 5"/>`
   })
-  b += vdim(X(run) + 36, Y(0), Y(depth), '60" min')
-  b += text(X(run / 2), y0 - 14, 'seen from above · back wall at the top', { size: 12, fill: C.muted, anchor: 'middle' })
-  return svg(name, Math.round(X(run) + 100), Math.round(Y(depth) + 36 * s + 46), 'Plan view of three toilet compartments',
-    'Seen from above: an accessible compartment 60 inches wide with grab bars and an outswing door at least 32 inches clear, an ambulatory compartment 35 to 37 inches wide with grab bars on both sides, and a standard compartment at least 30 inches wide with an inswing door. All are at least 60 inches deep.', b)
+  // toilets: ADA centreline 17" from the dividing panel (604.2: 16–18"); others centred
+  b += toilet(edges[0][1] - 17) + toilet(edges[1][0] + 18.25) + toilet(edges[2][0] + 18) + toilet(edges[3][0] + 18)
+  // grab bars (604.5): ADA side bar on the panel by the toilet, 12" from the rear wall, 42" long; rear bar 36"
+  const pR = X(edges[0][1]) - 6
+  b += bar(pR, Y(12), pR, Y(54)) + bar(X(edges[0][1] - 17 - 24), Y(0) + 6, X(edges[0][1] - 17 + 12), Y(0) + 6)
+  // ambulatory: side bars on both panels
+  b += bar(X(edges[1][0]) + 6, Y(12), X(edges[1][0]) + 6, Y(54)) + bar(X(edges[1][1]) - 6, Y(12), X(edges[1][1]) - 6, Y(54))
+  const lbl = ['ADA', 'Ambulatory', 'Standard', 'Standard'], sub = ['60" clearance', '36" clearance', '', '']
+  edges.forEach(([l, r], i) => {
+    const cx = i === 0 ? l + 22 : (l + r) / 2
+    b += text(X(cx), Y(40), lbl[i], { size: 12, weight: 700, anchor: 'middle' }) + (sub[i] ? text(X(cx), Y(40) + 15, sub[i], { size: 11, fill: C.muted, anchor: 'middle', weight: 600 }) : '')
+    b += hdim(y0 - 10, X(l), X(r), ['60-1/2"', '36-1/2"', '36"', '36"'][i])
+  })
+  b += hdim(y0 - 40, X(0), X(run), '169"')
+  b += vdim(X(run) + 36, Y(0), Y(depth), '61-1/4" to face')
+  b += note(X(0), Y(depth) + 50 + 36 * s * 0.45, 'Example layout: Bradley PH400 data sheet. Grab bars: 2010 ADA Standards 604.5.')
+  return svg(name, Math.round(X(run) + 150), Math.round(Y(depth) + 50 + 36 * s * 0.45 + 10), 'Plan view of a row of toilet compartments',
+    'Seen from above, after Bradley\'s example layout: an ADA compartment 60-1/2 inches wide with the toilet beside the dividing panel, grab bars and an outswing door at the wall end; an ambulatory compartment 36-1/2 inches wide with grab bars on both sides and an outswing door; two standard compartments 36 inches wide with inswing doors; 169 inches overall and 61-1/4 inches deep to the face.', b)
 }
 
-// Side view through a stall: looking at a dividing panel, back wall on the left, the front (pilaster) on the right.
+// Front elevation of the same row. Heights per style; hardware visible from outside: hinges and pulls on the
+// outswing doors, latch indicators on all.
+function front(name, style) {
+  const s = 3.2, x0 = 70
+  const H = { ob: { pil: [1, 82], rail: 82, floor: 330, wall: 100 }, fm: { pil: [1, 70], floor: 300, wall: 92 }, ch: { pil: [13, 96], ceil: 96, floor: 400, wall: 112, plenum: true }, ftc: { pil: [0, 96], ceil: 96, floor: 370, wall: 100 } }[style]
+  const floor = H.floor, Y = (i) => floor - i * s, X = (i) => x0 + 22 + i * s
+  const run = FRONT.reduce((a, [, w]) => a + w, 0), wallR = X(run)
+  let b = rect(x0 - 10, floor, run * s + 74, 30, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 10, floor, wallR + 32, floor)
+  b += rect(x0, Y(H.wall), 22, H.wall * s, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(H.wall), X(0), floor)
+  b += rect(wallR, Y(H.wall), 22, H.wall * s, { fill: 'HATCH', stroke: 'none' }) + line(wallR, Y(H.wall), wallR, floor)
+  if (H.ceil) b += line(X(0), Y(H.ceil), wallR, Y(H.ceil))
+  if (H.plenum) b += rect(X(0), Y(H.ceil + 14), run * s, 14 * s - 2, { fill: 'HATCH', stroke: 'none' })
+  let cur = 0, di = 0
+  const pilXs = []
+  for (const [k, w] of FRONT) {
+    if (k === 'p') { b += rect(X(cur), Y(H.pil[1]), w * s, (H.pil[1] - H.pil[0]) * s); pilXs.push([cur, w]) }
+    else {
+      b += rect(X(cur + 0.3), Y(70), (w - 0.6) * s, 58 * s)
+      const out = di < 2
+      if (out) { // hinges on the hinge (left) edge, pull and latch indicator near the latch edge
+        b += rect(X(cur + 0.3) - 2, Y(65), 7, 14, { fill: C.ink, stroke: 'none' }) + rect(X(cur + 0.3) - 2, Y(20), 7, 14, { fill: C.ink, stroke: 'none' })
+        b += rect(X(cur + w - 9), Y(43), 3, 22, { fill: C.ink, stroke: 'none' })
+      }
+      b += `<circle cx="${X(cur + w - 4)}" cy="${Y(40)}" r="4" fill="#fff" stroke="${C.ink}" stroke-width="1.2"/>`
+      di++
+    }
+    cur += w
+  }
+  const hl = { fill: C.orange, stroke: C.orange }
+  if (H.rail) b += rect(X(0), Y(H.rail) - 2, run * s, 2 * s, hl)
+  if (style !== 'ch') for (const [x, w] of pilXs) b += rect(X(x) - 1, Y(4), w * s + 2, 4 * s, { ...hl, fill: C.orange }) // 4" shoes
+  if (style === 'ftc') for (const [x, w] of pilXs) b += rect(X(x) - 1, Y(96), w * s + 2, 3 * s, hl)
+  if (style === 'ch') {
+    b += rect(X(0), Y(H.ceil + 9), run * s, 3 * s, hl)
+    for (const [x, w] of pilXs) b += line(X(x + w / 2), Y(H.ceil + 6), X(x + w / 2), Y(H.pil[1]), { stroke: C.orange, sw: 3 })
+  }
+  // numbered callouts, keyed in the page text under the sheet
+  const [p2x, p2w] = pilXs[1], under = floor + 30
+  if (style === 'ob') b += callout(1, X(60), Y(91), [X(60), Y(82) - 2]) + callout(2, X(p2x + p2w / 2) + 40, under, [X(p2x + p2w / 2), Y(2)]) + callout(3, X(p2x + p2w / 2), Y(50), null)
+  if (style === 'fm') b += callout(1, X(p2x + p2w / 2) + 40, under, [X(p2x + p2w / 2), Y(2)]) + callout(2, X(p2x + p2w / 2), Y(80), [X(p2x + p2w / 2), Y(71)])
+  if (style === 'ch') b += callout(1, X(20), Y(H.ceil + 12) - 2, null) + callout(2, X(p2x + p2w / 2) + 34, Y(91), [X(p2x + p2w / 2), Y(99)]) + callout(3, X(p2x + p2w / 2), Y(6), null)
+  if (style === 'ftc') b += callout(1, X(p2x + p2w / 2) + 40, under, [X(p2x + p2w / 2), Y(2)]) + callout(2, X(p2x + p2w / 2) + 34, Y(88), [X(p2x + p2w / 2), Y(95)]) + callout(3, X(p2x + p2w + 10), Y(60), null)
+  // dimensions: only the ones the sources print
+  b += vdim(x0 - 12, Y(70), Y(12), '58"', 'left') + vdim(x0 - 12, Y(12), Y(0), '12"', 'left')
+  if (style === 'ob') b += vdim(x0 - 12, Y(82), Y(70), '12"', 'left') + vdim(wallR + 34, Y(82), Y(0), '82"')
+  if (style === 'fm') b += vdim(wallR + 34, Y(70), Y(1), '69" stile')
+  if (style === 'ch') b += vdim(wallR + 34, Y(96), Y(13), '83" stile') + vdim(wallR + 34, Y(13), Y(0), 'clear')
+  if (style === 'ftc') b += vdim(wallR + 34, Y(96), Y(0), 'to ceiling')
+  const src = style === 'ob' ? 'Heights: Bradley PH400.' : 'Heights: Bobrick 1080 Series.'
+  b += note(X(0), floor + 52, `${src} Door and pilaster widths scaled from Bradley's front view.`)
+  const w = Math.round(wallR + 22 + 34 + (style === 'ftc' ? 90 : 80))
+  return svg(name, w, floor + 64, 'Front elevation of a row of toilet compartments',
+    `Front view of the same four compartments. Doors 58 inches high, 12 inches above the floor; the ADA and ambulatory doors swing out, so their hinges and pulls show on this side. ${src}`, b)
+}
+
+// Side view through a stall: looking at a dividing panel, front (pilaster) on the left as on Bradley's sheet,
+// back wall on the right.
 function side(name, style) {
-  const s = 3.2, floor = style === 'ch' || style === 'ftc' ? 380 : 330, x0 = 34
-  const Y = (i) => floor - i * s, X = (i) => x0 + 22 + i * s
-  const depth = 60, wallH = style === 'ch' ? 112 : 100
-  let b = rect(x0 - 10, floor, (depth + 14) * s + 30, 26, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 10, floor, X(depth + 12), floor)
-  b += rect(x0, Y(wallH), 22, wallH * s, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(wallH), X(0), floor)
-  if (style === 'ch' || style === 'ftc') b += line(X(0), Y(96), X(depth + 12), Y(96))
-  if (style === 'ch') b += rect(X(0), Y(110), (depth + 12) * s, 14 * s - 2, { fill: 'HATCH', stroke: 'none' }) + rect(X(depth - 6), Y(105), 14 * s, 3 * s, { fill: C.orange, stroke: C.orange }) + line(X(depth - 1), Y(102), X(depth - 1), Y(96), { stroke: C.orange, sw: 3 })
-  // toilet (floor-mounted), panel, pilaster seen edge-on
-  b += rect(X(1), Y(70), (depth - 7) * s, 58 * s, { fill: C.part })
-  // toilet in front of the panel: tank on the back wall, bowl, pedestal
-  b += rect(X(0) + 2, Y(31), 8 * s, 15 * s, { rx: 3 }) + `<path d="M${X(8)} ${Y(17.5)} h${18 * s} q${3 * s} 0 ${3 * s} ${2 * s} v${1.5 * s} h-${21 * s} z" fill="#fff" stroke="${C.ink}" stroke-width="1.5"/>` + `<path d="M${X(11)} ${Y(14)} h${10 * s} l-${2 * s} ${14 * s} h-${6 * s} z" fill="#fff" stroke="${C.ink}" stroke-width="1.5"/>`
-  const pil = { ob: [0, 83], fm: [0, 69], ch: [13, 96], ftc: [0, 96] }[style]
-  b += rect(X(depth - 6), Y(pil[1]), 6 * s, (pil[1] - pil[0]) * s, { fill: C.part })
-  // brackets: wall and pilaster, top and bottom
-  for (const h of [64, 18]) b += rect(X(1), Y(h), 2 * s, 6, { fill: C.ink, stroke: 'none' }) + rect(X(depth - 8), Y(h), 2 * s, 6, { fill: C.ink, stroke: 'none' })
-  if (style === 'ob') b += rect(X(depth - 7), Y(83) - 6, 8 * s, 6, { fill: C.orange, stroke: C.orange })
-  if (style !== 'ch') b += rect(X(depth - 6) - 3, Y(3), 6 * s + 6, 3 * s, { fill: C.orange, stroke: C.orange })
-  if (style === 'ftc') b += rect(X(depth - 6) - 3, Y(96), 6 * s + 6, 3 * s, { fill: C.orange, stroke: C.orange })
-  b += vdim(X(depth + 6), Y(70), Y(12), '58"') + vdim(X(depth + 6), Y(12), Y(0), '12"')
-  b += text(X(1), floor + 44, 'back wall', { size: 12, fill: C.muted }) + text(X(depth - 3), floor + 44, 'front', { size: 12, fill: C.muted, anchor: 'middle' })
-  return svg(name, Math.round(X(depth + 6) + 60), floor + 56, 'Side view through a toilet compartment',
-    'Looking at a dividing panel from inside the stall: the toilet against the back wall, the panel held by brackets at the wall and the pilaster, 58 inches high and 12 inches above the floor, and the pilaster at the front.', b)
+  const s = 3.2, x0 = 60, depth = LAYOUT.depth
+  const floor = style === 'ch' || style === 'ftc' ? 380 : 330, wallH = style === 'ch' ? 112 : 100
+  const Y = (i) => floor - i * s, X = (i) => x0 + i * s
+  const pil = { ob: [1, 82], fm: [1, 70], ch: [13, 96], ftc: [0, 96] }[style]
+  let b = rect(x0 - 30, floor, (depth + 10) * s + 40, 26, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 30, floor, X(depth) + 22, floor)
+  b += rect(X(depth), Y(wallH), 22, wallH * s, { fill: 'HATCH', stroke: 'none' }) + line(X(depth), Y(wallH), X(depth), floor)
+  if (style === 'ch' || style === 'ftc') b += line(x0 - 30, Y(96), X(depth), Y(96))
+  if (style === 'ch') b += rect(x0 - 30, Y(110), (depth + 10) * s - 2, 14 * s - 2, { fill: 'HATCH', stroke: 'none' }) + rect(X(-1), Y(105), 6 * s, 3 * s, { fill: C.orange, stroke: C.orange }) + line(X(1.5), Y(102), X(1.5), Y(96), { stroke: C.orange, sw: 3 })
+  b += rect(X(0), Y(pil[1]), 1.25 * s + 2, (pil[1] - pil[0]) * s)                 // pilaster, edge on
+  b += rect(X(1.5), Y(70), (depth - 2.2) * s, 58 * s)                              // panel
+  for (const h of [64, 18]) b += rect(X(1.5), Y(h), 2 * s, 6, { fill: C.ink, stroke: 'none' }) + rect(X(depth - 2.6), Y(h), 2 * s, 6, { fill: C.ink, stroke: 'none' }) // brackets
+  if (style === 'ob') b += rect(X(-0.6), Y(82), 3 * s, 2 * s, { fill: C.orange, stroke: C.orange })
+  if (style !== 'ch') b += rect(X(-0.6), Y(4), 1.25 * s + 6, 4 * s, { fill: C.orange, stroke: C.orange })
+  if (style === 'ftc') b += rect(X(-0.6), Y(96), 1.25 * s + 6, 3 * s, { fill: C.orange, stroke: C.orange })
+  b += hdim(floor + 46, X(0), X(depth), '61-1/4" to face')
+  b += vdim(x0 - 16, Y(70), Y(12), '58"', 'left') + vdim(x0 - 16, Y(12), Y(0), '12"', 'left')
+  b += note(X(0), floor + 72, 'front') + note(X(depth), floor + 72, 'back wall', 'end')
+  return svg(name, Math.round(X(depth) + 40), floor + 82, 'Side view through a toilet compartment',
+    'Looking at a dividing panel from inside the stall, as on Bradley\'s side view: the pilaster at the front, the panel 58 inches high and 12 inches above the floor held by brackets at the pilaster and the back wall, 61-1/4 inches to the face.', b)
 }
 
-// Detail circles, drawn at larger scale.
+// Detail circles, redrawn from Bobrick's 1080 data sheet details.
 function detail(name, kind) {
-  const W = 390, H = 280, cx = 150, cy = 140, r = 118
+  const W = 410, H = 300, cx = 150, cy = 145, r = 120
   let b = `<clipPath id="c-${name}"><circle cx="${cx}" cy="${cy}" r="${r}"/></clipPath><g clip-path="url(#c-${name})">`
-  const lab = []
+  const lab = [], after = []
+  const nut = (x, y) => rect(x - 10, y, 20, 7, { fill: C.part, sw: 1.2 })
+  if (kind === 'anchor' || kind === 'ftc-floor') {
+    // stile on a leveling bar (angle), two threaded rods with nuts and washers, shoe retainer, wedge anchors; 4" shoe
+    b += rect(0, 196, W, 110, { fill: 'HATCH', stroke: 'none' }) + line(0, 196, W, 196)
+    b += rect(80, 0, 140, 120) // stile
+    b += `<path d="M70 120 h160 v8 h-152 v20 h-8 z" fill="${C.orange}"/>` // leveling bar (angle)
+    for (const x of [100, 200]) b += line(x, 110, x, 250, { stroke: C.ink, sw: 4 }) + nut(x, 136) + nut(x, 160) + nut(x, 180) + rect(x - 6, 200, 12, 48, { fill: C.ink, stroke: 'none' })
+    b += rect(60, 186, 180, 6, { fill: C.part, sw: 1.2 }) // shoe retainer
+    b += `<rect x="58" y="110" width="184" height="86" fill="none" stroke="${C.ink}" stroke-width="1.5" stroke-dasharray="6 4"/>` // 4" shoe (outline, in front)
+    lab.push([292, 40, 'stile', [220, 50]], [292, 90, 'shoe, 4" high', [242, 120]], [292, 140, 'leveling bar', [230, 124]], [292, 186, 'shoe retainer', [240, 189]], [8, 270, 'wedge anchor', [100, 230]])
+    after.push(vdim(300, 196, 248, '2" min into'), note(308, 274, '3" min structural'), note(308, 288, 'concrete'))
+  }
+  if (kind === 'hanger' || kind === 'ftc-ceiling') {
+    // I-beam (by others), bevel washer, threaded rod, spacer through the finished ceiling, leveling bar in the stile
+    b += rect(0, 0, W, 126, { fill: 'HATCH', stroke: 'none' })
+    b += `<path d="M80 34 h140 v9 h-64 v32 h64 v9 h-140 v-9 h64 v-32 h-64 z" fill="${C.orange}"/>` // I-beam section
+    b += line(150, 84, 150, 200, { stroke: C.ink, sw: 4 }) + rect(136, 84, 28, 7, { fill: C.part, sw: 1.2 })
+    b += rect(140, 100, 20, 26, { fill: C.part, sw: 1.2 }) + line(0, 126, W, 126, { sw: 2.5 })
+    b += rect(90, 150, 120, 160) + `<path d="M84 150 h132 v-8 h-124 v-16 h-8 z" fill="${C.orange}"/>` + nut(150, 160) + nut(150, 176)
+    lab.push([292, 30, 'I-beam (by others)', [220, 40]], [292, 84, 'bevel washer', [164, 88]], [292, 116, 'spacer', [160, 112]], [8, 138, 'finished ceiling', [60, 126]], [292, 150, 'leveling bar', [216, 146]], [292, 210, 'threaded rod', [152, 190]], [292, 250, 'stile', [210, 240]])
+  }
   if (kind === 'headrail') {
-    b += rect(110, 120, 44, 200) + `<path d="M98 120 h68 v-22 q-8 -16 -34 -16 q-26 0 -34 16 z" fill="${C.orange}"/>` + rect(166, 132, 102, 150, { fill: C.part }) + line(166, 132, 268, 132, { stroke: C.muted, sw: 1, dash: '5 4' })
-    b += line(122, 112, 122, 150, { stroke: C.ink, sw: 2.5 }) + line(142, 112, 142, 150, { stroke: C.ink, sw: 2.5 })
-    lab.push([214, 66, 'anti-grip headrail', [160, 92]], [40, 190, 'pilaster', [110, 190]], [284, 215, 'door top in line', [250, 133]], [284, 160, 'two fasteners', [142, 140]])
-  }
-  if (kind === 'anchor' || kind === 'anchor-ob') {
-    b += rect(0, 170, W, 120, { fill: 'HATCH', stroke: 'none' }) + line(0, 170, W, 170)
-    b += rect(108, 20, 50, 128) + rect(98, 136, 70, 34, { fill: C.orange, stroke: C.orange }) + line(133, 148, 133, 222, { stroke: C.ink, sw: 4 }) + rect(126, 172, 14, 50, { fill: C.ink, stroke: 'none' })
-    b += '</g>' + vdim(286, 170, 222, kind === 'anchor' ? '2" min into' : '1-3/4" min') + (kind === 'anchor' ? vdim(286, 222, 266, '3" min slab') : '') + `<g clip-path="url(#c-${name})">` + line(140, 170, 286, 170, { stroke: C.muted, sw: 1, dash: '3 3' }) + line(140, 222, 286, 222, { stroke: C.muted, sw: 1, dash: '3 3' })
-    lab.push([24, 60, 'pilaster', [108, 70]], [20, 128, 'shoe', [98, 150]], [24, 250, 'anchor', [128, 205]])
-  }
-  if (kind === 'hanger') {
-    b += rect(0, 0, W, 120, { fill: 'HATCH', stroke: 'none' }) + rect(60, 40, 180, 22, { fill: C.orange, stroke: C.orange }) + line(0, 120, W, 120, { sw: 2.5 })
-    b += line(150, 62, 150, 160, { stroke: C.orange, sw: 5 }) + rect(118, 150, 64, 160) + rect(112, 120, 76, 10, { fill: C.part })
-    lab.push([20, 30, 'structural steel (by others)', [80, 50]], [284, 100, 'hanger', [152, 100]], [8, 146, 'finished ceiling', [60, 120]], [284, 200, 'pilaster', [182, 200]])
-  }
-  if (kind === 'ceiling-anchor') {
-    b += rect(0, 0, W, 110, { fill: 'HATCH', stroke: 'none' }) + line(0, 110, W, 110, { sw: 2 })
-    b += rect(108, 140, 50, 160) + rect(98, 110, 70, 30, { fill: C.orange, stroke: C.orange }) + line(133, 70, 133, 140, { stroke: C.ink, sw: 4 })
-    lab.push([10, 80, 'structure at the ceiling', [70, 95]], [284, 128, 'ceiling shoe', [168, 125]], [284, 220, 'pilaster', [158, 220]])
+    // cross-section: the headrail clamps over the stile top (Bradley); enclosed extrusion with a sloping top and a
+    // raised grip-resistant face edge (Bobrick)
+    b += rect(118, 150, 64, 170) // stile
+    b += `<path d="M96 86 L204 74 L204 168 L182 168 L182 150 L118 150 L118 168 L96 168 Z" fill="${C.orange}"/>`
+    b += rect(90, 80, 8, 92, { fill: C.ink, stroke: 'none' }) // raised face edge
+    lab.push([8, 50, 'headrail, extruded aluminum', [150, 82]], [8, 130, 'grip-resistant face', [92, 130]], [292, 120, 'sloping top', [200, 78]], [292, 230, 'stile', [182, 230]])
+    after.push(note(cx, 284, 'cross-section · fixed to each wall with a wall bracket', 'middle'))
   }
   if (kind === 'bracket') {
-    // seen from above: panel end meets the pilaster, held by a bracket on each side
-    b += rect(40, 120, 120, 26, { fill: C.part }) + rect(156, 70, 34, 140, { fill: C.part })
-    b += `<path d="M120 112 h38 v42 h-38" fill="none" stroke="${C.orange}" stroke-width="5" stroke-linejoin="round"/>`
-    lab.push([20, 90, 'panel', [70, 120]], [284, 80, 'pilaster', [190, 90]], [284, 220, 'bracket', [158, 154]])
-    b += text(150, 270, 'seen from above', { size: 12, fill: C.muted, anchor: 'middle' })
+    // seen from above: panel end to a perpendicular stile, U-bracket (Bobrick #1000972: panel to perp. stile)
+    b += rect(40, 128, 150, 18, { fill: C.part }) + rect(188, 60, 26, 170, { fill: C.part })
+    b += `<path d="M150 118 h36 v38 h-36" fill="none" stroke="${C.orange}" stroke-width="5" stroke-linejoin="round"/>`
+    lab.push([8, 100, 'panel', [80, 128]], [292, 70, 'stile', [214, 90]], [292, 180, 'U-bracket', [186, 156]])
+    after.push(note(cx, 284, 'seen from above', 'middle'))
   }
   b += `</g><circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${C.ink}" stroke-width="1.5"/>`
-  for (const [x, y, t, to] of lab) b += line(x < cx ? x + 4 : x - 4, y - 4, to[0], to[1], { stroke: C.orange, sw: 1.2 }) + `<circle cx="${to[0]}" cy="${to[1]}" r="2.5" fill="${C.orange}"/>` + `<text x="${x}" y="${y}" font-size="13" font-weight="600" fill="${C.ink}" text-anchor="${x < cx ? 'start' : 'start'}" paint-order="stroke" stroke="#fff" stroke-width="4">${esc(t)}</text>`
-  return svg(name, W, H, `Detail: ${kind}`, ({ headrail: 'The anti-grip aluminum headrail on top of a pilaster, fastened with two fasteners, with the door top in line with it.', anchor: 'The pilaster foot: a shoe covers the leveling hardware and the anchor goes at least 2 inches into structural concrete at least 3 inches thick (Bobrick).', 'anchor-ob': 'The pilaster foot: a shoe covers the leveling hardware and the anchor goes at least 1-3/4 inches into the floor (NY OGS spec for overhead-braced units).', hanger: 'The pilaster hangs on a hanger from structural steel above the finished ceiling.', 'ceiling-anchor': 'The pilaster top is anchored to structure at the ceiling, under a ceiling shoe.', bracket: 'Seen from above: the panel end is held to the pilaster by a bracket on each side.' })[kind], b)
+  for (const [x, y, t, to] of lab) b += line(x < cx ? x + 4 : x - 4, y - 4, to[0], to[1], { stroke: C.orange, sw: 1.2 }) + `<circle cx="${to[0]}" cy="${to[1]}" r="2.5" fill="${C.orange}"/>` + `<text x="${x}" y="${y}" font-size="13" font-weight="600" fill="${C.ink}" paint-order="stroke" stroke="#fff" stroke-width="4">${esc(t)}</text>`
+  b += after.join('')
+  const desc = { anchor: 'The pilaster foot, after Bobrick\'s floor anchor: a leveling bar bolted under the stile, threaded rods with nuts and washers, a shoe retainer and wedge anchors at least 2 inches into structural concrete at least 3 inches thick, all covered by a 4-inch stainless steel shoe.', 'ftc-floor': 'The pilaster foot of a floor-to-ceiling stile, after Bobrick: a leveling device at the floor as on floor-anchored stiles, with wedge anchors at least 2 inches into 3-inch structural concrete and a 4-inch shoe.', hanger: 'The top of a ceiling-hung stile, after Bobrick\'s ceiling leveling device: a threaded rod from a structural I-beam above the ceiling (not supplied by the partition maker) through a bevel washer and a spacer in the finished ceiling, into a leveling bar in the stile.', 'ftc-ceiling': 'The top of a floor-to-ceiling stile, after Bobrick: floor-to-ceiling stiles have a leveling device at each end, fixed to structural members in the ceiling (not supplied by the partition maker).', headrail: 'The headrail, after Bobrick\'s headrail detail: an extruded anodized aluminum rail with a sloping top and a raised grip-resistant face edge, on top of the stile and fixed to the wall with a wall bracket.', bracket: 'Seen from above: the panel end held to a perpendicular stile by a U-bracket, after Bobrick\'s bracket drawings.' }[kind]
+  return svg(name, W, H, `Detail: ${kind}`, desc, b)
 }
 
 const STYLES = {
-  'mounting-overhead-braced': ['ob', ['headrail', 'anchor-ob', 'bracket']],
+  'mounting-overhead-braced': ['ob', ['headrail', 'anchor', 'bracket']],
   'mounting-floor-mounted': ['fm', ['anchor', 'bracket']],
   'mounting-ceiling-hung': ['ch', ['hanger', 'bracket']],
-  'mounting-floor-to-ceiling': ['ftc', ['anchor', 'ceiling-anchor']],
+  'mounting-floor-to-ceiling': ['ftc', ['ftc-floor', 'ftc-ceiling']],
 }
 const planName = plan('sheet-plan')
-for (const [front, [style, dets]] of Object.entries(STYLES)) {
-  const views = [
+for (const [name, [style, dets]] of Object.entries(STYLES)) {
+  sheets[name] = [
     { file: `${planName}.svg`, label: 'Plan', wide: true },
-    { file: `${front}.svg`, label: 'Front elevation', wide: true },
-    { file: `${side(`${front}-side`, style)}.svg`, label: 'Side view' },
-    ...dets.map((d, i) => ({ file: `${detail(`${front}-detail-${d}`, d)}.svg`, label: `Detail ${String.fromCharCode(65 + i)}` })),
+    { file: `${front(`${name}-front`, style)}.svg`, label: 'Front elevation', wide: true },
+    { file: `${side(`${name}-side`, style)}.svg`, label: 'Side view' },
+    ...dets.map((d, i) => ({ file: `${detail(`${name}-detail-${d}`, d)}.svg`, label: `Detail ${String.fromCharCode(65 + i)}` })),
   ]
-  sheets[front] = views
 }
 writeFileSync(new URL('sheets.json', OUT), JSON.stringify(sheets, null, 2) + '\n')
 
