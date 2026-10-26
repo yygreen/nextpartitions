@@ -14,6 +14,12 @@ Overhead braced toilet partitions are the go-anywhere mounting style. Each pilas
 
 ## How it's built
 
+![Overhead braced toilet partitions, front view](/images/diagrams/mounting-overhead-braced.svg)
+
+1. **Headrail:** anodized aluminum, across the pilaster tops and fastened to both walls.
+2. **Pilaster shoe and floor anchor** at the foot of each pilaster.
+3. **Pilaster**, 83" high on Bobrick's standard line. Doors and panels are 58" high, 12" above the floor.
+
 An overhead braced stall has four kinds of parts:
 
 - **Pilasters** (Bobrick calls them stiles): the vertical posts at the front of each stall that carry the doors. Bobrick's standard overhead-braced stile is 83" high.

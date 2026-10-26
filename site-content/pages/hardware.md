@@ -35,6 +35,15 @@ Hardware material and finish vary by manufacturer and by partition material. Com
 
 ## Identify what you have before you request parts
 
+![Parts of a toilet partition, front view](/images/diagrams/partition-anatomy.svg)
+
+1. Headrail
+2. Pilaster
+3. Door
+4. Hinges
+5. Latch and keeper
+6. Pilaster shoe
+
 Partition hardware is not universal. Hinge and latch hole patterns, pilaster thickness and fastener types differ between brands and materials. To match a part, we need to know:
 
 1. **Brand**, if you know it (Bobrick, ASI Global, Scranton Products, Bradley, Metpar, Ammco or another maker).

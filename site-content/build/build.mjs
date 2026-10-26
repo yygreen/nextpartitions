@@ -40,8 +40,16 @@ function parse(file) {
 }
 
 // Site classes on plain Markdown output.
+// Drawings from design/diagrams/ go inline (so a preview file stands alone), full width, in a bordered card.
+// On the live site they're served as /images/diagrams/<name>.svg.
+const diagram = (src, alt) => {
+  const svg = readFileSync(`../design/diagrams/${src.split('/').pop()}`, 'utf8')
+    .replace(/ width="(\d+)" height="\d+" role="img"/, (_, w) => ` style="width:100%;height:auto;display:block;margin:0 auto;max-width:${Math.min(Number(w) * 1.2, 1200)}px" role="img"`)
+  return `<figure class="border border-border rounded-lg p-4 mb-4 bg-card">${svg}</figure>`
+}
 function styled(html) {
   return html
+    .replace(/<p><img src="(\/images\/diagrams\/[^"]+)" alt="([^"]*)"\s*\/?><\/p>/g, (_, src, alt) => diagram(src, alt))
     .replace(/<h3>/g, '<h3 class="text-lg font-semibold text-foreground mt-6 mb-2">')
     .replace(/<h4>/g, '<h4 class="font-semibold text-foreground mt-4 mb-2">')
     .replace(/<p>/g, '<p class="text-muted-foreground leading-relaxed mb-4">')

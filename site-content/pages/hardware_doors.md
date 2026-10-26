@@ -30,6 +30,15 @@ Accessible (ADA) and outswing door configurations are available in each material
 
 ## How to measure a stall door
 
+![How to measure a bathroom stall door for a replacement](/images/diagrams/measure-replacement-door.svg)
+
+- **A** door width
+- **B** door height
+- **C** opening between the pilasters
+- **D** floor to the bottom of the door
+- **E** door thickness
+- **F** inswing or outswing, and hinge side, seen from outside the stall
+
 Measure the **door itself**, not the opening between pilasters. The door width already allows for hinge and latch clearances, and manufacturers use specific sizes. Metpar's standard powder coated door widths, for example, run from 21-5/8" to 35-5/8", not round numbers.
 
 1. **Width:** edge to edge across the face of the door, at the middle.

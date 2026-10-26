@@ -18,6 +18,12 @@ Hinges and latches have their own pages: [Hinges](/hardware/hinges) and [Locks &
 
 ## Door hardware components
 
+![Bathroom stall latch on the door and keeper on the pilaster](/images/diagrams/latch-keeper.svg)
+
+1. **Latch**, mounted on the door.
+2. **Keeper (strike)**, mounted on the pilaster; the latch bolt slides into it.
+3. **Occupancy indicator** on an indicator latch.
+
 | Part | What it does | Where it goes |
 |---|---|---|
 | Door pull / handle | Gives a grip to pull the door closed from inside, or open from outside | Near the latch; both sides on accessible and outswing doors |

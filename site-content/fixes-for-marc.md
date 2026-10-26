@@ -30,3 +30,7 @@ You're building the catalogue. The SEO side, for when you're ready: every produc
 ## 5. The hardware and mounting-style pages
 
 The new text replaces the body of each page and keeps the existing layout, CTAs and the "Explore more" links. Each file lists its FAQ (add `FAQPage` structured data), the internal links to add on other pages, and the images it could use.
+
+## 6. Drawings
+
+Ten technical drawings (SVG) in `design/diagrams/`, placed in the pages as `/images/diagrams/<name>.svg`: copy the folder to `public/images/diagrams/`. Each has its alt text in the page and its numbered key as a list right under it. They follow `design/design-language.md` (specimen: `design/design-language.html`); `design/diagrams.mjs` regenerates them.

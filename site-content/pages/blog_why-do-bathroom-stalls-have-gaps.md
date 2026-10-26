@@ -17,6 +17,13 @@ The good news: Bobrick, ASI, Bradley and Scranton Products all sell partitions t
 
 ## The four gaps in a standard stall
 
+![The four gaps in a standard bathroom stall, front view](/images/diagrams/stall-gaps.svg)
+
+1. Door edges (the sightlines)
+2. Under the doors and panels: 12" on standard partitions
+3. Above the doors and panels
+4. At the wall
+
 1. **The door edges.** The thin vertical gaps between the door and the pilaster on the hinge side and the latch side. These are the "sightlines" people complain about.
 2. **Under the doors and panels.** On standard partitions the doors and panels are 58" tall and mounted 12" above the floor (Bobrick, ASI and Bradley all list this as standard).
 3. **Above the doors and panels.** With 58" doors at 12", the top of the stall is at 70", so a tall person can see over.

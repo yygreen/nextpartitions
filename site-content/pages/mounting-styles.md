@@ -28,6 +28,8 @@ Pilasters are anchored into the concrete floor and into structural support at th
 
 ## Compare mounting styles
 
+![The four bathroom partition mounting styles side by side, front view, with the support system in orange](/images/diagrams/mounting-styles-compare.svg)
+
 | | Overhead braced | Floor mounted | Ceiling hung | Floor to ceiling |
 |---|---|---|---|---|
 | Held by | Floor anchors + headrail tied to walls | Floor anchors only | Structural steel above the ceiling | Floor anchors + ceiling structure |

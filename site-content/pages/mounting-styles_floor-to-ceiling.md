@@ -16,6 +16,12 @@ One point clears up most confusion: "floor to ceiling" describes the **pilasters
 
 ## How it's built
 
+![Floor to ceiling toilet partitions, front view](/images/diagrams/mounting-floor-to-ceiling.svg)
+
+1. **Floor anchor** at the foot of each pilaster.
+2. **Ceiling anchor** into structure at the top of each pilaster.
+3. **Doors and panels stay standard height** (58" at 12" above the floor here), so the floor gap remains.
+
 - **Pilasters** run from the finished floor to the ceiling. Bobrick makes its floor-to-ceiling anchored stiles to the height required, for ceilings up to 10'.
 - **Anchoring at both ends:** the NY OGS master spec calls for "anchoring assemblies with leveling adjustment nuts at tops and bottoms of pilasters." Bobrick fits a leveling device at each end of its floor-to-ceiling stiles.
 - **Covers:** a shoe at the floor and a sleeve (cap) at the ceiling hide the anchors (NY OGS).

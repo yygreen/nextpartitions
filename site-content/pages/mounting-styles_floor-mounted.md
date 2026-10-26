@@ -14,6 +14,11 @@ Floor mounted toilet partitions stand on their own. Each pilaster is bolted into
 
 ## How it's built
 
+![Floor mounted toilet partitions, front view](/images/diagrams/mounting-floor-mounted.svg)
+
+1. **Floor anchors** into structural concrete carry the whole load.
+2. **No headrail:** the pilaster tops are free. Bobrick's floor-anchored pilasters are 69" high.
+
 Without a headrail, each pilaster has to stay rigid on its own anchors.
 
 - **Anchoring device:** in Bobrick's lines, a steel leveling bar bolted to the bottom of the pilaster, with threaded rods, hex nuts, washers and an expansion shield set in the floor.

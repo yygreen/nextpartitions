@@ -16,6 +16,13 @@ Bathroom stall door hinges decide how a partition door hangs, where it rests whe
 
 ## Hinge types
 
+![Gravity (cam), wrap-around and continuous bathroom stall hinges](/images/diagrams/hinge-types.svg)
+
+1. **Top pin** of a gravity hinge.
+2. **Bottom cam**: sets where the door rests.
+3. **Wrap-around flanges**: one wraps the pilaster end, one the door edge.
+4. **Continuous hinge** running the full height of the door.
+
 | Type | How it works | Where you'll see it |
 |---|---|---|
 | Gravity (cam) hinge | A cam in the bottom hinge uses the door's weight to swing it to a set rest position | Most steel, stainless and laminate partitions |

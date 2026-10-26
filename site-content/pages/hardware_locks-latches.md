@@ -41,6 +41,12 @@ Scranton Products specifies a heavy-duty extruded aluminum latch and housing on 
 
 ## Keepers and strikes
 
+![Bathroom stall latch on the door and keeper on the pilaster](/images/diagrams/latch-keeper.svg)
+
+1. **Latch**, mounted on the door.
+2. **Keeper (strike)**, mounted on the pilaster; the latch bolt slides into it.
+3. **Occupancy indicator** on an indicator latch.
+
 The keeper is the part on the pilaster that the latch bolt slides into. On HDPE and phenolic stalls it is often combined with a strike, a wrap-around piece that also stops the door.
 
 - Scranton specifies a 6" extruded aluminum strike and keeper with wrap-around flanges and an extruded black vinyl bumper. ASI Global lists a 6" aluminum wrap-around strike.

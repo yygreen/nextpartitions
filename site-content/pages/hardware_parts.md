@@ -18,6 +18,15 @@ For hinges, latches and door pulls, see [Hinges](/hardware/hinges), [Locks & Lat
 
 ## Structural parts we can supply
 
+![Parts of a toilet partition, front view](/images/diagrams/partition-anatomy.svg)
+
+1. Headrail
+2. Pilaster
+3. Door
+4. Hinges
+5. Latch and keeper
+6. Pilaster shoe
+
 | Part | What it does | Common materials |
 |---|---|---|
 | Wall bracket (F-bracket, single or double ear) | Fastens a panel or pilaster to the wall | Chrome-plated zamac, stainless steel, aluminum |
