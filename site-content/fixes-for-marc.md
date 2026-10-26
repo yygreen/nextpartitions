@@ -1,6 +1,6 @@
 # Fixes for Marc: broken pages (checked 2026-10-26)
 
-The content for each fix is in `pages/`. These are the code changes around it.
+The content for each fix is in `pages/`, and `preview/` shows each page built in the site's own layout and classes (open `preview/index.html`), with the structured data already in the page head. These are the code changes around it.
 
 ## 1. `/guides` is blank
 

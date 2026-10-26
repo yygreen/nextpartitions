@@ -4,6 +4,7 @@ Month-one work from the September 2026 proposal ("Your broken pages fixed, six i
 
 - `current/`: the text of every page in the sitemap as it was on 2026-10-26, for comparison. Generated from the live HTML; don't edit.
 - `pages/`: the new or expanded pages, one file per URL, in the format below.
+- `preview/`: every page in `pages/` built as a finished HTML page in the live site's layout and stylesheet (header, hero, content with side card, Explore More, footer), with its title, meta, canonical and structured data. Open `preview/index.html`. Rebuild with `cd build && npm install && npm run build` after changing a page.
 - `industry-check.md`: the six industry pages checked for accuracy (corrections only, no rewrite).
 
 ## Status on 2026-10-26
