@@ -342,7 +342,7 @@ function detail(name, kind) {
   if (kind === 'anchor' || kind === 'anchor-ob') {
     b += rect(0, 170, W, 120, { fill: 'HATCH', stroke: 'none' }) + line(0, 170, W, 170)
     b += rect(108, 20, 50, 128) + rect(98, 136, 70, 34, { fill: C.orange, stroke: C.orange }) + line(133, 148, 133, 222, { stroke: C.ink, sw: 4 }) + rect(126, 172, 14, 50, { fill: C.ink, stroke: 'none' })
-    b += '</g>' + vdim(286, 170, 222, kind === 'anchor' ? '2" min into' : '1-3/4" min into') + (kind === 'anchor' ? vdim(286, 222, 266, '3" min slab') : '') + `<g clip-path="url(#c-${name})">` + line(140, 170, 286, 170, { stroke: C.muted, sw: 1, dash: '3 3' }) + line(140, 222, 286, 222, { stroke: C.muted, sw: 1, dash: '3 3' })
+    b += '</g>' + vdim(286, 170, 222, kind === 'anchor' ? '2" min into' : '1-3/4" min') + (kind === 'anchor' ? vdim(286, 222, 266, '3" min slab') : '') + `<g clip-path="url(#c-${name})">` + line(140, 170, 286, 170, { stroke: C.muted, sw: 1, dash: '3 3' }) + line(140, 222, 286, 222, { stroke: C.muted, sw: 1, dash: '3 3' })
     lab.push([24, 60, 'pilaster', [108, 70]], [20, 128, 'shoe', [98, 150]], [24, 250, 'anchor', [128, 205]])
   }
   if (kind === 'hanger') {
