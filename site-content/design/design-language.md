@@ -54,6 +54,17 @@ Numbered orange discs (24 px, white bold number). The key is written as page tex
 - **Edge view** for thicknesses.
 - Never perspective or 3D: it hides the measurements.
 
+## Sheets
+
+A product drawing is a sheet, like a manufacturer's data sheet: the same stalls from several views, each its own SVG, laid out by the page as one figure.
+
+- **Plan** (seen from above): accessible, ambulatory and standard compartments with toilets, grab bars, door swings and the code minimums (60" min, 35–37", 30" min wide; 60" min deep; 32" min clear opening).
+- **Front elevation:** four stalls with the support system in orange and numbered callouts.
+- **Side view:** through a stall, looking at a dividing panel: toilet, brackets, panel height and floor gap.
+- **Details** (circles, larger scale): headrail, floor anchor, ceiling hanger or ceiling anchor, panel bracket. Labels in the circle; sizes only where a source gives them (anchor depth and slab thickness).
+
+Wide views (plan, front elevation) span the figure and keep a 560 px minimum on a phone, scrolling sideways inside the card; side view and details sit two across on desktop and stack on a phone. `diagrams/sheets.json` lists each sheet's views.
+
 ## Every drawing carries
 
 - A `<title>` and `<desc>` in the SVG and alt text on the page (what it shows, in one sentence).

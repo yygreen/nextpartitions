@@ -42,10 +42,20 @@ function parse(file) {
 // Site classes on plain Markdown output.
 // Drawings from design/diagrams/ go inline (so a preview file stands alone), full width, in a bordered card.
 // On the live site they're served as /images/diagrams/<name>.svg.
+const DIAGRAMS = '../design/diagrams/'
+const SHEETS = JSON.parse(readFileSync(`${DIAGRAMS}sheets.json`, 'utf8'))
+const inlineSvg = (file) => readFileSync(`${DIAGRAMS}${file}`, 'utf8')
+  .replace(/ width="(\d+)" height="\d+" role="img"/, ' style="width:100%;height:auto;display:block" role="img"')
+// A drawing with a sheet (plan, front elevation, side view, details) renders as one figure: wide views across the
+// full width, the side view and details side by side on desktop and stacked on a phone, each with a view label.
 const diagram = (src, alt) => {
-  const svg = readFileSync(`../design/diagrams/${src.split('/').pop()}`, 'utf8')
-    .replace(/ width="(\d+)" height="\d+" role="img"/, (_, w) => ` style="width:100%;height:auto;display:block;margin:0 auto;max-width:${Math.min(Number(w) * 1.2, 1200)}px" role="img"`)
-  return `<figure class="border border-border rounded-lg p-4 mb-4 bg-card">${svg}</figure>`
+  const name = src.split('/').pop().replace(/\.svg$/, '')
+  const sheet = SHEETS[name]
+  if (!sheet) return `<figure class="border border-border rounded-lg p-3 mb-4 bg-card">${inlineSvg(`${name}.svg`)}</figure>`
+  // Wide views keep a readable size on a phone (560px minimum) and scroll sideways inside the card.
+  const view = (v) => `<div class="${v.wide ? 'col-span-full' : ''}"><p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">${esc(v.label)}</p>${v.wide ? `<div class="overflow-x-auto"><div style="min-width:560px">${inlineSvg(v.file)}</div></div>` : inlineSvg(v.file)}</div>`
+  const wide = sheet.filter((v) => v.wide), rest = sheet.filter((v) => !v.wide)
+  return `<figure class="border border-border rounded-lg p-4 mb-4 bg-card"><div class="grid grid-cols-1 gap-6">${wide.map(view).join('')}</div><div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">${rest.map(view).join('')}</div></figure>`
 }
 function styled(html) {
   return html
