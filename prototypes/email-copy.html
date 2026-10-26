@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Email Copy</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<style>
+/* Email gallery: every email in the quote → install → review loop, rendered and as plain text. Light-only. */
+:root{
+  --bg:#fbfaf9; --band:#f4f2ee; --surface:#ffffff; --fg:#1c0e05; --muted:#6d6059;
+  --border:#e1ddd7; --accent:#e8630a; --accent-strong:#c95200; --accent-soft:#fdeee3; --on-accent:#ffffff;
+  --good:#1f7a4d; --good-soft:#e6f3ec;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --container:1360px; --gutter:34px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter)}
+@media (max-width:760px){:root{--gutter:16px}}
+.mocknote{background:#fff3c4;border-bottom:1px solid #f0d98a;font-size:13px;color:#5c4400;text-align:center;padding:8px 16px}
+.phd{background:var(--surface);border-bottom:1px solid var(--border)}
+.phd .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:36px;width:auto}
+.brand b{display:block;font-size:18px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+main{padding-block:24px 60px}
+.intro h1{font-size:clamp(24px,3vw,32px);font-weight:900;letter-spacing:-.02em;margin:0 0 4px}
+.intro p{margin:0 0 20px;color:var(--muted);max-width:75ch}
+.gal{display:grid;grid-template-columns:320px minmax(0,1fr);gap:24px;align-items:start}
+@media (max-width:1024px){.gal{grid-template-columns:1fr}}
+.list{background:var(--surface);border:1px solid var(--border)}
+.list button{display:block;width:100%;text-align:left;font:inherit;background:none;border:0;border-bottom:1px solid var(--border);padding:12px 14px;cursor:pointer}
+.list button:last-child{border-bottom:0}
+.list button:hover{background:var(--band)}
+.list button[aria-current="true"]{background:var(--accent-soft);box-shadow:inset 3px 0 0 var(--accent)}
+.list b{display:block;font-size:14px}
+.list small{display:block;font-size:12px;color:var(--muted)}
+.list .who{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border:1px solid var(--border);background:var(--band);margin-top:4px}
+.list .who.inst{background:#eef2f7;border-color:#cdd7e4}
+.list .who.np{background:#fff3c4;border-color:#f0d98a}
+.meta{background:var(--surface);border:1px solid var(--border);padding:14px 16px;margin-bottom:12px;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:14px}
+.meta dt{color:var(--muted)}
+.meta dd{margin:0;font-weight:600;min-width:0;overflow-wrap:anywhere}
+.tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+.tools .seg{display:inline-flex;border:1px solid var(--border);background:#fff}
+.tools .seg button{font:inherit;font-size:13px;font-weight:600;border:0;background:none;padding:6px 12px;cursor:pointer}
+.tools .seg button[aria-pressed="true"]{background:var(--fg);color:#fff}
+.tbtn{font:inherit;font-size:13px;font-weight:600;border:1px solid var(--border);background:#fff;padding:6px 12px;cursor:pointer}
+.copied{font-size:13px;color:var(--good);font-weight:600}
+/* the email itself */
+.client{background:#eceae6;padding:20px 12px;border:1px solid var(--border)}
+.mail{max-width:600px;margin:0 auto;background:#fff;border:1px solid #ddd8d1}
+.mhead{padding:14px 18px;border-bottom:1px solid #eee9e3;font-size:13px;color:var(--muted);display:grid;gap:2px}
+.mhead b{color:var(--fg);font-weight:600}
+.mhead .subj{font-size:17px;font-weight:800;color:var(--fg);margin-top:4px;line-height:1.3}
+.mhead .pre{font-style:italic}
+.mbody{padding:22px 24px;font-size:15px;line-height:1.6;color:#2a1f19}
+.mbody .logo{display:flex;align-items:center;gap:8px;margin-bottom:18px;font-weight:800}
+.mbody .logo img{height:28px}
+.mbody h3{font-size:16px;margin:18px 0 6px}
+.mbody p{margin:0 0 12px}
+.mbody .kv{width:100%;border-collapse:collapse;margin:4px 0 14px;font-size:14px}
+.mbody .kv td{padding:6px 0;border-bottom:1px solid #eee9e3;vertical-align:top}
+.mbody .kv td:last-child{text-align:right;font-weight:600}
+.mbody .kv tr.tot td{font-weight:800;font-size:15px;border-bottom:0}
+.mbody .cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;margin:6px 0 14px}
+.mbody .note{background:var(--band);padding:10px 12px;font-size:13px;color:var(--muted);margin:0 0 12px}
+.mbody ol,.mbody ul{margin:0 0 12px;padding-left:20px}
+.mfoot{padding:14px 24px 20px;border-top:1px solid #eee9e3;font-size:12px;color:#8a7f78;line-height:1.5}
+.mfoot a{color:#8a7f78}
+.plain{max-width:600px;margin:0 auto;background:#fff;border:1px solid #ddd8d1;padding:18px;font:13px/1.55 ui-monospace,"SF Mono",Menlo,Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;color:#2a1f19}
+@media (max-width:640px){.client{padding:10px 0;border-left:0;border-right:0}.mbody{padding:18px 16px}.mfoot{padding:12px 16px 16px}}
+</style>
+</head>
+<body>
+<div class="mocknote"><b>Mockup:</b> email copy for the quote, job and review loop. Customers, installers, prices and addresses are fictional samples.</div>
+<header class="phd"><div class="wrap"><a class="brand" href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Email copy</small></span></a></div></header>
+
+<main class="wrap">
+  <div class="intro"><h1>Emails in the quote-to-install loop</h1>
+    <p>What each email says, who gets it and what sends it, in order. Customer emails come from Next Partitions; installer emails never include customer details until the customer has chosen that installer and paid for the partitions order.</p></div>
+  <div class="gal">
+    <nav class="list" id="list" aria-label="Emails"></nav>
+    <section aria-live="polite">
+      <dl class="meta" id="meta"></dl>
+      <div class="tools"><span class="seg" role="group" aria-label="Format"><button type="button" data-fmt="html" aria-pressed="true">Email</button><button type="button" data-fmt="text" aria-pressed="false">Plain text</button></span>
+        <button class="tbtn" type="button" id="copy">Copy text</button><span class="copied" id="copied" aria-live="polite"></span></div>
+      <div class="client" id="client"></div>
+    </section>
+  </div>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const NP="Next Partitions <sales@nextpartitions.com>", ADDR="Next Partitions · [street address] · [city, state ZIP] · 1-833-997-7489";
+const FOOT_CUST="You're receiving this because you requested a quote at nextpartitions.com.";
+const FOOT_INST="You're receiving this because you're a listed installer with Next Partitions. Job emails can't be turned off while your listing is active.";
+const DISC="Installers are independent businesses. You hire, schedule and pay them directly.";
+// blocks: ["p",text] ["h",text] ["kv",[[k,v],...],totalRow?] ["btn",label,href] ["note",text] ["ol",[...]] ["ul",[...]]
+const E=[
+ {id:1,who:"cust",name:"Quote range",to:"Pat Lee <pat.lee@example.org>",from:NP,
+  trigger:"Right after the visitor enters their email on the DFW “Price your restroom” pricer (the email gate).",
+  subject:"Your restroom price range: $6,270–$6,520",pre:"Partitions plus installation for 6 HDPE stalls in Plano. Estimate only; firm quote within 24–48 hours.",
+  body:[["p","Hi Pat,"],["p","Here's the price range for the restroom you configured. It's an estimate; your firm quote comes with shop drawings."],
+   ["kv",[["Material","Solid plastic (HDPE)"],["Bracing","Overhead braced"],["Stalls","6, incl. 1 accessible (ADA), 36\" × 60\""],["Urinal screens","2"],["Job site","Plano, TX 75074"]]],
+   ["kv",[["Partitions (Next Partitions)","$5,270"],["Installation estimate, from the rates of 4 approved DFW installers","$1,000–$1,250"],["Estimated total, before tax and delivery","$6,270–$6,520"]],true],
+   ["btn","Continue to full quote","dfw.html#configure"],
+   ["h","What happens next"],["ol",["Continue to the full quote and confirm your layout, or reply with your drawings.","We send shop drawings and a firm partitions quote within 24–48 hours.","Approved installers confirm their installation prices through us. You choose one, or none."]],
+   ["note",DISC+" Next Partitions sells the partitions and coordinates the job; we add no markup to installation."],
+   ["p","Questions? Reply to this email or call [Coordinator name] at 1-833-997-7489."],["p","Next Partitions"]],
+  foot:FOOT_CUST,unsub:true},
+ {id:2,who:"inst",name:"New job request",to:"Acme Partition Installs <jobs@acme.example>",from:NP,
+  trigger:"When Next Partitions invites an installer to price a job (after the shop drawings are ready).",
+  subject:"New job: 6 HDPE stalls in Plano (reply by Tue 10 AM)",pre:"Your rates give $1,120. Confirm a firm price in the portal within 1 business day.",
+  body:[["p","Hi Acme team,"],["p","A customer in your area wants installation for partitions ordered from Next Partitions. Please price it in the portal."],
+   ["kv",[["Job","NP-DFW-1048"],["Location","Plano, TX 75074 (18 mi from your base)"],["Building","Elementary school"],["Partitions","6 solid plastic (HDPE) stalls incl. 1 ADA, overhead braced"],["Also","2 urinal screens; remove and haul away 6 old stalls"],["Delivery","Nov 9–13, 2026, to the job site"],["Estimate from your rates","$1,120"]]],
+   ["btn","Price this job","portal.html#NP-DFW-1048"],
+   ["p","Please reply by Tue 10:00 AM (1 business day). Shop drawings and the hardware list are in the portal."],
+   ["note","Customer name, contact details and site address are shared once the customer chooses you and pays for their partitions order. Until then, send questions through the portal."],["p","[Coordinator name], Next Partitions"]],
+  foot:FOOT_INST},
+ {id:3,who:"inst",name:"Reminder: no reply yet",to:"Acme Partition Installs <jobs@acme.example>",from:NP,
+  trigger:"20 hours after a job request if the installer hasn't priced, asked a question or declined.",
+  subject:"Reminder: NP-DFW-1048 needs your price by 10 AM",pre:"6 HDPE stalls in Plano. Price, ask a question or decline in one click.",
+  body:[["p","Hi Acme team,"],["p","We haven't had your price for job NP-DFW-1048 in Plano yet. It's due by 10:00 AM tomorrow."],["btn","Price this job","portal.html#NP-DFW-1048"],
+   ["p","Can't take it? Declining is fine and takes one click; it keeps your reply time on track. Reply time is part of your Installer Score."],["p","[Coordinator name], Next Partitions"]],
+  foot:FOOT_INST},
+ {id:4,who:"cust",name:"Your options are ready",to:"Pat Lee <pat.lee@example.org>",from:NP,
+  trigger:"When Next Partitions sends the quote: shop drawings, the partitions quote and installers' firm prices.",
+  subject:"Your quote Q-26-1048: drawings and installation options",pre:"Partitions $5,270. Two installers have confirmed prices for Plano.",
+  body:[["p","Hi Pat,"],["p","Your shop drawings and quote are ready, along with firm installation prices from approved installers near Plano."],
+   ["kv",[["Partitions (Next Partitions)","$5,270"],["Acme Partition Installs · ★ 4.9 · 28 installs","$1,120"],["Northwind Washroom Pros · ★ 4.8 · 19 installs","$1,180"]]],
+   ["p","Installation prices are quoted and billed by each installer. You can also choose your own installer, or none."],
+   ["btn","Review your quote","quote.html#choose"],
+   ["ol",["Check the drawings and choose an installer.","Pay for the partitions order (card, ACH or purchase order).","We confirm delivery for Nov 9–13 and your installer contacts you to set the date."]],
+   ["note",DISC+" Next Partitions isn't a party to installation agreements."],["p","Questions about the drawings? Reply here or call [Coordinator name] at 1-833-997-7489."],["p","Next Partitions"]],
+  foot:FOOT_CUST},
+ {id:5,who:"inst",name:"You've been chosen",to:"Acme Partition Installs <jobs@acme.example>",from:NP,
+  trigger:"When the customer picks this installer in their quote (before the partitions order is paid).",
+  subject:"You've been chosen for NP-DFW-1048 in Plano",pre:"Customer details unlock when the partitions order is paid.",
+  body:[["p","Hi Acme team,"],["p","Good news: the customer chose you to install job NP-DFW-1048 in Plano at your price of $1,120."],
+   ["kv",[["Delivery","Nov 9–13, 2026"],["Your price","$1,120"]]],
+   ["note","The customer's name, contact details and site address unlock as soon as they pay for the partitions order. We'll email you the moment that happens. Please don't book the date yet."],
+   ["btn","View the job","portal.html#NP-DFW-1048"],["p","[Coordinator name], Next Partitions"]],
+  foot:FOOT_INST},
+ {id:6,who:"inst",name:"Job released",to:"Acme Partition Installs <jobs@acme.example>",from:NP,
+  trigger:"Automatically when the customer's partitions order is paid (the job is released to the chosen installer).",
+  subject:"NP-DFW-1048 is yours: customer details inside",pre:"Plano ISD, delivery Nov 9–13. Please set your install date.",
+  body:[["p","Hi Acme team,"],["p","The partitions order for NP-DFW-1048 is paid, so the job is yours. Here are the customer's details."],
+   ["kv",[["Customer","Pat Lee, Plano ISD Facilities"],["Phone","(214) 555-0100"],["Email","pat.lee@example.org"],["Site","1200 Example Pkwy, Plano, TX 75074"],["On-site contact","Front office, 7:30 AM–3:30 PM"],["Delivery","Nov 9–13, 2026"]]],
+   ["btn","Set install date","portal.html#NP-DFW-1048"],
+   ["ul",["Contact the customer to agree the date, on or after delivery.","You contract and invoice installation directly with the customer.","Keep Next Partitions posted: set the date and mark the job installed in the portal."]],
+   ["p","[Coordinator name], Next Partitions"]],
+  foot:FOOT_INST},
+ {id:7,who:"cust",name:"Review request",to:"Pat Lee <pat.lee@example.org>",from:NP,
+  trigger:"The day after the installer marks the job installed. Sent only for completed jobs on a Next Partitions order; one reminder after 5 days.",
+  subject:"How did Acme do? 1-minute review",pre:"Your restroom in Plano was installed on Nov 16. Tell other customers how it went.",
+  body:[["p","Hi Pat,"],["p","Acme Partition Installs marked your restroom in Plano as installed on Nov 16. How did it go?"],
+   ["btn","Rate the installation","review.html"],
+   ["p","It takes a minute. Only customers with a completed job on a Next Partitions order can review, and reviews are published unedited, good or bad."],
+   ["p","If something isn't right, reply to this email or call 1-833-997-7489 and we'll help."],["p","Thanks for ordering with us,<br>Next Partitions"]],
+  foot:FOOT_CUST+" This review link is for you only and works once."},
+ {id:8,who:"np",name:"Alert: no installer prices",to:"Job coordinator ([Coordinator name])",from:"Next Partitions jobs <jobs@nextpartitions.com>",
+  trigger:"Automatically when a job has no firm price by its deadline, every invited installer declines, or no approved installer covers the site. The search widens once to 75 mi at the same time.",
+  subject:"No installer prices: NP-DFW-1052, Granbury (search widened)",pre:"Northwind declined. Acme and Contoso invited from the wider search, due Thu 10 AM.",
+  body:[["p","Job NP-DFW-1052 has no firm installation price."],
+   ["kv",[["Job","4 phenolic stalls + 2 urinal screens, Granbury, TX 76048"],["Customer needs it by","Nov 26 (opens Dec 1)"],["First round","Northwind invited; declined (fully booked Nov 3–21)"],["Wider search, 75 mi","Acme (65 mi) and Contoso (45 mi) invited, with travel from their rates; due Thu 10 AM"],["Customer","Emailed: still lining up your installer"]]],
+   ["btn","Open the job","portal.html#NP-DFW-1052"],
+   ["ul",["Invite another installer by hand if you know one who's free.","If nobody prices by Thursday, call the customer: partitions only now and install later, or their own installer."]]],
+  foot:"Internal alert. Sent to the DFW job coordinator."},
+ {id:9,who:"inst",name:"Wider-area job request",to:"Contoso Specialty Contractors <office@contoso.example>",from:NP,
+  trigger:"When the search widens because nobody in range priced, or the job coordinator invites an installer by hand.",
+  subject:"Can you take this one? 4 phenolic stalls in Granbury (reply by Thu 10 AM)",pre:"Outside your usual area. Your rates give $1,010 including $150 travel.",
+  body:[["p","Hi Contoso team,"],["p","The installers who cover Granbury are booked, so we're asking a few more. This job is 45 mi from your base, outside the 40 mi you cover."],
+   ["kv",[["Job","NP-DFW-1052"],["Location","Granbury, TX 76048"],["Building","Brewery taproom"],["Partitions","4 phenolic stalls incl. 1 ADA, floor mounted; 2 urinal screens"],["Delivery","Nov 12–18, 2026; install by Nov 26"],["Estimate from your rates","$1,010, including $150 travel"]]],
+   ["btn","Price this job","portal.html"],
+   ["p","Please reply by Thu 10:00 AM. If you can't take it, declining is fine and doesn't count against you for jobs outside your area."],
+   ["note","Customer name, contact details and site address are shared once the customer chooses you and pays for their partitions order."],["p","[Coordinator name], Next Partitions"]],
+  foot:FOOT_INST},
+ {id:10,who:"cust",name:"Still lining up your installer",to:"Riley Brooks <riley@example.com>",from:NP,
+  trigger:"When the first installer deadline passes with no firm price (at the same time as the wider search).",
+  subject:"Your installation prices are taking a little longer",pre:"Your partitions quote is ready. Installer prices by Thursday, or go ahead without waiting.",
+  body:[["p","Hi Riley,"],["p","Your shop drawings and partitions quote are ready. The installers we asked first are booked for your dates, so we've asked more installers in the wider Granbury area. Expect firm installation prices by Thursday, Oct 23."],
+   ["p","You have three options:"],
+   ["ol",["Wait: no need to do anything. We'll email you as soon as prices are in.","Go ahead with partitions only: your partitions ship as planned and you can add an installer when prices come in.","Use your own installer: we include the install packet with layout, hardware list and install guide."]],
+   ["btn","See your options","quote.html#searching"],
+   ["p","You need everything installed by Nov 26, and we're planning around that date. If it changes, reply here."],
+   ["note",DISC],["p","[Coordinator name], Next Partitions<br>1-833-997-7489"]],
+  foot:FOOT_CUST},
+];
+let cur=E[0], fmt="html";
+
+const html=e=>e.body.map(b=>{
+  if(b[0]==="p")return `<p>${b[1]}</p>`; if(b[0]==="h")return `<h3>${esc(b[1])}</h3>`;
+  if(b[0]==="kv")return `<table class="kv">${b[1].map((r,k)=>`<tr${b[2]&&k===b[1].length-1?' class="tot"':""}><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join("")}</table>`;
+  if(b[0]==="btn")return `<a class="cta" href="${b[2]}">${esc(b[1])}</a>`;
+  if(b[0]==="note")return `<p class="note">${esc(b[1])}</p>`;
+  return `<${b[0]}>${b[1].map(x=>`<li>${esc(x)}</li>`).join("")}</${b[0]}>`;}).join("");
+const text=e=>[`Subject: ${e.subject}`,`Preheader: ${e.pre}`,""].concat(e.body.map(b=>{
+  if(b[0]==="p"||b[0]==="note")return b[1].replace(/<br>/g,"\n");
+  if(b[0]==="h")return b[1].toUpperCase();
+  if(b[0]==="kv")return b[1].map(r=>`${r[0]}: ${r[1]}`).join("\n");
+  if(b[0]==="btn")return `${b[1]}: https://nextpartitions.com/…/${b[2]}`;
+  return b[1].map((x,k)=>(b[0]==="ol"?`${k+1}. `:"- ")+x).join("\n");})).concat(["","--",e.foot,ADDR]).join("\n\n").replace(/\n\n\n+/g,"\n\n");
+
+function render(){
+  $("list").innerHTML=E.map((e,k)=>`<button type="button" data-e="${e.id}" aria-current="${e===cur}"><b>${k+1}. ${esc(e.name)}</b><small>${esc(e.subject)}</small><span class="who ${e.who}">${e.who==="inst"?"To installer":e.who==="np"?"Internal":"To customer"}</span></button>`).join("");
+  $("list").querySelectorAll("[data-e]").forEach(b=>b.onclick=()=>{cur=E.find(e=>e.id===+b.dataset.e);history.replaceState(null,"","#email-"+cur.id);render();if(innerWidth<1025)$("meta").scrollIntoView({behavior:"smooth"});});
+  $("meta").innerHTML=`<dt>To</dt><dd>${esc(cur.to)}</dd><dt>From</dt><dd>${esc(cur.from)}</dd><dt>Sent when</dt><dd>${esc(cur.trigger)}</dd>`;
+  document.querySelectorAll("[data-fmt]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.fmt===fmt)));
+  $("copied").textContent="";
+  $("client").innerHTML=fmt==="text"?`<pre class="plain" id="plain">${esc(text(cur))}</pre>`:
+   `<article class="mail"><div class="mhead"><span>From <b>${esc(cur.from)}</b></span><span>To <b>${esc(cur.to)}</b></span><span class="subj">${esc(cur.subject)}</span><span class="pre">${esc(cur.pre)}</span></div>
+    <div class="mbody"><div class="logo"><img src="img/logo.png" alt="">Next Partitions</div>${html(cur)}</div>
+    <div class="mfoot">${esc(cur.foot)}<br>${esc(ADDR)}${cur.unsub?`<br><a href="#">Stop follow-ups about this quote</a>`:""}</div></article>`;
+}
+document.querySelectorAll("[data-fmt]").forEach(b=>b.onclick=()=>{fmt=b.dataset.fmt;render();});
+$("copy").onclick=async()=>{const t=text(cur);
+  try{await navigator.clipboard.writeText(t);$("copied").textContent="Copied";}
+  catch(e){fmt="text";render();const r=document.createRange();r.selectNodeContents($("plain"));const s=getSelection();s.removeAllRanges();s.addRange(r);$("copied").textContent="Selected; press Ctrl/Cmd+C";}};
+function fromHash(){const m=location.hash.match(/^#email-(\d+)$/);if(m){const e=E.find(x=>x.id===+m[1]);if(e)cur=e;}render();}
+addEventListener("hashchange",fromHash); fromHash();
+</script>
+</body>
+</html>
