@@ -426,7 +426,7 @@ function QuoteCard({ jobId }: { jobId: string }) {
         <Button variant="outline" onClick={async () => { try { await navigator.clipboard?.writeText(link); setCopied(true) } catch { setCopied(false) } }}>{copied ? 'Copied' : 'Copy'}</Button>
         <a className="inline-flex items-center px-3 min-h-11 border border-border font-semibold hover:bg-muted" href={link} target={portal().sample ? undefined : '_blank'} rel="noopener">Open</a>
       </div>
-      <p className="text-xs text-muted-foreground">Send this link to the customer only. Anyone with it can see the quote and choose an installer.</p>
+      <p className="text-xs text-muted-foreground">The customer gets this link by email when you show the prices on their quote. Share it with the customer only: anyone with it can see the quote and choose an installer.</p>
       <div className="grid grid-cols-2 gap-2">
         <Field label="Quote number"><input className={INPUT} value={form.ref} onChange={(e) => setF({ ...form, ref: e.target.value })} /></Field>
         <Field label="Valid until"><input className={INPUT} type="date" value={form.until} onChange={(e) => setF({ ...form, until: e.target.value })} /></Field>

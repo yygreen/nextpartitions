@@ -3,7 +3,7 @@
 # Needs a local Postgres you can createdb on (set PGUSER/PGHOST as needed).
 set -euo pipefail
 cd "$(dirname "$0")/.."
-for t in rls_test routing_test files_test apply_test; do
+for t in rls_test routing_test files_test apply_test outbox_test; do
   db="dirtest_$t"
   dropdb --if-exists "$db"; createdb "$db"
   for f in tests/supabase_shim.sql migrations/*.sql "tests/$t.sql"; do
