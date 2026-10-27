@@ -97,7 +97,7 @@ Your brand if you know it, the material, photos, and measurements. See the lists
 
 ## Sources
 
-- Current nextpartitions.com pages /contact, /service-area, /get-a-quote. Checked 2026-10-26.
+- Current nextpartitions.com pages /contact, /service-area, /get-a-quote. Checked 2026-10-27.
 - Part-matching details, from [Replacement Restroom Stall Doors](/hardware/doors) and [Hinges](/hardware/hinges): sources listed on those pages. Checked 2026-10-26.
 
 <!-- For Marc -->
@@ -115,10 +115,6 @@ Your brand if you know it, the material, photos, and measurements. See the lists
 - Drawing: measure-new-restroom-plan and -section (being drawn; lead to check the A to F key matches).
 - Internal links to add elsewhere: link /contact from the replacement-part pages (already linked).
 - Images wanted: none.
-
-## To verify when sources are reachable
-
-- Nothing in the body depends on an outside source.
 
 ## Confirm with Abe
 

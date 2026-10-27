@@ -53,7 +53,7 @@ Overhead braced (floor anchors plus a headrail), floor mounted (floor anchors on
 ## Shipping and installation
 
 ### Do you ship commercial bathroom partitions nationwide?
-Yes. We ship to all 50 states and Washington, D.C. by freight carrier. Shipments are crated, palletized and tracked. Liftgate, inside delivery and after-hours delivery are available on request. See our [service area](/service-area).
+Yes. We ship to all 50 states and Washington, D.C. by freight carrier. Shipments are crated, palletized and tracked. Curbside and liftgate delivery are available on request. See our [service area](/service-area).
 
 ### Do you install the partitions?
 No. Next Partitions supplies partitions and hardware. Follow the manufacturer's instructions and the approved drawings, and use a qualified installer.
@@ -74,6 +74,12 @@ Yes, if the pilaster and hinges it hangs on are sound. Send the door dimensions,
 
 ### Can I get ADA-compliant stalls?
 Yes. The configurator has an ADA option that adjusts stall dimensions, door width and grab bar requirements. Compliance depends on your whole restroom, so confirm it with your architect or code official.
+
+## Checked 2026-10-27
+
+- ADA 2010 Standards text confirmed: 404.2.3 (32 inch clear width), 604.8.1.1 (60 wide; 56 deep wall hung, 59 deep floor mounted), 604.8.1.4 (9 inch toe clearance, 12 inch for children's compartments, with exceptions for larger compartments).
+- Inside delivery and after-hours delivery are not on the live site (the service-area page says "Curbside or liftgate, delivery options on request"). Removed from the FAQ answer. Add them back only if Abe confirms them.
+- The ASI privacy-gap report could not be opened (403), so the reasons for gaps rest on the earlier check.
 
 ## Confirm with Abe
 
@@ -98,14 +104,14 @@ Same lead-time table as above.
 
 Original sources, as first checked for the linked pages:
 
-- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 404.2.3, 604.8.1.1, 604.8.1.4. Checked 2026-10-26.
-- [Bobrick, Specifying Code-Compliant Toilet Partitions (CEU)](https://www.bobrick.com/wp-content/uploads/Bobrick_Toilet-Partitions_CEU.pdf): materials, HDPE and NFPA 286. Checked 2026-10-26.
-- [Bobrick, Fact Sheet on ICC and NFPA Model Code Revisions](https://www.bobrick.com/wp-content/uploads/FACT_SHEET_ICC_IFC_AND_NFPA_MODEL_CODE_REVISIONS-1.pdf): HDPE and NFPA 286. Checked 2026-10-26.
-- [Bobrick privacy options](https://www.bobrick.com/products/toilet-partitions-cubicle-systems/privacy/): 58" panels at 12", gap reasons. Checked 2026-10-26.
-- [ASI Global Partitions, The Privacy Gap report](https://asi-globalpartitions.com/the-privacy-gap-report/): why gaps exist. Checked 2026-10-26.
-- [Bobrick 1080 Series technical data sheet](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): mounting styles. Checked 2026-10-26.
+- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 404.2.3, 604.8.1.1, 604.8.1.4. Checked 2026-10-27.
+- [Bobrick, Specifying Code-Compliant Toilet Partitions (CEU)](https://www.bobrick.com/wp-content/uploads/Bobrick_Toilet-Partitions_CEU.pdf): materials, HDPE and NFPA 286. Checked 2026-10-27.
+- [Bobrick, Fact Sheet on ICC and NFPA Model Code Revisions](https://www.bobrick.com/wp-content/uploads/FACT_SHEET_ICC_IFC_AND_NFPA_MODEL_CODE_REVISIONS-1.pdf): HDPE and NFPA 286. Checked 2026-10-27.
+- [Bobrick privacy options](https://www.bobrick.com/products/toilet-partitions-cubicle-systems/privacy/): 58" panels at 12", gap reasons. Checked 2026-10-27.
+- [ASI Global Partitions, The Privacy Gap report](https://asi-globalpartitions.com/the-privacy-gap-report/): why gaps exist. Checked 2026-10-26; not re-checked 2026-10-27 (the site returned 403).
+- [Bobrick 1080 Series technical data sheet](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): mounting styles. Checked 2026-10-27.
 - Part thickness, from [Bathroom Partition Parts](/hardware/parts): sources listed on that page. Checked 2026-10-26.
-- Current nextpartitions.com pages /faq, /service-area, /guides/standard-sizes, /guides/bathroom-stall-dimensions, /get-a-quote. Checked 2026-10-26.
+- Current nextpartitions.com pages /faq, /service-area, /guides/standard-sizes, /guides/bathroom-stall-dimensions, /get-a-quote. Checked 2026-10-27.
 
 <!-- For Marc -->
 ## Corrections to the current page
@@ -127,12 +133,6 @@ Original sources, as first checked for the linked pages:
 - Keep the Get a Quote CTA ("Still have questions?") and the Explore More block.
 - Group the FAQ under the section headings as accordions if the layout allows.
 - Images wanted: none.
-
-## To verify when sources are reachable
-
-- Re-open the sources above (no outside site could be reached on 2026-10-27, so nothing was re-fetched).
-- Confirm the exact wording of 604.8.1.4's 9-inch and 12-inch toe-clearance rules and the 56/59-inch depths against the 2010 Standards text.
-- Liftgate, inside delivery and after-hours delivery come from the current site only.
 
 ## Confirm with Abe
 

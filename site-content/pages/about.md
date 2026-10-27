@@ -77,8 +77,8 @@ Contractors, architects, facility managers and builders.
 
 ## Sources
 
-- Current nextpartitions.com pages /about, /brands, /service-area, /partitions. Checked 2026-10-26.
-- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 404.2.3 (32-inch minimum clear opening), 604.8.1.1 (compartment size). Checked 2026-10-26.
+- Current nextpartitions.com pages /about, /brands, /service-area, /partitions. Checked 2026-10-27.
+- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 404.2.3 (32-inch minimum clear opening), 604.8.1.1 (compartment size). Checked 2026-10-27.
 
 <!-- For Marc -->
 ## Corrections to the current page
@@ -98,10 +98,6 @@ Contractors, architects, facility managers and builders.
 - Structured data: Organization (name, phone 1-833-997-7489, email sales@nextpartitions.com); AboutPage; FAQPage (3 Q&As); BreadcrumbList.
 - Add Explore More block as on other pages.
 - Images wanted: a warehouse or freight photo; a team photo only if Abe supplies one.
-
-## To verify when sources are reachable
-
-- Re-open the ADA 2010 Standards text for 404.2.3 and 604.8.1.1 (no outside site was reachable on 2026-10-27).
 
 ## Confirm with Abe
 

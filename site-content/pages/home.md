@@ -122,11 +122,11 @@ Bobrick, ASI Global, Scranton Products, Bradley, Metpar, Ammco and Hadrian.
 
 Original sources, as first checked for the linked pages.
 
-- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 404.2.3, 604.8.1.1. Checked 2026-10-26.
-- Material descriptions, from [What Are Bathroom Partitions Made Of?](/blog/what-are-bathroom-partitions-made-of): Bobrick CEU (https://www.bobrick.com/wp-content/uploads/Bobrick_Toilet-Partitions_CEU.pdf), ASI Global catalog (https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf), Scranton Products (https://www.scrantonproducts.com/hdpe-vs-other-materials/). Checked 2026-10-26.
-- Mounting style descriptions, from [Mounting Styles](/mounting-styles): Bobrick 1080 Series data sheet (https://www.bobrick.com/wp-content/uploads/1080_td.pdf), ASI Global, Scranton Products, Hadrian. Checked 2026-10-26.
-- HDPE and NFPA 286: Bobrick, Fact Sheet on ICC and NFPA Model Code Revisions (https://www.bobrick.com/wp-content/uploads/FACT_SHEET_ICC_IFC_AND_NFPA_MODEL_CODE_REVISIONS-1.pdf). Checked 2026-10-26.
-- Shipping, hardware list, authorized-distributor statement, service area: current nextpartitions.com pages /, /partitions, /brands, /service-area. Checked 2026-10-26.
+- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 404.2.3, 604.8.1.1. Checked 2026-10-27.
+- Material descriptions, from [What Are Bathroom Partitions Made Of?](/blog/what-are-bathroom-partitions-made-of): Bobrick CEU (https://www.bobrick.com/wp-content/uploads/Bobrick_Toilet-Partitions_CEU.pdf), ASI Global catalog (https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf), Scranton Products (https://www.scrantonproducts.com/hdpe-vs-other-materials/). Checked 2026-10-27.
+- Mounting style descriptions, from [Mounting Styles](/mounting-styles): Bobrick 1080 Series data sheet (https://www.bobrick.com/wp-content/uploads/1080_td.pdf), ASI Global, Scranton Products, Hadrian. Checked 2026-10-27.
+- HDPE and NFPA 286: Bobrick, Fact Sheet on ICC and NFPA Model Code Revisions (https://www.bobrick.com/wp-content/uploads/FACT_SHEET_ICC_IFC_AND_NFPA_MODEL_CODE_REVISIONS-1.pdf). Checked 2026-10-27.
+- Shipping, hardware list, authorized-distributor statement, service area: current nextpartitions.com pages /, /partitions, /brands, /service-area. Checked 2026-10-27.
 
 <!-- For Marc -->
 ## Corrections to the current page
@@ -148,10 +148,6 @@ Original sources, as first checked for the linked pages.
 - Keep the configurator widget (stall count and material pickers) as the live form above "Start Your Configuration".
 - Images wanted: a finished restroom photo for the hero; photos of each of the five materials; a freight delivery photo.
 - Drawing used: mounting-styles-compare (exists).
-
-## To verify when sources are reachable
-
-- No outside site could be reached on 2026-10-27, so every source above is carried over from pages checked 2026-10-26. Re-open them before publishing.
 
 ## Confirm with Abe
 

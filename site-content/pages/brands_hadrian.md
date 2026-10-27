@@ -5,12 +5,12 @@ meta: Hadrian toilet partitions in powder coated steel, stainless, phenolic and 
 h1: Hadrian Toilet Partitions
 primary_keyword: hadrian toilet partitions (390)
 secondary_keywords: [hadrian partitions (320), hadrian toilet partition (110), hadrian bathroom partitions (90), hadrian partition hardware (70), hadrian partition (50), hadrian restroom partitions (40), hadrian toilet partitions installation instructions (30)]
-words: 680
+words: 730
 ---
 
 # Hadrian Toilet Partitions
 
-Hadrian toilet partitions are commercial restroom partitions made in powder coated steel, stainless steel, phenolic and solid plastic, in headrail braced, floor mounted, ceiling hung and floor to ceiling versions. This page explains what Hadrian makes, how its mounting styles differ, and where to find Hadrian installation instructions. It also covers how we handle Hadrian projects.
+Hadrian toilet partitions are commercial restroom partitions, from a brand that is part of Zurn Elkay, made in powder coated steel, stainless steel, phenolic and solid plastic, in headrail braced, floor mounted, ceiling hung and floor to ceiling versions. This page explains what Hadrian makes, how its mounting styles differ, and where to find Hadrian installation instructions. It also covers how we handle Hadrian projects.
 
 [Get a Quote](/get-a-quote)
 
@@ -32,6 +32,10 @@ Hadrian lists toilet partitions in four materials:
 | Solid plastic | Listed floor to ceiling, with 55 inch doors and panels mounted 14 inches above the floor | [Solid plastic (HDPE)](/partitions/solid-plastic-hdpe) |
 
 Each combination of material and mounting style has its own Hadrian listing, so a given material may not be offered in every style. Confirm the combination you need against the Hadrian data sheet.
+
+## Hadrian series and heights
+
+Hadrian's listings name four privacy series by door and panel height. The Standard series has 58 inch doors and panels mounted 12 inches above the floor. Elite has 64 inch doors and panels, Elite Plus 72 inch, and Elite Max 84 or 92 inch, all mounted lower, with continuous channels that remove the sightline gaps. Hadrian's stainless steel listing shows all four series, and its powder coated listing shows at least Standard and Elite. Which series come in which material and mounting style is on each Hadrian data sheet.
 
 ## Hadrian mounting styles
 
@@ -75,13 +79,14 @@ Hadrian recommends floor to ceiling for high-traffic areas such as schools. Your
 
 ## Sources
 
-- [Hadrian floor to ceiling solid plastic partitions, Sweets](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-solid-plastic-toilet-partitions-nst865788-p): schools, 55 inch doors at 14 inches. Checked 2026-10-26.
-- [Hadrian floor mounted powder coated partitions, Sweets](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-mounted-powder-coated-toilet-partitions-nst865768-p): spaciousness, high ceilings, 58 inch at 12 inches. Checked 2026-10-26.
-- [Hadrian floor mounted phenolic partitions, Sweets](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-mounted-phenolic-toilet-partitions-nst865757-p). Checked 2026-10-26.
-- [Hadrian ceiling hung phenolic partitions, Sweets](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/ceiling-hung-phenolic-toilet-partitions-nst865755-p): floor maintenance, modernization. Checked 2026-10-26.
-- [Hadrian ceiling hung stainless steel partitions, Sweets](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/ceiling-hung-stainless-steel-toilet-partitions-nst865777-p). Checked 2026-10-26.
-- [Hadrian headrail braced stainless steel partitions, Sweets](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/headrail-braced-stainless-steel-toilet-partitions-nst865773-p): anti-grip top rail, heavy-use applications, no-sightline option. Checked 2026-10-26.
-- [Hadrian floor to ceiling phenolic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-phenolic-toilet-partitions-nst865759-p), [powder coated](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-powder-coated-toilet-partitions-nst865770-p) and [stainless steel](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-stainless-steel-toilet-partitions-nst865781-p) listings. Checked 2026-10-26.
+- [Zurn Elkay brands](https://www.zurnelkay.com/brands): lists Hadrian as a Zurn Elkay brand with powder coated, stainless steel, solid plastic and phenolic partitions. Checked 2026-10-27.
+- [Hadrian floor to ceiling solid plastic partitions, Sweets](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-solid-plastic-toilet-partitions-nst865788-p): schools, 55 inch doors at 14 inches. Checked 2026-10-27.
+- [Hadrian floor mounted powder coated partitions, Sweets](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-mounted-powder-coated-toilet-partitions-nst865768-p): spaciousness, high ceilings, 58 inch at 12 inches. Checked 2026-10-27.
+- [Hadrian floor mounted phenolic partitions, Sweets](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-mounted-phenolic-toilet-partitions-nst865757-p). Checked 2026-10-27.
+- [Hadrian ceiling hung phenolic partitions, Sweets](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/ceiling-hung-phenolic-toilet-partitions-nst865755-p): floor maintenance, modernization. Checked 2026-10-27.
+- [Hadrian ceiling hung stainless steel partitions, Sweets](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/ceiling-hung-stainless-steel-toilet-partitions-nst865777-p). Checked 2026-10-27.
+- [Hadrian headrail braced stainless steel partitions, Sweets](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/headrail-braced-stainless-steel-toilet-partitions-nst865773-p): anti-grip top rail, heavy-use applications, no-sightline option. Checked 2026-10-27.
+- [Hadrian floor to ceiling phenolic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-phenolic-toilet-partitions-nst865759-p), [powder coated](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-powder-coated-toilet-partitions-nst865770-p) and [stainless steel](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-stainless-steel-toilet-partitions-nst865781-p) listings. Checked 2026-10-27.
 
 <!-- For Marc -->
 ## Corrections to the current page
@@ -90,15 +95,18 @@ Hadrian recommends floor to ceiling for high-traffic areas such as schools. Your
 - "Our team can match Hadrian specs almost line-for-line" is unsourced and removed. Replaced with "comparable product, subject to your architect's approval".
 - Title used an em dash; replaced. Meta now carries the keyword.
 - Quote time: the standard promise added where the page invites a quote.
-- Sources note: hadrian-inc.com was not reachable, so the facts come from Hadrian's own manufacturer listings on Sweets, checked 2026-10-26.
+- Sources note: hadrian-inc.com returns 403 from our network (checked 2026-10-27), so the facts come from Hadrian's own manufacturer listings on Sweets and from zurnelkay.com.
+- Confirmed 2026-10-27: Hadrian is a Zurn Elkay brand (zurnelkay.com/brands), and the series names Standard, Elite, Elite Plus and Elite Max (Hadrian's Sweets listings for stainless and powder coated).
 
 ## To verify when sources are reachable
 
-- Hadrian is part of Zurn Elkay: not confirmed, left out.
-- Product series names (Standard, Elite, Tufftec, plastic laminate): not confirmed, left out. Add them, with data sheet links, once hadrian-inc.com can be read.
-- A working link to Hadrian's installation instructions page. The Semrush export shows an old address (hadrian-inc.com/tech-data/installation/toilet-partitions.aspx) that we could not test, so it is not linked.
-- Current Hadrian distributor status with Abe; the page keeps "pending reapproval" from the live site.
-- Hadrian hardware types (hinges, latches), which are not documented in our sources.
+- Hadrian's older series names (Tufftec, plastic laminate) from the earlier draft: checked 2026-10-27: not found in Hadrian's Sweets listings or on zurnelkay.com; left out.
+- A working link to Hadrian's installation instructions page. The Semrush export shows an old address (hadrian-inc.com/tech-data/installation/toilet-partitions.aspx); hadrian-inc.com returned 403 on 2026-10-27 (checked 2026-10-27: not found, site not reachable), so it is not linked.
+- Hadrian hardware types (hinges, latches): checked 2026-10-27: not found in Hadrian's Sweets listings or on zurnelkay.com.
+
+## Confirm with Abe
+
+- Current Hadrian distributor status; the page keeps "pending reapproval" from the live site.
 
 ## Implementation notes
 
