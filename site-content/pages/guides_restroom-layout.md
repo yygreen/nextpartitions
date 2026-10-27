@@ -16,14 +16,21 @@ Have a plan or just measurements? [Get a quote](/get-a-quote). Standard configur
 
 ## Step 1: Measure the room
 
-![Plan of an empty restroom with lettered measurements](/images/diagrams/measure-new-restroom.svg)
+Start with the room seen from above. These four measurements decide how many stalls fit and where the doors can swing:
 
-- **A.** Room width along the wall where the stalls go.
-- **B.** Room depth.
-- **C.** Ceiling height.
-- **D.** Entry door location and swing.
-- **E.** Toilet centerlines, measured from the side wall.
-- **F.** Floor and ceiling construction.
+![Plan of an empty restroom seen from above, with the stall wall run, room depth, entry door and toilet centerlines lettered](/images/diagrams/measure-new-restroom-plan.svg)
+
+- **A.** room width along the wall where the stalls go.
+- **B.** room depth, from the stall wall to the opposite wall.
+- **D.** entry door location and which way it swings.
+- **E.** toilet centerlines, measured from the side wall.
+
+Then look at the room from the side, as if it were cut through. This view is about height and structure: what the partitions stand on and what they can hang or brace from, which decides the mounting style.
+
+![Section through a restroom showing ceiling height and the floor and ceiling construction](/images/diagrams/measure-new-restroom-section.svg)
+
+- **C.** ceiling height, floor to finished ceiling.
+- **F.** floor construction (slab, tile over slab) and the structure above the ceiling (open steel, concrete deck, drop ceiling).
 
 A and E decide how many stalls fit. C and F decide the mounting style. D decides what a person sees and where the doors can swing.
 
@@ -142,7 +149,7 @@ It depends on the ceiling and floor. See the table above.
 ## Implementation notes
 
 - Structured data: FAQPage (5 Q&As), BreadcrumbList.
-- Drawings: measure-new-restroom (lettered A to F), sheet-plan, urinal-spacing and mounting-styles-compare. The urinal-spacing and measure-new-restroom drawings are being drawn; the lead to confirm the bullet text matches them.
+- Drawings: measure-new-restroom-plan and -section (lettered A to F), sheet-plan, urinal-spacing and mounting-styles-compare. The urinal-spacing and measure-new-restroom-plan and -section drawingss are being drawn; the lead to confirm the bullet text matches them.
 - Internal links to add: /guides/standard-sizes and /guides/bathroom-stall-dimensions link here.
 - Images wanted: a finished restroom photo showing stalls, urinal screens and the lavatory route.
 

@@ -134,14 +134,21 @@ Urinal screens are short partitions between or beside urinals. The spacing rule 
 
 A supplier needs a handful of numbers to quote a layout:
 
-![Plan of an empty restroom with lettered measurements](/images/diagrams/measure-new-restroom.svg)
+Start with the room seen from above. These four measurements decide how many stalls fit and where the doors can swing:
 
-- **A.** Room width along the wall where the stalls go.
-- **B.** Room depth from the stall wall to the opposite wall.
-- **C.** Ceiling height, which decides which mounting style you can use.
-- **D.** Entry door location and swing.
-- **E.** Toilet centerlines, measured from the side wall.
-- **F.** Floor and ceiling construction, such as slab, tile, drop ceiling or open structure.
+![Plan of an empty restroom seen from above, with the stall wall run, room depth, entry door and toilet centerlines lettered](/images/diagrams/measure-new-restroom-plan.svg)
+
+- **A.** room width along the wall where the stalls go.
+- **B.** room depth, from the stall wall to the opposite wall.
+- **D.** entry door location and which way it swings.
+- **E.** toilet centerlines, measured from the side wall.
+
+Then look at the room from the side, as if it were cut through. This view is about height and structure: what the partitions stand on and what they can hang or brace from, which decides the mounting style.
+
+![Section through a restroom showing ceiling height and the floor and ceiling construction](/images/diagrams/measure-new-restroom-section.svg)
+
+- **C.** ceiling height, floor to finished ceiling.
+- **F.** floor construction (slab, tile over slab) and the structure above the ceiling (open steel, concrete deck, drop ceiling).
 
 Add photos of the walls, floor and ceiling. Then [get a quote](/get-a-quote). For where each mounting style needs structure, see [mounting styles](/mounting-styles).
 
@@ -193,7 +200,7 @@ Only with care. The front partition and one side partition need 9" of toe cleara
 
 - **Keyword and cannibalization decision for Marc.** The blog calendar had "Standard Bathroom Stall Sizes and Dimensions (Complete Guide)" as a new blog post. We put it on this existing URL instead so the two pages don't compete. Drop that calendar item. Link every mention of stall sizes to this page. The main bathroom stall dimensions keyword (1,000/mo) lives here; /guides/standard-sizes now targets partition component sizes.
 - Structured data: FAQPage (6 Q&As), BreadcrumbList Home > Guides > Bathroom Stall Dimensions. Optional Article schema.
-- Drawings used: sheet-plan (no numbered callouts, so the key is a bulleted list), stall-gaps (key matches the drawing's 4 callouts), measure-new-restroom (lettered A to F; the lead to confirm the lettering matches the finished drawing).
+- Drawings used: sheet-plan (no numbered callouts, so the key is a bulleted list), stall-gaps (key matches the drawing's 4 callouts), measure-new-restroom-plan and -section (lettered A to F; the lead to confirm the lettering matches the finished drawing).
 - Internal links: add from /guides, /guides/ada-compliance, /guides/standard-sizes, /guides/restroom-layout, /mounting-styles (already links here), /industries/* stall-size bullets.
 - Lawyer review of the code wording is part of launch (CLAUDE.md content principles).
 - Images wanted: a job photo of a row of stalls with the accessible stall at the end; a tape measure across a compartment; a photo of a 12" floor gap with a tape.
@@ -207,4 +214,4 @@ The sandbox blocked access-board.gov, codes.iccsafe.org and the manufacturer sit
 - Standard pilaster widths: no source found. Add from a manufacturer sheet.
 - Standard door widths other than Metpar's range, and the 24" door in the old page: unconfirmed.
 - Children's toilet centerline, seat height and grab bar positions by age (604.9): left out.
-- Confirm the lettering on the new measure-new-restroom drawing matches A to F.
+- Confirm the lettering on the new measure-new-restroom-plan and -section drawings matches A to F.

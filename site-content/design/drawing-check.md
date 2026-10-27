@@ -36,11 +36,11 @@ Exact extrusion profiles and part numbers differ by brand. The details show the 
 
 # New drawings, 2026-10-27: material sections, urinal spacing, measuring a new restroom
 
-Manufacturer sites, access-board.gov and codes.iccsafe.org were blocked from this session's network on 2026-10-27, so nothing could be re-opened today. Every number below comes from a source already read and cited in the repo on 2026-10-26 (`pages/blog_what-are-bathroom-partitions-made-of.md`, `pages/hardware_doors.md`, `pages/hardware.md`, `pages/guides.md`); the URLs are those sources'. Anything without such a source is drawn without a dimension. All eight drawings carry the "Schematic" line: face, skin and edge-band thicknesses, urinal and screen sizes and the room proportions are not to a source.
+Manufacturer sites, access-board.gov and codes.iccsafe.org were blocked from this session's network on 2026-10-27, so nothing could be re-opened today. Every number below comes from a source already read and cited in the repo on 2026-10-26 (`pages/blog_what-are-bathroom-partitions-made-of.md`, `pages/hardware_doors.md`, `pages/hardware.md`, `pages/guides.md`); the URLs are those sources'. Anything without such a source is drawn without a dimension. All nine drawings carry the "Schematic" line: face, skin and edge-band thicknesses, urinal and screen sizes and the room proportions are not to a source.
 
 ## Material cross-sections (edge view, a door cut through near its edge)
 
-Files: `material-section-phenolic`, `-solid-plastic`, `-plastic-laminate`, `-powder-coated-steel`, `-stainless-steel`, and `material-sections-compare` (all five stacked at one scale, 64 px per inch; the single sections are 120 px per inch). Callouts on every single section: **1 core, 2 faces / finish, 3 edge.** Orange is the construction that defines the material.
+Files: `material-section-phenolic`, `-solid-plastic`, `-plastic-laminate`, `-powder-coated-steel`, `-stainless-steel`, and `material-sections-compare` (all five side by side at one scale, 80 px per inch, each door standing upright and seen edge on; the single sections are 150 px per inch, 780 wide). Callouts on every single section: **1 core, 2 faces / finish, 3 edge.** Orange is the construction that defines the material.
 
 | Material | Drawn | Orange | Thickness dimension | Source (checked 2026-10-26) |
 |---|---|---|---|---|
@@ -58,15 +58,27 @@ File: `urinal-spacing`. A back wall with a side wall on the left, three wall-hun
 
 Source: International Plumbing Code 405.3.1 as printed in ICC's 2018 Significant Changes excerpt, https://www.iccsafe.org/wp-content/uploads/2018SC-PMG_P405.3.1.pdf (checked 2026-10-26, cited in `pages/guides.md`): 15" from a fixture's centerline to a side wall or partition; 30" center to center where no partition separates adjacent fixtures; 21" clearance in front of a water closet, urinal, lavatory or bidet. The 2021 IPC text at codes.iccsafe.org could not be opened on 2026-10-27; a web search summary of the 2021 chapter gives the same three numbers, but confirm the 2021 wording before launch. Urinal and screen sizes are not dimensioned (no source).
 
-## Measuring a new restroom (plan with a section inset)
+## Measuring a new restroom (a plan, then a section)
 
-File: `measure-new-restroom`. Letters, Muted dimension lines; orange is the stall wall run.
+Two landscape drawings (the old single `measure-new-restroom` with its section inset is replaced). Letters, Muted dimension lines; orange is the stall wall run.
+
+File `measure-new-restroom-plan` (seen from above):
 
 - **A** room width along the wall the stalls will run on (orange line on that wall)
 - **B** room depth
-- **C** ceiling height (section inset)
 - **D** entry door: where it is (measured from the nearest corner) and which way it swings
 - **E** each toilet flange centerline, measured from the side wall
-- **F** floor construction and the structure above the ceiling (section inset)
+
+File `measure-new-restroom-section` (the room cut through, seen from the side):
+
+- **C** ceiling height, floor to finished ceiling
+- **F** floor construction, and the structure above the ceiling
 
 No numbers: it shows what to measure, not a size. The letters match the page's measurement list; C and F matter because ceiling-hung and floor-to-ceiling stalls need structure above the ceiling and floor anchors need structural concrete (Bobrick 1080: 2" min into 3" min structural concrete, see above).
+
+# Landscape layout, 2026-10-27
+
+Every drawing is now at least 1.6 times as wide as it is tall (design-language.md, "Layout: always landscape"). Nothing was re-dimensioned: the same numbers, from the same sources.
+
+- Standalone drawings are 780 wide, so they show at about their real size in the content column. `mounting-ceiling-hung`, `mounting-floor-to-ceiling`, `stall-gaps` and `partition-anatomy` (ratios 1.33 to 1.59 before) keep their drawing unchanged, centred on a 780-wide canvas.
+- Sheet side views and details are 400 x 250, the size they show at two across on desktop. Side views are drawn at 1.75 px per inch with the parts named on the left (pilaster, panel, bracket, and the style's support: headrail, shoe, ceiling anchor, or steel and hanger) and the 58" and 12" heights right of the back wall. Details keep their contents, scaled into a smaller circle, with the labels in a column to the right.

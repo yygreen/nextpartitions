@@ -46,12 +46,13 @@ const DIAGRAMS = '../design/diagrams/'
 const SHEETS = JSON.parse(readFileSync(`${DIAGRAMS}sheets.json`, 'utf8'))
 const inlineSvg = (file) => readFileSync(`${DIAGRAMS}${file}`, 'utf8')
   .replace(/ width="(\d+)" height="\d+" role="img"/, ' style="width:100%;height:auto;display:block" role="img"')
+// Standalone drawings are landscape and 780 wide; on a phone they keep a 600px minimum and scroll sideways.
 // A drawing with a sheet (plan, front elevation, side view, details) renders as one figure: wide views across the
 // full width, the side view and details side by side on desktop and stacked on a phone, each with a view label.
 const diagram = (src, alt) => {
   const name = src.split('/').pop().replace(/\.svg$/, '')
   const sheet = SHEETS[name]
-  if (!sheet) return `<figure class="border border-border rounded-lg p-3 mb-4 bg-card">${inlineSvg(`${name}.svg`)}</figure>`
+  if (!sheet) return `<figure class="border border-border rounded-lg p-3 mb-4 bg-card"><div class="overflow-x-auto"><div style="min-width:600px">${inlineSvg(`${name}.svg`)}</div></div></figure>`
   // Wide views keep a readable size on a phone (560px minimum) and scroll sideways inside the card.
   const view = (v) => `<div class="${v.wide ? 'col-span-full' : ''}"><p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">${esc(v.label)}</p>${v.wide ? `<div class="overflow-x-auto"><div style="min-width:560px">${inlineSvg(v.file)}</div></div>` : inlineSvg(v.file)}</div>`
   const wide = sheet.filter((v) => v.wide), rest = sheet.filter((v) => !v.wide)

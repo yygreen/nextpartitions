@@ -51,14 +51,21 @@ Replacing parts? These pages say what to send: [hinges](/hardware/hinges), [lock
 
 For a new project, send room measurements with your message or quote request:
 
-![Plan of an empty restroom with lettered measurements: room width along the stall wall, room depth, ceiling height, entry door, toilet centerlines and floor and ceiling construction](/images/diagrams/measure-new-restroom.svg)
+Start with the room seen from above. These four measurements decide how many stalls fit and where the doors can swing:
 
-- **A:** room width along the stall wall.
-- **B:** room depth.
-- **C:** ceiling height.
-- **D:** entry door location and swing.
+![Plan of an empty restroom seen from above, with the stall wall run, room depth, entry door and toilet centerlines lettered](/images/diagrams/measure-new-restroom-plan.svg)
+
+- **A:** room width along the wall where the stalls go.
+- **B:** room depth, from the stall wall to the opposite wall.
+- **D:** entry door location and which way it swings.
 - **E:** toilet centerlines, measured from the side wall.
-- **F:** floor and ceiling construction (a note or photo).
+
+Then look at the room from the side, as if it were cut through. This view is about height and structure: what the partitions stand on and what they can hang or brace from, which decides the mounting style.
+
+![Section through a restroom showing ceiling height and the floor and ceiling construction](/images/diagrams/measure-new-restroom-section.svg)
+
+- **C:** ceiling height, floor to finished ceiling.
+- **F:** floor construction (slab, tile over slab) and the structure above the ceiling (open steel, concrete deck, drop ceiling).
 
 Also tell us the stall count and the material and mounting style, if you've chosen them. Our [stall dimensions guide](/guides/bathroom-stall-dimensions) and [restroom layout guide](/guides/restroom-layout) can help you choose. If you're replacing a door, start with [replacement stall doors](/hardware/doors) instead.
 
@@ -99,13 +106,13 @@ Your brand if you know it, the material, photos, and measurements. See the lists
 - Email block said "We respond within 24 hours" while the form intro said "within one business day". Both now say one business day for messages (the brief's rule).
 - "Looking for pricing?" now carries the single quote promise; the old page gave none.
 - The current page has no street or mailing address. Nothing was added. Phone, hours, email and shipping lines are kept exactly as on the current page.
-- Added: what to include, new-project measurements with the measure-new-restroom drawing, installation statement, response table, FAQ.
+- Added: what to include, new-project measurements with the measure-new-restroom-plan and -section drawings, installation statement, response table, FAQ.
 
 ## Implementation notes
 
 - Keep the working contact form; the "Fields" line stands in for it. Form fields stay as they are.
 - Structured data: ContactPage, Organization with telephone and email, FAQPage (4 Q&As), BreadcrumbList.
-- Drawing: measure-new-restroom (being drawn; lead to check the A to F key matches).
+- Drawing: measure-new-restroom-plan and -section (being drawn; lead to check the A to F key matches).
 - Internal links to add elsewhere: link /contact from the replacement-part pages (already linked).
 - Images wanted: none.
 

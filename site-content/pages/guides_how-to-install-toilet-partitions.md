@@ -52,14 +52,21 @@ The support system is shown in orange. Have your contractor or structural engine
 
 Set out the job from the approved shop drawings, not from memory or from the old stalls. Measure the room and compare it with the drawings before you start. If a wall or column is not where the drawing says, stop and resolve it with the architect. For new work, see the room measurements we ask for in [how to measure a restroom](/guides/restroom-layout).
 
-![Plan of an empty restroom with lettered measurements](/images/diagrams/measure-new-restroom.svg)
+Start with the room seen from above. These four measurements decide how many stalls fit and where the doors can swing:
 
-1. **A:** room width along the stall wall.
-2. **B:** room depth.
-3. **C:** ceiling height.
-4. **D:** entry door location and swing.
-5. **E:** toilet centerlines from the side wall.
-6. **F:** floor and ceiling construction.
+![Plan of an empty restroom seen from above, with the stall wall run, room depth, entry door and toilet centerlines lettered](/images/diagrams/measure-new-restroom-plan.svg)
+
+1. **A:** room width along the wall where the stalls go.
+2. **B:** room depth, from the stall wall to the opposite wall.
+3. **D:** entry door location and which way it swings.
+4. **E:** toilet centerlines, measured from the side wall.
+
+Then look at the room from the side, as if it were cut through. This view is about height and structure: what the partitions stand on and what they can hang or brace from, which decides the mounting style.
+
+![Section through a restroom showing ceiling height and the floor and ceiling construction](/images/diagrams/measure-new-restroom-section.svg)
+
+5. **C:** ceiling height, floor to finished ceiling.
+6. **F:** floor construction (slab, tile over slab) and the structure above the ceiling (open steel, concrete deck, drop ceiling).
 
 ## The general sequence for overhead-braced and floor-mounted
 
@@ -192,7 +199,7 @@ None. This is a new page. There is no live version.
 - Anchor ids for the sections: `#before-you-start`, `#general-sequence`, `#ceiling-hung`, `#floor-to-ceiling`, `#hardware`, `#problems`. The H2 "Ceiling hung" and "Hardware" and "Problems" need ids exactly as listed.
 - Structured data: FAQPage (5 Q&As); HowTo optional, but skip it. The page is an overview, not instructions, and a HowTo schema would suggest otherwise. BreadcrumbList: Guides > this page.
 - URL: the keyword research suggested /resources/... URLs, but the site's hub is /guides. This page goes under /guides and needs a card added to the Guides hub (pages/guides.md lists the hub cards; I did not edit it).
-- Drawings used: mounting-styles-compare, mounting-overhead-braced, mounting-ceiling-hung, latch-keeper, hinge-types, measure-new-restroom (being drawn; the lead should check its key matches A to F).
+- Drawings used: mounting-styles-compare, mounting-overhead-braced, mounting-ceiling-hung, latch-keeper, hinge-types, measure-new-restroom-plan and -section (being drawn; the lead should check its key matches A to F).
 - Internal links to add elsewhere: from /mounting-styles/ceiling-hung, /hardware/locks-latches and /hardware/hinges to this page.
 - Images wanted: job photos of a pilaster on its leveling bracket, a keeper being aligned to the latch bar, ceiling steel with hanger rods, and a wall with blocking before drywall.
 - Brand page link: `/brands`. Change to a specific brand page if preferred.
