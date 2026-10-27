@@ -5,7 +5,7 @@ meta: How to install bathroom partitions: what to check first, the general seque
 h1: How to Install Bathroom Partitions
 primary_keyword: how to install bathroom partitions (30/mo)
 secondary_keywords: [bathroom partitions installation (40), bathroom partition installation (30), how to install commercial bathroom partitions (20), how to install ceiling hung toilet partitions (20), toilet partition installation problems, toilet partition installation heights, ADA grab bar on toilet partition, toilet partition slide latch install]
-words: 2,000
+words: 2,100
 ---
 
 # How to Install Bathroom Partitions
@@ -98,7 +98,7 @@ Ceiling hung is the style where the building matters most. If you are asking how
 
 - **Structural steel above the ceiling, per manufacturer.** Bobrick's TB-32 bulletin shows I-beam, channel and angle supports. Bradley's ceiling-hung guide says a "C" channel is required and is not included. The architect or structural engineer designs the support, and others furnish it.
 - **Load.** Bobrick says the ceiling structure must support at least 295 lb per plastic laminate partition and 275 lb per compact grade partition, and must be rigid enough to withstand door swing and impact.
-- **Steel, not wood.** Bobrick does not recommend wood beams for ceiling-hung installation.
+- **Steel, not wood.** The NY OGS spec says steel overhead support is generally required for ceiling-hung units and that wood construction does not provide adequate support.
 - **The finished ceiling carries nothing.** The NY OGS spec requires anchoring assemblies to connect to structure above the ceiling without transmitting load to the finished ceiling.
 - **Hanger and leveling.** Bobrick's ceiling anchor assembly is a threaded rod, hex nuts, washers, a shoe retainer and an expansion anchor. The pilaster hangs from the rod and is leveled with the nuts. A 4" stainless steel shoe covers the hanger at the ceiling.
 - **Ceiling height.** Bobrick's standard 83" pilaster fits an 8' ceiling and is made to length up to 10'.
@@ -107,7 +107,7 @@ The panel, door, hinge and latch steps then follow the same pattern as above.
 
 ## Floor to ceiling
 
-Floor-to-ceiling pilasters are anchored at both ends. The NY OGS spec calls for anchoring assemblies with leveling adjustment nuts at the tops and bottoms of the pilasters, with a shoe at the floor and a sleeve at the ceiling. Bobrick makes its floor-to-ceiling stiles to length for ceilings up to 10'. Unlike ceiling hung, the OGS spec notes wood may provide adequate overhead support for floor-and-ceiling-anchored compartments. Consult the manufacturer. Doors and panels hang level and aligned with each other.
+Floor-to-ceiling pilasters are anchored at both ends. The NY OGS spec calls for anchoring assemblies with leveling adjustment nuts at the tops and bottoms of the pilasters, with a shoe at the floor and a sleeve at the ceiling. Bobrick makes its floor-to-ceiling stiles to length for ceilings up to 10'. Consult the manufacturer for what the ceiling structure must be. Doors and panels hang level and aligned with each other.
 
 ## Hardware
 
@@ -134,11 +134,20 @@ The bottom cam sets the rest position. On ASI metal partitions, the lowest point
 
 ### Grab bars
 
-Grab bar sizes and positions are set by the 2010 ADA Standards (see sections 604 and 609 of the Standards and our [ADA compliance guide](/guides/ada-compliance)). Do not assume a partition panel can carry a grab bar. Ask the manufacturer in writing whether your partition is rated for it, and have the bar fixed to backing provided by the building.
+Grab bar sizes and positions are set by the 2010 ADA Standards (sections 604 and 609; see also our [ADA compliance guide](/guides/ada-compliance)). In a wheelchair accessible compartment, grab bars go on the side wall closest to the toilet and on the rear wall (604.5).
+
+- **Side wall bar:** 42" long minimum, no more than 12" from the rear wall, and extending at least 54" from the rear wall (604.5.1).
+- **Rear wall bar:** 36" long minimum, extending 12" minimum on one side of the toilet centerline and 24" minimum on the other (604.5.2).
+- **Height:** horizontal, 33" minimum to 36" maximum above the floor, measured to the top of the gripping surface (609.4).
+- **Spacing:** 1-1/2" between the wall and the bar (609.3). Round bars are 1-1/4" to 2" in outside diameter (609.2.1).
+- **Strength:** the bar, its fasteners and the supporting structure must withstand a 250 lb force without exceeding allowable stresses (609.8).
+- **Ambulatory compartments:** a side wall bar is required on both sides (604.8.2.3).
+
+Do not assume a partition panel can carry a grab bar. Ask the manufacturer in writing whether your partition is rated for it, and have the bar fixed to backing provided by the building.
 
 ### Heights
 
-Accessible compartment hardware (pulls and latches) must be mounted 34" minimum to 48" maximum above the floor (404.2.7). A coat hook in an accessible compartment must be within a reach range in section 308. For an unobstructed forward or side reach, that is 48" maximum and 15" minimum (604.8.3, 308.2.1, 308.3.1).
+Accessible compartment hardware (pulls and latches) must be mounted 34" minimum to 48" maximum above the floor (404.2.7). A coat hook in an accessible compartment must be within a reach range in section 308. For an unobstructed forward or side reach, that is 48" maximum and 15" minimum (604.8.3, 308.2.1, 308.3.1). A shelf in the compartment must be 40" minimum to 48" maximum above the floor (604.8.3).
 
 *Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.*
 
@@ -177,22 +186,26 @@ Ready to plan a restroom? [Get a quote](/get-a-quote). Standard configurations a
 
 ## Sources
 
-All sources below were read in the earlier source pass and are cited from the repo pages that quote them. They could not be re-fetched on 2026-10-27 because the network blocked those hosts.
+Sources marked 2026-10-27 were opened and read that day. The Bradley copy is dealer-hosted and could not be re-opened (HTTP 406); Bradley's own site returned 403, so no manufacturer URL is available.
 
-- [Bobrick, TB-32 Suggested Mounting Systems for Ceiling-Hung Toilet Partitions](https://www.bobrick.com/wp-content/uploads/TB-32.pdf): support types, load, steel not wood, anchor assembly, 4" shoe. Checked 2026-10-26.
-- [Bobrick, 1080 Series technical data](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): wall backing, 2" into 3" concrete, stile heights, 8" stile, floor-anchor and ceiling-hung parts. Checked 2026-10-26.
-- [Bobrick, 1550 Series technical data](https://www.bobrick.com/wp-content/uploads/1550_td.pdf): leveling bracket, 58" doors, 83" stile, ceiling-support note. Checked 2026-10-26.
-- [ASI Global Integrated Privacy installation guide](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Integrated-Privacy-Powder-Coated-and-Stainless-Steel-Installation-Guide.pdf): keeper alignment and drilling, bumper placement, box cam and pintle. Checked 2026-10-26.
-- [Bradley Series 600 powder coated and stainless installation guide (dealer-hosted copy of Bradley's document)](https://ded1740.inmotionhosting.com/~partplus42/wp-content/uploads/2022/01/Bradley-Series-600-Powder-Coated-and-Stainless-Steel-Installation-Guide.pdf): backing warning, "C" channel, 12" level line. Checked 2026-10-26.
-- [Scranton Products Hiny Hiders guide specification](http://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): 30-degree cams. Checked 2026-10-26.
-- [Scranton Products partition spec form](http://www.scrantonproducts.com/wp-content/uploads/2015/05/Partition__Vanity_Spec_Form_Estimating-3.pdf): latches and strikes cannot be mixed. Checked 2026-10-26.
-- [New York State OGS MasterSpec 102113.19, Plastic Toilet Compartments](https://online2.ogs.ny.gov/dnc/masterspec24/docs/Division10Specialties/102113.19PlasticToiletCompartments.docx): anchor depths, headrail fasteners, door alignment, ceiling anchoring. Checked 2026-10-26.
-- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 308.2.1, 308.3.1, 404.2.7, 604.8.1.2, 604.8.3. Checked 2026-10-26.
+- [Bobrick, TB-32 Suggested Mounting Systems for Ceiling-Hung Toilet Partitions](https://www.bobrick.com/wp-content/uploads/TB-32.pdf): support types, load (295 lb and 275 lb), anchor assembly, 4" shoe. Checked 2026-10-27.
+- [Bobrick, 1080 Series technical data](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): wall backing, 2" into 3" concrete, stile heights, floor-anchor and ceiling-hung parts. Checked 2026-10-27.
+- [Bobrick, 1550 Series technical data](https://www.bobrick.com/wp-content/uploads/1550_td.pdf): leveling bracket, 58" doors, 83" stile. Checked 2026-10-27.
+- [ASI Global Integrated Privacy installation guide](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Integrated-Privacy-Powder-Coated-and-Stainless-Steel-Installation-Guide.pdf): keeper alignment and drilling, bumper placement, box cam and pintle. Checked 2026-10-27.
+- [Bradley Series 600 powder coated and stainless installation guide (dealer-hosted copy of Bradley's document)](https://ded1740.inmotionhosting.com/~partplus42/wp-content/uploads/2022/01/Bradley-Series-600-Powder-Coated-and-Stainless-Steel-Installation-Guide.pdf): backing warning, "C" channel, 12" level line. Last read 2026-10-26; not re-opened.
+- [Scranton Products Hiny Hiders guide specification](http://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): 30-degree cams. Checked 2026-10-27.
+- [Scranton Products partition spec form](http://www.scrantonproducts.com/wp-content/uploads/2015/05/Partition__Vanity_Spec_Form_Estimating-3.pdf): latches and strikes cannot be mixed. Checked 2026-10-27.
+- [New York State OGS MasterSpec 102113.19, Plastic Toilet Compartments](https://online2.ogs.ny.gov/dnc/masterspec24/docs/Division10Specialties/102113.19PlasticToiletCompartments.docx): anchor depths, headrail fasteners, door alignment, ceiling anchoring, steel (not wood) for ceiling hung. Checked 2026-10-27.
+- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 308.2.1, 308.3.1, 404.2.7, 603.4, 604.5, 604.8.1.2, 604.8.2.3, 604.8.3, 609. Checked 2026-10-27.
 
 <!-- For Marc -->
 ## Corrections to the current page
 
 None. This is a new page. There is no live version.
+
+## Notes for Marc
+
+- Removed an unsupported claim: the page said Bobrick does not recommend wood beams for ceiling hung, but the current TB-32 does not say that. The page now cites the NY OGS spec (steel generally required, wood not adequate). Also removed a line saying OGS allows wood for floor-to-ceiling, which the spec does not state.
 
 ## Implementation notes
 
@@ -206,12 +219,8 @@ None. This is a new page. There is no live version.
 
 ## To verify when sources are reachable
 
-The network blocked every manufacturer host on 2026-10-27, so the sections below were limited to what the repo had already sourced. These items were left out of the body or are thin:
-
-- Grab bar heights and lengths (ADA 604.5, 609, 604.8.2.3): the body points to the Standards and our ADA guide and gives no numbers. Whether partitions may carry a grab bar is unconfirmed for every brand (the instruction to "ask the manufacturer in writing" is advice, not a sourced claim).
-- Layout, fastener spacing, bracket heights, door gap dimensions, and the full step order for each brand: not in the repo. The sequence here is generic. Confirm against the ASI, Bobrick, Scranton, Bradley, Metpar and Hadrian installation guides (candidate URLs listed on /guides/installation-instructions notes).
-- Tool lists per brand.
+- Whether partitions may carry a grab bar, for each brand: not found in the Bobrick (1080, 1550, 1040, 1090) installation instructions or technical data (checked 2026-10-27: not found). The body keeps the advice to ask the manufacturer in writing.
+- Full step order, fastener spacing, bracket heights, door gaps and tool lists per brand: the manufacturer installation documents are now linked from /guides/installation-instructions, but the body here stays a generic overview. Bradley, Hadrian and Ammco official documents could not be reached (see that page).
 - Uneven gaps, loose panels and not-plumb fixes are general, drawn from level and backing facts only. Confirm manufacturer tolerances.
-- Check whether the Bradley 12" level line applies beyond ceiling-hung guides.
-- "Mounting heights from ADA 604.5 and 609" and "coat hook heights" beyond 308 reach ranges: not added.
-- Re-fetch all sources above on a day the hosts are reachable and update the "Checked" dates.
+- Whether the Bradley 12" level line applies beyond ceiling-hung guides (the Bradley document could not be re-opened).
+- Coat hook mounting heights beyond the ADA reach ranges: no manufacturer heights confirmed.
