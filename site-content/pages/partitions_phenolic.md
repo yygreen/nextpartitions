@@ -5,7 +5,7 @@ meta: Phenolic bathroom partitions explained: black core vs color-through, 1/2" 
 h1: Phenolic Bathroom Partitions
 primary_keyword: phenolic bathroom partitions (volume not in repo)
 secondary_keywords: [phenolic toilet partitions, compact laminate partitions, black core phenolic partitions, hdpe vs phenolic toilet partitions]
-words: 1,100
+words: 1,250
 ---
 
 # Phenolic Bathroom Partitions
@@ -23,13 +23,15 @@ Two versions are common:
 - **Black core phenolic.** Decorative faces over a black core, so a cut edge is black. ASI says its black core phenolic "holds up even under severe moisture conditions from showers, pools, and saunas".
 - **Color-through phenolic.** The color runs through the core to match the surface. ASI sells this as Color-Thru.
 
-Phenolic parts are thinner than laminate or HDPE parts. Bobrick (1080 Series, DuraLineSeries) and Bradley (PH400 Series) both make panels 1/2" thick, with 3/4" doors and pilasters (Bobrick calls pilasters "stiles"). ASI sizes its anti-grip headrail for phenolic at 3/4", which matches a 3/4" pilaster.
+Phenolic parts are thinner than laminate or HDPE parts. Bobrick (1080 Series, DuraLineSeries), Bradley (PH400 Series) and Metpar (black core and color-through) all make panels 1/2" thick, with 3/4" doors and pilasters (Bobrick calls pilasters "stiles"). ASI sizes its anti-grip headrail for phenolic at 3/4", which matches a 3/4" pilaster. ASI's catalog and Hadrian's listings don't state a door thickness.
+
+Edges are machined, not banded. Bobrick says its edges are black and its DuraLineSeries has a "polished black edge design". Bradley's PH400 edges are black, machined smooth with a 45-degree chamfer. Metpar's black core edges are black, polished and beveled. ASI describes its black core range as "all with black edges".
 
 ![Cross-section of a phenolic partition door edge: layered core, faces and edge](/images/diagrams/material-section-phenolic.svg)
 
 1. **Core:** layers of kraft paper impregnated with phenolic resin, fused under heat and pressure. Black on black core phenolic; the color-through version carries the color through the whole thickness.
 2. **Faces:** melamine decorative surface.
-3. **Edge:** the cut edge of the fused sheet. It shows the core color: black on black core, the panel color on color-through.
+3. **Edge:** the cut edge of the fused sheet, machined smooth. It shows the core color: black on black core, the panel color on color-through.
 
 ## Fire rating
 
@@ -37,10 +39,12 @@ Fire class is set by the product line, not by the material name.
 
 | Product | Published class | Source |
 |---|---|---|
-| Bobrick 1080 Series (compact grade laminate) | Class B | Bobrick 1080 data sheet |
-| Bobrick 1180 Series | Class A | Bobrick 1080 data sheet |
-| ASI Global black core phenolic | Class B as standard | ASI catalog |
+| Bobrick DuraLineSeries 1080 (compact grade laminate) | Class B | Bobrick DuraLineSeries page |
+| Bobrick DuraLineSeries 1180 | Class A | Bobrick DuraLineSeries page |
+| ASI Global black core phenolic | Class B as standard, Class A optional | ASI catalog |
 | ASI Global Color-Thru phenolic | Class A as standard | ASI catalog |
+| Metpar black core phenolic | Class B; Class A available | Metpar black core page |
+| Hadrian phenolic | Each color is listed as Class A or Class B | Hadrian listing on Sweets |
 
 Bobrick's materials guide defines the ASTM E84 classes by flame spread index: Class A is 25 or less, Class B is 26 to 75, Class C is 76 to 200. The class you need depends on the building's occupancy and where the restroom sits. Confirm it with your architect or local code official, and ask for the product's test documentation.
 
@@ -48,8 +52,10 @@ Bobrick's materials guide defines the ASTM E84 classes by flame spread index: Cl
 
 There is no single phenolic warranty. The lengths below come from manufacturer documents we hold. Read the full warranty text before you specify.
 
-- **ASI Global:** the ASI catalog lists 25 years on its phenolic.
-- **Bobrick:** compact grade laminate (DuraLineSeries) carries 25 years.
+- **Bobrick, DuraLineSeries CGL 1080/1180:** 25 years. Bobrick's warranty document covers panels, doors and stiles "against breakage, corrosion, delaminating and defects in workmanship", on condition that the partitions are properly installed, used and serviced. The remedy is repair or replacement, and vandalism damage isn't covered. Hardware and brackets carry 1 year.
+- **ASI Global:** 25 years on black core and on Color-Thru phenolic, per the ASI catalog, which refers to the full warranty on ASI's website. We couldn't open that text, so we can't state ASI's coverage terms.
+- **Bradley, PH400 phenolic:** 3 years "against delamination and discoloration" (Bradley partitions brochure, 2025).
+- **Metpar and Hadrian:** we haven't found a published phenolic warranty.
 
 Whatever a different site or older page says, warranty length and coverage are set by the brand and product line you buy. We'll state the warranty for your line in your quote.
 
@@ -88,32 +94,35 @@ Our quotes cover panels, doors, pilasters, headrails, hinges, slide latches, kee
 In practice, yes. Bobrick calls its phenolic material compact grade laminate (CGL), with melamine faces and a black phenolic-resin core.
 
 ### How thick are phenolic bathroom partitions?
-Bobrick and Bradley make panels 1/2" thick, with 3/4" doors and pilasters. Measure yours before ordering parts.
+Bobrick, Bradley and Metpar make panels 1/2" thick, with 3/4" doors and pilasters. Measure yours before ordering parts.
 
 ### Are phenolic partitions Class A?
-It depends on the line. Bobrick's 1180 is Class A and its 1080 is Class B. ASI's Color-Thru is Class A as standard and its black core is Class B. Ask for the class of the line you are specifying.
+It depends on the line. Bobrick's 1180 is Class A and its 1080 is Class B. ASI's Color-Thru is Class A as standard and its black core is Class B as standard, with Class A optional. Ask for the class of the line you are specifying.
 
 ### What is the warranty on phenolic partitions?
-It depends on the brand. ASI's catalog lists 25 years and Bobrick lists 25 years on compact grade laminate. Coverage terms are in each manufacturer's warranty document.
+It depends on the brand. Bobrick gives 25 years on its DuraLineSeries compact grade laminate and ASI lists 25 years, while Bradley's PH400 phenolic carries 3 years. Coverage terms are in each manufacturer's warranty document.
 
 ### Is phenolic good for pools and showers?
 Manufacturers position it for those areas. ASI says black core phenolic holds up under severe moisture from showers, pools and saunas.
 
 ### Black core or color-through?
-Black core has a black edge. Color-through matches the edge to the face. Deep scratches on black core can show the core.
+Black core has a black, machined edge. Color-through matches the edge to the face. Deep scratches on black core can show the core.
 
 ## Sources
 
-- [Bobrick, Specifying Code-Compliant Toilet Partitions, CEU](https://www.bobrick.com/wp-content/uploads/Bobrick_Toilet-Partitions_CEU.pdf): construction methods, CGL, ASTM E84 classes, wet-area guidance. Checked 2026-10-26.
-- [Bobrick 1080 Series technical data sheet](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): 3/4" doors and stiles, 1/2" panels; Class B (1080) and Class A (1180) as recorded in industry-check.md. Checked 2026-10-26.
-- [Bobrick DuraLineSeries CGL](https://www.bobrick.com/products/toilet-partitions-cubicle-systems/traditional-partitions/duralineseries-cgl/): 3/4" doors and stiles, 1/2" panels, Class A or B. Checked 2026-10-26.
-- [Bobrick SierraSeries SCRC](https://www.bobrick.com/products/toilet-partitions-cubicle-systems/traditional-partitions/sierra-scrc/): recommended with solid phenolic for wet areas. Checked 2026-10-26.
-- [Bobrick Advisory Bulletin TB-32](https://www.bobrick.com/wp-content/uploads/TB-32.pdf): 275 lb ceiling load, compact grade. Checked 2026-10-26.
-- [ASI Global Partitions catalog](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf): black core and Color-Thru phenolic, Class A/B as standard, 25-year phenolic warranty. Checked 2026-10-26.
-- [ASI Global replacement hardware](https://asi-globalpartitions.com/replacement-hardware/): 3/4" headrail for phenolic. Checked 2026-10-26.
-- [Scranton Products, HDPE vs other materials](https://www.scrantonproducts.com/hdpe-vs-other-materials/): resin-impregnated kraft paper core. Checked 2026-10-26.
-- [Bradley PH400 Series spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): 1/2" panels, 3/4" doors and pilasters. Checked 2026-10-26.
-- [Hadrian floor mounted phenolic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-mounted-phenolic-toilet-partitions-nst865757-p), [ceiling hung phenolic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/ceiling-hung-phenolic-toilet-partitions-nst865755-p), [floor to ceiling phenolic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-phenolic-toilet-partitions-nst865759-p): mounting offered. Checked 2026-10-26.
+- [Bobrick, Specifying Code-Compliant Toilet Partitions, CEU](https://www.bobrick.com/wp-content/uploads/Bobrick_Toilet-Partitions_CEU.pdf): construction methods, CGL, ASTM E84 class definitions, wet-area guidance. Checked 2026-10-27.
+- [Bobrick 1080 Series technical data sheet](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): 3/4" doors and stiles, 1/2" panels, black edges. Checked 2026-10-27.
+- [Bobrick DuraLineSeries CGL](https://www.bobrick.com/products/toilet-partitions-cubicle-systems/traditional-partitions/duralineseries-cgl/): 3/4" doors and stiles, 1/2" panels, polished black edge, 25-year warranty, Class A (1180) or Class B (1080), mounting model numbers. Checked 2026-10-27.
+- [Bobrick Product Warranties and Limitations](https://www.bobrick.com/wp-content/uploads/Product-Warranties.pdf): 25 years on DuraLineSeries CGL, coverage wording, hardware 1 year, vandalism excluded (document dated 08/12/26). Checked 2026-10-27.
+- [Bobrick SierraSeries SCRC](https://www.bobrick.com/products/toilet-partitions-cubicle-systems/traditional-partitions/sierra-scrc/): "Select Solid Color Reinforced Composite or Solid Phenolic for wet areas." Checked 2026-10-27.
+- [Bobrick Advisory Bulletin TB-32](https://www.bobrick.com/wp-content/uploads/TB-32.pdf): 275 lb ceiling load, compact grade. Checked 2026-10-27.
+- [ASI Global Partitions catalog](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf): black core and Color-Thru phenolic, material selection guide (fire class, 25-year warranty), "all with black edges". Checked 2026-10-27.
+- [ASI Global replacement hardware](https://asi-globalpartitions.com/replacement-hardware/): 3/4" headrail for phenolic. Checked 2026-10-27.
+- [Scranton Products, HDPE vs other materials](https://www.scrantonproducts.com/hdpe-vs-other-materials/): resin-impregnated kraft paper core. Checked 2026-10-27.
+- [Bradley PH400 Series spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): 1/2" panels, 3/4" doors and pilasters, black edges with 45-degree chamfer. Checked 2026-10-27.
+- [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): phenolic warranty (3 years against delamination and discoloration), solid black edges. Checked 2026-10-27.
+- [Metpar phenolic, black core](https://metpar.com/toilet-partitions/phenolic-black-core/): 3/4" doors and pilasters, 1/2" panels, Class B, black polished and beveled edges. Checked 2026-10-27.
+- [Hadrian floor mounted phenolic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-mounted-phenolic-toilet-partitions-nst865757-p), [ceiling hung phenolic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/ceiling-hung-phenolic-toilet-partitions-nst865755-p), [floor to ceiling phenolic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-phenolic-toilet-partitions-nst865759-p): mounting offered, Class A or B by color. Checked 2026-10-27.
 - Hardware included with a quote: current site, /partitions. Checked 2026-10-26.
 
 <!-- For Marc -->
@@ -128,19 +137,19 @@ Black core has a black edge. Color-through matches the edge to the face. Deep sc
 - "Every order includes everything you need for installation": reworded to what a quote covers, plus the qualified-installer line.
 - "Maximum durability", "Superior", "harshest conditions": removed as unsourced superlatives.
 - Quote wording: CTA now "Configure & Request a Quote" with the standard quote promise.
+- Bobrick's 2018 CEU slides listed a 15-year warranty for compact laminate. Bobrick's current warranty document (08/12/26) says 25 years for DuraLineSeries CGL. We use the current document; the "15 years" on the live site may come from the older slides.
+- Fire class for Bobrick 1080/1180 was credited to the 1080 data sheet, which doesn't state a class. The class is on Bobrick's DuraLineSeries page; source fixed.
 
 ## To verify when sources are reachable
 
 | Claim | Where it's from | Source to check |
 |---|---|---|
-| Warranty coverage wording (what is and isn't covered) for ASI phenolic and Bobrick CGL | Lengths from ASI catalog and Bobrick via industry-check.md; coverage text not held | ASI warranty document; Bobrick warranty page |
-| Bobrick CGL 25-year figure | industry-check.md note | Bobrick warranty and DuraLineSeries pages |
-| Edge construction of phenolic doors (square, eased, any edge treatment) | Not in repo | Bobrick 1080 data sheet; Bradley PH400 spec |
-| Overall door thickness 3/4" for ASI and Hadrian phenolic | ASI headrail sizing only | ASI catalog; Hadrian listing |
-| Color names/numbers (Silver Gray 3000 etc.) and Black Core/Color-Thru lists | Current page | ASI color charts |
-| Price index "$" note | Current page | Dropped; Abe's price list |
-| Lead time 10–15 business days | Current page | Confirm with Abe |
-| Cleaning instructions for phenolic | Not in repo | ASI/Bobrick care guides |
+| ASI phenolic warranty coverage wording (what is and isn't covered) | ASI catalog gives the length only | ASI warranty document (checked 2026-10-27: not found; asi-globalpartitions.com/resource/warranty/ loads with no text) |
+| Door thickness 3/4" for ASI and Hadrian phenolic | ASI headrail sizing only | ASI catalog; Hadrian listing (checked 2026-10-27: not found in either; Bobrick, Bradley and Metpar do state 3/4") |
+| Color names/numbers (Silver Gray 3000 etc.) and Black Core/Color-Thru lists | Current page | ASI color charts (checked 2026-10-27: not found in the ASI catalog text, which gives only counts: 10 black core, 6 Color-Thru; Silver Gray 3000 appears there as a plastic laminate color) |
+| Price index "$" note | Current page | Dropped; Abe's price list (checked 2026-10-27: ASI's catalog shows its own price index, "$" for black core and "$$$$$" for Color-Thru, but Abe's list is what matters) |
+| Lead time 10–15 business days | Current page | Confirm with Abe (checked 2026-10-27: not a manufacturer question) |
+| Cleaning instructions for phenolic | Not in repo | ASI/Bobrick care guides (checked 2026-10-27: not found in the pages fetched; Bobrick has a Cleaning & Maintenance Guide we did not open) |
 
 ## Implementation notes
 

@@ -55,7 +55,7 @@ Short answers are fine: a sentence, a voice note or a quick call. Your answers g
 
 **Brands**
 30. The Hadrian page says your distributorship is "pending reapproval". Is that still true? If so, we keep Hadrian off the brand comparison until it's settled.
-31. The site calls you an authorized distributor for five brands. Which brands is that true for, in writing? We only keep the claim where you can show it.
+31. The site calls you an authorized distributor for five brands. Which brands is that true for, in writing? We only keep the claim where you can show it. (It matters for warranties too: Bobrick's warranty only covers partitions bought through an authorized distributor.)
 
 33. Brand spelling: the manufacturer's own site calls itself AAMCO (All American Metal Corp.); your site says Ammco, including the web address /brands/ammco. Which spelling should the pages use? (We'd keep the web address either way.)
 

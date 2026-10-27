@@ -5,7 +5,7 @@ meta: Stainless steel bathroom partitions: Type 304 faces over a honeycomb core,
 h1: Stainless Steel Bathroom Partitions
 primary_keyword: stainless steel bathroom partitions (volume not in repo)
 secondary_keywords: [stainless steel toilet partitions, stainless steel bathroom stalls, stainless steel restroom partitions]
-words: 1,000
+words: 1,200
 ---
 
 # Stainless Steel Bathroom Partitions
@@ -18,25 +18,36 @@ Stainless steel bathroom partitions use the same sandwich as powder coated steel
 
 ASI builds its stainless partitions from Type 304 stainless steel over a honeycomb core, and says a textured finish adds resistance to vandalism. Bradley offers a satin brushed finish and a textured pattern on its stainless line. ASI sizes its anti-grip headrail for stainless at 1-1/4", which matches a 1-1/4" pilaster.
 
+Metpar publishes the dimensions: 1" thick doors and panels, 1-1/4" pilasters, and 22-gauge stainless face sheets on doors and panels (20 gauge on pilasters), over a honeycomb core it describes as paper constructed. ASI's and Bradley's catalogs don't state door thickness or face gauge.
+
+The edge is built, not cut. Metpar closes every edge of doors, panels and pilasters with a 20-gauge stainless interlocking molding and finishes the corners with preformed stainless reinforcements, welded internally. ASI welds the corners of panels, pilasters and doors to each other and to the adjacent face sheets. Bradley's Permaseal edge locks the two facing sheets together around the perimeter, with the finish wrapping around the edges and corners either welded smooth or joined with a corner clip.
+
 ![Cross-section of a stainless steel partition door edge: honeycomb core, stainless faces, edge](/images/diagrams/material-section-stainless-steel.svg)
 
 1. **Core:** honeycomb.
 2. **Faces:** Type 304 stainless steel, in a brushed or textured finish.
-3. **Edge:** where the stainless faces close around the core.
+3. **Edge:** a formed edge around the perimeter, where the stainless faces are locked or welded together around the core.
 
 Hardware: ASI uses Type 304 stainless for its leveling shoes. Bobrick's hardware is 18-8 Type-304 stainless with a satin finish, and its pilaster shoe is 4" high.
 
 ## Fire rating
 
-Bobrick lists a Class A rating among stainless steel's strengths. Class A means a flame spread index of 25 or less under ASTM E84. Ratings are published per product line, so ask for the test data for the brand you specify. Stainless is not covered by the NFPA 286 rule that applies to [HDPE](/partitions/solid-plastic-hdpe).
+Bobrick lists a Class A rating among stainless steel's strengths. Class A means a flame spread index of 25 or less under ASTM E84. ASI's material selection guide also lists Class A for its stainless steel. We found no stated class for Bradley, Metpar or Hadrian stainless. Ratings are published per product line, so ask for the test data for the brand you specify. Stainless is not covered by the NFPA 286 rule that applies to [HDPE](/partitions/solid-plastic-hdpe).
 
 ## Warranty differs by brand
 
-We have no manufacturer warranty document for stainless steel in hand. The current page's "5 Years" can't be traced to a brand, so it is gone. Your quote will name the brand and the warranty length for that line, and you should read the warranty text before you specify.
+There is no single stainless steel warranty. The lengths below come from manufacturer documents; the full coverage text is only partly available.
+
+- **ASI Global:** 5 years on stainless steel, per the ASI catalog, which refers to the full warranty on ASI's website. We couldn't open that text, so we can't state ASI's coverage terms. This is where the current page's "5 Years" appears to come from.
+- **Bradley:** 15 years "against rust-out" on its stainless line, 5 years on chrome plated Zamac hardware and a lifetime warranty on stainless steel hardware (Bradley partitions brochure, 2025).
+- **Metpar:** 6 years for stainless steel, from its master specification, which describes the warranty as a manufacturer's standard form "to repair or replace toilet compartment components (panels, doors, pilasters, and hardware) against defects in material and workmanship". The specification is a template, so confirm the figure against Metpar's warranty document.
+- **Hadrian:** no published figure found.
+
+Your quote will name the brand and the warranty length for that line, and you should read the warranty text before you specify.
 
 ## Moisture, vandal resistance and cleaning
 
-- **Corrosion, with a limit.** Stainless resists corrosion, but it is not rust-proof everywhere. Austenitic stainless (Types 304 and 316) has failed by stress-corrosion cracking in indoor swimming pool air, and unwashed surfaces stain, according to the Australian Stainless Steel Development Association and the Nickel Institute. For a pool hall, choose [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe), or ask the manufacturer which grade it recommends. Away from the pool hall, with regular washdowns, stainless is a fit.
+- **Corrosion, with a limit.** Stainless resists corrosion, but it is not rust-proof everywhere. The Australian Stainless Steel Development Association (ASSDA) reports that Type 304 and 316 rods, bolts and wires under tension cracked in the unwashed, humid air above indoor chlorinated pools (stress-corrosion cracking), and says the problem hasn't been found in washed components such as doors and rails. A partition is mostly washed sheet, but ceiling-hung stalls hang from stressed rods and bolts. For a pool hall, choose [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe), or ask the manufacturer which grade it recommends for the hangers and fasteners and how often they should be washed. Elsewhere, with regular washdowns, stainless is a fit. ASI rates the wet-area suitability of its stainless steel Low.
 - **Dents and scratches.** Bobrick notes stainless can still dent and scratch, and in its comparison it is the most expensive of the materials. Textured finishes add vandal resistance (ASI).
 - **Cleaning.** Follow the manufacturer's care instructions. We don't hold a manufacturer cleaning specification.
 
@@ -58,41 +69,44 @@ Our quotes cover panels, doors, pilasters, headrails, hinges, slide latches, kee
 ## FAQ
 
 ### What are stainless steel bathroom partitions made of?
-Type 304 stainless steel faces over a honeycomb core (ASI, Bobrick).
+Type 304 stainless steel faces over a honeycomb core (ASI, Metpar).
 
 ### Will stainless steel partitions rust?
-They resist corrosion, but not in every setting. Indoor pool air has caused stress-corrosion cracking in Types 304 and 316, and unwashed surfaces stain. Keep stainless away from the pool hall or choose another material.
+They resist corrosion, but not in every setting. ASSDA reports stress-corrosion cracking of Type 304 and 316 rods, bolts and wires in the unwashed air above indoor chlorinated pools. Ask the manufacturer before using stainless in a pool hall, or choose another material.
 
 ### What is the warranty on stainless partitions?
-It depends on the brand and line. We confirm the length and coverage for your brand at quote time.
+It depends on the brand and line. ASI lists 5 years, Bradley 15 years against rust-out and Metpar's specification 6 years. We confirm the length and coverage for your brand at quote time.
 
 ### Are stainless partitions fire rated?
-Bobrick lists a Class A rating for stainless steel. Ask for test data for your line.
+Bobrick lists a Class A rating for stainless steel and ASI lists Class A for its line. Ask for test data for your line.
 
 ### What finishes are available?
-ASI mentions textured finishes and Bradley offers satin brushed and a textured pattern. Available finishes vary by brand.
+ASI offers #4 satin as standard with diamond and leather grain optional. Bradley offers satin brushed and a textured pattern (5WL). Metpar lists #4, 2B leather-grain and 5SM diamond. Hadrian lists #4 brushed, embossed or hybrid. Available finishes vary by brand.
 
 ## Sources
 
-- [Bobrick CEU, Specifying Code-Compliant Toilet Partitions](https://www.bobrick.com/wp-content/uploads/Bobrick_Toilet-Partitions_CEU.pdf): stainless strengths, weaknesses, Class A. Checked 2026-10-26.
-- [ASI Global Partitions catalog](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf): Type 304, honeycomb, textured finish. Checked 2026-10-26.
-- [ASI Global replacement hardware](https://asi-globalpartitions.com/replacement-hardware/): 1-1/4" headrail for stainless. Checked 2026-10-26.
-- [ASI Global construction features](https://asi-globalpartitions.com/construction-features/): Type 304 shoe. Checked 2026-10-26.
-- [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): stainless finishes. Checked 2026-10-26.
-- [Bobrick 1080 Series technical data sheet](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): Type-304 satin hardware, shoe. Checked 2026-10-26.
-- [ASSDA, Stainless steel for indoor swimming pools](https://www.assda.asn.au/blog/353-stainless-steel-for-indoor-swimming-pools). Checked 2026-10-26.
-- [Nickel Institute, ambient temperature stress corrosion cracking in swimming pools](https://www.nickelinstitute.org/media/8daa77b1620dde6/14015_ambient_temperaturestress_corrosioncrackingofausteniticstainlesssteelinswimmingpools.pdf). Checked 2026-10-26.
-- [ASI Accurate stainless (Sweets)](https://sweets.construction.com/manufacturer/asi-accurate-partitions-nst873/products/stainless-steel-toilet-partitions-nst708352-p), [Hadrian headrail braced stainless](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/headrail-braced-stainless-steel-toilet-partitions-nst865773-p), [Hadrian ceiling hung stainless](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/ceiling-hung-stainless-steel-toilet-partitions-nst865777-p), [Hadrian floor to ceiling stainless](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-stainless-steel-toilet-partitions-nst865781-p): mounting. Checked 2026-10-26.
+- [Bobrick CEU, Specifying Code-Compliant Toilet Partitions](https://www.bobrick.com/wp-content/uploads/Bobrick_Toilet-Partitions_CEU.pdf): stainless strengths, weaknesses, Class A. Checked 2026-10-27.
+- [ASI Global Partitions catalog](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf): Type 304, honeycomb, textured finish, finishes, Class A, 5-year warranty, wet-area suitability (material selection guide). Checked 2026-10-27.
+- [ASI Global replacement hardware](https://asi-globalpartitions.com/replacement-hardware/): 1-1/4" headrail for stainless. Checked 2026-10-27.
+- [ASI Global construction features](https://asi-globalpartitions.com/construction-features/): Type 304 shoe, welded corners. Checked 2026-10-27.
+- [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): stainless finishes, Permaseal edge, 15-year warranty against rust-out, hardware warranties, Series 600 ceiling hung. Checked 2026-10-27.
+- [Metpar stainless steel](https://metpar.com/toilet-partitions/stainless-steel/): 1" doors and panels, 1-1/4" pilasters, 20-gauge stainless edge molding, paper honeycomb core. Checked 2026-10-27.
+- [Metpar stainless steel floor mounted standard master specification](https://metpar.com/wp-content/uploads/2021/05/Stainless-Steel-Floor-Mounted-Standard-Master-Spec.docx): 22-gauge faces (doors, panels), 20-gauge pilasters, finishes, 6-year warranty. Checked 2026-10-27.
+- [Bobrick 1080 Series technical data sheet](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): Type-304 satin hardware, shoe. Checked 2026-10-27.
+- [ASSDA, Stainless steel for indoor swimming pools](https://www.assda.asn.au/blog/353-stainless-steel-for-indoor-swimming-pools): stress-corrosion cracking of 304/316 rods, bolts and wires in unwashed pool air; not a problem found in washed components. Checked 2026-10-27.
+- [Nickel Institute, ambient temperature stress corrosion cracking in swimming pools](https://www.nickelinstitute.org/media/8daa77b1620dde6/14015_ambient_temperaturestress_corrosioncrackingofausteniticstainlesssteelinswimmingpools.pdf): could not be opened on 2026-10-27 (HTTP 403, bot check page). Not relied on.
+- [ASI Accurate stainless (Sweets)](https://sweets.construction.com/manufacturer/asi-accurate-partitions-nst873/products/stainless-steel-toilet-partitions-nst708352-p), [Hadrian headrail braced stainless](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/headrail-braced-stainless-steel-toilet-partitions-nst865773-p), [Hadrian ceiling hung stainless](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/ceiling-hung-stainless-steel-toilet-partitions-nst865777-p), [Hadrian floor to ceiling stainless](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-stainless-steel-toilet-partitions-nst865781-p): mounting, Hadrian finishes. Checked 2026-10-27.
 - Hardware included with a quote: current site, /partitions. Checked 2026-10-26.
 
 <!-- For Marc -->
 ## Corrections to the current page
 
 - "Will not rust, even in coastal or pool environments" and "Won't rust even in coastal, pool, or high-humidity" (industry-check G6): contradict ASSDA and the Nickel Institute. Replaced with the pool-air caution.
-- "22-gauge type 304": gauge is not in the sources held (the 22-ga figure in Bobrick's sheet is for a shoe). Removed.
-- "Warranty 5 Years" and "Backed against corrosion, delamination...": unsourced. Removed.
+- "22-gauge type 304": 22 gauge is Metpar's face sheet gauge for doors and panels (checked 2026-10-27), so it is stated for Metpar only. Other brands' gauges aren't published in the documents we could open.
+- "Warranty 5 Years": it is ASI's figure for stainless (ASI catalog, checked 2026-10-27), so it is only right for ASI. Bradley lists 15 years against rust-out and Metpar's specification 6. "Backed against corrosion, delamination...": unsourced. Removed.
+- Pool caution tightened 2026-10-27: ASSDA's cracking reports concern tensioned rods, bolts and wires in unwashed areas, and ASSDA says washed components such as doors and rails haven't shown the problem. The page no longer says stainless partitions are unfit near pools; it flags the hangers and fasteners and defers to the manufacturer. The Nickel Institute source can't be opened, so only ASSDA backs this.
 - "Lead Time 15–25 business days": removed (see below).
-- "Panel Thickness 1"", "5SM diamond emboss", "leathergrain": not confirmed in the sources held. Removed or moved to verify.
+- "Panel Thickness 1"", "5SM diamond emboss", "leathergrain": confirmed 2026-10-27 for Metpar (1" doors and panels; #4, 2B leather-grain and 5SM diamond finishes) and ASI (#4 satin, diamond, leather grain). Now on the page by brand, not as a general claim.
 - "Hygienic... the standard for healthcare and food-service": unsourced. Removed.
 - "Honeycomb core absorbs impact while the steel skin resists denting": Bobrick says stainless can dent. Removed.
 - "Available in all four mounting styles": kept, now sourced per style.
@@ -102,12 +116,11 @@ ASI mentions textured finishes and Bradley offers satin brushed and a textured p
 
 | Claim | Where it's from | Source to check |
 |---|---|---|
-| Face gauge (22 ga) and door thickness (1") | Current page | ASI, Bradley, Bobrick, Hadrian stainless data sheets |
-| Edge construction | Not in repo | Same |
-| Finish names: #4 satin, 5SM diamond, leathergrain | Current page | Brand finish charts |
-| Warranty length/coverage by brand (5 years on current page) | Current page | Each manufacturer warranty |
-| Brand-specific fire class | Bobrick general statement only | Spec sheets |
-| Lead time 15–25 business days | Current page | Confirm with Abe |
+| Face gauge and door thickness for ASI, Bradley, Bobrick, Hadrian stainless | Current page | Data sheets (checked 2026-10-27: not found in ASI's catalog, Bradley's brochure or the Hadrian listings; Metpar's 22 gauge and 1" are now on the page) |
+| ASI and Hadrian warranty coverage wording; Hadrian length | ASI length from catalog | Each manufacturer warranty (checked 2026-10-27: not found; ASI's warranty page has no text, hadrian-inc.com returned 403) |
+| Bradley's warranty coverage text beyond the brochure line | Bradley brochure, 2025 | Bradley warranty document (checked 2026-10-27: not found; bradleycorp.com returned 403) |
+| Brand-specific fire class for Bradley, Metpar, Hadrian stainless | Bobrick general statement and ASI | Spec sheets (checked 2026-10-27: not found in the Bradley brochure, Metpar page or Hadrian listing) |
+| Lead time 15–25 business days | Current page | Confirm with Abe (checked 2026-10-27: not a manufacturer question) |
 
 ## Implementation notes
 

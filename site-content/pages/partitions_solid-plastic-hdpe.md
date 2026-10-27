@@ -5,7 +5,7 @@ meta: HDPE bathroom partitions explained: 1" solid plastic build, NFPA 286 fire 
 h1: HDPE Solid Plastic Bathroom Partitions
 primary_keyword: hdpe bathroom partitions (volume not in repo)
 secondary_keywords: [solid plastic toilet partitions, hdpe toilet partitions, hdpe vs phenolic toilet partitions]
-words: 1,150
+words: 1,350
 ---
 
 # HDPE Solid Plastic Bathroom Partitions
@@ -16,13 +16,13 @@ HDPE bathroom partitions are cut from one solid sheet of high-density polyethyle
 
 ## How HDPE partitions are built
 
-Scranton Products makes its Hiny Hiders partitions from 1-inch solid HDPE with the color running all the way through. Doors, panels and pilasters are 1" in Scranton's guide specification. ASI Global sizes its anti-grip headrail for solid plastic at 1", which matches a 1" pilaster.
+Scranton Products makes its Hiny Hiders partitions from 1-inch solid HDPE with the color running all the way through. Doors, panels and pilasters are 1" in Scranton's guide specification, with edges rounded to a 1/4" radius. The New York State master specification asks for HDPE not less than 1" thick with eased edges. Scranton also offers a shiplap cut edge that removes sightlines without extra hardware. ASI Global sizes its anti-grip headrail for solid plastic at 1", which matches a 1" pilaster. ASI's catalog and Hadrian's listing don't state a thickness.
 
 ![Cross-section of a solid plastic (HDPE) partition door edge: one homogeneous sheet](/images/diagrams/material-section-solid-plastic.svg)
 
 1. **Core:** none. The whole 1" thickness is one homogeneous HDPE sheet.
 2. **Faces:** the same HDPE with the color running through, so there is no separate finish layer.
-3. **Edge:** the same sheet, with no edge band.
+3. **Edge:** the same sheet, with no edge band, eased or rounded.
 
 Hinges, latches and brackets are usually aluminum or stainless. Scranton specifies 8-inch extruded aluminum wrap-around hinges and 3" molded HDPE or 20-gauge stainless pilaster sleeves for overhead-braced Hiny Hiders. See [hinges](/hardware/hinges) and [parts](/hardware/parts).
 
@@ -30,13 +30,22 @@ Hinges, latches and brackets are usually aluminum or stainless. Scranton specifi
 
 This is the point to get right. The International Building Code (Section 803.9 in the 2015 and 2018 editions) requires HDPE and polypropylene used as interior finish, which includes toilet partitions, to comply with Section 803.1.1, the NFPA 286 room-corner fire test. Other partition materials are normally tested to ASTM E84 and given a Class A, B or C. The requirement for HDPE dates from the 2009 IBC and IFC and the 2012 NFPA codes, according to Bobrick's code fact sheet.
 
-Not every HDPE color passes. Scranton's color visualizer states that its Standard Color Collection "does not meet NFPA 286 or ASTM E84". Scranton offers fire rating options on Hiny Hiders. In Bobrick's tests, untreated HDPE was unclassified under ASTM E84 because of smoke development.
+Not every HDPE color passes. Scranton's color visualizer states that its Standard Color Collection "does not meet NFPA 286 or ASTM E84", and that not all color and texture combinations are available in fire rated materials. Scranton offers fire rating options on Hiny Hiders. In Bobrick's tests, untreated HDPE was unclassified under ASTM E84 because of smoke development. The New York State master specification adds that HDPE complying with NFPA 286 is considered to meet a Class A classification under ASTM E84.
+
+Other brands: ASI says its solid plastic partitions have passed the NFPA 286 test, and its material selection guide lists NFPA 286 as the standard fire rating. Hadrian lists two options: certified Class B HDPE colors (flame spread index 26 to 75), and NFPA 286 colors at an extra cost, currently six colors, which may be slightly darker.
 
 What to do: specify the fire-rated version, ask for the test report for the exact color and thickness, and confirm the requirement with your local building official. Tell us at quote time that you need a fire-rated product.
 
 ## Warranty: Scranton's, not a generic one
 
-Scranton Products carries a 25-year limited warranty on Hiny Hiders. Scranton states it covers "breakage, corrosion and delamination under normal conditions". Warranties differ by manufacturer, and we won't quote a 25-year figure for another brand's HDPE. Read the warranty document for the line you choose, including exclusions.
+Scranton Products carries a 25-year limited warranty on Hiny Hiders (the same term it gives Aria and Eclipse partitions). Two Scranton documents word the coverage differently:
+
+- Scranton's guide specification asks for a warranty "against breakage, corrosion, and delamination under normal conditions".
+- Scranton's Limited Warranty document covers defects in material and workmanship that occur under normal use and "result in breakage or delamination". It doesn't list corrosion.
+
+The Limited Warranty is given to a business or other commercial purchaser. It applies only if the partitions are installed to Scranton's written instructions, only to the original installation, and not to damage from vandalism, misuse, neglect, extraordinary wear and tear, or movement of the building. Scranton repairs, replaces or refunds at its choice and doesn't pay labor or removal costs.
+
+We found no 25-year figure for another brand's HDPE, so we won't quote one. Read the warranty document for the line you choose, including exclusions.
 
 ## Moisture, vandal resistance and cleaning
 
@@ -70,10 +79,10 @@ Our quotes cover panels, doors, pilasters, headrails, hinges, slide latches, kee
 Not by default. The IBC requires HDPE partitions to pass the NFPA 286 room-corner test, and Scranton states its Standard Color Collection does not meet NFPA 286 or ASTM E84. Ask for the fire-rated version and its test report.
 
 ### What is the warranty on HDPE partitions?
-Scranton Products gives a 25-year limited warranty on Hiny Hiders, covering breakage, corrosion and delamination under normal conditions. Other brands differ.
+Scranton Products gives a 25-year limited warranty on Hiny Hiders. Its warranty document covers defects in material and workmanship that result in breakage or delamination under normal use, and excludes vandalism, misuse and damage from the building. Other brands differ.
 
 ### How thick are HDPE partitions?
-Scranton's panels, doors and pilasters are 1" solid HDPE.
+Scranton's panels, doors and pilasters are 1" solid HDPE, with edges rounded to a 1/4" radius.
 
 ### Can graffiti be removed from HDPE?
 Scranton says graffiti wipes off with a common, nonabrasive cleaner. Bobrick warns that xylene-based markers can ghost into HDPE.
@@ -86,18 +95,18 @@ No, there is no metal in the panel. ASI says solid plastic "will not easily dent
 
 ## Sources
 
-- [Seattle Building Code 2018, Chapter 8](https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2018SBCChapter8.pdf): IBC 803.9 text on HDPE/PP and NFPA 286. Checked 2026-10-26.
-- [Bobrick fact sheet on ICC and NFPA model code revisions, Feb 2012](https://www.bobrick.com/wp-content/uploads/FACT_SHEET_ICC_IFC_AND_NFPA_MODEL_CODE_REVISIONS-1.pdf): dates of the NFPA 286 requirement. Checked 2026-10-26.
-- [Scranton Products color visualizers](https://www.scrantonproducts.com/marketing/product-color-visualizers/): NFPA 286 footnote. Checked 2026-10-26.
-- [Scranton Products Hiny Hiders](https://www.scrantonproducts.com/products/hiny-hiders-partitions/): 25-year limited warranty, graffiti, mounting configurations, fire rating options. Checked 2026-10-26.
-- [Scranton Products warranty](https://www.scrantonproducts.com/wp-content/uploads/2022/07/Scranton-Products-Warranty.pdf): breakage, corrosion and delamination wording. Checked 2026-10-26.
-- [Scranton Hiny Hiders general specifications](http://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): 1" HDPE, 8" wrap-around hinges, sleeves. Checked 2026-10-26.
-- [Scranton Products, HDPE vs other materials](https://www.scrantonproducts.com/hdpe-vs-other-materials/): 1-inch solid HDPE. Checked 2026-10-26.
-- [Bobrick CEU, Specifying Code-Compliant Toilet Partitions](https://www.bobrick.com/wp-content/uploads/Bobrick_Toilet-Partitions_CEU.pdf): untreated HDPE unclassified under E84; HDPE pros and cons. Checked 2026-10-26.
-- [ASI Global Partitions catalog](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf): moisture, mildew and graffiti wording. Checked 2026-10-26.
-- [ASI Global replacement hardware](https://asi-globalpartitions.com/replacement-hardware/): 1" headrail for solid plastic. Checked 2026-10-26.
-- [New York State OGS MasterSpec 102113.19](https://online2.ogs.ny.gov/dnc/masterspec24/docs/Division10Specialties/102113.19PlasticToiletCompartments.docx): mounting notes for solid plastic. Checked 2026-10-26.
-- [Hadrian floor to ceiling solid plastic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-solid-plastic-toilet-partitions-nst865788-p): 55" doors at 14". Checked 2026-10-26.
+- [Seattle Building Code 2018, Chapter 8](https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2018SBCChapter8.pdf): IBC 803.9 text on HDPE/PP and NFPA 286. Checked 2026-10-27.
+- [Bobrick fact sheet on ICC and NFPA model code revisions, Feb 2012](https://www.bobrick.com/wp-content/uploads/FACT_SHEET_ICC_IFC_AND_NFPA_MODEL_CODE_REVISIONS-1.pdf): dates of the NFPA 286 requirement. Checked 2026-10-27.
+- [Scranton Products color visualizers](https://www.scrantonproducts.com/marketing/product-color-visualizers/): NFPA 286 footnote. Checked 2026-10-27.
+- [Scranton Products Hiny Hiders](https://www.scrantonproducts.com/products/hiny-hiders-partitions/): 25-year warranty, graffiti, mounting configurations, fire rating options, shiplap cut edge. Checked 2026-10-27.
+- [Scranton Products Limited Warranty](https://www.scrantonproducts.com/wp-content/uploads/2022/07/Scranton-Products-Warranty.pdf): 25 years on Hiny Hiders, "breakage or delamination" wording, conditions and exclusions. Checked 2026-10-27.
+- [Scranton Hiny Hiders general specifications](http://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): 1" HDPE with 1/4" radius edges, 8" wrap-around hinges, sleeves, warranty wording. Checked 2026-10-27.
+- [Scranton Products, HDPE vs other materials](https://www.scrantonproducts.com/hdpe-vs-other-materials/): 1-inch solid HDPE. Checked 2026-10-27.
+- [Bobrick CEU, Specifying Code-Compliant Toilet Partitions](https://www.bobrick.com/wp-content/uploads/Bobrick_Toilet-Partitions_CEU.pdf): untreated HDPE unclassified under E84; HDPE pros and cons. Checked 2026-10-27.
+- [ASI Global Partitions catalog](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf): moisture, mildew and graffiti wording, passed NFPA 286, 25-year warranty, 20 standard colors. Checked 2026-10-27.
+- [ASI Global replacement hardware](https://asi-globalpartitions.com/replacement-hardware/): 1" headrail for solid plastic. Checked 2026-10-27.
+- [New York State OGS MasterSpec 102113.19](https://online2.ogs.ny.gov/dnc/masterspec24/docs/Division10Specialties/102113.19PlasticToiletCompartments.docx): mounting notes, 1" minimum with eased edges, NFPA 286 treated as Class A. Checked 2026-10-27.
+- [Hadrian floor to ceiling solid plastic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-solid-plastic-toilet-partitions-nst865788-p): 55" doors at 14", Class B HDPE and NFPA 286 colors. Checked 2026-10-27.
 - Hardware included with a quote: current site, /partitions. Checked 2026-10-26.
 
 <!-- For Marc -->
@@ -108,7 +117,8 @@ No, there is no metal in the panel. ASI says solid plastic "will not easily dent
 - "17 standard solid colors" vs 20 listed: count removed.
 - "Contains 25%+ post-consumer recycled HDPE" and "contributes to LEED credits": unsourced, removed.
 - "deep marks sand out" / "scratches sand out": removed; no manufacturer guidance found on sanding HDPE (industry-check S6). Graffiti wording now Scranton's.
-- "25-year manufacturer warranty" / "Warranty 25 Years" stated for all HDPE: now Scranton Hiny Hiders only, with coverage wording; "Backed against rust, corrosion, and delamination even in pool and locker rooms" replaced by Scranton's "breakage, corrosion and delamination under normal conditions".
+- "25-year manufacturer warranty" / "Warranty 25 Years" stated for all HDPE: now Scranton Hiny Hiders (and ASI's catalog figure), with coverage wording; "Backed against rust, corrosion, and delamination even in pool and locker rooms" replaced by Scranton's own wording.
+- Our first draft quoted Scranton's coverage as "breakage, corrosion and delamination under normal conditions". That is from Scranton's guide specification, not its Limited Warranty document, which says defects that "result in breakage or delamination" and lists no corrosion. The page now gives both and says which is which.
 - "the 25-year warranty typically pays for itself versus replacing powder coated steel two or three times": removed, unsupported.
 - "Will not rust, even in chlorinated pool environments": replaced with ASI's wording.
 - "Lead Time 10–15 business days": removed (see below).
@@ -120,13 +130,11 @@ No, there is no metal in the panel. ASI says solid plastic "will not easily dent
 
 | Claim | Where it's from | Source to check |
 |---|---|---|
-| Edge profile of HDPE panels | Not in repo | Scranton Hiny Hiders spec; ASI solid plastic data |
-| Which Hiny Hiders colors/options are NFPA 286 fire rated, and the rated thickness | Scranton "fire rating options" only | Scranton Hiny Hiders page and test reports |
-| ASI and Hadrian HDPE: thickness, warranty length, fire class | Not in repo | ASI catalog; Hadrian listing |
-| Full Scranton warranty exclusions | Only coverage phrase held | Scranton warranty PDF |
-| Color list (20 colors) | Current page | Scranton color chart |
-| Recycled content % and LEED | Current page | Scranton/ASI sustainability pages |
-| Lead time 10–15 business days | Current page | Confirm with Abe |
+| Which Hiny Hiders colors/options are NFPA 286 fire rated, and the rated thickness | Scranton "fire rating options" only | Scranton Hiny Hiders page and test reports (checked 2026-10-27: not found; the page and color page say only that fire rating options exist and the Standard Color Collection isn't rated) |
+| ASI and Hadrian HDPE: thickness, warranty coverage wording | ASI catalog gives 25 years and NFPA 286 | ASI warranty document; Hadrian listing (checked 2026-10-27: no thickness in the ASI catalog or Hadrian listing; ASI's warranty page has no text; hadrian-inc.com returned 403) |
+| Color list (20 colors) | Current page | Scranton color chart (checked 2026-10-27: ASI's catalog confirms 20 standard HDPE colors for ASI; Scranton's color visualizer is interactive and gave no list) |
+| Recycled content % and LEED | Current page | Scranton/ASI sustainability pages (checked 2026-10-27: ASI's catalog lists 0% post-consumer and 33% post-industrial recycled content for solid plastic, not 25%+; Scranton's spec leaves the minimum as a bracketed 25% placeholder) |
+| Lead time 10–15 business days | Current page | Confirm with Abe (checked 2026-10-27: not a manufacturer question) |
 
 ## Implementation notes
 

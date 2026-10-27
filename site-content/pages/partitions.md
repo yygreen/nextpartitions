@@ -5,7 +5,7 @@ meta: Compare commercial bathroom partitions: powder coated steel, stainless, pl
 h1: Commercial Bathroom Partitions
 primary_keyword: commercial bathroom partitions (volume not in repo)
 secondary_keywords: [types of bathroom partitions, toilet partition types, bathroom partition materials]
-words: 900
+words: 1,050
 ---
 
 # Commercial Bathroom Partitions
@@ -26,11 +26,13 @@ The numbered parts are headrail, pilaster, door, hinges, latch and keeper, and p
 
 | Material | Construction | Published thicknesses | Fire classification (as published) |
 |---|---|---|---|
-| [Powder coated steel](/partitions/powder-coated-steel) | Galvannealed steel faces, honeycomb core, powder coat | Metpar: 1" doors and panels, 1-1/4" pilasters | Class A for painted metal (Bobrick) |
-| [Stainless steel](/partitions/stainless-steel) | Type 304 stainless faces, honeycomb core (ASI) | ASI headrail sized for 1-1/4" pilasters; door thickness to confirm | Class A for stainless (Bobrick) |
-| [Plastic laminate](/partitions/plastic-laminate) | High-pressure laminate on a particleboard core | Bobrick: 1" doors, stiles, panels | Bobrick HPL: Class B (flame spread 60) |
-| [Phenolic](/partitions/phenolic) | Fused resin-soaked kraft paper; black core or color-through | Bobrick, Bradley: 1/2" panels, 3/4" doors and pilasters | Bobrick 1080 Class B, 1180 Class A; ASI black core Class B, Color-Thru Class A |
+| [Powder coated steel](/partitions/powder-coated-steel) | Galvannealed steel faces, honeycomb core, powder coat | Metpar: 1" doors and panels, 1-1/4" pilasters | Class A (Bobrick for painted metal; ASI; Metpar) |
+| [Stainless steel](/partitions/stainless-steel) | Type 304 stainless faces, honeycomb core (ASI) | Metpar: 1" doors and panels, 1-1/4" pilasters | Class A (Bobrick for stainless; ASI) |
+| [Plastic laminate](/partitions/plastic-laminate) | High-pressure laminate on a particleboard core | Bobrick: 1" doors, stiles, panels | Bobrick HPL: Class B (flame spread 60); ASI Moisture Guard: Class C |
+| [Phenolic](/partitions/phenolic) | Fused resin-soaked kraft paper; black core or color-through | Bobrick, Bradley: 1/2" panels, 3/4" doors and pilasters | Bobrick 1080 Class B, 1180 Class A; ASI black core Class B (A optional), Color-Thru Class A; Metpar black core Class B |
 | [Solid plastic (HDPE)](/partitions/solid-plastic-hdpe) | One homogeneous HDPE sheet | Scranton: 1" doors, panels, pilasters | Must pass NFPA 286 (IBC 803.9); Scranton's Standard Color Collection does not meet NFPA 286 or ASTM E84 |
+
+Edges differ too. Phenolic edges are machined from the solid sheet and are black on black core. HDPE edges are the same solid sheet, rounded or eased. Plastic laminate edges are laminate or a fused band over the core. Steel and stainless edges are a formed metal molding or locked sheet around the honeycomb, with welded or reinforced corners.
 
 Class A is a flame spread index of 25 or less under ASTM E84, Class B is 26 to 75, and Class C is 76 to 200 (Bobrick). A rating belongs to a product line, not to a material name. Ask for the test data on the line you specify, and confirm the requirement with your architect or local code official.
 
@@ -40,18 +42,24 @@ There is no standard partition warranty. What we can state from manufacturer doc
 
 | Brand and line | Warranty |
 |---|---|
-| Scranton Products, Hiny Hiders (HDPE) | 25-year limited; covers "breakage, corrosion and delamination under normal conditions" |
+| Scranton Products, Hiny Hiders (HDPE) | 25-year limited; covers defects in material and workmanship that result in breakage or delamination under normal use; excludes vandalism and misuse |
 | ASI Global, phenolic | 25 years (catalog) |
 | ASI Global, powder coated | 3 years (catalog) |
-| Bobrick, compact grade laminate (phenolic) | 25 years |
+| ASI Global, stainless steel | 5 years (catalog) |
+| ASI Global, Moisture Guard plastic laminate | 5 years; standard laminate 2 years (catalog) |
+| Bobrick, DuraLineSeries compact grade laminate (phenolic) | 25 years; panels, doors and stiles against breakage, corrosion, delaminating and defects in workmanship; vandalism excluded |
+| Bobrick, DesignerSeries and MetroSeries HPL | 2 years; hosing down voids it |
+| Bradley, PH400 phenolic | 3 years against delamination and discoloration (brochure) |
+| Bradley, stainless steel | 15 years against rust-out (brochure) |
+| Metpar, powder coated (Powder Shield) / stainless | 4 years / 6 years (master specifications) |
 
-For plastic laminate, stainless steel and other brands, we don't state a figure until we've confirmed it. Your quote will name the brand and its warranty. Read the full warranty for exclusions and conditions.
+ASI's catalog points to a full warranty on its website that we couldn't open, and we haven't found Hadrian's or Ammco's terms, so we state no coverage wording for them. Your quote will name the brand and its warranty. Read the full warranty for exclusions and conditions.
 
 ## Moisture and cleaning
 
 - **Wet rooms (showers, pools, locker rooms):** [phenolic](/partitions/phenolic) and [HDPE](/partitions/solid-plastic-hdpe). ASI says its black core phenolic holds up under moisture from showers, pools and saunas.
 - **Plastic laminate:** dry rooms only. Bobrick notes the particleboard core may swell with excessive moisture.
-- **Steel:** can rust and dent (Bobrick). Stainless resists corrosion but can be attacked by indoor pool air, so keep it out of pool halls.
+- **Steel:** can rust and dent (Bobrick). Stainless resists corrosion, but tensioned stainless rods and bolts have cracked in unwashed indoor pool air (ASSDA), so ask the manufacturer before using it in a pool hall.
 - **Vandal resistance:** Bobrick lists graffiti resistance for laminate and phenolic; Scranton and ASI do the same for HDPE, and Bobrick cautions that xylene-based markers can "ghost" into HDPE.
 
 ## Which material fits where
@@ -87,21 +95,24 @@ Phenolic or HDPE. Plastic laminate's core can swell and painted steel can rust.
 No. HDPE must pass NFPA 286; others are tested to ASTM E84 and classed A, B or C by product line.
 
 ### What warranty comes with partitions?
-It depends on the brand and line. Scranton Hiny Hiders carries 25 years; ASI lists 25 years for phenolic and 3 for powder coated.
+It depends on the brand and line. Scranton Hiny Hiders carries 25 years, Bobrick and ASI list 25 for phenolic, ASI lists 3 for powder coated and 5 for stainless, and Bobrick's HPL laminate carries 2.
 
 ## Sources
 
-- [Bobrick CEU, Specifying Code-Compliant Toilet Partitions](https://www.bobrick.com/wp-content/uploads/Bobrick_Toilet-Partitions_CEU.pdf). Checked 2026-10-26.
-- [Bobrick CEU, Toilet Partitions: Commercial (2018)](https://www.bobrick.com/wp-content/uploads/SCC-Toilet-Partitions_Commercial.pdf): HPL Class B. Checked 2026-10-26.
-- [Bobrick 1080 Series data sheet](https://www.bobrick.com/wp-content/uploads/1080_td.pdf); [1040 Series](https://www.bobrick.com/wp-content/uploads/1040_td.pdf). Checked 2026-10-26.
-- [ASI Global Partitions catalog](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf). Checked 2026-10-26.
-- [ASI replacement hardware](https://asi-globalpartitions.com/replacement-hardware/). Checked 2026-10-26.
-- [Scranton Hiny Hiders](https://www.scrantonproducts.com/products/hiny-hiders-partitions/); [Scranton warranty](https://www.scrantonproducts.com/wp-content/uploads/2022/07/Scranton-Products-Warranty.pdf); [color visualizers](https://www.scrantonproducts.com/marketing/product-color-visualizers/). Checked 2026-10-26.
-- [Metpar powder coated](https://metpar.com/toilet-partitions/powder-coated/). Checked 2026-10-26.
-- [Bradley PH400 spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf). Checked 2026-10-26.
-- [Seattle Building Code 2018, ch. 8](https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2018SBCChapter8.pdf): IBC 803.9. Checked 2026-10-26.
-- [2010 ADA Standards](https://www.access-board.gov/ada/): 604.8.1.1, 604.8.1.2. Checked 2026-10-26.
-- [ASSDA](https://www.assda.asn.au/blog/353-stainless-steel-for-indoor-swimming-pools). Checked 2026-10-26.
+- [Bobrick CEU, Specifying Code-Compliant Toilet Partitions](https://www.bobrick.com/wp-content/uploads/Bobrick_Toilet-Partitions_CEU.pdf). Checked 2026-10-27.
+- [Bobrick CEU, Toilet Partitions: Commercial (2018)](https://www.bobrick.com/wp-content/uploads/SCC-Toilet-Partitions_Commercial.pdf): HPL Class B. Checked 2026-10-27.
+- [Bobrick Product Warranties and Limitations](https://www.bobrick.com/wp-content/uploads/Product-Warranties.pdf): Bobrick warranty lengths (dated 08/12/26). Checked 2026-10-27.
+- [Bobrick 1080 Series data sheet](https://www.bobrick.com/wp-content/uploads/1080_td.pdf); [1040 Series](https://www.bobrick.com/wp-content/uploads/1040_td.pdf). Checked 2026-10-27.
+- [ASI Global Partitions catalog](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf). Checked 2026-10-27.
+- [ASI replacement hardware](https://asi-globalpartitions.com/replacement-hardware/). Checked 2026-10-27.
+- [Scranton Hiny Hiders](https://www.scrantonproducts.com/products/hiny-hiders-partitions/); [Scranton Limited Warranty](https://www.scrantonproducts.com/wp-content/uploads/2022/07/Scranton-Products-Warranty.pdf); [color visualizers](https://www.scrantonproducts.com/marketing/product-color-visualizers/). Checked 2026-10-27.
+- [Metpar powder coated](https://metpar.com/toilet-partitions/powder-coated/). Checked 2026-10-27.
+- [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): Bradley warranties. Checked 2026-10-27.
+- [Metpar master specifications](https://metpar.com/tech-docs/): Powder Shield 4 years, stainless 6 years (Metpar powder coated and stainless master spec files). Checked 2026-10-27.
+- [Bradley PH400 spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf). Checked 2026-10-27.
+- [Seattle Building Code 2018, ch. 8](https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2018SBCChapter8.pdf): IBC 803.9. Checked 2026-10-27.
+- [2010 ADA Standards](https://www.access-board.gov/ada/): 604.8.1.1, 604.8.1.2. Checked 2026-10-27.
+- [ASSDA](https://www.assda.asn.au/blog/353-stainless-steel-for-indoor-swimming-pools). Checked 2026-10-27.
 
 <!-- For Marc -->
 ## Corrections to the current page
@@ -118,10 +129,10 @@ It depends on the brand and line. Scranton Hiny Hiders carries 25 years; ASI lis
 
 | Claim | Where it's from | Source to check |
 |---|---|---|
-| Brand warranties for Bobrick CGL (25) and ASI (25 / 3) coverage text | industry-check.md and blog note | Manufacturer warranty documents |
-| Stainless door thickness and warranty | Current page | Brand data sheets |
-| Lead times 5–10 days and 2–4 weeks | Current page | Confirm with Abe |
-| Material tile copy, "most popular and budget-friendly" | Current page | Dropped; Abe's price list |
+| Coverage text of the ASI warranties, Hadrian and Ammco warranty lengths | ASI lengths from the catalog | Manufacturer warranty documents (checked 2026-10-27: not found; ASI's warranty page has no text, hadrian-inc.com returned 403, no Ammco source fetched) |
+| Metpar's 4 and 6 year warranties as stated in its warranty document | Master specification templates | Metpar warranty document (checked 2026-10-27: not found; the Warranty link goes to Metpar's tech-docs index) |
+| Lead times 5–10 days and 2–4 weeks | Current page | Confirm with Abe (checked 2026-10-27: not a manufacturer question) |
+| Material tile copy, "most popular and budget-friendly" | Current page | Dropped; Abe's price list (checked 2026-10-27: not a source question) |
 
 ## Implementation notes
 
