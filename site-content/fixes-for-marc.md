@@ -65,4 +65,4 @@ The rewritten pages in `pages/` already use the promise.
 
 ## 8. A drawing in the page hero
 
-Each rebuilt page shows its main drawing on a white card beside the title in the dark hero (two columns from 900px, stacked under the button on a phone). The previews do this in `build/build.mjs` (`heroArt`): the page's first drawing, or a fitting one for pages without their own. Once Abe sends job photos, a real photo of a finished restroom can take the card's place on the pages where it fits better.
+Each rebuilt page shows its main drawing beside the title, drawn straight on the dark hero with no card: light lines, the orange subject kept, the building and product as faint tints (CSS overrides on the SVG colors) (two columns from 900px, stacked under the button on a phone). The previews do this in `build/build.mjs` (`heroArt`): the page's first drawing, or a fitting one for pages without their own. Once Abe sends job photos, a real photo of a finished restroom can take the drawing's place on the pages where it fits better.
