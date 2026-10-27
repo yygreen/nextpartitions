@@ -59,6 +59,8 @@ Short answers are fine: a sentence, a voice note or a quick call. Your answers g
 
 33. Brand spelling: the manufacturer's own site calls itself AAMCO (All American Metal Corp.); your site says Ammco, including the web address /brands/ammco. Which spelling should the pages use? (We'd keep the web address either way.)
 
+34. Bradley: their 2025 brochure lists phenolic and stainless partitions, but not powder coated steel or the Bradmar plastic line, which appear only in older installation guides. Can you still order those two from Bradley? If not, we take them off the pages.
+
 **Photos**
 32. Job photos you have the rights to use, especially straight-on shots of a whole restroom, a hinge, a latch and a ceiling-hung install. Real installs beat any drawing.
 

@@ -137,8 +137,8 @@ It depends on the material. Bobrick's plastic laminate doors, stiles and panels 
 - ASI Global Partitions catalog (powder coated, stainless, plastic laminate, black core and Color-Thru phenolic, solid plastic; construction features): https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf (checked 2026-10-26)
 - Scranton Products, HDPE vs other materials (core of each material; 1-inch solid HDPE): https://www.scrantonproducts.com/hdpe-vs-other-materials/ (checked 2026-10-26)
 - Scranton Products, Hiny Hiders partitions (HDPE; fire rating options; mounting configurations): https://www.scrantonproducts.com/products/hiny-hiders-partitions/ (checked 2026-10-26)
-- Bradley, Phenolic Floor-Mounted Overhead-Braced PH400 Series spec sheet (1/2" panels, 3/4" doors and pilasters): https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf (checked 2026-10-26)
-- Bradley Partitions brochure (stainless finishes): https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf (checked 2026-10-26)
+- Bradley, Phenolic Floor-Mounted Overhead-Braced PH400 Series spec sheet (1/2" panels, 3/4" doors and pilasters): https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf (checked 2026-10-27)
+- Bradley Partitions brochure (stainless finishes): https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf (checked 2026-10-27)
 - Hardware included with every quote: current site, /partitions ("What's included with every order") (checked 2026-10-26)
 
 <!-- For Marc -->

@@ -30,7 +30,7 @@ The numbered parts are headrail, pilaster, door, hinges, latch and keeper, and p
 | [Stainless steel](/partitions/stainless-steel) | Type 304 stainless faces, honeycomb core (ASI) | Metpar: 1" doors and panels, 1-1/4" pilasters | Class A (Bobrick for stainless; ASI) |
 | [Plastic laminate](/partitions/plastic-laminate) | High-pressure laminate on a particleboard core | Bobrick: 1" doors, stiles, panels | Bobrick HPL: Class B (flame spread 60); ASI Moisture Guard: Class C |
 | [Phenolic](/partitions/phenolic) | Fused resin-soaked kraft paper; black core or color-through | Bobrick, Bradley: 1/2" panels, 3/4" doors and pilasters | Bobrick 1080 Class B, 1180 Class A; ASI black core Class B (A optional), Color-Thru Class A; Metpar black core Class B |
-| [Solid plastic (HDPE)](/partitions/solid-plastic-hdpe) | One homogeneous HDPE sheet | Scranton: 1" doors, panels, pilasters | Must pass NFPA 286 (IBC 803.9); Scranton's Standard Color Collection does not meet NFPA 286 or ASTM E84 |
+| [Solid plastic (HDPE)](/partitions/solid-plastic-hdpe) | One homogeneous HDPE sheet | Scranton: 1" doors, panels, pilasters; Hadrian (guide specification): 1" | Must pass NFPA 286 (IBC 803.9); Scranton's Standard Color Collection does not meet NFPA 286 or ASTM E84 |
 
 Edges differ too. Phenolic edges are machined from the solid sheet and are black on black core. HDPE edges are the same solid sheet, rounded or eased. Plastic laminate edges are laminate or a fused band over the core. Steel and stainless edges are a formed metal molding or locked sheet around the honeycomb, with welded or reinforced corners.
 
@@ -49,15 +49,17 @@ There is no standard partition warranty. What we can state from manufacturer doc
 | ASI Global, Moisture Guard plastic laminate | 5 years; standard laminate 2 years (catalog) |
 | Bobrick, DuraLineSeries compact grade laminate (phenolic) | 25 years; panels, doors and stiles against breakage, corrosion, delaminating and defects in workmanship; vandalism excluded |
 | Bobrick, DesignerSeries and MetroSeries HPL | 2 years; hosing down voids it |
-| Bradley, PH400 phenolic | 3 years against delamination and discoloration (brochure) |
-| Bradley, stainless steel | 15 years against rust-out (brochure) |
+| Bradley, phenolic (Series 400 to 700) | 3 years against delamination and discoloration (brochure) |
+| Bradley, stainless steel | 15 years against rust-out (brochure, listed with its Permaseal edge) |
+| Bradley, hardware | Lifetime on stainless steel hardware for all materials; 5 years on chrome plated Zamac hardware (brochure) |
+| Hadrian, Standard Series solid plastic | 25 years against defects in materials and workmanship (guide specification) |
 | Ammco (All American Metal), powder coated / plastic laminate | 1 year each against defects in workmanship and construction; material only |
 | Ammco, stainless steel | 10 years against defects in workmanship and construction; material only |
 | Ammco, phenolic | 10 years against delaminating, corrosion or breakage; material only |
 | Ammco, solid plastic (HDPE) | 15 years against delaminating, corrosion or breakage; material only |
 | Metpar, powder coated (Powder Shield) / stainless | 4 years / 6 years (master specifications) |
 
-ASI's catalog points to a full warranty on its website that we couldn't open, and we haven't found Hadrian's terms, so we state no coverage wording for them. Ammco's warranties are for material only, with no credit for labor, apply when the partitions are properly maintained, and are voided by installation errors, vandalism or improper use or care. Your quote will name the brand and its warranty. Read the full warranty for exclusions and conditions.
+ASI's catalog points to a full warranty on its website that we couldn't open, and we haven't found Hadrian's coverage wording or its terms for metal and phenolic lines, so we state none for them. Ammco's warranties are for material only, with no credit for labor, apply when the partitions are properly maintained, and are voided by installation errors, vandalism or improper use or care. Your quote will name the brand and its warranty. Read the full warranty for exclusions and conditions.
 
 ## Moisture and cleaning
 
@@ -114,7 +116,8 @@ It depends on the brand and line. Scranton Hiny Hiders carries 25 years, Bobrick
 - Ammco (All American Metal) warranties: [powder coated](https://allamericanmetal.com/frontend/web/uploads/material/1580234797_POWDER-COATED-WARRANTY.pdf), [plastic laminate](https://allamericanmetal.com/frontend/web/uploads/material/1580234840_PLASTIC-LAMINATE-WARRANTY.pdf), [phenolic](https://allamericanmetal.com/frontend/web/uploads/material/1580234852_PHENOLIC-WARRANTY.pdf), [stainless steel](https://allamericanmetal.com/frontend/web/uploads/material/1580234814_STAINLESS-STEEL-WARRANTY.pdf), [solid plastic](https://allamericanmetal.com/frontend/web/uploads/material/1580234827_SOLID-PLASTIC-WARRANTY.pdf). Checked 2026-10-27.
 - [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): Bradley warranties. Checked 2026-10-27.
 - [Metpar master specifications](https://metpar.com/tech-docs/): Powder Shield 4 years, stainless 6 years (Metpar powder coated and stainless master spec files). Checked 2026-10-27.
-- [Bradley PH400 spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf). Checked 2026-10-27.
+- [Bradley PH400 spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): 1/2" panels, 3/4" doors and pilasters, black edges. Checked 2026-10-27.
+- Hadrian, Guide Specification 10 21 13.19, Plastic Toilet Compartments ([Zurn Elkay](https://www.worlddryer.com/content/dam/zurnv49/resources/specification/centralized-specs/documents/guide-specs/10-21-13.19-hadrian-plastic-toilet-compartments.docx)): 25-year warranty, 1" thickness. Checked 2026-10-27.
 - [Seattle Building Code 2018, ch. 8](https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2018SBCChapter8.pdf): IBC 803.9. Checked 2026-10-27.
 - [2010 ADA Standards](https://www.access-board.gov/ada/): 604.8.1.1, 604.8.1.2. Checked 2026-10-27.
 - [ASSDA](https://www.assda.asn.au/blog/353-stainless-steel-for-indoor-swimming-pools). Checked 2026-10-27.
@@ -134,7 +137,7 @@ It depends on the brand and line. Scranton Hiny Hiders carries 25 years, Bobrick
 
 | Claim | Where it's from | Source to check |
 |---|---|---|
-| Coverage text of the ASI warranties, Hadrian warranty lengths | ASI lengths from the catalog | Manufacturer warranty documents (checked 2026-10-27: not found; ASI's warranty page has no text, hadrian-inc.com returned 403) |
+| Coverage text of the ASI warranties; Hadrian warranty lengths for metal and phenolic lines | ASI lengths from the catalog | Manufacturer warranty documents (checked 2026-10-27: not found; ASI's warranty page has no text, hadrian-inc.com returned 403; Hadrian's guide specification gives 25 years for solid plastic only) |
 | Metpar's 4 and 6 year warranties as stated in its warranty document | Master specification templates | Metpar warranty document (checked 2026-10-27: not found; the Warranty link goes to Metpar's tech-docs index) |
 | Lead times 5–10 days and 2–4 weeks | Current page | Confirm with Abe (checked 2026-10-27: not a manufacturer question) |
 | Material tile copy, "most popular and budget-friendly" | Current page | Dropped; Abe's price list (checked 2026-10-27: not a source question) |

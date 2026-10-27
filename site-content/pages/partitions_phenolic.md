@@ -23,9 +23,9 @@ Two versions are common:
 - **Black core phenolic.** Decorative faces over a black core, so a cut edge is black. ASI says its black core phenolic "holds up even under severe moisture conditions from showers, pools, and saunas".
 - **Color-through phenolic.** The color runs through the core to match the surface. ASI sells this as Color-Thru.
 
-Phenolic parts are thinner than laminate or HDPE parts. Bobrick (1080 Series, DuraLineSeries), Bradley (PH400 Series) and Metpar (black core and color-through) all make panels 1/2" thick, with 3/4" doors and pilasters (Bobrick calls pilasters "stiles"). ASI sizes its anti-grip headrail for phenolic at 3/4", which matches a 3/4" pilaster. ASI's catalog and Hadrian's listings don't state a door thickness.
+Phenolic parts are thinner than laminate or HDPE parts. Bobrick (1080 Series, DuraLineSeries), Bradley (PH400 Series, Series 400 to 700) and Metpar (black core and color-through) all make panels 1/2" thick, with 3/4" doors and pilasters (Bobrick calls pilasters "stiles"). Bradley builds its phenolic on a solid black core with 20% pre-consumer recycled content, in nine colors, and lists door and panel heights of 58" (12" above the floor), 69" (9") and 72" (6"), with integral No-Site construction as standard. ASI sizes its anti-grip headrail for phenolic at 3/4", which matches a 3/4" pilaster. ASI's catalog and Hadrian's listings don't state a door thickness.
 
-Edges are machined, not banded. Bobrick says its edges are black and its DuraLineSeries has a "polished black edge design". Bradley's PH400 edges are black, machined smooth with a 45-degree chamfer. Metpar's black core edges are black, polished and beveled. ASI describes its black core range as "all with black edges".
+Edges are machined, not banded. Bobrick says its edges are black and its DuraLineSeries has a "polished black edge design". Bradley's PH400 edges are black, machined smooth with a 45-degree chamfer, and its brochure lists solid black edges for the whole phenolic line. Metpar's black core edges are black, polished and beveled. ASI describes its black core range as "all with black edges".
 
 ![Cross-section of a phenolic partition door edge: layered core, faces and edge](/images/diagrams/material-section-phenolic.svg)
 
@@ -45,6 +45,7 @@ Fire class is set by the product line, not by the material name.
 | ASI Global Color-Thru phenolic | Class A as standard | ASI catalog |
 | Metpar black core phenolic | Class B; Class A available | Metpar black core page |
 | Hadrian phenolic | Each color is listed as Class A or Class B | Hadrian listing on Sweets |
+| Bradley phenolic | No class stated | Bradley brochure and PH400 data sheet (checked 2026-10-27) |
 
 Bobrick's materials guide defines the ASTM E84 classes by flame spread index: Class A is 25 or less, Class B is 26 to 75, Class C is 76 to 200. The class you need depends on the building's occupancy and where the restroom sits. Confirm it with your architect or local code official, and ask for the product's test documentation.
 
@@ -55,7 +56,7 @@ There is no single phenolic warranty. The lengths below come from manufacturer d
 - **Bobrick, DuraLineSeries CGL 1080/1180:** 25 years. Bobrick's warranty document covers panels, doors and stiles "against breakage, corrosion, delaminating and defects in workmanship", on condition that the partitions are properly installed, used and serviced. The remedy is repair or replacement, and vandalism damage isn't covered. Hardware and brackets carry 1 year.
 - **ASI Global:** 25 years on black core and on Color-Thru phenolic, per the ASI catalog, which refers to the full warranty on ASI's website. We couldn't open that text, so we can't state ASI's coverage terms.
 - **Ammco (All American Metal):** 10 years against delaminating, corrosion or breakage under normal wear and use. Defective material is replaced free of charge. The warranty is for material only: no credit or allowance for labor or any expense of replacing covered parts. It applies when the partitions are properly maintained, and installation errors, vandalism or improper use, care or maintenance void it.
-- **Bradley, PH400 phenolic:** 3 years "against delamination and discoloration" (Bradley partitions brochure, 2025).
+- **Bradley, phenolic (Series 400 to 700):** 3 years "against delamination and discoloration" (Bradley partitions brochure, 2025). Bradley also lists a lifetime warranty on stainless steel hardware for all materials and 5 years on chrome plated Zamac hardware.
 - **Metpar and Hadrian:** we haven't found a published phenolic warranty.
 
 Whatever a different site or older page says, warranty length and coverage are set by the brand and product line you buy. We'll state the warranty for your line in your quote.
@@ -75,9 +76,9 @@ Phenolic is available in all four mounting styles from at least one brand we car
 | Mounting style | Phenolic offered (source) |
 |---|---|
 | [Floor mounted](/mounting-styles/floor-mounted) | Bobrick 1081; Hadrian |
-| [Overhead braced](/mounting-styles/overhead-braced) | Bobrick 1082; Bradley PH400 |
-| [Ceiling hung](/mounting-styles/ceiling-hung) | Bobrick 1088; Hadrian. Bobrick requires ceiling structure to support 275 lb per compact grade partition (TB-32) |
-| [Floor to ceiling](/mounting-styles/floor-to-ceiling) | Bobrick 1086; Hadrian |
+| [Overhead braced](/mounting-styles/overhead-braced) | Bobrick 1082; Bradley PH400 (Series 400); Bradley also lists floor braced (Series 500) |
+| [Ceiling hung](/mounting-styles/ceiling-hung) | Bobrick 1088; Bradley Series 600 (its brochure does not recommend ceilings over eight feet); Hadrian. Bobrick requires ceiling structure to support 275 lb per compact grade partition (TB-32) |
+| [Floor to ceiling](/mounting-styles/floor-to-ceiling) | Bobrick 1086; Bradley Series 700; Hadrian |
 
 ## Compare with other materials
 
@@ -101,7 +102,7 @@ Bobrick, Bradley and Metpar make panels 1/2" thick, with 3/4" doors and pilaster
 It depends on the line. Bobrick's 1180 is Class A and its 1080 is Class B. ASI's Color-Thru is Class A as standard and its black core is Class B as standard, with Class A optional. Ask for the class of the line you are specifying.
 
 ### What is the warranty on phenolic partitions?
-It depends on the brand. Bobrick gives 25 years on its DuraLineSeries compact grade laminate and ASI lists 25 years, Ammco (All American Metal) 10 years and Bradley's PH400 phenolic carries 3 years. Coverage terms are in each manufacturer's warranty document.
+It depends on the brand. Bobrick gives 25 years on its DuraLineSeries compact grade laminate and ASI lists 25 years, Ammco (All American Metal) 10 years and Bradley's phenolic carries 3 years against delamination and discoloration. Coverage terms are in each manufacturer's warranty document.
 
 ### Is phenolic good for pools and showers?
 Manufacturers position it for those areas. ASI says black core phenolic holds up under severe moisture from showers, pools and saunas.
@@ -123,7 +124,8 @@ Black core has a black, machined edge. Color-through matches the edge to the fac
 - [Bradley PH400 Series spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): 1/2" panels, 3/4" doors and pilasters, black edges with 45-degree chamfer. Checked 2026-10-27.
 - [Ammco (All American Metal) phenolic warranty](https://allamericanmetal.com/frontend/web/uploads/material/1580234852_PHENOLIC-WARRANTY.pdf): length, coverage, exclusions. Checked 2026-10-27.
 - [Ammco care sheet](https://allamericanmetal.com/frontend/web/uploads/material/1580161917_Caring-for-your-Phenolic-Toilet-Partitions.pdf): cleaning. Checked 2026-10-27.
-- [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): phenolic warranty (3 years against delamination and discoloration), solid black edges. Checked 2026-10-27.
+- [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): phenolic warranty (3 years against delamination and discoloration), solid black edges, nine colors, heights, Series 400 to 700, ceiling limit for Series 600. Checked 2026-10-27.
+- Bradley, Series 400, 500, 600 and 700 Phenolic Installation Guides, HDWC-INSTR-040, -042, -043 and -044, Rev. A (2021), manufacturer documents, copies reviewed 2026-10-27: floor mounted overhead braced, floor braced, ceiling hung and floor to ceiling versions. Checked 2026-10-27.
 - [Metpar phenolic, black core](https://metpar.com/toilet-partitions/phenolic-black-core/): 3/4" doors and pilasters, 1/2" panels, Class B, black polished and beveled edges. Checked 2026-10-27.
 - [Hadrian floor mounted phenolic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-mounted-phenolic-toilet-partitions-nst865757-p), [ceiling hung phenolic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/ceiling-hung-phenolic-toilet-partitions-nst865755-p), [floor to ceiling phenolic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-phenolic-toilet-partitions-nst865759-p): mounting offered, Class A or B by color. Checked 2026-10-27.
 - Hardware included with a quote: current site, /partitions. Checked 2026-10-26.
@@ -148,7 +150,7 @@ Black core has a black, machined edge. Color-through matches the edge to the fac
 | Claim | Where it's from | Source to check |
 |---|---|---|
 | ASI phenolic warranty coverage wording (what is and isn't covered) | ASI catalog gives the length only | ASI warranty document (checked 2026-10-27: not found; asi-globalpartitions.com/resource/warranty/ loads with no text) |
-| Door thickness 3/4" for ASI and Hadrian phenolic | ASI headrail sizing only | ASI catalog; Hadrian listing (checked 2026-10-27: not found in either; Bobrick, Bradley and Metpar do state 3/4") |
+| Door thickness 3/4" for ASI and Hadrian phenolic | ASI headrail sizing only | ASI catalog; Hadrian listing (checked 2026-10-27: not found in either, or in Hadrian's guide specification and manuals; Bobrick, Bradley and Metpar do state 3/4") |
 | Color names/numbers (Silver Gray 3000 etc.) and Black Core/Color-Thru lists | Current page | ASI color charts (checked 2026-10-27: not found in the ASI catalog text, which gives only counts: 10 black core, 6 Color-Thru; Silver Gray 3000 appears there as a plastic laminate color) |
 | Price index "$" note | Current page | Dropped; Abe's price list (checked 2026-10-27: ASI's catalog shows its own price index, "$" for black core and "$$$$$" for Color-Thru, but Abe's list is what matters) |
 | Lead time 10–15 business days | Current page | Confirm with Abe (checked 2026-10-27: not a manufacturer question) |

@@ -16,7 +16,7 @@ HDPE bathroom partitions are cut from one solid sheet of high-density polyethyle
 
 ## How HDPE partitions are built
 
-Scranton Products makes its Hiny Hiders partitions from 1-inch solid HDPE with the color running all the way through. Doors, panels and pilasters are 1" in Scranton's guide specification, with edges rounded to a 1/4" radius. The New York State master specification asks for HDPE not less than 1" thick with eased edges. Scranton also offers a shiplap cut edge that removes sightlines without extra hardware. ASI Global sizes its anti-grip headrail for solid plastic at 1", which matches a 1" pilaster. ASI's catalog and Hadrian's listing don't state a thickness.
+Scranton Products makes its Hiny Hiders partitions from 1-inch solid HDPE with the color running all the way through. Doors, panels and pilasters are 1" in Scranton's guide specification, with edges rounded to a 1/4" radius. The New York State master specification asks for HDPE not less than 1" thick with eased edges. Scranton also offers a shiplap cut edge that removes sightlines without extra hardware. ASI Global sizes its anti-grip headrail for solid plastic at 1", which matches a 1" pilaster. Hadrian's guide specification for its Standard Series lists solid polyethylene with fine radius edges, 1 inch thick. ASI's catalog and Hadrian's listing don't state a thickness.
 
 ![Cross-section of a solid plastic (HDPE) partition door edge: one homogeneous sheet](/images/diagrams/material-section-solid-plastic.svg)
 
@@ -45,7 +45,7 @@ Scranton Products carries a 25-year limited warranty on Hiny Hiders (the same te
 
 The Limited Warranty is given to a business or other commercial purchaser. It applies only if the partitions are installed to Scranton's written instructions, only to the original installation, and not to damage from vandalism, misuse, neglect, extraordinary wear and tear, or movement of the building. Scranton repairs, replaces or refunds at its choice and doesn't pay labor or removal costs.
 
-Ammco (All American Metal) gives 15 years on solid plastic (HDPE) against delaminating, corrosion or breakage under normal wear and use, with defective material replaced free of charge. Ammco's warranty is for material only: no credit or allowance for labor or any expense of replacing covered parts. It applies when the partitions are properly maintained, and installation errors, vandalism or improper use, care or maintenance void it. ASI's catalog lists 25 years, Hadrian's is not published, and we found no 25-year figure for any other brand's HDPE. Read the warranty document for the line you choose, including exclusions.
+Ammco (All American Metal) gives 15 years on solid plastic (HDPE) against delaminating, corrosion or breakage under normal wear and use, with defective material replaced free of charge. Ammco's warranty is for material only: no credit or allowance for labor or any expense of replacing covered parts. It applies when the partitions are properly maintained, and installation errors, vandalism or improper use, care or maintenance void it. ASI's catalog lists 25 years, and Hadrian's guide specification asks for a 25-year warranty against defects in materials and workmanship on its Standard Series solid plastic (its full warranty text is not among our documents). Read the warranty document for the line you choose, including exclusions.
 
 ## Moisture, vandal resistance and cleaning
 
@@ -60,7 +60,7 @@ Ammco (All American Metal) gives 15 years on solid plastic (HDPE) against delami
 HDPE is not offered in every mounting style. Scranton's Hiny Hiders lists floor mounted overhead-braced, ceiling hung and floor to ceiling. The New York State OGS master specification notes that several manufacturers don't recommend floor-anchored or ceiling-hung mounting for solid plastic. Check the line you want:
 
 - [Overhead braced](/mounting-styles/overhead-braced)
-- [Floor to ceiling](/mounting-styles/floor-to-ceiling) (Hadrian also lists floor-to-ceiling solid plastic with 55" doors at 14" above the floor, for schools)
+- [Floor to ceiling](/mounting-styles/floor-to-ceiling) (Hadrian also lists floor-to-ceiling solid plastic with 55" doors at 14" above the floor, for schools; its guide specification and solid plastic installation manual cover headrail braced, ceiling hung and floor to ceiling)
 - [Ceiling hung](/mounting-styles/ceiling-hung) (Scranton offers it; confirm with the manufacturer)
 - [Floor mounted](/mounting-styles/floor-mounted): generally not recommended for solid plastic
 
@@ -109,6 +109,7 @@ No, there is no metal in the panel. ASI says solid plastic "will not easily dent
 - [ASI Global Partitions catalog](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf): moisture, mildew and graffiti wording, passed NFPA 286, 25-year warranty, 20 standard colors. Checked 2026-10-27.
 - [ASI Global replacement hardware](https://asi-globalpartitions.com/replacement-hardware/): 1" headrail for solid plastic. Checked 2026-10-27.
 - [New York State OGS MasterSpec 102113.19](https://online2.ogs.ny.gov/dnc/masterspec24/docs/Division10Specialties/102113.19PlasticToiletCompartments.docx): mounting notes, 1" minimum with eased edges, NFPA 286 treated as Class A. Checked 2026-10-27.
+- Hadrian, Guide Specification 10 21 13.19, Plastic Toilet Compartments ([Zurn Elkay](https://www.worlddryer.com/content/dam/zurnv49/resources/specification/centralized-specs/documents/guide-specs/10-21-13.19-hadrian-plastic-toilet-compartments.docx)): solid polyethylene, 1 inch, fine radius edges, 25-year warranty, Class A or B or NFPA 286 options. Hadrian, Installation Manual for Solid Plastic Toilet Partitions (4/2014), manufacturer document, copy reviewed 2026-10-27, not linked. Checked 2026-10-27.
 - [Hadrian floor to ceiling solid plastic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-solid-plastic-toilet-partitions-nst865788-p): 55" doors at 14", Class B HDPE and NFPA 286 colors. Checked 2026-10-27.
 - Hardware included with a quote: current site, /partitions. Checked 2026-10-26.
 
@@ -134,7 +135,7 @@ No, there is no metal in the panel. ASI says solid plastic "will not easily dent
 | Claim | Where it's from | Source to check |
 |---|---|---|
 | Which Hiny Hiders colors/options are NFPA 286 fire rated, and the rated thickness | Scranton "fire rating options" only | Scranton Hiny Hiders page and test reports (checked 2026-10-27: not found; the page and color page say only that fire rating options exist and the Standard Color Collection isn't rated) |
-| ASI and Hadrian HDPE: thickness, warranty coverage wording | ASI catalog gives 25 years and NFPA 286 | ASI warranty document; Hadrian listing (checked 2026-10-27: no thickness in the ASI catalog or Hadrian listing; ASI's warranty page has no text; hadrian-inc.com returned 403) |
+| ASI and Hadrian HDPE: thickness, warranty coverage wording | ASI catalog gives 25 years and NFPA 286 | ASI warranty document; Hadrian warranty (checked 2026-10-27: Hadrian's guide specification gives 1 inch and 25 years, but its warranty document was not found, and its Fabrication line reads "phenolic steel sheet", which looks like a template error; no thickness in the ASI catalog; ASI's warranty page has no text; hadrian-inc.com returned 403) |
 | Color list (20 colors) | Current page | Scranton color chart (checked 2026-10-27: ASI's catalog confirms 20 standard HDPE colors for ASI; Scranton's color visualizer is interactive and gave no list) |
 | Recycled content % and LEED | Current page | Scranton/ASI sustainability pages (checked 2026-10-27: ASI's catalog lists 0% post-consumer and 33% post-industrial recycled content for solid plastic, not 25%+; Scranton's spec leaves the minimum as a bracketed 25% placeholder) |
 | Lead time 10–15 business days | Current page | Confirm with Abe (checked 2026-10-27: not a manufacturer question) |

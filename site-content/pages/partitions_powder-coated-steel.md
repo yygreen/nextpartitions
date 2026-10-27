@@ -28,7 +28,7 @@ The edge is a separate metal part. Metpar finishes all edges of doors, panels an
 2. **Faces:** galvannealed steel sheets with a baked powder coat finish.
 3. **Edge:** a formed steel edge around the perimeter that locks the two faces together.
 
-Hardware is typically chrome-plated zamac (a die-cast zinc alloy). Metpar and ASI both list stainless steel hardware as an option. Metpar's pilaster shoe is 4" high in #4 stainless.
+Hardware is typically chrome-plated zamac (a die-cast zinc alloy). Metpar and ASI both list stainless steel hardware as an option. Metpar's pilaster shoe is 4" high in #4 stainless. Hadrian's Elite, Elite Plus and Elite Max manual shows a concealed hinge that is offered on powder coated partitions only, and a 7/8 inch hinge hole in powder coated pilasters where stainless pilasters have two small guide holes.
 
 ## Fire rating
 
@@ -42,7 +42,7 @@ There is no single powder coated steel warranty.
 - **Metpar:** its master specification lists 4 years for the Powder Shield finish, as a manufacturer's standard form "to repair or replace toilet compartment components (panels, doors, pilasters, and hardware) against defects in material and workmanship". The specification is a template, so we treat 4 years as a published figure to confirm against Metpar's warranty document.
 - **Ammco (All American Metal):** 1 year against all defects in workmanship and construction under normal wear and use. Defective material is replaced free of charge. The warranty is for material only: no credit or allowance for labor or any expense of replacing covered parts. It applies when the partitions are properly maintained, and installation errors, vandalism or improper use, care or maintenance void it.
 
-The current page said both 1 year and 3 years. The 3 years matches ASI and the 1 year matches Ammco. Bradley and Hadrian terms are not in the documents we could open. Your quote will name the brand and its warranty.
+The current page said both 1 year and 3 years. The 3 years matches ASI and the 1 year matches Ammco. Bradley's brochure does not list powder coated steel, and Hadrian's documents state no powder coated warranty, so we give none for them. Your quote will name the brand and its warranty.
 
 ## Moisture, vandal resistance and cleaning
 
@@ -57,9 +57,9 @@ Offices, retail, restaurants, community centers and other dry restrooms where bu
 
 | Mounting style | Powder coated offered (source) |
 |---|---|
-| [Overhead braced](/mounting-styles/overhead-braced) | ASI, with anodized aluminum anti-grip headrail |
+| [Overhead braced](/mounting-styles/overhead-braced) | ASI, with anodized aluminum anti-grip headrail; Bradley Series 400 in 69" and 72" heights (installation guide); Hadrian (headrail braced, Standard and Elite series manuals) |
 | [Floor mounted](/mounting-styles/floor-mounted) | ASI floor anchored (concrete floors only); Hadrian |
-| [Ceiling hung](/mounting-styles/ceiling-hung) | ASI |
+| [Ceiling hung](/mounting-styles/ceiling-hung) | ASI; Bradley Series 600 (installation guide); Hadrian (Elite series manual appendix) |
 | [Floor to ceiling](/mounting-styles/floor-to-ceiling) | ASI; Hadrian |
 
 ## ADA stalls
@@ -104,6 +104,8 @@ Bobrick lists repainting as a strength of painted metal. Ask the manufacturer fo
 - [ASI Global hardware overview](https://asi-globalpartitions.com/hardware-overview/): zamac and stainless hardware. Checked 2026-10-27.
 - [ASI Global construction features](https://asi-globalpartitions.com/construction-features/): welded corners, honeycomb core. Checked 2026-10-27.
 - [ASI powder coated steel (Sweets)](https://sweets.construction.com/manufacturer/asi-global-partitions-nst1616/products/powder-coated-steel-toilet-partitions-nst708591-p): mounting styles, welded corners. Checked 2026-10-27.
+- Bradley, Powder Coated & Stainless Steel Installation Guides, Series 600 (HDWT-INSTR-011 Rev F, 2015) and Series 400, 69" and 72" Tall (HDWT-INSTR-038 Rev A, 2018), manufacturer documents, copies reviewed 2026-10-27, not linked: Bradley powder coated ceiling hung and overhead braced. Checked 2026-10-27.
+- Hadrian, Installation Manual for Metal Toilet Partitions, Elite, Elite Plus & Elite Max Series (6/19), manufacturer document, copy reviewed 2026-10-27, not linked: powder coated hinge hole, concealed hinge, mounting styles. Checked 2026-10-27.
 - [Hadrian floor mounted powder coated](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-mounted-powder-coated-toilet-partitions-nst865768-p). Checked 2026-10-27.
 - [Scranton Products, HDPE vs other materials](https://www.scrantonproducts.com/hdpe-vs-other-materials/): honeycomb described as cardboard. Checked 2026-10-27.
 - [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 604.8.1.1, 604.8.1.2. Checked 2026-10-27.
@@ -118,7 +120,7 @@ Bobrick lists repainting as a strength of painted metal. Ask the manufacturer fo
 - "15 standard color choices": removed (Metpar's brand page says 18; unresolved). Color list and numbers also removed pending verification.
 - "ADA ... 60" minimum stall depth": wrong; 604.8.1.1 sets 56" or 59".
 - "Skin Galvannealed steel, 22 ga" and "Honeycomb cardboard": checked 2026-10-27. Metpar's master spec gives 22 gauge for door and panel faces (20 gauge for pilasters), so the gauge is now stated for Metpar only. "Cardboard" appears only on Scranton's competing HDPE page; Metpar calls its stainless core "paper constructed" and ASI says "cellular honeycomb". Not used as a claim.
-- The page's ceiling hung row listed Bradley for powder coated steel. The Bradley guide cited for it can't be opened (HTTP 406) and Bradley's brochure lists only phenolic and stainless, so Bradley is removed from that row.
+- The page's ceiling hung row listed Bradley for powder coated steel. Confirmed 2026-10-27 by Bradley's Series 600 Powder Coated & Stainless Steel Installation Guide (HDWT-INSTR-011 Rev F, 2015), so Bradley is back in that row. Its 2025 brochure lists only phenolic and stainless, so check with Bradley that powder coated is still made.
 - "Standard Height 58" panel (12" floor gap)": kept only as Metpar door height and clearance.
 - "Most cost-effective material in our catalog": removed; no price list. Bobrick's "low cost" is cited instead.
 - "Custom RAL or Pantone color ... any": removed, unsourced.
@@ -131,8 +133,7 @@ Bobrick lists repainting as a strength of painted metal. Ask the manufacturer fo
 
 | Claim | Where it's from | Source to check |
 |---|---|---|
-| Warranty for Bradley, Hadrian; what ASI's 3 years and Metpar's 4 years cover | ASI length (catalog); Metpar length (master spec template) | Each manufacturer warranty (checked 2026-10-27: not found; ASI's warranty page has no text, Metpar's Warranty link goes to its tech-docs index, hadrian-inc.com returned 403, Bradley's site returned 403) |
-| Bradley powder coated ceiling hung | Bradley Series 600 installation guide | The guide URL returned HTTP 406 on 2026-10-27; Bradley's brochure does not list powder coated |
+| Warranty for Bradley and Hadrian powder coated; what ASI's 3 years and Metpar's 4 years cover | ASI length (catalog); Metpar length (master spec template) | Each manufacturer warranty (checked 2026-10-27: not found; ASI's warranty page has no text, Metpar's Warranty link goes to its tech-docs index, hadrian-inc.com returned 403, Bradley's site returned 403) |
 | 15 vs 18 colors, color list | Current page; Metpar brand page | Metpar color chart (checked 2026-10-27: ASI lists 15 standard powder coated colors in its catalog; Metpar's color chart PDF was not opened and its page doesn't give a count) |
 | Custom RAL/Pantone | Current page | Confirm with Abe (checked 2026-10-27: Metpar says non-listed customer chosen colors can be used in production; Hadrian requires a minimum of 20 units per custom color) |
 | Lead time 5–10 business days | Current page | Confirm with Abe (checked 2026-10-27: not a manufacturer question) |

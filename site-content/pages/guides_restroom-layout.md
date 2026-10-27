@@ -81,7 +81,7 @@ Your jurisdiction decides which edition of the IPC applies, and it may amend it.
 - From the side wall or a partition to the centerline of a urinal: **15" minimum**.
 - From one urinal's centerline to the next: **30" minimum**.
 - In front of the urinal: **21" minimum** clear.
-- Urinal screens, drawn between the urinals, give privacy. The spacing is measured to the urinal centerlines, so confirm the screen size and where it mounts with the manufacturer before you set the layout.
+- Urinal screens, drawn between the urinals, give privacy. The spacing is measured to the urinal centerlines, so confirm the screen size and where it mounts with the manufacturer before you set the layout. As one example, Bradley's PH400 data sheet lists 42" and 48" high urinal screens, and its Series 400 phenolic guide mounts a 42" screen with its bottom edge 18" above the floor and a 48" screen with its bottom edge 12" above the floor, each with a 1" gap to the wall.
 
 ## Step 4: Door swing and clear floor space
 
@@ -142,7 +142,8 @@ It depends on the ceiling and floor. See the table above.
 
 - [International Plumbing Code 405.3.1, ICC "Significant Changes" excerpt (2018 edition)](https://www.iccsafe.org/wp-content/uploads/2018SC-PMG_P405.3.1.pdf): 15" and 30" spacing, 21" clear space, 30" x 60"/56" compartments. Checked 2026-10-27.
 - [2010 ADA Standards, U.S. Access Board](https://www.access-board.gov/ada/): 213.3.1, 304.3, 305.3, 306, 404.2.3, 604.2, 604.8.1.2, 604.8.1.4, 606.2. Checked 2026-10-27.
-- [Bradley PH400 spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): example layout dimensions. Checked 2026-10-27.
+- [Bradley PH400 spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): example layout dimensions, urinal screen heights (42" and 48"). Checked 2026-10-27.
+- Bradley, Series 400 Phenolic Installation Guide, HDWC-INSTR-040 Rev. A (2021), manufacturer document, copy reviewed 2026-10-27, not linked: urinal screen mounting dimensions. Checked 2026-10-27.
 - Mounting style guidance (Bobrick anchor depth and ceiling-support recommendation) comes from the sources listed on our [mounting styles](/mounting-styles) page, checked 2026-10-26.
 
 <!-- For Marc -->
@@ -166,7 +167,7 @@ It depends on the ceiling and floor. See the table above.
 ## To verify when sources are reachable
 
 - IPC 2021 405.3.1 exact text: codes.iccsafe.org refused the fetch on 2026-10-27 (HTTP 403), so the page still cites the 2018 ICC excerpt (checked 2026-10-27: 2021 text not found in codes.iccsafe.org). The 2018 text applies the 30" center-to-center rule where partitions or other obstructions do not separate adjacent fixtures; confirm that and the 21" clearance wording in the 2021 edition.
-- Urinal screen sizes and mounting heights from a manufacturer (none in the repo, so none on the page).
+- Urinal screen sizes and mounting heights from other manufacturers: only Bradley's are on the page (checked 2026-10-27: Bradley PH400 data sheet and Series 400 Phenolic Installation Guide HDWC-INSTR-040 Rev. A). Add others from their data sheets.
 - The "alcove" arrangement, if you want it back.
 - Entry privacy and sight-line guidance from a manufacturer planning guide.
 - Bobrick anchor rule and ceiling-support recommendation: taken from the existing mounting-styles page, not re-opened.

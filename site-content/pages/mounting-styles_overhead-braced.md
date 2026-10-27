@@ -119,7 +119,7 @@ Yes. Manufacturers we carry offer it in powder coated steel, stainless steel, pl
 - Scranton Products, Hiny Hiders partitions ("floor mounted overhead-braced"): https://www.scrantonproducts.com/products/hiny-hiders-partitions/, checked 2026-10-26
 - New York State OGS MasterSpec 102113.19, Plastic Toilet Compartments (anchor penetration, headrail fastening, door alignment): https://online2.ogs.ny.gov/dnc/masterspec24/docs/Division10Specialties/102113.19PlasticToiletCompartments.docx, checked 2026-10-26
 - U.S. Department of Veterans Affairs, master specification 10 21 13 Toilet Compartments (no overhead connecting framing in mental health units): https://www.wbdg.org/FFC/VA/VAASC/VA%2010%2021%2013.pdf, checked 2026-10-26
-- Bradley, Powder Coated & Stainless Steel Restroom Partitions installation guide (warning to confirm wall and floor backing; dealer-hosted copy of Bradley's document): https://ded1740.inmotionhosting.com/~partplus42/wp-content/uploads/2022/01/Bradley-Series-600-Powder-Coated-and-Stainless-Steel-Installation-Guide.pdf, checked 2026-10-26
+- Bradley, Series 400 Phenolic Installation Guide, HDWC-INSTR-040 Rev. A (2021), and Powder Coated & Stainless Steel Installation Guide, Series 400 69" and 72" Tall, HDWT-INSTR-038 Rev A (2018), manufacturer documents, copies reviewed 2026-10-27, not linked (warning to confirm wall and floor backing). Checked 2026-10-27
 - Next Partitions, Bathroom Stall Dimensions guide: /guides/bathroom-stall-dimensions, checked 2026-10-26
 
 <!-- For Marc -->

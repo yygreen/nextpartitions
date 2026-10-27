@@ -16,9 +16,9 @@ Stainless steel bathroom partitions use the same sandwich as powder coated steel
 
 ## How stainless steel partitions are built
 
-ASI builds its stainless partitions from Type 304 stainless steel over a honeycomb core, and says a textured finish adds resistance to vandalism. Bradley offers a satin brushed finish and a textured pattern on its stainless line. ASI sizes its anti-grip headrail for stainless at 1-1/4", which matches a 1-1/4" pilaster.
+ASI builds its stainless partitions from Type 304 stainless steel over a honeycomb core, and says a textured finish adds resistance to vandalism. Bradley offers a satin brushed finish and a 5WL textured pattern on its stainless line, made with 40% pre-consumer and 25% post-consumer recycled stainless, with door and panel heights of 72" (6" above the floor) or 69" (9" above the floor) for accessible stalls. ASI sizes its anti-grip headrail for stainless at 1-1/4", which matches a 1-1/4" pilaster.
 
-Metpar publishes the dimensions: 1" thick doors and panels, 1-1/4" pilasters, and 22-gauge stainless face sheets on doors and panels (20 gauge on pilasters), over a honeycomb core it describes as paper constructed. ASI's and Bradley's catalogs don't state door thickness or face gauge.
+Metpar publishes the dimensions: 1" thick doors and panels, 1-1/4" pilasters, and 22-gauge stainless face sheets on doors and panels (20 gauge on pilasters), over a honeycomb core it describes as paper constructed. ASI's catalog, Bradley's brochure and Bradley's and Hadrian's installation guides don't state door thickness or face gauge.
 
 The edge is built, not cut. Metpar closes every edge of doors, panels and pilasters with a 20-gauge stainless interlocking molding and finishes the corners with preformed stainless reinforcements, welded internally. ASI welds the corners of panels, pilasters and doors to each other and to the adjacent face sheets. Bradley's Permaseal edge locks the two facing sheets together around the perimeter, with the finish wrapping around the edges and corners either welded smooth or joined with a corner clip.
 
@@ -32,14 +32,14 @@ Hardware: ASI uses Type 304 stainless for its leveling shoes. Bobrick's hardware
 
 ## Fire rating
 
-Bobrick lists a Class A rating among stainless steel's strengths. Class A means a flame spread index of 25 or less under ASTM E84. ASI's material selection guide also lists Class A for its stainless steel. We found no stated class for Bradley, Metpar or Hadrian stainless. Ratings are published per product line, so ask for the test data for the brand you specify. Stainless is not covered by the NFPA 286 rule that applies to [HDPE](/partitions/solid-plastic-hdpe).
+Bobrick lists a Class A rating among stainless steel's strengths. Class A means a flame spread index of 25 or less under ASTM E84. ASI's material selection guide also lists Class A for its stainless steel. We found no stated class for Bradley (brochure, data sheet and installation guides), Metpar or Hadrian stainless. Ratings are published per product line, so ask for the test data for the brand you specify. Stainless is not covered by the NFPA 286 rule that applies to [HDPE](/partitions/solid-plastic-hdpe).
 
 ## Warranty differs by brand
 
 There is no single stainless steel warranty. The lengths below come from manufacturer documents; the full coverage text is only partly available.
 
 - **ASI Global:** 5 years on stainless steel, per the ASI catalog, which refers to the full warranty on ASI's website. We couldn't open that text, so we can't state ASI's coverage terms. This is where the current page's "5 Years" appears to come from.
-- **Bradley:** 15 years "against rust-out" on its stainless line, 5 years on chrome plated Zamac hardware and a lifetime warranty on stainless steel hardware (Bradley partitions brochure, 2025).
+- **Bradley:** 15 years "against rust-out" on its stainless line (listed with the Permaseal edge), 5 years on chrome plated Zamac hardware and a lifetime warranty on stainless steel hardware (Bradley partitions brochure, 2025).
 - **Metpar:** 6 years for stainless steel, from its master specification, which describes the warranty as a manufacturer's standard form "to repair or replace toilet compartment components (panels, doors, pilasters, and hardware) against defects in material and workmanship". The specification is a template, so confirm the figure against Metpar's warranty document.
 - **Ammco (All American Metal):** 10 years against all defects in workmanship and construction under normal wear and use. Defective material is replaced free of charge. The warranty is for material only: no credit or allowance for labor or any expense of replacing covered parts. It applies when the partitions are properly maintained, and installation errors, vandalism or improper use, care or maintenance void it.
 - **Hadrian:** no published figure found.
@@ -58,7 +58,7 @@ Airports, hospitals and upscale offices, where the restroom is part of the build
 
 | Mounting style | Stainless offered (source) |
 |---|---|
-| [Overhead braced](/mounting-styles/overhead-braced) | ASI; Hadrian headrail braced |
+| [Overhead braced](/mounting-styles/overhead-braced) | ASI; Bradley Series 400 in 69" and 72" heights (installation guide); Hadrian headrail braced (Standard and Elite series manuals) |
 | [Floor mounted](/mounting-styles/floor-mounted) | ASI floor anchored |
 | [Ceiling hung](/mounting-styles/ceiling-hung) | ASI; Bradley; Hadrian |
 | [Floor to ceiling](/mounting-styles/floor-to-ceiling) | ASI; Hadrian |
@@ -92,7 +92,9 @@ ASI offers #4 satin as standard with diamond and leather grain optional. Bradley
 - [ASI Global construction features](https://asi-globalpartitions.com/construction-features/): Type 304 shoe, welded corners. Checked 2026-10-27.
 - [Ammco (All American Metal) stainless steel warranty](https://allamericanmetal.com/frontend/web/uploads/material/1580234814_STAINLESS-STEEL-WARRANTY.pdf): length, coverage, exclusions. Checked 2026-10-27.
 - [Ammco care sheet](https://allamericanmetal.com/frontend/web/uploads/material/1582235330-Caring-for-your-Stainless-Steel-Toilet-Partitions.pdf): cleaning. Checked 2026-10-27.
-- [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): stainless finishes, Permaseal edge, 15-year warranty against rust-out, hardware warranties, Series 600 ceiling hung. Checked 2026-10-27.
+- [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): stainless finishes, recycled content, heights, Permaseal edge, 15-year warranty against rust-out, hardware warranties, Series 600 ceiling hung. Checked 2026-10-27.
+- Bradley, Powder Coated & Stainless Steel Installation Guides, Series 600 (HDWT-INSTR-011 Rev F, 2015) and Series 400 69" and 72" Tall (HDWT-INSTR-038 Rev A, 2018), manufacturer documents, copies reviewed 2026-10-27, not linked: stainless steel overhead braced and ceiling hung versions; masking left on until installation is complete. Checked 2026-10-27.
+- Hadrian, Installation Manual for Metal Toilet Partitions, Standard Series and Elite, Elite Plus & Elite Max Series (both 6/19), manufacturer documents, copies reviewed 2026-10-27, not linked: headrail braced stainless, pre-drilled stainless channels, hinge guide holes. Checked 2026-10-27.
 - [Metpar stainless steel](https://metpar.com/toilet-partitions/stainless-steel/): 1" doors and panels, 1-1/4" pilasters, 20-gauge stainless edge molding, paper honeycomb core. Checked 2026-10-27.
 - [Metpar stainless steel floor mounted standard master specification](https://metpar.com/wp-content/uploads/2021/05/Stainless-Steel-Floor-Mounted-Standard-Master-Spec.docx): 22-gauge faces (doors, panels), 20-gauge pilasters, finishes, 6-year warranty. Checked 2026-10-27.
 - [Bobrick 1080 Series technical data sheet](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): Type-304 satin hardware, shoe. Checked 2026-10-27.
@@ -119,10 +121,10 @@ ASI offers #4 satin as standard with diamond and leather grain optional. Bradley
 
 | Claim | Where it's from | Source to check |
 |---|---|---|
-| Face gauge and door thickness for ASI, Bradley, Bobrick, Hadrian stainless | Current page | Data sheets (checked 2026-10-27: not found in ASI's catalog, Bradley's brochure or the Hadrian listings; Metpar's 22 gauge and 1" are now on the page) |
+| Face gauge and door thickness for ASI, Bradley, Bobrick, Hadrian stainless | Current page | Data sheets (checked 2026-10-27: not found in ASI's catalog, Bradley's brochure and installation guides, or the Hadrian listings and manuals; Metpar's 22 gauge and 1" are now on the page) |
 | ASI and Hadrian warranty coverage wording; Hadrian length | ASI length from catalog | Each manufacturer warranty (checked 2026-10-27: not found; ASI's warranty page has no text, hadrian-inc.com returned 403) |
-| Bradley's warranty coverage text beyond the brochure line | Bradley brochure, 2025 | Bradley warranty document (checked 2026-10-27: not found; bradleycorp.com returned 403) |
-| Brand-specific fire class for Bradley, Metpar, Hadrian stainless | Bobrick general statement and ASI | Spec sheets (checked 2026-10-27: not found in the Bradley brochure, Metpar page or Hadrian listing) |
+| Bradley's warranty coverage text beyond the brochure line | Bradley brochure, 2025 | Bradley warranty document (checked 2026-10-27: not found; the brochure and installation guides only point to bradleycorp.com for warranties) |
+| Brand-specific fire class for Bradley, Metpar, Hadrian stainless | Bobrick general statement and ASI | Spec sheets (checked 2026-10-27: not found in the Bradley brochure, data sheet or installation guides, the Metpar page, or the Hadrian listing and manuals) |
 | Lead time 15–25 business days | Current page | Confirm with Abe (checked 2026-10-27: not a manufacturer question) |
 
 ## Implementation notes

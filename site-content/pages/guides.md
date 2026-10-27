@@ -97,8 +97,8 @@ The hub itself makes no new dimensional claims. The checks behind the correction
 - 2018 International Plumbing Code, section 405.3.1 (ICC "Significant Changes" excerpt): https://www.iccsafe.org/wp-content/uploads/2018SC-PMG_P405.3.1.pdf (checked 2026-10-26)
 - Bobrick, Privacy options (standard 58" doors and panels with 12" floor clearance; maximum and extended heights): https://www.bobrick.com/products/toilet-partitions-cubicle-systems/privacy/ (checked 2026-10-26)
 - ASI Global Partitions, Ultimate Privacy (door and panel heights, mounting heights above floor): https://asi-globalpartitions.com/style/ultimate-privacy/ (checked 2026-10-26)
-- Bradley, Phenolic Floor-Mounted Overhead-Braced PH400 Series spec sheet (58" doors and panels at 12" AFF, 82" overall height, slide latch with no twisting motion): https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf (checked 2026-10-26)
-- Bradley Partitions brochure (69" doors and panels at 9" AFF for ADA stalls; 72" at 6" AFF): https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf (checked 2026-10-26)
+- Bradley, Phenolic Floor-Mounted Overhead-Braced PH400 Series spec sheet (58" doors and panels at 12" AFF, 82" overall height, slide latch with no twisting motion): https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf (checked 2026-10-27)
+- Bradley Partitions brochure (69" doors and panels at 9" AFF for ADA stalls; 72" at 6" AFF): https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf (checked 2026-10-27)
 
 <!-- For Marc -->
 ## Corrections to the current page

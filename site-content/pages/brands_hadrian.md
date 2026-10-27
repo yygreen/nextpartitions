@@ -5,7 +5,7 @@ meta: Hadrian toilet partitions in powder coated steel, stainless, phenolic and 
 h1: Hadrian Toilet Partitions
 primary_keyword: hadrian toilet partitions (390)
 secondary_keywords: [hadrian partitions (320), hadrian toilet partition (110), hadrian bathroom partitions (90), hadrian partition hardware (70), hadrian partition (50), hadrian restroom partitions (40), hadrian toilet partitions installation instructions (30)]
-words: 730
+words: 1,050
 ---
 
 # Hadrian Toilet Partitions
@@ -35,7 +35,7 @@ Each combination of material and mounting style has its own Hadrian listing, so 
 
 ## Hadrian series and heights
 
-Hadrian's listings name four privacy series by door and panel height. The Standard series has 58 inch doors and panels mounted 12 inches above the floor. Elite has 64 inch doors and panels, Elite Plus 72 inch, and Elite Max 84 or 92 inch, all mounted lower, with continuous channels that remove the sightline gaps. Hadrian's stainless steel listing shows all four series, and its powder coated listing shows at least Standard and Elite. Which series come in which material and mounting style is on each Hadrian data sheet.
+Hadrian's listings name four privacy series by door and panel height. The Standard series has 58 inch doors and panels mounted 12 inches above the floor in the metal listings; in solid plastic, Hadrian's guide specification gives 55 inch doors and panels mounted 14 inches above the floor. Elite has 64 inch doors and panels, Elite Plus 72 inch, and Elite Max 84 or 92 inch, all mounted lower, with continuous channels that remove the sightline gaps. Hadrian's stainless steel listing shows all four series, and its powder coated listing shows at least Standard and Elite. Which series come in which material and mounting style is on each Hadrian data sheet.
 
 ## Hadrian mounting styles
 
@@ -46,15 +46,27 @@ Hadrian's listings name four privacy series by door and panel height. The Standa
 
 The [mounting styles guide](/mounting-styles) compares what each style needs from your floor and ceiling.
 
+## Hadrian construction and hardware
+
+Hadrian's guide specification for its Standard Series solid plastic compartments (section 10 21 13.19) describes the product this way:
+
+- **Panels, doors and pilasters:** solid polyethylene with fine radius edges, listed as 1 inch thick.
+- **Headrail:** extruded aluminum with an anti-grip top surface. Pilaster shoes are stainless steel.
+- **Hardware:** aluminum. Panels connect to the wall with three heavy duty aluminum brackets and to the pilaster with a full-height continuous aluminum channel. Hinges are gravity type, wrap-around style, with adjustable nylon cams on the top hinge. A combination coat hook and bumper comes with each compartment, and the latch is a surface mounted slide latch with an emergency access feature.
+- **Fire rating:** the specification offers Class A or Class B tested to ASTM E84, or a pass of NFPA 286, as options for the specifier to choose.
+- **Warranty:** 25 years against defects in materials and workmanship.
+
+Hadrian's metal installation manuals add that stainless steel pilasters use two small guide holes for the hinge where powder coated pilasters have a 7/8 inch hole, and that its Standard Series metal line offers continuous hinges, wrap hinges and indicator latches. Its Elite, Elite Plus and Elite Max manuals show continuous hinges, concealed hinges (powder coated only), indicator latches, stirrup brackets and a panel support pedestal. The solid plastic manual covers barrel, continuous and integral hinges and a latch and keeper. Installers use 6-lobe security driver bits on Hadrian hardware.
+
 ## Hadrian hardware and parts
 
 Partition hardware does not interchange between brands. Hinge and latch hole patterns, pilaster thickness and fasteners differ, so a Hadrian hinge or latch has to be matched to Hadrian hardware. If you need Hadrian partition hardware or parts, [contact us](/contact) with the series or model number, the material, door thickness, swing and hand, and photos of the hinge and latch. See also [hinges](/hardware/hinges), [locks and latches](/hardware/locks-latches) and [replacement parts](/hardware/parts). We will tell you whether we can supply the part or point you to a matching product.
 
 ## Hadrian toilet partitions installation instructions
 
-Hadrian publishes installation instructions for its partitions. Always follow the manufacturer's instructions and the approved drawings for your project, and use a qualified installer. Next Partitions supplies partitions and does not install them.
+Hadrian publishes installation manuals for its partitions. Always follow the manufacturer's instructions and the approved drawings for your project, and use a qualified installer. Next Partitions supplies partitions and does not install them.
 
-For help finding the right Hadrian instructions, start with our [installation instructions guide](/guides/installation-instructions), which collects instructions by brand. Have the series name, material and mounting style ready, since the instructions differ for each. The model information is usually on the data sheet or the shop drawings.
+Manuals exist for the Standard Series metal line, the Elite, Elite Plus and Elite Max metal lines, and solid plastic. Request the current copy from [Hadrian](https://www.hadrian-inc.com/). For help finding the right Hadrian instructions, start with our [installation instructions guide](/guides/installation-instructions), which collects instructions by brand. Have the series name, material and mounting style ready, since the instructions differ for each. The model information is usually on the data sheet or the shop drawings.
 
 ## Switching from Hadrian
 
@@ -69,7 +81,7 @@ Powder coated steel, stainless steel, phenolic and solid plastic, each in the mo
 Our Hadrian distributorship is pending reapproval, so we cannot quote Hadrian directly yet. We can quote comparable partitions from our other brands.
 
 ### Where do I find Hadrian toilet partitions installation instructions?
-Start with our [installation instructions guide](/guides/installation-instructions), and follow the manufacturer's instructions and approved drawings with a qualified installer.
+Hadrian publishes manuals for its metal and solid plastic partitions; request the current copy from [Hadrian](https://www.hadrian-inc.com/). Start with our [installation instructions guide](/guides/installation-instructions), and follow the manufacturer's instructions and approved drawings with a qualified installer.
 
 ### Can Hadrian hardware be replaced with another brand's?
 Generally no. Hole patterns, hinge styles and fasteners differ between brands. Send the model and photos so the right part can be matched.
@@ -78,6 +90,9 @@ Generally no. Hole patterns, hinge styles and fasteners differ between brands. S
 Hadrian recommends floor to ceiling for high-traffic areas such as schools. Your building structure and material also matter.
 
 ## Sources
+
+- Hadrian, Guide Specification 10 21 13.19, Plastic Toilet Compartments ([Zurn Elkay](https://www.worlddryer.com/content/dam/zurnv49/resources/specification/centralized-specs/documents/guide-specs/10-21-13.19-hadrian-plastic-toilet-compartments.docx)): Standard Series materials, hardware, fire options, 55 inch at 14 inches, 25-year warranty. Checked 2026-10-27.
+- Hadrian, Installation Manual for Metal Toilet Partitions, Standard Series (6/19); Installation Manual for Metal Toilet Partitions, Elite, Elite Plus & Elite Max Series (6/19); Installation Manual for Solid Plastic Toilet Partitions (4/2014). Manufacturer documents, copies reviewed 2026-10-27, not linked: hinge and latch types, overhead member by others. Checked 2026-10-27.
 
 - [Zurn Elkay brands](https://www.zurnelkay.com/brands): lists Hadrian as a Zurn Elkay brand with powder coated, stainless steel, solid plastic and phenolic partitions. Checked 2026-10-27.
 - [Hadrian floor to ceiling solid plastic partitions, Sweets](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-solid-plastic-toilet-partitions-nst865788-p): schools, 55 inch doors at 14 inches. Checked 2026-10-27.
@@ -95,14 +110,15 @@ Hadrian recommends floor to ceiling for high-traffic areas such as schools. Your
 - "Our team can match Hadrian specs almost line-for-line" is unsourced and removed. Replaced with "comparable product, subject to your architect's approval".
 - Title used an em dash; replaced. Meta now carries the keyword.
 - Quote time: the standard promise added where the page invites a quote.
-- Sources note: hadrian-inc.com returns 403 from our network (checked 2026-10-27), so the facts come from Hadrian's own manufacturer listings on Sweets and from zurnelkay.com.
+- Sources note: hadrian-inc.com returned 403 from our network (checked 2026-10-27), so the facts come from Hadrian's guide specification, installation manuals (dealer copies, cited by title and date without a URL), Sweets listings and zurnelkay.com.
+- The guide specification is a template for plastic compartments, but its Fabrication line reads "Phenolic steel sheet with edges eased" next to "Thickness: 1 inch". That reads like a template error. The page uses the spec's "solid polyethylene" and 1 inch, with 55 inch doors at 14 inches matching Hadrian's Sweets solid plastic listing. Please confirm the thickness with Hadrian.
 - Confirmed 2026-10-27: Hadrian is a Zurn Elkay brand (zurnelkay.com/brands), and the series names Standard, Elite, Elite Plus and Elite Max (Hadrian's Sweets listings for stainless and powder coated).
 
 ## To verify when sources are reachable
 
 - Hadrian's older series names (Tufftec, plastic laminate) from the earlier draft: checked 2026-10-27: not found in Hadrian's Sweets listings or on zurnelkay.com; left out.
-- A working link to Hadrian's installation instructions page. The Semrush export shows an old address (hadrian-inc.com/tech-data/installation/toilet-partitions.aspx); hadrian-inc.com returned 403 on 2026-10-27 (checked 2026-10-27: not found, site not reachable), so it is not linked.
-- Hadrian hardware types (hinges, latches): checked 2026-10-27: not found in Hadrian's Sweets listings or on zurnelkay.com.
+- A working link to Hadrian's installation instructions page. The manuals point to hadrian-inc.com/Tech-Data/Installation/Toilet-Partitions.aspx for video instructions; hadrian-inc.com returned 403 on 2026-10-27 (checked 2026-10-27: not reachable), so only the home page is linked.
+- Warranty for Hadrian metal, phenolic and laminate lines: only the plastic Standard Series 25 years is stated (checked 2026-10-27: not found in the guide specification or manuals).
 
 ## Confirm with Abe
 

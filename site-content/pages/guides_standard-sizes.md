@@ -45,7 +45,7 @@ If you lower the floor gap on the accessible stall, check toe clearance first. T
 
 ## Door widths
 
-Door widths are not round numbers. A door is sized to leave the hinge and latch clearances inside the compartment, so measure the door itself, not the opening between pilasters. Metpar's standard powder coated door widths, for example, run from 21-5/8" to 35-5/8".
+Door widths are not round numbers. A door is sized to leave the hinge and latch clearances inside the compartment, so measure the door itself, not the opening between pilasters. Bradley's phenolic guides supply a combination coat hook and bumper on doors 32" wide or less and a separate hook, bumper and pulls on 34", 35" and 36" doors, so those widths exist in its line. Metpar's standard powder coated door widths, for example, run from 21-5/8" to 35-5/8".
 
 An accessible stall door has to leave at least 32" of clear opening (2010 ADA Standards 404.2.3, applied by 604.8.1.2 and 604.8.2.2), so the door itself is wider than 32". A 36" door is a common product size. Standard stalls do not have this requirement and manufacturers size their doors differently. Ask for the door width from your manufacturer's sheet or measure the existing door.
 
@@ -108,6 +108,7 @@ On [bathroom stall dimensions](/guides/bathroom-stall-dimensions), including the
 - [ASI Global Partitions replacement hardware](https://asi-globalpartitions.com/replacement-hardware/): headrail sizes by material. Checked 2026-10-27.
 - [ASI Global Partitions, Ultimate Privacy](https://asi-globalpartitions.com/style/ultimate-privacy/): 64" and 72" heights, No Sight-55. Checked 2026-10-27.
 - [Bradley PH400 spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): 58" at 12", 82" overall, 1/2" panels, 3/4" doors and pilasters. Checked 2026-10-27.
+- Bradley, Series 400 Phenolic Installation Guide, HDWC-INSTR-040 Rev. A (2021), manufacturer document, copy reviewed 2026-10-27, not linked: door hardware groups by width. Checked 2026-10-27.
 - [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): 72" at 6", 69" at 9" for ADA. Checked 2026-10-27.
 - [Scranton Products Hiny Hiders guide specification](https://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): 1" HDPE, 55" doors. Checked 2026-10-27.
 - [Scranton Products, Eclipse partitions](https://www.scrantonproducts.com/products/eclipse-restroom-partitions/): 55", 62", 72" heights. Checked 2026-10-27.
@@ -135,5 +136,5 @@ On [bathroom stall dimensions](/guides/bathroom-stall-dimensions), including the
 ## To verify when sources are reachable
 
 - Panel and pilaster widths per brand and series: none in the repo; left out of the page.
-- Door widths for brands other than Metpar.
+- Door widths for brands other than Metpar (checked 2026-10-27: Bradley's guides show only the 32" or less and 34", 35", 36" hardware groups, not a width list).
 - Stainless steel pilaster thickness, and whether stainless panels are 1" from a manufacturer sheet (the page relies on the site's own stainless page).

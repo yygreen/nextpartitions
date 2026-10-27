@@ -5,7 +5,7 @@ meta: How to install bathroom partitions: what to check first, the general seque
 h1: How to Install Bathroom Partitions
 primary_keyword: how to install bathroom partitions (30/mo)
 secondary_keywords: [bathroom partitions installation (40), bathroom partition installation (30), how to install commercial bathroom partitions (20), how to install ceiling hung toilet partitions (20), toilet partition installation problems, toilet partition installation heights, ADA grab bar on toilet partition, toilet partition slide latch install]
-words: 2,350
+words: 2,750
 ---
 
 # How to Install Bathroom Partitions
@@ -26,7 +26,16 @@ Read the manufacturer's guide all the way through and lay out every part before 
 
 ### Wall blocking and backing
 
-Panels and pilasters attach to the walls with brackets. The walls need backing behind those brackets. Bobrick notes that wall backing is required to secure the mounting brackets. Bradley's installation guide includes a warning to confirm wall and floor backing before mounting. Partitions are heavy. If a wall is hollow drywall with nothing behind it, the brackets have nowhere to hold.
+Panels and pilasters attach to the walls with brackets. The walls need backing behind those brackets. Bobrick notes that wall backing is required to secure the mounting brackets. Every Bradley guide we reviewed (phenolic Series 400 to 700, powder coated and stainless steel, Bradmar plastic) opens with a warning to confirm that wall and floor backing can support the partitions. Bradley adds that partitions are extremely heavy, may need more than one person, and that ignoring the instructions voids the partition warranty. Partitions are heavy. If a wall is hollow drywall with nothing behind it, the brackets have nowhere to hold.
+
+### Handling and site conditions
+
+Manufacturers ask for care before the first hole is drilled.
+
+- **Lay material flat.** Bradley says to lay panels flat and not lean them against a wall or stack them unevenly, to prevent warping. Hadrian says the same for solid plastic and asks that it stay at about 68 degrees F for 24 hours before and after installation. Bradley's Bradmar plastic guide asks for 24 hours to adjust to the site, a climate-controlled room and shelter from direct sunlight.
+- **Keep protective masking on** stainless steel (and Bradmar plastic) until installation is finished, per Bradley.
+- **Support the material when drilling.** Bradley's phenolic guides say to use a support block when drilling through the material to minimize break-out. Its steel guides say to take extra care where a hole goes through one face only, to prevent dimpling.
+- **Clean, smooth walls and floors.** Bradley asks you to remove protruding nails and other debris first.
 
 ### Slab and ceiling structure check
 
@@ -78,7 +87,7 @@ The order below is the typical one across manufacturers. Your guide may differ i
 2. **Pilaster shoe** (4" high, stainless steel) over the floor anchor.
 3. **Pilaster.** Doors and panels are 58" high, 12" above the floor.
 
-1. **Layout lines.** Mark the pilaster, panel and wall bracket positions on the floor and walls from the shop drawings. Bradley's ceiling-hung guide uses a level line 12" above the floor, which matches the 12" floor clearance in Hadrian's standard series.
+1. **Layout lines.** Mark the pilaster, panel and wall bracket positions on the floor and walls from the shop drawings. Bradley's guides mark bracket positions from the floor at the highest point in the room: its Series 400 phenolic stirrup brackets are centered 19" and 63" above the floor, and its wall-hung pilaster option uses a level line 12" above the floor. That 12" line appears in all four Bradley phenolic guides (Series 400 to 700) and in the Series 600 powder coated and stainless guide, not only the ceiling-hung one. Bradley's Series 400 phenolic guide also sets the pilaster centerline at the compartment depth minus 3/8"; Hadrian's metal manuals deduct 5/8" from the overall compartment dimension for the front centerline. Use the drawing and the guide for your product.
 2. **Pilaster anchors and leveling.** Each pilaster sits on a floor bracket or leveling device. Bobrick's plastic laminate line uses a 12-gauge plated steel bracket with a leveling bolt, a floor L-bracket and stainless steel floor screws. For floor-mounted stalls, Bobrick uses a steel leveling bar with threaded rods and expansion shields in the floor. Set each pilaster plumb and at the right height, then fit the stainless steel shoe over the hardware.
 3. **Panel brackets.** Fasten the brackets to the walls and pilasters at the marked positions, into the backing.
 4. **Panels.** Hang the panels between the pilasters and the walls on the brackets.
@@ -86,8 +95,10 @@ The order below is the typical one across manufacturers. Your guide may differ i
 6. **Doors and hinge adjustment.** Hang the doors and adjust them. The OGS spec says to adjust doors so their tops are parallel with the overhead brace. See the hinge setting below.
 7. **Latch and keeper alignment.** Fit the latch, then the keeper. See below.
 
-Metal and solid plastic installation guides from Ammco (All American Metal) confirm this order and add a few details:
+Metal and solid plastic installation guides from Ammco (All American Metal) confirm this order and add a few details. Bradley's and Hadrian's guides follow the same order (layout, floor anchors, panels and pilasters, headrail, hinges, then latch):
 
+- **Spacer height varies.** Bradley's phenolic and steel guides list a 12" spacer (6" and 9" spacers for its 72" and 69" tall steel stalls), plus a 1/8" gap between door and pilaster. Hadrian's metal manuals list a 12" shim block, and its solid plastic manual and Bradley's Bradmar guide a 14" block.
+- **Standard gaps.** Bradley's phenolic guides show a standard 1" gap between panel and wall and 1/2" between panel and pilaster, with wall gaps from 1/2" to 1-1/4" depending on the drawing.
 - **Mark and check twice.** The pilaster centerline sits slightly in from the full compartment depth on the drawings, so use the drawing dimension, not the room depth. Double-check the layout before drilling and make any change then.
 - **Support the panel first.** Rest each panel on a spacer block about 12" to 14" high while it slides into the wall brackets, and leave a small gap at the wall as the drawing shows. Do not fasten it to the wall brackets until the pilasters are set.
 - **Use a shim at the top.** Wedge a shim between panel and wall at the top rear to hold position while you drill and fasten the pilaster brackets.
@@ -105,8 +116,10 @@ Metal and solid plastic installation guides from Ammco (All American Metal) conf
 
 Ceiling hung is the style where the building matters most. If you are asking how to install ceiling hung toilet partitions, the first answer is that the support steel must exist before the partitions arrive.
 
-- **Structural steel above the ceiling, per manufacturer.** Bobrick's TB-32 bulletin shows I-beam, channel and angle supports. Bradley's ceiling-hung guide says a "C" channel is required and is not included. The architect or structural engineer designs the support, and others furnish it.
+- **Structural steel above the ceiling, per manufacturer.** Bobrick's TB-32 bulletin shows I-beam, channel and angle supports. Bradley's ceiling-hung guides (Series 600, phenolic and steel) say a "C" channel is required and is not included. The architect or structural engineer designs the support, and others furnish it.
 - **Load.** Bobrick says the ceiling structure must support at least 295 lb per plastic laminate partition and 275 lb per compact grade partition, and must be rigid enough to withstand door swing and impact.
+- **Who supplies the steel.** Hadrian's manuals say ceiling hung and floor to ceiling partitions need an overhead structural member, normally a channel, supplied, installed and drilled by others, with the ceiling studs in place before the finished ceiling. Hadrian recommends the supporting channel sit 1" above the finished ceiling. Bradley's Series 600 guides give the same "C" channel requirement (not included) and adjust the support nuts to about 3/4" below the finished ceiling.
+- **Bracing.** Hadrian's solid plastic manual requires a stabilizer bar across the back of the pilasters, 7 feet above the floor, on ceiling hung installations, and a minimum 1/4" gap between the ceiling stud and the pilaster rebate. Bradley's Series 600 steel guide makes cross bracing standard at ceiling heights of 9 feet and above, and its brochure does not recommend Series 600 for ceilings over 8 feet.
 - **Steel, not wood.** The NY OGS spec says steel overhead support is generally required for ceiling-hung units and that wood construction does not provide adequate support.
 - **The finished ceiling carries nothing.** The NY OGS spec requires anchoring assemblies to connect to structure above the ceiling without transmitting load to the finished ceiling.
 - **Hanger and leveling.** Bobrick's ceiling anchor assembly is a threaded rod, hex nuts, washers, a shoe retainer and an expansion anchor. The pilaster hangs from the rod and is leveled with the nuts. A 4" stainless steel shoe covers the hanger at the ceiling.
@@ -158,13 +171,15 @@ Grab bar sizes and positions are set by the 2010 ADA Standards (sections 604 and
 - **Strength:** the bar, its fasteners and the supporting structure must withstand a 250 lb force without exceeding allowable stresses (609.8).
 - **Ambulatory compartments:** a side wall bar is required on both sides (604.8.2.3).
 
-Do not assume a partition panel can carry a grab bar. Ask the manufacturer in writing whether your partition is rated for it, and have the bar fixed to backing provided by the building.
+Do not assume a partition panel can carry a grab bar. Bradley's Series 400 steel guide refers to "grab bar reinforcement" in some panels and tells the installer to turn the panel so the reinforcement hole or holes sit on the bottom edge, but it does not state a load rating. Ask the manufacturer in writing whether your partition is rated for it, and have the bar fixed to backing provided by the building.
 
 ### Heights
 
 Accessible compartment hardware (pulls and latches) must be mounted 34" minimum to 48" maximum above the floor (404.2.7). A coat hook in an accessible compartment must be within a reach range in section 308. For an unobstructed forward or side reach, that is 48" maximum and 15" minimum (604.8.3, 308.2.1, 308.3.1). A shelf in the compartment must be 40" minimum to 48" maximum above the floor (604.8.3).
 
 *Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.*
+
+Manufacturers also give their own mounting heights. Bradley's Series 400 phenolic guide puts the coat hook 36" above the finished floor on the inside face of the door, the slide latch at 41" above the floor, and the door pulls on 34" to 36" doors at 42-3/4" above the floor (on a 58" door, 30-3/4" up from the bottom edge). Bradley tells installers to check local codes before fixing the pulls and hook. Its 36" hook height sits inside the 15" to 48" reach range above, but confirm your accessible stall against the code that applies.
 
 ## Problems
 
@@ -201,13 +216,16 @@ Ready to plan a restroom? [Get a quote](/get-a-quote). Standard configurations a
 
 ## Sources
 
-Sources marked 2026-10-27 were opened and read that day. The Bradley copy is dealer-hosted and could not be re-opened (HTTP 406); Bradley's own site returned 403, so no manufacturer URL is available.
+Sources marked 2026-10-27 were opened and read that day. The Bradley and Hadrian installation documents are copies of the manufacturers' documents, reviewed 2026-10-27 and cited by title and number or date without a link; find them through [Bradley](https://www.bradleycorp.com/) and [Hadrian](https://www.hadrian-inc.com/).
 
 - [Bobrick, TB-32 Suggested Mounting Systems for Ceiling-Hung Toilet Partitions](https://www.bobrick.com/wp-content/uploads/TB-32.pdf): support types, load (295 lb and 275 lb), anchor assembly, 4" shoe. Checked 2026-10-27.
 - [Bobrick, 1080 Series technical data](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): wall backing, 2" into 3" concrete, stile heights, floor-anchor and ceiling-hung parts. Checked 2026-10-27.
 - [Bobrick, 1550 Series technical data](https://www.bobrick.com/wp-content/uploads/1550_td.pdf): leveling bracket, 58" doors, 83" stile. Checked 2026-10-27.
 - [ASI Global Integrated Privacy installation guide](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Integrated-Privacy-Powder-Coated-and-Stainless-Steel-Installation-Guide.pdf): keeper alignment and drilling, bumper placement, box cam and pintle. Checked 2026-10-27.
-- [Bradley Series 600 powder coated and stainless installation guide (dealer-hosted copy of Bradley's document)](https://ded1740.inmotionhosting.com/~partplus42/wp-content/uploads/2022/01/Bradley-Series-600-Powder-Coated-and-Stainless-Steel-Installation-Guide.pdf): backing warning, "C" channel, 12" level line. Last read 2026-10-26; not re-opened.
+- Bradley, Series 400, 500, 600 and 700 Phenolic Installation Guides, HDWC-INSTR-040, -042, -043 and -044, Rev. A (2021), manufacturer documents, copies reviewed 2026-10-27: backing warning, handling, 12" spacer and level line, 19" and 63" bracket marks, gaps, headrail, "C" channel. Checked 2026-10-27.
+- Bradley, Powder Coated & Stainless Steel Installation Guides, Series 600 (HDWT-INSTR-011 Rev F, 2015) and Series 400 69" and 72" Tall (HDWT-INSTR-038 Rev A, 2018), and Bradmar Restroom Partitions Series 400 (HDWP-INSTR-013 Rev. L, 2018), manufacturer documents, copies reviewed 2026-10-27: the "C" channel, 12" level line and backing warning in the Series 600 steel guide (the document the earlier dealer copy was), cross bracing, grab bar reinforcement note, Bradmar site conditions. Checked 2026-10-27.
+- Bradley, Partitions brochure 3788-2-0325 ([media.bradleycorp.com](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf)): Series 600 not recommended over 8 feet. Checked 2026-10-27.
+- Hadrian, Installation Manual for Metal Toilet Partitions, Standard Series (6/19) and Elite, Elite Plus & Elite Max Series (6/19), and Installation Manual for Solid Plastic Toilet Partitions (4/2014), manufacturer documents, copies reviewed 2026-10-27: overhead member by others, shim blocks, 5/8" centerline deduction, storage, stabilizer bar. Checked 2026-10-27.
 - Ammco (All American Metal) installation instructions: [head rail braced, powder coated and stainless steel](https://allamericanmetal.com/frontend/web/uploads/installation/1585223487-AAMCO-Metal-Installation-Instructions.pdf), [floor supported](https://allamericanmetal.com/frontend/web/uploads/installation/1602879783-AAMCO-INSTALLATION-Metal-Floor-Supported.pdf), [ceiling hung](https://allamericanmetal.com/frontend/web/uploads/installation/1602879850-AAMCO-INSTALLATION-Metal-Ceiling-Hung.pdf) and [solid plastic (HDPE)](https://allamericanmetal.com/frontend/web/uploads/installation/1616505699-Solid-Partitions---Installation-Instructions-2018.pdf): spacer block, shim, shoe, leveling, drill-in-place, ceiling bolt, latch and hinge notes. Checked 2026-10-27.
 - [Scranton Products Hiny Hiders guide specification](http://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): 30-degree cams. Checked 2026-10-27.
 - [Scranton Products partition spec form](http://www.scrantonproducts.com/wp-content/uploads/2015/05/Partition__Vanity_Spec_Form_Estimating-3.pdf): latches and strikes cannot be mixed. Checked 2026-10-27.
@@ -235,8 +253,7 @@ None. This is a new page. There is no live version.
 
 ## To verify when sources are reachable
 
-- Whether partitions may carry a grab bar, for each brand: not found in the Bobrick (1080, 1550, 1040, 1090) installation instructions or technical data (checked 2026-10-27: not found). The body keeps the advice to ask the manufacturer in writing.
-- Full step order, fastener spacing, bracket heights, door gaps and tool lists per brand: the manufacturer installation documents are now linked from /guides/installation-instructions, but the body here stays a generic overview. Bradley and Hadrian official documents could not be reached (see that page). Ammco's four documents are now cited for the short additions above; the solid plastic PDF is mostly drawings, so only its layout, shoe, wall bracket, panel, hinge and tool pages were used.
+- Whether partitions may carry a grab bar, for each brand: not found in the Bobrick (1080, 1550, 1040, 1090), Hadrian or Bradley installation documents or data (checked 2026-10-27: not found; Bradley's Series 400 steel guide mentions grab bar reinforcement in panels but gives no rating). The body keeps the advice to ask the manufacturer in writing.
+- Full step order, fastener spacing, bracket heights, door gaps and tool lists per brand: the manufacturer installation documents are linked or listed on /guides/installation-instructions, and the body here stays a generic overview with a few Bradley, Hadrian and Ammco details. Ammco's solid plastic PDF is mostly drawings, so only its layout, shoe, wall bracket, panel, hinge and tool pages were used. The Hadrian Standard Series stainless copy is the one reviewed for the metal manual.
 - Uneven gaps, loose panels and not-plumb fixes are general, drawn from level and backing facts only. Confirm manufacturer tolerances.
-- Whether the Bradley 12" level line applies beyond ceiling-hung guides (the Bradley document could not be re-opened).
-- Coat hook mounting heights beyond the ADA reach ranges: no manufacturer heights confirmed.
+- Coat hook mounting heights beyond the ADA reach ranges: Bradley's Series 400 phenolic guide gives 36" (confirmed 2026-10-27); no other manufacturer's heights confirmed.

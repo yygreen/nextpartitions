@@ -97,7 +97,8 @@ No. We supply partitions. Follow the manufacturer's instructions and approved dr
 - [Scranton Products color visualizers](https://www.scrantonproducts.com/marketing/product-color-visualizers/): Standard Color Collection and NFPA 286. Checked 2026-10-27.
 - [Bobrick toilet partitions CEU presentation](https://www.bobrick.com/wp-content/uploads/SCC-Toilet-Partitions_Commercial.pdf): 55 and 58 inch standard heights, 72 inch privacy. Checked 2026-10-27.
 - [ASSDA, stainless steel for indoor swimming pools](https://www.assda.asn.au/blog/353-stainless-steel-for-indoor-swimming-pools) and [Nickel Institute](https://www.nickelinstitute.org/media/8daa77b1620dde6/14015_ambient_temperaturestress_corrosioncrackingofausteniticstainlesssteelinswimmingpools.pdf): chloride and stainless in pool air. ASSDA checked 2026-10-27; Nickel Institute PDF not re-checked (403 on 2026-10-27, last read 2026-10-26).
-- [Bradley PH400 phenolic data sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): example layout behind the drawing. Checked 2026-10-27.
+- [Bradley PH400 phenolic data sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): example layout behind the drawing; 58 inch doors and panels (12 inches up) and 72 inch (6 inches up). Checked 2026-10-27.
+- Hadrian, Guide Specification 10 21 13.19, Plastic Toilet Compartments ([Zurn Elkay](https://www.worlddryer.com/content/dam/zurnv49/resources/specification/centralized-specs/documents/guide-specs/10-21-13.19-hadrian-plastic-toilet-compartments.docx)): 55 inch doors and panels (solid plastic). Checked 2026-10-27.
 
 <!-- For Marc -->
 ## Corrections to the current page
@@ -110,7 +111,6 @@ No. We supply partitions. Follow the manufacturer's instructions and approved dr
 ## To verify when sources are reachable
 
 - Nickel Institute pool-air PDF: refused with 403 on 2026-10-27, so it could not be re-read; the ASSDA article covers the chloride point. Re-check the PDF or drop it.
-- Confirm the 55/58/72 inch height statement against a current manufacturer sheet.
 
 ## Implementation notes
 
