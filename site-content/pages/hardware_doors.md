@@ -28,6 +28,11 @@ Accessible (ADA) and outswing door configurations are available in each material
 
 **About color matching.** We match to the manufacturer's current color or the closest available finish. Colors change over the years, and an older door will have faded, so a new door may not be an exact match. Metpar warns that printed swatches are only a representation and recommends viewing an actual sample. Ask us for a sample if the match matters.
 
+
+:::expert
+What do buyers most often get wrong when they order a replacement door?
+:::
+
 ## How to measure a stall door
 
 ![How to measure a bathroom stall door for a replacement](/images/diagrams/measure-replacement-door.svg)

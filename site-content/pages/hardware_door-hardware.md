@@ -35,6 +35,11 @@ Hinges and latches have their own pages: [Hinges](/hardware/hinges) and [Locks &
 
 All American Metal (Ammco) lists these as separate parts for its powder coated and stainless partitions: a coat hook with bumper for inswing doors, a two-prong coat hook for outswing doors, a door bumper for outswing doors, door pulls, and strike and keeper sets. Scranton Products' Hiny Hiders specification calls for a combination coat hook and bumper, and for outswing accessible doors to get a second door pull and a door stop.
 
+
+:::expert
+Which door hardware fails first on busy restrooms, and what lasts?
+:::
+
 ## Door kits
 
 Several manufacturers sell complete door kits, which is often easier than buying parts one by one:

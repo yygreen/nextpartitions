@@ -27,6 +27,11 @@ Send the part sizes and photos with a [quote request](/get-a-quote). Standard co
 
 Panels are the dividers between stalls. They are not numbered on the drawing; they run between the pilasters.
 
+
+:::expert
+Which sizes do buyers most often mix up when they order?
+:::
+
 ## Standard heights
 
 | Part | Standard size | Notes |

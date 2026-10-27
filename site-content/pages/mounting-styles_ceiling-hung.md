@@ -27,6 +27,11 @@ Ceiling hung toilet partitions, also called ceiling mounted or suspended partiti
 
 The New York State OGS master spec sets the key rule: anchoring assemblies connect to "structural support above finished ceiling," and must "support pilasters from structure without transmitting load to finished ceiling." The ceiling tile or drywall carries nothing.
 
+
+:::expert
+How often is the steel above the ceiling missing, and who usually finds out?
+:::
+
 ## Ceiling requirements
 
 This is where ceiling hung projects succeed or fail, so settle it before you choose the style.

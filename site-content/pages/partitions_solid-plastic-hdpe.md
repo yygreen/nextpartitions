@@ -26,6 +26,11 @@ Scranton Products makes its Hiny Hiders partitions from 1-inch solid HDPE with t
 
 Hinges, latches and brackets are usually aluminum or stainless. Scranton specifies 8-inch extruded aluminum wrap-around hinges and 3" molded HDPE or 20-gauge stainless pilaster sleeves for overhead-braced Hiny Hiders. See [hinges](/hardware/hinges) and [parts](/hardware/parts).
 
+
+:::expert
+When do you recommend solid plastic (HDPE), and when do you steer a buyer away from it?
+:::
+
 ## Fire rating: HDPE must pass NFPA 286
 
 This is the point to get right. The International Building Code (Section 803.9 in the 2015 and 2018 editions) requires HDPE and polypropylene used as interior finish, which includes toilet partitions, to comply with Section 803.1.1, the NFPA 286 room-corner fire test. Other partition materials are normally tested to ASTM E84 and given a Class A, B or C. The requirement for HDPE dates from the 2009 IBC and IFC and the 2012 NFPA codes, according to Bobrick's code fact sheet.

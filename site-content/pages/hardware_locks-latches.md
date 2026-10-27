@@ -39,6 +39,11 @@ An indicator latch shows people outside whether the stall is in use. Manufacture
 
 Scranton Products specifies a heavy-duty extruded aluminum latch and housing on Hiny Hiders, with either a slide bolt and button or a slide latch and paddle. Scranton's spec form also lists aluminum and stainless steel latch sets with emergency access, and notes that latches and strikes can't be mixed.
 
+
+:::expert
+What do buyers most often get wrong when they order a latch?
+:::
+
 ## Keepers and strikes
 
 ![Bathroom stall latch on the door and keeper on the pilaster](/images/diagrams/latch-keeper.svg)

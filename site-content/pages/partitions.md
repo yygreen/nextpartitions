@@ -20,6 +20,11 @@ Commercial bathroom partitions come in five materials: powder coated steel, stai
 
 The numbered parts are headrail, pilaster, door, hinges, latch and keeper, and pilaster shoe. Pilaster thickness varies by material: see the table below.
 
+
+:::expert
+When a buyer asks for the cheapest option, what do you tell them, and when do you talk them out of it?
+:::
+
 ## How the five materials are built
 
 ![Edge cross-sections of the five partition materials at the same scale](/images/diagrams/material-sections-compare.svg)

@@ -29,6 +29,11 @@ An overhead braced stall has four kinds of parts:
 
 Panels and doors hang between the pilasters and the walls on brackets. Installation specs line the tops of the doors up with the headrail so everything reads as one straight line. The New York State OGS master spec, for example, says to fasten the headrail to each pilaster with at least two fasteners and adjust doors "so tops of doors are parallel with overhead brace."
 
+
+:::expert
+When is overhead-braced the right call, and when isn't it?
+:::
+
 ## Why specifiers choose overhead braced
 
 - **No ceiling work.** The headrail is carried by the pilasters and the walls, not the ceiling. You don't need steel above the ceiling, unlike [ceiling hung](/mounting-styles/ceiling-hung) and [floor to ceiling](/mounting-styles/floor-to-ceiling).

@@ -29,6 +29,11 @@ The good news: Bobrick, ASI, Bradley and Scranton Products all sell partitions t
 3. **Above the doors and panels.** With 58" doors at 12", the top of the stall is at 70", so a tall person can see over.
 4. **At the wall.** Where a panel or pilaster meets the building wall.
 
+
+:::expert
+How many of your buyers now ask for no-gap partitions, and has it grown?
+:::
+
 ## Why the gaps exist
 
 ### The door needs room to swing

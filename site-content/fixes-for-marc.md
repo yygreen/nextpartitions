@@ -66,3 +66,17 @@ The rewritten pages in `pages/` already use the promise.
 ## 8. A drawing in the page hero
 
 Each rebuilt page shows its main drawing beside the title, drawn straight on the dark hero with no card: light lines, the orange subject kept, the building and product as faint tints (CSS overrides on the SVG colors) (two columns from 900px, stacked under the button on a phone). The previews do this in `build/build.mjs` (`heroArt`): the page's first drawing, or a fitting one for pages without their own. Once Abe sends job photos, a real photo of a finished restroom can take the drawing's place on the pages where it fits better.
+
+## 9. Expert advice boxes
+
+24 pages have an "expert advice" box: a quote card in the brand colors (brown `#2d1e14`, orange `#fe7802` bar, eyebrow and quote mark, off-white text) with the quote, the name and role under it, and the question we asked in small type. In the page files it's a block:
+
+```
+:::expert
+The question we asked
+> The quote, in the expert's own words.
+— Name, role
+:::
+```
+
+Until Abe answers, a block holds only the question and the preview shows a placeholder. **Don't publish a box without a quote:** leave it out of the live page until the answer is in. The previews render it in `build/build.mjs` (`expert`).

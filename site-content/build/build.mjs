@@ -74,7 +74,20 @@ function styled(html) {
     .replace(/<blockquote>/g, '<blockquote class="border-l-4 border-brand-red pl-4 italic mb-4">')
     .replace(/<a href=/g, '<a class="text-brand-red hover:underline font-medium" href=')
 }
-const md = (s) => styled(marked.parse(s, { gfm: true }))
+// Expert advice box (":::expert" … ":::" in a page): a quote card in the brand colors. Until Abe's answer is in,
+// the block holds only the question, and the card shows a placeholder quote and attribution.
+// With an answer, write it as: question line, then "> quote", then "— Name, role".
+const expert = (block) => {
+  const lines = block.trim().split('\n').map((l) => l.trim()).filter(Boolean)
+  const q = lines.find((l) => !l.startsWith('>') && !l.startsWith('—')) || ''
+  const quote = lines.filter((l) => l.startsWith('>')).map((l) => l.slice(1).trim()).join(' ')
+  const by = (lines.find((l) => l.startsWith('—')) || '').slice(1).trim()
+  return `<aside class="np-expert"><p class="np-expert-eyebrow"><span class="np-expert-mark">N</span>Your Next Partitions expert advice</p>`
+    + `<blockquote class="np-expert-quote${quote ? '' : ' np-expert-ph'}">${esc(quote || 'Placeholder: the answer goes here, in the expert\'s own words, two to four sentences of first-hand advice from real jobs.')}</blockquote>`
+    + `<p class="np-expert-by">${esc(by || '[Name], [role], Next Partitions')}</p>`
+    + `<p class="np-expert-q">We asked: ${esc(q)}</p></aside>`
+}
+const md = (s) => styled(marked.parse(s.replace(/^:::expert\n([\s\S]*?)\n:::$/gm, (_, b) => expert(b)), { gfm: true }))
 
 function faqItems(section) {
   return section.md.split(/^### /m).filter((x) => x.trim()).map((q) => { const nl = q.indexOf('\n'); return { q: q.slice(0, nl).trim(), a: q.slice(nl + 1).trim() } })
@@ -159,7 +172,7 @@ ${shell.match(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(fm.title)}</title>`)
     .replace(/<meta name="description"[^>]*>/, '')
     .replace(/<link rel="canonical"[^>]*>/, '')
-    .replace('</head>', `<meta name="description" content="${esc(fm.meta)}"/>\n<link rel="canonical" href="${SITE}${url}"/>\n<meta name="robots" content="noindex"/>\n${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join('\n')}\n<style>.np-hero{display:grid;gap:32px;align-items:center}@media(min-width:900px){.np-hero{grid-template-columns:1.1fr 1fr}}.np-hero-art{margin:0}.np-hero-art svg{width:100%;height:auto;display:block}.np-hero-art [fill="#ffffff"]{fill:transparent}.np-hero-art :not(text)[fill="#fff"]{fill:rgba(255,255,255,.06)}.np-hero-art text[stroke="#fff"]{stroke:none}.np-hero-art [stroke="#1c0e05"]{stroke:#f3ece6}.np-hero-art [fill="#1c0e05"]{fill:#f3ece6}.np-hero-art [stroke="#7a6a5e"]{stroke:#c4b8ae}.np-hero-art [fill="#7a6a5e"]{fill:#c4b8ae}.np-hero-art [fill="#f2f0ec"]{fill:rgba(255,255,255,.07)}.np-hero-art [stroke="#cfc7bc"]{stroke:rgba(255,255,255,.22)}.np-hero-art [fill="#fff1e5"]{fill:rgba(254,120,2,.2)}.np-sources a{overflow-wrap:anywhere}details>summary{list-style:none}details>summary::after{content:"+";float:right;font-weight:400}details[open]>summary::after{content:"–"}</style>\n</head>`)
+    .replace('</head>', `<meta name="description" content="${esc(fm.meta)}"/>\n<link rel="canonical" href="${SITE}${url}"/>\n<meta name="robots" content="noindex"/>\n${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join('\n')}\n<style>.np-hero{display:grid;gap:32px;align-items:center}@media(min-width:900px){.np-hero{grid-template-columns:1.1fr 1fr}}.np-hero-art{margin:0}.np-hero-art svg{width:100%;height:auto;display:block}.np-hero-art [fill="#ffffff"]{fill:transparent}.np-hero-art :not(text)[fill="#fff"]{fill:rgba(255,255,255,.06)}.np-hero-art text[stroke="#fff"]{stroke:none}.np-hero-art [stroke="#1c0e05"]{stroke:#f3ece6}.np-hero-art [fill="#1c0e05"]{fill:#f3ece6}.np-hero-art [stroke="#7a6a5e"]{stroke:#c4b8ae}.np-hero-art [fill="#7a6a5e"]{fill:#c4b8ae}.np-hero-art [fill="#f2f0ec"]{fill:rgba(255,255,255,.07)}.np-hero-art [stroke="#cfc7bc"]{stroke:rgba(255,255,255,.22)}.np-hero-art [fill="#fff1e5"]{fill:rgba(254,120,2,.2)}.np-expert{background:#2d1e14;color:#fbfaf9;border-radius:12px;padding:28px 28px 24px;margin:8px 0 32px;position:relative;overflow:hidden}.np-expert::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:#fe7802}.np-expert-eyebrow{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#fe7802;margin:0 0 14px}.np-expert-mark{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:4px;background:#fe7802;color:#fff;font-weight:800;font-size:14px;letter-spacing:0}.np-expert-quote{position:relative;margin:0 0 14px;padding:0 0 0 44px;font-size:20px;line-height:1.5;font-weight:500;color:#fbfaf9;border:0;font-style:normal}.np-expert-quote::before{content:"“";position:absolute;left:0;top:-14px;font-size:64px;line-height:1;color:#fe7802;font-weight:700}.np-expert-ph{color:rgba(251,250,249,.6);font-style:italic}.np-expert-by{margin:0 0 0 44px;font-size:14px;font-weight:600;color:#fbfaf9}.np-expert-q{margin:14px 0 0 44px;padding-top:12px;border-top:1px solid rgba(251,250,249,.15);font-size:13px;color:rgba(251,250,249,.65)}.np-sources a{overflow-wrap:anywhere}details>summary{list-style:none}details>summary::after{content:"+";float:right;font-weight:400}details[open]>summary::after{content:"–"}</style>\n</head>`)
     .replace(/<body([^>]*)>/, `<body$1><div style="background:#111;color:#fff;font:12px/1.4 Inter,system-ui,sans-serif;padding:6px 16px;text-align:center">Preview of new page content for nextpartitions.com${url} · not the live site · <a href="index.html" style="color:#fff;text-decoration:underline">all preview pages</a></div>`)
     // Links: rebuilt pages stay in the preview; everything else goes to the live site.
     .replace(/(href|src)="\/(?!\/)([^"]*)"/g, (_, attr, path) => {

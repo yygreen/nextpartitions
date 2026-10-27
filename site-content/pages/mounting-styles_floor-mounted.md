@@ -29,6 +29,11 @@ Without a headrail, each pilaster has to stay rigid on its own anchors.
 
 Panels and doors attach to the pilasters and to the walls with brackets, as in every style. The walls need backing behind those brackets. Bobrick notes that wall backing is required to secure the mounting brackets.
 
+
+:::expert
+When is floor-mounted the right call, and when isn't it?
+:::
+
 ## Why specifiers choose floor mounted
 
 - **Open look.** Hadrian says floor-mounted partitions "lend an air of spaciousness" and that the "absence of top structure makes them the ideal choice for high ceiling areas."

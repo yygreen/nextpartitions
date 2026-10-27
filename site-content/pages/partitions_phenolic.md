@@ -31,6 +31,11 @@ Phenolic parts are thinner than laminate or HDPE parts. Bobrick (1080 Series, Du
 2. **Faces:** melamine decorative surface.
 3. **Edge:** the cut edge of the fused sheet. It shows the core color: black on black core, the panel color on color-through.
 
+
+:::expert
+When do you recommend phenolic, and when do you steer a buyer away from it?
+:::
+
 ## Fire rating
 
 Fire class is set by the product line, not by the material name.

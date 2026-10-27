@@ -59,3 +59,34 @@ Short answers are fine: a sentence, a voice note or a quick call. Your answers g
 
 **Photos**
 32. Job photos you have the rights to use, especially straight-on shots of a whole restroom, a hinge, a latch and a ceiling-hung install. Real installs beat any drawing.
+
+## Part 3: one quote per page (for the "expert advice" boxes)
+
+Each rebuilt page has a branded box for a short quote from you: two to four sentences, in your own words, from real jobs. Answer as many as you like; a page without an answer simply doesn't show the box. Tell us the name and role to print under each quote (yours, or someone on your team).
+
+| Page | Question |
+|---|---|
+| `/blog/what-are-bathroom-partitions-made-of` | Which material do you sell most, and to which kind of building? |
+| `/blog/why-do-bathroom-stalls-have-gaps` | How many of your buyers now ask for no-gap partitions, and has it grown? |
+| `/guides/bathroom-stall-dimensions` | Do buyers ask for wider or deeper stalls than standard? Which sizes, and why? |
+| `/guides/how-to-install-toilet-partitions` | What should a buyer check or prepare before the installer arrives? |
+| `/guides/restroom-layout` | What layout mistake do you see most on drawings from architects or contractors? |
+| `/guides/standard-sizes` | Which sizes do buyers most often mix up when they order? |
+| `/hardware` | Which hardware upgrade is worth paying for, and which isn't? |
+| `/hardware/door-hardware` | Which door hardware fails first on busy restrooms, and what lasts? |
+| `/hardware/doors` | What do buyers most often get wrong when they order a replacement door? |
+| `/hardware/hinges` | What photo or measurement do you need to match a hinge on the first try? |
+| `/hardware/locks-latches` | What do buyers most often get wrong when they order a latch? |
+| `/hardware/parts` | What should a buyer send so you can match a part on the first try? |
+| `/industries` | Which facility type gets the material choice wrong most often, and what should it use? |
+| `/mounting-styles` | What's the most common reason a job switches mounting style after the first quote? |
+| `/mounting-styles/ceiling-hung` | How often is the steel above the ceiling missing, and who usually finds out? |
+| `/mounting-styles/floor-mounted` | When is floor-mounted the right call, and when isn't it? |
+| `/mounting-styles/floor-to-ceiling` | Where do you recommend floor-to-ceiling over overhead-braced? |
+| `/mounting-styles/overhead-braced` | When is overhead-braced the right call, and when isn't it? |
+| `/partitions` | When a buyer asks for the cheapest option, what do you tell them, and when do you talk them out of it? |
+| `/partitions/phenolic` | When do you recommend phenolic, and when do you steer a buyer away from it? |
+| `/partitions/plastic-laminate` | When do you recommend plastic laminate, and when do you steer a buyer away from it? |
+| `/partitions/powder-coated-steel` | When do you recommend powder coated steel, and when do you steer a buyer away from it? |
+| `/partitions/solid-plastic-hdpe` | When do you recommend solid plastic (HDPE), and when do you steer a buyer away from it? |
+| `/partitions/stainless-steel` | When do you recommend stainless steel, and when do you steer a buyer away from it? |
