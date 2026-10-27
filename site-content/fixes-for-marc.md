@@ -69,7 +69,7 @@ Each rebuilt page shows its main drawing beside the title, drawn straight on the
 
 ## 9. Expert advice boxes
 
-24 pages have an expert advice box, laid out like the title block of a technical drawing to match the drawings: a brown (`#2d1e14`) panel with the quote large across the top, and a ruled strip below with three cells: "Advice by" (name and role), "We asked" (the question) and the logo cell (the orange N with "Next Partitions / Expert advice"). Labels are small orange caps, the rest off-white. On a phone the strip stacks. In the page files it's a block:
+24 pages have an expert advice box, laid out like the title block of a technical drawing to match the drawings: a brown (`#2d1e14`) panel with the quote large across the top, and a ruled strip below with two cells: the name with the role under it, and the logo cell (the orange N with "Next Partitions / Expert advice"). No labels, and the question isn't shown: it stays in the page file for reference. On a phone the logo cell shows the N only. In the page files it's a block:
 
 ```
 :::expert
@@ -79,4 +79,4 @@ The question we asked
 :::
 ```
 
-Until Abe answers, a block holds only the question and the preview shows a placeholder. **Don't publish a box without a quote:** leave it out of the live page until the answer is in. The previews render it in `build/build.mjs` (`expert`).
+Until Abe answers, a block holds only the question and the preview shows a placeholder quote, name and role. **Don't publish a box without a quote:** leave it out of the live page until the answer is in. The previews render it in `build/build.mjs` (`expert`).
