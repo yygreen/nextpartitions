@@ -6,7 +6,7 @@
 // the preview; every other link goes to the live site.
 //
 //   cd site-content/build && npm install && npm run build    → open ../preview/index.html
-import { readFileSync, readdirSync, writeFileSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { marked } from 'marked'
 
 const SITE = 'https://nextpartitions.com'
@@ -46,17 +46,27 @@ const DIAGRAMS = '../design/diagrams/'
 const SHEETS = JSON.parse(readFileSync(`${DIAGRAMS}sheets.json`, 'utf8'))
 const inlineSvg = (file) => readFileSync(`${DIAGRAMS}${file}`, 'utf8')
   .replace(/ width="(\d+)" height="\d+" role="img"/, ' style="width:100%;height:auto;display:block" role="img"')
-// Standalone drawings are landscape and 780 wide; on a phone they keep a 600px minimum and scroll sideways.
-// A drawing with a sheet (plan, front elevation, side view, details) renders as one figure: wide views across the
-// full width, the side view and details side by side on desktop and stacked on a phone, each with a view label.
+// Phone variants of a drawing (design/diagrams.mjs): <name>-m.svg, or <name>-m1.svg, -m2.svg … when it takes
+// several frames. Each is 360 wide, so its text stays 12–13 px in a phone's content column.
+const phoneFiles = (name) => existsSync(`${DIAGRAMS}${name}-m.svg`) ? [`${name}-m.svg`]
+  : Array.from({ length: 9 }, (_, i) => `${name}-m${i + 1}.svg`).filter((f) => existsSync(`${DIAGRAMS}${f}`))
+// A drawing with phone variants: the desktop drawing in .np-d, the phone frames stacked in .np-m; CSS shows one
+// (below 640 px, the phone frames). Nothing scrolls sideways.
+const responsive = (file) => {
+  const m = phoneFiles(file.replace(/\.svg$/, ''))
+  return m.length ? `<div class="np-d">${inlineSvg(file)}</div><div class="np-m">${m.map(inlineSvg).join('')}</div>` : inlineSvg(file)
+}
+// Standalone drawings are landscape and 780 wide, shown at their real size on desktop and as their phone variant
+// on a phone. A drawing with a sheet (plan, front elevation, side view, details) renders as one figure: wide views
+// across the full width, the side view and details side by side on desktop and stacked on a phone (they are 400
+// wide and scale to the column), each with a view label.
 const diagram = (src, alt) => {
   const name = src.split('/').pop().replace(/\.svg$/, '')
   const sheet = SHEETS[name]
-  if (!sheet) return `<figure class="border border-border rounded-lg p-3 mb-4 bg-card"><div class="overflow-x-auto"><div style="min-width:600px">${inlineSvg(`${name}.svg`)}</div></div></figure>`
-  // Wide views keep a readable size on a phone (560px minimum) and scroll sideways inside the card.
-  const view = (v) => `<div class="${v.wide ? 'col-span-full' : ''}"><p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">${esc(v.label)}</p>${v.wide ? `<div class="overflow-x-auto"><div style="min-width:560px">${inlineSvg(v.file)}</div></div>` : inlineSvg(v.file)}</div>`
+  if (!sheet) return `<figure class="np-fig border border-border rounded-lg p-3 mb-4 bg-card">${responsive(`${name}.svg`)}</figure>`
+  const view = (v) => `<div class="${v.wide ? 'col-span-full' : ''} min-w-0"><p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">${esc(v.label)}</p>${responsive(v.file)}</div>`
   const wide = sheet.filter((v) => v.wide), rest = sheet.filter((v) => !v.wide)
-  return `<figure class="border border-border rounded-lg p-4 mb-4 bg-card"><div class="grid grid-cols-1 gap-6">${wide.map(view).join('')}</div><div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">${rest.map(view).join('')}</div></figure>`
+  return `<figure class="np-fig border border-border rounded-lg p-4 mb-4 bg-card"><div class="grid grid-cols-1 gap-6">${wide.map(view).join('')}</div><div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">${rest.map(view).join('')}</div></figure>`
 }
 function styled(html) {
   return html
@@ -96,21 +106,32 @@ const expert = (block) => {
 // title-block family as the quote card, inverted: paper ground, ink frame, a brown band on top with the logo.
 const advice = (block) => `<aside class="np-adv"><div class="np-adv-band"><img src="${LOGO}" alt="" width="22" height="23"><span>Next Partitions advice</span></div>`
   + `<div class="np-adv-body">${marked.parse(block.trim())}</div></aside>`
-const md = (s) => styled(marked.parse(s.replace(/^:::expert\n([\s\S]*?)\n:::$/gm, (_, b) => expert(b)).replace(/^:::advice\n([\s\S]*?)\n:::$/gm, (_, b) => advice(b)), { gfm: true }))
+// Tables with four or more columns turn into stacked cards on a phone: each row a card, each value under its
+// column name (data-label), so nothing scrolls sideways or breaks mid-word.
+const cards = (html) => html.replace(/<table class="([^"]*)">([\s\S]*?)<\/table>/g, (t, cls, inner) => {
+  const heads = [...inner.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((m) => strip(m[1]))
+  if (heads.length < 4) return t
+  const body = inner.replace(/<tr>([\s\S]*?)<\/tr>/g, (r, cells) => { let k = 0; return `<tr>${cells.replace(/<td([^>]*)>/g, (_, a) => `<td${a} data-label="${esc(heads[k++] || '')}">`)}</tr>` })
+  return `<table class="${cls} np-cards">${body}</table>`
+})
+const md = (s) => cards(styled(marked.parse(s.replace(/^:::expert\n([\s\S]*?)\n:::$/gm, (_, b) => expert(b)).replace(/^:::advice\n([\s\S]*?)\n:::$/gm, (_, b) => advice(b)), { gfm: true })))
 
 function faqItems(section) {
   return section.md.split(/^### /m).filter((x) => x.trim()).map((q) => { const nl = q.indexOf('\n'); return { q: q.slice(0, nl).trim(), a: q.slice(nl + 1).trim() } })
 }
 
 // Hero drawing: the page's own first drawing (a mounting sheet shows its single front view), or a fitting one for
-// pages that have none. Drawn straight on the dark hero (recolored by CSS: light lines, orange kept) beside the title; it stacks under the button on a phone.
+// pages that have none. Drawn straight on the dark hero (recolored by CSS: light lines, orange kept) beside the title; it stacks under the button on a phone,
+// where it shows the drawing's first phone frame. Its ids get an "h-" prefix: the same drawing is often inlined again in the page.
 const HERO_FALLBACK = { '/': 'mounting-styles-compare', '/about': 'mounting-styles-compare', '/faq': 'partition-anatomy', '/brands': 'partition-anatomy', '/brands/hadrian': 'partition-anatomy', '/blog': 'stall-gaps', '/guides': 'sheet-plan', '/guides/installation-instructions': 'mounting-styles-compare', '/industries': 'sheet-plan' }
 function heroArt(raw, url) {
   const m = raw.match(/\(\/images\/diagrams\/([a-z0-9-]+)\.svg\)/)
   const name = m ? m[1] : HERO_FALLBACK[url]
   if (!name) return ''
-  const svg = inlineSvg(`${name}.svg`)
-  return `<figure class="np-hero-art" aria-hidden="true">${svg.replace(/<title[\s\S]*?<\/title>|<desc[\s\S]*?<\/desc>/g, '')}</figure>`
+  const art = (file) => inlineSvg(file).replace(/<title[\s\S]*?<\/title>|<desc[\s\S]*?<\/desc>/g, '').replace(/ aria-labelledby="[^"]*"/, '')
+    .replace(/ id="([^"]+)"/g, ' id="h-$1"').replace(/url\(#/g, 'url(#h-')
+  const pm = phoneFiles(name)
+  return `<figure class="np-hero-art" aria-hidden="true">${pm.length ? `<div class="np-d">${art(`${name}.svg`)}</div><div class="np-m">${art(pm[0])}</div>` : art(`${name}.svg`)}</figure>`
 }
 
 function build(file, built) {
@@ -181,7 +202,7 @@ ${shell.match(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(fm.title)}</title>`)
     .replace(/<meta name="description"[^>]*>/, '')
     .replace(/<link rel="canonical"[^>]*>/, '')
-    .replace('</head>', `<meta name="description" content="${esc(fm.meta)}"/>\n<link rel="canonical" href="${SITE}${url}"/>\n<meta name="robots" content="noindex"/>\n${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join('\n')}\n<style>.np-hero{display:grid;gap:32px;align-items:center}@media(min-width:900px){.np-hero{grid-template-columns:1.1fr 1fr}}.np-hero-art{margin:0}.np-hero-art svg{width:100%;height:auto;display:block}.np-hero-art [fill="#ffffff"]{fill:transparent}.np-hero-art :not(text)[fill="#fff"]{fill:rgba(255,255,255,.06)}.np-hero-art text[stroke="#fff"]{stroke:none}.np-hero-art [stroke="#1c0e05"]{stroke:#f3ece6}.np-hero-art [fill="#1c0e05"]{fill:#f3ece6}.np-hero-art [stroke="#7a6a5e"]{stroke:#c4b8ae}.np-hero-art [fill="#7a6a5e"]{fill:#c4b8ae}.np-hero-art [fill="#f2f0ec"]{fill:rgba(255,255,255,.07)}.np-hero-art [stroke="#cfc7bc"]{stroke:rgba(255,255,255,.22)}.np-hero-art [fill="#fff1e5"]{fill:rgba(254,120,2,.2)}.np-tb{margin:8px 0 36px;background:#2d1e14;color:#fbfaf9;border:1px solid #2d1e14}.np-tb-quote{margin:0;padding:32px 32px 28px;font-size:22px;line-height:1.45;font-weight:600;letter-spacing:-.01em;color:#fbfaf9;border:0;font-style:normal}.np-tb-ph{font-weight:500;font-style:italic;color:rgba(251,250,249,.55)}.np-tb-strip{display:grid;grid-template-columns:1fr auto;border-top:1px solid rgba(251,250,249,.18)}.np-tb-cell{padding:12px 16px;border-left:1px solid rgba(251,250,249,.18);display:flex;flex-direction:column;gap:3px;min-width:0}.np-tb-cell:first-child{border-left:0;padding-left:32px}.np-tb-label{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#fe7802}.np-tb-val{font-size:14px;font-weight:600;color:#fbfaf9}.np-tb-role{font-size:13px;color:rgba(251,250,249,.7)}.np-tb-brand{flex-direction:row;align-items:center;gap:10px;padding-right:20px;font-size:12px;line-height:1.3;color:rgba(251,250,249,.75)}.np-tb-brand b{color:#fbfaf9;font-size:13px}@media(max-width:640px){.np-tb-quote{padding:24px 20px 20px;font-size:19px}.np-tb-cell{padding:12px 14px}.np-tb-cell:first-child{padding-left:20px}.np-tb-brand span{display:none}}.np-adv{margin:8px 0 36px;background:#fff;border:1.5px solid #2d1e14}.np-adv-band{display:flex;align-items:center;gap:10px;background:#2d1e14;color:#fbfaf9;padding:10px 20px;font-size:13px;font-weight:700;letter-spacing:.01em}.np-adv-body{padding:20px 24px 4px;border-top:4px solid #fe7802}.np-adv-body p{font-size:17px;line-height:1.6;color:#1c0e05!important;font-weight:500}.np-sources a{overflow-wrap:anywhere}details>summary{list-style:none}details>summary::after{content:"+";float:right;font-weight:400}details[open]>summary::after{content:"–"}</style>\n</head>`)
+    .replace('</head>', `<meta name="description" content="${esc(fm.meta)}"/>\n<link rel="canonical" href="${SITE}${url}"/>\n<meta name="robots" content="noindex"/>\n${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join('\n')}\n<style>.np-m{display:none}.np-m>svg+svg{margin-top:12px}@media(max-width:640px){.np-d{display:none}.np-m{display:block}.np-fig{padding:6px!important}main table{font-size:12px;line-height:1.4;table-layout:fixed}main table.np-cards,main .np-cards tbody,main .np-cards tr,main .np-cards td{display:block;width:100%}main .np-cards thead{display:none}main .np-cards tr{border:1px solid var(--border,#e5e0da);border-radius:8px;margin-bottom:10px;padding:6px 10px}main .np-cards td{padding:4px 0!important;border:0!important}main .np-cards td::before{content:attr(data-label);display:block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:#7a6a5e}main .np-cards td:first-child{font-weight:600;color:#1c0e05}main .np-cards td:first-child::before{display:none}main th,main td{padding:5px 4px!important;overflow-wrap:break-word;hyphens:auto}}.np-hero{display:grid;gap:32px;align-items:center}@media(min-width:900px){.np-hero{grid-template-columns:1.1fr 1fr}}.np-hero-art{margin:0}.np-hero-art svg{width:100%;height:auto;display:block}.np-hero-art [fill="#ffffff"]{fill:transparent}.np-hero-art :not(text)[fill="#fff"]{fill:rgba(255,255,255,.06)}.np-hero-art text[stroke="#fff"]{stroke:none}.np-hero-art [stroke="#1c0e05"]{stroke:#f3ece6}.np-hero-art [fill="#1c0e05"]{fill:#f3ece6}.np-hero-art [stroke="#7a6a5e"]{stroke:#c4b8ae}.np-hero-art [fill="#7a6a5e"]{fill:#c4b8ae}.np-hero-art [fill="#f2f0ec"]{fill:rgba(255,255,255,.07)}.np-hero-art [stroke="#cfc7bc"]{stroke:rgba(255,255,255,.22)}.np-hero-art [fill="#fff1e5"]{fill:rgba(254,120,2,.2)}.np-tb{margin:8px 0 36px;background:#2d1e14;color:#fbfaf9;border:1px solid #2d1e14}.np-tb-quote{margin:0;padding:32px 32px 28px;font-size:22px;line-height:1.45;font-weight:600;letter-spacing:-.01em;color:#fbfaf9;border:0;font-style:normal}.np-tb-ph{font-weight:500;font-style:italic;color:rgba(251,250,249,.55)}.np-tb-strip{display:grid;grid-template-columns:1fr auto;border-top:1px solid rgba(251,250,249,.18)}.np-tb-cell{padding:12px 16px;border-left:1px solid rgba(251,250,249,.18);display:flex;flex-direction:column;gap:3px;min-width:0}.np-tb-cell:first-child{border-left:0;padding-left:32px}.np-tb-label{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#fe7802}.np-tb-val{font-size:14px;font-weight:600;color:#fbfaf9}.np-tb-role{font-size:13px;color:rgba(251,250,249,.7)}.np-tb-brand{flex-direction:row;align-items:center;gap:10px;padding-right:20px;font-size:12px;line-height:1.3;color:rgba(251,250,249,.75)}.np-tb-brand b{color:#fbfaf9;font-size:13px}@media(max-width:640px){.np-tb-quote{padding:24px 20px 20px;font-size:19px}.np-tb-cell{padding:12px 14px}.np-tb-cell:first-child{padding-left:20px}.np-tb-brand span{display:none}}.np-adv{margin:8px 0 36px;background:#fff;border:1.5px solid #2d1e14}.np-adv-band{display:flex;align-items:center;gap:10px;background:#2d1e14;color:#fbfaf9;padding:10px 20px;font-size:13px;font-weight:700;letter-spacing:.01em}.np-adv-body{padding:20px 24px 4px;border-top:4px solid #fe7802}.np-adv-body p{font-size:17px;line-height:1.6;color:#1c0e05!important;font-weight:500}.np-sources a{overflow-wrap:anywhere}details>summary{list-style:none}details>summary::after{content:"+";float:right;font-weight:400}details[open]>summary::after{content:"–"}</style>\n</head>`)
     .replace(/<body([^>]*)>/, `<body$1><div style="background:#111;color:#fff;font:12px/1.4 Inter,system-ui,sans-serif;padding:6px 16px;text-align:center">Preview of new page content for nextpartitions.com${url} · not the live site · <a href="index.html" style="color:#fff;text-decoration:underline">all preview pages</a></div>`)
     // Links: rebuilt pages stay in the preview; everything else goes to the live site.
     .replace(/(href|src)="\/(?!\/)([^"]*)"/g, (_, attr, path) => {

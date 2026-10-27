@@ -22,16 +22,20 @@ const C = {
   orangeTint: '#fff1e5', // orange at ~10% on white
 }
 const FONT = 'Inter, ui-sans-serif, system-ui, sans-serif'
-const S = 3.2 // px per inch in elevations
+let S = 3.2 // px per inch in elevations (phone variants draw at a smaller scale: see withPhone)
+let DIM = 14 // dimension label size (13 on phone variants)
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;')
 // Drawings that explain a principle rather than follow a manufacturer's drawing say so on the drawing.
 const SCHEMATIC = new Set(['mounting-styles-compare', 'partition-anatomy', 'hinge-types', 'measure-replacement-door', 'stall-gaps', 'latch-keeper',
   'material-section-phenolic', 'material-section-solid-plastic', 'material-section-plastic-laminate', 'material-section-powder-coated-steel',
   'material-section-stainless-steel', 'material-sections-compare', 'urinal-spacing', 'measure-new-restroom-plan', 'measure-new-restroom-section'])
+const META = {} // name → [title, desc], reused by the phone variants
 // `frame`: a wider canvas, with the drawing centred in it (standalone drawings are 780 wide, the content column).
 function svg(name, w, h, title, desc, body, frame) {
   if (frame > w) { body = `<g transform="translate(${(frame - w) / 2} 0)">${body}</g>`; w = frame }
+  // Ids inside the body (clip paths) carry the drawing's name, so a page can inline a drawing and its phone variant.
+  for (const id of new Set([...body.matchAll(/ id="([^"]+)"/g)].map((m) => m[1]))) if (!id.endsWith(`-${name}`)) body = body.replaceAll(`id="${id}"`, `id="${id}-${name}"`).replaceAll(`url(#${id})`, `url(#${id}-${name})`)
   // No caption line on drawings: figures are presented as our own (design-language.md).
   const out = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-labelledby="t-${name} d-${name}" font-family="${FONT}">
 <title id="t-${name}">${esc(title)}</title>
@@ -45,6 +49,7 @@ ${body.replaceAll('HATCH', `url(#hatch-${name})`).replaceAll('TICK', `url(#tick-
 </svg>
 `
   writeFileSync(new URL(`${name}.svg`, OUT), out)
+  META[name] = [title, desc]
   return name
 }
 
@@ -57,32 +62,33 @@ const callout = (n, x, y, to) => `${to ? line(x, y, to[0], to[1], { stroke: C.or
 // Vertical dimension at x from y1 to y2 (screen coordinates), label to the side.
 function vdim(x, y1, y2, label, side = 'right') {
   const tx = side === 'right' ? x + 8 : x - 8
-  return `${line(x, y1, x, y2, { stroke: C.muted, sw: 1 })}${line(x - 5, y1, x + 5, y1, { stroke: C.muted, sw: 1 })}${line(x - 5, y2, x + 5, y2, { stroke: C.muted, sw: 1 })}${text(tx, (y1 + y2) / 2 + 5, label, { size: 14, fill: C.muted, anchor: side === 'right' ? 'start' : 'end', weight: 600 })}`
+  return `${line(x, y1, x, y2, { stroke: C.muted, sw: 1 })}${line(x - 5, y1, x + 5, y1, { stroke: C.muted, sw: 1 })}${line(x - 5, y2, x + 5, y2, { stroke: C.muted, sw: 1 })}${text(tx, (y1 + y2) / 2 + 5, label, { size: DIM, fill: C.muted, anchor: side === 'right' ? 'start' : 'end', weight: 600 })}`
 }
 function hdim(y, x1, x2, label) {
-  return `${line(x1, y, x2, y, { stroke: C.muted, sw: 1 })}${line(x1, y - 5, x1, y + 5, { stroke: C.muted, sw: 1 })}${line(x2, y - 5, x2, y + 5, { stroke: C.muted, sw: 1 })}${text((x1 + x2) / 2, y - 7, label, { size: 14, fill: C.muted, anchor: 'middle', weight: 600 })}`
+  return `${line(x1, y, x2, y, { stroke: C.muted, sw: 1 })}${line(x1, y - 5, x1, y + 5, { stroke: C.muted, sw: 1 })}${line(x2, y - 5, x2, y + 5, { stroke: C.muted, sw: 1 })}${text((x1 + x2) / 2, y - 7, label, { size: DIM, fill: C.muted, anchor: 'middle', weight: 600 })}`
 }
 
 // ---------- the stall front elevation ----------
 // Two stalls seen from the front: wall | P door P door P | wall. Inches → px with floor at `floor`.
+// wt: wall thickness, slabT: slab thickness, underGap: from the slab's underside to the callouts under it (px).
 function elevation({ x0 = 70, stalls = 4, P = 6, floor, ceiling = null, plenum = false, pil = [0, 83], headrail = false,
-  floorAnchors = true, ceilingAnchors = false, hangers = false, door = [12, 70], wallH = 100, emphasis = 'support' }) {
+  floorAnchors = true, ceilingAnchors = false, hangers = false, door = [12, 70], wallH = 100, emphasis = 'support', wt = 22, slabT = 30, underGap = 22 }) {
   const Y = (inch) => floor - inch * S
   const D = 24, G = 0.6 // door, sightline gap (inches); P = pilaster width
   const xs = [] // pilaster x positions in inches from inner wall face
   let cur = 0.6 // first pilaster sits at the wall, with the wall gap
   for (let i = 0; i <= stalls; i++) { xs.push(cur); cur += P + G + D + G }
   const runIn = xs[stalls] + P + 0.6
-  const X = (inch) => x0 + 22 + inch * S
+  const X = (inch) => x0 + wt + inch * S
   const wallL = x0, wallR = X(runIn)
   let b = ''
   // building: floor slab, walls, ceiling
-  b += rect(x0 - 10, floor, wallR - x0 + 42, 30, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 10, floor, wallR + 32, floor)
-  b += rect(x0, Y(wallH), 22, wallH * S, { fill: 'HATCH', stroke: 'none' }) + line(x0 + 22, Y(wallH), x0 + 22, floor)
-  b += rect(wallR, Y(wallH), 22, wallH * S, { fill: 'HATCH', stroke: 'none' }) + line(wallR, Y(wallH), wallR, floor)
+  b += rect(x0 - 10, floor, wallR - x0 + wt + 20, slabT, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 10, floor, wallR + wt + 10, floor)
+  b += rect(x0, Y(wallH), wt, wallH * S, { fill: 'HATCH', stroke: 'none' }) + line(x0 + wt, Y(wallH), x0 + wt, floor)
+  b += rect(wallR, Y(wallH), wt, wallH * S, { fill: 'HATCH', stroke: 'none' }) + line(wallR, Y(wallH), wallR, floor)
   if (ceiling !== null) {
-    b += line(x0 + 22, Y(ceiling), wallR, Y(ceiling), { sw: 1.5 })
-    if (plenum) b += rect(x0 + 22, Y(ceiling + 14), wallR - x0 - 22, 14 * S - 2, { fill: 'HATCH', stroke: 'none' })
+    b += line(x0 + wt, Y(ceiling), wallR, Y(ceiling), { sw: 1.5 })
+    if (plenum) b += rect(x0 + wt, Y(ceiling + 14), wallR - x0 - wt, 14 * S - 2, { fill: 'HATCH', stroke: 'none' })
   }
   // pilasters and doors
   for (const p of xs) b += rect(X(p), Y(pil[1]), P * S, (pil[1] - pil[0]) * S)
@@ -93,16 +99,17 @@ function elevation({ x0 = 70, stalls = 4, P = 6, floor, ceiling = null, plenum =
   }
   const hl = { fill: C.orange, stroke: C.orange }
   if (headrail) b += rect(X(0), Y(pil[1]) - 1, (runIn) * S, 2.2 * S, { ...hl, fill: C.orange })
+  const ov = Math.min(3, S) // shoes and anchors overhang the pilaster a little
   if (floorAnchors) for (const p of xs) {
-    b += rect(X(p) - 3, Y(4), P * S + 6, 4 * S, { fill: emphasis === 'floor' || emphasis === 'support' ? C.orange : C.part, stroke: C.orange, sw: 1.5 }) // shoe
+    b += rect(X(p) - ov, Y(4), P * S + 2 * ov, 4 * S, { fill: emphasis === 'floor' || emphasis === 'support' ? C.orange : C.part, stroke: C.orange, sw: 1.5 }) // shoe
     if (emphasis === 'floor') b += rect(X(p + 2), floor, 2 * S, 2 * S + 2, { fill: C.orange, stroke: C.orange, sw: 1 }) // anchor into slab
   }
-  if (ceilingAnchors) for (const p of xs) b += rect(X(p) - 3, Y(ceiling), P * S + 6, 3 * S, { fill: C.orange, stroke: C.orange })
+  if (ceilingAnchors) for (const p of xs) b += rect(X(p) - ov, Y(ceiling), P * S + 2 * ov, 3 * S, { fill: C.orange, stroke: C.orange })
   if (hangers) {
-    b += rect(x0 + 22, Y(ceiling + 9), wallR - x0 - 22, 3 * S, { fill: C.orange, stroke: C.orange }) // steel support
-    for (const p of xs) b += line(X(p + P / 2), Y(ceiling + 6), X(p + P / 2), Y(pil[1]), { stroke: C.orange, sw: 3 })
+    b += rect(x0 + wt, Y(ceiling + 9), wallR - x0 - wt, 3 * S, { fill: C.orange, stroke: C.orange }) // steel support
+    for (const p of xs) b += line(X(p + P / 2), Y(ceiling + 6), X(p + P / 2), Y(pil[1]), { stroke: C.orange, sw: S < 2 ? 2.5 : 3 })
   }
-  return { body: b, X, Y, xs, P, D, G, runIn, wallR, wallL: x0, under: floor + 52, last: xs[stalls] }
+  return { body: b, X, Y, xs, P, D, G, runIn, wallR, wallL: x0, wt, under: floor + slabT + underGap, last: xs[stalls] }
 }
 
 const made = []
@@ -277,64 +284,71 @@ const LAYOUT = { stalls: [60.5, 36.5, 36, 36], depth: 61.25 } // Bradley PH400 e
 const FRONT = [['p', 3.5], ['d', 36], ['p', 22], ['d', 34], ['p', 8.5], ['d', 24], ['p', 12], ['d', 24], ['p', 5]]
 const note = (x, y, t, anchor = 'start', size = 11) => text(x, y, t, { size, fill: C.muted, anchor, weight: 500 })
 
-function plan(name) {
-  const s = 3.2, x0 = 30, y0 = 64
-  const X = (i) => x0 + 22 + i * s, Y = (i) => y0 + 14 + i * s
+// ph: the phone variant (360 wide): smaller scale, thinner walls, no compartment names (the page text names them,
+// left to right), dimensions kept.
+function plan(name, ph = false) {
+  const s = ph ? 1.5 : 3.2, x0 = ph ? 10 : 30, y0 = ph ? 56 : 64, wt = ph ? 10 : 22, ht = ph ? 10 : 14
+  const X = (i) => x0 + wt + i * s, Y = (i) => y0 + ht + i * s
   const { stalls, depth } = LAYOUT
   const run = stalls.reduce((a, b) => a + b, 0)
   let b = ''
-  b += rect(x0, y0, run * s + 44, 14, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(0), X(run), Y(0))
-  b += rect(x0, y0, 22, depth * s + 50, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(0), X(0), Y(depth) + 36)
-  b += rect(X(run), y0, 22, depth * s + 50, { fill: 'HATCH', stroke: 'none' }) + line(X(run), Y(0), X(run), Y(depth) + 36)
+  const sideL = ph ? 26 : 36 // side walls run past the front line
+  b += rect(x0, y0, run * s + 2 * wt, ht, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(0), X(run), Y(0))
+  b += rect(x0, y0, wt, depth * s + ht + sideL, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(0), X(0), Y(depth) + sideL)
+  b += rect(X(run), y0, wt, depth * s + ht + sideL, { fill: 'HATCH', stroke: 'none' }) + line(X(run), Y(0), X(run), Y(depth) + sideL)
   const toilet = (c) => rect(X(c) - 8 * s / 2, Y(0) + 2, 16 * s / 2, 6 * s / 2, { rx: 2 }) + `<ellipse cx="${X(c)}" cy="${Y(17)}" rx="${7.5 * s}" ry="${12.5 * s}" fill="#fff" stroke="${C.ink}" stroke-width="1.5"/><ellipse cx="${X(c)}" cy="${Y(18.5)}" rx="${4.5 * s}" ry="${8 * s}" fill="none" stroke="${C.ink}" stroke-width="1"/>`
-  const bar = (x1, y1, x2, y2) => line(x1, y1, x2, y2, { stroke: C.orange, sw: 4, cap: true })
+  const bar = (x1, y1, x2, y2) => line(x1, y1, x2, y2, { stroke: C.orange, sw: ph ? 3 : 4, cap: true })
+  const off = ph ? 4 : 6 // grab bars stand off the panel
   // dividing panels
   let L = 0
   const edges = stalls.map((w) => { const e = [L, L + w]; L += w; return e })
-  edges.slice(0, -1).forEach(([, R]) => { b += rect(X(R) - 1.5, Y(0), 3, depth * s - 2, { fill: C.part }) })
+  edges.slice(0, -1).forEach(([, R]) => { b += rect(X(R) - 1.5, Y(0), 3, depth * s - 2, { fill: C.part, sw: ph ? 1.2 : 1.5 }) })
   // front line with doors, positions from Bradley's plan
   // ADA: door at the wall end, hinged at the wall pilaster, swings out; toilet against the dividing panel.
   // Ambulatory: door hinged at its left, swings out. Standard: hinged at the left, swing in.
   const fx = []; let cur = 0
   for (const [k, w] of FRONT) { fx.push([k, cur, cur + w]); cur += w }
   const doors = fx.filter((f) => f[0] === 'd')
-  fx.filter((f) => f[0] === 'p').forEach(([, a1, a2]) => { b += rect(X(a1), Y(depth) - 3, (a2 - a1) * s, 6, { fill: C.part }) })
+  fx.filter((f) => f[0] === 'p').forEach(([, a1, a2]) => { b += rect(X(a1), Y(depth) - (ph ? 2 : 3), (a2 - a1) * s, ph ? 4 : 6, { fill: C.part, sw: ph ? 1.2 : 1.5 }) })
   doors.forEach(([, d1, d2], i) => {
     const w = d2 - d1, out = i < 2, hx = X(d1)
     const ang = out ? 25 : -25, rad = (ang * Math.PI) / 180
     const ex = hx + Math.cos(rad) * w * s, ey = Y(depth) + Math.sin(rad) * w * s
-    b += line(hx, Y(depth), ex, ey, { stroke: C.ink, sw: 2.5 })
+    b += line(hx, Y(depth), ex, ey, { stroke: C.ink, sw: ph ? 2 : 2.5 })
     b += `<path d="M${X(d2)} ${Y(depth)} A${w * s} ${w * s} 0 0 ${out ? 1 : 0} ${ex} ${ey}" fill="none" stroke="${C.muted}" stroke-width="1" stroke-dasharray="5 5"/>`
   })
   // toilets: ADA centreline 17" from the dividing panel (604.2: 16–18"); others centred
   b += toilet(edges[0][1] - 17) + toilet(edges[1][0] + 18.25) + toilet(edges[2][0] + 18) + toilet(edges[3][0] + 18)
   // grab bars (604.5): ADA side bar on the panel by the toilet, 12" from the rear wall, 42" long; rear bar 36"
-  const pR = X(edges[0][1]) - 6
-  b += bar(pR, Y(12), pR, Y(54)) + bar(X(edges[0][1] - 17 - 24), Y(0) + 6, X(edges[0][1] - 17 + 12), Y(0) + 6)
+  const pR = X(edges[0][1]) - off
+  b += bar(pR, Y(12), pR, Y(54)) + bar(X(edges[0][1] - 17 - 24), Y(0) + off, X(edges[0][1] - 17 + 12), Y(0) + off)
   // ambulatory: side bars on both panels
-  b += bar(X(edges[1][0]) + 6, Y(12), X(edges[1][0]) + 6, Y(54)) + bar(X(edges[1][1]) - 6, Y(12), X(edges[1][1]) - 6, Y(54))
+  b += bar(X(edges[1][0]) + off, Y(12), X(edges[1][0]) + off, Y(54)) + bar(X(edges[1][1]) - off, Y(12), X(edges[1][1]) - off, Y(54))
   const lbl = ['ADA', 'Ambulatory', 'Standard', 'Standard'], sub = ['60" clearance', '36" clearance', '', '']
   edges.forEach(([l, r], i) => {
     const cx = i === 0 ? l + 22 : (l + r) / 2
-    b += text(X(cx), Y(40), lbl[i], { size: 12, weight: 700, anchor: 'middle' }) + (sub[i] ? text(X(cx), Y(40) + 15, sub[i], { size: 11, fill: C.muted, anchor: 'middle', weight: 600 }) : '')
-    b += hdim(y0 - 10, X(l), X(r), ['60-1/2"', '36-1/2"', '36"', '36"'][i])
+    if (!ph) b += text(X(cx), Y(40), lbl[i], { size: 12, weight: 700, anchor: 'middle' }) + (sub[i] ? text(X(cx), Y(40) + 15, sub[i], { size: 11, fill: C.muted, anchor: 'middle', weight: 600 }) : '')
+    b += hdim(y0 - (ph ? 8 : 10), X(l), X(r), ['60-1/2"', '36-1/2"', '36"', '36"'][i])
   })
-  b += hdim(y0 - 40, X(0), X(run), '169"')
-  b += vdim(X(run) + 36, Y(0), Y(depth), '61-1/4" to face')
-  return svg(name, Math.round(X(run) + 150), Math.round(Y(depth) + 50 + 36 * s * 0.45 + 10), 'Plan view of a row of toilet compartments',
+  b += hdim(y0 - (ph ? 34 : 40), X(0), X(run), '169"')
+  b += vdim(X(run) + wt + (ph ? 12 : 14), Y(0), Y(depth), ph ? '61-1/4"' : '61-1/4" to face')
+  return svg(name, ph ? 360 : Math.round(X(run) + 150), ph ? Math.round(Y(depth) + sideL + 8) : Math.round(Y(depth) + 50 + 36 * s * 0.45 + 10), 'Plan view of a row of toilet compartments',
     'Seen from above: an ADA compartment 60-1/2 inches wide with the toilet beside the dividing panel, grab bars and an outswing door at the wall end; an ambulatory compartment 36-1/2 inches wide with grab bars on both sides and an outswing door; two standard compartments 36 inches wide with inswing doors; 169 inches overall and 61-1/4 inches deep to the face.', b)
 }
 
 // Front elevation of the same row. Heights per style; hardware visible from outside: hinges and pulls on the
 // outswing doors, latch indicators on all.
-function front(name, style) {
-  const s = 3.2, x0 = 70
+// ph: the phone variant (360 wide, 1.4 px per inch): the same dimensions, "stile" and "to ceiling" left to the page text.
+function front(name, style, ph = false) {
+  const s = ph ? 1.4 : 3.2, x0 = ph ? 46 : 70, wt = ph ? 10 : 22, slab = ph ? 14 : 30
   const H = { ob: { pil: [1, 82], rail: 82, floor: 330, wall: 100 }, fm: { pil: [1, 70], floor: 300, wall: 92 }, ch: { pil: [13, 96], ceil: 96, floor: 400, wall: 112, plenum: true }, ftc: { pil: [0, 96], ceil: 96, floor: 370, wall: 100 } }[style]
-  const floor = H.floor, Y = (i) => floor - i * s, X = (i) => x0 + 22 + i * s
+  const top = { ob: 100, fm: 92, ch: 112, ftc: 100 }[style]
+  const floor = ph ? Math.round(12 + top * s) : H.floor, Y = (i) => floor - i * s, X = (i) => x0 + wt + i * s
   const run = FRONT.reduce((a, [, w]) => a + w, 0), wallR = X(run)
-  let b = rect(x0 - 10, floor, run * s + 74, 30, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 10, floor, wallR + 32, floor)
-  b += rect(x0, Y(H.wall), 22, H.wall * s, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(H.wall), X(0), floor)
-  b += rect(wallR, Y(H.wall), 22, H.wall * s, { fill: 'HATCH', stroke: 'none' }) + line(wallR, Y(H.wall), wallR, floor)
+  const kh = ph ? s / 3.2 : 1 // small hardware drawn in px on the desktop sheet
+  let b = rect(x0 - 10, floor, run * s + 2 * wt + 30, slab, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 10, floor, wallR + wt + 10, floor)
+  b += rect(x0, Y(H.wall), wt, H.wall * s, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(H.wall), X(0), floor)
+  b += rect(wallR, Y(H.wall), wt, H.wall * s, { fill: 'HATCH', stroke: 'none' }) + line(wallR, Y(H.wall), wallR, floor)
   if (H.ceil) b += line(X(0), Y(H.ceil), wallR, Y(H.ceil))
   if (H.plenum) b += rect(X(0), Y(H.ceil + 14), run * s, 14 * s - 2, { fill: 'HATCH', stroke: 'none' })
   let cur = 0, di = 0
@@ -345,10 +359,10 @@ function front(name, style) {
       b += rect(X(cur + 0.3), Y(70), (w - 0.6) * s, 58 * s)
       const out = di < 2
       if (out) { // hinges on the hinge (left) edge, pull and latch indicator near the latch edge
-        b += rect(X(cur + 0.3) - 2, Y(65), 7, 14, { fill: C.ink, stroke: 'none' }) + rect(X(cur + 0.3) - 2, Y(20), 7, 14, { fill: C.ink, stroke: 'none' })
-        b += rect(X(cur + w - 9), Y(43), 3, 22, { fill: C.ink, stroke: 'none' })
+        b += rect(X(cur + 0.3) - 2 * kh, Y(65), Math.max(3, 7 * kh), 14 * kh, { fill: C.ink, stroke: 'none' }) + rect(X(cur + 0.3) - 2 * kh, Y(20), Math.max(3, 7 * kh), 14 * kh, { fill: C.ink, stroke: 'none' })
+        b += rect(X(cur + w - 9), Y(43), Math.max(1.5, 3 * kh), 22 * kh, { fill: C.ink, stroke: 'none' })
       }
-      b += `<circle cx="${X(cur + w - 4)}" cy="${Y(40)}" r="4" fill="#fff" stroke="${C.ink}" stroke-width="1.2"/>`
+      b += `<circle cx="${X(cur + w - 4)}" cy="${Y(40)}" r="${ph ? 2.2 : 4}" fill="#fff" stroke="${C.ink}" stroke-width="${ph ? 1 : 1.2}"/>`
       di++
     }
     cur += w
@@ -359,23 +373,23 @@ function front(name, style) {
   if (style === 'ftc') for (const [x, w] of pilXs) b += rect(X(x) - 1, Y(96), w * s + 2, 3 * s, hl)
   if (style === 'ch') {
     b += rect(X(0), Y(H.ceil + 9), run * s, 3 * s, hl)
-    for (const [x, w] of pilXs) b += line(X(x + w / 2), Y(H.ceil + 6), X(x + w / 2), Y(H.pil[1]), { stroke: C.orange, sw: 3 })
+    for (const [x, w] of pilXs) b += line(X(x + w / 2), Y(H.ceil + 6), X(x + w / 2), Y(H.pil[1]), { stroke: C.orange, sw: ph ? 2.5 : 3 })
   }
   // numbered callouts, keyed in the page text under the sheet
-  const [p2x, p2w] = pilXs[1], under = floor + 30
-  if (style === 'ob') b += callout(1, X(60), Y(91), [X(60), Y(82) - 2]) + callout(2, X(p2x + p2w / 2) + 40, under, [X(p2x + p2w / 2), Y(2)]) + callout(3, X(p2x + p2w / 2), Y(50), null)
-  if (style === 'fm') b += callout(1, X(p2x + p2w / 2) + 40, under, [X(p2x + p2w / 2), Y(2)]) + callout(2, X(p2x + p2w / 2), Y(80), [X(p2x + p2w / 2), Y(71)])
-  if (style === 'ch') b += callout(1, X(20), Y(H.ceil + 12) - 2, null) + callout(2, X(p2x + p2w / 2) + 34, Y(91), [X(p2x + p2w / 2), Y(99)]) + callout(3, X(p2x + p2w / 2), Y(6), null)
-  if (style === 'ftc') b += callout(1, X(p2x + p2w / 2) + 40, under, [X(p2x + p2w / 2), Y(2)]) + callout(2, X(p2x + p2w / 2) + 34, Y(88), [X(p2x + p2w / 2), Y(95)]) + callout(3, X(p2x + p2w + 10), Y(60), null)
+  const [p2x, p2w] = pilXs[1], under = floor + (ph ? slab + 14 : 30), o1 = ph ? 26 : 40, o2 = ph ? 24 : 34
+  if (style === 'ob') b += callout(1, X(60), Y(91), [X(60), Y(82) - 2]) + callout(2, X(p2x + p2w / 2) + o1, under, [X(p2x + p2w / 2), Y(2)]) + callout(3, X(p2x + p2w / 2), Y(50), null)
+  if (style === 'fm') b += callout(1, X(p2x + p2w / 2) + o1, under, [X(p2x + p2w / 2), Y(2)]) + callout(2, X(p2x + p2w / 2), Y(ph ? 84 : 80), [X(p2x + p2w / 2), Y(71)])
+  if (style === 'ch') b += callout(1, X(20), Y(H.ceil + 12) - 2, null) + callout(2, X(p2x + p2w / 2) + o2, Y(ph ? 86 : 91), [X(p2x + p2w / 2), Y(99)]) + callout(3, X(p2x + p2w / 2), Y(6), null)
+  if (style === 'ftc') b += callout(1, X(p2x + p2w / 2) + o1, under, [X(p2x + p2w / 2), Y(2)]) + callout(2, X(p2x + p2w / 2) + o2, Y(ph ? 84 : 88), [X(p2x + p2w / 2), Y(95)]) + callout(3, X(p2x + p2w + 10), Y(ph ? 36 : 60), null)
   // dimensions: only the ones the sources print
-  b += vdim(x0 - 12, Y(70), Y(12), '58"', 'left') + vdim(x0 - 12, Y(12), Y(0), '12"', 'left')
-  if (style === 'ob') b += vdim(x0 - 12, Y(82), Y(70), '12"', 'left') + vdim(wallR + 34, Y(82), Y(0), '82"')
-  if (style === 'fm') b += vdim(wallR + 34, Y(70), Y(1), '69" stile')
-  if (style === 'ch') b += vdim(wallR + 34, Y(96), Y(13), '83" stile') + vdim(wallR + 34, Y(13), Y(0), 'clear')
-  if (style === 'ftc') b += vdim(wallR + 34, Y(96), Y(0), 'to ceiling')
-  const src = style === 'ob' ? 'Heights: Bradley PH400.' : 'Heights: Bobrick 1080 Series.'
-  const w = Math.round(wallR + 22 + 34 + (style === 'ftc' ? 90 : 80))
-  return svg(name, w, floor + 64, 'Front elevation of a row of toilet compartments',
+  const dl = x0 - (ph ? 8 : 12), dr = wallR + wt + (ph ? 10 : 12)
+  b += vdim(dl, Y(70), Y(12), '58"', 'left') + vdim(dl, Y(12), Y(0), '12"', 'left')
+  if (style === 'ob') b += vdim(dl, Y(82), Y(70), '12"', 'left') + vdim(dr, Y(82), Y(0), '82"')
+  if (style === 'fm') b += vdim(dr, Y(70), Y(1), ph ? '69"' : '69" stile')
+  if (style === 'ch') b += vdim(dr, Y(96), Y(13), ph ? '83"' : '83" stile') + vdim(dr, Y(13), Y(0), 'clear')
+  if (style === 'ftc' && !ph) b += vdim(dr, Y(96), Y(0), 'to ceiling')
+  const w = ph ? 360 : Math.round(wallR + 22 + 34 + (style === 'ftc' ? 90 : 80))
+  return svg(name, w, ph ? (style === 'ch' ? floor + slab + 8 : under + 16) : floor + 64, 'Front elevation of a row of toilet compartments',
     `Front view of the same four compartments. Doors 58 inches high, 12 inches above the floor; the ADA and ambulatory doors swing out, so their hinges and pulls show on this side.`, b)
 }
 
@@ -503,7 +517,9 @@ const STYLES = {
   'mounting-floor-to-ceiling': ['ftc', ['ftc-floor', 'ftc-ceiling']],
 }
 const planName = plan('sheet-plan')
+plan('sheet-plan-m', true)
 for (const [name, [style, dets]] of Object.entries(STYLES)) {
+  front(`${name}-front-m`, style, true)
   sheets[name] = [
     { file: `${planName}.svg`, label: 'Plan', wide: true },
     { file: `${front(`${name}-front`, style)}.svg`, label: 'Front elevation', wide: true },
@@ -706,5 +722,254 @@ function matSection(kind, x0, y0, len, k) {
   made.push(svg('measure-new-restroom-section', 780, floor + 46, 'How to measure an empty restroom for new partitions, section',
     'The same restroom cut through and seen from the side: C, the ceiling height from the floor to the finished ceiling; F, what the floor is made of and what structure is above the ceiling.', b))
 }
+
+
+// ---------- phone variants ----------
+// A 780-wide drawing shrunk into a phone's ~340 px content column would put its text at about 6 px. So every wide
+// drawing also has a phone variant, drawn 360 wide (text 13 px at 1:1, about 12 px on the phone), still landscape
+// (at least 1.6 : 1): <name>-m.svg, or <name>-m1.svg, -m2.svg … when it takes more than one frame. Long labels give
+// way to the letters and numbers of the page's key; dimensions keep their values. The build shows them below 640 px.
+const PW = 360
+const phoneMade = []
+function phone(name, h, body, base = name.replace(/-m\d*$/, '')) {
+  const [title, desc] = META[base]
+  phoneMade.push(svg(name, PW, Math.round(h), title, desc, body))
+}
+// Draw at a smaller scale with 13 px dimensions.
+function withPhone(s, fn) {
+  const o = [S, DIM]; S = s; DIM = 13
+  try { return fn() } finally { [S, DIM] = o }
+}
+const elevM = (o) => elevation({ wt: 12, slabT: 14, underGap: 14, ...o })
+// Centre a run of stalls in the frame: x0 for a run of `stalls` at scale s.
+const centreX0 = (stalls, s, P = 6) => Math.round((PW - (2 * 12 + (0.6 + stalls * (P + 24 + 1.2) + P + 0.6) * s)) / 2)
+// Heights in px above the floor line: floor so the tallest point (topIn inches) sits 12 px from the top.
+const H_M = 222
+
+// The four mounting styles, front view, one frame each (used as the phone hero on their pages).
+{
+  const defs = {
+    'mounting-overhead-braced': [{ headrail: true, pil: [0, 83] }, 100, (e) => vdim(e.wallR + 22, e.Y(83), e.Y(0), '83"') + vdim(e.wallL - 10, e.Y(70), e.Y(12), '58"', 'left') + vdim(e.wallL - 10, e.Y(12), e.Y(0), '12"', 'left')
+      + callout(1, e.X(28), e.Y(92), [e.X(28), e.Y(83) + 2]) + callout(2, e.X(e.xs[1] + 3), e.under, [e.X(e.xs[1] + 3), e.Y(1)]) + callout(3, e.X(e.last + 3), e.Y(50), null)],
+    'mounting-floor-mounted': [{ P: 8, pil: [0, 69], door: [11, 69], emphasis: 'floor' }, 100, (e) => vdim(e.wallR + 22, e.Y(69), e.Y(0), '69"')
+      + callout(1, e.X(e.xs[1] + 3), e.under, [e.X(e.xs[1] + 6), e.Y(-2)]) + callout(2, e.X(e.xs[0] + 3), e.Y(82), [e.X(e.xs[0] + 3), e.Y(70)])],
+    'mounting-ceiling-hung': [{ ceiling: 96, plenum: true, pil: [13, 96], floorAnchors: false, hangers: true, wallH: 112 }, 118, (e) => vdim(e.wallR + 22, e.Y(96), e.Y(13), '83"') + vdim(e.wallR + 22, e.Y(13), e.Y(0), 'clear') + vdim(e.wallL - 10, e.Y(70), e.Y(12), '58"', 'left')
+      + callout(1, e.X(8), e.Y(118), [e.X(8), e.Y(106)]) + callout(2, e.X(e.last + 3) - 24, e.Y(84), [e.X(e.last + 3), e.Y(97)]) + callout(3, e.X(e.xs[1] + 3), e.under, [e.X(e.xs[1] + 3), e.Y(6)])],
+    'mounting-floor-to-ceiling': [{ ceiling: 96, pil: [0, 96], ceilingAnchors: true }, 100, (e) => vdim(e.wallL - 10, e.Y(70), e.Y(12), '58"', 'left') + vdim(e.wallL - 10, e.Y(12), e.Y(0), '12"', 'left')
+      + callout(1, e.X(e.xs[1] + 3), e.under, [e.X(e.xs[1] + 3), e.Y(1)]) + callout(2, e.X(e.last + 3) - 22, e.Y(84), [e.X(e.last + 3), e.Y(94)]) + callout(3, e.X(e.xs[1] + 18.6), e.Y(6), null)],
+  }
+  for (const [name, [o, topIn, extra]] of Object.entries(defs)) {
+    const floor = H_M - 14 - 14 - 12 - 2, s = (floor - 14) / topIn
+    withPhone(s, () => {
+      const e = elevM({ ...o, x0: centreX0(3, s, o.P ?? 6), stalls: 3, floor })
+      phone(`${name}-m`, H_M, e.body + extra(e))
+    })
+  }
+}
+
+// All four styles: two frames of two styles each, at one scale, floors aligned.
+{
+  const styles = [
+    ['Overhead braced', { headrail: true, pil: [0, 83] }],
+    ['Floor mounted', { pil: [0, 69], door: [11, 69], emphasis: 'floor' }],
+    ['Ceiling hung', { ceiling: 96, plenum: true, pil: [13, 96], floorAnchors: false, hangers: true, wallH: 112 }],
+    ['Floor to ceiling', { ceiling: 96, pil: [0, 96], ceilingAnchors: true }],
+  ]
+  const s = 1.5, floor = 178, h = 222
+  withPhone(s, () => {
+    for (const f of [0, 1]) {
+      let b = ''
+      styles.slice(f * 2, f * 2 + 2).forEach(([nm, o], i) => {
+        const e = elevM({ ...o, x0: i * 180 + 26, stalls: 2, floor, wallH: o.wallH ?? 100 })
+        b += e.body + text(e.X(e.runIn / 2), 214, nm, { size: 15, weight: 700, anchor: 'middle' })
+      })
+      phone(`mounting-styles-compare-m${f + 1}`, h, b)
+    }
+  })
+}
+
+// Parts of a partition, and the four gaps: three stalls, callouts as on the desktop drawing.
+{
+  const s = 1.68, floor = 182
+  withPhone(s, () => {
+    let e = elevM({ x0: centreX0(3, s), stalls: 3, floor, headrail: true, pil: [0, 83], emphasis: 'none' })
+    let dx = e.xs[0] + e.P + e.G
+    let b = e.body
+    const o = { fill: C.orange, stroke: C.orange }
+    b += rect(e.X(dx) - 1.5, e.Y(66), 5, 5.6 * s, o) + rect(e.X(dx) - 1.5, e.Y(20), 5, 5.6 * s, o) // hinges
+    b += rect(e.X(e.xs[1]) - 1.5, e.Y(44) - 3, 6, 10, o) // latch and keeper
+    b += callout(1, e.X(60), e.Y(94), [e.X(60), e.Y(83) + 2]) + callout(2, e.X(e.last + 3), e.Y(50), null) + callout(3, e.X(dx + 12), e.Y(28), null)
+      + callout(4, e.X(dx) - 22, e.Y(66) + 5, [e.X(dx) - 2, e.Y(66) + 5]) + callout(5, e.X(e.xs[1]) + 24, e.Y(22), [e.X(e.xs[1]) + 3, e.Y(44) + 2]) + callout(6, e.X(e.xs[1] + 3), e.under, [e.X(e.xs[1] + 3), e.Y(1)])
+    phone('partition-anatomy-m', H_M, b)
+
+    e = elevM({ x0: centreX0(3, s), stalls: 3, floor, headrail: true, pil: [0, 83], emphasis: 'none' })
+    dx = e.xs[0] + e.P + e.G
+    b = e.body
+    const gap = (x, y, w, hh) => rect(x, y, w, hh, { fill: C.orange, stroke: 'none' })
+    b += gap(e.X(dx) - 2, e.Y(70), 4, 58 * s) + gap(e.X(dx + e.D) - 2, e.Y(70), 4, 58 * s) // door edges
+    b += rect(e.X(dx), e.Y(12), e.D * s, 12 * s - 1, { fill: C.orangeTint, stroke: C.orange, sw: 1.5, dash: '4 3' }) // under
+    b += rect(e.X(dx), e.Y(83) + 4, e.D * s, 13 * s - 4, { fill: C.orangeTint, stroke: C.orange, sw: 1.5, dash: '4 3' }) // above
+    b += gap(e.X(0) - 1, e.Y(83), 3, 83 * s) // at the wall
+    b += callout(1, e.X(dx + e.D) + 22, e.Y(50), [e.X(dx + e.D) + 1, e.Y(50)]) + callout(2, e.X(dx + 12), e.under, [e.X(dx + 12), e.Y(4)]) + callout(3, e.X(dx + 12) + 30, e.Y(95), [e.X(dx + 12), e.Y(77)])
+      + callout(4, e.wallL - 14, e.Y(40), [e.X(0), e.Y(40)]) + vdim(e.wallR + 22, e.Y(12), e.Y(0), '12"')
+    phone('stall-gaps-m', H_M, b)
+  })
+}
+
+// Hinge types: the three hinges in one frame.
+{
+  let b = ''
+  const o = { fill: C.orange, stroke: C.orange }
+  const cap = (x, t) => text(x, 188, t, { size: 14, weight: 700, anchor: 'middle' })
+  // gravity cam
+  b += rect(18, 14, 14, 140) + rect(35, 26, 52, 116)
+  b += rect(28, 29, 14, 6, o) + line(35, 26, 35, 38, { stroke: C.orange, sw: 2 })
+  b += rect(27, 126, 16, 9, o) + `<path d="M28 131 l4 -3 l4 3 l4 -3" stroke="#fff" stroke-width="1.5" fill="none"/>`
+  b += callout(1, 104, 32, [43, 32]) + callout(2, 104, 130, [44, 130]) + cap(58, 'Gravity (cam)')
+  // wrap-around, seen from above
+  b += rect(130, 80, 42, 14) + rect(188, 82, 52, 10)
+  b += `<path d="M160 75 h16 v24 h-16" fill="none" stroke="${C.orange}" stroke-width="3.5" stroke-linejoin="round"/>`
+  b += `<path d="M198 77 h-15 v20 h15" fill="none" stroke="${C.orange}" stroke-width="3.5" stroke-linejoin="round"/>`
+  b += `<circle cx="179.5" cy="87" r="5" fill="${C.orange}"/>`
+  b += text(150, 116, 'pilaster', { size: 13, fill: C.muted, anchor: 'middle' }) + text(214, 116, 'door', { size: 13, fill: C.muted, anchor: 'middle' })
+  b += text(184, 146, 'seen from above', { size: 13, fill: C.muted, anchor: 'middle' }) + callout(3, 179.5, 46, [179.5, 80]) + cap(184, 'Wrap-around')
+  // continuous
+  b += rect(256, 14, 14, 140) + rect(276, 26, 52, 116) + rect(270, 26, 7, 116, o)
+  for (let y = 38; y < 142; y += 12) b += line(270, y, 277, y, { stroke: '#fff', sw: 1 })
+  b += callout(4, 346, 84, [279, 84]) + cap(298, 'Continuous')
+  phone('hinge-types-m', 200, b)
+}
+
+// Latch and keeper: both latches in one frame.
+{
+  let b = ''
+  const unit = (ox, title, indicator) => {
+    let u = rect(ox + 14, 30, 74, 136) + rect(ox + 92, 18, 22, 160)
+    u += rect(ox + 56, 86, 32, 14, { fill: C.orange, stroke: C.orange, rx: 2 }) // latch housing on door
+    u += rect(ox + 82, 90, 17, 6, { fill: C.ink, stroke: 'none' }) // bolt into keeper
+    u += rect(ox + 95, 81, 15, 24, { fill: C.part, stroke: C.orange, sw: 2 }) // keeper on pilaster
+    if (indicator) u += `<circle cx="${ox + 34}" cy="93" r="11" fill="#fff" stroke="${C.orange}" stroke-width="2"/><circle cx="${ox + 34}" cy="93" r="3.5" fill="${C.orange}"/>`
+    u += text(ox + 64, 200, title, { size: 14, weight: 700, anchor: 'middle' })
+    return u
+  }
+  b += unit(16, 'Slide latch', false) + unit(196, 'Indicator latch', true)
+  b += callout(1, 16 + 72, 60, [16 + 72, 86]) + callout(2, 16 + 136, 93, [16 + 110, 93]) + callout(3, 196 + 34, 56, [196 + 34, 82])
+  b += text(16 + 51, 23, 'door', { size: 13, fill: C.muted, anchor: 'middle' }) + text(16 + 103, 12, 'pilaster', { size: 13, fill: C.muted, anchor: 'middle' })
+  phone('latch-keeper-m', 212, b)
+}
+
+// Measuring a replacement door: the door between its pilasters (A–D), then its edge and swing (E, F).
+withPhone(1, () => {
+  let b = ''
+  const ox = 112 // left pilaster
+  const pl = ox, pr = ox + 112, dL = pl + 17, dR = pr - 4, top = 36, dTop = 50, dBot = 166, floor = 186
+  b += rect(pl, top, 13, floor - top) + rect(pr, top, 13, floor - top)
+  b += rect(dL, dTop, dR - dL, dBot - dTop, { fill: C.part, stroke: C.orange, sw: 2.5 })
+  b += rect(pl - 24, floor, pr + 13 - pl + 48, 10, { fill: 'HATCH', stroke: 'none' }) + line(pl - 24, floor, pr + 37, floor)
+  b += hdim(26, dL, dR, 'A') + vdim(pr + 13 + 14, dTop, dBot, 'B') + hdim(216, pl + 13, pr, 'C') + vdim(pl - 12, dBot, floor, 'D', 'left')
+  phone('measure-replacement-door-m1', 226, b)
+  b = ''
+  // edge view
+  b += text(70, 26, 'Edge view', { size: 14, weight: 700, anchor: 'middle' })
+  b += rect(64, 42, 12, 136, { fill: C.orange, stroke: C.orange }) + hdim(204, 64, 76, 'E')
+  // from outside the stall
+  const px = 170
+  b += text(px + 85, 26, 'From outside the stall', { size: 14, weight: 700, anchor: 'middle' })
+  b += rect(px + 8, 68, 16, 16) + rect(px + 134, 68, 16, 16) + line(px + 24, 76, px + 134, 76, { stroke: C.orange, sw: 3.5 })
+  b += `<path d="M${px + 24} 76 A110 110 0 0 1 ${px + 134} 186" fill="none" stroke="${C.muted}" stroke-dasharray="5 5" stroke-width="1.5"/>`
+  b += line(px + 24, 76, px + 24, 186, { stroke: C.orange, sw: 2, dash: '6 4' })
+  b += text(px + 79, 56, 'stall inside ↓', { size: 13, fill: C.muted, anchor: 'middle' })
+  b += text(px + 62, 150, 'F', { size: 14, fill: C.muted, weight: 700, anchor: 'middle' })
+  phone('measure-replacement-door-m2', 220, b)
+})
+
+// Measuring a new restroom: the plan with its letters only, then the section.
+withPhone(1, () => {
+  let b = ''
+  const ox = 40, oy = 36, iw = 262, ih = 136, t = 10
+  const L = ox + t, T = oy + t, R = L + iw, B = T + ih
+  const dL = R - 92, dR = R - 30
+  b += rect(ox, oy, iw + 2 * t, t, { fill: 'HATCH', stroke: 'none' }) + rect(ox, oy, t, ih + 2 * t, { fill: 'HATCH', stroke: 'none' })
+  b += rect(R, oy, t, ih + 2 * t, { fill: 'HATCH', stroke: 'none' }) + rect(ox, B, dL - ox, t, { fill: 'HATCH', stroke: 'none' }) + rect(dR, B, R + t - dR, t, { fill: 'HATCH', stroke: 'none' })
+  b += `<path d="M${L} ${T} H${R} V${B} H${dR} M${dL} ${B} H${L} Z" fill="none" stroke="${C.ink}" stroke-width="1.5"/>`
+  b += line(dR, B, dR, B - (dR - dL), { stroke: C.ink, sw: 2.5 }) + `<path d="M${dL} ${B} A${dR - dL} ${dR - dL} 0 0 1 ${dR} ${B - (dR - dL)}" fill="none" stroke="${C.muted}" stroke-width="1.5" stroke-dasharray="5 5"/>`
+  b += line(L, T + 3, R, T + 3, { stroke: C.orange, sw: 5 })
+  const fl = [L + 34, L + 92, L + 150]
+  for (const f of fl) b += `<circle cx="${f}" cy="${T + 26}" r="6" fill="#fff" stroke="${C.ink}" stroke-width="1.5"/>` + line(f - 9, T + 26, f + 9, T + 26, { stroke: C.muted, sw: 1 }) + line(f, T + 17, f, T + 35, { stroke: C.muted, sw: 1 })
+  fl.forEach((f, i) => {
+    const y = T + 52 + i * 20
+    b += line(L, y, f, y, { stroke: C.muted, sw: 1 }) + line(f, y - 5, f, y + 5, { stroke: C.muted, sw: 1 }) + line(f, T + 33, f, y, { stroke: C.muted, sw: 1, dash: '2 3' })
+    b += text(f + 6, y + 5, 'E', { size: 13, fill: C.muted, weight: 700 })
+  })
+  b += line(L, T + 44, L, T + 100, { stroke: C.muted, sw: 1 })
+  b += hdim(oy - 12, L, R, 'A') + vdim(R + t + 14, T, B, 'B') + hdim(B + t + 22, dR, R, 'D')
+  phone('measure-new-restroom-plan-m', B + t + 30, b)
+
+  b = ''
+  const sx = 40, sw = 262, wt = 10, top = 16
+  const L2 = sx + wt, R2 = L2 + sw, under = top + 20, ceil = under + 32, floor = ceil + 118
+  b += rect(sx, top, sw + 2 * wt, 20, { fill: 'HATCH', stroke: 'none' }) + line(sx, under, R2 + wt, under)
+  b += rect(sx, under, wt, floor - under, { fill: 'HATCH', stroke: 'none' }) + rect(R2, under, wt, floor - under, { fill: 'HATCH', stroke: 'none' })
+  b += line(L2, under, L2, floor) + line(R2, under, R2, floor) + line(L2, ceil, R2, ceil)
+  b += rect(sx, floor, sw + 2 * wt, 20, { fill: 'HATCH', stroke: 'none' }) + line(sx, floor, R2 + wt, floor)
+  b += vdim(L2 + 150, ceil, floor, 'C')
+  const fx = R2 + wt + 12
+  b += line(R2 - 30, top + 10, fx - 4, top + 10, { stroke: C.muted, sw: 1 }) + text(fx, top + 15, 'F', { size: 13, fill: C.muted, weight: 700 })
+  b += line(R2 - 30, floor + 10, fx - 4, floor + 10, { stroke: C.muted, sw: 1 }) + text(fx, floor + 15, 'F', { size: 13, fill: C.muted, weight: 700 })
+  phone('measure-new-restroom-section-m', floor + 20 + 8, b)
+})
+
+// Urinal spacing: dimensions kept, notes left to the page text.
+withPhone(1, () => {
+  const s = 3, wx = 14, wy = 12
+  const X = (i) => wx + 10 + i * s, Y = (i) => wy + 10 + i * s
+  const run = 92, cls = [15, 45, 75]
+  const odim = (y, x1, x2, label) => line(x1, y, x2, y, { stroke: C.orange, sw: 2.5 }) + line(x1, y - 5, x1, y + 5, { stroke: C.orange, sw: 2 }) + line(x2, y - 5, x2, y + 5, { stroke: C.orange, sw: 2 }) + text((x1 + x2) / 2, y - 8, label, { size: 13, weight: 700, anchor: 'middle' })
+  let b = ''
+  b += rect(wx, wy, run * s + 10, 10, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(0), X(run), Y(0))
+  const front = Y(14), clear = front + 21 * s, dimY = clear + 30
+  b += rect(wx, wy, 10, dimY + 30 - wy, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(0), X(0), dimY + 30)
+  b += `<path d="M${X(run) - 3} ${wy - 4} l-4 9 l8 5 l-4 9" fill="none" stroke="${C.muted}" stroke-width="1.5"/>`
+  for (const c of cls) {
+    b += `<path d="M${X(c - 9)} ${Y(0)} v${8 * s} q0 ${6 * s} ${9 * s} ${6 * s} q${9 * s} 0 ${9 * s} ${-6 * s} v${-8 * s} z" fill="#fff" stroke="${C.ink}" stroke-width="1.5"/>`
+    b += `<path d="M${X(c - 5.5)} ${Y(2)} v${6 * s} q0 ${3.6 * s} ${5.5 * s} ${3.6 * s} q${5.5 * s} 0 ${5.5 * s} ${-3.6 * s} v${-6 * s} z" fill="none" stroke="${C.ink}" stroke-width="1"/>`
+  }
+  for (const c of [30, 60]) b += rect(X(c) - 2, Y(0), 4, 18 * s, { fill: C.part, sw: 1.2 })
+  for (const c of cls) b += line(X(c), Y(0) - 2, X(c), dimY + (c === cls[0] ? 25 : 6), { stroke: C.orange, sw: 1.5, dash: '8 3 2 3' })
+  b += line(X(cls[1] + 4), clear, X(run) - 2, clear, { stroke: C.muted, sw: 1.5, dash: '5 5' })
+  b += vdim(X(cls[2] + 11), front, clear, '21" min')
+  b += line(X(0), dimY + 20, X(cls[0]), dimY + 20, { stroke: C.orange, sw: 2.5 }) + line(X(cls[0]), dimY + 15, X(cls[0]), dimY + 25, { stroke: C.orange, sw: 2 }) + text(X(cls[0]) + 7, dimY + 25, '15" min', { size: 13, weight: 700 })
+  b += odim(dimY, X(cls[0]), X(cls[1]), '30" min') + odim(dimY, X(cls[1]), X(cls[2]), '30" min')
+  phone('urinal-spacing-m', dimY + 38, b)
+})
+
+// Material sections: one door edge per page, and all five as rows at one scale.
+{
+  const k = 100, x0 = 24, y0 = 46, len = 236
+  for (const kind of Object.keys(MATERIALS)) {
+    const m = MATERIALS[kind], sct = matSection(kind, x0, y0, len, k)
+    let b = sct.body
+    b += callout(2, sct.pts.face[0], 20, sct.pts.face) + callout(3, sct.x1 + 28, sct.pts.edge[1], sct.pts.edge)
+    b += callout(1, sct.pts.core[0], sct.y1 + 32, sct.pts.core) + `<circle cx="${sct.pts.core[0]}" cy="${sct.pts.core[1]}" r="5" fill="${C.orange}" stroke="#fff" stroke-width="2"/>`
+    if (m.dim) withPhone(1, () => { b += vdim(sct.x1 + 56, y0, sct.y1, m.dim) })
+    phone(`material-section-${kind}-m`, sct.y1 + 54, b)
+  }
+  const kr = 34, sx = 160, slen = 140
+  const names = { phenolic: 'Phenolic', 'solid-plastic': 'Solid plastic (HDPE)', 'plastic-laminate': 'Plastic laminate', 'powder-coated-steel': 'Powder coated steel', 'stainless-steel': 'Stainless steel' }
+  let b = '', y = 10
+  withPhone(1, () => {
+    for (const kind of Object.keys(MATERIALS)) {
+      const m = MATERIALS[kind], sct = matSection(kind, sx, y, slen, kr)
+      b += text(12, y + sct.T / 2 + 5, names[kind], { size: 13, weight: 700 }) + sct.body
+      if (m.dim) b += vdim(sct.x1 + 14, y, sct.y1, m.dim)
+      y = sct.y1 + 10
+    }
+  })
+  phone('material-sections-compare-m', y, b)
+}
+
+// Sheets: the plan and front views (above) also get phone variants; the side view and details are 400 wide and
+// scale to the column as they are.
+console.log(`${phoneMade.length} phone variants: ${phoneMade.join(', ')}`)
 
 console.log(`${made.length} diagrams: ${made.join(', ')}; sheets: ${Object.keys(sheets).join(', ')}`)

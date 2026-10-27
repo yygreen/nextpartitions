@@ -51,6 +51,8 @@ Numbered orange discs (24 px, white bold number). The key is written as page tex
 
 Every illustration is laid out horizontally, at least 1.6 times as wide as it is tall. Standalone drawings are 780 px wide, the width of the content column, so they show at their real size and the text stays 13–14 px. If a subject doesn't fit a landscape frame (a plan plus a section, a tall side view with its notes), split it into separate drawings. On the page, put a short paragraph between them that leads from one to the next and says what the reader is looking at.
 
+**Phone variants.** Nothing scrolls sideways. Every drawing wider than about 480 px (standalone drawings, and the plan and front elevation of a sheet) also has a phone variant drawn 360 wide, still landscape (1.6 : 1 or wider), so its text stays 12–13 px on a phone: `<name>-m.svg`, or `<name>-m1.svg`, `-m2.svg` … when one frame can't hold it. Long labels become the letters and numbers of the page's key; dimensions keep their values. The page shows the phone variant below 640 px.
+
 ## Views
 
 - **Front elevation** for anything about how stalls stand: two stalls between walls, floor slab below.
@@ -67,7 +69,7 @@ A product drawing is a sheet, like a manufacturer's data sheet: the same stalls 
 - **Side view:** through a stall, looking at a dividing panel: toilet, brackets, panel height and floor gap.
 - **Details** (circles, larger scale): headrail, floor anchor, ceiling hanger or ceiling anchor, panel bracket. Labels in the circle; sizes only where a source gives them (anchor depth and slab thickness).
 
-Wide views (plan, front elevation) span the figure and keep a 560 px minimum on a phone, scrolling sideways inside the card; side view and details sit two across on desktop and stack on a phone. `diagrams/sheets.json` lists each sheet's views.
+Wide views (plan, front elevation) span the figure and switch to their phone variants on a phone; side view and details (400 wide) sit two across on desktop and stack on a phone, scaled to the column. `diagrams/sheets.json` lists each sheet's views.
 
 ## Every drawing carries
 
