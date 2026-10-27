@@ -99,15 +99,15 @@ Use the drawing dimension for the pilaster line, not the room depth, and make an
 
 ### 2. Fix the wall brackets
 
-![Stirrup brackets: one-ear and two-ear, with the opening for a pilaster or a panel](/images/diagrams/bracket-types-m1.svg "side")
-
 Fix each bracket at its mark, into solid backing, using the bracket itself as the drilling template. Holes for the wall anchors are typically 5/16" and at least 2" deep. Pilaster brackets have a wider opening than panel brackets (3/4" and 1/2" on phenolic lines).
+
+![Stirrup brackets: one-ear and two-ear, with the opening for a pilaster or a panel](/images/diagrams/bracket-types-m1.svg "side")
 
 ### 3. Stand and level the pilasters
 
-![The pilaster foot: leveling bar, bolts and anchors under a stainless steel shoe](/images/diagrams/mounting-overhead-braced-detail-anchor.svg "side")
-
 Each pilaster stands on a floor bracket or leveling device: a bar or bracket with leveling bolts, anchored into the floor. Slide the shoe up out of the way, set the pilaster plumb and at height, and level the pilaster tops from one compartment to the next. Lower the shoe over its clip last.
+
+![The pilaster foot: leveling bar, bolts and anchors under a stainless steel shoe](/images/diagrams/mounting-overhead-braced-detail-anchor.svg "side")
 
 ### 4. Hang the panels
 
@@ -115,9 +115,9 @@ Rest each panel on a spacer block, about 12" high on most lines (14" on some sol
 
 ### 5. Fit the headrail (overhead braced only)
 
-![The headrail clamped over the top of a pilaster](/images/diagrams/mounting-overhead-braced-detail-headrail.svg "side")
-
 The headrail clamps over the pilaster tops and fastens to the walls at both ends, with at least two fasteners into each pilaster. Floor-mounted stalls have no headrail, which is why their floor anchors go deeper.
+
+![The headrail clamped over the top of a pilaster](/images/diagrams/mounting-overhead-braced-detail-headrail.svg "side")
 
 ### 6. Hang the doors and set the gaps
 
