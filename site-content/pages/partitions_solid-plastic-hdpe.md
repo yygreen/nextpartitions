@@ -20,9 +20,9 @@ Scranton Products makes its Hiny Hiders partitions from 1-inch solid HDPE with t
 
 ![Cross-section of a solid plastic (HDPE) partition door edge: one homogeneous sheet](/images/diagrams/material-section-solid-plastic.svg)
 
-1. **Core:** none. The whole 1" thickness is one homogeneous HDPE sheet (Scranton).
+1. **Core:** none. The whole 1" thickness is one homogeneous HDPE sheet.
 2. **Faces:** the same HDPE with the color running through, so there is no separate finish layer.
-3. **Edge:** the same sheet, with no edge band. Edge profile (square or eased) isn't described in the sources we hold.
+3. **Edge:** the same sheet, with no edge band.
 
 Hinges, latches and brackets are usually aluminum or stainless. Scranton specifies 8-inch extruded aluminum wrap-around hinges and 3" molded HDPE or 20-gauge stainless pilaster sleeves for overhead-braced Hiny Hiders. See [hinges](/hardware/hinges) and [parts](/hardware/parts).
 

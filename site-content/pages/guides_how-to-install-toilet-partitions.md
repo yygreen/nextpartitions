@@ -91,7 +91,7 @@ The order below is the typical one across manufacturers. Your guide may differ i
 ![Ceiling hung toilet partitions, front view](/images/diagrams/mounting-ceiling-hung.svg)
 
 1. **Structural steel above the finished ceiling**, supplied by the building and engineered for the load.
-2. **Hanger** from the steel down through the ceiling into each pilaster. Bobrick's pilasters are 83" for an 8' ceiling.
+2. **Hanger** from the steel down through the ceiling into each pilaster. Pilasters are 83" for an 8' ceiling.
 3. **The floor stays completely clear.**
 
 Ceiling hung is the style where the building matters most. If you are asking how to install ceiling hung toilet partitions, the first answer is that the support steel must exist before the partitions arrive.

@@ -17,7 +17,7 @@ Ceiling hung toilet partitions, also called ceiling mounted or suspended partiti
 ![Ceiling hung toilet partitions, front view](/images/diagrams/mounting-ceiling-hung.svg)
 
 1. **Structural steel above the finished ceiling**, supplied by the building and engineered for the load.
-2. **Hanger** from the steel down through the ceiling into each pilaster. Bobrick's pilasters are 83" for an 8' ceiling.
+2. **Hanger** from the steel down through the ceiling into each pilaster. Pilasters are 83" for an 8' ceiling.
 3. **The floor stays completely clear.**
 
 - **Overhead support (by others):** a steel member above the finished ceiling at every pilaster. Bobrick's TB-32 bulletin shows I-beam, channel and angle supports. Bradley's ceiling-hung installation guide says a "C" channel and ceiling "(not included) is required." None of these are supplied with the partitions.

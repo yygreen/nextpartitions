@@ -22,9 +22,9 @@ ASI's version adds Moisture Guard edge banding that fuses with the core.
 
 ![Cross-section of a plastic laminate partition door edge: particleboard core, laminate faces, edge](/images/diagrams/material-section-plastic-laminate.svg)
 
-1. **Core:** resin-impregnated particleboard, 45 lb density (Bobrick).
+1. **Core:** resin-impregnated particleboard, 45 lb density.
 2. **Faces:** high-pressure decorative laminate bonded to both faces.
-3. **Edge:** ASI's Moisture Guard edge banding, which fuses with the core. Bobrick's edge detail isn't described in the material we hold.
+3. **Edge:** an edge band sealing the core; some lines fuse it to the core for moisture resistance.
 
 ## Fire rating
 

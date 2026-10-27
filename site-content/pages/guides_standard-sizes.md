@@ -31,13 +31,13 @@ Panels are the dividers between stalls. They are not numbered on the drawing; th
 
 | Part | Standard size | Notes |
 |---|---|---|
-| Door and panel height | 58" | Published as standard by Bobrick, ASI Global, Bradley and Metpar |
+| Door and panel height | 58" | Standard across the major brands |
 | Floor clearance | 12" | The bottom of doors and panels sits 12" above the floor |
-| Solid plastic door and panel | 55", mounted 14" up | Scranton Products Hiny Hiders; ASI Global No Sight-55 |
-| Pilaster, overhead-braced | 82" (Bradley PH400) to 83" (Bobrick) | |
-| Pilaster, floor-mounted | 69" (Bobrick) | |
+| Solid plastic door and panel | 55", mounted 14" up | Some solid plastic lines |
+| Pilaster, overhead-braced | 82" to 83" | Varies by brand |
+| Pilaster, floor-mounted | 69" | |
 
-Taller privacy versions exist: Metpar offers 64" and 72" series; ASI Global offers doors up to 72"; Scranton's Eclipse comes in 55", 62" and 72"; Bradley lists 72" at 6" mounting height, or 69" at 9" for ADA stalls; Bobrick's maximum is 71-3/4" at 4-1/2" clearance. See [why do bathroom stalls have gaps](/blog/why-do-bathroom-stalls-have-gaps) for the privacy options.
+Taller privacy versions run from about 62" to 72" high, mounted lower, between 4-1/2" and 9" above the floor. See [why do bathroom stalls have gaps](/blog/why-do-bathroom-stalls-have-gaps) for the privacy options.
 
 If you lower the floor gap on the accessible stall, check toe clearance first. The ADA requires 9" of toe clearance above the floor on the front partition and at least one side partition (12" in children's compartments), with exceptions for larger compartments (2010 ADA Standards 604.8.1.4).
 
@@ -57,13 +57,13 @@ Manufacturers publish panel and pilaster widths on each product's data sheet, an
 
 ## Thickness by material
 
-| Material | Door | Panel | Pilaster | Source |
-|---|---|---|---|---|
-| Powder coated steel | 1" | 1" | 1-1/4" | Metpar |
-| Plastic laminate | 1" | 1" | 1" (Bobrick) or 1-1/4" (ASI Global) | Bobrick 1040 and DesignerSeries; ASI Global |
-| Solid plastic (HDPE) | 1" | 1" | 1" | Scranton Products; ASI Global |
-| Phenolic | 3/4" | 1/2" | 3/4" | Bobrick DuraLineSeries; Bradley PH400 |
-| Stainless steel | 1" | 1" | Confirm on your partition | Our stainless steel page |
+| Material | Door | Panel | Pilaster |
+|---|---|---|---|
+| Powder coated steel | 1" | 1" | 1-1/4" |
+| Plastic laminate | 1" | 1" | 1" or 1-1/4" |
+| Solid plastic (HDPE) | 1" | 1" | 1" |
+| Phenolic | 3/4" | 1/2" | 3/4" |
+| Stainless steel | 1" | 1" | Confirm on your partition |
 
 These are typical values. Older and custom partitions differ, so measure yours. Thickness decides which hinges, latches and brackets fit: [hardware & parts](/hardware).
 

@@ -73,7 +73,7 @@ Wide views (plan, front elevation) span the figure and keep a 560 px minimum on 
 
 - A `<title>` and `<desc>` in the SVG and alt text on the page (what it shows, in one sentence).
 - Width and height from its viewBox; it scales to the content column and fits a 390 px phone screen.
-- Its sources: the dimensions come from the page's Sources list.
+- Its sources in the page's Sources list only. Drawings, their keys and the text around them present the figures as our own: no manufacturer names, data sheet references or code citations on the drawing or in its key. Where the figure comes from is recorded in `drawing-check.md` and the page's Sources.
 
 ## Photos
 

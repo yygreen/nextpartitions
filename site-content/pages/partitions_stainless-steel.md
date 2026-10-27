@@ -20,9 +20,9 @@ ASI builds its stainless partitions from Type 304 stainless steel over a honeyco
 
 ![Cross-section of a stainless steel partition door edge: honeycomb core, stainless faces, edge](/images/diagrams/material-section-stainless-steel.svg)
 
-1. **Core:** honeycomb (Bobrick, ASI).
-2. **Faces:** Type 304 stainless steel (ASI), in a brushed or textured finish.
-3. **Edge:** where the stainless faces close around the core. Face gauge, door thickness and how the edge is formed are not given in the manufacturer material we hold, so we don't state them.
+1. **Core:** honeycomb.
+2. **Faces:** Type 304 stainless steel, in a brushed or textured finish.
+3. **Edge:** where the stainless faces close around the core.
 
 Hardware: ASI uses Type 304 stainless for its leveling shoes. Bobrick's hardware is 18-8 Type-304 stainless with a satin finish, and its pilaster shoe is 4" high.
 

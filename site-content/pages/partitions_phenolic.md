@@ -28,8 +28,8 @@ Phenolic parts are thinner than laminate or HDPE parts. Bobrick (1080 Series, Du
 ![Cross-section of a phenolic partition door edge: layered core, faces and edge](/images/diagrams/material-section-phenolic.svg)
 
 1. **Core:** layers of kraft paper impregnated with phenolic resin, fused under heat and pressure. Black on black core phenolic; the color-through version carries the color through the whole thickness.
-2. **Faces:** melamine decorative surface (Bobrick's CGL description).
-3. **Edge:** the cut edge of the fused sheet. It shows the core color: black on black core, the panel color on color-through. How the edge is finished is not described in the manufacturer material we hold, so the drawing shows the sheet as made.
+2. **Faces:** melamine decorative surface.
+3. **Edge:** the cut edge of the fused sheet. It shows the core color: black on black core, the panel color on color-through.
 
 ## Fire rating
 

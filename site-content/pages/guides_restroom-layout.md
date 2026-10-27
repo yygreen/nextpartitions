@@ -36,7 +36,7 @@ A and E decide how many stalls fit. C and F decide the mounting style. D decides
 
 ## Step 2: Count the stalls along the wall
 
-A row of stalls is the sum of its compartments, so the count comes from the wall length. Bradley's example layout shows how: an accessible compartment 60-1/2" wide, an ambulatory compartment 36-1/2" wide and two standard compartments 36" wide add up to 169" along the wall. The plan is 61-1/4" deep to the face of the doors and panels.
+A row of stalls is the sum of its compartments, so the count comes from the wall length. Our example layout shows how: an accessible compartment 60-1/2" wide, an ambulatory compartment 36-1/2" wide and two standard compartments 36" wide add up to 169" along the wall. The plan is 61-1/4" deep to the face of the doors and panels.
 
 ![Plan view of a row of toilet compartments, with the accessible, ambulatory and standard compartments](/images/diagrams/sheet-plan.svg)
 

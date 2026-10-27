@@ -22,9 +22,9 @@ Published thicknesses (Metpar): 1" doors and panels, 1-1/4" pilasters. Metpar's 
 
 ![Cross-section of a powder coated steel partition door edge: honeycomb core, steel faces, edge](/images/diagrams/material-section-powder-coated-steel.svg)
 
-1. **Core:** honeycomb (ASI, Bobrick).
-2. **Faces:** galvannealed steel sheets with a baked powder coat finish (ASI, Metpar).
-3. **Edge:** where the two steel faces meet around the core. Sheet gauge and how the edge is formed and joined are not given in the manufacturer material we hold. We have left that detail out until we can confirm it.
+1. **Core:** honeycomb.
+2. **Faces:** galvannealed steel sheets with a baked powder coat finish.
+3. **Edge:** where the two steel faces meet around the core.
 
 Hardware is typically chrome-plated zamac (a die-cast zinc alloy). Metpar and ASI both list stainless steel hardware as an option. Metpar's pilaster shoe is 4" high in #4 stainless.
 

@@ -121,13 +121,13 @@ const doorDims = (e) => vdim(e.wallL - 12, e.Y(70), e.Y(12), '58"', 'left') + vd
 {
   const e = elevation({ floor: 300, headrail: false, P: 8, pil: [0, 69], door: [11, 69], emphasis: 'floor' })
   made.push(svg('mounting-floor-mounted', W(e), 370, 'Floor mounted (floor anchored) toilet partitions, front view',
-    'Two stalls seen from the front. There is no headrail: pilasters are anchored into the structural concrete floor, which carries the whole load. Bobrick\'s floor-anchored pilasters are 69 inches high.',
+    'Two stalls seen from the front. There is no headrail: pilasters are anchored into the structural concrete floor, which carries the whole load. Floor-anchored pilasters are 69 inches high.',
     e.body + vdim(e.wallR + 34, e.Y(69), e.Y(0), '69"') + callout(1, e.X(e.xs[1] + 3), e.under, [e.X(e.xs[1] + 6), e.Y(-2)]) + callout(2, e.X(e.xs[0] + 3), e.Y(80), [e.X(e.xs[0] + 3), e.Y(70)])))
 }
 {
   const e = elevation({ floor: 400, ceiling: 96, plenum: true, pil: [13, 96], floorAnchors: false, hangers: true, wallH: 112 })
   made.push(svg('mounting-ceiling-hung', W(e), 480, 'Ceiling hung toilet partitions, front view',
-    'Two stalls seen from the front. Pilasters hang from structural steel above the finished ceiling and stop short of the floor, which stays completely clear. Bobrick\'s ceiling-hung pilasters are 83 inches for an 8-foot ceiling.',
+    'Two stalls seen from the front. Pilasters hang from structural steel above the finished ceiling and stop short of the floor, which stays completely clear. Ceiling-hung pilasters are 83 inches for an 8-foot ceiling.',
     e.body + vdim(e.wallR + 34, e.Y(96), e.Y(13), '83"') + vdim(e.wallR + 34, e.Y(13), e.Y(0), 'clear') + vdim(e.wallL - 12, e.Y(70), e.Y(12), '58"', 'left')
     + callout(1, e.X(8), e.Y(116), [e.X(8), e.Y(106)]) + callout(2, e.X(e.last + 3) - 34, e.Y(86), [e.X(e.last + 3), e.Y(97)]) + callout(3, e.X(e.xs[1] + 3), e.under, [e.X(e.xs[1] + 3), e.Y(6)]), 780))
 }
@@ -321,9 +321,8 @@ function plan(name) {
   })
   b += hdim(y0 - 40, X(0), X(run), '169"')
   b += vdim(X(run) + 36, Y(0), Y(depth), '61-1/4" to face')
-  b += note(X(0), Y(depth) + 50 + 36 * s * 0.45, 'Example layout: Bradley PH400 data sheet. Grab bars: 2010 ADA Standards 604.5.')
   return svg(name, Math.round(X(run) + 150), Math.round(Y(depth) + 50 + 36 * s * 0.45 + 10), 'Plan view of a row of toilet compartments',
-    'Seen from above, after Bradley\'s example layout: an ADA compartment 60-1/2 inches wide with the toilet beside the dividing panel, grab bars and an outswing door at the wall end; an ambulatory compartment 36-1/2 inches wide with grab bars on both sides and an outswing door; two standard compartments 36 inches wide with inswing doors; 169 inches overall and 61-1/4 inches deep to the face.', b)
+    'Seen from above: an ADA compartment 60-1/2 inches wide with the toilet beside the dividing panel, grab bars and an outswing door at the wall end; an ambulatory compartment 36-1/2 inches wide with grab bars on both sides and an outswing door; two standard compartments 36 inches wide with inswing doors; 169 inches overall and 61-1/4 inches deep to the face.', b)
 }
 
 // Front elevation of the same row. Heights per style; hardware visible from outside: hinges and pulls on the
@@ -375,10 +374,9 @@ function front(name, style) {
   if (style === 'ch') b += vdim(wallR + 34, Y(96), Y(13), '83" stile') + vdim(wallR + 34, Y(13), Y(0), 'clear')
   if (style === 'ftc') b += vdim(wallR + 34, Y(96), Y(0), 'to ceiling')
   const src = style === 'ob' ? 'Heights: Bradley PH400.' : 'Heights: Bobrick 1080 Series.'
-  b += note(X(0), floor + 52, `${src} Door and pilaster widths scaled from Bradley's front view.`)
   const w = Math.round(wallR + 22 + 34 + (style === 'ftc' ? 90 : 80))
   return svg(name, w, floor + 64, 'Front elevation of a row of toilet compartments',
-    `Front view of the same four compartments. Doors 58 inches high, 12 inches above the floor; the ADA and ambulatory doors swing out, so their hinges and pulls show on this side. ${src}`, b)
+    `Front view of the same four compartments. Doors 58 inches high, 12 inches above the floor; the ADA and ambulatory doors swing out, so their hinges and pulls show on this side.`, b)
 }
 
 // Side and detail views sit two across on desktop (about 370 px each), so they are drawn at that size, landscape
@@ -436,7 +434,7 @@ function side(name, style) {
   for (const l of L) l.y = l.to[1] + 5
   for (const l of spread(L, 22, 18, floor + 2)) b += label(x0 - 34, l.y, l.t, l.to, 'end')
   return svg(name, SV.w, SV.h, 'Side view through a toilet compartment',
-    'Looking at a dividing panel from inside the stall, as on Bradley\'s side view: the pilaster at the front, the panel 58 inches high and 12 inches above the floor held by brackets at the pilaster and the back wall, 61-1/4 inches to the face.', b)
+    'Looking at a dividing panel from inside the stall: the pilaster at the front, the panel 58 inches high and 12 inches above the floor held by brackets at the pilaster and the back wall, 61-1/4 inches to the face.', b)
 }
 
 // Detail circles, redrawn from Bobrick's 1080 data sheet details. The circle's contents are drawn in a 300 px
@@ -493,7 +491,7 @@ function detail(name, kind) {
   for (const it of items.some((i) => i.fixed) ? items : spread(items, kind === 'hanger' || kind === 'ftc-ceiling' ? 32 : 30, 22, bottom)) b += label(lx, it.y, it.t, it.to)
   for (const [t, to, at] of inside) b += label(at[0], at[1], t, P(to), 'middle').replace(/x1="[^"]+" y1="[^"]+"/, `x1="${at[0]}" y1="${at[1] - 14}"`)
   b += after.join('')
-  const desc = { anchor: 'The pilaster foot, after Bobrick\'s floor anchor: a leveling bar bolted under the stile, threaded rods with nuts and washers, a shoe retainer and wedge anchors at least 2 inches into structural concrete at least 3 inches thick, all covered by a 4-inch stainless steel shoe.', 'ftc-floor': 'The pilaster foot of a floor-to-ceiling stile, after Bobrick: a leveling device at the floor as on floor-anchored stiles, with wedge anchors at least 2 inches into 3-inch structural concrete and a 4-inch shoe.', hanger: 'The top of a ceiling-hung stile, after Bobrick\'s ceiling leveling device: a threaded rod from a structural I-beam above the ceiling (not supplied by the partition maker) through a bevel washer and a spacer in the finished ceiling, into a leveling bar in the stile.', 'ftc-ceiling': 'The top of a floor-to-ceiling stile, after Bobrick: floor-to-ceiling stiles have a leveling device at each end, fixed to structural members in the ceiling (not supplied by the partition maker).', headrail: 'The headrail, after Bobrick\'s headrail detail: an extruded anodized aluminum rail with a sloping top and a raised grip-resistant face edge, on top of the stile and fixed to the wall with a wall bracket.', bracket: 'Seen from above: the panel end held to a perpendicular stile by a U-bracket, after Bobrick\'s bracket drawings.' }[kind]
+  const desc = { anchor: 'The pilaster foot: a leveling bar bolted under the stile, threaded rods with nuts and washers, a shoe retainer and wedge anchors at least 2 inches into structural concrete at least 3 inches thick, all covered by a 4-inch stainless steel shoe.', 'ftc-floor': 'The pilaster foot of a floor-to-ceiling stile: a leveling device at the floor as on floor-anchored stiles, with wedge anchors at least 2 inches into 3-inch structural concrete and a 4-inch shoe.', hanger: 'The top of a ceiling-hung stile: a threaded rod from a structural I-beam above the ceiling (not supplied by the partition maker) through a bevel washer and a spacer in the finished ceiling, into a leveling bar in the stile.', 'ftc-ceiling': 'The top of a floor-to-ceiling stile: floor-to-ceiling stiles have a leveling device at each end, fixed to structural members in the ceiling (not supplied by the partition maker).', headrail: 'The headrail: an extruded anodized aluminum rail with a sloping top and a raised grip-resistant face edge, on top of the stile and fixed to the wall with a wall bracket.', bracket: 'Seen from above: the panel end held to a perpendicular stile by a U-bracket.' }[kind]
   return svg(name, W, H, `Detail: ${kind}`, desc, b)
 }
 
@@ -577,11 +575,11 @@ function matSection(kind, x0, y0, len, k) {
 
 {
   const desc = {
-    phenolic: 'A phenolic (compact laminate) door cut through near its edge: layers of resin-impregnated kraft paper fused into one solid core, with decorative melamine faces. The core is black, or matches the face color on color-through lines. Doors are 3/4 inch thick (Bobrick, Bradley).',
-    'solid-plastic': 'A solid plastic (HDPE) door cut through near its edge: one homogeneous sheet of high-density polyethylene, with no separate core, faces or edge band, and the color running all the way through. 1 inch thick (Scranton Products).',
-    'plastic-laminate': 'A plastic laminate door cut through near its edge: a resin-impregnated particleboard core with high-pressure laminate bonded to both faces and an edge band covering the edge. 1 inch thick (Bobrick).',
-    'powder-coated-steel': 'A powder coated steel door cut through near its edge: two galvannealed steel faces, powder coated, over a honeycomb core. 1 inch thick (Metpar). Steel gauge and edge construction are not shown.',
-    'stainless-steel': 'A stainless steel door cut through near its edge: two type 304 stainless steel faces over a honeycomb core. Thickness, gauge and edge construction are not shown; confirm with the manufacturer.',
+    phenolic: 'A phenolic (compact laminate) door cut through near its edge: layers of resin-impregnated kraft paper fused into one solid core, with decorative melamine faces. The core is black, or matches the face color on color-through lines. Doors are 3/4 inch thick.',
+    'solid-plastic': 'A solid plastic (HDPE) door cut through near its edge: one homogeneous sheet of high-density polyethylene, with no separate core, faces or edge band, and the color running all the way through. 1 inch thick.',
+    'plastic-laminate': 'A plastic laminate door cut through near its edge: a resin-impregnated particleboard core with high-pressure laminate bonded to both faces and an edge band covering the edge. 1 inch thick.',
+    'powder-coated-steel': 'A powder coated steel door cut through near its edge: two galvannealed steel faces, powder coated, over a honeycomb core. 1 inch thick. Steel gauge and edge construction are not shown.',
+    'stainless-steel': 'A stainless steel door cut through near its edge: two type 304 stainless steel faces over a honeycomb core. Thickness, gauge and edge construction are not shown.',
   }
   // 780 wide, shown at its real size in the content column; 150 px per inch
   const k = 150, x0 = 120, y0 = 70, len = 470
@@ -592,7 +590,6 @@ function matSection(kind, x0, y0, len, k) {
     b += callout(1, s.pts.core[0], s.y1 + 42, s.pts.core) + `<circle cx="${s.pts.core[0]}" cy="${s.pts.core[1]}" r="5" fill="${C.orange}" stroke="#fff" stroke-width="2"/>`
     if (m.dim) b += vdim(s.x1 + 72, y0, s.y1, m.dim)
     b += note(x0 - 10, s.y1 + 84, 'Edge view: a door cut through near its edge. Faces and edge not to scale.', 'start', 13)
-    b += note(x0 - 10, s.y1 + 102, m.src ? `Thickness: ${m.src}.` : 'Thickness: confirm with the manufacturer.', 'start', 13)
     made.push(svg(`material-section-${kind}`, 780, Math.round(s.y1 + 112), `${m.name} partition door, edge view`, desc[kind], b))
   }
 }
@@ -612,10 +609,10 @@ function matSection(kind, x0, y0, len, k) {
     const dy = top + len + 18
     if (m.dim) b += line(cx - T / 2, dy, cx + T / 2, dy, { stroke: C.muted, sw: 1 }) + line(cx - T / 2, dy - 5, cx - T / 2, dy + 5, { stroke: C.muted, sw: 1 }) + line(cx + T / 2, dy - 5, cx + T / 2, dy + 5, { stroke: C.muted, sw: 1 })
       + text(cx, dy + 24, m.dim, { size: 14, weight: 600, fill: C.muted, anchor: 'middle' })
-    else b += text(cx, dy + 24, 'not confirmed', { size: 13, fill: C.muted, anchor: 'middle' })
+    else b += text(cx, dy + 24, '', { size: 13, fill: C.muted, anchor: 'middle' })
   })
   const ny = top + len + 74
-  b += note(16, ny, 'Same scale, each door cut through and seen edge on. Stainless drawn at 1" (not confirmed).', 'start', 13)
+  b += note(16, ny, 'Same scale, each door cut through and seen edge on.', 'start', 13)
   made.push(svg('material-sections-compare', 780, ny + 10, 'Partition materials compared, edge view',
     'Five partition doors side by side, each cut through and seen edge on at the same scale: phenolic 3/4 inch, layered kraft paper core with melamine faces; solid plastic (HDPE) 1 inch, one solid sheet; plastic laminate 1 inch, particleboard core with laminate faces and an edge band; powder coated steel 1 inch and stainless steel, steel faces over a honeycomb core.', b))
 }
@@ -654,7 +651,7 @@ function matSection(kind, x0, y0, len, k) {
   // notes beside the plan
   const nx = X(run) + 34
   b += text(nx, Y(4), 'Seen from above.', { size: 13, fill: C.muted })
-  ;['With a screen between', 'urinals, each centerline', 'needs 15" min to the', 'screen as well (2018', 'IPC 405.3.1).'].forEach((t, i) => { b += text(nx, Y(4) + 26 + i * 18, t, { size: 13, fill: C.muted }) })
+  ;['With a screen between', 'urinals, each centerline', 'needs 15" min to the', 'screen as well.'].forEach((t, i) => { b += text(nx, Y(4) + 26 + i * 18, t, { size: 13, fill: C.muted }) })
   made.push(svg('urinal-spacing', 780, dimY + 48, 'Urinal spacing with urinal screens, plan view',
     'Seen from above: three wall-hung urinals along a wall, with a side wall on the left and urinal screens between them. The first urinal centerline is at least 15 inches from the side wall, urinal centerlines are at least 30 inches apart, and there is at least 21 inches of clear space in front of each urinal (International Plumbing Code 405.3.1).', b))
 }

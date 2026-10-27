@@ -34,17 +34,17 @@ ADA figures are minimums. Anything bigger that still meets the other rules is fi
 
 There is no single "standard" in a code. The usual commercial bathroom stall size is a compartment about 36" wide and 60" or slightly deeper, and it is common because it clears the plumbing minimums with room to spare.
 
-- **Width.** The IPC sets 30" as the narrowest compartment for any toilet (405.3.1). Bradley's example layout for its PH400 phenolic partitions uses two standard compartments of 36" each.
-- **Depth.** The IPC minimum is 60" for a floor-mounted toilet and 56" for a wall-hung one. Layouts often run a little deeper. In Bradley's PH400 example the compartments are 61-1/4" deep to the face of the door and panels.
-- **Check what a published width means.** Bradley's example calls the accessible compartment 60" clear and 60-1/2" overall. Ask your supplier whether a size is clear or overall.
+- **Width.** The IPC sets 30" as the narrowest compartment for any toilet (405.3.1). Our example layout below uses two standard compartments of 36" each.
+- **Depth.** The IPC minimum is 60" for a floor-mounted toilet and 56" for a wall-hung one. Layouts often run a little deeper. In our example layout the compartments are 61-1/4" deep to the face of the doors and panels.
+- **Check what a published width means.** Published layouts often give the accessible compartment as 60" clear and 60-1/2" overall. Ask your supplier whether a size is clear or overall.
 
 You will also see a "narrow" 30" stall. That is the IPC minimum, not a separate product class. Treat it as a floor, and confirm door swing and clearances before specifying it.
 
-A row of stalls is the sum of its compartments. Bradley's example is one 60-1/2" accessible compartment, one 36-1/2" ambulatory compartment and two 36" standard compartments: 169" along the wall in all.
+A row of stalls is the sum of its compartments. Our example layout is one 60-1/2" accessible compartment, one 36-1/2" ambulatory compartment and two 36" standard compartments: 169" along the wall in all.
 
 ![Plan view of a row of toilet compartments: an accessible compartment, an ambulatory compartment and two standard compartments](/images/diagrams/sheet-plan.svg)
 
-How to read the plan, which is based on Bradley's PH400 data sheet:
+How to read the plan:
 
 - **Left to right:** the accessible (ADA) compartment, 60" clear and 60-1/2" overall, with an outswing door and grab bars; the ambulatory compartment, 36" clear and 36-1/2" overall, with grab bars on both sides; then two standard compartments, 36" each, with inswing doors.
 - **The 169" figure** is the overall length of the run. **61-1/4" to face** is the depth to the face of the doors and panels.
@@ -66,18 +66,18 @@ Panels and doors on a traditional partition do not run to the floor. They are mo
 
 | Dimension | Typical figure | Source |
 |---|---|---|
-| Door and panel height | 58" | Bobrick, ASI Global, Bradley and Metpar publish 58" as standard |
-| Floor clearance | 12" | Bobrick, ASI Global, Bradley, Metpar |
-| Pilaster height, overhead-braced | 82" (Bradley PH400) to 83" (Bobrick) | Bradley spec sheet; Bobrick mounting data |
-| Pilaster height, floor-mounted | 69" (Bobrick) | Bobrick mounting data |
-| Solid plastic (HDPE) | 55" doors and panels, mounted 14" up, on some lines | Scranton Products Hiny Hiders; ASI Global No Sight-55 |
-| Privacy heights | 64" or 72" mounted 6" or 9" up (ASI Global); 72" at 6" or 69" at 9" for ADA stalls (Bradley); 71-3/4" at 4-1/2" (Bobrick) | Manufacturer data |
+| Door and panel height | 58" | Standard across the major brands |
+| Floor clearance | 12" | Standard across the major brands |
+| Pilaster height, overhead-braced | 82" to 83" | Varies by brand |
+| Pilaster height, floor-mounted | 69" | Typical |
+| Solid plastic (HDPE) | 55" doors and panels, mounted 14" up | Some solid plastic lines |
+| Privacy heights | 64" to 72", mounted 4-1/2" to 9" up | Varies by brand and series |
 
 Overall height depends on how the partition is held up. A 58" door mounted 12" up tops out at 70" from the floor. Overhead-braced and ceiling-hung systems carry pilasters higher to meet a headrail or hangers, and floor-to-ceiling systems run the pilasters to the ceiling. Compare them in our [mounting styles guide](/mounting-styles).
 
 ### The gaps in a standard stall
 
-Standard partitions have four gaps (see the drawing above). On Bobrick's published tolerances the door-to-pilaster gap is 3/32" on the hinge side and 7/64" at most on the keeper side, and the panel or pilaster to wall gap is 1/2" to 1". Other manufacturers' gaps may be wider. Why they exist, and how no-sightline doors close them, is in [why do bathroom stalls have gaps](/blog/why-do-bathroom-stalls-have-gaps).
+Standard partitions have four gaps (see the drawing above). On typical published tolerances the door-to-pilaster gap is 3/32" on the hinge side and 7/64" at most on the keeper side, and the panel or pilaster to wall gap is 1/2" to 1". Other manufacturers' gaps may be wider. Why they exist, and how no-sightline doors close them, is in [why do bathroom stalls have gaps](/blog/why-do-bathroom-stalls-have-gaps).
 
 ## Bathroom stall door width
 
