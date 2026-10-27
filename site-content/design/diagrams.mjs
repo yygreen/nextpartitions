@@ -396,23 +396,41 @@ function front(name, style, ph = false) {
 // Side and detail views sit two across on desktop (about 370 px each), so they are drawn at that size, landscape
 // (400 x 250), with their labels beside the drawing: text then shows at about 13–14 px.
 const SV = { w: 400, h: 250 }
-// A label beside a drawing: ink text, orange leader ending in a dot on the part. Lines after the first sit below it.
-function label(x, y, lines, to, anchor = 'start') {
-  const ls = [].concat(lines)
-  const lx = anchor === 'start' ? x - 4 : x + 4
-  return line(lx, y - 5, to[0], to[1], { stroke: C.orange, sw: 1.2 }) + `<circle cx="${to[0]}" cy="${to[1]}" r="2.5" fill="${C.orange}"/>`
-    + ls.map((t, i) => `<text x="${x}" y="${y + i * 16}" font-size="14" font-weight="500" fill="${C.ink}" text-anchor="${anchor}" paint-order="stroke" stroke="#fff" stroke-width="4">${esc(t)}</text>`).join('')
+// Side labels: one column per side on a 16 px baseline grid. Every label's text starts (right column) or ends (left
+// column) at the same x; labels are ordered top to bottom as the points they name and spaced one empty grid line apart
+// (a two-line label takes one more line). Each leader is an elbow: a short horizontal run from the label to a gutter
+// shared by the whole column, then straight to the point, ending in a dot. Notes and dimension text use the same grid
+// and the same x (see gridY and dimLane).
+const GRID = 16, PITCH = 2 * GRID, ROW0 = 26, GUTTER = 14
+const gridY = (y) => ROW0 + Math.round((y - ROW0) / GRID) * GRID
+const leader = (sx, y, gx, to) => `<path d="M${sx} ${y} H${Math.abs(to[1] - y) < 0.5 ? to[0] : `${gx} L${to[0]} ${to[1]}`}" fill="none" stroke="${C.orange}" stroke-width="1.2" stroke-linejoin="round"/><circle cx="${to[0]}" cy="${to[1]}" r="2.5" fill="${C.orange}"/>`
+const labelText = (x, y, lines, anchor) => lines.map((t, i) => `<text x="${x}" y="${y + i * GRID}" font-size="14" font-weight="500" fill="${C.ink}" text-anchor="${anchor}" paint-order="stroke" stroke="#fff" stroke-width="4">${esc(t)}</text>`).join('')
+// items: [{ t: text or lines, to: [x, y] }]. side 'right': x is where the text starts; 'left': where it ends.
+// lo / hi: the first and last baselines the column may use.
+function labelColumn(items, { x, side = 'right', lo = ROW0, hi }) {
+  const its = items.map((it) => ({ lines: [].concat(it.t), to: it.to })).sort((p, q) => p.to[1] - q.to[1])
+  const off = []; let y = 0
+  for (const it of its) { off.push(y); y += GRID * (it.lines.length - 1) + PITCH }
+  const span = y - PITCH // first baseline to last baseline
+  const mid = its.reduce((m, it) => m + it.to[1], 0) / its.length + 5
+  const max = lo + Math.floor((hi - lo) / GRID) * GRID - span
+  const y0 = Math.max(lo, Math.min(max, gridY(mid - span / 2)))
+  const d = side === 'right' ? -1 : 1, gx = x + d * GUTTER
+  const segs = its.map((it, i) => ({ it, y: y0 + off[i] }))
+  // check: no two leaders cross
+  const cross = (p1, p2, p3, p4) => { const o = (a, b, c) => Math.sign((b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0])); return o(p1, p2, p3) * o(p1, p2, p4) < 0 && o(p3, p4, p1) * o(p3, p4, p2) < 0 }
+  for (let i = 0; i < segs.length; i++) for (let j = i + 1; j < segs.length; j++) if (cross([gx, segs[i].y - 5], segs[i].it.to, [gx, segs[j].y - 5], segs[j].it.to)) console.warn(`leaders cross: ${segs[i].it.lines[0]} / ${segs[j].it.lines[0]}`)
+  return { y0, last: y0 + span, gx, svg: segs.map(({ it, y }) => leader(x + d * 4, y - 5, gx, it.to) + labelText(x, y, it.lines, side === 'right' ? 'start' : 'end')).join('') }
 }
-// Spread label baselines so they keep at least `gap` apart, near the y of what they point at.
-function spread(items, gap, lo, hi) {
-  const s = [...items].sort((a, b) => a.y - b.y)
-  const extra = (it) => 16 * ((it.lines ?? 1) - 1) // further lines below the baseline
-  let y = lo
-  for (const it of s) { it.y = Math.max(it.y, y); y = it.y + extra(it) + gap }
-  let lim = hi
-  for (let i = s.length - 1; i >= 0; i--) { s[i].y = Math.min(s[i].y, lim - extra(s[i])); lim = s[i].y - gap }
-  return s
+// A dimension beside a label column: its line in a lane between the gutter and the text, its text at the column's x,
+// on the grid. lines: [[text, size, weight]...]
+function dimLane(x, y1, y2, lines) {
+  const lx = x - 7
+  const y = gridY((y1 + y2) / 2 + 5)
+  return `${line(lx, y1, lx, y2, { stroke: C.muted, sw: 1 })}${line(lx - 5, y1, lx + 5, y1, { stroke: C.muted, sw: 1 })}${line(lx - 5, y2, lx + 5, y2, { stroke: C.muted, sw: 1 })}`
+    + lines.map(([t, size, weight], i) => text(x, y + i * GRID, t, { size, fill: C.muted, weight })).join('')
 }
+const noteLines = (x, y, lines) => lines.map((t, i) => note(x, gridY(y) + i * GRID, t, 'start', 13)).join('')
 
 // Side view through a stall: looking at a dividing panel, front (pilaster) on the left as on Bradley's sheet,
 // back wall on the right. Labels on the left, by the front; heights to the right of the back wall.
@@ -442,11 +460,10 @@ function side(name, style) {
     { t: 'bracket', to: [X(1.5) + 2, Y(18) + 2] },
   ]
   if (style === 'ob') L.push({ t: 'headrail', to: [X(-0.6), Y(81)] })
-  if (style !== 'ch') L.push({ t: style === 'fm' ? 'shoe, anchored to floor' : 'shoe', to: [X(-0.6), Y(2)] })
+  if (style !== 'ch') L.push({ t: style === 'fm' ? ['shoe, anchored', 'to floor'] : 'shoe', to: [X(-0.6), Y(2)] })
   if (style === 'ftc') L.push({ t: 'ceiling anchor', to: [X(-0.6), Y(94.5)] })
   if (style === 'ch') L.push({ t: 'steel above ceiling', to: [X(-1), Y(103.5)] }, { t: 'hanger', to: [X(1.5), Y(99)] })
-  for (const l of L) l.y = l.to[1] + 5
-  for (const l of spread(L, 22, 18, floor + 2)) b += label(x0 - 34, l.y, l.t, l.to, 'end')
+  b += labelColumn(L, { x: x0 - 46, side: 'left', hi: SV.h - 14 }).svg
   return svg(name, SV.w, SV.h, 'Side view through a toilet compartment',
     'Looking at a dividing panel from inside the stall: the pilaster at the front, the panel 58 inches high and 12 inches above the floor held by brackets at the pilaster and the back wall, 61-1/4 inches to the face.', b)
 }
@@ -460,7 +477,7 @@ function detail(name, kind) {
   let b = `<g transform="translate(${cx} ${cy}) scale(${k.toFixed(4)}) translate(-150 -145)"><clipPath id="c-${name}"><circle cx="150" cy="145" r="120"/></clipPath><g clip-path="url(#c-${name})">`
   const lab = [], after = [], inside = []
   const nut = (x, y) => rect(x - 10, y, 20, 7, { fill: C.part, sw: 1.2 })
-  const lx = cx + r + 18
+  const lx = cx + r + 8 + GUTTER // label column x: the gutter sits 8 px outside the circle
   if (kind === 'anchor' || kind === 'ftc-floor') {
     // stile on a leveling bar (angle), two threaded rods with nuts and washers, shoe retainer, wedge anchors; 4" shoe
     b += rect(0, 196, IW, 110, { fill: 'HATCH', stroke: 'none' }) + line(0, 196, IW, 196)
@@ -471,25 +488,25 @@ function detail(name, kind) {
     b += `<rect x="58" y="110" width="184" height="86" fill="none" stroke="${C.ink}" stroke-width="1.5" stroke-dasharray="6 4"/>` // 4" shoe (outline, in front)
     lab.push(['stile', [220, 50]], ['shoe, 4" high', [242, 104]], ['leveling bar', [230, 124]], ['shoe retainer', [238, 189]], ['wedge anchor', [206, 228]])
     const [, y1] = P([0, 196]), [, y2] = P([0, 248])
-    after.push(vdim(lx - 4, y1, y2, '2" min into'), note(lx + 4, y2 + 4, '3" min structural', 'start', 13), note(lx + 4, y2 + 20, 'concrete', 'start', 13))
+    after.push(dimLane(lx, y1, y2, [['2" min into', DIM, 600], ['3" min structural', 13, 500], ['concrete', 13, 500]]))
   }
   if (kind === 'hanger' || kind === 'ftc-ceiling') {
     // I-beam (by others), bevel washer, threaded rod, spacer through the finished ceiling, leveling bar in the stile
     b += rect(0, 0, IW, 126, { fill: 'HATCH', stroke: 'none' })
-    b += `<path d="M80 34 h140 v9 h-64 v32 h64 v9 h-140 v-9 h64 v-32 h-64 z" fill="${C.orange}"/>` // I-beam section
+    b += `<path d="M90 34 h120 v9 h-54 v32 h54 v9 h-120 v-9 h54 v-32 h-54 z" fill="${C.orange}"/>` // I-beam section
     b += line(150, 84, 150, 200, { stroke: C.ink, sw: 4 }) + rect(136, 84, 28, 7, { fill: C.part, sw: 1.2 })
     b += rect(140, 100, 20, 26, { fill: C.part, sw: 1.2 }) + line(0, 126, IW, 126, { sw: 2.5 })
-    b += rect(90, 150, 120, 160) + `<path d="M84 150 h132 v-8 h-124 v-16 h-8 z" fill="${C.orange}"/>` + nut(150, 160) + nut(150, 176)
-    lab.push(['I-beam (by others)', [220, 40]], ['bevel washer', [164, 88]], ['spacer', [160, 112]], ['finished ceiling', [252, 126]], ['leveling bar', [216, 146]], ['threaded rod', [152, 200]], ['stile', [210, 240]])
+    b += rect(90, 150, 120, 160) + line(150, 150, 150, 200, { stroke: C.ink, sw: 4 }) + `<path d="M84 150 h132 v-8 h-124 v-16 h-8 z" fill="${C.orange}"/>` + nut(150, 160) + nut(150, 176) // rod shown through the stile
+    lab.push(['I-beam (by others)', [210, 38]], ['bevel washer', [164, 90]], ['spacer', [160, 112]], ['finished ceiling', [252, 126]], ['leveling bar', [216, 146]], ['threaded rod', [152, 200]], ['stile', [210, 240]])
   }
   if (kind === 'headrail') {
     // cross-section: the headrail clamps over the stile top (Bradley); enclosed extrusion with a sloping top and a
     // raised grip-resistant face edge (Bobrick)
     b += rect(118, 150, 64, 170) // stile
     b += `<path d="M96 86 L204 74 L204 168 L182 168 L182 150 L118 150 L118 168 L96 168 Z" fill="${C.orange}"/>`
-    b += rect(90, 80, 8, 92, { fill: C.ink, stroke: 'none' }) // raised face edge
-    lab.push(['grip-resistant face', [94, 80], 30], ['sloping top', [190, 76], 60], [['headrail, extruded', 'aluminum'], [200, 120], 100], ['stile', [182, 230], 150])
-    after.push(note(lx, 198, 'cross-section, fixed', 'start', 13), note(lx, 214, 'to each wall with a', 'start', 13), note(lx, 230, 'wall bracket', 'start', 13))
+    b += rect(90, 72, 8, 100, { fill: C.ink, stroke: 'none' }) // raised face edge, above the top's high side
+    lab.push(['grip-resistant face', [94, 72]], ['sloping top', [203, 74.1]], [['headrail, extruded', 'aluminum'], [204, 120]], ['stile', [182, 230]])
+    after.push(noteLines(lx, 202, ['cross-section, fixed', 'to each wall with a', 'wall bracket']))
   }
   if (kind === 'bracket') {
     // seen from above: panel end to a perpendicular stile, U-bracket (Bobrick #1000972: panel to perp. stile)
@@ -497,13 +514,17 @@ function detail(name, kind) {
     b += `<path d="M150 118 h36 v38 h-36" fill="none" stroke="${C.orange}" stroke-width="5" stroke-linejoin="round"/>`
     inside.push(['panel', [80, 146], P([56, 196])])
     lab.push(['stile', [214, 90]], ['U-bracket', [186, 156]])
-    after.push(note(lx, 230, 'seen from above', 'start', 13))
+    after.push(noteLines(lx, 234, ['seen from above']))
   }
   b += `</g></g><circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${C.ink}" stroke-width="1.5"/>`
-  const items = lab.map(([t, to, y]) => { const p = P(to); return { t, to: p, y: y ?? p[1] + 5, fixed: y != null, lines: [].concat(t).length } })
-  const bottom = kind === 'anchor' || kind === 'ftc-floor' ? 150 : kind === 'headrail' ? 190 : kind === 'bracket' ? 200 : H - 12
-  for (const it of items.some((i) => i.fixed) ? items : spread(items, kind === 'hanger' || kind === 'ftc-ceiling' ? 32 : 30, 22, bottom)) b += label(lx, it.y, it.t, it.to)
-  for (const [t, to, at] of inside) b += label(at[0], at[1], t, P(to), 'middle').replace(/x1="[^"]+" y1="[^"]+"/, `x1="${at[0]}" y1="${at[1] - 14}"`)
+  // the column stops one empty grid line above the notes or dimension under it
+  // (the anchor's dimension starts a grid line higher, at the slab); the ceiling details start one grid line lower so
+  // the bevel washer's leader passes under the I-beam
+  const notesAt = { anchor: 186, 'ftc-floor': 186, headrail: 202, bracket: 234 }[kind]
+  const lo = kind === 'hanger' || kind === 'ftc-ceiling' ? ROW0 + GRID : ROW0
+  b += labelColumn(lab.map(([t, to]) => ({ t, to: P(to) })), { x: lx, lo, hi: notesAt ? notesAt - PITCH : H - 14 }).svg
+  // a label inside the circle: centred under the part, leader straight up
+  for (const [t, to, at] of inside) { const p = P(to); b += line(at[0], at[1] - 14, p[0], p[1], { stroke: C.orange, sw: 1.2 }) + `<circle cx="${p[0]}" cy="${p[1]}" r="2.5" fill="${C.orange}"/>` + labelText(at[0], at[1], [t], 'middle') }
   b += after.join('')
   const desc = { anchor: 'The pilaster foot: a leveling bar bolted under the stile, threaded rods with nuts and washers, a shoe retainer and wedge anchors at least 2 inches into structural concrete at least 3 inches thick, all covered by a 4-inch stainless steel shoe.', 'ftc-floor': 'The pilaster foot of a floor-to-ceiling stile: a leveling device at the floor as on floor-anchored stiles, with wedge anchors at least 2 inches into 3-inch structural concrete and a 4-inch shoe.', hanger: 'The top of a ceiling-hung stile: a threaded rod from a structural I-beam above the ceiling (not supplied by the partition maker) through a bevel washer and a spacer in the finished ceiling, into a leveling bar in the stile.', 'ftc-ceiling': 'The top of a floor-to-ceiling stile: floor-to-ceiling stiles have a leveling device at each end, fixed to structural members in the ceiling (not supplied by the partition maker).', headrail: 'The headrail: an extruded anodized aluminum rail with a sloping top and a raised grip-resistant face edge, on top of the stile and fixed to the wall with a wall bracket.', bracket: 'Seen from above: the panel end held to a perpendicular stile by a U-bracket.' }[kind]
   return svg(name, W, H, `Detail: ${kind}`, desc, b)
