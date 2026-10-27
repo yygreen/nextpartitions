@@ -63,6 +63,7 @@ How drawings sit in an article without breaking the read:
 4. **Overview first, detail after.** A strip of numbered frames can open a long sequence as the at-a-glance version; each step below then explains one frame.
 5. **Don't repeat another page's drawing.** A guide links to the full data sheet on its own page in one line instead of embedding it.
 6. **Prose keeps going without the drawing.** Every fact in a drawing is also in the text or the legend, so a reader who skips the picture loses nothing.
+7. **Small details go beside the text.** A close-up that answers "how does this part fit?" mid-task (a bracket, the pilaster foot, the headrail) sits beside its paragraph at half width on desktop, with a one-line caption, and full width above the paragraph on a phone. Write it as `![caption](/images/diagrams/<name>.svg "side")` before the paragraph. Use a drawing at most about 400 px wide (a detail circle or a phone version). This is the one exception to rule 5: a reader mid-task shouldn't have to leave the page to see a part.
 
 ## Views
 
