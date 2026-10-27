@@ -53,6 +53,17 @@ Every illustration is laid out horizontally, at least 1.6 times as wide as it is
 
 **Phone variants.** Nothing scrolls sideways. Every drawing wider than about 480 px (standalone drawings, and the plan and front elevation of a sheet) also has a phone variant drawn 360 wide, still landscape (1.6 : 1 or wider), so its text stays 12–13 px on a phone: `<name>-m.svg`, or `<name>-m1.svg`, `-m2.svg` … when one frame can't hold it. Long labels become the letters and numbers of the page's key; dimensions keep their values. The page shows the phone variant below 640 px.
 
+## Drawings in the reading flow
+
+How drawings sit in an article without breaking the read:
+
+1. **One drawing per step or subsection, at most.** If a section needs two, it is two subsections.
+2. **The sentence before it says what to look at.** The drawing follows the paragraph that sets it up, never the middle of a list.
+3. **The key lives inside the drawing's card** as a compact legend (smaller type, two columns on desktop), so drawing and key read as one unit and the text carries on below it. If the drawing already labels itself (like the installation strips), it has no key.
+4. **Overview first, detail after.** A strip of numbered frames can open a long sequence as the at-a-glance version; each step below then explains one frame.
+5. **Don't repeat another page's drawing.** A guide links to the full data sheet on its own page in one line instead of embedding it.
+6. **Prose keeps going without the drawing.** Every fact in a drawing is also in the text or the legend, so a reader who skips the picture loses nothing.
+
 ## Views
 
 - **Front elevation** for anything about how stalls stand: two stalls between walls, floor slab below.

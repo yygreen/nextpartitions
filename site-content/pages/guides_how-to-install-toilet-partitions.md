@@ -70,119 +70,77 @@ The support system is shown in orange. Have your contractor or structural engine
 
 ### Layout from approved shop drawings
 
-Set out the job from the approved shop drawings, not from memory or from the old stalls. Measure the room and compare it with the drawings before you start. If a wall or column is not where the drawing says, stop and resolve it with the architect. For new work, see the room measurements we ask for in [how to measure a restroom](/guides/restroom-layout).
-
-Start with the room seen from above. These four measurements decide how many stalls fit and where the doors can swing:
-
-![Plan of an empty restroom seen from above, with the stall wall run, room depth, entry door and toilet centerlines lettered](/images/diagrams/measure-new-restroom-plan.svg)
-
-1. **A:** room width along the wall where the stalls go.
-2. **B:** room depth, from the stall wall to the opposite wall.
-3. **D:** entry door location and which way it swings.
-4. **E:** toilet centerlines, measured from the side wall.
-
-Then look at the room from the side, as if it were cut through. This view is about height and structure: what the partitions stand on and what they can hang or brace from, which decides the mounting style.
-
-![Section through a restroom showing ceiling height and the floor and ceiling construction](/images/diagrams/measure-new-restroom-section.svg)
-
-5. **C:** ceiling height, floor to finished ceiling.
-6. **F:** floor construction (slab, tile over slab) and the structure above the ceiling (open steel, concrete deck, drop ceiling).
+Set out the job from the approved shop drawings, not from memory or from the old stalls. Measure the room and compare it with the drawings before you start. If a wall or column is not where the drawing says, stop and resolve it with the architect. What to measure in an empty room is in [how to measure a restroom](/guides/restroom-layout).
 
 ## The general sequence for overhead-braced and floor-mounted
 
-The order below is the typical one across manufacturers. Your guide may differ in detail.
-
-Each frame in the next two drawings shows the same two stalls from above (top) and from the front (bottom), with the step in orange. This is the order on many lines; follow your shop drawings and the manufacturer's instructions.
+Most lines go in the same order. The two strips below are the whole job at a glance: each frame shows the same two stalls from above and from the front, with that step in orange. The steps after them explain each one. Your shop drawings and the manufacturer's instructions have the final word.
 
 ![Installation sequence, steps 1 to 4: layout, wall brackets, wall pilasters, panels](/images/diagrams/install-sequence-1.svg)
 
-1. **Mark the layout:** the pilaster line on the floor, and a plumb line on the walls at each pilaster and panel centerline with the bracket heights marked on it.
-2. **Wall brackets** at the marks, fixed into the wall backing.
-3. **Wall pilasters** first: each stands in its shoe and its wall brackets, plumbed and leveled.
-4. **Panels:** each panel rests on a 12" spacer while it slides into its wall brackets, then the next pilaster stands around it (dashed). Panel and pilaster alternate to the far end.
-
-With the pilasters plumb and level, the run is tied together and the doors go on.
-
 ![Installation sequence, steps 5 to 7: headrail, doors, hinges and latches](/images/diagrams/install-sequence-2.svg)
 
-5. **Headrail** (overhead braced) over the pilaster tops, fixed to both walls.
-6. **Doors** hung once the door openings, the plumb pilasters and the headrail are checked.
-7. **Hinges and latches** set: the rest position at the hinge, the keeper lined up with the latch, and the gaps checked along each door.
+### 1. Mark the layout
 
-The front view below shows the finished stalls and their support.
-
-![Overhead braced toilet partitions, front view](/images/diagrams/mounting-overhead-braced.svg)
-
-1. **Headrail:** extruded anodized aluminum with an anti-grip profile, fixed to both walls with brackets.
-2. **Pilaster shoe** (4" high, stainless steel) over the floor anchor.
-3. **Pilaster.** Doors and panels are 58" high, 12" above the floor.
-
-1. **Layout lines.** Mark the pilaster, panel and wall bracket positions on the floor and walls from the shop drawings. Bradley's guides mark bracket positions from the floor at the highest point in the room: its Series 400 phenolic stirrup brackets are centered 19" and 63" above the floor, and its wall-hung pilaster option uses a level line 12" above the floor. That 12" line appears in all four Bradley phenolic guides (Series 400 to 700) and in the Series 600 powder coated and stainless guide, not only the ceiling-hung one. Bradley's Series 400 phenolic guide also sets the pilaster centerline at the compartment depth minus 3/8"; Hadrian's metal manuals deduct 5/8" from the overall compartment dimension for the front centerline. Use the drawing and the guide for your product.
-
-The drawing below unfolds the side wall and the back wall at the corner, so both lie flat, with the same corner seen from above on the right. On many lines the brackets are marked like this; the heights are one manufacturer's, so follow your shop drawings and the manufacturer's instructions.
+Everything else hangs off these lines, so mark them once and check them twice. Snap the pilaster line on the floor, then draw a plumb line on the walls at every pilaster and panel centerline. Bracket heights are measured from the highest point of the floor and leveled across to every plumb line.
 
 ![Layout marks: plumb lines on the side and back walls with bracket marks at 19 and 63 inches, and the pilaster line on the floor](/images/diagrams/install-layout-marks.svg)
 
 1. **Pilaster plumb line** on the side wall, where the pilaster line meets the wall.
-2. **Panel plumb lines** on the back wall, one at each panel centerline, each measured one stall width from the last.
-3. **Bracket marks** 19" and 63" above the floor, measured from the highest point of the floor and leveled across to every plumb line.
-4. **Third bracket** (optional): an extra mark at 43".
-5. **Continuous brackets** (optional): one mark at 12-1/2", where the bottom of the bracket sits.
-6. **Pilaster line** on the floor: the back-wall-to-face dimension from the shop drawings, less 3/8", marked at both ends of the run and joined.
+2. **Panel plumb lines** on the back wall, one at each panel centerline.
+3. **Bracket marks** at 19" and 63" above the floor on many lines.
+4. **Third bracket** (optional) at 43".
+5. **Continuous brackets** (optional): one mark at 12-1/2".
+6. **Pilaster line** on the floor: the back-wall-to-face dimension from the shop drawings, less a small set-back (3/8" on some lines, 5/8" on others).
 
-With the layout marked, the work carries on in this order:
+Use the drawing dimension for the pilaster line, not the room depth, and make any change before you drill.
 
-2. **Pilaster anchors and leveling.** Each pilaster sits on a floor bracket or leveling device. Bobrick's plastic laminate line uses a 12-gauge plated steel bracket with a leveling bolt, a floor L-bracket and stainless steel floor screws. For floor-mounted stalls, Bobrick uses a steel leveling bar with threaded rods and expansion shields in the floor. Set each pilaster plumb and at the right height, then fit the stainless steel shoe over the hardware.
-3. **Panel brackets.** Fasten the brackets to the walls and pilasters at the marked positions, into the backing.
-4. **Panels.** Hang the panels between the pilasters and the walls on the brackets.
-5. **Headrail (overhead braced only).** The headrail clamps over the pilaster tops and fastens to the walls at each end. The NY OGS master spec says to fasten it to each pilaster with at least two fasteners. Floor-mounted stalls have no headrail, which is why their anchors are deeper.
-6. **Doors and hinge adjustment.** Hang the doors and adjust them. The OGS spec says to adjust doors so their tops are parallel with the overhead brace. See the hinge setting below.
-7. **Latch and keeper alignment.** Fit the latch, then the keeper. See below.
+### 2. Fix the wall brackets
 
-Metal and solid plastic installation guides from Ammco (All American Metal) confirm this order and add a few details. Bradley's and Hadrian's guides follow the same order (layout, floor anchors, panels and pilasters, headrail, hinges, then latch):
+Fix each bracket at its mark, into solid backing, using the bracket itself as the drilling template. Holes for the wall anchors are typically 5/16" and at least 2" deep. Pilaster brackets have a wider opening than panel brackets (3/4" and 1/2" on phenolic lines).
 
-- **Spacer height varies.** Bradley's phenolic and steel guides list a 12" spacer (6" and 9" spacers for its 72" and 69" tall steel stalls), plus a 1/8" gap between door and pilaster. Hadrian's metal manuals list a 12" shim block, and its solid plastic manual and Bradley's Bradmar guide a 14" block.
-- **Standard gaps.** Bradley's phenolic guides show a standard 1" gap between panel and wall and 1/2" between panel and pilaster, with wall gaps from 1/2" to 1-1/4" depending on the drawing.
-- **Mark and check twice.** The pilaster centerline sits slightly in from the full compartment depth on the drawings, so use the drawing dimension, not the room depth. Double-check the layout before drilling and make any change then.
-- **Support the panel first.** Rest each panel on a spacer block about 12" to 14" high while it slides into the wall brackets, and leave a small gap at the wall as the drawing shows. Do not fasten it to the wall brackets until the pilasters are set.
-- **Use a shim at the top.** Wedge a shim between panel and wall at the top rear to hold position while you drill and fasten the pilaster brackets.
-- **Keep the shoe up.** Slide the pilaster shoe up out of the way while you level and fasten, and lower it over its clip last.
-- **Level pilaster tops** from one compartment to the next with the leveling bolts or nuts, then set the door openings from the wall pilaster.
-- **Drill with the hardware in place.** Use the bracket, hinge or keeper as the template for its own holes. Field-drill hinge brackets before you finish fastening the pilasters.
+### 3. Stand and level the pilasters
 
-Doors and panels are set on spacers, and each joint keeps a set gap. The drawing shows the gaps from one manufacturer's phenolic guides, front view on the left and side view on the right; the gaps are drawn wider than scale so they show, and your shop drawings set the actual sizes.
+Each pilaster stands on a floor bracket or leveling device: a bar or bracket with leveling bolts, anchored into the floor. Slide the shoe up out of the way, set the pilaster plumb and at height, and level the pilaster tops from one compartment to the next. Lower the shoe over its clip last.
+
+### 4. Hang the panels
+
+Rest each panel on a spacer block, about 12" high on most lines (14" on some solid plastic lines), while it slides into its wall brackets. Leave the gap at the wall that the drawing shows, and wedge a shim at the top rear to hold the panel while you fix it to the pilaster. Panel and pilaster then alternate to the far end of the run.
+
+### 5. Fit the headrail (overhead braced only)
+
+The headrail clamps over the pilaster tops and fastens to the walls at both ends, with at least two fasteners into each pilaster. Floor-mounted stalls have no headrail, which is why their floor anchors go deeper.
+
+### 6. Hang the doors and set the gaps
+
+Hang each door on its spacer, then set the gaps along its edges before you tighten the hinge screws. The drawing shows typical gaps, drawn wider than scale so they show. Your shop drawings set the actual sizes.
 
 ![Gaps between a door and its pilasters, a wall pilaster and the wall, and a panel and the back wall, with the 12-inch spacer](/images/diagrams/install-gaps.svg)
 
 1. **Hinge side:** 1/8" between the door and the pilaster.
-2. **Latch side:** 1/8". Put 1/8" spacers between the door and the pilaster at the top and bottom so the gap matches on both sides, then tighten the hinge screws.
+2. **Latch side:** 1/8", set with spacers at the top and bottom of the door.
 3. **Wall pilaster to wall:** 1/2" to 1-1/4", as the drawing shows.
-4. **12" spacer** under the door while the hinges go on, and under each panel while it slides into its wall brackets.
+4. **12" spacer** under the door while the hinges go on.
 5. **Panel to back wall:** 1" standard.
 6. **Panel to pilaster:** 1/2" standard.
 
+Adjust the doors so their tops run parallel with the headrail.
+
+### 7. Set the hinges and latches
+
+Set the rest position at the hinge, then fit the keeper in line with the latch. Both are covered under [hardware](#hardware) below.
+
 ## Ceiling hung
 
-![Ceiling hung toilet partitions, front view](/images/diagrams/mounting-ceiling-hung.svg)
+Ceiling hung is the style where the building matters most: the support steel must exist before the partitions arrive. The front view, side view and details are on the [ceiling hung](/mounting-styles/ceiling-hung) page.
 
-1. **Structural steel above the finished ceiling**, supplied by the building and engineered for the load.
-2. **Hanger** from the steel down through the ceiling into each pilaster. Pilasters are 83" for an 8' ceiling.
-3. **The floor stays completely clear.**
-
-Ceiling hung is the style where the building matters most. If you are asking how to install ceiling hung toilet partitions, the first answer is that the support steel must exist before the partitions arrive.
-
-- **Structural steel above the ceiling, per manufacturer.** Bobrick's TB-32 bulletin shows I-beam, channel and angle supports. Bradley's ceiling-hung guides (Series 600, phenolic and steel) say a "C" channel is required and is not included. The architect or structural engineer designs the support, and others furnish it.
-- **Load.** Bobrick says the ceiling structure must support at least 295 lb per plastic laminate partition and 275 lb per compact grade partition, and must be rigid enough to withstand door swing and impact.
-- **Who supplies the steel.** Hadrian's manuals say ceiling hung and floor to ceiling partitions need an overhead structural member, normally a channel, supplied, installed and drilled by others, with the ceiling studs in place before the finished ceiling. Hadrian recommends the supporting channel sit 1" above the finished ceiling. Bradley's Series 600 guides give the same "C" channel requirement (not included) and adjust the support nuts to about 3/4" below the finished ceiling.
-- **Bracing.** Hadrian's solid plastic manual requires a stabilizer bar across the back of the pilasters, 7 feet above the floor, on ceiling hung installations, and a minimum 1/4" gap between the ceiling stud and the pilaster rebate. Bradley's Series 600 steel guide makes cross bracing standard at ceiling heights of 9 feet and above, and its brochure does not recommend Series 600 for ceilings over 8 feet.
-- **Steel, not wood.** The NY OGS spec says steel overhead support is generally required for ceiling-hung units and that wood construction does not provide adequate support.
-- **The finished ceiling carries nothing.** The NY OGS spec requires anchoring assemblies to connect to structure above the ceiling without transmitting load to the finished ceiling.
-- **Hanger and leveling.** Bobrick's ceiling anchor assembly is a threaded rod, hex nuts, washers, a shoe retainer and an expansion anchor. The pilaster hangs from the rod and is leveled with the nuts. A 4" stainless steel shoe covers the hanger at the ceiling.
-- **Ceiling height.** Bobrick's standard 83" pilaster fits an 8' ceiling and is made to length up to 10'.
-
-- **Bolts through the steel.** Ammco's ceiling-hung guide passes threaded bolts through the drilled support steel, with a nut and washer above and below, and lets each bolt stick out a set distance (2" to 2-1/2") below the finished ceiling. Keep the steel's position true to the drawing's stall depth and centerline.
-- **Leave the shoe down.** Fit the shoe clip and tighten, then raise the shoe to the ceiling only after the pilasters are level and the panels are fastened.
-- **Slotted mounting bars** allow small side-to-side adjustment: loosen the lock nut, move the pilaster to the door opening size, and re-tighten.
+- **Structural steel above the ceiling.** A steel member, usually a channel, sits above the finished ceiling at every pilaster. The architect or structural engineer designs it, and another trade supplies, installs and drills it. It is never included with the partitions.
+- **Load.** The structure must carry the partitions and stay rigid when doors swing and get pushed. One manufacturer asks for at least 275 to 295 lb per partition, depending on the material.
+- **Steel, not wood.** Wood construction doesn't give adequate support, and the finished ceiling itself must carry nothing.
+- **Hanger and leveling.** A threaded rod hangs from the steel through the ceiling into each pilaster, with nuts above and below the steel. The pilaster is leveled on the nuts, and a stainless steel shoe covers the hanger at the ceiling.
+- **Bracing.** Tall ceilings need it: lines call for a stabilizer bar across the pilaster backs or cross bracing at ceilings of 9 feet and above.
+- **Ceiling height.** A standard ceiling-hung pilaster suits an 8' ceiling, and most lines make them to length up to about 10'.
+- **Order on site.** Leave the shoe down until the pilasters are level and the panels are fastened, then raise it to the ceiling. Slotted mounting bars allow a little side-to-side adjustment to set the door openings.
 
 The panel, door, hinge and latch steps then follow the same pattern as above.
 
