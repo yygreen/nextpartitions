@@ -26,18 +26,20 @@ Read the manufacturer's guide all the way through and lay out every part before 
 
 ### Wall blocking and backing
 
-Panels and pilasters attach to the walls with brackets. The walls need backing behind those brackets. Bobrick notes that wall backing is required to secure the mounting brackets. Every Bradley guide we reviewed (phenolic Series 400 to 700, powder coated and stainless steel, Bradmar plastic) opens with a warning to confirm that wall and floor backing can support the partitions. Bradley adds that partitions are extremely heavy, may need more than one person, and that ignoring the instructions voids the partition warranty. Partitions are heavy. If a wall is hollow drywall with nothing behind it, the brackets have nowhere to hold.
+Panels and pilasters hang on the walls by brackets, and the brackets are only as strong as what is behind them. **Before anything is drilled, confirm that the walls and their backing can carry the partitions.** Manufacturers open their installation guides with this warning, and a hollow drywall with nothing behind it gives the brackets nothing to hold.
 
-The drawing below cuts through the wall at one bracket, seen from above, to show what the bracket screws actually hold on to. The hole size and depth are one manufacturer's for its phenolic and steel lines; use the anchors and fasteners your guide specifies.
+The drawing cuts through the wall at one bracket, seen from above. The bracket screws go through the wall finish into anchors set in the backing. Use the anchors and fasteners your manufacturer's guide specifies; the sizes shown are typical for phenolic and steel lines.
 
 ![Wall cut through at a partition bracket, seen from above: wall finish, backing behind it, and the bracket screwed into anchors](/images/diagrams/wall-backing.svg)
 
-1. **Wall finish** (tile, board or plaster). On its own it is not what holds the bracket.
-2. **Backing** behind the finish, at every bracket. The wall and its backing must be able to carry the partitions: confirm this before installing.
-3. **Plastic anchor** in a 5/16" hole drilled at least 2" deep, through the finish into the backing.
-4. **Screw**, #14 x 2", through the bracket into the anchor.
-5. **Wall bracket**, used as the template for its own holes.
-6. **Panel** held in the bracket, with its gap to the wall.
+1. Wall finish
+2. Backing, at every bracket
+3. Plastic anchor, 5/16" hole, 2" min deep
+4. Screw, #14 x 2"
+5. Wall bracket
+6. Panel, with its gap to the wall
+
+The wall finish alone, tile, board or plaster, never holds a bracket. Drill through it into the backing, and use the bracket itself as the template for its holes.
 
 ### Handling and site conditions
 
