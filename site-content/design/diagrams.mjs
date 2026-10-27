@@ -64,8 +64,10 @@ function vdim(x, y1, y2, label, side = 'right') {
   const tx = side === 'right' ? x + 8 : x - 8
   return `${line(x, y1, x, y2, { stroke: C.muted, sw: 1 })}${line(x - 5, y1, x + 5, y1, { stroke: C.muted, sw: 1 })}${line(x - 5, y2, x + 5, y2, { stroke: C.muted, sw: 1 })}${text(tx, (y1 + y2) / 2 + 5, label, { size: DIM, fill: C.muted, anchor: side === 'right' ? 'start' : 'end', weight: 600 })}`
 }
-function hdim(y, x1, x2, label) {
-  return `${line(x1, y, x2, y, { stroke: C.muted, sw: 1 })}${line(x1, y - 5, x1, y + 5, { stroke: C.muted, sw: 1 })}${line(x2, y - 5, x2, y + 5, { stroke: C.muted, sw: 1 })}${text((x1 + x2) / 2, y - 7, label, { size: DIM, fill: C.muted, anchor: 'middle', weight: 600 })}`
+// o.anchor 'start' / 'end': the label starts just inside x1 / ends just inside x2, for a label wider than its dimension.
+function hdim(y, x1, x2, label, o = {}) {
+  const tx = o.anchor === 'start' ? x1 + 3 : o.anchor === 'end' ? x2 - 3 : (x1 + x2) / 2
+  return `${line(x1, y, x2, y, { stroke: C.muted, sw: 1 })}${line(x1, y - 5, x1, y + 5, { stroke: C.muted, sw: 1 })}${line(x2, y - 5, x2, y + 5, { stroke: C.muted, sw: 1 })}${text(tx, y - 7, label, { size: DIM, fill: C.muted, anchor: o.anchor ?? 'middle', weight: 600 })}`
 }
 
 // ---------- the stall front elevation ----------
@@ -549,6 +551,58 @@ for (const [name, [style, dets]] of Object.entries(STYLES)) {
   ]
 }
 writeFileSync(new URL('sheets.json', OUT), JSON.stringify(sheets, null, 2) + '\n')
+
+// ---------- gravity hinge close-ups (2026-10-27) ----------
+// Front view at the hinge edge, the door cut away at the hinge, in the same detail circle as the mounting details.
+// Facts (see drawing-check.md): ASI Global construction features (upper pin through door and bracket in a nylon
+// bushing; gravity-positioning bottom hinge) and Integrated Privacy installation guide (box cam in the lower door
+// hinge, door placed over the hinge pintle, lowest point of the cam pintle sets the rest position, rotate, tighten the
+// locking nut; hinge pin inserted until flush with the top of the door); All American Metal metal installation
+// instructions (top hinge bracket with nylon bushing, flange at top; bottom hinge bracket with cam pintle and locking
+// nut under it; loosen the 1/2" nut, set the rest position, hold the bolt base with a slotted screwdriver, retighten);
+// Bradley and Hadrian metal guides (male cam on the bottom hinge, female cam in the door; loosen the nut, set the
+// angle, tighten). Metpar: no-rise cam at the bottom, pin with nylon insert at the top. Our own flat view; no sizes
+// drawn (none common to the brands).
+function hingeDetail(name, kind) {
+  const { w: W, h: H } = SV, cx = 118, cy = 125, r = 106, k = r / 120
+  const P = ([x, y]) => [+(cx + (x - 150) * k).toFixed(1), +(cy + (y - 145) * k).toFixed(1)]
+  const lx = cx + r + 8 + GUTTER
+  let b = `<g transform="translate(${cx} ${cy}) scale(${k.toFixed(4)}) translate(-150 -145)"><clipPath id="c-${name}"><circle cx="150" cy="145" r="120"/></clipPath><g clip-path="url(#c-${name})">`
+  const bolt = (x, y) => `<circle cx="${x}" cy="${y}" r="4.5" fill="#fff" stroke="${C.ink}" stroke-width="1.2"/>`
+  b += rect(20, -10, 88, 330) // pilaster
+  let lab, notes, title, desc
+  if (kind === 'cam') {
+    b += rect(128, -10, 210, 160) // door, bottom edge at 150
+    b += rect(128, 98, 64, 52, { sw: 1.2, dash: '5 3' }) // the door's bottom hinge, cut away
+    b += `<path d="M138 106 H176 V150 H168 V140 L157 130 L146 140 V150 H138 Z" fill="${C.orange}"/>` // box cam
+    b += `<path d="M146 168 V140 L157 130 L168 140 V168 Z" fill="#fff" stroke="${C.ink}" stroke-width="1.5" stroke-linejoin="round"/>` // cam pintle
+    b += rect(84, 140, 24, 62) + rect(108, 168, 74, 18) + bolt(96, 156) + bolt(96, 186) // bottom hinge bracket
+    b += rect(146, 186, 22, 11, { fill: C.orangeTint, stroke: C.orange, sw: 2 }) // locking nut
+    b += rect(151, 197, 12, 12, { sw: 1.2 }) + line(157, 199, 157, 208, { sw: 2 }) // bolt base, slotted
+    lab = [['door', [218, 64]], ['box cam', [176, 118]], ['cam pintle', [168, 158]], [['bottom hinge', 'bracket'], [182, 177]], [['locking nut, the', 'adjusting point'], [168, 191]]]
+    notes = ['front view, door', 'cut away at the cam']
+    title = 'Detail: bottom of a gravity hinge'
+    desc = 'Front view of the bottom of a gravity (cam) hinge, the door cut away at the hinge. A box cam in the door rests on the cam pintle of the bottom hinge bracket, which is fixed to the pilaster. The locking nut under the bracket is the adjusting point: loosen it, set the door to its rest position and tighten it again.'
+  } else {
+    b += `<path d="M128 112 H338 V320 H128 V170 H172 V138 H128 Z" fill="#fff" stroke="${C.ink}" stroke-width="1.5"/>` // door, top edge at 112, notched at the hinge
+    b += rect(128, 112, 64, 92, { fill: 'none', sw: 1.2, dash: '5 3' }) // the door's top hinge, cut away
+    b += rect(84, 124, 24, 62) + rect(108, 142, 60, 24) + bolt(96, 138) + bolt(96, 172) // top hinge bracket
+    b += rect(141, 142, 18, 24, { fill: C.orangeTint, stroke: C.orange, sw: 2 }) + rect(137, 138, 26, 5, { fill: C.orangeTint, stroke: C.orange, sw: 2 }) // bushing, flange at top
+    b += rect(146, 112, 8, 82, { fill: C.orange, stroke: C.orange, sw: 1 }) // hinge pin
+    b += line(150, 52, 150, 96, { stroke: C.muted, sw: 1.5 }) + `<path d="M143 92 L150 104 L157 92 Z" fill="${C.muted}"/>` // in from above
+    lab = [['door', [212, 222]], [['hinge pin, flush', 'with the door top'], [154, 114]], ['nylon bushing', [159, 150]], ['top hinge bracket', [168, 160]]]
+    notes = ['front view, door', 'cut away at the pin']
+    title = 'Detail: top of a gravity hinge'
+    desc = 'Front view of the top of a gravity (cam) hinge, the door cut away at the hinge. The hinge pin goes in from above, through the door\'s hinge and the top hinge bracket on the pilaster, turns in a nylon bushing, and sits flush with the top of the door.'
+  }
+  b += text(75, 100, 'pilaster', { size: 14, fill: C.muted, anchor: 'middle' })
+  b += `</g></g><circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${C.ink}" stroke-width="1.5"/>`
+  const notesAt = 218
+  b += labelColumn(lab.map(([t, to]) => ({ t, to: P(to) })), { x: lx, hi: notesAt - PITCH }).svg
+  b += noteLines(lx, notesAt, notes)
+  return svg(name, W, H, title, desc, b)
+}
+made.push(hingeDetail('hinge-detail-cam', 'cam'), hingeDetail('hinge-detail-top-pin', 'top-pin'))
 
 // ---------- material cross-sections (edge view, cut through a door) ----------
 // Construction and door thicknesses as sourced in pages/blog_what-are-bathroom-partitions-made-of.md and
@@ -1427,9 +1481,11 @@ function heightsRear(x0, floor, s, ph) {
   let b = rect(x0, Y(52), wt, 52 * s, { fill: 'HATCH', stroke: 'none' }) + line(xa, Y(52), xa, floor)
   b += rect(x0 - 4, floor, wt + 62 * s + 8, ph ? 8 : 12, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 4, floor, xa + 62 * s + 4, floor)
   b += toiletFront(CL, Y, s)
-  b += cline(CL, Y(0) - 2, CL, Y(44), { stroke: C.muted, sw: 1 })
+  // phone: the centerline stops under the dimension labels, and the two parts of the bar show numbers only (the
+  // page text gives 12" min and 24" min), so the labels keep clear of each other and of the lines
+  b += cline(CL, Y(0) - 2, CL, Y(ph ? 37.5 : 44), { stroke: C.muted, sw: 1 })
   b += rect(CL - 12 * s, Y(35), 36 * s, 1.5 * s, BAR) // rear grab bar
-  b += hdim(Y(40), CL - 12 * s, CL, '12" min') + hdim(Y(40), CL, CL + 24 * s, '24" min') + hdim(Y(48), CL - 12 * s, CL + 24 * s, '36" min')
+  b += hdim(Y(40), CL - 12 * s, CL, ph ? '12"' : '12" min') + hdim(Y(40), CL, CL + 24 * s, ph ? '24"' : '24" min') + hdim(Y(48), CL - 12 * s, CL + 24 * s, '36" min')
   b += hdim(Y(26), xa, CL, '16"–18"')
   b += vdim(CL + 11 * s, Y(18), Y(0), '17"–19"') + vdim(CL + 31 * s, Y(35), Y(0), '33"–36"')
   b += callout(2, CL + 20 * s, Y(27), [CL + 20 * s, Y(33.5)]) + callout(3, CL - 13 * s, Y(10), [CL - 6 * s, Y(17.5)])
@@ -1441,7 +1497,7 @@ function heightsSide(x0, floor, s, ph) {
   b += rect(x0 - 4, floor, wt + 62 * s + 8, ph ? 8 : 12, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 4, floor, X(62) + 4, floor)
   b += toiletSide(xb, Y, s)
   b += rect(X(12), Y(35), 42 * s, 1.5 * s, BAR) // side grab bar
-  b += hdim(Y(40), xb, X(12), '12" max') + hdim(Y(40), X(12), X(54), '42" min') + hdim(Y(48), xb, X(54), '54" min')
+  b += hdim(Y(40), xb, X(12), '12" max', ph ? { anchor: 'start' } : {}) + hdim(Y(40), X(12), X(54), '42" min') + hdim(Y(48), xb, X(54), '54" min')
   b += rect(X(33), Y(23), 6 * s, 6 * s, { sw: 1.2 }) + line(X(34), Y(17), X(38), Y(17), { sw: 2.5 }) // dispenser, outlet below
   const ext = (x, y1, y2) => line(x, y1, x, y2, { stroke: C.muted, sw: 1, dash: '3 3' })
   b += ext(X(28), Y(18), Y(28)) + ext(X(36), Y(23), Y(28)) + hdim(Y(27), X(28), X(36), '7"–9"')

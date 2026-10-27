@@ -18,6 +18,8 @@ For hinges, latches and door pulls, see [Hinges](/hardware/hinges), [Locks & Lat
 
 ## Structural parts we can supply
 
+The front view below names the main parts of a run of stalls; the table lists the brackets, shoes and fittings we can supply for them.
+
 ![Parts of a toilet partition, front view](/images/diagrams/partition-anatomy.svg)
 
 1. Headrail
@@ -80,14 +82,7 @@ Pilasters come in a few kinds, named by where they stand. Each is made for the h
 2. **Alcove pilaster:** fixed to the end of a panel with an alcove bracket, where a run ends in an alcove or inside corner. Here it carries the latch (keeper) of the door beside it.
 3. **Middle pilaster:** a panel meets it from behind. It carries the latch of one door and the hinge of the next.
 
-Hand is read the same way for pilasters as for doors: stand outside the stall and face the door. On many lines a part is ordered as RH or LH, and one part covers two cases.
-
-![Door hand seen from above: right-hand inswing and left-hand outswing (RH), left-hand inswing and right-hand outswing (LH)](/images/diagrams/door-hand.svg)
-
-- **A** Right-hand inswing: hinge on the right, door swings into the stall.
-- **B** Left-hand outswing: hinge on the left, door swings out. The same door as A, turned over, so both are RH.
-- **C** Left-hand inswing.
-- **D** Right-hand outswing. The same door as C, so both are LH.
+Hand is read the same way for pilasters as for doors (see the plans under "What to send when requesting parts").
 
 ## Pilaster shoes
 
@@ -116,7 +111,16 @@ Most commercial partitions use tamper-resistant fasteners. Bobrick supplies stai
 4. **Mounting style**: overhead braced, floor mounted, ceiling hung or floor to ceiling ([see mounting styles](/mounting-styles)).
 5. **Photos** of the part in place and a wider shot of the stall, with a tape measure in the photo.
 6. **Quantity**, and whether you need fasteners.
-7. **Hand**, for a pilaster, door or hinge: inswing or outswing, and the hinge side seen from outside the stall (see the plans above).
+7. **Hand**, for a pilaster, door or hinge: inswing or outswing, and the hinge side seen from outside the stall (see the plans below).
+
+To read the hand, stand outside the stall and face the door. The plans show the four cases from above, hinge side in orange. On many lines a part is ordered as RH or LH, and one part covers two cases: right-hand inswing and left-hand outswing are both RH, left-hand inswing and right-hand outswing both LH.
+
+![Door hand seen from above: right-hand inswing and left-hand outswing (RH), left-hand inswing and right-hand outswing (LH)](/images/diagrams/door-hand.svg)
+
+- **A** Right-hand inswing (RH)
+- **B** Left-hand outswing (RH)
+- **C** Left-hand inswing (LH)
+- **D** Right-hand outswing (LH)
 
 [Contact Us](/contact) for replacement parts.
 

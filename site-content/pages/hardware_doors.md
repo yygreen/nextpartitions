@@ -30,16 +30,18 @@ Accessible (ADA) and outswing door configurations are available in each material
 
 ## How to measure a stall door
 
+Measure the **door itself**, not the opening between pilasters. The door width already allows for hinge and latch clearances, and manufacturers use specific sizes. Metpar's standard powder coated door widths, for example, run from 21-5/8" to 35-5/8", not round numbers.
+
+The drawing shows the door between its pilasters, then its edge and swing.
+
 ![How to measure a bathroom stall door for a replacement](/images/diagrams/measure-replacement-door.svg)
 
-- **A** door width
-- **B** door height
-- **C** opening between the pilasters
-- **D** floor to the bottom of the door
-- **E** door thickness
-- **F** inswing or outswing, and hinge side, seen from outside the stall
-
-Measure the **door itself**, not the opening between pilasters. The door width already allows for hinge and latch clearances, and manufacturers use specific sizes. Metpar's standard powder coated door widths, for example, run from 21-5/8" to 35-5/8", not round numbers.
+- **A** Door width
+- **B** Door height
+- **C** Opening between pilasters
+- **D** Floor to door bottom
+- **E** Door thickness
+- **F** Swing and hinge side
 
 1. **Width:** edge to edge across the face of the door, at the middle.
 2. **Height:** top edge to bottom edge. Metpar's standard door is 58" high. Scranton specifies 55" high doors on Hiny Hiders. Privacy-height lines use taller doors: Metpar offers 64" and 72" series, and ASI Global offers doors up to 72".
@@ -54,14 +56,14 @@ Write down the measurements to the nearest 1/16" and send a photo with the tape 
 
 Tell us whether the door swings **in** or **out** of the stall, and which side the hinges are on when you stand outside facing the door. Hinges and continuous hinges are often handed. Bobrick's continuous hinge, for instance, comes as "left-hand inswing or right-hand outswing" and the opposite version.
 
-The four plans below show each case seen from above, with you standing outside the stall at the bottom; the hinge side is orange. On many lines one door is made for two cases, so it is ordered as RH or LH. Follow your shop drawings and the manufacturer's instructions.
+The four plans below show each case seen from above, with you standing outside the stall at the bottom; the hinge side is orange. On many lines one door is made for two cases, so it is ordered as RH or LH: a right-hand inswing door turned over is a left-hand outswing door (both RH), and the same goes for left-hand inswing and right-hand outswing (both LH). Follow your shop drawings and the manufacturer's instructions.
 
 ![Door hand seen from above: right-hand inswing and left-hand outswing (RH), left-hand inswing and right-hand outswing (LH)](/images/diagrams/door-hand.svg)
 
-- **A** Right-hand inswing: hinge on the right, door swings into the stall.
-- **B** Left-hand outswing: hinge on the left, door swings out. The same door as A, turned over, so both are RH.
-- **C** Left-hand inswing.
-- **D** Right-hand outswing. The same door as C, so both are LH.
+- **A** Right-hand inswing (RH)
+- **B** Left-hand outswing (RH)
+- **C** Left-hand inswing (LH)
+- **D** Right-hand outswing (LH)
 
 ## Accessible stall doors
 

@@ -16,6 +16,8 @@ Bathroom stall door hinges decide how a partition door hangs, where it rests whe
 
 ## Hinge types
 
+The drawing shows three of the types in the table below: a gravity (cam) hinge, a wrap-around hinge seen from above, and a continuous hinge.
+
 ![Gravity (cam), wrap-around and continuous bathroom stall hinges](/images/diagrams/hinge-types.svg)
 
 1. **Top pin** of a gravity hinge.
@@ -40,6 +42,10 @@ The most common partition hinge has a pin at the top of the door and an adjustab
 - **Bobrick:** a "balanced hinge" with a replaceable hinge cam, adjustable to hold the door of an empty stall partly open or fully closed.
 
 No spring is involved, which is why these hinges are sometimes called gravity hinges.
+
+At the bottom of the door, the box cam in the door's hinge rests on the cam pintle of the bracket fixed to the pilaster. The locking nut under the bracket holds the rest position, so that is where you adjust it.
+
+![Bottom of a gravity hinge: box cam, cam pintle and locking nut](/images/diagrams/hinge-detail-cam.svg "side")
 
 ### Wrap-around hinges
 
@@ -68,6 +74,10 @@ Before you replace a hinge, try adjusting it. Manufacturers' instructions put th
 3. **Set the position, then tighten** the locking nut.
 4. **Clean and lubricate.** Bobrick says cleaning and lubricating the hinge is needed to prevent failure. Use a PTFE-based lubricant, not machine oil or WD-40, which collect dust and dirt.
 
+For step 2, the top pin comes out upward. It runs through the door and the top hinge bracket, turns in a nylon bushing, and sits flush with the top of the door.
+
+![Top of a gravity hinge: hinge pin and nylon bushing](/images/diagrams/hinge-detail-top-pin.svg "side")
+
 If the door won't latch after adjusting, check the keeper and strike alignment too. See [Locks & Latches](/hardware/locks-latches). Follow your manufacturer's installation guide, and have a qualified installer handle work you aren't comfortable doing.
 
 ## When to replace a hinge
@@ -82,14 +92,14 @@ Replace hinge parts when adjusting doesn't fix the problem, for example when the
 4. **Swing and hand**: inswing or outswing, and which side the hinge is on viewed from outside. Hinges are often handed; Bobrick, for example, sells separate L and J hinge sets.
 5. **Finish**: satin stainless, chrome-plated, aluminum or other.
 
-To read the hand, stand outside the stall and face the door: the side the hinge is on gives the hand, and the swing is in or out. The plans below show the four cases from above, hinge side in orange. On many lines one hinge or door covers two cases, ordered as RH or LH.
+To read the hand, stand outside the stall and face the door: the side the hinge is on gives the hand, and the swing is in or out. The plans below show the four cases from above, hinge side in orange. On many lines one hinge or door covers two cases, ordered as RH or LH: a right-hand inswing door turned over is a left-hand outswing door (both RH), and the same goes for left-hand inswing and right-hand outswing (both LH).
 
 ![Door hand seen from above: right-hand inswing and left-hand outswing (RH), left-hand inswing and right-hand outswing (LH)](/images/diagrams/door-hand.svg)
 
-- **A** Right-hand inswing: hinge on the right, door swings into the stall.
-- **B** Left-hand outswing: hinge on the left, door swings out. The same door as A, turned over, so both are RH.
-- **C** Left-hand inswing.
-- **D** Right-hand outswing. The same door as C, so both are LH.
+- **A** Right-hand inswing (RH)
+- **B** Left-hand outswing (RH)
+- **C** Left-hand inswing (LH)
+- **D** Right-hand outswing (LH)
 
 [Contact Us](/contact) for replacement hinges.
 
