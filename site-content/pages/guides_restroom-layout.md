@@ -61,13 +61,13 @@ Spacing comes from two sources. The plumbing code sets the minimums for every fi
 | Fixture | Rule | Source |
 |---|---|---|
 | Toilet, centerline to side wall or partition | 15" minimum | IPC 405.3.1 |
-| Toilet, centerline to the next toilet or fixture | 30" minimum center to center | IPC 405.3.1 |
+| Adjacent fixtures with no partition between them, center to center | 30" minimum | IPC 405.3.1 |
 | Clear space in front of toilet, urinal or lavatory | 21" minimum | IPC 405.3.1 |
 | Toilet compartment, any toilet | 30" wide minimum, 60" deep (56" if wall-hung) | IPC 405.3.1 |
 | Accessible toilet, centerline from side wall | 16" to 18" | ADA 604.2 |
 | Ambulatory toilet, centerline from side wall | 17" to 19" | ADA 604.2 |
 | Urinal, centerline to side wall or partition | 15" minimum | IPC 405.3.1 |
-| Urinal, centerline to next urinal | 30" minimum center to center | IPC 405.3.1 |
+| Urinal, centerline to next urinal (no screen or partition between) | 30" minimum center to center | IPC 405.3.1 |
 | Accessible lavatory, clear floor space | 30" x 48", with knee and toe clearance | ADA 305.3, 606.2, 306 |
 
 Your jurisdiction decides which edition of the IPC applies, and it may amend it. Confirm with your plumbing inspector.
@@ -130,7 +130,7 @@ Before you settle on ceiling hung, ask whether the steel above the ceiling is on
 At least 15" from the urinal centerline to the side wall or partition, and at least 30" center to center between urinals (IPC 405.3.1).
 
 ### How much space between toilets in a commercial restroom?
-At least 30" center to center, and 15" from the toilet centerline to a side wall or partition (IPC 405.3.1). Compartments are at least 30" wide.
+Each toilet needs 15" from its centerline to a side wall or partition, and compartments are at least 30" wide (IPC 405.3.1). Fixtures with no partition between them must be at least 30" center to center.
 
 ### How much clear space is needed in front of a toilet?
 At least 21" in front of the fixture (IPC 405.3.1). Accessible compartments have larger minimums in ADA 604.
@@ -140,9 +140,9 @@ It depends on the ceiling and floor. See the table above.
 
 ## Sources
 
-- [International Plumbing Code 405.3.1, ICC "Significant Changes" excerpt (2018 edition)](https://www.iccsafe.org/wp-content/uploads/2018SC-PMG_P405.3.1.pdf): 15" and 30" spacing, 21" clear space, 30" x 60"/56" compartments. Checked 2026-10-26.
-- [2010 ADA Standards, U.S. Access Board](https://www.access-board.gov/ada/): 213.3.1, 304.3, 305.3, 306, 404.2.3, 604.2, 604.8.1.2, 604.8.1.4, 606.2. Checked 2026-10-26.
-- [Bradley PH400 spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): example layout dimensions. Checked 2026-10-26.
+- [International Plumbing Code 405.3.1, ICC "Significant Changes" excerpt (2018 edition)](https://www.iccsafe.org/wp-content/uploads/2018SC-PMG_P405.3.1.pdf): 15" and 30" spacing, 21" clear space, 30" x 60"/56" compartments. Checked 2026-10-27.
+- [2010 ADA Standards, U.S. Access Board](https://www.access-board.gov/ada/): 213.3.1, 304.3, 305.3, 306, 404.2.3, 604.2, 604.8.1.2, 604.8.1.4, 606.2. Checked 2026-10-27.
+- [Bradley PH400 spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): example layout dimensions. Checked 2026-10-27.
 - Mounting style guidance (Bobrick anchor depth and ceiling-support recommendation) comes from the sources listed on our [mounting styles](/mounting-styles) page, checked 2026-10-26.
 
 <!-- For Marc -->
@@ -165,8 +165,7 @@ It depends on the ceiling and floor. See the table above.
 
 ## To verify when sources are reachable
 
-- IPC 2021 405.3.1 exact text (the page cites the 2018 excerpt; the brief asked for 2021), especially whether the 30" center-to-center rule applies where a partition separates fixtures, and the 21" clear space wording.
-- ADA 604.2, 604.8.1.2, 304.3 and 305.3 wording.
+- IPC 2021 405.3.1 exact text: codes.iccsafe.org refused the fetch on 2026-10-27 (HTTP 403), so the page still cites the 2018 ICC excerpt (checked 2026-10-27: 2021 text not found in codes.iccsafe.org). The 2018 text applies the 30" center-to-center rule where partitions or other obstructions do not separate adjacent fixtures; confirm that and the 21" clearance wording in the 2021 edition.
 - Urinal screen sizes and mounting heights from a manufacturer (none in the repo, so none on the page).
 - The "alcove" arrangement, if you want it back.
 - Entry privacy and sight-line guidance from a manufacturer planning guide.

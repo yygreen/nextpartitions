@@ -56,7 +56,7 @@ Parks, transit stations, stadiums and municipal buildings see heavy traffic, dai
 ![Plan of a row of toilet compartments: accessible, ambulatory and two standard](/images/diagrams/sheet-plan.svg)
 
 1. **Accessible compartment.** At least 60 inches wide (60-1/2 inches drawn here) with the toilet beside the dividing panel, and at least 56 inches deep with a wall-hung toilet or 59 inches with a floor-mounted one (604.8.1.1). The self-closing door needs a 32-inch minimum clear opening and cannot swing into the minimum compartment area (604.8.1.2, 404.2.3), so a minimum-size compartment usually has an outswing door.
-2. **Ambulatory compartment.** 35 to 37 inches wide (36-1/2 inches drawn here) and at least 60 inches deep, with grab bars on both sides and an outswing door (604.8.2). It is required once a restroom has six or more compartments, or six or more toilets and urinals combined (213.3.1).
+2. **Ambulatory compartment.** 35 to 37 inches wide (36-1/2 inches drawn here) and at least 60 inches deep, with grab bars on both sides and a self-closing door that cannot swing into the minimum compartment area (604.8.2), which at this size usually means an outswing door. It is required once a restroom has six or more compartments, or six or more toilets and urinals combined (213.3.1).
 3. **Standard compartments.** About 36 inches wide, drawn here with inswing doors.
 4. **Grab bars** on the side and rear walls of the accessible compartment (604.5).
 
@@ -91,25 +91,25 @@ No. We supply partitions. Follow the manufacturer's instructions and approved dr
 
 ## Sources
 
-- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 213.3.1, 404.2.3, 604.5, 604.8.1.1, 604.8.1.2, 604.8.1.4, 604.8.2, 604.9. Checked 2026-10-26.
-- [Seattle Building Code 2018, Chapter 8](https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2018SBCChapter8.pdf): IBC 803.9 text on HDPE and NFPA 286. Checked 2026-10-26.
-- [Bobrick fact sheet on ICC and NFPA model code revisions](https://www.bobrick.com/wp-content/uploads/FACT_SHEET_ICC_IFC_AND_NFPA_MODEL_CODE_REVISIONS-1.pdf): NFPA 286 history. Checked 2026-10-26.
-- [Scranton Products color visualizers](https://www.scrantonproducts.com/marketing/product-color-visualizers/): Standard Color Collection and NFPA 286. Checked 2026-10-26.
-- [Bobrick toilet partitions CEU presentation](https://www.bobrick.com/wp-content/uploads/SCC-Toilet-Partitions_Commercial.pdf): 55 and 58 inch standard heights, 72 inch privacy. Checked 2026-10-26.
-- [ASSDA, stainless steel for indoor swimming pools](https://www.assda.asn.au/blog/353-stainless-steel-for-indoor-swimming-pools) and [Nickel Institute](https://www.nickelinstitute.org/media/8daa77b1620dde6/14015_ambient_temperaturestress_corrosioncrackingofausteniticstainlesssteelinswimmingpools.pdf): chloride and stainless in pool air. Checked 2026-10-26.
-- [Bradley PH400 phenolic data sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): example layout behind the drawing. Checked 2026-10-26.
+- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 213.3.1, 404.2.3, 604.5, 604.8.1.1, 604.8.1.2, 604.8.1.4, 604.8.2, 604.9. Checked 2026-10-27.
+- [Seattle Building Code 2018, Chapter 8](https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2018SBCChapter8.pdf): IBC 803.9 text on HDPE and NFPA 286. Checked 2026-10-27.
+- [Bobrick fact sheet on ICC and NFPA model code revisions](https://www.bobrick.com/wp-content/uploads/FACT_SHEET_ICC_IFC_AND_NFPA_MODEL_CODE_REVISIONS-1.pdf): NFPA 286 history. Checked 2026-10-27.
+- [Scranton Products color visualizers](https://www.scrantonproducts.com/marketing/product-color-visualizers/): Standard Color Collection and NFPA 286. Checked 2026-10-27.
+- [Bobrick toilet partitions CEU presentation](https://www.bobrick.com/wp-content/uploads/SCC-Toilet-Partitions_Commercial.pdf): 55 and 58 inch standard heights, 72 inch privacy. Checked 2026-10-27.
+- [ASSDA, stainless steel for indoor swimming pools](https://www.assda.asn.au/blog/353-stainless-steel-for-indoor-swimming-pools) and [Nickel Institute](https://www.nickelinstitute.org/media/8daa77b1620dde6/14015_ambient_temperaturestress_corrosioncrackingofausteniticstainlesssteelinswimmingpools.pdf): chloride and stainless in pool air. ASSDA checked 2026-10-27; Nickel Institute PDF not re-checked (403 on 2026-10-27, last read 2026-10-26).
+- [Bradley PH400 phenolic data sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): example layout behind the drawing. Checked 2026-10-27.
 
 <!-- For Marc -->
 ## Corrections to the current page
 
-- Sources note: the 2026-10-27 re-check was blocked (egress proxy refused every host), so all sources carry their 2026-10-26 check date. Re-verify before launch.
+- Sources re-checked 2026-10-27. The Nickel Institute PDF returned 403 that day (see the To verify list); the ASSDA article loaded.
 - The hub had no factual errors (industry-check.md). Kept the six cards and links.
 - Added the corrections found on the six industry pages: accessible stall rule now "32-inch minimum clear opening, door can't swing into the minimum compartment space" instead of "36-inch outswing door" (604.8.1.2, 404.2.3); ambulatory stall trigger includes toilets and urinals combined (213.3.1); NFPA 286 note for HDPE; stainless near indoor pools; "never corrode" and "sand out" wording avoided; no lead times, budgets or quote times other than the standard promise.
 - Explore More lists five brands; it should add Bradley and Hadrian.
 
 ## To verify when sources are reachable
 
-- Re-fetch the ADA sections (213.3.1, 404.2.3, 604.5, 604.8.1.1, 604.8.1.2, 604.8.2, 604.9) and the NFPA 286 sources on 2026-10-27 or later.
+- Nickel Institute pool-air PDF: refused with 403 on 2026-10-27, so it could not be re-read; the ASSDA article covers the chloride point. Re-check the PDF or drop it.
 - Confirm the 55/58/72 inch height statement against a current manufacturer sheet.
 
 ## Implementation notes

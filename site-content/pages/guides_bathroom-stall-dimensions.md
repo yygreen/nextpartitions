@@ -174,14 +174,14 @@ Only with care. The front partition and one side partition need 9" of toe cleara
 
 ## Sources
 
-- 2010 ADA Standards for Accessible Design, U.S. Access Board, https://www.access-board.gov/ada/: 213.3.1, 309.4, 404.2.3, 604.2, 604.5, 604.8.1.1, 604.8.1.2, 604.8.1.4, 604.8.2, 604.8.3, 604.9. Checked 2026-10-26.
-- International Plumbing Code 405.3.1, ICC "Significant Changes" excerpt (2018 edition), https://www.iccsafe.org/wp-content/uploads/2018SC-PMG_P405.3.1.pdf: 30" compartment width, 60"/56" depth. Checked 2026-10-26.
-- Bradley, Phenolic Floor-Mounted Overhead-Braced PH400 Series spec sheet, https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf: 58" doors and panels at 12", 82" overall height, example layout dimensions. Checked 2026-10-26.
-- Bradley Partitions brochure, https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf: 72" at 6" and 69" at 9" for ADA stalls. Checked 2026-10-26.
-- Bobrick, Privacy options, https://www.bobrick.com/products/toilet-partitions-cubicle-systems/privacy/: 58" standard, 12" clearance, 71-3/4" maximum at 4-1/2". Checked 2026-10-26.
-- ASI Global Partitions, Ultimate Privacy, https://asi-globalpartitions.com/style/ultimate-privacy/: 64"/72" heights, No Sight-55. Checked 2026-10-26.
-- Scranton Products Hiny Hiders guide specification, http://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf: 55" doors. Checked 2026-10-26.
-- Metpar standard part sizes, https://www.metpar.com/wp-content/uploads/2018/01/Metpar-Standard-Part-Sizes.pdf: door widths and 58" height. Checked 2026-10-26.
+- 2010 ADA Standards for Accessible Design, U.S. Access Board, https://www.access-board.gov/ada/: 213.3.1, 309.4, 404.2.3, 604.2, 604.5, 604.8.1.1, 604.8.1.2, 604.8.1.4, 604.8.2, 604.8.3, 604.9. Checked 2026-10-27.
+- International Plumbing Code 405.3.1, ICC "Significant Changes" excerpt (2018 edition), https://www.iccsafe.org/wp-content/uploads/2018SC-PMG_P405.3.1.pdf: 30" compartment width, 60"/56" depth. Checked 2026-10-27.
+- Bradley, Phenolic Floor-Mounted Overhead-Braced PH400 Series spec sheet, https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf: 58" doors and panels at 12", 82" overall height, example layout dimensions. Checked 2026-10-27.
+- Bradley Partitions brochure, https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf: 72" at 6" and 69" at 9" for ADA stalls. Checked 2026-10-27.
+- Bobrick, Privacy options, https://www.bobrick.com/products/toilet-partitions-cubicle-systems/privacy/: 58" standard, 12" clearance, 71-3/4" maximum at 4-1/2". Checked 2026-10-27.
+- ASI Global Partitions, Ultimate Privacy, https://asi-globalpartitions.com/style/ultimate-privacy/: 64"/72" heights, No Sight-55. Checked 2026-10-27.
+- Scranton Products Hiny Hiders guide specification, https://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf: 55" doors. Checked 2026-10-27.
+- Metpar standard part sizes, https://www.metpar.com/wp-content/uploads/2018/01/Metpar-Standard-Part-Sizes.pdf: door widths and 58" height. Checked 2026-10-27.
 
 <!-- For Marc -->
 ## Corrections to the current page
@@ -207,10 +207,7 @@ Only with care. The front partition and one side partition need 9" of toe cleara
 
 ## To verify when sources are reachable
 
-The sandbox blocked access-board.gov, codes.iccsafe.org and the manufacturer sites on 2026-10-27, so this page uses only facts already sourced on 2026-10-26 in this repo. Still to do:
-
-- Fetch the 2010 ADA Standards 604.2, 604.8.1.1 to 604.8.1.4, 604.8.2, 604.9 and 213.3.1 and confirm the exact wording used above, including the children's compartment depth in 604.8.1.1 and the 6" toe clearance depth.
-- Fetch IPC 2021 405.3.1 (the page cites the 2018 excerpt; the brief asked for 2021) and confirm 30" x 60" / 56".
+- IPC 2021 405.3.1: codes.iccsafe.org refused the fetch on 2026-10-27 (HTTP 403 from the site's CDN), so the page still cites the 2018 ICC excerpt, which gives 30" x 60" / 56" (checked 2026-10-27: 2021 text not found in codes.iccsafe.org). Confirm the 2021 wording from a print or licensed copy.
 - Standard pilaster widths: no source found. Add from a manufacturer sheet.
 - Standard door widths other than Metpar's range, and the 24" door in the old page: unconfirmed.
 - Children's toilet centerline, seat height and grab bar positions by age (604.9): left out.

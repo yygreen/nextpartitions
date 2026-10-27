@@ -99,19 +99,19 @@ On [bathroom stall dimensions](/guides/bathroom-stall-dimensions), including the
 
 ## Sources
 
-- [Metpar standard part sizes](https://www.metpar.com/wp-content/uploads/2018/01/Metpar-Standard-Part-Sizes.pdf): door widths 21-5/8" to 35-5/8", 58" height. Checked 2026-10-26.
-- [Metpar powder coated partitions](https://metpar.com/toilet-partitions/powder-coated/): 1" doors and panels, 1-1/4" pilasters, 64"/72" series. Checked 2026-10-26.
-- [Bobrick 1040 Series technical data sheet](https://www.bobrick.com/wp-content/uploads/1040_td.pdf): 1" laminate doors, stiles and panels. Checked 2026-10-26.
-- [Bobrick, DuraLineSeries CGL](https://www.bobrick.com/products/toilet-partitions-cubicle-systems/traditional-partitions/duralineseries-cgl/): 3/4" doors and stiles, 1/2" panels. Checked 2026-10-26.
-- [Bobrick, DesignerSeries HPL](https://www.bobrick.com/products/toilet-partitions-cubicle-systems/traditional-partitions/designerseries-hpl/): 1" doors, stiles and panels. Checked 2026-10-26.
-- [Bobrick, Privacy options](https://www.bobrick.com/products/toilet-partitions-cubicle-systems/privacy/): 58" standard, 12" clearance, 71-3/4" maximum. Checked 2026-10-26.
-- [ASI Global Partitions replacement hardware](https://asi-globalpartitions.com/replacement-hardware/): headrail sizes by material. Checked 2026-10-26.
-- [ASI Global Partitions, Ultimate Privacy](https://asi-globalpartitions.com/style/ultimate-privacy/): 64" and 72" heights, No Sight-55. Checked 2026-10-26.
-- [Bradley PH400 spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): 58" at 12", 82" overall, 1/2" panels, 3/4" doors and pilasters. Checked 2026-10-26.
-- [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): 72" at 6", 69" at 9" for ADA. Checked 2026-10-26.
-- [Scranton Products Hiny Hiders guide specification](http://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): 1" HDPE, 55" doors. Checked 2026-10-26.
-- [Scranton Products, Eclipse partitions](https://www.scrantonproducts.com/products/eclipse-restroom-partitions/): 55", 62", 72" heights. Checked 2026-10-26.
-- [2010 ADA Standards, U.S. Access Board](https://www.access-board.gov/ada/): 404.2.3, 604.8.1.2, 604.8.1.4, 604.8.2.2. Checked 2026-10-26.
+- [Metpar standard part sizes](https://www.metpar.com/wp-content/uploads/2018/01/Metpar-Standard-Part-Sizes.pdf): door widths 21-5/8" to 35-5/8", 58" height. Checked 2026-10-27.
+- [Metpar powder coated partitions](https://metpar.com/toilet-partitions/powder-coated/): 1" doors and panels, 1-1/4" pilasters, 64"/72" series. Checked 2026-10-27.
+- [Bobrick 1040 Series technical data sheet](https://www.bobrick.com/wp-content/uploads/1040_td.pdf): 1" laminate doors, stiles and panels. Checked 2026-10-27.
+- [Bobrick, DuraLineSeries CGL](https://www.bobrick.com/products/toilet-partitions-cubicle-systems/traditional-partitions/duralineseries-cgl/): 3/4" doors and stiles, 1/2" panels. Checked 2026-10-27.
+- [Bobrick, DesignerSeries HPL](https://www.bobrick.com/products/toilet-partitions-cubicle-systems/traditional-partitions/designerseries-hpl/): 1" doors, stiles and panels. Checked 2026-10-27.
+- [Bobrick, Privacy options](https://www.bobrick.com/products/toilet-partitions-cubicle-systems/privacy/): 58" standard, 12" clearance, 71-3/4" maximum. Checked 2026-10-27.
+- [ASI Global Partitions replacement hardware](https://asi-globalpartitions.com/replacement-hardware/): headrail sizes by material. Checked 2026-10-27.
+- [ASI Global Partitions, Ultimate Privacy](https://asi-globalpartitions.com/style/ultimate-privacy/): 64" and 72" heights, No Sight-55. Checked 2026-10-27.
+- [Bradley PH400 spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): 58" at 12", 82" overall, 1/2" panels, 3/4" doors and pilasters. Checked 2026-10-27.
+- [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): 72" at 6", 69" at 9" for ADA. Checked 2026-10-27.
+- [Scranton Products Hiny Hiders guide specification](https://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): 1" HDPE, 55" doors. Checked 2026-10-27.
+- [Scranton Products, Eclipse partitions](https://www.scrantonproducts.com/products/eclipse-restroom-partitions/): 55", 62", 72" heights. Checked 2026-10-27.
+- [2010 ADA Standards, U.S. Access Board](https://www.access-board.gov/ada/): 404.2.3, 604.8.1.2, 604.8.1.4, 604.8.2.2. Checked 2026-10-27.
 
 <!-- For Marc -->
 ## Corrections to the current page
@@ -137,4 +137,3 @@ On [bathroom stall dimensions](/guides/bathroom-stall-dimensions), including the
 - Panel and pilaster widths per brand and series: none in the repo; left out of the page.
 - Door widths for brands other than Metpar.
 - Stainless steel pilaster thickness, and whether stainless panels are 1" from a manufacturer sheet (the page relies on the site's own stainless page).
-- 2010 ADA 404.2.3 and 604.8.1.4 wording, and the search volume for "toilet partition sizes".
