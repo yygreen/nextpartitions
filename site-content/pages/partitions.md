@@ -51,9 +51,13 @@ There is no standard partition warranty. What we can state from manufacturer doc
 | Bobrick, DesignerSeries and MetroSeries HPL | 2 years; hosing down voids it |
 | Bradley, PH400 phenolic | 3 years against delamination and discoloration (brochure) |
 | Bradley, stainless steel | 15 years against rust-out (brochure) |
+| Ammco (All American Metal), powder coated / plastic laminate | 1 year each against defects in workmanship and construction; material only |
+| Ammco, stainless steel | 10 years against defects in workmanship and construction; material only |
+| Ammco, phenolic | 10 years against delaminating, corrosion or breakage; material only |
+| Ammco, solid plastic (HDPE) | 15 years against delaminating, corrosion or breakage; material only |
 | Metpar, powder coated (Powder Shield) / stainless | 4 years / 6 years (master specifications) |
 
-ASI's catalog points to a full warranty on its website that we couldn't open, and we haven't found Hadrian's or Ammco's terms, so we state no coverage wording for them. Your quote will name the brand and its warranty. Read the full warranty for exclusions and conditions.
+ASI's catalog points to a full warranty on its website that we couldn't open, and we haven't found Hadrian's terms, so we state no coverage wording for them. Ammco's warranties are for material only, with no credit for labor, apply when the partitions are properly maintained, and are voided by installation errors, vandalism or improper use or care. Your quote will name the brand and its warranty. Read the full warranty for exclusions and conditions.
 
 ## Moisture and cleaning
 
@@ -95,7 +99,7 @@ Phenolic or HDPE. Plastic laminate's core can swell and painted steel can rust.
 No. HDPE must pass NFPA 286; others are tested to ASTM E84 and classed A, B or C by product line.
 
 ### What warranty comes with partitions?
-It depends on the brand and line. Scranton Hiny Hiders carries 25 years, Bobrick and ASI list 25 for phenolic, ASI lists 3 for powder coated and 5 for stainless, and Bobrick's HPL laminate carries 2.
+It depends on the brand and line. Scranton Hiny Hiders carries 25 years, Bobrick and ASI list 25 for phenolic, ASI lists 3 for powder coated and 5 for stainless, Ammco (All American Metal) gives 1 to 15 years depending on material, and Bobrick's HPL laminate carries 2.
 
 ## Sources
 
@@ -107,6 +111,7 @@ It depends on the brand and line. Scranton Hiny Hiders carries 25 years, Bobrick
 - [ASI replacement hardware](https://asi-globalpartitions.com/replacement-hardware/). Checked 2026-10-27.
 - [Scranton Hiny Hiders](https://www.scrantonproducts.com/products/hiny-hiders-partitions/); [Scranton Limited Warranty](https://www.scrantonproducts.com/wp-content/uploads/2022/07/Scranton-Products-Warranty.pdf); [color visualizers](https://www.scrantonproducts.com/marketing/product-color-visualizers/). Checked 2026-10-27.
 - [Metpar powder coated](https://metpar.com/toilet-partitions/powder-coated/). Checked 2026-10-27.
+- Ammco (All American Metal) warranties: [powder coated](https://allamericanmetal.com/frontend/web/uploads/material/1580234797_POWDER-COATED-WARRANTY.pdf), [plastic laminate](https://allamericanmetal.com/frontend/web/uploads/material/1580234840_PLASTIC-LAMINATE-WARRANTY.pdf), [phenolic](https://allamericanmetal.com/frontend/web/uploads/material/1580234852_PHENOLIC-WARRANTY.pdf), [stainless steel](https://allamericanmetal.com/frontend/web/uploads/material/1580234814_STAINLESS-STEEL-WARRANTY.pdf), [solid plastic](https://allamericanmetal.com/frontend/web/uploads/material/1580234827_SOLID-PLASTIC-WARRANTY.pdf). Checked 2026-10-27.
 - [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): Bradley warranties. Checked 2026-10-27.
 - [Metpar master specifications](https://metpar.com/tech-docs/): Powder Shield 4 years, stainless 6 years (Metpar powder coated and stainless master spec files). Checked 2026-10-27.
 - [Bradley PH400 spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf). Checked 2026-10-27.
@@ -129,7 +134,7 @@ It depends on the brand and line. Scranton Hiny Hiders carries 25 years, Bobrick
 
 | Claim | Where it's from | Source to check |
 |---|---|---|
-| Coverage text of the ASI warranties, Hadrian and Ammco warranty lengths | ASI lengths from the catalog | Manufacturer warranty documents (checked 2026-10-27: not found; ASI's warranty page has no text, hadrian-inc.com returned 403, no Ammco source fetched) |
+| Coverage text of the ASI warranties, Hadrian warranty lengths | ASI lengths from the catalog | Manufacturer warranty documents (checked 2026-10-27: not found; ASI's warranty page has no text, hadrian-inc.com returned 403) |
 | Metpar's 4 and 6 year warranties as stated in its warranty document | Master specification templates | Metpar warranty document (checked 2026-10-27: not found; the Warranty link goes to Metpar's tech-docs index) |
 | Lead times 5–10 days and 2–4 weeks | Current page | Confirm with Abe (checked 2026-10-27: not a manufacturer question) |
 | Material tile copy, "most popular and budget-friendly" | Current page | Dropped; Abe's price list (checked 2026-10-27: not a source question) |

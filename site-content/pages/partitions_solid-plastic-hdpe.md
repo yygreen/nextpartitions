@@ -45,12 +45,13 @@ Scranton Products carries a 25-year limited warranty on Hiny Hiders (the same te
 
 The Limited Warranty is given to a business or other commercial purchaser. It applies only if the partitions are installed to Scranton's written instructions, only to the original installation, and not to damage from vandalism, misuse, neglect, extraordinary wear and tear, or movement of the building. Scranton repairs, replaces or refunds at its choice and doesn't pay labor or removal costs.
 
-We found no 25-year figure for another brand's HDPE, so we won't quote one. Read the warranty document for the line you choose, including exclusions.
+Ammco (All American Metal) gives 15 years on solid plastic (HDPE) against delaminating, corrosion or breakage under normal wear and use, with defective material replaced free of charge. Ammco's warranty is for material only: no credit or allowance for labor or any expense of replacing covered parts. It applies when the partitions are properly maintained, and installation errors, vandalism or improper use, care or maintenance void it. ASI's catalog lists 25 years, Hadrian's is not published, and we found no 25-year figure for any other brand's HDPE. Read the warranty document for the line you choose, including exclusions.
 
 ## Moisture, vandal resistance and cleaning
 
 - **Moisture.** ASI says its solid plastic partitions are "highly resistant to common cleaning agents as well as to moisture, mildew, and graffiti" and "will not easily dent, rust, or delaminate".
 - **Graffiti.** Scranton: "Graffiti is easily wiped clean with a common, nonabrasive cleaner." Bobrick adds a caution: graffiti made with xylene-based markers can "ghost" into the plastic.
+- **Cleaning.** Ammco's care sheet says to wipe with warm water and mild liquid soap, and the partitions can be hosed down. Any mild commercial cleaner works for tougher stains. Remove the clear protective coating after installation; mild soap, or mineral spirits for stubborn residue, cleans off what is left. Use no abrasive pads or caustic solutions. Follow your manufacturer's care instructions for other brands.
 - **Surface.** Bobrick lists HDPE as the softest surface of the common partition materials, so it scratches easily. The color runs through, so a scratch doesn't show a different layer. We don't hold manufacturer guidance on sanding HDPE, so we don't recommend it.
 - **Color range.** Bobrick notes HDPE's color range is more limited than laminate's.
 
@@ -79,7 +80,7 @@ Our quotes cover panels, doors, pilasters, headrails, hinges, slide latches, kee
 Not by default. The IBC requires HDPE partitions to pass the NFPA 286 room-corner test, and Scranton states its Standard Color Collection does not meet NFPA 286 or ASTM E84. Ask for the fire-rated version and its test report.
 
 ### What is the warranty on HDPE partitions?
-Scranton Products gives a 25-year limited warranty on Hiny Hiders. Its warranty document covers defects in material and workmanship that result in breakage or delamination under normal use, and excludes vandalism, misuse and damage from the building. Other brands differ.
+Scranton Products gives a 25-year limited warranty on Hiny Hiders. Its warranty document covers defects in material and workmanship that result in breakage or delamination under normal use, and excludes vandalism, misuse and damage from the building. Ammco (All American Metal) gives 15 years for material only. Other brands differ.
 
 ### How thick are HDPE partitions?
 Scranton's panels, doors and pilasters are 1" solid HDPE, with edges rounded to a 1/4" radius.
@@ -98,6 +99,8 @@ No, there is no metal in the panel. ASI says solid plastic "will not easily dent
 - [Seattle Building Code 2018, Chapter 8](https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2018SBCChapter8.pdf): IBC 803.9 text on HDPE/PP and NFPA 286. Checked 2026-10-27.
 - [Bobrick fact sheet on ICC and NFPA model code revisions, Feb 2012](https://www.bobrick.com/wp-content/uploads/FACT_SHEET_ICC_IFC_AND_NFPA_MODEL_CODE_REVISIONS-1.pdf): dates of the NFPA 286 requirement. Checked 2026-10-27.
 - [Scranton Products color visualizers](https://www.scrantonproducts.com/marketing/product-color-visualizers/): NFPA 286 footnote. Checked 2026-10-27.
+- [Ammco (All American Metal) solid plastic (HDPE) warranty](https://allamericanmetal.com/frontend/web/uploads/material/1580234827_SOLID-PLASTIC-WARRANTY.pdf): length, coverage, exclusions. Checked 2026-10-27.
+- [Ammco care sheet](https://allamericanmetal.com/frontend/web/uploads/material/1582235863-Caring-for-your-Solid-Plastic-Toilet-Partitions.pdf): cleaning. Checked 2026-10-27.
 - [Scranton Products Hiny Hiders](https://www.scrantonproducts.com/products/hiny-hiders-partitions/): 25-year warranty, graffiti, mounting configurations, fire rating options, shiplap cut edge. Checked 2026-10-27.
 - [Scranton Products Limited Warranty](https://www.scrantonproducts.com/wp-content/uploads/2022/07/Scranton-Products-Warranty.pdf): 25 years on Hiny Hiders, "breakage or delamination" wording, conditions and exclusions. Checked 2026-10-27.
 - [Scranton Hiny Hiders general specifications](http://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): 1" HDPE with 1/4" radius edges, 8" wrap-around hinges, sleeves, warranty wording. Checked 2026-10-27.

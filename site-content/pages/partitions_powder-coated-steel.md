@@ -40,15 +40,16 @@ There is no single powder coated steel warranty.
 
 - **ASI Global:** 3 years for powder coated steel, per the ASI catalog, which refers to the full warranty on ASI's website. We couldn't open that text, so we can't state ASI's coverage terms.
 - **Metpar:** its master specification lists 4 years for the Powder Shield finish, as a manufacturer's standard form "to repair or replace toilet compartment components (panels, doors, pilasters, and hardware) against defects in material and workmanship". The specification is a template, so we treat 4 years as a published figure to confirm against Metpar's warranty document.
+- **Ammco (All American Metal):** 1 year against all defects in workmanship and construction under normal wear and use. Defective material is replaced free of charge. The warranty is for material only: no credit or allowance for labor or any expense of replacing covered parts. It applies when the partitions are properly maintained, and installation errors, vandalism or improper use, care or maintenance void it.
 
-The current page said both 1 year and 3 years. The 3 years matches ASI. We could not trace the 1-year figure to any manufacturer's powder coated warranty. Bradley, Hadrian and Ammco terms are not in the documents we could open. Your quote will name the brand and its warranty.
+The current page said both 1 year and 3 years. The 3 years matches ASI and the 1 year matches Ammco. Bradley and Hadrian terms are not in the documents we could open. Your quote will name the brand and its warranty.
 
 ## Moisture, vandal resistance and cleaning
 
 - **Moisture.** Steel can rust where the coating is damaged. Bobrick lists rust, dents and scratches as painted metal's weaknesses. Keep it to dry, climate-controlled restrooms; for showers, pools and sustained humidity look at [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe).
 - **Graffiti.** Bobrick says graffiti is harder to deal with on painted metal than on other materials.
 - **Repainting.** Bobrick lists repainting as a strength.
-- **Cleaning.** Follow your manufacturer's care instructions. We don't hold a cleaning specification here.
+- **Cleaning.** Ammco's care sheet says to wipe with warm water and very mild soap on a nonabrasive, well wrung-out cloth, rinse and dry with a soft cloth. Never scrub with brushes, steel wool or scouring pads, and keep acid, alkali and bleach-based bathroom cleaners off the finish, rinsing off any splash at once. Follow your manufacturer's care instructions for other brands.
 
 ## Where powder coated steel fits
 
@@ -80,7 +81,7 @@ Galvannealed steel faces over a honeycomb core, finished with a baked powder coa
 Metpar lists 1" doors and panels with 1-1/4" pilasters, and 22-gauge face sheets on doors and panels. Measure yours before ordering parts.
 
 ### What is the warranty?
-It depends on the brand. ASI's catalog lists 3 years and Metpar's master specification lists 4 years for its Powder Shield finish. We confirm the figure for your brand at quote time.
+It depends on the brand. Ammco (All American Metal) gives 1 year for material only. ASI's catalog lists 3 years and Metpar's master specification lists 4 years for its Powder Shield finish. We confirm the figure for your brand at quote time.
 
 ### Is powder coated steel fire rated?
 Bobrick rates painted metal Class A under ASTM E84, ASI lists its powder coated steel as Class A, and Metpar states Class A. Ask for the test data for your line.
@@ -106,12 +107,14 @@ Bobrick lists repainting as a strength of painted metal. Ask the manufacturer fo
 - [Hadrian floor mounted powder coated](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-mounted-powder-coated-toilet-partitions-nst865768-p). Checked 2026-10-27.
 - [Scranton Products, HDPE vs other materials](https://www.scrantonproducts.com/hdpe-vs-other-materials/): honeycomb described as cardboard. Checked 2026-10-27.
 - [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 604.8.1.1, 604.8.1.2. Checked 2026-10-27.
+- [Ammco (All American Metal) powder coated steel warranty](https://allamericanmetal.com/frontend/web/uploads/material/1580234797_POWDER-COATED-WARRANTY.pdf): length, coverage, exclusions. Checked 2026-10-27.
+- [Ammco care sheet](https://allamericanmetal.com/frontend/web/uploads/material/1580156142_Caring-for-your-Powder-Coated-Steel-Toilet-Partitions.pdf): cleaning. Checked 2026-10-27.
 - Hardware included with a quote: current site, /partitions. Checked 2026-10-26.
 
 <!-- For Marc -->
 ## Corrections to the current page
 
-- Warranty "1 Year" (spec table) vs "3-Year Limited Warranty" (feature list): contradictory and unsourced. Replaced by brand-specific ASI 3 years; others pending.
+- Warranty "1 Year" (spec table) vs "3-Year Limited Warranty" (feature list): contradictory. The 1 year is Ammco's, the 3 years ASI's. Now stated per brand.
 - "15 standard color choices": removed (Metpar's brand page says 18; unresolved). Color list and numbers also removed pending verification.
 - "ADA ... 60" minimum stall depth": wrong; 604.8.1.1 sets 56" or 59".
 - "Skin Galvannealed steel, 22 ga" and "Honeycomb cardboard": checked 2026-10-27. Metpar's master spec gives 22 gauge for door and panel faces (20 gauge for pilasters), so the gauge is now stated for Metpar only. "Cardboard" appears only on Scranton's competing HDPE page; Metpar calls its stainless core "paper constructed" and ASI says "cellular honeycomb". Not used as a claim.
@@ -128,8 +131,7 @@ Bobrick lists repainting as a strength of painted metal. Ask the manufacturer fo
 
 | Claim | Where it's from | Source to check |
 |---|---|---|
-| Warranty for Bradley, Hadrian, Ammco; what ASI's 3 years and Metpar's 4 years cover | ASI length (catalog); Metpar length (master spec template) | Each manufacturer warranty (checked 2026-10-27: not found; ASI's warranty page has no text, Metpar's Warranty link goes to its tech-docs index, hadrian-inc.com returned 403, Bradley's site returned 403) |
-| The 1-year figure | Current page spec table | Probably Ammco or other (checked 2026-10-27: not found in Bobrick, ASI, Metpar or Scranton documents; Bobrick's 1-year warranty is for partition hardware) |
+| Warranty for Bradley, Hadrian; what ASI's 3 years and Metpar's 4 years cover | ASI length (catalog); Metpar length (master spec template) | Each manufacturer warranty (checked 2026-10-27: not found; ASI's warranty page has no text, Metpar's Warranty link goes to its tech-docs index, hadrian-inc.com returned 403, Bradley's site returned 403) |
 | Bradley powder coated ceiling hung | Bradley Series 600 installation guide | The guide URL returned HTTP 406 on 2026-10-27; Bradley's brochure does not list powder coated |
 | 15 vs 18 colors, color list | Current page; Metpar brand page | Metpar color chart (checked 2026-10-27: ASI lists 15 standard powder coated colors in its catalog; Metpar's color chart PDF was not opened and its page doesn't give a count) |
 | Custom RAL/Pantone | Current page | Confirm with Abe (checked 2026-10-27: Metpar says non-listed customer chosen colors can be used in production; Hadrian requires a minimum of 20 units per custom color) |

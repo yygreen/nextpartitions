@@ -5,7 +5,7 @@ meta: How to install bathroom partitions: what to check first, the general seque
 h1: How to Install Bathroom Partitions
 primary_keyword: how to install bathroom partitions (30/mo)
 secondary_keywords: [bathroom partitions installation (40), bathroom partition installation (30), how to install commercial bathroom partitions (20), how to install ceiling hung toilet partitions (20), toilet partition installation problems, toilet partition installation heights, ADA grab bar on toilet partition, toilet partition slide latch install]
-words: 2,100
+words: 2,350
 ---
 
 # How to Install Bathroom Partitions
@@ -86,6 +86,15 @@ The order below is the typical one across manufacturers. Your guide may differ i
 6. **Doors and hinge adjustment.** Hang the doors and adjust them. The OGS spec says to adjust doors so their tops are parallel with the overhead brace. See the hinge setting below.
 7. **Latch and keeper alignment.** Fit the latch, then the keeper. See below.
 
+Metal and solid plastic installation guides from Ammco (All American Metal) confirm this order and add a few details:
+
+- **Mark and check twice.** The pilaster centerline sits slightly in from the full compartment depth on the drawings, so use the drawing dimension, not the room depth. Double-check the layout before drilling and make any change then.
+- **Support the panel first.** Rest each panel on a spacer block about 12" to 14" high while it slides into the wall brackets, and leave a small gap at the wall as the drawing shows. Do not fasten it to the wall brackets until the pilasters are set.
+- **Use a shim at the top.** Wedge a shim between panel and wall at the top rear to hold position while you drill and fasten the pilaster brackets.
+- **Keep the shoe up.** Slide the pilaster shoe up out of the way while you level and fasten, and lower it over its clip last.
+- **Level pilaster tops** from one compartment to the next with the leveling bolts or nuts, then set the door openings from the wall pilaster.
+- **Drill with the hardware in place.** Use the bracket, hinge or keeper as the template for its own holes. Field-drill hinge brackets before you finish fastening the pilasters.
+
 ## Ceiling hung
 
 ![Ceiling hung toilet partitions, front view](/images/diagrams/mounting-ceiling-hung.svg)
@@ -102,6 +111,10 @@ Ceiling hung is the style where the building matters most. If you are asking how
 - **The finished ceiling carries nothing.** The NY OGS spec requires anchoring assemblies to connect to structure above the ceiling without transmitting load to the finished ceiling.
 - **Hanger and leveling.** Bobrick's ceiling anchor assembly is a threaded rod, hex nuts, washers, a shoe retainer and an expansion anchor. The pilaster hangs from the rod and is leveled with the nuts. A 4" stainless steel shoe covers the hanger at the ceiling.
 - **Ceiling height.** Bobrick's standard 83" pilaster fits an 8' ceiling and is made to length up to 10'.
+
+- **Bolts through the steel.** Ammco's ceiling-hung guide passes threaded bolts through the drilled support steel, with a nut and washer above and below, and lets each bolt stick out a set distance (2" to 2-1/2") below the finished ceiling. Keep the steel's position true to the drawing's stall depth and centerline.
+- **Leave the shoe down.** Fit the shoe clip and tighten, then raise the shoe to the ceiling only after the pilasters are level and the panels are fastened.
+- **Slotted mounting bars** allow small side-to-side adjustment: loosen the lock nut, move the pilaster to the door opening size, and re-tighten.
 
 The panel, door, hinge and latch steps then follow the same pattern as above.
 
@@ -129,6 +142,8 @@ For a slide latch install, ASI Global's guide aligns the keeper with the latch b
 2. **Bottom cam:** sets where the door rests.
 3. **Wrap-around flanges:** one wraps the pilaster end, one the door edge.
 4. **Continuous hinge** running the full height of the door.
+
+Do not assemble a two-part latch before it goes through the door: some use pressure-sensitive parts that cannot be taken apart again (Ammco). Tap hinge pins in gently and do not overtighten the cam nut, which can damage the pintle. A surface-mounted continuous hinge on a solid plastic door is set closed for doors 30" and wider, leaves about 1/8" between door and pilaster, and is not field adjustable (Ammco).
 
 The bottom cam sets the rest position. On ASI metal partitions, the lowest point of the cam pintle sets it. Scranton's wrap-around hinges adjust in 30-degree steps. Accessible doors must be self-closing under the 2010 ADA Standards (604.8.1.2). Bobrick says to lubricate hinges with a PTFE-based lubricant. See [hinges](/hardware/hinges) for detail.
 
@@ -158,9 +173,9 @@ Most toilet partition installation problems come down to level, backing or hinge
 | Problem | First checks |
 |---|---|
 | Door won't latch | The keeper may have moved or the door has dropped. Adjust the hinge first, then re-align the keeper with the latch bar. See [locks and latches](/hardware/locks-latches). |
-| Door sags or rests in the wrong position | Adjust the bottom hinge cam, then lubricate it. Replace a worn cam or missing nylon pintle. |
+| Door sags or rests in the wrong position | Adjust the bottom hinge cam (loosen the nut, set the door, re-tighten without forcing), then lubricate it. Continuous hinges on solid plastic doors are not adjustable; check the door height and gap instead. Replace a worn cam or missing nylon pintle. |
 | Uneven gaps | Check that the pilasters are plumb and at the same height, and that door tops are parallel with the headrail (OGS). |
-| Pilaster not plumb | Re-set the leveling device or leveling nuts at the foot, or the top on ceiling styles. |
+| Pilaster not plumb | Re-set the leveling device or leveling nuts at the foot, or the top on ceiling styles. If the pilaster shifted off the door opening, loosen the nut, slide it along the slotted mounting bar and re-tighten. |
 | Loose panels | Check the wall backing behind the brackets and the bracket fasteners. |
 
 If a problem is not on this list, call the manufacturer.
@@ -193,6 +208,7 @@ Sources marked 2026-10-27 were opened and read that day. The Bradley copy is dea
 - [Bobrick, 1550 Series technical data](https://www.bobrick.com/wp-content/uploads/1550_td.pdf): leveling bracket, 58" doors, 83" stile. Checked 2026-10-27.
 - [ASI Global Integrated Privacy installation guide](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Integrated-Privacy-Powder-Coated-and-Stainless-Steel-Installation-Guide.pdf): keeper alignment and drilling, bumper placement, box cam and pintle. Checked 2026-10-27.
 - [Bradley Series 600 powder coated and stainless installation guide (dealer-hosted copy of Bradley's document)](https://ded1740.inmotionhosting.com/~partplus42/wp-content/uploads/2022/01/Bradley-Series-600-Powder-Coated-and-Stainless-Steel-Installation-Guide.pdf): backing warning, "C" channel, 12" level line. Last read 2026-10-26; not re-opened.
+- Ammco (All American Metal) installation instructions: [head rail braced, powder coated and stainless steel](https://allamericanmetal.com/frontend/web/uploads/installation/1585223487-AAMCO-Metal-Installation-Instructions.pdf), [floor supported](https://allamericanmetal.com/frontend/web/uploads/installation/1602879783-AAMCO-INSTALLATION-Metal-Floor-Supported.pdf), [ceiling hung](https://allamericanmetal.com/frontend/web/uploads/installation/1602879850-AAMCO-INSTALLATION-Metal-Ceiling-Hung.pdf) and [solid plastic (HDPE)](https://allamericanmetal.com/frontend/web/uploads/installation/1616505699-Solid-Partitions---Installation-Instructions-2018.pdf): spacer block, shim, shoe, leveling, drill-in-place, ceiling bolt, latch and hinge notes. Checked 2026-10-27.
 - [Scranton Products Hiny Hiders guide specification](http://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): 30-degree cams. Checked 2026-10-27.
 - [Scranton Products partition spec form](http://www.scrantonproducts.com/wp-content/uploads/2015/05/Partition__Vanity_Spec_Form_Estimating-3.pdf): latches and strikes cannot be mixed. Checked 2026-10-27.
 - [New York State OGS MasterSpec 102113.19, Plastic Toilet Compartments](https://online2.ogs.ny.gov/dnc/masterspec24/docs/Division10Specialties/102113.19PlasticToiletCompartments.docx): anchor depths, headrail fasteners, door alignment, ceiling anchoring, steel (not wood) for ceiling hung. Checked 2026-10-27.
@@ -220,7 +236,7 @@ None. This is a new page. There is no live version.
 ## To verify when sources are reachable
 
 - Whether partitions may carry a grab bar, for each brand: not found in the Bobrick (1080, 1550, 1040, 1090) installation instructions or technical data (checked 2026-10-27: not found). The body keeps the advice to ask the manufacturer in writing.
-- Full step order, fastener spacing, bracket heights, door gaps and tool lists per brand: the manufacturer installation documents are now linked from /guides/installation-instructions, but the body here stays a generic overview. Bradley, Hadrian and Ammco official documents could not be reached (see that page).
+- Full step order, fastener spacing, bracket heights, door gaps and tool lists per brand: the manufacturer installation documents are now linked from /guides/installation-instructions, but the body here stays a generic overview. Bradley and Hadrian official documents could not be reached (see that page). Ammco's four documents are now cited for the short additions above; the solid plastic PDF is mostly drawings, so only its layout, shoe, wall bracket, panel, hinge and tool pages were used.
 - Uneven gaps, loose panels and not-plumb fixes are general, drawn from level and backing facts only. Confirm manufacturer tolerances.
 - Whether the Bradley 12" level line applies beyond ceiling-hung guides (the Bradley document could not be re-opened).
 - Coat hook mounting heights beyond the ADA reach ranges: no manufacturer heights confirmed.

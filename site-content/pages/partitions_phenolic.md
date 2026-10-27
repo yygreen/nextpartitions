@@ -54,6 +54,7 @@ There is no single phenolic warranty. The lengths below come from manufacturer d
 
 - **Bobrick, DuraLineSeries CGL 1080/1180:** 25 years. Bobrick's warranty document covers panels, doors and stiles "against breakage, corrosion, delaminating and defects in workmanship", on condition that the partitions are properly installed, used and serviced. The remedy is repair or replacement, and vandalism damage isn't covered. Hardware and brackets carry 1 year.
 - **ASI Global:** 25 years on black core and on Color-Thru phenolic, per the ASI catalog, which refers to the full warranty on ASI's website. We couldn't open that text, so we can't state ASI's coverage terms.
+- **Ammco (All American Metal):** 10 years against delaminating, corrosion or breakage under normal wear and use. Defective material is replaced free of charge. The warranty is for material only: no credit or allowance for labor or any expense of replacing covered parts. It applies when the partitions are properly maintained, and installation errors, vandalism or improper use, care or maintenance void it.
 - **Bradley, PH400 phenolic:** 3 years "against delamination and discoloration" (Bradley partitions brochure, 2025).
 - **Metpar and Hadrian:** we haven't found a published phenolic warranty.
 
@@ -63,7 +64,7 @@ Whatever a different site or older page says, warranty length and coverage are s
 
 - **Moisture.** ASI and Bobrick both position phenolic for showers, pools, saunas and other wet areas. Bobrick's materials guide lists water resistance and hardness among its strengths. Bobrick also recommends solid phenolic, with its SCRC material, for wet areas.
 - **Dents, scratches and graffiti.** Bobrick lists resistance to dents, scratches and graffiti as strengths. The caveat is on black core material: a deep scratch can expose the black core. Don't count on sanding to hide damage.
-- **Cleaning.** Follow the manufacturer's care instructions for your line. We don't hold a cleaning specification for phenolic, so we make no cleaner-specific claim here.
+- **Cleaning.** Ammco's care sheet says to wipe with warm water and very mild soap on a nonabrasive cloth, rinse and dry with a soft cloth. Its solid core makes water exposure harmless, and the partitions can be hosed down if needed. No brushes, steel wool or scouring pads, and keep acid, alkali and bleach-based bathroom cleaners off it, rinsing any splash at once. Other brands may differ (Bobrick says hosing down laminate voids its warranty), so follow your manufacturer's care instructions.
 
 ## Where phenolic fits
 
@@ -100,7 +101,7 @@ Bobrick, Bradley and Metpar make panels 1/2" thick, with 3/4" doors and pilaster
 It depends on the line. Bobrick's 1180 is Class A and its 1080 is Class B. ASI's Color-Thru is Class A as standard and its black core is Class B as standard, with Class A optional. Ask for the class of the line you are specifying.
 
 ### What is the warranty on phenolic partitions?
-It depends on the brand. Bobrick gives 25 years on its DuraLineSeries compact grade laminate and ASI lists 25 years, while Bradley's PH400 phenolic carries 3 years. Coverage terms are in each manufacturer's warranty document.
+It depends on the brand. Bobrick gives 25 years on its DuraLineSeries compact grade laminate and ASI lists 25 years, Ammco (All American Metal) 10 years and Bradley's PH400 phenolic carries 3 years. Coverage terms are in each manufacturer's warranty document.
 
 ### Is phenolic good for pools and showers?
 Manufacturers position it for those areas. ASI says black core phenolic holds up under severe moisture from showers, pools and saunas.
@@ -120,6 +121,8 @@ Black core has a black, machined edge. Color-through matches the edge to the fac
 - [ASI Global replacement hardware](https://asi-globalpartitions.com/replacement-hardware/): 3/4" headrail for phenolic. Checked 2026-10-27.
 - [Scranton Products, HDPE vs other materials](https://www.scrantonproducts.com/hdpe-vs-other-materials/): resin-impregnated kraft paper core. Checked 2026-10-27.
 - [Bradley PH400 Series spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): 1/2" panels, 3/4" doors and pilasters, black edges with 45-degree chamfer. Checked 2026-10-27.
+- [Ammco (All American Metal) phenolic warranty](https://allamericanmetal.com/frontend/web/uploads/material/1580234852_PHENOLIC-WARRANTY.pdf): length, coverage, exclusions. Checked 2026-10-27.
+- [Ammco care sheet](https://allamericanmetal.com/frontend/web/uploads/material/1580161917_Caring-for-your-Phenolic-Toilet-Partitions.pdf): cleaning. Checked 2026-10-27.
 - [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): phenolic warranty (3 years against delamination and discoloration), solid black edges. Checked 2026-10-27.
 - [Metpar phenolic, black core](https://metpar.com/toilet-partitions/phenolic-black-core/): 3/4" doors and pilasters, 1/2" panels, Class B, black polished and beveled edges. Checked 2026-10-27.
 - [Hadrian floor mounted phenolic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-mounted-phenolic-toilet-partitions-nst865757-p), [ceiling hung phenolic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/ceiling-hung-phenolic-toilet-partitions-nst865755-p), [floor to ceiling phenolic](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-phenolic-toilet-partitions-nst865759-p): mounting offered, Class A or B by color. Checked 2026-10-27.
@@ -149,7 +152,6 @@ Black core has a black, machined edge. Color-through matches the edge to the fac
 | Color names/numbers (Silver Gray 3000 etc.) and Black Core/Color-Thru lists | Current page | ASI color charts (checked 2026-10-27: not found in the ASI catalog text, which gives only counts: 10 black core, 6 Color-Thru; Silver Gray 3000 appears there as a plastic laminate color) |
 | Price index "$" note | Current page | Dropped; Abe's price list (checked 2026-10-27: ASI's catalog shows its own price index, "$" for black core and "$$$$$" for Color-Thru, but Abe's list is what matters) |
 | Lead time 10–15 business days | Current page | Confirm with Abe (checked 2026-10-27: not a manufacturer question) |
-| Cleaning instructions for phenolic | Not in repo | ASI/Bobrick care guides (checked 2026-10-27: not found in the pages fetched; Bobrick has a Cleaning & Maintenance Guide we did not open) |
 
 ## Implementation notes
 

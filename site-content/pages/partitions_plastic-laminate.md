@@ -37,13 +37,15 @@ Both numbers on the current page turn out to be real, for different lines:
 - **Bobrick, DesignerSeries HPL 1040 and MetroSeries HPL 1550:** 2 years. Bobrick's warranty document covers panels, doors and stiles "against breakage, corrosion, delaminating and defects in workmanship" if the partitions are properly installed, used and serviced, and it states that spraying down or hosing HPL partitions voids the warranty. Vandalism isn't covered, and hardware carries 1 year.
 - **ASI Global:** 5 years on Moisture Guard plastic laminate, and 2 years on its standard (legacy) laminate. The ASI catalog refers to the full warranty on ASI's website, which we couldn't open, so we can't state ASI's coverage terms.
 
-We haven't found a published laminate warranty for Ammco or Hadrian. Your quote will name the brand, product line and warranty length. Read the warranty text, since coverage for moisture damage in particular varies.
+- **Ammco (All American Metal):** 1 year against all defects in workmanship and construction under normal wear and use. Defective material is replaced free of charge. The warranty is for material only: no credit or allowance for labor or any expense of replacing covered parts. It applies when the partitions are properly maintained, and installation errors, vandalism or improper use, care or maintenance void it.
+
+We haven't found a published laminate warranty for Hadrian. Your quote will name the brand, product line and warranty length. Read the warranty text, since coverage for moisture damage in particular varies.
 
 ## Moisture, vandal resistance and cleaning
 
 - **Moisture.** Bobrick notes that the core "may swell when exposed to excessive moisture". Keep laminate in dry, climate-controlled restrooms, not showers, pools or locker rooms. Use [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe) there.
 - **Scratches.** Bobrick lists scratch, dent and graffiti resistance at a low cost. A deep scratch can expose the dark kraft paper under the surface.
-- **Cleaning.** Follow the manufacturer's care instructions. We don't hold a manufacturer cleaning specification.
+- **Cleaning.** Ammco's care sheet says to wipe with warm water and very mild soap on a nonabrasive, well wrung-out cloth, rinse and dry with a soft cloth. Never over-saturate laminate or leave it wet, because water can swell the core. No brushes, steel wool or scouring pads, and keep acid, alkali and bleach-based bathroom cleaners off it, rinsing any splash at once. Follow your manufacturer's care instructions for other brands.
 
 ## Where laminate fits
 
@@ -70,7 +72,7 @@ Bobrick lists its HPL as Class B (flame spread 60). ASI lists its Moisture Guard
 Not continuously. The core may swell with excessive moisture (Bobrick). Use phenolic or HDPE in wet rooms.
 
 ### What is the warranty?
-It depends on brand and line. Bobrick's DesignerSeries and MetroSeries HPL carry 2 years (hosing them down voids it). ASI's Moisture Guard laminate carries 5 years and its standard laminate 2. We confirm it at quote time.
+It depends on brand and line. Bobrick's DesignerSeries and MetroSeries HPL carry 2 years (hosing them down voids it). ASI's Moisture Guard laminate carries 5 years and its standard laminate 2. Ammco (All American Metal) gives 1 year for material only. We confirm it at quote time.
 
 ## Sources
 
@@ -84,6 +86,8 @@ It depends on brand and line. Bobrick's DesignerSeries and MetroSeries HPL carry
 - [ASI Global Partitions catalog](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf): Moisture Guard edge banding, 5-year warranty (2 years for standard laminate), Class C, 48 colors. Checked 2026-10-27.
 - [ASI Global construction features](https://asi-globalpartitions.com/construction-features/): .050" vertical-grade laminate. Checked 2026-10-27.
 - [ASI Global replacement hardware](https://asi-globalpartitions.com/replacement-hardware/): 1-1/4" headrail for laminate. Checked 2026-10-27.
+- [Ammco (All American Metal) plastic laminate warranty](https://allamericanmetal.com/frontend/web/uploads/material/1580234840_PLASTIC-LAMINATE-WARRANTY.pdf): length, coverage, exclusions. Checked 2026-10-27.
+- [Ammco care sheet](https://allamericanmetal.com/frontend/web/uploads/material/1580161899_Caring-for-your-Plastic-laminate-Toilet-Partitions.pdf): cleaning. Checked 2026-10-27.
 - Hardware included with a quote: current site, /partitions. Checked 2026-10-26.
 
 <!-- For Marc -->
@@ -104,7 +108,7 @@ It depends on brand and line. Bobrick's DesignerSeries and MetroSeries HPL carry
 
 | Claim | Where it's from | Source to check |
 |---|---|---|
-| Ammco and Hadrian HPL warranty; ASI warranty coverage wording | Only lengths for Bobrick (document) and ASI (catalog) are held | Ammco, Hadrian, ASI warranty documents (checked 2026-10-27: not found; the ASI warranty page loads with no text, hadrian-inc.com returned 403, no Ammco source fetched) |
+| Hadrian HPL warranty; ASI warranty coverage wording | Only lengths for Bobrick (document) and ASI (catalog) are held | Hadrian, ASI warranty documents (checked 2026-10-27: not found; the ASI warranty page loads with no text, hadrian-inc.com returned 403) |
 | Class A or B for Ammco and Hadrian laminate | Not in repo | Spec sheets (checked 2026-10-27: not found; ASI is Class C, Bobrick Class B) |
 | Laminate brands (Wilsonart, Formica, Nevamar), 200+ decors | Current page | Ammco (checked 2026-10-27: not found in the ASI catalog or Bobrick pages; ASI's Moisture Guard range is 48 colors) |
 | "48 colors in 48 hours" | Current page | Confirm with Abe (checked 2026-10-27: ASI's catalog says 48 colors ship in 48 hours, floor anchored/overhead braced only; whether Abe's stock matches is for Abe) |

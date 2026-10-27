@@ -47,10 +47,13 @@ Every link below is on the manufacturer's own site. We opened each one on 2026-1
 | Metpar | Phenolic | Phenolic | See the guide | [Installation instructions](https://www.metpar.com/wp-content/uploads/2018/01/Phenolic-Installation-Instructions.pdf) |
 | Metpar | Solitude | See the manual | See the manual | [Installation manual](https://metpar.com/wp-content/uploads/2021/11/Solitude-Installation-Manual.pdf) |
 | Bradley | All series | Phenolic, solid plastic, steel | n/a | Request from the manufacturer (800.272.3539) or ask us |
-| Ammco | All lines | Powder coated, stainless | n/a | Request from the manufacturer or ask us |
+| Ammco (All American Metal) | Powder coated and stainless steel, head rail braced (Type H/B) | Powder coated steel, stainless steel | Overhead braced | [Installation instructions](https://allamericanmetal.com/frontend/web/uploads/installation/1585223487-AAMCO-Metal-Installation-Instructions.pdf) |
+| Ammco | Powder coated and stainless steel, floor supported (Type F/S) | Powder coated steel, stainless steel | Floor mounted | [Installation instructions](https://allamericanmetal.com/frontend/web/uploads/installation/1602879783-AAMCO-INSTALLATION-Metal-Floor-Supported.pdf) |
+| Ammco | Powder coated and stainless steel, ceiling hung (Type C/H) | Powder coated steel, stainless steel | Ceiling hung | [Installation instructions](https://allamericanmetal.com/frontend/web/uploads/installation/1602879850-AAMCO-INSTALLATION-Metal-Ceiling-Hung.pdf) |
+| Ammco | Solid plastic (HDPE) | Solid plastic (HDPE) | See the guide | [Installation instructions](https://allamericanmetal.com/frontend/web/uploads/installation/1616505699-Solid-Partitions---Installation-Instructions-2018.pdf) |
 | Hadrian | All lines | Phenolic, steel, solid plastic | n/a | Request from the manufacturer or ask us |
 
-If your brand or series shows "Request from the manufacturer or ask us," [contact us](/contact) with your brand, series and a photo of the partition or the label. We will help you find the right document. We do not guess at links.
+If your brand or series shows "[contact us](/contact) with your brand, series and a photo of the partition or the label. We will help you find the right document. We do not guess at links.
 
 ## Frequently asked questions
 
@@ -77,6 +80,7 @@ All links below were opened on 2026-10-27 and returned HTTP 200 with the documen
 
 - Bobrick installation instructions: [1080-69](https://www.bobrick.com/wp-content/uploads/1080-69_ii.pdf), [3080-69](https://www.bobrick.com/wp-content/uploads/3080-69_ii.pdf), [1550-69](https://www.bobrick.com/wp-content/uploads/1550-69_ii.pdf), [1040-69](https://www.bobrick.com/wp-content/uploads/1040-69_ii.pdf), [1540-69](https://www.bobrick.com/wp-content/uploads/1540-69_ii.pdf), [1090-69](https://www.bobrick.com/wp-content/uploads/1090-69_ii.pdf), and [TB-32](https://www.bobrick.com/wp-content/uploads/TB-32.pdf). Checked 2026-10-27.
 - ASI Global installation guides, listed on ASI's [field and end-user support page](https://asi-globalpartitions.com/fieldend-user-support/): [Integrated Privacy](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Integrated-Privacy-Powder-Coated-and-Stainless-Steel-Installation-Guide.pdf), [solid plastic](https://asi-globalpartitions.com/wp-content/uploads/Solid-Plastic-Installation-Guide.pdf), [phenolic](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Black-Core-and-Color-Thru-Phenolic-Installation.pdf), [Phenolic Ultimate Privacy](https://asi-globalpartitions.com/wp-content/uploads/UPPH-INSTALLATION-Guide.pdf), [plastic laminate](https://asi-globalpartitions.com/wp-content/uploads/PLAM_NSTALLATION.pdf). Checked 2026-10-27.
+- Ammco (All American Metal) [installation page](https://allamericanmetal.com/installation) and its four PDFs: [head rail braced](https://allamericanmetal.com/frontend/web/uploads/installation/1585223487-AAMCO-Metal-Installation-Instructions.pdf), [floor supported](https://allamericanmetal.com/frontend/web/uploads/installation/1602879783-AAMCO-INSTALLATION-Metal-Floor-Supported.pdf), [ceiling hung](https://allamericanmetal.com/frontend/web/uploads/installation/1602879850-AAMCO-INSTALLATION-Metal-Ceiling-Hung.pdf), [solid plastic](https://allamericanmetal.com/frontend/web/uploads/installation/1616505699-Solid-Partitions---Installation-Instructions-2018.pdf). Checked 2026-10-27.
 - [Scranton Products, Hiny Hiders installation resources](https://www.scrantonproducts.com/products/hiny-hiders-partitions/installation-resources/) and [product installation resources](https://www.scrantonproducts.com/for-professionals/product-installation-resources/). Checked 2026-10-27.
 - [Metpar installer resources](https://metpar.com/installer-resources/) and the PDFs linked from it (powder coated, stainless steel, Dur-A-Tex, phenolic, Solitude). Checked 2026-10-27.
 
@@ -98,5 +102,4 @@ None. This is a new page. There is no live version.
 
 - Bradley: bradleycorp.com returned HTTP 403 to our requests on 2026-10-27 (checked 2026-10-27: not reachable), so no official Bradley installation document is confirmed. The dealer-hosted copies (ded1740.inmotionhosting.com) exist for Series 400, 500, 600 and 700 but are not Bradley's own URL, so they are not linked. Bradley: 800.272.3539.
 - Hadrian: hadrian-inc.com returned HTTP 403 (checked 2026-10-27). The page the dealer-hosted manual points to is hadrian-inc.com/Tech-Data/Installation/Toilet-Partitions.aspx; confirm and add when it loads.
-- Ammco (All American Metal): ammcopartitions.com refused the connection and allamericanmetal.com did not load (checked 2026-10-27: not found). Web search found no manufacturer installation document.
 - Mounting styles for ASI and Metpar are marked "See the guide" because we did not confirm them per document. Bobrick styles come from each document's cover. Scranton styles come from the earlier source pass.

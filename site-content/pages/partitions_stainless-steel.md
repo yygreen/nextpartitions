@@ -41,6 +41,7 @@ There is no single stainless steel warranty. The lengths below come from manufac
 - **ASI Global:** 5 years on stainless steel, per the ASI catalog, which refers to the full warranty on ASI's website. We couldn't open that text, so we can't state ASI's coverage terms. This is where the current page's "5 Years" appears to come from.
 - **Bradley:** 15 years "against rust-out" on its stainless line, 5 years on chrome plated Zamac hardware and a lifetime warranty on stainless steel hardware (Bradley partitions brochure, 2025).
 - **Metpar:** 6 years for stainless steel, from its master specification, which describes the warranty as a manufacturer's standard form "to repair or replace toilet compartment components (panels, doors, pilasters, and hardware) against defects in material and workmanship". The specification is a template, so confirm the figure against Metpar's warranty document.
+- **Ammco (All American Metal):** 10 years against all defects in workmanship and construction under normal wear and use. Defective material is replaced free of charge. The warranty is for material only: no credit or allowance for labor or any expense of replacing covered parts. It applies when the partitions are properly maintained, and installation errors, vandalism or improper use, care or maintenance void it.
 - **Hadrian:** no published figure found.
 
 Your quote will name the brand and the warranty length for that line, and you should read the warranty text before you specify.
@@ -49,7 +50,7 @@ Your quote will name the brand and the warranty length for that line, and you sh
 
 - **Corrosion, with a limit.** Stainless resists corrosion, but it is not rust-proof everywhere. The Australian Stainless Steel Development Association (ASSDA) reports that Type 304 and 316 rods, bolts and wires under tension cracked in the unwashed, humid air above indoor chlorinated pools (stress-corrosion cracking), and says the problem hasn't been found in washed components such as doors and rails. A partition is mostly washed sheet, but ceiling-hung stalls hang from stressed rods and bolts. For a pool hall, choose [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe), or ask the manufacturer which grade it recommends for the hangers and fasteners and how often they should be washed. Elsewhere, with regular washdowns, stainless is a fit. ASI rates the wet-area suitability of its stainless steel Low.
 - **Dents and scratches.** Bobrick notes stainless can still dent and scratch, and in its comparison it is the most expensive of the materials. Textured finishes add vandal resistance (ASI).
-- **Cleaning.** Follow the manufacturer's care instructions. We don't hold a manufacturer cleaning specification.
+- **Cleaning.** Ammco's care sheet says to wipe with warm water and a damp cloth, in the direction of the polished grain, and dry with a soft cloth. A mild detergent handles tougher stains, and a commercial stainless steel cleaner handles stubborn marks. No steel wool or scouring pads (traces can leave rust stains), and keep acid, alkali and bleach-based bathroom cleaners off it, since splashes can leave brown spots. Follow your manufacturer's care instructions for other brands.
 
 ## Where stainless fits
 
@@ -75,7 +76,7 @@ Type 304 stainless steel faces over a honeycomb core (ASI, Metpar).
 They resist corrosion, but not in every setting. ASSDA reports stress-corrosion cracking of Type 304 and 316 rods, bolts and wires in the unwashed air above indoor chlorinated pools. Ask the manufacturer before using stainless in a pool hall, or choose another material.
 
 ### What is the warranty on stainless partitions?
-It depends on the brand and line. ASI lists 5 years, Bradley 15 years against rust-out and Metpar's specification 6 years. We confirm the length and coverage for your brand at quote time.
+It depends on the brand and line. ASI lists 5 years, Ammco (All American Metal) 10 years, Bradley 15 years against rust-out and Metpar's specification 6 years. We confirm the length and coverage for your brand at quote time.
 
 ### Are stainless partitions fire rated?
 Bobrick lists a Class A rating for stainless steel and ASI lists Class A for its line. Ask for test data for your line.
@@ -89,6 +90,8 @@ ASI offers #4 satin as standard with diamond and leather grain optional. Bradley
 - [ASI Global Partitions catalog](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf): Type 304, honeycomb, textured finish, finishes, Class A, 5-year warranty, wet-area suitability (material selection guide). Checked 2026-10-27.
 - [ASI Global replacement hardware](https://asi-globalpartitions.com/replacement-hardware/): 1-1/4" headrail for stainless. Checked 2026-10-27.
 - [ASI Global construction features](https://asi-globalpartitions.com/construction-features/): Type 304 shoe, welded corners. Checked 2026-10-27.
+- [Ammco (All American Metal) stainless steel warranty](https://allamericanmetal.com/frontend/web/uploads/material/1580234814_STAINLESS-STEEL-WARRANTY.pdf): length, coverage, exclusions. Checked 2026-10-27.
+- [Ammco care sheet](https://allamericanmetal.com/frontend/web/uploads/material/1582235330-Caring-for-your-Stainless-Steel-Toilet-Partitions.pdf): cleaning. Checked 2026-10-27.
 - [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): stainless finishes, Permaseal edge, 15-year warranty against rust-out, hardware warranties, Series 600 ceiling hung. Checked 2026-10-27.
 - [Metpar stainless steel](https://metpar.com/toilet-partitions/stainless-steel/): 1" doors and panels, 1-1/4" pilasters, 20-gauge stainless edge molding, paper honeycomb core. Checked 2026-10-27.
 - [Metpar stainless steel floor mounted standard master specification](https://metpar.com/wp-content/uploads/2021/05/Stainless-Steel-Floor-Mounted-Standard-Master-Spec.docx): 22-gauge faces (doors, panels), 20-gauge pilasters, finishes, 6-year warranty. Checked 2026-10-27.
