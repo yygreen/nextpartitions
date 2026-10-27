@@ -32,7 +32,7 @@ const SCHEMATIC = new Set(['mounting-styles-compare', 'partition-anatomy', 'hing
 // `frame`: a wider canvas, with the drawing centred in it (standalone drawings are 780 wide, the content column).
 function svg(name, w, h, title, desc, body, frame) {
   if (frame > w) { body = `<g transform="translate(${(frame - w) / 2} 0)">${body}</g>`; w = frame }
-  if (SCHEMATIC.has(name)) { body += `<text x="8" y="${h + 14}" font-size="11" fill="${C.muted}">Schematic: shows the principle, not one manufacturer's product.</text>`; h += 22 }
+  // No caption line on drawings: figures are presented as our own (design-language.md).
   const out = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-labelledby="t-${name} d-${name}" font-family="${FONT}">
 <title id="t-${name}">${esc(title)}</title>
 <desc id="d-${name}">${esc(desc)}</desc>
