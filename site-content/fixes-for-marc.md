@@ -69,7 +69,7 @@ Each rebuilt page shows its main drawing beside the title, drawn straight on the
 
 ## 9. Expert advice boxes
 
-24 pages have an "expert advice" box: a quote card in the brand colors (brown `#2d1e14`, orange `#fe7802` bar, eyebrow and quote mark, off-white text) with the quote, the name and role under it, and the question we asked in small type. In the page files it's a block:
+24 pages have an expert advice box, laid out like the title block of a technical drawing to match the drawings: a brown (`#2d1e14`) panel with the quote large across the top, and a ruled strip below with three cells: "Advice by" (name and role), "We asked" (the question) and the logo cell (the orange N with "Next Partitions / Expert advice"). Labels are small orange caps, the rest off-white. On a phone the strip stacks. In the page files it's a block:
 
 ```
 :::expert
