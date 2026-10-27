@@ -53,5 +53,9 @@ Short answers are fine: a sentence, a voice note or a quick call. Your answers g
 28. Is freight priced in the quote, or confirmed separately after?
 29. Do you deliver to job sites with liftgate, inside delivery or scheduled appointment?
 
+**Brands**
+30. The Hadrian page says your distributorship is "pending reapproval". Is that still true? If so, we keep Hadrian off the brand comparison until it's settled.
+31. The site calls you an authorized distributor for five brands. Which brands is that true for, in writing? We only keep the claim where you can show it.
+
 **Photos**
-30. Job photos you have the rights to use, especially straight-on shots of a whole restroom, a hinge, a latch and a ceiling-hung install. Real installs beat any drawing.
+32. Job photos you have the rights to use, especially straight-on shots of a whole restroom, a hinge, a latch and a ceiling-hung install. Real installs beat any drawing.

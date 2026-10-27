@@ -20,13 +20,23 @@ These bathroom partition guides help facilities managers, contractors and archit
 Widths, depths, door sizes, partition heights and floor clearances for standard and accessible stalls, plus a checklist for measuring your restroom before you send a quote request.
 [Read the stall dimensions guide](/guides/bathroom-stall-dimensions)
 
-### Standard Bathroom Stall Sizes
-The common stall sizes used in US commercial restrooms, from compact stalls to the accessible stalls your restroom has to include, and when each one is used.
+### Standard Partition Sizes
+The component sizes you'll see on a quote and on shop drawings: panels, doors, pilasters, heights and thicknesses by material.
 [Read the standard sizes guide](/guides/standard-sizes)
 
 ### Commercial Restroom Layout
 How stalls are arranged in a room, the spacing plumbing codes set between fixtures, and how to keep turning space and approach clearances open around the accessible stall.
 [Read the restroom layout guide](/guides/restroom-layout)
+
+## Installation
+
+### How to Install Toilet Partitions
+An overview of how overhead-braced, floor-mounted, ceiling-hung and floor-to-ceiling partitions go in, what to check before the installer arrives, and how to fix common problems. Next Partitions supplies partitions and doesn't install them: follow the manufacturer's instructions and use a qualified installer.
+[Read the installation overview](/guides/how-to-install-toilet-partitions)
+
+### Installation Instructions by Brand
+Links to the manufacturers' own installation guides and data sheets, by brand and product line.
+[Find your brand's instructions](/guides/installation-instructions)
 
 ## Accessibility
 
