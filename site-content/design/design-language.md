@@ -47,6 +47,10 @@ Inter only (the site's `--font-body` and `--font-heading`). In drawings: labels 
 
 Numbered orange discs (24 px, white bold number). The key is written as page text right under the drawing, as a numbered list, not inside the image. That keeps it readable on a phone, translatable, and readable by Google and AI tools. Measurement keys use letters (A, B, C…) and a plain list.
 
+## Layout: always landscape
+
+Every illustration is laid out horizontally, at least 1.6 times as wide as it is tall. Standalone drawings are 780 px wide, the width of the content column, so they show at their real size and the text stays 13–14 px. If a subject doesn't fit a landscape frame (a plan plus a section, a tall side view with its notes), split it into separate drawings. On the page, put a short paragraph between them that leads from one to the next and says what the reader is looking at.
+
 ## Views
 
 - **Front elevation** for anything about how stalls stand: two stalls between walls, floor slab below.
