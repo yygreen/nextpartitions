@@ -80,8 +80,20 @@ function faqItems(section) {
   return section.md.split(/^### /m).filter((x) => x.trim()).map((q) => { const nl = q.indexOf('\n'); return { q: q.slice(0, nl).trim(), a: q.slice(nl + 1).trim() } })
 }
 
+// Hero drawing: the page's own first drawing (a mounting sheet shows its single front view), or a fitting one for
+// pages that have none. Shown on a white card beside the title; it stacks under the button on a phone.
+const HERO_FALLBACK = { '/': 'mounting-styles-compare', '/about': 'mounting-styles-compare', '/faq': 'partition-anatomy', '/brands': 'partition-anatomy', '/brands/hadrian': 'partition-anatomy', '/blog': 'stall-gaps', '/guides': 'sheet-plan', '/guides/installation-instructions': 'mounting-styles-compare', '/industries': 'sheet-plan' }
+function heroArt(raw, url) {
+  const m = raw.match(/\(\/images\/diagrams\/([a-z0-9-]+)\.svg\)/)
+  const name = m ? m[1] : HERO_FALLBACK[url]
+  if (!name) return ''
+  const svg = inlineSvg(`${name}.svg`)
+  return `<figure class="np-hero-art" aria-hidden="true">${svg.replace(/<title[\s\S]*?<\/title>|<desc[\s\S]*?<\/desc>/g, '')}</figure>`
+}
+
 function build(file, built) {
   const { fm, intro, sections } = parse(file)
+  const art = heroArt(readFileSync(`${PAGES}/${file}`, 'utf8').split('<!-- For Marc -->')[0], fm.url)
   const url = fm.url
   const seg = url.split('/').filter(Boolean)
   const crumbs = [['Home', '/']]
@@ -109,14 +121,14 @@ function build(file, built) {
   const isPost = seg[0] === 'blog' && seg.length > 1
 
   const main = `<main class="flex-1">
-<div class="relative bg-primary text-primary-foreground overflow-hidden"><div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<div class="relative bg-primary text-primary-foreground overflow-hidden"><div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">${art ? '<div class="np-hero"><div>' : ''}
 <nav aria-label="Breadcrumb" class="py-3"><ol class="flex items-center gap-1.5 text-sm text-primary-foreground/60 flex-wrap">${crumbs.map(([n, h], i) => i === crumbs.length - 1
     ? `<li class="flex items-center gap-1.5">${ICON_CHEVRON}<span class="text-primary-foreground font-medium" aria-current="page">${esc(n)}</span></li>`
     : `<li class="flex items-center gap-1.5">${i ? ICON_CHEVRON : ''}<a class="hover:text-primary-foreground/90 transition-colors" href="${h}">${esc(n)}</a></li>`).join('')}</ol></nav>
 <h1 class="text-3xl md:text-4xl font-bold mt-2 mb-3">${esc(fm.h1)}</h1>
 <p class="text-lg opacity-90 max-w-3xl mb-6">${strip(md(lead))}</p>
 ${button(ctaLabel, ctaHref)}
-</div></div>
+${art ? `</div>${art}</div>` : ''}</div></div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-8"><div class="md:col-span-2 min-w-0">
 ${introParas.length ? `<section class="mb-8">${md(introParas.join('\n\n'))}</section>` : ''}
 ${content.map((s) => `<section class="mb-8"><h2 class="text-2xl font-bold mb-4">${esc(s.title)}</h2>${md(s.md)}</section>`).join('\n')}
@@ -147,7 +159,7 @@ ${shell.match(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(fm.title)}</title>`)
     .replace(/<meta name="description"[^>]*>/, '')
     .replace(/<link rel="canonical"[^>]*>/, '')
-    .replace('</head>', `<meta name="description" content="${esc(fm.meta)}"/>\n<link rel="canonical" href="${SITE}${url}"/>\n<meta name="robots" content="noindex"/>\n${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join('\n')}\n<style>.np-sources a{overflow-wrap:anywhere}details>summary{list-style:none}details>summary::after{content:"+";float:right;font-weight:400}details[open]>summary::after{content:"–"}</style>\n</head>`)
+    .replace('</head>', `<meta name="description" content="${esc(fm.meta)}"/>\n<link rel="canonical" href="${SITE}${url}"/>\n<meta name="robots" content="noindex"/>\n${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join('\n')}\n<style>.np-hero{display:grid;gap:32px;align-items:center}@media(min-width:900px){.np-hero{grid-template-columns:1.1fr 1fr}}.np-hero-art{background:#fff;border-radius:12px;padding:16px;margin:0;box-shadow:0 10px 30px rgba(0,0,0,.35)}.np-hero-art svg{width:100%;height:auto;display:block}.np-sources a{overflow-wrap:anywhere}details>summary{list-style:none}details>summary::after{content:"+";float:right;font-weight:400}details[open]>summary::after{content:"–"}</style>\n</head>`)
     .replace(/<body([^>]*)>/, `<body$1><div style="background:#111;color:#fff;font:12px/1.4 Inter,system-ui,sans-serif;padding:6px 16px;text-align:center">Preview of new page content for nextpartitions.com${url} · not the live site · <a href="index.html" style="color:#fff;text-decoration:underline">all preview pages</a></div>`)
     // Links: rebuilt pages stay in the preview; everything else goes to the live site.
     .replace(/(href|src)="\/(?!\/)([^"]*)"/g, (_, attr, path) => {
