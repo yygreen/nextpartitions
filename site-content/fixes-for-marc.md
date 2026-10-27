@@ -33,7 +33,7 @@ The new text replaces the body of each page and keeps the existing layout, CTAs 
 
 ## 6. Drawings
 
-Ten technical drawings (SVG) in `design/diagrams/`, placed in the pages as `/images/diagrams/<name>.svg`: copy the folder to `public/images/diagrams/`. Each has its alt text in the page and its numbered key as a list right under it. They follow `design/design-language.md` (specimen: `design/design-language.html`); `design/diagrams.mjs` regenerates them.
+Technical drawings (SVG) in `design/diagrams/`, placed in the pages as `/images/diagrams/<name>.svg`: copy the folder to `public/images/diagrams/`. Each has its alt text in the page and its numbered key as a list right under it. They follow `design/design-language.md` (specimen: `design/design-language.html`); `design/diagrams.mjs` regenerates them.
 
 ## 7. One quote promise everywhere (checked 2026-10-27)
 

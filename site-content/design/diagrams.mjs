@@ -26,7 +26,9 @@ const S = 3.2 // px per inch in elevations
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;')
 // Drawings that explain a principle rather than follow a manufacturer's drawing say so on the drawing.
-const SCHEMATIC = new Set(['mounting-styles-compare', 'partition-anatomy', 'hinge-types', 'measure-replacement-door', 'stall-gaps', 'latch-keeper'])
+const SCHEMATIC = new Set(['mounting-styles-compare', 'partition-anatomy', 'hinge-types', 'measure-replacement-door', 'stall-gaps', 'latch-keeper',
+  'material-section-phenolic', 'material-section-solid-plastic', 'material-section-plastic-laminate', 'material-section-powder-coated-steel',
+  'material-section-stainless-steel', 'material-sections-compare', 'urinal-spacing', 'measure-new-restroom'])
 function svg(name, w, h, title, desc, body) {
   if (SCHEMATIC.has(name)) { body += `<text x="8" y="${h + 14}" font-size="11" fill="${C.muted}">Schematic: shows the principle, not one manufacturer's product.</text>`; h += 22 }
   const out = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-labelledby="t-${name} d-${name}" font-family="${FONT}">
@@ -466,5 +468,183 @@ for (const [name, [style, dets]] of Object.entries(STYLES)) {
   ]
 }
 writeFileSync(new URL('sheets.json', OUT), JSON.stringify(sheets, null, 2) + '\n')
+
+// ---------- material cross-sections (edge view, cut through a door) ----------
+// Construction and door thicknesses as sourced in pages/blog_what-are-bathroom-partitions-made-of.md and
+// pages/hardware_doors.md (checked 2026-10-26); see drawing-check.md. Overall thickness is dimensioned only where a
+// manufacturer gives it. Face, skin and edge-band thicknesses are not published in those sources, so they are drawn
+// thin and not dimensioned. Stainless is drawn at 1" like powder coated steel but not dimensioned (no manufacturer
+// source opened).
+const MATERIALS = {
+  phenolic: { name: 'Phenolic (compact laminate)', t: 0.75, dim: '3/4"', src: 'Bobrick DuraLine, Bradley PH400' },
+  'solid-plastic': { name: 'Solid plastic (HDPE)', t: 1, dim: '1"', src: 'Scranton Products Hiny Hiders' },
+  'plastic-laminate': { name: 'Plastic laminate', t: 1, dim: '1"', src: 'Bobrick DesignerSeries HPL' },
+  'powder-coated-steel': { name: 'Powder coated steel', t: 1, dim: '1"', src: 'Metpar powder coated' },
+  'stainless-steel': { name: 'Stainless steel', t: 1, dim: null, src: null },
+}
+// One door cut through near its edge: a break line on the left, the edge on the right. k = px per inch.
+// Returns the body plus the points callouts aim at.
+function matSection(kind, x0, y0, len, k) {
+  const { t } = MATERIALS[kind], T = t * k, x1 = x0 + len, y1 = y0 + T
+  const brk = (y) => `M${x0} ${y0} L${x0 + 6} ${y0 + T * 0.3} L${x0 - 6} ${y0 + T * 0.6} L${x0} ${y1}`
+  const clip = `<clipPath id="m-${kind}-${x0}-${y0}"><path d="${brk()} L${x1} ${y1} L${x1} ${y0} Z"/></clipPath>`
+  let g = ''
+  const face = Math.max(4, Math.round(k * 0.04)) // drawn thickness of a face or skin (not to a source)
+  const pts = { core: [x0 + len * 0.3, y0 + T / 2], face: [x0 + len * 0.55, y0 + 1], edge: [x1, y0 + T / 2] }
+  if (kind === 'solid-plastic') {
+    g += rect(x0 - 10, y0, len + 10, T, { fill: C.orange, stroke: 'none' })
+  }
+  if (kind === 'phenolic') {
+    g += rect(x0 - 10, y0, len + 10, T, { fill: C.orange, stroke: 'none' })
+    for (let y = y0 + face + 4; y < y1 - face - 1; y += 5) g += line(x0 - 10, y, x1, y, { stroke: '#fff', sw: 1 }) // kraft paper layers
+    g += rect(x0 - 10, y0, len + 10, face, { fill: C.part, sw: 1 }) + rect(x0 - 10, y1 - face, len + 10, face, { fill: C.part, sw: 1 }) // melamine faces
+  }
+  if (kind === 'plastic-laminate') {
+    const band = face + 2
+    g += rect(x0 - 10, y0, len + 10 - band, T, { fill: C.orange, stroke: 'none' })
+    // particleboard: a fixed scatter of chips
+    let seed = 7
+    const rnd = () => ((seed = (seed * 9301 + 49297) % 233280) / 233280)
+    for (let i = 0; i < len * T / 70; i++) {
+      const cx = x0 - 6 + rnd() * (len - band), cy = y0 + face + 2 + rnd() * (T - 2 * face - 4)
+      g += `<rect x="${cx.toFixed(1)}" y="${cy.toFixed(1)}" width="${(2 + rnd() * 4).toFixed(1)}" height="1.6" fill="#fff" transform="rotate(${Math.round(rnd() * 180)} ${cx.toFixed(1)} ${cy.toFixed(1)})"/>`
+    }
+    g += rect(x0 - 10, y0, len + 10 - band, face, { fill: C.part, sw: 1 }) + rect(x0 - 10, y1 - face, len + 10 - band, face, { fill: C.part, sw: 1 }) // HPL faces
+    g += rect(x1 - band, y0, band, T, { fill: C.part, sw: 1 }) // edge banding
+    pts.edge = [x1 - band / 2, y0 + T / 2]
+  }
+  if (kind === 'powder-coated-steel' || kind === 'stainless-steel') {
+    const skin = 3, edge = 0
+    g += rect(x0 - 10, y0, len + 10, T, { fill: C.orangeTint, stroke: 'none' })
+    // honeycomb cut through: the cell walls run face to face, so the section shows them as lines across the core,
+    // in pairs where two cells are bonded
+    const cell = Math.max(10, k * 0.16)
+    let d = '', n = 0
+    for (let x = x0 - 10; x < x1 - edge - 3; x += n++ % 2 ? cell : 3) d += `M${x.toFixed(1)} ${y0 + skin} V${y1 - skin}`
+    g += `<path d="${d}" fill="none" stroke="${C.orange}" stroke-width="2"/>`
+    g += rect(x0 - 10, y0, len + 10, skin, { fill: C.ink, stroke: 'none' }) + rect(x0 - 10, y1 - skin, len + 10, skin, { fill: C.ink, stroke: 'none' }) // steel faces
+    // edge: not described in the held sources, so a plain outline
+  }
+  const body = `${clip}<g clip-path="url(#m-${kind}-${x0}-${y0})">${g}</g><path d="${brk()} M${x0} ${y0} L${x1} ${y0} L${x1} ${y1} L${x0} ${y1}" fill="none" stroke="${C.ink}" stroke-width="1.5"/>`
+  return { body, pts, T, x1, y1 }
+}
+
+{
+  const desc = {
+    phenolic: 'A phenolic (compact laminate) door cut through near its edge: layers of resin-impregnated kraft paper fused into one solid core, with decorative melamine faces. The core is black, or matches the face color on color-through lines. Doors are 3/4 inch thick (Bobrick, Bradley).',
+    'solid-plastic': 'A solid plastic (HDPE) door cut through near its edge: one homogeneous sheet of high-density polyethylene, with no separate core, faces or edge band, and the color running all the way through. 1 inch thick (Scranton Products).',
+    'plastic-laminate': 'A plastic laminate door cut through near its edge: a resin-impregnated particleboard core with high-pressure laminate bonded to both faces and an edge band covering the edge. 1 inch thick (Bobrick).',
+    'powder-coated-steel': 'A powder coated steel door cut through near its edge: two galvannealed steel faces, powder coated, over a honeycomb core. 1 inch thick (Metpar). Steel gauge and edge construction are not shown.',
+    'stainless-steel': 'A stainless steel door cut through near its edge: two type 304 stainless steel faces over a honeycomb core. Thickness, gauge and edge construction are not shown; confirm with the manufacturer.',
+  }
+  const k = 120, x0 = 24, y0 = 80, len = 270
+  for (const kind of Object.keys(MATERIALS)) {
+    const m = MATERIALS[kind], s = matSection(kind, x0, y0, len, k)
+    let b = s.body
+    b += callout(2, s.pts.face[0], 36, s.pts.face) + callout(3, s.x1 + 30, s.pts.edge[1], s.pts.edge)
+    b += callout(1, s.pts.core[0], s.y1 + 44, s.pts.core) + `<circle cx="${s.pts.core[0]}" cy="${s.pts.core[1]}" r="5" fill="${C.orange}" stroke="#fff" stroke-width="2"/>`
+    if (m.dim) b += vdim(s.x1 + 58, y0, s.y1, m.dim)
+    b += note(x0, s.y1 + 86, 'Edge view: a door cut through near its edge. Faces and')
+    b += note(x0, s.y1 + 101, m.src ? `edge not to scale. Thickness: ${m.src}.` : 'edge not to scale. Thickness: confirm with the manufacturer.')
+    made.push(svg(`material-section-${kind}`, 390, Math.round(s.y1 + 112), `${m.name} partition door, edge view`, desc[kind], b))
+  }
+}
+
+// All five at the same scale, stacked so the labels stay readable on a phone.
+{
+  const k = 64, x0 = 24, len = 270
+  let b = '', y = 30
+  for (const kind of Object.keys(MATERIALS)) {
+    const m = MATERIALS[kind]
+    b += text(x0 - 6, y, m.name, { size: 15, weight: 700 })
+    const s = matSection(kind, x0, y + 12, len, k)
+    b += s.body + (m.dim ? vdim(s.x1 + 16, y + 12, s.y1, m.dim) : '')
+    y = s.y1 + 40
+  }
+  b += note(x0 - 6, y - 10, 'Same scale. Stainless drawn at 1" (not confirmed).')
+  made.push(svg('material-sections-compare', 390, y, 'Partition materials compared, edge view',
+    'Five partition doors cut through near the edge at the same scale: phenolic 3/4 inch, layered kraft paper core with melamine faces; solid plastic (HDPE) 1 inch, one solid sheet; plastic laminate 1 inch, particleboard core with laminate faces and an edge band; powder coated steel 1 inch and stainless steel, steel faces over a honeycomb core.', b))
+}
+
+// ---------- urinal spacing (plan, seen from above) ----------
+// 2018 IPC 405.3.1 (ICC Significant Changes excerpt, iccsafe.org/wp-content/uploads/2018SC-PMG_P405.3.1.pdf, checked
+// 2026-10-26, as cited in pages/guides.md): 15" min from a fixture's centerline to a side wall or partition; 30" min
+// centerline to centerline where no partition separates adjacent fixtures; 21" min clear in front of the fixture.
+// Urinal and screen sizes are schematic and not dimensioned.
+{
+  const s = 3.2, wx = 20, wy = 36
+  const X = (i) => wx + 22 + i * s, Y = (i) => wy + 16 + i * s
+  const run = 98, cls = [15, 45, 75]
+  // orange dimension for the subject (centerline spacing); labels in ink
+  const odim = (y, x1, x2, label) => line(x1, y, x2, y, { stroke: C.orange, sw: 2.5 }) + line(x1, y - 6, x1, y + 6, { stroke: C.orange, sw: 2 }) + line(x2, y - 6, x2, y + 6, { stroke: C.orange, sw: 2 }) + text((x1 + x2) / 2, y - 9, label, { size: 14, weight: 700, anchor: 'middle' })
+  let b = ''
+  b += rect(wx, wy, run * s + 22, 16, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(0), X(run), Y(0)) // back wall
+  const dimY = Y(14) + 21 * s + 46
+  b += rect(wx, wy, 22, dimY + 40 - wy, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(0), X(0), dimY + 40) // side wall
+  b += `<path d="M${X(run) - 4} ${wy - 4} l-5 12 l10 6 l-5 12" fill="none" stroke="${C.muted}" stroke-width="1.5"/>` // break: the wall continues
+  for (const c of cls) { // wall-hung urinal, seen from above
+    b += `<path d="M${X(c - 9)} ${Y(0)} v${8 * s} q0 ${6 * s} ${9 * s} ${6 * s} q${9 * s} 0 ${9 * s} ${-6 * s} v${-8 * s} z" fill="#fff" stroke="${C.ink}" stroke-width="1.5"/>`
+    b += `<path d="M${X(c - 5.5)} ${Y(2)} v${6 * s} q0 ${3.6 * s} ${5.5 * s} ${3.6 * s} q${5.5 * s} 0 ${5.5 * s} ${-3.6 * s} v${-6 * s} z" fill="none" stroke="${C.ink}" stroke-width="1"/>`
+  }
+  for (const c of [30, 60]) b += rect(X(c) - 2.5, Y(0), 5, 18 * s, { fill: C.part }) // urinal screens
+  // centerlines, orange, down to the dimension line
+  for (const c of cls) b += line(X(c), Y(0) - 2, X(c), dimY + (c === cls[0] ? 34 : 8), { stroke: C.orange, sw: 1.5, dash: '10 3 2 3' })
+  // 21" clear in front of the urinal: to a dashed line standing for any wall, fixture or door
+  const front = Y(14), clear = front + 21 * s
+  b += line(X(cls[1] + 4), clear, X(run) - 4, clear, { stroke: C.muted, sw: 1.5, dash: '5 5' })
+  b += vdim(X(cls[2] + 12), front, clear, '21" min')
+  b += note(X(run) - 4, clear + 16, 'wall, fixture or door', 'end')
+  const odim15 = line(X(0), dimY + 28, X(cls[0]), dimY + 28, { stroke: C.orange, sw: 2.5 }) + line(X(cls[0]), dimY + 22, X(cls[0]), dimY + 34, { stroke: C.orange, sw: 2 }) + text(X(cls[0]) + 8, dimY + 33, '15" min to the side wall', { size: 14, weight: 700 })
+  b += odim15 + odim(dimY, X(cls[0]), X(cls[1]), '30" min') + odim(dimY, X(cls[1]), X(cls[2]), '30" min')
+  b += text(X(30), Y(18) + 18, 'screen', { size: 13, fill: C.muted, anchor: 'middle' })
+  const ny = dimY + 62
+  b += note(wx, ny, 'With a screen between urinals, each centerline needs 15" min')
+  b += note(wx, ny + 15, 'to the screen as well (2018 IPC 405.3.1). Seen from above.')
+  made.push(svg('urinal-spacing', 390, ny + 24, 'Urinal spacing with urinal screens, plan view',
+    'Seen from above: three wall-hung urinals along a wall, with a side wall on the left and urinal screens between them. The first urinal centerline is at least 15 inches from the side wall, urinal centerlines are at least 30 inches apart, and there is at least 21 inches of clear space in front of each urinal (International Plumbing Code 405.3.1).', b))
+}
+
+// ---------- measuring a new restroom (plan, with a section inset) ----------
+{
+  let b = ''
+  const ox = 26, oy = 46, iw = 270, ih = 200, t = 14 // interior from (ox+t, oy+t)
+  const L = ox + t, T = oy + t, R = L + iw, B = T + ih
+  // walls (hatched), with a door opening in the bottom wall
+  const dL = R - 96, dR = R - 26
+  b += rect(ox, oy, iw + 2 * t, t, { fill: 'HATCH', stroke: 'none' }) + rect(ox, oy, t, ih + 2 * t, { fill: 'HATCH', stroke: 'none' })
+  b += rect(R, oy, t, ih + 2 * t, { fill: 'HATCH', stroke: 'none' }) + rect(ox, B, dL - ox, t, { fill: 'HATCH', stroke: 'none' }) + rect(dR, B, R + t - dR, t, { fill: 'HATCH', stroke: 'none' })
+  b += `<path d="M${L} ${T} H${R} V${B} H${dR} M${dL} ${B} H${L} Z" fill="none" stroke="${C.ink}" stroke-width="1.5"/>`
+  // door leaf swinging in, hinged at dR
+  b += line(dR, B, dR, B - (dR - dL), { stroke: C.ink, sw: 2.5 }) + `<path d="M${dL} ${B} A${dR - dL} ${dR - dL} 0 0 1 ${dR} ${B - (dR - dL)}" fill="none" stroke="${C.muted}" stroke-width="1.5" stroke-dasharray="5 5"/>`
+  // the stall wall run: the subject
+  b += line(L, T + 3, R, T + 3, { stroke: C.orange, sw: 6 })
+  // toilet flanges (existing or planned rough-in)
+  const fl = [L + 34, L + 98, L + 162]
+  for (const f of fl) b += `<circle cx="${f}" cy="${T + 40}" r="7" fill="#fff" stroke="${C.ink}" stroke-width="1.5"/>` + line(f - 11, T + 40, f + 11, T + 40, { stroke: C.muted, sw: 1 }) + line(f, T + 29, f, T + 51, { stroke: C.muted, sw: 1 })
+  // E: running dimensions from the side wall to each flange centerline
+  fl.forEach((f, i) => {
+    const y = T + 72 + i * 20
+    b += line(L, y, f, y, { stroke: C.muted, sw: 1 }) + line(f, y - 5, f, y + 5, { stroke: C.muted, sw: 1 }) + line(f, T + 48, f, y, { stroke: C.muted, sw: 1, dash: '2 3' })
+    b += text(f + 6, y + 5, 'E', { size: 14, fill: C.muted, weight: 700 })
+  })
+  b += line(L, T + 62, L, T + 122, { stroke: C.muted, sw: 1 })
+  // A, B, D
+  b += hdim(oy - 14, L, R, 'A  room width, stall wall')
+  b += vdim(R + t + 14, T, B, 'B', 'right') + text(R + t + 22, (T + B) / 2 + 22, 'depth', { size: 13, fill: C.muted })
+  b += hdim(B + t + 24, dR, R, 'D') + text(dL - 4, B - 30, 'D  door', { size: 14, fill: C.muted, weight: 600, anchor: 'end' })
+  b += text(L + 6, B - 12, 'seen from above', { size: 12, fill: C.muted })
+  // section inset: C ceiling height, F floor and structure
+  const sy = B + t + 60, sx = ox, sw = 200, sh = 150
+  b += text(sx, sy - 10, 'Section', { size: 14, weight: 700 })
+  b += rect(sx, sy, sw, 22, { fill: 'HATCH', stroke: 'none' }) + line(sx, sy + 22, sx + sw, sy + 22) // structure above
+  b += line(sx, sy + 44, sx + sw, sy + 44) // finished ceiling
+  b += rect(sx, sy + sh, sw, 24, { fill: 'HATCH', stroke: 'none' }) + line(sx, sy + sh, sx + sw, sy + sh) // floor slab
+  b += vdim(sx + 60, sy + 44, sy + sh, 'C', 'right') + text(sx + 68, sy + (44 + sh) / 2 + 22, 'ceiling height', { size: 13, fill: C.muted })
+  b += text(sx + sw + 14, sy + 16, 'F  structure', { size: 14, fill: C.muted, weight: 600 }) + text(sx + sw + 14, sy + 32, 'above ceiling', { size: 13, fill: C.muted })
+  b += text(sx + sw + 14, sy + sh + 16, 'F  floor', { size: 14, fill: C.muted, weight: 600 }) + text(sx + sw + 14, sy + sh + 32, 'construction', { size: 13, fill: C.muted })
+  b += line(sx + sw - 30, sy + 11, sx + sw + 10, sy + 11, { stroke: C.muted, sw: 1 }) + line(sx + sw - 30, sy + sh + 12, sx + sw + 10, sy + sh + 12, { stroke: C.muted, sw: 1 })
+  made.push(svg('measure-new-restroom', 390, sy + sh + 40, 'How to measure an empty restroom for new partitions',
+    'Seen from above, an empty restroom: A, the width of the wall the stalls will run along; B, the room depth; D, where the entry door is and which way it swings; E, each toilet flange centerline measured from the side wall. A section shows C, the ceiling height, and F, what the floor and the structure above the ceiling are made of.', b))
+}
 
 console.log(`${made.length} diagrams: ${made.join(', ')}; sheets: ${Object.keys(sheets).join(', ')}`)
