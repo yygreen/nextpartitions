@@ -17,13 +17,13 @@ const CSS = readFileSync(`${OUT}/styles.css`, 'utf8')
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 const strip = (s) => s.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").trim()
-const fileFor = (url) => url.replace(/^\//, '').replace(/\//g, '_') + '.html'
+const fileFor = (url) => url === '/' ? 'home.html' : url.replace(/^\//, '').replace(/\//g, '_') + '.html'
 const ICON_ARROW = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>'
 const ICON_CHEVRON = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right h-3.5 w-3.5 flex-shrink-0" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>'
 // The site's button (copied from the live hero and side card).
 const button = (label, href, extra = '') => `<a href="${href}"><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow h-9 px-4 py-2 ${extra} bg-brand-red text-brand-red-foreground hover:bg-brand-red/90 gap-2">${esc(label)} ${ICON_ARROW}</button></a>`
 
-const SECTION = { hardware: ['Hardware & Parts', '/hardware'], 'mounting-styles': ['Mounting Styles', '/mounting-styles'], guides: ['Guides', '/guides'], blog: ['Blog', '/blog'] }
+const SECTION = { hardware: ['Hardware & Parts', '/hardware'], 'mounting-styles': ['Mounting Styles', '/mounting-styles'], guides: ['Guides', '/guides'], blog: ['Blog', '/blog'], partitions: ['Partitions', '/partitions'], industries: ['Industries', '/industries'], brands: ['Brands', '/brands'] }
 const QUOTE_PROMISE = 'Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.'
 
 function parse(file) {
@@ -85,7 +85,7 @@ function build(file, built) {
   const seg = url.split('/').filter(Boolean)
   const crumbs = [['Home', '/']]
   if (seg.length > 1 && SECTION[seg[0]]) crumbs.push(SECTION[seg[0]])
-  crumbs.push([fm.h1, url])
+  if (url !== '/') crumbs.push([fm.h1, url])
 
   // Hero: the first paragraph, and the first CTA line as the button.
   const introParas = intro.split(/\n\s*\n/)
@@ -164,7 +164,7 @@ const built = new Set(files.map((f) => parse(f).fm.url))
 const rows = files.map((f) => build(f, built))
 const before = (url) => {
   try {
-    const t = readFileSync(`${CURRENT}/${url.replace(/^\//, '').replace(/\//g, '_')}.md`, 'utf8').split('## Explore More')[0]
+    const t = readFileSync(`${CURRENT}/${url === '/' ? 'home' : url.replace(/^\//, '').replace(/\//g, '_')}.md`, 'utf8').split('## Explore More')[0]
     return t.split('\n').slice(3).join(' ').split(/\s+/).filter(Boolean).length
   } catch { return null }
 }

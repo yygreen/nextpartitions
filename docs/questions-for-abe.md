@@ -1,0 +1,57 @@
+# Questions for Abe (October 27, 2026)
+
+Short answers are fine: a sentence, a voice note or a quick call. Your answers go into the pages and articles in your own words, credited to you, so the content carries first-hand know-how that other sites can't copy. Skip anything you'd rather not answer.
+
+## Part 1: what you see on real jobs (for the articles and guides)
+
+**Materials** (material pages, "What Are Bathroom Partitions Made Of?")
+1. Which material do you sell most, and to which kind of building?
+2. When a buyer asks for the cheapest option, what do you tell them? When do you talk them out of it?
+3. Have you seen a solid plastic (HDPE) job held up because the color or product didn't meet the fire rating the inspector asked for? What happened?
+4. Which material gets the most complaints or replacement orders a few years in, and why?
+
+**Mounting styles** (the four mounting pages)
+5. What's the most common reason a job switches mounting style after the first quote? (Ceiling too weak, slab too thin, budget, look?)
+6. Ceiling-hung: how often is the structural steel above the ceiling missing, and who usually finds out?
+7. Where do you recommend floor-to-ceiling over overhead-braced?
+
+**Hardware and parts** (hinges, latches, replacement doors, parts)
+8. What do buyers most often get wrong when they order a replacement door or hinge?
+9. What photo or measurement do you need to match a part on the first try?
+10. Which hardware upgrade is worth it, in your view (continuous hinges, through-bolting, stainless)?
+
+**Sizes and layout** (stall dimensions guide, restroom layout guide)
+11. What layout mistake do you see most on drawings from architects or contractors?
+12. Do buyers ask for wider or deeper stalls than standard? Which sizes?
+13. How often does an accessible stall come out wrong on the drawings, and what's usually wrong?
+
+**Gaps and privacy** ("Why Do Bathroom Stalls Have Gaps?")
+14. How many of your buyers now ask for no-gap or high-privacy partitions? Has it grown?
+15. What does the extra privacy actually cost the buyer, roughly, versus standard? (A range is enough.)
+
+**Installation** (how-to-install guide; we don't offer installation, this is for buyers and their contractors)
+16. What do installers most often get wrong on your orders?
+17. What should a buyer check or prepare before the installer arrives (blocking, slab, floor finish, delivery)?
+18. How long does a typical install take for, say, a six-stall restroom? (Only a range, and only if you're comfortable stating it.)
+
+## Part 2: facts we need for the pages
+
+**Cost guide (the most-searched article on the plan)**
+19. Per-stall price ranges by material, for a standard stall: powder-coated steel, plastic laminate, solid plastic, phenolic, stainless. The same figures you're giving Marc for the product pages are enough.
+
+**About page and business listings**
+20. Business address for listings (Google, Apple, Bing, Yelp, BBB). If customers don't visit, we list you as a service-area business and the address stays hidden. Which is it?
+21. Year the business started, and where the team is based.
+22. Who should appear on the About page (names, roles, a line each)? Photos optional.
+23. The site says "6 regional warehouses" and "multiple distribution centers". Are these yours or your suppliers'? Where are they?
+24. Phone hours: the site says Mon–Fri, 8am–6pm EST. Still right?
+
+**FAQ answers we can't confirm without you**
+25. Typical lead times by material, standard and custom colors (the site gives 5–10 business days and 2–4 weeks).
+26. Returns: what's your policy for wrong sizes or damaged freight?
+27. Payment terms: deposit, net terms for contractors, cards?
+28. Is freight priced in the quote, or confirmed separately after?
+29. Do you deliver to job sites with liftgate, inside delivery or scheduled appointment?
+
+**Photos**
+30. Job photos you have the rights to use, especially straight-on shots of a whole restroom, a hinge, a latch and a ceiling-hung install. Real installs beat any drawing.

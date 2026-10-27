@@ -34,3 +34,31 @@ The new text replaces the body of each page and keeps the existing layout, CTAs 
 ## 6. Drawings
 
 Ten technical drawings (SVG) in `design/diagrams/`, placed in the pages as `/images/diagrams/<name>.svg`: copy the folder to `public/images/diagrams/`. Each has its alt text in the page and its numbered key as a list right under it. They follow `design/design-language.md` (specimen: `design/design-language.html`); `design/diagrams.mjs` regenerates them.
+
+## 7. One quote promise everywhere (checked 2026-10-27)
+
+The site gives buyers five different answers to "how fast do I get a quote?". The promise Abe set is:
+
+> Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+
+Replace every quote-time line below with it, or with the short form "Standard quotes in 2 business hours, custom in 24–48 hours" where space is tight (buttons, stat tiles). Keep "one business day" only for replies to non-quote messages on `/contact`.
+
+| Page | Current text | Replace with |
+|---|---|---|
+| `/` meta description | "Instant pricing on standard setups. Custom quotes in 24–48 hours." | "Standard configurations quoted within 2 business hours; custom projects within 24–48 hours." |
+| `/` hero | "Instant pricing on standard setups. Instant quote available." | "Standard configurations quoted within 2 business hours." |
+| `/` quote steps | "Answer a few questions and get instant pricing. Custom quotes delivered in 24–48 hours." | The full promise |
+| `/` "Get Instant Pricing" block | Heading "Get Instant Pricing"; "Standard configurations get instant pricing. Complex projects receive a custom quote with shop drawings within 24–48 hours." | Heading "Get a Quote"; "Standard configurations are quoted within 2 business hours; custom projects, with shop drawings, within 24–48 hours." |
+| `/` closing CTA | "Configure your partitions now and get instant pricing. Custom quotes with shop drawings delivered within 24–48 hours." | "Configure your partitions now and request a quote. Standard configurations are quoted within 2 business hours; custom projects, with shop drawings, within 24–48 hours." |
+| `/get-a-quote` meta | "…to get instant pricing or a custom quote in 24–48 hours." | "…to request a quote. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours." |
+| `/configurator` meta | "…for an instant price or a custom quote." | "…and request a quote. Standard configurations are quoted within 2 business hours." |
+| `/contact` email card | "We respond within 24 hours" | "Messages answered within one business day. Quotes: standard within 2 business hours, custom within 24–48 hours." |
+| `/industries/restaurants` | "…we'll return a stall-by-stall quote, usually the same business day." | "…we'll return a stall-by-stall quote. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours." |
+| `/service-area` stat tile | "1–2 Day quote turnaround" | "2 hrs: standard quote turnaround" |
+| `/service-area` freight line | "…we'll confirm exact lead time and freight cost within one business day." | Keep, but confirm with Abe that freight is priced inside the quote. If it is, use the quote promise instead. |
+
+**If the configurator shows a live price** for standard setups, label it "estimate" on screen, and keep the word "quote" for what the team sends. The configurator is a quote request, so no "order" or "checkout" wording.
+
+**Also check:** the quote confirmation email and the thank-you screen after the form, which weren't in the saved pages. They need the same promise.
+
+The rewritten pages in `pages/` already use the promise.
