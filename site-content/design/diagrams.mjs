@@ -1324,6 +1324,279 @@ function seqFrame(step, ox, py, s, ph) {
     'Three small frames, each a plan seen from above over a front view of two stalls: 5, the headrail fixed across the pilaster tops and to both walls; 6, the doors hung; 7, hinges and latches set and the gaps checked. Each step is shown in orange.')
 }
 
+// ---------- installation and accessibility drawings, batch 2 (2026-10-27) ----------
+// Facts (see drawing-check.md): Bradley Series 400 phenolic installation guide HDWC-INSTR-040 Rev. A (2021): doors and
+// panels rest on a 12" spacer while they go in; 1/8" spacers between door and pilaster at top and bottom give an even
+// gap on the hinge and latch sides; standard gaps 1" panel to wall and 1/2" panel to pilaster; pilasters at walls
+// 1/2" to 1-1/4" per the drawing; wall brackets fixed with plastic anchors in Ø5/16" holes min. 2" deep and #14 x 2"
+// screws; "make sure that the wall and floor backing are adequate" (same notes in its Series 600 steel and Bradmar
+// guides). Pilasters plumb before the hinges; keeper set with the door closed so the latch moves freely over it.
+// Hadrian metal manual: the hinge must be plumb, door 1/8" from the pilaster on a 12" block; Hadrian solid plastic:
+// keeper at the door's mid-point, latch slide on the keeper slot. 2010 ADA Standards (access-board.gov, checked
+// 2026-10-27): 308.2.1, 308.3.1, 404.2.3, 404.2.7, 604.2, 604.4, 604.5.1, 604.5.2, 604.7, 604.8.1.1, 604.8.1.2,
+// 604.8.1.4, 604.8.3, 609.4. Gaps are drawn wider than scale so they show; nothing is dimensioned without a source.
+const val = (x, y, t, anchor = 'middle') => text(x, y, t, { size: DIM, fill: C.muted, anchor, weight: 600 })
+// A horizontal break line (the part continues beyond it).
+const hbrk = (x1, x2, y) => { const m = (x1 + x2) / 2; return `<path d="M${x1 - 4} ${y} H${m - 7} l4 -6 l6 12 l4 -6 H${x2 + 4}" fill="none" stroke="${C.muted}" stroke-width="1.2"/>` }
+const vbrk = (x, y1, y2) => { const m = (y1 + y2) / 2; return `<path d="M${x} ${y1 - 4} V${m - 7} l-6 4 l12 6 l-6 4 V${y2 + 4}" fill="none" stroke="${C.muted}" stroke-width="1.2"/>` }
+
+// 6. Install gaps: a front view (wall, wall pilaster, door, middle pilaster) and a side view (pilaster, panel, back
+// wall). Orange: the gaps. The values sit over the numbered discs.
+function gapsDrawing(s, fx, sx, top, ph) {
+  const floor = top + (ph ? 34 : 50) + 82 * s, Y = (i) => floor - i * s
+  const g = ph ? 4 : 6, gw = ph ? 6 : 8, gp = ph ? 6 : 9, wt = ph ? 10 : 18, slab = ph ? 8 : 14, pt = ph ? 3 : 5
+  const dy = top + (ph ? 21 : 28), O = { fill: C.orange, stroke: 'none' }, INK = { fill: C.ink, stroke: 'none' }
+  let b = ''
+  // front view
+  const wf = fx + wt, p1 = wf + gw, p1r = p1 + 6 * s, d0 = p1r + g, d1 = d0 + 24 * s, p2 = d1 + g, p2r = p2 + 6 * s
+  b += rect(fx, Y(88), wt, 88 * s, { fill: 'HATCH', stroke: 'none' }) + line(wf, Y(88), wf, floor)
+  b += rect(fx - 6, floor, p2r + 18 - fx, slab, { fill: 'HATCH', stroke: 'none' }) + line(fx - 6, floor, p2r + 12, floor)
+  b += rect(wf, Y(82), gw, 82 * s, O)
+  b += rect(p1, Y(82), 6 * s, 82 * s) + rect(p2, Y(82), 6 * s, 82 * s)
+  b += rect(p1r, Y(70), g, 58 * s, O) + rect(d1, Y(70), g, 58 * s, O)
+  b += rect(d0, Y(70), 24 * s, 58 * s)
+  b += rect(d1, Y(70), g, 3 * s, INK) + rect(d1, Y(15), g, 3 * s, INK) // 1/8" spacers, top and bottom
+  const spW = 10 * s, spc = d0 + 12 * s
+  b += rect(spc - spW / 2, Y(12), spW, 12 * s, { sw: 1.2, dash: '4 3' }) // 12" spacer
+  const c3 = ph ? fx - 44 : fx - 22, c1 = p1r + g / 2 + (ph ? -6 : 14), c2 = d1 + g / 2 + (ph ? 6 : -14)
+  b += val(c3, top, '1/2"–1-1/4"') + callout(3, c3, dy, [wf + gw / 2, Y(78)])
+  b += val(c1, top, '1/8"') + callout(1, c1, dy, [p1r + g / 2, Y(62)])
+  b += val(c2, top, '1/8"') + callout(2, c2, dy, [d1 + g / 2, Y(56)])
+  b += callout(4, spc, floor + slab + (ph ? 16 : 20), [spc, Y(4)])
+  // side view: pilaster at the front (left), panel, back wall (right)
+  const q0 = sx + pt, q1 = q0 + g, px1 = q1 + 56 * s, wb = px1 + gp
+  b += rect(sx, Y(82), pt, 82 * s)
+  b += rect(q0, Y(70), g, 58 * s, O) + rect(q1, Y(70), 56 * s, 58 * s) + rect(px1, Y(70), gp, 58 * s, O)
+  b += rect(wb, Y(88), wt, 88 * s, { fill: 'HATCH', stroke: 'none' }) + line(wb, Y(88), wb, floor)
+  b += rect(sx - 10, floor, wb + wt + 4 - sx, slab, { fill: 'HATCH', stroke: 'none' }) + line(sx - 10, floor, wb, floor)
+  const spc2 = q1 + 28 * s
+  b += rect(spc2 - spW / 2, Y(12), spW, 12 * s, { sw: 1.2, dash: '4 3' })
+  const c6 = q0 + g / 2 + (ph ? 10 : 14), c5 = px1 + gp / 2 - (ph ? 10 : 14)
+  b += val(c6, top, '1/2"') + callout(6, c6, dy, [q0 + g / 2, Y(62)])
+  b += val(c5, top, '1"') + callout(5, c5, dy, [px1 + gp / 2, Y(62)])
+  b += callout(4, spc2, floor + slab + (ph ? 16 : 20), [spc2, Y(4)])
+  b += vdim(wb + wt + (ph ? 10 : 16), Y(12), Y(0), '12"')
+  return { b, floor, slab, front: (fx + p2r) / 2, side: (sx + wb) / 2 }
+}
+{
+  const g = gapsDrawing(3.6, 112, 412, 18, false)
+  const cy = g.floor + g.slab + 58
+  made.push(svg('install-gaps', 780, cy + 12, 'Gaps set when toilet partition doors and panels go in',
+    'Front view of a door between a wall pilaster and a middle pilaster, and side view of a panel between its pilaster and the back wall. The gaps are shown in orange: 1/8 inch between the door and the pilaster on the hinge side and on the latch side, 1/2 to 1-1/4 inch between a wall pilaster and the wall, 1 inch between the panel and the back wall and 1/2 inch between the panel and the pilaster. The door and the panel rest on a 12-inch spacer while they are fixed.',
+    g.b + note(g.front, cy, 'front view', 'middle', 13) + note(g.side, cy, 'side view, looking at a panel', 'middle', 13)))
+  withPhone(1.5, () => {
+    const m = gapsDrawing(1.5, 84, 200, 14, true)
+    phone('install-gaps-m', m.floor + m.slab + 34, m.b)
+  })
+}
+
+// 7. Accessible compartment heights: the rear wall, the side wall closest to the toilet, and the inside of the
+// door near the latch. Orange: the grab bars. Toilets are drawn, not dimensioned (no source for their size).
+function toiletFront(cx, Y, s) {
+  const hw = 7.5 * s, bw = 4.5 * s
+  return `<path d="M${cx - bw} ${Y(0)} L${cx - hw + s} ${Y(13)} Q${cx - hw} ${Y(15.5)} ${cx - hw} ${Y(17)} H${cx + hw} Q${cx + hw} ${Y(15.5)} ${cx + hw - s} ${Y(13)} L${cx + bw} ${Y(0)} Z" fill="#fff" stroke="${C.ink}" stroke-width="1.2"/>` + rect(cx - hw - 0.5 * s, Y(18), 2 * hw + s, s, { sw: 1.2 })
+}
+function toiletSide(xw, Y, s) {
+  const X = (i) => xw + i * s
+  return `<path d="M${X(9)} ${Y(0)} H${X(19)} Q${X(26)} ${Y(7)} ${X(28)} ${Y(14)} V${Y(17)} H${X(2)} V${Y(12)} Q${X(6)} ${Y(8)} ${X(9)} ${Y(0)} Z" fill="#fff" stroke="${C.ink}" stroke-width="1.2"/>` + rect(X(3), Y(18), 25 * s, s, { sw: 1.2 })
+}
+const BAR = { fill: C.orange, stroke: C.orange, sw: 1 }
+function heightsRear(x0, floor, s, ph) {
+  const Y = (i) => floor - i * s, wt = ph ? 10 : 14, xa = x0 + wt, CL = xa + 17 * s
+  let b = rect(x0, Y(52), wt, 52 * s, { fill: 'HATCH', stroke: 'none' }) + line(xa, Y(52), xa, floor)
+  b += rect(x0 - 4, floor, wt + 62 * s + 8, ph ? 8 : 12, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 4, floor, xa + 62 * s + 4, floor)
+  b += toiletFront(CL, Y, s)
+  b += cline(CL, Y(0) - 2, CL, Y(44), { stroke: C.muted, sw: 1 })
+  b += rect(CL - 12 * s, Y(35), 36 * s, 1.5 * s, BAR) // rear grab bar
+  b += hdim(Y(40), CL - 12 * s, CL, '12" min') + hdim(Y(40), CL, CL + 24 * s, '24" min') + hdim(Y(48), CL - 12 * s, CL + 24 * s, '36" min')
+  b += hdim(Y(26), xa, CL, '16"–18"')
+  b += vdim(CL + 11 * s, Y(18), Y(0), '17"–19"') + vdim(CL + 31 * s, Y(35), Y(0), '33"–36"')
+  b += callout(2, CL + 20 * s, Y(27), [CL + 20 * s, Y(33.5)]) + callout(3, CL - 13 * s, Y(10), [CL - 6 * s, Y(17.5)])
+  return { b, mid: xa + 30 * s, right: CL + 31 * s + 60 }
+}
+function heightsSide(x0, floor, s, ph) {
+  const Y = (i) => floor - i * s, wt = ph ? 10 : 14, xb = x0 + wt, X = (i) => xb + i * s
+  let b = rect(x0, Y(52), wt, 52 * s, { fill: 'HATCH', stroke: 'none' }) + line(xb, Y(52), xb, floor)
+  b += rect(x0 - 4, floor, wt + 62 * s + 8, ph ? 8 : 12, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 4, floor, X(62) + 4, floor)
+  b += toiletSide(xb, Y, s)
+  b += rect(X(12), Y(35), 42 * s, 1.5 * s, BAR) // side grab bar
+  b += hdim(Y(40), xb, X(12), '12" max') + hdim(Y(40), X(12), X(54), '42" min') + hdim(Y(48), xb, X(54), '54" min')
+  b += rect(X(33), Y(23), 6 * s, 6 * s, { sw: 1.2 }) + line(X(34), Y(17), X(38), Y(17), { sw: 2.5 }) // dispenser, outlet below
+  const ext = (x, y1, y2) => line(x, y1, x, y2, { stroke: C.muted, sw: 1, dash: '3 3' })
+  b += ext(X(28), Y(18), Y(28)) + ext(X(36), Y(23), Y(28)) + hdim(Y(27), X(28), X(36), '7"–9"')
+  b += vdim(X(41), Y(17), Y(0), '15" min') + vdim(X(61), Y(35), Y(0), '33"–36"')
+  b += callout(1, X(16), Y(27), [X(16), Y(33.5)]) + callout(4, X(47), Y(21), [X(39), Y(20)])
+  return { b, mid: xb + 30 * s, right: X(61) + 60 }
+}
+function heightsDoor(xc, floor, s, ph) {
+  const Y = (i) => floor - i * s, X = (i) => xc + i * s, dw = 18, top = 51
+  let b = rect(xc - 12, floor, (dw + 8) * s + 20, ph ? 8 : 12, { fill: 'HATCH', stroke: 'none' }) + line(xc - 12, floor, X(dw + 7) + 6, floor)
+  b += `<path d="M${xc} ${Y(top)} V${Y(12)} H${X(dw)} V${Y(top)}" fill="#fff" stroke="${C.ink}" stroke-width="1.5"/>` // door, continuing left and up
+  b += rect(X(dw + 1), Y(top), 6 * s, top * s, { stroke: 'none' }) + line(X(dw + 1), Y(top), X(dw + 1), Y(0)) + line(X(dw + 7), Y(top), X(dw + 7), Y(0))
+  b += hbrk(xc, X(dw + 7), Y(top)) + vbrk(xc, Y(top), Y(12))
+  b += rect(X(dw - 4), Y(41.5), 4 * s, 1.5 * s, { fill: C.ink, stroke: 'none' }) + rect(X(dw + 1), Y(42.5), 2.5 * s, 3.5 * s, { sw: 1.2 }) // latch, keeper
+  b += rect(X(dw - 7), Y(43), 1.2 * s, 4 * s, { fill: C.ink, stroke: 'none', rx: 2 }) // pull
+  b += rect(X(5), Y(46), 1.6 * s, 2.4 * s, { sw: 1.2, rx: 2 }) + `<path d="M${X(5.8)} ${Y(44)} v${2.2 * s} q0 ${1.5 * s} ${1.5 * s} ${1.5 * s}" fill="none" stroke="${C.ink}" stroke-width="2"/>` // coat hook
+  const r1 = X(dw + 7) + (ph ? 12 : 14), r2 = r1 + (ph ? 66 : 74)
+  b += vdim(r1, Y(48), Y(34), '34"–48"') + vdim(r2, Y(48), Y(15), '15"–48"')
+  b += callout(5, X(13), Y(26), [X(dw - 3), Y(40.4)]) + callout(6, X(5.8), Y(34), [X(5.8), Y(42)])
+  return { b, mid: X(dw / 2 + 4), right: r2 + 60 }
+}
+{
+  const s = 3.2, floor = 190
+  const a = heightsRear(20, floor, s, false), bb = heightsSide(268, floor, s, false), c = heightsDoor(548, floor, s, false)
+  const cy = floor + 34
+  made.push(svg('accessible-stall-heights', 780, cy + 12, 'Heights in a wheelchair accessible toilet compartment',
+    'Three elevations of a wheelchair accessible compartment. The rear wall: a grab bar 36 inches long minimum, reaching 12 inches minimum on one side of the toilet centerline and 24 inches minimum on the other, with the centerline 16 to 18 inches from the side wall and the seat 17 to 19 inches high. The side wall closest to the toilet: a grab bar 42 inches long minimum, starting 12 inches maximum from the rear wall and reaching 54 inches minimum from it, and a toilet paper dispenser 7 to 9 inches in front of the toilet with its outlet 15 inches minimum above the floor. Both grab bars, shown in orange, are 33 to 36 inches high to the top. The inside of the door: latch and pulls 34 to 48 inches above the floor, and a coat hook within 15 to 48 inches.',
+    a.b + bb.b + c.b + note(a.mid, cy, 'rear wall', 'middle', 13) + note(bb.mid, cy, 'side wall closest to the toilet', 'middle', 13) + note(c.mid + 20, cy, 'door, inside face', 'middle', 13)))
+  withPhone(3, () => {
+    const f = 170
+    phone('accessible-stall-heights-m1', f + 16, heightsRear(62, f, 3, true).b)
+    phone('accessible-stall-heights-m2', f + 16, heightsSide(44, f, 3, true).b)
+    phone('accessible-stall-heights-m3', f + 16, heightsDoor(110, f, 3, true).b)
+  })
+}
+
+// 8. Wall backing: the wall cut through at a panel bracket, seen from above. Finish and backing thicknesses are
+// drawn, not sourced; the hole size and depth and the screw length are the guide's.
+function backingSection(xw, top, k, ph) {
+  const t = ph ? 3 : 5, ear = 1.2 * k, slot = 0.5 * k, leg = 1.6 * k, sw = slot + 2 * t, W = 2 * ear + sw
+  const wTop = top + (ph ? 24 : 34), y0 = wTop + (ph ? 22 : 40), wBot = y0 + W + (ph ? 22 : 40)
+  const fin = 0.6 * k, bk = 3 * k, d = (5 / 16) * k, depth = 2 * k, hs = [y0 + ear / 2, y0 + W - ear / 2]
+  let b = rect(xw - fin - bk, wTop, bk, wBot - wTop, { fill: C.orangeTint, stroke: C.orange, sw: 2 })
+  b += rect(xw - fin, wTop, fin, wBot - wTop, { fill: 'HATCH', stroke: 'none' }) + line(xw, wTop, xw, wBot) + line(xw - fin, wTop, xw - fin, wBot, { sw: 1 })
+  b += hbrk(xw - fin - bk, xw, wTop) + hbrk(xw - fin - bk, xw, wBot)
+  // panel (1" from the wall) in the bracket, continuing to the right
+  const pr = xw + (ph ? 13.5 : 12) * k
+  b += rect(xw + k, y0 + ear + t, pr - xw - k, slot, { sw: 1.2 }) + vbrk(pr, y0 + ear + t - 6, y0 + ear + t + slot + 6)
+  // bracket: ear plate on the wall face, two legs around the panel
+  b += `<path d="M${xw} ${y0} H${xw + t} V${y0 + ear} H${xw + leg} V${y0 + ear + t} H${xw + t} V${y0 + ear + t + slot} H${xw + leg} V${y0 + ear + sw} H${xw + t} V${y0 + W} H${xw} Z" fill="#fff" stroke="${C.ink}" stroke-width="1.5" stroke-linejoin="round"/>`
+  for (const yh of hs) {
+    b += rect(xw - depth, yh - d / 2, depth, d, { fill: '#fff', sw: 1 }) // hole
+    b += rect(xw - depth + 0.12 * k, yh - d / 2 + 1, depth - 0.12 * k, d - 2, { fill: C.orange, stroke: 'none' }) // anchor
+    b += line(xw + t, yh, xw + t - 2 * k, yh, { sw: ph ? 2 : 3 }) // screw, 2" long
+    b += rect(xw + t, yh - 0.22 * k, 0.14 * k, 0.44 * k, { fill: C.ink, stroke: 'none', rx: 1 }) // head
+  }
+  // hole size and depth, below the wall
+  const dl = wBot + (ph ? 14 : 18), hb = hs[1] + d / 2
+  for (const x of [xw - depth, xw]) b += line(x, hb, x, dl + 5, { stroke: C.muted, sw: 1, dash: '3 3' })
+  b += line(xw - depth, dl, xw, dl, { stroke: C.muted, sw: 1 }) + val(xw - depth / 2, dl + (ph ? 18 : 22), 'Ø5/16" hole, 2" min deep')
+  const dyc = top + 12, at = (n, dx, to) => callout(n, xw + dx, dyc, to)
+  const off = ph ? [-92, -60, -28, 4, 36] : [-130, -64, -18, 30, 76]
+  b += at(2, off[0], [xw - fin - bk * 0.75, wTop + 10]) + at(3, off[1], [xw - 1.3 * k, hs[0]]) + at(1, off[2], [xw - fin / 2, wTop + 14])
+  b += at(4, off[3], [xw + t + 0.07 * k, hs[0] - 0.22 * k]) + at(5, off[4], [xw + leg - 3, y0 + ear + t / 2]) + at(6, (ph ? 7 : 6.5) * k, [xw + (ph ? 7 : 6.5) * k, y0 + ear + t])
+  return { b, dl, wBot }
+}
+{
+  const r = backingSection(262, 14, 36, false)
+  made.push(svg('wall-backing', 780, r.dl + 50, 'Wall backing behind a toilet partition wall bracket',
+    'The wall cut through at a panel bracket, seen from above: the wall finish, solid backing behind it (in orange), and a bracket fixed with a screw into a plastic anchor in a 5/16-inch hole at least 2 inches deep at each ear. The panel sits in the bracket.',
+    r.b + note(780 - 24, r.dl + 40, 'Seen from above, cut through the wall at a bracket.', 'end', 13)))
+  withPhone(1, () => {
+    const m = backingSection(128, 6, 16, true)
+    phone('wall-backing-m', m.dl + 26, m.b)
+  })
+}
+
+// 9. Door and latch problems: three front views of a door between its hinge pilaster (left) and latch pilaster
+// (right), seen from inside the stall. Angles and offsets are exaggerated so they show. Orange: what is out of line.
+const LATCH_PROBLEMS = [['A', 'Pilaster out of plumb'], ['B', 'Door dropped at the latch'], ['C', 'Keeper out of line']]
+function latchFrame(kind, cx, floor, s, ph) {
+  const Y = (i) => floor - i * s, xL = cx - 19 * s, d0 = xL + 7 * s, de = d0 + 24 * s, p = de + s
+  const OT = { fill: C.orangeTint, stroke: C.orange, sw: 2 }
+  let b = rect(xL - 10, floor, 38 * s + 20, ph ? 6 : 10, { fill: 'HATCH', stroke: 'none' }) + line(xL - 10, floor, xL + 38 * s + 10, floor)
+  b += rect(xL, Y(82), 6 * s, 82 * s)
+  const hinge = (y) => rect(d0 - 1.6 * s, Y(y), 2.4 * s, 5 * s, { fill: C.ink, stroke: 'none' })
+  const keeper = (dy, o = { sw: 1.2 }) => rect(p, Y(43 + dy), 2.5 * s, 3.5 * s, o)
+  const latch = rect(de - 4 * s, Y(41.5), 4 * s, 1.5 * s, { fill: C.ink, stroke: 'none' })
+  const a = ph ? 3 : 2.5, rad = a * Math.PI / 180
+  if (kind === 'A') { // latch pilaster leaning away from the door: the gap opens towards the top
+    const at = (h) => [p + h * s * Math.sin(rad), floor - h * s * Math.cos(rad)]
+    const [x70, y70] = at(70), [x12, y12] = at(12)
+    b += line(p, Y(86), p, floor, { stroke: C.muted, sw: 1, dash: '5 5' }) // plumb
+    b += `<polygon points="${de},${Y(70)} ${x70.toFixed(1)},${y70.toFixed(1)} ${x12.toFixed(1)},${y12.toFixed(1)} ${de},${Y(12)}" fill="${C.orangeTint}" stroke="${C.orange}" stroke-width="2" stroke-linejoin="round"/>`
+    b += rect(d0, Y(70), 24 * s, 58 * s) + latch + hinge(66) + hinge(18)
+    b += `<g transform="rotate(${a} ${p} ${floor})">${rect(p, Y(82), 6 * s, 82 * s)}${keeper(0)}</g>`
+  }
+  if (kind === 'B') { // the latch side has dropped: top and bottom edges slope, the latch sits below the keeper
+    const drop = (ph ? 4 : 4) * s
+    b += rect(p, Y(82), 6 * s, 82 * s) + keeper(0)
+    b += rect(d0, Y(70), 24 * s, 58 * s, { fill: 'none', stroke: C.muted, sw: 1.2, dash: '5 5' }) // where it should be
+    b += `<polygon points="${d0},${Y(70)} ${de},${Y(70)} ${de},${Y(70) + drop}" fill="${C.orangeTint}" stroke="${C.orange}" stroke-width="2" stroke-linejoin="round"/>`
+    b += `<g transform="matrix(1 ${(drop / (24 * s)).toFixed(4)} 0 1 0 ${(-d0 * drop / (24 * s)).toFixed(2)})">${rect(d0, Y(70), 24 * s, 58 * s)}${latch}</g>` + hinge(66) + hinge(18)
+  }
+  if (kind === 'C') { // door square, keeper fixed too high
+    b += rect(p, Y(82), 6 * s, 82 * s) + keeper(0, { fill: 'none', stroke: C.muted, sw: 1.2, dash: '4 3' })
+    b += rect(d0, Y(70), 24 * s, 58 * s) + latch + hinge(66) + hinge(18)
+    b += keeper(4, { fill: C.orangeTint, stroke: C.orange, sw: 2.5 })
+  }
+  return { b, xL }
+}
+{
+  const s = 2.9, fw = 260, floor = 24 + 82 * s
+  let b = ''
+  LATCH_PROBLEMS.forEach(([L, cap], i) => {
+    const cx = fw / 2 + i * fw + 10, f = latchFrame(L, cx, floor, s, false)
+    b += f.b + disc(L, fw / 2 + i * fw - 92, floor + 42) + text(fw / 2 + i * fw - 74, floor + 47, cap, { size: 14, weight: 600 })
+  })
+  b += note(16, floor + 82, 'Seen from inside the stall: hinge pilaster on the left, latch pilaster on the right. Angles and offsets exaggerated.', 'start', 13)
+  made.push(svg('door-latch-problems', 780, floor + 94, 'Why a toilet partition door won\'t latch: three causes',
+    'Three front views of a stall door between its hinge pilaster and latch pilaster: A, the latch pilaster leans out of plumb, so the gap at the latch edge widens towards the top; B, the door has dropped at the latch side, so its top edge slopes and the latch sits below the keeper; C, the door hangs square but the keeper on the pilaster is out of line with the latch. What is out of line is shown in orange.', b))
+  withPhone(2, () => {
+    const f2 = 30 + 82 * 2
+    let p = ''
+    ;['A', 'B'].forEach((L, i) => { p += latchFrame(L, 90 + i * 180 + 6, f2, 2, true).b + disc(L, 90 + i * 180 - 62, 16) })
+    phone('door-latch-problems-m1', f2 + 14, p)
+    phone('door-latch-problems-m2', f2 + 14, latchFrame('C', 186, f2, 2, true).b + disc('C', 118, 16))
+  })
+}
+
+// 10. Accessible compartment plan, seen from above: rear wall on the left, the side wall closest to the toilet at
+// the top, a side partition at the bottom, the front partition and door on the right. Orange: the minimum
+// compartment area the door may not swing into. Drawn at the minimum size for a floor-mounted toilet.
+function adaPlan(xr, ys, k, ph) {
+  const wt = ph ? 7 : 12, pt = ph ? 3 : 4, xf = xr + 59 * k, yb = ys + 60 * k, CLy = ys + 17 * k
+  const jt = ys + 22 * k, jb = ys + 56 * k // door jambs: the opening ends 4" from the side partition
+  let b = rect(xr - wt, ys - wt, wt, 72 * k + wt, { fill: 'HATCH', stroke: 'none' }) + rect(xr - wt, ys - wt, 59 * k + wt + 42 * k, wt, { fill: 'HATCH', stroke: 'none' })
+  b += line(xr, ys + 72 * k, xr, ys) + line(xr, ys, xf + 42 * k, ys)
+  b += rect(xr, ys, 59 * k, 60 * k, { fill: C.orangeTint, stroke: C.orange, sw: 2.5 }) // minimum compartment area
+  b += line(xr + 56 * k, ys + 2, xr + 56 * k, yb - 2, { stroke: C.orange, sw: 1.5, dash: '5 5' }) // 56" with a wall-hung toilet
+  // toe clearance under the front partition and the side partition, 6" beyond the compartment face
+  const TOE = { fill: 'none', stroke: C.muted, sw: 1.2, dash: '4 3' }
+  b += rect(xf, ys, 6 * k, 60 * k + pt, TOE) + rect(xr, yb, 59 * k + pt, 6 * k, TOE)
+  // toilet against the rear wall
+  b += rect(xr + 1, CLy - 8 * k, 6 * k, 16 * k, { sw: 1.2, rx: 2 }) + `<ellipse cx="${xr + 17 * k}" cy="${CLy}" rx="${11 * k}" ry="${7.5 * k}" fill="#fff" stroke="${C.ink}" stroke-width="1.2"/>`
+  b += cline(xr - wt - (ph ? 18 : 24), CLy, xr + 31 * k, CLy, { stroke: C.muted, sw: 1 })
+  // side partition, front partition, door open 90° (outswing) hinged at the jamb near the side partition
+  b += rect(xr, yb, 59 * k + pt, pt) + rect(xf, ys, pt, jt - ys) + rect(xf, jb, pt, yb - jb + pt)
+  const R = jb - jt, hx = xf + pt
+  b += `<path d="M${hx} ${jt} A${R} ${R} 0 0 1 ${hx + R} ${jb}" fill="none" stroke="${C.muted}" stroke-width="1.2" stroke-dasharray="5 5"/>`
+  b += rect(hx, jb - pt, R, pt, { sw: 1.5 })
+  // dimensions
+  const x2 = xr - wt - (ph ? 12 : 16), x1 = x2 - (ph ? 64 : 84)
+  b += (ph ? vdim(x1, ys, yb, '', 'left') + text(x1 - 7, (ys + yb) / 2, '60" min', { size: DIM, fill: C.muted, anchor: 'middle', weight: 600, rotate: -90 }) : vdim(x1, ys, yb, '60" min', 'left')) + vdim(x2, ys, CLy, '16"–18"', 'left') + vdim(x2, yb, yb + 6 * k, '6" min', 'left')
+  const h1 = ys - wt - (ph ? 14 : 18), h2 = h1 - (ph ? 26 : 32)
+  b += hdim(h1, xr, xr + 56 * k, ph ? '56" min' : '56" min, wall-hung toilet') + hdim(h2, xr, xf, ph ? '59" min' : '59" min, floor-mounted toilet')
+  const xd = hx + R + (ph ? 6 : 16)
+  b += vdim(xd, jt, jb - pt, '32" min') + vdim(xd, jb, yb, '4" max')
+  b += line(hx + R, jb, xd + 5, jb, { stroke: C.muted, sw: 1, dash: '3 3' }) + line(xf + pt, yb, xd + 5, yb, { stroke: C.muted, sw: 1, dash: '3 3' }) + line(xf + pt, jt, xd + 5, jt, { stroke: C.muted, sw: 1, dash: '3 3' })
+  // callouts
+  b += disc(1, xr + 42 * k, ys + 38 * k) + callout(2, xr + 38 * k, CLy, [xr + 29 * k, CLy])
+  b += callout(3, hx + 20 * k, jb - 14 * k, [hx + 20 * k, jb - pt]) + callout(4, xf + 14 * k, yb + (ph ? 18 : 24), [xf + pt / 2, jb + 2 * k])
+  b += callout(5, xf + 3 * k, ys + 9 * k, null) + callout(6, xr + 40 * k, yb + 6 * k + (ph ? 16 : 22), [xr + 40 * k, yb + 3 * k])
+  return { b, bottom: yb + 6 * k + (ph ? 30 : 36) }
+}
+{
+  const r = adaPlan(285, 88, 3.6, false)
+  made.push(svg('accessible-stall-plan', 780, r.bottom + 30, 'Wheelchair accessible toilet compartment, plan view',
+    'A wheelchair accessible compartment seen from above, drawn at the minimum size: 60 inches wide minimum, and 59 inches deep minimum with a floor-mounted toilet or 56 inches with a wall-hung toilet. The toilet centerline is 16 to 18 inches from the side wall. The door in the front partition opens out, gives a 32-inch minimum clear opening and sits within 4 inches of the side partition farthest from the toilet. Toe clearance runs 6 inches beyond the front partition and one side partition. The minimum compartment area, which the door may not swing into, is shown in orange.',
+    r.b + note(24, r.bottom + 16, 'Seen from above.', 'start', 13)))
+  withPhone(1.8, () => {
+    const m = adaPlan(122, 66, 1.8, true)
+    phone('accessible-stall-plan-m', m.bottom + 2, m.b)
+  })
+}
+
 // Sheets: the plan and front views (above) also get phone variants; the side view and details are 400 wide and
 // scale to the column as they are.
 console.log(`${phoneMade.length} phone variants: ${phoneMade.join(', ')}`)

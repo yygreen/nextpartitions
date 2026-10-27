@@ -28,6 +28,17 @@ Read the manufacturer's guide all the way through and lay out every part before 
 
 Panels and pilasters attach to the walls with brackets. The walls need backing behind those brackets. Bobrick notes that wall backing is required to secure the mounting brackets. Every Bradley guide we reviewed (phenolic Series 400 to 700, powder coated and stainless steel, Bradmar plastic) opens with a warning to confirm that wall and floor backing can support the partitions. Bradley adds that partitions are extremely heavy, may need more than one person, and that ignoring the instructions voids the partition warranty. Partitions are heavy. If a wall is hollow drywall with nothing behind it, the brackets have nowhere to hold.
 
+The drawing below cuts through the wall at one bracket, seen from above, to show what the bracket screws actually hold on to. The hole size and depth are one manufacturer's for its phenolic and steel lines; use the anchors and fasteners your guide specifies.
+
+![Wall cut through at a partition bracket, seen from above: wall finish, backing behind it, and the bracket screwed into anchors](/images/diagrams/wall-backing.svg)
+
+1. **Wall finish** (tile, board or plaster). On its own it is not what holds the bracket.
+2. **Backing** behind the finish, at every bracket. The wall and its backing must be able to carry the partitions: confirm this before installing.
+3. **Plastic anchor** in a 5/16" hole drilled at least 2" deep, through the finish into the backing.
+4. **Screw**, #14 x 2", through the bracket into the anchor.
+5. **Wall bracket**, used as the template for its own holes.
+6. **Panel** held in the bracket, with its gap to the wall.
+
 ### Handling and site conditions
 
 Manufacturers ask for care before the first hole is drilled.
@@ -139,6 +150,17 @@ Metal and solid plastic installation guides from Ammco (All American Metal) conf
 - **Level pilaster tops** from one compartment to the next with the leveling bolts or nuts, then set the door openings from the wall pilaster.
 - **Drill with the hardware in place.** Use the bracket, hinge or keeper as the template for its own holes. Field-drill hinge brackets before you finish fastening the pilasters.
 
+Doors and panels are set on spacers, and each joint keeps a set gap. The drawing shows the gaps from one manufacturer's phenolic guides, front view on the left and side view on the right; the gaps are drawn wider than scale so they show, and your shop drawings set the actual sizes.
+
+![Gaps between a door and its pilasters, a wall pilaster and the wall, and a panel and the back wall, with the 12-inch spacer](/images/diagrams/install-gaps.svg)
+
+1. **Hinge side:** 1/8" between the door and the pilaster.
+2. **Latch side:** 1/8". Put 1/8" spacers between the door and the pilaster at the top and bottom so the gap matches on both sides, then tighten the hinge screws.
+3. **Wall pilaster to wall:** 1/2" to 1-1/4", as the drawing shows.
+4. **12" spacer** under the door while the hinges go on, and under each panel while it slides into its wall brackets.
+5. **Panel to back wall:** 1" standard.
+6. **Panel to pilaster:** 1/2" standard.
+
 ## Ceiling hung
 
 ![Ceiling hung toilet partitions, front view](/images/diagrams/mounting-ceiling-hung.svg)
@@ -204,6 +226,17 @@ Grab bar sizes and positions are set by the 2010 ADA Standards (sections 604 and
 - **Strength:** the bar, its fasteners and the supporting structure must withstand a 250 lb force without exceeding allowable stresses (609.8).
 - **Ambulatory compartments:** a side wall bar is required on both sides (604.8.2.3).
 
+The drawing puts these positions in three views of one wheelchair accessible compartment: the rear wall, the side wall closest to the toilet, and the inside of the door near the latch.
+
+![Rear wall, side wall and door of a wheelchair accessible compartment with grab bar, seat, dispenser, latch and coat hook heights](/images/diagrams/accessible-stall-heights.svg)
+
+1. **Side wall grab bar** (604.5.1): 42" long minimum, starting no more than 12" from the rear wall and reaching at least 54" from it.
+2. **Rear wall grab bar** (604.5.2): 36" long minimum, reaching at least 12" from the toilet centerline towards the side wall and 24" towards the open side. Both bars are 33" to 36" above the floor to the top of the gripping surface (609.4).
+3. **Toilet seat** 17" to 19" above the floor to the top of the seat (604.4), with the toilet centerline 16" to 18" from the side wall (604.2).
+4. **Toilet paper dispenser** (604.7): its centerline 7" to 9" in front of the toilet, the outlet 15" minimum and 48" maximum above the floor, and not behind a grab bar.
+5. **Latch and pulls:** operable parts 34" to 48" above the floor (404.2.7), with a pull on both sides of the door near the latch (604.8.1.2).
+6. **Coat hook** within a reach range in section 308: 15" to 48" above the floor for an unobstructed reach (604.8.3).
+
 Do not assume a partition panel can carry a grab bar. Bradley's Series 400 steel guide refers to "grab bar reinforcement" in some panels and tells the installer to turn the panel so the reinforcement hole or holes sit on the bottom edge, but it does not state a load rating. Ask the manufacturer in writing whether your partition is rated for it, and have the bar fixed to backing provided by the building.
 
 ### Heights
@@ -217,6 +250,14 @@ Manufacturers also give their own mounting heights. Bradley's Series 400 phenoli
 ## Problems
 
 Most toilet partition installation problems come down to level, backing or hinge and keeper settings. Check these first, and follow your manufacturer's guide for the fix.
+
+The three drawings below show the usual reasons a door won't latch, seen from inside the stall with the hinge pilaster on the left. The angles are exaggerated so they show.
+
+![Three causes of a door that won't latch: pilaster out of plumb, door dropped at the latch side, keeper out of line](/images/diagrams/door-latch-problems.svg)
+
+- **A** Pilaster out of plumb: the gap at the latch edge is wider at the top than at the bottom. Check the pilaster with a level and re-set it at its leveling screw or nuts and its brackets. Manufacturers say to check that the pilasters are plumb before the hinges go on.
+- **B** Door dropped at the latch side: the top of the door slopes and the latch sits below the keeper. Check that the hinges are plumb and their screws tight; reset the door with 1/8" spacers at the top and bottom so the gaps match, then re-tighten.
+- **C** Keeper out of line with the latch: the door hangs square but the latch misses the keeper. With the door closed, move the keeper so the latch slides freely into it, and drill through the keeper's own holes.
 
 | Problem | First checks |
 |---|---|
@@ -255,15 +296,15 @@ Sources marked 2026-10-27 were opened and read that day. The Bradley and Hadrian
 - [Bobrick, 1080 Series technical data](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): wall backing, 2" into 3" concrete, stile heights, floor-anchor and ceiling-hung parts. Checked 2026-10-27.
 - [Bobrick, 1550 Series technical data](https://www.bobrick.com/wp-content/uploads/1550_td.pdf): leveling bracket, 58" doors, 83" stile. Checked 2026-10-27.
 - [ASI Global Integrated Privacy installation guide](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Integrated-Privacy-Powder-Coated-and-Stainless-Steel-Installation-Guide.pdf): keeper alignment and drilling, bumper placement, box cam and pintle. Checked 2026-10-27.
-- Bradley, Series 400, 500, 600 and 700 Phenolic Installation Guides, HDWC-INSTR-040, -042, -043 and -044, Rev. A (2021), manufacturer documents, copies reviewed 2026-10-27: backing warning, handling, 12" spacer and level line, 19" and 63" bracket marks, gaps, headrail, "C" channel. Checked 2026-10-27. The Series 400 guide (HDWC-INSTR-040) is also the source for the layout and sequence drawings: plumb lines, 19"/63" marks, 43" third-bracket and 12-1/2" continuous-bracket options, pilaster line less 3/8", wall pilasters first, panel and pilaster alternately on a 12" spacer, headrail before hinges; reviewed 2026-10-27.
+- Bradley, Series 400, 500, 600 and 700 Phenolic Installation Guides, HDWC-INSTR-040, -042, -043 and -044, Rev. A (2021), manufacturer documents, copies reviewed 2026-10-27: backing warning, handling, 12" spacer and level line, 19" and 63" bracket marks, gaps, headrail, "C" channel. Checked 2026-10-27. The Series 400 guide (HDWC-INSTR-040) is also the source for the layout and sequence drawings: plumb lines, 19"/63" marks, 43" third-bracket and 12-1/2" continuous-bracket options, pilaster line less 3/8", wall pilasters first, panel and pilaster alternately on a 12" spacer, headrail before hinges; reviewed 2026-10-27. The same guide is the source for the gaps, wall backing and latch drawings: 12" spacer under doors and panels, 1/8" spacers for an even door gap (hinge screws 80–90 in-lb), standard gaps 1" panel to wall and 1/2" panel to pilaster, 1/2" to 1-1/4" at walls; wall brackets on plastic anchors in Ø5/16" holes min. 2" deep with #14 x 2" screws; the backing warning; pilasters plumb before the hinges; keeper set with the door closed so the latch moves freely over it. Reviewed 2026-10-27.
 - Bradley, Powder Coated & Stainless Steel Installation Guides, Series 600 (HDWT-INSTR-011 Rev F, 2015) and Series 400 69" and 72" Tall (HDWT-INSTR-038 Rev A, 2018), and Bradmar Restroom Partitions Series 400 (HDWP-INSTR-013 Rev. L, 2018), manufacturer documents, copies reviewed 2026-10-27: the "C" channel, 12" level line and backing warning in the Series 600 steel guide (the document the earlier dealer copy was), cross bracing, grab bar reinforcement note, Bradmar site conditions. Checked 2026-10-27.
 - Bradley, Partitions brochure 3788-2-0325 ([media.bradleycorp.com](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf)): Series 600 not recommended over 8 feet. Checked 2026-10-27.
-- Hadrian, Installation Manual for Metal Toilet Partitions, Standard Series (6/19) and Elite, Elite Plus & Elite Max Series (6/19), and Installation Manual for Solid Plastic Toilet Partitions (4/2014), manufacturer documents, copies reviewed 2026-10-27: overhead member by others, shim blocks, 5/8" centerline deduction, storage, stabilizer bar. Checked 2026-10-27.
+- Hadrian, Installation Manual for Metal Toilet Partitions, Standard Series (6/19) and Elite, Elite Plus & Elite Max Series (6/19), and Installation Manual for Solid Plastic Toilet Partitions (4/2014), manufacturer documents, copies reviewed 2026-10-27: overhead member by others, shim blocks, 5/8" centerline deduction, storage, stabilizer bar; hinges installed plumb, door 1/8" from the pilaster on a 12" block (metal), keeper at the door's mid-point with the latch slide on the keeper slot (solid plastic). Checked 2026-10-27.
 - Ammco (All American Metal) installation instructions: [head rail braced, powder coated and stainless steel](https://allamericanmetal.com/frontend/web/uploads/installation/1585223487-AAMCO-Metal-Installation-Instructions.pdf), [floor supported](https://allamericanmetal.com/frontend/web/uploads/installation/1602879783-AAMCO-INSTALLATION-Metal-Floor-Supported.pdf), [ceiling hung](https://allamericanmetal.com/frontend/web/uploads/installation/1602879850-AAMCO-INSTALLATION-Metal-Ceiling-Hung.pdf) and [solid plastic (HDPE)](https://allamericanmetal.com/frontend/web/uploads/installation/1616505699-Solid-Partitions---Installation-Instructions-2018.pdf): spacer block, shim, shoe, leveling, drill-in-place, ceiling bolt, latch and hinge notes. Checked 2026-10-27.
 - [Scranton Products Hiny Hiders guide specification](http://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): 30-degree cams. Checked 2026-10-27.
 - [Scranton Products partition spec form](http://www.scrantonproducts.com/wp-content/uploads/2015/05/Partition__Vanity_Spec_Form_Estimating-3.pdf): latches and strikes cannot be mixed. Checked 2026-10-27.
 - [New York State OGS MasterSpec 102113.19, Plastic Toilet Compartments](https://online2.ogs.ny.gov/dnc/masterspec24/docs/Division10Specialties/102113.19PlasticToiletCompartments.docx): anchor depths, headrail fasteners, door alignment, ceiling anchoring, steel (not wood) for ceiling hung. Checked 2026-10-27.
-- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 308.2.1, 308.3.1, 404.2.7, 603.4, 604.5, 604.8.1.2, 604.8.2.3, 604.8.3, 609. Checked 2026-10-27.
+- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 308.2.1, 308.3.1, 404.2.7, 603.4, 604.2, 604.4, 604.5.1, 604.5.2, 604.7, 604.8.1.2, 604.8.2.3, 604.8.3, 609. Checked 2026-10-27.
 
 <!-- For Marc -->
 ## Corrections to the current page
@@ -279,7 +320,7 @@ None. This is a new page. There is no live version.
 - Anchor ids for the sections: `#before-you-start`, `#general-sequence`, `#ceiling-hung`, `#floor-to-ceiling`, `#hardware`, `#problems`. The H2 "Ceiling hung" and "Hardware" and "Problems" need ids exactly as listed.
 - Structured data: FAQPage (5 Q&As); HowTo optional, but skip it. The page is an overview, not instructions, and a HowTo schema would suggest otherwise. BreadcrumbList: Guides > this page.
 - URL: the keyword research suggested /resources/... URLs, but the site's hub is /guides. This page goes under /guides and needs a card added to the Guides hub (pages/guides.md lists the hub cards; I did not edit it).
-- Drawings used: mounting-styles-compare, mounting-overhead-braced, mounting-ceiling-hung, latch-keeper, hinge-types, measure-new-restroom-plan and -section (being drawn; the lead should check its key matches A to F).
+- Drawings used: mounting-styles-compare, mounting-overhead-braced, mounting-ceiling-hung, latch-keeper, hinge-types, install-sequence-1 and -2, install-layout-marks, wall-backing, install-gaps, accessible-stall-heights, door-latch-problems, measure-new-restroom-plan and -section (being drawn; the lead should check its key matches A to F).
 - Internal links to add elsewhere: from /mounting-styles/ceiling-hung, /hardware/locks-latches and /hardware/hinges to this page.
 - Images wanted: job photos of a pilaster on its leveling bracket, a keeper being aligned to the latch bar, ceiling steel with hanger rods, and a wall with blocking before drywall.
 - Brand page link: `/brands`. Change to a specific brand page if preferred.

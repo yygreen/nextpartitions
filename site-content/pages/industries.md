@@ -60,6 +60,17 @@ Parks, transit stations, stadiums and municipal buildings see heavy traffic, dai
 3. **Standard compartments.** About 36 inches wide, drawn here with inswing doors.
 4. **Grab bars** on the side and rear walls of the accessible compartment (604.5).
 
+The accessible compartment on its own, seen from above at its minimum size, shows the area the door may not swing into.
+
+![Plan of a wheelchair accessible toilet compartment at minimum size, with the minimum compartment area, toilet centerline, outswing door and toe clearance](/images/diagrams/accessible-stall-plan.svg)
+
+1. **Minimum compartment area:** 60 inches wide by 59 inches deep with a floor-mounted toilet, or 56 inches with a wall-hung one (dashed line) (604.8.1.1). The door may not swing into it (604.8.1.2).
+2. **Toilet centerline** 16 to 18 inches from the side wall (604.2).
+3. **Door:** self-closing, 32-inch minimum clear opening (404.2.3), here swinging out.
+4. **Door position:** within 4 inches of the side partition farthest from the toilet (604.8.1.2).
+5. **Toe clearance under the front partition:** at least 9 inches high and 6 inches deep beyond the compartment face (604.8.1.4).
+6. **Toe clearance under one side partition**, the same size.
+
 *Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.*
 
 **Fire rating for solid plastic.** Where HDPE partitions count as an interior finish, building codes based on the International Building Code require them to pass NFPA 286, and not every standard color does. Scranton Products states that its Standard Color Collection does not meet NFPA 286. Ask for the fire-rated version and its test report, and confirm the requirement with your local building official.
@@ -91,7 +102,7 @@ No. We supply partitions. Follow the manufacturer's instructions and approved dr
 
 ## Sources
 
-- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 213.3.1, 404.2.3, 604.5, 604.8.1.1, 604.8.1.2, 604.8.1.4, 604.8.2, 604.9. Checked 2026-10-27.
+- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 213.3.1, 404.2.3, 604.2, 604.5, 604.8.1.1, 604.8.1.2, 604.8.1.4, 604.8.2, 604.9, with Figures 604.8.1.2 and 604.8.1.4. Checked 2026-10-27.
 - [Seattle Building Code 2018, Chapter 8](https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2018SBCChapter8.pdf): IBC 803.9 text on HDPE and NFPA 286. Checked 2026-10-27.
 - [Bobrick fact sheet on ICC and NFPA model code revisions](https://www.bobrick.com/wp-content/uploads/FACT_SHEET_ICC_IFC_AND_NFPA_MODEL_CODE_REVISIONS-1.pdf): NFPA 286 history. Checked 2026-10-27.
 - [Scranton Products color visualizers](https://www.scrantonproducts.com/marketing/product-color-visualizers/): Standard Color Collection and NFPA 286. Checked 2026-10-27.
@@ -115,6 +126,6 @@ No. We supply partitions. Follow the manufacturer's instructions and approved dr
 ## Implementation notes
 
 - Structured data: FAQPage (5 Q&As), BreadcrumbList, ItemList of the six industries.
-- Drawing: sheet-plan. Key text follows its <desc> (60-1/2 and 36-1/2 inch example layout from the Bradley data sheet); the lead should check numbers 1 to 4 against the drawing.
+- Drawings: sheet-plan (the row), then accessible-stall-plan (the accessible compartment at minimum size, ADA 2010 only). Key text follows its <desc> (60-1/2 and 36-1/2 inch example layout from the Bradley data sheet); the lead should check numbers 1 to 4 against the drawing.
 - Confirm with Abe: budgets and lead times on the six industry pages are not repeated here. Do not add any until his table arrives.
 - Images wanted: school, gym and public restroom job photos, one per industry.

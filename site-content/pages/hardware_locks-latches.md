@@ -54,6 +54,14 @@ The keeper is the part on the pilaster that the latch bolt slides into. On HDPE 
 
 A latch that won't engage is often a keeper problem, not a latch problem. Either the door has dropped, or the keeper has moved. ASI Global's installation guide aligns the keeper with the latch bar while the door is closed and the latch engaged, then drills the pilaster through the keeper's holes. If the door has sagged, adjust the hinge first ([see Hinges](/hardware/hinges)).
 
+The three drawings below show where to look, seen from inside the stall with the hinge pilaster on the left. The angles are exaggerated so they show.
+
+![Three causes of a door that won't latch: pilaster out of plumb, door dropped at the latch side, keeper out of line](/images/diagrams/door-latch-problems.svg)
+
+- **A** Pilaster out of plumb: the gap at the latch edge is wider at the top than at the bottom. Check the pilaster with a level and re-set it at its leveling screw or nuts and its brackets.
+- **B** Door dropped at the latch side: the top of the door slopes and the latch sits below the keeper. Check that the hinges are plumb and their screws tight; reset the door with 1/8" spacers at the top and bottom so the gaps match, then re-tighten.
+- **C** Keeper out of line with the latch: the door hangs square but the latch misses the keeper. With the door closed, move the keeper so the latch slides freely into it, and drill through the keeper's own holes.
+
 ## Emergency access
 
 Commercial bathroom stall locks are designed so staff can open a locked stall from outside:
@@ -109,12 +117,14 @@ Often, yes. Several manufacturers sell indicator latches as replacement parts or
 
 ## Sources
 
-- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 309.4, 404.2.7 and advisory, 604.8.1.2. Checked 2026-10-26.
+- [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 309.4, 404.2.7 and advisory, 604.8.1.2. Checked 2026-10-27.
 - [Bobrick 1080 Series technical data sheet](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): slide latch and keeper, lift-to-release, occupancy indicator latch with 3 mm Allen key, ADA compliance statement, inswing/outswing keepers. Checked 2026-10-26.
 - [Metpar powder coated partitions](https://metpar.com/toilet-partitions/powder-coated/): concealed latch with green/red "in use" indicator and emergency access. Checked 2026-10-26.
 - [ASI Global Partitions hardware overview](https://asi-globalpartitions.com/hardware-overview/): surface-mounted and indicator slide latches, 6" aluminum strike. Checked 2026-10-26.
 - [ASI Global Partitions construction features](https://asi-globalpartitions.com/construction-features/): slotted keeper emergency access, factory-drilled indicator, phenolic occupancy latch. Checked 2026-10-26.
 - [ASI Global Integrated Privacy installation guide](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Integrated-Privacy-Powder-Coated-and-Stainless-Steel-Installation-Guide.pdf): keeper alignment and drilling. Checked 2026-10-26.
+- Bradley, Series 400 Phenolic Installation Guide, HDWC-INSTR-040 Rev. A (2021), manufacturer document, copy reviewed 2026-10-27: pilasters plumb before the hinges, 1/8" spacers for an even door gap, keeper set with the door closed so the latch moves freely over it (the latch problems drawing).
+- Hadrian, Installation Manual for Metal Toilet Partitions, Standard Series (6/19) and Installation Manual for Solid Plastic Toilet Partitions (4/2014), manufacturer documents, copies reviewed 2026-10-27: hinges installed plumb; keeper at the door's mid-point with the latch slide on the keeper slot.
 - [All American Metal: powder coated partition hardware](https://allamericanmetal.com/hardware/view/PowderCoated): concealed latch, ADA concealed lever latch, strike and keeper. Checked 2026-10-26.
 - [Scranton Products Hiny Hiders guide specification](http://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): aluminum latch and housing, 6" strike and keeper with vinyl bumper. Checked 2026-10-26.
 - [Scranton Products partition spec form](http://www.scrantonproducts.com/wp-content/uploads/2015/05/Partition__Vanity_Spec_Form_Estimating-3.pdf): emergency access latch sets; latches and strikes can't be mixed; spring hinge note. Checked 2026-10-26.

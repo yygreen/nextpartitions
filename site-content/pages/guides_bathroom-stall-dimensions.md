@@ -79,6 +79,17 @@ Overall height depends on how the partition is held up. A 58" door mounted 12" u
 
 Standard partitions have four gaps (see the drawing above). On typical published tolerances the door-to-pilaster gap is 3/32" on the hinge side and 7/64" at most on the keeper side, and the panel or pilaster to wall gap is 1/2" to 1". Other manufacturers' gaps may be wider. Why they exist, and how no-sightline doors close them, is in [why do bathroom stalls have gaps](/blog/why-do-bathroom-stalls-have-gaps).
 
+During installation the gaps are set with spacers. The drawing shows them as one manufacturer's phenolic installation guides give them, front view on the left and side view on the right, drawn wider than scale so they show.
+
+![Gaps between a door and its pilasters, a wall pilaster and the wall, and a panel and the back wall, with the 12-inch spacer](/images/diagrams/install-gaps.svg)
+
+1. **Hinge side:** 1/8" between the door and the pilaster.
+2. **Latch side:** 1/8", set with 1/8" spacers at the top and bottom of the door.
+3. **Wall pilaster to wall:** 1/2" to 1-1/4", as the drawing shows.
+4. **12" spacer** under the door and under each panel while they are fixed, which gives the 12" floor clearance.
+5. **Panel to back wall:** 1" standard.
+6. **Panel to pilaster:** 1/2" standard.
+
 ## Bathroom stall door width
 
 Stall door width is the measurement people get wrong most often.
@@ -100,6 +111,17 @@ This section follows the 2010 ADA Standards for Accessible Design, section 604. 
 - **Door (604.8.1.2).** Self-closing, with a pull on both sides near the latch, at least 32" clear (404.2.3), and not swinging into the minimum compartment area. If you approach on the latch side, 42" of clearance is required. A front-partition door sits within 4" of the side wall or partition farthest from the toilet. A side-wall door sits within 4" of the front partition.
 - **Toe clearance (604.8.1.4).** The front partition and at least one side partition need at least 9" of toe clearance above the floor, extending 6" deep beyond the compartment face of the partition. It is not required on the front partition if the compartment is deeper than 62" with a wall-hung toilet or 65" with a floor-mounted toilet, or on a side partition if the compartment is wider than 66".
 
+The plan below shows a wheelchair accessible compartment at its minimum size for a floor-mounted toilet, seen from above, with the rear wall on the left and the door in the front partition on the right.
+
+![Plan of a wheelchair accessible toilet compartment at minimum size, with the minimum compartment area, toilet centerline, outswing door and toe clearance](/images/diagrams/accessible-stall-plan.svg)
+
+1. **Minimum compartment area:** 60" wide by 59" deep with a floor-mounted toilet (dashed line: 56" with a wall-hung toilet) (604.8.1.1). The door may not swing into it (604.8.1.2), so a compartment of this size takes an outswing door.
+2. **Toilet centerline** 16" to 18" from the side wall (604.2).
+3. **Door:** self-closing, with at least 32" clear opening when open at 90 degrees (404.2.3).
+4. **Door position:** the opening sits within 4" of the side partition farthest from the toilet (604.8.1.2).
+5. **Toe clearance under the front partition:** at least 9" high and 6" deep beyond the compartment face (604.8.1.4).
+6. **Toe clearance under one side partition**, the same size.
+
 The toe clearance rule is where partition choice matters. A 12" floor clearance meets it. Lowering the gap to 6" for privacy does not, in a compartment of minimum size. Privacy lines solve this with a taller panel mounted higher (Bradley's 69" panel at 9" for ADA stalls is an example).
 
 ### Ambulatory accessible compartment (604.8.2)
@@ -116,6 +138,19 @@ Compartments designed for children's use must be 60" wide and 59" deep, and need
 ### Grab bars and hardware
 
 Grab bars follow 604.5, and the compartment door hardware must work with one hand without tight grasping, pinching or twisting of the wrist, at 5 pounds of force at most (309.4). Coat hooks and shelves in an accessible compartment have to sit within reach ranges (604.8.3).
+
+The drawing shows those heights on the rear wall, the side wall closest to the toilet, and the inside of the door.
+
+![Rear wall, side wall and door of a wheelchair accessible compartment with grab bar, seat, dispenser, latch and coat hook heights](/images/diagrams/accessible-stall-heights.svg)
+
+1. **Side wall grab bar** (604.5.1): 42" long minimum, starting no more than 12" from the rear wall and reaching at least 54" from it.
+2. **Rear wall grab bar** (604.5.2): 36" long minimum, reaching at least 12" from the toilet centerline towards the side wall and 24" towards the open side. Both bars are 33" to 36" above the floor to the top of the gripping surface (609.4).
+3. **Toilet seat** 17" to 19" above the floor to the top of the seat (604.4).
+4. **Toilet paper dispenser** (604.7): centerline 7" to 9" in front of the toilet, outlet 15" minimum and 48" maximum above the floor, not behind a grab bar.
+5. **Latch and pulls:** operable parts 34" to 48" above the floor (404.2.7).
+6. **Coat hook** within a reach range in section 308: 15" to 48" for an unobstructed reach (604.8.3).
+
+*Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.*
 
 ## How many accessible compartments does a restroom need?
 
@@ -174,7 +209,7 @@ Only with care. The front partition and one side partition need 9" of toe cleara
 
 ## Sources
 
-- 2010 ADA Standards for Accessible Design, U.S. Access Board, https://www.access-board.gov/ada/: 213.3.1, 309.4, 404.2.3, 604.2, 604.5, 604.8.1.1, 604.8.1.2, 604.8.1.4, 604.8.2, 604.8.3, 604.9. Checked 2026-10-27.
+- 2010 ADA Standards for Accessible Design, U.S. Access Board, https://www.access-board.gov/ada/: 213.3.1, 308.2.1, 308.3.1, 309.4, 404.2.3, 404.2.7, 604.2, 604.4, 604.5.1, 604.5.2, 604.7, 604.8.1.1, 604.8.1.2, 604.8.1.4, 604.8.2, 604.8.3, 604.9, 609.4, with Figures 604.5.2, 604.7, 604.8.1.2 and 604.8.1.4. Checked 2026-10-27.
 - International Plumbing Code 405.3.1, ICC "Significant Changes" excerpt (2018 edition), https://www.iccsafe.org/wp-content/uploads/2018SC-PMG_P405.3.1.pdf: 30" compartment width, 60"/56" depth. Checked 2026-10-27.
 - Bradley, Phenolic Floor-Mounted Overhead-Braced PH400 Series spec sheet, https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf: 58" doors and panels at 12", 82" overall height, example layout dimensions. Checked 2026-10-27.
 - Bradley Partitions brochure, https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf: 72" at 6" and 69" at 9" for ADA stalls. Checked 2026-10-27.
@@ -182,6 +217,7 @@ Only with care. The front partition and one side partition need 9" of toe cleara
 - ASI Global Partitions, Ultimate Privacy, https://asi-globalpartitions.com/style/ultimate-privacy/: 64"/72" heights, No Sight-55. Checked 2026-10-27.
 - Scranton Products Hiny Hiders guide specification, https://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf: 55" doors. Checked 2026-10-27.
 - Metpar standard part sizes, https://www.metpar.com/wp-content/uploads/2018/01/Metpar-Standard-Part-Sizes.pdf: door widths and 58" height. Checked 2026-10-27.
+- Bradley, Series 400 Phenolic Installation Guide, HDWC-INSTR-040 Rev. A (2021), manufacturer document, copy reviewed 2026-10-27: 12" spacer, 1/8" door gap and spacers, 1" panel to wall, 1/2" panel to pilaster, 1/2" to 1-1/4" at walls (the installation gaps drawing).
 
 <!-- For Marc -->
 ## Corrections to the current page
@@ -200,7 +236,7 @@ Only with care. The front partition and one side partition need 9" of toe cleara
 
 - **Keyword and cannibalization decision for Marc.** The blog calendar had "Standard Bathroom Stall Sizes and Dimensions (Complete Guide)" as a new blog post. We put it on this existing URL instead so the two pages don't compete. Drop that calendar item. Link every mention of stall sizes to this page. The main bathroom stall dimensions keyword (1,000/mo) lives here; /guides/standard-sizes now targets partition component sizes.
 - Structured data: FAQPage (6 Q&As), BreadcrumbList Home > Guides > Bathroom Stall Dimensions. Optional Article schema.
-- Drawings used: sheet-plan (no numbered callouts, so the key is a bulleted list), stall-gaps (key matches the drawing's 4 callouts), measure-new-restroom-plan and -section (lettered A to F; the lead to confirm the lettering matches the finished drawing).
+- Drawings used: sheet-plan (no numbered callouts, so the key is a bulleted list), stall-gaps (key matches the drawing's 4 callouts), install-gaps, accessible-stall-plan, accessible-stall-heights, measure-new-restroom-plan and -section (lettered A to F; the lead to confirm the lettering matches the finished drawing).
 - Internal links: add from /guides, /guides/ada-compliance, /guides/standard-sizes, /guides/restroom-layout, /mounting-styles (already links here), /industries/* stall-size bullets.
 - Lawyer review of the code wording is part of launch (CLAUDE.md content principles).
 - Images wanted: a job photo of a row of stalls with the accessible stall at the end; a tape measure across a compartment; a photo of a 12" floor gap with a tape.
