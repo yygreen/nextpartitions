@@ -27,11 +27,6 @@ This guide explains how each material is built, using the manufacturers' own des
 
 Bobrick sorts these into four construction methods, which is a useful way to think about them: honeycomb (painted metal and stainless steel), bonded (high-pressure laminate), layered (compact laminate, which is phenolic) and homogeneous (HDPE, and Bobrick's own SCRC material).
 
-
-:::expert
-Which material do you sell most, and to which kind of building?
-:::
-
 ## Powder coated steel
 
 A powder coated steel partition is a sandwich. ASI describes its powder coated partitions as galvannealed steel with a honeycomb core "for solid construction and sound attenuation", finished with a thermoset hybrid powder coating that resists wear, fading and scuffing. You'll also see these called painted metal or baked enamel partitions.

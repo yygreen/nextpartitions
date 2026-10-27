@@ -24,11 +24,6 @@ Bathroom partition hardware is the set of metal parts that holds a toilet compar
 | Doors | Replacement stall doors in every material we carry | [Doors](/hardware/doors) |
 | Structural parts | Wall and U-brackets, continuous brackets, pilaster shoes, headrails, fasteners | [Replacement Parts](/hardware/parts) |
 
-
-:::expert
-Which hardware upgrade is worth paying for, and which isn't?
-:::
-
 ## What commercial bathroom stall hardware is made of
 
 Hardware material and finish vary by manufacturer and by partition material. Common options in manufacturers' current literature:

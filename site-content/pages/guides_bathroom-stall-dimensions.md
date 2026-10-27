@@ -30,12 +30,6 @@ ADA figures are minimums. Anything bigger that still meets the other rules is fi
 
 *Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.*
 
-
-<!-- expert question (for Abe): Do buyers ask for wider or deeper stalls than standard? Which sizes, and why? -->
-:::advice
-Ask whether a size is clear or overall. An accessible compartment listed as 60" can be 60" clear and 60-1/2" overall, and those half inches add up along a row of stalls. Check the room against overall sizes.
-:::
-
 ## Standard bathroom stall size
 
 There is no single "standard" in a code. The usual commercial bathroom stall size is a compartment about 36" wide and 60" or slightly deeper, and it is common because it clears the plumbing minimums with room to spare.

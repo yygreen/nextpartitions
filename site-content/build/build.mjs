@@ -88,7 +88,7 @@ const expert = (block) => {
   const [name, ...rest] = by.split(','), role = rest.join(',').trim()
   // Laid out like the title block of a technical drawing: the quote across the top, a ruled strip below with
   // the name and role, and the logo cell.
-  return `<figure class="np-tb"><blockquote class="np-tb-quote${quote ? '' : ' np-tb-ph'}">${esc(quote ? `“${quote}”` : 'Placeholder: the answer goes here, in the expert\'s own words. Two to four sentences of first-hand advice from real jobs.')}</blockquote>`
+  return `<figure class="np-tb"><blockquote class="np-tb-quote${quote ? '' : ' np-tb-ph'}">${esc(quote ? `“${quote}”` : `Placeholder for the answer, in the expert's own words, to: ${q}`)}</blockquote>`
     + `<figcaption class="np-tb-strip"><div class="np-tb-cell"><span class="np-tb-val">${esc(name || '[Name]')}</span><span class="np-tb-role">${esc(role || '[Role], Next Partitions')}</span></div>`
     + `<div class="np-tb-cell np-tb-brand"><img src="${LOGO}" alt="" width="26" height="27"><span><b>Next Partitions</b><br>Expert advice</span></div></figcaption></figure>`
 }

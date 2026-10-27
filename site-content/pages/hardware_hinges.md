@@ -49,11 +49,6 @@ Wrap-around hinges mount on the surface, with flanges that wrap around the door 
 
 A continuous (piano) hinge runs the full height of the door. Bobrick's continuous option is a one-piece, full-height 16-gauge (1.6 mm) Type-304 stainless steel hinge. It is a gravity type, and Bobrick notes it relies on door weight to close, "which may result in door slamming". Scranton's spec form lists 54" continuous hinges in aluminum (spring) and stainless steel (cam or spring). Ammco lists both a stainless "cam" piano hinge and a spring-loaded piano hinge. One trade-off to check: Scranton's spec form states that emergency access does not work with its continuous spring hinges.
 
-
-:::expert
-What photo or measurement do you need to match a hinge on the first try?
-:::
-
 ## Rest position and self-closing doors
 
 Gravity and cam hinges let you choose where the door rests:

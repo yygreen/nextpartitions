@@ -42,11 +42,6 @@ For hinges, latches and door pulls, see [Hinges](/hardware/hinges), [Locks & Lat
 
 Materials above come from current manufacturer literature: All American Metal (Ammco) lists single-ear and double-ear sets, U-brackets, alcove brackets, aluminum and stainless continuous brackets, a headrail return set and pilaster mounting kits for its powder coated partitions. ASI Global lists stainless steel, aluminum and chrome-plated zamac brackets and stainless steel shoes. Scranton Products specifies stainless steel or molded HDPE pilaster sleeves on Hiny Hiders.
 
-
-:::expert
-What should a buyer send so you can match a part on the first try?
-:::
-
 ## How thick are bathroom stall partitions?
 
 Bracket and headrail sizes follow the panel and pilaster thickness, so measure before you request parts. Typical figures from manufacturers:

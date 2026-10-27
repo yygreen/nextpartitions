@@ -26,11 +26,6 @@ Pilasters hang from structural steel above the finished ceiling and never touch 
 ### Floor to ceiling
 Pilasters are anchored into the concrete floor and into structural support at the ceiling. ASI describes the style as "extremely stable and durable," and Hadrian recommends it for high-traffic areas such as schools. [Floor to ceiling partitions →](/mounting-styles/floor-to-ceiling)
 
-
-:::expert
-What's the most common reason a job switches mounting style after the first quote?
-:::
-
 ## Compare mounting styles
 
 ![The four bathroom partition mounting styles side by side, front view, with the support system in orange](/images/diagrams/mounting-styles-compare.svg)

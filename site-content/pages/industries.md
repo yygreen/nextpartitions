@@ -27,11 +27,6 @@ The right bathroom partitions depend on who uses the restroom, how hard they use
 
 Mounting follows the building: see [mounting styles](/mounting-styles) for what each one needs from the floor and ceiling. [Ceiling hung](/mounting-styles/ceiling-hung) works only where engineered steel sits above the ceiling.
 
-
-:::expert
-Which facility type gets the material choice wrong most often, and what should it use?
-:::
-
 ## Schools
 
 School restrooms take kicks, graffiti, hanging on doors and daily disinfecting. Solid plastic and phenolic are the usual choices. Elementary restrooms often use lower doors and panels than secondary schools; confirm the heights available for your material and manufacturer. If an accessible compartment is designed for children ages 3 to 12, it has its own dimensions and 12 inches of toe clearance (2010 ADA Standards 604.9, 604.8.1.4). [Schools page](/industries/schools).

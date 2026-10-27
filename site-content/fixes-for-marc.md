@@ -69,7 +69,7 @@ Each rebuilt page shows its main drawing beside the title, drawn straight on the
 
 ## 9. Expert advice boxes
 
-24 pages have an expert advice box, laid out like the title block of a technical drawing to match the drawings: a brown (`#2d1e14`) panel with the quote large across the top, and a ruled strip below with two cells: the name with the role under it, and the logo cell (the orange N with "Next Partitions / Expert advice"). No labels, and the question isn't shown: it stays in the page file for reference. On a phone the logo cell shows the N only. In the page files it's a block:
+The expert advice box is, laid out like the title block of a technical drawing to match the drawings: a brown (`#2d1e14`) panel with the quote large across the top, and a ruled strip below with two cells: the name with the role under it, and the logo cell (the orange N with "Next Partitions / Expert advice"). No labels, and the question isn't shown: it stays in the page file for reference. On a phone the logo cell shows the N only. In the page files it's a block:
 
 ```
 :::expert
@@ -91,4 +91,4 @@ The tip, one to three sentences.
 :::
 ```
 
-It's on three pages for comparison (restroom layout, stall dimensions, phenolic); the other pages keep the expert quote box. Pick one for the site, or use the advice box where no expert quote comes in.
+**For now both boxes appear only in the showcase article, `/guides/restroom-layout`** (two advice boxes, one expert quote box). The other drafts have none until Abe picks the style and sends his answers.

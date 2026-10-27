@@ -20,24 +20,22 @@ Start with the room seen from above. These four measurements decide how many sta
 
 ![Plan of an empty restroom seen from above, with the stall wall run, room depth, entry door and toilet centerlines lettered](/images/diagrams/measure-new-restroom-plan.svg)
 
-- **A.** room width along the wall where the stalls go.
-- **B.** room depth, from the stall wall to the opposite wall.
-- **D.** entry door location and which way it swings.
-- **E.** toilet centerlines, measured from the side wall.
+- **A.** Room width along the wall where the stalls go.
+- **B.** Room depth, from the stall wall to the opposite wall.
+- **D.** Entry door location and which way it swings.
+- **E.** Toilet centerlines, measured from the side wall.
 
 Then look at the room from the side, as if it were cut through. This view is about height and structure: what the partitions stand on and what they can hang or brace from, which decides the mounting style.
 
 ![Section through a restroom showing ceiling height and the floor and ceiling construction](/images/diagrams/measure-new-restroom-section.svg)
 
-- **C.** ceiling height, floor to finished ceiling.
-- **F.** floor construction (slab, tile over slab) and the structure above the ceiling (open steel, concrete deck, drop ceiling).
+- **C.** Ceiling height, floor to finished ceiling.
+- **F.** Floor construction (slab, tile over slab) and the structure above the ceiling (open steel, concrete deck, drop ceiling).
 
 A and E decide how many stalls fit. C and F decide the mounting style. D decides what a person sees and where the doors can swing.
 
-
-<!-- expert question (for Abe): What layout mistake do you see most on drawings from architects or contractors? -->
 :::advice
-Measure before you ask for a quote. The wall run (A) and the toilet centerlines (E) decide how many stalls fit, and the ceiling height and structure (C, F) decide the mounting style. Send photos of the floor and ceiling with your numbers: they answer most of the questions we'd otherwise have to ask.
+Measure before you ask for a quote. Send all six numbers with photos of the floor and the ceiling: they answer most of the questions we would otherwise have to ask, and a quote built on real measurements doesn't change when the shop drawings come back.
 :::
 
 ## Step 2: Count the stalls along the wall
@@ -85,8 +83,6 @@ Your jurisdiction decides which edition of the IPC applies, and it may amend it.
 - In front of the urinal: **21" minimum** clear.
 - Urinal screens, drawn between the urinals, give privacy. The spacing is measured to the urinal centerlines, so confirm the screen size and where it mounts with the manufacturer before you set the layout.
 
-The spacing numbers the old page gave (13" to 15" from the wall, 24" to 30" between urinals) are below the IPC minimums. See the corrections below.
-
 ## Step 4: Door swing and clear floor space
 
 Every door needs floor to swing over.
@@ -96,6 +92,10 @@ Every door needs floor to swing over.
 - **The outswing door** then opens into the room, so it must not block another door, a fixture or the route to the lavatory.
 - **Latch-side approach.** If a person approaches the accessible door on the latch side, 42" of clearance is required beside the door (604.8.1.2).
 - **Door position.** The accessible compartment door sits within 4" of the side wall or partition farthest from the toilet (front-partition door), or within 4" of the front partition (side-wall door).
+
+:::expert
+What layout mistake do you see most on drawings from architects or contractors?
+:::
 
 ## Step 5: The accessible route and turning space
 
@@ -111,14 +111,18 @@ Measurements C and F decide this.
 
 | What the building has | Style that fits | Why |
 |---|---|---|
-| No structure above the ceiling, floor takes anchors | [Overhead braced](/mounting-styles/overhead-braced) or [floor mounted](/mounting-styles/floor-mounted) | Bobrick recommends these when adequate ceiling support can't be provided |
+| No structure above the ceiling, floor takes anchors | [Overhead braced](/mounting-styles/overhead-braced) or [floor mounted](/mounting-styles/floor-mounted) | They need no structure above the ceiling |
 | Floor can't take anchors | [Ceiling hung](/mounting-styles/ceiling-hung) | Nothing touches the floor; the building must supply engineered steel above the ceiling |
-| High ceiling or open look | Floor mounted | No headrail; needs a sound slab (Bobrick: anchors 2" into concrete at least 3" thick) |
+| High ceiling or open look | Floor mounted | No headrail; needs a sound slab, with anchors at least 2" into concrete at least 3" thick |
 | Heavy use, schools, public restrooms | [Floor to ceiling](/mounting-styles/floor-to-ceiling) | Anchored at floor and ceiling |
 
 ![The four bathroom partition mounting styles side by side, front view](/images/diagrams/mounting-styles-compare.svg)
 
 Compare all four on [mounting styles](/mounting-styles).
+
+:::advice
+Before you settle on ceiling hung, ask whether the steel above the ceiling is on the structural drawings. The partitions don't include it, and another trade has to design and install it. If it isn't there, overhead braced or floor mounted is the simpler choice.
+:::
 
 ## FAQ
 

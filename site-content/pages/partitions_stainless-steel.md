@@ -26,11 +26,6 @@ ASI builds its stainless partitions from Type 304 stainless steel over a honeyco
 
 Hardware: ASI uses Type 304 stainless for its leveling shoes. Bobrick's hardware is 18-8 Type-304 stainless with a satin finish, and its pilaster shoe is 4" high.
 
-
-:::expert
-When do you recommend stainless steel, and when do you steer a buyer away from it?
-:::
-
 ## Fire rating
 
 Bobrick lists a Class A rating among stainless steel's strengths. Class A means a flame spread index of 25 or less under ASTM E84. Ratings are published per product line, so ask for the test data for the brand you specify. Stainless is not covered by the NFPA 286 rule that applies to [HDPE](/partitions/solid-plastic-hdpe).

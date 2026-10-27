@@ -26,11 +26,6 @@ ASI's version adds Moisture Guard edge banding that fuses with the core.
 2. **Faces:** high-pressure decorative laminate bonded to both faces.
 3. **Edge:** an edge band sealing the core; some lines fuse it to the core for moisture resistance.
 
-
-:::expert
-When do you recommend plastic laminate, and when do you steer a buyer away from it?
-:::
-
 ## Fire rating
 
 Bobrick lists its high-pressure laminate as Class B (flame spread 60) in its 2018 CEU presentation. Class B is a flame spread index of 26 to 75 under ASTM E84. The current page's "Class A standard" is therefore not right for Bobrick's laminate. Other brands may differ. Ask for the rating of the line and decor you pick.

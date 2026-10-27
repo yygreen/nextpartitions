@@ -28,11 +28,6 @@ Published thicknesses (Metpar): 1" doors and panels, 1-1/4" pilasters. Metpar's 
 
 Hardware is typically chrome-plated zamac (a die-cast zinc alloy). Metpar and ASI both list stainless steel hardware as an option. Metpar's pilaster shoe is 4" high in #4 stainless.
 
-
-:::expert
-When do you recommend powder coated steel, and when do you steer a buyer away from it?
-:::
-
 ## Fire rating
 
 Bobrick's materials guide gives painted metal a Class A interior finish rating, where Class A is a flame spread index of 25 or less under ASTM E84. That is Bobrick's statement for the material in general. Ratings are published per product line, so ask for the test data for the brand and finish you specify. Powder coated steel is not subject to the NFPA 286 requirement that applies to [HDPE](/partitions/solid-plastic-hdpe).

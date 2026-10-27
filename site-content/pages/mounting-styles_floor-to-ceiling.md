@@ -27,11 +27,6 @@ One point clears up most confusion: "floor to ceiling" describes the **pilasters
 - **Covers:** a shoe at the floor and a sleeve (cap) at the ceiling hide the anchors (NY OGS).
 - **Doors and panels:** standard height. Bobrick's are 58" high. Hadrian's solid plastic floor-to-ceiling series uses 55" doors and panels mounted 14" above the finished floor. Doors are hung level and aligned with the panels.
 
-
-:::expert
-Where do you recommend floor-to-ceiling over overhead-braced?
-:::
-
 ## Structure needed
 
 Floor to ceiling needs work at both ends, so check both before choosing it.

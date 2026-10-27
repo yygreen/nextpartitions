@@ -68,11 +68,6 @@ Then look at the room from the side, as if it were cut through. This view is abo
 5. **C:** ceiling height, floor to finished ceiling.
 6. **F:** floor construction (slab, tile over slab) and the structure above the ceiling (open steel, concrete deck, drop ceiling).
 
-
-:::expert
-What should a buyer check or prepare before the installer arrives?
-:::
-
 ## The general sequence for overhead-braced and floor-mounted
 
 The order below is the typical one across manufacturers. Your guide may differ in detail.
