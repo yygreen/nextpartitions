@@ -80,3 +80,15 @@ The question we asked
 ```
 
 Until Abe answers, a block holds only the question and the preview shows a placeholder quote, name and role. **Don't publish a box without a quote:** leave it out of the live page until the answer is in. The previews render it in `build/build.mjs` (`expert`).
+
+### 9b. Alternative: general advice box
+
+A second version with no person attached: a tip in Next Partitions' own voice, written from facts the page already sources. Ink-framed white box, a brown band on top with the logo and "Next Partitions advice", an orange rule under the band, the tip in larger ink text. In the page files:
+
+```
+:::advice
+The tip, one to three sentences.
+:::
+```
+
+It's on three pages for comparison (restroom layout, stall dimensions, phenolic); the other pages keep the expert quote box. Pick one for the site, or use the advice box where no expert quote comes in.

@@ -35,8 +35,9 @@ Then look at the room from the side, as if it were cut through. This view is abo
 A and E decide how many stalls fit. C and F decide the mounting style. D decides what a person sees and where the doors can swing.
 
 
-:::expert
-What layout mistake do you see most on drawings from architects or contractors?
+<!-- expert question (for Abe): What layout mistake do you see most on drawings from architects or contractors? -->
+:::advice
+Measure before you ask for a quote. The wall run (A) and the toilet centerlines (E) decide how many stalls fit, and the ceiling height and structure (C, F) decide the mounting style. Send photos of the floor and ceiling with your numbers: they answer most of the questions we'd otherwise have to ask.
 :::
 
 ## Step 2: Count the stalls along the wall

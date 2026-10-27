@@ -32,8 +32,9 @@ Phenolic parts are thinner than laminate or HDPE parts. Bobrick (1080 Series, Du
 3. **Edge:** the cut edge of the fused sheet. It shows the core color: black on black core, the panel color on color-through.
 
 
-:::expert
-When do you recommend phenolic, and when do you steer a buyer away from it?
+<!-- expert question (for Abe): When do you recommend phenolic, and when do you steer a buyer away from it? -->
+:::advice
+Phenolic is thinner than steel, laminate or solid plastic: 3/4" doors and pilasters, 1/2" panels. When you order hinges, brackets or a replacement door for phenolic stalls, tell us the material first, because the hardware is sized to that thickness.
 :::
 
 ## Fire rating
