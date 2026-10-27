@@ -48,10 +48,10 @@ How to read the plan:
 
 - **Left to right:** the accessible (ADA) compartment, 60" clear and 60-1/2" overall, with an outswing door and grab bars; the ambulatory compartment, 36" clear and 36-1/2" overall, with grab bars on both sides; then two standard compartments, 36" each, with inswing doors.
 - **The 169" figure** is the overall length of the run. **61-1/4" to face** is the depth to the face of the doors and panels.
-- **Door swings:** the accessible and ambulatory doors swing out, the standard doors swing in, as in Bradley's example.
+- **Door swings:** the accessible and ambulatory doors swing out, the standard doors swing in.
 - **Grab bars** follow 2010 ADA Standards 604.5 (the side bar is at least 42" long and starts no more than 12" from the rear wall; the rear bar is at least 36" long).
 
-The drawing is one manufacturer's example layout, not a rule. Your sizes depend on the brand and the room.
+The drawing is an example layout, not a rule. Your sizes depend on the brand and the room.
 
 ## Panel, door and pilaster heights
 
@@ -64,7 +64,7 @@ Panels and doors on a traditional partition do not run to the floor. They are mo
 3. Above the doors and panels
 4. At the wall
 
-| Dimension | Typical figure | Source |
+| Dimension | Typical figure | Notes |
 |---|---|---|
 | Door and panel height | 58" | Standard across the major brands |
 | Floor clearance | 12" | Standard across the major brands |
