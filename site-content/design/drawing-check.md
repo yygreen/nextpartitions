@@ -52,6 +52,16 @@ Files: `material-section-phenolic`, `-solid-plastic`, `-plastic-laminate`, `-pow
 
 Not confirmed, so not drawn or dimensioned: steel face gauge (search results on 2026-10-27 point to 22 gauge in Hadrian and agency specs, not opened); the edge construction of phenolic, HDPE, steel and stainless (drawn as a plain outline; the page key says "edge not described in held sources"); the thickness of melamine and HPL faces and of the edge band; stainless door thickness.
 
+### Edges confirmed 2026-10-27
+
+Callout 3 now shows each edge as the manufacturers describe it, drawn in ink (orange stays on the core). Stainless is now dimensioned 1". This supersedes the "not confirmed" edge and stainless-thickness items above; face, edge-layer and chamfer thicknesses are still not dimensioned (the HDPE radius is drawn to scale).
+
+- Phenolic: machined smooth, small chamfer on both arrises. Bradley PH400 (45° chamfer) https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf ; Metpar black core (polished and beveled) https://metpar.com/toilet-partitions/phenolic-black-core/
+- Solid plastic (HDPE): rounded to a 1/4" radius. Scranton Hiny Hiders general specifications http://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf
+- Plastic laminate: a thin laminate layer over the edge, sealing the core (.050" HPL on faces and edges). Bobrick 1040 data sheet https://www.bobrick.com/wp-content/uploads/1040_td.pdf
+- Powder coated steel: formed edge molding interlocking with the two face sheets (20 ga molding, 22 ga faces). Metpar powder coated https://metpar.com/toilet-partitions/powder-coated/ and master spec https://metpar.com/wp-content/uploads/2021/05/Powder-Coated-Overhead-Braced-Standard-Master-Spec.docx
+- Stainless steel: same formed, interlocking edge; doors 1". Metpar stainless https://metpar.com/toilet-partitions/stainless-steel/ and master spec https://metpar.com/wp-content/uploads/2021/05/Stainless-Steel-Floor-Mounted-Standard-Master-Spec.docx
+
 ## Urinal spacing (plan, seen from above)
 
 File: `urinal-spacing`. A back wall with a side wall on the left, three wall-hung urinals, urinal screens between them. Orange: the centerlines and the centerline spacing, **15" min** from the side wall to the first centerline and **30" min** centerline to centerline. Muted: **21" min** clear in front of the urinal to a dashed line standing for any wall, fixture or door. Note on the drawing: with a screen between urinals, each centerline also needs 15" min to the screen.

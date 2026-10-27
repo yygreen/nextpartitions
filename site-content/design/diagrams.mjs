@@ -531,24 +531,30 @@ writeFileSync(new URL('sheets.json', OUT), JSON.stringify(sheets, null, 2) + '\n
 
 // ---------- material cross-sections (edge view, cut through a door) ----------
 // Construction and door thicknesses as sourced in pages/blog_what-are-bathroom-partitions-made-of.md and
-// pages/hardware_doors.md (checked 2026-10-26); see drawing-check.md. Overall thickness is dimensioned only where a
-// manufacturer gives it. Face, skin and edge-band thicknesses are not published in those sources, so they are drawn
-// thin and not dimensioned. Stainless is drawn at 1" like powder coated steel but not dimensioned (no manufacturer
-// source opened).
+// pages/hardware_doors.md (checked 2026-10-26); edges as confirmed in pages/partitions_*.md (checked 2026-10-27), see
+// drawing-check.md. Overall thickness is dimensioned only where a manufacturer gives it. Face, skin and edge-layer
+// thicknesses and the chamfer size are not published, so they are drawn small and not dimensioned. Callout 3, the
+// edge, is drawn in ink: phenolic machined with a small chamfer on both arrises, HDPE rounded to a 1/4" radius (to
+// scale), laminate with a thin laminate layer sealing the core end, steel and stainless with a formed edge molding
+// that interlocks with the two face sheets.
 const MATERIALS = {
   phenolic: { name: 'Phenolic (compact laminate)', t: 0.75, dim: '3/4"', src: 'Bobrick DuraLine, Bradley PH400' },
   'solid-plastic': { name: 'Solid plastic (HDPE)', t: 1, dim: '1"', src: 'Scranton Products Hiny Hiders' },
   'plastic-laminate': { name: 'Plastic laminate', t: 1, dim: '1"', src: 'Bobrick DesignerSeries HPL' },
   'powder-coated-steel': { name: 'Powder coated steel', t: 1, dim: '1"', src: 'Metpar powder coated' },
-  'stainless-steel': { name: 'Stainless steel', t: 1, dim: null, src: null },
+  'stainless-steel': { name: 'Stainless steel', t: 1, dim: '1"', src: 'Metpar stainless steel' },
 }
 // One door cut through near its edge: a break line on the left, the edge on the right. k = px per inch.
 // Returns the body plus the points callouts aim at.
 function matSection(kind, x0, y0, len, k) {
   const { t } = MATERIALS[kind], T = t * k, x1 = x0 + len, y1 = y0 + T
   const brk = (y) => `M${x0} ${y0} L${x0 + 6} ${y0 + T * 0.3} L${x0 - 6} ${y0 + T * 0.6} L${x0} ${y1}`
-  const clip = `<clipPath id="m-${kind}-${x0}-${y0}"><path d="${brk()} L${x1} ${y1} L${x1} ${y0} Z"/></clipPath>`
-  let g = ''
+  // The edge outline, top arris to bottom arris.
+  let edge = `L${x1} ${y0} L${x1} ${y1}`
+  if (kind === 'phenolic') { const c = Math.max(3, Math.round(k * 0.07)); edge = `L${x1 - c} ${y0} L${x1} ${y0 + c} L${x1} ${y1 - c} L${x1 - c} ${y1}` }
+  if (kind === 'solid-plastic') { const r = 0.25 * k; edge = `L${x1 - r} ${y0} A${r} ${r} 0 0 1 ${x1} ${y0 + r} L${x1} ${y1 - r} A${r} ${r} 0 0 1 ${x1 - r} ${y1}` }
+  const clip = `<clipPath id="m-${kind}-${x0}-${y0}"><path d="M${x0} ${y0} ${edge} L${x0} ${y1} L${x0 - 6} ${y0 + T * 0.6} L${x0 + 6} ${y0 + T * 0.3} Z"/></clipPath>`
+  let g = '', over = ''
   const face = Math.max(4, Math.round(k * 0.04)) // drawn thickness of a face or skin (not to a source)
   const pts = { core: [x0 + len * 0.3, y0 + T / 2], face: [x0 + len * 0.55, y0 + 1], edge: [x1, y0 + T / 2] }
   if (kind === 'solid-plastic') {
@@ -560,42 +566,52 @@ function matSection(kind, x0, y0, len, k) {
     g += rect(x0 - 10, y0, len + 10, face, { fill: C.part, sw: 1 }) + rect(x0 - 10, y1 - face, len + 10, face, { fill: C.part, sw: 1 }) // melamine faces
   }
   if (kind === 'plastic-laminate') {
-    const band = face + 2
+    const band = face // the edge is laminated like the faces: a thin layer sealing the core end
     g += rect(x0 - 10, y0, len + 10 - band, T, { fill: C.orange, stroke: 'none' })
     // particleboard: a fixed scatter of chips
     let seed = 7
     const rnd = () => ((seed = (seed * 9301 + 49297) % 233280) / 233280)
     for (let i = 0; i < len * T / 70; i++) {
-      const cx = x0 - 6 + rnd() * (len - band), cy = y0 + face + 2 + rnd() * (T - 2 * face - 4)
+      const cx = x0 - 6 + rnd() * (len - band - 4), cy = y0 + face + 2 + rnd() * (T - 2 * face - 4)
       g += `<rect x="${cx.toFixed(1)}" y="${cy.toFixed(1)}" width="${(2 + rnd() * 4).toFixed(1)}" height="1.6" fill="#fff" transform="rotate(${Math.round(rnd() * 180)} ${cx.toFixed(1)} ${cy.toFixed(1)})"/>`
     }
     g += rect(x0 - 10, y0, len + 10 - band, face, { fill: C.part, sw: 1 }) + rect(x0 - 10, y1 - face, len + 10 - band, face, { fill: C.part, sw: 1 }) // HPL faces
-    g += rect(x1 - band, y0, band, T, { fill: C.part, sw: 1 }) // edge banding
+    g += rect(x1 - band, y0, band, T, { fill: C.part, sw: 1 }) // HPL edge
     pts.edge = [x1 - band / 2, y0 + T / 2]
   }
   if (kind === 'powder-coated-steel' || kind === 'stainless-steel') {
-    const skin = 3, edge = 0
-    g += rect(x0 - 10, y0, len + 10, T, { fill: C.orangeTint, stroke: 'none' })
+    const skin = 3
+    // formed edge molding: a channel whose web is the door edge and whose flanges continue the face planes, hooked
+    // behind the turned-in ends of the two face sheets
+    const w = Math.max(12, Math.round(k * 0.3)), h = Math.max(4, Math.round(T * 0.24)), j = x1 - w // j: the joint
+    const hook = Math.max(4, Math.round(w * 0.35)), r = j - (k < 50 ? 2 : 4) // r: the face sheets' turned-in ends
+    g += rect(x0 - 10, y0, j - x0 + 10, T, { fill: C.orangeTint, stroke: 'none' })
     // honeycomb cut through: the cell walls run face to face, so the section shows them as lines across the core,
-    // in pairs where two cells are bonded
+    // in pairs where two cells are bonded; it stops short of the edge molding
     const cell = Math.max(10, k * 0.16)
     let d = '', n = 0
-    for (let x = x0 - 10; x < x1 - edge - 3; x += n++ % 2 ? cell : 3) d += `M${x.toFixed(1)} ${y0 + skin} V${y1 - skin}`
+    for (let x = x0 - 10; x < r - hook - 4; x += n++ % 2 ? cell : 3) d += `M${x.toFixed(1)} ${y0 + skin} V${y1 - skin}`
     g += `<path d="${d}" fill="none" stroke="${C.orange}" stroke-width="2"/>`
-    g += rect(x0 - 10, y0, len + 10, skin, { fill: C.ink, stroke: 'none' }) + rect(x0 - 10, y1 - skin, len + 10, skin, { fill: C.ink, stroke: 'none' }) // steel faces
-    // edge: not described in the held sources, so a plain outline
+    g += rect(x0 - 10, y0, r - x0 + 10, skin, { fill: C.ink, stroke: 'none' }) + rect(x0 - 10, y1 - skin, r - x0 + 10, skin, { fill: C.ink, stroke: 'none' }) // face sheets
+    const sw = k < 50 ? 1.5 : 2
+    // face sheets turned in at the joint
+    over += `<path d="M${r - sw / 2} ${y0 + skin} V${y0 + skin + h} M${r - sw / 2} ${y1 - skin} V${y1 - skin - h}" fill="none" stroke="${C.ink}" stroke-width="${sw}"/>`
+    // the molding: flanges in the face planes, the web on the edge, the flange tips hooked behind the face returns
+    over += `<path d="M${j} ${y0 + skin / 2} H${x1 - skin / 2} V${y1 - skin / 2} H${j}" fill="none" stroke="${C.ink}" stroke-width="${skin}"/>`
+    over += `<path d="M${j + sw / 2} ${y0 + skin} V${y0 + skin + h + sw + 1} H${r - hook} M${j + sw / 2} ${y1 - skin} V${y1 - skin - h - sw - 1} H${r - hook}" fill="none" stroke="${C.ink}" stroke-width="${sw}"/>`
+    pts.edge = [x1 - skin / 2, y0 + T / 2]
   }
-  const body = `${clip}<g clip-path="url(#m-${kind}-${x0}-${y0})">${g}</g><path d="${brk()} M${x0} ${y0} L${x1} ${y0} L${x1} ${y1} L${x0} ${y1}" fill="none" stroke="${C.ink}" stroke-width="1.5"/>`
+  const body = `${clip}<g clip-path="url(#m-${kind}-${x0}-${y0})">${g}</g>${over}<path d="${brk()} M${x0} ${y0} ${edge} L${x0} ${y1}" fill="none" stroke="${C.ink}" stroke-width="1.5"/>`
   return { body, pts, T, x1, y1 }
 }
 
 {
   const desc = {
-    phenolic: 'A phenolic (compact laminate) door cut through near its edge: layers of resin-impregnated kraft paper fused into one solid core, with decorative melamine faces. The core is black, or matches the face color on color-through lines. Doors are 3/4 inch thick.',
-    'solid-plastic': 'A solid plastic (HDPE) door cut through near its edge: one homogeneous sheet of high-density polyethylene, with no separate core, faces or edge band, and the color running all the way through. 1 inch thick.',
-    'plastic-laminate': 'A plastic laminate door cut through near its edge: a resin-impregnated particleboard core with high-pressure laminate bonded to both faces and an edge band covering the edge. 1 inch thick.',
-    'powder-coated-steel': 'A powder coated steel door cut through near its edge: two galvannealed steel faces, powder coated, over a honeycomb core. 1 inch thick. Steel gauge and edge construction are not shown.',
-    'stainless-steel': 'A stainless steel door cut through near its edge: two type 304 stainless steel faces over a honeycomb core. Thickness, gauge and edge construction are not shown.',
+    phenolic: 'A phenolic (compact laminate) door cut through near its edge: layers of resin-impregnated kraft paper fused into one solid core, with decorative melamine faces. The edge is the fused sheet itself, machined smooth with a small chamfer on both corners; it is black, or matches the face color on color-through lines. Doors are 3/4 inch thick.',
+    'solid-plastic': 'A solid plastic (HDPE) door cut through near its edge: one homogeneous sheet of high-density polyethylene, with no separate core, faces or edge band, and the color running all the way through. The edge is rounded to about a 1/4 inch radius. 1 inch thick.',
+    'plastic-laminate': 'A plastic laminate door cut through near its edge: a resin-impregnated particleboard core with high-pressure laminate bonded to both faces, and a thin laminate layer covering the edge so the core is sealed all round. 1 inch thick.',
+    'powder-coated-steel': 'A powder coated steel door cut through near its edge: two galvannealed steel face sheets, powder coated, over a honeycomb core. The edge is a formed steel molding that interlocks with the turned-in ends of both face sheets. 1 inch thick.',
+    'stainless-steel': 'A stainless steel door cut through near its edge: two type 304 stainless steel face sheets over a honeycomb core. The edge is a formed stainless molding that interlocks with the turned-in ends of both face sheets. 1 inch thick.',
   }
   // 780 wide, shown at its real size in the content column; 150 px per inch
   const k = 150, x0 = 120, y0 = 70, len = 470
@@ -630,7 +646,7 @@ function matSection(kind, x0, y0, len, k) {
   const ny = top + len + 74
   b += note(16, ny, 'Same scale, each door cut through and seen edge on.', 'start', 13)
   made.push(svg('material-sections-compare', 780, ny + 10, 'Partition materials compared, edge view',
-    'Five partition doors side by side, each cut through and seen edge on at the same scale: phenolic 3/4 inch, layered kraft paper core with melamine faces; solid plastic (HDPE) 1 inch, one solid sheet; plastic laminate 1 inch, particleboard core with laminate faces and an edge band; powder coated steel 1 inch and stainless steel, steel faces over a honeycomb core.', b))
+    'Five partition doors side by side, each cut through and seen edge on at the same scale: phenolic 3/4 inch, layered kraft paper core with melamine faces and a machined, chamfered edge; solid plastic (HDPE) 1 inch, one solid sheet with a rounded edge; plastic laminate 1 inch, particleboard core with laminate on the faces and the edge; powder coated steel and stainless steel 1 inch, steel faces over a honeycomb core joined by a formed, interlocking edge molding.', b))
 }
 
 // ---------- urinal spacing (plan, seen from above) ----------
