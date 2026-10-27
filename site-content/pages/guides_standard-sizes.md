@@ -55,6 +55,18 @@ How to measure a door for replacement: [replacement doors](/hardware/doors).
 
 Manufacturers publish panel and pilaster widths on each product's data sheet, and they differ by brand and series. We don't give one number here because there isn't one. Give us the brand, the series and the compartment width and depth, and we'll match them. The standard stall layout, 36" wide and about 60" deep, is covered in [bathroom stall dimensions](/guides/bathroom-stall-dimensions).
 
+Pilasters differ by where they stand. The drawing shows three, seen from above, with the door hinge and latch each one carries.
+
+![Three pilaster types seen from above: wall, alcove and middle](/images/diagrams/pilaster-types.svg)
+
+1. **Wall pilaster:** beside the side wall, carries the door hinge
+2. **Alcove pilaster:** on the end of a panel, carries the latch of the door beside it
+3. **Middle pilaster:** panel meets it from behind, carries one door's latch and the next door's hinge
+
+Wall brackets hold the panels and pilasters to the building. Their openings are sized to the part: 3/4" for a pilaster and 1/2" for a panel on the lines shown here.
+
+![Four bracket types: one-ear stirrup, two-ear stirrup, continuous ear and continuous U](/images/diagrams/bracket-types.svg)
+
 ## Thickness by material
 
 | Material | Door | Panel | Pilaster |

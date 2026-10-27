@@ -15,6 +15,8 @@ Commercial bathroom partitions are made from five main materials: powder coated 
 
 This guide explains how each material is built, using the manufacturers' own descriptions, and where each one fits.
 
+
+
 ## The short answer
 
 | Material | How the panel is built | What the manufacturers say it's suited to |
@@ -27,11 +29,21 @@ This guide explains how each material is built, using the manufacturers' own des
 
 Bobrick sorts these into four construction methods, which is a useful way to think about them: honeycomb (painted metal and stainless steel), bonded (high-pressure laminate), layered (compact laminate, which is phenolic) and homogeneous (HDPE, and Bobrick's own SCRC material).
 
+The drawing below cuts a door of each material through and shows them edge on at the same scale, so you can see the core you are paying for.
+
+![Five partition doors cut through and seen edge on: phenolic, solid plastic, plastic laminate, powder coated steel, stainless steel](/images/diagrams/material-sections-compare.svg)
+
 ## Powder coated steel
 
 A powder coated steel partition is a sandwich. ASI describes its powder coated partitions as galvannealed steel with a honeycomb core "for solid construction and sound attenuation", finished with a thermoset hybrid powder coating that resists wear, fading and scuffing. You'll also see these called painted metal or baked enamel partitions.
 
 In Bobrick's comparison, painted metal's strengths are availability, low cost, the option to repaint, and a Class A interior finish rating. Its weaknesses are that it can rust, dent and scratch, and that graffiti is harder to deal with. That makes powder coated steel a common pick for offices, retail and other dry restrooms where budget matters more than abuse resistance.
+
+![Powder coated steel door, cut through: steel faces over a honeycomb core](/images/diagrams/material-section-powder-coated-steel-m.svg "side")
+
+1. Honeycomb core
+2. Powder coated steel faces
+3. Formed steel edge molding
 
 See colors and specs on the [powder coated steel partitions](/partitions/powder-coated-steel) page.
 
@@ -41,6 +53,12 @@ Stainless steel partitions use the same honeycomb construction with a stainless 
 
 Bobrick lists corrosion resistance, cleanliness, design appeal and a Class A rating as stainless steel's strengths; it can still dent and scratch, and it's the most expensive material in Bobrick's comparison. Stainless shows up in airports, hospitals and upscale offices, where the restroom is part of the building's finish.
 
+![Stainless steel door, cut through: type 304 faces over a honeycomb core](/images/diagrams/material-section-stainless-steel-m.svg "side")
+
+1. Honeycomb core
+2. Type 304 stainless faces
+3. Formed stainless edge molding
+
 See finishes on the [stainless steel partitions](/partitions/stainless-steel) page.
 
 ## Plastic laminate
@@ -48,6 +66,12 @@ See finishes on the [stainless steel partitions](/partitions/stainless-steel) pa
 Plastic laminate partitions bond a decorative high-pressure laminate (HPL) to a wood-based core. Bobrick specifies a 45 lb density, resin-impregnated particleboard core, and its HPL doors, stiles and panels are 1" thick. ASI's version adds Moisture Guard edge banding that fuses with the core.
 
 Laminate's appeal is choice: Bobrick lists a wide color selection plus scratch, dent and graffiti resistance at a low cost. The trade-off is water. Bobrick notes that the core "may swell when exposed to excessive moisture" and that deep scratches can expose the dark kraft paper beneath the surface. Keep plastic laminate in dry, climate-controlled restrooms, not showers or pool areas.
+
+![Plastic laminate door, cut through: laminate bonded to a particleboard core](/images/diagrams/material-section-plastic-laminate-m.svg "side")
+
+1. Particleboard core
+2. High-pressure laminate faces
+3. Laminate edge, sealing the core
 
 See patterns on the [plastic laminate partitions](/partitions/plastic-laminate) page.
 
@@ -62,6 +86,12 @@ Two versions are common:
 
 Phenolic panels are thinner than laminate or HDPE panels. Bobrick and Bradley both make their phenolic panels 1/2" thick, with 3/4" doors and stiles (pilasters). Bobrick's materials guide lists water resistance, hardness and resistance to dents, scratches and graffiti as strengths, with one caveat: on black core material, a deep scratch can expose the black core.
 
+![Phenolic door, cut through: fused kraft paper layers with melamine faces](/images/diagrams/material-section-phenolic-m.svg "side")
+
+1. Fused resin-impregnated paper core
+2. Melamine faces
+3. Machined edge, the fused sheet itself
+
 See colors on the [phenolic partitions](/partitions/phenolic) page.
 
 ## Solid plastic (HDPE)
@@ -70,6 +100,12 @@ Solid plastic partitions are made from high-density polyethylene (HDPE), one hom
 
 Because the color runs through, scratches and gouges can be sanded out, which Bobrick lists as a strength along with water resistance and high recycled content. Bobrick also lists the downsides: HDPE has the softest surface of the common materials and scratches easily, graffiti made with xylene-based markers can "ghost" into the plastic, and the color range is more limited.
 
+
+![Solid plastic (HDPE) door, cut through: one solid sheet, color all the way through](/images/diagrams/material-section-solid-plastic-m.svg "side")
+
+1. One solid HDPE sheet, no separate core
+2. Color runs through the faces
+3. Rounded edge
 **Check the fire rating.** HDPE burns differently from the other materials, so the model codes treat it differently. Bobrick's code summary explains that the IBC, the International Fire Code, NFPA 101 and NFPA 1 regulate toilet partitions as interior finish, and require HDPE and polypropylene partitions to pass the NFPA 286 room-corner test. Other materials can be tested to ASTM E84 instead. In Bobrick's tests, untreated HDPE was unclassified under ASTM E84 because of its smoke development. Fire-rated HDPE is available: Scranton offers fire rating options on Hiny Hiders. If your building needs a rated partition, say so in your quote request, and ask for the test documentation.
 
 See colors on the [solid plastic (HDPE) partitions](/partitions/solid-plastic-hdpe) page.

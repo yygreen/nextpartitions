@@ -61,6 +61,17 @@ Manufacturers rarely publish door-gap sizes. Bobrick does, for its traditional p
 
 Bobrick describes these as "below industry standard", so other partitions may have wider door gaps. Floor clearance varies by line: ASI's solid plastic No Sight-55 line uses 55" doors and panels at 14" above the floor.
 
+The installer sets most of these gaps when the parts go in. The drawing shows the gaps in orange on a door and on a panel, both resting on a 12" spacer while they are fixed.
+
+![Gaps set at installation: door to pilaster, pilaster to wall, panel to back wall and panel to pilaster](/images/diagrams/install-gaps.svg)
+
+1. **Door to pilaster, hinge side:** 1/8"
+2. **Door to pilaster, latch side:** 1/8"
+3. **Wall pilaster to wall:** 1/2" to 1-1/4"
+4. **Spacer under door or panel:** 12"
+5. **Panel to back wall:** 1"
+6. **Panel to pilaster:** 1/2"
+
 ## How to reduce or eliminate the gaps
 
 ### 1. Overlapping door edges (no-sightline doors)
