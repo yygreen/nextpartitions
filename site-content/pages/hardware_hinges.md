@@ -82,6 +82,15 @@ Replace hinge parts when adjusting doesn't fix the problem, for example when the
 4. **Swing and hand**: inswing or outswing, and which side the hinge is on viewed from outside. Hinges are often handed; Bobrick, for example, sells separate L and J hinge sets.
 5. **Finish**: satin stainless, chrome-plated, aluminum or other.
 
+To read the hand, stand outside the stall and face the door: the side the hinge is on gives the hand, and the swing is in or out. The plans below show the four cases from above, hinge side in orange. On many lines one hinge or door covers two cases, ordered as RH or LH.
+
+![Door hand seen from above: right-hand inswing and left-hand outswing (RH), left-hand inswing and right-hand outswing (LH)](/images/diagrams/door-hand.svg)
+
+- **A** Right-hand inswing: hinge on the right, door swings into the stall.
+- **B** Left-hand outswing: hinge on the left, door swings out. The same door as A, turned over, so both are RH.
+- **C** Left-hand inswing.
+- **D** Right-hand outswing. The same door as C, so both are LH.
+
 [Contact Us](/contact) for replacement hinges.
 
 Upgrading a whole restroom to continuous hinges or new partitions? [Get a quote](/get-a-quote). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
@@ -114,6 +123,7 @@ Bobrick recommends a PTFE (Teflon-type) lubricant and advises against machine oi
 - [Metpar powder coated partitions](https://metpar.com/toilet-partitions/powder-coated/): no-rise adjustable cam, 3/8" pin. Checked 2026-10-26.
 - [Scranton Products Hiny Hiders guide specification](http://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): 8" aluminum wrap-around, nylon cams in 30° steps, Regal and Stealth hinges. Checked 2026-10-26.
 - [Scranton Products partition spec form](http://www.scrantonproducts.com/wp-content/uploads/2015/05/Partition__Vanity_Spec_Form_Estimating-3.pdf): integral hinge, 54" continuous hinge options, 15° inswing setting, emergency access note. Checked 2026-10-26.
+- Bradley, Series 400 Phenolic Installation Guide, HDWC-INSTR-040 Rev. A (2021), manufacturer document, copy reviewed 2026-10-27: hand judged facing the stall from outside; RH is right-hand inswing or left-hand outswing, LH the reverse (the same note is in its Series 500, 600 and 700 phenolic guides, HDWC-INSTR-042, -043 and -044 Rev. A, 2021). Used for the door hand drawing.
 - [All American Metal: powder coated partition hardware](https://allamericanmetal.com/hardware/view/PowderCoated): cam and spring-loaded piano hinges, bottom door cam. Checked 2026-10-26.
 
 <!-- For Marc -->

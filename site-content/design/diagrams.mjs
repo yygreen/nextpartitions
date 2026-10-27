@@ -984,6 +984,346 @@ withPhone(1, () => {
   phone('material-sections-compare-m', y, b)
 }
 
+// ---------- installation drawings (2026-10-27) ----------
+// Facts from the manufacturers' installation guides reviewed 2026-10-27 (see drawing-check.md): Bradley Series 400
+// phenolic HDWC-INSTR-040 Rev. A (2021) pages 4–21, with the same handing note and bracket heights in its Series 500,
+// 600 and 700 phenolic guides. Drawn as our own flat views; nothing is traced.
+//   Layout: a plumb line on the walls at each pilaster and panel centerline; bracket marks 19" and 63" above the
+//     highest point of the floor (third-bracket option 19" / 43" / 63"; continuous brackets one mark at 12-1/2");
+//     the pilaster line on the floor at the back-wall-to-face dimension less 3/8" (left to the page text: 3/8" can't
+//     be drawn at these scales).
+//   Hand: judged facing the stall from outside; RH = right-hand inswing or left-hand outswing, LH the reverse.
+//   Brackets: stirrup brackets with one or two ears, continuous "ear" brackets and U-brackets; 3/4" openings hold
+//     pilasters, 1/2" openings hold panels. Bracket sizes other than the openings are not dimensioned (no source).
+//   Pilasters: wall, alcove (fixed to a panel end with an alcove bracket) and middle pilasters, handed by the hinge
+//     and latch they carry.
+//   Sequence: layout, wall brackets, wall pilasters first, then panel and pilaster alternately (panel on a 12"
+//     spacer), headrail, then hinges and doors once the openings are checked, latches last.
+const cline = (x1, y1, x2, y2, o = {}) => line(x1, y1, x2, y2, { stroke: o.stroke ?? C.ink, sw: o.sw ?? 1.2, dash: o.dash ?? '12 3 2 3' })
+const mark = (x, y, w = 16, sw = 4) => line(x - w / 2, y, x + w / 2, y, { stroke: C.orange, sw })
+const hollow = (x, y, w = 16) => rect(x - w / 2, y - 3.5, w, 7, { fill: '#fff', stroke: C.orange, sw: 2 })
+const brk = (x, y1, y2) => `<path d="M${x} ${y1} V${(y1 + y2) / 2 - 7} l-6 4 l12 6 l-6 4 V${y2}" fill="none" stroke="${C.muted}" stroke-width="1.2"/>` // a wall that continues
+const disc = (n, x, y) => callout(n, x, y, null)
+// Ordinate heights from the floor: one muted line with a tick and a label at each height.
+function ordinate(x, Y, hs, labels, size = DIM) {
+  let b = line(x, Y(0), x, Y(Math.max(...hs)), { stroke: C.muted, sw: 1 }) + line(x - 6, Y(0), x + 6, Y(0), { stroke: C.muted, sw: 1 })
+  hs.forEach((h, i) => { b += line(x - 6, Y(h), x + 6, Y(h), { stroke: C.muted, sw: 1 }) + text(x + 10, Y(h) + 5, labels[i], { size, fill: C.muted, weight: 600 }) })
+  return b
+}
+
+// 1. Layout marks: the side wall and the back wall unfolded at the corner (a developed elevation), and a plan.
+function layoutElevation(s, x0, floor, ph) {
+  const wallH = 80, side = 70, back = 84, pil = 61.25 - 0.375 // pilaster plumb line from the back wall
+  const Y = (i) => floor - i * s, xc = x0 + side * s, xe = xc + back * s
+  const XP = xc - pil * s, panels = [36, 72].map((p) => xc + p * s)
+  let b = rect(x0, Y(wallH), side * s, wallH * s, { fill: 'HATCH', stroke: 'none' }) + rect(xc, Y(wallH), back * s, wallH * s, { fill: 'HATCH', stroke: 'none' })
+  b += line(xc, Y(wallH), xc, floor, { stroke: C.ink, sw: 1.5 }) // the corner
+  b += brk(x0, Y(wallH), floor) + brk(xe, Y(wallH), floor)
+  b += rect(x0 - 6, floor, xe - x0 + 12, ph ? 8 : 14, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 6, floor, xe + 6, floor)
+  const lines = [XP, ...panels]
+  for (const x of lines) b += `<rect x="${x - 9}" y="${Y(wallH) + 2}" width="18" height="${wallH * s - 4}" fill="#fff" opacity=".55"/>` + cline(x, Y(wallH) + 2, x, floor - 1)
+  const mw = ph ? 12 : 16
+  for (const x of lines) b += mark(x, Y(19), mw, ph ? 3 : 4) + mark(x, Y(63), mw, ph ? 3 : 4)
+  const last = panels[1]
+  b += hollow(last, Y(43), mw) + hollow(last, Y(12.5), mw)
+  return { b, Y, xc, xe, XP, panels, last }
+}
+{
+  const s = 2.6, x0 = 40, floor = 262
+  const e = layoutElevation(s, x0, floor, false)
+  let b = e.b
+  b += ordinate(e.xe + 24, e.Y, [12.5, 19, 43, 63], ['12-1/2"', '19"', '43"', '63"'])
+  b += callout(1, e.XP, 30, [e.XP, e.Y(80) + 4]) + callout(2, e.panels[0], 30, [e.panels[0], e.Y(80) + 4])
+  b += callout(3, e.XP + 40, e.Y(63), [e.XP + 9, e.Y(63)]) + callout(4, e.last - 40, e.Y(43), [e.last - 9, e.Y(43)]) + callout(5, e.last - 40, e.Y(12.5) - 4, [e.last - 9, e.Y(12.5)])
+  b += note(x0 + 4, floor + 34, 'side wall', 'start', 13) + note(e.xc + 6, floor + 34, 'back wall', 'start', 13) + note(e.xc, e.Y(80) - 8, 'corner', 'middle', 12)
+  // plan: the same corner seen from above
+  const px = 596, py = 62, ps = 1.4, wt = 10
+  const PX = (i) => px + wt + i * ps, PY = (i) => py + wt + i * ps
+  b += rect(px, py, 96 * ps + wt, wt, { fill: 'HATCH', stroke: 'none' }) + rect(px, py, wt, 74 * ps + wt, { fill: 'HATCH', stroke: 'none' })
+  b += line(PX(0), PY(0), PX(96), PY(0)) + line(PX(0), PY(0), PX(0), PY(74))
+  for (const p of [36, 72]) b += line(PX(p), PY(0), PX(p), PY(61.25), { stroke: C.muted, sw: 1, dash: '4 4' }) + line(PX(p), PY(0), PX(p), PY(0) + 7, { stroke: C.ink, sw: 2 })
+  b += cline(PX(0), PY(61), PX(96), PY(61))
+  b += `<circle cx="${PX(0)}" cy="${PY(61)}" r="3" fill="${C.ink}"/>`
+  b += callout(6, PX(96) + 24, PY(61), [PX(90), PY(61)])
+  b += note(PX(48), PY(74) + 22, 'seen from above', 'middle', 13)
+  made.push(svg('install-layout-marks', 780, floor + 46, 'Layout marks for toilet partition wall brackets',
+    'The side wall and back wall of a restroom corner, unfolded flat, with a plumb line at the pilaster centerline on the side wall and at each panel centerline on the back wall. Bracket marks sit on every plumb line 19 and 63 inches above the highest point of the floor; a third bracket option adds a mark at 43 inches, and continuous brackets use one mark at 12-1/2 inches. A small plan shows the same corner from above with the pilaster line on the floor.', b))
+  withPhone(1, () => {
+    const s2 = 1.75, f2 = 186
+    const m = layoutElevation(s2, 14, f2, true)
+    let p = m.b + ordinate(m.xe + 14, m.Y, [12.5, 19, 43, 63], ['12-1/2"', '19"', '43"', '63"'], 12)
+    p += callout(1, m.XP, 16, [m.XP, m.Y(80) + 3]) + callout(2, m.panels[0], 16, [m.panels[0], m.Y(80) + 3])
+    p += callout(3, m.XP + 30, m.Y(63), [m.XP + 7, m.Y(63)]) + callout(4, m.last - 30, m.Y(43), [m.last - 7, m.Y(43)]) + callout(5, m.last - 30, m.Y(12.5) - 4, [m.last - 7, m.Y(12.5)])
+    phone('install-layout-marks-m1', f2 + 14, p)
+    const qx = 80, qy = 14, qs = 1.9, qw = 10
+    const QX = (i) => qx + qw + i * qs, QY = (i) => qy + qw + i * qs
+    p = rect(qx, qy, 96 * qs + qw, qw, { fill: 'HATCH', stroke: 'none' }) + rect(qx, qy, qw, 74 * qs + qw, { fill: 'HATCH', stroke: 'none' })
+    p += line(QX(0), QY(0), QX(96), QY(0)) + line(QX(0), QY(0), QX(0), QY(74))
+    for (const q of [36, 72]) p += line(QX(q), QY(0), QX(q), QY(61.25), { stroke: C.muted, sw: 1, dash: '4 4' }) + line(QX(q), QY(0), QX(q), QY(0) + 7, { stroke: C.ink, sw: 2 })
+    p += cline(QX(0), QY(61), QX(96), QY(61)) + `<circle cx="${QX(0)}" cy="${QY(61)}" r="3" fill="${C.ink}"/>`
+    p += callout(6, QX(96) + 22, QY(61), [QX(90), QY(61)])
+    phone('install-layout-marks-m2', QY(74) + 10, p)
+  })
+}
+
+// 2. Door hand, seen from above, standing outside the stall (at the bottom of each plan).
+// RH = right-hand inswing or left-hand outswing; LH = left-hand inswing or right-hand outswing.
+const HANDS = [['A', 'Right-hand inswing', 'R', 'in'], ['B', 'Left-hand outswing', 'L', 'out'], ['C', 'Left-hand inswing', 'L', 'in'], ['D', 'Right-hand outswing', 'R', 'out']]
+function handPlan(cx, top, s, side, swing, ph) {
+  const X = (i) => cx + i * s, wallT = ph ? 7 : 10, depth = 34, front = top + wallT + depth * s
+  const tp = ph ? 4 : 5, R = 24 * s, ang = 62 * Math.PI / 180
+  let b = rect(X(-21), top, 42 * s, wallT, { fill: 'HATCH', stroke: 'none' }) + line(X(-21), top + wallT, X(21), top + wallT)
+  for (const x of [-18, 18]) b += rect(X(x) - 1.5, top + wallT, 3, depth * s - tp / 2, { sw: 1.2 }) // panels
+  const hingeX = side === 'R' ? 12 : -12, dir = side === 'R' ? -1 : 1, up = swing === 'in' ? -1 : 1
+  for (const [a, z] of [[-18, -12], [12, 18]]) {
+    const hinge = (side === 'R') === (a > 0)
+    b += rect(X(a), front - tp / 2, 6 * s, tp, hinge ? { fill: C.orange, stroke: C.orange, sw: 1.5 } : { sw: 1.2 })
+  }
+  const hx = X(hingeX), ex = hx + dir * R * Math.cos(ang), ey = front + up * R * Math.sin(ang)
+  const sweep = (dir === -1) === (up === -1) ? 1 : 0
+  b += `<path d="M${hx + dir * R} ${front} A${R} ${R} 0 0 ${sweep} ${ex.toFixed(1)} ${ey.toFixed(1)}" fill="none" stroke="${C.muted}" stroke-width="1.2" stroke-dasharray="5 4"/>`
+  b += line(hx, front, ex.toFixed(1), ey.toFixed(1), { stroke: C.ink, sw: ph ? 2.5 : 3 })
+  b += `<circle cx="${hx}" cy="${front}" r="${ph ? 4 : 5}" fill="${C.orange}" stroke="#fff" stroke-width="1.5"/>`
+  return { b, front, bottom: front + R }
+}
+{
+  const s = 3.4, fw = 195, top = 54
+  let b = ''
+  HANDS.forEach(([L, cap, side, swing], i) => {
+    const cx = fw / 2 + i * fw, p = handPlan(cx, top, s, side, swing, false)
+    b += p.b + disc(L, cx - 70, p.bottom + 36) + text(cx - 52, p.bottom + 41, cap, { size: 14, weight: 600 })
+  })
+  // RH and LH: each door (and pilaster) is made for one of two hands, judged from outside.
+  for (const [i, t] of [[0, 'RH'], [1, 'LH']]) {
+    const x1 = i * 2 * fw + 24, x2 = (i * 2 + 2) * fw - 24
+    b += `<path d="M${x1} 34 V26 H${x2} V34" fill="none" stroke="${C.muted}" stroke-width="1.2"/>` + `<rect x="${(x1 + x2) / 2 - 22}" y="14" width="44" height="22" fill="#fff"/>` + text((x1 + x2) / 2, 31, t, { size: 16, weight: 700, anchor: 'middle' })
+  }
+  const by = top + 10 + 34 * s + 24 * s
+  b += note(16, by + 74, 'Seen from above. You stand outside the stall (at the bottom of each plan), facing the door.', 'start', 13)
+  made.push(svg('door-hand', 780, by + 86, 'Door hand and swing of a toilet partition door, plan view',
+    'Four single compartments seen from above, from outside the stall at the bottom: A, right-hand inswing, and B, left-hand outswing, are both an RH door; C, left-hand inswing, and D, right-hand outswing, are both an LH door. The pilaster on the hinge side is shown in orange.', b))
+  withPhone(1, () => {
+    const s2 = 2.5, fw2 = 180, t2 = 32
+    for (const f of [0, 1]) {
+      let p = ''
+      HANDS.slice(f * 2, f * 2 + 2).forEach(([L, , side, swing], i) => {
+        const cx = fw2 / 2 + i * fw2, q = handPlan(cx, t2, s2, side, swing, true)
+        p += q.b + disc(L, cx - 58, q.front - 34)
+      })
+      p += `<path d="M30 22 V15 H330 V22" fill="none" stroke="${C.muted}" stroke-width="1.2"/><rect x="160" y="4" width="40" height="20" fill="#fff"/>` + text(180, 20, f ? 'LH' : 'RH', { size: 15, weight: 700, anchor: 'middle' })
+      phone(`door-hand-m${f + 1}`, t2 + 7 + 34 * s2 + 24 * s2 + 10, p)
+    }
+  })
+}
+
+// 3. Bracket types: each as seen facing the wall (top) and from above (bottom), with the pilaster or panel end
+// (dashed) in the opening. Only the openings are dimensioned; other sizes are drawn, not sourced.
+const BRACKETS = [['One-ear stirrup', 'stirrup', 1, 0.75], ['Two-ear stirrup', 'stirrup', 2, 0.75], ['Continuous ear', 'cont', 1, 0.75], ['Continuous U', 'u', 0, 0.5]]
+function bracketViews(cx, fy, py, k, kind, ears, open, ph) {
+  const t = Math.max(3, 0.12 * k), ear = 1.2 * k, slot = open * k, leg = 1.6 * k
+  const sw = slot + 2 * t, left = ears === 2 ? ear : kind === 'u' ? 0 : ear, right = ears === 2 ? ear : 0
+  const W = left + sw + right, x0 = cx - W / 2, sx = x0 + left // slot block starts at sx
+  const o = { fill: C.orange, stroke: C.orange, sw: 1 }
+  let b = ''
+  // front view, facing the wall
+  const fh = kind === 'stirrup' ? 2.4 * k : (ph ? 100 : 150)
+  b += rect(x0, fy, W, fh, o)
+  for (const xx of [sx + t, sx + t + slot]) b += line(xx, fy + 1, xx, fy + fh - 1, { stroke: '#fff', sw: 1.2 })
+  const holes = (x) => (kind === 'stirrup' ? [fy + fh / 2] : [fy + 18, fy + fh / 2, fy + fh - 18]).map((y) => `<circle cx="${x}" cy="${y}" r="${ph ? 3.5 : 4}" fill="#fff"/>`).join('')
+  if (kind === 'stirrup' && ears === 1) b += `<circle cx="${x0 + ear / 2}" cy="${fy + fh * 0.3}" r="4" fill="#fff"/><circle cx="${x0 + ear / 2}" cy="${fy + fh * 0.7}" r="4" fill="#fff"/>`
+  else if (kind === 'stirrup') b += holes(x0 + ear / 2) + holes(x0 + W - ear / 2)
+  else if (kind === 'cont') b += holes(x0 + ear / 2)
+  else b += holes(cx)
+  if (kind !== 'stirrup') { const m = fy + (fh / 2 + fh - 18) / 2 + 6; b += `<path d="M${x0 - 4} ${m} l${W / 2 + 4} -8 l0 0 l${W / 2 + 4} 8" fill="none" stroke="#fff" stroke-width="5"/>` }
+  // seen from above: wall at the top, the bracket, the part's end dashed in the opening
+  b += rect(cx - 74, py - 12, 148, 12, { fill: 'HATCH', stroke: 'none' }) + line(cx - 74, py, cx + 74, py)
+  let d = `M${x0} ${py} H${x0 + W} V${py + t}`
+  if (right) d += ` H${sx + sw} V${py + leg} H${sx + sw - t} V${py + t}`
+  else d += ` V${py + leg} H${sx + sw - t} V${py + t}`
+  d += ` H${sx + t} V${py + leg} H${sx} V${py + t} H${x0} Z`
+  if (kind === 'u') d = `M${sx} ${py} H${sx + sw} V${py + leg} H${sx + sw - t} V${py + t} H${sx + t} V${py + leg} H${sx} Z`
+  b += `<path d="${d}" fill="${C.orange}" stroke="${C.orange}" stroke-width="1" stroke-linejoin="round"/>`
+  b += rect(sx + t + 1, py + t + 2, slot - 2, leg + 30 - t, { fill: 'none', stroke: C.ink, sw: 1.2, dash: '4 3' })
+  const dy = py + leg + 14
+  b += line(sx + t, dy, sx + t + slot, dy, { stroke: C.muted, sw: 1 }) + line(sx + t, dy - 5, sx + t, dy + 5, { stroke: C.muted, sw: 1 }) + line(sx + t + slot, dy - 5, sx + t + slot, dy + 5, { stroke: C.muted, sw: 1 })
+  b += text(sx + t + slot + 8, dy + 5, open === 0.75 ? '3/4"' : '1/2"', { size: ph ? 13 : DIM, fill: C.muted, weight: 600 })
+  return { b, bottom: py + leg + 30 }
+}
+{
+  const k = 26, fw = 195, fy = 22, py = 214
+  let b = ''
+  BRACKETS.forEach(([cap, kind, ears, open], i) => {
+    const cx = fw / 2 + i * fw, v = bracketViews(cx, fy, py, k, kind, ears, open, false)
+    b += v.b + disc(i + 1, cx - 66, v.bottom + 30) + text(cx - 48, v.bottom + 35, cap, { size: 14, weight: 600 })
+  })
+  b += note(16, py + 1.6 * k + 98, 'Top: as seen facing the wall. Bottom: seen from above, with the pilaster or panel end (dashed) in the opening.', 'start', 13)
+  made.push(svg('bracket-types', 780, py + 1.6 * k + 110, 'Toilet partition bracket types',
+    'Four partition brackets, each as seen facing the wall and from above: 1, a stirrup bracket with one ear; 2, a stirrup bracket with two ears; 3, a continuous ear bracket; 4, a continuous U-bracket. Openings of 3/4 inch hold pilasters and openings of 1/2 inch hold panels.', b))
+  withPhone(1, () => {
+    for (const f of [0, 1]) {
+      let p = ''
+      const pyp = f ? 140 : 98
+      BRACKETS.slice(f * 2, f * 2 + 2).forEach(([, kind, ears, open], i) => {
+        const cx = 90 + i * 180, v = bracketViews(cx, 14, pyp, 22, kind, ears, open, true)
+        p += v.b + disc(f * 2 + i + 1, cx - 66, 26)
+      })
+      phone(`bracket-types-m${f + 1}`, pyp + 1.6 * 22 + 38, p)
+    }
+  })
+}
+
+// 4. Pilaster types, seen from above: wall, alcove and middle pilasters with the doors and panels that meet them.
+// Doors are drawn closed; the dot is a hinge, the square a latch (keeper). Thicknesses are drawn, not to scale.
+function pilasterPlan(kind, cx, top, s, ph) {
+  const depth = 24, front = top + depth * s, T = ph ? 7 : 9, dt = ph ? 4 : 5
+  const X = (i) => cx + i * s
+  const P = { fill: C.orange, stroke: C.orange, sw: 1.5 }
+  let b = '', marks = []
+  const door = (a, z) => rect(X(a), front - dt / 2, (z - a) * s, dt, { sw: 1.2 })
+  const panel = (x) => rect(X(x) - dt / 2, top, dt, depth * s - T / 2, { sw: 1.2 }) + `<path d="M${X(x) - 8} ${top} l5 -5 l6 8 l5 -5" fill="none" stroke="${C.muted}" stroke-width="1.2"/>`
+  const next = (a, z) => rect(X(a), front - T / 2, (z - a) * s, T, { fill: 'none', stroke: C.muted, sw: 1.2, dash: '4 3' })
+  const hinge = (x) => `<circle cx="${X(x)}" cy="${front}" r="${ph ? 4 : 5}" fill="${C.ink}" stroke="#fff" stroke-width="1.5"/>`
+  const latch = (x) => rect(X(x) - (ph ? 4 : 5), front - (ph ? 4 : 5), ph ? 8 : 10, ph ? 8 : 10, { fill: C.ink, stroke: '#fff', sw: 1.5 })
+  if (kind === 'wall') { // side wall on the left, pilaster at the wall carrying the hinge
+    b += rect(X(-16) - 14, top - 6, 14, depth * s + 30, { fill: 'HATCH', stroke: 'none' }) + line(X(-16), top - 6, X(-16), front + 24)
+    b += rect(X(-15), front - T / 2, 5 * s, T, P) + door(-10, 14) + next(14, 20) + hinge(-10)
+    for (const y of [front - T / 2 - 4]) b += rect(X(-16), y - 3, 5, 6, { fill: C.ink, stroke: 'none' }) // wall bracket
+    marks = [['hinge', -10]]
+  }
+  if (kind === 'alcove') { // panel end on the right; the pilaster fixed to it carries the latch
+    b += next(-26, -20) + door(-20, 4) + panel(10) + rect(X(4), front - T / 2, 7.5 * s, T, P) + latch(4)
+    b += `<path d="M${X(10) - dt / 2 - 6} ${front - T / 2 - 1} v-8 h-0 M${X(10) - dt / 2 - 6} ${front - T / 2 - 9} h6" fill="none" stroke="${C.ink}" stroke-width="2"/>` // alcove bracket
+    marks = [['latch', 4]]
+  }
+  if (kind === 'middle') { // a door latching on the left, a door hinged on the right, the panel behind
+    b += door(-30, -6) + door(6, 30) + panel(0) + rect(X(-6), front - T / 2, 12 * s, T, P) + latch(-6) + hinge(6)
+    marks = [['latch', -6], ['hinge', 6]]
+  }
+  return { b, front, marks, X }
+}
+{
+  const s = 3.4, fw = 260, top = 34
+  const kinds = [['wall', 'Wall pilaster', 12], ['alcove', 'Alcove pilaster', 6], ['middle', 'Middle pilaster', 0]]
+  let b = ''
+  kinds.forEach(([kind, cap, off], i) => {
+    const cx = fw / 2 + i * fw + off * s / 2, p = pilasterPlan(kind, cx, top, s, false)
+    b += p.b
+    for (const [t, x] of p.marks) b += note(p.X(x) + (t === 'hinge' ? -6 : 6), p.front + 30, t, t === 'hinge' ? 'start' : 'end', 13)
+    b += disc(i + 1, fw / 2 + i * fw - 70, p.front + 70) + text(fw / 2 + i * fw - 52, p.front + 75, cap, { size: 14, weight: 600 })
+  })
+  const fr = top + 24 * s
+  b += note(16, fr + 110, 'Seen from above; the outside of the stalls is at the bottom. Dot: hinge. Square: latch (keeper).', 'start', 13)
+  made.push(svg('pilaster-types', 780, fr + 122, 'Toilet partition pilaster types, plan view',
+    'Seen from above: 1, a wall pilaster beside the side wall, carrying the door hinge; 2, an alcove pilaster fixed to the end of a panel, carrying the latch of the door beside it; 3, a middle pilaster with a panel meeting it from behind, carrying the latch of one door and the hinge of the next. The pilasters are shown in orange.', b))
+  withPhone(1, () => {
+    const s2 = 2.6, t2 = 30
+    let p = ''
+    ;[['wall', 12], ['alcove', 6]].forEach(([kind, off], i) => {
+      const cx = 90 + i * 180 + off * s2 / 2, q = pilasterPlan(kind, cx, t2, s2, true)
+      p += q.b + disc(i + 1, 90 + i * 180 - 66, 16)
+      for (const [t, x] of q.marks) p += note(q.X(x) + (t === 'hinge' ? -5 : 5), q.front + 26, t, t === 'hinge' ? 'start' : 'end', 12)
+    })
+    phone('pilaster-types-m1', t2 + 24 * s2 + 40, p)
+    const q = pilasterPlan('middle', 180, t2, s2, true)
+    p = q.b + disc(3, 72, 16)
+    for (const [t, x] of q.marks) p += note(q.X(x) + (t === 'hinge' ? -5 : 5), q.front + 26, t, t === 'hinge' ? 'start' : 'end', 12)
+    phone('pilaster-types-m2', t2 + 24 * s2 + 40, p)
+  })
+}
+
+// 5. Installation sequence: small frames, each a plan (seen from above) over a front elevation of two stalls,
+// the step in orange, earlier steps in ink, later ones not yet there.
+const STEPS = ['Mark the layout', 'Wall brackets', 'Wall pilasters', 'Panels', 'Headrail', 'Hang the doors', 'Hinges and latches']
+function seqFrame(step, ox, py, s, ph) {
+  const wt = ph ? 6 : 8, depth = 60, wallH = 90
+  const X = (i) => ox + wt + i * s, PY = (i) => py + wt + i * s
+  const ey = PY(depth) + (ph ? 16 : 22) + wallH * s, EY = (i) => ey - i * s
+  const now = { fill: C.orangeTint, stroke: C.orange, sw: 2 }, done = { sw: 1.2 }
+  const st = (n) => (step === n ? now : done), on = (n) => step >= n
+  const tp = ph ? 3 : 4
+  let pl = '', el = ''
+  // building: plan walls, elevation side walls and slab
+  pl += rect(ox, py, 72 * s + 2 * wt, wt, { fill: 'HATCH', stroke: 'none' }) + rect(ox, py, wt, depth * s + wt + 4, { fill: 'HATCH', stroke: 'none' }) + rect(X(72), py, wt, depth * s + wt + 4, { fill: 'HATCH', stroke: 'none' })
+  pl += `<path d="M${X(0)} ${PY(depth) + 4} V${PY(0)} H${X(72)} V${PY(depth) + 4}" fill="none" stroke="${C.ink}" stroke-width="1.2"/>`
+  // toilets, seen from above: they make the plan read as a plan
+  for (const c of [18, 54]) pl += rect(X(c) - 8 * s, PY(0) + 1, 16 * s, 6 * s, { rx: 2, sw: 1 }) + `<ellipse cx="${X(c)}" cy="${PY(17)}" rx="${7.5 * s}" ry="${11 * s}" fill="#fff" stroke="${C.ink}" stroke-width="1"/>`
+  el += rect(ox, EY(wallH), wt, wallH * s, { fill: 'HATCH', stroke: 'none' }) + rect(X(72), EY(wallH), wt, wallH * s, { fill: 'HATCH', stroke: 'none' })
+  el += rect(ox - 4, ey, 72 * s + 2 * wt + 8, ph ? 5 : 7, { fill: 'HATCH', stroke: 'none' }) + line(ox - 4, ey, X(72) + wt + 4, ey, { sw: 1.2 }) + line(X(0), EY(wallH), X(0), ey, { sw: 1.2 }) + line(X(72), EY(wallH), X(72), ey, { sw: 1.2 })
+  // 1 layout: pilaster line on the floor, panel centerline, plumb lines and bracket marks
+  if (step === 1) {
+    pl += cline(X(0), PY(depth), X(72), PY(depth), { stroke: C.orange, sw: 2 }) + line(X(36), PY(0), X(36), PY(0) + 8, { stroke: C.orange, sw: 2.5 })
+    el += cline(X(36), EY(84), X(36), ey, { stroke: C.orange, sw: 1.5 })
+    for (const h of [19, 63]) el += mark(X(36), EY(h), 10, 3) + line(X(0), EY(h), X(0) + 7, EY(h), { stroke: C.orange, sw: 3 }) + line(X(72) - 7, EY(h), X(72), EY(h), { stroke: C.orange, sw: 3 })
+  }
+  // 2 wall brackets: for the panel on the back wall, for the wall pilasters on the side walls
+  if (on(2)) {
+    const o = step === 2 ? { fill: C.orange, stroke: C.orange, sw: 1 } : { fill: C.ink, stroke: 'none' }
+    pl += rect(X(36) - 3, PY(0), 6, 5, o) + rect(X(0), PY(depth) - 3, 5, 6, o) + rect(X(72) - 5, PY(depth) - 3, 5, 6, o)
+    for (const h of [19, 63]) el += rect(X(36) - 3, EY(h) - 3, 6, 6, o) + rect(X(0), EY(h) - 3, 5, 6, o) + rect(X(72) - 5, EY(h) - 3, 5, 6, o)
+  }
+  // 4 panel (behind the middle pilaster in the front view, so drawn before it), on a 12" spacer while it goes in
+  if (on(4)) {
+    pl += rect(X(36) - 1.5, PY(0) + 4, 3, depth * s - 4 - tp / 2, step === 4 ? { fill: C.orange, stroke: C.orange, sw: 1 } : { sw: 1 })
+    if (step === 4) el += rect(X(36) - 6, EY(12), 12, 12 * s, { sw: 1 }) + rect(X(36) - 2, EY(70), 4, 58 * s, { fill: C.orange, stroke: C.orange, sw: 1 })
+  }
+  // 3 wall pilasters, in their shoes, plumb and level; 4 the middle pilaster goes in after the panel
+  const pil = (a, z, o) => { pl += rect(X(a), PY(depth) - tp / 2, (z - a) * s, tp, o); el += rect(X(a), EY(82), (z - a) * s, 82 * s, o) + (o.dash ? '' : line(X(a), EY(4), X(z), EY(4), { stroke: o.stroke ?? C.ink, sw: 1 })) }
+  if (on(3)) { pil(1, 6, st(3)); pil(66, 71, st(3)) }
+  if (step === 4) pil(30, 42, { fill: 'none', stroke: C.muted, sw: 1.2, dash: '4 3' })
+  if (on(5)) pil(30, 42, done)
+  // 5 headrail across the pilaster tops, fixed to both walls
+  if (on(5)) {
+    const o = step === 5 ? { fill: C.orange, stroke: C.orange, sw: 1 } : { fill: '#fff', sw: 1.2 }
+    el += rect(X(0), EY(82) - 2.5 * s, 72 * s, 2.5 * s, o)
+    if (step === 5) pl += line(X(0), PY(depth), X(72), PY(depth), { stroke: C.orange, sw: 3 })
+  }
+  // 6 doors, inswing, hinged on their left; 7 hinges and latches
+  if (on(6)) {
+    for (const [h, l] of [[6, 30], [42, 66]]) {
+      const R = 24 * s, a = 40 * Math.PI / 180, ex = X(h) + R * Math.cos(a), eyy = PY(depth) - R * Math.sin(a)
+      const c = step === 6 ? C.orange : C.ink
+      pl += `<path d="M${X(l)} ${PY(depth)} A${R} ${R} 0 0 0 ${ex.toFixed(1)} ${eyy.toFixed(1)}" fill="none" stroke="${step === 6 ? C.orange : C.muted}" stroke-width="1" stroke-dasharray="4 3"/>` + line(X(h), PY(depth), ex.toFixed(1), eyy.toFixed(1), { stroke: c, sw: 2.5 })
+      el += rect(X(h + 0.4), EY(70), 23.2 * s, 58 * s, st(6))
+      if (step === 7) {
+        const o = { fill: C.orange, stroke: C.orange, sw: 1 }
+        el += rect(X(h + 0.4) - 2, EY(64), 5, 8 * s, o) + rect(X(h + 0.4) - 2, EY(22), 5, 8 * s, o) + rect(X(l - 0.4) - 7, EY(42), 9, 5, o)
+        pl += `<circle cx="${X(h)}" cy="${PY(depth)}" r="3.5" fill="${C.orange}"/>` + rect(X(l) - 3, PY(depth) - 3, 6, 6, o)
+      }
+    }
+  }
+  return { b: pl + el, ey, slab: ph ? 5 : 7, w: 72 * s + 2 * wt }
+}
+{
+  const s = 1.9, fw = 195, py = 18
+  const draw = (steps, name, title, desc) => {
+    let b = ''
+    const x0 = (780 - steps.length * fw) / 2
+    let ey = 0
+    steps.forEach((n, i) => {
+      const fx = x0 + i * fw, f = seqFrame(n, fx + (fw - (72 * s + 16)) / 2, py, s, false)
+      ey = f.ey
+      b += f.b + disc(n, fx + 22, f.ey + 36) + text(fx + 40, f.ey + 41, STEPS[n - 1], { size: 14, weight: 600 })
+    })
+    made.push(svg(name, 780, ey + 58, title, desc, b))
+    withPhone(1, () => {
+      for (let m = 0; m * 2 < steps.length; m++) {
+        let p = '', ey2 = 0
+        const pair = steps.slice(m * 2, m * 2 + 2)
+        pair.forEach((n, i) => {
+          const cx = pair.length === 1 ? 180 : 90 + i * 180, f = seqFrame(n, cx - (72 * 1.2 + 12) / 2 + 8, 8, 1.2, true)
+          ey2 = f.ey
+          p += f.b + disc(n, cx - 66, 22)
+        })
+        phone(`${name}-m${m + 1}`, ey2 + 12, p)
+      }
+    })
+  }
+  draw([1, 2, 3, 4], 'install-sequence-1', 'Toilet partition installation sequence, steps 1 to 4',
+    'Four small frames, each a plan seen from above over a front view of two stalls: 1, the layout marked on the floor and walls; 2, wall brackets fixed at the marks; 3, the wall pilasters stood in their shoes and leveled; 4, the panel set into its wall brackets on a 12-inch spacer, with the middle pilaster to follow. Each step is shown in orange.')
+  draw([5, 6, 7], 'install-sequence-2', 'Toilet partition installation sequence, steps 5 to 7',
+    'Three small frames, each a plan seen from above over a front view of two stalls: 5, the headrail fixed across the pilaster tops and to both walls; 6, the doors hung; 7, hinges and latches set and the gaps checked. Each step is shown in orange.')
+}
+
 // Sheets: the plan and front views (above) also get phone variants; the side view and details are 400 wide and
 // scale to the column as they are.
 console.log(`${phoneMade.length} phone variants: ${phoneMade.join(', ')}`)

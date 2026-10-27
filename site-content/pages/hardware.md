@@ -52,6 +52,15 @@ Partition hardware is not universal. Hinge and latch hole patterns, pilaster thi
 4. **Door swing and hand**: inswing or outswing, and which side the hinges are on, viewed from outside the stall.
 5. **Photos**: the whole stall, the hinge, the latch and keeper, and the bracket or shoe you need, with a tape measure in the shot.
 
+If you need a bracket, compare it with these common shapes, each seen facing the wall and from above. On many lines the opening is 3/4" for pilasters and 1/2" for panels on phenolic; measure yours. See [Replacement Parts](/hardware/parts) for more.
+
+![Partition bracket types, facing the wall and seen from above: one-ear stirrup, two-ear stirrup, continuous ear bracket and continuous U-bracket](/images/diagrams/bracket-types.svg)
+
+1. **One-ear stirrup bracket:** a short bracket fixed to the wall through one ear. At an end panel or pilaster the ear faces into the stall.
+2. **Two-ear stirrup bracket:** fixed through an ear on each side.
+3. **Continuous ear bracket:** runs the height of the joint, fixed through its ear; holds a pilaster.
+4. **Continuous U-bracket:** runs the height of the panel, fixed through its back; holds a panel.
+
 ### Typical thickness by material
 
 | Material | Door | Pilaster | Source |
@@ -103,6 +112,7 @@ No. We supply partitions and parts. Installation is arranged separately with you
 - [2010 ADA Standards for Accessible Design, U.S. Access Board](https://www.access-board.gov/ada/): 309.4, 404.2.7, 604.8.1.2, 604.8.2.2, 604.8.3. Checked 2026-10-26.
 - [Bobrick 1080 Series technical data sheet (rev. 4/24/25)](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): Type-304 satin stainless hardware; 3/4" doors and stiles. Checked 2026-10-26.
 - [Bobrick 1040 Series technical data sheet](https://www.bobrick.com/wp-content/uploads/1040_td.pdf): 1" laminate doors, stiles and panels. Checked 2026-10-26.
+- Bradley, Series 400 Phenolic Installation Guide, HDWC-INSTR-040 Rev. A (2021), manufacturer document, copy reviewed 2026-10-27: one- and two-ear stirrup brackets, continuous ear and U-brackets, 3/4" openings for pilasters and 1/2" for panels. Used for the bracket drawing.
 - [Metpar powder coated partitions](https://metpar.com/toilet-partitions/powder-coated/): 1" doors and panels, 1-1/4" pilasters, zamac hardware, stainless hardware option. Checked 2026-10-26.
 - [ASI Global Partitions hardware overview](https://asi-globalpartitions.com/hardware-overview/): hardware materials by partition type. Checked 2026-10-26.
 - [ASI Global Partitions replacement hardware](https://asi-globalpartitions.com/replacement-hardware/): anti-grip headrail sizes by material (1-1/4", 1", 3/4"). Checked 2026-10-26.

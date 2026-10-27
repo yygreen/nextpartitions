@@ -54,6 +54,15 @@ Write down the measurements to the nearest 1/16" and send a photo with the tape 
 
 Tell us whether the door swings **in** or **out** of the stall, and which side the hinges are on when you stand outside facing the door. Hinges and continuous hinges are often handed. Bobrick's continuous hinge, for instance, comes as "left-hand inswing or right-hand outswing" and the opposite version.
 
+The four plans below show each case seen from above, with you standing outside the stall at the bottom; the hinge side is orange. On many lines one door is made for two cases, so it is ordered as RH or LH. Follow your shop drawings and the manufacturer's instructions.
+
+![Door hand seen from above: right-hand inswing and left-hand outswing (RH), left-hand inswing and right-hand outswing (LH)](/images/diagrams/door-hand.svg)
+
+- **A** Right-hand inswing: hinge on the right, door swings into the stall.
+- **B** Left-hand outswing: hinge on the left, door swings out. The same door as A, turned over, so both are RH.
+- **C** Left-hand inswing.
+- **D** Right-hand outswing. The same door as C, so both are LH.
+
 ## Accessible stall doors
 
 A replacement door for an accessible stall has to keep the compartment compliant. Under the 2010 ADA Standards:
@@ -114,6 +123,7 @@ The opening must give a 32" minimum clear width, measured from the face of the o
 - [Scranton Products Hiny Hiders guide specification](http://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): 1" HDPE, 55" doors at 14" above floor. Checked 2026-10-26.
 - [ASI Global Partitions construction features](https://asi-globalpartitions.com/construction-features/): Integrated Privacy standard on steel; factory-drilled occupancy indicator. Checked 2026-10-26.
 - [ASI Global Ultimate Privacy toilet partitions (Sweets listing)](https://sweets.construction.com/manufacturer/asi-global-partitions-nst1616/products/ultimate-privacy--toilet-partitions-nst708594-p): doors up to 72". Checked 2026-10-26.
+- Bradley, Series 400 Phenolic Installation Guide, HDWC-INSTR-040 Rev. A (2021), manufacturer document, copy reviewed 2026-10-27: hand judged facing the stall from outside; RH is right-hand inswing or left-hand outswing, LH the reverse (the same note is in its Series 500, 600 and 700 phenolic guides, HDWC-INSTR-042, -043 and -044 Rev. A, 2021). Used for the door hand drawing.
 - Current site material pages ([stainless steel](/partitions/stainless-steel), [plastic laminate](/partitions/plastic-laminate)): finishes and construction. Checked 2026-10-26.
 
 <!-- For Marc -->

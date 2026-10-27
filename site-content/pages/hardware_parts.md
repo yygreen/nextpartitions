@@ -59,7 +59,35 @@ ASI Global sizes its anti-grip headrail by pilaster thickness: 1-1/4" for powder
 
 Standard brackets are short pieces, usually two or three per joint. Continuous brackets run the full height of the panel. Bobrick's continuous option uses one-piece, full-height U-channels and angle brackets in 18-gauge (1.2 mm) Type-304 stainless steel. Metpar says its continuous brackets add strength and remove the line of sight at the panel joints, and recommends them where vandalism or privacy is a concern.
 
+The drawing shows four common bracket shapes, each as you see it facing the wall and from above. The opening is sized to what it holds: on phenolic, 3/4" for pilasters and 1/2" for panels, and stirrup brackets come in both. Other materials are thicker, so measure yours, and follow your shop drawings and the manufacturer's instructions.
+
+![Partition bracket types, facing the wall and seen from above: one-ear stirrup, two-ear stirrup, continuous ear bracket and continuous U-bracket](/images/diagrams/bracket-types.svg)
+
+1. **One-ear stirrup bracket:** a short bracket fixed to the wall through one ear. At an end panel or pilaster the ear faces into the stall.
+2. **Two-ear stirrup bracket:** fixed through an ear on each side.
+3. **Continuous ear bracket:** runs the height of the joint, fixed through its ear; holds a pilaster.
+4. **Continuous U-bracket:** runs the height of the panel, fixed through its back; holds a panel.
+
 If you're replacing one bracket, match the existing type. If you're swapping all brackets in a stall from standard to continuous, the existing holes may not line up. Tell us what you have and what you want.
+
+## Pilasters: wall, alcove and middle
+
+Pilasters come in a few kinds, named by where they stand. Each is made for the hinge and latch it carries, so a replacement has to match the door hand as well as the size. Seen from above, with the pilasters in orange:
+
+![Pilaster types seen from above: wall pilaster, alcove pilaster and middle pilaster, with the doors and panels that meet them](/images/diagrams/pilaster-types.svg)
+
+1. **Wall pilaster:** beside a side wall and fixed to it with brackets. Here it carries the door's hinge.
+2. **Alcove pilaster:** fixed to the end of a panel with an alcove bracket, where a run ends in an alcove or inside corner. Here it carries the latch (keeper) of the door beside it.
+3. **Middle pilaster:** a panel meets it from behind. It carries the latch of one door and the hinge of the next.
+
+Hand is read the same way for pilasters as for doors: stand outside the stall and face the door. On many lines a part is ordered as RH or LH, and one part covers two cases.
+
+![Door hand seen from above: right-hand inswing and left-hand outswing (RH), left-hand inswing and right-hand outswing (LH)](/images/diagrams/door-hand.svg)
+
+- **A** Right-hand inswing: hinge on the right, door swings into the stall.
+- **B** Left-hand outswing: hinge on the left, door swings out. The same door as A, turned over, so both are RH.
+- **C** Left-hand inswing.
+- **D** Right-hand outswing. The same door as C, so both are LH.
 
 ## Pilaster shoes
 
@@ -88,6 +116,7 @@ Most commercial partitions use tamper-resistant fasteners. Bobrick supplies stai
 4. **Mounting style**: overhead braced, floor mounted, ceiling hung or floor to ceiling ([see mounting styles](/mounting-styles)).
 5. **Photos** of the part in place and a wider shot of the stall, with a tape measure in the photo.
 6. **Quantity**, and whether you need fasteners.
+7. **Hand**, for a pilaster, door or hinge: inswing or outswing, and the hinge side seen from outside the stall (see the plans above).
 
 [Contact Us](/contact) for replacement parts.
 
@@ -118,6 +147,9 @@ Most commercial partitions use tamper-resistant Torx-type fasteners, so you need
 - [ASI Global Partitions construction features](https://asi-globalpartitions.com/construction-features/): Easy-Stall Type 304 shoe. Checked 2026-10-26.
 - [Bobrick 1080 Series technical data sheet](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): 3/4" doors and stiles, 1/2" panels, 22-ga shoe, 18-ga continuous brackets, pin-in-head Torx. Checked 2026-10-26.
 - [Bobrick 1040 Series technical data sheet](https://www.bobrick.com/wp-content/uploads/1040_td.pdf): 1" laminate doors, stiles, panels. Checked 2026-10-26.
+- Bradley, Series 400 Phenolic Installation Guide, HDWC-INSTR-040 Rev. A (2021), manufacturer document, copy reviewed 2026-10-27: one- and two-ear stirrup brackets, continuous ear and U-brackets, 3/4" openings for pilasters and 1/2" for panels. Used for the bracket drawing.
+- Bradley, Series 400 Phenolic Installation Guide, HDWC-INSTR-040 Rev. A (2021), manufacturer document, copy reviewed 2026-10-27: wall, alcove and middle pilasters, handed by the hinge and latch they carry, alcove bracket to the panel. Hadrian, Installation Manual for Solid Plastic Toilet Partitions (4/2014) and Installation Manual for Metal Toilet Partitions, Standard Series (6/19), manufacturer documents, copies reviewed 2026-10-27: alcove pilasters and the alcove channel fixed to the panel. Used for the pilaster drawing.
+- Bradley, Series 400 Phenolic Installation Guide, HDWC-INSTR-040 Rev. A (2021), manufacturer document, copy reviewed 2026-10-27: hand judged facing the stall from outside; RH is right-hand inswing or left-hand outswing, LH the reverse (the same note is in its Series 500, 600 and 700 phenolic guides, HDWC-INSTR-042, -043 and -044 Rev. A, 2021). Used for the door hand drawing.
 - [Metpar powder coated partitions](https://metpar.com/toilet-partitions/powder-coated/): 1"/1-1/4" construction, 4" #4 stainless shoe, anti-grip headrail, continuous brackets. Checked 2026-10-26.
 - [Scranton Products Hiny Hiders guide specification](http://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): 1" HDPE, pilaster sleeves, headrail, Torx sex bolts. Checked 2026-10-26.
 

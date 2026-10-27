@@ -81,6 +81,25 @@ Then look at the room from the side, as if it were cut through. This view is abo
 
 The order below is the typical one across manufacturers. Your guide may differ in detail.
 
+Each frame in the next two drawings shows the same two stalls from above (top) and from the front (bottom), with the step in orange. This is the order on many lines; follow your shop drawings and the manufacturer's instructions.
+
+![Installation sequence, steps 1 to 4: layout, wall brackets, wall pilasters, panels](/images/diagrams/install-sequence-1.svg)
+
+1. **Mark the layout:** the pilaster line on the floor, and a plumb line on the walls at each pilaster and panel centerline with the bracket heights marked on it.
+2. **Wall brackets** at the marks, fixed into the wall backing.
+3. **Wall pilasters** first: each stands in its shoe and its wall brackets, plumbed and leveled.
+4. **Panels:** each panel rests on a 12" spacer while it slides into its wall brackets, then the next pilaster stands around it (dashed). Panel and pilaster alternate to the far end.
+
+With the pilasters plumb and level, the run is tied together and the doors go on.
+
+![Installation sequence, steps 5 to 7: headrail, doors, hinges and latches](/images/diagrams/install-sequence-2.svg)
+
+5. **Headrail** (overhead braced) over the pilaster tops, fixed to both walls.
+6. **Doors** hung once the door openings, the plumb pilasters and the headrail are checked.
+7. **Hinges and latches** set: the rest position at the hinge, the keeper lined up with the latch, and the gaps checked along each door.
+
+The front view below shows the finished stalls and their support.
+
 ![Overhead braced toilet partitions, front view](/images/diagrams/mounting-overhead-braced.svg)
 
 1. **Headrail:** extruded anodized aluminum with an anti-grip profile, fixed to both walls with brackets.
@@ -88,6 +107,20 @@ The order below is the typical one across manufacturers. Your guide may differ i
 3. **Pilaster.** Doors and panels are 58" high, 12" above the floor.
 
 1. **Layout lines.** Mark the pilaster, panel and wall bracket positions on the floor and walls from the shop drawings. Bradley's guides mark bracket positions from the floor at the highest point in the room: its Series 400 phenolic stirrup brackets are centered 19" and 63" above the floor, and its wall-hung pilaster option uses a level line 12" above the floor. That 12" line appears in all four Bradley phenolic guides (Series 400 to 700) and in the Series 600 powder coated and stainless guide, not only the ceiling-hung one. Bradley's Series 400 phenolic guide also sets the pilaster centerline at the compartment depth minus 3/8"; Hadrian's metal manuals deduct 5/8" from the overall compartment dimension for the front centerline. Use the drawing and the guide for your product.
+
+The drawing below unfolds the side wall and the back wall at the corner, so both lie flat, with the same corner seen from above on the right. On many lines the brackets are marked like this; the heights are one manufacturer's, so follow your shop drawings and the manufacturer's instructions.
+
+![Layout marks: plumb lines on the side and back walls with bracket marks at 19 and 63 inches, and the pilaster line on the floor](/images/diagrams/install-layout-marks.svg)
+
+1. **Pilaster plumb line** on the side wall, where the pilaster line meets the wall.
+2. **Panel plumb lines** on the back wall, one at each panel centerline, each measured one stall width from the last.
+3. **Bracket marks** 19" and 63" above the floor, measured from the highest point of the floor and leveled across to every plumb line.
+4. **Third bracket** (optional): an extra mark at 43".
+5. **Continuous brackets** (optional): one mark at 12-1/2", where the bottom of the bracket sits.
+6. **Pilaster line** on the floor: the back-wall-to-face dimension from the shop drawings, less 3/8", marked at both ends of the run and joined.
+
+With the layout marked, the work carries on in this order:
+
 2. **Pilaster anchors and leveling.** Each pilaster sits on a floor bracket or leveling device. Bobrick's plastic laminate line uses a 12-gauge plated steel bracket with a leveling bolt, a floor L-bracket and stainless steel floor screws. For floor-mounted stalls, Bobrick uses a steel leveling bar with threaded rods and expansion shields in the floor. Set each pilaster plumb and at the right height, then fit the stainless steel shoe over the hardware.
 3. **Panel brackets.** Fasten the brackets to the walls and pilasters at the marked positions, into the backing.
 4. **Panels.** Hang the panels between the pilasters and the walls on the brackets.
@@ -222,7 +255,7 @@ Sources marked 2026-10-27 were opened and read that day. The Bradley and Hadrian
 - [Bobrick, 1080 Series technical data](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): wall backing, 2" into 3" concrete, stile heights, floor-anchor and ceiling-hung parts. Checked 2026-10-27.
 - [Bobrick, 1550 Series technical data](https://www.bobrick.com/wp-content/uploads/1550_td.pdf): leveling bracket, 58" doors, 83" stile. Checked 2026-10-27.
 - [ASI Global Integrated Privacy installation guide](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Integrated-Privacy-Powder-Coated-and-Stainless-Steel-Installation-Guide.pdf): keeper alignment and drilling, bumper placement, box cam and pintle. Checked 2026-10-27.
-- Bradley, Series 400, 500, 600 and 700 Phenolic Installation Guides, HDWC-INSTR-040, -042, -043 and -044, Rev. A (2021), manufacturer documents, copies reviewed 2026-10-27: backing warning, handling, 12" spacer and level line, 19" and 63" bracket marks, gaps, headrail, "C" channel. Checked 2026-10-27.
+- Bradley, Series 400, 500, 600 and 700 Phenolic Installation Guides, HDWC-INSTR-040, -042, -043 and -044, Rev. A (2021), manufacturer documents, copies reviewed 2026-10-27: backing warning, handling, 12" spacer and level line, 19" and 63" bracket marks, gaps, headrail, "C" channel. Checked 2026-10-27. The Series 400 guide (HDWC-INSTR-040) is also the source for the layout and sequence drawings: plumb lines, 19"/63" marks, 43" third-bracket and 12-1/2" continuous-bracket options, pilaster line less 3/8", wall pilasters first, panel and pilaster alternately on a 12" spacer, headrail before hinges; reviewed 2026-10-27.
 - Bradley, Powder Coated & Stainless Steel Installation Guides, Series 600 (HDWT-INSTR-011 Rev F, 2015) and Series 400 69" and 72" Tall (HDWT-INSTR-038 Rev A, 2018), and Bradmar Restroom Partitions Series 400 (HDWP-INSTR-013 Rev. L, 2018), manufacturer documents, copies reviewed 2026-10-27: the "C" channel, 12" level line and backing warning in the Series 600 steel guide (the document the earlier dealer copy was), cross bracing, grab bar reinforcement note, Bradmar site conditions. Checked 2026-10-27.
 - Bradley, Partitions brochure 3788-2-0325 ([media.bradleycorp.com](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf)): Series 600 not recommended over 8 feet. Checked 2026-10-27.
 - Hadrian, Installation Manual for Metal Toilet Partitions, Standard Series (6/19) and Elite, Elite Plus & Elite Max Series (6/19), and Installation Manual for Solid Plastic Toilet Partitions (4/2014), manufacturer documents, copies reviewed 2026-10-27: overhead member by others, shim blocks, 5/8" centerline deduction, storage, stabilizer bar. Checked 2026-10-27.
