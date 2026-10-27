@@ -14,18 +14,26 @@ Ceiling hung toilet partitions, also called ceiling mounted or suspended partiti
 
 ## How it's built
 
-![Ceiling hung toilet partitions, front view](/images/diagrams/mounting-ceiling-hung.svg)
+In the front view, the pilasters hang from steel above the ceiling and stop short of the floor.
 
-1. **Structural steel above the finished ceiling**, supplied by the building and engineered for the load.
-2. **Hanger** from the steel down through the ceiling into each pilaster. Pilasters are 83" for an 8' ceiling.
-3. **The floor stays completely clear.**
+![Ceiling hung toilet partitions, front view](/images/diagrams/mounting-ceiling-hung-front.svg)
+
+1. **Structural steel above the ceiling:** by others
+2. **Hanger:** from the steel into each pilaster
+3. **Clear floor:** nothing touches it
 
 - **Overhead support (by others):** a steel member above the finished ceiling at every pilaster. Bobrick's TB-32 bulletin shows I-beam, channel and angle supports. Bradley's ceiling-hung installation guides (Series 600, phenolic and powder coated or stainless) say a "C" channel and ceiling "(not included) is required." None of these are supplied with the partitions.
 - **Ceiling anchor assembly:** Bobrick's includes a threaded rod, hex nuts, washers, a shoe retainer and an expansion anchor. The pilaster hangs from the rod and is leveled with the nuts.
 - **Cover at the ceiling:** a stainless steel shoe or sleeve hides the hanger where the pilaster meets the ceiling. Bobrick's is 4" high.
 - **Pilasters:** Bobrick's standard ceiling-hung stile is 83" high for an 8' ceiling, or made to length for ceilings up to 10'. Bobrick recommends a stile at least 8" wide.
 
-The New York State OGS master spec sets the key rule: anchoring assemblies connect to "structural support above finished ceiling," and must "support pilasters from structure without transmitting load to finished ceiling." The ceiling tile or drywall carries nothing.
+At the top of each pilaster, a rod runs from the steel above through the ceiling.
+
+![Hanger: rod from the I-beam into the pilaster](/images/diagrams/mounting-ceiling-hung-detail-hanger.svg "side")
+
+The New York State OGS master spec sets the key rule: anchoring assemblies connect to "structural support above finished ceiling," and must "support pilasters from structure without transmitting load to finished ceiling." The ceiling tile or drywall carries nothing. Panels and doors attach to the pilasters with U-brackets, as in every style.
+
+![U-bracket holding a panel to a pilaster, seen from above](/images/diagrams/mounting-ceiling-hung-detail-bracket.svg "side")
 
 ## Ceiling requirements
 
@@ -52,6 +60,10 @@ This is where ceiling hung projects succeed or fail, so settle it before you cho
 - **Solid plastic.** Several manufacturers don't recommend ceiling-hung mounting for solid-plastic units (NY OGS). Scranton's Hiny Hiders HDPE line does offer it.
 
 ## Typical specifications
+
+Seen from the side, through a stall: the panel height and the clearance under it.
+
+![Side view through a stall: panel height and clearances](/images/diagrams/mounting-ceiling-hung-side.svg "side")
 
 | Item | Typical | Source |
 |---|---|---|

@@ -14,10 +14,12 @@ Floor mounted toilet partitions stand on their own. Each pilaster is bolted into
 
 ## How it's built
 
-![Floor mounted toilet partitions, front view](/images/diagrams/mounting-floor-mounted.svg)
+In the front view, the pilaster tops are free and every pilaster stands on its own floor anchors.
 
-1. **Floor anchors** into structural concrete carry the whole load.
-2. **No headrail:** the pilaster tops are free. Floor-anchored pilasters are 69" high.
+![Floor mounted toilet partitions, front view](/images/diagrams/mounting-floor-mounted-front.svg)
+
+1. **Floor anchors:** structural concrete
+2. **Pilaster:** 69" floor-anchored stile, no headrail
 
 Without a headrail, each pilaster has to stay rigid on its own anchors.
 
@@ -27,7 +29,13 @@ Without a headrail, each pilaster has to stay rigid on its own anchors.
 - **Shoe:** a stainless steel shoe covers the anchor and leveling hardware. Bobrick's is 4" high.
 - **Shorter pilasters:** with no headrail to reach, Bobrick's floor-anchored stile is 69" high, compared with 83" for overhead braced. Doors are hung so their tops are level with the tops of the pilasters.
 
+The pilaster foot shows how the anchor, leveling bar and shoe fit together.
+
+![Pilaster foot: leveling bar, wedge anchors and shoe](/images/diagrams/mounting-floor-mounted-detail-anchor.svg "side")
+
 Panels and doors attach to the pilasters and to the walls with brackets, as in every style. The walls need backing behind those brackets. Bobrick notes that wall backing is required to secure the mounting brackets.
+
+![U-bracket holding a panel to a pilaster, seen from above](/images/diagrams/mounting-floor-mounted-detail-bracket.svg "side")
 
 ## Why specifiers choose floor mounted
 
@@ -44,6 +52,10 @@ Panels and doors attach to the pilasters and to the walls with brackets, as in e
 - **Floor cleaning.** Pilaster shoes stay on the floor, as with overhead braced. For a clear floor, see [ceiling hung](/mounting-styles/ceiling-hung).
 
 ## Typical specifications
+
+Seen from the side, through a stall: the panel height and the clearance under it.
+
+![Side view through a stall: heights and clearances](/images/diagrams/mounting-floor-mounted-side.svg "side")
 
 | Item | Typical | Source |
 |---|---|---|

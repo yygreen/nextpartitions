@@ -14,20 +14,32 @@ Overhead braced toilet partitions are the go-anywhere mounting style. Each pilas
 
 ## How it's built
 
-![Overhead braced toilet partitions, front view](/images/diagrams/mounting-overhead-braced.svg)
+In the front view of a row of stalls, the headrail runs across the pilaster tops and the pilasters stand on the floor.
 
-1. **Headrail:** extruded anodized aluminum with an anti-grip profile, clamped over the pilaster tops and fixed to both walls with brackets.
-2. **Pilaster shoe** (4" high, stainless steel) over the floor anchor at the foot of each pilaster.
-3. **Pilaster.** Doors and panels are 58" high, 12" above the floor, with 12" more to the top of the headrail: 82" in this drawing. Some lines use 83".
+![Overhead braced toilet partitions, front view](/images/diagrams/mounting-overhead-braced-front.svg)
 
-An overhead braced stall has four kinds of parts:
+1. **Headrail:** extruded aluminum, anti-grip
+2. **Pilaster shoe:** 4" stainless steel
+3. **Pilaster:** 82" here, some lines 83"
+
+Doors and panels are 58" high and 12" above the floor, with 12" more to the top of the headrail: 82" in this drawing. An overhead braced stall has four kinds of parts:
 
 - **Pilasters** (Bobrick calls them stiles): the vertical posts at the front of each stall that carry the doors. Bobrick's standard overhead-braced stile is 83" high.
 - **Floor brackets and leveling device:** a steel bracket at the foot of each pilaster, fastened to the finished floor and adjustable for level. In Bobrick's plastic laminate line it's a 12-gauge plated steel bracket with a leveling bolt, floor L-bracket and stainless steel floor screws.
 - **Pilaster shoe:** a stainless steel cover that hides the bracket and leveling hardware at the floor.
 - **Headrail:** a continuous extruded aluminum rail across the pilaster tops. ASI uses an "anodized aluminum anti-grip head rail" that "secures partitions firmly to the walls." The anti-grip profile is shaped so it can't be grabbed or hung from.
 
+At the floor, the leveling bar, anchors and shoe sit together under the pilaster.
+
+![Pilaster foot: leveling bar, anchors and shoe](/images/diagrams/mounting-overhead-braced-detail-anchor.svg "side")
+
+At the top, the headrail clamps over the pilaster and fixes to the wall.
+
+![Headrail cross-section, fixed to the wall](/images/diagrams/mounting-overhead-braced-detail-headrail.svg "side")
+
 Panels and doors hang between the pilasters and the walls on brackets. Installation specs line the tops of the doors up with the headrail so everything reads as one straight line. The New York State OGS master spec, for example, says to fasten the headrail to each pilaster with at least two fasteners and adjust doors "so tops of doors are parallel with overhead brace."
+
+![U-bracket holding a panel to a pilaster, seen from above](/images/diagrams/mounting-overhead-braced-detail-bracket.svg "side")
 
 ## Why specifiers choose overhead braced
 
@@ -49,7 +61,9 @@ Panels and doors hang between the pilasters and the walls on brackets. Installat
 | Floor anchor | Bracket, leveling bolt and floor fasteners, concealed by a pilaster shoe | Bobrick 1550 data |
 | Privacy options | Taller doors and lower floor clearance in some lines (Hadrian: 64" or 72" at 6" or 9") | Hadrian |
 
-Sizes vary by brand and line. Your quote and the manufacturer's submittal drawings set the final dimensions.
+Sizes vary by brand and line. Your quote and the manufacturer's submittal drawings set the final dimensions. The side view shows the 58" panel, the 12" floor clearance and the 61-1/4" to the face of the panel.
+
+![Side view through a stall: heights and clearances](/images/diagrams/mounting-overhead-braced-side.svg "side")
 
 ## Materials
 

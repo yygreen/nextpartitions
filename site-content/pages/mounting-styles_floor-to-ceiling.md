@@ -16,16 +16,30 @@ One point clears up most confusion: "floor to ceiling" describes the **pilasters
 
 ## How it's built
 
-![Floor to ceiling toilet partitions, front view](/images/diagrams/mounting-floor-to-ceiling.svg)
+In the front view, each pilaster runs from the floor to the ceiling while the doors and panels stay at standard height.
 
-1. **Floor anchor** at the foot of each pilaster.
-2. **Ceiling anchor** into structure at the top of each pilaster.
-3. **Doors and panels stay standard height** (58" at 12" above the floor here), so the floor gap remains.
+![Floor to ceiling toilet partitions, front view](/images/diagrams/mounting-floor-to-ceiling-front.svg)
+
+1. **Floor anchor:** at each pilaster foot
+2. **Ceiling anchor:** into structure at the top
+3. **Doors and panels:** 58" at 12" above the floor
 
 - **Pilasters** run from the finished floor to the ceiling. Bobrick makes its floor-to-ceiling anchored stiles to the height required, for ceilings up to 10'.
 - **Anchoring at both ends:** the NY OGS master spec calls for "anchoring assemblies with leveling adjustment nuts at tops and bottoms of pilasters." Bobrick fits a leveling device at each end of its floor-to-ceiling stiles.
 - **Covers:** a shoe at the floor and a sleeve (cap) at the ceiling hide the anchors (NY OGS).
 - **Doors and panels:** standard height. Bobrick's are 58" high. Hadrian's solid plastic floor-to-ceiling series uses 55" doors and panels mounted 14" above the finished floor. Doors are hung level and aligned with the panels.
+
+At the floor, the pilaster foot is anchored as in a floor-anchored stall.
+
+![Pilaster foot: leveling bar, wedge anchors and shoe](/images/diagrams/mounting-floor-to-ceiling-detail-ftc-floor.svg "side")
+
+At the top, the same leveling device is fixed to structure above the ceiling.
+
+![Pilaster top: rod and leveling bar fixed to ceiling structure](/images/diagrams/mounting-floor-to-ceiling-detail-ftc-ceiling.svg "side")
+
+From the side, the panel is 58" high with a 12" gap below it.
+
+![Side view through a stall: panel height and floor gap](/images/diagrams/mounting-floor-to-ceiling-side.svg "side")
 
 ## Structure needed
 
