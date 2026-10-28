@@ -124,3 +124,7 @@ The preview's homepage (`preview/home.html`) is the homepage proposal already se
 The material, mounting style and hardware pages (hubs included) are category pages, so they open with a product grid under the hero, the way a shop category does: product photo, name, brand / material / size line, price and "View product", four across on desktop, two on a phone, with Filter and Sort. The shop (`/products`) shows "coming soon" today, so the preview fills the grid with marked placeholder cards; wire it to the shop's product feed for that category once products are listed.
 
 Under the grid: the page's short intro stays visible; every content section after it sits in one "Read more about …" section (closed by default, a native `<details>`, so the text stays in the page for search engines). The FAQ and the sources stay visible below it. The previews do this in `build/build.mjs` (`productGrid`, `CATEGORY`).
+
+## 17. Get a Quote on phones and tablets (2026-10-28)
+
+Below 1024 px wide: a bar fixed to the bottom of the screen with a full-width "Get a Quote" button and a call button (1-833-997-7489), with the page padded so the bar never covers the footer; the hero button goes full width (up to 420 px) and 48 px tall, with "Standard configurations quoted within 2 business hours" under it; the hero drawing or render is kept small (up to 420 px wide, 240 px high) so it doesn't outshout the button. Desktop is unchanged. The previews do this in `build/build.mjs` (`mobileBar`, `MOBILE_CSS`).
