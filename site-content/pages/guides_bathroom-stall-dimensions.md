@@ -46,6 +46,10 @@ A row of stalls is the sum of its compartments. Our example layout is one 60-1/2
 
 The drawing is an example layout, not a rule. Your sizes depend on the brand and the room.
 
+:::expert
+Do buyers ask for wider or deeper stalls than standard? Which sizes, and why?
+:::
+
 ## Panel, door and pilaster heights
 
 Panels and doors on a traditional partition do not run to the floor. They are mounted above it, which leaves four gaps: at the door edges (the sightlines), under the doors and panels, above them, and at the wall. The front view shows where each one sits, and the floor gap is 12" on standard partitions.

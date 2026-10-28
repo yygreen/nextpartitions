@@ -74,6 +74,10 @@ The support system is shown in orange. Have your contractor or structural engine
 
 Set out the job from the approved shop drawings, not from memory or from the old stalls. Measure the room and compare it with the drawings before you start. If a wall or column is not where the drawing says, stop and resolve it with the architect. What to measure in an empty room is in [how to measure a restroom](/guides/restroom-layout).
 
+:::expert
+What should a buyer check or prepare before the installer arrives?
+:::
+
 ## The general sequence for overhead-braced and floor-mounted
 
 Most lines go in the same order. The two strips below are the whole job at a glance: each frame shows the same two stalls from above and from the front, with that step in orange. The steps after them explain each one. Your shop drawings and the manufacturer's instructions have the final word.

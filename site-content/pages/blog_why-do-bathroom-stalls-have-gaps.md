@@ -104,6 +104,10 @@ For no gaps at all, look at full-height enclosures. Scranton's Aria partitions g
 
 Note that [floor-to-ceiling mounting](/mounting-styles/floor-to-ceiling) on its own describes the pilasters, which run from floor to ceiling; standard doors and panels on that mounting still have gaps above and below. Ask for full-height or extended-height doors and panels if that's what you want.
 
+:::expert
+How many of your buyers now ask for no-gap partitions, and has it grown?
+:::
+
 ## Before you specify a gap-free restroom
 
 - **Check the accessible stalls.** Low panels need the 9" toe clearance in wheelchair-accessible compartments unless the compartment is oversized (604.8.1.4). See the [ADA compliance guide](/guides/ada-compliance).

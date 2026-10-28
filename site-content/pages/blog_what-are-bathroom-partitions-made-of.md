@@ -140,6 +140,10 @@ Start with the environment, then the budget:
 
 The [partitions overview](/partitions) compares all five materials side by side.
 
+:::expert
+Which material do you sell most, and to which kind of building?
+:::
+
 ## Get a quote
 
 Tell us your stall count, measurements, material and mounting style. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
