@@ -22,10 +22,10 @@ We sell partitions. We do not install them. You arrange installation with a qual
 
 ## Who we work with
 
-- **Contractors.** Partitions priced and delivered to your job site.
-- **Architects.** Materials, mounting styles and dimensions confirmed before you specify.
-- **Facility managers.** Replacement doors, hinges and latches, or whole restrooms.
-- **Builders and owners.** Partitions for the new restrooms you're planning.
+- **Contractors** who need partitions priced and delivered to a job site.
+- **Architects** who need materials, mounting styles and dimensions confirmed before they specify.
+- **Facility managers** replacing doors, hinges, latches or whole restrooms.
+- **Builders** and owners planning new restrooms.
 
 ## What you can buy
 

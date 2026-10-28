@@ -39,11 +39,11 @@ Fields: Name, Company, Email, Phone, Subject, Message. [Send Message]
 
 The more we know, the faster we can answer.
 
-- **Brand and material.** If you know them. A photo of the stall with the brand label or hardware helps most.
+- **Brand and material**, if you know them. A photo of the stall with the brand label or hardware helps most.
 - **Photos.** The whole stall, the door, and any part you want to replace. For a hinge or latch, a close-up of the part.
 - **Measurements.** For a replacement door: width, height, thickness, floor clearance, hinge and latch positions. See [replacement stall doors](/hardware/doors).
-- **Quantity.** How many stalls or parts, and whether the stall is wheelchair accessible.
-- **Delivery.** Your zip code and the date you need the partitions.
+- **Quantity**, and whether the stall is wheelchair accessible.
+- **Delivery zip code** and the date you need the partitions.
 
 Replacing parts? These pages say what to send: [hinges](/hardware/hinges), [locks & latches](/hardware/locks-latches), [door hardware](/hardware/door-hardware) and [parts](/hardware/parts).
 

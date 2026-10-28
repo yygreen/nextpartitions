@@ -115,10 +115,6 @@ On the mounting style pages, the lists under "Why specifiers choose …" and "Wh
 
 The "Planning a restroom?" side card opens with a small 3/4 render (`/images/renders/<style>-angle.jpg`, 16:10, rounded): the page's own mounting style on mounting style pages, overhead braced everywhere else. It's decorative (empty alt).
 
-## 15. Homepage, About and Contact: their own layouts (2026-10-28)
+## 15. Homepage preview (2026-10-28)
 
-These three pages aren't articles, so they no longer use the product and guide layout (hero, reading column, sticky side card). The copy still comes from `pages/home.md`, `about.md` and `contact.md`; `build/special.mjs` lays it out in full-width sections, inside the live header and footer and with the site's colors:
-
-- **Homepage:** hero with the 3/4 render, Get a Quote and Browse Materials, and three short reasons with checks; the configurator's three questions as numbered cards; the five materials as cards with their cross-sections; the four mounting styles as cards with their front renders; brand logos; why buy from us; industry tiles; how it works on a dark band; four "good to know" cards (what's included, measuring, accessible stalls with the ADA disclaimer, installation); FAQ; a closing quote band. The homepage is your call as designer: treat this as one option alongside the homepage prototype.
-- **About:** hero with four key figures (7 brands, 5 materials, 4 mounting styles, 50 states plus D.C.); what we do, with "we sell partitions, we don't install them" as a callout; who we work with; what you can buy as link rows; how a project works on a dark band; the mounting styles drawing; accessibility and shipping cards; FAQ; a closing band.
-- **Contact:** phone, email and shipping cards overlapping the hero; the message form next to the response times; what to include as cards; the new-restroom measuring drawings; FAQ.
+The preview's homepage (`preview/home.html`) is the homepage proposal already sent to you (`prototypes/homepage-grid.html`, three ways into a quote: price it yourself, send your plans, shop the catalogue), not the article layout. Ideas for you to use as you see fit. `pages/home.md` holds the matching copy. About and Contact stay as they are.
