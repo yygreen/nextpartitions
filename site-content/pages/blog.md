@@ -14,52 +14,20 @@ Practical articles and guides on commercial bathroom partitions for facility man
 
 [Get a Quote](/get-a-quote)
 
-## Latest posts
+## Posts
 
-- [What Are Bathroom Partitions Made Of?](/blog/what-are-bathroom-partitions-made-of)
-- [Why Do Bathroom Stalls Have Gaps? (And How to Eliminate Them)](/blog/why-do-bathroom-stalls-have-gaps)
+Newest first. Each post's category follows its link.
 
-## Planning and sizes
+- [What Are Bathroom Partitions Made Of?](/blog/what-are-bathroom-partitions-made-of) · Materials
+- [Why Do Bathroom Stalls Have Gaps? (And How to Eliminate Them)](/blog/why-do-bathroom-stalls-have-gaps) · Privacy
 
-Start here: how big a stall is, what goes on a quote, and how stalls fit in a room.
+## Guides
+
+Reference guides for planning a restroom.
 
 - [Bathroom Stall Dimensions](/guides/bathroom-stall-dimensions)
-- [Toilet Partition Sizes](/guides/standard-sizes)
 - [Commercial Restroom Layout](/guides/restroom-layout)
-
-## Accessibility and privacy
-
-What the 2010 ADA Standards ask of a toilet compartment, and how to close the gaps around a stall. Confirm your project with your architect or local code official.
-
-- [ADA Bathroom Compliance Guide](/guides/ada-compliance): Compartment size, door location and swing, grab bars, toilet position and door hardware under the 2010 ADA Standards.
-- [Why Do Bathroom Stalls Have Gaps?](/blog/why-do-bathroom-stalls-have-gaps)
-
-## Materials
-
-How each partition material is built, and where it fits.
-
-- [What Are Bathroom Partitions Made Of?](/blog/what-are-bathroom-partitions-made-of)
-- [Powder Coated Steel](/partitions/powder-coated-steel)
-- [Solid Plastic (HDPE)](/partitions/solid-plastic-hdpe)
-- [Phenolic](/partitions/phenolic)
-- [Plastic Laminate](/partitions/plastic-laminate)
-- [Stainless Steel](/partitions/stainless-steel)
-
-## Mounting styles
-
-What your floor and ceiling have to provide for each style.
-
-- [Overhead Braced](/mounting-styles/overhead-braced)
-- [Floor Mounted](/mounting-styles/floor-mounted)
-- [Ceiling Hung](/mounting-styles/ceiling-hung)
-- [Floor to Ceiling](/mounting-styles/floor-to-ceiling)
-
-## Installation
-
-How partitions go in, and where to find each manufacturer's own instructions. Next Partitions supplies partitions and doesn't install them.
-
 - [How to Install Bathroom Partitions](/guides/how-to-install-toilet-partitions)
-- [Installation Instructions by Brand](/guides/installation-instructions)
 
 ## Ready to price your restroom?
 
@@ -78,6 +46,6 @@ Standard configurations are quoted within 2 business hours; custom projects with
 
 - Structured data: Blog with a BlogPosting entry per post; BreadcrumbList Home > Blog. No FAQ on this index page.
 - Dates are placeholders (2026-10-26); set them to the real publish dates and show newest first.
-- Layout: an overview, not an article. Topic chips under the title jump to each topic. "Latest posts" shows the newest blog posts as large cards; each topic below is a row of cards (thumbnail, type label Guide / Blog / Material / Mounting style, title, one-line summary from the page's meta description, read link). Thumbnails are the page's own first drawing, or the front render on mounting style pages. The preview builds the cards from these lists (`build/build.mjs`, `hub()`).
-- Each later post from the content calendar goes in "Latest posts" (newest first) and in its topic's list. Post #2 (cost guide) waits for Abe's price list.
+- Layout: an overview, not an article. Under the hero: one row of category chips with post counts ("All" first), a search field, then one grid of every post, newest first, three across (thumbnail, category, date, title, one-line summary from the page's meta description, read link). A chip or a search narrows the grid in place; with no match, a short "No posts match" line shows. Below the posts, three guides as a teaser with a link to all guides. The preview builds this from the lists above (`build/build.mjs`, `blogHub()`).
+- Each later post from the content calendar goes at the top of "Posts" with its category after the link; a new category gets its own chip automatically. Post #2 (cost guide) waits for Abe's price list.
 - Link /blog from the main nav and footer, and add it to the sitemap; remove /blog/news from the sitemap.
