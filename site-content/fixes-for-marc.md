@@ -118,3 +118,9 @@ The "Planning a restroom?" side card opens with a small 3/4 render (`/images/ren
 ## 15. Homepage preview (2026-10-28)
 
 The preview's homepage (`preview/home.html`) is the homepage proposal already sent to you (`prototypes/homepage-grid.html`, three ways into a quote: price it yourself, send your plans, shop the catalogue), not the article layout. Ideas for you to use as you see fit. `pages/home.md` holds the matching copy. About and Contact stay as they are on the live site; they are not part of this work.
+
+## 16. Category pages: product grid first, content under "Read more" (2026-10-28)
+
+The material, mounting style and hardware pages (hubs included) are category pages, so they open with a product grid under the hero, the way a shop category does: product photo, name, brand / material / size line, price and "View product", four across on desktop, two on a phone, with Filter and Sort. The shop (`/products`) shows "coming soon" today, so the preview fills the grid with marked placeholder cards; wire it to the shop's product feed for that category once products are listed.
+
+Under the grid: the page's short intro stays visible; every content section after it sits in one "Read more about …" section (closed by default, a native `<details>`, so the text stays in the page for search engines). The FAQ and the sources stay visible below it. The previews do this in `build/build.mjs` (`productGrid`, `CATEGORY`).
