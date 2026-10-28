@@ -187,8 +187,8 @@ function homepage(url) {
 }
 
 
-// The blog index is an overview, not an article: topic chips, the latest posts as large cards, then one row of cards
-// per topic. pages/blog.md lists the links per topic; each card takes its title, summary (meta description) and
+// The blog index is an overview, not an article: topic chips, then the latest posts and one group per topic, all in
+// the same card, three across on desktop and two on a tablet. pages/blog.md lists the links per topic; each card takes its title, summary (meta description) and
 // thumbnail (the page's first drawing, or the front render on mounting style pages) from the linked page's own file.
 // A link to a page we haven't rebuilt carries its summary after a colon, and its drawing comes from HUB_THUMB.
 const HUB_THUMB = { '/guides/ada-compliance': 'accessible-stall-plan' }
@@ -216,9 +216,9 @@ function hubCard(item, big) {
 }
 const HUB_CSS = `.np-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.np-chips a{padding:6px 14px;border-radius:999px;border:1px solid rgba(251,250,249,.3);font-size:14px;font-weight:500;color:#fbfaf9}.np-chips a:hover{border-color:#fe7802;color:#fe7802}
 .np-hs{padding:48px 0;border-bottom:1px solid var(--border,#e5e0da);scroll-margin-top:120px}.np-hs:last-of-type{border-bottom:0}.np-hs h2{font-size:26px;font-weight:700;margin:0 0 6px}.np-hs>div>p{color:var(--muted-foreground,#7a6a5e);margin:0 0 24px;max-width:46rem}
-.np-hg{display:grid;gap:20px}@media(min-width:640px){.np-hg{grid-template-columns:repeat(2,1fr)}}@media(min-width:1024px){.np-hg{grid-template-columns:repeat(3,1fr)}.np-hg-2{grid-template-columns:repeat(2,1fr)}.np-hg-4{grid-template-columns:repeat(4,1fr)}.np-hg-5{grid-template-columns:repeat(5,1fr)}}.np-hs-note{margin:16px 0 0;font-size:13px;line-height:1.55;color:var(--muted-foreground,#7a6a5e);max-width:52rem}.np-hs-note a,.np-hs>div>p a{color:#fe7802;font-weight:500}
+.np-hg{display:grid;gap:20px}@media(min-width:640px){.np-hg{grid-template-columns:repeat(2,1fr)}}@media(min-width:1024px){.np-hg{grid-template-columns:repeat(3,1fr)}}.np-hs-note{margin:16px 0 0;font-size:13px;line-height:1.55;color:var(--muted-foreground,#7a6a5e);max-width:52rem}.np-hs-note a,.np-hs>div>p a{color:#fe7802;font-weight:500}
 .np-hc{display:flex;flex-direction:column;background:#fff;border:1px solid var(--border,#e5e0da);border-radius:10px;overflow:hidden;transition:border-color .15s,box-shadow .15s;min-width:0}.np-hc:hover{border-color:#fe7802;box-shadow:0 8px 24px rgba(28,14,5,.08)}
-.np-hc-media{aspect-ratio:16/9;max-width:100%;display:flex;align-items:center;justify-content:center;background:#fff;border-bottom:1px solid var(--border,#e5e0da);padding:12px;overflow:hidden}.np-hc-media svg{width:100%;height:100%}.np-hc-media img{width:100%;height:100%;object-fit:contain}
+.np-hc-media{aspect-ratio:16/9;max-width:100%;display:flex;align-items:center;justify-content:center;background:#fff;border-bottom:1px solid var(--border,#e5e0da);padding:12px;overflow:hidden}.np-hc-media svg{width:100%;height:100%}.np-hc-media .co,.np-hc-media .dn{display:none}.np-hc-media img{width:100%;height:100%;object-fit:contain}
 .np-hc-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}.np-hc-meta{display:flex;gap:10px;align-items:center;font-size:12px}.np-hc-type{font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fe7802}.np-hc-date{color:var(--muted-foreground,#7a6a5e)}
 .np-hc h3{font-size:18px;line-height:1.3;font-weight:700;margin:0;color:var(--foreground,#1c0e05)}.np-hc p{margin:0;font-size:15px;line-height:1.55;color:var(--muted-foreground,#7a6a5e)}.np-hc-go{margin-top:auto;padding-top:6px;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:#fe7802}.np-hc-go svg{width:15px;height:15px}
 @media(min-width:900px){.np-hg-big{grid-template-columns:1fr 1fr}.np-hc-big{flex-direction:row}.np-hc-big .np-hc-media{flex:0 0 48%;padding:8px;aspect-ratio:auto;border-bottom:0;border-right:1px solid var(--border,#e5e0da)}.np-hc-big h3{font-size:21px}}`
@@ -237,11 +237,11 @@ function hub(fm, intro, sections, url, faq, sources) {
 <nav class="np-chips" aria-label="Topics">${topics.map((s) => `<a href="#${slug(s.title)}">${esc(s.title)}</a>`).join('')}</nav>
 </div></div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-${latest ? `<section class="np-hs"><div><h2>${esc(latest.title)}</h2><p>New articles, newest first.</p></div><div class="np-hg np-hg-big">${items(latest).map((i) => hubCard(i, true)).join('')}</div></section>` : ''}
+${latest ? `<section class="np-hs"><div><h2>${esc(latest.title)}</h2><p>New articles, newest first.</p></div><div class="np-hg">${items(latest).map((i) => hubCard(i)).join('')}</div></section>` : ''}
 ${topics.map((s) => {
     const ps = s.md.split(/\n\s*\n/).map((x) => x.trim()).filter((x) => !x.startsWith('- '))
     const lede = s.md.trim().startsWith('- ') ? '' : ps.shift(), n = items(s).length
-    return `<section class="np-hs" id="${slug(s.title)}"><div><h2>${esc(s.title)}</h2>${lede ? `<p>${md(lede).replace(/^<p[^>]*>|<\/p>\s*$/g, '')}</p>` : ''}</div><div class="np-hg${n === 2 ? ' np-hg-2' : n === 4 ? ' np-hg-4' : n === 5 ? ' np-hg-5' : ''}">${items(s).map((i) => hubCard(i)).join('')}</div>${ps.map((x) => `<p class="np-hs-note">${md(x).replace(/^<p[^>]*>|<\/p>\s*$/g, '')}</p>`).join('')}</section>`
+    return `<section class="np-hs" id="${slug(s.title)}"><div><h2>${esc(s.title)}</h2>${lede ? `<p>${md(lede).replace(/^<p[^>]*>|<\/p>\s*$/g, '')}</p>` : ''}</div><div class="np-hg">${items(s).map((i) => hubCard(i)).join('')}</div>${ps.map((x) => `<p class="np-hs-note">${md(x).replace(/^<p[^>]*>|<\/p>\s*$/g, '')}</p>`).join('')}</section>`
   }).join('\n')}
 ${faq.length ? `<section class="np-hs"><div><h2>Frequently Asked Questions</h2></div><div class="space-y-3" style="max-width:48rem">${faq.map((x) => `<details class="border border-border rounded-lg p-4 bg-card"><summary class="font-semibold text-foreground cursor-pointer">${esc(x.q)}</summary><div class="mt-3">${md(x.a)}</div></details>`).join('')}</div></section>` : ''}
 ${sources ? `<section class="np-sources np-hs text-xs text-muted-foreground"><h2 class="text-sm font-semibold text-foreground mb-2" style="font-size:14px">Sources</h2>${md(sources.md).replace(/text-muted-foreground leading-relaxed mb-4/g, 'mb-2').replace(/space-y-2 text-muted-foreground leading-relaxed mb-4/g, 'space-y-1')}</section>` : ''}
