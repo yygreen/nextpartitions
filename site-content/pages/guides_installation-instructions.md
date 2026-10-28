@@ -4,8 +4,8 @@ title: Bathroom Partition Installation Instructions
 meta: Find bathroom partition installation instructions by brand and material: which manufacturer document to use, what we could link, and where to request the rest.
 h1: Bathroom Partition Installation Instructions
 primary_keyword: bathroom partition installation instructions (30/mo)
-secondary_keywords: [hadrian toilet partitions installation instructions (30), bobrick toilet partition installation instructions (20), metpar toilet partitions installation (20), asi installation instructions, bradley installation instructions, scranton installation instructions, ammco installation instructions]
-words: 1,150
+secondary_keywords: [hadrian toilet partitions installation instructions (30), bobrick toilet partition installation instructions (20), metpar toilet partitions installation (20), asi installation instructions, bradley installation instructions, scranton installation instructions, ammco installation instructions, toilet partition revit family (volume: confirm), toilet partition cad details (volume: confirm)]
+words: 1,550
 ---
 
 # Bathroom Partition Installation Instructions
@@ -63,6 +63,24 @@ Every link below is on the manufacturer's own site. We opened each one on 2026-1
 
 If your brand or series shows "[contact us](/contact) with your brand, series and a photo of the partition or the label. We will help you find the right document. We do not guess at links.
 
+## Revit and CAD files by brand
+
+Architects and designers often want the manufacturer's drawing files as well as the installation guide. Revit families (.rfa) are 3D partition models that drop into an architect's building model in Autodesk Revit. CAD drawings (.dwg or .dxf) are 2D plan and elevation drawings for laying out a restroom in AutoCAD or another CAD program. You need Revit or a CAD program to open them. If you just need the key sizes, our guides summarise them: see [bathroom stall dimensions](/guides/bathroom-stall-dimensions) and [standard sizes](/guides/standard-sizes).
+
+We opened every link below on 2026-10-28. "Yes" means the files load from the manufacturer's own site and are what they say. "Listed" means the manufacturer's page lists the files but we could not open them.
+
+| Brand | Revit (.rfa) | CAD (.dwg/.dxf) | Where |
+|---|---|---|---|
+| Bobrick | Yes, per series and mounting style (DuraLine, SierraSeries, DesignerSeries, Budget HPL, PRIVADA, Evolve) | Yes, .dwg per series and mounting style | [Bobrick cubicles and partitions BIM, CAD, TDs](https://www.bobrick.com/resource-center-2/tools/bim-objects-cad-tds/cubicles-and-partitions-bim-cad-tds); spec: [guide specification 10 21 13](https://www.bobrick.com/resource-center-2/guide-specifications/) |
+| ASI Global | Listed (BIMcontent library shown on ASI's page) | Ask the manufacturer or us | [ASI Global Partitions BIM content](https://asi-globalpartitions.com/bim-objects/); specs: [specifications](https://asi-globalpartitions.com/specifications/) |
+| Scranton Products | Listed (hosted on ARCAT) | Listed (hosted on ARCAT) | [Scranton Products architects and designers page](https://www.scrantonproducts.com/for-professionals/) (BIM objects, CAD details and specs) |
+| Bradley | Ask the manufacturer or us | Ask the manufacturer or us | [Bradley](https://www.bradleycorp.com/) |
+| Metpar | Ask the manufacturer or us | Ask the manufacturer or us | [Metpar specs and drawings](https://metpar.com/tech-docs/) (PDF documents and Word specs) |
+| Ammco (All American Metal) | Ask the manufacturer or us | Ask the manufacturer or us | [All American Metal specifications](https://allamericanmetal.com/specification) (PDF spec sheets) |
+| Hadrian | Listed (Sweets) | Listed (Sweets) | [Hadrian on Sweets](https://sweets.construction.com/Manufacturer/Hadrian-Solutions-ULC-NST644/cad-bim) |
+
+Files change when manufacturers update their lines. Check the series and date against your order before you use them in a drawing set.
+
 ## Frequently asked questions
 
 ### Where do I find installation instructions for my bathroom partitions?
@@ -79,6 +97,9 @@ Yes. Metpar publishes installation instructions for powder coated, stainless ste
 
 ### Where are Bradley installation instructions?
 Bradley publishes a guide for each series and material: phenolic Series 400, 500, 600 and 700, powder coated and stainless steel Series 400 (69" and 72" tall) and 600, and Bradmar plastic Series 400. They are listed in the table by document number. Request the one that matches your series from Bradley, or ask us.
+
+### Where can I get Revit families or CAD details for toilet partitions?
+From the manufacturer. Bobrick publishes Revit families and .dwg drawings for each series on its own site, and ASI Global lists Revit families on its BIM page. Scranton Products and Hadrian list theirs on ARCAT and Sweets. For Bradley, Metpar and Ammco, ask the manufacturer or us. See the table above.
 
 ### Do you install the partitions?
 No. We sell partitions and do not install them. Use a qualified installer.
@@ -97,6 +118,16 @@ All links below were opened on 2026-10-27 and returned HTTP 200 with the documen
 - [Scranton Products, Hiny Hiders installation resources](https://www.scrantonproducts.com/products/hiny-hiders-partitions/installation-resources/) and [product installation resources](https://www.scrantonproducts.com/for-professionals/product-installation-resources/). Checked 2026-10-27.
 - [Metpar installer resources](https://metpar.com/installer-resources/) and the PDFs linked from it (powder coated, stainless steel, Dur-A-Tex, phenolic, Solitude). Checked 2026-10-27.
 
+Revit and CAD files (all returned HTTP 200):
+
+- [Bobrick cubicles and partitions BIM, CAD, TDs](https://www.bobrick.com/resource-center-2/tools/bim-objects-cad-tds/cubicles-and-partitions-bim-cad-tds): 12 zip files (BIM object and DWG for PRIVADA, Evolve, DuraLineSeries CGL, SierraSeries SCRC, DesignerSeries HPL, Budget HPL). DuraLine zips downloaded: the BIM zip holds 22 .rfa families, the DWG zip 19 .dwg drawings, one per model and mounting style. Bobrick [guide specifications](https://www.bobrick.com/resource-center-2/guide-specifications/) (Toilet Compartments, Section 10 21 13, Word and PDF). Checked 2026-10-28.
+- [ASI Global Partitions BIM content](https://asi-globalpartitions.com/bim-objects/) (embeds the BIMcontent.com ASI Global Partitions library of Revit families) and [specifications](https://asi-globalpartitions.com/specifications/). Checked 2026-10-28.
+- [Scranton Products architects and designers page](https://www.scrantonproducts.com/for-professionals/): links "BIM Objects" and "CAD Details" on ARCAT and the [Hiny Hiders specification](https://www.arcat.com/sdspecs/docx04/10_21_00spi.docx) (Word). The ARCAT BIM and CAD pages did not open for us. Checked 2026-10-28.
+- [Metpar specs and drawings](https://metpar.com/tech-docs/): PDF documents and Word master specifications by material and mounting style; no Revit or DWG files on the page. Checked 2026-10-28.
+- [All American Metal specifications](https://allamericanmetal.com/specification): PDF spec sheets by type; no Revit or DWG files on the page. Checked 2026-10-28.
+- [Hadrian Solutions ULC on Sweets](https://sweets.construction.com/Manufacturer/Hadrian-Solutions-ULC-NST644/cad-bim): lists toilet partitions by material and mounting style with "CAD" and "BIM" tabs; the files load in the browser only, so we did not open them. Checked 2026-10-28.
+- Bradley: no Revit or CAD page could be opened (bradleycorp.com refused our check). Checked 2026-10-28.
+
 <!-- For Marc -->
 ## Corrections to the current page
 
@@ -104,14 +135,16 @@ None. This is a new page. There is no live version.
 
 ## Implementation notes
 
-- These are external links. Use `rel="noopener"`, and check them quarterly.
+- These are external links. Use `rel="noopener"`, and check them quarterly. This includes the Revit and CAD links: manufacturers move these files often (zip names, library hosts), so check each link in the Revit and CAD table every quarter and update the "Checked" dates.
 - URL: the keyword research suggested /resources/... URLs, but the site's hub is /guides. This page goes under /guides and needs a card added to the Guides hub (pages/guides.md lists the hub cards; I did not edit it).
-- Structured data: FAQPage (5 Q&As); BreadcrumbList.
+- Structured data: FAQPage (6 Q&As); BreadcrumbList.
 - Bradley and Hadrian: the dealer-hosted copies are cited by title and number or date, with no URL, and the table sends readers to the manufacturers' sites. Removed the old Scranton guide specification (a specification, not an installation booklet) in favor of manufacturer pages. The Scranton installation manual itself sits on a Dropbox link behind Scranton's installation resources page, so the table links Scranton's page instead of the Dropbox file.
 - The Metpar PDF links use `www.metpar.com` as printed on Metpar's own page; they load over HTTPS.
 - Link from the brand pages (/brands/bobrick etc.) and from the how-to guide.
 
 ## To verify when sources are reachable
+
+- Revit and CAD: open in a browser and confirm, then upgrade "Listed" or "Ask the manufacturer or us" to "Yes" where the files are there: Scranton on ARCAT (BIM objects and CAD details linked from its architects page), Hadrian on Sweets and BIMobject (bimobject.com/en/hadrian/toilet-partitions), Metpar Revit families on ARCAT (search results show ceiling hung, floor mount, floor to ceiling and overhead braced families), Bradley at bradleycorp.com/bim. ARCAT, BIMobject and bradleycorp.com refused our automated check on 2026-10-28. Third-party library links are not in the table until confirmed.
 
 - Bradley Series 500 and 700 in powder coated, stainless steel or Bradmar plastic, and Series 600 Bradmar: no guide was in the set we reviewed (checked 2026-10-27: not found). The Bradley powder coated and Bradmar guides are 2015 and 2018 revisions; the 2025 Bradley brochure lists only phenolic and stainless steel. Confirm with Bradley which are current.
 - Hadrian: no direct link to a Hadrian document page is held. The Standard Series manual is the stainless copy we reviewed; the manual says "metal", so powder coated is covered by the same text, but the copy was filed as stainless. The manuals point to hadrian-inc.com/Tech-Data/Installation/Toilet-Partitions.aspx for video instructions; hadrian-inc.com was not checked for that page.
