@@ -134,10 +134,10 @@ const doorDims = (e) => vdim(e.wallL - 12, e.Y(70), e.Y(12), '58"', 'left') + vd
     e.body + vdim(e.wallR + 34, e.Y(69), e.Y(0), '69"') + callout(1, e.X(e.xs[1] + 3), e.under, [e.X(e.xs[1] + 6), e.Y(-2)]) + callout(2, e.X(e.xs[0] + 3), e.Y(80), [e.X(e.xs[0] + 3), e.Y(70)])))
 }
 {
-  const e = elevation({ floor: 400, ceiling: 96, plenum: true, pil: [13, 96], floorAnchors: false, hangers: true, wallH: 112 })
+  const e = elevation({ floor: 400, ceiling: 96, plenum: true, pil: [12, 95], floorAnchors: false, hangers: true, wallH: 112 })
   made.push(svg('mounting-ceiling-hung', W(e), 480, 'Ceiling hung toilet partitions, front view',
     'Two stalls seen from the front. Pilasters hang from structural steel above the finished ceiling and stop short of the floor, which stays completely clear. Ceiling-hung pilasters are 83 inches for an 8-foot ceiling.',
-    e.body + vdim(e.wallR + 34, e.Y(96), e.Y(13), '83"') + vdim(e.wallR + 34, e.Y(13), e.Y(0), 'clear') + vdim(e.wallL - 12, e.Y(70), e.Y(12), '58"', 'left')
+    e.body + vdim(e.wallR + 34, e.Y(95), e.Y(12), '83"') + vdim(e.wallR + 34, e.Y(12), e.Y(0), 'clear') + vdim(e.wallL - 12, e.Y(70), e.Y(12), '58"', 'left')
     + callout(1, e.X(8), e.Y(116), [e.X(8), e.Y(106)]) + callout(2, e.X(e.last + 3) - 34, e.Y(86), [e.X(e.last + 3), e.Y(97)]) + callout(3, e.X(e.xs[1] + 3), e.under, [e.X(e.xs[1] + 3), e.Y(6)]), 780))
 }
 {
@@ -153,7 +153,7 @@ const doorDims = (e) => vdim(e.wallL - 12, e.Y(70), e.Y(12), '58"', 'left') + vd
   const styles = [
     ['Overhead braced', { headrail: true, pil: [0, 83] }],
     ['Floor mounted', { pil: [0, 69], door: [11, 69], emphasis: 'floor' }],
-    ['Ceiling hung', { ceiling: 96, plenum: true, pil: [13, 96], floorAnchors: false, hangers: true, wallH: 112 }],
+    ['Ceiling hung', { ceiling: 96, plenum: true, pil: [12, 95], floorAnchors: false, hangers: true, wallH: 112 }],
     ['Floor to ceiling', { ceiling: 96, pil: [0, 96], ceilingAnchors: true }],
   ]
   let b = ''
@@ -343,7 +343,7 @@ function plan(name, ph = false) {
 // ph: the phone variant (360 wide, 1.4 px per inch): the same dimensions, "stile" and "to ceiling" left to the page text.
 function front(name, style, ph = false) {
   const s = ph ? 1.4 : 3.2, x0 = ph ? 46 : 70, wt = ph ? 10 : 22, slab = ph ? 14 : 30
-  const H = { ob: { pil: [1, 82], rail: 82, floor: 330, wall: 100 }, fm: { pil: [1, 70], floor: 300, wall: 92 }, ch: { pil: [13, 96], ceil: 96, floor: 400, wall: 112, plenum: true }, ftc: { pil: [0, 96], ceil: 96, floor: 370, wall: 100 } }[style]
+  const H = { ob: { pil: [1, 82], rail: 82, floor: 330, wall: 100 }, fm: { pil: [1, 70], floor: 300, wall: 92 }, ch: { pil: [12, 95], ceil: 96, floor: 400, wall: 112, plenum: true }, ftc: { pil: [0, 96], ceil: 96, floor: 370, wall: 100 } }[style]
   const top = { ob: 100, fm: 92, ch: 112, ftc: 100 }[style]
   const floor = ph ? Math.round(12 + top * s) : H.floor, Y = (i) => floor - i * s, X = (i) => x0 + wt + i * s
   const run = FRONT.reduce((a, [, w]) => a + w, 0), wallR = X(run)
@@ -388,7 +388,7 @@ function front(name, style, ph = false) {
   b += vdim(dl, Y(70), Y(12), '58"', 'left') + vdim(dl, Y(12), Y(0), '12"', 'left')
   if (style === 'ob') b += vdim(dl, Y(82), Y(70), '12"', 'left') + vdim(dr, Y(82), Y(0), '82"')
   if (style === 'fm') b += vdim(dr, Y(70), Y(1), ph ? '69"' : '69" stile')
-  if (style === 'ch') b += vdim(dr, Y(96), Y(13), ph ? '83"' : '83" stile') + vdim(dr, Y(13), Y(0), 'clear')
+  if (style === 'ch') b += vdim(dr, Y(95), Y(12), ph ? '83"' : '83" stile') + vdim(dr, Y(12), Y(0), 'clear')
   if (style === 'ftc' && !ph) b += vdim(dr, Y(96), Y(0), 'to ceiling')
   const w = ph ? 360 : Math.round(wallR + 22 + 34 + (style === 'ftc' ? 90 : 80))
   return svg(name, w, ph ? (style === 'ch' ? floor + slab + 8 : under + 16) : floor + 64, 'Front elevation of a row of toilet compartments',
@@ -440,7 +440,7 @@ function side(name, style) {
   const s = 1.75, x0 = 196, depth = LAYOUT.depth, wt = 14
   const floor = 206, wallH = style === 'ch' ? 112 : 100
   const Y = (i) => floor - i * s, X = (i) => x0 + i * s
-  const pil = { ob: [1, 82], fm: [1, 70], ch: [13, 96], ftc: [0, 96] }[style]
+  const pil = { ob: [1, 82], fm: [1, 70], ch: [12, 95], ftc: [0, 96] }[style]
   const ceil = style === 'ch' || style === 'ftc'
   let b = rect(x0 - 26, floor, X(depth) + wt - x0 + 26, 12, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 26, floor, X(depth) + wt, floor)
   b += rect(X(depth), Y(wallH), wt, wallH * s, { fill: 'HATCH', stroke: 'none' }) + line(X(depth), Y(wallH), X(depth), floor)
@@ -844,7 +844,7 @@ const H_M = 222
       + callout(1, e.X(28), e.Y(92), [e.X(28), e.Y(83) + 2]) + callout(2, e.X(e.xs[1] + 3), e.under, [e.X(e.xs[1] + 3), e.Y(1)]) + callout(3, e.X(e.last + 3), e.Y(50), null)],
     'mounting-floor-mounted': [{ P: 8, pil: [0, 69], door: [11, 69], emphasis: 'floor' }, 100, (e) => vdim(e.wallR + 22, e.Y(69), e.Y(0), '69"')
       + callout(1, e.X(e.xs[1] + 3), e.under, [e.X(e.xs[1] + 6), e.Y(-2)]) + callout(2, e.X(e.xs[0] + 3), e.Y(82), [e.X(e.xs[0] + 3), e.Y(70)])],
-    'mounting-ceiling-hung': [{ ceiling: 96, plenum: true, pil: [13, 96], floorAnchors: false, hangers: true, wallH: 112 }, 118, (e) => vdim(e.wallR + 22, e.Y(96), e.Y(13), '83"') + vdim(e.wallR + 22, e.Y(13), e.Y(0), 'clear') + vdim(e.wallL - 10, e.Y(70), e.Y(12), '58"', 'left')
+    'mounting-ceiling-hung': [{ ceiling: 96, plenum: true, pil: [12, 95], floorAnchors: false, hangers: true, wallH: 112 }, 118, (e) => vdim(e.wallR + 22, e.Y(95), e.Y(12), '83"') + vdim(e.wallR + 22, e.Y(12), e.Y(0), 'clear') + vdim(e.wallL - 10, e.Y(70), e.Y(12), '58"', 'left')
       + callout(1, e.X(8), e.Y(118), [e.X(8), e.Y(106)]) + callout(2, e.X(e.last + 3) - 24, e.Y(84), [e.X(e.last + 3), e.Y(97)]) + callout(3, e.X(e.xs[1] + 3), e.under, [e.X(e.xs[1] + 3), e.Y(6)])],
     'mounting-floor-to-ceiling': [{ ceiling: 96, pil: [0, 96], ceilingAnchors: true }, 100, (e) => vdim(e.wallL - 10, e.Y(70), e.Y(12), '58"', 'left') + vdim(e.wallL - 10, e.Y(12), e.Y(0), '12"', 'left')
       + callout(1, e.X(e.xs[1] + 3), e.under, [e.X(e.xs[1] + 3), e.Y(1)]) + callout(2, e.X(e.last + 3) - 22, e.Y(84), [e.X(e.last + 3), e.Y(94)]) + callout(3, e.X(e.xs[1] + 18.6), e.Y(6), null)],
@@ -863,7 +863,7 @@ const H_M = 222
   const styles = [
     ['Overhead braced', { headrail: true, pil: [0, 83] }],
     ['Floor mounted', { pil: [0, 69], door: [11, 69], emphasis: 'floor' }],
-    ['Ceiling hung', { ceiling: 96, plenum: true, pil: [13, 96], floorAnchors: false, hangers: true, wallH: 112 }],
+    ['Ceiling hung', { ceiling: 96, plenum: true, pil: [12, 95], floorAnchors: false, hangers: true, wallH: 112 }],
     ['Floor to ceiling', { ceiling: 96, pil: [0, 96], ceilingAnchors: true }],
   ]
   const s = 1.5, floor = 178, h = 222
