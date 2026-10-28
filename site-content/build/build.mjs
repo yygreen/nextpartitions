@@ -279,9 +279,8 @@ const CAT_CSS = `.np-pg-bar{display:flex;flex-wrap:wrap;justify-content:space-be
 .np-pg-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}@media(min-width:900px){.np-pg-grid{grid-template-columns:repeat(4,1fr)}}
 .np-pc{background:#fff;border:1px solid var(--border,#e5e0da);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;min-width:0}.np-pc-img{aspect-ratio:1/1;max-width:100%;background:#f2f0ec;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#b5aaa0;font-size:12px}
 .np-pc-body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px;flex:1}.np-pc-name{font-weight:600;color:var(--foreground,#1c0e05);margin:0}.np-pc-spec{font-size:13px;color:var(--muted-foreground,#7a6a5e);margin:0}.np-pc-price{font-weight:700;color:var(--foreground,#1c0e05);margin:4px 0 8px}.np-pc-btn{margin-top:auto;text-align:center;padding:8px;border-radius:6px;border:1px solid #fe7802;color:#fe7802;font-size:14px;font-weight:600}
-.np-readmore{margin-bottom:32px}.np-readmore>summary{display:block;cursor:pointer}.np-readmore>summary::after{content:none}
-.np-teaser{position:relative;max-height:190px;overflow:hidden}.np-teaser::after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(rgba(251,250,249,0),var(--background,#fbfaf9))}.np-readmore[open] .np-teaser{display:none}
-.np-rm-btn{display:inline-flex;align-items:center;gap:8px;margin-top:4px;padding:10px 18px;border:1px solid #fe7802;border-radius:6px;font-weight:600;color:#fe7802;background:#fff}.np-rm-btn::after{content:"+";font-weight:700}.np-readmore[open] .np-rm-btn{margin-bottom:16px}.np-readmore[open] .np-rm-btn::after{content:"–"}`
+.np-rm{margin-bottom:32px}.np-rm:not(.is-open) .np-rm-body{max-height:240px;overflow:hidden;position:relative}.np-rm:not(.is-open) .np-rm-body::after{content:"";position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(rgba(251,250,249,0),var(--background,#fbfaf9))}
+.np-rm-btn{display:inline-flex;align-items:center;gap:8px;margin-top:8px;padding:10px 18px;border:1px solid #fe7802;border-radius:6px;font:inherit;font-weight:600;color:#fe7802;background:#fff;cursor:pointer}.np-rm-btn::after{content:"+";font-weight:700}.np-rm.is-open .np-rm-btn::after{content:"–"}.np-rm-btn:focus-visible{outline:2px solid #fe7802;outline-offset:2px}`
 
 
 // Phones and tablets (below 1024 px): the hero button goes full width (up to 420 px) and 48 px tall.
@@ -316,6 +315,7 @@ ${end ? `<section class="bg-accent/50"><div class="max-w-7xl mx-auto px-4 sm:px-
 <!--np-blog-js-->
 </main>`
 }
+const RM_JS = `<script>(()=>{const w=document.getElementById('np-rm');if(!w)return;const b=w.querySelector('.np-rm-btn');b.addEventListener('click',()=>{const open=!w.classList.contains('is-open');w.classList.toggle('is-open',open);b.setAttribute('aria-expanded',open);b.textContent=open?'Show less':b.dataset.more;if(!open)w.scrollIntoView({block:'start'})})})()</script>`
 const BLOG_CSS = `.np-filter{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}.np-chip{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:999px;border:1px solid var(--border,#e5e0da);background:#fff;font-size:15px;font-weight:600;color:var(--foreground,#1c0e05);cursor:pointer}.np-chip span{font-size:13px;font-weight:600;color:var(--muted-foreground,#7a6a5e);font-variant-numeric:tabular-nums}.np-chip:hover{border-color:#fe7802}.np-chip.is-on{background:#fe7802;border-color:#fe7802;color:#fff}.np-chip.is-on span{color:rgba(255,255,255,.8)}.np-chip:focus-visible,.np-search input:focus-visible{outline:2px solid #fe7802;outline-offset:2px}
 .np-search{display:flex;align-items:center;gap:10px;padding:0 18px;height:52px;border:1px solid var(--border,#e5e0da);border-radius:999px;background:#fff;color:var(--muted-foreground,#7a6a5e);margin-bottom:28px}.np-search input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:16px;color:var(--foreground,#1c0e05)}
 .np-none{color:var(--muted-foreground,#7a6a5e);margin:8px 0 0}.np-hc[hidden]{display:none}
@@ -384,10 +384,10 @@ ${(() => {
   const galSec = content.find((x) => GAL.test(x.md))
   const shown = galSec ? `<section class="mb-8"><h2 class="text-2xl font-bold mb-4">${esc(galSec.title)}</h2>${md(galSec.md.match(GAL)[0])}</section>` : ''
   if (galSec) content = content.map((x) => x === galSec ? { ...x, title: `More on the ${x.title.replace(/^The /, '').toLowerCase()}`, md: x.md.replace(GAL, '').trim() } : x)
-  // the closed state shows a teaser: the first section's heading and opening paragraph, fading out, then the button;
-  // open, the teaser gives way to the full sections, the FAQ and the sources
-  const firstPara = content[0].md.split(/\n\s*\n/).find((x) => !/^(!\[|[-*] |\d+\. |\||:::)/.test(x.trim())) || ''
-  return shown + `<details class="np-readmore"><summary><div class="np-teaser"><h2 class="text-2xl font-bold mb-4">${esc(content[0].title)}</h2>${md(firstPara)}</div><span class="np-rm-btn">Read more about ${esc(fm.h1.toLowerCase())}</span></summary><div style="padding-top:8px">${content.map(sec).join('\n')}${faqHtml}${srcHtml}</div></details>`
+  // closed, the content is cut to its first lines and fades out; "Read more" lifts the cut so the text simply
+  // continues where it was (nothing jumps), and the button moves under the content as "Show less"
+  const label = `Read more about ${esc(fm.h1.toLowerCase())}`
+  return shown + `<div class="np-rm" id="np-rm"><div class="np-rm-body">${content.map(sec).join('\n')}${faqHtml}${srcHtml}</div><button type="button" class="np-rm-btn" aria-expanded="false" aria-controls="np-rm" data-more="${label}">${label}</button></div><!--np-rm-js-->`
 })()}
 ${isCat ? '' : faqHtml}
 ${isCat ? '' : srcHtml}
@@ -424,6 +424,7 @@ ${shell.match(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/
       if (attr === 'href' && built.has(clean)) return `${attr}="${fileFor(clean)}${path.includes('#') ? path.slice(path.indexOf('#')) : ''}"`
       return `${attr}="${SITE}/${path}"`
     })
+  html = html.replace('<!--np-rm-js-->', () => RM_JS)
   html = html.replace('<!--np-blog-js-->', () => BLOG_JS) // after the live scripts are stripped
   html = html.replace('</body>', () => `${TOP_JS}</body>`)
   if (url === '/') html = homepage(url)

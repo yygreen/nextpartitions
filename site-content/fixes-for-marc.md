@@ -123,7 +123,7 @@ The preview's homepage (`preview/home.html`) is the homepage proposal already se
 
 The material, mounting style and hardware pages (hubs included) are category pages, so they open with a product grid under the hero, the way a shop category does: product photo, name, brand / material / size line, price and "View product", four across on desktop, two on a phone, with Filter and Sort. The shop (`/products`) shows "coming soon" today, so the preview fills the grid with marked placeholder cards; wire it to the shop's product feed for that category once products are listed.
 
-Under the grid: the page's short intro stays visible, then a teaser (the first section's heading and opening paragraph, fading out) and a "Read more about …" button. Everything else (all sections, the FAQ and the sources) sits in that one expandable part (a native `<details>`, closed by default, so the text stays in the page for search engines). The previews do this in `build/build.mjs` (`productGrid`, `CATEGORY`).
+Under the grid: the page's short intro stays visible, then the rest of the content (all sections, the FAQ and the sources) cut to its first lines (240 px) with a fade, and a "Read more about …" button. Clicking it lifts the cut, so the text simply continues where it was and nothing on the screen moves; the button sits under the content as "Show less" (which scrolls back to the start of the block). The text is always in the page for search engines; only the height is limited.
 
 ## 17. Get a Quote on phones and tablets (2026-10-28)
 
