@@ -287,7 +287,8 @@ const FRONT = [['p', 3.5], ['d', 36], ['p', 22], ['d', 34], ['p', 8.5], ['d', 24
 // Front elevations (the mounting style front views): one wider accessible stall with an outswing door, then three
 // identical 36" standard stalls (24" inswing door + 12" pilaster), so the row reads as one accessible + standards.
 const FRONT_ELEV = [['p', 3.5], ['d', 36], ['p', 21], ['d', 24], ['p', 12], ['d', 24], ['p', 12], ['d', 24], ['p', 12]]
-const note = (x, y, t, anchor = 'start', size = 11) => text(x, y, t, { size, fill: C.muted, anchor, weight: 500 })
+// Notes carry class "dn" so a page can hide them where the drawing is decoration (the dark page heroes).
+const note = (x, y, t, anchor = 'start', size = 11) => text(x, y, t, { size, fill: C.muted, anchor, weight: 500 }).replace('<text ', '<text class="dn" ')
 
 // ph: the phone variant (360 wide): smaller scale, thinner walls, no compartment names (the page text names them,
 // left to right), dimensions kept.
