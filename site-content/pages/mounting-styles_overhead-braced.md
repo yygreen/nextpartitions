@@ -33,15 +33,15 @@ Doors and panels are 58" high and 12" above the floor, with 12" more to the top 
 
 At the floor, the leveling bar, anchors and shoe sit together under the pilaster.
 
-![Pilaster foot: leveling bar, anchors and shoe](/images/diagrams/mounting-overhead-braced-detail-anchor.svg "side")
+![Pilaster foot: leveling bar, anchors and shoe](/images/diagrams/mounting-overhead-braced-detail-anchor.svg)
 
 At the top, the headrail clamps over the pilaster and fixes to the wall.
 
-![Headrail cross-section, fixed to the wall](/images/diagrams/mounting-overhead-braced-detail-headrail.svg "side")
+![Headrail cross-section, fixed to the wall](/images/diagrams/mounting-overhead-braced-detail-headrail.svg)
 
 Panels and doors hang between the pilasters and the walls on brackets. Installation specs line the tops of the doors up with the headrail so everything reads as one straight line. The New York State OGS master spec, for example, says to fasten the headrail to each pilaster with at least two fasteners and adjust doors "so tops of doors are parallel with overhead brace."
 
-![U-bracket holding a panel to a pilaster, seen from above](/images/diagrams/mounting-overhead-braced-detail-bracket.svg "side")
+![U-bracket holding a panel to a pilaster, seen from above](/images/diagrams/mounting-overhead-braced-detail-bracket.svg)
 
 ## Why specifiers choose overhead braced
 

@@ -79,9 +79,9 @@ A product drawing is a sheet, like a manufacturer's data sheet: the same stalls 
 - **Plan** (seen from above): accessible, ambulatory and standard compartments with toilets, grab bars, door swings and the code minimums (60" min, 35–37", 30" min wide; 60" min deep; 32" min clear opening).
 - **Front elevation:** four stalls with the support system in orange and numbered callouts.
 - **Side view:** through a stall, looking at a dividing panel: toilet, brackets, panel height and floor gap.
-- **Details** (circles, larger scale): headrail, floor anchor, ceiling hanger or ceiling anchor, panel bracket. Labels in the circle; sizes only where a source gives them (anchor depth and slab thickness).
+- **Details** (rectangular close-ups, 780 x 420 with a 360-wide phone variant, larger scale): headrail, floor anchor, ceiling hanger or ceiling anchor, panel bracket, hinge. The part fills the left of the frame, cut off with break lines and the building hatched to the frame edge (no circle), with the neighbouring part beside it in plain ink, unlabelled, for context; labels in one column on the right; sizes only where a source gives them (anchor depth and slab thickness). On a page they are full-width images.
 
-Wide views (plan, front elevation) span the figure and switch to their phone variants on a phone; side view and details (400 wide) sit two across on desktop and stack on a phone, scaled to the column. `diagrams/sheets.json` lists each sheet's views.
+Wide views (plan, front elevation) span the figure and switch to their phone variants on a phone; side views (400 wide) sit two across on desktop and stack on a phone; details span the figure like the wide views, scaled to the column. `diagrams/sheets.json` lists each sheet's views.
 
 ## Every drawing carries
 

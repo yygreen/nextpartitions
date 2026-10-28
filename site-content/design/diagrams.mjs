@@ -406,10 +406,11 @@ const SV = { w: 400, h: 250 }
 // (a two-line label takes one more line). Each leader is an elbow: a short horizontal run from the label to a gutter
 // shared by the whole column, then straight to the point, ending in a dot. Notes and dimension text use the same grid
 // and the same x (see gridY and dimLane).
-const GRID = 16, PITCH = 2 * GRID, ROW0 = 26, GUTTER = 14
+let GRID = 16, PITCH = 2 * GRID, ROW0 = 26, LBL = 14
+const GUTTER = 14
 const gridY = (y) => ROW0 + Math.round((y - ROW0) / GRID) * GRID
 const leader = (sx, y, gx, to) => `<path d="M${sx} ${y} H${Math.abs(to[1] - y) < 0.5 ? to[0] : `${gx} L${to[0]} ${to[1]}`}" fill="none" stroke="${C.orange}" stroke-width="1.2" stroke-linejoin="round"/><circle cx="${to[0]}" cy="${to[1]}" r="2.5" fill="${C.orange}"/>`
-const labelText = (x, y, lines, anchor) => lines.map((t, i) => `<text x="${x}" y="${y + i * GRID}" font-size="14" font-weight="500" fill="${C.ink}" text-anchor="${anchor}" paint-order="stroke" stroke="#fff" stroke-width="4">${esc(t)}</text>`).join('')
+const labelText = (x, y, lines, anchor) => lines.map((t, i) => `<text x="${x}" y="${y + i * GRID}" font-size="${LBL}" font-weight="500" fill="${C.ink}" text-anchor="${anchor}" paint-order="stroke" stroke="#fff" stroke-width="4">${esc(t)}</text>`).join('')
 // items: [{ t: text or lines, to: [x, y] }]. side 'right': x is where the text starts; 'left': where it ends.
 // lo / hi: the first and last baselines the column may use.
 function labelColumn(items, { x, side = 'right', lo = ROW0, hi }) {
@@ -473,68 +474,178 @@ function side(name, style) {
     'Looking at a dividing panel from inside the stall: the pilaster at the front, the panel 58 inches high and 12 inches above the floor held by brackets at the pilaster and the back wall, 61-1/4 inches to the face.', b)
 }
 
-// Detail circles, redrawn from Bobrick's 1080 data sheet details. The circle's contents are drawn in a 300 px
-// frame (centre 150, 145, radius 120) and scaled into the circle on the left; labels sit in a column to its right.
-function detail(name, kind) {
-  const { w: W, h: H } = SV, cx = 118, cy = 125, r = 106, k = r / 120
-  const P = ([x, y]) => [+(cx + (x - 150) * k).toFixed(1), +(cy + (y - 145) * k).toFixed(1)]
-  const IW = 300
-  let b = `<g transform="translate(${cx} ${cy}) scale(${k.toFixed(4)}) translate(-150 -145)"><clipPath id="c-${name}"><circle cx="150" cy="145" r="120"/></clipPath><g clip-path="url(#c-${name})">`
-  const lab = [], after = [], inside = []
+// Details: close-ups at a larger scale, redrawn from Bobrick's 1080 data sheet details (mounting) and the hinge
+// installation guides (see drawing-check.md). Rectangular, standalone (780 x 420, phone 360 x 224): the part fills the
+// left of the frame, cropped where the frame cuts it (break lines across cut parts; the building stays hatched to the
+// frame edge), with a neighbouring part beside it in plain ink as unlabelled context. Labels sit in one compact column
+// on the right. Parts are drawn in their own units (the old 300 px circle frame) and scaled into the frame.
+const phoneMade = []
+const DET = { d: { w: 780, h: 420, area: [12, 12, 596, 408], lx: 620 }, m: { w: 360, h: 224, area: [4, 4, 214, 220], lx: 230 } }
+// The neighbour's offset (internal units) for the context part; it is drawn in ink only.
+const NB = -280
+function detailSpec(kind) {
   const nut = (x, y) => rect(x - 10, y, 20, 7, { fill: C.part, sw: 1.2 })
-  const lx = cx + r + 8 + GUTTER // label column x: the gutter sits 8 px outside the circle
+  const O = (ctx) => ctx ? { fill: C.part, stroke: C.ink, sw: 1.2 } : { fill: C.orange, stroke: 'none', sw: 0 }
+  const path = (d, o) => `<path d="${d}" fill="${o.fill}" stroke="${o.stroke}" stroke-width="${o.sw}" stroke-linejoin="round"/>`
   if (kind === 'anchor' || kind === 'ftc-floor') {
     // stile on a leveling bar (angle), two threaded rods with nuts and washers, shoe retainer, wedge anchors; 4" shoe
-    b += rect(0, 196, IW, 110, { fill: 'HATCH', stroke: 'none' }) + line(0, 196, IW, 196)
-    b += rect(80, 0, 140, 120) // stile
-    b += `<path d="M70 120 h160 v8 h-152 v20 h-8 z" fill="${C.orange}"/>` // leveling bar (angle)
-    for (const x of [100, 200]) b += line(x, 110, x, 250, { stroke: C.ink, sw: 4 }) + nut(x, 136) + nut(x, 160) + nut(x, 180) + rect(x - 6, 200, 12, 48, { fill: C.ink, stroke: 'none' })
-    b += rect(60, 186, 180, 6, { fill: C.part, sw: 1.2 }) // shoe retainer
-    b += `<rect x="58" y="110" width="184" height="86" fill="none" stroke="${C.ink}" stroke-width="1.5" stroke-dasharray="6 4"/>` // 4" shoe (outline, in front)
-    lab.push(['stile', [220, 50]], ['shoe, 4" high', [242, 104]], ['leveling bar', [230, 124]], ['shoe retainer', [238, 189]], ['wedge anchor', [206, 228]])
-    const [, y1] = P([0, 196]), [, y2] = P([0, 248])
-    after.push(dimLane(lx, y1, y2, [['2" min into', DIM, 600], ['3" min structural', 13, 500], ['concrete', 13, 500]]))
+    const foot = (dx, ctx) => rect(80 + dx, -600, 140, 720) + path(`M${70 + dx} 120 h160 v8 h-152 v20 h-8 z`, O(ctx))
+      + [100, 200].map((x) => line(x + dx, 110, x + dx, 250, { stroke: C.ink, sw: 4 }) + nut(x + dx, 136) + nut(x + dx, 160) + nut(x + dx, 180) + rect(x + dx - 6, 200, 12, 48, { fill: C.ink, stroke: 'none' })).join('')
+      + rect(60 + dx, 186, 180, 6, { fill: C.part, sw: 1.2 })
+      + `<rect x="${58 + dx}" y="110" width="184" height="86" fill="none" stroke="${C.ink}" stroke-width="1.5" stroke-dasharray="6 4"/>`
+    return {
+      parts: (ctx) => rect(-1000, 196, 2000, 600, { fill: 'HATCHK', stroke: 'none' }) + line(-1000, 196, 1000, 196) + (ctx ? foot(NB, true) : '') + foot(0, false),
+      breaks: (ctx) => [['h', 'top', 80, 220], ['v', 'left', 196, 'bottom'], ['v', 'right', 196, 'bottom'], ...(ctx ? [['h', 'top', NB + 80, NB + 220]] : [])],
+      lab: [['stile', [220, 50]], ['shoe, 4" high', [242, 140]], ['leveling bar', [230, 124]], ['shoe retainer', [238, 189]], ['wedge anchor', [206, 228]]],
+      dim: [196, 248, [['2" min into', null, 600], ['3" min structural', 13, 500], ['concrete', 13, 500]]],
+      vp: { d: [-104, 40, 262, 290], m: [48, 60, 262, 280] },
+      ctx: { d: true, m: false },
+      desc: kind === 'anchor'
+        ? 'The pilaster foot: a leveling bar bolted under the stile, threaded rods with nuts and washers, a shoe retainer and wedge anchors at least 2 inches into structural concrete at least 3 inches thick, all covered by a 4-inch stainless steel shoe. The next pilaster\'s foot shows beside it.'
+        : 'The pilaster foot of a floor-to-ceiling stile: a leveling device at the floor as on floor-anchored stiles, with wedge anchors at least 2 inches into 3-inch structural concrete and a 4-inch shoe. The next pilaster\'s foot shows beside it.',
+      title: kind === 'anchor' ? 'Detail: pilaster foot and floor anchor' : 'Detail: floor-to-ceiling pilaster foot',
+    }
   }
   if (kind === 'hanger' || kind === 'ftc-ceiling') {
     // I-beam (by others), bevel washer, threaded rod, spacer through the finished ceiling, leveling bar in the stile
-    b += rect(0, 0, IW, 126, { fill: 'HATCH', stroke: 'none' })
-    b += `<path d="M90 34 h120 v9 h-54 v32 h54 v9 h-120 v-9 h54 v-32 h-54 z" fill="${C.orange}"/>` // I-beam section
-    b += line(150, 84, 150, 200, { stroke: C.ink, sw: 4 }) + rect(136, 84, 28, 7, { fill: C.part, sw: 1.2 })
-    b += rect(140, 100, 20, 26, { fill: C.part, sw: 1.2 }) + line(0, 126, IW, 126, { sw: 2.5 })
-    b += rect(90, 150, 120, 160) + line(150, 150, 150, 200, { stroke: C.ink, sw: 4 }) + `<path d="M84 150 h132 v-8 h-124 v-16 h-8 z" fill="${C.orange}"/>` + nut(150, 160) + nut(150, 176) // rod shown through the stile
-    lab.push(['I-beam (by others)', [210, 38]], ['bevel washer', [164, 90]], ['spacer', [160, 112]], ['finished ceiling', [252, 126]], ['leveling bar', [216, 146]], ['threaded rod', [152, 200]], ['stile', [210, 240]])
+    const top = (dx, ctx) => path(`M${90 + dx} 34 h120 v9 h-54 v32 h54 v9 h-120 v-9 h54 v-32 h-54 z`, O(ctx))
+      + line(150 + dx, 84, 150 + dx, 200, { stroke: C.ink, sw: 4 }) + rect(136 + dx, 84, 28, 7, { fill: C.part, sw: 1.2 })
+      + rect(140 + dx, 100, 20, 26, { fill: C.part, sw: 1.2 })
+      + rect(90 + dx, 150, 120, 800) + line(150 + dx, 150, 150 + dx, 200, { stroke: C.ink, sw: 4 }) + path(`M${84 + dx} 150 h132 v-8 h-124 v-16 h-8 z`, O(ctx)) + nut(150 + dx, 160) + nut(150 + dx, 176)
+    return {
+      parts: (ctx) => rect(-1000, -1000, 2000, 1126, { fill: 'HATCHK', stroke: 'none' }) + line(-1000, 126, 1000, 126, { sw: 2.5 }) + (ctx ? top(NB, true) : '') + top(0, false),
+      breaks: (ctx) => [['h', 'bottom', 90, 210], ['v', 'left', 'top', 126], ['v', 'right', 'top', 126], ...(ctx ? [['h', 'bottom', NB + 90, NB + 210]] : [])],
+      lab: [[['I-beam (by others)'], [210, 38], ['I-beam', '(by others)']], ['bevel washer', [164, 90]], ['spacer', [160, 112]], ['finished ceiling', [252, 126]], ['leveling bar', [216, 146]], ['threaded rod', [152, 200]], ['stile', [210, 240]]],
+      lo: 1,
+      vp: { d: [-184, 10, 262, 282], m: [36, 20, 268, 256] },
+      ctx: { d: true, m: false },
+      desc: kind === 'hanger'
+        ? 'The top of a ceiling-hung stile: a threaded rod from a structural I-beam above the ceiling (not supplied by the partition maker) through a bevel washer and a spacer in the finished ceiling, into a leveling bar in the stile. The next stile hangs the same way beside it.'
+        : 'The top of a floor-to-ceiling stile: floor-to-ceiling stiles have a leveling device at each end, fixed to structural members in the ceiling (not supplied by the partition maker). The next stile is fixed the same way beside it.',
+      title: kind === 'hanger' ? 'Detail: ceiling hanger' : 'Detail: floor-to-ceiling pilaster top',
+    }
   }
   if (kind === 'headrail') {
     // cross-section: the headrail clamps over the stile top (Bradley); enclosed extrusion with a sloping top and a
-    // raised grip-resistant face edge (Bobrick)
-    b += rect(118, 150, 64, 170) // stile
-    b += `<path d="M96 86 L204 74 L204 168 L182 168 L182 150 L118 150 L118 168 L96 168 Z" fill="${C.orange}"/>`
-    b += rect(90, 72, 8, 100, { fill: C.ink, stroke: 'none' }) // raised face edge, above the top's high side
-    lab.push(['grip-resistant face', [94, 72]], ['sloping top', [203, 74.1]], [['headrail, extruded', 'aluminum'], [204, 120]], ['stile', [182, 230]])
-    after.push(noteLines(lx, 202, ['cross-section, fixed', 'to each wall with a', 'wall bracket']))
+    // raised grip-resistant face edge (Bobrick). Looking along the row, so the neighbouring stiles sit behind this one.
+    return {
+      parts: () => rect(118, 150, 64, 800) + path('M204 86 L96 74 L96 168 L118 168 L118 150 L182 150 L182 168 L204 168 Z', O(false)) + rect(202, 72, 8, 100, { fill: C.ink, stroke: 'none' }),
+      breaks: () => [['h', 'bottom', 118, 182]],
+      lab: [['grip-resistant face', [206, 120], ['grip-resistant', 'face']], ['sloping top', [120, 76.7]], [['headrail, extruded', 'aluminum'], [193, 168]], ['stile', [182, 236]]],
+      top: true,
+      notes: ['cross-section, fixed', 'to each wall with a', 'wall bracket'],
+      vp: { d: [-6, 56, 274, 266], m: [52, 60, 260, 274] },
+      ctx: { d: false, m: false },
+      desc: 'The headrail in cross-section: an extruded anodized aluminum rail with a sloping top and a raised grip-resistant face edge, clamped over the top of the stile and fixed to each wall with a wall bracket.',
+      title: 'Detail: headrail cross-section',
+    }
   }
   if (kind === 'bracket') {
-    // seen from above: panel end to a perpendicular stile, U-bracket (Bobrick #1000972: panel to perp. stile)
-    b += rect(40, 128, 150, 18, { fill: C.part }) + rect(188, 60, 26, 170, { fill: C.part })
-    b += `<path d="M150 118 h36 v38 h-36" fill="none" stroke="${C.orange}" stroke-width="5" stroke-linejoin="round"/>`
-    inside.push(['panel', [80, 146], P([56, 196])])
-    lab.push(['stile', [214, 90]], ['U-bracket', [186, 156]])
-    after.push(noteLines(lx, 234, ['seen from above']))
+    // seen from above: panel end to a perpendicular stile, U-bracket (Bobrick #1000972: panel to perp. stile); the
+    // doors hang in line with the stile at both its ends (context)
+    return {
+      parts: (ctx) => rect(-1000, 128, 1188, 18) + rect(188, 60, 26, 170) + (ctx ? rect(192, -1000, 18, 1052) + rect(192, 238, 18, 1000) : '')
+        + `<path d="M150 118 h36 v38 h-36" fill="none" stroke="${C.orange}" stroke-width="5" stroke-linejoin="round"/>`,
+      breaks: (ctx) => [['v', 'left', 128, 146], ...(ctx ? [['h', 'top', 192, 210], ['h', 'bottom', 192, 210]] : [])],
+      lab: [['stile', [214, 90]], ['U-bracket', [186, 156]]],
+      inside: [['panel', [60, 146], [60, 196]]],
+      notes: ['seen from above'],
+      vp: { d: [-70, 30, 261, 256], m: [24, 14, 262, 260] },
+      ctx: { d: true, m: true },
+      desc: 'Seen from above: the panel end held to a perpendicular stile by a U-bracket; the doors hang in line with the stile at both its ends.',
+      title: 'Detail: panel bracket',
+    }
   }
-  b += `</g></g><circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${C.ink}" stroke-width="1.5"/>`
-  // the column stops one empty grid line above the notes or dimension under it
-  // (the anchor's dimension starts a grid line higher, at the slab); the ceiling details start one grid line lower so
-  // the bevel washer's leader passes under the I-beam
-  const notesAt = { anchor: 186, 'ftc-floor': 186, headrail: 202, bracket: 234 }[kind]
-  const lo = kind === 'hanger' || kind === 'ftc-ceiling' ? ROW0 + GRID : ROW0
-  b += labelColumn(lab.map(([t, to]) => ({ t, to: P(to) })), { x: lx, lo, hi: notesAt ? notesAt - PITCH : H - 14 }).svg
-  // a label inside the circle: centred under the part, leader straight up
-  for (const [t, to, at] of inside) { const p = P(to); b += line(at[0], at[1] - 14, p[0], p[1], { stroke: C.orange, sw: 1.2 }) + `<circle cx="${p[0]}" cy="${p[1]}" r="2.5" fill="${C.orange}"/>` + labelText(at[0], at[1], [t], 'middle') }
-  b += after.join('')
-  const desc = { anchor: 'The pilaster foot: a leveling bar bolted under the stile, threaded rods with nuts and washers, a shoe retainer and wedge anchors at least 2 inches into structural concrete at least 3 inches thick, all covered by a 4-inch stainless steel shoe.', 'ftc-floor': 'The pilaster foot of a floor-to-ceiling stile: a leveling device at the floor as on floor-anchored stiles, with wedge anchors at least 2 inches into 3-inch structural concrete and a 4-inch shoe.', hanger: 'The top of a ceiling-hung stile: a threaded rod from a structural I-beam above the ceiling (not supplied by the partition maker) through a bevel washer and a spacer in the finished ceiling, into a leveling bar in the stile.', 'ftc-ceiling': 'The top of a floor-to-ceiling stile: floor-to-ceiling stiles have a leveling device at each end, fixed to structural members in the ceiling (not supplied by the partition maker).', headrail: 'The headrail: an extruded anodized aluminum rail with a sloping top and a raised grip-resistant face edge, on top of the stile and fixed to the wall with a wall bracket.', bracket: 'Seen from above: the panel end held to a perpendicular stile by a U-bracket.' }[kind]
-  return svg(name, W, H, `Detail: ${kind}`, desc, b)
+  const bolt = (x, y) => `<circle cx="${x}" cy="${y}" r="4.5" fill="#fff" stroke="${C.ink}" stroke-width="1.2"/>`
+  if (kind === 'cam') {
+    return {
+      parts: (ctx) => rect(20, -1000, 88, 2000) + (ctx ? rect(-1000, -1000, 1000, 1150) : '') // pilaster; the next door, latch edge (context)
+        + rect(128, -1000, 1000, 1150) + rect(128, 98, 64, 52, { sw: 1.2, dash: '5 3' }) // door, bottom edge at 150; its bottom hinge, cut away
+        + `<path d="M138 106 H176 V150 H168 V140 L157 130 L146 140 V150 H138 Z" fill="${C.orange}"/>` // box cam
+        + `<path d="M146 168 V140 L157 130 L168 140 V168 Z" fill="#fff" stroke="${C.ink}" stroke-width="1.5" stroke-linejoin="round"/>` // cam pintle
+        + rect(84, 140, 24, 62) + rect(108, 168, 74, 18) + bolt(96, 156) + bolt(96, 186) // bottom hinge bracket
+        + rect(146, 186, 22, 11, { fill: C.orangeTint, stroke: C.orange, sw: 2 }) // locking nut
+        + rect(151, 197, 12, 12, { sw: 1.2 }) + line(157, 199, 157, 208, { sw: 2 }), // bolt base, slotted
+      breaks: (ctx) => [['h', 'top', 20, 108], ['h', 'bottom', 20, 108], ['h', 'top', 128, 'right'], ['v', 'right', 'top', 150, 0.7], ...(ctx ? [['h', 'top', 'left', 0], ['v', 'left', 'top', 150]] : [])],
+      lab: [['door', [236, 56]], ['box cam', [176, 118]], ['cam pintle', [168, 158]], [['bottom hinge', 'bracket'], [182, 177]], [['locking nut, the', 'adjusting point'], [168, 191]]],
+      pil: true,
+      notes: ['front view, door', 'cut away at the cam'],
+      vp: { d: [-35, 30, 250, 224], m: [40, 40, 250, 222] },
+      ctx: { d: true, m: true },
+      desc: 'Front view of the bottom of a gravity (cam) hinge, the door cut away at the hinge. A box cam in the door rests on the cam pintle of the bottom hinge bracket, which is fixed to the pilaster. The locking nut under the bracket is the adjusting point: loosen it, set the door to its rest position and tighten it again. The next door\'s edge shows on the other side of the pilaster.',
+      title: 'Detail: bottom of a gravity hinge',
+    }
+  }
+  // top-pin
+  return {
+    parts: (ctx) => rect(20, -1000, 88, 2000) + (ctx ? rect(-1000, 112, 1000, 1000) : '')
+      + `<path d="M128 112 H1000 V1000 H128 V170 H172 V138 H128 Z" fill="#fff" stroke="${C.ink}" stroke-width="1.5"/>` // door, top edge at 112, notched at the hinge
+      + rect(128, 112, 64, 92, { fill: 'none', sw: 1.2, dash: '5 3' }) // the door's top hinge, cut away
+      + rect(84, 124, 24, 62) + rect(108, 142, 60, 24) + bolt(96, 138) + bolt(96, 172) // top hinge bracket
+      + rect(141, 142, 18, 24, { fill: C.orangeTint, stroke: C.orange, sw: 2 }) + rect(137, 138, 26, 5, { fill: C.orangeTint, stroke: C.orange, sw: 2 }) // bushing, flange at top
+      + rect(146, 112, 8, 82, { fill: C.orange, stroke: C.orange, sw: 1 }) // hinge pin
+      + line(150, 52, 150, 96, { stroke: C.muted, sw: 1.5 }) + `<path d="M143 92 L150 104 L157 92 Z" fill="${C.muted}"/>`, // in from above
+    breaks: (ctx) => [['h', 'top', 20, 108], ['h', 'bottom', 20, 108], ['h', 'bottom', 128, 'right'], ['v', 'right', 112, 'bottom', 0.3], ...(ctx ? [['h', 'bottom', 'left', 0], ['v', 'left', 112, 'bottom']] : [])],
+    lab: [['door', [236, 200]], [['hinge pin, flush', 'with the door top'], [154, 114]], ['nylon bushing', [159, 150]], ['top hinge bracket', [168, 160], ['top hinge', 'bracket']]],
+    pil: true,
+    notes: ['front view, door', 'cut away at the pin'],
+    vp: { d: [-35, 40, 250, 234], m: [40, 44, 250, 226] },
+    ctx: { d: true, m: true },
+    desc: 'Front view of the top of a gravity (cam) hinge, the door cut away at the hinge. The hinge pin goes in from above, through the door\'s hinge and the top hinge bracket on the pilaster, turns in a nylon bushing, and sits flush with the top of the door. The next door\'s edge shows on the other side of the pilaster.',
+    title: 'Detail: top of a gravity hinge',
+  }
 }
-
+// A break line across a cut part: straight, with one zigzag in the middle, overhanging the part a little.
+function breakLine([x1, y1], [x2, y2], f = 0.5) {
+  const L = Math.hypot(x2 - x1, y2 - y1), ux = (x2 - x1) / L, uy = (y2 - y1) / L, nx = -uy, ny = ux, mx = x1 + (x2 - x1) * f, my = y1 + (y2 - y1) * f
+  const p = (a, n) => `${(mx + ux * a + nx * n).toFixed(1)} ${(my + uy * a + ny * n).toFixed(1)}`
+  const z = Math.min(5, L / 6)
+  return `<path d="M${(x1 - ux * 5).toFixed(1)} ${(y1 - uy * 5).toFixed(1)} L${p(-z, 0)} L${p(-z / 2, 6)} L${p(z / 2, -6)} L${p(z, 0)} L${(x2 + ux * 5).toFixed(1)} ${(y2 + uy * 5).toFixed(1)}" fill="none" stroke="${C.ink}" stroke-width="1.2" stroke-linejoin="round"/>`
+}
+function detailView(name, kind, ph) {
+  const sp = detailSpec(kind), F = DET[ph ? 'm' : 'd'], v = ph ? 'm' : 'd'
+  const [vx0, vy0, vx1, vy1] = sp.vp[v], [ax0, ay0, ax1, ay1] = F.area, ctx = sp.ctx[v]
+  const k = Math.min((ax1 - ax0) / (vx1 - vx0), (ay1 - ay0) / (vy1 - vy0))
+  const ox = ax1 - vx1 * k, oy = (ay0 + ay1) / 2 - ((vy0 + vy1) / 2) * k // right-aligned to the label column, centred vertically
+  const P = ([x, y]) => [+(ox + x * k).toFixed(1), +(oy + y * k).toFixed(1)]
+  const fx0 = ox + vx0 * k, fy0 = oy + vy0 * k, fx1 = ox + vx1 * k, fy1 = oy + vy1 * k
+  // the drawing, scaled; strokes keep their px width and the hatch its 8 px pitch
+  let b = `<style>.dz *{vector-effect:non-scaling-stroke}</style><clipPath id="c"><rect x="${fx0.toFixed(1)}" y="${fy0.toFixed(1)}" width="${(fx1 - fx0).toFixed(1)}" height="${(fy1 - fy0).toFixed(1)}"/></clipPath>`
+  b += `<pattern id="hk" width="${(8 / k).toFixed(3)}" height="${(8 / k).toFixed(3)}" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="${(8 / k).toFixed(3)}" height="${(8 / k).toFixed(3)}" fill="${C.struct}"/><line x1="0" y1="0" x2="0" y2="${(8 / k).toFixed(3)}" stroke="${C.hatch}" stroke-width="${(1.5 / k).toFixed(3)}"/></pattern>`
+  b += `<g clip-path="url(#c)"><g class="dz" transform="translate(${ox.toFixed(2)} ${oy.toFixed(2)}) scale(${k.toFixed(4)})">${sp.parts(ctx).replaceAll('HATCHK', 'url(#hk)')}</g></g>`
+  // break lines where the frame cuts a part
+  const ex = { top: vy0, bottom: vy1, left: vx0, right: vx1 }, cl = (a, lo, hi) => Math.max(lo, Math.min(hi, a))
+  for (const [t, at, a1, a2, f] of sp.breaks(ctx)) {
+    const A = ex[at] ?? at, s1 = ex[a1] ?? a1, s2 = ex[a2] ?? a2
+    if (t === 'h') { const x1 = cl(s1, vx0, vx1), x2 = cl(s2, vx0, vx1); if ((x2 - x1) * k > 6) b += breakLine(P([x1, A]), P([x2, A]), f) }
+    else { const y1 = cl(s1, vy0, vy1), y2 = cl(s2, vy0, vy1); if ((y2 - y1) * k > 6 && A >= vx0 && A <= vx1) b += breakLine(P([A, y1]), P([A, y2]), f) }
+  }
+  if (sp.pil) { const p = P([(Math.max(20, vx0) + 108) / 2, vy0 + 30 / k]); b += text(p[0], p[1], 'pilaster', { size: ph ? 12 : 14, fill: C.muted, anchor: 'middle' }) }
+  for (const [t, to, at] of sp.inside ?? []) { const p = P(to), q = P(at); b += line(q[0], q[1] - 14, p[0], p[1], { stroke: C.orange, sw: 1.2 }) + `<circle cx="${p[0]}" cy="${p[1]}" r="2.5" fill="${C.orange}"/>` + labelText(q[0], q[1], [t], 'middle') }
+  // the label column: notes or the dimension at its foot, labels above
+  const lx = F.lx
+  let hi = F.h - 14, after = ''
+  if (sp.notes) {
+    const ny = gridY(F.h - 16 - (sp.notes.length - 1) * GRID) - (gridY(F.h - 16 - (sp.notes.length - 1) * GRID) > F.h - 16 - (sp.notes.length - 1) * GRID ? GRID : 0)
+    after += noteLines(lx, ny, sp.notes); hi = ny - PITCH
+  }
+  if (sp.dim) {
+    const [y1, y2, lines] = sp.dim, a = P([0, y1])[1], z = P([0, y2])[1]
+    after += dimLane(lx, a, z, lines.map(([t, s, w]) => [t, s ?? DIM, w])); hi = gridY((a + z) / 2 + 5) - PITCH
+  }
+  const items = sp.lab.map(([t, to, tm]) => ({ t: [].concat(ph && tm ? tm : t), to: P(to) }))
+  if (sp.top) hi = ROW0 + items.reduce((a, it) => a + GRID * (it.t.length - 1) + PITCH, -PITCH) // column from the top
+  b += labelColumn(items, { x: lx, lo: ROW0 + (sp.lo ?? 0) * GRID, hi }).svg + after
+  return svg(name, F.w, F.h, sp.title, sp.desc, b)
+}
+// Labels and notes a little tighter on the phone variant (13 px labels on a 14 px grid).
+function detail(name, kind) {
+  detailView(name, kind, false)
+  const o = [GRID, PITCH, ROW0, LBL, DIM]
+  GRID = 14; PITCH = 26; ROW0 = 18; LBL = 13; DIM = 13
+  try { const [title, desc] = META[name]; phoneMade.push(detailView(`${name}-m`, kind, true)); META[`${name}-m`] = [title, desc] } finally { [GRID, PITCH, ROW0, LBL, DIM] = o }
+  return name
+}
 
 const STYLES = {
   'mounting-overhead-braced': ['ob', ['headrail', 'anchor', 'bracket']],
@@ -550,13 +661,13 @@ for (const [name, [style, dets]] of Object.entries(STYLES)) {
     { file: `${planName}.svg`, label: 'Plan', wide: true },
     { file: `${front(`${name}-front`, style)}.svg`, label: 'Front elevation', wide: true },
     { file: `${side(`${name}-side`, style)}.svg`, label: 'Side view' },
-    ...dets.map((d, i) => ({ file: `${detail(`${name}-detail-${d}`, d)}.svg`, label: `Detail ${String.fromCharCode(65 + i)}` })),
+    ...dets.map((d, i) => ({ file: `${detail(`${name}-detail-${d}`, d)}.svg`, label: `Detail ${String.fromCharCode(65 + i)}`, wide: true })),
   ]
 }
 writeFileSync(new URL('sheets.json', OUT), JSON.stringify(sheets, null, 2) + '\n')
 
 // ---------- gravity hinge close-ups (2026-10-27) ----------
-// Front view at the hinge edge, the door cut away at the hinge, in the same detail circle as the mounting details.
+// Front view at the hinge edge, the door cut away at the hinge, in the same rectangular detail frame as the mounting details.
 // Facts (see drawing-check.md): ASI Global construction features (upper pin through door and bracket in a nylon
 // bushing; gravity-positioning bottom hinge) and Integrated Privacy installation guide (box cam in the lower door
 // hinge, door placed over the hinge pintle, lowest point of the cam pintle sets the rest position, rotate, tighten the
@@ -566,46 +677,7 @@ writeFileSync(new URL('sheets.json', OUT), JSON.stringify(sheets, null, 2) + '\n
 // Bradley and Hadrian metal guides (male cam on the bottom hinge, female cam in the door; loosen the nut, set the
 // angle, tighten). Metpar: no-rise cam at the bottom, pin with nylon insert at the top. Our own flat view; no sizes
 // drawn (none common to the brands).
-function hingeDetail(name, kind) {
-  const { w: W, h: H } = SV, cx = 118, cy = 125, r = 106, k = r / 120
-  const P = ([x, y]) => [+(cx + (x - 150) * k).toFixed(1), +(cy + (y - 145) * k).toFixed(1)]
-  const lx = cx + r + 8 + GUTTER
-  let b = `<g transform="translate(${cx} ${cy}) scale(${k.toFixed(4)}) translate(-150 -145)"><clipPath id="c-${name}"><circle cx="150" cy="145" r="120"/></clipPath><g clip-path="url(#c-${name})">`
-  const bolt = (x, y) => `<circle cx="${x}" cy="${y}" r="4.5" fill="#fff" stroke="${C.ink}" stroke-width="1.2"/>`
-  b += rect(20, -10, 88, 330) // pilaster
-  let lab, notes, title, desc
-  if (kind === 'cam') {
-    b += rect(128, -10, 210, 160) // door, bottom edge at 150
-    b += rect(128, 98, 64, 52, { sw: 1.2, dash: '5 3' }) // the door's bottom hinge, cut away
-    b += `<path d="M138 106 H176 V150 H168 V140 L157 130 L146 140 V150 H138 Z" fill="${C.orange}"/>` // box cam
-    b += `<path d="M146 168 V140 L157 130 L168 140 V168 Z" fill="#fff" stroke="${C.ink}" stroke-width="1.5" stroke-linejoin="round"/>` // cam pintle
-    b += rect(84, 140, 24, 62) + rect(108, 168, 74, 18) + bolt(96, 156) + bolt(96, 186) // bottom hinge bracket
-    b += rect(146, 186, 22, 11, { fill: C.orangeTint, stroke: C.orange, sw: 2 }) // locking nut
-    b += rect(151, 197, 12, 12, { sw: 1.2 }) + line(157, 199, 157, 208, { sw: 2 }) // bolt base, slotted
-    lab = [['door', [218, 64]], ['box cam', [176, 118]], ['cam pintle', [168, 158]], [['bottom hinge', 'bracket'], [182, 177]], [['locking nut, the', 'adjusting point'], [168, 191]]]
-    notes = ['front view, door', 'cut away at the cam']
-    title = 'Detail: bottom of a gravity hinge'
-    desc = 'Front view of the bottom of a gravity (cam) hinge, the door cut away at the hinge. A box cam in the door rests on the cam pintle of the bottom hinge bracket, which is fixed to the pilaster. The locking nut under the bracket is the adjusting point: loosen it, set the door to its rest position and tighten it again.'
-  } else {
-    b += `<path d="M128 112 H338 V320 H128 V170 H172 V138 H128 Z" fill="#fff" stroke="${C.ink}" stroke-width="1.5"/>` // door, top edge at 112, notched at the hinge
-    b += rect(128, 112, 64, 92, { fill: 'none', sw: 1.2, dash: '5 3' }) // the door's top hinge, cut away
-    b += rect(84, 124, 24, 62) + rect(108, 142, 60, 24) + bolt(96, 138) + bolt(96, 172) // top hinge bracket
-    b += rect(141, 142, 18, 24, { fill: C.orangeTint, stroke: C.orange, sw: 2 }) + rect(137, 138, 26, 5, { fill: C.orangeTint, stroke: C.orange, sw: 2 }) // bushing, flange at top
-    b += rect(146, 112, 8, 82, { fill: C.orange, stroke: C.orange, sw: 1 }) // hinge pin
-    b += line(150, 52, 150, 96, { stroke: C.muted, sw: 1.5 }) + `<path d="M143 92 L150 104 L157 92 Z" fill="${C.muted}"/>` // in from above
-    lab = [['door', [212, 222]], [['hinge pin, flush', 'with the door top'], [154, 114]], ['nylon bushing', [159, 150]], ['top hinge bracket', [168, 160]]]
-    notes = ['front view, door', 'cut away at the pin']
-    title = 'Detail: top of a gravity hinge'
-    desc = 'Front view of the top of a gravity (cam) hinge, the door cut away at the hinge. The hinge pin goes in from above, through the door\'s hinge and the top hinge bracket on the pilaster, turns in a nylon bushing, and sits flush with the top of the door.'
-  }
-  b += text(75, 100, 'pilaster', { size: 14, fill: C.muted, anchor: 'middle' })
-  b += `</g></g><circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${C.ink}" stroke-width="1.5"/>`
-  const notesAt = 218
-  b += labelColumn(lab.map(([t, to]) => ({ t, to: P(to) })), { x: lx, hi: notesAt - PITCH }).svg
-  b += noteLines(lx, notesAt, notes)
-  return svg(name, W, H, title, desc, b)
-}
-made.push(hingeDetail('hinge-detail-cam', 'cam'), hingeDetail('hinge-detail-top-pin', 'top-pin'))
+made.push(detail('hinge-detail-cam', 'cam'), detail('hinge-detail-top-pin', 'top-pin'))
 
 // ---------- material cross-sections (edge view, cut through a door) ----------
 // Construction and door thicknesses as sourced in pages/blog_what-are-bathroom-partitions-made-of.md and
@@ -824,7 +896,6 @@ function matSection(kind, x0, y0, len, k) {
 // (at least 1.6 : 1): <name>-m.svg, or <name>-m1.svg, -m2.svg … when it takes more than one frame. Long labels give
 // way to the letters and numbers of the page's key; dimensions keep their values. The build shows them below 640 px.
 const PW = 360
-const phoneMade = []
 function phone(name, h, body, base = name.replace(/-m\d*$/, '')) {
   const [title, desc] = META[base]
   phoneMade.push(svg(name, PW, Math.round(h), title, desc, body))

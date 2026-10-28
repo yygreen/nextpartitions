@@ -107,7 +107,7 @@ Fix each bracket at its mark, into solid backing, using the bracket itself as th
 
 Each pilaster stands on a floor bracket or leveling device: a bar or bracket with leveling bolts, anchored into the floor. Slide the shoe up out of the way, set the pilaster plumb and at height, and level the pilaster tops from one compartment to the next. Lower the shoe over its clip last.
 
-![The pilaster foot: leveling bar, bolts and anchors under a stainless steel shoe](/images/diagrams/mounting-overhead-braced-detail-anchor.svg "side")
+![The pilaster foot: leveling bar, bolts and anchors under a stainless steel shoe](/images/diagrams/mounting-overhead-braced-detail-anchor.svg)
 
 ### 4. Hang the panels
 
@@ -117,7 +117,7 @@ Rest each panel on a spacer block, about 12" high on most lines (14" on some sol
 
 The headrail clamps over the pilaster tops and fastens to the walls at both ends, with at least two fasteners into each pilaster. Floor-mounted stalls have no headrail, which is why their floor anchors go deeper.
 
-![The headrail clamped over the top of a pilaster](/images/diagrams/mounting-overhead-braced-detail-headrail.svg "side")
+![The headrail clamped over the top of a pilaster](/images/diagrams/mounting-overhead-braced-detail-headrail.svg)
 
 ### 6. Hang the doors and set the gaps
 

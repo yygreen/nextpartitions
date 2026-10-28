@@ -31,11 +31,11 @@ In the front view, the pilasters hang from steel above the ceiling and stop shor
 
 At the top of each pilaster, a rod runs from the steel above through the ceiling.
 
-![Hanger: rod from the I-beam into the pilaster](/images/diagrams/mounting-ceiling-hung-detail-hanger.svg "side")
+![Hanger: rod from the I-beam into the pilaster](/images/diagrams/mounting-ceiling-hung-detail-hanger.svg)
 
 The New York State OGS master spec sets the key rule: anchoring assemblies connect to "structural support above finished ceiling," and must "support pilasters from structure without transmitting load to finished ceiling." The ceiling tile or drywall carries nothing. Panels and doors attach to the pilasters with U-brackets, as in every style.
 
-![U-bracket holding a panel to a pilaster, seen from above](/images/diagrams/mounting-ceiling-hung-detail-bracket.svg "side")
+![U-bracket holding a panel to a pilaster, seen from above](/images/diagrams/mounting-ceiling-hung-detail-bracket.svg)
 
 ## Ceiling requirements
 

@@ -33,11 +33,11 @@ In the front view, each pilaster runs from the floor to the ceiling while the do
 
 At the floor, the pilaster foot is anchored as in a floor-anchored stall.
 
-![Pilaster foot: leveling bar, wedge anchors and shoe](/images/diagrams/mounting-floor-to-ceiling-detail-ftc-floor.svg "side")
+![Pilaster foot: leveling bar, wedge anchors and shoe](/images/diagrams/mounting-floor-to-ceiling-detail-ftc-floor.svg)
 
 At the top, the same leveling device is fixed to structure above the ceiling.
 
-![Pilaster top: rod and leveling bar fixed to ceiling structure](/images/diagrams/mounting-floor-to-ceiling-detail-ftc-ceiling.svg "side")
+![Pilaster top: rod and leveling bar fixed to ceiling structure](/images/diagrams/mounting-floor-to-ceiling-detail-ftc-ceiling.svg)
 
 From the side, the panel is 58" high with a 12" gap below it.
 

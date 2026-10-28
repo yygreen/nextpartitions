@@ -33,11 +33,11 @@ Without a headrail, each pilaster has to stay rigid on its own anchors.
 
 The pilaster foot shows how the anchor, leveling bar and shoe fit together.
 
-![Pilaster foot: leveling bar, wedge anchors and shoe](/images/diagrams/mounting-floor-mounted-detail-anchor.svg "side")
+![Pilaster foot: leveling bar, wedge anchors and shoe](/images/diagrams/mounting-floor-mounted-detail-anchor.svg)
 
 Panels and doors attach to the pilasters and to the walls with brackets, as in every style. The walls need backing behind those brackets. Bobrick notes that wall backing is required to secure the mounting brackets.
 
-![U-bracket holding a panel to a pilaster, seen from above](/images/diagrams/mounting-floor-mounted-detail-bracket.svg "side")
+![U-bracket holding a panel to a pilaster, seen from above](/images/diagrams/mounting-floor-mounted-detail-bracket.svg)
 
 ## Why specifiers choose floor mounted
 

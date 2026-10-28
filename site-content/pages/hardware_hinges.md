@@ -45,7 +45,7 @@ No spring is involved, which is why these hinges are sometimes called gravity hi
 
 At the bottom of the door, the box cam in the door's hinge rests on the cam pintle of the bracket fixed to the pilaster. The locking nut under the bracket holds the rest position, so that is where you adjust it.
 
-![Bottom of a gravity hinge: box cam, cam pintle and locking nut](/images/diagrams/hinge-detail-cam.svg "side")
+![Bottom of a gravity hinge: box cam, cam pintle and locking nut](/images/diagrams/hinge-detail-cam.svg)
 
 ### Wrap-around hinges
 
@@ -76,7 +76,7 @@ Before you replace a hinge, try adjusting it. Manufacturers' instructions put th
 
 For step 2, the top pin comes out upward. It runs through the door and the top hinge bracket, turns in a nylon bushing, and sits flush with the top of the door.
 
-![Top of a gravity hinge: hinge pin and nylon bushing](/images/diagrams/hinge-detail-top-pin.svg "side")
+![Top of a gravity hinge: hinge pin and nylon bushing](/images/diagrams/hinge-detail-top-pin.svg)
 
 If the door won't latch after adjusting, check the keeper and strike alignment too. See [Locks & Latches](/hardware/locks-latches). Follow your manufacturer's installation guide, and have a qualified installer handle work you aren't comfortable doing.
 
