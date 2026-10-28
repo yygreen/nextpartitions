@@ -5,34 +5,61 @@ meta: Practical articles on commercial bathroom partitions for facility managers
 h1: Bathroom Partition Blog
 primary_keyword: bathroom partition blog (no volume in the keyword list; index page)
 secondary_keywords: [why do bathroom stalls have gaps (320), bathroom partition materials (calendar target)]
-words: 160
+words: 420
 ---
 
 # Bathroom Partition Blog
 
-Practical articles on commercial bathroom partitions for facilities managers, contractors and architects: materials, privacy, sizing and planning, with the manufacturer and code sources behind each one.
+Practical articles and guides on commercial bathroom partitions for facility managers, contractors and architects: sizes, materials, privacy, mounting and installation, with the manufacturer and code sources behind each one.
 
 [Get a Quote](/get-a-quote)
 
 ## Latest posts
 
-### [What Are Bathroom Partitions Made Of?](/blog/what-are-bathroom-partitions-made-of)
-2026-10-26
+- [What Are Bathroom Partitions Made Of?](/blog/what-are-bathroom-partitions-made-of)
+- [Why Do Bathroom Stalls Have Gaps? (And How to Eliminate Them)](/blog/why-do-bathroom-stalls-have-gaps)
 
-How powder coated steel, stainless steel, plastic laminate, phenolic and solid plastic (HDPE) partitions are built, what's inside each panel, how fire ratings differ, and which material suits which restroom.
+## Planning and sizes
 
-[Read the post](/blog/what-are-bathroom-partitions-made-of)
+Start here: how big a stall is, what goes on a quote, and how stalls fit in a room.
 
-### [Why Do Bathroom Stalls Have Gaps? (And How to Eliminate Them)](/blog/why-do-bathroom-stalls-have-gaps)
-2026-10-26
+- [Bathroom Stall Dimensions](/guides/bathroom-stall-dimensions)
+- [Toilet Partition Sizes](/guides/standard-sizes)
+- [Commercial Restroom Layout](/guides/restroom-layout)
 
-Why traditional stalls leave gaps at the door, floor and top, the gap sizes manufacturers publish, and the no-sightline doors, taller panels and full-height stalls that close them.
+## Accessibility and privacy
 
-[Read the post](/blog/why-do-bathroom-stalls-have-gaps)
+What the 2010 ADA Standards ask of a toilet compartment, and how to close the gaps around a stall. Confirm your project with your architect or local code official.
 
-## More guides
+- [ADA Bathroom Compliance Guide](/guides/ada-compliance): Compartment size, door location and swing, grab bars, toilet position and door hardware under the 2010 ADA Standards.
+- [Why Do Bathroom Stalls Have Gaps?](/blog/why-do-bathroom-stalls-have-gaps)
 
-Sizes, layouts and ADA requirements are in our [bathroom partition guides](/guides).
+## Materials
+
+How each partition material is built, and where it fits.
+
+- [What Are Bathroom Partitions Made Of?](/blog/what-are-bathroom-partitions-made-of)
+- [Powder Coated Steel](/partitions/powder-coated-steel)
+- [Solid Plastic (HDPE)](/partitions/solid-plastic-hdpe)
+- [Phenolic](/partitions/phenolic)
+- [Plastic Laminate](/partitions/plastic-laminate)
+- [Stainless Steel](/partitions/stainless-steel)
+
+## Mounting styles
+
+What your floor and ceiling have to provide for each style.
+
+- [Overhead Braced](/mounting-styles/overhead-braced)
+- [Floor Mounted](/mounting-styles/floor-mounted)
+- [Ceiling Hung](/mounting-styles/ceiling-hung)
+- [Floor to Ceiling](/mounting-styles/floor-to-ceiling)
+
+## Installation
+
+How partitions go in, and where to find each manufacturer's own instructions. Next Partitions supplies partitions and doesn't install them.
+
+- [How to Install Bathroom Partitions](/guides/how-to-install-toilet-partitions)
+- [Installation Instructions by Brand](/guides/installation-instructions)
 
 ## Ready to price your restroom?
 
@@ -51,5 +78,6 @@ Standard configurations are quoted within 2 business hours; custom projects with
 
 - Structured data: Blog with a BlogPosting entry per post; BreadcrumbList Home > Blog. No FAQ on this index page.
 - Dates are placeholders (2026-10-26); set them to the real publish dates and show newest first.
-- Each later post from the content calendar gets an entry in the same format (title, date, one-sentence summary, link). Post #2 (cost guide) waits for Abe's price list.
+- Layout: an overview, not an article. Topic chips under the title jump to each topic. "Latest posts" shows the newest blog posts as large cards; each topic below is a row of cards (thumbnail, type label Guide / Blog / Material / Mounting style, title, one-line summary from the page's meta description, read link). Thumbnails are the page's own first drawing, or the front render on mounting style pages. The preview builds the cards from these lists (`build/build.mjs`, `hub()`).
+- Each later post from the content calendar goes in "Latest posts" (newest first) and in its topic's list. Post #2 (cost guide) waits for Abe's price list.
 - Link /blog from the main nav and footer, and add it to the sitemap; remove /blog/news from the sitemap.
