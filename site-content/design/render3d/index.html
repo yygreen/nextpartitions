@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Partition render</title>
+<style>html,body{margin:0;background:#222}canvas{display:block}</style>
+<script type="importmap">
+{ "imports": { "three": "./node_modules/three/build/three.module.js", "three/addons/": "./node_modules/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<script type="module">
+// Renders one view and leaves the result on window.__render (PNG and JPEG data URLs).
+// Parameters come from render.mjs through window.__params: { spec, view, finish, width, height, ss, exposure }.
+import * as THREE from 'three'
+import { buildScene, makeCamera } from './scene.js'
+
+async function run(p) {
+  const W = p.width * p.ss, H = p.height * p.ss
+  const renderer = new THREE.WebGLRenderer({ // no MSAA: SwiftShader's multisampling lets edge-on faces leak through nearer surfaces; supersampling
+  // (p.ss) and the downscale below do the antialiasing instead
+  antialias: false, preserveDrawingBuffer: true })
+  renderer.setPixelRatio(1)
+  renderer.setSize(W, H)
+  renderer.outputColorSpace = THREE.SRGBColorSpace
+  renderer.toneMapping = THREE.ACESFilmicToneMapping
+  renderer.toneMappingExposure = p.exposure
+  renderer.shadowMap.enabled = true
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap
+  document.body.appendChild(renderer.domElement)
+  const scene = buildScene({ spec: p.spec, finish: p.finish, renderer, view: p.view })
+  const camera = makeCamera(p.view, p.spec, W / H)
+  renderer.render(scene, camera)
+  // downsample (supersampling) into a 2D canvas at the output size
+  const out = document.createElement('canvas'); out.width = p.width; out.height = p.height
+  const g = out.getContext('2d'); g.imageSmoothingEnabled = true; g.imageSmoothingQuality = 'high'
+  g.drawImage(renderer.domElement, 0, 0, p.width, p.height)
+  // screen positions (output pixels) of key heights on the pilaster face plane, for checking against the drawings
+  const marks = {}
+  for (const y of [0, 1, 4, 12, 70, 82, 95, 96]) for (const x of [0, p.spec.run / 2, p.spec.run]) {
+    const v = new THREE.Vector3(x, y, 0).project(camera)
+    marks[`${x},${y}`] = [(v.x + 1) / 2 * p.width, (1 - v.y) / 2 * p.height]
+  }
+  return { png: out.toDataURL('image/png'), jpg: out.toDataURL('image/jpeg', 0.85), marks }
+}
+window.__run = run
+window.__ready = true
+</script>
+</body>
+</html>
