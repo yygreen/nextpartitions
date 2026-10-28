@@ -284,6 +284,9 @@ const sheets = {}
 const LAYOUT = { stalls: [60.5, 36.5, 36, 36], depth: 61.25 } // Bradley PH400 example
 // Front, left to right (inches, scaled from Bradley's front view): pilaster, door, pilaster, door …
 const FRONT = [['p', 3.5], ['d', 36], ['p', 22], ['d', 34], ['p', 8.5], ['d', 24], ['p', 12], ['d', 24], ['p', 5]]
+// Front elevations (the mounting style front views): one wider accessible stall with an outswing door, then three
+// identical 36" standard stalls (24" inswing door + 12" pilaster), so the row reads as one accessible + standards.
+const FRONT_ELEV = [['p', 3.5], ['d', 36], ['p', 21], ['d', 24], ['p', 12], ['d', 24], ['p', 12], ['d', 24], ['p', 12]]
 const note = (x, y, t, anchor = 'start', size = 11) => text(x, y, t, { size, fill: C.muted, anchor, weight: 500 })
 
 // ph: the phone variant (360 wide): smaller scale, thinner walls, no compartment names (the page text names them,
@@ -346,7 +349,7 @@ function front(name, style, ph = false) {
   const H = { ob: { pil: [1, 82], rail: 82, floor: 330, wall: 100 }, fm: { pil: [1, 70], floor: 300, wall: 92 }, ch: { pil: [12, 95], ceil: 96, floor: 400, wall: 112, plenum: true }, ftc: { pil: [0, 96], ceil: 96, floor: 370, wall: 100 } }[style]
   const top = { ob: 100, fm: 92, ch: 112, ftc: 100 }[style]
   const floor = ph ? Math.round(12 + top * s) : H.floor, Y = (i) => floor - i * s, X = (i) => x0 + wt + i * s
-  const run = FRONT.reduce((a, [, w]) => a + w, 0), wallR = X(run)
+  const run = FRONT_ELEV.reduce((a, [, w]) => a + w, 0), wallR = X(run)
   const kh = ph ? s / 3.2 : 1 // small hardware drawn in px on the desktop sheet
   let b = rect(x0 - 10, floor, run * s + 2 * wt + 30, slab, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 10, floor, wallR + wt + 10, floor)
   b += rect(x0, Y(H.wall), wt, H.wall * s, { fill: 'HATCH', stroke: 'none' }) + line(X(0), Y(H.wall), X(0), floor)
@@ -355,11 +358,11 @@ function front(name, style, ph = false) {
   if (H.plenum) b += rect(X(0), Y(H.ceil + 14), run * s, 14 * s - 2, { fill: 'HATCH', stroke: 'none' })
   let cur = 0, di = 0
   const pilXs = []
-  for (const [k, w] of FRONT) {
+  for (const [k, w] of FRONT_ELEV) {
     if (k === 'p') { b += rect(X(cur), Y(H.pil[1]), w * s, (H.pil[1] - H.pil[0]) * s); pilXs.push([cur, w]) }
     else {
       b += rect(X(cur + 0.3), Y(70), (w - 0.6) * s, 58 * s)
-      const out = di < 2
+      const out = di === 0 // only the accessible door swings out
       if (out) { // hinges on the hinge (left) edge, pull and latch indicator near the latch edge
         b += rect(X(cur + 0.3) - 2 * kh, Y(65), Math.max(3, 7 * kh), 14 * kh, { fill: C.ink, stroke: 'none' }) + rect(X(cur + 0.3) - 2 * kh, Y(20), Math.max(3, 7 * kh), 14 * kh, { fill: C.ink, stroke: 'none' })
         b += rect(X(cur + w - 9), Y(43), Math.max(1.5, 3 * kh), 22 * kh, { fill: C.ink, stroke: 'none' })
@@ -392,7 +395,7 @@ function front(name, style, ph = false) {
   if (style === 'ftc' && !ph) b += vdim(dr, Y(96), Y(0), 'to ceiling')
   const w = ph ? 360 : Math.round(wallR + 22 + 34 + (style === 'ftc' ? 90 : 80))
   return svg(name, w, ph ? (style === 'ch' ? floor + slab + 8 : under + 16) : floor + 64, 'Front elevation of a row of toilet compartments',
-    `Front view of the same four compartments. Doors 58 inches high, 12 inches above the floor; the ADA and ambulatory doors swing out, so their hinges and pulls show on this side.`, b)
+    `Front view of a row of four compartments: one wider accessible compartment and three identical standard ones. Doors 58 inches high, 12 inches above the floor; the accessible door swings out, so its hinges and pull show on this side.`, b)
 }
 
 // Side and detail views sit two across on desktop (about 370 px each), so they are drawn at that size, landscape
