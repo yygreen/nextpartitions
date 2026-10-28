@@ -176,9 +176,12 @@ const cardImg = (url) => {
 // not the article layout. Its images are inlined so the file opens on its own.
 function homepage(url) {
   const PROTO = '../../prototypes/'
-  return readFileSync(`${PROTO}homepage-grid.html`, 'utf8')
+  const proto = readFileSync(`${PROTO}homepage-grid.html`, 'utf8')
     .replace(/src="img\/([^"]+)"/g, (_, f) => `src="data:image/${f.endsWith('.svg') ? 'svg+xml' : f.endsWith('.png') ? 'png' : 'jpeg'};base64,${readFileSync(`${PROTO}img/${f}`).toString('base64')}"`)
-    .replace(/<body([^>]*)>/, `<body$1><div style="background:#111;color:#fff;font:12px/1.4 Inter,system-ui,sans-serif;padding:6px 16px;text-align:center">Homepage proposal for nextpartitions.com${url} (ideas for Marc) · not the live site · <a href="index.html" style="color:#fff;text-decoration:underline">all preview pages</a></div>`)
+  // the prototype is a page fragment (no doctype or body): wrap it, with the preview bar on top
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"></head><body style="margin:0">`
+    + `<div style="background:#111;color:#fff;font:12px/1.4 Inter,system-ui,sans-serif;padding:6px 16px;text-align:center">Homepage proposal for nextpartitions.com${url} (ideas for Marc) · not the live site · <a href="index.html" style="color:#fff;text-decoration:underline">all preview pages</a></div>`
+    + `${proto}</body></html>`
 }
 
 function build(file, built) {
@@ -272,7 +275,7 @@ const before = (url) => {
     return t.split('\n').slice(3).join(' ').split(/\s+/).filter(Boolean).length
   } catch { return null }
 }
-writeFileSync(`${OUT}/index.html`, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>New page content: preview</title><meta name="robots" content="noindex"><style>${CSS}</style></head>
+writeFileSync(`${OUT}/index.html`, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Next Partitions Content Preview</title><meta name="robots" content="noindex"><style>${CSS}</style></head>
 <body class="bg-background text-foreground"><div class="max-w-3xl mx-auto px-4 py-10">
 <h1 class="text-3xl font-bold mb-2">New page content for nextpartitions.com</h1>
 <p class="text-muted-foreground mb-6">Each page in the live site's layout, ready to port into the site. Built ${new Date().toISOString().slice(0, 10)} from site-content/pages/. Words are the page's own content (live page shown for comparison; "new" means the URL doesn't exist or is blank today).</p>

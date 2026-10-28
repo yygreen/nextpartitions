@@ -38,6 +38,8 @@ Working notes for the nextpartitions.com redesign and the installer directory. R
 
 **Working prototype (start here, shared with anyone who has the link):** https://claude.ai/artifact/28Jz9krwMovkrgjGw8XYFa — the built React app (directory, application, customer quote, installer portal, job coordination) plus the homepage and configurator prototypes, all linked, sharing one set of fictional sample data so a job can be followed from Acme's price to the customer's choice to the install date. Built by `npm run preview:build` in `directory/app` (publish `dist-preview/artifact/`).
 
+**Content pages (month one, 33 rebuilt pages in the live layout, all linked, plus the homepage proposal):** https://claude.ai/artifact/Ub3hrwjMMamnkpaPohVN3d — built by `node build.mjs` in `site-content/build` (publish `site-content/preview/index.html` with the other preview pages as files).
+
 **Design prototypes (static HTML, all pages linked):** https://claude.ai/artifact/1EM6mvJkMTXTtfTNj5SrbQ — built by `node prototypes/build-linked.mjs` from the files in `prototypes/`. The prototypes are the approved design; the React build in `directory/app` must match them.
 
 Each page on its own link (built by `node prototypes/build-linked.mjs separate`; links in `prototypes/separate-urls.json`):
