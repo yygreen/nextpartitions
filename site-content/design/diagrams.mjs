@@ -437,8 +437,8 @@ const noteLines = (x, y, lines) => lines.map((t, i) => note(x, gridY(y) + i * GR
 // Side view through a stall: looking at a dividing panel, front (pilaster) on the left as on Bradley's sheet,
 // back wall on the right. Labels on the left, by the front; heights to the right of the back wall.
 function side(name, style) {
-  const s = 1.75, x0 = 196, depth = LAYOUT.depth, wt = 14
-  const floor = 206, wallH = style === 'ch' ? 112 : 100
+  const s = 1.65, x0 = 196, depth = LAYOUT.depth, wt = 14
+  const floor = 194, wallH = style === 'ch' ? 112 : 100
   const Y = (i) => floor - i * s, X = (i) => x0 + i * s
   const pil = { ob: [1, 82], fm: [1, 70], ch: [12, 95], ftc: [0, 96] }[style]
   const ceil = style === 'ch' || style === 'ftc'
@@ -452,7 +452,7 @@ function side(name, style) {
   if (style === 'ob') b += rect(X(-0.6), Y(82), 3 * s, 2 * s, { fill: C.orange, stroke: C.orange })
   if (style !== 'ch') b += rect(X(-0.6), Y(4), 1.25 * s + 6, 4 * s, { fill: C.orange, stroke: C.orange })
   if (style === 'ftc') b += rect(X(-0.6), Y(96), 1.25 * s + 6, 3 * s, { fill: C.orange, stroke: C.orange })
-  b += hdim(floor + 30, X(0), X(depth), '61-1/4" to face')
+  b += hdim(floor + 44, X(0), X(depth), '61-1/4" to face')
   b += vdim(X(depth) + wt + 12, Y(70), Y(12), '58"') + vdim(X(depth) + wt + 12, Y(12), Y(0), '12"')
   b += text(X(depth) + wt + 8, Y(wallH) + 14, 'back wall', { size: 13, fill: C.muted })
   // labels, left of the front: what each part is
