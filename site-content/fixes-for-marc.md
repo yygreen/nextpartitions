@@ -110,3 +110,7 @@ The side card ("Planning a restroom?" with the Get a Quote button) is `sticky to
 ## 13. Icons on the reasons and limits lists
 
 On the mounting style pages, the lists under "Why specifiers choose …" and "Where it works well" get an orange check-in-a-circle icon, and the lists under "Limits to plan for" and "When to choose something else" a muted warning icon (exclamation in a circle), 22 px, in place of the bullet. Brand colors only (orange `#fe7802`, muted `#7a6a5e`), not green. The previews do this in `build/build.mjs` (`iconLists`).
+
+## 14. A small render in the quote side card
+
+The "Planning a restroom?" side card opens with a small 3/4 render (`/images/renders/<style>-angle.jpg`, 16:10, rounded): the page's own mounting style on mounting style pages, overhead braced everywhere else. It's decorative (empty alt).
