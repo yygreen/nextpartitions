@@ -86,7 +86,7 @@ Compare how the materials are built in [what are bathroom partitions made of](/b
 On overhead-braced partitions ASI Global lists anti-grip headrails by material: 1-1/4", 1" and 3/4". Match the headrail to the material and brand. See [overhead braced mounting](/mounting-styles/overhead-braced).
 
 :::expert
-Which sizes do buyers most often mix up when they order?
+When someone asks for "just standard sizes", what do you have to ask them back before you can quote?
 :::
 
 ## What to send us

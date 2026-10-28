@@ -141,7 +141,7 @@ Start with the environment, then the budget:
 The [partitions overview](/partitions) compares all five materials side by side.
 
 :::expert
-Which material do you sell most, and to which kind of building?
+Tell us about a restroom where the material was wrong for the building. What failed, how soon, and what should have gone in instead?
 :::
 
 ## Get a quote

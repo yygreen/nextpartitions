@@ -73,12 +73,13 @@ Each rebuilt page has a branded box for a short quote from you: two to four sent
 
 | Page | Question |
 |---|---|
-| `/blog/what-are-bathroom-partitions-made-of` | Which material do you sell most, and to which kind of building? |
-| `/blog/why-do-bathroom-stalls-have-gaps` | How many of your buyers now ask for no-gap partitions, and has it grown? |
-| `/guides/bathroom-stall-dimensions` | Do buyers ask for wider or deeper stalls than standard? Which sizes, and why? |
-| `/guides/how-to-install-toilet-partitions` | What should a buyer check or prepare before the installer arrives? |
-| `/guides/restroom-layout` | What layout mistake do you see most on drawings from architects or contractors? |
-| `/guides/standard-sizes` | Which sizes do buyers most often mix up when they order? |
+| `/blog/what-are-bathroom-partitions-made-of` | Tell us about a restroom where the material was wrong for the building. What failed, how soon, and what should have gone in instead? |
+| `/blog/why-do-bathroom-stalls-have-gaps` | When a buyer asks for no-gap stalls, what's the first question you ask back, and why? |
+| `/guides/bathroom-stall-dimensions` | Tell us about a job where the stalls didn't fit the room as drawn. What was off, by how much, and how was it fixed? |
+| `/guides/how-to-install-toilet-partitions` | When an installation goes badly, what was usually missing before anyone picked up a drill: the wall backing, the floor, the drawings, or something else? |
+| `/guides/installation-instructions` | Which step in the manufacturers' instructions do installers skip most, and what goes wrong later because of it? |
+| `/guides/restroom-layout` | Describe a layout that looked fine on paper but didn't work once the stalls went in. What should the drawing have shown? |
+| `/guides/standard-sizes` | When someone asks for "just standard sizes", what do you have to ask them back before you can quote? |
 | `/hardware` | Which hardware upgrade is worth paying for, and which isn't? |
 | `/hardware/door-hardware` | Which door hardware fails first on busy restrooms, and what lasts? |
 | `/hardware/doors` | What do buyers most often get wrong when they order a replacement door? |

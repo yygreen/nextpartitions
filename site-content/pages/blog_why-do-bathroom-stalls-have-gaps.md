@@ -105,7 +105,7 @@ For no gaps at all, look at full-height enclosures. Scranton's Aria partitions g
 Note that [floor-to-ceiling mounting](/mounting-styles/floor-to-ceiling) on its own describes the pilasters, which run from floor to ceiling; standard doors and panels on that mounting still have gaps above and below. Ask for full-height or extended-height doors and panels if that's what you want.
 
 :::expert
-How many of your buyers now ask for no-gap partitions, and has it grown?
+When a buyer asks for no-gap stalls, what's the first question you ask back, and why?
 :::
 
 ## Before you specify a gap-free restroom

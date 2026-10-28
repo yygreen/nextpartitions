@@ -75,7 +75,7 @@ The support system is shown in orange. Have your contractor or structural engine
 Set out the job from the approved shop drawings, not from memory or from the old stalls. Measure the room and compare it with the drawings before you start. If a wall or column is not where the drawing says, stop and resolve it with the architect. What to measure in an empty room is in [how to measure a restroom](/guides/restroom-layout).
 
 :::expert
-What should a buyer check or prepare before the installer arrives?
+When an installation goes badly, what was usually missing before anyone picked up a drill: the wall backing, the floor, the drawings, or something else?
 :::
 
 ## The general sequence for overhead-braced and floor-mounted

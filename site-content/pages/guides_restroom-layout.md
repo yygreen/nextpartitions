@@ -94,7 +94,7 @@ Every door needs floor to swing over.
 - **Door position.** The accessible compartment door sits within 4" of the side wall or partition farthest from the toilet (front-partition door), or within 4" of the front partition (side-wall door).
 
 :::expert
-What layout mistake do you see most on drawings from architects or contractors?
+Describe a layout that looked fine on paper but didn't work once the stalls went in. What should the drawing have shown?
 :::
 
 ## Step 5: The accessible route and turning space
