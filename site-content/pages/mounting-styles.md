@@ -15,10 +15,10 @@ Every bathroom partition is held up one of four ways: from the floor with a head
 ## The four mounting styles
 
 :::gallery
-![Overhead braced: headrail across the pilaster tops](/images/renders/overhead-braced-front.jpg)
-![Floor mounted: pilasters anchored in the floor](/images/renders/floor-mounted-front.jpg)
-![Ceiling hung: hung from steel above the ceiling](/images/renders/ceiling-hung-front.jpg)
-![Floor to ceiling: anchored at floor and ceiling](/images/renders/floor-to-ceiling-front.jpg)
+[![Overhead braced: headrail across the pilaster tops](/images/renders/overhead-braced-hero.jpg)](/mounting-styles/overhead-braced)
+[![Floor mounted: pilasters anchored in the floor, nothing overhead](/images/renders/floor-mounted-hero.jpg)](/mounting-styles/floor-mounted)
+[![Ceiling hung: hung from steel above the ceiling, floor clear](/images/renders/ceiling-hung-hero.jpg)](/mounting-styles/ceiling-hung)
+[![Floor to ceiling: anchored at floor and ceiling](/images/renders/floor-to-ceiling-hero.jpg)](/mounting-styles/floor-to-ceiling)
 :::
 
 ### Overhead braced
