@@ -196,7 +196,7 @@ ${content.map((s) => `<section class="mb-8"><h2 class="text-2xl font-bold mb-4">
 ${items.length ? `<section class="mb-8"><h2 class="text-2xl font-bold mb-4">Frequently Asked Questions</h2><div class="space-y-3">${items.map((x) => `<details class="border border-border rounded-lg p-4"><summary class="font-semibold text-foreground cursor-pointer">${esc(x.q)}</summary><div class="mt-3">${md(x.a)}</div></details>`).join('')}</div></section>` : ''}
 ${sources ? `<section class="np-sources mt-10 border-t border-border pt-6 text-xs text-muted-foreground"><h2 class="text-sm font-semibold text-foreground mb-2">Sources</h2>${md(sources.md).replace(/text-muted-foreground leading-relaxed mb-4/g, 'mb-2').replace(/space-y-2 text-muted-foreground leading-relaxed mb-4/g, 'space-y-1')}</section>` : ''}
 </div>
-<aside class="space-y-4 min-w-0"><div class="bg-accent/50 rounded-lg p-6 sticky top-4">
+<aside class="space-y-4 min-w-0"><div class="bg-accent/50 rounded-lg p-6 sticky top-4" style="top:132px">
 <h3 class="font-bold mb-2">${ctaHref === '/contact' ? 'Need replacement parts?' : 'Planning a restroom?'}</h3>
 <p class="text-sm text-muted-foreground mb-4">${ctaHref === '/contact' ? 'Send us a photo, your brand and a few measurements, and we will find the match.' : 'Send your layout or drawings, or price it in the configurator.'}</p>
 ${button(ctaLabel, ctaHref, 'w-full')}

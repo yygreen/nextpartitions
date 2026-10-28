@@ -98,3 +98,7 @@ The tip, one to three sentences.
 Nine live pages show a product photo: the four mounting style pages, the mounting styles hub (all four), and phenolic, plastic laminate, powder coated steel, solid plastic and stainless steel. The rebuilt pages keep them, linked to the same assets (`/__l5e/assets-v1/...`), as a card after the introduction with the existing alt text as its caption; the hub shows the four in one row. They are small (about 300 px for mounting styles, 540 px for materials): if you have larger originals, use those.
 
 The solid plastic color swatches (21) and the stainless finish swatches (satin, diamond, leathergrain) are left out of the rebuilt pages for now, because the color and finish lists couldn't be confirmed against the manufacturers. Keep the existing swatch grids on the live pages until Abe confirms which colors and finishes he actually offers; then they go back.
+
+## 11. The quote card in the side column should stay in view
+
+The side card ("Planning a restroom?" with the Get a Quote button) is `sticky top-4`, but the site header is also sticky and about 107 px tall, so the card slides under the header and looks like it scrolls away. Give it a top offset below the header (the previews use `top: 132px`, header height plus 24 px), or `top-[calc(var(--header-h)+1.5rem)]` if the header height is a variable.
