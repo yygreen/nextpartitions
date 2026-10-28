@@ -105,7 +105,7 @@ The side card ("Planning a restroom?" with the Get a Quote button) is `sticky to
 
 ## 12. 3D renders in the mounting style pages
 
-`design/renders/` has 3D product renders of each mounting style (front and angle, 2400 x 1500 JPEG), made by `design/render3d` from the same numbers as the drawings, so the proportions match exactly; they're ours, no rights questions. Copy them to `public/images/renders/`. The previews use the front render as each mounting page's hero image (a rounded card beside the title, replacing the drawing), and the four fronts in a row on the mounting styles hub (replacing the small 300 px product photos there). On the four mounting style pages the small product photos are removed: the render replaces them. The material pages keep theirs.
+`design/renders/` has 3D product renders of each mounting style (front and angle, 2400 x 1500 JPEG), made by `design/render3d` from the same numbers as the drawings, so the proportions match exactly; they're ours, no rights questions. Copy them to `public/images/renders/`. The previews use the 3/4 angle render as each mounting page's hero image (full-bleed room image with rounded corners beside the title, no white card), and the exact front render where the drawing is compared, and the four fronts in a row on the mounting styles hub (replacing the small 300 px product photos there). On the four mounting style pages the small product photos are removed: the render replaces them. The material pages keep theirs.
 
 ## 13. Icons on the reasons and limits lists
 
