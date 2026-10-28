@@ -332,9 +332,14 @@ function build(file, built) {
 
   // Hero: the first paragraph, and the first CTA line as the button.
   const introParas = intro.split(/\n\s*\n/)
-  // The hero takes the first sentence; the rest of the opening paragraph starts the page.
-  const first = introParas.shift() ?? ''
-  const cut = first.length > 200 ? first.search(/[.?!]["”]?\s/) : -1
+    const first = introParas.shift() ?? ''
+  // a short intro: whole sentences up to about 240 characters (at least one); the rest starts the page
+  let cut = -1
+  if (first.length > 200) {
+    const ends = [...first.matchAll(/[.?!]["”]?(?=\s)/g)].map((m) => m.index + m[0].length - 1)
+    cut = ends[0] ?? -1
+    for (const e of ends) if (e < 240) cut = e
+  }
   let lead = cut > 0 ? first.slice(0, cut + 1) : first
   if (cut > 0) introParas.unshift(first.slice(cut + 1).trim())
   // A post that opens by restating its title as a question: the hero shows the page description instead.
