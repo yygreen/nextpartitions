@@ -117,4 +117,4 @@ The "Planning a restroom?" side card opens with a small 3/4 render (`/images/ren
 
 ## 15. Homepage preview (2026-10-28)
 
-The preview's homepage (`preview/home.html`) is the homepage proposal already sent to you (`prototypes/homepage-grid.html`, three ways into a quote: price it yourself, send your plans, shop the catalogue), not the article layout. Ideas for you to use as you see fit. `pages/home.md` holds the matching copy. About and Contact stay as they are.
+The preview's homepage (`preview/home.html`) is the homepage proposal already sent to you (`prototypes/homepage-grid.html`, three ways into a quote: price it yourself, send your plans, shop the catalogue), not the article layout. Ideas for you to use as you see fit. `pages/home.md` holds the matching copy. About and Contact stay as they are on the live site; they are not part of this work.
