@@ -121,7 +121,9 @@ const legends = (html) => html.replace(/<\/figure>\s*<(ol|ul) class="[^"]*">([\s
   const lis = [...items.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/g)].map((m) => strip(m[1]))
   const two = lis.length >= 4 && lis.every((t) => t.length <= 48)
   const style = two ? ` style="grid-template-rows:repeat(${Math.ceil(lis.length / 2)},auto)"` : ''
-  return `<${tag} class="np-legend${two ? ' np-legend-2' : ''}"${style}>${items}</${tag}></figure>`
+  // each item's text in one span, so a bold lead and the text after it flow as one paragraph beside the number
+  const wrapped = items.replace(/<li([^>]*)>([\s\S]*?)<\/li>/g, (_, at, inner) => `<li${at}><span>${inner.trim()}</span></li>`)
+  return `<${tag} class="np-legend${two ? ' np-legend-2' : ''}"${style}>${wrapped}</${tag}></figure>`
 })
 const cards = (html) => html.replace(/<table class="([^"]*)">([\s\S]*?)<\/table>/g, (t, cls, inner) => {
   const heads = [...inner.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((m) => strip(m[1]))
