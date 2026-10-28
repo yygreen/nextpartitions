@@ -125,12 +125,12 @@ Hang each door on its spacer, then set the gaps along its edges before you tight
 
 ![Gaps between a door and its pilasters, a wall pilaster and the wall, and a panel and the back wall, with the 12-inch spacer](/images/diagrams/install-gaps.svg)
 
-1. **Hinge side:** 1/8" between the door and the pilaster.
-2. **Latch side:** 1/8", set with spacers at the top and bottom of the door.
-3. **Wall pilaster to wall:** 1/2" to 1-1/4", as the drawing shows.
+1. **Wall pilaster to wall:** 1/2" to 1-1/4", as the drawing shows.
+2. **Hinge side:** 1/8" between the door and the pilaster.
+3. **Latch side:** 1/8", set with spacers at the top and bottom of the door.
 4. **12" spacer** under the door while the hinges go on.
-5. **Panel to back wall:** 1" standard.
-6. **Panel to pilaster:** 1/2" standard.
+5. **Panel to pilaster:** 1/2" standard.
+6. **Panel to back wall:** 1" standard.
 
 Adjust the doors so their tops run parallel with the headrail.
 

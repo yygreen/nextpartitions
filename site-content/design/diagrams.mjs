@@ -1532,9 +1532,9 @@ function gapsDrawing(s, fx, sx, top, ph) {
   const spW = 10 * s, spc = d0 + 12 * s
   b += rect(spc - spW / 2, Y(12), spW, 12 * s, { sw: 1.2, dash: '4 3' }) // 12" spacer
   const c3 = ph ? fx - 44 : fx - 22, c1 = p1r + g / 2 + (ph ? -6 : 14), c2 = d1 + g / 2 + (ph ? 6 : -14)
-  b += val(c3, top, '1/2"–1-1/4"') + callout(3, c3, dy, [wf + gw / 2, Y(78)])
-  b += val(c1, top, '1/8"') + callout(1, c1, dy, [p1r + g / 2, Y(62)])
-  b += val(c2, top, '1/8"') + callout(2, c2, dy, [d1 + g / 2, Y(56)])
+  b += val(c3, top, '1/2"–1-1/4"') + callout(1, c3, dy, [wf + gw / 2, Y(78)])
+  b += val(c1, top, '1/8"') + callout(2, c1, dy, [p1r + g / 2, Y(62)])
+  b += val(c2, top, '1/8"') + callout(3, c2, dy, [d1 + g / 2, Y(56)])
   b += callout(4, spc, floor + slab + (ph ? 16 : 20), [spc, Y(4)])
   // side view: pilaster at the front (left), panel, back wall (right)
   const q0 = sx + pt, q1 = q0 + g, px1 = q1 + 56 * s, wb = px1 + gp
@@ -1545,8 +1545,8 @@ function gapsDrawing(s, fx, sx, top, ph) {
   const spc2 = q1 + 28 * s
   b += rect(spc2 - spW / 2, Y(12), spW, 12 * s, { sw: 1.2, dash: '4 3' })
   const c6 = q0 + g / 2 + (ph ? 10 : 14), c5 = px1 + gp / 2 - (ph ? 10 : 14)
-  b += val(c6, top, '1/2"') + callout(6, c6, dy, [q0 + g / 2, Y(62)])
-  b += val(c5, top, '1"') + callout(5, c5, dy, [px1 + gp / 2, Y(62)])
+  b += val(c6, top, '1/2"') + callout(5, c6, dy, [q0 + g / 2, Y(62)])
+  b += val(c5, top, '1"') + callout(6, c5, dy, [px1 + gp / 2, Y(62)])
   b += callout(4, spc2, floor + slab + (ph ? 16 : 20), [spc2, Y(4)])
   b += vdim(wb + wt + (ph ? 10 : 16), Y(12), Y(0), '12"')
   return { b, floor, slab, front: (fx + p2r) / 2, side: (sx + wb) / 2 }

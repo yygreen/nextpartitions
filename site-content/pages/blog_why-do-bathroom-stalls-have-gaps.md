@@ -60,12 +60,12 @@ The installer sets most of these gaps when the parts go in. The drawing shows th
 
 ![Gaps set at installation: door to pilaster, pilaster to wall, panel to back wall and panel to pilaster](/images/diagrams/install-gaps.svg)
 
-1. **Door to pilaster, hinge side:** 1/8"
-2. **Door to pilaster, latch side:** 1/8"
-3. **Wall pilaster to wall:** 1/2" to 1-1/4"
+1. **Wall pilaster to wall:** 1/2" to 1-1/4"
+2. **Door to pilaster, hinge side:** 1/8"
+3. **Door to pilaster, latch side:** 1/8"
 4. **Spacer under door or panel:** 12"
-5. **Panel to back wall:** 1"
-6. **Panel to pilaster:** 1/2"
+5. **Panel to pilaster:** 1/2"
+6. **Panel to back wall:** 1"
 
 ## How to reduce or eliminate the gaps
 
