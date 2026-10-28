@@ -106,3 +106,7 @@ The side card ("Planning a restroom?" with the Get a Quote button) is `sticky to
 ## 12. 3D renders in the mounting style pages
 
 `design/renders/` has 3D product renders of each mounting style (front and angle, 2400 x 1500 JPEG), made by `design/render3d` from the same numbers as the drawings, so the proportions match exactly; they're ours, no rights questions. Copy them to `public/images/renders/`. The previews use the front render as each mounting page's hero image (a rounded card beside the title, replacing the drawing), and the four fronts in a row on the mounting styles hub (replacing the small 300 px product photos there). On the four mounting style pages the small product photos are removed: the render replaces them. The material pages keep theirs.
+
+## 13. Icons on the reasons and limits lists
+
+On the mounting style pages, the lists under "Why specifiers choose …" and "Where it works well" get an orange check-in-a-circle icon, and the lists under "Limits to plan for" and "When to choose something else" a muted warning icon (exclamation in a circle), 22 px, in place of the bullet. Brand colors only (orange `#fe7802`, muted `#7a6a5e`), not green. The previews do this in `build/build.mjs` (`iconLists`).
