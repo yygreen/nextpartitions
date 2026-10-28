@@ -328,6 +328,12 @@ ${shell.match(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/
       return `${attr}="${SITE}/${path}"`
     })
   if (url === '/') html = homepage(url)
+  // Live-site photos are saved in live-images/ and inlined, so the preview shows them where other sites' images are
+  // blocked (a published claude.ai artifact). On the live site they stay as they are.
+  html = html.replace(/src="https:\/\/nextpartitions\.com\/__l5e\/assets-v1\/([0-9a-f-]+)\/([^"]+\.(jpe?g|png|webp))"/g, (m, id, name, ext) => {
+    const f = `live-images/${id}-${name}`
+    return existsSync(f) ? `src="data:image/${ext === 'jpg' ? 'jpeg' : ext};base64,${readFileSync(f).toString('base64')}"` : m
+  })
   writeFileSync(`${OUT}/${fileFor(url)}`, html)
   const words = strip(main.replace(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/section>/, '').replace(/<nav[\s\S]*?<\/nav>/, '')).split(/\s+/).length
   return { url, title: fm.h1, words }
