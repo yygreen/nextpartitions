@@ -127,4 +127,4 @@ Under the grid: the page's short intro stays visible; every content section afte
 
 ## 17. Get a Quote on phones and tablets (2026-10-28)
 
-Below 1024 px wide: a bar fixed to the bottom of the screen with a full-width "Get a Quote" button and a call button (1-833-997-7489), with the page padded so the bar never covers the footer; the hero button goes full width (up to 420 px) and 48 px tall, with "Standard configurations quoted within 2 business hours" under it; the hero drawing or render is kept small (up to 420 px wide, 240 px high) so it doesn't outshout the button. Desktop is unchanged. The previews do this in `build/build.mjs` (`mobileBar`, `MOBILE_CSS`).
+Below 1024 px wide the hero button goes full width (up to 420 px) and 48 px tall, so it's the clearest action in the hero. Desktop is unchanged. The previews do this in `build/build.mjs` (`MOBILE_CSS`). A fixed quote bar at the bottom of the screen was tried and left out for now.

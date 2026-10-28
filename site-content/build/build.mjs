@@ -246,7 +246,6 @@ ${topics.map((s) => {
 ${faq.length ? `<section class="np-hs"><div><h2>Frequently Asked Questions</h2></div><div class="space-y-3" style="max-width:48rem">${faq.map((x) => `<details class="border border-border rounded-lg p-4 bg-card"><summary class="font-semibold text-foreground cursor-pointer">${esc(x.q)}</summary><div class="mt-3">${md(x.a)}</div></details>`).join('')}</div></section>` : ''}
 ${sources ? `<section class="np-sources np-hs text-xs text-muted-foreground"><h2 class="text-sm font-semibold text-foreground mb-2" style="font-size:14px">Sources</h2>${md(sources.md).replace(/text-muted-foreground leading-relaxed mb-4/g, 'mb-2').replace(/space-y-2 text-muted-foreground leading-relaxed mb-4/g, 'space-y-1')}</section>` : ''}
 </div>
-${mobileBar('Get a Quote', '/get-a-quote')}
 ${end ? `<section class="bg-accent/50"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-wrap items-center justify-between gap-6"><div><h2 class="text-2xl font-bold mb-2">${esc(end.title)}</h2><p class="text-muted-foreground">${QUOTE_PROMISE}</p></div>${button('Get a Quote', '/get-a-quote')}</div></section>` : ''}
 </main>`
 }
@@ -270,16 +269,8 @@ const CAT_CSS = `.np-pg-bar{display:flex;flex-wrap:wrap;justify-content:space-be
 .np-readmore{border-top:1px solid var(--border,#e5e0da);padding-top:16px;margin-bottom:32px}.np-readmore>summary{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:#fe7802;cursor:pointer}.np-readmore>summary::after{content:"+";float:none;margin-left:2px}.np-readmore[open]>summary::after{content:"–"}`
 
 
-// Phones and tablets (below 1024 px): the quote button gets a bar fixed to the bottom of the screen (the side card's
-// sticky quote box is gone or squeezed at these widths), the hero button goes full width with the quote promise
-// under it, and the hero drawing is kept small so it doesn't outshout the button.
-const mobileBar = (label, href) => `<div class="np-mbar"><a class="np-mbar-q" href="${href}">${esc(label)} ${ICON_ARROW}</a><a class="np-mbar-p" href="tel:18339977489" aria-label="Call 1-833-997-7489"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a></div>`
-const MOBILE_CSS = `.np-hero-promise{margin:8px 0 0;font-size:13px;color:rgba(251,250,249,.7)}.np-mbar{display:none}
-@media(max-width:1023px){.np-mbar{display:flex;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(255,255,255,.96);border-top:1px solid var(--border,#e5e0da);box-shadow:0 -6px 20px rgba(28,14,5,.12)}
-.np-mbar-q{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;height:48px;border-radius:8px;background:#fe7802;color:#fff;font-weight:700;font-size:16px}.np-mbar-q svg{width:18px;height:18px}
-.np-mbar-p{flex:0 0 48px;height:48px;display:flex;align-items:center;justify-content:center;border-radius:8px;border:1px solid var(--border,#e5e0da);color:#1c0e05;background:#fff}
-body{padding-bottom:76px}.np-hero-cta{max-width:420px}.np-hero-cta a,.np-hero-cta button{width:100%}.np-hero-cta button{height:48px;font-size:16px;font-weight:700}
-.np-hero-art,.np-hero-photo{max-width:420px;margin:8px auto 0}.np-hero-art svg{max-height:240px}}`
+// Phones and tablets (below 1024 px): the hero button goes full width (up to 420 px) and 48 px tall.
+const MOBILE_CSS = `@media(max-width:1023px){.np-hero-cta{max-width:420px}.np-hero-cta a,.np-hero-cta button{width:100%}.np-hero-cta button{height:48px;font-size:16px;font-weight:700}}`
 
 function build(file, built) {
   const { fm, intro, sections } = parse(file)
@@ -319,7 +310,7 @@ function build(file, built) {
     : `<li class="flex items-center gap-1.5">${i ? ICON_CHEVRON : ''}<a class="hover:text-primary-foreground/90 transition-colors" href="${h}">${esc(n)}</a></li>`).join('')}</ol></nav>
 <h1 class="text-3xl md:text-4xl font-bold mt-2 mb-3">${esc(fm.h1)}</h1>
 <p class="text-lg opacity-90 max-w-3xl mb-6">${strip(md(lead))}</p>
-<div class="np-hero-cta">${button(ctaLabel, ctaHref)}<p class="np-hero-promise">Standard configurations quoted within 2 business hours</p></div>
+<div class="np-hero-cta">${button(ctaLabel, ctaHref)}</div>
 ${art ? `</div>${art}</div>` : ''}</div></div>
 ${isCat ? productGrid(fm) : ''}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-8"><div class="md:col-span-2 min-w-0">
@@ -341,7 +332,6 @@ ${button(ctaLabel, ctaHref, 'w-full')}
 </div></aside>
 </div>
 ${shell.match(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/section>/)[0]}
-${mobileBar(ctaLabel, ctaHref)}
 </main>`
 
   const ld = [
