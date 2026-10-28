@@ -106,6 +106,7 @@ Because the color runs through, scratches and gouges can be sanded out, which Bo
 1. One solid HDPE sheet, no separate core
 2. Color runs through the faces
 3. Rounded edge
+
 **Check the fire rating.** HDPE burns differently from the other materials, so the model codes treat it differently. Bobrick's code summary explains that the IBC, the International Fire Code, NFPA 101 and NFPA 1 regulate toilet partitions as interior finish, and require HDPE and polypropylene partitions to pass the NFPA 286 room-corner test. Other materials can be tested to ASTM E84 instead. In Bobrick's tests, untreated HDPE was unclassified under ASTM E84 because of its smoke development. Fire-rated HDPE is available: Scranton offers fire rating options on Hiny Hiders. If your building needs a rated partition, say so in your quote request, and ask for the test documentation.
 
 See colors on the [solid plastic (HDPE) partitions](/partitions/solid-plastic-hdpe) page.

@@ -691,6 +691,14 @@ made.push(detail('hinge-detail-cam', 'cam'), detail('hinge-detail-top-pin', 'top
 // edge, is drawn in ink: phenolic machined with a small chamfer on both arrises, HDPE rounded to a 1/4" radius (to
 // scale), laminate with a thin laminate layer sealing the core end, steel and stainless with a formed edge molding
 // that interlocks with the two face sheets.
+// Callout 1, the core: the orange leader runs to the bottom face; inside a solid orange core it continues as a white
+// line to the point (an orange line would vanish there). Steel cores are a light tint, so the leader runs straight in.
+const SOLID_CORE = new Set(['phenolic', 'solid-plastic', 'plastic-laminate'])
+const coreCallout = (kind, s, discY) => {
+  const [x, y] = s.pts.core
+  if (!SOLID_CORE.has(kind)) return callout(1, x, discY, s.pts.core)
+  return callout(1, x, discY, [x, s.y1 + 1]).replace(/<circle cx="[^"]+" cy="[^"]+" r="2.5"[^>]*\/>/, '') + line(x, s.y1 - 1, x, y, { stroke: '#fff', sw: 2 }) + `<circle cx="${x}" cy="${y}" r="2.5" fill="#fff"/>`
+}
 const MATERIALS = {
   phenolic: { name: 'Phenolic (compact laminate)', t: 0.75, dim: '3/4"', src: 'Bobrick DuraLine, Bradley PH400' },
   'solid-plastic': { name: 'Solid plastic (HDPE)', t: 1, dim: '1"', src: 'Scranton Products Hiny Hiders' },
@@ -747,6 +755,17 @@ function matSection(kind, x0, y0, len, k) {
     for (let x = x0 - 10; x < r - hook - 4; x += n++ % 2 ? cell : 3) d += `M${x.toFixed(1)} ${y0 + skin} V${y1 - skin}`
     g += `<path d="${d}" fill="none" stroke="${C.orange}" stroke-width="2"/>`
     g += rect(x0 - 10, y0, r - x0 + 10, skin, { fill: C.ink, stroke: 'none' }) + rect(x0 - 10, y1 - skin, r - x0 + 10, skin, { fill: C.ink, stroke: 'none' }) // face sheets
+    if (kind === 'powder-coated-steel') {
+      // the powder coat: a separate layer wrapping the outside of both faces and the edge molding
+      const c = k < 50 ? 2.5 : 5
+      over += `<path d="M${x0} ${y0 - c / 2} H${x1 + c / 2} V${y1 + c / 2} H${x0}" fill="none" stroke="${C.muted}" stroke-opacity=".55" stroke-width="${c}" stroke-linejoin="round"/>`
+      pts.face = [x0 + len * 0.55, y0 - c / 2]
+    } else {
+      // uncoated stainless with a textured (embossed) finish: both face sheets ripple along their length
+      const p = k < 50 ? 7 : 12, a = k < 50 ? 1.5 : 2.6
+      const wave = (y, dir) => { let d = `M${x0 - 10} ${y}`; for (let x = x0 - 10; x < r; x += p) d += ` q${p / 4} ${-a * dir} ${p / 2} 0 t${p / 2} 0`; return d }
+      g += `<path d="${wave(y0 + a, 1)} ${wave(y1 - a, -1)}" fill="none" stroke="${C.ink}" stroke-width="${skin}"/>`
+    }
     const sw = k < 50 ? 1.5 : 2
     // face sheets turned in at the joint
     over += `<path d="M${r - sw / 2} ${y0 + skin} V${y0 + skin + h} M${r - sw / 2} ${y1 - skin} V${y1 - skin - h}" fill="none" stroke="${C.ink}" stroke-width="${sw}"/>`
@@ -764,8 +783,8 @@ function matSection(kind, x0, y0, len, k) {
     phenolic: 'A phenolic (compact laminate) door cut through near its edge: layers of resin-impregnated kraft paper fused into one solid core, with decorative melamine faces. The edge is the fused sheet itself, machined smooth with a small chamfer on both corners; it is black, or matches the face color on color-through lines. Doors are 3/4 inch thick.',
     'solid-plastic': 'A solid plastic (HDPE) door cut through near its edge: one homogeneous sheet of high-density polyethylene, with no separate core, faces or edge band, and the color running all the way through. The edge is rounded to about a 1/4 inch radius. 1 inch thick.',
     'plastic-laminate': 'A plastic laminate door cut through near its edge: a resin-impregnated particleboard core with high-pressure laminate bonded to both faces, and a thin laminate layer covering the edge so the core is sealed all round. 1 inch thick.',
-    'powder-coated-steel': 'A powder coated steel door cut through near its edge: two galvannealed steel face sheets, powder coated, over a honeycomb core. The edge is a formed steel molding that interlocks with the turned-in ends of both face sheets. 1 inch thick.',
-    'stainless-steel': 'A stainless steel door cut through near its edge: two type 304 stainless steel face sheets over a honeycomb core. The edge is a formed stainless molding that interlocks with the turned-in ends of both face sheets. 1 inch thick.',
+    'powder-coated-steel': 'A powder coated steel door cut through near its edge: two galvannealed steel face sheets, each with a powder coat on the outside, over a honeycomb core. The edge is a formed steel molding that interlocks with the turned-in ends of both face sheets. 1 inch thick.',
+    'stainless-steel': 'A stainless steel door cut through near its edge: two type 304 stainless steel face sheets, uncoated and shown with a textured finish, over a honeycomb core. The edge is a formed stainless molding that interlocks with the turned-in ends of both face sheets. 1 inch thick.',
   }
   // 780 wide, shown at its real size in the content column; 150 px per inch
   const k = 150, x0 = 120, y0 = 70, len = 470
@@ -773,7 +792,7 @@ function matSection(kind, x0, y0, len, k) {
     const m = MATERIALS[kind], s = matSection(kind, x0, y0, len, k)
     let b = s.body
     b += callout(2, s.pts.face[0], 34, s.pts.face) + callout(3, s.x1 + 34, s.pts.edge[1], s.pts.edge)
-    b += callout(1, s.pts.core[0], s.y1 + 42, s.pts.core) + `<circle cx="${s.pts.core[0]}" cy="${s.pts.core[1]}" r="5" fill="${C.orange}" stroke="#fff" stroke-width="2"/>`
+    b += coreCallout(kind, s, s.y1 + 42)
     if (m.dim) b += vdim(s.x1 + 72, y0, s.y1, m.dim)
     b += note(x0 - 10, s.y1 + 84, 'Edge view: a door cut through near its edge. Faces and edge not to scale.', 'start', 13)
     made.push(svg(`material-section-${kind}`, 780, Math.round(s.y1 + 112), `${m.name} partition door, edge view`, desc[kind], b))
@@ -1119,7 +1138,7 @@ withPhone(1, () => {
     const m = MATERIALS[kind], sct = matSection(kind, x0, y0, len, k)
     let b = sct.body
     b += callout(2, sct.pts.face[0], 20, sct.pts.face) + callout(3, sct.x1 + 28, sct.pts.edge[1], sct.pts.edge)
-    b += callout(1, sct.pts.core[0], sct.y1 + 32, sct.pts.core) + `<circle cx="${sct.pts.core[0]}" cy="${sct.pts.core[1]}" r="5" fill="${C.orange}" stroke="#fff" stroke-width="2"/>`
+    b += coreCallout(kind, sct, sct.y1 + 32)
     if (m.dim) withPhone(1, () => { b += vdim(sct.x1 + 56, y0, sct.y1, m.dim) })
     phone(`material-section-${kind}-m`, sct.y1 + 54, b)
   }
