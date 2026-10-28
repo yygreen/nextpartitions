@@ -440,23 +440,26 @@ const noteLines = (x, y, lines) => lines.map((t, i) => note(x, gridY(y) + i * GR
 
 // Side view through a stall: looking at a dividing panel, front (pilaster) on the left as on Bradley's sheet,
 // back wall on the right. Labels on the left, by the front; heights to the right of the back wall.
-function side(name, style) {
-  const s = 1.65, x0 = 196, depth = LAYOUT.depth, wt = 14
-  const floor = 194, wallH = style === 'ch' ? 112 : 100
+// wide: the full-width desktop drawing (780 wide, larger scale, more of the aisle in front of the stall); without
+// it, the compact 400 x 250 version used on phones.
+function side(name, style, wide) {
+  const s = wide ? 2.4 : 1.65, x0 = wide ? 470 : 196, depth = LAYOUT.depth, wt = wide ? 18 : 14
+  const floor = wide ? 296 : 194, wallH = style === 'ch' ? 112 : 100
+  const W = wide ? 780 : SV.w, H = wide ? 360 : SV.h, aisle = wide ? 380 : 26
   const Y = (i) => floor - i * s, X = (i) => x0 + i * s
   const pil = { ob: [1, 82], fm: [1, 70], ch: [12, 95], ftc: [0, 96] }[style]
   const ceil = style === 'ch' || style === 'ftc'
-  let b = rect(x0 - 26, floor, X(depth) + wt - x0 + 26, 12, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 26, floor, X(depth) + wt, floor)
+  let b = rect(x0 - aisle, floor, X(depth) + wt - x0 + aisle, 12, { fill: 'HATCH', stroke: 'none' }) + line(x0 - aisle, floor, X(depth) + wt, floor)
   b += rect(X(depth), Y(wallH), wt, wallH * s, { fill: 'HATCH', stroke: 'none' }) + line(X(depth), Y(wallH), X(depth), floor)
-  if (ceil) b += line(x0 - 26, Y(96), X(depth), Y(96))
-  if (style === 'ch') b += rect(x0 - 26, Y(110), depth * s + 26, 14 * s - 2, { fill: 'HATCH', stroke: 'none' }) + rect(X(-1), Y(105), 6 * s, 3 * s, { fill: C.orange, stroke: C.orange }) + line(X(1.5), Y(102), X(1.5), Y(96), { stroke: C.orange, sw: 2.5 })
+  if (ceil) b += line(x0 - aisle, Y(96), X(depth), Y(96))
+  if (style === 'ch') b += rect(x0 - aisle, Y(110), depth * s + aisle, 14 * s - 2, { fill: 'HATCH', stroke: 'none' }) + rect(X(-1), Y(105), 6 * s, 3 * s, { fill: C.orange, stroke: C.orange }) + line(X(1.5), Y(102), X(1.5), Y(96), { stroke: C.orange, sw: 2.5 })
   b += rect(X(0), Y(pil[1]), 1.25 * s + 2, (pil[1] - pil[0]) * s)                 // pilaster, edge on
   b += rect(X(1.5), Y(70), (depth - 2.2) * s, 58 * s)                              // panel
   for (const h of [64, 18]) b += rect(X(1.5), Y(h), 2 * s, 4, { fill: C.ink, stroke: 'none' }) + rect(X(depth - 2.6), Y(h), 2 * s, 4, { fill: C.ink, stroke: 'none' }) // brackets
   if (style === 'ob') b += rect(X(-0.6), Y(82), 3 * s, 2 * s, { fill: C.orange, stroke: C.orange })
   if (style !== 'ch') b += rect(X(-0.6), Y(4), 1.25 * s + 6, 4 * s, { fill: C.orange, stroke: C.orange })
   if (style === 'ftc') b += rect(X(-0.6), Y(96), 1.25 * s + 6, 3 * s, { fill: C.orange, stroke: C.orange })
-  b += hdim(floor + 44, X(0), X(depth), '61-1/4" to face')
+  b += hdim(floor + (wide ? 50 : 44), X(0), X(depth), '61-1/4" to face')
   b += vdim(X(depth) + wt + 12, Y(70), Y(12), '58"') + vdim(X(depth) + wt + 12, Y(12), Y(0), '12"')
   b += text(X(depth) + wt + 8, Y(wallH) + 14, 'back wall', { size: 13, fill: C.muted })
   // labels, left of the front: what each part is
@@ -469,8 +472,8 @@ function side(name, style) {
   if (style !== 'ch') L.push({ t: style === 'fm' ? ['shoe, anchored', 'to floor'] : 'shoe', to: [X(-0.6), Y(2)] })
   if (style === 'ftc') L.push({ t: 'ceiling anchor', to: [X(-0.6), Y(94.5)] })
   if (style === 'ch') L.push({ t: 'steel above ceiling', to: [X(-1), Y(103.5)] }, { t: 'hanger', to: [X(1.5), Y(99)] })
-  b += labelColumn(L, { x: x0 - 46, side: 'left', hi: SV.h - 14 }).svg
-  return svg(name, SV.w, SV.h, 'Side view through a toilet compartment',
+  b += labelColumn(L, { x: x0 - (wide ? 56 : 46), side: 'left', lo: wide && ceil ? gridY(Y(96) + 24) : ROW0, hi: H - 14 }).svg
+  return svg(name, W, H, 'Side view through a toilet compartment',
     'Looking at a dividing panel from inside the stall: the pilaster at the front, the panel 58 inches high and 12 inches above the floor held by brackets at the pilaster and the back wall, 61-1/4 inches to the face.', b)
 }
 
@@ -657,10 +660,11 @@ const planName = plan('sheet-plan')
 plan('sheet-plan-m', true)
 for (const [name, [style, dets]] of Object.entries(STYLES)) {
   front(`${name}-front-m`, style, true)
+  side(`${name}-side-m`, style)
   sheets[name] = [
     { file: `${planName}.svg`, label: 'Plan', wide: true },
     { file: `${front(`${name}-front`, style)}.svg`, label: 'Front elevation', wide: true },
-    { file: `${side(`${name}-side`, style)}.svg`, label: 'Side view' },
+    { file: `${side(`${name}-side`, style, true)}.svg`, label: 'Side view', wide: true },
     ...dets.map((d, i) => ({ file: `${detail(`${name}-detail-${d}`, d)}.svg`, label: `Detail ${String.fromCharCode(65 + i)}`, wide: true })),
   ]
 }
