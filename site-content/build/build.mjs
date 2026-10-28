@@ -6,7 +6,7 @@
 // the preview; every other link goes to the live site.
 //
 //   cd site-content/build && npm install && npm run build    → open ../preview/index.html
-import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
+import { cpSync, existsSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { marked } from 'marked'
 
 const SITE = 'https://nextpartitions.com'
@@ -437,19 +437,19 @@ ${shell.match(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/
 
 // The installer directory and job flow: the prototypes published as claude.ai artifacts (links in CLAUDE.md), in the
 // order a job moves through them. Listed on the preview index so the whole project sits behind one link.
-const P = 'https://claude.ai/artifact/'
+const P = 'installers/' // the design prototypes ship inside the preview (prototypes/linked, copied below)
 const INSTALLER_FLOW = [
-  ['Installer', 'Get listed: installer application', 'Why join, the checks to be Verified, and the six-step application ending with the listing agreement.', `${P}RYzFiXDAUfUj1UbYaaf5N5`],
-  ['Next Partitions (internal)', 'Installer vetting', 'The checklist with evidence per applicant, the timed test job, approve or reject.', `${P}5m6eiBdee8mbWGpusQiEF5`],
-  ['Customer', 'Texas installer hub', 'Search by city or ZIP, coverage map, area cards and the A–Z city index.', `${P}NgMp8WdWWpwAfKPSwaDV29`],
-  ['Customer', 'Dallas–Fort Worth area page', 'Configure your partitions first; the area\'s installers, map and FAQ below.', `${P}6dhxph55HK2cQ8L89RKUBc`],
-  ['Customer', 'Installer profile', 'One installer\'s profile, labels and reviews; "Get a quote with" opens the configurator. Samples: #acme, #northwind, #contoso, #fabrikam.', `${P}Wh2UPd1KDJ78JDQmZsySrN#acme`],
-  ['Customer', 'Configurator installation step', 'The optional installation step: installers stay anonymous, a count and a price range only. Designed, not switched on.', `${P}VSxudbJ4rsvR5bcDyU2xSs#dfw`],
-  ['Installer', 'Installer portal: price the job', 'The blind job packet (scope, drawings, city and ZIP, no customer details) and the installer\'s price.', `${P}32L7EWz37XztbenrBwUKBj#NP-DFW-1048`],
-  ['Next Partitions (internal)', 'Job coordination view', 'The same job from the Next Partitions side: prices in, flags, follow-ups. #NP-DFW-1052 shows a job with no installer prices yet.', `${P}32L7EWz37XztbenrBwUKBj#np`],
-  ['Customer', 'Customer\'s quote: approve, choose, pay', 'Approve the shop drawings, choose an installer, pay for the partitions. #searching shows the state while installers are still being lined up.', `${P}YJ7mS6GqUSktyydDMy8BDq#choose`],
-  ['Both', 'Emails along the way', 'The ten emails of the flow, from the quote range to the review request; 8–10 cover a job with no installer prices.', `${P}614jrzEpTZt1WMTuruh4BS#email-1`],
-  ['Customer', 'Review after the install', 'Only customers with a completed job can review; #used and #expired show the other states.', `${P}KVKguYuwNK7AJkXXRseaM8`],
+  ['Installer', 'Get listed: installer application', 'Why join, the checks to be Verified, and the six-step application ending with the listing agreement.', `${P}apply.html`],
+  ['Next Partitions (internal)', 'Installer vetting', 'The checklist with evidence per applicant, the timed test job, approve or reject.', `${P}vetting.html`],
+  ['Customer', 'Texas installer hub', 'Search by city or ZIP, coverage map, area cards and the A–Z city index.', `${P}texas.html`],
+  ['Customer', 'Dallas–Fort Worth area page', 'Configure your partitions first; the area\'s installers, map and FAQ below.', `${P}dfw.html`],
+  ['Customer', 'Installer profile', 'One installer\'s profile, labels and reviews; "Get a quote with" opens the configurator. Samples: #acme, #northwind, #contoso, #fabrikam.', `${P}profile.html#acme`],
+  ['Customer', 'Configurator installation step', 'The optional installation step: installers stay anonymous, a count and a price range only. Designed, not switched on.', `${P}configurator.html#dfw`],
+  ['Installer', 'Installer portal: price the job', 'The blind job packet (scope, drawings, city and ZIP, no customer details) and the installer\'s price.', `${P}portal.html#NP-DFW-1048`],
+  ['Next Partitions (internal)', 'Job coordination view', 'The same job from the Next Partitions side: prices in, flags, follow-ups. #NP-DFW-1052 shows a job with no installer prices yet.', `${P}portal.html#np`],
+  ['Customer', 'Customer\'s quote: approve, choose, pay', 'Approve the shop drawings, choose an installer, pay for the partitions. #searching shows the state while installers are still being lined up.', `${P}quote.html#choose`],
+  ['Both', 'Emails along the way', 'The ten emails of the flow, from the quote range to the review request; 8–10 cover a job with no installer prices.', `${P}emails.html#email-1`],
+  ['Customer', 'Review after the install', 'Only customers with a completed job can review; #used and #expired show the other states.', `${P}review.html`],
 ]
 
 const files = readdirSync(PAGES).filter((f) => f.endsWith('.md')).sort()
@@ -461,6 +461,15 @@ const before = (url) => {
     return t.split('\n').slice(3).join(' ').split(/\s+/).filter(Boolean).length
   } catch { return null }
 }
+// The working prototype (directory/app: npm run preview:build writes dist-preview/artifact/) ships under app/.
+if (existsSync('../../directory/app/dist-preview/artifact/index.html')) { rmSync(`${OUT}/app`, { recursive: true, force: true }); cpSync('../../directory/app/dist-preview/artifact', `${OUT}/app`, { recursive: true })
+  // its start page is a fragment the artifact skeleton used to wrap; as a page inside the preview it needs its own doctype
+  for (const f of readdirSync(`${OUT}/app`).filter((x) => x.endsWith('.html'))) {
+    const h = readFileSync(`${OUT}/app/${f}`, 'utf8')
+    if (!/^\s*<!doctype/i.test(h)) writeFileSync(`${OUT}/app/${f}`, `<!doctype html>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n${h}`)
+  }
+}
+if (existsSync('../../prototypes/linked/index.html')) { rmSync(`${OUT}/installers`, { recursive: true, force: true }); cpSync('../../prototypes/linked', `${OUT}/installers`, { recursive: true }) }
 writeFileSync(`${OUT}/index.html`, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Next Partitions Content Preview</title><meta name="robots" content="noindex"><style>${CSS}.np-flow-n{flex:0 0 28px;height:28px;border-radius:50%;background:#fe7802;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}</style></head>
 <body class="bg-background text-foreground"><div class="max-w-3xl mx-auto px-4 py-10">
 <h1 class="text-3xl font-bold mb-2">New page content for nextpartitions.com</h1>
@@ -472,8 +481,10 @@ ${rows.map((r) => { const b = before(r.url); return `<tr><td class="p-3"><a clas
 <section id="installers" class="mt-12 pt-8 border-t border-border">
 <h2 class="text-2xl font-bold mb-2">Installer pages and job flow</h2>
 <p class="text-muted-foreground mb-4">The installer directory, kept apart from the main site, and the job flow behind it: how an installer gets listed, how a customer finds one, how a job is priced, chosen and installed, and how it's reviewed. Clickable prototypes; every installer, rate, review and photo in them is a fictional sample, and Dallas–Fort Worth is the example area.</p>
-<div class="border border-border rounded-lg p-5 mb-6 bg-accent/50"><p class="font-semibold mb-1">Start here: the working prototype</p><p class="text-sm text-muted-foreground mb-3">The whole flow as one app with shared sample data, so one job can be followed from the installer's price to the customer's choice to the install date.</p>${button('Open the working prototype', 'https://claude.ai/artifact/28Jz9krwMovkrgjGw8XYFa')}<p class="text-sm text-muted-foreground mt-3">All design prototypes linked as one site: <a class="text-brand-red hover:underline font-medium" href="https://claude.ai/artifact/1EM6mvJkMTXTtfTNj5SrbQ" target="_blank" rel="noopener">open the design prototypes</a>.</p></div>
+<div class="border border-border rounded-lg p-5 mb-6 bg-accent/50"><p class="font-semibold mb-1">Start here: the working prototype</p><p class="text-sm text-muted-foreground mb-3">The whole flow as one app with shared sample data, so one job can be followed from the installer's price to the customer's choice to the install date.</p>${existsSync(`${OUT}/app/index.html`) ? button('Open the working prototype', 'app/index.html') : ''}<p class="text-sm text-muted-foreground mt-3">All design prototypes linked as one site: <a class="text-brand-red hover:underline font-medium" href="installers/index.html">open the design prototypes</a>.</p></div>
 <h3 class="text-lg font-bold mb-3">The flow, step by step</h3>
-<ol class="space-y-3 mb-4">${INSTALLER_FLOW.map(([who, title, text, url], i) => `<li class="border border-border rounded-lg p-4 flex gap-4 items-start"><span class="np-flow-n">${i + 1}</span><div class="min-w-0"><p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1">${who}</p><a class="text-brand-red hover:underline font-semibold" href="${url}" target="_blank" rel="noopener">${esc(title)}</a><p class="text-sm text-muted-foreground mt-1">${text}</p></div></li>`).join('')}</ol>
+<ol class="space-y-3 mb-4" style="list-style:none;padding:0">${INSTALLER_FLOW.map(([who, title, text, url], i) => `<li class="border border-border rounded-lg p-4 flex gap-4 items-start"><span class="np-flow-n">${i + 1}</span><div class="min-w-0"><p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1">${who}</p><a class="text-brand-red hover:underline font-semibold" href="${url}">${esc(title)}</a><p class="text-sm text-muted-foreground mt-1">${text}</p></div></li>`).join('')}</ol>
 </section></div></body></html>`)
+// The installer prototypes (prototypes/build-linked.mjs writes prototypes/linked/) ship inside the preview under
+// installers/, so the flow links work for whoever can open the preview.
 console.log(`built ${rows.length} pages + index.html`)

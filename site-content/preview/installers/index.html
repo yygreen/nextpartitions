@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Next Partitions Prototypes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap">
+<style>
+:root{--bg:#fbfaf9;--surface:#fff;--fg:#1c0e05;--muted:#6d6059;--border:#e1ddd7;--accent:#e8630a;--accent-strong:#c95200;--ink:#262626}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Inter,system-ui,sans-serif}
+.top{background:var(--ink);color:#fff}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.top .wrap{display:flex;align-items:center;gap:12px;height:68px}
+.top img{height:34px}
+.top b{font-size:18px}
+h1{font-size:clamp(30px,4vw,44px);font-weight:900;letter-spacing:-.03em;margin:36px 0 8px}
+.lead{color:var(--muted);max-width:62ch;margin:0 0 32px}
+h2{font-size:22px;font-weight:900;letter-spacing:-.02em;margin:0 0 4px}
+.zone{background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--accent);padding:22px;margin:0 0 20px}
+.zone.dir{border-top-color:var(--ink)}
+.zone p.note{color:var(--muted);margin:0 0 16px;font-size:15px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.cards a{display:block;border:1px solid var(--border);padding:14px 16px;text-decoration:none;color:inherit}
+.cards a:hover{border-color:var(--accent);background:#fdeee3}
+.cards b{display:block;font-size:17px}
+.cards span{font-size:14px;color:var(--muted)}
+.fine{font-size:13px;color:var(--muted);margin:24px 0 48px}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><img src="img/logo.png" alt=""><b>Next Partitions · prototypes</b></div></div>
+<main class="wrap">
+  <h1>Clickable prototypes</h1>
+  <p class="lead">Two separate parts. The main site is built to sell: it never links to the installer directory, so nobody strays from the configurator or checkout. The directory lives in its own section or subdomain and feeds customers back into the configurator.</p>
+
+  <section class="zone">
+    <h2>Main site · nextpartitions.com</h2>
+    <p class="note">Buying only: price it yourself, send plans, or shop the catalogue.</p>
+    <div class="cards">
+      <a href="home.html"><b>Homepage</b><span>Three ways in: configurator, send plans, shop the catalogue</span></a>
+      <a href="configurator.html#dfw"><b>Configurator: installation step</b><span>Optional step; installers anonymous, count and price range only</span></a>
+    </div>
+  </section>
+
+  <section class="zone dir">
+    <h2>Installer directory · separate section (e.g. installers.nextpartitions.com)</h2>
+    <p class="note">Reached from search and from the configurator, not from the homepage. Every page starts with pricing partitions.</p>
+    <div class="cards">
+      <a href="texas.html"><b>Texas hub</b><span>Coverage map, area cards, city index</span></a>
+      <a href="dfw.html"><b>Dallas–Fort Worth</b><span>Price your restroom, installers, service areas, local prices</span></a>
+      <a href="profile.html#acme"><b>Installer profile</b><span>What we checked, reviews, rates, price with this installer</span></a>
+      <a href="quote.html"><b>Customer's quote</b><span>Approve drawings, choose an installer, pay for the partitions order</span></a>
+      <a href="review.html"><b>Review form</b><span>Only for customers with a completed job; published unedited</span></a>
+      <a href="apply.html"><b>Get listed (installers)</b><span>Application: business, documents, references, rates, listing agreement</span></a>
+    </div>
+  </section>
+  <section class="zone">
+    <h2>Behind the scenes · login only</h2>
+    <p class="note">Where installers price jobs and Next Partitions runs the middle. Not public, not indexed.</p>
+    <div class="cards">
+      <a href="portal.html"><b>Installer portal</b><span>Job packet without customer details, confirm your price, messages through us, schedule and mark installed</span></a>
+      <a href="portal.html#np"><b>Same job, Next Partitions view</b><span>Every installer's reply and price, then the options the customer sees</span></a>
+      <a href="vetting.html"><b>Installer vetting</b><span>The Approved checklist per applicant, then approve or reject</span></a>
+      <a href="emails.html"><b>Email copy</b><span>Quote range, job request, options ready, chosen, released, review request</span></a>
+    </div>
+  </section>
+  <p class="fine">All installers, rates, reviews and photos are fictional samples. <b>[Coordinator name]</b> marks the Next Partitions job coordinator, a role nobody holds yet: Abe decides who does it.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Installation Review</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<style>
+/* Review form reached from the review-request email (one-time link). Light-only, nextpartitions.com tokens. */
+:root{
+  --bg:#fbfaf9; --band:#f4f2ee; --surface:#ffffff; --fg:#1c0e05; --muted:#6d6059;
+  --border:#e1ddd7; --accent:#e8630a; --accent-strong:#c95200; --accent-soft:#fdeee3; --on-accent:#ffffff;
+  --good:#1f7a4d; --good-soft:#e6f3ec; --warn:#8a5a00; --warn-soft:#fff3c4; --bad:#b42318;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mocknote{background:#fff3c4;border-bottom:1px solid #f0d98a;font-size:13px;color:#5c4400;padding:8px 16px;display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:center;align-items:center}
+.mocknote .seg{display:inline-flex;border:1px solid #d9bf6a;background:#fff}
+.mocknote .seg button{font:inherit;font-size:13px;font-weight:600;border:0;background:none;padding:4px 10px;cursor:pointer;color:#5c4400}
+.mocknote .seg button[aria-pressed="true"]{background:#5c4400;color:#fff}
+.phd{background:var(--surface);border-bottom:1px solid var(--border)}
+.phd .in{max-width:720px;margin:0 auto;padding:0 16px;min-height:64px;display:flex;align-items:center}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:36px;width:auto}
+.brand b{display:block;font-size:18px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+main{max-width:720px;margin:0 auto;padding:28px 16px 64px}
+h1{font-size:clamp(26px,4vw,34px);font-weight:900;letter-spacing:-.025em;line-height:1.1;margin:0 0 6px}
+.lead{color:var(--muted);margin:0 0 20px}
+.job{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:var(--muted);background:var(--surface);border:1px solid var(--border);padding:12px 14px;margin-bottom:20px}
+.job b{color:var(--fg)}
+.card{background:var(--surface);border:1px solid var(--border);padding:20px 22px;margin-bottom:16px}
+.card h2{font-size:17px;font-weight:800;margin:0 0 4px}
+.card .q{margin:0 0 14px;color:var(--muted);font-size:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--on-accent);font:inherit;font-weight:700;font-size:16px;padding:12px 22px;min-height:48px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--accent-strong)}
+.btn.ghost{background:var(--surface);color:var(--accent-strong);border:2px solid var(--accent)}
+.link{font:inherit;background:none;border:0;padding:0;color:var(--accent-strong);font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+/* stars: radio group, big targets */
+.stars{display:flex;gap:6px;border:0;margin:0;padding:0}
+.stars legend{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.stars input{position:absolute;opacity:0;width:1px;height:1px}
+.stars label{width:52px;height:52px;display:grid;place-items:center;font-size:34px;line-height:1;color:#d6d0c9;cursor:pointer;border:1px solid var(--border);background:var(--surface)}
+.stars label.on{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
+.stars input:focus-visible+label{outline:2px solid var(--accent);outline-offset:2px}
+.stars.sm label{width:42px;height:42px;font-size:26px}
+.rlabel{font-size:14px;font-weight:700;margin-top:8px;min-height:21px}
+.checks{display:grid;gap:10px}
+.crow{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;font-size:15px}
+.yn{display:inline-flex;gap:6px}
+.yn button{font:inherit;font-size:14px;font-weight:600;min-height:40px;min-width:64px;border:1px solid var(--border);background:var(--surface);cursor:pointer}
+.yn button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-strong);box-shadow:inset 0 0 0 1px var(--accent)}
+.field{display:grid;gap:6px;font-size:14px;font-weight:700;margin-top:14px}
+.field textarea,.field input[type=text]{font:inherit;font-weight:400;border:1px solid var(--border);padding:10px 12px;background:#fff;width:100%}
+.field small{font-weight:400;color:var(--muted)}
+.drop{display:grid;gap:4px;border:2px dashed var(--border);padding:14px;background:var(--band);cursor:pointer;font-weight:400}
+.drop input{font:inherit;font-size:14px;max-width:100%}
+.priv{background:var(--band)}
+.priv .tag{display:inline-block;font-size:12px;font-weight:700;background:var(--surface);border:1px solid var(--border);padding:2px 8px;margin-left:6px;vertical-align:middle}
+.rules{font-size:13px;color:var(--muted);margin:12px 0 0;padding-left:18px}
+.rules li{margin:2px 0}
+.err{color:var(--bad);font-size:14px;font-weight:600;margin:10px 0 0}
+.err:empty{display:none}
+.actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:8px}
+/* thank-you */
+.ok{background:var(--good-soft);border:1px solid #b9dcc8;color:#14532d;padding:14px 16px;margin-bottom:16px}
+.ok b{display:block;font-size:17px}
+.flag{background:var(--warn-soft);border:1px solid #f0d98a;color:#5c4400;padding:14px 16px;margin-bottom:16px}
+.preview{border:1px solid var(--border);background:var(--surface);padding:16px}
+.preview .st{color:var(--accent);font-size:18px;letter-spacing:2px}
+.preview .meta{font-size:13px;color:var(--muted);margin:4px 0 8px}
+.preview p{margin:0 0 8px}
+.preview .chk{display:flex;flex-wrap:wrap;gap:6px;font-size:12px}
+.preview .chk span{border:1px solid var(--border);background:var(--band);padding:2px 8px}
+.preview img{max-height:140px;margin-top:8px}
+.state{text-align:center;padding:36px 22px}
+.state .ic{font-size:34px;margin-bottom:8px}
+.state h1{font-size:26px}
+.foot{font-size:13px;color:var(--muted);text-align:center;margin-top:28px}
+@media (max-width:420px){.stars label{width:48px;height:48px;font-size:30px}.stars{gap:4px}.card{padding:16px}}
+</style>
+</head>
+<body>
+
+<div class="mocknote"><span><b>Mockup:</b> the review page from the review-request email. Job, customer and installer are fictional samples.</span>
+  <span>Link state <span class="seg" role="group" aria-label="Link state"><button type="button" data-state="ok" aria-pressed="true">Valid link</button><button type="button" data-state="used" aria-pressed="false">Already used</button><button type="button" data-state="expired" aria-pressed="false">Expired</button></span></span></div>
+
+<header class="phd"><div class="in"><a class="brand" href="home.html"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Customer review</small></span></a></div></header>
+
+<main>
+  <!-- FORM -->
+  <section id="formView">
+    <h1>How did the installation go?</h1>
+    <p class="lead">Your review helps other schools and businesses pick an installer, and helps us keep the list honest.</p>
+    <div class="job"><span>Installer <b>Acme Partition Installs</b></span><span>Job <b>NP-DFW-1048</b></span><span>Installed <b>Nov 16, 2026</b></span><span><b>Plano, TX</b></span></div>
+
+    <form id="rv" novalidate>
+      <div class="card">
+        <h2 id="starH">Overall, how would you rate Acme?</h2>
+        <p class="q">Tap a star. 1 is poor, 5 is excellent.</p>
+        <fieldset class="stars" id="stars" aria-labelledby="starH"><legend>Overall rating for Acme Partition Installs</legend></fieldset>
+        <p class="rlabel" id="rlabel" aria-live="polite"></p>
+      </div>
+
+      <div class="card">
+        <h2>Quick checks</h2>
+        <p class="q">Optional. One tap each.</p>
+        <div class="checks" id="checks"></div>
+      </div>
+
+      <div class="card">
+        <h2>Your review <span style="font-weight:500;color:var(--muted);font-size:14px">(optional)</span></h2>
+        <label class="field">What should others know?<textarea id="text" rows="5" placeholder="What went well, what didn't? For example: did they finish on the day agreed, how did the stalls line up, how was cleanup?"></textarea></label>
+        <label class="field">Photos of the finished restroom <small>Optional. Leave out people and anything private.</small>
+          <span class="drop"><input type="file" id="photo" accept="image/*" multiple></span></label>
+        <label class="field">Name shown with your review<input type="text" id="name" value="Pat L., Plano ISD" autocomplete="off"><small>Shown as typed. Your email is never published.</small></label>
+        <ul class="rules">
+          <li>Reviews are published unedited, good or bad. Acme can reply publicly.</li>
+          <li>Only customers with a completed job on a Next Partitions order can review.</li>
+        </ul>
+      </div>
+
+      <div class="card priv">
+        <h2 id="npH">How was Next Partitions? <span class="tag">Private, not published</span></h2>
+        <p class="q">Your quote, delivery and our coordination. Only our team sees this.</p>
+        <fieldset class="stars sm" id="npStars" aria-labelledby="npH"><legend>Rating for Next Partitions</legend></fieldset>
+        <label class="field">Anything we should do better?<textarea id="npText" rows="3"></textarea></label>
+      </div>
+
+      <p class="err" id="err" role="alert"></p>
+      <div class="actions"><button class="btn" type="submit">Publish my review</button><span style="font-size:13px;color:var(--muted)">Takes effect right away. You can't edit it later, but you can ask us to remove it.</span></div>
+    </form>
+  </section>
+
+  <!-- THANK YOU -->
+  <section id="thanksView" hidden>
+    <div class="ok" tabindex="-1" id="thanksH"><b>Thank you, your review is live.</b>It's on Acme's profile now. We've sent Acme a copy so they can reply.</div>
+    <div class="flag" id="lowFlag" hidden><b>Sorry it didn't go well.</b> Your Next Partitions job coordinator will contact you within 1 business day about what went wrong. Low ratings trigger a check of the installer's listing. Can't wait? Call 1-833-997-7489.</div>
+    <div class="card">
+      <h2>How it shows on Acme's profile</h2>
+      <div class="preview" id="preview"></div>
+    </div>
+    <p class="foot"><a class="link" href="profile.html#acme">See Acme's profile</a></p>
+  </section>
+
+  <!-- LINK USED / EXPIRED -->
+  <section id="usedView" class="card state" hidden>
+    <div class="ic" aria-hidden="true">✓</div>
+    <h1>You've already reviewed this job</h1>
+    <p class="lead">Each review link works once. To change or remove your review, email <a href="mailto:sales@nextpartitions.com">sales@nextpartitions.com</a> or call 1-833-997-7489.</p>
+  </section>
+  <section id="expiredView" class="card state" hidden>
+    <div class="ic" aria-hidden="true">⏱</div>
+    <h1>This review link has expired</h1>
+    <p class="lead">Review links last 60 days after the install. If you had a completed job with us and still want to leave a review, reply to the review email or call 1-833-997-7489 and we'll send a new link.</p>
+  </section>
+
+  <p class="foot">Next Partitions · Questions? 1-833-997-7489 · <a href="mailto:sales@nextpartitions.com">sales@nextpartitions.com</a></p>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const WORDS=["","Poor","Below expectations","OK","Good","Excellent"];
+const R={stars:0,np:0,checks:{}};
+function starGroup(el,key,name){
+  el.insertAdjacentHTML("beforeend",[1,2,3,4,5].map(n=>`<input type="radio" name="${name}" id="${name}${n}" value="${n}"><label for="${name}${n}" data-n="${n}" title="${n} star${n>1?"s":""}"><span aria-hidden="true">★</span><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">${n} star${n>1?"s":""}, ${WORDS[n]}</span></label>`).join(""));
+  const paint=v=>el.querySelectorAll("label").forEach(l=>l.classList.toggle("on",+l.dataset.n<=v));
+  el.querySelectorAll("input").forEach(i=>i.addEventListener("change",()=>{R[key]=+i.value;paint(R[key]);if(key==="stars"){$("rlabel").textContent=`${R.stars} of 5 · ${WORDS[R.stars]}`;$("err").textContent="";}}));
+  el.querySelectorAll("label").forEach(l=>{l.addEventListener("mouseenter",()=>paint(+l.dataset.n));l.addEventListener("mouseleave",()=>paint(R[key]));});
+}
+starGroup($("stars"),"stars","rate"); starGroup($("npStars"),"np","nprate");
+const CHECKS=[["time","Finished on the day agreed?"],["clean","Left the site clean?"],["drawn","Installed as shown on the drawings?"]];
+$("checks").innerHTML=CHECKS.map(([k,q])=>`<div class="crow"><span id="c-${k}">${q}</span><span class="yn" role="group" aria-labelledby="c-${k}"><button type="button" data-k="${k}" data-v="yes" aria-pressed="false">Yes</button><button type="button" data-k="${k}" data-v="no" aria-pressed="false">No</button></span></div>`).join("");
+$("checks").querySelectorAll("[data-k]").forEach(b=>b.onclick=()=>{const on=b.getAttribute("aria-pressed")!=="true";
+  b.parentNode.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed","false"));b.setAttribute("aria-pressed",String(on));R.checks[b.dataset.k]=on?b.dataset.v:undefined;});
+
+$("rv").addEventListener("submit",e=>{e.preventDefault();
+  if(!R.stars){$("err").textContent="Pick a star rating to publish your review.";$("rate1").focus();return;}
+  const name=$("name").value.trim()||"Verified customer", text=$("text").value.trim();
+  const labels={time:"On time",clean:"Clean site",drawn:"Installed as drawn"};
+  const chk=Object.entries(R.checks).filter(([,v])=>v).map(([k,v])=>`<span>${v==="yes"?"✓":"✗"} ${labels[k]}</span>`).join("");
+  const f=$("photo").files[0];
+  $("preview").innerHTML=`<div class="st" aria-label="${R.stars} out of 5">${"★".repeat(R.stars)}<span style="color:#d6d0c9">${"★".repeat(5-R.stars)}</span></div>
+    <p class="meta"><b style="color:var(--fg)">${esc(name)}</b> · Verified Next Partitions customer · Plano, TX · Nov 2026</p>
+    ${text?`<p>${esc(text)}</p>`:`<p style="color:var(--muted)">(Rating only, no written review)</p>`}${chk?`<div class="chk">${chk}</div>`:""}${f?`<img alt="Photo from ${esc(name)}" id="pv">`:""}`;
+  if(f){const r=new FileReader();r.onload=()=>{const i=$("pv");if(i)i.src=r.result;};r.readAsDataURL(f);}
+  $("lowFlag").hidden=R.stars>3;
+  $("formView").hidden=true;$("thanksView").hidden=false;window.scrollTo(0,0);$("thanksH").focus();
+});
+
+function setState(s){document.querySelectorAll("[data-state]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.state===s)));
+  const thanks=!$("thanksView").hidden&&s==="ok";
+  $("formView").hidden=s!=="ok"||thanks; $("usedView").hidden=s!=="used"; $("expiredView").hidden=s!=="expired"; if(s!=="ok")$("thanksView").hidden=true;}
+document.querySelectorAll("[data-state]").forEach(b=>b.onclick=()=>setState(b.dataset.state));
+function fromHash(){const h=location.hash.slice(1);if(h==="used"||h==="expired"||h==="ok")setState(h);}
+addEventListener("hashchange",fromHash); fromHash();
+</script>
+</body>
+</html>
