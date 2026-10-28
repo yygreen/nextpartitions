@@ -1,6 +1,6 @@
-// Scene builder: two standard toilet compartments between side walls, in inches (1 unit = 1").
-// Axes: x along the row from the left wall's face, y up from the finished floor, z toward the viewer with the
-// pilaster faces at z = 0 and the back wall at z = -depth. All partition dimensions arrive in `spec`
+// Scene builder: the front-elevation row of toilet compartments (one accessible, three standard) between side walls,
+// in inches (1 unit = 1"). Axes: x along the row from the left wall's face, y up from the finished floor, z toward
+// the viewer with the pilaster faces at z = 0 and the back wall at z = -depth. All partition dimensions arrive in `spec`
 // (see dims.mjs: they are read from design/diagrams.mjs), so nothing here hard-codes a partition size.
 import * as THREE from 'three'
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js'
@@ -125,54 +125,107 @@ function materials(finish) {
 }
 
 // ---------- the room ----------
-// The two compartments fill an alcove (side walls at x = 0 and x = run, returning ROOM.ret" in front of the pilaster
-// faces); in front of it the restroom is wider, so the angle view has room to stand off to the entry side.
-function room(scene, spec, M, open = false) {
-  const { run, depth, ceiling } = spec
+// angle view: a restroom with the row in an alcove (side walls at x = 0 and x = run, returning ROOM.ret" in front of
+// the pilaster faces) and a finished 8' ceiling with downlights.
+function room(scene, spec, M) {
+  const { run, depth } = spec
+  const ceiling = spec.ceiling ?? 96
   const F = ROOM.front, O = ROOM.out, A = ROOM.ret
-  const { map, rough } = floorTextures()
-  const W = run + 2 * O, D = depth + F
-  // 24" tiles, grout lines on the alcove's left wall (O is a multiple of 24) and on the back wall (F + depth too)
-  map.repeat.set(W / (ROOM.tile * 4), D / (ROOM.tile * 4)); rough.repeat.copy(map.repeat)
-  const floorMat = new THREE.MeshPhysicalMaterial({ map, roughnessMap: rough, roughness: 1, color: '#ffffff', clearcoat: 0.3, clearcoatRoughness: 0.4, envMapIntensity: 0.5 })
-  const floor = new THREE.Mesh(new THREE.PlaneGeometry(W, D), floorMat)
-  floor.rotation.x = -Math.PI / 2; floor.position.set(run / 2, 0, (F - depth) / 2); floor.receiveShadow = true
-  scene.add(floor)
+  floorPlane(scene, -O, run + O, -depth, F)
   const wallBox = (x0, x1, y0, y1, z0, z1, mat = M.wall) => { const b = box(mat, x0, x1, y0, y1, z0, z1); scene.add(b); return b }
   const top = ceiling + 30
   wallBox(-O - 6, run + O + 6, -1, top, -depth - 6, -depth) // back wall
   wallBox(-O, 0, -1, top, -depth - 6, A)                     // left of the alcove
-  // right of the alcove; `open` (the angle view) leaves the row's right end free so its end panel shows
-  if (!open) wallBox(run, run + O, -1, top, -depth - 6, A)
+  wallBox(run, run + O, -1, top, -depth - 6, A)              // right of the alcove
   wallBox(-O - 6, -O, -1, top, -depth, F)                    // restroom side walls
   wallBox(run + O, run + O + 6, -1, top, -depth, F)
   wallBox(-O - 6, run + O + 6, -1, top, F, F + 6)            // behind the camera
   const ceil = box(M.ceiling, -O - 6, run + O + 6, ceiling, ceiling + 2, -depth - 6, F + 6)
   ceil.castShadow = false
   scene.add(ceil)
-  // painted base along the walls
   const base = new THREE.MeshStandardMaterial({ color: '#97a399', roughness: 0.8 })
   wallBox(0, run, 0, 4, -depth, -depth + 0.4, base)
   wallBox(0, 0.4, 0, 4, -depth, A, base)
-  if (!open) wallBox(run - 0.4, run, 0, 4, -depth, A, base)
+  wallBox(run - 0.4, run, 0, 4, -depth, A, base)
   wallBox(-O, 0.4, 0, 4, A, A + 0.4, base)
-  if (!open) wallBox(run - 0.4, run + O, 0, 4, A, A + 0.4, base)
-  else wallBox(run, run + O, 0, 4, -depth, -depth + 0.4, base)
-  // corner occlusion: soft ramps where the floor meets the walls
+  wallBox(run - 0.4, run + O, 0, 4, A, A + 0.4, base)
+  const S = occlusion(scene)
+  S.floorAlong(0, run, -depth); S.wallAlong(0, run, -depth)
+  S.floorAlong(-O, 0, A); S.wallAlong(-O, 0, A); S.floorAlong(run, run + O, A); S.wallAlong(run, run + O, A)
+  S.strip(run, 8, new THREE.Vector3(run / 2, ceiling - 4, -depth + 0.02), new THREE.Euler(0, 0, Math.PI), 0.3)
+  for (const [x, ry] of [[0.45, Math.PI / 2], [run - 0.45, -Math.PI / 2]]) {
+    S.strip(depth + A, 10, new THREE.Vector3(x, 5, (A - depth) / 2), new THREE.Euler(0, ry, 0))
+    S.strip(depth + A, 8, new THREE.Vector3(x, ceiling - 4, (A - depth) / 2), new THREE.Euler(0, ry, Math.PI), 0.3)
+  }
+  for (const x of [5, run - 5]) S.strip(10, depth + A, new THREE.Vector3(x, 0.02, (A - depth) / 2), new THREE.Euler(-Math.PI / 2, 0, 0), 1, rampH(x < run / 2))
+  S.strip(run, 26, new THREE.Vector3(run / 2, 0.025, -6), new THREE.Euler(-Math.PI / 2, 0, 0), 0.22, blobTex())
+  // downlights: a row in front of the alcove, one in each compartment
+  for (let x = -60; x <= run + 60; x += 42) downlight(scene, M, x, 22, ceiling)
+  for (const x of spec.toilets) downlight(scene, M, x, -depth / 2, ceiling)
+  for (let x = -40; x <= run + 40; x += 64) downlight(scene, M, x, 110, ceiling)
+}
+
+// front view: a section like the drawing. The building is cut on a plane ZC" in front of the pilasters: side walls
+// (the drawing's 22 px = 6-7/8"), floor slab (30 px = 9-3/8") and, where the style has one, the ceiling (and, for
+// ceiling hung, the plenum with the hanger steel and the structure above) show their cut faces in a flat warm grey,
+// like the drawing's hatched building. Outside the building the page is white.
+const ZC = 24
+function sectionRoom(scene, spec, M) {
+  const { run, depth, wallH, frame } = spec
+  const wt = frame.wt
+  const poche = new THREE.MeshBasicMaterial({ color: '#e7e2d9', toneMapped: false })
+  const cutBox = (x0, x1, y0, y1, z0, z1, side) => {
+    const m = new THREE.Mesh(new THREE.BoxGeometry(x1 - x0, y1 - y0, z1 - z0), [side, side, side, side, poche, side])
+    m.position.set((x0 + x1) / 2, (y0 + y1) / 2, (z0 + z1) / 2); m.castShadow = m.receiveShadow = true
+    scene.add(m); return m
+  }
+  floorPlane(scene, 0, run, -depth, ZC)
+  cutBox(-wt - 10 / frame.S, run + wt + 20 / frame.S, -frame.slab, 0, -depth - 6, ZC, M.wall) // slab, as front() draws it
+  cutBox(-wt, 0, 0, wallH, -depth - 6, ZC, M.wall)
+  cutBox(run, run + wt, 0, wallH, -depth - 6, ZC, M.wall)
+  const backTop = spec.ceiling ?? wallH
+  scene.add(box(M.wall, 0, run, 0, backTop, -depth - 6, -depth))
+  const base = new THREE.MeshStandardMaterial({ color: '#97a399', roughness: 0.8 })
+  scene.add(box(base, 0, run, 0, 4, -depth, -depth + 0.4))
+  const S = occlusion(scene)
+  S.floorAlong(0, run, -depth); S.wallAlong(0, run, -depth)
+  S.strip(run, 26, new THREE.Vector3(run / 2, 0.025, -6), new THREE.Euler(-Math.PI / 2, 0, 0), 0.22, blobTex())
+  if (spec.ceiling != null && !spec.plenum) {
+    // floor to ceiling: the drawing shows the ceiling line at 96" and the walls to 100": a solid ceiling cut
+    cutBox(0, run, spec.ceiling, wallH, -depth - 6, ZC, M.ceiling)
+    S.strip(run, 8, new THREE.Vector3(run / 2, spec.ceiling - 4, -depth + 0.02), new THREE.Euler(0, 0, Math.PI), 0.3)
+  }
+  if (spec.plenum) {
+    // ceiling hung: a 5/8" finished ceiling, the plenum above it (back wall in shadow, the steel and hanger rods),
+    // the structure at the drawing's plenum top
+    const c = spec.ceiling
+    cutBox(0, run, c, c + 0.625, -depth - 6, ZC, M.ceiling)
+    scene.add(box(new THREE.MeshStandardMaterial({ color: '#b3b8b2', roughness: 0.95, envMapIntensity: 0.5, emissive: '#3c3f3c' }), 0, run, c, spec.hanger.plenumTop, -depth - 6, -depth))
+    cutBox(0, run, spec.hanger.plenumTop, wallH, -depth - 6, ZC, M.ceiling)
+    S.strip(run, 8, new THREE.Vector3(run / 2, c - 4, -depth + 0.02), new THREE.Euler(0, 0, Math.PI), 0.3)
+  }
+}
+
+function floorPlane(scene, x0, x1, z0, z1) {
+  const { map, rough } = floorTextures()
+  const W = x1 - x0, D = z1 - z0
+  map.repeat.set(W / (ROOM.tile * 4), D / (ROOM.tile * 4)); rough.repeat.copy(map.repeat)
+  // joints on x = 0 and on the back wall
+  map.offset.set(((x0 % 96) + 96) % 96 / 96, 0); rough.offset.copy(map.offset)
+  const mat = new THREE.MeshPhysicalMaterial({ map, roughnessMap: rough, roughness: 1, color: '#ffffff', clearcoat: 0.3, clearcoatRoughness: 0.4, envMapIntensity: 0.5 })
+  const f = new THREE.Mesh(new THREE.PlaneGeometry(W, D), mat)
+  f.rotation.x = -Math.PI / 2; f.position.set((x0 + x1) / 2, 0, (z0 + z1) / 2); f.receiveShadow = true
+  scene.add(f)
+}
+
+function occlusion(scene) {
   const ramp = rampTex()
   const strip = (w, h, pos, rot, op = 1, tex = ramp) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), occMat(tex, op)); m.position.copy(pos); m.rotation.copy(rot); m.renderOrder = 2; scene.add(m) }
-  const floorAlong = (x0, x1, zWall) => strip(x1 - x0, 10, new THREE.Vector3((x0 + x1) / 2, 0.02, zWall + 5), new THREE.Euler(-Math.PI / 2, 0, Math.PI))
-  const wallAlong = (x0, x1, zWall) => strip(x1 - x0, 10, new THREE.Vector3((x0 + x1) / 2, 5, zWall + 0.45), new THREE.Euler(0, 0, 0), 0.55)
-  floorAlong(0, run, -depth); wallAlong(0, run, -depth)
-  floorAlong(-O, 0, A); wallAlong(-O, 0, A); if (open) { floorAlong(run, run + O, -depth); wallAlong(run, run + O, -depth) } else { floorAlong(run, run + O, A); wallAlong(run, run + O, A) }
-  strip(run, 8, new THREE.Vector3(run / 2, ceiling - 4, -depth + 0.02), new THREE.Euler(0, 0, Math.PI), 0.3)
-  for (const [x, ry] of [[0.45, Math.PI / 2], ...(open ? [] : [[run - 0.45, -Math.PI / 2]])]) {
-    strip(depth + A, 10, new THREE.Vector3(x, 5, (A - depth) / 2), new THREE.Euler(0, ry, 0))
-    strip(depth + A, 8, new THREE.Vector3(x, ceiling - 4, (A - depth) / 2), new THREE.Euler(0, ry, Math.PI), 0.3)
+  return {
+    strip,
+    floorAlong: (x0, x1, zWall) => strip(x1 - x0, 10, new THREE.Vector3((x0 + x1) / 2, 0.02, zWall + 5), new THREE.Euler(-Math.PI / 2, 0, Math.PI)),
+    wallAlong: (x0, x1, zWall) => strip(x1 - x0, 10, new THREE.Vector3((x0 + x1) / 2, 5, zWall + 0.45), new THREE.Euler(0, 0, 0), 0.55),
   }
-  for (const x of open ? [5] : [5, run - 5]) strip(10, depth + A, new THREE.Vector3(x, 0.02, (A - depth) / 2), new THREE.Euler(-Math.PI / 2, 0, 0), 1, rampH(x < run / 2))
-  // the compartments enclose the floor under them: a faint shade along the partition line
-  strip(run, 26, new THREE.Vector3(run / 2, 0.025, -6), new THREE.Euler(-Math.PI / 2, 0, 0), 0.22, blobTex())
 }
 const occMat = (map, opacity = 1) => new THREE.MeshBasicMaterial({ map, transparent: true, opacity, depthWrite: false, color: '#000000', polygonOffset: true, polygonOffsetFactor: -2 })
 // horizontal ramp for the floor strips along the side walls (dark at the wall side)
@@ -237,140 +290,160 @@ function toilet(scene, M, cx, depth) {
 }
 
 // ---------- the partitions ----------
-function partitions(scene, spec, M, open = false) {
+function partitions(scene, spec, M) {
   const { pilasters, doors, panels, door, panel, pil, depth, run } = spec
   const T = pil.t, zb = -T, zf = 0 // pilaster plane
   const E = 0.12 // edge radius: phenolic/solid plastic edges are eased
-  // pilasters (stiles)
   for (const p of pilasters) scene.add(box(M.panel, p.x, p.x + p.w, pil.y0, pil.y1, zb, zf, E))
-  // doors, in the pilaster plane, 1/8" clear of the pilasters each side
+  // doors in the pilaster plane, drawn like front(): from x + gap to x + w - gap
   const dz0 = -T / 2 - door.t / 2, dz1 = dz0 + door.t
   for (const d of doors) {
     const x0 = d.x + door.gap, x1 = d.x + d.w - door.gap
     scene.add(box(M.panel, x0, x1, door.y0, door.y1, dz0, dz1, E))
-    // wrap-around hinges on the left (hinge) edge: a leaf on the pilaster face and one on the door face, joined by
-    // the knuckle across the gap; the same on the inside
-    for (const [h0, h1] of spec.hinges) {
-      for (const [zz, s] of [[zf, 1], [zb, -1]]) {
-        scene.add(box(M.chrome, d.x - 1.1, d.x + 1.6, h0, h1, s > 0 ? zz : zz - 0.09, s > 0 ? zz + 0.09 : zz, 0.04))
+    if (d.out) {
+      // outswing (accessible) door: surface hinges across the hinge-side gap and a pull, all on this face
+      const { dx, w, h, tops } = spec.hinge
+      for (const t of tops) {
+        scene.add(box(M.chrome, x0 + dx, x0 + dx + w, t - h, t, dz1, zf + 0.1, 0.05))
+        const kn = new THREE.Mesh(new THREE.CylinderGeometry(0.24, 0.24, h, 20), M.chrome)
+        kn.position.set(d.x + door.gap / 2, t - h / 2, zf + 0.14); kn.castShadow = true; scene.add(kn)
       }
-      const kn = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.22, h1 - h0, 20), M.chrome)
-      kn.position.set(d.x, (h0 + h1) / 2, zf + 0.12); kn.castShadow = true; scene.add(kn)
+      const pl = spec.pull, px0 = d.x + d.w - pl.fromEdge
+      scene.add(box(M.chrome, px0, px0 + pl.w, pl.top - pl.h, pl.top, dz1 + 1.1, dz1 + 1.5, 0.12))
+      for (const y of [pl.top - 0.6, pl.top - pl.h + 0.6]) {
+        const st = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.22, 1.2, 16), M.chrome)
+        st.rotation.x = Math.PI / 2; st.position.set(px0 + pl.w / 2, y, dz1 + 0.6); scene.add(st)
+      }
+    } else {
+      // inswing doors: hinges on the inside face (not seen from the front, as in the drawing)
+      const { w, h, tops } = spec.hinge
+      for (const t of tops) scene.add(box(M.chrome, x0 - 1, x0 - 1 + w, t - h, t, zb - 0.1, dz0, 0.05))
     }
-    // latch side: an emergency-access indicator plate and a small pull, 4" from the latch edge at 40"
-    const lx = x1 - spec.latch.fromEdge, ly = spec.latch.y
-    scene.add(box(M.chrome, lx - 0.75, lx + 0.75, ly - 1.6, ly + 1.6, dz1, dz1 + 0.08, 0.05))
-    const ind = new THREE.Mesh(new THREE.CylinderGeometry(0.42, 0.42, 0.06, 32), new THREE.MeshStandardMaterial({ color: '#4c8a54', roughness: 0.5 }))
-    ind.rotation.x = Math.PI / 2; ind.position.set(lx, ly + 0.7, dz1 + 0.11); scene.add(ind)
-    const slot = box(M.dark, lx - 0.1, lx + 0.1, ly - 1.2, ly - 0.1, dz1 + 0.08, dz1 + 0.1); scene.add(slot)
+    // latch indicator: a round chrome escutcheon (r as drawn) with an occupancy window, 4" from the latch edge
+    const L = spec.latch, lx = d.x + d.w - L.fromEdge
+    const esc = new THREE.Mesh(new THREE.CylinderGeometry(L.r, L.r, 0.16, 40), M.chrome)
+    esc.rotation.x = Math.PI / 2; esc.position.set(lx, L.y, dz1 + 0.08); scene.add(esc)
+    const win = new THREE.Mesh(new THREE.CylinderGeometry(L.r * 0.42, L.r * 0.42, 0.04, 32), new THREE.MeshStandardMaterial({ color: '#4c8a54', roughness: 0.5 }))
+    win.rotation.x = Math.PI / 2; win.position.set(lx, L.y + L.r * 0.3, dz1 + 0.17); scene.add(win)
+    scene.add(box(M.dark, lx - 0.08, lx + 0.08, L.y - L.r * 0.75, L.y - L.r * 0.2, dz1 + 0.16, dz1 + 0.18))
   }
-  // dividing panels from just behind the pilaster to the back wall, with brackets at 18" and 64"
-  for (const px of open ? [...panels, spec.endPanel] : panels) {
+  // dividing panels at the compartment lines, from just behind the pilaster to the back wall; brackets at 18"/64"
+  for (const px of panels) {
     const z0 = -depth + panel.backGap, z1 = -panel.front
     scene.add(box(M.panel, px - panel.t / 2, px + panel.t / 2, panel.y0, panel.y1, z0, z1, E))
-    for (const y of [18, 64]) {
-      // U-bracket at the pilaster (both sides of the panel) and angle bracket at the wall
-      for (const s of [-1, 1]) {
-        scene.add(box(M.chrome, s < 0 ? px - panel.t / 2 - 0.12 : px + panel.t / 2, s < 0 ? px - panel.t / 2 : px + panel.t / 2 + 0.12, y - 1, y + 1, z1 - 1.6, zb, 0.03))
-        scene.add(box(M.chrome, s < 0 ? px - panel.t / 2 - 0.12 : px + panel.t / 2, s < 0 ? px - panel.t / 2 : px + panel.t / 2 + 0.12, y - 1, y + 1, z0 - panel.backGap, z0 + 1.4, 0.03))
-      }
+    for (const y of [18, 64]) for (const s of [-1, 1]) {
+      const a = s < 0 ? px - panel.t / 2 - 0.12 : px + panel.t / 2, b = s < 0 ? px - panel.t / 2 : px + panel.t / 2 + 0.12
+      scene.add(box(M.chrome, a, b, y - 1, y + 1, z1 - 1.6, zb, 0.03))
+      scene.add(box(M.chrome, a, b, y - 1, y + 1, z0 - panel.backGap, z0 + 1.4, 0.03))
     }
   }
-  // ---------- support systems ----------
-  const shoe = (p, y0, y1) => {
-    const o = 0.22
-    return box(M.stainless, Math.max(0, p.x - o), Math.min(run, p.x + p.w + o), y0, y1, zb - o, zf + o, 0.06)
+  // accessible compartment grab bars (ADA 604.5): side bar on the dividing panel 12"–54" from the rear wall, rear
+  // bar 36" long from 12" one side of the toilet centreline to 24" the other, both 34-1/2" high
+  const bar = (len, pos, rotZ, rotX) => {
+    const m = new THREE.Mesh(new THREE.CylinderGeometry(0.75, 0.75, len, 24), M.stainless)
+    m.position.copy(pos); m.rotation.set(rotX, 0, rotZ); m.castShadow = true; scene.add(m)
   }
-  const contact = (cx, w) => { // soft contact shadow on the floor around a shoe
+  const tc = spec.toilets[0], pFace = panels[0] - panel.t / 2
+  bar(42, new THREE.Vector3(pFace - 2.25, 34.5, -depth + 33), 0, Math.PI / 2)
+  bar(36, new THREE.Vector3(tc - 6, 34.5, -depth + 2.25), Math.PI / 2, 0)
+  // ---------- support systems ----------
+  const o = spec.shoeOver
+  const shoe = (p, y0, y1) => box(M.stainless, Math.max(0, p.x - o), Math.min(run, p.x + p.w + o), y0, y1, zb - o, zf + o, 0.06)
+  const contact = (cx, w) => {
     const m = new THREE.Mesh(new THREE.PlaneGeometry(w + 6, 9), new THREE.MeshBasicMaterial({ map: blobTex(), transparent: true, opacity: 0.7, depthWrite: false, color: '#000', polygonOffset: true, polygonOffsetFactor: -2 }))
     m.rotation.x = -Math.PI / 2; m.position.set(cx, 0.03, -T / 2); m.renderOrder = 3; scene.add(m)
   }
   if (spec.shoe) for (const p of pilasters) { scene.add(shoe(p, 0, spec.shoe)); contact(p.x + p.w / 2, p.w) }
   if (spec.ceilingShoe) for (const p of pilasters) scene.add(shoe(p, spec.ceiling - spec.ceilingShoe, spec.ceiling))
   if (spec.hanger) {
-    // ceiling hung: the stile hangs from steel above the ceiling (hidden); at the ceiling a stainless sleeve
-    // covers the hanger rod and spacer between the stile top and the finished ceiling
+    // ceiling hung: a stainless sleeve covers the hanger rod and spacer between the stile top and the ceiling; above
+    // the ceiling (seen only in the front section) the rods run up to the steel support
     for (const p of pilasters) scene.add(shoe(p, pil.y1, spec.ceiling))
-    // hidden structure above the ceiling (kept for completeness; never visible)
-    const steel = box(M.alu, 0, run, spec.ceiling + 9, spec.ceiling + 12, zb - 1, zf + 1); steel.visible = false; scene.add(steel)
+    const galv = new THREE.MeshStandardMaterial({ color: '#9da3a8', metalness: 0.6, roughness: 0.5 })
+    const [s0, s1] = spec.hanger.steel
+    scene.add(box(galv, 0, run, s0, s1, zb - 1.0, zf + 1.0, 0.05))
+    for (const p of pilasters) {
+      const rod = new THREE.Mesh(new THREE.CylinderGeometry(0.25, 0.25, s0 - pil.y1, 16), galv)
+      rod.position.set(p.x + p.w / 2, (s0 + pil.y1) / 2, -T / 2); scene.add(rod)
+    }
   }
   if (spec.rail) {
     // headrail: extruded aluminum with a sloping top and a raised grip-resistant face edge, clamped over the stile
-    // tops; drawn in front() from rail - 1.4" to rail + 0.6"
-    const top = spec.rail + 0.6, bot = spec.rail - 1.4, w = 1.75
+    // tops; drawn in front() from rail + 2 px down 2"
+    const top = spec.rail + 2 / spec.frame.S, bot = top - 2, w = 1.75
     const s = new THREE.Shape()
-    // profile in (depth, y): 0 = the face, w = the back; extruded along x, the face toward the viewer
-    s.moveTo(0, bot); s.lineTo(w, bot); s.lineTo(w, top - 0.35); s.lineTo(0.22, top); s.lineTo(0.18, top + 0.15); s.lineTo(0, top + 0.15); s.closePath()
-    const geo = new THREE.ExtrudeGeometry(s, { depth: run, bevelEnabled: false })
-    const m = new THREE.Mesh(geo, M.alu)
-    m.rotation.y = Math.PI / 2 // local z (extrusion) -> world +x, local x -> world -z
-    m.position.set(0, 0, (w - T) / 2) // centred over the stile: spans z from -(w + T) / 2 to (w - T) / 2
+    s.moveTo(0, bot); s.lineTo(w, bot); s.lineTo(w, top - 0.35); s.lineTo(0.22, top - 0.1); s.lineTo(0.18, top); s.lineTo(0, top); s.closePath()
+    const m = new THREE.Mesh(new THREE.ExtrudeGeometry(s, { depth: run, bevelEnabled: false }), M.alu)
+    m.rotation.y = Math.PI / 2
+    m.position.set(0, 0, (w - T) / 2)
     m.castShadow = m.receiveShadow = true
     scene.add(m)
-    // wall brackets at each end
-    for (const x of [0, run - 0.15]) scene.add(box(M.alu, x, x + 0.15, bot - 0.6, top + 0.4, -w - 0.3 + (w - T) / 2, (w - T) / 2 + 0.3))
+    for (const x of [0, run - 0.15]) scene.add(box(M.alu, x, x + 0.15, bot - 0.6, top, -w - 0.3 + (w - T) / 2, (w - T) / 2 + 0.3))
   }
 }
 
 // ---------- lights ----------
-function lights(scene, spec, M, renderer) {
-  const { run, depth, ceiling } = spec
+function lights(scene, spec, renderer) {
+  const { run, depth } = spec
+  const ceiling = spec.ceiling ?? 96
   const pmrem = new THREE.PMREMGenerator(renderer)
   scene.environment = pmrem.fromScene(new RoomEnvironment(renderer), 0.04).texture
   scene.add(new THREE.HemisphereLight('#fffdf6', '#d8cdb8', 0.22))
-  // downlights: two rows in front of the stalls and one inside each stall
-  // a row 14" in front of the walls (they wash the walls in soft scallops), a second row further out, one per stall
-  const spots = [[run * 0.25, 16], [run * 0.75, 16], [-30, 16], [-78, 16], [run + 30, 16], [run + 78, 16], [run / 2, 110], [-50, 110], [run + 50, 110], ...spec.stallCentres.map((x) => [x, -depth / 2])]
-  for (const [x, z] of spots) {
-    downlight(scene, M, x, z, ceiling)
-    const L = new THREE.SpotLight('#fff4e2', z < 0 ? 450 : 1300, 0, Math.PI / 3, 1, 1.6)
+  const spots = []
+  for (let x = -60; x <= run + 60; x += 42) spots.push([x, 22, 1300])
+  for (const x of spec.toilets) spots.push([x, -depth / 2, 450])
+  for (let x = -40; x <= run + 40; x += 64) spots.push([x, 110, 1100])
+  for (const [x, z, I] of spots) {
+    const L = new THREE.SpotLight('#fff4e2', I, 0, Math.PI / 3, 1, 1.6)
     L.position.set(x, ceiling - 0.5, z); L.target.position.set(x, 0, z)
-    L.castShadow = true
+    L.castShadow = z < 60
     L.shadow.mapSize.set(1024, 1024); L.shadow.bias = -0.0004; L.shadow.normalBias = 0.05
     L.shadow.camera.near = 2; L.shadow.camera.far = 200
     scene.add(L, L.target)
   }
-  // a broad, soft key from above the camera side: gives the even ceiling-lit look
   const key = new THREE.DirectionalLight('#fff8ec', 0.6)
   key.position.set(run / 2 + 20, 300, 260); key.target.position.set(run / 2, 30, -depth / 2)
   key.castShadow = true
   key.shadow.mapSize.set(4096, 4096)
-  Object.assign(key.shadow.camera, { left: -70, right: 70, top: 90, bottom: -90, near: 50, far: 700 })
+  Object.assign(key.shadow.camera, { left: -120, right: 120, top: 100, bottom: -100, near: 50, far: 700 })
   key.shadow.bias = -0.0003; key.shadow.normalBias = 0.04
   scene.add(key, key.target)
 }
 
 // ---------- public ----------
-// view 'angle' opens the row's right end (no wall there, an end panel instead) so the side panels show.
+// view 'front' builds the drawing-like section; 'angle' the finished restroom.
 export function buildScene({ spec, finish = 'cream', renderer, view = 'front' }) {
-  const open = view === 'angle'
   seed = 7
   const scene = new THREE.Scene()
-  scene.background = new THREE.Color('#e9ebe7')
+  scene.background = new THREE.Color(view === 'front' ? '#ffffff' : '#e9ebe7')
   const M = materials(finish)
-  room(scene, spec, M, open)
-  partitions(scene, spec, M, open)
-  for (const cx of spec.stallCentres) toilet(scene, M, cx, spec.depth)
-  lights(scene, spec, M, renderer)
+  if (view === 'front') sectionRoom(scene, spec, M)
+  else room(scene, spec, M)
+  partitions(scene, spec, M)
+  for (const cx of spec.toilets) toilet(scene, M, cx, spec.depth)
+  lights(scene, spec, renderer)
   return scene
 }
 
-// Cameras. front: straight on, a long lens (8° vertical) from far back so the drawing's horizontals stay level and
-// the sides barely converge, framed floor to ceiling like the front elevation. angle: 3/4 from the entry side at a
+// Output size: the front view has the drawing's aspect ratio (its SVG viewBox); the angle view is 2400 x 1500.
+export function outputSize(view, spec, width = 2400) {
+  return view === 'front' ? [width, Math.round(width * spec.frame.svgH / spec.frame.svgW)] : [width, Math.round(width * 1500 / 2400)]
+}
+
+// Cameras. front: orthographic, framed exactly like the drawing: SVG px u ↔ x = (u - x0 - wall) / S, v ↔
+// y = (floorPx - v) / S, over the SVG's whole viewBox. angle: perspective, three-quarter from the entry side at a
 // 60" eye height.
 export function makeCamera(view, spec, aspect) {
-  const { run, ceiling } = spec
+  const { run } = spec
   if (view === 'front') {
-    const fov = 17, cy = ceiling / 2 + 1
-    const half = (ceiling / 2 + 7) // inches above/below centre to show
-    const dist = half / Math.tan((fov / 2) * Math.PI / 180)
-    const cam = new THREE.PerspectiveCamera(fov, aspect, 120, 700)
-    cam.position.set(run / 2, cy, Math.min(dist, ROOM.front - 4))
-    cam.lookAt(run / 2, cy, 0)
+    const f = spec.frame, ox = f.x0 + f.wt * f.S
+    const cam = new THREE.OrthographicCamera(-ox / f.S, (f.svgW - ox) / f.S, f.floorPx / f.S, (f.floorPx - f.svgH) / f.S, 0.1, 1000)
+    cam.position.set(0, 0, ZC + 200)
+    cam.lookAt(0, 0, 0)
     return cam
   }
-  const cam = new THREE.PerspectiveCamera(36, aspect, 2, 2000)
-  cam.position.set(run + 104, 60, 128)
-  cam.lookAt(run * 0.46, 42, -22)
+  const cam = new THREE.PerspectiveCamera(40, aspect, 2, 2000)
+  cam.position.set(run + 36, 60, 196)
+  cam.lookAt(run * 0.5, 46, -14)
   return cam
 }

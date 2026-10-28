@@ -42,19 +42,34 @@ for (const style of argStyle ? [argStyle] : STYLES) {
 }
 
 await mkdir(OUT, { recursive: true })
+
+// Overlay check: the drawing (design/diagrams/mounting-<style>-front.svg) scaled to the render's width, at 50% over
+// the render, saved as renders/check-<style>.png.
+async function overlayCheck(style, spec, pngDataUrl) {
+  const h = Math.round(W * spec.frame.svgH / spec.frame.svgW)
+  const svg = await readFile(fileURLToPath(new URL(`../diagrams/mounting-${style}-front.svg`, import.meta.url)))
+  const page = await browser.newPage({ viewport: { width: W, height: h } })
+  const img = (src, extra = '') => `<img src="${src}" style="position:absolute;left:0;top:0;width:${W}px;height:${h}px;${extra}">`
+  await page.setContent(`<body style="margin:0;background:#fff">${img(pngDataUrl)}${img(`data:image/svg+xml;base64,${svg.toString('base64')}`, 'opacity:.5')}</body>`)
+  await page.waitForFunction(() => [...document.images].every((i) => i.complete))
+  await page.screenshot({ path: join(OUT, `check-${style}.png`), clip: { x: 0, y: 0, width: W, height: h } })
+  await page.close()
+}
 const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] })
 try {
   for (const { style, view, finish } of jobs) {
     const t = Date.now()
+    const spec = specFor(style)
     const page = await browser.newPage({ viewport: { width: 800, height: 500 } })
     page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') console.log('  [page]', m.text()) })
     page.on('pageerror', (e) => console.log('  [page error]', e.message))
     await page.goto(`http://127.0.0.1:${port}/index.html`)
     await page.waitForFunction(() => window.__ready === true)
-    const r = await page.evaluate((p) => window.__run(p), { spec: specFor(style), view, finish, width: W, height: H, ss: SS, exposure: EXPOSURE })
+    const r = await page.evaluate((p) => window.__run(p), { spec, view, finish, width: W, height: view === 'front' ? Math.round(W * spec.frame.svgH / spec.frame.svgW) : H, ss: SS, exposure: EXPOSURE })
     const name = `${style}-${view}${finish === 'cream' ? '' : `-${finish}`}`
     await writeFile(join(OUT, `${name}.png`), Buffer.from(r.png.split(',')[1], 'base64'))
     await writeFile(join(OUT, `${name}.jpg`), Buffer.from(r.jpg.split(',')[1], 'base64'))
+    if (view === 'front' && finish === 'cream') await overlayCheck(style, spec, r.png)
     if (process.env.MARKS) await writeFile(join(OUT, `${name}.marks.json`), JSON.stringify(r.marks))
     console.log(`${name}  ${((Date.now() - t) / 1000).toFixed(1)}s`)
     await page.close()
