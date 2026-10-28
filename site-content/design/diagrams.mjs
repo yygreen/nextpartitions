@@ -58,7 +58,8 @@ const rect = (x, y, w, h, o = {}) => `<rect x="${x}" y="${y}" width="${w}" heigh
 const line = (x1, y1, x2, y2, o = {}) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${o.stroke ?? C.ink}" stroke-width="${o.sw ?? 1.5}"${o.dash ? ` stroke-dasharray="${o.dash}"` : ''}${o.cap ? ' stroke-linecap="round"' : ''}/>`
 const text = (x, y, s, o = {}) => `<text x="${x}" y="${y}" font-size="${o.size ?? 14}" font-weight="${o.weight ?? 500}" fill="${o.fill ?? C.ink}" text-anchor="${o.anchor ?? 'start'}"${o.rotate ? ` transform="rotate(${o.rotate} ${x} ${y})"` : ''}>${esc(s)}</text>`
 // Numbered callout: an orange disc at (x, y), with an optional leader to the point it names.
-const callout = (n, x, y, to) => `${to ? line(x, y, to[0], to[1], { stroke: C.orange, sw: 1.5 }) + `<circle cx="${to[0]}" cy="${to[1]}" r="2.5" fill="${C.orange}"/>` : ''}<circle cx="${x}" cy="${y}" r="12" fill="${C.orange}"/><text x="${x}" y="${y + 5}" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">${n}</text>`
+// Wrapped in class "co" so a page can hide the numbering where the drawing is decoration (the dark page heroes).
+const callout = (n, x, y, to) => `<g class="co">${to ? line(x, y, to[0], to[1], { stroke: C.orange, sw: 1.5 }) + `<circle cx="${to[0]}" cy="${to[1]}" r="2.5" fill="${C.orange}"/>` : ''}<circle cx="${x}" cy="${y}" r="12" fill="${C.orange}"/><text x="${x}" y="${y + 5}" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">${n}</text></g>`
 // Vertical dimension at x from y1 to y2 (screen coordinates), label to the side.
 function vdim(x, y1, y2, label, side = 'right') {
   const tx = side === 'right' ? x + 8 : x - 8
@@ -698,7 +699,7 @@ const SOLID_CORE = new Set(['phenolic', 'solid-plastic', 'plastic-laminate'])
 const coreCallout = (kind, s, discY) => {
   const [x, y] = s.pts.core
   if (!SOLID_CORE.has(kind)) return callout(1, x, discY, s.pts.core)
-  return callout(1, x, discY, [x, s.y1 + 1]).replace(/<circle cx="[^"]+" cy="[^"]+" r="2.5"[^>]*\/>/, '') + line(x, s.y1 - 1, x, y, { stroke: '#fff', sw: 2 }) + `<circle cx="${x}" cy="${y}" r="2.5" fill="#fff"/>`
+  return callout(1, x, discY, [x, s.y1 + 1]).replace(/<circle cx="[^"]+" cy="[^"]+" r="2.5"[^>]*\/>/, '') + `<g class="co">${line(x, s.y1 - 1, x, y, { stroke: '#fff', sw: 2 })}<circle cx="${x}" cy="${y}" r="2.5" fill="#fff"/></g>`
 }
 const MATERIALS = {
   phenolic: { name: 'Phenolic (compact laminate)', t: 0.75, dim: '3/4"', src: 'Bobrick DuraLine, Bradley PH400' },
