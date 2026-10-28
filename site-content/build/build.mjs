@@ -10,6 +10,9 @@ import { cpSync, existsSync, readFileSync, readdirSync, rmSync, writeFileSync } 
 import { marked } from 'marked'
 
 const SITE = 'https://nextpartitions.com'
+// Every preview page opens at the top, not where the viewer last scrolled; the one exception is the overview's
+// installer section, which the prototypes' back link opens directly.
+const TOP_JS = `<script>try{history.scrollRestoration='manual'}catch(e){};if(location.hash!=='#installers')addEventListener('load',()=>scrollTo(0,0))</script>`
 const PAGES = '../pages', OUT = '../preview', CURRENT = '../current'
 const shell = readFileSync('shell.html', 'utf8') // a live page (/hardware/hinges), saved 2026-10-26
 // The live stylesheet goes inside each page, so any single file opens on its own.
@@ -193,7 +196,7 @@ function homepage(url) {
   // the prototype is a page fragment (no doctype or body): wrap it, with the preview bar on top
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"></head><body style="margin:0">`
     + `<div style="background:#111;color:#fff;font:12px/1.4 Inter,system-ui,sans-serif;padding:6px 16px;text-align:center">Homepage proposal for nextpartitions.com${url} (ideas for Marc) · not the live site · <a href="index.html" style="color:#fff;text-decoration:underline">all preview pages</a></div>`
-    + `${proto}</body></html>`
+    + `${proto}${TOP_JS}</body></html>`
 }
 
 
@@ -422,6 +425,7 @@ ${shell.match(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/
       return `${attr}="${SITE}/${path}"`
     })
   html = html.replace('<!--np-blog-js-->', () => BLOG_JS) // after the live scripts are stripped
+  html = html.replace('</body>', () => `${TOP_JS}</body>`)
   if (url === '/') html = homepage(url)
   // Live-site photos are saved in live-images/ and inlined, so the preview shows them where other sites' images are
   // blocked (a published claude.ai artifact). On the live site they stay as they are.
@@ -470,6 +474,10 @@ if (existsSync('../../directory/app/dist-preview/artifact/index.html')) { rmSync
   }
 }
 if (existsSync('../../prototypes/linked/index.html')) { rmSync(`${OUT}/installers`, { recursive: true, force: true }); cpSync('../../prototypes/linked', `${OUT}/installers`, { recursive: true }) }
+// Each prototype page gets a slim bar back to the overview's installer flow, and opens at the top.
+const BACK_BAR = `<a href="../index.html#installers" style="display:block;background:#fe7802;color:#fff;font:600 13px/1.4 Inter,system-ui,sans-serif;padding:8px 16px;text-decoration:none;position:relative;z-index:2000">← Back to the overview: installer pages and job flow</a>`
+const withBack = (h) => `${h}\n<script>document.body.insertAdjacentHTML('afterbegin', ${JSON.stringify(BACK_BAR)})</script>\n${TOP_JS}\n`
+for (const dir of ['installers', 'app']) if (existsSync(`${OUT}/${dir}`)) for (const f of readdirSync(`${OUT}/${dir}`).filter((x) => x.endsWith('.html'))) writeFileSync(`${OUT}/${dir}/${f}`, withBack(readFileSync(`${OUT}/${dir}/${f}`, 'utf8')))
 writeFileSync(`${OUT}/index.html`, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Next Partitions Content Preview</title><meta name="robots" content="noindex"><style>${CSS}.np-flow-n{flex:0 0 28px;height:28px;border-radius:50%;background:#fe7802;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}</style></head>
 <body class="bg-background text-foreground"><div class="max-w-3xl mx-auto px-4 py-10">
 <h1 class="text-3xl font-bold mb-2">New page content for nextpartitions.com</h1>
@@ -484,7 +492,7 @@ ${rows.map((r) => { const b = before(r.url); return `<tr><td class="p-3"><a clas
 <div class="border border-border rounded-lg p-5 mb-6 bg-accent/50"><p class="font-semibold mb-1">Start here: the working prototype</p><p class="text-sm text-muted-foreground mb-3">The whole flow as one app with shared sample data, so one job can be followed from the installer's price to the customer's choice to the install date.</p>${existsSync(`${OUT}/app/index.html`) ? button('Open the working prototype', 'app/index.html') : ''}<p class="text-sm text-muted-foreground mt-3">All design prototypes linked as one site: <a class="text-brand-red hover:underline font-medium" href="installers/index.html">open the design prototypes</a>.</p></div>
 <h3 class="text-lg font-bold mb-3">The flow, step by step</h3>
 <ol class="space-y-3 mb-4" style="list-style:none;padding:0">${INSTALLER_FLOW.map(([who, title, text, url], i) => `<li class="border border-border rounded-lg p-4 flex gap-4 items-start"><span class="np-flow-n">${i + 1}</span><div class="min-w-0"><p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1">${who}</p><a class="text-brand-red hover:underline font-semibold" href="${url}">${esc(title)}</a><p class="text-sm text-muted-foreground mt-1">${text}</p></div></li>`).join('')}</ol>
-</section></div></body></html>`)
+</section></div>${TOP_JS}</body></html>`)
 // The installer prototypes (prototypes/build-linked.mjs writes prototypes/linked/) ship inside the preview under
 // installers/, so the flow links work for whoever can open the preview.
 console.log(`built ${rows.length} pages + index.html`)
