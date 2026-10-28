@@ -12,8 +12,6 @@ Ceiling hung toilet partitions, also called ceiling mounted or suspended partiti
 
 [Get a Quote](/get-a-quote)
 
-![Ceiling hung toilet partitions with no floor obstructions](https://nextpartitions.com/__l5e/assets-v1/57e78f89-d41b-4462-9273-564d95cf7e62/mounting-ceiling-hung.jpg "photo")
-
 ## How it's built
 
 In the front view, the pilasters hang from steel above the ceiling and stop short of the floor.

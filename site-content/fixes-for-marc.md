@@ -95,7 +95,7 @@ The tip, one to three sentences.
 
 ## 10. Keep the photos the live pages already have
 
-Nine live pages show a product photo: the four mounting style pages, the mounting styles hub (all four), and phenolic, plastic laminate, powder coated steel, solid plastic and stainless steel. The rebuilt pages keep them, linked to the same assets (`/__l5e/assets-v1/...`), as a card after the introduction with the existing alt text as its caption; the hub shows the four in one row. They are small (about 300 px for mounting styles, 540 px for materials): if you have larger originals, use those.
+Nine live pages show a product photo. The mounting style pages and the hub now use the 3D renders instead (section 12); the material pages keep theirs: phenolic, plastic laminate, powder coated steel, solid plastic and stainless steel. The rebuilt pages keep them, linked to the same assets (`/__l5e/assets-v1/...`), as a card after the introduction with the existing alt text as its caption; the hub shows the four in one row. They are small (about 300 px for mounting styles, 540 px for materials): if you have larger originals, use those.
 
 The solid plastic color swatches (21) and the stainless finish swatches (satin, diamond, leathergrain) are left out of the rebuilt pages for now, because the color and finish lists couldn't be confirmed against the manufacturers. Keep the existing swatch grids on the live pages until Abe confirms which colors and finishes he actually offers; then they go back.
 
@@ -105,4 +105,4 @@ The side card ("Planning a restroom?" with the Get a Quote button) is `sticky to
 
 ## 12. 3D renders in the mounting style pages
 
-`design/renders/` has 3D product renders of each mounting style (front and angle, 2400 x 1500 JPEG), made by `design/render3d` from the same numbers as the drawings, so the proportions match exactly; they're ours, no rights questions. Copy them to `public/images/renders/`. The previews use the front render as each mounting page's hero image (a rounded card beside the title, replacing the drawing), and the four fronts in a row on the mounting styles hub (replacing the small 300 px product photos there). The product photos stay on the individual pages further down.
+`design/renders/` has 3D product renders of each mounting style (front and angle, 2400 x 1500 JPEG), made by `design/render3d` from the same numbers as the drawings, so the proportions match exactly; they're ours, no rights questions. Copy them to `public/images/renders/`. The previews use the front render as each mounting page's hero image (a rounded card beside the title, replacing the drawing), and the four fronts in a row on the mounting styles hub (replacing the small 300 px product photos there). On the four mounting style pages the small product photos are removed: the render replaces them. The material pages keep theirs.

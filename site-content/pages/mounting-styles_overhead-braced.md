@@ -12,8 +12,6 @@ Overhead braced toilet partitions are the go-anywhere mounting style. Each pilas
 
 [Get a Quote](/get-a-quote)
 
-![Overhead braced toilet partitions with continuous anti-grip headrail](https://nextpartitions.com/__l5e/assets-v1/4ca95e00-936c-4e75-a234-1d0a9eb0f424/mounting-overhead-braced.jpg "photo")
-
 ## How it's built
 
 In the front view of a row of stalls, the headrail runs across the pilaster tops and the pilasters stand on the floor.

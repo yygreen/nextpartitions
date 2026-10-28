@@ -12,8 +12,6 @@ Floor mounted toilet partitions stand on their own. Each pilaster is bolted into
 
 [Get a Quote](/get-a-quote)
 
-![Floor anchored toilet partitions in a commercial restroom](https://nextpartitions.com/__l5e/assets-v1/427f311e-4d34-49aa-9d15-6f80cd8fc6d5/mounting-floor-mounted.jpg "photo")
-
 ## How it's built
 
 In the front view, the pilaster tops are free and every pilaster stands on its own floor anchors.
