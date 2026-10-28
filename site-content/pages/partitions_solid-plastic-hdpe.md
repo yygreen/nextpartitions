@@ -14,6 +14,8 @@ HDPE bathroom partitions are cut from one solid sheet of high-density polyethyle
 
 [Configure & Request a Quote](/get-a-quote?material=solid-plastic). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
 
+![Bright public restroom with solid plastic HDPE stall doors](https://nextpartitions.com/__l5e/assets-v1/f9b77af1-d1b7-41a2-8a06-03ba3ce13397/solid-plastic.png "photo")
+
 ## How HDPE partitions are built
 
 Scranton Products makes its Hiny Hiders partitions from 1-inch solid HDPE with the color running all the way through. Doors, panels and pilasters are 1" in Scranton's guide specification, with edges rounded to a 1/4" radius. The New York State master specification asks for HDPE not less than 1" thick with eased edges. Scranton also offers a shiplap cut edge that removes sightlines without extra hardware. ASI Global sizes its anti-grip headrail for solid plastic at 1", which matches a 1" pilaster. Hadrian's guide specification for its Standard Series lists solid polyethylene with fine radius edges, 1 inch thick. ASI's catalog and Hadrian's listing don't state a thickness.

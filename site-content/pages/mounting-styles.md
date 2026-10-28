@@ -14,6 +14,13 @@ Every bathroom partition is held up one of four ways: from the floor with a head
 
 ## The four mounting styles
 
+:::gallery
+![Overhead braced toilet partitions with continuous headrail](https://nextpartitions.com/__l5e/assets-v1/4ca95e00-936c-4e75-a234-1d0a9eb0f424/mounting-overhead-braced.jpg)
+![Floor mounted toilet partitions anchored directly to the floor](https://nextpartitions.com/__l5e/assets-v1/427f311e-4d34-49aa-9d15-6f80cd8fc6d5/mounting-floor-mounted.jpg)
+![Ceiling hung toilet partitions suspended from structural ceiling](https://nextpartitions.com/__l5e/assets-v1/57e78f89-d41b-4462-9273-564d95cf7e62/mounting-ceiling-hung.jpg)
+![Floor to ceiling toilet partitions for maximum stability](https://nextpartitions.com/__l5e/assets-v1/804f4f7d-caed-40d7-b7a4-a10321de313f/mounting-floor-to-ceiling.jpg)
+:::
+
 ### Overhead braced
 Pilasters (the posts at the front of each stall) are fastened to the floor, and an anodized aluminum anti-grip headrail runs across their tops and ties into the walls. ASI calls it "economical and sturdy" and says it "installs just about anywhere." [Overhead braced partitions →](/mounting-styles/overhead-braced)
 

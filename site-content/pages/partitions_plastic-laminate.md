@@ -14,6 +14,8 @@ Plastic laminate bathroom partitions bond a decorative high-pressure laminate (H
 
 [Configure & Request a Quote](/get-a-quote?material=plastic-laminate). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
 
+![Contemporary restroom interior with plastic laminate finishes](https://nextpartitions.com/__l5e/assets-v1/275c40f9-fad8-4372-a02c-377581ca4a7f/plastic-laminate.jpg "photo")
+
 ## How plastic laminate partitions are built
 
 Bobrick specifies a 45 lb density, resin-impregnated particleboard core, and its HPL doors, stiles and panels are 1" thick (1040 Series, DesignerSeries HPL). The laminate on both the faces and the edges is .050" thick. Bobrick's 1040 stiles also have an 11-gauge sheet steel core between two layers of particleboard, and the leveling device is welded to that steel. Its 1550 Series stiles are particleboard with no steel core. ASI sizes its headrail for laminate at 1-1/4", so ASI's pilasters are thicker than Bobrick's.

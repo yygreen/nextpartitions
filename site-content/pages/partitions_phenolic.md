@@ -14,6 +14,8 @@ Phenolic bathroom partitions are made by stacking layers of kraft paper soaked i
 
 [Configure & Request a Quote](/get-a-quote?material=solid-phenolic). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
 
+![Modern commercial restroom with phenolic-style partitions and tiled walls](https://nextpartitions.com/__l5e/assets-v1/d95a60d8-bcd0-4a69-8490-767f915597d6/solid-phenolic.jpg "photo")
+
 ## How phenolic partitions are built
 
 Phenolic is also called compact grade laminate (CGL) or compact laminate. Bobrick describes its version as melamine faces and colored face sheets bonded to a black phenolic-resin core. Scranton Products describes black core phenolic as a "resin-impregnated kraft paper core".

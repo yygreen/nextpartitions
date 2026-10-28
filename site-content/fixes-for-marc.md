@@ -92,3 +92,9 @@ The tip, one to three sentences.
 ```
 
 **For now both boxes appear only in the showcase article, `/guides/restroom-layout`** (two advice boxes, one expert quote box). The other drafts have none until Abe picks the style and sends his answers.
+
+## 10. Keep the photos the live pages already have
+
+Nine live pages show a product photo: the four mounting style pages, the mounting styles hub (all four), and phenolic, plastic laminate, powder coated steel, solid plastic and stainless steel. The rebuilt pages keep them, linked to the same assets (`/__l5e/assets-v1/...`), as a card after the introduction with the existing alt text as its caption; the hub shows the four in one row. They are small (about 300 px for mounting styles, 540 px for materials): if you have larger originals, use those.
+
+The solid plastic color swatches (21) and the stainless finish swatches (satin, diamond, leathergrain) are left out of the rebuilt pages for now, because the color and finish lists couldn't be confirmed against the manufacturers. Keep the existing swatch grids on the live pages until Abe confirms which colors and finishes he actually offers; then they go back.

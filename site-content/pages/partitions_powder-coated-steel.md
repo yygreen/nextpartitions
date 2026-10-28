@@ -14,6 +14,8 @@ Powder coated steel bathroom partitions are a steel sandwich: steel face sheets 
 
 [Configure & Request a Quote](/get-a-quote?material=powder-coated). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
 
+![School restroom with powder coated steel toilet partitions](https://nextpartitions.com/__l5e/assets-v1/42090ed1-82c6-47e8-98f6-91d2d6ad9106/powder-coated.jpg "photo")
+
 ## How powder coated steel partitions are built
 
 ASI Global describes its powder coated partitions as galvannealed steel with a honeycomb core "for solid construction and sound attenuation", finished with a thermoset hybrid powder coating that resists wear, fading and scuffing. Metpar describes galvannealed steel over a honeycomb core as well.

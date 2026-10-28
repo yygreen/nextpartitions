@@ -14,6 +14,8 @@ One point clears up most confusion: "floor to ceiling" describes the **pilasters
 
 [Get a Quote](/get-a-quote)
 
+![Floor-to-ceiling anchored toilet partitions for maximum stability](https://nextpartitions.com/__l5e/assets-v1/804f4f7d-caed-40d7-b7a4-a10321de313f/mounting-floor-to-ceiling.jpg "photo")
+
 ## How it's built
 
 In the front view, each pilaster runs from the floor to the ceiling while the doors and panels stay at standard height.

@@ -61,6 +61,9 @@ Short answers are fine: a sentence, a voice note or a quick call. Your answers g
 
 34. Bradley: their 2025 brochure lists phenolic and stainless partitions, but not powder coated steel or the Bradmar plastic line, which appear only in older installation guides. Can you still order those two from Bradley? If not, we take them off the pages.
 
+35. Colors and finishes: the solid plastic page shows 21 colors and the stainless page three finishes (satin, diamond, leathergrain). Which of these do you actually offer, and from which brand? We'll put the swatches back on the pages once you confirm.
+36. Product photos: the mounting and material pages use small product photos (about 300 to 540 px wide). Do you or Marc have larger originals, and do you have the rights to them?
+
 **Photos**
 32. Job photos you have the rights to use, especially straight-on shots of a whole restroom, a hinge, a latch and a ceiling-hung install. Real installs beat any drawing.
 

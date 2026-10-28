@@ -14,6 +14,8 @@ Stainless steel bathroom partitions use the same sandwich as powder coated steel
 
 [Configure & Request a Quote](/get-a-quote?material=stainless-steel). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
 
+![Premium restroom interior with stainless steel and stone finishes](https://nextpartitions.com/__l5e/assets-v1/1992ebcb-7cfc-448b-8497-bbe24be0aeb9/stainless-steel.jpg "photo")
+
 ## How stainless steel partitions are built
 
 ASI builds its stainless partitions from Type 304 stainless steel over a honeycomb core, and says a textured finish adds resistance to vandalism. Bradley offers a satin brushed finish and a 5WL textured pattern on its stainless line, made with 40% pre-consumer and 25% post-consumer recycled stainless, with door and panel heights of 72" (6" above the floor) or 69" (9" above the floor) for accessible stalls. ASI sizes its anti-grip headrail for stainless at 1-1/4", which matches a 1-1/4" pilaster.
