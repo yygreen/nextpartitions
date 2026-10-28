@@ -14,63 +14,47 @@ These bathroom partition guides help facilities managers, contractors and archit
 
 [Get a Quote](/get-a-quote)
 
-## Planning and sizes
+## Planning, sizes and accessibility
 
-### Bathroom Stall Dimensions
-Widths, depths, door sizes, partition heights and floor clearances for standard and accessible stalls, plus a checklist for measuring your restroom before you send a quote request.
-[Read the stall dimensions guide](/guides/bathroom-stall-dimensions)
+Start with the sizes, check the accessibility rules, then lay out the room.
 
-### Standard Partition Sizes
-The component sizes you'll see on a quote and on shop drawings: panels, doors, pilasters, heights and thicknesses by material.
-[Read the standard sizes guide](/guides/standard-sizes)
-
-### Commercial Restroom Layout
-How stalls are arranged in a room, the spacing plumbing codes set between fixtures, and how to keep turning space and approach clearances open around the accessible stall.
-[Read the restroom layout guide](/guides/restroom-layout)
-
-## Installation
-
-### How to Install Toilet Partitions
-An overview of how overhead-braced, floor-mounted, ceiling-hung and floor-to-ceiling partitions go in, what to check before the installer arrives, and how to fix common problems. Next Partitions supplies partitions and doesn't install them: follow the manufacturer's instructions and use a qualified installer.
-[Read the installation overview](/guides/how-to-install-toilet-partitions)
-
-### Installation Instructions by Brand
-Links to the manufacturers' own installation guides and data sheets, by brand and product line.
-[Find your brand's instructions](/guides/installation-instructions)
-
-## Accessibility
-
-### ADA Bathroom Compliance Guide
-What the 2010 ADA Standards for Accessible Design require in a toilet compartment: compartment size, door location and swing, grab bars, toilet position and seat height, and door hardware.
-[Read the ADA compliance guide](/guides/ada-compliance)
+- [Bathroom Stall Dimensions](/guides/bathroom-stall-dimensions)
+- [Toilet Partition Sizes](/guides/standard-sizes)
+- [Commercial Restroom Layout](/guides/restroom-layout)
+- [ADA Bathroom Compliance Guide](/guides/ada-compliance): Compartment size, door location and swing, grab bars, toilet position and door hardware under the 2010 ADA Standards.
 
 Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.
 
+## Installation
+
+How partitions go in, and where to find each manufacturer's own instructions. Next Partitions supplies partitions and doesn't install them: follow the manufacturer's instructions and use a qualified installer.
+
+- [How to Install Bathroom Partitions](/guides/how-to-install-toilet-partitions)
+- [Installation Instructions by Brand](/guides/installation-instructions)
+
 ## Choose a material
 
-Partition materials differ in how they handle moisture, abuse and cleaning. Our [guide to what bathroom partitions are made of](/blog/what-are-bathroom-partitions-made-of) explains how each one is built. Then compare the details:
+Partition materials differ in how they handle moisture, abuse and cleaning. Compare [all partition materials](/partitions).
 
-- [All partition materials](/partitions)
-- [Powder coated steel](/partitions/powder-coated-steel)
-- [Solid plastic (HDPE)](/partitions/solid-plastic-hdpe)
+- [Powder Coated Steel](/partitions/powder-coated-steel)
+- [Solid Plastic (HDPE)](/partitions/solid-plastic-hdpe)
 - [Phenolic](/partitions/phenolic)
-- [Plastic laminate](/partitions/plastic-laminate)
-- [Stainless steel](/partitions/stainless-steel)
+- [Plastic Laminate](/partitions/plastic-laminate)
+- [Stainless Steel](/partitions/stainless-steel)
 
 ## Choose a mounting style
 
-How the partitions attach to the building decides what your floor and ceiling need to carry, how easy the floor is to clean and how much privacy the stalls give.
+How the partitions attach to the building decides what your floor and ceiling need to carry, how easy the floor is to clean and how much privacy the stalls give. Compare [all mounting styles](/mounting-styles).
 
-- [All mounting styles](/mounting-styles)
-- [Overhead braced](/mounting-styles/overhead-braced)
-- [Floor mounted](/mounting-styles/floor-mounted)
-- [Ceiling hung](/mounting-styles/ceiling-hung)
-- [Floor to ceiling](/mounting-styles/floor-to-ceiling)
+- [Overhead Braced](/mounting-styles/overhead-braced)
+- [Floor Mounted](/mounting-styles/floor-mounted)
+- [Ceiling Hung](/mounting-styles/ceiling-hung)
+- [Floor to Ceiling](/mounting-styles/floor-to-ceiling)
 
 ## From the blog
 
 - [What Are Bathroom Partitions Made Of?](/blog/what-are-bathroom-partitions-made-of)
-- [Why Do Bathroom Stalls Have Gaps? (And How to Eliminate Them)](/blog/why-do-bathroom-stalls-have-gaps)
+- [Why Do Bathroom Stalls Have Gaps?](/blog/why-do-bathroom-stalls-have-gaps)
 
 ## Ready to price your restroom?
 
@@ -104,6 +88,7 @@ The hub itself makes no new dimensional claims. The checks behind the correction
 ## Corrections to the current page
 
 - The live /guides page is blank (title and meta only, no body). This file is the full page.
+- Layout: an overview like the blog index, not an article: topic chips under the title, then one row of cards per topic (thumbnail, type label, title, one-line summary from the page's meta description, read link), the FAQ and the sources. The preview builds it in `build/build.mjs` (`hub()`).
 - Title and meta on the live page are the homepage defaults; replace with the ones above.
 
 ### Corrections to the four existing guides (fix when they are expanded)
