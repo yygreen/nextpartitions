@@ -333,6 +333,24 @@ ${shell.match(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/
   return { url, title: fm.h1, words }
 }
 
+
+// The installer directory and job flow: the prototypes published as claude.ai artifacts (links in CLAUDE.md), in the
+// order a job moves through them. Listed on the preview index so the whole project sits behind one link.
+const P = 'https://claude.ai/artifact/'
+const INSTALLER_FLOW = [
+  ['Installer', 'Get listed: installer application', 'Why join, the checks to be Verified, and the six-step application ending with the listing agreement.', `${P}RYzFiXDAUfUj1UbYaaf5N5`],
+  ['Next Partitions (internal)', 'Installer vetting', 'The checklist with evidence per applicant, the timed test job, approve or reject.', `${P}5m6eiBdee8mbWGpusQiEF5`],
+  ['Customer', 'Texas installer hub', 'Search by city or ZIP, coverage map, area cards and the A–Z city index.', `${P}NgMp8WdWWpwAfKPSwaDV29`],
+  ['Customer', 'Dallas–Fort Worth area page', 'Configure your partitions first; the area\'s installers, map and FAQ below.', `${P}6dhxph55HK2cQ8L89RKUBc`],
+  ['Customer', 'Installer profile', 'One installer\'s profile, labels and reviews; "Get a quote with" opens the configurator. Samples: #acme, #northwind, #contoso, #fabrikam.', `${P}Wh2UPd1KDJ78JDQmZsySrN#acme`],
+  ['Customer', 'Configurator installation step', 'The optional installation step: installers stay anonymous, a count and a price range only. Designed, not switched on.', `${P}VSxudbJ4rsvR5bcDyU2xSs#dfw`],
+  ['Installer', 'Installer portal: price the job', 'The blind job packet (scope, drawings, city and ZIP, no customer details) and the installer\'s price.', `${P}32L7EWz37XztbenrBwUKBj#NP-DFW-1048`],
+  ['Next Partitions (internal)', 'Job coordination view', 'The same job from the Next Partitions side: prices in, flags, follow-ups. #NP-DFW-1052 shows a job with no installer prices yet.', `${P}32L7EWz37XztbenrBwUKBj#np`],
+  ['Customer', 'Customer\'s quote: approve, choose, pay', 'Approve the shop drawings, choose an installer, pay for the partitions. #searching shows the state while installers are still being lined up.', `${P}YJ7mS6GqUSktyydDMy8BDq#choose`],
+  ['Both', 'Emails along the way', 'The ten emails of the flow, from the quote range to the review request; 8–10 cover a job with no installer prices.', `${P}614jrzEpTZt1WMTuruh4BS#email-1`],
+  ['Customer', 'Review after the install', 'Only customers with a completed job can review; #used and #expired show the other states.', `${P}KVKguYuwNK7AJkXXRseaM8`],
+]
+
 const files = readdirSync(PAGES).filter((f) => f.endsWith('.md')).sort()
 const built = new Set(files.map((f) => parse(f).fm.url))
 const rows = files.map((f) => build(f, built))
@@ -342,11 +360,19 @@ const before = (url) => {
     return t.split('\n').slice(3).join(' ').split(/\s+/).filter(Boolean).length
   } catch { return null }
 }
-writeFileSync(`${OUT}/index.html`, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Next Partitions Content Preview</title><meta name="robots" content="noindex"><style>${CSS}</style></head>
+writeFileSync(`${OUT}/index.html`, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Next Partitions Content Preview</title><meta name="robots" content="noindex"><style>${CSS}.np-flow-n{flex:0 0 28px;height:28px;border-radius:50%;background:#fe7802;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}</style></head>
 <body class="bg-background text-foreground"><div class="max-w-3xl mx-auto px-4 py-10">
 <h1 class="text-3xl font-bold mb-2">New page content for nextpartitions.com</h1>
+<p class="text-sm mb-4"><a class="text-brand-red hover:underline font-medium" href="#installers">Jump to the installer pages and job flow</a></p>
 <p class="text-muted-foreground mb-6">Each page in the live site's layout, ready to port into the site. Built ${new Date().toISOString().slice(0, 10)} from site-content/pages/. Words are the page's own content (live page shown for comparison; "new" means the URL doesn't exist or is blank today).</p>
 <div class="overflow-x-auto"><table class="w-full text-sm border-collapse border border-border"><thead><tr class="bg-accent"><th class="p-3 text-left">Page</th><th class="p-3 text-left">URL</th><th class="p-3 text-left">Words live</th><th class="p-3 text-left">Words new</th></tr></thead><tbody class="divide-y divide-border">
 ${rows.map((r) => { const b = before(r.url); return `<tr><td class="p-3"><a class="text-brand-red hover:underline font-medium" href="${fileFor(r.url)}">${esc(r.title)}</a></td><td class="p-3 text-muted-foreground">${r.url}</td><td class="p-3">${b === null || b < 60 ? 'new' : b}</td><td class="p-3">${r.words}</td></tr>` }).join('\n')}
-</tbody></table></div></div></body></html>`)
+</tbody></table></div>
+<section id="installers" class="mt-12 pt-8 border-t border-border">
+<h2 class="text-2xl font-bold mb-2">Installer pages and job flow</h2>
+<p class="text-muted-foreground mb-4">The installer directory, kept apart from the main site, and the job flow behind it: how an installer gets listed, how a customer finds one, how a job is priced, chosen and installed, and how it's reviewed. Clickable prototypes; every installer, rate, review and photo in them is a fictional sample, and Dallas–Fort Worth is the example area.</p>
+<div class="border border-border rounded-lg p-5 mb-6 bg-accent/50"><p class="font-semibold mb-1">Start here: the working prototype</p><p class="text-sm text-muted-foreground mb-3">The whole flow as one app with shared sample data, so one job can be followed from the installer's price to the customer's choice to the install date.</p>${button('Open the working prototype', 'https://claude.ai/artifact/28Jz9krwMovkrgjGw8XYFa')}<p class="text-sm text-muted-foreground mt-3">All design prototypes linked as one site: <a class="text-brand-red hover:underline font-medium" href="https://claude.ai/artifact/1EM6mvJkMTXTtfTNj5SrbQ" target="_blank" rel="noopener">open the design prototypes</a>.</p></div>
+<h3 class="text-lg font-bold mb-3">The flow, step by step</h3>
+<ol class="space-y-3 mb-4">${INSTALLER_FLOW.map(([who, title, text, url], i) => `<li class="border border-border rounded-lg p-4 flex gap-4 items-start"><span class="np-flow-n">${i + 1}</span><div class="min-w-0"><p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1">${who}</p><a class="text-brand-red hover:underline font-semibold" href="${url}" target="_blank" rel="noopener">${esc(title)}</a><p class="text-sm text-muted-foreground mt-1">${text}</p></div></li>`).join('')}</ol>
+</section></div></body></html>`)
 console.log(`built ${rows.length} pages + index.html`)
