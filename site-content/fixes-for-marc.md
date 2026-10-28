@@ -102,3 +102,7 @@ The solid plastic color swatches (21) and the stainless finish swatches (satin, 
 ## 11. The quote card in the side column should stay in view
 
 The side card ("Planning a restroom?" with the Get a Quote button) is `sticky top-4`, but the site header is also sticky and about 107 px tall, so the card slides under the header and looks like it scrolls away. Give it a top offset below the header (the previews use `top: 132px`, header height plus 24 px), or `top-[calc(var(--header-h)+1.5rem)]` if the header height is a variable.
+
+## 12. 3D renders in the mounting style pages
+
+`design/renders/` has 3D product renders of each mounting style (front and angle, 2400 x 1500 JPEG), made by `design/render3d` from the same numbers as the drawings, so the proportions match exactly; they're ours, no rights questions. Copy them to `public/images/renders/`. The previews use the front render as each mounting page's hero image (a rounded card beside the title, replacing the drawing), and the four fronts in a row on the mounting styles hub (replacing the small 300 px product photos there). The product photos stay on the individual pages further down.
