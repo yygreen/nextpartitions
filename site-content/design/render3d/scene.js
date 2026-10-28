@@ -124,6 +124,44 @@ function materials(finish) {
   }
 }
 
+// glazed wall tile, 24" x 12" in a stacked bond with light grout; returns map and roughness map for one tile repeat
+function wallTiles() {
+  const px = 512, n = 4 // 1 x 4 tiles (24" wide, 12" high) per repeat: 24" x 48"
+  const th = px / n
+  const map = canvasTex(px, px, (g) => {
+    for (let j = 0; j < n; j++) {
+      const v = (rnd() - 0.5) * 8
+      g.fillStyle = `rgb(${172 + v},${184 + v},${173 + v})`
+      g.fillRect(0, j * th, px, th)
+      const gr = g.createLinearGradient(0, j * th, 0, (j + 1) * th) // slight glaze sheen across each tile
+      gr.addColorStop(0, 'rgba(255,255,255,0.06)'); gr.addColorStop(1, 'rgba(0,0,0,0.05)')
+      g.fillStyle = gr; g.fillRect(0, j * th, px, th)
+    }
+    g.fillStyle = 'rgb(206,210,204)'
+    for (let j = 0; j <= n; j++) g.fillRect(0, j * th - 2, px, 4)
+    g.fillRect(0, 0, 3, px); g.fillRect(px - 3, 0, 3, px)
+  })
+  const rough = canvasTex(px, px, (g) => {
+    g.fillStyle = 'rgb(60,60,60)'; g.fillRect(0, 0, px, px)
+    g.fillStyle = 'rgb(235,235,235)'
+    for (let j = 0; j <= n; j++) g.fillRect(0, j * th - 2, px, 4)
+    g.fillRect(0, 0, 3, px); g.fillRect(px - 3, 0, 3, px)
+  }, false)
+  for (const t of [map, rough]) { t.wrapS = t.wrapT = THREE.RepeatWrapping }
+  return { map, rough }
+}
+// a tiled wall face: a plane just in front of a wall box face, tiles aligned to the floor and to x = 0
+function tilePlane(scene, x0, x1, y0, y1, z, rotY = 0) {
+  const { map, rough } = wallTiles()
+  const w = x1 - x0, h = y1 - y0
+  map.repeat.set(w / 24, h / 48); rough.repeat.copy(map.repeat)
+  map.offset.set(x0 / 24, y0 / 48); rough.offset.copy(map.offset)
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshPhysicalMaterial({ map, roughnessMap: rough, roughness: 1, clearcoat: 0.4, clearcoatRoughness: 0.25, envMapIntensity: 0.5 }))
+  m.position.set((x0 + x1) / 2, (y0 + y1) / 2, z); m.rotation.y = rotY
+  m.receiveShadow = true
+  scene.add(m)
+}
+
 // ---------- the room ----------
 // angle view: a restroom with the row in an alcove (side walls at x = 0 and x = run, returning ROOM.ret" in front of
 // the pilaster faces) and a finished 8' ceiling with downlights.
@@ -140,6 +178,10 @@ function room(scene, spec, M) {
   wallBox(-O - 6, -O, -1, top, -depth, F)                    // restroom side walls
   wallBox(run + O, run + O + 6, -1, top, -depth, F)
   wallBox(-O - 6, run + O + 6, -1, top, F, F + 6)            // behind the camera
+  // glazed tile on the walls the camera sees: the back wall and the faces of the alcove walls
+  tilePlane(scene, -O, run + O, 0, ceiling, -depth + 0.05)
+  tilePlane(scene, -O, 0, 0, ceiling, A + 0.05)
+  tilePlane(scene, run, run + O, 0, ceiling, A + 0.05)
   const ceil = box(M.ceiling, -O - 6, run + O + 6, ceiling, ceiling + 2, -depth - 6, F + 6)
   ceil.castShadow = false
   scene.add(ceil)
@@ -443,6 +485,13 @@ export function makeCamera(view, spec, aspect) {
     const cam = new THREE.OrthographicCamera(-ox / f.S, (f.svgW - ox) / f.S, f.floorPx / f.S, (f.floorPx - f.svgH) / f.S, 0.1, 1000)
     cam.position.set(0, 0, ZC + 200)
     cam.lookAt(0, 0, 0)
+    return cam
+  }
+  if (view === 'hero') {
+    // hero: the finished restroom straight on, at eye height, a little off centre, like a photo from the entry
+    const cam = new THREE.PerspectiveCamera(30, aspect, 2, 2000)
+    cam.position.set(run * 0.56, 56, 245)
+    cam.lookAt(run * 0.5, 45, -spec.depth * 0.4)
     return cam
   }
   const cam = new THREE.PerspectiveCamera(40, aspect, 2, 2000)

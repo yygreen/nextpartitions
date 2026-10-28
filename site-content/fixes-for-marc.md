@@ -105,7 +105,7 @@ The side card ("Planning a restroom?" with the Get a Quote button) is `sticky to
 
 ## 12. 3D renders in the mounting style pages
 
-`design/renders/` has 3D product renders of each mounting style (front and angle, 2400 x 1500 JPEG), made by `design/render3d` from the same numbers as the drawings, so the proportions match exactly; they're ours, no rights questions. Copy them to `public/images/renders/`. The previews use the exact front render, cropped to the building (`<style>-front-hero.jpg`, no white around it), as each mounting page's hero image beside the title, and the exact front render where the drawing is compared, and the four fronts in a row on the mounting styles hub (replacing the small 300 px product photos there). On the four mounting style pages the small product photos are removed: the render replaces them. The material pages keep theirs. The side view on each mounting page is now full width (780 wide) with a compact phone version (`-side-m.svg`).
+`design/renders/` has 3D product renders of each mounting style (front and angle, 2400 x 1500 JPEG), made by `design/render3d` from the same numbers as the drawings, so the proportions match exactly; they're ours, no rights questions. Copy them to `public/images/renders/`. The previews use a photo-like render of each style (`<style>-hero.jpg`: the finished restroom straight on at eye height, tiled walls, ambient occlusion) as each mounting page's hero image beside the title and as its card thumbnail on the blog and guides pages, and the exact front render where the drawing is compared, and the four fronts in a row on the mounting styles hub (replacing the small 300 px product photos there). On the four mounting style pages the small product photos are removed: the render replaces them. The material pages keep theirs. The side view on each mounting page is now full width (780 wide) with a compact phone version (`-side-m.svg`).
 
 ## 13. Icons on the reasons and limits lists
 
@@ -123,7 +123,7 @@ The preview's homepage (`preview/home.html`) is the homepage proposal already se
 
 The material, mounting style and hardware pages (hubs included) are category pages, so they open with a product grid under the hero, the way a shop category does: product photo, name, brand / material / size line, price and "View product", four across on desktop, two on a phone, with Filter and Sort. The shop (`/products`) shows "coming soon" today, so the preview fills the grid with marked placeholder cards; wire it to the shop's product feed for that category once products are listed.
 
-Under the grid: the page's short intro stays visible; every content section after it sits in one "Read more about …" section (closed by default, a native `<details>`, so the text stays in the page for search engines). The FAQ and the sources stay visible below it. The previews do this in `build/build.mjs` (`productGrid`, `CATEGORY`).
+Under the grid: the page's short intro stays visible, then a teaser (the first section's heading and opening paragraph, fading out) and a "Read more about …" button. Everything else (all sections, the FAQ and the sources) sits in that one expandable part (a native `<details>`, closed by default, so the text stays in the page for search engines). The previews do this in `build/build.mjs` (`productGrid`, `CATEGORY`).
 
 ## 17. Get a Quote on phones and tablets (2026-10-28)
 

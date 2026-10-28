@@ -149,7 +149,7 @@ const HERO_FALLBACK = { '/': 'mounting-styles-compare', '/about': 'mounting-styl
 const RENDERS = '../design/renders/'
 const renderSrc = (name) => `data:image/jpeg;base64,${readFileSync(`${RENDERS}${name}.jpg`).toString('base64')}`
 const inlineRenders = (html) => html.replace(/src="\/images\/renders\/([a-z0-9-]+)\.jpg"/g, (_, n) => `src="${renderSrc(n)}"`)
-const HERO_RENDER = { '/mounting-styles/overhead-braced': 'overhead-braced-front-hero', '/mounting-styles/floor-mounted': 'floor-mounted-front-hero', '/mounting-styles/ceiling-hung': 'ceiling-hung-front-hero', '/mounting-styles/floor-to-ceiling': 'floor-to-ceiling-front-hero' }
+const HERO_RENDER = { '/mounting-styles/overhead-braced': 'overhead-braced-hero', '/mounting-styles/floor-mounted': 'floor-mounted-hero', '/mounting-styles/ceiling-hung': 'ceiling-hung-hero', '/mounting-styles/floor-to-ceiling': 'floor-to-ceiling-hero' }
 function heroArt(raw, url) {
   if (HERO_RENDER[url]) return `<figure class="np-hero-photo"><img src="${renderSrc(HERO_RENDER[url])}" alt="" width="2400" height="1500"></figure>`
   const m = raw.match(/\(\/images\/diagrams\/([a-z0-9-]+)\.svg\)/)
@@ -202,7 +202,7 @@ function hubCard(item, big, filter) {
   const type = HUB_TYPE[item.href.split('/')[1]] || 'Guide'
   const mount = item.href.match(/^\/mounting-styles\/(.+)$/)
   let thumb
-  if (mount) thumb = `<img src="${renderSrc(`${mount[1]}-front-hero`)}" alt="" loading="lazy">`
+  if (mount) thumb = `<img src="${renderSrc(`${mount[1]}-hero`)}" alt="" loading="lazy">`
   else {
     const m = raw.match(/\(\/images\/diagrams\/([a-z0-9-]+)\.svg\)/)
     const name = (m ? m[1] : HUB_THUMB[item.href] || 'partition-anatomy').replace(/-m\d?$/, '')
@@ -266,7 +266,9 @@ const CAT_CSS = `.np-pg-bar{display:flex;flex-wrap:wrap;justify-content:space-be
 .np-pg-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}@media(min-width:900px){.np-pg-grid{grid-template-columns:repeat(4,1fr)}}
 .np-pc{background:#fff;border:1px solid var(--border,#e5e0da);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;min-width:0}.np-pc-img{aspect-ratio:1/1;max-width:100%;background:#f2f0ec;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#b5aaa0;font-size:12px}
 .np-pc-body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px;flex:1}.np-pc-name{font-weight:600;color:var(--foreground,#1c0e05);margin:0}.np-pc-spec{font-size:13px;color:var(--muted-foreground,#7a6a5e);margin:0}.np-pc-price{font-weight:700;color:var(--foreground,#1c0e05);margin:4px 0 8px}.np-pc-btn{margin-top:auto;text-align:center;padding:8px;border-radius:6px;border:1px solid #fe7802;color:#fe7802;font-size:14px;font-weight:600}
-.np-readmore{border-top:1px solid var(--border,#e5e0da);padding-top:16px;margin-bottom:32px}.np-readmore>summary{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:#fe7802;cursor:pointer}.np-readmore>summary::after{content:"+";float:none;margin-left:2px}.np-readmore[open]>summary::after{content:"–"}`
+.np-readmore{margin-bottom:32px}.np-readmore>summary{display:block;cursor:pointer}.np-readmore>summary::after{content:none}
+.np-teaser{position:relative;max-height:190px;overflow:hidden}.np-teaser::after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(rgba(251,250,249,0),var(--background,#fbfaf9))}.np-readmore[open] .np-teaser{display:none}
+.np-rm-btn{display:inline-flex;align-items:center;gap:8px;margin-top:4px;padding:10px 18px;border:1px solid #fe7802;border-radius:6px;font-weight:600;color:#fe7802;background:#fff}.np-rm-btn::after{content:"+";font-weight:700}.np-readmore[open] .np-rm-btn{margin-bottom:16px}.np-readmore[open] .np-rm-btn::after{content:"–"}`
 
 
 // Phones and tablets (below 1024 px): the hero button goes full width (up to 420 px) and 48 px tall.
@@ -338,6 +340,8 @@ function build(file, built) {
   const items = faq ? faqItems(faq) : []
   const isPost = seg[0] === 'blog' && seg.length > 1
   const isCat = CATEGORY.has(seg[0])
+  const faqHtml = items.length ? `<section class="mb-8"><h2 class="text-2xl font-bold mb-4">Frequently Asked Questions</h2><div class="space-y-3">${items.map((x) => `<details class="border border-border rounded-lg p-4"><summary class="font-semibold text-foreground cursor-pointer">${esc(x.q)}</summary><div class="mt-3">${md(x.a)}</div></details>`).join('')}</div></section>` : ''
+  const srcHtml = sources ? `<section class="np-sources mt-10 border-t border-border pt-6 text-xs text-muted-foreground"><h2 class="text-sm font-semibold text-foreground mb-2">Sources</h2>${md(sources.md).replace(/text-muted-foreground leading-relaxed mb-4/g, 'mb-2').replace(/space-y-2 text-muted-foreground leading-relaxed mb-4/g, 'space-y-1')}</section>` : ''
 
   const main = url === '/blog' ? blogHub(fm, intro, content) : HUBS.has(url) ? hub(fm, intro, content, url, items, sources) : `<main class="flex-1">
 <div class="relative bg-primary text-primary-foreground overflow-hidden"><div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -356,10 +360,13 @@ ${(() => {
   const sec = (s) => `<section class="mb-8"><h2 class="text-2xl font-bold mb-4">${esc(s.title)}</h2>${iconLists(s.title, md(s.md))}</section>`
   // Category pages: the products come first, then the intro; every section after it opens with "Read more"
   if (!isCat || content.length < 2) return content.map(sec).join('\n')
-  return `<details class="np-readmore"><summary>Read more about ${esc(fm.h1.toLowerCase())}</summary><div style="padding-top:24px">${content.map(sec).join('\n')}</div></details>`
+  // the closed state shows a teaser: the first section's heading and opening paragraph, fading out, then the button;
+  // open, the teaser gives way to the full sections, the FAQ and the sources
+  const firstPara = content[0].md.split(/\n\s*\n/).find((x) => !/^(!\[|[-*] |\d+\. |\||:::)/.test(x.trim())) || ''
+  return `<details class="np-readmore"><summary><div class="np-teaser"><h2 class="text-2xl font-bold mb-4">${esc(content[0].title)}</h2>${md(firstPara)}</div><span class="np-rm-btn">Read more about ${esc(fm.h1.toLowerCase())}</span></summary><div style="padding-top:8px">${content.map(sec).join('\n')}${faqHtml}${srcHtml}</div></details>`
 })()}
-${items.length ? `<section class="mb-8"><h2 class="text-2xl font-bold mb-4">Frequently Asked Questions</h2><div class="space-y-3">${items.map((x) => `<details class="border border-border rounded-lg p-4"><summary class="font-semibold text-foreground cursor-pointer">${esc(x.q)}</summary><div class="mt-3">${md(x.a)}</div></details>`).join('')}</div></section>` : ''}
-${sources ? `<section class="np-sources mt-10 border-t border-border pt-6 text-xs text-muted-foreground"><h2 class="text-sm font-semibold text-foreground mb-2">Sources</h2>${md(sources.md).replace(/text-muted-foreground leading-relaxed mb-4/g, 'mb-2').replace(/space-y-2 text-muted-foreground leading-relaxed mb-4/g, 'space-y-1')}</section>` : ''}
+${isCat ? '' : faqHtml}
+${isCat ? '' : srcHtml}
 </div>
 <aside class="space-y-4 min-w-0"><div class="bg-accent/50 rounded-lg p-6 sticky top-4" style="top:132px">${cardImg(url)}
 <h3 class="font-bold mb-2">${ctaHref === '/contact' ? 'Need replacement parts?' : 'Planning a restroom?'}</h3>

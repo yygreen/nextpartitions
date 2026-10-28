@@ -1,7 +1,8 @@
 // Renders the partition product images headless (Playwright Chromium, SwiftShader WebGL).
 //
 //   node render.mjs                        all four styles, front + angle, plus the ceiling-hung finish variants
-//   node render.mjs ceiling-hung front     one style and view (view: front | angle | both)
+//   node render.mjs ceiling-hung front     one style and view (view: front | angle | hero | both)
+//   hero: the finished restroom straight on at eye height (tiled walls, ambient occlusion), for the page heroes
 //   node render.mjs ceiling-hung both stainless
 //
 // Output: design/renders/<style>-<view>[-<finish>].png and .jpg (2400 x 1500, JPEG quality 85).

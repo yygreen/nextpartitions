@@ -14,6 +14,10 @@
 // Parameters come from render.mjs through window.__params: { spec, view, finish, width, height, ss, exposure }.
 import * as THREE from 'three'
 import { buildScene, makeCamera } from './scene.js'
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js'
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js'
+import { GTAOPass } from 'three/addons/postprocessing/GTAOPass.js'
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js'
 
 async function run(p) {
   const W = p.width * p.ss, H = p.height * p.ss
@@ -30,7 +34,20 @@ async function run(p) {
   document.body.appendChild(renderer.domElement)
   const scene = buildScene({ spec: p.spec, finish: p.finish, renderer, view: p.view })
   const camera = makeCamera(p.view, p.spec, W / H)
-  renderer.render(scene, camera)
+  if (p.view === 'front') renderer.render(scene, camera)
+  else {
+    // the finished-room views: ambient occlusion darkens corners, joints and the floor under the stalls, which the
+    // lights alone don't, then tone mapping and colour output as usual
+    const composer = new EffectComposer(renderer)
+    composer.setPixelRatio(1); composer.setSize(W, H)
+    composer.addPass(new RenderPass(scene, camera))
+    const ao = new GTAOPass(scene, camera, W, H)
+    ao.updateGtaoMaterial({ radius: 14, distanceExponent: 1.4, thickness: 6, scale: 1.1, samples: 16 })
+    ao.blendIntensity = 0.85
+    composer.addPass(ao)
+    composer.addPass(new OutputPass())
+    composer.render()
+  }
   // downsample (supersampling) into a 2D canvas at the output size
   const out = document.createElement('canvas'); out.width = p.width; out.height = p.height
   const g = out.getContext('2d'); g.imageSmoothingEnabled = true; g.imageSmoothingQuality = 'high'

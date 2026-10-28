@@ -7,7 +7,7 @@ mounting style, matching the technical drawings `design/diagrams/mounting-<style
 cd design/render3d
 npm install                                 # three 0.160.0 (pinned)
 node render.mjs                             # all 4 styles × front/angle, plus ceiling-hung blue-grey and stainless
-node render.mjs ceiling-hung front          # one style, one view (front | angle | both)
+node render.mjs ceiling-hung front          # one style, one view (front | angle | hero | both); hero = photo-like straight-on view for the page heroes
 node render.mjs ceiling-hung both stainless # one finish (cream | bluegrey | stainless)
 ```
 
