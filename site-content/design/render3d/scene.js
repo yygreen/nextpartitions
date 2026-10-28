@@ -180,7 +180,10 @@ function sectionRoom(scene, spec, M) {
     scene.add(m); return m
   }
   floorPlane(scene, 0, run, -depth, ZC)
-  cutBox(-wt - 10 / frame.S, run + wt + 20 / frame.S, -frame.slab, 0, -depth - 6, ZC, M.wall) // slab, as front() draws it
+  // the floor slab's cut face in a darker warm stone, so the floor line stands out from the walls
+  const slabCut = new THREE.MeshBasicMaterial({ color: '#a39079', toneMapped: false })
+  const slab = cutBox(-wt - 10 / frame.S, run + wt + 20 / frame.S, -frame.slab, 0, -depth - 6, ZC, M.wall) // slab, as front() draws it
+  slab.material[4] = slabCut
   cutBox(-wt, 0, 0, wallH, -depth - 6, ZC, M.wall)
   cutBox(run, run + wt, 0, wallH, -depth - 6, ZC, M.wall)
   const backTop = spec.ceiling ?? wallH
