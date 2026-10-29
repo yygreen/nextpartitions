@@ -1,14 +1,14 @@
 ---
 url: /guides/installation-instructions
-title: Bathroom Partition Installation Instructions
-meta: Find bathroom partition installation instructions by brand and material: which manufacturer document to use, what we could link, and where to request the rest.
-h1: Bathroom Partition Installation Instructions
+title: Manufacturer Installation Instructions for Bathroom Partitions | Next Partitions
+meta: Manufacturer installation instructions for bathroom partitions, by brand and material: which official document to use, what we could link, and where to request the rest.
+h1: Manufacturer Installation Instructions for Bathroom Partitions
 primary_keyword: bathroom partition installation instructions (30/mo)
 secondary_keywords: [hadrian toilet partitions installation instructions (30), bobrick toilet partition installation instructions (20), metpar toilet partitions installation (20), asi installation instructions, bradley installation instructions, scranton installation instructions, ammco installation instructions, toilet partition revit family (volume: confirm), toilet partition cad details (volume: confirm)]
 words: 1,550
 ---
 
-# Bathroom Partition Installation Instructions
+# Manufacturer Installation Instructions for Bathroom Partitions
 
 Bathroom partition installation instructions come from the manufacturer, and they differ by brand, series, material and mounting style. This page points you to the official document for each brand we carry. Where we could not confirm a manufacturer link, we say so and tell you how to get the document.
 

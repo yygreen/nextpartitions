@@ -30,7 +30,7 @@ Disclaimer: ADA dimensions and accessibility guidance shown here are provided fo
 How partitions go in, and where to find each manufacturer's own instructions. Next Partitions supplies partitions and doesn't install them: follow the manufacturer's instructions and use a qualified installer.
 
 - [How to Install Bathroom Partitions](/guides/how-to-install-toilet-partitions)
-- [Installation Instructions by Brand](/guides/installation-instructions)
+- [Manufacturer Installation Instructions](/guides/installation-instructions)
 
 ## Choose a material
 
