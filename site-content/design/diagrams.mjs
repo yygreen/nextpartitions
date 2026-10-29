@@ -1407,7 +1407,7 @@ function pilasterPlan(kind, cx, top, s, ph) {
 
 // 5. Installation sequence: small frames, each a plan (seen from above) over a front elevation of two stalls,
 // the step in orange, earlier steps in ink, later ones not yet there.
-const STEPS = ['Mark the layout', 'Wall brackets', 'Wall pilasters', 'Panels', 'Headrail', 'Hang the doors', 'Hinges and latches']
+const STEPS = ['Mark the layout', 'Wall brackets', 'Wall pilasters', 'Panels', 'Headrail', 'Doors on hinges', 'Latches, keepers']
 function seqFrame(step, ox, py, s, ph) {
   const wt = ph ? 6 : 8, depth = 60, wallH = 90
   const X = (i) => ox + wt + i * s, PY = (i) => py + wt + i * s
@@ -1452,18 +1452,20 @@ function seqFrame(step, ox, py, s, ph) {
     el += rect(X(0), EY(82) - 2.5 * s, 72 * s, 2.5 * s, o)
     if (step === 5) pl += line(X(0), PY(depth), X(72), PY(depth), { stroke: C.orange, sw: 3 })
   }
-  // 6 doors, inswing, hinged on their left; 7 hinges and latches
+  // 6 doors, inswing, hung on their hinges (on their left); 7 latches and keepers
   if (on(6)) {
     for (const [h, l] of [[6, 30], [42, 66]]) {
       const R = 24 * s, a = 40 * Math.PI / 180, ex = X(h) + R * Math.cos(a), eyy = PY(depth) - R * Math.sin(a)
       const c = step === 6 ? C.orange : C.ink
       pl += `<path d="M${X(l)} ${PY(depth)} A${R} ${R} 0 0 0 ${ex.toFixed(1)} ${eyy.toFixed(1)}" fill="none" stroke="${step === 6 ? C.orange : C.muted}" stroke-width="1" stroke-dasharray="4 3"/>` + line(X(h), PY(depth), ex.toFixed(1), eyy.toFixed(1), { stroke: c, sw: 2.5 })
       el += rect(X(h + 0.4), EY(70), 23.2 * s, 58 * s, st(6))
-      if (step === 7) {
-        const o = { fill: C.orange, stroke: C.orange, sw: 1 }
-        el += rect(X(h + 0.4) - 2, EY(64), 5, 8 * s, o) + rect(X(h + 0.4) - 2, EY(22), 5, 8 * s, o) + rect(X(l - 0.4) - 7, EY(42), 9, 5, o)
-        pl += `<circle cx="${X(h)}" cy="${PY(depth)}" r="3.5" fill="${C.orange}"/>` + rect(X(l) - 3, PY(depth) - 3, 6, 6, o)
-      }
+      // 6: the door hangs on its hinges (they fix to the door and the pilaster), so the hinges come with it;
+      // 7: the latch and keeper, set with the door closed
+      const o = { fill: C.orange, stroke: C.orange, sw: 1 }, ink = { fill: C.ink, stroke: C.ink, sw: 1 }
+      const hg = step === 6 ? o : ink
+      el += rect(X(h + 0.4) - 2, EY(64), 5, 8 * s, hg) + rect(X(h + 0.4) - 2, EY(22), 5, 8 * s, hg)
+      pl += `<circle cx="${X(h)}" cy="${PY(depth)}" r="3.5" fill="${step === 6 ? C.orange : C.ink}"/>`
+      if (step === 7) el += rect(X(l - 0.4) - 7, EY(42), 9, 5, o), pl += rect(X(l) - 3, PY(depth) - 3, 6, 6, o)
     }
   }
   return { b: pl + el, ey, slab: ph ? 5 : 7, w: 72 * s + 2 * wt, mid: PY(depth) + gap - 10 }
@@ -1500,7 +1502,7 @@ function seqFrame(step, ox, py, s, ph) {
   draw([1, 2, 3, 4], 'install-sequence-1', 'Toilet partition installation sequence, steps 1 to 4',
     'Four small frames, each a plan seen from above over a front view of two stalls: 1, the layout marked on the floor and walls; 2, wall brackets fixed at the marks; 3, the wall pilasters stood in their shoes and leveled; 4, the panel set into its wall brackets on a 12-inch spacer, with the middle pilaster to follow. Each step is shown in orange.')
   draw([5, 6, 7], 'install-sequence-2', 'Toilet partition installation sequence, steps 5 to 7',
-    'Three small frames, each a plan seen from above over a front view of two stalls: 5, the headrail fixed across the pilaster tops and to both walls; 6, the doors hung; 7, hinges and latches set and the gaps checked. Each step is shown in orange.')
+    'Three small frames, each a plan seen from above over a front view of two stalls: 5, the headrail fixed across the pilaster tops and to both walls; 6, the doors hung on their hinges, with the gaps set; 7, the latches and keepers fitted with the doors closed. Each step is shown in orange.')
 }
 
 // ---------- installation and accessibility drawings, batch 2 (2026-10-27) ----------

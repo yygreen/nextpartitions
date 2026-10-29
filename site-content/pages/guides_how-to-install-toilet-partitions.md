@@ -84,7 +84,7 @@ Most lines go in the same order. The two strips below are the whole job at a gla
 
 ![Installation sequence, steps 1 to 4: layout, wall brackets, wall pilasters, panels](/images/diagrams/install-sequence-1.svg)
 
-![Installation sequence, steps 5 to 7: headrail, doors, hinges and latches](/images/diagrams/install-sequence-2.svg)
+![Installation sequence, steps 5 to 7: headrail, doors on their hinges, latches and keepers](/images/diagrams/install-sequence-2.svg)
 
 ### 1. Mark the layout
 
@@ -123,9 +123,9 @@ The headrail clamps over the pilaster tops and fastens to the walls at both ends
 
 ![The headrail clamped over the top of a pilaster](/images/diagrams/mounting-overhead-braced-detail-headrail.svg)
 
-### 6. Hang the doors and set the gaps
+### 6. Hang the doors on their hinges and set the gaps
 
-Hang each door on its spacer, then set the gaps along its edges before you tighten the hinge screws. The drawing shows typical gaps, drawn wider than scale so they show. Your shop drawings set the actual sizes.
+Hang each door on its spacer and fix its hinges to the door and the pilaster, then set the gaps along its edges before you tighten the hinge screws. The drawing shows typical gaps, drawn wider than scale so they show. Your shop drawings set the actual sizes.
 
 ![Gaps between a door and its pilasters, a wall pilaster and the wall, and a panel and the back wall, with the 12-inch spacer](/images/diagrams/install-gaps.svg)
 
@@ -138,9 +138,9 @@ Hang each door on its spacer, then set the gaps along its edges before you tight
 
 Adjust the doors so their tops run parallel with the headrail.
 
-### 7. Set the hinges and latches
+### 7. Fit the latches and keepers
 
-Set the rest position at the hinge, then fit the keeper in line with the latch. Both are covered under [hardware](#hardware) below.
+With the door closed, fit the keeper on the pilaster in line with the latch, and set the door's rest position at the hinge. Both are covered under [hardware](#hardware) below.
 
 ## Ceiling hung
 
