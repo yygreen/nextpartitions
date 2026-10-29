@@ -91,7 +91,9 @@ Replacing hardware makes sense when panels, doors and pilasters are sound. If do
 
 Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
 
-[Get a quote](/get-a-quote) for new partitions, or [Contact Us](/contact) for replacement parts.
+[Get a quote](/get-a-quote) for new partitions.
+
+[Contact Us](/contact) for replacement parts.
 
 ## FAQ
 
