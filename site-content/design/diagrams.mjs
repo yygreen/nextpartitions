@@ -1411,7 +1411,8 @@ const STEPS = ['Mark the layout', 'Wall brackets', 'Wall pilasters', 'Panels', '
 function seqFrame(step, ox, py, s, ph) {
   const wt = ph ? 6 : 8, depth = 60, wallH = 90
   const X = (i) => ox + wt + i * s, PY = (i) => py + wt + i * s
-  const ey = PY(depth) + (ph ? 16 : 22) + wallH * s, EY = (i) => ey - i * s
+  const gap = ph ? 30 : 42 // room between the plan and the front view for the row label
+  const ey = PY(depth) + gap + wallH * s, EY = (i) => ey - i * s
   const now = { fill: C.orangeTint, stroke: C.orange, sw: 2 }, done = { sw: 1.2 }
   const st = (n) => (step === n ? now : done), on = (n) => step >= n
   const tp = ph ? 3 : 4
@@ -1465,16 +1466,19 @@ function seqFrame(step, ox, py, s, ph) {
       }
     }
   }
-  return { b: pl + el, ey, slab: ph ? 5 : 7, w: 72 * s + 2 * wt }
+  return { b: pl + el, ey, slab: ph ? 5 : 7, w: 72 * s + 2 * wt, mid: PY(depth) + gap - 10 }
 }
 {
-  const s = 1.9, fw = 195, py = 18
+  const s = 1.9, fw = 195, py = 38
+  // row labels: which row is the plan (seen from above) and which the front view
+  const rowLabel = (x, y, t, anchor = 'start') => text(x, y, t, { size: 13, weight: 600, fill: C.muted, anchor })
   const draw = (steps, name, title, desc) => {
     let b = ''
     const x0 = (780 - steps.length * fw) / 2
     let ey = 0
     steps.forEach((n, i) => {
       const fx = x0 + i * fw, f = seqFrame(n, fx + (fw - (72 * s + 16)) / 2, py, s, false)
+      if (i === 0) b += rowLabel(fx + (fw - (72 * s + 16)) / 2, py - 12, 'Seen from above') + rowLabel(fx + (fw - (72 * s + 16)) / 2, f.mid, 'Seen from the front')
       ey = f.ey
       b += f.b + disc(n, fx + 22, f.ey + 36) + text(fx + 40, f.ey + 41, STEPS[n - 1], { size: 14, weight: 600 })
     })
@@ -1484,9 +1488,10 @@ function seqFrame(step, ox, py, s, ph) {
         let p = '', ey2 = 0
         const pair = steps.slice(m * 2, m * 2 + 2)
         pair.forEach((n, i) => {
-          const cx = pair.length === 1 ? 180 : 90 + i * 180, f = seqFrame(n, cx - (72 * 1.2 + 12) / 2 + 8, 8, 1.2, true)
+          const cx = pair.length === 1 ? 180 : 90 + i * 180, f = seqFrame(n, cx - (72 * 1.2 + 12) / 2 + 8, 30, 1.2, true)
           ey2 = f.ey
-          p += f.b + disc(n, cx - 66, 22)
+          p += f.b + disc(n, cx - 66, 44)
+          if (i === 0) p += rowLabel(180, 18, 'Seen from above', 'middle') + rowLabel(180, f.mid, 'Seen from the front', 'middle')
         })
         phone(`${name}-m${m + 1}`, ey2 + 12, p)
       }
