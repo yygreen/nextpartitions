@@ -22,7 +22,7 @@ In the front view of a row of stalls, the headrail runs across the pilaster tops
 2. **Pilaster shoe:** 4" stainless steel
 3. **Pilaster:** 82" here, some lines 83"
 
-Doors and panels are 58" high and 12" above the floor, with 12" more to the top of the headrail: 82" in this drawing. An overhead braced stall has four kinds of parts:
+On a standard partition, doors and panels are 58" high and mounted 12" above the floor, and the pilasters and headrail top out at about 82" to 83", depending on the brand (82" in this drawing). Privacy and some solid plastic lines use other heights: see Typical specifications below. An overhead braced stall has four kinds of parts:
 
 - **Pilasters** (Bobrick calls them stiles): the vertical posts at the front of each stall that carry the doors. Bobrick's standard overhead-braced stile is 83" high.
 - **Floor brackets and leveling device:** a steel bracket at the foot of each pilaster, fastened to the finished floor and adjustable for level. In Bobrick's plastic laminate line it's a 12-gauge plated steel bracket with a leveling bolt, floor L-bracket and stainless steel floor screws.
@@ -114,7 +114,7 @@ The pilasters are anchored to the floor and braced at the top by a continuous he
 No. The headrail sits on top of the pilasters and fastens to the walls at each end. No ceiling structure is needed.
 
 ### How tall are overhead braced partitions?
-Bobrick's standard overhead-braced pilaster is 83" high. Doors and panels are typically 58" high, mounted 12" above the floor. Solid plastic lines often use 55" mounted at 14".
+These are standard heights, and they vary by brand and line. Bobrick's standard overhead-braced pilaster is 83" high; Bradley's PH400 example is 82". Doors and panels are typically 58" high, mounted 12" above the floor. Solid plastic lines often use 55" mounted at 14". Privacy lines run taller and lower: Bradley lists 69" doors and panels at 9" above the floor, and 72" at 6". Your shop drawings set the actual heights.
 
 ### What is an anti-grip headrail?
 It's an aluminum headrail with a profile that's hard to grab or hang from. ASI describes its headrail as anti-grip, and Hadrian says its anti-grip top rail deters boisterous activity.
@@ -124,6 +124,8 @@ Yes. Manufacturers we carry offer it in powder coated steel, stainless steel, pl
 
 ## Sources
 
+- Bradley Partitions brochure, https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf: 69" doors and panels at 9" above the floor and 72" at 6". Checked 2026-10-27.
+- Bradley, Phenolic Floor-Mounted Overhead-Braced PH400 Series spec sheet, https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf: 58" doors and panels at 12", 82" overall height. Checked 2026-10-27.
 - ASI Global Partitions, powder coated steel toilet partitions ("economical and sturdy", "installs just about anywhere", "anodized aluminum anti-grip head rail"): https://sweets.construction.com/manufacturer/asi-global-partitions-nst1616/products/powder-coated-steel-toilet-partitions-nst708591-p, checked 2026-10-26
 - ASI Accurate Partitions, stainless steel toilet partitions (mounting styles): https://sweets.construction.com/manufacturer/asi-accurate-partitions-nst873/products/stainless-steel-toilet-partitions-nst708352-p, checked 2026-10-26
 - Bobrick, High Pressure Laminate 1550 Series technical data (83" overhead-braced stile, leveling device, headrail, 58" doors, ceiling-support note): https://www.bobrick.com/wp-content/uploads/1550_td.pdf, checked 2026-10-26
