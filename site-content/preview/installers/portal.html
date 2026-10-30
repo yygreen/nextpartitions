@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Installer Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<style>
+/* Installer portal: where an approved installer prices Next Partitions jobs. Light-only, nextpartitions.com tokens. */
+:root{
+  --bg:#fbfaf9; --band:#f4f2ee; --surface:#ffffff; --fg:#1c0e05; --muted:#6d6059;
+  --border:#e1ddd7; --accent:#e8630a; --accent-strong:#c95200; --accent-soft:#fdeee3; --on-accent:#ffffff;
+  --ink:#262626; --ink-fg:#f8f8f8; --ink-muted:#c9c2bc; --good:#1f7a4d; --good-soft:#e6f3ec; --warn:#8a5a00; --warn-soft:#fff3c4;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --container:1360px; --gutter:34px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter)}
+@media (max-width:760px){:root{--gutter:16px}}
+.mocknote{background:#fff3c4;border-bottom:1px solid #f0d98a;font-size:13px;color:#5c4400;padding:8px 16px;display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:center;align-items:center}
+.mocknote .seg{display:inline-flex;border:1px solid #d9bf6a;background:#fff}
+.mocknote .seg button{font:inherit;font-size:13px;font-weight:600;border:0;background:none;padding:4px 10px;cursor:pointer;color:#5c4400}
+.mocknote .seg button[aria-pressed="true"]{background:#5c4400;color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;background:var(--accent);color:var(--on-accent);font:inherit;font-weight:700;font-size:15px;padding:10px 18px;min-height:44px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--accent-strong)}
+.btn.ghost{background:var(--surface);color:var(--accent-strong);border:2px solid var(--accent)}
+.btn.ghost:hover{background:var(--accent-soft)}
+.btn.quiet{background:var(--surface);color:var(--fg);border:1px solid var(--border)}
+.btn.sm{font-size:13px;padding:6px 12px;min-height:34px}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.link{font:inherit;background:none;border:0;padding:0;color:var(--accent-strong);font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* header */
+.phd{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:30}
+.phd .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:36px;width:auto}
+.brand b{display:block;font-size:18px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.who{display:flex;align-items:center;gap:12px;font-size:14px}
+.who .av{width:34px;height:34px;display:grid;place-items:center;background:var(--fg);color:#fff;font-weight:800;font-size:13px}
+.who small{display:block;color:var(--muted);font-size:12px}
+@media (max-width:640px){.who .nm{display:none}.brand small{display:none}}
+.tabs{border-bottom:1px solid var(--border);background:var(--surface);overflow-x:auto}
+.tabs>.wrap{width:100%}
+.tabs button{font:inherit;font-weight:600;font-size:14px;background:none;border:0;border-bottom:3px solid transparent;padding:12px 14px;cursor:pointer;color:var(--muted);white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--fg);border-bottom-color:var(--accent)}
+.tabs .n{display:inline-grid;place-items:center;min-width:20px;height:20px;padding:0 6px;background:var(--accent);color:#fff;font-size:12px;font-weight:800;margin-left:6px}
+
+/* jobs layout */
+main{padding-block:24px 60px}
+.jobs{display:grid;grid-template-columns:360px minmax(0,1fr);gap:24px;align-items:start}
+@media (max-width:1024px){.jobs{grid-template-columns:1fr}}
+.inbox{background:var(--surface);border:1px solid var(--border)}
+.inbox h2{font-size:14px;font-weight:800;margin:0;padding:14px 16px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between}
+.inbox h2 span{color:var(--muted);font-weight:500}
+.jrow{display:block;width:100%;text-align:left;font:inherit;background:none;border:0;border-bottom:1px solid var(--border);padding:12px 16px;cursor:pointer;position:relative}
+.jrow:last-child{border-bottom:0}
+.jrow:hover{background:var(--band)}
+.jrow[aria-current="true"]{background:var(--accent-soft);box-shadow:inset 3px 0 0 var(--accent)}
+.jrow .t{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.jrow b{font-size:15px}
+.jrow .ref{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.jrow p{margin:2px 0 6px;font-size:13px;color:var(--muted)}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;padding:2px 8px;border:1px solid var(--border);background:var(--band);color:var(--fg)}
+.pill.new{background:var(--accent);border-color:var(--accent);color:#fff}
+.pill.wait{background:var(--warn-soft);border-color:#f0d98a;color:var(--warn)}
+.pill.go{background:var(--good-soft);border-color:#b9dcc8;color:var(--good)}
+.pill.off{color:var(--muted)}
+.due{font-size:12px;color:var(--accent-strong);font-weight:700;margin-left:6px}
+
+/* job detail */
+.card{background:var(--surface);border:1px solid var(--border);padding:20px 22px;margin-bottom:16px}
+.card h3{font-size:16px;font-weight:800;margin:0 0 12px}
+.jhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:flex-start}
+.jhead h2{font-size:24px;font-weight:900;letter-spacing:-.02em;margin:0}
+.jhead .sub{margin:2px 0 0;color:var(--muted)}
+.steps{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;counter-reset:s}
+.steps li{font-size:12px;font-weight:600;color:var(--muted);line-height:1.3}
+.steps li::before{content:"";display:block;height:4px;background:var(--border);margin-bottom:6px}
+.steps li.done{color:var(--fg)}.steps li.done::before{background:var(--fg)}
+.steps li.now{color:var(--accent-strong);font-weight:800}.steps li.now::before{background:var(--accent)}
+@media (max-width:640px){.steps{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+dl.kv{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:14px}
+dl.kv dt{color:var(--muted)}
+dl.kv dd{margin:0;font-weight:600}
+.files{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.file{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);padding:8px 10px;font-size:13px;font-weight:600;background:var(--band)}
+.file i{font-style:normal;background:#b42318;color:#fff;font-size:10px;font-weight:800;padding:2px 4px}
+.locked{display:flex;gap:12px;align-items:flex-start;background:var(--band);border:1px dashed #cfc7bf;padding:14px}
+.locked .ic{font-size:20px;line-height:1}
+.locked p{margin:0;font-size:14px;color:var(--muted)}
+.locked b{color:var(--fg);display:block}
+.blur{filter:blur(5px);user-select:none}
+
+/* action panel */
+.act{border-top:4px solid var(--accent)}
+.act .lead{margin:0 0 14px;color:var(--muted)}
+.lines{width:100%;border-collapse:collapse;font-size:14px}
+.lines th{text-align:left;font-size:12px;color:var(--muted);font-weight:600;padding:6px 8px 6px 0;border-bottom:1px solid var(--border)}
+.lines td{padding:8px 8px 8px 0;border-bottom:1px solid var(--border);vertical-align:middle}
+.lines td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.lines input{font:inherit;width:100%;min-height:38px;border:1px solid var(--border);padding:0 8px;background:#fff}
+.lines input.amt{width:110px;text-align:right}
+.lines .x{background:none;border:0;color:var(--muted);font-size:18px;cursor:pointer}
+.ltot{display:flex;justify-content:space-between;align-items:baseline;padding:12px 0 4px;font-weight:800}
+.ltot b{font-size:26px;font-variant-numeric:tabular-nums}
+.vs{font-size:13px;color:var(--muted);margin:0 0 12px}
+.vs.hi{color:var(--warn);font-weight:600}
+.field{display:grid;gap:6px;font-size:14px;font-weight:600;margin:12px 0}
+.field textarea,.field select,.field input{font:inherit;font-weight:400;border:1px solid var(--border);padding:8px 10px;background:#fff;min-height:42px}
+.btns{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px}
+.note{font-size:13px;color:var(--muted);margin:10px 0 0}
+.ok{background:var(--good-soft);border:1px solid #b9dcc8;color:#14532d;padding:12px 14px;font-size:14px;margin:0 0 12px}
+.demo{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px;padding-top:12px;border-top:1px dashed #d9bf6a;font-size:13px;color:#5c4400}
+.demo button{font:inherit;font-size:13px;font-weight:700;background:#fff3c4;border:1px solid #d9bf6a;color:#5c4400;padding:6px 10px;cursor:pointer}
+
+/* messages */
+.thread{display:grid;gap:10px;max-height:340px;overflow:auto;padding-right:4px}
+.msg{max-width:85%;padding:10px 12px;font-size:14px;border:1px solid var(--border);background:var(--band)}
+.msg.me{justify-self:end;background:var(--accent-soft);border-color:#f5c9a6}
+.msg small{display:block;font-size:11px;color:var(--muted);margin-bottom:2px;font-weight:600}
+.msg .redact{background:#1c0e05;color:#1c0e05;padding:0 3px}
+.compose{display:flex;gap:8px;margin-top:12px}
+.compose textarea{flex:1;font:inherit;border:1px solid var(--border);padding:8px 10px;min-height:44px;resize:vertical}
+
+/* coordinator view */
+.ctable{width:100%;border-collapse:collapse;font-size:14px}
+.ctable th{text-align:left;font-size:12px;color:var(--muted);font-weight:600;padding:8px 10px 8px 0;border-bottom:1px solid var(--border)}
+.ctable td{padding:10px 10px 10px 0;border-bottom:1px solid var(--border)}
+.ctable td.num{text-align:right;font-variant-numeric:tabular-nums}
+.flog{margin:0 0 12px;padding-left:18px;display:grid;gap:6px;font-size:14px}
+.flog b{font-weight:700;margin-right:4px}
+.fbadd{display:inline-flex;gap:6px;align-items:center;flex-wrap:wrap}
+.fbadd select{font:inherit;min-height:44px;border:1px solid var(--border);padding:0 8px;background:#fff;max-width:100%}
+.custview{background:var(--band);border:1px solid var(--border);padding:16px;margin-top:14px}
+.custview h4{margin:0 0 4px;font-size:15px}
+.copt{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#fff;border:1px solid var(--border);padding:10px 12px;margin-top:8px;font-size:14px}
+.copt b{font-variant-numeric:tabular-nums}
+
+/* other tabs */
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:16px}
+@media (max-width:900px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{background:var(--surface);border:1px solid var(--border);padding:16px}
+.kpi b{display:block;font-size:26px;font-weight:900;letter-spacing:-.02em}
+.kpi span{font-size:13px;color:var(--muted)}
+.kpi .tg{display:block;font-size:12px;margin-top:6px;color:var(--good);font-weight:700}
+.rtable{width:100%;border-collapse:collapse;font-size:14px}
+#tab-rates .card{max-width:760px}
+@media (max-width:640px){.lines input.amt{width:80px}.card{padding:16px}}
+.rtable th{text-align:left;font-size:12px;color:var(--muted);font-weight:600;padding:8px 10px 8px 0;border-bottom:1px solid var(--border)}
+.rtable td{padding:8px 10px 8px 0;border-bottom:1px solid var(--border)}
+.rtable input{font:inherit;width:100px;min-height:36px;border:1px solid var(--border);padding:0 8px;text-align:right}
+.terms{margin:0;padding-left:20px;display:grid;gap:8px}
+.disc{font-size:13px;color:var(--muted);border-top:1px solid var(--border);padding-top:12px;margin-top:16px}
+</style>
+</head>
+<body>
+
+<div class="mocknote"><span><b>Mockup:</b> the installer portal. All jobs, customers, prices and messages are fictional samples.</span>
+  <span>View as <span class="seg" role="group" aria-label="View as"><button type="button" data-view="inst" aria-pressed="true">Installer (Acme)</button><button type="button" data-view="np" aria-pressed="false">Next Partitions</button></span></span></div>
+
+<header class="phd"><div class="wrap">
+  <a class="brand" href="home.html"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small id="portalName">Installer portal</small></span></a>
+  <div class="who"><span class="nm" id="whoNm"><b>Acme Partition Installs</b><small>Approved · Top rated · Dallas</small></span><span class="av" id="whoAv">AP</span></div>
+</div></header>
+<nav class="tabs" role="tablist" aria-label="Portal"><div class="wrap" style="display:flex;gap:4px">
+  <button type="button" role="tab" data-tab="jobs" aria-selected="true">Jobs<span class="n" id="newCount">1</span></button>
+  <button type="button" role="tab" data-tab="rates" aria-selected="false">Your rates</button>
+  <button type="button" role="tab" data-tab="perf" aria-selected="false">Performance</button>
+  <button type="button" role="tab" data-tab="terms" aria-selected="false">Listing agreement</button>
+</div></nav>
+
+<main class="wrap">
+  <!-- JOBS -->
+  <section id="tab-jobs" role="tabpanel">
+    <div class="jobs">
+      <div class="inbox"><h2>Job requests <span id="inboxSub"></span></h2><div id="inbox"></div></div>
+      <div id="detail"></div>
+    </div>
+  </section>
+
+  <!-- RATES -->
+  <section id="tab-rates" role="tabpanel" hidden>
+    <div class="card">
+      <h3>Your installation rates</h3>
+      <p class="note" style="margin:0 0 14px">Customers see an instant installation estimate from these rates before you price a job. You then confirm a firm price on each job. Changes are checked by Next Partitions within 1 business day. Last approved Oct 2, 2026.</p>
+      <table class="rtable"><thead><tr><th>Per stall, by material</th><th>Rate</th></tr></thead><tbody id="rateRows"></tbody></table>
+      <table class="rtable" style="margin-top:16px"><thead><tr><th>Extras</th><th>Rate</th></tr></thead><tbody id="extraRows"></tbody></table>
+      <div class="btns" style="margin-top:16px"><button class="btn" type="button" id="saveRates">Submit changes for review</button><span class="note" id="rateMsg" style="margin:0"></span></div>
+    </div>
+  </section>
+
+  <!-- PERFORMANCE -->
+  <section id="tab-perf" role="tabpanel" hidden>
+    <div class="kpis">
+      <div class="kpi"><b>6 h</b><span>Median reply to job requests</span><span class="tg">Target: within 1 business day ✓</span></div>
+      <div class="kpi"><b>96%</b><span>Firm prices sent within 2 business days</span><span class="tg">Target: 90% ✓</span></div>
+      <div class="kpi"><b>★ 4.9</b><span>From 28 reviews by customers with a completed job</span><span class="tg">Top rated: 4.8+ from 10+ ✓</span></div>
+      <div class="kpi"><b>28</b><span>Installs for Next Partitions customers</span><span class="tg">Established: 10+ ✓</span></div>
+    </div>
+    <div class="card">
+      <h3>How this affects your listing</h3>
+      <p style="margin:0 0 10px">Your Installer Score sets your place on the directory and area pages. It combines your rating, installs for our customers and how fast you answer job requests.</p>
+      <ul class="terms"><li>Slow or missed replies lower your place in the list. If they continue, we review your listing.</li><li>Ratings below 4.0 or a pattern of complaints trigger a check and can lead to delisting.</li><li>Reviews are published unedited. You can reply publicly to any review.</li></ul>
+    </div>
+  </section>
+
+  <!-- AGREEMENT -->
+  <section id="tab-terms" role="tabpanel" hidden>
+    <div class="card">
+      <h3>Your listing agreement, in short</h3>
+      <ul class="terms">
+        <li>Install the partitions on the customer's Next Partitions order. No substitutes, and no selling partitions on our jobs.</li>
+        <li>Price jobs through this portal and report job status (scheduled, installed).</li>
+        <li>Talk to customers through Next Partitions until the job is released to you. Contact details in messages are hidden until then.</li>
+        <li>Don't go around Next Partitions on customers we refer to you (non-circumvention). Breaches lead to a fee or delisting.</li>
+        <li>You contract and invoice installation directly with the customer. Next Partitions adds no markup to your price.</li>
+        <li>Keep your insurance and business or city registration current. We check them every year.</li>
+      </ul>
+      <p class="disc">Summary only; the signed agreement applies. Installers are independent businesses. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work.</p>
+    </div>
+  </section>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const money=n=>"$"+Math.round(n).toLocaleString("en-US");
+
+// Acme's rate card (sample; same numbers as the directory pages)
+const RATE={mat:{pc:115,hdpe:140,lam:120,phen:160,ss:175},ch:45,ada:40,urinal:45,removal:25,min:700,free:60,perMi:2};
+const MATN={pc:"Powder coated",hdpe:"Solid plastic (HDPE)",lam:"Plastic laminate",phen:"Phenolic",ss:"Stainless steel"};
+const STEPS=["Request","Priced","Chosen","Released","Scheduled","Installed"];
+const ST={searching:0,new:0,priced:1,chosen:2,released:3,scheduled:4,installed:5,lost:1};
+const LABEL={searching:["No installer prices yet","wait"],new:["New request","new"],priced:["Priced · waiting for customer","wait"],chosen:["Chosen · waiting for payment","wait"],released:["Released · schedule it","go"],scheduled:["Scheduled","go"],installed:["Installed","off"],lost:["Customer chose another installer","off"]};
+
+const JOBS=[
+ {id:"NP-DFW-1048",city:"Plano",zip:"75074",bldg:"School (elementary)",mat:"hdpe",mount:"Overhead braced",ch:false,color:"Sage 2141",layout:"Between walls",stalls:6,ada:true,w:'36"',d:'60"',priv:true,urinals:2,removal:6,
+  delivery:"Nov 9–13, 2026",deliveryDate:"2026-11-11",miles:18,status:"new",sent:"Today, 8:12 AM",due:"Tue, 10:00 AM",notes:"Old stalls to be removed and hauled away. Ground floor, loading dock at the back.",
+  cust:{name:"Pat Lee",org:"Plano ISD, Facilities",phone:"(214) 555-0100",email:"pat.lee@example.org",site:"1200 Example Pkwy, Plano, TX 75074",contact:"Front office, 7:30 AM–3:30 PM"},
+  msgs:[["np","[Coordinator name] · Next Partitions","Hi Acme, new job in Plano. Shop drawings attached. The customer would like installation the week after delivery. Price by Tuesday 10 AM if you can."]],
+  others:[["Northwind Washroom Pros","Replied in 9 h",1180],["Contoso Specialty Contractors","Not replied yet",null]]},
+ {id:"NP-DFW-1045",city:"Dallas",zip:"75201",bldg:"Office tower",mat:"phen",mount:"Floor mounted",ch:false,color:"Charcoal 2123",layout:"Alcove, left door with stalls",stalls:8,ada:true,w:'36"',d:'60"',priv:false,urinals:3,removal:0,
+  delivery:"Nov 16–20, 2026",deliveryDate:"2026-11-18",miles:2,status:"priced",sent:"Oct 16",due:"",price:1540,notes:"After-hours install only (6 PM–6 AM). Freight elevator booked by building management.",
+  cust:{name:"Morgan Reyes",org:"Elm Street Tower LLC",phone:"(214) 555-0144",email:"m.reyes@example.com",site:"500 Example St, Dallas, TX 75201",contact:"Security desk"},
+  msgs:[["np","[Coordinator name] · Next Partitions","Thanks, your price is with the customer. They're comparing two options and expect to decide this week."]],others:[["Contoso Specialty Contractors","Replied in 20 h",1480]]},
+ {id:"NP-DFW-1041",city:"Irving",zip:"75038",bldg:"Gym",mat:"pc",mount:"Overhead braced",ch:false,color:"Gray 2125",layout:"Corner left",stalls:4,ada:false,w:'36"',d:'60"',priv:false,urinals:1,removal:0,
+  delivery:"Nov 2–6, 2026",deliveryDate:"2026-11-04",miles:11,status:"chosen",sent:"Oct 12",due:"",price:700,notes:"",
+  cust:{name:"Sam Ortiz",org:"Irving Fitness Co.",phone:"(972) 555-0190",email:"sam@example.com",site:"42 Example Rd, Irving, TX 75038",contact:"Sam, on site weekdays"},
+  msgs:[["np","[Coordinator name] · Next Partitions","Good news: the customer chose you. Their details unlock as soon as they pay for the partitions order."]],others:[]},
+ {id:"NP-DFW-1036",city:"Garland",zip:"75040",bldg:"Community center",mat:"hdpe",mount:"Overhead braced",ch:false,color:"Almond 2103",layout:"Between walls",stalls:10,ada:true,w:'36"',d:'60"',priv:false,urinals:4,removal:10,
+  delivery:"Oct 26–30, 2026",deliveryDate:"2026-10-28",miles:20,status:"released",sent:"Oct 3",due:"",price:2150,notes:"Building closed Sundays.",
+  cust:{name:"Jordan Kim",org:"City of Garland, Parks",phone:"(972) 555-0120",email:"jkim@example.gov",site:"77 Example Ave, Garland, TX 75040",contact:"Jordan Kim, (972) 555-0120"},
+  msgs:[["np","[Coordinator name] · Next Partitions","Partitions order paid; the job is yours. Delivery is booked for Oct 28. Please set your install date."]],others:[]},
+ {id:"NP-DFW-1029",city:"Richardson",zip:"75080",bldg:"Restaurant",mat:"lam",mount:"Floor mounted",ch:false,color:"White 2129",layout:"Single alcove, left door",stalls:2,ada:true,w:'36"',d:'60"',priv:false,urinals:0,removal:2,
+  delivery:"Sep 28–Oct 2, 2026",deliveryDate:"2026-09-30",miles:14,status:"installed",sent:"Sep 15",due:"",price:700,installDate:"Oct 6, 2026",notes:"",review:[5,"On time, tidy, and the doors line up perfectly. Would book again."],
+  cust:{name:"Alex Chen",org:"Noodle Bar Richardson",phone:"(972) 555-0177",email:"alex@example.com",site:"9 Example Blvd, Richardson, TX 75080",contact:"Alex"},
+  msgs:[],others:[]},
+];
+JOBS.push({id:"NP-DFW-1052",npOnly:true,city:"Granbury",zip:"76048",bldg:"Brewery taproom",mat:"phen",mount:"Floor mounted",ch:false,color:"Black 2127",layout:"Corner left",stalls:4,ada:true,w:'36"',d:'60"',priv:true,urinals:2,removal:0,
+  delivery:"Nov 12–18, 2026",deliveryDate:"2026-11-15",miles:65,status:"searching",sent:"Oct 17",due:"",notes:"Opening Dec 1. Concrete floor finished; walls tiled.",round:1,
+  cust:{name:"Riley Brooks",org:"Brazos Bend Brewing",phone:"(817) 555-0161",email:"riley@example.com",site:"300 Example Ln, Granbury, TX 76048",contact:"Riley"},
+  log:[["Oct 17, 9:00 AM","Drawings ready. 1 approved installer covers Granbury: Northwind (Fort Worth, 38 mi). Invited, due Oct 21, 10 AM."],
+       ["Oct 17, 2:10 PM","Northwind declined: fully booked Nov 3–21."],
+       ["Oct 17","Not invited: Acme (65 mi, covers 60), Contoso (45 mi, covers 40), Fabrikam (78 mi, covers 45)."]],
+  invites:[],msgs:[["np","[Coordinator name] · Next Partitions","Internal note: customer opens Dec 1, so installation must be done by Nov 26."]],others:[]});
+let cur=JOBS[0].id, view="inst";
+const job=()=>JOBS.find(j=>j.id===cur);
+
+function estimate(j){
+  const per=RATE.mat[j.mat]+(j.ch?RATE.ch:0);
+  const lines=[[`Installation, ${j.stalls} stalls × ${money(per)} (${MATN[j.mat]})`,j.stalls*per]];
+  if(j.ada)lines.push(["Accessible (ADA) stall",RATE.ada]);
+  if(j.urinals)lines.push([`Urinal screens, ${j.urinals} × ${money(RATE.urinal)}`,j.urinals*RATE.urinal]);
+  if(j.removal)lines.push([`Remove and haul away old stalls, ${j.removal} × ${money(RATE.removal)}`,j.removal*RATE.removal]);
+  if(j.miles>RATE.free)lines.push([`Travel, ${j.miles-RATE.free} mi beyond ${RATE.free} mi`,(j.miles-RATE.free)*RATE.perMi]);
+  const t=lines.reduce((a,l)=>a+l[1],0);
+  if(t<RATE.min)lines.push(["Minimum charge top-up",RATE.min-t]);
+  return lines;
+}
+const sum=ls=>ls.reduce((a,l)=>a+(+l[1]||0),0);
+
+function inbox(){
+  const list=JOBS.filter(j=>view==="np"||!j.npOnly);
+  const n=list.filter(j=>j.status==="new"||j.status==="searching").length; $("newCount").textContent=n; $("newCount").hidden=!n;
+  $("inboxSub").textContent=`${list.length} jobs`;
+  if(view!=="np"&&job().npOnly)cur=list[0].id;
+  $("inbox").innerHTML=list.map(j=>{const [l,c]=LABEL[j.status];return `<button type="button" class="jrow" data-j="${j.id}" aria-current="${j.id===cur}">
+    <span class="t"><b>${esc(j.city)} · ${j.stalls} stalls</b><span class="ref">${j.id}</span></span>
+    <p>${MATN[j.mat]} · ${esc(j.bldg)}</p><span class="pill ${c}">${l}</span>${j.status==="new"?`<span class="due">Reply by ${j.due}</span>`:""}</button>`}).join("");
+  $("inbox").querySelectorAll("[data-j]").forEach(b=>b.onclick=()=>{cur=b.dataset.j;render();if(innerWidth<1025)$("detail").scrollIntoView({behavior:"smooth"});});
+}
+
+function packet(j){
+  return `<div class="card"><h3>Job packet</h3>
+    <div class="two"><dl class="kv">
+      <dt>Material</dt><dd>${MATN[j.mat]}</dd><dt>Bracing</dt><dd>${j.mount}</dd><dt>Color</dt><dd>${j.color}</dd><dt>Layout</dt><dd>${esc(j.layout)}</dd>
+      <dt>Stalls</dt><dd>${j.stalls}${j.ada?" incl. 1 accessible (ADA)":""}, ${j.w} × ${j.d}${j.priv?", extra privacy":""}</dd>
+      <dt>Urinal screens</dt><dd>${j.urinals||"None"}</dd><dt>Old stalls</dt><dd>${j.removal?`Remove ${j.removal}`:"None to remove"}</dd>
+    </dl><dl class="kv">
+      <dt>Building</dt><dd>${esc(j.bldg)}</dd><dt>Location</dt><dd>${esc(j.city)}, TX ${j.zip} · ${j.miles} mi from your base</dd>
+      <dt>Delivery</dt><dd>${j.delivery}, to the job site</dd><dt>Site notes</dt><dd>${esc(j.notes||"None")}</dd>
+    </dl></div>
+    <div class="files"><span class="file"><i>PDF</i>Shop drawings ${j.id}.pdf</span><span class="file"><i>PDF</i>Hardware list.pdf</span><span class="file"><i>PDF</i>Install guide (${MATN[j.mat]}).pdf</span></div>
+  </div>`;
+}
+
+function customer(j){
+  if(view==="np"&&ST[j.status]<3){const c=j.cust;return `<div class="card"><h3>Customer <span class="pill wait" style="margin-left:6px">Hidden from installers</span></h3><dl class="kv"><dt>Name</dt><dd>${esc(c.name)}, ${esc(c.org)}</dd><dt>Phone</dt><dd>${esc(c.phone)}</dd><dt>Email</dt><dd>${esc(c.email)}</dd><dt>Site</dt><dd>${esc(c.site)}</dd></dl><p class="note">Released to the chosen installer automatically when the partitions order is paid.</p></div>`;}
+  if(ST[j.status]<3||j.status==="lost") return `<div class="card"><h3>Customer</h3><div class="locked"><span class="ic" aria-hidden="true">🔒</span><p><b>Shared once the job is yours</b>Name, phone, email and site address unlock when the customer has chosen you and paid for their partitions order. Until then, message them through Next Partitions.</p></div>
+    <dl class="kv blur" aria-hidden="true" style="margin-top:12px"><dt>Name</dt><dd>Xxxxx Xxxxxx</dd><dt>Phone</dt><dd>(000) 000-0000</dd></dl></div>`;
+  const c=j.cust;
+  return `<div class="card"><h3>Customer <span class="pill go" style="margin-left:6px">Released to you</span></h3><dl class="kv"><dt>Name</dt><dd>${esc(c.name)}, ${esc(c.org)}</dd><dt>Phone</dt><dd>${esc(c.phone)}</dd><dt>Email</dt><dd>${esc(c.email)}</dd><dt>Site</dt><dd>${esc(c.site)}</dd><dt>On-site contact</dt><dd>${esc(c.contact)}</dd></dl>
+    <p class="note">You contract and invoice installation directly with the customer. Keep Next Partitions copied on scheduling changes.</p></div>`;
+}
+
+function action(j){
+  const est=estimate(j), estT=sum(est);
+  if(j.status==="new"){
+    if(!j.draft)j.draft=est.map(l=>[l[0],l[1]]);
+    return `<div class="card act" id="actCard"><h3>Confirm your price</h3>
+      <p class="lead">Filled in from your rates. Adjust anything the drawings change, then send. Next Partitions presents your price to the customer next to the partitions quote, with no markup.</p>
+      <table class="lines"><thead><tr><th>Line</th><th style="text-align:right">Amount</th><th></th></tr></thead><tbody id="lineRows">${j.draft.map((l,k)=>`<tr><td><input value="${esc(l[0])}" data-l="${k}" data-f="0" aria-label="Line description"></td><td class="num"><input class="amt" inputmode="numeric" value="${l[1]}" data-l="${k}" data-f="1" aria-label="Amount in dollars"></td><td><button class="x" type="button" data-del="${k}" aria-label="Remove line">×</button></td></tr>`).join("")}</tbody></table>
+      <button class="link" type="button" id="addLine" style="margin-top:8px">+ Add a line</button>
+      <div class="ltot"><span>Your price</span><b id="lineTot">${money(sum(j.draft))}</b></div>
+      <p class="vs" id="vsRate"></p>
+      <label class="field">Note for the customer (optional)<textarea id="custNote" rows="2" placeholder="e.g. Includes removal and haul-away. Two-day install."></textarea></label>
+      <div class="btns"><button class="btn" type="button" id="sendPrice">Send price</button><button class="btn quiet" type="button" id="askQ">Ask a question first</button><button class="link" type="button" id="decline">Decline this job</button></div>
+      <p class="note"><a class="link" href="emails.html#email-2">See the job request email</a>. Reply by ${j.due} (1 business day). Price valid for 30 days. Your median reply time: 6 h.</p>
+      <div id="declineBox" hidden><label class="field">Why are you declining?<select id="declineWhy"><option>Fully booked for these dates</option><option>Outside the area I cover</option><option>Material or bracing I don't install</option><option>Other</option></select></label><button class="btn quiet sm" type="button" id="declineGo">Decline job</button></div>
+    </div>`;
+  }
+  if(j.status==="priced") return `<div class="card act"><h3>Your price: ${money(j.price)}</h3><p class="lead">Sent ${j.sent}. Next Partitions has presented it to the customer with the partitions quote. We'll let you know as soon as they choose.</p>
+    <div class="btns"><button class="btn quiet sm" type="button" id="editPrice">Change price</button></div><p class="note">You can change your price until the customer chooses.</p>
+    <div class="demo">Demo: <button type="button" data-go="chosen">Customer chooses Acme</button><button type="button" data-go="lost">Customer chooses another installer</button></div></div>`;
+  if(j.status==="chosen") return `<div class="card act"><h3>The customer chose you</h3><p class="lead">Price ${money(j.price)}. Their contact details and site address unlock when they pay for the partitions order. Delivery is planned for ${j.delivery}.</p>
+    <div class="demo">Demo: <button type="button" data-go="released">Partitions order paid</button></div></div>`;
+  if(j.status==="released") return `<div class="card act"><h3>Schedule the install</h3><p class="lead">The job is yours at ${money(j.price)}. Delivery: ${j.delivery}. Pick an install date on or after delivery.</p>
+    <label class="field">Install date<input type="date" id="instDate" min="${j.deliveryDate}" value=""></label><p class="vs" id="dateErr" hidden></p>
+    <div class="btns"><button class="btn" type="button" id="schedule">Confirm install date</button></div></div>`;
+  if(j.status==="scheduled") return `<div class="card act"><h3>Install on ${j.installDate}</h3><p class="lead">The customer and Next Partitions have the date. Mark the job installed when you're done; we then ask the customer for a review.</p>
+    <label class="field">Photos of the finished restroom (optional)<input type="file" accept="image/*" multiple></label>
+    <div class="btns"><button class="btn" type="button" id="markDone">Mark installed</button><button class="link" type="button" id="reschedule">Change date</button></div></div>`;
+  if(j.status==="lost") return `<div class="card"><h3>The customer chose another installer</h3><p class="lead" style="margin:0">Your price was ${money(j.price)}. Thanks for replying quickly: reply time counts toward your Installer Score either way.</p></div>`;
+  return `<div class="card"><h3>Installed ${j.installDate}</h3><p style="margin:0 0 8px">Final price ${money(j.price)}, invoiced by you.</p>${j.review?`<p style="margin:0"><b>Customer review: ${"★".repeat(j.review[0])}</b> “${esc(j.review[1])}”</p>`:`<p class="note">We've asked the customer for a review. See <a class="link" href="emails.html#email-7">the review request</a> and <a class="link" href="review.html">the review form</a>.</p>`}</div>`;
+}
+
+function messages(j){
+  return `<div class="card"><h3>${view==="np"?"Messages with Acme Partition Installs":"Messages with Next Partitions"}</h3>
+    <div class="thread" id="thread">${j.msgs.map(([who,n,t])=>`<div class="msg ${who==="me"?"me":""}"><small>${esc(n)}</small>${t}</div>`).join("")||`<p class="note" style="margin:0">No messages on this job.</p>`}</div>
+    <div class="compose"><textarea id="msgIn" rows="1" placeholder="Ask about the drawings, site access, dates…" aria-label="Message"></textarea><button class="btn sm" type="button" id="msgGo">Send</button></div>
+    <p class="note">${ST[j.status]<3?"Next Partitions passes questions to the customer. Phone numbers and emails are hidden until the job is released to you.":"You can also contact the customer directly now. Keep us posted on dates."}</p></div>`;
+}
+
+// what Next Partitions sees for the same job: every invited installer's reply, then the options the customer gets
+// nobody priced: what happened, the automatic rule, and what the job coordinator can do
+const POOL=[["acme","Acme Partition Installs","Dallas",65,"covers 60 mi; travel $2/mi beyond",10],["contoso","Contoso Specialty Contractors","Arlington",45,"covers 40 mi; travel $150 flat beyond",150],["fabrikam","Fabrikam Facility Services","Denton",78,"covers 45 mi; travel $2.50/mi beyond",83]];
+function fallback(j){
+  const inv=j.invites, priced=inv.filter(i=>i.price);
+  const widened=j.round>1;
+  return `<div class="card act"><h3>${priced.length?`${priced.length} firm price${priced.length>1?"s":""} in`:"No installer prices yet"}</h3>
+    <ol class="flog">${j.log.map(([t,x])=>`<li><b>${t}</b> ${esc(x)}</li>`).join("")}</ol>
+    <p class="vs">Automatic rule: if no firm price is in by the deadline (or everyone declines, or nobody covers the site), the search widens once to 75 mi, with travel fees from each installer's rates. The job coordinator is alerted, and the customer gets the “still lining up your installer” email.</p>
+    ${inv.length?`<table class="ctable"><thead><tr><th>Installer</th><th>Distance</th><th>Status</th><th style="text-align:right">Firm price</th></tr></thead><tbody>${inv.map(i=>`<tr><td>${esc(i.name)}</td><td>${i.mi} mi</td><td>${esc(i.st)}</td><td class="num">${i.price?money(i.price):"—"}</td></tr>`).join("")}</tbody></table>`:""}
+    ${priced.length?`<div class="custview"><h4>What the customer sees</h4>${priced.map(i=>`<div class="copt"><span>${esc(i.name)}<br><small style="color:var(--muted)">Installation incl. travel, quoted by the installer · earliest install ${i.date}</small></span><b>${money(i.price)}</b></div>`).join("")}
+      <div class="btns" style="margin-top:12px"><a class="btn sm" href="quote.html#choose">Send options to the customer</a></div></div>`:`
+    <div class="btns" style="margin-top:12px">
+      ${widened?"":`<button class="btn" type="button" id="fbWiden">Widen to 75 mi now</button>`}
+      <span class="fbadd"><select id="fbPick" aria-label="Installer to invite">${POOL.filter(p=>!inv.some(i=>i.id===p[0])).map(p=>`<option value="${p[0]}">${p[1]} · ${p[3]} mi</option>`).join("")}</select><button class="btn quiet" type="button" id="fbAdd">Invite by hand</button></span>
+    </div>
+    <div class="btns"><button class="btn quiet sm" type="button" id="fbMail">Email the customer</button><a class="link" href="quote.html#searching">Customer's options page</a><span class="note" id="fbMailed" style="margin:0"></span></div>
+    ${inv.length?`<div class="demo">Demo: <button type="button" id="fbReply">Contoso replies with a price</button><button type="button" id="fbNone">Nobody replies again</button></div>`:""}`}
+  </div>`;
+}
+function invite(j,id,how){const p=POOL.find(x=>x[0]===id); if(!p||j.invites.some(i=>i.id===id))return;
+  j.invites.push({id,name:p[1],mi:p[3],st:`Invited ${how}, due Thu 10 AM`});
+  j.log.push(["Today",`${p[1]} invited ${how} (${p[3]} mi, ${p[4]}).`]);}
+function wireFallback(j){
+  if($("fbWiden"))$("fbWiden").onclick=()=>{j.round=2;invite(j,"contoso","in the wider search");invite(j,"acme","in the wider search");render();};
+  if($("fbAdd"))$("fbAdd").onclick=()=>{invite(j,$("fbPick").value,"by the job coordinator");render();};
+  if($("fbMail"))$("fbMail").onclick=()=>{$("fbMailed").innerHTML='Sent: <a class="link" href="emails.html#email-10">“We’re still lining up your installer”</a>';j.log.push(["Today","Customer emailed: still lining up an installer, options offered."]);};
+  if($("fbReply"))$("fbReply").onclick=()=>{const c=j.invites.find(i=>i.id==="contoso")||j.invites[0];c.price=c.id==="contoso"?1010:1090;c.st="Replied in 5 h";c.date="Nov 19";j.log.push(["Today",`${c.name} priced ${money(c.price)}, earliest install Nov 19.`]);render();};
+  if($("fbNone"))$("fbNone").onclick=()=>{j.invites.forEach(i=>i.st="No reply by deadline");j.log.push(["Thu 10 AM","No prices after the wider search. The job coordinator calls the customer: partitions only now and install later, or their own installer (install packet included)."]);render();};
+}
+function coordinator(j){
+  const mine=j.status==="new"?null:j.price;
+  const rows=[["Acme Partition Installs",j.status==="new"?"Not replied yet":"Replied in 6 h",mine,sum(estimate(j))],...j.others.map(o=>[o[0],o[1],o[2],null])];
+  const priced=rows.filter(r=>r[2]);
+  return `<div class="card"><h3>Installers invited to ${j.id}</h3>
+    <table class="ctable"><thead><tr><th>Installer</th><th>Reply</th><th style="text-align:right">Firm price</th><th style="text-align:right">vs. rates</th></tr></thead><tbody>
+    ${rows.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td class="num">${r[2]?money(r[2]):"—"}</td><td class="num">${r[2]&&r[3]?(r[2]>r[3]*1.15?`<span class="pill wait">+${Math.round((r[2]/r[3]-1)*100)}%, check</span>`:"Within range"):"—"}</td></tr>`).join("")}
+    </tbody></table>
+    <div class="custview"><h4>What the customer sees</h4><p class="note" style="margin:0">Partitions from Next Partitions, plus installation options. Each installer quotes and bills installation directly.</p>
+      ${priced.length?priced.map(r=>`<div class="copt"><span>${esc(r[0])}<br><small style="color:var(--muted)">Installation, quoted by the installer</small></span><b>${money(r[2])}</b></div>`).join(""):`<p class="note">No firm prices yet. The customer sees the estimate range until installers reply.</p>`}
+      <div class="btns" style="margin-top:12px"><button class="btn sm" type="button" ${priced.length?"":"disabled"} id="present">Send options to the customer</button><span class="note" id="presented" style="margin:0"></span></div>
+    </div>
+    </div>`;
+}
+
+function render(){
+  inbox();
+  const j=job(), s=ST[j.status];
+  const [l,c]=LABEL[j.status];
+  $("detail").innerHTML=`<div class="card"><div class="jhead"><div><h2>${esc(j.city)}, TX ${j.zip} · ${j.stalls} stalls</h2><p class="sub">${j.id} · ${esc(j.bldg)} · requested ${j.sent}</p></div><span class="pill ${c}">${l}</span></div>
+    <ol class="steps">${STEPS.map((t,k)=>`<li class="${k<s||(k===s&&j.status==="installed")?"done":k===s?"now":""}">${t}</li>`).join("")}</ol></div>
+    ${view==="np"?(j.npOnly?fallback(j):coordinator(j)):action(j)}${packet(j)}${customer(j)}${messages(j)}`;
+  wire(j); if(view==="np"&&j.npOnly)wireFallback(j);
+}
+
+function wire(j){
+  const tot=()=>{$("lineTot").textContent=money(sum(j.draft));const e=sum(estimate(j)),t=sum(j.draft),v=$("vsRate");
+    v.className="vs"+(t>e*1.15?" hi":""); v.textContent=t>e*1.15?`${Math.round((t/e-1)*100)}% above your rates (${money(e)}). Next Partitions checks prices more than 15% above your rates before they go to the customer.`:`Your rates give ${money(e)} for this job.`;};
+  if($("lineRows")){tot();
+    $("lineRows").querySelectorAll("input").forEach(i=>i.oninput=()=>{const k=+i.dataset.l;j.draft[k][+i.dataset.f]=i.dataset.f==="1"?(+i.value.replace(/[^\d.]/g,"")||0):i.value;tot();});
+    $("lineRows").querySelectorAll("[data-del]").forEach(b=>b.onclick=()=>{j.draft.splice(+b.dataset.del,1);render();});
+    $("addLine").onclick=()=>{j.draft.push(["",0]);render();$("lineRows").querySelector("tr:last-child input").focus();};
+    $("sendPrice").onclick=()=>{j.price=sum(j.draft);j.status="priced";j.sent="today";const n=$("custNote").value.trim();
+      j.msgs.push(["me","You",`Price sent: ${money(j.price)}.${n?" Note: "+esc(n):""}`],["np","[Coordinator name] · Next Partitions","Thanks! We'll present it to the customer today with their partitions quote."]);render();};
+    $("askQ").onclick=()=>$("msgIn").focus();
+    $("decline").onclick=()=>{$("declineBox").hidden=false;};
+    $("declineGo").onclick=()=>{j.status="lost";j.price=0;j.msgs.push(["me","You","Declined: "+$("declineWhy").value]);render();};
+  }
+  document.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{j.status=b.dataset.go;
+    if(j.status==="released")j.msgs.push(["np","[Coordinator name] · Next Partitions","The partitions order is paid, so the job is yours. Customer details are now in the job. Please set your install date."]);
+    render();});
+  if($("editPrice"))$("editPrice").onclick=()=>{j.status="new";j.due="as soon as you can";render();};
+  if($("schedule"))$("schedule").onclick=()=>{const v=$("instDate").value,e=$("dateErr");
+    if(!v||v<j.deliveryDate){e.hidden=false;e.className="vs hi";e.textContent=`Pick a date on or after delivery (${j.delivery}).`;return;}
+    j.installDate=new Date(v+"T12:00").toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"});j.status="scheduled";
+    j.msgs.push(["me","You",`Install date set: ${j.installDate}.`]);render();};
+  if($("reschedule"))$("reschedule").onclick=()=>{j.status="released";render();};
+  if($("markDone"))$("markDone").onclick=()=>{j.status="installed";j.msgs.push(["np","[Coordinator name] · Next Partitions","Thanks for marking it installed. We've asked the customer for a review."]);render();};
+  if($("present"))$("present").onclick=()=>{$("presented").innerHTML='Sent. <a class="link" href="quote.html#choose">See the customer\'s quote page</a> · <a class="link" href="emails.html#email-4">the email</a>';};
+  $("msgGo").onclick=()=>{const t=$("msgIn").value.trim();if(!t)return;
+    // before release, contact details are blacked out so nobody can take the job around Next Partitions
+    let h=esc(t), hid=false;
+    if(ST[j.status]<3||j.status==="lost"){h=h.replace(/([\w.+-]+@[\w-]+\.[\w.]+)|(\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4})/g,m=>{hid=true;return `<span class="redact" title="Hidden until the job is released">${"x".repeat(m.length)}</span>`;});}
+    j.msgs.push(["me","You",h+(hid?`<br><small style="margin-top:4px">Contact details hidden until the job is released.</small>`:"")]);
+    render(); setTimeout(()=>{j.msgs.push(["np","[Coordinator name] · Next Partitions","Thanks, I'll check with the customer and get back to you today."]);if(job()===j)render();},900);};
+  const th=$("thread"); if(th)th.scrollTop=th.scrollHeight;
+}
+
+// rates tab
+function rates(){
+  $("rateRows").innerHTML=Object.entries(MATN).map(([k,n])=>`<tr><td>${n}</td><td><input inputmode="numeric" value="${RATE.mat[k]}" aria-label="${n} rate per stall"> per stall</td></tr>`).join("");
+  $("extraRows").innerHTML=[["Ceiling hung or floor to ceiling, extra per stall",RATE.ch],["Accessible (ADA) stall, extra",RATE.ada],["Urinal screen, each",RATE.urinal],["Remove and haul away an old stall",RATE.removal],["Minimum charge per job",RATE.min],["Travel included (miles from your base)",RATE.free],["Travel beyond that, per mile",RATE.perMi]]
+    .map(([n,v])=>`<tr><td>${n}</td><td><input inputmode="numeric" value="${v}" aria-label="${n}"></td></tr>`).join("");
+}
+$("saveRates").onclick=()=>{$("rateMsg").textContent="Submitted. We'll review within 1 business day; current rates stay in use until then.";};
+
+document.querySelectorAll("[data-tab]").forEach(b=>b.onclick=()=>{document.querySelectorAll("[data-tab]").forEach(x=>x.setAttribute("aria-selected",String(x===b)));
+  document.querySelectorAll("[role=tabpanel]").forEach(p=>p.hidden=p.id!=="tab-"+b.dataset.tab);});
+document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>{view=b.dataset.view;document.querySelectorAll("[data-view]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+  $("portalName").textContent=view==="np"?"Job coordination":"Installer portal";
+  $("whoNm").innerHTML=view==="np"?"<b>[Coordinator name]</b><small>Next Partitions · DFW jobs</small>":"<b>Acme Partition Installs</b><small>Approved · Top rated · Dallas</small>";
+  $("whoAv").textContent=view==="np"?"?":"AP";
+  document.querySelectorAll('[data-tab]:not([data-tab="jobs"])').forEach(t=>t.hidden=view==="np");
+  document.querySelector('[data-tab="jobs"]').click(); render();});
+{const h=location.hash.slice(1), hj=JOBS.find(j=>j.id===h); if(hj)cur=h; if(h==="np"||(hj&&hj.npOnly))document.querySelector('[data-view="np"]').click();}
+rates(); render();
+</script>
+</body>
+</html>
+
+<script>document.body.insertAdjacentHTML('afterbegin', "<a href=\"../index.html#installers\" style=\"display:block;background:#fe7802;color:#fff;font:600 13px/1.4 Inter,system-ui,sans-serif;padding:8px 16px;text-decoration:none;position:relative;z-index:2000\">← Back to the overview: installer pages and job flow</a>")</script>
+<script>try{history.scrollRestoration='manual'}catch(e){};if(location.hash!=='#installers')addEventListener('load',()=>scrollTo(0,0))</script>

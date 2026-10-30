@@ -1,0 +1,512 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DFW Installer Profile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<style>
+/* Layout: same 1360px container + 12-col grid as the DFW page. Profile content (8) + sticky request card (4).
+   Light-only, nextpartitions.com tokens. */
+:root{
+  --bg:#fbfaf9; --band:#f4f2ee; --surface:#ffffff; --fg:#1c0e05; --muted:#6d6059;
+  --border:#e1ddd7; --accent:#e8630a; --accent-strong:#c95200; --accent-soft:#fdeee3; --on-accent:#ffffff;
+  --ink:#262626; --ink-fg:#f8f8f8; --ink-muted:#c9c2bc; --good:#1f7a4d; --good-soft:#e6f3ec; --gold:#b7791f;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --container:1360px; --gutter:34px; --gap:24px; --section:80px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter)}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--gap)}
+.c12{grid-column:span 12}.c7{grid-column:span 7}.c5{grid-column:span 5}.c8{grid-column:span 8}.c4{grid-column:span 4}.c6{grid-column:span 6}.c3{grid-column:span 3}
+@media (max-width:1024px){.c8,.c4{grid-column:span 12}.c3{grid-column:span 6}}
+@media (max-width:760px){:root{--gutter:16px;--gap:16px;--section:56px}.c6,.c3{grid-column:span 12}}
+.section{padding-block:var(--section)}
+.band{background:var(--band)}
+.mocknote{background:#fff3c4;border-bottom:1px solid #f0d98a;font-size:13px;color:#5c4400;text-align:center;padding:8px 16px}
+
+/* header (same as homepage mockup) */
+.topbar{background:var(--ink);color:var(--ink-fg);font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-block:9px;flex-wrap:wrap}
+.topbar .contact{display:flex;gap:20px;flex-wrap:wrap}
+.nav{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:env(safe-area-inset-top,0px);z-index:40}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:40px;width:auto}
+.brand b{display:block;font-size:19px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.menu{display:flex;gap:28px;font-weight:600}
+.menu a{text-decoration:none}
+.menu a.on{color:var(--accent-strong)}
+@media (max-width:980px){.menu{display:none}.topbar .tagline{display:none}}
+@media (max-width:520px){.brand small{display:none}.brand img{height:34px}.hero .btn{white-space:normal;text-align:center;width:100%}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;background:var(--accent);color:var(--on-accent);font:inherit;font-weight:700;font-size:16px;padding:12px 22px;min-height:46px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--accent-strong)}
+.btn.ghost{background:var(--surface);color:var(--accent-strong);border:2px solid var(--accent)}
+.btn.ghost:hover{background:var(--accent-soft)}
+.btn.sm{font-size:14px;padding:8px 14px;min-height:38px}
+.link{font:inherit;background:none;border:0;padding:0;color:var(--accent-strong);font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* hero */
+.crumbs{font-size:14px;color:var(--muted);padding-top:28px;display:flex;flex-wrap:wrap;gap:6px}
+.crumbs a{text-decoration:none}.crumbs a:hover{text-decoration:underline}
+.hero{padding-block:16px 40px;border-bottom:1px solid var(--border)}
+.hero h1{font-size:clamp(32px,4.2vw,50px);font-weight:900;letter-spacing:-.035em;line-height:1.06;margin:10px 0 14px;text-wrap:balance;max-width:20ch}
+.hero .lead{font-size:18px;color:var(--muted);max-width:62ch;margin:0 0 22px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin:0 0 26px;padding:0;list-style:none}
+.facts li{display:flex;flex-direction:column}
+.facts b{font-size:26px;font-weight:900;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1}
+.facts span{font-size:13px;color:var(--muted)}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+
+/* footer */
+footer{background:#1a1a1a;color:#d8d2cc;font-size:14px}
+footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+/* ---------- profile ---------- */
+.pfhead{padding-block:18px 32px;border-bottom:1px solid var(--border)}
+.pfhead .grid{align-items:end}
+.idrow{display:grid;grid-template-columns:104px minmax(0,1fr);gap:22px;align-items:center}
+@media (max-width:560px){.idrow{grid-template-columns:72px minmax(0,1fr);gap:14px}}
+.logo{aspect-ratio:1;width:100%;display:grid;place-items:center;background:var(--ink);color:#fff;font-weight:900;font-size:clamp(22px,3vw,34px);letter-spacing:-.03em}
+.pfhead h1{font-size:clamp(28px,3.6vw,44px);font-weight:900;letter-spacing:-.035em;line-height:1.06;margin:6px 0 8px;text-wrap:balance}
+.tags{display:flex;flex-wrap:wrap;gap:6px 8px;margin:0}
+.tag{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:4px 8px;border:1px solid var(--border);background:var(--surface);color:var(--muted)}
+.tag.ok{color:var(--good);border-color:#9fd1b7;background:var(--good-soft)}
+.tag.acc{color:var(--accent-strong);border-color:var(--accent);background:var(--accent-soft)}
+.tag svg{width:13px;height:13px}
+.meta{font-size:15px;color:var(--muted);margin:10px 0 0;display:flex;flex-wrap:wrap;gap:4px 16px}
+.meta b{color:var(--fg)}
+.stars{color:var(--gold);letter-spacing:1px}
+.sample{font-size:11px;font-weight:700;color:#7a5a00;background:#fff3c4;padding:2px 6px;vertical-align:middle}
+
+.main{padding-block:36px var(--section)}
+.main .grid{align-items:start}
+.content{grid-column:span 8;min-width:0;display:grid;gap:48px}
+.side{grid-column:span 4;min-width:0;position:sticky;top:88px;display:grid;gap:16px}
+@media (max-width:1024px){.content,.side{grid-column:span 12}.side{position:static}}
+.content h2{font-size:clamp(22px,2.2vw,28px);font-weight:900;letter-spacing:-.025em;margin:0 0 6px;line-height:1.2}
+.sub{color:var(--muted);margin:0 0 18px;max-width:70ch}
+
+/* owner statement */
+.owner{display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);padding:24px}
+.owner .av{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-strong);font-weight:800}
+.owner blockquote{margin:0;font-size:18px;line-height:1.55;max-width:62ch}
+.owner cite{display:block;margin-top:10px;font-style:normal;font-size:14px;color:var(--muted)}
+.owner cite b{color:var(--fg)}
+
+/* checks */
+.checks{background:var(--surface);border:1px solid var(--border)}
+.checks ul{list-style:none;margin:0;padding:0}
+.checks li{display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:4px 12px;align-items:start;padding:14px 18px;border-bottom:1px solid var(--border)}
+.checks li:last-child{border-bottom:0}
+.checks svg{width:20px;height:20px;color:var(--good);margin-top:2px}
+.checks b{display:block;font-size:15px}
+.checks span.d{font-size:14px;color:var(--muted)}
+.checks time{font-size:13px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+@media (max-width:560px){.checks li{grid-template-columns:24px minmax(0,1fr)}.checks time{grid-column:2}}
+.checks a{color:var(--accent-strong);font-weight:600}
+.note{font-size:13px;color:var(--muted);margin:10px 0 0;max-width:75ch}
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:14px 0 0;padding:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;font-size:13px;color:var(--muted);border-top:3px solid var(--good);padding-top:8px}
+.steps li::before{content:counter(s) ". ";font-weight:800;color:var(--fg)}
+@media (max-width:760px){.steps{grid-template-columns:1fr 1fr}}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:640px){.gal{grid-template-columns:1fr 1fr}}
+.gal figure{margin:0;background:var(--surface);border:1px solid var(--border);min-width:0}
+.gal img{aspect-ratio:4/3;width:100%;object-fit:cover}
+.gal figcaption{padding:10px 12px;font-size:13px;color:var(--muted)}
+.gal figcaption b{display:block;color:var(--fg);font-size:14px}
+
+/* reviews */
+.rsum{display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center;background:var(--surface);border:1px solid var(--border);padding:20px 22px;margin-bottom:12px}
+@media (max-width:560px){.rsum{grid-template-columns:1fr}}
+.rsum .big{font-size:48px;font-weight:900;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.rsum .big small{display:block;font-size:13px;font-weight:600;color:var(--muted);letter-spacing:0;margin-top:6px}
+.bars{display:grid;gap:8px}
+.bar{display:grid;grid-template-columns:120px minmax(0,1fr) 34px;gap:10px;align-items:center;font-size:14px}
+.bar i{display:block;height:8px;background:var(--band)}
+.bar i span{display:block;height:100%;background:var(--accent)}
+.bar b{font-variant-numeric:tabular-nums;text-align:right}
+.reviews{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:760px){.reviews{grid-template-columns:1fr}}
+.review{background:var(--surface);border:1px solid var(--border);padding:18px;min-width:0}
+.review p{margin:8px 0}
+.review small{color:var(--muted)}
+.vtag{font-size:11px;font-weight:700;color:var(--good);background:var(--good-soft);padding:2px 6px;margin-left:6px}
+
+/* tips + details */
+.tips{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:760px){.tips{grid-template-columns:1fr}}
+.tip{border-top:2px solid var(--accent);padding-top:12px}
+.tip b{display:block;margin-bottom:4px}
+.tip p{margin:0;color:var(--muted);font-size:15px}
+.dfacts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin:0;background:var(--surface);border:1px solid var(--border)}
+@media (max-width:560px){.dfacts{grid-template-columns:1fr}}
+.dfacts>div{padding:14px 18px;border-bottom:1px solid var(--border);min-width:0}
+.dfacts dt{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.dfacts dd{margin:0;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:13px;font-weight:600;border:1px solid var(--border);padding:3px 8px;background:var(--bg)}
+.local{background:var(--band);border:1px solid var(--border);padding:22px}
+.local h3{margin:0 0 6px;font-size:18px;font-weight:800}
+.local ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
+.local li{margin-bottom:6px}
+.local .frame{font-size:14px;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:10px 12px;margin:12px 0 0}
+.disc{font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--muted);padding:10px 12px;margin:0}
+
+/* request card */
+.req{background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--accent);padding:22px;box-shadow:0 10px 30px rgba(28,14,5,.06)}
+.req h2{font-size:21px;font-weight:900;letter-spacing:-.02em;margin:0 0 4px}
+.req .s{font-size:14px;color:var(--muted);margin:0 0 14px}
+.f{display:grid;gap:5px;margin-bottom:12px}
+.f label,.f .lab{font-size:14px;font-weight:600}
+.f input,.f select{font:inherit;font-size:15px;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:9px 11px;min-height:42px;width:100%}
+.opt{display:grid;gap:6px}
+.opt label{display:grid;grid-template-columns:20px minmax(0,1fr);gap:8px;align-items:start;border:1px solid var(--border);padding:10px;cursor:pointer;font-weight:500;font-size:14px}
+.opt label:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+.opt input{margin:3px 0 0;accent-color:var(--accent)}
+.opt b{display:block;font-size:14px}
+.opt small{color:var(--muted)}
+.req .btn{width:100%;justify-content:center;white-space:normal;text-align:center}
+.f2{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.fine{font-size:12px;color:var(--muted);margin:10px 0 0}
+.err{font-size:13px;color:#b42318;font-weight:600;margin:0 0 10px}
+.ok h3{margin:0 0 6px;font-size:20px;font-weight:900}
+.ok p{margin:0 0 8px;color:var(--muted)}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.step{display:flex;align-items:center;border:1px solid var(--border);width:max-content}
+.step button{font:inherit;font-size:20px;font-weight:700;width:42px;height:40px;background:var(--surface);color:var(--fg);border:0;cursor:pointer}
+.step button:hover{background:var(--accent-soft)}
+.step output{min-width:40px;text-align:center;font-weight:800;font-variant-numeric:tabular-nums}
+.est{background:var(--accent-soft);border:1px solid var(--accent);padding:12px 14px;margin:0 0 12px}
+.est small{display:block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-strong)}
+.est b{display:block;font-size:26px;font-weight:900;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.2}
+.est span{display:block;font-size:13px;color:var(--muted)}
+.est .warn{color:#9a5b00;font-weight:600}
+.rates{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--border);font-size:15px}
+.rates th,.rates td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--border)}
+.rates th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--band)}
+.rates td.n{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
+.ratewrap{overflow-x:auto;margin-top:12px}
+.tracked{display:block;font-size:12px;color:var(--muted);margin-top:4px;text-align:right}
+.contact{background:var(--surface);border:1px solid var(--border);padding:16px 18px;font-size:14px}
+.contact h3{margin:0 0 8px;font-size:15px;font-weight:800}
+.contact .row{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:1px solid var(--border)}
+.contact .row:first-of-type{border-top:0}
+.contact span{color:var(--muted)}
+.contact h3 span{color:inherit}
+.link{font:inherit;background:none;border:0;padding:0;color:var(--accent-strong);font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.more3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:760px){.more3{grid-template-columns:1fr}}
+.more3 a{display:grid;grid-template-columns:48px minmax(0,1fr);gap:12px;align-items:center;background:var(--surface);border:1px solid var(--border);padding:12px;text-decoration:none}
+.more3 a:hover{border-color:var(--accent)}
+.more3 .lg2{aspect-ratio:1;display:grid;place-items:center;background:var(--ink);color:#fff;font-weight:900}
+.more3 b{display:block}
+.more3 small{color:var(--muted);font-size:13px}
+.mobilebar{display:none}
+@media (max-width:1024px){.mobilebar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:45;background:var(--surface);border-top:1px solid var(--border);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));gap:10px}.mobilebar .btn{flex:1;justify-content:center}body{padding-bottom:72px}}
+
+/* leaving dialog */
+dialog{border:0;padding:0;max-width:min(460px,calc(100% - 32px));box-shadow:0 20px 60px rgba(0,0,0,.25)}
+dialog::backdrop{background:rgba(28,14,5,.45)}
+.dlg{padding:24px}
+.dlg h3{margin:0 0 8px;font-size:20px;font-weight:900}
+.dlg p{margin:0 0 16px;color:var(--muted)}
+.dlg .acts{display:grid;gap:8px}
+.dlg .btn{justify-content:center}
+.btn.ghost{background:var(--surface);color:var(--accent-strong);border:2px solid var(--accent)}
+
+/* chat */
+.chatbtn{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:50;font:inherit;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border:0;padding:12px 16px;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.2)}
+@media (max-width:1024px){.chatbtn{bottom:calc(84px + env(safe-area-inset-bottom,0px))}.chatbtn span{display:none}.chatbtn{padding:12px}}
+.chat{position:fixed;right:16px;bottom:calc(72px + env(safe-area-inset-bottom,0px));z-index:55;width:min(360px,calc(100% - 32px));background:var(--surface);border:1px solid var(--border);box-shadow:0 20px 50px rgba(0,0,0,.2);display:flex;flex-direction:column;max-height:min(520px,70vh)}
+@media (max-width:1024px){.chat{bottom:calc(140px + env(safe-area-inset-bottom,0px))}}
+.chat header{display:flex;justify-content:space-between;align-items:center;background:var(--ink);color:#fff;padding:12px 14px;font-weight:700}
+.chat header button{font:inherit;background:none;border:0;color:#fff;font-size:22px;cursor:pointer;line-height:1}
+.msgs{padding:14px;overflow-y:auto;display:grid;gap:8px;align-content:start;flex:1}
+.m{max-width:85%;padding:9px 12px;font-size:14px;line-height:1.45}
+.m.bot{background:var(--band)}
+.m.me{background:var(--accent-soft);justify-self:end}
+.quick{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 14px}
+.quick button{font:inherit;font-size:13px;font-weight:600;background:var(--surface);border:1px solid var(--accent);color:var(--accent-strong);padding:6px 10px;cursor:pointer}
+</style>
+
+<div class="mocknote"><b>Mockup:</b> one profile template for all Dallas–Fort Worth installers. Companies, people, reviews, rates and photos are fictional samples. Nothing on this page sends data.</div>
+
+<div class="topbar"><div class="wrap"><div style="display:flex;gap:20px;flex-wrap:wrap"><span>sales@nextpartitions.com</span><span>1-833-997-7489</span></div><div class="tagline">Authorized Distributor — All Major Brands</div></div></div>
+<nav class="nav" aria-label="Main"><div class="wrap">
+  <a class="brand" href="home.html"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Commercial Partitions</small></span></a>
+  <div class="menu"><a href="home.html">Partitions</a><a href="home.html">Mounting Styles</a><a href="home.html">Hardware &amp; Parts</a><a href="home.html">Resources</a></div>
+  <a class="btn" href="configurator.html">Get a Quote</a>
+</div></nav>
+
+<div class="wrap">
+  <div class="crumbs" id="top"><a href="home.html">Home</a>›<a href="texas.html">Installers</a>›<a href="texas.html">Texas</a>›<a href="dfw.html">Dallas–Fort Worth</a>›<span class="nm"></span></div>
+  <header class="pfhead"><div class="grid"><div class="c12">
+    <div class="idrow">
+      <div class="logo" aria-hidden="true" id="pLogo"></div>
+      <div style="min-width:0">
+        <div class="tags" id="pTags"></div>
+        <h1 class="nm"></h1>
+        <p class="meta" id="pMeta"></p>
+      </div>
+    </div>
+  </div></div></header>
+</div>
+
+<section class="main"><div class="wrap"><div class="grid">
+  <div class="content">
+    <section aria-labelledby="h-owner"><h2 id="h-owner">From the owner</h2>
+      <div class="owner"><div class="av" aria-hidden="true" id="oAv"></div><div><blockquote id="oQuote"></blockquote><cite id="oCite"></cite></div></div></section>
+
+    <section aria-labelledby="h-checks"><h2 id="h-checks">What we checked</h2>
+      <p class="sub">Every approved installer passed these checks. Dates show when we last confirmed each one.</p>
+      <div class="checks"><ul id="pChecks"></ul></div>
+      <ol class="steps" aria-label="How installers get Verified, then Approved"><li>Installs customer-bought partitions</li><li>Registration and insurance</li><li>References and a timed test job</li><li>Signed listing agreement: Verified</li><li>One completed job: Approved</li></ol>
+      <p class="note">Texas has no statewide contractor license, so we check business and city registration instead. These are records of what we checked, not a guarantee of anyone's work. You hire and pay the installer directly.</p></section>
+
+    <section aria-labelledby="h-jobs"><h2 id="h-jobs">Recent installs</h2>
+      <p class="sub">Photos from <span class="nmS"></span>'s jobs for Next Partitions customers. Partitions supplied by Next Partitions, installed by <span class="nmS"></span>.</p>
+      <div class="gal" id="pJobs"></div></section>
+
+    <section aria-labelledby="h-rev"><h2 id="h-rev">Reviews</h2>
+      <p class="sub">Only from customers who bought their partitions from us and hired <span class="nmS"></span> through Next Partitions.</p>
+      <div class="rsum"><div class="big" id="rBig"></div><div class="bars" aria-label="Ratings by topic" id="rBars"></div></div>
+      <div class="reviews" id="pReviews"></div></section>
+
+    <section aria-labelledby="h-tips"><h2 id="h-tips">Tips from <span class="nmS"></span> before install day</h2>
+      <p class="sub">What the crew asks every customer to sort out first.</p>
+      <div class="tips">
+        <div class="tip"><b>Have the full kit on site</b><p>Shop drawings, the hardware kit and the manufacturer's install sheet. A missing bracket costs a second trip.</p></div>
+        <div class="tip"><b>Tell us the floor and wall type</b><p>Tile over concrete needs different anchors than bare slab. Photos of the room help.</p></div>
+        <div class="tip"><b>Plan around the building</b><p>For schools and offices we usually work evenings or weekends. Book a week ahead.</p></div>
+        <div class="tip"><b>Protect finished floors</b><p>We cover tile around the work area and drill through tape to stop chipping.</p></div>
+      </div></section>
+
+    <section aria-labelledby="h-det"><h2 id="h-det">Install details</h2>
+      <dl class="dfacts" id="pFacts"></dl>
+      <div class="ratewrap"><table class="rates">
+        <caption style="caption-side:top;text-align:left;font-weight:800;font-size:17px;padding:0 0 8px"><span class="nmS"></span>'s rates <span class="sample">Sample</span></caption>
+        <thead><tr><th>Item</th><th>Per stall</th><th>Notes</th></tr></thead><tbody id="rateRows"></tbody></table></div>
+      <p class="note">Set by <span class="nmS"></span> and used for the instant estimate and in our configurator. <span class="nmS"></span> confirms the final price after seeing your job details.</p></section>
+
+    <section aria-labelledby="h-local"><div class="local">
+      <h3 id="h-local">Installing in a DFW school or public building?</h3>
+      <p style="margin:0;color:var(--muted)">What these jobs usually ask of an installer, in plain language:</p>
+      <ul>
+        <li>Proof of insurance naming the school or district as additional insured.</li>
+        <li>Background checks for crews on campus during school hours. Many crews work after hours to avoid this.</li>
+        <li>Accessible stalls laid out to the Texas Accessibility Standards (TAS). Projects of $50,000 or more are registered with TDLR and inspected.</li>
+      </ul>
+      <p class="frame">You don't need a permit or any of this to buy partitions from us. It's what your installer and building may ask for on the job.</p></div></section>
+
+    <section aria-labelledby="h-more"><h2 id="h-more">More Dallas–Fort Worth installers</h2>
+      <div class="more3" id="pMore"></div>
+      <p class="note"><a class="link" href="dfw.html">See all DFW installers on the map</a> · <a class="link" href="texas.html">Other Texas areas</a></p></section>
+
+    <p class="disc">Installers are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work.</p>
+  </div>
+
+  <aside class="side">
+    <div class="req" id="req">
+      <form id="reqForm" novalidate>
+        <h2>Get a price with <span class="nmS"></span></h2>
+        <p class="s"><span class="nmS"></span> gets your job details. Your name, email and phone stay with us until you choose to share them.</p>
+        <div class="f"><span class="lab">Your partitions</span>
+          <div class="opt">
+            <label><input type="radio" name="parts" value="np" checked><span><b>Get them from Next Partitions</b><small>Partitions priced instantly, installation by <span class="nmS"></span>.</small></span></label>
+            <label><input type="radio" name="parts" value="own"><span><b>I already have them</b><small>Install only. <span class="nmS"></span> replies as they have time.</small></span></label>
+          </div></div>
+        <div class="f2">
+          <div class="f"><label for="rMat">Material</label><select id="rMat"></select></div>
+          <div class="f"><label for="rMount">Mounting</label><select id="rMount"></select></div>
+        </div>
+        <div class="f2">
+          <div class="f"><span class="lab" id="stLbl">Stalls</span><div class="step" role="group" aria-labelledby="stLbl"><button type="button" id="sDec" aria-label="Fewer stalls">−</button><output id="sCnt" aria-live="polite">6</output><button type="button" id="sInc" aria-label="More stalls">+</button></div></div>
+          <div class="f"><label for="rZip">Job-site ZIP</label><input id="rZip" inputmode="numeric" maxlength="5" placeholder="75201" autocomplete="postal-code"></div>
+        </div>
+        <div class="est" aria-live="polite"><small>Instant install estimate</small><b id="estAmt"></b><span id="estNote"></span></div>
+        <div id="npOnly">
+          <a class="btn" id="cfgLink" href="configurator.html#dfw">Price partitions + installation →</a>
+          <p class="fine">Opens the configurator with your choices and <span class="nmS"></span> included. Partitions get a live estimate; <span class="nmS"></span> confirms the installation price with your shop drawings.</p>
+        </div>
+        <div id="ownOnly" hidden>
+          <div class="f"><label for="rEmail">Email</label><input id="rEmail" type="email" placeholder="name@company.com" autocomplete="email"></div>
+          <p class="err" id="rErr" role="alert" hidden></p>
+          <button class="btn" type="submit">Request an install quote</button>
+          <p class="fine">Free, no obligation. <span class="nmS"></span> confirms or adjusts the estimate as they have time. We follow up if they haven't replied within 2 business days.</p>
+        </div>
+      </form>
+      <div class="ok" id="reqOk" hidden></div>
+    </div>
+    <div class="contact">
+      <h3>Prefer to call?</h3>
+      <div class="row" id="webRow" hidden><span>Website</span><button type="button" class="link" id="webBtn"></button></div>
+      <div class="row"><span>Phone (via Next Partitions)</span><button type="button" class="link" id="phoneBtn">Show phone number</button></div>
+    </div>
+  </aside>
+</div></div></section>
+
+<div class="mobilebar"><a class="btn" href="#req">Get a price</a></div>
+
+<dialog id="leave"><div class="dlg">
+  <h3>You're leaving Next Partitions</h3>
+  <p>Quotes requested here keep your partitions and installation together, and we follow up if <span class="nmS"></span> doesn't reply. On their website, you'll arrange everything with them directly.</p>
+  <div class="acts"><button type="button" class="btn" id="stayBtn">Get a price here instead</button><a class="btn ghost" id="goBtn" href="#" rel="nofollow noopener"></a><button type="button" class="link" id="closeDlg" style="justify-self:center;margin-top:4px">Cancel</button></div>
+</div></dialog>
+
+<button type="button" class="chatbtn" id="chatBtn" aria-expanded="false" aria-controls="chat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg><span>Questions? Chat with us</span></button>
+<div class="chat" id="chat" role="dialog" aria-label="Chat with Next Partitions" hidden>
+  <header><span>Next Partitions</span><button type="button" id="chatClose" aria-label="Close chat">×</button></header>
+  <div class="msgs" id="msgs" aria-live="polite"></div>
+  <div class="quick" id="quick"></div>
+</div>
+
+<footer><div class="wrap"><span>© 2026 Next Partitions. All rights reserved.</span><span>Terms &amp; Conditions · Privacy Policy</span></div></footer>
+
+<script>
+const $=id=>document.getElementById(id);
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const money=n=>"$"+Math.round(n).toLocaleString("en-US");
+const CFG="configurator.html";
+const TICK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg>';
+const MATN={hdpe:"HDPE",phen:"Phenolic",pc:"Powder coated",lam:"Plastic laminate"};
+const MOUNTN={ob:"Overhead braced",fm:"Floor mounted",ch:"Ceiling hung"};
+// sample installers; rates match the configurator mockup
+const I={
+ acme:{name:"Acme Partition Installs",short:"Acme",init:"AP",tier:"Top rated",owner:"Jordan Whitfield",av:"JW",since:2011,city:"Dallas",lat:32.78,lon:-96.80,
+  r:{hdpe:140,phen:160,pc:115,lam:120},ch:45,mounts:["ob","fm","ch"],free:60,perMi:2,max:90,min:700,rating:4.9,reviews:28,reply:"Usually replies within 6 hours",
+  extraMats:["Stainless"],area:"Dallas, Collin and Denton counties: Dallas, Plano, Frisco, Richardson, Garland, McKinney",
+  quote:"Two crews, commercial restrooms only: schools, offices and medical buildings. We handle removal of old partitions and after-hours work, and we'll walk the room before delivery if the layout is tight.",
+  reg:["City of Dallas contractor registration · active","Registered with the City of Dallas, required for permitted work in the city."],ins:"$2M per occurrence",train:"Scranton Products trained installer",
+  first:"12 HDPE stalls at a middle school in Plano. Customer rated it 5 of 5.",web:"acme-installs.example",phone:"(214) 555-0148",
+  jobs:[["img/stainless-steel.jpg","Office tower, Dallas","8 stalls · Stainless · ceiling hung"],["img/solid-plastic.jpg","Middle school, Plano","12 stalls · HDPE · 2 days"],["img/powder-coated.jpg","Restaurant, Dallas","4 stalls · Powder coated · 1 day"]],
+  revs:[["Facilities manager, school district","Crew arrived on the scheduled day and finished 12 stalls in two days. Doors all aligned at sign-off."],["General contractor, Dallas","Easy to coordinate with our schedule. Cleaned up fully and came back for two door adjustments the next week."]],
+  bars:[4.9,5.0,4.8,4.9]},
+ northwind:{name:"Northwind Washroom Pros",short:"Northwind",init:"NW",tier:"Established",owner:"Luis Ortega",av:"LO",since:2016,city:"Fort Worth",lat:32.755,lon:-97.33,
+  r:{hdpe:130,phen:150,pc:110,lam:110},ch:40,mounts:["ob","fm"],free:50,perMi:1.75,max:75,min:600,rating:4.8,reviews:19,reply:"Usually replies the same day",
+  extraMats:[],area:"Tarrant County: Fort Worth, Arlington, Keller, Burleson, Weatherford",
+  quote:"We do restrooms for gyms, churches and retail across Tarrant County: partitions, urinal screens and accessories. Phenolic in locker rooms is our specialty.",
+  reg:["City of Fort Worth contractor registration · active","Registered with the City of Fort Worth for permitted work."],ins:"$1M per occurrence",train:"Bobrick installation course",
+  first:"6 phenolic stalls and 3 urinal screens at a fitness center in Fort Worth. Customer rated it 5 of 5.",web:"northwind-washroom.example",phone:"(817) 555-0163",
+  jobs:[["img/phenolic.jpg","Fitness center, Fort Worth","6 stalls + 3 urinal screens · Phenolic"],["img/solid-plastic.jpg","Church, Keller","5 stalls · HDPE · 1 day"],["img/powder-coated.jpg","Retail store, Burleson","3 stalls · Powder coated"]],
+  revs:[["Gym owner, Fort Worth","They worked overnight so the locker room was open by 6 a.m. Solid, level install."],["Office manager, church","Clear quote, no surprises, and they hauled away the old stalls."]],
+  bars:[4.7,4.9,4.8,4.8]},
+ contoso:{name:"Contoso Specialty Contractors",short:"Contoso",init:"CS",tier:"Established",owner:"Priya Nair",av:"PN",since:2019,city:"Arlington",lat:32.735,lon:-97.11,
+  r:{hdpe:125,phen:145,pc:100,lam:105},ch:40,mounts:["ob"],free:40,perMi:0,max:60,min:500,rating:4.7,reviews:11,reply:"Usually replies next business day",
+  extraMats:[],area:"Between Dallas and Fort Worth: Arlington, Grand Prairie, Irving, Mansfield",
+  quote:"We're a Division 10 specialties installer: partitions, lockers and accessories for retail and restaurant build-outs. We fit in around other trades on tight schedules.",
+  reg:["Texas business registration · active","Registered with the Texas Secretary of State."],ins:"$1M per occurrence",train:"",
+  first:"4 powder coated stalls at a retail store in Arlington. Customer rated it 5 of 5.",web:"contoso-specialty.example",phone:"(682) 555-0127",
+  jobs:[["img/powder-coated.jpg","Retail store, Arlington","4 stalls · Powder coated · 1 day"],["img/plastic-laminate.jpg","Restaurant, Irving","3 stalls · Plastic laminate"],["img/solid-plastic.jpg","Warehouse office, Grand Prairie","6 stalls · HDPE"]],
+  revs:[["Project manager, retail build-out","Showed up between the flooring and paint crews exactly when we needed them."],["Restaurant owner, Irving","Fast, tidy and the doors close quietly."]],
+  bars:[4.6,4.8,4.7,4.7]},
+ fabrikam:{name:"Fabrikam Facility Services",short:"Fabrikam",init:"FF",tier:"",owner:"Tom Brandt",av:"TB",since:2021,city:"Denton",lat:33.215,lon:-97.13,
+  r:{hdpe:120,phen:140,pc:95,lam:100},ch:35,mounts:["ob","fm"],free:45,perMi:2.5,max:70,min:450,rating:4.6,reviews:5,reply:"Usually replies next business day",
+  extraMats:[],area:"North DFW: Denton, Lewisville, Flower Mound, Frisco",
+  quote:"We're a facility maintenance company with a dedicated partition crew. Replacements and smaller restrooms are our sweet spot, often on short notice.",
+  reg:["Texas business registration · active","Registered with the Texas Secretary of State."],ins:"$1M per occurrence",train:"",
+  first:"5 powder coated stalls at a church in Denton. Customer rated it 4 of 5.",web:"",phone:"(940) 555-0119",
+  jobs:[["img/plastic-laminate.jpg","Church, Denton","5 stalls · Powder coated"],["img/powder-coated.jpg","Office, Lewisville","4 stalls · Powder coated"],["img/solid-plastic.jpg","Daycare, Flower Mound","3 stalls · HDPE"]],
+  revs:[["Facilities lead, church","Replaced our old stalls in a day. Good value for a small job."],["Office manager, Lewisville","Responsive and careful with our tile floor."]],
+  bars:[4.5,4.7,4.6,4.6]}
+};
+const ZIPS={"75201":[32.787,-96.80],"75204":[32.80,-96.79],"75024":[33.075,-96.80],"75034":[33.15,-96.82],"75069":[33.20,-96.62],"75087":[32.93,-96.46],"75150":[32.81,-96.63],"75061":[32.82,-96.95],"76011":[32.75,-97.10],"76063":[32.56,-97.14],"76102":[32.755,-97.33],"76092":[32.94,-97.15],"76086":[32.76,-97.80],"76201":[33.21,-97.13],"75165":[32.39,-96.85]};
+function miles(a,b,c,d){const R=3959,t=x=>x*Math.PI/180,dl=t(c-a),dn=t(d-b);const h=Math.sin(dl/2)**2+Math.cos(t(a))*Math.cos(t(c))*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(h));}
+let id="acme",x=I.acme,stalls=6,est={};
+function pickFromHash(){const t=(location.hash||"").slice(1).toLowerCase();id=I[t]?t:"acme";x=I[id];}
+function render(){
+  document.title=x.name+" · DFW Installer";
+  document.querySelectorAll(".nm").forEach(e=>e.textContent=x.name);
+  document.querySelectorAll(".nmS").forEach(e=>e.textContent=x.short);
+  $("pLogo").textContent=x.init;
+  $("pTags").innerHTML=`<span class="tag ok">${TICK.replace('stroke-width="2.4"','stroke-width="2.6"')}Approved installer</span>${x.tier?`<span class="tag ok">${x.tier}</span>`:""}<span class="tag acc">Install only</span><span class="sample">Sample</span>`;
+  $("pMeta").innerHTML=`<span><span class="stars" aria-hidden="true">★★★★★</span> <b>${x.rating}</b> · ${x.reviews} reviews from Next Partitions customers</span><span>Based in ${x.city}, TX · serves ${x.max} mi</span><span>${x.reply}</span>`;
+  $("oAv").textContent=x.av;$("oQuote").textContent=`"${x.quote}"`;$("oCite").innerHTML=`<b>${x.owner}</b>, owner · installing since ${x.since}`;
+  const C=[[x.reg[0],x.reg[1],"Oct 2026"],["General liability insurance on file",`${x.ins}. Can name your school or building as additional insured.`,"Sep 2026"],["Installs partitions the customer already bought","Confirmed labor-only. They don't sell partitions themselves.","Aug 2026"],["3 references contacted","Past clients answered our questions by email and WhatsApp, with photos of the finished work.","Aug 2026"],["First job for a Next Partitions customer completed",x.first,"Aug 2026"]];
+  if(x.train)C.push(["Manufacturer training",x.train+".","Jul 2026"]);
+  C.push(["Labor warranty offered",`1 year on workmanship, from ${x.short}. Ask for it in writing with your quote.`,"Aug 2026"]);
+  $("pChecks").innerHTML=C.map(c=>`<li>${TICK}<div><b>${c[0]}</b><span class="d">${c[1]}</span></div><time>${c[2]}</time></li>`).join("");
+  $("pJobs").innerHTML=x.jobs.map(j=>`<figure><img src="${j[0]}" alt="${esc(j[1])}" loading="lazy"><figcaption><b>${j[1]}</b>${j[2]}</figcaption></figure>`).join("");
+  $("rBig").innerHTML=`${x.rating}<small>${x.reviews} reviews</small>`;
+  $("rBars").innerHTML=["On time","Clean site","Communication","Doors aligned"].map((l,i)=>`<div class="bar"><span>${l}</span><i><span style="width:${Math.round(x.bars[i]/5*100)}%"></span></i><b>${x.bars[i].toFixed(1)}</b></div>`).join("");
+  $("pReviews").innerHTML=x.revs.map(r=>`<div class="review"><span class="stars">★★★★★</span><span class="vtag">Bought partitions from us</span><p>"${r[1]}"</p><small>${r[0]} · Sample review</small></div>`).join("");
+  const mats=Object.keys(x.r).map(k=>MATN[k]).concat(x.extraMats);
+  $("pFacts").innerHTML=[["Materials",`<div class="chips">${mats.map(m=>`<span>${m}</span>`).join("")}</div>`],["Mounting",x.mounts.map(m=>MOUNTN[m]).join(", ")],["Service area",x.area],["Minimum job",money(x.min)],["Typical lead time","1–2 weeks after delivery"],["Hours","Mon–Sat, evenings and weekends for occupied buildings"]].map(r=>`<div><dt>${r[0]}</dt><dd>${r[1]}</dd></div>`).join("");
+  $("rateRows").innerHTML=Object.entries(x.r).map(([k,v])=>`<tr><td>${MATN[k]}</td><td class="n">$${v}</td><td>${x.mounts.filter(m=>m!=="ch").map(m=>MOUNTN[m]).join(" or ")}</td></tr>`).join("")
+    +(x.mounts.includes("ch")?`<tr><td>Ceiling hung</td><td class="n">+$${x.ch}</td><td>Added to the material rate</td></tr>`:"")
+    +`<tr><td>Travel</td><td class="n">${x.perMi?"$"+x.perMi+"/mi":"None"}</td><td>${x.perMi?`Beyond ${x.free} mi of ${x.city}`:`Within ${x.max} mi of ${x.city}`} · minimum job ${money(x.min)}</td></tr>`;
+  $("pMore").innerHTML=Object.entries(I).filter(([k])=>k!==id).map(([k,o])=>`<a href="#${k}"><span class="lg2" aria-hidden="true">${o.init}</span><span><b>${o.name}</b><small>★ ${o.rating} · ${o.city}${o.tier?" · "+o.tier:""}</small></span></a>`).join("");
+  $("rMat").innerHTML=Object.keys(x.r).map(k=>`<option value="${k}"${k==="hdpe"?" selected":""}>${MATN[k]}</option>`).join("");
+  $("rMount").innerHTML=x.mounts.map(m=>`<option value="${m}">${MOUNTN[m]}</option>`).join("");
+  // Agreed: no direct website link on profiles; contact runs through Next Partitions.
+  $("webRow").hidden=true;if(false){$("webBtn").textContent=x.web;$("goBtn").textContent="Continue to "+x.web;$("goBtn").href="https://example.com/?utm_source=nextpartitions&utm_medium=installer_profile";}
+  const pb=$("phoneBtn");if(pb){}else{const row=document.querySelector(".contact .row:last-of-type");row.innerHTML='<span>Phone</span><button type="button" class="link" id="phoneBtn">Show phone number</button>';document.querySelectorAll(".tracked").forEach(t=>t.remove());bindPhone();}
+  $("msgs").innerHTML=`<div class="m bot">Hi! Questions about ${x.short} or the partitions for your job? We usually reply in a few minutes.</div>`;
+  $("reqForm").hidden=false;$("reqOk").hidden=true;
+  calc();
+}
+function calc(){
+  const mk=$("rMat").value,mt=$("rMount").value,z=$("rZip").value.trim();
+  const per=x.r[mk]+(mt==="ch"?x.ch:0);
+  let base=stalls*per,notes=[`${stalls} × ${money(per)} per stall`],travel=0,out=false,mi;
+  if(/^\d{5}$/.test(z)){
+    if(!ZIPS[z])notes.push("travel fee confirmed with the quote");
+    else{mi=Math.round(miles(x.lat,x.lon,...ZIPS[z]));
+      if(mi>x.max)out=true;
+      else if(mi>x.free&&x.perMi){travel=(mi-x.free)*x.perMi;notes.push(`travel ${money(travel)}`);}
+      else notes.push("no travel fee");}
+  }
+  let total=base+travel,atMin=false;if(total<x.min){notes.push(`minimum job ${money(x.min)}`);total=x.min;atMin=true;}
+  const lo=Math.round(total*.95/10)*10,hi=Math.round(total*1.1/10)*10;
+  est={n:stalls,txt:atMin?money(x.min):`${money(lo)}\u2009–\u2009${money(hi)}`};
+  $("estAmt").textContent=out?`Outside ${x.short}'s area`:est.txt;
+  $("estNote").innerHTML=out?`<span class="warn">This ZIP is about ${mi} mi away, beyond ${x.short}'s ${x.max} mi area. <a class="link" href="dfw.html">See other DFW installers</a>.</span>`:notes.join(" · ");
+  $("cfgLink").href=`${CFG}#${id}.${mk}.${mt}.${Math.max(2,stalls)}`;
+  $("cfgLink").textContent=`Price partitions + ${x.short}'s installation →`;
+  $("sDec").disabled=stalls<=1;$("sInc").disabled=stalls>=30;$("sCnt").textContent=stalls;
+}
+$("sDec").addEventListener("click",()=>{stalls=Math.max(1,stalls-1);calc();});
+$("sInc").addEventListener("click",()=>{stalls=Math.min(30,stalls+1);calc();});
+["rMat","rMount"].forEach(k=>$(k).addEventListener("change",calc));
+$("rZip").addEventListener("input",calc);
+document.querySelectorAll("input[name=parts]").forEach(r=>r.addEventListener("change",()=>{const own=document.querySelector("input[name=parts]:checked").value==="own";$("npOnly").hidden=own;$("ownOnly").hidden=!own;}));
+$("reqForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const zip=$("rZip").value.trim(),em=$("rEmail").value.trim();
+  const err=!/^\d{5}$/.test(zip)?"Enter a 5-digit job-site ZIP code.":!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)?"Enter a valid email, like name@company.com.":"";
+  $("rErr").hidden=!err;$("rErr").textContent=err;if(err)return;
+  $("reqForm").hidden=true;$("reqOk").hidden=false;
+  $("reqOk").innerHTML=`<h3>Request sent</h3><p>${x.short} gets your job details (ZIP ${esc(zip)}, ${est.n} ${MATN[$("rMat").value]} stall${est.n>1?"s":""}, ${MOUNTN[$("rMount").value].toLowerCase()}, install only) with your estimate of ${est.txt}. They confirm or adjust it, and the quote comes to <b>${esc(em)}</b>.</p><p class="fine">Mockup: nothing was sent.</p>`;
+});
+const dlg=$("leave");
+$("webBtn").addEventListener("click",()=>dlg.showModal());
+$("closeDlg").addEventListener("click",()=>dlg.close());
+$("goBtn").addEventListener("click",()=>dlg.close());
+$("stayBtn").addEventListener("click",()=>{dlg.close();$("req").scrollIntoView({block:"center"});});
+function bindPhone(){$("phoneBtn").addEventListener("click",function(){this.parentElement.insertAdjacentHTML("afterend",`<span class="tracked">Next Partitions number. Calls go straight to ${esc(x.short)}, who hear it's a Next Partitions customer. Calls may be recorded.</span>`);this.outerHTML=`<span style="color:var(--fg);font-weight:600;user-select:all">${x.phone}</span>`;});}
+bindPhone();
+function QA(){return[
+ ["Do they install partitions I already bought?",`Yes. ${x.short} installs partitions bought from us or elsewhere. Requests for partitions from us get answered first.`],
+ ["How much does installation cost?",`${x.short} charges from ${money(Math.min(...Object.values(x.r)))} per stall depending on material and mounting. Use the estimate on this page for your exact job.`],
+ ["Which material for a school?","Most schools pick HDPE: graffiti sands out and it won't rust. Want a price for your stall count?"]];}
+$("quick").addEventListener("click",e=>{const b=e.target.closest("[data-q]");if(!b)return;const [q,a]=QA()[+b.dataset.q];
+  $("msgs").insertAdjacentHTML("beforeend",`<div class="m me">${esc(q)}</div><div class="m bot">${esc(a)}</div>`);$("msgs").scrollTop=$("msgs").scrollHeight;});
+$("chatBtn").addEventListener("click",()=>{const open=$("chat").hidden;$("chat").hidden=!open;$("chatBtn").setAttribute("aria-expanded",String(open));if(open)$("quick").innerHTML=QA().map((q,i)=>`<button type="button" data-q="${i}">${q[0]}</button>`).join("");});
+$("chatClose").addEventListener("click",()=>{$("chat").hidden=true;$("chatBtn").setAttribute("aria-expanded","false");$("chatBtn").focus();});
+window.addEventListener("hashchange",()=>{pickFromHash();stalls=6;render();window.scrollTo({top:0});});
+pickFromHash();render();
+</script>
+
+<script>document.body.insertAdjacentHTML('afterbegin', "<a href=\"../index.html#installers\" style=\"display:block;background:#fe7802;color:#fff;font:600 13px/1.4 Inter,system-ui,sans-serif;padding:8px 16px;text-decoration:none;position:relative;z-index:2000\">← Back to the overview: installer pages and job flow</a>")</script>
+<script>try{history.scrollRestoration='manual'}catch(e){};if(location.hash!=='#installers')addEventListener('load',()=>scrollTo(0,0))</script>

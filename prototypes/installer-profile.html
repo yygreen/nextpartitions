@@ -243,7 +243,7 @@ dialog::backdrop{background:rgba(28,14,5,.45)}
 <div class="topbar"><div class="wrap"><div style="display:flex;gap:20px;flex-wrap:wrap"><span>sales@nextpartitions.com</span><span>1-833-997-7489</span></div><div class="tagline">Authorized Distributor — All Major Brands</div></div></div>
 <nav class="nav" aria-label="Main"><div class="wrap">
   <a class="brand" href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Commercial Partitions</small></span></a>
-  <div class="menu"><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Partitions</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Mounting Styles</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Hardware &amp; Parts</a><a href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener" class="on">Installers</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Resources</a></div>
+  <div class="menu"><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Partitions</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Mounting Styles</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Hardware &amp; Parts</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Resources</a></div>
   <a class="btn" href="https://nextpartitions.com/get-a-quote" target="_blank" rel="noopener">Get a Quote</a>
 </div></nav>
 
@@ -269,7 +269,7 @@ dialog::backdrop{background:rgba(28,14,5,.45)}
     <section aria-labelledby="h-checks"><h2 id="h-checks">What we checked</h2>
       <p class="sub">Every approved installer passed these checks. Dates show when we last confirmed each one.</p>
       <div class="checks"><ul id="pChecks"></ul></div>
-      <ol class="steps" aria-label="How installers get approved"><li>Installs customer-bought partitions</li><li>Registration and insurance</li><li>References and photos</li><li>Signed listing agreement</li><li>One completed job</li></ol>
+      <ol class="steps" aria-label="How installers get Verified, then Approved"><li>Installs customer-bought partitions</li><li>Registration and insurance</li><li>References and a timed test job</li><li>Signed listing agreement: Verified</li><li>One completed job: Approved</li></ol>
       <p class="note">Texas has no statewide contractor license, so we check business and city registration instead. These are records of what we checked, not a guarantee of anyone's work. You hire and pay the installer directly.</p></section>
 
     <section aria-labelledby="h-jobs"><h2 id="h-jobs">Recent installs</h2>
@@ -347,9 +347,9 @@ dialog::backdrop{background:rgba(28,14,5,.45)}
       <div class="ok" id="reqOk" hidden></div>
     </div>
     <div class="contact">
-      <h3>Contact <span class="nmS"></span> directly</h3>
-      <div class="row" id="webRow"><span>Website</span><button type="button" class="link" id="webBtn"></button></div>
-      <div class="row"><span>Phone</span><button type="button" class="link" id="phoneBtn">Show phone number</button></div>
+      <h3>Prefer to call?</h3>
+      <div class="row" id="webRow" hidden><span>Website</span><button type="button" class="link" id="webBtn"></button></div>
+      <div class="row"><span>Phone (via Next Partitions)</span><button type="button" class="link" id="phoneBtn">Show phone number</button></div>
     </div>
   </aside>
 </div></div></section>
@@ -381,7 +381,7 @@ const MATN={hdpe:"HDPE",phen:"Phenolic",pc:"Powder coated",lam:"Plastic laminate
 const MOUNTN={ob:"Overhead braced",fm:"Floor mounted",ch:"Ceiling hung"};
 // sample installers; rates match the configurator mockup
 const I={
- acme:{name:"Acme Partition Installs",short:"Acme",init:"AP",tier:"Top rated",owner:"Dana Whitfield",av:"DW",since:2011,city:"Dallas",lat:32.78,lon:-96.80,
+ acme:{name:"Acme Partition Installs",short:"Acme",init:"AP",tier:"Top rated",owner:"Jordan Whitfield",av:"JW",since:2011,city:"Dallas",lat:32.78,lon:-96.80,
   r:{hdpe:140,phen:160,pc:115,lam:120},ch:45,mounts:["ob","fm","ch"],free:60,perMi:2,max:90,min:700,rating:4.9,reviews:28,reply:"Usually replies within 6 hours",
   extraMats:["Stainless"],area:"Dallas, Collin and Denton counties: Dallas, Plano, Frisco, Richardson, Garland, McKinney",
   quote:"Two crews, commercial restrooms only: schools, offices and medical buildings. We handle removal of old partitions and after-hours work, and we'll walk the room before delivery if the layout is tight.",
@@ -446,7 +446,8 @@ function render(){
   $("pMore").innerHTML=Object.entries(I).filter(([k])=>k!==id).map(([k,o])=>`<a href="#${k}"><span class="lg2" aria-hidden="true">${o.init}</span><span><b>${o.name}</b><small>★ ${o.rating} · ${o.city}${o.tier?" · "+o.tier:""}</small></span></a>`).join("");
   $("rMat").innerHTML=Object.keys(x.r).map(k=>`<option value="${k}"${k==="hdpe"?" selected":""}>${MATN[k]}</option>`).join("");
   $("rMount").innerHTML=x.mounts.map(m=>`<option value="${m}">${MOUNTN[m]}</option>`).join("");
-  $("webRow").hidden=!x.web;if(x.web){$("webBtn").textContent=x.web;$("goBtn").textContent="Continue to "+x.web;$("goBtn").href="https://example.com/?utm_source=nextpartitions&utm_medium=installer_profile";}
+  // Agreed: no direct website link on profiles; contact runs through Next Partitions.
+  $("webRow").hidden=true;if(false){$("webBtn").textContent=x.web;$("goBtn").textContent="Continue to "+x.web;$("goBtn").href="https://example.com/?utm_source=nextpartitions&utm_medium=installer_profile";}
   const pb=$("phoneBtn");if(pb){}else{const row=document.querySelector(".contact .row:last-of-type");row.innerHTML='<span>Phone</span><button type="button" class="link" id="phoneBtn">Show phone number</button>';document.querySelectorAll(".tracked").forEach(t=>t.remove());bindPhone();}
   $("msgs").innerHTML=`<div class="m bot">Hi! Questions about ${x.short} or the partitions for your job? We usually reply in a few minutes.</div>`;
   $("reqForm").hidden=false;$("reqOk").hidden=true;

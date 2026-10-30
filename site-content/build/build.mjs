@@ -1,0 +1,593 @@
+// Builds site-content/preview/: every page in site-content/pages/ as a finished HTML page in the live site's own
+// layout (its header, footer, hero, content column with side card, and the "Explore More" block), using the live
+// stylesheet (preview/styles.css, copied from nextpartitions.com) and only Tailwind classes it already contains.
+// Each page carries its title, meta description, canonical and structured data (BreadcrumbList, FAQPage, Article
+// for blog posts), so it can be ported into the Lovable project as it is. Links between rebuilt pages stay inside
+// the preview; every other link goes to the live site.
+//
+//   cd site-content/build && npm install && npm run build    → open ../preview/index.html
+import { cpSync, existsSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
+import { marked } from 'marked'
+
+const SITE = 'https://nextpartitions.com'
+// Every preview page opens at the top, not where the viewer last scrolled; the one exception is the overview's
+// installer section, which the prototypes' back link opens directly.
+const TOP_JS = `<script>try{history.scrollRestoration='manual'}catch(e){};if(location.hash!=='#installers')addEventListener('load',()=>scrollTo(0,0))</script>`
+const PAGES = '../pages', OUT = '../preview', CURRENT = '../current'
+const shell = readFileSync('shell.html', 'utf8') // a live page (/hardware/hinges), saved 2026-10-26
+// The live stylesheet goes inside each page, so any single file opens on its own.
+const CSS = readFileSync(`${OUT}/styles.css`, 'utf8')
+
+const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
+const strip = (s) => s.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").trim()
+const fileFor = (url) => url === '/' ? 'home.html' : url.replace(/^\//, '').replace(/\//g, '_') + '.html'
+const ICON_ARROW = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>'
+const ICON_CHEVRON = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right h-3.5 w-3.5 flex-shrink-0" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>'
+// The site's button (copied from the live hero and side card).
+const button = (label, href, extra = '') => `<a href="${href}"><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow h-9 px-4 py-2 ${extra} bg-brand-red text-brand-red-foreground hover:bg-brand-red/90 gap-2">${esc(label)} ${ICON_ARROW}</button></a>`
+
+const SECTION = { hardware: ['Hardware & Parts', '/hardware'], 'mounting-styles': ['Mounting Styles', '/mounting-styles'], guides: ['Guides', '/guides'], blog: ['Blog', '/blog'], partitions: ['Partitions', '/partitions'], industries: ['Industries', '/industries'], brands: ['Brands', '/brands'] }
+const QUOTE_PROMISE = 'Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.'
+
+function parse(file) {
+  const raw = readFileSync(`${PAGES}/${file}`, 'utf8')
+  const fm = {}
+  const m = raw.match(/^---\n([\s\S]*?)\n---\n/)
+  for (const line of m[1].split('\n')) { const i = line.indexOf(':'); if (i > 0) fm[line.slice(0, i).trim()] = line.slice(i + 1).trim() }
+  let body = raw.slice(m[0].length).split('<!-- For Marc -->')[0].trim()
+  body = body.replace(/^# .*\n+/, '') // the H1 goes in the hero
+  const parts = body.split(/^## /m)
+  const intro = parts.shift().trim()
+  const sections = parts.map((p) => { const nl = p.indexOf('\n'); return { title: p.slice(0, nl).trim(), md: p.slice(nl + 1).trim() } })
+  return { fm, intro, sections }
+}
+
+// Site classes on plain Markdown output.
+// Drawings from design/diagrams/ go inline (so a preview file stands alone), full width, in a bordered card.
+// On the live site they're served as /images/diagrams/<name>.svg.
+const DIAGRAMS = '../design/diagrams/'
+const SHEETS = JSON.parse(readFileSync(`${DIAGRAMS}sheets.json`, 'utf8'))
+const inlineSvg = (file) => readFileSync(`${DIAGRAMS}${file}`, 'utf8')
+  .replace(/ width="(\d+)" height="\d+" role="img"/, ' style="width:100%;height:auto;display:block" role="img"')
+// Phone variants of a drawing (design/diagrams.mjs): <name>-m.svg, or <name>-m1.svg, -m2.svg … when it takes
+// several frames. Each is 360 wide, so its text stays 12–13 px in a phone's content column.
+const phoneFiles = (name) => existsSync(`${DIAGRAMS}${name}-m.svg`) ? [`${name}-m.svg`]
+  : Array.from({ length: 9 }, (_, i) => `${name}-m${i + 1}.svg`).filter((f) => existsSync(`${DIAGRAMS}${f}`))
+// A drawing with phone variants: the desktop drawing in .np-d, the phone frames stacked in .np-m; CSS shows one
+// (below 640 px, the phone frames). Nothing scrolls sideways.
+const responsive = (file) => {
+  const m = phoneFiles(file.replace(/\.svg$/, ''))
+  return m.length ? `<div class="np-d">${inlineSvg(file)}</div><div class="np-m">${m.map(inlineSvg).join('')}</div>` : inlineSvg(file)
+}
+// Standalone drawings are landscape and 780 wide, shown at their real size on desktop and as their phone variant
+// on a phone. A drawing with a sheet (plan, front elevation, side view, details) renders as one figure: wide views
+// across the full width, the side view and details side by side on desktop and stacked on a phone (they are 400
+// wide and scale to the column), each with a view label.
+const diagram = (src, alt) => {
+  const name = src.split('/').pop().replace(/\.svg$/, '')
+  const sheet = SHEETS[name]
+  if (!sheet) return `<figure class="np-fig border border-border rounded-lg p-3 mb-4 bg-card">${responsive(`${name}.svg`)}</figure>`
+  const view = (v) => `<div class="${v.wide ? 'col-span-full' : ''} min-w-0"><p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">${esc(v.label)}</p>${responsive(v.file)}</div>`
+  const wide = sheet.filter((v) => v.wide), rest = sheet.filter((v) => !v.wide)
+  return `<figure class="np-fig border border-border rounded-lg p-4 mb-4 bg-card"><div class="grid grid-cols-1 gap-6">${wide.map(view).join('')}</div><div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">${rest.map(view).join('')}</div></figure>`
+}
+function styled(html) {
+  return html
+    // A photo already on the live site (Markdown title "photo"): a card at the photo's own size, caption under it.
+    .replace(/<p><img src="(https:\/\/nextpartitions\.com\/[^"]+)" alt="([^"]*)" title="photo"\s*\/?><\/p>/g, (_, src, alt) => `<figure class="np-side np-photo"><img src="${src}" alt="${alt}" loading="lazy"><figcaption>${alt}</figcaption></figure>`)
+    // A small detail after its paragraph (Markdown title "side"): a full-width card with the drawing centered at
+    // up to 440 px and its caption under it, so the article stays one column.
+    .replace(/<p><img src="\/images\/diagrams\/([^"]+)\.svg" alt="([^"]*)" title="side"\s*\/?><\/p>/g, (_, name, alt) => `<figure class="np-side${phoneFiles(name).length ? ' np-wide' : ''}">${responsive(`${name}.svg`)}<figcaption>${alt}</figcaption></figure>`)
+    .replace(/<p><img src="(\/images\/diagrams\/[^"]+)" alt="([^"]*)"\s*\/?><\/p>/g, (_, src, alt) => diagram(src, alt))
+    .replace(/<h3>/g, '<h3 class="text-lg font-semibold text-foreground mt-6 mb-2">')
+    .replace(/<h4>/g, '<h4 class="font-semibold text-foreground mt-4 mb-2">')
+    .replace(/<p>/g, '<p class="text-muted-foreground leading-relaxed mb-4">')
+    .replace(/<ul>/g, '<ul class="list-disc pl-4 space-y-2 text-muted-foreground leading-relaxed mb-4">')
+    .replace(/<ol>/g, '<ol class="list-decimal pl-4 space-y-2 text-muted-foreground leading-relaxed mb-4">')
+    .replace(/<table>/g, '<div class="overflow-x-auto mb-6"><table class="w-full text-sm border-collapse border border-border">').replace(/<\/table>/g, '</table></div>')
+    .replace(/<thead>\n?<tr>/g, '<thead><tr class="bg-accent">').replace(/<th>/g, '<th class="p-3 text-left align-top">').replace(/<th align="[a-z]+">/g, '<th class="p-3 text-left align-top">')
+    .replace(/<tbody>/g, '<tbody class="divide-y divide-border">').replace(/<td>/g, '<td class="p-3 align-top">').replace(/<td align="[a-z]+">/g, '<td class="p-3 align-top">')
+    .replace(/<strong>/g, '<strong class="font-semibold text-foreground">')
+    .replace(/<em>/g, '<em class="italic">')
+    .replace(/<blockquote>/g, '<blockquote class="border-l-4 border-brand-red pl-4 italic mb-4">')
+    .replace(/<a href=/g, '<a class="text-brand-red hover:underline font-medium" href=')
+}
+// Expert advice box (":::expert" … ":::" in a page): a quote card in the brand colors. Until Abe's answer is in,
+// the block holds only the question, and the card shows a placeholder quote and attribution.
+// With an answer, write it as: question line, then "> quote", then "— Name, role".
+// The site logo (the orange N), inline so a preview file stands alone. On the live site use the logo asset.
+const LOGO = `data:image/png;base64,${readFileSync('../../prototypes/img/logo.png').toString('base64')}`
+const expert = (block) => {
+  const lines = block.trim().split('\n').map((l) => l.trim()).filter(Boolean)
+  const q = lines.find((l) => !l.startsWith('>') && !l.startsWith('—')) || ''
+  const quote = lines.filter((l) => l.startsWith('>')).map((l) => l.slice(1).trim()).join(' ')
+  const by = (lines.find((l) => l.startsWith('—')) || '').slice(1).trim()
+  // The question stays in the page file for reference; the card shows only the quote, who said it and the logo.
+  const [name, ...rest] = by.split(','), role = rest.join(',').trim()
+  // Laid out like the title block of a technical drawing: the quote across the top, a ruled strip below with
+  // the name and role, and the logo cell.
+  return `<figure class="np-tb"><blockquote class="np-tb-quote${quote ? '' : ' np-tb-ph'}">${esc(quote ? `“${quote}”` : `Placeholder for the answer, in the expert's own words, to: ${q}`)}</blockquote>`
+    + `<figcaption class="np-tb-strip"><div class="np-tb-cell"><span class="np-tb-val">${esc(name || '[Name]')}</span><span class="np-tb-role">${esc(role || '[Role], Next Partitions')}</span></div>`
+    + `<div class="np-tb-cell np-tb-brand"><img src="${LOGO}" alt="" width="26" height="27"><span><b>Next Partitions</b><br>Expert advice</span></div></figcaption></figure>`
+}
+// General advice box (":::advice" … ":::"): a tip in Next Partitions' own voice, no person attached. The same
+// title-block family as the quote card, inverted: paper ground, ink frame, a brown band on top with the logo.
+const advice = (block) => `<aside class="np-adv"><div class="np-adv-band"><img src="${LOGO}" alt="" width="22" height="23"><span>Next Partitions advice</span></div>`
+  + `<div class="np-adv-body">${marked.parse(block.trim())}</div></aside>`
+// Tables with four or more columns turn into stacked cards on a phone: each row a card, each value under its
+// column name (data-label), so nothing scrolls sideways or breaks mid-word.
+// A key list right after a drawing moves inside the drawing's card as a compact legend, so the drawing and its key
+// read as one unit and the text flows on below it.
+// Numbered keys get orange discs like the drawing's callouts. Short keys fill two columns top to bottom
+// (1-3 left, 4-6 right); keys with any long item stay in one column.
+const legends = (html) => html.replace(/<\/figure>\s*<(ol|ul) class="[^"]*">([\s\S]*?)<\/\1>/g, (_, tag, items) => {
+  const lis = [...items.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/g)].map((m) => strip(m[1]))
+  const two = lis.length >= 4 && lis.every((t) => t.length <= 48)
+  const style = '' // two columns read across: 1 2 / 3 4 / 5 6
+  // each item's text in one span, so a bold lead and the text after it flow as one paragraph beside the number
+  const wrapped = items.replace(/<li([^>]*)>([\s\S]*?)<\/li>/g, (_, at, inner) => `<li${at}><span>${inner.trim()}</span></li>`)
+  return `<${tag} class="np-legend${two ? ' np-legend-2' : ''}"${style}>${wrapped}</${tag}></figure>`
+})
+const cards = (html) => html.replace(/<table class="([^"]*)">([\s\S]*?)<\/table>/g, (t, cls, inner) => {
+  const heads = [...inner.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((m) => strip(m[1]))
+  if (heads.length < 4) return t
+  const body = inner.replace(/<tr>([\s\S]*?)<\/tr>/g, (r, cells) => { let k = 0; return `<tr>${cells.replace(/<td([^>]*)>/g, (_, a) => `<td${a} data-label="${esc(heads[k++] || '')}">`)}</tr>` })
+  return `<table class="${cls} np-cards">${body}</table>`
+})
+// Several live-site photos side by side (":::gallery" ... ":::"), each with its caption: two across on a phone,
+// four across on desktop.
+// Each item may be wrapped in a link ([![alt](src)](/page)): then the whole tile links there. A caption written
+// "Name: text" shows the name in bold. Renders (16:10) go two across in a larger tile; photos stay four across.
+const gallery = (block) => {
+  const items = [...block.matchAll(/(?:\[)?!\[([^\]]*)\]\(([^)\s]+)\)(?:\]\(([^)\s]+)\))?/g)]
+  const renders = items.every(([, , src]) => src.startsWith('/images/renders/'))
+  return `<div class="np-gallery${renders ? ' np-gallery-r' : ''}">${items.map(([, alt, src, href]) => {
+    const [name, ...rest] = alt.split(':'), r = rest.join(':').trim(), cap = rest.length ? `<b>${esc(name)}</b>${esc(r.charAt(0).toUpperCase() + r.slice(1))}` : esc(alt)
+    const fig = `<figure><img src="${src}" alt="${esc(alt)}" loading="lazy"><figcaption>${cap}${href ? `<span class="np-gal-go">View ${ICON_ARROW}</span>` : ''}</figcaption></figure>`
+    return href ? `<a class="np-gal-link" href="${href}">${fig}</a>` : fig
+  }).join('')}</div>`
+}
+// In-content calls to action: a paragraph that starts with a quote or contact link becomes a button (hover and
+// press feedback), with any text after the link as a short line under it.
+const ctas = (html) => html.replace(/<p([^>]*)>\s*<a class="[^"]*" href="(\/(?:get-a-quote|contact)[^"]*)">([^<]+)<\/a>([\s\S]*?)<\/p>/g, (_, pa, href, label, rest) => {
+  let r = rest.replace(/^[\s.,;:–-]+/, '').trim()
+  // a short phrase that finishes the link's sentence ("for replacement hinges.") joins the button label
+  const tail = r.replace(/\.$/, '')
+  if (/^[a-z]/.test(r) && tail.length <= 45 && !/[.<]/.test(tail)) { label = `${label} ${tail}`; r = '' }
+  if (r) r = r.charAt(0).toUpperCase() + r.slice(1)
+  return `<div class="np-cta-row"><a class="np-cta" href="${href}">${label}${ICON_ARROW}</a>${r ? `<p class="np-cta-note">${r}</p>` : ''}</div>`
+})
+  // a short paragraph with a quote link inside a sentence (and no other link): the sentence stays, the button follows
+  .replace(/<p([^>]*)>((?:(?!<\/p>)[\s\S]){0,260}?)<\/p>/g, (m, pa, inner) => {
+    const links = [...inner.matchAll(/<a class="[^"]*" href="(\/get-a-quote[^"]*)">([^<]+)<\/a>/g)]
+    if (links.length !== 1 || (inner.match(/<a /g) || []).length !== 1) return m
+    const [, href, label] = links[0]
+    const text = inner.replace(links[0][0], label)
+    return `<div class="np-cta-row"><p class="np-cta-lead">${text}</p><a class="np-cta" href="${href}">${label.charAt(0).toUpperCase() + label.slice(1)}${ICON_ARROW}</a></div>`
+  })
+// "Is my layout compliant?" self-check (":::checker" … ":::" in a page; the block's text is the note under it):
+// one compartment's numbers in, one pass / fail / check line per 2010 ADA Standards rule out, then the quote button.
+// The form is plain HTML (labelled inputs, radio groups in fieldsets, results in a polite live region), so it works
+// by keyboard and at 360 px; the script (CHECKER_JS) goes in after the live scripts are stripped. On the live site
+// it is a client-side widget: nothing is sent anywhere.
+const radios = (name, legend, opts) => `<fieldset class="np-chk-f np-chk-r"><legend>${esc(legend)}</legend><div>${opts.map(([v, l], i) => `<label><input type="radio" name="${name}" value="${v}"${i ? '' : ' checked'}><span>${esc(l)}</span></label>`).join('')}</div></fieldset>`
+const num = (id, label, val, hint) => `<div class="np-chk-f"><label for="np-chk-${id}">${esc(label)}</label><div class="np-chk-in"><input id="np-chk-${id}" name="${id}" type="number" inputmode="decimal" min="0" step="0.25" value="${val}"${hint ? ` aria-describedby="np-chk-${id}-h"` : ''}><span aria-hidden="true">${id === 'comps' || id === 'fixtures' ? '' : 'in.'}</span></div>${hint ? `<p class="np-chk-hint" id="np-chk-${id}-h">${esc(hint)}</p>` : ''}</div>`
+const checkers = []
+const checker = (block) => {
+  checkers.push(block.trim())
+  return `<div data-np-chk="${checkers.length - 1}"></div>`
+}
+const checkerHtml = (note) => `<div class="np-chk" id="np-chk"><form class="np-chk-form" id="np-chk-form" novalidate onsubmit="return false">`
+  + radios('type', 'Stall type', [['wc', 'Wheelchair accessible'], ['amb', 'Ambulatory'], ['child', "Children's wheelchair accessible"]])
+  + `<div class="np-chk-g">${num('w', 'Width, side wall to side partition', 60, 'Measured inside, at right angles to the side wall.')}${num('d', 'Depth, rear wall to front partition', 59, 'Measured inside, at right angles to the rear wall.')}</div>`
+  + `<div class="np-chk-g">${radios('toilet', 'Toilet', [['floor', 'Floor-mounted'], ['wall', 'Wall-hung']])}${radios('loc', 'Door location', [['front', 'Front partition'], ['side', 'Side wall or partition']])}</div>`
+  + `<div class="np-chk-g">${radios('swing', 'Door swing', [['out', 'Out of the stall'], ['in', 'Into the stall']])}${num('gap', 'Bottom of panels and doors above the floor', 12, 'Standard partitions sit 12 in. up.')}</div>`
+  + `<div class="np-chk-g">${num('comps', 'Toilet compartments in the room', 4)}${num('fixtures', 'Toilets and urinals in the room, combined', 4)}</div>`
+  + `</form><div class="np-chk-out"><h3 class="np-chk-h" id="np-chk-sum" aria-live="polite">Your result</h3><ul class="np-chk-list" id="np-chk-list"></ul></div>`
+  + `<div class="np-chk-end"><a class="np-cta" href="/get-a-quote">Configure your partitions${ICON_ARROW}</a><p class="np-chk-note">${esc(note)}</p></div></div><!--np-checker-js-->`
+const withCheckers = (html) => html.replace(/<div data-np-chk="(\d+)"><\/div>/g, (_, i) => checkerHtml(checkers[+i]))
+const CHECKER_CSS = `.np-chk{margin:8px 0 36px;border:1.5px solid #2d1e14;background:#fff}.np-chk-form{padding:20px 20px 4px;display:grid;gap:18px;border-top:4px solid #fe7802}
+.np-chk-g{display:grid;gap:18px}@media(min-width:640px){.np-chk-g{grid-template-columns:1fr 1fr}}.np-chk-f{margin:0;padding:0;border:0;min-width:0}
+.np-chk-f>label,.np-chk-f legend{display:block;font-size:14px;font-weight:600;color:#1c0e05;margin:0 0 6px;padding:0}
+.np-chk-in{display:flex;align-items:center;gap:8px}.np-chk-in input{font:inherit;font-size:16px;width:100%;max-width:160px;min-height:46px;padding:0 12px;border:1px solid var(--input,#e1ddd7);border-radius:6px;background:#fff;color:#1c0e05}.np-chk-in span{font-size:14px;color:#7a6a5e}
+.np-chk-in input:focus-visible{outline:2px solid #fe7802;outline-offset:1px;border-color:#fe7802}.np-chk-hint{margin:6px 0 0!important;font-size:13px!important;line-height:1.4;color:#7a6a5e}
+.np-chk-r>div{display:flex;flex-wrap:wrap;gap:8px}.np-chk-r label{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 14px;border:1px solid var(--input,#e1ddd7);border-radius:6px;background:#fff;font-size:15px;color:#1c0e05;cursor:pointer;line-height:1.3}
+.np-chk-r input{width:18px;height:18px;margin:0;accent-color:#fe7802;flex:none}.np-chk-r label:has(input:checked){border-color:#fe7802;background:#fff1e5}.np-chk-r label:has(input:focus-visible){outline:2px solid #fe7802;outline-offset:2px}
+.np-chk-out{margin:16px 20px 0;padding:16px 0 0;border-top:1px solid var(--border,#e5e0da)}.np-chk-h{font-size:17px;font-weight:700;color:#1c0e05;margin:0 0 12px}
+.np-chk-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}.np-chk-list li{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:start;font-size:15px;line-height:1.5;color:#3d2f25}
+.np-chk-s{display:inline-block;text-align:center;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 0;border-radius:4px;margin-top:2px}.np-chk-pass{background:#e8f3ec;color:#1d6b3a}.np-chk-fail{background:#fde8e4;color:#a1260d}.np-chk-check{background:#fff1e5;color:#8a4300}
+.np-chk-list b{color:#1c0e05}.np-chk-sec{color:#7a6a5e}.np-chk-end{padding:16px 20px 20px}.np-chk-end .np-cta{margin-top:4px}.np-chk-note{margin:12px 0 0!important;font-size:13px!important;line-height:1.5;color:#7a6a5e}`
+// The rules, in the order the page explains them. Statuses: pass, fail, or check (the inputs can't settle it).
+const CHECKER_JS = `<script>(()=>{const f=document.getElementById('np-chk-form');if(!f)return;const list=document.getElementById('np-chk-list'),sum=document.getElementById('np-chk-sum');
+const v=(n)=>f.elements[n].value,n=(k)=>{const x=parseFloat(v(k));return isFinite(x)?x:null},q=(x)=>x+'"';
+const L={pass:'Pass',fail:'Fail',check:'Check'};
+const row=(s,title,text,sec)=>'<li><span class="np-chk-s np-chk-'+s+'">'+L[s]+'</span><span><b>'+title+'.</b> '+text+' <span class="np-chk-sec">(ADA '+(sec.includes(',')?'sections ':'section ')+sec+')</span></span></li>';
+function run(){const t=v('type'),W=n('w'),D=n('d'),wall=v('toilet')==='wall',front=v('loc')==='front',inswing=v('swing')==='in',gap=n('gap'),comps=n('comps'),fx=n('fixtures');
+const wc=t!=='amb',child=t==='child',out=[];
+const minW=t==='amb'?35:60,minD=t==='amb'?60:(child||!wall?59:56);
+// size
+if(W===null||D===null)out.push(row('check','Size','Enter the width and depth to check the size.',t==='amb'?'604.8.2.1':'604.8.1.1'));
+else if(t==='amb'){const ok=W>=35&&W<=37&&D>=60;out.push(row(ok?'pass':'fail','Size',ok?'An ambulatory compartment is 35" to 37" wide and at least 60" deep. Yours is '+q(W)+' by '+q(D)+'.':(W<35||W>37?'The width must be 35" to 37"; yours is '+q(W)+'. ':'')+(D<60?'The depth must be at least 60"; yours is '+q(D)+'.':''),'604.8.2.1'))}
+else{const ok=W>=60&&D>=minD;out.push(row(ok?'pass':'fail','Size',(ok?'Meets the minimum: ':'Too small. The minimum is ')+'60" wide by '+q(minD)+' deep'+(child?' for a children\\'s compartment':wall?' with a wall-hung toilet':' with a floor-mounted toilet')+'. Yours is '+q(W)+' by '+q(D)+'.','604.8.1.1'))}
+// door swing
+if(!inswing)out.push(row('pass','Door swing','An outswing door stays clear of the minimum compartment area.',wc?'604.8.1.2':'604.8.2.2'));
+else{const dim=front?D:W,min=front?minD:minW,room=dim===null?null:dim-min;
+if(room!==null&&room<32)out.push(row('fail','Door swing','An inswing door may not swing into the minimum area ('+q(minW)+' by '+q(minD)+'). Its swing needs about the door\\'s width, 32" or more, beyond that area, and this layout leaves '+q(Math.max(0,room))+'. Swing the door out or make the compartment '+(front?'deeper':'wider')+'.',wc?'604.8.1.2':'604.8.2.2'));
+else out.push(row('check','Door swing','An inswing door is allowed only where its whole swing stays outside the minimum area ('+q(minW)+' by '+q(minD)+'). Check the swing on your drawing.',wc?'604.8.1.2':'604.8.2.2'))}
+// door location, approach, hardware
+if(wc)out.push(row('check','Door location',front?'In the front partition, the door opening must be within 4" of the side wall or partition farthest from the toilet.':'In a side wall or partition, the door must be in the one farthest from the toilet, with the opening within 4" of the front partition.','604.8.1.2'));
+out.push(row('check','Door and clear width','Self-closing, with a pull on both sides near the latch, and at least 32" clear with the door open 90 degrees. With a latch-side approach, keep 42" from the door side of the compartment to any obstruction.',(wc?'604.8.1.2':'604.8.2.2')+', 404.2.3'));
+// toe clearance
+if(!wc)out.push(row('pass','Toe clearance','Not a rule for ambulatory compartments.','604.8.1.4'));
+else{const need=child?12:9,fEx=child?D!==null&&D>65:D!==null&&(wall?D>62:D>65),sEx=W!==null&&W>66,lim=child?'65"':wall?'62"':'65"';
+if(fEx&&sEx)out.push(row('pass','Toe clearance','Not required: the compartment is deeper than '+lim+' and wider than 66".','604.8.1.4'));
+else if(gap===null)out.push(row('check','Toe clearance','Enter the height of the panel bottoms to check toe clearance.','604.8.1.4'));
+else if(gap>=need)out.push(row('pass','Toe clearance',q(gap)+' meets the '+q(need)+' minimum, 6" deep beyond the compartment-side face'+(fEx?'. The front partition is exempt here; at least one side partition still needs it.':sEx?'. The side partitions are exempt here; the front partition still needs it.':', under the front partition and at least one side partition.'),'604.8.1.4'));
+else out.push(row('fail','Toe clearance',q(gap)+' is below the '+q(need)+' minimum. '+(fEx?'The front partition is exempt (deeper than '+lim+'), but at least one side partition needs it unless the compartment is wider than 66".':sEx?'The side partitions are exempt (wider than 66"), but the front partition needs it unless the compartment is deeper than '+lim+'.':'Raise the panels and door to '+q(need)+', or make the compartment deeper than '+lim+' and wider than 66".'),'604.8.1.4'))}
+// ambulatory required?
+if(comps===null&&fx===null)out.push(row('check','Ambulatory stall','Enter the compartment and fixture counts to see whether the room needs one.','213.3.1'));
+else{const req=(comps||0)>=6||(fx||0)>=6,why=(comps||0)>=6?'6 or more compartments':'6 or more toilets and urinals combined';
+out.push(t==='amb'?row('pass','Ambulatory stall',req?'Required in this room ('+why+'), in addition to the wheelchair accessible compartment. This is that stall.':'Not required in this room, but allowed.','213.3.1')
+:row(req?'check':'pass','Ambulatory stall',req?'Required in this room, in addition to the wheelchair accessible compartment ('+why+'). Make sure your layout has one.':'Not required: fewer than 6 compartments and fewer than 6 toilets and urinals combined.','213.3.1'))}
+// toilet centerline, grab bars, hardware
+out.push(row('check','Toilet centerline',(t==='amb'?'17" to 19"':child?'12" to 18"':'16" to 18"')+' from the side wall or partition.',child?'604.9.1':'604.2'));
+out.push(row('check','Grab bars',(t==='amb'?'A side-wall grab bar on both sides':'A side-wall grab bar on the wall closest to the toilet and a rear-wall grab bar')+', 42" min long at the side'+(t==='amb'?'':', 36" min at the rear')+(child?'. Heights for children\\'s use are set in 609.4.':', 33" to 36" high to the top of the bar.'),child?'604.9.4, 609.4':(t==='amb'?'604.8.2.3':'604.8.1.5')+', 609.4'));
+out.push(row('check','Hardware','Latch and pulls work with one hand, without tight grasping, pinching or twisting of the wrist, at 5 lb of force or less, and sit 34" to 48" above the floor.','309.4, 404.2.7'));
+list.innerHTML=out.join('');const fails=list.querySelectorAll('.np-chk-fail').length,checks=list.querySelectorAll('.np-chk-check').length;
+sum.textContent=fails?fails+(fails>1?' rules fail':' rule fails')+', '+checks+' to check on your drawing':'No problems found. '+checks+' items to check on your drawing'}
+f.addEventListener('input',run);f.addEventListener('change',run);run()})()</script>`
+const md = (s) => withCheckers(ctas(inlineRenders(legends(cards(styled(marked.parse(s.replace(/^:::checker\n([\s\S]*?)\n:::$/gm, (_, b) => checker(b)).replace(/^:::expert\n([\s\S]*?)\n:::$/gm, (_, b) => expert(b)).replace(/^:::advice\n([\s\S]*?)\n:::$/gm, (_, b) => advice(b)).replace(/^:::gallery\n([\s\S]*?)\n:::$/gm, (_, b) => gallery(b)), { gfm: true })))))))
+
+function faqItems(section) {
+  return section.md.split(/^### /m).filter((x) => x.trim()).map((q) => { const nl = q.indexOf('\n'); return { q: q.slice(0, nl).trim(), a: q.slice(nl + 1).trim() } })
+}
+
+// Hero drawing: the page's own first drawing (a mounting sheet shows its single front view), or a fitting one for
+// pages that have none. Drawn straight on the dark hero (recolored by CSS: light lines, orange kept) beside the title; it stacks under the button on a phone,
+// where it shows the drawing's first phone frame. Its ids get an "h-" prefix: the same drawing is often inlined again in the page.
+const HERO_FALLBACK = { '/': 'mounting-styles-compare', '/about': 'mounting-styles-compare', '/faq': 'partition-anatomy', '/brands': 'partition-anatomy', '/brands/hadrian': 'partition-anatomy', '/blog': 'stall-gaps', '/guides': 'sheet-plan', '/guides/installation-instructions': 'mounting-styles-compare', '/industries': 'sheet-plan' }
+// 3D renders (design/renders/, made by design/render3d from the drawings' numbers). In the previews they are
+// inlined as data URIs so a file opens on its own; on the live site they're served as /images/renders/<name>.jpg.
+const RENDERS = '../design/renders/'
+const renderSrc = (name) => `data:image/jpeg;base64,${readFileSync(`${RENDERS}${name}.jpg`).toString('base64')}`
+const inlineRenders = (html) => html.replace(/src="\/images\/renders\/([a-z0-9-]+)\.jpg"/g, (_, n) => `src="${renderSrc(n)}"`)
+const HERO_RENDER = { '/partitions': 'overhead-braced-hero', '/mounting-styles/overhead-braced': 'overhead-braced-hero', '/mounting-styles/floor-mounted': 'floor-mounted-hero', '/mounting-styles/ceiling-hung': 'ceiling-hung-hero', '/mounting-styles/floor-to-ceiling': 'floor-to-ceiling-hero' }
+function heroArt(raw, url) {
+  // a page with its own product photo (the live site's, marked "photo") shows it in the hero instead of a drawing
+  const ph = raw.match(/!\[([^\]]*)\]\((https:\/\/nextpartitions\.com\/[^\s)]+) "photo"\)/)
+  if (ph) return `<figure class="np-hero-photo np-hero-live"><img src="${ph[2]}" alt="${esc(ph[1])}" width="540" height="465"></figure>`
+  if (HERO_RENDER[url]) return `<figure class="np-hero-photo"><img src="${renderSrc(HERO_RENDER[url])}" alt="" width="2400" height="1500"></figure>`
+  const m = raw.match(/\(\/images\/diagrams\/([a-z0-9-]+)\.svg\)/)
+  const name = m ? m[1] : HERO_FALLBACK[url]
+  if (!name) return ''
+  const art = (file) => inlineSvg(file).replace(/<title[\s\S]*?<\/title>|<desc[\s\S]*?<\/desc>/g, '').replace(/ aria-labelledby="[^"]*"/, '')
+    .replace(/ id="([^"]+)"/g, ' id="h-$1"').replace(/url\(#/g, 'url(#h-')
+  const pm = phoneFiles(name)
+  return `<figure class="np-hero-art" aria-hidden="true">${pm.length ? `<div class="np-d">${art(`${name}.svg`)}</div><div class="np-m">${art(pm[0])}</div>` : art(`${name}.svg`)}</figure>`
+}
+
+// Reasons-to-choose and limits lists get icons in the brand colors: an orange check for the reasons, a muted
+// warning mark for the limits, so the two read as a quick verdict side by side in the text.
+const PROS = /^(Why specifiers choose|Where it works well)/i, CONS = /^(Limits to plan for|When to choose something else)/i
+const iconLists = (title, html) => PROS.test(title) ? html.replace(/<ul class="[^"]*">/g, '<ul class="np-icons np-pros">')
+  : CONS.test(title) ? html.replace(/<ul class="[^"]*">/g, '<ul class="np-icons np-cons">') : html
+
+// The side card opens with a small 3/4 render: the page's own mounting style, otherwise overhead braced (the most
+// common style). Decorative, so empty alt.
+const cardImg = (url) => {
+  const m = url.match(/^\/mounting-styles\/(overhead-braced|floor-mounted|ceiling-hung|floor-to-ceiling)$/)
+  return `<img class="np-card-img" src="${renderSrc(`${m ? m[1] : 'overhead-braced'}-angle`)}" alt="" width="2400" height="1500">`
+}
+
+// The homepage preview is the homepage proposal sent to Marc (prototypes/homepage-grid.html: three ways into a quote),
+// not the article layout. Its images are inlined so the file opens on its own.
+function homepage(url) {
+  const PROTO = '../../prototypes/'
+  const proto = readFileSync(`${PROTO}homepage-grid.html`, 'utf8')
+    .replace(/src="img\/([^"]+)"/g, (_, f) => `src="data:image/${f.endsWith('.svg') ? 'svg+xml' : f.endsWith('.png') ? 'png' : 'jpeg'};base64,${readFileSync(`${PROTO}img/${f}`).toString('base64')}"`)
+  // the prototype is a page fragment (no doctype or body): wrap it, with the preview bar on top
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"></head><body style="margin:0">`
+    + `<div style="background:#111;color:#fff;font:12px/1.4 Inter,system-ui,sans-serif;padding:6px 16px;text-align:center">Homepage proposal for nextpartitions.com${url} (ideas for Marc) · not the live site · <a href="index.html" style="color:#fff;text-decoration:underline">all preview pages</a></div>`
+    + `${proto}${TOP_JS}</body></html>`
+}
+
+
+// The blog index is an overview, not an article: topic chips, then the latest posts and one group per topic, all in
+// the same card, three across on desktop and two on a tablet. pages/blog.md lists the links per topic; each card takes its title, summary (meta description) and
+// thumbnail (the page's first drawing, or the front render on mounting style pages) from the linked page's own file.
+// A link to a page we haven't rebuilt carries its summary after a colon, and its drawing comes from HUB_THUMB.
+const HUB_THUMB = { '/guides/ada-compliance': 'accessible-stall-plan' }
+const HUB_TYPE = { blog: 'Blog', guides: 'Guide', partitions: 'Material', 'mounting-styles': 'Mounting style' }
+let hubN = 0
+const HUBS = new Set(['/guides'])
+function hubCard(item, big, filter) {
+  const page = existsSync(`${PAGES}/${item.href.replace(/^\//, '').replace(/\//g, '_')}.md`) ? parse(`${item.href.replace(/^\//, '').replace(/\//g, '_')}.md`) : null
+  const raw = page ? readFileSync(`${PAGES}/${item.href.replace(/^\//, '').replace(/\//g, '_')}.md`, 'utf8').split('<!-- For Marc -->')[0] : ''
+  const summary = item.summary || page?.fm.meta || ''
+  const type = HUB_TYPE[item.href.split('/')[1]] || 'Guide'
+  const mount = item.href.match(/^\/mounting-styles\/(.+)$/)
+  let thumb
+  if (mount) thumb = `<img src="${renderSrc(`${mount[1]}-hero`)}" alt="" loading="lazy">`
+  else {
+    const m = raw.match(/\(\/images\/diagrams\/([a-z0-9-]+)\.svg\)/)
+    const name = (m ? m[1] : HUB_THUMB[item.href] || 'partition-anatomy').replace(/-m\d?$/, '')
+    const file = existsSync(`${DIAGRAMS}${name}.svg`) ? `${name}.svg` : `${m[1]}.svg`
+    const pre = `c${hubN++}-`
+    thumb = inlineSvg(file).replace(/<title[\s\S]*?<\/title>|<desc[\s\S]*?<\/desc>/g, '').replace(/ aria-labelledby="[^"]*"/, ' aria-hidden="true"')
+      .replace(/ id="([^"]+)"/g, ` id="${pre}$1"`).replace(/url\(#/g, `url(#${pre}`)
+  }
+  const date = page?.fm.date && type === 'Blog' ? `<span class="np-hc-date">${esc(page.fm.date)}</span>` : ''
+  const data = filter ? ` data-cat="${esc(item.cat || '')}" data-text="${esc(`${item.label} ${summary} ${item.cat || ''}`.toLowerCase())}"` : ''
+  return `<a class="np-hc${big ? ' np-hc-big' : ''}" href="${item.href}"${data}><div class="np-hc-media">${thumb}</div><div class="np-hc-body"><div class="np-hc-meta"><span class="np-hc-type">${esc(item.cat || type)}</span>${date}</div><h3>${esc(item.label)}</h3><p>${esc(summary)}</p><span class="np-hc-go">${type === 'Blog' ? 'Read the post' : 'Read more'} ${ICON_ARROW}</span></div></a>`
+}
+const HUB_CSS = `.np-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.np-chips a{padding:6px 14px;border-radius:999px;border:1px solid rgba(251,250,249,.3);font-size:14px;font-weight:500;color:#fbfaf9}.np-chips a:hover{border-color:#fe7802;color:#fe7802}
+.np-hs{padding:48px 0;border-bottom:1px solid var(--border,#e5e0da);scroll-margin-top:120px}.np-hs:last-of-type{border-bottom:0}.np-hs h2{font-size:26px;font-weight:700;margin:0 0 6px}.np-hs>div>p{color:var(--muted-foreground,#7a6a5e);margin:0 0 24px;max-width:46rem}
+.np-hg{display:grid;gap:20px}@media(min-width:640px){.np-hg{grid-template-columns:repeat(2,1fr)}}@media(min-width:1024px){.np-hg{grid-template-columns:repeat(3,1fr)}}.np-hs-note{margin:16px 0 0;font-size:13px;line-height:1.55;color:var(--muted-foreground,#7a6a5e);max-width:52rem}.np-hs-note a,.np-hs>div>p a{color:#fe7802;font-weight:500}
+.np-hc{display:flex;flex-direction:column;background:#fff;border:1px solid var(--border,#e5e0da);border-radius:10px;overflow:hidden;transition:border-color .15s,box-shadow .15s;min-width:0}.np-hc:hover{border-color:#fe7802;box-shadow:0 8px 24px rgba(28,14,5,.08)}
+.np-hc-media{aspect-ratio:16/9;max-width:100%;display:flex;align-items:center;justify-content:center;background:#fff;border-bottom:1px solid var(--border,#e5e0da);padding:12px;overflow:hidden}.np-hc-media svg{width:100%;height:100%}.np-hc-media .co,.np-hc-media .dn{display:none}.np-hc-media img{width:100%;height:100%;object-fit:contain}
+.np-hc-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}.np-hc-meta{display:flex;gap:10px;align-items:center;font-size:12px}.np-hc-type{font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fe7802}.np-hc-date{color:var(--muted-foreground,#7a6a5e)}
+.np-hc h3{font-size:18px;line-height:1.3;font-weight:700;margin:0;color:var(--foreground,#1c0e05)}.np-hc p{margin:0;font-size:15px;line-height:1.55;color:var(--muted-foreground,#7a6a5e)}.np-hc-go{margin-top:auto;padding-top:6px;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:#fe7802}.np-hc-go svg{width:15px;height:15px}`
+function hub(fm, intro, sections, url, faq, sources) {
+  const items = (s) => [...s.md.matchAll(/^- \[([^\]]+)\]\(([^)]+)\)(?::\s*(.+))?$/gm)].map((m) => ({ label: m[1], href: m[2], summary: m[3] }))
+  const lists = sections.filter((s) => items(s).length)
+  const latest = lists.find((s) => /^Latest/i.test(s.title)), topics = lists.filter((s) => s !== latest)
+  const slug = (t) => t.toLowerCase().replace(/[^a-z0-9]+/g, '-')
+  const lead = intro.split(/\n\s*\n/)[0]
+  const end = sections.find((s) => !items(s).length)
+  return `<main class="flex-1">
+<div class="relative bg-primary text-primary-foreground overflow-hidden"><div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<nav aria-label="Breadcrumb" class="py-3"><ol class="flex items-center gap-1.5 text-sm text-primary-foreground/60 flex-wrap"><li class="flex items-center gap-1.5"><a class="hover:text-primary-foreground/90 transition-colors" href="/">Home</a></li><li class="flex items-center gap-1.5">${ICON_CHEVRON}<span class="text-primary-foreground font-medium" aria-current="page">${esc(SECTION[url.slice(1)][0])}</span></li></ol></nav>
+<h1 class="text-3xl md:text-4xl font-bold mt-2 mb-3">${esc(fm.h1)}</h1>
+<p class="text-lg opacity-90 max-w-3xl">${strip(md(lead))}</p>
+<nav class="np-chips" aria-label="Topics">${topics.map((s) => `<a href="#${slug(s.title)}">${esc(s.title)}</a>`).join('')}</nav>
+</div></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+${latest ? `<section class="np-hs"><div><h2>${esc(latest.title)}</h2><p>New articles, newest first.</p></div><div class="np-hg">${items(latest).map((i) => hubCard(i)).join('')}</div></section>` : ''}
+${topics.map((s) => {
+    const ps = s.md.split(/\n\s*\n/).map((x) => x.trim()).filter((x) => !x.startsWith('- '))
+    const lede = s.md.trim().startsWith('- ') ? '' : ps.shift(), n = items(s).length
+    return `<section class="np-hs" id="${slug(s.title)}"><div><h2>${esc(s.title)}</h2>${lede ? `<p>${md(lede).replace(/^<p[^>]*>|<\/p>\s*$/g, '')}</p>` : ''}</div><div class="np-hg">${items(s).map((i) => hubCard(i)).join('')}</div>${ps.map((x) => `<p class="np-hs-note">${md(x).replace(/^<p[^>]*>|<\/p>\s*$/g, '')}</p>`).join('')}</section>`
+  }).join('\n')}
+${faq.length ? `<section class="np-hs"><div><h2>Frequently Asked Questions</h2></div><div class="space-y-3" style="max-width:48rem">${faq.map((x) => `<details class="border border-border rounded-lg p-4 bg-card"><summary class="font-semibold text-foreground cursor-pointer">${esc(x.q)}</summary><div class="mt-3">${md(x.a)}</div></details>`).join('')}</div></section>` : ''}
+${sources ? `<section class="np-sources np-hs text-xs text-muted-foreground"><h2 class="text-sm font-semibold text-foreground mb-2" style="font-size:14px">Sources</h2>${md(sources.md).replace(/text-muted-foreground leading-relaxed mb-4/g, 'mb-2').replace(/space-y-2 text-muted-foreground leading-relaxed mb-4/g, 'space-y-1')}</section>` : ''}
+</div>
+${end ? `<section class="bg-accent/50"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-wrap items-center justify-between gap-6"><div><h2 class="text-2xl font-bold mb-2">${esc(end.title)}</h2><p class="text-muted-foreground">${QUOTE_PROMISE}</p></div>${button('Get a Quote', '/get-a-quote')}</div></section>` : ''}
+</main>`
+}
+
+
+// Category pages (materials, mounting styles, hardware) open with a product grid, the way a shop category does. The
+// shop (/products) has no products yet, so the grid is a marked placeholder for Marc to wire to the shop's product
+// feed; the page content follows underneath.
+const CATEGORY = new Set(['partitions', 'mounting-styles', 'hardware'])
+function productGrid(fm) {
+  const card = `<div class="np-pc"><div class="np-pc-img"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg><span>Product photo</span></div><div class="np-pc-body"><p class="np-pc-name">[Product name]</p><p class="np-pc-spec">[Brand · material · size]</p><p class="np-pc-price">[Price]</p><span class="np-pc-btn">View product</span></div></div>`
+  return `<section class="np-pg max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style="padding-top:40px"><div class="np-pg-bar"><h2 class="text-2xl font-bold">Shop ${esc(fm.h1.replace(/ Bathroom Partitions| Toilet Partitions/, ''))}</h2><div class="np-pg-tools"><span class="np-pg-chip">Filter</span><span class="np-pg-chip">Sort: Featured</span></div></div>`
+    + `<p class="np-pg-note">Placeholder: the product feed from the shop (/products) fills this grid once products are listed.</p>`
+    + `<div class="np-pg-grid">${card.repeat(8)}</div></section>`
+}
+const CAT_CSS = `.np-pg-bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px}.np-pg-tools{display:flex;gap:8px}.np-pg-chip{padding:6px 14px;border:1px solid var(--border,#e5e0da);border-radius:6px;font-size:14px;color:var(--muted-foreground,#7a6a5e);background:#fff}
+.np-pg-note{font-size:13px;color:#b45309;background:#fff7ed;border:1px dashed #fdba74;border-radius:6px;padding:8px 12px;margin:0 0 16px}
+.np-pg-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}@media(min-width:900px){.np-pg-grid{grid-template-columns:repeat(4,1fr)}}
+.np-pc{background:#fff;border:1px solid var(--border,#e5e0da);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;min-width:0}.np-pc-img{aspect-ratio:1/1;max-width:100%;background:#f2f0ec;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#b5aaa0;font-size:12px}
+.np-pc-body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px;flex:1}.np-pc-name{font-weight:600;color:var(--foreground,#1c0e05);margin:0}.np-pc-spec{font-size:13px;color:var(--muted-foreground,#7a6a5e);margin:0}.np-pc-price{font-weight:700;color:var(--foreground,#1c0e05);margin:4px 0 8px}.np-pc-btn{margin-top:auto;text-align:center;padding:8px;border-radius:6px;border:1px solid #fe7802;color:#fe7802;font-size:14px;font-weight:600}
+.np-rm{margin-bottom:32px}.np-rm:not(.is-open) .np-rm-body{max-height:240px;overflow:hidden;position:relative}.np-rm:not(.is-open) .np-rm-body::after{content:"";position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(rgba(251,250,249,0),var(--background,#fbfaf9))}
+.np-rm-btn{display:inline-flex;align-items:center;gap:8px;margin-top:8px;padding:10px 18px;border:1px solid #fe7802;border-radius:6px;font:inherit;font-weight:600;color:#fe7802;background:#fff;cursor:pointer}.np-rm-btn::after{content:"+";font-weight:700}.np-rm.is-open .np-rm-btn::after{content:"–"}.np-rm-btn:focus-visible{outline:2px solid #fe7802;outline-offset:2px}`
+
+
+// Phones and tablets (below 1024 px): the hero button goes full width (up to 420 px) and 48 px tall.
+const MOBILE_CSS = `@media(max-width:1023px){.np-hero-cta{max-width:420px}.np-hero-cta a,.np-hero-cta button{width:100%}.np-hero-cta button{height:48px;font-size:16px;font-weight:700}}`
+
+
+// The blog index: one row of category chips with post counts, a search field, then every post in one grid, newest
+// first; a chip or a search narrows the grid in place (the script below). Under the posts, three guides as a teaser.
+// pages/blog.md lists the posts, each with its category after " · ", and the three guides.
+function blogHub(fm, intro, sections) {
+  const list = (s) => [...(s?.md || '').matchAll(/^- \[([^\]]+)\]\(([^)]+)\)(?: · (.+))?$/gm)].map((m) => ({ label: m[1], href: m[2], cat: m[3] }))
+  const posts = list(sections.find((s) => /^Posts$/i.test(s.title)))
+  const guides = sections.find((s) => /^Guides$/i.test(s.title))
+  const end = sections.find((s) => /^Ready/i.test(s.title))
+  const cats = [...new Set(posts.map((p) => p.cat).filter(Boolean))]
+  const chip = (label, n, cat, on) => `<button type="button" class="np-chip${on ? ' is-on' : ''}" data-cat="${esc(cat)}" aria-pressed="${on}">${esc(label)} <span>${n}</span></button>`
+  const lead = intro.split(/\n\s*\n/)[0]
+  return `<main class="flex-1">
+<div class="relative bg-primary text-primary-foreground overflow-hidden"><div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<nav aria-label="Breadcrumb" class="py-3"><ol class="flex items-center gap-1.5 text-sm text-primary-foreground/60"><li class="flex items-center gap-1.5"><a class="hover:text-primary-foreground/90 transition-colors" href="/">Home</a></li><li class="flex items-center gap-1.5">${ICON_CHEVRON}<span class="text-primary-foreground font-medium" aria-current="page">Blog</span></li></ol></nav>
+<h1 class="text-3xl md:text-4xl font-bold mt-2 mb-3">${esc(fm.h1)}</h1>
+<p class="text-lg opacity-90 max-w-3xl">${strip(md(lead))}</p>
+</div></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="np-hs" style="border-bottom:0"><div class="np-filter" role="group" aria-label="Categories">${chip('All', posts.length, '', true)}${cats.map((c) => chip(c, posts.filter((p) => p.cat === c).length, c, false)).join('')}</div>
+<label class="np-search"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="np-search" type="search" placeholder="Search posts" aria-label="Search posts"></label>
+<div class="np-hg" id="np-posts">${posts.map((p) => hubCard(p, false, true)).join('')}</div>
+<p class="np-none" id="np-none" hidden>No posts match. Try another word or category.</p></section>
+${guides ? `<section class="np-hs"><div class="np-hs-head"><div><h2>Guides</h2><p>${md(guides.md.split(/\n\s*\n/)[0]).replace(/^<p[^>]*>|<\/p>\s*$/g, '')}</p></div><a class="np-more" href="/guides">All guides ${ICON_ARROW}</a></div><div class="np-hg">${list(guides).map((g) => hubCard(g)).join('')}</div></section>` : ''}
+</div>
+${end ? `<section class="bg-accent/50"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-wrap items-center justify-between gap-6"><div><h2 class="text-2xl font-bold mb-2">${esc(end.title)}</h2><p class="text-muted-foreground">${QUOTE_PROMISE}</p></div>${button('Get a Quote', '/get-a-quote')}</div></section>` : ''}
+<!--np-blog-js-->
+</main>`
+}
+const RM_JS = `<script>(()=>{const w=document.getElementById('np-rm');if(!w)return;const b=w.querySelector('.np-rm-btn');b.addEventListener('click',()=>{const open=!w.classList.contains('is-open');w.classList.toggle('is-open',open);b.setAttribute('aria-expanded',open);b.textContent=open?'Show less':b.dataset.more;if(!open)w.scrollIntoView({block:'start'})})})()</script>`
+const BLOG_CSS = `.np-filter{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}.np-chip{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:999px;border:1px solid var(--border,#e5e0da);background:#fff;font-size:15px;font-weight:600;color:var(--foreground,#1c0e05);cursor:pointer}.np-chip span{font-size:13px;font-weight:600;color:var(--muted-foreground,#7a6a5e);font-variant-numeric:tabular-nums}.np-chip:hover{border-color:#fe7802}.np-chip.is-on{background:#fe7802;border-color:#fe7802;color:#fff}.np-chip.is-on span{color:rgba(255,255,255,.8)}.np-chip:focus-visible,.np-search input:focus-visible{outline:2px solid #fe7802;outline-offset:2px}
+.np-search{display:flex;align-items:center;gap:10px;padding:0 18px;height:52px;border:1px solid var(--border,#e5e0da);border-radius:999px;background:#fff;color:var(--muted-foreground,#7a6a5e);margin-bottom:28px}.np-search input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:16px;color:var(--foreground,#1c0e05)}
+.np-none{color:var(--muted-foreground,#7a6a5e);margin:8px 0 0}.np-hc[hidden]{display:none}
+.np-hs-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:24px}.np-hs-head p{margin:0;color:var(--muted-foreground,#7a6a5e)}.np-hs-head p a{color:#fe7802;font-weight:500}.np-more{display:inline-flex;align-items:center;gap:6px;font-weight:600;color:#fe7802;white-space:nowrap}.np-more svg{width:16px;height:16px}`
+const BLOG_JS = `<script>(()=>{const chips=[...document.querySelectorAll('.np-chip')],cards=[...document.querySelectorAll('#np-posts .np-hc')],q=document.getElementById('np-search'),none=document.getElementById('np-none');let cat='';
+const run=()=>{const t=q.value.trim().toLowerCase();let n=0;cards.forEach((c)=>{const ok=(!cat||c.dataset.cat===cat)&&(!t||c.dataset.text.includes(t));c.hidden=!ok;if(ok)n++});none.hidden=n>0};
+chips.forEach((b)=>b.addEventListener('click',()=>{cat=b.dataset.cat;chips.forEach((x)=>{x.classList.toggle('is-on',x===b);x.setAttribute('aria-pressed',x===b)});run()}));q.addEventListener('input',run)})()</script>`
+
+function build(file, built) {
+  const { fm, intro, sections } = parse(file)
+  const art = heroArt(readFileSync(`${PAGES}/${file}`, 'utf8').split('<!-- For Marc -->')[0], fm.url)
+  const url = fm.url
+  const seg = url.split('/').filter(Boolean)
+  const crumbs = [['Home', '/']]
+  if (seg.length > 1 && SECTION[seg[0]]) crumbs.push(SECTION[seg[0]])
+  if (url !== '/') crumbs.push([fm.h1, url])
+
+  // Hero: the first paragraph, and the first CTA line as the button.
+  const introParas = intro.split(/\n\s*\n/)
+    const first = introParas.shift() ?? ''
+  // a short intro: whole sentences up to about 240 characters (at least one); the rest starts the page
+  let cut = -1
+  if (first.length > 200) {
+    const ends = [...first.matchAll(/[.?!]["”]?(?=\s)/g)].map((m) => m.index + m[0].length - 1)
+    cut = ends[0] ?? -1
+    for (const e of ends) if (e < 240) cut = e
+  }
+  let lead = cut > 0 ? first.slice(0, cut + 1) : first
+  if (cut > 0) introParas.unshift(first.slice(cut + 1).trim())
+  // A post that opens by restating its title as a question: the hero shows the page description instead.
+  if (lead.trim().endsWith('?')) { introParas.unshift(first); lead = fm.meta }
+  const ctaIdx = introParas.findIndex((p) => /^\[[^\]]+\]\((\/contact|\/get-a-quote)\)/.test(p.trim()))
+  const ctaPara = ctaIdx >= 0 ? introParas.splice(ctaIdx, 1)[0] : null
+  const cta = ctaPara ? ctaPara.match(/^\[([^\]]+)\]\(([^)]+)\)/) : null
+  const ctaLabel = cta ? cta[1] : 'Get a Quote', ctaHref = cta ? cta[2] : '/get-a-quote'
+
+  const faq = sections.find((s) => /^FAQ$/i.test(s.title))
+  const sources = sections.find((s) => /^Sources$/i.test(s.title))
+  let content = sections.filter((s) => s !== faq && s !== sources)
+  const items = faq ? faqItems(faq) : []
+  const isPost = seg[0] === 'blog' && seg.length > 1
+  const isCat = CATEGORY.has(seg[0])
+  const faqHtml = items.length ? `<section class="mb-8"><h2 class="text-2xl font-bold mb-4">Frequently Asked Questions</h2><div class="space-y-3">${items.map((x) => `<details class="border border-border rounded-lg p-4"><summary class="font-semibold text-foreground cursor-pointer">${esc(x.q)}</summary><div class="mt-3">${md(x.a)}</div></details>`).join('')}</div></section>` : ''
+  const srcHtml = sources ? `<section class="np-sources mt-10 border-t border-border pt-6 text-xs text-muted-foreground"><h2 class="text-sm font-semibold text-foreground mb-2">Sources</h2>${md(sources.md).replace(/text-muted-foreground leading-relaxed mb-4/g, 'mb-2').replace(/space-y-2 text-muted-foreground leading-relaxed mb-4/g, 'space-y-1')}</section>` : ''
+
+  let main = url === '/blog' ? blogHub(fm, intro, content) : HUBS.has(url) ? hub(fm, intro, content, url, items, sources) : `<main class="flex-1">
+<div class="relative bg-primary text-primary-foreground overflow-hidden"><div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<nav aria-label="Breadcrumb" class="py-3"><ol class="flex items-center gap-1.5 text-sm text-primary-foreground/60" style="flex-wrap:nowrap;white-space:nowrap;min-width:0;overflow:hidden">${crumbs.map(([n, h], i) => i === crumbs.length - 1
+    // one row: the current page's name is cut off with an ellipsis when it doesn't fit
+    ? `<li class="flex items-center gap-1.5" style="min-width:0">${i ? ICON_CHEVRON : ''}<span class="text-primary-foreground font-medium" aria-current="page" style="overflow:hidden;text-overflow:ellipsis" title="${esc(n)}">${esc(n)}</span></li>`
+    : `<li class="flex items-center gap-1.5">${i ? ICON_CHEVRON : ''}<a class="hover:text-primary-foreground/90 transition-colors" href="${h}">${esc(n)}</a></li>`).join('')}</ol></nav>
+${art ? '<div class="np-hero"><div>' : ''}<h1 class="text-3xl md:text-4xl font-bold mt-2 mb-3">${esc(fm.h1)}</h1>
+<p class="text-lg opacity-90 max-w-3xl mb-6">${strip(md(lead))}</p>
+<div class="np-hero-cta">${button(ctaLabel, ctaHref)}</div>
+${art ? `</div>${art}</div>` : ''}</div></div>
+${isCat ? productGrid(fm) : ''}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-8"><div class="md:col-span-2 min-w-0">
+${introParas.length ? `<section class="mb-8">${md(introParas.join('\n\n'))}</section>` : ''}
+${(() => {
+  const sec = (s) => `<section class="mb-8"><h2 class="text-2xl font-bold mb-4">${esc(s.title)}</h2>${iconLists(s.title, md(s.md))}</section>`
+  // Category pages: the products come first, then the intro; every section after it opens with "Read more"
+  if (!isCat || content.length < 2) return content.map(sec).join('\n')
+  // a gallery stays visible above the teaser (on the mounting styles hub it's the way into the four styles); its
+  // section keeps the rest of its text inside Read more
+  const GAL = /^:::gallery\n[\s\S]*?\n:::$/m
+  const galSec = content.find((x) => GAL.test(x.md))
+  const shown = galSec ? `<section class="mb-8"><h2 class="text-2xl font-bold mb-4">${esc(galSec.title)}</h2>${md(galSec.md.match(GAL)[0])}</section>` : ''
+  if (galSec) content = content.map((x) => x === galSec ? { ...x, title: `More on the ${x.title.replace(/^The /, '').toLowerCase()}`, md: x.md.replace(GAL, '').trim() } : x)
+  // closed, the content is cut to its first lines and fades out; "Read more" lifts the cut so the text simply
+  // continues where it was (nothing jumps), and the button moves under the content as "Show less"
+  const label = `Read more about ${esc(fm.h1.toLowerCase())}`
+  return shown + `<div class="np-rm" id="np-rm"><div class="np-rm-body">${content.map(sec).join('\n')}${faqHtml}${srcHtml}</div><button type="button" class="np-rm-btn" aria-expanded="false" aria-controls="np-rm" data-more="${label}">${label}</button></div><!--np-rm-js-->`
+})()}
+${isCat ? '' : faqHtml}
+${isCat ? '' : srcHtml}
+</div>
+<aside class="space-y-4 min-w-0"><div class="bg-accent/50 rounded-lg p-6 sticky top-4" style="top:132px">${cardImg(url)}
+<h3 class="font-bold mb-2">${ctaHref === '/contact' ? 'Need replacement parts?' : 'Planning a restroom?'}</h3>
+<p class="text-sm text-muted-foreground mb-4">${ctaHref === '/contact' ? 'Send us a photo, your brand and a few measurements, and we will find the match.' : 'Send your layout or drawings, or price it in the configurator.'}</p>
+${button(ctaLabel, ctaHref, 'w-full')}
+<p class="text-xs text-muted-foreground mt-4">${QUOTE_PROMISE}</p>
+</div></aside>
+</div>
+${shell.match(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/section>/)[0]}
+</main>`
+
+  const ld = [
+    { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map(([n, h], i) => ({ '@type': 'ListItem', position: i + 1, name: n, ...(i < crumbs.length - 1 || true ? { item: SITE + (h === '/' ? '/' : h) } : {}) })) },
+    items.length && { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: items.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: strip(md(x.a)) } })) },
+    isPost && { '@context': 'https://schema.org', '@type': 'Article', headline: fm.h1, description: fm.meta, mainEntityOfPage: SITE + url, author: { '@type': 'Organization', name: 'Next Partitions' }, publisher: { '@type': 'Organization', name: 'Next Partitions', logo: { '@type': 'ImageObject', url: SITE + '/apple-touch-icon.png' } } },
+  ].filter(Boolean)
+
+  if (art.includes('np-hero-photo') && /"photo"\)/.test(readFileSync(`${PAGES}/${file}`, 'utf8'))) main = main.replace(/<figure class="np-side np-photo">[\s\S]*?<\/figure>/, '')
+  let html = shell.replace(/<main[\s\S]*<\/main>/, () => main)
+  html = html
+    .replace(/<script[\s\S]*?<\/script>/g, '')
+    .replace(/<link rel="modulepreload"[^>]*>/g, '')
+    .replace(/<link rel="stylesheet" href="\/assets\/[^"]+"[^>]*>/, () => `<style>${CSS}</style>`)
+    .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(fm.title)}</title>`)
+    .replace(/<meta name="description"[^>]*>/, '')
+    .replace(/<link rel="canonical"[^>]*>/, '')
+    .replace('</head>', `<meta name="description" content="${esc(fm.meta)}"/>\n<link rel="canonical" href="${SITE}${url}"/>\n<meta name="robots" content="noindex"/>\n${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join('\n')}\n<style>main figure svg{max-width:100%;height:auto}.np-cta-row{margin:8px 0 28px}.np-cta{display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border-radius:6px;background:#fe7802;color:#fff!important;font-weight:600;font-size:16px;text-decoration:none!important;box-shadow:0 2px 0 rgba(28,14,5,.12);transition:background-color .15s,transform .1s,box-shadow .15s}.np-cta svg{width:18px;height:18px;transition:transform .15s}.np-cta:hover{background:#e56b00;box-shadow:0 6px 16px rgba(254,120,2,.3)}.np-cta:hover svg{transform:translateX(3px)}.np-cta:active{transform:scale(.97);box-shadow:none}.np-cta:focus-visible{outline:2px solid #1c0e05;outline-offset:3px}.np-cta-lead{margin:0 0 12px!important}.np-cta-note{margin:8px 0 0!important;font-size:14px!important;color:var(--muted-foreground,#7a6a5e)}.np-cta-note a{color:#fe7802;font-weight:500}@media(prefers-reduced-motion:reduce){.np-cta,.np-cta svg{transition:none}}@media(min-width:768px) and (max-width:1023px){main .md\\:grid-cols-3{grid-template-columns:1fr}main .md\\:col-span-2{grid-column:auto}}.np-m{display:none}.np-m>svg+svg{margin-top:12px}@media(max-width:640px){.np-d{display:none}.np-m{display:block}.np-fig{padding:6px!important}main table{font-size:12px;line-height:1.4;table-layout:fixed}main table.np-cards,main .np-cards tbody,main .np-cards tr,main .np-cards td{display:block;width:100%}main .np-cards thead{display:none}main .np-cards tr{border:1px solid var(--border,#e5e0da);border-radius:8px;margin-bottom:10px;padding:6px 10px}main .np-cards td{padding:4px 0!important;border:0!important}main .np-cards td::before{content:attr(data-label);display:block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:#7a6a5e}main .np-cards td:first-child{font-weight:600;color:#1c0e05}main .np-cards td:first-child::before{display:none}main th,main td{padding:5px 4px!important;overflow-wrap:break-word;hyphens:auto}}.np-hero{display:grid;gap:32px;align-items:start}.np-hero>*{min-width:0}@media(min-width:900px){.np-hero{grid-template-columns:1.1fr 1fr}}.np-hero-art{margin:8px 0 0}.np-hero-art .dn,.np-hero-art .co{display:none}.np-hero-art svg{width:100%;height:auto;display:block}.np-hero-art [fill="#ffffff"]{fill:transparent}.np-hero-art :not(text)[fill="#fff"]{fill:rgba(255,255,255,.06)}.np-hero-art text[stroke="#fff"]{stroke:none}.np-hero-art [stroke="#1c0e05"]{stroke:#f3ece6}.np-hero-art [fill="#1c0e05"]{fill:#f3ece6}.np-hero-art [stroke="#7a6a5e"]{stroke:#c4b8ae}.np-hero-art [fill="#7a6a5e"]{fill:#c4b8ae}.np-hero-art [fill="#f2f0ec"]{fill:rgba(255,255,255,.07)}.np-hero-art [stroke="#cfc7bc"]{stroke:rgba(255,255,255,.22)}.np-hero-art [fill="#fff1e5"]{fill:rgba(254,120,2,.2)}.np-tb{margin:8px 0 36px;background:#2d1e14;color:#fbfaf9;border:1px solid #2d1e14}.np-tb-quote{margin:0;padding:32px 32px 28px;font-size:22px;line-height:1.45;font-weight:600;letter-spacing:-.01em;color:#fbfaf9;border:0;font-style:normal}.np-tb-ph{font-weight:500;font-style:italic;color:rgba(251,250,249,.55)}.np-tb-strip{display:grid;grid-template-columns:1fr auto;border-top:1px solid rgba(251,250,249,.18)}.np-tb-cell{padding:12px 16px;border-left:1px solid rgba(251,250,249,.18);display:flex;flex-direction:column;gap:3px;min-width:0}.np-tb-cell:first-child{border-left:0;padding-left:32px}.np-tb-label{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#fe7802}.np-tb-val{font-size:14px;font-weight:600;color:#fbfaf9}.np-tb-role{font-size:13px;color:rgba(251,250,249,.7)}.np-tb-brand{flex-direction:row;align-items:center;gap:10px;padding-right:20px;font-size:12px;line-height:1.3;color:rgba(251,250,249,.75)}.np-tb-brand b{color:#fbfaf9;font-size:13px}@media(max-width:640px){.np-tb-quote{padding:24px 20px 20px;font-size:19px}.np-tb-cell{padding:12px 14px}.np-tb-cell:first-child{padding-left:20px}.np-tb-brand span{display:none}}.np-adv{margin:8px 0 36px;background:#fff;border:1.5px solid #2d1e14}.np-adv-band{display:flex;align-items:center;gap:10px;background:#2d1e14;color:#fbfaf9;padding:10px 20px;font-size:13px;font-weight:700;letter-spacing:.01em}.np-adv-body{padding:20px 24px 4px;border-top:4px solid #fe7802}.np-adv-body p{font-size:17px;line-height:1.6;color:#1c0e05!important;font-weight:500}.np-legend{margin:14px 4px 2px;padding:12px 0 0;border-top:1px solid var(--border,#e5e0da);font-size:14px;line-height:1.5;color:#5c4d42;list-style-position:inside;display:grid;gap:4px 28px}.np-legend li{padding-left:0}ol.np-legend{list-style-type:decimal}ul.np-legend{list-style:none}@media(min-width:900px){.np-legend:has(li:nth-child(4)){grid-template-columns:1fr 1fr}}.np-side{margin:4px 0 24px;padding:16px 16px 12px;border:1px solid var(--border,#e5e0da);border-radius:8px;background:#fff}.np-side svg{width:100%;max-width:440px;height:auto;display:block;margin:0 auto}.np-wide svg{max-width:none}.np-wide figcaption{max-width:none}.np-side figcaption{margin:10px auto 0;max-width:440px;font-size:13px;line-height:1.4;color:#7a6a5e;text-align:center}.np-legend{margin:14px 4px 2px;padding:12px 0 0;border-top:1px solid var(--border,#e5e0da);font-size:14px;line-height:1.45;color:#3d2f25;list-style:none;display:grid;gap:8px 28px;counter-reset:np}ol.np-legend li{counter-increment:np;display:flex;gap:10px;align-items:flex-start}ol.np-legend li::before{content:counter(np);flex:0 0 22px;height:22px;border-radius:50%;background:#fe7802;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:-1px}@media(min-width:640px){.np-legend-2{grid-template-columns:1fr 1fr}}.np-photo img{display:block;margin:0 auto;max-width:100%;height:auto;border-radius:4px}.np-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:4px 0 24px}@media(min-width:900px){.np-gallery{grid-template-columns:repeat(4,1fr)}}.np-gallery figure{margin:0;padding:8px;border:1px solid var(--border,#e5e0da);border-radius:8px;background:#fff}.np-gallery img{width:100%;aspect-ratio:11/10;object-fit:cover;display:block;border-radius:4px}.np-gallery figcaption{margin-top:6px;font-size:12px;line-height:1.35;color:#7a6a5e}.np-gallery-r{grid-template-columns:1fr!important;gap:16px}@media(min-width:640px){.np-gallery-r{grid-template-columns:1fr 1fr!important}}.np-gallery-r figure{padding:0;overflow:hidden;height:100%;transition:border-color .15s,box-shadow .15s}.np-gallery-r img{aspect-ratio:16/10;border-radius:0}.np-gallery-r figcaption{margin:0;padding:12px 14px 14px;font-size:14px;display:flex;flex-direction:column;gap:2px}.np-gallery-r figcaption b{font-size:16px;color:#1c0e05}.np-gal-go{margin-top:6px;display:inline-flex;align-items:center;gap:6px;font-weight:600;color:#fe7802}.np-gal-go svg{width:15px;height:15px}.np-gal-link{display:block}.np-gal-link:hover figure{border-color:#fe7802;box-shadow:0 8px 24px rgba(28,14,5,.08)}.np-hero-photo{margin:10px 0 0 auto;max-width:480px}@media(max-width:899px){.np-hero-photo{margin:8px 0 0;max-width:none}}.np-hero-photo img{display:block;width:100%;height:auto;border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.35)}.np-hero-live img{aspect-ratio:4/3;object-fit:cover;object-position:center 75%}.np-icons{list-style:none;padding:0;margin:0 0 16px}.np-icons li{position:relative;padding-left:34px;margin-bottom:12px;line-height:1.65;color:var(--muted-foreground,#7a6a5e)}.np-icons li::before{content:"";position:absolute;left:0;top:3px;width:22px;height:22px;background-repeat:no-repeat;background-size:22px 22px}.np-pros li::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23fe7802' stroke-width='2'/%3E%3Cpath d='M7.5 12.5l3 3 6-6.5' fill='none' stroke='%23fe7802' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}.np-cons li::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%237a6a5e' stroke-width='2'/%3E%3Cpath d='M12 7v6' stroke='%237a6a5e' stroke-width='2.2' stroke-linecap='round'/%3E%3Ccircle cx='12' cy='16.6' r='1.3' fill='%237a6a5e'/%3E%3C/svg%3E")}.np-card-img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;border-radius:8px;margin:0 0 16px}.np-sources a{overflow-wrap:anywhere}details>summary{list-style:none}details>summary::after{content:"+";float:right;font-weight:400}details[open]>summary::after{content:"–"}${HUBS.has(url) || url === '/blog' ? HUB_CSS : ''}${url === '/blog' ? BLOG_CSS : ''}${CATEGORY.has(url.split('/')[1]) ? CAT_CSS : ''}${main.includes('np-chk') ? CHECKER_CSS : ''}${MOBILE_CSS}</style>\n</head>`)
+    .replace(/<body([^>]*)>/, `<body$1><div style="background:#111;color:#fff;font:12px/1.4 Inter,system-ui,sans-serif;padding:6px 16px;text-align:center">Preview of new page content for nextpartitions.com${url} · not the live site · <a href="index.html" style="color:#fff;text-decoration:underline">all preview pages</a></div>`)
+    // Links: rebuilt pages stay in the preview; everything else goes to the live site.
+    .replace(/(href|src)="\/(?!\/)([^"]*)"/g, (_, attr, path) => {
+      const clean = '/' + path.replace(/[#?].*$/, '').replace(/\/$/, '')
+      if (attr === 'href' && built.has(clean)) return `${attr}="${fileFor(clean)}${path.includes('#') ? path.slice(path.indexOf('#')) : ''}"`
+      return `${attr}="${SITE}/${path}"`
+    })
+  html = html.replace('<!--np-rm-js-->', () => RM_JS)
+  html = html.replace('<!--np-blog-js-->', () => BLOG_JS) // after the live scripts are stripped
+  html = html.replace('<!--np-checker-js-->', () => CHECKER_JS)
+  html = html.replace('</body>', () => `${TOP_JS}</body>`)
+  if (url === '/') html = homepage(url)
+  // Live-site photos are saved in live-images/ and inlined, so the preview shows them where other sites' images are
+  // blocked (a published claude.ai artifact). On the live site they stay as they are.
+  html = html.replace(/src="https:\/\/nextpartitions\.com\/__l5e\/assets-v1\/([0-9a-f-]+)\/([^"]+\.(jpe?g|png|webp))"/g, (m, id, name, ext) => {
+    const f = `live-images/${id}-${name}`
+    return existsSync(f) ? `src="data:image/${ext === 'jpg' ? 'jpeg' : ext};base64,${readFileSync(f).toString('base64')}"` : m
+  })
+  writeFileSync(`${OUT}/${fileFor(url)}`, html)
+  const words = strip(main.replace(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/section>/, '').replace(/<nav[\s\S]*?<\/nav>/, '')).split(/\s+/).length
+  return { url, title: fm.h1, words }
+}
+
+
+// The installer directory and job flow: the prototypes published as claude.ai artifacts (links in CLAUDE.md), in the
+// order a job moves through them. Listed on the preview index so the whole project sits behind one link.
+const P = 'installers/' // the design prototypes ship inside the preview (prototypes/linked, copied below)
+const INSTALLER_FLOW = [
+  ['Installer', 'Get listed: installer application', 'Why join, the checks to be Verified, and the six-step application ending with the listing agreement.', `${P}apply.html`],
+  ['Next Partitions (internal)', 'Installer vetting', 'The checklist with evidence per applicant, the timed test job, approve or reject.', `${P}vetting.html`],
+  ['Customer', 'Texas installer hub', 'Search by city or ZIP, coverage map, area cards and the A–Z city index.', `${P}texas.html`],
+  ['Customer', 'Dallas–Fort Worth area page', 'Configure your partitions first; the area\'s installers, map and FAQ below.', `${P}dfw.html`],
+  ['Customer', 'Installer profile', 'One installer\'s profile, labels and reviews; "Get a quote with" opens the configurator. Samples: #acme, #northwind, #contoso, #fabrikam.', `${P}profile.html#acme`],
+  ['Customer', 'Configurator installation step', 'The optional installation step: installers stay anonymous, a count and a price range only. Designed, not switched on.', `${P}configurator.html#dfw`],
+  ['Installer', 'Installer portal: price the job', 'The blind job packet (scope, drawings, city and ZIP, no customer details) and the installer\'s price.', `${P}portal.html#NP-DFW-1048`],
+  ['Next Partitions (internal)', 'Job coordination view', 'The same job from the Next Partitions side: prices in, flags, follow-ups. #NP-DFW-1052 shows a job with no installer prices yet.', `${P}portal.html#np`],
+  ['Customer', 'Customer\'s quote: approve, choose, pay', 'Approve the shop drawings, choose an installer, pay for the partitions. #searching shows the state while installers are still being lined up.', `${P}quote.html#choose`],
+  ['Both', 'Emails along the way', 'The ten emails of the flow, from the quote range to the review request; 8–10 cover a job with no installer prices.', `${P}emails.html#email-1`],
+  ['Customer', 'Review after the install', 'Only customers with a completed job can review; #used and #expired show the other states.', `${P}review.html`],
+]
+
+const files = readdirSync(PAGES).filter((f) => f.endsWith('.md')).sort()
+const built = new Set(files.map((f) => parse(f).fm.url))
+const rows = files.map((f) => build(f, built))
+const before = (url) => {
+  try {
+    const t = readFileSync(`${CURRENT}/${url === '/' ? 'home' : url.replace(/^\//, '').replace(/\//g, '_')}.md`, 'utf8').split('## Explore More')[0]
+    return t.split('\n').slice(3).join(' ').split(/\s+/).filter(Boolean).length
+  } catch { return null }
+}
+// The working prototype (directory/app: npm run preview:build writes dist-preview/artifact/) ships under app/.
+if (existsSync('../../directory/app/dist-preview/artifact/index.html')) { rmSync(`${OUT}/app`, { recursive: true, force: true }); cpSync('../../directory/app/dist-preview/artifact', `${OUT}/app`, { recursive: true })
+  // its start page is a fragment the artifact skeleton used to wrap; as a page inside the preview it needs its own doctype
+  for (const f of readdirSync(`${OUT}/app`).filter((x) => x.endsWith('.html'))) {
+    const h = readFileSync(`${OUT}/app/${f}`, 'utf8')
+    if (!/^\s*<!doctype/i.test(h)) writeFileSync(`${OUT}/app/${f}`, `<!doctype html>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n${h}`)
+  }
+}
+if (existsSync('../../prototypes/linked/index.html')) { rmSync(`${OUT}/installers`, { recursive: true, force: true }); cpSync('../../prototypes/linked', `${OUT}/installers`, { recursive: true }) }
+// Each prototype page gets a slim bar back to the overview's installer flow, and opens at the top.
+const BACK_BAR = `<a href="../index.html#installers" style="display:block;background:#fe7802;color:#fff;font:600 13px/1.4 Inter,system-ui,sans-serif;padding:8px 16px;text-decoration:none;position:relative;z-index:2000">← Back to the overview: installer pages and job flow</a>`
+const withBack = (h) => `${h}\n<script>document.body.insertAdjacentHTML('afterbegin', ${JSON.stringify(BACK_BAR)})</script>\n${TOP_JS}\n`
+for (const dir of ['installers', 'app']) if (existsSync(`${OUT}/${dir}`)) for (const f of readdirSync(`${OUT}/${dir}`).filter((x) => x.endsWith('.html'))) writeFileSync(`${OUT}/${dir}/${f}`, withBack(readFileSync(`${OUT}/${dir}/${f}`, 'utf8')))
+writeFileSync(`${OUT}/index.html`, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Next Partitions Content Preview</title><meta name="robots" content="noindex"><style>${CSS}.np-flow-n{flex:0 0 28px;height:28px;border-radius:50%;background:#fe7802;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}</style></head>
+<body class="bg-background text-foreground"><div class="max-w-3xl mx-auto px-4 py-10">
+<h1 class="text-3xl font-bold mb-2">New page content for nextpartitions.com</h1>
+<p class="text-sm mb-4"><a class="text-brand-red hover:underline font-medium" href="#installers">Jump to the installer pages and job flow</a></p>
+<p class="text-muted-foreground mb-6">Each page in the live site's layout, ready to port into the site. Built ${new Date().toISOString().slice(0, 10)} from site-content/pages/. Words are the page's own content (live page shown for comparison; "new" means the URL doesn't exist or is blank today).</p>
+<div class="overflow-x-auto"><table class="w-full text-sm border-collapse border border-border"><thead><tr class="bg-accent"><th class="p-3 text-left">Page</th><th class="p-3 text-left">URL</th><th class="p-3 text-left">Words live</th><th class="p-3 text-left">Words new</th></tr></thead><tbody class="divide-y divide-border">
+${rows.map((r) => { const b = before(r.url); return `<tr><td class="p-3"><a class="text-brand-red hover:underline font-medium" href="${fileFor(r.url)}">${esc(r.title)}</a></td><td class="p-3 text-muted-foreground">${r.url}</td><td class="p-3">${b === null || b < 60 ? 'new' : b}</td><td class="p-3">${r.words}</td></tr>` }).join('\n')}
+</tbody></table></div>
+<section id="installers" class="mt-12 pt-8 border-t border-border">
+<h2 class="text-2xl font-bold mb-2">Installer pages and job flow</h2>
+<p class="text-muted-foreground mb-4">The installer directory, kept apart from the main site, and the job flow behind it: how an installer gets listed, how a customer finds one, how a job is priced, chosen and installed, and how it's reviewed. Clickable prototypes; every installer, rate, review and photo in them is a fictional sample, and Dallas–Fort Worth is the example area.</p>
+<div class="border border-border rounded-lg p-5 mb-6 bg-accent/50"><p class="font-semibold mb-1">Start here: the working prototype</p><p class="text-sm text-muted-foreground mb-3">The whole flow as one app with shared sample data, so one job can be followed from the installer's price to the customer's choice to the install date.</p>${existsSync(`${OUT}/app/index.html`) ? button('Open the working prototype', 'app/index.html') : ''}<p class="text-sm text-muted-foreground mt-3">All design prototypes linked as one site: <a class="text-brand-red hover:underline font-medium" href="installers/index.html">open the design prototypes</a>.</p></div>
+<h3 class="text-lg font-bold mb-3">The flow, step by step</h3>
+<ol class="space-y-3 mb-4" style="list-style:none;padding:0">${INSTALLER_FLOW.map(([who, title, text, url], i) => `<li class="border border-border rounded-lg p-4 flex gap-4 items-start"><span class="np-flow-n">${i + 1}</span><div class="min-w-0"><p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1">${who}</p><a class="text-brand-red hover:underline font-semibold" href="${url}">${esc(title)}</a><p class="text-sm text-muted-foreground mt-1">${text}</p></div></li>`).join('')}</ol>
+</section></div>${TOP_JS}</body></html>`)
+// The installer prototypes (prototypes/build-linked.mjs writes prototypes/linked/) ship inside the preview under
+// installers/, so the flow links work for whoever can open the preview.
+console.log(`built ${rows.length} pages + index.html`)

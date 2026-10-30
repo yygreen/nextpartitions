@@ -1,0 +1,141 @@
+---
+url: /partitions
+title: Commercial Bathroom Partitions: Materials Compared
+meta: Compare commercial bathroom partitions: powder coated steel, stainless, plastic laminate, phenolic and HDPE. Construction, fire ratings and brand warranties.
+h1: Commercial Bathroom Partitions
+primary_keyword: commercial bathroom partitions (volume not in repo)
+secondary_keywords: [types of bathroom partitions, toilet partition types, bathroom partition materials]
+words: 1,050
+---
+
+# Commercial Bathroom Partitions
+
+Commercial bathroom partitions come in five materials: powder coated steel, stainless steel, plastic laminate, phenolic and solid plastic (HDPE). They differ less in looks than in what is inside the panel, and that decides moisture resistance, fire rating and how long the warranty runs. Fire classes and warranties are set by brand and product line, so this page compares the materials and points to the detail you need to check.
+
+[Get a Quote](/get-a-quote). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+
+## Parts of a partition
+
+![Parts of a toilet partition, front view](/images/diagrams/partition-anatomy.svg)
+
+The numbered parts are headrail, pilaster, door, hinges, latch and keeper, and pilaster shoe. Pilaster thickness varies by material: see the table below.
+
+## How the five materials are built
+
+![Edge cross-sections of the five partition materials at the same scale](/images/diagrams/material-sections-compare.svg)
+
+| Material | Construction | Typical thicknesses | Fire classification (typical) |
+|---|---|---|---|
+| [Powder coated steel](/partitions/powder-coated-steel) | Galvannealed steel faces, honeycomb core, powder coat | 1" doors and panels, 1-1/4" pilasters | Class A |
+| [Stainless steel](/partitions/stainless-steel) | Type 304 stainless faces, honeycomb core | 1" doors and panels, 1-1/4" pilasters | Class A |
+| [Plastic laminate](/partitions/plastic-laminate) | High-pressure laminate on a particleboard core | 1" doors, pilasters and panels | Class B or Class C, by line |
+| [Phenolic](/partitions/phenolic) | Fused resin-soaked kraft paper; black core or color-through | 1/2" panels, 3/4" doors and pilasters | Class B on most black core lines; Class A on some lines or as an option |
+| [Solid plastic (HDPE)](/partitions/solid-plastic-hdpe) | One homogeneous HDPE sheet | 1" doors, panels and pilasters | Must pass NFPA 286 (IBC 803.9); standard colors may not meet NFPA 286 or ASTM E84 |
+
+Edges differ too. Phenolic edges are machined from the solid sheet and are black on black core. HDPE edges are the same solid sheet, rounded or eased. Plastic laminate edges are laminate or a fused band over the core. Steel and stainless edges are a formed metal molding or locked sheet around the honeycomb, with welded or reinforced corners.
+
+Class A is a flame spread index of 25 or less under ASTM E84, Class B is 26 to 75, and Class C is 76 to 200. A rating belongs to a product line, not to a material name. Ask for the test data on the line you specify, and confirm the requirement with your architect or local code official.
+
+## Warranties: the brand sets the term
+
+There is no standard partition warranty. Published terms run from 1 year to 25 years, depending on the manufacturer, the material and the line:
+
+| Material | Typical published warranty |
+|---|---|
+| Solid plastic (HDPE) | 15 to 25 years |
+| Phenolic | 3 to 25 years; many lines 25 |
+| Stainless steel | 5 to 15 years |
+| Plastic laminate | 1 to 5 years |
+| Powder coated steel | 1 to 4 years |
+| Hardware | Varies by manufacturer, up to lifetime on stainless steel hardware |
+
+Most warranties cover defects in material and workmanship, and some name breakage, corrosion or delamination. Common exclusions are vandalism, misuse and improper care. Some cover material only, with no labor, and some are voided by installation errors. Hosing down plastic laminate can void its warranty. Your quote will name the brand and its warranty. Read the full warranty for exclusions and conditions.
+
+## Moisture and cleaning
+
+- **Wet rooms (showers, pools, locker rooms):** [phenolic](/partitions/phenolic) and [HDPE](/partitions/solid-plastic-hdpe). Manufacturers position phenolic for moisture from showers, pools and saunas.
+- **Plastic laminate:** dry rooms only. The particleboard core may swell with excessive moisture.
+- **Steel:** can rust and dent. Stainless resists corrosion, but tensioned stainless rods and bolts have cracked in unwashed indoor pool air, so ask the manufacturer before using it in a pool hall.
+- **Vandal resistance:** laminate, phenolic and HDPE all resist graffiti, but xylene-based markers can "ghost" into HDPE.
+
+## Which material fits where
+
+- Dry office or retail restroom, tight budget: powder coated steel or plastic laminate.
+- Matching millwork: plastic laminate.
+- Showers, pools, locker rooms: phenolic or HDPE (specify the fire-rated, NFPA 286 version of HDPE).
+- Premium public-facing restroom: stainless steel.
+
+All five can be quoted in several mounting styles. Compare [overhead braced](/mounting-styles/overhead-braced), [floor mounted](/mounting-styles/floor-mounted), [ceiling hung](/mounting-styles/ceiling-hung) and [floor to ceiling](/mounting-styles/floor-to-ceiling). HDPE is generally not offered floor mounted, and not every line offers every style.
+
+## What comes with a quote
+
+Panels, doors, pilasters, headrails, hinges, slide latches, keepers, strikes, brackets, pilaster shoes and all mounting fasteners. Install according to the manufacturer's instructions and your approved drawings, using a qualified installer.
+
+## ADA stalls
+
+Accessible stalls follow the 2010 ADA Standards: compartment depth of 56" or 59" minimum (604.8.1.1), a 32" minimum clear door opening and self-closing doors (604.8.1.2). See the [ADA compliance guide](/guides/ada-compliance).
+
+*Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.*
+
+[Get a Custom Quote](/get-a-quote)
+
+## FAQ
+
+### What are commercial bathroom partitions made of?
+Powder coated steel, stainless steel, plastic laminate, phenolic or solid plastic (HDPE). See the table above.
+
+### Which material is best for a wet restroom?
+Phenolic or HDPE. Plastic laminate's core can swell and painted steel can rust.
+
+### Are all partition materials fire rated the same?
+No. HDPE must pass NFPA 286; others are tested to ASTM E84 and classed A, B or C by product line.
+
+### What warranty comes with partitions?
+It depends on the manufacturer and line. Published terms run from 1 to 25 years. HDPE and many phenolic lines carry the longest terms, up to 25 years. Powder coated steel and plastic laminate carry the shortest, often 1 to 5 years.
+
+## Sources
+
+- [Bobrick CEU, Specifying Code-Compliant Toilet Partitions](https://www.bobrick.com/wp-content/uploads/Bobrick_Toilet-Partitions_CEU.pdf). Checked 2026-10-27.
+- [Bobrick CEU, Toilet Partitions: Commercial (2018)](https://www.bobrick.com/wp-content/uploads/SCC-Toilet-Partitions_Commercial.pdf): HPL Class B. Checked 2026-10-27.
+- [Bobrick Product Warranties and Limitations](https://www.bobrick.com/wp-content/uploads/Product-Warranties.pdf): Bobrick warranty lengths (dated 08/12/26). Checked 2026-10-27.
+- [Bobrick 1080 Series data sheet](https://www.bobrick.com/wp-content/uploads/1080_td.pdf); [1040 Series](https://www.bobrick.com/wp-content/uploads/1040_td.pdf). Checked 2026-10-27.
+- [ASI Global Partitions catalog](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf). Checked 2026-10-27.
+- [ASI replacement hardware](https://asi-globalpartitions.com/replacement-hardware/). Checked 2026-10-27.
+- [Scranton Hiny Hiders](https://www.scrantonproducts.com/products/hiny-hiders-partitions/); [Scranton Limited Warranty](https://www.scrantonproducts.com/wp-content/uploads/2022/07/Scranton-Products-Warranty.pdf); [color visualizers](https://www.scrantonproducts.com/marketing/product-color-visualizers/). Checked 2026-10-27.
+- [Metpar powder coated](https://metpar.com/toilet-partitions/powder-coated/). Checked 2026-10-27.
+- Ammco (All American Metal) warranties: [powder coated](https://allamericanmetal.com/frontend/web/uploads/material/1580234797_POWDER-COATED-WARRANTY.pdf), [plastic laminate](https://allamericanmetal.com/frontend/web/uploads/material/1580234840_PLASTIC-LAMINATE-WARRANTY.pdf), [phenolic](https://allamericanmetal.com/frontend/web/uploads/material/1580234852_PHENOLIC-WARRANTY.pdf), [stainless steel](https://allamericanmetal.com/frontend/web/uploads/material/1580234814_STAINLESS-STEEL-WARRANTY.pdf), [solid plastic](https://allamericanmetal.com/frontend/web/uploads/material/1580234827_SOLID-PLASTIC-WARRANTY.pdf). Checked 2026-10-27.
+- [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): Bradley warranties. Checked 2026-10-27.
+- [Metpar master specifications](https://metpar.com/tech-docs/): Powder Shield 4 years, stainless 6 years (Metpar powder coated and stainless master spec files). Checked 2026-10-27.
+- [Bradley PH400 spec sheet](https://media.bradleycorp.com/view/28555/Bradley_Partitions_PhenolicNS_OverheadBraced.pdf): 1/2" panels, 3/4" doors and pilasters, black edges. Checked 2026-10-27.
+- Hadrian, Guide Specification 10 21 13.19, Plastic Toilet Compartments ([Zurn Elkay](https://www.worlddryer.com/content/dam/zurnv49/resources/specification/centralized-specs/documents/guide-specs/10-21-13.19-hadrian-plastic-toilet-compartments.docx)): 25-year warranty, 1" thickness. Checked 2026-10-27.
+- [Seattle Building Code 2018, ch. 8](https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2018SBCChapter8.pdf): IBC 803.9. Checked 2026-10-27.
+- [2010 ADA Standards](https://www.access-board.gov/ada/): 604.8.1.1, 604.8.1.2. Checked 2026-10-27.
+- [ASSDA](https://www.assda.asn.au/blog/353-stainless-steel-for-indoor-swimming-pools). Checked 2026-10-27.
+
+<!-- For Marc -->
+## Corrections to the current page
+
+- Comparison table "Typical Warranty" (1 yr / 25 yr / 15 yr / 2 yr / 5 yr): generic and mostly unsourced. Replaced by a brand and line table.
+- "Durability: Good / Superior / Excellent" and "Moisture Resistance" ratings: unsourced. Replaced by sourced statements.
+- "HDPE has overtaken [steel] in schools, gyms and aquatic facilities for its lifetime resistance to rust and graffiti": unsourced; removed.
+- "Lead times: 5–10 business days ... 2–4 weeks": removed (below).
+- "Every material is available in ADA stall sizing with 32" clear door openings, outswing doors": reworded to cite 604.8. Disclaimer added.
+- "Phenolic ... Class A" etc. fixed on the detail pages (see those pages).
+- "Hardware included" reworded; qualified-installer line added. CTA wording unchanged.
+
+## To verify when sources are reachable
+
+| Claim | Where it's from | Source to check |
+|---|---|---|
+| Coverage text of the ASI warranties; Hadrian warranty lengths for metal and phenolic lines | ASI lengths from the catalog | Manufacturer warranty documents (checked 2026-10-27: not found; ASI's warranty page has no text, hadrian-inc.com returned 403; Hadrian's guide specification gives 25 years for solid plastic only) |
+| Metpar's 4 and 6 year warranties as stated in its warranty document | Master specification templates | Metpar warranty document (checked 2026-10-27: not found; the Warranty link goes to Metpar's tech-docs index) |
+| Lead times 5–10 days and 2–4 weeks | Current page | Confirm with Abe (checked 2026-10-27: not a manufacturer question) |
+| Material tile copy, "most popular and budget-friendly" | Current page | Dropped; Abe's price list (checked 2026-10-27: not a source question) |
+
+## Implementation notes
+
+- Structured data: FAQPage (4), BreadcrumbList.
+- Link from /blog/what-are-bathroom-partitions-made-of ("How each material is built").
+- Drawings referenced: partition-anatomy, material-sections-compare (being drawn).
+- Images wanted: sample set showing all five edges side by side.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.

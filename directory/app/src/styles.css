@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* Copied from the live nextpartitions.com :root (2026-10-19), so the standalone app and the preview look
+   like the site. On merge, delete this block: the live project already defines these tokens. */
+:root {
+  --radius: 0rem;
+  --background: lab(98.266% .111133 .751412);
+  --foreground: lab(5.16333% 5.40026 5.80695);
+  --card: lab(100% 0 0);
+  --primary: #333;
+  --primary-foreground: lab(97.68% 0 0);
+  --muted: lab(94.7947% .282615 1.88152);
+  --muted-foreground: lab(41.9338% 3.99517 6.39452);
+  --border: lab(88.4285% .582516 3.77423);
+  --brand-red: oklch(0.65 0.2 55);
+  --brand-red-foreground: oklch(0.98 0 0);
+  --surface-warm: lab(96.5348% .282526 1.88144);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-brand-red: var(--brand-red);
+  --color-brand-red-foreground: var(--brand-red-foreground);
+  --color-surface-warm: var(--surface-warm);
+  --radius-sm: var(--radius);
+  --radius-md: var(--radius);
+  --radius-lg: var(--radius);
+  --radius-full: 9999px;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body { @apply bg-background text-foreground antialiased; }
+h1, h2, h3 { font-weight: 900; letter-spacing: -0.02em; }

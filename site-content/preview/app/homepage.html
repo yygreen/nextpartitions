@@ -1,0 +1,533 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Next Partitions Homepage Grid</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<style>
+/* Layout: one 1292px content container (1360 max incl. 34px gutters), 12-col grid, 24px gap.
+   Two widths only: full (12 cols) and text (~720px). Headings left-aligned, optional link right.
+   Light-only, matching nextpartitions.com tokens. */
+:root{
+  --bg:#fbfaf9; --band:#f4f2ee; --surface:#ffffff; --fg:#1c0e05; --muted:#6d6059;
+  --border:#e1ddd7; --accent:#e8630a; --accent-strong:#c95200; --accent-soft:#fdeee3; --on-accent:#ffffff;
+  --ink:#262626; --ink-fg:#f8f8f8; --ink-muted:#c9c2bc; --good:#1f7a4d;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --container:1360px; --gutter:34px; --gap:24px; --section:96px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+
+/* ---------- the one container + grid ---------- */
+.wrap{max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter)}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--gap)}
+.c12{grid-column:span 12}.c7{grid-column:span 7}.c5{grid-column:span 5}.c6{grid-column:span 6}.c4{grid-column:span 4}.c3{grid-column:span 3}.c2{grid-column:span 2}
+.section{padding-block:var(--section)}
+.band{background:var(--band)}
+@media (max-width:1024px){.c3{grid-column:span 6}.c2{grid-column:span 4}}
+@media (max-width:760px){
+  :root{--gutter:16px;--gap:16px;--section:64px}
+  .c6,.c4,.c3{grid-column:span 12}.c2{grid-column:span 6}
+}
+
+/* section head: heading left, optional link right; intro capped at text width */
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;margin-bottom:40px}
+.head h2{font-size:clamp(26px,3vw,34px);font-weight:900;letter-spacing:-.03em;line-height:1.15;margin:0;text-wrap:balance}
+.head p{color:var(--muted);margin:10px 0 0;max-width:720px;font-size:17px}
+.more{font-weight:700;color:var(--accent-strong);text-decoration:none;white-space:nowrap;padding-block:6px}
+.more::after{content:" →"}
+.more:hover{text-decoration:underline;text-underline-offset:4px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.mocknote{background:var(--band);border-bottom:1px solid var(--border);font-size:13px;color:var(--muted);text-align:center;padding:8px 16px}
+.mocknote b{color:var(--fg)}
+
+/* ---------- header ---------- */
+.topbar{background:var(--ink);color:var(--ink-fg);font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-block:9px;flex-wrap:wrap}
+.topbar .contact{display:flex;gap:20px;flex-wrap:wrap}
+.nav{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:env(safe-area-inset-top,0px);z-index:40}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:40px;width:auto}
+.brand b{display:block;font-size:19px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.menu{display:flex;gap:28px;font-weight:600;font-size:16px}
+.menu a{text-decoration:none}
+.menu a:hover{color:var(--accent-strong)}
+.btn{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;background:var(--accent);color:var(--on-accent);font:inherit;font-weight:700;font-size:16px;padding:12px 22px;min-height:46px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--accent-strong)}
+.btn.ghost{background:transparent;color:inherit;border:1px solid currentColor}
+.btn.ghost:hover{background:rgba(255,255,255,.08)}
+.btn.lg{font-size:18px;padding:15px 28px;min-height:54px}
+@media (max-width:980px){.menu{display:none}.topbar .tagline{display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;color:#fff;background:#3a3633;overflow:hidden}
+/* live site mirrors the photo (stalls right, sink left) */
+.hero .photo{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:50% 50%;transform:scaleX(-1);z-index:0}
+/* same photo + overlay as the live hero: #333 at 95% / 80% / 40% */
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(51,51,51,.95) 0%,rgba(51,51,51,.8) 50%,rgba(51,51,51,.4) 100%)}
+.hero .wrap{position:relative;z-index:2;min-height:620px;display:flex;align-items:center;padding-block:88px}
+.hero .wrap>.grid{width:100%}
+.hero .copy{grid-column:1 / span 7}
+@media (max-width:1024px){.hero .copy{grid-column:span 12}}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;padding:7px 12px;background:rgba(232,99,10,.28);border:1px solid rgba(232,99,10,.6);margin-bottom:22px}
+.hero h1{font-size:clamp(38px,5.4vw,66px);font-weight:900;letter-spacing:-.035em;line-height:1.04;margin:0 0 20px;text-wrap:balance}
+.hero p{font-size:clamp(17px,1.6vw,20px);color:rgba(255,255,255,.86);margin:0 0 32px;max-width:36em}
+.hero .actions{display:flex;flex-wrap:wrap;gap:14px}
+
+/* ---------- trust strip ---------- */
+.trust{background:var(--band);border-bottom:1px solid var(--border)}
+.trust .wrap{padding-block:26px}
+.titem{display:flex;gap:14px;align-items:flex-start}
+.ticon{flex:none;width:28px;height:28px;color:var(--accent)}
+.titem b{display:block;font-weight:700}
+.titem span{color:var(--muted);font-size:15px}
+
+/* ---------- three doors ---------- */
+.door{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--border);padding:28px;min-width:0}
+.door.primary{border-top:4px solid var(--accent);box-shadow:0 10px 30px rgba(28,14,5,.06);padding-top:25px}
+.door h3{margin:0 0 8px;font-size:clamp(22px,2.2vw,26px);font-weight:900;letter-spacing:-.02em;line-height:1.2}
+.door .dtext{margin:0 0 18px;color:var(--muted)}
+.door .dbtn{margin-top:auto;width:100%;justify-content:center;cursor:pointer}
+.ghostbtn{background:var(--surface);color:var(--accent-strong);border:2px solid var(--accent)}
+.ghostbtn:hover{background:var(--accent-soft)}
+/* label on its own line; 3 + 2 chips, both rows full width */
+.starts{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;margin:0 0 22px;font-size:14px}
+.starts span{grid-column:1/-1;color:var(--muted)}
+.starts a{grid-column:span 2;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border:1px solid var(--border);padding:7px 6px;text-decoration:none;font-weight:600}
+.starts a:nth-of-type(n+4){grid-column:span 3}
+.starts a:hover{border-color:var(--accent);color:var(--accent-strong)}
+.drop{display:grid;place-items:center;text-align:center;border:2px dashed var(--border);background:var(--band);padding:18px;margin:0 0 22px;font-size:14px;color:var(--muted);cursor:pointer;min-height:96px}
+.drop:hover,.drop.over{border-color:var(--accent);background:var(--accent-soft)}
+.drop b{color:var(--fg)}
+.drop input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.drop:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+.dlist{margin:0 0 22px;font-size:14px;color:var(--muted)}
+.instline{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;margin:8px 0 0;background:var(--surface);border:1px solid var(--border);padding:14px 18px;color:var(--muted)}
+.instline svg{width:24px;height:24px;color:var(--accent);flex:none}
+.instline span{flex:1 1 320px;min-width:0}
+.instline b{color:var(--fg)}
+.talk{margin:8px 0 0;color:var(--muted)}
+.talk b{color:var(--fg);user-select:all}
+.uppanel{margin-top:48px;padding-top:40px;border-top:1px solid var(--border);scroll-margin-top:84px;align-items:start}
+.uphead{display:flex;justify-content:space-between;align-items:baseline}
+.uphead h3{margin:0;font-size:24px;font-weight:900;letter-spacing:-.02em}
+.lab{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+.files{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:8px}
+.files li{display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:center;background:var(--surface);border:1px solid var(--border);padding:10px 12px;font-size:14px}
+.files .nm{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.files .st{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.files .st.ok{color:var(--good);font-weight:600}
+.files .st.bad{color:#b42318;font-weight:600}
+.files .bar{grid-column:1/-1;height:4px;background:var(--band)}
+.files .bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .25s linear}
+.files .x{font:inherit;background:none;border:0;color:var(--muted);cursor:pointer;padding:0 0 0 8px;font-size:18px;line-height:1}
+.drop.small{min-height:0;padding:12px;margin:0 0 12px;font-size:13px}
+.hint{font-size:13px;color:var(--muted);margin:8px 0 0}
+.upform{display:grid;gap:14px;min-width:0}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:600px){.frow{grid-template-columns:1fr}}
+.f{display:grid;gap:6px;min-width:0;align-content:start}
+.f label{font-size:14px;font-weight:600}
+.f label span{color:var(--muted);font-weight:500}
+.f input,.f textarea{font:inherit;font-size:15px;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:10px 12px;min-height:44px;width:100%}
+.f input:focus,.f textarea:focus{outline:2px solid var(--accent);outline-offset:0;border-color:var(--accent)}
+.f.err input{border-color:#b42318}
+.f .msg{font-size:13px;color:#b42318}
+.formerr{margin:0;color:#b42318;font-weight:600;font-size:14px}
+.upform .btn{justify-self:start}
+.done{background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--good);padding:28px}
+.done h3{margin:0 0 6px;font-size:24px;font-weight:900;letter-spacing:-.02em}
+.done p{margin:0 0 6px;color:var(--muted)}
+.done .ref{font-variant-numeric:tabular-nums;color:var(--fg);font-weight:700}
+@media (max-width:1024px){#uppanel .c5,#uppanel .c7{grid-column:span 12}}
+@media (max-width:1024px){.door{grid-column:span 12}}
+
+/* ---------- quick quote: one tap to a price ---------- */
+.q{font-weight:800;font-size:18px;margin:0 0 -8px;letter-spacing:-.01em}
+#quote{--qh:456px}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:12px;height:var(--qh);min-width:0}
+.ftile{display:flex;flex-direction:column;align-items:flex-start;gap:10px;font:inherit;text-align:left;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:16px;min-height:0;cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.ftile.else{border-style:dashed;background:transparent}
+.ftile.else[aria-pressed="true"]{border-style:solid;background:var(--accent-soft)}
+.ftile.else b{color:var(--fg)}
+.ftile.else svg{color:var(--muted)}
+.ftile:hover{border-color:var(--accent);box-shadow:0 6px 18px rgba(28,14,5,.06)}
+.ftile[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:var(--accent-soft)}
+.ftile svg{width:28px;height:28px;color:var(--accent)}
+.ftile b{font-size:16px;font-weight:800;line-height:1.2}
+.ftile small{font-size:13px;color:var(--muted);margin-top:auto}
+.drywet{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 14px;padding-block:16px;border-block:1px solid var(--border)}
+.drywet button{min-height:0;padding:10px 14px}
+.drywet button span{white-space:nowrap}
+.flag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;background:#fff3c4;color:#7a5a00;padding:2px 6px;margin-left:6px;vertical-align:middle}
+.drywet button{font:inherit;text-align:left;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:14px 16px;cursor:pointer}
+.drywet button:hover{border-color:var(--accent)}
+.drywet button[aria-pressed="true"]{border:2px solid var(--accent);padding:13px 15px;background:var(--accent-soft)}
+.drywet b{display:block;font-weight:800}
+.drywet span{font-size:14px;color:var(--muted)}
+.resultcol{min-width:0}
+.result{height:var(--qh);display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--accent);padding:24px 28px;box-shadow:0 10px 30px rgba(28,14,5,.06);min-width:0;overflow:hidden}
+.result .top{flex:none;padding-bottom:16px}
+.result .why{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:3.1em}
+.result .bottom{margin-top:auto}
+.result .slot{height:22px;display:flex;align-items:center;gap:4px;white-space:nowrap;overflow:hidden}
+.result.empty{border-top-color:var(--border);box-shadow:none;background:var(--band)}
+.result.empty .btn{background:var(--border);color:var(--muted);pointer-events:none}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-strong);margin:0 0 6px}
+.result h3{font-size:clamp(22px,2.2vw,28px);font-weight:900;letter-spacing:-.02em;margin:0 0 6px;line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.why{color:var(--muted);margin:0}
+.pricebox{display:flex;align-items:flex-end;justify-content:space-between;gap:12px 20px;margin:0 0 14px;padding-block:16px;border-block:1px solid var(--border)}
+.amt{font-size:40px;font-weight:900;letter-spacing:-.03em;font-variant-numeric:tabular-nums;line-height:1}
+.per{display:block;color:var(--muted);font-size:14px;margin-top:6px;font-variant-numeric:tabular-nums}
+.stepper{display:flex;flex-direction:column;gap:6px}
+.stepper .lbl{font-size:13px;font-weight:600;color:var(--muted)}
+.stepper .ctl{display:flex;align-items:center;border:1px solid var(--border)}
+.stepper button{font:inherit;font-size:22px;font-weight:700;width:44px;height:44px;background:var(--surface);color:var(--fg);border:0;cursor:pointer}
+.stepper button:hover{background:var(--accent-soft)}
+.stepper button:disabled{color:var(--border);cursor:default;background:var(--surface)}
+.stepper output{min-width:44px;text-align:center;font-weight:800;font-size:18px;font-variant-numeric:tabular-nums}
+.incl{color:var(--good);font-weight:600;font-size:15px;margin:0 0 12px}
+.result .btn{width:100%;justify-content:center}
+.links{display:flex;flex-direction:column;gap:4px;margin-top:12px;font-size:14px;color:var(--muted)}
+.link{font:inherit;font-size:inherit;background:none;border:0;padding:0;color:var(--accent-strong);font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.ghostprice{font-size:40px;font-weight:900;letter-spacing:-.03em;color:var(--border);line-height:1}
+/* below 1100px the card moves under the tiles; every tile row stays equal */
+@media (max-width:1100px){#quote{--qh:auto}.tiles{height:auto;grid-template-rows:none;grid-auto-rows:1fr}.ftile{min-height:132px}.result{height:auto;scroll-margin-top:84px}#quote .c7,#quote .c5{grid-column:span 12}}
+@media (max-width:600px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.nav .btn{padding:10px 14px;font-size:15px;min-height:42px}.brand small{display:none}.brand img{height:34px}}
+
+/* ---------- materials ---------- */
+.mcard{display:flex;flex-direction:column;background:var(--surface);text-decoration:none;min-width:0;transition:box-shadow .2s}
+.mcard img{aspect-ratio:4/3;width:100%;object-fit:cover}
+.mcard .body{padding:20px;display:flex;flex-direction:column;gap:4px;flex:1}
+.mcard h3{margin:0;font-size:19px;font-weight:800;letter-spacing:-.01em}
+.mcard .d{color:var(--muted);font-size:15px}
+.mcard .pr{margin-top:auto;padding-top:12px;font-weight:800;color:var(--accent-strong)}
+.mcard:hover{box-shadow:0 10px 30px rgba(28,14,5,.10)}
+.mcard:hover h3{color:var(--accent-strong)}
+.mcard .blurmix{position:relative;aspect-ratio:4/3;width:100%;overflow:hidden;background:var(--band)}
+.blurmix .strips{position:absolute;inset:-24px;display:grid;grid-template-columns:repeat(5,1fr);filter:blur(10px) saturate(.9);transform:scale(1.04)}
+.blurmix .strips img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover}
+.blurmix::after{content:"";position:absolute;inset:0;background:rgba(251,250,249,.18)}
+.blurmix .offer{position:absolute;inset:0;z-index:1;display:grid;place-content:center;justify-items:center;gap:10px;padding:16px;text-align:center}
+.blurmix .offer .pill{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--on-accent);font-weight:800;font-size:17px;padding:12px 20px;box-shadow:0 8px 24px rgba(28,14,5,.25)}
+.blurmix .offer small{font-size:13px;font-weight:700;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.55)}
+.mcard.help:hover .pill{background:var(--accent-strong)}
+
+/* ---------- why / logos ---------- */
+.wcard{background:var(--surface);border:1px solid var(--border);padding:24px;min-width:0}
+.wcard svg{width:28px;height:28px;color:var(--accent);margin-bottom:14px}
+.wcard h3{margin:0 0 6px;font-size:18px;font-weight:800}
+.wcard p{margin:0;color:var(--muted);font-size:15px}
+.brands .wrap{padding-block:56px 0}
+.brands .lab{font-size:13px;font-weight:600;color:var(--muted);margin:0 0 8px}
+.logo{display:flex;align-items:center;justify-content:center;height:56px}
+.logo img[alt="Metpar"]{max-height:50px}
+.logo img{max-height:38px;width:auto;max-width:100%;object-fit:contain;filter:grayscale(1);opacity:.75;transition:filter .2s,opacity .2s}
+.logo:hover img{filter:none;opacity:1}
+.logo.missing{color:var(--muted);font-size:13px;font-weight:600;border:1px dashed var(--border);justify-content:center;padding:0 8px;text-align:center}
+
+/* ---------- industries ---------- */
+a.itile{text-decoration:none}
+.itile{display:flex;flex-direction:column;align-items:flex-start;gap:8px;background:none;border:0;border-top:2px solid var(--border);padding:18px 0 0;font:inherit;color:var(--fg);text-align:left;cursor:pointer}
+.itile:hover{border-top-color:var(--accent)}
+.itile svg{width:26px;height:26px;color:var(--accent)}
+.itile b{font-weight:800;font-size:17px}
+.itile span{font-size:14px;color:var(--muted)}
+.itile:hover span{color:var(--accent-strong)}
+
+/* ---------- how it works + stats share the 3 x 4-col rhythm ---------- */
+.step .num{display:inline-grid;place-items:center;width:44px;height:44px;background:var(--accent);color:var(--on-accent);font-weight:800;font-size:18px;margin-bottom:16px}
+.step h3{margin:0 0 6px;font-size:19px;font-weight:800}
+.step p{margin:0;color:var(--muted)}
+.stat{border-top:3px solid var(--accent);padding-top:18px}
+.stat b{display:block;font-size:44px;font-weight:900;letter-spacing:-.03em;line-height:1;color:var(--accent-strong);font-variant-numeric:tabular-nums}
+.stat span{color:var(--muted)}
+
+/* ---------- CTA band ---------- */
+.cta{background:var(--ink);color:var(--ink-fg)}
+.cta .wrap{padding-block:72px}
+.cta .txt{grid-column:span 8}
+.cta .btns{grid-column:span 4;display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end;align-self:center}
+@media (max-width:900px){.cta .txt,.cta .btns{grid-column:span 12;justify-content:flex-start}}
+.cta h2{font-size:clamp(26px,3vw,36px);font-weight:900;letter-spacing:-.03em;margin:0 0 8px}
+.cta p{margin:0;color:var(--ink-muted);max-width:720px;font-size:17px}
+
+/* ---------- footer ---------- */
+footer{background:#1a1a1a;color:#d8d2cc;font-size:15px}
+footer .wrap{padding-block:64px 32px}
+footer h4{color:#fff;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 14px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+footer .legal{margin-top:48px;padding-top:20px;border-top:1px solid #333;font-size:13px;color:#9a928b;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer .about{grid-column:span 4}
+footer .col{grid-column:span 2}
+@media (max-width:900px){footer .about{grid-column:span 12}footer .col{grid-column:span 6}}
+</style>
+
+<div class="mocknote"><b>Mockup:</b> homepage rebuilt on one 12-column grid. Prices are placeholders from the site's "From $/stall".</div>
+
+
+<div class="topbar"><div class="wrap">
+  <div class="contact"><span>sales@nextpartitions.com</span><span>1-833-997-7489</span></div>
+  <div class="tagline">Authorized Distributor — All Major Brands</div>
+</div></div>
+
+<nav class="nav" aria-label="Main"><div class="wrap">
+  <a class="brand" href="#top"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Commercial Partitions</small></span></a>
+  <div class="menu"><a href="#materials">Partitions</a><a href="#how">Mounting Styles</a><a href="#how">Hardware &amp; Parts</a><a href="#industries">Resources</a></div>
+  <a class="btn" href="#quote">Get a Quote</a>
+</div></nav>
+
+<header class="hero" id="top"><img class="photo" src="img/hero.jpg" alt="" aria-hidden="true"><div class="wrap"><div class="grid">
+  <div class="copy">
+    <div class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Authorized Distributor — All Major Brands</div>
+    <h1>Commercial Bathroom Partitions, Shipped Nationwide</h1>
+    <p id="heroSub">Price it yourself in minutes, or send us your drawings for a quote within 24–48 hours. All hardware included with every order.</p>
+    <div class="actions"><a class="btn lg" id="heroPrimary" href="configurator.html" target="_blank" rel="noopener">Get instant pricing <span aria-hidden="true">→</span></a><a class="btn ghost lg" id="heroSecondary" href="#uploadDoor">Upload plans</a></div>
+  </div>
+</div></div></header>
+
+<section class="trust" aria-label="Why order here"><div class="wrap"><div class="grid">
+  <div class="c4 titem"><svg class="ticon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg><div><b>Nationwide Shipping</b><span>Fast delivery to your job site</span></div></div>
+  <div class="c4 titem"><svg class="ticon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg><div><b>All Hardware Included</b><span>Panels, doors, hinges &amp; fasteners</span></div></div>
+  <div class="c4 titem"><svg class="ticon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><div><b>Real B2B Pricing</b><span>No hidden fees or markups</span></div></div>
+</div></div></section>
+
+
+<section class="section" id="quote"><div class="wrap">
+  <div class="head"><div><h2 id="quoteTitle">Start your quote</h2><p id="quoteIntro">Price a full layout yourself, send us your drawings, or shop parts and accessories straight from the catalogue.</p></div></div>
+  <div class="grid doors" id="doors">
+    <article class="c4 door primary">
+      <p class="eyebrow">I know what I need</p>
+      <h3>Price it yourself</h3>
+      <p class="dtext">Pick material, mounting, layout and sizes. Your price updates as you go.</p>
+      <div class="starts"><span>Start with</span>
+        <a href="configurator.html" target="_blank" rel="noopener">HDPE</a>
+        <a href="configurator.html" target="_blank" rel="noopener">Phenolic</a>
+        <a href="configurator.html" target="_blank" rel="noopener">Laminate</a>
+        <a href="configurator.html" target="_blank" rel="noopener">Powder Coated</a>
+        <a href="configurator.html" target="_blank" rel="noopener">Stainless</a></div>
+      <a class="btn lg dbtn" href="configurator.html" target="_blank" rel="noopener">Start configuring <span aria-hidden="true">→</span></a>
+    </article>
+    <article class="c4 door" id="uploadDoor">
+      <p class="eyebrow">I have drawings or a spec</p>
+      <h3>Send your plans</h3>
+      <p class="dtext">Upload drawings or an architect's spec. We'll reply with a quote and shop drawings within 24–48 hours.</p>
+      <label class="drop" for="plans"><input type="file" id="plans" multiple accept=".pdf,.dwg,.dxf,.doc,.docx,.png,.jpg,.jpeg,.webp,.heic"><span id="dropText"><b>Drop PDF, DWG or photos</b><br>or click to browse</span></label>
+      <label class="btn lg dbtn ghostbtn" for="plans">Upload plans <span aria-hidden="true">→</span></label>
+    </article>
+    <article class="c4 door">
+      <p class="eyebrow">I know the exact parts</p>
+      <h3>Shop the catalogue</h3>
+      <p class="dtext">Browse every partition, door, hardware part and accessory with listed prices. Add to cart and check out online.</p>
+      <p class="dlist">Partitions · Doors · Hinges &amp; latches · Brackets · Accessories</p>
+      <a class="btn lg dbtn ghostbtn" href="https://nextpartitions.com/products">Shop all products <span aria-hidden="true">→</span></a>
+    </article>
+    <p class="c12 talk">Prefer to talk it through? Call <b>1-833-997-7489</b> or email <b>sales@nextpartitions.com</b>.</p>
+  </div>
+  <div class="grid uppanel" id="uppanel" hidden>
+    <div class="c12 uphead"><h3>Send your plans</h3><button type="button" class="link" id="upClose">Close</button></div>
+    <div class="c5" style="min-width:0">
+      <p class="lab">Files</p>
+      <ul class="files" id="fileList" aria-live="polite"></ul>
+      <label class="drop small" for="plans2"><input type="file" id="plans2" multiple accept=".pdf,.dwg,.dxf,.doc,.docx,.png,.jpg,.jpeg,.webp,.heic"><span><b>Add more files</b> · PDF, DWG, DXF, Word or images, up to 20 MB each</span></label>
+      <p class="hint">Spec only? Upload the toilet compartment section (10 21 13). Replacing existing stalls? Photos plus a few measurements work.</p>
+    </div>
+    <form class="c7 upform" id="upForm" novalidate>
+      <div class="frow">
+        <div class="f"><label for="fName">Full name</label><input id="fName" autocomplete="name" required></div>
+        <div class="f"><label for="fCompany">Company <span>(optional)</span></label><input id="fCompany" autocomplete="organization"></div>
+      </div>
+      <div class="frow">
+        <div class="f"><label for="fEmail">Email</label><input id="fEmail" type="email" autocomplete="email" required></div>
+        <div class="f"><label for="fPhone">Phone</label><input id="fPhone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(555) 123-4567" required></div>
+      </div>
+      <div class="frow">
+        <div class="f"><label for="fZip">Job-site ZIP</label><input id="fZip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="12345" required></div>
+        <div class="f"><label for="fBid">Bid due date <span>(optional)</span></label><input id="fBid" type="date"></div>
+      </div>
+      <div class="f"><label for="fNotes">Anything we should know? <span>(optional)</span></label><textarea id="fNotes" rows="3" placeholder="e.g. Scranton HDPE per spec, 2 ADA stalls, overhead braced"></textarea></div>
+      <p class="formerr" id="formErr" role="alert" hidden></p>
+      <button type="submit" class="btn lg" id="upSubmit">Send plans for a quote <span aria-hidden="true">→</span></button>
+      <p class="hint">We'll reply with a quote and shop drawings within 24–48 hours. Your drawings are only used to prepare this quote.</p>
+    </form>
+    <div class="c12 done" id="upDone" hidden></div>
+  </div>
+</div></section>
+
+<section class="section band" id="materials"><div class="wrap">
+  <div class="head"><div><h2>Partition Materials</h2><p>Every material for every environment and budget.</p></div><a class="more" href="https://nextpartitions.com/partitions" target="_blank" rel="noopener">Compare all</a></div>
+  <div class="grid" id="matGrid"></div>
+</div></section>
+
+
+<section class="brands" id="why" aria-label="Authorized distributor"><div class="wrap"><div class="grid">
+  <p class="c12 lab">Authorized distributor for Bobrick, ASI Global, Scranton Products, Bradley, Metpar and Ammco</p>
+  <div class="c2 logo"><img src="img/bobrick.png" alt="Bobrick"></div>
+  <div class="c2 logo"><img src="img/asi.png" alt="ASI Global Partitions"></div>
+  <div class="c2 logo"><img src="img/scranton.png" alt="Scranton Products"></div>
+  <div class="c2 logo missing">Bradley logo needed</div>
+  <div class="c2 logo"><img src="img/metpar.png" alt="Metpar"></div>
+  <div class="c2 logo"><img src="img/ammco.svg" alt="Ammco, All American Metal Corp."></div>
+</div></div></section>
+
+<section class="section" id="industries"><div class="wrap">
+  <div class="head"><div><h2>Partitions for Every Commercial Environment</h2><p>See the material we recommend for your facility.</p></div><a class="more" href="https://nextpartitions.com/industries" target="_blank" rel="noopener">All industries</a></div>
+  <div class="grid" id="indGrid"></div>
+</div></section>
+
+<section class="section band" id="how"><div class="wrap">
+  <div class="head"><div><h2>How It Works</h2></div><a class="more" href="index.html#/service-area" target="_blank" rel="noopener">Our service area</a></div>
+  <div class="grid">
+    <div class="c4 step"><div class="num">1</div><h3>Configure your layout</h3><p>Choose material, mounting style, color, number of stalls and dimensions in our step-by-step configurator.</p></div>
+    <div class="c4 step"><div class="num">2</div><h3>Get instant pricing</h3><p>Standard configurations price instantly. Complex projects get a custom quote with shop drawings within 24–48 hours.</p></div>
+    <div class="c4 step"><div class="num">3</div><h3>We ship to your door</h3><p>Everything ships to your job site with all hardware included. Assembly guides provided.</p></div>
+  </div>
+</div></section>
+
+<section class="section" aria-label="By the numbers"><div class="wrap">
+  <div class="head"><div><h2>Trusted by Commercial Projects Nationwide</h2></div></div>
+  <div class="grid">
+    <div class="c4 stat"><b>6</b><span>Authorized brands</span></div>
+    <div class="c4 stat"><b>50</b><span>States shipped to</span></div>
+    <div class="c4 stat"><b>5</b><span>Partition materials</span></div>
+  </div>
+</div></section>
+
+<section class="cta"><div class="wrap"><div class="grid">
+  <div class="txt"><h2>Ready to get started?</h2><p>Get a ballpark in one tap, or send us your drawings. Custom quotes with shop drawings within 24–48 hours.</p></div>
+  <div class="btns"><a class="btn lg" href="#quote">Get my price <span aria-hidden="true">→</span></a></div>
+</div></div></section>
+
+<footer><div class="wrap">
+  <div class="grid">
+    <div class="about"><a class="brand" href="#top" style="color:#fff"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small style="color:#9a928b">Commercial Partitions</small></span></a>
+      <p style="margin:16px 0 0;max-width:30em">Your B2B supplier for commercial bathroom partitions, hardware and accessories.</p>
+      <p style="margin:12px 0 0">1-833-997-7489<br>sales@nextpartitions.com</p></div>
+    <div class="col"><h4>Products</h4><ul><li><a href="#materials">All Partitions</a></li><li><a href="#materials">Powder Coated Steel</a></li><li><a href="#materials">Solid Plastic (HDPE)</a></li><li><a href="#materials">Phenolic</a></li><li><a href="#materials">Plastic Laminate</a></li><li><a href="#materials">Stainless Steel</a></li></ul></div>
+    <div class="col"><h4>Resources</h4><ul><li><a href="#how">Service Area</a></li><li><a href="#industries">Industries</a></li><li><a href="#how">Stall Dimensions</a></li><li><a href="#how">ADA Compliance</a></li><li><a href="#how">Mounting Styles</a></li></ul></div>
+    <div class="col"><h4>Brands</h4><ul><li>Bobrick</li><li>ASI Global</li><li>Scranton Products</li><li>Bradley</li><li>Metpar</li><li>Ammco</li></ul></div>
+    <div class="col"><h4>Company</h4><ul><li><a href="#top">About Us</a></li><li><a href="#top">Contact Us</a></li><li><a href="#quote">Get a Quote</a></li></ul></div>
+  </div>
+  <div class="legal"><span>© 2026 Next Partitions. All rights reserved.</span><span>Terms &amp; Conditions · Privacy Policy</span></div>
+</div></footer>
+
+<script>
+const MATS = {
+  "powder-coated":    {name:"Powder Coated Steel",  from:358,  short:"Most popular, budget-friendly", best:"Dry restrooms on a budget", img:"img/powder-coated.jpg", page:"powder-coated-steel"},
+  "solid-plastic":    {name:"Solid Plastic (HDPE)", from:585,  short:"Moisture & graffiti resistant", best:"Wet, humid and high-traffic areas", img:"img/solid-plastic.jpg", page:"solid-plastic-hdpe"},
+  "solid-phenolic":   {name:"Phenolic",             from:975,  short:"Maximum durability", best:"Heavy use and vandalism", img:"img/phenolic.jpg", page:"phenolic"},
+  "plastic-laminate": {name:"Plastic Laminate",     from:455,  short:"Design flexibility", best:"Dry rooms where design matters", img:"img/plastic-laminate.jpg", page:"plastic-laminate"},
+  "stainless-steel":  {name:"Stainless Steel",      from:1170, short:"Upscale commercial", best:"Upscale, client-facing restrooms", img:"img/stainless-steel.jpg", page:"stainless-steel"}
+};
+const ICONS = {
+  schools:'<path d="M3 10 12 5l9 5-9 5z"/><path d="M7 12v5c3 2 7 2 10 0v-5"/>',
+  community:'<path d="M4 21V10l8-5 8 5v11"/><path d="M9 21v-6h6v6"/>',
+  gyms:'<path d="M3 10v4M6 8v8M18 8v8M21 10v4M6 12h12"/>',
+  offices:'<rect x="5" y="3" width="14" height="18"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M10 21v-4h4v4"/>',
+  restaurants:'<path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M16 3c-2 0-3 3-3 6s1 3 3 3v9"/>',
+  healthcare:'<rect x="4" y="4" width="16" height="16" rx="2"/><path d="M12 8v8M8 12h8"/>',
+  public:'<circle cx="8" cy="5" r="2"/><circle cx="16" cy="5" r="2"/><path d="M6 21v-7H5l1-6h4l1 6h-1v7M14 21v-6h-2l2-7h4l2 7h-2v6"/>'
+};
+const FACILITIES = [
+  {id:"schools", page:true, hint:"K-12 and universities",    label:"Schools",             noun:"schools",           mat:"solid-plastic",    why:"Graffiti and scratches sand out, and it carries a 25-year warranty.", also:"solid-phenolic", alsoNote:"for high schools with chronic vandalism"},
+  {id:"community", page:true, hint:"Rec centers, churches, libraries",  label:"Community Centers",   noun:"community centers", mat:"solid-plastic",    why:"Handles rec rooms, pools and heavy public use without rusting.", also:"powder-coated", alsoNote:"for dry meeting halls and libraries"},
+  {id:"gyms", page:true, hint:"Locker rooms, pools, showers",       label:"Gyms", noun:"gyms",              mat:"solid-plastic",    why:"Waterproof and graffiti-resistant. Won't rust in humid locker rooms and showers.", also:"solid-phenolic", alsoNote:"for premium clubs and spa areas"},
+  {id:"offices", page:true, hint:"Corporate and tenant floors",    label:"Offices",             noun:"offices",           mat:"plastic-laminate", why:"A clean, professional look for general office floors.", also:"stainless-steel", alsoNote:"for executive floors and lobbies"},
+  {id:"restaurants", page:true, hint:"Dining rooms and bars",label:"Restaurants",         noun:"restaurants",       mat:"plastic-laminate", why:"Wide color and pattern choice for dry dining-room restrooms.", also:"solid-phenolic", alsoNote:"for bars and harsh cleaners"},
+  {id:"public", page:true, hint:"Parks, transit, stadiums",     label:"Public Restrooms",    noun:"public restrooms",  mat:"solid-phenolic",   why:"Resists vandalism, cutting, burning and moisture.", also:"solid-plastic", alsoNote:"as the value pick"},
+  {id:"healthcare", hint:"Clinics, hospitals, senior living", label:"Healthcare", noun:"healthcare", mat:"solid-phenolic", why:"Non-porous surface that stands up to hospital-grade disinfectants.", also:"solid-plastic", alsoNote:"", unconfirmed:true},
+];
+const $ = id => document.getElementById(id);
+const money = n => "$" + Math.round(n).toLocaleString("en-US");
+
+// ---------- upload flow (mockup: files never leave the browser) ----------
+const OKEXT=/\.(pdf|dwg|dxf|docx?|png|jpe?g|webp|heic)$/i, MAXB=20*1024*1024, files=[];
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const esc=t=>t.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const mb=b=>b<1048576?Math.max(1,Math.round(b/1024))+" KB":(b/1048576).toFixed(1)+" MB";
+function openUpload(){ $("uppanel").hidden=false;
+  $("uppanel").scrollIntoView({behavior:reduce?"auto":"smooth"}); }
+function addFiles(list){
+  if(!list||!list.length) return;
+  for(const f of list){
+    const item={id:Math.random().toString(36).slice(2),name:f.name,size:f.size,pct:0,state:"up"};
+    if(!OKEXT.test(f.name)){item.state="bad";item.msg="Not a supported file type";}
+    else if(f.size>MAXB){item.state="bad";item.msg="Too large: "+mb(f.size)+" (max 20 MB)";}
+    files.push(item); if(item.state==="up") simulate(item);
+  }
+  $("upDone").hidden=true; $("upForm").hidden=false;
+  renderFiles(); openUpload();
+}
+function simulate(item){ // stands in for the real upload's progress events
+  if(reduce){item.pct=100;item.state="ok";return;}
+  const t=setInterval(()=>{ item.pct=Math.min(100,item.pct+20+Math.random()*25); if(item.pct>=100){item.state="ok";clearInterval(t);} renderFiles(); },180);
+}
+function renderFiles(){
+  $("fileList").innerHTML = files.length ? files.map(f=>`<li><span class="nm" title="${esc(f.name)}">${esc(f.name)}</span>
+      <span><span class="st ${f.state==="ok"?"ok":f.state==="bad"?"bad":""}">${f.state==="ok"?"Uploaded · "+mb(f.size):f.state==="bad"?esc(f.msg):"Uploading "+Math.round(f.pct)+"%"}</span><button type="button" class="x" data-rm="${f.id}" aria-label="Remove ${esc(f.name)}">×</button></span>
+      ${f.state==="up"?`<span class="bar"><i style="width:${f.pct}%"></i></span>`:""}</li>`).join("")
+    : `<li><span class="st">No files yet. Add drawings, a spec or photos.</span></li>`;
+  $("fileList").querySelectorAll("[data-rm]").forEach(b=>b.addEventListener("click",()=>{const i=files.findIndex(x=>x.id===b.dataset.rm); if(i>-1) files.splice(i,1); renderFiles();}));
+  const d=$("dropText"); const ok=files.filter(f=>f.state!=="bad").length;
+  d.innerHTML = ok ? `<b>${ok} file${ok>1?"s":""} added</b><br>Finish below` : `<b>Drop PDF, DWG or photos</b><br>or click to browse`;
+}
+// validation: real rules, shown per field on submit
+function fieldErr(id,msg){ const w=$(id).closest(".f"); w.classList.toggle("err",!!msg); let m=w.querySelector(".msg"); if(msg){ if(!m){m=document.createElement("span");m.className="msg";w.appendChild(m);} m.textContent=msg; $(id).setAttribute("aria-invalid","true"); } else { if(m) m.remove(); $(id).removeAttribute("aria-invalid"); } return !msg; }
+function addBusinessDays(d,n){ const x=new Date(d); while(n>0){ x.setDate(x.getDate()+1); if(x.getDay()%6) n--; } return x; }
+$("upForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const digits=$("fPhone").value.replace(/\D/g,"").replace(/^1(?=\d{10}$)/,"");
+  const v=[
+    fieldErr("fName", $("fName").value.trim().length<2 ? "Enter your name" : ""),
+    fieldErr("fEmail", /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test($("fEmail").value.trim()) ? "" : "Enter a valid email, like name@company.com"),
+    fieldErr("fPhone", digits.length===10 ? "" : "Enter a 10-digit US phone number"),
+    fieldErr("fZip", /^\d{5}$/.test($("fZip").value.trim()) ? "" : "Enter a 5-digit ZIP code")
+  ];
+  const good=files.filter(f=>f.state==="ok"), busy=files.some(f=>f.state==="up");
+  let msg=""; if(!good.length) msg="Add at least one drawing, spec or photo."; else if(busy) msg="Wait for uploads to finish.";
+  $("formErr").hidden=!msg; $("formErr").textContent=msg;
+  if(msg||v.includes(false)){ const first=document.querySelector('#upForm [aria-invalid="true"]'); if(first) first.focus(); return; }
+  const by=addBusinessDays(new Date(),2).toLocaleDateString("en-US",{weekday:"long",month:"short",day:"numeric"});
+  const ref="NP-"+String(Date.now()).slice(-6);
+  $("upForm").hidden=true; $("upDone").hidden=false;
+  $("upDone").innerHTML=`<h3>Plans received</h3><p>${good.length} file${good.length>1?"s":""} · reference <span class="ref">${ref}</span></p>
+    <p>You'll get a quote and shop drawings at <b>${esc($("fEmail").value.trim())}</b> by <b>${by}</b>. We've emailed you a copy of this confirmation.</p>
+    <p class="hint">Mockup: nothing was sent. On the live site this creates a quote request and alerts the sales team.</p>`;
+  $("upDone").scrollIntoView({behavior:reduce?"auto":"smooth",block:"center"});
+});
+$("plans").addEventListener("change",e=>{addFiles(e.target.files);e.target.value="";});
+$("plans2").addEventListener("change",e=>{addFiles(e.target.files);e.target.value="";});
+$("upClose").addEventListener("click",()=>{$("uppanel").hidden=true;$("uploadDoor").scrollIntoView({behavior:reduce?"auto":"smooth",block:"center"});});
+const drop=document.querySelector("#uploadDoor .drop");
+["dragenter","dragover"].forEach(t=>drop.addEventListener(t,e=>{e.preventDefault();drop.classList.add("over");}));
+["dragleave","drop"].forEach(t=>drop.addEventListener(t,e=>{e.preventDefault();drop.classList.remove("over");}));
+drop.addEventListener("drop",e=>addFiles(e.dataTransfer.files));
+renderFiles();
+
+// Materials: 3 + 3, sixth card fills the row
+$("matGrid").innerHTML = ["powder-coated","solid-plastic","solid-phenolic","plastic-laminate","stainless-steel"].map(id=>{const m=MATS[id];
+  return `<a class="c4 mcard" href="https://nextpartitions.com/partitions/${m.page}" target="_blank" rel="noopener"><img src="${m.img}" alt="${m.name} partitions" loading="lazy"><div class="body"><h3>${m.name}</h3><span class="d">${m.short}</span><span class="pr">From ${money(m.from)}/stall</span></div></a>`;}).join("")
+ + `<a class="c4 mcard help" href="https://nextpartitions.com/partitions"><div class="blurmix"><div class="strips" aria-hidden="true">${["powder-coated","solid-plastic","solid-phenolic","plastic-laminate","stainless-steel"].map(id=>`<img src="${MATS[id].img}" alt="" loading="lazy">`).join("")}</div><div class="offer"><span class="pill">Compare materials <span aria-hidden="true">→</span></span><small>All five side by side</small></div></div><div class="body"><h3>Not sure which material?</h3><span class="d">Compare durability, moisture resistance and price</span><span class="pr">Compare all materials →</span></div></a>`;
+
+// Industries: tiles set the quote widget's facility
+$("indGrid").innerHTML = FACILITIES.filter(f=>f.page).map(f=>
+  `<a class="c2 itile" href="https://nextpartitions.com/industries/${f.id==='community'?'community-centers':f.id==='public'?'public-restrooms':f.id}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">${ICONS[f.id]}</svg><b>${f.label}</b><span>Recommended: ${MATS[f.mat].name} →</span></a>`).join("");
+
+</script>
+
+<script>document.body.insertAdjacentHTML('afterbegin', "<nav style=\"background:#0a0a0a;color:#fff;font:12px/1.4 Inter,system-ui,sans-serif;padding:8px 16px;display:flex;flex-wrap:wrap;gap:6px 16px;position:relative;z-index:1000\">\n<b style=\"text-transform:uppercase;letter-spacing:.08em;color:#ffffff99\">Prototype</b>\n<a style=\"color:#fff\" href=\"index.html#/\">Start</a><a style=\"color:#fff\" href=\"homepage.html\">Homepage idea</a><a style=\"color:#fff\" href=\"index.html#/area/dallas\">Find an installer</a>\n<a style=\"color:#fff\" href=\"configurator.html#dfw\">Configurator (later phase)</a><a style=\"color:#fff\" href=\"index.html#/portal\">Installer's view</a><a style=\"color:#fff\" href=\"index.html#/portal/coordinator\">Your team's view</a>\n<a style=\"color:#fff\" href=\"index.html#/quote/sample-j1048\">Customer's quote</a><a style=\"color:#fff\" href=\"index.html#/apply\">Installer sign-up</a></nav>")</script>
+
+<script>document.body.insertAdjacentHTML('afterbegin', "<a href=\"../index.html#installers\" style=\"display:block;background:#fe7802;color:#fff;font:600 13px/1.4 Inter,system-ui,sans-serif;padding:8px 16px;text-decoration:none;position:relative;z-index:2000\">← Back to the overview: installer pages and job flow</a>")</script>
+<script>try{history.scrollRestoration='manual'}catch(e){};if(location.hash!=='#installers')addEventListener('load',()=>scrollTo(0,0))</script>
