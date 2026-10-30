@@ -8,7 +8,7 @@ secondary_keywords: [ceiling mounted toilet partitions (90), ceiling hung bathro
 words: 1,100
 ---
 
-Ceiling hung toilet partitions, also called ceiling mounted or suspended partitions, hang from structural steel above the ceiling and never touch the floor. Hadrian says they permit "quick and easy floor maintenance, especially when combined with wall-hung fixtures." The trade-off is structure. ASI states that "structural steel ceiling supports are necessary to assure proper installation," and the building has to provide them.
+Ceiling hung toilet partitions, also called ceiling mounted or suspended partitions, hang from structural steel above the ceiling and never touch the floor. That makes floor maintenance quick and easy, especially with wall-hung fixtures. The trade-off is structure. A proper installation needs structural steel ceiling supports, and the building has to provide them.
 
 [Get a Quote](/get-a-quote)
 
@@ -22,16 +22,16 @@ In the front view, the pilasters hang from steel above the ceiling and stop shor
 2. **Hanger:** from the steel into each pilaster
 3. **Clear floor:** nothing touches it
 
-- **Overhead support (by others):** a steel member above the finished ceiling at every pilaster. Bobrick's TB-32 bulletin shows I-beam, channel and angle supports. Bradley's ceiling-hung installation guides (Series 600, phenolic and powder coated or stainless) say a "C" channel and ceiling "(not included) is required." None of these are supplied with the partitions.
-- **Ceiling anchor assembly:** Bobrick's includes a threaded rod, hex nuts, washers, a shoe retainer and an expansion anchor. The pilaster hangs from the rod and is leveled with the nuts.
-- **Cover at the ceiling:** a stainless steel shoe or sleeve hides the hanger where the pilaster meets the ceiling. Bobrick's is 4" high.
-- **Pilasters:** Bobrick's standard ceiling-hung stile is 83" high for an 8' ceiling, or made to length for ceilings up to 10'. Bobrick recommends a stile at least 8" wide.
+- **Overhead support (by others):** a steel member above the finished ceiling at every pilaster, such as an I-beam, channel or angle. Installation guides call for a C channel at the ceiling that isn't included. None of this is supplied with the partitions.
+- **Ceiling anchor assembly:** typically a threaded rod, hex nuts, washers, a shoe retainer and an expansion anchor. The pilaster hangs from the rod and is leveled with the nuts.
+- **Cover at the ceiling:** a stainless steel shoe or sleeve, typically about 4" high, hides the hanger where the pilaster meets the ceiling.
+- **Pilasters:** ceiling-hung pilasters are typically 83" high for an 8' ceiling and made to length for ceilings up to about 10'. A pilaster at least 8" wide is recommended.
 
 At the top of each pilaster, a rod runs from the steel above through the ceiling.
 
 ![Hanger: rod from the I-beam into the pilaster](/images/diagrams/mounting-ceiling-hung-detail-hanger.svg)
 
-The New York State OGS master spec sets the key rule: anchoring assemblies connect to "structural support above finished ceiling," and must "support pilasters from structure without transmitting load to finished ceiling." The ceiling tile or drywall carries nothing. Panels and doors attach to the pilasters with U-brackets, as in every style.
+The key rule: anchoring assemblies connect to structural support above the finished ceiling and carry the pilasters without passing any load to the finished ceiling. The ceiling tile or drywall carries nothing. Panels and doors attach to the pilasters with U-brackets, as in every style.
 
 ![U-bracket holding a panel to a pilaster, seen from above](/images/diagrams/mounting-ceiling-hung-detail-bracket.svg)
 
@@ -39,25 +39,25 @@ The New York State OGS master spec sets the key rule: anchoring assemblies conne
 
 This is where ceiling hung projects succeed or fail, so settle it before you choose the style.
 
-- **Load:** Bobrick says the ceiling structure must support at least 295 lb per high pressure laminate partition and 275 lb per compact grade (phenolic) partition. It must be "sufficiently rigid to withstand swinging motion of toilet partition doors and impact of doors against stiles."
-- **Design:** the "actual mounting system, including lateral bracing, if required, must be designed by the architect or structural engineer, and furnished by others" (Bobrick).
-- **Steel, not wood:** Bobrick says wood beams aren't recommended for ceiling-hung application. The NY OGS spec says steel overhead support is generally required and that wood "is inadequate for supporting ceiling-hung compartments."
-- **Ceiling height:** Bobrick's standard pilaster suits an 8' ceiling, with custom lengths up to 10'. The VA's master spec requires ceiling-hung partitions at ceilings of no more than 8' "to provide stability and resistance to lateral force," with a dropped ceiling shown on the drawings for pilaster support.
-- **No support available?** Bobrick's advice: "If adequate ceiling support cannot be provided, the floor-anchored or overhead-braced toilet compartments are recommended." See [overhead braced](/mounting-styles/overhead-braced) and [floor mounted](/mounting-styles/floor-mounted).
+- **Load:** the ceiling structure has to carry roughly 275 to 295 lb per partition, depending on the material. It also has to stay rigid when doors swing and hit the pilasters.
+- **Design:** the actual mounting system, including any lateral bracing, is designed by the architect or structural engineer and supplied by others.
+- **Steel, not wood:** wood framing isn't suitable for ceiling-hung partitions. Steel overhead support is generally required.
+- **Ceiling height:** standard pilasters suit an 8' ceiling, with custom lengths up to about 10'. Some healthcare specs allow ceiling-hung partitions only at ceilings of 8' or less, for stability and resistance to lateral force, with a dropped ceiling shown on the drawings for pilaster support.
+- **No support available?** If adequate ceiling support can't be provided, manufacturers recommend floor-anchored or overhead-braced compartments instead. See [overhead braced](/mounting-styles/overhead-braced) and [floor mounted](/mounting-styles/floor-mounted).
 
 ## Why specifiers choose ceiling hung
 
-- **Clear floor.** Nothing touches the floor, so there are no pilaster shoes to mop around. ASI: "When used together with wall-hung fixtures, the entire floor is accessible for efficient cleaning."
+- **Clear floor.** Nothing touches the floor, so there are no pilaster shoes to mop around. With wall-hung fixtures, the entire floor is open for efficient cleaning.
 - **Floor that can't take anchors.** Ceiling hung is the only style with no floor anchoring. When the floor can't be drilled, it's the option left, as long as the steel overhead can be provided.
-- **Modernization.** Hadrian recommends ceiling hung partitions "for modernization where a drop ceiling or open span construction can be used."
-- **Healthcare.** The VA's standard toilet compartment spec names ceiling hung as its primary style, at ceilings up to 8'.
+- **Modernization.** The style suits modernization projects where a drop ceiling or open span construction can be used.
+- **Healthcare.** Some healthcare toilet compartment specs name ceiling hung as the primary style, at ceilings up to 8'.
 
 ## Limits to plan for
 
-- **Most coordination of any style.** Structural steel, its design and its installation come from other trades (NY OGS points to the metal fabrications section). Bring it into the drawings early.
-- **Lateral bracing.** Bobrick's bulletin allows for lateral bracing where the engineer requires it. The NY OGS spec notes that ceiling-hung units are available from a limited number of solid-plastic manufacturers, "that may require exposed cross bracing."
-- **Ceiling height.** Over 10' needs a different solution in Bobrick's lines, and the VA limits the style to 8' ceilings.
-- **Solid plastic.** Several manufacturers don't recommend ceiling-hung mounting for solid-plastic units (NY OGS). Scranton's Hiny Hiders HDPE line does offer it.
+- **Most coordination of any style.** Structural steel, its design and its installation come from other trades, usually under the metal fabrications section of the specs. Bring it into the drawings early.
+- **Lateral bracing.** Mounting systems allow for lateral bracing where the engineer requires it. Only a few solid-plastic manufacturers offer ceiling-hung units, and those may need exposed cross bracing.
+- **Ceiling height.** Ceilings over about 10' need a different solution, and some healthcare specs limit the style to 8' ceilings.
+- **Solid plastic.** Several manufacturers don't recommend ceiling-hung mounting for solid-plastic units, though some HDPE lines do offer it.
 
 ## Typical specifications
 
@@ -65,24 +65,24 @@ Seen from the side, through a stall: the panel height and the clearance under it
 
 ![Side view through a stall: panel height and clearances](/images/diagrams/mounting-ceiling-hung-side.svg "side")
 
-| Item | Typical | Source |
-|---|---|---|
-| Door and panel height | 58" | Bobrick; Hadrian |
-| Height above floor | 12" above finished floor | Hadrian ceiling hung; Bradley ceiling-hung guide (12" level line) |
-| Pilaster height | 83" for 8' ceiling; to length up to 10' | Bobrick 1080 and 1550 data |
-| Recommended pilaster width | 8" minimum | Bobrick 1080 data |
-| Ceiling load | 295 lb per plastic laminate partition; 275 lb per compact laminate partition (minimum) | Bobrick TB-32 |
-| Support | Structural steel above the finished ceiling, by others | Bobrick; Bradley; ASI; NY OGS |
+| Item | Typical |
+|---|---|
+| Door and panel height | 58" |
+| Height above floor | 12" above finished floor |
+| Pilaster height | 83" for 8' ceiling; to length up to about 10' |
+| Recommended pilaster width | 8" minimum |
+| Ceiling load | Roughly 275 to 295 lb per partition (minimum), depending on material |
+| Support | Structural steel above the finished ceiling, by others |
 
 ## Materials
 
-| Material | Example from manufacturer documentation |
-|---|---|
-| [Powder coated steel](/partitions/powder-coated-steel) | ASI ceiling hung; Bradley ceiling hung |
-| [Stainless steel](/partitions/stainless-steel) | ASI; Bradley; Hadrian ceiling-hung stainless |
-| [Plastic laminate](/partitions/plastic-laminate) | Bobrick 1550 Series (1558 ceiling-hung) |
-| [Phenolic](/partitions/phenolic) | Bobrick DuraLine compact laminate (1088 ceiling-hung); Hadrian ceiling-hung phenolic |
-| [Solid plastic (HDPE)](/partitions/solid-plastic-hdpe) | Scranton Hiny Hiders, ceiling hung; few other HDPE lines |
+Ceiling hung is offered in these materials. Brand availability varies.
+
+- [Powder coated steel](/partitions/powder-coated-steel)
+- [Stainless steel](/partitions/stainless-steel)
+- [Plastic laminate](/partitions/plastic-laminate)
+- [Phenolic](/partitions/phenolic) (compact laminate)
+- [Solid plastic (HDPE)](/partitions/solid-plastic-hdpe): offered in a few HDPE lines only
 
 ## What to send with your quote request
 
@@ -107,13 +107,13 @@ Your architect or structural engineer designs the support steel. We quote the pa
 Structural steel above the finished ceiling at every pilaster, designed by the architect or structural engineer and supplied by others. The finished ceiling itself carries no load.
 
 ### Can ceiling mounted toilet partitions hang from a drop ceiling?
-Not from the ceiling grid or tiles. The pilasters hang on rods that pass through the ceiling to steel above it. Hadrian notes the style suits projects "where a drop ceiling or open span construction can be used," and the VA spec calls for a dropped ceiling at 8' with support for the pilasters.
+Not from the ceiling grid or tiles. The pilasters hang on rods that pass through the ceiling to steel above it. The style suits projects where a drop ceiling or open span construction can be used, and some healthcare specs call for a dropped ceiling at 8' with support for the pilasters.
 
 ### How much weight does the ceiling need to hold?
-Bobrick specifies at least 295 lb per high pressure laminate partition and 275 lb per compact laminate partition. The structure also has to stay rigid when doors swing and hit the pilasters. Other materials and brands differ, so use the manufacturer's figure for your line.
+Typical manufacturer figures are at least 275 to 295 lb per partition, depending on the material. The structure also has to stay rigid when doors swing and hit the pilasters. Materials and brands differ, so use the manufacturer's figure for your line.
 
 ### What is the maximum ceiling height for ceiling hung partitions?
-Bobrick's standard pilaster suits an 8' ceiling, with custom lengths up to 10'. The VA limits ceiling-hung partitions to ceilings of 8' or less for stability.
+Standard pilasters suit an 8' ceiling, with custom lengths up to about 10'. Some healthcare specs limit ceiling-hung partitions to ceilings of 8' or less for stability.
 
 ### Are suspended bathroom partitions easier to clean?
 Yes. With nothing on the floor, and especially with wall-hung toilets, the whole floor can be mopped without working around pilaster shoes.
@@ -152,3 +152,4 @@ Yes. With nothing on the floor, and especially with wall-hung toilets, the whole
 - H1 changed from "Ceiling Hung Partitions" to "Ceiling Hung Toilet Partitions". "Ceiling mounted toilet partitions" (90/mo) goes here as a secondary keyword, not on a separate page.
 - Internal links: the /industries/public-restrooms and /industries/schools ceiling hung cards already link here. Add a body link from /industries/gyms (locker rooms are cleaned wet).
 - Images wanted: section drawing showing steel above the ceiling, threaded rod, ceiling shoe and pilaster; photo of a ceiling hung row with a clear floor and wall-hung toilets.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.

@@ -8,7 +8,7 @@ secondary_keywords: [floor to ceiling bathroom stalls (40), floor to ceiling bat
 words: 1,140
 ---
 
-Floor to ceiling toilet partitions anchor each pilaster at both ends: into the concrete floor and into structural support at the ceiling. ASI calls the style "extremely stable and durable." Hadrian says floor-to-ceiling partitions are "extremely strong and resistant to abuse because they are securely connected to the floor, ceiling and walls," and recommends them for "high-traffic areas, like schools and other spaces that require extra security."
+Floor to ceiling toilet partitions anchor each pilaster at both ends: into the concrete floor and into structural support at the ceiling. Because they're secured to the floor, ceiling and walls, manufacturers describe them as very stable, strong and resistant to abuse. They recommend the style for high-traffic areas such as schools and other spaces that need extra security.
 
 One point clears up most confusion: "floor to ceiling" describes the **pilasters**, not the doors and panels. In standard lines the doors and panels are the usual height with the usual gap underneath. If you want stall walls that close off the floor gap too, that's a separate privacy option, covered below.
 
@@ -24,10 +24,10 @@ In the front view, each pilaster runs from the floor to the ceiling while the do
 2. **Ceiling anchor:** into structure at the top
 3. **Doors and panels:** 58" at 12" above the floor
 
-- **Pilasters** run from the finished floor to the ceiling. Bobrick makes its floor-to-ceiling anchored stiles to the height required, for ceilings up to 10'.
-- **Anchoring at both ends:** the NY OGS master spec calls for "anchoring assemblies with leveling adjustment nuts at tops and bottoms of pilasters." Bobrick fits a leveling device at each end of its floor-to-ceiling stiles.
-- **Covers:** a shoe at the floor and a sleeve (cap) at the ceiling hide the anchors (NY OGS).
-- **Doors and panels:** standard height. Bobrick's are 58" high. Hadrian's solid plastic floor-to-ceiling series uses 55" doors and panels mounted 14" above the finished floor. Doors are hung level and aligned with the panels.
+- **Pilasters** run from the finished floor to the ceiling and are made to the height required, typically for ceilings up to 10'.
+- **Anchoring at both ends:** each pilaster has an anchoring assembly with leveling adjustment nuts at the top and at the bottom.
+- **Covers:** a shoe at the floor and a sleeve (cap) at the ceiling hide the anchors.
+- **Doors and panels:** standard height, typically 58" high. Solid plastic lines often use 55" doors and panels mounted 14" above the finished floor. Doors are hung level and aligned with the panels.
 
 At the floor, the pilaster foot is anchored as in a floor-anchored stall.
 
@@ -45,24 +45,24 @@ From the side, the panel is 58" high with a 12" gap below it.
 
 Floor to ceiling needs work at both ends, so check both before choosing it.
 
-- **Ceiling:** Bobrick states that "ceiling-hung and floor-to-ceiling toilet compartments require structural members (not furnished by Bobrick) in ceiling." The structure is supplied by other trades. Show the overhead support or bracing locations on the drawings (NY OGS).
-- **Wood may be enough here.** Unlike [ceiling hung](/mounting-styles/ceiling-hung), which carries the whole partition from above, the NY OGS spec notes that "wood may provide adequate overhead support for floor-and-ceiling-anchored compartments" (consult the manufacturer).
-- **Floor:** ASI anchors the pilasters "into both the concrete floor and the structural ceiling support." Plan for a concrete floor at every pilaster.
-- **Ceiling height:** Bobrick's floor-to-ceiling anchored compartments go up to 120" (10'). For taller rooms, ask before you specify.
+- **Ceiling:** floor-to-ceiling compartments need structural members in the ceiling, and those aren't furnished with the partitions. Other trades supply them. Show the overhead support or bracing locations on the drawings.
+- **Wood may be enough here.** Unlike [ceiling hung](/mounting-styles/ceiling-hung), which carries the whole partition from above, floor-and-ceiling-anchored compartments may get adequate overhead support from wood. Check with the manufacturer.
+- **Floor:** the pilasters anchor into both the concrete floor and the structural ceiling support. Plan for a concrete floor at every pilaster.
+- **Ceiling height:** floor-to-ceiling compartments typically go up to 120" (10'). For taller rooms, ask before you specify.
 
 ## Why specifiers choose floor to ceiling
 
-- **Fixed at both ends.** Every pilaster is anchored at the floor and the ceiling, and the panels are fastened to the walls. ASI calls the result "extremely stable and durable."
+- **Fixed at both ends.** Every pilaster is anchored at the floor and the ceiling, and the panels are fastened to the walls. The result is very stable and durable.
 - **No headrail to grab.** There's no rail running across the tops of the stalls.
-- **Built for abuse.** Hadrian positions it for high-traffic, high-security spaces such as schools. Our [schools](/industries/schools) and [public restrooms](/industries/public-restrooms) pages list it as the most rigid configuration.
-- **Gap-free versions available.** Some lines pair floor-to-ceiling pilasters with gap-free doors. Bobrick's DuraLine compact laminate offers a 1086G gap-free floor-to-ceiling series.
+- **Built for abuse.** Manufacturers position it for high-traffic, high-security spaces such as schools. Our [schools](/industries/schools) and [public restrooms](/industries/public-restrooms) pages list it as the most rigid configuration.
+- **Gap-free versions available.** Some lines pair floor-to-ceiling pilasters with gap-free doors, for example in compact laminate.
 
 ## Limits to plan for
 
 - **Two sets of anchors.** You need a concrete floor and structural members at the ceiling at each pilaster.
-- **Ceiling work and coordination.** Pilasters are cut to the actual ceiling height, so the ceiling needs to be finished and measured accurately. NY OGS calls for field measurements of walls, ceilings and fixtures before fabrication.
+- **Ceiling work and coordination.** Pilasters are cut to the actual ceiling height, so the ceiling needs to be finished and measured accurately. Specs call for field measurements of walls, ceilings and fixtures before fabrication.
 - **Floor cleaning.** Shoes stay on the floor, as with [overhead braced](/mounting-styles/overhead-braced). For a clear floor, see [ceiling hung](/mounting-styles/ceiling-hung).
-- **Not in every line.** Bobrick's plastic laminate 1550 Series, for example, offers floor-anchored, overhead-braced and ceiling-hung, but not floor-to-ceiling.
+- **Not in every line.** Some plastic laminate lines, for example, offer floor-anchored, overhead-braced and ceiling-hung, but not floor-to-ceiling.
 
 ## Privacy: floor-to-ceiling pilasters vs full-height stalls
 
@@ -70,9 +70,9 @@ If what you want is fewer gaps, not just stronger stalls, look at the privacy op
 
 | Option | What changes | Example |
 |---|---|---|
-| Standard floor to ceiling | Pilasters reach the ceiling; doors and panels standard height | Hadrian solid plastic: 55" at 14" above the floor |
-| No-sightline / gap-free | Closes the sightline gaps at the door edges | Bobrick 1086G gap-free floor-to-ceiling series; Hadrian no-sightline option |
-| Taller doors, lower gap | Doors and panels taller and closer to the floor | Hadrian: 72" doors at 6" or 9"; 92" at 4", 6" or 9" above the floor, also as a floor-to-ceiling configuration. ASI: doors and panels up to 72" |
+| Standard floor to ceiling | Pilasters reach the ceiling; doors and panels standard height | Solid plastic: often 55" at 14" above the floor |
+| No-sightline / gap-free | Closes the sightline gaps at the door edges | Gap-free floor-to-ceiling compact laminate; no-sightline options in other lines |
+| Taller doors, lower gap | Doors and panels taller and closer to the floor | Doors and panels up to 72", at 6" or 9" above the floor; some lines go to 92" at 4", 6" or 9", also as a floor-to-ceiling configuration |
 
 Lower gaps affect accessibility. Under 2010 ADA Standards section 604.8.1.4, the front partition and at least one side partition of a wheelchair accessible compartment need 9" of toe clearance above the finished floor and 6" deep (12" high in children's compartments). Exceptions apply to larger compartments: no front toe clearance when the compartment is over 62" deep with a wall-hung toilet or over 65" deep with a floor-mounted one, and no side toe clearance when it's over 66" wide. See our [ADA compliance guide](/guides/ada-compliance).
 
@@ -80,13 +80,13 @@ Disclaimer: ADA dimensions and accessibility guidance shown here are provided fo
 
 ## Materials
 
-| Material | Example from manufacturer documentation |
-|---|---|
-| [Phenolic](/partitions/phenolic) | Bobrick DuraLine compact laminate (1086 / 1086G); Hadrian floor-to-ceiling phenolic |
-| [Solid plastic (HDPE)](/partitions/solid-plastic-hdpe) | Scranton Hiny Hiders, floor to ceiling; Hadrian floor-to-ceiling solid plastic |
-| [Stainless steel](/partitions/stainless-steel) | ASI floor to ceiling anchored; Hadrian floor-to-ceiling stainless |
-| [Powder coated steel](/partitions/powder-coated-steel) | ASI floor to ceiling anchored; Hadrian floor-to-ceiling powder coated |
-| [Plastic laminate](/partitions/plastic-laminate) | Not offered in Bobrick's plastic laminate line; ask us about other brands |
+Floor to ceiling is offered in these materials. Brand availability varies.
+
+- [Phenolic](/partitions/phenolic) (compact laminate), including gap-free versions
+- [Solid plastic (HDPE)](/partitions/solid-plastic-hdpe)
+- [Stainless steel](/partitions/stainless-steel)
+- [Powder coated steel](/partitions/powder-coated-steel)
+- [Plastic laminate](/partitions/plastic-laminate): not offered in every plastic laminate line; ask us which brands offer it
 
 ## What to send with your quote request
 
@@ -110,13 +110,13 @@ Standard configurations are quoted within 2 business hours; custom projects with
 Not in standard lines. The pilasters run floor to ceiling, but the doors and panels are standard height with a gap underneath (for example 55" at 14" above the floor). Taller doors with smaller gaps are a separate privacy option.
 
 ### What structure do floor to ceiling partitions need?
-A concrete floor for the bottom anchors and structural members at the ceiling for the top anchors. Bobrick notes the ceiling members aren't furnished with the partitions.
+A concrete floor for the bottom anchors and structural members at the ceiling for the top anchors. The ceiling members aren't furnished with the partitions.
 
 ### Are floor to ceiling partitions stronger than overhead braced?
 Floor to ceiling anchors each pilaster at both the floor and the ceiling, while overhead braced anchors at the floor and ties the tops together with a headrail. Manufacturers describe floor to ceiling as extremely stable and abuse resistant, and recommend it for high-traffic spaces such as schools.
 
 ### What is the maximum ceiling height for floor to ceiling partitions?
-Bobrick's floor-to-ceiling anchored compartments go up to 10' ceilings. For taller rooms, check with the manufacturer before specifying.
+Floor-to-ceiling compartments typically go up to 10' ceilings. For taller rooms, check with the manufacturer before specifying.
 
 ### Which materials come in floor to ceiling?
 Phenolic, solid plastic (HDPE), stainless steel and powder coated steel are all offered by manufacturers we carry. Plastic laminate availability depends on the brand.
@@ -157,3 +157,4 @@ Phenolic, solid plastic (HDPE), stainless steel and powder coated steel are all 
 - H1 changed from "Floor to Ceiling Partitions" to "Floor to Ceiling Toilet Partitions". "Floor to ceiling bathroom stalls" (40) and "floor to ceiling bathroom partitions" (30) are secondary keywords here; the FAQ answers the "stalls" query directly.
 - /guides/bathroom-stall-dimensions lists "Floor-to-ceiling pilaster: Custom (matches ceiling)". That's consistent; add a link from that row to this page.
 - Images wanted: elevation showing a pilaster anchored at floor and ceiling with standard-height doors; a second elevation of a tall, low-gap privacy stall for contrast.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.

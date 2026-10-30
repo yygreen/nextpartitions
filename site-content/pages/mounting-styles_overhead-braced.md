@@ -8,7 +8,7 @@ secondary_keywords: [headrail braced toilet partitions (20)]
 words: 1,020
 ---
 
-Overhead braced toilet partitions are the go-anywhere mounting style. Each pilaster is anchored to the floor, and a continuous aluminum headrail runs across the tops of the pilasters and fastens to the walls at each end. ASI describes the style as "economical and sturdy" and says it "installs just about anywhere." Manufacturers also call it floor-mounted overhead-braced, floor anchored/overhead braced or headrail braced. It's the same system under different names.
+Overhead braced toilet partitions are the go-anywhere mounting style. Each pilaster is anchored to the floor, and a continuous aluminum headrail runs across the tops of the pilasters and fastens to the walls at each end. Manufacturers describe the style as economical and sturdy, and it installs almost anywhere. It's also called floor-mounted overhead-braced, floor anchored/overhead braced or headrail braced. It's the same system under different names.
 
 [Get a Quote](/get-a-quote)
 
@@ -24,10 +24,10 @@ In the front view of a row of stalls, the headrail runs across the pilaster tops
 
 On a standard partition, doors and panels are 58" high and mounted 12" above the floor, and the pilasters and headrail top out at about 82" to 83", depending on the brand (82" in this drawing). Privacy and some solid plastic lines use other heights: see Typical specifications below. An overhead braced stall has four kinds of parts:
 
-- **Pilasters** (Bobrick calls them stiles): the vertical posts at the front of each stall that carry the doors. Bobrick's standard overhead-braced stile is 83" high.
-- **Floor brackets and leveling device:** a steel bracket at the foot of each pilaster, fastened to the finished floor and adjustable for level. In Bobrick's plastic laminate line it's a 12-gauge plated steel bracket with a leveling bolt, floor L-bracket and stainless steel floor screws.
+- **Pilasters** (also called stiles): the vertical posts at the front of each stall that carry the doors. A standard overhead-braced pilaster is typically 82" to 83" high.
+- **Floor brackets and leveling device:** a steel bracket at the foot of each pilaster, fastened to the finished floor and adjustable for level. One common setup is a 12-gauge plated steel bracket with a leveling bolt, floor L-bracket and stainless steel floor screws.
 - **Pilaster shoe:** a stainless steel cover that hides the bracket and leveling hardware at the floor.
-- **Headrail:** a continuous extruded aluminum rail across the pilaster tops. ASI uses an "anodized aluminum anti-grip head rail" that "secures partitions firmly to the walls." The anti-grip profile is shaped so it can't be grabbed or hung from.
+- **Headrail:** a continuous extruded anodized aluminum rail across the pilaster tops that secures the partitions firmly to the walls. The anti-grip profile is shaped so it can't be grabbed or hung from.
 
 At the floor, the leveling bar, anchors and shoe sit together under the pilaster.
 
@@ -37,29 +37,29 @@ At the top, the headrail clamps over the pilaster and fixes to the wall.
 
 ![Headrail cross-section, fixed to the wall](/images/diagrams/mounting-overhead-braced-detail-headrail.svg)
 
-Panels and doors hang between the pilasters and the walls on brackets. Installation specs line the tops of the doors up with the headrail so everything reads as one straight line. The New York State OGS master spec, for example, says to fasten the headrail to each pilaster with at least two fasteners and adjust doors "so tops of doors are parallel with overhead brace."
+Panels and doors hang between the pilasters and the walls on brackets. Installation specs line the tops of the doors up with the headrail so everything reads as one straight line. A typical spec fastens the headrail to each pilaster with at least two fasteners and adjusts the doors so their tops run parallel with the headrail.
 
 ![U-bracket holding a panel to a pilaster, seen from above](/images/diagrams/mounting-overhead-braced-detail-bracket.svg)
 
 ## Why specifiers choose overhead braced
 
 - **No ceiling work.** The headrail is carried by the pilasters and the walls, not the ceiling. You don't need steel above the ceiling, unlike [ceiling hung](/mounting-styles/ceiling-hung) and [floor to ceiling](/mounting-styles/floor-to-ceiling).
-- **Fits most floors.** The floor anchors are shallower than [floor mounted](/mounting-styles/floor-mounted) units need. The NY OGS spec calls for anchors at least 1-3/4" into the structural floor for overhead-braced units, against 2" for floor-anchored units.
-- **Stiff at the top as well as the bottom.** The headrail ties every pilaster to its neighbors and to the walls. Hadrian says its anti-grip top rail "ensures a rigid and secure installation from top to bottom."
-- **Fallback when the ceiling can't carry a load.** Bobrick recommends floor-anchored or overhead-braced compartments when adequate ceiling support can't be provided.
+- **Fits most floors.** The floor anchors are shallower than [floor mounted](/mounting-styles/floor-mounted) units need. A typical spec calls for anchors at least 1-3/4" into the structural floor for overhead-braced units, against 2" for floor-anchored units.
+- **Stiff at the top as well as the bottom.** The headrail ties every pilaster to its neighbors and to the walls, which keeps the installation rigid from top to bottom.
+- **Fallback when the ceiling can't carry a load.** Manufacturers recommend floor-anchored or overhead-braced compartments when adequate ceiling support can't be provided.
 - **Available in every material we sell** (see below).
 
 ## Typical specifications
 
-| Item | Typical | Source |
-|---|---|---|
-| Door and panel height | 58" | Bobrick; Hadrian standard series |
-| Floor clearance | 12" above finished floor | Hadrian standard series; site [stall dimensions guide](/guides/bathroom-stall-dimensions) |
-| Solid plastic (HDPE) | 55" doors and panels, 14" above the floor | Hadrian solid plastic |
-| Pilaster height | 83" (Bobrick standard) | Bobrick 1080 and 1550 data |
-| Headrail | Extruded anodized aluminum, anti-grip | ASI; Bobrick |
-| Floor anchor | Bracket, leveling bolt and floor fasteners, concealed by a pilaster shoe | Bobrick 1550 data |
-| Privacy options | Taller doors and lower floor clearance in some lines (Hadrian: 64" or 72" at 6" or 9") | Hadrian |
+| Item | Typical |
+|---|---|
+| Door and panel height | 58" |
+| Floor clearance | 12" above finished floor (see our [stall dimensions guide](/guides/bathroom-stall-dimensions)) |
+| Solid plastic (HDPE) | Often 55" doors and panels, 14" above the floor |
+| Pilaster height | 82" to 83", depending on the line |
+| Headrail | Extruded anodized aluminum, anti-grip |
+| Floor anchor | Bracket, leveling bolt and floor fasteners, concealed by a pilaster shoe |
+| Privacy options | Taller doors and lower floor clearance in some lines (for example 64" or 72" at 6" or 9") |
 
 Sizes vary by brand and line. Your quote and the manufacturer's submittal drawings set the final dimensions. The side view shows the 58" panel, the 12" floor clearance and the 61-1/4" to the face of the panel.
 
@@ -69,21 +69,19 @@ Sizes vary by brand and line. Your quote and the manufacturer's submittal drawin
 
 Overhead braced is offered in all five materials we carry. Brand availability varies.
 
-| Material | Example from manufacturer documentation |
-|---|---|
-| [Powder coated steel](/partitions/powder-coated-steel) | ASI floor anchored/overhead braced |
-| [Stainless steel](/partitions/stainless-steel) | ASI; Hadrian headrail-braced stainless |
-| [Plastic laminate](/partitions/plastic-laminate) | Bobrick 1550 Series (1552 overhead-braced) |
-| [Phenolic](/partitions/phenolic) | Bobrick DuraLine compact laminate (1082 overhead-braced) |
-| [Solid plastic (HDPE)](/partitions/solid-plastic-hdpe) | Scranton Products Hiny Hiders, floor mounted overhead-braced |
+- [Powder coated steel](/partitions/powder-coated-steel)
+- [Stainless steel](/partitions/stainless-steel)
+- [Plastic laminate](/partitions/plastic-laminate)
+- [Phenolic](/partitions/phenolic) (compact laminate)
+- [Solid plastic (HDPE)](/partitions/solid-plastic-hdpe)
 
 ## Where it works well
 
-Because it needs no ceiling structure and goes in on most floors, overhead braced suits everyday commercial restrooms: [offices](/industries/offices), [restaurants](/industries/restaurants), [community centers](/industries/community-centers) and [gyms](/industries/gyms). Hadrian markets its headrail-braced stainless partitions for "heavy-use applications such as schools, institutions and industrial settings."
+Because it needs no ceiling structure and goes in on most floors, overhead braced suits everyday commercial restrooms: [offices](/industries/offices), [restaurants](/industries/restaurants), [community centers](/industries/community-centers) and [gyms](/industries/gyms). Headrail-braced stainless steel is also marketed for heavy-use settings such as schools, institutions and industrial buildings.
 
 ## When to choose something else
 
-- **Behavioral health and patient-safety areas.** The VA's master spec for mental health and behavioral patient care units says partitions "shall have no overhead connecting framing that could be used as an anchor point for hanging." The headrail is exactly that kind of framing. Ask your design team about ligature-resistant options.
+- **Behavioral health and patient-safety areas.** Specs for mental health and behavioral patient care units rule out overhead connecting framing that could be used as an anchor point for hanging. The headrail is exactly that kind of framing. Ask your design team about ligature-resistant options.
 - **Floor must stay clear.** If the floor can't take anchors, or you want nothing on the floor for wet cleaning, use [ceiling hung](/mounting-styles/ceiling-hung). It needs engineered steel above the ceiling.
 - **Highest abuse.** For high-traffic schools and public restrooms, [floor to ceiling](/mounting-styles/floor-to-ceiling) anchors every pilaster at both ends.
 - **Very high or open ceilings, or no headrail wanted.** [Floor mounted](/mounting-styles/floor-mounted) drops the headrail, but it needs a structural concrete floor and heavier anchoring.
@@ -92,7 +90,7 @@ Because it needs no ceiling structure and goes in on most floors, overhead brace
 
 - Room plan or sketch with wall lengths and the stall depth
 - Floor type (concrete slab, tile over concrete, other) and photos of the floor and walls
-- Wall construction where panels and headrail will fasten (masonry, studs, tile). Bobrick says wall backing is required for the mounting brackets, and Bradley says to confirm the wall and floor backing before installation.
+- Wall construction where panels and headrail will fasten (masonry, studs, tile). The mounting brackets need wall backing, so confirm the wall and floor backing before installation.
 - Material, color, and which stall is the accessible one
 
 Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
@@ -114,10 +112,10 @@ The pilasters are anchored to the floor and braced at the top by a continuous he
 No. The headrail sits on top of the pilasters and fastens to the walls at each end. No ceiling structure is needed.
 
 ### How tall are overhead braced partitions?
-These are standard heights, and they vary by brand and line. Bobrick's standard overhead-braced pilaster is 83" high; Bradley's PH400 example is 82". Doors and panels are typically 58" high, mounted 12" above the floor. Solid plastic lines often use 55" mounted at 14". Privacy lines run taller and lower: Bradley lists 69" doors and panels at 9" above the floor, and 72" at 6". Your shop drawings set the actual heights.
+These are standard heights, and they vary by brand and line. Overhead-braced pilasters are typically 82" to 83" high. Doors and panels are typically 58" high, mounted 12" above the floor. Solid plastic lines often use 55" mounted at 14". Privacy lines run taller and lower, for example 69" doors and panels at 9" above the floor, or 72" at 6". Your shop drawings set the actual heights.
 
 ### What is an anti-grip headrail?
-It's an aluminum headrail with a profile that's hard to grab or hang from. ASI describes its headrail as anti-grip, and Hadrian says its anti-grip top rail deters boisterous activity.
+It's an aluminum headrail with a profile that's hard to grab or hang from, which helps deter rough use.
 
 ### Can overhead braced partitions go in any material?
 Yes. Manufacturers we carry offer it in powder coated steel, stainless steel, plastic laminate, phenolic and solid plastic (HDPE).
@@ -159,3 +157,4 @@ Yes. Manufacturers we carry offer it in powder coated steel, stainless steel, pl
 - Title changed to include the exact main keyword. H1 changed from "Overhead Braced Partitions" to "Overhead Braced Toilet Partitions".
 - Internal links to add elsewhere: link "overhead braced" from /partitions/powder-coated-steel and /industries/offices body copy; on the schools and public-restrooms industry pages, rename the "Floor Mounted (Overhead Braced)" card to "Overhead Braced".
 - Images wanted: front elevation showing headrail, pilaster, shoe and floor bracket; close-up of an anti-grip headrail profile.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.

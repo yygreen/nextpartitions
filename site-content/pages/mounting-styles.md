@@ -22,16 +22,16 @@ Every bathroom partition is held up one of four ways: from the floor with a head
 :::
 
 ### Overhead braced
-Pilasters (the posts at the front of each stall) are fastened to the floor, and an anodized aluminum anti-grip headrail runs across their tops and ties into the walls. ASI calls it "economical and sturdy" and says it "installs just about anywhere." [Overhead braced partitions →](/mounting-styles/overhead-braced)
+Pilasters (the posts at the front of each stall) are fastened to the floor, and an anodized aluminum anti-grip headrail runs across their tops and ties into the walls. Manufacturers describe it as an economical, sturdy style that installs almost anywhere. [Overhead braced partitions →](/mounting-styles/overhead-braced)
 
 ### Floor mounted (floor anchored)
-Pilasters are bolted into the floor with no headrail. The anchors do all the work, so manufacturers call for a structural concrete floor: Bobrick specifies anchors with at least 2" of penetration into structural concrete at least 3" thick. With nothing above the doors, the restroom looks more open. [Floor mounted partitions →](/mounting-styles/floor-mounted)
+Pilasters are bolted into the floor with no headrail. The anchors do all the work, so manufacturers call for a structural concrete floor, typically with anchors at least 2" deep in concrete at least 3" thick. With nothing above the doors, the restroom looks more open. [Floor mounted partitions →](/mounting-styles/floor-mounted)
 
 ### Ceiling hung
 Pilasters hang from structural steel above the finished ceiling and never touch the floor. Paired with wall-hung toilets, the whole floor is open for cleaning. The building has to supply that steel, and it has to be engineered for the load. [Ceiling hung partitions →](/mounting-styles/ceiling-hung)
 
 ### Floor to ceiling
-Pilasters are anchored into the concrete floor and into structural support at the ceiling. ASI describes the style as "extremely stable and durable," and Hadrian recommends it for high-traffic areas such as schools. [Floor to ceiling partitions →](/mounting-styles/floor-to-ceiling)
+Pilasters are anchored into the concrete floor and into structural support at the ceiling. Manufacturers describe the style as very stable and durable and recommend it for high-traffic areas such as schools. [Floor to ceiling partitions →](/mounting-styles/floor-to-ceiling)
 
 ## Compare mounting styles
 
@@ -40,28 +40,28 @@ Pilasters are anchored into the concrete floor and into structural support at th
 | | Overhead braced | Floor mounted | Ceiling hung | Floor to ceiling |
 |---|---|---|---|---|
 | Held by | Floor anchors + headrail tied to walls | Floor anchors only | Structural steel above the ceiling | Floor anchors + ceiling structure |
-| Floor needed | Floor that accepts anchors | Structural concrete (Bobrick: 2" into 3" min.) | None: nothing touches the floor | Structural concrete |
+| Floor needed | Floor that accepts anchors | Structural concrete (anchors typically 2" into 3" min.) | None: nothing touches the floor | Structural concrete |
 | Ceiling needed | None | None | Steel supports, engineered for the load | Structural members at the ceiling |
-| Pilaster height (Bobrick) | 83" | 69" | 83" for 8' ceilings; up to 10' ceilings | As required, up to 10' ceilings |
+| Pilaster height (typical) | 83" | 69" | 83" for 8' ceilings; up to 10' ceilings | As required, up to 10' ceilings |
 | Materials offered* | All five | All five except, usually, solid plastic (HDPE) | All five; few HDPE lines | Powder coated steel, stainless, phenolic, HDPE |
 | Watch out for | Headrail is an overhead attachment point | Needs wider pilasters and a sound slab | Most structural coordination | Ceiling work at every pilaster |
 
-*Across the manufacturers we carry; any single product line may offer fewer styles. Details and sources are on each style's page.
+*Across the manufacturers we carry; any single product line may offer fewer styles, and heights vary by manufacturer. Details and sources are on each style's page.
 
 ## How to choose
 
 **Start with the building.**
 
-- **No structure above the ceiling, or you don't want ceiling work?** Overhead braced or floor mounted. Bobrick recommends these two when "adequate ceiling support cannot be provided."
+- **No structure above the ceiling, or you don't want ceiling work?** Overhead braced or floor mounted. Manufacturers recommend these two when adequate ceiling support can't be provided.
 - **Floor can't take anchors?** Ceiling hung is the only style with nothing in the floor. It needs engineered steel overhead.
-- **High ceiling or open look?** Floor mounted has no headrail. Hadrian says the "absence of top structure makes them the ideal choice for high ceiling areas."
+- **High ceiling or open look?** Floor mounted has no headrail. With no top structure, it suits high-ceiling areas.
 - **Heavy use or abuse?** Floor to ceiling anchors every pilaster at both ends. Pair it with a tough material such as [phenolic](/partitions/phenolic), [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [stainless steel](/partitions/stainless-steel).
 
-**Then check the material.** Several manufacturers don't recommend ceiling-hung or floor-anchored mounting for solid plastic, according to the New York State OGS master specification. Scranton Products offers its Hiny Hiders HDPE partitions in floor mounted overhead-braced, ceiling hung or floor to ceiling configurations.
+**Then check the material.** Several manufacturers don't recommend ceiling-hung or floor-anchored mounting for solid plastic. Some HDPE lines are offered overhead braced, ceiling hung or floor to ceiling, but not floor anchored alone.
 
 ## Heights and floor clearance
 
-The mounting style changes how tall the pilasters are, not how tall the doors and panels are. Standard doors and panels are 58" high, mounted 12" above the finished floor, in Hadrian's standard series and on our [stall dimensions guide](/guides/bathroom-stall-dimensions). Solid plastic often runs 55" mounted 14" above the floor. Taller, lower-gap privacy versions are available in some lines.
+The mounting style changes how tall the pilasters are, not how tall the doors and panels are. Standard doors and panels are 58" high, mounted 12" above the finished floor, in standard lines and on our [stall dimensions guide](/guides/bathroom-stall-dimensions). Solid plastic often runs 55" mounted 14" above the floor. Taller, lower-gap privacy versions are available in some lines.
 
 If you lower the gap for privacy, check toe clearance in the wheelchair accessible stall. Under 2010 ADA Standards section 604.8.1.4, the front partition and at least one side partition need 9" of toe clearance above the finished floor (12" in children's compartments), with exceptions for larger compartments. See our [ADA compliance guide](/guides/ada-compliance).
 
@@ -73,8 +73,8 @@ Disclaimer: ADA dimensions and accessibility guidance shown here are provided fo
 |---|---|---|
 | [Offices](/industries/offices), [restaurants](/industries/restaurants), [community centers](/industries/community-centers) | Overhead braced | Goes in on most floors with no ceiling work |
 | [Schools](/industries/schools), [public restrooms](/industries/public-restrooms) | Floor to ceiling | Anchored top and bottom for high traffic and abuse |
-| Healthcare | Ceiling hung | The VA's standard spec calls for ceiling-hung partitions at ceilings up to 8' |
-| Behavioral health units | Not overhead braced | The VA bans overhead connecting framing that could be used as an anchor point |
+| Healthcare | Ceiling hung | Healthcare master specs can call for ceiling-hung partitions at ceilings up to 8' |
+| Behavioral health units | Not overhead braced | Specs for these units rule out overhead connecting framing that could be used as an anchor point |
 | High-ceiling or design-led spaces | Floor mounted | No headrail; open look |
 
 ## Ready to price it?
@@ -86,13 +86,13 @@ Send the style, material, stall count and photos of the floor and ceiling. Stand
 ## FAQ
 
 ### What is the most common toilet partition mounting style?
-Overhead braced, meaning floor-anchored pilasters tied together by a headrail, is the general-purpose style. ASI calls it "economical and sturdy" and says it "installs just about anywhere." It needs no ceiling structure and works on floors that accept standard anchors, so it suits most restrooms.
+Overhead braced, meaning floor-anchored pilasters tied together by a headrail, is the general-purpose style. Manufacturers describe it as economical and sturdy and say it installs almost anywhere. It needs no ceiling structure and works on floors that accept standard anchors, so it suits most restrooms.
 
 ### Are there wall mounted toilet partitions?
-Not for full stalls. Every style attaches panels and pilasters to the walls with brackets, but stalls still need support from the floor, the ceiling or both. "Wall-hung" mounting is offered for urinal screens only, for example in Bobrick's DuraLine compact laminate line.
+Not for full stalls. Every style attaches panels and pilasters to the walls with brackets, but stalls still need support from the floor, the ceiling or both. Wall-hung mounting is offered for urinal screens only, for example in some compact laminate lines.
 
 ### Which mounting style is easiest to clean, and which is strongest?
-Ceiling hung is easiest to clean, because nothing touches the floor (ASI, Hadrian). Floor to ceiling is the most stable, with every pilaster anchored at both ends (ASI: "extremely stable and durable").
+Ceiling hung is easiest to clean, because nothing touches the floor. Floor to ceiling is the most stable, with every pilaster anchored at both ends. Manufacturers describe it as very stable and durable.
 
 ### Can I switch mounting styles on an existing restroom?
 Sometimes. Ceiling hung and floor to ceiling need structural members at the ceiling, which aren't supplied with the partitions. Floor mounted needs structural concrete. Have your contractor or engineer confirm the structure first.
@@ -130,3 +130,4 @@ Sometimes. Ceiling hung and floor to ceiling need structural members at the ceil
 - Consistency: /industries/schools and /industries/public-restrooms label the overhead-braced card "Floor Mounted (Overhead Braced)" and also show a separate "Floor Mounted" card. Rename the first card to "Overhead Braced".
 - Consistency: /partitions/solid-plastic-hdpe says "Compatible with all four mounting styles". Scranton's Hiny Hiders lists three (no floor-anchored-only), and the NY OGS spec says several manufacturers don't recommend floor-anchored or ceiling-hung for solid plastic. Worth correcting in the materials batch.
 - Images wanted: one simple line drawing per style (front elevation showing floor, ceiling and what holds the pilaster) for the four cards and the table header.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.
