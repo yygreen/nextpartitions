@@ -21,7 +21,7 @@ Start with the sizes, check the accessibility rules, then lay out the room.
 - [Bathroom Stall Dimensions](/guides/bathroom-stall-dimensions)
 - [Toilet Partition Sizes](/guides/standard-sizes)
 - [Commercial Restroom Layout](/guides/restroom-layout)
-- [ADA Bathroom Compliance Guide](/guides/ada-compliance): Compartment size, door location and swing, grab bars, toilet position and door hardware under the 2010 ADA Standards.
+- [ADA Bathroom Requirements](/guides/ada-compliance): Wheelchair and ambulatory stall sizes, door swing, toe clearance, grab bars and hardware under the 2010 ADA Standards, with a quick self-check.
 
 Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.
 
@@ -93,7 +93,7 @@ The hub itself makes no new dimensional claims. The checks behind the correction
 
 ### Corrections to the four existing guides (fix when they are expanded)
 
-**/guides/ada-compliance**
+**/guides/ada-compliance** (rebuilt 2026-10-30 in guides_ada-compliance.md, which fixes all eight)
 1. Door swing is wrong. The table says doors must swing out unless the compartment is "at least 60" deep beyond the door swing", and the FAQ says "Yes, ADA stall doors must swing outward." 604.8.1.2 says only that the door "shall not swing into the minimum required compartment area" (60" wide by 56" deep with a wall-hung toilet, 59" with a floor-mounted one). An in-swinging door is allowed in a compartment made larger than the minimum. There is no "60 inches beyond the door swing" rule.
 2. Missing door rules from 604.8.1.2: the door must be self-closing; door pulls are required on both sides near the latch; the door opening must be within 4" of the side wall or partition farthest from the toilet (front-partition door) or within 4" of the front partition (side-wall door); 42" clearance is required at a latch-side approach.
 3. Missing toe clearance (604.8.1.4): the front partition and at least one side partition need 9" minimum toe clearance above the floor, 6" deep, unless the compartment is over 62" deep (wall-hung toilet) or 65" deep (floor-mounted), or over 66" wide. This decides how low the partitions in the accessible stall can go, so it matters for partitions most of all.

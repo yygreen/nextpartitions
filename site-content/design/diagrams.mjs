@@ -1780,6 +1780,182 @@ function adaPlan(xr, ys, k, ph) {
   })
 }
 
+// ---------- ADA compliance guide drawings (2026-10-30) ----------
+// Facts: 2010 ADA Standards, access-board.gov/ada and the DOJ PDF (ada.gov/assets/pdfs/2010-design-standards.pdf),
+// checked 2026-10-30: 604.2 (centerline 16"–18", ambulatory 17"–19"), 604.5.1 (side wall bar 42" min long, 12" max
+// from the rear wall, extending 54" min from it), 604.5.2 (rear wall bar 36" min, 12" min one side of the
+// centerline and 24" min the other), 604.8.1.1 (60" wide; 56" deep wall-hung, 59" floor-mounted), 604.8.1.2 (door
+// opening 4" max from the side partition farthest from the toilet; no swing into the minimum area), 604.8.1.4 (toe
+// clearance 9" min high, 6" min deep beyond the compartment-side face, exclusive of partition support members),
+// 604.8.2.1–604.8.2.3 (ambulatory 35"–37" by 60" min, side-wall grab bars both sides), 404.2.3 (32" clear).
+// Grab bars are drawn 1-1/2" off the wall (609.3). Panel heights and door widths are drawn, not dimensioned.
+
+// 11. Wheelchair accessible compartment, seen from above: rear wall on the left, the side wall closest to the toilet
+// at the top, the side partition farthest from the toilet at the bottom, the front partition and door on the right.
+// Orange: the minimum compartment area (tint) and the grab bars (solid). Drawn at the floor-mounted minimum, 59".
+function wcPlan(xr, ys, k, ph) {
+  const wt = ph ? 7 : 12, pt = ph ? 3 : 4, xf = xr + 59 * k, yb = ys + 60 * k, CLy = ys + 17 * k
+  const jt = ys + 22 * k, jb = ys + 56 * k, R = jb - jt, hx = xf + pt
+  let b = rect(xr - wt, ys - wt, wt, 66 * k + wt, { fill: 'HATCH', stroke: 'none' }) + rect(xr - wt, ys - wt, 59 * k + wt + pt + R + 6, wt, { fill: 'HATCH', stroke: 'none' })
+  b += line(xr, ys + 66 * k, xr, ys) + line(xr, ys, hx + R + 6, ys)
+  b += rect(xr, ys, 59 * k, 60 * k, { fill: C.orangeTint, stroke: C.orange, sw: 2 }) // minimum compartment area
+  b += line(xr + 56 * k, ys + 2, xr + 56 * k, yb - 2, { stroke: C.orange, sw: 1.2, dash: '5 5' }) // 56" with a wall-hung toilet
+  // toilet against the rear wall
+  b += rect(xr + 1, CLy - 8 * k, 6 * k, 16 * k, { sw: 1.2, rx: 2 }) + `<ellipse cx="${xr + 17 * k}" cy="${CLy}" rx="${11 * k}" ry="${7.5 * k}" fill="#fff" stroke="${C.ink}" stroke-width="1.2"/>`
+  b += cline(xr - wt - (ph ? 10 : 14), CLy, xr + 31 * k, CLy, { stroke: C.muted, sw: 1 })
+  // grab bars, 1-1/2" off the wall: side wall 12" to 54" from the rear wall; rear wall 12" towards the side wall and
+  // 24" towards the open side of the centerline
+  const gb = Math.max(1.5 * k, 3)
+  b += rect(xr + 12 * k, ys + 1.5 * k, 42 * k, gb, BAR) + rect(xr + 1.5 * k, CLy - 12 * k, gb, 36 * k, BAR)
+  // side partition, front partition, door open 90° (outswing) hinged at the jamb near the side partition
+  b += rect(xr, yb, 59 * k + pt, pt) + rect(xf, ys, pt, jt - ys) + rect(xf, jb, pt, yb - jb + pt)
+  b += `<path d="M${hx} ${jt} A${R} ${R} 0 0 1 ${hx + R} ${jb}" fill="none" stroke="${C.muted}" stroke-width="1.2" stroke-dasharray="5 5"/>`
+  b += rect(hx, jb - pt, R, pt, { sw: 1.5 })
+  // dimensions, left: centerline, rear bar, width (rotated labels on a phone)
+  const lane = ph ? 22 : 84, x3 = xr - wt - (ph ? 10 : 14), x2 = x3 - lane, x1 = x2 - lane
+  const vrot = (x, y1, y2, t) => vdim(x, y1, y2, '', 'left') + text(x - 7, (y1 + y2) / 2, t, { size: DIM, fill: C.muted, anchor: 'middle', weight: 600, rotate: -90 })
+  // phone: the centerline span is too short for a turned label, so it sits level just above the dimension
+  b += ph ? vdim(x3, ys, CLy, '', 'left') + text(x3 + 3, ys - 6, '16"–18"', { size: DIM, fill: C.muted, anchor: 'end', weight: 600 }) + vrot(x2, CLy - 12 * k, CLy + 24 * k, '36" min') + vrot(x1, ys, yb, '60" min')
+    : vdim(x3, ys, CLy, '16"–18"', 'left') + vdim(x2, CLy - 12 * k, CLy + 24 * k, '36" min', 'left') + vdim(x1, ys, yb, '60" min', 'left')
+  // top: side wall grab bar
+  const ext = (x, y1, y2) => line(x, y1, x, y2, { stroke: C.muted, sw: 1, dash: '3 3' })
+  const t1 = ys - wt - (ph ? 12 : 16), t2 = t1 - (ph ? 24 : 30)
+  b += ext(xr + 12 * k, ys + 1.5 * k, t1 - 5) + ext(xr + 54 * k, ys + 1.5 * k, t2 - 5)
+  b += (ph ? '' : hdim(t1, xr, xr + 12 * k, '12" max')) + hdim(t1, xr + 12 * k, xr + 54 * k, '42" min') + hdim(t2, xr, xr + 54 * k, '54" min')
+  // bottom: depth
+  const d1 = yb + pt + (ph ? 22 : 30), d2 = d1 + (ph ? 24 : 30)
+  b += ext(xr + 56 * k, yb + pt, d1 + 5) + ext(xf, yb + pt, d2 + 5)
+  b += hdim(d1, xr, xr + 56 * k, ph ? '56" min' : '56" min, wall-hung toilet') + hdim(d2, xr, xf, ph ? '59" min' : '59" min, floor-mounted toilet')
+  // right: door clear width and its distance from the side partition
+  const xd = hx + R + (ph ? 6 : 16)
+  b += vdim(xd, jt, jb - pt, '32" min') + vdim(xd, jb, yb, '4" max')
+  b += line(hx + R, jb, xd + 5, jb, { stroke: C.muted, sw: 1, dash: '3 3' }) + line(xf + pt, yb, xd + 5, yb, { stroke: C.muted, sw: 1, dash: '3 3' }) + line(xf + pt, jt, xd + 5, jt, { stroke: C.muted, sw: 1, dash: '3 3' })
+  // callouts, read in the key's order
+  b += disc(1, xr + 42 * k, ys + 42 * k) + callout(2, xr + 38 * k - (ph ? 2 * k : 0), CLy + (ph ? 6 * k : 0), [xr + 29 * k, CLy])
+  b += callout(3, xr + 48 * k, ys + 9 * k, [xr + 48 * k, ys + 1.5 * k + gb])
+  b += callout(4, xr + 16 * k, ys + 37 * k, [xr + 1.5 * k + gb, ys + 37 * k])
+  b += callout(5, hx + 20 * k, jb - 14 * k, [hx + 20 * k, jb - pt]) + callout(6, hx + R - (ph ? 2 : 8), yb + (ph ? 8 : 4), [xf + pt / 2, jb + 2 * k])
+  return { b, bottom: d2 + 8 }
+}
+{
+  const r = wcPlan(296, 104, 3.6, false)
+  made.push(svg('ada-wheelchair-stall', 780, r.bottom + 30, 'Wheelchair accessible toilet compartment with grab bars, plan view',
+    'A wheelchair accessible compartment seen from above, drawn at the minimum size: 60 inches wide minimum, and 59 inches deep minimum with a floor-mounted toilet or 56 inches with a wall-hung toilet. The toilet centerline is 16 to 18 inches from the side wall. The side wall grab bar is 42 inches long minimum, starts 12 inches maximum from the rear wall and reaches 54 inches minimum from it. The rear wall grab bar is 36 inches long minimum. The door in the front partition gives a 32-inch minimum clear opening, sits within 4 inches of the side partition farthest from the toilet and swings out, clear of the minimum compartment area. The minimum area and the grab bars are shown in orange.',
+    r.b + note(24, r.bottom + 16, 'Seen from above.', 'start', 13)))
+  withPhone(1.8, () => {
+    const m = wcPlan(92, 70, 1.8, true)
+    phone('ada-wheelchair-stall-m', m.bottom + 2, m.b)
+  })
+}
+
+// 12. Toe clearance (604.8.1.4): the front partition seen from the front, the side partition seen from inside the
+// compartment, and a section through either one. Orange: the toe space, 9" high and 6" deep beyond the
+// compartment-side face. Pilasters and shoes (support members) may stand in it. Panels drawn 9" off the floor.
+function toeFront(x0, floor, s, ph) {
+  const Y = (i) => floor - i * s, wt = ph ? 8 : 12, slab = ph ? 8 : 12, X = (i) => x0 + wt + i * s
+  const TOE = { fill: C.orangeTint, stroke: C.orange, sw: 1.5, dash: '5 4' }
+  let b = rect(x0, Y(86), wt, 86 * s, { fill: 'HATCH', stroke: 'none' }) + line(x0 + wt, Y(86), x0 + wt, floor)
+  b += rect(x0 - 4, floor, wt + 64 * s + 8, slab, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 4, floor, X(64) + 4, floor)
+  // panel 1"–19", pilaster 19"–23", door 23.5"–56.5", pilaster 57"–61"; the run continues to the next stall
+  b += rect(X(0), Y(9), 64 * s, 9 * s, TOE)
+  b += rect(X(1), Y(67), 18 * s, 58 * s) + rect(X(23.5), Y(67), 33 * s, 58 * s)
+  for (const p of [19, 57]) b += rect(X(p), Y(82), 4 * s, 82 * s) + rect(X(p) - 1.5, Y(4), 4 * s + 3, 4 * s, { fill: C.ink, stroke: C.ink, sw: 1 })
+  b += rect(X(52.5), Y(41), 3 * s, 1.5 * s, { fill: C.ink, stroke: 'none' }) // latch
+  b += vbrk(X(64), Y(82), Y(4))
+  b += vdim(X(64) + (ph ? 10 : 14), Y(9), Y(0), '9" min')
+  b += callout(1, X(38), floor + slab + (ph ? 16 : 22), [X(38), Y(4.5)]) + callout(2, X(13), Y(22), [X(19) - 1, Y(3)])
+  return { b, mid: X(30), right: X(64) + 70 }
+}
+function toeSide(x0, floor, s, ph) {
+  const Y = (i) => floor - i * s, wt = ph ? 8 : 12, slab = ph ? 8 : 12, X = (i) => x0 + wt + i * s
+  const TOE = { fill: C.orangeTint, stroke: C.orange, sw: 1.5, dash: '5 4' }
+  let b = rect(x0, Y(86), wt, 86 * s, { fill: 'HATCH', stroke: 'none' }) + line(x0 + wt, Y(86), x0 + wt, floor)
+  b += rect(x0 - 4, floor, wt + 61 * s + 8, slab, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 4, floor, X(61) + 4, floor)
+  // rear wall on the left, the panel, the front partition's pilaster seen edge on at the right
+  b += rect(X(0), Y(9), 59 * s, 9 * s, TOE)
+  b += rect(X(1), Y(67), 56.5 * s, 58 * s)
+  b += rect(X(58), Y(82), 1.5 * s, 82 * s) + rect(X(58) - 1.5, Y(4), 1.5 * s + 3, 4 * s, { fill: C.ink, stroke: C.ink, sw: 1 })
+  b += vdim(X(59.5) + (ph ? 10 : 14), Y(9), Y(0), '9" min')
+  b += callout(3, X(30), floor + slab + (ph ? 16 : 22), [X(30), Y(4.5)])
+  return { b, mid: X(30), right: X(59.5) + 70 }
+}
+function toeSection(x0, floor, s, ph) {
+  const Y = (i) => floor - i * s, slab = ph ? 8 : 12, X = (i) => x0 + i * s, face = 14 // compartment-side face, inches from x0
+  let b = rect(x0 - 4, floor, 30 * s + 8, slab, { fill: 'HATCH', stroke: 'none' }) + line(x0 - 4, floor, X(30) + 4, floor)
+  b += rect(X(face), Y(9), 6 * s, 9 * s, { fill: C.orangeTint, stroke: C.orange, sw: 2 })
+  b += rect(X(face), Y(36), 1 * s, 27 * s, { fill: C.ink, stroke: C.ink, sw: 1 }) // the panel, cut through
+  b += hbrk(X(face) - 6, X(face + 1) + 6, Y(36))
+  b += vdim(X(face) - (ph ? 8 : 10), Y(9), Y(0), '9" min', 'left')
+  // the 6" is narrower than its label: the label sits to the right of the dimension
+  const yd = floor + slab + (ph ? 16 : 20)
+  b += line(X(face + 6), floor, X(face + 6), yd + 5, { stroke: C.muted, sw: 1, dash: '3 3' }) + line(X(face), floor, X(face), yd + 5, { stroke: C.muted, sw: 1, dash: '3 3' })
+  b += hdim(yd, X(face), X(face + 6), '').replace(/<text[\s\S]*?<\/text>/, '') + val(X(face + 6) + 8, yd + 5, '6" min', 'start')
+  b += note(X(face) - 8, Y(24), 'inside', 'end', ph ? 12 : 13) + note(X(face + 1) + 8, Y(24), 'outside', 'start', ph ? 12 : 13)
+  b += callout(4, X(face + 3), Y(16), [X(face + 3), Y(6)])
+  return { b, mid: X(face), bottom: floor + slab + (ph ? 22 : 28) }
+}
+{
+  const s = 2.3, floor = 24 + 86 * s
+  const a = toeFront(64, floor, s, false), c = toeSide(322, floor, s, false), d = toeSection(600, floor, 4.4, false)
+  const cy = d.bottom + 26
+  made.push(svg('ada-toe-clearance', 780, cy + 12, 'Toe clearance under the partitions of a wheelchair accessible compartment',
+    'Three views of a wheelchair accessible compartment. The front partition seen from the front, and the side partition seen from inside the compartment: the doors and panels stop at least 9 inches above the floor, so feet and wheelchair footrests can pass under them. The toe space is shown in orange; pilasters and their shoes may stand in it. A section through either partition shows the toe space 9 inches high minimum and 6 inches deep minimum beyond the compartment-side face of the partition.',
+    a.b + c.b + d.b + note(a.mid, cy, 'Front partition, seen from the front', 'middle', 13) + note(c.mid, cy, 'Side partition, seen from inside', 'middle', 13) + note(d.mid, cy, 'Section through a partition', 'middle', 13)))
+  withPhone(1.5, () => {
+    const f = 14 + 86 * 1.5
+    phone('ada-toe-clearance-m1', f + 8 + 34, toeFront(8, f, 1.5, true).b + toeSide(186, f, 1.5, true).b)
+    const f2 = 12 + 36 * 3.6
+    phone('ada-toe-clearance-m2', toeSection(130, f2, 3.6, true).bottom + 10, toeSection(130, f2, 3.6, true).b)
+  })
+}
+
+// 13. Ambulatory accessible compartment, seen from above: rear wall on the left, side partitions top and bottom,
+// front partition and door on the right. Drawn 36" wide (the range is 35"–37") and 60" deep, toilet centered.
+// Orange: the minimum area (tint) and the grab bars on both sides (solid).
+function ambPlan(xr, ys, k, ph) {
+  const wt = ph ? 7 : 12, pt = ph ? 3 : 4, xf = xr + 60 * k, yb = ys + 36 * k, CLy = ys + 18 * k
+  const jt = ys + 2 * k, jb = ys + 34 * k, R = jb - jt, hx = xf + pt
+  let b = rect(xr - wt, ys - pt - 6, wt, 36 * k + 2 * pt + 12, { fill: 'HATCH', stroke: 'none' }) + line(xr, ys - pt - 6, xr, yb + pt + 6)
+  b += rect(xr, ys, 60 * k, 36 * k, { fill: C.orangeTint, stroke: C.orange, sw: 2 }) // minimum area
+  b += rect(xr, ys - pt, 60 * k + pt, pt) + rect(xr, yb, 60 * k + pt, pt) // side partitions
+  b += rect(xf, ys, pt, jt - ys) + rect(xf, jb, pt, yb - jb) // front partition stubs
+  b += rect(xr + 1, CLy - 8 * k, 6 * k, 16 * k, { sw: 1.2, rx: 2 }) + `<ellipse cx="${xr + 17 * k}" cy="${CLy}" rx="${11 * k}" ry="${7.5 * k}" fill="#fff" stroke="${C.ink}" stroke-width="1.2"/>`
+  b += cline(xr - wt - (ph ? 10 : 14), CLy, xr + 31 * k, CLy, { stroke: C.muted, sw: 1 })
+  const gb = Math.max(1.5 * k, 3)
+  b += rect(xr + 12 * k, ys + 1.5 * k, 42 * k, gb, BAR) + rect(xr + 12 * k, yb - 1.5 * k - gb, 42 * k, gb, BAR)
+  // door open 90° (outswing), hinged at the bottom jamb
+  b += `<path d="M${hx} ${jt} A${R} ${R} 0 0 1 ${hx + R} ${jb}" fill="none" stroke="${C.muted}" stroke-width="1.2" stroke-dasharray="5 5"/>`
+  b += rect(hx, jb - pt, R, pt, { sw: 1.5 })
+  // dimensions
+  const lane = ph ? 22 : 84, x2 = xr - wt - (ph ? 10 : 14), x1 = x2 - lane
+  const vrot = (x, y1, y2, t) => vdim(x, y1, y2, '', 'left') + text(x - 7, (y1 + y2) / 2, t, { size: DIM, fill: C.muted, anchor: 'middle', weight: 600, rotate: -90 })
+  b += ph ? vdim(x2, ys, CLy, '', 'left') + text(x2 + 3, ys - 6, '17"–19"', { size: DIM, fill: C.muted, anchor: 'end', weight: 600 }) + vrot(x1, ys, yb, '35"–37"') : vdim(x2, ys, CLy, '17"–19"', 'left') + vdim(x1, ys, yb, '35"–37"', 'left')
+  const ext = (x, y1, y2) => line(x, y1, x, y2, { stroke: C.muted, sw: 1, dash: '3 3' })
+  const t1 = ys - pt - (ph ? 12 : 16), t2 = t1 - (ph ? 24 : 30)
+  b += ext(xr + 12 * k, ys + 1.5 * k, t1 - 5) + ext(xr + 54 * k, ys + 1.5 * k, t2 - 5)
+  b += (ph ? '' : hdim(t1, xr, xr + 12 * k, '12" max')) + hdim(t1, xr + 12 * k, xr + 54 * k, '42" min') + hdim(t2, xr, xr + 54 * k, '54" min')
+  const d1 = yb + pt + (ph ? 22 : 30)
+  b += ext(xf, yb + pt, d1 + 5) + hdim(d1, xr, xf, '60" min')
+  const xd = hx + R + (ph ? 6 : 16)
+  b += vdim(xd, jt, jb - pt, '32" min') + line(hx + R, jb, xd + 5, jb, { stroke: C.muted, sw: 1, dash: '3 3' }) + line(xf + pt, jt, xd + 5, jt, { stroke: C.muted, sw: 1, dash: '3 3' })
+  // phone: the compartment is small, so the discs line up along the centerline and the grab bar discs sit near the front
+  if (ph) b += callout(2, xr + 34 * k, CLy, [xr + 28.5 * k, CLy]) + disc(1, xr + 46 * k, CLy) + callout(3, xr + 56 * k, ys + 8 * k, [xr + 52 * k, ys + 1.5 * k + gb]) + callout(4, xr + 56 * k, yb - 8 * k, [xr + 52 * k, yb - 1.5 * k - gb])
+  else b += disc(1, xr + 42 * k, CLy) + callout(2, xr + 34 * k, ys + 11 * k, [xr + 29 * k, CLy])
+    + callout(3, xr + 50 * k, ys + 9 * k, [xr + 50 * k, ys + 1.5 * k + gb]) + callout(4, xr + 50 * k, yb - 9 * k, [xr + 50 * k, yb - 1.5 * k - gb])
+  b += callout(5, hx + R * 0.55, jb + (ph ? 16 : 22), [hx + R * 0.55, jb])
+  return { b, bottom: d1 + 8 }
+}
+{
+  const r = ambPlan(262, 100, 3.6, false)
+  made.push(svg('ada-ambulatory-stall', 780, r.bottom + 30, 'Ambulatory accessible toilet compartment, plan view',
+    'An ambulatory accessible compartment seen from above: 35 to 37 inches wide and 60 inches deep minimum, with the toilet centerline 17 to 19 inches from the side wall or partition. A side-wall grab bar 42 inches long minimum is on both sides, starting 12 inches maximum from the rear wall and reaching 54 inches minimum from it. The door gives a 32-inch minimum clear opening and swings out, clear of the minimum compartment area. The minimum area and the grab bars are shown in orange.',
+    r.b + note(24, r.bottom + 16, 'Seen from above.', 'start', 13)))
+  withPhone(2.2, () => {
+    const m = ambPlan(70, 66, 2.2, true)
+    phone('ada-ambulatory-stall-m', m.bottom + 2, m.b)
+  })
+}
+
 // Sheets: the plan and front views (above) also get phone variants; the side view and details are 400 wide and
 // scale to the column as they are.
 console.log(`${phoneMade.length} phone variants: ${phoneMade.join(', ')}`)

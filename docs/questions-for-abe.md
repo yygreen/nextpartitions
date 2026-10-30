@@ -67,6 +67,17 @@ Short answers are fine: a sentence, a voice note or a quick call. Your answers g
 **Photos**
 32. Job photos you have the rights to use, especially straight-on shots of a whole restroom, a hinge, a latch and a ceiling-hung install. Real installs beat any drawing.
 
+**ADA guide: data we'd like** (/guides/ada-compliance, "Mistakes we catch before quoting")
+37. What share of your orders include an ADA (wheelchair accessible) stall, and how many per order on average? What share include an ambulatory stall?
+38. The top 5 drawing or measurement mistakes your team catches before quoting an accessible stall.
+39. The typical price difference between an ADA stall and a standard stall (a range is enough).
+40. Any jobs that failed an accessibility inspection, and why.
+41. The ADA questions customers ask you most.
+42. One or two photos of a finished ADA stall from a job, if you have permission to use them.
+43. A short quote for the page: the one ADA thing buyers get wrong.
+
+If you can't share percentages for 37, an export of orders by stall type is enough; we'll work out the figures.
+
 ## Part 3: one quote per page (for the "expert advice" boxes)
 
 Each rebuilt page has a branded box for a short quote from you: two to four sentences, in your own words, from real jobs. Answer as many as you like; a page without an answer simply doesn't show the box. Tell us the name and role to print under each quote (yours, or someone on your team).
@@ -75,6 +86,7 @@ Each rebuilt page has a branded box for a short quote from you: two to four sent
 |---|---|
 | `/blog/what-are-bathroom-partitions-made-of` | Tell us about a restroom where the material was wrong for the building. What failed, how soon, and what should have gone in instead? |
 | `/blog/why-do-bathroom-stalls-have-gaps` | When a buyer asks for no-gap stalls, what's the first question you ask back, and why? |
+| `/guides/ada-compliance` | What's the one ADA thing buyers get wrong on their partition order, and how do you catch it before you quote? |
 | `/guides/bathroom-stall-dimensions` | Tell us about a job where the stalls didn't fit the room as drawn. What was off, by how much, and how was it fixed? |
 | `/guides/how-to-install-toilet-partitions` | When an installation goes badly, what was usually missing before anyone picked up a drill: the wall backing, the floor, the drawings, or something else? |
 | `/guides/installation-instructions` | Which step in the manufacturers' instructions do installers skip most, and what goes wrong later because of it? |
