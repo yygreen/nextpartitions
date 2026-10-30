@@ -18,6 +18,7 @@ Practical articles and guides on commercial bathroom partitions for facility man
 
 Newest first. Each post's category follows its link.
 
+- [Ceiling Hung vs Floor Mounted vs Floor-to-Ceiling: Choosing the Right Mounting Style](/blog/ceiling-hung-vs-floor-mounted-vs-floor-to-ceiling) · Mounting styles
 - [What Are Bathroom Partitions Made Of?](/blog/what-are-bathroom-partitions-made-of) · Materials
 - [Why Do Bathroom Stalls Have Gaps? (And How to Eliminate Them)](/blog/why-do-bathroom-stalls-have-gaps) · Privacy
 
