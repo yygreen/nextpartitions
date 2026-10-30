@@ -180,7 +180,7 @@ const HERO_FALLBACK = { '/': 'mounting-styles-compare', '/about': 'mounting-styl
 const RENDERS = '../design/renders/'
 const renderSrc = (name) => `data:image/jpeg;base64,${readFileSync(`${RENDERS}${name}.jpg`).toString('base64')}`
 const inlineRenders = (html) => html.replace(/src="\/images\/renders\/([a-z0-9-]+)\.jpg"/g, (_, n) => `src="${renderSrc(n)}"`)
-const HERO_RENDER = { '/mounting-styles/overhead-braced': 'overhead-braced-hero', '/mounting-styles/floor-mounted': 'floor-mounted-hero', '/mounting-styles/ceiling-hung': 'ceiling-hung-hero', '/mounting-styles/floor-to-ceiling': 'floor-to-ceiling-hero' }
+const HERO_RENDER = { '/partitions': 'overhead-braced-hero', '/partitions/powder-coated-steel': 'overhead-braced-hero-powdercoat', '/partitions/plastic-laminate': 'overhead-braced-hero-laminate', '/partitions/phenolic': 'overhead-braced-hero-phenolic', '/partitions/solid-plastic-hdpe': 'overhead-braced-hero-hdpe', '/partitions/stainless-steel': 'overhead-braced-hero-stainless', '/mounting-styles/overhead-braced': 'overhead-braced-hero', '/mounting-styles/floor-mounted': 'floor-mounted-hero', '/mounting-styles/ceiling-hung': 'ceiling-hung-hero', '/mounting-styles/floor-to-ceiling': 'floor-to-ceiling-hero' }
 function heroArt(raw, url) {
   if (HERO_RENDER[url]) return `<figure class="np-hero-photo"><img src="${renderSrc(HERO_RENDER[url])}" alt="" width="2400" height="1500"></figure>`
   const m = raw.match(/\(\/images\/diagrams\/([a-z0-9-]+)\.svg\)/)

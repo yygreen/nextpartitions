@@ -10,6 +10,25 @@ export const FINISHES = {
   cream: { color: '#e6dcb6', roughness: 0.42, clearcoat: 0.3, clearcoatRoughness: 0.32 },
   bluegrey: { color: '#7d8a97', roughness: 0.42, clearcoat: 0.3, clearcoatRoughness: 0.32 },
   stainless: { stainless: true },
+  // material pages: a typical look for each material (colors are examples; every brand offers many)
+  powdercoat: { color: '#8e3b36', roughness: 0.5, clearcoat: 0.15, clearcoatRoughness: 0.5 },   // satin powder coat, deep red
+  laminate: { color: '#ffffff', roughness: 0.5, clearcoat: 0.2, clearcoatRoughness: 0.4, wood: true }, // woodgrain HPL
+  phenolic: { color: '#5b6067', roughness: 0.36, clearcoat: 0.35, clearcoatRoughness: 0.3 },     // dense, low sheen
+  hdpe: { color: '#3f6f9f', roughness: 0.72, clearcoat: 0, clearcoatRoughness: 1 },              // matte, color-through
+}
+// a light oak woodgrain for the plastic laminate look: long grain lines down the panel, with a little figure
+function woodgrain() {
+  return canvasTex(512, 1024, (g, w, h) => {
+    g.fillStyle = '#c9a77c'; g.fillRect(0, 0, w, h)
+    for (let i = 0; i < 260; i++) {
+      const x = rnd() * w, a = 0.05 + rnd() * 0.12, dark = rnd() > 0.35
+      g.strokeStyle = dark ? `rgba(120,80,45,${a})` : `rgba(240,215,175,${a})`
+      g.lineWidth = 0.6 + rnd() * 2.4
+      g.beginPath(); g.moveTo(x, 0)
+      for (let y = 0; y <= h; y += 32) g.lineTo(x + Math.sin(y / (90 + rnd() * 60) + i) * (2 + rnd() * 5), y)
+      g.stroke()
+    }
+  })
 }
 
 // front: floor depth in front of the pilasters (24k - depth, so tile joints meet the back wall); out: restroom width
@@ -108,7 +127,7 @@ function materials(finish) {
   const stainless = new THREE.MeshPhysicalMaterial({ color: '#d6d9dd', metalness: 1, roughness: 0.28, roughnessMap: brush, envMapIntensity: 1.6 })
   const panel = f.stainless
     ? new THREE.MeshPhysicalMaterial({ color: '#c3c6ca', metalness: 1, roughness: 0.34, roughnessMap: brush, envMapIntensity: 1.15 })
-    : new THREE.MeshPhysicalMaterial({ color: f.color, roughness: f.roughness, clearcoat: f.clearcoat, clearcoatRoughness: f.clearcoatRoughness, envMapIntensity: 0.9 })
+    : new THREE.MeshPhysicalMaterial({ color: f.color, map: f.wood ? woodgrain() : null, roughness: f.roughness, clearcoat: f.clearcoat, clearcoatRoughness: f.clearcoatRoughness, envMapIntensity: 0.9 })
   return {
     panel,
     stainless,
