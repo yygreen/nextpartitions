@@ -10,7 +10,7 @@ words: 1,200
 
 # Stainless Steel Bathroom Partitions
 
-Stainless steel bathroom partitions use the same sandwich as powder coated steel, with a stainless skin: stainless faces over a honeycomb core. Bobrick lists corrosion resistance, cleanliness, design appeal and a Class A rating as stainless steel's strengths. This page covers how stainless partitions are built, the published fire class, how warranties differ by brand, and the pool-area caution the current page got wrong.
+Stainless steel bathroom partitions use the same sandwich as powder coated steel, with a stainless skin: stainless faces over a honeycomb core. Their strengths are corrosion resistance, cleanliness, design appeal and a Class A rating. This page covers how stainless partitions are built, the published fire class, how warranties differ by brand, and the pool-area caution the current page got wrong.
 
 [Configure & Request a Quote](/get-a-quote?material=stainless-steel). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
 
@@ -18,11 +18,11 @@ Stainless steel bathroom partitions use the same sandwich as powder coated steel
 
 ## How stainless steel partitions are built
 
-ASI builds its stainless partitions from Type 304 stainless steel over a honeycomb core, and says a textured finish adds resistance to vandalism. Bradley offers a satin brushed finish and a 5WL textured pattern on its stainless line, made with 40% pre-consumer and 25% post-consumer recycled stainless, with door and panel heights of 72" (6" above the floor) or 69" (9" above the floor) for accessible stalls. ASI sizes its anti-grip headrail for stainless at 1-1/4", which matches a 1-1/4" pilaster.
+The faces are Type 304 stainless steel over a honeycomb core. Finishes range from satin brushed to textured patterns, and a textured finish adds resistance to vandalism. Some lines use recycled stainless. For accessible stalls, some lines offer door and panel heights of 72" (6" above the floor) or 69" (9" above the floor).
 
-Metpar publishes the dimensions: 1" thick doors and panels, 1-1/4" pilasters, and 22-gauge stainless face sheets on doors and panels (20 gauge on pilasters), over a honeycomb core it describes as paper constructed. ASI's catalog, Bradley's brochure and Bradley's and Hadrian's installation guides don't state door thickness or face gauge.
+Doors and panels are typically 1" thick, with 1-1/4" pilasters. Face sheet gauge varies by line; one published specification calls for 22 gauge on doors and panels and 20 gauge on pilasters, over a paper honeycomb core. Not every manufacturer publishes door thickness or face gauge.
 
-The edge is built, not cut. Metpar closes every edge of doors, panels and pilasters with a 20-gauge stainless interlocking molding and finishes the corners with preformed stainless reinforcements, welded internally. ASI welds the corners of panels, pilasters and doors to each other and to the adjacent face sheets. Bradley's Permaseal edge locks the two facing sheets together around the perimeter, with the finish wrapping around the edges and corners either welded smooth or joined with a corner clip.
+The edge is built, not cut. A stainless interlocking molding (20 gauge on some lines) closes every edge of doors, panels and pilasters, or the two face sheets lock together around the perimeter with the finish wrapping around the edges. Corners are welded, welded smooth, joined with a corner clip, or reinforced with preformed stainless pieces welded internally.
 
 ![Cross-section of a stainless steel partition door edge: honeycomb core, stainless faces, edge](/images/diagrams/material-section-stainless-steel.svg)
 
@@ -30,40 +30,39 @@ The edge is built, not cut. Metpar closes every edge of doors, panels and pilast
 2. **Faces:** Type 304 stainless steel, in a brushed or textured finish.
 3. **Edge:** a formed edge around the perimeter, where the stainless faces are locked or welded together around the core.
 
-Hardware: ASI uses Type 304 stainless for its leveling shoes. Bobrick's hardware is 18-8 Type-304 stainless with a satin finish, and its pilaster shoe is 4" high.
+Hardware: leveling shoes and hardware are typically 18-8 Type-304 stainless with a satin finish, and pilaster shoes are often 4" high.
 
 ## Fire rating
 
-Bobrick lists a Class A rating among stainless steel's strengths. Class A means a flame spread index of 25 or less under ASTM E84. ASI's material selection guide also lists Class A for its stainless steel. We found no stated class for Bradley (brochure, data sheet and installation guides), Metpar or Hadrian stainless. Ratings are published per product line, so ask for the test data for the brand you specify. Stainless is not covered by the NFPA 286 rule that applies to [HDPE](/partitions/solid-plastic-hdpe).
+Stainless steel generally carries a Class A rating. Class A means a flame spread index of 25 or less under ASTM E84. Where manufacturers state a class for their stainless lines, it is Class A, but several publish no class. Ratings are published per product line, so ask for the test data for the brand you specify. Stainless is not covered by the NFPA 286 rule that applies to [HDPE](/partitions/solid-plastic-hdpe).
 
 ## Warranty differs by brand
 
-There is no single stainless steel warranty. The lengths below come from manufacturer documents; the full coverage text is only partly available.
+There is no single stainless steel warranty. Published terms run from 5 years to 15 years. The current page's "5 Years" is the low end of that range.
 
-- **ASI Global:** 5 years on stainless steel, per the ASI catalog, which refers to the full warranty on ASI's website. We couldn't open that text, so we can't state ASI's coverage terms. This is where the current page's "5 Years" appears to come from.
-- **Bradley:** 15 years "against rust-out" on its stainless line (listed with the Permaseal edge), 5 years on chrome plated Zamac hardware and a lifetime warranty on stainless steel hardware (Bradley partitions brochure, 2025).
-- **Metpar:** 6 years for stainless steel, from its master specification, which describes the warranty as a manufacturer's standard form "to repair or replace toilet compartment components (panels, doors, pilasters, and hardware) against defects in material and workmanship". The specification is a template, so confirm the figure against Metpar's warranty document.
-- **Ammco (All American Metal):** 10 years against all defects in workmanship and construction under normal wear and use. Defective material is replaced free of charge. The warranty is for material only: no credit or allowance for labor or any expense of replacing covered parts. It applies when the partitions are properly maintained, and installation errors, vandalism or improper use, care or maintenance void it.
-- **Hadrian:** no published figure found.
+- **Coverage.** Typically repair or replacement of panels, doors, pilasters and sometimes hardware against defects in material and workmanship. The longest terms are against rust-out.
+- **Remedy.** Some warranties cover material only, with no credit for labor or the cost of replacing parts.
+- **Conditions.** Coverage usually depends on proper maintenance. Installation errors, vandalism or improper use or care can void it.
+- **Hardware.** Often carries its own term: from 5 years on chrome plated zamac hardware up to lifetime on stainless steel hardware.
 
 Your quote will name the brand and the warranty length for that line, and you should read the warranty text before you specify.
 
 ## Moisture, vandal resistance and cleaning
 
-- **Corrosion, with a limit.** Stainless resists corrosion, but it is not rust-proof everywhere. The Australian Stainless Steel Development Association (ASSDA) reports that Type 304 and 316 rods, bolts and wires under tension cracked in the unwashed, humid air above indoor chlorinated pools (stress-corrosion cracking), and says the problem hasn't been found in washed components such as doors and rails. A partition is mostly washed sheet, but ceiling-hung stalls hang from stressed rods and bolts. For a pool hall, choose [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe), or ask the manufacturer which grade it recommends for the hangers and fasteners and how often they should be washed. Elsewhere, with regular washdowns, stainless is a fit. ASI rates the wet-area suitability of its stainless steel Low.
-- **Dents and scratches.** Bobrick notes stainless can still dent and scratch, and in its comparison it is the most expensive of the materials. Textured finishes add vandal resistance (ASI).
-- **Cleaning.** Ammco's care sheet says to wipe with warm water and a damp cloth, in the direction of the polished grain, and dry with a soft cloth. A mild detergent handles tougher stains, and a commercial stainless steel cleaner handles stubborn marks. No steel wool or scouring pads (traces can leave rust stains), and keep acid, alkali and bleach-based bathroom cleaners off it, since splashes can leave brown spots. Follow your manufacturer's care instructions for other brands.
+- **Corrosion, with a limit.** Stainless resists corrosion, but it is not rust-proof everywhere. Type 304 and 316 rods, bolts and wires under tension have cracked in the unwashed, humid air above indoor chlorinated pools (stress-corrosion cracking). The problem hasn't been found in washed components such as doors and rails. A partition is mostly washed sheet, but ceiling-hung stalls hang from stressed rods and bolts. For a pool hall, choose [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe), or ask the manufacturer which grade it recommends for the hangers and fasteners and how often they should be washed. Elsewhere, with regular washdowns, stainless is a fit. Material guides rate stainless steel's suitability for wet areas as low.
+- **Dents and scratches.** Stainless can still dent and scratch, and it is the most expensive of the common materials. Textured finishes add vandal resistance.
+- **Cleaning.** A typical care routine: wipe with warm water and a damp cloth, in the direction of the polished grain, and dry with a soft cloth. A mild detergent handles tougher stains, and a commercial stainless steel cleaner handles stubborn marks. No steel wool or scouring pads (traces can leave rust stains), and keep acid, alkali and bleach-based bathroom cleaners off it, since splashes can leave brown spots. Follow your manufacturer's care instructions.
 
 ## Where stainless fits
 
 Airports, hospitals and upscale offices, where the restroom is part of the building's finish. It is offered in all four mounting styles:
 
-| Mounting style | Stainless offered (source) |
+| Mounting style | Stainless offered |
 |---|---|
-| [Overhead braced](/mounting-styles/overhead-braced) | ASI; Bradley Series 400 in 69" and 72" heights (installation guide); Hadrian headrail braced (Standard and Elite series manuals) |
-| [Floor mounted](/mounting-styles/floor-mounted) | ASI floor anchored |
-| [Ceiling hung](/mounting-styles/ceiling-hung) | ASI; Bradley; Hadrian |
-| [Floor to ceiling](/mounting-styles/floor-to-ceiling) | ASI; Hadrian |
+| [Overhead braced](/mounting-styles/overhead-braced) | Offered by several manufacturers; some lines in 69" and 72" heights |
+| [Floor mounted](/mounting-styles/floor-mounted) | Offered floor anchored on some lines |
+| [Ceiling hung](/mounting-styles/ceiling-hung) | Offered by several manufacturers |
+| [Floor to ceiling](/mounting-styles/floor-to-ceiling) | Offered by several manufacturers |
 
 ## What comes with a quote
 
@@ -72,19 +71,19 @@ Our quotes cover panels, doors, pilasters, headrails, hinges, slide latches, kee
 ## FAQ
 
 ### What are stainless steel bathroom partitions made of?
-Type 304 stainless steel faces over a honeycomb core (ASI, Metpar).
+Type 304 stainless steel faces over a honeycomb core.
 
 ### Will stainless steel partitions rust?
-They resist corrosion, but not in every setting. ASSDA reports stress-corrosion cracking of Type 304 and 316 rods, bolts and wires in the unwashed air above indoor chlorinated pools. Ask the manufacturer before using stainless in a pool hall, or choose another material.
+They resist corrosion, but not in every setting. Type 304 and 316 rods, bolts and wires have shown stress-corrosion cracking in the unwashed air above indoor chlorinated pools. Ask the manufacturer before using stainless in a pool hall, or choose another material.
 
 ### What is the warranty on stainless partitions?
-It depends on the brand and line. ASI lists 5 years, Ammco (All American Metal) 10 years, Bradley 15 years against rust-out and Metpar's specification 6 years. We confirm the length and coverage for your brand at quote time.
+It depends on the brand and line. Published terms run from 5 to 15 years, and the longest are against rust-out. We confirm the length and coverage for your brand at quote time.
 
 ### Are stainless partitions fire rated?
-Bobrick lists a Class A rating for stainless steel and ASI lists Class A for its line. Ask for test data for your line.
+Stainless steel is generally rated Class A, and lines that publish a class list Class A. Ask for test data for your line.
 
 ### What finishes are available?
-ASI offers #4 satin as standard with diamond and leather grain optional. Bradley offers satin brushed and a textured pattern (5WL). Metpar lists #4, 2B leather-grain and 5SM diamond. Hadrian lists #4 brushed, embossed or hybrid. Available finishes vary by brand.
+Common finishes are #4 satin (brushed), with textured options such as leather grain, diamond, embossed or hybrid patterns. Available finishes vary by brand.
 
 ## Sources
 
@@ -133,3 +132,4 @@ ASI offers #4 satin as standard with diamond and leather grain optional. Bradley
 
 - Structured data: FAQPage (5), BreadcrumbList. Link from /industries/gyms (G6 wording).
 - Images wanted: brushed vs textured finish close-ups.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.

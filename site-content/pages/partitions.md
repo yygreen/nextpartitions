@@ -24,49 +24,39 @@ The numbered parts are headrail, pilaster, door, hinges, latch and keeper, and p
 
 ![Edge cross-sections of the five partition materials at the same scale](/images/diagrams/material-sections-compare.svg)
 
-| Material | Construction | Published thicknesses | Fire classification (as published) |
+| Material | Construction | Typical thicknesses | Fire classification (typical) |
 |---|---|---|---|
-| [Powder coated steel](/partitions/powder-coated-steel) | Galvannealed steel faces, honeycomb core, powder coat | Metpar: 1" doors and panels, 1-1/4" pilasters | Class A (Bobrick for painted metal; ASI; Metpar) |
-| [Stainless steel](/partitions/stainless-steel) | Type 304 stainless faces, honeycomb core (ASI) | Metpar: 1" doors and panels, 1-1/4" pilasters | Class A (Bobrick for stainless; ASI) |
-| [Plastic laminate](/partitions/plastic-laminate) | High-pressure laminate on a particleboard core | Bobrick: 1" doors, stiles, panels | Bobrick HPL: Class B (flame spread 60); ASI Moisture Guard: Class C |
-| [Phenolic](/partitions/phenolic) | Fused resin-soaked kraft paper; black core or color-through | Bobrick, Bradley: 1/2" panels, 3/4" doors and pilasters | Bobrick 1080 Class B, 1180 Class A; ASI black core Class B (A optional), Color-Thru Class A; Metpar black core Class B |
-| [Solid plastic (HDPE)](/partitions/solid-plastic-hdpe) | One homogeneous HDPE sheet | Scranton: 1" doors, panels, pilasters; Hadrian (guide specification): 1" | Must pass NFPA 286 (IBC 803.9); Scranton's Standard Color Collection does not meet NFPA 286 or ASTM E84 |
+| [Powder coated steel](/partitions/powder-coated-steel) | Galvannealed steel faces, honeycomb core, powder coat | 1" doors and panels, 1-1/4" pilasters | Class A |
+| [Stainless steel](/partitions/stainless-steel) | Type 304 stainless faces, honeycomb core | 1" doors and panels, 1-1/4" pilasters | Class A |
+| [Plastic laminate](/partitions/plastic-laminate) | High-pressure laminate on a particleboard core | 1" doors, pilasters and panels | Class B or Class C, by line |
+| [Phenolic](/partitions/phenolic) | Fused resin-soaked kraft paper; black core or color-through | 1/2" panels, 3/4" doors and pilasters | Class B on most black core lines; Class A on some lines or as an option |
+| [Solid plastic (HDPE)](/partitions/solid-plastic-hdpe) | One homogeneous HDPE sheet | 1" doors, panels and pilasters | Must pass NFPA 286 (IBC 803.9); standard colors may not meet NFPA 286 or ASTM E84 |
 
 Edges differ too. Phenolic edges are machined from the solid sheet and are black on black core. HDPE edges are the same solid sheet, rounded or eased. Plastic laminate edges are laminate or a fused band over the core. Steel and stainless edges are a formed metal molding or locked sheet around the honeycomb, with welded or reinforced corners.
 
-Class A is a flame spread index of 25 or less under ASTM E84, Class B is 26 to 75, and Class C is 76 to 200 (Bobrick). A rating belongs to a product line, not to a material name. Ask for the test data on the line you specify, and confirm the requirement with your architect or local code official.
+Class A is a flame spread index of 25 or less under ASTM E84, Class B is 26 to 75, and Class C is 76 to 200. A rating belongs to a product line, not to a material name. Ask for the test data on the line you specify, and confirm the requirement with your architect or local code official.
 
 ## Warranties: the brand sets the term
 
-There is no standard partition warranty. What we can state from manufacturer documents:
+There is no standard partition warranty. Published terms run from 1 year to 25 years, depending on the manufacturer, the material and the line:
 
-| Brand and line | Warranty |
+| Material | Typical published warranty |
 |---|---|
-| Scranton Products, Hiny Hiders (HDPE) | 25-year limited; covers defects in material and workmanship that result in breakage or delamination under normal use; excludes vandalism and misuse |
-| ASI Global, phenolic | 25 years (catalog) |
-| ASI Global, powder coated | 3 years (catalog) |
-| ASI Global, stainless steel | 5 years (catalog) |
-| ASI Global, Moisture Guard plastic laminate | 5 years; standard laminate 2 years (catalog) |
-| Bobrick, DuraLineSeries compact grade laminate (phenolic) | 25 years; panels, doors and stiles against breakage, corrosion, delaminating and defects in workmanship; vandalism excluded |
-| Bobrick, DesignerSeries and MetroSeries HPL | 2 years; hosing down voids it |
-| Bradley, phenolic (Series 400 to 700) | 3 years against delamination and discoloration (brochure) |
-| Bradley, stainless steel | 15 years against rust-out (brochure, listed with its Permaseal edge) |
-| Bradley, hardware | Lifetime on stainless steel hardware for all materials; 5 years on chrome plated Zamac hardware (brochure) |
-| Hadrian, Standard Series solid plastic | 25 years against defects in materials and workmanship (guide specification) |
-| Ammco (All American Metal), powder coated / plastic laminate | 1 year each against defects in workmanship and construction; material only |
-| Ammco, stainless steel | 10 years against defects in workmanship and construction; material only |
-| Ammco, phenolic | 10 years against delaminating, corrosion or breakage; material only |
-| Ammco, solid plastic (HDPE) | 15 years against delaminating, corrosion or breakage; material only |
-| Metpar, powder coated (Powder Shield) / stainless | 4 years / 6 years (master specifications) |
+| Solid plastic (HDPE) | 15 to 25 years |
+| Phenolic | 3 to 25 years; many lines 25 |
+| Stainless steel | 5 to 15 years |
+| Plastic laminate | 1 to 5 years |
+| Powder coated steel | 1 to 4 years |
+| Hardware | Varies by manufacturer, up to lifetime on stainless steel hardware |
 
-ASI's catalog points to a full warranty on its website that we couldn't open, and we haven't found Hadrian's coverage wording or its terms for metal and phenolic lines, so we state none for them. Ammco's warranties are for material only, with no credit for labor, apply when the partitions are properly maintained, and are voided by installation errors, vandalism or improper use or care. Your quote will name the brand and its warranty. Read the full warranty for exclusions and conditions.
+Most warranties cover defects in material and workmanship, and some name breakage, corrosion or delamination. Common exclusions are vandalism, misuse and improper care. Some cover material only, with no labor, and some are voided by installation errors. Hosing down plastic laminate can void its warranty. Your quote will name the brand and its warranty. Read the full warranty for exclusions and conditions.
 
 ## Moisture and cleaning
 
-- **Wet rooms (showers, pools, locker rooms):** [phenolic](/partitions/phenolic) and [HDPE](/partitions/solid-plastic-hdpe). ASI says its black core phenolic holds up under moisture from showers, pools and saunas.
-- **Plastic laminate:** dry rooms only. Bobrick notes the particleboard core may swell with excessive moisture.
-- **Steel:** can rust and dent (Bobrick). Stainless resists corrosion, but tensioned stainless rods and bolts have cracked in unwashed indoor pool air (ASSDA), so ask the manufacturer before using it in a pool hall.
-- **Vandal resistance:** Bobrick lists graffiti resistance for laminate and phenolic; Scranton and ASI do the same for HDPE, and Bobrick cautions that xylene-based markers can "ghost" into HDPE.
+- **Wet rooms (showers, pools, locker rooms):** [phenolic](/partitions/phenolic) and [HDPE](/partitions/solid-plastic-hdpe). Manufacturers position phenolic for moisture from showers, pools and saunas.
+- **Plastic laminate:** dry rooms only. The particleboard core may swell with excessive moisture.
+- **Steel:** can rust and dent. Stainless resists corrosion, but tensioned stainless rods and bolts have cracked in unwashed indoor pool air, so ask the manufacturer before using it in a pool hall.
+- **Vandal resistance:** laminate, phenolic and HDPE all resist graffiti, but xylene-based markers can "ghost" into HDPE.
 
 ## Which material fits where
 
@@ -101,7 +91,7 @@ Phenolic or HDPE. Plastic laminate's core can swell and painted steel can rust.
 No. HDPE must pass NFPA 286; others are tested to ASTM E84 and classed A, B or C by product line.
 
 ### What warranty comes with partitions?
-It depends on the brand and line. Scranton Hiny Hiders carries 25 years, Bobrick and ASI list 25 for phenolic, ASI lists 3 for powder coated and 5 for stainless, Ammco (All American Metal) gives 1 to 15 years depending on material, and Bobrick's HPL laminate carries 2.
+It depends on the manufacturer and line. Published terms run from 1 to 25 years. HDPE and many phenolic lines carry the longest terms, up to 25 years. Powder coated steel and plastic laminate carry the shortest, often 1 to 5 years.
 
 ## Sources
 
@@ -148,3 +138,4 @@ It depends on the brand and line. Scranton Hiny Hiders carries 25 years, Bobrick
 - Link from /blog/what-are-bathroom-partitions-made-of ("How each material is built").
 - Drawings referenced: partition-anatomy, material-sections-compare (being drawn).
 - Images wanted: sample set showing all five edges side by side.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.

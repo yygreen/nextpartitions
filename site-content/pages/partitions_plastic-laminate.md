@@ -1,7 +1,7 @@
 ---
 url: /partitions/plastic-laminate
 title: Plastic Laminate Bathroom Partitions: Specs, Fire Class
-meta: Plastic laminate bathroom partitions: HPL over a particleboard core, 1" doors and panels, Class B rating at Bobrick, moisture limits and brand warranties.
+meta: Plastic laminate bathroom partitions: HPL over a particleboard core, 1" doors and panels, a typical Class B fire rating, moisture limits and warranties.
 h1: Plastic Laminate Bathroom Partitions
 primary_keyword: plastic laminate bathroom partitions (volume not in repo)
 secondary_keywords: [plastic laminate toilet partitions, laminate toilet partitions, hpl bathroom partitions]
@@ -10,7 +10,7 @@ words: 1,100
 
 # Plastic Laminate Bathroom Partitions
 
-Plastic laminate bathroom partitions bond a decorative high-pressure laminate (HPL) to a wood-based core. Their appeal is color and pattern choice. Their limit is water. This page covers how they are built, the published fire class (Class B at Bobrick, not Class A), how warranties differ by brand, and where laminate fits.
+Plastic laminate bathroom partitions bond a decorative high-pressure laminate (HPL) to a wood-based core. Their appeal is color and pattern choice. Their limit is water. This page covers how they are built, the published fire class (Class B or C, not Class A), how warranties differ by brand, and where laminate fits.
 
 [Configure & Request a Quote](/get-a-quote?material=plastic-laminate). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
 
@@ -18,9 +18,9 @@ Plastic laminate bathroom partitions bond a decorative high-pressure laminate (H
 
 ## How plastic laminate partitions are built
 
-Bobrick specifies a 45 lb density, resin-impregnated particleboard core, and its HPL doors, stiles and panels are 1" thick (1040 Series, DesignerSeries HPL). The laminate on both the faces and the edges is .050" thick. Bobrick's 1040 stiles also have an 11-gauge sheet steel core between two layers of particleboard, and the leveling device is welded to that steel. Its 1550 Series stiles are particleboard with no steel core. ASI sizes its headrail for laminate at 1-1/4", so ASI's pilasters are thicker than Bobrick's.
+The core is typically a 45 lb density, resin-impregnated particleboard. Doors and panels are 1" thick, with .050" laminate on the faces and edges. Pilasters are 1" or 1-1/4" thick, depending on the line. Some pilasters have an 11-gauge sheet steel core between two layers of particleboard, with the leveling device welded to the steel. Others are particleboard with no steel core.
 
-ASI's version, Moisture Guard, uses a 45 density particleboard core and .050" vertical-grade laminate, with edge banding that fuses with the core into a beveled profile. ASI also sells a standard (legacy) laminate without that banding.
+Edges vary. Some lines laminate the edge like the faces. Moisture-resistant lines fuse an edge band with the core into a beveled profile, while standard laminate goes without that banding.
 
 ![Cross-section of a plastic laminate partition door edge: particleboard core, laminate faces, edge](/images/diagrams/material-section-plastic-laminate.svg)
 
@@ -30,30 +30,30 @@ ASI's version, Moisture Guard, uses a 45 density particleboard core and .050" ve
 
 ## Fire rating
 
-Bobrick lists its high-pressure laminate as Class B (flame spread 60) in its 2018 CEU presentation, and its DesignerSeries page states Class B. Class B is a flame spread index of 26 to 75 under ASTM E84. ASI's material selection guide lists its Moisture Guard plastic laminate as Class C (flame spread 76 to 200), so a laminate partition is not always Class B, let alone Class A. The current page's "Class A standard" is not right for either brand. Ask for the rating of the line and decor you pick, and check it against the class your occupancy requires.
+Published ratings for plastic laminate are Class B or Class C under ASTM E84. Class B is a flame spread index of 26 to 75 (one tested HPL scored 60), and Class C is 76 to 200. So a laminate partition is not always Class B, let alone Class A, and the current page's "Class A standard" doesn't match the published lines. Ask for the rating of the line and decor you pick, and check it against the class your occupancy requires.
 
 ## Warranty differs by brand
 
-Both numbers on the current page turn out to be real, for different lines:
+Published laminate warranties run from 1 year to 5 years. The 2 and 5 years on the current page are both real, for different lines:
 
-- **Bobrick, DesignerSeries HPL 1040 and MetroSeries HPL 1550:** 2 years. Bobrick's warranty document covers panels, doors and stiles "against breakage, corrosion, delaminating and defects in workmanship" if the partitions are properly installed, used and serviced, and it states that spraying down or hosing HPL partitions voids the warranty. Vandalism isn't covered, and hardware carries 1 year.
-- **ASI Global:** 5 years on Moisture Guard plastic laminate, and 2 years on its standard (legacy) laminate. The ASI catalog refers to the full warranty on ASI's website, which we couldn't open, so we can't state ASI's coverage terms.
+- **Length.** Moisture-resistant lines with fused edge banding carry up to 5 years. Other lines usually carry 1 or 2 years.
+- **Coverage.** Typically panels, doors and pilasters against breakage, corrosion, delamination or defects in workmanship, if the partitions are properly installed, used and maintained.
+- **Exclusions.** Vandalism is usually excluded. Spraying down or hosing laminate partitions can void the warranty, and so can installation errors or improper care.
+- **Remedy and hardware.** Some warranties cover material only, with no credit for labor or the cost of replacing parts. Hardware may carry a separate, shorter term, such as 1 year.
 
-- **Ammco (All American Metal):** 1 year against all defects in workmanship and construction under normal wear and use. Defective material is replaced free of charge. The warranty is for material only: no credit or allowance for labor or any expense of replacing covered parts. It applies when the partitions are properly maintained, and installation errors, vandalism or improper use, care or maintenance void it.
-
-We haven't found a published laminate warranty for Hadrian. Your quote will name the brand, product line and warranty length. Read the warranty text, since coverage for moisture damage in particular varies.
+Your quote will name the brand, product line and warranty length. Read the warranty text, since coverage for moisture damage in particular varies.
 
 ## Moisture, vandal resistance and cleaning
 
-- **Moisture.** Bobrick notes that the core "may swell when exposed to excessive moisture". Keep laminate in dry, climate-controlled restrooms, not showers, pools or locker rooms. Use [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe) there.
-- **Scratches.** Bobrick lists scratch, dent and graffiti resistance at a low cost. A deep scratch can expose the dark kraft paper under the surface.
-- **Cleaning.** Ammco's care sheet says to wipe with warm water and very mild soap on a nonabrasive, well wrung-out cloth, rinse and dry with a soft cloth. Never over-saturate laminate or leave it wet, because water can swell the core. No brushes, steel wool or scouring pads, and keep acid, alkali and bleach-based bathroom cleaners off it, rinsing any splash at once. Follow your manufacturer's care instructions for other brands.
+- **Moisture.** The particleboard core may swell when exposed to excessive moisture. Keep laminate in dry, climate-controlled restrooms, not showers, pools or locker rooms. Use [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe) there.
+- **Scratches.** Laminate offers scratch, dent and graffiti resistance at a low cost. A deep scratch can expose the dark kraft paper under the surface.
+- **Cleaning.** A typical care routine: wipe with warm water and very mild soap on a nonabrasive, well wrung-out cloth, rinse and dry with a soft cloth. Never over-saturate laminate or leave it wet, because water can swell the core. No brushes, steel wool or scouring pads, and keep acid, alkali and bleach-based bathroom cleaners off it, rinsing any splash at once. Follow your manufacturer's care instructions.
 
 ## Where laminate fits
 
-Offices, retail, restaurants and other dry restrooms where the partitions should coordinate with millwork. Color range is the main advantage. Bobrick lists a wide color selection. Bobrick's 1550 Series offers floor-anchored (1551), overhead-braced and ceiling-hung (1558) mounting. See the [mounting styles](/mounting-styles).
+Offices, retail, restaurants and other dry restrooms where the partitions should coordinate with millwork. Color range is the main advantage, with a wide selection on most lines. Laminate is offered floor anchored, overhead braced and ceiling hung. See the [mounting styles](/mounting-styles).
 
-Bobrick's ceiling-hung guidance requires ceiling structure that supports at least 295 lb per high pressure laminate partition (TB-32).
+Ceiling-hung laminate needs ceiling structure that carries the manufacturer's required load. One published requirement is at least 295 lb per high pressure laminate partition.
 
 ## What comes with a quote
 
@@ -62,19 +62,19 @@ Our quotes cover panels, doors, pilasters, headrails, hinges, slide latches, kee
 ## FAQ
 
 ### What is plastic laminate partition made of?
-High-pressure laminate bonded to a resin-impregnated particleboard core (Bobrick).
+High-pressure laminate bonded to a resin-impregnated particleboard core.
 
 ### How thick are plastic laminate partitions?
-Bobrick's doors, stiles and panels are 1" thick, with .050" laminate on the faces and edges. ASI uses 1-1/4" pilasters, judging from its headrail sizing.
+Doors and panels are typically 1" thick, with .050" laminate on the faces and edges. Pilasters are 1" or 1-1/4", depending on the line.
 
 ### Are plastic laminate partitions Class A?
-Bobrick lists its HPL as Class B (flame spread 60). ASI lists its Moisture Guard laminate as Class C. Check the brand's rating.
+Not as published. Laminate lines are rated Class B or Class C. Check the rating of the line you pick.
 
 ### Can plastic laminate get wet?
-Not continuously. The core may swell with excessive moisture (Bobrick). Use phenolic or HDPE in wet rooms.
+Not continuously. The core may swell with excessive moisture. Use phenolic or HDPE in wet rooms.
 
 ### What is the warranty?
-It depends on brand and line. Bobrick's DesignerSeries and MetroSeries HPL carry 2 years (hosing them down voids it). ASI's Moisture Guard laminate carries 5 years and its standard laminate 2. Ammco (All American Metal) gives 1 year for material only. We confirm it at quote time.
+It depends on brand and line. Published terms run from 1 to 5 years: moisture-resistant lines up to 5, others 1 or 2. Hosing down can void it. We confirm it at quote time.
 
 ## Sources
 
@@ -120,3 +120,4 @@ It depends on brand and line. Bobrick's DesignerSeries and MetroSeries HPL carry
 
 - Structured data: FAQPage (5), BreadcrumbList.
 - Images wanted: laminate door edge close-up; a coordinated millwork restroom.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.

@@ -10,7 +10,7 @@ words: 1,250
 
 # Powder Coated Steel Bathroom Partitions
 
-Powder coated steel bathroom partitions are a steel sandwich: steel face sheets over a honeycomb core, finished with a baked-on powder coating. You will also see them called painted metal or baked enamel partitions. Bobrick's comparison of partition materials credits painted metal with availability, low cost, the option to repaint and a Class A interior finish rating. This page covers how they are built, the published thicknesses and fire class, how warranties differ by brand, and where steel fits.
+Powder coated steel bathroom partitions are a steel sandwich: steel face sheets over a honeycomb core, finished with a baked-on powder coating. You will also see them called painted metal or baked enamel partitions. Their strengths are wide availability, low cost, the option to repaint and a Class A interior finish rating. This page covers how they are built, the published thicknesses and fire class, how warranties differ by brand, and where steel fits.
 
 [Configure & Request a Quote](/get-a-quote?material=powder-coated). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
 
@@ -18,11 +18,11 @@ Powder coated steel bathroom partitions are a steel sandwich: steel face sheets 
 
 ## How powder coated steel partitions are built
 
-ASI Global describes its powder coated partitions as galvannealed steel with a honeycomb core "for solid construction and sound attenuation", finished with a thermoset hybrid powder coating that resists wear, fading and scuffing. Metpar describes galvannealed steel over a honeycomb core as well.
+The faces are galvannealed steel over a honeycomb core, for solid construction and sound attenuation. The finish is a thermoset hybrid powder coating that resists wear, fading and scuffing.
 
-Published thicknesses (Metpar): 1" doors and panels, 1-1/4" pilasters. Metpar's master specification gives the face sheets as 22 gauge on doors and panels and 20 gauge on pilasters. Metpar's standard doors are 58" high, with 12" floor clearance. ASI sizes its anti-grip headrail for powder coated at 1-1/4", matching the pilaster.
+Doors and panels are typically 1" thick, with 1-1/4" pilasters. Face sheet gauge varies by line; one published specification calls for 22 gauge on doors and panels and 20 gauge on pilasters. Standard doors on some lines are 58" high, with 12" floor clearance.
 
-The edge is a separate metal part. Metpar finishes all edges of doors, panels and pilasters with a 20-gauge interlocking steel molding around the perimeter, and the corners get preformed painted stainless reinforcements, welded internally. ASI welds the corners of panels, pilasters and doors to each other and to the adjacent face sheets. The honeycomb is described as cellular (ASI, Metpar); Scranton, a competing HDPE maker, calls it cardboard, and Metpar's stainless page calls its core "paper constructed". None of them gives the cell size.
+The edge is a separate metal part. An interlocking steel molding (20 gauge on some lines) runs around the perimeter of doors, panels and pilasters. Corners are welded, or reinforced with preformed stainless pieces welded internally. The honeycomb is described as cellular or paper based. Manufacturers don't publish the cell size.
 
 ![Cross-section of a powder coated steel partition door edge: honeycomb core, steel faces, edge](/images/diagrams/material-section-powder-coated-steel.svg)
 
@@ -30,39 +30,39 @@ The edge is a separate metal part. Metpar finishes all edges of doors, panels an
 2. **Faces:** galvannealed steel sheets with a baked powder coat finish.
 3. **Edge:** a formed steel edge around the perimeter that locks the two faces together.
 
-Hardware is typically chrome-plated zamac (a die-cast zinc alloy). Metpar and ASI both list stainless steel hardware as an option. Metpar's pilaster shoe is 4" high in #4 stainless. Hadrian's Elite, Elite Plus and Elite Max manual shows a concealed hinge that is offered on powder coated partitions only, and a 7/8 inch hinge hole in powder coated pilasters where stainless pilasters have two small guide holes.
+Hardware is typically chrome-plated zamac (a die-cast zinc alloy), with stainless steel hardware as an option. Pilaster shoes are often 4" high in #4 stainless. Some lines offer a concealed hinge on powder coated partitions only, which uses a 7/8 inch hinge hole in the pilaster.
 
 ## Fire rating
 
-Bobrick's materials guide gives painted metal a Class A interior finish rating, where Class A is a flame spread index of 25 or less under ASTM E84 (Bobrick's tested painted metal had a flame spread of 5). That is Bobrick's statement for the material in general. For specific lines, ASI's material selection guide lists Class A for its powder coated steel, and Metpar's page states a Class A fire rating. Ratings are published per product line, so ask for the test data for the brand and finish you specify. Powder coated steel is not subject to the NFPA 286 requirement that applies to [HDPE](/partitions/solid-plastic-hdpe).
+Painted metal generally carries a Class A interior finish rating. Class A is a flame spread index of 25 or less under ASTM E84, and tested painted metal has scored as low as 5. Powder coated lines are published as Class A. Ratings are published per product line, so ask for the test data for the brand and finish you specify. Powder coated steel is not subject to the NFPA 286 requirement that applies to [HDPE](/partitions/solid-plastic-hdpe).
 
 ## Warranty differs by brand
 
-There is no single powder coated steel warranty.
+There is no single powder coated steel warranty. Published terms run from 1 year to 4 years.
 
-- **ASI Global:** 3 years for powder coated steel, per the ASI catalog, which refers to the full warranty on ASI's website. We couldn't open that text, so we can't state ASI's coverage terms.
-- **Metpar:** its master specification lists 4 years for the Powder Shield finish, as a manufacturer's standard form "to repair or replace toilet compartment components (panels, doors, pilasters, and hardware) against defects in material and workmanship". The specification is a template, so we treat 4 years as a published figure to confirm against Metpar's warranty document.
-- **Ammco (All American Metal):** 1 year against all defects in workmanship and construction under normal wear and use. Defective material is replaced free of charge. The warranty is for material only: no credit or allowance for labor or any expense of replacing covered parts. It applies when the partitions are properly maintained, and installation errors, vandalism or improper use, care or maintenance void it.
+- **Coverage.** Typically repair or replacement of panels, doors, pilasters and sometimes hardware against defects in material and workmanship under normal wear and use.
+- **Remedy.** Some warranties cover material only, with no credit for labor or the cost of replacing parts.
+- **Conditions.** Coverage usually depends on proper maintenance. Installation errors, vandalism or improper use or care can void it.
 
-The current page said both 1 year and 3 years. The 3 years matches ASI and the 1 year matches Ammco. Bradley's brochure does not list powder coated steel, and Hadrian's documents state no powder coated warranty, so we give none for them. Your quote will name the brand and its warranty.
+The current page said both 1 year and 3 years. Both are real figures, for different lines. Your quote will name the brand and its warranty.
 
 ## Moisture, vandal resistance and cleaning
 
-- **Moisture.** Steel can rust where the coating is damaged. Bobrick lists rust, dents and scratches as painted metal's weaknesses. Keep it to dry, climate-controlled restrooms; for showers, pools and sustained humidity look at [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe).
-- **Graffiti.** Bobrick says graffiti is harder to deal with on painted metal than on other materials.
-- **Repainting.** Bobrick lists repainting as a strength.
-- **Cleaning.** Ammco's care sheet says to wipe with warm water and very mild soap on a nonabrasive, well wrung-out cloth, rinse and dry with a soft cloth. Never scrub with brushes, steel wool or scouring pads, and keep acid, alkali and bleach-based bathroom cleaners off the finish, rinsing off any splash at once. Follow your manufacturer's care instructions for other brands.
+- **Moisture.** Steel can rust where the coating is damaged. Rust, dents and scratches are painted metal's weaknesses. Keep it to dry, climate-controlled restrooms; for showers, pools and sustained humidity look at [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe).
+- **Graffiti.** Graffiti is harder to deal with on painted metal than on other materials.
+- **Repainting.** Painted metal can be repainted.
+- **Cleaning.** A typical care routine: wipe with warm water and very mild soap on a nonabrasive, well wrung-out cloth, rinse and dry with a soft cloth. Never scrub with brushes, steel wool or scouring pads, and keep acid, alkali and bleach-based bathroom cleaners off the finish, rinsing off any splash at once. Follow your manufacturer's care instructions.
 
 ## Where powder coated steel fits
 
 Offices, retail, restaurants, community centers and other dry restrooms where budget matters more than abuse resistance. It is offered in all four mounting styles:
 
-| Mounting style | Powder coated offered (source) |
+| Mounting style | Powder coated offered |
 |---|---|
-| [Overhead braced](/mounting-styles/overhead-braced) | ASI, with anodized aluminum anti-grip headrail; Bradley Series 400 in 69" and 72" heights (installation guide); Hadrian (headrail braced, Standard and Elite series manuals) |
-| [Floor mounted](/mounting-styles/floor-mounted) | ASI floor anchored (concrete floors only); Hadrian |
-| [Ceiling hung](/mounting-styles/ceiling-hung) | ASI; Bradley Series 600 (installation guide); Hadrian (Elite series manual appendix) |
-| [Floor to ceiling](/mounting-styles/floor-to-ceiling) | ASI; Hadrian |
+| [Overhead braced](/mounting-styles/overhead-braced) | Offered by several manufacturers, typically with an anodized aluminum anti-grip headrail; some lines in 69" and 72" heights |
+| [Floor mounted](/mounting-styles/floor-mounted) | Offered; floor anchored versions may need concrete floors |
+| [Ceiling hung](/mounting-styles/ceiling-hung) | Offered by several manufacturers |
+| [Floor to ceiling](/mounting-styles/floor-to-ceiling) | Offered by several manufacturers |
 
 ## ADA stalls
 
@@ -77,22 +77,22 @@ Our quotes cover panels, doors, pilasters, headrails, hinges, slide latches, kee
 ## FAQ
 
 ### What is powder coated steel partition made of?
-Galvannealed steel faces over a honeycomb core, finished with a baked powder coating (ASI, Metpar).
+Galvannealed steel faces over a honeycomb core, finished with a baked powder coating.
 
 ### How thick are powder coated steel partitions?
-Metpar lists 1" doors and panels with 1-1/4" pilasters, and 22-gauge face sheets on doors and panels. Measure yours before ordering parts.
+Doors and panels are typically 1" thick, with 1-1/4" pilasters. Face sheet gauge varies by line. Measure yours before ordering parts.
 
 ### What is the warranty?
-It depends on the brand. Ammco (All American Metal) gives 1 year for material only. ASI's catalog lists 3 years and Metpar's master specification lists 4 years for its Powder Shield finish. We confirm the figure for your brand at quote time.
+It depends on the brand. Published terms run from 1 to 4 years, and some cover material only. We confirm the figure for your brand at quote time.
 
 ### Is powder coated steel fire rated?
-Bobrick rates painted metal Class A under ASTM E84, ASI lists its powder coated steel as Class A, and Metpar states Class A. Ask for the test data for your line.
+Painted metal is generally Class A under ASTM E84, and powder coated lines are published as Class A. Ask for the test data for your line.
 
 ### Will powder coated steel rust?
-It can if the coating is breached, according to Bobrick. It suits dry restrooms.
+It can if the coating is breached. It suits dry restrooms.
 
 ### Can I repaint it?
-Bobrick lists repainting as a strength of painted metal. Ask the manufacturer for approved paint and prep.
+Yes, repainting is one of painted metal's strengths. Ask the manufacturer for approved paint and prep.
 
 ## Sources
 
@@ -144,3 +144,4 @@ Bobrick lists repainting as a strength of painted metal. Ask the manufacturer fo
 
 - Structured data: FAQPage (6), BreadcrumbList. Link from /blog/what-are-bathroom-partitions-made-of.
 - Images wanted: a powder coated door edge close-up; a finished installation.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.

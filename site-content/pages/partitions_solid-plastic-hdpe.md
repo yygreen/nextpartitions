@@ -1,7 +1,7 @@
 ---
 url: /partitions/solid-plastic-hdpe
 title: HDPE Bathroom Partitions: Fire Rating, Warranty, Specs
-meta: HDPE bathroom partitions explained: 1" solid plastic build, NFPA 286 fire testing under the IBC, Scranton's 25-year limited warranty, and where HDPE fits.
+meta: HDPE bathroom partitions explained: 1" solid plastic build, NFPA 286 fire testing under the IBC, warranties of up to 25 years, and where HDPE fits.
 h1: HDPE Solid Plastic Bathroom Partitions
 primary_keyword: hdpe bathroom partitions (volume not in repo)
 secondary_keywords: [solid plastic toilet partitions, hdpe toilet partitions, hdpe vs phenolic toilet partitions]
@@ -10,7 +10,7 @@ words: 1,350
 
 # HDPE Solid Plastic Bathroom Partitions
 
-HDPE bathroom partitions are cut from one solid sheet of high-density polyethylene. There is no core, no skin and no edge band to fail. Manufacturers position solid plastic for moisture, mildew and graffiti. HDPE is also treated differently by the building codes, and that is the most common mistake in specifying it. This page covers how HDPE partitions are built, the fire test they must pass, what Scranton Products' warranty says, and where HDPE fits.
+HDPE bathroom partitions are cut from one solid sheet of high-density polyethylene. There is no core, no skin and no edge band to fail. Manufacturers position solid plastic for moisture, mildew and graffiti. HDPE is also treated differently by the building codes, and that is the most common mistake in specifying it. This page covers how HDPE partitions are built, the fire test they must pass, what the warranties say, and where HDPE fits.
 
 [Configure & Request a Quote](/get-a-quote?material=solid-plastic). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
 
@@ -18,7 +18,7 @@ HDPE bathroom partitions are cut from one solid sheet of high-density polyethyle
 
 ## How HDPE partitions are built
 
-Scranton Products makes its Hiny Hiders partitions from 1-inch solid HDPE with the color running all the way through. Doors, panels and pilasters are 1" in Scranton's guide specification, with edges rounded to a 1/4" radius. The New York State master specification asks for HDPE not less than 1" thick with eased edges. Scranton also offers a shiplap cut edge that removes sightlines without extra hardware. ASI Global sizes its anti-grip headrail for solid plastic at 1", which matches a 1" pilaster. Hadrian's guide specification for its Standard Series lists solid polyethylene with fine radius edges, 1 inch thick. ASI's catalog and Hadrian's listing don't state a thickness.
+HDPE partitions are made from 1-inch solid HDPE with the color running all the way through. Doors, panels and pilasters are typically 1" thick, and specifications ask for no less than 1". Edges are eased or rounded, often to a 1/4" radius. Some lines offer a shiplap cut edge that removes sightlines without extra hardware.
 
 ![Cross-section of a solid plastic (HDPE) partition door edge: one homogeneous sheet](/images/diagrams/material-section-solid-plastic.svg)
 
@@ -26,44 +26,42 @@ Scranton Products makes its Hiny Hiders partitions from 1-inch solid HDPE with t
 2. **Faces:** the same HDPE with the color running through, so there is no separate finish layer.
 3. **Edge:** the same sheet, with no edge band, eased or rounded.
 
-Hinges, latches and brackets are usually aluminum or stainless. Scranton specifies 8-inch extruded aluminum wrap-around hinges and 3" molded HDPE or 20-gauge stainless pilaster sleeves for overhead-braced Hiny Hiders. See [hinges](/hardware/hinges) and [parts](/hardware/parts).
+Hinges, latches and brackets are usually aluminum or stainless. Overhead-braced lines may use 8-inch extruded aluminum wrap-around hinges and 3" molded HDPE or 20-gauge stainless pilaster sleeves. See [hinges](/hardware/hinges) and [parts](/hardware/parts).
 
 ## Fire rating: HDPE must pass NFPA 286
 
-This is the point to get right. The International Building Code (Section 803.9 in the 2015 and 2018 editions) requires HDPE and polypropylene used as interior finish, which includes toilet partitions, to comply with Section 803.1.1, the NFPA 286 room-corner fire test. Other partition materials are normally tested to ASTM E84 and given a Class A, B or C. The requirement for HDPE dates from the 2009 IBC and IFC and the 2012 NFPA codes, according to Bobrick's code fact sheet.
+This is the point to get right. The International Building Code (Section 803.9 in the 2015 and 2018 editions) requires HDPE and polypropylene used as interior finish, which includes toilet partitions, to comply with Section 803.1.1, the NFPA 286 room-corner fire test. Other partition materials are normally tested to ASTM E84 and given a Class A, B or C. The requirement for HDPE dates from the 2009 IBC and IFC and the 2012 NFPA codes.
 
-Not every HDPE color passes. Scranton's color visualizer states that its Standard Color Collection "does not meet NFPA 286 or ASTM E84", and that not all color and texture combinations are available in fire rated materials. Scranton offers fire rating options on Hiny Hiders. In Bobrick's tests, untreated HDPE was unclassified under ASTM E84 because of smoke development. The New York State master specification adds that HDPE complying with NFPA 286 is considered to meet a Class A classification under ASTM E84.
+Not every HDPE color passes. Standard color collections may not meet NFPA 286 or ASTM E84, and not all color and texture combinations are available in fire rated materials. Untreated HDPE has tested as unclassified under ASTM E84 because of smoke development. Specifications treat HDPE that complies with NFPA 286 as meeting a Class A classification under ASTM E84.
 
-Other brands: ASI says its solid plastic partitions have passed the NFPA 286 test, and its material selection guide lists NFPA 286 as the standard fire rating. Hadrian lists two options: certified Class B HDPE colors (flame spread index 26 to 75), and NFPA 286 colors at an extra cost, currently six colors, which may be slightly darker.
+Fire-rated options vary by manufacturer. Some lines pass NFPA 286 as standard. Others offer certified Class B colors (flame spread index 26 to 75), with NFPA 286 colors at an extra cost in a short color list that may be slightly darker.
 
 What to do: specify the fire-rated version, ask for the test report for the exact color and thickness, and confirm the requirement with your local building official. Tell us at quote time that you need a fire-rated product.
 
-## Warranty: Scranton's, not a generic one
+## Warranty: set by the line, not a generic one
 
-Scranton Products carries a 25-year limited warranty on Hiny Hiders (the same term it gives Aria and Eclipse partitions). Two Scranton documents word the coverage differently:
+Published HDPE warranties run from 15 to 25 years, and 25 years is common. Coverage wording can differ even between one manufacturer's documents:
 
-- Scranton's guide specification asks for a warranty "against breakage, corrosion, and delamination under normal conditions".
-- Scranton's Limited Warranty document covers defects in material and workmanship that occur under normal use and "result in breakage or delamination". It doesn't list corrosion.
+- A guide specification may ask for a warranty against breakage, corrosion and delamination under normal conditions.
+- The warranty document itself may cover only defects in material and workmanship under normal use that result in breakage or delamination, with no mention of corrosion.
 
-The Limited Warranty is given to a business or other commercial purchaser. It applies only if the partitions are installed to Scranton's written instructions, only to the original installation, and not to damage from vandalism, misuse, neglect, extraordinary wear and tear, or movement of the building. Scranton repairs, replaces or refunds at its choice and doesn't pay labor or removal costs.
-
-Ammco (All American Metal) gives 15 years on solid plastic (HDPE) against delaminating, corrosion or breakage under normal wear and use, with defective material replaced free of charge. Ammco's warranty is for material only: no credit or allowance for labor or any expense of replacing covered parts. It applies when the partitions are properly maintained, and installation errors, vandalism or improper use, care or maintenance void it. ASI's catalog lists 25 years, and Hadrian's guide specification asks for a 25-year warranty against defects in materials and workmanship on its Standard Series solid plastic (its full warranty text is not among our documents). Read the warranty document for the line you choose, including exclusions.
+Typical conditions: the warranty goes to a business or other commercial purchaser, applies only if the partitions are installed to the manufacturer's written instructions, and covers only the original installation. Damage from vandalism, misuse, neglect, extraordinary wear and tear, or movement of the building is excluded. The remedy is repair, replacement or refund, and labor and removal costs usually aren't covered. Some warranties cover material only and are voided by installation errors or improper care. Read the warranty document for the line you choose, including exclusions.
 
 ## Moisture, vandal resistance and cleaning
 
-- **Moisture.** ASI says its solid plastic partitions are "highly resistant to common cleaning agents as well as to moisture, mildew, and graffiti" and "will not easily dent, rust, or delaminate".
-- **Graffiti.** Scranton: "Graffiti is easily wiped clean with a common, nonabrasive cleaner." Bobrick adds a caution: graffiti made with xylene-based markers can "ghost" into the plastic.
-- **Cleaning.** Ammco's care sheet says to wipe with warm water and mild liquid soap, and the partitions can be hosed down. Any mild commercial cleaner works for tougher stains. Remove the clear protective coating after installation; mild soap, or mineral spirits for stubborn residue, cleans off what is left. Use no abrasive pads or caustic solutions. Follow your manufacturer's care instructions for other brands.
-- **Surface.** Bobrick lists HDPE as the softest surface of the common partition materials, so it scratches easily. The color runs through, so a scratch doesn't show a different layer. We don't hold manufacturer guidance on sanding HDPE, so we don't recommend it.
-- **Color range.** Bobrick notes HDPE's color range is more limited than laminate's.
+- **Moisture.** Solid plastic is highly resistant to common cleaning agents, moisture, mildew and graffiti, and it won't easily dent, rust or delaminate.
+- **Graffiti.** Graffiti usually wipes off with a common, nonabrasive cleaner. Xylene-based markers are the exception: they can "ghost" into the plastic.
+- **Cleaning.** A typical care routine: wipe with warm water and mild liquid soap, and hose down if needed. Any mild commercial cleaner works for tougher stains. Remove the clear protective coating after installation; mild soap, or mineral spirits for stubborn residue, cleans off what is left. Use no abrasive pads or caustic solutions. Follow your manufacturer's care instructions.
+- **Surface.** HDPE is the softest surface of the common partition materials, so it scratches easily. The color runs through, so a scratch doesn't show a different layer. We don't hold manufacturer guidance on sanding HDPE, so we don't recommend it.
+- **Color range.** HDPE's color range is more limited than laminate's.
 
 ## Mounting
 
-HDPE is not offered in every mounting style. Scranton's Hiny Hiders lists floor mounted overhead-braced, ceiling hung and floor to ceiling. The New York State OGS master specification notes that several manufacturers don't recommend floor-anchored or ceiling-hung mounting for solid plastic. Check the line you want:
+HDPE is not offered in every mounting style. Typical lines offer floor mounted overhead-braced, ceiling hung and floor to ceiling. Several manufacturers don't recommend floor-anchored or ceiling-hung mounting for solid plastic. Check the line you want:
 
 - [Overhead braced](/mounting-styles/overhead-braced)
-- [Floor to ceiling](/mounting-styles/floor-to-ceiling) (Hadrian also lists floor-to-ceiling solid plastic with 55" doors at 14" above the floor, for schools; its guide specification and solid plastic installation manual cover headrail braced, ceiling hung and floor to ceiling)
-- [Ceiling hung](/mounting-styles/ceiling-hung) (Scranton offers it; confirm with the manufacturer)
+- [Floor to ceiling](/mounting-styles/floor-to-ceiling) (some lines offer floor-to-ceiling solid plastic with 55" doors at 14" above the floor, for schools)
+- [Ceiling hung](/mounting-styles/ceiling-hung) (offered on some lines; confirm with the manufacturer)
 - [Floor mounted](/mounting-styles/floor-mounted): generally not recommended for solid plastic
 
 ## Where HDPE fits
@@ -79,22 +77,22 @@ Our quotes cover panels, doors, pilasters, headrails, hinges, slide latches, kee
 ## FAQ
 
 ### Are HDPE bathroom partitions fire rated?
-Not by default. The IBC requires HDPE partitions to pass the NFPA 286 room-corner test, and Scranton states its Standard Color Collection does not meet NFPA 286 or ASTM E84. Ask for the fire-rated version and its test report.
+Not by default. The IBC requires HDPE partitions to pass the NFPA 286 room-corner test, and standard color collections may not meet NFPA 286 or ASTM E84. Ask for the fire-rated version and its test report.
 
 ### What is the warranty on HDPE partitions?
-Scranton Products gives a 25-year limited warranty on Hiny Hiders. Its warranty document covers defects in material and workmanship that result in breakage or delamination under normal use, and excludes vandalism, misuse and damage from the building. Ammco (All American Metal) gives 15 years for material only. Other brands differ.
+Published terms run from 15 to 25 years, and 25 is common. Coverage is usually limited to defects in material and workmanship that result in breakage or delamination under normal use, and excludes vandalism, misuse and damage from the building. Some warranties cover material only. Read the document for your line.
 
 ### How thick are HDPE partitions?
-Scranton's panels, doors and pilasters are 1" solid HDPE, with edges rounded to a 1/4" radius.
+Panels, doors and pilasters are typically 1" solid HDPE, with eased or rounded edges, often to a 1/4" radius.
 
 ### Can graffiti be removed from HDPE?
-Scranton says graffiti wipes off with a common, nonabrasive cleaner. Bobrick warns that xylene-based markers can ghost into HDPE.
+Usually, with a common, nonabrasive cleaner. Xylene-based markers can ghost into HDPE.
 
 ### Can HDPE be floor mounted?
-Usually not. Several manufacturers don't recommend it, and Scranton lists overhead-braced, ceiling-hung and floor-to-ceiling for Hiny Hiders.
+Usually not. Several manufacturers don't recommend it, and typical lines offer overhead-braced, ceiling-hung and floor-to-ceiling mounting.
 
 ### Does HDPE rust?
-No, there is no metal in the panel. ASI says solid plastic "will not easily dent, rust, or delaminate". Hardware is separate: see hardware materials on the parts page.
+No, there is no metal in the panel, and solid plastic won't easily dent, rust or delaminate. Hardware is separate: see hardware materials on the parts page.
 
 ## Sources
 
@@ -147,3 +145,4 @@ No, there is no metal in the panel. ASI says solid plastic "will not easily dent
 - Structured data: FAQPage (6), BreadcrumbList. No Product warranty markup until verified.
 - Link from /industries/schools, gyms, community-centers and public-restrooms (industry-check C3 wording).
 - Images wanted: an HDPE door edge close-up; a fire-rated product label or test report cover.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.

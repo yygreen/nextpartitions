@@ -10,7 +10,7 @@ words: 1,250
 
 # Phenolic Bathroom Partitions
 
-Phenolic bathroom partitions are made by stacking layers of kraft paper soaked in phenolic resin and fusing them under heat and pressure into one dense sheet. There is no separate honeycomb or particleboard core, and no metal to rust. Manufacturers position phenolic for wet and high-traffic restrooms. This page shows how phenolic partitions are built, what the published fire classes and warranties say brand by brand, and where the material fits.
+Phenolic bathroom partitions are made by stacking layers of kraft paper soaked in phenolic resin and fusing them under heat and pressure into one dense sheet. There is no separate honeycomb or particleboard core, and no metal to rust. Manufacturers position phenolic for wet and high-traffic restrooms. This page shows how phenolic partitions are built, how fire classes and warranties vary by line, and where the material fits.
 
 [Configure & Request a Quote](/get-a-quote?material=solid-phenolic). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
 
@@ -18,16 +18,16 @@ Phenolic bathroom partitions are made by stacking layers of kraft paper soaked i
 
 ## How phenolic partitions are built
 
-Phenolic is also called compact grade laminate (CGL) or compact laminate. Bobrick describes its version as melamine faces and colored face sheets bonded to a black phenolic-resin core. Scranton Products describes black core phenolic as a "resin-impregnated kraft paper core".
+Phenolic is also called compact grade laminate (CGL) or compact laminate. A typical sheet has melamine faces and colored face sheets bonded to a core of resin-impregnated kraft paper.
 
 Two versions are common:
 
-- **Black core phenolic.** Decorative faces over a black core, so a cut edge is black. ASI says its black core phenolic "holds up even under severe moisture conditions from showers, pools, and saunas".
-- **Color-through phenolic.** The color runs through the core to match the surface. ASI sells this as Color-Thru.
+- **Black core phenolic.** Decorative faces over a black core, so a cut edge is black. Manufacturers say it holds up under severe moisture from showers, pools and saunas.
+- **Color-through phenolic.** The color runs through the core to match the surface.
 
-Phenolic parts are thinner than laminate or HDPE parts. Bobrick (1080 Series, DuraLineSeries), Bradley (PH400 Series, Series 400 to 700) and Metpar (black core and color-through) all make panels 1/2" thick, with 3/4" doors and pilasters (Bobrick calls pilasters "stiles"). Bradley builds its phenolic on a solid black core with 20% pre-consumer recycled content, in nine colors, and lists door and panel heights of 58" (12" above the floor), 69" (9") and 72" (6"), with integral No-Site construction as standard. ASI sizes its anti-grip headrail for phenolic at 3/4", which matches a 3/4" pilaster. ASI's catalog and Hadrian's listings don't state a door thickness.
+Phenolic parts are thinner than laminate or HDPE parts. Panels are typically 1/2" thick, with 3/4" doors and pilasters (some manufacturers call pilasters "stiles"). Some lines offer door and panel heights of 58" (12" above the floor), 69" (9") and 72" (6").
 
-Edges are machined, not banded. Bobrick says its edges are black and its DuraLineSeries has a "polished black edge design". Bradley's PH400 edges are black, machined smooth with a 45-degree chamfer, and its brochure lists solid black edges for the whole phenolic line. Metpar's black core edges are black, polished and beveled. ASI describes its black core range as "all with black edges".
+Edges are machined, not banded. On black core they are black. Depending on the line, they are polished, beveled or chamfered at 45 degrees.
 
 ![Cross-section of a phenolic partition door edge: layered core, faces and edge](/images/diagrams/material-section-phenolic.svg)
 
@@ -39,35 +39,26 @@ Edges are machined, not banded. Bobrick says its edges are black and its DuraLin
 
 Fire class is set by the product line, not by the material name.
 
-| Product | Published class | Source |
-|---|---|---|
-| Bobrick DuraLineSeries 1080 (compact grade laminate) | Class B | Bobrick DuraLineSeries page |
-| Bobrick DuraLineSeries 1180 | Class A | Bobrick DuraLineSeries page |
-| ASI Global black core phenolic | Class B as standard, Class A optional | ASI catalog |
-| ASI Global Color-Thru phenolic | Class A as standard | ASI catalog |
-| Metpar black core phenolic | Class B; Class A available | Metpar black core page |
-| Hadrian phenolic | Each color is listed as Class A or Class B | Hadrian listing on Sweets |
-| Bradley phenolic | No class stated | Bradley brochure and PH400 data sheet (checked 2026-10-27) |
+Black core phenolic is usually Class B as standard, with Class A available on some lines. Color-through and some other lines are Class A. Some manufacturers rate each color separately as Class A or B, and some publish no class at all.
 
-Bobrick's materials guide defines the ASTM E84 classes by flame spread index: Class A is 25 or less, Class B is 26 to 75, Class C is 76 to 200. The class you need depends on the building's occupancy and where the restroom sits. Confirm it with your architect or local code official, and ask for the product's test documentation.
+Under ASTM E84, classes go by flame spread index: Class A is 25 or less, Class B is 26 to 75, Class C is 76 to 200. The class you need depends on the building's occupancy and where the restroom sits. Confirm it with your architect or local code official, and ask for the product's test documentation.
 
 ## Warranty differs by brand
 
-There is no single phenolic warranty. The lengths below come from manufacturer documents we hold. Read the full warranty text before you specify.
+There is no single phenolic warranty. Published terms run from 3 years to 25 years, and many lines carry 25. Read the full warranty text before you specify.
 
-- **Bobrick, DuraLineSeries CGL 1080/1180:** 25 years. Bobrick's warranty document covers panels, doors and stiles "against breakage, corrosion, delaminating and defects in workmanship", on condition that the partitions are properly installed, used and serviced. The remedy is repair or replacement, and vandalism damage isn't covered. Hardware and brackets carry 1 year.
-- **ASI Global:** 25 years on black core and on Color-Thru phenolic, per the ASI catalog, which refers to the full warranty on ASI's website. We couldn't open that text, so we can't state ASI's coverage terms.
-- **Ammco (All American Metal):** 10 years against delaminating, corrosion or breakage under normal wear and use. Defective material is replaced free of charge. The warranty is for material only: no credit or allowance for labor or any expense of replacing covered parts. It applies when the partitions are properly maintained, and installation errors, vandalism or improper use, care or maintenance void it.
-- **Bradley, phenolic (Series 400 to 700):** 3 years "against delamination and discoloration" (Bradley partitions brochure, 2025). Bradley also lists a lifetime warranty on stainless steel hardware for all materials and 5 years on chrome plated Zamac hardware.
-- **Metpar and Hadrian:** we haven't found a published phenolic warranty.
+- **Coverage.** Most warranties cover panels, doors and pilasters against some mix of breakage, corrosion, delamination, discoloration and defects in workmanship.
+- **Conditions.** Coverage usually depends on proper installation, use and maintenance. Vandalism is typically excluded, and installation errors or improper care can void it.
+- **Remedy.** Usually repair or replacement of the defective material. Some warranties cover material only, with no credit for labor or the cost of replacing parts.
+- **Hardware.** Often carries its own term, which can be shorter or longer than the panels': from 1 year up to lifetime on stainless steel hardware.
 
 Whatever a different site or older page says, warranty length and coverage are set by the brand and product line you buy. We'll state the warranty for your line in your quote.
 
 ## Moisture, vandal resistance and cleaning
 
-- **Moisture.** ASI and Bobrick both position phenolic for showers, pools, saunas and other wet areas. Bobrick's materials guide lists water resistance and hardness among its strengths. Bobrick also recommends solid phenolic, with its SCRC material, for wet areas.
-- **Dents, scratches and graffiti.** Bobrick lists resistance to dents, scratches and graffiti as strengths. The caveat is on black core material: a deep scratch can expose the black core. Don't count on sanding to hide damage.
-- **Cleaning.** Ammco's care sheet says to wipe with warm water and very mild soap on a nonabrasive cloth, rinse and dry with a soft cloth. Its solid core makes water exposure harmless, and the partitions can be hosed down if needed. No brushes, steel wool or scouring pads, and keep acid, alkali and bleach-based bathroom cleaners off it, rinsing any splash at once. Other brands may differ (Bobrick says hosing down laminate voids its warranty), so follow your manufacturer's care instructions.
+- **Moisture.** Manufacturers position phenolic for showers, pools, saunas and other wet areas. Water resistance and hardness are among its strengths.
+- **Dents, scratches and graffiti.** Phenolic resists dents, scratches and graffiti. The caveat is on black core material: a deep scratch can expose the black core. Don't count on sanding to hide damage.
+- **Cleaning.** A typical care routine: wipe with warm water and very mild soap on a nonabrasive cloth, rinse and dry with a soft cloth. The solid core isn't harmed by water, and some manufacturers allow hosing down. No brushes, steel wool or scouring pads, and keep acid, alkali and bleach-based bathroom cleaners off it, rinsing any splash at once. Care rules differ by brand (hosing down can void some laminate warranties), so follow your manufacturer's care instructions.
 
 ## Where phenolic fits
 
@@ -75,12 +66,12 @@ Phenolic suits restrooms that combine water with heavy use: school and universit
 
 Phenolic is available in all four mounting styles from at least one brand we carry:
 
-| Mounting style | Phenolic offered (source) |
+| Mounting style | Phenolic offered |
 |---|---|
-| [Floor mounted](/mounting-styles/floor-mounted) | Bobrick 1081; Hadrian |
-| [Overhead braced](/mounting-styles/overhead-braced) | Bobrick 1082; Bradley PH400 (Series 400); Bradley also lists floor braced (Series 500) |
-| [Ceiling hung](/mounting-styles/ceiling-hung) | Bobrick 1088; Bradley Series 600 (its brochure does not recommend ceilings over eight feet); Hadrian. Bobrick requires ceiling structure to support 275 lb per compact grade partition (TB-32) |
-| [Floor to ceiling](/mounting-styles/floor-to-ceiling) | Bobrick 1086; Bradley Series 700; Hadrian |
+| [Floor mounted](/mounting-styles/floor-mounted) | Offered by several manufacturers |
+| [Overhead braced](/mounting-styles/overhead-braced) | Offered by several manufacturers; floor braced versions also exist |
+| [Ceiling hung](/mounting-styles/ceiling-hung) | Offered by several manufacturers. Check the ceiling height limit (some lines aren't recommended for ceilings over eight feet) and the ceiling load required (one published requirement is 275 lb per compact grade partition) |
+| [Floor to ceiling](/mounting-styles/floor-to-ceiling) | Offered by several manufacturers |
 
 ## Compare with other materials
 
@@ -95,19 +86,19 @@ Our quotes cover panels, doors, pilasters, headrails, hinges, slide latches, kee
 ## FAQ
 
 ### Is phenolic the same as compact laminate?
-In practice, yes. Bobrick calls its phenolic material compact grade laminate (CGL), with melamine faces and a black phenolic-resin core.
+In practice, yes. Phenolic is also called compact grade laminate (CGL): melamine faces over a phenolic-resin core.
 
 ### How thick are phenolic bathroom partitions?
-Bobrick, Bradley and Metpar make panels 1/2" thick, with 3/4" doors and pilasters. Measure yours before ordering parts.
+Panels are typically 1/2" thick, with 3/4" doors and pilasters. Measure yours before ordering parts.
 
 ### Are phenolic partitions Class A?
-It depends on the line. Bobrick's 1180 is Class A and its 1080 is Class B. ASI's Color-Thru is Class A as standard and its black core is Class B as standard, with Class A optional. Ask for the class of the line you are specifying.
+It depends on the line. Black core is usually Class B as standard, often with Class A as an option. Color-through and some other lines are Class A. Ask for the class of the line you are specifying.
 
 ### What is the warranty on phenolic partitions?
-It depends on the brand. Bobrick gives 25 years on its DuraLineSeries compact grade laminate and ASI lists 25 years, Ammco (All American Metal) 10 years and Bradley's phenolic carries 3 years against delamination and discoloration. Coverage terms are in each manufacturer's warranty document.
+It depends on the brand. Published terms run from 3 to 25 years, and many lines carry 25. Coverage terms are in each manufacturer's warranty document.
 
 ### Is phenolic good for pools and showers?
-Manufacturers position it for those areas. ASI says black core phenolic holds up under severe moisture from showers, pools and saunas.
+Manufacturers position it for those areas and say black core phenolic holds up under severe moisture from showers, pools and saunas.
 
 ### Black core or color-through?
 Black core has a black, machined edge. Color-through matches the edge to the face. Deep scratches on black core can show the core.
@@ -163,3 +154,4 @@ Black core has a black, machined edge. Color-through matches the edge to the fac
 - The colors swatch block can stay as is after the swatch list is verified.
 - Internal links: /guides/ada-compliance, /hardware/hinges (wrap-around hinges), /blog/what-are-bathroom-partitions-made-of.
 - Images wanted: close-up of a black core edge beside a color-through edge; a phenolic door in a school restroom.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.
