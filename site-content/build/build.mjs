@@ -201,7 +201,7 @@ const CHECKER_CSS = `.np-chk{margin:8px 0 36px;border:1.5px solid #2d1e14;backgr
 const CHECKER_JS = `<script>(()=>{const f=document.getElementById('np-chk-form');if(!f)return;const list=document.getElementById('np-chk-list'),sum=document.getElementById('np-chk-sum');
 const v=(n)=>f.elements[n].value,n=(k)=>{const x=parseFloat(v(k));return isFinite(x)?x:null},q=(x)=>x+'"';
 const L={pass:'Pass',fail:'Fail',check:'Check'};
-const row=(s,title,text,sec)=>'<li><span class="np-chk-s np-chk-'+s+'">'+L[s]+'</span><span><b>'+title+'.</b> '+text+' <span class="np-chk-sec">('+sec+')</span></span></li>';
+const row=(s,title,text,sec)=>'<li><span class="np-chk-s np-chk-'+s+'">'+L[s]+'</span><span><b>'+title+'.</b> '+text+' <span class="np-chk-sec">(ADA '+(sec.includes(',')?'sections ':'section ')+sec+')</span></span></li>';
 function run(){const t=v('type'),W=n('w'),D=n('d'),wall=v('toilet')==='wall',front=v('loc')==='front',inswing=v('swing')==='in',gap=n('gap'),comps=n('comps'),fx=n('fixtures');
 const wc=t!=='amb',child=t==='child',out=[];
 const minW=t==='amb'?35:60,minD=t==='amb'?60:(child||!wall?59:56);

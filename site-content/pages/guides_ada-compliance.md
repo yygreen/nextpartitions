@@ -11,15 +11,17 @@ words: 1,900 (plus FAQ 320)
 
 # ADA Bathroom Requirements for Toilet Partitions
 
-ADA bathroom requirements decide more of a partition order than most buyers expect. Where a restroom has toilet compartments, at least one must be wheelchair accessible (2010 ADA Standards 213.3.1). With six or more compartments, or six or more toilets and urinals combined, an ambulatory compartment is required as well.
+ADA bathroom requirements decide more of a partition order than most buyers expect. Where a restroom has toilet compartments, at least one must be wheelchair accessible. With six or more compartments, or six or more toilets and urinals combined, an ambulatory compartment is required as well.
 
-This guide covers the rules that change what you order: compartment sizes, door location and swing, how low the panels can go, grab bars, toilet position and door hardware. Each rule shows its section number in the 2010 ADA Standards, so you can check it with your architect.
+This guide covers the rules that change what you order: compartment sizes, door location and swing, how low the panels can go, grab bars, toilet position and door hardware.
+
+**About the section numbers.** The rules come from the 2010 ADA Standards for Accessible Design, the federal rulebook for accessible buildings. It is numbered by chapter. Chapter 2 says how many accessible features a building needs: section 213.3.1, for example, is the rule that a restroom with stalls needs an accessible stall. Chapters 3 to 6 say how each feature is built: section 604.8 covers toilet compartments, 604.2 to 604.5 the toilet and its grab bars, 609 grab bars in general, 404 doors and 309 operable parts such as latches. We give the number next to each rule so your architect or code official can look it up.
 
 Planning a restroom? [Get a quote](/get-a-quote) with your layout. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
 
 ## How many accessible stalls you need
 
-The count comes from 213.3.1. It applies wherever toilet compartments are provided in a toilet room.
+The count comes from the ADA's rule on toilet compartments (section 213.3.1). It applies wherever a toilet room has stalls.
 
 | Your restroom has | Wheelchair accessible compartments | Ambulatory accessible compartments |
 |---|---|---|
@@ -31,7 +33,7 @@ The wheelchair accessible compartment is one of the compartments, not an extra s
 
 ## Wheelchair accessible compartment
 
-This is the stall most people call "the ADA stall". Its rules are in 604.8.1, with the toilet and grab bar rules in 604.2 to 604.5.
+This is the stall most people call "the ADA stall". The ADA sets its size, door and toe clearance (section 604.8.1), and where the toilet and grab bars go (sections 604.2 to 604.5).
 
 ![Plan of a wheelchair accessible toilet compartment at minimum size, with the minimum area, toilet centerline, grab bars, door clear width and door location](/images/diagrams/ada-wheelchair-stall.svg)
 
@@ -42,7 +44,9 @@ This is the stall most people call "the ADA stall". Its rules are in 604.8.1, wi
 5. Door, 32" min clear, not into the area
 6. Door opening within 4" of far partition
 
-### Size (604.8.1.1)
+### Size
+
+Section 604.8.1.1 sets the minimum size:
 
 - **Width:** 60" minimum, measured at right angles to the side wall.
 - **Depth:** 56" minimum with a wall-hung toilet, or 59" minimum with a floor-mounted toilet, measured at right angles to the rear wall.
@@ -50,21 +54,21 @@ This is the stall most people call "the ADA stall". Its rules are in 604.8.1, wi
 
 These are minimums. A larger compartment is fine as long as it meets the other rules. Ask whether a drawing gives clear or overall sizes, because the partition thickness sits between them.
 
-### Door (604.8.1.2)
+### Door
 
-The door rules shape the front of the compartment, so they matter most when you order.
+The door rules (section 604.8.1.2) shape the front of the compartment, so they matter most when you order.
 
 - **Location.** The door goes in the front partition, or in the side wall or partition farthest from the toilet. In the front partition, the door opening must be 4" maximum from the side wall or partition farthest from the toilet. In a side wall or partition, the opening must be 4" maximum from the front partition.
-- **Clear width.** At least 32" clear, measured with the door open 90 degrees (404.2.3). The door itself is wider than its clear opening.
+- **Clear width.** At least 32" clear, measured with the door open 90 degrees (the ADA's door width rule, section 404.2.3). The door itself is wider than its clear opening.
 - **Self-closing,** with a door pull on both sides near the latch.
 - **Latch-side approach.** If people approach the door from the latch side, keep 42" minimum between the door side of the compartment and any obstruction.
 - **Swing.** The door may not swing into the minimum compartment area.
 
 The ADA does not require an outswing door. It only keeps the door out of the 60" by 56" or 59" minimum area. An outswing door meets that at the minimum size. An inswing door works in a compartment made larger than the minimum, so that the whole swing falls outside the minimum area.
 
-### Toe clearance (604.8.1.4)
+### Toe clearance
 
-Toe clearance decides how low the partitions in the accessible stall can go. The front partition and at least one side partition need a toe clearance of 9" minimum above the finished floor. It runs 6" deep minimum beyond the compartment-side face of the partition. Pilasters and other support members don't count against it. Children's compartments need 12" instead of 9".
+Toe clearance (section 604.8.1.4) is the open space under a partition where a wheelchair user's feet fit. It decides how low the partitions in the accessible stall can go. The front partition and at least one side partition need a toe clearance of 9" minimum above the finished floor. It runs 6" deep minimum beyond the compartment-side face of the partition. Pilasters and other support members don't count against it. Children's compartments need 12" instead of 9".
 
 ![Front partition, side partition and a section through a partition, with the 9-inch toe clearance under the doors and panels](/images/diagrams/ada-toe-clearance.svg)
 
@@ -80,15 +84,15 @@ There are exceptions for larger compartments:
 
 Standard partitions are mounted 12" above the floor, which clears 9" easily. The question comes up with privacy partitions. If you lower the panels to 6" or less to close the gap, the accessible stall must be larger than the exception sizes, or its front and side panels must stay at 9" or more. Decide this before you order.
 
-### Toilet, seat and grab bars (604.2, 604.4, 604.5, 609)
+### Toilet, seat and grab bars
 
-- **Toilet centerline:** 16" to 18" from the side wall or partition (604.2).
-- **Seat height:** 17" to 19" above the floor, measured to the top of the seat (604.4).
-- **Side wall grab bar:** 42" long minimum, starting 12" maximum from the rear wall and reaching 54" minimum from it, on the wall closest to the toilet (604.5.1, 604.8.1.5).
-- **Rear wall grab bar:** 36" long minimum, reaching 12" minimum on one side of the toilet centerline and 24" minimum on the other (604.5.2).
-- **Grab bar height:** 33" to 36" above the floor, measured to the top of the gripping surface (609.4). Children's grab bars sit lower, at 18" to 27".
+- **Toilet centerline:** 16" to 18" from the side wall or partition (toilet location, section 604.2).
+- **Seat height:** 17" to 19" above the floor, measured to the top of the seat (seat height, section 604.4).
+- **Side wall grab bar:** 42" long minimum, starting 12" maximum from the rear wall and reaching 54" minimum from it, on the wall closest to the toilet (grab bar rules, sections 604.5.1 and 604.8.1.5).
+- **Rear wall grab bar:** 36" long minimum, reaching 12" minimum on one side of the toilet centerline and 24" minimum on the other (section 604.5.2).
+- **Grab bar height:** 33" to 36" above the floor, measured to the top of the gripping surface (grab bar position, section 609.4). Children's grab bars sit lower, at 18" to 27".
 
-Grab bars and their mountings must carry a force of 250 lb applied at any point (609.8). If a grab bar mounts on a partition panel rather than a wall, as it often does in an ambulatory stall, tell us when you order so the panel and its fixings can be specified for it.
+Grab bars and their mountings must carry a force of 250 lb applied at any point (grab bar strength, section 609.8). If a grab bar mounts on a partition panel rather than a wall, as it often does in an ambulatory stall, tell us when you order so the panel and its fixings can be specified for it.
 
 ![Rear wall, side wall and door of a wheelchair accessible compartment with grab bar, seat, dispenser, latch and coat hook heights](/images/diagrams/accessible-stall-heights.svg)
 
@@ -99,15 +103,15 @@ Grab bars and their mountings must carry a force of 250 lb applied at any point 
 5. Latch and pulls, 34"-48" high
 6. Coat hook, 15"-48" high
 
-### Door hardware (309.4, 404.2.7)
+### Door hardware
 
-Latches, pulls and other operable parts must work with one hand. They may not need tight grasping, pinching or twisting of the wrist, and the force to operate them is 5 lb maximum (309.4). They sit 34" to 48" above the floor (404.2.7).
+Latches, pulls and other operable parts must work with one hand. They may not need tight grasping, pinching or twisting of the wrist, and the force to operate them is 5 lb maximum (the rule for operable parts, section 309.4). On partition doors they sit 34" to 48" above the floor (door hardware height, section 404.2.7).
 
-This is a performance rule. It does not ban the slide latch. Slide latches made to meet 309.4 are sold, and some manufacturers state that their standard latch complies. Ask for the compliance statement for the latch on your order. See [locks and latches](/hardware/locks-latches) and [door hardware](/hardware/door-hardware).
+This is a performance rule. It does not ban the slide latch. Slide latches made to meet it are sold, and some manufacturers state that their standard latch complies. Ask for the compliance statement for the latch on your order. See [locks and latches](/hardware/locks-latches) and [door hardware](/hardware/door-hardware).
 
 ## Ambulatory accessible compartment
 
-An ambulatory compartment serves people who walk but need grab bars on both sides, such as people using crutches or a walker. The rules are in 604.8.2.
+An ambulatory compartment serves people who walk but need grab bars on both sides, such as people using crutches or a walker. Its rules are in section 604.8.2 of the ADA Standards.
 
 ![Plan of an ambulatory accessible toilet compartment with grab bars on both sides, toilet centerline and door](/images/diagrams/ada-ambulatory-stall.svg)
 
@@ -117,11 +121,11 @@ An ambulatory compartment serves people who walk but need grab bars on both side
 4. Grab bar on the other side, 42" min long
 5. Door, 32" min clear, not into the area
 
-- **When it's required:** where a toilet room has six or more compartments, or six or more toilets and urinals combined (213.3.1).
-- **Size:** 35" to 37" wide, and 60" deep minimum (604.8.2.1). Unlike the wheelchair stall, the width has a maximum.
-- **Door:** self-closing, with a pull on both sides near the latch, 32" clear, and it may not swing into the minimum compartment area (604.8.2.2). The 42" latch-side clearance applies here too.
-- **Grab bars:** a side-wall grab bar meeting 604.5.1 on both sides of the compartment (604.8.2.3).
-- **Toilet centerline:** 17" to 19" from the side wall or partition (604.2). That is a different range from the wheelchair stall.
+- **When it's required:** where a toilet room has six or more compartments, or six or more toilets and urinals combined (the toilet compartment count rule, section 213.3.1).
+- **Size:** 35" to 37" wide, and 60" deep minimum (section 604.8.2.1). Unlike the wheelchair stall, the width has a maximum.
+- **Door:** self-closing, with a pull on both sides near the latch, 32" clear, and it may not swing into the minimum compartment area (section 604.8.2.2). The 42" latch-side clearance applies here too.
+- **Grab bars:** a 42" side-wall grab bar, set like the one in the wheelchair stall, on both sides of the compartment (section 604.8.2.3).
+- **Toilet centerline:** 17" to 19" from the side wall or partition (section 604.2). That is a different range from the wheelchair stall.
 
 Because the width has a maximum, the ambulatory stall can't absorb spare room in a row. Give any extra width to another stall. The ambulatory compartment has no toe clearance rule, so its panels can match the rest of the row.
 
@@ -170,22 +174,22 @@ Need the full set of stall sizes? See [bathroom stall dimensions](/guides/bathro
 ## FAQ
 
 ### Do ADA stall doors have to swing out?
-No. The 2010 ADA Standards say only that the door may not swing into the minimum compartment area (604.8.1.2). At the minimum size, that means an outswing door. In a compartment made larger than the minimum, an inswing door is allowed if its whole swing stays outside the minimum area.
+No. The 2010 ADA Standards say only that the door may not swing into the minimum compartment area (section 604.8.1.2). At the minimum size, that means an outswing door. In a compartment made larger than the minimum, an inswing door is allowed if its whole swing stays outside the minimum area.
 
 ### How big is an ADA stall?
-A wheelchair accessible compartment is at least 60" wide. It is at least 56" deep with a wall-hung toilet or 59" deep with a floor-mounted toilet (604.8.1.1). An ambulatory compartment is 35" to 37" wide and at least 60" deep (604.8.2.1).
+A wheelchair accessible compartment is at least 60" wide. It is at least 56" deep with a wall-hung toilet or 59" deep with a floor-mounted toilet (section 604.8.1.1). An ambulatory compartment is 35" to 37" wide and at least 60" deep (section 604.8.2.1).
 
 ### When is an ambulatory stall required?
-When a toilet room has six or more toilet compartments, or six or more toilets and urinals combined (213.3.1). It is required in addition to the wheelchair accessible compartment.
+When a toilet room has six or more toilet compartments, or six or more toilets and urinals combined (section 213.3.1, the rule on how many accessible stalls a restroom needs). It is required in addition to the wheelchair accessible compartment.
 
 ### What height are ADA grab bars?
-33" to 36" above the floor, measured to the top of the gripping surface (609.4). The side wall bar is 42" long minimum and the rear wall bar 36" minimum (604.5). Grab bars for children's use go at 18" to 27".
+33" to 36" above the floor, measured to the top of the gripping surface (section 609.4). The side wall bar is 42" long minimum and the rear wall bar 36" minimum (section 604.5). Grab bars for children's use go at 18" to 27".
 
 ### Can an ADA stall have a slide latch?
-Yes, if the latch meets 309.4: it works with one hand, without tight grasping, pinching or twisting of the wrist, at 5 lb of force or less. It also sits 34" to 48" above the floor (404.2.7). Ask for the manufacturer's compliance statement for your latch.
+Yes, if the latch meets the ADA's rule for operable parts (section 309.4): it works with one hand, without tight grasping, pinching or twisting of the wrist, at 5 lb of force or less. It also sits 34" to 48" above the floor (section 404.2.7). Ask for the manufacturer's compliance statement for your latch.
 
 ### How low can the partitions be in an ADA stall?
-The front partition and at least one side partition need 9" of toe clearance above the floor, 6" deep (604.8.1.4). That's 12" in children's compartments. The rule drops away for the front partition in compartments deeper than 62" (wall-hung toilet) or 65" (floor-mounted), and for the side partition in compartments wider than 66".
+The front partition and at least one side partition need 9" of toe clearance above the floor, 6" deep (section 604.8.1.4). That's 12" in children's compartments. The rule drops away for the front partition in compartments deeper than 62" (wall-hung toilet) or 65" (floor-mounted), and for the side partition in compartments wider than 66".
 
 ## Sources
 
