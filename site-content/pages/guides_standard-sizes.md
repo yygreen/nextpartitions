@@ -29,13 +29,18 @@ Panels are the dividers between stalls. They are not numbered on the drawing; th
 
 ## Standard heights
 
+**The standard toilet partition has 58" doors and panels mounted 12" above the floor, so the top sits 70" off the floor.** Bobrick, ASI, Bradley, Metpar and Hadrian all list this as their standard. Pilasters run 82" to 83" on overhead-braced systems (Bobrick 83", Bradley 82"), 69" on floor-mounted systems (Bobrick) and 83" on ceiling-hung systems for an 8' ceiling (Bobrick). The standard stall is about 36" wide by 60" deep; the plumbing code minimum is 30" by 60" (56" deep with a wall-hung toilet). The wheelchair accessible stall is at least 60" wide by 56" or 59" deep (2010 ADA Standards 604.8.1.1). Doors and panels are 1" thick in steel, plastic laminate and solid plastic; phenolic uses 3/4" doors and 1/2" panels.
+
+There are two common exceptions. Many solid plastic lines use 55" doors and panels mounted 14" up (Scranton, ASI's No Sight-55 line, Hadrian). Privacy lines run taller and closer to the floor: Bradley 69" at 9" or 72" at 6", ASI 64" or 72" at 6" or 9", and Bobrick up to 71-3/4" at 4-1/2". Your shop drawings set the final heights.
+
 | Part | Standard size | Notes |
 |---|---|---|
 | Door and panel height | 58" | Standard across the major brands |
 | Floor clearance | 12" | The bottom of doors and panels sits 12" above the floor |
 | Solid plastic door and panel | 55", mounted 14" up | Some solid plastic lines |
-| Pilaster, overhead-braced | 82" to 83" | Varies by brand |
-| Pilaster, floor-mounted | 69" | |
+| Pilaster, overhead-braced | 82" to 83" | Bobrick 83", Bradley 82" |
+| Pilaster, floor-mounted | 69" | Bobrick |
+| Pilaster, ceiling-hung | 83" for an 8' ceiling | Bobrick; made to length up to 10' |
 
 Taller privacy versions run from about 62" to 72" high, mounted lower, between 4-1/2" and 9" above the floor. See [why do bathroom stalls have gaps](/blog/why-do-bathroom-stalls-have-gaps) for the privacy options.
 
@@ -128,7 +133,11 @@ On [bathroom stall dimensions](/guides/bathroom-stall-dimensions), including the
 - [Bradley Partitions brochure](https://media.bradleycorp.com/view/32741/3788_Bradley-Partitions-Brochure.pdf): 72" at 6", 69" at 9" for ADA. Checked 2026-10-27.
 - [Scranton Products Hiny Hiders guide specification](https://www.scrantonproducts.com/wp-content/uploads/2015/05/hiny-hiders-partitions-general-specifications.pdf): 1" HDPE, 55" doors. Checked 2026-10-27.
 - [Scranton Products, Eclipse partitions](https://www.scrantonproducts.com/products/eclipse-restroom-partitions/): 55", 62", 72" heights. Checked 2026-10-27.
-- [2010 ADA Standards, U.S. Access Board](https://www.access-board.gov/ada/): 404.2.3, 604.8.1.2, 604.8.1.4, 604.8.2.2. Checked 2026-10-27.
+- [Bobrick, DuraLine Compact Laminate 1080 Series technical data](https://www.bobrick.com/wp-content/uploads/1080_td.pdf): 83" overhead-braced stile, 69" floor-anchored stile, 83" ceiling-hung stile for 8' ceilings, made to length up to 10'. Checked 2026-10-26.
+- [Hadrian, ceiling hung phenolic partitions](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/ceiling-hung-phenolic-toilet-partitions-nst865755-p): 58" at 12". Checked 2026-10-26.
+- [Hadrian, floor to ceiling solid plastic partitions](https://sweets.construction.com/manufacturer/hadrian-solutions-ulc-nst644/products/floor-to-ceiling-solid-plastic-toilet-partitions-nst865788-p): 55" at 14". Checked 2026-10-26.
+- [International Plumbing Code 405.3.1, ICC "Significant Changes" excerpt (2018 edition)](https://www.iccsafe.org/wp-content/uploads/2018SC-PMG_P405.3.1.pdf): 30" compartment width, 60" (56" wall-hung) depth. Checked 2026-10-27.
+- [2010 ADA Standards, U.S. Access Board](https://www.access-board.gov/ada/): 404.2.3, 604.8.1.1, 604.8.1.2, 604.8.1.4, 604.8.2.2. Checked 2026-10-27.
 
 <!-- For Marc -->
 ## Corrections to the current page
