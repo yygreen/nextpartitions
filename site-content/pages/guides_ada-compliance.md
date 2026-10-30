@@ -135,7 +135,7 @@ A restroom that misses these rules can cost you three ways.
 
 - **Inspection.** Most states and cities enforce accessibility through the building code. An inspector can fail a restroom that doesn't comply, and the fix has to be made before the project is signed off. If the stall is too small or the door is in the wrong place, the partitions may have to be reordered.
 - **Lawsuits by private parties.** Anyone who meets a barrier in a place open to the public can sue under the ADA (Title III, the part that covers businesses). A federal court can order the barrier removed and make the owner pay the other side's attorney's fees. The federal law itself doesn't award money damages to the person suing, but some states do. California, for example, sets a minimum of $4,000 per violation under its Unruh Civil Rights Act.
-- **Federal enforcement.** The U.S. Department of Justice can bring its own case. Courts can then add a civil penalty, adjusted for inflation each year. As of the 2025 adjustment it is up to about $118,000 for a first violation and about $236,000 for a later one.
+- **Federal enforcement.** The U.S. Department of Justice can bring its own case. The court can then order the fix, award money damages to the people affected, and add a civil penalty of up to $118,225 for a first violation and up to $236,451 for a later one. Those are the inflation-adjusted amounts in force since July 3, 2025; the Department kept them unchanged for 2026.
 
 The cheapest fix is on paper. Changing a dimension on the drawing costs nothing; moving a pilaster, a toilet or a grab bar after installation means new parts and a second trip. That's why we check the accessible stalls on your drawing before we quote.
 
@@ -207,9 +207,11 @@ It can fail inspection until it's fixed. A member of the public can also sue und
 ## Sources
 
 - 2010 ADA Standards for Accessible Design, U.S. Access Board, https://www.access-board.gov/ada/: 213.3.1, 308.2.1, 308.3.1, 309.4, 404.2.3, 404.2.7, 604.2, 604.4, 604.5.1, 604.5.2, 604.7, 604.8.1.1, 604.8.1.2, 604.8.1.4, 604.8.1.5, 604.8.2.1, 604.8.2.2, 604.8.2.3, 604.8.3, 604.9.1, 609.3, 609.4, 609.8. Checked 2026-10-30.
-- Americans with Disabilities Act, Title III enforcement, 42 U.S.C. 12188 (private suits: injunctive relief and attorney's fees; Attorney General suits: civil penalties). Checked 2026-10-30.
-- U.S. Department of Justice, civil monetary penalties inflation adjustment, 28 CFR 85.5, Federal Register 2025-12494 (July 3, 2025): https://www.federalregister.gov/d/2025-12494. Figures from secondary summaries; confirm against the rule's table. Checked 2026-10-30.
-- California Civil Code sections 51(f) and 52(a) (Unruh Civil Rights Act; ADA violation is an Unruh violation; $4,000 minimum per violation): https://leginfo.legislature.ca.gov/. Checked 2026-10-30.
+- Americans with Disabilities Act, Title III enforcement, 42 U.S.C. 12188 (private suits: injunctive relief, including an order to alter facilities; Attorney General suits: equitable relief, monetary damages to aggrieved persons, civil penalties): https://www.law.cornell.edu/uscode/text/42/12188, checked 2026-10-30
+- Americans with Disabilities Act, attorney's fees, 42 U.S.C. 12205: https://www.law.cornell.edu/uscode/text/42/12205, checked 2026-10-30
+- U.S. Department of Justice, Civil Monetary Penalties Inflation Adjustments for 2025, 28 CFR 85.5, 90 FR (July 3, 2025), FR Doc 2025-12494 (42 U.S.C. 12188(b)(2)(C): $118,225 first violation, $236,451 subsequent, for penalties assessed after July 3, 2025): https://www.govinfo.gov/content/pkg/FR-2025-07-03/html/2025-12494.htm, checked 2026-10-30
+- U.S. Department of Justice, Civil Monetary Penalties Inflation Adjustments for 2026, FR Doc 2026-14236 (July 15, 2026): no increase for 2026, the 2025 levels stay in force: https://www.govinfo.gov/content/pkg/FR-2026-07-15/html/2026-14236.htm, checked 2026-10-30
+- California Civil Code 51(f) (a violation of the ADA is also a violation of the Unruh Civil Rights Act) and 52(a) (actual damages up to three times, "in no case less than four thousand dollars ($4,000)" for each offense, plus attorney's fees): https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=52., checked 2026-10-30
 - 2010 ADA Standards for Accessible Design, U.S. Department of Justice (PDF), https://www.ada.gov/assets/pdfs/2010-design-standards.pdf: 604.8.1.2, 604.8.1.4, 604.8.2.1 to 604.8.2.3 compared word for word with the Access Board text. Checked 2026-10-30.
 - Texas Department of Licensing and Regulation, Architectural Barriers FAQ, https://www.tdlr.texas.gov/ab/abfaq.htm: $50,000 registration and review threshold; projects below it must still comply with TAS. Checked 2026-10-30.
 - Bobrick 1080 Series technical data sheet, https://www.bobrick.com/wp-content/uploads/1080_td.pdf: slide latch with an ADA compliance statement. Checked 2026-10-26.
@@ -243,7 +245,7 @@ The live /guides/ada-compliance page has these errors (the same list as in guide
 
 ## To verify when sources are reachable
 
-- Title III civil penalty figures ($118,225 first, $236,451 subsequent after July 3, 2025) come from secondary summaries; govinfo.gov and ada.gov were not reachable from our environment. Confirm against 28 CFR 85.5 before launch. Lawyer to review the whole "What happens if" section.
+- Penalty amounts are verified against the Federal Register (2025 rule and 2026 no-change notice). Check for a new DOJ adjustment each July. Lawyer to review the "What happens if" section before launch.
 
 - California Building Code Chapter 11B and ICC A117.1: named only, no figures used. No source for either is in the repo, and the CBC and ICC sites weren't checked on 2026-10-30. Add links before launch.
 - TDLR: the $50,000 threshold was checked 2026-10-30 on the TDLR FAQ. That a Registered Accessibility Specialist reviews and inspects comes from research/installer-regulations.md (TDLR EAB at a glance PDF, which returned 404 on 2026-10-30).
