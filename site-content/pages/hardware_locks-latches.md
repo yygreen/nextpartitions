@@ -19,25 +19,25 @@ A restroom stall lock is really a privacy latch. The user slides a bolt on the i
 | Type | How it works | Typical materials |
 |---|---|---|
 | Surface-mounted slide latch | A slide bolt on the door face moves into a keeper on the pilaster | Stainless steel; chrome-plated zamac |
-| Concealed slide latch | The bolt is housed in or behind the door edge; often has an outside indicator and emergency release | Zamac die cast (Metpar); stainless or zamac (Ammco) |
+| Concealed slide latch | The bolt is housed in or behind the door edge; often has an outside indicator and emergency release | Zamac die cast; stainless steel |
 | Occupancy indicator latch | The latch turns an indicator on the outside of the door when it's locked | Stainless steel; chrome-plated or brushed zamac |
-| HDPE latch with housing | An aluminum latch in a housing, with a slide bolt and button or a slide latch and paddle | Extruded aluminum (Scranton) |
+| HDPE latch with housing | An aluminum latch in a housing, with a slide bolt and button or a slide latch and paddle | Extruded aluminum |
 
 ### Slide latches
 
-The standard bathroom stall door latch is a slide latch. Bobrick describes its version as locking the door from inside "by sliding door latch into keeper". ASI Global lists surface-mounted slide latches in stainless steel and chrome-plated zamac.
+The standard bathroom stall door latch is a slide latch. The user locks the door from inside by sliding the latch into the keeper. Surface-mounted slide latches come in stainless steel and chrome-plated zamac.
 
 ### Occupancy indicator latches
 
 An indicator latch shows people outside whether the stall is in use. Manufacturers show it in different ways:
 
-- **Metpar:** a concealed slide latch with an external two-color (green/red) "in use" indicator, designed to allow emergency access from outside. Metpar lists it as standard on its powder coated doors.
-- **Bobrick:** an optional occupancy indicator latch with a red/white indicator. In an emergency, staff insert a 3 mm Allen key into the keyhole in the cover plate and turn it to release the latch.
-- **ASI Global:** indicator slide latches in chrome-plated or brushed zamac. Its metal doors are factory-drilled for the occupancy indicator, and its phenolic occupancy latch includes emergency access.
+- **Concealed latch with indicator:** a slide latch with a two-color "in use" indicator outside, designed to allow emergency access from outside. Some lines make it standard on powder coated doors.
+- **Optional indicator latch:** an add-on with its own indicator colors. Green/red and red/white are both common. Some release in an emergency with an Allen key turned in a keyhole in the cover plate.
+- **Indicator slide latch:** in chrome-plated or brushed zamac. Some metal doors come factory-drilled for the indicator, and some phenolic occupancy latches include emergency access.
 
 ### Latches for solid plastic (HDPE) partitions
 
-Scranton Products specifies a heavy-duty extruded aluminum latch and housing on Hiny Hiders, with either a slide bolt and button or a slide latch and paddle. Scranton's spec form also lists aluminum and stainless steel latch sets with emergency access, and notes that latches and strikes can't be mixed.
+HDPE partitions typically use a heavy-duty extruded aluminum latch and housing, with either a slide bolt and button or a slide latch and paddle. Aluminum and stainless steel latch sets with emergency access are also available. On some systems, latches and strikes can't be mixed.
 
 ## Keepers and strikes
 
@@ -49,10 +49,10 @@ Scranton Products specifies a heavy-duty extruded aluminum latch and housing on 
 
 The keeper is the part on the pilaster that the latch bolt slides into. On HDPE and phenolic stalls it is often combined with a strike, a wrap-around piece that also stops the door.
 
-- Scranton specifies a 6" extruded aluminum strike and keeper with wrap-around flanges and an extruded black vinyl bumper. ASI Global lists a 6" aluminum wrap-around strike.
-- Bobrick sells separate latch and keeper packets for inswing and outswing doors. On an inswing door, the latch track stops the door swinging out past the stile. On an outswing door, the keeper stops it swinging in.
+- A 6" aluminum wrap-around strike and keeper is common, often extruded, with an extruded black vinyl bumper.
+- Some lines sell separate latch and keeper packets for inswing and outswing doors. On an inswing door, the latch track stops the door swinging out past the stile. On an outswing door, the keeper stops it swinging in.
 
-A latch that won't engage is often a keeper problem, not a latch problem. Either the door has dropped, or the keeper has moved. ASI Global's installation guide aligns the keeper with the latch bar while the door is closed and the latch engaged, then drills the pilaster through the keeper's holes. If the door has sagged, adjust the hinge first ([see Hinges](/hardware/hinges)).
+A latch that won't engage is often a keeper problem, not a latch problem. Either the door has dropped, or the keeper has moved. Keepers are usually set with the door closed and the latch engaged: line the keeper up with the latch bar, then drill the pilaster through the keeper's holes. If the door has sagged, adjust the hinge first ([see Hinges](/hardware/hinges)).
 
 The three drawings below show where to look, seen from inside the stall with the hinge pilaster on the left. The angles are exaggerated so they show.
 
@@ -66,9 +66,9 @@ The three drawings below show where to look, seen from inside the stall with the
 
 Commercial bathroom stall locks are designed so staff can open a locked stall from outside:
 
-- **Lift-to-release.** On Bobrick partitions, a locked door can be opened from outside by lifting it to disengage the latch from the keeper. ASI Global says its slotted keeper, combined with gravity hinges, allows emergency access.
-- **Key release.** Bobrick's indicator latch releases with a 3 mm Allen key.
-- **Watch your hinge choice.** Scranton's spec form states that emergency access does not work with its continuous spring hinges.
+- **Lift-to-release.** On many systems with gravity hinges, a slotted keeper lets staff open a locked door from outside by lifting it until the latch clears the keeper.
+- **Key release.** Some indicator latches release with an Allen key.
+- **Watch your hinge choice.** Emergency access may not work with continuous spring hinges.
 
 ## ADA-compliant latches
 
@@ -78,13 +78,13 @@ The 2010 ADA Standards don't require a particular latch style. They set a perfor
 - Activating force of 5 pounds maximum.
 - Operable parts 34" minimum and 48" maximum above the finish floor.
 
-The Access Board's advisory note adds that hardware usable with a closed fist or loose grip suits the most people. Bobrick states that its standard door handles and latch meet 404.2.7 and 309.4. Some manufacturers also sell dedicated accessible latches, such as Ammco's ADA concealed lever latch and Scranton's slide latch with paddle. Accessible doors also need a door pull on both sides near the latch (604.8.1.2). See [Door Hardware](/hardware/door-hardware).
+The Access Board's advisory note adds that hardware usable with a closed fist or loose grip suits the most people. A standard slide latch and handle can meet 404.2.7 and 309.4. Some manufacturers also sell dedicated accessible latches, such as concealed lever latches and slide latches with a paddle. Accessible doors also need a door pull on both sides near the latch (604.8.1.2). See [Door Hardware](/hardware/door-hardware).
 
 *Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.*
 
 ## Replacement and compatibility
 
-We can source replacement latches, keepers and strikes for ASI Global, Bobrick, Scranton Products, Bradley, Metpar and Ammco partitions. Latches aren't interchangeable across brands by default. Hole spacing and fasteners differ between systems, and some manufacturers pair a specific latch with a specific strike (Scranton states its latches and strikes can't be mixed). Send:
+We can source replacement latches, keepers and strikes for the partition brands we carry. Latches aren't interchangeable across brands by default. Hole spacing and fasteners differ between systems, and some manufacturers pair a specific latch with a specific strike. Send:
 
 1. **Brand**, if known, and **partition material**.
 2. **Latch type** from the table above, and a photo of the inside and outside of the door.
@@ -101,10 +101,10 @@ This page covers latches on toilet partition doors. For full-height washroom doo
 ## FAQ
 
 ### How do you open a locked bathroom stall from outside?
-It depends on the hardware. On many systems with gravity hinges, lifting the door frees the latch from the keeper (Bobrick, ASI Global). Some indicator latches have an emergency release; Bobrick's uses a 3 mm Allen key.
+It depends on the hardware. On many systems with gravity hinges, lifting the door frees the latch from the keeper. Some indicator latches have an emergency release that works with an Allen key.
 
 ### Is a standard slide latch ADA compliant?
-It can be. The ADA sets performance rules: one-hand operation, no tight grasping, pinching or twisting, 5 lb maximum force, mounted 34–48" above the floor (309.4, 404.2.7). Bobrick states its standard latch meets these. Check the product data for yours.
+It can be. The ADA sets performance rules: one-hand operation, no tight grasping, pinching or twisting, 5 lb maximum force, mounted 34–48" above the floor (309.4, 404.2.7). Some manufacturers state that their standard latch meets these. Check the product data for yours.
 
 ### What's the difference between a keeper and a strike?
 The keeper receives the latch bolt. A strike is the piece on the pilaster edge that the door closes against. On HDPE and phenolic stalls the two are often combined in one wrap-around part.
@@ -113,7 +113,7 @@ The keeper receives the latch bolt. A strike is the piece on the pilaster edge t
 Usually the door has dropped or the keeper has shifted. Adjust the hinge, then realign the keeper with the latch bolt.
 
 ### Can I add an occupancy indicator to existing stalls?
-Often, yes. Several manufacturers sell indicator latches as replacement parts or in door kits (ASI Global's inswing door kit includes one), but they need the right hole pattern. Send the brand and photos.
+Often, yes. Several manufacturers sell indicator latches as replacement parts or in door kits, but they need the right hole pattern. Send the brand and photos.
 
 ## Sources
 
@@ -148,3 +148,4 @@ Often, yes. Several manufacturers sell indicator latches as replacement parts or
 - Fix needed on /guides/ada-compliance, "Door Hardware" section. It says the ADA "rules out the standard slide bolt and requires a paddle latch or U-pull". That isn't in the 2010 Standards; suggest replacing it with the 309.4/404.2.7 performance rule as worded here.
 - "bathroom door latch" (260) and "washroom door latch" (140) are partly residential/room-door intent. The closing line covers them honestly; expect lower conversion.
 - Images wanted: inside and outside views of a slide latch, a concealed latch with indicator, and an HDPE latch with wrap-around strike.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.

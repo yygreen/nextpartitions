@@ -29,42 +29,42 @@ Hinges and latches have their own pages: [Hinges](/hardware/hinges) and [Locks &
 | Door pull / handle | Gives a grip to pull the door closed from inside, or open from outside | Near the latch; both sides on accessible and outswing doors |
 | Coat hook with bumper | Hook for bags and coats; the rubber bumper stops an inswing door hitting the wall or panel | Inside face of inswing doors |
 | Coat hook (no bumper) | Hook only | Inside face of outswing doors |
-| Door bumper | Cushions an outswing door | Outswing doors, near the bottom corner on the strike side (ASI Global) |
-| Door stop | Stops the door at the closed position | Pilaster or door edge; optional on many systems, and Scranton specifies one on outswing accessible doors |
+| Door bumper | Cushions an outswing door | Outswing doors, often near the bottom corner on the strike side |
+| Door stop | Stops the door at the closed position | Pilaster or door edge; optional on many systems, and some specs call for one on outswing accessible doors |
 | Keeper and strike | The latch slides into the keeper; the strike lines the pilaster edge | Pilaster, latch side |
 
-All American Metal (Ammco) lists these as separate parts for its powder coated and stainless partitions: a coat hook with bumper for inswing doors, a two-prong coat hook for outswing doors, a door bumper for outswing doors, door pulls, and strike and keeper sets. Scranton Products' Hiny Hiders specification calls for a combination coat hook and bumper, and for outswing accessible doors to get a second door pull and a door stop.
+Manufacturers usually sell these as separate parts: a coat hook with bumper for inswing doors, a two-prong coat hook for outswing doors, a door bumper for outswing doors, door pulls, and strike and keeper sets. Some specifications call for a combined coat hook and bumper, and give outswing accessible doors a second door pull and a door stop.
 
 ## Door kits
 
-Several manufacturers sell complete door kits, which is often easier than buying parts one by one:
+Several manufacturers sell complete door kits, which is often easier than buying parts one by one. Typical kits:
 
-- **All American Metal (Ammco):** in-swing, in-swing ADA, out-swing and out-swing ADA door kits for powder coated and stainless partitions.
-- **ASI Global:** an inswing no-sight slide latch door kit (latch, keeper, bottom hinge, cam, coat hook and fasteners) and an outswing ADA adder kit (two door pulls, outswing bumper and fasteners), in chrome-plated zamac or stainless steel.
+- **Swing kits:** inswing, inswing ADA, outswing and outswing ADA door kits for powder coated and stainless partitions.
+- **Latch and adder kits:** an inswing no-sight slide latch door kit (latch, keeper, bottom hinge, cam, coat hook and fasteners), or an outswing ADA adder kit (two door pulls, outswing bumper and fasteners), in chrome-plated zamac or stainless steel.
 
 A kit is a good choice when several parts on one door are worn, or when you're converting a door from inswing to outswing. Converting an existing stall to an accessible one involves more than hardware, though. Compartment size and door width also have to meet the code (see below).
 
 ## Bathroom stall door handles and pulls
 
-Whether a door gets a pull depends on its swing and whether it serves an accessible stall. ASI Global's installation guide, for example, says door pulls are provided for all outswing doors and all ADA doors. For accessible stalls, the 2010 ADA Standards require a door pull on both sides of the door, near the latch (604.8.1.2 for wheelchair-accessible compartments, 604.8.2.2 for ambulatory compartments).
+Whether a door gets a pull depends on its swing and whether it serves an accessible stall. Installation guides commonly provide pulls on all outswing doors and all ADA doors. For accessible stalls, the 2010 ADA Standards require a door pull on both sides of the door, near the latch (604.8.1.2 for wheelchair-accessible compartments, 604.8.2.2 for ambulatory compartments).
 
 Pulls must meet 404.2.7: operable with one hand, without tight grasping, pinching or twisting of the wrist (309.4), and mounted 34" minimum to 48" maximum above the finish floor. The Access Board's advisory note says hardware usable with a closed fist or loose grip suits the widest range of users.
 
-Finishes follow the rest of the hardware. Scranton specifies chrome-plated zamak pulls on Hiny Hiders, Bobrick makes door handles from Type-304 stainless with a satin finish, and ASI Global lists an anodized aluminum pull on solid plastic partitions.
+Finishes follow the rest of the hardware. Common pulls are chrome-plated zamak, Type-304 stainless with a satin finish, or anodized aluminum on solid plastic partitions.
 
 ## Coat hooks, bumpers and door stops
 
-**Coat hooks.** Section 604.8.3 of the 2010 ADA Standards requires coat hooks in accessible compartments to be within one of the reach ranges in section 308. For an unobstructed forward or side reach, that is 48" maximum and 15" minimum above the floor (308.2.1, 308.3.1). ASI Global's installation guide also cites the 48" figure. Bobrick's specifications furnish a clothes hook with every door.
+**Coat hooks.** Section 604.8.3 of the 2010 ADA Standards requires coat hooks in accessible compartments to be within one of the reach ranges in section 308. For an unobstructed forward or side reach, that is 48" maximum and 15" minimum above the floor (308.2.1, 308.3.1). Installation guides use the same 48" figure. Some lines furnish a clothes hook with every door.
 
-**Bumpers.** On an inswing door, the bumper is usually built into the coat hook. ASI Global's guide says to place it so it strikes the wall before any other part of the door. Bobrick's latch has a black rubber bumper that does the same job on inswing doors. Outswing doors get a separate bumper.
+**Bumpers.** On an inswing door, the bumper is usually built into the coat hook, and some latches have a rubber bumper that does the same job. Place it so it strikes the wall before any other part of the door. Outswing doors get a separate bumper.
 
-**Door stops.** On Bobrick partitions, the latch track stops an inswing door swinging out past the stile, and the keeper stops an outswing door swinging in. A separate door stop is an option, and Bobrick's continuous-hinge models are offered with or without one. Scranton specifies a door stop on outswing accessible doors. If a door swings past the pilaster, check the keeper and stop before replacing the hinges.
+**Door stops.** On some systems, the latch track stops an inswing door swinging out past the stile, and the keeper stops an outswing door swinging in. A separate door stop is often an option, including on continuous-hinge models. Some specs call for a door stop on outswing accessible doors. If a door swings past the pilaster, check the keeper and stop before replacing the hinges.
 
 *Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.*
 
 ## Specifying door hardware for your brand
 
-ASI Global, Bobrick, Scranton Products, Bradley, Metpar and Ammco each use their own hardware designs, hole patterns and fasteners. Bobrick, for example, factory-installs threaded inserts for its hinges and latch and uses stainless pin-in-head Torx screws. To match a part, send:
+Each manufacturer uses its own hardware designs, hole patterns and fasteners. Some factory-install threaded inserts for the hinges and latch, and use stainless pin-in-head Torx screws. To match a part, send:
 
 1. **Brand**, if you know it. If not, photos are usually enough to identify a compatible part.
 2. **Partition material and door thickness.**
@@ -121,3 +121,4 @@ The hardware can be changed with an outswing door kit, but the door, keeper and 
 - Keep the site-wide Explore More block; add Bradley under Brands.
 - /guides/ada-compliance says the ADA "rules out the standard slide bolt and requires a paddle latch or U-pull". That isn't what the Standards say. They set a performance rule (309.4), and Bobrick states its standard slide latch complies with 404.2.7 and 309.4. Please correct that guide (see /hardware/locks-latches notes).
 - Images wanted: inside view of an inswing door showing coat hook/bumper and latch; outside view of an outswing accessible door showing pulls on both sides.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.

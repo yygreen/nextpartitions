@@ -26,12 +26,12 @@ Bathroom partition hardware is the set of metal parts that holds a toilet compar
 
 ## What commercial bathroom stall hardware is made of
 
-Hardware material and finish vary by manufacturer and by partition material. Common options in manufacturers' current literature:
+Hardware material and finish vary by manufacturer and by partition material. The common options:
 
-- **Type 304 stainless steel, satin finish.** Bobrick builds the hinges, latch, keepers, coat hooks, brackets and door handles on its partitions from 18-8, Type-304 stainless steel with a satin finish.
-- **Chrome-plated zamac (die-cast zinc alloy).** Standard on many powder coated steel partitions. Metpar describes its standard hinges, latch and brackets as zamac die cast; ASI Global lists chrome-plated zamac wrap-around hinges, latches and stirrup brackets.
-- **Extruded or cast aluminum.** Usual on solid plastic (HDPE) partitions. Scranton Products specifies 8-inch extruded aluminum wrap-around hinges with a bright dip anodized finish for Hiny Hiders.
-- **Stainless upgrades.** Metpar and ASI Global both offer stainless steel hardware as an option on powder coated partitions.
+- **Type 304 stainless steel, satin finish.** Some lines make every piece from 18-8, Type-304 stainless: hinges, latch, keepers, coat hooks, brackets and door handles.
+- **Chrome-plated zamac (die-cast zinc alloy).** Standard on many powder coated steel partitions, for hinges, latches and brackets, including wrap-around hinges and stirrup brackets.
+- **Extruded or cast aluminum.** Usual on solid plastic (HDPE) partitions. A typical spec calls for 8-inch extruded aluminum wrap-around hinges with a bright dip anodized finish.
+- **Stainless upgrades.** Stainless steel hardware is often an option on powder coated partitions.
 
 ## Identify what you have before you request parts
 
@@ -46,7 +46,7 @@ Hardware material and finish vary by manufacturer and by partition material. Com
 
 Partition hardware is not universal. Hinge and latch hole patterns, pilaster thickness and fastener types differ between brands and materials. To match a part, we need to know:
 
-1. **Brand**, if you know it (Bobrick, ASI Global, Scranton Products, Bradley, Metpar, Ammco or another maker).
+1. **Brand**, if you know it. Hardware differs by brand, so tell us yours.
 2. **Partition material**: powder coated steel, stainless steel, solid plastic (HDPE), phenolic or plastic laminate.
 3. **Door and pilaster thickness.** Measure with a tape at the door edge (see the table below).
 4. **Door swing and hand**: inswing or outswing, and which side the hinges are on, viewed from outside the stall.
@@ -65,10 +65,10 @@ If you need a bracket, compare it with these common shapes, each seen facing the
 
 | Material | Door | Pilaster | Source |
 |---|---|---|---|
-| Powder coated steel | 1" | 1-1/4" | Metpar construction details |
-| Plastic laminate | 1" | 1" (Bobrick) or 1-1/4" (ASI Global) | Bobrick 1040 Series; ASI headrail sizes |
-| Solid plastic (HDPE) | 1" | 1" | Scranton spec; ASI headrail sizes |
-| Phenolic / compact laminate | 3/4" | 3/4" | Bobrick 1080 Series; ASI headrail sizes |
+| Powder coated steel | 1" | 1-1/4" | Manufacturer construction details |
+| Plastic laminate | 1" | 1" or 1-1/4" (varies by manufacturer) | Manufacturer data sheets and headrail sizes |
+| Solid plastic (HDPE) | 1" | 1" | Manufacturer specs and headrail sizes |
+| Phenolic / compact laminate | 3/4" | 3/4" | Manufacturer data sheets and headrail sizes |
 
 Typical values; older or custom partitions differ, so measure yours.
 
@@ -138,3 +138,4 @@ No. We supply partitions and parts. Installation is arranged separately with you
 - Keep the site-wide Explore More block; add Bradley under Brands.
 - Internal links to add elsewhere: link "hardware" in each material page's "Hardware Included" block to /hardware; link /guides/ada-compliance "Door Hardware" section to /hardware/door-hardware as well as locks-latches.
 - Images wanted: one labeled photo of a stall with hinge, latch, keeper, coat hook, bracket, shoe and headrail called out; close-ups of a tape measure across a door edge.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.

@@ -18,19 +18,19 @@ When one restroom stall door is dented, vandalized, warped or delaminating, you 
 
 | Material | Typical door thickness | Notes | Material page |
 |---|---|---|---|
-| Powder coated steel | 1" | Galvannealed steel over honeycomb core (Metpar) | [Powder Coated Steel](/partitions/powder-coated-steel) |
+| Powder coated steel | 1" | Galvannealed steel over honeycomb core | [Powder Coated Steel](/partitions/powder-coated-steel) |
 | Stainless steel | 1" (our stainless page lists 1" panels; confirm on your door) | Satin #4, diamond or leathergrain finishes on our current range | [Stainless Steel](/partitions/stainless-steel) |
-| Solid plastic (HDPE) | 1" | Color runs through the panel (Scranton) | [Solid Plastic (HDPE)](/partitions/solid-plastic-hdpe) |
-| Phenolic / compact laminate | 3/4" | Bobrick 1080 Series doors are 3/4" | [Phenolic](/partitions/phenolic) |
-| Plastic laminate | 1" | Particleboard core with laminate faces (Bobrick 1040 Series) | [Plastic Laminate](/partitions/plastic-laminate) |
+| Solid plastic (HDPE) | 1" | Color runs through the panel | [Solid Plastic (HDPE)](/partitions/solid-plastic-hdpe) |
+| Phenolic / compact laminate | 3/4" | Thinner than the other materials; measure yours | [Phenolic](/partitions/phenolic) |
+| Plastic laminate | 1" | Particleboard core with laminate faces | [Plastic Laminate](/partitions/plastic-laminate) |
 
 Accessible (ADA) and outswing door configurations are available in each material.
 
-**About color matching.** We match to the manufacturer's current color or the closest available finish. Colors change over the years, and an older door will have faded, so a new door may not be an exact match. Metpar warns that printed swatches are only a representation and recommends viewing an actual sample. Ask us for a sample if the match matters.
+**About color matching.** We match to the manufacturer's current color or the closest available finish. Colors change over the years, and an older door will have faded, so a new door may not be an exact match. Printed swatches only approximate a color, so view an actual sample. Ask us for a sample if the match matters.
 
 ## How to measure a stall door
 
-Measure the **door itself**, not the opening between pilasters. The door width already allows for hinge and latch clearances, and manufacturers use specific sizes. Metpar's standard powder coated door widths, for example, run from 21-5/8" to 35-5/8", not round numbers.
+Measure the **door itself**, not the opening between pilasters. The door width already allows for hinge and latch clearances, and manufacturers use specific sizes. Door widths aren't round numbers: standard widths such as 21-5/8" to 35-5/8" are common.
 
 The drawing shows the door between its pilasters, then its edge and swing.
 
@@ -44,9 +44,9 @@ The drawing shows the door between its pilasters, then its edge and swing.
 - **F** Swing and hinge side
 
 1. **Width:** edge to edge across the face of the door, at the middle.
-2. **Height:** top edge to bottom edge. Metpar's standard door is 58" high. Scranton specifies 55" high doors on Hiny Hiders. Privacy-height lines use taller doors: Metpar offers 64" and 72" series, and ASI Global offers doors up to 72".
+2. **Height:** top edge to bottom edge. Standard doors are typically 55"–58" high. Privacy-height lines use taller doors, from 64" up to 72".
 3. **Thickness:** at the door edge (see the table above).
-4. **Floor clearance:** from the floor to the bottom of the door. Metpar's standard series mounts doors 12" above the finished floor, and Scranton's specification uses 14".
+4. **Floor clearance:** from the floor to the bottom of the door. Standard doors typically sit 12"–14" above the finished floor.
 5. **Hinge positions:** from the top of the door to the center of each hinge, and the spacing of the hinge holes. On a continuous hinge, note its length.
 6. **Latch position:** from the bottom of the door to the center of the latch, and the hole spacing.
 
@@ -54,7 +54,7 @@ Write down the measurements to the nearest 1/16" and send a photo with the tape 
 
 ## Swing and hand
 
-Tell us whether the door swings **in** or **out** of the stall, and which side the hinges are on when you stand outside facing the door. Hinges and continuous hinges are often handed. Bobrick's continuous hinge, for instance, comes as "left-hand inswing or right-hand outswing" and the opposite version.
+Tell us whether the door swings **in** or **out** of the stall, and which side the hinges are on when you stand outside facing the door. Hinges and continuous hinges are often handed. A continuous hinge, for instance, may come in one version for left-hand inswing or right-hand outswing, and another for the opposite.
 
 The four plans below show each case seen from above, with you standing outside the stall at the bottom; the hinge side is orange. On many lines one door is made for two cases, so it is ordered as RH or LH: a right-hand inswing door turned over is a left-hand outswing door (both RH), and the same goes for left-hand inswing and right-hand outswing (both LH). Follow your shop drawings and the manufacturer's instructions.
 
@@ -79,11 +79,11 @@ See our [ADA compliance guide](/guides/ada-compliance) for compartment sizes.
 
 ## Privacy and no-sight doors
 
-Several manufacturers now offer doors and pilasters that close the gaps at the hinge and latch side. ASI Global's Integrated Privacy system is now standard on its stainless and powder coated steel partitions. Bobrick offers a gapless door and stile option on its 1080 Series, and Metpar sells aluminum privacy strips. A no-sight door generally needs matching pilaster hardware, so tell us if your existing stalls have privacy strips or gapless edges.
+Several manufacturers now offer doors and pilasters that close the gaps at the hinge and latch side. On some lines this is standard on stainless and powder coated steel partitions. Others offer a gapless door and stile option, or sell aluminum privacy strips. A no-sight door generally needs matching pilaster hardware, so tell us if your existing stalls have privacy strips or gapless edges.
 
 ## Hardware on the new door
 
-Ask whether your replacement door comes drilled for your existing hinges and latch. Bobrick factory-installs threaded inserts for its hinges and latch, and ASI Global factory-drills its metal doors for the occupancy indicator. If your hinges and latch are worn, replace them at the same time. See [Hinges](/hardware/hinges), [Locks & Latches](/hardware/locks-latches) and [Door Hardware](/hardware/door-hardware).
+Ask whether your replacement door comes drilled for your existing hinges and latch. Some manufacturers factory-install threaded inserts for the hinges and latch, and some factory-drill metal doors for the occupancy indicator. If your hinges and latch are worn, replace them at the same time. See [Hinges](/hardware/hinges), [Locks & Latches](/hardware/locks-latches) and [Door Hardware](/hardware/door-hardware).
 
 ## What we need to quote a replacement door
 
@@ -107,7 +107,7 @@ Yes, if the pilaster and hinges it hangs on are sound. Send the door dimensions,
 Measure the door itself, not the opening: width, height, thickness, floor clearance, hinge positions and latch position. Record to the nearest 1/16".
 
 ### What size is a standard bathroom stall door?
-It depends on the manufacturer and stall. Metpar's standard powder coated doors are 58" high, in widths from 21-5/8" to 35-5/8". Measure your existing door.
+It varies by manufacturer and stall. Standard doors are typically 55"–58" high, and widths aren't round numbers (21-5/8" to 35-5/8" is a common range). Measure your existing door.
 
 ### Will a new door match my old partition color?
 We match the current or closest finish, but fading and discontinued colors can mean a slight difference. Ask for a sample.
@@ -145,3 +145,4 @@ The opening must give a 32" minimum clear width, measured from the face of the o
 - Keep the site-wide Explore More block; add Bradley under Brands.
 - ASI's 72" door figure comes from Sweets (ASI's listing on a third-party catalog), not asi-globalpartitions.com. Drop it if you want manufacturer-site sources only.
 - Images wanted: a diagram of where to measure a stall door (width, height, thickness, floor gap, hinge and latch positions).
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.

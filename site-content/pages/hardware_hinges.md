@@ -29,17 +29,17 @@ The drawing shows three of the types in the table below: a gravity (cam) hinge, 
 |---|---|---|
 | Gravity (cam) hinge | A cam in the bottom hinge uses the door's weight to swing it to a set rest position | Most steel, stainless and laminate partitions |
 | Wrap-around hinge | Surface-mounted hinge whose flanges wrap the door and pilaster edges; through-bolted | HDPE and phenolic; also some metal partitions |
-| Barrel hinge | Compact hinge set fastened to the door and stile | Bobrick compact laminate (1080 Series) |
-| Integral hinge | Hinge formed from the door and pilaster material itself | Scranton Products Stealth (HDPE) |
-| Continuous hinge | One-piece hinge running the full height of the door; cam (gravity) or spring type | Upgrade option from Bobrick, ASI Global, Scranton, Ammco |
+| Barrel hinge | Compact hinge set fastened to the door and stile | Some compact laminate (phenolic) lines |
+| Integral hinge | Hinge formed from the door and pilaster material itself | Some solid plastic (HDPE) lines |
+| Continuous hinge | One-piece hinge running the full height of the door; cam (gravity) or spring type | Upgrade option from many manufacturers |
 
 ### Gravity (cam) hinges
 
-The most common partition hinge has a pin at the top of the door and an adjustable cam at the bottom.
+The most common partition hinge has a pin at the top of the door and an adjustable cam at the bottom. Details vary by manufacturer:
 
-- **ASI Global:** the upper hinge pin runs through the door and bracket in a nylon bushing; the bottom "gravity-positioning" hinge sits on a box cam and nylon pintle.
-- **Metpar:** a "no rise" self-closing concealed adjustable cam at the bottom, with a 3/8" chrome-plated steel pin and nylon insert at the top.
-- **Bobrick:** a "balanced hinge" with a replaceable hinge cam, adjustable to hold the door of an empty stall partly open or fully closed.
+- **Top pin:** runs through the door and bracket in a nylon bushing or insert. Some use a 3/8" chrome-plated steel pin.
+- **Bottom hinge:** sits on a box cam and nylon pintle. Some use a no-rise, self-closing concealed cam.
+- **Adjustment:** the cam is adjustable, and often replaceable, so the door of an empty stall can rest partly open or fully closed.
 
 No spring is involved, which is why these hinges are sometimes called gravity hinges.
 
@@ -49,18 +49,18 @@ At the bottom of the door, the box cam in the door's hinge rests on the cam pint
 
 ### Wrap-around hinges
 
-Wrap-around hinges mount on the surface, with flanges that wrap around the door edge and the pilaster edge, and they are through-bolted for vandal resistance. Scranton Products specifies 8-inch extruded aluminum wrap-around hinges on Hiny Hiders. They run on field-adjustable nylon cams, set in 30-degree steps. Scranton's Regal hinge is a cast aluminum version. ASI Global lists 8" aluminum wrap-around hinges for solid plastic, chrome-plated zamac and stainless versions for metal partitions, and a heavier wrap-around "vault" hinge for phenolic and HDPE.
+Wrap-around hinges mount on the surface, with flanges that wrap around the door edge and the pilaster edge, and they are through-bolted for vandal resistance. On solid plastic they are typically 8-inch extruded aluminum, running on field-adjustable nylon cams set in 30-degree steps. Cast aluminum versions exist too. Metal partitions use chrome-plated zamac or stainless versions, and heavier wrap-around hinges are made for phenolic and HDPE.
 
 ### Continuous hinges
 
-A continuous (piano) hinge runs the full height of the door. Bobrick's continuous option is a one-piece, full-height 16-gauge (1.6 mm) Type-304 stainless steel hinge. It is a gravity type, and Bobrick notes it relies on door weight to close, "which may result in door slamming". Scranton's spec form lists 54" continuous hinges in aluminum (spring) and stainless steel (cam or spring). Ammco lists both a stainless "cam" piano hinge and a spring-loaded piano hinge. One trade-off to check: Scranton's spec form states that emergency access does not work with its continuous spring hinges.
+A continuous (piano) hinge runs the full height of the door. They come in cam (gravity) and spring types, in aluminum or stainless steel. Stainless versions are often one-piece, 16-gauge (1.6 mm) Type-304. Lengths vary; 54" is one listed size. A gravity-type continuous hinge relies on door weight to close, which can make the door slam. One trade-off to check: emergency access may not work with continuous spring hinges.
 
 ## Rest position and self-closing doors
 
 Gravity and cam hinges let you choose where the door rests:
 
-- **Standard inswing doors** can be set to rest slightly open, so an empty stall looks empty. Scranton's continuous cam hinge is set to 15° open as standard on inswing doors.
-- **Accessible stall doors** must be self-closing under the 2010 ADA Standards (604.8.1.2 and 604.8.2.2). Scranton sets its continuous cam hinge closed for accessible and outswing doors.
+- **Standard inswing doors** can be set to rest slightly open, so an empty stall looks empty. A continuous cam hinge may come set to 15° open on inswing doors.
+- **Accessible stall doors** must be self-closing under the 2010 ADA Standards (604.8.1.2 and 604.8.2.2). Cam hinges on accessible and outswing doors are set closed.
 - **Spring hinges** on accessible doors must take at least 1.5 seconds to close from 70° open (404.2.8.2).
 
 *Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.*
@@ -69,10 +69,10 @@ Gravity and cam hinges let you choose where the door rests:
 
 Before you replace a hinge, try adjusting it. Manufacturers' instructions put the adjustment at the bottom hinge cam:
 
-1. **Find the adjustment.** On ASI Global metal partitions, the lowest point of the cam pintle sets the rest position. On ASI's HDPE vault hinge, you loosen the adjusting nut on the bottom hinge and turn the cam. Scranton's wrap-around hinges adjust in 30° steps. Bobrick publishes cam settings on its data sheets.
-2. **Lift the door off if needed.** On ASI's gravity hinges, the door sits on the bottom cam and the top pin goes in from above.
+1. **Find the adjustment.** On metal partitions, the lowest point of the cam pintle usually sets the rest position. On many HDPE hinges, you loosen the adjusting nut on the bottom hinge and turn the cam. Some wrap-around hinges adjust in 30° steps. Check your data sheet for cam settings.
+2. **Lift the door off if needed.** On gravity hinges, the door sits on the bottom cam and the top pin goes in from above.
 3. **Set the position, then tighten** the locking nut.
-4. **Clean and lubricate.** Bobrick says cleaning and lubricating the hinge is needed to prevent failure. Use a PTFE-based lubricant, not machine oil or WD-40, which collect dust and dirt.
+4. **Clean and lubricate.** Regular cleaning and lubrication help prevent hinge failure. Use a PTFE-based lubricant, not machine oil or WD-40, which collect dust and dirt.
 
 For step 2, the top pin comes out upward. It runs through the door and the top hinge bracket, turns in a nylon bushing, and sits flush with the top of the door.
 
@@ -82,14 +82,14 @@ If the door won't latch after adjusting, check the keeper and strike alignment t
 
 ## When to replace a hinge
 
-Replace hinge parts when adjusting doesn't fix the problem, for example when the cam is worn, the pin is bent, a nylon bushing or pintle is missing, or the door no longer hangs square. Many manufacturers sell the wearing parts separately. Bobrick sells hinge cams on their own and complete hinge sets. ASI Global's door kits include the bottom hinge, box cam and nylon pintle.
+Replace hinge parts when adjusting doesn't fix the problem, for example when the cam is worn, the pin is bent, a nylon bushing or pintle is missing, or the door no longer hangs square. Many manufacturers sell the wearing parts separately: hinge cams on their own, complete hinge sets, or door kits with the bottom hinge, box cam and nylon pintle.
 
 ## What to send for a replacement hinge
 
 1. **Brand**, if known, and **partition material**.
 2. **Hinge type** from the table above, plus a photo.
 3. **Door thickness** and **pilaster thickness**.
-4. **Swing and hand**: inswing or outswing, and which side the hinge is on viewed from outside. Hinges are often handed; Bobrick, for example, sells separate L and J hinge sets.
+4. **Swing and hand**: inswing or outswing, and which side the hinge is on viewed from outside. Hinges are often handed and sold as separate sets for each hand.
 5. **Finish**: satin stainless, chrome-plated, aluminum or other.
 
 To read the hand, stand outside the stall and face the door: the side the hinge is on gives the hand, and the swing is in or out. The plans below show the four cases from above, hinge side in orange. On many lines one hinge or door covers two cases, ordered as RH or LH: a right-hand inswing door turned over is a left-hand outswing door (both RH), and the same goes for left-hand inswing and right-hand outswing (both LH).
@@ -114,13 +114,13 @@ Usually the bottom hinge cam needs adjusting, or it is worn. Gravity and cam hin
 A hinge that uses the door's own weight, acting on a cam in the bottom hinge, to swing the door to its rest position. It has no spring.
 
 ### Are continuous hinges better?
-They spread the load along the whole door edge and close the gap at the hinge side. Bobrick notes its gravity-type continuous hinge can let doors slam, and Scranton notes its continuous spring hinges don't work with emergency access. Choose based on your priorities.
+They spread the load along the whole door edge and close the gap at the hinge side. But gravity-type continuous hinges can let doors slam, and continuous spring hinges may not work with emergency access. Choose based on your priorities.
 
 ### Do ADA stall doors need self-closing hinges?
 Yes. The 2010 ADA Standards require accessible compartment doors to be self-closing (604.8.1.2, 604.8.2.2). Spring hinges must take at least 1.5 seconds to close from 70° open (404.2.8.2).
 
 ### What lubricant should I use on stall hinges?
-Bobrick recommends a PTFE (Teflon-type) lubricant and advises against machine oil or WD-40, which collect dust and dirt.
+Use a PTFE (Teflon-type) lubricant. Avoid machine oil or WD-40, which collect dust and dirt.
 
 ## Sources
 
@@ -154,3 +154,4 @@ Bobrick recommends a PTFE (Teflon-type) lubricant and advises against machine oi
 - Keep the site-wide Explore More block; add Bradley under Brands.
 - Internal links to add: /hardware/door-hardware already links here; /guides/ada-compliance should link "self-closing" to this page.
 - Images wanted: close-ups of a gravity hinge bottom cam, an 8" wrap-around hinge on HDPE, a full-height continuous hinge.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.

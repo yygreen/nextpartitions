@@ -42,7 +42,7 @@ The front view below names the main parts of a run of stalls; the table lists th
 | Floor and ceiling anchors, leveling bolts | Anchor and level pilasters | Steel hardware; varies by brand |
 | Through-bolts, sex bolts, barrel nuts, tamper-resistant screws | Fasten hardware to panels and pilasters | Stainless steel |
 
-Materials above come from current manufacturer literature: All American Metal (Ammco) lists single-ear and double-ear sets, U-brackets, alcove brackets, aluminum and stainless continuous brackets, a headrail return set and pilaster mounting kits for its powder coated partitions. ASI Global lists stainless steel, aluminum and chrome-plated zamac brackets and stainless steel shoes. Scranton Products specifies stainless steel or molded HDPE pilaster sleeves on Hiny Hiders.
+The materials above come from current manufacturer literature. Bracket parts are commonly sold as single-ear and double-ear sets, U-brackets, alcove brackets, aluminum and stainless continuous brackets, headrail return sets and pilaster mounting kits. Brackets come in stainless steel, aluminum and chrome-plated zamac. Shoes are usually stainless steel, and some HDPE systems use molded HDPE pilaster sleeves.
 
 ## How thick are bathroom stall partitions?
 
@@ -50,16 +50,16 @@ Bracket and headrail sizes follow the panel and pilaster thickness, so measure b
 
 | Material | Panels | Doors | Pilasters |
 |---|---|---|---|
-| Powder coated steel (Metpar) | 1" | 1" | 1-1/4" |
-| Plastic laminate (Bobrick 1040 Series) | 1" | 1" | 1" |
-| Solid plastic HDPE (Scranton Hiny Hiders) | 1" | 1" | 1" |
-| Phenolic / compact laminate (Bobrick 1080 Series) | 1/2" | 3/4" | 3/4" |
+| Powder coated steel | 1" | 1" | 1-1/4" |
+| Plastic laminate | 1" | 1" | 1" or 1-1/4" (varies by manufacturer) |
+| Solid plastic (HDPE) | 1" | 1" | 1" |
+| Phenolic / compact laminate | 1/2" | 3/4" | 3/4" |
 
-ASI Global sizes its anti-grip headrail by pilaster thickness: 1-1/4" for powder coated, stainless steel and plastic laminate, 1" for solid plastic and 3/4" for phenolic. That is a quick way to confirm which headrail you need. Thickness can vary on older or custom systems, so check yours with a tape at the edge.
+Anti-grip headrails are often sized by pilaster thickness, for example 1-1/4" for powder coated, stainless steel and plastic laminate, 1" for solid plastic and 3/4" for phenolic. That is a quick way to confirm which headrail you need. Thickness can vary on older or custom systems, so check yours with a tape at the edge.
 
 ## Brackets: standard vs. continuous
 
-Standard brackets are short pieces, usually two or three per joint. Continuous brackets run the full height of the panel. Bobrick's continuous option uses one-piece, full-height U-channels and angle brackets in 18-gauge (1.2 mm) Type-304 stainless steel. Metpar says its continuous brackets add strength and remove the line of sight at the panel joints, and recommends them where vandalism or privacy is a concern.
+Standard brackets are short pieces, usually two or three per joint. Continuous brackets run the full height of the panel, often as one-piece U-channels and angle brackets in Type-304 stainless steel (18-gauge, 1.2 mm, on some lines). They add strength and remove the line of sight at the panel joints, so they suit sites where vandalism or privacy is a concern.
 
 The drawing shows four common bracket shapes, each as you see it facing the wall and from above. The opening is sized to what it holds: on phenolic, 3/4" for pilasters and 1/2" for panels, and stirrup brackets come in both. Other materials are thicker, so measure yours, and follow your shop drawings and the manufacturer's instructions.
 
@@ -88,20 +88,18 @@ Hand is read the same way for pilasters as for doors (see the plans under "What 
 
 The shoe covers the pilaster base and the floor fastening. It is often the first part to look worn, because mop water and cleaning chemicals sit against it.
 
-- **Bobrick** shoes are 18-8, Type-304, 22-gauge stainless steel (1080 Series).
-- **Metpar** uses a 4" high, #4 finish stainless steel shoe on its powder coated partitions.
-- **ASI Global** lists a Type 304 stainless steel shoe (Easy-Stall) on its steel partitions.
-- **Scranton Products** specifies 3" high pilaster sleeves in molded HDPE or 20-gauge stainless steel for overhead-braced Hiny Hiders, and 4" stainless steel sleeves for floor-to-ceiling and ceiling-hung stalls.
+- **Material:** usually Type-304 stainless steel, in gauges such as 20 or 22, sometimes with a #4 finish. Some HDPE systems use molded HDPE sleeves.
+- **Height:** typically 3"–4". Overhead-braced stalls may use 3" sleeves, and floor-to-ceiling and ceiling-hung stalls 4" sleeves.
 
 Measure the shoe's height and the pilaster's width and thickness when you request one.
 
 ## Headrails
 
-Overhead-braced stalls use a headrail across the pilaster tops. Manufacturers use an anti-grip profile so people can't hang from it: Metpar describes a pointed top, and Scranton specifies extruded aluminum with an anti-grip design and clear anodized finish. ASI Global lists 65" and 98" headrail lengths. For more on how headrails fit each mounting style, see [Overhead Braced](/mounting-styles/overhead-braced).
+Overhead-braced stalls use a headrail across the pilaster tops. Manufacturers use an anti-grip profile, such as a pointed top, so people can't hang from it. Headrails are usually extruded aluminum with a clear anodized finish, and come in set lengths such as 65" and 98". For more on how headrails fit each mounting style, see [Overhead Braced](/mounting-styles/overhead-braced).
 
 ## Fasteners
 
-Most commercial partitions use tamper-resistant fasteners. Bobrick supplies stainless steel pin-in-head Torx screws for its hardware and brackets, and Scranton specifies stainless steel tamper-resistant Torx head sex bolts. You'll need the matching driver bit to remove and refit them. Tell us the head type when you request fasteners.
+Most commercial partitions use tamper-resistant fasteners, such as stainless steel pin-in-head Torx screws and tamper-resistant Torx head sex bolts. You'll need the matching driver bit to remove and refit them. Tell us the head type when you request fasteners.
 
 ## What to send when requesting parts
 
@@ -141,7 +139,7 @@ Sometimes, if the panel thickness matches, but hole positions and fastener sizes
 Continuous brackets spread the load over the whole joint and close the gap people can see through. They're an upgrade option from several manufacturers.
 
 ### What tool removes partition fasteners?
-Most commercial partitions use tamper-resistant Torx-type fasteners, so you need the matching security bit. Bobrick uses pin-in-head Torx screws, for example.
+Most commercial partitions use tamper-resistant Torx-type fasteners, such as pin-in-head Torx screws, so you need the matching security bit.
 
 ## Sources
 
@@ -174,3 +172,4 @@ Most commercial partitions use tamper-resistant Torx-type fasteners, so you need
 - Site-wide inconsistency to fix: /partitions/phenolic lists "Pilaster Thickness 1/2"". Bobrick (3/4" stiles) and ASI (3/4" phenolic headrail) both point to 3/4" phenolic pilasters. Please check with Abe and correct that page.
 - Internal links to add: /mounting-styles/overhead-braced should link "headrail" to this page.
 - Images wanted: labeled photos of a U-bracket, wall bracket, continuous bracket, stirrup bracket, pilaster shoe and headrail end.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.
