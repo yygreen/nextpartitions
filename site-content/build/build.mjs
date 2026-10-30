@@ -196,7 +196,7 @@ const CHECKER_CSS = `.np-chk{margin:8px 0 36px;border:1.5px solid #2d1e14;backgr
 .np-chk-out{margin:16px 20px 0;padding:16px 0 0;border-top:1px solid var(--border,#e5e0da)}.np-chk-h{font-size:17px;font-weight:700;color:#1c0e05;margin:0 0 12px}
 .np-chk-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}.np-chk-list li{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:start;font-size:15px;line-height:1.5;color:#3d2f25}
 .np-chk-s{display:inline-block;text-align:center;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 0;border-radius:4px;margin-top:2px}.np-chk-pass{background:#e8f3ec;color:#1d6b3a}.np-chk-fail{background:#fde8e4;color:#a1260d}.np-chk-check{background:#fff1e5;color:#8a4300}
-.np-chk-list b{color:#1c0e05}.np-chk-sec{color:#7a6a5e;white-space:nowrap}.np-chk-end{padding:16px 20px 20px}.np-chk-end .np-cta{margin-top:4px}.np-chk-note{margin:12px 0 0!important;font-size:13px!important;line-height:1.5;color:#7a6a5e}`
+.np-chk-list b{color:#1c0e05}.np-chk-sec{color:#7a6a5e}.np-chk-end{padding:16px 20px 20px}.np-chk-end .np-cta{margin-top:4px}.np-chk-note{margin:12px 0 0!important;font-size:13px!important;line-height:1.5;color:#7a6a5e}`
 // The rules, in the order the page explains them. Statuses: pass, fail, or check (the inputs can't settle it).
 const CHECKER_JS = `<script>(()=>{const f=document.getElementById('np-chk-form');if(!f)return;const list=document.getElementById('np-chk-list'),sum=document.getElementById('np-chk-sum');
 const v=(n)=>f.elements[n].value,n=(k)=>{const x=parseFloat(v(k));return isFinite(x)?x:null},q=(x)=>x+'"';
