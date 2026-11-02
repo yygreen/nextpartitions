@@ -56,6 +56,25 @@ Repair makes sense when the panels, doors and pilasters are sound. Replace when 
 | Gaps and privacy | Privacy strips or continuous hinges, where your line offers them | No-sightline doors or taller doors, which need matching pilasters |
 | Layout or fixtures changing | Not a repair job | Yes |
 
+A door that won't latch is the most common repair. It usually has one of three causes, and none of them needs a new door:
+
+![Three causes of a door that won't latch: pilaster out of plumb, door dropped at the latch side, keeper out of line](/images/diagrams/door-latch-problems.svg)
+
+- **A** Pilaster out of plumb: the gap at the latch edge is wider at the top than at the bottom. Re-set the pilaster at its leveling screw or nuts and its brackets.
+- **B** Door dropped at the latch side: the latch sits below the keeper. Check that the hinges are plumb and their screws tight, then reset the door.
+- **C** Keeper out of line with the latch: the door hangs square but the latch misses. Move the keeper so the latch slides freely into it.
+
+If you do replace a door, measure it before you order:
+
+![How to measure a bathroom stall door for a replacement](/images/diagrams/measure-replacement-door.svg)
+
+- **A** Door width
+- **B** Door height
+- **C** Opening between pilasters
+- **D** Floor to door bottom
+- **E** Door thickness
+- **F** Swing and hinge side
+
 Two limits on repairs:
 
 - **Hardware isn't universal.** Hole patterns, hinge styles and fasteners differ by brand and material. Latches aren't interchangeable across brands by default. Send the brand, material, thickness and photos with any [hardware request](/hardware).
@@ -69,9 +88,16 @@ What's the most common reason customers replace their stalls rather than repair 
 
 Most replacements keep the toilets where they are. That means keeping the compartments where they are too.
 
+![Plan of an empty restroom seen from above, with the stall wall run, room depth, entry door and toilet centerlines lettered](/images/diagrams/measure-new-restroom-plan.svg)
+
+- **A.** Room width along the wall where the stalls go.
+- **B.** Room depth, from the stall wall to the opposite wall.
+- **D.** Entry door location and which way it swings.
+- **E.** Toilet centerlines, measured from the side wall.
+
 1. **Measure what's there.** Record each compartment's width and depth, the pilaster positions from the side wall, the door widths, swing and hand, and the panel and pilaster thickness. Measure the door itself, not the opening. Our [stall dimensions guide](/guides/bathroom-stall-dimensions) shows what each figure means.
 2. **Measure the room.** Wall length, room depth, ceiling height, toilet centerlines, and the floor and ceiling construction. See [how to measure a restroom](/guides/restroom-layout).
-3. **Match the pilaster positions.** New pilasters in the old positions keep each toilet centered in its stall. In an accessible stall the toilet centerline must sit 16" to 18" from the side wall or partition (2010 ADA Standards 604.2).
+3. **Match the pilaster positions.** New pilasters in the old positions keep each toilet centered in its stall. In an accessible stall the toilet centerline must sit 16" to 18" from the side wall or partition (the ADA's toilet location rule, section 604.2).
 4. **Keep the mounting style if the building suits it.** Pilaster heights differ by [mounting style](/mounting-styles), about 69" floor mounted and 82" to 83" overhead braced, so a style change means new pilasters made for that style.
 5. **Reuse anchor locations where you can.** Every wall bracket needs solid backing behind it. Pilasters and brackets that land where the old ones were hit floor and backing that already carried a partition. New positions need backing confirmed before anything is drilled. Swapping short brackets for continuous ones can also mean new holes.
 
