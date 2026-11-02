@@ -4,6 +4,7 @@ Working notes for the nextpartitions.com redesign and the installer directory. R
 
 ## Business model decisions (agreed)
 
+- **Legal comes last (agreed 2026-11-02):** build the full working directory system first (staging, end to end); the lawyer reviews the listing agreement, terms, disclaimer and installer-estimate wording once it works, before anything goes public.
 - **Job coordinator (agreed 2026-10-20):** the person who sends jobs to installers, checks flagged prices and calls customers. We (the agency) handle the job coordinator role for the first months, until leads come in regularly and the work outgrows the SEO scope; then it moves to Abe's team or a hire. Prototypes show `[Coordinator name]`; docs and code say "the job coordinator". Never invent a name for this person.
 - Next Partitions sells partitions (reseller of Bobrick, ASI, Scranton, Bradley, Metpar, Ammco). It does **not** sell installation and takes **no liability** for installers' work.
 - The installer directory is **referral only**. Installers are independent businesses; the customer hires, schedules and pays them directly. Every directory page carries the standard disclaimer:
