@@ -245,6 +245,8 @@ function faqItems(section) {
 // Hero drawing: the page's own first drawing (a mounting sheet shows its single front view), or a fitting one for
 // pages that have none. Drawn straight on the dark hero (recolored by CSS: light lines, orange kept) beside the title; it stacks under the button on a phone,
 // where it shows the drawing's first phone frame. Its ids get an "h-" prefix: the same drawing is often inlined again in the page.
+// A drawing shown in the hero (and on hub cards) even though the page body no longer repeats it
+const HERO_DIAGRAM = { '/mounting-styles': 'mounting-styles-compare', '/blog/ceiling-hung-vs-floor-mounted-vs-floor-to-ceiling': 'mounting-styles-compare' }
 const HERO_FALLBACK = { '/': 'mounting-styles-compare', '/about': 'mounting-styles-compare', '/faq': 'partition-anatomy', '/brands': 'partition-anatomy', '/brands/hadrian': 'partition-anatomy', '/blog': 'stall-gaps', '/guides': 'sheet-plan', '/guides/installation-instructions': 'mounting-styles-compare', '/industries': 'sheet-plan' }
 // 3D renders (design/renders/, made by design/render3d from the drawings' numbers). In the previews they are
 // inlined as data URIs so a file opens on its own; on the live site they're served as /images/renders/<name>.jpg.
@@ -258,7 +260,7 @@ function heroArt(raw, url) {
   if (ph) return `<figure class="np-hero-photo np-hero-live"><img src="${ph[2]}" alt="${esc(ph[1])}" width="540" height="465"></figure>`
   if (HERO_RENDER[url]) return `<figure class="np-hero-photo"><img src="${renderSrc(HERO_RENDER[url])}" alt="" width="2400" height="1500"></figure>`
   const m = raw.match(/\(\/images\/diagrams\/([a-z0-9-]+)\.svg\)/)
-  const name = m ? m[1] : HERO_FALLBACK[url]
+  const name = HERO_DIAGRAM[url] || (m ? m[1] : HERO_FALLBACK[url])
   if (!name) return ''
   const art = (file) => inlineSvg(file).replace(/<title[\s\S]*?<\/title>|<desc[\s\S]*?<\/desc>/g, '').replace(/ aria-labelledby="[^"]*"/, '')
     .replace(/ id="([^"]+)"/g, ' id="h-$1"').replace(/url\(#/g, 'url(#h-')
@@ -310,7 +312,7 @@ function hubCard(item, big, filter) {
   if (mount) thumb = `<img src="${renderSrc(`${mount[1]}-hero`)}" alt="" loading="lazy">`
   else {
     const m = raw.match(/\(\/images\/diagrams\/([a-z0-9-]+)\.svg\)/)
-    const name = (m ? m[1] : HUB_THUMB[item.href] || 'partition-anatomy').replace(/-m\d?$/, '')
+    const name = (HERO_DIAGRAM[item.href] || (m ? m[1] : HUB_THUMB[item.href] || 'partition-anatomy')).replace(/-m\d?$/, '')
     const file = existsSync(`${DIAGRAMS}${name}.svg`) ? `${name}.svg` : `${m[1]}.svg`
     const pre = `c${hubN++}-`
     thumb = inlineSvg(file).replace(/<title[\s\S]*?<\/title>|<desc[\s\S]*?<\/desc>/g, '').replace(/ aria-labelledby="[^"]*"/, ' aria-hidden="true"')

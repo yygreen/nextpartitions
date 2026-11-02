@@ -24,10 +24,6 @@ There's also a fourth style the title leaves out: overhead braced. The pilasters
 [![Floor to ceiling: anchored at floor and ceiling](/images/renders/floor-to-ceiling-hero.jpg)](/mounting-styles/floor-to-ceiling)
 :::
 
-The drawing shows all four from the front, with the support system in orange.
-
-![The four bathroom partition mounting styles side by side, front view, with the support system in orange](/images/diagrams/mounting-styles-compare.svg)
-
 | | Overhead braced | Floor mounted | Ceiling hung | Floor to ceiling |
 |---|---|---|---|---|
 | Held by | Floor anchors + headrail tied to walls | Floor anchors only | Structural steel above the ceiling | Floor anchors + ceiling structure |
