@@ -78,6 +78,15 @@ Short answers are fine: a sentence, a voice note or a quick call. Your answers g
 
 If you can't share percentages for 37, an export of orders by stall type is enough; we'll work out the figures.
 
+**Cost guide: data we'd like** (/blog/bathroom-partition-cost, "How Much Do Bathroom Partitions Cost? (2026 Guide)")
+44. A typical price range per stall by material, from your quotes: powder-coated steel, plastic laminate, solid plastic, phenolic, stainless. A low and a high figure for a standard overhead-braced stall is enough (the same figures as question 19 work).
+45. A typical freight range per order, and what moves it most (distance, weight, liftgate).
+46. Typical lead times by material, standard and custom colors (question 25 covers the same; one table answers both).
+47. Roughly what share of your quote requests also ask for installation pricing?
+48. What do privacy options (no-sightline doors, taller doors) typically add per stall? (Question 15 asks the same; one range answers both.)
+
+Until these come in, the post uses published prices from other sellers and public records, each with its source, and shows a bracketed placeholder where your figure goes.
+
 ## Part 3: one quote per page (for the "expert advice" boxes)
 
 Each rebuilt page has a branded box for a short quote from you: two to four sentences, in your own words, from real jobs. Answer as many as you like; a page without an answer simply doesn't show the box. Tell us the name and role to print under each quote (yours, or someone on your team).
@@ -86,6 +95,7 @@ Each rebuilt page has a branded box for a short quote from you: two to four sent
 |---|---|
 | `/blog/what-are-bathroom-partitions-made-of` | Tell us about a restroom where the material was wrong for the building. What failed, how soon, and what should have gone in instead? |
 | `/blog/why-do-bathroom-stalls-have-gaps` | When a buyer asks for no-gap stalls, what's the first question you ask back, and why? |
+| `/blog/bathroom-partition-cost` | When a buyer asks what a stall costs, what do you need from them before you can give a number they can rely on? |
 | `/guides/ada-compliance` | What's the one ADA thing buyers get wrong on their partition order, and how do you catch it before you quote? |
 | `/guides/bathroom-stall-dimensions` | Tell us about a job where the stalls didn't fit the room as drawn. What was off, by how much, and how was it fixed? |
 | `/guides/how-to-install-toilet-partitions` | When an installation goes badly, what was usually missing before anyone picked up a drill: the wall backing, the floor, the drawings, or something else? |

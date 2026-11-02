@@ -18,6 +18,10 @@ Practical articles and guides on commercial bathroom partitions for facility man
 
 Newest first. Each post's category follows its link.
 
+- [How Much Do Bathroom Partitions Cost? (2026 Guide)](/blog/bathroom-partition-cost) · Buying guide
+- [HDPE vs Phenolic Partitions: Which Is Better?](/blog/hdpe-vs-phenolic-partitions) · Materials
+- [Plastic vs. Steel Bathroom Partitions: Pros, Cons & Best Uses](/blog/plastic-vs-steel-bathroom-partitions) · Materials
+- [When (and How) to Upgrade Your Commercial Bathroom Partitions](/blog/when-to-replace-bathroom-partitions) · Buying guide
 - [Ceiling Hung vs Floor Mounted vs Floor-to-Ceiling: Choosing the Right Mounting Style](/blog/ceiling-hung-vs-floor-mounted-vs-floor-to-ceiling) · Mounting styles
 - [What Are Bathroom Partitions Made Of?](/blog/what-are-bathroom-partitions-made-of) · Materials
 - [Why Do Bathroom Stalls Have Gaps? (And How to Eliminate Them)](/blog/why-do-bathroom-stalls-have-gaps) · Privacy
