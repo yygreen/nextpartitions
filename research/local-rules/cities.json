@@ -31,14 +31,16 @@
  },
  {
   "slug": "atlanta",
-  "note": "Check local contractor licensing or registration with the City of Atlanta Office of Buildings before work starts.",
+  "note": "The permit application needs a notarized Contractor License Affidavit showing the installer's Georgia license or exemption.",
   "authority": "City of Atlanta Office of Buildings",
-  "source_url": null,
-  "confidence": "low",
-  "research_note": "Atlanta's Office of Buildings issues a building permit only after the contractor files a notarized contractor license affidavit, or an exception affidavit, under Georgia law.",
+  "source_url": "https://atlantaga.gov/home/showpublisheddocument/33228/638406611619230000",
+  "confidence": "high",
+  "research_note": "Installer files a notarized Contractor License Affidavit or exception affidavit with the permit application; this Office of Buildings form names no separate city license.",
   "first_pass": "Atlanta requires a notarized contractor license affidavit (state license or exemption) and a city business license on file before the Office of Buildings issues a commercial permit.",
-  "code_citation": null,
-  "quote": null
+  "code_citation": "O.C.G.A. § 43-41-14",
+  "quote": "will not issue a building permit unless there is on file with each application",
+  "pass2_note": "Atlanta's Office of Buildings issues a building permit only after the contractor files a notarized contractor license affidavit, or an exception affidavit, under Georgia law.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "austin",
@@ -53,14 +55,16 @@
  },
  {
   "slug": "bakersfield",
-  "note": "Check local contractor licensing or registration with the City of Bakersfield Building Division and Treasury Division before work starts.",
-  "authority": "City of Bakersfield Building Division and Treasury Division",
-  "source_url": "https://www.bakersfieldcity.us/584/Licenses-Permits",
-  "confidence": "low",
+  "note": "Installers need a City of Bakersfield Business Tax Certificate; there's no separate city contractor license.",
+  "authority": "City of Bakersfield Building Department",
+  "source_url": "https://content.civicplus.com/api/assets/ca-bakersfield/67052738-18cd-4bc7-a3b5-03ea0bc76146",
+  "confidence": "medium",
   "research_note": "Bakersfield requires a City Business Tax Certificate for contractors, and the building permit applicant must be the California-licensed contractor or an owner-builder.",
   "first_pass": "Bakersfield has no local contractor licence; contractors need a state CSLB licence and a city Business Tax Certificate, and permits come from the city's building division.",
   "code_citation": null,
-  "quote": "The Treasury Division administers and enforces provisions of the Municipal Code relating to business tax certificates"
+  "quote": "required to have a City Business Tax Certificate",
+  "pass2_note": "Bakersfield requires a City Business Tax Certificate for contractors, and the building permit applicant must be the California-licensed contractor or an owner-builder.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "baltimore",
@@ -75,25 +79,29 @@
  },
  {
   "slug": "birmingham",
-  "note": "Check local contractor licensing or registration with the City of Birmingham Planning, Engineering and Permits before work starts.",
-  "authority": "City of Birmingham Planning, Engineering and Permits",
-  "source_url": null,
-  "confidence": "low",
+  "note": "Larger commercial jobs need an Alabama-licensed general contractor to obtain the permit; there's no separate city general contractor license.",
+  "authority": "City of Birmingham Department of Planning, Engineering and Permits",
+  "source_url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-07/PEP_BR_BuildingPermits.pdf",
+  "confidence": "medium",
   "research_note": "Birmingham requires a permit for all commercial work; contractors need an Alabama general contractor license on commercial projects valued at $50,000 or more.",
   "first_pass": "Birmingham requires a city business license for contractors, and commercial permit packages ask for it with the state contractor license (when applicable) and insurance.",
   "code_citation": null,
-  "quote": null
+  "quote": "a State General Licensed Contractor is required to obtain the permit",
+  "pass2_note": "Birmingham requires a permit for all commercial work; contractors need an Alabama general contractor license on commercial projects valued at $50,000 or more.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "boise",
-  "note": "Check local contractor licensing or registration with the City of Boise Planning and Development Services before work starts.",
-  "authority": "City of Boise Planning and Development Services; Idaho Division of Occupational and Professional Licenses",
-  "source_url": "https://www.cityofboise.org/media/9128/302-contractor-declaration-form_fillable_jan-2024.pdf",
-  "confidence": "low",
+  "note": "Installers file Boise's Contractor Registration Declaration with their Idaho contractor registration number or exemption; there's no separate city license.",
+  "authority": "City of Boise Planning & Development Services",
+  "source_url": "https://www.cityofboise.org/media/9128/302-contractor-declaration-form_june-2026.pdf",
+  "confidence": "high",
   "research_note": "Boise does not license contractors itself; the installer's Idaho contractor registration number goes on the city permit application, which is filed with Planning and Development Services.",
   "first_pass": "Boise has no separate city contractor license found; contractors need Idaho state registration (and a Public Works license where required), and permits are pulled from city Planning and Development Services.",
-  "code_citation": null,
-  "quote": null
+  "code_citation": "Idaho Code § 54-5209",
+  "quote": "Contractor Registration Number issued by the State of Idaho",
+  "pass2_note": "Boise does not license contractors itself; the installer's Idaho contractor registration number goes on the city permit application, which is filed with Planning and Development Services.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "boston",
@@ -108,25 +116,29 @@
  },
  {
   "slug": "buffalo",
-  "note": "Check local contractor licensing or registration with the City of Buffalo Office of Licenses before work starts.",
-  "authority": "City of Buffalo Office of Licenses / Permit and Inspection Services",
-  "source_url": null,
+  "note": "Check local contractor licensing or registration with the City of Buffalo Department of Permit & Inspection Services before work starts.",
+  "authority": "City of Buffalo Department of Permit & Inspection Services",
+  "source_url": "https://www.buffalony.gov/722/Permit-Process",
   "confidence": "low",
   "research_note": "Buffalo licenses contractors locally through its Office of Licenses, so installers should confirm with that office whether a city contractor license applies before pulling commercial permits.",
   "first_pass": "Buffalo licenses contractors locally through its Office of License (light commercial, general and specialty classes), so installers should confirm whether a city contractor license applies before pulling commercial permits.",
   "code_citation": null,
-  "quote": null
+  "quote": "The licensed contractor must be identified.",
+  "pass2_note": "Buffalo licenses contractors locally through its Office of Licenses, so installers should confirm with that office whether a city contractor license applies before pulling commercial permits.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "charleston",
-  "note": "Check local contractor licensing or registration with the City of Charleston Permit Center before work starts.",
-  "authority": "City of Charleston Permit Center",
-  "source_url": null,
-  "confidence": "low",
+  "note": "Installers need a City of Charleston business license and a South Carolina contractor license; there's no separate city contractor license.",
+  "authority": "City of Charleston Building Inspections Division",
+  "source_url": "https://charleston-sc.gov/DocumentCenter/View/39727/Construction-Trailer",
+  "confidence": "medium",
   "research_note": "Charleston's commercial permit checklists list a City of Charleston business license and a South Carolina contractor license; there is no separate city contractor license.",
   "first_pass": "Charleston requires a City business license and a South Carolina contractor license on commercial permit applications; there is no separate city contractor license.",
   "code_citation": null,
-  "quote": null
+  "quote": "Business License, City of Charleston",
+  "pass2_note": "Charleston's commercial permit checklists list a City of Charleston business license and a South Carolina contractor license; there is no separate city contractor license.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "charlotte",
@@ -143,12 +155,14 @@
   "slug": "chattanooga",
   "note": "Check local contractor licensing or registration with the City of Chattanooga Land Development Office before work starts.",
   "authority": "City of Chattanooga Land Development Office",
-  "source_url": null,
+  "source_url": "https://chattanooga.gov/pay-and-apply/permits-applications/commercial-building-permit",
   "confidence": "low",
   "research_note": "Chattanooga has no separate city general contractor license; permits need a Tennessee contractor license and workers' comp proof, with a city business license on larger jobs and city trade licenses for plumbing and gas.",
   "first_pass": "Chattanooga has no separate city general contractor license found; permits need a Tennessee contractor license, workers' comp proof and a business license, with city trade licenses for plumbing and gas.",
   "code_citation": null,
-  "quote": null
+  "quote": "Submit drawings and specifications showing all aspects of the project",
+  "pass2_note": "Chattanooga has no separate city general contractor license; permits need a Tennessee contractor license and workers' comp proof, with a city business license on larger jobs and city trade licenses for plumbing and gas.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "chicago",
@@ -179,25 +193,29 @@
  },
  {
   "slug": "colorado-springs",
-  "note": "Check local contractor licensing or registration with Pikes Peak Regional Building Department before work starts.",
-  "authority": "Pikes Peak Regional Building Department (PPRBD)",
-  "source_url": "https://www.elpasoco.com/pikes-peak-regional-building-department/",
-  "confidence": "low",
+  "note": "Pikes Peak Regional Building Department licenses contractors for permitted work in Colorado Springs; confirm the license class for partition installation.",
+  "authority": "Pikes Peak Regional Building Department",
+  "source_url": "https://bocc.elpasoco.com/?p=131",
+  "confidence": "medium",
   "research_note": "Contractors pull Colorado Springs permits through the Pikes Peak Regional Building Department, which licenses contractors by class and requires current insurance and a passed ICC exam.",
   "first_pass": "Colorado Springs has no state general licence; the Pikes Peak Regional Building Department licenses contractors (exam and insurance) to pull commercial permits.",
   "code_citation": null,
-  "quote": null
+  "quote": "reviews testing, experience and licensing of applicants for licenses",
+  "pass2_note": "Contractors pull Colorado Springs permits through the Pikes Peak Regional Building Department, which licenses contractors by class and requires current insurance and a passed ICC exam.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "columbia",
-  "note": "Check local contractor licensing or registration with the City of Columbia Planning and Development Services before work starts.",
+  "note": "Installers file a Contractor Qualifications form with a current City of Columbia business license and their South Carolina license.",
   "authority": "City of Columbia Planning and Development Services",
   "source_url": "https://planninganddevelopment.columbiasc.gov/wp-content/uploads/2026/04/ContractorQualifications_update2026.pdf",
-  "confidence": "low",
+  "confidence": "high",
   "research_note": "Columbia asks installers for a copy of their state LLR license and a current City of Columbia business license, plus a contractor qualifications form, when pulling permits.",
   "first_pass": "Columbia asks for the state contractor license plus a City of Columbia business license (one city document mentions a city contractor license) before issuing commercial building permits.",
   "code_citation": null,
-  "quote": null
+  "quote": "Copy of Contractors current City of Columbia Business License",
+  "pass2_note": "Columbia asks installers for a copy of their state LLR license and a current City of Columbia business license, plus a contractor qualifications form, when pulling permits.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "columbus",
@@ -234,14 +252,16 @@
  },
  {
   "slug": "dayton",
-  "note": "Check local contractor licensing or registration with the City of Dayton Building Services Division before work starts.",
-  "authority": "City of Dayton Building Services Division",
-  "source_url": "https://www.daytonohio.gov/845/Permits-Applications",
-  "confidence": "low",
+  "note": "Some work in Dayton must be done by a City of Dayton licensed contractor; confirm with Building Inspection whether partition installation is included.",
+  "authority": "City of Dayton Building Inspection Division",
+  "source_url": "https://www.daytonohio.gov/m/faq?cat=18",
+  "confidence": "medium",
   "research_note": "Dayton requires city registration and bond for some trade contractors, and its permit forms include contractor registration forms; confirm what applies to partition installers.",
   "first_pass": "Dayton requires city registration for electrical, HVAC and plumbing contractors on top of state trade licences; no city general contractor licence was confirmed for partition installation.",
   "code_citation": null,
-  "quote": "Also includes contractor registration and bond forms."
+  "quote": "may need to be done by a City of Dayton licensed contractor",
+  "pass2_note": "Dayton requires city registration and bond for some trade contractors, and its permit forms include contractor registration forms; confirm what applies to partition installers.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "denver",
@@ -256,36 +276,42 @@
  },
  {
   "slug": "des-moines",
-  "note": "Check local contractor licensing or registration with Des Moines Permit and Development Center before work starts.",
-  "authority": "Des Moines Permit and Development Center",
-  "source_url": null,
+  "note": "Check local contractor licensing or registration with the City of Des Moines Permit and Development Center before work starts.",
+  "authority": "City of Des Moines Permit and Development Center",
+  "source_url": "https://councildocs.dsm.city/ordinances/15834.pdf",
   "confidence": "low",
   "research_note": "Des Moines permits come from the Permit and Development Center; installers confirm with the city whether a local contractor registration applies, and Iowa requires state contractor registration.",
   "first_pass": "Des Moines did not show a local general contractor licence for commercial interior work; permits come from the Permit and Development Center, and Iowa requires state contractor registration.",
   "code_citation": null,
-  "quote": null
+  "quote": "holding a mechanical or plumbing contractor license",
+  "pass2_note": "Des Moines permits come from the Permit and Development Center; installers confirm with the city whether a local contractor registration applies, and Iowa requires state contractor registration.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "detroit",
-  "note": "Check local contractor licensing or registration with Detroit BSEED before work starts.",
-  "authority": "Detroit BSEED",
-  "source_url": null,
-  "confidence": "low",
+  "note": "Detroit licenses and registers contractors for certain construction work each year; confirm with BSEED whether partition installation is covered.",
+  "authority": "City of Detroit Buildings, Safety Engineering and Environmental Department (BSEED)",
+  "source_url": "https://detroitmi.gov/departments/buildings-safety-engineering-and-environmental-department-bseed/bseed-divisions/construction-inspection/bseed-contractor-license-application",
+  "confidence": "medium",
   "research_note": "Detroit requires a current Michigan contractor license first, then registration with the city's BSEED before a contractor can pull commercial permits.",
   "first_pass": "Detroit requires a current Michigan contractor licence first, then registration with the city's BSEED before a contractor can pull commercial permits.",
   "code_citation": null,
-  "quote": null
+  "quote": "contractors performing certain construction and maintenance work",
+  "pass2_note": "Detroit requires a current Michigan contractor license first, then registration with the city's BSEED before a contractor can pull commercial permits.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "durham",
-  "note": "Check local contractor licensing or registration with Durham City-County Inspections before work starts.",
-  "authority": "Durham City-County Inspections",
-  "source_url": null,
-  "confidence": "low",
+  "note": "Projects of $40,000 or more need a North Carolina licensed general contractor; there's no separate city or county contractor license.",
+  "authority": "Durham City-County Building & Safety",
+  "source_url": "https://www.durhamnc.gov/m/newsflash/home/detail/3541",
+  "confidence": "medium",
   "research_note": "Durham has no local contractor license; permits come from City-County Inspections, and North Carolina requires a state general contractor license for projects of $40,000 or more.",
   "first_pass": "Durham has no local contractor licence; permits come from City-County Building & Safety, and a state general contractor licence applies to projects over $40,000.",
-  "code_citation": null,
-  "quote": null
+  "code_citation": "N.C. Gen. Stat. § 87-1",
+  "quote": "will need a general contractor licensed in North Carolina",
+  "pass2_note": "Durham has no local contractor license; permits come from City-County Inspections, and North Carolina requires a state general contractor license for projects of $40,000 or more.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "el-paso",
@@ -324,36 +350,42 @@
  },
  {
   "slug": "greensboro",
-  "note": "Check local contractor licensing or registration with the City of Greensboro Development Services before work starts.",
+  "note": "Greensboro issues commercial permits to the general contractor, owner or tenant; no city contractor license is asked for.",
   "authority": "City of Greensboro Development Services",
-  "source_url": null,
-  "confidence": "low",
+  "source_url": "https://www.greensboro-nc.gov/home/showpublisheddocument/5075/638935433052270000",
+  "confidence": "medium",
   "research_note": "Commercial alterations in Greensboro need a permit and plan review from Development Services; installers confirm whether a city contractor bond or registration applies.",
   "first_pass": "Greensboro requires a permit and plan review for commercial alterations; contractors may need a city surety bond for some classifications, and state licensing applies.",
   "code_citation": null,
-  "quote": null
+  "quote": "This permit will be issued to (check only one)",
+  "pass2_note": "Commercial alterations in Greensboro need a permit and plan review from Development Services; installers confirm whether a city contractor bond or registration applies.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "hartford",
-  "note": "Check local contractor licensing or registration with the City of Hartford Development Services, Building Division before work starts.",
-  "authority": "City of Hartford Development Services, Building Division",
+  "note": "Check local contractor licensing or registration with the City of Hartford Licenses and Inspections before work starts.",
+  "authority": "City of Hartford Licenses and Inspections",
   "source_url": null,
   "confidence": "low",
   "research_note": "Hartford's Department of Development Services issues commercial building permits; applications ask for the installer's contractor license information where Connecticut registration applies.",
   "first_pass": "Hartford has no separate local contractor licence found for commercial work; permits are pulled from the city's Building Department, and state licences apply to trades.",
   "code_citation": null,
-  "quote": null
+  "quote": null,
+  "pass2_note": "Hartford's Department of Development Services issues commercial building permits; applications ask for the installer's contractor license information where Connecticut registration applies.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "honolulu",
-  "note": "Check local contractor licensing or registration with Honolulu Department of Planning and Permitting before work starts.",
-  "authority": "Honolulu Department of Planning and Permitting; Hawaii Contractors License Board",
-  "source_url": null,
-  "confidence": "low",
+  "note": "Building permit applications list each contractor's Hawaii license number; there's no separate county contractor license.",
+  "authority": "City and County of Honolulu Department of Planning and Permitting",
+  "source_url": "https://files.amlegal.com/pdffiles/Honolulu/ORD24-027.pdf",
+  "confidence": "medium",
   "research_note": "Honolulu has no county contractor license; the building permit application lists each contractor's Hawaii state license number under the state contractor licensing law.",
   "first_pass": "Honolulu has no county contractor license; the Hawaii state contractor license is required, and the building permit application lists the contractor's state license number.",
-  "code_citation": null,
-  "quote": null
+  "code_citation": "Revised Ordinances of Honolulu § 18-4.1",
+  "quote": "address of all contractors, subcontractors, and specialty contractors",
+  "pass2_note": "Honolulu has no county contractor license; the building permit application lists each contractor's Hawaii state license number under the state contractor licensing law.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "houston",
@@ -368,25 +400,29 @@
  },
  {
   "slug": "indianapolis",
-  "note": "Check local contractor licensing or registration with Indianapolis Business & Neighborhood Services before work starts.",
-  "authority": "Indianapolis Business & Neighborhood Services (BNS), Contractor Licensing",
-  "source_url": null,
-  "confidence": "low",
+  "note": "Construction contractors need a license from Indianapolis Business and Neighborhood Services (Beech Grove, Lawrence, Southport and Speedway excepted).",
+  "authority": "Indianapolis Department of Business and Neighborhood Services",
+  "source_url": "https://www.indy.gov/activity/contractor-licenses",
+  "confidence": "high",
   "research_note": "Indianapolis licenses general contractor companies through Business and Neighborhood Services, with a surety bond and insurance; installers confirm which license class covers commercial interior work.",
   "first_pass": "Indianapolis requires a Class A Building Contractor license (with surety bond) for commercial work, issued by Business and Neighborhood Services; Indiana has no state general contractor licence.",
   "code_citation": null,
-  "quote": null
+  "quote": "licenses individuals and businesses engaged in construction activity",
+  "pass2_note": "Indianapolis licenses general contractor companies through Business and Neighborhood Services, with a surety bond and insurance; installers confirm which license class covers commercial interior work.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "jackson",
-  "note": "Check local contractor licensing or registration with the City of Jackson Department of Planning and Development before work starts.",
-  "authority": "City of Jackson Department of Planning and Development",
+  "note": "Check local contractor licensing or registration with the City of Jackson Building Permit Division before work starts.",
+  "authority": "City of Jackson Building Permit Division",
   "source_url": null,
   "confidence": "low",
   "research_note": "Jackson, MS permit applications ask contractors for a Mississippi state contractor license, a city privilege license and liability insurance; permits come from Planning and Development.",
   "first_pass": "Jackson, MS requires its own city contractor licence from Building and Planning, plus a privilege (business) licence, in addition to the Mississippi state licence for larger jobs.",
   "code_citation": null,
-  "quote": null
+  "quote": null,
+  "pass2_note": "Jackson, MS permit applications ask contractors for a Mississippi state contractor license, a city privilege license and liability insurance; permits come from Planning and Development.",
+  "research_source": "claude-in-chrome 2026-11-03"
  },
  {
   "slug": "jacksonville",
