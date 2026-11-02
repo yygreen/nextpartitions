@@ -27,9 +27,9 @@ Steel comes in two finishes, powder coated and stainless, and they suit very dif
 
 ## How each is built
 
-![Five partition doors cut through and seen edge on at the same scale: phenolic, solid plastic (HDPE), plastic laminate, powder coated steel and stainless steel](/images/diagrams/material-sections-compare.svg)
+![Solid plastic (HDPE), powder coated steel and stainless steel partition doors cut through and seen edge on at the same scale](/images/diagrams/material-compare-plastic-steel.svg)
 
-The drawing above cuts a door of each common material through, edge on and at the same scale. The two steels share a honeycomb core; solid plastic is one sheet.
+The drawing above cuts a door of each through, edge on and at the same scale. The two steels share a honeycomb core; solid plastic is one sheet.
 
 **Solid plastic (HDPE)** has no core, no skin and no edge band. Doors, panels and pilasters are typically 1" thick, with the color running through and eased or rounded edges.
 
@@ -158,6 +158,8 @@ Follow your manufacturer's care instructions for any of them.
 One manufacturer's building-type guide points the same way. It rates HDPE good for heavy-traffic buildings such as K-12 schools, malls and recreation centers, where it rates both steels poor. For standard-use buildings such as offices, healthcare and hospitality, it rates painted metal and HDPE good and stainless poor. For prestige buildings, stainless is its best choice and HDPE and painted metal are poor.
 
 ## A short note on laminate and phenolic
+
+![Five partition doors cut through and seen edge on at the same scale: phenolic, solid plastic (HDPE), plastic laminate, powder coated steel and stainless steel](/images/diagrams/material-sections-compare.svg)
 
 **Plastic laminate** is often the cheapest "plastic" option and has the widest color choice, but its particleboard core can swell with too much moisture, and published fire ratings are Class B or C. Keep it in dry restrooms, like powder coated steel. See [plastic laminate partitions](/partitions/plastic-laminate).
 

@@ -17,6 +17,10 @@ Neither material is better everywhere. This guide compares HDPE vs phenolic poin
 
 ## How each material is made
 
+![Solid plastic (HDPE) and phenolic partition doors cut through and seen edge on at the same scale: HDPE one solid 1 inch sheet, phenolic a 3/4 inch layered core](/images/diagrams/material-compare-hdpe-phenolic.svg)
+
+Seen edge on at the same scale: HDPE is one solid sheet, 1" thick. Phenolic is thinner, 3/4", made of fused layers with decorative faces. The two drawings below show each in detail.
+
 ![Cross-section of a solid plastic (HDPE) partition door edge: one homogeneous 1 inch sheet with a rounded edge](/images/diagrams/material-section-solid-plastic.svg)
 
 1. **Core:** none. The whole 1" thickness is one homogeneous HDPE sheet.

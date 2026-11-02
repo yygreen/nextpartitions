@@ -29,7 +29,7 @@ const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 // Drawings that explain a principle rather than follow a manufacturer's drawing say so on the drawing.
 const SCHEMATIC = new Set(['mounting-styles-compare', 'partition-anatomy', 'hinge-types', 'measure-replacement-door', 'stall-gaps', 'latch-keeper',
   'material-section-phenolic', 'material-section-solid-plastic', 'material-section-plastic-laminate', 'material-section-powder-coated-steel',
-  'material-section-stainless-steel', 'material-sections-compare', 'urinal-spacing', 'measure-new-restroom-plan', 'measure-new-restroom-section'])
+  'material-section-stainless-steel', 'material-sections-compare', 'material-compare-hdpe-phenolic', 'material-compare-plastic-steel', 'urinal-spacing', 'measure-new-restroom-plan', 'measure-new-restroom-section'])
 const META = {} // name → [title, desc], reused by the phone variants
 // `frame`: a wider canvas, with the drawing centred in it (standalone drawings are 780 wide, the content column).
 function svg(name, w, h, title, desc, body, frame) {
@@ -822,6 +822,31 @@ function matSection(kind, x0, y0, len, k) {
   b += note(16, ny, 'Same scale, each door cut through and seen edge on.', 'start', 13)
   made.push(svg('material-sections-compare', 780, ny + 10, 'Partition materials compared, edge view',
     'Five partition doors side by side, each cut through and seen edge on at the same scale: phenolic 3/4 inch, layered kraft paper core with melamine faces and a machined, chamfered edge; solid plastic (HDPE) 1 inch, one solid sheet with a rounded edge; plastic laminate 1 inch, particleboard core with laminate on the faces and the edge; powder coated steel and stainless steel 1 inch, steel faces over a honeycomb core joined by a formed, interlocking edge molding.', b))
+}
+
+// Two or three materials stacked at the same scale, for the comparison posts (their hero image): each door cut
+// through and seen edge on, name and thickness beside it. No numbered callouts, so it reads in a hero.
+{
+  const pairs = {
+    'material-compare-hdpe-phenolic': [['solid-plastic', 'phenolic'], 'HDPE and phenolic partition doors compared, edge view',
+      'Two partition doors cut through and seen edge on at the same scale: solid plastic (HDPE), 1 inch, one solid sheet with a rounded edge; phenolic (compact laminate), 3/4 inch, a layered kraft paper core with melamine faces and a chamfered edge.'],
+    'material-compare-plastic-steel': [['solid-plastic', 'powder-coated-steel', 'stainless-steel'], 'Plastic and steel partition doors compared, edge view',
+      'Three partition doors cut through and seen edge on at the same scale: solid plastic (HDPE), one solid 1 inch sheet; powder coated steel and stainless steel, 1 inch, steel faces over a honeycomb core with a formed edge molding.'],
+  }
+  const label = { phenolic: ['Phenolic', '3/4", solid layered core'], 'solid-plastic': ['Solid plastic (HDPE)', '1", one solid sheet'], 'powder-coated-steel': ['Powder coated steel', '1", honeycomb core'], 'stainless-steel': ['Stainless steel', '1", honeycomb core'] }
+  for (const [name, [kinds, title, desc]] of Object.entries(pairs)) {
+    const k = kinds.length === 2 ? 120 : 92, gap = kinds.length === 2 ? 56 : 40, x0 = 300, len = 440
+    let b = '', y = 24
+    for (const kind of kinds) {
+      const sct = matSection(kind, x0, y, len, k)
+      const [n, sub] = label[kind]
+      b += text(16, y + sct.T / 2 - 4, n, { size: 24, weight: 700 }) + text(16, y + sct.T / 2 + 24, sub, { size: 19, fill: C.muted })
+      b += sct.body
+      y = sct.y1 + gap
+    }
+    b += note(16, y - gap + 34, 'Same scale, each door cut through and seen edge on.', 'start', 13)
+    made.push(svg(name, 780, Math.round(y - gap + 46), title, desc, b))
+  }
 }
 
 // ---------- urinal spacing (plan, seen from above) ----------
