@@ -12,7 +12,7 @@
  },
  {
   "slug": "albuquerque",
-  "note": "Albuquerque issues commercial building permits only to a general contractor licensed by the State of New Mexico; the city does not run its own contractor license.",
+  "note": "Albuquerque issues commercial building permits only to a general contractor licensed by the State of New Mexico.",
   "authority": "City of Albuquerque Planning Department, Building Safety",
   "source_url": "https://www.cabq.gov/planning/documents/commercial-alterations-2.pdf",
   "confidence": "high",
@@ -34,7 +34,7 @@
   "note": "The permit application needs a notarized Contractor License Affidavit showing the installer's Georgia license or exemption.",
   "authority": "City of Atlanta Office of Buildings",
   "source_url": "https://atlantaga.gov/home/showpublisheddocument/33228/638406611619230000",
-  "confidence": "high",
+  "confidence": "medium",
   "research_note": "Installer files a notarized Contractor License Affidavit or exception affidavit with the permit application; this Office of Buildings form names no separate city license.",
   "first_pass": "Atlanta requires a notarized contractor license affidavit (state license or exemption) and a city business license on file before the Office of Buildings issues a commercial permit.",
   "code_citation": "O.C.G.A. § 43-41-14",
@@ -55,7 +55,7 @@
  },
  {
   "slug": "bakersfield",
-  "note": "Installers need a City of Bakersfield Business Tax Certificate; there's no separate city contractor license.",
+  "note": "Installers need a City of Bakersfield Business Tax Certificate along with their California contractor license.",
   "authority": "City of Bakersfield Building Department",
   "source_url": "https://content.civicplus.com/api/assets/ca-bakersfield/67052738-18cd-4bc7-a3b5-03ea0bc76146",
   "confidence": "medium",
@@ -79,7 +79,7 @@
  },
  {
   "slug": "birmingham",
-  "note": "Larger commercial jobs need an Alabama-licensed general contractor to obtain the permit; there's no separate city general contractor license.",
+  "note": "Larger commercial jobs need an Alabama-licensed general contractor to obtain the permit.",
   "authority": "City of Birmingham Department of Planning, Engineering and Permits",
   "source_url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-07/PEP_BR_BuildingPermits.pdf",
   "confidence": "medium",
@@ -92,10 +92,10 @@
  },
  {
   "slug": "boise",
-  "note": "Installers file Boise's Contractor Registration Declaration with their Idaho contractor registration number or exemption; there's no separate city license.",
+  "note": "Installers file Boise's Contractor Registration Declaration with their Idaho contractor registration number or exemption.",
   "authority": "City of Boise Planning & Development Services",
   "source_url": "https://www.cityofboise.org/media/9128/302-contractor-declaration-form_june-2026.pdf",
-  "confidence": "high",
+  "confidence": "medium",
   "research_note": "Boise does not license contractors itself; the installer's Idaho contractor registration number goes on the city permit application, which is filed with Planning and Development Services.",
   "first_pass": "Boise has no separate city contractor license found; contractors need Idaho state registration (and a Public Works license where required), and permits are pulled from city Planning and Development Services.",
   "code_citation": "Idaho Code § 54-5209",
@@ -105,7 +105,7 @@
  },
  {
   "slug": "boston",
-  "note": "Boston has no separate city contractor license; the contractor applies for the permit and holds the Massachusetts construction supervisor license and home improvement registration.",
+  "note": "In Boston the contractor applies for the permit and holds the Massachusetts construction supervisor license where the work requires it.",
   "authority": "Boston Inspectional Services Department",
   "source_url": "https://www.boston.gov/sites/default/files/file/2024/02/ISD_Navigating%20the%20Permit%20Process%20Eng.pdf",
   "confidence": "medium",
@@ -129,10 +129,10 @@
  },
  {
   "slug": "charleston",
-  "note": "Installers need a City of Charleston business license and a South Carolina contractor license; there's no separate city contractor license.",
+  "note": "Check local contractor licensing or registration with the City of Charleston Building Inspections Division before work starts.",
   "authority": "City of Charleston Building Inspections Division",
   "source_url": "https://charleston-sc.gov/DocumentCenter/View/39727/Construction-Trailer",
-  "confidence": "medium",
+  "confidence": "low",
   "research_note": "Charleston's commercial permit checklists list a City of Charleston business license and a South Carolina contractor license; there is no separate city contractor license.",
   "first_pass": "Charleston requires a City business license and a South Carolina contractor license on commercial permit applications; there is no separate city contractor license.",
   "code_citation": null,
@@ -142,7 +142,7 @@
  },
  {
   "slug": "charlotte",
-  "note": "Charlotte has no separate city contractor license; the contractor pulls commercial permits from Mecklenburg County Code Enforcement and must hold the state license the work requires.",
+  "note": "Commercial permits in Charlotte come from Mecklenburg County Code Enforcement; the contractor must hold the state license the work requires.",
   "authority": "Mecklenburg County Code Enforcement (LUESA)",
   "source_url": "https://code.mecknc.gov/permitting",
   "confidence": "medium",
@@ -202,14 +202,15 @@
   "code_citation": null,
   "quote": "reviews testing, experience and licensing of applicants for licenses",
   "pass2_note": "Contractors pull Colorado Springs permits through the Pikes Peak Regional Building Department, which licenses contractors by class and requires current insurance and a passed ICC exam.",
-  "research_source": "claude-in-chrome 2026-11-03"
+  "research_source": "claude-in-chrome 2026-11-03",
+  "research_caveat": "Source is an El Paso County page; PPRBD site did not load."
  },
  {
   "slug": "columbia",
   "note": "Installers file a Contractor Qualifications form with a current City of Columbia business license and their South Carolina license.",
   "authority": "City of Columbia Planning and Development Services",
   "source_url": "https://planninganddevelopment.columbiasc.gov/wp-content/uploads/2026/04/ContractorQualifications_update2026.pdf",
-  "confidence": "high",
+  "confidence": "medium",
   "research_note": "Columbia asks installers for a copy of their state LLR license and a current City of Columbia business license, plus a contractor qualifications form, when pulling permits.",
   "first_pass": "Columbia asks for the state contractor license plus a City of Columbia business license (one city document mentions a city contractor license) before issuing commercial building permits.",
   "code_citation": null,
@@ -302,7 +303,7 @@
  },
  {
   "slug": "durham",
-  "note": "Projects of $40,000 or more need a North Carolina licensed general contractor; there's no separate city or county contractor license.",
+  "note": "Projects of $40,000 or more in Durham need a North Carolina licensed general contractor.",
   "authority": "Durham City-County Building & Safety",
   "source_url": "https://www.durhamnc.gov/m/newsflash/home/detail/3541",
   "confidence": "medium",
@@ -331,7 +332,7 @@
  },
  {
   "slug": "fresno",
-  "note": "Fresno has no separate contractor license; installers need a California contractor license and a City Business Tax Certificate, and permits come from Building and Safety.",
+  "note": "Installers need a California contractor license and a City of Fresno Business Tax Certificate; permits come from Building and Safety.",
   "authority": "City of Fresno Building and Safety / Finance Business Tax Division",
   "source_url": "https://www.fresno.gov/businesslicense",
   "confidence": "medium",
@@ -350,7 +351,7 @@
  },
  {
   "slug": "greensboro",
-  "note": "Greensboro issues commercial permits to the general contractor, owner or tenant; no city contractor license is asked for.",
+  "note": "Greensboro issues commercial permits to the general contractor, owner or tenant.",
   "authority": "City of Greensboro Development Services",
   "source_url": "https://www.greensboro-nc.gov/home/showpublisheddocument/5075/638935433052270000",
   "confidence": "medium",
@@ -372,11 +373,12 @@
   "code_citation": null,
   "quote": null,
   "pass2_note": "Hartford's Department of Development Services issues commercial building permits; applications ask for the installer's contractor license information where Connecticut registration applies.",
-  "research_source": "claude-in-chrome 2026-11-03"
+  "research_source": "claude-in-chrome 2026-11-03",
+  "research_caveat": "No page opened; agency name from search results."
  },
  {
   "slug": "honolulu",
-  "note": "Building permit applications list each contractor's Hawaii license number; there's no separate county contractor license.",
+  "note": "Building permit applications in Honolulu list each contractor's Hawaii license number.",
   "authority": "City and County of Honolulu Department of Planning and Permitting",
   "source_url": "https://files.amlegal.com/pdffiles/Honolulu/ORD24-027.pdf",
   "confidence": "medium",
@@ -422,7 +424,8 @@
   "code_citation": null,
   "quote": null,
   "pass2_note": "Jackson, MS permit applications ask contractors for a Mississippi state contractor license, a city privilege license and liability insurance; permits come from Planning and Development.",
-  "research_source": "claude-in-chrome 2026-11-03"
+  "research_source": "claude-in-chrome 2026-11-03",
+  "research_caveat": "No page opened; agency name from search results."
  },
  {
   "slug": "jacksonville",
@@ -437,7 +440,7 @@
  },
  {
   "slug": "kansas-city",
-  "note": "Kansas City licenses specific trades and residential builders before they pull permits; its license list has no commercial general-building category, so partition installation needs no separate city trade license.",
+  "note": "Kansas City licenses specific trades and residential builders before they pull permits; confirm with City Planning & Development what applies to partition installation.",
   "authority": "Kansas City Planning & Development, Permits Division",
   "source_url": "https://bizcare.kcmo.gov/contractor-licensing",
   "confidence": "medium",
@@ -632,7 +635,7 @@
  },
  {
   "slug": "new-orleans",
-  "note": "New Orleans issues local licenses for electrical and mechanical trades but lists no general contractor license; building permits come from the Department of Safety and Permits.",
+  "note": "New Orleans licenses electrical and mechanical trades locally; building permits come from the Department of Safety and Permits.",
   "authority": "New Orleans Department of Safety and Permits",
   "source_url": "https://nola.gov/safety-and-permits/contractor-licenses",
   "confidence": "medium",
@@ -843,7 +846,7 @@
  },
  {
   "slug": "salt-lake-city",
-  "note": "Salt Lake City issues commercial permits only to state-licensed contractors; there is no separate city contractor license.",
+  "note": "Salt Lake City issues commercial permits only to state-licensed contractors.",
   "authority": "Salt Lake City Building Services",
   "source_url": "https://www.slc.gov/buildingservices/building-permits/faqs/",
   "confidence": "medium",
@@ -865,7 +868,7 @@
  },
  {
   "slug": "san-diego",
-  "note": "San Diego has no separate contractor license; installers need a California contractor license plus a City business tax certificate, and permits come from Development Services.",
+  "note": "Installers need a California contractor license and a City of San Diego business tax certificate; permits come from Development Services.",
   "authority": "City of San Diego Development Services / Office of the City Treasurer",
   "source_url": "https://www.sandiego.gov/treasurer/taxesfees/btax",
   "confidence": "medium",
@@ -920,7 +923,7 @@
  },
  {
   "slug": "shreveport",
-  "note": "Shreveport requires a city contractor registration for air conditioning, heating, electrical and plumbing work; the city's registration page lists no general contractor registration.",
+  "note": "Shreveport registers air conditioning, heating, electrical and plumbing contractors; building permits come from Permits & Inspections.",
   "authority": "City of Shreveport Permits & Inspections",
   "source_url": "https://shreveportla.gov/477",
   "confidence": "medium",
@@ -1013,7 +1016,7 @@
  },
  {
   "slug": "tampa",
-  "note": "Tampa has no registration fee; contractors register their Florida license with Construction Services (registration form, workers' comp proof) to pull permits.",
+  "note": "Contractors register their Florida license with Tampa Construction Services (registration form, workers' comp proof) to pull permits.",
   "authority": "City of Tampa Construction Services",
   "source_url": "https://www.tampa.gov/sites/default/files/document/2026/guide-to-contractor-license-registrations-and-insurance-updates_ada.pdf",
   "confidence": "medium",
