@@ -24,16 +24,6 @@ There's also a fourth style the title leaves out: overhead braced. The pilasters
 [![Floor to ceiling: anchored at floor and ceiling](/images/renders/floor-to-ceiling-hero.jpg)](/mounting-styles/floor-to-ceiling)
 :::
 
-| | Overhead braced | Floor mounted | Ceiling hung | Floor to ceiling |
-|---|---|---|---|---|
-| Held by | Floor anchors + headrail tied to walls | Floor anchors only | Structural steel above the ceiling | Floor anchors + ceiling structure |
-| Floor needed | Floor that accepts anchors | Structural concrete | None: nothing touches the floor | Concrete |
-| Ceiling needed | None | None | Engineered steel supports | Structural members at the ceiling |
-| Pilaster height (typical) | 82" to 83" | Around 69" | 83" for 8' ceilings; up to about 10' | Made to the ceiling height, up to 10' |
-| Best for | Everyday restrooms | Open look, high ceilings | Clear floor, healthcare | Heavy use, schools |
-
-Sizes vary by brand and line; the manufacturer's submittal drawings set the final dimensions.
-
 ## What holds each style up
 
 ### Overhead braced
