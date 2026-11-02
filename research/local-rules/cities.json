@@ -800,8 +800,8 @@
   "first_pass": "Orange County, CA has no separate county contractor licence; a California CSLB licence is needed and a city business licence in most cities, with permits from the local building department.",
   "code_citation": null,
   "quote": null,
-  "research_caveat": "Only county code Title 7 Art. 1 read; cities with their own building departments not researched.",
-  "research_source": "claude-in-chrome batch 3 2026-11-03",
+  "research_caveat": "County code Title 7 Arts. 1-2 read (no county contractor license); applies to unincorporated areas only. Title 5 and the cities' own codes not read.",
+  "research_source": "claude-in-chrome retry 2 2026-11-03",
   "code_text_read": false
  },
  {
@@ -922,16 +922,16 @@
  },
  {
   "slug": "rochester",
-  "note": "The permit applicant in Rochester must make sure all required contractors are licensed.",
+  "note": "Rochester permit applications come from the owner, agent, architect, engineer or contractor, who must make sure all required contractors are licensed; the city code sets no general contractor license.",
   "authority": "City of Rochester Permit Office",
-  "source_url": "https://www.cityofrochester.gov/departments/neighborhood-and-business-development/building-permits",
+  "source_url": "https://ecode360.com/13765162",
   "confidence": "medium",
   "research_note": "Rochester has no general contractor license; each building permit needs a workers' compensation certificate, and plumbing and electrical work must be done by licensed contractors.",
   "first_pass": "Rochester has no clearly published general contractor license for commercial interior work; permits come from the city's Bureau of Buildings, which may ask for proof of trade licenses.",
-  "code_citation": null,
+  "code_citation": "Rochester City Code Ch. 39, Art. II; Ch. 68",
   "quote": null,
-  "research_caveat": "City code not reached; license not named. Agency name not from page.",
-  "research_source": "claude-in-chrome batch 3 2026-11-03",
+  "research_caveat": "Ch. 39 Art. II read in part; plumbing and electrical licensing chapters not opened.",
+  "research_source": "claude-in-chrome retry 2 2026-11-03",
   "code_text_read": false
  },
  {
@@ -961,16 +961,16 @@
  },
  {
   "slug": "san-antonio",
-  "note": "San Antonio registers residential building and home improvement contractors; confirm with Development Services what applies to commercial work.",
+  "note": "San Antonio registers residential building, home improvement and specific trade contractors; its code sets no commercial general contractor registration.",
   "authority": "City of San Antonio Development Services Department",
   "source_url": "https://library.municode.com/tx/san_antonio/codes/code_of_ordinances?nodeId=PTIICO_CH10BULACOSAAN",
   "confidence": "medium",
   "research_note": "San Antonio asks city and state licensed contractors to register with Development Services before permits issue, depending on license type; confirm whether a commercial partition installer must register.",
   "first_pass": "San Antonio has no registration for commercial general contractors; commercial work goes through plan review and permits at Development Services, with separate registration only for electrical, plumbing and mechanical trades.",
-  "code_citation": "San Antonio City Code Ch. 10",
+  "code_citation": "San Antonio City Code Ch. 10, Art. XIII",
   "quote": null,
-  "research_caveat": "Commercial registration may exist in text not fully read. Agency name not from page.",
-  "research_source": "claude-in-chrome batch 3 2026-11-03",
+  "research_caveat": "From section headings and part of § 10-116; Ch. 16 not read.",
+  "research_source": "claude-in-chrome retry 2 2026-11-03",
   "code_text_read": true
  },
  {
@@ -1000,16 +1000,16 @@
  },
  {
   "slug": "san-jose",
-  "note": "Check local contractor licensing or registration with the City of San Jose Building Division before work starts.",
+  "note": "San Jose's building code sets no city contractor license; installers need a California contractor license.",
   "authority": "the City of San Jose Building Division",
   "source_url": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances?nodeId=TIT17BUCO_CH17.04BUCO",
-  "confidence": "low",
+  "confidence": "medium",
   "research_note": "San Jose has no separate contractor license; permit applicants hold a California contractor license matching the work and a current City of San Jose business tax certificate.",
   "first_pass": "San Jose has no separate contractor license; installers need a California contractor license and a City business tax certificate, and permits come from the Development Services Permit Center.",
-  "code_citation": null,
+  "code_citation": "San Jose Municipal Code Ch. 17.04",
   "quote": null,
-  "research_caveat": "Only Ch. 17.04 read; Title 4 not read.",
-  "research_source": "claude-in-chrome batch 3 2026-11-03",
+  "research_caveat": "Titles 4 and 6 checked by chapter list only.",
+  "research_source": "claude-in-chrome retry 2 2026-11-03",
   "code_text_read": false
  },
  {
@@ -1079,14 +1079,14 @@
   "slug": "st-louis",
   "note": "Building, building maintenance and carpentry contractors, among other listed trades, need a City of St. Louis license from the License Collector.",
   "authority": "City of St. Louis License Collector",
-  "source_url": "https://library.municode.com/mo/st._louis/codes/code_of_ordinances?nodeId=TIT8BUTALIRE_CH8.12CO",
+  "source_url": "https://library.municode.com/mo/st._louis/codes/code_of_ordinances?nodeId=TIT8BUTALIRE_CH8.12ACO",
   "confidence": "medium",
   "research_note": "St. Louis requires contractors to hold a city business license, and mechanical work needs a Building Division contractor license; confirm what applies to partition installation.",
   "first_pass": "St. Louis requires a city business license for contractors, and permits are pulled at the Building Division; the exact commercial interior license class is unconfirmed.",
-  "code_citation": "St. Louis City Revised Code §§ 8.12.010, 8.12.020",
+  "code_citation": "St. Louis City Revised Code §§ 8.12A.020, 8.12A.030",
   "quote": null,
-  "research_caveat": "'Partitions' not in the trade list; building or carpentry is the likely fit. Ch. 8.12A not read.",
-  "research_source": "claude-in-chrome retry 2026-11-03",
+  "research_caveat": "Ch. 8.12A (in force; suspends 8.12). Partition work not named; building or carpentry is the likely fit. Confirm the current process with the License Collector.",
+  "research_source": "claude-in-chrome retry 2 2026-11-03",
   "code_text_read": true
  },
  {
@@ -1224,8 +1224,8 @@
   "first_pass": "Worcester has no city contractor licence; the contractor supplies their state licence number and workers' comp proof to Inspectional Services when applying for a permit.",
   "code_citation": null,
   "quote": null,
-  "research_caveat": "Ch. 11 (Licenses) in a 659-page PDF not reached. Phone-call item.",
-  "research_source": "claude-in-chrome retry 2026-11-03",
+  "research_caveat": "Ch. 11 license list read on one page only (no contractor license there); rest of the list, § 33 and Part Two not read. Phone-call item.",
+  "research_source": "claude-in-chrome retry 2 2026-11-03",
   "code_text_read": false
  }
 ]
