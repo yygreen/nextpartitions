@@ -57,7 +57,7 @@ Standard colors cost less than special ones. A manufacturer notes that special l
 Partitions ship by freight carrier, crated and palletized. They're heavy: a published 3-stall powder coated steel kit weighs 299.7 lb. Freight depends on weight, distance and delivery needs such as a liftgate. [Typical freight range per order from Next Partitions quotes: data from Abe]
 
 ### Lead time
-Stock colors ship faster than custom work. Published dealer listings we checked gave "usually ships in 10-12 business days" for powder coated steel kits and "usually ships in 20 business days" for a stainless kit. [Typical lead times by material, standard and custom colors, from Next Partitions orders: data from Abe]
+Stock colors ship faster than custom work. [Typical lead times by material, standard and custom colors, from Next Partitions orders: data from Abe]
 
 ## Price by material
 
@@ -76,31 +76,15 @@ A manufacturer's published price index sets painted (powder coated) metal at 1.0
 
 The same source notes that painted metal prices have risen, closing the gap with laminate, and that stainless costs about 2.7 times as much as painted metal or laminate. Untreated HDPE is the base for that figure. Fire-rated HDPE, which many buildings need, can cost more.
 
-### Published prices in 2026
-One online partition dealer listed these "starting at" prices by material on 2026-11-02. The page doesn't say whether they're per stall or per part, so use them for the ranking, not for a budget.
+### Typical prices per stall
 
-| Material | Published "starting at" price |
+| Material | Typical price per stall |
 |---|---|
-| Powder coated steel | $270 |
-| Plastic laminate | $365 |
-| Solid plastic (HDPE) | $445 |
-| Phenolic | $675 |
-| Stainless steel | $700 |
-
-The same dealer's product pages showed different starting prices on the same day: $225 for powder coated steel, $395 for plastic laminate, $610 for phenolic and $625 for stainless, each described as "a starting price per stall panel based on a standard layout". That gap is the point: a starting price isn't a stall price.
-
-Complete kits give a better sense of scale. These are the same dealer's listed prices on 2026-11-02, all floor-mounted overhead braced, with mounting hardware included and freight extra:
-
-| Kit | Material | Size | Listed price |
-|---|---|---|---|
-| 1 ADA stall, in corner | Powder coated steel | 60" x 62" | $1,429.80 |
-| 1 ADA stall, in corner | Solid plastic (HDPE) | 60" x 61 1/4" | $1,573.35 |
-| 1 stall, in corner | Phenolic (black core) | 36" x 61 1/4" | $1,858.90 |
-| 2 stalls, in corner | Stainless steel | 72" x 61 1/4" | $2,321.26 |
-| 3 stalls (1 ADA), in corner | Powder coated steel | 108" x 62" | $3,172.25 |
-| 3 stalls, between walls | Phenolic (black core) | 108" x 61 1/4" | $3,865.75 |
-
-Each listing also showed a higher crossed-out list price (for example $5,116.50 for the 3-stall steel kit). Dealer prices change often, so treat these as a snapshot.
+| Powder coated steel | [from Next Partitions pricing] |
+| Plastic laminate | [from Next Partitions pricing] |
+| Solid plastic (HDPE) | [from Next Partitions pricing] |
+| Phenolic | [from Next Partitions pricing] |
+| Stainless steel | [from Next Partitions pricing] |
 
 [Typical range per stall by material from Next Partitions quotes: data from Abe]
 
@@ -139,10 +123,9 @@ Get the installer's price before you commit to a date, and ask them to quote fro
 
 ## Replacement parts cost
 
-You don't always need a new stall. A single door, panel, hinge or latch can be replaced if the part matches your line. One dealer listed these solid plastic (HDPE) parts on 2026-11-02:
+You don't always need a new stall. A single door, panel, hinge or latch can be replaced if the part matches your line.
 
-- A 32" x 55" door: $408.88
-- A 54 1/2" x 55" panel: $713.75
+[Typical prices for a replacement door, panel and hinge set: from Next Partitions pricing]
 
 Parts have to match the brand, material and thickness of your stalls, so send photos and measurements. See [replacement parts](/hardware/parts) and [hardware](/hardware).
 
@@ -202,7 +185,7 @@ Send your measurements, stall count, material and mounting style, or your drawin
 ## FAQ
 
 ### How much do bathroom partitions cost per stall?
-It depends on material, mounting style, size, hardware and freight. One dealer's 2026 listings ranged from $1,429.80 for a single powder coated steel ADA stall kit to $3,865.75 for three phenolic stalls, before freight and installation. Request a quote for your room.
+It depends on material, mounting style, size, hardware and freight. [Typical range per stall: from Next Partitions pricing.] Request a quote for your room.
 
 ### What is the cheapest bathroom partition material?
 Powder coated steel. In one manufacturer's price index, it's 1.0, with plastic laminate close behind at 1.1. Both suit dry restrooms only.
@@ -225,19 +208,6 @@ Yes, if the new door matches your line, size and thickness. Send photos and meas
 ## Sources
 
 - Bobrick, Specifying Code-Compliant Toilet Partitions, CEU version 2.3 (price index by material, slide "Toilet Partition Material Price Comparisons": painted metal 1, HPL 1.1, untreated HDPE 1.9, compact laminate 2.4, SCRC 2.7, stainless 2.7; painted metal price note; "special laminates may increase cost and lead time"): https://www.bobrick.com/wp-content/uploads/Bobrick_Toilet-Partitions_CEU.pdf (checked 2026-11-02)
-- Sustainable Supply, Denver bathroom partitions ("starting at" prices by material, basis not stated): https://www.sustainablesupply.com/pages/denver-partitions (checked 2026-11-02)
-- Sustainable Supply, Powder Coated Bathroom Partition ($225.00, list $349.00, "starting price per stall panel"): https://www.sustainablesupply.com/products/powder-coated-bathroom-partition-c3060525 (checked 2026-11-02)
-- Sustainable Supply, Plastic Laminate Bathroom Partitions ($395.00, list $549.00): https://www.sustainablesupply.com/products/plastic-laminate-bathroom-partitions-c3060533 (checked 2026-11-02)
-- Sustainable Supply, Phenolic Bathroom Partition ($610.00, list $799.00): https://www.sustainablesupply.com/products/phenolic-bathroom-partition-c3060531 (checked 2026-11-02)
-- Sustainable Supply, Stainless Steel Bathroom Partition ($625.00, list $799.00): https://www.sustainablesupply.com/products/stainless-steel-bathroom-partition-c3060527 (checked 2026-11-02)
-- Sustainable Supply, Accurate (ASI) 1 ADA in-corner compartment, powder coated steel, 60" x 62", ICADA ($1,429.80, list $2,306.10; ships in 10-12 business days; 199.8 lb): https://www.sustainablesupply.com/products/accurate-bathroom-partition-1-ada-in-corner-compartment-metal-60-w-x-62-d-fast-ship-icada-g (checked 2026-11-02)
-- Sustainable Supply, Accurate (ASI) 3 in-corner compartments, powder coated steel, 108" x 62", IC33662 ($3,172.25, list $5,116.50; one ADA compartment; chromed zamac hardware; ships in 10-12 business days; 299.7 lb): https://www.sustainablesupply.com/products/accurate-toilet-partition-3-in-corner-compartments-metal-108-w-x-62-d-quick-ship-ic33662-g (checked 2026-11-02)
-- Sustainable Supply, Bradley 1 ADA in-corner compartment, solid plastic, 60" x 61-1/4", ICADA-PL ($1,573.35, list $2,538.00; aluminum latch and brackets): https://www.sustainablesupply.com/products/bradley-toilet-partition-1-ada-in-corner-compartment-plastic-60w-x-61-1-4d-quick-ship-icada-pl-c1964702 (checked 2026-11-02)
-- Sustainable Supply, Bradley 1 in-corner compartment, phenolic, 36" x 61-1/4", IC13660-PBC ($1,858.90, list $2,998.20; stainless hardware): https://www.sustainablesupply.com/products/bradley-toilet-partition-1-in-corner-compartment-phenolic-36w-x-61-1-4d-quick-ship-ic13660-pbc-c1964700 (checked 2026-11-02)
-- Sustainable Supply, Bradley 3 between-wall compartments, phenolic, 108" x 61-1/4", BW33660-PBC ($3,865.75, list $6,235.10): https://www.sustainablesupply.com/products/bradley-toilet-partition-3-between-wall-compartments-phenolic-108wx61-1-4d-quick-ship-bw33660-pbc-c1964637 (checked 2026-11-02)
-- Sustainable Supply, Bradley 2 in-corner compartments, stainless steel, 72" x 61-1/4", IC23660 ($2,321.26, list $3,744.00; sold out; ships in 20 business days): https://www.sustainablesupply.com/products/bradley-toilet-partition-2-in-corner-compartments-stainless-steel-72w-x-61-1-4d-ic23660-c1964740 (checked 2026-11-02)
-- Sustainable Supply, Bradley door, solid plastic, 32" x 55", P490-32 ($408.88, list $659.00): https://www.sustainablesupply.com/products/bradley-toilet-partition-door-plastic-32w-x-55h-greenguard-p490-32-c2089464 (checked 2026-11-02)
-- Sustainable Supply, Bradley panel, solid plastic, 54-1/2" x 55", P440-57 ($713.75, list $1,151.00): https://www.sustainablesupply.com/products/bradley-toilet-partition-panel-plastic-54-1-2w-x-55h-quick-ship-greenguard-p440-57-c2089435 (checked 2026-11-02)
 - City of Carpinteria, Construction Estimate, Community Pool Women's Restroom Facility, June 5, 2025 (partitions and installation $800 each; ADA stall partition and installation $963): https://carpinteriaca.gov/wp-content/uploads/2025/11/Carpinteria-Community-Pool-Womens-Restroom-Facility-003-1.pdf (checked 2026-11-02)
 - San Antonio Water System, Tabulation of Bids 18-180501, Purchase and Installation of HDPE Restroom Partitions, Dos Rios Bldg. 16, May 30, 2018 (Men's Restroom 155, 4 urinal partitions and 4 stalls: $6,950.00 and $8,926.00): https://apps.saws.org/Business_Center/ProcBids/IFB%5C3183%5CHDPE%20restroom%20partitions%2018-180501.pdf (checked 2026-11-02)
 - ASI Global Partitions, powder coated steel toilet partitions ("economical and sturdy"): https://sweets.construction.com/manufacturer/asi-global-partitions-nst1616/products/powder-coated-steel-toilet-partitions-nst708591-p (checked 2026-10-26, as cited on /mounting-styles/overhead-braced)
@@ -265,7 +235,7 @@ Points found while writing that affect other pages (not fixed here):
 - This post merges calendar post #2 with the planned installed-cost guide (strategy README). The installer keyword map (`research/installer-keywords/keywords-mapped-to-pages.csv`) still points the installed-cost cluster (83 keywords, ~1,110/mo) at `/resources/toilet-partition-installed-cost`; point it here instead, and if that URL is ever published, 301 it to this post.
 - Keyword volumes: from Keyword List 1 (Feb 2026) and the Semrush installer export (2026-10-14). "bathroom partition cost" and "toilet partition price" are the calendar's targets and aren't in either list, so they have no volume.
 - No link to the installer directory, per CLAUDE.md (the main site never links to it). The installation section says only that the customer hires an independent installer.
-- All dealer prices are from one online dealer (Sustainable Supply), a competitor. Abe and Marc should decide whether to keep those links (consider `rel="nofollow"`) or replace them with Next Partitions' own ranges once Abe sends them (docs/questions-for-abe.md, "Cost guide: data we'd like"). Dealer prices change often: the HDPE door was found at a lower price in a search snippet before the page itself showed $408.88 on 2026-11-02.
+- On hold (2026-11-02): no prices from other retailers. The post waits for Next Partitions' own product pricing to fill the bracketed price lines; don't publish until they are filled. The manufacturer's relative price index (a ranking, no dollar figures) and the public agency estimates for installed cost stay.
 - GSA Advantage was checked for federal contract prices; its search couldn't be fetched (2026-11-02), so no GSA figure is used. Add one if a listing can be confirmed.
 - Placeholders left for Abe: typical range per stall by material, privacy options cost, freight range, lead times by material, typical installation price per stall, and the freight FAQ answer. Remove the bracketed lines if the data doesn't come in.
 - Structured data: BlogPosting (datePublished 2026-11-02 placeholder, dateModified on each January update), FAQPage from the FAQ, BreadcrumbList Home > Blog > this post.
