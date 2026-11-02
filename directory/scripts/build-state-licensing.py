@@ -30,7 +30,7 @@ for d in sorted(data, key=lambda d: d['code']):
     lines.append(f"update dir_states set license_status = {q(status)}, license_threshold_cents = {cents if cents else 'null'}, "
                  f"license_summary = {q(d['summary'])}, license_authority = {q(d.get('authority'))}, license_source_url = {q(src)}, "
                  f"license_checked = '{CHECKED}' where code = {q(d['code'])};")
-    lines.append(f"insert into dir_state_notes (slug, confidence, note) select slug, {q(d.get('confidence'))}, {q(d.get('note'))} "
+    lines.append(f"insert into dir_state_notes (slug, confidence, note) select slug, {q(d.get('confidence'))}, {q(' '.join(x for x in [d.get('note'), d.get('law_flag') and 'Law: ' + d['law_flag']] if x))} "
                  f"from dir_states where code = {q(d['code'])} on conflict (slug) do update set confidence = excluded.confidence, note = excluded.note;")
 
 with open(OUT, 'w') as f:

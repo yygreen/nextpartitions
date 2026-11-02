@@ -74,6 +74,7 @@ All installers, rates, reviews and photos in the prototypes are fictional sample
 - `docs/onboarding-call-roadmap.md`: onboarding call agenda, what we need from Abe, day-30 success measures and the 30-day plan. The directory launches in month 2, once at least 3 installers are approved.
 
 - `research/state-licensing/states.json`: who may install partitions in each of the 50 states and DC (status, threshold, plain-language summary, authority, source, confidence, what to confirm), researched 2026-11-03. Feeds the state hubs via `directory/scripts/build-state-licensing.py`. Low-confidence or unsourced states: DC, FL, GA, MA (low); KS, MA, ME, MI, MO (no official source opened).
+- `research/local-rules/cities.json`: one-sentence local installer rule (city or county contractor license or registration) for each of the 99 areas, researched 2026-11-03 from search results. Low-confidence cities (36) show a neutral line on the page ("Building permits come from …; check whether local contractor registration applies"); `research_note` keeps the unconfirmed finding. Feeds the area pages with the state laws via `directory/scripts/build-local-rules.py`.
 - `research/installer-regulations.md`: who may install partitions, by state, city and building type. Includes the planned blog cluster and where each item appears on location pages.
 - `prototypes/`: HTML source of the mockups above (see its README).
 - `research/installer-keywords/`: the Semrush export (147 installer keywords, US, 2026-10-14) and the same list mapped to target pages.
