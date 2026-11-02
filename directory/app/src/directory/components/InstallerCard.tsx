@@ -2,7 +2,7 @@ import { installerHref, priceWithHref } from '../links'
 import { type Installer, labelsFor, MATERIAL_LABEL, NEW_INSTALLER_NOTE } from '../types'
 import { ButtonLink, Stars } from './ui'
 
-export function InstallerCard({ installer: i, area }: { installer: Installer; area: string }) {
+export function InstallerCard({ installer: i, area }: { installer: Installer; area: { slug: string; stateSlug: string } }) {
   const labels = labelsFor(i)
   return (
     <article className="bg-card border border-border rounded-lg p-4 sm:p-5 grid gap-3">

@@ -9,9 +9,11 @@ export const setLinkMode = (m: Mode) => { mode = m }
 const CONFIGURATOR = import.meta.env.VITE_CONFIGURATOR_URL ?? 'https://nextpartitions.com/get-a-quote'
 
 export const homeHref = () => (mode === 'app' ? '/' : '#/')
-export const serviceAreaHref = () => (mode === 'app' ? '/service-area/' : '#/service-area')
-export const stateHref = (state: string) => (mode === 'app' ? `/service-area/${state}/` : `#/state/${state}`)
-export const areaHref = (area: string) => (mode === 'app' ? `/service-area/${area}/` : `#/area/${area}`)
+// The directory lives under /installers/ (kept apart from the main site's /service-area/[city]/ buy pages):
+// /installers/ (all states), /installers/<state>/ (hub), /installers/<state>/<city>/ (area), /installers/<installer>/ (profile).
+export const installersHref = () => (mode === 'app' ? '/installers/' : '#/service-area')
+export const stateHref = (state: string) => (mode === 'app' ? `/installers/${state}/` : `#/state/${state}`)
+export const areaHref = (state: string, area: string) => (mode === 'app' ? `/installers/${state}/${area}/` : `#/area/${area}`)
 export const installerHref = (slug: string) => (mode === 'app' ? `/installers/${slug}/` : `#/installer/${slug}`)
 export const applyHref = () => (mode === 'app' ? '/installers/apply/' : '#/apply')
 // The portal's sample switches role with ?as=coordinator (app) or its own route (preview).
@@ -20,7 +22,7 @@ export const portalHref = (as: 'installer' | 'coordinator' = 'installer') =>
 export const quoteHref = (token: string) => (mode === 'app' ? `/quote/${token}` : `#/quote/${token}`)
 
 // "Price with Acme" on an area page: same page, configure step, installer pre-selected.
-export const priceWithHref = (area: string, slug: string) => `${areaHref(area)}?installer=${slug}#configure`
+export const priceWithHref = (area: { slug: string; stateSlug: string }, slug: string) => `${areaHref(area.stateSlug, area.slug)}?installer=${slug}#configure`
 
 export interface Selection {
   area?: string
