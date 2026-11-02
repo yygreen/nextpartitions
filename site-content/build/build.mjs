@@ -453,9 +453,11 @@ function build(file, built) {
   const isPost = seg[0] === 'blog' && seg.length > 1
   const isCat = CATEGORY.has(seg[0])
   const faqHtml = items.length ? `<section class="mb-8"><h2 class="text-2xl font-bold mb-4">Frequently Asked Questions</h2><div class="space-y-3">${items.map((x) => `<details class="border border-border rounded-lg p-4"><summary class="font-semibold text-foreground cursor-pointer">${esc(x.q)}</summary><div class="mt-3">${md(x.a)}</div></details>`).join('')}</div></section>` : ''
-  const srcHtml = sources ? `<section class="np-sources mt-10 border-t border-border pt-6 text-xs text-muted-foreground"><h2 class="text-sm font-semibold text-foreground mb-2">Sources</h2>${md(sources.md).replace(/text-muted-foreground leading-relaxed mb-4/g, 'mb-2').replace(/space-y-2 text-muted-foreground leading-relaxed mb-4/g, 'space-y-1')}</section>` : ''
+  // Hub and category pages don't show their Sources list (it stays in the page file for Marc); articles and guides do
+  const noSrc = isCat || ['/brands', '/industries', '/guides', '/blog'].includes(url)
+  const srcHtml = sources && !noSrc ? `<section class="np-sources mt-10 border-t border-border pt-6 text-xs text-muted-foreground"><h2 class="text-sm font-semibold text-foreground mb-2">Sources</h2>${md(sources.md).replace(/text-muted-foreground leading-relaxed mb-4/g, 'mb-2').replace(/space-y-2 text-muted-foreground leading-relaxed mb-4/g, 'space-y-1')}</section>` : ''
 
-  let main = url === '/blog' ? blogHub(fm, intro, content) : HUBS.has(url) ? hub(fm, intro, content, url, items, sources) : `<main class="flex-1">
+  let main = url === '/blog' ? blogHub(fm, intro, content) : HUBS.has(url) ? hub(fm, intro, content, url, items, null) : `<main class="flex-1">
 <div class="relative bg-primary text-primary-foreground overflow-hidden"><div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 <nav aria-label="Breadcrumb" class="py-3"><ol class="flex items-center gap-1.5 text-sm text-primary-foreground/60" style="flex-wrap:nowrap;white-space:nowrap;min-width:0;overflow:hidden">${crumbs.map(([n, h], i) => i === crumbs.length - 1
     // one row: the current page's name is cut off with an ellipsis when it doesn't fit
