@@ -194,6 +194,8 @@ end $$;
 insert into dir_jobs (id, area_slug, city, zip, scope, delivery_window, chosen_installer_id, partitions_paid_at)
 values ('20000000-0000-0000-0000-000000000009', 'dallas', 'Dallas', '75201', '{"material":"hdpe","mounting":"overhead_braced","stalls":3}',
         daterange('2026-11-02', '2026-11-09'), current_setting('t.app')::uuid, now());
+update dir_jobs set install_date = '2026-11-10', status = 'scheduled' where id = '20000000-0000-0000-0000-000000000009';
+update dir_jobs set status = 'installed' where id = '20000000-0000-0000-0000-000000000009';
 update dir_jobs set status = 'signed_off' where id = '20000000-0000-0000-0000-000000000009';
 do $$ begin
   assert (select checks::text from dir_public_installers where slug = 'lone-star-partitions') like '%Completed a job for a Next Partitions customer%', 'completed job not shown';
@@ -282,5 +284,27 @@ do $$ begin
   assert (dir_customer_quote(current_setting('t.token'))->>'paid')::boolean, 'paid not shown';
 end $$;
 reset role;
+
+-- 8. Job status guard (applies to admins and the owner too) and the pilot area seed.
+insert into dir_jobs (id, area_slug, city, zip, scope, delivery_window)
+values ('20000000-0000-0000-0000-000000000002', 'dallas', 'Plano', '75074',
+        '{"material":"hdpe","mounting":"overhead_braced","stalls":4}', daterange('2026-11-09', '2026-11-14'));
+insert into dir_job_invites (job_id, installer_id, price_cents, price_flag)
+values ('20000000-0000-0000-0000-000000000002', '10000000-0000-0000-0000-000000000001', 150000, 'above_rates');
+select pg_temp.fails($q$update dir_jobs set status = 'presented' where id = '20000000-0000-0000-0000-000000000002'$q$, 'No installer prices to show yet%');
+select pg_temp.fails($q$update dir_jobs set status = 'presented' where id = current_setting('t.test')::uuid$q$, 'Test jobs are never shown%');
+select pg_temp.fails($q$update dir_jobs set status = 'installer_chosen' where id = '20000000-0000-0000-0000-000000000002'$q$, 'Record which installer%');
+select pg_temp.fails($q$update dir_jobs set status = 'scheduled', install_date = '2026-11-20' where id = '20000000-0000-0000-0000-000000000002'$q$, 'The job isn''t released yet%');
+select pg_temp.fails($q$update dir_jobs set status = 'signed_off' where id = '20000000-0000-0000-0000-000000000002'$q$, 'Only an installed job can be signed off');
+select pg_temp.as_user('00000000-0000-0000-0000-00000000000a');
+select pg_temp.fails($q$update dir_jobs set status = 'signed_off' where id = '20000000-0000-0000-0000-000000000002'$q$, 'Only an installed job can be signed off');
+update dir_job_invites set price_flag = null where job_id = '20000000-0000-0000-0000-000000000002';
+update dir_jobs set status = 'presented' where id = '20000000-0000-0000-0000-000000000002';
+update dir_jobs set status = 'cancelled' where id = '20000000-0000-0000-0000-000000000002';
+reset role;
+do $$ begin
+  assert (select status from dir_jobs where id = '20000000-0000-0000-0000-000000000002') = 'cancelled', 'guard blocked a valid move';
+  assert (select name from dir_areas where slug = 'dallas') = 'Dallas–Fort Worth', 'DFW area not seeded';
+end $$;
 
 select 'APPLY TESTS PASSED';

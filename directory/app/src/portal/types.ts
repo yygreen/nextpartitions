@@ -22,6 +22,15 @@ export const CHECK_LABEL: Record<CheckType, string> = {
   state_license: 'State license',
 }
 
+// What the public profile shows for a passed check, unless the coordinator writes their own.
+// Used by the Vetting tab and when a document is accepted from the Documents queue.
+export const CHECK_DEFAULT_PUBLIC_LABEL: Partial<Record<CheckType, string>> = {
+  insurance: 'Insurance on file ($1M general liability)',
+  business_registration: 'Texas business registration',
+  city_registration: 'City of Dallas contractor registration',
+  listing_agreement: 'Signed listing agreement',
+}
+
 // What the installer prices from: scope, no customer details.
 export interface Scope {
   material: Material

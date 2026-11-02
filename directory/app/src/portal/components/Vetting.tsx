@@ -3,6 +3,7 @@ import { formatUsd } from '../../directory/estimate'
 import { MATERIAL_LABEL, MOUNTING_LABEL } from '../../directory/types'
 import { portal } from '../client'
 import { formatDay, formatWhen } from '../stage'
+import { CHECK_DEFAULT_PUBLIC_LABEL as DEFAULT_LABEL } from '../types'
 import type { Applicant, ApplicantDetail, AreaCoverage, CheckDetail, CheckType, Reference } from '../types'
 import { Badge, Button, Card, Field, INPUT, Notice, TEXTAREA, useAction, useLoad, openFile } from './ui'
 
@@ -206,7 +207,7 @@ function Checklist({ a, d, reload }: { a: Applicant; d: ApplicantDetail; reload:
     <Card title="Approved checklist">
       <Row title="General liability insurance" c={check('insurance')}>
         <DocLinks paths={[check('insurance')?.documentPath, ...docs.filter((u) => u.checkType === 'insurance').map((u) => u.path)]} />
-        {!locked && <VerifyForm defaultLabel="Insurance on file ($1M general liability)" c={check('insurance')} needsExpiry
+        {!locked && <VerifyForm defaultLabel={DEFAULT_LABEL.insurance!} c={check('insurance')} needsExpiry
           hint="$300,000 or more. For City of Dallas jobs the City must be the certificate holder." onSave={(p) => save('insurance', p)} reload={reload} />}
       </Row>
       <Row title="Business or city registration" c={reg}>
@@ -228,7 +229,7 @@ function Checklist({ a, d, reload }: { a: Applicant; d: ApplicantDetail; reload:
       <Row title="Listing agreement signed" c={check('listing_agreement')}>
         <p className="text-sm">{a.agreementName ? `Agreed to sign if approved: ${a.agreementName}${a.agreementAcceptedAt ? `, ${formatDay(a.agreementAcceptedAt)}` : ''}.` : 'No agreement on the application.'} Send the full agreement for signature, then mark it signed.</p>
         {!locked && check('listing_agreement')?.status !== 'passed' && (
-          <SimplePass label="Mark signed" onPass={() => save('listing_agreement', { status: 'passed', verifiedAt: today(), publicLabel: 'Signed listing agreement' })} reload={reload} />
+          <SimplePass label="Mark signed" onPass={() => save('listing_agreement', { status: 'passed', verifiedAt: today(), publicLabel: DEFAULT_LABEL.listing_agreement })} reload={reload} />
         )}
       </Row>
       <Row title="First completed job (Approved label)" c={check('completed_job')}>
@@ -299,7 +300,7 @@ function RegistrationForm({ c, onSave, reload }: { c?: CheckDetail; onSave: (t: 
       <Field label="What you checked"><select className={INPUT} value={kind} onChange={(e) => setKind(e.target.value as CheckType)}>
         <option value="city_registration">City contractor registration</option><option value="business_registration">Business registration (Texas)</option>
       </select></Field>
-      <VerifyForm key={kind} c={c?.checkType === kind ? c : undefined} defaultLabel={kind === 'city_registration' ? 'City of Dallas contractor registration' : 'Texas business registration'}
+      <VerifyForm key={kind} c={c?.checkType === kind ? c : undefined} defaultLabel={DEFAULT_LABEL[kind]!}
         onSave={(p) => onSave(kind, p)} reload={reload} />
     </div>
   )

@@ -21,10 +21,13 @@ Works: applications with document uploads (anonymous); approval refused until th
 
 ## What breaks or needs a decision
 
-1. **Installer logins can't be given on staging.** `inviteUserByEmail` (the portal's "give a login") rejects the test addresses as invalid, and Supabase's built-in email only sends to the project team. Needs a real address plus custom SMTP (e.g. Resend) under Authentication → SMTP. The run signs installers in with passwords instead.
-2. **Accepting a document from the Documents queue doesn't set a profile label** (`reviewUpload` in `app/src/portal/repo.supabase.ts`), so a Verified installer whose insurance and registration were accepted there shows no checks on their profile. The Vetting tab's buttons do set labels.
-3. **The coordinator can show prices with none in.** Run 1 presented a job with 0 prices and the customer email read "along with 0 firm installation prices". Nothing stops it in the database or the portal.
-4. **Job status can skip steps for admins** (run 1: `presented` straight to `signed_off`). The release rules still hold, but a guard on transitions would catch slips.
-5. **No seed or screen for areas** (above).
+Fixed the same day (items 2–5): migration `20261102000000_job_status_guard_and_dfw.sql` (applied to staging, with tests in `apply_test.sql`) and the portal's Documents queue. Rerun: **43 of 44 steps pass**; the one left is item 1.
+
+
+1. **Open. Installer logins can't be given on staging.** `inviteUserByEmail` (the portal's "give a login") rejects the test addresses as invalid, then hits Supabase's built-in email rate limit; built-in email only sends to the project team. Needs a real address plus custom SMTP (e.g. Resend) under Authentication → SMTP. The run signs installers in with passwords instead.
+2. **Fixed.** **Accepting a document from the Documents queue doesn't set a profile label** (`reviewUpload` in `app/src/portal/repo.supabase.ts`), so a Verified installer whose insurance and registration were accepted there shows no checks on their profile. The Vetting tab's buttons do set labels. Now accepting a document keeps the check's label or gives it the Vetting tab's default (`CHECK_DEFAULT_PUBLIC_LABEL` in `app/src/portal/types.ts`).
+3. **Fixed.** **The coordinator could show prices with none in.** Run 1 presented a job with 0 prices and the customer email read "along with 0 firm installation prices". The portal hides the button, but the database didn't stop it. Now `dir_jobs_status_guard` refuses `presented` without a price the customer would see (and for test jobs).
+4. **Fixed.** **Job status could skip steps for admins** (run 1: `presented` straight to `signed_off`). Now, for everyone: `installer_chosen` needs a chosen installer, `released`/`scheduled`/`installed` need the job released (`scheduled` also an install date), `signed_off` only from `installed`.
+5. **Fixed.** **No seed for the pilot area**: the migration adds DFW (`dallas`, unpublished). Other areas still need a row by hand until there's a screen.
 6. **Review requests go to the coordinator**, and the coordinator enters the review: no customer review page yet (as the README says).
 7. Function logs can't be read with this token (`analytics_logs_read`); the emails were checked by rendering `messages.ts` on each row's `dir_outbox_context`.

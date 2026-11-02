@@ -2,6 +2,7 @@ import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 import type { PortalRepo } from './repo'
 import { inviteInstallerLogin } from './server'
 import { formatDateRange, parseDateRange } from './stage'
+import { CHECK_DEFAULT_PUBLIC_LABEL } from './types'
 import type {
   Applicant, AreaCoverage, CheckDetail, CheckRow, Contact, DocumentUpload, Invite, InstallerSelf, Job, JobEvent, Message, QuoteAdmin, RateRow, Reference,
 } from './types'
@@ -248,9 +249,13 @@ export function supabasePortal(url: string, key: string): PortalRepo & { db: Sup
     async reviewUpload(id, r) {
       const u = toUpload(must(await db.from('dir_document_uploads').select('*').eq('id', id).single()))
       if (r.accepted) {
+        // Keep a label the coordinator already wrote; otherwise the profile would show nothing for this check.
+        const existing = must(await db.from('dir_installer_checks').select('public_label')
+          .eq('installer_id', u.installerId).eq('check_type', u.checkType).maybeSingle())
         ok(await db.from('dir_installer_checks').upsert({
           installer_id: u.installerId, check_type: u.checkType, status: 'passed', verified_at: new Date().toISOString().slice(0, 10),
           expires_at: r.expiresAt, document_path: u.path,
+          public_label: existing?.public_label ?? CHECK_DEFAULT_PUBLIC_LABEL[u.checkType] ?? null,
         }, { onConflict: 'installer_id,check_type' }))
       }
       ok(await db.from('dir_document_uploads').update({ reviewed_at: new Date().toISOString(), review_note: r.note }).eq('id', id))

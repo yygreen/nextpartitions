@@ -106,7 +106,8 @@ for (const [n, i] of inst.entries()) {
     const ups = must(await C.from('dir_document_uploads').select('*').eq('installer_id', i.id))
     for (const u of ups) {
       must(await C.from('dir_installer_checks').upsert({ installer_id: i.id, check_type: u.check_type, status: 'passed',
-        verified_at: new Date().toISOString().slice(0, 10), expires_at: '2027-10-31', document_path: u.path }, { onConflict: 'installer_id,check_type' }))
+        verified_at: new Date().toISOString().slice(0, 10), expires_at: '2027-10-31', document_path: u.path,
+        public_label: { insurance: 'Insurance on file ($1M general liability)', business_registration: 'Texas business registration' }[u.check_type] ?? null }, { onConflict: 'installer_id,check_type' }))
       must(await C.from('dir_document_uploads').update({ reviewed_at: new Date().toISOString(), review_note: 'OK' }).eq('id', u.id))
     }
     const refs = must(await C.from('dir_installer_references').select('id').eq('installer_id', i.id))
@@ -145,6 +146,7 @@ await step('publish the DFW area (3 listed installers) and public views show the
   const ours = pub.filter((p) => inst.some((i) => i.slug === p.slug))
   expect(ours.length === 3, `public installers: ${ours.length}`)
   expect(ours.every((p) => p.installs === 0), 'installs should be 0 (Verified)')
+  expect(ours.every((p) => (p.checks ?? []).some((c) => /Insurance on file/.test(c.label))), 'insurance label missing on a profile')
   const area = must(await anon().from('dir_areas').select('slug').eq('slug', 'dallas'))
   expect(area.length === 1, 'area not readable once published')
   return ours.map((p) => p.slug).join(', ')
@@ -168,6 +170,10 @@ await step('drawings uploaded to dir-drawings', async () => {
 })
 await step('partitions quote saved (dir_job_quotes)', async () => {
   must(await C.from('dir_job_quotes').update({ quote_ref: 'Q-' + RUN, partitions_cents: 527000, freight_cents: 38500, valid_until: '2026-12-31', updated_at: new Date().toISOString() }).eq('job_id', J))
+})
+await step('presenting a job with no installer prices is refused', async () => {
+  const { error } = await C.from('dir_jobs').update({ status: 'presented' }).eq('id', J)
+  expect(error && /No installer prices/.test(error.message), 'presented with no prices: ' + error?.message)
 })
 const invited = await step('routing: dir_route_job invites installers', async () => {
   const n = must(await C.rpc('dir_route_job', { p_job: J })); expect(n > 0, 'nobody invited'); return n
@@ -269,11 +275,16 @@ await step('review recorded and shown publicly (coordinator enters it; no custom
 
 // ---------- 9. Outbox ----------
 await step('email worker: invoke dir-outbox and check the outbox drains', async () => {
-  const r = await fetch(`${URL}/functions/v1/dir-outbox`, { method: 'POST', headers: { Authorization: `Bearer ${SR}`, 'Content-Type': 'application/json' }, body: '{}' })
-  const body = await r.text()
-  const rows = must(await service.from('dir_outbox').select('kind, sent_at, attempts, last_error, deliver_after'))
-  const due = rows.filter((x) => new Date(x.deliver_after ?? 0) <= new Date())
-  const unsent = due.filter((x) => !x.sent_at)
+  // The worker takes 20 rows a run (cron runs it every minute); call it until nothing due is left.
+  let r, body, rows, due, unsent
+  for (let n = 0; n < 10; n++) {
+    r = await fetch(`${URL}/functions/v1/dir-outbox`, { method: 'POST', headers: { Authorization: `Bearer ${SR}`, 'Content-Type': 'application/json' }, body: '{}' })
+    body = await r.text()
+    rows = must(await service.from('dir_outbox').select('kind, sent_at, attempts, last_error, deliver_after'))
+    due = rows.filter((x) => new Date(x.deliver_after ?? 0) <= new Date())
+    unsent = due.filter((x) => !x.sent_at)
+    if (!unsent.length || !r.ok) break
+  }
   const kinds = [...new Set(rows.map((x) => x.kind))].sort().join(',')
   if (unsent.length) throw new Error(`HTTP ${r.status} ${body.slice(0, 200)}; ${unsent.length}/${due.length} due unsent; errors: ${[...new Set(unsent.map((x) => x.last_error))].join(' | ').slice(0, 300)}`)
   return `HTTP ${r.status} ${body.slice(0, 120)}; ${rows.length} rows (${kinds})`
