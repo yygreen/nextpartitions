@@ -110,7 +110,7 @@ export function StateHubView({ state, info, areas, counts, sample, showUnpublish
                   <li key={a.slug} className="bg-card border border-border rounded-lg p-4 grid gap-2">
                     <h3 className="font-bold text-lg"><a href={areaHref(a.slug)} className="hover:underline">{a.name}</a>{!a.published && <span className="ml-2 text-xs font-semibold text-muted-foreground">(not published)</span>}</h3>
                     <p className="text-sm text-muted-foreground">{c?.installers ? `${c.installers} installer${c.installers === 1 ? '' : 's'} · ${c.installs} installs` : 'Installers coming soon'} · serves {a.cities.slice(0, 4).join(', ')}{a.cities.length > 4 ? '…' : ''}</p>
-                    <a href={areaHref(a.slug) + '#configure'} className="text-sm font-semibold text-brand-red hover:underline">Price a {a.shortName} restroom</a>
+                    <a href={areaHref(a.slug) + '#configure'} className="text-sm font-semibold text-brand-red hover:underline">Price your {a.shortName} restroom</a>
                   </li>
                 )
               })}
