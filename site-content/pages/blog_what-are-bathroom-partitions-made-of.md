@@ -138,7 +138,7 @@ Start with the environment, then the budget:
 - **Premium, public-facing restroom:** stainless steel.
 - **Fire-rated building:** confirm the rating first; with HDPE, specify a fire-rated grade tested to NFPA 286.
 
-The [partitions overview](/partitions) compares all five materials side by side.
+The [partitions overview](/partitions) compares all five materials side by side. Choosing between two? Read [HDPE vs phenolic partitions](/blog/hdpe-vs-phenolic-partitions) for wet and high-traffic rooms, or [plastic vs steel bathroom partitions](/blog/plastic-vs-steel-bathroom-partitions) if you're weighing solid plastic against powder coated or stainless steel.
 
 :::expert
 Tell us about a restroom where the material was wrong for the building. What failed, how soon, and what should have gone in instead?
@@ -156,7 +156,7 @@ Tell us your stall count, measurements, material and mounting style. Standard co
 Commercial bathroom stalls are made of powder coated steel, stainless steel, plastic laminate, phenolic or solid plastic (HDPE). Steel partitions wrap a honeycomb core, plastic laminate is bonded to particleboard, phenolic is fused layers of resin-soaked kraft paper, and HDPE is one solid sheet of plastic.
 
 ### What is the best material for a wet restroom?
-Phenolic or solid plastic (HDPE). Manufacturers position both for showers, pools and areas that are hosed down. Plastic laminate's particleboard core can swell with too much moisture, and painted steel can rust.
+Phenolic or solid plastic (HDPE). Manufacturers position both for showers, pools and areas that are hosed down. Plastic laminate's particleboard core can swell with too much moisture, and painted steel can rust. See [HDPE vs phenolic partitions](/blog/hdpe-vs-phenolic-partitions) for how the two compare.
 
 ### Is phenolic the same as compact laminate?
 Yes, in practice. Bobrick calls its phenolic material compact grade laminate (CGL): melamine faces and colored face sheets bonded to a black phenolic-resin core.
