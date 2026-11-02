@@ -27,7 +27,11 @@ export interface Area {
   center: { lat: number; lng: number }
   cities: string[]
   published: boolean // the page goes public once 3+ installers are listed
+  local: LocalRule | null
 }
+
+// The city or county rule for installers (contractor license or registration to pull permits).
+export interface LocalRule { note: string; authority: string | null; sourceUrl: string | null; checked: string | null }
 
 // A state's licensing summary for its hub page (dir_states). Shown with its source, the date it was
 // checked and the authority to confirm with.
@@ -38,6 +42,8 @@ export interface StateInfo {
   licenseAuthority: string | null
   licenseSourceUrl: string | null
   licenseChecked: string | null // ISO date
+  licenseLaw: string | null      // the governing statute or code
+  licenseLawUrl: string | null
 }
 
 export interface Check {

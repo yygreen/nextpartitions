@@ -10,6 +10,7 @@ export function supabaseRepo(url: string, key: string): DirectoryRepo {
   const toArea = (r: any): Area => ({
     slug: r.slug, name: r.name, shortName: r.short_name, state: r.state, stateSlug: r.state_slug,
     center: { lat: r.center_lat, lng: r.center_lng }, cities: r.cities ?? [], published: !!r.published,
+    local: r.local_note ? { note: r.local_note, authority: r.local_authority, sourceUrl: r.local_source_url, checked: r.local_checked } : null,
   })
   const toInstaller = (r: any): Installer => ({
     slug: r.slug, displayName: r.display_name, baseCity: r.base_city, baseState: r.base_state,
@@ -40,10 +41,11 @@ export function supabaseRepo(url: string, key: string): DirectoryRepo {
     },
     async stateInfo(stateSlug) {
       const r: any = must(await db.from('dir_states')
-        .select('slug, license_status, license_summary, license_authority, license_source_url, license_checked')
+        .select('slug, license_status, license_summary, license_authority, license_source_url, license_checked, license_law, license_law_url')
         .eq('slug', stateSlug).maybeSingle())
       return r ? { slug: r.slug, licenseStatus: r.license_status, licenseSummary: r.license_summary, licenseAuthority: r.license_authority,
-        licenseSourceUrl: r.license_source_url, licenseChecked: r.license_checked } : null
+        licenseSourceUrl: r.license_source_url, licenseChecked: r.license_checked,
+        licenseLaw: r.license_law, licenseLawUrl: r.license_law_url } : null
     },
     async area(slug) {
       const r = must(await db.from('dir_areas').select('*').eq('slug', slug).maybeSingle())

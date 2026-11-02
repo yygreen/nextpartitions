@@ -69,6 +69,7 @@ function StateRules({ name, info }: { name: string; info: StateHubData['info'] }
         <>
           {info.licenseStatus && <p className="font-semibold">{LICENSE_HEADLINE[info.licenseStatus]}</p>}
           <p>{info.licenseSummary}</p>
+          {info.licenseLaw && <p className="text-sm"><b>Law:</b> {info.licenseLawUrl ? <a className="underline" href={info.licenseLawUrl} rel="nofollow noopener" target="_blank">{info.licenseLaw}</a> : info.licenseLaw}</p>}
           <p className="text-sm text-muted-foreground">
             {info.licenseSourceUrl && <><a className="underline" href={info.licenseSourceUrl} rel="nofollow noopener" target="_blank">Source</a> · </>}
             {info.licenseChecked && <>Last checked {info.licenseChecked} · </>}
@@ -131,6 +132,23 @@ export function StateHubView({ state, info, areas, counts, sample, showUnpublish
   )
 }
 
+// One line of context: the city or county rule for installers, with source, date and who to confirm with.
+function LocalRules({ area }: { area: Area }) {
+  const state = stateName(area.stateSlug, area.state)
+  return (
+    <section aria-labelledby="local" className="grid gap-1 max-w-[70ch] text-sm">
+      <h2 id="local" className="text-base font-bold">Installer rules in {area.shortName}</h2>
+      {area.local && <p>{area.local.note}</p>}
+      <p className="text-muted-foreground">
+        {area.local?.sourceUrl && <><a className="underline" href={area.local.sourceUrl} rel="nofollow noopener" target="_blank">Source</a> · </>}
+        {area.local?.checked && <>Last checked {area.local.checked} · </>}
+        {area.local?.authority && <>Confirm with {area.local.authority}. </>}
+        State rules: <a className="underline" href={stateHref(area.stateSlug)}>{state}</a>. You don't need a permit to buy partitions.
+      </p>
+    </section>
+  )
+}
+
 export function AreaView({ area, installers, rateCards, preset, sample, unpublished }: {
   area: Area; installers: Installer[]; rateCards: RateCard[]; preset?: string; sample: boolean; unpublished?: boolean
 }) {
@@ -144,6 +162,7 @@ export function AreaView({ area, installers, rateCards, preset, sample, unpublis
       <main className={`${WRAP} py-10 grid gap-10`}>
         <ConfigureStart areaSlug={area.slug} areaName={area.shortName} installers={installers} rateCards={rateCards} preset={preset} from="directory" />
         <AreaInstallers area={area} installers={installers} />
+        <LocalRules area={area} />
       </main>
       <MobileConfigureBar href="#configure" />
     </>
