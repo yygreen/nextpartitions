@@ -128,3 +128,18 @@ Under the grid: the page's short intro stays visible, then the rest of the conte
 ## 17. Get a Quote on phones and tablets (2026-10-28)
 
 Below 1024 px wide the hero button goes full width (up to 420 px) and 48 px tall, so it's the clearest action in the hero. Desktop is unchanged. The previews do this in `build/build.mjs` (`MOBILE_CSS`). A fixed quote bar at the bottom of the screen was tried and left out for now.
+
+## 18. Breadcrumb structured data (Search Console error, 2026-11-02)
+
+Search Console reports **Breadcrumbs: Missing field "item" (in "itemListElement")** on 3 guides since 2026-10-03: /guides/standard-sizes, /guides/ada-compliance, /guides/bathroom-stall-dimensions. A crawl of all 46 sitemap URLs shows a fourth page with the same problem, /guides/restroom-layout (not yet recrawled).
+
+Cause: every page outputs **two** BreadcrumbList blocks, one from `head()` and one from the page's breadcrumb component. On the four guides the component's list has a middle crumb "Resources" with no `item` (URL), and only the last crumb may leave `item` out. The visible breadcrumb also says "Resources", while the URL and the first list say "Guides".
+
+Fix:
+1. On the four guide pages, rename the middle crumb "Resources" to **"Guides"** and give it `"item": "https://nextpartitions.com/guides"`, in both the visible breadcrumb and the JSON-LD. (This also needs the /guides index page from section 1, so the crumb doesn't link to a blank page.)
+2. Output **one** BreadcrumbList per page. Keep the component's list (it matches the visible breadcrumb) and remove the `head()` copy, or the other way round. The two copies currently use different names on some pages ("Hardware" vs "Hardware & Parts", "Phenolic" vs "Phenolic Partitions", "ASI Global" vs "ASI Global Partitions"); after the change there's only one name per crumb, matching what's on screen.
+3. Give the last crumb an `item` too (its own canonical URL). Google allows leaving it out, but including it is cleaner and consistent.
+4. Add a BreadcrumbList (Home › Guides) to /guides once the index page exists.
+5. Then click **Validate fix** in Search Console for this issue.
+
+All other pages (materials, mounting styles, hardware, brands, industries, service area, blog) pass: every crumb except the last has an `item`. The previews already use "Guides" with a link.
