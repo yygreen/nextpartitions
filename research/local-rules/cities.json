@@ -217,7 +217,7 @@
   "quote": "reviews testing, experience and licensing of applicants for licenses",
   "pass2_note": "Contractors pull Colorado Springs permits through the Pikes Peak Regional Building Department, which licenses contractors by class and requires current insurance and a passed ICC exam.",
   "research_source": "claude-in-chrome 2026-11-03",
-  "research_caveat": "Source is an El Paso County page; PPRBD site did not load."
+  "research_caveat": "PPRBD site did not open; source is an El Paso County page. City code has no building chapter."
  },
  {
   "slug": "columbia",
@@ -269,16 +269,17 @@
  },
  {
   "slug": "dayton",
-  "note": "Some work in Dayton must be done by a City of Dayton licensed contractor; confirm with Building Inspection whether partition installation is included.",
+  "note": "Some work in Dayton must be done by a City of Dayton licensed contractor; the owner or agent files the permit application with the building official.",
   "authority": "City of Dayton Building Inspection Division",
-  "source_url": "https://www.daytonohio.gov/m/faq?cat=18",
+  "source_url": "https://library.municode.com/oh/dayton/codes/code_of_ordinances?nodeId=TITXVLAUS_CH153UNBUCO",
   "confidence": "medium",
   "research_note": "Dayton requires city registration and bond for some trade contractors, and its permit forms include contractor registration forms; confirm what applies to partition installers.",
   "first_pass": "Dayton requires city registration for electrical, HVAC and plumbing contractors on top of state trade licences; no city general contractor licence was confirmed for partition installation.",
-  "code_citation": null,
+  "code_citation": "Dayton Code of Ordinances § 153.07",
   "quote": "may need to be done by a City of Dayton licensed contractor",
   "pass2_note": "Dayton requires city registration and bond for some trade contractors, and its permit forms include contractor registration forms; confirm what applies to partition installers.",
-  "research_source": "claude-in-chrome 2026-11-03"
+  "research_source": "claude-in-chrome 2026-11-03",
+  "research_caveat": "Code section behind the licensed-contractor FAQ not found."
  },
  {
   "slug": "denver",
@@ -310,14 +311,15 @@
   "slug": "detroit",
   "note": "Detroit licenses and registers contractors for certain construction work each year; confirm with BSEED whether partition installation is covered.",
   "authority": "City of Detroit Buildings, Safety Engineering and Environmental Department (BSEED)",
-  "source_url": "https://detroitmi.gov/departments/buildings-safety-engineering-and-environmental-department-bseed/bseed-divisions/construction-inspection/bseed-contractor-license-application",
+  "source_url": "https://library.municode.com/mi/detroit/codes/code_of_ordinances?nodeId=PAIVCOCH1--20_CH8BUCOPRMA_ARTIIBUCO",
   "confidence": "medium",
   "research_note": "Detroit requires a current Michigan contractor license first, then registration with the city's BSEED before a contractor can pull commercial permits.",
   "first_pass": "Detroit requires a current Michigan contractor licence first, then registration with the city's BSEED before a contractor can pull commercial permits.",
-  "code_citation": null,
+  "code_citation": "Detroit City Code Ch. 8, Art. II",
   "quote": "contractors performing certain construction and maintenance work",
   "pass2_note": "Detroit requires a current Michigan contractor license first, then registration with the city's BSEED before a contractor can pull commercial permits.",
-  "research_source": "claude-in-chrome 2026-11-03"
+  "research_source": "claude-in-chrome 2026-11-03",
+  "research_caveat": "Only 5 of 44 license matches in the Building Code article reviewed."
  },
  {
   "slug": "durham",
@@ -427,16 +429,17 @@
  },
  {
   "slug": "indianapolis",
-  "note": "Construction contractors need a license from Indianapolis Business and Neighborhood Services (Beech Grove, Lawrence, Southport and Speedway excepted).",
+  "note": "Contractors doing construction work in Indianapolis must be listed contractors with Business and Neighborhood Services (Beech Grove, Lawrence, Southport and Speedway excepted).",
   "authority": "Indianapolis Department of Business and Neighborhood Services",
-  "source_url": "https://www.indy.gov/activity/contractor-licenses",
+  "source_url": "https://library.municode.com/in/indianapolis_-_marion_county/codes/code_of_ordinances?nodeId=TITIVBUCORELI_CH875COSKTR_ARTICO_S875-101DECOLIRE",
   "confidence": "high",
   "research_note": "Indianapolis licenses general contractor companies through Business and Neighborhood Services, with a surety bond and insurance; installers confirm which license class covers commercial interior work.",
   "first_pass": "Indianapolis requires a Class A Building Contractor license (with surety bond) for commercial work, issued by Business and Neighborhood Services; Indiana has no state general contractor licence.",
-  "code_citation": null,
+  "code_citation": "Revised Code of Indianapolis-Marion County § 875-101",
   "quote": "licenses individuals and businesses engaged in construction activity",
   "pass2_note": "Indianapolis licenses general contractor companies through Business and Neighborhood Services, with a surety bond and insurance; installers confirm which license class covers commercial interior work.",
-  "research_source": "claude-in-chrome 2026-11-03"
+  "research_source": "claude-in-chrome 2026-11-03",
+  "research_caveat": "Only the start of § 875-101(b) read; Ch. 536 exceptions and listing requirements not read."
  },
  {
   "slug": "jackson",
@@ -505,15 +508,15 @@
  },
  {
   "slug": "lexington",
-  "note": "Check local contractor licensing or registration with Lexington-Fayette Urban County Government before work starts.",
+  "note": "Lexington's contractor registration requires an occupational license and a certificate of insurance.",
   "authority": "Lexington-Fayette Urban County Government",
   "source_url": "https://www.lexingtonky.gov/working/bids-quotes-rfps/how-register-contractor",
-  "confidence": "low",
+  "confidence": "medium",
   "research_note": "Lexington-Fayette's Contractors Registration Ordinance requires contractors to register with the Division of Building Inspection, and unregistered contractors cannot obtain building permits.",
   "first_pass": "Lexington-Fayette requires contractors to register with the city under its Contractors Registration Ordinance (with liability insurance) before working on permitted jobs.",
-  "code_citation": null,
+  "code_citation": "Lexington-Fayette Code Ch. 5",
   "quote": null,
-  "research_caveat": "Registration page may be for city vendors, not permit applicants; code not reached.",
+  "research_caveat": "Ch. 13 not read; registration page may be aimed at city vendors.",
   "research_source": "claude-in-chrome batch 2 2026-11-03",
   "code_text_read": false
  },
@@ -549,7 +552,7 @@
   "first_pass": "Nassau County's home improvement license exempts commercial-only work; Suffolk has county contractor licenses, and building permits come from the individual town or village building department.",
   "code_citation": null,
   "quote": null,
-  "research_caveat": "Nassau and Suffolk pages did not load.",
+  "research_caveat": "Retried: Nassau/Suffolk pages failed again; town-level rules unresearched. Phone-call item.",
   "research_source": "claude-in-chrome batch 2 2026-11-03",
   "code_text_read": false
  },
@@ -605,7 +608,7 @@
   "first_pass": "Memphis and Shelby County require a general contractor to register their state licence, with a city/county business licence, at Code Enforcement before pulling a permit.",
   "code_citation": null,
   "quote": null,
-  "research_caveat": "Packet may date from 2018; read from first-page screenshot.",
+  "research_caveat": "Rule from page 1 of a packet that may date from 2018; not found in the code sections searched.",
   "research_source": "claude-in-chrome batch 2 2026-11-03",
   "code_text_read": false
  },
@@ -644,7 +647,7 @@
   "first_pass": "Milwaukee has no general contractor licence for commercial interior work found; permits come from DNS, and electrical and plumbing contractors are licensed separately by the city.",
   "code_citation": null,
   "quote": null,
-  "research_caveat": "City site connection error; code not found.",
+  "research_caveat": "Retried: city site failed again. Phone-call item.",
   "research_source": "claude-in-chrome batch 2 2026-11-03",
   "code_text_read": false
  },
@@ -730,7 +733,7 @@
   "first_pass": "Newark's local contractor registration for commercial work was not confirmed; permits come from the city's Construction Code Official under New Jersey's Uniform Construction Code.",
   "code_citation": "Newark Ordinance 8:21-1",
   "quote": null,
-  "research_caveat": "Code text not read; page doesn't say the license is required to pull a permit.",
+  "research_caveat": "Ordinance 8:21-1 text behind an eCode360 login; permit link unconfirmed.",
   "research_source": "claude-in-chrome batch 2 2026-11-03",
   "code_text_read": true
  },
