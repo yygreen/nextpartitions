@@ -1,5 +1,5 @@
 import type { DirectoryRepo } from './repo'
-import type { Area, Installer, RateCard, Review } from './types'
+import type { Area, Installer, RateCard, Review, StateInfo } from './types'
 
 // FICTIONAL sample data for development and previews. Never shown when Supabase is configured.
 export const SAMPLE_NOTICE = 'Sample data: all installers, ratings, reviews and prices are fictional.'
@@ -7,12 +7,18 @@ export const SAMPLE_NOTICE = 'Sample data: all installers, ratings, reviews and 
 const AREAS: Area[] = [
   { slug: 'dallas', name: 'Dallas–Fort Worth', shortName: 'DFW', state: 'TX', stateSlug: 'texas',
     center: { lat: 32.84, lng: -96.97 },
-    cities: ['Dallas', 'Fort Worth', 'Arlington', 'Plano', 'Irving', 'Garland', 'Frisco', 'McKinney', 'Denton'] },
+    cities: ['Dallas', 'Fort Worth', 'Arlington', 'Plano', 'Irving', 'Garland', 'Frisco', 'McKinney', 'Denton'], published: true },
   { slug: 'houston', name: 'Houston', shortName: 'Houston', state: 'TX', stateSlug: 'texas',
-    center: { lat: 29.76, lng: -95.37 }, cities: ['Houston', 'Pasadena', 'Sugar Land', 'The Woodlands', 'Katy'] },
+    center: { lat: 29.76, lng: -95.37 }, cities: ['Houston', 'Pasadena', 'Sugar Land', 'The Woodlands', 'Katy'], published: true },
   { slug: 'san-antonio', name: 'San Antonio', shortName: 'San Antonio', state: 'TX', stateSlug: 'texas',
-    center: { lat: 29.42, lng: -98.49 }, cities: ['San Antonio', 'New Braunfels', 'Schertz'] },
+    center: { lat: 29.42, lng: -98.49 }, cities: ['San Antonio', 'New Braunfels', 'Schertz'], published: true },
 ]
+
+const TEXAS: StateInfo = {
+  slug: 'texas', licenseStatus: 'no_state_license',
+  licenseSummary: "Texas has no statewide contractor license for partition installation. Cities such as Dallas require contractors to register before they pull permits, so we check city or state business registration.",
+  licenseAuthority: 'Texas Department of Licensing and Regulation', licenseSourceUrl: 'https://www.tdlr.texas.gov/', licenseChecked: '2026-10-14',
+}
 
 const checks = (city: string) => [
   { label: 'Insurance on file ($1M general liability)', verified: '2026-10-12' },
@@ -69,6 +75,7 @@ export const sampleRepo: DirectoryRepo = {
   async allAreas() { return AREAS },
   async areasInState(stateSlug) { return AREAS.filter((a) => a.stateSlug === stateSlug) },
   async area(slug) { return AREAS.find((a) => a.slug === slug) ?? null },
+  async stateInfo(stateSlug) { return stateSlug === 'texas' ? TEXAS : null },
   async installersInArea(areaSlug) { return INSTALLERS.filter((i) => i.areas.includes(areaSlug)) },
   async installer(slug) { return INSTALLERS.find((i) => i.slug === slug) ?? null },
   async rateCards(slugs) { return RATES.filter((r) => slugs.includes(r.slug)) },

@@ -16,7 +16,6 @@ import { Route as PortalIndexRouteImport } from './routes/portal/index'
 import { Route as QuoteTokenRouteImport } from './routes/quote/$token'
 import { Route as ServiceAreaIndexRouteImport } from './routes/service-area/index'
 import { Route as ServiceAreaAreaRouteImport } from './routes/service-area/$area'
-import { Route as ServiceAreaTexasRouteImport } from './routes/service-area/texas'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -53,11 +52,6 @@ const ServiceAreaAreaRoute = ServiceAreaAreaRouteImport.update({
   path: '/service-area/$area',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ServiceAreaTexasRoute = ServiceAreaTexasRouteImport.update({
-  id: '/service-area/texas',
-  path: '/service-area/texas',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -65,7 +59,6 @@ export interface FileRoutesByFullPath {
   '/installers/apply': typeof InstallersApplyRoute
   '/quote/$token': typeof QuoteTokenRoute
   '/service-area/$area': typeof ServiceAreaAreaRoute
-  '/service-area/texas': typeof ServiceAreaTexasRoute
   '/portal/': typeof PortalIndexRoute
   '/service-area/': typeof ServiceAreaIndexRoute
 }
@@ -75,7 +68,6 @@ export interface FileRoutesByTo {
   '/installers/apply': typeof InstallersApplyRoute
   '/quote/$token': typeof QuoteTokenRoute
   '/service-area/$area': typeof ServiceAreaAreaRoute
-  '/service-area/texas': typeof ServiceAreaTexasRoute
   '/portal': typeof PortalIndexRoute
   '/service-area': typeof ServiceAreaIndexRoute
 }
@@ -86,7 +78,6 @@ export interface FileRoutesById {
   '/installers/apply': typeof InstallersApplyRoute
   '/quote/$token': typeof QuoteTokenRoute
   '/service-area/$area': typeof ServiceAreaAreaRoute
-  '/service-area/texas': typeof ServiceAreaTexasRoute
   '/portal/': typeof PortalIndexRoute
   '/service-area/': typeof ServiceAreaIndexRoute
 }
@@ -98,7 +89,6 @@ export interface FileRouteTypes {
     | '/installers/apply'
     | '/quote/$token'
     | '/service-area/$area'
-    | '/service-area/texas'
     | '/portal/'
     | '/service-area/'
   fileRoutesByTo: FileRoutesByTo
@@ -108,7 +98,6 @@ export interface FileRouteTypes {
     | '/installers/apply'
     | '/quote/$token'
     | '/service-area/$area'
-    | '/service-area/texas'
     | '/portal'
     | '/service-area'
   id:
@@ -118,7 +107,6 @@ export interface FileRouteTypes {
     | '/installers/apply'
     | '/quote/$token'
     | '/service-area/$area'
-    | '/service-area/texas'
     | '/portal/'
     | '/service-area/'
   fileRoutesById: FileRoutesById
@@ -129,7 +117,6 @@ export interface RootRouteChildren {
   InstallersApplyRoute: typeof InstallersApplyRoute
   QuoteTokenRoute: typeof QuoteTokenRoute
   ServiceAreaAreaRoute: typeof ServiceAreaAreaRoute
-  ServiceAreaTexasRoute: typeof ServiceAreaTexasRoute
   PortalIndexRoute: typeof PortalIndexRoute
   ServiceAreaIndexRoute: typeof ServiceAreaIndexRoute
 }
@@ -185,13 +172,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiceAreaAreaRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/service-area/texas': {
-      id: '/service-area/texas'
-      path: '/service-area/texas'
-      fullPath: '/service-area/texas'
-      preLoaderRoute: typeof ServiceAreaTexasRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -201,7 +181,6 @@ const rootRouteChildren: RootRouteChildren = {
   InstallersApplyRoute: InstallersApplyRoute,
   QuoteTokenRoute: QuoteTokenRoute,
   ServiceAreaAreaRoute: ServiceAreaAreaRoute,
-  ServiceAreaTexasRoute: ServiceAreaTexasRoute,
   PortalIndexRoute: PortalIndexRoute,
   ServiceAreaIndexRoute: ServiceAreaIndexRoute,
 }

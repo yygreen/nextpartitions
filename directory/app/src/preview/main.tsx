@@ -9,6 +9,7 @@ import { type ReactNode, useEffect, useState } from 'react'
 import { applyHref, areaHref, configuratorHref, installerHref, portalHref, quoteHref, setLinkMode, stateHref } from '../directory/links'
 import { SiteChrome } from '../shell/SiteChrome'
 import { sampleRepo as db } from '../directory/repo.sample'
+import { serviceAreaData, stateHubData } from '../directory/hub'
 import { AreaView, InstallerView, ServiceAreaView, StateHubView } from '../directory/views'
 import { PortalApp } from '../portal/components/PortalApp'
 import { resetSample, sampleStore, saveSample, setSampleRole } from '../portal/repo.sample'
@@ -31,17 +32,11 @@ async function page(path: string, query: URLSearchParams): Promise<{ title: stri
   const [, kind = '', slug = ''] = path.split('/')
   if (path === '/') return { title: 'Next Partitions prototype', view: <Start />, chrome: false }
   if (kind === 'service-area') {
-    const areas = await db.allAreas()
-    const states = [...new Set(areas.map((a) => a.stateSlug))].map((s) => ({ slug: s, areas: areas.filter((a) => a.stateSlug === s) }))
-    return { title: 'Service Area', view: <ServiceAreaView states={states} sample />, chrome: true }
+    return { title: 'Service Area', view: <ServiceAreaView states={await serviceAreaData(db)} sample />, chrome: true }
   }
   if (kind === 'state') {
-    const areas = await db.areasInState(slug || 'texas')
-    const counts = await Promise.all(areas.map(async (a) => {
-      const list = await db.installersInArea(a.slug)
-      return { slug: a.slug, installers: list.length, installs: list.reduce((n, i) => n + i.installs, 0) }
-    }))
-    return { title: 'Bathroom Partition Installers in Texas', view: <StateHubView state={slug || 'texas'} areas={areas} counts={counts} sample />, chrome: true }
+    const hub = await stateHubData(db, slug || 'texas')
+    if (hub) return { title: `Bathroom Partitions and Installers in ${hub.state.name}`, view: <StateHubView {...hub} sample />, chrome: true }
   }
   if (kind === 'area') {
     const area = await db.area(slug)

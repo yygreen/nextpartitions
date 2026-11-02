@@ -307,4 +307,24 @@ do $$ begin
   assert (select name from dir_areas where slug = 'dallas') = 'Dallas–Fort Worth', 'DFW area not seeded';
 end $$;
 
+-- 9. State hubs and areas: public names and rules, internal research notes admin-only.
+select pg_temp.as_user(null);
+do $$ begin
+  assert (select count(*) from dir_states) = 51, 'states not public';
+  assert (select count(*) from dir_areas where not published) >= 98, 'unpublished areas not readable';
+  assert (select state_slug from dir_areas where slug = 'new-york') = 'new-york-state', 'NYC not under New York state';
+end $$;
+select pg_temp.fails($q$select * from dir_state_notes$q$, '%permission denied%');
+select pg_temp.fails($q$insert into dir_areas (slug, name, short_name, state, state_slug, center_lat, center_lng) values ('x', 'X', 'X', 'TX', 'texas', 0, 0)$q$, '%row-level security%');
+select pg_temp.as_user('00000000-0000-0000-0000-0000000000a1');
+do $$ begin
+  assert (select count(*) from dir_state_notes) = 0, 'installer reads internal state notes';
+end $$;
+select pg_temp.as_user('00000000-0000-0000-0000-00000000000a');
+do $$ begin
+  assert (select count(*) from dir_state_notes) = 51, 'admin cannot read state notes';
+  assert (select count(*) from dir_states where license_summary is null) = 0, 'state summary missing';
+end $$;
+reset role;
+
 select 'APPLY TESTS PASSED';

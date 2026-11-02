@@ -1,13 +1,14 @@
 // Page bodies as plain components (data in, markup out). The routes render these on the live site;
 // the static preview renders the same components with sample data.
-import { areaHref, homeHref, serviceAreaHref, stateHref } from './links'
+import { areaHref, configuratorHref, homeHref, serviceAreaHref, stateHref } from './links'
 import { AreaInstallers } from './components/AreaInstallers'
 import { ConfigureStart } from './components/ConfigureStart'
 import { MobileConfigureBar, StartConfigure } from './components/StartConfigure'
 import { Breadcrumbs, Disclaimer, SampleBanner, Stars } from './components/ui'
+import type { StateHubData, StateSummary } from './hub'
+import { stateName } from './states'
 import { type Area, type Installer, labelsFor, MATERIAL_LABEL, MOUNTING_LABEL, NEW_INSTALLER_NOTE, type RateCard, type Review } from './types'
 
-const STATE_NAME: Record<string, string> = { texas: 'Texas' }
 const WRAP = 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'
 
 // Dark page header band, as on the live /service-area page.
@@ -24,70 +25,120 @@ export function Hero({ crumbs, title, lead, children }: { crumbs: { label: strin
   )
 }
 
-export function ServiceAreaView({ states, sample }: { states: { slug: string; areas: Area[] }[]; sample: boolean }) {
+export function ServiceAreaView({ states, sample, showUnpublished }: { states: StateSummary[]; sample: boolean; showUnpublished?: boolean }) {
   return (
     <>
       <SampleBanner show={sample} />
       <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Service Area' }]} title="Bathroom Partitions Shipped to All 50 States"
-        lead="We ship commercial partitions to every state. In these areas, approved local installers can install them too." />
+        lead="We ship commercial partitions to every state. Choose your state for local installers, the rules for who may install partitions there, and your partitions price." />
       <main className={`${WRAP} py-10 grid gap-10`}>
-        <ul className="grid sm:grid-cols-2 gap-3">
-          {states.map((s) => (
-            <li key={s.slug} className="bg-card border border-border rounded-lg p-4 grid gap-1">
-              <h2 className="text-xl font-bold"><a className="hover:underline" href={stateHref(s.slug)}>{STATE_NAME[s.slug] ?? s.slug}</a></h2>
-              <p className="text-sm text-muted-foreground">Installers in {s.areas.map((a) => a.name).join(', ')}</p>
-            </li>
-          ))}
+        <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {states.map(({ state, live, upcoming }) => {
+            const named = showUnpublished ? [...live, ...upcoming] : live
+            return (
+              <li key={state.slug} className="bg-card border border-border rounded-lg p-4 grid gap-1 content-start">
+                <h2 className="text-lg font-bold"><a className="hover:underline" href={stateHref(state.slug)}>{state.name}</a></h2>
+                <p className="text-sm text-muted-foreground">
+                  {named.length ? `Installers in ${named.map((a) => a.name).join(', ')}` : upcoming.length ? `Installers coming soon in ${upcoming.map((a) => a.name).join(', ')}` : 'Partitions shipped statewide'}
+                </p>
+              </li>
+            )
+          })}
         </ul>
+        <StartConfigure />
       </main>
     </>
   )
 }
 
-export function StateHubView({ state, areas, counts, sample }: {
-  state: string; areas: Area[]; counts: { slug: string; installers: number; installs: number }[]; sample: boolean
-}) {
+const LICENSE_HEADLINE: Record<NonNullable<NonNullable<StateHubData['info']>['licenseStatus']>, string> = {
+  license_required: 'A state license is required',
+  above_threshold: 'A state license is required above a job size',
+  registration_only: 'State registration is required',
+  no_state_license: 'No statewide license',
+  unclear: 'State rules still being confirmed',
+}
+
+// Who may install partitions in this state: plain language, with the source, the date it was checked and
+// the authority to confirm with (content principles in CLAUDE.md). Never implies a permit is needed to buy.
+function StateRules({ name, info }: { name: string; info: StateHubData['info'] }) {
+  return (
+    <section aria-labelledby="rules" className="bg-card border border-border rounded-lg p-5 grid gap-2 max-w-[70ch]">
+      <h2 id="rules" className="text-xl font-bold">Who may install partitions in {name}</h2>
+      {info?.licenseSummary ? (
+        <>
+          {info.licenseStatus && <p className="font-semibold">{LICENSE_HEADLINE[info.licenseStatus]}</p>}
+          <p>{info.licenseSummary}</p>
+          <p className="text-sm text-muted-foreground">
+            {info.licenseSourceUrl && <><a className="underline" href={info.licenseSourceUrl} rel="nofollow noopener" target="_blank">Source</a> · </>}
+            {info.licenseChecked && <>Last checked {info.licenseChecked} · </>}
+            Confirm with {info.licenseAuthority ?? `the ${name} contractor licensing authority`}. Cities and school districts may add their own registration rules. You don't need a permit to buy partitions.
+          </p>
+        </>
+      ) : (
+        <p>Buying partitions doesn't need a permit. Installers may need a state or city contractor license or registration; we check this for every installer we list.</p>
+      )}
+      <p className="text-sm">We check every listed installer's insurance, registration and references.</p>
+    </section>
+  )
+}
+
+export function StateHubView({ state, info, areas, counts, sample, showUnpublished }: StateHubData & { sample: boolean; showUnpublished?: boolean }) {
   const total = counts.reduce((n, c) => n + c.installers, 0)
-  const name = STATE_NAME[state] ?? state
+  const live = areas.filter((a) => a.published || showUnpublished)
+  const upcoming = areas.filter((a) => !a.published && !showUnpublished)
+  const first = live[0]
   return (
     <>
       <SampleBanner show={sample} />
-      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Service Area', href: serviceAreaHref() }, { label: name }]}
-        title={`Bathroom Partition Installers in ${name}`}
-        lead={`Price your toilet partitions with us, and we match the job with approved, insured installers in ${areas.length} ${name} areas. You deal with one team from quote to installed restroom.`}>
-        <p className="text-sm text-primary-foreground/70">{total} verified installers · Texas has no statewide contractor license, so we check city or state business registration.</p>
+      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Service Area', href: serviceAreaHref() }, { label: state.name }]}
+        title={`Bathroom Partitions and Installers in ${state.name}`}
+        lead={live.length
+          ? `Price your toilet partitions with us, and we match the job with approved, insured installers in ${live.length} ${state.name} area${live.length === 1 ? '' : 's'}. You deal with one team from quote to installed restroom.`
+          : `We ship commercial toilet partitions anywhere in ${state.name}. Price your partitions now; we're adding approved local installers area by area.`}>
+        {total > 0 && <p className="text-sm text-primary-foreground/70">{total} verified installer{total === 1 ? '' : 's'} in {state.name}</p>}
       </Hero>
       <main className={`${WRAP} py-10 grid gap-10`}>
-        <section aria-labelledby="areas" className="grid gap-4">
-          <h2 id="areas" className="text-2xl font-extrabold tracking-tight">Choose your area to price partitions and installation</h2>
-          <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {areas.map((a) => {
-              const c = counts.find((x) => x.slug === a.slug)!
-              return (
-                <li key={a.slug} className="bg-card border border-border rounded-lg p-4 grid gap-2">
-                  <h3 className="font-bold text-lg"><a href={areaHref(a.slug)} className="hover:underline">{a.name}</a></h3>
-                  <p className="text-sm text-muted-foreground">{c.installers ? `${c.installers} installer${c.installers === 1 ? '' : 's'} · ${c.installs} installs` : 'Installers coming soon'} · serves {a.cities.slice(0, 4).join(', ')}{a.cities.length > 4 ? '…' : ''}</p>
-                  <a href={areaHref(a.slug) + '#configure'} className="text-sm font-semibold text-brand-red hover:underline">Price a {a.shortName} restroom</a>
-                </li>
-              )
-            })}
-          </ul>
-        </section>
+        {live.length > 0 && (
+          <section aria-labelledby="areas" className="grid gap-4">
+            <h2 id="areas" className="text-2xl font-extrabold tracking-tight">Choose your area to price partitions and installation</h2>
+            <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {live.map((a) => {
+                const c = counts.find((x) => x.slug === a.slug)
+                return (
+                  <li key={a.slug} className="bg-card border border-border rounded-lg p-4 grid gap-2">
+                    <h3 className="font-bold text-lg"><a href={areaHref(a.slug)} className="hover:underline">{a.name}</a>{!a.published && <span className="ml-2 text-xs font-semibold text-muted-foreground">(not published)</span>}</h3>
+                    <p className="text-sm text-muted-foreground">{c?.installers ? `${c.installers} installer${c.installers === 1 ? '' : 's'} · ${c.installs} installs` : 'Installers coming soon'} · serves {a.cities.slice(0, 4).join(', ')}{a.cities.length > 4 ? '…' : ''}</p>
+                    <a href={areaHref(a.slug) + '#configure'} className="text-sm font-semibold text-brand-red hover:underline">Price a {a.shortName} restroom</a>
+                  </li>
+                )
+              })}
+            </ul>
+          </section>
+        )}
+        {upcoming.length > 0 && (
+          <section aria-labelledby="upcoming" className="grid gap-2">
+            <h2 id="upcoming" className="text-xl font-bold">Installers coming soon</h2>
+            <p className="text-muted-foreground">We're lining up approved installers in {upcoming.map((a) => a.name).join(', ')}. Partitions ship there now.</p>
+          </section>
+        )}
+        <StateRules name={state.name} info={info} />
         <StartConfigure />
         <Disclaimer />
       </main>
-      <MobileConfigureBar href={areaHref(areas[0]?.slug ?? '') + '#configure'} />
+      <MobileConfigureBar href={first ? areaHref(first.slug) + '#configure' : configuratorHref({ from: 'hub' })} />
     </>
   )
 }
 
-export function AreaView({ area, installers, rateCards, preset, sample }: {
-  area: Area; installers: Installer[]; rateCards: RateCard[]; preset?: string; sample: boolean
+export function AreaView({ area, installers, rateCards, preset, sample, unpublished }: {
+  area: Area; installers: Installer[]; rateCards: RateCard[]; preset?: string; sample: boolean; unpublished?: boolean
 }) {
   return (
     <>
       <SampleBanner show={sample} />
-      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Service Area', href: serviceAreaHref() }, { label: STATE_NAME[area.stateSlug] ?? area.state, href: stateHref(area.stateSlug) }, { label: area.name }]}
+      {unpublished && <div className="bg-surface-warm border-b border-border text-sm text-center px-4 py-2">Staging preview: this area isn't published yet (it goes live once 3 installers are listed). Not indexed.</div>}
+      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Service Area', href: serviceAreaHref() }, { label: stateName(area.stateSlug, area.state), href: stateHref(area.stateSlug) }, { label: area.name }]}
         title={`Bathroom Partitions in ${area.name}`}
         lead={`Commercial toilet partitions shipped to ${area.name}, installed by approved local installers. Price both in one place, then choose your installer.`} />
       <main className={`${WRAP} py-10 grid gap-10`}>
@@ -105,7 +156,7 @@ export function InstallerView({ area, installer: i, rateCards, reviews, sample }
   return (
     <>
       <SampleBanner show={sample} />
-      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: STATE_NAME[area.stateSlug] ?? area.state, href: stateHref(area.stateSlug) }, { label: area.name, href: areaHref(area.slug) }, { label: i.displayName }]}
+      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: stateName(area.stateSlug, area.state), href: stateHref(area.stateSlug) }, { label: area.name, href: areaHref(area.slug) }, { label: i.displayName }]}
         title={i.displayName}
         lead={`${i.installs ? `${i.installs} installs for Next Partitions customers` : NEW_INSTALLER_NOTE} · based in ${i.baseCity}, works up to ${i.serviceRadiusMi} mi`}>
         <div className="flex flex-wrap items-center gap-2">

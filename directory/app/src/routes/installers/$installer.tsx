@@ -14,7 +14,7 @@ export const Route = createFileRoute('/installers/$installer')({
     title: `${d.installer.displayName}: Partition Installer in ${d.installer.baseCity}, ${d.installer.baseState} | Next Partitions`,
     description: `${d.installer.displayName} installs commercial toilet partitions in ${d.area.name}. ${labelsFor(d.installer)[0]} by Next Partitions: ${d.installer.checks.map((c) => c.label.toLowerCase()).join(', ')}.`,
     path: `/installers/${d.installer.slug}/`,
-    sample: d.sample,
+    sample: d.sample || !d.area.published,
     jsonLd: [
       breadcrumbLd([{ name: 'Home', path: '/' }, { name: d.area.name, path: `/service-area/${d.area.slug}/` }, { name: d.installer.displayName, path: `/installers/${d.installer.slug}/` }]),
       {

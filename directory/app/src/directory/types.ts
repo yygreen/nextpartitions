@@ -26,6 +26,18 @@ export interface Area {
   stateSlug: string
   center: { lat: number; lng: number }
   cities: string[]
+  published: boolean // the page goes public once 3+ installers are listed
+}
+
+// A state's licensing summary for its hub page (dir_states). Shown with its source, the date it was
+// checked and the authority to confirm with.
+export interface StateInfo {
+  slug: string
+  licenseStatus: 'license_required' | 'above_threshold' | 'registration_only' | 'no_state_license' | 'unclear' | null
+  licenseSummary: string | null
+  licenseAuthority: string | null
+  licenseSourceUrl: string | null
+  licenseChecked: string | null // ISO date
 }
 
 export interface Check {

@@ -65,7 +65,7 @@ All installers, rates, reviews and photos in the prototypes are fictional sample
 
 ## Staging
 
-- Supabase project **nextpartitions-staging** (`vgypcsirdnxlcolosrwm`). Live site schema plus the directory, email worker logging only. Setup and the 2026-11-02 end-to-end run: `directory/docs/staging-run-2026-11-02.md`; rerun with `directory/scripts/staging-e2e.mjs`.
+- Supabase project **nextpartitions-staging** (`vgypcsirdnxlcolosrwm`). Live site schema plus the directory, email worker logging only. Setup and the 2026-11-02 end-to-end run: `directory/docs/staging-run-2026-11-02.md`; rerun with `directory/scripts/staging-e2e.mjs`. Staging has the full directory: 51 state hubs and 99 areas (the strategy calendar's city pages); only published areas show publicly, `DIRECTORY_PREVIEW_UNPUBLISHED=1` shows the rest for review.
 
 ## Research in this repo
 
@@ -73,6 +73,7 @@ All installers, rates, reviews and photos in the prototypes are fictional sample
 - `docs/job-routing.md`: proposal for who gets invited to price a job (filters, 3 invites, rotation), when the price window closes, the fallback when nobody prices, avoiding site visits before the deal, and change orders.
 - `docs/onboarding-call-roadmap.md`: onboarding call agenda, what we need from Abe, day-30 success measures and the 30-day plan. The directory launches in month 2, once at least 3 installers are approved.
 
+- `research/state-licensing/states.json`: who may install partitions in each of the 50 states and DC (status, threshold, plain-language summary, authority, source, confidence, what to confirm), researched 2026-11-03. Feeds the state hubs via `directory/scripts/build-state-licensing.py`. Low-confidence or unsourced states: DC, FL, GA, MA (low); KS, MA, ME, MI, MO (no official source opened).
 - `research/installer-regulations.md`: who may install partitions, by state, city and building type. Includes the planned blog cluster and where each item appears on location pages.
 - `prototypes/`: HTML source of the mockups above (see its README).
 - `research/installer-keywords/`: the Semrush export (147 installer keywords, US, 2026-10-14) and the same list mapped to target pages.

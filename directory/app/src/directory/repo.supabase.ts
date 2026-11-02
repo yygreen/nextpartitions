@@ -9,7 +9,7 @@ export function supabaseRepo(url: string, key: string): DirectoryRepo {
 
   const toArea = (r: any): Area => ({
     slug: r.slug, name: r.name, shortName: r.short_name, state: r.state, stateSlug: r.state_slug,
-    center: { lat: r.center_lat, lng: r.center_lng }, cities: r.cities ?? [],
+    center: { lat: r.center_lat, lng: r.center_lng }, cities: r.cities ?? [], published: !!r.published,
   })
   const toInstaller = (r: any): Installer => ({
     slug: r.slug, displayName: r.display_name, baseCity: r.base_city, baseState: r.base_state,
@@ -37,6 +37,13 @@ export function supabaseRepo(url: string, key: string): DirectoryRepo {
     },
     async areasInState(stateSlug) {
       return must(await db.from('dir_areas').select('*').eq('state_slug', stateSlug).order('name')).map(toArea)
+    },
+    async stateInfo(stateSlug) {
+      const r: any = must(await db.from('dir_states')
+        .select('slug, license_status, license_summary, license_authority, license_source_url, license_checked')
+        .eq('slug', stateSlug).maybeSingle())
+      return r ? { slug: r.slug, licenseStatus: r.license_status, licenseSummary: r.license_summary, licenseAuthority: r.license_authority,
+        licenseSourceUrl: r.license_source_url, licenseChecked: r.license_checked } : null
     },
     async area(slug) {
       const r = must(await db.from('dir_areas').select('*').eq('slug', slug).maybeSingle())
