@@ -63,6 +63,10 @@ Older links (EAVGm8…, GTV4x…/LZqng…, JRhaX…/Emsk4…, Hp9kJ…, Gz25g…
 
 All installers, rates, reviews and photos in the prototypes are fictional samples.
 
+## Staging
+
+- Supabase project **nextpartitions-staging** (`vgypcsirdnxlcolosrwm`). Live site schema plus the directory, email worker logging only. Setup and the 2026-11-02 end-to-end run: `directory/docs/staging-run-2026-11-02.md`; rerun with `directory/scripts/staging-e2e.mjs`.
+
 ## Research in this repo
 
 - `research/strategy-2026-02/`: the original February 2026 SEO and website strategy (report, keyword lists 1–4, blog and city-page calendars, technical checklist), with a status check of the live site and how it fits the directory work. **The live site follows its URL structure** (`/guides/`, `/service-area/[city]/`); new pages should too.
