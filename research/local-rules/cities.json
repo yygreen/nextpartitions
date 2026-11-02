@@ -836,16 +836,16 @@
  },
  {
   "slug": "phoenix",
-  "note": "Check local contractor licensing or registration with the City of Phoenix Planning and Development Department before work starts.",
-  "authority": "the City of Phoenix Planning and Development Department",
-  "source_url": "https://phoenix.municipal.codes/CC/9",
-  "confidence": "low",
+  "note": "Phoenix issues building permits only for work by state-licensed contractors; the Arizona contractor's license number goes on the application.",
+  "authority": "City of Phoenix Planning and Development Department",
+  "source_url": "https://www.phoenix.gov/content/dam/phoenix/pddsite/documents/trt/external/dsd_trt_pdf_00371.pdf",
+  "confidence": "medium",
   "research_note": "Phoenix has no city contractor license; permit applicants give their Arizona Registrar of Contractors license number as Arizona law requires.",
   "first_pass": "Phoenix has no city contractor license; the contractor needs an Arizona Registrar of Contractors license and insurance to pull a commercial permit from the city.",
-  "code_citation": null,
+  "code_citation": "A.R.S. § 32-1169 (cited by the city)",
   "quote": null,
-  "research_caveat": "Construction Code (published separately) not read.",
-  "research_source": "claude-in-chrome batch 3 2026-11-03",
+  "research_caveat": "Requirements sheet page 1 of 2, read from a screenshot; Construction Code not read.",
+  "research_source": "claude-in-chrome retry 2026-11-03",
   "code_text_read": false
  },
  {
@@ -888,8 +888,8 @@
   "first_pass": "Raleigh has no separate local contractor license found; commercial work needs a building permit from the city, with state-licensed contractors and trades.",
   "code_citation": null,
   "quote": null,
-  "research_caveat": "Part 12 Businesses and Trades not read.",
-  "research_source": "claude-in-chrome batch 3 2026-11-03",
+  "research_caveat": "Part 10 building provisions did not load; Part 12 article titles only. Phone-call item.",
+  "research_source": "claude-in-chrome retry 2026-11-03",
   "code_text_read": false
  },
  {
@@ -1014,16 +1014,16 @@
  },
  {
   "slug": "savannah",
-  "note": "Check local contractor licensing or registration with the City of Savannah development services office before work starts.",
-  "authority": "the City of Savannah development services office",
-  "source_url": null,
-  "confidence": "low",
+  "note": "Savannah contractors give their Georgia license number before a permit is issued where the state requires a license, and follow any local licensing rules.",
+  "authority": "City of Savannah Development Services",
+  "source_url": "https://online.encodeplus.com/regs/savannah-ga/doc-viewer.aspx",
+  "confidence": "medium",
   "research_note": "Savannah-area permit packages ask for the installer's Georgia state license and local business tax certificate; confirm whether city or county rules apply to the job site.",
   "first_pass": "Contractors need a Georgia state license and a local business or occupational tax certificate; permits for the Savannah area are handled by the building safety office.",
-  "code_citation": null,
+  "code_citation": "Savannah Code of Ordinances § 8-1038",
   "quote": null,
-  "research_caveat": "Code contents and city page did not load.",
-  "research_source": "claude-in-chrome batch 3 2026-11-03",
+  "research_caveat": "Whether Savannah has its own local licensing rule not checked; city permit page did not load.",
+  "research_source": "claude-in-chrome retry 2026-11-03",
   "code_text_read": false
  },
  {
@@ -1077,16 +1077,16 @@
  },
  {
   "slug": "st-louis",
-  "note": "Contractors in the trades defined in City Code ch. 8.12 need a City of St. Louis license from the License Collector before working in the city.",
+  "note": "Building, building maintenance and carpentry contractors, among other listed trades, need a City of St. Louis license from the License Collector.",
   "authority": "City of St. Louis License Collector",
   "source_url": "https://library.municode.com/mo/st._louis/codes/code_of_ordinances?nodeId=TIT8BUTALIRE_CH8.12CO",
   "confidence": "medium",
   "research_note": "St. Louis requires contractors to hold a city business license, and mechanical work needs a Building Division contractor license; confirm what applies to partition installation.",
   "first_pass": "St. Louis requires a city business license for contractors, and permits are pulled at the Building Division; the exact commercial interior license class is unconfirmed.",
-  "code_citation": "St. Louis City Revised Code § 8.12.020",
+  "code_citation": "St. Louis City Revised Code §§ 8.12.010, 8.12.020",
   "quote": null,
-  "research_caveat": "Not checked whether partitions are in the § 8.12.010 definition; ch. 8.12A not read.",
-  "research_source": "claude-in-chrome batch 3 2026-11-03",
+  "research_caveat": "'Partitions' not in the trade list; building or carpentry is the likely fit. Ch. 8.12A not read.",
+  "research_source": "claude-in-chrome retry 2026-11-03",
   "code_text_read": true
  },
  {
@@ -1102,16 +1102,16 @@
  },
  {
   "slug": "stockton",
-  "note": "Check local contractor licensing or registration with the City of Stockton Building Division before work starts.",
-  "authority": "the City of Stockton Building Division",
-  "source_url": null,
-  "confidence": "low",
+  "note": "General contractors working in Stockton pay the city's annual business license tax.",
+  "authority": "City of Stockton Business License",
+  "source_url": "https://ecode360.com/43420455",
+  "confidence": "medium",
   "research_note": "Stockton requires a city business license that lists the contractor's California license; commercial permits come from the city building division.",
   "first_pass": "Stockton requires a city business license that lists the contractor's California license; commercial permits come from the city building division, and no separate local contractor license was found.",
-  "code_citation": null,
+  "code_citation": "Stockton Municipal Code §§ 5.04.040, 5.08.080",
   "quote": null,
-  "research_caveat": "Code not found; license page 403.",
-  "research_source": "claude-in-chrome batch 3 2026-11-03",
+  "research_caveat": "Sections read in part; no rule found tying the license to permit issuance.",
+  "research_source": "claude-in-chrome retry 2026-11-03",
   "code_text_read": false
  },
  {
@@ -1177,7 +1177,7 @@
  },
  {
   "slug": "virginia-beach",
-  "note": "Contractors working in Virginia Beach pay a city license tax on gross receipts.",
+  "note": "Contractors, including carpentry businesses, pay a Virginia Beach license tax on gross receipts.",
   "authority": "Virginia Beach Commissioner of the Revenue",
   "source_url": "https://library.municode.com/va/virginia_beach/codes/code_of_ordinances?nodeId=CO_CH18LICO_ARTIILITASC_S18-75CO",
   "confidence": "medium",
@@ -1185,8 +1185,8 @@
   "first_pass": "No separate Virginia Beach contractor license was found; permits go through city Permits and Inspections and require the Virginia state contractor license, plus a city business license.",
   "code_citation": "Virginia Beach City Code § 18-75",
   "quote": null,
-  "research_caveat": "Only the start of § 18-75 read. Agency name not from page.",
-  "research_source": "claude-in-chrome batch 3 2026-11-03",
+  "research_caveat": "Partition work not named in the list; § 18-75 read in part.",
+  "research_source": "claude-in-chrome retry 2026-11-03",
   "code_text_read": true
  },
  {
@@ -1224,8 +1224,8 @@
   "first_pass": "Worcester has no city contractor licence; the contractor supplies their state licence number and workers' comp proof to Inspectional Services when applying for a permit.",
   "code_citation": null,
   "quote": null,
-  "research_caveat": "Code not reached.",
-  "research_source": "claude-in-chrome batch 3 2026-11-03",
+  "research_caveat": "Ch. 11 (Licenses) in a 659-page PDF not reached. Phone-call item.",
+  "research_source": "claude-in-chrome retry 2026-11-03",
   "code_text_read": false
  }
 ]
