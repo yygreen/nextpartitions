@@ -94,13 +94,6 @@ Hardware often carries its own warranty, from 1 year up to lifetime on stainless
 
 ## Colors and looks
 
-The same overhead-braced restroom in each material:
-
-:::gallery
-[![Solid plastic (HDPE): blue overhead-braced stalls, the color running through doors, panels and pilasters](/images/renders/overhead-braced-hero-hdpe.jpg)](/partitions/solid-plastic-hdpe)
-[![Phenolic: gray overhead-braced stalls with a smooth decorative face](/images/renders/overhead-braced-hero-phenolic.jpg)](/partitions/phenolic)
-:::
-
 HDPE has color all the way through and soft, rounded edges. Its color range is more limited than laminate's, and fire-rated colors narrow it further. Some HDPE lines offer a shiplap door edge that removes the sightline between door and pilaster without extra hardware.
 
 Phenolic offers a wider range of decorative faces. Black core shows a crisp black edge; color-through matches the edge to the face. Several phenolic lines offer rabbeted or overlapping door edges for privacy. For more on closing gaps, see [why bathroom stalls have gaps](/blog/why-do-bathroom-stalls-have-gaps).
@@ -222,6 +215,8 @@ Usually, with a nonabrasive cleaner. Xylene-based markers can ghost into HDPE. P
 New page; the live /blog shows "Coming Soon".
 
 ## Implementation notes
+
+- Material render gallery removed (2026-11-02): the renders differ only in color, so they suggested a difference that isn't the real one. The edge-view drawings carry the comparison. Close-up renders of each door edge would be the photo-like alternative.
 
 - Structured data: BlogPosting (headline = H1, datePublished 2026-11-02 placeholder, author Next Partitions), FAQPage from the FAQ, BreadcrumbList Home > Blog > this post.
 - Internal links to add elsewhere: link this post from /partitions/solid-plastic-hdpe ("Where HDPE fits", the sentence comparing HDPE with phenolic) and /partitions/phenolic ("Where phenolic fits", the sentence comparing phenolic with HDPE). Both pages already list "hdpe vs phenolic toilet partitions" as a secondary keyword; this post should take it over as the target page. Also link it from /blog/what-are-bathroom-partitions-made-of ("How to choose", the wet-room bullet) and /partitions (materials overview).

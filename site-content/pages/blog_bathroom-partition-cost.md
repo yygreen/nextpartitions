@@ -104,14 +104,6 @@ Each listing also showed a higher crossed-out list price (for example $5,116.50 
 
 [Typical range per stall by material from Next Partitions quotes: data from Abe]
 
-:::gallery
-[![Powder coated steel: red overhead-braced stalls with a smooth baked-on finish](/images/renders/overhead-braced-hero-powdercoat.jpg)](/partitions/powder-coated-steel)
-[![Plastic laminate: overhead-braced stalls with light wood-grain laminate doors, panels and pilasters](/images/renders/overhead-braced-hero-laminate.jpg)](/partitions/plastic-laminate)
-[![Solid plastic (HDPE): blue overhead-braced stalls, the color running through doors, panels and pilasters](/images/renders/overhead-braced-hero-hdpe.jpg)](/partitions/solid-plastic-hdpe)
-[![Phenolic: overhead-braced stalls in slate gray phenolic doors, panels and pilasters](/images/renders/overhead-braced-hero-phenolic.jpg)](/partitions/phenolic)
-[![Stainless steel: overhead-braced stalls in brushed stainless](/images/renders/overhead-braced-hero-stainless.jpg)](/partitions/stainless-steel)
-:::
-
 The cheapest material isn't always the cheapest choice. Powder coated steel and plastic laminate suit dry restrooms. In showers, pools or restrooms that get hosed down, they can fail early, and then you pay for partitions twice. Compare all five on the [partitions](/partitions) page.
 
 ## Price by mounting style
@@ -266,6 +258,8 @@ Points found while writing that affect other pages (not fixed here):
 - The home page shows per-stall prices ($358 and $1,170, per the FAQ rework notes) with no source. Replace them with Abe's figures or link to this post.
 
 ## Implementation notes
+
+- Material render gallery removed (2026-11-02): the renders differ only in color, so they suggested a difference that isn't the real one. The edge-view drawings carry the comparison. Close-up renders of each door edge would be the photo-like alternative.
 
 - **Update the year in the title every January** (title, H1, and the "Published prices in 2026" heading), and re-check every price, its source and the checked date at the same time. The URL has no year on purpose: all year-variant keywords ("2025/2026 commercial toilet partition cost installed per stall" and the rest) target this one permanent page.
 - This post merges calendar post #2 with the planned installed-cost guide (strategy README). The installer keyword map (`research/installer-keywords/keywords-mapped-to-pages.csv`) still points the installed-cost cluster (83 keywords, ~1,110/mo) at `/resources/toilet-partition-installed-cost`; point it here instead, and if that URL is ever published, 301 it to this post.

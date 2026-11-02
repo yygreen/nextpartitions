@@ -101,14 +101,6 @@ Hardware often has its own warranty, from 5 years on chrome-plated zamac up to l
 
 ## Colors and looks
 
-The same overhead-braced restroom in each material:
-
-:::gallery
-[![Solid plastic (HDPE): blue overhead-braced stalls, the color running through doors, panels and pilasters](/images/renders/overhead-braced-hero-hdpe.jpg)](/partitions/solid-plastic-hdpe)
-[![Powder coated steel: red overhead-braced stalls with a smooth baked-on finish](/images/renders/overhead-braced-hero-powdercoat.jpg)](/partitions/powder-coated-steel)
-[![Stainless steel: overhead-braced stalls in brushed stainless](/images/renders/overhead-braced-hero-stainless.jpg)](/partitions/stainless-steel)
-:::
-
 - **Powder coated steel:** a range of solid colors in a finish that resists wear, fading and scuffing. It can be repainted later.
 - **Stainless steel:** satin brushed (#4) or textured patterns such as leather grain, diamond or embossed. Some lines use recycled stainless.
 - **HDPE:** color all the way through and soft, rounded edges, but a more limited color range than laminate.
@@ -240,6 +232,8 @@ No. Plastic laminate is a thin laminate bonded to a particleboard core that can 
 New page; the live /blog shows "Coming Soon".
 
 ## Implementation notes
+
+- Material render gallery removed (2026-11-02): the renders differ only in color, so they suggested a difference that isn't the real one. The edge-view drawings carry the comparison. Close-up renders of each door edge would be the photo-like alternative.
 
 - Structured data: BlogPosting (headline = H1, datePublished 2026-11-02 placeholder, author Next Partitions), FAQPage from the FAQ, BreadcrumbList Home > Blog > this post.
 - Internal links to add elsewhere: link this post from /partitions/solid-plastic-hdpe ("Where HDPE fits", the sentence comparing HDPE with powder coated steel), /partitions/powder-coated-steel ("Moisture, vandal resistance and cleaning", the moisture bullet), /partitions/stainless-steel ("Moisture, vandal resistance and cleaning", the corrosion bullet), /partitions/plastic-laminate (intro, to clear up "plastic" laminate vs solid plastic) and /partitions (materials overview). Also link it from /blog/what-are-bathroom-partitions-made-of ("How to choose").
