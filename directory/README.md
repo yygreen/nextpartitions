@@ -83,7 +83,7 @@ It creates fresh databases, loads `supabase/tests/supabase_shim.sql` (a stand-in
 1. Lovable projects sync two-way with GitHub. The simplest route is to **add us as a collaborator on the project's GitHub repo**; we open a pull request there and Lovable picks it up on merge. No Lovable seat needed.
 2. Run the migration on the Supabase project (or let Lovable apply it from `supabase/migrations/`).
 3. Map `dir_admins` to the site's existing admin role, if there is one.
-4. Installer portal logins reuse Supabase Auth: an installer is a normal user linked through `dir_installers.user_id`. The coordinator gives the login from the portal (Installers tab); the installer gets Supabase's invite email and then signs in with an emailed link (no password, and nobody can sign up from the login page). Add `https://nextpartitions.com/portal/` to the project's Auth redirect URLs.
+4. Installer portal logins reuse Supabase Auth: an installer is a normal user linked through `dir_installers.user_id`. The coordinator gives the login from the portal (Installers tab); the installer gets Supabase's invite email and then signs in with an emailed link (no password, and nobody can sign up from the login page). Add `https://nextpartitions.com/portal/` to the project's Auth redirect URLs. The invite email goes out through the live project's existing auth email setup (Lovable's `auth_emails` queue): check it sends the **invite** type with wording that suits installers. Staging's built-in Supabase email can't send it (team addresses only, low rate limit), so staging installers sign in another way.
 5. Turn on pg_cron (Database → Extensions) before running the migrations, so the 15-minute sweep is scheduled.
 
 ## Open decisions that may change the schema
