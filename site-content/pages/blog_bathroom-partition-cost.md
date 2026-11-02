@@ -15,7 +15,7 @@ How much do bathroom partitions cost? There's no single per-stall price, because
 
 This guide shows what drives the price, how the five common materials rank on cost, what published prices looked like in 2026, and why installation is a separate line. Every price here comes from a public page, with its source and the date we checked it.
 
-## What you're paying for
+## What a partition system includes
 
 ![Parts of a toilet partition, front view: headrail, pilaster, door, hinges, latch and keeper, pilaster shoe](/images/diagrams/partition-anatomy.svg)
 
@@ -26,7 +26,7 @@ This guide shows what drives the price, how the five common materials rank on co
 5. Latch and keeper
 6. Pilaster shoe
 
-A partition price covers all of these parts, plus the panels between stalls and the brackets and fasteners that hold them. Next Partitions quotes include panels, doors, pilasters, headrails where the mounting style uses them, hinges, latches, keepers, strikes, brackets, pilaster shoes and mounting fasteners. Freight and installation are separate, as explained below.
+Each stall is a small kit: the posts at the front, the door, the panels between stalls, and the hinges, latch, brackets and fasteners that hold it together. A price for partitions usually covers this whole set. Freight and installation are usually priced separately, as explained below.
 
 ## What drives the price
 
