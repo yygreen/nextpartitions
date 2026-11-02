@@ -4,7 +4,7 @@ import { ButtonLink } from './ui'
 // Hub-level call to action (no area chosen yet).
 export function StartConfigure() {
   return (
-    <section aria-labelledby="start-cfg" className="bg-card border border-border border-t-4 border-t-brand-red rounded-lg p-5 sm:p-6 shadow-sm max-w-3xl">
+    <section aria-labelledby="start-cfg" className="bg-card border border-border border-t-4 border-t-brand-red rounded-lg p-5 sm:p-6 shadow-sm">
       <h2 id="start-cfg" className="text-xl font-extrabold tracking-tight">Start with your partitions</h2>
       <p className="text-muted-foreground mt-1.5 mb-4">Configure your restroom in about 2 minutes. You see your partitions price right away, plus an installation estimate for your area.</p>
       <ButtonLink href={configuratorHref({ from: 'hub' })} size="lg" className="w-full sm:w-auto">Configure your partitions →</ButtonLink>

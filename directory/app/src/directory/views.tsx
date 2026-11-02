@@ -63,7 +63,7 @@ const LICENSE_HEADLINE: Record<NonNullable<NonNullable<StateHubData['info']>['li
 // the authority to confirm with (content principles in CLAUDE.md). Never implies a permit is needed to buy.
 function StateRules({ name, info }: { name: string; info: StateHubData['info'] }) {
   return (
-    <section aria-labelledby="rules" className="bg-card border border-border rounded-lg p-5 grid gap-2 max-w-[70ch]">
+    <section aria-labelledby="rules" className="bg-card border border-border rounded-lg p-5 grid gap-2">
       <h2 id="rules" className="text-xl font-bold">Who may install partitions in {name}</h2>
       {info?.licenseSummary ? (
         <>
@@ -136,7 +136,7 @@ export function StateHubView({ state, info, areas, counts, sample, showUnpublish
 function LocalRules({ area }: { area: Area }) {
   const state = stateName(area.stateSlug, area.state)
   return (
-    <section aria-labelledby="local" className="grid gap-1 max-w-[70ch] text-sm">
+    <section aria-labelledby="local" className="grid gap-1 text-sm">
       <h2 id="local" className="text-base font-bold">Installer rules in {area.shortName}</h2>
       {area.local && <p>{area.local.note}</p>}
       <p className="text-muted-foreground">
