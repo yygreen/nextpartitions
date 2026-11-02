@@ -10,7 +10,7 @@ export function supabaseRepo(url: string, key: string): DirectoryRepo {
   const toArea = (r: any): Area => ({
     slug: r.slug, name: r.name, shortName: r.short_name, state: r.state, stateSlug: r.state_slug,
     center: { lat: r.center_lat, lng: r.center_lng }, cities: r.cities ?? [], published: !!r.published,
-    local: r.local_note ? { note: r.local_note, authority: r.local_authority, sourceUrl: r.local_source_url, checked: r.local_checked } : null,
+    local: r.local_note ? { note: r.local_note, authority: r.local_authority, sourceUrl: r.local_source_url, checked: r.local_checked, code: r.local_code ?? null } : null,
   })
   const toInstaller = (r: any): Installer => ({
     slug: r.slug, displayName: r.display_name, baseCity: r.base_city, baseState: r.base_state,

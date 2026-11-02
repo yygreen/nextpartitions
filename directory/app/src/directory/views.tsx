@@ -139,6 +139,7 @@ function LocalRules({ area }: { area: Area }) {
     <section aria-labelledby="local" className="grid gap-1 text-sm">
       <h2 id="local" className="text-base font-bold">Installer rules in {area.shortName}</h2>
       {area.local && <p>{area.local.note}</p>}
+      {area.local?.code && <p><b>Code:</b> {area.local.code}</p>}
       <p className="text-muted-foreground">
         {area.local?.sourceUrl && <><a className="underline" href={area.local.sourceUrl} rel="nofollow noopener" target="_blank">Source</a> · </>}
         {area.local?.checked && <>Last checked {area.local.checked} · </>}

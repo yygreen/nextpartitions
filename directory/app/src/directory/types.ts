@@ -31,7 +31,7 @@ export interface Area {
 }
 
 // The city or county rule for installers (contractor license or registration to pull permits).
-export interface LocalRule { note: string; authority: string | null; sourceUrl: string | null; checked: string | null }
+export interface LocalRule { note: string; authority: string | null; sourceUrl: string | null; checked: string | null; code: string | null }
 
 // A state's licensing summary for its hub page (dir_states). Shown with its source, the date it was
 // checked and the authority to confirm with.

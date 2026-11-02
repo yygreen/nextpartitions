@@ -8,7 +8,7 @@ const AREAS: Area[] = [
   { slug: 'dallas', name: 'Dallas–Fort Worth', shortName: 'DFW', state: 'TX', stateSlug: 'texas',
     center: { lat: 32.84, lng: -96.97 },
     cities: ['Dallas', 'Fort Worth', 'Arlington', 'Plano', 'Irving', 'Garland', 'Frisco', 'McKinney', 'Denton'], published: true,
-    local: { note: 'Contractors register with the City of Dallas (City Code ch. 52) before pulling building permits.', authority: 'City of Dallas Development Services', sourceUrl: null, checked: '2026-10-14' } },
+    local: { note: 'Contractors register with the City of Dallas (City Code ch. 52) before pulling building permits.', authority: 'City of Dallas Development Services', sourceUrl: null, checked: '2026-10-14', code: 'Dallas City Code ch. 52' } },
   { slug: 'houston', name: 'Houston', shortName: 'Houston', state: 'TX', stateSlug: 'texas',
     center: { lat: 29.76, lng: -95.37 }, cities: ['Houston', 'Pasadena', 'Sugar Land', 'The Woodlands', 'Katy'], published: true, local: null },
   { slug: 'san-antonio', name: 'San Antonio', shortName: 'San Antonio', state: 'TX', stateSlug: 'texas',
