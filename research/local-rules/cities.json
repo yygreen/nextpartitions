@@ -792,16 +792,16 @@
  },
  {
   "slug": "orange-county",
-  "note": "Check local contractor licensing or registration with the city's building department before work starts.",
-  "authority": "the city's building department",
+  "note": "In unincorporated Orange County the county code sets no contractor license; cities with their own building departments set their own rules.",
+  "authority": "OC Public Works, Building and Safety, or the city's building department",
   "source_url": "https://library.municode.com/ca/orange_county/codes/code_of_ordinances?nodeId=TIT7LAUSBURE_DIV1BURE_ART1GEPR",
-  "confidence": "low",
+  "confidence": "medium",
   "research_note": "Orange County has no single county rule; the installer needs a California contractor license, and each city sets its own business license and permit steps.",
   "first_pass": "Orange County, CA has no separate county contractor licence; a California CSLB licence is needed and a city business licence in most cities, with permits from the local building department.",
-  "code_citation": null,
+  "code_citation": "Codified Ordinances of Orange County, Title 7, Div. 1, Arts. 1-2",
   "quote": null,
-  "research_caveat": "County code Title 7 Arts. 1-2 read (no county contractor license); applies to unincorporated areas only. Title 5 and the cities' own codes not read.",
-  "research_source": "claude-in-chrome retry 2 2026-11-03",
+  "research_caveat": "Title 5 checked by headings; cities' own codes not read.",
+  "research_source": "claude-in-chrome retry 3 2026-11-03",
   "code_text_read": false
  },
  {
@@ -888,8 +888,8 @@
   "first_pass": "Raleigh has no separate local contractor license found; commercial work needs a building permit from the city, with state-licensed contractors and trades.",
   "code_citation": null,
   "quote": null,
-  "research_caveat": "Part 10 building provisions did not load; Part 12 article titles only. Phone-call item.",
-  "research_source": "claude-in-chrome retry 2026-11-03",
+  "research_caveat": "Part 10 holds only an editor's note (zoning replaced); building provisions not located. Phone-call item.",
+  "research_source": "claude-in-chrome retry 3 2026-11-03",
   "code_text_read": false
  },
  {
@@ -908,16 +908,16 @@
  },
  {
   "slug": "riverside",
-  "note": "Riverside issues permits to licensed contractors, their authorized representatives, or owners doing their own work.",
+  "note": "Riverside issues permits to licensed contractors, their representatives or owners; on jobs over $50,000 the applicant verifies each subcontractor's state license and city business license.",
   "authority": "City of Riverside Building and Safety Division",
   "source_url": "https://library.municode.com/ca/riverside/codes/code_of_ordinances?nodeId=PTIICOOR_TIT16BUCO_CH16.04AD",
-  "confidence": "medium",
+  "confidence": "high",
   "research_note": "Riverside installers must show a California contractor license, hold a current City of Riverside business license and present workers' compensation proof when the permit is issued.",
   "first_pass": "Riverside has no city contractor license beyond the California state license; contractors need a City business tax certificate and pull permits from Building & Safety.",
   "code_citation": "Riverside Municipal Code § 16.04.300",
-  "quote": null,
-  "research_caveat": "§ 16.04.300 read through item 5 only. Agency name not from page.",
-  "research_source": "claude-in-chrome batch 3 2026-11-03",
+  "quote": "state contractor license and license category, city business license",
+  "research_caveat": null,
+  "research_source": "claude-in-chrome retry 3 2026-11-03",
   "code_text_read": true
  },
  {
@@ -938,14 +938,14 @@
   "slug": "sacramento",
   "note": "Contractors pay Sacramento's business operations tax when the building permit is issued; permits go to the owner, the owner's agent or a licensed contractor.",
   "authority": "City of Sacramento Community Development Department",
-  "source_url": "https://codelibrary.amlegal.com/codes/sacramentoca/latest/sacramento_ca/0-0-0-4833",
+  "source_url": "https://codelibrary.amlegal.com/codes/sacramentoca/latest/sacramento_ca/0-0-0-28117",
   "confidence": "high",
   "research_note": "Sacramento contractors hold a California state license and a city Business Operations Tax certificate, then pull permits from the Community Development Department.",
   "first_pass": "Sacramento has no local contractor licence; contractors need a state CSLB licence and a city Business Operations Tax certificate, then pull permits from the Community Development Department.",
-  "code_citation": "Sacramento City Code § 3.08.190; Ch. 15.08",
+  "code_citation": "Sacramento City Code §§ 3.08.190, 15.08.020",
   "quote": null,
-  "research_caveat": "Ch. 15.08 sentence cut off. Agency name not from page.",
-  "research_source": "claude-in-chrome batch 3 2026-11-03",
+  "research_caveat": null,
+  "research_source": "claude-in-chrome retry 3 2026-11-03",
   "code_text_read": true
  },
  {
@@ -994,8 +994,8 @@
   "first_pass": "San Francisco permits go to California-licensed contractors who hold an SF business registration, workers' comp and are registered in DBI's contractor database.",
   "code_citation": "San Francisco Building Code § 106A",
   "quote": null,
-  "research_caveat": "§ 106A matches sampled were mostly about board membership.",
-  "research_source": "claude-in-chrome batch 3 2026-11-03",
+  "research_caveat": "§ 106A sampled: license matches concern electrical contractors and design documents; no general contractor registration found.",
+  "research_source": "claude-in-chrome retry 3 2026-11-03",
   "code_text_read": true
  },
  {
@@ -1006,10 +1006,10 @@
   "confidence": "medium",
   "research_note": "San Jose has no separate contractor license; permit applicants hold a California contractor license matching the work and a current City of San Jose business tax certificate.",
   "first_pass": "San Jose has no separate contractor license; installers need a California contractor license and a City business tax certificate, and permits come from the Development Services Permit Center.",
-  "code_citation": "San Jose Municipal Code Ch. 17.04",
+  "code_citation": "San Jose Municipal Code Ch. 4.76; Ch. 17.04",
   "quote": null,
-  "research_caveat": "Titles 4 and 6 checked by chapter list only.",
-  "research_source": "claude-in-chrome retry 2 2026-11-03",
+  "research_caveat": "Chapters searched for \"contractor\"; one Ch. 4.76 mention not read in full; Title 6 by chapter list.",
+  "research_source": "claude-in-chrome retry 3 2026-11-03",
   "code_text_read": false
  },
  {
@@ -1110,8 +1110,8 @@
   "first_pass": "Stockton requires a city business license that lists the contractor's California license; commercial permits come from the city building division, and no separate local contractor license was found.",
   "code_citation": "Stockton Municipal Code §§ 5.04.040, 5.08.080",
   "quote": null,
-  "research_caveat": "Sections read in part; no rule found tying the license to permit issuance.",
-  "research_source": "claude-in-chrome retry 2026-11-03",
+  "research_caveat": "§ 15.04.270 read in part; no rule found tying the business license to permit issuance.",
+  "research_source": "claude-in-chrome retry 3 2026-11-03",
   "code_text_read": false
  },
  {
