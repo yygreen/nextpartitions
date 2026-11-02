@@ -111,7 +111,7 @@ function App() {
 // Always on top: the parts of the prototype in the order a job happens.
 function Bar() {
   const links: [string, string][] = [
-    ['Start', '#/'], ['Homepage idea', HOMEPAGE], ['Find an installer', areaHref('dallas')], ['Configurator (later phase)', CONFIGURATOR],
+    ['Start', '#/'], ['Homepage idea', HOMEPAGE], ['Find an installer', areaHref('texas', 'dallas')], ['Configurator (later phase)', CONFIGURATOR],
     ["Installer's view", portalHref('installer')], ["Your team's view", portalHref('coordinator')], ["Customer's quote", quoteHref('sample-j1048')],
     ['Installer sign-up', applyHref()],
   ]
@@ -141,10 +141,10 @@ function Start() {
   const steps: { done?: boolean; title: string; who: string; text: ReactNode; links: Link[] }[] = [
     { title: 'A customer finds you', who: 'Customer',
       text: 'Someone searches "toilet partition installers Dallas". They land on the area page, which starts with pricing the partitions and then shows checked local installers.',
-      links: [['Homepage idea (for Marc)', HOMEPAGE], ['Texas hub', stateHref('texas')], ['Dallas–Fort Worth page', areaHref('dallas')], ['Installer profile', installerHref('acme')]] },
+      links: [['Homepage idea (for Marc)', HOMEPAGE], ['Texas hub', stateHref('texas')], ['Dallas–Fort Worth page', areaHref('texas', 'dallas')], ['Installer profile', installerHref('acme')]] },
     { title: 'They price the restroom and ask for a quote', who: 'Customer',
       text: <>On the area page they answer a few questions and see a price range for partitions and installation, then send the quote request through the configurator as it works today. An example customer in Plano has already done this: their request is job <b>NP-DFW-1048</b>.</>,
-      links: [['Price your restroom', `${areaHref('dallas')}?installer=acme#configure`]] },
+      links: [['Price your restroom', `${areaHref('texas', 'dallas')}?installer=acme#configure`]] },
     { done: priced, title: 'Installers price the job', who: 'Installer',
       text: <>Up to 3 checked installers near the job get the drawings and scope, never the customer's name or number. Open NP-DFW-1048 as Acme and send a firm price.</>,
       links: [["Installer's view (Acme)", portalHref('installer')]] },

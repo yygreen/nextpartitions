@@ -1,5 +1,5 @@
 import { cloneElement, isValidElement, type ReactElement, type ReactNode, useId, useRef, useState } from 'react'
-import { areaHref, homeHref, stateHref } from '../directory/links'
+import { areaHref, homeHref, installersHref, stateHref } from '../directory/links'
 import { Disclaimer } from '../directory/components/ui'
 import { Hero } from '../directory/views'
 import { sample, submitApplication } from './api'
@@ -49,7 +49,7 @@ export function ApplyView() {
   return (
     <>
       {sample && <div className="bg-surface-warm text-muted-foreground border-b border-border text-sm text-center px-4 py-2">Sample form: applications aren't sent anywhere.</div>}
-      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Installers', href: stateHref('texas') }, { label: 'Dallas–Fort Worth', href: areaHref('dallas') }, { label: 'Get listed' }]}
+      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Installers', href: installersHref() }, { label: 'Texas', href: stateHref('texas') }, { label: 'Dallas–Fort Worth', href: areaHref('texas', 'dallas') }, { label: 'Get listed' }]}
         title="Get listed as a partition installer in Dallas–Fort Worth"
         lead="Our customers buy their toilet partitions from us and need someone to install them. Apply in about 5 minutes." />
       <main className={`${WRAP} py-8 grid lg:grid-cols-[minmax(0,1fr)_300px] gap-8 items-start`}>

@@ -10,7 +10,7 @@ export const Route = createFileRoute('/installers/apply')({
     description: 'Install toilet partitions for Next Partitions customers in Dallas–Fort Worth. No listing fee, no markup on your installation: price jobs from your own rates and keep your full fee.',
     path: '/installers/apply/',
     sample,
-    jsonLd: [breadcrumbLd([{ name: 'Home', path: '/' }, { name: 'Installers', path: '/service-area/texas/' }, { name: 'Dallas–Fort Worth', path: '/service-area/dallas/' }, { name: 'Get listed', path: '/installers/apply/' }])],
+    jsonLd: [breadcrumbLd([{ name: 'Home', path: '/' }, { name: 'Installers', path: '/installers/' }, { name: 'Texas', path: '/installers/texas/' }, { name: 'Dallas–Fort Worth', path: '/installers/texas/dallas/' }, { name: 'Get listed', path: '/installers/apply/' }])],
   }),
   component: ApplyView,
 })

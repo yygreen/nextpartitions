@@ -14,6 +14,7 @@ const MOUNTINGS = Object.keys(MOUNTING_LABEL) as Mounting[]
 // sizes, colors and hardware come later, in the configurator.
 export function ConfigureStart(props: {
   areaSlug: string
+  areaState: string
   areaName: string
   installers: Installer[]
   rateCards: RateCard[]
@@ -72,7 +73,7 @@ export function ConfigureStart(props: {
         <p className="flex flex-wrap items-center gap-2 text-sm">
           <span className="border border-brand-red/40 bg-brand-red/10 text-brand-red font-semibold px-3 py-1">Installer: {installer.displayName}</span>
           {props.lockPreset
-            ? <a className="text-brand-red hover:underline" href={areaHref(props.areaSlug) + '#configure'}>Compare with other {props.areaName} installers</a>
+            ? <a className="text-brand-red hover:underline" href={areaHref(props.areaState, props.areaSlug) + '#configure'}>Compare with other {props.areaName} installers</a>
             : <button type="button" className="text-brand-red hover:underline" onClick={() => setInstaller(undefined)}>Use any verified installer</button>}
         </p>
       )}

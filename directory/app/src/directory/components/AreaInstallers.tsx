@@ -3,7 +3,7 @@ import type { Area, Installer } from '../types'
 import { InstallerCard } from './InstallerCard'
 import { Disclaimer } from './ui'
 
-// The installer section of a /service-area/[city]/ page, below the configure step.
+// The installer section of an /installers/<state>/<city>/ page, below the configure step.
 export function AreaInstallers({ area, installers }: { area: Area; installers: Installer[] }) {
   const rows = [...installers].sort((a, b) => b.installs - a.installs || (b.rating ?? 0) - (a.rating ?? 0))
   return (
@@ -19,7 +19,7 @@ export function AreaInstallers({ area, installers }: { area: Area; installers: I
       <div className="grid gap-3">
         {rows.length === 0
           ? <p className="bg-card border border-border rounded-lg p-4">No verified installers here yet. Price your restroom above and we'll arrange installation options for your job site.</p>
-          : rows.map((i) => <InstallerCard key={i.slug} installer={i} area={area.slug} />)}
+          : rows.map((i) => <InstallerCard key={i.slug} installer={i} area={area} />)}
       </div>
       <p className="text-sm text-muted-foreground">Install partitions in {area.name}? <a href={applyHref()} className="font-semibold text-brand-red hover:underline">Get listed as an installer</a></p>
       <Disclaimer />

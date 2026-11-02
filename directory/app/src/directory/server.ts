@@ -33,11 +33,11 @@ export const getStateHub = createServerFn({ method: 'GET' })
   })
 
 export const getAreaDirectory = createServerFn({ method: 'GET' })
-  .validator((d: unknown) => z.object({ area: slug }).parse(d))
+  .validator((d: unknown) => z.object({ area: slug, state: slug.optional() }).parse(d))
   .handler(async ({ data }) => {
     const { db, sample } = repo()
     const area = await db.area(data.area)
-    if (!area || (!area.published && !showUnpublished())) throw notFound()
+    if (!area || (data.state && data.state !== area.stateSlug) || (!area.published && !showUnpublished())) throw notFound()
     const installers = await db.installersInArea(area.slug)
     const rateCards = await db.rateCards(installers.map((i) => i.slug))
     return { area, installers, rateCards, sample, unpublished: !area.published }
@@ -55,4 +55,14 @@ export const getInstallerProfile = createServerFn({ method: 'GET' })
     if (!area) throw notFound()
     const [rateCards, reviews] = await Promise.all([db.rateCards([installer.slug]), db.reviews(installer.slug)])
     return { area, installer, rateCards, reviews, sample }
+  })
+
+// For the main site's /service-area/[city]/ buy pages: the "Installers in Houston" link, only once that city's
+// installer page is published. Returns null otherwise, so the buy page shows nothing.
+export const getInstallersLink = createServerFn({ method: 'GET' })
+  .validator((d: unknown) => z.object({ area: slug }).parse(d))
+  .handler(async ({ data }) => {
+    const { db } = repo()
+    const area = await db.area(data.area)
+    return area?.published ? { href: `/installers/${area.stateSlug}/${area.slug}/`, label: `Installers in ${area.shortName}` } : null
   })

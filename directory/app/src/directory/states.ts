@@ -1,6 +1,6 @@
-// The 50 states and DC, each with a hub at /service-area/<slug>/. City pages share that URL space
-// (/service-area/<city>/, the live site's pattern), so a state slug must never equal a city slug:
-// New York state is 'new-york-state' because 'new-york' is the New York City page.
+// The 50 states and DC, each with an installer hub at /installers/<slug>/. Installer profiles share that URL
+// space (/installers/<installer>/), so the database keeps installer slugs off state slugs (dir_reserved_slug).
+// New York state is 'new-york-state' because 'new-york' is the New York City area.
 export interface UsState { slug: string; code: string; name: string }
 
 export const STATES: UsState[] = [

@@ -1,6 +1,6 @@
 // Page bodies as plain components (data in, markup out). The routes render these on the live site;
 // the static preview renders the same components with sample data.
-import { areaHref, configuratorHref, homeHref, serviceAreaHref, stateHref } from './links'
+import { areaHref, configuratorHref, homeHref, installersHref, stateHref } from './links'
 import { AreaInstallers } from './components/AreaInstallers'
 import { ConfigureStart } from './components/ConfigureStart'
 import { MobileConfigureBar, StartConfigure } from './components/StartConfigure'
@@ -29,8 +29,8 @@ export function ServiceAreaView({ states, sample, showUnpublished }: { states: S
   return (
     <>
       <SampleBanner show={sample} />
-      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Service Area' }]} title="Bathroom Partitions Shipped to All 50 States"
-        lead="We ship commercial partitions to every state. Choose your state for local installers, the rules for who may install partitions there, and your partitions price." />
+      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Installers' }]} title="Bathroom Partition Installers by State"
+        lead="Checked, insured installers for partitions you buy from Next Partitions. Choose your state for local installers and the rules for who may install partitions there." />
       <main className={`${WRAP} py-10 grid gap-10`}>
         <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {states.map(({ state, live, upcoming }) => {
@@ -92,8 +92,8 @@ export function StateHubView({ state, info, areas, counts, sample, showUnpublish
   return (
     <>
       <SampleBanner show={sample} />
-      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Service Area', href: serviceAreaHref() }, { label: state.name }]}
-        title={`Bathroom Partitions and Installers in ${state.name}`}
+      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Installers', href: installersHref() }, { label: state.name }]}
+        title={`Bathroom Partition Installers in ${state.name}`}
         lead={live.length
           ? `Price your toilet partitions with us, and we match the job with approved, insured installers in ${live.length} ${state.name} area${live.length === 1 ? '' : 's'}. You deal with one team from quote to installed restroom.`
           : `We ship commercial toilet partitions anywhere in ${state.name}. Price your partitions now; we're adding approved local installers area by area.`}>
@@ -108,9 +108,9 @@ export function StateHubView({ state, info, areas, counts, sample, showUnpublish
                 const c = counts.find((x) => x.slug === a.slug)
                 return (
                   <li key={a.slug} className="bg-card border border-border rounded-lg p-4 grid gap-2">
-                    <h3 className="font-bold text-lg"><a href={areaHref(a.slug)} className="hover:underline">{a.name}</a>{!a.published && <span className="ml-2 text-xs font-semibold text-muted-foreground">(not published)</span>}</h3>
+                    <h3 className="font-bold text-lg"><a href={areaHref(a.stateSlug, a.slug)} className="hover:underline">{a.name}</a>{!a.published && <span className="ml-2 text-xs font-semibold text-muted-foreground">(not published)</span>}</h3>
                     <p className="text-sm text-muted-foreground">{c?.installers ? `${c.installers} installer${c.installers === 1 ? '' : 's'} · ${c.installs} installs` : 'Installers coming soon'} · serves {a.cities.slice(0, 4).join(', ')}{a.cities.length > 4 ? '…' : ''}</p>
-                    <a href={areaHref(a.slug) + '#configure'} className="text-sm font-semibold text-brand-red hover:underline">Price your {a.shortName} restroom</a>
+                    <a href={areaHref(a.stateSlug, a.slug) + '#configure'} className="text-sm font-semibold text-brand-red hover:underline">Price your {a.shortName} restroom</a>
                   </li>
                 )
               })}
@@ -127,7 +127,7 @@ export function StateHubView({ state, info, areas, counts, sample, showUnpublish
         <StartConfigure />
         <Disclaimer />
       </main>
-      <MobileConfigureBar href={first ? areaHref(first.slug) + '#configure' : configuratorHref({ from: 'hub' })} />
+      <MobileConfigureBar href={first ? areaHref(first.stateSlug, first.slug) + '#configure' : configuratorHref({ from: 'hub' })} />
     </>
   )
 }
@@ -157,11 +157,11 @@ export function AreaView({ area, installers, rateCards, preset, sample, unpublis
     <>
       <SampleBanner show={sample} />
       {unpublished && <div className="bg-surface-warm border-b border-border text-sm text-center px-4 py-2">Staging preview: this area isn't published yet (it goes live once 3 installers are listed). Not indexed.</div>}
-      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Service Area', href: serviceAreaHref() }, { label: stateName(area.stateSlug, area.state), href: stateHref(area.stateSlug) }, { label: area.name }]}
-        title={`Bathroom Partitions in ${area.name}`}
-        lead={`Commercial toilet partitions shipped to ${area.name}, installed by approved local installers. Price both in one place, then choose your installer.`} />
+      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Installers', href: installersHref() }, { label: stateName(area.stateSlug, area.state), href: stateHref(area.stateSlug) }, { label: area.name }]}
+        title={`Bathroom Partition Installers in ${area.name}`}
+        lead={`Checked local installers for commercial toilet partitions you buy from Next Partitions. Price your partitions and installation in one place, then choose your installer.`} />
       <main className={`${WRAP} py-10 grid gap-10`}>
-        <ConfigureStart areaSlug={area.slug} areaName={area.shortName} installers={installers} rateCards={rateCards} preset={preset} from="directory" />
+        <ConfigureStart areaSlug={area.slug} areaState={area.stateSlug} areaName={area.shortName} installers={installers} rateCards={rateCards} preset={preset} from="directory" />
         <AreaInstallers area={area} installers={installers} />
         <LocalRules area={area} />
       </main>
@@ -176,7 +176,7 @@ export function InstallerView({ area, installer: i, rateCards, reviews, sample }
   return (
     <>
       <SampleBanner show={sample} />
-      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: stateName(area.stateSlug, area.state), href: stateHref(area.stateSlug) }, { label: area.name, href: areaHref(area.slug) }, { label: i.displayName }]}
+      <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Installers', href: installersHref() }, { label: stateName(area.stateSlug, area.state), href: stateHref(area.stateSlug) }, { label: area.name, href: areaHref(area.stateSlug, area.slug) }, { label: i.displayName }]}
         title={i.displayName}
         lead={`${i.installs ? `${i.installs} installs for Next Partitions customers` : NEW_INSTALLER_NOTE} · based in ${i.baseCity}, works up to ${i.serviceRadiusMi} mi`}>
         <div className="flex flex-wrap items-center gap-2">
@@ -188,7 +188,7 @@ export function InstallerView({ area, installer: i, rateCards, reviews, sample }
         <div className="grid lg:grid-cols-[1fr_22rem] gap-8 items-start">
           <div className="grid gap-8 min-w-0">
             {i.about && <p className="max-w-[65ch] text-lg">{i.about}</p>}
-            <ConfigureStart areaSlug={area.slug} areaName={area.shortName} installers={[i]} rateCards={rateCards} preset={i.slug} lockPreset from="profile" />
+            <ConfigureStart areaSlug={area.slug} areaState={area.stateSlug} areaName={area.shortName} installers={[i]} rateCards={rateCards} preset={i.slug} lockPreset from="profile" />
             <section aria-labelledby="installs" className="grid gap-2">
               <h2 id="installs" className="text-xl font-bold">What they install</h2>
               <p className="text-sm"><b>Materials:</b> {i.materials.map((m) => MATERIAL_LABEL[m]).join(', ')}</p>
@@ -215,7 +215,7 @@ export function InstallerView({ area, installer: i, rateCards, reviews, sample }
                 {i.medianReplyHours !== null && <li>Usually replies within {Math.ceil(i.medianReplyHours)} hours</li>}
               </ul>
             </section>
-            <p className="text-sm px-1"><a className="text-brand-red font-semibold hover:underline" href={areaHref(area.slug)}>See all {area.shortName} installers</a></p>
+            <p className="text-sm px-1"><a className="text-brand-red font-semibold hover:underline" href={areaHref(area.stateSlug, area.slug)}>See all {area.shortName} installers</a></p>
             {i.trackedPhone && (
               <p className="text-sm text-muted-foreground px-1">Prefer to call? <a href={`tel:${i.trackedPhone.replace(/\D/g, '')}`} className="text-brand-red font-semibold">{i.trackedPhone}</a></p>
             )}

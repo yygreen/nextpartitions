@@ -327,4 +327,13 @@ do $$ begin
 end $$;
 reset role;
 
+-- 10. Installer slugs never take a state hub's or the apply page's address.
+insert into dir_installers (id, slug, display_name, legal_name, base_city, base_state, base_zip, status)
+values ('10000000-0000-0000-0000-0000000000f1', 'texas', 'Texas', 'Texas LLC', 'Austin', 'TX', '78701', 'applied'),
+       ('10000000-0000-0000-0000-0000000000f2', 'apply', 'Apply', 'Apply LLC', 'Austin', 'TX', '78701', 'applied');
+do $$ begin
+  assert (select slug from dir_installers where id = '10000000-0000-0000-0000-0000000000f1') = 'texas-installers', 'state slug taken by an installer';
+  assert (select slug from dir_installers where id = '10000000-0000-0000-0000-0000000000f2') = 'apply-installers', 'apply slug taken by an installer';
+end $$;
+
 select 'APPLY TESTS PASSED';

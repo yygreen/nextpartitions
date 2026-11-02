@@ -10,16 +10,21 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as InstallersIndexRouteImport } from './routes/installers/index'
 import { Route as InstallersInstallerRouteImport } from './routes/installers/$installer'
 import { Route as InstallersApplyRouteImport } from './routes/installers/apply'
 import { Route as PortalIndexRouteImport } from './routes/portal/index'
 import { Route as QuoteTokenRouteImport } from './routes/quote/$token'
-import { Route as ServiceAreaIndexRouteImport } from './routes/service-area/index'
-import { Route as ServiceAreaAreaRouteImport } from './routes/service-area/$area'
+import { Route as InstallersInstallerAreaRouteImport } from './routes/installers/$installer_.$area'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InstallersIndexRoute = InstallersIndexRouteImport.update({
+  id: '/installers/',
+  path: '/installers/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const InstallersInstallerRoute = InstallersInstallerRouteImport.update({
@@ -42,14 +47,9 @@ const QuoteTokenRoute = QuoteTokenRouteImport.update({
   path: '/quote/$token',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ServiceAreaIndexRoute = ServiceAreaIndexRouteImport.update({
-  id: '/service-area/',
-  path: '/service-area/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ServiceAreaAreaRoute = ServiceAreaAreaRouteImport.update({
-  id: '/service-area/$area',
-  path: '/service-area/$area',
+const InstallersInstallerAreaRoute = InstallersInstallerAreaRouteImport.update({
+  id: '/installers/$installer_/$area',
+  path: '/installers/$installer/$area',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -58,18 +58,18 @@ export interface FileRoutesByFullPath {
   '/installers/$installer': typeof InstallersInstallerRoute
   '/installers/apply': typeof InstallersApplyRoute
   '/quote/$token': typeof QuoteTokenRoute
-  '/service-area/$area': typeof ServiceAreaAreaRoute
+  '/installers/': typeof InstallersIndexRoute
   '/portal/': typeof PortalIndexRoute
-  '/service-area/': typeof ServiceAreaIndexRoute
+  '/installers/$installer/$area': typeof InstallersInstallerAreaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/installers/$installer': typeof InstallersInstallerRoute
   '/installers/apply': typeof InstallersApplyRoute
   '/quote/$token': typeof QuoteTokenRoute
-  '/service-area/$area': typeof ServiceAreaAreaRoute
+  '/installers': typeof InstallersIndexRoute
   '/portal': typeof PortalIndexRoute
-  '/service-area': typeof ServiceAreaIndexRoute
+  '/installers/$installer/$area': typeof InstallersInstallerAreaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -77,9 +77,9 @@ export interface FileRoutesById {
   '/installers/$installer': typeof InstallersInstallerRoute
   '/installers/apply': typeof InstallersApplyRoute
   '/quote/$token': typeof QuoteTokenRoute
-  '/service-area/$area': typeof ServiceAreaAreaRoute
+  '/installers/': typeof InstallersIndexRoute
   '/portal/': typeof PortalIndexRoute
-  '/service-area/': typeof ServiceAreaIndexRoute
+  '/installers/$installer_/$area': typeof InstallersInstallerAreaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -88,27 +88,27 @@ export interface FileRouteTypes {
     | '/installers/$installer'
     | '/installers/apply'
     | '/quote/$token'
-    | '/service-area/$area'
+    | '/installers/'
     | '/portal/'
-    | '/service-area/'
+    | '/installers/$installer/$area'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/installers/$installer'
     | '/installers/apply'
     | '/quote/$token'
-    | '/service-area/$area'
+    | '/installers'
     | '/portal'
-    | '/service-area'
+    | '/installers/$installer/$area'
   id:
     | '__root__'
     | '/'
     | '/installers/$installer'
     | '/installers/apply'
     | '/quote/$token'
-    | '/service-area/$area'
+    | '/installers/'
     | '/portal/'
-    | '/service-area/'
+    | '/installers/$installer_/$area'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -116,9 +116,9 @@ export interface RootRouteChildren {
   InstallersInstallerRoute: typeof InstallersInstallerRoute
   InstallersApplyRoute: typeof InstallersApplyRoute
   QuoteTokenRoute: typeof QuoteTokenRoute
-  ServiceAreaAreaRoute: typeof ServiceAreaAreaRoute
+  InstallersIndexRoute: typeof InstallersIndexRoute
   PortalIndexRoute: typeof PortalIndexRoute
-  ServiceAreaIndexRoute: typeof ServiceAreaIndexRoute
+  InstallersInstallerAreaRoute: typeof InstallersInstallerAreaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -128,6 +128,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/installers/': {
+      id: '/installers/'
+      path: '/installers'
+      fullPath: '/installers/'
+      preLoaderRoute: typeof InstallersIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/installers/$installer': {
@@ -158,18 +165,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof QuoteTokenRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/service-area/': {
-      id: '/service-area/'
-      path: '/service-area'
-      fullPath: '/service-area/'
-      preLoaderRoute: typeof ServiceAreaIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/service-area/$area': {
-      id: '/service-area/$area'
-      path: '/service-area/$area'
-      fullPath: '/service-area/$area'
-      preLoaderRoute: typeof ServiceAreaAreaRouteImport
+    '/installers/$installer_/$area': {
+      id: '/installers/$installer_/$area'
+      path: '/installers/$installer/$area'
+      fullPath: '/installers/$installer/$area'
+      preLoaderRoute: typeof InstallersInstallerAreaRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -180,9 +180,9 @@ const rootRouteChildren: RootRouteChildren = {
   InstallersInstallerRoute: InstallersInstallerRoute,
   InstallersApplyRoute: InstallersApplyRoute,
   QuoteTokenRoute: QuoteTokenRoute,
-  ServiceAreaAreaRoute: ServiceAreaAreaRoute,
+  InstallersIndexRoute: InstallersIndexRoute,
   PortalIndexRoute: PortalIndexRoute,
-  ServiceAreaIndexRoute: ServiceAreaIndexRoute,
+  InstallersInstallerAreaRoute: InstallersInstallerAreaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
