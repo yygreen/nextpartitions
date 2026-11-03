@@ -141,7 +141,7 @@ Start with the environment, then the budget:
 The [partitions overview](/partitions) compares all five materials side by side. Choosing between two? Read [HDPE vs phenolic partitions](/blog/hdpe-vs-phenolic-partitions) for wet and high-traffic rooms, or [plastic vs steel bathroom partitions](/blog/plastic-vs-steel-bathroom-partitions) if you're weighing solid plastic against powder coated or stainless steel.
 
 :::expert
-Tell us about a restroom where the material was wrong for the building. What failed, how soon, and what should have gone in instead?
+When a buyer describes their building, what makes you steer them to one material over another, and which detail do buyers tend to overlook?
 :::
 
 ## Get a quote

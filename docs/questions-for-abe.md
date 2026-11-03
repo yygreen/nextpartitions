@@ -7,8 +7,8 @@ Short answers are fine: a sentence, a voice note or a quick call. Your answers g
 **Materials** (material pages, "What Are Bathroom Partitions Made Of?")
 1. Which material do you sell most, and to which kind of building?
 2. When a buyer asks for the cheapest option, what do you tell them? When do you talk them out of it?
-3. Have you seen a solid plastic (HDPE) job held up because the color or product didn't meet the fire rating the inspector asked for? What happened?
-4. Which material gets the most complaints or replacement orders a few years in, and why?
+3. When a building needs fire-rated partitions, how do you make sure the solid plastic (HDPE) color and product meet the rating before ordering?
+4. When customers replace old stalls they bought elsewhere, which material are they usually replacing, and why did it wear out?
 
 **Mounting styles** (the four mounting pages)
 5. What's the most common reason a job switches mounting style after the first quote? (Ceiling too weak, slab too thin, budget, look?)
@@ -71,7 +71,7 @@ Short answers are fine: a sentence, a voice note or a quick call. Your answers g
 37. What share of your orders include an ADA (wheelchair accessible) stall, and how many per order on average? What share include an ambulatory stall?
 38. The top 5 drawing or measurement mistakes your team catches before quoting an accessible stall.
 39. The typical price difference between an ADA stall and a standard stall (a range is enough).
-40. Any jobs that failed an accessibility inspection, and why.
+40. Which accessibility points do customers tell you their inspectors check most on partitions?
 41. The ADA questions customers ask you most.
 42. One or two photos of a finished ADA stall from a job, if you have permission to use them.
 43. A short quote for the page: the one ADA thing buyers get wrong.
@@ -93,14 +93,14 @@ Each rebuilt page has a branded box for a short quote from you: two to four sent
 
 | Page | Question |
 |---|---|
-| `/blog/what-are-bathroom-partitions-made-of` | Tell us about a restroom where the material was wrong for the building. What failed, how soon, and what should have gone in instead? |
+| `/blog/what-are-bathroom-partitions-made-of` | When a buyer describes their building, what makes you steer them to one material over another, and which detail do buyers tend to overlook? |
 | `/blog/why-do-bathroom-stalls-have-gaps` | When a buyer asks for no-gap stalls, what's the first question you ask back, and why? |
 | `/blog/bathroom-partition-cost` | When a buyer asks what a stall costs, what do you need from them before you can give a number they can rely on? |
 | `/guides/ada-compliance` | What's the one ADA thing buyers get wrong on their partition order, and how do you catch it before you quote? |
-| `/guides/bathroom-stall-dimensions` | Tell us about a job where the stalls didn't fit the room as drawn. What was off, by how much, and how was it fixed? |
-| `/guides/how-to-install-toilet-partitions` | When an installation goes badly, what was usually missing before anyone picked up a drill: the wall backing, the floor, the drawings, or something else? |
+| `/guides/bathroom-stall-dimensions` | Before you quote, which measurement do you double-check most against the room, and why? |
+| `/guides/how-to-install-toilet-partitions` | Before an installer starts, what should already be in place: the wall backing, the floor, the drawings, or something else? |
 | `/guides/installation-instructions` | Which step in the manufacturers' instructions do installers skip most, and what goes wrong later because of it? |
-| `/guides/restroom-layout` | Describe a layout that looked fine on paper but didn't work once the stalls went in. What should the drawing have shown? |
+| `/guides/restroom-layout` | When you review a restroom layout before quoting, what do you check first, and what should every drawing show? |
 | `/guides/standard-sizes` | When someone asks for "just standard sizes", what do you have to ask them back before you can quote? |
 | `/hardware` | Which hardware upgrade is worth paying for, and which isn't? |
 | `/hardware/door-hardware` | Which door hardware fails first on busy restrooms, and what lasts? |

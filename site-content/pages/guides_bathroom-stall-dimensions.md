@@ -43,7 +43,7 @@ A row of stalls is the sum of its compartments. Our example layout, seen from ab
 The drawing is an example layout, not a rule. Your sizes depend on the brand and the room.
 
 :::expert
-Tell us about a job where the stalls didn't fit the room as drawn. What was off, by how much, and how was it fixed?
+Before you quote, which measurement do you double-check most against the room, and why?
 :::
 
 ## Panel, door and pilaster heights

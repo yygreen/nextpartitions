@@ -3,7 +3,7 @@
 Seven questions, one per blog post. Two to four sentences each, in your own words, from real jobs: a reply, a voice note or a quick call. Each answer goes into a branded "expert advice" box on that post, credited to you. Tell us the name and role to print under it.
 
 1. **What Are Bathroom Partitions Made Of?**
-   Tell us about a restroom where the material was wrong for the building. What failed, how soon, and what should have gone in instead?
+   When a buyer describes their building, what makes you steer them to one material over another, and which detail do buyers tend to overlook?
 
 2. **Why Do Bathroom Stalls Have Gaps?**
    When a buyer asks for no-gap stalls, what's the first question you ask back, and why?
