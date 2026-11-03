@@ -23,7 +23,8 @@ The rules come in four layers. Only a few states regulate partition installation
 - **Dallas:** contractors must register with the city (Chapter 52, via the DallasNow portal) before they can get permits. About $120 a year; $300,000 general liability insurance with the City of Dallas as certificate holder; notarized form.
 - **Chicago:** city general contractor license, with classes capped by project value. Applied for through the Department of Buildings.
 - **New York City:** general contractors register with the Department of Buildings and carry at least $1M general liability insurance. Residential alterations also need a DCWP home improvement license.
-- **Still to research:** Fort Worth, Houston, Austin, San Antonio, Tampa, Miami-Dade (no partition category found in its certificate-of-competency system).
+- **Miami-Dade:** Chapter 10 of the county code had a **Metal Partition** certificate of competency (BLDG 0032, 1 year's experience). Florida's HB 735 (2021) preempted local licensing of specialty trades, so the county stopped issuing and renewing it, and the other specialty licenses on its list, after **July 1, 2023**. No county partition license applies now. Still to confirm with Contractor Licensing, (786) 315-2880: whether building departments require a state-licensed contractor to pull permits for partition jobs, and the local business tax receipt. Checked 2026-10-16.
+- **Still to research:** Fort Worth, Houston, Austin, San Antonio, Tampa.
 
 ## 3. Rules by building type
 
@@ -122,6 +123,8 @@ Pages render from these records and show the source, the "last checked" date and
 - Nevada R083-04: https://www.leg.state.nv.us/Division/Legal/LawLibrary/Register/2004Register/R083-04A.pdf
 - LSLBC classifications: https://lslbc.louisiana.gov/exams-classifications/
 - NC $40,000 threshold: https://abc11.com/amp/post/nc-contractors-home-construction-license-unlicensed/13961419/
+- Miami-Dade categories (Metal Partition BLDG 0032): https://www.miamidade.gov/resources/licenses/documents/personal-exam-and-non-exam-categories.pdf
+- Miami-Dade preemption memo (revised 2023-02-07): https://www.miamidade.gov/building/library/notices/2021-09-30-contractor-licensing-categories-preemption-state-of-fl.pdf
 - Florida SB 1570 (2023): https://www.flsenate.gov/Session/Bill/2023/1570/BillText/Filed/HTML
 - WA L&I registration: https://lni.wa.gov/licensing-permits/contractors/register-as-a-contractor/index
 - Dallas GC registration form: https://dallas.gov/departments/sustainabledevelopment/DCH%20documents/pdf/building/GeneralContractor_RegistrationForm.pdf

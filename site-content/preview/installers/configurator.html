@@ -1,0 +1,365 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Configurator Installation Step</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<style>
+/* Layout: mirrors the live nextpartitions.com/get-a-quote shell: dark step bar, step content (8 cols) with a centered
+   option card, "Your Configuration" sidebar (4 cols). Light-only, site tokens. */
+:root{
+  --bg:#fbfaf9; --band:#f4f2ee; --surface:#ffffff; --fg:#1c0e05; --muted:#6d6059;
+  --border:#e1ddd7; --accent:#e8630a; --accent-strong:#c95200; --accent-soft:#fdeee3; --on-accent:#ffffff;
+  --ink:#262626; --ink-fg:#f8f8f8; --ink-muted:#c9c2bc; --good:#1f7a4d; --good-soft:#e6f3ec; --gold:#b7791f;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --container:1360px; --gutter:34px; --gap:24px; --section:80px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter)}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--gap)}
+.c12{grid-column:span 12}.c7{grid-column:span 7}.c5{grid-column:span 5}.c8{grid-column:span 8}.c4{grid-column:span 4}.c6{grid-column:span 6}.c3{grid-column:span 3}
+@media (max-width:1024px){.c8,.c4{grid-column:span 12}.c3{grid-column:span 6}}
+@media (max-width:760px){:root{--gutter:16px;--gap:16px;--section:56px}.c6,.c3{grid-column:span 12}}
+.section{padding-block:var(--section)}
+.band{background:var(--band)}
+.mocknote{background:#fff3c4;border-bottom:1px solid #f0d98a;font-size:13px;color:#5c4400;text-align:center;padding:8px 16px}
+
+/* header (same as homepage mockup) */
+.topbar{background:var(--ink);color:var(--ink-fg);font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-block:9px;flex-wrap:wrap}
+.topbar .contact{display:flex;gap:20px;flex-wrap:wrap}
+.nav{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:env(safe-area-inset-top,0px);z-index:40}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:40px;width:auto}
+.brand b{display:block;font-size:19px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.menu{display:flex;gap:28px;font-weight:600}
+.menu a{text-decoration:none}
+.menu a.on{color:var(--accent-strong)}
+@media (max-width:980px){.menu{display:none}.topbar .tagline{display:none}}
+@media (max-width:520px){.brand small{display:none}.brand img{height:34px}.hero .btn{white-space:normal;text-align:center;width:100%}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;background:var(--accent);color:var(--on-accent);font:inherit;font-weight:700;font-size:16px;padding:12px 22px;min-height:46px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--accent-strong)}
+.btn.ghost{background:var(--surface);color:var(--accent-strong);border:2px solid var(--accent)}
+.btn.ghost:hover{background:var(--accent-soft)}
+.btn.sm{font-size:14px;padding:8px 14px;min-height:38px}
+.link{font:inherit;background:none;border:0;padding:0;color:var(--accent-strong);font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* hero */
+.crumbs{font-size:14px;color:var(--muted);padding-top:28px;display:flex;flex-wrap:wrap;gap:6px}
+.crumbs a{text-decoration:none}.crumbs a:hover{text-decoration:underline}
+.hero{padding-block:16px 40px;border-bottom:1px solid var(--border)}
+.hero h1{font-size:clamp(32px,4.2vw,50px);font-weight:900;letter-spacing:-.035em;line-height:1.06;margin:10px 0 14px;text-wrap:balance;max-width:20ch}
+.hero .lead{font-size:18px;color:var(--muted);max-width:62ch;margin:0 0 22px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin:0 0 26px;padding:0;list-style:none}
+.facts li{display:flex;flex-direction:column}
+.facts b{font-size:26px;font-weight:900;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1}
+.facts span{font-size:13px;color:var(--muted)}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+
+/* footer */
+footer{background:#1a1a1a;color:#d8d2cc;font-size:14px}
+footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+/* ---------- live configurator look ---------- */
+body{background:var(--bg)}
+.stepbar{background:#333;position:sticky;top:env(safe-area-inset-top,0px);z-index:45}
+.stepbar ol{list-style:none;margin:0 auto;padding:14px 16px 10px;display:flex;align-items:flex-start;justify-content:center;gap:0;max-width:1360px;overflow-x:auto}
+.stepbar li{display:flex;flex-direction:column;align-items:center;gap:6px;flex:0 0 auto;min-width:132px;position:relative}
+.stepbar li:not(:last-child)::after{content:"";position:absolute;top:17px;left:calc(50% + 26px);width:calc(100% - 52px);height:2px;background:#666}
+.stepbar li.done:not(:last-child)::after{background:#22c55e}
+.stepbar .n{display:grid;place-items:center;width:34px;height:34px;background:#555;color:#fff;font-weight:700;font-size:14px}
+.stepbar .done .n{background:#22c55e}
+.stepbar .cur .n{background:var(--accent)}
+.stepbar small{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#bbb;white-space:nowrap}
+.stepbar .cur small{color:#fff}
+.stepbar .new .n{position:relative}
+.stepbar .new .n::after{content:"LATER";position:absolute;top:-6px;left:28px;font-size:9px;font-weight:800;letter-spacing:.04em;background:#fff;color:var(--accent-strong);padding:1px 4px}
+@media (max-width:760px){.stepbar ol{justify-content:flex-start}}
+
+.cfgwrap{padding-block:20px 64px}
+.cfgwrap .grid{align-items:start}
+.left{grid-column:span 8;min-width:0}
+.right{grid-column:span 4;min-width:0;position:sticky;top:96px}
+@media (max-width:1024px){.left,.right{grid-column:span 12}.right{position:static}}
+.help{display:flex;align-items:center;gap:12px;background:var(--band);padding:12px 18px;font-size:15px;color:var(--muted);margin-bottom:22px}
+.help svg{width:22px;height:22px;color:var(--accent);flex:none}
+.help b{color:var(--fg);font-weight:600}
+.left h1{font-size:clamp(28px,3vw,36px);font-weight:900;letter-spacing:-.03em;margin:0 0 8px;line-height:1.15}
+.left .sub{color:var(--muted);font-size:18px;margin:0 0 30px}
+.box{max-width:560px;margin:0 auto;background:var(--surface);border:1px solid var(--border);padding:24px 26px}
+.box .lab{display:block;font-size:15px;font-weight:600;margin:0 0 8px}
+.box input[type=text]{font:inherit;font-size:16px;width:100%;border:1px solid var(--border);padding:11px 13px;min-height:46px;background:var(--surface);color:var(--fg)}
+.opts{display:grid;gap:10px;margin:20px 0 0}
+.opt{display:grid;grid-template-columns:22px minmax(0,1fr);gap:12px;align-items:start;border:1px solid var(--border);padding:14px 16px;cursor:pointer;background:var(--surface)}
+.opt:has(input:checked){border:2px solid var(--accent);padding:13px 15px;background:var(--accent-soft)}
+.opt input{margin:3px 0 0;accent-color:var(--accent);width:16px;height:16px}
+.opt b{display:block;font-size:16px}
+.opt span{color:var(--muted);font-size:14px}
+.estbox{margin:18px 0 0;border:1px solid #f3c9a6;background:linear-gradient(180deg,#fff7f0,#fff);padding:16px 18px}
+.estbox .k{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-strong)}
+.estbox b.big{display:block;font-size:30px;font-weight:900;letter-spacing:-.02em;font-variant-numeric:tabular-nums;margin:2px 0}
+.estbox p{margin:4px 0 0;font-size:14px;color:var(--muted)}
+.estbox .from{display:flex;align-items:center;gap:8px;margin:10px 0 0;font-size:14px;background:var(--surface);border:1px solid var(--border);padding:8px 10px}
+.estbox .from b{color:var(--fg)}
+.estbox label.more{display:flex;gap:8px;align-items:center;font-size:14px;margin-top:8px;cursor:pointer}
+.estbox label.more input{accent-color:var(--accent)}
+.tip{max-width:560px;margin:16px auto 0;background:var(--band);padding:14px 18px;font-size:14px;color:var(--muted)}
+.tip b{color:var(--fg)}
+.navrow{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--border);margin-top:36px;padding-top:24px}
+.prev{display:inline-flex;align-items:center;gap:8px;font:inherit;font-weight:700;background:var(--surface);color:var(--fg);border:1px solid var(--border);padding:10px 18px;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.next{display:inline-flex;align-items:center;gap:10px;font:inherit;font-weight:700;background:var(--accent);color:#fff;border:0;padding:12px 34px;cursor:pointer}
+.next:hover{background:var(--accent-strong)}
+
+/* sidebar */
+.sidecard{background:var(--surface);border:1px solid var(--border);padding:18px}
+.sidecard .hd{display:flex;justify-content:space-between;align-items:center;padding-bottom:14px;border-bottom:1px solid var(--border);margin-bottom:12px}
+.sidecard .hd b{display:flex;align-items:center;gap:8px;font-size:16px}
+.sidecard .hd b svg{width:18px;height:18px;color:var(--accent)}
+.sidecard .hd span{font-size:14px;color:var(--muted)}
+.prevw{position:relative;border:1px solid var(--border);background:#3f5a3a}
+.prevw img{width:100%;aspect-ratio:6/5;object-fit:cover;opacity:.9}
+.prevw small{position:absolute;left:8px;bottom:8px;font-size:11px;background:rgba(255,255,255,.75);padding:2px 8px;color:#444}
+.cap{text-align:center;font-size:11px;color:var(--muted);margin:6px 0 10px}
+.v3d{display:flex;justify-content:center;align-items:center;gap:8px;width:100%;font:inherit;font-weight:700;color:var(--accent-strong);background:var(--surface);border:1px solid var(--accent);padding:9px;margin-bottom:12px}
+.items{display:grid;gap:6px;max-height:360px;overflow-y:auto}
+.item{display:grid;grid-template-columns:22px minmax(0,1fr) 18px;gap:12px;align-items:start;background:var(--band);padding:12px 12px}
+.item.empty{background:transparent}
+.item .ck{width:20px;height:20px;border-radius:50%;border:1.5px solid #22a35a;display:grid;place-items:center;color:#22a35a}
+.item.empty .ck{border-color:#bbb;color:transparent}
+.item .ck svg{width:12px;height:12px}
+.item small{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.item b{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:700;margin-top:2px}
+.item b img{width:40px;height:32px;object-fit:cover}
+.item b i{display:inline-block;width:18px;height:18px;background:#8a8a8a}
+.item em{display:block;font-size:13px;color:var(--muted);font-style:normal;font-weight:600}
+.item.empty b{color:var(--muted);font-style:italic;font-weight:500}
+.item .pen{color:var(--muted);width:16px;height:16px;margin-top:4px}
+.item.hl{outline:2px solid var(--accent);outline-offset:-2px}
+
+/* request quote step */
+.rq{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media (max-width:760px){.rq{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--border);padding:22px}
+.panel h3{margin:0 0 14px;font-size:20px;font-weight:800}
+.ff{display:grid;gap:6px;margin-bottom:14px}
+.ff label{font-size:15px;font-weight:600}
+.ff input,.ff textarea{font:inherit;font-size:15px;border:1px solid var(--border);padding:10px 12px;min-height:44px;background:var(--surface);color:var(--fg)}
+.live{border:1px solid #f3c9a6;background:linear-gradient(180deg,#fff4ea,#fff);padding:16px 18px;margin-top:16px}
+.live .k{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-strong)}
+.live .big{font-size:32px;font-weight:900;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.live .row{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:var(--muted);margin-top:6px}
+.live .row b{color:var(--fg);font-variant-numeric:tabular-nums}
+.live .row.inst{border-top:1px dashed #f0c7a3;padding-top:8px;margin-top:10px}
+.live .tagest{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#fff3c4;color:#7a5a00;padding:1px 5px;margin-left:4px}
+.live p{font-size:11px;color:var(--muted);margin:8px 0 0}
+.kv{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--border);font-size:15px}
+.kv span{color:var(--muted)}
+.kv:last-of-type{border-bottom:0}
+.room{border:1px solid #f3c9a6;background:#fff7f0;padding:16px}
+.room h4{margin:0 0 6px;font-size:17px}
+.room h4 i{font-style:normal;font-size:10px;font-weight:700;background:var(--accent);color:#fff;padding:2px 6px;margin-left:6px;vertical-align:2px}
+.incl{background:var(--band);padding:18px 20px}
+.incl h3{margin:0 0 10px;font-size:18px;font-weight:800}
+.incl ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:15px;color:var(--muted)}
+.incl li{display:flex;gap:10px;align-items:flex-start}
+.incl li svg{width:16px;height:16px;color:#22a35a;flex:none;margin-top:3px}
+.incl li.new{color:var(--fg)}
+.ok{background:var(--surface);border:1px solid var(--border);border-top:4px solid #22a35a;padding:24px}
+.ok h2{margin:0 0 8px;font-size:24px;font-weight:900}
+.ok p{margin:0 0 8px;color:var(--muted)}
+.ok ol{margin:8px 0 0;padding-left:20px;color:var(--muted)}
+</style>
+
+<div class="mocknote"><b>Later phase, reserved:</b> an optional "Installation" step for the configurator, between Urinal Screens and Request Quote. It's switched on only once the directory has become an integral part of the site's success: an area with 3+ listed installers pricing on time and first jobs installed well, and then only for ZIP codes those installers cover. Until then the configurator stays as it is, and customers reach installation through the directory pages. <span style="opacity:.8">Mockup: job site defaults to Dallas 75201; prices and installers are samples; nothing is sent.</span></div>
+
+<div class="topbar"><div class="wrap"><div style="display:flex;gap:20px;flex-wrap:wrap"><span>sales@nextpartitions.com</span><span>1-833-997-7489</span></div><div class="tagline">Authorized Distributor — All Major Brands</div></div></div>
+<nav class="nav" aria-label="Main" style="position:static"><div class="wrap">
+  <a class="brand" href="home.html"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Commercial Partitions</small></span></a>
+  <div class="menu"><a href="home.html">Partitions ▾</a><a href="home.html">Mounting Styles ▾</a><a href="home.html">Hardware &amp; Parts ▾</a><a href="home.html">Resources ▾</a></div>
+  <a class="btn" href="#top" style="font-size:14px;min-height:36px;padding:8px 14px">Get a Quote</a>
+</div></nav>
+
+<div class="stepbar" id="top"><ol id="stepbar"></ol></div>
+
+<main class="cfgwrap"><div class="wrap"><div class="grid">
+  <div class="left">
+    <div class="help"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5v.7M12 17h.01"/></svg><span>Need help? Call <b>1-833-997-7489</b> or email <b>sales@nextpartitions.com</b></span></div>
+
+    <!-- STEP 7: INSTALLATION -->
+    <section id="s7">
+      <h1>Add Installation</h1>
+      <p class="sub">Optional. Get installation quoted by verified installers near your job site, or skip this step.</p>
+      <div class="box">
+        <label class="lab" for="zip">Job-site ZIP code</label>
+        <input type="text" id="zip" inputmode="numeric" maxlength="5" value="75201" autocomplete="postal-code">
+        <div class="opts" role="radiogroup" aria-label="Installation">
+          <label class="opt"><input type="radio" name="inst" value="yes" checked><span><b>Yes, quote installation</b><span>Verified local installers price your exact layout.</span></span></label>
+          <label class="opt"><input type="radio" name="inst" value="own"><span><b>I have my own installer</b><span>We'll include the install packet with your shop drawings.</span></span></label>
+          <label class="opt"><input type="radio" name="inst" value="no"><span><b>No installation</b><span>Partitions only. Install instructions are always included.</span></span></label>
+        </div>
+        <div class="estbox" id="estbox" aria-live="polite"></div>
+      </div>
+      <div class="tip"><b>How it works:</b> installers see your layout and ZIP, not your name or contact details. You get their names and confirmed prices with your shop drawings, and you hire the one you choose directly. Installers are independent businesses; Next Partitions doesn't perform or guarantee installation work.</div>
+      <div class="navrow"><button type="button" class="prev">← Previous</button><button type="button" class="next" id="toS8">Next Step →</button></div>
+    </section>
+
+    <!-- STEP 8: REQUEST QUOTE -->
+    <section id="s8" hidden>
+      <h1>Request Your Quote</h1>
+      <p class="sub" style="font-size:17px">Review your configuration and provide your contact details. We'll email you official shop drawings and a quote within 2 business days.</p>
+      <div class="rq">
+        <div>
+          <div class="panel">
+            <div class="ff"><label for="fn">Full Name *</label><input id="fn" placeholder="John Smith" autocomplete="name"></div>
+            <div class="ff"><label for="fe">Email Address *</label><input id="fe" type="email" placeholder="john@company.com" autocomplete="email"></div>
+            <div class="ff"><label for="fp">Phone Number *</label><input id="fp" type="tel" placeholder="(555) 123-4567" autocomplete="tel"></div>
+            <div class="ff"><label for="fz">Shipping ZIP Code *</label><input id="fz" inputmode="numeric" maxlength="5"></div>
+            <div class="ff" style="margin:0"><label for="fnotes">Additional Notes</label><textarea id="fnotes" rows="3" placeholder="Any special requirements or questions..."></textarea></div>
+          </div>
+          <div class="live" aria-live="polite">
+            <span class="k">$ Live estimate</span>
+            <div class="big" id="liveAmt"></div>
+            <div class="row"><span id="liveRoom"></span><b id="livePart"></b></div>
+            <div class="row inst" id="liveInst"><span>Installation, local installer <span class="tagest">Estimate</span></span><b id="liveInstAmt"></b></div>
+            <p id="liveNote">Estimate based on list pricing for the options selected. Hardware, freight, and custom options are quoted separately.</p>
+          </div>
+        </div>
+        <div style="display:grid;gap:20px;align-content:start">
+          <div class="panel"><h3>Rooms (1)</h3><div class="room"><h4>Room 1<i>EDITING</i></h4>
+            <div class="kv"><span>Layout</span><b>Between Walls</b></div><div class="kv"><span>Stalls</span><b id="rStalls"></b></div><div class="kv"><span>Width</span><b id="rWidth"></b></div><div class="kv"><span>Depth</span><b>60"</b></div></div></div>
+          <div class="panel"><h3>Shared Selections</h3>
+            <div class="kv"><span>Material</span><b id="ssMat"></b></div><div class="kv"><span>Bracing</span><b id="ssBr"></b></div><div class="kv"><span>Color</span><b>Gray 2125</b></div><div class="kv"><span>Installation</span><b id="ssInst"></b></div></div>
+          <div class="incl"><h3>Included with your quote:</h3><ul id="inclList"></ul></div>
+        </div>
+      </div>
+      <p class="err" id="err" role="alert" hidden style="color:#b42318;font-weight:600;margin:16px 0 0"></p>
+      <div class="navrow"><button type="button" class="prev" id="backS7">← Previous</button><button type="button" class="next" id="send">➤ Request Quote Now</button></div>
+    </section>
+
+    <section id="s9" hidden><div class="ok" id="okBox"></div></section>
+  </div>
+
+  <aside class="right">
+    <div class="sidecard">
+      <div class="hd"><b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>Your Configuration</b><span id="selCount"></span></div>
+      <div class="prevw"><img id="pvImg" src="img/powder-coated.jpg" alt=""><small>Live 3D preview in the real configurator</small></div>
+      <p class="cap">Live 3D preview · drag to rotate · scroll to zoom</p>
+      <button type="button" class="v3d">◉ View Live 3D Mockup</button>
+      <div class="items" id="items"></div>
+    </div>
+  </aside>
+</div></div></main>
+
+<footer><div class="wrap"><span>© 2026 Next Partitions. All rights reserved.</span><span>Terms &amp; Conditions · Privacy Policy</span></div></footer>
+
+<script>
+const $=id=>document.getElementById(id);
+const money=n=>"$"+Math.round(n).toLocaleString("en-US");
+const rng=(lo,hi)=>lo===hi?money(lo):`${money(lo)} – ${money(hi)}`;
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const MAT={pc:{short:"powder coated",name:"Powder Coated",rate:470,img:"img/powder-coated.jpg"},hdpe:{short:"HDPE",name:"Solid Plastic (HDPE)",rate:735,img:"img/solid-plastic.jpg"},phen:{short:"phenolic",name:"Phenolic",rate:1210,img:"img/phenolic.jpg"},lam:{short:"plastic laminate",name:"Plastic Laminate",rate:590,img:"img/plastic-laminate.jpg"}};
+const MOUNT={ob:{name:"Overhead Braced",d:"Most popular style with anti-grip headrail",add:0,ch:0},fm:{name:"Floor Mounted",d:"Modern sleek look ideal for concrete floors",add:25,ch:0},ch:{name:"Ceiling Hung",d:"Clean floor line for easy maintenance",add:60,ch:1}};
+// installer rate cards by area (sample) — names are NOT shown in the configurator
+const AREAS={
+ miami:{zips:/^33[01]\d\d$/,city:"Miami",inst:[
+  {id:"bayline",name:"Bayline Partition Installers",mi:6,r:{hdpe:135,phen:150,pc:110,lam:115},chA:40,free:25,perMi:2,min:600},
+  {id:"coastal",name:"Coastal Restroom Installs",mi:24,r:{hdpe:145,phen:160,pc:120,lam:125},chA:45,free:30,perMi:2,min:800},
+  {id:"southpoint",name:"Southpoint Facility Crew",mi:28,r:{hdpe:125,phen:140,pc:100,lam:105},chA:35,free:20,perMi:2.5,min:500}]},
+ dfw:{zips:/^75[0-3]\d\d$|^76[01]\d\d$/,city:"Dallas–Fort Worth",inst:[
+  {id:"acme",name:"Acme Partition Installs",mi:2,r:{hdpe:140,phen:160,pc:115,lam:120},chA:45,free:60,perMi:2,min:700},
+  {id:"contoso",name:"Contoso Specialty Contractors",mi:19,r:{hdpe:125,phen:145,pc:100,lam:105},chA:40,free:40,perMi:0,min:500},
+  {id:"northwind",name:"Northwind Washroom Pros",mi:31,r:{hdpe:130,phen:150,pc:110,lam:110},chA:40,free:50,perMi:1.75,min:600},
+  {id:"fabrikam",name:"Fabrikam Facility Services",mi:34,r:{hdpe:120,phen:140,pc:95,lam:100},chA:35,free:45,perMi:2.5,min:450}]}
+};
+let mat="pc",mount="ob",stalls=7,inst="yes",from=null,alsoOthers=true,step=7;
+// deep link from an installer profile or area page: #bayline.phen.ch.8 · #dfw.acme · #dfw
+(function(){const t=(location.hash||"").slice(1).toLowerCase().split(".").filter(Boolean);
+  for(const x of t){
+    if(x==="dfw")$("zip").value="75201";
+    else if(MAT[x])mat=x; else if(MOUNT[x])mount=x;
+    else if(/^\d+$/.test(x))stalls=Math.min(20,Math.max(2,+x));
+    else for(const a of Object.values(AREAS)){const i=a.inst.find(i=>i.id===x);if(i){from=i;$("zip").value=a===AREAS.dfw?"75201":"33126";}}
+  }
+})();
+const areaFor=z=>Object.values(AREAS).find(a=>a.zips.test(z));
+function est(i){const per=i.r[mat]+(MOUNT[mount].ch?i.chA:0);let t=stalls*per+(i.mi>i.free?(i.mi-i.free)*i.perMi:0);if(t<i.min)return[i.min,i.min];return[Math.round(t*.95/10)*10,Math.round(t*1.1/10)*10];}
+function pool(){const a=areaFor($("zip").value.trim());if(!a)return{a:null,list:[]};
+  let list=a.inst; if(from&&a.inst.includes(from)&&!alsoOthers)list=[from]; else if(from&&a.inst.includes(from))list=[from,...a.inst.filter(i=>i!==from).slice(0,2)]; else list=a.inst.slice(0,3);
+  return{a,list};}
+function instRange(){const {list}=pool();if(!list.length)return null;const e=list.map(est);return[Math.min(...e.map(x=>x[0])),Math.max(...e.map(x=>x[1]))];}
+const partsPrice=()=>Math.round(stalls*(MAT[mat].rate+MOUNT[mount].add));
+const tick='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg>';
+const pen='<svg class="pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg>';
+function instSummary(){const z=$("zip").value.trim(),{a,list}=pool();
+  if(inst==="no")return["No installation",""];if(inst==="own")return["Own installer","Install packet included"];
+  if(!/^\d{5}$/.test(z))return null;
+  if(!a)return["Quote requested","We'll look for installers near "+z];
+  const r=instRange();return[`Quotes from ${list.length} installer${list.length>1?"s":""}`,`Est. ${rng(r[0],r[1])}`];}
+function renderSide(){
+  const s=instSummary();
+  const rows=[["Material",`<img src="${MAT[mat].img}" alt="">${MAT[mat].name}`,""],["Bracing",MOUNT[mount].name,MOUNT[mount].d],["Color",'<i aria-hidden="true"></i>Gray 2125',""],["Layout","Between Walls","Walls on both sides"],["Stalls & sizes",`${stalls} stalls`,`${stalls*36}" W × 60" D`],["Urinal screens","None",""],["Installation",s?s[0]:null,s?s[1]:""]];
+  $("items").innerHTML=rows.map((r,k)=>`<div class="item${r[1]?"":" empty"}${k===6?" hl":""}"><span class="ck">${tick}</span><span><small>${r[0]}</small><b>${r[1]||"Not selected yet"}</b>${r[2]?`<em>${r[2]}</em>`:""}</span>${pen}</div>`).join("");
+  $("selCount").textContent=`${rows.filter(r=>r[1]).length}/7 selected`;
+  $("pvImg").src=MAT[mat].img;
+}
+function renderStepbar(){
+  const S=["Material","Bracing","Color","Layout","Stalls & Sizes","Urinal Screens","Installation","Request Quote"];
+  $("stepbar").innerHTML=S.map((n,i)=>{const k=i+1,st=k<step?"done":k===step?"cur":"";return `<li class="${st}${k===7?" new":""}"><span class="n">${k<step?"✓":k}</span><small>${n}</small></li>`;}).join("");
+  const ol=$("stepbar"),c=ol.querySelector(".cur");if(c&&ol.scrollWidth>ol.clientWidth)ol.scrollLeft=c.offsetLeft-40;
+}
+function renderEst(){
+  const box=$("estbox"),z=$("zip").value.trim(),{a,list}=pool();
+  if(inst!=="yes"){box.hidden=true;return;} box.hidden=false;
+  if(!/^\d{5}$/.test(z)){box.innerHTML='<span class="k">Installation estimate</span><p>Enter your job-site ZIP to see an estimate.</p>';return;}
+  if(!a){box.innerHTML=`<span class="k">Installation estimate</span><b class="big" style="font-size:20px">No verified installers near ${esc(z)} yet</b><p>Keep this selected and we'll look for an installer and include what we find with your quote. Install instructions are always included.</p>`;return;}
+  const r=instRange(),others=a.inst.filter(i=>i!==from).length;
+  box.innerHTML=`<span class="k">Installation estimate · ${list.length} verified installer${list.length>1?"s":""} near ${esc(z)}</span><b class="big">${rng(r[0],r[1])}</b>
+    <p>For ${stalls} ${MAT[mat].short} stalls, ${MOUNT[mount].name.toLowerCase()}, from the installers' own rates. They confirm after seeing your layout and invoice you directly.</p>
+    ${from&&a.inst.includes(from)?`<div class="from">✓ <span><b>${from.name}</b> is included, from their profile.</span></div><label class="more"><input type="checkbox" id="alsoChk" ${alsoOthers?"checked":""}> Also ask ${Math.min(2,others)} more verified installers to quote</label>`:""}`;
+  const c=$("alsoChk");if(c)c.addEventListener("change",()=>{alsoOthers=c.checked;renderAll();});
+}
+function renderS8(){
+  const p=partsPrice(),r=inst==="yes"?instRange():null;
+  $("fz").value=$("fz").value||$("zip").value;
+  $("rStalls").textContent=stalls;$("rWidth").textContent=`${stalls*36}"`;
+  $("ssMat").textContent=MAT[mat].name;$("ssBr").textContent=MOUNT[mount].name;
+  const s=instSummary();$("ssInst").textContent=s?s[0]:"Not selected";
+  $("liveRoom").textContent=`BW-${stalls} (${stalls} stalls)`;$("livePart").textContent=money(p);
+  $("liveInst").hidden=!r;
+  if(r){$("liveInstAmt").textContent=rng(r[0],r[1]);$("liveAmt").textContent=rng(p+r[0],p+r[1]);$("liveNote").textContent="Partitions at list pricing. Installation is an estimate from local installers' rates; they confirm it and invoice you directly. Freight and custom options are quoted separately.";}
+  else{$("liveAmt").textContent=money(p);$("liveNote").textContent="Estimate based on list pricing for the options selected. Hardware, freight, and custom options are quoted separately.";}
+  const L=[["All hardware included"],["Installation instructions included"],["Ships in 48 hours (in-stock items)"]];
+  if(inst==="yes")L.push([pool().a?`Installation quotes from ${pool().list.length} verified installer${pool().list.length>1?"s":""} near ${$("zip").value}`:"We'll look for an installer near your job site","new"]);
+  if(inst==="own")L.push(["Install packet for your installer (layout, hardware list, delivery date)","new"]);
+  $("inclList").innerHTML=L.map(l=>`<li class="${l[1]||""}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg>${l[0]}</li>`).join("");
+}
+function renderAll(){renderStepbar();renderEst();renderSide();if(step===8)renderS8();}
+document.querySelectorAll("input[name=inst]").forEach(r=>r.addEventListener("change",()=>{inst=r.value;renderAll();}));
+$("zip").addEventListener("input",renderAll);
+function go(n){step=n;$("s7").hidden=n!==7;$("s8").hidden=n!==8;$("s9").hidden=n!==9;renderAll();window.scrollTo({top:0});}
+$("toS8").addEventListener("click",()=>go(8));$("backS7").addEventListener("click",()=>go(7));
+$("send").addEventListener("click",()=>{
+  const em=$("fe").value.trim(),nm=$("fn").value.trim();
+  const e=!nm?"Enter your full name.":!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)?"Enter a valid email, like john@company.com.":"";
+  $("err").hidden=!e;$("err").textContent=e;if(e)return;
+  const {a,list}=pool();
+  go(9);
+  $("okBox").innerHTML=`<h2>Quote requested</h2><p>Thanks, ${esc(nm.split(" ")[0])}. Shop drawings and your partitions quote arrive at <b>${esc(em)}</b> within 2 business days.</p>
+   ${inst==="yes"&&a?`<p><b>Installation:</b></p><ol><li>${list.length} verified installer${list.length>1?"s":""} near ${esc($("zip").value)} get your layout and ZIP now, not your contact details.</li><li>They confirm their price. You get their names, profiles and confirmed quotes with your shop drawings (<a class="link" href="profile.html#acme">example profile</a>).</li><li>You pick one. We share your details with that installer only, and they invoice you directly.</li></ol>`:inst==="own"?"<p>Your quote includes an install packet to forward to your installer.</p>":""}
+   <p style="font-size:13px;margin-top:12px">Mockup: nothing was sent.</p>`;
+});
+renderAll();
+</script>
+
+<script>document.body.insertAdjacentHTML('afterbegin', "<a href=\"../index.html#installers\" style=\"display:block;background:#fe7802;color:#fff;font:600 13px/1.4 Inter,system-ui,sans-serif;padding:8px 16px;text-decoration:none;position:relative;z-index:2000\">← Back to the overview: installer pages and job flow</a>")</script>
+<script>try{history.scrollRestoration='manual'}catch(e){};if(location.hash!=='#installers')addEventListener('load',()=>scrollTo(0,0))</script>

@@ -42,13 +42,6 @@ img{max-width:100%;display:block}
 .more:hover{text-decoration:underline;text-underline-offset:4px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
-/* ---------- grid overlay (designer aid) ---------- */
-.overlay{position:fixed;inset:0;pointer-events:none;z-index:50}
-.overlay .wrap{height:100%}
-.overlay .grid{height:100%}
-.overlay .grid span{background:rgba(232,99,10,.08);border-inline:1px solid rgba(232,99,10,.35)}
-.gridtoggle{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:60;font:inherit;font-size:14px;font-weight:700;background:var(--ink);color:var(--ink-fg);border:0;padding:10px 14px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.18)}
-.gridtoggle[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
 .mocknote{background:var(--band);border-bottom:1px solid var(--border);font-size:13px;color:var(--muted);text-align:center;padding:8px 16px}
 .mocknote b{color:var(--fg)}
 
@@ -153,12 +146,6 @@ img{max-width:100%;display:block}
 .done p{margin:0 0 6px;color:var(--muted)}
 .done .ref{font-variant-numeric:tabular-nums;color:var(--fg);font-weight:700}
 @media (max-width:1024px){#uppanel .c5,#uppanel .c7{grid-column:span 12}}
-.helper{margin-top:48px;padding-top:40px;border-top:1px solid var(--border);scroll-margin-top:84px}
-.variant{position:fixed;right:132px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;background:var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.18)}
-.variant span{color:var(--ink-muted);font-size:13px;font-weight:600;padding:10px 4px 10px 12px}
-.variant button{font:inherit;font-size:13px;font-weight:700;background:transparent;color:var(--ink-fg);border:0;padding:10px 12px;cursor:pointer}
-.variant button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
-@media (max-width:700px){.variant{right:auto;left:16px}.variant span{display:none}}
 @media (max-width:1024px){.door{grid-column:span 12}}
 
 /* ---------- quick quote: one tap to a price ---------- */
@@ -240,12 +227,14 @@ img{max-width:100%;display:block}
 .wcard p{margin:0;color:var(--muted);font-size:15px}
 .brands .wrap{padding-block:56px 0}
 .brands .lab{font-size:13px;font-weight:600;color:var(--muted);margin:0 0 8px}
-.logo{display:flex;align-items:center;height:56px}
+.logo{display:flex;align-items:center;justify-content:center;height:56px}
+.logo img[alt="Metpar"]{max-height:50px}
 .logo img{max-height:38px;width:auto;max-width:100%;object-fit:contain;filter:grayscale(1);opacity:.75;transition:filter .2s,opacity .2s}
 .logo:hover img{filter:none;opacity:1}
 .logo.missing{color:var(--muted);font-size:13px;font-weight:600;border:1px dashed var(--border);justify-content:center;padding:0 8px;text-align:center}
 
 /* ---------- industries ---------- */
+a.itile{text-decoration:none}
 .itile{display:flex;flex-direction:column;align-items:flex-start;gap:8px;background:none;border:0;border-top:2px solid var(--border);padding:18px 0 0;font:inherit;color:var(--fg);text-align:left;cursor:pointer}
 .itile:hover{border-top-color:var(--accent)}
 .itile svg{width:26px;height:26px;color:var(--accent)}
@@ -283,13 +272,8 @@ footer .col{grid-column:span 2}
 @media (max-width:900px){footer .about{grid-column:span 12}footer .col{grid-column:span 6}}
 </style>
 
-<div class="mocknote"><b>Mockup:</b> homepage rebuilt on one 12-column grid. Use <b>Opener</b> (bottom right) to compare the two quote openers, and <b>Show grid</b> to see the columns. Prices are placeholders from the site's "From $/stall".</div>
+<div class="mocknote"><b>Mockup:</b> homepage rebuilt on one 12-column grid. Prices are placeholders from the site's "From $/stall".</div>
 
-<div class="overlay" id="overlay" hidden aria-hidden="true"><div class="wrap"><div class="grid">
-  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-</div></div></div>
-<button type="button" class="gridtoggle" id="gridtoggle" aria-pressed="false">Show grid</button>
-<div class="variant" role="group" aria-label="Compare openers"><span>Opener:</span><button type="button" data-variant="doors" aria-pressed="true">Three doors</button><button type="button" data-variant="picker" aria-pressed="false">Facility picker</button></div>
 
 <div class="topbar"><div class="wrap">
   <div class="contact"><span>sales@nextpartitions.com</span><span>1-833-997-7489</span></div>
@@ -298,7 +282,7 @@ footer .col{grid-column:span 2}
 
 <nav class="nav" aria-label="Main"><div class="wrap">
   <a class="brand" href="#top"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Commercial Partitions</small></span></a>
-  <div class="menu"><a href="#materials">Partitions</a><a href="#how">Mounting Styles</a><a href="#how">Hardware &amp; Parts</a><a href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener">Installers</a><a href="#industries">Resources</a></div>
+  <div class="menu"><a href="#materials">Partitions</a><a href="#how">Mounting Styles</a><a href="#how">Hardware &amp; Parts</a><a href="#industries">Resources</a></div>
   <a class="btn" href="#quote">Get a Quote</a>
 </div></nav>
 
@@ -319,7 +303,7 @@ footer .col{grid-column:span 2}
 
 
 <section class="section" id="quote"><div class="wrap">
-  <div class="head"><div><h2 id="quoteTitle">Start your quote</h2><p id="quoteIntro">Price it yourself, send us your drawings, or let us recommend a material. Every route ends with a quote and shop drawings.</p></div></div>
+  <div class="head"><div><h2 id="quoteTitle">Start your quote</h2><p id="quoteIntro">Price a full layout yourself, send us your drawings, or shop parts and accessories straight from the catalogue.</p></div></div>
   <div class="grid doors" id="doors">
     <article class="c4 door primary">
       <p class="eyebrow">I know what I need</p>
@@ -341,13 +325,12 @@ footer .col{grid-column:span 2}
       <label class="btn lg dbtn ghostbtn" for="plans">Upload plans <span aria-hidden="true">→</span></label>
     </article>
     <article class="c4 door">
-      <p class="eyebrow">Not sure yet</p>
-      <h3>Help me choose</h3>
-      <p class="dtext">Tell us where the partitions are going. We'll recommend a material and show a ballpark price.</p>
-      <p class="dlist">Schools · Gyms · Offices · Restaurants · Healthcare · and more</p>
-      <button type="button" class="btn lg dbtn ghostbtn" id="helpDoor" aria-expanded="false" aria-controls="helper">Help me choose <span aria-hidden="true">→</span></button>
+      <p class="eyebrow">I know the exact parts</p>
+      <h3>Shop the catalogue</h3>
+      <p class="dtext">Browse every partition, door, hardware part and accessory with listed prices. Add to cart and check out online.</p>
+      <p class="dlist">Partitions · Doors · Hinges &amp; latches · Brackets · Accessories</p>
+      <a class="btn lg dbtn ghostbtn" href="https://nextpartitions.com/products">Shop all products <span aria-hidden="true">→</span></a>
     </article>
-    <p class="c12 instline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg><span><b>Need it installed?</b> Add a local installer at the last step of the configurator. You'll see their estimate next to your partitions price.</span><a class="more" href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener">Find installers</a><a class="more" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs" target="_blank" rel="noopener">See how it works</a></p>
     <p class="c12 talk">Prefer to talk it through? Call <b>1-833-997-7489</b> or email <b>sales@nextpartitions.com</b>.</p>
   </div>
   <div class="grid uppanel" id="uppanel" hidden>
@@ -378,11 +361,6 @@ footer .col{grid-column:span 2}
     </form>
     <div class="c12 done" id="upDone" hidden></div>
   </div>
-  <div class="grid helper" id="helper" hidden>
-    <h3 class="c12 q" id="q1">Where are they going?</h3>
-    <div class="c7 tiles" id="tiles" role="group" aria-labelledby="q1"></div>
-    <div class="c5 resultcol"><div class="result" id="result" aria-live="polite"></div></div>
-</div>
 </div></section>
 
 <section class="section band" id="materials"><div class="wrap">
@@ -402,7 +380,7 @@ footer .col{grid-column:span 2}
 </div></div></section>
 
 <section class="section" id="industries"><div class="wrap">
-  <div class="head"><div><h2>Partitions for Every Commercial Environment</h2><p>Pick your facility to see the material we recommend and a ballpark price.</p></div><a class="more" href="https://nextpartitions.com/industries" target="_blank" rel="noopener">All industries</a></div>
+  <div class="head"><div><h2>Partitions for Every Commercial Environment</h2><p>See the material we recommend for your facility.</p></div><a class="more" href="https://nextpartitions.com/industries" target="_blank" rel="noopener">All industries</a></div>
   <div class="grid" id="indGrid"></div>
 </div></section>
 
@@ -435,7 +413,7 @@ footer .col{grid-column:span 2}
       <p style="margin:16px 0 0;max-width:30em">Your B2B supplier for commercial bathroom partitions, hardware and accessories.</p>
       <p style="margin:12px 0 0">1-833-997-7489<br>sales@nextpartitions.com</p></div>
     <div class="col"><h4>Products</h4><ul><li><a href="#materials">All Partitions</a></li><li><a href="#materials">Powder Coated Steel</a></li><li><a href="#materials">Solid Plastic (HDPE)</a></li><li><a href="#materials">Phenolic</a></li><li><a href="#materials">Plastic Laminate</a></li><li><a href="#materials">Stainless Steel</a></li></ul></div>
-    <div class="col"><h4>Resources</h4><ul><li><a href="#how">Service Area</a></li><li><a href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener">Installers</a></li><li><a href="#industries">Industries</a></li><li><a href="#how">Stall Dimensions</a></li><li><a href="#how">ADA Compliance</a></li><li><a href="#how">Mounting Styles</a></li></ul></div>
+    <div class="col"><h4>Resources</h4><ul><li><a href="#how">Service Area</a></li><li><a href="#industries">Industries</a></li><li><a href="#how">Stall Dimensions</a></li><li><a href="#how">ADA Compliance</a></li><li><a href="#how">Mounting Styles</a></li></ul></div>
     <div class="col"><h4>Brands</h4><ul><li>Bobrick</li><li>ASI Global</li><li>Scranton Products</li><li>Bradley</li><li>Metpar</li><li>Ammco</li></ul></div>
     <div class="col"><h4>Company</h4><ul><li><a href="#top">About Us</a></li><li><a href="#top">Contact Us</a></li><li><a href="#quote">Get a Quote</a></li></ul></div>
   </div>
@@ -468,104 +446,15 @@ const FACILITIES = [
   {id:"public", page:true, hint:"Parks, transit, stadiums",     label:"Public Restrooms",    noun:"public restrooms",  mat:"solid-phenolic",   why:"Resists vandalism, cutting, burning and moisture.", also:"solid-plastic", alsoNote:"as the value pick"},
   {id:"healthcare", hint:"Clinics, hospitals, senior living", label:"Healthcare", noun:"healthcare", mat:"solid-phenolic", why:"Non-porous surface that stands up to hospital-grade disinfectants.", also:"solid-plastic", alsoNote:"", unconfirmed:true},
 ];
-const DRYWET = [
-  {id:"dry", label:"Dry restroom",  sub:"Offices, churches", mat:"powder-coated", why:"Our most popular, budget-friendly option for dry restrooms."},
-  {id:"wet", label:"Wet or humid",  sub:"Showers, pools", mat:"solid-plastic", why:"Waterproof. Won't rust, swell or delaminate."}
-];
-const state = {facility:null, dw:null, stalls:4, override:null, asking:false};
 const $ = id => document.getElementById(id);
 const money = n => "$" + Math.round(n).toLocaleString("en-US");
-const plus = () => state.stalls === 5 ? "+" : "";
 
-function pick(){
-  if (state.facility){const f=FACILITIES.find(x=>x.id===state.facility);
-    return {unconfirmed:!state.override&&f.unconfirmed, mat:state.override||f.mat, eyebrow: state.override?"Your choice":"Recommended for "+f.noun, why: state.override?"Best for: "+MATS[state.override].best.toLowerCase()+".":f.why, also: state.override?null:f.also};}
-  if (state.dw){const d=DRYWET.find(x=>x.id===state.dw);
-    return {mat:state.override||d.mat, eyebrow: state.override?"Your choice":"Recommended for a "+(d.id==="dry"?"dry":"wet or humid")+" restroom", why: state.override?"Best for: "+MATS[state.override].best.toLowerCase()+".":d.why, also:null};}
-  return null;
-}
-function urlFor(mat){
-  const q=new URLSearchParams({quantity:String(state.stalls), material:mat});
-  if(state.facility) q.set("facility",state.facility); else if(state.dw) q.set("restroom",state.dw);
-  q.set("source", state.override?"chosen":"recommended");
-  return "https://nextpartitions.com/get-a-quote?"+q;
-}
-function renderTiles(){
-  $("tiles").innerHTML = FACILITIES.map(f=>`<button type="button" class="ftile" data-tile="${f.id}" aria-pressed="${state.facility===f.id}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">${ICONS[f.id]}</svg><b>${f.label}</b><small>${f.hint}</small></button>`).join("")
-    + `<button type="button" class="ftile else" id="elseTile" aria-pressed="${state.asking||!!state.dw}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5v.7M12 17h.01"/></svg><b>Something else</b><small>Warehouses, hotels, retail…</small></button>`;
-  $("tiles").querySelectorAll("[data-tile]").forEach(b=>b.addEventListener("click",()=>choose({facility:b.dataset.tile})));
-  $("elseTile").addEventListener("click",()=>{state.facility=null;state.dw=null;state.override=null;state.asking=true;render();focusCard();});
-}
-function focusCard(){ if (window.matchMedia("(max-width:900px)").matches) $("result").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth", block:"start"}); }
-function choose(o){
-  state.facility=o.facility||null; state.dw=o.dw||null; state.override=null; state.asking=false;
-  render(); focusCard();
-}
-function renderResult(){
-  const r=pick(), box=$("result"), n=state.stalls, p=n>=8?"+":"";
-  const m=r?MATS[r.mat]:null;
-  if(!r && state.asking){
-    box.className="result";
-    box.innerHTML=`<div class="top"><p class="eyebrow">Something else</p><h3>Dry or wet restroom?</h3><p class="why">Locker rooms, showers and pools count as wet.</p></div>
-      <div class="bottom"><div class="drywet" role="group" aria-label="Dry or wet restroom">${DRYWET.map(d=>`<button type="button" data-dw="${d.id}"><b>${d.label}</b><span>${d.sub}</span></button>`).join("")}</div>
-      <p class="incl">All hardware included</p>
-      <a class="btn lg" aria-disabled="true" tabindex="-1" style="background:var(--border);color:var(--muted);pointer-events:none">See my exact price <span aria-hidden="true">→</span></a>
-      <div class="links"><div class="slot"><span>Or <a class="link" href="https://nextpartitions.com/partitions" target="_blank" rel="noopener">compare all materials</a></span></div><div class="slot"><span>Have drawings? <a class="link" href="https://nextpartitions.com/get-a-quote" target="_blank" rel="noopener">Upload them</a></span></div></div></div>`;
-    box.querySelectorAll("[data-dw]").forEach(b=>b.addEventListener("click",()=>choose({dw:b.dataset.dw})));
-    return;
-  }
-  box.className = r ? "result" : "result empty";
-  const slot1 = !r ? `<span>Not sure? <button type="button" class="link" id="helpLink">Help me choose</button></span>`
-    : state.override ? `<button type="button" class="link" id="reset">Back to our recommendation</button>`
-    : r.also ? `<span>Also consider <button type="button" class="link" data-alt="${r.also}">${MATS[r.also].name}</button></span>` : `<span>&nbsp;</span>`;
-  box.innerHTML = `
-    <div class="top">
-      <p class="eyebrow"${r?"":' style="color:var(--muted)"'}>${r?r.eyebrow:"Your ballpark"}${r&&r.unconfirmed?'<span class="flag">Confirm</span>':""}</p>
-      <h3>${r?m.name:"Pick a facility"}</h3>
-      <p class="why">${r?r.why:"We'll recommend a material and price it for your stall count."}</p>
-    </div>
-    <div class="bottom">
-      <div class="pricebox"><div>${r?`<div class="amt">≈ ${money(m.from*n)}${p}</div>`:`<div class="ghostprice">$ – – –</div>`}
-          <span class="per">${r?`${n}${p} stall${n>1?"s":""} × from ${money(m.from)}/stall`:`From ${money(MATS["powder-coated"].from)}/stall`}</span></div>
-        <div class="stepper"><span class="lbl" id="stl">Stalls</span><div class="ctl" role="group" aria-labelledby="stl"><button type="button" id="dec" aria-label="Fewer stalls" ${n<=1?"disabled":""}>−</button><output id="cnt" aria-live="polite">${n}${p}</output><button type="button" id="inc" aria-label="More stalls" ${n>=8?"disabled":""}>+</button></div></div></div>
-      <p class="incl">All hardware included</p>
-      <a class="btn lg" ${r?`href="${urlFor(r.mat)}" target="_blank" rel="noopener"`:'aria-disabled="true" tabindex="-1"'}>See my exact price <span aria-hidden="true">→</span></a>
-      <div class="links"><div class="slot">${slot1}</div><div class="slot"><span>Have drawings? <a class="link" href="https://nextpartitions.com/get-a-quote" target="_blank" rel="noopener">Upload them</a></span></div></div>
-    </div>`;
-  $("dec").addEventListener("click",()=>{state.stalls=Math.max(1,state.stalls-1);renderResult();$("dec").focus();});
-  $("inc").addEventListener("click",()=>{state.stalls=Math.min(8,state.stalls+1);renderResult();$("inc").focus();});
-  box.querySelectorAll("[data-alt]").forEach(b=>b.addEventListener("click",()=>{state.override=b.dataset.alt;renderResult();}));
-  const rs=$("reset"); if(rs) rs.addEventListener("click",()=>{state.override=null;renderResult();});
-  const hl=$("helpLink"); if(hl) hl.addEventListener("click",()=>{state.asking=true;render();});
-}
-function render(){renderTiles();renderResult();}
-const HERO = {
-  doors:  {sub:"Price it yourself in minutes, or send us your drawings for a quote within 24–48 hours. All hardware included with every order.",
-           p:["Get instant pricing","https://nextpartitions.com/get-a-quote",true], s:["Upload plans","#uploadDoor"],
-           title:"Start your quote", intro:"Price it yourself, send us your drawings, or let us recommend a material. Every route ends with a quote and shop drawings."},
-  picker: {sub:"Pick your facility, get a ballpark price in one tap. All hardware included with every order.",
-           p:["Get my price","#quote",false], s:["Browse materials","#materials"],
-           title:"Configure Your Partitions", intro:"Pick where they're going and see a ballpark price instantly. Exact sizes come next, in the configurator."}
-};
-let variant="doors";
-function setVariant(v){
-  variant=v; const h=HERO[v];
-  document.querySelectorAll("[data-variant]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.variant===v)));
-  $("doors").hidden = v!=="doors"; if(v!=="doors") $("uppanel").hidden=true;
-  $("helper").hidden = v==="doors" && $("helpDoor").getAttribute("aria-expanded")!=="true";
-  $("quoteTitle").textContent=h.title; $("quoteIntro").textContent=h.intro; $("heroSub").textContent=h.sub;
-  const hp=$("heroPrimary"); hp.firstChild.textContent=h.p[0]+" "; hp.href=h.p[1]; if(h.p[2]){hp.target="_blank";hp.rel="noopener";}else{hp.removeAttribute("target");hp.removeAttribute("rel");}
-  const hs=$("heroSecondary"); hs.textContent=h.s[0]; hs.href=h.s[1];
-}
-function openHelper(){ $("helpDoor").setAttribute("aria-expanded","true"); $("helper").hidden=false; }
-document.querySelectorAll("[data-variant]").forEach(b=>b.addEventListener("click",()=>setVariant(b.dataset.variant)));
-$("helpDoor").addEventListener("click",()=>{$("uppanel").hidden=true;const open=$("helpDoor").getAttribute("aria-expanded")!=="true";$("helpDoor").setAttribute("aria-expanded",String(open));$("helper").hidden=!open;if(open)$("helper").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});});
 // ---------- upload flow (mockup: files never leave the browser) ----------
 const OKEXT=/\.(pdf|dwg|dxf|docx?|png|jpe?g|webp|heic)$/i, MAXB=20*1024*1024, files=[];
 const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
 const esc=t=>t.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const mb=b=>b<1048576?Math.max(1,Math.round(b/1024))+" KB":(b/1048576).toFixed(1)+" MB";
-function openUpload(){ $("uppanel").hidden=false; $("helpDoor").setAttribute("aria-expanded","false"); $("helper").hidden=true;
+function openUpload(){ $("uppanel").hidden=false;
   $("uppanel").scrollIntoView({behavior:reduce?"auto":"smooth"}); }
 function addFiles(list){
   if(!list||!list.length) return;
@@ -627,14 +516,10 @@ renderFiles();
 // Materials: 3 + 3, sixth card fills the row
 $("matGrid").innerHTML = ["powder-coated","solid-plastic","solid-phenolic","plastic-laminate","stainless-steel"].map(id=>{const m=MATS[id];
   return `<a class="c4 mcard" href="https://nextpartitions.com/partitions/${m.page}" target="_blank" rel="noopener"><img src="${m.img}" alt="${m.name} partitions" loading="lazy"><div class="body"><h3>${m.name}</h3><span class="d">${m.short}</span><span class="pr">From ${money(m.from)}/stall</span></div></a>`;}).join("")
- + `<a class="c4 mcard help" href="#quote" onclick="if(variant==='doors'){openHelper();setTimeout(()=>$('helper').scrollIntoView(),0);return false;}"><div class="blurmix"><div class="strips" aria-hidden="true">${["powder-coated","solid-plastic","solid-phenolic","plastic-laminate","stainless-steel"].map(id=>`<img src="${MATS[id].img}" alt="" loading="lazy">`).join("")}</div><div class="offer"><span class="pill">Help me choose <span aria-hidden="true">→</span></span><small>2 quick questions, one recommendation</small></div></div><div class="body"><h3>Not sure which material?</h3><span class="d">Tell us the space, we'll suggest one</span><span class="pr">Get a recommendation →</span></div></a>`;
+ + `<a class="c4 mcard help" href="https://nextpartitions.com/partitions"><div class="blurmix"><div class="strips" aria-hidden="true">${["powder-coated","solid-plastic","solid-phenolic","plastic-laminate","stainless-steel"].map(id=>`<img src="${MATS[id].img}" alt="" loading="lazy">`).join("")}</div><div class="offer"><span class="pill">Compare materials <span aria-hidden="true">→</span></span><small>All five side by side</small></div></div><div class="body"><h3>Not sure which material?</h3><span class="d">Compare durability, moisture resistance and price</span><span class="pr">Compare all materials →</span></div></a>`;
 
 // Industries: tiles set the quote widget's facility
 $("indGrid").innerHTML = FACILITIES.filter(f=>f.page).map(f=>
-  `<button type="button" class="c2 itile" data-fac="${f.id}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">${ICONS[f.id]}</svg><b>${f.label}</b><span>Recommended: ${MATS[f.mat].name} →</span></button>`).join("");
-document.querySelectorAll("[data-fac]").forEach(b=>b.addEventListener("click",()=>{if(variant==="doors")openHelper();choose({facility:b.dataset.fac});(variant==="doors"?$("helper"):$("quote")).scrollIntoView();}));
+  `<a class="c2 itile" href="https://nextpartitions.com/industries/${f.id==='community'?'community-centers':f.id==='public'?'public-restrooms':f.id}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">${ICONS[f.id]}</svg><b>${f.label}</b><span>Recommended: ${MATS[f.mat].name} →</span></a>`).join("");
 
-const tg=$("gridtoggle"); tg.addEventListener("click",()=>{const on=tg.getAttribute("aria-pressed")!=="true";tg.setAttribute("aria-pressed",String(on));tg.textContent=on?"Hide grid":"Show grid";$("overlay").hidden=!on;});
-render();
-setVariant("doors");
 </script>
