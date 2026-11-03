@@ -85,7 +85,7 @@ If you can't share percentages for 37, an export of orders by stall type is enou
 47. Roughly what share of your quote requests also ask for installation pricing?
 48. What do privacy options (no-sightline doors, taller doors) typically add per stall? (Question 15 asks the same; one range answers both.)
 
-Until these come in, the post uses published prices from other sellers and public records, each with its source, and shows a bracketed placeholder where your figure goes.
+The cost guide is on hold until these come in: it uses no other sellers' prices, only your figures, so it isn't published before then.
 
 ## Part 3: one quote per page (for the "expert advice" boxes)
 
