@@ -63,6 +63,14 @@ img{max-width:100%;display:block}
 .facts b{font-size:26px;font-weight:900;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1}
 .facts span{font-size:13px;color:var(--muted)}
 .hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.startcfg{background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--accent);padding:20px;margin:0 0 20px;box-shadow:0 10px 30px rgba(28,14,5,.06)}
+.startcfg h2{font-size:21px;font-weight:900;letter-spacing:-.02em;margin:0 0 6px}
+.startcfg p{margin:0 0 14px;color:var(--muted)}
+.startcfg .btn{font-size:17px;min-height:52px;padding:14px 26px}
+@media (max-width:560px){.startcfg .btn{width:100%}}
+.search.secondary label{font-size:14px;color:var(--muted)}
+.mbar{display:none}
+@media (max-width:760px){.mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:45;background:var(--surface);border-top:1px solid var(--border);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}.mbar .btn{width:100%}body{padding-bottom:76px}}
 
 /* footer */
 footer{background:#1a1a1a;color:#d8d2cc;font-size:14px}
@@ -198,7 +206,7 @@ details p{margin:8px 0 0;color:var(--muted);max-width:75ch}
 <div class="topbar"><div class="wrap"><div class="contact"><span>sales@nextpartitions.com</span><span>1-833-997-7489</span></div><div class="tagline">Authorized Distributor — All Major Brands</div></div></div>
 <nav class="nav" aria-label="Main"><div class="wrap">
   <a class="brand" href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Commercial Partitions</small></span></a>
-  <div class="menu"><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Partitions</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Mounting Styles</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Hardware &amp; Parts</a><a href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" class="on">Installers</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Resources</a></div>
+  <div class="menu"><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Partitions</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Mounting Styles</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Hardware &amp; Parts</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Resources</a></div>
   <a class="btn" href="https://nextpartitions.com/get-a-quote" target="_blank" rel="noopener">Get a Quote</a>
 </div></nav>
 
@@ -208,13 +216,18 @@ details p{margin:8px 0 0;color:var(--muted);max-width:75ch}
   <header class="hubhero"><div class="grid">
     <div class="c6">
       <h1 class="h1">Bathroom Partition Installers in Texas</h1>
-      <p class="lead">Independent, insured installers for toilet partitions and urinal screens in <span id="nAreas"></span> Texas areas. Search your job-site city or ZIP to find the installers who serve it.</p>
+      <p class="lead">Independent, insured installers for toilet partitions and urinal screens in <span id="nAreas"></span> Texas areas. Price your partitions with us and we match the job with the installers who serve it.</p>
       <ul class="facts" id="facts"></ul>
-      <form class="search" id="sForm" novalidate autocomplete="off">
-        <label for="q">Job-site city or ZIP</label>
+      <div class="startcfg">
+        <h2>Start with your partitions</h2>
+        <p>Configure your restroom in about 2 minutes: an instant partitions price plus an installation estimate for your area. Installers price your job through us, and your contact details stay with us until you book.</p>
+        <a class="btn" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs" target="_blank" rel="noopener">Configure your partitions →</a>
+      </div>
+      <form class="search secondary" id="sForm" novalidate autocomplete="off">
+        <label for="q">Or browse installers by job-site city or ZIP</label>
         <div class="srow">
           <input id="q" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="sugg" placeholder="e.g. Plano or 78701">
-          <button class="btn" type="submit">Find installers</button>
+          <button class="btn ghost" type="submit">Find installers</button>
         </div>
         <ul class="sugg" id="sugg" role="listbox" hidden></ul>
         <p class="smsg" id="sMsg" hidden></p>
@@ -252,7 +265,7 @@ details p{margin:8px 0 0;color:var(--muted);max-width:75ch}
 </div></section>
 
 <section class="section" id="join" style="padding-bottom:0"><div class="wrap">
-  <div class="recruit"><div><h3>Install partitions in Texas?</h3><p id="joinTxt">Get install requests from customers buying partitions from us, plus trade pricing on partitions for your own jobs. No listing fee. You quote, contract and invoice customers directly.</p></div><a class="btn ghost" href="#join">Apply for a trade account</a></div>
+  <div class="recruit"><div><h3>Install partitions in Texas?</h3><p id="joinTxt">Get install requests from customers buying partitions from us, plus trade pricing on partitions for your own jobs. No listing fee. Jobs come through Next Partitions with shop drawings; you get the customer's details once they book you. You contract and invoice them directly.</p></div><a class="btn ghost" href="#join">Apply for a trade account</a></div>
 </div></section>
 
 <section class="section"><div class="wrap">
@@ -275,8 +288,8 @@ details p{margin:8px 0 0;color:var(--muted);max-width:75ch}
 </div></section>
 
 <section class="xband"><div class="wrap"><div class="grid">
-  <div class="c8"><h2>Buying partitions for a Texas project?</h2><p>We ship statewide from stock. Configure your partitions and we'll send your install request to approved installers who serve your ZIP. They quote and invoice you directly.</p></div>
-  <div class="c4 act"><a class="btn" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs" target="_blank" rel="noopener">Price partitions + installation</a></div>
+  <div class="c8"><h2>Buying partitions for a Texas project?</h2><p>We ship statewide from stock. Configure your partitions and approved installers who serve your ZIP price the installation through us. You choose, and we line up delivery and install dates.</p></div>
+  <div class="c4 act"><a class="btn" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs" target="_blank" rel="noopener">Configure your partitions</a></div>
 </div></div></section>
 
 <section class="section" style="padding-block:48px"><div class="wrap">
@@ -285,10 +298,11 @@ details p{margin:8px 0 0;color:var(--muted);max-width:75ch}
 </div></section>
 </main>
 
+<div class="mbar"><a class="btn" href="https://claude.ai/artifact/Gz25gTarUFNBiC4uJ2Uxfs" target="_blank" rel="noopener">Configure your partitions →</a></div>
 <footer><div class="wrap"><span>© 2026 Next Partitions. All rights reserved.</span><span>Terms &amp; Conditions · Privacy Policy</span></div></footer>
 
 <script>
-const DFW_URL="https://claude.ai/artifact/JRhaXC9GfSmJveMYCJPSdL";
+const DFW_URL="https://claude.ai/artifact/Emsk4xQGarEUxTuXLLdm1q";
 // n = approved installers based in the area; r = service radius in miles
 const M=[
  {id:"dfw",name:"Dallas–Fort Worth",short:"DFW",lat:32.84,lon:-96.98,r:55,n:4,rating:4.8,jobs:63,lab:"l",url:DFW_URL,cities:[["Dallas",32.78,-96.80],["Fort Worth",32.75,-97.33],["Arlington",32.74,-97.11],["Plano",33.02,-96.70],["Irving",32.81,-96.95],["Garland",32.91,-96.64],["Frisco",33.15,-96.82],["McKinney",33.20,-96.62],["Grand Prairie",32.75,-97.00],["Denton",33.21,-97.13],["Mesquite",32.77,-96.60],["Carrollton",32.98,-96.89],["Richardson",32.95,-96.73],["Lewisville",33.05,-97.00],["Allen",33.10,-96.67],["Rockwall",32.93,-96.46],["Waxahachie",32.39,-96.85],["Mansfield",32.56,-97.14],["Weatherford",32.76,-97.80]]},
