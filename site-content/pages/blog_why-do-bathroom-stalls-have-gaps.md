@@ -106,6 +106,8 @@ Note that [floor-to-ceiling mounting](/mounting-styles/floor-to-ceiling) on its 
 
 :::expert
 When a buyer asks for no-gap stalls, what's the first question you ask back, and why?
+> I ask whether it's new construction or a retrofit, and what the budget is. No-gap stalls need taller panels, tighter tolerances and good ventilation, so the room has to be able to take them. If it can, I always recommend them. They cost more, but privacy is what people actually want in a restroom.
+— Abe Gold, CEO, Next Partitions
 :::
 
 ## Before you specify a gap-free restroom

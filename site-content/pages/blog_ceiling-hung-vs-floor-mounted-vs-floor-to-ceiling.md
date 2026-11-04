@@ -131,6 +131,8 @@ Overhead braced isn't limited to light use: headrail-braced stainless steel is a
 
 :::expert
 When a buyer has already picked a mounting style, what do you check on site before you agree it will work?
+> For ceiling-hung, I check that there's structural steel above the ceiling to carry the load. For floor-mounted, I check the floor's condition and thickness for anchoring. For floor-to-ceiling, I check that the ceiling height is consistent and level across the whole run. Even when the support is there, I try to talk buyers out of ceiling-hung and floor-mounted, because they're only held at one end.
+— Abe Gold, CEO, Next Partitions
 :::
 
 ## How to choose: a decision guide

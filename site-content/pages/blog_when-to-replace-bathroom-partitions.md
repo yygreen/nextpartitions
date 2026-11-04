@@ -82,6 +82,8 @@ Two limits on repairs:
 
 :::expert
 What's the most common reason customers replace their stalls rather than repair them?
+> Rust on powder-coated steel partitions, usually starting at the panel bottoms and the hardware. Most customers try to repair first, but replacement hardware has to match the old parts exactly, and finding it is so complicated that they end up replacing the stalls. Once a panel rusts through or delaminates, replacing it costs less than fixing it. ADA updates during a renovation are the other common reason.
+— Abe Gold, CEO, Next Partitions
 :::
 
 ## How to replace stalls without changing the layout

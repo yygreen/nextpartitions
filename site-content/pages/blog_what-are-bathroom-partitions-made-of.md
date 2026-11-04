@@ -142,6 +142,8 @@ The [partitions overview](/partitions) compares all five materials side by side.
 
 :::expert
 When a buyer describes their building, what makes you steer them to one material over another, and which detail do buyers tend to overlook?
+> I start with solid plastic (HDPE) or phenolic. Then I ask about moisture and abuse, because pools, locker rooms and schools need one of those two. If the budget is tight and the room is dry, like an office, powder-coated steel does the job. What buyers overlook is the hardware and the fire rating: cheap hinges fail before the panels do, and local code may require a Class A or B rating.
+— Abe Gold, CEO, Next Partitions
 :::
 
 ## Get a quote

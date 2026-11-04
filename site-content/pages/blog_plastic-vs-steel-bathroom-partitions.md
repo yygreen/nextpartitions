@@ -71,6 +71,8 @@ For showers, pools and locker rooms, solid plastic is the safer of the three.
 
 :::expert
 In a busy public restroom, what makes you recommend stainless steel over solid plastic, or the other way round?
+> I almost always recommend solid plastic. It won't rust or dent, it shrugs off moisture and graffiti, and it costs less. Stainless makes sense in high-visibility spaces like airports, stadiums and upscale offices, where the look matters and the budget allows.
+— Abe Gold, CEO, Next Partitions
 :::
 
 ## Fire ratings and the building code

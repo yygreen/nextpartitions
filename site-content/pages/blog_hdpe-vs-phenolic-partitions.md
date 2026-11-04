@@ -61,6 +61,8 @@ This is where the two materials differ most.
 
 :::expert
 When a school asks you to choose between HDPE and phenolic, which do you point them to first, and what would change your answer?
+> I point them to HDPE first. It's vandal-resistant, graffiti wipes off, it's waterproof and it costs less. I'd switch to phenolic if the fire code calls for a Class A rating, or if they want a thinner, more upscale look.
+— Abe Gold, CEO, Next Partitions
 :::
 
 ## Fire ratings and the building code
