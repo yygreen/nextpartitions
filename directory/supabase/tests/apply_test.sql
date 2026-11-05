@@ -304,7 +304,10 @@ update dir_jobs set status = 'cancelled' where id = '20000000-0000-0000-0000-000
 reset role;
 do $$ begin
   assert (select status from dir_jobs where id = '20000000-0000-0000-0000-000000000002') = 'cancelled', 'guard blocked a valid move';
-  assert (select name from dir_areas where slug = 'dallas') = 'Dallas–Fort Worth', 'DFW area not seeded';
+  assert (select name from dir_areas where slug = 'dallas') = 'Dallas', 'Dallas area not seeded';
+  -- Dallas and Fort Worth don't overlap: no Texas city is listed in two areas
+  assert not exists (select 1 from (select unnest(cities) c from dir_areas where state = 'TX') x group by c having count(*) > 1),
+    'a Texas city is listed in two areas';
 end $$;
 
 -- 9. State hubs and areas: public names and rules, internal research notes admin-only.

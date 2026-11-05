@@ -45,7 +45,9 @@ RADIUS = {'orange-county': 15}                     # keep to the county, not Riv
 SAME_STATE = {'long-island'}                       # not Connecticut across the Sound
 EXCLUDE = {'long-island': {'Port Chester'}}        # Westchester, across the Sound
 SKIP = {'oklahoma-city-ok'}  # calendar duplicate of #44 Oklahoma City
-KEEP = {'dallas'}            # already created (Dallas–Fort Worth) by 20261102000000; left as is
+KEEP = {'dallas'}            # created by 20261102000000; left as is
+# Note: 20261105130000_split_dallas_fort_worth.sql later splits Dallas and Fort Worth so their city lists don't
+# overlap (each nearby city goes to the closer centre). Keep that in mind if this file is ever regenerated.
 
 def miles(a, b):
     la1, lo1, la2, lo2 = map(math.radians, (a[0], a[1], b[0], b[1]))
