@@ -42,7 +42,6 @@ export function ServiceAreaView({ states, sample, showUnpublished }: { states: S
                   {live.length ? `Installers in ${live.map((a) => a.name).join(', ')}` : 'Installers coming soon'}
                   {live.length > 0 && upcoming.length > 0 && ` · coming soon in ${upcoming.map((a) => a.name).join(', ')}`}
                   {!live.length && upcoming.length > 0 && ` in ${upcoming.map((a) => a.name).join(', ')}`}
-                  {showUnpublished && upcoming.length > 0 && <span className="ml-1 text-xs font-semibold">(preview links the unpublished pages)</span>}
                 </p>
               </li>
             )
