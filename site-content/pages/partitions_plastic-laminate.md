@@ -1,0 +1,123 @@
+---
+url: /partitions/plastic-laminate
+title: Plastic Laminate Bathroom Partitions: Specs, Fire Class
+meta: Plastic laminate bathroom partitions: HPL over a particleboard core, 1" doors and panels, a typical Class B fire rating, moisture limits and warranties.
+h1: Plastic Laminate Bathroom Partitions
+primary_keyword: plastic laminate bathroom partitions (volume not in repo)
+secondary_keywords: [plastic laminate toilet partitions, laminate toilet partitions, hpl bathroom partitions]
+words: 1,100
+---
+
+# Plastic Laminate Bathroom Partitions
+
+Plastic laminate bathroom partitions bond a decorative high-pressure laminate (HPL) to a wood-based core. Their appeal is color and pattern choice. Their limit is water. This page covers how they are built, the published fire class (Class B or C, not Class A), how warranties differ by brand, and where laminate fits.
+
+[Configure & Request a Quote](/get-a-quote?material=plastic-laminate). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+
+![Contemporary restroom interior with plastic laminate finishes](https://nextpartitions.com/__l5e/assets-v1/275c40f9-fad8-4372-a02c-377581ca4a7f/plastic-laminate.jpg "photo")
+
+## How plastic laminate partitions are built
+
+The core is typically a 45 lb density, resin-impregnated particleboard. Doors and panels are 1" thick, with .050" laminate on the faces and edges. Pilasters are 1" or 1-1/4" thick, depending on the line. Some pilasters have an 11-gauge sheet steel core between two layers of particleboard, with the leveling device welded to the steel. Others are particleboard with no steel core.
+
+Edges vary. Some lines laminate the edge like the faces. Moisture-resistant lines fuse an edge band with the core into a beveled profile, while standard laminate goes without that banding.
+
+![Cross-section of a plastic laminate partition door edge: particleboard core, laminate faces, edge](/images/diagrams/material-section-plastic-laminate.svg)
+
+1. **Core:** resin-impregnated particleboard, 45 lb density.
+2. **Faces:** high-pressure decorative laminate bonded to both faces.
+3. **Edge:** laminate or banding that seals the core. Some lines laminate the edge like the faces; others fuse a beveled band to the core for moisture resistance.
+
+## Fire rating
+
+Published ratings for plastic laminate are Class B or Class C under ASTM E84. Class B is a flame spread index of 26 to 75 (one tested HPL scored 60), and Class C is 76 to 200. So a laminate partition is not always Class B, let alone Class A, and the current page's "Class A standard" doesn't match the published lines. Ask for the rating of the line and decor you pick, and check it against the class your occupancy requires.
+
+## Warranty differs by brand
+
+Published laminate warranties run from 1 year to 5 years. The 2 and 5 years on the current page are both real, for different lines:
+
+- **Length.** Moisture-resistant lines with fused edge banding carry up to 5 years. Other lines usually carry 1 or 2 years.
+- **Coverage.** Typically panels, doors and pilasters against breakage, corrosion, delamination or defects in workmanship, if the partitions are properly installed, used and maintained.
+- **Exclusions.** Vandalism is usually excluded. Spraying down or hosing laminate partitions can void the warranty, and so can installation errors or improper care.
+- **Remedy and hardware.** Some warranties cover material only, with no credit for labor or the cost of replacing parts. Hardware may carry a separate, shorter term, such as 1 year.
+
+Your quote will name the brand, product line and warranty length. Read the warranty text, since coverage for moisture damage in particular varies.
+
+## Moisture, vandal resistance and cleaning
+
+- **Moisture.** The particleboard core may swell when exposed to excessive moisture. Keep laminate in dry, climate-controlled restrooms, not showers, pools or locker rooms. Use [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe) there.
+- **Scratches.** Laminate offers scratch, dent and graffiti resistance at a low cost. A deep scratch can expose the dark kraft paper under the surface.
+- **Cleaning.** A typical care routine: wipe with warm water and very mild soap on a nonabrasive, well wrung-out cloth, rinse and dry with a soft cloth. Never over-saturate laminate or leave it wet, because water can swell the core. No brushes, steel wool or scouring pads, and keep acid, alkali and bleach-based bathroom cleaners off it, rinsing any splash at once. Follow your manufacturer's care instructions.
+
+## Where laminate fits
+
+Offices, retail, restaurants and other dry restrooms where the partitions should coordinate with millwork. Color range is the main advantage, with a wide selection on most lines. Laminate is offered floor anchored, overhead braced and ceiling hung. See the [mounting styles](/mounting-styles).
+
+Ceiling-hung laminate needs ceiling structure that carries the manufacturer's required load. One published requirement is at least 295 lb per high pressure laminate partition.
+
+## What comes with a quote
+
+Our quotes cover panels, doors, pilasters, headrails, hinges, slide latches, keepers, strikes, brackets, pilaster shoes and mounting fasteners. Install according to the manufacturer's instructions and your approved drawings, using a qualified installer.
+
+## FAQ
+
+### What is plastic laminate partition made of?
+High-pressure laminate bonded to a resin-impregnated particleboard core.
+
+### How thick are plastic laminate partitions?
+Doors and panels are typically 1" thick, with .050" laminate on the faces and edges. Pilasters are 1" or 1-1/4", depending on the line.
+
+### Are plastic laminate partitions Class A?
+Not as published. Laminate lines are rated Class B or Class C. Check the rating of the line you pick.
+
+### Can plastic laminate get wet?
+Not continuously. The core may swell with excessive moisture. Use phenolic or HDPE in wet rooms.
+
+### What is the warranty?
+It depends on brand and line. Published terms run from 1 to 5 years: moisture-resistant lines up to 5, others 1 or 2. Hosing down can void it. We confirm it at quote time.
+
+## Sources
+
+- [Bobrick, Toilet Partitions: Commercial (CEU, 2018)](https://www.bobrick.com/wp-content/uploads/SCC-Toilet-Partitions_Commercial.pdf): HPL Class B, flame spread 60. Checked 2026-10-27.
+- [Bobrick CEU, Specifying Code-Compliant Toilet Partitions](https://www.bobrick.com/wp-content/uploads/Bobrick_Toilet-Partitions_CEU.pdf): 45 lb particleboard core, moisture and scratch notes, ASTM E84 classes. Checked 2026-10-27.
+- [Bobrick DesignerSeries HPL](https://www.bobrick.com/products/toilet-partitions-cubicle-systems/traditional-partitions/designerseries-hpl/): 1" doors, stiles and panels, Class B, steel core stiles, laminated HPL edges, 2-year limited warranty. Checked 2026-10-27.
+- [Bobrick 1040 Series technical data sheet](https://www.bobrick.com/wp-content/uploads/1040_td.pdf): 1" thickness, 45 lb particleboard, .050" laminate on surfaces and edges, 11-gauge steel stile core. Checked 2026-10-27.
+- [Bobrick 1550 Series technical data sheet](https://www.bobrick.com/wp-content/uploads/1550_td.pdf): 1" thickness, .050" laminate on surfaces and edges, mounting series 1551, 1552, 1558 (revised 3/30/26). Checked 2026-10-27.
+- [Bobrick Product Warranties and Limitations](https://www.bobrick.com/wp-content/uploads/Product-Warranties.pdf): 2 years on HPL 1040 and 1550, hosing voids it, coverage wording (dated 08/12/26). Checked 2026-10-27.
+- [Bobrick Advisory Bulletin TB-32](https://www.bobrick.com/wp-content/uploads/TB-32.pdf): 295 lb ceiling load. Checked 2026-10-27.
+- [ASI Global Partitions catalog](https://asi-globalpartitions.com/wp-content/uploads/ASI-Global-Partitions-Catalog.pdf): Moisture Guard edge banding, 5-year warranty (2 years for standard laminate), Class C, 48 colors. Checked 2026-10-27.
+- [ASI Global construction features](https://asi-globalpartitions.com/construction-features/): .050" vertical-grade laminate. Checked 2026-10-27.
+- [ASI Global replacement hardware](https://asi-globalpartitions.com/replacement-hardware/): 1-1/4" headrail for laminate. Checked 2026-10-27.
+- [Ammco (All American Metal) plastic laminate warranty](https://allamericanmetal.com/frontend/web/uploads/material/1580234840_PLASTIC-LAMINATE-WARRANTY.pdf): length, coverage, exclusions. Checked 2026-10-27.
+- [Ammco care sheet](https://allamericanmetal.com/frontend/web/uploads/material/1580161899_Caring-for-your-Plastic-laminate-Toilet-Partitions.pdf): cleaning. Checked 2026-10-27.
+- Hardware included with a quote: current site, /partitions. Checked 2026-10-26.
+
+<!-- For Marc -->
+## Corrections to the current page
+
+- "Class A fire rating standard": Bobrick lists HPL as Class B (flame spread 60). Removed; rating now stated per brand.
+- Warranty "2 Years" (table) vs "5-Year Warranty" (feature list): both are real but belong to different lines (ASI Moisture Guard 5, ASI standard laminate 2, Bobrick HPL 2). Now stated per brand and line.
+- "Class A fire rating standard" is wrong for ASI too: ASI lists Moisture Guard laminate as Class C.
+- "Particleboard with PVC edge band": PVC is unsourced; ASI's Moisture Guard banding is described instead.
+- "200+ colors from Wilsonart, Formica and Nevamar", "Hundreds of decors", "Quietest Material": unsourced. Removed. The 48-color palette list is also removed pending verification.
+- "48 Colors in 48 Hours ... ships within 48 hours": a lead-time claim; removed (see below).
+- "Lead Time 10–20 business days": removed.
+- "Lighter weight than steel or HDPE", "Particleboard core dampens door slams": unsourced. Removed.
+- "Available in all mounting styles": narrowed to what the sources show.
+- "Every order includes everything you need for installation": reworded. CTA now "Configure & Request a Quote".
+
+## To verify when sources are reachable
+
+| Claim | Where it's from | Source to check |
+|---|---|---|
+| Hadrian HPL warranty; ASI warranty coverage wording | Only lengths for Bobrick (document) and ASI (catalog) are held | Hadrian, ASI warranty documents (checked 2026-10-27: not found; the ASI warranty page loads with no text, hadrian-inc.com returned 403) |
+| Class A or B for Ammco and Hadrian laminate | Not in repo | Spec sheets (checked 2026-10-27: not found; ASI is Class C, Bobrick Class B) |
+| Laminate brands (Wilsonart, Formica, Nevamar), 200+ decors | Current page | Ammco (checked 2026-10-27: not found in the ASI catalog or Bobrick pages; ASI's Moisture Guard range is 48 colors) |
+| "48 colors in 48 hours" | Current page | Confirm with Abe (checked 2026-10-27: ASI's catalog says 48 colors ship in 48 hours, floor anchored/overhead braced only; whether Abe's stock matches is for Abe) |
+| Lead time 10–20 business days | Current page | Confirm with Abe (checked 2026-10-27: not a manufacturer question) |
+
+## Implementation notes
+
+- Structured data: FAQPage (5), BreadcrumbList.
+- Images wanted: laminate door edge close-up; a coordinated millwork restroom.
+- Body text is brand-neutral (rewritten 2026-10-30): facts are stated as what manufacturers generally specify; the Sources list keeps the attribution.
