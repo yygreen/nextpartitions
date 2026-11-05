@@ -30,16 +30,19 @@ export function ServiceAreaView({ states, sample, showUnpublished }: { states: S
     <>
       <SampleBanner show={sample} />
       <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Installers' }]} title="Bathroom Partition Installers by State"
-        lead="Checked, insured installers for partitions you buy from Next Partitions. Choose your state for local installers and the rules for who may install partitions there." />
+        lead="We ship commercial toilet partitions to every state. Installers are listed area by area: checked, insured installers for partitions you buy from Next Partitions. Choose your state for local installers and the rules for who may install partitions there." />
       <main className={`${WRAP} py-10 grid gap-10`}>
         <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {states.map(({ state, live, upcoming }) => {
-            const named = showUnpublished ? [...live, ...upcoming] : live
             return (
               <li key={state.slug} className="bg-card border border-border rounded-lg p-4 grid gap-1 content-start">
                 <h2 className="text-lg font-bold"><a className="hover:underline" href={stateHref(state.slug)}>{state.name}</a></h2>
                 <p className="text-sm text-muted-foreground">
-                  {named.length ? `Installers in ${named.map((a) => a.name).join(', ')}` : upcoming.length ? `Installers coming soon in ${upcoming.map((a) => a.name).join(', ')}` : 'Partitions shipped statewide'}
+                  {/* Shipping is nationwide (said once, above); a card only says where installers are. */}
+                  {live.length ? `Installers in ${live.map((a) => a.name).join(', ')}` : 'Installers coming soon'}
+                  {live.length > 0 && upcoming.length > 0 && ` · coming soon in ${upcoming.map((a) => a.name).join(', ')}`}
+                  {!live.length && upcoming.length > 0 && ` in ${upcoming.map((a) => a.name).join(', ')}`}
+                  {showUnpublished && upcoming.length > 0 && <span className="ml-1 text-xs font-semibold">(preview links the unpublished pages)</span>}
                 </p>
               </li>
             )
@@ -89,14 +92,15 @@ export function StateHubView({ state, info, areas, counts, sample, showUnpublish
   const live = areas.filter((a) => a.published || showUnpublished)
   const upcoming = areas.filter((a) => !a.published && !showUnpublished)
   const first = live[0]
+  const published = areas.filter((a) => a.published).length
   return (
     <>
       <SampleBanner show={sample} />
       <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Installers', href: installersHref() }, { label: state.name }]}
         title={`Bathroom Partition Installers in ${state.name}`}
-        lead={live.length
-          ? `Price your toilet partitions with us, and we match the job with approved, insured installers in ${live.length} ${state.name} area${live.length === 1 ? '' : 's'}. You deal with one team from quote to installed restroom.`
-          : `We ship commercial toilet partitions anywhere in ${state.name}. Price your partitions now; we're adding approved local installers area by area.`}>
+        lead={published
+          ? `Price your toilet partitions with us, and we match the job with approved, insured installers in ${published} ${state.name} area${published === 1 ? '' : 's'}. You deal with one team from quote to installed restroom.`
+          : `We ship commercial toilet partitions nationwide, including anywhere in ${state.name}. Price your partitions now; we're adding approved local installers area by area.`}>
         {total > 0 && <p className="text-sm text-primary-foreground/70">{total} verified installer{total === 1 ? '' : 's'} in {state.name}</p>}
       </Hero>
       <main className={`${WRAP} py-10 grid gap-10`}>
@@ -120,7 +124,7 @@ export function StateHubView({ state, info, areas, counts, sample, showUnpublish
         {upcoming.length > 0 && (
           <section aria-labelledby="upcoming" className="grid gap-2">
             <h2 id="upcoming" className="text-xl font-bold">Installers coming soon</h2>
-            <p className="text-muted-foreground">We're lining up approved installers in {upcoming.map((a) => a.name).join(', ')}. Partitions ship there now.</p>
+            <p className="text-muted-foreground">We're lining up approved installers in {upcoming.map((a) => a.name).join(', ')}. We already ship partitions there, as we do everywhere in the US.</p>
           </section>
         )}
         <StateRules name={state.name} info={info} />
