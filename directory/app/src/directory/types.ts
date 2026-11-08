@@ -26,6 +26,7 @@ export interface Area {
   stateSlug: string
   center: { lat: number; lng: number }
   cities: string[]
+  places?: { name: string; lat: number; lng: number }[] // city centres for the coverage map (optional)
   published: boolean // the page goes public once 3+ installers are listed
   local: LocalRule | null
 }

@@ -141,7 +141,7 @@ function Start() {
   const steps: { done?: boolean; title: string; who: string; text: ReactNode; links: Link[] }[] = [
     { title: 'A customer finds you', who: 'Customer',
       text: 'Someone searches "toilet partition installers Dallas". They land on the area page, which starts with pricing the partitions and then shows checked local installers.',
-      links: [['Homepage idea (for Marc)', HOMEPAGE], ['Texas hub', stateHref('texas')], ['Dallas–Fort Worth page', areaHref('texas', 'dallas')], ['Installer profile', installerHref('acme')]] },
+      links: [['Homepage idea (for Marc)', HOMEPAGE], ['Texas hub', stateHref('texas')], ['Dallas page', areaHref('texas', 'dallas')], ['Fort Worth page', areaHref('texas', 'fort-worth')], ['Installer profile', installerHref('acme')]] },
     { title: 'They price the restroom and ask for a quote', who: 'Customer',
       text: <>On the area page they answer a few questions and see a price range for partitions and installation, then send the quote request through the configurator as it works today. An example customer in Plano has already done this: their request is job <b>NP-DFW-1048</b>.</>,
       links: [['Price your restroom', `${areaHref('texas', 'dallas')}?installer=acme#configure`]] },

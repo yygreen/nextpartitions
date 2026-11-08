@@ -3,6 +3,7 @@
 import { areaHref, configuratorHref, homeHref, installersHref, stateHref } from './links'
 import { AreaInstallers } from './components/AreaInstallers'
 import { ConfigureStart } from './components/ConfigureStart'
+import { CoverageMap } from './components/CoverageMap'
 import { MobileConfigureBar, StartConfigure } from './components/StartConfigure'
 import { Breadcrumbs, Disclaimer, SampleBanner, Stars } from './components/ui'
 import type { StateHubData, StateSummary } from './hub'
@@ -12,15 +13,20 @@ import { type Area, type Installer, labelsFor, MATERIAL_LABEL, MOUNTING_LABEL, N
 const WRAP = 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'
 
 // Dark page header band, as on the live /service-area page.
-export function Hero({ crumbs, title, lead, children }: { crumbs: { label: string; href?: string }[]; title: string; lead: string; children?: React.ReactNode }) {
+export function Hero({ crumbs, title, lead, children, aside }: { crumbs: { label: string; href?: string }[]; title: string; lead: string; children?: React.ReactNode; aside?: React.ReactNode }) {
+  const text = (
+    <div className="grid gap-3 content-start">
+      <Breadcrumbs items={crumbs} onDark />
+      <h1 className="text-3xl md:text-4xl font-black mt-2 max-w-[24ch]">{title}</h1>
+      <p className="text-lg text-primary-foreground/80 max-w-[62ch]">{lead}</p>
+      {children}
+    </div>
+  )
   return (
     <section className="bg-primary text-primary-foreground">
-      <div className={`${WRAP} py-10 md:py-12 grid gap-3`}>
-        <Breadcrumbs items={crumbs} onDark />
-        <h1 className="text-3xl md:text-4xl font-black mt-2 max-w-[24ch]">{title}</h1>
-        <p className="text-lg text-primary-foreground/80 max-w-[62ch]">{lead}</p>
-        {children}
-      </div>
+      {aside
+        ? <div className={`${WRAP} py-10 md:py-12 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,440px)] items-start`}>{text}{aside}</div>
+        : <div className={`${WRAP} py-10 md:py-12`}>{text}</div>}
     </section>
   )
 }
@@ -162,7 +168,8 @@ export function AreaView({ area, installers, rateCards, preset, sample, unpublis
       {unpublished && <div className="bg-surface-warm border-b border-border text-sm text-center px-4 py-2">Staging preview: this area isn't published yet (it goes live once 3 installers are listed). Not indexed.</div>}
       <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Installers', href: installersHref() }, { label: stateName(area.stateSlug, area.state), href: stateHref(area.stateSlug) }, { label: area.name }]}
         title={`Bathroom Partition Installers in ${area.name}`}
-        lead={`Checked local installers for commercial toilet partitions you buy from Next Partitions. Price your partitions and installation in one place, then choose your installer.`} />
+        lead={`Checked local installers for commercial toilet partitions you buy from Next Partitions. Price your partitions and installation in one place, then choose your installer.`}
+        aside={installers.length > 0 ? <CoverageMap area={area} installers={installers} /> : undefined} />
       <main className={`${WRAP} py-10 grid gap-10`}>
         <ConfigureStart areaSlug={area.slug} areaState={area.stateSlug} areaName={area.shortName} installers={installers} rateCards={rateCards} preset={preset} from="directory" />
         <AreaInstallers area={area} installers={installers} />
