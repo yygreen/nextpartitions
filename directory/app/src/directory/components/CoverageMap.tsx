@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react'
 import type { Area, Installer } from '../types'
-import { ButtonLink } from './ui'
 
 // The area page's coverage illustration: one soft shape for the region our verified installers work in,
 // with its towns lighting up one by one. No installer names, pins, radii or links: it answers "do you
@@ -9,7 +8,7 @@ import { ButtonLink } from './ui'
 
 type Pt = { lat: number; lng: number }
 const W = 460
-const H = 340
+const H = 300
 
 export function milesBetween(a: Pt, b: Pt) {
   const r = Math.PI / 180
@@ -128,7 +127,7 @@ export function CoverageMap({ area, installers, configureHref = '#configure' }: 
         {choice && (choice.covered
           ? <p className="text-sm"><b className="text-[#1f7a4d]">✓ {choice.name} is covered.</b> Configure your partitions, and verified installers price the installation through us.</p>
           : <p className="text-sm"><b>{choice.name} is just outside the shaded area.</b> We ship your partitions there as anywhere in the US. Configure them, and we'll ask nearby installers to price the install.</p>)}
-        <ButtonLink href={configureHref}>Configure your partitions →</ButtonLink>
+        {choice && <a href={configureHref} className="text-sm font-semibold text-brand-red hover:underline">Configure your partitions →</a>}
       </div>
     </div>
   )

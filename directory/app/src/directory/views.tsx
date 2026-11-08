@@ -5,7 +5,7 @@ import { AreaInstallers } from './components/AreaInstallers'
 import { ConfigureStart } from './components/ConfigureStart'
 import { CoverageMap } from './components/CoverageMap'
 import { MobileConfigureBar, StartConfigure } from './components/StartConfigure'
-import { Breadcrumbs, Disclaimer, SampleBanner, Stars } from './components/ui'
+import { Breadcrumbs, ButtonLink, Disclaimer, SampleBanner, Stars } from './components/ui'
 import type { StateHubData, StateSummary } from './hub'
 import { stateName } from './states'
 import { type Area, type Installer, labelsFor, MATERIAL_LABEL, MOUNTING_LABEL, NEW_INSTALLER_NOTE, type RateCard, type Review } from './types'
@@ -25,7 +25,7 @@ export function Hero({ crumbs, title, lead, children, aside }: { crumbs: { label
   return (
     <section className="bg-primary text-primary-foreground">
       {aside
-        ? <div className={`${WRAP} py-10 md:py-12 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,440px)] items-start`}>{text}{aside}</div>
+        ? <div className={`${WRAP} py-10 md:py-12 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] items-center`}>{text}{aside}</div>
         : <div className={`${WRAP} py-10 md:py-12`}>{text}</div>}
     </section>
   )
@@ -169,7 +169,9 @@ export function AreaView({ area, installers, rateCards, preset, sample, unpublis
       <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Installers', href: installersHref() }, { label: stateName(area.stateSlug, area.state), href: stateHref(area.stateSlug) }, { label: area.name }]}
         title={`Bathroom Partition Installers in ${area.name}`}
         lead={`Checked local installers for commercial toilet partitions you buy from Next Partitions. Price your partitions and installation in one place, then choose your installer.`}
-        aside={installers.length > 0 ? <CoverageMap area={area} installers={installers} /> : undefined} />
+        aside={installers.length > 0 ? <CoverageMap area={area} installers={installers} /> : undefined}>
+        <AreaHeroPoints count={installers.length} />
+      </Hero>
       <main className={`${WRAP} py-10 grid gap-10`}>
         <ConfigureStart areaSlug={area.slug} areaState={area.stateSlug} areaName={area.shortName} installers={installers} rateCards={rateCards} preset={preset} from="directory" />
         <AreaInstallers area={area} installers={installers} />
@@ -238,3 +240,26 @@ export function InstallerView({ area, installer: i, rateCards, reviews, sample }
   )
 }
 
+
+// Three short facts and the main action under the area page's intro, so the header reads as one unit beside the
+// coverage card (the card answers "do you cover me?"; this column says what happens next).
+function AreaHeroPoints({ count }: { count: number }) {
+  const points: [string, string][] = [
+    count > 0 ? [`${count} verified installer${count === 1 ? '' : 's'}`, 'Insured, registered, references checked'] : ['Installers being vetted', 'Checked before they can price a job'],
+    ['A price in about 2 minutes', 'Your partitions, plus an installation estimate'],
+    ['One team, quote to install', 'We line up delivery and install dates'],
+  ]
+  return (
+    <div className="grid gap-6 mt-3">
+      <ul className="grid sm:grid-cols-3 gap-4 border-t border-primary-foreground/15 pt-5">
+        {points.map(([title, text]) => (
+          <li key={title} className="grid gap-1">
+            <b className="text-primary-foreground">{title}</b>
+            <span className="text-sm text-primary-foreground/70">{text}</span>
+          </li>
+        ))}
+      </ul>
+      <div><ButtonLink href="#configure" size="lg">Configure your partitions →</ButtonLink></div>
+    </div>
+  )
+}
