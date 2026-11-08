@@ -38,20 +38,11 @@ Painted metal generally carries a Class A interior finish rating. Class A is a f
 
 ## Warranty differs by brand
 
-There is no single powder coated steel warranty. Published terms run from 1 year to 4 years.
-
-- **Coverage.** Typically repair or replacement of panels, doors, pilasters and sometimes hardware against defects in material and workmanship under normal wear and use.
-- **Remedy.** Some warranties cover material only, with no credit for labor or the cost of replacing parts.
-- **Conditions.** Coverage usually depends on proper maintenance. Installation errors, vandalism or improper use or care can void it.
-
-The current page said both 1 year and 3 years. Both are real figures, for different lines. Your quote will name the brand and its warranty.
+Powder coated steel warranties run from 1 to 4 years depending on the brand. They typically cover panels, doors, pilasters and sometimes hardware against defects in material and workmanship. Some cover material only, and vandalism, installation errors or improper care can void them. Your quote names the brand and its warranty.
 
 ## Moisture, vandal resistance and cleaning
 
-- **Moisture.** Steel can rust where the coating is damaged. Rust, dents and scratches are painted metal's weaknesses. Keep it to dry, climate-controlled restrooms; for showers, pools and sustained humidity look at [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe).
-- **Graffiti.** Graffiti is harder to deal with on painted metal than on other materials.
-- **Repainting.** Painted metal can be repainted.
-- **Cleaning.** A typical care routine: wipe with warm water and very mild soap on a nonabrasive, well wrung-out cloth, rinse and dry with a soft cloth. Never scrub with brushes, steel wool or scouring pads, and keep acid, alkali and bleach-based bathroom cleaners off the finish, rinsing off any splash at once. Follow your manufacturer's care instructions.
+Steel can rust where the coating is damaged, and dents, scratches and graffiti are painted metal's weak points, though it can be repainted. Keep it to dry, climate-controlled restrooms; for showers, pools and sustained humidity look at [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe). Clean with warm water and mild soap on a well wrung-out cloth, with no brushes, steel wool, scouring pads or bleach-based cleaners, and follow your manufacturer's care instructions.
 
 ## Where powder coated steel fits
 
@@ -66,13 +57,9 @@ Offices, retail, restaurants, community centers and other dry restrooms where bu
 
 ## ADA stalls
 
-For a wheelchair-accessible compartment the 2010 ADA Standards set a minimum depth of 56 inches for wall-hung toilets and 59 inches for floor-mounted toilets (604.8.1.1). The current page's "60-inch minimum" depth is not the standard's figure. Doors need a 32-inch minimum clear opening and must be self-closing (604.8.1.2). See the [ADA compliance guide](/guides/ada-compliance) and [stall dimensions](/guides/bathroom-stall-dimensions).
+For a wheelchair-accessible compartment the 2010 ADA Standards set a minimum depth of 56 inches for wall-hung toilets and 59 inches for floor-mounted toilets (604.8.1.1). Doors need a 32-inch minimum clear opening and must be self-closing (604.8.1.2). See the [ADA compliance guide](/guides/ada-compliance) and [stall dimensions](/guides/bathroom-stall-dimensions).
 
 *Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.*
-
-## What comes with a quote
-
-Our quotes cover panels, doors, pilasters, headrails, hinges, slide latches, keepers, strikes, brackets, pilaster shoes and mounting fasteners. Install according to the manufacturer's instructions and your approved drawings, using a qualified installer. Need help? Call [1-833-997-7489](tel:1-833-997-7489).
 
 ## FAQ
 

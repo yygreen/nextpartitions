@@ -38,22 +38,13 @@ Fire-rated options vary by manufacturer. Some lines pass NFPA 286 as standard. O
 
 What to do: specify the fire-rated version, ask for the test report for the exact color and thickness, and confirm the requirement with your local building official. Tell us at quote time that you need a fire-rated product.
 
-## Warranty: set by the line, not a generic one
+## Warranty: set by the line
 
-Published HDPE warranties run from 15 to 25 years, and 25 years is common. Coverage wording can differ even between one manufacturer's documents:
-
-- A guide specification may ask for a warranty against breakage, corrosion and delamination under normal conditions.
-- The warranty document itself may cover only defects in material and workmanship under normal use that result in breakage or delamination, with no mention of corrosion.
-
-Typical conditions: the warranty goes to a business or other commercial purchaser, applies only if the partitions are installed to the manufacturer's written instructions, and covers only the original installation. Damage from vandalism, misuse, neglect, extraordinary wear and tear, or movement of the building is excluded. The remedy is repair, replacement or refund, and labor and removal costs usually aren't covered. Some warranties cover material only and are voided by installation errors or improper care. Read the warranty document for the line you choose, including exclusions.
+HDPE warranties run from 15 to 25 years, and 25 is common. They typically cover breakage and delamination from defects in material and workmanship, for the original commercial installation done to the manufacturer's written instructions. Vandalism, misuse, neglect and building movement are excluded, and labor and removal usually aren't covered. Read the warranty for the line you choose, including its exclusions.
 
 ## Moisture, vandal resistance and cleaning
 
-- **Moisture.** Solid plastic is highly resistant to common cleaning agents, moisture, mildew and graffiti, and it won't easily dent, rust or delaminate.
-- **Graffiti.** Graffiti usually wipes off with a common, nonabrasive cleaner. Xylene-based markers are the exception: they can "ghost" into the plastic.
-- **Cleaning.** A typical care routine: wipe with warm water and mild liquid soap, and hose down if needed. Any mild commercial cleaner works for tougher stains. Remove the clear protective coating after installation; mild soap, or mineral spirits for stubborn residue, cleans off what is left. Use no abrasive pads or caustic solutions. Follow your manufacturer's care instructions.
-- **Surface.** HDPE is the softest surface of the common partition materials, so it scratches easily. The color runs through, so a scratch doesn't show a different layer. We don't hold manufacturer guidance on sanding HDPE, so we don't recommend it.
-- **Color range.** HDPE's color range is more limited than laminate's.
+Solid plastic resists moisture, mildew, cleaning agents and graffiti, and won't easily dent, rust or delaminate. Graffiti usually wipes off with a nonabrasive cleaner; xylene-based markers are the exception and can "ghost" into the plastic. It's the softest of the common materials and scratches easily, but the color runs through, so a scratch doesn't show a different layer. Clean with warm water and mild soap (hosing down is fine), with no abrasive pads or caustic cleaners. Its color range is narrower than laminate's.
 
 ## Mounting
 
@@ -67,10 +58,6 @@ HDPE is not offered in every mounting style. Typical lines offer floor mounted o
 ## Where HDPE fits
 
 Schools, universities, gyms, locker rooms, pool and shower areas, and public restrooms where moisture and graffiti are the main concerns, provided the fire-rated version is specified. Compared with [phenolic](/partitions/phenolic), HDPE is one piece, 1" thick, with different fire-test rules. Compared with [powder coated steel](/partitions/powder-coated-steel), it can't rust.
-
-## What comes with a quote
-
-Our quotes cover panels, doors, pilasters, headrails, hinges, slide latches, keepers, strikes, brackets, pilaster shoes and mounting fasteners. Install according to the manufacturer's instructions and your approved drawings, using a qualified installer.
 
 *Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.*
 

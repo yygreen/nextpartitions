@@ -54,11 +54,9 @@ Finishes follow the rest of the hardware. Common pulls are chrome-plated zamak, 
 
 ## Coat hooks, bumpers and door stops
 
-**Coat hooks.** Section 604.8.3 of the 2010 ADA Standards requires coat hooks in accessible compartments to be within one of the reach ranges in section 308. For an unobstructed forward or side reach, that is 48" maximum and 15" minimum above the floor (308.2.1, 308.3.1). Installation guides use the same 48" figure. Some lines furnish a clothes hook with every door.
-
-**Bumpers.** On an inswing door, the bumper is usually built into the coat hook, and some latches have a rubber bumper that does the same job. Place it so it strikes the wall before any other part of the door. Outswing doors get a separate bumper.
-
-**Door stops.** On some systems, the latch track stops an inswing door swinging out past the stile, and the keeper stops an outswing door swinging in. A separate door stop is often an option, including on continuous-hinge models. Some specs call for a door stop on outswing accessible doors. If a door swings past the pilaster, check the keeper and stop before replacing the hinges.
+- **Coat hooks:** in an accessible compartment, within reach range: 15" to 48" above the floor for an unobstructed reach (2010 ADA Standards 604.8.3, 308). Some lines include a hook with every door.
+- **Bumpers:** on an inswing door, usually built into the coat hook, placed so it strikes the wall first. Outswing doors get a separate bumper.
+- **Door stops:** often the latch track or keeper stops the door; a separate stop is an option on many lines, and some specs require one on outswing accessible doors. If a door swings past the pilaster, check the keeper and stop before replacing hinges.
 
 *Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.*
 

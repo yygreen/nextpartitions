@@ -45,20 +45,11 @@ Under ASTM E84, classes go by flame spread index: Class A is 25 or less, Class B
 
 ## Warranty differs by brand
 
-There is no single phenolic warranty. Published terms run from 3 years to 25 years, and many lines carry 25. Read the full warranty text before you specify.
-
-- **Coverage.** Most warranties cover panels, doors and pilasters against some mix of breakage, corrosion, delamination, discoloration and defects in workmanship.
-- **Conditions.** Coverage usually depends on proper installation, use and maintenance. Vandalism is typically excluded, and installation errors or improper care can void it.
-- **Remedy.** Usually repair or replacement of the defective material. Some warranties cover material only, with no credit for labor or the cost of replacing parts.
-- **Hardware.** Often carries its own term, which can be shorter or longer than the panels': from 1 year up to lifetime on stainless steel hardware.
-
-Whatever a different site or older page says, warranty length and coverage are set by the brand and product line you buy. We'll state the warranty for your line in your quote.
+Phenolic warranties run from 3 to 25 years depending on the line, and 25 is common. They usually cover panels, doors and pilasters against breakage, corrosion and delamination when the partitions are installed and cared for properly. Vandalism and installation errors are excluded, some warranties cover material only (no labor), and hardware often carries its own term. Your quote names the line and its warranty; [compare warranties across materials](/partitions).
 
 ## Moisture, vandal resistance and cleaning
 
-- **Moisture.** Manufacturers position phenolic for showers, pools, saunas and other wet areas. Water resistance and hardness are among its strengths.
-- **Dents, scratches and graffiti.** Phenolic resists dents, scratches and graffiti. The caveat is on black core material: a deep scratch can expose the black core. Don't count on sanding to hide damage.
-- **Cleaning.** A typical care routine: wipe with warm water and very mild soap on a nonabrasive cloth, rinse and dry with a soft cloth. The solid core isn't harmed by water, and some manufacturers allow hosing down. No brushes, steel wool or scouring pads, and keep acid, alkali and bleach-based bathroom cleaners off it, rinsing any splash at once. Care rules differ by brand (hosing down can void some laminate warranties), so follow your manufacturer's care instructions.
+Phenolic is made for wet areas: manufacturers position it for showers, pools, saunas and locker rooms. It resists dents, scratches and graffiti, though a deep scratch on black core material exposes the black core. Clean with warm water and mild soap on a soft cloth, never abrasive pads or acid, alkali or bleach-based cleaners, and follow your manufacturer's care instructions (some allow hosing down).
 
 ## Where phenolic fits
 
@@ -76,10 +67,6 @@ Phenolic is available in all four mounting styles from at least one brand we car
 ## Compare with other materials
 
 [Powder coated steel](/partitions/powder-coated-steel) and [stainless steel](/partitions/stainless-steel) use a honeycomb core and can dent. [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that can swell in wet rooms. See the [materials overview](/partitions) to compare all five.
-
-## What comes with a quote
-
-Our quotes cover panels, doors, pilasters, headrails, hinges, slide latches, keepers, strikes, brackets, pilaster shoes and mounting fasteners. Install according to the manufacturer's instructions and your approved drawings, using a qualified installer.
 
 *Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.*
 

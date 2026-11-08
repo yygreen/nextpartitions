@@ -23,11 +23,10 @@ In the front view, the pilaster tops are free and every pilaster stands on its o
 
 Without a headrail, each pilaster has to stay rigid on its own anchors.
 
-- **Anchoring device:** typically a steel leveling bar bolted to the bottom of the pilaster, with threaded rods, hex nuts, washers and an expansion shield set in the floor.
-- **Anchor depth:** anchors need at least 2" of penetration into structural concrete, typically at least 3" thick. Specs set floor-anchored units at no less than 2" into the structural floor, compared with 1-3/4" for overhead-braced units.
-- **Wider pilasters:** a pilaster (stile) at least 8" wide is recommended for floor-anchored compartments.
-- **Shoe:** a stainless steel shoe, typically about 4" high, covers the anchor and leveling hardware.
-- **Shorter pilasters:** with no headrail to reach, a floor-anchored pilaster is typically around 69" high, compared with about 83" for overhead braced. Heights vary by manufacturer. Doors are hung so their tops are level with the tops of the pilasters.
+- **Anchoring:** a steel leveling bar under the pilaster, bolted to expansion anchors at least 2" into structural concrete (typically at least 3" thick).
+- **Wider pilasters:** at least 8" wide is recommended.
+- **Shoe:** a stainless shoe, about 4" high, covers the anchor and leveling hardware.
+- **Shorter pilasters:** typically around 69" high (about 83" for overhead braced), with the door tops level with the pilaster tops.
 
 The pilaster foot shows how the anchor, leveling bar and shoe fit together.
 

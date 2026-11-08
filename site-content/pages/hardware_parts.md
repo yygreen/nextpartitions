@@ -42,8 +42,6 @@ The front view below names the main parts of a run of stalls; the table lists th
 | Floor and ceiling anchors, leveling bolts | Anchor and level pilasters | Steel hardware; varies by brand |
 | Through-bolts, sex bolts, barrel nuts, tamper-resistant screws | Fasten hardware to panels and pilasters | Stainless steel |
 
-The materials above come from current manufacturer literature. Bracket parts are commonly sold as single-ear and double-ear sets, U-brackets, alcove brackets, aluminum and stainless continuous brackets, headrail return sets and pilaster mounting kits. Brackets come in stainless steel, aluminum and chrome-plated zamac. Shoes are usually stainless steel, and some HDPE systems use molded HDPE pilaster sleeves.
-
 ## How thick are bathroom stall partitions?
 
 Bracket and headrail sizes follow the panel and pilaster thickness, so measure before you request parts. Typical figures from manufacturers:
@@ -55,7 +53,7 @@ Bracket and headrail sizes follow the panel and pilaster thickness, so measure b
 | Solid plastic (HDPE) | 1" | 1" | 1" |
 | Phenolic / compact laminate | 1/2" | 3/4" | 3/4" |
 
-Anti-grip headrails are often sized by pilaster thickness, for example 1-1/4" for powder coated, stainless steel and plastic laminate, 1" for solid plastic and 3/4" for phenolic. That is a quick way to confirm which headrail you need. Thickness can vary on older or custom systems, so check yours with a tape at the edge.
+Headrails are sized to the pilaster thickness, so the table also tells you which headrail you need. Older or custom systems vary, so check yours with a tape at the edge.
 
 ## Brackets: standard vs. continuous
 
@@ -111,7 +109,7 @@ Most commercial partitions use tamper-resistant fasteners, such as stainless ste
 6. **Quantity**, and whether you need fasteners.
 7. **Hand**, for a pilaster, door or hinge: inswing or outswing, and the hinge side seen from outside the stall (see the plans below).
 
-To read the hand, stand outside the stall and face the door. The plans show the four cases from above, hinge side in orange. On many lines a part is ordered as RH or LH, and one part covers two cases: right-hand inswing and left-hand outswing are both RH, left-hand inswing and right-hand outswing both LH.
+To read the hand, stand outside the stall facing the door. Parts are often ordered as RH or LH, and one part covers two cases (hinge side in orange):
 
 ![Door hand seen from above: right-hand inswing and left-hand outswing (RH), left-hand inswing and right-hand outswing (LH)](/images/diagrams/door-hand.svg)
 
@@ -122,7 +120,7 @@ To read the hand, stand outside the stall and face the door. The plans show the 
 
 [Contact Us](/contact) for replacement parts.
 
-If many parts are failing at once, pricing a new system may make more sense. [Get a quote](/get-a-quote). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+If many parts are failing at once, a new system may cost less overall. [Get a quote](/get-a-quote).
 
 ## FAQ
 

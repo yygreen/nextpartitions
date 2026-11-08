@@ -33,27 +33,14 @@ The drawing shows three of the types in the table below: a gravity (cam) hinge, 
 | Integral hinge | Hinge formed from the door and pilaster material itself | Some solid plastic (HDPE) lines |
 | Continuous hinge | One-piece hinge running the full height of the door; cam (gravity) or spring type | Upgrade option from many manufacturers |
 
-### Gravity (cam) hinges
+### What to know about each
 
-The most common partition hinge has a pin at the top of the door and an adjustable cam at the bottom. Details vary by manufacturer:
-
-- **Top pin:** runs through the door and bracket in a nylon bushing or insert. Some use a 3/8" chrome-plated steel pin.
-- **Bottom hinge:** sits on a box cam and nylon pintle. Some use a no-rise, self-closing concealed cam.
-- **Adjustment:** the cam is adjustable, and often replaceable, so the door of an empty stall can rest partly open or fully closed.
-
-No spring is involved, which is why these hinges are sometimes called gravity hinges.
-
-At the bottom of the door, the box cam in the door's hinge rests on the cam pintle of the bracket fixed to the pilaster. The locking nut under the bracket holds the rest position, so that is where you adjust it.
+- **Gravity (cam):** a pin at the top of the door (in a nylon bushing) and an adjustable, often replaceable cam at the bottom that sets where the door of an empty stall rests, partly open or closed. There's no spring. The box cam rests on the bracket's cam pintle, and the locking nut under the bracket holds the setting.
 
 ![Bottom of a gravity hinge: box cam, cam pintle and locking nut](/images/diagrams/hinge-detail-cam.svg)
 
-### Wrap-around hinges
-
-Wrap-around hinges mount on the surface, with flanges that wrap around the door edge and the pilaster edge, and they are through-bolted for vandal resistance. On solid plastic they are typically 8-inch extruded aluminum, running on field-adjustable nylon cams set in 30-degree steps. Cast aluminum versions exist too. Metal partitions use chrome-plated zamac or stainless versions, and heavier wrap-around hinges are made for phenolic and HDPE.
-
-### Continuous hinges
-
-A continuous (piano) hinge runs the full height of the door. They come in cam (gravity) and spring types, in aluminum or stainless steel. Stainless versions are often one-piece, 16-gauge (1.6 mm) Type-304. Lengths vary; 54" is one listed size. A gravity-type continuous hinge relies on door weight to close, which can make the door slam. One trade-off to check: emergency access may not work with continuous spring hinges.
+- **Wrap-around:** surface-mounted and through-bolted for vandal resistance. On solid plastic they're typically 8-inch extruded aluminum on nylon cams that adjust in 30-degree steps; metal partitions use chrome-plated zamac or stainless versions.
+- **Continuous (piano):** full height, cam or spring type, in aluminum or one-piece Type-304 stainless. A gravity version can let the door slam, and emergency access may not work with spring versions.
 
 ## Rest position and self-closing doors
 
@@ -67,18 +54,16 @@ Gravity and cam hinges let you choose where the door rests:
 
 ## How to adjust bathroom partition doors
 
-Before you replace a hinge, try adjusting it. Manufacturers' instructions put the adjustment at the bottom hinge cam:
+Before you replace a hinge, try adjusting it at the bottom cam:
 
-1. **Find the adjustment.** On metal partitions, the lowest point of the cam pintle usually sets the rest position. On many HDPE hinges, you loosen the adjusting nut on the bottom hinge and turn the cam. Some wrap-around hinges adjust in 30° steps. Check your data sheet for cam settings.
-2. **Lift the door off if needed.** On gravity hinges, the door sits on the bottom cam and the top pin goes in from above.
+1. **Find the adjustment.** On metal partitions the cam pintle's low point sets the rest position; on many HDPE hinges you loosen the bottom adjusting nut and turn the cam (some in 30° steps).
+2. **Lift the door off if needed.** On gravity hinges the top pin comes out upward.
 3. **Set the position, then tighten** the locking nut.
-4. **Clean and lubricate.** Regular cleaning and lubrication help prevent hinge failure. Use a PTFE-based lubricant, not machine oil or WD-40, which collect dust and dirt.
-
-For step 2, the top pin comes out upward. It runs through the door and the top hinge bracket, turns in a nylon bushing, and sits flush with the top of the door.
+4. **Clean and lubricate** with a PTFE-based lubricant, not machine oil or WD-40, which collect dirt.
 
 ![Top of a gravity hinge: hinge pin and nylon bushing](/images/diagrams/hinge-detail-top-pin.svg)
 
-If the door won't latch after adjusting, check the keeper and strike alignment too. See [Locks & Latches](/hardware/locks-latches). Follow your manufacturer's installation guide, and have a qualified installer handle work you aren't comfortable doing.
+If the door still won't latch, check the keeper and strike ([Locks & Latches](/hardware/locks-latches)). Follow your manufacturer's guide, or use a qualified installer.
 
 ## When to replace a hinge
 

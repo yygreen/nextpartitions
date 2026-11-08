@@ -67,10 +67,6 @@ Most warranties cover defects in material and workmanship, and some name breakag
 
 All five can be quoted in several mounting styles. Compare [overhead braced](/mounting-styles/overhead-braced), [floor mounted](/mounting-styles/floor-mounted), [ceiling hung](/mounting-styles/ceiling-hung) and [floor to ceiling](/mounting-styles/floor-to-ceiling). HDPE is generally not offered floor mounted, and not every line offers every style.
 
-## What comes with a quote
-
-Panels, doors, pilasters, headrails, hinges, slide latches, keepers, strikes, brackets, pilaster shoes and all mounting fasteners. Install according to the manufacturer's instructions and your approved drawings, using a qualified installer.
-
 ## ADA stalls
 
 Accessible stalls follow the 2010 ADA Standards: compartment depth of 56" or 59" minimum (604.8.1.1), a 32" minimum clear door opening and self-closing doors (604.8.1.2). See the [ADA compliance guide](/guides/ada-compliance).

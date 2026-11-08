@@ -22,16 +22,16 @@ In the front view, the pilasters hang from steel above the ceiling and stop shor
 2. **Hanger:** from the steel into each pilaster
 3. **Clear floor:** nothing touches it
 
-- **Overhead support (by others):** a steel member above the finished ceiling at every pilaster, such as an I-beam, channel or angle. Installation guides call for a C channel at the ceiling that isn't included. None of this is supplied with the partitions.
-- **Ceiling anchor assembly:** typically a threaded rod, hex nuts, washers, a shoe retainer and an expansion anchor. The pilaster hangs from the rod and is leveled with the nuts.
-- **Cover at the ceiling:** a stainless steel shoe or sleeve, typically about 4" high, hides the hanger where the pilaster meets the ceiling.
-- **Pilasters:** ceiling-hung pilasters are typically 83" high for an 8' ceiling and made to length for ceilings up to about 10'. A pilaster at least 8" wide is recommended.
+- **Overhead support (by others):** a steel member above the ceiling at every pilaster (I-beam, channel or angle). It isn't supplied with the partitions.
+- **Ceiling anchor assembly:** a threaded rod with nuts and washers; the pilaster hangs from it and is leveled with the nuts.
+- **Ceiling cover:** a stainless shoe, about 4" high, hides the hanger.
+- **Pilasters:** typically 83" for an 8' ceiling, made to length up to about 10'; at least 8" wide is recommended.
 
 At the top of each pilaster, a rod runs from the steel above through the ceiling.
 
 ![Hanger: rod from the I-beam into the pilaster](/images/diagrams/mounting-ceiling-hung-detail-hanger.svg)
 
-The key rule: anchoring assemblies connect to structural support above the finished ceiling and carry the pilasters without passing any load to the finished ceiling. The ceiling tile or drywall carries nothing. Panels and doors attach to the pilasters with U-brackets, as in every style.
+The key rule: the hangers carry the pilasters from the structure above, and the ceiling tile or drywall carries nothing. Panels and doors attach to the pilasters with U-brackets, as in every style.
 
 ![U-bracket holding a panel to a pilaster, seen from above](/images/diagrams/mounting-ceiling-hung-detail-bracket.svg)
 

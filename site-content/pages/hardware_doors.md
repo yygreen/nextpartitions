@@ -54,9 +54,7 @@ Write down the measurements to the nearest 1/16" and send a photo with the tape 
 
 ## Swing and hand
 
-Tell us whether the door swings **in** or **out** of the stall, and which side the hinges are on when you stand outside facing the door. Hinges and continuous hinges are often handed. A continuous hinge, for instance, may come in one version for left-hand inswing or right-hand outswing, and another for the opposite.
-
-The four plans below show each case seen from above, with you standing outside the stall at the bottom; the hinge side is orange. On many lines one door is made for two cases, so it is ordered as RH or LH: a right-hand inswing door turned over is a left-hand outswing door (both RH), and the same goes for left-hand inswing and right-hand outswing (both LH). Follow your shop drawings and the manufacturer's instructions.
+Tell us whether the door swings **in** or **out** of the stall, and which side the hinges are on when you stand outside facing the door (hinges are often handed too). On many lines one door covers two cases and is ordered as RH or LH; the plans show all four from above, hinge side in orange.
 
 ![Door hand seen from above: right-hand inswing and left-hand outswing (RH), left-hand inswing and right-hand outswing (LH)](/images/diagrams/door-hand.svg)
 
@@ -96,7 +94,7 @@ Ask whether your replacement door comes drilled for your existing hinges and lat
 
 [Contact Us](/contact) to request replacement doors.
 
-Replacing more than a door or two, or changing the layout? A full partition quote may be the better comparison. [Get a quote](/get-a-quote). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+Replacing more than a door or two, or changing the layout? Compare with a full partition quote: [Get a quote](/get-a-quote).
 
 ## FAQ
 

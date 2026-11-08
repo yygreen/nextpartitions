@@ -52,14 +52,7 @@ Partition hardware is not universal. Hinge and latch hole patterns, pilaster thi
 4. **Door swing and hand**: inswing or outswing, and which side the hinges are on, viewed from outside the stall.
 5. **Photos**: the whole stall, the hinge, the latch and keeper, and the bracket or shoe you need, with a tape measure in the shot.
 
-If you need a bracket, compare it with these common shapes, each seen facing the wall and from above. On many lines the opening is 3/4" for pilasters and 1/2" for panels on phenolic; measure yours. See [Replacement Parts](/hardware/parts) for more.
-
-![Partition bracket types, facing the wall and seen from above: one-ear stirrup, two-ear stirrup, continuous ear bracket and continuous U-bracket](/images/diagrams/bracket-types.svg)
-
-1. **One-ear stirrup bracket:** a short bracket fixed to the wall through one ear. At an end panel or pilaster the ear faces into the stall.
-2. **Two-ear stirrup bracket:** fixed through an ear on each side.
-3. **Continuous ear bracket:** runs the height of the joint, fixed through its ear; holds a pilaster.
-4. **Continuous U-bracket:** runs the height of the panel, fixed through its back; holds a panel.
+Need a bracket? Compare yours with the common shapes on [Replacement Parts](/hardware/parts).
 
 ### Typical thickness by material
 

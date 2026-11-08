@@ -508,7 +508,8 @@ ${isCat ? '' : srcHtml}
 <h3 class="font-bold mb-2">${ctaHref === '/contact' ? 'Need replacement parts?' : 'Planning a restroom?'}</h3>
 <p class="text-sm text-muted-foreground mb-4">${ctaHref === '/contact' ? 'Send us a photo, your brand and a few measurements, and we will find the match.' : 'Send your layout or drawings, or price it in the configurator.'}</p>
 ${button(ctaLabel, ctaHref, 'w-full')}
-<p class="text-xs text-muted-foreground mt-4">${QUOTE_PROMISE}</p>
+${ctaHref === '/contact' ? '' : '<p class="text-xs text-muted-foreground mt-4">Quotes include panels, doors, pilasters, headrails, hinges, latches, brackets, shoes and fasteners.</p>'}
+<p class="text-xs text-muted-foreground mt-2">${QUOTE_PROMISE}</p>
 </div></aside>
 </div>
 ${shell.match(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/section>/)[0]}

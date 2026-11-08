@@ -10,7 +10,7 @@ words: 1,200
 
 # Stainless Steel Bathroom Partitions
 
-Stainless steel bathroom partitions use the same sandwich as powder coated steel, with a stainless skin: stainless faces over a honeycomb core. Their strengths are corrosion resistance, cleanliness, design appeal and a Class A rating. This page covers how stainless partitions are built, the published fire class, how warranties differ by brand, and the pool-area caution the current page got wrong.
+Stainless steel bathroom partitions use the same sandwich as powder coated steel, with a stainless skin: stainless faces over a honeycomb core. Their strengths are corrosion resistance, cleanliness, design appeal and a Class A rating. This page covers how stainless partitions are built, the published fire class, how warranties differ by brand, and why indoor pools need extra care.
 
 [Configure & Request a Quote](/get-a-quote?material=stainless-steel). Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
 
@@ -38,20 +38,11 @@ Stainless steel generally carries a Class A rating. Class A means a flame spread
 
 ## Warranty differs by brand
 
-There is no single stainless steel warranty. Published terms run from 5 years to 15 years. The current page's "5 Years" is the low end of that range.
-
-- **Coverage.** Typically repair or replacement of panels, doors, pilasters and sometimes hardware against defects in material and workmanship. The longest terms are against rust-out.
-- **Remedy.** Some warranties cover material only, with no credit for labor or the cost of replacing parts.
-- **Conditions.** Coverage usually depends on proper maintenance. Installation errors, vandalism or improper use or care can void it.
-- **Hardware.** Often carries its own term: from 5 years on chrome plated zamac hardware up to lifetime on stainless steel hardware.
-
-Your quote will name the brand and the warranty length for that line, and you should read the warranty text before you specify.
+Stainless steel warranties run from 5 to 15 years, with the longest terms against rust-out. They typically cover panels, doors, pilasters and sometimes hardware against defects in material and workmanship. Some cover material only, and vandalism, installation errors or improper care can void them. Hardware often carries its own term, up to lifetime on stainless steel hardware. Your quote names the line and its warranty.
 
 ## Moisture, vandal resistance and cleaning
 
-- **Corrosion, with a limit.** Stainless resists corrosion, but it is not rust-proof everywhere. Type 304 and 316 rods, bolts and wires under tension have cracked in the unwashed, humid air above indoor chlorinated pools (stress-corrosion cracking). The problem hasn't been found in washed components such as doors and rails. A partition is mostly washed sheet, but ceiling-hung stalls hang from stressed rods and bolts. For a pool hall, choose [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe), or ask the manufacturer which grade it recommends for the hangers and fasteners and how often they should be washed. Elsewhere, with regular washdowns, stainless is a fit. Material guides rate stainless steel's suitability for wet areas as low.
-- **Dents and scratches.** Stainless can still dent and scratch, and it is the most expensive of the common materials. Textured finishes add vandal resistance.
-- **Cleaning.** A typical care routine: wipe with warm water and a damp cloth, in the direction of the polished grain, and dry with a soft cloth. A mild detergent handles tougher stains, and a commercial stainless steel cleaner handles stubborn marks. No steel wool or scouring pads (traces can leave rust stains), and keep acid, alkali and bleach-based bathroom cleaners off it, since splashes can leave brown spots. Follow your manufacturer's care instructions.
+Stainless resists corrosion but isn't rust-proof everywhere: type 304 and 316 rods, bolts and wires under tension have cracked in the humid air above indoor chlorinated pools, and ceiling-hung stalls hang from exactly those parts. For a pool hall, choose [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe), or ask the manufacturer which grade to use for hangers and fasteners and how often to wash them. Stainless can dent and scratch (textured finishes help) and is the most expensive common material. Clean with warm water and a damp cloth along the grain; no steel wool, scouring pads or bleach-based cleaners.
 
 ## Where stainless fits
 
@@ -63,10 +54,6 @@ Airports, hospitals and upscale offices, where the restroom is part of the build
 | [Floor mounted](/mounting-styles/floor-mounted) | Offered floor anchored on some lines |
 | [Ceiling hung](/mounting-styles/ceiling-hung) | Offered by several manufacturers |
 | [Floor to ceiling](/mounting-styles/floor-to-ceiling) | Offered by several manufacturers |
-
-## What comes with a quote
-
-Our quotes cover panels, doors, pilasters, headrails, hinges, slide latches, keepers, strikes, brackets, pilaster shoes and mounting fasteners. Install according to the manufacturer's instructions and your approved drawings, using a qualified installer.
 
 ## FAQ
 

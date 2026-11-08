@@ -30,34 +30,21 @@ Edges vary. Some lines laminate the edge like the faces. Moisture-resistant line
 
 ## Fire rating
 
-Published ratings for plastic laminate are Class B or Class C under ASTM E84. Class B is a flame spread index of 26 to 75 (one tested HPL scored 60), and Class C is 76 to 200. So a laminate partition is not always Class B, let alone Class A, and the current page's "Class A standard" doesn't match the published lines. Ask for the rating of the line and decor you pick, and check it against the class your occupancy requires.
+Published ratings for plastic laminate are Class B or Class C under ASTM E84. Class B is a flame spread index of 26 to 75 (one tested HPL scored 60), and Class C is 76 to 200. So a laminate partition is not always Class B, let alone Class A. Ask for the rating of the line and decor you pick, and check it against the class your occupancy requires.
 
 ## Warranty differs by brand
 
-Published laminate warranties run from 1 year to 5 years. The 2 and 5 years on the current page are both real, for different lines:
-
-- **Length.** Moisture-resistant lines with fused edge banding carry up to 5 years. Other lines usually carry 1 or 2 years.
-- **Coverage.** Typically panels, doors and pilasters against breakage, corrosion, delamination or defects in workmanship, if the partitions are properly installed, used and maintained.
-- **Exclusions.** Vandalism is usually excluded. Spraying down or hosing laminate partitions can void the warranty, and so can installation errors or improper care.
-- **Remedy and hardware.** Some warranties cover material only, with no credit for labor or the cost of replacing parts. Hardware may carry a separate, shorter term, such as 1 year.
-
-Your quote will name the brand, product line and warranty length. Read the warranty text, since coverage for moisture damage in particular varies.
+Laminate warranties run from 1 to 5 years: up to 5 on moisture-resistant lines with fused edge banding, usually 1 or 2 on others. Coverage is typically breakage, delamination and workmanship defects. Vandalism is excluded, hosing down or installation errors can void it, some warranties cover material only, and hardware may carry a shorter term. Your quote names the line and its warranty.
 
 ## Moisture, vandal resistance and cleaning
 
-- **Moisture.** The particleboard core may swell when exposed to excessive moisture. Keep laminate in dry, climate-controlled restrooms, not showers, pools or locker rooms. Use [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe) there.
-- **Scratches.** Laminate offers scratch, dent and graffiti resistance at a low cost. A deep scratch can expose the dark kraft paper under the surface.
-- **Cleaning.** A typical care routine: wipe with warm water and very mild soap on a nonabrasive, well wrung-out cloth, rinse and dry with a soft cloth. Never over-saturate laminate or leave it wet, because water can swell the core. No brushes, steel wool or scouring pads, and keep acid, alkali and bleach-based bathroom cleaners off it, rinsing any splash at once. Follow your manufacturer's care instructions.
+The particleboard core can swell with excess moisture, so keep laminate in dry, climate-controlled restrooms and use [phenolic](/partitions/phenolic) or [HDPE](/partitions/solid-plastic-hdpe) for showers, pools and locker rooms. It resists scratches, dents and graffiti at a low cost, though a deep scratch exposes the dark layer beneath. Clean with warm water and mild soap on a well wrung-out cloth; never leave it wet or use abrasive pads or bleach-based cleaners, and follow your manufacturer's care instructions.
 
 ## Where laminate fits
 
 Offices, retail, restaurants and other dry restrooms where the partitions should coordinate with millwork. Color range is the main advantage, with a wide selection on most lines. Laminate is offered floor anchored, overhead braced and ceiling hung. See the [mounting styles](/mounting-styles).
 
 Ceiling-hung laminate needs ceiling structure that carries the manufacturer's required load. One published requirement is at least 295 lb per high pressure laminate partition.
-
-## What comes with a quote
-
-Our quotes cover panels, doors, pilasters, headrails, hinges, slide latches, keepers, strikes, brackets, pilaster shoes and mounting fasteners. Install according to the manufacturer's instructions and your approved drawings, using a qualified installer.
 
 ## FAQ
 

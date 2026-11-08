@@ -22,12 +22,12 @@ In the front view of a row of stalls, the headrail runs across the pilaster tops
 2. **Pilaster shoe:** 4" stainless steel
 3. **Pilaster:** 82" here, some lines 83"
 
-On a standard partition, doors and panels are 58" high and mounted 12" above the floor, and the pilasters and headrail top out at about 82" to 83", depending on the brand (82" in this drawing). Privacy and some solid plastic lines use other heights: see Typical specifications below. An overhead braced stall has four kinds of parts:
+On a standard partition, doors and panels are 58" high and 12" above the floor, and the pilasters and headrail top out at about 82" to 83", depending on the brand (privacy and some solid plastic lines use other heights; see Typical specifications below). The parts:
 
-- **Pilasters** (also called stiles): the vertical posts at the front of each stall that carry the doors. A standard overhead-braced pilaster is typically 82" to 83" high.
-- **Floor brackets and leveling device:** a steel bracket at the foot of each pilaster, fastened to the finished floor and adjustable for level. One common setup is a 12-gauge plated steel bracket with a leveling bolt, floor L-bracket and stainless steel floor screws.
-- **Pilaster shoe:** a stainless steel cover that hides the bracket and leveling hardware at the floor.
-- **Headrail:** a continuous extruded anodized aluminum rail across the pilaster tops that secures the partitions firmly to the walls. The anti-grip profile is shaped so it can't be grabbed or hung from.
+- **Pilasters** (stiles): the posts at the front of each stall that carry the doors.
+- **Floor brackets and leveling device:** a steel bracket at each pilaster foot, fastened to the finished floor and adjustable for level.
+- **Pilaster shoe:** a stainless steel cover over the bracket and leveling hardware.
+- **Headrail:** a continuous anodized aluminum rail across the pilaster tops, fixed to the walls, with an anti-grip profile so it can't be hung from.
 
 At the floor, the leveling bar, anchors and shoe sit together under the pilaster.
 
@@ -37,7 +37,7 @@ At the top, the headrail clamps over the pilaster and fixes to the wall.
 
 ![Headrail cross-section, fixed to the wall](/images/diagrams/mounting-overhead-braced-detail-headrail.svg)
 
-Panels and doors hang between the pilasters and the walls on brackets. Installation specs line the tops of the doors up with the headrail so everything reads as one straight line. A typical spec fastens the headrail to each pilaster with at least two fasteners and adjusts the doors so their tops run parallel with the headrail.
+Panels and doors hang on brackets between the pilasters and the walls, with the door tops set parallel to the headrail.
 
 ![U-bracket holding a panel to a pilaster, seen from above](/images/diagrams/mounting-overhead-braced-detail-bracket.svg)
 

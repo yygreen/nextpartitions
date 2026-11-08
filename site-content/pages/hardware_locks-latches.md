@@ -23,21 +23,9 @@ A restroom stall lock is really a privacy latch. The user slides a bolt on the i
 | Occupancy indicator latch | The latch turns an indicator on the outside of the door when it's locked | Stainless steel; chrome-plated or brushed zamac |
 | HDPE latch with housing | An aluminum latch in a housing, with a slide bolt and button or a slide latch and paddle | Extruded aluminum |
 
-### Slide latches
-
-The standard bathroom stall door latch is a slide latch. The user locks the door from inside by sliding the latch into the keeper. Surface-mounted slide latches come in stainless steel and chrome-plated zamac.
-
-### Occupancy indicator latches
-
-An indicator latch shows people outside whether the stall is in use. Manufacturers show it in different ways:
-
-- **Concealed latch with indicator:** a slide latch with a two-color "in use" indicator outside, designed to allow emergency access from outside. Some lines make it standard on powder coated doors.
-- **Optional indicator latch:** an add-on with its own indicator colors. Green/red and red/white are both common. Some release in an emergency with an Allen key turned in a keyhole in the cover plate.
-- **Indicator slide latch:** in chrome-plated or brushed zamac. Some metal doors come factory-drilled for the indicator, and some phenolic occupancy latches include emergency access.
-
-### Latches for solid plastic (HDPE) partitions
-
-HDPE partitions typically use a heavy-duty extruded aluminum latch and housing, with either a slide bolt and button or a slide latch and paddle. Aluminum and stainless steel latch sets with emergency access are also available. On some systems, latches and strikes can't be mixed.
+- **Slide latches** are the standard: the user slides the bolt into the keeper from inside. Surface-mounted versions come in stainless steel and chrome-plated zamac.
+- **Occupancy indicator latches** show "in use" outside (green/red or red/white). Many allow emergency access from outside, some with an Allen key, and some lines make them standard on powder coated doors.
+- **HDPE latches** are typically heavy-duty extruded aluminum in a housing, with a slide bolt and button or a slide latch and paddle. On some systems latches and strikes can't be mixed.
 
 ## Keepers and strikes
 
@@ -47,20 +35,15 @@ HDPE partitions typically use a heavy-duty extruded aluminum latch and housing, 
 2. **Keeper (strike)**, mounted on the pilaster; the latch bolt slides into it.
 3. **Occupancy indicator** on an indicator latch.
 
-The keeper is the part on the pilaster that the latch bolt slides into. On HDPE and phenolic stalls it is often combined with a strike, a wrap-around piece that also stops the door.
+The keeper is the part on the pilaster that the latch bolt slides into. On HDPE and phenolic stalls it's often combined with a strike, typically a 6" aluminum wrap-around piece with a vinyl bumper that also stops the door. Some lines sell separate latch and keeper packets for inswing and outswing doors.
 
-- A 6" aluminum wrap-around strike and keeper is common, often extruded, with an extruded black vinyl bumper.
-- Some lines sell separate latch and keeper packets for inswing and outswing doors. On an inswing door, the latch track stops the door swinging out past the stile. On an outswing door, the keeper stops it swinging in.
-
-A latch that won't engage is often a keeper problem, not a latch problem. Either the door has dropped, or the keeper has moved. Keepers are usually set with the door closed and the latch engaged: line the keeper up with the latch bar, then drill the pilaster through the keeper's holes. If the door has sagged, adjust the hinge first ([see Hinges](/hardware/hinges)).
-
-The three drawings below show where to look, seen from inside the stall with the hinge pilaster on the left. The angles are exaggerated so they show.
+A latch that won't engage is usually a keeper or door problem, not a latch problem. The drawings show the three causes, seen from inside the stall with the hinge pilaster on the left (angles exaggerated):
 
 ![Three causes of a door that won't latch: pilaster out of plumb, door dropped at the latch side, keeper out of line](/images/diagrams/door-latch-problems.svg)
 
-- **A** Pilaster out of plumb: the gap at the latch edge is wider at the top than at the bottom. Check the pilaster with a level and re-set it at its leveling screw or nuts and its brackets.
-- **B** Door dropped at the latch side: the top of the door slopes and the latch sits below the keeper. Check that the hinges are plumb and their screws tight; reset the door with 1/8" spacers at the top and bottom so the gaps match, then re-tighten.
-- **C** Keeper out of line with the latch: the door hangs square but the latch misses the keeper. With the door closed, move the keeper so the latch slides freely into it, and drill through the keeper's own holes.
+- **A** Pilaster out of plumb (the latch-side gap is wider at the top): level the pilaster at its leveling screws and brackets.
+- **B** Door dropped at the latch side (latch below the keeper): check the hinges are plumb and tight, reset the door with 1/8" spacers top and bottom, then re-tighten. See [Hinges](/hardware/hinges).
+- **C** Keeper out of line (door square, latch misses): with the door closed, move the keeper so the latch slides in freely, and drill through the keeper's own holes.
 
 ## Emergency access
 

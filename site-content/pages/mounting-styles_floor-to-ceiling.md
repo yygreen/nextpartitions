@@ -74,7 +74,7 @@ If what you want is fewer gaps, not just stronger stalls, look at the privacy op
 | No-sightline / gap-free | Closes the sightline gaps at the door edges | Gap-free floor-to-ceiling compact laminate; no-sightline options in other lines |
 | Taller doors, lower gap | Doors and panels taller and closer to the floor | Doors and panels up to 72", at 6" or 9" above the floor; some lines go to 92" at 4", 6" or 9", also as a floor-to-ceiling configuration |
 
-Lower gaps affect accessibility. Under 2010 ADA Standards section 604.8.1.4, the front partition and at least one side partition of a wheelchair accessible compartment need 9" of toe clearance above the finished floor and 6" deep (12" high in children's compartments). Exceptions apply to larger compartments: no front toe clearance when the compartment is over 62" deep with a wall-hung toilet or over 65" deep with a floor-mounted one, and no side toe clearance when it's over 66" wide. See our [ADA compliance guide](/guides/ada-compliance).
+Lower gaps affect accessibility: a wheelchair-accessible compartment needs 9" of toe clearance under the front and one side partition unless it's larger than the minimum (2010 ADA Standards 604.8.1.4). See our [ADA compliance guide](/guides/ada-compliance) for the exact rules.
 
 Disclaimer: ADA dimensions and accessibility guidance shown here are provided for general informational purposes only. Codes and their interpretation vary by jurisdiction and project. We accept no responsibility or liability for compliance — always verify requirements with your architect, engineer, or local code official before ordering.
 
