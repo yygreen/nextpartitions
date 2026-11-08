@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { z } from 'zod'
+import { areaDescription } from '@/directory/copy'
 import { getAreaDirectory } from '@/directory/server'
 import { breadcrumbLd, pageHead } from '@/directory/seo'
 import { stateName } from '@/directory/states'
@@ -12,7 +13,7 @@ export const Route = createFileRoute('/installers/$installer_/$area')({
   loader: ({ params }) => getAreaDirectory({ data: { area: params.area, state: params.installer } }),
   head: ({ loaderData: d }) => d ? pageHead({
     title: `Bathroom Partition Installers in ${d.area.name} | Next Partitions`,
-    description: `Checked, insured installers in ${d.area.name} for commercial toilet partitions bought from Next Partitions. Price partitions and installation in one place.`,
+    description: areaDescription(d.area),
     path: `/installers/${d.area.stateSlug}/${d.area.slug}/`, sample: d.sample || d.unpublished,
     jsonLd: [breadcrumbLd([{ name: 'Home', path: '/' }, { name: 'Installers', path: '/installers/' },
       { name: stateName(d.area.stateSlug, d.area.state), path: `/installers/${d.area.stateSlug}/` }, { name: d.area.name, path: `/installers/${d.area.stateSlug}/${d.area.slug}/` }])],

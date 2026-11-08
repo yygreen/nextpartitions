@@ -4,6 +4,7 @@ import { areaHref, configuratorHref, homeHref, installersHref, stateHref } from 
 import { AreaInstallers } from './components/AreaInstallers'
 import { ConfigureStart } from './components/ConfigureStart'
 import { CoverageMap } from './components/CoverageMap'
+import { areaLead } from './copy'
 import { MobileConfigureBar, StartConfigure } from './components/StartConfigure'
 import { Breadcrumbs, ButtonLink, Disclaimer, SampleBanner, Stars } from './components/ui'
 import type { StateHubData, StateSummary } from './hub'
@@ -168,7 +169,7 @@ export function AreaView({ area, installers, rateCards, preset, sample, unpublis
       {unpublished && <div className="bg-surface-warm border-b border-border text-sm text-center px-4 py-2">Staging preview: this area isn't published yet (it goes live once 3 installers are listed). Not indexed.</div>}
       <Hero crumbs={[{ label: 'Home', href: homeHref() }, { label: 'Installers', href: installersHref() }, { label: stateName(area.stateSlug, area.state), href: stateHref(area.stateSlug) }, { label: area.name }]}
         title={`Bathroom Partition Installers in ${area.name}`}
-        lead={`Checked local installers for commercial toilet partitions you buy from Next Partitions. Price your partitions and installation in one place, then choose your installer.`}
+        lead={areaLead(area)}
         aside={installers.length > 0 ? <CoverageMap area={area} installers={installers} /> : undefined}>
         <AreaHeroPoints count={installers.length} />
       </Hero>
