@@ -81,12 +81,17 @@ Google suggests fixing product details in Merchant Center. **Hold off until pric
 
 ## 6. Photos (Photos → Add)
 
-| Type | What to upload | Source |
+Ready-to-upload files are in `docs/gbp-images/`:
+
+| Type | File | Note |
 |---|---|---|
-| Logo | The orange N logo, square | Site logo file |
-| Cover | A finished restroom, landscape | **[YOU/ABE]** a real job photo is best; until then, the 3D render of an overhead braced restroom (`site-content/design/renders/overhead-braced-hero.jpg`) |
-| Products | The four mounting styles, and one photo per material | `site-content/design/renders/*-hero.jpg`, plus the material photos already on the site |
-| Real jobs | 5 to 10 finished installations | **[YOU/ABE]** photos you have the rights to use. These matter most for trust |
+| Logo | `01-logo-720x720.png` | The orange N on white, with margin so Google's round crop doesn't cut it |
+| Cover | `02-cover-1920x1080.jpg` | 16:9 render of an overhead braced restroom. Swap it for a real job photo when Abe sends one |
+| Photos (mounting styles) | `03-mounting-*.jpg` (4 files) | Overhead braced, floor mounted, ceiling hung, floor-to-ceiling |
+| Photos (materials) | `04-material-*.jpg` (5 files) | Phenolic, HDPE, powder coated steel, stainless, plastic laminate |
+| Real jobs | **[YOU/ABE]** 5 to 10 finished installations | Photos you have the rights to use. These matter most for trust |
+
+The 03 and 04 files are 3D renders. Upload them under Photos (not Products: products show prices).
 
 Keep adding a few photos a month. Profiles with recent photos get more clicks.
 
