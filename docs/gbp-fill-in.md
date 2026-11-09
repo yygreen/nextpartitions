@@ -1,5 +1,17 @@
 # Google Business Profile: fill-in sheet (November 9, 2026)
 
+## Done on November 9, 2026 (via Claude in Chrome)
+
+- Additional category **Bathroom Supply Shop** (Google has no "Bathroom supply store"). Primary stays "Building materials supplier".
+- **Description** saved, without the quote promise sentence (add it once Abe decides hours or days).
+- **7 services** saved with descriptions, no prices.
+- **Service area** left as "United States" (covers every state; the 20-state list below isn't needed).
+- **First post** published with a "Learn more" button to the quote page ("Get quote" isn't offered).
+- **No quote link field** exists in the profile's contact section, so that step is skipped.
+- **Review link: https://g.page/r/CfoQWj2adEGiEBM/review**
+
+Still open: photos, opening date, address decision, closure dates, social profiles, the customer list for reviews, products (after pricing).
+
 The profile is verified (primary category "Building materials supplier", phone, hours). This sheet has everything to paste in, in the order Google's "Complete info" asks for it. Items marked **[YOU/ABE]** need an answer we don't have.
 
 The same name, phone and website go on every other listing (section 9), character for character.
@@ -88,7 +100,7 @@ Post one now, then one or two a month. Each post should link to a page.
 
 ## 8. Reviews (Ask for reviews)
 
-1. Copy the review link from **Ask for reviews**.
+1. Review link: **https://g.page/r/CfoQWj2adEGiEBM/review**
 2. **[YOU/ABE]** send us the list of past customers (name, email, what they bought, when). Start with the most recent and happiest.
 3. Send this message, from Abe's email:
 
@@ -99,7 +111,7 @@ Hi [first name],
 
 Thanks again for ordering your [material] partitions from Next Partitions for [project]. If everything arrived and went in well, would you leave us a short Google review? It takes a minute and helps other facility managers find us.
 
-[review link]
+https://g.page/r/CfoQWj2adEGiEBM/review
 
 If anything wasn't right, reply to this email and I'll take care of it personally.
 
