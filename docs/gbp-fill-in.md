@@ -86,7 +86,7 @@ Real photos only on the profile, no 3D renders.
 | Type | File | Note |
 |---|---|---|
 | Logo | `docs/gbp-images/01-logo-720x720.png` | The orange N on white, with margin so Google's round crop doesn't cut it |
-| Cover | **[YOU/ABE]** a real finished restroom, landscape | Left empty until a real job photo arrives |
+| Cover | `docs/gbp-images/02-cover-1920x1080.jpg` | The live homepage hero (stainless stalls), already 1920×1080. It looks AI-generated, so swap it for a real job photo when Abe sends one |
 | Real jobs | **[YOU/ABE]** 5 to 10 finished installations | Photos you have the rights to use. These matter most for trust |
 
 Upload job photos under Photos, not Products (products show prices).
