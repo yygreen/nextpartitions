@@ -32,6 +32,7 @@ Working notes for the nextpartitions.com redesign and the installer directory. R
 - **Dallas–Fort Worth is the example area** of the prototypes (Texas hub, then the DFW area page). Present it to Abe as sample pages; the real first area is chosen from his orders-by-ZIP data. Texas has no statewide contractor license, so checks show city or state business registration.
 
 - **Tracking moved back (agreed 2026-11-11):** the tracking spine (GA4, Tag Manager, conversions, configurator events) waits until site pricing is live; it isn't a month-1 item.
+- **Manufacturer dealer listings: Abe handles them (2026-11-11).** He contacted the manufacturers directly. Trade and association directories (Thomasnet and similar) are ours and not started yet.
 
 ## Client relationship
 
