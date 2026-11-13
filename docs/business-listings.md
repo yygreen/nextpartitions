@@ -12,8 +12,8 @@ Every listing must use these exactly, character for character. Fill them in once
 | Phone | 1-833-997-7489 | As on the site |
 | Website | https://nextpartitions.com | |
 | Email | sales@nextpartitions.com | As on the site |
-| Address | [from Abe] | Needed. Not on the site today |
-| Address shown? | Hidden (service-area business) unless customers visit | Confirm with Abe |
+| Address | 9 Perlman Dr, Suite 201, Spring Valley, NY 10977 | From Abe (2026-11-13). Use this exact format everywhere; ZIP to confirm |
+| Address shown? | Hidden where the site allows it (service-area business), shown where a directory requires it | Confirm with Abe whether customers visit the office |
 | Hours | Mon–Fri, 8am–6pm Eastern | Confirm with Abe |
 | Service area | United States | Google limits the number of service areas you can list; pick the main states or regions |
 | Description | "Next Partitions supplies commercial bathroom partitions from Bobrick, ASI Global, Scranton Products, Bradley, Metpar, Ammco and Hadrian, shipped nationwide. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours." | Uses the one quote promise. No installation claim |

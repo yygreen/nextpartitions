@@ -2,7 +2,7 @@
 
 The trade and association listings from the month 1 plan (Phase 03, "Trade & Association Listings (per 10)", 44 credits). Manufacturer dealer listings are separate: Abe has asked the manufacturers himself.
 
-Every listing uses the same details as the Google Business Profile: **Next Partitions**, (833) 997-7489, https://nextpartitions.com, sales@nextpartitions.com, no street address shown, service area United States. No "authorized dealer" wording until Abe confirms it in writing per brand. No installation categories.
+Every listing uses the same details as the Google Business Profile: **Next Partitions**, (833) 997-7489, https://nextpartitions.com, sales@nextpartitions.com, address 9 Perlman Dr, Suite 201, Spring Valley, NY 10977 (hidden where the site allows it), service area United States. Accounts are created with sales@nextpartitions.com so Next Partitions owns the listings; login@rankfriendly.com is added as a second user where possible. No "authorized dealer" wording until Abe confirms it in writing per brand. No installation categories.
 
 ## First 10 (free or likely free)
 
