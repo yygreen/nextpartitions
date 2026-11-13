@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Installer Vetting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<style>
+/* Installer vetting: internal Next Partitions screen (login only). Light-only, nextpartitions.com tokens. */
+:root{
+  --bg:#fbfaf9; --band:#f4f2ee; --surface:#ffffff; --fg:#1c0e05; --muted:#6d6059;
+  --border:#e1ddd7; --accent:#e8630a; --accent-strong:#c95200; --accent-soft:#fdeee3; --on-accent:#ffffff;
+  --good:#1f7a4d; --good-soft:#e6f3ec; --warn:#8a5a00; --warn-soft:#fff3c4; --bad:#b42318; --bad-soft:#fdecea;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --container:1360px; --gutter:34px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter)}
+@media (max-width:760px){:root{--gutter:16px}}
+.mocknote{background:#fff3c4;border-bottom:1px solid #f0d98a;font-size:13px;color:#5c4400;text-align:center;padding:8px 16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;background:var(--accent);color:var(--on-accent);font:inherit;font-weight:700;font-size:15px;padding:10px 18px;min-height:44px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--accent-strong)}
+.btn.quiet{background:var(--surface);color:var(--fg);border:1px solid var(--border)}
+.btn.bad{background:var(--surface);color:var(--bad);border:1px solid #f0b8b2}
+.btn.sm{font-size:13px;padding:6px 12px;min-height:34px}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.link{font:inherit;background:none;border:0;padding:0;color:var(--accent-strong);font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+.phd{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:30}
+.phd .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:36px;width:auto}
+.brand b{display:block;font-size:18px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.who{display:flex;align-items:center;gap:12px;font-size:14px}
+.who .av{width:34px;height:34px;display:grid;place-items:center;background:var(--fg);color:#fff;font-weight:800;font-size:13px}
+.who small{display:block;color:var(--muted);font-size:12px}
+@media (max-width:640px){.who .nm{display:none}.brand small{display:none}}
+
+.launch{background:var(--surface);border-bottom:1px solid var(--border)}
+.launch .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding-block:12px}
+.launch b{font-size:15px}
+.meter{display:flex;gap:4px}
+.meter i{width:40px;height:8px;background:var(--border);display:block}
+.meter i.on{background:var(--good)}
+.launch span{font-size:14px;color:var(--muted)}
+
+main{padding-block:24px 60px}
+.lay{display:grid;grid-template-columns:340px minmax(0,1fr);gap:24px;align-items:start}
+@media (max-width:1024px){.lay{grid-template-columns:1fr}}
+.list{background:var(--surface);border:1px solid var(--border)}
+.list h2{font-size:14px;font-weight:800;margin:0;padding:14px 16px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between}
+.list h2 span{color:var(--muted);font-weight:500}
+.arow{display:block;width:100%;text-align:left;font:inherit;background:none;border:0;border-bottom:1px solid var(--border);padding:12px 16px;cursor:pointer}
+.arow:last-child{border-bottom:0}
+.arow:hover{background:var(--band)}
+.arow[aria-current="true"]{background:var(--accent-soft);box-shadow:inset 3px 0 0 var(--accent)}
+.arow b{display:block;font-size:15px}
+.arow p{margin:2px 0 6px;font-size:13px;color:var(--muted)}
+.pill{display:inline-flex;align-items:center;font-size:12px;font-weight:700;padding:2px 8px;border:1px solid var(--border);background:var(--band);color:var(--fg)}
+.pill.wait{background:var(--warn-soft);border-color:#f0d98a;color:var(--warn)}
+.pill.go{background:var(--good-soft);border-color:#b9dcc8;color:var(--good)}
+.pill.bad{background:var(--bad-soft);border-color:#f0b8b2;color:var(--bad)}
+.pill.new{background:var(--accent);border-color:var(--accent);color:#fff}
+
+.card{background:var(--surface);border:1px solid var(--border);padding:20px 22px;margin-bottom:16px}
+.card h3{font-size:16px;font-weight:800;margin:0 0 12px}
+.ahead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:flex-start}
+.ahead h2{font-size:24px;font-weight:900;letter-spacing:-.02em;margin:0}
+.ahead .sub{margin:2px 0 0;color:var(--muted)}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+dl.kv{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:14px}
+dl.kv dt{color:var(--muted)}
+dl.kv dd{margin:0;font-weight:600;min-width:0;overflow-wrap:anywhere}
+
+.chk{border-top:1px solid var(--border)}
+.crow{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);align-items:start}
+.crow .st{width:26px;height:26px;display:grid;place-items:center;font-weight:900;font-size:14px;background:var(--band);color:var(--muted);border:1px solid var(--border)}
+.crow.pass .st{background:var(--good);color:#fff;border-color:var(--good)}
+.crow.fail .st{background:var(--bad);color:#fff;border-color:var(--bad)}
+.crow.wait .st{background:var(--warn-soft);color:var(--warn);border-color:#f0d98a}
+.crow b{display:block;font-size:15px}
+.crow .ev{font-size:13px;color:var(--muted);margin-top:2px}
+.crow .ev b{display:inline;font-size:13px;color:var(--fg)}
+.crow .acts{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+@media (max-width:640px){.crow{grid-template-columns:28px minmax(0,1fr)}.crow .acts{grid-column:2;justify-content:flex-start}}
+.refs{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+.refs th{text-align:left;color:var(--muted);font-weight:600;padding:4px 8px 4px 0;border-bottom:1px solid var(--border)}
+.refs td{padding:6px 8px 6px 0;border-bottom:1px solid var(--border);vertical-align:top}
+.tgt{font-size:12px;font-weight:700}
+.tgt.yes{color:var(--good)}.tgt.miss{color:var(--bad)}
+
+.decide{border-top:4px solid var(--accent)}
+.decide .btns{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.note{font-size:13px;color:var(--muted);margin:10px 0 0}
+.field{display:grid;gap:6px;font-size:14px;font-weight:600;margin:12px 0}
+.field textarea,.field select{font:inherit;font-weight:400;border:1px solid var(--border);padding:8px 10px;background:#fff;min-height:42px;width:100%}
+.ok{background:var(--good-soft);border:1px solid #b9dcc8;color:#14532d;padding:12px 14px;font-size:14px;margin:0 0 12px}
+.no{background:var(--bad-soft);border:1px solid #f0b8b2;color:#7a1a12;padding:12px 14px;font-size:14px;margin:0 0 12px}
+.recheck{font-size:13px;color:var(--muted);background:var(--band);border:1px solid var(--border);padding:12px 14px}
+</style>
+</head>
+<body>
+
+<div class="mocknote"><b>Mockup:</b> Next Partitions' installer vetting screen (login only). All applicants, documents and references are fictional samples.</div>
+
+<header class="phd"><div class="wrap">
+  <a class="brand" href="portal.html#np"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Installer vetting</small></span></a>
+  <div class="who"><span class="nm"><b>[Coordinator name]</b><small>Next Partitions · DFW installers</small></span><span class="av">?</span></div>
+</div></header>
+
+<div class="launch"><div class="wrap">
+  <b id="launchT"></b><span class="meter" id="meter" aria-hidden="true"></span><span id="launchS"></span>
+</div></div>
+
+<main class="wrap">
+  <div class="lay">
+    <div class="list"><h2>Applicants · DFW <span id="listSub"></span></h2><div id="list"></div></div>
+    <div id="detail"></div>
+  </div>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const NEED=3;
+// each check: state "pass" | "fail" | "wait" | "todo"
+const A=[
+ {id:"lonestar",name:"Lone Star Restroom Installs",city:"Garland",zip:"75040",radius:45,years:9,crew:"3–5",contact:"Rosa Delgado",phone:"(972) 555-0131",email:"rosa@example.com",applied:"Oct 14",
+  mats:"HDPE, powder coated, phenolic",mounts:"Overhead braced, floor mounted",extras:"Removal, ADA, urinal screens",brands:"Scranton Products, Bobrick",
+  ins:{state:"wait",amt:"$1,000,000",exp:"Mar 31, 2027",holder:false,file:"COI-LoneStar-2026.pdf"},
+  reg:{state:"wait",num:"Garland contractor registration GC-2026-0412",src:"City of Garland permit portal"},
+  refs:{state:"todo",rows:[["Mike Tran","Garland ISD","Not called yet","",0],["Kelly Hart","Hart Builders","Not called yet","",0]]},
+  test:{state:"todo"},agr:{state:"todo"},status:"docs"},
+ {id:"tarrant",name:"Tarrant Partition Co.",city:"Fort Worth",zip:"76102",radius:60,years:14,crew:"6–10",contact:"Ben Okafor",phone:"(817) 555-0164",email:"ben@example.com",applied:"Oct 8",
+  mats:"HDPE, phenolic, stainless, laminate",mounts:"All four",extras:"Removal, ADA, urinal screens",brands:"Bobrick, ASI, Bradley",
+  ins:{state:"pass",amt:"$2,000,000",exp:"Jan 15, 2027",holder:true,file:"COI-Tarrant.pdf"},
+  reg:{state:"pass",num:"Texas SOS LLC 0803311224 · Fort Worth registration FW-88213",src:"Texas Comptroller and City of Fort Worth lookups"},
+  refs:{state:"pass",rows:[["Ana Silva","Keller ISD","Called Oct 10","On time, clean job, would hire again",5],["Tom Rhee","Rhee Construction","Called Oct 10","Good crew; once late by a day, told us ahead",4],["Jo Park","Hurst Fitness","Called Oct 11","Fixed a door alignment the same week",5]]},
+  test:{state:"wait",sent:"Oct 17, 9:00 AM"},agr:{state:"todo"},status:"test"},
+ {id:"metroplex",name:"Metroplex Division 10",city:"Irving",zip:"75038",radius:50,years:7,crew:"3–5",contact:"Lee Nguyen",phone:"(972) 555-0187",email:"lee@example.com",applied:"Oct 1",
+  mats:"HDPE, powder coated, laminate",mounts:"Overhead braced, floor mounted, ceiling hung",extras:"Removal, ADA",brands:"Scranton Products, Metpar",
+  ins:{state:"pass",amt:"$1,000,000",exp:"Aug 1, 2027",holder:true,file:"COI-Metroplex.pdf"},
+  reg:{state:"pass",num:"City of Dallas contractor registration CR-2025-77120",src:"City of Dallas registration lookup"},
+  refs:{state:"pass",rows:[["Chris Bell","Irving Medical Plaza","Called Oct 3","Quick, tidy, fair price",5],["Dee Moss","Moss & Co. GC","Called Oct 3","Reliable on a 20-stall school job",5]]},
+  test:{state:"pass",sent:"Oct 6, 9:00 AM",reply:4,price:20},agr:{state:"pass",signed:"Oct 9, 2026"},status:"ready"},
+ {id:"quickfix",name:"QuickFix Handyman",city:"Mesquite",zip:"75149",radius:30,years:2,crew:"1–2",contact:"Dan Ward",phone:"(972) 555-0102",email:"dan@example.com",applied:"Sep 29",
+  mats:"Powder coated",mounts:"Overhead braced",extras:"None",brands:"",
+  ins:{state:"fail",amt:"None provided",exp:"",holder:false,file:""},
+  reg:{state:"todo",num:"Not provided",src:""},refs:{state:"todo",rows:[]},test:{state:"todo"},agr:{state:"todo"},status:"rejected",why:"No general liability insurance"},
+];
+let approved=2, cur="metroplex";  // Acme and Northwind are already approved in DFW
+const STATUS={docs:["Documents in","wait"],test:["Test job sent","wait"],ready:["Ready to list","new"],approved:["Listed · Verified","go"],rejected:["Rejected","bad"],info:["More info requested","wait"]};
+const app=()=>A.find(a=>a.id===cur);
+
+function launch(){
+  const n=Math.min(approved,NEED);
+  $("launchT").textContent=approved>=NEED?`DFW launch: ${approved} listed installers. Ready to launch.`:`DFW launch: ${approved} of ${NEED} listed installers needed`;
+  $("meter").innerHTML=Array.from({length:NEED},(_,k)=>`<i class="${k<n?"on":""}"></i>`).join("");
+  $("launchS").textContent=approved>=NEED?"The DFW area page can be published.":"The DFW area page stays unpublished until 3 installers are listed.";
+}
+function list(){
+  $("listSub").textContent=`${A.length} applicants`;
+  $("list").innerHTML=A.map(a=>{const [l,c]=STATUS[a.status];return `<button type="button" class="arow" data-a="${a.id}" aria-current="${a.id===cur}"><b>${esc(a.name)}</b><p>${esc(a.city)} · applied ${a.applied}</p><span class="pill ${c}">${l}${a.status==="rejected"?": "+esc(a.why.toLowerCase()):""}</span></button>`}).join("");
+  $("list").querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>{cur=b.dataset.a;render();if(innerWidth<1025)$("detail").scrollIntoView({behavior:"smooth"});});
+}
+const mark={pass:"✓",fail:"✕",wait:"…",todo:""};
+function row(key,title,ev,acts){const s=app()[key].state;return `<div class="crow ${s}"><span class="st" aria-label="${s}">${mark[s]}</span><div><b>${title}</b><div class="ev">${ev}</div></div><div class="acts">${acts||""}</div></div>`;}
+const required=a=>["ins","reg","refs","test","agr"].every(k=>a[k].state==="pass");
+
+function checks(a){
+  const locked=a.status==="approved"||a.status==="rejected";
+  const btn=(k,label)=>locked||a[k].state==="pass"?"":`<button class="btn quiet sm" type="button" data-pass="${k}">${label}</button>`;
+  const i=a.ins, r=a.reg, t=a.test;
+  const testEv=t.state==="pass"?`Sent ${t.sent}. Replied after <b>${t.reply} h</b> <span class="tgt ${t.reply<=24?"yes":"miss"}">(target 1 business day ${t.reply<=24?"✓":"✕"})</span>, firm price after <b>${t.price} h</b> <span class="tgt ${t.price<=48?"yes":"miss"}">(target 2 business days ${t.price<=48?"✓":"✕"})</span>`
+    :t.state==="wait"?`Sent ${t.sent}. Waiting for a reply; the clock is running.`:"Sent once documents and references pass.";
+  return `<div class="card"><h3>Approved checklist</h3><div class="chk">
+    ${row("ins","General liability insurance",i.file?`<b>${i.amt}</b> · expires ${i.exp} · ${i.holder?"City of Dallas listed as certificate holder ✓":"City of Dallas not listed as certificate holder (needed for Dallas jobs)"} · ${esc(i.file)}`:"No certificate provided.",btn("ins","Mark verified"))}
+    ${row("reg","Business or city registration",`${esc(r.num)}${r.src?` · checked on ${esc(r.src)}`:""}`,btn("reg","Mark verified"))}
+    ${row("refs","References called",a.refs.rows.length?`<table class="refs"><thead><tr><th>Reference</th><th>Called</th><th>Notes</th><th>Rating</th></tr></thead><tbody>${a.refs.rows.map(x=>`<tr><td>${esc(x[0])}, ${esc(x[1])}</td><td>${esc(x[2])}</td><td>${esc(x[3])}</td><td>${x[4]?"★".repeat(x[4]):"—"}</td></tr>`).join("")}</tbody></table>`:"None provided.",btn("refs","Mark called")) }
+    ${row("test","Test job request",testEv,t.state==="pass"||locked?"":t.state==="wait"?`<button class="btn quiet sm" type="button" data-test="reply">Demo: installer replies</button>`:"")}
+    ${row("agr","Listing agreement signed",a.agr.state==="pass"?`Signed ${a.agr.signed}`:"Sent for signature with the approval email.",btn("agr","Mark signed"))}
+    <div class="crow ${a.status==="approved"?"wait":"todo"}"><span class="st">${a.status==="approved"?"…":""}</span><div><b>First completed job (Approved label)</b><div class="ev">Recorded when their first job for a Next Partitions customer is signed off; their label then changes from Verified to Approved. Not needed to be listed.</div></div><div></div></div>
+  </div></div>`;
+}
+
+function decide(a){
+  if(a.status==="approved") return `<div class="card decide"><div class="ok"><b>Listed as Verified.</b> ${esc(a.name)} now has a public profile and receives job requests in their DFW service area. The label changes to Approved after their first completed job.</div><p class="note" style="margin:0">Approval email sent with the listing agreement and portal login. <i>(Prototype: nothing is sent.)</i></p></div>`;
+  if(a.status==="rejected") return `<div class="card decide"><div class="no"><b>Rejected:</b> ${esc(a.why)}.</div><p class="note" style="margin:0">The applicant was told why and can reapply once it's fixed.</p></div>`;
+  const ok=required(a), missing=["ins","reg","refs","test","agr"].filter(k=>a[k].state!=="pass").map(k=>({ins:"insurance",reg:"registration",refs:"references",test:"test job",agr:"listing agreement"})[k]);
+  return `<div class="card decide"><h3>Decision</h3>
+    <div class="btns"><button class="btn" type="button" id="approve" ${ok?"":"disabled"}>List as Verified</button><button class="btn quiet" type="button" id="askInfo">Ask for more info</button><button class="btn bad" type="button" id="reject">Reject</button></div>
+    <p class="note">${ok?"All required checks pass. Listing makes their profile public with the Verified label and starts job requests.":"Listing unlocks when these pass: "+missing.join(", ")+"."}</p>
+    <div id="rejBox" hidden><label class="field">Reason<select id="rejWhy"><option>No general liability insurance</option><option>Insurance below $300,000</option><option>No business or city registration</option><option>References didn't check out</option><option>No reply to the test job</option><option>Doesn't install the partitions our customers buy</option></select></label>
+      <label class="field">Note to the applicant<textarea id="rejNote" rows="2" placeholder="What they'd need to fix to reapply"></textarea></label><button class="btn bad sm" type="button" id="rejGo">Send rejection</button></div>
+    <div id="infoBox" hidden><label class="field">What do you need?<textarea id="infoNote" rows="2">Please send an insurance certificate with the City of Dallas listed as certificate holder.</textarea></label><button class="btn quiet sm" type="button" id="infoGo">Send request</button></div>
+  </div>`;
+}
+
+function render(){
+  launch(); list();
+  const a=app(), [l,c]=STATUS[a.status];
+  $("detail").innerHTML=`<div class="card"><div class="ahead"><div><h2>${esc(a.name)}</h2><p class="sub">${esc(a.city)}, TX ${a.zip} · serves ${a.radius} mi · applied ${a.applied}</p></div><span class="pill ${c}">${l}</span></div>
+    <div class="two" style="margin-top:16px"><dl class="kv"><dt>Contact</dt><dd>${esc(a.contact)}</dd><dt>Phone</dt><dd>${esc(a.phone)}</dd><dt>Email</dt><dd>${esc(a.email)}</dd><dt>In business</dt><dd>${a.years} years · crew ${a.crew}</dd></dl>
+    <dl class="kv"><dt>Materials</dt><dd>${esc(a.mats)}</dd><dt>Bracing</dt><dd>${esc(a.mounts)}</dd><dt>Extras</dt><dd>${esc(a.extras)}</dd><dt>Brands</dt><dd>${esc(a.brands||"—")}</dd></dl></div></div>
+    ${decide(a)}${checks(a)}
+    <p class="recheck"><b>Annual re-check:</b> insurance and registration are checked again every year. The installer and the job coordinator get a reminder 30 days before a certificate expires; an expired certificate pauses new job requests until it's renewed.</p>`;
+  wire(a);
+}
+function wire(a){
+  document.querySelectorAll("[data-pass]").forEach(b=>b.onclick=()=>{const k=b.dataset.pass;a[k].state="pass";
+    if(k==="ins")a.ins.holder=true; if(k==="refs")a.refs.rows=a.refs.rows.map(x=>[x[0],x[1],"Called today",x[3]||"Good work, would hire again",x[4]||5]);
+    if(k==="agr")a.agr.signed="today";
+    if(a.test.state==="todo"&&["ins","reg","refs"].every(x=>a[x].state==="pass"))a.test={state:"wait",sent:"today, 9:00 AM"},a.status="test";
+    render();});
+  document.querySelectorAll("[data-test]").forEach(b=>b.onclick=()=>{a.test={state:"pass",sent:a.test.sent,reply:6,price:22};a.status="ready";render();});
+  if($("approve"))$("approve").onclick=()=>{a.status="approved";approved++;render();};
+  if($("reject"))$("reject").onclick=()=>{$("rejBox").hidden=false;$("infoBox").hidden=true;$("rejWhy").focus();};
+  if($("askInfo"))$("askInfo").onclick=()=>{$("infoBox").hidden=false;$("rejBox").hidden=true;$("infoNote").focus();};
+  if($("rejGo"))$("rejGo").onclick=()=>{a.status="rejected";a.why=$("rejWhy").value;render();};
+  if($("infoGo"))$("infoGo").onclick=()=>{a.status="info";render();};
+}
+{const h=location.hash.slice(1);if(A.some(a=>a.id===h))cur=h;}
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,1107 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DFW Partition Installers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<style>
+/* Layout: same 1292px container + 12-col grid as the homepage mockup. Listing (8 cols) + sticky request card (4 cols).
+   Light-only, nextpartitions.com tokens. */
+:root{
+  --bg:#fbfaf9; --band:#f4f2ee; --surface:#ffffff; --fg:#1c0e05; --muted:#6d6059;
+  --border:#e1ddd7; --accent:#e8630a; --accent-strong:#c95200; --accent-soft:#fdeee3; --on-accent:#ffffff;
+  --ink:#262626; --ink-fg:#f8f8f8; --ink-muted:#c9c2bc; --good:#1f7a4d; --good-soft:#e6f3ec; --gold:#b7791f;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --container:1360px; --gutter:34px; --gap:24px; --section:80px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter)}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--gap)}
+.c12{grid-column:span 12}.c7{grid-column:span 7}.c5{grid-column:span 5}.c8{grid-column:span 8}.c4{grid-column:span 4}.c6{grid-column:span 6}.c3{grid-column:span 3}
+@media (max-width:1024px){.c8,.c4{grid-column:span 12}.c3{grid-column:span 6}}
+@media (max-width:760px){:root{--gutter:16px;--gap:16px;--section:56px}.c6,.c3{grid-column:span 12}}
+.section{padding-block:var(--section)}
+.band{background:var(--band)}
+.mocknote{background:#fff3c4;border-bottom:1px solid #f0d98a;font-size:13px;color:#5c4400;text-align:center;padding:8px 16px}
+
+/* header (same as homepage mockup) */
+.topbar{background:var(--ink);color:var(--ink-fg);font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-block:9px;flex-wrap:wrap}
+.topbar .contact{display:flex;gap:20px;flex-wrap:wrap}
+.nav{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:env(safe-area-inset-top,0px);z-index:40}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:40px;width:auto}
+.brand b{display:block;font-size:19px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.menu{display:flex;gap:28px;font-weight:600}
+.menu a{text-decoration:none}
+.menu a.on{color:var(--accent-strong)}
+@media (max-width:980px){.menu{display:none}.topbar .tagline{display:none}}
+@media (max-width:520px){.brand small{display:none}.brand img{height:34px}.hero .btn{white-space:normal;text-align:center;width:100%}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;background:var(--accent);color:var(--on-accent);font:inherit;font-weight:700;font-size:16px;padding:12px 22px;min-height:46px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--accent-strong)}
+.btn.ghost{background:var(--surface);color:var(--accent-strong);border:2px solid var(--accent)}
+.btn.ghost:hover{background:var(--accent-soft)}
+.btn.sm{font-size:14px;padding:8px 14px;min-height:38px}
+.link{font:inherit;background:none;border:0;padding:0;color:var(--accent-strong);font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* hero */
+.crumbs{font-size:14px;color:var(--muted);padding-top:28px;display:flex;flex-wrap:wrap;gap:6px}
+.crumbs a{text-decoration:none}.crumbs a:hover{text-decoration:underline}
+.hero{padding-block:16px 40px;border-bottom:1px solid var(--border)}
+.hero h1{font-size:clamp(32px,4.2vw,50px);font-weight:900;letter-spacing:-.035em;line-height:1.06;margin:10px 0 14px;text-wrap:balance;max-width:20ch}
+.hero .lead{font-size:18px;color:var(--muted);max-width:62ch;margin:0 0 22px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin:0 0 26px;padding:0;list-style:none}
+.facts li{display:flex;flex-direction:column}
+.facts b{font-size:26px;font-weight:900;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1}
+.facts span{font-size:13px;color:var(--muted)}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.startcfg{background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--accent);padding:22px;margin:0 0 22px;box-shadow:0 10px 30px rgba(28,14,5,.06);max-width:760px}
+.startcfg h2{font-size:22px;font-weight:900;letter-spacing:-.02em;margin:0 0 6px}
+.startcfg p{margin:0 0 14px;color:var(--muted)}
+.startcfg .btn{font-size:17px;min-height:52px;padding:14px 26px}
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0 0;padding:0;list-style:none;font-size:14px}
+.steps3 li{border-top:2px solid var(--border);padding-top:8px}.steps3 b{display:block;font-size:13px;color:var(--accent-strong)}
+@media (max-width:560px){.steps3{grid-template-columns:1fr}.startcfg .btn{width:100%}}
+.zipbar.secondary label{font-size:14px;color:var(--muted)}
+.mbar{display:none}
+.mbar.away{visibility:hidden}
+@media (max-width:760px){.mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:45;background:var(--surface);border-top:1px solid var(--border);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}.mbar .btn{width:100%}body{padding-bottom:76px}}
+
+/* filters + cards */
+.filters{display:flex;flex-wrap:nowrap;align-items:center;gap:8px;margin:0 0 18px;overflow-x:auto;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+@media (min-width:601px){.filters .fchip{flex:1 1 auto;text-align:center}}
+.filters .lbl{font-size:13px;font-weight:700;color:var(--muted);margin-right:4px;text-transform:uppercase;letter-spacing:.06em}
+.fchip{font:inherit;font-size:14px;font-weight:600;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:6px 11px;cursor:pointer;white-space:nowrap;flex:none}
+.fchip[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent)}
+.count{font-size:14px;color:var(--muted);margin:0 0 12px}
+.card{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;background:var(--surface);border:1px solid var(--border);padding:20px;margin-bottom:14px}
+.card.pref{border-top:3px solid var(--accent);padding-top:18px}
+@media (max-width:620px){.card{grid-template-columns:1fr}}
+.card .ph{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--band)}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .ph span{position:absolute;left:6px;bottom:6px;font-size:11px;font-weight:600;background:rgba(28,14,5,.75);color:#fff;padding:2px 6px}
+.chead{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+.chead h3{margin:0;font-size:19px;font-weight:800;letter-spacing:-.01em}
+.tier{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border:1px solid}
+.tier.preferred{color:var(--accent-strong);border-color:var(--accent);background:var(--accent-soft)}
+.tier.certified{color:var(--good);border-color:#9fd1b7;background:var(--good-soft)}
+.tier.approved{color:var(--good);border-color:#9fd1b7;background:var(--good-soft)}
+.tier.verified{color:var(--muted);border-color:var(--border);background:var(--band)}
+.sample{font-size:11px;font-weight:700;color:#7a5a00;background:#fff3c4;padding:2px 6px}
+.meta{font-size:14px;color:var(--muted);margin:4px 0 8px}
+.stars{color:var(--gold);letter-spacing:1px}
+.checks{display:flex;flex-wrap:wrap;gap:6px 16px;list-style:none;margin:0 0 10px;padding:0;font-size:13px}
+.checks li{display:flex;align-items:center;gap:5px}
+.checks svg{width:15px;height:15px;color:var(--good);flex:none}
+.mats{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.mats span{font-size:12px;font-weight:600;border:1px solid var(--border);padding:3px 8px;background:var(--bg)}
+.cact{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
+.cact .web{font-size:13px;color:var(--muted)}
+.disc{font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--muted);padding:10px 12px;margin:4px 0 22px}
+.req .disc{margin:12px 0 0}
+.supply{font-size:13px;color:var(--good);font-weight:600;margin:0 0 10px}
+
+/* proximity map */
+.prox{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:20px;background:var(--surface);border:1px solid var(--border);padding:18px;margin:0 0 22px}
+@media (max-width:760px){.prox{grid-template-columns:1fr}}
+.mapbox{min-width:0}
+#map{width:100%;height:auto;display:block;background:#f3efe8;border:1px solid var(--border);cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none}
+#map.dragging{cursor:grabbing}
+.mapwrap{position:relative}
+.mapwrap:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mapctl{position:absolute;top:8px;right:8px;display:flex;flex-direction:column;gap:4px}
+.mapctl button{font:inherit;font-size:20px;font-weight:700;line-height:1;width:36px;height:36px;background:var(--surface);color:var(--fg);border:1px solid var(--border);box-shadow:0 2px 6px rgba(0,0,0,.08);cursor:pointer}
+.mapctl button.txt{font-size:11px;font-weight:700;width:36px;padding:0 2px}
+.mapctl button:hover{border-color:var(--accent);color:var(--accent-strong)}
+.mapctl button:disabled{color:var(--border);cursor:default;border-color:var(--border)}
+.zlevel{position:absolute;left:8px;bottom:8px;font-size:11px;font-weight:700;color:var(--muted);background:rgba(255,255,255,.85);padding:2px 6px}
+.maplegend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--muted);margin:8px 0 0}
+.maplegend span{display:inline-flex;align-items:center;gap:5px}
+.lg{display:inline-block;width:11px;height:11px;border-radius:50%}
+.lg.job{background:var(--accent);box-shadow:0 0 0 2px #fff,0 0 0 3px var(--accent)}
+.lg.base{background:var(--ink)}
+.lg.ring{border:1.5px dashed var(--good);background:rgba(31,122,77,.08);border-radius:50%}
+.mapnote{margin-left:auto}
+.nearest{min-width:0;display:flex;flex-direction:column;gap:10px}
+.nearest .lab{display:block;font-weight:800;font-size:17px;margin-bottom:8px}
+.zrow{display:flex;gap:8px}
+.zrow input{flex:1;min-width:0;font:inherit;font-size:16px;border:1px solid var(--border);padding:9px 11px;min-height:42px}
+.zhint{font-size:12px;color:var(--muted);margin:6px 0 0}
+.nlist{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.nlist li{display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:10px;align-items:center;border:1px solid var(--border);padding:9px 10px;font-size:14px;cursor:pointer;background:var(--bg)}
+.nlist li:hover,.nlist li.hl{border-color:var(--accent);background:var(--accent-soft)}
+.nlist .rank{display:grid;place-items:center;width:24px;height:24px;background:var(--ink);color:#fff;font-weight:800;font-size:12px}
+.nlist b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nlist .d{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.nlist .d b{font-size:15px}
+.inside{color:var(--good);font-size:12px;font-weight:600}
+.outside{color:#9a5b00;font-size:12px;font-weight:600}
+.countrow{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin:0 0 12px}
+.countrow .count{margin:0}
+.count .snote{display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:2px}
+.sortby{display:flex;align-items:center;gap:8px}
+.sortby label{font-size:13px;color:var(--muted);font-weight:600}
+.sortby select{font:inherit;font-size:14px;font-weight:600;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:0 10px;min-height:38px;cursor:pointer}
+.dist{display:inline-flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;font-size:14px;margin:0 0 8px;padding:6px 10px;background:var(--bg);border:1px solid var(--border)}
+.dist b{font-variant-numeric:tabular-nums}
+/* hero ZIP search */
+.zipbar{max-width:640px;margin:0 0 10px}
+.zipbar label{display:block;font-weight:800;font-size:15px;margin-bottom:6px}
+.zipbar .zrow input{font-size:18px;min-height:52px}
+.zipbar .btn{min-height:52px;font-size:17px}
+@media (max-width:560px){.zipbar .zrow{flex-direction:column}.zipbar .btn{width:100%}}
+/* map column */
+.mapcard{position:sticky;top:88px;background:var(--surface);border:1px solid var(--border);padding:12px}
+.maptoggle{display:none;margin:0 0 12px}
+@media (max-width:1024px){.c7,.c5{grid-column:span 12}.mapcard{position:static;display:none}.mapcard.open{display:block}.maptoggle{display:inline-flex}
+  .listcol{order:1}aside.c5{order:0}}
+.card.hl{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.feeline{font-size:12px;color:var(--muted)}
+/* request drawer */
+.scrim{position:fixed;inset:0;background:rgba(28,14,5,.4);z-index:70}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);z-index:80;overflow-y:auto;background:var(--bg);box-shadow:-10px 0 30px rgba(0,0,0,.15);padding:calc(16px + env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px))}
+.drawer .req{position:static;box-shadow:none}
+.dclose{position:absolute;top:10px;right:12px;font:inherit;font-size:26px;line-height:1;background:none;border:0;cursor:pointer;color:var(--muted);padding:4px 8px}
+.drawer .req{position:relative}
+/* sticky request card */
+.req{position:sticky;top:88px;background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--accent);padding:22px;box-shadow:0 10px 30px rgba(28,14,5,.06)}
+.req h2{font-size:21px;font-weight:900;letter-spacing:-.02em;margin:0 0 4px}
+.req .sub{font-size:14px;color:var(--muted);margin:0 0 14px}
+.to{font-size:14px;background:var(--accent-soft);border:1px solid var(--accent);padding:8px 10px;margin:0 0 12px;display:flex;justify-content:space-between;gap:8px}
+.f{display:grid;gap:5px;margin-bottom:12px}
+.f label,.f .lab{font-size:14px;font-weight:600}
+.f input,.f select{font:inherit;font-size:15px;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:9px 11px;min-height:42px;width:100%}
+.seg{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--border)}
+.seg button{font:inherit;font-size:14px;font-weight:600;background:var(--surface);color:var(--fg);border:0;padding:9px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--border)}
+.seg button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent-strong)}
+.xsell{font-size:14px;background:var(--good-soft);border:1px solid #9fd1b7;padding:10px 12px;margin:0 0 12px}
+.xsell b{display:block;color:var(--good);margin-bottom:2px}
+.req .btn{width:100%}
+.req .fine{font-size:12px;color:var(--muted);margin:10px 0 0}
+.ok{font-size:15px}
+.ok h3{margin:0 0 6px;font-size:20px;font-weight:900}
+@media (max-width:1024px){.req{position:static}}
+
+/* content sections */
+.h2{font-size:clamp(24px,2.6vw,32px);font-weight:900;letter-spacing:-.03em;margin:0 0 8px;line-height:1.15}
+.intro{color:var(--muted);margin:0 0 28px;max-width:720px}
+.tablewrap{overflow-x:auto;border:1px solid var(--border);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:15px}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--border)}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--band)}
+td.num{font-variant-numeric:tabular-nums;font-weight:700}
+tr:last-child td{border-bottom:0}
+.note{font-size:13px;color:var(--muted);margin:10px 0 0}
+.job{background:var(--surface);border:1px solid var(--border);min-width:0}
+.job img{aspect-ratio:16/10;width:100%;object-fit:cover}
+.job .b{padding:16px}
+.job h3{margin:0 0 4px;font-size:17px;font-weight:800}
+.job p{margin:0;font-size:14px;color:var(--muted)}
+.guide h3{font-size:18px;font-weight:800;margin:0 0 8px}
+.guide ul{margin:0;padding-left:18px;color:var(--muted)}
+.guide li{margin-bottom:6px}
+.guide .card2{border-top:2px solid var(--border);padding-top:16px}
+details{border-bottom:1px solid var(--border);padding:14px 0}
+summary{font-weight:700;cursor:pointer;font-size:17px}
+details p{margin:8px 0 0;color:var(--muted);max-width:75ch}
+.xband{background:var(--ink);color:var(--ink-fg)}
+.xband .wrap{padding-block:56px}
+.xband h2{font-size:clamp(24px,2.6vw,32px);font-weight:900;letter-spacing:-.03em;margin:0 0 6px}
+.xband p{margin:0;color:var(--ink-muted);max-width:640px}
+.xband .grid{align-items:center}
+.xband .act{display:flex;justify-content:flex-end;gap:12px;flex-wrap:wrap}
+@media (max-width:1024px){.xband .act{justify-content:flex-start}}
+.recruit{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;background:var(--surface);border:1px dashed var(--border);padding:24px}
+.recruit h3{margin:0 0 4px;font-size:20px;font-weight:800}
+.recruit p{margin:0;color:var(--muted)}
+.nearby{display:flex;flex-wrap:wrap;gap:8px 24px;font-weight:600}
+.nearby a{color:var(--accent-strong)}
+
+/* profile view */
+.pfhead{display:grid;grid-template-columns:96px minmax(0,1fr);gap:20px;align-items:center}
+.logo{width:96px;height:96px;display:grid;place-items:center;background:var(--ink);color:#fff;font-weight:900;font-size:30px;letter-spacing:-.03em}
+.verify{background:var(--surface);border:1px solid var(--border);padding:20px}
+.verify h3{margin:0 0 10px;font-size:16px;font-weight:800}
+.verify dl{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;margin:0;font-size:14px}
+.verify dt{color:var(--muted)}
+.verify dd{margin:0;font-weight:600}
+.verify dd.ok{color:var(--good)}
+.review{background:var(--surface);border:1px solid var(--border);padding:18px;min-width:0}
+.review p{margin:6px 0 8px}
+.review small{color:var(--muted)}
+.vtag{font-size:11px;font-weight:700;color:var(--good);background:var(--good-soft);padding:2px 6px;margin-left:6px}
+.badgebox{display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center;background:var(--surface);border:1px solid var(--border);padding:22px}
+@media (max-width:700px){.badgebox{grid-template-columns:1fr}}
+pre{margin:8px 0 0;background:var(--band);border:1px solid var(--border);padding:12px;font-family:var(--mono);font-size:12px;overflow-x:auto;white-space:pre}
+.copy{margin-top:8px}
+
+/* footer */
+footer{background:#1a1a1a;color:#d8d2cc;font-size:14px}
+footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+/* "Price your restroom": the configurator's steps as a slide-by-slide wizard */
+.pricer{background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--accent);margin:0 0 22px;box-shadow:0 10px 30px rgba(28,14,5,.06);scroll-margin-top:96px}
+.pricer .phead{padding:22px 24px 18px;border-bottom:1px solid var(--border)}
+.pricer .eyebrow{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-strong);margin:0}
+.pricer h2{font-size:26px;font-weight:900;letter-spacing:-.02em;margin:2px 0 6px}
+.pricer .sub{margin:0;color:var(--muted)}
+.prail{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.prail button{width:100%;display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:none;border:0;padding:0;font:inherit;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;text-align:left}
+.prail button::before{content:"";display:block;width:100%;height:4px;background:var(--border)}
+.prail button.done{color:var(--fg)}
+.prail button.done::before{background:var(--fg)}
+.prail button[aria-current="step"]{color:var(--accent-strong);font-weight:800}
+.prail button[aria-current="step"]::before{background:var(--accent)}
+.prail button:disabled{cursor:default}
+.pcount{display:none;margin:12px 0 0;font-size:14px;font-weight:700}
+.pbody{display:grid;grid-template-columns:minmax(0,1fr) 300px}
+.pbody.final{grid-template-columns:1fr}
+.pbody.final .psum{display:none}
+.pstage{padding:24px;min-width:0;display:flex;flex-direction:column;min-height:420px}
+.pslide{flex:1}
+.pslide:not([data-step="6"]){min-height:var(--pmin,0)}
+.pslide.in{animation:pin .28s ease}
+@keyframes pin{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:none}}
+.pslide.back{animation-name:pback}
+@keyframes pback{from{opacity:0;transform:translateX(-18px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.pslide.in{animation:none}}
+.pslide h3{font-size:22px;font-weight:900;letter-spacing:-.01em;margin:0 0 4px;outline:0}
+.pslide .q{margin:0 0 18px;color:var(--muted)}
+.ocards{display:grid;gap:10px}
+.ocards.m5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.ocards.m4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.ocards.m5l{grid-template-columns:repeat(5,minmax(0,1fr))}
+.ocards.m5l button{padding:8px;gap:4px}
+.ocards.m5l svg{height:62px}
+.ocards.m5l small{font-size:13px;line-height:1.25}
+.ocards.m2{grid-template-columns:repeat(2,minmax(0,220px))}
+.ocards.m2 button{padding-right:40px}
+.ocards button{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:var(--surface);border:1px solid var(--border);padding:10px;font:inherit;font-size:15px;font-weight:700;cursor:pointer;text-align:left;min-width:0;transition:border-color .15s,box-shadow .15s}
+.ocards button:hover{border-color:var(--accent)}
+.ocards button small{font-weight:500;font-size:13px;color:var(--muted);line-height:1.35}
+.ocards img{width:100%;height:110px;object-fit:cover;display:block}
+.ocards svg{width:100%;height:auto;display:block;background:var(--band)}
+.ocards button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+.ocards button[aria-pressed="true"]::after{content:"✓";position:absolute;top:8px;right:8px;width:24px;height:24px;display:grid;place-items:center;background:var(--accent);color:#fff;font-size:14px;font-weight:900}
+.swatches{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:10px}
+.swatches button{display:flex;flex-direction:column;align-items:stretch;gap:6px;background:var(--surface);border:1px solid var(--border);padding:6px;font:inherit;font-size:12px;font-weight:600;cursor:pointer;text-align:left;line-height:1.25}
+.swatches button i{height:52px;border:1px solid rgba(0,0,0,.12);display:block}
+.swatches button i.later{background:repeating-linear-gradient(45deg,#fff,#fff 6px,var(--band) 6px,var(--band) 12px);display:grid;place-items:center;font-style:normal;font-size:20px;color:var(--muted)}
+.swatches button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+.pgroup{margin:0 0 20px}
+.pgroup>b{display:block;font-size:15px;margin:0 0 8px}
+.pchips{display:flex;flex-wrap:wrap;gap:8px}
+.pchips button{background:var(--surface);border:1px solid var(--border);min-height:44px;padding:0 16px;font:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.pchips button small{font-weight:500;color:var(--muted);margin-left:4px}
+.pchips button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent);color:var(--accent-strong)}
+.pstepper{display:flex;align-items:center;border:1px solid var(--border);background:var(--surface);width:max-content}
+.pstepper button{width:56px;height:56px;border:0;background:none;font-size:24px;cursor:pointer}
+.pstepper button:hover{background:var(--band)}
+.pstepper output{min-width:56px;text-align:center;font-weight:900;font-size:24px}
+.pcheck{display:flex;gap:12px;align-items:flex-start;font-size:15px;cursor:pointer;max-width:52ch;border:1px solid var(--border);padding:12px 14px}
+.pcheck input{width:22px;height:22px;margin:1px 0 0;accent-color:var(--accent)}
+.pcheck small{display:block;color:var(--muted);font-weight:400}
+.pplans{margin-top:16px;font-size:15px}
+.pdrop{display:grid;gap:4px;margin-top:10px;border:2px dashed var(--border);padding:16px;cursor:pointer;background:var(--band)}
+.pdrop:hover{border-color:var(--accent)}
+.pdrop input{font:inherit;font-size:14px}
+.pdrop span{font-size:13px;color:var(--muted)}
+.pfile{margin:8px 0 0;font-weight:700}
+.pwhy{margin-top:22px;border-top:1px solid var(--border);padding-top:18px}
+.pwhy .gh2{display:block;font-size:15px;font-weight:800;margin:0 0 10px}
+.pwhy ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 24px}
+.pwhy li{position:relative;padding-left:18px;font-size:13px;color:var(--muted);line-height:1.45}
+.pwhy li::before{content:"✓";position:absolute;left:0;top:0;color:var(--accent-strong);font-weight:800}
+.pwhy li b{color:var(--fg);font-weight:700}
+.phelp{margin:14px 0 0;font-size:13px;color:var(--muted)}
+.phelp a{color:var(--fg);font-weight:600}
+.passure{margin:-6px 0 24px;font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
+.passure span{color:#b9b1a8}
+@media (max-width:640px){.pwhy ul{grid-template-columns:1fr}}
+.pstallwrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:28px;align-items:start}
+.pnums{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px;max-width:460px;margin-bottom:18px}
+.pnums button{min-height:52px;border:1px solid var(--border);background:var(--surface);font:inherit;font-size:20px;font-weight:800;cursor:pointer}
+.pnums button:hover{border-color:var(--accent)}
+.pnums button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.pswitch{display:flex;gap:12px;align-items:flex-start;font-size:15px;cursor:pointer;padding:10px 0;border-top:1px solid var(--border);max-width:460px}
+.pswitch input{appearance:none;flex:none;width:40px;height:24px;margin:0;border-radius:12px;background:#d6d0c9;position:relative;cursor:pointer;transition:background .15s}
+.pswitch input::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:left .15s}
+.pswitch input:checked{background:var(--accent)}
+.pswitch input:checked::after{left:19px}
+.pswitch small{display:block;color:var(--muted);font-size:13px}
+.psizes{margin:6px 0 0;padding-top:10px;border-top:1px solid var(--border);font-size:14px;color:var(--muted);max-width:460px}
+.psizes b{color:var(--fg)}
+#pSizeBox{margin-top:14px}
+#pSizeBox .pgroup{margin:0 0 8px;display:flex;align-items:center;gap:10px}
+#pSizeBox .pgroup>b{width:42px;flex:none;margin:0;font-size:14px}
+#pSizeBox .pchips{gap:4px;flex-wrap:nowrap}
+#pSizeBox .pchips button{min-height:36px;padding:0 8px;font-size:14px;white-space:nowrap}
+#pSizeBox .pchips small{display:none}
+.pcust{display:flex;align-items:center;gap:6px;flex-wrap:nowrap}
+.pcust input{width:56px;min-height:36px;border:1px solid var(--accent);padding:0 8px;font:inherit;font-size:15px;font-weight:700}
+.pcust input[aria-invalid="true"]{border-color:#b42318}
+.pcust select{min-height:36px;border:1px solid var(--border);background:#fff;font:inherit;font-size:14px;padding:0 4px}
+.pcust .pin{font-size:12px;color:var(--muted);white-space:nowrap}
+.pcust .px{width:32px;min-height:36px;border:1px solid var(--border);background:#fff;font-size:18px;cursor:pointer;color:var(--muted)}
+.podd{margin:6px 0 0;font-size:13px;color:var(--muted)}
+.prow3{display:flex;flex-wrap:wrap;gap:0 32px}
+.pnums#pUNums{grid-template-columns:repeat(9,minmax(0,1fr));max-width:520px}
+.pplan{margin:0;background:var(--band);border:1px solid var(--border);padding:14px}
+.pplan svg{width:100%;height:96px;display:block}
+.pplan figcaption{font-size:13px;color:var(--muted);text-align:center;margin-top:6px}
+@media (max-width:1024px){.pstallwrap{grid-template-columns:1fr}.pplan{max-width:420px}}
+@media (max-width:640px){.pnums{grid-template-columns:repeat(4,minmax(0,1fr))}.pnums#pUNums{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.ptip{font-size:14px;color:var(--muted);margin:14px 0 0}
+.pnav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:24px;padding-top:18px;border-top:1px solid var(--border)}
+.pnav .btn{min-width:150px}
+.pnav [hidden]{display:none}
+.psum{background:var(--band);border-left:1px solid var(--border);padding:20px 22px;display:flex;flex-direction:column;gap:14px}
+.psum h3{font-size:16px;font-weight:800;margin:0}
+.psum dl,.preview dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 12px;font-size:14px}
+.psum dt,.preview dt{color:var(--muted)}
+.psum dd,.preview dd{margin:0;font-weight:600;text-align:right}
+.psum dd.todo{color:var(--muted);font-weight:500}
+.pmini{border-top:1px solid var(--border);padding-top:12px;display:flex;flex-direction:column;gap:2px}
+.pmini span{font-size:14px;color:var(--muted)}
+.pmini b{font-size:20px;font-weight:900;font-variant-numeric:tabular-nums}
+.psum .fine2,.preview .fine2{font-size:13px;color:var(--muted);margin:0}
+.pchip{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px}
+.pchip b{background:var(--accent-soft);border:1px solid var(--accent);padding:4px 10px;color:var(--accent-strong)}
+.pchip button,.preview dd button{background:none;border:0;color:var(--accent-strong);font:inherit;text-decoration:underline;cursor:pointer;padding:0}
+.preview{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,400px);gap:28px;align-items:start}
+.preview dd{text-align:left}
+.preview dd button{font-size:13px;font-weight:500;margin-left:8px}
+.ptot2{background:var(--band);border:1px solid var(--border);padding:20px;display:grid;gap:12px}
+.ptot2 div{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.ptot2 span{font-size:14px;color:var(--muted)}
+.ptot2 b{font-size:18px;font-weight:900;font-variant-numeric:tabular-nums;text-align:right}
+.ptot2 .grand{border-top:1px solid var(--border);padding-top:12px}
+.ptot2 .grand b{font-size:28px}
+.ptot2 small{display:block;font-size:12px;color:var(--muted);font-weight:500;text-align:right}
+.ptot2 .btn{width:100%;font-size:17px;min-height:54px}
+.pricer .ptot2 .btn{width:100%}
+.ptot2[hidden]{display:none}
+.pgate{gap:10px;border-top:4px solid var(--accent)}
+.pgate .gh{font-size:20px;font-weight:900;text-align:left}
+.pgate ul{margin:0 0 4px;padding:0;list-style:none;display:grid;gap:6px;font-size:14px}
+.pgate li{display:flex;gap:8px}.pgate li::before{content:"✓";color:var(--accent-strong);font-weight:900}
+.pgate label{font-size:14px;font-weight:700}
+.pgate input{font:inherit;min-height:50px;border:1px solid var(--border);padding:0 12px;background:#fff;width:100%}
+.pgate input[aria-invalid="true"]{border-color:#b42318}
+.perr{margin:0;color:#b42318;font-size:13px;min-height:0}
+.perr:empty{display:none}
+.psum .btn{width:100%;font-size:16px}
+.pmini b.locked{filter:blur(6px);user-select:none;color:var(--muted)}
+@media (min-width:1025px){.psum{position:sticky;top:84px;align-self:start}}
+@media (max-width:1024px){.pbody{grid-template-columns:1fr}.psum{border-left:0;border-top:1px solid var(--border)}.psum dl{display:none}.ocards.m5,.ocards.m5l{grid-template-columns:repeat(3,minmax(0,1fr))}.swatches{grid-template-columns:repeat(6,minmax(0,1fr))}.preview{grid-template-columns:1fr}}
+@media (max-width:640px){.prail{display:none}.pcount{display:block}.ocards.m5,.ocards.m4,.ocards.m5l{grid-template-columns:repeat(2,minmax(0,1fr))}.ocards.m2{grid-template-columns:repeat(2,minmax(0,1fr))}.ocards img{height:84px}.swatches{grid-template-columns:repeat(4,minmax(0,1fr))}.pstage,.pricer .phead{padding-inline:16px}.pstage{min-height:0}.pricer .pnav .btn{min-width:0;width:auto;flex:1}.pricer .pnav #pBack{flex:0 0 auto}.pmini{flex-direction:row;justify-content:space-between;align-items:baseline}.psum{padding:14px 16px}}
+</style>
+
+<div class="mocknote"><b>Mockup:</b> all installers, ratings, reviews, prices and job counts on this page are examples. Verification fields vary by state (Texas has no statewide general contractor license).</div>
+
+<div class="topbar"><div class="wrap"><div class="contact"><span>sales@nextpartitions.com</span><span>1-833-997-7489</span></div><div class="tagline">Authorized Distributor — All Major Brands</div></div></div>
+<nav class="nav" aria-label="Main"><div class="wrap">
+  <a class="brand" href="home.html"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Commercial Partitions</small></span></a>
+  <div class="menu"><a href="home.html">Partitions</a><a href="home.html">Mounting Styles</a><a href="home.html">Hardware &amp; Parts</a><a href="home.html">Resources</a></div>
+  <a class="btn" href="configurator.html">Get a Quote</a>
+</div></nav>
+
+<!-- ================= METRO PAGE ================= -->
+<main id="metro">
+<div class="wrap">
+  <div class="crumbs" id="top"><a href="home.html">Home</a>›<a href="texas.html">Installers</a>›<a href="texas.html">Texas</a>›<span>Dallas–Fort Worth</span></div>
+  <header class="hero">
+    <h1>Bathroom Partition Installers in Dallas–Fort Worth</h1>
+    <p class="lead">Price your toilet partitions with us, and we match the job with approved, insured installers across Dallas–Fort Worth. You deal with one team from quote to installed restroom.</p>
+    <ul class="facts">
+      <li><b>4</b><span>approved installers</span></li>
+      <li><b>63</b><span>installs for our customers</span></li>
+      <li><b>★ 4.8</b><span>avg. rating from our customers</span></li>
+    </ul>
+    <section class="pricer" id="configure" aria-labelledby="pricerH">
+      <div class="phead">
+        <p class="eyebrow">Your price in about a minute</p>
+        <h2 id="pricerH">Price your restroom</h2>
+        <p class="sub" id="pSub">Seven quick questions, the same as our configurator. Enter your email at the end and see an instant quote range: partitions plus installation by approved DFW installers.</p>
+        <ol class="prail" id="pRail" aria-label="Steps"></ol>
+        <p class="pcount" id="pCount" aria-live="polite"></p>
+      </div>
+      <div class="pbody" id="pBody">
+        <div class="pstage">
+          <div class="pslide" data-step="0">
+            <h3 tabindex="-1">Which material do you need?</h3>
+            <p class="q">Not sure? Most schools and gyms pick solid plastic; most offices pick powder coated.</p>
+            <div class="ocards m5" role="group" aria-label="Material" id="pMats"></div>
+          </div>
+          <div class="pslide" data-step="1" hidden>
+            <h3 tabindex="-1">How should the partitions be braced?</h3>
+            <p class="q">This depends on your floor and ceiling. Overhead braced works almost anywhere.</p>
+            <div class="ocards m4" role="group" aria-label="Bracing" id="pMnts"></div>
+          </div>
+          <div class="pslide" data-step="2" hidden>
+            <h3 tabindex="-1">Pick a color</h3>
+            <p class="q">Or decide later: color doesn't change the price. The full color chart depends on material and brand.</p>
+            <div class="swatches" role="group" aria-label="Color" id="pColors"></div>
+          </div>
+          <div class="pslide" data-step="3" hidden>
+            <h3 tabindex="-1">What does the restroom look like?</h3>
+            <p class="q">Seen from above. Pick the closest; we check it on the shop drawings. <button class="link" type="button" id="pPlansBtn" aria-expanded="false" aria-controls="pPlansBox">Have drawings? Upload them instead</button></p>
+            <div class="ocards m5l" role="group" aria-label="Layout" id="pLays"></div>
+            <div class="pplans">
+              <div id="pPlansBox" hidden>
+                <label class="pdrop"><b>Upload your drawings</b><span>PDF, DWG, DXF or a photo of a sketch. We read the layout and sizes from your drawings.</span><input type="file" id="pPlans" accept=".pdf,.dwg,.dxf,.png,.jpg,.jpeg,.heic"></label>
+                <p class="pfile" id="pPlansName" hidden></p>
+              </div>
+            </div>
+          </div>
+          <div class="pslide" data-step="4" hidden>
+            <h3 tabindex="-1">How many stalls?</h3>
+            <p class="q">Count every toilet stall in the restroom, including any accessible one.</p>
+            <div class="pstallwrap">
+              <div>
+                <div class="pnums" role="group" aria-label="Number of stalls" id="pNums"></div>
+                <label class="pswitch"><input type="checkbox" id="pAda"><span><b>Include an accessible (ADA) stall</b><small>60" wide. Most commercial restrooms need one.</small></span></label>
+                <label class="pswitch"><input type="checkbox" id="pPriv"><span><b>Extra privacy</b><small>Continuous hinges and brackets close the gaps around doors</small></span></label>
+                <p class="psizes" id="pSizes"></p>
+                <p class="podd" id="pOddP" hidden>Mixed sizes or an odd room? <button class="link" type="button" id="pOdd">Upload your drawings</button></p>
+              </div>
+              <div>
+              <figure class="pplan"><div id="pPlan"></div><figcaption id="pPlanCap"></figcaption></figure>
+                <div id="pSizeBox" hidden>
+                  <div class="pgroup"><b id="pWL">Width</b><div class="pchips" role="group" aria-labelledby="pWL" id="pWidth"></div></div>
+                  <div class="pgroup"><b id="pDL">Depth</b><div class="pchips" role="group" aria-labelledby="pDL" id="pDepth"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pslide" data-step="5" hidden>
+            <h3 tabindex="-1">How many urinal screens?</h3>
+            <p class="q">The panels between urinals. Choose 0 for a women's or single-user restroom.</p>
+            <div class="pnums" role="group" aria-label="Number of urinal screens" id="pUNums"></div>
+            <div id="pUOpts" class="prow3" hidden>
+              <div class="pgroup"><b id="pUDL">Depth</b><div class="pchips" role="group" aria-labelledby="pUDL" id="pUDepth"></div></div>
+              <div class="pgroup"><b id="pUHL">Height</b><div class="pchips" role="group" aria-labelledby="pUHL" id="pUHeight"></div></div>
+            </div>
+          </div>
+          <div class="pslide" data-step="6" hidden>
+            <h3 tabindex="-1" id="pFinalH">Your instant quote range</h3>
+            <p class="q" id="pFinalQ">Check your answers, then enter your email to see the price range.</p>
+            <div class="preview">
+              <div>
+                <div class="pchip" id="pChip" hidden style="margin-bottom:12px"><b id="pChipName"></b><button type="button" id="pChipClear">Use any approved installer</button></div>
+                <dl id="pReview"></dl>
+                <div class="pwhy">
+                  <b class="gh2">Why book through Next Partitions</b>
+                  <ul>
+                    <li><b>One team, quote to installed restroom.</b> We line up delivery and the install date.</li>
+                    <li><b>Approved installers only.</b> Insured, registered, references checked.</li>
+                    <li><b>No markup on installation.</b> Installers price from rates agreed with us.</li>
+                    <li><b>Shop drawings in 24–48 hours.</b> Firm quote before you commit.</li>
+                    <li><b>Delivered to your job site.</b> All hardware included.</li>
+                    <li><b>Authorized distributor, all major brands.</b> Purchase orders welcome.</li>
+                  </ul>
+                  <p class="phelp">Questions? Call <a href="tel:18339977489">1-833-997-7489</a> or email <a href="mailto:sales@nextpartitions.com">sales@nextpartitions.com</a>.</p>
+                </div>
+              </div>
+              <form class="ptot2 pgate" id="pGate" novalidate>
+                <b class="gh">See your instant quote range</b>
+                <ul><li>Partitions price for this configuration</li><li>Installation estimate from approved DFW installers</li><li>Estimated total, and a copy of your configuration by email</li></ul>
+                <label for="pEmail">Email</label>
+                <input id="pEmail" type="email" inputmode="email" autocomplete="email" placeholder="you@company.com" required aria-describedby="pEmailErr">
+                <p class="perr" id="pEmailErr" aria-live="polite"></p>
+                <button class="btn" type="submit">Show my quote range →</button>
+                <p class="fine2">Free, no obligation, no spam. Your details stay with Next Partitions and aren't shared with installers. <i>(Prototype: no email is sent.)</i></p>
+              </form>
+              <div class="ptot2" id="pPrice" aria-live="polite" hidden>
+                <div><span>Partitions (Next Partitions)</span><b id="pParts"></b></div>
+                <div><span>Installation estimate</span><b id="pInst"></b></div>
+                <div class="grand"><span>Estimated total</span><b id="pTotal"></b></div>
+                <a class="btn" id="pGo" href="configurator.html#dfw">Continue to full quote →</a>
+                <p class="fine2" id="pSent"></p>
+              </div>
+            </div>
+          </div>
+          <div class="pnav">
+            <button class="btn ghost" type="button" id="pBack">← Back</button>
+            <button class="btn" type="button" id="pNext">Next →</button>
+          </div>
+        </div>
+        <aside class="psum" aria-labelledby="pSumH">
+          <h3 id="pSumH">Your restroom so far</h3>
+          <dl id="pList"></dl>
+          <div class="pmini" aria-live="polite"><span>Your instant quote range</span><b id="pMini"></b></div>
+          <button class="btn" type="button" id="pSkip">Get my instant quote range</button>
+          <p class="fine2" id="pMiniNote">Partitions plus installation. Free, no obligation.</p>
+        </aside>
+      </div>
+    </section>
+    <p class="passure">One team from quote to installed restroom<span aria-hidden="true">·</span>Approved, insured installers<span aria-hidden="true">·</span>No markup on installation<span aria-hidden="true">·</span>Shop drawings in 24–48 hours</p>
+    <form class="zipbar secondary" id="zipForm" novalidate>
+      <label for="jobZip">Or browse installers near your job site</label>
+      <div class="zrow"><input id="jobZip" inputmode="numeric" maxlength="5" placeholder="e.g. 75201" autocomplete="postal-code"><button class="btn ghost" type="submit">Show nearby installers</button></div>
+      <p class="zhint" id="zipMsg" hidden></p>
+    </form>
+  </header>
+</div>
+
+<section class="section" style="padding-top:32px"><div class="wrap"><div class="grid">
+  <div class="c7 listcol" style="min-width:0">
+    <div class="filters" role="group" aria-label="Filter by material">
+      <button class="fchip" type="button" data-f="all" aria-pressed="true">All</button>
+      <button class="fchip" type="button" data-f="steel" aria-pressed="false">Powder coated</button>
+      <button class="fchip" type="button" data-f="hdpe" aria-pressed="false">HDPE</button>
+      <button class="fchip" type="button" data-f="phenolic" aria-pressed="false">Phenolic</button>
+      <button class="fchip" type="button" data-f="laminate" aria-pressed="false">Laminate</button>
+      <button class="fchip" type="button" data-f="stainless" aria-pressed="false">Stainless</button>
+    </div>
+    <div class="countrow"><p class="count" id="count">4 installers serving Dallas–Fort Worth</p>
+      <div class="sortby"><label for="sortSel">Sort by</label><select id="sortSel"><option value="score" selected>Installer Score</option><option value="near">Closest to job site</option><option value="rating">Highest rated</option><option value="jobs">Most installs</option></select></div></div>
+    <button type="button" class="btn ghost sm maptoggle" id="mapToggle" aria-expanded="false" aria-controls="mapcard">Show map</button>
+    <div id="list"></div>
+    <p class="disc">Installers are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work. <a class="link" href="#how">How this directory works</a></p>
+    <div class="recruit"><div><h3>Install partitions in DFW?</h3><p>Get install requests from customers buying partitions from us, plus trade pricing on partitions for your own jobs. No listing fee. Jobs come through Next Partitions with shop drawings; you get the customer's details once they book you. You contract and invoice them directly.</p></div><a class="btn ghost" href="apply.html">Apply to get listed</a></div>
+  </div>
+  <aside class="c5" style="min-width:0">
+    <div class="mapcard" id="mapcard">
+      <div class="mapwrap" id="mapwrap" tabindex="0" aria-label="Map. Use plus and minus to zoom, arrow keys to pan, 0 to reset.">
+        <svg id="map" viewBox="0 0 460 440" role="img" aria-label="Simplified map of Dallas–Fort Worth showing installer base areas and your job site"></svg>
+        <div class="mapctl" role="group" aria-label="Map zoom">
+          <button type="button" id="zIn" aria-label="Zoom in">+</button>
+          <button type="button" id="zOut" aria-label="Zoom out">−</button>
+          <button type="button" id="zReset" class="txt">Reset</button>
+          <button type="button" id="zFit" class="txt" hidden>Fit job</button>
+        </div>
+        <span class="zlevel" id="zLevel" aria-live="polite">1×</span>
+      </div>
+      <p class="maplegend"><span><i class="lg job"></i>Job site</span><span><i class="lg base"></i>Installer base area</span><span><i class="lg ring"></i>Service radius</span></p>
+      <p class="zhint">Scroll or pinch to zoom · drag to pan · click to set the job site. Simplified map; installers are shown by city, not street address. Distances are straight-line; drive times are estimates.</p>
+    </div>
+  </aside>
+</div></div></section>
+
+
+
+<section class="section band"><div class="wrap">
+  <h2 class="h2">What partition installation costs in DFW</h2>
+  <p class="intro">Typical prices quoted by DFW installers to our customers, per stall, for standard overhead-braced installs on existing finished floors.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Material</th><th>Install per stall</th><th>Typical 6-stall job</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>Powder coated steel</td><td class="num">$95–$125</td><td>1 day</td><td>Lightest panels; fastest install</td></tr>
+      <tr><td>Plastic laminate</td><td class="num">$100–$130</td><td>1 day</td><td>Similar to steel</td></tr>
+      <tr><td>Solid plastic (HDPE)</td><td class="num">$115–$145</td><td>1–1.5 days</td><td>Heavier; most common in schools and gyms</td></tr>
+      <tr><td>Phenolic</td><td class="num">$120–$155</td><td>1–1.5 days</td><td>Dense panels, precise drilling</td></tr>
+      <tr><td>Stainless steel</td><td class="num">$130–$160</td><td>1.5 days</td><td>Careful handling to avoid scratches</td></tr>
+    </tbody></table></div>
+  <p class="note">Example ranges. Add for removal of old partitions, floor-to-ceiling or ceiling-hung mounting, after-hours work, and travel beyond the installer's radius.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <h2 class="h2">Recent installs in Dallas–Fort Worth</h2>
+  <p class="intro">Photos and details from completed jobs, shared with the customer's permission.</p>
+  <div class="grid">
+    <article class="c4 job"><img src="img/solid-plastic.jpg" alt="Charcoal HDPE partitions in a school restroom" loading="lazy"><div class="b"><h3>Middle school, Plano</h3><p>12 stalls · HDPE · Overhead braced · 2 days · by Acme Partition Installs</p></div></article>
+    <article class="c4 job"><img src="img/phenolic.jpg" alt="Tan phenolic partitions with urinal screens" loading="lazy"><div class="b"><h3>Fitness center, Fort Worth</h3><p>6 stalls + 3 urinal screens · Phenolic · Floor mounted · 1.5 days · by Northwind Washroom Pros</p></div></article>
+    <article class="c4 job"><img src="img/stainless-steel.jpg" alt="Stainless steel partitions in an office restroom" loading="lazy"><div class="b"><h3>Office tower, Dallas</h3><p>8 stalls · Stainless · Ceiling hung · 2 days · by Acme Partition Installs</p></div></article>
+  </div>
+</div></section>
+
+<section class="section band"><div class="wrap guide">
+  <h2 class="h2">Hiring a partition installer in Texas</h2>
+  <p class="intro">What to expect, what to ask, and the Texas rules that affect commercial restroom projects.</p>
+  <div class="grid">
+    <div class="c3 card2"><h3>What installation includes</h3><ul><li>Receiving and checking the delivery</li><li>Layout, anchoring and leveling</li><li>Doors, hinges, latches and hardware</li><li>Final adjustment and cleanup</li></ul></div>
+    <div class="c3 card2"><h3>Questions to ask</h3><ul><li>Proof of general liability insurance?</li><li>Partition installs in the last 12 months?</li><li>Is removal of old stalls included?</li><li>How are callbacks handled?</li></ul></div>
+    <div class="c3 card2"><h3>Texas rules</h3><ul><li>Accessible stalls follow the Texas Accessibility Standards (TAS)</li><li>Many commercial and public projects need TDLR registration and inspection by a Registered Accessibility Specialist</li><li>Some cities require contractor registration</li></ul></div>
+    <div class="c3 card2"><h3>Typical timeline</h3><ul><li>Quote and shop drawings: 24–48 hours</li><li>Delivery: stock items ship in 48–72 hours, custom orders in 10–15 business days</li><li>Install: 1–2 days for most restrooms</li><li>Final walk-through with your installer</li></ul></div>
+  </div>
+  <p class="note">Rules summarized for orientation; confirm requirements for your project with the authority having jurisdiction.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <h2 class="h2">Questions about partition installation in DFW</h2>
+  <div style="max-width:880px">
+    <details><summary>How much does it cost to install bathroom partitions in Dallas?</summary><p>Most DFW installs run $95–$160 per stall depending on material and mounting style. Removal of old partitions and ceiling-hung or floor-to-ceiling mounting add to that.</p></details>
+    <details><summary>Can you install partitions I bought somewhere else?</summary><p>Yes. Choose "Yes, install only" when you request quotes. Installers may ask for the manufacturer and hardware type first.</p></details>
+    <details id="how"><summary>How does this directory work?</summary><p>We sell partitions. This directory helps you find someone to install them. Installers are independent businesses: you get quotes from them, hire them and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work. Requests come from customers buying partitions from Next Partitions. Approved installers agree to quote installation for those partitions and not to substitute other products.</p></details>
+    <details><summary>What do the installer labels mean?</summary><p><b>Approved:</b> every installer listed here. They confirmed they install partitions customers already bought, and we have their insurance certificate and business or city registration on file (with the date we last checked), contacted references, have their signed listing agreement, and saw one completed job. <b>Established:</b> 10 or more installs for Next Partitions customers. <b>Top rated:</b> 4.8 or higher from 10 or more reviews. Labels describe these facts only. They aren't an endorsement or a guarantee of anyone's work. Reviews come only from customers who bought their partitions from us.</p></details>
+    <details><summary>How long does installation take?</summary><p>A typical 4–8 stall restroom takes one to two days once materials are on site.</p></details>
+  </div>
+</div></section>
+
+<section class="xband"><div class="wrap"><div class="grid">
+  <div class="c8"><h2>Buying partitions for a DFW project?</h2><p>Configure your partitions and approved installers who serve your ZIP price the installation through us. You choose, and we line up delivery and install dates.</p></div>
+  <div class="c4 act"><a class="btn" href="#configure">Price your restroom</a></div>
+</div></div></section>
+
+<section class="section" style="padding-block:48px"><div class="wrap">
+  <h2 class="h2" style="font-size:22px">Partition installers in other Texas areas</h2>
+  <div class="nearby"><a href="#top">Houston</a><a href="#top">Austin</a><a href="#top">San Antonio</a><a href="#top">El Paso</a><a href="texas.html">All Texas installers</a></div>
+</div></section>
+</main>
+
+<!-- ================= PROFILE PAGE ================= -->
+<main id="profile" hidden>
+<div class="wrap">
+  <div class="crumbs"><a href="#top">Home</a>›<a href="#top">Installers</a>›<a href="texas.html">Texas</a>›<button class="link" type="button" id="backTo" style="font-weight:400">Dallas–Fort Worth</button>›<span id="pfCrumb"></span></div>
+  <header class="hero">
+    <div class="pfhead"><div class="logo" id="pfLogo"></div><div>
+      <div class="chead"><h1 id="pfName" style="margin:0;font-size:clamp(28px,3.4vw,42px)"></h1><span id="pfTier"></span><span class="sample">Sample</span></div>
+      <p class="meta" id="pfMeta" style="font-size:16px"></p>
+    </div></div>
+  </header>
+</div>
+<section class="section" style="padding-top:32px"><div class="wrap"><div class="grid">
+  <div class="c8" style="min-width:0">
+    <h2 class="h2" style="font-size:22px">About</h2>
+    <p id="pfAbout" style="color:var(--muted);max-width:70ch"></p>
+    <div class="mats" id="pfMats"></div>
+    <h2 class="h2" style="font-size:22px;margin-top:28px">Installs for Next Partitions customers</h2>
+    <div class="grid" id="pfJobs" style="margin-bottom:28px"></div>
+    <h2 class="h2" style="font-size:22px">Reviews from our customers</h2>
+    <div class="grid" id="pfReviews" style="margin-bottom:28px"></div>
+    <h2 class="h2" style="font-size:22px">Badge for this installer's website</h2>
+    <p style="color:var(--muted);margin:0 0 14px;max-width:70ch">Installers paste this on their site. The badge is served from nextpartitions.com, so it updates or switches off if the listing lapses, and it links back to this profile.</p>
+    <div class="badgebox"><div id="badgePreview"></div><div style="min-width:0"><b>Embed code</b><pre id="badgeCode"></pre><button class="btn ghost sm copy" type="button" id="copyBtn">Copy code</button></div></div>
+  </div>
+  <aside class="c4" style="min-width:0;display:grid;gap:16px;align-content:start">
+    <div class="verify"><h3>What we checked</h3><dl id="pfVerify"></dl></div>
+    <div class="req"><h2>Get a quote with this installer</h2><p class="sub">Configure your partitions and this installer prices the installation through us. Your contact details are shared only after you choose them and place your partitions order.</p><a class="btn" id="pfCfg" href="configurator.html#dfw">Configure partitions + installation</a><p class="fine"><button class="link" type="button" id="pfReq">Already have partitions? Request install only</button></p><p class="disc">Installers are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work.</p></div>
+  </aside>
+</div></div></section>
+</main>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="reqTitle" hidden>
+  <div class="req" id="req">
+    <button type="button" class="dclose" id="dclose" aria-label="Close">×</button>
+    <form id="reqForm" novalidate>
+      <h2 id="reqTitle">Get installation priced</h2>
+      <p class="sub">Free, no obligation. Installers see your job scope only. Your name, email, phone and site address stay with us until you choose an installer and place your partitions order.</p>
+      <div class="to" id="toLine"><span>Installer: <b id="toName">up to 3 best-matching installers</b></span><button type="button" class="link" id="toReset" hidden>Change</button></div>
+      <div class="f"><span class="lab" id="hasLbl">Do you already have the partitions?</span>
+        <div class="seg" role="group" aria-labelledby="hasLbl"><button type="button" data-has="no" aria-pressed="true">No, I need them</button><button type="button" data-has="yes" aria-pressed="false">Yes, install only</button></div></div>
+      <div id="npPath">
+        <div class="xsell"><b>Price both in the configurator</b>Your partitions are priced instantly, and <span id="npWho">approved DFW installers</span> estimate installation for your exact layout. Installation never holds up your order.</div>
+        <a class="btn" id="cfgLink" href="configurator.html#dfw">Price partitions + installation →</a>
+      </div>
+      <div id="ioPath" hidden>
+        <div class="f"><label for="rZip">Job-site ZIP</label><input id="rZip" inputmode="numeric" maxlength="5" placeholder="75201" autocomplete="postal-code"></div>
+        <div class="f"><label for="rStalls">Number of stalls</label><select id="rStalls"><option>1–3</option><option selected>4–8</option><option>9–15</option><option>16+</option></select></div>
+        <p class="fine" style="margin:0 0 12px">Installers reply to install-only requests as they have time.</p>
+        <div class="f"><label for="rEmail">Email</label><input id="rEmail" type="email" autocomplete="email" placeholder="name@company.com"></div>
+        <p class="fine" id="rErr" style="color:#b42318;font-weight:600;margin:0 0 10px" role="alert" hidden></p>
+        <button class="btn" type="submit">Request install quotes</button>
+      </div>
+      <p class="disc">Installers are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work.</p>
+    </form>
+    <div class="ok" id="reqOk" hidden></div>
+  </div>
+</aside>
+
+<div class="mbar"><a class="btn" href="#configure">Price your restroom →</a></div>
+<footer><div class="wrap"><span>© 2026 Next Partitions. All rights reserved.</span><span>Terms &amp; Conditions · Privacy Policy</span></div></footer>
+
+<script>
+const I = [
+ {id:"acme", replyH:6, name:"Acme Partition Installs", init:"AP", tier:"preferred", city:"Dallas", lat:32.78, lon:-96.80, radius:60, fee:"$2/mi beyond 60 mi", rating:4.9, jobs:28, since:2011,
+  ins:"$2M general liability · on file, checked Sep 2026", reg:"City of Dallas contractor registration · on file, checked Sep 2026", cert:"Scranton Products trained",
+  mats:["HDPE","Phenolic","Stainless","Powder coated"], tags:["hdpe","phenolic","stainless","steel","ceiling"], mount:"Overhead braced, floor mounted, ceiling hung",
+  photo:"img/stainless-steel.jpg", photoCap:"Office tower, Dallas", web:"acme-installs.example", supply:true,
+  about:"Two install crews focused on commercial restrooms: schools, offices and medical buildings across Dallas, Collin and Denton counties. Handles removal of old partitions and after-hours work."},
+ {id:"northwind", replyH:8, name:"Northwind Washroom Pros", init:"NW", tier:"certified", city:"Fort Worth", lat:32.755, lon:-97.33, radius:50, fee:"$1.75/mi beyond 50 mi", rating:4.8, jobs:19, since:2016,
+  ins:"$1M general liability · on file, checked Aug 2026", reg:"Business registration · on file, checked Sep 2026", cert:"Bobrick installation course",
+  mats:["Phenolic","HDPE","Powder coated"], tags:["phenolic","hdpe","steel"], mount:"Overhead braced, floor mounted",
+  photo:"img/phenolic.jpg", photoCap:"Fitness center, Fort Worth", web:"northwind-washroom.example", supply:true,
+  about:"Restroom specialty contractor serving Tarrant County. Partitions, urinal screens and washroom accessories for gyms, churches and retail."},
+ {id:"contoso", replyH:20, name:"Contoso Specialty Contractors", init:"CS", tier:"certified", city:"Arlington", lat:32.735, lon:-97.11, radius:40, fee:"$150 flat beyond 40 mi", rating:4.7, jobs:11, since:2019,
+  ins:"$1M general liability · on file, checked Jul 2026", reg:"Business registration · on file, checked Sep 2026", cert:"",
+  mats:["Powder coated","Plastic laminate","HDPE"], tags:["steel","laminate","hdpe"], mount:"Overhead braced",
+  photo:"img/powder-coated.jpg", photoCap:"Retail store, Arlington", web:"contoso-specialty.example", supply:false,
+  about:"Division 10 specialties installer: partitions, lockers and accessories for retail and restaurant build-outs between Dallas and Fort Worth."},
+ {id:"fabrikam", replyH:22, name:"Fabrikam Facility Services", init:"FF", tier:"verified", city:"Denton", lat:33.215, lon:-97.13, radius:45, fee:"$2.50/mi beyond 45 mi", rating:4.6, jobs:5, since:2021,
+  ins:"$1M general liability · on file, checked Sep 2026", reg:"Business registration · on file, checked Sep 2026", cert:"",
+  mats:["Powder coated","HDPE"], tags:["steel","hdpe"], mount:"Overhead braced, floor mounted",
+  photo:"img/plastic-laminate.jpg", photoCap:"Church, Denton", web:"", supply:false,
+  about:"Facility maintenance company with a dedicated partition crew. Good fit for replacements and smaller restrooms north of Dallas."}
+];
+const TIER={preferred:"Top rated",certified:"Established",verified:""};
+const PROFILE="profile.html";
+const $=id=>document.getElementById(id);
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const check='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg>';
+const stars=r=>"★★★★★".slice(0,Math.round(r))+"☆☆☆☆☆".slice(0,5-Math.round(r));
+// Installer Score: rating, installs for our customers and how fast they answer job requests (sample weights)
+const iScore=x=>x.rating*20+Math.min(x.jobs,30)-x.replyH;
+const replyTxt=x=>x.replyH<=8?`Replies in ~${x.replyH} h`:"Replies next business day";
+let filter="all", target=null, has="no", job=null, sortBy="score", hover=null;
+// --- geography (mockup): a few DFW ZIPs; live site uses a geocoder + routing API for real drive times
+const ZIPS={"75201":["Downtown Dallas",32.787,-96.799],"76102":["Downtown Fort Worth",32.755,-97.331],"75024":["Plano",33.075,-96.81],"75087":["Rockwall",32.93,-96.44],"75165":["Waxahachie",32.40,-96.84],"76201":["Denton",33.21,-97.13],"76010":["Arlington",32.72,-97.08],"75034":["Frisco",33.15,-96.83],"75069":["McKinney",33.20,-96.62],"75061":["Irving",32.82,-96.95],"76063":["Mansfield",32.56,-97.14],"76086":["Weatherford",32.76,-97.80]};
+const B={lonMin:-98.45,lonMax:-95.55,latMin:31.70,latMax:34.00,W:460,H:440}; // wide enough to show each installer's full service radius
+const px=(lat,lon)=>[ (lon-B.lonMin)/(B.lonMax-B.lonMin)*B.W, (B.latMax-lat)/(B.latMax-B.latMin)*B.H ];
+const MI_PER_PX = ((B.lonMax-B.lonMin)*69.17*Math.cos(32.8*Math.PI/180))/B.W; // horizontal scale; vertical is close at this latitude
+function hav(a1,o1,a2,o2){const R=3958.8,r=Math.PI/180,dA=(a2-a1)*r,dO=(o2-o1)*r,h=Math.sin(dA/2)**2+Math.cos(a1*r)*Math.cos(a2*r)*Math.sin(dO/2)**2;return 2*R*Math.asin(Math.sqrt(h));}
+const miles=x=>hav(job.lat,job.lon,x.lat,x.lon);
+const driveMin=m=>Math.round(m*1.2/48*60+5); // road factor 1.2, ~48 mph mostly-highway average, +5 min local streets
+const fmtMin=n=>n<60?`${n} min`:`${Math.floor(n/60)} h ${n%60} min`;
+function distLine(x){const m=miles(x),inside=m<=x.radius;return `<p class="dist"><b>${Math.round(m)} mi</b> · ~${fmtMin(driveMin(m))} drive (est.) <span class="${inside?"inside":"outside"}">${inside?"Within service area":"Outside service area · travel fee "+x.fee}</span></p>`;}
+const CITIES=[["Dallas",32.78,-96.80],["Fort Worth",32.755,-97.33],["Arlington",32.735,-97.11],["Denton",33.215,-97.13],["Plano",33.02,-96.70],["Frisco",33.15,-96.82],["McKinney",33.20,-96.62],["Irving",32.81,-96.95],["Garland",32.91,-96.64],["Mesquite",32.77,-96.60],["Grand Prairie",32.70,-97.00],["Mansfield",32.56,-97.14],["Rockwall",32.93,-96.46],["Waxahachie",32.39,-96.85],["Weatherford",32.76,-97.80],["Lewisville",33.05,-96.99]];
+const ROADS=[ // simplified interstates / highways [label, [[lat,lon],...]]
+ ["I-35E",[[33.215,-97.13],[33.05,-96.99],[32.92,-96.89],[32.78,-96.80],[32.60,-96.84],[32.39,-96.85]]],
+ ["I-35W",[[33.215,-97.13],[33.00,-97.24],[32.85,-97.32],[32.755,-97.33],[32.55,-97.32],[32.33,-97.33]]],
+ ["I-30",[[32.76,-97.80],[32.755,-97.33],[32.75,-97.11],[32.76,-96.95],[32.78,-96.80],[32.83,-96.55],[32.93,-96.46],[33.05,-96.33]]],
+ ["I-20",[[32.70,-97.62],[32.68,-97.33],[32.68,-97.11],[32.68,-96.95],[32.67,-96.75],[32.70,-96.55],[32.72,-96.33]]],
+ ["US-75",[[32.78,-96.80],[32.90,-96.77],[33.02,-96.70],[33.20,-96.62],[33.30,-96.60]]],
+ ["DNT",[[32.80,-96.81],[32.95,-96.82],[33.15,-96.82],[33.30,-96.83]]],
+ ["I-635",[[32.93,-97.03],[32.92,-96.89],[32.92,-96.75],[32.88,-96.63],[32.78,-96.60],[32.68,-96.62]]],
+ ["SH-121",[[33.20,-96.62],[33.12,-96.85],[32.95,-97.06],[32.80,-97.20],[32.755,-97.33]]]
+];
+function drawMap(){
+  const k=view.w/B.W; // 1 at full view, smaller when zoomed in: keeps pins/labels the same on-screen size
+  const f=n=>(n*k).toFixed(2);
+  const pts=a=>a.map(([la,lo])=>px(la,lo).map(v=>v.toFixed(1)).join(",")).join(" ");
+  let g=`<rect x="0" y="0" width="${B.W}" height="${B.H}" fill="#f3efe8"/>`;
+  g+=`<ellipse cx="${px(33.07,-97.0)[0]}" cy="${px(33.07,-97.0)[1]}" rx="16" ry="11" fill="#cfe0ea"/><ellipse cx="${px(32.85,-96.51)[0]}" cy="${px(32.85,-96.51)[1]}" rx="6" ry="15" fill="#cfe0ea"/><ellipse cx="${px(32.97,-97.08)[0]}" cy="${px(32.97,-97.08)[1]}" rx="9" ry="6" fill="#cfe0ea"/>`;
+  ROADS.forEach(([l,a])=>{g+=`<polyline points="${pts(a)}" fill="none" stroke="#fff" stroke-width="${f(5)}" stroke-linejoin="round"/><polyline points="${pts(a)}" fill="none" stroke="#d9cfc2" stroke-width="${f(2.2)}" stroke-linejoin="round"/>`;});
+  ROADS.forEach(([l,a])=>{const [x,y]=px(...a[Math.floor(a.length/2)]);g+=`<text x="${x+4*k}" y="${y-4*k}" font-size="${f(9)}" font-weight="700" fill="#a39684" font-family="Inter,Arial" paint-order="stroke" stroke="#f3efe8" stroke-width="${f(3)}">${l}</text>`;});
+  const vis=I.filter(x=>filter==="all"||x.tags.includes(filter));
+  vis.forEach(x=>{const [cx,cy]=px(x.lat,x.lon),r=x.radius/MI_PER_PX,on=hover===x.id;g+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${on?"rgba(31,122,77,.16)":"rgba(31,122,77,.05)"}" stroke="${on?"#1f7a4d":"rgba(31,122,77,.65)"}" stroke-width="${f(on?2.6:1.5)}" ${on?"":`stroke-dasharray="${f(6)} ${f(4)}"`}/>`;if(on){g+=`<text x="${cx}" y="${cy-r-6*k}" text-anchor="middle" font-size="${f(11)}" font-weight="800" fill="#1f7a4d" font-family="Inter,Arial" paint-order="stroke" stroke="#f3efe8" stroke-width="${f(3)}">${x.radius} mi service area</text>`;}});
+  const baseCities=new Set(I.map(i=>i.city));
+  CITIES.forEach(([n,la,lo])=>{if(baseCities.has(n))return;const [x,y]=px(la,lo);g+=`<circle cx="${x}" cy="${y}" r="${f(2.2)}" fill="#a39684"/><text x="${x+5*k}" y="${y+3.5*k}" font-size="${f(10.5)}" fill="#6d6059" font-family="Inter,Arial">${n}</text>`;});
+  if(job){const [jx,jy]=px(job.lat,job.lon);
+    vis.forEach(x=>{const [bx,by]=px(x.lat,x.lon),on=hover===x.id;g+=`<line x1="${jx}" y1="${jy}" x2="${bx}" y2="${by}" stroke="${on?"#e8630a":"rgba(232,99,10,.35)"}" stroke-width="${f(on?2.2:1.2)}" stroke-dasharray="${on?"":f(3)+" "+f(3)}"/>`;});}
+  vis.forEach(x=>{const [bx,by]=px(x.lat,x.lon),on=hover===x.id,left=x.city==="Fort Worth";g+=`<g data-pin="${x.id}" style="cursor:pointer"><rect x="${bx-11*k}" y="${by-11*k}" width="${f(22)}" height="${f(22)}" fill="${on?"#e8630a":"#262626"}" stroke="#fff" stroke-width="${f(2)}"/><text x="${bx}" y="${by+4*k}" text-anchor="middle" font-size="${f(10)}" font-weight="800" fill="#fff" font-family="Inter,Arial">${x.init}</text><text x="${left?bx-15*k:bx+15*k}" y="${by+4*k}" text-anchor="${left?"end":"start"}" font-size="${f(11)}" font-weight="700" fill="#1c0e05" font-family="Inter,Arial" paint-order="stroke" stroke="#f3efe8" stroke-width="${f(3)}">${x.city}</text></g>`;});
+  if(job){const [jx,jy]=px(job.lat,job.lon);g+=`<circle cx="${jx}" cy="${jy}" r="${f(13)}" fill="rgba(232,99,10,.18)"/><circle cx="${jx}" cy="${jy}" r="${f(7)}" fill="#e8630a" stroke="#fff" stroke-width="${f(2.5)}"/><text x="${jx}" y="${jy-17*k}" text-anchor="middle" font-size="${f(11)}" font-weight="800" fill="#1c0e05" font-family="Inter,Arial" paint-order="stroke" stroke="#f3efe8" stroke-width="${f(3)}">Job site</text>`;}
+  $("map").innerHTML=g;
+  $("map").querySelectorAll("[data-pin]").forEach(el=>{el.addEventListener("mouseenter",()=>{if(drag||hover===el.dataset.pin)return;hover=el.dataset.pin;drawMap();});el.addEventListener("click",e=>{e.stopPropagation();if(moved)return;const c=$("card-"+el.dataset.pin);if(c){c.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"center"});c.classList.add("hl");setTimeout(()=>c.classList.remove("hl"),1600);}});});
+}
+// ---------- zoom / pan (viewBox) ----------
+const MAXZ=5;
+let view={x:0,y:0,w:B.W,h:B.H}, drag=null, moved=false;
+const ptrs=new Map();
+function clampView(v){
+  const w=Math.min(B.W,Math.max(B.W/MAXZ,v.w)), h=w*B.H/B.W;
+  return {w,h,x:Math.min(B.W-w,Math.max(0,v.x)),y:Math.min(B.H-h,Math.max(0,v.y))};
+}
+function applyView(){
+  $("map").setAttribute("viewBox",`${view.x.toFixed(2)} ${view.y.toFixed(2)} ${view.w.toFixed(2)} ${view.h.toFixed(2)}`);
+  const z=B.W/view.w; $("zLevel").textContent=(Math.round(z*10)/10)+"×";
+  $("zIn").disabled=z>=MAXZ-0.01; $("zOut").disabled=z<=1.01;
+  drawMap();
+}
+function toMap(clientX,clientY){const r=$("map").getBoundingClientRect();return [view.x+(clientX-r.left)/r.width*view.w, view.y+(clientY-r.top)/r.height*view.h];}
+function zoomAt(factor,mx,my){ // factor>1 zooms in, around map point (mx,my)
+  const nw=view.w/factor; const v=clampView({w:nw,x:mx-(mx-view.x)*(nw/view.w),y:my-(my-view.y)*(nw/view.w)});
+  view=v; applyView();
+}
+const center=()=>[view.x+view.w/2,view.y+view.h/2];
+$("zIn").addEventListener("click",()=>zoomAt(1.6,...center()));
+$("zOut").addEventListener("click",()=>zoomAt(1/1.6,...center()));
+$("zReset").addEventListener("click",()=>{view={x:0,y:0,w:B.W,h:B.H};applyView();});
+$("zFit").addEventListener("click",()=>fitJob());
+function fitJob(){
+  if(!job) return;
+  const vis=I.filter(x=>filter==="all"||x.tags.includes(filter));
+  const ranked=vis.slice().sort((a,b)=>miles(a)-miles(b));
+  const keep=ranked.filter(x=>miles(x)<=x.radius).slice(0,3); if(!keep.length&&ranked.length) keep.push(ranked[0]);
+  const P=[px(job.lat,job.lon),...keep.map(x=>px(x.lat,x.lon))];
+  let x0=Math.min(...P.map(p=>p[0])),x1=Math.max(...P.map(p=>p[0])),y0=Math.min(...P.map(p=>p[1])),y1=Math.max(...P.map(p=>p[1]));
+  const pad=40; x0-=pad;x1+=pad;y0-=pad;y1+=pad;
+  let w=Math.max(x1-x0,(y1-y0)*B.W/B.H);
+  view=clampView({w,x:(x0+x1)/2-w/2,y:(y0+y1)/2-(w*B.H/B.W)/2}); applyView();
+}
+const mapEl=$("map");
+mapEl.addEventListener("wheel",e=>{e.preventDefault();const [mx,my]=toMap(e.clientX,e.clientY);zoomAt(Math.exp(-e.deltaY*0.0015),mx,my);},{passive:false});
+mapEl.addEventListener("dblclick",e=>{e.preventDefault();const [mx,my]=toMap(e.clientX,e.clientY);zoomAt(1.8,mx,my);});
+mapEl.addEventListener("pointerdown",e=>{ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});moved=false;drag={x:e.clientX,y:e.clientY,view:{...view},dist:null};});
+mapEl.addEventListener("pointermove",e=>{
+  if(!drag||!ptrs.has(e.pointerId)) return;
+  ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  const r=mapEl.getBoundingClientRect();
+  if(ptrs.size===2){ // pinch
+    const [a,b]=[...ptrs.values()], d=Math.hypot(a.x-b.x,a.y-b.y), cx=(a.x+b.x)/2, cy=(a.y+b.y)/2;
+    if(drag.dist){const [mx,my]=toMap(cx,cy);zoomAt(d/drag.dist,mx,my);} drag.dist=d; moved=true; return;
+  }
+  const dx=e.clientX-drag.x, dy=e.clientY-drag.y;
+  if(!moved && Math.hypot(dx,dy)<4) return;
+  if(!moved){moved=true;mapEl.setPointerCapture(e.pointerId);mapEl.classList.add("dragging");}
+  view=clampView({w:drag.view.w,x:drag.view.x-dx/r.width*drag.view.w,y:drag.view.y-dy/r.height*drag.view.h}); applyView();
+});
+function endPtr(e){ptrs.delete(e.pointerId);if(ptrs.size===0){drag=null;mapEl.classList.remove("dragging");}else if(ptrs.size===1&&drag){const [p]=[...ptrs.values()];drag={x:p.x,y:p.y,view:{...view},dist:null};}}
+mapEl.addEventListener("pointerup",endPtr); mapEl.addEventListener("pointercancel",endPtr);
+$("mapwrap").addEventListener("keydown",e=>{
+  if(e.target!==$("mapwrap")) return;
+  const step=view.w*0.15, m={ArrowLeft:[-step,0],ArrowRight:[step,0],ArrowUp:[0,-step],ArrowDown:[0,step]};
+  if(e.key==="+"||e.key==="="){zoomAt(1.6,...center());e.preventDefault();}
+  else if(e.key==="-"){zoomAt(1/1.6,...center());e.preventDefault();}
+  else if(e.key==="0"){view={x:0,y:0,w:B.W,h:B.H};applyView();e.preventDefault();}
+  else if(m[e.key]){view=clampView({w:view.w,x:view.x+m[e.key][0],y:view.y+m[e.key][1]});applyView();e.preventDefault();}
+});
+function listNear(){}
+function setJob(lat,lon,label,zip,noFit){
+  job={lat,lon,label}; $("zFit").hidden=false; if(zip){$("jobZip").value=zip;$("rZip").value=zip;}
+  sortBy="near"; $("sortSel").value="near";
+  $("zipMsg").hidden=false,$("zipMsg").textContent=`Showing distances to ${label}${zip?" ("+zip+")":""}.`;
+  if(noFit) drawMap(); else fitJob(); listNear(); cards();
+}
+$("zipForm").addEventListener("submit",e=>{e.preventDefault();const z=$("jobZip").value.trim();
+  if(!/^\d{5}$/.test(z)){$("zipMsg").hidden=false,$("zipMsg").textContent="Enter a 5-digit ZIP code.";return;}
+  const hit=ZIPS[z]; if(!hit){$("zipMsg").hidden=false,$("zipMsg").textContent=`ZIP ${z} isn't in this mockup's sample data. The live site looks up any ZIP; you can also click the map.`;return;}
+  setJob(hit[1],hit[2],hit[0],z);});
+$("map").addEventListener("click",e=>{if(moved){moved=false;return;}const [x,y]=toMap(e.clientX,e.clientY);
+  const lon=B.lonMin+x/B.W*(B.lonMax-B.lonMin), lat=B.latMax-y/B.H*(B.latMax-B.latMin);
+  let near=CITIES.map(c=>[c[0],hav(lat,lon,c[1],c[2])]).sort((a,b)=>a[1]-b[1])[0];
+  setJob(lat,lon,near[1]<4?near[0]:"near "+near[0],"",true);});
+$("map").addEventListener("mouseleave",()=>{hover=null;drawMap();listNear();});
+$("sortSel").addEventListener("change",e=>{const v=e.target.value;if(v==="near"&&!job){e.target.value=sortBy;$("zipMsg").hidden=false,$("zipMsg").textContent="Enter the job-site ZIP first to sort by distance.";$("jobZip").focus();return;}sortBy=v;cards();});
+
+function cards(){
+  let rows=I.filter(x=>filter==="all"||x.tags.includes(filter));
+  if(job && sortBy==="near") rows=rows.slice().sort((a,b)=>miles(a)-miles(b));
+  else if(sortBy==="rating") rows=rows.slice().sort((a,b)=>b.rating-a.rating);
+  else if(sortBy==="jobs") rows=rows.slice().sort((a,b)=>b.jobs-a.jobs);
+  else rows=rows.slice().sort((a,b)=>iScore(b)-iScore(a));
+  $("count").innerHTML=`${rows.length} installer${rows.length!==1?"s":""} serving Dallas–Fort Worth${sortBy==="score"?'<small class="snote">Installer Score combines customer rating, installs for our customers and reply time.</small>':""}`;
+  $("list").innerHTML=rows.map(x=>`<article class="card ${x.tier==="preferred"?"pref":""}" id="card-${x.id}" data-card="${x.id}">
+    <div class="ph"><img src="${x.photo}" alt="Recent install by ${esc(x.name)}" loading="lazy"><span>${esc(x.photoCap)}</span></div>
+    <div style="min-width:0">
+      <div class="chead"><h3>${esc(x.name)}</h3><span class="tier approved">✓ Approved</span>${TIER[x.tier]?`<span class="tier ${x.tier==="certified"?"verified":x.tier}">${TIER[x.tier]}</span>`:""}<span class="sample">Sample</span></div>
+      <p class="meta"><span class="stars" aria-label="${x.rating} out of 5">${stars(x.rating)}</span> <b style="color:var(--fg)">${x.rating}</b> · ${x.jobs} installs for our customers · ${esc(x.city)} + ${x.radius} mi · ${replyTxt(x)}</p>
+      ${job?distLine(x):""}
+      <ul class="checks"><li>${check}Insured</li><li>${check}Registration checked</li><li>${check}References checked</li>${x.cert?`<li>${check}${esc(x.cert)}</li>`:""}</ul>
+      <div class="mats">${x.mats.map(m=>`<span>${m}</span>`).join("")}</div>
+      ${x.supply?`<p class="supply">Installs partitions supplied by Next Partitions</p>`:""}
+      <div class="cact"><a class="btn sm" href="#configure" data-price="${x.id}">Price with ${esc(x.name.split(" ")[0])}</a><a class="link" href="${PROFILE}#${x.id}">View profile</a><button class="link" type="button" data-req="${x.id}">Install only?</button></div>
+    </div></article>`).join("");
+  $("list").querySelectorAll("[data-req]").forEach(b=>b.addEventListener("click",()=>pick(b.dataset.req)));
+  $("list").querySelectorAll("[data-price]").forEach(b=>b.addEventListener("click",()=>pricerPick(b.dataset.price)));
+  $("list").querySelectorAll("[data-pf]").forEach(b=>b.addEventListener("click",()=>showProfile(b.dataset.pf)));
+  $("list").querySelectorAll("[data-card]").forEach(c=>{c.addEventListener("mouseenter",()=>{if(hover===c.dataset.card)return;hover=c.dataset.card;drawMap();});c.addEventListener("mouseleave",()=>{hover=null;drawMap();});});
+}
+let lastFocus=null;
+function openDrawer(){ lastFocus=document.activeElement; $("scrim").hidden=false; $("drawer").hidden=false; document.body.style.overflow="hidden"; ($("rZip").value?$("rEmail"):$("rZip")).focus(); }
+function closeDrawer(){ $("scrim").hidden=true; $("drawer").hidden=true; document.body.style.overflow=""; if(lastFocus) lastFocus.focus(); }
+function pick(id){ target=I.find(x=>x.id===id); $("toName").textContent=target.name; $("toReset").hidden=false; setCfg(); $("reqForm").hidden=false; $("reqOk").hidden=true; openDrawer(); }
+$("dclose").addEventListener("click",closeDrawer); $("scrim").addEventListener("click",closeDrawer);
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("drawer").hidden)closeDrawer();});
+$("mapToggle").addEventListener("click",()=>{const open=!$("mapcard").classList.contains("open");$("mapcard").classList.toggle("open",open);$("mapToggle").setAttribute("aria-expanded",String(open));$("mapToggle").textContent=open?"Hide map":"Show map";});
+$("toReset").addEventListener("click",()=>{target=null;$("toName").textContent="up to 3 best-matching installers";$("toReset").hidden=true;setCfg();});
+document.querySelectorAll(".fchip").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.f;document.querySelectorAll(".fchip").forEach(c=>c.setAttribute("aria-pressed",String(c===b)));cards();drawMap();listNear();}));
+function setCfg(){const ok=!!target;$("cfgLink").href="configurator.html#dfw"+(ok?"."+target.id:"");$("npWho").textContent=target?target.name:"approved DFW installers";}
+document.querySelectorAll("[data-has]").forEach(b=>b.addEventListener("click",()=>{has=b.dataset.has;document.querySelectorAll("[data-has]").forEach(c=>c.setAttribute("aria-pressed",String(c===b)));$("npPath").hidden=has!=="no";$("ioPath").hidden=has==="no";}));
+$("rZip").addEventListener("change",()=>{const z=$("rZip").value.trim();if(ZIPS[z])setJob(ZIPS[z][1],ZIPS[z][2],ZIPS[z][0],z);});
+$("reqForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const zip=$("rZip").value.trim(), em=$("rEmail").value.trim();
+  const err=!/^\d{5}$/.test(zip)?"Enter a 5-digit job-site ZIP code.":!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)?"Enter a valid email, like name@company.com.":"";
+  $("rErr").hidden=!err; $("rErr").textContent=err; if(err) return;
+  $("reqForm").hidden=true; $("reqOk").hidden=false;
+  $("reqOk").innerHTML=`<h3>Request sent</h3><p>${target?esc(target.name):"Up to 3 matched DFW installers"} will receive your job scope (ZIP ${esc(zip)}, ${esc($("rStalls").value)} stalls${has==="no"?", partitions from Next Partitions":", install only"}). Expect replies at <b>${esc(em)}</b> within 1 business day.${has==="no"?" Installers quote installation for the partitions on your Next Partitions quote"+($("rQuote").value.trim()?" ("+esc($("rQuote").value.trim())+")":"")+" and invoice you directly.":" Installers quote and invoice you directly."}</p>${has==="no"?`<p><a class="btn sm" href="configurator.html">Configure your partitions now</a></p>`:""}<p class="fine">Mockup: nothing was sent.</p>`;
+});
+
+function badgeSVG(x){
+  const t=TIER[x.tier];
+  return `<svg width="220" height="76" viewBox="0 0 220 76" role="img" aria-label="Approved installer, Next Partitions 2026"><rect x="1" y="1" width="218" height="74" fill="#fff" stroke="#e1ddd7"/><rect x="1" y="1" width="6" height="74" fill="#e8630a"/><text x="20" y="25" font-family="Inter,Arial" font-size="11" font-weight="700" fill="#6d6059" letter-spacing="1">NEXT PARTITIONS</text><text x="20" y="48" font-family="Inter,Arial" font-size="19" font-weight="900" fill="#1c0e05">Approved Installer</text><text x="20" y="65" font-family="Inter,Arial" font-size="11" fill="#6d6059">Next Partitions directory · 2026</text></svg>`;
+}
+function showProfile(id){
+  const x=I.find(i=>i.id===id); if(!x) return;
+  $("pfCrumb").textContent=x.name; $("pfName").textContent=x.name; $("pfLogo").textContent=x.init;
+  $("pfTier").innerHTML=`<span class="tier ${x.tier}">${TIER[x.tier]}</span>`;
+  $("pfMeta").innerHTML=`<span class="stars">${stars(x.rating)}</span> <b style="color:var(--fg)">${x.rating}</b> · ${x.jobs} installs for our customers · Based in ${esc(x.city)}, serves ${x.radius} mi · In business since ${x.since}`;
+  $("pfAbout").textContent=x.about;
+  $("pfMats").innerHTML=x.mats.map(m=>`<span>${m}</span>`).join("")+`<span>${esc(x.mount)}</span>`;
+  const jobs=[[x.photo,x.photoCap,"8 stalls · 2 days"],["img/solid-plastic.jpg","School, Collin County","12 stalls · 2 days"],["img/powder-coated.jpg","Restaurant, Dallas","4 stalls · 1 day"]];
+  $("pfJobs").innerHTML=jobs.map(j=>`<article class="c4 job"><img src="${j[0]}" alt="${esc(j[1])}" loading="lazy"><div class="b"><h3>${esc(j[1])}</h3><p>${j[2]}</p></div></article>`).join("");
+  const rv=[["Facilities manager, school district","Crew arrived on the scheduled day and finished 12 stalls in two days. Doors all aligned at sign-off."],["General contractor, Dallas","Easy to coordinate with our schedule. Cleaned up fully and handled two door adjustments the next week."]];
+  $("pfReviews").innerHTML=rv.map(r=>`<div class="c6 review"><span class="stars">★★★★★</span><span class="vtag">Bought partitions from us</span><p>${r[1]}</p><small>${r[0]} · Sample review</small></div>`).join("");
+  $("pfVerify").innerHTML=`<dt>Insurance</dt><dd class="ok">${esc(x.ins)}</dd><dt>Registration</dt><dd class="ok">${esc(x.reg)}</dd><dt>References</dt><dd class="ok">2 contacted · Jun 2026</dd>${x.cert?`<dt>Training</dt><dd>${esc(x.cert)}</dd>`:""}<dt>Service area</dt><dd>${x.radius} mi from ${esc(x.city)} · travel fee ${esc(x.fee)}</dd><dt>Response time</dt><dd>Usually within 6 hours</dd><dt>Callbacks</dt><dd>1 reported by our customers, last 12 months</dd>`;
+  $("pfCfg").href="configurator.html#dfw."+x.id;
+  $("pfReq").onclick=()=>pick(x.id);
+  $("badgePreview").innerHTML=badgeSVG(x);
+  $("badgeCode").textContent=`<a href="https://nextpartitions.com/installers/${x.id}/?ref=badge">\n  <img src="https://nextpartitions.com/badge/${x.id}.svg"\n       alt="Approved installer on Next Partitions"\n       width="220" height="76">\n</a>`;
+  $("metro").hidden=true; $("profile").hidden=false; window.scrollTo(0,0);
+}
+function showMetro(){ $("profile").hidden=true; $("metro").hidden=false; }
+$("backTo").addEventListener("click",()=>{showMetro();window.scrollTo(0,0);});
+$("copyBtn").addEventListener("click",async()=>{const t=$("badgeCode").textContent;try{await navigator.clipboard.writeText(t);$("copyBtn").textContent="Copied";}catch(e){const r=document.createRange();r.selectNodeContents($("badgeCode"));const s=getSelection();s.removeAllRanges();s.addRange(r);$("copyBtn").textContent="Selected — press Ctrl/Cmd+C";}setTimeout(()=>$("copyBtn").textContent="Copy code",2200);});
+cards();
+applyView();
+listNear();
+
+// ---- Price your restroom: the configurator's steps, one slide each (sample prices; live pricing comes from the configurator)
+const PMAT=[
+  {id:"pc",name:"Powder coated",img:"img/powder-coated.jpg",d:"Most popular, economical",rate:470},
+  {id:"ss",name:"Stainless steel",img:"img/stainless-steel.jpg",d:"Luxury, easy to clean",rate:1650},
+  {id:"hdpe",name:"Solid plastic (HDPE)",img:"img/solid-plastic.jpg",d:"Graffiti and moisture resistant",rate:735},
+  {id:"lam",name:"Plastic laminate",img:"img/plastic-laminate.jpg",d:"Many colors and patterns",rate:590},
+  {id:"phen",name:"Phenolic",img:"img/phenolic.jpg",d:"Premium, for heavy use and wet areas",rate:1210}];
+const PMNT=[
+  {id:"ob",name:"Overhead braced",d:"Most popular; no special floor or ceiling",add:0,inst:0},
+  {id:"fm",name:"Floor mounted",d:"Needs a concrete floor",add:25,inst:0},
+  {id:"ch",name:"Ceiling hung",d:"Needs ceiling structure; clean floor line",add:60,inst:1},
+  {id:"fc",name:"Floor to ceiling",d:"Heaviest duty; anchored both ends",add:90,inst:1}];
+const PCOL=[["Decide later",""],["White 2129","#f2f0ea"],["Almond 2103","#dccfb4"],["Sage 2141","#8a9a7b"],["Red 2145","#a52321"],["Dark Khaki 2109","#6b6250"],["Khaki 2115","#a89a7a"],["Burgundy 2148","#5c1f26"],["Gray 2125","#8a8a8a"],["Charcoal 2123","#3d3d3d"],["Metallic Silver 2171","#a8abae"],["Azure 2101","#4a7ba6"],["Royal Blue 2135","#1f3e7a"],["Sandy Beach 2150","#c9b393"],["Pepper Dust 3590","#6e6a63"],["Black 2127","#1a1a1a"]];
+// [name, side walls "l"/"r"/"lr"/"", stalls, entrance return "l"/"r"/""]
+const PLAY=[["Between walls","lr",3,""],["Corner left","l",3,""],["Corner right","r",3,""],["Free standing","",3,""],["Alcove, left door with stalls","lr",3,"l"],["Alcove, right door with stalls","lr",3,"r"],["Alcove, left with between-wall units","lr",2,"l"],["Alcove, right with between-wall units","lr",2,"r"],["Single alcove, left door","lr",1,"l"],["Single alcove, right door","lr",1,"r"]];
+// common sizes as one tap; "Other" takes any size the configurator allows, in quarter inches
+const PSIZE={w:{list:[32,34,36],std:36,min:28,max:72,name:"Width"},dep:{list:[54,60,66,72],std:60,min:48,max:84,name:"Depth"}};
+const PFR=[[0,""],[.25,"¼"],[.5,"½"],[.75,"¾"]];
+const inch=n=>Math.floor(n)+(PFR.find(f=>f[0]===n-Math.floor(n))||[0,""])[1]+'"';
+// installer rates per stall (sample; same as the configurator prototype, stainless added)
+const PRATE={acme:{r:{hdpe:140,phen:160,pc:115,lam:120,ss:175},chA:45,min:700},contoso:{r:{hdpe:125,phen:145,pc:100,lam:105,ss:160},chA:40,min:500},
+  northwind:{r:{hdpe:130,phen:150,pc:110,lam:110,ss:165},chA:40,min:600},fabrikam:{r:{hdpe:120,phen:140,pc:95,lam:100,ss:150},chA:35,min:450}};
+const PSTEPS=["Material","Bracing","Color","Layout","Stalls","Urinal screens","Your quote range"];
+const P={ada:false,sizes:false,plans:null,email:null,m:"hdpe",n:"ob",c:0,lay:0,s:4,w:36,dep:60,wOther:false,depOther:false,priv:false,u:0,ud:'18"',uh:'42"',inst:null,step:0,seen:0};
+const pmoney=n=>"$"+Math.round(n).toLocaleString("en-US");
+const prng=(lo,hi)=>lo===hi?pmoney(lo):`${pmoney(lo)} – ${pmoney(hi)}`;
+const pm=()=>PMAT.find(x=>x.id===P.m), pn=()=>PMNT.find(x=>x.id===P.n);
+function pEst(id){const c=PRATE[id];const t=P.s*(c.r[P.m]+(pn().inst?c.chA:0))+P.u*45;if(t<c.min)return[c.min,c.min];return[Math.round(t*.95/10)*10,Math.round(t*1.1/10)*10];}
+// small schematic drawings for the bracing and layout cards
+function mountSvg(id){
+  const top=id==="ch"||id==="fc"?4:12, bot=id==="ch"?44:52;
+  return `<svg viewBox="0 0 120 64" aria-hidden="true"><line x1="0" y1="4" x2="120" y2="4" stroke="#b9b1a8" stroke-width="2" stroke-dasharray="${top===4?"":"4 3"}"/><line x1="0" y1="58" x2="120" y2="58" stroke="#b9b1a8" stroke-width="2" stroke-dasharray="${bot===52?"":"4 3"}"/>
+  <rect x="30" y="16" width="60" height="30" fill="#fdeee3" stroke="#e8630a"/>${id==="ob"?`<line x1="18" y1="12" x2="102" y2="12" stroke="#1c0e05" stroke-width="3"/>`:""}
+  <rect x="22" y="${top}" width="7" height="${(bot===52?58:bot)-top}" fill="#1c0e05"/><rect x="91" y="${top}" width="7" height="${(bot===52?58:bot)-top}" fill="#1c0e05"/></svg>`;
+}
+// live floor plan for the stalls step: standard stalls plus a wider accessible one
+function planSvg(){
+  const ws=P.w, list=Array.from({length:P.s},(_,k)=>P.ada&&k===P.s-1?60:ws), total=list.reduce((a,b)=>a+b,0);
+  const W=300, sc=Math.min(260/total,4.2), d=P.dep*sc*.62, x0=(W-total*sc)/2;
+  let x=x0, o=`<svg viewBox="0 0 ${W} ${d+40}" role="img" aria-label="Plan of ${P.s} stalls"><rect x="${x0-6}" y="6" width="${total*sc+12}" height="5" fill="#1c0e05"/>`;
+  list.forEach(w=>{const ww=w*sc, r=Math.min(ww*.55,22), ada=w===60&&P.ada;
+    o+=`<rect x="${x.toFixed(1)}" y="11" width="${ww.toFixed(1)}" height="${d.toFixed(1)}" fill="${ada?"#fff":"#fdeee3"}" stroke="#e8630a" stroke-width="1.5"/>`;
+    o+=`<path d="M${(x+ww/2-r/2).toFixed(1)} ${(11+d).toFixed(1)} a${r.toFixed(1)} ${r.toFixed(1)} 0 0 0 ${r.toFixed(1)} ${(-r).toFixed(1)}" fill="none" stroke="#e8630a" stroke-dasharray="3 2"/>`;
+    o+=`<text x="${(x+ww/2).toFixed(1)}" y="${(11+d+18).toFixed(1)}" text-anchor="middle" font-size="11" fill="#6d6059">${ada?"ADA ":""}${inch(w)}</text>`;
+    x+=ww;});
+  return o+`</svg>`;
+}
+function laySvg([,walls,n,ret]){
+  const L=walls.includes("l"),R=walls.includes("r"), x0=L?10:22, x1=R?110:98, w=(x1-x0)/n;
+  let s=`<svg viewBox="0 0 120 70" aria-hidden="true"><rect x="4" y="4" width="112" height="5" fill="#1c0e05"/>`;
+  if(L)s+=`<rect x="4" y="4" width="5" height="62" fill="#1c0e05"/>`; if(R)s+=`<rect x="111" y="4" width="5" height="62" fill="#1c0e05"/>`;
+  const r=Math.min(20,Math.round(w*.6));
+  for(let k=0;k<n;k++){const x=x0+k*w;s+=`<rect x="${x.toFixed(1)}" y="9" width="${w.toFixed(1)}" height="34" fill="#fdeee3" stroke="#e8630a"/><path d="M${(x+w/2-r/2).toFixed(1)} 43 a${r} ${r} 0 0 0 ${r} ${-r}" fill="none" stroke="#e8630a" stroke-dasharray="2 2"/>`;}
+  if(ret==="l")s+=`<rect x="40" y="61" width="76" height="5" fill="#1c0e05"/>`; if(ret==="r")s+=`<rect x="4" y="61" width="76" height="5" fill="#1c0e05"/>`;
+  return s+`</svg>`;
+}
+const pressed=(a,b)=>`aria-pressed="${a===b}"`;
+function sizeRow(k){
+  const c=PSIZE[k], v=P[k];
+  if(P[k+"Other"]){const whole=Math.floor(v), f=v-whole;
+    return `<span class="pcust"><input type="number" inputmode="numeric" min="${c.min}" max="${c.max}" value="${whole}" aria-label="${c.name} in whole inches"><select aria-label="Fraction of an inch">${PFR.map(([n,t])=>`<option value="${n}" ${n===f?"selected":""}>${t||"0"}</option>`).join("")}</select><span class="pin">${c.min}–${c.max}"</span><button class="px" type="button" data-common aria-label="Back to common sizes" title="Common sizes">×</button></span>`;}
+  const odd=!c.list.includes(v);
+  return c.list.map(n=>`<button type="button" data-v="${n}" ${pressed(v,n)}>${n}"</button>`).join("")+`<button type="button" data-other aria-pressed="${odd}">${odd?inch(v):"Other"}</button>`;
+}
+function pricerCards(){
+  $("pMats").innerHTML=PMAT.map(x=>`<button type="button" data-m="${x.id}" ${pressed(P.m,x.id)}><img src="${x.img}" alt="">${x.name}<small>${x.d}</small></button>`).join("");
+  $("pMnts").innerHTML=PMNT.map(x=>`<button type="button" data-n="${x.id}" ${pressed(P.n,x.id)}>${mountSvg(x.id)}${x.name}<small>${x.d}</small></button>`).join("");
+  $("pColors").innerHTML=PCOL.map(([n,h],k)=>`<button type="button" data-c="${k}" ${pressed(P.c,k)}>${h?`<i style="background:${h}"></i>`:`<i class="later">?</i>`}${n}</button>`).join("");
+  $("pLays").innerHTML=PLAY.map((l,k)=>`<button type="button" data-l="${k}" ${pressed(P.plans?-1:P.lay,k)}>${laySvg(l)}<small style="color:var(--fg);font-weight:700">${l[0]}</small></button>`).join("");
+  $("pWidth").innerHTML=sizeRow("w"); $("pDepth").innerHTML=sizeRow("dep");
+  ["w","dep"].forEach(k=>{const row=$(k==="w"?"pWidth":"pDepth"), c=PSIZE[k];
+    row.querySelectorAll("[data-v]").forEach(b=>b.onclick=()=>{P[k]=+b.dataset.v;P[k+"Other"]=false;pricerCards();pricer();});
+    const o=row.querySelector("[data-other]"); if(o)o.onclick=()=>{P[k+"Other"]=true;pricerCards();row.querySelector("input").focus();};
+    const back=row.querySelector("[data-common]"); if(back)back.onclick=()=>{P[k+"Other"]=false;if(!c.list.includes(P[k]))P[k]=c.std;pricerCards();pricer();};
+    const inp=row.querySelector("input"), fr=row.querySelector("select");
+    if(inp){const set=()=>{const v=Math.floor(+inp.value)+ +fr.value; if(v>=c.min&&v<=c.max){P[k]=v;inp.removeAttribute("aria-invalid");pricer();} else inp.setAttribute("aria-invalid","true");};
+      inp.oninput=set; fr.onchange=set; inp.onchange=()=>{inp.value=Math.min(c.max,Math.max(c.min,Math.floor(+inp.value)||c.std));set();};}
+  });
+  $("pUDepth").innerHTML=['18"','24"'].map(v=>`<button type="button" data-ud='${v}' ${pressed(P.ud,v)}>${v}</button>`).join("");
+  $("pUHeight").innerHTML=['42"','48"'].map(v=>`<button type="button" data-uh='${v}' ${pressed(P.uh,v)}>${v}</button>`).join("");
+  const on=(sel,f,adv)=>document.querySelectorAll(sel).forEach(b=>b.onclick=()=>{f(b);pricerCards();pricer();if(adv)setTimeout(()=>pGoTo(P.step+1),260);});
+  on("[data-m]",b=>P.m=b.dataset.m,1); on("[data-n]",b=>P.n=b.dataset.n,1); on("[data-c]",b=>P.c=+b.dataset.c,1); on("[data-l]",b=>{P.lay=+b.dataset.l;P.plans=null;$("pPlans").value="";$("pPlansName").hidden=true;},1);
+  on("[data-ud]",b=>P.ud=b.dataset.ud); on("[data-uh]",b=>P.uh=b.dataset.uh);
+}
+function pGoTo(i,quiet){
+  i=Math.max(0,Math.min(6,i)); const back=i<P.step; P.step=i; P.seen=Math.max(P.seen,i);
+  document.querySelectorAll(".pslide").forEach(s=>{const on=+s.dataset.step===i;s.hidden=!on;s.classList.remove("in","back");if(on&&!quiet){void s.offsetWidth;s.classList.add("in");if(back)s.classList.add("back");}});
+  $("pBody").classList.toggle("final",i===6);
+  pricer();
+  if(quiet)return;
+  const box=$("configure").getBoundingClientRect(); if(box.top<0||box.top>innerHeight*.5)$("configure").scrollIntoView({behavior:"smooth",block:"start"});
+  document.querySelector(`.pslide[data-step="${i}"] h3`).focus({preventScroll:true});
+}
+function pricer(){
+  const per=pm().rate+pn().add+(P.priv?45:0);
+  const parts=P.s*per+(P.ada?220:0)+P.u*(P.uh==='48"'?215:185);
+  const ids=P.inst?[P.inst]:Object.keys(PRATE); const e=ids.map(pEst);
+  const lo=Math.min(...e.map(x=>x[0])),hi=Math.max(...e.map(x=>x[1]));
+  const who=P.inst?I.find(x=>x.id===P.inst).name:null;
+  const rows=[["Material",pm().name],["Bracing",pn().name],["Color",PCOL[P.c][0]],["Layout",P.plans?`From your drawings (${P.plans})`:PLAY[P.lay][0]],["Stalls",`${P.s} (${P.ada?(P.s>1?`${P.s-1} × ${inch(P.w)} + 1 ADA`:"1 ADA"):`${P.s} × ${inch(P.w)}`}, ${inch(P.dep)} deep${P.priv?", extra privacy":""})`],["Urinal screens",P.u?`${P.u} × ${P.ud} D × ${P.uh} H`:"None"]];
+  $("pList").innerHTML=rows.map(([a,b],k)=>`<dt>${a}</dt><dd class="${k>P.seen?"todo":""}">${k>P.seen&&k>1?"—":b}</dd>`).join("");
+  $("pReview").innerHTML=rows.map(([a,b],k)=>`<dt>${a}</dt><dd>${b}<button type="button" data-edit="${k}" aria-label="Change ${a.toLowerCase()}">Change</button></dd>`).join("")+(P.inst?"":`<dt>Installer</dt><dd>Any approved DFW installer</dd>`);
+  $("pReview").querySelectorAll("[data-edit]").forEach(b=>b.onclick=()=>pGoTo(+b.dataset.edit));
+  $("pRail").innerHTML=PSTEPS.map((t,k)=>`<li><button type="button" data-go="${k}" class="${k<P.step||(k<=P.seen&&k!==P.step)?"done":""}" ${k===P.step?'aria-current="step"':""} ${k>P.seen?"disabled":""}>${t}</button></li>`).join("");
+  $("pRail").querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>pGoTo(+b.dataset.go));
+  $("pCount").textContent=`Step ${P.step+1} of 7 · ${PSTEPS[P.step]}`;
+  // prices stay out of the page until the visitor has given an email
+  const open=!!P.email;
+  if(open){$("pParts").textContent=pmoney(parts);
+  $("pInst").innerHTML=`${prng(lo,hi)}<small>${who?"From "+who+"'s agreed rates":"From the agreed rates of "+ids.length+" approved DFW installers"}. The installer confirms a firm price through us and bills installation directly.</small>`;
+  $("pTotal").innerHTML=`${prng(parts+lo,parts+hi)}<small>Before tax and delivery</small>`;}
+  $("pGate").hidden=open; $("pPrice").hidden=!open;
+  $("pMini").textContent=open?prng(parts+lo,parts+hi):"$0,000 – $0,000"; $("pMini").classList.toggle("locked",!open); if(open)$("pMini").removeAttribute("aria-label");else $("pMini").setAttribute("aria-label","Shown after you enter your email");
+  $("pSkip").hidden=open; $("pMiniNote").textContent=open?"Partitions plus installation, before tax and delivery.":"Partitions plus installation. Free, no obligation.";
+  $("pFinalH").textContent=open?"Your restroom, priced":"Your instant quote range";
+  $("pFinalQ").textContent=open?"Sample estimate. Your quote and shop drawings follow within 24–48 hours.":"Check your answers, then enter your email to see the price range.";
+  if(!open){$("pParts").textContent=$("pInst").textContent=$("pTotal").textContent="";}
+  else $("pSent").innerHTML=`We've emailed a copy to ${esc(P.email)}. Installers price your job through us; your contact details stay with us until you book. <a class="link" href="emails.html#email-1">Prototype: see the email</a>`;
+  $("pChip").hidden=!P.inst; if(P.inst)$("pChipName").textContent="Installer: "+who;
+  $("pNums").innerHTML=Array.from({length:8},(_,k)=>`<button type="button" data-s="${k+1}" ${pressed(P.s,k+1)}>${k+1}</button>`).join("");
+  $("pNums").querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>{P.s=+b.dataset.s;pricer();});
+  $("pAda").checked=P.ada;
+  $("pSizes").innerHTML=`Sizes: <b>${inch(P.w)} wide × ${inch(P.dep)} deep</b>${P.w===36&&P.dep===60?" (standard)":""} <button class="link" type="button" id="pSizeBtn" aria-expanded="${P.sizes}">${P.sizes?"Done":"Change"}</button>`;
+  $("pSizeBtn").onclick=()=>{P.sizes=!P.sizes;pricer();}; $("pSizeBox").hidden=!P.sizes; $("pOddP").hidden=!P.sizes;
+  $("pPlan").innerHTML=planSvg(); $("pPlanCap").textContent=`${P.s} stall${P.s>1?"s":""}${P.ada?", 1 accessible":""} · seen from above`;
+  $("pUNums").innerHTML=Array.from({length:9},(_,k)=>`<button type="button" data-u="${k}" ${pressed(P.u,k)}>${k}</button>`).join("");
+  $("pUNums").querySelectorAll("[data-u]").forEach(b=>b.onclick=()=>{P.u=+b.dataset.u;pricer();});
+  $("pPriv").checked=P.priv;
+  $("pUOpts").hidden=!P.u;
+  $("pBack").hidden=P.step===0; $("pNext").hidden=P.step===6;
+  $("pNext").textContent=P.step===5?(P.email?"See my price →":"Get my quote range →"):`Next: ${PSTEPS[P.step+1]} →`;
+  const hm=P.m==="ss"?"":P.m, hn=P.n==="fc"?"":P.n;   // the configurator prototype doesn't model these two yet
+  $("pGo").href="configurator.html#"+["dfw",P.inst,hm,hn,Math.max(2,Math.min(20,P.s))].filter(Boolean).join(".");
+}
+function pricerPick(id){P.inst=id;pricer();}
+$("pBack").onclick=()=>pGoTo(P.step-1);
+$("pNext").onclick=()=>pGoTo(P.step+1);
+$("pSkip").onclick=()=>{pGoTo(6);setTimeout(()=>$("pEmail").focus(),350);};
+$("pGate").onsubmit=e=>{e.preventDefault();const v=$("pEmail").value.trim(),ok=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+  $("pEmail").setAttribute("aria-invalid",String(!ok));$("pEmailErr").textContent=ok?"":"Enter a valid email address, like you@company.com.";
+  if(!ok){$("pEmail").focus();return;} P.email=v; pricer(); $("pFinalH").focus();};
+$("pPlansBtn").onclick=()=>{const o=$("pPlansBox").hidden;$("pPlansBox").hidden=!o;$("pLays").hidden=o;$("pPlansBtn").setAttribute("aria-expanded",String(o));$("pPlansBtn").textContent=o?"Pick a layout instead":"Have drawings? Upload them instead";};
+$("pPlans").onchange=e=>{const f=e.target.files[0];P.plans=f?f.name:null;$("pPlansName").hidden=!f;$("pPlansName").textContent=f?`✓ ${f.name} attached. We'll use it for your layout.`:"";
+  document.querySelectorAll("[data-l]").forEach(b=>b.setAttribute("aria-pressed","false"));pricer();if(f)setTimeout(()=>pGoTo(4),600);};
+$("pPriv").onchange=e=>{P.priv=e.target.checked;pricer();};
+$("pOdd").onclick=()=>{pGoTo(3);setTimeout(()=>{if($("pPlansBox").hidden)$("pPlansBtn").click();$("pPlans").focus();},350);};
+$("pAda").onchange=e=>{P.ada=e.target.checked;pricer();};
+$("pChipClear").onclick=()=>{P.inst=null;pricer();};
+{const q=new URLSearchParams(location.search).get("installer");if(q&&PRATE[q])P.inst=q;}
+pricerCards();pGoTo(0,true);
+// same height for every question step, so Back/Next never move (open sections included)
+function pFix(){
+  const st=$("configure").querySelector(".pstage"); st.style.setProperty("--pmin","0px");
+  if(innerWidth<641)return;
+  const open=["pUOpts","pSizeBox","pOddP"].map(id=>[$(id),$(id).hidden]); open.forEach(([e])=>e.hidden=false);
+  let max=0; document.querySelectorAll('.pslide:not([data-step="6"])').forEach(sl=>{const h=sl.hidden;sl.hidden=false;sl.style.flex="none";max=Math.max(max,sl.offsetHeight);sl.style.flex="";sl.hidden=h;});
+  open.forEach(([e,h])=>e.hidden=h); st.style.setProperty("--pmin",max+"px");
+}
+pFix(); addEventListener("load",pFix); addEventListener("resize",pFix);
+// the floating mobile button would cover the wizard while it's on screen
+new IntersectionObserver(([e])=>document.querySelector(".mbar").classList.toggle("away",e.isIntersecting)).observe($("configure"));
+</script>
+
+<script>document.body.insertAdjacentHTML('afterbegin', "<a href=\"../index.html#installers\" style=\"display:block;background:#fe7802;color:#fff;font:600 13px/1.4 Inter,system-ui,sans-serif;padding:8px 16px;text-decoration:none;position:relative;z-index:2000\">← Back to the overview: installer pages and job flow</a>")</script>
+<script>try{history.scrollRestoration='manual'}catch(e){};if(location.hash!=='#installers')addEventListener('load',()=>scrollTo(0,0))</script>

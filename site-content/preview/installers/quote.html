@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Partitions Quote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<style>
+/* Customer quote page: what the customer gets once installers have priced the job. Light-only, nextpartitions.com tokens. */
+:root{
+  --bg:#fbfaf9; --band:#f4f2ee; --surface:#ffffff; --fg:#1c0e05; --muted:#6d6059;
+  --border:#e1ddd7; --accent:#e8630a; --accent-strong:#c95200; --accent-soft:#fdeee3; --on-accent:#ffffff;
+  --ink:#262626; --ink-fg:#f8f8f8; --good:#1f7a4d; --good-soft:#e6f3ec; --warn:#8a5a00; --warn-soft:#fff3c4;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --container:1200px; --gutter:34px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter)}
+@media (max-width:760px){:root{--gutter:16px}}
+.mocknote{background:#fff3c4;border-bottom:1px solid #f0d98a;font-size:13px;color:#5c4400;text-align:center;padding:8px 16px}
+.topbar{background:var(--ink);color:var(--ink-fg);font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-block:9px;flex-wrap:wrap}
+.nav{background:var(--surface);border-bottom:1px solid var(--border)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:38px;width:auto}
+.brand b{display:block;font-size:18px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.nav .tel{font-weight:700;text-decoration:none;white-space:nowrap}
+@media (max-width:520px){.brand small{display:none}.topbar .tg{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;background:var(--accent);color:var(--on-accent);font:inherit;font-weight:700;font-size:16px;padding:12px 20px;min-height:48px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--accent-strong)}
+.btn.ghost{background:var(--surface);color:var(--accent-strong);border:2px solid var(--accent)}
+.btn.ghost:hover{background:var(--accent-soft)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.link{font:inherit;background:none;border:0;padding:0;color:var(--accent-strong);font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* head */
+.qhead{padding-block:28px 8px}
+.qhead .eyebrow{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-strong);margin:0}
+.qhead h1{font-size:clamp(28px,3.6vw,40px);font-weight:900;letter-spacing:-.03em;line-height:1.1;margin:4px 0 8px}
+.qhead p{margin:0;color:var(--muted)}
+.steps{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.steps li{font-size:13px;font-weight:600;color:var(--muted)}
+.steps li::before{content:"";display:block;height:4px;background:var(--border);margin-bottom:6px}
+.steps li.done{color:var(--fg)}.steps li.done::before{background:var(--fg)}
+.steps li.now{color:var(--accent-strong);font-weight:800}.steps li.now::before{background:var(--accent)}
+
+/* layout */
+.qgrid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:24px;align-items:start;padding-block:20px 60px}
+@media (max-width:1024px){.qgrid{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--border);padding:22px 24px;margin-bottom:16px}
+@media (max-width:640px){.card{padding:16px}}
+.card h2{font-size:21px;font-weight:900;letter-spacing:-.01em;margin:0 0 4px;outline:0}
+.card .sub{margin:0 0 16px;color:var(--muted)}
+.card.on{border-top:4px solid var(--accent)}
+.card.dim{opacity:.6}
+.card .stepn{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+.card .donemark{font-size:14px;color:var(--good);font-weight:700;margin:6px 0 0}
+table.items{width:100%;border-collapse:collapse;font-size:15px}
+table.items td{padding:9px 0;border-bottom:1px solid var(--border);vertical-align:top}
+table.items td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:12px}
+table.items tr.tot td{font-weight:800;border-bottom:0;padding-top:12px}
+table.items small{display:block;color:var(--muted);font-size:13px}
+dl.spec{margin:0 0 14px;display:grid;grid-template-columns:auto 1fr;gap:6px 18px;font-size:14px}
+dl.spec dt{color:var(--muted)}dl.spec dd{margin:0;font-weight:600}
+.file{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--border);padding:10px 12px;font-size:14px;font-weight:600;background:var(--band);text-decoration:none;margin:4px 0 14px;max-width:100%}
+.file i{font-style:normal;background:#b42318;color:#fff;font-size:10px;font-weight:800;padding:2px 4px}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:15px;cursor:pointer;border:1px solid var(--border);padding:12px 14px}
+.check input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--accent);flex:none}
+.btns{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:14px}
+.field{display:grid;gap:6px;font-size:14px;font-weight:600;margin:12px 0 0}
+.field input,.field textarea,.field select{font:inherit;font-weight:400;border:1px solid var(--border);padding:10px 12px;background:#fff;min-height:46px;width:100%}
+.ok{background:var(--good-soft);border:1px solid #b9dcc8;color:#14532d;padding:12px 14px;font-size:14px;margin:12px 0 0}
+
+/* installer options */
+.waitbox{background:#fff3c4;border:1px solid #f0d98a;padding:14px 16px;margin-bottom:12px;font-size:14px}
+.waitbox b{display:block;font-size:16px;margin-bottom:4px}
+.waitbox p{margin:4px 0 0}
+.opts{display:grid;gap:10px}
+.opt{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;align-items:center;border:1px solid var(--border);padding:14px 16px;background:var(--surface)}
+.opt[aria-checked="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+.opt .nm{font-weight:800;font-size:17px}
+.opt .meta{font-size:13px;color:var(--muted)}
+.opt .inc{font-size:13px;margin-top:4px}
+.opt .pr{text-align:right}
+.opt .pr b{display:block;font-size:22px;font-weight:900;font-variant-numeric:tabular-nums}
+.opt .pr small{display:block;font-size:12px;color:var(--muted)}
+.opt .act{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.opt .act .btn{min-height:40px;padding:8px 16px;font-size:15px}
+.opt.pending{background:var(--band)}
+.stars{color:#b7791f;letter-spacing:1px}
+@media (max-width:520px){.opt{grid-template-columns:1fr}.opt .pr{text-align:left}}
+.note{font-size:14px;color:var(--muted);margin:12px 0 0}
+.disc{font-size:13px;color:var(--muted);border-top:1px solid var(--border);padding-top:12px;margin-top:16px}
+
+/* payment */
+.pays{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.pays button{font:inherit;font-weight:700;font-size:15px;text-align:left;background:var(--surface);border:1px solid var(--border);padding:12px;cursor:pointer}
+.pays button small{display:block;font-weight:500;font-size:12px;color:var(--muted)}
+.pays button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+@media (max-width:520px){.pays{grid-template-columns:1fr}}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:520px){.row2{grid-template-columns:1fr}}
+.proto{font-size:13px;color:var(--warn);background:var(--warn-soft);border:1px solid #f0d98a;padding:6px 10px;margin-top:12px;display:inline-block}
+
+/* done */
+.timeline{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:12px}
+.timeline li{display:flex;gap:12px;font-size:15px}
+.timeline li i{flex:none;width:26px;height:26px;display:grid;place-items:center;font-style:normal;font-weight:800;font-size:13px;background:var(--band);border:1px solid var(--border)}
+.timeline li.d i{background:var(--good);border-color:var(--good);color:#fff}
+.timeline small{display:block;color:var(--muted);font-size:13px}
+
+/* side */
+.side{display:grid;gap:16px}
+@media (min-width:1025px){.side{position:sticky;top:16px}}
+.sum{background:var(--surface);border:1px solid var(--border);padding:20px}
+.sum h3{margin:0 0 12px;font-size:16px;font-weight:800}
+.sum .l{display:flex;justify-content:space-between;gap:12px;font-size:14px;padding:6px 0}
+.sum .l span{color:var(--muted)}
+.sum .l b{font-variant-numeric:tabular-nums;text-align:right}
+.sum .l small{display:block;font-weight:500;color:var(--muted);font-size:12px}
+.sum .due{border-top:1px solid var(--border);margin-top:8px;padding-top:12px}
+.sum .due b{font-size:24px;font-weight:900}
+.sum .sep{border-top:1px dashed var(--border);margin-top:8px;padding-top:8px}
+.help{background:var(--band);border:1px solid var(--border);padding:16px;font-size:14px}
+.help b{display:block;font-size:15px}
+.help a{color:var(--accent-strong);font-weight:700}
+</style>
+</head>
+<body>
+
+<div class="mocknote"><b>Mockup:</b> the quote a customer receives once installers have priced the job. All names, prices and details are fictional samples.</div>
+<div class="topbar"><div class="wrap"><span>sales@nextpartitions.com · 1-833-997-7489</span><span class="tg">Authorized Distributor — All Major Brands</span></div></div>
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="home.html"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Your quote</small></span></a>
+  <a class="tel" href="tel:18339977489">1-833-997-7489</a>
+</div></nav>
+
+<main class="wrap">
+  <header class="qhead">
+    <p class="eyebrow">Quote Q-26-1048 · valid 30 days</p>
+    <h1>Your restroom partitions, Plano</h1>
+    <p>For Pat Lee, Plano ISD Facilities · Elementary school, Plano, TX 75074 · prepared by [Coordinator name], Next Partitions</p>
+    <ol class="steps" id="steps" aria-label="Steps"></ol>
+  </header>
+
+  <div class="qgrid">
+    <div>
+      <!-- 1. drawings -->
+      <section class="card" id="s1" aria-labelledby="h1">
+        <p class="stepn">Step 1</p>
+        <h2 id="h1" tabindex="-1">Review your shop drawings</h2>
+        <p class="sub">Your partitions, measured and drawn for your restroom. Check the layout and sizes before you choose installation.</p>
+        <dl class="spec">
+          <dt>Material</dt><dd>Solid plastic (HDPE), Sage 2141</dd>
+          <dt>Bracing</dt><dd>Overhead braced</dd>
+          <dt>Layout</dt><dd>Between walls</dd>
+          <dt>Stalls</dt><dd>6 (5 × 36" + 1 ADA 60"), 60" deep, extra privacy</dd>
+          <dt>Urinal screens</dt><dd>2 × 18" D × 42" H</dd>
+          <dt>Delivery</dt><dd>Nov 9–13, 2026, to the job site</dd>
+        </dl>
+        <a class="file" href="#s1" onclick="return false"><i>PDF</i>Shop drawings Q-26-1048 v1.pdf</a>
+        <table class="items" aria-label="Partitions price">
+          <tr><td>6 stalls, solid plastic (HDPE), overhead braced<small>Panels, doors, pilasters, headrail and all hardware</small></td><td class="num">$4,410</td></tr>
+          <tr><td>Accessible (ADA) stall upgrade</td><td class="num">$220</td></tr>
+          <tr><td>Extra privacy (continuous hinges and brackets)</td><td class="num">$270</td></tr>
+          <tr><td>2 urinal screens, 18" D × 42" H</td><td class="num">$370</td></tr>
+          <tr class="tot"><td>Partitions</td><td class="num">$5,270</td></tr>
+          <tr><td>Freight to Plano, TX (liftgate)</td><td class="num">$385</td></tr>
+          <tr><td>Sales tax<small>Tax-exempt (school): send your certificate</small></td><td class="num">$0</td></tr>
+        </table>
+        <div id="s1Body">
+          <label class="check" style="margin-top:16px"><input type="checkbox" id="approve"><span><b>The layout and sizes are correct</b><br><small style="color:var(--muted)">We order your partitions from these drawings.</small></span></label>
+          <div class="btns"><button class="btn" type="button" id="s1Go" disabled>Approve drawings and choose installation →</button><button class="link" type="button" id="chg">Request a change</button></div>
+          <div id="chgBox" hidden><label class="field">What should change?<textarea id="chgTxt" rows="3" placeholder="e.g. The ADA stall should be on the left."></textarea></label><div class="btns"><button class="btn ghost" type="button" id="chgGo">Send to Next Partitions</button></div></div>
+          <p class="ok" id="chgOk" hidden></p>
+        </div>
+        <p class="donemark" id="s1Done" hidden>✓ Drawings approved</p>
+      </section>
+
+      <!-- 2. installation -->
+      <section class="card" id="s2" aria-labelledby="h2">
+        <p class="stepn">Step 2</p>
+        <h2 id="h2" tabindex="-1">Choose installation</h2>
+        <p class="sub">Firm prices from approved installers who saw your drawings. Installation is quoted and billed by the installer. Next Partitions adds no markup and coordinates delivery and install dates.</p>
+        <div class="opts" role="radiogroup" aria-label="Installation" id="opts"></div>
+        <p class="disc">Installers are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work.</p>
+        <p class="donemark" id="s2Done" hidden></p>
+      </section>
+
+      <!-- 3. pay -->
+      <section class="card" id="s3" aria-labelledby="h3">
+        <p class="stepn">Step 3</p>
+        <h2 id="h3" tabindex="-1">Pay for your partitions order</h2>
+        <p class="sub">Partitions and freight are paid to Next Partitions. <span id="instPayNote"></span></p>
+        <div id="s3Body">
+          <div class="pays" role="group" aria-label="Payment method">
+            <button type="button" data-pay="po" aria-pressed="true">Purchase order<small>Schools and public buyers</small></button>
+            <button type="button" data-pay="card" aria-pressed="false">Card<small>Visa, Mastercard, Amex</small></button>
+            <button type="button" data-pay="ach" aria-pressed="false">Bank transfer (ACH)<small>Details by email</small></button>
+          </div>
+          <div id="payPo">
+            <div class="row2"><label class="field">PO number<input id="poNum" placeholder="e.g. 4500123456"></label><label class="field">Upload the PO (PDF)<input type="file" accept=".pdf"></label></div>
+            <label class="field">Tax-exempt certificate (optional)<input type="file" accept=".pdf,.jpg,.png"></label>
+          </div>
+          <div id="payCard" hidden>
+            <label class="field">Card number<input inputmode="numeric" placeholder="1234 1234 1234 1234" autocomplete="cc-number"></label>
+            <div class="row2"><label class="field">Expiry<input placeholder="MM / YY" autocomplete="cc-exp"></label><label class="field">CVC<input inputmode="numeric" placeholder="123" autocomplete="cc-csc"></label></div>
+          </div>
+          <div id="payAch" hidden><p class="note">We email bank details and a pro forma invoice to pat.lee@example.org. Your order is placed when the transfer arrives.</p></div>
+          <p class="note" id="payErr" hidden style="color:#b42318"></p>
+          <div class="btns"><button class="btn" type="button" id="payGo">Pay $5,655 for your partitions</button></div>
+          <span class="proto">Prototype: no payment is taken.</span>
+        </div>
+      </section>
+
+      <!-- done -->
+      <section class="card on" id="s4" aria-labelledby="h4" hidden>
+        <h2 id="h4" tabindex="-1">Your partitions are ordered</h2>
+        <p class="sub" id="doneLead"></p>
+        <ol class="timeline" id="timeline"></ol>
+      </section>
+    </div>
+
+    <aside class="side">
+      <div class="sum" aria-live="polite">
+        <h3>Summary</h3>
+        <div class="l"><span>Partitions</span><b>$5,270</b></div>
+        <div class="l"><span>Freight (liftgate)</span><b>$385</b></div>
+        <div class="l"><span>Sales tax</span><b>Exempt</b></div>
+        <div class="l due"><span id="dueLbl">Due now to Next Partitions</span><b>$5,655</b></div>
+        <div class="l sep"><span id="instLbl">Installation</span><b id="instAmt">Not chosen yet</b></div>
+      </div>
+      <div class="help"><b>Questions?</b>[Coordinator name], Next Partitions<br><a href="tel:18339977489">1-833-997-7489</a> · <a href="mailto:sales@nextpartitions.com">sales@nextpartitions.com</a><p class="note" style="margin-top:8px">Quote valid for 30 days, until Nov 18, 2026.</p></div>
+    </aside>
+  </div>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+const money=n=>"$"+n.toLocaleString("en-US");
+const OPTS=[
+  {id:"acme",name:"Acme Partition Installs",price:1120,rating:4.9,jobs:28,city:"Dallas",reply:"Replies in ~6 h",inc:"Includes removal and haul-away of 6 old stalls · 2-day install"},
+  {id:"northwind",name:"Northwind Washroom Pros",price:1180,rating:4.8,jobs:19,city:"Fort Worth",reply:"Replies in ~8 h",inc:"Includes removal and haul-away of 6 old stalls · 2-day install"},
+  {id:"contoso",name:"Contoso Specialty Contractors",price:null,rating:4.7,jobs:11,city:"Arlington",reply:"",inc:""},
+  {id:"own",name:"I'll arrange my own installer",price:0,own:true,inc:"We include the install packet: layout, hardware list and install guide."}];
+const S={step:1,inst:null,pay:"po",searching:location.hash==="#searching"};
+// #searching: no installer has priced yet, so the customer gets choices instead of a list of prices
+const LATER={id:"later",name:"Partitions only for now",price:0,later:true,inc:"Your partitions ship as planned. When installer prices come in, we email you and you can still choose one."};
+const STEPS=["Review drawings","Choose installation","Pay for partitions","Done"];
+
+function opts(){
+  const list=S.searching?[LATER,OPTS[3]]:OPTS;
+  if(S.searching)document.querySelector("#s2 .sub").textContent="Approved installers price your job after seeing your drawings. Installation is quoted and billed by the installer. Next Partitions adds no markup and coordinates delivery and install dates.";
+  $("opts").innerHTML=(S.searching?`<div class="waitbox"><b>We're still lining up installers near your job site</b><p>The installers we asked first are booked for your dates, so we've widened the search. Expect firm prices by Thursday, Oct 23. You don't need to do anything: we'll email you as soon as they're in.</p><p>If you'd rather not wait, choose one of these. You can still add an approved installer later.</p></div>`:"")+list.map(o=>{
+    if(o.later) return `<div class="opt" role="radio" aria-checked="${S.inst==="later"}"><div><div class="nm">${o.name}</div><div class="inc">${o.inc}</div></div><div class="pr"><b>—</b><small>Add installation later</small></div><div class="act"><button class="btn" type="button" data-pick="later">Continue with partitions</button></div></div>`;
+    if(o.own) return `<div class="opt" role="radio" aria-checked="${S.inst==="own"}"><div><div class="nm">${o.name}</div><div class="inc">${o.inc}</div></div><div class="pr"><b>—</b><small>Arranged by you</small></div><div class="act"><button class="btn ghost" type="button" data-pick="own">Choose own installer</button></div></div>`;
+    if(o.price===null) return `<div class="opt pending" role="radio" aria-checked="false" aria-disabled="true"><div><div class="nm">${o.name}</div><div class="meta"><span class="stars" aria-hidden="true">★★★★★</span> ${o.rating} · ${o.jobs} installs for our customers · ${o.city}</div></div><div class="pr"><b style="font-size:16px">Price coming by Tue</b><small>We'll email you when it's in</small></div><div class="act"><a class="link" href="profile.html#${o.id}">View profile</a></div></div>`;
+    const first=o.name.split(" ")[0];
+    return `<div class="opt" role="radio" aria-checked="${S.inst===o.id}"><div><div class="nm">${o.name}</div><div class="meta"><span class="stars" aria-hidden="true">★★★★★</span> ${o.rating} · ${o.jobs} installs for our customers · ${o.city} · ${o.reply}</div><div class="inc">${o.inc}</div></div>
+      <div class="pr"><b>${money(o.price)}</b><small>Firm price, billed by ${first}</small></div>
+      <div class="act"><button class="btn" type="button" data-pick="${o.id}">${S.inst===o.id?"✓ Chosen":"Choose "+first}</button><a class="link" href="profile.html#${o.id}">View profile</a></div></div>`;}).join("");
+  $("opts").querySelectorAll("[data-pick]").forEach(b=>b.onclick=()=>{S.inst=b.dataset.pick;go(3);});
+}
+function pick(){return S.inst==="later"?LATER:OPTS.find(o=>o.id===S.inst);}
+
+function render(){
+  $("steps").innerHTML=STEPS.map((t,k)=>`<li class="${k+1<S.step?"done":k+1===S.step?"now":""}">${t}</li>`).join("");
+  ["s1","s2","s3"].forEach((id,k)=>{const n=k+1,el=$(id);el.classList.toggle("on",n===S.step);el.classList.toggle("dim",n>S.step);el.hidden=S.step===4&&n<3?false:S.step===4&&n===3;});
+  $("s1Body").hidden=S.step>1; $("s1Done").hidden=S.step<=1;
+  $("opts").closest(".card").querySelector(".opts").style.display=S.step===2?"":"none";
+  $("s2Done").hidden=S.step<=2; const o=pick();
+  if(o)$("s2Done").textContent=o.later?"✓ Partitions only for now; we'll email installer prices when they're in":o.own?"✓ You'll arrange your own installer":`✓ ${o.name}, ${money(o.price)}`;
+  $("s3Body").hidden=S.step!==3;
+  $("s4").hidden=S.step!==4;
+  $("dueLbl").textContent=S.step===4?(S.pay==="po"?"Purchase order sent":S.pay==="ach"?"Awaiting bank transfer":"Paid to Next Partitions"):"Due now to Next Partitions";
+  // installation always stays a separate line: it's paid to the installer, not to us
+  if(!o){$("instLbl").textContent="Installation";$("instAmt").innerHTML="Not chosen yet";}
+  else if(o.own){$("instLbl").textContent="Installation";$("instAmt").innerHTML="Your own installer";}
+  else if(o.later){$("instLbl").textContent="Installation";$("instAmt").innerHTML="Add later";}
+  else{$("instLbl").innerHTML=`Installation, ${o.name}<small>Paid to ${o.name.split(" ")[0]} after installation, invoiced by them</small>`;$("instAmt").textContent=money(o.price);}
+  $("instPayNote").textContent=!o||o.own||o.later?"":`Installation (${money(o.price)}) isn't included: you pay ${o.name.split(" ")[0]} after installation, invoiced by them.`;
+  if(S.step===4){const nm=o.own||o.later?null:o.name;
+    $("doneLead").textContent=o.later?"Your partitions are ordered. Delivery Nov 9–13. We'll email you installer prices as soon as they're in, and you can choose one then.":nm?`${nm.split(" ")[0]} now has your contact details and site address to schedule the install. Delivery Nov 9–13. We'll confirm the install date.`:"We've emailed the install packet to pat.lee@example.org. Delivery Nov 9–13. We'll confirm the delivery date.";
+    $("timeline").innerHTML=[["d","Partitions ordered","Order confirmation sent to pat.lee@example.org"],["","Production and shipping","We email tracking when your order ships"],["","Delivery to the job site","Nov 9–13, 2026, liftgate delivery"],...(nm?[["","Installation by "+nm.split(" ")[0],"Install date confirmed with you and Next Partitions; usually the week after delivery"],["","Review","We ask how the install went"]]:[])]
+      .map(([c,t,s],k)=>`<li class="${c}"><i>${c?"✓":k+1}</i><span><b>${t}</b><small>${s}</small></span></li>`).join("");}
+  opts();
+}
+function go(n,quiet){S.step=n;render();if(quiet)return;const h=$(n===4?"h4":"h"+n);h.scrollIntoView({behavior:"smooth",block:"start"});h.focus({preventScroll:true});}
+
+$("approve").onchange=e=>$("s1Go").disabled=!e.target.checked;
+$("s1Go").onclick=()=>go(2);
+$("chg").onclick=()=>{$("chgBox").hidden=false;$("chgTxt").focus();};
+$("chgGo").onclick=()=>{const t=$("chgTxt").value.trim();if(!t){$("chgTxt").focus();return;}$("chgBox").hidden=true;$("chgOk").hidden=false;$("chgOk").textContent="Sent to Next Partitions. You'll get updated drawings within 1 business day.";};
+document.querySelectorAll("[data-pay]").forEach(b=>b.onclick=()=>{S.pay=b.dataset.pay;document.querySelectorAll("[data-pay]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+  $("payPo").hidden=S.pay!=="po";$("payCard").hidden=S.pay!=="card";$("payAch").hidden=S.pay!=="ach";
+  $("payGo").textContent=S.pay==="ach"?"Email me the bank details":S.pay==="po"?"Send purchase order":"Pay $5,655 for your partitions";});
+$("payGo").onclick=()=>{if(S.pay==="po"&&!$("poNum").value.trim()){$("payErr").hidden=false;$("payErr").textContent="Enter your PO number.";$("poNum").focus();return;}$("payErr").hidden=true;go(4);};
+if(location.hash==="#choose"||S.searching){$("approve").checked=true;go(2,true);requestAnimationFrame(()=>$("h2").scrollIntoView());}
+else render();
+$("payGo").textContent="Send purchase order";
+</script>
+</body>
+</html>
+
+<script>document.body.insertAdjacentHTML('afterbegin', "<a href=\"../index.html#installers\" style=\"display:block;background:#fe7802;color:#fff;font:600 13px/1.4 Inter,system-ui,sans-serif;padding:8px 16px;text-decoration:none;position:relative;z-index:2000\">← Back to the overview: installer pages and job flow</a>")</script>
+<script>try{history.scrollRestoration='manual'}catch(e){};if(location.hash!=='#installers')addEventListener('load',()=>scrollTo(0,0))</script>
