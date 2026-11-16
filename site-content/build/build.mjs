@@ -262,7 +262,7 @@ function faqItems(section) {
 // pages that have none. Drawn straight on the dark hero (recolored by CSS: light lines, orange kept) beside the title; it stacks under the button on a phone,
 // where it shows the drawing's first phone frame. Its ids get an "h-" prefix: the same drawing is often inlined again in the page.
 // A drawing shown in the hero (and on hub cards) even though the page body no longer repeats it
-const HERO_DIAGRAM = { '/mounting-styles': 'mounting-styles-compare', '/blog/ceiling-hung-vs-floor-mounted-vs-floor-to-ceiling': 'mounting-styles-compare', '/blog/bathroom-stalls-for-schools': 'school-restroom-hero' }
+const HERO_DIAGRAM = { '/mounting-styles': 'mounting-styles-compare', '/blog/ceiling-hung-vs-floor-mounted-vs-floor-to-ceiling': 'mounting-styles-compare', '/blog/bathroom-stalls-for-schools': 'school-restroom-hero', '/blog/restaurant-bathroom-partitions': 'restaurant-restroom-hero' }
 const HERO_FALLBACK = { '/': 'mounting-styles-compare', '/about': 'mounting-styles-compare', '/faq': 'partition-anatomy', '/brands': 'partition-anatomy', '/brands/hadrian': 'partition-anatomy', '/blog': 'stall-gaps', '/guides': 'sheet-plan', '/guides/installation-instructions': 'mounting-styles-compare', '/industries': 'sheet-plan' }
 // 3D renders (design/renders/, made by design/render3d from the drawings' numbers). In the previews they are
 // inlined as data URIs so a file opens on its own; on the live site they're served as /images/renders/<name>.jpg.

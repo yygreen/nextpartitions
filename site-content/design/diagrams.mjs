@@ -29,7 +29,7 @@ const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 // Drawings that explain a principle rather than follow a manufacturer's drawing say so on the drawing.
 const SCHEMATIC = new Set(['mounting-styles-compare', 'partition-anatomy', 'hinge-types', 'measure-replacement-door', 'stall-gaps', 'latch-keeper',
   'material-section-phenolic', 'material-section-solid-plastic', 'material-section-plastic-laminate', 'material-section-powder-coated-steel',
-  'material-section-stainless-steel', 'material-sections-compare', 'material-compare-hdpe-phenolic', 'material-compare-plastic-steel', 'urinal-spacing', 'measure-new-restroom-plan', 'measure-new-restroom-section', 'school-stall-decisions', 'school-restroom-hero'])
+  'material-section-stainless-steel', 'material-sections-compare', 'material-compare-hdpe-phenolic', 'material-compare-plastic-steel', 'urinal-spacing', 'measure-new-restroom-plan', 'measure-new-restroom-section', 'school-stall-decisions', 'school-restroom-hero', 'restaurant-restroom-hero'])
 const META = {} // name → [title, desc], reused by the phone variants
 // `frame`: a wider canvas, with the drawing centred in it (standalone drawings are 780 wide, the content column).
 function svg(name, w, h, title, desc, body, frame) {
@@ -315,6 +315,43 @@ function schoolScene({ s, x0, floor, lockers, stalls, wt = 22, slabT = 30 }) {
   const sc = schoolScene({ s: S, x0: 372, floor: 330, lockers: 4, stalls: 3 })
   made.push(svg('school-restroom-hero', Math.round(sc.right + 24), 400, 'A school restroom: corridor lockers, a student with a backpack and a run of stalls',
     'Front view of a school corridor and restroom: a row of lockers, a student with a backpack walking toward a run of three overhead braced bathroom stalls. The backpack is shown in orange.',
+    sc.b, 780))
+}
+
+// 9d. A restaurant restroom, for the hero of the restaurants post: a dining table for two under a pendant lamp,
+// beside a run of stalls. The lamp is the one orange accent. No dimensions: it sets the scene.
+function restaurantScene({ s, x0, floor, stalls, wt = 22, slabT = 30 }) {
+  const Y = (inch) => floor - inch * s
+  const fx = x0 - 88 * s, X = (inch) => fx + inch * s
+  const sw = 1.5
+  let b = ''
+  b += rect(fx - 10, floor, x0 - fx + 20, slabT, { fill: 'HATCH', stroke: 'none' }) + line(fx - 10, floor, x0, floor)
+  // chairs: seat at 18", back to 36", facing the table
+  const chair = (seatL, backX) => rect(X(seatL), Y(18), 16 * s, 1.6 * s) + rect(X(backX), Y(36), 1.6 * s, 18 * s)
+    + line(X(seatL + 1.2), Y(16.4), X(seatL + 0.4), floor, { sw }) + line(X(seatL + 14.8), Y(16.4), X(seatL + 15.6), floor, { sw })
+  b += chair(8, 8) + chair(58, 72.4)
+  // table: 36" top at 30", on a pedestal
+  b += rect(X(39.4), Y(28.4), 3.2 * s, 26.8 * s) + rect(X(31), Y(1.6), 20 * s, 1.6 * s) + rect(X(23), Y(30), 36 * s, 1.6 * s)
+  // on the table: a wine glass and a covered plate
+  const gx = X(33), gt = Y(30)
+  b += line(gx - 1.6 * s, gt, gx + 1.6 * s, gt, { sw }) + line(gx, gt, gx, gt - 4 * s, { sw })
+  b += `<path d="M${gx - 1.9 * s} ${gt - 8.6 * s} h${3.8 * s} c0 ${3.2 * s} ${-0.6 * s} ${4.6 * s} ${-1.9 * s} ${4.6 * s} s${-1.9 * s} ${-1.4 * s} ${-1.9 * s} ${-4.6 * s} z" fill="${C.part}" stroke="${C.ink}" stroke-width="${sw}" stroke-linejoin="round"/>`
+  const px = X(47)
+  b += `<path d="M${px - 4.6 * s} ${gt - 0.8 * s} a${4.6 * s} ${4.2 * s} 0 0 1 ${9.2 * s} 0 z" fill="${C.part}" stroke="${C.ink}" stroke-width="${sw}" stroke-linejoin="round"/>`
+  b += `<circle cx="${px}" cy="${gt - 5.6 * s}" r="${0.8 * s}" fill="${C.part}" stroke="${C.ink}" stroke-width="${sw}"/>` + line(px - 5.6 * s, gt - 0.4 * s, px + 5.6 * s, gt - 0.4 * s, { sw: 2 })
+  // pendant lamp over the table
+  const lx = X(41)
+  b += line(lx, Y(100), lx, Y(66), { sw: 1.2 })
+  b += `<path d="M${lx - 2 * s} ${Y(66)} h${4 * s} l${5.5 * s} ${9 * s} h${-15 * s} z" fill="${C.orange}" stroke="${C.orange}" stroke-width="1.5" stroke-linejoin="round"/>`
+  // the restroom: a run of overhead braced stalls
+  const e = elevation({ x0, stalls, floor, headrail: true, pil: [0, 83], emphasis: 'none', wt, slabT })
+  b += e.body + rect(e.X(0), e.Y(83) - 1, e.runIn * s, 2.2 * s)
+  return { b, right: e.wallR + wt }
+}
+{
+  const sc = restaurantScene({ s: S, x0: 372, floor: 330, stalls: 3 })
+  made.push(svg('restaurant-restroom-hero', Math.round(sc.right + 24), 400, 'A restaurant restroom: a dining table under a pendant lamp beside a run of stalls',
+    'Front view of a restaurant: a table for two with a wine glass and a covered plate under a pendant lamp, beside a run of three overhead braced bathroom stalls. The lamp is shown in orange.',
     sc.b, 780))
 }
 
@@ -2073,6 +2110,15 @@ function ambPlan(xr, ys, k, ph) {
   withPhone(s, () => {
     const sc = schoolScene({ s, x0: 168, floor: 182, lockers: 2, stalls: 2, wt: 12, slabT: 14 })
     phone('school-restroom-hero-m', H_M, sc.b)
+  })
+}
+
+// The restaurant scene on a phone: the table for two and two stalls.
+{
+  const s = 1.68
+  withPhone(s, () => {
+    const sc = restaurantScene({ s, x0: 176, floor: 182, stalls: 2, wt: 12, slabT: 14 })
+    phone('restaurant-restroom-hero-m', H_M, sc.b)
   })
 }
 
