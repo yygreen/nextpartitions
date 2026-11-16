@@ -125,11 +125,7 @@ Disclaimer: ADA dimensions and accessibility guidance shown here are provided fo
 
 Most schools replace stalls when the building is empty. Partitions are made to order from approved shop drawings, so work back from the break: measure, get the quote, approve the drawings, allow for manufacturing and shipping, then book the installer. If you have several restrooms, measure them all at once and quote them together.
 
-:::expert
-For a summer install, when should a school start the process, and where do school projects most often lose time?
-:::
-
-Start with the measurements: [how to measure for toilet partitions](/blog/how-to-measure-for-toilet-partitions).
+The inspection and the summer timeline are in our [school restroom renovation checklist](/blog/school-restroom-renovation-checklist).
 
 ## Quote your school project
 
@@ -175,4 +171,4 @@ HDPE can be hosed down, and phenolic handles constant moisture. Plastic laminate
 - Fixed from the industry check (`site-content/industry-check.md`): elementary heights (S2), the ambulatory rule (S3), the HDPE fire rating (S4), the ADA disclaimer (S5), the HDPE and phenolic cards (S6, S7), the stainless wording (S8), hinges (S9).
 - **Removed until Abe confirms:** the budget range ("$900 to $2,400 per stall"), the lead time ("2 to 4 weeks; plan summer installs by April"), "we supply K-12 districts, charter schools, and universities" and "order a spare hardware kit" (S11 to S13).
 - Hero: school-restroom-hero (hero only). Drawings: school-stall-decisions, material-sections-compare, mounting-styles-compare, hinge-types, stall-gaps, ada-toe-clearance.
-- Abe's answer on HDPE or phenolic for schools is his existing answer from the HDPE vs phenolic post. The summer-install question is still open.
+- Abe's answer on HDPE or phenolic for schools is his existing answer from the HDPE vs phenolic post.
