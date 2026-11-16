@@ -11,7 +11,7 @@ words: 1,210 (1,420 with FAQ)
 
 # How to Measure for Commercial Toilet Partitions
 
-To measure for toilet partitions you need six things from the room, and a few more from the old stalls if you're replacing them. This guide shows each one on a drawing, in the order to take them, and ends with a checklist of what to send. With these numbers, a quote can be built on your real room, and the shop drawings that follow have fewer surprises.
+To measure for toilet partitions you need six things from the room, and a few more from the old stalls if you're replacing them. With these numbers, a quote can be built on your real room, and the shop drawings that follow have fewer surprises.
 
 ## What you need
 

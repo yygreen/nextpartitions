@@ -11,11 +11,9 @@ words: 1,200 (1,410 with FAQ)
 
 # How to Pick the Best Bathroom Stalls for Schools
 
-The best bathroom stalls for schools survive kicks, graffiti, hanging on doors and daily disinfecting, and still pass the fire and accessibility rules a school building has to meet. That narrows the choice quickly: two materials, two mounting styles, and a handful of details that decide whether the stalls last. This guide takes them in the order you'd decide them.
+The best bathroom stalls for schools survive kicks, graffiti, hanging on doors and daily disinfecting, and still pass the fire and accessibility rules a school building has to meet. That narrows the choice quickly: two materials, two mounting styles, and a handful of details that decide whether the stalls last.
 
 ## Five things to decide
-
-One run of stalls shows all five. Each is covered below, in this order:
 
 ![Front view of a run of stalls with five things marked: the door surface, the headrail, a full-height hinge, the gaps at a door's edges and the space under a door](/images/diagrams/school-stall-decisions.svg)
 

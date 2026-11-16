@@ -86,4 +86,6 @@ All installers, rates, reviews and photos in the prototypes are fictional sample
 
 - Rules and costs show a source link, a "last checked" date and "confirm with [authority]". A lawyer reviews the wording before launch.
 - Present local rules in plain language without implying a permit is needed to **buy** partitions.
+- **No signposting sentences, ever** (2026-11-16): don't announce what the text is about to do ("Each is covered below, in this order:", "This guide takes them in the order…", "The sections below cover…"). Say the thing, or let the heading and the list do it.
+- **Don't mention that Next Partitions doesn't install** in blog posts unless the post is about installation.
 - Year-variant keywords ("2025/2026 … cost installed") target **one permanent page**. Update the year in the title every January.
