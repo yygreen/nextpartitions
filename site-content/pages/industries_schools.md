@@ -1,17 +1,28 @@
 ---
-url: /blog/bathroom-stalls-for-schools
-title: Bathroom Stalls for Schools: How to Pick the Best Ones
-meta: Bathroom stalls for schools: HDPE or phenolic, the fire rule for HDPE, mounting for rough use, heights by age group, privacy options and ADA rules for children.
-h1: How to Pick the Best Bathroom Stalls for Schools
+url: /industries/schools
+title: Bathroom Partitions for Schools | School Bathroom Stalls
+meta: Bathroom stalls for schools: HDPE or phenolic, the fire rule for HDPE, mounting for rough use, heights by age group, privacy and ADA rules for children's stalls.
+h1: Bathroom Partitions for Schools
 primary_keyword: bathroom stalls for schools (210)
-secondary_keywords: [school bathroom stall (170), school bathroom partitions (30), bathroom partitions for schools (20), school restroom partitions (20), best partitions for schools (calendar target; not in Keyword List 1)]
+secondary_keywords: [school bathroom stall (170), school bathrooms (320), school bathroom partitions (30), bathroom partitions for schools (20), school restroom partitions (20)]
 date: 2026-11-16
-words: 1,200 (1,410 with FAQ)
+words: 1,360 (1,600 with FAQ)
 ---
 
-# How to Pick the Best Bathroom Stalls for Schools
+# Bathroom Partitions for Schools
 
-The best bathroom stalls for schools survive kicks, graffiti, hanging on doors and daily disinfecting, and still pass the fire and accessibility rules a school building has to meet. That narrows the choice quickly: two materials, two mounting styles, and a handful of details that decide whether the stalls last.
+Bathroom stalls for schools take kicks, graffiti, hanging on doors and daily disinfecting, and they still have to pass the fire and accessibility rules a school building must meet. Solid plastic (HDPE) and phenolic are the two materials that hold up, in K-12 and university restrooms alike.
+
+## What schools need
+
+- Resistance to vandalism: graffiti, kicking and tampering with hardware
+- Panels that scrub clean without showing a different color underneath
+- Materials that survive daily disinfecting and wet cleaning
+- Heights that suit the age group, elementary or secondary
+- Fewer gaps and sightlines
+- Heavy-duty hinges and tamper-resistant fasteners
+- Long warranties that match the district's replacement cycle
+- A fire-rated product where the code requires it
 
 ## Five things to decide
 
@@ -23,7 +34,7 @@ The best bathroom stalls for schools survive kicks, graffiti, hanging on doors a
 4. Privacy: the gaps at the door edges
 5. Floor clearance in the accessible stall
 
-## Start with the material: HDPE or phenolic
+## Recommended materials: HDPE or phenolic
 
 Five materials are sold for toilet partitions. Seen edge on, they're built very differently:
 
@@ -45,7 +56,9 @@ Our full comparison is in [HDPE vs phenolic partitions](/blog/hdpe-vs-phenolic-p
 What about the other three? [Powder coated steel](/partitions/powder-coated-steel) costs the least to buy, but painted steel can rust where the coating is damaged, and graffiti is harder to remove from it. [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with moisture. Both suit dry, gently used rooms, such as a staff restroom. [Stainless steel](/partitions/stainless-steel) is durable and easy to sanitize, at a premium price.
 
 :::expert
-What is the best bathroom partition for a school, and why?
+When a school asks you to choose between HDPE and phenolic, which do you point them to first, and what would change your answer?
+> I point them to HDPE first. It's vandal-resistant, graffiti wipes off, it's waterproof and it costs less. I'd switch to phenolic if the fire code calls for a Class A rating, or if they want a thinner, more upscale look.
+— Abe Gold, CEO, Next Partitions
 :::
 
 ## The fire rule that catches schools out
@@ -58,7 +71,7 @@ This is the detail to get right before anything is ordered. The International Bu
 
 The details are on our [HDPE page](/partitions/solid-plastic-hdpe).
 
-## Choose the mounting style for rough use
+## Recommended mounting
 
 The mounting style decides how the stalls are held up, and how well they stand up to pushing, pulling and climbing:
 
@@ -94,7 +107,7 @@ Students notice gaps. A standard stall has four of them:
 
 Replacement or new construction is the easiest time to close them. Options include doors that overlap the pilaster so there is no sightline, continuous hinges and brackets, and taller doors mounted closer to the floor. Taller doors don't work with every mounting style; some lines offer them only overhead braced or floor to ceiling. The options and their limits are in [why do bathroom stalls have gaps](/blog/why-do-bathroom-stalls-have-gaps).
 
-## Accessibility: the rules change for children
+## Planning and compliance
 
 The accessible stall in a school has two sets of rules to check.
 
@@ -116,33 +129,33 @@ Most schools replace stalls when the building is empty. Partitions are made to o
 For a summer install, when should a school start the process, and where do school projects most often lose time?
 :::
 
-To start, see [how to measure for toilet partitions](/blog/how-to-measure-for-toilet-partitions).
+Start with the measurements: [how to measure for toilet partitions](/blog/how-to-measure-for-toilet-partitions).
 
-## Get a quote
+## Quote your school project
 
-Send the stall count for each restroom, your measurements or plans, and the grade levels the rooms serve. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+Send building-by-building stall counts or plans, and the grade levels each restroom serves. We return a quote with the material options side by side. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
 
 [Get a Quote](/get-a-quote)
 
 ## FAQ
 
-### What is the best material for school bathroom stalls?
-Solid plastic (HDPE) or phenolic. Both are solid through, resist water and stand up to rough use. HDPE costs less; phenolic resists dents and scratches better.
+### What are the best bathroom partitions for schools?
+Solid plastic (HDPE) or phenolic, overhead braced. Both are solid through, resist water and stand up to rough use. HDPE costs less; phenolic resists dents and scratches better.
 
-### Do school bathroom partitions need a fire rating?
-HDPE partitions must pass the NFPA 286 fire test under the International Building Code, and standard colors may not. Ask for the fire-rated version and its test report. Other materials are classed under ASTM E84.
+### How do you stop students climbing over stalls?
+Floor to ceiling mounting anchors every pilaster at both ends and has no headrail to hang from. Taller doors and panels, mounted closer to the floor, also leave less to climb over or reach under.
 
-### Which mounting style is best for schools?
-Overhead braced is the standard. Floor to ceiling anchors each pilaster at both ends, for rooms that take the most abuse.
+### What stall height should we use for elementary schools?
+Elementary restrooms often use lower doors and panels than secondary schools. Heights vary by material and manufacturer, so confirm what is available for the line you choose. Accessible stalls for children ages 3 to 12 need 12" of toe clearance.
 
 ### How many ADA stalls does a school restroom need?
 At least one wheelchair accessible compartment where there are toilet compartments, plus an ambulatory one where there are six or more compartments, or six or more toilets and urinals combined.
 
-### Are bathroom stalls smaller in elementary schools?
-Doors and panels are often lower. Accessible compartments designed for children ages 3 to 12 have their own dimensions and need 12" of toe clearance.
+### Do school bathroom partitions need a fire rating?
+HDPE partitions must pass the NFPA 286 fire test under the International Building Code, and standard colors may not. Ask for the fire-rated version and its test report. Other materials are classed under ASTM E84.
 
-### Can graffiti be removed from school bathroom stalls?
-Usually, with a nonabrasive cleaner on HDPE or phenolic. Xylene-based markers can leave a shadow on HDPE.
+### Can partitions be power-washed?
+HDPE can be hosed down, and phenolic handles constant moisture. Plastic laminate can't: hosing it can void its warranty. Painted steel can rust where the coating is damaged.
 
 ## Sources
 
@@ -158,7 +171,8 @@ Usually, with a nonabrasive cleaner on HDPE or phenolic. Xylene-based markers ca
 
 ## Implementation notes
 
-- Calendar post #18 (month 4). It links to `/industries/schools` nowhere on purpose: that page still has the open fixes in `site-content/industry-check.md` (elementary heights, ambulatory rule, HDPE fire rating). Add the link once those are fixed.
-- New drawing: school-stall-decisions (hero, with a phone version), from `design/diagrams.mjs`. Reused: material-sections-compare, mounting-styles-compare, hinge-types, stall-gaps, ada-toe-clearance.
-- No prices and no lead times: both wait for Abe (budget and lead-time items S11 and S12 in the industry check).
-- Two expert boxes wait for Abe's answers (docs/questions-for-abe-blog-batch-2.md).
+- Replaces the live `/industries/schools` page and the blog draft "How to Pick the Best Bathroom Stalls for Schools", which targeted the same searches. One page now holds both.
+- Fixed from the industry check (`site-content/industry-check.md`): elementary heights (S2), the ambulatory rule (S3), the HDPE fire rating (S4), the ADA disclaimer (S5), the HDPE and phenolic cards (S6, S7), the stainless wording (S8), hinges (S9).
+- **Removed until Abe confirms:** the budget range ("$900 to $2,400 per stall"), the lead time ("2 to 4 weeks; plan summer installs by April"), "we supply K-12 districts, charter schools, and universities" and "order a spare hardware kit" (S11 to S13).
+- Hero: school-restroom-hero (hero only). Drawings: school-stall-decisions, material-sections-compare, mounting-styles-compare, hinge-types, stall-gaps, ada-toe-clearance.
+- Abe's answer on HDPE or phenolic for schools is his existing answer from the HDPE vs phenolic post. The summer-install question is still open.

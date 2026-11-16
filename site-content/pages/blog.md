@@ -19,7 +19,6 @@ Practical articles and guides on commercial bathroom partitions for facility man
 Newest first. Each post's category follows its link.
 
 - [How to Measure for Commercial Toilet Partitions](/blog/how-to-measure-for-toilet-partitions) · Buying guide
-- [How to Pick the Best Bathroom Stalls for Schools](/blog/bathroom-stalls-for-schools) · Industries
 - [The Best Restaurant Bathroom Partitions: How to Choose](/blog/restaurant-bathroom-partitions) · Industries
 - [How Much Do Bathroom Partitions Cost? (2026 Guide)](/blog/bathroom-partition-cost) · Buying guide
 - [HDPE vs Phenolic Partitions: Which Is Better?](/blog/hdpe-vs-phenolic-partitions) · Materials
