@@ -29,7 +29,7 @@ const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 // Drawings that explain a principle rather than follow a manufacturer's drawing say so on the drawing.
 const SCHEMATIC = new Set(['mounting-styles-compare', 'partition-anatomy', 'hinge-types', 'measure-replacement-door', 'stall-gaps', 'latch-keeper',
   'material-section-phenolic', 'material-section-solid-plastic', 'material-section-plastic-laminate', 'material-section-powder-coated-steel',
-  'material-section-stainless-steel', 'material-sections-compare', 'material-compare-hdpe-phenolic', 'material-compare-plastic-steel', 'urinal-spacing', 'measure-new-restroom-plan', 'measure-new-restroom-section', 'school-stall-decisions'])
+  'material-section-stainless-steel', 'material-sections-compare', 'material-compare-hdpe-phenolic', 'material-compare-plastic-steel', 'urinal-spacing', 'measure-new-restroom-plan', 'measure-new-restroom-section', 'school-stall-decisions', 'school-restroom-hero'])
 const META = {} // name → [title, desc], reused by the phone variants
 // `frame`: a wider canvas, with the drawing centred in it (standalone drawings are 780 wide, the content column).
 function svg(name, w, h, title, desc, body, frame) {
@@ -277,6 +277,56 @@ function schoolMarks(e, s, at) {
     + callout(3, e.X(d(at.hinge) + 11), e.Y(56), [e.X(d(at.hinge)) + 3, e.Y(56)])
     + callout(4, e.X(d(at.gap) + 12), e.Y(30), [e.X(d(at.gap) + e.D) - 2, e.Y(30)])
     + callout(5, e.X(d(at.toe) + 12), e.under, [e.X(d(at.toe) + 12), e.Y(5)]), 780))
+}
+
+// 9c. A school restroom, for the hero of the schools post: corridor lockers and a student with a backpack beside
+// a run of stalls. Orange marks what school stalls put up with (graffiti on a door, a scuff where doors get kicked)
+// and the backpack. No dimensions: it sets the scene, it isn't a spec.
+function schoolScene({ s, x0, floor, lockers, stalls, wt = 22, slabT = 30 }) {
+  const Y = (inch) => floor - inch * s
+  let b = ''
+  // corridor floor, left of the restroom wall
+  const fx = x0 - (lockers * 12 + 46) * s
+  b += rect(fx - 10, floor, x0 - fx + 20, slabT, { fill: 'HATCH', stroke: 'none' }) + line(fx - 10, floor, x0, floor)
+  // lockers: 12" wide, 72" high, on a 4" base, with vents, a number plate and a handle
+  for (let i = 0; i < lockers; i++) {
+    const lx = fx + i * 12 * s
+    b += rect(lx, Y(76), 12 * s, 72 * s)
+    for (const v of [70, 68, 66]) b += line(lx + 3 * s, Y(v), lx + 9 * s, Y(v), { sw: 1.2 })
+    b += rect(lx + 4 * s, Y(61), 4 * s, 2.4 * s, { fill: C.struct, sw: 1 }) // number plate
+    b += rect(lx + 9 * s, Y(42), 1.4 * s, 5 * s, { fill: C.ink, stroke: 'none' }) // handle
+  }
+  b += rect(fx - 1.5 * s, Y(4), lockers * 12 * s + 3 * s, 4 * s, { fill: C.struct }) // base
+  // student, walking toward the stalls: about 60" tall, with a backpack
+  const cx = fx + (lockers * 12 + 24) * s
+  const r = { rx: 3 * s }
+  b += `<rect x="${cx - 9.5 * s}" y="${Y(50)}" width="${6.5 * s}" height="${17 * s}" rx="${2.4 * s}" fill="${C.orange}" stroke="${C.orange}" stroke-width="1.5"/>` // backpack
+  b += rect(cx - 3.2 * s, Y(29), 3 * s, 27 * s, { rx: 1.2 * s }) + rect(cx + 0.6 * s, Y(29), 3 * s, 27 * s, { rx: 1.2 * s }) // legs
+  b += rect(cx - 3.8 * s, Y(2.4), 5 * s, 2.4 * s, { rx: 1 * s }) + rect(cx + 0.4 * s, Y(2.4), 5.6 * s, 2.4 * s, { rx: 1 * s }) // shoes
+  b += rect(cx - 4.6 * s, Y(52), 9.6 * s, 24 * s, r) // torso
+  b += `<path d="M${cx + 1.5 * s} ${Y(48)} L${cx + 6 * s} ${Y(37)} L${cx + 9 * s} ${Y(34)}" fill="none" stroke="${C.ink}" stroke-width="${Math.max(3, 2.2 * s)}" stroke-linecap="round" stroke-linejoin="round"/>` // arm
+  b += `<circle cx="${cx + 0.4 * s}" cy="${Y(57.6)}" r="${4.4 * s}" fill="${C.part}" stroke="${C.ink}" stroke-width="1.5"/>` // head
+  // the restroom: a run of overhead braced stalls
+  const e = elevation({ x0, stalls, floor, headrail: true, pil: [0, 83], emphasis: 'none', wt, slabT })
+  b += e.body
+  b += rect(e.X(0), e.Y(83) - 1, e.runIn * s, 2.2 * s) // headrail back to a plain part: it isn't the subject here
+  const dxOf = (i) => e.xs[i] + e.P + e.G
+  // graffiti on one door: a looping tag and a star
+  const gx = e.X(dxOf(stalls > 2 ? 1 : 0) + 3), gy = e.Y(52)
+  b += `<path d="M${gx} ${gy} c${3 * s} ${-7 * s} ${5 * s} ${7 * s} ${8 * s} 0 s${4 * s} ${-8 * s} ${6 * s} ${-1 * s} s${-12 * s} ${10 * s} ${-13 * s} ${5 * s} s${14 * s} ${2 * s} ${16 * s} ${-2 * s}" fill="none" stroke="${C.orange}" stroke-width="${Math.max(2.2, 0.9 * s)}" stroke-linecap="round"/>`
+  const sx = gx + 9 * s, sy = e.Y(34), R = 3.6 * s
+  const star = Array.from({ length: 10 }, (_, k) => { const a = -Math.PI / 2 + k * Math.PI / 5, q = k % 2 ? R * 0.45 : R; return `${(sx + q * Math.cos(a)).toFixed(1)},${(sy + q * Math.sin(a)).toFixed(1)}` }).join(' ')
+  b += `<polygon points="${star}" fill="none" stroke="${C.orange}" stroke-width="${Math.max(2, 0.7 * s)}" stroke-linejoin="round"/>`
+  // scuffs low on the last door, where doors get kicked
+  const kx = e.X(dxOf(stalls - 1) + 6), ky = e.Y(17)
+  for (const [dx, dy, w] of [[0, 0, 9], [2, -3.2, 7], [5, 2.6, 6]]) b += line(kx + dx * s, ky + dy * s, kx + (dx + w) * s, ky + (dy - 2.4) * s, { stroke: C.orange, sw: Math.max(2.2, 0.9 * s), cap: true })
+  return { b, right: e.wallR + wt }
+}
+{
+  const sc = schoolScene({ s: S, x0: 372, floor: 330, lockers: 4, stalls: 3 })
+  made.push(svg('school-restroom-hero', Math.round(sc.right + 24), 400, 'A school restroom: corridor lockers, a student with a backpack and a run of stalls',
+    'Front view of a school corridor and restroom: a row of lockers, a student with a backpack walking toward a run of three overhead braced bathroom stalls. Graffiti on one stall door and scuff marks low on another are shown in orange.',
+    sc.b, 780))
 }
 
 // 10. Latch and keeper (door edge meets the pilaster)
@@ -2025,6 +2075,15 @@ function ambPlan(xr, ys, k, ph) {
       + callout(3, e.X(d(2) + 10), e.Y(58), [e.X(d(2)) + 3, e.Y(58)])
       + callout(4, e.X(d(2) + 14), e.Y(28), [e.X(d(2) + e.D) - 2, e.Y(28)])
       + callout(5, e.X(d(0) + 12), e.under, [e.X(d(0) + 12), e.Y(5)]))
+  })
+}
+
+// The school restroom scene on a phone: two lockers, the student and two stalls.
+{
+  const s = 1.68
+  withPhone(s, () => {
+    const sc = schoolScene({ s, x0: 168, floor: 182, lockers: 2, stalls: 2, wt: 12, slabT: 14 })
+    phone('school-restroom-hero-m', H_M, sc.b)
   })
 }
 
