@@ -117,6 +117,8 @@ const expert = (block) => {
   const q = lines.find((l) => !l.startsWith('>') && !l.startsWith('—')) || ''
   const quote = lines.filter((l) => l.startsWith('>')).map((l) => l.slice(1).trim()).join(' ')
   const by = (lines.find((l) => l.startsWith('—')) || '').slice(1).trim()
+  // On the live site an expert box appears only once its answer is in; the previews keep the placeholder so we see what's open.
+  if ((EXPORT || EXPORT_BLOG) && !quote) return ''
   // With an answer, the card shows the question on top ("We asked"), then the quote, who said it and the logo.
   const [name, ...rest] = by.split(','), role = rest.join(',').trim()
   // Laid out like the title block of a technical drawing: the quote across the top, a ruled strip below with
@@ -528,6 +530,9 @@ ${shell.match(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/
       .replace(/^<main[^>]*>\n?/, '').replace(/<\/main>\s*$/, '')
       .replace(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/section>/, '') // the app renders <RelatedCategories/>
     const html = appBlogLinks(body)
+    // Nothing unfinished goes to the live site: a placeholder left in a page stops the export.
+    const open = html.match(/Placeholder for the answer|\[[^\]<]*(?:data from|from Abe)[^\]<]*\]|\[Name\]|\[Role\]/)
+    if (open) throw new Error(`${file}: placeholder in the exported page: "${open[0]}"`)
     exported.push({ file: fileFor(url).replace(/\.html$/, ''), url, title: fm.title, description: fm.meta, h1: fm.h1,
       crumbs: crumbs.map(([name, path]) => ({ name, path })), schema: ld.filter((x) => x['@type'] !== 'BreadcrumbList'), html })
     return null
