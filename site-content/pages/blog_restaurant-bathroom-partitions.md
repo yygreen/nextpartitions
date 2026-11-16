@@ -13,8 +13,6 @@ words: 1,020 (1,230 with FAQ)
 
 Restaurant bathroom partitions have two jobs that pull in different directions. Guests judge the kitchen by the restroom, so the stalls should look like they belong to the dining room. And the same stalls have to survive mop water, cleaning chemicals and a closing routine that runs every night. The best choice comes from one question first: how is the room cleaned?
 
-Next Partitions supplies partitions. We don't install them; you hire an installer directly.
-
 ## Start with how you clean
 
 The five partition materials are built very differently, and water is what separates them:

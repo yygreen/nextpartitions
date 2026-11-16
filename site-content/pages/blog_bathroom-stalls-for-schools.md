@@ -13,7 +13,17 @@ words: 1,200 (1,410 with FAQ)
 
 The best bathroom stalls for schools survive kicks, graffiti, hanging on doors and daily disinfecting, and still pass the fire and accessibility rules a school building has to meet. That narrows the choice quickly: two materials, two mounting styles, and a handful of details that decide whether the stalls last. This guide takes them in the order you'd decide them.
 
-Next Partitions supplies partitions. We don't install them; your district hires an installer directly.
+## Five things to decide
+
+One run of stalls shows all five. Each is covered below, in this order:
+
+![Front view of a run of stalls with five things marked: the door surface, the headrail, a full-height hinge, the gaps at a door's edges and the space under a door](/images/diagrams/school-stall-decisions.svg)
+
+1. The material: what the surface is made of
+2. The mounting style: what holds the stalls up
+3. The hardware: hinges that survive slamming
+4. Privacy: the gaps at the door edges
+5. Floor clearance in the accessible stall
 
 ## Start with the material: HDPE or phenolic
 
@@ -151,6 +161,6 @@ Usually, with a nonabrasive cleaner on HDPE or phenolic. Xylene-based markers ca
 ## Implementation notes
 
 - Calendar post #18 (month 4). It links to `/industries/schools` nowhere on purpose: that page still has the open fixes in `site-content/industry-check.md` (elementary heights, ambulatory rule, HDPE fire rating). Add the link once those are fixed.
-- Drawings reused: material-sections-compare (hero), mounting-styles-compare, hinge-types, stall-gaps, ada-toe-clearance. No new drawings.
+- New drawing: school-stall-decisions (hero, with a phone version), from `design/diagrams.mjs`. Reused: material-sections-compare, mounting-styles-compare, hinge-types, stall-gaps, ada-toe-clearance.
 - No prices and no lead times: both wait for Abe (budget and lead-time items S11 and S12 in the industry check).
 - Two expert boxes wait for Abe's answers (docs/questions-for-abe-blog-batch-2.md).

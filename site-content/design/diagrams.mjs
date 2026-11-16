@@ -29,7 +29,7 @@ const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 // Drawings that explain a principle rather than follow a manufacturer's drawing say so on the drawing.
 const SCHEMATIC = new Set(['mounting-styles-compare', 'partition-anatomy', 'hinge-types', 'measure-replacement-door', 'stall-gaps', 'latch-keeper',
   'material-section-phenolic', 'material-section-solid-plastic', 'material-section-plastic-laminate', 'material-section-powder-coated-steel',
-  'material-section-stainless-steel', 'material-sections-compare', 'material-compare-hdpe-phenolic', 'material-compare-plastic-steel', 'urinal-spacing', 'measure-new-restroom-plan', 'measure-new-restroom-section'])
+  'material-section-stainless-steel', 'material-sections-compare', 'material-compare-hdpe-phenolic', 'material-compare-plastic-steel', 'urinal-spacing', 'measure-new-restroom-plan', 'measure-new-restroom-section', 'school-stall-decisions'])
 const META = {} // name → [title, desc], reused by the phone variants
 // `frame`: a wider canvas, with the drawing centred in it (standalone drawings are 780 wide, the content column).
 function svg(name, w, h, title, desc, body, frame) {
@@ -247,6 +247,36 @@ const doorDims = (e) => vdim(e.wallL - 12, e.Y(70), e.Y(12), '58"', 'left') + vd
     'Front view of standard stalls with the four gaps marked: the vertical gaps at the door edges, the space under the doors and panels (12 inches), the space above them, and the gap where the partition meets the wall.',
     b + callout(1, e.X(dx + e.D) + 30, e.Y(56), [e.X(dx + e.D) + 1, e.Y(56)]) + callout(2, e.X(dx + 12), e.under, [e.X(dx + 12), e.Y(4)]) + callout(3, e.X(dx + 12), e.Y(77), null) + callout(4, e.wallL - 14, e.Y(40), [e.X(0), e.Y(40)])
     + vdim(e.wallR + 34, e.Y(12), e.Y(0), '12"'), 780))
+}
+
+// 9b. School stalls: the five things to decide, on one run of stalls (hero of the schools post). The orange marks
+// are the decisions: 1 the surface (material), 2 the headrail (mounting), 3 a full-height hinge, 4 the gaps at a door's
+// edges (privacy), 5 the clearance under the accessible stall's door. `at` picks the door each mark sits on.
+function schoolMarks(e, s, at) {
+  const dxOf = (i) => e.xs[i] + e.P + e.G
+  const o = { fill: C.orange, stroke: 'none' }
+  let b = ''
+  b += rect(e.X(dxOf(at.surf)), e.Y(70), e.D * s, 58 * s, { fill: C.orangeTint, stroke: C.orange, sw: 2 }) // 1 surface
+  b += rect(e.X(dxOf(at.surf) + e.D - 4), e.Y(44), 2.2 * s, 5, { fill: C.ink, stroke: 'none' }) // its latch, redrawn on top
+  b += rect(e.X(dxOf(at.hinge)) - 2, e.Y(70), 5, 58 * s, o) // 3 continuous hinge on the hinge edge
+  b += rect(e.X(dxOf(at.gap) + e.D) - 2, e.Y(70), 5, 58 * s, o) // 4 gap at the latch edge
+  if (at.gap !== at.hinge) b += rect(e.X(dxOf(at.gap)) - 3, e.Y(70), 5, 58 * s, o) // and at the hinge edge
+  b += rect(e.X(dxOf(at.toe)), e.Y(12), e.D * s, 12 * s - 1, { fill: C.orangeTint, stroke: C.orange, sw: 1.5, dash: '5 4' }) // 5 under the door
+  return { b, dxOf }
+}
+{
+  const e = elevation({ floor: 330, headrail: true, pil: [0, 83], emphasis: 'none' })
+  const at = { toe: 0, surf: 1, hinge: 2, gap: 3 }
+  const m = schoolMarks(e, S, at)
+  const d = m.dxOf
+  made.push(svg('school-stall-decisions', W(e), 400, 'Five things to decide for school bathroom stalls, front view',
+    'Front view of a run of four overhead braced stalls with five things marked in orange: the surface of a door (the material), the headrail across the pilaster tops (the mounting style), a full-height hinge on a door edge (the hardware), the gaps at the edges of a door (privacy), and the clear space under a door (floor clearance in the accessible stall).',
+    e.body + m.b
+    + callout(1, e.X(d(at.surf) + 12), e.Y(46), null)
+    + callout(2, e.X(d(at.hinge) + 12), e.Y(94), [e.X(d(at.hinge) + 12), e.Y(83) + 2])
+    + callout(3, e.X(d(at.hinge) + 11), e.Y(56), [e.X(d(at.hinge)) + 3, e.Y(56)])
+    + callout(4, e.X(d(at.gap) + 12), e.Y(30), [e.X(d(at.gap) + e.D) - 2, e.Y(30)])
+    + callout(5, e.X(d(at.toe) + 12), e.under, [e.X(d(at.toe) + 12), e.Y(5)]), 780))
 }
 
 // 10. Latch and keeper (door edge meets the pilaster)
@@ -1978,6 +2008,23 @@ function ambPlan(xr, ys, k, ph) {
   withPhone(2.2, () => {
     const m = ambPlan(70, 66, 2.2, true)
     phone('ada-ambulatory-stall-m', m.bottom + 2, m.b)
+  })
+}
+
+// School stalls, the five decisions: three stalls on a phone, the hinge and one gap sharing the last door.
+{
+  const s = 1.68, floor = 182
+  withPhone(s, () => {
+    const e = elevM({ x0: centreX0(3, s), stalls: 3, floor, headrail: true, pil: [0, 83], emphasis: 'none' })
+    const at = { toe: 0, surf: 1, hinge: 2, gap: 2 }
+    const m = schoolMarks(e, s, at)
+    const d = m.dxOf
+    phone('school-stall-decisions-m', H_M, e.body + m.b
+      + callout(1, e.X(d(1) + 12), e.Y(46), null)
+      + callout(2, e.X(d(1) + 12), e.Y(94), [e.X(d(1) + 12), e.Y(83) + 2])
+      + callout(3, e.X(d(2) + 10), e.Y(58), [e.X(d(2)) + 3, e.Y(58)])
+      + callout(4, e.X(d(2) + 14), e.Y(28), [e.X(d(2) + e.D) - 2, e.Y(28)])
+      + callout(5, e.X(d(0) + 12), e.under, [e.X(d(0) + 12), e.Y(5)]))
   })
 }
 

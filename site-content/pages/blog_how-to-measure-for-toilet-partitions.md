@@ -13,8 +13,6 @@ words: 1,210 (1,420 with FAQ)
 
 To measure for toilet partitions you need six things from the room, and a few more from the old stalls if you're replacing them. This guide shows each one on a drawing, in the order to take them, and ends with a checklist of what to send. With these numbers, a quote can be built on your real room, and the shop drawings that follow have fewer surprises.
 
-Next Partitions supplies partitions. We don't install them, and the installer checks every measurement on site before anything is drilled.
-
 ## What you need
 
 - A 25-foot tape measure, and a second person for long walls.
@@ -148,7 +146,7 @@ Measure the door itself, not the opening: width, height, thickness and the gap f
 Close measurements are enough for a quote. Exact ones matter for the shop drawings, and the installer checks the room against the approved drawings before starting.
 
 ### Does Next Partitions measure my restroom?
-No. We work from your measurements, plans and photos. We supply partitions and don't install them; the installer verifies measurements on site.
+No. We work from your measurements, plans and photos. Your installer verifies the measurements on site before starting.
 
 ## Sources
 
