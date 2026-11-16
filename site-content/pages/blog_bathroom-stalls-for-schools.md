@@ -45,7 +45,7 @@ Our full comparison is in [HDPE vs phenolic partitions](/blog/hdpe-vs-phenolic-p
 What about the other three? [Powder coated steel](/partitions/powder-coated-steel) costs the least to buy, but painted steel can rust where the coating is damaged, and graffiti is harder to remove from it. [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with moisture. Both suit dry, gently used rooms, such as a staff restroom. [Stainless steel](/partitions/stainless-steel) is durable and easy to sanitize, at a premium price.
 
 :::expert
-When a school district calls, what do they usually ask for first, and what do you steer them toward instead?
+What is the best bathroom partition for a school, and why?
 :::
 
 ## The fire rule that catches schools out

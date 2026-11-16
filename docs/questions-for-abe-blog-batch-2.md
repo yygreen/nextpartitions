@@ -9,7 +9,7 @@ Six questions, two per blog post. Two to four sentences each, in your own words,
 
 ## 2. How to Pick the Best Bathroom Stalls for Schools
 
-3. When a school district calls, what do they usually ask for first, and what do you steer them toward instead?
+3. What is the best bathroom partition for a school, and why?
 4. For a summer install, when should a school start the process, and where do school projects most often lose time?
 
 ## 3. The Best Restaurant Bathroom Partitions: How to Choose
