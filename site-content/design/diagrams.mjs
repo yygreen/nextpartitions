@@ -280,8 +280,7 @@ function schoolMarks(e, s, at) {
 }
 
 // 9c. A school restroom, for the hero of the schools post: corridor lockers and a student with a backpack beside
-// a run of stalls. Orange marks what school stalls put up with (graffiti on a door, a scuff where doors get kicked)
-// and the backpack. No dimensions: it sets the scene, it isn't a spec.
+// a run of stalls. The backpack is the one orange accent. No dimensions: it sets the scene, it isn't a spec.
 function schoolScene({ s, x0, floor, lockers, stalls, wt = 22, slabT = 30 }) {
   const Y = (inch) => floor - inch * s
   let b = ''
@@ -310,22 +309,12 @@ function schoolScene({ s, x0, floor, lockers, stalls, wt = 22, slabT = 30 }) {
   const e = elevation({ x0, stalls, floor, headrail: true, pil: [0, 83], emphasis: 'none', wt, slabT })
   b += e.body
   b += rect(e.X(0), e.Y(83) - 1, e.runIn * s, 2.2 * s) // headrail back to a plain part: it isn't the subject here
-  const dxOf = (i) => e.xs[i] + e.P + e.G
-  // graffiti on one door: a looping tag and a star
-  const gx = e.X(dxOf(stalls > 2 ? 1 : 0) + 3), gy = e.Y(52)
-  b += `<path d="M${gx} ${gy} c${3 * s} ${-7 * s} ${5 * s} ${7 * s} ${8 * s} 0 s${4 * s} ${-8 * s} ${6 * s} ${-1 * s} s${-12 * s} ${10 * s} ${-13 * s} ${5 * s} s${14 * s} ${2 * s} ${16 * s} ${-2 * s}" fill="none" stroke="${C.orange}" stroke-width="${Math.max(2.2, 0.9 * s)}" stroke-linecap="round"/>`
-  const sx = gx + 9 * s, sy = e.Y(34), R = 3.6 * s
-  const star = Array.from({ length: 10 }, (_, k) => { const a = -Math.PI / 2 + k * Math.PI / 5, q = k % 2 ? R * 0.45 : R; return `${(sx + q * Math.cos(a)).toFixed(1)},${(sy + q * Math.sin(a)).toFixed(1)}` }).join(' ')
-  b += `<polygon points="${star}" fill="none" stroke="${C.orange}" stroke-width="${Math.max(2, 0.7 * s)}" stroke-linejoin="round"/>`
-  // scuffs low on the last door, where doors get kicked
-  const kx = e.X(dxOf(stalls - 1) + 6), ky = e.Y(17)
-  for (const [dx, dy, w] of [[0, 0, 9], [2, -3.2, 7], [5, 2.6, 6]]) b += line(kx + dx * s, ky + dy * s, kx + (dx + w) * s, ky + (dy - 2.4) * s, { stroke: C.orange, sw: Math.max(2.2, 0.9 * s), cap: true })
   return { b, right: e.wallR + wt }
 }
 {
   const sc = schoolScene({ s: S, x0: 372, floor: 330, lockers: 4, stalls: 3 })
   made.push(svg('school-restroom-hero', Math.round(sc.right + 24), 400, 'A school restroom: corridor lockers, a student with a backpack and a run of stalls',
-    'Front view of a school corridor and restroom: a row of lockers, a student with a backpack walking toward a run of three overhead braced bathroom stalls. Graffiti on one stall door and scuff marks low on another are shown in orange.',
+    'Front view of a school corridor and restroom: a row of lockers, a student with a backpack walking toward a run of three overhead braced bathroom stalls. The backpack is shown in orange.',
     sc.b, 780))
 }
 
