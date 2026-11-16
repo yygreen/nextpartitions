@@ -18,6 +18,9 @@ Practical articles and guides on commercial bathroom partitions for facility man
 
 Newest first. Each post's category follows its link.
 
+- [Commercial Bathroom Remodel: Steps, Costs, and What to Know](/blog/commercial-bathroom-remodel) · Buying guide
+- [How to Design a Modern Commercial Bathroom](/blog/commercial-bathroom-design) · Design
+- [How Tall Are Bathroom Stalls?](/blog/how-tall-are-bathroom-stalls) · Dimensions
 - [How to Measure for Commercial Toilet Partitions](/blog/how-to-measure-for-toilet-partitions) · Buying guide
 - [Back to School: Is Your Restroom Ready?](/blog/school-restroom-renovation-checklist) · Industries
 - [The Best Restaurant Bathroom Partitions: How to Choose](/blog/restaurant-bathroom-partitions) · Industries

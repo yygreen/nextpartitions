@@ -4,7 +4,7 @@ title: Why Do Bathroom Stalls Have Gaps? (And How to Fix It)
 meta: Why do bathroom stalls have gaps? Door clearance, site tolerances, cleaning and cost, the gap sizes manufacturers publish, and privacy options that close them.
 h1: Why Do Bathroom Stalls Have Gaps? (And How to Eliminate Them)
 primary_keyword: why do bathroom stalls have gaps (320)
-secondary_keywords: [bathroom stall gaps (calendar target), floor to ceiling bathroom stalls (40), bathroom stall height (70), restroom stall doors (720)]
+secondary_keywords: [why do american bathroom stalls have gaps (170), why are there gaps in bathroom stalls (110), why are american bathroom stalls so open (70), why don't bathroom stalls go to the floor (40), bathroom stall gaps (40), floor to ceiling bathroom stalls (40)]
 date: 2026-10-26
 words: 1,360 (1,580 with FAQ)
 ---
@@ -128,6 +128,12 @@ Tell us which gaps bother you (door edges, floor, top, or all of them), plus you
 
 ### Why do bathroom stalls have gaps?
 Traditional partitions leave gaps so the door can swing without catching, so installers can fit factory-made parts between walls that aren't perfectly square, and so floors can be cleaned and occupied stalls spotted. The modular design is also quick to make, ship and install.
+
+### Why do American bathroom stalls have gaps?
+A traditional US partition is a modular kit: factory-made doors and panels assembled on site between real walls. Room is left for the door to swing, for the floor to be cleaned and for walls that are out of square. Full-height stalls with no gaps are available.
+
+### Why don't bathroom stalls go to the floor?
+The gap lets a mop reach under the stall and shows whether it is occupied. In a wheelchair accessible stall, 9" of toe clearance is required under the front and one side partition.
 
 ### How big is the gap under a bathroom stall door?
 On standard partitions, 12": the doors and panels are 58" tall and mounted 12" above the floor. Some solid plastic lines use 55" doors at 14".
