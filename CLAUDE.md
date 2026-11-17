@@ -34,7 +34,7 @@ Working notes for the nextpartitions.com redesign and the installer directory. R
 - **Tracking moved back (agreed 2026-11-11):** the tracking spine (GA4, Tag Manager, conversions, configurator events) waits until site pricing is live; it isn't a month-1 item.
 - **Manufacturer dealer listings (2026-11-11):** Abe reached out to the manufacturers himself; their replies are pending. Once a manufacturer agrees, we check that the dealer listing shows the right name, phone and website. Trade and association directories (Thomasnet and similar) are ours and not started yet.
 
-- **Pricing (2026-11-17):** Abe finished the pricing research, handed it to Marc and sent the prices to the agency. Ask the user for the price file before writing prices into the cost guide or the city pages; it isn't in this repo yet.
+- **Pricing (2026-11-17):** Abe's pricing sheet is the Google Sheet "Copy of ASI_Pricing_Aamco_Format" (id `1PIdwFV9ev2rRhQai2HTEuIiYxHJB19bT-3N2JLcpxTA`). It holds **ASI net prices: what Next Partitions pays ASI**, before freight, with the dealer multiplier, for 1 to 8 stalls in each material, mounting, height and privacy option. **Never publish these figures and don't commit the sheet.** Customer prices need Abe's markup or his selling prices; until we have them, no prices go on any page.
 
 ## Client relationship
 
