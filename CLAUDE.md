@@ -34,7 +34,7 @@ Working notes for the nextpartitions.com redesign and the installer directory. R
 - **Tracking moved back (agreed 2026-11-11):** the tracking spine (GA4, Tag Manager, conversions, configurator events) waits until site pricing is live; it isn't a month-1 item.
 - **Manufacturer dealer listings (2026-11-11):** Abe reached out to the manufacturers himself; their replies are pending. Once a manufacturer agrees, we check that the dealer listing shows the right name, phone and website. Trade and association directories (Thomasnet and similar) are ours and not started yet.
 
-- **Pricing research (2026-11-16):** Abe has basically finished it and hands it to Marc at their meeting on November 16. We still need the per-stall ranges by material for the cost guide and the installer city pages.
+- **Pricing (2026-11-17):** Abe finished the pricing research, handed it to Marc and sent the prices to the agency. Ask the user for the price file before writing prices into the cost guide or the city pages; it isn't in this repo yet.
 
 ## Client relationship
 
