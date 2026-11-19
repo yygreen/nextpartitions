@@ -26,7 +26,15 @@ def score(c, lic):
 areas, lic = {}, {}
 for f in sorted(glob.glob(os.path.join(HERE, 'raw', '*.json'))):
     d = json.load(open(f))
-    for a in d.get('areas', []): areas[a['area']] = a
+    for a in d.get('areas', []):
+        # a rerun adds to the area: later checks of the same business replace earlier ones
+        prev = areas.get(a['area'])
+        if prev:
+            seen_k = {key(c['name']) for c in a['checked']}
+            a = dict(a, checked=a['checked'] + [c for c in prev['checked'] if key(c['name']) not in seen_k],
+                     found_count=(prev.get('found_count') or 0) + (a.get('found_count') or 0),
+                     sources_tried=(prev.get('sources_tried') or []) + (a.get('sources_tried') or []))
+        areas[a['area']] = a
     for st in d.get('licenses', []):
         for r in st.get('results', []): lic[(r['area'], key(r['name']))] = r
 
@@ -37,7 +45,7 @@ for slug, a in sorted(areas.items()):
     best = {}
     for c in a['checked']:
         k = key(c['name'])
-        if k in best and best[k]['verdict'] != 'reject': continue
+        if k in best: continue
         best[k] = c
     for k, c in best.items():
         l = lic.get((slug, k))

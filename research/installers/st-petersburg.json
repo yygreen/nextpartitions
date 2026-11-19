@@ -1,0 +1,217 @@
+{
+ "area": "st-petersburg",
+ "found_count": 6,
+ "sources_tried": [
+  "Seed file st-petersburg.json: worked; useful leads were Specialty Installations & Sales, Tampa Accessory Corp, Centar Industries. Major Partitions (wire mesh, no toilet partitions) and Comres Manufacturing (redirects to Metpar, manufacturer) skipped; Elston's (seed web result) is listed by BBB as likely out of business (https://www.bbb.org/us/fl/brooksville/profile/bathroom-accessories/elstons-inc-0653-90056253), skipped; the rest are remodelers, glass shops, stores, plumbers",
+  "Bobrick Find a Rep (bobrick.com/find-a-rep): page loads but rep results are dropdown-driven, no Florida data in static page",
+  "Metpar (metpar.com): no locator, points to Scranton product specialist page",
+  "Scranton Products find-product-specialist: worked; only multi-state rep Southern States Architectural Sales (AL/GA/FL/MS/NC/SC/TN, 678.425.8796), a rep not an installer, not included",
+  "Hadrian sales rep locator: dynamic, template placeholders only",
+  "General Partitions distributors page: no distributor list",
+  "ASI Global Partitions: redirect, not followed further; Bradley, Ampco not tried",
+  "The Blue Book: blocked (403 on iProView profiles and category pages)",
+  "BuildingConnected / Procore: not tried (search cap)",
+  "LinkedIn: blocked (403)",
+  "Manta: blocked (403)",
+  "onepointpartitions.com: blocked (403)",
+  "BBB category pages (Tampa partition, Lutz partition, St. Petersburg partition, Tampa bathroom accessories): worked, but mostly out-of-area firms (Holman/Jacksonville, Hugh Robinson/Fort Lauderdale, Hufcor/Sanford operable walls, George P Coyle/Jacksonville)",
+  "WebSearch: 8 of 8 used; found Square 10 Source, One Point Partitions, Holman Inc (Jacksonville, too far), Commercial Specialties (Orange Park, too far), Martin Bros (California, skipped)",
+  "Yelp: not tried"
+ ],
+ "candidates": [
+  {
+   "name": "Specialty Installations & Sales, Inc.",
+   "base_city": "Port Richey",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Metpar/Comres",
+    "Accurate Partitions",
+    "American Sanitary Partitions",
+    "Bobrick",
+    "Global Partitions",
+    "Scranton Products",
+    "American Specialties",
+    "Gamco",
+    "Koala",
+    "ASI Storage"
+   ],
+   "website": "http://www.specialtyinstallations.com/",
+   "phone": "727-849-8846",
+   "email": "Frontdesk.sis@tampabay.rr.com",
+   "contact_page": "http://www.specialtyinstallations.com/",
+   "evidence_urls": [
+    "http://www.specialtyinstallations.com/"
+   ],
+   "partition_evidence": "Site lists toilet compartments as a main product line and says 'We provide A+ Installation within the State of Florida'. Measures projects and quotes from plans.",
+   "red_flags": [
+    "Dealer for many partition makers (Bobrick, Scranton, Metpar and others), so it can supply the partitions itself: high buy-around risk",
+    "Based in Port Richey, about 35 miles north of the area centre; installs statewide in Florida"
+   ],
+   "reason": "Specialty supplier and installer since 1979 with toilet compartments and Florida installation stated on its own site. Strong fit for installation, but it is also a competing partitions dealer.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Specialty Installations & Sales, Inc.",
+    "area": "st-petersburg",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (myfloridalicense.com/portalsearches/VerifyLicensee); Pinellas County Contractor Licensing / St. Petersburg Construction Services contractor registration (not tried)",
+    "note": "I couldn't do an automated lookup. The DBPR search needs a POST form submission, which the research rules don't allow, and the Sunbiz entity search is behind a Cloudflare challenge. I didn't try the Pinellas County or St. Petersburg registries. The company site (specialtyinstallations.com) shows no license number. It lists Port Richey, FL as the base city and company phone 727-849-8846, and it says 'We provide A+ Installation within the State of Florida.' Its services include Toilet Compartments. Next step: manual DBPR and Pinellas County license searches. Checked 2026-11-19.",
+    "source_url": "http://www.specialtyinstallations.com/"
+   },
+   "score": 58
+  },
+  {
+   "name": "Square 10 Source",
+   "base_city": "Plant City",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://www.square10source.com/",
+   "phone": "(813) 425-5868",
+   "email": "jline@square10source.com",
+   "contact_page": "https://www.square10source.com/contact-us/",
+   "evidence_urls": [
+    "https://www.square10source.com/",
+    "https://www.square10source.com/contact-us/",
+    "https://www.square10source.com/past-projects/"
+   ],
+   "partition_evidence": "Homepage lists Division 10 specialties including 102100 Toilet Compartments and 102800 Toilet Accessories, with an estimating team. Past projects are hospitals and commercial jobs in Tampa, Sarasota, Lakeland, Riverview and Wesley Chapel, but no page read says it installs partitions. A search snippet of its LinkedIn says its field crews install toilet partitions (LinkedIn page itself was blocked, not read).",
+   "red_flags": [
+    "Division 10 contractors usually furnish and install, so it may supply partitions itself",
+    "Mainly hospital and GC subcontract work; may not take small direct jobs"
+   ],
+   "reason": "Commercial Division 10 contractor in the Tampa Bay area with toilet compartments in its scope and local projects; installation of partitions not stated outright on pages read.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Square 10 Source",
+    "area": "st-petersburg",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (myfloridalicense.com/portalsearches/VerifyLicensee); Pinellas County Contractor Licensing / St. Petersburg Construction Services contractor registration (not tried)",
+    "note": "I couldn't do an automated lookup. The DBPR search needs a POST form submission, which the research rules don't allow, and the Sunbiz entity search is behind a Cloudflare challenge. I didn't try the Pinellas County or St. Petersburg registries. The company site (square10source.com) shows no license number and no city or address, so I couldn't confirm the Plant City base there. It lists company phone (813) 425-5868 and Division 10 scope including '102100 \u2013 Toilet Compartments'. Next step: manual DBPR and Pinellas County license searches. Checked 2026-11-19.",
+    "source_url": "https://www.square10source.com/"
+   },
+   "score": 45
+  },
+  {
+   "name": "One Point Partitions (Tampa location)",
+   "base_city": "Tampa (delivery terminal; national online seller)",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=3050",
+    "https://onepointpartitions.com/?p=13"
+   ],
+   "partition_evidence": "Site returned 403 to direct fetch; search snippets of its own pages say it ships partitions to Tampa from a delivery terminal and that it does not install, offering DIY guides instead.",
+   "red_flags": [
+    "Direct competitor: national online partitions seller",
+    "Does not install"
+   ],
+   "reason": "Online partitions seller with a Tampa delivery terminal, not an installer; a competitor rather than a directory candidate.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Centar Industries Inc",
+   "base_city": "unknown (founded in St. Louis, MO)",
+   "state": "unknown",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Medart",
+    "Master Lock",
+    "Tuff Stuff",
+    "Pro-Rite"
+   ],
+   "website": "http://www.centarind.com/",
+   "phone": "1-800-843-7878",
+   "email": "custservice@centarind.com",
+   "contact_page": "https://centarind.com/locker-quotes/",
+   "evidence_urls": [
+    "http://www.centarind.com/",
+    "https://centarind.com/about-us/"
+   ],
+   "partition_evidence": "Sells bathroom partitions, panels, pilasters, urinal screens and repair hardware; no installation service mentioned.",
+   "red_flags": [
+    "Product seller (competitor), not an installer",
+    "Site does not confirm a Pinellas Park base; about page says founded in St. Louis"
+   ],
+   "reason": "Online supplier of lockers and partition parts with no installation service; Pinellas Park location not confirmed on its site.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Complete Partitions + Equipment LLC",
+   "base_city": "Lake Mary",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Scranton Products",
+    "Solar Innovations",
+    "Cascade Architectural",
+    "Sliding Door Company",
+    "Tufftec"
+   ],
+   "website": "https://www.completepartitions.com/",
+   "phone": "(844) 424-7925",
+   "email": "info@completepartitions.com",
+   "contact_page": "https://www.completepartitions.com/contact",
+   "evidence_urls": [
+    "https://www.completepartitions.com/",
+    "https://www.completepartitions.com/contact",
+    "https://www.completepartitions.com/services"
+   ],
+   "partition_evidence": "Lists toilet partitions as a product line (Scranton logo shown), but its services page covers only operable-partition maintenance and refurbishment; no toilet partition installation stated.",
+   "red_flags": [
+    "Sells toilet partitions itself",
+    "Main business is operable/folding walls, not restroom stalls"
+   ],
+   "reason": "Operable-partition company in Lake Mary (about 110 miles) serving the Southeast; sells toilet partitions but no evidence it installs them. Could be worth a phone check later.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 18
+  },
+  {
+   "name": "Tampa Accessory Corporation",
+   "base_city": "Tampa",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "No website given and a search for the name found no business matching it.",
+   "red_flags": [
+    "Could not confirm the business exists or is active"
+   ],
+   "reason": "No website, listing or project evidence found; existence and services unverified.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

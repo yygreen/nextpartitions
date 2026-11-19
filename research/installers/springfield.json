@@ -1,0 +1,128 @@
+{
+ "area": "springfield",
+ "found_count": 4,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/springfield.json: read. 35 Maps results were mostly residential bath remodelers, plumbers and stores; web results were unusable google.com/goto redirect links. Only Architectural Building Products was kept (no website).",
+  "Southern Materials Company (from seeds): fetched southernmaterials.com. Residential kitchen and bath showroom with no commercial partitions, so excluded.",
+  "Bobrick find-a-rep: page loads, but the rep dropdown is not readable, so no Missouri rep was found",
+  "Scranton Products find-a-rep: 404",
+  "Hadrian find-a-rep: 404",
+  "ASI find-a-rep: redirect, not followed. Metpar, Bradley, General Partitions, Ampco/Ammco: not tried (other areas got 404s or empty pages; Scranton where-to-buy covers MO only through a Texas rep agency, per kansas-city research)",
+  "The Blue Book: iProView pages 403 blocked (802033, 1092394)",
+  "BuildingConnected / Procore public profiles: not tried",
+  "BBB 'partition' category pages for Nixa, Joplin and Cabool MO: worked. They gave Architectural Materials Co. (Springfield) and Meyer Specialties (Belton MO, ~145 mi, beyond radius; its website is now a parked domain). The rest were AR/KS/St. Louis office-furniture, garage-door and flooring firms.",
+  "DH Pace locations, Division 10 and installation pages: worked",
+  "Southwest Solutions toilet partition page: WebFetch truncated it, but a curl of the page showed the Missouri coverage list",
+  "One Point Partitions Missouri page: 403. Search snippets show a national online distributor listing a Springfield address (2121 E Kearney St), with no install service shown, so it was excluded as a national chain.",
+  "Commercial Bathwares (St. Louis): installs 'across Missouri and Illinois' per commercialbathwareslc.com/installation. Excluded because it is ~215 mi away and the site does not name Springfield MO; it is a possible statewide fallback.",
+  "MJ Products (Fenton MO): St. Louis based, outside the radius, not added",
+  "Manning Materials (Nashville TN) and CIP Finishes (Mid-Atlantic/FL): no Missouri presence, excluded",
+  "naicslist.com: 403",
+  "WebSearch: 8 of 8 used (toilet partitions Springfield Division 10; toilet partitions Springfield specialties; Architectural Materials; Missouri Division 10 Joplin/Branson; NW Arkansas partitions; Springfield lockers/toilet accessories; Springfield stalls extended; Architectural Building Products). There were no dedicated Springfield toilet-partition installers, and NW Arkansas (Rogers/Fayetteville) gave none either.",
+  "Yelp: not tried (blocked in other areas)"
+ ],
+ "candidates": [
+  {
+   "name": "Southwest Solutions Group",
+   "base_city": "Lenexa",
+   "state": "KS",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "regional",
+   "website": "https://www.southwestsolutions.com/",
+   "phone": "800-803-1083",
+   "contact_page": "https://www.southwestsolutions.com/contact-us/",
+   "evidence_urls": [
+    "https://www.southwestsolutions.com/"
+   ],
+   "partition_evidence": "The homepage lists wire partition cages and modular restrooms (prefab buildings), and it has a 'Springfield Sales Team' in Missouri. The homepage never mentions toilet, bathroom or restroom partitions.",
+   "red_flags": [
+    "Storage and modular-building company, not toilet partitions",
+    "'Partition' on its site means wire cages"
+   ],
+   "reason": "A storage, shelving and modular-building firm with a Springfield, MO sales team. Its site offers wire partition cages and modular restrooms, not toilet partitions.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 28
+  },
+  {
+   "name": "DH Pace Company (Springfield branch)",
+   "base_city": "Springfield",
+   "state": "MO",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "website": "https://www.dhpace.com/",
+   "phone": "417-862-9339",
+   "contact_page": "https://www.dhpace.com/contact/",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.dhpace.com/products/commercial-products/specialty-and-division-10-products/",
+    "https://www.dhpace.com/products/commercial-products/specialty-and-division-10-products/bathroom-partitions",
+    "https://www.dhpace.com/locations/"
+   ],
+   "partition_evidence": "Sells bathroom partitions (powder coated steel, stainless, phenolic, plastic laminate, HDPE) and replacement hardware. Its Division 10 page says it offers 'all-inclusive supply only packages for Division 10 material'. No partition installation shown.",
+   "red_flags": [
+    "Supplies partitions itself: buy-around risk",
+    "Division 10 page says supply only",
+    "Door and dock company, partitions are a side line"
+   ],
+   "reason": "DH Pace has a branch in Springfield and sells toilet partitions, but its Division 10 page describes supply-only packages and shows no partition installation. It is a competing supplier, not an installer.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "Architectural Building Products",
+   "base_city": "Springfield",
+   "state": "MO",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://naicslist.com/company-profile/architectural-building-product-springfield-mo-65802",
+    "https://www.thebluebook.com/iProView/1092394/architectural-building-products/subcontractors/construction-projects/darr-agriculture-building-125220/"
+   ],
+   "partition_evidence": "None found. It shows up only in auto-generated directory listings (NAICS 'other specialty trade contractor') and on a Blue Book project completed in 2011.",
+   "red_flags": [
+    "No website found",
+    "Directory listings conflict (Springfield vs Nixa address)",
+    "Only project record found dates from 2011, so it may be inactive"
+   ],
+   "reason": "No company website, no partition work and no recent activity found. We can't confirm that it installs partitions or is still operating.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Architectural Materials Co.",
+   "base_city": "Springfield",
+   "state": "MO",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "review_source": "BBB (A+ letter grade, not accredited; no review count shown)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/mo/nixa/category/partition",
+    "https://www.bbb.org/us/mo/joplin/category/partition"
+   ],
+   "partition_evidence": "Appears in BBB's 'Partition' category search results, but its BBB categories are Construction Services, Windows, Storm Windows and Doors. No partition work seen.",
+   "red_flags": [
+    "No website found",
+    "BBB categories point to windows and doors, not partitions"
+   ],
+   "reason": "Its only listing is on BBB, under windows, doors and construction services. We saw no evidence of toilet partition installation. The BBB phone number is (417) 866-2366, but it isn't confirmed on a company site.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

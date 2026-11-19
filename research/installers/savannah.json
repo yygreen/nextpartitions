@@ -1,0 +1,200 @@
+{
+ "area": "savannah",
+ "found_count": 5,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/savannah.json: worked, but the 'web' list was empty and the 'maps' results were all remodelers, plumbers, glass shops, stores and handymen. None of them do commercial partition work.",
+  "Manufacturer locators: the Bobrick find-a-rep page loaded but showed no results without its dropdown. The Scranton Products where-to-buy page worked: its GA/SC rep is Southern States Architectural Sales (678.425.8796), a sales rep and not an installer. Scranton /find-a-rep/ and Hadrian /find-a-rep/ returned 404. I did not reach the ASI, Bradley, Metpar, General Partitions or Ampco locators.",
+  "The Blue Book (thebluebook.com iProView pages): blocked (403). Only search snippets were read.",
+  "Procore network: the Savannah interior-specialties, toilet-bath-accessories and partitions directory pages and the Statesboro page worked, and profiles opened at network.procore.com/p/... (procore.com/p/... returned 404). Savannah-area firms there (TPS Drywall & Acoustical, Commercial Interiors LLC of Ravenel SC, Coastal Plains Environmental) list no partition work, and their own sites confirm that for TPS and Commercial Interiors. Johnston Enterprises' profile shows only Chattanooga. Ten 6 Installs (Hahira) lists accessories but not partitions, and it is outside the radius. Complete Solutions Contracting (Irmo SC) turned out to be a general contractor with no partition work.",
+  "BuildingConnected: not tried.",
+  "WebSearch: all 8 searches used (Savannah toilet partition installation, Division 10 Savannah, Charleston SC Division 10, Blue Book Savannah, Hilton Head/Bluffton, Savannah specialties subcontractor, Statesboro/Brunswick/Beaufort, Pooler/Richmond Hill/Hinesville). None found an installer based within 120 miles; the results were RSA, One Point Partitions and out-of-region firms.",
+  "onepointpartitions.com and accessories.toiletpartitions.com: blocked (403).",
+  "Jacksonville FL installers from research/installers/jacksonville.json (Holman, Commercial Specialties): about 140 miles away, and their sites name only Jacksonville/Florida and never Georgia, so I left them out. coylejax.com returned an empty page.",
+  "Seven Oaks Door and Hardware (Locust NC, says it serves SC) and GCS (Mobile AL) were in search results but are far outside the radius, so I left them out.",
+  "Yelp/BBB: no relevant Savannah-area listings came up in search."
+ ],
+ "candidates": [
+  {
+   "name": "McCarthy, Inc.",
+   "base_city": "Savannah",
+   "state": "GA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "ASI (American Specialties)",
+    "ASI-Accurate Partitions",
+    "ASI-Global Partitions",
+    "Metpar",
+    "All American Metal"
+   ],
+   "partition_evidence": "Services page lists 'toilet accessory and partition installation' and locker installation among its field services; partitions page says it stocks partitions and provides layout drawings with every partition shipment.",
+   "website": "https://www.mccarthyinc.com/",
+   "phone": "912-236-4461",
+   "email": "bids@mccarthyinc.com",
+   "contact_page": "https://www.mccarthyinc.com/contact-us/",
+   "evidence_urls": [
+    "https://www.mccarthyinc.com/",
+    "https://www.mccarthyinc.com/services/",
+    "https://www.mccarthyinc.com/product/toilet-partitions-accessories-and-more/"
+   ],
+   "red_flags": [
+    "Distributor of doors, hardware and partitions (ASI, Bobrick, Metpar logos): sells partitions itself, high buy-around risk",
+    "Installation service area not stated beyond 'the Southeast'"
+   ],
+   "reason": "Savannah-based commercial door, hardware and Division 10 supplier whose services page says it installs toilet partitions and accessories. It is local and installs, but it also supplies the same brands we resell.",
+   "added_by_checker": true,
+   "license": {
+    "name": "McCarthy, Inc.",
+    "area": "savannah",
+    "status": "not_online",
+    "registry": "Georgia Secretary of State license verification (verify.sos.ga.gov) for the Georgia State Licensing Board for Residential and General Contractors; Georgia SOS business search (ecorp.sos.ga.gov)",
+    "license_type": "unknown",
+    "license_number": "",
+    "source_url": "https://verify.sos.ga.gov/verification/",
+    "note": "Checked 2026-11-19. The Georgia SOS license verification site, the board's page on sos.ga.gov and the SOS business entity search all returned HTTP 403 to automated access, so no license record could be read. Nothing was found on whether a Georgia license is needed for partition installation (the state rule is marked unclear). The City of Savannah does not appear to publish a contractor list online. Company site (https://www.mccarthyinc.com/): based in Savannah, GA. The company supplies doors, frames and hardware, and lists 'Toilet Partitions, Accessories & More' as a product category. It may be a supplier or distributor rather than an installer. The site shows no contractor license number. Company phone 912-236-4461, email bids@mccarthyinc.com (bids) and service@mccarthyinc.com (service). Check the license by hand at verify.sos.ga.gov."
+   },
+   "score": 70
+  },
+  {
+   "name": "Restroom Stalls and All (RSA)",
+   "base_city": "Gainesville",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Bobrick",
+    "Koala Kare"
+   ],
+   "partition_evidence": "Homepage says it 'installs commercial restroom partitions, bathroom stall dividers and Division 10 products across the Southeast' with its own W2 crews.",
+   "website": "https://restroomstallsandall.com/",
+   "phone": "1-844-817-8255",
+   "email": "cs@restroomstallsandall.com",
+   "contact_page": "https://restroomstallsandall.com/pages/contact-us",
+   "rating": 4.9,
+   "review_source": "Google (as stated on company site; review count not shown); also says BBB A+",
+   "evidence_urls": [
+    "https://restroomstallsandall.com/"
+   ],
+   "red_flags": [
+    "Sells partitions online with an instant quote tool and ships nationwide: direct competitor and buy-around risk",
+    "Based about 250+ miles from Savannah"
+   ],
+   "reason": "A real commercial partition installer that serves Georgia and the Southeast, but it is based in Gainesville, GA, well beyond 120 miles, and its site doesn't name Savannah. It also sells partitions directly. Could be reconsidered as a statewide fallback.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Terminus Specialties, Inc.",
+   "base_city": "McDonough",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "partition_evidence": "Homepage lists restroom partitions as a core product line and says optional installation is available for all products; contact page says 'Expert Specialty Product Installations Across the Southeast'.",
+   "website": "https://www.terminusspecialties.com/",
+   "phone": "470-507-0587",
+   "email": "darwin@terminusspecialties.com",
+   "contact_page": "https://www.terminusspecialties.com/contact-1",
+   "evidence_urls": [
+    "https://www.terminusspecialties.com/",
+    "https://www.terminusspecialties.com/contact-1"
+   ],
+   "red_flags": [
+    "Supplies partitions, hardware and repair kits itself: buy-around risk",
+    "Homepage gives a Locust Grove address while the contact page gives McDonough",
+    "Based about 225 miles from Savannah; Savannah not mentioned"
+   ],
+   "reason": "A south-Atlanta Division 10 supplier and installer serving 'the Southeast', but it is more than 120 miles from Savannah and its site doesn't say it serves the Savannah area.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Maven Accessories",
+   "base_city": "Juliette",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "partition_evidence": "Homepage lists 'Toilet Partitions, Grab bars' and washroom accessories under Our Services, with a commercial finish carpentry background; doesn't describe installation work or show projects.",
+   "website": "https://mavenaccessories.com/",
+   "phone": "770-508-3887",
+   "email": "mike@mavenaccessories.com",
+   "contact_page": "https://mavenaccessories.com/",
+   "evidence_urls": [
+    "https://mavenaccessories.com/"
+   ],
+   "red_flags": [
+    "No stated service area",
+    "No project photos found (projects page 404)",
+    "Contact email is a personal-name address"
+   ],
+   "reason": "Division 10 accessories firm near Macon, about 170 miles from Savannah, with no stated service area and no shown partition installs.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "One Point Partitions (Savannah delivery terminal)",
+   "base_city": "unknown",
+   "state": "unknown",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "partition_evidence": "Site blocked (403). Search snippets show it sells partitions online and lists a Savannah 'delivery terminal'. They don't show that it installs locally.",
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://onepointpartitions.com/service-areas/georgia-bathroom-partitions/"
+   ],
+   "red_flags": [
+    "Online partition seller, a direct competitor",
+    "Savannah address is a delivery terminal, not a local installer office",
+    "Many near-duplicate city pages (SEO network)"
+   ],
+   "reason": "A national online partition retailer with delivery terminals, not a local installer. No installation in Savannah was verified, and the site couldn't be loaded.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "J.F. Appleby, Inc. (Dividing Line)",
+   "base_city": "unknown",
+   "state": "unknown",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "partition_evidence": "Only a Blue Book search snippet: established 1962, offers toilet compartments, washroom accessories, lockers and similar. Listing page blocked (403); no company website found.",
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/401254/j-f-appleby-inc-dividing-line/subcontractors/"
+   ],
+   "red_flags": [
+    "Location and website could not be confirmed",
+    "Appears to be a supplier/manufacturer of toilet compartments"
+   ],
+   "reason": "No verifiable location, website or link to the Savannah area. The only evidence is a directory snippet describing it as a toilet compartment supplier.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  }
+ ]
+}
