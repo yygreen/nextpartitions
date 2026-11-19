@@ -1,7 +1,19 @@
 {
  "area": "columbus",
- "found_count": 7,
+ "found_count": 19,
  "sources_tried": [
+  "Seed file research/installers/raw/seeds/columbus.json: worked; maps results gave CSi, Inter-Co, LaForce, U.S. Structures; web results were all irrelevant remodelers/modular walls",
+  "Scranton Products find-a-rep (scrantonproducts.com/find-a-rep/): 404",
+  "Hadrian find-a-rep (hadrian-inc.com/find-a-rep/): 503",
+  "Bradley rep locator (bradleycorp.com/rep-locator): page had no content (JS-driven)",
+  "Bobrick, ASI, Metpar, General Partitions, Ammco locators: not reached (search returned no locator pages; budget used)",
+  "The Blue Book (thebluebook.com iProView and category pages): 403 blocked",
+  "BuildingConnected / Procore: not tried (search cap)",
+  "Downtobid toilet-partitions Columbus: 429 rate limited",
+  "BBB Ohio partition category (bbb.org/us/oh/category/partition): worked, gave ACP and Irwin Enterprises",
+  "WebSearch: 8 of 8 used; results dominated by One Point Partitions (online supplier, DIY install, excluded) and Kelley Bros; found OCP Contractors article and Cleveland Construction",
+  "Earlier batch files (research/installers/raw/batch-4, 7, 12) used for leads (Ohio Trim & Door, ACP, DH Pace, Zietlow); key facts re-read on company sites",
+  "Company sites fetched: consysohio.com, inter-co.com, laforceinc.com, usstructures.net, ocpcoc.com, acpohio.com, ohiotrimanddoor.com, dhpace.com, clevelandconstruction.com, zinstallers.com, kelleybros.com worked; purdycompany.com and irwinent.com 503; bradenandmcsweeny.com no service-area info (Westlake, ~125 mi, left out); innovatebuildingsolutions.com glass block, not partitions (excluded)",
   "Seed file columbus.json: worked; maps results gave Inter-Co, Construction Systems, LaForce, U.S. Structures, The Door Shop; web results were redirect links with no usable domains (mostly modular-wall ads and remodelers)",
   "Bobrick find-a-rep (bobrick.com/find-a-rep): loaded but results need a dropdown, no Ohio rep readable",
   "Scranton Products where-to-buy: worked, only regional product specialist (KY/OH/PA/WV), no local installers",
@@ -99,6 +111,40 @@
    "score": 70
   },
   {
+   "name": "Zietlow Installers & Distributors",
+   "base_city": "North Ridgeville",
+   "state": "OH",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "440-355-4460",
+   "email": "info@zinstallers.com",
+   "contact_page": "http://zinstallers.com/contact.htm",
+   "website": "http://zinstallers.com/",
+   "evidence_urls": [
+    "http://zinstallers.com/"
+   ],
+   "partition_evidence": "Site says it 'supplies and installs lockers, toilet partitions, school and office furniture'.",
+   "reason": "Commercial installer of toilet partitions serving Ohio, Michigan and Pennsylvania; based near Cleveland (~110 miles), Columbus not named specifically.",
+   "red_flags": [
+    "Also a distributor (buy-around risk)",
+    "Named service cities are all in the Cleveland area"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Zietlow Installers & Distributors",
+    "area": "columbus",
+    "status": "not_online",
+    "registry": "City of Columbus Building and Zoning Services, Citizen Access Portal: Search for Licensed & Registered Contractors",
+    "source_url": "https://portal.columbus.gov/permits/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Not looked up, because the Columbus search returns results only through a form postback (no automated lookup, and the rules forbid submitting forms). Base is North Ridgeville, in the Cleveland area, far from Columbus. A Columbus registration would be needed only for jobs inside the city. Ohio has no state license for this work. Check the portal by hand. Checked 2026-11-19."
+   },
+   "score": 63
+  },
+  {
    "name": "Acoustic Ceiling & Partition of Ohio, Inc.",
    "base_city": "Westerville",
    "state": "OH",
@@ -165,6 +211,176 @@
     "note": "Checked 2026-11-19. Business-name searches for 'LaForce', 'La Force', 'Laforce Inc' and 'LAF' returned 'no results'. LaForce is mainly a door, frame and hardware and Division 10 supplier, so it may work through installers or general contractors who hold the city license. Confirm with the company who would install and under which Columbus license, or check with BZS (614-645-7433)."
    },
    "score": 50
+  },
+  {
+   "name": "Acoustic Ceiling & Partition of Ohio, Inc. (ACP)",
+   "base_city": "Westerville",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(614) 718-0722",
+   "email": "info@acpohio.com",
+   "contact_page": "https://acpohio.com/contact/",
+   "website": "https://acpohio.com/",
+   "review_source": "BBB A+ (not accredited)",
+   "evidence_urls": [
+    "https://acpohio.com/",
+    "https://www.bbb.org/us/oh/obetz/category/partition"
+   ],
+   "partition_evidence": "Carpentry service lists 'Division 10 accessories'; 'Partition' in the name refers to drywall/framing work. No toilet partitions mentioned.",
+   "reason": "Commercial interiors contractor (ceilings, drywall, framing) in Westerville that lists Division 10 accessories; toilet partition installation not shown. BBB rates it A+.",
+   "red_flags": [],
+   "added_by_checker": false,
+   "license": {
+    "name": "Acoustic Ceiling & Partition of Ohio, Inc. (ACP)",
+    "area": "columbus",
+    "status": "not_online",
+    "registry": "City of Columbus Building and Zoning Services, Citizen Access Portal: Search for Licensed & Registered Contractors",
+    "source_url": "https://portal.columbus.gov/permits/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Not looked up, because the Columbus search returns results only through a form postback (no automated lookup, and the rules forbid submitting forms). Base is Westerville. A Columbus license or registration applies only to work inside Columbus. Ohio has no state license for this work. Check the portal by hand. Checked 2026-11-19."
+   },
+   "score": 50
+  },
+  {
+   "name": "Ohio Trim & Door",
+   "base_city": "Columbus",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Hadrian",
+    "Global Partitions",
+    "ASI",
+    "Scranton Products",
+    "Acorn",
+    "Gamco"
+   ],
+   "phone": "(614) 208-9710",
+   "contact_page": "https://ohiotrimanddoor.com/contact",
+   "website": "https://ohiotrimanddoor.com/",
+   "evidence_urls": [
+    "https://ohiotrimanddoor.com/",
+    "https://ohiotrimanddoor.com/division-10"
+   ],
+   "partition_evidence": "Division 10 page lists toilet partitions (10 21 13) with layout drawings and submittals; site has an 'Installation Services' link but no statement that it installs partitions.",
+   "reason": "Columbus supplier of toilet partitions (including ASI, Scranton, Bobrick, Bradley) with an installation services section; partition installation not confirmed. Direct competitor on supply.",
+   "red_flags": [
+    "Sells the same brands Next Partitions resells (strong buy-around/competitor risk)",
+    "Also residential/homeowner business"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Ohio Trim & Door",
+    "area": "columbus",
+    "status": "not_online",
+    "registry": "City of Columbus Building and Zoning Services, Citizen Access Portal: Search for Licensed & Registered Contractors",
+    "source_url": "https://portal.columbus.gov/permits/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Not looked up, because the Columbus search returns results only through a form postback (no automated lookup, and the rules forbid submitting forms). Ohio has no state license for this work. Check the portal by business name by hand, or call BZS at (614) 645-7433. Checked 2026-11-19."
+   },
+   "score": 45
+  },
+  {
+   "name": "Kelley Bros (Cincinnati branch)",
+   "base_city": "Mason",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Global Partitions",
+    "Scranton Products",
+    "Hadrian"
+   ],
+   "phone": "800-856-2550",
+   "contact_page": "https://www.kelleybros.com/contact-us/",
+   "website": "https://www.kelleybros.com/",
+   "evidence_urls": [
+    "https://www.kelleybros.com/",
+    "https://www.kelleybros.com/?p=3224"
+   ],
+   "partition_evidence": "Division 10 page offers toilet partitions and a turnkey solution 'through final Product Installation'; partition installation not specifically confirmed. Has a Columbus case study (120 West Gay St).",
+   "reason": "Door/hardware/Division 10 distributor with Ohio locations and a Columbus project; installation implied but not proven. Mason office not confirmed on pages read.",
+   "red_flags": [
+    "Sells partitions (buy-around risk)",
+    "Ohio office location not confirmed"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Kelley Bros (Cincinnati branch)",
+    "area": "columbus",
+    "status": "not_online",
+    "registry": "City of Columbus Building and Zoning Services, Citizen Access Portal: Search for Licensed & Registered Contractors",
+    "source_url": "https://portal.columbus.gov/permits/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Not looked up, because the Columbus search returns results only through a form postback (no automated lookup, and the rules forbid submitting forms). Base is Mason, about 100 miles from Columbus. A Columbus registration would be needed only for jobs inside the city. Ohio has no state license for this work. Check the portal by hand. Checked 2026-11-19."
+   },
+   "score": 43
+  },
+  {
+   "name": "Cleveland Construction, Inc. (Interior Trades)",
+   "base_city": "Mason",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "contact_page": "https://clevelandconstruction.com/general-contracting/about-us/contact-us/",
+   "website": "https://clevelandconstruction.com/",
+   "evidence_urls": [
+    "https://clevelandconstruction.com/",
+    "https://clevelandconstruction.com/interior-trades/"
+   ],
+   "partition_evidence": "Interior trades page lists 'Divisions 5-10 Services' and the footer says it performs 'Division 10 installations'; toilet partitions not named. Columbia Gas HQ in Columbus shown as a project.",
+   "reason": "Large national commercial contractor in Mason (about 95 miles) doing Division 10 installs; likely GC-scale only and partitions not specifically shown.",
+   "red_flags": [
+    "National GC-scale firm; unlikely to take small referral jobs"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Cleveland Construction, Inc. (Interior Trades)",
+    "area": "columbus",
+    "status": "not_online",
+    "registry": "City of Columbus Building and Zoning Services, Citizen Access Portal: Search for Licensed & Registered Contractors",
+    "source_url": "https://portal.columbus.gov/permits/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Not looked up, because the Columbus search returns results only through a form postback (no automated lookup, and the rules forbid submitting forms). Base is Mason. Ohio has no state license for this work. Check the portal by hand. Checked 2026-11-19."
+   },
+   "score": 43
+  },
+  {
+   "name": "OCP Contractors (Columbus office)",
+   "base_city": "Columbus",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "614 884 3900",
+   "email": "info@ocpcoc.com",
+   "contact_page": "https://ocpcoc.com/contact",
+   "website": "https://ocpcoc.com/",
+   "evidence_urls": [
+    "https://ocpcoc.com/"
+   ],
+   "partition_evidence": "None; services are data centers, mid-rise, IPD and lean construction; no toilet partitions or Division 10 mentioned.",
+   "reason": "General/interiors contractor with no evidence of toilet partition or Division 10 work.",
+   "red_flags": [],
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
   },
   {
    "name": "DH Pace Company (Columbus offices)",
@@ -251,6 +467,31 @@
    "added_by_checker": false,
    "license": null,
    "score": 30
+  },
+  {
+   "name": "Irwin Enterprises, Inc.",
+   "base_city": "Centerville",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "(937) 433-2360",
+   "review_source": "BBB (no rating shown, not accredited)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/oh/dayton/category/partition"
+   ],
+   "partition_evidence": "Only a BBB category listing under 'Partitions'; no website, no description of work.",
+   "reason": "No website or evidence of toilet partition installation or that it serves Columbus.",
+   "red_flags": [
+    "No website found",
+    "No description of services"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 3
   }
  ]
 }

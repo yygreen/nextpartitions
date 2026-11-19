@@ -1,7 +1,22 @@
 {
  "area": "fresno",
- "found_count": 7,
+ "found_count": 13,
  "sources_tried": [
+  "Seed file fresno.json: read. The maps and web results were almost all remodelers, plumbers and stores. The only partition-specific result was toiletpartitionsexperts.com. Division 10 Specialties, Inc. is in Pembroke, MA (781 area code), so it was skipped.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep/): loaded, but the results come from a dropdown, so no rep data could be read.",
+  "ASI Global Partitions find-a-rep: 404 after the redirect.",
+  "Scranton Products where-to-buy: worked. It lists only a regional product specialist (a person), with no dealers or installers.",
+  "Hadrian find-a-rep: 404.",
+  "Bradley, Metpar, General Partitions, Ampco/Ammco locators: not tried because of the budget.",
+  "The Blue Book (thebluebook.com): blocked (403) on profile and category pages. Some details came only from search snippets.",
+  "BuildingConnected / Procore public profiles: not tried.",
+  "WebSearch: used all 8. They found Delta Specialties, Stumbaugh, Consolidated Partitions, One Point Partitions and Magnum Drywall. No Yelp or BBB pages for Fresno partition installers came up.",
+  "onepointpartitions.com (main and fxstaging): blocked (403).",
+  "constructioninfocus.com article on Stumbaugh: worked.",
+  "stumbaugh.com and its contact page: worked.",
+  "magnumdrywall.com: worked.",
+  "scott-and-company-llc.odoo.com: 404.",
+  "Partition Plus: a nationwide dealer in Forest Hill, MD (Houzz). Excluded because it has no local base.",
   "Seed file research/installers/raw/seeds/fresno.json: read. The maps results were all residential remodelers, plumbers, tile and supply shops or porta-potty rentals, and none were partition installers. The web seeds were mostly directory pages behind google.com/goto redirects. Only Toilet Partitions Experts was relevant.",
   "Bobrick Find a Rep (bobrick.com/find-a-rep): page loaded, but the lookup is a dynamic dropdown and returned no reps",
   "Scranton Products where-to-buy: no dealer lookup, only a regional product specialist for CA (not an installer)",
@@ -55,6 +70,45 @@
     "note": "CSLB record (data current as of 11/19/2026) for STUMBAUGH & ASSOCIATES INC, Burbank: 'This license is current and active.' Issued 11/19/1973, expires 04/30/2028. Contractor's bond on file (Merchants Bonding Company); workers' comp active (Arch Insurance), policy 03/01/2026 to 03/01/2027. The license number came from third-party listings (prelien.co, BuildZoom) and was then confirmed on the official CSLB page. The company site (https://www.stumbaugh.com/) lists offices in Burbank (818 240-1627), San Diego (858 444-1683) and West Sacramento (650 999-0700) but shows no license number. Fresno Business Tax Certificate not checked (no public online lookup used)."
    },
    "score": 75
+  },
+  {
+   "name": "Magnum Drywall",
+   "base_city": "San Jose",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [
+    "Bobrick (washroom accessories)"
+   ],
+   "phone": "(408) 600-0422",
+   "email": "estimators@magnumdrywall.com",
+   "contact_page": "https://magnumdrywall.com/contact-us/",
+   "website": "https://magnumdrywall.com/division-10-specialties/",
+   "evidence_urls": [
+    "https://magnumdrywall.com/division-10-specialties/",
+    "https://magnumdrywall.com/contact-us/"
+   ],
+   "partition_evidence": "Division 10 page says it 'works with clients to specify and install toilet partitions'.",
+   "reason": "A commercial contractor that installs toilet partitions and says its Division 10 team serves clients throughout California. San Jose is about 150 miles from Fresno, and Fresno isn't named.",
+   "red_flags": [
+    "Drywall contractor; Division 10 is a side division",
+    "About 150 miles from Fresno; only says 'throughout California'"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Magnum Drywall",
+    "area": "fresno",
+    "status": "not_online",
+    "registry": "California Contractors State License Board (CSLB) license search (reCAPTCHA blocks automated lookup); City of Fresno Business Tax Certificate not checked",
+    "license_number": "614200",
+    "license_type": "B General Building; C-9; C-33; C-35; C-61/D-34 Prefabricated Equipment; C-61/D-50; C-61/D-52 (per mirror)",
+    "source_url": "https://magnumdrywall.com/division-10-specialties/",
+    "note": "The company site footer shows 'CA License: #614200', San Jose, phone (408) 600-0422 (https://magnumdrywall.com/division-10-specialties/). The official CSLB record could not be read because of reCAPTCHA. Prelien's republished CSLB data (https://www.prelien.co/contractor/magnum-drywall-inc-614200) shows Magnum Drywall INC, San Jose, status CLEAR, issued Mar 4 1991, expires Mar 31 2027, with B, C-9, C-33, C-35, C-61/D-34, D-50 and D-52 classes. Confirm on CSLB manually. Based in San Jose, far from Fresno. Fresno Business Tax Certificate not checked."
+   },
+   "score": 63
   },
   {
    "name": "Delta Specialties Inc.",

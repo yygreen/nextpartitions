@@ -1,7 +1,18 @@
 {
  "area": "albuquerque",
- "found_count": 7,
+ "found_count": 13,
  "sources_tried": [
+  "Seed file albuquerque.json: worked. Of about 40 maps listings, the only relevant ones were APA Specialties, Division 10 Materials and Yourson Construction. Western Partitions (WPI) is an Oregon-based drywall and framing subcontractor with an Albuquerque office and no toilet-partition work shown, so it was skipped. Plasco Sales (shower doors), Fairway Doors (access control) and Southwest Style (residential) were checked and skipped. The web seeds were all residential remodelers.",
+  "Bobrick find-a-rep: no usable results (the rep list loads by JavaScript, and nothing was returned for NM)",
+  "Scranton Products, Hadrian, ASI/American Specialties, Global Partitions, Metpar, General Partitions rep locator URLs: 404 or not reachable",
+  "Bradley find-a-rep: page loads but rep data is JS-only; no NM rep text",
+  "Ampco/Ammco: not tried (no locator URL known)",
+  "The Blue Book: WebFetch got 403, but curl on the public search pages worked. The 'Toilet Partitions & Cubicles' class (3070) for the New Mexico & Texas - El Paso region listed 18 companies. Most are manufacturers; the El Paso firms (APCO Building Specialties, EP Prime Blinds & Specialties) are about 265 miles away and were excluded. 'Bathroom Accessories' (260) and 'Office Partitions' (3060) added H&H.",
+  "BuildingConnected / Procore network: not tried (profiles need sign-in)",
+  "BBB Albuquerque partition category: blocked by Cloudflare challenge",
+  "Yelp: no relevant results via search",
+  "WebSearch (8 of 8 used): toilet partition installation Albuquerque, Division 10 contractor Albuquerque, restroom partitions installer NM / Rio Rancho, toilet partitions + accessories Albuquerque, Division 10 lockers signage Albuquerque, Santa Fe / Rio Rancho / Los Lunas, yelp/bbb, NM specialty contractor. Results were mostly national online sellers (One Point Partitions, Partition Plus, The Partition Pros, based in no NM city or with no confirmed local base) and out-of-region Division 10 firms.",
+  "innergy-interiors.pages.dev (claims NM Division 10 work): 404 when opened, not verified, excluded",
   "Seed file albuquerque.json: worked. 41 Maps results, mostly remodelers and plumbers. APA Specialties and Division 10 Materials were the relevant ones. Western Partitions turned out to be a drywall/prefab firm from Oregon with an Albuquerque office and no toilet partition work. Plasco Sales is residential shower doors. Fairway is access-control hardware.",
   "Bobrick locator (bobrick.com/where-to-buy): 404",
   "ASI Global Partitions find-a-rep: 404",
@@ -146,6 +157,84 @@
    "score": 30
   },
   {
+   "name": "H&H Building Products LLC",
+   "base_city": "Albuquerque",
+   "state": "NM",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://handhnm.com/",
+   "phone": "505-388-8209",
+   "email": "sales@handhnm.com",
+   "evidence_urls": [
+    "https://handhnm.com/"
+   ],
+   "partition_evidence": "Homepage lists Toilet Partitions and Bathroom Accessories (Division 10) as products; 'New Mexico's Leading Provider For All Your Building Product Needs'. No installation services mentioned.",
+   "reason": "A specialty building products supplier ('Order by phone') selling toilet partitions and other Division 5/7/8/10 products in New Mexico. I saw no installation service, so it is a competitor supplier rather than an installer.",
+   "red_flags": [
+    "Sells toilet partitions itself (buy-around risk)",
+    "No installation evidence"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Yourson Construction Inc",
+   "base_city": "Albuquerque",
+   "state": "NM",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://yoursonconstruction.com/",
+   "phone": "505.298.3871",
+   "email": "yourson.construction@comcast.net",
+   "contact_page": "https://yoursonconstruction.com/inquire/",
+   "evidence_urls": [
+    "https://yoursonconstruction.com/"
+   ],
+   "partition_evidence": "None. Lists commercial bathroom remodeling, ADA remodels and grab bars, but no toilet partitions or Division 10 work.",
+   "reason": "A family-owned bathroom remodeling and restoration company (since 1989), mostly tub, shower and tile work, with a general 'commercial bathroom remodeling' line. No sign of toilet partition installation.",
+   "red_flags": [
+    "No partition evidence; mainly residential-style bathroom remodeling"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "One Point Partitions (Albuquerque delivery terminal)",
+   "base_city": "Albuquerque",
+   "state": "NM",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://fxstaging.onepointpartitions.com/?p=3338",
+    "https://fxstaging.onepointpartitions.com/?p=3058"
+   ],
+   "partition_evidence": "Search-result snippets from its Albuquerque and New Mexico pages describe a delivery terminal, 6\u20138 day delivery and partitions designed for DIY installation with guides. Direct fetches returned 403, so I couldn't read the pages myself.",
+   "reason": "An online partitions seller (a direct competitor) with a delivery terminal in Albuquerque, not a local installer. The Albuquerque 'location' is a shipping point.",
+   "red_flags": [
+    "Direct competitor that sells partitions",
+    "Albuquerque address is a delivery terminal, not an installer",
+    "Site blocked direct reading (403)"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
    "name": "APA Specialties LLC",
    "added_by_checker": false,
    "base_city": "Albuquerque",
@@ -213,7 +302,14 @@
     "No search results for the name",
     "Name suggests a supplier"
    ],
-   "license": null,
+   "license": {
+    "name": "Division 10 Materials, Inc.",
+    "area": "albuquerque",
+    "status": "not_online",
+    "registry": "New Mexico RLD Construction Industries Division license verification (PSI public search, https://public.psiexams.com/search.jsp)",
+    "source_url": "https://www.rld.nm.gov/about-us/public-information-hub/verify-a-license/",
+    "note": "Checked 2026-11-19. New Mexico requires a state CID license. RLD's Verify a License page sends CID checks to the PSI public search, which needs no sign-in but has a CAPTCHA, so it can't be checked automatically. No license record found or read. The company site (division10materials.com) returned HTTP 503. A web search turned up no license number for this company. Next step: search PSI by business name 'Division 10' with company type Contractor, or call PSI Albuquerque at 505-222-9801 (from https://public.psiexams.com/contractor_information.jsp)."
+   },
    "score": 10
   },
   {
@@ -232,6 +328,32 @@
    "red_flags": [
     "Website could not be reached (DNS failure; buildinginterestconstruction.com may need to be allowed in network settings)"
    ],
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Stan's Precision Specialty Co.",
+   "base_city": "Albuquerque",
+   "state": "NM",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "rating": 0,
+   "review_count": 0,
+   "review_source": "BBB (A+ rating, not accredited, 0 customer reviews)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/nm/albuquerque/profile/building-materials/stans-precision-specialty-co-0806-42318"
+   ],
+   "partition_evidence": "None. BBB lists it only as a building materials, hardware and garden supply retailer.",
+   "reason": "The only trace is a BBB profile with no website, phone or product detail, and nothing about toilet partitions or installation.",
+   "red_flags": [
+    "No website or phone found",
+    "No partition evidence"
+   ],
+   "added_by_checker": false,
    "license": null,
    "score": 10
   }

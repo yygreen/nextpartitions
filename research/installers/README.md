@@ -10,11 +10,12 @@ A workflow runs three kinds of agents over a batch of areas:
 2. **Checker**, one per area, separate from the finder: reads each business's own site and listings and gives a verdict (strong, possible, reject). It also notes partition work, commercial focus, whether the business sells partitions itself (a buy-around risk), reviews and contact details, and adds strong businesses the finder missed.
 3. **License checker**, one per state: looks up each non-rejected business on the official state or city registry from `research/state-licensing/states.json` and `research/local-rules/cities.json`.
 
-Each workflow result is saved in `raw/batch-<n>.json`; `python3 build.py` merges them into:
+Each workflow result is saved in `raw/batch-<n>.json` (batches 14 to 16 are catch-up reruns of thin areas, merged into the earlier results); `python3 build.py` merges them into:
 
 - `<area>.json`: every candidate for the area, rejected ones included, ranked by score.
 - `prospects.csv`: the outreach list (strong and possible only), one row per business and area. `also_in_areas` shows businesses that serve several areas.
 - `gaps.md`: areas with fewer than 3 strong candidates.
+- `SUMMARY.md` (`python3 summary.py`): totals, a table by area, the install-only list to start outreach with, and the registrations to check by hand.
 
 ## Score (out of 100)
 
