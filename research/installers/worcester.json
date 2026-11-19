@@ -1,0 +1,437 @@
+{
+ "area": "worcester",
+ "found_count": 12,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/worcester.json: worked (most maps hits irrelevant: remodelers, shower doors, stores)",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads but dropdown results not readable, no reps returned",
+  "Scranton Products find-a-rep: 404",
+  "ASI Global Partitions find-a-rep: redirect loop, not read",
+  "Bradley, Hadrian, Metpar, General Partitions, Ampco locators: not tried (search budget and time)",
+  "The Blue Book (thebluebook.com toilet partitions New England and iProView): blocked 403",
+  "BuildingConnected / Procore public profiles: not tried",
+  "AGC Massachusetts member directory: worked (Newton Building Specialties & Installation)",
+  "BLDUP: blocked 403 (snippet only)",
+  "BBB NH partitions category: worked",
+  "One Point Partitions: 403; search snippets say it ships partitions but doesn't install, so excluded",
+  "WebSearch: 8 of 8 used (Worcester, Division 10 MA, MA restroom partitions, nearby cities, New England specialties, Rhode Island/Woonsocket, Granite State Specialties); mostly surfaced distributors and bid documents",
+  "Company sites fetched: division10.net, ckgallagherinstallations.com, jsallese.com, goldensebuildingproducts.com, nedoors.com, kelleybros.com, newtondistributing.com, kdhdoors.com, unlimitedspecialties1.com, unitedinstallers.net (no partition mention, excluded), amppartitions.com; newtonbsi.com, restroomremodels.com and commercialdoorsonline.com returned empty content",
+  "Excluded: UDH Group (NJ-based, no NE service stated), Partition Plus (MD), Walsh Door (no partitions listed)"
+ ],
+ "candidates": [
+  {
+   "name": "Newton Building Specialties & Installation Inc",
+   "base_city": "Westborough",
+   "state": "MA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.newtonbsi.com/",
+   "phone": "508-439-4941",
+   "email": "sales@newtonbsi.com",
+   "contact_page": "https://www.newtonbsi.com/get-quote/",
+   "evidence_urls": [
+    "https://www.newtonbsi.com/",
+    "https://www.newtonbsi.com/products/",
+    "https://www.newtonbsi.com/get-quote/"
+   ],
+   "partition_evidence": "Products page: 'You can see our quality work for supplying and installing toilet partitions'; homepage lists toilet partitions as a specialty.",
+   "reason": "Division 10 supplier and installer based in Westborough, about 10 miles from Worcester, explicitly supplying and installing toilet partitions for commercial remodels.",
+   "red_flags": [
+    "Supplies partitions itself (buy-around risk)",
+    "Site content dated 2017-2019"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Newton Building Specialties & Installation Inc",
+    "area": "worcester",
+    "status": "not_online",
+    "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+    "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+    "note": "Based in Westborough, MA. The state rule is no_state_license for commercial interior work (low confidence), with a possible CSL on permitted work. ePLACE can't be queried automatically. The Worcester local rule is low confidence and says to check with Worcester Inspectional Services, which has no public online registry, so it's a phone item. Nothing verified."
+   },
+   "score": 70
+  },
+  {
+   "name": "New England Door Solutions",
+   "base_city": "Leominster",
+   "state": "MA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [
+    "Yale",
+    "USA Wood Door",
+    "ASSA Abloy"
+   ],
+   "website": "https://www.nedoors.com/",
+   "phone": "(978) 219-2613",
+   "contact_page": "https://www.nedoors.com/contact",
+   "evidence_urls": [
+    "https://www.nedoors.com/"
+   ],
+   "partition_evidence": "Site lists 'Commercial Bathroom Partitions' and says it can 'install new bathroom stalls'.",
+   "reason": "Commercial door contractor that installs bathroom stalls and lists Worcester and Leominster among service areas. Brands named are door brands, not partitions.",
+   "red_flags": [
+    "Headquarters address not stated on homepage",
+    "Primarily a door company"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "New England Door Solutions",
+    "area": "worcester",
+    "status": "not_online",
+    "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+    "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+    "note": "Based in Leominster, MA. Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+   },
+   "score": 70
+  },
+  {
+   "name": "CK Gallagher Installations LLC",
+   "base_city": "Wilmington",
+   "state": "MA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://www.ckgallagherinstallations.com/",
+   "phone": "781-838-2726",
+   "email": "Ckgallagherinstall@gmail.com",
+   "contact_page": "https://www.ckgallagherinstallations.com/",
+   "evidence_urls": [
+    "https://www.ckgallagherinstallations.com/"
+   ],
+   "partition_evidence": "'Bathroom partition installation & repair' for metal, stainless, plastic, phenolic and laminate stalls.",
+   "reason": "Install-only commercial contractor (lockers, partitions, accessories) serving most of Massachusetts and neighboring states; no sign it sells partitions, so low buy-around risk.",
+   "red_flags": [
+    "Uses a Gmail address",
+    "No dedicated contact page"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "CK Gallagher Installations LLC",
+    "area": "worcester",
+    "status": "not_online",
+    "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+    "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+    "note": "Based in Wilmington, MA. Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+   },
+   "score": 68
+  },
+  {
+   "name": "J. Sallese & Sons, Inc.",
+   "base_city": "Woburn",
+   "state": "MA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "http://www.jsallese.com/",
+   "phone": "(781) 246-3508",
+   "email": "jsallese@jsallese.com",
+   "contact_page": "http://www.jsallese.com/contact-us.html",
+   "evidence_urls": [
+    "http://www.jsallese.com/"
+   ],
+   "partition_evidence": "Sells, installs and repairs restroom partitions; Division 10 subcontractor for schools, colleges and GCs.",
+   "reason": "Long-running Division 10 subcontractor serving New England that installs restroom partitions; also sells them.",
+   "red_flags": [
+    "Sells partitions (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "J. Sallese & Sons, Inc.",
+    "area": "worcester",
+    "status": "not_online",
+    "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+    "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+    "note": "Based in Woburn, MA. Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+   },
+   "score": 63
+  },
+  {
+   "name": "Division 10 Specialties, Inc.",
+   "base_city": "Pembroke",
+   "state": "MA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Bobrick",
+    "Scranton",
+    "Hadrian",
+    "ASI Global Partitions",
+    "Bradley/Mills Partitions"
+   ],
+   "website": "https://division10.net/",
+   "phone": "(781) 829-0546",
+   "email": "estimating@division10.net",
+   "contact_page": "https://division10.net/contact/",
+   "evidence_urls": [
+    "https://division10.net/",
+    "https://division10.net/services/",
+    "https://division10.net/suppliers/",
+    "https://division10.net/about/"
+   ],
+   "partition_evidence": "Services page lists toilet partitions and says the company will 'supply and install' construction materials including restroom partitions.",
+   "reason": "Supply-and-install Division 10 contractor serving commercial, institutional and government projects across Massachusetts, with major partition brands on its supplier list.",
+   "red_flags": [
+    "Supplies partitions (buy-around risk)",
+    "Installation not tied explicitly to partitions on the services page"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Division 10 Specialties, Inc.",
+    "area": "worcester",
+    "status": "not_online",
+    "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+    "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+    "note": "Based in Pembroke, MA. Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+   },
+   "score": 63
+  },
+  {
+   "name": "Granite State Specialties LLC",
+   "base_city": "Raymond",
+   "state": "NH",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://www.granitestatespecialties.com/",
+   "phone": "(866) 966-9113",
+   "email": "info@granitestatespecialties.com",
+   "contact_page": "https://www.granitestatespecialties.com/request-a-quote/",
+   "evidence_urls": [
+    "https://www.granitestatespecialties.com/"
+   ],
+   "partition_evidence": "Toilet partitions is a featured product, and the site mentions installing toilet partitions.",
+   "reason": "Calls itself New England's leading supplier and installer of Division 10-12 specialties and works throughout the Northeast. It's about 70 miles from Worcester.",
+   "red_flags": [
+    "Supplier and installer (buy-around risk)",
+    "About 70 miles away"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Granite State Specialties LLC",
+    "area": "worcester",
+    "status": "not_online",
+    "registry": "Massachusetts Division of Occupational Licensure license lookup (Home Improvement Contractor registration and Construction Supervisor License) on mass.gov; Worcester Inspectional Services",
+    "license_type": "No state license for commercial interior contractors in MA. HIC registration covers only owner-occupied 1 to 4 unit homes. A Construction Supervisor License may be needed for permitted work. Worcester's city rule is unconfirmed (low confidence).",
+    "source_url": "https://www.granitestatespecialties.com/",
+    "note": "mass.gov returned HTTP 403 to automated access on 2026-11-19, so the DOL lookup could not be checked. The Worcester rule is a phone-call item: the city is believed to require only the state license number and proof of workers' comp on the permit application. The company's site lists no MA license or registration numbers. Raymond, NH base. NH has no state contractor license."
+   },
+   "score": 63
+  },
+  {
+   "name": "Unlimited Specialties Co",
+   "base_city": "Quincy",
+   "state": "MA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "http://www.unlimitedspecialties1.com/",
+   "phone": "(617) 471-7070",
+   "email": "bobm@unlimitedspecialties1.com",
+   "contact_page": "http://www.unlimitedspecialties1.com/contactus.html",
+   "evidence_urls": [
+    "http://www.unlimitedspecialties1.com/",
+    "http://www.unlimitedspecialties1.com/contactus.html"
+   ],
+   "partition_evidence": "Provides and installs Division 10 items including toilet partitions.",
+   "reason": "Division 10 subcontractor serving New England that provides and installs toilet partitions.",
+   "red_flags": [
+    "Supplies partitions as part of its service",
+    "Dated website"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Unlimited Specialties Co",
+    "area": "worcester",
+    "status": "not_online",
+    "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+    "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+    "note": "Based in Quincy, MA. Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+   },
+   "score": 58
+  },
+  {
+   "name": "Goldense Building Products Inc",
+   "base_city": "Norfolk",
+   "state": "MA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://goldensebuildingproducts.com/",
+   "phone": "508-384-2666",
+   "email": "paul@goldensebuildingproducts.com",
+   "contact_page": "https://goldensebuildingproducts.com/",
+   "evidence_urls": [
+    "https://goldensebuildingproducts.com/"
+   ],
+   "partition_evidence": "Lists 'Toilet Partitions & Accessories' as a product category and says it distributes, fabricates and installs commercial building products. No partition project shown.",
+   "reason": "A commercial door, hardware and life-safety distributor-installer that carries partitions. Partition installation isn't shown.",
+   "red_flags": [
+    "Distributor (buy-around risk)",
+    "Main focus is doors and life safety"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Goldense Building Products Inc",
+    "area": "worcester",
+    "status": "not_online",
+    "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+    "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+    "note": "Based in Norfolk, MA. Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+   },
+   "score": 45
+  },
+  {
+   "name": "Newton Distributing Company",
+   "base_city": "Natick",
+   "state": "MA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [
+    "Hadrian",
+    "Scranton"
+   ],
+   "website": "https://www.newtondistributing.com/",
+   "phone": "877-837-7745",
+   "email": "sales@newtondistributing.com",
+   "contact_page": "https://www.newtondistributing.com/contact-newton/",
+   "evidence_urls": [
+    "https://www.newtondistributing.com/",
+    "https://www.newtondistributing.com/architects-electricians-installers/"
+   ],
+   "partition_evidence": "FAQ: 'Do you offer installation services?' 'Yes.' Sells toilet partitions in all materials with an online quote tool.",
+   "reason": "Primarily a partition seller with an online quote tool, so a direct competitor. Says it offers installation but shows no partition installs.",
+   "red_flags": [
+    "Direct partition seller and competitor (high buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Newton Distributing Company",
+    "area": "worcester",
+    "status": "not_online",
+    "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+    "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+    "note": "Based in Natick, MA. Related to Newton BSI (Westborough). Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+   },
+   "score": 45
+  },
+  {
+   "name": "Kelley Bros (Boston office)",
+   "base_city": "Lakeville",
+   "state": "MA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "ASI Global Partitions",
+    "Scranton",
+    "Hadrian"
+   ],
+   "website": "https://www.kelleybros.com/",
+   "phone": "(774) 766-4180",
+   "contact_page": "https://www.kelleybros.com/contact-us/",
+   "evidence_urls": [
+    "https://www.kelleybros.com/",
+    "https://www.kelleybros.com/locations/",
+    "https://www.kelleybros.com/?p=3224"
+   ],
+   "partition_evidence": "Division 10 page lists Global, Scranton and Hadrian toilet partitions and offers a 'Turn Key Solution ... to the final Product Installation'. Partition installs aren't shown specifically.",
+   "reason": "Large door, hardware and Division 10 distributor with a Massachusetts office. It sells partitions; turnkey installation is mentioned but not shown for partitions.",
+   "red_flags": [
+    "Distributor of partitions (buy-around risk)",
+    "Large multi-state company, not a local installer"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Kelley Bros (Boston office)",
+    "area": "worcester",
+    "status": "not_online",
+    "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+    "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+    "note": "Boston-area office based in Lakeville, MA. Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+   },
+   "score": 43
+  },
+  {
+   "name": "kdh Doors & Hardware",
+   "base_city": "unknown",
+   "state": "MA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "http://www.kdhdoors.com/",
+   "phone": "508-407-8640",
+   "email": "tomd@kdhdoors.com",
+   "contact_page": "http://www.kdhdoors.com/contact-us",
+   "evidence_urls": [
+    "http://www.kdhdoors.com/"
+   ],
+   "partition_evidence": "Supplies toilet partitions and accessories; says products are 'professionally installed by contractors'.",
+   "reason": "A supplier, not an installer. Its base city isn't stated; only image alt text mentions Auburn and Worcester.",
+   "red_flags": [
+    "Supplier only",
+    "Base city unconfirmed"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "AMP Partitions",
+   "base_city": "unknown",
+   "state": "unknown",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://amppartitions.com/",
+   "evidence_urls": [
+    "https://amppartitions.com/",
+    "https://amppartitions.com/contact"
+   ],
+   "partition_evidence": "The site only shows a project-type selector (bathroom, office, school, locker room, mikvah); no installation or location info.",
+   "reason": "No location, contact details or installation evidence on its site, and nothing ties it to Massachusetts.",
+   "red_flags": [
+    "No location or contact info",
+    "Unverifiable"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

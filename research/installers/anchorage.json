@@ -1,0 +1,190 @@
+{
+ "area": "anchorage",
+ "found_count": 5,
+ "sources_tried": [
+  "Seed file anchorage.json: read. Mostly remodelers, plumbers, HVAC and big-box stores, all skipped. The plausible ones were Commercial Contractors Inc (site unreadable: empty JavaScript page), E&D Contracting (read, no partition mention), K&W Interiors (residential kitchen and bath, skipped), Pacific Partition Systems Alaska (only a Google redirect, no site found). Division 10 Specialties Inc is based in Pembroke, MA, so it's out of area.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded, but the rep list is in a dropdown that wasn't readable; no Alaska rep found",
+  "Scranton Products where-to-buy: worked; lists only a regional Product Specialist covering AK (no Alaska dealer or installer named)",
+  "ASI find-a-rep (asi-group.com/find-a-rep): 404",
+  "Hadrian find-a-rep: 404",
+  "Bradley find-a-rep: page loaded without content (needs JavaScript)",
+  "General Partitions: blocked by Cloudflare",
+  "Metpar: homepage loaded, no dealer locator content",
+  "Ampco/Ammco: not tried (search and time budget)",
+  "The Blue Book (thebluebook.com search): 403 blocked",
+  "BuildingConnected / Procore public profiles: not tried",
+  "Alaska Business magazine construction directories (digital.akbizmag.com, March 2020 and 2021): worked. Source of Architectural Supply Co. and Door Systems of Alaska; Aurora Construction Supply (Fairbanks, Division 10 supplier) skipped as more than 120 miles away",
+  "Alaska Contractor magazine AGC renovation article: worked",
+  "WebSearch: 8 of 8 used. Queries: Pacific Partition Systems name (twice), Division 10 Anchorage (twice), toilet compartments Anchorage, Commercial Contractors, Wasilla/Palmer partitions, toilet partitions supply Anchorage. They mostly returned bid specs, national distributors and residential remodelers; no dedicated Anchorage toilet partition installer surfaced. Some search summaries attributed listings to the wrong company (for example True Value, Spire, Arctic Controls); I left those out because the directory page itself credits the description to Architectural Supply Co.",
+  "Yelp / BBB: not reached within the search cap; BBB category pages showed up only as residential remodel categories",
+  "Prestige Distribution installer network (Chicago/Dallas, claims Alaska installs): skipped as a national network with no local base"
+ ],
+ "candidates": [
+  {
+   "name": "Architectural Hardware Supply, Inc.",
+   "base_city": "Anchorage",
+   "state": "AK",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "phone": "(907) 522-0234",
+   "contact_page": "http://ahs-alaska.biz/contact",
+   "website": "http://ahs-alaska.biz/",
+   "evidence_urls": [
+    "http://ahs-alaska.biz/",
+    "http://ahs-alaska.biz/contact",
+    "https://govconinabox.com/explore/smb-federal-contractors/architectural-hardware-supply-inc-QFJGVLQN9SC3",
+    "https://aksbdc.org/success_stories/architechtural-hardware-supply/"
+   ],
+   "partition_evidence": "Own site lists 'Restroom Partitions & Accessories'. A federal contractor listing names toilet partitions and toilet accessories along with 'supply, installation, and service'. The SBDC profile says its products are 'furnished, installed and serviced' on Alaska government and institutional projects, such as Anchorage School District work.",
+   "reason": "An Anchorage Division 8/10 specialty contractor that furnishes and installs specialty products and lists restroom partitions. No project or photo shows toilet partition installation specifically.",
+   "red_flags": [
+    "Supplies partitions itself (buy-around risk)",
+    "Mostly government/institutional bid work",
+    "Partition installation not shown in projects or photos"
+   ],
+   "added_by_checker": true,
+   "license": {
+    "name": "Architectural Hardware Supply, Inc.",
+    "area": "anchorage",
+    "status": "found_active",
+    "registry": "Municipality of Anchorage, Verify Municipal Contractor License (bsd.muni.org). The State of Alaska Construction Contractor license search (commerce.alaska.gov) returned HTTP 403 to automated access and was not checked.",
+    "license_number": "CON7682",
+    "license_type": "General Contractor (Generl), Municipality of Anchorage",
+    "source_url": "https://bsd.muni.org/contractorlicensing/search.aspx",
+    "note": "Checked 2026-11-19. Searching the Anchorage municipal registry for 'Architectural Hardware' returned 'Architectural Hardware Supply Inc', (907) 522-0234, license CON7682, General Contractor (Generl), expires 02/14/2028. The registry lists only current municipal licenses. The phone number matches the company site (ahs-alaska.biz), which lists Restroom Partitions & Accessories among its products but does not say it installs partitions. The state license could not be checked online because the State of Alaska search (https://www.commerce.alaska.gov/cbp/main/search/professional) returns 403. A search result summary said Anchorage issues its license only after the state license is confirmed, but I did not read that on the official page, so state status is unverified. A state notary directory entry under the company name (aws.state.ak.us) is a notary commission, not a contractor license."
+   },
+   "score": 65
+  },
+  {
+   "name": "Architectural Supply Co.",
+   "base_city": "Anchorage",
+   "state": "AK",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "907-561-1919",
+   "website": "archialaska.com",
+   "evidence_urls": [
+    "https://digital.akbizmag.com/issue/march-2020/construction-directory/"
+   ],
+   "partition_evidence": "Alaska Business 2020 construction directory: 'Supplier of division 8 and 10-commercial doors, frames, hardware, toilet partitions, and toilet accessories.' No installation stated.",
+   "reason": "Real Anchorage Division 8/10 supplier (5 staff, est. 1977) that sells toilet partitions, but nothing read shows it installs them; its own site returned 503 and could not be read.",
+   "red_flags": [
+    "Sells toilet partitions itself (buy-around risk)",
+    "Installation not shown",
+    "Own website not readable (503)",
+    "2020 directory data may be dated"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Architectural Supply Co.",
+    "area": "anchorage",
+    "status": "not_found",
+    "registry": "Municipality of Anchorage, Verify Municipal Contractor License (bsd.muni.org). The State of Alaska Construction Contractor license search (commerce.alaska.gov) returned HTTP 403 to automated access and was not checked.",
+    "source_url": "https://bsd.muni.org/contractorlicensing/search.aspx",
+    "note": "Checked 2026-11-19. The Anchorage municipal registry returned 'No current license found.' for 'Architectural Supply'. Searches for 'Architectural' and 'Archi' returned only Architectural Hardware Supply Inc and North Architecture Construction Development Llc. The registry shows only current licenses, so the company may hold a license under a different legal name, or it may be a supplier that does not pull permits. The state license search returned 403, so state status is unknown and needs a manual check. The company site (archialaska.com) returned 503, so its services and contact details could not be read."
+   },
+   "score": 30
+  },
+  {
+   "name": "E&D Contracting LLC",
+   "base_city": "Anchorage",
+   "state": "AK",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "phone": "907-277-2222",
+   "email": "info@alaskacontractor.net",
+   "contact_page": "https://www.alaskacontractor.net/contact",
+   "website": "https://www.alaskacontractor.net/",
+   "evidence_urls": [
+    "https://www.alaskacontractor.net/",
+    "https://www.alaskacontractor.net/capabilities"
+   ],
+   "partition_evidence": "Its services are water and sewer, home installation, underground utilities, site prep, pile driving and demolition. No interior specialties are listed.",
+   "reason": "A civil, site and industrial contractor with no interior or Division 10 work.",
+   "red_flags": [
+    "The page's mailto link points to info@mysite.com, a template leftover"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Commercial Contractors, Inc.",
+   "base_city": "Anchorage",
+   "state": "AK",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "website": "http://www.alaskacci.com/",
+   "evidence_urls": [
+    "https://alaskacontractor.akbizmag.com/issue/summer-2026/investing-in-the-future/"
+   ],
+   "partition_evidence": "Listed only as a project partner on an AGC of Alaska office renovation that included restroom partitions; the article doesn't say who supplied or installed them.",
+   "reason": "Its website returned no readable content, and no source shows toilet partition work. The only mention is as an unspecified project partner.",
+   "red_flags": [
+    "Website content unreadable",
+    "Role on partition work unknown"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Door Systems of Alaska",
+   "base_city": "Chugiak",
+   "state": "AK",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "nearby",
+   "brands": [
+    "Modernfold",
+    "Skyfold"
+   ],
+   "phone": "907-688-3367",
+   "website": "https://doorsystemsak.com/",
+   "evidence_urls": [
+    "https://digital.akbizmag.com/issue/march-2020/construction-directory/"
+   ],
+   "partition_evidence": "Directory lists Modernfold accordion and flat-wall partitions and Skyfold vertical partitions (operable room dividers), not toilet partitions.",
+   "reason": "A commercial and garage door company whose 'partitions' are operable room dividers; no toilet partition or Division 10 restroom work found. Its own site returned no readable content.",
+   "red_flags": [
+    "Operable walls only, not restroom partitions"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Pacific Partition Systems Alaska",
+   "base_city": "unknown",
+   "state": "AK",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "reason": "A web search for the name with Alaska returned no business by that name; no website or listing found.",
+   "red_flags": [
+    "No evidence the business exists"
+   ],
+   "evidence_urls": [],
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

@@ -1,0 +1,278 @@
+{
+ "area": "honolulu",
+ "found_count": 9,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/honolulu.json: read. Mostly remodelers, plumbers and stores. Only 'Creative Partition Systems' (Shioi Construction site) was plausible, and that site shows drywall, not toilet partitions.",
+  "Bobrick find-a-rep: blocked (JS dropdown, no results in fetched page). Found Bobrick's Hawaii distributor (Island Pacific Distributors) through web search instead.",
+  "Scranton Products where-to-buy: 503.",
+  "Bradley find-a-rep: page empty (JS).",
+  "Hadrian find-a-representative: 404.",
+  "ASI, Metpar, General Partitions, Ampco: not reached (locators are JS or the remaining fetches went to verifying local leads).",
+  "The Blue Book (thebluebook.com): 403 on direct fetch. The Division X Specialties listing was read only through search-result summaries.",
+  "BuildingConnected / Procore network: not tried (search cap).",
+  "BBB category pages (Aiea and Paia 'partition'): worked. They list only Commercial Shelving, Inc.",
+  "Yellow Pages Oahu 'commercial bathroom partition': worked. Lists only Waltz Engineering.",
+  "HomeAdvisor/Angi 'A1Partitions' (Waipahu address in snippet): 403.",
+  "Specialties Hawaii and Division X websites didn't resolve (DNS errors), possibly blocked by session network settings.",
+  "WebSearch: 8 of 8 used. The toilet-partition, Division 10, Oahu-suburb, Yelp/BBB and specialties queries all worked but found few local installers. One seller's Hawaii page says there are 'little to no full-service bathroom partition companies in Hawaii'.",
+  "Skipped as national or no local base: Prestige Distribution (claims installs in Hawaii through its network), CIH (Indianapolis, 'anywhere in the USA'), Newton Distributing (Natick MA, 'have had projects in the Honolulu area'), toiletpartitions.com, One Point Partitions."
+ ],
+ "candidates": [
+  {
+   "name": "Division X, Inc.",
+   "base_city": "Honolulu",
+   "state": "HI",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(808) 528-2448",
+   "website": "http://www.divisionxinc.com",
+   "evidence_urls": [
+    "https://governmentbidders.com/government-bidders/contractor-5400971-Division-X-Inc-.htm",
+    "https://naicslist.com/company-profile/division-x-incorporated-honolulu-hi-96822"
+   ],
+   "partition_evidence": "None seen. Two directory listings put it in Honolulu under NAICS 423390, 'other construction material merchant wholesalers'. The name suggests Division 10, but none of the pages I read confirmed that. Its website did not resolve.",
+   "red_flags": [
+    "Website divisionxinc.com does not resolve (DNS failure)",
+    "Only directory listings found, and they class it as a wholesaler; it may supply partitions rather than install them (buy-around risk)",
+    "The Blue Book 'Division X Specialties' name came from the compiler; I did not verify it"
+   ],
+   "reason": "This is the only Honolulu candidate whose name points to Division 10 specialties. I found no proof that it installs partitions, its website is down, and the directories class it as a wholesaler. Confirm by phone and through the DCCA license lookup.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Division X, Inc.",
+    "area": "honolulu",
+    "status": "not_online",
+    "registry": "Hawaii DCCA Professional and Vocational Licensing (Contractors License Board) public license search, https://mypvl.dcca.hawaii.gov/public-license-search/",
+    "source_url": "https://mypvl.dcca.hawaii.gov/public-license-search/",
+    "note": "Checked 2026-11-19. The official Hawaii PVL license search returns HTTP 403 to automated access (the old pvl.ehawaii.gov search now redirects there), so no license record could be read. Needs a manual lookup by name 'Division X'. The company website (divisionxinc.com) did not resolve. A third-party directory (governmentbidders.com/government-bidders/contractor-5400971-Division-X-Inc-.htm, seen only in search results) describes it as a Honolulu glazing contractor, established 1997, that says it is licensed. No license number was found there, and the listing is not official. The Hawaii CLB monthly applicant lists from 2024 to 2026 that came up in search did not mention it. That says nothing either way about whether it holds an existing license. Honolulu has no separate city registry: building permits list the contractor's Hawaii state license number."
+   },
+   "score": 10
+  },
+  {
+   "name": "Commercial Shelving, Inc. (CSI Builders)",
+   "base_city": "Honolulu",
+   "state": "HI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(808) 836-3811",
+   "email": "info@csibuildershawaii.com",
+   "website": "https://www.commercialshelving.com",
+   "evidence_urls": [
+    "https://www.commercialshelving.com",
+    "https://www.commercialshelving.com/commercial-shelving"
+   ],
+   "partition_evidence": "Its services are pallet racking, boltless shelving, cold storage, warehouse builds, tenant improvements, general contracting, roll-up doors and dock levelers. Toilet partitions are not mentioned.",
+   "red_flags": [],
+   "reason": "A commercial material-handling and warehouse contractor. I found no partition or Division 10 restroom work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Island Pacific Distributors (Island Pacific Installers)",
+   "base_city": "Honolulu",
+   "state": "HI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [
+    "Sargent",
+    "Cornell",
+    "ASSA ABLOY",
+    "MM Systems",
+    "Smoke Guard",
+    "Total Door"
+   ],
+   "phone": "(808) 955-1126",
+   "email": "info@ipdhawaii.com",
+   "contact_page": "https://ipdhawaii.com/contact/",
+   "website": "https://ipdhawaii.com/",
+   "evidence_urls": [
+    "https://ipdhawaii.com/",
+    "https://ipdhawaii.com/installation/"
+   ],
+   "partition_evidence": "Its installation page covers metal doors and frames, architectural hardware, access control, automatic openers, rolling and grille doors and expansion joints. Toilet partitions are not mentioned.",
+   "red_flags": [],
+   "reason": "An architectural door-hardware distributor and installer. Its installation scope does not include toilet partitions or washroom accessories.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Waltz Engineering Inc",
+   "base_city": "Honolulu",
+   "state": "HI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [
+    "Global IFS",
+    "Kwik-Wall"
+   ],
+   "phone": "(808) 842-7955",
+   "email": "info@waltzengineering.com",
+   "contact_page": "http://www.waltzengineering.com/contact.html",
+   "website": "http://www.waltzengineering.com",
+   "evidence_urls": [
+    "http://www.waltzengineering.com",
+    "http://www.waltzengineering.com/interiors.html",
+    "https://www.yellowpages.com/oahu-hi/commercial-bathroom-partition"
+   ],
+   "partition_evidence": "Its 'partitions' are operable walls and folding or accordion partitions, plus access flooring. YellowPages lists it under a partitions category, but its own site shows no toilet partitions.",
+   "red_flags": [
+    "Probably listed for operable walls, not toilet partitions"
+   ],
+   "reason": "It installs operable walls and access flooring and also works on laundry equipment and boilers. I found no restroom partition work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Creative Partition Systems / Shioi Construction, Inc.",
+   "base_city": "Pearl City",
+   "state": "HI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(808) 487-2441",
+   "email": "shioihawaii@shioi.com",
+   "contact_page": "https://www.shioihawaii.com/contact",
+   "website": "http://shioihawaii.com/",
+   "evidence_urls": [
+    "http://shioihawaii.com/",
+    "https://www.shioihawaii.com/services",
+    "https://www.mapquest.com/us/hawaii/creative-partition-systems-419107012"
+   ],
+   "partition_evidence": "Shioi is a general contractor whose self-performed trades include metal framing, drywall and plastering. Search results describe Creative Partition Systems (Lihue) as a drywall contractor. Neither shows toilet partition work.",
+   "red_flags": [
+    "'Partition' in the name refers to drywall or stud partitions"
+   ],
+   "reason": "A general contractor and drywall business with offices on Oahu (Pearl City) and Kauai. Its services list no toilet partitions or Division 10 work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Hawaii Materials",
+   "base_city": "unknown",
+   "state": "HI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.hawaiimaterials.com/",
+   "evidence_urls": [
+    "https://www.hawaiimaterials.com/commercial-restroom-partitions-washroom-accessories"
+   ],
+   "partition_evidence": "A search snippet of its partitions page described it as a wholesale supplier and logistics coordinator for toilet partitions and washroom accessories on Oahu and the other islands, not an installer. The site now returns a Wix 'ConnectYourDomain' 404 error, so I could not read the page itself.",
+   "red_flags": [
+    "Website domain disconnected (Wix 404); the business may be inactive",
+    "A supplier of partitions, not an installer (buy-around risk)",
+    "Base city unknown; 'within area' rests only on the search snippet about Oahu"
+   ],
+   "reason": "It appears to supply partitions rather than install them, and its website is no longer live.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "HPM Building Supply, Design Centers Projects Division",
+   "base_city": "Honolulu",
+   "state": "HI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [
+    "Ernestomeda",
+    "SmartCucina",
+    "VECO",
+    "Avenue",
+    "Gaggenau",
+    "Thermador",
+    "Bosch",
+    "KitchenAid",
+    "Maytag",
+    "Miele",
+    "Samsung",
+    "Whirlpool"
+   ],
+   "phone": "(808) 791-9870",
+   "website": "https://www.hpmhawaii.com/design-centers-projects-division",
+   "evidence_urls": [
+    "https://www.hpmhawaii.com/design-centers-projects-division"
+   ],
+   "partition_evidence": "The division covers custom cabinetry, architectural elements and appliances. Toilet partitions are not mentioned.",
+   "red_flags": [],
+   "reason": "A cabinetry and appliance projects division. I found no partition or Division 10 work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Specialties Hawaii",
+   "base_city": "Waianae",
+   "state": "HI",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.specialtieshawaii.net/",
+   "evidence_urls": [],
+   "partition_evidence": "The website could not be reached (the proxy returned a 502 / host not resolved), and a web search found no listing under this name.",
+   "red_flags": [
+    "Website unreachable",
+    "No independent listing found"
+   ],
+   "reason": "I could not verify that this business exists or what it does. Recheck it if the website comes back online.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Hawaii Partition Systems Inc",
+   "base_city": "Lawai (Kauai)",
+   "state": "HI",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "evidence_urls": [
+    "https://bbb.org/us/hi/lihue/category/drywall-contractors",
+    "https://prod.bbb.org/us/hi/kapaa/category/construction"
+   ],
+   "partition_evidence": "BBB lists it under the steel, general contractor and drywall categories, with a Kauai County service area. I found no toilet partition work.",
+   "red_flags": [
+    "No website",
+    "Its BBB categories suggest drywall or stud partitions",
+    "Its listed service area is Kauai County, not Oahu"
+   ],
+   "reason": "It looks like a Kauai drywall and general contractor with no stated Oahu service and no evidence of restroom partition work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

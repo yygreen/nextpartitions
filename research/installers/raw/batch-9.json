@@ -1,0 +1,2313 @@
+{
+ "areas": [
+  {
+   "area": "rochester",
+   "state": "NY",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/rochester.json: worked; Maps hits are almost all residential bath remodelers, plumbers and stores (skipped). The Google goto links in 'web' resolve with curl via www.google.com, which turned up Weswood Specialties (weswood-specialties.com), its installer job ad, the McClain 'our business' page and the Procore interior-specialties listing",
+    "Bobrick / Scranton / Metpar / General Partitions / Ampco locators: not retried (Buffalo run found Bobrick JS-only, Scranton 404)",
+    "Bradley find-a-rep: page loads with no rep content",
+    "ASI Global Partitions find-a-rep: 404",
+    "Hadrian find-a-rep: 404",
+    "The Blue Book iProView pages: 403 blocked",
+    "Procore Network (Rochester toilet-accessories and partitions lists, NY interior specialties, profiles): worked; gave JP Construction Specialties, Milestone, Lehmann Construction (drywall/partitions, no toilet partitions: skipped), Workplace Interiors (office partitions: skipped)",
+    "BuildingConnected: not tried",
+    "WebSearch: 8 of 8 used; mostly returned One Point Partitions, national online sellers (Newton Distributing, Partition Plus, CME Corp, Prestige Distribution, Benco, Division 10 Inc NJ) and NYC Blue Book lists, none with a confirmed Rochester-area base",
+    "One Point Partitions: search snippets show a Rochester delivery terminal (91 Norman St) but say buyers install themselves or use their own contractor; site returns 403, so not read; excluded as an online seller with no installation",
+    "Greater Rochester Chamber member directory: 403 blocked",
+    "BBB Rochester partitions category: 404",
+    "weswoodspecialties.com: DNS failure (correct domain is weswood-specialties.com, which worked)",
+    "aaccontracting.com: 'Launching soon' placeholder",
+    "mcclainassociatesinc.com: PHP parse error on every page",
+    "Rochester Door Company: doors only, no partitions (skipped)",
+    "Inter-Co Restroom & Locker Supply: snippet says supply and install toilet partitions, but no location was found and the cap was hit; worth checking"
+   ],
+   "found_count": 5,
+   "checked": [
+    {
+     "name": "J&R Specialties Inc",
+     "base_city": "Akron",
+     "state": "NY",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "Bobrick",
+      "General Partitions",
+      "ASI Global Partitions",
+      "Scranton Products",
+      "Metpar",
+      "Bradley"
+     ],
+     "within_area": "regional",
+     "website": "https://www.jandrspecialties.com/",
+     "phone": "(716) 442-5040",
+     "email": "info@jrbuffalo.com",
+     "contact_page": "https://www.jandrspecialties.com/contact",
+     "partition_evidence": "Section 10 page lists Toilet Partitions as a supply-and-install service. Named projects: Seneca One (installed toilet partitions), Northtown Jaguar Land Rover (supplied and installed Bobrick partitions) and 500 Pearl.",
+     "evidence_urls": [
+      "https://www.jandrspecialties.com/",
+      "https://www.jandrspecialties.com/section-10-specialties"
+     ],
+     "red_flags": [
+      "Supplies partitions itself (supply and install), which is a buy-around risk"
+     ],
+     "reason": "Commercial Division 10 subcontractor with named toilet partition installs. About 65 miles from Rochester, and its site lists Rochester in its Western NY service area.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Weswood Specialties, Inc.",
+     "base_city": "Farmington",
+     "state": "NY",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "yes",
+     "website": "https://www.weswood-specialties.com/",
+     "phone": "(585) 232-1986",
+     "email": "info@weswood-specialties.com",
+     "contact_page": "https://www.weswood-specialties.com/contact",
+     "partition_evidence": "Toilet Partitions is a featured product page. Its About page calls it an installation company for leading manufacturers' products, covering Divisions 10, 12 and 14. No partition project is named.",
+     "evidence_urls": [
+      "https://www.weswood-specialties.com/",
+      "https://www.weswood-specialties.com/toilet-partitions-accessories",
+      "https://www.weswood-specialties.com/about",
+      "https://www.weswood-specialties.com/projects"
+     ],
+     "red_flags": [
+      "Offers partitions as a product (likely supplies them)",
+      "The 'an AAC Company' tie is not confirmed on the pages read"
+     ],
+     "reason": "Greater Rochester commercial Division 10/12/14 installer with a toilet partitions product page. Its listed projects (RIT dorms, Nazareth library and others) don't show partition installs.",
+     "added_by_checker": false
+    },
+    {
+     "name": "McClain Associates Inc.",
+     "base_city": "Rochester",
+     "state": "NY",
+     "verdict": "possible",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "brands": [
+      "Moderco"
+     ],
+     "within_area": "yes",
+     "website": "http://mcclainassociatesinc.com/",
+     "email": "info@mcclainassociatesinc.com",
+     "contact_page": "https://www.moderco.com/?p=2999",
+     "partition_evidence": "The Moderco dealer page says McClain is a regional distributor of specialty building products (folding walls, operable partitions) for Rochester and nine Western NY counties, and that it can install. Toilet partitions are not mentioned.",
+     "evidence_urls": [
+      "https://www.moderco.com/?p=2999"
+     ],
+     "red_flags": [
+      "Own website returns a PHP error",
+      "No toilet partition evidence; operable walls only",
+      "Distributor (sells products)"
+     ],
+     "reason": "A Rochester specialty-products distributor and installer, but nothing shows toilet partition work and its own site is broken.",
+     "added_by_checker": false
+    },
+    {
+     "name": "JP Construction Specialties, LLC",
+     "base_city": "Syracuse",
+     "state": "NY",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "regional",
+     "website": "https://jpconstructionspecialties.com/",
+     "phone": "(315) 373-0004",
+     "partition_evidence": "Homepage says it provides Division 10 specialty construction materials for private, commercial, state and federal projects. Image filenames suggest stall photos, but the text never names toilet partitions.",
+     "evidence_urls": [
+      "https://jpconstructionspecialties.com/"
+     ],
+     "red_flags": [
+      "The only emails on the site are personal AOL/Hotmail addresses (left out)",
+      "Doesn't mention serving Rochester or Western NY",
+      "No contact page"
+     ],
+     "reason": "A Division 10 specialties firm about 85 miles away. Partition installation is unproven and it doesn't say it serves Rochester.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Milestone Construction Partners",
+     "base_city": "Rochester",
+     "state": "NY",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "brands": [],
+     "within_area": "yes",
+     "website": "https://milestoneconstructionpartners.com/",
+     "phone": "(585) 247-5179",
+     "email": "info@milestoneconstructionpartners.com",
+     "contact_page": "https://milestoneconstructionpartners.com/contact",
+     "partition_evidence": "None. General contractor, and no partition work is mentioned.",
+     "evidence_urls": [
+      "https://milestoneconstructionpartners.com/"
+     ],
+     "red_flags": [
+      "General contractor, not a partition installer"
+     ],
+     "reason": "A commercial general contractor with no evidence of toilet partition installation.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Kelley Bros",
+     "base_city": "Syracuse",
+     "state": "NY",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "Global Toilet Partitions",
+      "Scranton Products",
+      "Hadrian"
+     ],
+     "within_area": "regional",
+     "website": "https://www.kelleybros.com/",
+     "phone": "800-856-2550",
+     "contact_page": "https://www.kelleybros.com/contact-us/",
+     "partition_evidence": "Its Division 10 page lists toilet partitions (Global, Scranton, Hadrian) and offers a turnkey service 'from initial quote to final Product Installation'. Partition installs aren't stated outright.",
+     "evidence_urls": [
+      "https://www.kelleybros.com/?p=3224",
+      "https://www.kelleybros.com/locations/"
+     ],
+     "red_flags": [
+      "Large distributor that sells partitions (a competitor and buy-around risk)",
+      "No Rochester office; nearest are Buffalo and Syracuse"
+     ],
+     "reason": "A multi-state Division 10 distributor with NY offices (Syracuse headquarters, Buffalo) that offers installation. Not a strong fit: it is a partitions seller and partition installs are not proven.",
+     "added_by_checker": true
+    }
+   ]
+  },
+  {
+   "area": "hartford",
+   "state": "CT",
+   "sources_tried": [
+    "Seed file hartford.json (maps + web): worked; 9 seed sites opened, most useful leads came from here",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but rep results are dropdown-driven, none shown",
+    "ASI Global Partitions find-a-rep: 404",
+    "Scranton Products find-a-rep: 404",
+    "Hadrian find-a-rep: 404",
+    "Bradley, Metpar, General Partitions, Ampco locators: not tried (search cap / earlier locators failing)",
+    "The Blue Book (thebluebook.com category and iProView pages): blocked, 403; only search snippets seen",
+    "ConstructConnect / Construction Journal public profile: worked (CSNE base city)",
+    "BuildingConnected / Procore network: not tried",
+    "BBB category pages (bbb.org/us/ct/category/partition, /us/ma/lee/category/partition): worked; prod.bbb.org Avon lockers 403",
+    "CIS Leads profile: worked (Modulex, NJ, skipped as out of area with no stated CT coverage)",
+    "onepointpartitions.com: blocked, 403",
+    "chamberlinri.com: DNS not resolvable from this session",
+    "gjsalesco.com, interiorpartitions.net, elitecr.com: 503",
+    "WebSearch: used 8 of 8 (Division 10 CT, Springfield MA, CSNE, multi-state Division 10 subs, Elite Construction Resources, CRS/Sallese/Modulex, Partition Plus/CRS); worked",
+    "Yelp: not tried"
+   ],
+   "found_count": 15,
+   "checked": [
+    {
+     "name": "Partitions Inc",
+     "base_city": "East Hartford",
+     "state": "CT",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "brands": [],
+     "within_area": "yes",
+     "phone": "(860) 289-5600",
+     "contact_page": "https://partitionsincct.com/page/contact-partitionsincct",
+     "website": "https://partitionsincct.com/",
+     "evidence_urls": [
+      "https://partitionsincct.com/"
+     ],
+     "partition_evidence": "Site lists 'toilet partitions and accessories' among its General Trades work; commercial drywall/general trades contractor since 1966.",
+     "reason": "Commercial contractor in East Hartford that lists toilet partitions and accessories in its general trades scope and serves Connecticut and western Massachusetts. Partitions are a side line next to drywall and ceilings, not a specialty.",
+     "red_flags": [
+      "Partitions are a minor line within general trades; no partition project photos seen"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "CSNE LLC (Construction Specialties of New England, LLC)",
+     "base_city": "South Windsor",
+     "state": "CT",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "mostly",
+     "sells_partitions": "yes",
+     "brands": [
+      "Scranton Products",
+      "ASI Global Partitions",
+      "Bobrick",
+      "American Specialties",
+      "Lyon Workspace"
+     ],
+     "within_area": "yes",
+     "phone": "(860) 290-9260",
+     "contact_page": "https://csnellc.com/contact-us",
+     "website": "https://csnellc.com/",
+     "evidence_urls": [
+      "https://csnellc.com/",
+      "https://csnellc.com/contact-us"
+     ],
+     "partition_evidence": "Homepage: specializes in 'supplying and installing toilet partitions, bathroom accessories, lockers...' as a Division 10 subcontractor.",
+     "reason": "Woman-owned Division 10 subcontractor in South Windsor that supplies and installs toilet partitions in CT, MA and RI. It also supplies partitions (ASI, Scranton, Bobrick), so there is a buy-around risk.",
+     "red_flags": [
+      "Supplies partitions itself (ASI, Scranton, Bobrick dealer logos): buy-around risk",
+      "Only individual staff emails published; no general company email"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "West Hartford Lock & Lindquist Doors and Hardware",
+     "base_city": "West Hartford",
+     "state": "CT",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "yes",
+     "phone": "(860) 236-0671",
+     "email": "info@NEDoorSecurity.com",
+     "contact_page": "https://www.westhartfordlock.com/contact",
+     "website": "https://www.westhartfordlock.com/",
+     "evidence_urls": [
+      "https://www.westhartfordlock.com/"
+     ],
+     "partition_evidence": "Retail section stocks 'bathroom partitions'; restroom accessories offered 'with installation if requested'. Partition installation not stated outright.",
+     "reason": "Commercial door, hardware and locksmith company that sells bathroom partitions and installs restroom accessories on request; partition installation itself is not confirmed.",
+     "red_flags": [
+      "Sells partitions itself: buy-around risk",
+      "Core business is locks, doors and hardware"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Elite Construction Resources LLC",
+     "base_city": "Wallingford",
+     "state": "CT",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "mostly",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "nearby",
+     "phone": "(203) 793-3300",
+     "contact_page": "http://elitecr.com/contact",
+     "website": "https://elitecr.com/",
+     "evidence_urls": [
+      "http://elitecr.com/general-trades",
+      "http://elitecr.com/contact"
+     ],
+     "partition_evidence": "General Trades page: 'Supply and Installation of Specialty Items, Division 10, 11 and 12 materials' including 'Toilet compartments' and 'Toilet accessories'.",
+     "reason": "Wallingford general trades contractor (about 22 miles from Hartford) that lists supply and installation of Division 10 items including toilet compartments, for commercial and residential work.",
+     "red_flags": [
+      "Website HTTPS certificate does not match domain (site loads over http only)",
+      "'Supply and installation' wording means it may also supply partitions",
+      "Footer shows a second number, 860-290-9421"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "PDC Incorporated (Professional Drywall Construction)",
+     "base_city": "Springfield",
+     "state": "MA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "brands": [],
+     "within_area": "yes",
+     "phone": "(413) 736-4487",
+     "contact_page": "https://www.profdrywall.com/contact-us/",
+     "website": "https://profdrywall.com/",
+     "evidence_urls": [
+      "https://profdrywall.com/"
+     ],
+     "partition_evidence": "Baystate Behavioral Health Hospital project lists 'toilet partitions and accessories' among services provided.",
+     "reason": "Large commercial drywall contractor with a Springfield, MA office whose project list includes toilet partitions and accessories. Partitions are a side line, and it is a big firm that may not take small jobs.",
+     "red_flags": [
+      "Large regional drywall firm (offices in MA and NY); small partition-only jobs may not fit"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Connecticut Restroom Specialties, LLC",
+     "base_city": "Danbury",
+     "state": "CT",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "regional",
+     "phone": "203-205-0170",
+     "contact_page": "https://www.ctrestroom.com/",
+     "website": "https://www.ctrestroom.com/",
+     "evidence_urls": [
+      "https://www.ctrestroom.com/"
+     ],
+     "partition_evidence": "Own site: full-service from restroom layout 'through the final installation'; products listed include toilet partitions; 'expert installers are factory trained'.",
+     "reason": "Danbury-based Division 10 contractor and distributor (about 55 miles away) that designs and installs toilet partitions across the tri-state area including Connecticut, for offices, schools, restaurants and government buildings.",
+     "red_flags": [
+      "Major distributor of Division 10 specialties: sells partitions itself, buy-around risk",
+      "Outside the 30-mile radius (regional, serves all of CT)"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Division X Specialties LLC",
+     "base_city": "Glastonbury",
+     "state": "CT",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "yes",
+     "brands": [
+      "Bradley"
+     ],
+     "within_area": "yes",
+     "phone": "(860) 858-1106",
+     "contact_page": "http://www.divisionxllc.com/",
+     "website": "http://www.divisionxllc.com/",
+     "evidence_urls": [
+      "http://www.divisionxllc.com/"
+     ],
+     "partition_evidence": "Lists toilet partitions, handicap partitions and urinal screens as products; calls itself a 'one step source for all Division 10 Specialties'. No installation mentioned.",
+     "reason": "Division 10 supplier in Glastonbury; the site shows product supply only and no installation service, so no evidence it installs.",
+     "red_flags": [
+      "Supplier only on its site: competitor and buy-around risk",
+      "Only email shown is a named individual's address"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Contractor Products Inc",
+     "base_city": "Litchfield",
+     "state": "CT",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "nearby",
+     "phone": "(860) 482-3097",
+     "email": "contractor.products@snet.net",
+     "website": "http://contractorproductsct.com/",
+     "evidence_urls": [
+      "http://contractorproductsct.com/"
+     ],
+     "partition_evidence": "Lists toilet partitions among products supplied; no installation mentioned.",
+     "reason": "Commercial door and building specialties supplier (Litchfield, with a Waterbury branch) that sells toilet partitions; no evidence it installs them.",
+     "red_flags": [
+      "Supplier only: buy-around risk"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Newton Distributing / Newton BSI (Newton Building Specialties & Installation)",
+     "base_city": "Natick",
+     "state": "MA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "Hadrian",
+      "Scranton"
+     ],
+     "within_area": "regional",
+     "phone": "877-837-7745",
+     "email": "sales@newtondistributing.com",
+     "contact_page": "https://www.newtondistributing.com/contact-newton/",
+     "website": "https://www.newtondistributing.com/",
+     "evidence_urls": [
+      "https://www.newtondistributing.com/",
+      "https://www.newtondistributing.com/about-original/"
+     ],
+     "partition_evidence": "Site has a 'Bidding & Installation' menu item; about page says Newton 'will guide you to installation professionals all over the country' rather than stating it installs itself.",
+     "reason": "National online seller of toilet partitions based in Natick, MA (about 85 miles away) with a bidding and installation arm, but its own pages point customers to outside installers, so self-performed installation is unproven.",
+     "red_flags": [
+      "Direct competitor: sells partitions online nationally with a real-time quote builder",
+      "Installation appears to be referred out to third parties"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Aorbis Inc.",
+     "base_city": "East Hartford",
+     "state": "CT",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "brands": [],
+     "within_area": "yes",
+     "phone": "+1 (860) 317-7100",
+     "email": "info@aorbis.com",
+     "contact_page": "https://www.aorbis.com/contact-us/",
+     "website": "https://www.aorbis.com/",
+     "evidence_urls": [
+      "https://www.aorbis.com/"
+     ],
+     "partition_evidence": "'Door, Hardware, and Toilet Accessories: On-Screen Take-off to Installation' across 48 states; Division 10 items listed (restroom accessories, lockers, etc.) but toilet partitions not mentioned.",
+     "reason": "Commercial door, hardware and toilet accessories supplier-installer in East Hartford; installs restroom accessories but partitions are not listed.",
+     "red_flags": [
+      "Toilet partitions not mentioned anywhere on homepage",
+      "Primarily a door and hardware distributor"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Interior Partitions Specialists LLC",
+     "base_city": "Old Saybrook",
+     "state": "CT",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "unknown",
+     "sells_partitions": "no",
+     "brands": [],
+     "within_area": "regional",
+     "phone": "(860) 661-5904",
+     "email": "info@interiorpartitions.net",
+     "website": "http://interiorpartitions.net/",
+     "evidence_urls": [
+      "http://interiorpartitions.net/"
+     ],
+     "partition_evidence": "Services are general building and remodeling, drywall, framing, trim carpentry, siding, cabinetry; no toilet partitions.",
+     "reason": "Despite the name, it is a general building, drywall and carpentry company in Old Saybrook (not Meriden as listed); no toilet partition work shown.",
+     "red_flags": [
+      "Name refers to wall partitions/drywall, not toilet partitions",
+      "Base city differs from the compiled list (Old Saybrook, not Meriden)"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Russell Partition Co",
+     "base_city": "North Haven",
+     "state": "CT",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "nearby",
+     "evidence_urls": [
+      "https://naicslist.com/company-profile/russell-partition-co-llc-north-haven-ct-06473",
+      "https://www.beecherandbennett.com/obituaries/edgar-russell"
+     ],
+     "partition_evidence": "Only a business directory classifying it as a 'Showcase, Partition, Shelving & Locker Manufacturer'; no website or toilet partition work found.",
+     "reason": "No website or evidence of toilet partition installation; directory classification is generic and the founder died in 2008, so current activity is unconfirmed.",
+     "red_flags": [
+      "No website found",
+      "Activity unconfirmed"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "One Point Partitions",
+     "base_city": "Chicopee",
+     "state": "MA",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "yes",
+     "website": "https://onepointpartitions.com/",
+     "evidence_urls": [
+      "https://fxstaging.onepointpartitions.com/?p=2859",
+      "https://onepointpartitions.com/faqs/"
+     ],
+     "partition_evidence": "Search results from its own pages say it does not install partitions and offers self-install guidance; site itself blocked automated access (403).",
+     "reason": "National online partition seller (a direct competitor) that says it does not install; the 'Chicopee location' with a store code looks like a programmatic location page rather than a local business.",
+     "red_flags": [
+      "Direct competitor selling partitions online",
+      "Does not install",
+      "Location pages with store codes look like SEO pages, not real local offices"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "kdh Doors & Hardware",
+     "base_city": "unknown",
+     "state": "MA",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "no",
+     "phone": "508-407-8640",
+     "contact_page": "http://www.kdhdoors.com/contact-us",
+     "website": "http://www.kdhdoors.com/",
+     "evidence_urls": [
+      "http://www.kdhdoors.com/"
+     ],
+     "partition_evidence": "'We also supply toilet partitions & toilet accessories'; products are 'professionally installed by contractors', not by kdh.",
+     "reason": "Commercial door and hardware supplier that sells toilet partitions but does not say it installs them; base city not stated on the page read (listed as Auburn, MA, about 50 miles away, with no stated CT service area).",
+     "red_flags": [
+      "Supplier only: buy-around risk",
+      "Base city not confirmed"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "C & A Distributors Inc",
+     "base_city": "Newington",
+     "state": "CT",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "yes",
+     "phone": "860.666.2337",
+     "email": "sales@cadistributors.com",
+     "contact_page": "https://cadistributors.com/contact/",
+     "website": "https://cadistributors.com/",
+     "evidence_urls": [
+      "https://cadistributors.com/",
+      "https://cadistributors.com/bathroom-partitions/",
+      "https://cadistributors.com/contact/"
+     ],
+     "partition_evidence": "Partitions page: 'We will work with you to budget materials, deliver on time, and install expertly'; homepage: services 'from the start of design to the end with installation', 'Experienced Installers'.",
+     "reason": "Newington Division 10 supplier since 1982 that supplies and installs toilet partitions for general contractors, schools, towns, churches and office owners throughout Connecticut.",
+     "red_flags": [
+      "Sells partitions itself: buy-around risk",
+      "Homepage testimonials are placeholder lorem ipsum text"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "J. Sallese & Sons, Inc.",
+     "base_city": "Woburn",
+     "state": "MA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "regional",
+     "phone": "(781) 246-3508",
+     "email": "jsallese@jsallese.com",
+     "website": "https://www.jsallese.com/",
+     "evidence_urls": [
+      "https://www.jsallese.com/"
+     ],
+     "partition_evidence": "Homepage: 'providing, installing and repairing commercial lockers, metal storage shelving, restroom partitions, washroom accessories... for over 40 years'; Division 10 subcontractor; 'sales and installation... throughout New England'.",
+     "reason": "Woburn, MA Division 10 subcontractor (about 100 miles away) that installs restroom partitions and says it serves all of New England, mainly schools and colleges.",
+     "red_flags": [
+      "Sells partitions itself: buy-around risk",
+      "About 100 miles from Hartford; may not take small jobs that far"
+     ],
+     "added_by_checker": true
+    }
+   ]
+  },
+  {
+   "area": "providence",
+   "state": "RI",
+   "sources_tried": [
+    "Seed file providence.json: worked; mostly remodelers, glass shops and showrooms; plausible leads were Unlimited Specialties, Division 10 Specialties, Goldense, Newton Distributing, kdh Doors, G J Sales, United Installers (checked: residential carpentry, no partitions; excluded)",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but rep dropdown results not readable; no rep found",
+    "Scranton Products rep locator (/find-a-rep/): 404; Scranton Providence case study PDF names no installer",
+    "ASI/Global, Bradley, Hadrian, Metpar, General Partitions, Ammco locators: not reached (search cap; no locator URLs surfaced in search)",
+    "The Blue Book New England toilet partitions category and iProView profiles: 403 blocked",
+    "BuildingConnected / Procore: not tried (search cap)",
+    "AGC Massachusetts Div 10 Specialties member directory: worked (found Newton BSI; others checked were not partition installers: M.L. McDonald, Gleeson Powers)",
+    "bldup.com Granite State Specialties: 403 (used search snippet only)",
+    "BBB category pages (prod.bbb.org Whitman MA, Westerly RI partitions): 403 blocked",
+    "onepointpartitions.com and fxstaging mirror: 403 blocked",
+    "WebSearch: 8 of 8 used (RI Division 10 toilet partitions; Warwick/Cranston; Fall River/Brockton/New Bedford/Taunton; Granite State Specialties; manufacturer reps RI; RI subcontractor washroom accessories; Division 10 CT/MA serving RI; Providence/Pawtucket/East Providence/Attleboro/Seekonk). No RI-based dedicated partition installer surfaced.",
+    "Excluded after checking: Martin Bros (California), Unified Door & Hardware Group (NJ phone, no RI), Connecticut Restroom Specialties (Danbury CT, serves CT/western MA per snippet), 10 SPEC (NJ)"
+   ],
+   "found_count": 10,
+   "checked": [
+    {
+     "name": "Newton Building Specialties & Installation Inc (Newton BSI)",
+     "base_city": "Westborough",
+     "state": "MA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://www.newtonbsi.com/",
+     "phone": "508-439-4941",
+     "email": "sales@newtonbsi.com",
+     "contact_page": "https://www.newtonbsi.com/get-quote/",
+     "partition_evidence": "Projects page lists restroom partition stalls, solid phenolic and solid plastic toilet compartments installed for GCs (Lesley University, YMCA Boston, BU, Cambridge Athletic Club, Norfolk Agricultural HS); products page says 'supplying and installing toilet partitions'.",
+     "reason": "Division 10 supply-and-install subcontractor with documented commercial toilet partition jobs. Sister company Newton Distributing's page says Newton BSI handles bidding in all New England states including Rhode Island, and its project list includes a Warwick, RI job (accessories).",
+     "red_flags": [
+      "Supplies partitions itself (buy-around risk); sister company Newton Distributing sells partitions nationally",
+      "Site content dated 2017-2019"
+     ],
+     "evidence_urls": [
+      "https://www.newtonbsi.com/",
+      "https://www.newtonbsi.com/our-projects/",
+      "https://www.newtonbsi.com/products/",
+      "https://www.newtonbsi.com/get-quote/",
+      "https://www.newtondistributing.com/toilet-partitions-near-me/",
+      "https://members.agcmass.org/list/member/newton-building-specialties-installation-inc-914"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Unlimited Specialties Co., Inc.",
+     "base_city": "Quincy",
+     "state": "MA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "mostly",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "http://www.unlimitedspecialties1.com/",
+     "phone": "(617) 471-7070",
+     "email": "bobm@unlimitedspecialties1.com",
+     "contact_page": "http://www.unlimitedspecialties1.com/contactus.html",
+     "partition_evidence": "Homepage: Division 10 subcontractor that provides and installs toilet partitions (listed first), washroom accessories, lockers, mats and signage.",
+     "reason": "Division 10 subcontractor that provides and installs toilet partitions and says it has served New England communities for 38+ years. Rhode Island not named explicitly and commercial focus implied by Division 10 subcontracting rather than stated.",
+     "red_flags": [
+      "Supplies partitions itself (buy-around risk)",
+      "Service area only 'New England', RI not named",
+      "Emails listed are named individuals' addresses (bobm@/bobd@)"
+     ],
+     "evidence_urls": [
+      "http://www.unlimitedspecialties1.com/",
+      "http://www.unlimitedspecialties1.com/contactus.html"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Goldense Building Products Inc",
+     "base_city": "Norfolk",
+     "state": "MA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "nearby",
+     "brands": [],
+     "website": "https://goldensebuildingproducts.com/",
+     "phone": "508-384-2666",
+     "email": "paul@goldensebuildingproducts.com",
+     "contact_page": "https://goldensebuildingproducts.com/",
+     "partition_evidence": "Homepage lists 'Toilet Partitions & Accessories' as a product line and says the company 'distributes, fabricates and installs commercial building products' and aims to 'furnish and install those products'. No partition project photos seen.",
+     "reason": "Commercial furnish-and-install specialty firm about 25 miles from Providence, 'Licensed in Massachusetts & Rhode Island' with RI Contractor Registration #32367 shown on its site. Main line appears to be doors/frames/hardware; partition installation stated generally, not shown in projects.",
+     "red_flags": [
+      "Distributes partitions itself (buy-around risk)",
+      "Sparse site (portfolio mainly doors/churches; leftover 'Sample Page')",
+      "Only email is a named individual's address"
+     ],
+     "evidence_urls": [
+      "https://goldensebuildingproducts.com/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Division 10 Specialties, Inc.",
+     "base_city": "Pembroke",
+     "state": "MA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Bobrick",
+      "ASI Global Partitions",
+      "Bradley/Mills",
+      "Hadrian",
+      "Scranton"
+     ],
+     "website": "https://division10.net/",
+     "phone": "(781) 829-0546",
+     "email": "estimating@division10.net",
+     "contact_page": "https://division10.net/contact/",
+     "partition_evidence": "Woman-owned firm providing supply and installation of Division 10 products for commercial, institutional and government projects; suppliers page lists Bobrick, ASI Global, Bradley/Mills, Hadrian and Scranton partitions. No partition project photos read (gallery blocked).",
+     "reason": "Supply-and-install Division 10 contractor carrying several partition lines, but serves 'across Massachusetts' only; RI not mentioned. MA cities in the area (Brockton, Taunton, Fall River, New Bedford) are plausible; partition installation itself not shown.",
+     "red_flags": [
+      "Supplies partitions itself (buy-around risk)",
+      "Service area stated as Massachusetts only",
+      "Placeholder '0' counters on About page"
+     ],
+     "evidence_urls": [
+      "https://division10.net/",
+      "https://division10.net/about/",
+      "https://division10.net/suppliers/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Granite State Specialties LLC",
+     "base_city": "Raymond",
+     "state": "NH",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "brands": [],
+     "website": "",
+     "partition_evidence": "Only a search-result snippet of a bldup listing describing it as 'New England's leading supplier and installer of specialty construction products including toilet partitions'; the listing page itself returned 403 and no company website was found.",
+     "reason": "Possibly a New England Division 10 supplier/installer, but nothing was verified on a page I could read; about 85 miles from Providence and RI service not confirmed.",
+     "red_flags": [
+      "No website found",
+      "Evidence only from search snippets; BBB address/rating not read directly"
+     ],
+     "evidence_urls": [
+      "https://www.bldup.com/organizations/granite-state-specialties"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Newton Distributing Company",
+     "base_city": "Natick",
+     "state": "MA",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Hadrian",
+      "Scranton"
+     ],
+     "website": "https://www.newtondistributing.com/",
+     "phone": "877-837-7745",
+     "email": "sales@newtondistributing.com",
+     "contact_page": "https://www.newtondistributing.com/contact-newton/",
+     "partition_evidence": "Sells toilet partitions nationally; installation in New England is handled by its sister company Newton BSI (listed separately).",
+     "reason": "A partition distributor (direct competitor/buy-around risk), not the installer; its New England installation arm is Newton BSI, already covered.",
+     "red_flags": [
+      "Sells partitions nationwide (competitor)",
+      "Duplicate of Newton BSI"
+     ],
+     "evidence_urls": [
+      "https://www.newtondistributing.com/",
+      "https://www.newtondistributing.com/toilet-partitions-near-me/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "kdh Doors & Hardware",
+     "base_city": "Auburn",
+     "state": "MA",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "http://www.kdhdoors.com/",
+     "phone": "508-407-8640",
+     "contact_page": "http://www.kdhdoors.com/contact-us",
+     "partition_evidence": "Site says 'We also supply toilet partitions & toilet accessories' and that products are 'professionally installed by contractors'; no own installation.",
+     "reason": "Commercial door/frame/hardware supplier that supplies partitions but does not install them; no service area stated.",
+     "red_flags": [
+      "Supplier only (buy-around risk)"
+     ],
+     "evidence_urls": [
+      "http://www.kdhdoors.com/",
+      "http://www.kdhdoors.com/contact-us"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Kelley Bros.",
+     "base_city": "unknown",
+     "state": "MA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://www.kelleybros.com/",
+     "phone": "800-856-2550",
+     "contact_page": "https://www.kelleybros.com/contact-us/",
+     "partition_evidence": "Homepage mentions Division 10 and washroom accessories but not toilet partitions or their installation.",
+     "reason": "Multi-state Division 8/10/28 supplier focused on doors, hardware and access control; no partition installation evidence and no Rhode Island office.",
+     "red_flags": [
+      "Distributor, not a partition installer"
+     ],
+     "evidence_urls": [
+      "https://www.kelleybros.com/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "G J Sales Co",
+     "base_city": "Hope",
+     "state": "RI",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "website": "http://www.gjsalesco.com/",
+     "partition_evidence": "Website returned HTTP 503; a search for the company with toilet partitions found nothing.",
+     "reason": "No verifiable evidence of partition installation; site unavailable and no listings found.",
+     "red_flags": [
+      "Website down (503)",
+      "No online evidence found"
+     ],
+     "evidence_urls": [
+      "http://www.gjsalesco.com/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "One Point Partitions",
+     "base_city": "Seekonk",
+     "state": "MA",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "nearby",
+     "brands": [],
+     "website": "https://onepointpartitions.com/",
+     "partition_evidence": "Site blocked automated access (403); search results show it as a national online partition seller with DIY install guides and Rhode Island/Providence service-area sales pages.",
+     "reason": "An online partition retailer and direct competitor shipping nationwide with DIY installation, not an installer.",
+     "red_flags": [
+      "Direct competitor selling partitions online",
+      "Site blocked (403); details from search results only"
+     ],
+     "evidence_urls": [
+      "https://onepointpartitions.com/service-areas/rhode-island-bathroom-partitions/providence-bathroom-partitions/"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "worcester",
+   "state": "MA",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/worcester.json: worked (most maps hits irrelevant: remodelers, shower doors, stores)",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads but dropdown results not readable, no reps returned",
+    "Scranton Products find-a-rep: 404",
+    "ASI Global Partitions find-a-rep: redirect loop, not read",
+    "Bradley, Hadrian, Metpar, General Partitions, Ampco locators: not tried (search budget and time)",
+    "The Blue Book (thebluebook.com toilet partitions New England and iProView): blocked 403",
+    "BuildingConnected / Procore public profiles: not tried",
+    "AGC Massachusetts member directory: worked (Newton Building Specialties & Installation)",
+    "BLDUP: blocked 403 (snippet only)",
+    "BBB NH partitions category: worked",
+    "One Point Partitions: 403; search snippets say it ships partitions but doesn't install, so excluded",
+    "WebSearch: 8 of 8 used (Worcester, Division 10 MA, MA restroom partitions, nearby cities, New England specialties, Rhode Island/Woonsocket, Granite State Specialties); mostly surfaced distributors and bid documents",
+    "Company sites fetched: division10.net, ckgallagherinstallations.com, jsallese.com, goldensebuildingproducts.com, nedoors.com, kelleybros.com, newtondistributing.com, kdhdoors.com, unlimitedspecialties1.com, unitedinstallers.net (no partition mention, excluded), amppartitions.com; newtonbsi.com, restroomremodels.com and commercialdoorsonline.com returned empty content",
+    "Excluded: UDH Group (NJ-based, no NE service stated), Partition Plus (MD), Walsh Door (no partitions listed)"
+   ],
+   "found_count": 12,
+   "checked": [
+    {
+     "name": "Newton Building Specialties & Installation Inc",
+     "base_city": "Westborough",
+     "state": "MA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://www.newtonbsi.com/",
+     "phone": "508-439-4941",
+     "email": "sales@newtonbsi.com",
+     "contact_page": "https://www.newtonbsi.com/get-quote/",
+     "evidence_urls": [
+      "https://www.newtonbsi.com/",
+      "https://www.newtonbsi.com/products/",
+      "https://www.newtonbsi.com/get-quote/"
+     ],
+     "partition_evidence": "Products page: 'You can see our quality work for supplying and installing toilet partitions'; homepage lists toilet partitions as a specialty.",
+     "reason": "Division 10 supplier and installer based in Westborough, about 10 miles from Worcester, explicitly supplying and installing toilet partitions for commercial remodels.",
+     "red_flags": [
+      "Supplies partitions itself (buy-around risk)",
+      "Site content dated 2017-2019"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "New England Door Solutions",
+     "base_city": "Leominster",
+     "state": "MA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [
+      "Yale",
+      "USA Wood Door",
+      "ASSA Abloy"
+     ],
+     "website": "https://www.nedoors.com/",
+     "phone": "(978) 219-2613",
+     "contact_page": "https://www.nedoors.com/contact",
+     "evidence_urls": [
+      "https://www.nedoors.com/"
+     ],
+     "partition_evidence": "Site lists 'Commercial Bathroom Partitions' and says it can 'install new bathroom stalls'.",
+     "reason": "Commercial door contractor that installs bathroom stalls and lists Worcester and Leominster among service areas. Brands named are door brands, not partitions.",
+     "red_flags": [
+      "Headquarters address not stated on homepage",
+      "Primarily a door company"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "CK Gallagher Installations LLC",
+     "base_city": "Wilmington",
+     "state": "MA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://www.ckgallagherinstallations.com/",
+     "phone": "781-838-2726",
+     "email": "Ckgallagherinstall@gmail.com",
+     "contact_page": "https://www.ckgallagherinstallations.com/",
+     "evidence_urls": [
+      "https://www.ckgallagherinstallations.com/"
+     ],
+     "partition_evidence": "'Bathroom partition installation & repair' for metal, stainless, plastic, phenolic and laminate stalls.",
+     "reason": "Install-only commercial contractor (lockers, partitions, accessories) serving most of Massachusetts and neighboring states; no sign it sells partitions, so low buy-around risk.",
+     "red_flags": [
+      "Uses a Gmail address",
+      "No dedicated contact page"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "J. Sallese & Sons, Inc.",
+     "base_city": "Woburn",
+     "state": "MA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "http://www.jsallese.com/",
+     "phone": "(781) 246-3508",
+     "email": "jsallese@jsallese.com",
+     "contact_page": "http://www.jsallese.com/contact-us.html",
+     "evidence_urls": [
+      "http://www.jsallese.com/"
+     ],
+     "partition_evidence": "Sells, installs and repairs restroom partitions; Division 10 subcontractor for schools, colleges and GCs.",
+     "reason": "Long-running Division 10 subcontractor serving New England that installs restroom partitions; also sells them.",
+     "red_flags": [
+      "Sells partitions (buy-around risk)"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Division 10 Specialties, Inc.",
+     "base_city": "Pembroke",
+     "state": "MA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Bobrick",
+      "Scranton",
+      "Hadrian",
+      "ASI Global Partitions",
+      "Bradley/Mills Partitions"
+     ],
+     "website": "https://division10.net/",
+     "phone": "(781) 829-0546",
+     "email": "estimating@division10.net",
+     "contact_page": "https://division10.net/contact/",
+     "evidence_urls": [
+      "https://division10.net/",
+      "https://division10.net/services/",
+      "https://division10.net/suppliers/",
+      "https://division10.net/about/"
+     ],
+     "partition_evidence": "Services page lists toilet partitions and says the company will 'supply and install' construction materials including restroom partitions.",
+     "reason": "Supply-and-install Division 10 contractor serving commercial, institutional and government projects across Massachusetts, with major partition brands on its supplier list.",
+     "red_flags": [
+      "Supplies partitions (buy-around risk)",
+      "Installation not tied explicitly to partitions on the services page"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Unlimited Specialties Co",
+     "base_city": "Quincy",
+     "state": "MA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "mostly",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "http://www.unlimitedspecialties1.com/",
+     "phone": "(617) 471-7070",
+     "email": "bobm@unlimitedspecialties1.com",
+     "contact_page": "http://www.unlimitedspecialties1.com/contactus.html",
+     "evidence_urls": [
+      "http://www.unlimitedspecialties1.com/",
+      "http://www.unlimitedspecialties1.com/contactus.html"
+     ],
+     "partition_evidence": "Provides and installs Division 10 items including toilet partitions.",
+     "reason": "Division 10 subcontractor serving New England that provides and installs toilet partitions.",
+     "red_flags": [
+      "Supplies partitions as part of its service",
+      "Dated website"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Granite State Specialties LLC",
+     "base_city": "Raymond",
+     "state": "NH",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://www.granitestatespecialties.com/",
+     "phone": "(866) 966-9113",
+     "email": "info@granitestatespecialties.com",
+     "contact_page": "https://www.granitestatespecialties.com/request-a-quote/",
+     "evidence_urls": [
+      "https://www.granitestatespecialties.com/"
+     ],
+     "partition_evidence": "Toilet partitions is a featured product, and the site mentions installing toilet partitions.",
+     "reason": "Calls itself New England's leading supplier and installer of Division 10-12 specialties and works throughout the Northeast. It's about 70 miles from Worcester.",
+     "red_flags": [
+      "Supplier and installer (buy-around risk)",
+      "About 70 miles away"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Goldense Building Products Inc",
+     "base_city": "Norfolk",
+     "state": "MA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "nearby",
+     "brands": [],
+     "website": "https://goldensebuildingproducts.com/",
+     "phone": "508-384-2666",
+     "email": "paul@goldensebuildingproducts.com",
+     "contact_page": "https://goldensebuildingproducts.com/",
+     "evidence_urls": [
+      "https://goldensebuildingproducts.com/"
+     ],
+     "partition_evidence": "Lists 'Toilet Partitions & Accessories' as a product category and says it distributes, fabricates and installs commercial building products. No partition project shown.",
+     "reason": "A commercial door, hardware and life-safety distributor-installer that carries partitions. Partition installation isn't shown.",
+     "red_flags": [
+      "Distributor (buy-around risk)",
+      "Main focus is doors and life safety"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Newton Distributing Company",
+     "base_city": "Natick",
+     "state": "MA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "nearby",
+     "brands": [
+      "Hadrian",
+      "Scranton"
+     ],
+     "website": "https://www.newtondistributing.com/",
+     "phone": "877-837-7745",
+     "email": "sales@newtondistributing.com",
+     "contact_page": "https://www.newtondistributing.com/contact-newton/",
+     "evidence_urls": [
+      "https://www.newtondistributing.com/",
+      "https://www.newtondistributing.com/architects-electricians-installers/"
+     ],
+     "partition_evidence": "FAQ: 'Do you offer installation services?' 'Yes.' Sells toilet partitions in all materials with an online quote tool.",
+     "reason": "Primarily a partition seller with an online quote tool, so a direct competitor. Says it offers installation but shows no partition installs.",
+     "red_flags": [
+      "Direct partition seller and competitor (high buy-around risk)"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Kelley Bros (Boston office)",
+     "base_city": "Lakeville",
+     "state": "MA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "ASI Global Partitions",
+      "Scranton",
+      "Hadrian"
+     ],
+     "website": "https://www.kelleybros.com/",
+     "phone": "(774) 766-4180",
+     "contact_page": "https://www.kelleybros.com/contact-us/",
+     "evidence_urls": [
+      "https://www.kelleybros.com/",
+      "https://www.kelleybros.com/locations/",
+      "https://www.kelleybros.com/?p=3224"
+     ],
+     "partition_evidence": "Division 10 page lists Global, Scranton and Hadrian toilet partitions and offers a 'Turn Key Solution ... to the final Product Installation'. Partition installs aren't shown specifically.",
+     "reason": "Large door, hardware and Division 10 distributor with a Massachusetts office. It sells partitions; turnkey installation is mentioned but not shown for partitions.",
+     "red_flags": [
+      "Distributor of partitions (buy-around risk)",
+      "Large multi-state company, not a local installer"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "kdh Doors & Hardware",
+     "base_city": "unknown",
+     "state": "MA",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "nearby",
+     "brands": [],
+     "website": "http://www.kdhdoors.com/",
+     "phone": "508-407-8640",
+     "email": "tomd@kdhdoors.com",
+     "contact_page": "http://www.kdhdoors.com/contact-us",
+     "evidence_urls": [
+      "http://www.kdhdoors.com/"
+     ],
+     "partition_evidence": "Supplies toilet partitions and accessories; says products are 'professionally installed by contractors'.",
+     "reason": "A supplier, not an installer. Its base city isn't stated; only image alt text mentions Auburn and Worcester.",
+     "red_flags": [
+      "Supplier only",
+      "Base city unconfirmed"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "AMP Partitions",
+     "base_city": "unknown",
+     "state": "unknown",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "website": "https://amppartitions.com/",
+     "evidence_urls": [
+      "https://amppartitions.com/",
+      "https://amppartitions.com/contact"
+     ],
+     "partition_evidence": "The site only shows a project-type selector (bathroom, office, school, locker room, mikvah); no installation or location info.",
+     "reason": "No location, contact details or installation evidence on its site, and nothing ties it to Massachusetts.",
+     "red_flags": [
+      "No location or contact info",
+      "Unverifiable"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "honolulu",
+   "state": "HI",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/honolulu.json: read. Mostly remodelers, plumbers and stores. Only 'Creative Partition Systems' (Shioi Construction site) was plausible, and that site shows drywall, not toilet partitions.",
+    "Bobrick find-a-rep: blocked (JS dropdown, no results in fetched page). Found Bobrick's Hawaii distributor (Island Pacific Distributors) through web search instead.",
+    "Scranton Products where-to-buy: 503.",
+    "Bradley find-a-rep: page empty (JS).",
+    "Hadrian find-a-representative: 404.",
+    "ASI, Metpar, General Partitions, Ampco: not reached (locators are JS or the remaining fetches went to verifying local leads).",
+    "The Blue Book (thebluebook.com): 403 on direct fetch. The Division X Specialties listing was read only through search-result summaries.",
+    "BuildingConnected / Procore network: not tried (search cap).",
+    "BBB category pages (Aiea and Paia 'partition'): worked. They list only Commercial Shelving, Inc.",
+    "Yellow Pages Oahu 'commercial bathroom partition': worked. Lists only Waltz Engineering.",
+    "HomeAdvisor/Angi 'A1Partitions' (Waipahu address in snippet): 403.",
+    "Specialties Hawaii and Division X websites didn't resolve (DNS errors), possibly blocked by session network settings.",
+    "WebSearch: 8 of 8 used. The toilet-partition, Division 10, Oahu-suburb, Yelp/BBB and specialties queries all worked but found few local installers. One seller's Hawaii page says there are 'little to no full-service bathroom partition companies in Hawaii'.",
+    "Skipped as national or no local base: Prestige Distribution (claims installs in Hawaii through its network), CIH (Indianapolis, 'anywhere in the USA'), Newton Distributing (Natick MA, 'have had projects in the Honolulu area'), toiletpartitions.com, One Point Partitions."
+   ],
+   "found_count": 9,
+   "checked": [
+    {
+     "name": "Division X, Inc.",
+     "base_city": "Honolulu",
+     "state": "HI",
+     "verdict": "possible",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(808) 528-2448",
+     "website": "http://www.divisionxinc.com",
+     "evidence_urls": [
+      "https://governmentbidders.com/government-bidders/contractor-5400971-Division-X-Inc-.htm",
+      "https://naicslist.com/company-profile/division-x-incorporated-honolulu-hi-96822"
+     ],
+     "partition_evidence": "None seen. Two directory listings put it in Honolulu under NAICS 423390, 'other construction material merchant wholesalers'. The name suggests Division 10, but none of the pages I read confirmed that. Its website did not resolve.",
+     "red_flags": [
+      "Website divisionxinc.com does not resolve (DNS failure)",
+      "Only directory listings found, and they class it as a wholesaler; it may supply partitions rather than install them (buy-around risk)",
+      "The Blue Book 'Division X Specialties' name came from the compiler; I did not verify it"
+     ],
+     "reason": "This is the only Honolulu candidate whose name points to Division 10 specialties. I found no proof that it installs partitions, its website is down, and the directories class it as a wholesaler. Confirm by phone and through the DCCA license lookup.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Specialties Hawaii",
+     "base_city": "Waianae",
+     "state": "HI",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://www.specialtieshawaii.net/",
+     "evidence_urls": [],
+     "partition_evidence": "The website could not be reached (the proxy returned a 502 / host not resolved), and a web search found no listing under this name.",
+     "red_flags": [
+      "Website unreachable",
+      "No independent listing found"
+     ],
+     "reason": "I could not verify that this business exists or what it does. Recheck it if the website comes back online.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Commercial Shelving, Inc. (CSI Builders)",
+     "base_city": "Honolulu",
+     "state": "HI",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(808) 836-3811",
+     "email": "info@csibuildershawaii.com",
+     "website": "https://www.commercialshelving.com",
+     "evidence_urls": [
+      "https://www.commercialshelving.com",
+      "https://www.commercialshelving.com/commercial-shelving"
+     ],
+     "partition_evidence": "Its services are pallet racking, boltless shelving, cold storage, warehouse builds, tenant improvements, general contracting, roll-up doors and dock levelers. Toilet partitions are not mentioned.",
+     "red_flags": [],
+     "reason": "A commercial material-handling and warehouse contractor. I found no partition or Division 10 restroom work.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Island Pacific Distributors (Island Pacific Installers)",
+     "base_city": "Honolulu",
+     "state": "HI",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [
+      "Sargent",
+      "Cornell",
+      "ASSA ABLOY",
+      "MM Systems",
+      "Smoke Guard",
+      "Total Door"
+     ],
+     "phone": "(808) 955-1126",
+     "email": "info@ipdhawaii.com",
+     "contact_page": "https://ipdhawaii.com/contact/",
+     "website": "https://ipdhawaii.com/",
+     "evidence_urls": [
+      "https://ipdhawaii.com/",
+      "https://ipdhawaii.com/installation/"
+     ],
+     "partition_evidence": "Its installation page covers metal doors and frames, architectural hardware, access control, automatic openers, rolling and grille doors and expansion joints. Toilet partitions are not mentioned.",
+     "red_flags": [],
+     "reason": "An architectural door-hardware distributor and installer. Its installation scope does not include toilet partitions or washroom accessories.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Waltz Engineering Inc",
+     "base_city": "Honolulu",
+     "state": "HI",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [
+      "Global IFS",
+      "Kwik-Wall"
+     ],
+     "phone": "(808) 842-7955",
+     "email": "info@waltzengineering.com",
+     "contact_page": "http://www.waltzengineering.com/contact.html",
+     "website": "http://www.waltzengineering.com",
+     "evidence_urls": [
+      "http://www.waltzengineering.com",
+      "http://www.waltzengineering.com/interiors.html",
+      "https://www.yellowpages.com/oahu-hi/commercial-bathroom-partition"
+     ],
+     "partition_evidence": "Its 'partitions' are operable walls and folding or accordion partitions, plus access flooring. YellowPages lists it under a partitions category, but its own site shows no toilet partitions.",
+     "red_flags": [
+      "Probably listed for operable walls, not toilet partitions"
+     ],
+     "reason": "It installs operable walls and access flooring and also works on laundry equipment and boilers. I found no restroom partition work.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Creative Partition Systems / Shioi Construction, Inc.",
+     "base_city": "Pearl City",
+     "state": "HI",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(808) 487-2441",
+     "email": "shioihawaii@shioi.com",
+     "contact_page": "https://www.shioihawaii.com/contact",
+     "website": "http://shioihawaii.com/",
+     "evidence_urls": [
+      "http://shioihawaii.com/",
+      "https://www.shioihawaii.com/services",
+      "https://www.mapquest.com/us/hawaii/creative-partition-systems-419107012"
+     ],
+     "partition_evidence": "Shioi is a general contractor whose self-performed trades include metal framing, drywall and plastering. Search results describe Creative Partition Systems (Lihue) as a drywall contractor. Neither shows toilet partition work.",
+     "red_flags": [
+      "'Partition' in the name refers to drywall or stud partitions"
+     ],
+     "reason": "A general contractor and drywall business with offices on Oahu (Pearl City) and Kauai. Its services list no toilet partitions or Division 10 work.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Hawaii Materials",
+     "base_city": "unknown",
+     "state": "HI",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://www.hawaiimaterials.com/",
+     "evidence_urls": [
+      "https://www.hawaiimaterials.com/commercial-restroom-partitions-washroom-accessories"
+     ],
+     "partition_evidence": "A search snippet of its partitions page described it as a wholesale supplier and logistics coordinator for toilet partitions and washroom accessories on Oahu and the other islands, not an installer. The site now returns a Wix 'ConnectYourDomain' 404 error, so I could not read the page itself.",
+     "red_flags": [
+      "Website domain disconnected (Wix 404); the business may be inactive",
+      "A supplier of partitions, not an installer (buy-around risk)",
+      "Base city unknown; 'within area' rests only on the search snippet about Oahu"
+     ],
+     "reason": "It appears to supply partitions rather than install them, and its website is no longer live.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Hawaii Partition Systems Inc",
+     "base_city": "Lawai (Kauai)",
+     "state": "HI",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "evidence_urls": [
+      "https://bbb.org/us/hi/lihue/category/drywall-contractors",
+      "https://prod.bbb.org/us/hi/kapaa/category/construction"
+     ],
+     "partition_evidence": "BBB lists it under the steel, general contractor and drywall categories, with a Kauai County service area. I found no toilet partition work.",
+     "red_flags": [
+      "No website",
+      "Its BBB categories suggest drywall or stud partitions",
+      "Its listed service area is Kauai County, not Oahu"
+     ],
+     "reason": "It looks like a Kauai drywall and general contractor with no stated Oahu service and no evidence of restroom partition work.",
+     "added_by_checker": false
+    },
+    {
+     "name": "HPM Building Supply, Design Centers Projects Division",
+     "base_city": "Honolulu",
+     "state": "HI",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "mostly",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [
+      "Ernestomeda",
+      "SmartCucina",
+      "VECO",
+      "Avenue",
+      "Gaggenau",
+      "Thermador",
+      "Bosch",
+      "KitchenAid",
+      "Maytag",
+      "Miele",
+      "Samsung",
+      "Whirlpool"
+     ],
+     "phone": "(808) 791-9870",
+     "website": "https://www.hpmhawaii.com/design-centers-projects-division",
+     "evidence_urls": [
+      "https://www.hpmhawaii.com/design-centers-projects-division"
+     ],
+     "partition_evidence": "The division covers custom cabinetry, architectural elements and appliances. Toilet partitions are not mentioned.",
+     "red_flags": [],
+     "reason": "A cabinetry and appliance projects division. I found no partition or Division 10 work.",
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "anchorage",
+   "state": "AK",
+   "sources_tried": [
+    "Seed file anchorage.json: read. Mostly remodelers, plumbers, HVAC and big-box stores, all skipped. The plausible ones were Commercial Contractors Inc (site unreadable: empty JavaScript page), E&D Contracting (read, no partition mention), K&W Interiors (residential kitchen and bath, skipped), Pacific Partition Systems Alaska (only a Google redirect, no site found). Division 10 Specialties Inc is based in Pembroke, MA, so it's out of area.",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded, but the rep list is in a dropdown that wasn't readable; no Alaska rep found",
+    "Scranton Products where-to-buy: worked; lists only a regional Product Specialist covering AK (no Alaska dealer or installer named)",
+    "ASI find-a-rep (asi-group.com/find-a-rep): 404",
+    "Hadrian find-a-rep: 404",
+    "Bradley find-a-rep: page loaded without content (needs JavaScript)",
+    "General Partitions: blocked by Cloudflare",
+    "Metpar: homepage loaded, no dealer locator content",
+    "Ampco/Ammco: not tried (search and time budget)",
+    "The Blue Book (thebluebook.com search): 403 blocked",
+    "BuildingConnected / Procore public profiles: not tried",
+    "Alaska Business magazine construction directories (digital.akbizmag.com, March 2020 and 2021): worked. Source of Architectural Supply Co. and Door Systems of Alaska; Aurora Construction Supply (Fairbanks, Division 10 supplier) skipped as more than 120 miles away",
+    "Alaska Contractor magazine AGC renovation article: worked",
+    "WebSearch: 8 of 8 used. Queries: Pacific Partition Systems name (twice), Division 10 Anchorage (twice), toilet compartments Anchorage, Commercial Contractors, Wasilla/Palmer partitions, toilet partitions supply Anchorage. They mostly returned bid specs, national distributors and residential remodelers; no dedicated Anchorage toilet partition installer surfaced. Some search summaries attributed listings to the wrong company (for example True Value, Spire, Arctic Controls); I left those out because the directory page itself credits the description to Architectural Supply Co.",
+    "Yelp / BBB: not reached within the search cap; BBB category pages showed up only as residential remodel categories",
+    "Prestige Distribution installer network (Chicago/Dallas, claims Alaska installs): skipped as a national network with no local base"
+   ],
+   "found_count": 5,
+   "checked": [
+    {
+     "name": "Architectural Supply Co.",
+     "base_city": "Anchorage",
+     "state": "AK",
+     "verdict": "possible",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "907-561-1919",
+     "website": "archialaska.com",
+     "evidence_urls": [
+      "https://digital.akbizmag.com/issue/march-2020/construction-directory/"
+     ],
+     "partition_evidence": "Alaska Business 2020 construction directory: 'Supplier of division 8 and 10-commercial doors, frames, hardware, toilet partitions, and toilet accessories.' No installation stated.",
+     "reason": "Real Anchorage Division 8/10 supplier (5 staff, est. 1977) that sells toilet partitions, but nothing read shows it installs them; its own site returned 503 and could not be read.",
+     "red_flags": [
+      "Sells toilet partitions itself (buy-around risk)",
+      "Installation not shown",
+      "Own website not readable (503)",
+      "2020 directory data may be dated"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Pacific Partition Systems Alaska",
+     "base_city": "unknown",
+     "state": "AK",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "reason": "A web search for the name with Alaska returned no business by that name; no website or listing found.",
+     "red_flags": [
+      "No evidence the business exists"
+     ],
+     "evidence_urls": [],
+     "added_by_checker": false
+    },
+    {
+     "name": "Commercial Contractors, Inc.",
+     "base_city": "Anchorage",
+     "state": "AK",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "website": "http://www.alaskacci.com/",
+     "evidence_urls": [
+      "https://alaskacontractor.akbizmag.com/issue/summer-2026/investing-in-the-future/"
+     ],
+     "partition_evidence": "Listed only as a project partner on an AGC of Alaska office renovation that included restroom partitions; the article doesn't say who supplied or installed them.",
+     "reason": "Its website returned no readable content, and no source shows toilet partition work. The only mention is as an unspecified project partner.",
+     "red_flags": [
+      "Website content unreadable",
+      "Role on partition work unknown"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Door Systems of Alaska",
+     "base_city": "Chugiak",
+     "state": "AK",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "nearby",
+     "brands": [
+      "Modernfold",
+      "Skyfold"
+     ],
+     "phone": "907-688-3367",
+     "website": "https://doorsystemsak.com/",
+     "evidence_urls": [
+      "https://digital.akbizmag.com/issue/march-2020/construction-directory/"
+     ],
+     "partition_evidence": "Directory lists Modernfold accordion and flat-wall partitions and Skyfold vertical partitions (operable room dividers), not toilet partitions.",
+     "reason": "A commercial and garage door company whose 'partitions' are operable room dividers; no toilet partition or Division 10 restroom work found. Its own site returned no readable content.",
+     "red_flags": [
+      "Operable walls only, not restroom partitions"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "E&D Contracting LLC",
+     "base_city": "Anchorage",
+     "state": "AK",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "phone": "907-277-2222",
+     "email": "info@alaskacontractor.net",
+     "contact_page": "https://www.alaskacontractor.net/contact",
+     "website": "https://www.alaskacontractor.net/",
+     "evidence_urls": [
+      "https://www.alaskacontractor.net/",
+      "https://www.alaskacontractor.net/capabilities"
+     ],
+     "partition_evidence": "Its services are water and sewer, home installation, underground utilities, site prep, pile driving and demolition. No interior specialties are listed.",
+     "reason": "A civil, site and industrial contractor with no interior or Division 10 work.",
+     "red_flags": [
+      "The page's mailto link points to info@mysite.com, a template leftover"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Architectural Hardware Supply, Inc.",
+     "base_city": "Anchorage",
+     "state": "AK",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "phone": "(907) 522-0234",
+     "contact_page": "http://ahs-alaska.biz/contact",
+     "website": "http://ahs-alaska.biz/",
+     "evidence_urls": [
+      "http://ahs-alaska.biz/",
+      "http://ahs-alaska.biz/contact",
+      "https://govconinabox.com/explore/smb-federal-contractors/architectural-hardware-supply-inc-QFJGVLQN9SC3",
+      "https://aksbdc.org/success_stories/architechtural-hardware-supply/"
+     ],
+     "partition_evidence": "Own site lists 'Restroom Partitions & Accessories'. A federal contractor listing names toilet partitions and toilet accessories along with 'supply, installation, and service'. The SBDC profile says its products are 'furnished, installed and serviced' on Alaska government and institutional projects, such as Anchorage School District work.",
+     "reason": "An Anchorage Division 8/10 specialty contractor that furnishes and installs specialty products and lists restroom partitions. No project or photo shows toilet partition installation specifically.",
+     "red_flags": [
+      "Supplies partitions itself (buy-around risk)",
+      "Mostly government/institutional bid work",
+      "Partition installation not shown in projects or photos"
+     ],
+     "added_by_checker": true
+    }
+   ]
+  },
+  {
+   "area": "boise",
+   "state": "ID",
+   "sources_tried": [
+    "Seed file boise.json: worked. Of the maps results, SBI Contracting, D-10 Contracting and Midwest D-Vision were relevant. The rest were bathroom remodelers, glass shops, plumbers, stores and portable toilet rentals. Barrier Free Architecturals (Meridian) sells ADA showers and doesn't mention partitions. SCS Signs & Stripes and Specialty Construction Supply (Meridian) do striping and site supplies, not partitions. Interior Systems Inc's site is under construction and lists no services. Corporate Office Installations does office furniture only. Gatsby Glass does glass walls only.",
+    "sbicontractinginc.com: the www host returned 503; the bare domain worked",
+    "Bobrick sales rep locator (bobrick.com/sales-representatives/): 404",
+    "Hadrian find-a-rep (hadrian-inc.com/en-us/find-a-rep): 404",
+    "Scranton Products find-a-rep: 404",
+    "ASI, Bradley, Metpar, General Partitions, Ampco locators: not reached (no working locator URL found within the search budget)",
+    "The Blue Book: thebluebook.com search and iProView pages blocked (403). A web search found only a Boise portable-toilet listing.",
+    "BuildingConnected / Procore public profiles: not reached within the search cap",
+    "Web search (8 of 8 used): turned up mostly national online sellers. Partition Pros (NY phone, nationwide installer network), One Point Partitions (Boise delivery terminal only, says it doesn't install), Newton Distributing (Natick MA, 'installers on call' for Boise/Nampa) and Prestige Distribution were all excluded as national sellers with no local base.",
+    "Beacon (beaconcdl.com, South Salt Lake UT, 801-486-4884): supplies and installs Division 10 including bathroom partitions and says it serves Idaho. Excluded because it is about 340 miles away, beyond the 120-mile limit. It may still be worth adding as a regional prospect.",
+    "Cook & Boardman (cbxsolutions.com): 403 blocked, and no Idaho location confirmed",
+    "Yelp/BBB: no Boise partition-installer listings surfaced through search",
+    "CDH Idaho bathroom remodel bid Q&A PDF: no readable company names"
+   ],
+   "found_count": 3,
+   "checked": [
+    {
+     "name": "SBI Contracting Inc (SBI Partitions & Accessories)",
+     "added_by_checker": false,
+     "base_city": "Boise",
+     "state": "ID",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Hadrian",
+      "Bobrick",
+      "Scranton Products",
+      "Mills",
+      "Global Stainless Steel",
+      "Bradley",
+      "PVS"
+     ],
+     "phone": "208-376-5200",
+     "email": "customerservice@sbicontractinginc.com",
+     "contact_page": "https://sbicontractinginc.com/contact/",
+     "website": "https://sbicontractinginc.com/",
+     "evidence_urls": [
+      "https://sbicontractinginc.com/",
+      "https://sbicontractinginc.com/about/",
+      "https://sbicontractinginc.com/services/",
+      "https://sbicontractinginc.com/toilet-partitions/",
+      "https://sbicontractinginc.com/contact/"
+     ],
+     "partition_evidence": "Self-described Division 10 specialty construction company for commercial bathrooms; services page says it takes projects from design to completion including measuring and installation, and toilet partitions are a main product line; homepage testimonial mentions restroom stall work; about page cites expert installation and partition layout/ADA assistance.",
+     "red_flags": [
+      "Major buy-around risk: stocks Hadrian partitions in a 12,000 sq ft Boise warehouse and resells Bobrick, Scranton and other brands",
+      "Installation is stated in general terms; no partition-specific project gallery seen",
+      "One MapQuest listing reportedly marks a business 'Closed' (not verified; website is active and updated Nov 2026)"
+     ],
+     "reason": "Boise-based Division 10 contractor that supplies and installs commercial restroom partitions in the Treasure Valley. Qualifies as an installer but is also a direct partitions distributor, so it competes with Next Partitions on supply."
+    },
+    {
+     "name": "D-10 Contracting Inc",
+     "added_by_checker": false,
+     "base_city": "Meridian",
+     "state": "ID",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(208) 936-4775",
+     "contact_page": "https://d-10contracting.com/contact-us",
+     "website": "https://d-10contracting.com/",
+     "evidence_urls": [
+      "https://d-10contracting.com/",
+      "https://d-10contracting.com/division-10-specialties"
+     ],
+     "partition_evidence": "Division 10 specialties page offers bathroom partitions and bathroom accessories for commercial buildings (schools, offices, public facilities) along with installation by its installers.",
+     "red_flags": [
+      "Site shows two different phone numbers: (208) 936-4475 on the quote link and (208) 936-4775 in the footer",
+      "No project photos or brands named",
+      "Also does window coverings and patio shades; it supplies the products it installs"
+     ],
+     "reason": "Meridian Division 10 contractor whose site lists commercial bathroom partitions with installation. No project photos seen, but its services clearly include partition supply and install."
+    },
+    {
+     "name": "Midwest D-Vision Solutions (MWDS)",
+     "added_by_checker": false,
+     "base_city": "Boise",
+     "state": "ID",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "mostly",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "208-505-6333",
+     "contact_page": "https://www.mwdsidaho.com/contact",
+     "website": "https://www.mwdsidaho.com/",
+     "evidence_urls": [
+      "https://www.mwdsidaho.com/",
+      "https://www.mwdsidaho.com/projects",
+      "https://www.mwdsidaho.com/contact"
+     ],
+     "partition_evidence": "Products list includes toilet compartments/partitions and washroom accessories; projects page shows three projects tagged 'Bathroom Partitions, Tile, Accessories' (Instructure, Corporate Office, Chevron) but doesn't say whether it installed them.",
+     "red_flags": [
+      "Projects page refers to the 'local Utah general contracting and architectural community' and lists Utah-type clients, so the project list may be copied from another company's site",
+      "No statement that it installs rather than supplies",
+      "Architectural products supplier, so it sells partitions itself"
+     ],
+     "reason": "Boise architectural products company listing toilet partitions and some partition projects, but installation isn't confirmed and the project list looks borrowed from a Utah template."
+    }
+   ]
+  },
+  {
+   "area": "spokane",
+   "state": "WA",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/spokane.json: read. The Maps results are mostly remodelers, plumbers and portable toilets. Only Western Partitions and DSI were plausible, and neither site shows toilet partitions.",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): the page loaded, but the rep list is rendered by JavaScript, so no data came back.",
+    "Bradley find-a-rep (bradleycorp.com/find-a-rep): no data came back (JavaScript-only page).",
+    "Scranton Products find-a-rep: 404.",
+    "ASI / Global Partitions locator (globalpartitions.com): host did not resolve (blocked by the session network).",
+    "Hadrian rep locator: 404. Metpar, General Partitions and Ampco/Ammco were not tried after the other locators failed.",
+    "The Blue Book (thebluebook.com): all profile pages returned 403. The Dupree profile was seen only as a search snippet.",
+    "BuildingConnected / Procore: not tried. Public profiles need sign-in or JavaScript.",
+    "Hermiston School District contractor and vendor list (hermiston.k12.or.us/15350_4): worked. This was the best source, naming Dupree (toilet partitions), Affordable Specialities & Supply (toilet accessories) and Kilgore (operable partitions).",
+    "WebSearch: 8 of 8 used (Dupree; Spokane Valley building specialties; Blue Book Division 10 Spokane; Coeur d'Alene partition installers; Division 10 subcontractor Spokane; 'Building Specialties' Spokane Valley; eastern WA Division 10 contractors). Results were dominated by national online sellers.",
+    "Excluded as national sellers or non-local: One Point Partitions (Spokane freight terminal only; its pages returned 403), Partition Plus (Maryland), ToiletPartitions.com / Fry Specialty (San Diego/AZ), GCS Inc (Mobile, AL), Building Specialties Northwest (Mercer Island, WA, about 270 miles away; sells and installs toilet partitions per its Florence dealer page; phone 425-486-3693), Southwest Solutions Group (movable walls; its page did not load).",
+    "Blocked: dupreebuildingspecialties.com and kilgorearchitectural.com did not resolve (they may not exist or may be blocked by the network); buildzoom.com returned 403; linkedin.com returned 403.",
+    "Yelp and BBB: not reached within the search cap."
+   ],
+   "found_count": 5,
+   "checked": [
+    {
+     "name": "Dupree Building Specialties",
+     "base_city": "Spokane",
+     "state": "WA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "ASI Global Partitions",
+      "Bobrick",
+      "Bradley",
+      "Scranton Products",
+      "American Specialties Inc.",
+      "Gamco",
+      "Pamex",
+      "Modernfold",
+      "Skyfold",
+      "Smoke Guard",
+      "Solatube"
+     ],
+     "website": "https://dupreebldg.com/",
+     "phone": "509.484.2000",
+     "email": "info@dupreebldg.com",
+     "contact_page": "https://dupreebldg.com/contact-us/",
+     "evidence_urls": [
+      "https://dupreebldg.com/",
+      "https://dupreebldg.com/products/",
+      "https://dupreebldg.com/contact-us/",
+      "https://incfact.com/company/leslieenterprisesdbadupreebuildingspecialties-spokane-wa/"
+     ],
+     "partition_evidence": "Products page lists Division 10 toilet compartments (102113) from ASI Global Partitions, Bobrick, Bradley and Scranton plus washroom accessories; homepage lists design, sales, installation and service with manufacturer-trained field technicians. No page or photo shows partition installation specifically.",
+     "red_flags": [
+      "Is a dealer of the same brands Next Partitions resells (ASI, Bobrick, Bradley, Scranton): high buy-around/competitor risk",
+      "No project photos of restroom partition installs found"
+     ],
+     "reason": "Established Spokane Division 10 specialties dealer (since 1968) that sells toilet compartments and offers installation with field technicians, but partition installation itself is not shown. It is also a direct competitor selling the same brands.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Kilgore Architectural Products",
+     "base_city": "Spokane Valley",
+     "state": "WA",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "website": "",
+     "evidence_urls": [
+      "https://phoenix.aws.mapquest.com/us/washington/kilgore-architectural-products-12753382",
+      "https://www.spokanejournal.com/articles/16013-distribution-in-construction-industry",
+      "https://www.regionaldirectory.us/wa/3464254.htm"
+     ],
+     "partition_evidence": "None. Listings describe furnishing and installing building-envelope products (louvers, equipment screens, glass canopies, translucent wall panels, skylights).",
+     "red_flags": [
+      "MapQuest listing shows the business as Closed; regional directory says it may have ceased operations",
+      "No company website found"
+     ],
+     "reason": "Building-envelope specialty contractor with no toilet partition work found, and listings suggest it may be closed.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Affordable Specialities & Supply",
+     "base_city": "Kennewick",
+     "state": "WA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "website": "",
+     "evidence_urls": [],
+     "partition_evidence": "Not found. Two searches turned up no business by this name, and the guessed domain affordablespecialties.com did not resolve.",
+     "red_flags": [
+      "Could not confirm the business exists",
+      "Kennewick is about 120+ miles from Spokane, with no evidence that it serves the Spokane area"
+     ],
+     "reason": "No website, listing or evidence of partition work could be found. If it exists, it is at the edge of the regional radius and nothing shows it serves Spokane.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Western Partitions, Inc. (WPI)",
+     "base_city": "Spokane Valley",
+     "state": "WA",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [
+      "WPI PreFab"
+     ],
+     "website": "http://wpibuilds.com/",
+     "phone": "",
+     "email": "",
+     "contact_page": "https://wpibuilds.com/contact/",
+     "evidence_urls": [
+      "http://wpibuilds.com/"
+     ],
+     "partition_evidence": "None. 'Partitions' refers to wall systems; services are core subcontracting, prefabricated exterior wall systems and preconstruction. No toilet partitions or Division 10 work.",
+     "red_flags": [
+      "Large multi-state wall/framing subcontractor headquartered in Oregon, not a toilet partition installer"
+     ],
+     "reason": "WPI is a large framing and wall-systems subcontractor with a Spokane office. Its site shows no toilet partition or Division 10 work.",
+     "added_by_checker": false
+    },
+    {
+     "name": "DSI Construction",
+     "base_city": "Spokane",
+     "state": "WA",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [],
+     "website": "http://dsiconstruction.net/",
+     "phone": "509.482.7455",
+     "email": "info@dsiconstruction.net",
+     "contact_page": "http://dsiconstruction.net/",
+     "evidence_urls": [
+      "http://dsiconstruction.net/"
+     ],
+     "partition_evidence": "None. Services are drywall, steel stud framing, acoustical ceilings, taping and finishing, and exterior finishes.",
+     "red_flags": [
+      "Drywall/framing contractor, not Division 10"
+     ],
+     "reason": "Commercial drywall and framing contractor in Spokane with no toilet partition or Division 10 work on its site.",
+     "added_by_checker": false
+    }
+   ]
+  }
+ ],
+ "licenses": [
+  {
+   "state": "NY",
+   "results": [
+    {
+     "name": "J&R Specialties Inc",
+     "area": "rochester",
+     "status": "not_required_online_check",
+     "registry": "None applies: New York has no statewide contractor license for this work; City of Rochester (Bureau of Zoning & Permitting) sets no general contractor license",
+     "note": "Checked 2026-11-19. Under the area rule, partition installation needs no state or Rochester city contractor license, so there is no license registry to look up. The base city is Akron NY, which is outside Rochester. Rochester permit forms ask for job-specific NYS workers' comp proof (C-105.2/U-26.3, CE-200 exemption) with each permit, and require licensed contractors only for plumbing and electrical work (seen in search-result summaries of cityofrochester.gov permit PDFs; the PDF itself returned 403 when fetched). No NY DOS entity search was run because that site is a script-driven app.",
+     "source_url": "https://cityofrochester.gov/sites/default/files/2024-11/Interior-exterior%20work%20OCTOBER%202024.pdf"
+    },
+    {
+     "name": "Weswood Specialties, Inc.",
+     "area": "rochester",
+     "status": "not_required_online_check",
+     "registry": "None applies: New York has no statewide contractor license for this work; City of Rochester (Bureau of Zoning & Permitting) sets no general contractor license",
+     "note": "Checked 2026-11-19. Under the area rule there is no state or Rochester city license registry for partition installation. The base city is Farmington NY. For work inside Rochester city limits, the city asks for NYS workers' comp proof with each permit. No entity search was run.",
+     "source_url": "https://cityofrochester.gov/sites/default/files/2024-11/Interior-exterior%20work%20OCTOBER%202024.pdf"
+    },
+    {
+     "name": "McClain Associates Inc.",
+     "area": "rochester",
+     "status": "not_required_online_check",
+     "registry": "None applies: New York has no statewide contractor license for this work; City of Rochester (Bureau of Zoning & Permitting) sets no general contractor license",
+     "note": "Checked 2026-11-19. The business is based in Rochester. Neither the state nor the city has a general contractor license registry that covers partition installation. Each Rochester permit needs job-specific NYS workers' comp proof. No entity search was run.",
+     "source_url": "https://cityofrochester.gov/sites/default/files/2024-11/Interior-exterior%20work%20OCTOBER%202024.pdf"
+    },
+    {
+     "name": "JP Construction Specialties, LLC",
+     "area": "rochester",
+     "status": "not_required_online_check",
+     "registry": "None applies: New York has no statewide contractor license for this work; City of Rochester (Bureau of Zoning & Permitting) sets no general contractor license",
+     "note": "Checked 2026-11-19. The business is based in Syracuse and listed for the Rochester area. There is no state or Rochester license registry for this work. Syracuse's own local rules were not part of this area's rule and were not researched. No entity search was run.",
+     "source_url": "https://cityofrochester.gov/sites/default/files/2024-11/Interior-exterior%20work%20OCTOBER%202024.pdf"
+    },
+    {
+     "name": "Kelley Bros",
+     "area": "rochester",
+     "status": "not_required_online_check",
+     "registry": "None applies: New York has no statewide contractor license for this work; City of Rochester (Bureau of Zoning & Permitting) sets no general contractor license",
+     "note": "Checked 2026-11-19. The business is based in Syracuse and listed for the Rochester area. There is no state or Rochester license registry for this work. Syracuse's local rules were not researched. No entity search was run.",
+     "source_url": "https://cityofrochester.gov/sites/default/files/2024-11/Interior-exterior%20work%20OCTOBER%202024.pdf"
+    }
+   ],
+   "registries": [
+    "New York State: no statewide contractor licensing agency for partition installation (NYC DOB covers NYC only), so there was no state lookup to run.",
+    "City of Rochester Bureau of Zoning & Permitting: one web search found the city's permit-form PDFs. They require NYS workers' comp proof with each permit and licensed contractors for plumbing and electrical work only, with no general contractor license or registry. Fetching the PDF directly returned HTTP 403, so the details come from the search-result summary.",
+    "NY Department of State business entity search: not used (script-driven app; optional for this task).",
+    "Web searches used: 1 of 5."
+   ]
+  },
+  {
+   "state": "CT",
+   "results": [
+    {
+     "name": "Partitions Inc",
+     "area": "hartford",
+     "status": "not_required_online_check",
+     "registry": "None required: Connecticut Department of Consumer Protection (no state license for this work per research/state-licensing) and City of Hartford (no city contractor license or registration per municipal code)",
+     "note": "Base city East Hartford. Neither Connecticut nor Hartford requires a license or registration for partition installation, per the area rules supplied. No registry lookup was run. The CT eLicense public lookup (DCP) exists but searches only by form postback and was not used. Not checked: DCP Major Contractor registration, which only applies to some commercial structural work, and the Home Improvement Contractor registration (residential). Confirm with DCP if a job falls under either.",
+     "source_url": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx"
+    },
+    {
+     "name": "CSNE LLC (Construction Specialties of New England, LLC)",
+     "area": "hartford",
+     "status": "not_required_online_check",
+     "registry": "None required: Connecticut Department of Consumer Protection (no state license for this work) and City of Hartford (no city contractor license or registration)",
+     "note": "Base city South Windsor. Neither the state nor the city requires a license for this work, per the area rules supplied. No lookup was run. Optional: search the CT eLicense lookup by business name (it needs a form postback, so it wasn't automated).",
+     "source_url": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx"
+    },
+    {
+     "name": "West Hartford Lock & Lindquist Doors and Hardware",
+     "area": "hartford",
+     "status": "not_required_online_check",
+     "registry": "None required: Connecticut Department of Consumer Protection (no state license for this work) and City of Hartford (no city contractor license or registration)",
+     "note": "Base city West Hartford. Neither the state nor the city requires a license for this work, per the area rules supplied. No lookup was run. Note: Connecticut licenses locksmiths separately (DCP), but that doesn't cover partition installation and wasn't checked.",
+     "source_url": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx"
+    },
+    {
+     "name": "Elite Construction Resources LLC",
+     "area": "hartford",
+     "status": "not_required_online_check",
+     "registry": "None required: Connecticut Department of Consumer Protection (no state license for this work) and City of Hartford (no city contractor license or registration)",
+     "note": "Base city Wallingford. Neither the state nor the city requires a license for this work, per the area rules supplied. No lookup was run. Optional: search the CT eLicense lookup by business name (form postback, not automated).",
+     "source_url": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx"
+    },
+    {
+     "name": "Connecticut Restroom Specialties, LLC",
+     "area": "hartford",
+     "status": "not_required_online_check",
+     "registry": "None required: Connecticut Department of Consumer Protection (no state license for this work) and City of Hartford (no city contractor license or registration)",
+     "note": "Base city Danbury. Neither the state nor the city requires a license for this work, per the area rules supplied. No lookup was run. Optional: search the CT eLicense lookup by business name (form postback, not automated).",
+     "source_url": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx"
+    },
+    {
+     "name": "Aorbis Inc.",
+     "area": "hartford",
+     "status": "not_required_online_check",
+     "registry": "None required: Connecticut Department of Consumer Protection (no state license for this work) and City of Hartford (no city contractor license or registration)",
+     "note": "Base city East Hartford. Neither the state nor the city requires a license for this work, per the area rules supplied. No lookup was run. Optional: search the CT eLicense lookup by business name (form postback, not automated).",
+     "source_url": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx"
+    },
+    {
+     "name": "C & A Distributors Inc",
+     "area": "hartford",
+     "status": "not_required_online_check",
+     "registry": "None required: Connecticut Department of Consumer Protection (no state license for this work) and City of Hartford (no city contractor license or registration)",
+     "note": "Base city Newington. Neither the state nor the city requires a license for this work, per the area rules supplied. No lookup was run. Optional: search the CT eLicense lookup by business name (form postback, not automated).",
+     "source_url": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx"
+    }
+   ],
+   "registries": [
+    "Connecticut DCP eLicense License Lookup (https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx): public, with no sign-in needed to search. Searching needs an ASP.NET form postback, so it wasn't automated, and it isn't needed because Connecticut has no state license for partition installation (area rule: no_state_license).",
+    "City of Hartford: no city contractor license or registry (municipal code sets none; permits come from Development Services), so there's nothing to look up.",
+    "No WebSearch calls were used."
+   ]
+  },
+  {
+   "state": "MA",
+   "registries": [
+    "Massachusetts DOL/OPSI ePLACE licensing portal (elicensing21.mass.gov/CitizenAccess), which covers construction supervisor (CSL) and home improvement contractor (HIC) lookup: opened 2026-11-19. Only the portal shell loads; search is an interactive form postback with no queryable URL, so automated lookup didn't work (not_online).",
+    "mass.gov license pages (construction supervisor licensing, check-a-license): returned 403 in earlier research passes (see research/state-licensing/states.json law_could_not_open), so they weren't retried.",
+    "Massachusetts Secretary of the Commonwealth corporations search (corp.sec.state.ma.us/CorpWeb/CorpSearch/CorpSearch.aspx): returned empty content, an ASP.NET form with no queryable URL, so automated lookup didn't work. It would be a business-entity check only, not a license.",
+    "Worcester Inspectional Services: no public online contractor registry found. The area rule is low confidence ('check local contractor licensing or registration'), so it's a phone item."
+   ],
+   "results": [
+    {
+     "name": "PDC Incorporated (Professional Drywall Construction)",
+     "area": "hartford",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Based in Springfield, MA. MA has no state license for commercial interior work. HIC registration covers only owner-occupied homes of 1 to 4 units (M.G.L. c. 142A s. 1). A construction supervisor license (CSL) holder may be needed on permitted work (unconfirmed). The ePLACE lookup can't be queried automatically. This listing is for the Hartford area, so Connecticut rules (CT DCP registration) apply to work there and need a separate CT check. Nothing verified for this business."
+    },
+    {
+     "name": "Newton Distributing / Newton BSI (Newton Building Specialties & Installation)",
+     "area": "hartford",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Based in Natick, MA. MA has no state license for commercial partition installs, but a CSL may be needed on permitted work (unconfirmed). ePLACE can't be queried automatically. For Hartford-area work, a Connecticut DCP registration check is needed separately. Nothing verified."
+    },
+    {
+     "name": "J. Sallese & Sons, Inc.",
+     "area": "hartford",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Based in Woburn, MA. Same MA position: no state license for commercial interior work, possible CSL on permitted work (unconfirmed), and ePLACE can't be queried automatically. A separate Connecticut DCP check is needed for Hartford-area work. Nothing verified."
+    },
+    {
+     "name": "Newton Building Specialties & Installation Inc (Newton BSI)",
+     "area": "providence",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Based in Westborough, MA. Same company as the Natick listing (Newton Distributing / Newton BSI). Same MA position: no state license for commercial interior work, possible CSL on permitted work (unconfirmed), and ePLACE can't be queried automatically. A separate Rhode Island CRLB check is needed for Providence-area work. Nothing verified."
+    },
+    {
+     "name": "Unlimited Specialties Co., Inc.",
+     "area": "providence",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Based in Quincy, MA. Same MA position: no state license for commercial interior work, possible CSL on permitted work (unconfirmed), and ePLACE can't be queried automatically. A separate Rhode Island CRLB check is needed for Providence-area work. Nothing verified."
+    },
+    {
+     "name": "Goldense Building Products Inc",
+     "area": "providence",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Based in Norfolk, MA. Same MA position: no state license for commercial interior work, possible CSL on permitted work (unconfirmed), and ePLACE can't be queried automatically. A separate Rhode Island CRLB check is needed for Providence-area work. Nothing verified."
+    },
+    {
+     "name": "Division 10 Specialties, Inc.",
+     "area": "providence",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Based in Pembroke, MA. Same MA position: no state license for commercial interior work, possible CSL on permitted work (unconfirmed), and ePLACE can't be queried automatically. A separate Rhode Island CRLB check is needed for Providence-area work. Nothing verified."
+    },
+    {
+     "name": "Newton Building Specialties & Installation Inc",
+     "area": "worcester",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Based in Westborough, MA. The state rule is no_state_license for commercial interior work (low confidence), with a possible CSL on permitted work. ePLACE can't be queried automatically. The Worcester local rule is low confidence and says to check with Worcester Inspectional Services, which has no public online registry, so it's a phone item. Nothing verified."
+    },
+    {
+     "name": "New England Door Solutions",
+     "area": "worcester",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Based in Leominster, MA. Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+    },
+    {
+     "name": "CK Gallagher Installations LLC",
+     "area": "worcester",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Based in Wilmington, MA. Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+    },
+    {
+     "name": "J. Sallese & Sons, Inc.",
+     "area": "worcester",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Based in Woburn, MA. Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+    },
+    {
+     "name": "Division 10 Specialties, Inc.",
+     "area": "worcester",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Based in Pembroke, MA. Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+    },
+    {
+     "name": "Unlimited Specialties Co",
+     "area": "worcester",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Based in Quincy, MA. Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+    },
+    {
+     "name": "Goldense Building Products Inc",
+     "area": "worcester",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Based in Norfolk, MA. Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+    },
+    {
+     "name": "Newton Distributing Company",
+     "area": "worcester",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Based in Natick, MA. Related to Newton BSI (Westborough). Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+    },
+    {
+     "name": "Kelley Bros (Boston office)",
+     "area": "worcester",
+     "status": "not_online",
+     "registry": "Massachusetts DOL/OPSI ePLACE license lookup (CSL/HIC); Worcester Inspectional Services (no online registry found)",
+     "source_url": "https://elicensing21.mass.gov/CitizenAccess/",
+     "note": "Boston-area office based in Lakeville, MA. Same MA and Worcester position: ePLACE can't be queried automatically, and the Worcester check is a phone item. Nothing verified."
+    }
+   ]
+  },
+  {
+   "state": "NH",
+   "results": [
+    {
+     "name": "Granite State Specialties LLC",
+     "area": "providence",
+     "status": "not_online",
+     "registry": "Rhode Island Contractors' Registration and Licensing Board (CRLB) contractor registration lookup, crb.ri.gov",
+     "license_type": "RI CRLB contractor registration (required for commercial and residential construction work in RI, out-of-state contractors included)",
+     "source_url": "https://crb.ri.gov/contractor-registration",
+     "note": "Providence permits commercial work only for a contractor with a current RI CRLB registration (research/local-rules/cities.json, high confidence). Every crb.ri.gov page, including the lookup, returned HTTP 403 to automated access on 2026-11-19, so the registration could not be checked. Web search found no CRLB registration number for this company. Its own site (https://www.granitestatespecialties.com/) says it supplies and installs Division 10, 11 and 12 specialties, is based in Raymond, NH, and lists no license or registration numbers. Check by hand on the CRLB lookup or by phone."
+    },
+    {
+     "name": "Granite State Specialties LLC",
+     "area": "worcester",
+     "status": "not_online",
+     "registry": "Massachusetts Division of Occupational Licensure license lookup (Home Improvement Contractor registration and Construction Supervisor License) on mass.gov; Worcester Inspectional Services",
+     "license_type": "No state license for commercial interior contractors in MA. HIC registration covers only owner-occupied 1 to 4 unit homes. A Construction Supervisor License may be needed for permitted work. Worcester's city rule is unconfirmed (low confidence).",
+     "source_url": "https://www.granitestatespecialties.com/",
+     "note": "mass.gov returned HTTP 403 to automated access on 2026-11-19, so the DOL lookup could not be checked. The Worcester rule is a phone-call item: the city is believed to require only the state license number and proof of workers' comp on the permit application. The company's site lists no MA license or registration numbers. Raymond, NH base. NH has no state contractor license."
+    }
+   ],
+   "registries": [
+    "Rhode Island CRLB contractor registration lookup (crb.ri.gov): blocked, HTTP 403 on every page, no automated lookup",
+    "Massachusetts DOL license lookup (HIC / Construction Supervisor) on mass.gov: blocked, HTTP 403, no automated lookup",
+    "Worcester Inspectional Services: no online contractor registry identified; local rule is low confidence (phone-call item)",
+    "New Hampshire: no state contractor license, so there is nothing to look up for the Raymond base",
+    "Company website granitestatespecialties.com: fetched, lists no license or registration numbers"
+   ]
+  },
+  {
+   "state": "HI",
+   "results": [
+    {
+     "name": "Division X, Inc.",
+     "area": "honolulu",
+     "status": "not_online",
+     "registry": "Hawaii DCCA Professional and Vocational Licensing (Contractors License Board) public license search, https://mypvl.dcca.hawaii.gov/public-license-search/",
+     "source_url": "https://mypvl.dcca.hawaii.gov/public-license-search/",
+     "note": "Checked 2026-11-19. The official Hawaii PVL license search returns HTTP 403 to automated access (the old pvl.ehawaii.gov search now redirects there), so no license record could be read. Needs a manual lookup by name 'Division X'. The company website (divisionxinc.com) did not resolve. A third-party directory (governmentbidders.com/government-bidders/contractor-5400971-Division-X-Inc-.htm, seen only in search results) describes it as a Honolulu glazing contractor, established 1997, that says it is licensed. No license number was found there, and the listing is not official. The Hawaii CLB monthly applicant lists from 2024 to 2026 that came up in search did not mention it. That says nothing either way about whether it holds an existing license. Honolulu has no separate city registry: building permits list the contractor's Hawaii state license number."
+    }
+   ],
+   "registries": [
+    "Hawaii DCCA PVL public license search (mypvl.dcca.hawaii.gov/public-license-search/): blocks automated access (HTTP 403 via WebFetch and curl); the legacy pvl.ehawaii.gov/pvlsearch redirects to it. Manual lookup needed.",
+    "City and County of Honolulu DPP: no separate contractor registry. Permits rely on the state license, so there was no city lookup to run."
+   ]
+  },
+  {
+   "state": "AK",
+   "results": [
+    {
+     "name": "Architectural Hardware Supply, Inc.",
+     "area": "anchorage",
+     "status": "found_active",
+     "registry": "Municipality of Anchorage, Verify Municipal Contractor License (bsd.muni.org). The State of Alaska Construction Contractor license search (commerce.alaska.gov) returned HTTP 403 to automated access and was not checked.",
+     "license_number": "CON7682",
+     "license_type": "General Contractor (Generl), Municipality of Anchorage",
+     "source_url": "https://bsd.muni.org/contractorlicensing/search.aspx",
+     "note": "Checked 2026-11-19. Searching the Anchorage municipal registry for 'Architectural Hardware' returned 'Architectural Hardware Supply Inc', (907) 522-0234, license CON7682, General Contractor (Generl), expires 02/14/2028. The registry lists only current municipal licenses. The phone number matches the company site (ahs-alaska.biz), which lists Restroom Partitions & Accessories among its products but does not say it installs partitions. The state license could not be checked online because the State of Alaska search (https://www.commerce.alaska.gov/cbp/main/search/professional) returns 403. A search result summary said Anchorage issues its license only after the state license is confirmed, but I did not read that on the official page, so state status is unverified. A state notary directory entry under the company name (aws.state.ak.us) is a notary commission, not a contractor license."
+    },
+    {
+     "name": "Architectural Supply Co.",
+     "area": "anchorage",
+     "status": "not_found",
+     "registry": "Municipality of Anchorage, Verify Municipal Contractor License (bsd.muni.org). The State of Alaska Construction Contractor license search (commerce.alaska.gov) returned HTTP 403 to automated access and was not checked.",
+     "source_url": "https://bsd.muni.org/contractorlicensing/search.aspx",
+     "note": "Checked 2026-11-19. The Anchorage municipal registry returned 'No current license found.' for 'Architectural Supply'. Searches for 'Architectural' and 'Archi' returned only Architectural Hardware Supply Inc and North Architecture Construction Development Llc. The registry shows only current licenses, so the company may hold a license under a different legal name, or it may be a supplier that does not pull permits. The state license search returned 403, so state status is unknown and needs a manual check. The company site (archialaska.com) returned 503, so its services and contact details could not be read."
+    }
+   ],
+   "registries": [
+    "Municipality of Anchorage, Verify Municipal Contractor License (https://bsd.muni.org/contractorlicensing/search.aspx): automated lookup worked (public name search, read-only)",
+    "State of Alaska, Division of Corporations, Business and Professional Licensing, professional license search (https://www.commerce.alaska.gov/cbp/main/search/professional): blocked, HTTP 403 to WebFetch and curl; not_online for automated checks, needs a manual browser check"
+   ]
+  },
+  {
+   "state": "ID",
+   "results": [
+    {
+     "name": "SBI Contracting Inc (SBI Partitions & Accessories)",
+     "area": "boise",
+     "status": "not_online",
+     "registry": "Idaho DOPL contractor registration lookup (edopl.idaho.gov Online Services)",
+     "source_url": "https://edopl.idaho.gov/OnlineServices/_/",
+     "note": "Not checked on the official record. The DOPL lookup is a script-driven portal (FAST/GenTax) that needs cookies and JavaScript, so it can't be searched automatically. Boise publishes no public list of Contractor Registration Declarations. The company site (https://sbicontractinginc.com/) gives Boise as its base and 208.376.5200 as its phone. It says it stocks toilet partitions and parts in a Boise warehouse that ship within 24 hours. The site shows no Idaho registration number. Search DOPL by hand."
+    },
+    {
+     "name": "D-10 Contracting Inc",
+     "area": "boise",
+     "status": "not_online",
+     "registry": "Idaho DOPL contractor registration lookup (edopl.idaho.gov Online Services)",
+     "source_url": "https://edopl.idaho.gov/OnlineServices/_/",
+     "note": "Not checked on the official record. The DOPL lookup needs cookies and JavaScript, so it can't be searched automatically. Boise publishes no public list of registrations. The company site (https://d-10contracting.com/) gives Meridian, ID as its base and (208) 936-4775 as its phone. It describes Division 10 specialties, and its page title says 'Bathroom Partitions'. The site shows no Idaho registration number. Search DOPL by hand."
+    },
+    {
+     "name": "Midwest D-Vision Solutions (MWDS)",
+     "area": "boise",
+     "status": "not_online",
+     "registry": "Idaho DOPL contractor registration lookup (edopl.idaho.gov Online Services)",
+     "source_url": "https://edopl.idaho.gov/OnlineServices/_/",
+     "note": "Not checked on the official record. The DOPL lookup needs cookies and JavaScript, so it can't be searched automatically. The company site (https://www.mwdsidaho.com/) gives Boise as its base and 208.505.6333 as its phone, and lists toilet compartments/partitions and operable panel partitions. The site shows no Idaho registration number. A third-party site (ccblookup.com, https://www.ccblookup.com/contractor/midwest-d-vision-solutions-boise-232118/) appears in search results as listing an Oregon CCB license, number 232118 going by its URL. That page was not opened and is not the official Oregon CCB record. It is not an Idaho registration in any case. Search DOPL by hand."
+    }
+   ],
+   "registries": [
+    "Idaho DOPL / Idaho Contractors Board registration lookup (https://edopl.idaho.gov/OnlineServices/_/): automated lookup failed. It's a script-driven FAST/GenTax portal that needs cookies and JavaScript, so it has to be searched by hand.",
+    "City of Boise Contractor Registration Declaration: this is a form filed with permits and has no public online list, so there was nothing to search.",
+    "One web search for Idaho registration records on the three companies found no official record. One result was a third-party copy of an Oregon CCB listing for MWDS (not official)."
+   ]
+  },
+  {
+   "state": "WA",
+   "results": [
+    {
+     "name": "Dupree Building Specialties",
+     "area": "spokane",
+     "status": "not_online",
+     "registry": "Washington State Department of Labor & Industries (L&I) Verify a Contractor (secure.lni.wa.gov/verify); City of Spokane business license not checked",
+     "source_url": "https://secure.lni.wa.gov/verify/",
+     "license_type": "WA L&I contractor registration (state registration only); City of Spokane business license also required for permits",
+     "note": "Checked 2026-11-19. The L&I Verify tool builds its results with JavaScript, so automated fetches showed an empty results page (0 results) for both 'Dupree Building Specialties' and 'Leslie Enterprises'. That does not mean the company is unregistered; the lookup needs a manual check in a browser, searching both names. Spokane Journal (May 23, 2024) says 'Leslie Enterprises Inc., which does business as Dupree Building Specialties', so the L&I registration is probably under Leslie Enterprises Inc. Source: https://www.spokanejournal.com/articles/16013-distribution-in-construction-industry. Company site (https://dupreebldg.com/): based in Spokane, WA. It offers design, sales, installation and service of specialty building products and lists ASI Global Partitions among its brands. Public company phone 509.484.2000. No L&I registration number appears on the site. The company is listed in the NW AGC member directory: https://business.nwagc.org/memberdirectory/Details/dupree-building-specialties-3229572. No registration number recorded, because none was read on an official page."
+    }
+   ],
+   "registries": [
+    "Washington L&I Verify a Contractor (https://secure.lni.wa.gov/verify/): automated lookup failed because results load by JavaScript and WebFetch showed 0 results for both 'Dupree Building Specialties' and 'Leslie Enterprises'. A curl attempt to inspect the page was denied by the permission system. Check manually.",
+    "City of Spokane business license: no online lookup tried. Not checked."
+   ]
+  }
+ ],
+ "dropped": []
+}
