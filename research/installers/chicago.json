@@ -1,0 +1,54 @@
+{
+ "area": "chicago",
+ "found_count": 1,
+ "sources_tried": [
+  "WebSearch: BLOCKED. The turn's shared budget of 200 web searches was already used up before this agent started, so none of the step 3/4 web searches ran ('toilet partition installation Chicago', Division 10 Chicago, Naperville/Schaumburg). Rerun this area once the search budget resets, or raise CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep/): reached, but results load from a dropdown dynamically; no Illinois reps in the static page",
+  "ASI Global Partitions representatives (asi-globalpartitions.com/representatives/): reached, but results are dynamic (state filter includes Illinois North/South, Indiana NW); no records in the static page, and URL parameters did not help",
+  "Scranton Products where-to-buy and find-product-specialist: reached; only a manufacturer product specialist for IL (not a dealer or installer), so none recorded",
+  "Hadrian sales-rep-locator: reached, but results are dynamic (template placeholders only)",
+  "General Partitions distributors page: reached; no distributor list published (only a pricing request email)",
+  "Metpar homepage: no dealer locator; it points to the Scranton product specialist page",
+  "Bradley Corp homepage: fetch returned almost no content; no locator found",
+  "Ampco/Ammco: not tried (out of time)",
+  "The Blue Book (thebluebook.com): 403 Forbidden",
+  "BBB category page (guessed URL): 404",
+  "Yelp search page: 403 Forbidden",
+  "BuildingConnected / Procore network: not tried (no search available to find profile URLs)",
+  "chicagotoiletpartitions.com: redirects to app.toiletpartitions.com, which showed a page title only, with no location or installer information; not recorded",
+  "partitionsandaccessories.com: 503; bathroompartitions.com: DNS not resolvable"
+ ],
+ "candidates": [
+  {
+   "name": "LaForce (Chicago offices)",
+   "base_city": "Vernon Hills",
+   "state": "IL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://laforceinc.com/",
+   "phone": "(847) 634-2828",
+   "contact_page": "https://laforceinc.com/contact/",
+   "evidence_urls": [
+    "https://laforceinc.com/",
+    "https://laforceinc.com/what-we-do/building-specialties/",
+    "https://laforceinc.com/what-we-do/pre-install-install/",
+    "https://laforceinc.com/laforce-locations/",
+    "https://laforceinc.com/contact/"
+   ],
+   "partition_evidence": "The Building Specialties page lists 'Toilet Partitions', 'Multiple Material Types' and 'Partition Hardware for all Manufacturers' as products LaForce provides. Its Pre-Install & Install page covers only doors, frames and door hardware, and no page shows toilet partition installation.",
+   "red_flags": [
+    "Supplies toilet partitions itself, as a commercial door, hardware and Division 10 distributor (direct competitor and buy-around risk)",
+    "No evidence that it installs partitions; its install service is doors, frames and hardware only",
+    "Large multi-state distributor with headquarters in Green Bay, WI, not a local installer"
+   ],
+   "reason": "LaForce is a commercial Division 10 and door-hardware distributor that sells toilet partitions. Its installation service covers doors and hardware only, so it is a competing supplier rather than an installer. Chicago-area offices are in Vernon Hills ((847) 634-2828) and Willowbrook ((630) 325-1950); the general line is 1-800-236-8858 and no company email is published.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 25
+  }
+ ]
+}
