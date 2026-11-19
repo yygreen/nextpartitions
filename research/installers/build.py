@@ -19,7 +19,7 @@ def score(c, lic):
     s += {'yes': 20, 'mostly': 15}.get(c.get('commercial'), 0)
     s += 15 if lic and lic.get('status') == 'found_active' else 0
     if (c.get('rating') or 0) >= 4.5 and (c.get('review_count') or 0) >= 10: s += 10
-    s += {'yes': 10, 'nearby': 5}.get(c.get('within_area'), 0)
+    s += {'yes': 10, 'nearby': 5, 'regional': 3}.get(c.get('within_area'), 0)
     s += 5 if c.get('sells_partitions') == 'no' else 0
     return s
 

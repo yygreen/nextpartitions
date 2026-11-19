@@ -1,0 +1,381 @@
+{
+ "area": "orlando",
+ "found_count": 11,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/orlando.json: worked. It had 43 maps results and no web results. Relevant: Associated Building Specialties, Florida Specialty Products, Interior Specialties, Mills & Nebraska. American Sanitary Partition (Ocoee) is a toilet compartment manufacturer (Yellow Pages: founded 1932) and was skipped as a manufacturer plant; its site returned 503. The rest were remodelers and stores.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): fetched but no results without the dropdown (JS). No reps read.",
+  "ASI find-a-rep (asi-globalpartitions.com/find-a-rep): 404.",
+  "Scranton Products find-a-distributor: 404.",
+  "Hadrian find-a-rep: 404.",
+  "Bradley find-a-rep: page returned no content.",
+  "Metpar, General Partitions, Ampco/Ammco locators: not tried (time and fetch budget).",
+  "The Blue Book: search page and iProView profile returned 403 (blocked).",
+  "Procore Network: worked. The FL and Orlando 'toilet-bath-and-laundry-accessories' category pages and profiles (Florida Division 10, Aletheia, N4 Construction, Ace Relocation, ProGlobalBusinessSolutions, Warlord) loaded. The 'toilet-compartments' URL returned an unrelated generic list.",
+  "BuildingConnected: not tried.",
+  "BBB category pages (Oviedo and Clermont 'partition'): worked. Hufcor Florida Group (Sanford) is operable walls only, so excluded.",
+  "Yellow Pages Orlando 'commercial bathroom partitions': worked, but mostly irrelevant listings.",
+  "MapQuest listing (phoenix-integration.aws.mapquest.com): host blocked by session network (ENOTFOUND).",
+  "WebSearch: used all 8 calls. Most useful: 'Division 10 specialties contractor Orlando toilet compartments...' (extended) and 'restroom partitions installer Orlando ... Kissimmee Sanford' (extended).",
+  "Excluded as out of area: Bell Architectural Specialties (Riverview FL, installs toilet partitions, serves Orlando, 813-741-9926), Spec10 Solutions (Florida-wide, base not stated, Miami phone), Restroom Stalls and All (Gainesville GA dealer; its own W2 crews install in Orlando; no local base), Unified Door & Hardware Group (NJ), Square 10 Source (Plant City).",
+  "Unverified lead: Top Line Partitions, Inc. (Oviedo), mentioned only in a search summary. No page about it was read, so it is not listed."
+ ],
+ "candidates": [
+  {
+   "name": "Florida Division 10, LLC",
+   "base_city": "Orlando",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "689-221-3228",
+   "email": "estimating@floridadivision10.com",
+   "website": "https://www.floridadivision10.com/",
+   "contact_page": "https://www.floridadivision10.com/contact/",
+   "partition_evidence": "Homepage lists Toilet Partitions among installed specialties; install-only ('WE DO NOT FURNISH', per-piece quotes). Projects page lists 22 Central Florida jobs (Kissimmee, Orlando, Apopka, Sanford) but none name partitions.",
+   "evidence_urls": [
+    "https://www.floridadivision10.com/",
+    "https://www.floridadivision10.com/our-work/"
+   ],
+   "red_flags": [
+    "No project explicitly shows partitions"
+   ],
+   "reason": "Install-only Division 10 subcontractor in Orlando that lists toilet partitions and works for GCs. It doesn't supply products, so the buy-around risk is low and it's a good fit.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Florida Division 10, LLC",
+    "area": "orlando",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee; City of Orlando Permitting Services contractor registration",
+    "source_url": "https://orlando.gov/Building-Development/Permits-Inspections/Other/Register-a-Contractor",
+    "note": "DBPR lookup not run automatically. Orlando registers contractors by form and email (Permitting Services); no public searchable list of registered contractors was found (only permit search and the separate SBE directory, which is not contractor registration). Company site returned HTTP 503 on 2026-11-19."
+   },
+   "score": 75
+  },
+  {
+   "name": "HFM Construction Solutions",
+   "base_city": "Apopka",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(689) 249-5751",
+   "email": "info@hfmcs.com",
+   "website": "https://hfmcs.com/",
+   "contact_page": "https://hfmcs.com/#contact",
+   "partition_evidence": "Homepage service: 'Powder-coated, solid plastic, and phenolic compartments with complete restroom accessory sets'; also shower compartments.",
+   "evidence_urls": [
+    "https://hfmcs.com/"
+   ],
+   "red_flags": [],
+   "reason": "Apopka Division 10 installer that explicitly installs toilet compartments in several materials for schools, healthcare, government and commercial clients.",
+   "added_by_checker": false,
+   "license": {
+    "name": "HFM Construction Solutions",
+    "area": "orlando",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee; City of Orlando Permitting Services contractor registration",
+    "source_url": "https://hfmcs.com/",
+    "note": "Site states base city Apopka, FL and describes itself as a 'Florida-based specialty installation contractor'; no license number shown. DBPR lookup not run automatically; no public Orlando registered-contractor list. Apopka is outside Orlando city limits."
+   },
+   "score": 70
+  },
+  {
+   "name": "Associated Building Specialties, Inc.",
+   "base_city": "Orlando",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "407-339-2284",
+   "email": "estimating@absfl.net",
+   "website": "http://www.absfl.net/",
+   "contact_page": "http://www.absfl.net/",
+   "partition_evidence": "Homepage lists bathroom partitions under construction services and says it self-performs with its own installation crews.",
+   "evidence_urls": [
+    "http://www.absfl.net/"
+   ],
+   "red_flags": [
+    "Mentions relationships with large manufacturers: may also supply"
+   ],
+   "reason": "Orlando (and Tampa) Division 10 contractor with its own crews that lists bathroom partitions. Its work is large commercial: hospitality, multi-family, theme parks.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Associated Building Specialties, Inc.",
+    "area": "orlando",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee; City of Orlando Permitting Services contractor registration",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR lookup not run automatically; no public Orlando registered-contractor list. Company site not read for a license number."
+   },
+   "score": 70
+  },
+  {
+   "name": "C & S Supply",
+   "base_city": "Orlando",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "407-540-1115",
+   "email": "bdewulf@cssupplyorl.com",
+   "website": "https://cssupplyfl.com/",
+   "contact_page": "https://cssupplyfl.com/contact/",
+   "partition_evidence": "The Division 10 page offers toilet partitions with 'comprehensive support from selection through installation'. The homepage lists Toilet Compartments & Accessories.",
+   "evidence_urls": [
+    "https://cssupplyfl.com/",
+    "https://cssupplyfl.com/orlando-division-10-specialties-installer-distributor/"
+   ],
+   "red_flags": [
+    "Distributor of partitions (buy-around risk)",
+    "Listed email appears to be an individual's address"
+   ],
+   "reason": "Orlando Division 8/10 distributor and installer that offers toilet partitions through installation. Its main business is supply, so the buy-around risk is high.",
+   "added_by_checker": false,
+   "license": {
+    "name": "C & S Supply",
+    "area": "orlando",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee; City of Orlando Permitting Services contractor registration",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR lookup not run automatically; no public Orlando registered-contractor list. Company site not read for a license number."
+   },
+   "score": 70
+  },
+  {
+   "name": "Mills & Nebraska",
+   "base_city": "Orlando",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(866) 304-3667",
+   "email": "info@millsnebraska.com",
+   "website": "https://www.millsnebraska.com/",
+   "contact_page": "https://www.millsnebraska.com/contact",
+   "partition_evidence": "Homepage puts toilet partitions in its Division 10 line and offers 'In-house installation of doors, frames, hardware and Division 10 products'.",
+   "evidence_urls": [
+    "https://www.millsnebraska.com/"
+   ],
+   "red_flags": [
+    "Large door/hardware distributor that supplies partitions (buy-around risk)"
+   ],
+   "reason": "Orlando-headquartered door, hardware and Division 10 supplier with in-house installation that includes toilet partitions. It's also a seller, which is a buy-around risk.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Mills & Nebraska",
+    "area": "orlando",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee; City of Orlando Permitting Services contractor registration",
+    "source_url": "https://www.millsnebraska.com/",
+    "note": "Site says founded in Orlando in 1933, headquartered in Orlando with a Lakeland branch; no contractor license number shown. DBPR lookup not run automatically; no public Orlando registered-contractor list."
+   },
+   "score": 70
+  },
+  {
+   "name": "SJ Woodwork & Cabinetry LLC",
+   "base_city": "Orlando",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "786-915-1719",
+   "email": "Smartins@sjwoodworkfl.com",
+   "website": "https://sjwoodworkfl.com/",
+   "contact_page": "https://sjwoodworkfl.com/contact",
+   "partition_evidence": "Homepage lists toilet partitions under Division 10: 'Installation of specialty products for commercial and institutional projects'.",
+   "evidence_urls": [
+    "https://sjwoodworkfl.com/",
+    "https://sjwoodworkfl.com/contact"
+   ],
+   "red_flags": [
+    "Miami (786) phone number; contact page says it serves FL and the Southeast, including Miami, so its Orlando base is uncertain",
+    "No partition project photos seen"
+   ],
+   "reason": "Lists toilet partition installation for commercial and institutional work and names Orlando as its base, but the Miami phone number and statewide service area need checking.",
+   "added_by_checker": false,
+   "license": {
+    "name": "SJ Woodwork & Cabinetry LLC",
+    "area": "orlando",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee; City of Orlando Permitting Services contractor registration",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR lookup not run automatically; no public Orlando registered-contractor list. Company site not read for a license number."
+   },
+   "score": 70
+  },
+  {
+   "name": "Clear Choice Glass & Specialties",
+   "base_city": "Kissimmee",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "407-846-2337",
+   "email": "info@clearchoiceglassorlando.com",
+   "website": "https://clearchoiceglassorlando.com/",
+   "contact_page": "https://clearchoiceglassorlando.com/contact-us/",
+   "partition_evidence": "'Commercial Bathroom Partitions' is listed under Specialties services, with no details or photos.",
+   "evidence_urls": [
+    "https://clearchoiceglassorlando.com/"
+   ],
+   "red_flags": [
+    "Mainly a glass company; the partitions listing is thin",
+    "The mailto link on the site points to a different address than the one shown"
+   ],
+   "reason": "Kissimmee commercial glass and specialties firm that lists commercial bathroom partitions as a service. The evidence is thin, so confirm its partition experience.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Clear Choice Glass & Specialties",
+    "area": "orlando",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee; City of Orlando Permitting Services contractor registration",
+    "source_url": "https://clearchoiceglassorlando.com/",
+    "note": "Site says founded in 2001 in Orlando and lists a Kissimmee address (base city Kissimmee); no contractor license number shown. DBPR lookup not run automatically; no public Orlando registered-contractor list. Kissimmee is outside Orlando city limits."
+   },
+   "score": 70
+  },
+  {
+   "name": "Florida Specialty Products, LLC",
+   "base_city": "Oviedo (not confirmed on site)",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [
+    "Scranton",
+    "Bobrick",
+    "Bradley",
+    "Penco",
+    "Accurate",
+    "AJW"
+   ],
+   "phone": "321-765-4975",
+   "contact_page": "https://www.yourflsp.com/contact/",
+   "website": "https://www.yourflsp.com/",
+   "partition_evidence": "Services page lists 'Toilet Compartments' under 'Division 10 - Supply and Install'. Brands are inferred from vendor logo filenames only.",
+   "evidence_urls": [
+    "https://www.yourflsp.com/services/",
+    "https://www.yourflsp.com/",
+    "https://www.yourflsp.com/about-us/"
+   ],
+   "red_flags": [
+    "Base city not stated on site",
+    "Supplies partitions (buy-around risk)"
+   ],
+   "reason": "Supplies and installs toilet compartments for commercial clients (schools, healthcare, banks, offices). It's strong on installation, but it also sells partitions.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Florida Specialty Products, LLC",
+    "area": "orlando",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee; City of Orlando Permitting Services contractor registration",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR lookup not run automatically; no public Orlando registered-contractor list. Base city (Oviedo) still not confirmed; company site not read."
+   },
+   "score": 65
+  },
+  {
+   "name": "Interior Specialties",
+   "base_city": "Altamonte Springs",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(407) 539-1303",
+   "website": "https://www.interiorspecialties.com/",
+   "contact_page": "https://www.interiorspecialties.com/contact",
+   "partition_evidence": "Division 10 specialty subcontractor for GCs; the services and work pages don't mention toilet partitions.",
+   "evidence_urls": [
+    "https://www.interiorspecialties.com/",
+    "https://www.interiorspecialties.com/services",
+    "https://www.interiorspecialties.com/work"
+   ],
+   "red_flags": [
+    "Has an online shop (product catalog)"
+   ],
+   "reason": "Commercial Division 10/12 subcontractor in Altamonte Springs, but no page shows toilet partition work.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Interior Specialties",
+    "area": "orlando",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee; City of Orlando Permitting Services contractor registration",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR lookup not run automatically; no public Orlando registered-contractor list. Company site not read for a license number. Altamonte Springs is outside Orlando city limits."
+   },
+   "score": 50
+  },
+  {
+   "name": "Aletheia Door Solutions LLC",
+   "base_city": "Sorrento (not stated on site; 'Central Florida\u2013based')",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "nearby",
+   "brands": [],
+   "partition_evidence": "Site covers commercial doors, frames and hardware only; no partitions.",
+   "evidence_urls": [
+    "https://aletheiadoor.com/"
+   ],
+   "red_flags": [
+    "No phone or email on the site"
+   ],
+   "reason": "Commercial door and hardware installer with no toilet partition services.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Complete Partitions + Equipment LLC",
+   "base_city": "Lake Mary",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "Only a search summary of a BBB 'Partitions' category listing with a Lake Mary P.O. box. No website found, and services aren't described.",
+   "evidence_urls": [
+    "https://www.bbb.org/us/fl/oviedo/category/partition"
+   ],
+   "red_flags": [
+    "No website",
+    "P.O. box only",
+    "Phone not confirmed"
+   ],
+   "reason": "No evidence of what it does beyond a BBB category listing. Revisit if a website or services listing turns up.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

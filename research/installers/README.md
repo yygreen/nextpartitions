@@ -18,7 +18,7 @@ Each workflow result is saved in `raw/batch-<n>.json`; `python3 build.py` merges
 
 ## Score (out of 100)
 
-Partition work shown 40 (likely 20) · commercial 20 (mostly 15) · registration confirmed 15 · reviews 4.5+ from 10+ 10 · in the area 10 (nearby 5) · doesn't sell partitions itself 5.
+Partition work shown 40 (likely 20) · commercial 20 (mostly 15) · registration confirmed 15 · reviews 4.5+ from 10+ 10 · in the area 10 (nearby 5, regional 3) · doesn't sell partitions itself 5.
 
 ## Limits
 
