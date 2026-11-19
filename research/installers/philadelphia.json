@@ -1,0 +1,333 @@
+{
+ "area": "philadelphia",
+ "found_count": 9,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/philadelphia.json: worked (66 maps and 50 web results; most were remodelers, tile shops or stores)",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): loaded, but the rep list is a JS dropdown, so no results",
+  "Scranton Products where-to-buy: worked, but it lists only factory product specialists (PA, and DE/NJ), not installers",
+  "Hadrian find-a-rep: 404",
+  "ASI/Global, Bradley, Metpar, General Partitions, Ammco locators: not tried (search cap); General Partition Co (Croydon) in seeds is a packaging partition maker, not restroom",
+  "The Blue Book (thebluebook.com): blocked (403) on every profile and listing page; names seen only in search snippets (Frank M. Waters Inc, MD; DTS-Division Ten Building Specialties, East Brunswick NJ; both outside 30 miles)",
+  "BuildingConnected / Procore public profiles: not reached (search cap)",
+  "CISLeads public company pages: worked (Tristate Material Services, Widener Inc., Modulex Partition Corp in Hillside NJ, which is out of radius)",
+  "WebSearch: 8 of 8 used: Philadelphia toilet partition installation, Division 10 PA/NJ/DE, Frank M. Waters, Wilmington/Trenton/South Jersey, Bucks/Montgomery/Delaware County, Division 10 Philadelphia suburbs, NJ towns (Cherry Hill/Trenton), DTS",
+  "BBB category pages (Marlton and Atco NJ partition): worked, but they showed only 10-SPEC (Sayreville NJ) and Partition Plus (Forest Hill MD), both outside the radius",
+  "Company sites fetched: triadinc.net, tristate-material.com, widenerinc.com, associatedbuilding.com, uwco.com, kltsales.com, diversifiedceilingsinc.com and interior-specialties.com worked (Interior Specialties shows no partitions); tracorp.org, rsclockers.com, onepointpartitions.com and klt-sales.com contact page were blocked or errored; 10-spec.com and 10specsouth.com returned empty pages; pandbpartitions.com is drywall only; bmpartition.com does casework, no partitions",
+  "Yelp: not tried (search cap)"
+ ],
+ "candidates": [
+  {
+   "name": "Tristate Material Services",
+   "base_city": "Malvern",
+   "state": "PA",
+   "website": "https://tristate-material.com/",
+   "phone": "484-913-0010",
+   "contact_page": "https://tristate-material.com/contact/",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "Homepage says they 'sell and install Division 10, 11, and 12 products', with toilet partitions in the list; works with large general contractors. The project gallery lists schools, hospitals and senior living near Philadelphia but no scope details.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley"
+   ],
+   "within_area": "yes",
+   "evidence_urls": [
+    "http://www.tristate-material.com/",
+    "https://tristate-material.com/contact/",
+    "https://tristate-material.com/our-products/",
+    "https://tristate-material.com/project-gallery/"
+   ],
+   "red_flags": [
+    "Distributor that sells partitions (buy-around risk)",
+    "Bobrick/Bradley appear in a general vendor logo list, not tied to partitions"
+   ],
+   "reason": "A Division 10 distributor and installer near Philadelphia that names toilet partitions among the products it sells and installs for general contractors.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Tristate Material Services",
+    "area": "philadelphia",
+    "status": "not_found",
+    "registry": "City of Philadelphia L&I trade licenses (official open data, table trade_licenses)",
+    "license_type": "Philadelphia City Contractor License",
+    "note": "Checked 2026-11-19. Searched 'Tristate', 'Tri-State', 'Tri State' and 'Material'. Many unrelated Tri-State businesses came up (masonry, fire protection, construction and others), but none was Tristate Material Services. Also absent from the city business_licenses table. The company is based in Malvern, outside the city, so a city license is needed only for jobs inside Philadelphia. PA AG HIC search was unavailable (HTTP 503) and applies only to residential work anyway.",
+    "source_url": "https://phl.carto.com/api/v2/sql?q=SELECT%20*%20FROM%20trade_licenses%20WHERE%20upper(contactname)%20LIKE%20'%25TRI%25STATE%25'"
+   },
+   "score": 70
+  },
+  {
+   "name": "Widener Specialties & Finishes (Widener Inc.)",
+   "base_city": "Fairless Hills",
+   "state": "PA",
+   "website": "http://www.widenerinc.com/",
+   "phone": "215-949-2400",
+   "email": "info@widenerinc.com",
+   "contact_page": "http://www.widenerinc.com/web-content/pages/contactus.html",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "The CIS listing says Widener installs toilet partitions, lockers and benches. Its own site has an Installation page (own contractor team) and a 'partitions' and 'washroom accessories' product category.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "evidence_urls": [
+    "http://www.widenerinc.com/",
+    "http://www.widenerinc.com/web-content/pages/installation.html",
+    "http://www.widenerinc.com/web-content/pages/about_us.html",
+    "https://cisleads.com/company/details/6211"
+   ],
+   "red_flags": [
+    "Toilet partition installation is stated on a third-party listing; its own site doesn't say partitions explicitly",
+    "Represents manufacturers and sells partitions (buy-around risk)",
+    "The about page's mailto link points to a personal staff address; use info@ only"
+   ],
+   "reason": "A Bucks County specialties contractor with its own installation crew; a construction-leads listing says it installs toilet partitions. Confirm by phone that partition installation is current.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Widener Specialties & Finishes (Widener Inc.)",
+    "area": "philadelphia",
+    "status": "not_found",
+    "registry": "City of Philadelphia L&I trade licenses (official open data, table trade_licenses)",
+    "license_type": "Philadelphia City Contractor License",
+    "note": "Checked 2026-11-19. No contractor license under 'Widener' or 'Specialties & Finishes'. The only 'Widener' record is an individual's ENGINEER A license, not this company. The company is based in Fairless Hills, outside the city, so a city license is needed only for jobs inside Philadelphia. PA AG HIC search was unavailable (HTTP 503) and applies only to residential work.",
+    "source_url": "https://phl.carto.com/api/v2/sql?q=SELECT%20*%20FROM%20trade_licenses%20WHERE%20upper(contactname)%20LIKE%20'%25WIDENER%25'"
+   },
+   "score": 70
+  },
+  {
+   "name": "Associated Building Specialties",
+   "base_city": "Blackwood",
+   "state": "NJ",
+   "website": "https://www.associatedbuilding.com/",
+   "phone": "856-227-3900",
+   "contact_page": "https://www.associatedbuilding.com/location-n-contact",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "The toilet partitions page says 'See our Services tab for Installation & Repairs'; the Services page lists installations by trained technicians, repairs (broken locks, ADA), field checks and custom hardware.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Scranton Products (Aria Partitions)"
+   ],
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://www.associatedbuilding.com/",
+    "https://www.associatedbuilding.com/toilet-partitions",
+    "https://www.associatedbuilding.com/newpage"
+   ],
+   "red_flags": [
+    "Stocking distributor since 1957 that sells partitions and ships nationwide (strong buy-around risk)"
+   ],
+   "reason": "Installs and repairs toilet partitions across the tri-state area from Blackwood, NJ, about 18 miles from Philadelphia. It is also a partitions distributor that competes with us.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 70
+  },
+  {
+   "name": "Diversified Ceilings Inc",
+   "base_city": "Williamstown",
+   "state": "NJ",
+   "website": "http://www.diversifiedceilingsinc.com/",
+   "phone": "(856) 881-9015",
+   "email": "estimates@diversifiedceilingsinc.com",
+   "contact_page": "http://www.diversifiedceilingsinc.com/ceiling-installation-quote-request-location-williamst",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "The Bathroom Partitions page calls it 'a leading installer of toilet partitions' and says it handles commercial jobs of any size: field measurement, receiving and delivering product, installation and repairs, in steel, stainless, solid plastic, phenolic and laminate.",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "evidence_urls": [
+    "http://www.diversifiedceilingsinc.com/",
+    "https://www.diversifiedceilingsinc.com/bathroom-partitions-and-accessories"
+   ],
+   "red_flags": [],
+   "reason": "A commercial ceiling contractor that explicitly installs toilet partitions and serves NJ and eastern PA, about 25 miles from the area center. Receiving customer-supplied product is part of its service.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 70
+  },
+  {
+   "name": "Triad Building Specialties Inc",
+   "base_city": "West Chester",
+   "state": "PA",
+   "website": "http://triadinc.net/",
+   "phone": "610.436.6805",
+   "email": "info@triadinc.net",
+   "contact_page": "http://triadinc.net/contact.html",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "Homepage describes the company as 'Installer of Toilet Partitions and Bathroom Accessories'; About page says it supplies commercial washroom partitions and accessories (family-run since 1976).",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Global Partitions",
+    "Scranton Products",
+    "American Specialties",
+    "Bradley",
+    "Bobrick",
+    "Koala"
+   ],
+   "within_area": "nearby",
+   "evidence_urls": [
+    "http://triadinc.net/",
+    "http://triadinc.net/about.html",
+    "http://triadinc.net/contact.html"
+   ],
+   "red_flags": [
+    "Site footer copyright 2010; website looks unmaintained",
+    "Also supplies partitions (buy-around risk)"
+   ],
+   "reason": "Says outright it installs toilet partitions for commercial clients, based in Chester County about 28 miles from the area center. It also supplies partitions, so the listing agreement matters.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Triad Building Specialties Inc",
+    "area": "philadelphia",
+    "status": "not_found",
+    "registry": "City of Philadelphia L&I trade licenses (official open data, table trade_licenses, includes CONTRACTOR license type; records issued through 2026-11-16)",
+    "license_type": "Philadelphia City Contractor License",
+    "note": "Checked 2026-11-19. No CONTRACTOR (or any) license under 'Triad Building Specialties' or 'Triad'. Only match was an unrelated 'TRIAD MECHANICAL INC' (license 38125, inactive since 2012). The company is based in West Chester, outside Philadelphia city limits. A City Contractor License is needed only for work inside the city, so no license may simply mean no Philadelphia jobs. PA Attorney General Home Improvement Contractor search (hicsearch.attorneygeneral.gov) returned HTTP 503 and a TLS error, so it could not be checked. That registration covers residential home improvement only, not commercial toilet partition work.",
+    "source_url": "https://phl.carto.com/api/v2/sql?q=SELECT%20*%20FROM%20trade_licenses%20WHERE%20upper(contactname)%20LIKE%20'%25TRIAD%25'"
+   },
+   "score": 65
+  },
+  {
+   "name": "KLT Sales & Services Inc",
+   "base_city": "Vineland",
+   "state": "NJ",
+   "website": "http://www.kltsales.com/",
+   "phone": "856-696-1814",
+   "contact_page": "http://www.kltsales.com/contact-us/",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "partition_evidence": "The About page lists toilet partitions and toilet room accessories among the products it installs; it is a registered NJ public works contractor serving NJ, DE and PA.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "no",
+   "evidence_urls": [
+    "http://www.kltsales.com/",
+    "http://www.kltsales.com/about/",
+    "http://www.kltsales.com/toilet-partitions/",
+    "http://www.kltsales.com/contact-us/"
+   ],
+   "red_flags": [
+    "Base city not stated on its site (Vineland comes from the candidate list only); Vineland is about 40 miles from the area center",
+    "Sells the products it installs"
+   ],
+   "reason": "Installs toilet partitions for institutional and public works clients across the tri-state area, but its likely base in Vineland is beyond the 30-mile radius.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Union Wholesale Company",
+   "base_city": "Wilmington",
+   "state": "DE",
+   "website": "https://www.uwco.com/",
+   "phone": "(302) 656-4462",
+   "contact_page": "https://www.uwco.com/contact",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "The homepage says it supplies and installs commercial and industrial interior products throughout the Delaware Valley; the product list includes Toilet/Bathroom Partitions. Neither page says it installs partitions specifically.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Scranton Products (image filename only)"
+   ],
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://www.uwco.com/",
+    "https://www.uwco.com/products",
+    "https://www.uwco.com/products/toiletbathroom-partitions"
+   ],
+   "red_flags": [
+    "Wholesale supplier of partitions (buy-around risk)",
+    "Partition installation not stated outright"
+   ],
+   "reason": "A commercial interiors supplier and installer in Wilmington that carries toilet partitions, but it never says outright that it installs partitions.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 50
+  },
+  {
+   "name": "Unified Door & Hardware Group (Unified Specialty Services)",
+   "base_city": "Pennsauken",
+   "state": "NJ",
+   "website": "https://udhgroup.com/",
+   "phone": "+1 (856) 488-8843",
+   "email": "info@udhgroup.com",
+   "contact_page": "https://udhgroup.com/contact/",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "The Division 10 capabilities page lists 'Toilet partitions, accessories, lockers, signage' under What We Do; the company offers installation and distribution services.",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://udhgroup.com/capabilities/division-10/",
+    "https://udhgroup.com/locations/",
+    "https://udhgroup.com/contact/"
+   ],
+   "red_flags": [
+    "Mainly a door and hardware company with a nationwide presence; partition installation not shown in projects",
+    "Also a distributor"
+   ],
+   "reason": "A Pennsauken-based Division 10 provider just across the river from Philadelphia that lists toilet partitions and installation services; partition installs aren't proven.",
+   "added_by_checker": true,
+   "license": null,
+   "score": 50
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "Bensalem",
+   "state": "PA",
+   "website": "https://onepointpartitions.com/",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "partition_evidence": "The site returned 403. Search snippets show an online seller with delivery terminals (Bensalem PA, Thorofare NJ, Elkton MD) and DIY install guides; one page says there's no need to hire an installation crew.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://onepointpartitions.com/service-areas/pennsylvania-bathroom-partitions/philadelphia-bathroom-partitions/"
+   ],
+   "red_flags": [
+    "A direct online partitions competitor, not an installer",
+    "Bensalem is a delivery terminal, not an installation base"
+   ],
+   "reason": "A national online partitions seller that competes with Next Partitions; no evidence that it installs.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Tracorp",
+   "base_city": "Southampton",
+   "state": "PA",
+   "website": "http://tracorp.org/",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "partition_evidence": "Website returned 403. A CIS listing names Southampton, PA and lists toilet partitions and accessories among its products, with no mention of installation.",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://cisleads.com/company/details/22352"
+   ],
+   "red_flags": [
+    "Own website blocked (403); the listing points to tracorp.biz, which did not resolve",
+    "Listed in Southampton, not Willow Grove"
+   ],
+   "reason": "No installation evidence could be read: the site is blocked and the only listing shows a product supplier. Recheck by hand before ruling it out.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

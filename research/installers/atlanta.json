@@ -1,16 +1,315 @@
 {
  "area": "atlanta",
- "found_count": 0,
+ "found_count": 9,
  "sources_tried": [
-  "WebSearch (all queries: 'toilet partition installation Atlanta GA contractor', 'Division 10 specialties contractor Atlanta', 'bathroom partition installers Marietta/Alpharetta/Roswell GA'): BLOCKED, the shared 200-search budget for this turn was already used up by other agents. No searches ran. A follow-up run is needed once the budget resets or CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION is raised.",
-  "Bobrick Find a Rep (https://www.bobrick.com/find-a-rep): page loaded, but the results come from a dropdown that wasn't in the fetched content. No Georgia rep, dealer or installer could be read.",
-  "ASI Partitions (www.asipartitions.com/find-a-rep/): BLOCKED, the host didn't resolve because it's outside the session's allowed network domains. It has to be allowed in the session's network settings.",
-  "Global Partitions (www.globalpartitions.com/find-a-rep/): BLOCKED, the host didn't resolve because it's outside the session's allowed network domains. It has to be allowed in the session's network settings. After two hosts failed this way, I stopped trying more manufacturer sites, so Bradley, Hadrian, Metpar, General Partitions and Ampco/Ammco weren't tried.",
-  "Scranton Products Where to Buy (https://www.scrantonproducts.com/where-to-buy/): WORKED. It lists only a manufacturer's sales rep agency for GA: Southern States Architectural Sales (AL/GA/FL/MS/NC/SC/TN, 678.425.8796). The page doesn't say it installs, and it lists no Georgia dealers or installers. I didn't add it as a candidate.",
-  "The Blue Book (thebluebook.com search for toilet partitions, Atlanta region): BLOCKED, the site returned HTTP 403 Forbidden.",
-  "BuildingConnected / Procore network: not tried, because search was unavailable and both services need a sign-in for most listings.",
-  "Google business listings, Yelp, BBB: not tried, because they're reached through web search, which was out of budget.",
-  "Repo check (/home/user/nextpartitions): no earlier Atlanta installer prospect data found. Only research/local-rules/cities.json mentions Atlanta."
+  "Seed file research/installers/raw/seeds/atlanta.json: WORKED. 47 maps results and 26 web results. The web results had only google.com/goto redirect URLs with no domains, so I couldn't use them. I opened the plausible maps websites. Partitions Inc (partitionsgc.com) is a commercial GC and restoration firm with no toilet partition work shown, so I left it out. JSC Ltd. Co. is a handyman with no partition work. Atlanta Sunbelt Products (Winder) is a manufacturer and its site returned 503. The rest were remodelers, glass shops and stores.",
+  "Scranton Products Where to Buy (https://www.scrantonproducts.com/where-to-buy/): WORKED. The only GA entry is a sales rep agency, Southern States Architectural Sales (678.425.8796), with no installer or dealer listed.",
+  "Hadrian where-to-buy, Metpar find-a-rep, General Partitions representatives: all returned 404 at the URLs I tried.",
+  "Bobrick, ASI/Global Partitions, Bradley, Ampco/Ammco locators: not tried this run. An earlier run found Bobrick's locator unreadable and asipartitions.com/globalpartitions.com outside the allowed network domains.",
+  "The Blue Book (thebluebook.com): BLOCKED, every iProView page returned 403. Search snippets showed Division 10 Specialties South (Trion, GA, about 80 miles away, outside the radius) and Partition Plus Inc (location unknown).",
+  "BuildingConnected / Procore public profiles: not reached, because no profiles came up in search and the search cap was hit.",
+  "WebSearch: used all 8 of 8 allowed searches. They covered toilet partition installation Atlanta, Division 10 contractor Atlanta, Blue Book Atlanta, suburb-name queries, the GA furnish-and-install query, Section 10 Inc Norcross, Terminus Specialties / Georgia Accessories, and Kennesaw/Lawrenceville/Duluth/Smyrna. These searches turned up Terminus Specialties, One Point Partitions and the BBB partition category.",
+  "BBB category page https://www.bbb.org/us/ga/chamblee/category/partition: WORKED. Only Georgia Accessories Inc (Tucker) looked relevant; no listing mentions toilet partitions.",
+  "onepointpartitions.com and members.ghcc.com: BLOCKED (403).",
+  "phoenix-0af34b1.aws.mapquest.com: BLOCKED, the host is outside the session's allowed network domains. It has to be allowed in the session's network settings.",
+  "Skipped as out of scope: Prestige Distribution (Northbrook, IL, national installer network with no local base), UDH Group (NJ), and Division 10 Specialties South (Trion, GA, too far)."
  ],
- "candidates": []
+ "candidates": [
+  {
+   "name": "Terminus Specialties, Inc.",
+   "base_city": "McDonough",
+   "state": "GA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.terminusspecialties.com/",
+   "phone": "470-507-0587",
+   "email": "darwin@terminusspecialties.com",
+   "contact_page": "https://www.terminusspecialties.com/contact-1",
+   "partition_evidence": "Homepage lists restroom partitions, partition hardware and repair kits with 'optional installation for all products'; contact page says it 'delivers expert installation and reliable service across partitions, doors, lockers, and safety products'.",
+   "reason": "Commercial Division 10 supplier just south of Atlanta (McDonough, about 28 miles) that states it installs partitions for general contractors on commercial projects. No project photos of partitions seen, and it also sells partitions directly.",
+   "red_flags": [
+    "Sells and supplies partitions itself (buy-around risk)",
+    "No partition project photos or brands seen",
+    "Email shown is a named person's address"
+   ],
+   "evidence_urls": [
+    "https://www.terminusspecialties.com/",
+    "https://www.terminusspecialties.com/contact-1"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Terminus Specialties, Inc.",
+    "area": "atlanta",
+    "status": "not_online",
+    "registry": "Georgia State Licensing Board for Residential and General Contractors (license verification at verify.sos.ga.gov); City of Atlanta business license (ATLBIZ) / Office of Buildings Accela portal",
+    "source_url": "https://verify.sos.ga.gov/verification/",
+    "note": "State lookup returned HTTP 403 to automated access (verify.sos.ga.gov and sos.ga.gov both 403 on 2026-11-19), so no state license record could be checked. Georgia's own rule for partition installers is still unclear (general contractor license over $2,500; possible specialty-contractor exemption not verified). City of Atlanta: no public business-license lookup found (business services moved to atlbiz.atlantaga.gov, which needs an account); the Office of Buildings Accela portal (aca-prod.accela.com/ATLANTA_GA/APO/APOLookup.aspx) offers 'Look Up by Licensed Professional' only through a postback search form, not checked. Company site lists restroom partitions with 'Optional installation for all products' and says it is based just south of Atlanta; no license number shown (https://www.terminusspecialties.com/). Confirm by phone with the state board and the City of Atlanta Office of Revenue."
+   },
+   "score": 70
+  },
+  {
+   "name": "Restroom Stalls and All (RSA)",
+   "base_city": "Gainesville",
+   "state": "GA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Bobrick",
+    "Koala Kare",
+    "XLERATOR",
+    "Fino"
+   ],
+   "website": "https://restroomstallsandall.com/",
+   "phone": "1-844-817-8255",
+   "email": "cs@restroomstallsandall.com",
+   "contact_page": "https://restroomstallsandall.com/pages/contact-us",
+   "rating": 4.9,
+   "review_source": "Google (as shown on company homepage); BBB A+ accredited (as claimed on homepage)",
+   "partition_evidence": "Homepage says partitions are installed by 'our own W2 installers' in GA, FL, AL, TN, SC/NC; lists commercial projects incl. Grady Health System and Georgia Tech (Atlanta) and UGA Sanford Stadium.",
+   "reason": "Clearly installs toilet partitions with its own crews on commercial jobs, including Atlanta projects. Base in Gainesville is about 50 miles from the area center, and it is primarily a partition seller (online instant quote, nationwide shipping), so it competes directly with Next Partitions.",
+   "red_flags": [
+    "Direct competitor: sells partitions online with instant quotes and nationwide shipping (high buy-around risk)",
+    "Base city about 50 miles from Atlanta center, outside the 30-mile radius",
+    "Rating and BBB status are self-reported on its own site, not read on Google/BBB"
+   ],
+   "evidence_urls": [
+    "https://restroomstallsandall.com/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Restroom Stalls and All (RSA)",
+    "area": "atlanta",
+    "status": "not_online",
+    "registry": "Georgia State Licensing Board for Residential and General Contractors (verify.sos.ga.gov); City of Atlanta business license (ATLBIZ) / Office of Buildings Accela portal",
+    "source_url": "https://verify.sos.ga.gov/verification/",
+    "note": "State verification portal returned HTTP 403 to automated access on 2026-11-19; no city business-license public lookup found. Company site (https://restroomstallsandall.com/) says 'RSA installs commercial restroom partitions, bathroom stall dividers and Division 10 products across the Southeast', base Gainesville, GA; shows BBB accreditation but no contractor license number (BBB is not a license)."
+   },
+   "score": 60
+  },
+  {
+   "name": "Accessories Unlimited Inc (AUI)",
+   "base_city": "Stone Mountain",
+   "state": "GA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://accessoriesunlimited.net/",
+   "phone": "404-298-1779",
+   "email": "sales@accunl.com",
+   "contact_page": "https://accessoriesunlimited.net/contact-us/",
+   "partition_evidence": "Supplies Division 8 and 10 including toilet partitions and offers 'Full Service Installation' with a one-year installation warranty; does not say installation covers partitions specifically. One project linked (Northside Gwinnett Tower) without detail.",
+   "reason": "Long-running (50+ years) commercial Division 8/10 supplier in Stone Mountain serving healthcare, education and commercial construction; installation offered but partition installs not shown. It also supplies partitions itself.",
+   "red_flags": [
+    "Sells and supplies partitions itself (buy-around risk)",
+    "No partition installation photos or projects seen",
+    "No brands named"
+   ],
+   "evidence_urls": [
+    "https://accessoriesunlimited.net/",
+    "https://accessoriesunlimited.net/contact-us/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Accessories Unlimited Inc (AUI)",
+    "area": "atlanta",
+    "status": "not_online",
+    "registry": "Georgia State Licensing Board for Residential and General Contractors (verify.sos.ga.gov); City of Atlanta business license (ATLBIZ) / Office of Buildings Accela portal",
+    "source_url": "https://verify.sos.ga.gov/verification/",
+    "note": "State verification portal returned HTTP 403 to automated access on 2026-11-19; no city business-license public lookup found. Company site (https://accessoriesunlimited.net/) lists toilet partitions and 'Full Service Installation' (not stated to cover partitions specifically), base Stone Mountain, GA; no license number shown."
+   },
+   "score": 50
+  },
+  {
+   "name": "InEx Systems Inc",
+   "base_city": "Kennesaw",
+   "state": "GA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Corflex",
+    "Woodfold",
+    "MobilFlex",
+    "Crown Door",
+    "ActivWall",
+    "Screenflex"
+   ],
+   "website": "https://www.inexsystems.com/",
+   "phone": "(678) 766-8201",
+   "email": "info@INEXSystems.com",
+   "contact_page": "https://www.inexsystems.com/",
+   "partition_evidence": "Site title and meta describe it as a Division 10 specialty contractor supplying 'toilet partitions and accessories'; homepage says 'Offering the best in bathroom compartments and accessories!' and describes it as a specialty subcontractor (since 1993) providing product and installation. Main focus shown is operable walls; no toilet partition project photos seen.",
+   "reason": "Kennesaw specialty subcontractor serving Atlanta hotels, venues and colleges; supplies bathroom compartments and installs specialties, but partition installation is not shown explicitly. Core business is operable walls.",
+   "red_flags": [
+    "Main focus is operable/moveable walls, not toilet partitions",
+    "Supplies partitions itself",
+    "Site has template leftovers (info@new.com, 'Sphere Construction' footer on a subpage)"
+   ],
+   "evidence_urls": [
+    "https://www.inexsystems.com/",
+    "https://www.inexsystems.com/hospitality-and-conference"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "InEx Systems Inc",
+    "area": "atlanta",
+    "status": "not_online",
+    "registry": "Georgia State Licensing Board for Residential and General Contractors (verify.sos.ga.gov); City of Atlanta business license (ATLBIZ) / Office of Buildings Accela portal",
+    "source_url": "https://verify.sos.ga.gov/verification/",
+    "note": "State verification portal returned HTTP 403 to automated access on 2026-11-19; no city business-license public lookup found. Company site (https://www.inexsystems.com/) shows 'Division 10 toilet partitions and accessories' and 'Atlanta, GA' in its header (task lists Kennesaw); installation not explicitly stated on the visible page; no license number shown."
+   },
+   "score": 50
+  },
+  {
+   "name": "Mason Hall & Company, Inc.",
+   "base_city": "Mableton",
+   "state": "GA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://masonhall.com/",
+   "phone": "(770) 432-1322",
+   "email": "",
+   "contact_page": "https://masonhall.com/contacts",
+   "partition_evidence": "Homepage calls it a 'multi-line distributor and installer of Division 10 specialty products' with Toilet Partitions as a product category; no partition installation projects or photos seen.",
+   "reason": "Mableton (west Atlanta metro) Division 10 distributor that says it installs; partitions are a listed category, but no explicit partition installation work or projects were seen. Also a distributor, so a buy-around risk.",
+   "red_flags": [
+    "Distributor that sells partitions itself",
+    "No project photos or brands shown",
+    "Only staff-named emails on contact page; no general company email"
+   ],
+   "evidence_urls": [
+    "https://masonhall.com/",
+    "https://masonhall.com/contacts"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Mason Hall & Company, Inc.",
+    "area": "atlanta",
+    "status": "not_online",
+    "registry": "Georgia State Licensing Board for Residential and General Contractors (verify.sos.ga.gov); City of Atlanta business license (ATLBIZ) / Office of Buildings Accela portal",
+    "source_url": "https://verify.sos.ga.gov/verification/",
+    "note": "State verification portal returned HTTP 403 to automated access on 2026-11-19; no city business-license public lookup found. Company site (https://masonhall.com/) describes it as 'a multi-line distributor and installer of Division 10 specialty products' with toilet partitions as a product category, base Mableton, GA; no license number shown."
+   },
+   "score": 45
+  },
+  {
+   "name": "Cain Sales Company, Inc.",
+   "base_city": "Atlanta (Doraville)",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Precision Plumbing Products",
+    "Clarion Bathware",
+    "Rockford Separators",
+    "American Specialties, Inc. (ASI)",
+    "All American Metal",
+    "Atlanta Sunbelt Products"
+   ],
+   "website": "http://www.cainsalesco.com/",
+   "phone": "(770) 662-0755",
+   "email": "sales@cainsalesco.com",
+   "contact_page": "http://www.cainsalesco.com/contact",
+   "partition_evidence": "Lists 'Toilet Partitions & Privacy Screens' as a product category; no installation mentioned.",
+   "reason": "Manufacturer's representative supplying contractors and distributors; no evidence it installs partitions.",
+   "red_flags": [
+    "Manufacturer's rep / supplier, not an installer"
+   ],
+   "evidence_urls": [
+    "http://www.cainsalesco.com/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "unknown",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "partition_evidence": "Site blocked automated access (403). Search snippets of its Georgia pages describe delivery terminals (Kennesaw, Ellenwood, Atlanta and others) and self-guided installation instructions or hiring a contractor; no own crews confirmed.",
+   "reason": "Online partition seller with freight delivery terminals, not a local installer; installation appears to be DIY or third-party contractor. Could not read the site directly.",
+   "red_flags": [
+    "Online partition seller (direct competitor)",
+    "Listed 'terminals' look like freight terminals, not offices",
+    "Site not readable (403)"
+   ],
+   "evidence_urls": [
+    "https://onepointpartitions.com/service-areas/georgia-bathroom-partitions/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "Georgia Accessories Inc",
+   "base_city": "Tucker",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(770) 934-7588",
+   "review_source": "BBB (not accredited, no rating shown)",
+   "partition_evidence": "Only a BBB directory listing under the 'Partitions' category; no website, services or projects found.",
+   "reason": "No website or evidence of partition installation found; only a BBB category listing. Could be re-checked by phone, but nothing to verify now.",
+   "red_flags": [
+    "No website found",
+    "Phone from BBB directory only"
+   ],
+   "evidence_urls": [
+    "https://www.bbb.org/us/ga/ila/category/partition"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Section 10 Inc",
+   "base_city": "Norcross",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "None found; two searches returned no website, listing or record for this business.",
+   "reason": "Could not confirm the business exists or what it does; no website or listing found.",
+   "red_flags": [
+    "No web presence found"
+   ],
+   "evidence_urls": [],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
 }

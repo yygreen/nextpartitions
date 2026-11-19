@@ -1,51 +1,231 @@
 {
  "area": "chicago",
- "found_count": 1,
+ "found_count": 6,
  "sources_tried": [
-  "WebSearch: BLOCKED. The turn's shared budget of 200 web searches was already used up before this agent started, so none of the step 3/4 web searches ran ('toilet partition installation Chicago', Division 10 Chicago, Naperville/Schaumburg). Rerun this area once the search budget resets, or raise CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION.",
-  "Bobrick find-a-rep (bobrick.com/find-a-rep/): reached, but results load from a dropdown dynamically; no Illinois reps in the static page",
-  "ASI Global Partitions representatives (asi-globalpartitions.com/representatives/): reached, but results are dynamic (state filter includes Illinois North/South, Indiana NW); no records in the static page, and URL parameters did not help",
-  "Scranton Products where-to-buy and find-product-specialist: reached; only a manufacturer product specialist for IL (not a dealer or installer), so none recorded",
-  "Hadrian sales-rep-locator: reached, but results are dynamic (template placeholders only)",
-  "General Partitions distributors page: reached; no distributor list published (only a pricing request email)",
-  "Metpar homepage: no dealer locator; it points to the Scranton product specialist page",
-  "Bradley Corp homepage: fetch returned almost no content; no locator found",
-  "Ampco/Ammco: not tried (out of time)",
-  "The Blue Book (thebluebook.com): 403 Forbidden",
-  "BBB category page (guessed URL): 404",
-  "Yelp search page: 403 Forbidden",
-  "BuildingConnected / Procore network: not tried (no search available to find profile URLs)",
-  "chicagotoiletpartitions.com: redirects to app.toiletpartitions.com, which showed a page title only, with no location or installer information; not recorded",
-  "partitionsandaccessories.com: 503; bathroompartitions.com: DNS not resolvable"
+  "Seed file chicago.json: worked. Of 57 Maps and 18 web results, most were shower-glass shops, remodelers or stores. Opened Privacy Plus Partitions (Elgin): a Corian partition manufacturer, skipped. Opened toiletpartitions.com ('Chicago Toilet Partitions'): a national online seller run by Fry Specialty Co., skipped. Opened SelectSpace Partitions: outdoor patio partitions, skipped. ASI Accurate Partitions (Burr Ridge) is a manufacturer plant, skipped.",
+  "Bobrick find-a-rep: page loads but results are dynamic and empty, so it didn't work.",
+  "Scranton Products find-a-rep: 404.",
+  "Hadrian find-a-representative: 404.",
+  "ASI, Bradley, Metpar, General Partitions and Ampco/Ammco locators: not tried (the locators tried were dynamic or 404).",
+  "The Blue Book (thebluebook.com iProView pages 805136, 802033, 259104): blocked (403). Only search snippets were seen.",
+  "BuildingConnected / Procore: not tried (no public pages reached within the search cap).",
+  "WebSearch: worked. All 8 searches used: toilet partition installation Chicago, Division 10 Chicago, Blue Book Chicago, Partition Pros Bartlett, Naperville/Schaumburg, NW Indiana Hammond/Gary, Chicagoland Division 10 specialty.",
+  "BBB category pages (Cicero, Lisle partition): worked, but no listed firm was tagged as toilet partitions. Innerpac (Cicero), Modernfold Chicago and D&B Installers (Bourbonnais, lockers, about 55 mi away) were not confirmed. The Innerpac site returned 503.",
+  "CME Contractor Specialties and Unified Specialty Services (UDH Group): they install partitions but are based in NY and NJ with no Chicago presence, so excluded.",
+  "Newton Distributing: Natick, MA national distributor, excluded.",
+  "onepointpartitions.com: blocked (403)."
  ],
  "candidates": [
   {
-   "name": "LaForce (Chicago offices)",
-   "base_city": "Vernon Hills",
+   "name": "Prestige Distribution, Inc.",
+   "base_city": "Northbrook",
    "state": "IL",
-   "verdict": "reject",
-   "installs_partitions": "unknown",
+   "verdict": "strong",
+   "installs_partitions": "yes",
    "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "ASI",
+    "Bobrick",
+    "Bradley",
+    "Hadrian",
+    "Scranton Products",
+    "Privada",
+    "Thrislington",
+    "Holtman",
+    "JL Industries",
+    "Ketcham",
+    "Koala"
+   ],
+   "phone": "(847) 480-7667",
+   "email": "web@prestigedistribution.com",
+   "contact_page": "https://prestigedistribution.com/pages/contact-us",
+   "website": "https://prestigedistribution.com/",
+   "evidence_urls": [
+    "https://prestigedistribution.com/",
+    "https://prestigedistribution.com/pages/toilet-partition-installers",
+    "https://prestigedistribution.com/pages/contact-us"
+   ],
+   "partition_evidence": "Installer page claims 5,000+ installations of commercial bathroom stall partitions, certified installer for Privada, Thrislington and Holtman, and lists brands installed (ASI, Bobrick, Hadrian, Scranton). Services include field measurement and installation. A search result also cited a Chicago RSM office job (Privada partitions furnished and installed), but I did not open that project page.",
+   "red_flags": [
+    "Sells and distributes partitions itself, including ASI, Bobrick, Bradley and Scranton, which Next Partitions also resells: high buy-around risk",
+    "Installs through a nationwide contractor network as well as its own team, so who does the work isn't clear"
+   ],
+   "reason": "A Northbrook distributor that clearly furnishes and installs commercial toilet partitions in Chicagoland. It is a direct competitor in partition sales, so it is a strong installer but a serious buy-around risk.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Prestige Distribution, Inc.",
+    "area": "chicago",
+    "status": "not_found",
+    "registry": "City of Chicago Department of Buildings, General Contractors (Active and Inactive) list",
+    "source_url": "https://webapps1.chicago.gov/licensedcontractors/generalAll",
+    "note": "None of the 11,683 active or inactive Chicago general contractor records contains 'Prestige Distribution', and no record for this firm has a Northbrook address. The 'Prestige' records that do appear are unrelated firms (Prestige Construction LLC in La Grange, Prestige Contracting Services in Wilmette and others). The firm may be a distributor that hands installation to subcontractors, or it may not work inside Chicago city limits; confirm before listing. There is no state license in Illinois."
+   },
+   "score": 70
+  },
+  {
+   "name": "ISI - Installation Specialists, Inc.",
+   "base_city": "Itasca",
+   "state": "IL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(630) 250-7061",
+   "contact_page": "https://www.isi-install.com/connect-with-isi",
+   "website": "https://www.isi-install.com/",
+   "evidence_urls": [
+    "https://www.isi-install.com/",
+    "https://cuboid-horse-fef5.squarespace.com/capabilities"
+   ],
+   "partition_evidence": "Its capabilities page lists \"Restrooms and Locker Rooms (benches, cabinetry, lockers, partitions)\" under custom woodworking installation. It never says \"toilet partitions\" and shows no restroom stall photos.",
+   "red_flags": [
+    "Mainly a commercial furniture installer; restroom partitions are only one line in its capabilities list",
+    "Contact page URL taken from the site's menu link, not opened"
+   ],
+   "reason": "A large, long-running commercial installer in Chicagoland with restroom partitions in its capabilities. Toilet partition work isn't shown, so it is a possible candidate with no buy-around risk.",
+   "added_by_checker": false,
+   "license": {
+    "name": "ISI - Installation Specialists, Inc.",
+    "area": "chicago",
+    "status": "found_active",
+    "registry": "City of Chicago Department of Buildings, General Contractors (Active and Inactive) list",
+    "license_number": "TGC079005",
+    "license_type": "General Contractor (Class D)",
+    "source_url": "https://webapps1.chicago.gov/licensedcontractors/generalAll",
+    "note": "Listed as INSTALLATION SPECIALISTS INC, base city Itasca, IL. License expiration 04/15/2027, 'License Inactive?' = No. Read from the JSON feed behind the list page (https://webapps1.chicago.gov/licensedcontractors/allcontractors/paginated/general, all 11,683 records downloaded and searched by name) on 2026-11-19. Illinois has no state general contractor license, so the Chicago DOB license is the only record that applies, and only for work inside Chicago city limits."
+   },
+   "score": 70
+  },
+  {
+   "name": "Partition Pros",
+   "base_city": "Bartlett",
+   "state": "IL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
    "sells_partitions": "yes",
    "within_area": "nearby",
    "brands": [],
-   "website": "https://laforceinc.com/",
-   "phone": "(847) 634-2828",
-   "contact_page": "https://laforceinc.com/contact/",
+   "phone": "847-888-8181",
+   "contact_page": "https://partitionpros.net/contact.php",
+   "website": "https://partitionpros.net/",
    "evidence_urls": [
-    "https://laforceinc.com/",
-    "https://laforceinc.com/what-we-do/building-specialties/",
-    "https://laforceinc.com/what-we-do/pre-install-install/",
-    "https://laforceinc.com/laforce-locations/",
-    "https://laforceinc.com/contact/"
+    "https://partitionpros.net/",
+    "https://partitionpros.net/contact.php"
    ],
-   "partition_evidence": "The Building Specialties page lists 'Toilet Partitions', 'Multiple Material Types' and 'Partition Hardware for all Manufacturers' as products LaForce provides. Its Pre-Install & Install page covers only doors, frames and door hardware, and no page shows toilet partition installation.",
+   "partition_evidence": "The homepage says \"We offer a full line of toilet partitions\" and the About section mentions installing bathroom partitions. The main business is gym equipment, operable partitions and bleachers.",
    "red_flags": [
-    "Supplies toilet partitions itself, as a commercial door, hardware and Division 10 distributor (direct competitor and buy-around risk)",
-    "No evidence that it installs partitions; its install service is doors, frames and hardware only",
-    "Large multi-state distributor with headquarters in Green Bay, WI, not a local installer"
+    "Main focus is operable gym partitions, bleachers and backstops, not restroom stalls",
+    "Offers its own line of toilet partitions (buy-around risk)",
+    "Base city not shown on its own site (Bartlett comes from the candidate list and a MapQuest search result); no project photos of restroom stalls seen",
+    "Contact page lists personal cell numbers for sales staff; only the office number is used here"
    ],
-   "reason": "LaForce is a commercial Division 10 and door-hardware distributor that sells toilet partitions. Its installation service covers doors and hardware only, so it is a competing supplier rather than an installer. Chicago-area offices are in Vernon Hills ((847) 634-2828) and Willowbrook ((630) 325-1950); the general line is 1-800-236-8858 and no company email is published.",
+   "reason": "Its own site says it supplies and installs toilet partitions for institutional and commercial facilities in the west suburbs. The partition work is secondary to gym equipment and there are no restroom project photos, so confirm during vetting.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Partition Pros",
+    "area": "chicago",
+    "status": "not_found",
+    "registry": "City of Chicago Department of Buildings, General Contractors (Active and Inactive) list",
+    "source_url": "https://webapps1.chicago.gov/licensedcontractors/generalAll",
+    "note": "No Chicago general contractor record (active or inactive) contains 'Partition', and none of the Bartlett-address records matches this firm. If it takes jobs inside Chicago city limits that need a permit, it would need a DOB general contractor license (Class A to E), or would have to work under a licensed general contractor. Confirm with the firm and Chicago DOB. There is no state license in Illinois."
+   },
+   "score": 60
+  },
+  {
+   "name": "Commercial Specialties, Inc.",
+   "base_city": "Rolling Meadows",
+   "state": "IL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bradley"
+   ],
+   "phone": "847.545.9900",
+   "contact_page": "https://www.commercial-specialties.com/Articles.php?ID=242",
+   "website": "http://www.commercial-specialties.com/",
+   "evidence_urls": [
+    "http://www.commercial-specialties.com/",
+    "https://www.commercial-specialties.com/Articles.php?ID=242"
+   ],
+   "partition_evidence": "Its own site is an online store selling toilet partitions (stock baked enamel and solid plastic) and Bradley washroom accessories, with no installation text. Search snippets of its Blue Book listing (thebluebook.com/iProView/805136, which returned 403 so I couldn't read it) say it has provided installation of toilet compartments, shower compartments and lockers for 30+ years in Chicagoland and Northwest Indiana.",
+   "red_flags": [
+    "Sells partitions itself (buy-around risk)",
+    "Installation claim seen only in search snippets of a directory listing, not on its own site",
+    "Snippets mention 1-4 employees and a 2006 establishment date that conflicts with the 30+ years claim"
+   ],
+   "reason": "A Rolling Meadows partition and washroom accessories dealer that may also install. Its own site doesn't show installation, so it stays possible until confirmed.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Commercial Specialties, Inc.",
+    "area": "chicago",
+    "status": "not_found",
+    "registry": "City of Chicago Department of Buildings, General Contractors (Active and Inactive) list",
+    "source_url": "https://webapps1.chicago.gov/licensedcontractors/generalAll",
+    "note": "No Chicago general contractor record (active or inactive) contains 'Commercial Specialt', and none of the Rolling Meadows-address records matches this firm. It may work as a subcontractor under a licensed general contractor's permit; confirm with the firm and Chicago DOB. There is no state license in Illinois."
+   },
+   "score": 50
+  },
+  {
+   "name": "Consumers Supply Company",
+   "base_city": "Chicago",
+   "state": "IL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Hadrian"
+   ],
+   "phone": "312-666-6080",
+   "contact_page": "https://www.consumersplumbing.com/contact/",
+   "website": "http://www.consumersplumbing.com/",
+   "evidence_urls": [
+    "http://www.consumersplumbing.com/",
+    "https://www.consumersplumbing.com/category/brands/hadrian-toilet-partitions-brands/"
+   ],
+   "partition_evidence": "Sells Hadrian toilet partitions in its plumbing supply catalogue. No installation service shown.",
+   "red_flags": [
+    "Plumbing supply house that sells partitions (buy-around risk)",
+    "No installation evidence"
+   ],
+   "reason": "A Chicago plumbing and bath supplier that sells Hadrian partitions but shows no installation work, so it isn't an installer.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "unknown",
+   "state": "IL",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [
+    "Hadrian"
+   ],
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=13",
+    "https://onepointpartitions.com/?p=6208"
+   ],
+   "partition_evidence": "From search results only (its site returned 403): an online partition seller with 5-7 day delivery and do-it-yourself install tutorials. Its installation page says hiring professionals \"isn't necessary\". Illinois locations named in snippets look like delivery terminals.",
+   "red_flags": [
+    "Online partition seller and direct competitor",
+    "Do-it-yourself installation model, no install crews shown",
+    "Site blocked automated access; nothing read first-hand"
+   ],
+   "reason": "A national online seller of partitions with do-it-yourself installation. It isn't an installer and is a competitor.",
    "added_by_checker": false,
    "license": null,
    "score": 25
