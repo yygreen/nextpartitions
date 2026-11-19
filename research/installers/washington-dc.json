@@ -1,7 +1,22 @@
 {
  "area": "washington-dc",
- "found_count": 7,
+ "found_count": 14,
  "sources_tried": [
+  "Seed file research/installers/raw/seeds/washington-dc.json: worked; 3 plausible maps results (MD Partitions, Accessible Construction Supply, R.B. Fulton); the rest were remodelers, glass shops and stores; web seeds were Google redirect links without domains",
+  "Bobrick Find A Rep (bobrick.com/find-a-rep/): loaded, but listings load dynamically, so no reps could be read",
+  "Hadrian sales rep locator (hadrian-inc.com/sales-rep-locator/): dynamic template, so no reps could be read",
+  "Scranton Products where-to-buy: worked; only a manufacturer territory specialist for DC/MD/VA, not an installer (not included)",
+  "ASI / American Specialties representatives page: dynamic form, so no reps could be read",
+  "General Partitions and Metpar rep pages: 404 at the guessed URLs",
+  "Bradley, Ammco/Ampco, Global Partitions locators: not reached (search cap)",
+  "The Blue Book (thebluebook.com): blocked (403) on WebFetch; profiles were seen only through search snippets (Frank M. Waters, Steel Products, Barranger, Partition Plus, Accessible Construction Supply)",
+  "BuildingConnected / Procore network: not tried (search cap)",
+  "BBB: Partition Plus profile found via search, but the page returned 403",
+  "Yelp: no results surfaced",
+  "MapQuest: pages returned empty",
+  "Houzz: worked (Partition Plus profile)",
+  "WebSearch: 8 of 8 used; general DC/MD/VA Division 10 queries mostly returned Blue Book, One Point Partitions (online supplier, self-install, skipped), Prestige Distribution and Newton Distributing (national/out-of-area, skipped), Kelley Bros (no DC/MD/VA office, skipped)",
+  "One Point Partitions DC page: 403",
   "Seed file washington-dc.json: worked. Of 42 maps hits, only MD Partitions, R.B. Fulton and Accessible Construction Supply were relevant; the rest were remodelers, glass shops and stores. Web hits were Google redirect links and were not usable.",
   "Bobrick find-a-rep: the page loads but the rep dropdown is script-driven, so no results were readable.",
   "Scranton Products find-a-rep: 404 at the URL tried.",
@@ -164,6 +179,30 @@
     "note": "Base city unknown and no website given. DC work needs a DLCP Basic Business License in a contractor category. SCOUT couldn't be queried automatically, and the MD MHIC lookup is behind a reCAPTCHA. No license status was read; check SCOUT by hand."
    },
    "score": 45
+  },
+  {
+   "name": "Steel Products, Inc.",
+   "base_city": "Frederick",
+   "state": "MD",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/393296/steel-products-inc/subcontractors/"
+   ],
+   "partition_evidence": "Per search snippets of its Blue Book profile: sells toilet partitions, cubicles and lockers, with 'factory represented sales and installation in the greater Washington, DC metropolitan area,' covering MD, VA, DE and DC, including Alexandria, Arlington and Fairfax. I couldn't open the page myself (403).",
+   "reason": "Looks like a commercial partition seller and installer serving DC, but the evidence is only search snippets of a blocked directory page. No website or contact details found. The base city of Frederick comes from a separate Blue Book listing snippet.",
+   "red_flags": [
+    "No website found",
+    "Evidence only from search snippets of a directory page",
+    "Sells partitions (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 43
   },
   {
    "name": "American Building Specialties Corp.",

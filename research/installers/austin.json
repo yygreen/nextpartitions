@@ -1,6 +1,6 @@
 {
  "area": "austin",
- "found_count": 10,
+ "found_count": 20,
  "sources_tried": [
   "Scranton Products where-to-buy (scrantonproducts.com/where-to-buy): worked, but it lists only a product specialist (Architectural Cornerstone Group, covering TX), no Austin installers or dealers",
   "ASI / American Specialties representatives page (americanspecialties.com/representatives): loaded, but reps sit behind a state dropdown the fetch couldn't use, so no Texas reps came back",
@@ -16,7 +16,19 @@
   "BBB: searches returned only generic category pages, no Austin partition installer",
   "accessories.toiletpartitions.com: blocked (HTTP 403); used only the search snippet",
   "Inter-Co (Division 10 installer, hiring subcontract installers in Austin per Glassdoor/Teal postings): left out because no local base was found",
-  "Left out as out of area or no install confirmed: Texas Specialties & Installation (Grand Prairie), IntegrityOne Solutions (Waco, install not stated), Coach Partitions (Columbia SC), Restroom Stalls and All (Gainesville GA, installs only in the Southeast), One Point Partitions (online seller, Temple TX delivery terminal, DIY install), Garrett Installation (Austin, interior specialties only, no partitions mentioned)"
+  "Left out as out of area or no install confirmed: Texas Specialties & Installation (Grand Prairie), IntegrityOne Solutions (Waco, install not stated), Coach Partitions (Columbia SC), Restroom Stalls and All (Gainesville GA, installs only in the Southeast), One Point Partitions (online seller, Temple TX delivery terminal, DIY install), Garrett Installation (Austin, interior specialties only, no partitions mentioned)",
+  "Seeds file research/installers/raw/seeds/austin.json: read; most Maps results are glass, remodel, plumbing or supply stores. Useful: Construction Specialists of Central Texas, LaForce. T-Square Company checked: residential accessibility remodeler, rejected",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): loaded but the rep results are dropdown-driven; no Austin rep returned",
+  "Hadrian find-a-rep (hadrian-inc.com/en-us/find-a-rep): HTTP 404",
+  "Scranton Products where-to-buy: worked; lists only Architectural Cornerstone Group (rep for TX and 7 other states, 972.439.3954), not an installer",
+  "ASI, Bradley, Metpar, General Partitions, Ampco/Ammco locators: not tried (fetch budget); no Austin dealer surfaced in searches",
+  "The Blue Book (thebluebook.com search): blocked, HTTP 403; no Blue Book results in web search",
+  "Procore Network: worked. Austin toilet-compartments category was mostly unrelated trades; Austin specialties category gave Aztec Specialtiez (Buda) and BERNCO; two profile URLs returned 404",
+  "BuildingConnected: not tried",
+  "Yellow Pages (yellowpages.com/austin-tx/restroom-partitions): worked; gave Andon Specialties (Stone Panels and CertaPro were not relevant)",
+  "WebSearch (8 of 8 used): toilet partition installation Austin; Division 10 contractor Austin; Round Rock/Georgetown/Cedar Park/Pflugerville; Texas restroom partitions installer; Blue Book Austin; San Marcos/Temple/Waco/New Braunfels; Yelp/BBB Austin. Results were dominated by One Point Partitions (online seller, Temple TX delivery terminal, DIY install, left out)",
+  "Yelp and BBB: no Austin partition installer listings came up in search",
+  "Left out: Innergy Interiors (El Paso, says it serves Austin but is 500+ miles away), Partition Pros (DFW crew; outside DFW uses an installer network; Austin not mentioned), Prestige Distribution (national network, Chicago/Dallas offices), D10 Specialties (Irving) and Chatham Worth (Flower Mound): both DFW and do not mention Austin, Texas Specialties & Installation (Grand Prairie, installation and Austin not stated), Built Rite Specialties (Magnolia, about 150 mi, Austin not stated), Hohmann Development Services and RG Installation (San Antonio, both list partition installation but say only San Antonio), Specialties Specialists LLC (San Antonio, Thumbtack page unreadable), ToiletPartitions.com / Fry Specialty (online seller with no Austin base), Fast Track Installation (Austin office furniture installer, no partition work), UDH Group (no Texas location stated)"
  ],
  "candidates": [
   {
@@ -33,37 +45,38 @@
    "phone": "(737) 308-2085",
    "email": "breakthroughatx@gmail.com",
    "contact_page": "https://austinrestroompartitions.com/contact",
+   "partition_evidence": "Homepage lists restroom partition and bathroom stall installation, repair and hardware replacement as a Division 10 sub on commercial builds, tenant finish-outs and renovations in Austin.",
+   "red_flags": [
+    "Free Gmail address instead of a company domain",
+    "No reviews, ratings or license/registration shown on the site",
+    "Only one photo, not identified as a completed project; single testimonial",
+    "Trades under a different name (Breakthrough General Contractors)"
+   ],
+   "reason": "Its own site says it installs and repairs restroom partitions for commercial work in Austin and says it is an installer, not a dealer. A thin web presence means vetting (insurance, references, City of Austin contractor registration) matters.",
    "evidence_urls": [
     "https://austinrestroompartitions.com/",
     "https://austinrestroompartitions.com/contact"
-   ],
-   "partition_evidence": "Site lists restroom partition and stall installation, repair, hardware replacement and accessory installation. Works as a Division 10 subcontractor on commercial builds and finish-outs.",
-   "reason": "An Austin-based contractor that installs and repairs commercial restroom partitions. Its FAQ says it is an installer, not a partition dealer, and that it works with any brand, so it fits the referral model well.",
-   "red_flags": [
-    "Contact email is a Gmail address",
-    "No license/registration or reviews shown on site; Austin contractor registration not confirmed",
-    "Only one testimonial on site, no rating seen"
    ],
    "added_by_checker": false,
    "license": {
     "name": "Austin Restroom Partitions (Breakthrough General Contractors)",
     "area": "austin",
     "status": "not_online",
-    "registry": "City of Austin Building and Trade Contractor Services registration",
-    "source_url": "https://www.austintexas.gov/page/contractor-registration",
-    "note": "Austin requires general and trade contractors to register with Building and Trade Contractor Services before permits are issued or activated. The registration page and the AB+C Portal (abc.austintexas.gov) offer no public registered-contractor lookup, and the Austin open-data catalog (datahub.austintexas.gov) has no contractor registry dataset. Confirm with BTCS through its appointment or live chat options. A search of Austin's 'Issued Construction Permits' open data (3syk-w9eu) for 'Breakthrough' and 'Austin Restroom' found no permits. Checked 2026-11-19."
+    "registry": "City of Austin Building and Trade Contractor Services (BTCS) contractor registration; no public lookup",
+    "note": "Texas has no state license for partition installation. Austin requires contractors to register with BTCS before a building permit is issued. The city's registration page (https://austintexas.gov/page/contractor-registration) describes the AB+C account and Jotform registration process but has no public search or list of registered contractors. Searched the City of Austin Issued Construction Permits open data (data.austintexas.gov dataset 3syk-w9eu) for contractor names containing 'BREAKTHROUGH': no permits found. That dataset mostly lists permit holders, so a subcontractor working under a GC's permit may not appear. Registration status unknown; confirm with BTCS by phone or ask the installer for its AB+C registration.",
+    "source_url": "https://austintexas.gov/page/contractor-registration"
    },
    "score": 75
   },
   {
    "name": "Cross Timbers Specialties",
-   "base_city": "Bryan\u2013College Station",
+   "base_city": "Bryan-College Station",
    "state": "TX",
-   "verdict": "possible",
+   "verdict": "strong",
    "installs_partitions": "yes",
    "commercial": "yes",
    "sells_partitions": "yes",
-   "within_area": "no",
+   "within_area": "regional",
    "brands": [
     "Bobrick",
     "Bradley",
@@ -78,31 +91,27 @@
     "Best Lockers"
    ],
    "website": "https://www.crosstimbersspecialties.com/",
-   "phone": "(469) 236-5135",
-   "email": "rbatson@crosstimbersspecialties.com",
    "contact_page": "https://www.crosstimbersspecialties.com/contact.html",
-   "evidence_urls": [
-    "https://www.crosstimbersspecialties.com/",
-    "https://www.crosstimbersspecialties.com/division-10-contractor-austin.html",
-    "https://www.crosstimbersspecialties.com/contact.html"
-   ],
-   "partition_evidence": "Furnishes and installs toilet partitions and compartments (powder-coated, plastic laminate, HDPE, phenolic and stainless) plus urinal and shower screens. Its Austin page says it does the full Division 10 scope for general contractors in the Austin metro.",
-   "reason": "A confirmed commercial partition installer with a dedicated Austin page, but it is based about 100 miles away in Bryan\u2013College Station. It also furnishes the material itself, so there is a buy-around risk.",
+   "partition_evidence": "Site says it furnishes and installs Division 10 scope, including toilet partitions (10 21 13): powder-coated, plastic laminate, HDPE, phenolic and stainless, plus urinal screens.",
    "red_flags": [
-    "Based about 100 miles from Austin; no Austin office mentioned",
-    "Furnishes/supplies partitions itself: buy-around risk",
-    "Email listed is a named individual's address; phone is a 469 (DFW) area code"
+    "Furnishes partitions itself, so it can buy around us",
+    "No phone or email published on the site",
+    "Brands are named only as compatibility references; the site says it has no affiliation with them"
+   ],
+   "reason": "A commercial Division 10 sub that furnishes and installs toilet partitions and names Austin in its Texas Triangle service area, about 100 miles from Austin. It also supplies partitions, which is a buy-around risk.",
+   "evidence_urls": [
+    "https://www.crosstimbersspecialties.com/"
    ],
    "added_by_checker": false,
    "license": {
     "name": "Cross Timbers Specialties",
     "area": "austin",
     "status": "not_online",
-    "registry": "City of Austin Building and Trade Contractor Services registration",
-    "source_url": "https://www.austintexas.gov/page/contractor-registration",
-    "note": "Based in Bryan\u2013College Station. There is no public Austin registered-contractor lookup, so confirm with BTCS. Austin's Issued Construction Permits open data (https://datahub.austintexas.gov/resource/3syk-w9eu.json) shows only 'Cross Timbers Construction LLC' (16 permits, last in 2010), probably a different company and not evidence of current registration. No state license applies. Checked 2026-11-19."
+    "registry": "City of Austin Building and Trade Contractor Services (BTCS) contractor registration; no public lookup",
+    "note": "Based in Bryan-College Station. Texas has no state license for this work. Austin BTCS registration has no public lookup (https://austintexas.gov/page/contractor-registration). The Austin permits open data (dataset 3syk-w9eu) shows only 'Cross Timbers Construction LLC' of Jonestown (16 permits) for 'CROSS TIMBERS'. Nothing shows that company is related to Cross Timbers Specialties, so don't treat it as a match. Registration unknown; ask the installer for its Austin registration.",
+    "source_url": "https://austintexas.gov/page/contractor-registration"
    },
-   "score": 60
+   "score": 63
   },
   {
    "name": "Quality Facility Specialties, Inc. / Houston Premier, Inc.",
@@ -159,33 +168,165 @@
    "verdict": "possible",
    "installs_partitions": "likely",
    "commercial": "yes",
-   "sells_partitions": "yes",
-   "within_area": "no",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
    "brands": [],
    "website": "https://www.divtenconstruction.com/",
    "phone": "830-420-6690",
    "email": "info@divtenconstruction.com",
    "contact_page": "https://www.divtenconstruction.com/contact",
+   "partition_evidence": "Describes itself as Division 10 specialists and lists Restroom Accessories under What We Install. A homepage image's alt text says 'Commercial toilet partition installation', but the text itself never names partitions.",
+   "red_flags": [
+    "Says it procures and installs specialty products, so it may supply partitions"
+   ],
+   "reason": "A commercial Division 10 installer serving Austin, New Braunfels and San Antonio, based about 45 miles from Austin. Partition installation shows only in an image's alt text, so it is likely but not proven.",
    "evidence_urls": [
     "https://www.divtenconstruction.com/",
     "https://www.divtenconstruction.com/contact"
-   ],
-   "partition_evidence": "Calls itself 'Division 10 Specialists' who procure and install specialty products. An image under Restroom Accessories has the alt text 'Commercial toilet partition installation'. The page text does not name partitions.",
-   "reason": "A commercial Division 10 procure-and-install firm in New Braunfels (about 45 miles from the area center) that names Austin as a service area. Partition installation is suggested by an image's alt text but not stated outright.",
-   "red_flags": [
-    "Base about 45 miles from center, outside the 30-mile radius (says it serves Austin)",
-    "Procures/supplies products itself: buy-around risk"
    ],
    "added_by_checker": false,
    "license": {
     "name": "Div Ten Construction",
     "area": "austin",
     "status": "not_online",
-    "registry": "City of Austin Building and Trade Contractor Services registration",
-    "source_url": "https://www.austintexas.gov/page/contractor-registration",
-    "note": "Based in New Braunfels. There is no public Austin registered-contractor lookup, so confirm with BTCS. Austin's Issued Construction Permits open data (3syk-w9eu) has no permits under 'Div Ten'. No state license applies. Checked 2026-11-19."
+    "registry": "City of Austin Building and Trade Contractor Services (BTCS) contractor registration; no public lookup",
+    "note": "Based in New Braunfels. Texas has no state license for this work. Austin BTCS registration has no public lookup (https://austintexas.gov/page/contractor-registration). No permits under 'DIV TEN' in the Austin Issued Construction Permits open data (dataset 3syk-w9eu). Registration unknown.",
+    "source_url": "https://austintexas.gov/page/contractor-registration"
    },
+   "score": 43
+  },
+  {
+   "name": "DEA Specialties Co., Inc.",
+   "base_city": "San Antonio",
+   "state": "TX",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Modernfold",
+    "Euro-Wall",
+    "Kingspan Light + Air",
+    "Crown Doors"
+   ],
+   "website": "https://www.deaspecialties.com/",
+   "phone": "210.523.1073 (San Antonio); 512.440.7872 (Austin)",
+   "contact_page": "https://www.deaspecialties.com/contact-us",
+   "partition_evidence": "A federal contractor profile lists toilet partitions among its Division 10 products. Its own site shows a 'Partitions & Accessories' category and Austin projects such as the Austin Convention Center, but never says it installs toilet partitions.",
+   "red_flags": [
+    "Provides Division 10 products itself, so it can buy around us",
+    "Its own site doesn't say it installs toilet partitions",
+    "Its brands are operable and glass walls, not toilet partitions"
+   ],
+   "reason": "A long-running commercial Division 10 specialty sub with an Austin office and Central Texas projects. It provides toilet partitions, but its own pages don't show partition installation.",
+   "evidence_urls": [
+    "https://www.deaspecialties.com/",
+    "https://www.deaspecialties.com/contact-us",
+    "https://govconinabox.com/explore/smb-federal-contractors/dea-specialties-co-inc-EKN7E1LA9ED3"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "DEA Specialties Co., Inc.",
+    "area": "austin",
+    "status": "not_online",
+    "registry": "City of Austin Building and Trade Contractor Services (BTCS) contractor registration; no public lookup",
+    "note": "Based in San Antonio. Texas has no state license for this work. Austin BTCS registration has no public lookup (https://austintexas.gov/page/contractor-registration). No permits under 'DEA SPECIALT' in the Austin Issued Construction Permits open data (dataset 3syk-w9eu). Registration unknown.",
+    "source_url": "https://austintexas.gov/page/contractor-registration"
+   },
+   "score": 43
+  },
+  {
+   "name": "Quality Facility Specialties, Inc.",
+   "base_city": "Houston",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Metpar",
+    "Scranton Products",
+    "Hadrian",
+    "Bradley",
+    "Bobrick",
+    "Construction Specialties",
+    "American Specialties",
+    "Penco",
+    "Salsbury"
+   ],
+   "website": "https://qualityfacility.com/",
+   "phone": "713-629-5577",
+   "contact_page": "https://qualityfacility.com/contact/",
+   "partition_evidence": "Lists 'Toilet Partitions/Accessories' among the products it installs; clients include McCarthy and Turner.",
+   "red_flags": [
+    "Names many partition manufacturers as its suppliers, so it can buy around us",
+    "Based in Houston, about 145 miles away, past the 120-mile regional limit",
+    "The only email on the site is an individual's address"
+   ],
+   "reason": "A real commercial partition installer that says it serves Houston, Dallas, Austin, San Antonio 'and everywhere in between'. Rejected only because Houston is past the 120-mile limit; it could be a fallback for Austin if the radius is widened.",
+   "evidence_urls": [
+    "https://qualityfacility.com/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "BERNCO Group, LLC",
+   "base_city": "San Antonio",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Gamco",
+    "Bobrick"
+   ],
+   "website": "https://www.berncogroup.com/",
+   "phone": "210-693-9653",
+   "contact_page": "https://www.berncogroup.com/contact",
+   "partition_evidence": "Supplies toilet partitions among its Division 10 products and offers 'installation services' alongside supply, without saying partitions are installed.",
+   "red_flags": [
+    "A distributor (shows authorized-distributor logos for Gamco and Bobrick), so it can buy around us",
+    "Its own pages give no base city or service area",
+    "The only email on the site is an individual's address"
+   ],
+   "reason": "Mainly a Division 10 distributor. It mentions installation in general terms only and doesn't say it serves Austin. Its 210 area code points to San Antonio, but the site never states a base city.",
+   "evidence_urls": [
+    "https://www.berncogroup.com/",
+    "https://www.berncogroup.com/contact"
+   ],
+   "added_by_checker": false,
+   "license": null,
    "score": 40
+  },
+  {
+   "name": "Construction Specialists of Central Texas, Inc. (CSCT)",
+   "base_city": "Georgetown",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.cscentraltx.com/",
+   "phone": "512-487-1259",
+   "email": "info@cscentraltx.com",
+   "contact_page": "https://www.cscentraltx.com/contact",
+   "partition_evidence": "None. Its homepage lists door and hardware installation, carpentry, woodworking and a modular wall system, but no toilet partitions or restroom accessories.",
+   "red_flags": [],
+   "reason": "A commercial sub-contractor in Georgetown, but its homepage shows no toilet partition or Division 10 accessory work, and its services page returned 404.",
+   "evidence_urls": [
+    "https://www.cscentraltx.com/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
   },
   {
    "name": "Fast Track Movers & Installation (Fast Track Installation)",
@@ -212,6 +353,37 @@
    "added_by_checker": false,
    "license": null,
    "score": 30
+  },
+  {
+   "name": "LaForce",
+   "base_city": "unknown",
+   "state": "unknown",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Allegion",
+    "ASSA ABLOY",
+    "Hager",
+    "Dormakaba"
+   ],
+   "website": "https://laforceinc.com/",
+   "phone": "1-800-236-8858",
+   "contact_page": "https://laforceinc.com/contact/",
+   "partition_evidence": "Lists toilet partitions as Division 10 products it supplies under Building Specialties. It mentions installers in general terms, never for partitions.",
+   "red_flags": [
+    "Primarily a supplier of commercial doors, frames and hardware, so it can buy around us",
+    "Austin location not confirmed (its locations page returned 404)"
+   ],
+   "reason": "A commercial door and building-specialties distributor. It doesn't show toilet partition installation, and I couldn't confirm a location in or near Austin.",
+   "evidence_urls": [
+    "https://laforceinc.com/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
   },
   {
    "name": "Toiletpartitions.com (Round Rock warehouse)",
@@ -251,12 +423,12 @@
    "sells_partitions": "unknown",
    "within_area": "yes",
    "brands": [],
-   "evidence_urls": [],
-   "partition_evidence": "Not verified: no website was given and the shared web search budget ran out before it could be looked up.",
-   "reason": "Rejected for lack of evidence only. It is in the area (Buda) and should be rechecked in a follow-up search.",
+   "partition_evidence": "None found.",
    "red_flags": [
-    "Unverified: search budget exhausted, recheck"
+    "No website or listing found under this name"
    ],
+   "reason": "A web search turned up no website, listing or project evidence for this business, so I couldn't verify it exists or installs partitions.",
+   "evidence_urls": [],
    "added_by_checker": false,
    "license": null,
    "score": 10
@@ -271,12 +443,12 @@
    "sells_partitions": "unknown",
    "within_area": "yes",
    "brands": [],
-   "evidence_urls": [],
-   "partition_evidence": "Not verified: no website was given and the shared web search budget ran out.",
-   "reason": "Rejected for lack of evidence only. An Austin name that should be rechecked in a follow-up search.",
+   "partition_evidence": "None found.",
    "red_flags": [
-    "Unverified: search budget exhausted, recheck"
+    "No website or listing found under this name"
    ],
+   "reason": "A web search found nothing for this name, so I couldn't verify the business or any partition work.",
+   "evidence_urls": [],
    "added_by_checker": false,
    "license": null,
    "score": 10

@@ -1,6 +1,6 @@
 {
  "area": "san-antonio",
- "found_count": 13,
+ "found_count": 22,
  "sources_tried": [
   "Manufacturer locators (Bobrick, ASI, Scranton, Bradley, Hadrian, Metpar, General Partitions, Ampco): no San Antonio dealer or installer locator turned up in search. Bobrick's published case study PDF worked and named DEA Specialties as the installing distributor (rep: Peerless Marketing Group, Dallas). Searches for Hadrian, Scranton and Global Partitions dealers returned only national online sellers.",
   "The Blue Book (thebluebook.com): blocked, iProView pages return 403. Search snippets showed no San Antonio toilet partition subcontractor.",
@@ -11,7 +11,20 @@
   "BBB: worked for Bernco Group. Yelp: no San Antonio partition listings came up in search.",
   "Company sites: deaspecialties.com, rg-installation.org, subcontractorsanantonio.com (Hohmann), berncogroup.com, divtenconstruction.com and xpblocker.com worked. centraltexasinstallationspecialties.com did not resolve (DNS fail; it would need to be allowed in the session's network settings). rginstallation.com is a parked domain.",
   "Thumbtack, MapQuest, governmentcontracts.us and hireveterans.com: returned empty or 404 pages, so their facts came from search snippets only. downtobid.com: 429 rate limited. accessories.toiletpartitions.com: 403.",
-  "Skipped as out of area or not installers: One Point Partitions and US Partitions (national online sellers; One Point's San Antonio site is a delivery terminal that does not install), BC Partitions (Houston), Texas Specialties & Installation (Grand Prairie), Innergy Interiors (El Paso), Southwest Solutions Group (has a San Antonio office, but toilet partitions are shown only for its Seattle office), Klinger Associates (no installation evidence)."
+  "Skipped as out of area or not installers: One Point Partitions and US Partitions (national online sellers; One Point's San Antonio site is a delivery terminal that does not install), BC Partitions (Houston), Texas Specialties & Installation (Grand Prairie), Innergy Interiors (El Paso), Southwest Solutions Group (has a San Antonio office, but toilet partitions are shown only for its Seattle office), Klinger Associates (no installation evidence).",
+  "Seed file research/installers/raw/seeds/san-antonio.json: worked. Its Google search 'web' results only had google.com/goto redirect URLs, which could not be followed.",
+  "Company sites: worked for subcontractorsanantonio.com, deaspecialties.com, rivercityspecialties.com, tchco.com (TCH sells doors and hardware, no partitions, excluded) and unclesamhandyman.com. rg-installation.org returned only its title. coiworld.com gave 503 and then DNS not allowed (COI Enterprises in Boerne is unchecked). texasbuildingsupply.com is a lumber/door supplier with no partitions, excluded.",
+  "Bobrick: the Find a Rep page loaded without results (dropdown-driven). The Bobrick convention center case study PDF worked and names DEA Specialties as installing distributor.",
+  "ASI / Global Partitions locator: blocked (globalpartitions.com outside the allowed network).",
+  "Scranton Products distributor locator: 404 at the guessed URL. Bradley, Hadrian, Metpar, General Partitions and Ampco were not tried because the fetch budget went to company sites.",
+  "The Blue Book: iProView pages return 403. A Texas Specialties & Installation (Arlington, DFW, about 250 miles away, out of range) listing appeared in search only.",
+  "BuildingConnected / Procore: not tried.",
+  "WebSearch: used 8 of 8. Useful results: DEA Specialties, Bernco Group, Specialties Specialists, One Point Partitions. Also out of range: BC Partitions (Houston), Quality Facility Specialties (Houston), Innergy Interiors (El Paso).",
+  "govconinabox.com federal contractor profiles: worked (DEA, Bernco).",
+  "Thumbtack: the page came back blank when fetched.",
+  "onepointpartitions.com: 403.",
+  "roofcalc.org 'Toilet Partitions - San Antonio' (855 number, unverified lead-gen listing): read, then excluded.",
+  "Yelp / BBB: no relevant pages came up in the searches."
  ],
  "candidates": [
   {
@@ -48,6 +61,84 @@
    "score": 75
   },
   {
+   "name": "RG Installation (Division 8 & 10 Commercial Door and Hardware Installation Services)",
+   "base_city": "San Antonio",
+   "state": "TX",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.rg-installation.org/",
+   "phone": "(210) 570-4138",
+   "email": "info.rginstallation@gmail.com",
+   "contact_page": "",
+   "evidence_urls": [
+    "https://www.rg-installation.org/"
+   ],
+   "partition_evidence": "Site title and structured data list 'Bathroom Partition Installation': floor-mounted, ceiling-hung and floor-to-ceiling toilet compartments in powder-coated steel, stainless, HDPE and phenolic, plus urinal screens and restroom accessories; Division 8 and 10 installer since 1989.",
+   "reason": "Family-owned San Antonio commercial Division 8/10 installer that explicitly installs toilet partitions and says it serves San Antonio, New Braunfels and South Central Texas. Install-only positioning, no sign it sells partitions.",
+   "red_flags": [
+    "Site is a JS app; only title and structured data readable, no project photos seen",
+    "Email is a gmail address",
+    "Schema @id points to rginstallation.com, a different domain from the listed site"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "RG Installation (Division 8 & 10 Commercial Door and Hardware Installation Services)",
+    "area": "san-antonio",
+    "status": "not_required_online_check",
+    "registry": "None applies: Texas has no state license for this work, and San Antonio registers only residential building, home improvement and specific trade contractors",
+    "note": "Commercial partition installation falls outside San Antonio's contractor registration categories (per the area rule from the City of San Antonio Development Services Department). No official registry to check. Not looked up online on 2026-11-19.",
+    "source_url": ""
+   },
+   "score": 70
+  },
+  {
+   "name": "DEA Specialties Co., Inc.",
+   "base_city": "San Antonio",
+   "state": "TX",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Modernfold",
+    "Kingspan Light + Air",
+    "Crown Doors",
+    "Euro-Wall"
+   ],
+   "website": "https://www.deaspecialties.com/",
+   "phone": "210.523.1073",
+   "email": "",
+   "contact_page": "https://www.deaspecialties.com/contact-us",
+   "evidence_urls": [
+    "https://www.deaspecialties.com/",
+    "https://www.deaspecialties.com/contact-us",
+    "https://www.bobrick.com/wp-content/uploads/2019/01/BOB-CaseStudy_HBGConventionCenter_v3-1.pdf",
+    "https://govconinabox.com/explore/smb-federal-contractors/dea-specialties-co-inc-EKN7E1LA9ED3"
+   ],
+   "partition_evidence": "Bobrick case study names DEA Specialties as 'Installing Distributor' for 380 SierraSeries stalls and 66 urinal screens at San Antonio's convention center; SAM profile says 'experts in operable, accordion walls, toilet partitions, lockers, cabinets'; site has a 'Partitions & Accessories' category.",
+   "reason": "40-year San Antonio specialty subcontractor (also Austin office) with documented commercial toilet partition installation. It is an installing distributor, so it supplies partitions itself (buy-around risk).",
+   "red_flags": [
+    "Distributor of Bobrick partitions: competitor / buy-around risk",
+    "No email published"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "DEA Specialties Co., Inc.",
+    "area": "san-antonio",
+    "status": "not_required_online_check",
+    "registry": "None applies: Texas has no state license for this work, and San Antonio has no commercial general contractor registration",
+    "note": "Commercial partition installation falls outside San Antonio's contractor registration categories (area rule, City of San Antonio Development Services Department). No official registry to check.",
+    "source_url": ""
+   },
+   "score": 70
+  },
+  {
    "name": "Div Ten Construction",
    "base_city": "New Braunfels",
    "state": "TX",
@@ -82,89 +173,11 @@
    "score": 70
   },
   {
-   "name": "Bernco Group, LLC",
-   "base_city": "Converse",
-   "state": "TX",
-   "verdict": "possible",
-   "installs_partitions": "likely",
-   "commercial": "yes",
-   "sells_partitions": "yes",
-   "within_area": "yes",
-   "brands": [
-    "Bobrick",
-    "Gamco"
-   ],
-   "website": "https://www.berncogroup.com/",
-   "phone": "(210) 693-9653",
-   "email": "priscilla@berncogroupllc.com",
-   "contact_page": "https://www.berncogroup.com/contact",
-   "partition_evidence": "Describes itself as a certified Division 10 specialty contractor: distributor, installer and repair provider. Toilet partitions are among the materials it supplies, and installation is offered, but toilet partition installation isn't shown explicitly.",
-   "evidence_urls": [
-    "https://www.berncogroup.com/",
-    "https://www.berncogroup.com/contact"
-   ],
-   "reason": "Commercial Division 10 distributor and installer based in Converse, displaying Bobrick and Gamco authorized-distributor logos. It likely installs partitions, but it also sells them.",
-   "red_flags": [
-    "Distributor of partitions (buy-around risk)",
-    "Address shown is a PO box; a header image filename mentions New Braunfels"
-   ],
-   "added_by_checker": false,
-   "license": {
-    "name": "Bernco Group, LLC",
-    "area": "san-antonio",
-    "status": "not_required_online_check",
-    "registry": "None for commercial partition work. Texas has no state license, and San Antonio has no commercial general contractor registration.",
-    "source_url": "https://library.municode.com/tx/san_antonio/codes/code_of_ordinances?nodeId=PTIICO_CH10BULACOSAAN",
-    "note": "Based in Converse. There is no state or San Antonio commercial registration for this work. Checked 2026-11-19."
-   },
-   "score": 50
-  },
-  {
-   "name": "DEA Specialties Co., Inc.",
-   "base_city": "San Antonio",
-   "state": "TX",
-   "verdict": "possible",
-   "installs_partitions": "likely",
-   "commercial": "yes",
-   "sells_partitions": "unknown",
-   "within_area": "yes",
-   "brands": [
-    "Modernfold",
-    "Kingspan Light+Air",
-    "Crown Doors",
-    "Euro-Wall"
-   ],
-   "website": "https://www.deaspecialties.com/",
-   "phone": "210.523.1073",
-   "contact_page": "https://www.deaspecialties.com/contact-us",
-   "partition_evidence": "The Design Assist section mentions 'Partitions & Accessories', and the about page cites 'factory certified installation crews'. The main brands are operable and glass partitions; no toilet partitions were seen.",
-   "evidence_urls": [
-    "https://www.deaspecialties.com/",
-    "https://www.deaspecialties.com/about-us",
-    "https://www.deaspecialties.com/contact-us"
-   ],
-   "reason": "Long-running San Antonio specialty subcontractor with commercial projects (Grand Hyatt, convention centers, schools), focused on operable partitions, daylighting and doors. Toilet partition work is unproven.",
-   "red_flags": [
-    "'Partitions' may mean operable walls, not toilet partitions",
-    "No email listed"
-   ],
-   "added_by_checker": false,
-   "license": {
-    "name": "DEA Specialties Co., Inc.",
-    "area": "san-antonio",
-    "status": "not_required_online_check",
-    "registry": "None for commercial partition work. Texas has no state license, and San Antonio has no commercial general contractor registration.",
-    "source_url": "https://library.municode.com/tx/san_antonio/codes/code_of_ordinances?nodeId=PTIICO_CH10BULACOSAAN",
-    "note": "There is no state or San Antonio commercial registration for this work. Checked 2026-11-19."
-   },
-   "score": 50
-  },
-  {
    "name": "Hohmann Development Services, LLC",
    "base_city": "San Antonio",
    "state": "TX",
-   "verdict": "possible",
-   "installs_partitions": "likely",
+   "verdict": "strong",
+   "installs_partitions": "yes",
    "commercial": "mostly",
    "sells_partitions": "yes",
    "within_area": "yes",
@@ -173,53 +186,132 @@
    "phone": "(210) 338-9621",
    "email": "blake@hohmanndevelopment.com",
    "contact_page": "https://www.subcontractorsanantonio.com/#ContactUs",
-   "partition_evidence": "Lists toilet partitions, panel partitions, restroom accessories and 'installation'; calls itself 'San Antonio's only stocking supplier of Toilet Partition Hardware'.",
    "evidence_urls": [
-    "https://www.subcontractorsanantonio.com/"
+    "https://www.subcontractorsanantonio.com/",
+    "https://www.hohmanndevelopment.com/services/"
    ],
-   "reason": "Local partition, accessory and parts supplier (since 2002) that also offers installation. Partition installation isn't shown in projects or photos, and the company sells partitions.",
+   "partition_evidence": "Site: 'bathroom partition, accessory and parts supplier ... serving the Greater San Antonio area for over 20 years ... If you are doing the install, we offer pickup or drop shipping. We also offer installation service.' Calls itself San Antonio's only stocking supplier of toilet partition hardware.",
+   "reason": "Local toilet partition supplier that also offers installation, design/layout help and free site visits. Strong installer candidate but it sells partitions itself, a clear buy-around risk.",
    "red_flags": [
-    "Supplier of partitions and hardware (buy-around risk)",
-    "Email is a personal-name company address",
-    "A second number, (210) 341-5650, also appears"
+    "Sells and stocks toilet partitions: buy-around risk",
+    "No project photos or reviews shown",
+    "Only email listed is a named individual's address"
    ],
    "added_by_checker": false,
    "license": {
     "name": "Hohmann Development Services, LLC",
     "area": "san-antonio",
     "status": "not_required_online_check",
-    "registry": "None for commercial partition work. Texas has no state license, and San Antonio has no commercial general contractor registration.",
-    "source_url": "https://library.municode.com/tx/san_antonio/codes/code_of_ordinances?nodeId=PTIICO_CH10BULACOSAAN",
-    "note": "There is no state or San Antonio commercial registration for this work. Checked 2026-11-19."
+    "registry": "None applies: Texas has no state license for this work, and San Antonio has no commercial general contractor registration",
+    "note": "Commercial partition installation falls outside San Antonio's contractor registration categories. If the firm does residential or home improvement work, San Antonio registration would apply to that work. Not checked.",
+    "source_url": ""
    },
-   "score": 45
+   "score": 65
   },
   {
    "name": "Specialties Specialists LLC",
    "base_city": "San Antonio",
    "state": "TX",
    "verdict": "possible",
-   "installs_partitions": "unknown",
-   "commercial": "unknown",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
    "sells_partitions": "unknown",
    "within_area": "yes",
    "brands": [],
-   "partition_evidence": "Not verified: no website was given and the web search budget ran out.",
-   "evidence_urls": [],
-   "reason": "The name suggests Division 10 specialties, but nothing was verified. It needs a follow-up check.",
+   "website": "",
+   "phone": "",
+   "email": "",
+   "contact_page": "",
+   "evidence_urls": [
+    "https://thumbtack.com/tx/san-antonio/concrete-contractors/specialties-specialists-llc/service/541866122791297050"
+   ],
+   "partition_evidence": "Thumbtack profile: 'We specialize in Division 10 construction, which includes specialty installations such as toilet partitions, lockers, wall protection, fire extinguishers and cabinets...'",
+   "reason": "Self-described Division 10 installer of toilet partitions in San Antonio, but the only source is a Thumbtack profile with no reviews, no website and no project photos.",
    "red_flags": [
-    "Unverified: no source read"
+    "No website found",
+    "2 employees, about 2 years in business",
+    "No reviews; listed under concrete contractors on Thumbtack"
    ],
    "added_by_checker": false,
    "license": {
     "name": "Specialties Specialists LLC",
     "area": "san-antonio",
     "status": "not_required_online_check",
-    "registry": "None for commercial partition work. Texas has no state license, and San Antonio has no commercial general contractor registration.",
-    "source_url": "https://library.municode.com/tx/san_antonio/codes/code_of_ordinances?nodeId=PTIICO_CH10BULACOSAAN",
-    "note": "No website was given. There is no state or San Antonio commercial registration for this work. Checked 2026-11-19."
+    "registry": "None applies: Texas has no state license for this work, and San Antonio has no commercial general contractor registration",
+    "note": "No website given. Commercial partition installation needs no state license or San Antonio registration. Not looked up.",
+    "source_url": ""
    },
-   "score": 10
+   "score": 65
+  },
+  {
+   "name": "Bernco Group, LLC",
+   "base_city": "Converse",
+   "state": "TX",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "",
+   "phone": "",
+   "email": "",
+   "contact_page": "",
+   "evidence_urls": [
+    "https://govconinabox.com/explore/smb-federal-contractors/bernco-group-llc-CMSKU5SYW6J1"
+   ],
+   "partition_evidence": "Federal contractor profile describes it as a 'Division 10 specialty subcontractor' with keywords toilet compartments, toilet partitions, lockers, signage; NAICS 238390.",
+   "reason": "Registered Division 10 subcontractor in Converse (est. 2019), but no website, photos or project evidence of partition installs found.",
+   "red_flags": [
+    "No website or contact details found",
+    "Only third-party aggregator evidence"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Bernco Group, LLC",
+    "area": "san-antonio",
+    "status": "not_required_online_check",
+    "registry": "None applies: Texas has no state license for this work, and San Antonio has no commercial general contractor registration",
+    "note": "Based in Converse. Commercial partition installation needs no state license or San Antonio registration. Not looked up.",
+    "source_url": ""
+   },
+   "score": 50
+  },
+  {
+   "name": "River City Specialties",
+   "base_city": "Schertz",
+   "state": "TX",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://rivercityspecialties.com/",
+   "phone": "(210) 757-3717",
+   "email": "",
+   "contact_page": "http://rivercityspecialties.com/contact-us",
+   "evidence_urls": [
+    "http://rivercityspecialties.com/",
+    "http://rivercityspecialties.com/restroom-partitions",
+    "http://rivercityspecialties.com/contact-us"
+   ],
+   "partition_evidence": "Division 10 building specialties company listing toilet partitions, toilet accessories, lockers, fire extinguisher cabinets; restroom partitions page describes mounting styles and materials. Installation not stated.",
+   "reason": "Schertz Division 10 specialties firm offering restroom partitions, but its site never says it installs and shows no projects or clients.",
+   "red_flags": [
+    "No projects, photos or reviews",
+    "Installation not stated; may furnish partitions (possible buy-around)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "River City Specialties",
+    "area": "san-antonio",
+    "status": "not_required_online_check",
+    "registry": "None applies: Texas has no state license for this work, and San Antonio has no commercial general contractor registration",
+    "note": "Based in Schertz. Commercial partition installation in San Antonio needs no contractor registration under the area rule. No official registry to check.",
+    "source_url": ""
+   },
+   "score": 30
   },
   {
    "name": "Central Texas Installation Specialties LLC",
@@ -249,6 +341,35 @@
    "score": 5
   },
   {
+   "name": "Uncle Sam Handyman LLC",
+   "base_city": "San Antonio",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://unclesamhandyman.com/",
+   "phone": "(210) 668-0610",
+   "email": "",
+   "contact_page": "http://unclesamhandyman.com/contact",
+   "rating": 4.9,
+   "review_count": 24,
+   "review_source": "Google (shown on company site)",
+   "evidence_urls": [
+    "http://unclesamhandyman.com/"
+   ],
+   "partition_evidence": "Services are furniture assembly, TV mounting, doors, drywall, flooring, painting, remodeling, plumbing fixtures; no toilet partitions or restroom accessories.",
+   "reason": "General handyman, mainly residential; no partition installation shown.",
+   "red_flags": [
+    "Handyman, no partition work"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
    "name": "Azteca Designs & Construction (Azteca Designs, Inc.)",
    "base_city": "Somerset",
    "state": "TX",
@@ -271,6 +392,35 @@
    "added_by_checker": false,
    "license": null,
    "score": 35
+  },
+  {
+   "name": "One Point Partitions (San Antonio terminal)",
+   "base_city": "San Antonio",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "phone": "",
+   "email": "",
+   "contact_page": "",
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=1838",
+    "https://onepointpartitions.com/?p=1434",
+    "https://onepointpartitions.com/faqs/"
+   ],
+   "partition_evidence": "Online partition seller with a San Antonio delivery terminal; its pages say it does not install partitions and offers installation guidance / DIY directions (seen via search snippets; the site returned 403 to direct fetch).",
+   "reason": "A partition seller and direct competitor, not an installer.",
+   "red_flags": [
+    "Competitor selling partitions",
+    "Site blocked direct fetch (403); facts from search result snippets"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
   },
   {
    "name": "XPB Locker & Supply LLC",
@@ -329,6 +479,26 @@
    "added_by_checker": false,
    "license": null,
    "score": 20
+  },
+  {
+   "name": "Mission City Specialty Co",
+   "base_city": "San Antonio",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "No business by this name found.",
+   "reason": "Search found no business called Mission City Specialty Co in San Antonio; cannot verify it exists. within_area reflects only the claimed base city.",
+   "red_flags": [
+    "Not found online"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
   },
   {
    "name": "All Pro General Construction, Inc.",

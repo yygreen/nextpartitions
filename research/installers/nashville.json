@@ -1,7 +1,24 @@
 {
  "area": "nashville",
- "found_count": 10,
+ "found_count": 18,
  "sources_tried": [
+  "Seed file raw/seeds/nashville.json: worked (mostly irrelevant remodelers and plumbers; 6 plausible partition businesses)",
+  "fastpartitions.com: blocked (Cloudflare 403)",
+  "onepointpartitions.com: blocked (403 / JS challenge)",
+  "southeastpartitions.com: intro page only, then 403 'malware detected'",
+  "manningmaterialsinc.com: worked",
+  "pillardoor.com: worked",
+  "allconspec.com and acs.pairsite.com (Allegheny Construction Specialties): worked",
+  "jmspecialties.com: 503",
+  "Bobrick find-a-rep: loads dynamically, no reps readable",
+  "ASI, Scranton, Bradley, Hadrian, Metpar, General Partitions, Ammco locators: not reached (JS locators; search budget prioritized)",
+  "The Blue Book (thebluebook.com): blocked (403)",
+  "BuildingConnected / Procore: not tried (sign-in walls)",
+  "BBB category 'partition' pages for Nashville and Murfreesboro: worked",
+  "Gallatin Chamber member directory: worked",
+  "Kelley Bros: furnishes and installs partitions but has no Tennessee location (excluded)",
+  "Prestige Distribution: Northbrook IL supplier (excluded)",
+  "WebSearch: 8 of 8 used; general searches mostly returned remodelers, plumbers and spec PDFs",
   "Seed file research/installers/raw/seeds/nashville.json: WORKED. It had 42 maps results and 17 web results. The web results were google.com/goto redirects with no domains, so I couldn't use them. I opened the plausible maps sites: Pillar Door, Soran Group and Southeast Partitions worked. Manning Materials returned 500 and Fast Partitions returned 403. The rest were remodelers, glass shops, plumbers and stores.",
   "Scranton Products where-to-buy (scrantonproducts.com/where-to-buy/): WORKED. The only rep for TN is Southern States Architectural Sales (678.425.8796, AL/GA/FL/MS/NC/SC/TN), a rep agency, not an installer.",
   "Bobrick find-a-rep: page loads, but finding a rep needs the dropdown, so I couldn't read any results.",
@@ -233,7 +250,14 @@
     "https://www.southeastpartitions.com/home"
    ],
    "added_by_checker": false,
-   "license": null,
+   "license": {
+    "name": "Southeast Partitions",
+    "area": "nashville",
+    "status": "not_online",
+    "registry": "Tennessee Board for Licensing Contractors, Verify license search (verify.tn.gov, redirects to search.cloud.commerce.tn.gov)",
+    "source_url": "https://verify.tn.gov/",
+    "note": "Checked 2026-11-19. The state lookup is a JavaScript app with reCAPTCHA, so I couldn't look up the business automatically and no license record was read. The company site (https://www.southeastpartitions.com/) shows only a splash page with the company name and no license number, city or phone. A third-party NAICS directory (https://naicslist.com/company-profile/southeast-partitions-llc-murfreesboro-tn-37129) lists 'Southeast Partitions LLC' in Murfreesboro, TN (NAICS 238290). That listing isn't official and isn't a license. Search the business name by hand at verify.tn.gov. Work inside Metro Nashville also needs a Metro business license and a permit bond."
+   },
    "score": 35
   },
   {
@@ -346,6 +370,31 @@
    "added_by_checker": false,
    "license": null,
    "score": 10
+  },
+  {
+   "name": "JM Specialties, Inc.",
+   "base_city": "Chattanooga",
+   "state": "TN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "reason": "The only evidence is a BBB listing under Partitions (A+, not accredited) in Chattanooga, about 115 miles from Nashville. The guessed website didn't respond, and nothing shows installation or a stated Nashville service area.",
+   "partition_evidence": "BBB category 'Partitions' only.",
+   "brands": [],
+   "phone": "(423) 624-6563",
+   "review_source": "BBB rating A+ (not accredited)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/tn/category/partition"
+   ],
+   "red_flags": [
+    "No website found",
+    "No statement that it serves the Nashville area"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 3
   }
  ]
 }

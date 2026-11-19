@@ -1,7 +1,22 @@
 {
  "area": "charlotte",
- "found_count": 9,
+ "found_count": 23,
  "sources_tried": [
+  "Seed file charlotte.json (maps + web): worked. Web results were Google redirect links with no domains; they resolved through www.google.com/goto. Useful hits: Seven Oaks, RSA (restroomstallsandall.com), Repsouth, Lockers 'N' More, B.A. Hoft/Integrated Openings, Division 10 Sales. The others were remodelers, 10-Spec (NJ), CSI Installers (NY/NH/FL) and Angi/Mapquest pages that were empty or blocked.",
+  "Bobrick find-a-rep: page loaded, but the rep dropdown wasn't readable, so no NC rep was found.",
+  "Scranton Products where-to-buy: worked. The only NC/SC entry is Southern States Architectural Sales (regional rep, 678 number, no city). Not added as an installer.",
+  "ASI Global Partitions find-a-rep: 404.",
+  "Hadrian find-a-rep: 404.",
+  "General Partitions find-a-rep: 404.",
+  "Bradley find-a-rep: page had no readable content.",
+  "Metpar, Ampco/Ammco locators: not tried (cap and time).",
+  "The Blue Book (thebluebook.com iProView pages): blocked (403 CloudFront) for both WebFetch and curl.",
+  "BuildingConnected / Procore public profiles: not tried.",
+  "UNC Charlotte facilities bid documents (found via web search): worked. The 2025 Group B leveled bid tabs show Precision Walls and RC Specialties bidding toilet partitions; the 2024 HAWC sub list and 2017 prequalified bidders list name 10A Specialties firms (ABACO, BSL Galbreath, Burgess, RC Specialties, Warco).",
+  "WebSearch: all 8 searches used, cap reached. Queries: Division 10 contractor Charlotte; RC Specialties x2; Charlotte/Concord/Gastonia/Rock Hill specialties; Charlotte toilet partitions install; SC Rock Hill/Columbia/Greenville; Stuart Page; NC Division 10 furnish and install.",
+  "BBB (Waxhaw partition category): worked, listed Lockers 'N' More and Berl's Commercial Supply. Berl's site shows restroom accessories but no partitions, so it was excluded.",
+  "Yelp: not tried.",
+  "Company websites read directly: rcspecialties.com, warcoconstruction.com, precisionwalls.com, burgesssales.com, abacoarchitectural.com, sevenoakshardware.com, restroomstallsandall.com, repsouth.com, integratedopenings.com, lockersnmore.com, division10sales.com, partitionking.com. bslgalbreath.com failed (503 / self-signed certificate) and courtneysales.com failed (self-signed certificate).",
   "Seed file research/installers/raw/seeds/charlotte.json: worked. The maps entries had websites; the web entries were Google redirect URLs that didn't resolve with curl.",
   "Bobrick find-a-rep (bobrick.com/find-a-rep): loaded, but the rep dropdown is JavaScript and showed no data.",
   "Scranton Products find-a-rep: 404.",
@@ -17,6 +32,40 @@
   "Not verified: Installations Plus Inc, Pioneer Enterprises, RB Installation (seed titles, URLs unresolvable, and no search hits)."
  ],
  "candidates": [
+  {
+   "name": "RC Specialties, Inc.",
+   "base_city": "Charlotte",
+   "state": "NC",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "Homepage lists 'Toilet Partitions' under 'Typical materials we furnish and install'; commercial examples incl. Charlotte Douglas International Airport",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "phone": "(704) 334-1077",
+   "contact_page": "https://www.rcspecialties.com/",
+   "website": "https://www.rcspecialties.com/",
+   "evidence_urls": [
+    "https://www.rcspecialties.com/"
+   ],
+   "red_flags": [
+    "Furnishes and installs (supplies partitions itself: buy-around risk)"
+   ],
+   "reason": "Charlotte-based Division 10 contractor that explicitly furnishes and installs toilet partitions for commercial projects across the Carolinas.",
+   "added_by_checker": false,
+   "license": {
+    "name": "RC Specialties, Inc.",
+    "area": "charlotte",
+    "status": "found_active",
+    "registry": "North Carolina Licensing Board for General Contractors (NCLBGC) license search, portal.nclbgc.org",
+    "license_number": "L.73301",
+    "license_type": "NC general contractor license, Unlimited limitation, Building classification",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Record: RC Specialties, Inc., Charlotte NC; first issued 07/04/2013, expires 12/31/2027, status Active. Board-listed company phone 704-334-1077. Checked 2026-11-19 (search by company name, then account details)."
+   },
+   "score": 85
+  },
   {
    "name": "Seven Oaks Doors and Hardware Inc. (Seven Oaks Commercial Door and Hardware Solutions)",
    "base_city": "Locust",
@@ -88,6 +137,111 @@
    "score": 65
   },
   {
+   "name": "Seven Oaks Commercial Door & Hardware",
+   "base_city": "Locust",
+   "state": "NC",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "Homepage lists Bathroom Partitions as a service and says they 'sell, deliver and install' commercial products including toilet partitions and accessories",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "nearby",
+   "phone": "704-485-2014 (toll free 1-800-535-7972)",
+   "contact_page": "https://sevenoakshardware.com/request-a-quote/",
+   "website": "https://sevenoakshardware.com/",
+   "evidence_urls": [
+    "https://sevenoakshardware.com/",
+    "https://sevenoakshardware.com/request-a-quote/"
+   ],
+   "red_flags": [
+    "Sells partitions itself (buy-around risk)"
+   ],
+   "reason": "Commercial door/hardware and Division 10 company in Locust (about 25 miles east of Charlotte) that sells and installs toilet partitions across NC, SC and southern VA.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Seven Oaks Commercial Door & Hardware",
+    "area": "charlotte",
+    "status": "not_found",
+    "registry": "North Carolina Licensing Board for General Contractors (NCLBGC) license search, portal.nclbgc.org",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Searched 'Seven Oaks', 'Seven Oaks Commercial', 'Seven Oaks Hardware' and 'Seven Oaks Door' (the company site's title gives 'Seven Oaks Door and Hardware Inc.'). The only 'Seven Oaks' match is Seven Oaks Construction, LLC (L.66423, Raleigh, archived, expired 12/31/2009), a different business. No license found. NC requires a GC license only for projects at or above the state threshold, so a partitions supplier/installer working below it or as a subcontractor may not need one. The company site says it sells, delivers and installs toilet partitions (https://sevenoakshardware.com/)."
+   },
+   "score": 65
+  },
+  {
+   "name": "Precision Walls, Inc. (Charlotte branch)",
+   "base_city": "Charlotte",
+   "state": "NC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "Division 10 & 12 Specialties page lists 'Toilet Partitions/Toilet Accessories' but does not describe installation; company is a commercial interiors contractor with a Charlotte location",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "phone": "(919) 832-0380 (main office, Cary)",
+   "contact_page": "https://precisionwalls.com/contact-us/",
+   "website": "https://www.precisionwalls.com/",
+   "evidence_urls": [
+    "https://www.precisionwalls.com/",
+    "https://precisionwalls.com/product/division-10-specialties/",
+    "https://precisionwalls.com/locations/charlotte-nc/"
+   ],
+   "red_flags": [
+    "Large drywall contractor; partitions likely a small GC-package line, may not take small direct jobs"
+   ],
+   "reason": "Large commercial interiors contractor with a Charlotte branch listing toilet partitions under its Division 10 specialties; installation implied, not shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Precision Walls, Inc. (Charlotte branch)",
+    "area": "charlotte",
+    "status": "found_active",
+    "registry": "North Carolina Licensing Board for General Contractors (NCLBGC) license search, portal.nclbgc.org",
+    "license_number": "L.12009",
+    "license_type": "NC general contractor license, Unlimited limitation, Building classification",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Record: Precision Walls, Inc., licensed address in Cary NC (company-wide license; covers the Charlotte branch under the same entity); first issued 07/23/1980, expires 12/31/2026, status Active. Board-listed phone 919-459-2900."
+   },
+   "score": 65
+  },
+  {
+   "name": "Warco Construction, Inc.",
+   "base_city": "Charlotte",
+   "state": "NC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "Services page lists Installation and Manufacturer Representation; describes itself as commercial contractor for Div 7/8/9/10/12; no mention of toilet partitions",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "phone": "704-521-5200",
+   "contact_page": "https://www.warcoconstruction.com/contact-us/",
+   "website": "https://www.warcoconstruction.com/",
+   "evidence_urls": [
+    "https://www.warcoconstruction.com/",
+    "https://www.warcoconstruction.com/services/"
+   ],
+   "red_flags": [
+    "Also a manufacturer rep (may supply products itself)",
+    "Focus appears to be acoustical/ceilings"
+   ],
+   "reason": "Charlotte commercial installer and manufacturer rep listing Division 10 work, but no toilet partition evidence found.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Warco Construction, Inc.",
+    "area": "charlotte",
+    "status": "found_active",
+    "registry": "North Carolina Licensing Board for General Contractors (NCLBGC) license search, portal.nclbgc.org",
+    "license_number": "L.21653",
+    "license_type": "NC general contractor license, Unlimited limitation, Building classification",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Record: Warco Construction, Inc., Charlotte NC; first issued 01/21/1987, expires 12/31/2026, status Active. Board-listed phone 704-521-5200."
+   },
+   "score": 65
+  },
+  {
    "name": "B.A. Hoft of Charlotte (Integrated Openings Solutions)",
    "base_city": "Mooresville",
    "state": "NC",
@@ -121,6 +275,102 @@
     "note": "Checked 2026-11-19. Company-name searches for 'Hoft', 'B.A. Hoft', 'B. A. Hoft', 'BA Hoft', 'B A Hoft', 'Integrated Openings' and 'Integrated Opening', a phone search for 704-799-0412, and company 'Hoft'/'Door' with city Mooresville returned no matching license. The only 'Hoft' hit is qualifier Q.24964 (Donald C. Bernhoft, License Not Active), which is unrelated. A license may be held under another entity name not shown on the site. NC requires a GC license only above the state threshold; confirm with NCLBGC. The location page (https://integratedopenings.com/locations/charlotte/) puts the office in Mooresville, NC, gives phone (704) 799-0412 and email info@integratedopenings.com, has a footer copyright to Integrated Openings Solutions, LLC, lists toilet partitions and accessories (Division 10), and shows no license number."
    },
    "score": 50
+  },
+  {
+   "name": "Integrated Openings Solutions (formerly B.A. Hoft of Charlotte)",
+   "base_city": "Mooresville",
+   "state": "NC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "Charlotte location page offers 'Division 10 accessories such as ... toilet partitions and accessories, and lockers' and washroom accessories; installation not stated explicitly",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "phone": "(704) 799-0412",
+   "email": "info@integratedopenings.com",
+   "contact_page": "https://integratedopenings.com/locations/",
+   "website": "https://integratedopenings.com/locations/charlotte/",
+   "evidence_urls": [
+    "https://integratedopenings.com/locations/charlotte/"
+   ],
+   "red_flags": [
+    "Door/hardware distributor that supplies partitions (buy-around risk)"
+   ],
+   "reason": "Commercial openings and Division 10 supplier in Mooresville offering toilet partitions; installation of partitions not confirmed.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Integrated Openings Solutions (formerly B.A. Hoft of Charlotte)",
+    "area": "charlotte",
+    "status": "not_found",
+    "registry": "North Carolina Licensing Board for General Contractors (NCLBGC) license search, portal.nclbgc.org",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Searched 'Integrated Openings', 'Integrated Openings Solutions', 'B.A. Hoft', 'B. A. Hoft', 'BA Hoft' and 'Hoft': no company license. 'Hoft' only matched an unrelated inactive individual qualifier record. The NC license may be held under a different legal entity name not identified here; unknown."
+   },
+   "score": 50
+  },
+  {
+   "name": "ABACO, Inc. (Architectural Building Accessories Co.)",
+   "base_city": "Banner Elk",
+   "state": "NC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "Product categories 10.21 Compartments and Cubicles and 10.22 Partitions with toilet partition images; offers 'product installations for a total turn-key experience'; does not explicitly say it installs restroom stalls",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "regional",
+   "phone": "(828) 742-1557",
+   "website": "https://www.abacoarchitectural.com/",
+   "contact_page": "https://www.abacoarchitectural.com/",
+   "evidence_urls": [
+    "https://www.abacoarchitectural.com/"
+   ],
+   "red_flags": [
+    "Sells partitions itself",
+    "About 85 miles from Charlotte"
+   ],
+   "reason": "Regional Division 10 supplier/installer serving mainly North and South Carolina (schools, hospitals, fire stations); partition installation implied but not stated outright.",
+   "added_by_checker": false,
+   "license": {
+    "name": "ABACO, Inc. (Architectural Building Accessories Co.)",
+    "area": "charlotte",
+    "status": "not_found",
+    "registry": "North Carolina Licensing Board for General Contractors (NCLBGC) license search, portal.nclbgc.org",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Searched 'ABACO', 'Abaco', 'Architectural Building' and 'Architectural Building Accessories': no results. Company site gives legal name 'Architectural Building Accessories Company, Inc. (ABACO, Inc.)', base Banner Elk NC, and mentions product installations; no license number shown (https://www.abacoarchitectural.com/). License may not be needed for work below the state threshold."
+   },
+   "score": 43
+  },
+  {
+   "name": "Stuart Page Co.",
+   "base_city": "Matthews",
+   "state": "NC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "Blue Book listing (via search result) shows lines of business Bathroom Accessories, Lockers, Toilet Partitions & Cubicles, CSI 10 21 13 Toilet Compartments; serving NC and Upstate SC/Mecklenburg County. No website found; listing not opened directly.",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://thebluebook.com/iProView/1096702"
+   ],
+   "red_flags": [
+    "No company website found",
+    "Evidence only from a directory listing seen in search results"
+   ],
+   "reason": "Matthews company listed for toilet compartments and bathroom accessories in Mecklenburg County, but no own website or project evidence to confirm installation.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Stuart Page Co.",
+    "area": "charlotte",
+    "status": "not_found",
+    "registry": "North Carolina Licensing Board for General Contractors (NCLBGC) license search, portal.nclbgc.org",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Searched 'Stuart Page', 'Stuart-Page' and 'Page' filtered to city Matthews: no matching license. 'Page Co' returned only unrelated companies. No website given; legal name unconfirmed."
+   },
+   "score": 30
   },
   {
    "name": "Restroom Stalls and All LLC (RSA)",
@@ -233,6 +483,37 @@
    "score": 30
   },
   {
+   "name": "Lockers 'N' More",
+   "base_city": "Charlotte",
+   "state": "NC",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "partition_evidence": "Describes itself as a 'Storage Lockers and Toilet Partitions Distributor' with nationwide shipping; toilet partitions page offers no installation service. BBB category list shows Partitions, General Contractor, Bathroom Remodel.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "ASI Global (color guide file)"
+   ],
+   "within_area": "yes",
+   "phone": "704-440-4070 (toll free 1-800-663-9515)",
+   "contact_page": "https://lockersnmore.com/contact-us/",
+   "website": "https://lockersnmore.com/",
+   "review_source": "BBB A+ (not accredited)",
+   "evidence_urls": [
+    "https://lockersnmore.com/",
+    "https://lockersnmore.com/about-us/",
+    "https://lockersnmore.com/toilet-partitions/",
+    "https://www.bbb.org/us/nc/category/partition"
+   ],
+   "red_flags": [
+    "Partition distributor shipping nationwide (direct competitor)"
+   ],
+   "reason": "Charlotte partition and locker distributor; no evidence it installs, and it competes directly on partition sales.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
    "name": "Division 10 Sales",
    "base_city": "unknown (not stated on site)",
    "state": "NC",
@@ -294,6 +575,30 @@
    "added_by_checker": false,
    "license": null,
    "score": 20
+  },
+  {
+   "name": "BSL Galbreath, Inc.",
+   "base_city": "unknown",
+   "state": "NC",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "partition_evidence": "Website returned HTTP 503 twice; a search found nothing about this company and toilet partitions",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "website": "https://www.bslgalbreath.com/",
+   "evidence_urls": [
+    "https://www.bslgalbreath.com/"
+   ],
+   "red_flags": [
+    "Website unavailable (503)",
+    "No base city confirmed"
+   ],
+   "reason": "Could not verify anything about the business; website down and no other evidence found. Area set to 'no' because the location could not be confirmed.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
   }
  ]
 }
