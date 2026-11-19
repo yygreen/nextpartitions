@@ -1,0 +1,2561 @@
+{
+ "areas": [
+  {
+   "area": "ontario",
+   "state": "CA",
+   "sources_tried": [
+    "Seed file ontario.json (maps + web): worked; opened about 20 candidate sites, several returned 503 to WebFetch (masterbuilding.net, weisrobart.com, ajconstructionspecialties.com unreachable; pnspros.com and laminatingtech.com read via curl)",
+    "Bobrick find-a-rep: page loads but results need dropdown/JS; no reps visible",
+    "Scranton Products find-a-rep: 404 at guessed URL",
+    "ASI, Bradley, Hadrian, Metpar, General Partitions, Ammco locators: not tried (search budget and time)",
+    "The Blue Book (thebluebook.com): blocked, 403 on WebFetch; appeared only in search results",
+    "BuildingConnected / Procore: not tried",
+    "prelien.co CSLB aggregator pages: worked (Harrigan's, Empire Partitions, Partitions and Specialty Pros, Toilet Partitions Experts)",
+    "Levelset subcontractor pages: seen in search results",
+    "WebSearch: 7 of 8 used; Inland Empire, Riverside/San Bernardino Division 10, Orange County, Anchor, name lookups, C-61/D-34, Yelp queries",
+    "Yelp / BBB: no relevant Yelp results surfaced",
+    "Skipped: Partition Pros LA (Texas-based crew, 646 phone), Laminating Technologies/YTI (manufacturer), Accu Tec Mfg, American Partitions (modular offices), Psi3g (operable walls), Alan Lewis (product supplier), One Point Partitions (online supplier), remodelers and shower-door shops"
+   ],
+   "found_count": 14,
+   "checked": [
+    {
+     "name": "Harrigan's Toilet Partitions, Inc.",
+     "base_city": "Rancho Cucamonga",
+     "state": "CA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(909) 879-0400",
+     "email": "harrigans@harrigansinc.com",
+     "website": "http://www.harrigansinc.com/",
+     "contact_page": "http://www.harrigansinc.com/contact",
+     "evidence_urls": [
+      "http://www.harrigansinc.com/",
+      "https://www.prelien.co/contractor/harrigan-s-toilet-partitions-inc-935358"
+     ],
+     "partition_evidence": "Homepage calls it a toilet partition and urinal screen 'Distributor & Installer' with 'Expert Installation' for commercial restrooms; shows CSLB Lic. #935358.",
+     "red_flags": [
+      "Distributor of partitions (buy-around risk)"
+     ],
+     "reason": "Rancho Cucamonga-based commercial toilet partition distributor and installer serving Southern California, inside the area.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Penner Partitions Inc",
+     "base_city": "Anaheim",
+     "state": "CA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Weis/Robart",
+      "Hadrian",
+      "Mills",
+      "Bradley",
+      "Bobrick",
+      "AJW"
+     ],
+     "phone": "(714) 666-0822",
+     "email": "sales@pennerpartitions.com",
+     "website": "http://www.pennerpartitions.com/",
+     "contact_page": "https://pennerpartitions.com/contact-us/",
+     "evidence_urls": [
+      "http://www.pennerpartitions.com/",
+      "https://pennerpartitions.com/contact-us/"
+     ],
+     "partition_evidence": "Homepage: 'Let us deliver and install for you'; past projects include school districts, LAUSD, Metrolink stations, Victorville Federal Prison.",
+     "red_flags": [
+      "Stocking distributor that sells partitions (buy-around risk)",
+      "Shares Anaheim address with manufacturer Weis/Robart"
+     ],
+     "reason": "Anaheim stocking distributor that also delivers and installs toilet partitions for commercial and institutional clients.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Toilet Partitions Experts Inc",
+     "base_city": "Santa Ana",
+     "state": "CA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "+1 714 909 8855",
+     "email": "sales@toiletpartitionsexperts.com",
+     "website": "https://www.toiletpartitionsexperts.com/",
+     "contact_page": "https://www.toiletpartitionsexperts.com/contact-us/",
+     "evidence_urls": [
+      "https://www.toiletpartitionsexperts.com/",
+      "https://www.toiletpartitionsexperts.com/about-us/",
+      "https://www.prelien.co/contractor/toilet-partitions-experts-inc-1098283"
+     ],
+     "partition_evidence": "Services: complete installation of new toilet partitions and accessories, removal, re-installation, repairs; about page cites school districts, restaurants, offices, warehouses.",
+     "red_flags": [
+      "Base city from a third-party license listing, not the company site",
+      "A search summary said the CSLB license (1098283) showed an Oct 31, 2026 expiry; confirm current status"
+     ],
+     "reason": "Dedicated toilet partition installer with commercial work, CSLB C-61/D-34 license, based in Santa Ana within the area.",
+     "added_by_checker": false
+    },
+    {
+     "name": "RPS Building Specialties (rampartitions.com)",
+     "base_city": "Tustin",
+     "state": "CA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(714) 381-4196",
+     "website": "https://www.rampartitions.com/",
+     "contact_page": "https://rpsbuildingspecialties.com/#contact",
+     "evidence_urls": [
+      "https://www.rampartitions.com/"
+     ],
+     "partition_evidence": "'Supply & Install' of commercial toilet partitions (powder-coated, HDPE, phenolic, stainless, compact laminate) for GCs and property managers.",
+     "red_flags": [
+      "Supplies partitions (buy-around risk)"
+     ],
+     "reason": "Tustin Division 10 supply-and-install firm that lists Riverside and San Bernardino counties in its service area.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Pabst Leyton (Bathroom Partitions & Installation)",
+     "base_city": "unknown (Southern California)",
+     "state": "CA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(951) 576-7901",
+     "email": "leytoncpabst@gmail.com",
+     "website": "http://www.pabstleyton.com/",
+     "contact_page": "http://www.pabstleyton.com/request-a-quote",
+     "evidence_urls": [
+      "http://www.pabstleyton.com/"
+     ],
+     "partition_evidence": "Site says it supplies and installs bathroom partitions ('fully installed solutions') for GCs, business owners and facility managers.",
+     "red_flags": [
+      "Direct importer of phenolic panels (buy-around risk)",
+      "Uses a Gmail address",
+      "Base city not stated on site",
+      "Also offers security camera installation"
+     ],
+     "reason": "Supplies and installs commercial bathroom partitions and names the Inland Empire, San Bernardino and Riverside in its service area.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Thomas Partitions and Specialties, Inc.",
+     "base_city": "Altadena",
+     "state": "CA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "nearby",
+     "brands": [
+      "Bobrick",
+      "Hadrian",
+      "Accu-Tec",
+      "ASI",
+      "Bradley",
+      "Scranton Products",
+      "Metpar"
+     ],
+     "phone": "323.256.8666",
+     "website": "http://thompart.com/",
+     "contact_page": "http://thompart.com/contact",
+     "evidence_urls": [
+      "http://thompart.com/",
+      "https://thompart.com/services"
+     ],
+     "partition_evidence": "Services page: installs restroom partitions, 'All installers are factory certified'; homepage targets contractors with commercial restroom partitions.",
+     "red_flags": [
+      "Service area not stated"
+     ],
+     "reason": "Commercial restroom partition installer in Altadena, about 30 miles from Ontario.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Anchor Construction Specialties",
+     "base_city": "San Diego",
+     "state": "CA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "phone": "(858) 452-0562",
+     "email": "info@anchorspecialties.com",
+     "website": "https://anchorspecialties.com/",
+     "contact_page": "https://anchorspecialties.com/#contact",
+     "evidence_urls": [
+      "https://anchorspecialties.com/"
+     ],
+     "partition_evidence": "Division 10 subcontractor that installs toilet partitions for hotels, universities, hospitals, military.",
+     "red_flags": [
+      "Sells material-only via restroomwarehouse.com (buy-around risk)",
+      "Says 'Southern California', does not name Inland Empire"
+     ],
+     "reason": "San Diego Division 10 installer about 100 miles away that says it serves Southern California.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Inland Empire Architectural Specialties Inc.",
+     "base_city": "Riverside",
+     "state": "CA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [
+      "Bobrick",
+      "Bradley/Mills",
+      "General Partitions",
+      "Global Partitions",
+      "Scranton/Comtec"
+     ],
+     "phone": "951-781-0700",
+     "website": "https://www.ideas-ca.com/",
+     "contact_page": "https://ideas-ca.com/contact/",
+     "evidence_urls": [
+      "https://www.ideas-ca.com/",
+      "https://ideas-ca.com/contact/"
+     ],
+     "partition_evidence": "Commercial Division 10 contractor that 'provides and installs' its products, with restroom partitions listed; no partition project shown.",
+     "red_flags": [],
+     "reason": "Riverside Division 10 specialty contractor in the Inland Empire since 1984; partition installation implied but not shown.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Partitions and Specialty Pros",
+     "base_city": "Chino",
+     "state": "CA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(714) 927 9658",
+     "website": "http://pnspros.com/",
+     "evidence_urls": [
+      "https://www.prelien.co/contractor/partitions-and-specialty-pros-956130"
+     ],
+     "partition_evidence": "Company site returned 503; a license listing shows a CSLB C-61/D-34 Prefabricated Equipment license (Chino).",
+     "red_flags": [
+      "Website down (503)",
+      "Sole owner; services not verified from own site"
+     ],
+     "reason": "Licensed C-61/D-34 contractor in Chino, but its own site could not be read to confirm partition installation.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Preferred Construction Specialties, Inc.",
+     "base_city": "Anaheim",
+     "state": "CA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [
+      "Bobrick",
+      "Bradley",
+      "Koala Kare",
+      "Seachrome",
+      "Dyson",
+      "Gamco"
+     ],
+     "phone": "(714) 528-4300",
+     "email": "office@preferredspecialties.com",
+     "website": "http://www.preferredspecialties.com/",
+     "contact_page": "http://www.preferredspecialties.com/contact_us.html",
+     "evidence_urls": [
+      "http://www.preferredspecialties.com/",
+      "http://www.preferredspecialties.com/contact_us.html"
+     ],
+     "partition_evidence": "Says it offers a 'complete range of Division 10 services'; toilet partitions not named on pages read.",
+     "red_flags": [
+      "Sells washroom accessories directly"
+     ],
+     "reason": "Anaheim Division 10 firm; partition installation not confirmed.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Urban Specialties - Toilet Partitions",
+     "base_city": "Tustin",
+     "state": "CA",
+     "verdict": "possible",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(714) 477-1590",
+     "email": "info@urbanspecialties.net",
+     "website": "http://urbanspecialties.net/",
+     "contact_page": "http://urbanspecialties.net/",
+     "evidence_urls": [
+      "http://urbanspecialties.net/"
+     ],
+     "partition_evidence": "Supplies toilet partitions in all materials and mounting styles; installation not mentioned.",
+     "red_flags": [
+      "Supplier (buy-around risk)",
+      "Installation not stated"
+     ],
+     "reason": "Orange County partition supplier; no evidence it installs.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Weis/Robart Partitions, Inc",
+     "base_city": "Anaheim",
+     "state": "CA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Weis/Robart"
+     ],
+     "website": "http://weisrobart.com/",
+     "evidence_urls": [
+      "https://pennerpartitions.com/"
+     ],
+     "partition_evidence": "Website returned 503; a partition manufacturer whose products Penner Partitions distributes.",
+     "red_flags": [
+      "Manufacturer, not an installer",
+      "Website down"
+     ],
+     "reason": "Partition manufacturer; no installation service could be verified.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Magnum Drywall (Division 10 group)",
+     "base_city": "San Jose",
+     "state": "CA",
+     "verdict": "reject",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "no",
+     "brands": [
+      "Bobrick"
+     ],
+     "phone": "(408) 600-0422",
+     "email": "estimators@magnumdrywall.com",
+     "website": "https://magnumdrywall.com/division-10-specialties/",
+     "contact_page": "https://magnumdrywall.com/contact-us/",
+     "evidence_urls": [
+      "https://magnumdrywall.com/division-10-specialties/"
+     ],
+     "partition_evidence": "Division 10 page says it specifies and installs toilet partitions.",
+     "red_flags": [
+      "Only San Jose address listed; Southern California office city not stated"
+     ],
+     "reason": "Installs partitions but is based in San Jose, far outside 120 miles, and its SoCal office location is unconfirmed.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Empire Partitions and Specialties Inc.",
+     "base_city": "Canyon Lake",
+     "state": "CA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "website": "https://www.facebook.com/EmpirePartitionsAndSpecialties/",
+     "evidence_urls": [
+      "https://www.facebook.com/EmpirePartitionsAndSpecialties/"
+     ],
+     "partition_evidence": "Facebook page shows only a login wall; a web search found no other trace.",
+     "red_flags": [
+      "No website; existence and services unverified"
+     ],
+     "reason": "No readable evidence of the business or its services.",
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "mesa",
+   "state": "AZ",
+   "sources_tried": [
+    "Seed file mesa.json (Maps and web results): worked. 8 plausible sites opened. Division Nine Contracting (plaster/EIFS, no partitions) and MAS Sales (plumbing rep, no partitions) excluded. The rest of the Maps hits were residential remodelers, plumbers or stores.",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded, but the rep dropdown didn't render, so no AZ reps came back.",
+    "Scranton Products: /find-a-rep/ returned 404. /where-to-buy/ worked but lists only a factory product specialist for AZ (John McKeon), not a local installer.",
+    "ASI / Global Partitions (globalpartitions.com/where-to-buy): host unreachable from this session's network (ENOTFOUND). The host must be allowed in the session's network settings.",
+    "Bradley find-a-rep: page loaded with no rep content.",
+    "Hadrian find-a-rep: 404 and 503.",
+    "Metpar representatives: 404. General Partitions and Ampco not tried.",
+    "The Blue Book (thebluebook.com iProView pages): blocked with 403. Search snippets mentioned Millennium Designs/TENCO (Division 10, serving Phoenix/Mesa) and Partition Plus Inc (Maryland). They weren't verified and aren't included.",
+    "BuildingConnected / Procore: not tried (search cap).",
+    "WebSearch: all 8 searches used. Queries covered toilet partition installation Mesa/Phoenix, Division 10 contractor Phoenix, restroom partitions installer Tempe/Chandler/Scottsdale, Millennium Designs TENCO, ROC partitions Phoenix, Partition Plus/Allegheny, BBB/Yelp Phoenix/Gilbert/Glendale and furnish-and-install AZ. They surfaced Inter-Co, Black Scale (via the seed), One Point Partitions and BBB category pages.",
+    "BBB partition category pages (Mesa, Phoenix, Oro Valley): worked. The listed firms are mostly drywall contractors, Hufcor (operable walls) and Statewide Installations (office furniture). None were confirmed for toilet partitions, so none were added.",
+    "Yelp: no Yelp results came up in search.",
+    "One Point Partitions (onepointpartitions.com): 403. Search snippets describe it as an online seller with Phoenix delivery terminals and self-install videos, so it was excluded.",
+    "Innergy Interiors (innergy-interiors.pages.dev): read. It furnishes and installs Division 10 including toilet compartments and lists AZROC #355389, but it is based in El Paso, TX, beyond the 120-mile limit, so it was excluded.",
+    "Allegheny Construction Specialties (Phoenix job posting): the host was unreachable (job-openings.youthopps.monster.com, ENOTFOUND) and no company site was found, so it isn't included.",
+    "City of Phoenix solicitation 2041: read. No restroom partition award or vendors were listed."
+   ],
+   "found_count": 6,
+   "checked": [
+    {
+     "name": "Partitions & Accessories Co.",
+     "base_city": "Mesa",
+     "state": "AZ",
+     "website": "https://partitionsco.com/",
+     "phone": "(480) 969-6606; (800) 795-6607",
+     "email": "sales@partitionsco.com",
+     "contact_page": "https://partitionsco.com/contact-us/",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "partition_evidence": "Homepage: 'We Deliver and Install High Quality Products', 'dedicated installers'; toilet partitions page: local distributor, installer and architectural rep for ASI Accurate partitions (40+ years). Lists AZ ROC #110352.",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "ASI Accurate",
+      "Bobrick",
+      "Scranton Products",
+      "Bradley"
+     ],
+     "within_area": "yes",
+     "evidence_urls": [
+      "http://www.partitionsco.com/",
+      "https://partitionsco.com/toilet-partitions/"
+     ],
+     "red_flags": [
+      "Stocking distributor and ASI Accurate local distributor: direct competitor and high buy-around risk"
+     ],
+     "reason": "Mesa-based Division 10 supplier that installs commercial toilet partitions for GCs and architects. Strong installer, but it sells partitions itself (ASI, Bobrick, Scranton), so it competes with Next Partitions.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Black Scale Inc.",
+     "base_city": "Scottsdale",
+     "state": "AZ",
+     "website": "https://blackscaleinc.com/",
+     "phone": "(888) 399-6274",
+     "email": "info@blackscaleinc.com",
+     "contact_page": "https://blackscaleinc.com/contact/",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "partition_evidence": "Site says 'Complete supply and installation of commercial restroom partition systems' for schools, healthcare, offices, retail and hospitality. Lists ROC 354075, licensed, bonded and insured.",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "ASI",
+      "Bobrick",
+      "Hadrian",
+      "Bradley",
+      "Koala Kare",
+      "World Dryer"
+     ],
+     "within_area": "yes",
+     "evidence_urls": [
+      "https://blackscaleinc.com/"
+     ],
+     "red_flags": [
+      "Distributor for ASI, Hadrian and Bobrick: buy-around risk"
+     ],
+     "reason": "Scottsdale Division 10 contractor with explicit commercial restroom partition installation and city pages for Mesa, Chandler, Gilbert, Phoenix and others. It also distributes partitions.",
+     "added_by_checker": false
+    },
+    {
+     "name": "J's Partitions LLC",
+     "base_city": "Tolleson",
+     "state": "AZ",
+     "website": "http://jspartitionsllc.com/",
+     "phone": "602-497-7477",
+     "contact_page": "https://jspartitionsllc.com/contact",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "partition_evidence": "Homepage lists a 'Toilet Partitions' service and says the company handles manufacturing and installation of partitions, mentioning commercial experience and public restrooms. Other services listed include washroom accessories, lockers and wall protection.",
+     "commercial": "mostly",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "nearby",
+     "evidence_urls": [
+      "http://jspartitionsllc.com/",
+      "https://jspartitionsllc.com/contact"
+     ],
+     "red_flags": [
+      "No ROC license shown on the site",
+      "Gallery has only placeholder images and no project photos",
+      "Inconsistent experience claims ('over 20 years' and '13 years')",
+      "Says it manufactures partitions (possible buy-around)"
+     ],
+     "reason": "Partition specialist in Tolleson, about 30 miles from Mesa, that lists toilet partition installation. The site is thin, though: no license and no real project photos.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Beach Building Specialties (Beach Products)",
+     "base_city": "Phoenix",
+     "state": "AZ",
+     "website": "https://beachproductsonline.com/",
+     "phone": "(602) 272-6754",
+     "contact_page": "https://beachproductsonline.com/#contact-form",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "partition_evidence": "An expired Beach Products job posting for a Phoenix Commercial Division 10 Finishing Installer covers installing toilet partitions, restroom accessories, lockers and wall protection in commercial buildings. Its own site features toilet partitions and mentions site visits before installation.",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "yes",
+     "evidence_urls": [
+      "https://beachproductsonline.com/",
+      "https://app.qureos.com/jobs/finishing-installer-commercial-division-10-experienced-only-1763628751088"
+     ],
+     "red_flags": [
+      "Distributor of toilet partitions: buy-around risk",
+      "No ROC license shown on the site",
+      "Two different Phoenix addresses on the site"
+     ],
+     "reason": "Phoenix Division 10 distributor with its own commercial installation crews for toilet partitions, so it is a strong installer but also a partition seller.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Inter-Co Division 10 (Arizona) Inc. / Inter-Co Restroom & Locker Supply",
+     "base_city": "Phoenix",
+     "state": "AZ",
+     "website": "https://www.inter-co.com/",
+     "phone": "(623) 398-6295",
+     "email": "azsales@inter-co.com",
+     "contact_page": "https://www.inter-co.com/contact/",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "partition_evidence": "Homepage: 'We supply and install hundreds of different products from the leading manufacturers'. Its toilet partitions page only says it can 'provide any brand or material type of toilet partitions'. It names partition installation only for glass shower systems. Commercial projects include offices, hospitals, schools, stadiums and hotels.",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "ASI",
+      "Bobrick",
+      "Privada",
+      "Scranton",
+      "Thrislington Cubicles"
+     ],
+     "within_area": "yes",
+     "evidence_urls": [
+      "https://www.inter-co.com/",
+      "https://www.inter-co.com/products/toilet-partitions/"
+     ],
+     "red_flags": [
+      "Large multi-office Division 10 supplier (Toronto HQ) that sells partitions of all brands: high buy-around risk"
+     ],
+     "reason": "Phoenix office of a large Division 10 supply-and-install firm. Its own pages show partition supply and general installation but don't explicitly name toilet partition installation.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Arizona Washroom Partitions",
+     "base_city": "unknown",
+     "state": "AZ",
+     "website": "http://www.azwashroom.com/",
+     "phone": "602-437-8036",
+     "contact_page": "http://azwashroom.com/contact/",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "partition_evidence": "Site is 'under construction' and has an empty 'Toilet Partitions' category. No installation services, projects or photos.",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "no",
+     "evidence_urls": [
+      "http://www.azwashroom.com/"
+     ],
+     "red_flags": [
+      "Website under construction",
+      "No base city, services or license shown",
+      "within_area set to no only because no location could be confirmed (602 area code suggests Phoenix)"
+     ],
+     "reason": "No evidence of installation work, commercial clients or a location. The site is a placeholder.",
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "virginia-beach",
+   "state": "VA",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/virginia-beach.json: worked. Most maps results were remodelers, plumbers and stores. The web results were google.com/goto links that resolve with www.google.com and gave Tidewater Stalls, Virginia Installations, Partition Plus, Seven Oaks, GC Specialties, CSI, Partition Pros and One Point Partitions.",
+    "Bobrick find-a-rep: the page loaded, but the rep list is dynamic or JS, so no results.",
+    "Scranton Products find-a-rep (/find-a-rep/): 404",
+    "Hadrian find-a-rep: 404",
+    "ASI, Bradley, Metpar, General Partitions, Ammco locators: not tried after the JS and 404 results above.",
+    "The Blue Book (thebluebook.com iProView pages): 403 blocked on every profile tried (Frank M. Waters, 259104, Accessible Construction Supply).",
+    "BBB (prod.bbb.org Section 10 Inc, Midlothian VA): 403 blocked",
+    "Yelp search page: 403 blocked",
+    "BuildingConnected and Procore: not tried (search cap)",
+    "WebSearch: all 8 used. Queries: toilet partition installation VB, Norfolk and Chesapeake; Division 10 Hampton Roads; restroom partitions installer VA and Richmond; toilet partitions in Norfolk, Chesapeake, Newport News and Suffolk; Frank M. Waters; VA partitions, lockers and installation specialties; Richmond Division 10 specialties; Hampton Roads toilet partitions. Few local results.",
+    "onepointpartitions.com: WebFetch 403 and curl returned an empty page. A search summary says it is a supplier that does not install, so it was excluded.",
+    "Excluded after reading: GC Specialties (Mobile, AL, no VA mention), Construction Specialties Installations (NY, NH and FL, no VA mention), Seven Oaks Doors & Hardware (Locust, NC; serves South Central VA, out of range), Partition Pros (national, no local crew), H2I Group (Eagan, MN, no partitions), Allegheny Construction Specialties (Nashville), Complete Interior Package (North Chesterfield; no partitions listed), Martin Bros (California).",
+    "Leads not verified (blocked or no site found): Section 10 Inc (Midlothian, VA, per a BBB search snippet that lists bathroom partitions), Barranger Company (location unknown), Frank M. Waters Inc (Maryland, toilet partitions)."
+   ],
+   "found_count": 4,
+   "checked": [
+    {
+     "name": "Virginia Storage Systems",
+     "base_city": "Chesapeake",
+     "state": "VA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Stanley Vidmar (cabinets, factory-trained installer)"
+     ],
+     "phone": "757-494-7200",
+     "contact_page": "http://www.virginiastorage.com/staff.html",
+     "website": "http://www.virginiastorage.com/",
+     "partition_evidence": "Homepage lists toilet partitions and toilet accessories, says they sell and install, and describes installing 21 toilet stalls at a theme park; staff page says the VP oversees all installations.",
+     "reason": "Chesapeake-based seller and installer of toilet partitions, lockers and accessories for commercial and industrial clients (rail yard, theme park, power plant) across Hampton Roads. It also sells partitions, so there is some buy-around risk.",
+     "red_flags": [
+      "Sells partitions itself (buy-around risk)",
+      "No general company email; only individual staff emails on site",
+      "Older-style website"
+     ],
+     "evidence_urls": [
+      "http://www.virginiastorage.com/",
+      "http://www.virginiastorage.com/staff.html"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Tidewater Stalls & Specialties, LLC",
+     "base_city": "Virginia Beach",
+     "state": "VA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "unknown",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://tidewaterstalls.com/",
+     "partition_evidence": "Homepage title 'Bathroom Partitions, Lockers | Virginia Beach, VA' and meta description 'a supplier of Division 10 products, such as Bathroom Partitions, Restroom Accessories, Lockers'; page links an installation-instructions guide. No installation service or project photos were confirmed.",
+     "reason": "Virginia Beach Division 10 supplier of bathroom partitions (site launched 2026). The site describes itself as a supplier and returned errors (HTTP 520) on later fetches, so it was not confirmed that they install, and no contact details were collected.",
+     "red_flags": [
+      "Describes itself as a supplier; installation not confirmed",
+      "Website returned HTTP 520 errors on repeat fetches",
+      "New site (published May 2026); no reviews found",
+      "Sells partitions (buy-around risk)"
+     ],
+     "evidence_urls": [
+      "https://tidewaterstalls.com/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Partition Plus",
+     "base_city": "Forest Hill",
+     "state": "MD",
+     "verdict": "reject",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [
+      "Hadrian",
+      "Bradley",
+      "Bobrick",
+      "Scranton Products",
+      "ASI",
+      "Metpar",
+      "Jacknob",
+      "Hawa"
+     ],
+     "phone": "800-298-9696",
+     "email": "sales@partitionplus.com",
+     "contact_page": "https://www.partitionplus.com/about-us/#contact-title",
+     "website": "https://partitionplus.com/",
+     "partition_evidence": "About page says it offers regional installation in MD, DC, VA, PA and DE.",
+     "reason": "An online partitions dealer, and a direct competitor reselling the same brands as Next Partitions. It is based in Forest Hill, MD, roughly 200+ miles from Virginia Beach, beyond the 120-mile regional limit, even though Virginia is named in its install area.",
+     "red_flags": [
+      "Direct competitor: sells Bobrick, ASI, Scranton, Bradley, Metpar (high buy-around risk)",
+      "Based well over 120 miles from Virginia Beach"
+     ],
+     "evidence_urls": [
+      "https://partitionplus.com/",
+      "https://www.partitionplus.com/about-us/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Virginia Installations, Inc.",
+     "base_city": "Elkton",
+     "state": "VA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "mostly",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [
+      "Organized Living"
+     ],
+     "phone": "(540) 298-5300",
+     "email": "info@virginiainstallations.com",
+     "contact_page": "https://www.virginiainstallations.com/contact-virginia-installations-residential-commercial-bathroom-accessories-ada-accessibility-st",
+     "website": "https://www.virginiainstallations.com/",
+     "partition_evidence": "Homepage text covers closet shelving, door hardware, mirrors, shower enclosures and bath accessories; 'toilet partitions' appears only in a link URL, not confirmed in content.",
+     "reason": "It is based in Elkton in the Shenandoah Valley, about 200 miles from Virginia Beach, and says it serves the Shenandoah Valley only. Partition installation was not confirmed.",
+     "red_flags": [
+      "Service area is Shenandoah Valley only",
+      "Partition installation not confirmed in page text"
+     ],
+     "evidence_urls": [
+      "https://www.virginiainstallations.com/"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "norfolk",
+   "state": "VA",
+   "sources_tried": [
+    "Seed file norfolk.json: worked. Of 41 maps results, 2 are relevant (Tidewater Stalls & Specialties, Virginia Storage Systems). The rest are remodelers, plumbers and stores. The web results are Google redirect links to directories and forum threads, with no new installers.",
+    "Bobrick rep locator: guessed URLs returned 404 (/sales-representatives, /find-a-representative), so it was not found.",
+    "ASI (Global Partitions) find-a-rep: blocked (403).",
+    "Scranton Products where-to-buy: worked, but Virginia is covered only by an individual factory rep, not an installer business. Not recorded.",
+    "Hadrian find-a-rep: blocked (403).",
+    "Metpar representatives: page empty or 404.",
+    "Bradley find-a-rep: no listings in the page (loaded by script).",
+    "General Partitions and Ampco/Ammco locators: not tried before the time and search budget ran out.",
+    "The Blue Book (thebluebook.com): blocked (403 CloudFront) for curl and WebFetch. Its profiles for Barranger, Frank M. Waters, Partition Plus and Accessible Construction Supply appeared only as search results.",
+    "BuildingConnected and Procore public profiles: not reached.",
+    "BBB: blocked (Cloudflare).",
+    "WebSearch: used all 8. Searches for toilet partition installation in Norfolk and Hampton Roads, Division 10 contractors in VA, bathroom partition installers in Virginia Beach, Chesapeake and Suffolk, and specialties contractors in Richmond and Williamsburg returned mostly remodelers and One Point Partitions pages.",
+    "Excluded: One Point Partitions, a national online seller whose site is blocked by Cloudflare. It has only a 'delivery terminal' in Chesapeake per search snippets, and installation is unconfirmed.",
+    "Excluded: Partition Plus (partitionplus.com/about-us read). Based in Forest Hill, MD, more than 120 miles away, though it says it offers regional installation in Virginia.",
+    "Excluded: American Building Specialties, a wholesale distributor in Bealeton, VA, about 170 miles away.",
+    "Excluded: Unified Door & Hardware Group (udhgroup.com). A national company with no Virginia location found.",
+    "Excluded: Allegheny Construction Specialties (Tennessee), 10 SPEC (New Jersey) and Walsh Door (no local base found).",
+    "Not verified: Frank M. Waters Inc. Its site was not found, and the Blue Book snippet says it is Maryland-based."
+   ],
+   "found_count": 4,
+   "checked": [
+    {
+     "name": "Tidewater Stalls & Specialties, LLC",
+     "base_city": "Virginia Beach",
+     "state": "VA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Bobrick",
+      "Bradley",
+      "Hadrian"
+     ],
+     "website": "https://tidewaterstalls.com/",
+     "phone": "(757) 233-9900",
+     "email": "info@tidewaterstalls.com",
+     "contact_page": "https://tidewaterstalls.com/contact",
+     "partition_evidence": "Has a 'Bathroom Partition Installation' service page ('We install bathroom partitions from leading manufacturers including Bobrick, Bradley, and Hadrian', floor-mounted, ceiling-hung and floor-to-ceiling). Its homepage testimonials describe restroom partition and toilet compartment installs. It has an installation team lead.",
+     "reason": "A Division 10 specialist based in Virginia Beach that installs commercial bathroom partitions and has service-area pages for Norfolk, Virginia Beach, Chesapeake, Hampton, Newport News and Suffolk. It is also an authorized distributor that supplies partitions, so it is a buy-around risk.",
+     "red_flags": [
+      "Distributor that supplies and sells partitions itself (buy-around risk)",
+      "Mainly serves general contractors and construction managers"
+     ],
+     "evidence_urls": [
+      "https://tidewaterstalls.com/",
+      "https://tidewaterstalls.com/services/bathroom-partition-installation/",
+      "https://tidewaterstalls.com/products/bathroom-partitions/",
+      "https://tidewaterstalls.com/about",
+      "https://tidewaterstalls.com/contact"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Virginia Storage Systems, Inc.",
+     "base_city": "Chesapeake",
+     "state": "VA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Scranton Products",
+      "General Partitions",
+      "Bobrick",
+      "Stanley Vidmar"
+     ],
+     "website": "http://www.virginiastorage.com/",
+     "phone": "757-494-7200",
+     "contact_page": "http://www.virginiastorage.com/staff.html",
+     "partition_evidence": "Its homepage features a project where it 'installed 21 toilet stalls' (solid-core phenolic) at a Williamsburg theme park. Its toilet partitions page offers partitions with a one-year guarantee on parts, material and workmanship, and says its installers keep ADA training current.",
+     "reason": "Based in Chesapeake, it sells and installs toilet partitions 'anywhere in Hampton Roads' for commercial and industrial clients. It also sells partitions itself (buy-around risk), and its website hasn't been updated since 2014.",
+     "red_flags": [
+      "Sells partitions itself (buy-around risk)",
+      "Website copyright is 2014, so it may be stale; check the business is still active",
+      "No general company email; only staff-name emails are on the site"
+     ],
+     "evidence_urls": [
+      "http://www.virginiastorage.com/",
+      "http://www.virginiastorage.com/toiletpartitions.html",
+      "http://www.virginiastorage.com/staff.html"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Barranger & Company, Inc.",
+     "base_city": "Richmond",
+     "state": "VA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Bobrick",
+      "Global",
+      "Knickerbocker",
+      "Sanymetal",
+      "Scranton Products",
+      "American Sanitary"
+     ],
+     "website": "https://barranger.com/",
+     "phone": "(804) 794-0920",
+     "email": "barranger@barranger.com",
+     "contact_page": "https://barranger.com/request-a-quote/",
+     "partition_evidence": "The homepage says it is 'supplying and installing folding doors, partitions, toilet accessories, lockers'. The about page covers toilet compartments for new or replacement jobs and repairs, and the How To Order page mentions terms for 'installed material'. No toilet partition install photos or projects were shown.",
+     "reason": "A distributor of specialty products in Richmond, about 85 to 90 miles from Norfolk, that supplies and installs partitions, but the clearest installation evidence is for folding doors. Its site doesn't name Hampton Roads or Norfolk as a service area.",
+     "red_flags": [
+      "Distributor that sells partitions itself (buy-around risk)",
+      "Hampton Roads service area not stated on its site",
+      "Mainly a folding-door and operable-wall specialist"
+     ],
+     "evidence_urls": [
+      "https://barranger.com/",
+      "https://barranger.com/about-barranger/",
+      "https://barranger.com/manufacturers/",
+      "https://barranger.com/toilet-partitions/",
+      "https://barranger.com/how-to-order/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Section 10 Inc.",
+     "base_city": "Midlothian",
+     "state": "VA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "reason": "No website, project or service description found. A search snippet suggests a BBB listing under commercial contractors, office furniture installation and bathroom accessories, but the page couldn't be read (lib.www.bbb.org isn't reachable from this session). Midlothian is about 90 miles away and nothing shows it serves Hampton Roads.",
+     "red_flags": [
+      "No website found",
+      "Toilet partition work not verified"
+     ],
+     "evidence_urls": [],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "richmond",
+   "state": "VA",
+   "sources_tried": [
+    "Seed file richmond.json (maps + web): worked. Most entries were residential remodelers, shower door shops or stores. Only Barranger was relevant. Complete Interior Package (cipva.com) does residential showers and mirrors, no partitions. Thompson Fixture Installation (tfinstall.com) does store fixtures and signs, no partitions. commercialspecialties.net is Florida-based (904 area code), out of range.",
+    "barranger.com: WebFetch returned 503; curl worked and the pages were read",
+    "Bobrick find-a-rep: page loads, but the dropdown results are rendered by script, so no Virginia rep could be read",
+    "ASI Global Partitions find-a-rep: blocked (403)",
+    "Scranton Products find-a-rep: 404 at the guessed URL",
+    "Bradley, Hadrian, Metpar, General Partitions, Ampco: not reached before the search cap",
+    "The Blue Book (thebluebook.com): blocked (403) on every profile. Only search-result titles and summaries seen (Eastern Partitions, Barranger Company, Frank M. Waters, Partition Plus, Accessible Construction Supply).",
+    "BBB: blocked (403). Section 10 Inc. was seen only through a search summary.",
+    "GlobalSpec local listings: blocked (403)",
+    "BuildingConnected / Procore: not tried (search cap)",
+    "WebSearch: all 8 used. Queries: Division 10 Richmond; Chesterfield/Henrico installers; Section 10 Midlothian; Eastern Partitions; Division 10 Virginia cities; bathroom partition installers Richmond; Hampton Roads/Charlottesville/Fredericksburg; Barranger. Results were dominated by onepointpartitions.com, an online supplier with a Richmond delivery terminal that doesn't install, so it was skipped.",
+    "Excluded after reading: Kelley Bros (no Virginia office), Unified Door & Hardware Group / UDH (NJ, no Virginia mention), Martin Bros (California), Newton Distributing (MA, refers installers only), Frank M. Waters (MD/DC region, Virginia service not confirmed)"
+   ],
+   "found_count": 5,
+   "checked": [
+    {
+     "name": "Barranger & Company, Inc.",
+     "base_city": "Richmond",
+     "state": "VA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Bobrick",
+      "Global",
+      "Knickerbocker",
+      "Sanymetal",
+      "Scranton Products",
+      "American Sanitary"
+     ],
+     "website": "https://barranger.com/",
+     "phone": "(804) 794-0920",
+     "email": "barranger@barranger.com",
+     "contact_page": "https://barranger.com/",
+     "evidence_urls": [
+      "https://barranger.com/",
+      "https://barranger.com/toilet-partitions/",
+      "https://barranger.com/about-barranger/",
+      "https://barranger.com/manufacturers/"
+     ],
+     "partition_evidence": "Homepage says it supplies and installs folding doors, partitions, toilet accessories and lockers; toilet partitions page has a gallery of installed stalls and urinal screens (e.g. Genworth project photos); about page: toilet compartments 'new, replace existing, refurnish or repair existing'.",
+     "reason": "Richmond-based specialty-products distributor (50+ years) that supplies and installs toilet partitions for commercial, school, church and hospitality clients. Strong installer, but it is itself a partition dealer, so a real buy-around risk.",
+     "red_flags": [
+      "Sells toilet partitions itself (Bobrick, Scranton, Global, etc.): direct competitor and buy-around risk",
+      "No Google/Yelp/BBB rating read"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Section 10 Inc.",
+     "base_city": "Midlothian",
+     "state": "VA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "evidence_urls": [
+      "https://prod.bbb.org/us/va/midlothian/profile/commercial-contractors/section-10-inc-0603-63404554"
+     ],
+     "partition_evidence": "Only a search-result summary of its BBB profile (category commercial contractors; services operable partitions, bathroom partitions, toilet accessories). The BBB page itself returned 403, and no company website was found.",
+     "reason": "Name and BBB categories point to a Division 10 specialties contractor in Midlothian, but I could not open its own site, projects or photos to confirm toilet partition installation.",
+     "red_flags": [
+      "Not BBB accredited (per search summary)",
+      "No company website found",
+      "BBB page not readable (403); phone and rating not verified"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Eastern Partitions, Inc.",
+     "base_city": "Midlothian",
+     "state": "VA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "evidence_urls": [
+      "https://www.thebluebook.com/iProView/796009/eastern-partitions-inc/subcontractors/construction-projects/bon-secours-hospital-21355/",
+      "https://www.thebluebook.com/iProView/796009/eastern-partitions-inc/subcontractors/construction-projects/village-bank-headquarters-21354/"
+     ],
+     "partition_evidence": "Blue Book lists it as a subcontractor on Richmond-area commercial projects (Bon Secours hospital, about $700,000 contract; Village Bank HQ; Safeway; data centers). No trade scope shown in what I could read; contract sizes suggest drywall/interior wall partitions rather than toilet partitions. Blue Book pages returned 403 on direct fetch.",
+     "reason": "Real local commercial subcontractor, but no evidence of toilet partition work; 'partitions' likely means interior wall framing/drywall. Worth a phone check only if the area is short of installers.",
+     "red_flags": [
+      "No company website found",
+      "Project listings dated around 2012; current status unknown",
+      "Trade scope unconfirmed"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Continental Partition Systems Inc",
+     "base_city": "Fredericksburg",
+     "state": "VA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "evidence_urls": [
+      "https://mapquest.com/us/virginia/continental-partition-systems-410358174"
+     ],
+     "partition_evidence": "Only a search-result summary of a MapQuest listing: operable partition walls, glass partition walls, gym equipment, lockers and stalls, with new installation, replacement, repair and maintenance for hotels, churches, schools and recreation centers. MapQuest page returned no content when fetched; no company website found.",
+     "reason": "Division 10 installer that apparently mentions stalls, about 55 miles north of Richmond, but nothing I read says it serves Richmond and its own site could not be found.",
+     "red_flags": [
+      "No company website found",
+      "Service area for Richmond not confirmed",
+      "Phone/contact not verified"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "American Building Specialties Corp. (ABS)",
+     "base_city": "Bealeton",
+     "state": "VA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Bobrick",
+      "ASI",
+      "Hadrian"
+     ],
+     "evidence_urls": [
+      "https://www.thebluebook.com/iProView/393400"
+     ],
+     "partition_evidence": "Search-result summary of its Blue Book listing: wholesale distributor of toilet partitions, bathroom accessories and lockers; master distributor for Bobrick, ASI and Hadrian; installation available in many states; Virginia listed as a region served. Blue Book page returned 403 on direct fetch; no company website found.",
+     "reason": "About 75 miles from Richmond and lists Virginia as served, but it is primarily a wholesale partition distributor (a competitor) and installation is mentioned only generally.",
+     "red_flags": [
+      "Wholesale partition distributor: direct competitor and buy-around risk",
+      "No company website read; contact details not verified"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "long-island",
+   "state": "NY",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/long-island.json: worked (maps results useful; most web results were Google redirect links)",
+    "Company sites: csinstallers.com, kspny.com, cmecontractorspecialties.com, mavinewyork.com worked; flushmetal.com, knickerbockerpartition.com, monarchpartition.com, partitioninc.com, jacknob.com read and found to be manufacturers or hardware sellers (excluded as manufacturer plants / stores); privacypartitionsne.com read but thin, its /contact page returned 404",
+    "metsalesinstallations.com and modulexcorp.com: did not resolve (blocked by session network or no longer exist)",
+    "Bobrick find-a-rep: page loads but results need a dropdown/JS, no NY reps shown",
+    "Scranton Products where-to-buy: worked but lists only territory product specialists, not installers",
+    "ASI Global Partitions find-a-rep: redirect to http, not followed further",
+    "Bradley, Hadrian, Metpar, General Partitions, Ammco locators: not tried (fetch budget)",
+    "The Blue Book (thebluebook.com): blocked (403) on every page; only search snippets used",
+    "Thomasnet: blocked (403); Thomasnet news story redirects to generic insights page",
+    "ARCAT company pages: blocked (403)",
+    "CIS Leads (cisleads.com): worked, phones hidden behind registration",
+    "onepointpartitions.com: blocked (403); Jersey City NJ online supplier, not added",
+    "New York Build Expo article: worked",
+    "BuildingConnected / Procore public profiles: not tried",
+    "WebSearch: 8 of 8 used (Long Island installation, Division 10 Long Island, furnish and install Nassau/Suffolk, Partition Servicing/Snappy/ADA, Division 10 Inc Hackensack, Inter-Co Kearny, Nassau city names); Yelp/BBB did not surface"
+   ],
+   "found_count": 12,
+   "checked": [
+    {
+     "name": "Construction Specialties Installations (CSI / CS Installers)",
+     "base_city": "Ronkonkoma",
+     "state": "NY",
+     "website": "https://www.csinstallers.com/",
+     "phone": "(866) 746-8849",
+     "contact_page": "https://www.csinstallers.com/contact/",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "partition_evidence": "Homepage lists toilet partitions and bathroom partition installation as core services; certified installer for Privada, Thrislington, Privacy Plus",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "brands": [
+      "Privada",
+      "Thrislington",
+      "Privacy Plus",
+      "Hollman"
+     ],
+     "within_area": "yes",
+     "reason": "Division 10 installer with an office in Ronkonkoma (Long Island) installing toilet partitions for commercial, healthcare and education clients across the Northeast. Site describes installation only, no supply.",
+     "red_flags": [],
+     "evidence_urls": [
+      "https://www.csinstallers.com/",
+      "https://www.csinstallers.com/contact/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Karpen Steel Products, Inc",
+     "base_city": "Ronkonkoma",
+     "state": "NY",
+     "website": "https://www.kspny.com/",
+     "phone": "(631) 841-0028",
+     "email": "Info@kspny.com",
+     "contact_page": "https://www.kspny.com/contact",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "partition_evidence": "Site says it distributes and installs toilet partitions and bathroom accessories; invites restroom layout sketches for partition quotes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "Bobrick",
+      "Scranton Products",
+      "AAMCO"
+     ],
+     "within_area": "yes",
+     "reason": "Long Island distributor and installer of toilet partitions for commercial, industrial and healthcare clients. As a distributor of the same brands Next Partitions sells, it is a buy-around risk.",
+     "red_flags": [
+      "Distributor of partitions (buy-around risk)",
+      "Image alt text mentions Amityville, NY while footer says Ronkonkoma",
+      "No project photos on site"
+     ],
+     "evidence_urls": [
+      "https://www.kspny.com/",
+      "https://www.kspny.com/contact"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "CME Corp (Contractor Specialties)",
+     "base_city": "Garden City",
+     "state": "NY",
+     "website": "https://cmecontractorspecialties.com/",
+     "phone": "(888) 656-3360",
+     "email": "contractorsales@cmecorp.com",
+     "contact_page": "https://cmecontractorspecialties.com/#contact-us",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "partition_evidence": "Supplies and installs toilet partitions and lockers, union and non-union",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "ASI Accurate",
+      "Bobrick",
+      "Bradley",
+      "Hadrian",
+      "Metpar",
+      "Privada",
+      "Scranton"
+     ],
+     "within_area": "yes",
+     "reason": "Garden City (Nassau) Division 10 contractor that supplies and installs toilet partitions for general contractors and facility managers in the NY metro area. Also sells partitions, so it is a buy-around risk.",
+     "red_flags": [
+      "Supplies partitions itself (buy-around risk)"
+     ],
+     "evidence_urls": [
+      "https://cmecontractorspecialties.com/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Mavi New York",
+     "base_city": "Long Island City",
+     "state": "NY",
+     "website": "https://mavinewyork.com/",
+     "phone": "718-874-3805",
+     "email": "info@mavinewyork.com",
+     "contact_page": "https://mavinewyork.com/contact-us/",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "partition_evidence": "Authorized distributor and installer of commercial toilet partitions; union, prevailing wage and non-union installation",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "ASI Group",
+      "Bobrick",
+      "Bradley",
+      "Hadrian",
+      "Metpar",
+      "Scranton Products"
+     ],
+     "within_area": "nearby",
+     "reason": "Queens-based commercial partition distributor and installer serving New York and the Northeast. It stocks partitions in its own warehouse, so it is a strong buy-around risk.",
+     "red_flags": [
+      "Stocks and sells partitions, delivers nationwide (direct competitor / buy-around risk)"
+     ],
+     "evidence_urls": [
+      "https://mavinewyork.com/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Sanitary Hygiene Systems",
+     "base_city": "Plainview",
+     "state": "NY",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "partition_evidence": "CIS directory listing says it installs bathroom partitions for residential and commercial properties; no company website found",
+     "commercial": "mostly",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "yes",
+     "reason": "A third-party directory says this Plainview (Long Island) company installs bathroom partitions and supplies washroom products. No company website, projects or photos were found to confirm it.",
+     "red_flags": [
+      "No company website found",
+      "Only third-party directory evidence"
+     ],
+     "evidence_urls": [
+      "https://cisleads.com/company/details/410407"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Inter-Co Division 10 (New Jersey), Inc.",
+     "base_city": "Kearny",
+     "state": "NJ",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "partition_evidence": "NY Build Expo interview (Mar 2026): supplies and installs toilet partitions and other Division 10 products on office towers, hospitals, schools; acquired ModuleX Partitions",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "regional",
+     "reason": "Division 10 distributor and installer working mostly for general contractors. Its president says the Kearny facility serves Manhattan and Long Island. Its own website and contact details were not checked.",
+     "red_flags": [
+      "Distributor (buy-around risk)",
+      "Company website and contact details not verified",
+      "Mainly general-contractor work"
+     ],
+     "evidence_urls": [
+      "https://www.newyorkbuildexpo.com/industry-news-1/behind-booth-inter-co-division-10"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Snappy Solutions Inc.",
+     "base_city": "East Hampton",
+     "state": "NY",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "partition_evidence": "Blue Book lists it under Toilet Partitions & Cubicles with project pages titled 'furnish install restroom partitions' (New York, NY, approx. $70,000); page itself returned 403",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "yes",
+     "reason": "An East Hampton (Long Island) WBE firm that Blue Book lists as a toilet partition supplier, with furnish-and-install restroom partition projects. Only search snippets were readable, so this is unconfirmed.",
+     "red_flags": [
+      "No company website found",
+      "Blue Book pages blocked (403); evidence from search snippets only",
+      "Listed as material supplier (buy-around risk)"
+     ],
+     "evidence_urls": [
+      "https://thebluebook.com/iProView/1658082/snappy-solutions-inc/material-suppliers/construction-projects/furnish-install-restroom-partitions-349027"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Division 10, Inc.",
+     "base_city": "Hackensack",
+     "state": "NJ",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "partition_evidence": "Blue Book lists it as a subcontractor under Toilet Partitions & Cubicles; self-description says it supplies bathroom accessories, toilet partitions, lockers in the NY metro area since 2002",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "regional",
+     "reason": "A NY/NJ MBE Division 10 subcontractor and supplier serving the New York metro area. Installation and Long Island service aren't confirmed on a company site.",
+     "red_flags": [
+      "No company website found",
+      "Supplier of partitions (buy-around risk)",
+      "Evidence from Blue Book search snippets only"
+     ],
+     "evidence_urls": [
+      "https://www.thebluebook.com/construction/10-new-jersey-north/3070-toilet-partitions-cubicles/?r=1"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "ADA Advance Industries (ADA Partitions)",
+     "base_city": "Brooklyn",
+     "state": "NY",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "partition_evidence": "Blue Book lists it as a material supplier specializing in toilet partitions and stalls, Division 10 work specialists",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "nearby",
+     "reason": "A Brooklyn MBE listed as a toilet partition and Division 10 specialist. It is classed as a material supplier, and no website or installation evidence was found.",
+     "red_flags": [
+      "No company website found",
+      "Listed as material supplier (buy-around risk)",
+      "Evidence from Blue Book search snippets only"
+     ],
+     "evidence_urls": [
+      "https://www.thebluebook.com/iProView/393384/ada-advance-industries/material-suppliers/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Privacy Partitions",
+     "base_city": "West Haven",
+     "state": "CT",
+     "website": "https://privacypartitionsne.com/",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "partition_evidence": "Site title reads 'Bathroom Partition Supply & Installation'; page content otherwise empty; contact and about pages 404",
+     "commercial": "unknown",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "nearby",
+     "reason": "A Connecticut supply-and-install partition firm about 30 miles across the Sound. Its site gives almost no content and doesn't mention New York or Long Island.",
+     "red_flags": [
+      "Website nearly empty; contact/about pages 404",
+      "No mention of serving New York",
+      "Supplies partitions (buy-around risk)"
+     ],
+     "evidence_urls": [
+      "https://privacypartitionsne.com/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "S & M Partition Co",
+     "base_city": "Yaphank",
+     "state": "NY",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "partition_evidence": "No listing or website found",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "yes",
+     "reason": "No web presence found for this name in Yaphank, so it can't be verified as a real or active business.",
+     "red_flags": [
+      "No website or directory listing found"
+     ],
+     "evidence_urls": [],
+     "added_by_checker": false
+    },
+    {
+     "name": "Met Sales & Installations Corp",
+     "base_city": "Farmingdale",
+     "state": "NY",
+     "website": "http://metsalesinstallations.com/",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "partition_evidence": "Website could not be fetched (host not reachable from this session); NAICS directory lists it only as 'All Other Specialty Trade Contractors'",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "yes",
+     "reason": "No partition evidence could be read. The company site isn't reachable from this session, so allow metsalesinstallations.com in the network settings and recheck before dropping it.",
+     "red_flags": [
+      "Website unreachable from this session (network allowlist)",
+      "No partition evidence found"
+     ],
+     "evidence_urls": [
+      "https://naicslist.com/company-profile/met-sales-and-installations-corp-farmingdale-ny-11735"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "newark",
+   "state": "NJ",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/newark.json: worked (most maps entries were glass/remodel shops; plausible partition firms opened)",
+    "Bobrick find-a-representative: page loaded but rep data is JS-rendered, no usable listings",
+    "Hadrian find-a-rep and Metpar representatives: JS-rendered/empty, no data",
+    "Scranton Products find-a-rep: 404",
+    "ASI, Bradley, General Partitions, Ammco locators: not tried (search cap / prior locators unusable)",
+    "The Blue Book (thebluebook.com): blocked (403) on WebFetch; listing facts taken only from search-result snippets (Division 10 Inc, DTS, Locker Man NJ)",
+    "CISLeads public profiles: worked (Modulex, Lang Equipment; phones hidden)",
+    "BuildingConnected / Procore: not tried (search cap)",
+    "WebSearch: 8 of 8 used (Casper Partition Systems Union NJ - not found; NJ Division 10 toilet partitions; Blue Book NJ; Locker Man NJ; NJ city names; Division 10 Inc Hackensack; Westchester/Yonkers; AMP Partitions - not found)",
+    "onepointpartitions.com (Bensalem PA, NJ city pages): blocked 403 / empty, not included",
+    "Company websites via WebFetch/curl: worked for most (inter-co, 10-spec, bencoinc, partitionstalls, onewaypartitions, mavinewyork, v10specialties, langequip, ctrestroom, associatedbuilding, contemporarywalls, jerseyarchitectural); division10.com has no content; knickerbockerpartition.com bot-check",
+    "Skipped after reading: Tri-State Partitions (operable partitions only), CSI Ronkonkoma (NJ not served on page), Nationwide Maintenance (no partitions), manufacturers (Monarch, Partition Manufacturers of America, All American Metal, American Specialties)"
+   ],
+   "found_count": 17,
+   "checked": [
+    {
+     "name": "Inter-Co Division 10 (New Jersey), Inc.",
+     "base_city": "Kearny",
+     "state": "NJ",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Bobrick (image alt text only)"
+     ],
+     "website": "https://inter-co.com/",
+     "phone": "(908) 351-4232",
+     "email": "njsales@inter-co.com",
+     "contact_page": "https://inter-co.com/contact/",
+     "evidence_urls": [
+      "https://inter-co.com/",
+      "https://inter-co.com/contact/"
+     ],
+     "partition_evidence": "Homepage says it supplies and installs hundreds of products, with toilet partitions among them; projects are offices, hospitals, schools and hotels.",
+     "reason": "A Division 10 supply-and-install firm with a New York / New Jersey branch in Kearny, about 5 miles from Newark. It is a large distributor, so it is also a partitions seller.",
+     "red_flags": [
+      "Distributor: sells partitions from leading manufacturers (buy-around risk)",
+      "Part of a multi-office Canadian/US group; I did not verify the 'formerly Modulex' link"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "10-Spec",
+     "base_city": "Marlboro",
+     "state": "NJ",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "nearby",
+     "brands": [
+      "ASI",
+      "Bobrick",
+      "Hadrian",
+      "Scranton"
+     ],
+     "website": "https://10-spec.com/",
+     "phone": "732-992-4899",
+     "email": "sales@10-spec.com",
+     "contact_page": "https://10-spec.com/",
+     "evidence_urls": [
+      "https://10-spec.com/"
+     ],
+     "partition_evidence": "Services include partition installation, field measurement and compartment removal: 'Our skilled and experienced installers complete any commercial bathroom partitions installation'. Site schema says it serves NJ, NY, PA and CT and has since 1979.",
+     "reason": "A dedicated commercial bathroom partition contractor that installs and removes partitions. Based about 35 miles from Newark and says it serves NJ and NY.",
+     "red_flags": [
+      "Also sources and sells partition material (buy-around risk)"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Benco Inc",
+     "base_city": "Fairfield",
+     "state": "NJ",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "nearby",
+     "brands": [],
+     "website": "https://bencoinc.com/",
+     "phone": "973.575.4440",
+     "email": "info@bencoinc.com",
+     "contact_page": "https://bencoinc.com/contact/",
+     "evidence_urls": [
+      "https://bencoinc.com/",
+      "https://bencoinc.com/projects/"
+     ],
+     "partition_evidence": "Title reads 'NY, NJ Division 10 product sales and installation'. Toilet partitions are a core product, alongside 'We Are Proud to Sell and Install Products From These Industry Leading Brands' and 'quality installation'.",
+     "reason": "A Division 10 distributor and installer since 1970, about 15 miles from Newark, serving NJ, NY, CT and PA. Certified WBE.",
+     "red_flags": [
+      "Leading Division 10 distributor; sells partitions (buy-around risk)",
+      "Brand logos are present, but no brand names appear in the text I read"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "One Way Partitions",
+     "base_city": "unknown (headquartered in New Jersey)",
+     "state": "NJ",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Hadrian",
+      "Bobrick",
+      "Scranton Products",
+      "ASI",
+      "All American",
+      "Global Partitions",
+      "Metpar",
+      "Bradley"
+     ],
+     "website": "https://www.onewaypartitions.com/",
+     "email": "installs@onewaypartitions.com",
+     "contact_page": "https://www.onewaypartitions.com/#contact",
+     "evidence_urls": [
+      "https://www.onewaypartitions.com/"
+     ],
+     "partition_evidence": "A 'What We Install' section covers floor-mounted, ceiling-hung and floor-to-ceiling compartments (10 21 00), with 'expert installation across the tri-state area'.",
+     "reason": "A commercial Division 10 material-sales and installation firm, headquartered in New Jersey and serving NJ, NY, PA and CT. No city or phone is listed.",
+     "red_flags": [
+      "No phone number or street/city on the site",
+      "Sells material and ships nationwide (buy-around risk)"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Partition Stalls",
+     "base_city": "Staten Island",
+     "state": "NY",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Bobrick",
+      "Bradley",
+      "ASI Global Partitions",
+      "Hadrian",
+      "Scranton Products",
+      "Metpar",
+      "All American Metal",
+      "General Partitions",
+      "Flush Metal",
+      "American Sanitary Partition"
+     ],
+     "website": "https://partitionstalls.com/",
+     "phone": "646-349-4040",
+     "email": "info@partitionstalls.com",
+     "contact_page": "https://partitionstalls.com/contact-partition-stalls",
+     "evidence_urls": [
+      "https://partitionstalls.com/"
+     ],
+     "partition_evidence": "Offers supply plus installation in NY, NJ, PA, CT and other states, for contractors, property managers and facility owners.",
+     "rating": 4.9,
+     "review_count": 55,
+     "review_source": "Google (as shown on the company's own site)",
+     "reason": "Supplies and installs commercial bathroom partitions in NY and NJ from Staten Island, about 12 miles from Newark.",
+     "red_flags": [
+      "Nationwide partition supplier (buy-around risk)",
+      "The rating is a snapshot on its own site; I did not check it on Google"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Mavi New York",
+     "base_city": "Long Island City",
+     "state": "NY",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "ASI",
+      "Bobrick",
+      "Bradley",
+      "Hadrian",
+      "Metpar",
+      "Scranton Products"
+     ],
+     "website": "https://mavinewyork.com/",
+     "phone": "718-874-3805",
+     "email": "info@mavinewyork.com",
+     "contact_page": "https://mavinewyork.com/contact-us/",
+     "evidence_urls": [
+      "https://mavinewyork.com/"
+     ],
+     "partition_evidence": "Lists bathroom partition installation and Division 10 installation (union, prevailing wage, non-union) in the NY metro and tri-state area, and has a New Jersey service page.",
+     "reason": "An authorized distributor and installer of commercial toilet partitions in NYC, also serving New Jersey.",
+     "red_flags": [
+      "Authorized distributor with stocked partitions (buy-around risk)"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "V10 Specialties Corp",
+     "base_city": "Long Island City",
+     "state": "NY",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "mostly",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "http://v10specialties.com/",
+     "phone": "(646) 777-2589",
+     "email": "estimating@v10specialties.com",
+     "contact_page": "http://v10specialties.com/",
+     "evidence_urls": [
+      "http://v10specialties.com/",
+      "http://v10specialties.com/products"
+     ],
+     "partition_evidence": "'At V10 Specialties we sell, deliver and install products ... toilet partitions and accessories', serving the tri-state area.",
+     "reason": "A NYC Division 10 firm that sells and installs toilet partitions across the tri-state area. The site is thin, with no project photos.",
+     "red_flags": [
+      "Sells partitions (buy-around risk)",
+      "Minimal website, no projects or brands shown"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Lang Equipment Co., Inc.",
+     "base_city": "Landing (per candidate list; not confirmed on site)",
+     "state": "NJ",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "nearby",
+     "brands": [],
+     "website": "https://www.langequip.com/",
+     "phone": "888-388-5264",
+     "email": "sales@langequip.com",
+     "contact_page": "https://www.langequip.com/about/",
+     "evidence_urls": [
+      "https://www.langequip.com/about/",
+      "https://www.langequip.com/"
+     ],
+     "partition_evidence": "About page: 'We also install and repair lockers, toilet partitions, and security gates in the New Jersey / Southern New York / Eastern Pennsylvania area.' It usually sells to schools and institutions.",
+     "reason": "A family-run firm since 1974 that installs and repairs toilet partitions in NJ and southern NY, mostly for schools and institutions. It also runs a nationwide parts and partitions catalogue.",
+     "red_flags": [
+      "Online catalogue sells toilet partitions and parts (buy-around risk)",
+      "Probably the same business as Locker Man NJ LLC (Blue Book ties them together); avoid listing both",
+      "Base city not shown on the pages read"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Division 10, Inc.",
+     "base_city": "Hackensack",
+     "state": "NJ",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "nearby",
+     "brands": [
+      "A&J Washroom",
+      "American Specialties (ASI)",
+      "Bobrick",
+      "Bradley"
+     ],
+     "website": "https://www.division10.com/",
+     "phone": "(201) 599-0411",
+     "contact_page": "https://www.division10.com/",
+     "evidence_urls": [
+      "https://www.division10.com/products.html",
+      "https://www.division10.com/services.html",
+      "https://www.division10.com/projects.html",
+      "https://www.division10.com/modules/footer.html"
+     ],
+     "partition_evidence": "Products include toilet partitions, and services list 'on-time installation' for general contractors. The client list is large NYC corporate fit-outs.",
+     "reason": "A Division 10 supplier to general contractors that lists toilet partitions and installation, but never says outright that it installs partitions.",
+     "red_flags": [
+      "Site footer says \u00a92002-2017, so the site may be stale",
+      "Supplies products (buy-around risk)"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "DTS - Division Ten Building Specialties",
+     "base_city": "East Brunswick",
+     "state": "NJ",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "nearby",
+     "brands": [],
+     "evidence_urls": [
+      "https://www.thebluebook.com/iProView/796807/dts-division-ten-building-specialties/subcontractors/"
+     ],
+     "partition_evidence": "Seen only in a search-result summary of its Blue Book subcontractor listing: a Division 10 firm founded in 1989 handling toilet partitions, accessories and lockers. I could not open the page (403).",
+     "reason": "A Division 10 subcontractor about 30 miles from Newark. I found no website, and the evidence is a directory snippet only.",
+     "red_flags": [
+      "No website found; contact details unverified"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Locker Man NJ LLC",
+     "base_city": "Middlesex",
+     "state": "NJ",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "nearby",
+     "brands": [],
+     "evidence_urls": [
+      "https://thebluebook.com/iProView/1534762",
+      "https://www.arcat.com/arcatcos/cos31/arc31926.html"
+     ],
+     "partition_evidence": "Search summaries of its Blue Book listing say it installs and repairs toilet partitions in NJ, southern NY and eastern PA, founded 1974. I could not open the page (403).",
+     "reason": "Looks like the installation arm or alias of Lang Equipment (same wording and founding year). I found no website of its own.",
+     "red_flags": [
+      "Likely a duplicate of Lang Equipment Co.",
+      "No website; details only from directory snippets"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Connecticut Restroom Specialties (CRS)",
+     "base_city": "Danbury",
+     "state": "CT",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://www.ctrestroom.com/",
+     "phone": "203-205-0170",
+     "contact_page": "https://www.ctrestroom.com/contact",
+     "evidence_urls": [
+      "https://www.ctrestroom.com/",
+      "https://www.ctrestroom.com/about-us",
+      "https://www.ctrestroom.com/projects"
+     ],
+     "partition_evidence": "Toilet partitions are its first product. It offers full service from restroom layout design 'through the final installation' with factory-trained installers, and has a projects photo gallery.",
+     "reason": "A restroom specialties contractor and distributor that says it serves the entire tri-state area. It is about 60 miles from Newark.",
+     "red_flags": [
+      "Major Division 10 distributor (buy-around risk)",
+      "No company email on the site (form only)"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Associated Building Specialties",
+     "base_city": "Blackwood",
+     "state": "NJ",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Scranton Products (Aria)"
+     ],
+     "website": "https://www.associatedbuilding.com/",
+     "phone": "856-227-3900",
+     "contact_page": "https://www.associatedbuilding.com/location-n-contact",
+     "evidence_urls": [
+      "https://www.associatedbuilding.com/",
+      "https://www.associatedbuilding.com/toilet-partitions",
+      "https://www.associatedbuilding.com/newpage"
+     ],
+     "partition_evidence": "The toilet partitions page says 'See our Services tab for Installation & Repairs'. The services page covers installations, repairs and field checks by technicians across the tri-state area.",
+     "reason": "Installs and repairs partitions, but it is a stocking distributor about 85 miles away, and its home market is Philadelphia and southern NJ rather than the Newark area.",
+     "red_flags": [
+      "Stocking distributor that ships nationwide (buy-around risk)",
+      "Focused on South Jersey and Philadelphia",
+      "The only email shown is an individual's address, so it is left out"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Contemporary Wall Systems",
+     "base_city": "Franklin Lakes",
+     "state": "NJ",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "nearby",
+     "brands": [],
+     "website": "https://contemporarywalls.com/",
+     "contact_page": "https://contemporarywalls.com/",
+     "evidence_urls": [
+      "https://contemporarywalls.com/"
+     ],
+     "partition_evidence": "The product menu lists Division 10 bathroom partitions and toilet compartments, but the installation it describes is operable walls and space planning.",
+     "reason": "Mainly an operable-wall and glass-wall installer that also sells Division 10 toilet compartments. I saw no restroom partition installation shown.",
+     "red_flags": [
+      "Core business is operable and movable walls, not toilet partitions",
+      "No phone or email captured on the homepage"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Jersey Architectural Door & Supply Co",
+     "base_city": "Atlantic City",
+     "state": "NJ",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Bobrick",
+      "Comtec",
+      "Global Partitions",
+      "American Specialties"
+     ],
+     "website": "https://jerseyarchitectural.com/",
+     "phone": "(609) 345-0174",
+     "contact_page": "https://jerseyarchitectural.com/",
+     "evidence_urls": [
+      "https://jerseyarchitectural.com/?p=301",
+      "https://jerseyarchitectural.com/"
+     ],
+     "partition_evidence": "Its 'Toilet Partition Installer for all of New Jersey' page lists overhead-braced, floor-to-ceiling, floor-mounted and ceiling-hung installs by union carpenters.",
+     "reason": "A door and glass supplier about 110 miles away that has a partition installer page claiming all of NJ. Partitions are a side line, and it is far from Newark.",
+     "red_flags": [
+      "Primarily a door and window company; partitions are not on the homepage",
+      "About 110 miles from Newark",
+      "Wholesale distributor of partitions (buy-around risk)"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Quality Partitions",
+     "base_city": "Brooklyn",
+     "state": "NY",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Bobrick"
+     ],
+     "website": "https://www.qualitypartitions.com/",
+     "phone": "718-207-0402",
+     "email": "supplyny@gmail.com",
+     "contact_page": "https://www.qualitypartitions.com/contact",
+     "evidence_urls": [
+      "https://www.qualitypartitions.com/",
+      "https://www.qualitypartitions.com/contact"
+     ],
+     "partition_evidence": "Says it does custom bathroom partition designs, measures spaces and gives 'a seamless experience from design to installation'. The site is mostly an online shop for Bobrick accessories.",
+     "reason": "A small Brooklyn partition seller that implies installation but shows no projects.",
+     "red_flags": [
+      "Gmail address",
+      "Mainly an online store (buy-around risk)",
+      "No project photos"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "AMP Partitions",
+     "base_city": "Suffern (inferred: site accepts projects within 200 mi of Suffern, NY)",
+     "state": "NY",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "nearby",
+     "brands": [
+      "Bobrick",
+      "Scranton Products"
+     ],
+     "website": "https://amppartitions.com/",
+     "phone": "845-293-5786",
+     "email": "info@amppartitions.com",
+     "contact_page": "https://amppartitions.com/",
+     "evidence_urls": [
+      "https://amppartitions.com/",
+      "https://amppartitions.com/assets/index-BNpawUV6.js"
+     ],
+     "partition_evidence": "The site offers 'expert partition installation' and has project photos named for Brooklyn and NJ addresses. It accepts only projects within 200 miles of Suffern, NY.",
+     "reason": "Claims commercial partition installation near Newark and has project images, but much of the site is templated.",
+     "red_flags": [
+      "Templated pages for every US state with generic 'key projects' (for example Cheyenne, Houston) that conflict with the 200-mile limit",
+      "Claims '30 years' and 'nationwide leaders' without verification",
+      "Built with an AI site generator (Lovable)"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "CME Corp (CME Contractor Specialties)",
+     "base_city": "Garden City",
+     "state": "NY",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "nearby",
+     "brands": [
+      "ASI",
+      "Accurate",
+      "Bobrick",
+      "Bradley",
+      "Hadrian",
+      "Metpar",
+      "Privada",
+      "Scranton"
+     ],
+     "website": "https://cmecontractorspecialties.com/",
+     "phone": "(888) 656-3360",
+     "email": "contractorsales@cmecorp.com",
+     "contact_page": "https://cmecontractorspecialties.com/#contact-us",
+     "evidence_urls": [
+      "https://cmecontractorspecialties.com/"
+     ],
+     "partition_evidence": "Services offered: 'Installation of Toilet Partitions & Lockers (Union & Non Union)' for general contractors in the NY metropolitan area.",
+     "reason": "A Division 10 supplier and installer for NY-metro general contractors, about 30 miles from Newark. It runs its own delivery trucks and crews.",
+     "red_flags": [
+      "Large supplier of partitions (buy-around risk)",
+      "Serves 'NY Metropolitan area'; NJ coverage is not stated explicitly"
+     ],
+     "added_by_checker": true
+    }
+   ]
+  },
+  {
+   "area": "buffalo",
+   "state": "NY",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/buffalo.json: worked; most Maps hits are residential bath remodelers/plumbers (skipped); J&R Specialties, McClain Associates, Gypsum Systems kept",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads but results are JS/dropdown-driven, no reps readable",
+    "Scranton Products find-a-rep: 404",
+    "Hadrian find-a-rep: 503",
+    "ASI, Bradley, Metpar, General Partitions, Ampco locators: not reached (no working locator URLs found within limits)",
+    "The Blue Book (thebluebook.com region page and iProView profiles): 403 blocked",
+    "Thomasnet Upstate NY toilet partitions listing: 403 blocked",
+    "BuildingConnected / Procore public profiles: not tried (search cap)",
+    "WebSearch: 8 of 8 used; found J&R Specialties, Grosso Door & Hardware, McClain Associates, 10-SPEC, Fancher Sales (Yellow Pages)",
+    "grossodoor.com: 503/connection timeout, could not read",
+    "mcclainassociatesinc.com: site returns PHP parse error on every page, could not read",
+    "web.archive.org: blocked by bot verification",
+    "Yellow Pages Buffalo 'toilet partition installers': worked, one listing (Superior Steel Door & Trim, Jamestown)",
+    "Yelp / BBB: no listings surfaced in search",
+    "Excluded: 10-SPEC (Marlboro NJ, ~350 mi; https://10-spec.com/bathroom-partitions-buffalo-ny/ says it installs across Buffalo/Niagara Falls/Tonawanda, (732) 992-4899, sales@10-spec... ) - outside 120-mile radius, could be added as a regional exception",
+    "Excluded as online sellers/national with no local base: One Point Partitions (403), The Partition Pros, AMP Partitions, toiletpartitions.com, Mavi New York (NYC), Division 10 Inc (NYC), CSI installers"
+   ],
+   "found_count": 6,
+   "checked": [
+    {
+     "name": "J&R Specialties Inc",
+     "base_city": "Akron",
+     "state": "NY",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "General Partitions",
+      "ASI Global Partitions",
+      "Scranton Products",
+      "Bobrick",
+      "Metpar",
+      "Bradley"
+     ],
+     "website": "https://www.jandrspecialties.com/",
+     "phone": "(716) 442-5040",
+     "email": "info@jrbuffalo.com",
+     "contact_page": "https://www.jandrspecialties.com/contact",
+     "evidence_urls": [
+      "https://www.jandrspecialties.com/",
+      "https://www.jandrspecialties.com/section-10-specialties"
+     ],
+     "partition_evidence": "Section 10 Specialties page: supplies and installs toilet partitions; projects Seneca One (downtown Buffalo), Northtown Jaguar Land Rover (Bobrick partitions), 500 Pearl.",
+     "reason": "Commercial Section 10 subcontractor about 20 miles east of Buffalo that supplies and installs toilet partitions, with named Buffalo projects; serves Western NY, NYS, PA, CT and OH.",
+     "red_flags": [
+      "Supplies partitions itself (dealer for ASI, Bobrick, Scranton, Bradley, Metpar): high buy-around risk"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Fancher Sales Co Inc",
+     "base_city": "Buffalo",
+     "state": "NY",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "evidence_urls": [],
+     "partition_evidence": "None found; no website or listing located.",
+     "reason": "No web presence found for this name. Possibly connected to Jeff Fancher, VP of Sales at J&R Specialties (jandrspecialties.com/section-10-specialties), but that is unconfirmed; if so it duplicates J&R.",
+     "red_flags": [
+      "No website or listing found",
+      "Possible duplicate or affiliate of J&R Specialties (unconfirmed)"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Gypsum Systems, LLC",
+     "base_city": "Elma",
+     "state": "NY",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "website": "http://www.gypsumsys.com/",
+     "phone": "(716) 652-5700",
+     "contact_page": "http://www.gypsumsys.com/contact-us",
+     "evidence_urls": [
+      "http://www.gypsumsys.com/",
+      "http://www.gypsumsys.com/contact-us"
+     ],
+     "partition_evidence": "None; services are drywall, framing, ceilings, doors/frames, exteriors, plus an unexplained 'Specialty Items' bullet.",
+     "reason": "Commercial drywall and exteriors contractor; no toilet partition or Division 10 work shown on its site.",
+     "red_flags": [],
+     "added_by_checker": false
+    },
+    {
+     "name": "Grosso Door & Hardware, Inc.",
+     "base_city": "unknown",
+     "state": "NY",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "website": "http://www.grossodoor.com/",
+     "evidence_urls": [
+      "http://www.grossodoor.com/"
+     ],
+     "partition_evidence": "Website returned HTTP 503 on both http and https; nothing could be verified.",
+     "reason": "Site unreachable and no other evidence found of location or partition work.",
+     "red_flags": [
+      "Website down (503)",
+      "Base city unconfirmed"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "McClain Associates Inc.",
+     "base_city": "Rochester",
+     "state": "NY",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "website": "http://mcclainassociatesinc.com/",
+     "evidence_urls": [
+      "http://mcclainassociatesinc.com/"
+     ],
+     "partition_evidence": "Website shows only a PHP parse error. A search snippet describes specialty products such as folding walls and operable partitions, not toilet partitions.",
+     "reason": "About 70 miles away, no stated Buffalo service area and no toilet partition evidence; site broken.",
+     "red_flags": [
+      "Website broken (PHP error)",
+      "Operable walls, not toilet partitions"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Superior Steel Door & Trim Company, Inc.",
+     "base_city": "Jamestown",
+     "state": "NY",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [
+      "ADANLOCK"
+     ],
+     "website": "https://ssdtinc.com/",
+     "phone": "(716) 665-3256",
+     "contact_page": "https://ssdtinc.com/request-a-quote/",
+     "evidence_urls": [
+      "https://ssdtinc.com/"
+     ],
+     "partition_evidence": "Lists 'Partition Systems' linking to ADANLOCK; not stated to be toilet partitions.",
+     "reason": "Custom architectural metal fabricator about 60 miles away; partition systems are not shown to be restroom partitions and no Buffalo service area is stated.",
+     "red_flags": [
+      "Manufacturer/fabricator rather than installer"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  }
+ ],
+ "licenses": [
+  {
+   "state": "CA",
+   "registries": [
+    "California CSLB Check a License (https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx): automated lookup NOT possible on 2026-11-19. The search form is protected by reCAPTCHA, and both the name-search URL (NameSearch.aspx?NextName=...) and direct license detail URLs (LicenseDetail.aspx?LicNum=...) answer with HTTP 302 back to the CAPTCHA-gated search page. Every business needs a manual check in a browser.",
+    "City of Ontario business license: no public online lookup was found or used. Each installer's Ontario city business license has to be confirmed with City of Ontario Business Licensing.",
+    "Company websites (all fetched 2026-11-19): read only for license numbers the companies publish themselves. These are self-reported and not official records."
+   ],
+   "results": [
+    {
+     "name": "Harrigan's Toilet Partitions, Inc.",
+     "area": "ontario",
+     "status": "not_online",
+     "registry": "California CSLB Check a License (reCAPTCHA-gated)",
+     "license_number": "935358",
+     "license_type": "unknown (CSLB record not read)",
+     "source_url": "http://www.harrigansinc.com/",
+     "note": "The company website shows 'California Contractor License | LIC. #935358'. This is self-reported and not verified against CSLB because the CSLB lookup blocks automated access. Check it by hand at https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx for status, classification (e.g. C-61/D-34) and bonds. The Ontario city business license was not checked: no online lookup."
+    },
+    {
+     "name": "Penner Partitions Inc",
+     "area": "ontario",
+     "status": "not_online",
+     "registry": "California CSLB Check a License (reCAPTCHA-gated)",
+     "license_number": "924223",
+     "license_type": "unknown (CSLB record not read)",
+     "source_url": "http://www.pennerpartitions.com/",
+     "note": "The company website shows 'License: 924223' and 'DIR: 1000004040' (a DIR public works registration number, also self-reported). Neither was verified against an official record. Check CSLB by hand. Ontario business license not checked."
+    },
+    {
+     "name": "Toilet Partitions Experts Inc",
+     "area": "ontario",
+     "status": "not_online",
+     "registry": "California CSLB Check a License (reCAPTCHA-gated)",
+     "license_number": "1098283",
+     "license_type": "unknown (CSLB record not read)",
+     "source_url": "https://www.toiletpartitionsexperts.com/",
+     "note": "The company website shows 'CSLB Lic. No. 1098283'. This is self-reported and not verified. Check CSLB by hand. Ontario business license not checked."
+    },
+    {
+     "name": "RPS Building Specialties (rampartitions.com)",
+     "area": "ontario",
+     "status": "not_online",
+     "registry": "California CSLB Check a License (reCAPTCHA-gated)",
+     "source_url": "https://www.rampartitions.com/",
+     "note": "No license number was found on the homepage (fetched 2026-11-19). The site says it serves Riverside and San Bernardino Counties among others. A CSLB name search needs a manual browser check. License unknown."
+    },
+    {
+     "name": "Pabst Leyton (Bathroom Partitions & Installation)",
+     "area": "ontario",
+     "status": "not_online",
+     "registry": "California CSLB Check a License (reCAPTCHA-gated)",
+     "source_url": "http://www.pabstleyton.com/",
+     "note": "No license number was found on the homepage, and the base city is unknown. A CSLB name search needs a manual browser check. License unknown."
+    },
+    {
+     "name": "Thomas Partitions and Specialties, Inc.",
+     "area": "ontario",
+     "status": "not_online",
+     "registry": "California CSLB Check a License (reCAPTCHA-gated)",
+     "license_number": "613974",
+     "license_type": "unknown (CSLB record not read)",
+     "source_url": "http://thompart.com/",
+     "note": "The company website shows 'CSLB 613974' (Altadena). This is self-reported and not verified. Check CSLB by hand. Ontario business license not checked."
+    },
+    {
+     "name": "Anchor Construction Specialties",
+     "area": "ontario",
+     "status": "not_online",
+     "registry": "California CSLB Check a License (reCAPTCHA-gated)",
+     "source_url": "https://anchorspecialties.com/",
+     "note": "No license number was found on the homepage. The site describes the company as a Division 10 specialties subcontractor and an AGC member. San Diego is far from Ontario, so confirm it serves the area. A CSLB name search needs a manual browser check."
+    },
+    {
+     "name": "Inland Empire Architectural Specialties Inc.",
+     "area": "ontario",
+     "status": "not_online",
+     "registry": "California CSLB Check a License (reCAPTCHA-gated)",
+     "source_url": "https://www.ideas-ca.com/",
+     "note": "No license number was found on the homepage (I.D.E.A.S., Riverside). A CSLB name search needs a manual browser check. License unknown."
+    },
+    {
+     "name": "Partitions and Specialty Pros",
+     "area": "ontario",
+     "status": "not_online",
+     "registry": "California CSLB Check a License (reCAPTCHA-gated)",
+     "license_number": "956130",
+     "license_type": "unknown (CSLB record not read)",
+     "source_url": "http://pnspros.com/",
+     "note": "The company website shows 'CA LIC#956130'. This is self-reported and not verified. Check CSLB by hand. Ontario business license not checked."
+    },
+    {
+     "name": "Preferred Construction Specialties, Inc.",
+     "area": "ontario",
+     "status": "not_online",
+     "registry": "California CSLB Check a License (reCAPTCHA-gated)",
+     "source_url": "http://www.preferredspecialties.com/",
+     "note": "No license number was found on the homepage. A CSLB name search needs a manual browser check. License unknown."
+    },
+    {
+     "name": "Urban Specialties - Toilet Partitions",
+     "area": "ontario",
+     "status": "not_online",
+     "registry": "California CSLB Check a License (reCAPTCHA-gated)",
+     "source_url": "http://urbanspecialties.net/",
+     "note": "The company website reset the connection on 2026-11-19, so no license number could be read. A CSLB name search needs a manual browser check. License unknown."
+    }
+   ]
+  },
+  {
+   "state": "AZ",
+   "results": [
+    {
+     "name": "Partitions & Accessories Co.",
+     "area": "mesa",
+     "status": "not_online",
+     "registry": "Arizona Registrar of Contractors (ROC) contractor search, azroc.my.site.com/AZRoc/s/contractor-search",
+     "license_number": "AZ ROC # 110352 (self-reported on company site, not verified on ROC)",
+     "license_type": "unknown",
+     "source_url": "https://partitionsco.com/",
+     "note": "ROC search is a JavaScript (Salesforce) app; automated fetch returned only 'Loading' / 'Sorry to interrupt' with no form or results, so status and classification could not be read. Company site shows 'AZ ROC # 110352', base city Mesa, AZ, phone 1(480)969-6606 or 1(800)795-6607. Check 110352 manually on the ROC search."
+    },
+    {
+     "name": "Black Scale Inc.",
+     "area": "mesa",
+     "status": "not_online",
+     "registry": "Arizona Registrar of Contractors (ROC) contractor search, azroc.my.site.com/AZRoc/s/contractor-search",
+     "license_number": "ROC 354075 (self-reported on company site, not verified on ROC)",
+     "license_type": "unknown",
+     "source_url": "https://blackscaleinc.com/",
+     "note": "ROC search could not be read automatically (JavaScript app). Company site shows 'ROC: 354075', base city Scottsdale, AZ (the About text also says Phoenix), phone (888) 399-6274. Check 354075 manually on the ROC search."
+    },
+    {
+     "name": "J's Partitions LLC",
+     "area": "mesa",
+     "status": "not_online",
+     "registry": "Arizona Registrar of Contractors (ROC) contractor search, azroc.my.site.com/AZRoc/s/contractor-search",
+     "license_number": "",
+     "license_type": "",
+     "source_url": "http://jspartitionsllc.com/",
+     "note": "ROC search could not be read automatically (JavaScript app). The company homepage shows no ROC number. Base city Tolleson, AZ; phone 602-497-7477 or 602-727-7751 (from the company site). Search the ROC by business name manually."
+    },
+    {
+     "name": "Beach Building Specialties (Beach Products)",
+     "area": "mesa",
+     "status": "not_online",
+     "registry": "Arizona Registrar of Contractors (ROC) contractor search, azroc.my.site.com/AZRoc/s/contractor-search",
+     "license_number": "",
+     "license_type": "",
+     "source_url": "https://beachproductsonline.com/",
+     "note": "ROC search could not be read automatically (JavaScript app). The company homepage shows no ROC number. Base city Phoenix, AZ; phone (602) 272-6754 (from the company site). Search the ROC by business name manually. It may be a supplier rather than an installer: confirm it installs."
+    },
+    {
+     "name": "Inter-Co Division 10 (Arizona) Inc. / Inter-Co Restroom & Locker Supply",
+     "area": "mesa",
+     "status": "not_online",
+     "registry": "Arizona Registrar of Contractors (ROC) contractor search, azroc.my.site.com/AZRoc/s/contractor-search",
+     "license_number": "",
+     "license_type": "",
+     "source_url": "https://www.inter-co.com/",
+     "note": "ROC search could not be read automatically (JavaScript app). The company homepage shows no ROC number. Arizona office in Phoenix, AZ; phone (623) 398-6295 (from the company site). Search the ROC by business name manually."
+    }
+   ],
+   "registries": [
+    "Arizona Registrar of Contractors contractor search (https://azroc.my.site.com/AZRoc/s/contractor-search): the automated lookup failed. The page is a JavaScript Salesforce app, and fetching it returned only 'Loading' / 'Sorry to interrupt' with no form or results. All 5 businesses are marked not_online; check them by hand.",
+    "Web search for the license numbers 110352 and 354075 found no official ROC record pages (only third-party scrapers and aggregators, which were not used).",
+    "City of Mesa contractor licensure verification (Development Services, Dimes portal): not checked. It is tied to permits, not a public license list, and it relies on the ROC license."
+   ]
+  },
+  {
+   "state": "VA",
+   "registries": [
+    "Virginia DPOR License Lookup (Board for Contractors), https://dporweb.dpor.virginia.gov/LicenseLookup/ (embedded at https://www.dpor.virginia.gov/LicenseLookup): automated lookup did not work. The search form needs a Google reCAPTCHA checkbox (LicenseLookup.js stops with 'Please check the reCAPTCHA checkbox'), so I did not submit it. A web search restricted to dporweb.dpor.virginia.gov found no indexed record pages. Status: not_online for automated checks; a person can search it by hand.",
+    "Virginia SCC Clerk's Information System entity search, https://cis.scc.virginia.gov/EntitySearch/Index: returned HTTP 302 (a redirect, possibly to a sign-in page), so it was not used. No entity status was recorded.",
+    "Virginia Beach, Norfolk and Richmond Commissioner of the Revenue business license records: no public online license search was checked. These are local tax or business licenses, not contractor licenses.",
+    "Company websites (virginiastorage.com, tidewaterstalls.com, barranger.com): the homepage text shows no contractor license number."
+   ],
+   "results": [
+    {
+     "name": "Virginia Storage Systems",
+     "area": "virginia-beach",
+     "status": "not_online",
+     "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+     "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+     "note": "Virginia requires a Board for Contractors license above the dollar threshold. The DPOR lookup needs a reCAPTCHA, so automated lookup was not possible: check by hand. The company homepage (http://www.virginiastorage.com/) shows no license number. The Virginia Beach business license (license tax on gross receipts) was not checked online. Checked 2026-11-19."
+    },
+    {
+     "name": "Tidewater Stalls & Specialties, LLC",
+     "area": "virginia-beach",
+     "status": "not_online",
+     "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+     "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+     "note": "The DPOR lookup needs a reCAPTCHA, so automated lookup was not possible: check by hand. The company homepage (https://tidewaterstalls.com/) shows no license number. The Virginia Beach business license was not checked online. Checked 2026-11-19."
+    },
+    {
+     "name": "Tidewater Stalls & Specialties, LLC",
+     "area": "norfolk",
+     "status": "not_online",
+     "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+     "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+     "note": "Same company as the virginia-beach entry. The DPOR lookup needs a reCAPTCHA, so check by hand. A Norfolk city business license would also be needed for work in Norfolk; it was not checked online. Checked 2026-11-19."
+    },
+    {
+     "name": "Virginia Storage Systems, Inc.",
+     "area": "norfolk",
+     "status": "not_online",
+     "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+     "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+     "note": "Same company as the virginia-beach entry. The DPOR lookup needs a reCAPTCHA, so check by hand. The Norfolk city business license was not checked online. Checked 2026-11-19."
+    },
+    {
+     "name": "Barranger & Company, Inc.",
+     "area": "norfolk",
+     "status": "not_online",
+     "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+     "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+     "note": "The DPOR lookup needs a reCAPTCHA, and a site-restricted web search found no indexed DPOR record. Check by hand. The company homepage (https://barranger.com/) shows no license number. The Norfolk business license was not checked online. Checked 2026-11-19."
+    },
+    {
+     "name": "Barranger & Company, Inc.",
+     "area": "richmond",
+     "status": "not_online",
+     "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+     "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+     "note": "The DPOR lookup needs a reCAPTCHA, so check by hand. Richmond asks for proof of Virginia licensure plus a business license (required above $25,000 a year in city revenue). The city record was not checked online. Checked 2026-11-19."
+    },
+    {
+     "name": "Section 10 Inc.",
+     "area": "richmond",
+     "status": "not_online",
+     "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+     "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+     "note": "The DPOR lookup needs a reCAPTCHA, so check by hand. No company website was given and none was checked. The Richmond business license was not checked online. Checked 2026-11-19."
+    },
+    {
+     "name": "Continental Partition Systems Inc",
+     "area": "richmond",
+     "status": "not_online",
+     "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+     "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+     "note": "The DPOR lookup needs a reCAPTCHA, so check by hand. No company website was given and none was checked. The Richmond business license was not checked online. Checked 2026-11-19."
+    },
+    {
+     "name": "American Building Specialties Corp. (ABS)",
+     "area": "richmond",
+     "status": "not_online",
+     "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+     "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+     "note": "The DPOR lookup needs a reCAPTCHA, so check by hand. No company website was given and none was checked. The Richmond business license was not checked online. Checked 2026-11-19."
+    }
+   ]
+  },
+  {
+   "state": "NY",
+   "registries": [
+    "NYC Department of Buildings 'DOB License Info' dataset on NYC Open Data (data.cityofnewyork.us, dataset t8hj-ruu2, rows updated 2026-11-18): automated lookup worked (Socrata API, business-name searches incl. variants). Holds GC registrations with ACTIVE/EXPIRED status. NYC GC registration applies only to permitted work inside NYC's five boroughs; neither area rule given here is NYC, so these results are context notes only.",
+    "City of Buffalo 'Licensed Contractors in the City of Buffalo (General, Home, Handyman, Light Commercial)' dataset on Open Data Buffalo (data.buffalony.gov, dataset xu7s-vsr5, updated 2026-11-19): automated lookup worked. Lists ACTIVE licences only (111 general, 702 light commercial, 38 home improvement, 60 handyman); expired or lapsed licences are not in it.",
+    "Long Island town/village building departments (Nassau and Suffolk have dozens of towns and villages): no single online registry, so it was not checked. The county home improvement licences (Nassau and Suffolk Consumer Affairs) cover residential work and were not checked.",
+    "City of Newark building contractor licence (Ordinance 8:21-1), https://www.newarknj.gov/345/Building-Contractor: the page returned HTTP 403 to automated access, and no public online list of licensed contractors was found. New Jersey has no state licence for commercial work. The NJ Home Improvement Contractor registration covers residential work only and was not checked.",
+    "New York State: no state licence for this work. The NYS business entity search was not used."
+   ],
+   "results": [
+    {
+     "name": "Construction Specialties Installations (CSI / CS Installers)",
+     "area": "long-island",
+     "status": "not_online",
+     "registry": "Long Island town/village building department (no central online registry); NYC DOB License Info checked as context",
+     "note": "The area rule is a town or village building department check, and there is no central online registry for it. NYC DOB License Info has no record under 'CS Installers' or 'Construction Specialties Installations'. There is an EXPIRED general contractor record (no. 603318) for a business named 'Construction Specialties' based in Northport, NY. It is not confirmed to be this Ronkonkoma company, so don't link the two.",
+     "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+    },
+    {
+     "name": "Karpen Steel Products, Inc",
+     "area": "long-island",
+     "status": "not_online",
+     "registry": "Long Island town/village building department (no central online registry); NYC DOB License Info checked as context",
+     "note": "There is no central online registry for the town or village rule. NYC DOB License Info has no business record for 'Karpen Steel Products'. This is not needed for work outside NYC.",
+     "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+    },
+    {
+     "name": "CME Corp (Contractor Specialties)",
+     "area": "long-island",
+     "status": "not_online",
+     "registry": "Long Island town/village building department (no central online registry); NYC DOB License Info checked as context",
+     "note": "There is no central online registry for the town or village rule. NYC DOB License Info has no match for 'CME Corp' or 'Contractor Specialties'.",
+     "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+    },
+    {
+     "name": "Mavi New York",
+     "area": "long-island",
+     "status": "not_online",
+     "registry": "Long Island town/village building department (no central online registry); NYC DOB License Info checked as context",
+     "note": "There is no central online registry for the Long Island town or village rule. NYC DOB License Info shows MAVI NEW YORK, INC (Long Island City) with general contractor registration 626466, status EXPIRED. That matters only for permitted work inside NYC.",
+     "license_number": "626466 (NYC DOB GC, EXPIRED)",
+     "license_type": "NYC DOB General Contractor registration",
+     "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+    },
+    {
+     "name": "Sanitary Hygiene Systems",
+     "area": "long-island",
+     "status": "not_online",
+     "registry": "Long Island town/village building department (no central online registry); NYC DOB License Info checked as context",
+     "note": "There is no central online registry for the town or village rule. NYC DOB License Info has no match for 'Sanitary Hygiene' or 'Hygiene'.",
+     "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+    },
+    {
+     "name": "Snappy Solutions Inc.",
+     "area": "long-island",
+     "status": "not_online",
+     "registry": "Long Island town/village building department (no central online registry; East Hampton town/village)",
+     "note": "There is no central online registry for the town or village rule. NYC DOB License Info has no match for 'Snappy'. The Suffolk County home improvement licence covers residential work only and was not checked.",
+     "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+    },
+    {
+     "name": "ADA Advance Industries (ADA Partitions)",
+     "area": "long-island",
+     "status": "not_online",
+     "registry": "Long Island town/village building department (no central online registry); NYC DOB License Info checked as context",
+     "note": "The company is based in Brooklyn (NYC). There is no central online registry for the Long Island town or village rule. NYC DOB License Info has no match for 'ADA Advance', 'Advance Ind' or 'Partition' under this name, so it has no NYC GC registration that the dataset shows.",
+     "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+    },
+    {
+     "name": "Partition Stalls",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark building contractor licence (Ordinance 8:21-1); NYC DOB License Info checked as context",
+     "note": "Newark's building contractor page returned 403 to automated access, and no public online list of licensed contractors was found. Confirm with Newark business licensing by phone. NYC DOB License Info has no match for 'Partition Stalls' (the company is based on Staten Island).",
+     "source_url": "https://www.newarknj.gov/345/Building-Contractor"
+    },
+    {
+     "name": "Mavi New York",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark building contractor licence (Ordinance 8:21-1); NYC DOB License Info checked as context",
+     "note": "The Newark registry is not online (the page returned 403 and no list was found). NYC DOB License Info shows MAVI NEW YORK, INC (Long Island City) with general contractor registration 626466, status EXPIRED.",
+     "license_number": "626466 (NYC DOB GC, EXPIRED)",
+     "license_type": "NYC DOB General Contractor registration",
+     "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+    },
+    {
+     "name": "V10 Specialties Corp",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark building contractor licence (Ordinance 8:21-1); NYC DOB License Info checked as context",
+     "note": "The Newark registry is not online. NYC DOB License Info has no match for 'V10', 'V 10' or 'V-10', so the dataset shows no NYC GC registration.",
+     "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+    },
+    {
+     "name": "Quality Partitions",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark building contractor licence (Ordinance 8:21-1); NYC DOB License Info checked as context",
+     "note": "The Newark registry is not online. NYC DOB License Info has no match for 'Quality Partitions' (the company is based in Brooklyn).",
+     "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+    },
+    {
+     "name": "AMP Partitions",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark building contractor licence (Ordinance 8:21-1)",
+     "note": "The Newark registry is not online (the page returned 403 and no public list was found). NYC DOB License Info has no match for 'AMP Partitions'. The base city of Suffern is inferred, not confirmed.",
+     "source_url": "https://www.newarknj.gov/345/Building-Contractor"
+    },
+    {
+     "name": "CME Corp (CME Contractor Specialties)",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark building contractor licence (Ordinance 8:21-1)",
+     "note": "The Newark registry is not online. NYC DOB License Info has no match for 'CME Corp' or 'Contractor Specialties'.",
+     "source_url": "https://www.newarknj.gov/345/Building-Contractor"
+    },
+    {
+     "name": "J&R Specialties Inc",
+     "area": "buffalo",
+     "status": "not_found",
+     "registry": "City of Buffalo Licensed Contractors (General, Home Improvement, Handyman, Light Commercial), Open Data Buffalo dataset xu7s-vsr5",
+     "note": "There is no current City of Buffalo contractor licence under 'J&R', 'J & R', 'J and R' or 'Specialties' matching this company. The dataset lists active licences only, refreshed 2026-11-19. The company's site (jandrspecialties.com) gives its legal name as J&R Specialties Inc., based in Akron, NY. It lists toilet partitions with installation among its Division 10 specialties and says it serves Buffalo. Before it works inside Buffalo city limits, confirm with the Buffalo Office of Licenses whether a licence is needed or held under another name.",
+     "source_url": "https://data.buffalony.gov/resource/xu7s-vsr5.json"
+    }
+   ]
+  },
+  {
+   "state": "NJ",
+   "results": [
+    {
+     "name": "Inter-Co Division 10 (New Jersey), Inc.",
+     "area": "long-island",
+     "status": "not_online",
+     "registry": "NJ Division of Consumer Affairs license verification (newjersey.mylicense.com); Long Island county (Nassau/Suffolk) licensing not checked in this NJ batch",
+     "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+     "note": "Kearny, NJ. The NJ search is an interactive form (Home Improvement Contractors is listed as a profession). Submitting forms is outside these research rules, so no record was read. The NJ HIC registration covers residential home improvement, not commercial partition work. No Long Island area rule came with this batch, so the Nassau and Suffolk county license lookups weren't run. Status unknown."
+    },
+    {
+     "name": "Division of 10, Inc.",
+     "area": "long-island",
+     "status": "not_online",
+     "registry": "NJ Division of Consumer Affairs license verification (newjersey.mylicense.com); Long Island county licensing not checked in this NJ batch",
+     "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+     "note": "Name as given in the task: Division 10, Inc. (Hackensack, NJ). The NJ search needs an interactive form submission, so no record was read. The Long Island county lookups weren't run. Status unknown."
+    },
+    {
+     "name": "Inter-Co Division 10 (New Jersey), Inc.",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+     "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+     "note": "No public online list of Newark contractor licenses was found; one web search turned up no official city registry. The NJ HIC search is form-based and was not submitted, and state registration covers residential home improvement only. Confirm with the Newark Department of Finance or Division of Licensing."
+    },
+    {
+     "name": "10-Spec",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+     "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+     "note": "Marlboro, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown; confirm with the City of Newark."
+    },
+    {
+     "name": "Benco Inc",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+     "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+     "note": "Fairfield, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+    },
+    {
+     "name": "One Way Partitions",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+     "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+     "note": "Base city unknown (NJ). No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+    },
+    {
+     "name": "Lang Equipment Co., Inc.",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+     "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+     "note": "Base city given as Landing, NJ (not confirmed). No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+    },
+    {
+     "name": "Division 10, Inc.",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+     "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+     "note": "Hackensack, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+    },
+    {
+     "name": "DTS - Division Ten Building Specialties",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+     "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+     "note": "East Brunswick, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+    },
+    {
+     "name": "Locker Man NJ LLC",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+     "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+     "note": "Middlesex, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+    },
+    {
+     "name": "Associated Building Specialties",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+     "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+     "note": "Blackwood, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+    },
+    {
+     "name": "Contemporary Wall Systems",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+     "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+     "note": "Franklin Lakes, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+    },
+    {
+     "name": "Jersey Architectural Door & Supply Co",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+     "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+     "note": "Atlantic City, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+    }
+   ],
+   "registries": [
+    "NJ Division of Consumer Affairs license verification (https://newjersey.mylicense.com/verification/Search.aspx): online, and Home Improvement Contractors is listed as a profession. It works through an interactive ASP.NET form, so no automated lookup was done (submitting forms is outside these research rules). HIC registration covers residential home improvement, so it is likely not required for commercial partition installs.",
+    "City of Newark business licensing (Ordinance 8:21-1): one web search found no public online registry or contractor list. Confirm by phone with the Newark Department of Finance or Division of Licensing.",
+    "Long Island (Nassau and Suffolk county consumer affairs licensing): not checked, because this NJ batch gave no Long Island area rule.",
+    "Search budget: 1 of 5 WebSearch calls used."
+   ]
+  },
+  {
+   "state": "CT",
+   "results": [
+    {
+     "name": "Privacy Partitions",
+     "area": "long-island",
+     "status": "not_required_online_check",
+     "registry": "Connecticut DCP State Licenses and Credentials (official open data, data.ct.gov dataset ngch-56tr) and CT Business Registry Business Master (data.ct.gov n7gp-d28j); no Long Island commercial registry applies",
+     "source_url": "https://data.ct.gov/resource/ngch-56tr.json",
+     "note": "Checked 2026-11-19. Connecticut has no state license for commercial partition installation (repo research/state-licensing/states.json, CT: Major Contractor registration only for threshold buildings, HIC registration residential only). For the long-island area, the Nassau and Suffolk county licenses cover home improvement (residential) work; commercial permits come from the individual town or village (repo research/local-rules/cities.json, low confidence, phone-call item), so there is no online registry to check for commercial work. Searches of the official CT license data (name, business name and DBA containing 'PRIVACY', and West Haven names with PARTITION/TOILET/BATH) found no record for Privacy Partitions: no CT Home Improvement Contractor registration under that name. The CT business registry open data also has no entity named 'Privacy Partitions'; the brand may trade under another legal name, which the company site (privacypartitionsne.com) does not state. If they do residential jobs in CT or on Long Island, a CT HIC registration or Nassau/Suffolk home improvement license would be needed; ask for their legal entity name and any HIC number."
+    },
+    {
+     "name": "Connecticut Restroom Specialties (CRS)",
+     "area": "newark",
+     "status": "not_online",
+     "registry": "City of Newark building contractor licensing (Ordinance 8:21-1); also checked Connecticut DCP State Licenses and Credentials open data (data.ct.gov ngch-56tr) and CT Business Registry (data.ct.gov n7gp-d28j)",
+     "source_url": "https://www.newarknj.gov/345/Building-Contractor",
+     "note": "Checked 2026-11-19. Newark's Building Contractor page returned HTTP 403 to automated access and Newark publishes no public contractor lookup we could reach, so the city license could not be checked online; confirm with Newark business licensing. New Jersey has no state license for commercial installers (NJ HIC registration is residential only). Connecticut has no state license for commercial partition work. In the official CT license data, no record was found under 'Connecticut Restroom Specialties' or any name containing 'RESTROOM' (the Danbury 'CRS' records found, CRS Group LLC HIC.0606968 inactive and CRS Painting LLC HIC.0656774, are unrelated businesses). The CT business registry open data also has no entity with 'Restroom Specialt' in the name, so the legal entity name is unknown. The company site (https://www.ctrestroom.com/) says it is based in Danbury, CT, phone 203-205-0170, does commercial restroom work (offices, schools, restaurants, retail, government buildings) and says 'We are fully licensed and insured' without giving any license number. Ask them for their legal entity name and Newark license if they take Newark jobs."
+    }
+   ],
+   "registries": [
+    "Connecticut DCP State Licenses and Credentials, official open data (data.ct.gov dataset ngch-56tr, Socrata API): automated lookup worked; no record for either business by name",
+    "Connecticut eLicense License Lookup (elicense.ct.gov/Lookup/LicenseLookup.aspx): public page loads, but the search is an ASP.NET form postback, so it was not submitted; the open data dataset above was used instead",
+    "Connecticut Business Registry Business Master, official open data (data.ct.gov dataset n7gp-d28j): automated lookup worked; no entity named Privacy Partitions or Connecticut Restroom Specialties",
+    "City of Newark Building Contractor licensing page (newarknj.gov/345/Building-Contractor): HTTP 403, blocked automated access",
+    "Long Island (Nassau/Suffolk) county home improvement licensing: residential only, not checked because it doesn't cover commercial partition work; town-level rules are a phone-call item per repo research"
+   ]
+  }
+ ],
+ "dropped": []
+}

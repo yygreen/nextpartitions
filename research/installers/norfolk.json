@@ -1,0 +1,175 @@
+{
+ "area": "norfolk",
+ "found_count": 4,
+ "sources_tried": [
+  "Seed file norfolk.json: worked. Of 41 maps results, 2 are relevant (Tidewater Stalls & Specialties, Virginia Storage Systems). The rest are remodelers, plumbers and stores. The web results are Google redirect links to directories and forum threads, with no new installers.",
+  "Bobrick rep locator: guessed URLs returned 404 (/sales-representatives, /find-a-representative), so it was not found.",
+  "ASI (Global Partitions) find-a-rep: blocked (403).",
+  "Scranton Products where-to-buy: worked, but Virginia is covered only by an individual factory rep, not an installer business. Not recorded.",
+  "Hadrian find-a-rep: blocked (403).",
+  "Metpar representatives: page empty or 404.",
+  "Bradley find-a-rep: no listings in the page (loaded by script).",
+  "General Partitions and Ampco/Ammco locators: not tried before the time and search budget ran out.",
+  "The Blue Book (thebluebook.com): blocked (403 CloudFront) for curl and WebFetch. Its profiles for Barranger, Frank M. Waters, Partition Plus and Accessible Construction Supply appeared only as search results.",
+  "BuildingConnected and Procore public profiles: not reached.",
+  "BBB: blocked (Cloudflare).",
+  "WebSearch: used all 8. Searches for toilet partition installation in Norfolk and Hampton Roads, Division 10 contractors in VA, bathroom partition installers in Virginia Beach, Chesapeake and Suffolk, and specialties contractors in Richmond and Williamsburg returned mostly remodelers and One Point Partitions pages.",
+  "Excluded: One Point Partitions, a national online seller whose site is blocked by Cloudflare. It has only a 'delivery terminal' in Chesapeake per search snippets, and installation is unconfirmed.",
+  "Excluded: Partition Plus (partitionplus.com/about-us read). Based in Forest Hill, MD, more than 120 miles away, though it says it offers regional installation in Virginia.",
+  "Excluded: American Building Specialties, a wholesale distributor in Bealeton, VA, about 170 miles away.",
+  "Excluded: Unified Door & Hardware Group (udhgroup.com). A national company with no Virginia location found.",
+  "Excluded: Allegheny Construction Specialties (Tennessee), 10 SPEC (New Jersey) and Walsh Door (no local base found).",
+  "Not verified: Frank M. Waters Inc. Its site was not found, and the Blue Book snippet says it is Maryland-based."
+ ],
+ "candidates": [
+  {
+   "name": "Tidewater Stalls & Specialties, LLC",
+   "base_city": "Virginia Beach",
+   "state": "VA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Hadrian"
+   ],
+   "website": "https://tidewaterstalls.com/",
+   "phone": "(757) 233-9900",
+   "email": "info@tidewaterstalls.com",
+   "contact_page": "https://tidewaterstalls.com/contact",
+   "partition_evidence": "Has a 'Bathroom Partition Installation' service page ('We install bathroom partitions from leading manufacturers including Bobrick, Bradley, and Hadrian', floor-mounted, ceiling-hung and floor-to-ceiling). Its homepage testimonials describe restroom partition and toilet compartment installs. It has an installation team lead.",
+   "reason": "A Division 10 specialist based in Virginia Beach that installs commercial bathroom partitions and has service-area pages for Norfolk, Virginia Beach, Chesapeake, Hampton, Newport News and Suffolk. It is also an authorized distributor that supplies partitions, so it is a buy-around risk.",
+   "red_flags": [
+    "Distributor that supplies and sells partitions itself (buy-around risk)",
+    "Mainly serves general contractors and construction managers"
+   ],
+   "evidence_urls": [
+    "https://tidewaterstalls.com/",
+    "https://tidewaterstalls.com/services/bathroom-partition-installation/",
+    "https://tidewaterstalls.com/products/bathroom-partitions/",
+    "https://tidewaterstalls.com/about",
+    "https://tidewaterstalls.com/contact"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Tidewater Stalls & Specialties, LLC",
+    "area": "norfolk",
+    "status": "not_online",
+    "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+    "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+    "note": "Same company as the virginia-beach entry. The DPOR lookup needs a reCAPTCHA, so check by hand. A Norfolk city business license would also be needed for work in Norfolk; it was not checked online. Checked 2026-11-19."
+   },
+   "score": 70
+  },
+  {
+   "name": "Virginia Storage Systems, Inc.",
+   "base_city": "Chesapeake",
+   "state": "VA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Scranton Products",
+    "General Partitions",
+    "Bobrick",
+    "Stanley Vidmar"
+   ],
+   "website": "http://www.virginiastorage.com/",
+   "phone": "757-494-7200",
+   "contact_page": "http://www.virginiastorage.com/staff.html",
+   "partition_evidence": "Its homepage features a project where it 'installed 21 toilet stalls' (solid-core phenolic) at a Williamsburg theme park. Its toilet partitions page offers partitions with a one-year guarantee on parts, material and workmanship, and says its installers keep ADA training current.",
+   "reason": "Based in Chesapeake, it sells and installs toilet partitions 'anywhere in Hampton Roads' for commercial and industrial clients. It also sells partitions itself (buy-around risk), and its website hasn't been updated since 2014.",
+   "red_flags": [
+    "Sells partitions itself (buy-around risk)",
+    "Website copyright is 2014, so it may be stale; check the business is still active",
+    "No general company email; only staff-name emails are on the site"
+   ],
+   "evidence_urls": [
+    "http://www.virginiastorage.com/",
+    "http://www.virginiastorage.com/toiletpartitions.html",
+    "http://www.virginiastorage.com/staff.html"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Virginia Storage Systems, Inc.",
+    "area": "norfolk",
+    "status": "not_online",
+    "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+    "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+    "note": "Same company as the virginia-beach entry. The DPOR lookup needs a reCAPTCHA, so check by hand. The Norfolk city business license was not checked online. Checked 2026-11-19."
+   },
+   "score": 70
+  },
+  {
+   "name": "Barranger & Company, Inc.",
+   "base_city": "Richmond",
+   "state": "VA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Bobrick",
+    "Global",
+    "Knickerbocker",
+    "Sanymetal",
+    "Scranton Products",
+    "American Sanitary"
+   ],
+   "website": "https://barranger.com/",
+   "phone": "(804) 794-0920",
+   "email": "barranger@barranger.com",
+   "contact_page": "https://barranger.com/request-a-quote/",
+   "partition_evidence": "The homepage says it is 'supplying and installing folding doors, partitions, toilet accessories, lockers'. The about page covers toilet compartments for new or replacement jobs and repairs, and the How To Order page mentions terms for 'installed material'. No toilet partition install photos or projects were shown.",
+   "reason": "A distributor of specialty products in Richmond, about 85 to 90 miles from Norfolk, that supplies and installs partitions, but the clearest installation evidence is for folding doors. Its site doesn't name Hampton Roads or Norfolk as a service area.",
+   "red_flags": [
+    "Distributor that sells partitions itself (buy-around risk)",
+    "Hampton Roads service area not stated on its site",
+    "Mainly a folding-door and operable-wall specialist"
+   ],
+   "evidence_urls": [
+    "https://barranger.com/",
+    "https://barranger.com/about-barranger/",
+    "https://barranger.com/manufacturers/",
+    "https://barranger.com/toilet-partitions/",
+    "https://barranger.com/how-to-order/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Barranger & Company, Inc.",
+    "area": "norfolk",
+    "status": "not_online",
+    "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+    "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+    "note": "The DPOR lookup needs a reCAPTCHA, and a site-restricted web search found no indexed DPOR record. Check by hand. The company homepage (https://barranger.com/) shows no license number. The Norfolk business license was not checked online. Checked 2026-11-19."
+   },
+   "score": 43
+  },
+  {
+   "name": "Section 10 Inc.",
+   "base_city": "Midlothian",
+   "state": "VA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "reason": "No website, project or service description found. A search snippet suggests a BBB listing under commercial contractors, office furniture installation and bathroom accessories, but the page couldn't be read (lib.www.bbb.org isn't reachable from this session). Midlothian is about 90 miles away and nothing shows it serves Hampton Roads.",
+   "red_flags": [
+    "No website found",
+    "Toilet partition work not verified"
+   ],
+   "evidence_urls": [],
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

@@ -1,0 +1,157 @@
+{
+ "area": "virginia-beach",
+ "found_count": 4,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/virginia-beach.json: worked. Most maps results were remodelers, plumbers and stores. The web results were google.com/goto links that resolve with www.google.com and gave Tidewater Stalls, Virginia Installations, Partition Plus, Seven Oaks, GC Specialties, CSI, Partition Pros and One Point Partitions.",
+  "Bobrick find-a-rep: the page loaded, but the rep list is dynamic or JS, so no results.",
+  "Scranton Products find-a-rep (/find-a-rep/): 404",
+  "Hadrian find-a-rep: 404",
+  "ASI, Bradley, Metpar, General Partitions, Ammco locators: not tried after the JS and 404 results above.",
+  "The Blue Book (thebluebook.com iProView pages): 403 blocked on every profile tried (Frank M. Waters, 259104, Accessible Construction Supply).",
+  "BBB (prod.bbb.org Section 10 Inc, Midlothian VA): 403 blocked",
+  "Yelp search page: 403 blocked",
+  "BuildingConnected and Procore: not tried (search cap)",
+  "WebSearch: all 8 used. Queries: toilet partition installation VB, Norfolk and Chesapeake; Division 10 Hampton Roads; restroom partitions installer VA and Richmond; toilet partitions in Norfolk, Chesapeake, Newport News and Suffolk; Frank M. Waters; VA partitions, lockers and installation specialties; Richmond Division 10 specialties; Hampton Roads toilet partitions. Few local results.",
+  "onepointpartitions.com: WebFetch 403 and curl returned an empty page. A search summary says it is a supplier that does not install, so it was excluded.",
+  "Excluded after reading: GC Specialties (Mobile, AL, no VA mention), Construction Specialties Installations (NY, NH and FL, no VA mention), Seven Oaks Doors & Hardware (Locust, NC; serves South Central VA, out of range), Partition Pros (national, no local crew), H2I Group (Eagan, MN, no partitions), Allegheny Construction Specialties (Nashville), Complete Interior Package (North Chesterfield; no partitions listed), Martin Bros (California).",
+  "Leads not verified (blocked or no site found): Section 10 Inc (Midlothian, VA, per a BBB search snippet that lists bathroom partitions), Barranger Company (location unknown), Frank M. Waters Inc (Maryland, toilet partitions)."
+ ],
+ "candidates": [
+  {
+   "name": "Virginia Storage Systems",
+   "base_city": "Chesapeake",
+   "state": "VA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Stanley Vidmar (cabinets, factory-trained installer)"
+   ],
+   "phone": "757-494-7200",
+   "contact_page": "http://www.virginiastorage.com/staff.html",
+   "website": "http://www.virginiastorage.com/",
+   "partition_evidence": "Homepage lists toilet partitions and toilet accessories, says they sell and install, and describes installing 21 toilet stalls at a theme park; staff page says the VP oversees all installations.",
+   "reason": "Chesapeake-based seller and installer of toilet partitions, lockers and accessories for commercial and industrial clients (rail yard, theme park, power plant) across Hampton Roads. It also sells partitions, so there is some buy-around risk.",
+   "red_flags": [
+    "Sells partitions itself (buy-around risk)",
+    "No general company email; only individual staff emails on site",
+    "Older-style website"
+   ],
+   "evidence_urls": [
+    "http://www.virginiastorage.com/",
+    "http://www.virginiastorage.com/staff.html"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Virginia Storage Systems",
+    "area": "virginia-beach",
+    "status": "not_online",
+    "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+    "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+    "note": "Virginia requires a Board for Contractors license above the dollar threshold. The DPOR lookup needs a reCAPTCHA, so automated lookup was not possible: check by hand. The company homepage (http://www.virginiastorage.com/) shows no license number. The Virginia Beach business license (license tax on gross receipts) was not checked online. Checked 2026-11-19."
+   },
+   "score": 70
+  },
+  {
+   "name": "Tidewater Stalls & Specialties, LLC",
+   "base_city": "Virginia Beach",
+   "state": "VA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://tidewaterstalls.com/",
+   "partition_evidence": "Homepage title 'Bathroom Partitions, Lockers | Virginia Beach, VA' and meta description 'a supplier of Division 10 products, such as Bathroom Partitions, Restroom Accessories, Lockers'; page links an installation-instructions guide. No installation service or project photos were confirmed.",
+   "reason": "Virginia Beach Division 10 supplier of bathroom partitions (site launched 2026). The site describes itself as a supplier and returned errors (HTTP 520) on later fetches, so it was not confirmed that they install, and no contact details were collected.",
+   "red_flags": [
+    "Describes itself as a supplier; installation not confirmed",
+    "Website returned HTTP 520 errors on repeat fetches",
+    "New site (published May 2026); no reviews found",
+    "Sells partitions (buy-around risk)"
+   ],
+   "evidence_urls": [
+    "https://tidewaterstalls.com/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Tidewater Stalls & Specialties, LLC",
+    "area": "virginia-beach",
+    "status": "not_online",
+    "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+    "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+    "note": "The DPOR lookup needs a reCAPTCHA, so automated lookup was not possible: check by hand. The company homepage (https://tidewaterstalls.com/) shows no license number. The Virginia Beach business license was not checked online. Checked 2026-11-19."
+   },
+   "score": 30
+  },
+  {
+   "name": "Partition Plus",
+   "base_city": "Forest Hill",
+   "state": "MD",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Hadrian",
+    "Bradley",
+    "Bobrick",
+    "Scranton Products",
+    "ASI",
+    "Metpar",
+    "Jacknob",
+    "Hawa"
+   ],
+   "phone": "800-298-9696",
+   "email": "sales@partitionplus.com",
+   "contact_page": "https://www.partitionplus.com/about-us/#contact-title",
+   "website": "https://partitionplus.com/",
+   "partition_evidence": "About page says it offers regional installation in MD, DC, VA, PA and DE.",
+   "reason": "An online partitions dealer, and a direct competitor reselling the same brands as Next Partitions. It is based in Forest Hill, MD, roughly 200+ miles from Virginia Beach, beyond the 120-mile regional limit, even though Virginia is named in its install area.",
+   "red_flags": [
+    "Direct competitor: sells Bobrick, ASI, Scranton, Bradley, Metpar (high buy-around risk)",
+    "Based well over 120 miles from Virginia Beach"
+   ],
+   "evidence_urls": [
+    "https://partitionplus.com/",
+    "https://www.partitionplus.com/about-us/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Virginia Installations, Inc.",
+   "base_city": "Elkton",
+   "state": "VA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "mostly",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [
+    "Organized Living"
+   ],
+   "phone": "(540) 298-5300",
+   "email": "info@virginiainstallations.com",
+   "contact_page": "https://www.virginiainstallations.com/contact-virginia-installations-residential-commercial-bathroom-accessories-ada-accessibility-st",
+   "website": "https://www.virginiainstallations.com/",
+   "partition_evidence": "Homepage text covers closet shelving, door hardware, mirrors, shower enclosures and bath accessories; 'toilet partitions' appears only in a link URL, not confirmed in content.",
+   "reason": "It is based in Elkton in the Shenandoah Valley, about 200 miles from Virginia Beach, and says it serves the Shenandoah Valley only. Partition installation was not confirmed.",
+   "red_flags": [
+    "Service area is Shenandoah Valley only",
+    "Partition installation not confirmed in page text"
+   ],
+   "evidence_urls": [
+    "https://www.virginiainstallations.com/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 15
+  }
+ ]
+}
