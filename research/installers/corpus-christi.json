@@ -1,0 +1,205 @@
+{
+ "area": "corpus-christi",
+ "found_count": 6,
+ "sources_tried": [
+  "Seed file corpus-christi.json: worked, but the maps results were mostly plumbers, remodelers and stores, and the web results were unresolvable google.com/goto redirects. Checked: straussinterior.com (expired domain), ccbhinc.com (doors and hardware, says it does not install), cornerstonecorpus.com (residential only).",
+  "Bobrick find-a-rep: page loaded but the rep dropdown is JS-only, so no results. A Bobrick case study PDF did work and names DEA Specialties.",
+  "Scranton Products where-to-buy: worked, but it only lists a territory rep (Architectural Cornerstone Group, Dallas-area phone), no installers.",
+  "ASI, Bradley, Hadrian, Metpar, General Partitions, Ampco locators: not tried, because the search cap was reached and the locators are JS-driven.",
+  "The Blue Book (thebluebook.com search and iProView pages): blocked (403).",
+  "BuildingConnected / Procore: not tried (sign-in or JS required).",
+  "Corpus Christi Chamber directory: 503 error.",
+  "onepointpartitions.com: blocked (403).",
+  "Thumbtack and hireveterans.com profiles: returned empty content.",
+  "governmentcontracts.us: 404. govconinabox.com: worked (DEA Specialties, Bernco).",
+  "BBB category page: worked (Coastal ADS).",
+  "chathamworth.com: worked, but it's a Division 10 installer in Flower Mound (DFW), out of range for this area, so I left it out.",
+  "innergy-interiors.pages.dev: worked, but it's in El Paso and doesn't list Corpus Christi, so I left it out.",
+  "WebSearch: used all 8 searches. No search found a Corpus Christi-based firm confirmed to install toilet partitions."
+ ],
+ "candidates": [
+  {
+   "name": "Coastal ADS Inc (Coastal A.D.S., Inc.)",
+   "base_city": "Corpus Christi",
+   "state": "TX",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "reason": "Local commercial acoustical and hollow-metal-door subcontractor in business since 1976. Its Chamber profile, as quoted in search results, says it sells, installs and maintains toilet accessories for commercial and industrial buildings. I couldn't open the Chamber page (503 and cert errors), so I never saw toilet partitions named on a page I read.",
+   "partition_evidence": "Only from search-result summaries of its Corpus Christi Chamber profile: it installs 'toilet accessories' alongside acoustic ceilings and hollow metal doors. A second search summary mentioned a Chamber firm offering 'toilet partition and accessory installation', which is probably this one but isn't confirmed.",
+   "red_flags": [
+    "No company website found",
+    "Chamber profile could not be read directly; partition work unconfirmed",
+    "Main lines appear to be acoustical ceilings and hollow metal doors"
+   ],
+   "evidence_urls": [
+    "https://business.corpuschristichamber.org/list/member/coastal-a-d-s-inc-185"
+   ],
+   "contact_page": "",
+   "phone": "",
+   "email": "",
+   "website": "",
+   "brands": [],
+   "added_by_checker": false,
+   "license": {
+    "name": "Coastal ADS Inc (Coastal A.D.S., Inc.)",
+    "area": "corpus-christi",
+    "status": "not_online",
+    "registry": "City of Corpus Christi Development Services STAR Contractor search (contractorrating.apps1.corpuschristitx.gov)",
+    "source_url": "https://www.corpuschristitx.gov/department-directory/development-services/applications-permits-and-guidance/the-star-contractor-program/",
+    "note": "Checked 2026-11-19. Corpus Christi's STAR registration (Bronze, Silver, Gold) is voluntary. City Information Bulletin IB016 (11 Nov 2024) says 'This is a voluntary program, and contractors are not required to participate' (https://www.corpuschristitx.gov/media/vtiajsfh/ib016-contractor-registration-program-031425-updated.pdf). The STAR search tool at https://contractorrating.apps1.corpuschristitx.gov/ is a JavaScript app. Its static page holds no records, and automated querying of its data was not permitted in this session, so Coastal ADS's STAR status is unchecked. Look up 'Coastal' by hand in a browser, and ask Development Services what registration applies to commercial permits."
+   },
+   "score": 50
+  },
+  {
+   "name": "DEA Specialties Co., Inc.",
+   "base_city": "San Antonio",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "reason": "A capable commercial installer: Bobrick's case study names it the installing distributor for 380 Bobrick stalls at the San Antonio convention center. However, it is based in San Antonio, about 140 miles from Corpus Christi (beyond the 120-mile limit), and neither its homepage nor its contact page mentions Corpus Christi or South Texas coverage. It would be worth revisiting if it confirms it serves Corpus Christi.",
+   "partition_evidence": "Bobrick case study PDF: 'Installing Distributor: DEA Specialties'; 380 stalls and 66 urinal screens installed (Bobrick SierraSeries). The website lists 'Partitions & Accessories' under Products.",
+   "red_flags": [
+    "Sells and distributes partitions itself (buy-around risk)",
+    "Outside the 120-mile radius with no stated Corpus Christi coverage",
+    "Offices only in San Antonio and Austin"
+   ],
+   "evidence_urls": [
+    "https://www.deaspecialties.com/",
+    "https://www.deaspecialties.com/contact-us",
+    "https://www.bobrick.com/wp-content/uploads/2019/01/BOB-CaseStudy_HBGConventionCenter_v3-1.pdf"
+   ],
+   "contact_page": "https://www.deaspecialties.com/contact-us",
+   "phone": "210-523-1073",
+   "email": "",
+   "website": "https://www.deaspecialties.com/",
+   "brands": [
+    "Bobrick",
+    "Modernfold",
+    "Kingspan Light + Air",
+    "Crown Doors",
+    "Euro-Wall"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Bernco Group, LLC",
+   "base_city": "Converse",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "reason": "A federal-contractor directory describes it as a Division 10 specialty subcontractor, with toilet partitions and compartments among its keywords, established 2019. Converse is near San Antonio, about 140 miles from Corpus Christi. I found no website, no project photos and no stated Corpus Christi coverage.",
+   "partition_evidence": "govconinabox listing: 'Division 10 specialty subcontractor'; keywords include toilet partitions and toilet compartments.",
+   "red_flags": [
+    "No website or contact details found",
+    "Out of area with no stated coverage of Corpus Christi"
+   ],
+   "evidence_urls": [
+    "https://govconinabox.com/explore/smb-federal-contractors/bernco-group-llc-CMSKU5SYW6J1"
+   ],
+   "contact_page": "",
+   "phone": "",
+   "email": "",
+   "website": "",
+   "brands": [],
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "unknown",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "reason": "An online partition seller, and therefore a competitor rather than an installer. Search snippets say it delivers to Corpus Christi from a delivery terminal and that its experts help with design, ordering and delivery. Its site returned 403 to every fetch, so I saw no installation service. Its base location is unknown; within_area is set to 'no' only because the schema has no 'unknown' option.",
+   "partition_evidence": "None seen. Snippets describe it as a seller of powder-coated and stainless partitions with delivery to Corpus Christi.",
+   "red_flags": [
+    "Sells partitions itself (competitor / buy-around risk)",
+    "Website blocked automated reading",
+    "No installation evidence"
+   ],
+   "evidence_urls": [
+    "https://onepointpartitions.com/",
+    "https://onepointpartitions.com/service-areas/texas-bathroom-partitions/"
+   ],
+   "contact_page": "",
+   "phone": "",
+   "email": "",
+   "website": "https://onepointpartitions.com/",
+   "brands": [],
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Specialties Specialists LLC",
+   "base_city": "San Antonio",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "reason": "The only trace is a Thumbtack profile that came back empty when fetched. A search snippet says it does Division 10 work and has 2 years in business, but I couldn't verify that. It is San Antonio based (about 140 miles away) and has no website.",
+   "partition_evidence": "Unverified: a search snippet of its Thumbtack profile mentions Division 10 work including toilet partitions.",
+   "red_flags": [
+    "No website",
+    "Thumbtack profile unreadable",
+    "Out of area",
+    "Very new business"
+   ],
+   "evidence_urls": [
+    "https://thumbtack.com/tx/san-antonio/concrete-contractors/specialties-specialists-llc/service/541866122791297050"
+   ],
+   "contact_page": "",
+   "phone": "",
+   "email": "",
+   "website": "",
+   "brands": [],
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  },
+  {
+   "name": "Builders Display Co",
+   "base_city": "Corpus Christi",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "reason": "I found no business by this name in Corpus Christi. The only match is a Houzz profile, as quoted in search results, of a former employee of 'Builder's Display', which says the business closed and gives an Austin address. within_area is set to 'no' because no Corpus Christi presence was found.",
+   "partition_evidence": "None found.",
+   "red_flags": [
+    "Not found in Corpus Christi",
+    "Possibly closed (Austin-based Builder's Display reported closed)"
+   ],
+   "evidence_urls": [
+    "https://www.houzz.com/professionals/kitchen-and-bath-fixtures/formerly-working-for-builders-display-pfvwus-pf~379387588"
+   ],
+   "contact_page": "",
+   "phone": "",
+   "email": "",
+   "website": "",
+   "brands": [],
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

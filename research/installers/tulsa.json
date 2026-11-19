@@ -1,0 +1,175 @@
+{
+ "area": "tulsa",
+ "found_count": 5,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/tulsa.json: worked. Maps results were mostly residential remodelers, plumbers and stores; web result URLs are google.com/goto redirects that would not resolve with curl",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep/): page loads, but the rep list is in a dropdown loaded by script, so no Oklahoma rep could be read",
+  "Scranton Products find-a-rep: 404",
+  "Hadrian find-a-rep: 404",
+  "Metpar representatives: 404",
+  "General Partitions find-a-rep: 404",
+  "Bradley find-a-rep: page had no content readable without script",
+  "ASI, Ampco/Ammco locators: not reached (out of time and fetch budget)",
+  "The Blue Book (thebluebook.com iProView): 403 blocked",
+  "BuildingConnected / Procore public profiles: not tried",
+  "BBB Tulsa 'partition' category: worked, but its 2 results (Bentonville AR flooring, Wichita KS doors) were irrelevant",
+  "Newton Distributing 'toilet partitions near me': worked; it mentions a Tulsa/Lawton installer list but names none",
+  "One Point Partitions Oklahoma page: 403; search snippets show a national seller with a Tulsa delivery terminal and DIY install (skipped as a national chain)",
+  "Jim Austin Sales (OKC): domain jimaustinsales.com would not resolve (guessed domain; the real URL was hidden behind a Google redirect)",
+  "WebSearch: all 8 used. Most useful was the 'Tulsa company installs commercial bathroom stalls...' extended search (found Apex Doors and Pro Door); the others returned mainly manufacturer and One Point pages",
+  "CS Installers (csinstallers.com): worked, but it serves the Northeast only, so it was excluded",
+  "Southwest Solutions Group (Tulsa office): found in search, but it does demountable office walls and wire partitions, not toilet partitions, so it was excluded"
+ ],
+ "candidates": [
+  {
+   "name": "Apex Doors (Apex Doors OK)",
+   "base_city": "Tulsa",
+   "state": "OK",
+   "added_by_checker": false,
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "website": "https://www.apexdoorsok.com/",
+   "phone": "(918) 914-6390",
+   "email": "info@apexdoorsok.com",
+   "contact_page": "https://www.apexdoorsok.com/",
+   "brands": [],
+   "partition_evidence": "Dedicated 'Bathroom Partitions Contractor in Tulsa' Division 10 page describes commercial and ADA toilet partition installation (site assessment, mounting, inspection) in powder-coated steel, HDPE, stainless, phenolic and laminate. Homepage says it supplies and installs commercial restroom partitions.",
+   "red_flags": [
+    "Sells partitions itself ('Purchase durable toilet partitions ... from Apex Doors'): a buy-around risk",
+    "No named projects or captioned project photos; mainly a commercial door company",
+    "No aggregate Google rating shown on the site, only two testimonials"
+   ],
+   "evidence_urls": [
+    "https://www.apexdoorsok.com/",
+    "https://www.apexdoorsok.com/bathroom-partitions-division-10"
+   ],
+   "reason": "Tulsa-based commercial door and Division 10 contractor with a dedicated toilet partition installation page that lists Broken Arrow, Owasso, Bixby and Jenks among the areas it serves. It also sells partitions, so a listing agreement would need to address substitution.",
+   "license": {
+    "name": "Apex Doors (Apex Doors OK)",
+    "area": "tulsa",
+    "status": "not_online",
+    "registry": "City of Tulsa Development Services Permit Center contractor registration (EnerGov Self-Service Portal, https://tulsaok-energovweb.tylerhost.net/apps/selfservice); state: Oklahoma Construction Industries Board does not license this work",
+    "source_url": "https://www.cityoftulsa.org/permits",
+    "note": "Oklahoma has no state license for partition or general contractor work. CIB licenses trades only. Tulsa requires contractor registration with the Permit Center, but the city publishes no public list of registered contractors. Its EnerGov Self-Service Portal is JavaScript-only, shows Log In / Register, and returned no public contractor search to automated access. Checked 2026-11-19. Confirm registration by phone with the Permit Center, 918-596-9456 (listed in search results for the city contact page). No license number was found."
+   },
+   "score": 70
+  },
+  {
+   "name": "Murray Womble, Inc.",
+   "base_city": "Owasso",
+   "state": "OK",
+   "added_by_checker": false,
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "website": "https://www.murraywomble.com/",
+   "phone": "918-272-6977",
+   "contact_page": "https://www.murraywomble.com/contact",
+   "brands": [],
+   "partition_evidence": "Homepage has a 'Bathroom Partitions & Accessories' section (metal, plastic laminate and plastic partitions) and says the company 'provided and installed architectural specialty products'. The About page says 'we often install what we sell'. No page states toilet partition installation outright.",
+   "red_flags": [
+    "Distributor of architectural hardware and specialties that sells partitions: a buy-around risk",
+    "No explicit partition installation project or photo found"
+   ],
+   "evidence_urls": [
+    "https://www.murraywomble.com/",
+    "https://www.murraywomble.com/about",
+    "https://www.murraywomble.com/contact"
+   ],
+   "reason": "Long-established (founded in Tulsa in 1922) commercial hardware and specialties supplier with offices in Owasso and Oklahoma City that lists partitions and says it installs what it sells. Partition installation is likely but not shown directly.",
+   "license": {
+    "name": "Murray Womble, Inc.",
+    "area": "tulsa",
+    "status": "not_online",
+    "registry": "City of Tulsa Development Services Permit Center contractor registration (EnerGov Self-Service Portal); state: Oklahoma Construction Industries Board does not license this work",
+    "source_url": "https://www.cityoftulsa.org/permits",
+    "note": "The company is based in Owasso, so jobs inside Tulsa city limits need Tulsa contractor registration. Tulsa's registry has no public online list. The EnerGov portal is behind Log In / Register and shows no public contractor search to automated access. Checked 2026-11-19. Confirm with the Tulsa Permit Center, and with the city where the job is (for example Owasso). No license number was found."
+   },
+   "score": 50
+  },
+  {
+   "name": "FTO Building Specialties (Fabricated Total Openings Building Specialties)",
+   "base_city": "Tulsa",
+   "state": "OK",
+   "added_by_checker": false,
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "website": "https://www.ftobs.co/",
+   "phone": "918-591-2590",
+   "contact_page": "https://www.ftobs.co/contact-us/",
+   "brands": [],
+   "partition_evidence": "Contact page refers to 'division 8 and division 10 specialties'. Homepage has a 'Specialties' category for bathroom facilities and mentions professional installation. Toilet partitions are not named anywhere it was read.",
+   "red_flags": [
+    "Mainly a commercial door, frame and hardware supplier",
+    "Toilet partitions never named; email address is obfuscated"
+   ],
+   "evidence_urls": [
+    "https://www.ftobs.co/",
+    "https://www.ftobs.co/contact-us/"
+   ],
+   "reason": "Tulsa Division 8/10 supplier that offers installation and bathroom specialties, but no page names toilet partitions, so this is likely but unproven.",
+   "license": {
+    "name": "FTO Building Specialties (Fabricated Total Openings Building Specialties)",
+    "area": "tulsa",
+    "status": "not_online",
+    "registry": "City of Tulsa Development Services Permit Center contractor registration (EnerGov Self-Service Portal); state: Oklahoma Construction Industries Board does not license this work",
+    "source_url": "https://www.cityoftulsa.org/permits",
+    "note": "Oklahoma has no state license for this work. Tulsa contractor registration can't be checked online: the city publishes no registered-contractor list, and the EnerGov Self-Service Portal needs sign-in and is JavaScript-rendered. Checked 2026-11-19. Confirm by phone with the Tulsa Permit Center. No license number was found."
+   },
+   "score": 50
+  },
+  {
+   "name": "Pro Door, LLC",
+   "base_city": "Tulsa",
+   "state": "OK",
+   "added_by_checker": false,
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "website": "https://www.okprodoor.com/",
+   "brands": [],
+   "partition_evidence": "None; the website is gone.",
+   "red_flags": [
+    "okprodoor.com returns 301 to an expireddomains.com listing: the domain has lapsed, and the business may be closed"
+   ],
+   "evidence_urls": [
+    "https://www.okprodoor.com/"
+   ],
+   "reason": "Its domain has expired and redirects to a domain-sale page, so nothing could be verified and the business may be closed.",
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Mid-South Partitions",
+   "base_city": "Tulsa",
+   "state": "OK",
+   "added_by_checker": false,
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "partition_evidence": "None found.",
+   "red_flags": [
+    "No website, listing or other web presence found for this name in Tulsa; within_area is set to 'no' only because the business could not be located"
+   ],
+   "evidence_urls": [
+    "https://www.bbb.org/us/ok/tulsa/category/partition"
+   ],
+   "reason": "A search found no business by this name in Tulsa, and the BBB Tulsa partition category lists only two unrelated firms (Bentonville, AR and Wichita, KS). There is no evidence it exists or installs partitions.",
+   "license": null,
+   "score": 0
+  }
+ ]
+}
