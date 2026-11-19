@@ -1,0 +1,238 @@
+{
+ "area": "fresno",
+ "found_count": 7,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/fresno.json: read. The maps results were all residential remodelers, plumbers, tile and supply shops or porta-potty rentals, and none were partition installers. The web seeds were mostly directory pages behind google.com/goto redirects. Only Toilet Partitions Experts was relevant.",
+  "Bobrick Find a Rep (bobrick.com/find-a-rep): page loaded, but the lookup is a dynamic dropdown and returned no reps",
+  "Scranton Products where-to-buy: no dealer lookup, only a regional product specialist for CA (not an installer)",
+  "General Partitions dealer locator: 404 at the guessed URL",
+  "Bradley find-a-rep: page content empty",
+  "ASI, Hadrian, Metpar, Ampco locators: not tried because of the fetch budget and dynamic locators",
+  "The Blue Book (thebluebook.com): blocked (HTTP 403) on every profile; details came only from search snippets",
+  "BuildingConnected and Procore: not tried",
+  "sacvalleycontractors.com: HTTP 429",
+  "onepointpartitions.com: HTTP 403",
+  "deltaspecialties.com: HTTP 503 (the domain may not be theirs)",
+  "WebSearch: 8 of 8 used (Fresno toilet partition installation, Division 10 for Fresno/Clovis/Madera/Visalia, Delta Specialties, restroom partitions Fresno/Clovis/Visalia, Stumbaugh Fresno, Fresno toilet partitions and lockers, American Sheet Metal Partition, Yelp/BBB Fresno stall partitions). Search found no Fresno-based toilet partition specialist and no Yelp or BBB pages for one.",
+  "Company sites read: stumbaugh.com, magnumdrywall.com, consolidatedpartitions.com, toiletpartitionsexperts.com, constructioninfocus.com article"
+ ],
+ "candidates": [
+  {
+   "name": "Stumbaugh & Associates, Inc.",
+   "added_by_checker": false,
+   "base_city": "Burbank (offices also in San Diego and West Sacramento)",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "phone": "(818) 240-1627 (Burbank); (650) 999-0700 (Northern California office)",
+   "email": "Estimating@stumbaugh.com",
+   "contact_page": "https://www.stumbaugh.com/contact",
+   "website": "https://www.stumbaugh.com/",
+   "partition_evidence": "Website offers professional installation of bathroom partitions; a May 2023 Construction In Focus article describes it as a Division 10 subcontractor that sells partitions to GCs with installation by its own union crews.",
+   "evidence_urls": [
+    "https://www.stumbaugh.com/",
+    "https://www.stumbaugh.com/contact",
+    "https://constructioninfocus.com/?p=37700"
+   ],
+   "red_flags": [
+    "No Fresno office on its own website or contact page; the 2023 article contradicts itself (researching Fresno vs 'definitely opened up a Fresno office')",
+    "Sells partitions itself (distributor): buy-around risk",
+    "Nearest listed office is West Sacramento, about 170 miles away"
+   ],
+   "reason": "Clearly installs commercial restroom partitions statewide, but no verified office within 30 miles of Fresno and it is a competing partition distributor. Worth asking whether it covers Fresno.",
+   "license": {
+    "name": "Stumbaugh & Associates, Inc.",
+    "area": "fresno",
+    "status": "found_active",
+    "registry": "California Contractors State License Board (CSLB) license detail",
+    "license_number": "288724",
+    "license_type": "C-61/D24 Metal Products; C-61/D34 Prefabricated Equipment (corporation)",
+    "source_url": "https://www.cslb.ca.gov/288724",
+    "note": "CSLB record (data current as of 11/19/2026) for STUMBAUGH & ASSOCIATES INC, Burbank: 'This license is current and active.' Issued 11/19/1973, expires 04/30/2028. Contractor's bond on file (Merchants Bonding Company); workers' comp active (Arch Insurance), policy 03/01/2026 to 03/01/2027. The license number came from third-party listings (prelien.co, BuildZoom) and was then confirmed on the official CSLB page. The company site (https://www.stumbaugh.com/) lists offices in Burbank (818 240-1627), San Diego (858 444-1683) and West Sacramento (650 999-0700) but shows no license number. Fresno Business Tax Certificate not checked (no public online lookup used)."
+   },
+   "score": 75
+  },
+  {
+   "name": "Delta Specialties Inc.",
+   "added_by_checker": false,
+   "base_city": "unknown (209 fax area code per search summary, Stockton area)",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "partition_evidence": "Search-engine summary of its Blue Book listing: Division 10 business (founded 2008) supplying toilet partitions and toilet accessories, with Fresno, Madera, Kern, Kings and Tulare among service areas. The Blue Book page itself returned 403 and was not read directly.",
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/393371/delta-specialties-inc/material-suppliers/"
+   ],
+   "red_flags": [
+    "All facts come from search summaries of a Blue Book page that could not be opened (403)",
+    "No website could be loaded (deltaspecialties.net did not resolve)",
+    "Base city and contractor license not verified",
+    "Appears to supply partitions itself"
+   ],
+   "reason": "Division 10 partitions/accessories firm that reportedly lists Fresno and Madera in its service area, but installation, base city and license are unconfirmed.",
+   "license": {
+    "name": "Delta Specialties Inc.",
+    "area": "fresno",
+    "status": "found_active",
+    "registry": "California Contractors State License Board (CSLB) license detail",
+    "license_number": "932844",
+    "license_type": "C17 Glazing; C-61/D34 Prefabricated Equipment (corporation)",
+    "source_url": "https://www.cslb.ca.gov/932844",
+    "note": "CSLB record (data current as of 11/19/2026) for DELTA SPECIALTIES INC, base city Lodi, CA (not Stockton as the input assumed): 'This license is current and active.' Issued 05/19/2009, expires 05/31/2027. Contractor's bond on file (American Contractors Indemnity Company); workers' comp active (Technology Insurance Company), 08/15/2026 to 08/15/2027. The match is by name and the partition-related D34 class; Blue Book (https://www.thebluebook.com/iProView/393371/delta-specialties-inc/material-suppliers/) describes a Division 10 / toilet partitions company in Northern California. Confirm this is the same business before listing. Fresno Business Tax Certificate not checked."
+   },
+   "score": 55
+  },
+  {
+   "name": "American Sheet Metal Partition Co., Inc.",
+   "added_by_checker": false,
+   "base_city": "Sacramento (McClellan)",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "partition_evidence": "CSLB lists an active license with C-61/D34 Prefabricated Equipment (the class used for toilet partitions) and C43 Sheet Metal; search summaries describe it as a Division 10 distributor with Fresno among Blue Book counties (Blue Book page 403, not read).",
+   "evidence_urls": [
+    "https://www.cslb.ca.gov/277769",
+    "https://www.thebluebook.com/iProView/259415/american-sheet-metal-partition-co-inc/material-suppliers/"
+   ],
+   "red_flags": [
+    "Based in Sacramento area, about 165 miles from Fresno",
+    "No company website found; Fresno coverage only from a search summary",
+    "Distributor that supplies products itself"
+   ],
+   "reason": "Licensed (active CSLB C-61/D34) partition company with a long history, but based far from Fresno and partition installation work wasn't seen directly.",
+   "license": {
+    "name": "American Sheet Metal Partition Co., Inc.",
+    "area": "fresno",
+    "status": "found_active",
+    "registry": "California Contractors State License Board (CSLB) license detail",
+    "license_number": "277769",
+    "license_type": "C43 Sheet Metal; C-61/D34 Prefabricated Equipment (corporation)",
+    "source_url": "https://www.cslb.ca.gov/277769",
+    "note": "CSLB record (data current as of 11/19/2026) for AMERICAN SHEET METAL PARTITION CO, Sacramento: 'This license is current and active.' Issued 07/28/1972, expires 05/31/2027. Contractor's bond active (American Contractors Indemnity Company). The workers' comp policy CSLB shows (Middlesex Insurance) expired 10/01/2026, before the data date, so ask for current workers' comp proof. Blue Book lists the company at McClellan. Fresno Business Tax Certificate not checked."
+   },
+   "score": 55
+  },
+  {
+   "name": "Magnum Drywall (Division 10 Specialties)",
+   "added_by_checker": false,
+   "base_city": "San Jose",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "phone": "(408) 600-0422",
+   "email": "estimators@magnumdrywall.com",
+   "contact_page": "https://magnumdrywall.com/contact-us/",
+   "website": "https://magnumdrywall.com/",
+   "partition_evidence": "Website's Division 10 Specialties division says it routinely delivers toilet partitions and accessories, lockers and signage.",
+   "evidence_urls": [
+    "https://magnumdrywall.com/"
+   ],
+   "red_flags": [
+    "Large union commercial finishing contractor focused on GC bids; Fresno/Central Valley not mentioned",
+    "Based about 150 miles away"
+   ],
+   "reason": "Does Division 10 partition work, but it is a San Jose-based large GC subcontractor with no stated Fresno coverage.",
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Toilet Partitions Experts Inc.",
+   "added_by_checker": false,
+   "base_city": "Santa Ana",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "phone": "(714) 909-8855",
+   "email": "sales@toiletpartitionsexperts.com",
+   "contact_page": "https://www.toiletpartitionsexperts.com/contact-us/",
+   "website": "https://www.toiletpartitionsexperts.com/",
+   "partition_evidence": "Website offers toilet partition installations, removals, modifications and service calls; CSLB shows active C-61/D34 license for Toilet Partitions Experts Inc, Santa Ana.",
+   "evidence_urls": [
+    "https://www.toiletpartitionsexperts.com/",
+    "https://www.toiletpartitionsexperts.com/contact-us/",
+    "https://www.cslb.ca.gov/1098283"
+   ],
+   "red_flags": [
+    "Based in Orange County, about 230 miles from Fresno; no Fresno or service area mention",
+    "Thin template site with placeholder project images",
+    "Sells partitions from inventory"
+   ],
+   "reason": "Real licensed partition installer, but in Santa Ana with no sign of Central Valley work.",
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "One Point Partitions",
+   "added_by_checker": false,
+   "base_city": "unknown (Fresno delivery terminal per search summary)",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "partition_evidence": "Search summary of its own pages: nationwide supplier that does not install, only gives installation guidance; lists a Fresno delivery location. Site returned 403, not read directly.",
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=11677"
+   ],
+   "red_flags": [
+    "Seller/manufacturer, not installer: direct competitor",
+    "Website blocked automated access (403); details from search summary only",
+    "Fresno presence is a delivery terminal per search summary, not verified; within_area uncertain"
+   ],
+   "reason": "A partition seller that reportedly does not install; a competitor rather than an installer.",
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "Consolidated Partitions, Inc.",
+   "added_by_checker": false,
+   "base_city": "unknown (site says Northern California/Bay Area; candidate list said Hayward)",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Penco",
+    "Kwik-Wall"
+   ],
+   "contact_page": "https://consolidatedpartitions.com/contact/",
+   "website": "https://consolidatedpartitions.com/",
+   "partition_evidence": "Website covers lockers and folding/operable partitions (Penco, Kwik-Wall); toilet partitions not mentioned.",
+   "evidence_urls": [
+    "https://consolidatedpartitions.com/"
+   ],
+   "red_flags": [
+    "Not a toilet partition business (lockers and operable walls)",
+    "Bay Area, no Fresno mention"
+   ],
+   "reason": "Distributes lockers and folding partitions, not restroom partitions, and serves the Bay Area.",
+   "license": null,
+   "score": 20
+  }
+ ]
+}

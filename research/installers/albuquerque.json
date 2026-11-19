@@ -1,0 +1,239 @@
+{
+ "area": "albuquerque",
+ "found_count": 7,
+ "sources_tried": [
+  "Seed file albuquerque.json: worked. 41 Maps results, mostly remodelers and plumbers. APA Specialties and Division 10 Materials were the relevant ones. Western Partitions turned out to be a drywall/prefab firm from Oregon with an Albuquerque office and no toilet partition work. Plasco Sales is residential shower doors. Fairway is access-control hardware.",
+  "Bobrick locator (bobrick.com/where-to-buy): 404",
+  "ASI Global Partitions find-a-rep: 404",
+  "Scranton Products find-a-rep: 404",
+  "Hadrian sales reps: 404",
+  "Bradley, Metpar, General Partitions, Ampco locators: not tried. The other locator URLs I guessed returned 404, and there were no searches left to find the real locator URLs.",
+  "The Blue Book (thebluebook.com): blocked (403) on profile pages. Search snippets showed only out-of-area firms.",
+  "Procore Network: worked. The NM interior-specialties, Albuquerque compartments-and-cubicles, toilet-bath-accessories and partitions category pages, plus profiles, gave KCS Specialties, Sweep Construction, Hallgren, BuildingInterest and First Mesa. First Mesa is a GC with no toilet partition trade visible, so I excluded it.",
+  "BuildingConnected: not tried (requires sign-in)",
+  "City of Santa Fe subcontractor listing form (PDF): worked. It confirms APA Specialties as the toilet accessories and partitions subcontractor, with NM license no. 379227.",
+  "DexKnows: worked (APA Specialties profile)",
+  "BuildZoom (Install Partners NM, Division 10 lockers/accessories): blocked (403), so it couldn't be verified and isn't included",
+  "Yelp / BBB: no relevant listings surfaced in search. The APA Yelp page appeared in results but wasn't fetched.",
+  "One Point Partitions and toiletpartitions.com: excluded as national online sellers with only an Albuquerque delivery terminal and no local install crew. Their pages also returned 403.",
+  "Southwest Solutions Group (Albuquerque): page truncated. Lockers and shelving only, with no partitions shown, so excluded.",
+  "WebSearch: 8 of 8 calls used. The queries were toilet partition installation Albuquerque; Division 10 contractor; bathroom partition installers Albuquerque and Rio Rancho; Blue Book; lockers and accessories; toilet compartments subcontractor; NM Division 10 with Santa Fe and Rio Rancho; and Yelp/BBB. Search results were dominated by One Point Partitions pages."
+ ],
+ "candidates": [
+  {
+   "name": "Install Partners",
+   "base_city": "Albuquerque (local office; HQ Keene, TX)",
+   "state": "NM",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "added_by_checker": true,
+   "evidence_urls": [
+    "https://www.buildzoom.com/contractor/install-partners-nm-2"
+   ],
+   "partition_evidence": "Search snippet from its BuildZoom profile: an Albuquerque subcontractor experienced with Division 8 and 10 specifications (bathroom accessories, lockers, visual display boards). Partitions not named; the page itself returned 403.",
+   "reason": "A commercial Division 10 installer serving Albuquerque, the only local lead found. Partition installation is unconfirmed and no company website was found, since installpartners.com redirects to an unrelated site.",
+   "red_flags": [
+    "Evidence only from a search snippet; BuildZoom page blocked (403)",
+    "No company website or contact details verified"
+   ],
+   "license": {
+    "name": "Install Partners",
+    "area": "albuquerque",
+    "status": "not_online",
+    "registry": "New Mexico RLD Construction Industries Division license verification (PSI search, public.psiexams.com/search.jsp)",
+    "source_url": "https://public.psiexams.com/search.jsp",
+    "note": "New Mexico requires a state CID license for this work, and Albuquerque issues commercial building permits only to state-licensed general contractors. The official CID lookup is the PSI search, which the RLD 'Verify a License' page links to (https://www.rld.nm.gov/about-us/public-information-hub/verify-a-license/). It needs a captcha for every search, so automated lookup wasn't possible. No license number, classification or status was recorded. Check by hand at the PSI site: Company Type = Contractor, Business Name = 'Install Partners'. Business details are unconfirmed. A BuildZoom listing (https://www.buildzoom.com/contractor/install-partners-nm-2) showed in search results as Install Partners, an Albuquerque subcontractor headquartered in Keene, TX, doing Division 8 and 10 scopes. The page itself returned 403 and couldn't be read, so none of that is confirmed. BuildZoom is a third-party aggregator, not an official registry. No secretary of state entity search was run."
+   },
+   "score": 50
+  },
+  {
+   "name": "Innergy Interiors LLC",
+   "added_by_checker": false,
+   "base_city": "El Paso",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "phone": "915-353-2008",
+   "email": "info@innergyinteriors.com",
+   "contact_page": "https://innergy-interiors.pages.dev/contact/",
+   "website": "https://innergy-interiors.pages.dev/",
+   "evidence_urls": [
+    "https://innergy-interiors.pages.dev/",
+    "https://innergy-interiors.pages.dev/contact/",
+    "https://innergy-interiors.pages.dev/blog/interior-finishes-commercial-renovation-new-mexico/"
+   ],
+   "partition_evidence": "Home page says it supplies and installs Division 10, including 'Toilet accessories, partitions, signage'. Its New Mexico blog lists partitions installed in the finishes sequence.",
+   "reason": "A commercial Division 10 supplier and installer that says it is active in NM. It is based in El Paso, about 230 miles away, far outside the 30-mile radius. If out-of-area firms that serve NM statewide are acceptable, reconsider it as possible.",
+   "red_flags": [
+    "Based ~230 mi away in El Paso",
+    "Supplies partitions itself (buy-around risk)",
+    "Site hosted on a pages.dev subdomain; no named projects",
+    "License numbers shown for AZ, El Paso, CO and WA, none for New Mexico CID"
+   ],
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Sweep Construction, Inc.",
+   "added_by_checker": false,
+   "base_city": "Albuquerque",
+   "state": "NM",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "phone": "+1 505-881-1461",
+   "website": "www.sweepconstruction.com",
+   "review_source": "Houzz",
+   "review_count": 0,
+   "evidence_urls": [
+    "https://www.houzz.es/profesionales/albaniles/sweep-construction-inc-pfvwus-pf~1260752302"
+   ],
+   "partition_evidence": "Houzz profile lists custom closets, tile and interior door installation only; no partitions.",
+   "reason": "A general builder for commercial and residential work, with NAHB and HBA of Central New Mexico memberships. Nothing shows toilet partition or Division 10 work.",
+   "red_flags": [
+    "Residential-builder associations; no partition evidence"
+   ],
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "The Hallgren Company",
+   "added_by_checker": false,
+   "base_city": "Albuquerque (branch; HQ Lubbock, TX)",
+   "state": "NM",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "email": "info@hallgrenco.com",
+   "website": "http://hallgrenco.com/",
+   "contact_page": "http://hallgrenco.com/contactus.htm",
+   "brands": [
+    "Sargent",
+    "McKinney",
+    "Norton",
+    "Rixson",
+    "Yale",
+    "Corbin-Russwin",
+    "Curries",
+    "Graham",
+    "Algoma",
+    "Best Access",
+    "DCI",
+    "National Guard",
+    "Pemko",
+    "Rockwood",
+    "Rocky Mountain Metals"
+   ],
+   "evidence_urls": [
+    "http://hallgrenco.com/index.htm"
+   ],
+   "partition_evidence": "Home page covers doors, frames, hardware, millwork and 'other building specialties'; toilet partitions aren't mentioned.",
+   "reason": "A commercial distributor of doors, frames and hardware with an Albuquerque office. Its site shows no partition installation, and it is a distributor rather than an installer.",
+   "red_flags": [
+    "Distributor, not installer"
+   ],
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "APA Specialties LLC",
+   "added_by_checker": false,
+   "base_city": "Albuquerque",
+   "state": "NM",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(505) 224-9833",
+   "contact_page": "https://www.apaspecialties.com/contact-us",
+   "website": "https://www.apaspecialties.com/",
+   "evidence_urls": [
+    "https://www.apaspecialties.com/",
+    "https://www.apaspecialties.com/gallery",
+    "https://www.apaspecialties.com/contact-us"
+   ],
+   "partition_evidence": "Site describes a stocking distributor of toilet partitions and accessories; no installation service mentioned on home, gallery or contact pages.",
+   "reason": "A local stocking distributor that sells toilet partitions but shows no installation services. It would be a competitor and a buy-around risk, not an installer.",
+   "red_flags": [
+    "Sells partitions itself (competitor/buy-around risk)",
+    "No installation services listed",
+    "Gallery page unfinished",
+    "Listed emails are personal-name addresses (one AOL), so they were left out"
+   ],
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "KCS Specialties",
+   "added_by_checker": false,
+   "base_city": "Albuquerque",
+   "state": "NM",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "reason": "Two searches found no website, listing or other trace of a business by this name in Albuquerque or New Mexico, so it couldn't be verified.",
+   "red_flags": [
+    "No web presence found"
+   ],
+   "evidence_urls": [],
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Division 10 Materials, Inc.",
+   "added_by_checker": false,
+   "base_city": "Albuquerque",
+   "state": "NM",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "website": "http://www.division10materials.com/",
+   "evidence_urls": [
+    "http://www.division10materials.com/"
+   ],
+   "reason": "The website returned HTTP 503, and a search for the name in Albuquerque found nothing. The business could not be verified and may be closed. The name suggests a materials supplier, which would be a buy-around risk.",
+   "red_flags": [
+    "Website down (503)",
+    "No search results for the name",
+    "Name suggests a supplier"
+   ],
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "BuildingInterest Construction, LLC",
+   "added_by_checker": false,
+   "base_city": "Los Lunas",
+   "state": "NM",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "website": "http://BuildingInterestconstruction.com",
+   "evidence_urls": [],
+   "reason": "The website's host did not resolve from this session. It may not exist, or it may be blocked by the session's network settings. Nothing about partition work could be verified.",
+   "red_flags": [
+    "Website could not be reached (DNS failure; buildinginterestconstruction.com may need to be allowed in network settings)"
+   ],
+   "license": null,
+   "score": 10
+  }
+ ]
+}
