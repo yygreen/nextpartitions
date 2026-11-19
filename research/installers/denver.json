@@ -1,7 +1,22 @@
 {
  "area": "denver",
- "found_count": 11,
+ "found_count": 20,
  "sources_tried": [
+  "Seed file research/installers/raw/seeds/denver.json: worked (mostly remodelers/glass shops; web results are google goto links without domains, so MidWest Partitions and Partition Concepts could not be resolved from it)",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads but rep list is a JS dropdown, no Colorado result readable",
+  "Hadrian where-to-buy (hadrian-inc.com/en/where-to-buy): 404",
+  "Scranton Products find-a-distributor: 404",
+  "Bradley find-a-rep: no content returned",
+  "ASI, Metpar, General Partitions, Ammco locators: not tried (search cap / prior locators unusable)",
+  "The Blue Book (thebluebook.com iProView pages): 403 blocked",
+  "BuildingConnected / Procore public profiles: not tried (search cap)",
+  "WebSearch (8 of 8 used): worked but results dominated by online sellers (One Point Partitions, Sustainable Supply, Newton Distributing); One Point Partitions pages 403 and it has only delivery terminals in CO, so skipped",
+  "Innergy Interiors (innergy-interiors.pages.dev): says it installs Division 10 incl. toilet partitions in CO but is based in El Paso TX (beyond 120 mi), skipped",
+  "Midwest Partitions (midwestpartitions.com): Thedford NE drywall/framing contractor, no toilet partitions, skipped",
+  "Craigslist job posts (Colorado/Wyoming toilet partition installer wanted): 404, poster unknown",
+  "Yext/location.com and MapQuest listings for Simpson & Simpson: 404 / host not resolvable (phoenix-0af34b1.aws.mapquest.com outside allowed network); only search snippets read",
+  "BBB / Yelp: no pages surfaced in search",
+  "Company sites checked and rejected: Division One Construction (no partition work), RK Industries (mechanical/electrical), Zavala Drywall (residential drywall/remodel), Southwest Solutions Group (lockers/shelving, page truncated)",
   "Seed file denver.json (maps + web): worked; plausible leads opened, most entries were remodelers, glass shops and showrooms (skipped)",
   "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but rep list loads dynamically, no Colorado result",
   "Scranton Products where-to-buy: worked, only a regional product specialist (Architectural Cornerstone Group, 972 number, not local)",
@@ -219,6 +234,26 @@
    "score": 35
   },
   {
+   "name": "Drywall Partitions Inc",
+   "base_city": "Arvada",
+   "state": "CO",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "website": "https://drywallpartitions.com/",
+   "contact_page": "https://drywallpartitions.com/contact/",
+   "partition_evidence": "A commercial drywall and tenant-finish firm; 'partitions' means drywall walls. No toilet partitions mentioned.",
+   "evidence_urls": [
+    "https://drywallpartitions.com/"
+   ],
+   "reason": "A drywall contractor, not a toilet partition installer.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
    "name": "Rio Grande Co. (partitions department)",
    "added_by_checker": false,
    "base_city": "Denver",
@@ -331,6 +366,24 @@
    "reason": "General contractor whose site shows no toilet partition installation.",
    "license": null,
    "score": 30
+  },
+  {
+   "name": "Partition Concepts",
+   "base_city": "Parker",
+   "state": "CO",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "evidence_urls": [],
+   "red_flags": [
+    "No website or listing found for this name in Parker, CO"
+   ],
+   "reason": "A web search found no business by this name, so it couldn't be verified as real.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
   },
   {
    "name": "Euro Style Systems",

@@ -1,7 +1,20 @@
 {
  "area": "san-francisco",
- "found_count": 9,
+ "found_count": 21,
  "sources_tried": [
+  "Seed file research/installers/raw/seeds/san-francisco.json: worked; Maps entries used; web entries had only encrypted Google goto links, no domains",
+  "Company websites: rebarber.net, magnumdrywall.com, tphsupply.com, repcold.com, servicemetalproducts.com, stumbaugh.com, jdspecialtiesco.com, demarspecialties.com, prowestwall.com, consolidatedpartitions.com, psi3g.com: worked (asmp-div10.com 503; stumbaugh products page and repcold toilet-partitions page 404)",
+  "Excluded after reading: Partition Specialties Inc (psi3g.com, operable walls/access floors), Consolidated Partitions (lockers and folding partitions, no toilet partitions mentioned), One Point Partitions (online supplier, DIY install)",
+  "Hadrian find-a-rep: 404",
+  "ASI Global Partitions find-a-rep: 404",
+  "Bobrick where-to-buy: 404",
+  "Scranton, Bradley, Metpar, General Partitions, Ampco locators: not tried this run (earlier project run found Scranton lists only a regional rep, Bradley empty)",
+  "The Blue Book: 403 on all fetches; only search snippets seen",
+  "Procore network: search found no Bay Area toilet-partition profiles",
+  "BuildingConnected: not reached",
+  "Yelp/BBB: no relevant listings surfaced",
+  "WebSearch: 8 of 8 used",
+  "constructioninfocus.com article on Stumbaugh: worked",
   "Seed file san-francisco.json: worked. Plausible Maps entries opened. Partition Specialties Inc (psi3g.com) does operable walls and access floors, not toilet partitions, so it was excluded. Service Metal Products' site came back empty. Division General Building is residential remodeling, so it was excluded.",
   "Bobrick rep locator (bobrick.com/find-a-representative): 404, not found.",
   "Scranton Products where-to-buy: worked, but it lists only a regional rep (John McKeon, CA and the western states) and no local dealers or installers.",
@@ -14,6 +27,158 @@
   "constructioninfocus.com article on Stumbaugh: worked."
  ],
  "candidates": [
+  {
+   "name": "Magnum Drywall (Division 10 Specialties team)",
+   "base_city": "San Jose",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "nearby",
+   "brands": [
+    "Bobrick (accessories)"
+   ],
+   "phone": "(408) 600-0422",
+   "email": "estimators@magnumdrywall.com",
+   "contact_page": "https://magnumdrywall.com/contact-us/",
+   "website": "https://magnumdrywall.com/",
+   "evidence_urls": [
+    "https://magnumdrywall.com/",
+    "https://magnumdrywall.com/division-10-specialties/"
+   ],
+   "partition_evidence": "Division 10 page: works with clients to 'specify and install toilet partitions'; Malwarebytes office in Santa Clara included toilet partitions.",
+   "reason": "Union commercial contractor in San Jose whose Division 10 team installs toilet partitions throughout California, with a Bay Area project named.",
+   "red_flags": [
+    "Large drywall GC-type sub; partitions are a side line, may prefer large GC bids"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Magnum Drywall (Division 10 Specialties team)",
+    "area": "san-francisco",
+    "status": "found_active",
+    "registry": "California CSLB license detail (cslb.ca.gov/<license number>)",
+    "license_number": "614200",
+    "license_type": "B General Building; C-9 Drywall; C-61/D34 Prefabricated Equipment; also C-33, C-35, C-61/D50, C-61/D52",
+    "source_url": "https://www.cslb.ca.gov/614200",
+    "note": "License number 'CA License: #614200' is in the footer of magnumdrywall.com. CSLB record (current as of 11/19/2026): MAGNUM DRYWALL INC, San Jose; current and active; issued 03/04/1991, expires 03/31/2027; bond on file; workers' comp active to 03/01/2027. SF DBI registration not checked."
+   },
+   "score": 85
+  },
+  {
+   "name": "Service Metal Products Inc",
+   "base_city": "unknown (510 area code; Google Maps seed says Oakland, not confirmed on site)",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(510) 568-0888",
+   "contact_page": "https://servicemetalproducts.com/contact/",
+   "website": "http://servicemetalproducts.com/",
+   "evidence_urls": [
+    "http://servicemetalproducts.com/"
+   ],
+   "partition_evidence": "Homepage: sale and installation of Division 10 building specialties including restroom partitions, lockers, wall protection, since 1981.",
+   "reason": "Sells and installs restroom partitions for the construction industry in the greater California area; 510 phone points to the East Bay, though the site does not state a city.",
+   "red_flags": [
+    "Sells partitions itself (buy-around risk)",
+    "Office city not stated on site; contact and about pages returned no readable content"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Service Metal Products Inc",
+    "area": "san-francisco",
+    "status": "found_active",
+    "registry": "California CSLB license detail (cslb.ca.gov/<license number>)",
+    "license_number": "439097",
+    "license_type": "C-61/D24 Metal Products; C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/439097",
+    "note": "CSLB record (current as of 11/19/2026): SERVICE METAL PRODUCTS INC, Oakland CA (confirms the Oakland base city); current and active; issued 04/26/1983, expires 04/30/2027; bond on file; workers' comp active to 10/01/2027. Company site shows no license number. SF DBI registration not checked."
+   },
+   "score": 85
+  },
+  {
+   "name": "Stumbaugh & Associates, Inc. (Northern California office)",
+   "base_city": "West Sacramento",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "(650) 999-0700",
+   "email": "Estimating@stumbaugh.com",
+   "contact_page": "https://stumbaugh.com/contact",
+   "website": "https://stumbaugh.com/",
+   "evidence_urls": [
+    "https://stumbaugh.com/",
+    "https://stumbaugh.com/contact"
+   ],
+   "partition_evidence": "Homepage: professional installation services for bathroom partitions; calls itself the largest provider of restroom partitions and accessories in California.",
+   "reason": "Statewide restroom partition provider with installation and a Northern California office (650 phone); no Fremont or Bay Area office listed on contact page.",
+   "red_flags": [
+    "Sells partitions itself, including material-only purchases (buy-around risk)",
+    "Northern CA office is West Sacramento, about 75 miles away"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Stumbaugh & Associates, Inc. (Northern California office)",
+    "area": "san-francisco",
+    "status": "found_active",
+    "registry": "California CSLB license detail (cslb.ca.gov/<license number>)",
+    "license_number": "288724",
+    "license_type": "C-61/D24 Metal Products; C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/288724",
+    "note": "CSLB record (current as of 11/19/2026): Stumbaugh & Associates Inc, Burbank CA (license address is the LA corporate office; stumbaugh.com lists a West Sacramento Northern California office); current and active; issued 11/19/1973, expires 04/30/2028; bond on file; workers' comp active to 03/01/2027. SF DBI registration not checked."
+   },
+   "score": 78
+  },
+  {
+   "name": "Pro West Wall Products",
+   "base_city": "West Sacramento",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [
+    "CS",
+    "Inpro",
+    "Bradley",
+    "Crane",
+    "Panolam",
+    "LSP"
+   ],
+   "phone": "(916) 572-0742",
+   "contact_page": "https://www.prowestwall.com/contact",
+   "website": "https://www.prowestwall.com/",
+   "evidence_urls": [
+    "https://www.prowestwall.com/"
+   ],
+   "partition_evidence": "Homepage services list includes toilet partitions and accessories; 'single source provider and installer'.",
+   "reason": "Installs toilet partitions for commercial markets, but it is about 75 miles away and its site does not say it serves the Bay Area.",
+   "red_flags": [
+    "Service area not stated",
+    "Only email shown is a personal staff address (omitted)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Pro West Wall Products",
+    "area": "san-francisco",
+    "status": "found_active",
+    "registry": "California CSLB license detail (cslb.ca.gov/<license number>)",
+    "license_number": "1014800",
+    "license_type": "B General Building; C-61/D12 Synthetic Products",
+    "source_url": "https://www.cslb.ca.gov/1014800",
+    "note": "CSLB record (current as of 11/19/2026): PRO WEST WALL PRODUCTS INC, West Sacramento CA; current and active; issued 06/03/2016, expires 09/30/2027; bond on file; workers' comp active to 07/19/2027. No D34 (Prefabricated Equipment) class, but holds B General Building. Company site shows no license number; number found via a search result pointing to prelien.co. SF DBI registration not checked."
+   },
+   "score": 75
+  },
   {
    "name": "Rebarber Enterprises",
    "added_by_checker": false,
@@ -179,6 +344,39 @@
    "score": 60
   },
   {
+   "name": "Commercial Specialties Contracting, Inc.",
+   "base_city": "Manteca (per Blue Book search snippet; not verified)",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/807564/commercial-specialties-contracting-inc/material-suppliers/"
+   ],
+   "partition_evidence": "Search snippet of Blue Book listing (page blocked): installer of doors and specialties, spec code 10 28 13.13 toilet accessories; no partition code (10 21 13).",
+   "reason": "Specialties installer with toilet accessories listed but no partition evidence; listed work areas are Central Valley and Tri-Valley, not SF.",
+   "red_flags": [
+    "No website found",
+    "Blue Book page blocked (403); facts from search snippets only",
+    "No toilet partition code listed"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Commercial Specialties Contracting, Inc.",
+    "area": "san-francisco",
+    "status": "found_active",
+    "registry": "California CSLB license detail (cslb.ca.gov/<license number>)",
+    "license_number": "938817",
+    "license_type": "B General Building; C-61/D28 Doors, Gates and Activating Devices",
+    "source_url": "https://www.cslb.ca.gov/938817",
+    "note": "CSLB record (current as of 11/19/2026) spells the name COMMERCIAL SPECIALITIES CONTRACTING INC, Manteca CA (confirms Manteca); current and active; issued 10/14/2009, expires 07/31/2028; bond on file; workers' comp listed with State Fund, expiring 12/01/2026 (recheck soon). No D34 class; holds B General Building. A third-party listing showed an older 07/31/2026 expiry, but the CSLB record shows 07/31/2028. SF DBI registration not checked."
+   },
+   "score": 58
+  },
+  {
    "name": "Stumbaugh & Associates, Inc.",
    "added_by_checker": false,
    "base_city": "West Sacramento",
@@ -216,6 +414,40 @@
    "score": 55
   },
   {
+   "name": "American Sheet Metal Partition Co., Inc.",
+   "base_city": "unknown (Sacramento per earlier research; not verified)",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "website": "http://www.asmp-div10.com/",
+   "evidence_urls": [
+    "http://www.asmp-div10.com/",
+    "https://thebluebook.com/iProView/259415/american-sheet-metal-partition-co-inc/material-suppliers"
+   ],
+   "partition_evidence": "None read directly; website returned 503 on http and https. A search summary of its Blue Book listing says it serves Santa Clara and Sacramento counties.",
+   "reason": "Name and Division 10 domain suggest a partition specialist, but the website is down and nothing could be verified.",
+   "red_flags": [
+    "Website returns 503 (may be closed or down)",
+    "No verified facts"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "American Sheet Metal Partition Co., Inc.",
+    "area": "san-francisco",
+    "status": "found_active",
+    "registry": "California CSLB license detail (cslb.ca.gov/<license number>)",
+    "license_number": "277769",
+    "license_type": "C-43 Sheet Metal; C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/277769",
+    "note": "CSLB record (current as of 11/19/2026): AMERICAN SHEET METAL PARTITION CO, Sacramento CA (confirms Sacramento); 'This license is current and active'; issued 07/28/1972, expires 05/31/2027; bond on file. Caution: the workers' comp policy shown expired 10/01/2026, though the license still shows active; recheck. Company site asmp-div10.com returned HTTP 503. SF DBI registration not checked."
+   },
+   "score": 18
+  },
+  {
    "name": "Demar Specialties, LLC",
    "added_by_checker": false,
    "base_city": "Manteca",
@@ -246,8 +478,17 @@
     "No phone or email on the site (form only)"
    ],
    "reason": "A real commercial partition installer, but based in Manteca, outside the 30-mile area. It serves Northern and Central California, so it is worth a fallback note.",
-   "license": null,
-   "score": 60
+   "license": {
+    "name": "Demar Specialties, LLC",
+    "area": "san-francisco",
+    "status": "found_active",
+    "registry": "California CSLB license detail (cslb.ca.gov/<license number>)",
+    "license_number": "1062277",
+    "license_type": "C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/1062277",
+    "note": "License number shown in demarspecialties.com header ('CA License #1062277 - dba Demar Prefabricated Equipment | NV License #0086118'). CSLB record (current as of 11/19/2026): DEMAR SPECIALTIES LLC dba DEMAR PREFABRICATED EQUIPMENT, Ripon CA (not Manteca); current and active; issued 01/13/2020, expires 01/31/2028; contractor's and LLC worker bonds active; workers' comp listed with State Fund, policy expiring 12/07/2026 (soon; recheck). SF DBI registration not checked."
+   },
+   "score": 75
   },
   {
    "name": "J D Specialties",
@@ -276,7 +517,16 @@
     "Stocking distributor of Bobrick and Hadrian partitions, so it is a buy-around risk"
    ],
    "reason": "It installs commercial toilet partitions but is based in Stockton, well outside the area.",
-   "license": null,
+   "license": {
+    "name": "J D Specialties",
+    "area": "san-francisco",
+    "status": "found_inactive",
+    "registry": "California CSLB license detail (cslb.ca.gov/<license number>)",
+    "license_number": "798303",
+    "license_type": "C-61/D24 Metal Products; C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/798303",
+    "note": "CSLB record (current as of 11/19/2026): HAUAN & AREGIS INC dba J D SPECIALTIES, Acampo CA. Status SUSPENDED: 'License is under suspension for failure to comply with Workers Comp' (listed workers' comp policy expired 06/16/2026). Expires 08/31/2027. Match to jdspecialtiesco.com (which says Stockton, shows no license number) is by dba name and region only, not confirmed; number found via a search result pointing to prelien.co. Do not list unless the suspension is cleared and the match confirmed."
+   },
    "score": 60
   },
   {
@@ -330,8 +580,17 @@
     "Central Valley base"
    ],
    "reason": "Could not be verified from its own site. The only evidence is a directory snippet that points to a Central Valley base outside the area.",
-   "license": null,
-   "score": 0
+   "license": {
+    "name": "Delta Specialties Inc.",
+    "area": "san-francisco",
+    "status": "found_active",
+    "registry": "California CSLB license detail (cslb.ca.gov/<license number>)",
+    "license_number": "932844",
+    "license_type": "C-17 Glazing; C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/932844",
+    "note": "CSLB record (current as of 11/19/2026): DELTA SPECIALTIES INC, Lodi CA (confirms Lodi); current and active; issued 05/19/2009, expires 05/31/2027; bond on file; workers' comp active to 08/15/2027. No company website given. SF DBI registration not checked."
+   },
+   "score": 15
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "area": "atlanta",
- "found_count": 9,
+ "found_count": 21,
  "sources_tried": [
   "WebSearch (all queries: 'toilet partition installation Atlanta GA contractor', 'Division 10 specialties contractor Atlanta', 'bathroom partition installers Marietta/Alpharetta/Roswell GA'): BLOCKED, the shared 200-search budget for this turn was already used up by other agents. No searches ran. A follow-up run is needed once the budget resets or CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION is raised.",
   "Bobrick Find a Rep (https://www.bobrick.com/find-a-rep): page loaded, but the results come from a dropdown that wasn't in the fetched content. No Georgia rep, dealer or installer could be read.",
@@ -11,6 +11,20 @@
   "BuildingConnected / Procore network: not tried, because search was unavailable and both services need a sign-in for most listings.",
   "Google business listings, Yelp, BBB: not tried, because they're reached through web search, which was out of budget.",
   "Repo check (/home/user/nextpartitions): no earlier Atlanta installer prospect data found. Only research/local-rules/cities.json mentions Atlanta.",
+  "Seed file research/installers/raw/seeds/atlanta.json: worked (47 Maps and 26 web results; most were remodelers, glass shops and stores)",
+  "Company sites: worked for Restroom Stalls And All, Accessories Unlimited, Mason Hall, Cain Sales, InEx Systems, Partitions Inc (a commercial GC with no toilet partition work shown, left out), JSC Ltd (handyman with no partition work, left out) and Terminus Specialties. Atlanta Sunbelt Products and jmspecialties.com returned 503",
+  "Bobrick find-a-rep: the page loaded, but the rep list sits behind a dropdown and no Georgia rep came back",
+  "Scranton Products find-a-rep: 404. ASI, Bradley, Hadrian, Metpar, General Partitions and Ampco locators were not tried because of time and the search cap",
+  "The Blue Book: every page returned 403. Two Georgia profiles (Division 10 Specialties South, Acousti Doors) were seen only through search summaries",
+  "BuildingConnected and Procore: not tried",
+  "onepointpartitions.com: 403 (it looks like a manufacturer or distributor that doesn't install, so it was left out)",
+  "members.ghcc.com: 403",
+  "BBB GA Partitions category pages (bbb.org/us/ga/category/partition and the morrow page): worked, giving Georgia Accessories, RA Installation, Prestige Distributors and others",
+  "Superpages listing for Restroom Stalls And All: worked",
+  "prestigedistribution.com installers page: worked, but it names no Georgia installers",
+  "Allegheny Construction Specialties (acs.pairsite.com): worked, but it is based in Nashville, outside the 120-mile range, so it was left out",
+  "MapQuest host phoenix-0af34b1.aws.mapquest.com: did not resolve (blocked by the session network)",
+  "WebSearch: all 8 allowed calls used",
   "Seed file research/installers/raw/seeds/atlanta.json: WORKED. 47 maps results and 26 web results. The web results had only google.com/goto redirect URLs with no domains, so I couldn't use them. I opened the plausible maps websites. Partitions Inc (partitionsgc.com) is a commercial GC and restoration firm with no toilet partition work shown, so I left it out. JSC Ltd. Co. is a handyman with no partition work. Atlanta Sunbelt Products (Winder) is a manufacturer and its site returned 503. The rest were remodelers, glass shops and stores.",
   "Scranton Products Where to Buy (https://www.scrantonproducts.com/where-to-buy/): WORKED. The only GA entry is a sales rep agency, Southern States Architectural Sales (678.425.8796), with no installer or dealer listed.",
   "Hadrian where-to-buy, Metpar find-a-rep, General Partitions representatives: all returned 404 at the URLs I tried.",
@@ -319,6 +333,99 @@
    "added_by_checker": false,
    "license": null,
    "score": 10
+  },
+  {
+   "name": "RA Installation & Services",
+   "base_city": "Ellenwood",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "partition_evidence": "Search results show BBB listings under Partitions, Office Supplies and Office Furniture Installation, which suggests office cubicle and furniture installation, not toilet partitions.",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://www.bbb.org/us/ga/sardis/category/partition"
+   ],
+   "red_flags": [
+    "No website",
+    "Directory phone numbers conflict",
+    "Its category points to office furniture, not restrooms"
+   ],
+   "reason": "I found no evidence of restroom partition installation. Its listings point to office furniture work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Prestige Distributors Inc",
+   "base_city": "Riverdale",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "partition_evidence": "Only BBB category listings under 'Partitions' with inconsistent addresses were surfaced in search results; no website found.",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://www.bbb.org/us/ga/category/partition"
+   ],
+   "red_flags": [
+    "No website",
+    "Addresses differ across listings (Riverdale, Ellenwood, Tucker)",
+    "Not to be confused with Prestige Distribution, Inc. (Northbrook, IL)"
+   ],
+   "reason": "Apart from directory listings, I found no evidence of its services.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Acousti Doors & Specialties",
+   "base_city": "Lithia Springs",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "partition_evidence": "A Blue Book subcontractor listing (seen via search; the page returned 403) says it spun off from Acousti Inc.'s specialty department in 2007 and handles service and installation; toilet partitions are not mentioned.",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/800181/acousti-doors-specialties/subcontractors/"
+   ],
+   "red_flags": [
+    "No website found",
+    "Partition work unconfirmed"
+   ],
+   "reason": "A specialty subcontractor near Atlanta, but nothing I read shows toilet partition work. Worth a phone check.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Division 10 Specialties South",
+   "base_city": "Trion",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "partition_evidence": "A Blue Book listing (seen via search; the page itself returned 403) describes a material supplier whose owner comes from waste and sanitation, serving Chattooga County; partitions are not mentioned.",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/1634624/division-10-specialties-south/material-suppliers/"
+   ],
+   "red_flags": [
+    "Listed as a material supplier with a local (Chattooga County) service area about 85 miles from Atlanta"
+   ],
+   "reason": "I found no partition installation evidence, and it says it serves northwest Georgia, not Atlanta.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
   }
  ]
 }

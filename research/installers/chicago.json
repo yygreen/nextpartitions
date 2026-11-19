@@ -1,6 +1,6 @@
 {
  "area": "chicago",
- "found_count": 7,
+ "found_count": 11,
  "sources_tried": [
   "WebSearch: BLOCKED. The turn's shared budget of 200 web searches was already used up before this agent started, so none of the step 3/4 web searches ran ('toilet partition installation Chicago', Division 10 Chicago, Naperville/Schaumburg). Rerun this area once the search budget resets, or raise CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION.",
   "Bobrick find-a-rep (bobrick.com/find-a-rep/): reached, but results load from a dropdown dynamically; no Illinois reps in the static page",
@@ -17,6 +17,20 @@
   "BuildingConnected / Procore network: not tried (no search available to find profile URLs)",
   "chicagotoiletpartitions.com: redirects to app.toiletpartitions.com, which showed a page title only, with no location or installer information; not recorded",
   "partitionsandaccessories.com: 503; bathroompartitions.com: DNS not resolvable",
+  "Seed file research/installers/raw/seeds/chicago.json: read. Plausible entries opened: Prestige Distribution and Commercial Specialties are relevant. SelectSpace makes outdoor partitions. Chicago Toilet Partitions (toiletpartitions.com) is a national online seller run by Fry Specialty with no confirmed Chicago base, so skipped. Privacy Plus Partitions in Elgin is a manufacturer (Gerali Custom Design), so skipped. ASI Accurate in Burr Ridge is a manufacturer, so skipped. The rest were glass shops, remodelers and stores.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): the rep list loads dynamically, so no results were readable.",
+  "Hadrian sales rep locator: the page shows only empty template placeholders, so no data.",
+  "Scranton Products find-product-specialist: worked, but it lists only an individual rep covering IL/IN (no company), so not recorded.",
+  "Metpar /reps and General Partitions /find-a-rep: 404. No locator links found on the Metpar, General Partitions or ASI Global homepages. Ammco site: proxy 502.",
+  "Bradley locator: not reached.",
+  "The Blue Book (thebluebook.com iProView pages): 403 blocked.",
+  "BuildingConnected / Procore: not tried, since their profiles need sign-in.",
+  "WebSearch: 8 of 8 used. The searches were 'toilet partition installation Chicago', 'Division 10 specialties contractor Chicago', suburbs (Naperville, Schaumburg, Arlington Heights, Evanston), 'restroom partitions installer Illinois', D&B Installers, suburbs (Elk Grove, Itasca, Joliet, Lombard), and NW Indiana (Hammond, Gary, Merrillville). Results were mostly national sellers (One Point Partitions, Newton Distributing) and spec documents.",
+  "BBB category pages (Cicero, Lisle, Joliet partition categories): worked. They led to D&B Installers. Modernfold Chicago (Carol Stream) was also listed, but its site is Cloudflare-blocked, so toilet partition work is unconfirmed and it was left out.",
+  "MapQuest listings: worked (Partition Pros; Installation Specialists Inc in Itasca does furniture and walls, no partitions, so left out).",
+  "CISLeads: worked. It turned up Modulex Partition Corp, which is based in Hillside NJ and out of area, so left out.",
+  "Consumers Supply Company (Chicago Hadrian dealer): sells only; its FAQ says customers hire their own installer, so left out.",
+  "Yelp search: 403 blocked.",
   "Seed file chicago.json: worked. Of 57 Maps and 18 web results, most were shower-glass shops, remodelers or stores. Opened Privacy Plus Partitions (Elgin): a Corian partition manufacturer, skipped. Opened toiletpartitions.com ('Chicago Toilet Partitions'): a national online seller run by Fry Specialty Co., skipped. Opened SelectSpace Partitions: outdoor patio partitions, skipped. ASI Accurate Partitions (Burr Ridge) is a manufacturer plant, skipped.",
   "Bobrick find-a-rep: page loads but results are dynamic and empty, so it didn't work.",
   "Scranton Products find-a-rep: 404.",
@@ -275,6 +289,33 @@
    "added_by_checker": false,
    "license": null,
    "score": 25
+  },
+  {
+   "name": "D&B Installers Inc.",
+   "base_city": "Bourbonnais",
+   "state": "IL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "phone": "(815) 939-1545",
+   "rating": 0,
+   "review_source": "BBB (A+ letter grade, not accredited; no review count shown)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/il/joliet/category/partition"
+   ],
+   "red_flags": [
+    "No website found.",
+    "BBB categories are Lockers, Storage Units and Wholesale Industrial Products, with nothing about toilet partitions.",
+    "Bourbonnais is about 50 miles from the area center, and there's no statement that it serves Chicago.",
+    "The BBB rating is a letter grade (A+), not a star rating; the 0 is a placeholder."
+   ],
+   "partition_evidence": "Appears only in BBB 'Partition' category search results; its own categories are lockers and storage units.",
+   "reason": "Nothing shows toilet partition installation: there's no website, and BBB lists only lockers, storage and wholesale industrial products. It may be a locker installer worth a phone check, but as researched it doesn't qualify.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 3
   }
  ]
 }

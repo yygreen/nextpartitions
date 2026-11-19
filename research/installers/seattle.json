@@ -1,7 +1,23 @@
 {
  "area": "seattle",
- "found_count": 9,
+ "found_count": 17,
  "sources_tried": [
+  "Seed file research/installers/raw/seeds/seattle.json: worked. Maps results gave NWBLDS, Li'l Chief, Building Specialties NW, Wind NW, Northwest Partitions, Western Partitions and Seattle Interiors. Web results were opaque google.com/goto links and weren't used. Most Maps entries were remodelers and showrooms.",
+  "Bobrick find-a-rep: the page loaded but the rep dropdown wasn't in the fetched text. The Bobrick Vashon Island HS case study PDF worked: Wind NW is the rep and Barclay Dean the installing distributor.",
+  "Scranton Products find-a-rep: 404. The Scranton UW Aria case study PDF worked: Barclay Dean (Bothell) is the supplier.",
+  "ASI (asi-globalpartitions.com/find-a-rep): 404.",
+  "Hadrian find-a-rep: 404.",
+  "General Partitions find-a-rep: 404.",
+  "Bradley find-a-rep: only the page title came back, no rep data.",
+  "Metpar, Ampco/Ammco: not reached.",
+  "The Blue Book: profiles found through search (N.W. Building Specialties Inc, Green Latrine, Partition Plus) return 403 to fetches. A snippet said N.W. Building Specialties supplies and installs Division 10 for greater Seattle, probably the same firm as NWBLDS (not confirmed).",
+  "BuildingConnected / Procore: not reached.",
+  "Web search: 8 of 8 used. Southwest Solutions Group was the only new installer, from snippets only: its pages return 404 or truncated text. Not included: One Point Partitions (supplier with Everett/Kent/Auburn delivery terminals; WA page 403), Prestige Distribution (national), Innergy Interiors (El Paso TX), Unified Specialty Services (NJ, no WA office found).",
+  "Yelp / BBB: no relevant partition-installer pages in the search results.",
+  "DJC Specialty Contractor Guide PDF: read; it lists no Division 10 partition firm.",
+  "Facilitiesnet Vashon case study: doesn't name the installer.",
+  "Western Partitions (wpibuilds.com): read; no toilet partitions or Division 10, so excluded.",
+  "barclaydean.com: 503 / proxy tunnel errors.",
   "Seed file seattle.json: worked. Its Maps results gave NWBLDS, Li'l Chief, Building Specialties NW, Wind NW, Northwest Partitions, Western Partitions and Seattle Interiors. Its web results were mostly opaque google.com/goto links and weren't used.",
   "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but its rep dropdown isn't in the fetched text, so no result. The Bobrick Vashon Island case study PDF worked: it names Wind NW (rep) and Barclay Dean (installing distributor).",
   "Scranton Products find-a-rep: 404 at the URL tried.",
@@ -245,6 +261,54 @@
     "license_type": "Construction Contractor, specialty GENERAL",
     "source_url": "https://data.wa.gov/resource/m8qx-ubtq.json?contractorlicensenumber=NORTHPI169QA",
     "note": "L&I record: NORTHWEST PARTITIONS INC (corporation), Woodinville WA, UBI 600456915, status ACTIVE, registered since 1984-11-01, expires 2027-11-15."
+   },
+   "score": 65
+  },
+  {
+   "name": "Zesbaugh, Inc.",
+   "base_city": "Marysville",
+   "state": "WA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Global Steel",
+    "Hadrian",
+    "Ironwood",
+    "Jacknob",
+    "Metpar",
+    "Scranton Products"
+   ],
+   "website": "https://zesbaugh.com/",
+   "phone": "(206) 547-1900; toll free (877) 340-6020",
+   "contact_page": "https://zesbaugh.com/contactus/",
+   "evidence_urls": [
+    "https://zesbaugh.com/",
+    "https://zesbaugh.com/about-us/",
+    "https://zesbaugh.com/division-10/",
+    "https://zesbaugh.com/division-10-manufacturers/",
+    "https://zesbaugh.com/contactus/"
+   ],
+   "partition_evidence": "Calls itself a 'Specialty Commercial Subcontractor & Distributor' with 'factory-trained, union technicians' for 'service & installation'. It lists Toilet Partitions & Accessories (laminate, steel, phenolic), has a Division 10 manufacturers page, and has a Service & Repairs request page. No page explicitly shows partition installs or project photos.",
+   "reason": "A long-running (since 1956) Division 10 subcontractor and distributor near Seattle that installs its products, partitions included in its lines. Partition installation is implied, not shown. It also sells partitions.",
+   "red_flags": [
+    "Distributor that sells partitions (buy-around risk)",
+    "No company email listed"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Zesbaugh, Inc.",
+    "area": "seattle",
+    "status": "found_active",
+    "registry": "Washington L&I contractor registration (data.wa.gov official L&I Contractor License Data dataset m8qx-ubtq)",
+    "license_number": "ZESBAI*353O1",
+    "license_type": "Construction Contractor, specialty General",
+    "source_url": "https://data.wa.gov/resource/m8qx-ubtq.json?$where=upper(businessname)%20like%20%27%25ZESBAUGH%25%27",
+    "note": "L&I record: ZESBAUGH, INC, UBI 578051445, construction contractor registration ACTIVE, effective 1965-09-21, expires 2027-10-01, city Marysville. A separate electrical contractor license (ZESBAI*992MU, Doors & Gates specialty) is EXPIRED (expired 2026-09-17); not needed for partition installation."
    },
    "score": 65
   },
