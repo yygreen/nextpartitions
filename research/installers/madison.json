@@ -1,0 +1,269 @@
+{
+ "area": "madison",
+ "found_count": 8,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/madison.json: worked, but nothing in it was relevant. The Maps results were remodelers, plumbers, stores and Solid Partitions (Pewaukee manufacturer, already rejected in milwaukee.json), and the web results were unresolvable google.com/goto links.",
+  "research/installers/milwaukee.json reviewed for overlap (LaForce, Solid Partitions, Best Specialties, Syncro).",
+  "Scranton Products where-to-buy: worked, but it lists only a Midwest regional rep (no WI dealer or installer).",
+  "Bobrick find-a-rep: results load by JavaScript, nothing readable.",
+  "ASI find-a-rep (asi-globalpartitions.com/find-a-rep/): 404 after redirect.",
+  "Bradley, Hadrian, Metpar, General Partitions, Ampco: not retried, since the Milwaukee run found them blocked or 404.",
+  "The Blue Book iProView pages: 403 blocked.",
+  "Procore Network public pages (/us/wi/madison/interior-specialties pages 1 and 2, /toilet-compartments, company profiles): worked. This gave Marz and Associates, John Buhler Co, D & L Specialties and Tri City Glass & Door.",
+  "BuildingConnected: not tried (requires sign-in).",
+  "UW-Madison purchasing contract wp5737: worked (LaForce, Scranton, installed).",
+  "Yellow Pages madison-wi/partitions and the 'toilet partitions' Madison search: worked, but only operable-wall firms (Hufcor, JWC, Curtition) and remodelers came up. JWC's site was checked: operable walls only, no toilet partitions.",
+  "Company sites: blockiron.com, laforceinc.com, marz.build, tricityglass-door.com, dandlspecialties.com and daloss.com worked; wisvalleybp.com returned 503; amppartitions.com had no company or location info (skipped).",
+  "WebSearch: 8 of 8 used. Results were dominated by One Point Partitions, toiletpartitions.com and Newton Distributing (national online sellers, skipped) and by out-of-state Division 10 firms. Southwest Solutions Group (Texas-based national, lists Madison as a service area) was skipped because it has no local base.",
+  "Yelp and BBB: not reached (Yelp was 403 in the Milwaukee run; no BBB pages surfaced in search)."
+ ],
+ "candidates": [
+  {
+   "name": "Marz and Associates",
+   "base_city": "Shawano",
+   "state": "WI",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Scranton Products",
+    "ASI Global Partitions",
+    "ASI Accurate Partitions"
+   ],
+   "phone": "715-787-4540",
+   "email": "info@marz.build",
+   "contact_page": "https://marz.build/quote-request/",
+   "website": "https://marz.build",
+   "evidence_urls": [
+    "https://marz.build",
+    "https://marz.build/bathroom-partitions/"
+   ],
+   "partition_evidence": "Bathroom partitions page says it is a certified dealer and installer, and its gallery shows commercial toilet partitions and urinal screens it installed.",
+   "red_flags": [
+    "Supplies partitions itself as a certified dealer, so it could sell around us",
+    "About 120+ miles from Madison, at the edge of the regional range; service area is stated only as 'all of Wisconsin'"
+   ],
+   "reason": "A Division 10 contractor that installs commercial toilet partitions and says it serves all of Wisconsin. It is based about 120 miles away, so Madison travel should be confirmed.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Marz and Associates",
+    "area": "madison",
+    "status": "not_required_online_check",
+    "registry": "Wisconsin DSPS credential list (no commercial general contractor license); City of Madison Building Inspection (no city general contractor license)",
+    "note": "Checked 2026-11-19. Wisconsin has no state license for commercial general or partition installation work. The DSPS credential list shows Dwelling Contractor (one- and two-family homes) and trade contractor credentials (electrical, HVAC, fire sprinkler, elevator, utility), none of which covers commercial toilet partition installation. Madison's code sets no city general contractor license; permit applicants list their subcontractors. No license lookup done. Base city per task: Shawano, WI. A business entity check on Wisconsin DFI was not done.",
+    "source_url": "https://dsps.wi.gov/Pages/Professions/Default.aspx"
+   },
+   "score": 63
+  },
+  {
+   "name": "Block Iron & Supply Company (Madison branch)",
+   "base_city": "Madison",
+   "state": "WI",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Scranton Products",
+    "ASI Group",
+    "Gamco",
+    "Koala Kare"
+   ],
+   "phone": "(608) 271-2744",
+   "email": "quotesmadison@blockiron.com",
+   "contact_page": "https://www.blockiron.com/contact",
+   "website": "https://www.blockiron.com/",
+   "evidence_urls": [
+    "https://www.blockiron.com/",
+    "https://www.blockiron.com/contact",
+    "https://www.blockiron.com/what-we-do"
+   ],
+   "partition_evidence": "The homepage lists 'Toilet Partitions & Accessories' under Division 10 and offers a general installation service. The pages read don't say it installs partitions; the Division 8 text mentions delivery and installation.",
+   "red_flags": [
+    "A Division 8/10 supplier that sells partitions (Bobrick, Bradley, Scranton, ASI), so it is a buy-around risk and a competitor"
+   ],
+   "reason": "Has a Madison branch and supplies toilet partitions with an installation service, but the pages read don't confirm it installs partitions.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Block Iron & Supply Company (Madison branch)",
+    "area": "madison",
+    "status": "not_required_online_check",
+    "registry": "Wisconsin DSPS credential list (no commercial general contractor license); City of Madison Building Inspection (no city general contractor license)",
+    "note": "Checked 2026-11-19. No state or city license applies to commercial partition installation in Madison. The DSPS list shows only Dwelling Contractor (homes) and trade credentials. Madison sets no city general contractor license. No license lookup done. Base city: Madison, WI.",
+    "source_url": "https://dsps.wi.gov/Pages/Professions/Default.aspx"
+   },
+   "score": 50
+  },
+  {
+   "name": "LaForce (Madison office)",
+   "base_city": "Madison",
+   "state": "WI",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(608) 222-2424",
+   "contact_page": "https://laforceinc.com/contact/",
+   "website": "https://laforceinc.com/",
+   "evidence_urls": [
+    "https://laforceinc.com/",
+    "https://laforceinc.com/laforce-locations/"
+   ],
+   "partition_evidence": "Lists 'Div. 10 Products: Toilet partitions, lockers & more' under Building Specialties and offers a separate Pre-Install & Install service. The pages read don't tie installation to partitions.",
+   "red_flags": [
+    "A large door, hardware and Division 10 distributor that sells partitions, so it is a buy-around risk",
+    "Its installation service may cover doors and hardware only"
+   ],
+   "reason": "Has a Madison office and supplies toilet partitions, and it offers installation services, but partition installation isn't shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "LaForce (Madison office)",
+    "area": "madison",
+    "status": "not_required_online_check",
+    "registry": "Wisconsin DSPS credential list (no commercial general contractor license); City of Madison Building Inspection (no city general contractor license)",
+    "note": "Checked 2026-11-19. No state or city license applies to commercial partition installation in Madison. The DSPS list shows only Dwelling Contractor (homes) and trade credentials. Madison sets no city general contractor license. No license lookup done. Base city: Madison, WI.",
+    "source_url": "https://dsps.wi.gov/Pages/Professions/Default.aspx"
+   },
+   "score": 50
+  },
+  {
+   "name": "D & L Specialties, Inc.",
+   "base_city": "Mequon",
+   "state": "WI",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "(262) 241-7927",
+   "email": "info@dandlspecialties.com",
+   "contact_page": "https://www.dandlspecialties.com",
+   "website": "https://www.dandlspecialties.com",
+   "evidence_urls": [
+    "https://www.dandlspecialties.com",
+    "https://www.dandlspecialties.com/washrooms.htm"
+   ],
+   "partition_evidence": "Its Washrooms page lists 'Bathroom Partitions' as a product. Installation isn't mentioned anywhere on the pages read.",
+   "red_flags": [
+    "Product supplier (a Nyholm Company) that sells partitions",
+    "No service area or installation stated",
+    "Dated site (copyright 2003)"
+   ],
+   "reason": "A commercial specialties supplier that sells bathroom partitions, with no evidence that it installs them or serves Madison.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 23
+  },
+  {
+   "name": "D.A. Loss & Associates",
+   "base_city": "Milwaukee",
+   "state": "WI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [
+    "Construction Specialties",
+    "Hadrian",
+    "Franklin Brass",
+    "Corrim",
+    "FRP"
+   ],
+   "phone": "414.384.4448",
+   "contact_page": "https://www.daloss.com/contact",
+   "website": "https://www.daloss.com/",
+   "evidence_urls": [
+    "https://www.daloss.com/",
+    "https://www.daloss.com/contact"
+   ],
+   "partition_evidence": "A Division 08/10 product resource and specification consultant for Wisconsin and Northern Illinois. It names Hadrian among its lines, but doesn't mention installation or toilet partitions.",
+   "red_flags": [
+    "Manufacturers' rep or specification firm, not an installer"
+   ],
+   "reason": "A Division 08/10 sales and specification firm with no installation service.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 23
+  },
+  {
+   "name": "John Buhler Co., Inc.",
+   "base_city": "Milwaukee",
+   "state": "WI",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "evidence_urls": [
+    "https://scrantonproducts.com/wp-content/uploads/2024/05/Scranton-Products-Dekoven-Center-Case-Study-Download.pdf"
+   ],
+   "partition_evidence": "Only found as the general contractor on a Scranton Products case study (Dekoven Center). There's no evidence it installs partitions itself.",
+   "red_flags": [
+    "General contractor, not a partition installer",
+    "No website provided or found"
+   ],
+   "reason": "Appears to be a general contractor, with no evidence that it installs partitions.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 23
+  },
+  {
+   "name": "Tri City Glass & Door",
+   "base_city": "Appleton",
+   "state": "WI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://tricityglass-door.com/",
+   "evidence_urls": [
+    "https://business.foxcitieschamber.com/list/member/tri-city-glass-door-inc-appleton-8238"
+   ],
+   "partition_evidence": "Its website returned no content. Listings describe glass, glazing, window and door work only.",
+   "red_flags": [
+    "Glass and glazing company, not Division 10",
+    "Serves Northeast Wisconsin, about 100+ miles away"
+   ],
+   "reason": "A glass and door company serving Northeast Wisconsin, with no sign of toilet partition work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Wisconsin Valley Building Products",
+   "base_city": "Wisconsin Rapids",
+   "state": "WI",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "website": "http://www.wisvalleybp.com/",
+   "evidence_urls": [
+    "http://www.wisvalleybp.com/"
+   ],
+   "partition_evidence": "The website returned HTTP 503 twice, and a search found nothing on partitions.",
+   "red_flags": [
+    "Website unavailable",
+    "No verifiable partition evidence"
+   ],
+   "reason": "Couldn't verify anything: the site is down and no partition evidence was found.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 3
+  }
+ ]
+}
