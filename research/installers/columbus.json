@@ -1,0 +1,256 @@
+{
+ "area": "columbus",
+ "found_count": 7,
+ "sources_tried": [
+  "Seed file columbus.json: worked; maps results gave Inter-Co, Construction Systems, LaForce, U.S. Structures, The Door Shop; web results were redirect links with no usable domains (mostly modular-wall ads and remodelers)",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): loaded but results need a dropdown, no Ohio rep readable",
+  "Scranton Products where-to-buy: worked, only regional product specialist (KY/OH/PA/WV), no local installers",
+  "Hadrian find-a-rep (hadrian-inc.com/find-a-rep/): 404",
+  "General Partitions find-a-rep: 404",
+  "ASI, Bradley, Metpar, Ampco locators: not reached (search cap / time)",
+  "The Blue Book (thebluebook.com search and iProView pages): blocked, 403",
+  "BuildingConnected / Procore public profiles: not tried (search cap)",
+  "CareerBuilder Division 10 job posting (Columbus): 403",
+  "Cook & Boardman / cbxsolutions.com: 403",
+  "Kelley Bros: worked; only Ohio office is Cincinnati area (outside 30 miles), excluded",
+  "Southwest Solutions Ohio page: content truncated, lockers/storage only",
+  "BBB Columbus 'partition' category: worked; gave Acoustic Ceiling & Partition of Ohio (others were glass, doors, furniture, out of area)",
+  "WebSearch: 8 of 8 used; queries for toilet partition installation Columbus, Division 10 contractor Columbus, partitions installer with nearby cities, Blue Book, toilet compartments/washroom accessories; results dominated by One Point Partitions (online supplier, DIY install, skipped) and Lowe's/remodelers",
+  "Ascent Specialties (Westerville, from a BBB snippet): could not verify, left out"
+ ],
+ "candidates": [
+  {
+   "name": "Construction Systems Inc (CSi)",
+   "base_city": "Columbus",
+   "state": "OH",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "website": "https://www.consysohio.com/",
+   "phone": "(614) 252-0708",
+   "email": "info@consysohio.com",
+   "contact_page": "https://www.consysohio.com/contact-csi.php",
+   "evidence_urls": [
+    "https://www.consysohio.com/"
+   ],
+   "partition_evidence": "The homepage lists specialties sales and installation for Divisions 10, 11 and 12, and names toilet partitions among the items.",
+   "reason": "A Columbus commercial interiors contractor around 50 years old with its own Division 10 specialties sales and installation group that covers toilet partitions. It names no brands and shows no project photos of partitions.",
+   "red_flags": [
+    "Sells specialties as well as installing them (buy-around risk)",
+    "The email was decoded from a Cloudflare-obfuscated link",
+    "The contact page URL comes from a relative link (contact-csi.php) and was not opened"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Construction Systems Inc (CSi)",
+    "area": "columbus",
+    "status": "found_active",
+    "registry": "City of Columbus Building and Zoning Services, Citizen Access Portal 'Search for Licensed & Registered Contractors' (Accela)",
+    "license_number": "G06348",
+    "license_type": "General Contractor (City of Columbus)",
+    "source_url": "https://portal.columbus.gov/permits/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y&TabName=APO",
+    "note": "Checked 2026-11-19. The 'Construction Systems Inc' search returned one record: General Cont license G06348, business name CONSTRUCTION SYSTEMS INC, expiration date 07/31/2027, related record first dated 07/13/2017. This is a probable match rather than a confirmed one. The company website (consysohio.com) gives 'Construction Systems, Inc.' in Columbus, OH, with main phone (614) 252-0708, while the city record lists a different number, 614-251-4827. The listing's search was by name, so confirm with the company that G06348 is theirs."
+   },
+   "score": 85
+  },
+  {
+   "name": "Inter-Co Division 10 (Ohio), Inc.",
+   "base_city": "Columbus (ZIP 43123, Grove City area)",
+   "state": "OH",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "ASI",
+    "Bobrick",
+    "Privada",
+    "Scranton",
+    "Thrislington Cubicles"
+   ],
+   "within_area": "yes",
+   "website": "https://inter-co.com/",
+   "phone": "(614) 875-2959",
+   "email": "ohsales@inter-co.com",
+   "contact_page": "https://inter-co.com/contact/",
+   "evidence_urls": [
+    "https://inter-co.com/",
+    "https://inter-co.com/toilet-partitions/",
+    "https://www.ziprecruiter.com/co/Inter-Ad"
+   ],
+   "partition_evidence": "The homepage says it supplies and installs Division 10 products, toilet partitions first among them. A job posting describes the company as distributing and installing toilet partitions.",
+   "reason": "A commercial Division 10 supply-and-install firm with a Columbus office (ZIP 43123). It also distributes partitions of the brands we resell, so the buy-around risk is high.",
+   "red_flags": [
+    "Direct competitor: supplies the partition brands Next Partitions resells (ASI, Bobrick, Scranton)",
+    "Part of a multi-office chain headquartered in Toronto"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Inter-Co Division 10 (Ohio), Inc.",
+    "area": "columbus",
+    "status": "not_found",
+    "registry": "City of Columbus Building and Zoning Services, Citizen Access Portal 'Search for Licensed & Registered Contractors' (Accela)",
+    "source_url": "https://portal.columbus.gov/permits/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y&TabName=APO",
+    "note": "Checked 2026-11-19. Business-name searches for 'Inter-Co', 'Inter Co' and 'InterCo' returned 'no results'. A broader 'Inter' search returned 9 licensees (Interstates Inc, Interstate Construction Inc, International Excavating of Ohio, Interstate Sign Company, Intertek PSI and others), none of them Inter-Co. Columbus requires a city license or registration under Chapter 4114 before permits. The likely type for commercial interior work is General Contractor, but the city page does not name toilet partitions, so confirm the scope with BZS. The company may be registered under another legal name. Ask the company for its Columbus license number, or confirm with BZS (614-645-7433). No state license applies in Ohio for this work."
+   },
+   "score": 70
+  },
+  {
+   "name": "Acoustic Ceiling & Partition of Ohio, Inc.",
+   "base_city": "Westerville",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "website": "https://acpohio.com/",
+   "phone": "(614) 718-0722",
+   "email": "info@acpohio.com",
+   "contact_page": "https://acpohio.com/contact/",
+   "evidence_urls": [
+    "https://acpohio.com/",
+    "https://acpohio.com/projects/"
+   ],
+   "partition_evidence": "Its carpentry services include installing Division 10 accessories. The site never mentions toilet partitions, and the 'Partition' in its name means drywall and framing.",
+   "reason": "A commercial drywall, ceiling and carpentry contractor that installs Division 10 accessories, but no toilet partition work was found on its site or project pages.",
+   "red_flags": [
+    "'Partition' in the name means wall partitions, not toilet stalls"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Acoustic Ceiling & Partition of Ohio, Inc.",
+    "area": "columbus",
+    "status": "not_found",
+    "registry": "City of Columbus Building and Zoning Services, Citizen Access Portal 'Search for Licensed & Registered Contractors' (Accela)",
+    "source_url": "https://portal.columbus.gov/permits/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y&TabName=APO",
+    "note": "Checked 2026-11-19. Business-name searches for 'Acoustic Ceiling', 'Acoustic Ceiling & Partition', 'Acoustic', 'Acou' and 'ACP' all returned 'no results'. The company is based in Westerville, so it may not hold a City of Columbus license unless it pulls permits in Columbus. Columbus requires a city license or registration (Chapter 4114) for work in the city. Ask the company for its license number or confirm with BZS (614-645-7433)."
+   },
+   "score": 50
+  },
+  {
+   "name": "LaForce (Columbus branch)",
+   "base_city": "Grove City",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "website": "https://laforceinc.com/",
+   "phone": "1-800-236-8858",
+   "contact_page": "https://laforceinc.com/contact/",
+   "evidence_urls": [
+    "https://laforceinc.com/"
+   ],
+   "partition_evidence": "Its Building Specialties page lists 'Div. 10 Products: Toilet partitions, lockers & more'. Search results mention a LaForce installer job in Grove City, but the posting page came back empty and was not confirmed.",
+   "reason": "A national door, hardware and Division 10 distributor. It supplies toilet partitions, but the pages read don't confirm that it installs them, and the Grove City branch was not confirmed (the locations page returned 404).",
+   "red_flags": [
+    "Distributor that sells partitions (buy-around risk)",
+    "Columbus/Grove City branch not confirmed on its own site",
+    "Only a national 800 number found"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "LaForce (Columbus branch)",
+    "area": "columbus",
+    "status": "not_found",
+    "registry": "City of Columbus Building and Zoning Services, Citizen Access Portal 'Search for Licensed & Registered Contractors' (Accela)",
+    "source_url": "https://portal.columbus.gov/permits/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y&TabName=APO",
+    "note": "Checked 2026-11-19. Business-name searches for 'LaForce', 'La Force', 'Laforce Inc' and 'LAF' returned 'no results'. LaForce is mainly a door, frame and hardware and Division 10 supplier, so it may work through installers or general contractors who hold the city license. Confirm with the company who would install and under which Columbus license, or check with BZS (614-645-7433)."
+   },
+   "score": 50
+  },
+  {
+   "name": "DH Pace Company (Columbus offices)",
+   "base_city": "Columbus",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "website": "https://dhpace.com/",
+   "phone": "614-456-4441",
+   "contact_page": "https://www.dhpace.com/contact/",
+   "evidence_urls": [
+    "https://www.dhpace.com/locations/",
+    "https://dhpace.com/products/commercial-products/specialty-and-division-10-products"
+   ],
+   "partition_evidence": "Lists toilet partitions among Division 10 products, described as 'all-inclusive supply only packages for Division 10 material'.",
+   "reason": "A door and hardware company with two Columbus offices that supplies Division 10 products, partitions included, as supply-only packages. No evidence that it installs partitions.",
+   "red_flags": [
+    "Division 10 is described as supply only",
+    "Sells partitions (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "U.S. Structures Company, Inc.",
+   "base_city": "Stoutsville",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick",
+    "Koala",
+    "General Partitions",
+    "Bradley Mills"
+   ],
+   "within_area": "yes",
+   "website": "https://usstructures.net/",
+   "phone": "(614) 833-5650",
+   "contact_page": "https://usstructures.net/contact-us/",
+   "evidence_urls": [
+    "https://usstructures.net/",
+    "https://usstructures.net/contact-us/"
+   ],
+   "partition_evidence": "Sells and stocks toilet partitions and washroom accessories for general contractors and ships nationwide. No installation service is mentioned.",
+   "reason": "A supplier and distributor of partitions (Stoutsville is about 30 miles south of Columbus), not an installer. It would compete with us on partition sales.",
+   "red_flags": [
+    "Partition distributor, a direct competitor",
+    "No installation service shown"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "The Door Shop",
+   "base_city": "Columbus (HQ Urbana)",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "website": "https://thedoorshop.com/",
+   "phone": "614-745-0045",
+   "email": "info@thedoorshop.com",
+   "contact_page": "https://www.thedoorshop.com/visit-us",
+   "evidence_urls": [
+    "https://thedoorshop.com/",
+    "https://www.thedoorshop.com/services"
+   ],
+   "partition_evidence": "None. It lists 'Division 10' as a product line without details, and its services are door and hardware supply with hardware pre-installed in its warehouse, not field installation.",
+   "reason": "A door and hardware distributor. No toilet partitions and no field installation shown.",
+   "red_flags": [
+    "Distributor only; no partition installation"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  }
+ ]
+}

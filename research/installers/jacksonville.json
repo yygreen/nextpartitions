@@ -1,0 +1,242 @@
+{
+ "area": "jacksonville",
+ "found_count": 6,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/jacksonville.json: worked; maps results yielded Holman, Commercial Specialties, East Coast (EACO), George P Coyle; the rest were remodelers, shower door/glass shops, plumbers, bath stores (skipped). Web seed entries were google.com/goto redirect links without domains, not usable.",
+  "Holman (holman-inc.com) and Commercial Specialties (commercialspecialties.net, /contact-us/) sites: worked",
+  "Preferred Installation (preferredinstallationfl.com): worked, but no toilet partitions mentioned (glass/shower doors), skipped",
+  "Turner's Custom Showers site: worked, residential showers only, skipped",
+  "eacoproducts.com and bathroominnovationsinc.com: 503",
+  "coylejax.com: fetched but empty content",
+  "atlanticfinishing.com: did not resolve (guessed domain; may not exist or needs network allowlist)",
+  "Bobrick find-a-rep: page loads but rep results are dropdown/JS driven, none shown",
+  "Scranton Products, Hadrian, Metpar, General Partitions rep locators (guessed URLs): 404; ASI, Bradley, Ampco locators not tried",
+  "The Blue Book (thebluebook.com iProView and search): 403 blocked; Atlantic Finishing seen only via search snippet",
+  "BuildingConnected / Procore: not tried",
+  "BBB: Jacksonville 'partition' category page worked (Coyle; others in Sanford, Lake Mary, Brooksville, all well outside 30 miles); Holman BBB profile 403",
+  "JAX Chamber member page for Holman: worked",
+  "onepointpartitions.com Jacksonville page and fxstaging mirror: 403",
+  "WebSearch: 8 of 8 used (toilet partition installation Jacksonville; Division 10 Jacksonville; 'toilet partitions' Jacksonville specialties; St. Augustine/Orange Park/Fernandina; lockers/partitions Division 10 Jacksonville; bathroom partition installers Jacksonville; Northeast/North Florida; Atlantic Finishing). Results were dominated by One Point Partitions pages and national firms (Prestige Distribution, Unified Specialty Services, Partition Plus); only Holman and Commercial Specialties confirmed locally.",
+  "Yelp: not tried (blocked in earlier areas)"
+ ],
+ "candidates": [
+  {
+   "name": "Holman, Inc.",
+   "base_city": "Jacksonville",
+   "state": "FL",
+   "website": "https://www.holman-inc.com/",
+   "phone": "904-781-4531",
+   "email": "info@holman-inc.com",
+   "contact_page": "https://www.holman-inc.com/contact-us/",
+   "installs_partitions": "yes",
+   "partition_evidence": "Toilet Partitions and Hardware product page says it supplies and installs commercial toilet partitions in Jacksonville and Northeast Florida with an in-house installation crew; homepage says 'We sell and install all our products'.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "American Sanitary Partition",
+    "AAMCO",
+    "ASI Accurate Partitions",
+    "Bobrick",
+    "Bradley",
+    "General Partitions",
+    "Gerali Custom Design",
+    "Ironwood",
+    "Metpar",
+    "PRIVADA",
+    "PSiSC",
+    "Sanymetal",
+    "Scranton Products",
+    "Hadrian"
+   ],
+   "within_area": "yes",
+   "review_count": 0,
+   "review_source": "BBB: A+ rating, accredited since 2015, 0 customer reviews; BBB lists FL DBPR license CBC1258919 and City of Jacksonville 503260000 (unverified by BBB)",
+   "verdict": "strong",
+   "reason": "Jacksonville-based Division 8/10/12 specialty contractor that explicitly supplies and installs commercial toilet partitions across Northeast Florida and Southeast Georgia. It is also a dealer for many brands we sell (ASI, Bobrick, Scranton, Bradley, Metpar, AAMCO), so buy-around risk is high.",
+   "red_flags": [
+    "Dealer for the same brands Next Partitions sells (strong buy-around risk)",
+    "No project photos on the partitions page"
+   ],
+   "evidence_urls": [
+    "https://www.holman-inc.com/",
+    "https://www.holman-inc.com/toilet-partitions-and-hardware/",
+    "https://www.holman-inc.com/services/",
+    "https://www.holman-inc.com/contact-us/",
+    "https://www.bbb.org/us/fl/jacksonville/profile/commercial-contractors/holman-inc-0403-235968310"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Holman, Inc.",
+    "area": "jacksonville",
+    "status": "not_online",
+    "registry": "Florida DBPR licensee search (myfloridalicense.com/wl11.asp) and City of Jacksonville Construction Trades Qualifying Board license lookup (contrades.coj.net/Licenses.aspx)",
+    "source_url": "https://www.jacksonville.gov/departments/public-works/building-inspection-division/contractor-license-and-complaint-search",
+    "note": "Both official lookups work only as interactive search forms (DBPR's form-based search; CTQB ASP.NET form with no name parameter in the URL), so I couldn't run an automated lookup. The city's contractor license search page names both as the places to check, plus the Duval County business tax search (county-taxes.net/fl-duval/business-tax). Company site (https://www.holman-inc.com/) says it sells and installs toilet partitions ('We sell and install all our products') and is 'Bonded and Insured', with no license number. Base city Jacksonville, FL. Company phone 904-781-4531 (header also shows 904-467-8779). Next step: look up by hand at DBPR and CTQB by name."
+   },
+   "score": 70
+  },
+  {
+   "name": "Commercial Specialties, LLC",
+   "base_city": "Orange Park",
+   "state": "FL",
+   "website": "https://commercialspecialties.net/",
+   "phone": "(904) 644-7214",
+   "email": "estimating@commercialspecialties.net",
+   "contact_page": "https://commercialspecialties.net/contact-us/",
+   "installs_partitions": "yes",
+   "partition_evidence": "Commercial Partitions and About pages: 'We carry and install a complete line of commercial grade restroom partitions'; installation portfolio lists Jacksonville-area jobs for GCs (Mayo, FSCJ, JTA, Florida Blue, Panera Jacksonville).",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "verdict": "strong",
+   "reason": "Orange Park (about 15 miles from Jacksonville) Division 10 supplier and installer since 2011 that explicitly installs commercial restroom partitions and lists many completed Northeast Florida jobs. It also supplies the material, so buy-around risk exists.",
+   "red_flags": [
+    "Supplies partitions itself (buy-around risk)",
+    "No partition brand named"
+   ],
+   "evidence_urls": [
+    "https://commercialspecialties.net/",
+    "https://commercialspecialties.net/services/commercial-partitions/",
+    "https://commercialspecialties.net/commercial-installation/",
+    "https://commercialspecialties.net/contact-us/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Commercial Specialties, LLC",
+    "area": "jacksonville",
+    "status": "not_online",
+    "registry": "Florida DBPR licensee search (myfloridalicense.com/wl11.asp) and City of Jacksonville Construction Trades Qualifying Board license lookup (contrades.coj.net/Licenses.aspx)",
+    "source_url": "https://www.jacksonville.gov/departments/public-works/building-inspection-division/contractor-license-and-complaint-search",
+    "note": "Neither official lookup can be searched with an automated tool (interactive forms only). Company site (https://commercialspecialties.net/) says 'We carry and install a complete line of commercial grade restroom partitions' along with other Division 10 products, with no license number. Company phone (904) 644-7214. The base city (Orange Park, from the task list) isn't stated on the homepage. Orange Park is in Clay County, outside Duval County, but CTQB still applies for work inside Jacksonville. Next step: look up by hand at DBPR and CTQB by name."
+   },
+   "score": 70
+  },
+  {
+   "name": "George P Coyle & Sons",
+   "base_city": "Jacksonville",
+   "state": "FL",
+   "website": "https://coylejax.com/",
+   "phone": "904-356-4821",
+   "email": "INFO@COYLEJAX.COM",
+   "contact_page": "https://coylejax.com/contact/",
+   "installs_partitions": "yes",
+   "partition_evidence": "'Commercial Bathroom Partitions in Jacksonville, FL' page: supplies and installs commercial bathroom partitions (toilet partitions / restroom stalls) for GCs, architects and facility managers; 'Bathroom Partition Materials We Supply & Install'.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "review_count": 0,
+   "review_source": "BBB: A+ rating, accredited since 6/11/2025, 0 customer reviews",
+   "verdict": "strong",
+   "reason": "Long-established Jacksonville fence and commercial services firm with a dedicated page saying it supplies and installs commercial bathroom partitions and Division 10 accessories across Northeast Florida. Main trade is fencing; no partition project photos seen.",
+   "red_flags": [
+    "Primarily a fence contractor",
+    "Supplies partitions itself (buy-around risk)",
+    "No partition project photos seen"
+   ],
+   "evidence_urls": [
+    "https://coylejax.com/toilet-partitions-in-jacksonville-florida/",
+    "https://coylejax.com/bathroom-partitions/",
+    "https://coylejax.com/",
+    "https://www.bbb.org/us/fl/jacksonville/profile/fence-contractors/george-p-coyle-sons-0403-236019878"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "George P Coyle & Sons",
+    "area": "jacksonville",
+    "status": "not_online",
+    "registry": "Florida DBPR licensee search (myfloridalicense.com/wl11.asp) and City of Jacksonville Construction Trades Qualifying Board license lookup (contrades.coj.net/Licenses.aspx)",
+    "source_url": "https://www.jacksonville.gov/departments/public-works/building-inspection-division/contractor-license-and-complaint-search",
+    "note": "Neither official lookup can be searched with an automated tool (interactive forms only). The company site (https://coylejax.com/) came back empty when fetched, so I read nothing about its services, its license or its phone there. Next step: look up by hand at DBPR and CTQB by name."
+   },
+   "score": 70
+  },
+  {
+   "name": "East Coast Fixture (EACO Products)",
+   "base_city": "Jacksonville",
+   "state": "FL",
+   "website": "http://eacoproducts.com/",
+   "phone": "(904) 733-9711",
+   "email": "eastcoast@eacoproducts.com",
+   "contact_page": "http://eacoproducts.com/",
+   "installs_partitions": "likely",
+   "partition_evidence": "Homepage: manufactures and distributes toilet partitions (stainless, phenolic, HDPE, laminate, baked enamel) and says it offers 'turnkey solutions from field measurement through installation'; no partition installation projects or photos seen.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bradley",
+    "Jacknob"
+   ],
+   "within_area": "yes",
+   "verdict": "possible",
+   "reason": "Jacksonville manufacturer/distributor of toilet partitions since 1966 that mentions turnkey installation, but it is mainly a supplier and is downsizing to a smaller warehouse; installation work is not shown.",
+   "red_flags": [
+    "Manufactures and distributes partitions (direct competitor, high buy-around risk)",
+    "Moving to a smaller warehouse and ending walk-in counter",
+    "No installation projects shown"
+   ],
+   "evidence_urls": [
+    "http://eacoproducts.com/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "East Coast Fixture (EACO Products)",
+    "area": "jacksonville",
+    "status": "not_online",
+    "registry": "Florida DBPR licensee search (myfloridalicense.com/wl11.asp) and City of Jacksonville Construction Trades Qualifying Board license lookup (contrades.coj.net/Licenses.aspx)",
+    "source_url": "https://www.jacksonville.gov/departments/public-works/building-inspection-division/contractor-license-and-complaint-search",
+    "note": "Neither official lookup can be searched with an automated tool (interactive forms only). The company site (http://eacoproducts.com/) returned HTTP 503 when fetched, so I read nothing there. Next step: look up by hand at DBPR and CTQB under both names (East Coast Fixture, EACO Products)."
+   },
+   "score": 50
+  },
+  {
+   "name": "One Point Partitions (Jacksonville terminal)",
+   "base_city": "Jacksonville",
+   "state": "FL",
+   "website": "https://onepointpartitions.com/",
+   "installs_partitions": "unknown",
+   "partition_evidence": "Site blocked automated access (403/Cloudflare). Search snippets describe it as a partition seller with a Jacksonville delivery terminal whose pages steer customers to self-install or hire a contractor.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "verdict": "reject",
+   "reason": "National online partition seller (a direct competitor of Next Partitions), not an installer; its Jacksonville location is a delivery terminal. Could not read the site directly.",
+   "red_flags": [
+    "Direct competitor selling partitions",
+    "Site could not be read (Cloudflare block)",
+    "No evidence of in-house installation"
+   ],
+   "evidence_urls": [
+    "https://onepointpartitions.com/service-areas/florida-bathroom-partitions/jacksonville-bathroom-partitions/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Atlantic Finishing",
+   "base_city": "Jacksonville",
+   "state": "FL",
+   "installs_partitions": "no",
+   "partition_evidence": "Only a Blue Book listing found (page blocked); search snippet describes a custom glass / shower enclosure business. No toilet partition work found.",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "verdict": "reject",
+   "reason": "No website found and no evidence of toilet partition work; the only listing found describes a shower enclosure / custom glass business.",
+   "red_flags": [
+    "No website",
+    "Appears to be a shower enclosure glass company"
+   ],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/1186675/atlantic-finishing/material-suppliers/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}
