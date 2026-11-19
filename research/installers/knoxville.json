@@ -1,0 +1,112 @@
+{
+ "area": "knoxville",
+ "found_count": 3,
+ "sources_tried": [
+  "Seed file knoxville.json (maps and web): read. Almost all hits were remodelers, plumbers, tile shops or stores. The only partition business was National Partitions (Knoxville), and Metpar Greeneville is a manufacturer plant, so it was skipped.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): the page loaded but the rep dropdown was empty without JavaScript, so no data.",
+  "Scranton Products find-a-rep: 404.",
+  "Hadrian find-a-rep: 503.",
+  "ASI (americanspecialties.com/find-a-rep): redirected to http and was not fetched.",
+  "Bradley, Metpar, General Partitions and Ammco locators: not reached (time and search budget).",
+  "The Blue Book (thebluebook.com search and iProView pages): 403 blocked.",
+  "BuildingConnected and Procore: not tried (both need a login or JavaScript).",
+  "WebSearch: 8 of 8 used. Few relevant hits; most results were national suppliers or remodelers.",
+  "BBB partition category pages (TN, Alcoa, Knoxville): worked. Listings within 120 mi were mostly unrelated (Prestige = warehouse storage; JM Specialties Chattanooga = operable walls and overhead doors). Partition firms in Gallatin, Murfreesboro and Nashville (Fast Partitions, Southeast Partitions, Manning Materials) are beyond 120 mi and nothing ties them to Knoxville, so they were excluded.",
+  "Knoxville Chamber member pages: worked (Trimble; WorkSpace Interiors is furniture, not partitions).",
+  "onepointpartitions.com, nationalpartitions.com, environmental-expert.com, athleticbusiness.com: 403 blocked.",
+  "Allegheny Construction Specialties (Nashville, supplies and installs partitions and accessories, 615-671-1700): excluded, about 180 mi away with no stated Knoxville service.",
+  "Division X Specialties (Franklin TN): excluded, about 180 mi away. A search snippet says it supplied Scranton partitions for UT Thompson-Boling Arena in Knoxville; it could be worth adding if the distance limit is relaxed."
+ ],
+ "candidates": [
+  {
+   "name": "William S. Trimble Co., Inc.",
+   "base_city": "Knoxville",
+   "state": "TN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick"
+   ],
+   "phone": "(865) 573-1911",
+   "email": "",
+   "contact_page": "https://www.wmstrimble.com/#contact-section",
+   "website": "https://www.wmstrimble.com",
+   "evidence_urls": [
+    "https://www.wmstrimble.com"
+   ],
+   "partition_evidence": "Its homepage lists 'Toilet Acc/Partitions' as a commercial product line and installation as a service. It is a Division 8 and 10 supplier (CSI Sections 8 and 10) with Bobrick among its supplier logos. Its projects include UT Fred Brown Dorm, the Knoxville airport and East Tennessee Children's Hospital. No page I read showed partition installation specifically.",
+   "reason": "Long-running Knoxville Division 8/10 distributor that also installs and lists toilet partitions. Partition installation itself isn't proven, and it supplies partitions itself, so there's a buy-around risk.",
+   "red_flags": [
+    "Supplies/distributes partitions itself (buy-around risk)",
+    "Mainly a door/hardware (Div 8) firm; partition installation not shown explicitly"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "William S. Trimble Co., Inc.",
+    "area": "knoxville",
+    "status": "not_online",
+    "registry": "Tennessee Board for Licensing Contractors via Verify TN (search.cloud.commerce.tn.gov); City of Knoxville Plans Review and Inspections contractor registration (no public list)",
+    "license_type": "TN Alarm Contractor License (self-reported on company site; not a contractor license from the Board for Licensing Contractors)",
+    "license_number": "2063 (alarm contractor, self-reported)",
+    "source_url": "https://www.wmstrimble.com",
+    "note": "Checked 2026-11-19. Could not check automatically: the state's Verify TN search (verify.tn.gov redirects to search.cloud.commerce.tn.gov) is a JavaScript app, and its search API is protected by reCAPTCHA (/api/recaptcha/verify in the page bundle). The Knoxville registration page (https://permits.knoxvilletn.gov/Register-To-Pull-A-Permit) says permit applicants must hold a city registration matched to their qualifications, sometimes alongside a TN state license. It offers no public lookup or list of registered contractors. Phone the city at 865-215-4311 to confirm. The company site lists Knoxville headquarters and company phone (865) 573-1911. It sells 'Toilet Acc/Partitions' and offers installation. The only licenses it shows are TN Alarm Contractor License #2063 and VA DCJS License #11-30049. It shows no Board for Licensing Contractors license number. Confirm by hand on verify.tn.gov."
+   },
+   "score": 50
+  },
+  {
+   "name": "National Partitions",
+   "base_city": "Knoxville",
+   "state": "TN",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.nationalpartitions.com/",
+   "evidence_urls": [
+    "https://www.environmental-expert.com/companies/national-partitions-159966",
+    "https://tnopioid.utk.edu/wp-content/uploads/2021/08/Hiring-Event-National-Partitions-Knoxville-August-25th-2021.pdf"
+   ],
+   "partition_evidence": "Listings describe it as a maker of modular and industrial partitioning (warehouse rooms, wire and cleanroom partitions), not toilet partitions.",
+   "reason": "Wrong kind of partitions: it makes modular industrial and warehouse partitions, not restroom stalls. Its own site blocked automated access.",
+   "red_flags": [
+    "Industrial modular/wire partition manufacturer, not restroom partitions",
+    "Own site not readable (403)"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "Gallatin",
+   "state": "TN",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "(800) 756-6817",
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://onepointpartitions.com/service-areas/tennessee-bathroom-partitions/",
+    "https://onepointpartitions.com/?p=3233",
+    "https://www.bbb.org/us/tn/category/partition"
+   ],
+   "partition_evidence": "Its site (Cloudflare-blocked; read via search snippets) sells partitions online with a pricing tool and points buyers to DIY tutorials or hiring a contractor. Its Tennessee addresses, Knoxville included, are described as delivery terminals. Its site has no clear statement that it installs.",
+   "reason": "An online partitions seller, which makes it a direct competitor of Next Partitions, not an installer. Reject.",
+   "red_flags": [
+    "Direct competitor selling partitions online",
+    "Site blocks automated access; details from search snippets only"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 23
+  }
+ ]
+}

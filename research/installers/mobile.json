@@ -1,0 +1,281 @@
+{
+ "area": "mobile",
+ "found_count": 8,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/mobile.json: worked. Most entries were bathroom remodelers, plumbers or stores. Plausible ones opened: G.C. Specialties, DSI, Procision, O&D Supply, Division Supply (a rebar supplier, not relevant) and BCM Morring (a general contractor; partitions not mentioned)",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded, but results are rendered by script and none were readable",
+  "ASI find-a-rep (asi-globalpartitions.com): redirect loop between http and https, not read",
+  "Scranton Products find-a-rep: guessed URL, 404",
+  "Bradley, Hadrian, Metpar, General Partitions, Ampco/Ammco locators: not tried, for lack of time",
+  "The Blue Book (thebluebook.com iProView pages): blocked, 403",
+  "BuildingConnected and Procore: not tried",
+  "BBB Mobile partition category (bbb.org/us/al/mobile/category/partition): worked",
+  "BBB GHCC member directory (Restroom Stalls and All): blocked, 403",
+  "onepointpartitions.com: blocked, 403 (only search snippets used)",
+  "governmentbidders.com listing: worked",
+  "mapquest listing: page loaded but held no business details",
+  "Exeter of Louisiana website: guessed domain does not resolve",
+  "WebSearch: all 8 allowed searches used. They found G.C. Specialties, One Point Partitions, Partitions of Gulfport and the BBB category page. No Pensacola or Daphne partition installer was found"
+ ],
+ "candidates": [
+  {
+   "name": "G. C. Specialties, Inc. (GCS)",
+   "added_by_checker": false,
+   "base_city": "Mobile",
+   "state": "AL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Scranton Products",
+    "Bobrick",
+    "Metpar",
+    "Hadrian",
+    "ASI"
+   ],
+   "website": "https://www.gcsinc.com/",
+   "phone": "251-478-1799",
+   "email": "estimating@gcsinc.com",
+   "contact_page": "https://www.gcsinc.com/contact",
+   "partition_evidence": "Toilet Partitions service page says GCS is a source for 'the sale and installation of toilet partitions' (plastic laminate, stainless, HDPE), with sample projects in Orange Beach AL and Pensacola Beach FL.",
+   "evidence_urls": [
+    "https://www.gcsinc.com/",
+    "https://www.gcsinc.com/services/bathroom-partitions",
+    "https://www.gcsinc.com/contact"
+   ],
+   "red_flags": [
+    "Sells partitions itself (buy-around risk); dealer for Scranton, Bobrick, Metpar, Hadrian, ASI"
+   ],
+   "reason": "Mobile-based commercial specialties contractor that explicitly sells and installs toilet partitions, with Gulf Coast projects. Strong fit, but it is also a partitions seller.",
+   "license": {
+    "name": "G. C. Specialties, Inc. (GCS)",
+    "area": "mobile",
+    "status": "found_active",
+    "license_type": "General contractor, BC-S: Doors; Railing Installation; Specialty Item Installation; Wall Systems and Panels; bid limit Unlimited",
+    "license_number": "26894",
+    "registry": "Alabama Licensing Board for General Contractors license roster",
+    "source_url": "https://licensesearch.alabama.gov/genconbd/Details/1629",
+    "note": "Roster record 'G C SPECIALTIES INC', Mobile, AL. Expiration date 8/31/2027, so the license is current as of 2026-11-19. Phone on the board record: (251) 478-1799. City of Mobile registration with the building official not checked online."
+   },
+   "score": 85
+  },
+  {
+   "name": "Door Specialists Inc. (DSI Systems)",
+   "added_by_checker": false,
+   "base_city": "Mobile",
+   "state": "AL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "ASI Accurate Partitions",
+    "Bobrick",
+    "JL Industries",
+    "Babcock Davis"
+   ],
+   "website": "https://doorspecusa.com/",
+   "phone": "251.479.9834",
+   "email": "info@doorspecusa.com",
+   "contact_page": "https://doorspecusa.com/about-us/contact-us/",
+   "partition_evidence": "Div 10 Specialties page says its crews install doors, frames, hardware, toilet partitions, toilet accessories, dispensers and lockers.",
+   "evidence_urls": [
+    "https://doorspecusa.com/",
+    "https://doorspecusa.com/doors-and-hardware/div-10-specialties/",
+    "https://doorspecusa.com/about-us/contact-us/"
+   ],
+   "red_flags": [
+    "Supplies Division 10 products incl. partitions (shows ASI/Bobrick logos): buy-around risk"
+   ],
+   "reason": "Mobile commercial door and Division 10 contractor whose own crews install toilet partitions. Also supplies them.",
+   "license": {
+    "name": "Door Specialists Inc. (DSI Systems)",
+    "area": "mobile",
+    "status": "found_active",
+    "license_type": "Subcontractor: Doors and Hardware Installation; Doors, Windows and Glass; Overhead Doors",
+    "license_number": "S-58781",
+    "registry": "Alabama Licensing Board for General Contractors license roster",
+    "source_url": "https://licensesearch.alabama.gov/genconbd/Details/8369",
+    "note": "Roster record 'DOOR SPECIALISTS INC', Mobile, AL. Expiration date 9/30/2027 (current). Phone on the board record: (251) 479-9834. The listed specialties don't include partitions or bathroom accessories. City of Mobile registration not checked online."
+   },
+   "score": 85
+  },
+  {
+   "name": "Procision Specialty",
+   "added_by_checker": false,
+   "base_city": "Mobile",
+   "state": "AL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://procisionspecialty.com/",
+   "phone": "(251) 583-7411",
+   "contact_page": "https://www.procisionspecialty.com/contact",
+   "partition_evidence": "Supplier of Division 8 and 10 items including 'restroom partitions and accessories'; contact page lists a Construction & Installation team, but partition installation is not described.",
+   "evidence_urls": [
+    "https://procisionspecialty.com/",
+    "https://www.procisionspecialty.com/contact"
+   ],
+   "red_flags": [
+    "Primarily a supplier of partitions (buy-around risk)",
+    "No general company email; only staff emails"
+   ],
+   "reason": "Mobile Division 8/10 supplier that offers restroom partitions and has an installation team, but partition installation itself is not shown.",
+   "license": {
+    "name": "Procision Specialty",
+    "area": "mobile",
+    "status": "found_active",
+    "license_type": "Subcontractor: Bathroom Accessories; Doors and Hardware Installation",
+    "license_number": "S-57174",
+    "registry": "Alabama Licensing Board for General Contractors license roster",
+    "source_url": "https://licensesearch.alabama.gov/genconbd/Details/7491",
+    "note": "Roster record 'PROCISION SPECIALTY LLC', Mobile, AL. Expiration date 5/31/2027 (current). Phone on the board record: (251) 583-7411. The listed specialties don't name partitions. City of Mobile registration not checked online."
+   },
+   "score": 65
+  },
+  {
+   "name": "O & D Supply LLC",
+   "added_by_checker": false,
+   "base_city": "Mobile",
+   "state": "AL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://www.odsupply.com/",
+   "phone": "251-473-4013",
+   "partition_evidence": "Products page lists Toilet Partitions under Division 10, with 'professional installation available upon request'.",
+   "evidence_urls": [
+    "http://www.odsupply.com/",
+    "http://www.odsupply.com/services"
+   ],
+   "red_flags": [
+    "Supplier of partitions (buy-around risk)",
+    "No email or contact page on site",
+    "Product mix leans to hospitality/residential (shower doors, vanities, Bahama shutters)"
+   ],
+   "reason": "Mobile specialty contractor/supplier listing toilet partitions with installation on request; no project evidence of partition installs.",
+   "license": {
+    "name": "O & D Supply LLC",
+    "area": "mobile",
+    "status": "found_active",
+    "license_type": "Subcontractor: Bathroom Accessories; Partitions; Specialty Item Installation",
+    "license_number": "S-48760",
+    "registry": "Alabama Licensing Board for General Contractors license roster",
+    "source_url": "https://licensesearch.alabama.gov/genconbd/Details/3985",
+    "note": "Roster record 'O & D SUPPLY LLC', Mobile, AL. Expiration date 5/31/2027 (current). Phone on the board record: (251) 473-4013. This is the only one of the six whose license names Partitions as a specialty. City of Mobile registration not checked online."
+   },
+   "score": 60
+  },
+  {
+   "name": "Partitions of Gulfport Corporation",
+   "added_by_checker": false,
+   "base_city": "Gulfport",
+   "state": "MS",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "(228) 822-9908",
+   "partition_evidence": "Government contractor directory profile says it provides commercial materials for doors, frames, partitions, hardware and accessories, keyword Toilet Partitions; installation not stated.",
+   "evidence_urls": [
+    "https://governmentbidders.com/government-bidders/contractor-5782229-Partitions-of-Gulfpor.htm",
+    "https://naicslist.com/company-profile/partitions-of-gulfport-corporation-gulfport-ms-39501"
+   ],
+   "red_flags": [
+    "No website found",
+    "About 2 employees per directory; details may be outdated",
+    "Supplier of partitions (buy-around risk)",
+    "No statement that it serves Mobile/Alabama"
+   ],
+   "reason": "Gulfport (about 60 miles away) partitions supplier per directories only; no website, installation and service to Mobile unconfirmed.",
+   "license": null,
+   "score": 23
+  },
+  {
+   "name": "One Point Partitions",
+   "added_by_checker": false,
+   "base_city": "unknown",
+   "state": "AL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "partition_evidence": "Site blocked (403). Search snippets show it is a partition manufacturer/online seller with a Loxley, AL delivery terminal and city marketing pages; installation not confirmed.",
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=2678"
+   ],
+   "red_flags": [
+    "Direct competitor selling partitions online",
+    "Site returned 403; could not verify",
+    "Delivery terminal, not a confirmed installer base"
+   ],
+   "reason": "Online partitions seller/competitor with delivery terminals; no verified installation service. Not an installer partner.",
+   "license": null,
+   "score": 23
+  },
+  {
+   "name": "FHG Doors, LLC",
+   "added_by_checker": false,
+   "base_city": "Milton",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "(850) 860-1569",
+   "review_source": "BBB (A+ rating, not accredited)",
+   "partition_evidence": "BBB lists it under door installation, commercial doors and door frames only; no partition evidence found.",
+   "evidence_urls": [
+    "https://www.bbb.org/us/fl/milton/category/door-frame"
+   ],
+   "red_flags": [
+    "No website found",
+    "No toilet partition work shown"
+   ],
+   "reason": "Door installer near Pensacola with no evidence of toilet partition installation.",
+   "license": null,
+   "score": 3
+  },
+  {
+   "name": "Exeter Of Louisiana, Inc.",
+   "added_by_checker": false,
+   "base_city": "Hammond",
+   "state": "LA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "phone": "(800) 213-2575",
+   "review_source": "BBB (A+ rating, not accredited)",
+   "partition_evidence": "Only a BBB listing under the Partitions category; no website found.",
+   "evidence_urls": [
+    "https://www.bbb.org/us/la/hammond/category/partition"
+   ],
+   "red_flags": [
+    "No website",
+    "About 150 miles from Mobile with no stated service to Alabama"
+   ],
+   "reason": "Hammond, LA is beyond the regional radius and nothing shows partition installation or service to Mobile.",
+   "license": null,
+   "score": 0
+  }
+ ]
+}

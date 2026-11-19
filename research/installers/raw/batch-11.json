@@ -1,0 +1,1798 @@
+{
+ "areas": [
+  {
+   "area": "little-rock",
+   "state": "AR",
+   "sources_tried": [
+    "Seed file little-rock.json: read; only American Building Specialties and Central Specialty Supply plausible, rest remodelers/plumbers/stores",
+    "Bobrick find-a-rep: page loaded but no Arkansas results rendered (dropdown not readable)",
+    "Scranton Products find-a-rep: 404",
+    "ASI (americanspecialties.com/find-a-rep): redirect then 404",
+    "Hadrian find-a-rep: 404",
+    "Bradley find-a-rep: no content rendered",
+    "General Partitions find-a-rep: 404",
+    "Metpar, Ampco: not tried (search cap and locator failures)",
+    "The Blue Book: search and iProView pages 403 blocked",
+    "Procore network (network.procore.com/us/ar/partitions pages 1-4, little-rock toilet accessories, little-rock compartments): worked, main source",
+    "BuildingConnected: not tried",
+    "WebSearch: 8 of 8 used; results dominated by national online sellers (One Point Partitions, Newton Distributing, toiletpartitions.com), no Little Rock-based dedicated partition installer found",
+    "BBB bathroom accessories category (Beebe): worked, no partition installers",
+    "contractorspecialty.com (Traf-Mark, seed): host blocked by session network, unverified, excluded",
+    "onepointpartitions.com: 403",
+    "abspecialties.net: 503",
+    "Excluded as too far (>120 mi) though listing Arkansas service: Partition Pros (Garland TX), Wood Systems (Tulsa OK), Werco Building Specialties (Baton Rouge LA), Specialized Products Group (Fayetteville AR), Allegheny Construction Specialties (Nashville TN), Newton Distributing (MA, national)"
+   ],
+   "found_count": 6,
+   "checked": [
+    {
+     "name": "American Building Specialties",
+     "base_city": "North Little Rock",
+     "state": "AR",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Bobrick",
+      "Bradley"
+     ],
+     "website": "http://americanbuildingspecialties.blogspot.com/",
+     "evidence_urls": [
+      "http://americanbuildingspecialties.blogspot.com/",
+      "https://talkbusiness.net/2000/08/american-building-specialties/"
+     ],
+     "partition_evidence": "Blog says ABS 'furnishes' toilet partitions and toilet accessories (Bobrick, Bradley) along with doors, hardware, lockers; no installation stated. Blog appears dated ~2011; 2000 Talk Business article places it in North Little Rock as a commercial hardware distributor.",
+     "red_flags": [
+      "Supplier/distributor of partitions (buy-around risk)",
+      "Only web presence is an old blogspot page (~2011); current status unconfirmed",
+      "Contact page returns 404; no phone/email found"
+     ],
+     "reason": "Commercial Division 10 supplier in North Little Rock that furnishes toilet partitions; installation not shown and the business may be inactive. Worth a phone check, but it is also a partition seller.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Central Specialty Supply, LLC",
+     "base_city": "Malvern",
+     "state": "AR",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "nearby",
+     "brands": [],
+     "evidence_urls": [
+      "https://naicslist.com/company-profile/central-specialty-supply-llc-malvern-ar-72104"
+     ],
+     "partition_evidence": "None found. Only aggregator directory listings (NAICS 423440 commercial equipment wholesale, ~2 employees); no website.",
+     "red_flags": [
+      "No website or project evidence",
+      "Directory data conflicting"
+     ],
+     "reason": "No evidence of partition installation; only aggregated directory listings describing a small wholesaler.",
+     "added_by_checker": false
+    },
+    {
+     "name": "One Point Partitions",
+     "base_city": "unknown (national distributor; Little Rock delivery terminal)",
+     "state": "AR",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://onepointpartitions.com/",
+     "evidence_urls": [
+      "https://onepointpartitions.com/service-areas/arkansas-bathroom-partitions/little-rock-bathroom-partitions/",
+      "https://onepointpartitions.com/service-areas/arkansas-bathroom-partitions/"
+     ],
+     "partition_evidence": "Search snippets of its own pages describe it as a bathroom partition distributor (since 2007) with delivery terminals in Little Rock, Fort Smith and Texarkana; site says customers need not pay for professional installation. Site returned 403 to direct fetch.",
+     "red_flags": [
+      "Direct competitor: sells partitions online",
+      "Delivery terminal is a freight terminal, not an office",
+      "Site blocked direct fetch; facts from search snippets only"
+     ],
+     "reason": "Online partition distributor and a direct competitor to Next Partitions, not an installer.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Alford Handyman & Construction",
+     "base_city": "Searcy",
+     "state": "AR",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "mostly",
+     "sells_partitions": "no",
+     "within_area": "nearby",
+     "brands": [],
+     "website": "https://alfordsystems.com",
+     "phone": "501-230-9148",
+     "contact_page": "https://alfordsystems.com/contact/",
+     "evidence_urls": [
+      "https://alfordsystems.com"
+     ],
+     "partition_evidence": "Site lists handyman, remodeling, commercial repair/maintenance and tenant finish; no mention of toilet partitions or Division 10.",
+     "red_flags": [],
+     "reason": "Commercial handyman/tenant-finish firm serving Little Rock, Conway, Cabot and Jacksonville, but no partition work shown. Could be a fallback lead only.",
+     "added_by_checker": false
+    },
+    {
+     "name": "All-Star Renovations",
+     "base_city": "Conway",
+     "state": "AR",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "no",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://allstarreno.com",
+     "phone": "(501) 504-3398",
+     "email": "info@allstarreno.com",
+     "contact_page": "https://allstarreno.com/contact",
+     "evidence_urls": [
+      "https://allstarreno.com"
+     ],
+     "partition_evidence": "None; residential bathroom/kitchen remodeling and handyman for homeowners.",
+     "red_flags": [
+      "Residential only"
+     ],
+     "reason": "Residential remodeler for homeowners; no commercial or partition work.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Collie's Custom Designs",
+     "base_city": "Ward",
+     "state": "AR",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "unknown",
+     "sells_partitions": "no",
+     "within_area": "nearby",
+     "brands": [],
+     "evidence_urls": [
+      "https://www.bbb.org/us/ar/ward/category/woodworking"
+     ],
+     "partition_evidence": "BBB lists it under ornamental metal work and woodworking; no partition work found, no website.",
+     "red_flags": [
+      "No website",
+      "Category unrelated to partitions"
+     ],
+     "reason": "Ornamental metal/woodworking shop per BBB; no evidence of toilet partition installation.",
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "birmingham",
+   "state": "AL",
+   "sources_tried": [
+    "Seed file birmingham.json: worked. Most Maps hits were plumbers, remodelers and stores. Only Building Specialties Co and Division 7 Construction were relevant. The web seeds were mostly unreadable google goto links; AMP Partitions' homepage shows no location or contact details.",
+    "Bobrick find-a-rep: page loads, but the rep data loads through JavaScript and its API route couldn't be reached. No Alabama reps read.",
+    "Bradley find-a-rep: returned an empty or blocked page.",
+    "Scranton Products find-a-rep: 403 or error page. A Scranton case study had no Alabama reps.",
+    "ASI (asi-accuratepartitions.com / globalpartitions), Hadrian, General Partitions, American Specialties: 403 blocked.",
+    "Metpar reps: 404. Ampco: proxy 502.",
+    "The Blue Book (thebluebook.com iProView): 403 blocked. No Blue Book results came up in search.",
+    "BuildingConnected / Procore: not reached (search cap).",
+    "BBB category pages (Birmingham partitions, AL bathroom accessories, Cordova partitions): worked. They gave Custom Installation & Services and out-of-state partition firms (JM Specialties Chattanooga, which turned out to do overhead doors; Southeast Partitions Murfreesboro TN, whose site returned 403; Prestige Distributors GA).",
+    "WebSearch: used all 8 allowed searches. Results were dominated by One Point Partitions (Birmingham 'delivery terminal' pages on a staging domain; its live site is behind Cloudflare and returned 403, so unverified and left out) and Newton Distributing (national, Natick MA, names no Alabama installers; left out).",
+    "Job boards: the career.com post worked (TriMerge). ZipRecruiter: 403.",
+    "Excluded: UDH Group (national, no local base), Holman Inc (Jacksonville FL), Interior Modular Walls / Interior Distributors (drywall and operable walls)."
+   ],
+   "found_count": 7,
+   "checked": [
+    {
+     "name": "TriMerge Construction Group LLC",
+     "base_city": "Birmingham",
+     "state": "AL",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "partition_evidence": "Career.com job posting (Birmingham, AL; closed 3/24/2025) titled 'Commercial Restroom Partition Installer': 'Demo and prep area for new restroom partition installation', plus grab bars and dispensers; '100% traveling position'.",
+     "reason": "A Birmingham job ad for a commercial restroom partition installer shows the company does partition installation work. No company website, services page or project photos found, and the role is a travelling one, so the local focus isn't proven.",
+     "red_flags": [
+      "No website or contact details found",
+      "Only evidence is an expired job posting",
+      "Travelling crew; may work mostly outside Birmingham"
+     ],
+     "evidence_urls": [
+      "https://career.com/job/trimerge-construction-group-llc/commercial-restroom-accessories-installer/j202501240159494435967"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Building Specialties Company (BSCO), now CBX Solutions Birmingham branch",
+     "base_city": "Birmingham",
+     "state": "AL",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "205-956-1600",
+     "contact_page": "https://www.cbxsolutions.com/contact-us/",
+     "website": "https://www.cbxsolutions.com/branches/birmingham-300/",
+     "partition_evidence": "Branch page lists 'Division 10 Specialties', 'Wall Systems & Operable Partitions' and 'Installation Services' among this location's specialties. It does not name toilet partitions specifically.",
+     "reason": "Long-running (est. 1954) commercial Division 10 distributor in Birmingham whose branch lists installation services. It's mainly a doors/frames/hardware distributor that also supplies Division 10 products, so it is a buy-around risk, and toilet partition installation isn't shown on its own pages.",
+     "red_flags": [
+      "Distributor that supplies Division 10 products itself (buy-around risk)",
+      "Part of the national CBX Solutions network (Cook & Boardman)",
+      "Toilet partition installation not explicitly shown"
+     ],
+     "evidence_urls": [
+      "https://www.cbxsolutions.com/branches/birmingham-300/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Restroom Stalls and All (RSA)",
+     "base_city": "Gainesville",
+     "state": "GA",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "phone": "1-844-817-8255",
+     "email": "cs@restroomstallsandall.com",
+     "contact_page": "https://restroomstallsandall.com/pages/contact-us",
+     "website": "https://restroomstallsandall.com/",
+     "rating": 4.9,
+     "review_source": "Google (as stated on company homepage; review count not shown); BBB A+ accredited",
+     "partition_evidence": "Homepage: ships commercial restroom partitions and 'installs them with our own crews across the Southeast'. Alabama installation page names Birmingham and Hoover and says 'our own W2, background-checked crews'.",
+     "reason": "Clearly installs commercial toilet partitions and says it covers Birmingham and Hoover with its own crews, but it is based about 190 miles away (beyond the 120-mile regional limit) and is itself an online partition seller with an instant-quote checkout, a direct buy-around competitor.",
+     "red_flags": [
+      "Sells partitions directly online with instant quote and checkout (direct competitor / buy-around risk)",
+      "Based about 190 miles from Birmingham",
+      "Rating is self-reported on its own homepage"
+     ],
+     "evidence_urls": [
+      "https://restroomstallsandall.com/",
+      "https://restroomstallsandall.com/pages/partition-installation-in-alabama"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Custom Installation & Services, LLC",
+     "base_city": "Birmingham",
+     "state": "AL",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(205) 956-9331",
+     "review_source": "BBB (A+ letter grade, accredited)",
+     "partition_evidence": "BBB lists it under Office Furniture Installation, Office Furniture, Furniture Assembly Service; it appears in BBB's 'partition' category only because of office furniture.",
+     "reason": "An office furniture installer. Nothing shows toilet partition or restroom work.",
+     "red_flags": [
+      "Office furniture installer, not restroom partitions"
+     ],
+     "evidence_urls": [
+      "https://www.bbb.org/us/al/birmingham/category/partition"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Division 7 Construction Inc",
+     "base_city": "Birmingham",
+     "state": "AL",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "partition_evidence": "None found. Search results described it only as a general contractor (NAICS 238190); I did not open a page that mentions partitions.",
+     "reason": "No evidence of toilet partition installation; no website found.",
+     "red_flags": [
+      "No website found",
+      "No partition evidence"
+     ],
+     "evidence_urls": [],
+     "added_by_checker": false
+    },
+    {
+     "name": "Division 10, Inc.",
+     "base_city": "Cordova",
+     "state": "TN",
+     "verdict": "reject",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "phone": "(901) 755-2623",
+     "email": "estimating@division10inc.com",
+     "contact_page": "https://www.division10inc.com/contact",
+     "website": "https://www.division10inc.com/",
+     "partition_evidence": "Homepage offers Division 10 product sales, estimating and installation quotes; partitions not named on the page read.",
+     "reason": "Memphis-area Division 10 supplier about 240 miles away; no mention of serving Alabama or Birmingham.",
+     "red_flags": [
+      "Out of area",
+      "Sells Division 10 products itself"
+     ],
+     "evidence_urls": [
+      "https://www.division10inc.com/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "GC Specialties (GCS)",
+     "base_city": "Mobile",
+     "state": "AL",
+     "verdict": "reject",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "phone": "251-478-1799",
+     "contact_page": "https://www.gcsinc.com/contact",
+     "website": "https://www.gcsinc.com/",
+     "partition_evidence": "Lists 'Toilet Partitions' among services; 'the sale and installation of specialty architectural products'.",
+     "reason": "Installs and sells toilet partitions, but it is based in Mobile, about 230 miles away, and says it serves the Gulf Coast and Southeast, with no mention of Birmingham.",
+     "red_flags": [
+      "Out of area (about 230 miles)",
+      "Sells partitions itself"
+     ],
+     "evidence_urls": [
+      "https://www.gcsinc.com/"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "mobile",
+   "state": "AL",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/mobile.json: worked. Most entries were bathroom remodelers, plumbers or stores. Plausible ones opened: G.C. Specialties, DSI, Procision, O&D Supply, Division Supply (a rebar supplier, not relevant) and BCM Morring (a general contractor; partitions not mentioned)",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded, but results are rendered by script and none were readable",
+    "ASI find-a-rep (asi-globalpartitions.com): redirect loop between http and https, not read",
+    "Scranton Products find-a-rep: guessed URL, 404",
+    "Bradley, Hadrian, Metpar, General Partitions, Ampco/Ammco locators: not tried, for lack of time",
+    "The Blue Book (thebluebook.com iProView pages): blocked, 403",
+    "BuildingConnected and Procore: not tried",
+    "BBB Mobile partition category (bbb.org/us/al/mobile/category/partition): worked",
+    "BBB GHCC member directory (Restroom Stalls and All): blocked, 403",
+    "onepointpartitions.com: blocked, 403 (only search snippets used)",
+    "governmentbidders.com listing: worked",
+    "mapquest listing: page loaded but held no business details",
+    "Exeter of Louisiana website: guessed domain does not resolve",
+    "WebSearch: all 8 allowed searches used. They found G.C. Specialties, One Point Partitions, Partitions of Gulfport and the BBB category page. No Pensacola or Daphne partition installer was found"
+   ],
+   "found_count": 8,
+   "checked": [
+    {
+     "name": "G. C. Specialties, Inc. (GCS)",
+     "added_by_checker": false,
+     "base_city": "Mobile",
+     "state": "AL",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Scranton Products",
+      "Bobrick",
+      "Metpar",
+      "Hadrian",
+      "ASI"
+     ],
+     "website": "https://www.gcsinc.com/",
+     "phone": "251-478-1799",
+     "email": "estimating@gcsinc.com",
+     "contact_page": "https://www.gcsinc.com/contact",
+     "partition_evidence": "Toilet Partitions service page says GCS is a source for 'the sale and installation of toilet partitions' (plastic laminate, stainless, HDPE), with sample projects in Orange Beach AL and Pensacola Beach FL.",
+     "evidence_urls": [
+      "https://www.gcsinc.com/",
+      "https://www.gcsinc.com/services/bathroom-partitions",
+      "https://www.gcsinc.com/contact"
+     ],
+     "red_flags": [
+      "Sells partitions itself (buy-around risk); dealer for Scranton, Bobrick, Metpar, Hadrian, ASI"
+     ],
+     "reason": "Mobile-based commercial specialties contractor that explicitly sells and installs toilet partitions, with Gulf Coast projects. Strong fit, but it is also a partitions seller."
+    },
+    {
+     "name": "Door Specialists Inc. (DSI Systems)",
+     "added_by_checker": false,
+     "base_city": "Mobile",
+     "state": "AL",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "ASI Accurate Partitions",
+      "Bobrick",
+      "JL Industries",
+      "Babcock Davis"
+     ],
+     "website": "https://doorspecusa.com/",
+     "phone": "251.479.9834",
+     "email": "info@doorspecusa.com",
+     "contact_page": "https://doorspecusa.com/about-us/contact-us/",
+     "partition_evidence": "Div 10 Specialties page says its crews install doors, frames, hardware, toilet partitions, toilet accessories, dispensers and lockers.",
+     "evidence_urls": [
+      "https://doorspecusa.com/",
+      "https://doorspecusa.com/doors-and-hardware/div-10-specialties/",
+      "https://doorspecusa.com/about-us/contact-us/"
+     ],
+     "red_flags": [
+      "Supplies Division 10 products incl. partitions (shows ASI/Bobrick logos): buy-around risk"
+     ],
+     "reason": "Mobile commercial door and Division 10 contractor whose own crews install toilet partitions. Also supplies them."
+    },
+    {
+     "name": "Procision Specialty",
+     "added_by_checker": false,
+     "base_city": "Mobile",
+     "state": "AL",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://procisionspecialty.com/",
+     "phone": "(251) 583-7411",
+     "contact_page": "https://www.procisionspecialty.com/contact",
+     "partition_evidence": "Supplier of Division 8 and 10 items including 'restroom partitions and accessories'; contact page lists a Construction & Installation team, but partition installation is not described.",
+     "evidence_urls": [
+      "https://procisionspecialty.com/",
+      "https://www.procisionspecialty.com/contact"
+     ],
+     "red_flags": [
+      "Primarily a supplier of partitions (buy-around risk)",
+      "No general company email; only staff emails"
+     ],
+     "reason": "Mobile Division 8/10 supplier that offers restroom partitions and has an installation team, but partition installation itself is not shown."
+    },
+    {
+     "name": "O & D Supply LLC",
+     "added_by_checker": false,
+     "base_city": "Mobile",
+     "state": "AL",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "mostly",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "http://www.odsupply.com/",
+     "phone": "251-473-4013",
+     "partition_evidence": "Products page lists Toilet Partitions under Division 10, with 'professional installation available upon request'.",
+     "evidence_urls": [
+      "http://www.odsupply.com/",
+      "http://www.odsupply.com/services"
+     ],
+     "red_flags": [
+      "Supplier of partitions (buy-around risk)",
+      "No email or contact page on site",
+      "Product mix leans to hospitality/residential (shower doors, vanities, Bahama shutters)"
+     ],
+     "reason": "Mobile specialty contractor/supplier listing toilet partitions with installation on request; no project evidence of partition installs."
+    },
+    {
+     "name": "Partitions of Gulfport Corporation",
+     "added_by_checker": false,
+     "base_city": "Gulfport",
+     "state": "MS",
+     "verdict": "possible",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "phone": "(228) 822-9908",
+     "partition_evidence": "Government contractor directory profile says it provides commercial materials for doors, frames, partitions, hardware and accessories, keyword Toilet Partitions; installation not stated.",
+     "evidence_urls": [
+      "https://governmentbidders.com/government-bidders/contractor-5782229-Partitions-of-Gulfpor.htm",
+      "https://naicslist.com/company-profile/partitions-of-gulfport-corporation-gulfport-ms-39501"
+     ],
+     "red_flags": [
+      "No website found",
+      "About 2 employees per directory; details may be outdated",
+      "Supplier of partitions (buy-around risk)",
+      "No statement that it serves Mobile/Alabama"
+     ],
+     "reason": "Gulfport (about 60 miles away) partitions supplier per directories only; no website, installation and service to Mobile unconfirmed."
+    },
+    {
+     "name": "One Point Partitions",
+     "added_by_checker": false,
+     "base_city": "unknown",
+     "state": "AL",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://onepointpartitions.com/",
+     "partition_evidence": "Site blocked (403). Search snippets show it is a partition manufacturer/online seller with a Loxley, AL delivery terminal and city marketing pages; installation not confirmed.",
+     "evidence_urls": [
+      "https://onepointpartitions.com/?p=2678"
+     ],
+     "red_flags": [
+      "Direct competitor selling partitions online",
+      "Site returned 403; could not verify",
+      "Delivery terminal, not a confirmed installer base"
+     ],
+     "reason": "Online partitions seller/competitor with delivery terminals; no verified installation service. Not an installer partner."
+    },
+    {
+     "name": "Exeter Of Louisiana, Inc.",
+     "added_by_checker": false,
+     "base_city": "Hammond",
+     "state": "LA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "phone": "(800) 213-2575",
+     "review_source": "BBB (A+ rating, not accredited)",
+     "partition_evidence": "Only a BBB listing under the Partitions category; no website found.",
+     "evidence_urls": [
+      "https://www.bbb.org/us/la/hammond/category/partition"
+     ],
+     "red_flags": [
+      "No website",
+      "About 150 miles from Mobile with no stated service to Alabama"
+     ],
+     "reason": "Hammond, LA is beyond the regional radius and nothing shows partition installation or service to Mobile."
+    },
+    {
+     "name": "FHG Doors, LLC",
+     "added_by_checker": false,
+     "base_city": "Milton",
+     "state": "FL",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "brands": [],
+     "phone": "(850) 860-1569",
+     "review_source": "BBB (A+ rating, not accredited)",
+     "partition_evidence": "BBB lists it under door installation, commercial doors and door frames only; no partition evidence found.",
+     "evidence_urls": [
+      "https://www.bbb.org/us/fl/milton/category/door-frame"
+     ],
+     "red_flags": [
+      "No website found",
+      "No toilet partition work shown"
+     ],
+     "reason": "Door installer near Pensacola with no evidence of toilet partition installation."
+    }
+   ]
+  },
+  {
+   "area": "jackson",
+   "state": "MS",
+   "sources_tried": [
+    "Seed file jackson.json: read. Nearly all maps/web results are residential remodelers, plumbers, HVAC and stores; only One Call Install and Millwork was worth opening. AMP Partitions (web seed) page showed no location or service area.",
+    "Scranton Products where-to-buy: worked (Southern States Architectural Sales covers MS)",
+    "Bobrick find-a-representative: 404",
+    "Bradley find-a-rep: page loaded with no rep data (JS-driven)",
+    "Hadrian find-a-rep: 404",
+    "ASI/Global Partitions, Metpar, General Partitions, Ampco locators: not tried (search/fetch budget)",
+    "The Blue Book (thebluebook.com iProView): blocked 403",
+    "BuildingConnected / Procore public profiles: not tried",
+    "MABC 2015 directory flipbook (associationpublications.com): blocked 403; content known only from search snippets",
+    "BBB category pages (bbb.org/us/ms/.../category/partition, commercial-contractors, shelves): worked; prod.bbb.org blocked 403",
+    "onepointpartitions.com (incl. fxstaging): blocked 403",
+    "WebSearch: used 8 of 8. Results were dominated by One Point Partitions and national pages; no Jackson-area company website clearly advertising toilet partition installation was found",
+    "Guessed domains wercobuildingspecialties.com and exeterofla.com did not resolve (probably not real domains); company websites not found",
+    "Out of area and excluded: Allegheny Construction Specialties (Nashville, TN), Holman Inc. (Jacksonville, FL), Unified Door & Hardware/Unified Specialty Services (NJ), 10 SPEC (NJ), Martin Bros. (location unknown), Himmel's Architectural Door and Hardware (Prairieville, LA; MS not in its listed service area)"
+   ],
+   "found_count": 8,
+   "checked": [
+    {
+     "name": "WERCO Building Specialties, Inc.",
+     "base_city": "Baton Rouge",
+     "state": "LA",
+     "verdict": "possible",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [
+      "AARCO",
+      "Accurate Partitions",
+      "Bobrick",
+      "Bradley",
+      "Hadrian",
+      "Koala Kare",
+      "Penco",
+      "Salsbury",
+      "Scranton Products"
+     ],
+     "review_count": 1,
+     "review_source": "BBB (A+, accredited since 1994; 1 customer review)",
+     "phone": "(225) 927-8376",
+     "website": "https://wercospecs.com/",
+     "contact_page": "https://wercospecs.com/contact-us/",
+     "evidence_urls": [
+      "https://wercospecs.com/",
+      "https://www.bbb.org/us/la/baton-rouge/profile/partition/werco-building-specialties-inc-0835-24000544",
+      "https://businessreport.com/?p=262976"
+     ],
+     "partition_evidence": "Website and BBB list toilet partitions and urinal screens as products; describes itself as a wholesale Division 10 distributor. No installation services stated.",
+     "reason": "Commercial Division 10 distributor supplying toilet partitions to general contractors; installation not shown and Mississippi not named on its site (Baton Rouge is about 150 miles away). A supplier and buy-around risk more than an installer.",
+     "red_flags": [
+      "Distributor/reseller of partitions (competitor)",
+      "No installation stated",
+      "About 150 miles away; Mississippi service not confirmed on own site"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Partitions, Inc.",
+     "base_city": "Byram",
+     "state": "MS",
+     "verdict": "possible",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(601) 373-5880",
+     "evidence_urls": [
+      "https://www.bbb.org/us/ms/category/partition"
+     ],
+     "partition_evidence": "Only a BBB 'Partitions' category listing (service area Hinds County, MS); no website found, and the listing does not say what kind of partitions.",
+     "reason": "Local business in a BBB partitions category right outside Jackson, but no website or project evidence showing toilet partition work. Worth a phone check.",
+     "red_flags": [
+      "No website found",
+      "Partition type not stated"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "One Point Partitions",
+     "base_city": "unknown",
+     "state": "unknown",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "website": "https://onepointpartitions.com/",
+     "evidence_urls": [
+      "https://onepointpartitions.com/?p=13"
+     ],
+     "partition_evidence": "Search snippets of its site show city/state 'Bathroom Partitions' landing pages, 'delivery terminals' (Richland MS, Hammond LA) and installation video tutorials for buyers; the site itself returned 403 so it could not be read.",
+     "reason": "Appears to be an online partition seller with templated city pages and 'delivery terminals', not a local installer; a direct competitor of Next Partitions. Base location unverified (within_area set to no because no real local base was confirmed).",
+     "red_flags": [
+      "Online partition seller (competitor)",
+      "Templated location pages; Richland 'terminal' unverified",
+      "Site blocked automated access"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "BB General Contractors & Mgmt. Services, LLC",
+     "base_city": "Jackson",
+     "state": "MS",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "evidence_urls": [
+      "https://associationpublications.com/flipbooks/mabc/dir2015/files/assets/basic-html/page49.html"
+     ],
+     "partition_evidence": "Only a search snippet of a 2015 Mississippi Associated Builders and Contractors directory listing it under Toilet and Bath Accessories; the page itself returned 403.",
+     "reason": "Only evidence is a roughly 10-year-old directory listing I could not open; no website, current activity or partition projects found.",
+     "red_flags": [
+      "Evidence is a 2015 directory only",
+      "No website found",
+      "Current operation unconfirmed"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Jackson Contractors LLC",
+     "base_city": "Brandon",
+     "state": "MS",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(601) 278-3281",
+     "review_source": "BBB A+ (not accredited)",
+     "evidence_urls": [
+      "https://www.bbb.org/us/ms/category/partition"
+     ],
+     "partition_evidence": "BBB categories are Commercial Contractors, Carpenter, Finish Carpentry; nothing about toilet partitions.",
+     "reason": "Commercial carpentry contractor in Brandon with no sign of toilet partition or Division 10 work.",
+     "red_flags": [
+      "No partition evidence"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "One Call Install and Millwork",
+     "base_city": "Jackson",
+     "state": "MS",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(769) 233-8961",
+     "website": "http://www.onecallinstallandmillwork.com/",
+     "contact_page": "http://www.onecallinstallandmillwork.com/contact.html",
+     "evidence_urls": [
+      "http://www.onecallinstallandmillwork.com/"
+     ],
+     "partition_evidence": "Site lists commercial casework, countertops, millwork and flat-pack casework only; no toilet partitions or Division 10.",
+     "reason": "Commercial millwork and casework installer; no toilet partition or restroom accessory work shown.",
+     "red_flags": [
+      "No partition evidence"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Exeter Of Louisiana, Inc.",
+     "base_city": "Hammond",
+     "state": "LA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "evidence_urls": [],
+     "partition_evidence": "No pages found; search returned nothing about this company.",
+     "reason": "No evidence found online for partition work or for serving Mississippi; Hammond is about 130 miles from Jackson.",
+     "red_flags": [
+      "No web presence found",
+      "Outside the 120-mile range"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Southern States Architectural Sales",
+     "base_city": "unknown",
+     "state": "unknown",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "evidence_urls": [],
+     "partition_evidence": "No company by this exact name found; closest match is Southern Architectural Sales LLC (Collierville, TN), a 2-person firm with architectural/door and window codes, no partition evidence.",
+     "reason": "Could not verify that the business exists under this name; the name suggests a manufacturers' sales agency rather than an installer.",
+     "red_flags": [
+      "Business not found",
+      "Likely a sales rep, not an installer"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Restroom Stalls and All",
+     "base_city": "Gainesville",
+     "state": "GA",
+     "verdict": "reject",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [
+      "Bobrick",
+      "Koala Kare",
+      "XLERATOR"
+     ],
+     "phone": "1-844-817-8255",
+     "email": "cs@restroomstallsandall.com",
+     "website": "https://www.restroomstallsandall.com/",
+     "contact_page": "https://www.restroomstallsandall.com/pages/contact-us",
+     "evidence_urls": [
+      "https://www.restroomstallsandall.com/"
+     ],
+     "partition_evidence": "Site says it installs toilet partitions with its own W2 crews and project superintendents across the Southeast.",
+     "reason": "Real toilet partition installer, but its listed install coverage is GA, FL, the Carolinas, TN and AL; Mississippi is not listed. Also sells partitions. Listed for reference only.",
+     "red_flags": [
+      "Mississippi not in stated install area",
+      "Sells partitions (buy-around risk)",
+      "Far outside 120 miles"
+     ],
+     "added_by_checker": true
+    }
+   ]
+  },
+  {
+   "area": "shreveport",
+   "state": "LA",
+   "sources_tried": [
+    "Seed file shreveport.json (maps + web): worked; mostly remodelers, plumbers and stores. Plausible: Lipper-Stutsman, Tackett. Designer Products and Installation checked: residential remodeler, no partitions",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads but results are dropdown/JS only, no Louisiana reps readable",
+    "Scranton Products find-a-rep: 404",
+    "ASI Global Partitions find-a-rep: 404",
+    "Bradley, Hadrian, Metpar, General Partitions, Ammco locators: not tried (fetch budget spent on the locators above, which returned nothing)",
+    "The Blue Book (thebluebook.com iProView pages): blocked, 403",
+    "downtobid.com Shreveport doors / toilet-partitions contractor lists: blocked, 429",
+    "ConstructConnect Shreveport restroom renovation bid (partitions in scope): bidders gated behind a subscription",
+    "BuildingConnected / Procore public profiles: not reached",
+    "WebSearch x8 (cap reached): toilet partitions installation Shreveport; Tackett Building Specialties; Blue Book Shreveport; Division 10 LA cities; commercial partitions LA/TX/AR; Shreveport doors frames toilet partitions; installer Longview/Tyler/Texarkana/Monroe; building specialties Shreveport/Bossier. Results were dominated by One Point Partitions (national online seller, no local base, so skipped)",
+    "Rejected as out of range or not a fit: Himmel's Commercial Doors (Prairieville LA, ~250 mi; does install partitions), Werco Building Specialties (Baton Rouge, ~250 mi), Martin Bros (California), Cook & Boardman Door Pro Systems (Houston), CDF Distributors Shreveport (doors/frames/hardware only, no partitions), Trinity Surface Solutions and 318 Construction (no partition work)"
+   ],
+   "found_count": 2,
+   "checked": [
+    {
+     "name": "The Lipper-Stutsman Co., Inc.",
+     "base_city": "Shreveport",
+     "state": "LA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "http://www.lipperstutsman.com/",
+     "phone": "318-687-1585",
+     "contact_page": "http://www.lipperstutsman.com/local-lipper-stutsman-company-contact-shreveport-la",
+     "evidence_urls": [
+      "http://www.lipperstutsman.com/",
+      "http://www.lipperstutsman.com/local-lipper-stutsman-company-commercial-toilet-bathroom-partitions-accessories-shreveport-la",
+      "http://www.lipperstutsman.com/local-lipper-stutsman-company-contact-shreveport-la"
+     ],
+     "partition_evidence": "Its Toilet Partitions & Accessories page says it will 'custom install toilet partitions for any sized commercial property' in Northwest Louisiana and East Texas, and has the products delivered to the project location.",
+     "reason": "Shreveport commercial door, frame, hardware and toilet partition company, in business since 1948. It both supplies and installs partitions for commercial properties. It also sells partitions itself, so it is a buy-around risk. Its site names no partition brands. The contact page shows two different staff email addresses that don't match, so no company email is given here. Toll free number: 800-451-2840.",
+     "red_flags": [
+      "Supplies partitions itself (distributor or competitor), a buy-around risk",
+      "Contact page email text and mailto link don't match"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Tackett Building Specialities, Inc.",
+     "base_city": "Shreveport",
+     "state": "LA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "evidence_urls": [],
+     "partition_evidence": "None found",
+     "reason": "Three web searches (with both spellings, and with Shreveport) found no website, listing or project for this business, so it could not be verified as a real, operating partition installer. It may be closed, or the name may be wrong.",
+     "red_flags": [
+      "No web presence found",
+      "Existence and status unverified"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "knoxville",
+   "state": "TN",
+   "sources_tried": [
+    "Seed file knoxville.json (maps and web): read. Almost all hits were remodelers, plumbers, tile shops or stores. The only partition business was National Partitions (Knoxville), and Metpar Greeneville is a manufacturer plant, so it was skipped.",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): the page loaded but the rep dropdown was empty without JavaScript, so no data.",
+    "Scranton Products find-a-rep: 404.",
+    "Hadrian find-a-rep: 503.",
+    "ASI (americanspecialties.com/find-a-rep): redirected to http and was not fetched.",
+    "Bradley, Metpar, General Partitions and Ammco locators: not reached (time and search budget).",
+    "The Blue Book (thebluebook.com search and iProView pages): 403 blocked.",
+    "BuildingConnected and Procore: not tried (both need a login or JavaScript).",
+    "WebSearch: 8 of 8 used. Few relevant hits; most results were national suppliers or remodelers.",
+    "BBB partition category pages (TN, Alcoa, Knoxville): worked. Listings within 120 mi were mostly unrelated (Prestige = warehouse storage; JM Specialties Chattanooga = operable walls and overhead doors). Partition firms in Gallatin, Murfreesboro and Nashville (Fast Partitions, Southeast Partitions, Manning Materials) are beyond 120 mi and nothing ties them to Knoxville, so they were excluded.",
+    "Knoxville Chamber member pages: worked (Trimble; WorkSpace Interiors is furniture, not partitions).",
+    "onepointpartitions.com, nationalpartitions.com, environmental-expert.com, athleticbusiness.com: 403 blocked.",
+    "Allegheny Construction Specialties (Nashville, supplies and installs partitions and accessories, 615-671-1700): excluded, about 180 mi away with no stated Knoxville service.",
+    "Division X Specialties (Franklin TN): excluded, about 180 mi away. A search snippet says it supplied Scranton partitions for UT Thompson-Boling Arena in Knoxville; it could be worth adding if the distance limit is relaxed."
+   ],
+   "found_count": 3,
+   "checked": [
+    {
+     "name": "William S. Trimble Co., Inc.",
+     "base_city": "Knoxville",
+     "state": "TN",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Bobrick"
+     ],
+     "phone": "(865) 573-1911",
+     "email": "",
+     "contact_page": "https://www.wmstrimble.com/#contact-section",
+     "website": "https://www.wmstrimble.com",
+     "evidence_urls": [
+      "https://www.wmstrimble.com"
+     ],
+     "partition_evidence": "Its homepage lists 'Toilet Acc/Partitions' as a commercial product line and installation as a service. It is a Division 8 and 10 supplier (CSI Sections 8 and 10) with Bobrick among its supplier logos. Its projects include UT Fred Brown Dorm, the Knoxville airport and East Tennessee Children's Hospital. No page I read showed partition installation specifically.",
+     "reason": "Long-running Knoxville Division 8/10 distributor that also installs and lists toilet partitions. Partition installation itself isn't proven, and it supplies partitions itself, so there's a buy-around risk.",
+     "red_flags": [
+      "Supplies/distributes partitions itself (buy-around risk)",
+      "Mainly a door/hardware (Div 8) firm; partition installation not shown explicitly"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "One Point Partitions",
+     "base_city": "Gallatin",
+     "state": "TN",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "phone": "(800) 756-6817",
+     "website": "https://onepointpartitions.com/",
+     "evidence_urls": [
+      "https://onepointpartitions.com/service-areas/tennessee-bathroom-partitions/",
+      "https://onepointpartitions.com/?p=3233",
+      "https://www.bbb.org/us/tn/category/partition"
+     ],
+     "partition_evidence": "Its site (Cloudflare-blocked; read via search snippets) sells partitions online with a pricing tool and points buyers to DIY tutorials or hiring a contractor. Its Tennessee addresses, Knoxville included, are described as delivery terminals. Its site has no clear statement that it installs.",
+     "reason": "An online partitions seller, which makes it a direct competitor of Next Partitions, not an installer. Reject.",
+     "red_flags": [
+      "Direct competitor selling partitions online",
+      "Site blocks automated access; details from search snippets only"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "National Partitions",
+     "base_city": "Knoxville",
+     "state": "TN",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://www.nationalpartitions.com/",
+     "evidence_urls": [
+      "https://www.environmental-expert.com/companies/national-partitions-159966",
+      "https://tnopioid.utk.edu/wp-content/uploads/2021/08/Hiring-Event-National-Partitions-Knoxville-August-25th-2021.pdf"
+     ],
+     "partition_evidence": "Listings describe it as a maker of modular and industrial partitioning (warehouse rooms, wire and cleanroom partitions), not toilet partitions.",
+     "reason": "Wrong kind of partitions: it makes modular industrial and warehouse partitions, not restroom stalls. Its own site blocked automated access.",
+     "red_flags": [
+      "Industrial modular/wire partition manufacturer, not restroom partitions",
+      "Own site not readable (403)"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "chattanooga",
+   "state": "TN",
+   "sources_tried": [
+    "Seed file chattanooga.json: worked; maps results were almost all residential remodelers, plumbers and stores; only Interior Trim & Supply looked plausible. Embark Project Services site checked: GC, no partition work",
+    "Existing area files atlanta.json and nashville.json: used for regional candidates, each site re-read",
+    "Bobrick find-a-rep: page loads but rep list is JS-only, no results",
+    "Scranton Products find-a-rep: 404",
+    "ASI, Bradley, Hadrian, Metpar, General Partitions, Ammco locators: not tried (search cap / JS locators)",
+    "One Point Partitions Tennessee page: 403 (manufacturer/seller with Chattanooga delivery terminal, does not appear to install; skipped)",
+    "The Blue Book: category and profile pages 403 on fetch; search snippets used for Builders Hardware Co., Manning Materials, Donco",
+    "BuildingConnected / Procore: not tried",
+    "BBB TN partition category (hixson): worked, gave JM Specialties, Prestige, Gallatin/Clarksville firms",
+    "GlobalSpec Chattanooga partitions: 403 (snippet only)",
+    "Web search: 8 of 8 used; RSA Chattanooga page and Best Commercial Installers found this way",
+    "donco-inc.com: host not resolvable in this session's network (guessed domain, may not exist)",
+    "Yelp: not reached"
+   ],
+   "found_count": 14,
+   "checked": [
+    {
+     "name": "Restroom Stalls and All (RSA)",
+     "base_city": "Gainesville",
+     "state": "GA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Bobrick",
+      "Koala Kare",
+      "XLERATOR"
+     ],
+     "phone": "1-844-817-8255",
+     "email": "cs@restroomstallsandall.com",
+     "contact_page": "https://restroomstallsandall.com/pages/contact-us",
+     "website": "https://restroomstallsandall.com/",
+     "rating": 4.9,
+     "review_source": "Google (as shown on company site; BBB A+ accredited also claimed)",
+     "evidence_urls": [
+      "https://restroomstallsandall.com/"
+     ],
+     "partition_evidence": "Site says it installs commercial restroom partitions/stall dividers with its own W2 crews; Division 10 packages for GCs.",
+     "red_flags": [
+      "Also sells and ships partitions nationwide (buy-around risk)",
+      "Chattanooga not named; Tennessee is in its installation states"
+     ],
+     "reason": "Commercial partition installer about 95 miles away whose installation area includes Tennessee. Also a distributor, so a buy-around risk.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Best Commercial Installers",
+     "base_city": "Nashville",
+     "state": "TN",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "brands": [],
+     "phone": "(615) 236-7449",
+     "contact_page": "https://www.bestcommercialinstallers.com/contact-us",
+     "website": "https://www.bestcommercialinstallers.com/",
+     "evidence_urls": [
+      "https://www.bestcommercialinstallers.com/",
+      "https://www.bestcommercialinstallers.com/contact-us"
+     ],
+     "partition_evidence": "Lists commercial bathroom partition installation as a service.",
+     "red_flags": [
+      "No street address, email or project photos shown",
+      "Ratings not shown"
+     ],
+     "reason": "Commercial bathroom partition installer based in Nashville that names Chattanooga in its service area.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Accessories Unlimited Inc (AUI)",
+     "base_city": "Stone Mountain",
+     "state": "GA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "phone": "404-298-1779",
+     "email": "sales@accunl.com",
+     "contact_page": "https://accessoriesunlimited.net/contact-us/",
+     "website": "https://accessoriesunlimited.net/",
+     "rating": 5,
+     "review_count": 9,
+     "review_source": "Google (as shown on company site)",
+     "evidence_urls": [
+      "https://accessoriesunlimited.net/"
+     ],
+     "partition_evidence": "Division 8/10 supplier with toilet partitions as a product category and a 'Full Service Installation' service; partition installation is not stated explicitly.",
+     "red_flags": [
+      "Supplier of partitions (buy-around risk)"
+     ],
+     "reason": "Division 10 supplier offering installation that lists Tennessee among the states it serves; partition installation itself not proven.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Mason Hall & Company, Inc.",
+     "base_city": "Mableton",
+     "state": "GA",
+     "verdict": "reject",
+     "installs_partitions": "likely",
+     "commercial": "unknown",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "phone": "(770) 432-1322",
+     "contact_page": "https://masonhall.com/contacts",
+     "website": "https://masonhall.com/",
+     "evidence_urls": [
+      "https://masonhall.com/",
+      "https://masonhall.com/contacts"
+     ],
+     "partition_evidence": "Calls itself a multi-line distributor and installer of Division 10 specialties; toilet partitions are a product category.",
+     "red_flags": [
+      "Distributor (buy-around risk)",
+      "No service area stated"
+     ],
+     "reason": "Division 10 distributor/installer about 100 miles away, but its site doesn't say it serves Tennessee or Chattanooga. Could be re-checked by asking.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Terminus Specialties, Inc.",
+     "base_city": "Locust Grove",
+     "state": "GA",
+     "verdict": "reject",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "phone": "470-507-0587",
+     "contact_page": "https://www.terminusspecialties.com/contact-1",
+     "website": "https://www.terminusspecialties.com/",
+     "evidence_urls": [
+      "https://www.terminusspecialties.com/"
+     ],
+     "partition_evidence": "Lists 'Restroom Partitions & Accessories' as a core service.",
+     "red_flags": [
+      "Also supplies partitions (pickup/delivery)"
+     ],
+     "reason": "Commercial partition contractor south of Atlanta, about 130+ miles away; says only 'southeastern United States', with no Tennessee or Chattanooga mention.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Donco, Inc.",
+     "base_city": "Peachtree City",
+     "state": "GA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "reason": "No website or listing found confirming the business or partition work; Peachtree City is about 130 miles away.",
+     "evidence_urls": [],
+     "added_by_checker": false
+    },
+    {
+     "name": "Allegheny Construction Specialties",
+     "base_city": "Nashville",
+     "state": "TN",
+     "verdict": "reject",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "phone": "615-671-1700",
+     "email": "info@allconspec.com",
+     "contact_page": "https://allconspec.com/#contact",
+     "website": "https://allconspec.com",
+     "evidence_urls": [
+      "https://allconspec.com"
+     ],
+     "partition_evidence": "Division 10/11/12 contractor 'from sourcing to installation'; toilet partitions not named on the homepage.",
+     "reason": "Division 10 contractor in Nashville (offices also in Pittsburgh and South Florida), but no partition work shown and no statement that it serves Chattanooga.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Soran Group Inc",
+     "base_city": "Nashville",
+     "state": "TN",
+     "verdict": "reject",
+     "installs_partitions": "yes",
+     "commercial": "mostly",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "phone": "615 949 9059",
+     "email": "info@sorangroupinc.com",
+     "contact_page": "https://sorangroupinc.com/contact/",
+     "website": "https://sorangroupinc.com/",
+     "evidence_urls": [
+      "https://sorangroupinc.com/"
+     ],
+     "partition_evidence": "Lists 'Bathroom Partitions & Hardware Installation' for commercial or residential spaces.",
+     "red_flags": [
+      "Mixed residential/commercial general services"
+     ],
+     "reason": "Installs bathroom partitions but only mentions Nashville and surrounding areas, about 110+ miles from Chattanooga.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Manning Materials, Inc.",
+     "base_city": "Nashville",
+     "state": "TN",
+     "verdict": "reject",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [
+      "Accurate Partitions",
+      "AJW Architectural Products",
+      "Bobrick",
+      "Global Partitions",
+      "Metpar",
+      "Privada",
+      "Scranton Products",
+      "Thrislington",
+      "American Specialties",
+      "Bradley"
+     ],
+     "phone": "1-877-431-7078",
+     "contact_page": "https://www.manningmaterialsinc.com/contact-us/",
+     "website": "https://www.manningmaterialsinc.com/",
+     "evidence_urls": [
+      "https://manningmaterialsinc.com/"
+     ],
+     "partition_evidence": "Sells toilet partitions; customer testimonials mention partition installs, but installation is not listed as a service.",
+     "red_flags": [
+      "Partition distributor (direct buy-around risk, carries many of our brands)"
+     ],
+     "reason": "Primarily a Nashville partition distributor that ships nationally; no installation service or Chattanooga coverage stated.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Builders Hardware Co.",
+     "base_city": "Chattanooga",
+     "state": "TN",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "reason": "No website or listing found connecting it to toilet partitions; nothing verifiable.",
+     "evidence_urls": [],
+     "added_by_checker": false
+    },
+    {
+     "name": "Prestige Sales Company",
+     "base_city": "Chattanooga",
+     "state": "TN",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "reason": "Only seen as a distributor in a GlobalSpec industrial partitions search result; no website or installation evidence read.",
+     "evidence_urls": [],
+     "added_by_checker": false
+    },
+    {
+     "name": "JM Specialties, Inc.",
+     "base_city": "Chattanooga",
+     "state": "TN",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [
+      "C.H.I.",
+      "Cornell",
+      "Genie"
+     ],
+     "phone": "(423) 219-5317",
+     "contact_page": "https://www.jmspecialtiesinc.com/contact",
+     "website": "https://www.jmspecialtiesinc.com/",
+     "evidence_urls": [
+      "https://www.jmspecialtiesinc.com/"
+     ],
+     "partition_evidence": "Only operable walls and accordion partitions, plus doors and dock equipment; no toilet partitions.",
+     "reason": "Local commercial door/dock and operable-wall company; its 'partitions' are accordion/operable walls, not toilet partitions.",
+     "added_by_checker": false
+    },
+    {
+     "name": "InEx Systems Inc",
+     "base_city": "Atlanta area",
+     "state": "GA",
+     "verdict": "reject",
+     "installs_partitions": "likely",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "website": "https://www.inexsystems.com/",
+     "evidence_urls": [
+      "https://www.inexsystems.com/"
+     ],
+     "partition_evidence": "Site header describes 'Division 10 toilet partitions and accessories'; rest of the site (Wix, script-rendered) could not be read.",
+     "reason": "Atlanta-area Division 10 firm; could not read its services, contact details or service area, and nothing says it serves Tennessee. Worth a manual browser check.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Interior Trim & Supply Inc",
+     "base_city": "Chattanooga",
+     "state": "TN",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "reason": "Search results show only BBB millwork/molding/building materials listings; no website and no partition work found.",
+     "evidence_urls": [],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "lexington",
+   "state": "KY",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/lexington.json: read; the maps and web results were almost all remodelers, plumbers, glass or tile shops and stores. Web URLs were Google redirects with no domain. Checked Spraymasters (residential refinishing, no partitions) and Economy Glass (commercial glazing, no partitions). croakernorge.com failed DNS resolution (outside the session's allowed network domains or doesn't exist).",
+    "Existing research/installers/louisville.json and cincinnati.json: used for regional candidates within about 75 miles (Atlas, U.S. Specialties, MiD, CIH).",
+    "ASI find-a-rep: 404 after redirect (blocked/failed)",
+    "Bobrick rep locator: only found through search, no Kentucky rep named; not fetched",
+    "Scranton Products: the page reached was a Lexington DoubleTree case study that names no dealer or installer",
+    "Bradley, Hadrian, Metpar, General Partitions, Ampco locators: not tried (search cap)",
+    "The Blue Book: 403 on both the profile and search pages; Contractors Choice details came only from search snippets",
+    "BuildingConnected / Procore: not tried (search cap)",
+    "BBB partition category pages (Clay KY, Lexington KY): worked; results were mostly out of the area (TN, OH, IN, Bowling Green KY)",
+    "Commerce Lexington directory: page loads by JavaScript, no content",
+    "CDF Distributors Lexington: worked; doors, frames and hardware only, no partitions",
+    "WebSearch: 8 of 8 used: toilet partition installation Lexington; Division 10 contractor Lexington; restroom partitions installer KY; Bobrick rep KY; nearby cities (Frankfort/Richmond/Georgetown); Contractors Choice; toilet compartments subcontractor Lexington; KY installers Lexington/Louisville. Results were dominated by One Point Partitions pages; no local Lexington partition installer with its own website was found.",
+    "Yelp: not reached (search cap)"
+   ],
+   "found_count": 7,
+   "checked": [
+    {
+     "name": "CIH (Independence, KY branch; Schricker brand)",
+     "base_city": "Independence",
+     "state": "KY",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Accurate",
+      "Bobrick",
+      "General Partitions",
+      "Mills Bradley",
+      "Scranton Products",
+      "Showershapes",
+      "ASI (accessories)",
+      "Bradley (accessories)"
+     ],
+     "website": "https://cih-inc.com/",
+     "phone": "513-538-2705",
+     "contact_page": "https://cih-inc.com/contact-us/",
+     "partition_evidence": "Schricker page lists toilet partitions in several materials and says CIH will 'ship and install anywhere in the USA', with installation available for every product it sells.",
+     "evidence_urls": [
+      "https://cih-inc.com/",
+      "https://cih-inc.com/schricker/",
+      "https://cih-inc.com/toilet-partitions/",
+      "https://cih-inc.com/contact-us/"
+     ],
+     "red_flags": [
+      "Sells and supplies partitions itself (buy-around risk)",
+      "Independence KY is about 75 miles from Lexington; no Lexington-specific service area stated, only a nationwide ship-and-install claim",
+      "Main office is Indianapolis; KY branch phone is a 513 number"
+     ],
+     "reason": "Supplies and installs toilet partitions from several major brands, has a Kentucky branch, and says it installs anywhere in the USA. It is also a partition distributor, so the buy-around risk is high.",
+     "added_by_checker": false
+    },
+    {
+     "name": "The Atlas Companies (Atlas Co.)",
+     "base_city": "Louisville",
+     "state": "KY",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://www.atlas-co.com",
+     "phone": "502-714-9867",
+     "contact_page": "https://www.atlas-co.com/contact/",
+     "partition_evidence": "Division 10 page lists 'toilet compartments and accessories' and says Atlas is 'proud to supply and install most items specified here'.",
+     "evidence_urls": [
+      "https://www.atlas-co.com",
+      "https://www.atlas-co.com/division-10/",
+      "https://www.atlas-co.com/contact/"
+     ],
+     "red_flags": [
+      "Supplies the Division 10 items it installs (buy-around risk)",
+      "Service area not stated; project examples are in Kentucky and Indiana",
+      "Louisville is about 75 miles from Lexington",
+      "Email obfuscated on site"
+     ],
+     "reason": "Commercial Division 10 contractor that supplies and installs toilet compartments. Its Kentucky project work puts it within regional reach, but it hasn't confirmed Lexington service.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Contractors Choice, Inc.",
+     "base_city": "Lexington",
+     "state": "KY",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "partition_evidence": "Only from search-result snippets of a Blue Book profile: lists toilet partitions and CSI 10 21 13 Toilet Compartments, 10 28 13 toilet accessories, hollow metal doors and finishing hardware. Lexington KY 40511, operating since 1990. The profile itself returned 403 and could not be read.",
+     "evidence_urls": [
+      "https://www.thebluebook.com/iProView/1072823/contractors-choice-inc/subcontractors/"
+     ],
+     "red_flags": [
+      "No company website found",
+      "Blue Book page could not be opened directly; details come only from search snippets",
+      "Install vs supply-only not confirmed"
+     ],
+     "reason": "Lexington-based Division 10 subcontractor whose directory listing includes toilet compartments. Installation and contact details are unverified because the company has no website and the listing could not be opened.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Schiller Hardware & Door Systems (Lexington office)",
+     "base_city": "Lexington",
+     "state": "KY",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://goschiller.com/",
+     "phone": "859-233-4427",
+     "contact_page": "https://goschiller.com/contact/",
+     "partition_evidence": "Homepage 'Divisions 8 & 10' lists washroom accessories alongside doors, frames and hardware; toilet partitions are not named.",
+     "evidence_urls": [
+      "https://goschiller.com/",
+      "https://goschiller.com/contact/"
+     ],
+     "red_flags": [
+      "Mainly a door and hardware distributor; partitions not mentioned",
+      "No email listed"
+     ],
+     "reason": "Commercial Division 8/10 supplier with a Lexington office that lists washroom accessories, but there is no evidence of toilet partition installation.",
+     "added_by_checker": false
+    },
+    {
+     "name": "U.S. Specialties",
+     "base_city": "Louisville",
+     "state": "KY",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://www.usspecialties.com",
+     "phone": "(502) 587-9000",
+     "email": "info@usspecialties.com",
+     "contact_page": "https://usspecialties.com/us-specialties/",
+     "partition_evidence": "Lists 'Specialties' among products and 'Installation' among services; toilet partitions are not named.",
+     "evidence_urls": [
+      "https://www.usspecialties.com",
+      "https://usspecialties.com/us-specialties/"
+     ],
+     "red_flags": [
+      "Toilet partitions not explicitly mentioned",
+      "Louisville is about 75 miles from Lexington"
+     ],
+     "reason": "Commercial specialties supplier and installer that says it serves Kentucky, Ohio and Indiana. Its site does not show toilet partition work.",
+     "added_by_checker": false
+    },
+    {
+     "name": "MiD Inc.",
+     "base_city": "Louisville",
+     "state": "KY",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "mostly",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://www.midinc.net",
+     "phone": "(502) 210-3411",
+     "email": "contact@midinc.net",
+     "contact_page": "https://www.midinc.net/contact",
+     "partition_evidence": "Division 10 Bath Accessories page offers turnkey purchase and installation (grab bars, toilet paper holders and the like) for commercial and multifamily projects; toilet partitions are not mentioned.",
+     "evidence_urls": [
+      "https://www.midinc.net",
+      "https://www.midinc.net/products/division-10-bath-accessories"
+     ],
+     "red_flags": [
+      "No toilet partition evidence",
+      "Focus includes multifamily shower doors, closets and appliances"
+     ],
+     "reason": "Installs Division 10 bath accessories for commercial and multifamily projects in Kentucky, but nothing shows partition installation.",
+     "added_by_checker": false
+    },
+    {
+     "name": "One Point Partitions",
+     "base_city": "Gallatin",
+     "state": "TN",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://onepointpartitions.com/",
+     "partition_evidence": "Site returned 403. Search snippets describe an online partition distributor with a Lexington delivery terminal that ships stalls in 4 to 6 days, with video tutorials for buyers who install themselves. No installation service was confirmed.",
+     "evidence_urls": [
+      "https://onepointpartitions.com/?p=2839"
+     ],
+     "red_flags": [
+      "Direct competitor: sells partitions (high buy-around risk)",
+      "Site blocked automated access (403)",
+      "No installation service seen; DIY tutorials suggest supply-only"
+     ],
+     "reason": "An online partition seller that competes with Next Partitions. There is no evidence that it installs.",
+     "added_by_checker": false
+    }
+   ]
+  }
+ ],
+ "licenses": [
+  {
+   "state": "AR",
+   "results": [
+    {
+     "name": "American Building Specialties",
+     "area": "little-rock",
+     "status": "not_online",
+     "registry": "Arkansas Contractors Licensing Board contractor search (aclb2.arkansas.gov/clbsearch.php), linked from the board's 'Find A Licensed Contractor' page",
+     "source_url": "https://labor.arkansas.gov/licensing/arkansas-contractors-licensing-board/find-a-licensed-contractor/",
+     "note": "Checked 2026-11-19. The board's own lookup page links to http://aclb2.arkansas.gov/clbsearch.php, which did not load from here: HTTP 503 'upstream connect error ... connection timeout' over http, and a connection reset over https. A third-party page mentions a nightly CSV roster from the board, but no contractor roster link appears on labor.arkansas.gov/resources/rosters/ or on the find-a-contractor page. License status is unknown and no license number was found. Two web searches turned up no license record for this name, which does not prove there isn't one. Context: the company's blog (americanbuildingspecialties.blogspot.com) describes it as a supplier of commercial building products, including hollow metal doors and frames, hardware, toilet partitions and accessories, lockers and signage. It lists no city, phone or license number and does not say the company installs. A 2000 Talk Business profile (https://talkbusiness.net/2000/08/american-building-specialties/, per search snippet only, not opened) places it in North Little Rock with a Springdale branch, as a commercial hardware distributor. Arkansas requires a state commercial license only at or above the threshold ($50,000 per the board's law, as summarized in search results). Little Rock contractor cards are issued by the city when permits are pulled, and no public online registry for them was found. Next step: check the ACLB search by hand when it is back up, or call the board (501-372-4661, per search result snippet)."
+    }
+   ],
+   "registries": [
+    "Arkansas Contractors Licensing Board search (aclb2.arkansas.gov/clbsearch.php): unreachable (HTTP 503 and connection reset), no automated lookup",
+    "labor.arkansas.gov 'Find A Licensed Contractor' and Rosters pages: reachable, but no downloadable contractor roster was linked",
+    "City of Little Rock contractor card: no public online registry found, not checked",
+    "WebSearch (2 of 5 used): no license record found for the business name"
+   ]
+  },
+  {
+   "state": "AL",
+   "results": [
+    {
+     "name": "TriMerge Construction Group LLC",
+     "area": "birmingham",
+     "status": "not_found",
+     "registry": "Alabama Licensing Board for General Contractors license roster (licensesearch.alabama.gov/genconbd)",
+     "source_url": "https://licensesearch.alabama.gov/genconbd",
+     "note": "Searched the full board roster on 2026-11-19 (11,145 rows) for TriMerge, Tri-Merge, Tri Merge and Trim* variants: no match. It may hold a license under another legal name, or it may only work below the state threshold. City of Birmingham contractor/business license not checked online. Confirm with the business or the board."
+    },
+    {
+     "name": "Building Specialties Company (BSCO), now CBX Solutions Birmingham branch",
+     "area": "birmingham",
+     "status": "not_found",
+     "registry": "Alabama Licensing Board for General Contractors license roster (licensesearch.alabama.gov/genconbd)",
+     "source_url": "https://licensesearch.alabama.gov/genconbd",
+     "note": "Searched the board roster on 2026-11-19 for Building Specialties, BSCO and CBX: no match. The only near match was Advanced Building Specialties Inc (Petal, MS, license 21728), which is a different company. The CBX branch page (cbxsolutions.com/branches/birmingham-300/) returned 403, so the legal entity name couldn't be confirmed. The branch may be a supplier only, or licensed under a parent entity name. City of Birmingham license not checked online."
+    },
+    {
+     "name": "G. C. Specialties, Inc. (GCS)",
+     "area": "mobile",
+     "status": "found_active",
+     "license_type": "General contractor, BC-S: Doors; Railing Installation; Specialty Item Installation; Wall Systems and Panels; bid limit Unlimited",
+     "license_number": "26894",
+     "registry": "Alabama Licensing Board for General Contractors license roster",
+     "source_url": "https://licensesearch.alabama.gov/genconbd/Details/1629",
+     "note": "Roster record 'G C SPECIALTIES INC', Mobile, AL. Expiration date 8/31/2027, so the license is current as of 2026-11-19. Phone on the board record: (251) 478-1799. City of Mobile registration with the building official not checked online."
+    },
+    {
+     "name": "Door Specialists Inc. (DSI Systems)",
+     "area": "mobile",
+     "status": "found_active",
+     "license_type": "Subcontractor: Doors and Hardware Installation; Doors, Windows and Glass; Overhead Doors",
+     "license_number": "S-58781",
+     "registry": "Alabama Licensing Board for General Contractors license roster",
+     "source_url": "https://licensesearch.alabama.gov/genconbd/Details/8369",
+     "note": "Roster record 'DOOR SPECIALISTS INC', Mobile, AL. Expiration date 9/30/2027 (current). Phone on the board record: (251) 479-9834. The listed specialties don't include partitions or bathroom accessories. City of Mobile registration not checked online."
+    },
+    {
+     "name": "Procision Specialty",
+     "area": "mobile",
+     "status": "found_active",
+     "license_type": "Subcontractor: Bathroom Accessories; Doors and Hardware Installation",
+     "license_number": "S-57174",
+     "registry": "Alabama Licensing Board for General Contractors license roster",
+     "source_url": "https://licensesearch.alabama.gov/genconbd/Details/7491",
+     "note": "Roster record 'PROCISION SPECIALTY LLC', Mobile, AL. Expiration date 5/31/2027 (current). Phone on the board record: (251) 583-7411. The listed specialties don't name partitions. City of Mobile registration not checked online."
+    },
+    {
+     "name": "O & D Supply LLC",
+     "area": "mobile",
+     "status": "found_active",
+     "license_type": "Subcontractor: Bathroom Accessories; Partitions; Specialty Item Installation",
+     "license_number": "S-48760",
+     "registry": "Alabama Licensing Board for General Contractors license roster",
+     "source_url": "https://licensesearch.alabama.gov/genconbd/Details/3985",
+     "note": "Roster record 'O & D SUPPLY LLC', Mobile, AL. Expiration date 5/31/2027 (current). Phone on the board record: (251) 473-4013. This is the only one of the six whose license names Partitions as a specialty. City of Mobile registration not checked online."
+    }
+   ],
+   "registries": [
+    "Alabama Licensing Board for General Contractors: the license roster at https://licensesearch.alabama.gov/genconbd loads the full roster in one public page (detail pages at /genconbd/Details/<id>, plus a CSV link at /genconbd/FullRosterReport). Automated lookup worked, and all six names were checked on 2026-11-19.",
+    "City of Birmingham contractor/business license: not checked (no public online registry looked up).",
+    "City of Mobile building official contractor registration: not checked (no public online registry looked up).",
+    "CBX Solutions Birmingham branch page: returned 403 to automated fetch."
+   ]
+  },
+  {
+   "state": "GA",
+   "results": [
+    {
+     "name": "Restroom Stalls and All (RSA)",
+     "area": "birmingham",
+     "status": "not_found",
+     "registry": "Alabama Licensing Board for General Contractors, License Roster (licensesearch.alabama.gov/genconbd, full roster CSV)",
+     "source_url": "https://licensesearch.alabama.gov/genconbd/FullRosterReport",
+     "note": "Checked 2026-11-19. The full Alabama GC Board roster CSV has no entry with 'Restroom', 'Stalls' or 'RSA' in the name, none matching the company phone (844) 817-8255, and none of the Gainesville, GA licensees is this company. Alabama requires this license only for commercial jobs of $100,000 or more (genconbd.alabama.gov), so most partition installs don't need it. Birmingham's city business license for contractors has no public online lookup that we checked. The company site (restroomstallsandall.com) gives its base as Gainesville, GA, phone 1-844-817-8255, and says it 'installs them with our own crews across the Southeast' (GA, FL, AL, TN, SC, NC). It lists no contractor license numbers. Its Georgia home-state board lookup (verify.sos.ga.gov) returned HTTP 403 to automated access."
+    },
+    {
+     "name": "Restroom Stalls and All (RSA)",
+     "area": "chattanooga",
+     "status": "not_online",
+     "registry": "Tennessee Board for Licensing Contractors, Verify public search (verify.tn.gov, redirects to search.cloud.commerce.tn.gov)",
+     "source_url": "https://search.cloud.commerce.tn.gov/",
+     "note": "The Tennessee license search is a JavaScript app behind reCAPTCHA, so no automated lookup was possible. Search by hand there. Tennessee requires a state contractor license only for prime contracts of $25,000 or more. Carpentry-type subcontractors working for a contractor are exempt (TN board application package). Chattanooga sets no separate city general contractor license (repo research). The company site lists Tennessee among the states it serves and lists no license numbers (restroomstallsandall.com). Base is Gainesville, GA, phone 1-844-817-8255."
+    },
+    {
+     "name": "Accessories Unlimited Inc (AUI)",
+     "area": "chattanooga",
+     "status": "not_online",
+     "registry": "Tennessee Board for Licensing Contractors, Verify public search (verify.tn.gov, redirects to search.cloud.commerce.tn.gov)",
+     "source_url": "https://search.cloud.commerce.tn.gov/",
+     "license_type": "TN: unknown (not checked). AL: Subcontractor, Bathroom Accessories, Cabinet Installation, Wall Protection Systems",
+     "license_number": "AL S-54098 (Alabama, not Tennessee)",
+     "note": "The Tennessee search is a JavaScript app behind reCAPTCHA, so no automated lookup was possible. Check by hand. Tennessee requires a license only for prime contracts of $25,000 or more. Separately, the Alabama GC Board full roster (https://licensesearch.alabama.gov/genconbd/FullRosterReport, read 2026-11-19) lists ACCESSORIES UNLIMITED INC, Stone Mountain, GA, phone (404) 298-1779, license S-54098, specialty 'SUBCONTRACTOR: BATHROOM ACCESSORIES, CABINET INSTALLATION, WALL PROTECTION SYSTEMS', expiring 12/31/2026 (Details page /genconbd/Details/6062). The company site (accessoriesunlimited.net) gives the base as Stone Mountain, GA, phone 404-298-1779, and lists FL, NC, GA, AL, SC and TN. It mentions 'Full Service Installation' but doesn't say whether that covers partitions."
+    }
+   ],
+   "registries": [
+    "Alabama Licensing Board for General Contractors License Roster (https://licensesearch.alabama.gov/genconbd and FullRosterReport CSV): automated lookup worked. The full roster downloaded and was searched.",
+    "Tennessee Board for Licensing Contractors Verify search (verify.tn.gov -> https://search.cloud.commerce.tn.gov/): automated lookup not possible. It is a JavaScript app with reCAPTCHA.",
+    "Georgia Secretary of State license verification (https://verify.sos.ga.gov/verification/): returned HTTP 403 to automated access. Not used, because the areas are in AL and TN.",
+    "City of Birmingham business license: no public online lookup used.",
+    "City of Chattanooga: no city general contractor license per repo research. Nothing to look up."
+   ]
+  },
+  {
+   "state": "MS",
+   "results": [
+    {
+     "name": "Partitions of Gulfport Corporation",
+     "area": "mobile (base city Gulfport, MS)",
+     "status": "not_found",
+     "registry": "Mississippi State Board of Contractors, contractor search (search.msboc.us)",
+     "source_url": "https://search.msboc.us/ConsolidatedSearch.cfm",
+     "note": "Searched the MSBOC public contractor search on 2026-11-19 for 'Partitions of Gulfport', 'Partitions of', 'Partitions', 'Gulfport' and 'Gulfport Corp'. No record under this name. The 'Gulfport' search returned other companies only (e.g. Gulfport Roofers, Inc.; R & S Construction of Gulfport, Inc.). A state license is only needed above the threshold, so having none doesn't by itself mean the business is breaking a rule for smaller jobs. The Mobile-area local rule wasn't given in this task and wasn't checked."
+    },
+    {
+     "name": "Partitions, Inc.",
+     "area": "jackson (base city Byram, MS)",
+     "status": "found_inactive",
+     "license_type": "Commercial (MC)",
+     "license_number": "09048-MC",
+     "registry": "Mississippi State Board of Contractors, contractor search (search.msboc.us)",
+     "source_url": "https://search.msboc.us/Detail.cfm?ContractorID=15627&ContractorType=Commercial&varDataSource=BOC",
+     "note": "The MSBOC record shows PARTITIONS, INC., commercial license 09048-MC, status 'Licensed Expired'. First issued 01/08/1992, expired 01/11/2012. Listed in Jackson, MS 39272 (Hinds County), which is the Byram ZIP. The search found no current record under this name. A different 'PARTITIONS INC.' (27851-MC, Licensed) is based in Stone Mountain, GA and is not this business. Jackson's local rule (registration with the city building official) has no public online registry that we found, so it wasn't checked. Above the state threshold the company would need a current MSBOC license, so confirm whether it holds one under another name."
+    }
+   ],
+   "registries": [
+    "Mississippi State Board of Contractors public contractor search (https://search.msboc.us/ConsolidatedSearch.cfm): automated lookup worked through the public search results and detail pages, with no sign-in or captcha",
+    "City of Jackson building official contractor registration: no public online registry found or checked"
+   ]
+  },
+  {
+   "state": "LA",
+   "results": [
+    {
+     "name": "The Lipper-Stutsman Co., Inc.",
+     "area": "shreveport",
+     "status": "found_active",
+     "registry": "Louisiana State Licensing Board for Contractors (LSLBC) public contractor search (arlspublic.lslbc.louisiana.gov)",
+     "license_number": "CL.01442",
+     "license_type": "Commercial License Certificate, classification Building Construction",
+     "source_url": "https://arlspublic.lslbc.louisiana.gov/Public/DetailedSearch/ByName",
+     "note": "Checked 2026-11-19. A name search for 'Lipper' returned LIPPER-STUTSMAN COMPANY, INC., Shreveport, LA. The detail record shows license CL.01442, Commercial License Certificate, status Active, effective 03/06/2026, expires 03/05/2029, first issued 03/05/1967, classification BUILDING CONSTRUCTION. The record lists company phone (318) 687-1585. The detail page came from the endpoint /Public/_DisplayOnlineDetails/ behind the search page. Shreveport's city registration covers only air conditioning, heating, electrical and plumbing contractors, so no city registry check applies to partition installation."
+    },
+    {
+     "name": "WERCO Building Specialties, Inc.",
+     "area": "jackson",
+     "status": "not_found",
+     "registry": "Louisiana State Licensing Board for Contractors (LSLBC) contractor search (home state); Mississippi State Board of Contractors search (search.msboc.us) for the Jackson area",
+     "source_url": "https://arlspublic.lslbc.louisiana.gov/Public/DetailedSearch/ByName",
+     "note": "Checked 2026-11-19. LSLBC name searches for 'WERCO', 'Werco', 'WERCO Building' and 'W E R C O' all returned 'No results found'. A Baton Rouge city search found no WERCO entry. LSLBC says only currently licensed or registered contractors appear in its results. The Mississippi Board of Contractors keyword search for 'Werco' returned 'No records were found matching your criteria' (http://search.msboc.us/ConsolidatedSearch.cfm); the same search does return matches for other names. The company site (https://wercospecs.com/) gives the name as Werco Building Specialties, Inc., based in Baton Rouge, LA. It calls the company a wholesale Division 10 distributor and lists toilet partitions as a product, but it does not mention installation. That would explain why it has no contractor license. The task gave no area rules for Jackson; if Jackson is Jackson, MS, the Mississippi board is the right registry."
+    }
+   ],
+   "registries": [
+    "Louisiana State Licensing Board for Contractors (LSLBC), https://arlspublic.lslbc.louisiana.gov/Public/DetailedSearch/ByName: automated lookup worked. Results came from the site's public search endpoint /Public/_DetailedSearch/ and the detail endpoint /Public/_DisplayOnlineDetails/. No sign-in was needed.",
+    "Mississippi State Board of Contractors, http://search.msboc.us/ConsolidatedSearch.cfm: automated keyword lookup worked (checked against a known name).",
+    "City of Shreveport Permits & Inspections: not checked. Its registration covers only HVAC, electrical and plumbing contractors, not partition installers."
+   ]
+  },
+  {
+   "state": "TN",
+   "results": [
+    {
+     "name": "William S. Trimble Co., Inc.",
+     "area": "knoxville",
+     "status": "not_online",
+     "registry": "Tennessee Board for Licensing Contractors via Verify TN (search.cloud.commerce.tn.gov); City of Knoxville Plans Review and Inspections contractor registration (no public list)",
+     "license_type": "TN Alarm Contractor License (self-reported on company site; not a contractor license from the Board for Licensing Contractors)",
+     "license_number": "2063 (alarm contractor, self-reported)",
+     "source_url": "https://www.wmstrimble.com",
+     "note": "Checked 2026-11-19. Could not check automatically: the state's Verify TN search (verify.tn.gov redirects to search.cloud.commerce.tn.gov) is a JavaScript app, and its search API is protected by reCAPTCHA (/api/recaptcha/verify in the page bundle). The Knoxville registration page (https://permits.knoxvilletn.gov/Register-To-Pull-A-Permit) says permit applicants must hold a city registration matched to their qualifications, sometimes alongside a TN state license. It offers no public lookup or list of registered contractors. Phone the city at 865-215-4311 to confirm. The company site lists Knoxville headquarters and company phone (865) 573-1911. It sells 'Toilet Acc/Partitions' and offers installation. The only licenses it shows are TN Alarm Contractor License #2063 and VA DCJS License #11-30049. It shows no Board for Licensing Contractors license number. Confirm by hand on verify.tn.gov."
+    },
+    {
+     "name": "Best Commercial Installers",
+     "area": "chattanooga",
+     "status": "not_online",
+     "registry": "Tennessee Board for Licensing Contractors via Verify TN (search.cloud.commerce.tn.gov)",
+     "license_type": "",
+     "license_number": "",
+     "source_url": "https://www.bestcommercialinstallers.com/",
+     "note": "Checked 2026-11-19. Could not check automatically: Verify TN is a JavaScript app and its search is protected by reCAPTCHA. Chattanooga has no city contractor license (the city rule on file is the Land Development Office), so the state license is the only check, and it applies to jobs above the state threshold (reported as $25,000 including labor and materials; not confirmed on the state's own page in this pass). The company site says it is based in Nashville, TN and serves Chattanooga, Knoxville, Brentwood and Memphis. It installs commercial doors, frames, hardware, commercial bathroom partitions and garage or hangar doors. Company phone is (615) 236-7449. The site lists no state license number. Confirm by hand on verify.tn.gov, and ask the business for its BLC license number if jobs may go over the threshold."
+    }
+   ],
+   "registries": [
+    "Tennessee Board for Licensing Contractors, Verify TN (verify.tn.gov, which redirects to search.cloud.commerce.tn.gov): no automated lookup. It is a client-side Next.js app, and its search API sits behind reCAPTCHA, so mark not_online and check by hand.",
+    "City of Knoxville Plans Review and Inspections, contractor registration (permits.knoxvilletn.gov/Register-To-Pull-A-Permit): explains the registration requirement but offers no public lookup or list of registered contractors. Phone 865-215-4311 to confirm.",
+    "City of Chattanooga: no city contractor license for this work, so there is nothing to look up. Only the state threshold applies."
+   ]
+  },
+  {
+   "state": "KY",
+   "results": [
+    {
+     "name": "CIH (Independence, KY branch; Schricker brand)",
+     "area": "lexington",
+     "status": "not_found",
+     "registry": "Lexington-Fayette Urban County Government (LFUCG) contractor registration, Accela Citizen Access 'Search for Licensee' (Division of Building Inspection)",
+     "source_url": "https://aca-prod.accela.com/LEXKY/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+     "note": "Checked 2026-11-19. Business-name searches for 'CIH', 'CIH INC', 'C.I.H', 'C I H' and 'Schricker' all returned 'Your search returned no results.' The search appears to match on how a name begins, so CIH may be registered under a legal name we don't know. Kentucky has no state license for general or partition installation work (state licenses cover electrical, plumbing and HVAC only). LFUCG requires all contractors to register with Building Inspection (occupational license plus insurance certificate), and unregistered contractors cannot get building permits (https://www.lexingtonky.gov/departments/building-inspection; https://www.lexingtonky.gov/working/bids-quotes-rfps/how-register-contractor). Ask CIH for its Lexington registration number before work in Fayette County."
+    },
+    {
+     "name": "The Atlas Companies (Atlas Co.)",
+     "area": "lexington",
+     "status": "not_found",
+     "registry": "LFUCG contractor registration, Accela Citizen Access 'Search for Licensee'",
+     "source_url": "https://aca-prod.accela.com/LEXKY/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+     "note": "Checked 2026-11-19. A search for 'Atlas' returned 4 records, none of them this company: Atlas Roofing and Siding LLC, Atlas Window Co Inc, Atlas Landscapes LLC and Atlas Comfort Air (Nicholasville). Searches for 'The Atlas' and 'Atlas Co' found no record for The Atlas Companies of Louisville ('Atlas Co' resolved to Atlas Comfort Air, an unrelated HVAC business). It may be registered under a different legal name. Ask for its Lexington registration number."
+    },
+    {
+     "name": "Contractors Choice, Inc.",
+     "area": "lexington",
+     "status": "not_found",
+     "registry": "LFUCG contractor registration, Accela Citizen Access 'Search for Licensee'",
+     "source_url": "https://aca-prod.accela.com/LEXKY/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+     "note": "Checked 2026-11-19. Searches for 'Contractors Choice', 'Contractor's Choice', 'Contractors' Choice' and 'Contractors C' all returned no results. This is a Lexington-based business, so a missing registration is worth asking about. It may be registered under another legal or DBA name."
+    },
+    {
+     "name": "Schiller Hardware & Door Systems (Lexington office)",
+     "area": "lexington",
+     "status": "found_inactive",
+     "license_number": "17703",
+     "license_type": "General Contractor (LFUCG contractor registration)",
+     "registry": "LFUCG contractor registration, Accela Citizen Access 'Search for Licensee'",
+     "source_url": "https://aca-prod.accela.com/LEXKY/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+     "note": "Checked 2026-11-19. Found one record: Schiller Hardware Inc, General Contractor, registration no. 17703, base city Lexington KY. The record was issued 03/06/2017 and expired 12/31/2017. Its related record, 'Contractor Registration ALFRED L SCHILLER HARDWARE', is marked Complete. The page shows the status field as 'Issued', but the expiration date is 12/31/2017, and no current-year registration was found under 'Schiller' or 'Schiller Hardware'. Treat it as lapsed unless the company shows a current registration. Lexington registration renews every calendar year."
+    },
+    {
+     "name": "U.S. Specialties",
+     "area": "lexington",
+     "status": "found_inactive",
+     "license_number": "11052",
+     "license_type": "Specialty Contractor (LFUCG contractor registration)",
+     "registry": "LFUCG contractor registration, Accela Citizen Access 'Search for Licensee'",
+     "source_url": "https://aca-prod.accela.com/LEXKY/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+     "note": "Checked 2026-11-19. A search for 'U S Specialties' found one record: U S Specialties, Specialty Contractor, registration no. 11052, base city Louisville KY, with company phone 502-587-9000. The record lists 'The Paul Bickel Co Inc' and a 'DIV 10 SPECIALITY PRODUCTS' description, and its expiration date is 12/31/2016. Searches for 'US Specialties', 'U.S. Specialties' and 'Bickel' returned no other records. The registration has lapsed, so the company would need to re-register before taking permitted work in Fayette County."
+    },
+    {
+     "name": "MiD Inc.",
+     "area": "lexington",
+     "status": "not_found",
+     "registry": "LFUCG contractor registration, Accela Citizen Access 'Search for Licensee'",
+     "source_url": "https://aca-prod.accela.com/LEXKY/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+     "note": "Checked 2026-11-19. A search for 'MiD' returned 16 unrelated businesses beginning with 'Mid' (Midwest, MidSouth, Mid-America and others). Searches for 'MID INC', 'MID, INC', 'M I D' and 'MID INCORPORATED' returned no results. No record was found for MiD Inc. of Louisville, though it may be registered under another legal name."
+    }
+   ],
+   "registries": [
+    "Kentucky state: no state license for general or partition installation work (state licenses cover electrical, plumbing and HVAC only), so there was no state board lookup to run.",
+    "Lexington-Fayette Urban County Government contractor registration, public Accela Citizen Access 'Search for Licensee' (https://aca-prod.accela.com/LEXKY/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y): the automated lookup worked without signing in. Searches were by business name and appear to match on how a name begins, so a business registered under a different legal name would not show up. Two records found, both lapsed: Schiller #17703, expired 12/31/2017, and U S Specialties #11052, expired 12/31/2016. No record was found for the other four businesses.",
+    "LFUCG Building Inspection pages (https://www.lexingtonky.gov/departments/building-inspection and https://www.lexingtonky.gov/working/bids-quotes-rfps/how-register-contractor) confirm that every contractor must register (occupational license plus insurance certificate) and that unregistered contractors cannot get building permits.",
+    "WebSearch used 2 of 5."
+   ]
+  }
+ ],
+ "dropped": []
+}

@@ -1,0 +1,77 @@
+{
+ "area": "shreveport",
+ "found_count": 2,
+ "sources_tried": [
+  "Seed file shreveport.json (maps + web): worked; mostly remodelers, plumbers and stores. Plausible: Lipper-Stutsman, Tackett. Designer Products and Installation checked: residential remodeler, no partitions",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads but results are dropdown/JS only, no Louisiana reps readable",
+  "Scranton Products find-a-rep: 404",
+  "ASI Global Partitions find-a-rep: 404",
+  "Bradley, Hadrian, Metpar, General Partitions, Ammco locators: not tried (fetch budget spent on the locators above, which returned nothing)",
+  "The Blue Book (thebluebook.com iProView pages): blocked, 403",
+  "downtobid.com Shreveport doors / toilet-partitions contractor lists: blocked, 429",
+  "ConstructConnect Shreveport restroom renovation bid (partitions in scope): bidders gated behind a subscription",
+  "BuildingConnected / Procore public profiles: not reached",
+  "WebSearch x8 (cap reached): toilet partitions installation Shreveport; Tackett Building Specialties; Blue Book Shreveport; Division 10 LA cities; commercial partitions LA/TX/AR; Shreveport doors frames toilet partitions; installer Longview/Tyler/Texarkana/Monroe; building specialties Shreveport/Bossier. Results were dominated by One Point Partitions (national online seller, no local base, so skipped)",
+  "Rejected as out of range or not a fit: Himmel's Commercial Doors (Prairieville LA, ~250 mi; does install partitions), Werco Building Specialties (Baton Rouge, ~250 mi), Martin Bros (California), Cook & Boardman Door Pro Systems (Houston), CDF Distributors Shreveport (doors/frames/hardware only, no partitions), Trinity Surface Solutions and 318 Construction (no partition work)"
+ ],
+ "candidates": [
+  {
+   "name": "The Lipper-Stutsman Co., Inc.",
+   "base_city": "Shreveport",
+   "state": "LA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://www.lipperstutsman.com/",
+   "phone": "318-687-1585",
+   "contact_page": "http://www.lipperstutsman.com/local-lipper-stutsman-company-contact-shreveport-la",
+   "evidence_urls": [
+    "http://www.lipperstutsman.com/",
+    "http://www.lipperstutsman.com/local-lipper-stutsman-company-commercial-toilet-bathroom-partitions-accessories-shreveport-la",
+    "http://www.lipperstutsman.com/local-lipper-stutsman-company-contact-shreveport-la"
+   ],
+   "partition_evidence": "Its Toilet Partitions & Accessories page says it will 'custom install toilet partitions for any sized commercial property' in Northwest Louisiana and East Texas, and has the products delivered to the project location.",
+   "reason": "Shreveport commercial door, frame, hardware and toilet partition company, in business since 1948. It both supplies and installs partitions for commercial properties. It also sells partitions itself, so it is a buy-around risk. Its site names no partition brands. The contact page shows two different staff email addresses that don't match, so no company email is given here. Toll free number: 800-451-2840.",
+   "red_flags": [
+    "Supplies partitions itself (distributor or competitor), a buy-around risk",
+    "Contact page email text and mailto link don't match"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "The Lipper-Stutsman Co., Inc.",
+    "area": "shreveport",
+    "status": "found_active",
+    "registry": "Louisiana State Licensing Board for Contractors (LSLBC) public contractor search (arlspublic.lslbc.louisiana.gov)",
+    "license_number": "CL.01442",
+    "license_type": "Commercial License Certificate, classification Building Construction",
+    "source_url": "https://arlspublic.lslbc.louisiana.gov/Public/DetailedSearch/ByName",
+    "note": "Checked 2026-11-19. A name search for 'Lipper' returned LIPPER-STUTSMAN COMPANY, INC., Shreveport, LA. The detail record shows license CL.01442, Commercial License Certificate, status Active, effective 03/06/2026, expires 03/05/2029, first issued 03/05/1967, classification BUILDING CONSTRUCTION. The record lists company phone (318) 687-1585. The detail page came from the endpoint /Public/_DisplayOnlineDetails/ behind the search page. Shreveport's city registration covers only air conditioning, heating, electrical and plumbing contractors, so no city registry check applies to partition installation."
+   },
+   "score": 85
+  },
+  {
+   "name": "Tackett Building Specialities, Inc.",
+   "base_city": "Shreveport",
+   "state": "LA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "None found",
+   "reason": "Three web searches (with both spellings, and with Shreveport) found no website, listing or project for this business, so it could not be verified as a real, operating partition installer. It may be closed, or the name may be wrong.",
+   "red_flags": [
+    "No web presence found",
+    "Existence and status unverified"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}
