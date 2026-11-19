@@ -1,0 +1,337 @@
+{
+ "area": "san-francisco",
+ "found_count": 9,
+ "sources_tried": [
+  "Seed file san-francisco.json: worked. Plausible Maps entries opened. Partition Specialties Inc (psi3g.com) does operable walls and access floors, not toilet partitions, so it was excluded. Service Metal Products' site came back empty. Division General Building is residential remodeling, so it was excluded.",
+  "Bobrick rep locator (bobrick.com/find-a-representative): 404, not found.",
+  "Scranton Products where-to-buy: worked, but it lists only a regional rep (John McKeon, CA and the western states) and no local dealers or installers.",
+  "Bradley find-a-rep: page loaded empty, no data.",
+  "ASI/Global/Accurate, Hadrian, Metpar, General Partitions, Ampco locators: not tried (web search cap and time).",
+  "The Blue Book (thebluebook.com iProView pages): 403 Forbidden on fetch; only search snippets were seen (Delta Specialties, Consolidated Partitions, Partition Specialties Novato, American Sheet Metal Partition Co).",
+  "BuildingConnected / Procore public profiles: not reached.",
+  "WebSearch: 8 of 8 used. Queries: SF toilet partition installation; Division 10 East Bay; Blue Book SF; East Bay installers; furnish-and-install Peninsula/Marin; Delta Specialties; Yelp; Hayward/Fremont/Concord subcontractors. Results were dominated by onepointpartitions.com, a national online supplier with a San Leandro terminal; its fetch returned 403 and it appears supply-only, so it was excluded.",
+  "Yelp and BBB: no listings surfaced in search.",
+  "constructioninfocus.com article on Stumbaugh: worked."
+ ],
+ "candidates": [
+  {
+   "name": "Rebarber Enterprises",
+   "added_by_checker": false,
+   "base_city": "San Francisco",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Hadrian",
+    "Accurate",
+    "Privada"
+   ],
+   "website": "https://rebarber.net/",
+   "phone": "415-533-4465",
+   "email": "estimating@rebarber.net",
+   "contact_page": "https://rebarber.net/contact-us/",
+   "evidence_urls": [
+    "https://rebarber.net/",
+    "https://rebarber.net/contact-us/",
+    "https://rebarber.net/projects/"
+   ],
+   "partition_evidence": "Division 10 subcontractor that specializes in toilet compartments. All six listed projects include toilet compartments (Chase Arena and Levi's Stadium Bobrick phenolic, Merck SSF Hadrian stainless, 181 Fremont Accurate, Nvidia Privada).",
+   "red_flags": [
+    "Works for large general contractors on big projects, so small jobs may not suit them",
+    "The seed said Hayward, but the contact page points to San Francisco and gives no address"
+   ],
+   "reason": "A San Francisco Division 10 subcontractor with toilet compartments on every named commercial project. It is the best-documented installer on the list.",
+   "license": {
+    "name": "Rebarber Enterprises",
+    "area": "san-francisco",
+    "status": "not_online",
+    "registry": "California CSLB Check a License (cslb.ca.gov). San Francisco DBI registration uses the CSLB license.",
+    "license_type": "California contractor license (expected C-61/D-34 Prefabricated Equipment for toilet partitions); not confirmed",
+    "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/NameSearch.aspx",
+    "note": "The CSLB lookup needs a reCAPTCHA form postback, so no official record could be read. The company site (rebarber.net, rebarber.net/contact-us/) says 'The Bay Area's #1 Division 10 Subcontractor' and gives phone 415-533-4465, but shows no license number and no address. A search snippet from an aggregator (prelien.co/contractor/rebarber-enterprises-872996) gives CSLB #872996, Hayward, status clear, expiring 2028-02-29. I did not open that page, it is not official, and it doesn't show classifications. Confirm #872996 on CSLB by hand."
+   },
+   "score": 70
+  },
+  {
+   "name": "Magnum Drywall",
+   "added_by_checker": false,
+   "base_city": "San Jose",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [
+    "Bobrick (accessories)"
+   ],
+   "website": "https://magnumdrywall.com/",
+   "phone": "(408) 600-0422",
+   "email": "estimators@magnumdrywall.com",
+   "contact_page": "https://magnumdrywall.com/contact-us/",
+   "evidence_urls": [
+    "https://magnumdrywall.com/",
+    "https://magnumdrywall.com/division-10-specialties/"
+   ],
+   "partition_evidence": "Its Division 10 page says it works with clients to specify and install toilet partitions. Malwarebytes in Santa Clara is a named project that includes toilet partitions.",
+   "red_flags": [
+    "Union drywall contractor where Division 10 is one of five divisions, so it is geared to general contractor bid work",
+    "San Jose is about 40+ miles from the SF center, but under 30 from Hayward and Fremont"
+   ],
+   "reason": "A union commercial subcontractor that installs toilet partitions, with a named Santa Clara project. It is based at the south edge of the Bay Area.",
+   "license": {
+    "name": "Magnum Drywall",
+    "area": "san-francisco",
+    "status": "not_online",
+    "registry": "California CSLB Check a License (cslb.ca.gov)",
+    "license_number": "614200",
+    "license_type": "California contractor license (classifications unconfirmed)",
+    "source_url": "https://magnumdrywall.com/",
+    "note": "The company site states 'CA License: #614200' and lists a San Jose office with phone (408) 600-0422. The CSLB detail page for 614200 needs a reCAPTCHA, so I couldn't confirm the status or whether it includes C-61/D-34. Confirm on CSLB by hand."
+   },
+   "score": 65
+  },
+  {
+   "name": "TPH Supply",
+   "added_by_checker": false,
+   "base_city": "unknown",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [
+    "Accurate",
+    "ASI",
+    "Bradley",
+    "Flush Metal",
+    "Global",
+    "Hadrian",
+    "Knickerbocker",
+    "Metpar",
+    "Mills",
+    "Sanymetal"
+   ],
+   "website": "https://www.tphsupply.com/",
+   "phone": "650-438-6683",
+   "email": "customerservice@tphsupply.com",
+   "contact_page": "https://www.tphsupply.com/pages/request-a-quote",
+   "evidence_urls": [
+    "https://www.tphsupply.com/",
+    "https://www.tphsupply.com/pages/how-we-can-help"
+   ],
+   "partition_evidence": "States experience installing commercial bathroom partitions and offers local installation or repair in the San Francisco Bay Area.",
+   "red_flags": [
+    "Base city not given (site says only 'Based in the USA')",
+    "Mainly an online seller of partition hardware and parts that ships nationwide, so it is a buy-around risk",
+    "No projects or photos of installs"
+   ],
+   "reason": "Offers partition installation and repair in the Bay Area and has a 650 number. It is mainly a parts seller with no stated base or project evidence.",
+   "license": {
+    "name": "TPH Supply",
+    "area": "san-francisco",
+    "status": "not_online",
+    "registry": "California CSLB Check a License (cslb.ca.gov)",
+    "source_url": "https://www.tphsupply.com/",
+    "note": "The site names no base city or license number. It mentions the San Francisco Bay Area and gives phone 650-438-6683. The name suggests a supplier, possibly not an installer. I found no license, and the CSLB name search needs a reCAPTCHA. Search CSLB by name by hand."
+   },
+   "score": 65
+  },
+  {
+   "name": "Repcold Distributors",
+   "added_by_checker": false,
+   "base_city": "Fremont",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://www.repcold.com/",
+   "phone": "(510) 498-8786",
+   "email": "info@repcold.com",
+   "contact_page": "https://www.repcold.com/contact",
+   "evidence_urls": [
+    "https://www.repcold.com/"
+   ],
+   "partition_evidence": "The site lists Toilet Partitions as a product category and says customers can get everything from restroom partitions to shower enclosures installed.",
+   "red_flags": [
+    "Mainly shower enclosures, mirrors and closets, with no partition projects or photos shown",
+    "Sells partitions itself, which is a buy-around risk",
+    "Also has Salinas and Riverside offices"
+   ],
+   "reason": "It supplies and installs restroom partitions from Fremont and serves both homeowners and businesses. Commercial partition jobs aren't shown, so it stays possible.",
+   "license": {
+    "name": "Repcold Distributors",
+    "area": "san-francisco",
+    "status": "not_online",
+    "registry": "California CSLB Check a License (cslb.ca.gov)",
+    "license_type": "California contractor license; aggregator snippet lists C-17, C-61/D-28 and C-61/D-34 (unverified)",
+    "source_url": "https://www.repcold.com/",
+    "note": "The company site gives a Fremont corporate office and phone (510) 498-8786 but no license number. A search snippet from an aggregator (prelien.co/contractor/repcold-distributors-929392) gives CSLB #929392, Fremont, status clear, expiring 2027-03-31, with D-34 among the classifications. I did not open that page and it is not official. The CSLB lookup is behind a reCAPTCHA, so confirm by hand."
+   },
+   "score": 60
+  },
+  {
+   "name": "Stumbaugh & Associates, Inc.",
+   "added_by_checker": false,
+   "base_city": "West Sacramento",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://stumbaugh.com/",
+   "phone": "(650) 999-0700",
+   "email": "Estimating@stumbaugh.com",
+   "contact_page": "https://stumbaugh.com/contact",
+   "evidence_urls": [
+    "https://stumbaugh.com/",
+    "https://stumbaugh.com/contact"
+   ],
+   "partition_evidence": "Calls itself the largest provider of restroom partitions and accessories in California and offers professional installation. Project photos include a hotel.",
+   "red_flags": [
+    "Its Northern California office is in West Sacramento, about 75 miles away, though the office phone has a Bay Area 650 area code",
+    "Large partition reseller that sells material-only too, so it is a direct competitor and buy-around risk",
+    "HQ is in Burbank"
+   ],
+   "reason": "It installs restroom partitions and its NorCal line uses a Bay Area number. The office is outside 30 miles and it competes with us as a reseller.",
+   "license": {
+    "name": "Stumbaugh & Associates, Inc.",
+    "area": "san-francisco",
+    "status": "not_online",
+    "registry": "California CSLB Check a License (cslb.ca.gov)",
+    "license_type": "Aggregator snippet lists C-61/D-24 Metal Products and C-61/D-34 Prefabricated Equipment (unverified)",
+    "source_url": "https://stumbaugh.com/",
+    "note": "The company site lists its LA corporate office in Burbank, phone 818 240-1627, and no license number. Search snippets from aggregators (prelien.co/contractor/stumbaugh-associates-inc-288724, buildzoom.com) give CSLB #288724, Burbank, expiring 2028-04-30, with D-34. I did not open those pages and they are not official. The CSLB lookup is behind a reCAPTCHA. The West Sacramento office was not confirmed on pages I read."
+   },
+   "score": 55
+  },
+  {
+   "name": "Demar Specialties, LLC",
+   "added_by_checker": false,
+   "base_city": "Manteca",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "ASI",
+    "Bradley",
+    "Scranton Products",
+    "JL Industries",
+    "Hallowell",
+    "Metpar"
+   ],
+   "website": "https://www.demarspecialties.com/",
+   "contact_page": "https://www.demarspecialties.com/contact-us",
+   "evidence_urls": [
+    "https://www.demarspecialties.com/",
+    "https://www.demarspecialties.com/contact-us"
+   ],
+   "partition_evidence": "A Division 10 subcontractor that furnishes and installs toilet partitions. It is an authorized distributor for ASI, Bradley, Scranton and Metpar.",
+   "red_flags": [
+    "Manteca is about 60+ miles from SF",
+    "Authorized distributor that offers supply-only, so it is a buy-around risk",
+    "No phone or email on the site (form only)"
+   ],
+   "reason": "A real commercial partition installer, but based in Manteca, outside the 30-mile area. It serves Northern and Central California, so it is worth a fallback note.",
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "J D Specialties",
+   "added_by_checker": false,
+   "base_city": "Stockton",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Bobrick",
+    "Hadrian"
+   ],
+   "website": "http://www.jdspecialtiesco.com/",
+   "phone": "(209) 467-0324",
+   "email": "jdspecialtiesco@sbcglobal.net",
+   "contact_page": "http://www.jdspecialtiesco.com/",
+   "evidence_urls": [
+    "http://www.jdspecialtiesco.com/"
+   ],
+   "partition_evidence": "Specializes in the sales and installation of commercial toilet partitions, bathroom accessories and lockers.",
+   "red_flags": [
+    "Stockton is about 65 miles from SF",
+    "Stocking distributor of Bobrick and Hadrian partitions, so it is a buy-around risk"
+   ],
+   "reason": "It installs commercial toilet partitions but is based in Stockton, well outside the area.",
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Consolidated Partitions, Inc.",
+   "added_by_checker": false,
+   "base_city": "Hayward",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Penco",
+    "Kwik-Wall"
+   ],
+   "website": "https://consolidatedpartitions.com/",
+   "phone": "(510) 352-3920",
+   "email": "info@consolidatedpartitions.com",
+   "contact_page": "https://consolidatedpartitions.com/contact/",
+   "evidence_urls": [
+    "https://consolidatedpartitions.com/",
+    "https://consolidatedpartitions.com/contact/"
+   ],
+   "partition_evidence": "None for toilet partitions. Its partitions are folding, operable and wire mesh walls (Kwik-Wall), plus Penco lockers.",
+   "red_flags": [
+    "'Partitions' means folding and operable walls, not restroom stalls"
+   ],
+   "reason": "A Hayward distributor of lockers and folding/operable wall partitions. Nothing shows toilet partition work.",
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Delta Specialties Inc.",
+   "added_by_checker": false,
+   "base_city": "unknown (Lodi per seed; 209 fax per Blue Book search snippet)",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/393371/delta-specialties-inc/material-suppliers/"
+   ],
+   "partition_evidence": "Only a search snippet of its Blue Book listing (the page returned 403): a Division 10 company that supplies toilet partitions across Northern California, including San Francisco and Oakland. No website was confirmed.",
+   "red_flags": [
+    "No website reachable (deltaspecialties.net did not resolve in this session)",
+    "The Blue Book page could not be read directly",
+    "Central Valley base"
+   ],
+   "reason": "Could not be verified from its own site. The only evidence is a directory snippet that points to a Central Valley base outside the area.",
+   "license": null,
+   "score": 0
+  }
+ ]
+}

@@ -1,0 +1,363 @@
+{
+ "area": "denver",
+ "found_count": 11,
+ "sources_tried": [
+  "Seed file denver.json (maps + web): worked; plausible leads opened, most entries were remodelers, glass shops and showrooms (skipped)",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but rep list loads dynamically, no Colorado result",
+  "Scranton Products where-to-buy: worked, only a regional product specialist (Architectural Cornerstone Group, 972 number, not local)",
+  "Hadrian, General Partitions, Metpar locator URLs: 404 (guessed paths); Bradley find-a-rep: no content; ASI and Ampco not reached",
+  "The Blue Book search and profile pages: 403 blocked",
+  "BuildingConnected / Procore: not tried (search cap)",
+  "WebSearch: 8 of 8 used; useful hits were Rio Grande Co, BROC, Advanced Contracting, ABS, Colorado Specialties; many results were One Point Partitions / supplier SEO pages",
+  "Yelp search: 403 blocked",
+  "BBB search: worked but no results for 'toilet partitions' in Denver",
+  "MapQuest page for Simpson & Simpson: host blocked (not in allowed network)",
+  "accessories.toiletpartitions.com Denver page: 403",
+  "Out-of-area firms seen and excluded: Magnum Drywall (San Jose CA), Martin Bros (CA), Restroom Stalls and All (GA), Inter-Co (no CO office), Prestige Distribution (Chicago/Dallas), One Point Partitions (national seller, Aurora delivery terminal only); Drywall Partitions Inc and Zavala Drywall are drywall firms, not toilet partitions"
+ ],
+ "candidates": [
+  {
+   "name": "Colorado Specialties, Inc.",
+   "added_by_checker": false,
+   "base_city": "Golden",
+   "state": "CO",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Hadrian",
+    "ASI",
+    "Scranton",
+    "Metpar",
+    "Privada",
+    "Bradley",
+    "Bobrick"
+   ],
+   "partition_evidence": "Contact page: 'we do installation of FRP, Toilet and Bathroom Accessories, Toilet Partitions, Wall Protection systems'. Homepage lists partition brands and commercial projects (Denver International Airport, Mile High Stadium, Children's Hospital Denver).",
+   "phone": "(303) 595-9627",
+   "email": "estimating@coloradospecialties.com",
+   "contact_page": "https://coloradospecialties.com/contact-us/",
+   "website": "https://coloradospecialties.com/",
+   "evidence_urls": [
+    "https://coloradospecialties.com/",
+    "https://coloradospecialties.com/contact-us/"
+   ],
+   "red_flags": [
+    "Stocking distributor and manufacturers' rep for ASI, Scranton, Bradley, Metpar and Bobrick: high buy-around risk, and it may compete with us on partitions"
+   ],
+   "reason": "Golden-based Division 10 distributor and installer that says outright it installs toilet partitions across Colorado and Wyoming, with major commercial projects in Denver. It also sells the same brands we do.",
+   "license": {
+    "name": "Colorado Specialties, Inc.",
+    "area": "denver",
+    "status": "not_found",
+    "registry": "City and County of Denver contractor license search (Community Planning and Development)",
+    "source_url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development/Contractor-Licensing/Contractor-License-Search/",
+    "note": "Checked 2026-11-19. A companyName query for 'Colorado Specialties' on the official search's public API (den.denvergov.org/api/contractor-license-search/search/) returned 0 rows. Broader searches (single word or wildcard) could not be run, and the business may be licensed under a different legal or DBA name. Confirm by hand on the Denver search page or the Accela licensed-contractor search before listing. The business is based in Golden. A Denver license is needed only to pull permits inside Denver; the Denver page doesn't say whether partition installation needs a permit."
+   },
+   "score": 70
+  },
+  {
+   "name": "Continental Partition Systems, LLC",
+   "added_by_checker": false,
+   "base_city": "Frederick",
+   "state": "CO",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "ASI Global Partitions",
+    "Bobrick",
+    "American Specialties"
+   ],
+   "partition_evidence": "Lockers and stalls page is headed 'Bathroom Stalls, Accessories, and Locker Installation' and lists bathroom stall installation with ASI Global and Bobrick partitions.",
+   "phone": "(303) 396-0200",
+   "contact_page": "https://cps-partitions.com/Contact",
+   "website": "https://cps-partitions.com/",
+   "evidence_urls": [
+    "https://cps-partitions.com/",
+    "https://cps-partitions.com/lockers-stalls"
+   ],
+   "red_flags": [
+    "Sells partitions itself (ASI, Bobrick): buy-around risk",
+    "Main focus is operable walls and gym equipment"
+   ],
+   "reason": "Frederick-based contractor (about 25 miles north of the area center) whose site lists bathroom stall installation with ASI and Bobrick partitions for tenant finish, new construction, schools and hotels. It also supplies the partitions.",
+   "license": {
+    "name": "Continental Partition Systems, LLC",
+    "area": "denver",
+    "status": "not_found",
+    "registry": "City and County of Denver contractor license search (Community Planning and Development)",
+    "source_url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development/Contractor-Licensing/Contractor-License-Search/",
+    "note": "Checked 2026-11-19. A companyName query for 'Continental Partition' on the official search's public API returned 0 rows. Broader searches could not be run, and the business may be licensed under another name. Confirm by hand on the Denver search page. The business is based in Frederick, outside Denver."
+   },
+   "score": 70
+  },
+  {
+   "name": "Advanced Contracting LLC",
+   "added_by_checker": false,
+   "base_city": "Colorado Springs",
+   "state": "CO",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "partition_evidence": "The homepage describes 'Division 10 commercial construction products and installation services' and lists Toilet Partitions among its products. The toilet partitions page lists materials and mountings but doesn't name an installation project. The gallery photos have no captions.",
+   "phone": "719-309-6475",
+   "email": "bids@advancedcontractingllc.com",
+   "contact_page": "https://advancedcontractingllc.com/contact",
+   "website": "https://advancedcontractingllc.com/",
+   "evidence_urls": [
+    "https://advancedcontractingllc.com/",
+    "https://advancedcontractingllc.com/contact",
+    "https://advancedcontractingllc.com/toilet-partitions",
+    "https://advancedcontractingllc.com/gallery"
+   ],
+   "red_flags": [
+    "Based about 60+ miles from the area center (outside the 30-mile radius)"
+   ],
+   "reason": "Commercial Division 10 installer that lists toilet partitions and says it serves the Denver Metro area. However, it's based in Colorado Springs, outside the radius, and no partition project is shown.",
+   "license": {
+    "name": "Advanced Contracting LLC",
+    "area": "denver",
+    "status": "not_found",
+    "registry": "City and County of Denver contractor license search (Community Planning and Development)",
+    "source_url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development/Contractor-Licensing/Contractor-License-Search/",
+    "note": "Checked 2026-11-19. A companyName query for 'Advanced Contracting' on the official search's public API returned 0 rows. Confirm by hand on the Denver search page. The business is based in Colorado Springs, outside the Denver metro, so it may not work in Denver at all."
+   },
+   "score": 40
+  },
+  {
+   "name": "Associated Building Specialties (ABS)",
+   "added_by_checker": false,
+   "base_city": "Broomfield",
+   "state": "CO",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "absinc.com returned 503 on two tries, so the company's own site couldn't be read. A ConstructConnect listing places the company in Broomfield, and abscolorado.com redirects to absinc.com. A search snippet (not opened) mentioned a Colorado Division 10 installer job covering toilet partitions, but that wasn't verified.",
+   "website": "https://absinc.com/",
+   "evidence_urls": [
+    "https://projects.constructconnect.com/companies/2178594-associated-building-specialtie&find_loc=CO-80023",
+    "https://abscolorado.com/"
+   ],
+   "red_flags": [
+    "Company website unreachable (HTTP 503) during the check",
+    "A different Associated Building Specialties in Blackwood, NJ also exists; don't confuse the two"
+   ],
+   "reason": "Broomfield specialties firm whose website was down, so no first-party evidence of partition installation could be read. Recheck absinc.com.",
+   "license": {
+    "name": "Associated Building Specialties (ABS)",
+    "area": "denver",
+    "status": "not_found",
+    "registry": "City and County of Denver contractor license search (Community Planning and Development)",
+    "source_url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development/Contractor-Licensing/Contractor-License-Search/",
+    "note": "Checked 2026-11-19. A companyName query for 'Associated Building' on the official search's public API returned 0 rows. 'ABS' and the full legal name were not searched, because the broader queries were blocked. Confirm by hand on the Denver search page. The business is based in Broomfield."
+   },
+   "score": 10
+  },
+  {
+   "name": "Simpson & Simpson Sales & Service Inc",
+   "added_by_checker": false,
+   "base_city": "Broomfield",
+   "state": "CO",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "Only search-result snippets (Yext and MapQuest listings) mention metal toilet partitions, installation and 'since 1971'. Both listing pages failed to load (404 / blocked host), so nothing was read first-hand. No website found.",
+   "evidence_urls": [],
+   "red_flags": [
+    "No website found; listing pages could not be opened",
+    "Unclear whether the business is still operating"
+   ],
+   "reason": "Directory snippets suggest a long-running Broomfield partition sales and installation business, but no page could be read to confirm it or whether it's still open.",
+   "license": {
+    "name": "Simpson & Simpson Sales & Service Inc",
+    "area": "denver",
+    "status": "not_found",
+    "registry": "City and County of Denver contractor license search (Community Planning and Development)",
+    "source_url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development/Contractor-Licensing/Contractor-License-Search/",
+    "note": "Checked 2026-11-19. Queries for 'Simpson & Simpson' and 'Simpson' on the official search's public API returned one row, an unrelated electrical contractor (Simpson Electrical Services LLC, Electrical, Active). No record for Simpson & Simpson Sales & Service. Confirm by hand on the Denver search page. The business is based in Broomfield."
+   },
+   "score": 10
+  },
+  {
+   "name": "BROC (Bleacher Restorators of Colorado, LLC)",
+   "added_by_checker": false,
+   "base_city": "Castle Rock",
+   "state": "CO",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [
+    "Interkal"
+   ],
+   "partition_evidence": "The site covers bleachers, athletic flooring, seating and lockers. Partitions aren't mentioned.",
+   "phone": "(303) 973-4517",
+   "email": "support@brocllc.com",
+   "contact_page": "https://brocllc.com/contact/",
+   "website": "https://brocllc.com/",
+   "evidence_urls": [
+    "https://brocllc.com/"
+   ],
+   "red_flags": [],
+   "reason": "Athletic equipment, bleacher and flooring subcontractor. There's no sign of toilet partition work.",
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Rio Grande Co. (partitions department)",
+   "added_by_checker": false,
+   "base_city": "Denver",
+   "state": "CO",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "Lists a 'Partitions & Commercial Bath Accessories' product category and a warehouse that handles it. No installation services are mentioned.",
+   "phone": "(303) 375-0913",
+   "contact_page": "https://riograndeco.com/contact/",
+   "website": "https://riograndeco.com/",
+   "evidence_urls": [
+    "https://riograndeco.com/",
+    "https://riograndeco.com/partitions-commercial-bath-accessories/"
+   ],
+   "red_flags": [
+    "Supplier of partitions: buy-around risk"
+   ],
+   "reason": "Building-materials supplier that sells partitions. The site shows no installation work.",
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Total Restroom",
+   "added_by_checker": false,
+   "base_city": "Broomfield",
+   "state": "CO",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "ASI",
+    "Bobrick",
+    "Bradley",
+    "Hadrian",
+    "Scranton",
+    "Global Partitions",
+    "Columbia Partitions"
+   ],
+   "partition_evidence": "Sells partitions nationwide from 50+ distribution centers ('Everything Included For Install'). The services page doesn't mention installation and says it 'works directly with brands and their contractors'.",
+   "phone": "(877) 234-3520",
+   "email": "sales@totalrestroom.com",
+   "contact_page": "https://www.totalrestroom.com/pages/contact",
+   "website": "https://www.totalrestroom.com/",
+   "evidence_urls": [
+    "https://www.totalrestroom.com/",
+    "https://totalrestroom.com/pages/services"
+   ],
+   "red_flags": [
+    "Online competitor selling the same brands",
+    "Shares a Broomfield address (325 Interlocken Pkwy) with Sustainable Supply"
+   ],
+   "reason": "National online partition seller and a direct competitor of Next Partitions, not an installer.",
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Sustainable Supply",
+   "added_by_checker": false,
+   "base_city": "Broomfield",
+   "state": "CO",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "The Denver partitions page talks only about supply and coordinating delivery. Installation isn't mentioned.",
+   "phone": "888.207.3005",
+   "email": "sales@sustainablesupply.com",
+   "contact_page": "https://www.sustainablesupply.com/pages/contact",
+   "website": "https://www.sustainablesupply.com/",
+   "evidence_urls": [
+    "https://www.sustainablesupply.com/",
+    "https://sustainablesupply.com/pages/denver-partitions"
+   ],
+   "red_flags": [
+    "Online partition seller and competitor",
+    "Same address as Total Restroom"
+   ],
+   "reason": "B2B online supplier of partitions and a competitor. There's no evidence it installs.",
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Division One Construction",
+   "added_by_checker": false,
+   "base_city": "Denver",
+   "state": "CO",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "General contractor (TI renovation, build-outs, residential remodels). Partitions aren't mentioned.",
+   "phone": "303.316.9400",
+   "website": "https://www.divisionone.net/",
+   "evidence_urls": [
+    "https://www.divisionone.net/"
+   ],
+   "red_flags": [
+    "General contractor, not a specialty installer"
+   ],
+   "reason": "General contractor whose site shows no toilet partition installation.",
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Euro Style Systems",
+   "added_by_checker": false,
+   "base_city": "unknown",
+   "state": "CO",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "partition_evidence": "Lists toilet partitions as a product category. Installation is mentioned only for stretch ceilings.",
+   "phone": "+1.303.242.2260",
+   "contact_page": "https://www.ess2go.com/contacts",
+   "website": "https://www.ess2go.com/",
+   "evidence_urls": [
+    "https://www.ess2go.com/",
+    "https://www.ess2go.com/contacts"
+   ],
+   "red_flags": [
+    "Sells partitions: buy-around risk",
+    "Base city not stated on its site (Broomfield is unconfirmed)"
+   ],
+   "reason": "Product seller of partitions and accessories with no stated partition installation. Its base city couldn't be confirmed from its own site.",
+   "license": null,
+   "score": 5
+  }
+ ]
+}

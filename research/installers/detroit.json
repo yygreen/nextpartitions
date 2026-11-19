@@ -1,0 +1,328 @@
+{
+ "area": "detroit",
+ "found_count": 11,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/detroit.json: worked; mostly residential remodelers and stores, a few relevant partition sellers",
+  "Company sites: interiorresource.org, allpartitions.com, partitionsandstalls.com, robertbrooke.com, prodryers.com worked; christyhardware.com 503",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads but rep list is dropdown/JS, no Michigan rep readable",
+  "Scranton Products find-a-rep and ASI Global Partitions find-a-rep: guessed URLs 404, not found",
+  "Bradley, Hadrian, Metpar, General Partitions, Ampco locators: not tried (search cap)",
+  "The Blue Book (thebluebook.com iProView 802033): 403 blocked",
+  "BuildingConnected / Procore public profiles: not tried (search cap)",
+  "BBB Troy 'partition' category page: worked (gave Top Deck Systems, CHC Total, All Partitions, Robert Brooke); BBB 'toilet-partitions' category 404",
+  "govconinabox.com federal contractor listings: worked (Eagle Specialties, All Partitions & Parts)",
+  "onepointpartitions.com Detroit/Michigan pages: 403 blocked (national seller; search summary mentioned a Romulus MI address and an 'Installers Plus of Michigan' partner, both unverified)",
+  "Kelley Bros, DH Pace, UDH Group: fetched; no Michigan office shown, excluded",
+  "Cook & Boardman / CBX: 403 blocked",
+  "Yelp: not tried",
+  "WebSearch: 8 of 8 used (toilet partition installation Detroit; Division 10 Michigan; Scranton/Bobrick rep Michigan; CHC Total; Top Deck Systems; Division 10 specialties Michigan; restroom partitions SE Michigan; Eagle Specialties) - few local installers surfaced"
+ ],
+ "candidates": [
+  {
+   "name": "Interior Resource Supply Inc",
+   "base_city": "Dearborn",
+   "state": "MI",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://interiorresource.org/",
+   "phone": "734-968-4747",
+   "email": "jlee@interiorresource.org",
+   "contact_page": "https://interiorresource.org/contact/",
+   "evidence_urls": [
+    "https://interiorresource.org/",
+    "https://interiorresource.org/contact/"
+   ],
+   "partition_evidence": "Homepage says it supplies, installs and services acoustical ceilings and bathroom partitions; lists toilet partitions and restroom accessories among its products.",
+   "reason": "A specialty contractor in Dearborn that says it installs bathroom partitions and works for commercial construction firms. It also supplies partitions itself, so there is a buy-around risk.",
+   "red_flags": [
+    "Distributor that also sells toilet partitions (buy-around risk)",
+    "Listed email appears to be a named person's address; no project photos seen"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Interior Resource Supply Inc",
+    "area": "detroit",
+    "status": "not_online",
+    "registry": "City of Detroit BSEED contractor license and registration (no public online lookup found; registrations run through the city's Accela portal). Michigan LARA licensee search (aca-prod.accela.com/LARA) checked as the state source.",
+    "note": "Company site (https://interiorresource.org/, read 2026-11-19) describes a distributor and specialty contractor that provides, installs and services acoustical ceilings and bathroom partitions; street address in Dearborn, MI, and the site describes it as a Detroit, Michigan supplier. Public company phone: 734.968.4747, office 313.584.4399. The site shows no license numbers. State: according to the area rule, Michigan has no state license for this work. LARA's licensee search form (https://aca-prod.accela.com/LARA/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y&TabName=APO) loads without sign-in, but results come only through an interactive ASP.NET postback, so no automated lookup was possible. City: search results for the BSEED contractor license page (https://detroitmi.gov/departments/buildings-safety-engineering-and-environmental-department-bseed/bseed-divisions/construction-inspection/bseed-contractor-license-application) say Detroit requires contractors doing certain construction work to be state-licensed, registered with the city each year and insured. Both the detroitmi.gov page and its training.detroitmi.gov mirror returned HTTP 403 to automated access. No public registry of registered contractors was found. Still open: whether partition installation is a covered category, and the company's registration status. Confirm both with BSEED Construction Division at (313) 224-3202 (number taken from search results, not read on the page). Not checked: Michigan business entity search.",
+    "source_url": "https://detroitmi.gov/departments/buildings-safety-engineering-and-environmental-department-bseed/bseed-divisions/construction-inspection/bseed-contractor-license-application"
+   },
+   "score": 70
+  },
+  {
+   "name": "All Partitions & Parts, LLC",
+   "base_city": "Troy",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "ASI Accurate",
+    "Bradley",
+    "Global",
+    "Hadrian",
+    "Bobrick (hardware)",
+    "Scranton (hardware)",
+    "Metpar (hardware)"
+   ],
+   "website": "https://www.allpartitions.com/",
+   "phone": "866-255-8645",
+   "email": "help@allpartitions.com",
+   "contact_page": "https://www.allpartitions.com/info.html#contact-information-anchor",
+   "review_source": "BBB A+ (letter grade, no review count read)",
+   "evidence_urls": [
+    "https://www.allpartitions.com/",
+    "https://www.bbb.org/us/mi/troy/category/partition"
+   ],
+   "partition_evidence": "Sells partitions, parts and accessories and links to DIY installation instructions; no installation service stated.",
+   "reason": "An online partition and parts seller (a competitor, not an installer). Nothing on its site says it installs partitions.",
+   "red_flags": [
+    "Competing partition seller",
+    "No installation service"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Robert Brooke & Associates, Inc.",
+   "base_city": "Troy",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Accurate",
+    "Bobrick",
+    "Metpar",
+    "ASI",
+    "Global",
+    "Hadrian",
+    "General",
+    "Sanymetal",
+    "Mills",
+    "Knickerbocker"
+   ],
+   "website": "https://www.robertbrooke.com/",
+   "phone": "1-800-642-2403",
+   "email": "sales@robertbrooke.com",
+   "contact_page": "https://www.robertbrooke.com/contact",
+   "review_source": "BBB A+ (letter grade only)",
+   "evidence_urls": [
+    "https://www.robertbrooke.com/",
+    "https://www.bbb.org/us/mi/troy/category/partition"
+   ],
+   "partition_evidence": "Sells bathroom partitions and parts and offers installation instructions; no installation service.",
+   "reason": "A commercial hardware and partition supplier. It offers installation guidance only, not installation, and it competes with us on partition sales.",
+   "red_flags": [
+    "Competing partition seller",
+    "No installation service"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Partitions and Stalls",
+   "base_city": "Troy",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Accurate",
+    "Bobrick",
+    "Scranton",
+    "Metpar",
+    "General",
+    "Global",
+    "Hadrian",
+    "Mills",
+    "Sanymetal"
+   ],
+   "website": "https://www.partitionsandstalls.com/",
+   "phone": "248-280-7192",
+   "email": "sales@partitionsandstalls.com",
+   "contact_page": "https://www.partitionsandstalls.com/contact",
+   "evidence_urls": [
+    "https://www.partitionsandstalls.com/"
+   ],
+   "partition_evidence": "Site says it is 'by Robert Brooke' and sells partitions and parts, with installation guidance only.",
+   "reason": "This is Robert Brooke & Associates' partition web store, so it is a duplicate of that entry. It sells partitions but doesn't install them.",
+   "red_flags": [
+    "Duplicate of Robert Brooke & Associates",
+    "Competing partition seller"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "ProDryers Commercial Restroom Supply",
+   "base_city": "Livonia",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "ASI",
+    "Bradley"
+   ],
+   "website": "https://www.prodryers.com/",
+   "phone": "888-503-7937",
+   "evidence_urls": [
+    "https://www.prodryers.com/"
+   ],
+   "partition_evidence": "Online distributor of hand dryers, fixtures and washroom accessories; no installation service mentioned.",
+   "reason": "An online restroom product distributor with no installation service.",
+   "red_flags": [
+    "Distributor, not installer"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Multi Drywall and Partition, LLC",
+   "base_city": "Novi",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "unknown",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "Search results describe it as a carpentry, acoustic ceiling and drywall contractor; 'partition' refers to drywall partition walls. Its HomeAdvisor page returned 403, so I didn't read it.",
+   "reason": "A drywall and ceiling contractor. Its 'partition' work means wall framing, not toilet compartments.",
+   "red_flags": [
+    "Drywall contractor, not toilet partitions"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 15
+  },
+  {
+   "name": "Eagle Specialties, LLC",
+   "base_city": "Detroit",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "No website or listing found.",
+   "reason": "I searched for this name with Detroit and toilet partitions and found nothing about the business, so I can't confirm it exists or what it does.",
+   "red_flags": [
+    "No web presence found"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Top Deck Systems",
+   "base_city": "Clinton Township",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "review_source": "BBB (not accredited, no rating shown)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/mi/troy/category/partition"
+   ],
+   "partition_evidence": "Appears only in the BBB 'Partition' category listing; no website or services found.",
+   "reason": "Its only trace is a BBB category listing. There is no website and no evidence that it installs toilet partitions.",
+   "red_flags": [
+    "No website found",
+    "Category listing only"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "CHC Total",
+   "base_city": "Plymouth",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "review_source": "BBB A+ (not accredited)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/mi/wayne/category/partition"
+   ],
+   "partition_evidence": "BBB lists it under 'Partitions'; no website or services found.",
+   "reason": "BBB lists it in the partitions category, but I found no website, services or projects showing toilet partition installation.",
+   "red_flags": [
+    "No website found"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Christy Commercial Hardware",
+   "base_city": "Ferndale",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.christyhardware.com/",
+   "evidence_urls": [],
+   "partition_evidence": "Website returned 503 twice; search found nothing on partition work.",
+   "reason": "I couldn't open the website, and search showed no evidence of toilet partition installation. Recheck manually.",
+   "red_flags": [
+    "Website unreachable during check"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Ann Arbor Ceiling & Partition",
+   "base_city": "Ypsilanti",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "unknown",
+   "sells_partitions": "no",
+   "within_area": "nearby",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "Search found only a listing as an Ann Arbor-area ceiling and partition firm; no toilet partition work seen.",
+   "reason": "Looks like an acoustical ceiling and drywall partition contractor about 30+ miles west of the area center, with no evidence of toilet partition work.",
+   "red_flags": [
+    "Ceiling/drywall contractor",
+    "At edge of area"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

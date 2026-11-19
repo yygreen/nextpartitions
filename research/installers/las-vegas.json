@@ -1,0 +1,238 @@
+{
+ "area": "las-vegas",
+ "found_count": 7,
+ "sources_tried": [
+  "Seed file las-vegas.json: worked. Maps gave Henri Specialties, Western Partitions and Hearth & Home Specialties as plausible leads; the rest were glass shops, remodelers, plumbers and stores. Web results are Google redirect URLs with no domain, so they could not be opened.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads, but the dropdown results are not in the fetched content, so no Nevada rep was read.",
+  "Scranton Products find-a-rep: 404 at the URL tried.",
+  "Hadrian find-a-rep: 404 at the URL tried.",
+  "ASI, Bradley, Metpar, General Partitions and Ampco locators: not reached (search budget spent; no known locator URLs).",
+  "The Blue Book (thebluebook.com): blocked, 403 on search and iProView pages. Henri Specialties' listing was seen only in a search result summary.",
+  "Levelset: blocked (403).",
+  "naicslist.com: blocked (403).",
+  "Procore network (network.procore.com): worked. Read the Las Vegas toilet-bath-and-laundry-accessories, partitions, specialties and toilet-compartments category pages, the Nevada and Henderson accessories pages, and profiles for CMD Inc, Black Scale, MBR Construction, Glass Guys, Brandise Construction and Firnish. Only the first 40 results of each category were visible.",
+  "BuildingConnected: not tried.",
+  "BBB category 'partition' Nevada (bbb.org/us/nv/category/partition): worked. It lists only Commercial Restroom Solutions LLC (Gardnerville, NV, Douglas County), which is out of area and excluded.",
+  "WebSearch: used all 8 of the 8 allowed searches. They found Henri Specialties, One Point Partitions (North Las Vegas delivery terminal; sells partitions for DIY install, so excluded as not an installer), Prestige Distribution (national network, excluded), and out-of-area firms Partitions & Accessories Co. (Mesa, AZ), Harrigan's Toilet Partitions (Rancho Cucamonga, CA), Thomas Partitions & Specialties (Altadena, CA) and American Sheet Metal Partition Co. (Sacramento, CA), all excluded.",
+  "Google search via WebFetch: blocked (error page). Bing via WebFetch: returned irrelevant results.",
+  "hnhsi-inc.com (Hearth & Home Specialties): blocked by 429 errors and a Vercel bot check.",
+  "One Point Partitions pages: 403 on fetch."
+ ],
+ "candidates": [
+  {
+   "name": "CMD, Inc.",
+   "base_city": "Las Vegas",
+   "state": "NV",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://cmdnv.com",
+   "phone": "(702) 990-4478",
+   "contact_page": "https://cmdnv.com/contact/",
+   "partition_evidence": "Runs a 'Doors & Division 10 Office' in North Las Vegas. Its 'Building / Bathroom Accessories & Specialties' line lists grab bars, towel dispensers and mirrors. Two gallery photos in that category have alt text describing a bathroom stall ('a metal stall in the middle of a bathroom'). No page names toilet partition installation as a service.",
+   "reason": "A Las Vegas commercial millwork, doors and Division 10 firm with washroom accessories and stall photos in its gallery. Partition installation is likely but not stated as a service.",
+   "red_flags": [
+    "No email listed; contact form only",
+    "Partition work shown only in gallery alt text"
+   ],
+   "evidence_urls": [
+    "https://cmdnv.com",
+    "https://cmdnv.com/contact/",
+    "https://cmdnv.com/about-us/",
+    "https://cmdnv.com/gallery/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "CMD, Inc.",
+    "area": "las-vegas",
+    "status": "found_active",
+    "registry": "Nevada State Contractors Board license search (app.nvcontractorsboard.com)",
+    "license_number": "0059714 (C-3B); also 0076020 (C-14E), 0079462 (C-26B), 0080125 (C-19)",
+    "license_type": "C-26B Building Accessories and Specialties (lic. 0079462); also C-3B Finish Carpentry (0059714), C-14E Metal Doors and Windows (0076020), C-19 Installing Terrazzo and Marble (0080125)",
+    "source_url": "https://app.nvcontractorsboard.com/Clients/NVSCB/Public/ContractorLicenseSearch/ContractorLicenseSearch.aspx",
+    "note": "Checked 2026-11-19. NSCB search lists legal name C M D INC, NV Business ID NV20121598818, city Las Vegas NV, four licenses all Active: 0059714 C-3B, 0076020 C-14E, 0079462 C-26B, 0080125 C-19. The four numbers match the ones on cmdnv.com, which lists '59714 is Unlimited', '76020 is Unlimited', '0079462 $1Mil', '80125 Limit $245,000.00'. The site's company phone is (702) 990-4478. C-26B (Building Accessories and Specialties) is the classification that fits partition and accessory installation. cmdnv.com mentions bathroom accessories and specialties but not toilet partitions by name. The search results page gives only summary rows, and I didn't open the License Details page, so bond and limit details come from the company site, not the board. This search did not establish whether the company holds a City of Las Vegas business license, because no public city license lookup was found. A separate company, CMD FINISH CARPENTRY LLC (0092753), is unrelated."
+   },
+   "score": 65
+  },
+  {
+   "name": "Henri Specialties Co., Inc. (of Nevada)",
+   "base_city": "Las Vegas",
+   "state": "NV",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "No company website could be read (henrispecialties.com returned 503). Search snippets list LevelSet's profile under 'Specialties' subcontractors in Las Vegas with 19 to 29 jobs and no liens. A NAICS listing put it under plumbing/HVAC contractors. No partition evidence was seen.",
+   "reason": "A real Las Vegas specialties subcontractor, but I couldn't read its own site or any project list, so partition installation is unproven. Recheck by phone or on the website later.",
+   "red_flags": [
+    "Website unreachable (503)",
+    "Conflicting classifications (Specialties on LevelSet vs plumbing/HVAC on NAICS list)",
+    "Facts come from search snippets only; LevelSet and NAICS pages returned 403"
+   ],
+   "evidence_urls": [
+    "https://www.levelset.com/subcontractors/nevada/las-vegas/specialties/henri-specialties-co",
+    "https://naicslist.com/company-profile/henri-specialties-co-inc-of-nevada-las-vegas-nv-89119"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Henri Specialties Co., Inc. (of Nevada)",
+    "area": "las-vegas",
+    "status": "found_active",
+    "registry": "Nevada State Contractors Board license search (app.nvcontractorsboard.com)",
+    "license_number": "0007673C",
+    "license_type": "C-26B Building Accessories and Specialties",
+    "source_url": "https://app.nvcontractorsboard.com/Clients/NVSCB/Public/ContractorLicenseSearch/ContractorLicenseSearch.aspx",
+    "note": "Checked 2026-11-19. A company-name search for *Henri* returned HENRI SPECIALTIES CO INC OF NEVADA: license 0007673C, NV Business ID NV19731002164, classification C-26B Building Accessories and Specialties, status Active, city Las Vegas NV. It is the only license under that name. I didn't open the License Details page, so the monetary limit wasn't checked. This search did not establish whether the company holds a City of Las Vegas business license, because no public city license lookup was found. No company website was given and none was checked."
+   },
+   "score": 25
+  },
+  {
+   "name": "Black Scale",
+   "base_city": "Scottsdale",
+   "state": "AZ",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "ASI",
+    "Bobrick",
+    "Hadrian",
+    "Bradley",
+    "Koala Kare",
+    "World Dryer",
+    "Architectural Concepts",
+    "CS Acrovyn",
+    "Marlite",
+    "Gamco",
+    "Dyson"
+   ],
+   "website": "https://www.blackscaleinc.com",
+   "phone": "(888) 399-6274",
+   "email": "info@blackscaleinc.com",
+   "contact_page": "https://blackscaleinc.com/contact/",
+   "partition_evidence": "The site says 'Complete supply and installation of commercial restroom partition systems' in powder-coated steel, stainless, HDPE, phenolic and laminate, and the company calls itself a distributor for ASI, Hadrian and Bobrick.",
+   "reason": "A genuine commercial Division 10 partition installer, but it's based in Scottsdale, about 300 miles from Las Vegas, and its listed service areas are all in Arizona. It's also a partition distributor, a buy-around risk.",
+   "red_flags": [
+    "Out of area (no Nevada office)",
+    "Sells and distributes partitions (buy-around risk)"
+   ],
+   "evidence_urls": [
+    "https://www.blackscaleinc.com",
+    "https://blackscaleinc.com/contact/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Glass Guys LLC",
+   "base_city": "Las Vegas",
+   "state": "NV",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.glassguyslv.com",
+   "phone": "(702) 715-6468",
+   "email": "ap@glassguyslv.com",
+   "contact_page": "https://www.glassguyslv.com/about-us",
+   "partition_evidence": "Services are frameless shower doors, bath enclosures, specialty glass, and glass doors and windows. The site doesn't mention toilet partitions or Division 10.",
+   "reason": "A glass and shower-door company; no restroom partition work shown.",
+   "red_flags": [
+    "Glazing trade, not partitions"
+   ],
+   "evidence_urls": [
+    "https://www.glassguyslv.com"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Western Partitions, Inc. (WPI)",
+   "base_city": "Lake Oswego",
+   "state": "OR",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "nearby",
+   "brands": [
+    "WPI PreFab"
+   ],
+   "website": "https://wpibuilds.com",
+   "phone": "800-783-0315",
+   "contact_page": "https://wpibuilds.com/contact/",
+   "partition_evidence": "Core services are drywall, framing, acoustical, insulation, fireproofing, EIFS, doors/frames/hardware and similar. Toilet partitions and Division 10 are not listed; 'Partitions' in the name means interior walls.",
+   "reason": "A large Oregon-based interiors subcontractor with a Las Vegas office, but it does wall systems, not restroom partitions.",
+   "red_flags": [
+    "Name refers to wall partitions, not toilet partitions",
+    "HQ in Oregon; the Las Vegas office has no listed address or phone"
+   ],
+   "evidence_urls": [
+    "https://wpibuilds.com",
+    "https://wpibuilds.com/contact/",
+    "https://wpibuilds.com/core-services/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Hearth & Home Specialties",
+   "base_city": "Las Vegas",
+   "state": "NV",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.hnhsi-inc.com/",
+   "partition_evidence": "The website returned HTTP 429 on three attempts and a web search found nothing linking the company to partitions.",
+   "reason": "No evidence of partition work could be verified (site blocked; the name suggests fireplace/hearth products). Recheck the site manually before discarding.",
+   "red_flags": [
+    "Website returned 429 every time",
+    "No third-party evidence found"
+   ],
+   "evidence_urls": [
+    "https://www.hnhsi-inc.com/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "MBR Construction",
+   "base_city": "Las Vegas",
+   "state": "NV",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://mbrnv.com",
+   "partition_evidence": "The website has only a title and no content; /about returns 404. A web search found nothing linking it to partitions or Division 10.",
+   "reason": "No evidence of what the company does, let alone partition installation.",
+   "red_flags": [
+    "Empty website"
+   ],
+   "evidence_urls": [
+    "https://mbrnv.com"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}
