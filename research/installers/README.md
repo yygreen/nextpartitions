@@ -2,6 +2,10 @@
 
 Businesses that may install toilet partitions in each of the 99 directory areas, for the agency's outreach (in Next Partitions' name). Research only: nobody here has been contacted, and nobody is listed in the directory until they apply and pass vetting.
 
+## Areas
+
+The 99 directory areas, plus 34 research-only areas in `extra-areas.json` (added 2026-11-20): 27 metros among the largest US cities that no directory area covered, and one area for each state without one (ME, NH, MT, ND, VT, WV, WY; Delaware is reached through the Philadelphia area). The extra areas have no directory page or local rule yet.
+
 ## How it's built
 
 A workflow runs three kinds of agents over a batch of areas:
