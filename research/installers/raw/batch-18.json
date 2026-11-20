@@ -1,0 +1,2539 @@
+{
+ "areas": [
+  {
+   "area": "columbus-ga",
+   "state": "GA",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/columbus-ga.json: worked, but its Maps results were mostly irrelevant (plumbers, remodelers, stores) and its web results were Google redirect URLs without domains",
+    "Earlier area files atlanta.json, augusta.json, montgomery.json and birmingham.json in research/installers: used for regional leads, each re-checked on the company's own site",
+    "Manufacturer locators: Scranton Products find-a-rep URL returned 404; Bobrick, ASI, Bradley, Hadrian, Metpar, General Partitions and Ampco not reached because of the call budget",
+    "The Blue Book: blocked (403) on search and iProView pages",
+    "BuildingConnected / Procore: not reached",
+    "CBX Solutions branches page: blocked (403)",
+    "Kelley Bros locations: worked, no GA/AL branch near Columbus (Cumming GA, Daphne AL)",
+    "BBB category pages (Macon partitions): blocked (403); GHCC member directory: blocked (403)",
+    "onepointpartitions.com Georgia page: blocked (403)",
+    "WebSearch: all 8 used (Columbus GA Division 10, Southern Interior Specialties, Macon/Montgomery/LaGrange/Auburn, Contract Hardware Columbus, Montgomery AL Division 10, BlueBook/BuildingConnected GA). Found no installer based in Columbus that confirms partition work",
+    "Company sites fetched: RSA, Terminus (home + contact), AUI, InEx (home worked, /contact 404), Mason-Hall, Maven, Terrell, Dothan Commercial Doors, AndRosi (residential only, excluded)",
+    "Seed lead 'Southern Interior Specialties, LLC - Columbus, GA': could not confirm through search, so it is left out"
+   ],
+   "found_count": 10,
+   "checked": [
+    {
+     "name": "Terminus Specialties, Inc.",
+     "added_by_checker": false,
+     "base_city": "McDonough",
+     "state": "GA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "phone": "470-507-0587",
+     "email": "darwin@terminusspecialties.com",
+     "contact_page": "https://www.terminusspecialties.com/contact-1",
+     "website": "https://www.terminusspecialties.com/",
+     "evidence_urls": [
+      "https://www.terminusspecialties.com/",
+      "https://www.terminusspecialties.com/contact-1"
+     ],
+     "partition_evidence": "Its services list restroom partitions and partition hardware. The site says it provides and installs specialty products for commercial projects, offers optional installation for all products, and describes 'installations across... partitions, doors, lockers'. One project photo shows a public restroom with metal stalls.",
+     "red_flags": [
+      "Also sells and supplies partitions for pickup or delivery, so it could sell around us",
+      "The email shown is a named person's company address"
+     ],
+     "reason": "A commercial Division 10 supplier and installer that lists restroom partitions. It is about 84 miles from Columbus and says it serves the southeastern US."
+    },
+    {
+     "name": "Accessories Unlimited Inc (AUI)",
+     "added_by_checker": false,
+     "base_city": "Stone Mountain",
+     "state": "GA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "phone": "404-298-1779",
+     "email": "sales@accunl.com",
+     "contact_page": "https://accessoriesunlimited.net/contact-us/",
+     "website": "https://accessoriesunlimited.net/",
+     "rating": 5,
+     "review_count": 9,
+     "review_source": "Google (as shown on the company homepage)",
+     "evidence_urls": [
+      "https://accessoriesunlimited.net/",
+      "https://accessoriesunlimited.net/toilet-partitions/"
+     ],
+     "partition_evidence": "The toilet partitions page lists an 'Expert Installation Team' and links to its Full Service Installation service. Partition materials named are powder-coated steel, phenolic, solid plastic and stainless.",
+     "red_flags": [
+      "Sells and supplies partitions itself, so it could sell around us"
+     ],
+     "reason": "Supplies and installs commercial toilet partitions in GA, AL, FL, TN, SC and NC. It is about 104 miles from Columbus and its stated area includes Georgia and Alabama."
+    },
+    {
+     "name": "Restroom Stalls and All (RSA)",
+     "added_by_checker": false,
+     "base_city": "Gainesville",
+     "state": "GA",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [
+      "Bobrick",
+      "Koala Kare",
+      "XLERATOR"
+     ],
+     "phone": "1-844-817-8255",
+     "email": "sales@restroomstallsandall.com",
+     "contact_page": "https://restroomstallsandall.com/pages/contact-us",
+     "website": "https://restroomstallsandall.com/",
+     "rating": 4.9,
+     "review_source": "Google (as shown on the company homepage, review count not shown); the homepage also says BBB Accredited, A+",
+     "evidence_urls": [
+      "https://restroomstallsandall.com/",
+      "https://restroomstallsandall.com/pages/contact-us"
+     ],
+     "partition_evidence": "Installs commercial toilet partitions with its own W2 crews in Georgia, Florida, Alabama, Tennessee and the Carolinas.",
+     "red_flags": [
+      "About 140 miles straight-line from Columbus, beyond the 120-mile regional limit, although it says it installs throughout Georgia and Alabama",
+      "Sells partitions nationwide online, so it is a direct competitor and could sell around us"
+     ],
+     "reason": "A proven commercial partition installer that names Georgia and Alabama as install states, but its base is just past the regional distance limit. It could be upgraded if crews are confirmed to reach Columbus."
+    },
+    {
+     "name": "Maven Accessories",
+     "added_by_checker": false,
+     "base_city": "Juliette",
+     "state": "GA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "phone": "770-508-3887",
+     "email": "mike@mavenaccessories.com",
+     "contact_page": "https://mavenaccessories.com/",
+     "website": "https://mavenaccessories.com/",
+     "evidence_urls": [
+      "https://mavenaccessories.com/"
+     ],
+     "partition_evidence": "Lists 'Toilet Partitions, Grab bars' under Our Services and calls itself a Division 10 supplier with a commercial finish carpentry background that works with general contractors. It does not say explicitly that it installs partitions.",
+     "red_flags": [
+      "No service area stated (about 82 miles from Columbus)",
+      "The email shown is a named person's company address"
+     ],
+     "reason": "A small commercial Division 10 business within regional distance that lists toilet partitions as a service. It has no stated service area and no project evidence."
+    },
+    {
+     "name": "Mason-Hall & Company, Inc.",
+     "added_by_checker": false,
+     "base_city": "Mableton",
+     "state": "GA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "unknown",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "phone": "(770) 432-1322",
+     "contact_page": "https://masonhall.com/contacts",
+     "website": "https://masonhall.com/",
+     "evidence_urls": [
+      "https://masonhall.com/",
+      "https://masonhall.com/contacts"
+     ],
+     "partition_evidence": "Describes itself as a 'multi-line distributor and installer of Division 10 specialty products' and lists toilet partitions as a product category.",
+     "red_flags": [
+      "No service area stated (about 97 miles from Columbus)",
+      "A distributor that could sell around us"
+     ],
+     "reason": "A Division 10 distributor and installer that lists toilet partitions, but it shows no partition installation evidence and no service area."
+    },
+    {
+     "name": "Dothan Commercial Doors, LLC",
+     "added_by_checker": false,
+     "base_city": "Dothan",
+     "state": "AL",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "phone": "334-699-3667",
+     "email": "Info@dothancommercialdoors.com",
+     "contact_page": "https://www.dothancommercialdoors.com/contact-us/",
+     "website": "https://www.dothancommercialdoors.com/",
+     "evidence_urls": [
+      "https://www.dothancommercialdoors.com/",
+      "https://www.dothancommercialdoors.com/toilet-partitions/"
+     ],
+     "partition_evidence": "The partitions page covers selecting and quoting partition systems for contractors. It does not mention installation.",
+     "red_flags": [
+      "Sells partitions",
+      "Its stated area is Southeast Alabama, Southwest Georgia (Blakely, Bainbridge, Donalsonville) and North Florida, and Columbus and Phenix City are not named"
+     ],
+     "reason": "A commercial supplier of partitions with no evidence of installation and no stated coverage of Columbus or Phenix City."
+    },
+    {
+     "name": "InEx Systems Inc",
+     "added_by_checker": false,
+     "base_city": "Kennesaw",
+     "state": "GA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [
+      "Corflex",
+      "Screenflex",
+      "Woodfold",
+      "Mobiflex",
+      "ActivWall"
+     ],
+     "phone": "(678) 766-8201",
+     "email": "info@INEXSystems.com",
+     "website": "https://www.inexsystems.com/",
+     "evidence_urls": [
+      "https://www.inexsystems.com/"
+     ],
+     "partition_evidence": "The homepage title says 'Division 10 toilet partitions and accessories' and the page has one line, 'Offering the best in bathroom compartments and accessories'. The listed services are operable walls, chutes and folding doors, which it designs, sells, installs and services.",
+     "red_flags": [
+      "Its main business is operable walls and chutes",
+      "About 110+ miles away with no stated service area"
+     ],
+     "reason": "A specialty subcontractor focused on operable walls, with only a passing mention of bathroom compartments. It has no stated coverage of the Columbus area."
+    },
+    {
+     "name": "Contract Hardware & Specialty Co Inc",
+     "added_by_checker": false,
+     "base_city": "Columbus",
+     "state": "GA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "evidence_urls": [],
+     "partition_evidence": "No website found. Search snippets only place it under builders hardware, doors and windows in Columbus. The similarly named contract-hardware.com is an Atlanta door and hardware firm, not this business.",
+     "red_flags": [
+      "No website or partition evidence found",
+      "Never confirmed from a page I read"
+     ],
+     "reason": "The only trace is directory snippets describing a door and hardware business. Nothing shows partition work."
+    },
+    {
+     "name": "Terrell Enterprises, Inc.",
+     "added_by_checker": false,
+     "base_city": "Greenville",
+     "state": "AL",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [
+      "ASI Global Partitions",
+      "Artco-Bell",
+      "AARCO",
+      "Draper"
+     ],
+     "phone": "(334) 371-7415",
+     "email": "purchasing@terrellenterprises.com",
+     "contact_page": "https://www.terrellenterprises.com/contact",
+     "website": "https://www.terrellenterprises.com/",
+     "evidence_urls": [
+      "https://www.terrellenterprises.com/"
+     ],
+     "partition_evidence": "A school and office furniture dealer. ASI Global Partitions appears only as a partner logo, and the site does not mention toilet partition installation.",
+     "red_flags": [
+      "Serves Alabama and NW Florida only",
+      "A furniture dealer"
+     ],
+     "reason": "A furniture dealer outside the area with no toilet partition installation."
+    },
+    {
+     "name": "One Point Partitions",
+     "added_by_checker": false,
+     "base_city": "unknown",
+     "state": "unknown",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "website": "https://onepointpartitions.com/",
+     "evidence_urls": [
+      "https://onepointpartitions.com/"
+     ],
+     "partition_evidence": "The site blocked automated access (403 and a Cloudflare challenge). Search snippets describe an online partition seller that ships nationwide and has city landing pages. Its Columbus page appears to be Columbus, Ohio, and its Montgomery page says there is 'no need to hire a Montgomery team to install'.",
+     "red_flags": [
+      "An online partition retailer and direct competitor",
+      "Base location not confirmed",
+      "Could not read the site"
+     ],
+     "reason": "A nationwide online seller of partitions, not a local installer, and a competitor of Next Partitions."
+    }
+   ]
+  },
+  {
+   "area": "greenville-sc",
+   "state": "SC",
+   "sources_tried": [
+    "Seed file raw/seeds/greenville-sc.json: worked, but nearly all entries are residential remodelers, plumbers, shower-door shops and supply stores. ICS Inc. was the only real lead; Palmetto Specialties' site doesn't mention toilet partitions.",
+    "Scranton Products product specialist locator: worked. It lists only a regional sales rep (Southern States Architectural Sales, AL/GA/FL/MS/NC/SC/TN), not installers.",
+    "Bobrick, ASI, Bradley, Hadrian, Metpar, General Partitions and Ampco locators: not tried, because the search and fetch budget went to local leads.",
+    "The Blue Book: profile pages (iProView 1616669) blocked with 403; facts came only from search snippets.",
+    "BuildingConnected and Procore: not tried.",
+    "WebSearch (8 of 8 used): 'toilet partition installation Greenville SC', Spartanburg/Anderson variants, 'Division 10' Greenville, Upstate restroom partitions, Carolina Partitions, the Blue Book Greenville County query. All worked but returned mostly manufacturers and online sellers (One Point Partitions, Sustainable Supply, PSiSC).",
+    "BBB category pages (sc/iva, sc/windsor and nc partition categories): worked. No Upstate SC partition installers were listed; only NC and GA firms (Grier Interiors is office furniture; Berl's is a restroom accessories seller with no stated installation).",
+    "onepointpartitions.com: blocked (403).",
+    "Google goto redirects from the seed file: resolved to Nextdoor (Installation Nation is a handyman, so excluded), officeinteriorsgreenville.com (empty page) and Yahoo Local (not opened).",
+    "Google search page fetch: blocked."
+   ],
+   "found_count": 9,
+   "checked": [
+    {
+     "name": "ICS Inc. (Innovative Construction Services)",
+     "base_city": "Greenville",
+     "state": "SC",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://www.icsdoors.com/",
+     "phone": "864-299-1050",
+     "email": "info@icsdoors.com",
+     "contact_page": "https://www.icsdoors.com/",
+     "evidence_urls": [
+      "https://www.icsdoors.com/",
+      "https://www.icsdoors.com/services"
+     ],
+     "partition_evidence": "Services page lists 'Division 10 - Toilet Partition and Accessory Sales and Installation'; homepage lists toilet partitions and an installation@ email.",
+     "red_flags": [
+      "Sells and supplies partitions itself (buy-around risk)",
+      "No partition brands named",
+      "No service area stated beyond Greenville address",
+      "Contact Us link is a placeholder; no dedicated contact page"
+     ],
+     "reason": "Greenville-based commercial door/hardware and Division 10 contractor that explicitly sells and installs toilet partitions. Inside the area, but it supplies partitions itself.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Restroom Stalls and All (RSA)",
+     "base_city": "Gainesville",
+     "state": "GA",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Bobrick",
+      "Koala Kare",
+      "XLERATOR"
+     ],
+     "website": "https://restroomstallsandall.com/",
+     "phone": "1-844-817-8255",
+     "email": "cs@restroomstallsandall.com",
+     "contact_page": "https://restroomstallsandall.com/pages/contact-us",
+     "evidence_urls": [
+      "https://restroomstallsandall.com/",
+      "https://restroomstallsandall.com/pages/contact-us"
+     ],
+     "partition_evidence": "States it installs commercial toilet partitions with its own W2 crews in GA, FL, AL, TN, SC and NC.",
+     "red_flags": [
+      "Distributor that sells partitions nationwide (direct competitor / buy-around risk)",
+      "Greenville not named specifically"
+     ],
+     "reason": "Commercial partition distributor and installer about 90 miles from Greenville whose site says its own crews install in South Carolina. Strong installer, but it is also a competing seller.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Seven Oaks Door and Hardware Inc.",
+     "base_city": "Locust",
+     "state": "NC",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://sevenoakshardware.com/",
+     "phone": "704-485-2014",
+     "contact_page": "https://sevenoakshardware.com/request-a-quote/",
+     "evidence_urls": [
+      "https://sevenoakshardware.com/",
+      "https://sevenoakshardware.com/request-a-quote/"
+     ],
+     "partition_evidence": "Homepage: 'sell, deliver and install brand name, commercial grade doors and hardware; toilet partitions'; lists Bathroom Partitions service and blog on bathroom partition installation.",
+     "red_flags": [
+      "Sells partitions itself (buy-around risk)",
+      "Base is roughly 115-130 miles from Greenville, at the edge of the regional range",
+      "Greenville/Upstate not named; SC blog posts mention Charleston, Columbia, Summerville"
+     ],
+     "reason": "Commercial door/hardware firm that says it sells and installs toilet partitions and serves NC, SC and southern VA. Regional fit at the edge of range.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Coach Partitions, LLC",
+     "base_city": "Columbia",
+     "state": "SC",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "unknown",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://coachpartitions.com/",
+     "phone": "803-381-2937",
+     "email": "coachpartitions@gmail.com",
+     "contact_page": "https://coachpartitions.com/contact/",
+     "evidence_urls": [
+      "https://coachpartitions.com/",
+      "https://coachpartitions.com/about/"
+     ],
+     "partition_evidence": "Site says 'We sell and install toilet partitions' plus accessories (baby changing tables, shower seats, fire extinguisher cabinets).",
+     "red_flags": [
+      "No service area stated; Greenville/Upstate not mentioned",
+      "About 100 miles from Greenville",
+      "Gmail address; About page 'Our Story' is empty",
+      "Sells partitions itself"
+     ],
+     "reason": "Partition specialist that sells and installs, but based in Columbia about 100 miles away and its site does not say it serves the Upstate. Needs a call to confirm coverage.",
+     "added_by_checker": false
+    },
+    {
+     "name": "New South Specialties, LLC",
+     "base_city": "Columbia",
+     "state": "SC",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "http://www.newsouthspecialties.com/",
+     "phone": "803-796-9595",
+     "contact_page": "https://www.newsouthspecialties.com/contact",
+     "evidence_urls": [
+      "http://www.newsouthspecialties.com/",
+      "https://www.newsouthspecialties.com/contact"
+     ],
+     "partition_evidence": "Lists toilet partitions and washroom accessories among Division 10 specialty product lines; installation not stated.",
+     "red_flags": [
+      "Installation not stated",
+      "No service area stated; Columbia is about 100 miles away",
+      "Supplies partitions itself"
+     ],
+     "reason": "Division 10 specialties supplier in Columbia offering toilet partitions; installation and Upstate coverage unconfirmed.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Carolina Partitions, LLC",
+     "base_city": "Greenville",
+     "state": "SC",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "evidence_urls": [
+      "https://www.thebluebook.com/iProView/1616669"
+     ],
+     "partition_evidence": "None found. Blue Book listing (seen in search results; page itself returned 403) describes metal framing, drywall, insulation, acoustical ceilings, EIFS and specialty items; toilet partitions not mentioned.",
+     "red_flags": [
+      "'Partitions' appears to mean drywall/framing, not toilet partitions",
+      "No own website found",
+      "Listing page could not be opened directly"
+     ],
+     "reason": "Greenville interior subcontractor whose listing describes drywall and framing work; no evidence of toilet partition installation.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Greenville Office Supply (GOS)",
+     "base_city": "Greer",
+     "state": "SC",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://www.gos1.com/",
+     "phone": "800-277-0208",
+     "email": "help@gos1.com",
+     "contact_page": "https://www.gos1.com/contact-us--6",
+     "evidence_urls": [
+      "https://www.gos1.com/"
+     ],
+     "partition_evidence": "None; office, janitorial and furniture supplier. Only a restroom design blog post; no partition products or installation services listed.",
+     "red_flags": [
+      "Office/janitorial supply company, not an installer"
+     ],
+     "reason": "Office and janitorial supply distributor with no toilet partition installation service.",
+     "added_by_checker": false
+    },
+    {
+     "name": "One Point Partitions",
+     "base_city": "Greer",
+     "state": "SC",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://onepointpartitions.com/",
+     "phone": "800-756-6817",
+     "evidence_urls": [
+      "https://onepointpartitions.com/?p=6259",
+      "https://onepointpartitions.com/?p=3485"
+     ],
+     "partition_evidence": "Site blocked (403); search snippets show an online partition seller with a Greer 'delivery terminal' and copy saying partitions come ready to assemble with no need to hire a special installation team.",
+     "red_flags": [
+      "Online partition seller (direct competitor)",
+      "Greer address is a delivery terminal, not shown as an install crew base",
+      "Site returned 403; could not verify directly"
+     ],
+     "reason": "National online partition seller, not an installer; the Greer location is a delivery terminal. Competitor, not a referral partner.",
+     "added_by_checker": false
+    },
+    {
+     "name": "LockersNMore, LLC",
+     "base_city": "Charlotte",
+     "state": "NC",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://lockersnmore.com/",
+     "phone": "704-440-4070",
+     "contact_page": "https://lockersnmore.com/contact-us/",
+     "evidence_urls": [
+      "https://lockersnmore.com/",
+      "https://www.bbb.org/us/sc/windsor/category/partition"
+     ],
+     "partition_evidence": "Nationwide distributor selling toilet partitions in five materials; no installation service mentioned.",
+     "review_source": "BBB rating A+ (letter grade, not accredited) per BBB category page",
+     "red_flags": [
+      "Distributor/seller (competitor), installation not offered on site",
+      "South Carolina not mentioned"
+     ],
+     "reason": "National distributor of lockers and toilet partitions with shipping only; no evidence it installs.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Precision Walls (Greenville-Spartanburg office)",
+     "base_city": "Greenville-Spartanburg",
+     "state": "SC",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://www.precisionwalls.com/",
+     "phone": "919-832-0380",
+     "contact_page": "https://www.precisionwalls.com/contact-us/",
+     "evidence_urls": [
+      "https://www.precisionwalls.com/",
+      "https://www.precisionwalls.com/product/division-10-specialties/"
+     ],
+     "partition_evidence": "Division 10 & 12 Specialties page lists Toilet Partitions/Toilet Accessories; lists a Greenville-Spartanburg, SC location. Installation of partitions not stated explicitly.",
+     "red_flags": [
+      "Large interior contractor (HQ Cary, NC) working for GCs; partition installation not explicit",
+      "Phone is the HQ number; no local SC address shown"
+     ],
+     "reason": "Commercial interiors contractor with a Greenville-Spartanburg office that offers toilet partitions in its Division 10 scope; installation likely but unproven.",
+     "added_by_checker": true
+    }
+   ]
+  },
+  {
+   "area": "fayetteville-nc",
+   "state": "NC",
+   "sources_tried": [
+    "Seed file fayetteville-nc.json: worked. About 44 Maps entries, nearly all plumbers, remodelers, flooring and big-box stores. Plausible ones were CAM Contractors, Global Commercial Installation and Division 10 (Raleigh). The web results were mostly Google redirect links to remodelers. Partition Pros (thepartitionpros.com) was opened: its own crew covers only Dallas-Fort Worth, it has no NC base and its phone is a NY number, so it was skipped as a national seller.",
+    "Existing NC area files (raleigh.json, durham.json, charlotte.json, greensboro.json): reused for regional firms within 120 miles.",
+    "Bobrick find-a-rep: the page loaded, but the dropdown didn't render, so no NC rep came back.",
+    "Scranton Products find-a-product-specialist: 404 this time. The Raleigh research found Southern States Architectural Sales covering NC, not local.",
+    "ASI, Hadrian, General Partitions, Metpar, Bradley, Ampco locators: not retried. The Raleigh and Durham research got 404s or no content from them.",
+    "div10csi.com (Division 10, Raleigh): 503.",
+    "The Blue Book (thebluebook.com iProView 970362, Federal Doors): 403. Details come from the search-result summary only.",
+    "BuildingConnected / Procore: not reached.",
+    "BBB Garner commercial-doors category: worked. It shows U.S. Doorways; Global Commercial Installation isn't on the first page.",
+    "NC Secretary of State business profile: 403.",
+    "WebSearch: used 8 of 8. The partition queries for Fayetteville, Lumberton, Spring Lake, Wilmington, Pinehurst, Sanford and Goldsboro returned mostly One Point Partitions (an online seller with delivery terminals in Aberdeen and Leland; it doesn't install, skipped), Newton Distributing and Prestige Distribution (national, skipped), and Angi and Thumbtack remodelers. The 'Division 10 contractor Fayetteville' query found Federal Doors (Spring Lake) and Macade (Clayton). Macade wasn't added: it has no website and its Blue Book page is blocked. 'Carolina Specialties' found nothing.",
+    "Yelp: not tried (blocked in earlier areas)."
+   ],
+   "found_count": 7,
+   "checked": [
+    {
+     "name": "Federal Doors",
+     "base_city": "Spring Lake",
+     "state": "NC",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "910-497-0874",
+     "email": "info@federaldoors.com",
+     "contact_page": "https://federaldoors.com/contact",
+     "website": "https://federaldoors.com/",
+     "evidence_urls": [
+      "https://federaldoors.com/",
+      "https://camcontractors.net/"
+     ],
+     "partition_evidence": "Homepage lists 'restroom partitions, accessories, lockers, and other Division 10 products' under product supply, plus a separate installation service covering Fayetteville, Fort Liberty and Camp Lejeune. It doesn't say the installation covers partitions.",
+     "red_flags": [
+      "Supplies restroom partitions itself (nationwide product supply), so there is a buy-around risk",
+      "Installation of partitions specifically is not confirmed",
+      "Linked from CAM Contractors' site, so the two may be related businesses"
+     ],
+     "reason": "A local Spring Lake commercial door and Division 10 supplier that installs in the Fayetteville area. Partition installation isn't shown outright, and it sells partitions itself.",
+     "added_by_checker": false
+    },
+    {
+     "name": "CAM Contractors, Inc.",
+     "base_city": "Fort Bragg (Fort Liberty)",
+     "state": "NC",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(910) 475-0012",
+     "contact_page": "https://camcontractors.net/contact",
+     "website": "https://camcontractors.net/",
+     "evidence_urls": [
+      "https://camcontractors.net/"
+     ],
+     "partition_evidence": "Lists Division 10 construction ('installing lockers, wall guards, and more') along with Division 9 and interior demolition for commercial, military and medical buildings. Toilet partitions are not named.",
+     "red_flags": [
+      "No toilet partitions named; the photo galleries have no captions",
+      "Navigation links to Federal Doors, so the two may be related businesses"
+     ],
+     "reason": "A commercial and military renovation contractor at Fort Bragg that installs Division 10 items. Partition work is plausible but not shown.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Precision Walls, Inc.",
+     "base_city": "Cary",
+     "state": "NC",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "brands": [],
+     "phone": "(919) 832-0380",
+     "contact_page": "https://precisionwalls.com/contact-us/",
+     "website": "https://www.precisionwalls.com/",
+     "evidence_urls": [
+      "https://www.precisionwalls.com/"
+     ],
+     "partition_evidence": "Its services include 'Division 10 & 12 Specialties'. Toilet partitions are not named on the homepage.",
+     "red_flags": [
+      "A large drywall and wall-systems contractor that may only take Division 10 work as part of its own GC packages",
+      "No Fayetteville office (offices in Raleigh, Wilmington, Charlotte and elsewhere)"
+     ],
+     "reason": "A large commercial specialty contractor with offices across NC and Division 10 specialties among its services. Toilet partition installation isn't shown, and it may not take small standalone jobs.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Commercial Installations Inc",
+     "base_city": "Raleigh",
+     "state": "NC",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "phone": "(919) 365-5666",
+     "email": "parker@commercialinstall.com",
+     "contact_page": "https://www.commercialinstallations.com/contact",
+     "website": "https://www.commercialinstallations.com/",
+     "evidence_urls": [
+      "https://www.commercialinstallations.com/",
+      "https://www.commercialinstallations.com/contact"
+     ],
+     "partition_evidence": "Homepage: installs Division 2-13 scopes '...including doors and hardware, toilet partitions, specialty equipment, furnishings, finishes, and more' for general contractors and property managers.",
+     "red_flags": [
+      "Stated service area is the Triangle region; it doesn't say it serves Fayetteville (about 60 miles away)",
+      "The contact email appears to be a named person's address (parker@), not a generic company inbox"
+     ],
+     "reason": "Confirms commercial toilet partition installation, but it's based in Raleigh and names only the Triangle as its service area. Ask whether it travels to Fayetteville.",
+     "added_by_checker": false
+    },
+    {
+     "name": "U.S. Doorways, Inc.",
+     "base_city": "Garner",
+     "state": "NC",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "phone": "919-861-6340",
+     "contact_page": "http://www.usdoorways.com/contact.html",
+     "website": "http://www.usdoorways.com/",
+     "evidence_urls": [
+      "http://www.usdoorways.com/",
+      "http://www.usdoorways.com/contact.html",
+      "http://www.usdoorways.com/services.html"
+     ],
+     "partition_evidence": "Homepage lists toilet partitions and toilet accessories among its products, and 'quality installation' among its services. Partition installation is not stated outright.",
+     "red_flags": [
+      "Supplies toilet partitions itself, so there is a buy-around risk",
+      "The page title says Jacksonville NC but the address is Garner; service area not stated",
+      "The website is dated and gives few details"
+     ],
+     "reason": "A door and Division 10 supplier that offers toilet partitions and general installation. It's about 55 miles away in Garner with no stated service area, and it sells partitions.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Integrated Openings Solutions, Raleigh (formerly B A Hoft & Associates)",
+     "base_city": "Raleigh",
+     "state": "NC",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "phone": "(919) 596-4446",
+     "email": "info@integratedopenings.com",
+     "contact_page": "https://integratedopenings.com/locations/",
+     "website": "https://integratedopenings.com/locations/raleigh/",
+     "evidence_urls": [
+      "https://integratedopenings.com/locations/raleigh/"
+     ],
+     "partition_evidence": "The Raleigh location lists 'washroom accessories' alongside door and frame installation. Toilet partitions are not mentioned.",
+     "red_flags": [
+      "Mainly a door, frame and hardware company; partitions are not named",
+      "Part of a multi-state company; Raleigh service area not stated",
+      "The email is company-wide, not specific to the Raleigh office"
+     ],
+     "reason": "A commercial door company whose Raleigh location lists washroom accessories. There's no partition evidence and no stated coverage of Fayetteville.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Global Commercial Installation, LLC",
+     "base_city": "Clayton",
+     "state": "NC",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "brands": [],
+     "review_source": "BBB (rating A reported in search results; profile not read)",
+     "evidence_urls": [
+      "https://www.bbb.org/us/nc/category/commercial-doors",
+      "https://bbb.org/us/nc/garner/category/commercial-doors"
+     ],
+     "partition_evidence": "None found. It appears only in BBB's Commercial Doors category; no website found.",
+     "red_flags": [
+      "No website found",
+      "No evidence of partition work",
+      "Facts come from search-result summaries of BBB category pages, not a profile page I read"
+     ],
+     "reason": "Listed by BBB as a commercial door business serving NC and SC (per search results), but there's no website and no evidence of partition installation.",
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "fort-myers",
+   "state": "FL",
+   "sources_tried": [
+    "Seed file fort-myers.json: worked. Opened Crowther (confirmed installer), Specialties Direct (distributor that installs) and AAA Specialty Products of FL. AAA's linked site base-spec.com is an unrelated Minnesota mat maker, so AAA could not be verified; IndustryNet returned 403. The other seeds are glass shops, remodelers and plumbers, so they were skipped.",
+    "Bobrick find-a-rep: the page loads but the results are a JavaScript dropdown, so no data came back.",
+    "Scranton Products find-a-rep: 404.",
+    "Bradley find-a-rep: no usable content.",
+    "ASI, Hadrian, Metpar, General Partitions and Ampco locators: not tried because the session ran out of time and budget.",
+    "The Blue Book iProView pages: 403 blocked.",
+    "Procore network search (network.procore.com): worked, but none of the toilet partition or accessory trade matches are within about 120 miles; the nearest is Holman Inc in Jacksonville.",
+    "BuildingConnected: not tried.",
+    "LinkedIn: 403. Manta: 403.",
+    "BBB Lee County 'partition' category: worked. It lists only out-of-area firms (Jacksonville, Dothan AL, Brooksville FL).",
+    "WebSearch: used 8 of 8. The results were mostly residential remodelers, specification documents and out-of-area firms (Holman Inc Jacksonville, Commercial Specialties Orange Park, Tri-County Building Specialties Fort Lauderdale, Elston's Brooksville). All were excluded as beyond about 120 miles or not verified as serving SW Florida.",
+    "Yelp: not reached within the search cap."
+   ],
+   "found_count": 4,
+   "checked": [
+    {
+     "name": "Crowther Specialties (Division 10 of Crowther)",
+     "base_city": "Fort Myers",
+     "state": "FL",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://www.crowther.net/division-10",
+     "phone": "(239) 489-0089",
+     "contact_page": "https://crowtherroofs.net/contact",
+     "evidence_urls": [
+      "https://www.crowther.net/division-10"
+     ],
+     "partition_evidence": "Division 10 page: 'Crowther Specialties supplies and installs toilet partition systems in a range of materials and finishes' (phenolic, HDPE, stainless, powder-coated steel, plastic laminate) for schools, churches, offices, healthcare and retail. No project photos or case studies, only one stock photo.",
+     "red_flags": [
+      "Supplies the partitions itself (buy-around risk)",
+      "No partition project examples or photos on the page",
+      "Division of a roofing company; also has Jupiter and Sarasota offices"
+     ],
+     "reason": "Fort Myers-based commercial Division 10 contractor that says it supplies and installs toilet partitions and names Cape Coral, Naples, Bonita Springs and Estero as service areas. Strong fit, but it sells partitions too.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Specialties Direct (Mardale Specialties Direct Inc), Fort Myers office",
+     "base_city": "Fort Myers",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://specialtiesdirect.com/",
+     "phone": "239-690-1001",
+     "email": "infofort@specialtiesdirect.com",
+     "contact_page": "https://specialtiesdirect.com/contact",
+     "evidence_urls": [
+      "https://specialtiesdirect.com/",
+      "https://specialtiesdirect.com/contact",
+      "https://specialtiesdirect.com/toilet-partitions"
+     ],
+     "partition_evidence": "Homepage says it distributes and installs for commercial and residential building needs. It has a toilet partitions product category, but that page doesn't mention installation, only stock available for same-day pickup.",
+     "red_flags": [
+      "Distributor that sells toilet partitions itself (strong buy-around risk and a direct competitor)",
+      "No partition installation shown specifically"
+     ],
+     "reason": "Multi-state Division 10 distributor with a Fort Myers branch. It sells partitions and mentions installation in general terms, but no partition installation work is shown.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Square 10 Source",
+     "base_city": "Plant City",
+     "state": "FL",
+     "verdict": "reject",
+     "installs_partitions": "likely",
+     "commercial": "mostly",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "website": "https://www.square10source.com/",
+     "phone": "(813) 425-5868",
+     "email": "jline@square10source.com",
+     "contact_page": "https://www.square10source.com/contact-us/",
+     "evidence_urls": [
+      "https://www.square10source.com/",
+      "https://www.square10source.com/contact-us/",
+      "https://www.linkedin.com/company/square10source/"
+     ],
+     "partition_evidence": "Homepage lists '102100 \u2013 Toilet Compartments' under Division 10 Specialties and offers Division 10 estimates. Installation of partitions isn't stated explicitly.",
+     "red_flags": [
+      "The listed email may be a personal staff address",
+      "No stated service in Southwest Florida"
+     ],
+     "reason": "Tampa Bay Division 10 contractor about 120 miles from Fort Myers. A search summary of its LinkedIn listed focus counties of Hillsborough, Pinellas, Manatee, Sarasota, Pasco and Polk (not Lee or Collier), and its site doesn't say it serves this area or the whole state.",
+     "added_by_checker": false
+    },
+    {
+     "name": "One Point Partitions",
+     "base_city": "Tampa",
+     "state": "FL",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "website": "https://onepointpartitions.com/",
+     "evidence_urls": [
+      "https://onepointpartitions.com/?p=1447",
+      "https://onepointpartitions.com/?p=3050",
+      "https://onepointpartitions.com/?p=13"
+     ],
+     "partition_evidence": "Its site returned 403 to direct fetches. Search summaries of its pages describe selling and shipping partitions with free delivery from Florida terminals, online install tutorials, and advice to hire a contractor. No company installation crew is shown.",
+     "red_flags": [
+      "Online partition seller and a direct competitor of Next Partitions",
+      "Site blocked direct fetching (403), so contact details weren't read"
+     ],
+     "reason": "Nationwide online partition seller with Tampa and Miami locations. Search results show it sells and ships partitions and leaves installation to the customer or a contractor; no evidence it installs.",
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "west-palm-beach",
+   "state": "FL",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/west-palm-beach.json: worked. Most Maps hits were shower-glass, remodeling and supply shops. The partition-relevant ones were Schedule 10, Sunshine State Specialties, Lotspeich and Florida State Glass. Division 7 Specialty Contractors (Riviera Beach) does fireproofing and waterproofing only. Atlantic Interior Services (Palm Beach Gardens) shows no partitions. Advanced Glass and ICU2 Glass show no restroom stalls.",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but the results are dynamic and nothing was returned",
+    "Scranton Products find-a-rep: 404",
+    "Hadrian find-a-rep: 404",
+    "Bradley find-a-rep: no content returned (dynamic)",
+    "Global Partitions (globalpartitions.com): DNS blocked in this session; the host would need to be allowed in the session's network settings",
+    "ASI, Metpar, General Partitions and Ampco locators: not reached (search budget used and no known locator URLs)",
+    "The Blue Book: iProView and category pages return 403. Only search-result summaries were used (Tri-County Building Specialties, Hugh Robinson). Hugh Robinson is a demountable office-partition company and was excluded.",
+    "BuildingConnected and Procore: not tried (search budget)",
+    "WebSearch (8 of 8 used): Division 10 West Palm Beach (nothing local); toilet partitions Palm Beach (nothing local); Boca/Jupiter/Treasure Coast (led to the BBB partitions category); Blue Book West Palm Beach (Tri-County Building Specialties); Palm Beach/Treasure Coast/Broward specialties (same); Hugh Robinson (office partitions, excluded); Port St. Lucie/Stuart/Vero/Fort Pierce (no local installer found)",
+    "BBB Florida 'Partitions' category (bbb.org/us/fl/category/partition): worked (Air Walls Systems, Hugh Robinson)",
+    "One Point Partitions: 403. It is a national online seller (competitor) and was excluded.",
+    "asdspecialties.com: DNS blocked in this session",
+    "Earlier repo research reused as leads and re-checked by fetching: miami.json (Tri-County Partitions, Diamond, RTI, Tropical Glass). Orlando and Tampa Division 10 firms are 150+ miles away and were excluded."
+   ],
+   "found_count": 10,
+   "checked": [
+    {
+     "name": "Lotspeich Co. of Florida, Inc.",
+     "added_by_checker": false,
+     "base_city": "Fort Lauderdale",
+     "state": "FL",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "regional",
+     "website": "http://lcfinc.com/",
+     "phone": "(954) 978-2388",
+     "email": "Info@lcfinc.com",
+     "contact_page": "https://lcfinc.com/contact-us/",
+     "evidence_urls": [
+      "http://lcfinc.com/",
+      "https://lcfinc.com/building-specialties/"
+     ],
+     "partition_evidence": "Building Specialties page lists Bathroom Partitions and shows photos captioned 'Seminole Hard Rock Casino bathroom stalls' and 'bathroom stall door'.",
+     "red_flags": [
+      "Site says 'Serving: Miami & Fort Lauderdale' and lists one Fort Lauderdale office; I found no Riviera Beach office on the site",
+      "Large specialty/GC firm (GC License CGC1507337 shown on site); partitions are one of many trades"
+     ],
+     "reason": "Commercial specialty contractor that shows its own bathroom stall installations. Its featured projects include Burns Road Community Center (Palm Beach Gardens) and The Boca Raton, so it works inside the area. Its base is about 40 miles south."
+    },
+    {
+     "name": "Sunshine State Specialties",
+     "added_by_checker": false,
+     "base_city": "unknown",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "unknown",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "regional",
+     "website": "https://sunstatespec.com/",
+     "phone": "754-755-6044",
+     "contact_page": "https://sunstatespec.com/contact/",
+     "evidence_urls": [
+      "https://sunstatespec.com/",
+      "https://sunstatespec.com/services/toilet-partitions/",
+      "https://sunstatespec.com/about/",
+      "https://sunstatespec.com/contact/"
+     ],
+     "partition_evidence": "The toilet partitions service page says it is a 'one-stop shop for the supply & installation of Toilet Partitions', with OSHA-trained installers.",
+     "red_flags": [
+      "No city, address, service area, projects or email anywhere on the site",
+      "Supplies partitions itself (buy-around risk)"
+     ],
+     "reason": "Says it supplies and installs toilet partitions and other Division 10 items, but shows no location, no projects and no service area. The 754 number is a Broward area code, which suggests it is near, but that is unconfirmed."
+    },
+    {
+     "name": "Schedule 10 Specialists, Inc.",
+     "added_by_checker": false,
+     "base_city": "Coral Springs",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "Accurate Partitions",
+      "Ampco",
+      "Bobrick",
+      "Bradley",
+      "Global Partitions",
+      "Hadrian",
+      "Metpar",
+      "General Cubicle"
+     ],
+     "within_area": "regional",
+     "website": "http://www.schedule10.com/",
+     "phone": "954-340-3681",
+     "email": "info@schedule10.com",
+     "contact_page": "http://www.schedule10.com/contact.php",
+     "evidence_urls": [
+      "http://www.schedule10.com/",
+      "http://www.schedule10.com/manufacturers.php"
+     ],
+     "partition_evidence": "'Specializing in large-scale installations of division 10 materials'. It has a Toilet Partitions product category and a manufacturers list with partition brands, but no explicit partition install photo was seen.",
+     "red_flags": [
+      "Has an online shop and represents many manufacturers (supplier and buy-around risk)",
+      "No stated service area; the projects listed are in Deerfield Beach, Miami and Coral Springs FL, and Batavia NY"
+     ],
+     "reason": "A Division 10 installer for commercial work (hospitals, schools, hotels, offices) about 40 miles from West Palm Beach, with a Deerfield Beach project near the area's south edge. I didn't see partition installation specifically."
+    },
+    {
+     "name": "Tri-County Partitions, LLC",
+     "added_by_checker": false,
+     "base_city": "Miami Lakes",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "Accurate Partitions (ASI)",
+      "Bobrick",
+      "Hadrian",
+      "Scranton Products",
+      "Bradley"
+     ],
+     "within_area": "no",
+     "website": "http://www.tricountypartitions.com/",
+     "phone": "(305) 748-5990",
+     "email": "service@tricountypartitions.com",
+     "contact_page": "http://www.tricountypartitions.com/",
+     "evidence_urls": [
+      "http://www.tricountypartitions.com/"
+     ],
+     "partition_evidence": "The homepage banner reads 'We Supply & Install Toilet Partitions & Restroom Accessories & More'.",
+     "red_flags": [
+      "Supplies and sells partitions with its own online store (strong buy-around risk)",
+      "No stated service area; base is about 60 miles from West Palm Beach"
+     ],
+     "reason": "A dedicated toilet partition supply-and-install company for facilities and schools, but in Miami-Dade and without any statement that it covers Palm Beach County."
+    },
+    {
+     "name": "RTI Supply",
+     "added_by_checker": false,
+     "base_city": "Doral",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "Ampco"
+     ],
+     "within_area": "regional",
+     "website": "http://rtisupply.com/",
+     "phone": "(305) 863-9094",
+     "email": "sales@rtisupply.com",
+     "contact_page": "http://rtisupply.com/contact-us",
+     "evidence_urls": [
+      "http://rtisupply.com/",
+      "http://rtisupply.com/contact-us"
+     ],
+     "partition_evidence": "The homepage says it distributes and installs restroom compartments in 8 materials and offers installation, with a project photo gallery.",
+     "red_flags": [
+      "Distributor ('preferred AMPCO distributor'), quick-ship program: high buy-around risk",
+      "Serves 'South Florida' generally; Palm Beach not named; base about 70 miles away"
+     ],
+     "reason": "Installs commercial partitions and says it serves South Florida, but it is primarily a distributor based in Miami-Dade."
+    },
+    {
+     "name": "Diamond Partitions, LLC",
+     "added_by_checker": false,
+     "base_city": "North Miami",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "Bobrick"
+     ],
+     "within_area": "regional",
+     "website": "https://www.diamondpartitions.com/",
+     "phone": "+1 (786) 209-6607",
+     "email": "sales@diamondpartitions.com",
+     "contact_page": "https://www.diamondpartitions.com/plan-room",
+     "evidence_urls": [
+      "https://www.diamondpartitions.com/",
+      "https://www.diamondpartitions.com/portfolio"
+     ],
+     "partition_evidence": "Says it does 'supply and installation (Furnish & Install) of commercial toilet partitions'. Portfolio: Matter Academy (Miami), 22 stalls installed.",
+     "red_flags": [
+      "Furnish-and-install model for GCs (supplies partitions: buy-around risk)",
+      "No stated service area; portfolio projects are Miami and Sarasota, none in Palm Beach County"
+     ],
+     "reason": "A proven commercial partition installer with projects elsewhere in Florida (Miami, Sarasota), about 65 miles away. Palm Beach coverage is not stated."
+    },
+    {
+     "name": "Tri-County Building Specialties, Inc.",
+     "added_by_checker": false,
+     "base_city": "Fort Lauderdale",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "regional",
+     "evidence_urls": [
+      "https://www.thebluebook.com/iProView/365583/tri-county-building-specialties-inc/material-suppliers/"
+     ],
+     "partition_evidence": "Only a search-result summary of its Blue Book listing: toilet and cubicle partitions, bathroom accessories and lockers; regions served reportedly include Palm Beach and Saint Lucie. The listing page itself returned 403, so I couldn't read it.",
+     "red_flags": [
+      "No website found",
+      "Evidence comes only from a search summary of a directory listing I could not open",
+      "Listed under material suppliers"
+     ],
+     "reason": "Possibly a Division 10 partition firm serving Palm Beach County, but I couldn't verify installation, contact details or activity from a page I read."
+    },
+    {
+     "name": "Florida State Glass & Mirror",
+     "added_by_checker": false,
+     "base_city": "Boca Raton",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "mostly",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "yes",
+     "website": "https://www.flglassandmirror.com/",
+     "phone": "561-997-6990",
+     "email": "info@flglassandmirror.com",
+     "contact_page": "https://www.flglassandmirror.com/contact/",
+     "evidence_urls": [
+      "https://www.flglassandmirror.com/"
+     ],
+     "partition_evidence": "Lists 'Glass Toilet Partitions' under Glass Partitions; no standard (phenolic/steel/HDPE) stall work was seen.",
+     "red_flags": [
+      "Glass shop: shower enclosures, mirrors and railings make up most of its work, with a big residential side",
+      "Glass partitions only; probably can't install standard partition brands"
+     ],
+     "reason": "In the area and does commercial glass, including glass toilet partitions, but nothing shows it installs standard toilet partitions like the ones Next Partitions sells."
+    },
+    {
+     "name": "Tropical Glass & Construction Co",
+     "added_by_checker": false,
+     "base_city": "Miami",
+     "state": "FL",
+     "verdict": "reject",
+     "installs_partitions": "likely",
+     "commercial": "mostly",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "regional",
+     "website": "https://www.tropicalglassmiami.com/",
+     "phone": "(305) 757-0651",
+     "email": "info@tropicalglassmiami.com",
+     "contact_page": "https://www.tropicalglassmiami.com/contact",
+     "evidence_urls": [
+      "https://www.tropicalglassmiami.com/"
+     ],
+     "partition_evidence": "Lists 'Glass Bathroom Stall Partitions' among its commercial services; no standard partition work seen.",
+     "red_flags": [
+      "Glass and mirror company; glass stalls only",
+      "Based in Miami, about 70 miles away"
+     ],
+     "reason": "A glass contractor serving Key West to Orlando. Glass stall partitions are a sideline, and nothing shows it installs standard toilet partitions."
+    },
+    {
+     "name": "Air Walls Systems, Inc.",
+     "added_by_checker": false,
+     "base_city": "Jupiter",
+     "state": "FL",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "unknown",
+     "sells_partitions": "no",
+     "brands": [],
+     "within_area": "yes",
+     "evidence_urls": [
+      "https://naicslist.com/company-profile/air-wall-systems-inc-jupiter-fl-33458"
+     ],
+     "partition_evidence": "None. The only match found (Air Wall Systems Inc., Jupiter) is classified as a poured concrete foundation and structure contractor.",
+     "red_flags": [
+      "No website found",
+      "Directory classification is concrete foundations, not partitions"
+     ],
+     "reason": "No evidence of any partition or Division 10 work. The only matching business is a small concrete contractor."
+    }
+   ]
+  },
+  {
+   "area": "palm-bay",
+   "state": "FL",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/palm-bay.json: read. It had 45 maps results and 35 web results. None was a partition installer: they were remodelers, plumbers, tile and flooring shops, stores and a portable-toilet supplier. The web results were Google redirect links without domains.",
+    "Existing area files orlando.json, miami.json and tampa.json: read for Florida regional firms. I reopened the Orlando-area firms' sites to check scope and service areas.",
+    "Bobrick find-a-rep: the page loaded but rep results need the JS dropdown, so no reps were read.",
+    "Metpar find-a-rep and General Partitions find-a-representative: both returned 404.",
+    "ASI, Scranton, Hadrian and Bradley locators: not retried this run (other area runs got 404 or empty pages). Ampco/Ammco: not tried.",
+    "The Blue Book (search.html?region=4&class=3070 and iProView/802033): 403, blocked.",
+    "Procore Network: worked, but its city category pages (Melbourne, Port St. Lucie and Vero Beach toilet-bath-and-laundry-accessories; Palm Bay interior-specialties) list statewide or national firms, not local ones. BLS Building (Fort Lauderdale, 'Partitions' trade, unclear) and Smith General Trades (Gainesville, accessories only) were not included.",
+    "BuildingConnected: not tried.",
+    "WebSearch: used 8 of 8. Useful results: 'Melbourne FL commercial carpentry specialties ... toilet partitions lockers Division 10' (found Mako Millwork) and the Treasure Coast and Port St. Lucie searches (confirmed there are almost no local specialists). Searches for Brevard, Palm Bay and Space Coast returned mostly plumbers.",
+    "Excluded as more than 120 miles away or national: Restroom Stalls and All (Gainesville GA; own crews install in FL), Specialty Installations & Sales (Port Richey FL; installs statewide), Watkins Accessories (Brooksville FL), Bell Architectural Specialties (Riverview FL), CS Installers (Fort Lauderdale office; site says it serves the Northeast), RTI Supply, Tri-County Partitions and Schedule 10 (South Florida), Holman (Jacksonville), and online sellers One Point Partitions, toiletpartitions.com, Partition Pros and US Partitions.",
+    "Yelp and BBB: none surfaced in the searches, so none were read."
+   ],
+   "found_count": 11,
+   "checked": [
+    {
+     "name": "HFM Construction Solutions",
+     "base_city": "Apopka",
+     "state": "FL",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "reason": "Division 10-only specialty installation contractor listing toilet partitions, compartments and restroom accessory sets for K-12, healthcare, government and commercial work; says it serves Florida and the Southeast. Apopka is about 75 miles from Palm Bay.",
+     "partition_evidence": "Homepage services: toilet partitions and accessories, shower and toilet compartments for institutional restrooms",
+     "brands": [],
+     "phone": "(689) 249-5751",
+     "email": "info@hfmcs.com",
+     "contact_page": "https://hfmcs.com/#contact",
+     "website": "https://hfmcs.com/",
+     "evidence_urls": [
+      "https://hfmcs.com/"
+     ],
+     "red_flags": [
+      "Site doesn't say whether it also supplies product"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Associated Building Specialties, Inc. (ABS)",
+     "base_city": "Orlando",
+     "state": "FL",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "reason": "Division 10 subcontractor since 1986 that furnishes bathroom partitions and accessories and self-performs installation with its own crews. Covers Central and West Florida (Orlando, Daytona, Tampa); Orlando is about 65 miles away.",
+     "partition_evidence": "Homepage lists bathroom partitions and bath accessories, installed by its own crews",
+     "brands": [],
+     "phone": "407-339-2284",
+     "email": "estimating@absfl.net",
+     "contact_page": "http://www.absfl.net/",
+     "website": "http://www.absfl.net/",
+     "evidence_urls": [
+      "http://www.absfl.net/"
+     ],
+     "red_flags": [
+      "Furnishes partitions itself (buy-around risk)",
+      "Stated focus markets don't name Brevard or the Treasure Coast"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "SJ Woodwork & Cabinetry LLC",
+     "base_city": "Orlando",
+     "state": "FL",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "mostly",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "reason": "Millwork company that installs with its own crews and lists Division 10 specialty installations, including toilet partitions and bathroom accessories, for commercial and institutional projects. It says it serves Central Florida and statewide.",
+     "partition_evidence": "Homepage Division 10 section: 'Toilet partitions, bathroom accessories, lockers'",
+     "brands": [],
+     "phone": "786-915-1719",
+     "email": "Smartins@sjwoodworkfl.com",
+     "contact_page": "https://sjwoodworkfl.com/contact",
+     "website": "https://sjwoodworkfl.com/",
+     "evidence_urls": [
+      "https://sjwoodworkfl.com/"
+     ],
+     "red_flags": [
+      "Partitions are a side line; main business is millwork and cabinetry, including residential",
+      "Listed phone has a Miami-area code",
+      "Contact email is a named person's address"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Mills & Nebraska",
+     "base_city": "Orlando",
+     "state": "FL",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "reason": "Division 8 and 10 supplier (since 1933) that sells toilet partitions and restroom accessories and offers installation of Division 10 products. Serves 24 Florida counties with its own delivery fleet.",
+     "partition_evidence": "Homepage lists Toilet Partitions and Restroom Accessories under Division 10 Specialties, and its installation service covers Division 10 products",
+     "brands": [],
+     "phone": "(866) 304-3667",
+     "email": "info@millsnebraska.com",
+     "contact_page": "https://www.millsnebraska.com/contact",
+     "website": "https://www.millsnebraska.com/",
+     "evidence_urls": [
+      "https://www.millsnebraska.com/"
+     ],
+     "red_flags": [
+      "Supplier of partitions (strong buy-around risk)",
+      "Mainly a door, frame and hardware distributor"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Florida Division 10, LLC",
+     "base_city": "Orlando",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "no",
+     "reason": "Install-only Division 10 firm that names toilet partitions and bathroom accessories and states 'WE DO NOT FURNISH', a good fit for us. But its service area isn't defined, and the contact page gives a St. Petersburg address (about 150 miles away).",
+     "partition_evidence": "Homepage lists Toilet Partitions, Bathroom Accessories and Lockers installation for general contractors",
+     "brands": [],
+     "phone": "689-221-3228",
+     "email": "info@floridadivision10.com",
+     "contact_page": "https://www.floridadivision10.com/contact/",
+     "website": "https://www.floridadivision10.com/",
+     "evidence_urls": [
+      "https://www.floridadivision10.com/",
+      "https://www.floridadivision10.com/contact/"
+     ],
+     "red_flags": [
+      "Base unclear: Orlando per list, St. Petersburg address on contact page",
+      "Service area not stated"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Mako Millwork Inc.",
+     "base_city": "Melbourne",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "mostly",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "reason": "Local Melbourne supplier whose Division 10 page lists toilet partitions and toilet accessories. It names supply and install for lockers, flagpoles and shelving, but not explicitly for partitions. It is the only candidate based in the area.",
+     "partition_evidence": "Division 10 page lists Toilet Partitions (stainless, baked enamel, resilient plastic) and Toilet Accessories; installation is stated only for other items",
+     "brands": [
+      "Plastpro",
+      "RSL Doors",
+      "Steves & Sons",
+      "Taylor Entrance Systems",
+      "Jeld-Wen"
+     ],
+     "phone": "(321) 725-2121",
+     "email": "Kara@MakoMillwork.com",
+     "contact_page": "https://makomillworkinc.com/contact/",
+     "website": "https://makomillworkinc.com/",
+     "evidence_urls": [
+      "https://makomillworkinc.com/",
+      "https://makomillworkinc.com/division-10/",
+      "https://makomillworkinc.com/commercial/"
+     ],
+     "red_flags": [
+      "Sells partitions (buy-around risk)",
+      "Partition installation not confirmed",
+      "Brands named are door brands, not partition brands"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Interior Specialties",
+     "base_city": "Altamonte Springs",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "reason": "Division 10 and 12 specialty subcontractor working for Florida general contractors. Its second office in Jensen Beach is about 10 miles from Port St. Lucie. Toilet partitions aren't named on the pages read.",
+     "partition_evidence": "Homepage: 'Division 10 Specialties' subcontractor; no partition products named",
+     "brands": [],
+     "phone": "(407) 539-1303",
+     "contact_page": "https://www.interiorspecialties.com/contact",
+     "website": "https://www.interiorspecialties.com/",
+     "evidence_urls": [
+      "https://www.interiorspecialties.com/"
+     ],
+     "red_flags": [
+      "No product list or project photos seen"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Florida Specialty Products, LLC",
+     "base_city": "Oviedo",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "reason": "Division 10 'supply and install' firm since 2006 with institutional projects (Nemours, UF). It doesn't name toilet partitions or state a service area. Oviedo is about 60 miles away.",
+     "partition_evidence": "Homepage: 'Division 10 - Supply and Install' of brand-name specialty items; partitions not named",
+     "brands": [],
+     "phone": "321-765-4975",
+     "email": "info@yourFLSP.com",
+     "contact_page": "https://www.yourflsp.com/contact/",
+     "website": "https://www.yourflsp.com/",
+     "evidence_urls": [
+      "https://www.yourflsp.com/",
+      "https://www.yourflsp.com/contact/"
+     ],
+     "red_flags": [
+      "Supplies products (buy-around risk)",
+      "Address is a suite number, possibly a mailbox",
+      "Service area not stated"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Clear Choice Glass & Specialties",
+     "base_city": "Kissimmee",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "reason": "Glass contractor whose Commercial Bathroom Partitions page says it has designed and installed commercial bathroom partitions (glass, with metal stalls mentioned) in Orlando. The service area named is Orlando and Central Florida, with no mention of Brevard or the Treasure Coast.",
+     "partition_evidence": "Commercial Bathroom Partitions page: 'designed and installed commercial bathroom partitions in Orlando'",
+     "brands": [],
+     "phone": "407-846-2337",
+     "email": "info@clearchoiceglassorlando.com",
+     "contact_page": "https://clearchoiceglassorlando.com/contact-us/",
+     "website": "https://clearchoiceglassorlando.com/",
+     "evidence_urls": [
+      "https://clearchoiceglassorlando.com/",
+      "https://clearchoiceglassorlando.com/commercial-bathroom-partitions/"
+     ],
+     "red_flags": [
+      "Mainly a glass and shower-door company; partition work may be glass-focused",
+      "Site shows two different emails"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Spec 10 Solutions",
+     "base_city": "unknown",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "reason": "Division 10 sales and installation firm 'Serving Florida' that lists toilet partitions and restroom accessories among the products it supplies and installs. No base city is given and the phone has a Miami-area code, so it is likely more than 120 miles away.",
+     "partition_evidence": "Homepage 'Products We Supply & Install' includes Toilet Partitions and Restroom Accessories",
+     "brands": [
+      "American Specialties",
+      "Larsen's",
+      "Bobrick",
+      "Inpro",
+      "Koala Bear",
+      "Nystrom",
+      "Potter-Roemer",
+      "Metpar",
+      "Bradley"
+     ],
+     "phone": "+1 (786) 402-0695",
+     "email": "estimating@spec10solutions.com",
+     "contact_page": "https://www.spec10solutions.com#contact-us",
+     "website": "https://www.spec10solutions.com/",
+     "evidence_urls": [
+      "https://www.spec10solutions.com/"
+     ],
+     "red_flags": [
+      "Base location not disclosed",
+      "Sells partitions, including Bobrick, Bradley and Metpar, which Next Partitions resells (buy-around risk)"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "C & S Supply",
+     "base_city": "Orlando",
+     "state": "FL",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "reason": "Division 8 and 10 supplier that sells toilet compartments and washroom partitions, but installation is offered only for doors and hardware. Its service area is greater Orlando and Central Florida. This is a supplier, not an installer.",
+     "partition_evidence": "Homepage lists 'Toilet Compartments & Accessories' and 'Washroom Partitions & Accessories' as supplied products only",
+     "brands": [
+      "Bobrick",
+      "ASSA ABLOY",
+      "Hager",
+      "Rockwood",
+      "dormakaba",
+      "Masonite"
+     ],
+     "phone": "407-540-1115",
+     "email": "bdewulf@cssupplyorl.com",
+     "contact_page": "https://cssupplyfl.com/contact/",
+     "website": "https://cssupplyfl.com/",
+     "evidence_urls": [
+      "https://cssupplyfl.com/"
+     ],
+     "red_flags": [
+      "Competing partition supplier",
+      "No partition installation shown"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "daytona",
+   "state": "FL",
+   "sources_tried": [
+    "Seed file daytona.json (Google Maps results): worked; ABS Inc, Florida Specialty Products, Interior Specialties and DDTEN came from it. Install Don't Fall turned out to be residential bathroom safety only (skipped), and most other seeds were remodelers, glass shops or plumbers.",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but the results are dropdown-driven, so no Florida reps were readable",
+    "Scranton Products rep locator (/find-a-rep/): 404",
+    "ASI, Bradley, Hadrian, Metpar, General Partitions and Ampco locators: not tried, stopped by time and fetch limits",
+    "The Blue Book (thebluebook.com category and iProView pages): blocked, 403",
+    "BuildingConnected and Procore public profiles: not tried",
+    "BBB partition category pages (Oviedo, Clermont): worked, giving Coyle, Complete Partitions and Hufcor (operable walls only, skipped)",
+    "BBB profiles (Coyle, Hufcor, Complete Partitions): worked",
+    "Jacksonville Chamber member directory: worked (Holman)",
+    "MapQuest listings: Associated Building Specialties worked; Commercial Specialties returned an empty page",
+    "Manta: blocked, 403",
+    "WebSearch: all 8 searches used (Daytona toilet partition installation; Orlando Division 10; FL cities toilet partitions; Complete Partitions; Commercial Specialties; NE FL Division 10; Volusia/Palm Coast/Port Orange/DeLand restroom partitions; Daytona/Ormond/Palm Coast toilet partitions). None found an installer based in Daytona, Port Orange, Deltona, DeLand or Palm Coast; ABS in Ormond Beach is the only local base.",
+    "Yelp: not tried, search cap reached"
+   ],
+   "found_count": 9,
+   "checked": [
+    {
+     "name": "Holman, Inc.",
+     "base_city": "Jacksonville",
+     "state": "FL",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "reason": "Its toilet partitions page says it sells and installs toilet partitions with its own in-house crew for business owners and general contractors. The same page lists Flagler County and Volusia County among the counties it serves. Jacksonville is about 90 miles from Daytona Beach.",
+     "added_by_checker": false,
+     "brands": [
+      "American Sanitary Partition Corporation",
+      "AAMCO (All American Metal Corp.)",
+      "ASI Accurate Partitions",
+      "Bobrick",
+      "Bradley",
+      "General Partitions",
+      "Gerali Custom Design",
+      "Ironwood",
+      "Metpar",
+      "PRIVADA",
+      "PSiSC",
+      "Sanymetal",
+      "Scranton Products",
+      "Hadrian"
+     ],
+     "partition_evidence": "The toilet-partitions page describes the steps from site measurement by its installation team to an in-house crew install and punch list. The portfolio shows photos of restroom stalls.",
+     "phone": "904-467-8779",
+     "email": "info@holman-inc.com",
+     "contact_page": "https://www.holman-inc.com/contact-us/",
+     "website": "http://www.holman-inc.com",
+     "rating": 4.9,
+     "review_count": 60,
+     "review_source": "Google, as quoted on its own site ('4.9 Stars 60+ Google Reviews'); not checked on Google",
+     "red_flags": [
+      "Sells partitions directly in many brands, including ASI, Bobrick, Bradley, Metpar, Scranton and AAMCO (buy-around risk)",
+      "The site shows a second phone number in the footer: 904-781-4531"
+     ],
+     "evidence_urls": [
+      "https://www.holman-inc.com/",
+      "https://www.holman-inc.com/toilet-partitions/",
+      "https://www.holman-inc.com/division-10-brands-we-sell/"
+     ]
+    },
+    {
+     "name": "Associated Building Specialties, Inc.",
+     "base_city": "Orlando",
+     "state": "FL",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "reason": "A full-service Division 10 subcontractor since 1986 that lists bathroom partitions and does the work with its own installation crews. It names the Daytona market and lists Daytona projects (One Daytona, Max Daytona). Orlando is about 55 miles away, and it also has a Tampa office.",
+     "added_by_checker": false,
+     "brands": [],
+     "partition_evidence": "The homepage lists bathroom partitions among its Division 10 scopes and says it self-performs with its own installation crews. The page has no project photos of partitions specifically.",
+     "phone": "407-339-2284",
+     "email": "estimating@absfl.net",
+     "contact_page": "https://absfl.net/",
+     "website": "https://absfl.net/",
+     "red_flags": [
+      "Works mostly on large GC-led commercial jobs (hotels, multifamily, theme parks), so it may not take small retrofit jobs",
+      "Says it has relationships with the largest manufacturers and offers products at a competitive price, so it supplies the material itself"
+     ],
+     "evidence_urls": [
+      "https://absfl.net/"
+     ]
+    },
+    {
+     "name": "Architectural Building Specialties, Inc. (ABS)",
+     "base_city": "Ormond Beach",
+     "state": "FL",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "reason": "The About page says it is a Division 10 specialty contractor that specializes in the supply and installation of toilet compartments, restroom accessories and wall protection for commercial contractors and building owners throughout Florida. The Ormond Beach base comes only from a BBB directory search snippet; the company's own site gives no address.",
+     "added_by_checker": false,
+     "brands": [
+      "Scranton Products",
+      "ASI Partitions",
+      "InPro",
+      "AJW"
+     ],
+     "partition_evidence": "The About page states 'supply and installation of ... toilet compartments'. The toilet-compartments page lists its partition suppliers. The site has no project photos.",
+     "contact_page": "https://www.absincfl.com/contact",
+     "website": "https://www.absincfl.com/",
+     "red_flags": [
+      "The website lists no phone, email or address; contact is by web form only",
+      "Base city not confirmed on its own site (BBB listing seen only in a search snippet)",
+      "Supplies partitions (Scranton, ASI, InPro), so a buy-around risk"
+     ],
+     "evidence_urls": [
+      "https://www.absincfl.com/about",
+      "https://www.absincfl.com/toilet-compartments",
+      "https://www.absincfl.com/contact"
+     ]
+    },
+    {
+     "name": "George P. Coyle & Sons, Inc.",
+     "base_city": "Jacksonville",
+     "state": "FL",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "reason": "It has a dedicated toilet partitions page and says it is a licensed and insured provider that supplies and installs commercial bathroom partitions throughout Northeast Florida. Palm Coast is on its service-area list. It is mainly a fencing and doors company, and Jacksonville is about 90 miles away.",
+     "added_by_checker": false,
+     "brands": [
+      "Bradley",
+      "Bobrick"
+     ],
+     "partition_evidence": "The toilet-partitions page says it supplies and installs code-compliant restroom partitions for schools, offices, hospitals and retail, and describes the mounting types.",
+     "phone": "904-356-4821",
+     "contact_page": "https://coylejax.com/contact/",
+     "website": "https://coylejax.com/",
+     "red_flags": [
+      "Core business is fencing, gates and doors; partitions are a side line",
+      "Supplies partitions itself (Bradley, Bobrick relationships)",
+      "Service area reaches Palm Coast but not Daytona Beach itself"
+     ],
+     "evidence_urls": [
+      "https://coylejax.com/",
+      "https://coylejax.com/toilet-partitions-in-jacksonville-florida/",
+      "https://coylejax.com/service-area/"
+     ]
+    },
+    {
+     "name": "DDTEN, LLC",
+     "base_city": "Longwood",
+     "state": "FL",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "reason": "A Longwood company focused on commercial bathroom partitions and specialty products. Its Services page lists 'Professional Partition Installation' and says it serves commercial spaces in central Florida. Longwood is about 45 miles from Daytona Beach, and the site does not name Volusia or Daytona specifically.",
+     "added_by_checker": false,
+     "brands": [
+      "Bobrick",
+      "Bradley",
+      "American Specialties, Inc."
+     ],
+     "partition_evidence": "The Services page lists Professional Partition Installation and Partition Design for clients such as coffee shops, daycares, offices, hotels and apartment complexes. The page carries a Hadrian product image. The site has no project list.",
+     "phone": "(407) 790-4074",
+     "contact_page": "https://ddtenllc.com/contact",
+     "website": "http://ddtenllc.com/",
+     "red_flags": [
+      "Small site with no project list or license number shown",
+      "Appears to supply partition products itself"
+     ],
+     "evidence_urls": [
+      "http://ddtenllc.com/",
+      "https://ddtenllc.com/services",
+      "https://ddtenllc.com/contact"
+     ]
+    },
+    {
+     "name": "Florida Specialty Products, LLC",
+     "base_city": "Oviedo",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "nearby",
+     "reason": "A Division 10 supply-and-install firm since 2006, serving schools, healthcare, banks, offices and retail. Its vendor logos include Scranton, Accurate, Bobrick and Bradley, but the site never names toilet partitions outright. The site states no base city or service area; Oviedo, from the candidate list, is about 45 miles away.",
+     "added_by_checker": false,
+     "brands": [
+      "Scranton",
+      "Accurate",
+      "Bobrick",
+      "Bradley",
+      "AJ Washroom",
+      "Amersan"
+     ],
+     "partition_evidence": "The site says 'Division 10 - Supply and Install' and shows partition-maker logos (Scranton, Accurate). It does not explicitly mention toilet partitions.",
+     "phone": "321-765-4975",
+     "contact_page": "https://www.yourflsp.com/contact/",
+     "website": "https://www.yourflsp.com/",
+     "red_flags": [
+      "Base city and service area not stated on the site",
+      "Supplies Division 10 products itself"
+     ],
+     "evidence_urls": [
+      "https://www.yourflsp.com/",
+      "https://www.yourflsp.com/projects/",
+      "https://www.yourflsp.com/about/"
+     ]
+    },
+    {
+     "name": "Interior Specialties",
+     "base_city": "Altamonte Springs",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "reason": "A Division 10 and 12 specialty subcontractor with over 40 years of experience, working with Florida GCs and construction managers. It has offices in Altamonte Springs, about 50 miles away, and Jensen Beach. Its Division 10 page lists partitions (plastic, stainless, laminate) and toilet accessories but does not explicitly say it installs toilet partitions.",
+     "added_by_checker": false,
+     "brands": [],
+     "partition_evidence": "The Division 10 page lists 'Partitions' in plastic, stainless steel and laminate. The Work page lists ABC award projects such as the Amway Center, Nemours Hospital and Epic Universe, with no partition detail.",
+     "phone": "(407) 539-1303",
+     "contact_page": "https://www.interiorspecialties.com/contact",
+     "website": "https://www.interiorspecialties.com/",
+     "red_flags": [
+      "Has an online 'Shop' product catalog, so it may sell products directly",
+      "No Daytona or Volusia projects named"
+     ],
+     "evidence_urls": [
+      "https://www.interiorspecialties.com/",
+      "https://www.interiorspecialties.com/services-2",
+      "https://www.interiorspecialties.com/work"
+     ]
+    },
+    {
+     "name": "Complete Partitions + Equipment LLC",
+     "base_city": "Lake Mary",
+     "state": "FL",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "reason": "Mainly sells and services operable walls and folding partitions, but toilet partitions are among its products. It serves the Southeastern US and the Caribbean from Lake Mary, about 45 miles away. Toilet partition installation is not explicitly stated.",
+     "added_by_checker": false,
+     "brands": [
+      "Scranton Products",
+      "Solar Innovations",
+      "Cascade Architectural",
+      "Sliding Door Company"
+     ],
+     "partition_evidence": "The homepage lists toilet partitions among its products and says it has factory-trained technicians for operable partitions. No toilet partition project photos were seen.",
+     "phone": "(844) 424-7925",
+     "email": "info@completepartitions.com",
+     "contact_page": "https://www.completepartitions.com/contact",
+     "website": "https://www.completepartitions.com/",
+     "red_flags": [
+      "Sells toilet partitions itself (buy-around risk)",
+      "Core business is operable walls, not restroom partitions"
+     ],
+     "evidence_urls": [
+      "https://www.completepartitions.com/"
+     ]
+    },
+    {
+     "name": "Commercial Specialties",
+     "base_city": "Orange Park",
+     "state": "FL",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "reason": "No company website was found, and its MapQuest and Blue Book listings could not be loaded. A search snippet calls it a Division 10 supplier and installer in Orange Park, about 100 miles away, with no stated service to the Daytona area.",
+     "added_by_checker": false,
+     "brands": [],
+     "red_flags": [
+      "No website found; nothing verified first-hand"
+     ],
+     "evidence_urls": []
+    }
+   ]
+  },
+  {
+   "area": "toledo",
+   "state": "OH",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/toledo.json: worked. 40 Maps results, almost all residential remodelers, plumbers and stores; only Tanner Supply (Temperance, MI) was relevant. The web list was empty.",
+    "Bobrick Find a Rep (bobrick.com/find-a-rep/): the page loaded but the results need a JavaScript dropdown, so no reps were returned.",
+    "Scranton Products where-to-buy: worked, but it lists only territory sales specialists (OH and MI), not dealers or installers.",
+    "Kelley Bros Division 10 page: worked. It lists Ohio but no Toledo branch, so it was not included.",
+    "ASI, Bradley, Hadrian, Metpar, General Partitions, Ampco locators: not tried; the search and fetch budget went to local leads.",
+    "The Blue Book (thebluebook.com iProView pages and search): blocked, HTTP 403.",
+    "BuildingConnected / Procore public profiles: not reached; no profiles surfaced in search.",
+    "WebSearch: used all 8 of 8 allowed searches. They found almost no Toledo-based partition installers; results were dominated by One Point Partitions pages and generic spec documents.",
+    "BBB category pages (Toledo partitions, Lima partitions, Toledo lockers): worked. These were the source for Roberts Installation & Repair, All Partitions & Parts, Robert Brooke and General Building Products.",
+    "onepointpartitions.com: blocked, HTTP 403; snippets only.",
+    "Company sites fetched directly (worked): tannersupply.com, interiorresource.org, zinstallers.com, bradenandmcsweeny.com (home, services, contact), rayhaven.com, robertbrooke.com, partitionsandstalls.com, allpartitions.com, inter-co.com (Columbus, about 125+ miles away with no Toledo mention, so excluded), quadrants.com (a general contractor with no partition work, so excluded), clevelandconstruction.com (offices in Cincinnati and other non-local cities, so excluded), martinbros.net (California, so excluded).",
+    "Gap: no Toledo-based Division 10 installer was confirmed. The best leads are Tanner Supply (local distributor; confirm whether it installs), Interior Resource Supply (Dearborn), and Zietlow and Braden and McSweeny (Cleveland area). It is worth a phone check on Tanner Supply and on National Ceiling & Partitions (Ann Arbor), which a search summary said has a Blue Book profile listing Lucas County, OH; that profile is blocked and was not read."
+   ],
+   "found_count": 10,
+   "checked": [
+    {
+     "name": "Zietlow Installers & Distributors",
+     "base_city": "North Ridgeville",
+     "state": "OH",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "phone": "440-355-4460",
+     "email": "info@zinstallers.com",
+     "contact_page": "https://zinstallers.com/contact.htm",
+     "website": "http://zinstallers.com/",
+     "evidence_urls": [
+      "http://zinstallers.com/",
+      "https://zinstallers.com/contact.htm"
+     ],
+     "partition_evidence": "Its homepage lists toilet partitions among the products it supplies and installs with its own crew, and a testimonial describes a church bathroom partition installation.",
+     "reason": "A commercial installer and distributor of lockers and toilet partitions since 1970. It says it serves Ohio, Michigan and Pennsylvania, and it is about 95 miles from Toledo. The named cities are all in the Cleveland area, so Toledo coverage is covered only by its statewide claim.",
+     "red_flags": [
+      "It supplies partitions itself, so it is a buy-around risk",
+      "Named service cities are all in the Cleveland area; Toledo isn't named",
+      "Brands page content not read"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Braden and McSweeny, Inc. (Ohio office)",
+     "base_city": "Westlake",
+     "state": "OH",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Koala"
+     ],
+     "phone": "440-539-8666",
+     "contact_page": "https://www.bradenandmcsweeny.com/contact/",
+     "website": "https://www.bradenandmcsweeny.com/",
+     "evidence_urls": [
+      "https://www.bradenandmcsweeny.com/",
+      "https://www.bradenandmcsweeny.com/services/",
+      "https://www.bradenandmcsweeny.com/contact/"
+     ],
+     "partition_evidence": "Its services page says it is \"Manufacturer certified to install all of our Toilet Partitions, Toilet Room Accessories, and Lockers\" and offers a turnkey Division 10 package that includes installation.",
+     "reason": "A Division 10 dealer (since 1964) that installs partitions, based in Pittsburgh with an office in Westlake, OH, about 100 miles from Toledo. No page says it serves northwest Ohio, so coverage needs confirming.",
+     "red_flags": [
+      "It supplies partitions itself, so it is a buy-around risk",
+      "Service area isn't stated; its stock claim refers to Western Pennsylvania",
+      "Headquarters is in Pittsburgh"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Tanner Supply Co.",
+     "base_city": "Temperance",
+     "state": "MI",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Bobrick",
+      "Bradley",
+      "Hadrian",
+      "Emco",
+      "JL Industries",
+      "Steelcraft",
+      "Von Duprin"
+     ],
+     "phone": "734.847.5446",
+     "contact_page": "https://www.tannersupply.com/contact-us/",
+     "website": "https://tannersupply.com/",
+     "evidence_urls": [
+      "https://tannersupply.com/",
+      "https://www.tannersupply.com/contact-us/"
+     ],
+     "partition_evidence": "Its homepage says it is \"the authorized area distributor for Toilet Partitions\" and lists toilet partitions and accessories as Division 10 products. Installation is mentioned for hardware only, not for partitions.",
+     "reason": "A commercial Division 10 and door supplier just north of Toledo (it also lists a 419 project line, 419.847.5446). It distributes partitions, but no page says it installs them.",
+     "red_flags": [
+      "It distributes partitions itself, so it is a high buy-around risk",
+      "No partition installation shown",
+      "No email listed; contact form only"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Interior Resource Supply Inc",
+     "base_city": "Dearborn",
+     "state": "MI",
+     "verdict": "reject",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "phone": "734.968.4747",
+     "email": "jlee@interiorresource.org",
+     "website": "https://interiorresource.org/",
+     "evidence_urls": [
+      "https://interiorresource.org/"
+     ],
+     "partition_evidence": "Its homepage describes \"providing, installing and servicing Acoustical Ceilings, Bathroom Partitions and much more\".",
+     "reason": "A specialty contractor and distributor that installs bathroom partitions, but it is about 50 miles from Toledo and describes itself as a Detroit-area supplier. No page mentions Ohio or Toledo. Worth asking about coverage if the area is short of installers.",
+     "red_flags": [
+      "Outside the 30-mile radius, with no stated Ohio service",
+      "Its email appears to be a named person's address",
+      "It supplies partitions itself"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Rayhaven Group",
+     "base_city": "Livonia",
+     "state": "MI",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "phone": "(734) 744-9260",
+     "email": "contact@rayhaven.com",
+     "contact_page": "https://www.rayhaven.com/contact.html",
+     "website": "https://www.rayhaven.com/",
+     "evidence_urls": [
+      "https://www.rayhaven.com/",
+      "https://www.rayhaven.com/contact.html"
+     ],
+     "partition_evidence": "It sells metal, plastic, phenolic and laminate partitions. Its pages mention installation only for doors.",
+     "reason": "A distributor with locations in Livonia MI, Grand Rapids MI, Richfield OH and Longwood FL. No partition installation is shown, and no stated service area includes Toledo.",
+     "red_flags": [
+      "Distributor only, so it is a buy-around risk",
+      "Its site contains unrelated spam links (dental, pharmacy), which suggests the site may be compromised"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Robert Brooke & Associates, Inc.",
+     "base_city": "Troy",
+     "state": "MI",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [
+      "Bobrick",
+      "ASI",
+      "World Dryer",
+      "Von Duprin",
+      "Sargent",
+      "LCN"
+     ],
+     "phone": "1-800-642-2403",
+     "email": "sales@robertbrooke.com",
+     "contact_page": "https://www.robertbrooke.com/contact",
+     "website": "https://www.robertbrooke.com/",
+     "evidence_urls": [
+      "https://www.robertbrooke.com/"
+     ],
+     "partition_evidence": "It sells partitions and parts and links to installation instructions. No installation service is offered.",
+     "reason": "A hardware and partition supplier selling locally and nationally, about 75 miles from Toledo. It doesn't install.",
+     "red_flags": [
+      "Competing partition seller"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "All Partitions & Parts, LLC",
+     "base_city": "Troy",
+     "state": "MI",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [
+      "ASI Accurate",
+      "Bradley",
+      "Global",
+      "Hadrian",
+      "Bobrick",
+      "Metpar"
+     ],
+     "phone": "866-255-8645",
+     "email": "help@allpartitions.com",
+     "website": "https://www.allpartitions.com/",
+     "evidence_urls": [
+      "https://www.allpartitions.com/",
+      "https://www.bbb.org/us/oh/toledo/category/partition"
+     ],
+     "partition_evidence": "It sells partitions, parts and hardware kits with installation instructions. No installation service is offered.",
+     "reason": "An online and wholesale partition and parts seller. It doesn't install and is outside the area.",
+     "red_flags": [
+      "Direct competitor reseller"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Roberts Installation & Repair, Inc.",
+     "base_city": "Scotts",
+     "state": "MI",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "no",
+     "brands": [],
+     "phone": "(269) 370-3131",
+     "evidence_urls": [
+      "https://www.bbb.org/us/mi/scotts/profile/partition/roberts-installation-repair-inc-0372-38149743",
+      "https://www.bbb.org/us/oh/toledo/category/partition"
+     ],
+     "partition_evidence": "Its BBB listing covers gym partitions (curtains, wall mats, bleachers), not toilet partitions.",
+     "reason": "A gym partition and bleacher installer serving the Kalamazoo area, about 130 miles away. It does not do restroom partitions.",
+     "red_flags": [
+      "Wrong trade (gym dividers)",
+      "Out of area",
+      "No website found"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "One Point Partitions",
+     "base_city": "unknown",
+     "state": "OH",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "website": "https://onepointpartitions.com/",
+     "evidence_urls": [
+      "https://onepointpartitions.com/service-areas/ohio-bathroom-partitions/"
+     ],
+     "partition_evidence": "Seen only in search snippets: it supplies partitions designed for DIY installation, with delivery from a Toledo terminal. No installation service is evident. The site returned 403, so no page was read directly.",
+     "reason": "A national online partition seller (a competitor), not an installer. The Toledo address is a delivery terminal, and its base city is unknown.",
+     "red_flags": [
+      "Competing partition seller",
+      "Site blocked automated access (403); details unverified",
+      "Base location unknown; within_area set to no because only a delivery terminal is in Toledo"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "General Building Products Inc.",
+     "base_city": "Toledo",
+     "state": "OH",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "evidence_urls": [],
+     "partition_evidence": "None found. A search for this name in Toledo with toilet partitions returned only General Partitions Mfg. Corp. (Erie, PA).",
+     "reason": "No website or listing for this business could be found, so there is no evidence it installs partitions.",
+     "red_flags": [
+      "Business not verified to exist"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  }
+ ],
+ "licenses": [
+  {
+   "state": "GA",
+   "results": [
+    {
+     "name": "Terminus Specialties, Inc.",
+     "area": "columbus-ga",
+     "status": "not_online",
+     "registry": "Georgia Secretary of State Professional Licensing verification (State Licensing Board for Residential and General Contractors), verify.sos.ga.gov",
+     "source_url": "https://verify.sos.ga.gov/verification/Search.aspx",
+     "note": "Checked 2026-11-20. The Georgia license lookup returned HTTP 403 to automated access (curl and WebFetch), so no record could be read. Georgia's state status for partition installation is unclear: a general contractor license applies above $2,500, and specialty trade work may be exempt (not verified against official text). Columbus has no local rule. The company website (terminusspecialties.com) homepage shows no license number. The GA Corporations Division business search (ecorp.sos.ga.gov) also returned 403. Confirm by phone with the board or ask the installer for the license number."
+    },
+    {
+     "name": "Accessories Unlimited Inc (AUI)",
+     "area": "columbus-ga",
+     "status": "not_online",
+     "registry": "Georgia Secretary of State Professional Licensing verification (State Licensing Board for Residential and General Contractors), verify.sos.ga.gov",
+     "source_url": "https://verify.sos.ga.gov/verification/Search.aspx",
+     "note": "Checked 2026-11-20. The Georgia license lookup returned HTTP 403 to automated access. Whether Georgia requires a license for this work is unclear (GC license above $2,500, possible specialty exemption). Columbus has no local rule. The accessoriesunlimited.net homepage shows no license number. Ask the installer for a license number, or for the reason none is needed, during vetting."
+    },
+    {
+     "name": "Restroom Stalls and All (RSA)",
+     "area": "columbus-ga",
+     "status": "not_online",
+     "registry": "Georgia Secretary of State Professional Licensing verification (State Licensing Board for Residential and General Contractors), verify.sos.ga.gov",
+     "source_url": "https://verify.sos.ga.gov/verification/Search.aspx",
+     "note": "Checked 2026-11-20. The Georgia license lookup returned HTTP 403 to automated access. Georgia's state status is unclear and Columbus has no local rule. The restroomstallsandall.com homepage shows no license number. Confirm during vetting."
+    },
+    {
+     "name": "Maven Accessories",
+     "area": "columbus-ga",
+     "status": "not_online",
+     "registry": "Georgia Secretary of State Professional Licensing verification (State Licensing Board for Residential and General Contractors), verify.sos.ga.gov",
+     "source_url": "https://verify.sos.ga.gov/verification/Search.aspx",
+     "note": "Checked 2026-11-20. The Georgia license lookup returned HTTP 403 to automated access. Georgia's state status is unclear and Columbus has no local rule. The mavenaccessories.com homepage shows no license number. Confirm during vetting."
+    },
+    {
+     "name": "Mason-Hall & Company, Inc.",
+     "area": "columbus-ga",
+     "status": "not_online",
+     "registry": "Georgia Secretary of State Professional Licensing verification (State Licensing Board for Residential and General Contractors), verify.sos.ga.gov",
+     "source_url": "https://verify.sos.ga.gov/verification/Search.aspx",
+     "note": "Checked 2026-11-20. The Georgia license lookup returned HTTP 403 to automated access. Georgia's state status is unclear and Columbus has no local rule. The masonhall.com homepage shows no license number. Confirm during vetting."
+    },
+    {
+     "name": "Restroom Stalls and All (RSA)",
+     "area": "greenville-sc",
+     "status": "not_online",
+     "registry": "South Carolina LLR Contractor's Licensing Board license lookup, verify.llronline.com (and Georgia SOS verify.sos.ga.gov for the home state)",
+     "source_url": "https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69",
+     "note": "Checked 2026-11-20. This is a Gainesville, GA business listed for the Greenville, SC area. The task gave no SC/Greenville rule. The SC LLR contractor lookup page loads, but its search form is protected by reCAPTCHA, so it was not run (no automated search, no form submission). The Georgia lookup returned 403. The website shows no license number. Check the SC requirement for out-of-state partition installers and look the business up manually."
+    }
+   ],
+   "registries": [
+    "Georgia SOS Professional Licensing verification (verify.sos.ga.gov), covering the State Licensing Board for Residential and General Contractors: HTTP 403 to curl and WebFetch, so automated lookup did not work",
+    "Georgia SOS Corporations Division business search (ecorp.sos.ga.gov/BusinessSearch): HTTP 403, so automated lookup did not work",
+    "South Carolina LLR Contractor's Licensing Board lookup (verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69): the page loads but the search is gated by reCAPTCHA, so automated lookup did not work",
+    "Columbus, GA local rule: none, so no city registry applies",
+    "Company homepages (5 sites) were scanned for 'license' text: no license numbers are published"
+   ]
+  },
+  {
+   "state": "SC",
+   "registries": [
+    "South Carolina Contractor's Licensing Board (LLR) Licensee Lookup - Contractors, https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69: the page loads, but its Find button sits behind Google reCAPTCHA, so an automated lookup isn't possible. Not attempted past the captcha; every business needs a manual check in a browser.",
+    "Greenville, SC local registry: none applies (the area rule lists no local requirement).",
+    "Company websites (icsdoors.com, coachpartitions.com, newsouthspecialties.com, precisionwalls.com): homepages scanned for self-published license numbers on 2026-11-20. None found.",
+    "One web search for the four names together with SC LLR licensing returned no licensee records."
+   ],
+   "results": [
+    {
+     "name": "ICS Inc. (Innovative Construction Services)",
+     "area": "greenville-sc",
+     "status": "not_online",
+     "registry": "South Carolina Contractor's Licensing Board (LLR) Licensee Lookup - Contractors",
+     "source_url": "https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69",
+     "note": "Checked 2026-11-20. SC requires a state contractor license above the $10,000 threshold. The LLR lookup is behind reCAPTCHA, so the record couldn't be read automatically. Look it up by hand by company name ('ICS' or 'Innovative Construction Services'; the lookup says not to use punctuation), city Greenville. The company homepage (https://www.icsdoors.com/) shows no license number. No local Greenville requirement applies."
+    },
+    {
+     "name": "Coach Partitions, LLC",
+     "area": "greenville-sc",
+     "status": "not_online",
+     "registry": "South Carolina Contractor's Licensing Board (LLR) Licensee Lookup - Contractors",
+     "source_url": "https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69",
+     "note": "Checked 2026-11-20. Based in Columbia. The LLR lookup is behind reCAPTCHA, so the record couldn't be read automatically. Look it up by hand as 'Coach Partitions', city Columbia. The company homepage (https://coachpartitions.com/) shows no license number. A state license is needed only for jobs above the $10,000 threshold."
+    },
+    {
+     "name": "New South Specialties, LLC",
+     "area": "greenville-sc",
+     "status": "not_online",
+     "registry": "South Carolina Contractor's Licensing Board (LLR) Licensee Lookup - Contractors",
+     "source_url": "https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69",
+     "note": "Checked 2026-11-20. Based in Columbia. The LLR lookup is behind reCAPTCHA, so the record couldn't be read automatically. Look it up by hand as 'New South Specialties', city Columbia. The company homepage (http://www.newsouthspecialties.com/) shows no license number."
+    },
+    {
+     "name": "Precision Walls (Greenville-Spartanburg office)",
+     "area": "greenville-sc",
+     "status": "not_online",
+     "registry": "South Carolina Contractor's Licensing Board (LLR) Licensee Lookup - Contractors",
+     "source_url": "https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69",
+     "note": "Checked 2026-11-20. The LLR lookup is behind reCAPTCHA, so the record couldn't be read automatically. Look it up by hand as 'Precision Walls' with no city filter, since the license may sit with the parent company's head office rather than the Greenville-Spartanburg branch. The company homepage (https://www.precisionwalls.com/) shows no license number."
+    }
+   ]
+  },
+  {
+   "state": "NC",
+   "results": [
+    {
+     "name": "Seven Oaks Door and Hardware Inc.",
+     "area": "greenville-sc (business based in Locust, NC)",
+     "status": "not_found",
+     "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+     "source_url": "https://portal.nclbgc.org/Public/Search",
+     "note": "Checked 2026-11-20. Searches for 'Seven Oaks', 'Seven Oaks Door' and 'Seven Oaks Hardware' found no NC general contractor license for this company. The only match was Seven Oaks Construction, LLC (L.66423, License Not Active), which is not shown to be this company. NC requires a GC license only for jobs at or above the state threshold, so partition-only jobs below it may need none. The area is Greenville SC, and the task gave no SC rule, so the SC LLR contractor licensing check was not done here."
+    },
+    {
+     "name": "Federal Doors",
+     "area": "fayetteville-nc",
+     "status": "not_found",
+     "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+     "source_url": "https://portal.nclbgc.org/Public/Search",
+     "note": "Checked 2026-11-20. Searches for 'Federal Doors' and 'Federal' found no NC GC license. The company site (https://federaldoors.com/) gives Spring Lake, NC and lists restroom partitions among its Division 10 products, plus installation services. It gives a CAGE number and a UEI, which are federal registrations, not licenses, and no legal entity name. No license is needed under the NC threshold, which is the rule for Fayetteville; there is no local rule."
+    },
+    {
+     "name": "CAM Contractors, Inc.",
+     "area": "fayetteville-nc",
+     "status": "not_found",
+     "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+     "source_url": "https://portal.nclbgc.org/Public/Search",
+     "note": "Checked 2026-11-20. Searches for 'CAM Contractors', 'CAM Contract', 'CAM' and 'C.A.M.' found no matching license. The close names were unrelated: 'Amber Nicole McCrory, T/A Cam Contracting' (Pending, Not Active) and Lancam Contracting LLC. The company site (https://camcontractors.net/) gives Fort Bragg, NC and says it does Division 9 and Division 10 installs (lockers, wall guards) and has subcontracted at Fort Bragg since 2009. It says 'licensed and insured' but gives no license number. Work on the federal installation may fall outside state licensing."
+    },
+    {
+     "name": "Precision Walls, Inc.",
+     "area": "fayetteville-nc",
+     "status": "found_active",
+     "license_number": "L.12009",
+     "license_type": "NC General Contractor License, Unlimited limitation, Building classification",
+     "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+     "source_url": "https://portal.nclbgc.org/Public/_ShowAccountDetails/?key=GUhzdDMIzyVMgmgeZHBhGg%3d%3d&Source=Search",
+     "note": "Checked 2026-11-20. Board record for Precision Walls, Inc. in Cary, NC: license L.12009, status Active, limitation Unlimited, classification Building. First issued 07/23/1980; expires 12/31/2026. The record lists phone 919-459-2900, and that is the company line on the board record."
+    },
+    {
+     "name": "Commercial Installations Inc",
+     "area": "fayetteville-nc",
+     "status": "not_found",
+     "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+     "source_url": "https://portal.nclbgc.org/Public/Search",
+     "note": "Checked 2026-11-20. Searches for 'Commercial Installations' and 'Commercial Install' found only 'Commercial Installation & Construction Company' (L.70351, License Not Active), which is not shown to be this Raleigh company. No active license was found under this name. A license is not required below the NC threshold."
+    },
+    {
+     "name": "U.S. Doorways, Inc.",
+     "area": "fayetteville-nc",
+     "status": "not_found",
+     "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+     "source_url": "https://portal.nclbgc.org/Public/Search",
+     "note": "Checked 2026-11-20. Searches for 'U.S. Doorways', 'US Doorways' and 'Doorways' returned no results. A license is not required below the NC threshold."
+    },
+    {
+     "name": "Integrated Openings Solutions, Raleigh (formerly B A Hoft & Associates)",
+     "area": "fayetteville-nc",
+     "status": "not_found",
+     "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+     "source_url": "https://portal.nclbgc.org/Public/Search",
+     "note": "Checked 2026-11-20. Searches for 'Integrated Openings', 'Integrated Opening', 'B A Hoft' and 'B. A. Hoft' found no matching license. 'Hoft' matched only an inactive qualifier record (Q.24964, Donald C. Bernhoft), which is unrelated. A 'Integrated' search returned many unrelated companies. The company may hold a license under a parent entity name that wasn't identified, so that is unknown. A license is not required below the NC threshold."
+    }
+   ],
+   "registries": [
+    "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (https://portal.nclbgc.org/Public/Search): public, no sign-in. The search form posts to /Public/_Search/ and record details load from /Public/_ShowAccountDetails/. Automated lookup worked for all 7 businesses.",
+    "Fayetteville, NC local rule: none, so there is no city registry to check.",
+    "SC LLR (for Seven Oaks Door and Hardware, area greenville-sc): not checked, because the task gave no SC rule."
+   ]
+  },
+  {
+   "state": "FL",
+   "results": [
+    {
+     "name": "Crowther Specialties (Division 10 of Crowther)",
+     "area": "fort-myers",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "license_type": "Company site lists CILB licenses: General Contractor, Roofing, HVAC (not verified on DBPR)",
+     "license_number": "CGC1524777 (as stated on company site, unverified)",
+     "source_url": "https://www.crowther.net/division-10",
+     "note": "DBPR Verify a Licensee (https://www.myfloridalicense.com/portalsearches/VerifyLicensee) is an interactive POST form with an anti-forgery token; the old wl11.asp search redirects to it, so no automated lookup was run. The company site footer, under 'Florida Construction Industry Licensing Board Licenses', lists 'General Contractor : CGC1524777', 'Roofing : CCC039822', 'HVAC : CMC1250360'. Base city Fort Myers; company phone (239) 489-0089 (company site). Florida has no state category for toilet partitions (state status unclear); no local rule for Fort Myers. Next step: confirm CGC1524777 by hand on DBPR."
+    },
+    {
+     "name": "Specialties Direct (Mardale Specialties Direct Inc), Fort Myers office",
+     "area": "fort-myers",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form with an anti-forgery token, so no automated lookup was run. Company site not read for a license number. No state category for partitions (state status unclear); no local rule for Fort Myers. Next step: look up by name by hand."
+    },
+    {
+     "name": "Lotspeich Co. of Florida, Inc.",
+     "area": "west-palm-beach",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "license_type": "Certified General Contractor (per company site, unverified)",
+     "license_number": "CGC1507337 (as stated on company site, unverified)",
+     "source_url": "http://lcfinc.com/",
+     "note": "Company site footer shows 'GC License # CGC1507337'; base city Fort Lauderdale (company site). DBPR Verify a Licensee is an interactive POST form, so the number wasn't checked against DBPR. No local rule for West Palm Beach. Next step: confirm CGC1507337 by hand on DBPR."
+    },
+    {
+     "name": "Sunshine State Specialties",
+     "area": "west-palm-beach",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form with an anti-forgery token, so no automated lookup was run. Company site not read for a license number; base city unknown. Next step: look up by name by hand."
+    },
+    {
+     "name": "Schedule 10 Specialists, Inc.",
+     "area": "west-palm-beach",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read for a license number. Next step: look up by name by hand."
+    },
+    {
+     "name": "Tri-County Partitions, LLC",
+     "area": "west-palm-beach",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "http://www.tricountypartitions.com/",
+     "note": "The company homepage shows no license number; base city Miami Lakes (company site). DBPR search is an interactive POST form, so no automated lookup was run. Next step: look up by name by hand."
+    },
+    {
+     "name": "RTI Supply",
+     "area": "west-palm-beach",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+    },
+    {
+     "name": "Diamond Partitions, LLC",
+     "area": "west-palm-beach",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+    },
+    {
+     "name": "Tri-County Building Specialties, Inc.",
+     "area": "west-palm-beach",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run. No website given. Next step: look up by name by hand."
+    },
+    {
+     "name": "Florida State Glass & Mirror",
+     "area": "west-palm-beach",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+    },
+    {
+     "name": "HFM Construction Solutions",
+     "area": "palm-bay",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://hfmcs.com/",
+     "note": "The company homepage doesn't mention a license; base city Apopka (company site). DBPR search is an interactive POST form, so no automated lookup was run. No local rule for Palm Bay. Next step: look up by name by hand."
+    },
+    {
+     "name": "Associated Building Specialties, Inc. (ABS)",
+     "area": "palm-bay",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read for a license number. Next step: look up by name by hand."
+    },
+    {
+     "name": "SJ Woodwork & Cabinetry LLC",
+     "area": "palm-bay",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+    },
+    {
+     "name": "Mills & Nebraska",
+     "area": "palm-bay",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run (same finding as the earlier Orlando pass). Next step: look up by name by hand."
+    },
+    {
+     "name": "Florida Division 10, LLC",
+     "area": "palm-bay",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.floridadivision10.com/",
+     "note": "The company homepage shows no license number; it says 'Located in Orlando, FL.' DBPR search is an interactive POST form, so no automated lookup was run. Next step: look up by name by hand."
+    },
+    {
+     "name": "Mako Millwork Inc.",
+     "area": "palm-bay",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+    },
+    {
+     "name": "Interior Specialties",
+     "area": "palm-bay",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+    },
+    {
+     "name": "Florida Specialty Products, LLC",
+     "area": "palm-bay",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+    },
+    {
+     "name": "Clear Choice Glass & Specialties",
+     "area": "palm-bay",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run. Glass work may fall under a separate DBPR category; company site not read. Next step: look up by name by hand."
+    },
+    {
+     "name": "Spec 10 Solutions",
+     "area": "palm-bay",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run. Base city unknown; company site not read. Next step: look up by name by hand."
+    },
+    {
+     "name": "Holman, Inc.",
+     "area": "daytona",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run. The earlier Jacksonville pass (research/installers/jacksonville.json) found no license number on the company site. No local rule for Daytona Beach. Next step: look up by name by hand."
+    },
+    {
+     "name": "Associated Building Specialties, Inc.",
+     "area": "daytona",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "Same company as the palm-bay entry. DBPR search is an interactive POST form, so no automated lookup was run. Next step: look up by name by hand."
+    },
+    {
+     "name": "Architectural Building Specialties, Inc. (ABS)",
+     "area": "daytona",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.absincfl.com/",
+     "note": "The company homepage shows no license number and no base city. DBPR search is an interactive POST form, so no automated lookup was run. Next step: look up by name by hand."
+    },
+    {
+     "name": "George P. Coyle & Sons, Inc.",
+     "area": "daytona",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run. The company site (coylejax.com) came back empty. Next step: look up by name by hand."
+    },
+    {
+     "name": "DDTEN, LLC",
+     "area": "daytona",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+    },
+    {
+     "name": "Florida Specialty Products, LLC",
+     "area": "daytona",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "Same company as the palm-bay entry. DBPR search is an interactive POST form, so no automated lookup was run."
+    },
+    {
+     "name": "Interior Specialties",
+     "area": "daytona",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+     "note": "Same company as the palm-bay entry. DBPR search is an interactive POST form, so no automated lookup was run."
+    },
+    {
+     "name": "Complete Partitions + Equipment LLC",
+     "area": "daytona",
+     "status": "not_online",
+     "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+     "source_url": "https://www.completepartitions.com/",
+     "note": "The company homepage shows no license number; it says 'Corporate Office located in Lake Mary, FL'. DBPR search is an interactive POST form, so no automated lookup was run. Next step: look up by name by hand."
+    }
+   ],
+   "registries": [
+    "Florida DBPR Verify a Licensee (https://www.myfloridalicense.com/portalsearches/VerifyLicensee): automated lookup did not work. It is an interactive POST form with an anti-forgery token; the old wl11.asp search URL redirects to it. No form was submitted. All 28 entries are not_online.",
+    "Local registries for Fort Myers, West Palm Beach, Palm Bay and Daytona Beach: no local rule listed for this work, so no city lookup applies.",
+    "Company websites (not official registries): Crowther lists CGC1524777, CCC039822 and CMC1250360, and Lotspeich lists CGC1507337. Neither is checked against DBPR. The HFM, Florida Division 10, Complete Partitions, Tri-County Partitions and absincfl.com homepages show no license number."
+   ]
+  },
+  {
+   "state": "OH",
+   "results": [
+    {
+     "name": "Zietlow Installers & Distributors",
+     "area": "toledo",
+     "status": "not_required_online_check",
+     "registry": "Ohio Construction Industry Licensing Board (Ohio Department of Commerce); Toledo: no local rule on file",
+     "note": "Checked 2026-11-20. The area rules on file say Ohio has no state license for this work (OCILB licenses only specialty trades: HVAC, plumbing, electrical, hydronics and refrigeration), and Toledo has no local contractor rule on file. So no official state or Toledo registry applies to toilet partition installation, and no license lookup was run. Based in North Ridgeville, not Toledo. No license number recorded. No Ohio Secretary of State business search was run."
+    },
+    {
+     "name": "Braden and McSweeny, Inc. (Ohio office)",
+     "area": "toledo",
+     "status": "not_required_online_check",
+     "registry": "Ohio Construction Industry Licensing Board (Ohio Department of Commerce); Toledo: no local rule on file",
+     "note": "Checked 2026-11-20. The area rules on file say Ohio has no state license for this work (OCILB licenses only specialty trades), and Toledo has no local contractor rule on file. So no official registry applies and no license lookup was run. The Ohio office is in Westlake, not Toledo. No license number recorded. No Secretary of State business search was run."
+    }
+   ],
+   "registries": [
+    "Ohio Construction Industry Licensing Board (Ohio Department of Commerce): not used. The area rules on file say Ohio has no state license for partition installation (OCILB covers only specialty trades), so there was nothing to look up.",
+    "City of Toledo: not used. The area rules on file list no local contractor license or registration.",
+    "No WebSearch or WebFetch calls were made. The result comes only from the area rules in the task, not from reading the official pages again on 2026-11-20."
+   ]
+  },
+  {
+   "state": "MI",
+   "results": [
+    {
+     "name": "Tanner Supply Co.",
+     "area": "toledo",
+     "status": "not_required_online_check",
+     "registry": "Michigan LARA licensee search (aca-prod.accela.com/MILARA), not run; Bedford Township (Monroe County) building department: no official contractor registration page found",
+     "license_type": "",
+     "license_number": "",
+     "source_url": "https://tannersupply.com/",
+     "note": "Per its website (checked 2026-11-20), Tanner Supply Co. is a commercial distributor in Temperance, MI of doors, frames, hardware, toilet partitions and washroom accessories. It calls itself the authorized area distributor for toilet partitions. The site mentions installation only for hardware ('Hardware Sales, Installation & Service'). It does not say the company installs partitions, and it lists no license numbers. Company phone: 734.847.5446; the site also lists 419.847.5446. Michigan has no state license for commercial interior work such as partition installation: LARA licenses only residential builders and maintenance and alteration contractors (MCL 339.2401 et seq., residential scope; see research/state-licensing/states.json). For that reason I did not run a state license lookup. The LARA Accela licensee search is public and needs no sign-in, but it is a postback form that automated fetching can't query. One web search found no official Bedford Township (Temperance) contractor registration page. Some nearby Michigan townships, such as Northfield and Sumpter, require contractors to register before they get permits, so registration with Bedford Township may be needed before permitted work. Confirm by phone with the township building department. The Toledo area's Ohio rules don't apply to this Michigan-based business unless it works in Ohio."
+    }
+   ],
+   "registries": [
+    "Michigan LARA licensee search (https://aca-prod.accela.com/MILARA/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y): public and needs no sign-in, but results load through a postback form that can't be queried by fetch. Not needed, because Michigan has no state license for commercial partition installation.",
+    "Bedford Township, MI (Temperance) building department: one web search found no official contractor registration page, only a third-party filing service (harborcompliance.com). Not checked online; confirm by phone.",
+    "Company website https://tannersupply.com/ read for scope, base city and phone."
+   ]
+  }
+ ],
+ "dropped": []
+}

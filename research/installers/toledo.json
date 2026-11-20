@@ -1,0 +1,329 @@
+{
+ "area": "toledo",
+ "found_count": 10,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/toledo.json: worked. 40 Maps results, almost all residential remodelers, plumbers and stores; only Tanner Supply (Temperance, MI) was relevant. The web list was empty.",
+  "Bobrick Find a Rep (bobrick.com/find-a-rep/): the page loaded but the results need a JavaScript dropdown, so no reps were returned.",
+  "Scranton Products where-to-buy: worked, but it lists only territory sales specialists (OH and MI), not dealers or installers.",
+  "Kelley Bros Division 10 page: worked. It lists Ohio but no Toledo branch, so it was not included.",
+  "ASI, Bradley, Hadrian, Metpar, General Partitions, Ampco locators: not tried; the search and fetch budget went to local leads.",
+  "The Blue Book (thebluebook.com iProView pages and search): blocked, HTTP 403.",
+  "BuildingConnected / Procore public profiles: not reached; no profiles surfaced in search.",
+  "WebSearch: used all 8 of 8 allowed searches. They found almost no Toledo-based partition installers; results were dominated by One Point Partitions pages and generic spec documents.",
+  "BBB category pages (Toledo partitions, Lima partitions, Toledo lockers): worked. These were the source for Roberts Installation & Repair, All Partitions & Parts, Robert Brooke and General Building Products.",
+  "onepointpartitions.com: blocked, HTTP 403; snippets only.",
+  "Company sites fetched directly (worked): tannersupply.com, interiorresource.org, zinstallers.com, bradenandmcsweeny.com (home, services, contact), rayhaven.com, robertbrooke.com, partitionsandstalls.com, allpartitions.com, inter-co.com (Columbus, about 125+ miles away with no Toledo mention, so excluded), quadrants.com (a general contractor with no partition work, so excluded), clevelandconstruction.com (offices in Cincinnati and other non-local cities, so excluded), martinbros.net (California, so excluded).",
+  "Gap: no Toledo-based Division 10 installer was confirmed. The best leads are Tanner Supply (local distributor; confirm whether it installs), Interior Resource Supply (Dearborn), and Zietlow and Braden and McSweeny (Cleveland area). It is worth a phone check on Tanner Supply and on National Ceiling & Partitions (Ann Arbor), which a search summary said has a Blue Book profile listing Lucas County, OH; that profile is blocked and was not read."
+ ],
+ "candidates": [
+  {
+   "name": "Zietlow Installers & Distributors",
+   "base_city": "North Ridgeville",
+   "state": "OH",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "440-355-4460",
+   "email": "info@zinstallers.com",
+   "contact_page": "https://zinstallers.com/contact.htm",
+   "website": "http://zinstallers.com/",
+   "evidence_urls": [
+    "http://zinstallers.com/",
+    "https://zinstallers.com/contact.htm"
+   ],
+   "partition_evidence": "Its homepage lists toilet partitions among the products it supplies and installs with its own crew, and a testimonial describes a church bathroom partition installation.",
+   "reason": "A commercial installer and distributor of lockers and toilet partitions since 1970. It says it serves Ohio, Michigan and Pennsylvania, and it is about 95 miles from Toledo. The named cities are all in the Cleveland area, so Toledo coverage is covered only by its statewide claim.",
+   "red_flags": [
+    "It supplies partitions itself, so it is a buy-around risk",
+    "Named service cities are all in the Cleveland area; Toledo isn't named",
+    "Brands page content not read"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Zietlow Installers & Distributors",
+    "area": "toledo",
+    "status": "not_required_online_check",
+    "registry": "Ohio Construction Industry Licensing Board (Ohio Department of Commerce); Toledo: no local rule on file",
+    "note": "Checked 2026-11-20. The area rules on file say Ohio has no state license for this work (OCILB licenses only specialty trades: HVAC, plumbing, electrical, hydronics and refrigeration), and Toledo has no local contractor rule on file. So no official state or Toledo registry applies to toilet partition installation, and no license lookup was run. Based in North Ridgeville, not Toledo. No license number recorded. No Ohio Secretary of State business search was run."
+   },
+   "score": 63
+  },
+  {
+   "name": "Braden and McSweeny, Inc. (Ohio office)",
+   "base_city": "Westlake",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Koala"
+   ],
+   "phone": "440-539-8666",
+   "contact_page": "https://www.bradenandmcsweeny.com/contact/",
+   "website": "https://www.bradenandmcsweeny.com/",
+   "evidence_urls": [
+    "https://www.bradenandmcsweeny.com/",
+    "https://www.bradenandmcsweeny.com/services/",
+    "https://www.bradenandmcsweeny.com/contact/"
+   ],
+   "partition_evidence": "Its services page says it is \"Manufacturer certified to install all of our Toilet Partitions, Toilet Room Accessories, and Lockers\" and offers a turnkey Division 10 package that includes installation.",
+   "reason": "A Division 10 dealer (since 1964) that installs partitions, based in Pittsburgh with an office in Westlake, OH, about 100 miles from Toledo. No page says it serves northwest Ohio, so coverage needs confirming.",
+   "red_flags": [
+    "It supplies partitions itself, so it is a buy-around risk",
+    "Service area isn't stated; its stock claim refers to Western Pennsylvania",
+    "Headquarters is in Pittsburgh"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Braden and McSweeny, Inc. (Ohio office)",
+    "area": "toledo",
+    "status": "not_required_online_check",
+    "registry": "Ohio Construction Industry Licensing Board (Ohio Department of Commerce); Toledo: no local rule on file",
+    "note": "Checked 2026-11-20. The area rules on file say Ohio has no state license for this work (OCILB licenses only specialty trades), and Toledo has no local contractor rule on file. So no official registry applies and no license lookup was run. The Ohio office is in Westlake, not Toledo. No license number recorded. No Secretary of State business search was run."
+   },
+   "score": 63
+  },
+  {
+   "name": "Tanner Supply Co.",
+   "base_city": "Temperance",
+   "state": "MI",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Hadrian",
+    "Emco",
+    "JL Industries",
+    "Steelcraft",
+    "Von Duprin"
+   ],
+   "phone": "734.847.5446",
+   "contact_page": "https://www.tannersupply.com/contact-us/",
+   "website": "https://tannersupply.com/",
+   "evidence_urls": [
+    "https://tannersupply.com/",
+    "https://www.tannersupply.com/contact-us/"
+   ],
+   "partition_evidence": "Its homepage says it is \"the authorized area distributor for Toilet Partitions\" and lists toilet partitions and accessories as Division 10 products. Installation is mentioned for hardware only, not for partitions.",
+   "reason": "A commercial Division 10 and door supplier just north of Toledo (it also lists a 419 project line, 419.847.5446). It distributes partitions, but no page says it installs them.",
+   "red_flags": [
+    "It distributes partitions itself, so it is a high buy-around risk",
+    "No partition installation shown",
+    "No email listed; contact form only"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Tanner Supply Co.",
+    "area": "toledo",
+    "status": "not_required_online_check",
+    "registry": "Michigan LARA licensee search (aca-prod.accela.com/MILARA), not run; Bedford Township (Monroe County) building department: no official contractor registration page found",
+    "license_type": "",
+    "license_number": "",
+    "source_url": "https://tannersupply.com/",
+    "note": "Per its website (checked 2026-11-20), Tanner Supply Co. is a commercial distributor in Temperance, MI of doors, frames, hardware, toilet partitions and washroom accessories. It calls itself the authorized area distributor for toilet partitions. The site mentions installation only for hardware ('Hardware Sales, Installation & Service'). It does not say the company installs partitions, and it lists no license numbers. Company phone: 734.847.5446; the site also lists 419.847.5446. Michigan has no state license for commercial interior work such as partition installation: LARA licenses only residential builders and maintenance and alteration contractors (MCL 339.2401 et seq., residential scope; see research/state-licensing/states.json). For that reason I did not run a state license lookup. The LARA Accela licensee search is public and needs no sign-in, but it is a postback form that automated fetching can't query. One web search found no official Bedford Township (Temperance) contractor registration page. Some nearby Michigan townships, such as Northfield and Sumpter, require contractors to register before they get permits, so registration with Bedford Township may be needed before permitted work. Confirm by phone with the township building department. The Toledo area's Ohio rules don't apply to this Michigan-based business unless it works in Ohio."
+   },
+   "score": 50
+  },
+  {
+   "name": "Interior Resource Supply Inc",
+   "base_city": "Dearborn",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "phone": "734.968.4747",
+   "email": "jlee@interiorresource.org",
+   "website": "https://interiorresource.org/",
+   "evidence_urls": [
+    "https://interiorresource.org/"
+   ],
+   "partition_evidence": "Its homepage describes \"providing, installing and servicing Acoustical Ceilings, Bathroom Partitions and much more\".",
+   "reason": "A specialty contractor and distributor that installs bathroom partitions, but it is about 50 miles from Toledo and describes itself as a Detroit-area supplier. No page mentions Ohio or Toledo. Worth asking about coverage if the area is short of installers.",
+   "red_flags": [
+    "Outside the 30-mile radius, with no stated Ohio service",
+    "Its email appears to be a named person's address",
+    "It supplies partitions itself"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Roberts Installation & Repair, Inc.",
+   "base_city": "Scotts",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "no",
+   "brands": [],
+   "phone": "(269) 370-3131",
+   "evidence_urls": [
+    "https://www.bbb.org/us/mi/scotts/profile/partition/roberts-installation-repair-inc-0372-38149743",
+    "https://www.bbb.org/us/oh/toledo/category/partition"
+   ],
+   "partition_evidence": "Its BBB listing covers gym partitions (curtains, wall mats, bleachers), not toilet partitions.",
+   "reason": "A gym partition and bleacher installer serving the Kalamazoo area, about 130 miles away. It does not do restroom partitions.",
+   "red_flags": [
+    "Wrong trade (gym dividers)",
+    "Out of area",
+    "No website found"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "Rayhaven Group",
+   "base_city": "Livonia",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "phone": "(734) 744-9260",
+   "email": "contact@rayhaven.com",
+   "contact_page": "https://www.rayhaven.com/contact.html",
+   "website": "https://www.rayhaven.com/",
+   "evidence_urls": [
+    "https://www.rayhaven.com/",
+    "https://www.rayhaven.com/contact.html"
+   ],
+   "partition_evidence": "It sells metal, plastic, phenolic and laminate partitions. Its pages mention installation only for doors.",
+   "reason": "A distributor with locations in Livonia MI, Grand Rapids MI, Richfield OH and Longwood FL. No partition installation is shown, and no stated service area includes Toledo.",
+   "red_flags": [
+    "Distributor only, so it is a buy-around risk",
+    "Its site contains unrelated spam links (dental, pharmacy), which suggests the site may be compromised"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Robert Brooke & Associates, Inc.",
+   "base_city": "Troy",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Bobrick",
+    "ASI",
+    "World Dryer",
+    "Von Duprin",
+    "Sargent",
+    "LCN"
+   ],
+   "phone": "1-800-642-2403",
+   "email": "sales@robertbrooke.com",
+   "contact_page": "https://www.robertbrooke.com/contact",
+   "website": "https://www.robertbrooke.com/",
+   "evidence_urls": [
+    "https://www.robertbrooke.com/"
+   ],
+   "partition_evidence": "It sells partitions and parts and links to installation instructions. No installation service is offered.",
+   "reason": "A hardware and partition supplier selling locally and nationally, about 75 miles from Toledo. It doesn't install.",
+   "red_flags": [
+    "Competing partition seller"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "All Partitions & Parts, LLC",
+   "base_city": "Troy",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "ASI Accurate",
+    "Bradley",
+    "Global",
+    "Hadrian",
+    "Bobrick",
+    "Metpar"
+   ],
+   "phone": "866-255-8645",
+   "email": "help@allpartitions.com",
+   "website": "https://www.allpartitions.com/",
+   "evidence_urls": [
+    "https://www.allpartitions.com/",
+    "https://www.bbb.org/us/oh/toledo/category/partition"
+   ],
+   "partition_evidence": "It sells partitions, parts and hardware kits with installation instructions. No installation service is offered.",
+   "reason": "An online and wholesale partition and parts seller. It doesn't install and is outside the area.",
+   "red_flags": [
+    "Direct competitor reseller"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "unknown",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://onepointpartitions.com/service-areas/ohio-bathroom-partitions/"
+   ],
+   "partition_evidence": "Seen only in search snippets: it supplies partitions designed for DIY installation, with delivery from a Toledo terminal. No installation service is evident. The site returned 403, so no page was read directly.",
+   "reason": "A national online partition seller (a competitor), not an installer. The Toledo address is a delivery terminal, and its base city is unknown.",
+   "red_flags": [
+    "Competing partition seller",
+    "Site blocked automated access (403); details unverified",
+    "Base location unknown; within_area set to no because only a delivery terminal is in Toledo"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "General Building Products Inc.",
+   "base_city": "Toledo",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "None found. A search for this name in Toledo with toilet partitions returned only General Partitions Mfg. Corp. (Erie, PA).",
+   "reason": "No website or listing for this business could be found, so there is no evidence it installs partitions.",
+   "red_flags": [
+    "Business not verified to exist"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

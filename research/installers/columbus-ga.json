@@ -1,0 +1,339 @@
+{
+ "area": "columbus-ga",
+ "found_count": 10,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/columbus-ga.json: worked, but its Maps results were mostly irrelevant (plumbers, remodelers, stores) and its web results were Google redirect URLs without domains",
+  "Earlier area files atlanta.json, augusta.json, montgomery.json and birmingham.json in research/installers: used for regional leads, each re-checked on the company's own site",
+  "Manufacturer locators: Scranton Products find-a-rep URL returned 404; Bobrick, ASI, Bradley, Hadrian, Metpar, General Partitions and Ampco not reached because of the call budget",
+  "The Blue Book: blocked (403) on search and iProView pages",
+  "BuildingConnected / Procore: not reached",
+  "CBX Solutions branches page: blocked (403)",
+  "Kelley Bros locations: worked, no GA/AL branch near Columbus (Cumming GA, Daphne AL)",
+  "BBB category pages (Macon partitions): blocked (403); GHCC member directory: blocked (403)",
+  "onepointpartitions.com Georgia page: blocked (403)",
+  "WebSearch: all 8 used (Columbus GA Division 10, Southern Interior Specialties, Macon/Montgomery/LaGrange/Auburn, Contract Hardware Columbus, Montgomery AL Division 10, BlueBook/BuildingConnected GA). Found no installer based in Columbus that confirms partition work",
+  "Company sites fetched: RSA, Terminus (home + contact), AUI, InEx (home worked, /contact 404), Mason-Hall, Maven, Terrell, Dothan Commercial Doors, AndRosi (residential only, excluded)",
+  "Seed lead 'Southern Interior Specialties, LLC - Columbus, GA': could not confirm through search, so it is left out"
+ ],
+ "candidates": [
+  {
+   "name": "Terminus Specialties, Inc.",
+   "added_by_checker": false,
+   "base_city": "McDonough",
+   "state": "GA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "470-507-0587",
+   "email": "darwin@terminusspecialties.com",
+   "contact_page": "https://www.terminusspecialties.com/contact-1",
+   "website": "https://www.terminusspecialties.com/",
+   "evidence_urls": [
+    "https://www.terminusspecialties.com/",
+    "https://www.terminusspecialties.com/contact-1"
+   ],
+   "partition_evidence": "Its services list restroom partitions and partition hardware. The site says it provides and installs specialty products for commercial projects, offers optional installation for all products, and describes 'installations across... partitions, doors, lockers'. One project photo shows a public restroom with metal stalls.",
+   "red_flags": [
+    "Also sells and supplies partitions for pickup or delivery, so it could sell around us",
+    "The email shown is a named person's company address"
+   ],
+   "reason": "A commercial Division 10 supplier and installer that lists restroom partitions. It is about 84 miles from Columbus and says it serves the southeastern US.",
+   "license": {
+    "name": "Terminus Specialties, Inc.",
+    "area": "columbus-ga",
+    "status": "not_online",
+    "registry": "Georgia Secretary of State Professional Licensing verification (State Licensing Board for Residential and General Contractors), verify.sos.ga.gov",
+    "source_url": "https://verify.sos.ga.gov/verification/Search.aspx",
+    "note": "Checked 2026-11-20. The Georgia license lookup returned HTTP 403 to automated access (curl and WebFetch), so no record could be read. Georgia's state status for partition installation is unclear: a general contractor license applies above $2,500, and specialty trade work may be exempt (not verified against official text). Columbus has no local rule. The company website (terminusspecialties.com) homepage shows no license number. The GA Corporations Division business search (ecorp.sos.ga.gov) also returned 403. Confirm by phone with the board or ask the installer for the license number."
+   },
+   "score": 63
+  },
+  {
+   "name": "Accessories Unlimited Inc (AUI)",
+   "added_by_checker": false,
+   "base_city": "Stone Mountain",
+   "state": "GA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "404-298-1779",
+   "email": "sales@accunl.com",
+   "contact_page": "https://accessoriesunlimited.net/contact-us/",
+   "website": "https://accessoriesunlimited.net/",
+   "rating": 5,
+   "review_count": 9,
+   "review_source": "Google (as shown on the company homepage)",
+   "evidence_urls": [
+    "https://accessoriesunlimited.net/",
+    "https://accessoriesunlimited.net/toilet-partitions/"
+   ],
+   "partition_evidence": "The toilet partitions page lists an 'Expert Installation Team' and links to its Full Service Installation service. Partition materials named are powder-coated steel, phenolic, solid plastic and stainless.",
+   "red_flags": [
+    "Sells and supplies partitions itself, so it could sell around us"
+   ],
+   "reason": "Supplies and installs commercial toilet partitions in GA, AL, FL, TN, SC and NC. It is about 104 miles from Columbus and its stated area includes Georgia and Alabama.",
+   "license": {
+    "name": "Accessories Unlimited Inc (AUI)",
+    "area": "columbus-ga",
+    "status": "not_online",
+    "registry": "Georgia Secretary of State Professional Licensing verification (State Licensing Board for Residential and General Contractors), verify.sos.ga.gov",
+    "source_url": "https://verify.sos.ga.gov/verification/Search.aspx",
+    "note": "Checked 2026-11-20. The Georgia license lookup returned HTTP 403 to automated access. Whether Georgia requires a license for this work is unclear (GC license above $2,500, possible specialty exemption). Columbus has no local rule. The accessoriesunlimited.net homepage shows no license number. Ask the installer for a license number, or for the reason none is needed, during vetting."
+   },
+   "score": 63
+  },
+  {
+   "name": "Restroom Stalls and All (RSA)",
+   "added_by_checker": false,
+   "base_city": "Gainesville",
+   "state": "GA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Bobrick",
+    "Koala Kare",
+    "XLERATOR"
+   ],
+   "phone": "1-844-817-8255",
+   "email": "sales@restroomstallsandall.com",
+   "contact_page": "https://restroomstallsandall.com/pages/contact-us",
+   "website": "https://restroomstallsandall.com/",
+   "rating": 4.9,
+   "review_source": "Google (as shown on the company homepage, review count not shown); the homepage also says BBB Accredited, A+",
+   "evidence_urls": [
+    "https://restroomstallsandall.com/",
+    "https://restroomstallsandall.com/pages/contact-us"
+   ],
+   "partition_evidence": "Installs commercial toilet partitions with its own W2 crews in Georgia, Florida, Alabama, Tennessee and the Carolinas.",
+   "red_flags": [
+    "About 140 miles straight-line from Columbus, beyond the 120-mile regional limit, although it says it installs throughout Georgia and Alabama",
+    "Sells partitions nationwide online, so it is a direct competitor and could sell around us"
+   ],
+   "reason": "A proven commercial partition installer that names Georgia and Alabama as install states, but its base is just past the regional distance limit. It could be upgraded if crews are confirmed to reach Columbus.",
+   "license": {
+    "name": "Restroom Stalls and All (RSA)",
+    "area": "columbus-ga",
+    "status": "not_online",
+    "registry": "Georgia Secretary of State Professional Licensing verification (State Licensing Board for Residential and General Contractors), verify.sos.ga.gov",
+    "source_url": "https://verify.sos.ga.gov/verification/Search.aspx",
+    "note": "Checked 2026-11-20. The Georgia license lookup returned HTTP 403 to automated access. Georgia's state status is unclear and Columbus has no local rule. The restroomstallsandall.com homepage shows no license number. Confirm during vetting."
+   },
+   "score": 60
+  },
+  {
+   "name": "Maven Accessories",
+   "added_by_checker": false,
+   "base_city": "Juliette",
+   "state": "GA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "phone": "770-508-3887",
+   "email": "mike@mavenaccessories.com",
+   "contact_page": "https://mavenaccessories.com/",
+   "website": "https://mavenaccessories.com/",
+   "evidence_urls": [
+    "https://mavenaccessories.com/"
+   ],
+   "partition_evidence": "Lists 'Toilet Partitions, Grab bars' under Our Services and calls itself a Division 10 supplier with a commercial finish carpentry background that works with general contractors. It does not say explicitly that it installs partitions.",
+   "red_flags": [
+    "No service area stated (about 82 miles from Columbus)",
+    "The email shown is a named person's company address"
+   ],
+   "reason": "A small commercial Division 10 business within regional distance that lists toilet partitions as a service. It has no stated service area and no project evidence.",
+   "license": {
+    "name": "Maven Accessories",
+    "area": "columbus-ga",
+    "status": "not_online",
+    "registry": "Georgia Secretary of State Professional Licensing verification (State Licensing Board for Residential and General Contractors), verify.sos.ga.gov",
+    "source_url": "https://verify.sos.ga.gov/verification/Search.aspx",
+    "note": "Checked 2026-11-20. The Georgia license lookup returned HTTP 403 to automated access. Georgia's state status is unclear and Columbus has no local rule. The mavenaccessories.com homepage shows no license number. Confirm during vetting."
+   },
+   "score": 40
+  },
+  {
+   "name": "Mason-Hall & Company, Inc.",
+   "added_by_checker": false,
+   "base_city": "Mableton",
+   "state": "GA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "phone": "(770) 432-1322",
+   "contact_page": "https://masonhall.com/contacts",
+   "website": "https://masonhall.com/",
+   "evidence_urls": [
+    "https://masonhall.com/",
+    "https://masonhall.com/contacts"
+   ],
+   "partition_evidence": "Describes itself as a 'multi-line distributor and installer of Division 10 specialty products' and lists toilet partitions as a product category.",
+   "red_flags": [
+    "No service area stated (about 97 miles from Columbus)",
+    "A distributor that could sell around us"
+   ],
+   "reason": "A Division 10 distributor and installer that lists toilet partitions, but it shows no partition installation evidence and no service area.",
+   "license": {
+    "name": "Mason-Hall & Company, Inc.",
+    "area": "columbus-ga",
+    "status": "not_online",
+    "registry": "Georgia Secretary of State Professional Licensing verification (State Licensing Board for Residential and General Contractors), verify.sos.ga.gov",
+    "source_url": "https://verify.sos.ga.gov/verification/Search.aspx",
+    "note": "Checked 2026-11-20. The Georgia license lookup returned HTTP 403 to automated access. Georgia's state status is unclear and Columbus has no local rule. The masonhall.com homepage shows no license number. Confirm during vetting."
+   },
+   "score": 20
+  },
+  {
+   "name": "Dothan Commercial Doors, LLC",
+   "added_by_checker": false,
+   "base_city": "Dothan",
+   "state": "AL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "phone": "334-699-3667",
+   "email": "Info@dothancommercialdoors.com",
+   "contact_page": "https://www.dothancommercialdoors.com/contact-us/",
+   "website": "https://www.dothancommercialdoors.com/",
+   "evidence_urls": [
+    "https://www.dothancommercialdoors.com/",
+    "https://www.dothancommercialdoors.com/toilet-partitions/"
+   ],
+   "partition_evidence": "The partitions page covers selecting and quoting partition systems for contractors. It does not mention installation.",
+   "red_flags": [
+    "Sells partitions",
+    "Its stated area is Southeast Alabama, Southwest Georgia (Blakely, Bainbridge, Donalsonville) and North Florida, and Columbus and Phenix City are not named"
+   ],
+   "reason": "A commercial supplier of partitions with no evidence of installation and no stated coverage of Columbus or Phenix City.",
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "InEx Systems Inc",
+   "added_by_checker": false,
+   "base_city": "Kennesaw",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [
+    "Corflex",
+    "Screenflex",
+    "Woodfold",
+    "Mobiflex",
+    "ActivWall"
+   ],
+   "phone": "(678) 766-8201",
+   "email": "info@INEXSystems.com",
+   "website": "https://www.inexsystems.com/",
+   "evidence_urls": [
+    "https://www.inexsystems.com/"
+   ],
+   "partition_evidence": "The homepage title says 'Division 10 toilet partitions and accessories' and the page has one line, 'Offering the best in bathroom compartments and accessories'. The listed services are operable walls, chutes and folding doors, which it designs, sells, installs and services.",
+   "red_flags": [
+    "Its main business is operable walls and chutes",
+    "About 110+ miles away with no stated service area"
+   ],
+   "reason": "A specialty subcontractor focused on operable walls, with only a passing mention of bathroom compartments. It has no stated coverage of the Columbus area.",
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Terrell Enterprises, Inc.",
+   "added_by_checker": false,
+   "base_city": "Greenville",
+   "state": "AL",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [
+    "ASI Global Partitions",
+    "Artco-Bell",
+    "AARCO",
+    "Draper"
+   ],
+   "phone": "(334) 371-7415",
+   "email": "purchasing@terrellenterprises.com",
+   "contact_page": "https://www.terrellenterprises.com/contact",
+   "website": "https://www.terrellenterprises.com/",
+   "evidence_urls": [
+    "https://www.terrellenterprises.com/"
+   ],
+   "partition_evidence": "A school and office furniture dealer. ASI Global Partitions appears only as a partner logo, and the site does not mention toilet partition installation.",
+   "red_flags": [
+    "Serves Alabama and NW Florida only",
+    "A furniture dealer"
+   ],
+   "reason": "A furniture dealer outside the area with no toilet partition installation.",
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "One Point Partitions",
+   "added_by_checker": false,
+   "base_city": "unknown",
+   "state": "unknown",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://onepointpartitions.com/"
+   ],
+   "partition_evidence": "The site blocked automated access (403 and a Cloudflare challenge). Search snippets describe an online partition seller that ships nationwide and has city landing pages. Its Columbus page appears to be Columbus, Ohio, and its Montgomery page says there is 'no need to hire a Montgomery team to install'.",
+   "red_flags": [
+    "An online partition retailer and direct competitor",
+    "Base location not confirmed",
+    "Could not read the site"
+   ],
+   "reason": "A nationwide online seller of partitions, not a local installer, and a competitor of Next Partitions.",
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Contract Hardware & Specialty Co Inc",
+   "added_by_checker": false,
+   "base_city": "Columbus",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "No website found. Search snippets only place it under builders hardware, doors and windows in Columbus. The similarly named contract-hardware.com is an Atlanta door and hardware firm, not this business.",
+   "red_flags": [
+    "No website or partition evidence found",
+    "Never confirmed from a page I read"
+   ],
+   "reason": "The only trace is directory snippets describing a door and hardware business. Nothing shows partition work.",
+   "license": null,
+   "score": 10
+  }
+ ]
+}
