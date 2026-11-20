@@ -1,0 +1,305 @@
+{
+ "area": "charleston",
+ "found_count": 10,
+ "sources_tried": [
+  "Seed file charleston.json: read; maps results mostly residential remodelers, plumbers and stores; Martin + Murray Installation was the only plausible one. Web seed URLs are opaque Google redirects and couldn't be resolved",
+  "Bobrick find-a-rep: page loads, but the rep list loads dynamically, so no SC rep was readable",
+  "Scranton Products where-to-buy: worked; the only SC rep is Southern States Architectural Sales (a regional sales agency covering seven states, not an installer, not included)",
+  "Hadrian find-a-rep: 404",
+  "ASI, Bradley, Metpar, General Partitions, Ampco locators: not tried (search budget spent; Scranton and Bobrick showed rep-only locators)",
+  "PSISC / Partition Systems Inc. of SC (Columbia): site fetched; it is a manufacturer, no installer list; excluded as a manufacturer plant",
+  "The Blue Book: direct search and iProView pages blocked (403); found New South Specialties only through a search summary",
+  "Procore Network: worked well; SC and Charleston 'Toilet Bath and Laundry Accessories' lists plus profiles read (Martin+Murray, Lowco, Sharpe, Pro Construction Group, Premier Door, Complete Solutions, Commercial Interiors, Villagomez, Accessories Unlimited)",
+  "BuildingConnected: not tried",
+  "Levelset profile for Martin Murray Installation: 403",
+  "GHCC member directory (Restroom Stalls and All): 403",
+  "One Point Partitions Charleston page: 403 on fetch; search summary says pieces come ready to assemble with no installation team needed, so it was left out",
+  "WebSearch: all 8 calls used (Division 10 Charleston, Martin+Murray, SC Division 10 installers, toilet partitions Charleston/Summerville, Blue Book Charleston, Division 10 SC cities, New South Specialties, Charleston-area specialties subcontractors)",
+  "Excluded after reading: Villagomez Finishes (painting and wall covering), Commercial Interiors LLC Ravenel (framing, drywall and ceilings; no partitions shown), Accessories Unlimited (Stone Mountain GA only), CIP Finishes (Mid-Atlantic and FL, no SC), The Partition Pros (national, no local base, no local crew confirmed)",
+  "Yelp/BBB: none surfaced for partition installers in this area"
+ ],
+ "candidates": [
+  {
+   "name": "Martin+Murray Installation, LLC",
+   "base_city": "Charleston",
+   "state": "SC",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "843-732-3667",
+   "email": "harrison@martinmurrayinstallation.com",
+   "contact_page": "https://martinmurrayinstallation.com/contact/",
+   "website": "https://www.martinmurrayinstallation.com",
+   "evidence_urls": [
+    "https://martinmurrayinstallation.com/martin-murray-bios/",
+    "https://www.martinmurrayinstallation.com"
+   ],
+   "partition_evidence": "Services page lists Toilet Partitions and Toilet Accessories under Division 10, alongside lockers, wall protection and other specialties.",
+   "red_flags": [
+    "Contact email is a named person's address, not a generic one",
+    "No product brands or restroom project photos seen; site describes itself as installation-only, so no supply evidence either way"
+   ],
+   "reason": "Charleston-based commercial installer of doors, hardware and Division 10 specialties that lists toilet partitions as a service; serves medical, education, hospitality and public-sector clients across the Southeast.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Martin+Murray Installation, LLC",
+    "area": "charleston",
+    "status": "not_online",
+    "registry": "South Carolina Contractors' Licensing Board (LLR) contractor license lookup; City of Charleston registration (no public search checked)",
+    "source_url": "https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69",
+    "note": "The LLR lookup needs a CAPTCHA, so it couldn't be searched automatically. The company site (martinmurrayinstallation.com, read 2026-11-19) calls the company 'Charleston-based' (Charleston, SC 29412) and shows no license number."
+   },
+   "score": 75
+  },
+  {
+   "name": "Premier Door, LLC",
+   "base_city": "Florence",
+   "state": "SC",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "phone": "843-245-1703",
+   "website": "https://www.premierdoorsc.com",
+   "contact_page": "https://www.premierdoorsc.com",
+   "evidence_urls": [
+    "https://www.premierdoorsc.com"
+   ],
+   "partition_evidence": "Homepage lists 'toilet partitions and toilet accessories installation' among its commercial door services.",
+   "red_flags": [
+    "Site gives no address, city or service area; Florence base comes from the compiler only",
+    "Gallery and reviews sections are empty",
+    "No company email published"
+   ],
+   "reason": "States commercial toilet partition installation, but the site names no base city or service area, so it is unconfirmed that it is within reach of Charleston (Florence would be about 100 miles away, and the site doesn't say it serves Charleston).",
+   "added_by_checker": false,
+   "license": {
+    "name": "Premier Door, LLC",
+    "area": "charleston",
+    "status": "not_online",
+    "registry": "South Carolina Contractors' Licensing Board (LLR) contractor license lookup",
+    "source_url": "https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69",
+    "note": "The LLR lookup needs a CAPTCHA, so it couldn't be searched automatically. The company homepage (premierdoorsc.com, read 2026-11-19) names no city and no license number. The Florence base comes from the task, not from a page I read."
+   },
+   "score": 60
+  },
+  {
+   "name": "Seven Oaks Door and Hardware Inc.",
+   "base_city": "Locust",
+   "state": "NC",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Allegion",
+    "Dormakaba",
+    "Schlage",
+    "Stanley",
+    "Von Duprin",
+    "Best Access"
+   ],
+   "phone": "704-485-2014",
+   "contact_page": "https://sevenoakshardware.com/request-a-quote/",
+   "website": "https://sevenoakshardware.com",
+   "evidence_urls": [
+    "https://sevenoakshardware.com"
+   ],
+   "partition_evidence": "Site heading 'Expert Bathroom Partition Installers' and Toilet Partitions listed as a service; supplies and installs.",
+   "red_flags": [
+    "Based about 190 miles from Charleston, beyond the 120-mile regional limit",
+    "Supplies partitions itself (buy-around risk)"
+   ],
+   "reason": "Real commercial partition installer that says it serves North and South Carolina, but Locust, NC is well beyond the 120-mile limit; brands listed are door hardware, not partitions. Keep as a fallback only.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Restroom Stalls and All (RSA)",
+   "base_city": "Gainesville",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Bobrick"
+   ],
+   "phone": "1-844-817-8255",
+   "email": "cs@restroomstallsandall.com",
+   "contact_page": "https://restroomstallsandall.com/pages/contact-us",
+   "website": "https://restroomstallsandall.com",
+   "rating": 4.9,
+   "review_source": "Google (as stated on company site)",
+   "evidence_urls": [
+    "https://restroomstallsandall.com"
+   ],
+   "partition_evidence": "Says its own W2 crews install toilet partitions in GA, FL, AL, TN and the Carolinas.",
+   "red_flags": [
+    "Sells partitions nationally (direct competitor and buy-around risk)",
+    "Based about 290 miles away",
+    "Rating is self-reported on its own site; review count not shown"
+   ],
+   "reason": "Partition seller with its own install crews covering the Carolinas, but it is a direct competitor that supplies partitions and is far outside the 120-mile limit.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Partition Plus",
+   "base_city": "unknown",
+   "state": "unknown",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Hadrian",
+    "Bradley",
+    "Bobrick",
+    "Scranton",
+    "ASI",
+    "Metpar",
+    "Jacknob",
+    "Hawa"
+   ],
+   "phone": "800-298-9696",
+   "email": "sales@partitionplus.com",
+   "contact_page": "https://partitionplus.com/about-us/#contact-title",
+   "website": "https://partitionplus.com",
+   "evidence_urls": [
+    "https://partitionplus.com"
+   ],
+   "partition_evidence": "Sells partitions, hardware and accessories; site only links to installation guides, with no installation service seen.",
+   "red_flags": [
+    "Supplier/competitor selling the same brands as Next Partitions",
+    "No Charleston location confirmed; locations page returned 404",
+    "Text number has a Maryland area code"
+   ],
+   "reason": "Online partition supplier, not an installer; no Charleston base or installation service could be confirmed.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Complete Solutions Contracting",
+   "base_city": "Irmo",
+   "state": "SC",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "within_area": "no",
+   "brands": [],
+   "phone": "803-422-3281",
+   "email": "office@CSCMidlands.com",
+   "contact_page": "https://cscmidlands.com/quote/",
+   "website": "https://cscmidlands.com/",
+   "evidence_urls": [
+    "https://cscmidlands.com/"
+   ],
+   "partition_evidence": "None; site lists residential and commercial general contracting only.",
+   "red_flags": [
+    "No mention of partitions or Division 10",
+    "Midlands focus with no stated Charleston service"
+   ],
+   "reason": "General contractor in the Columbia area with no partition or specialties work shown and no stated Charleston service.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Lowco Construction Specialties",
+   "base_city": "Mount Pleasant",
+   "state": "SC",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://instagram.com/lowco_construction_specialties",
+   "evidence_urls": [],
+   "partition_evidence": "None seen; the Instagram page returned 429 and a search found no other presence.",
+   "red_flags": [
+    "Only presence is an Instagram account that could not be read",
+    "No website, phone or listing found"
+   ],
+   "reason": "Name suggests construction specialties work in the area, but nothing could be verified; worth a manual Instagram check before discarding.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Sharpe Contracting LLC",
+   "base_city": "Awendaw",
+   "state": "SC",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "None found; search returned nothing for this name.",
+   "red_flags": [
+    "No website or listing found"
+   ],
+   "reason": "No evidence of the business or of partition work could be found.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Pro Construction Group LLC",
+   "base_city": "Mount Pleasant",
+   "state": "SC",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "None found; search returned nothing linking this name to partitions.",
+   "red_flags": [
+    "No website or listing found"
+   ],
+   "reason": "No evidence of the business or of partition work could be found.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "New South Specialties LLC",
+   "base_city": "West Columbia",
+   "state": "SC",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "Only a search-result summary of a Blue Book listing mentioning toilet partitions and cubicles; the listing itself returned 403 and could not be read.",
+   "red_flags": [
+    "No website found",
+    "Blue Book listing could not be opened",
+    "Search snippet says it serves NC and Upstate SC, not Charleston"
+   ],
+   "reason": "No website or readable listing confirming installation work, and the only available summary places its service area away from Charleston.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

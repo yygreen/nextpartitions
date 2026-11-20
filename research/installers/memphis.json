@@ -1,0 +1,210 @@
+{
+ "area": "memphis",
+ "found_count": 7,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/memphis.json: worked. About 45 Maps results, nearly all remodelers, plumbers, HVAC and stores. Plausible: Division 10 Inc, CGI Installation, Universal Manufacturing (now CBX). Bobrick (Jackson TN) is a manufacturer plant and was skipped. Nichols Glass (Olive Branch) could not be fetched (DNS blocked in this session).",
+  "Existing research/installers/memphis.json from an earlier run (same 3 candidates): reused for context, and the facts were re-read on the company pages this run.",
+  "Bobrick find-a-rep: page loads, but the dropdown results are empty in the fetch. No rep was obtained.",
+  "Scranton Products, Hadrian and General Partitions rep-locator URLs: 404. Bradley find-a-rep: no content in the fetch. ASI and Metpar locators were not reached.",
+  "Ampco/Ammco: not tried.",
+  "The Blue Book iProView (Division 10 Specialties South): 403 blocked.",
+  "GHCC member directory (Restroom Stalls and All): 403 blocked.",
+  "cbxsolutions.com Memphis branch: 403 blocked.",
+  "BuildingConnected / Procore: searched, nothing indexed publicly.",
+  "WebSearch (8 of 8 used): toilet partition installation Memphis; Division 10 toilet partitions TN; thebluebook Memphis; Southaven/Olive Branch/Tupelo/Jonesboro; Memphis furnish-and-install; buildingconnected/procore; Ditta Enterprises; Barranger Company. Results were dominated by One Point Partitions (an online national seller with only a delivery terminal in Memphis, skipped) and national or out-of-area firms.",
+  "BBB category pages (Memphis TN, Ecru MS, Booneville MS partitions): worked. They only surfaced Ditta Enterprises (Jonesboro AR) in range. The others were out of range or office-furniture or garage-door firms.",
+  "Out of range and skipped: Restroom Stalls and All (Gainesville GA; its site lists Tennessee in its service area), Commercial Installation LLC (Clarksville TN, serves Middle TN and southern KY only), Nashville firms (Southeast Partitions, Manning Materials, Allegheny, Soran), American Building Specialties (North Little Rock, about 135 mi, probably inactive), Unified Specialty Services (NJ), Holman (FL).",
+  "militaryhire.com Memphis Division 10 installer job posting: 404, so the employer is unknown.",
+  "Yelp: no Memphis partition installer pages surfaced.",
+  "Seed file research/installers/raw/seeds/memphis.json: worked. About 45 Maps results, mostly remodelers, plumbers, HVAC and stores. Relevant seeds: Division 10 Inc and CGI Installation. Bobrick Washroom Equipment (Jackson TN) is a manufacturer plant and was skipped. Universal Manufacturing is the weak CBX lead. Precision Installation Services is an office-furniture installer, not partitions, and was skipped.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded, but the locator is a dropdown and results were empty in the fetch, so no Memphis rep was obtained",
+  "Scranton Products find-a-rep: 404",
+  "ASI Global Partitions find-a-rep: HTTP 520 error",
+  "Bradley, Hadrian, Metpar, General Partitions, Ampco locators: not reached (time/budget)",
+  "The Blue Book (thebluebook.com search and iProView profiles): blocked, 403",
+  "BuildingConnected / Procore public profiles: not tried (search cap)",
+  "downtobid.com Southaven: 429 rate limited",
+  "cbxsolutions.com (Cook & Boardman): 403",
+  "WebSearch (8 of 8 used): 'toilet partition installation Memphis TN', Division 10 + Memphis/Cordova/Southaven/Olive Branch, specialties/lockers Memphis, '\"toilet partitions\" \"Memphis, TN\"', Barranger Company Memphis, Division 10 Olive Branch/Southaven/Collierville/Bartlett, 'Precision Installation' Memphis, Mid-South furnish and install. Results were dominated by One Point Partitions (an online seller; its Memphis page lists a delivery terminal and a search snippet says it does not install; its site returned 403), national distributors and out-of-area firms. Out-of-area firms skipped: Allegheny Construction Specialties (Nashville), Division 10 Specialties South (GA), Restroom Stalls and All (GA), Partition Plus (MD), Holman (FL) and Martin Bros (CA).",
+  "Yelp/BBB: no Memphis-area partition installer pages surfaced in search results"
+ ],
+ "candidates": [
+  {
+   "name": "Division 10, Inc.",
+   "base_city": "Cordova (Memphis)",
+   "state": "TN",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Penco",
+    "ASI (American Specialties)",
+    "Accurate Partitions",
+    "Bradley",
+    "Scranton Products",
+    "Bobrick",
+    "Metpar",
+    "General Partitions",
+    "Larsens",
+    "JL Industries",
+    "Inpro",
+    "Claridge",
+    "Ironwood Manufacturing"
+   ],
+   "website": "http://www.division10inc.com/",
+   "phone": "(901) 755-2623",
+   "email": "estimating@division10inc.com",
+   "contact_page": "http://www.division10inc.com/contact",
+   "evidence_urls": [
+    "http://www.division10inc.com/",
+    "http://www.division10inc.com/services",
+    "http://www.division10inc.com/manufacturers"
+   ],
+   "partition_evidence": "Services page lists installation crews for toilet partitions, toilet accessories, operable partitions and lockers; toilet partitions are also a product line.",
+   "red_flags": [
+    "Sells and supplies toilet partitions itself (dealer since 1989 for Bobrick, ASI/Accurate, Scranton, Bradley, Metpar and others): high buy-around risk",
+    "Brand list read from manufacturer logos on the manufacturers page, not page text"
+   ],
+   "reason": "A Memphis-area Division 10 specialty supplier with its own install crews for toilet partitions, serving contractors on commercial projects. It installs partitions, but it is also a direct partition dealer and so competes with Next Partitions.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Division 10, Inc.",
+    "area": "memphis",
+    "status": "not_online",
+    "registry": "Tennessee Board for Licensing Contractors license search (verify.tn.gov, now search.cloud.commerce.tn.gov); Memphis and Shelby County Office of Construction Code Enforcement contractor registration (Accela, aca-prod.accela.com/SHELBYCO)",
+    "source_url": "https://verify.tn.gov/",
+    "note": "Checked 2026-11-19. The state search (verify.tn.gov redirects to search.cloud.commerce.tn.gov) is a JavaScript app (Tyler Technologies) with a reCAPTCHA check, so automated lookup was not possible and no official record was read. I found no public read-only Memphis/Shelby County registered-contractor list. The Accela portal needs a form search, which I didn't run. The company site (http://www.division10inc.com/) shows a Cordova, TN base, company phones (901) 755-2623 and (901) 753-8469, and the services 'Product sales, estimating services, installation quotes'. It doesn't name toilet partitions and shows no license number. A web search found no license record. Next step: search the TN license lookup by hand and confirm Memphis/Shelby registration with the Code Enforcement licensing section."
+   },
+   "score": 70
+  },
+  {
+   "name": "CGI Installation (CG Installations)",
+   "base_city": "Memphis",
+   "state": "TN",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://cginstallations.com/",
+   "phone": "901-496-9411",
+   "contact_page": "http://cginstallations.com/main/page_contact_us.html",
+   "evidence_urls": [
+    "http://cginstallations.com/",
+    "http://cginstallations.com/main/page_contact_us.html"
+   ],
+   "partition_evidence": "Homepage installation services list bathroom partitions and bathroom accessories, alongside shelving, lockers, doors and mezzanines, done by factory-trained installation technicians.",
+   "red_flags": [
+    "No project photos or named partition projects seen",
+    "No email shown on the site (contact form only)",
+    "Large service area across 8 states; how much work it does in Memphis is unclear"
+   ],
+   "reason": "An install-only company based in Memphis that lists bathroom partition and accessory installation with commercial-type fixtures (lockers, shelving, racking). No sign that it sells partitions, so buy-around risk is lower. Confirm with project photos or references.",
+   "added_by_checker": false,
+   "license": {
+    "name": "CGI Installation (CG Installations)",
+    "area": "memphis",
+    "status": "not_online",
+    "registry": "Tennessee Board for Licensing Contractors license search (verify.tn.gov / search.cloud.commerce.tn.gov); Memphis and Shelby County Office of Construction Code Enforcement contractor registration (Accela)",
+    "source_url": "https://verify.tn.gov/",
+    "note": "Checked 2026-11-19. The state search is a JavaScript app with reCAPTCHA, so automated lookup was not possible and no official record was read. The company site (http://cginstallations.com/) shows company phone 901-496-9411 and lists 'bathroom partitions, bathroom accessories' among its services. It says it covers TN, KY, AR, MS, AL, TX, OK and LA, and shows no license number and no base city. Next step: search the TN license lookup by hand and confirm Memphis/Shelby registration with the Code Enforcement licensing section."
+   },
+   "score": 70
+  },
+  {
+   "name": "CBX Solutions Memphis (formerly Universal Manufacturing Co / Cook & Boardman, branch 655)",
+   "base_city": "Memphis",
+   "state": "TN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.cbxsolutions.com/branches/memphis-655/",
+   "phone": "901-458-5881",
+   "contact_page": "https://www.cbxsolutions.com/branches/memphis-655/",
+   "evidence_urls": [
+    "https://www.cbxsolutions.com/branches/memphis-655/"
+   ],
+   "partition_evidence": "The branch page says it stocks and supplies toilet partitions and restroom accessories to commercial contractors, and lists Division 10 Specialties and Installation Services among the branch's specialties. Toilet partition installation is not stated explicitly.",
+   "red_flags": [
+    "Large national commercial distributor that stocks and sells toilet partitions: high buy-around risk",
+    "Mainly a door, frame and hardware distributor; partition installation not confirmed",
+    "Old URL about.cookandboardman.com/branch-locations/universal-manufacturing-co now redirects to the CBX branch page"
+   ],
+   "reason": "A commercial Division 8/10 distributor in Memphis that stocks toilet partitions and offers installation services, but the site never says it installs partitions. It also sells partitions directly, so it is a buy-around risk.",
+   "added_by_checker": false,
+   "license": {
+    "name": "CBX Solutions Memphis (formerly Universal Manufacturing Co / Cook & Boardman, branch 655)",
+    "area": "memphis",
+    "status": "not_online",
+    "registry": "Tennessee Board for Licensing Contractors license search (verify.tn.gov / search.cloud.commerce.tn.gov); Memphis and Shelby County Office of Construction Code Enforcement contractor registration (Accela)",
+    "source_url": "https://verify.tn.gov/",
+    "note": "Checked 2026-11-19. The state search is a JavaScript app with reCAPTCHA, so automated lookup was not possible and no official record was read. The branch page (https://www.cbxsolutions.com/branches/memphis-655/) returned HTTP 403, so no company details or license number were read. The license may be held under the parent or legacy entity name (CBX Solutions, Cook & Boardman or Universal Manufacturing Co), so a manual search should try all three. Next step: search the TN license lookup by hand and confirm Memphis/Shelby registration with the Code Enforcement licensing section."
+   },
+   "score": 50
+  },
+  {
+   "name": "CBX Solutions Memphis (formerly UMC/Delta Door, Cook & Boardman)",
+   "base_city": "Memphis",
+   "state": "TN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.cbxsolutions.com/branches/memphis-655/",
+   "phone": "901-458-5881",
+   "contact_page": "https://www.cbxsolutions.com/branches/memphis-655/",
+   "evidence_urls": [
+    "https://www.cbxsolutions.com/branches/memphis-655/"
+   ],
+   "partition_evidence": "Branch page says it stocks and supplies contractors with toilet partitions and restroom accessories, and lists Division 10 Specialties and Installation Services among its location specialties. No partition installation is shown specifically.",
+   "red_flags": [
+    "Primarily a commercial door and hardware distributor that supplies toilet partitions: buy-around risk",
+    "Part of a large national network, so it is unlikely to take small referral jobs"
+   ],
+   "reason": "Memphis branch of a national Division 8/10 distributor that supplies partitions and offers installation services, but the page doesn't confirm that it installs partitions.",
+   "added_by_checker": false,
+   "license": {
+    "name": "CBX Solutions Memphis (formerly UMC/Delta Door, Cook & Boardman)",
+    "area": "memphis",
+    "status": "not_online",
+    "registry": "Tennessee Board for Licensing Contractors (Verify public search, verify.tn.gov -> search.cloud.commerce.tn.gov); Memphis and Shelby County Office of Construction Code Enforcement contractor registration",
+    "source_url": "https://search.cloud.commerce.tn.gov/",
+    "note": "Official record not checked. The TN Verify search is a JavaScript app behind reCAPTCHA, and I found no public online lookup for Memphis/Shelby County registration. The branch page https://www.cbxsolutions.com/branches/memphis-655/ returned HTTP 403, so no company details were read. To do: search by hand at verify.tn.gov under CBX Solutions, Cook & Boardman, UMC and Delta Door, since the licensed entity may be the parent company. Then confirm registration with MSCCE."
+   },
+   "score": 50
+  },
+  {
+   "name": "Ditta Enterprises, Inc. (Northeast Arkansas Glass / Ditta Door)",
+   "base_city": "Jonesboro",
+   "state": "AR",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://www.dittainc.com/",
+   "phone": "(870) 935-1260",
+   "contact_page": "https://www.dittainc.com/contact",
+   "evidence_urls": [
+    "https://www.dittainc.com/"
+   ],
+   "partition_evidence": "The Ditta Door section lists toilet partitions and accessories and washroom accessories, without saying whether it supplies or installs them.",
+   "red_flags": [
+    "About 65 miles from Memphis and describes itself as a Northeast Arkansas subcontractor, with no mention of Memphis or Tennessee"
+   ],
+   "reason": "A glass, door and hardware subcontractor in Jonesboro that offers toilet partitions, but it is outside the 30-mile radius and its site doesn't say it serves Memphis or Tennessee.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  }
+ ]
+}

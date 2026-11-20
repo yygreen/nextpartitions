@@ -1,0 +1,173 @@
+{
+ "area": "spokane",
+ "found_count": 5,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/spokane.json: read. The Maps results are mostly remodelers, plumbers and portable toilets. Only Western Partitions and DSI were plausible, and neither site shows toilet partitions.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): the page loaded, but the rep list is rendered by JavaScript, so no data came back.",
+  "Bradley find-a-rep (bradleycorp.com/find-a-rep): no data came back (JavaScript-only page).",
+  "Scranton Products find-a-rep: 404.",
+  "ASI / Global Partitions locator (globalpartitions.com): host did not resolve (blocked by the session network).",
+  "Hadrian rep locator: 404. Metpar, General Partitions and Ampco/Ammco were not tried after the other locators failed.",
+  "The Blue Book (thebluebook.com): all profile pages returned 403. The Dupree profile was seen only as a search snippet.",
+  "BuildingConnected / Procore: not tried. Public profiles need sign-in or JavaScript.",
+  "Hermiston School District contractor and vendor list (hermiston.k12.or.us/15350_4): worked. This was the best source, naming Dupree (toilet partitions), Affordable Specialities & Supply (toilet accessories) and Kilgore (operable partitions).",
+  "WebSearch: 8 of 8 used (Dupree; Spokane Valley building specialties; Blue Book Division 10 Spokane; Coeur d'Alene partition installers; Division 10 subcontractor Spokane; 'Building Specialties' Spokane Valley; eastern WA Division 10 contractors). Results were dominated by national online sellers.",
+  "Excluded as national sellers or non-local: One Point Partitions (Spokane freight terminal only; its pages returned 403), Partition Plus (Maryland), ToiletPartitions.com / Fry Specialty (San Diego/AZ), GCS Inc (Mobile, AL), Building Specialties Northwest (Mercer Island, WA, about 270 miles away; sells and installs toilet partitions per its Florence dealer page; phone 425-486-3693), Southwest Solutions Group (movable walls; its page did not load).",
+  "Blocked: dupreebuildingspecialties.com and kilgorearchitectural.com did not resolve (they may not exist or may be blocked by the network); buildzoom.com returned 403; linkedin.com returned 403.",
+  "Yelp and BBB: not reached within the search cap."
+ ],
+ "candidates": [
+  {
+   "name": "Dupree Building Specialties",
+   "base_city": "Spokane",
+   "state": "WA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "ASI Global Partitions",
+    "Bobrick",
+    "Bradley",
+    "Scranton Products",
+    "American Specialties Inc.",
+    "Gamco",
+    "Pamex",
+    "Modernfold",
+    "Skyfold",
+    "Smoke Guard",
+    "Solatube"
+   ],
+   "website": "https://dupreebldg.com/",
+   "phone": "509.484.2000",
+   "email": "info@dupreebldg.com",
+   "contact_page": "https://dupreebldg.com/contact-us/",
+   "evidence_urls": [
+    "https://dupreebldg.com/",
+    "https://dupreebldg.com/products/",
+    "https://dupreebldg.com/contact-us/",
+    "https://incfact.com/company/leslieenterprisesdbadupreebuildingspecialties-spokane-wa/"
+   ],
+   "partition_evidence": "Products page lists Division 10 toilet compartments (102113) from ASI Global Partitions, Bobrick, Bradley and Scranton plus washroom accessories; homepage lists design, sales, installation and service with manufacturer-trained field technicians. No page or photo shows partition installation specifically.",
+   "red_flags": [
+    "Is a dealer of the same brands Next Partitions resells (ASI, Bobrick, Bradley, Scranton): high buy-around/competitor risk",
+    "No project photos of restroom partition installs found"
+   ],
+   "reason": "Established Spokane Division 10 specialties dealer (since 1968) that sells toilet compartments and offers installation with field technicians, but partition installation itself is not shown. It is also a direct competitor selling the same brands.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Dupree Building Specialties",
+    "area": "spokane",
+    "status": "not_online",
+    "registry": "Washington State Department of Labor & Industries (L&I) Verify a Contractor (secure.lni.wa.gov/verify); City of Spokane business license not checked",
+    "source_url": "https://secure.lni.wa.gov/verify/",
+    "license_type": "WA L&I contractor registration (state registration only); City of Spokane business license also required for permits",
+    "note": "Checked 2026-11-19. The L&I Verify tool builds its results with JavaScript, so automated fetches showed an empty results page (0 results) for both 'Dupree Building Specialties' and 'Leslie Enterprises'. That does not mean the company is unregistered; the lookup needs a manual check in a browser, searching both names. Spokane Journal (May 23, 2024) says 'Leslie Enterprises Inc., which does business as Dupree Building Specialties', so the L&I registration is probably under Leslie Enterprises Inc. Source: https://www.spokanejournal.com/articles/16013-distribution-in-construction-industry. Company site (https://dupreebldg.com/): based in Spokane, WA. It offers design, sales, installation and service of specialty building products and lists ASI Global Partitions among its brands. Public company phone 509.484.2000. No L&I registration number appears on the site. The company is listed in the NW AGC member directory: https://business.nwagc.org/memberdirectory/Details/dupree-building-specialties-3229572. No registration number recorded, because none was read on an official page."
+   },
+   "score": 50
+  },
+  {
+   "name": "Western Partitions, Inc. (WPI)",
+   "base_city": "Spokane Valley",
+   "state": "WA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [
+    "WPI PreFab"
+   ],
+   "website": "http://wpibuilds.com/",
+   "phone": "",
+   "email": "",
+   "contact_page": "https://wpibuilds.com/contact/",
+   "evidence_urls": [
+    "http://wpibuilds.com/"
+   ],
+   "partition_evidence": "None. 'Partitions' refers to wall systems; services are core subcontracting, prefabricated exterior wall systems and preconstruction. No toilet partitions or Division 10 work.",
+   "red_flags": [
+    "Large multi-state wall/framing subcontractor headquartered in Oregon, not a toilet partition installer"
+   ],
+   "reason": "WPI is a large framing and wall-systems subcontractor with a Spokane office. Its site shows no toilet partition or Division 10 work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "DSI Construction",
+   "base_city": "Spokane",
+   "state": "WA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://dsiconstruction.net/",
+   "phone": "509.482.7455",
+   "email": "info@dsiconstruction.net",
+   "contact_page": "http://dsiconstruction.net/",
+   "evidence_urls": [
+    "http://dsiconstruction.net/"
+   ],
+   "partition_evidence": "None. Services are drywall, steel stud framing, acoustical ceilings, taping and finishing, and exterior finishes.",
+   "red_flags": [
+    "Drywall/framing contractor, not Division 10"
+   ],
+   "reason": "Commercial drywall and framing contractor in Spokane with no toilet partition or Division 10 work on its site.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Kilgore Architectural Products",
+   "base_city": "Spokane Valley",
+   "state": "WA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "",
+   "evidence_urls": [
+    "https://phoenix.aws.mapquest.com/us/washington/kilgore-architectural-products-12753382",
+    "https://www.spokanejournal.com/articles/16013-distribution-in-construction-industry",
+    "https://www.regionaldirectory.us/wa/3464254.htm"
+   ],
+   "partition_evidence": "None. Listings describe furnishing and installing building-envelope products (louvers, equipment screens, glass canopies, translucent wall panels, skylights).",
+   "red_flags": [
+    "MapQuest listing shows the business as Closed; regional directory says it may have ceased operations",
+    "No company website found"
+   ],
+   "reason": "Building-envelope specialty contractor with no toilet partition work found, and listings suggest it may be closed.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Affordable Specialities & Supply",
+   "base_city": "Kennewick",
+   "state": "WA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "website": "",
+   "evidence_urls": [],
+   "partition_evidence": "Not found. Two searches turned up no business by this name, and the guessed domain affordablespecialties.com did not resolve.",
+   "red_flags": [
+    "Could not confirm the business exists",
+    "Kennewick is about 120+ miles from Spokane, with no evidence that it serves the Spokane area"
+   ],
+   "reason": "No website, listing or evidence of partition work could be found. If it exists, it is at the edge of the regional radius and nothing shows it serves Spokane.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

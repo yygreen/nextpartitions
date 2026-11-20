@@ -1,0 +1,186 @@
+{
+ "area": "pittsburgh",
+ "found_count": 5,
+ "sources_tried": [
+  "Seed file pittsburgh.json: worked. 43 Maps and 30 web results; the web redirect URLs resolved with curl. Most were residential remodelers, stores and glass shops.",
+  "Bobrick find-a-rep: the page loaded but showed no rep list (it is rendered by script).",
+  "ASI (asi-globalpartitions.com/find-a-rep): no Pennsylvania entries in the fetched HTML.",
+  "Scranton Products where-to-buy: worked, but it lists only one territory sales rep for all of PA (not an installer), so no candidate came from it.",
+  "Hadrian where-to-buy: 404.",
+  "Bradley, Metpar, General Partitions, Ampco: not tried (fetch budget spent on leads).",
+  "The Blue Book (thebluebook.com): 403 on direct fetch. Only search snippets were usable (Braden & McSweeny, Dubin & Co project).",
+  "BuildingConnected and Procore: not tried.",
+  "BBB (prod.bbb.org partition category): 403.",
+  "Angi (Campbell Construction & Installation, Franklin Park): 403.",
+  "Houzz (Bathroom Solutions): worked, but residential only, so not included.",
+  "Facebook: login wall, title only.",
+  "Yelp: not reachable through the seed links; skipped.",
+  "cisleads.com: worked. It found Tristate Material Services (Malvern PA) and Widener Inc. (Fairless Hills PA), both eastern PA and beyond 120 miles, so not included.",
+  "Kelley Bros: worked. It installs Division 10, but its locations page has no Pittsburgh office (PA offices are Clarks Summit and Center Valley), so not included.",
+  "Builders Door & Hardware (Allentown PA), Hostetter Supply (Seven Valleys PA, serves south-central PA), Construction Specialties Installations (NY/NH/FL) and Partition Plus (Maryland, installs not confirmed): checked, all outside the area, not included.",
+  "onepointpartitions.com Pittsburgh page: 403. Search snippets show it ships for customers to install themselves, so it is not an installer.",
+  "WebSearch: 8 of 8 used. The queries were Division 10 Pittsburgh, toilet partitions installer western PA, bathroom partitions installer Pittsburgh, Division 10 specialties installer Pittsburgh, nearby towns (Bridgeville, Monroeville, Cranberry, Washington, Greensburg), western PA counties, and Pittsburgh, Wheeling, Morgantown and Youngstown. The results kept returning the same few firms (Braden & McSweeny, Dubin, One Point Partitions), and the cap was reached."
+ ],
+ "candidates": [
+  {
+   "name": "Braden & McSweeny, Inc.",
+   "base_city": "Pittsburgh area (Carnegie); second office Westlake, OH",
+   "state": "PA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "website": "https://www.bradenandmcsweeny.com/",
+   "phone": "412-279-3320",
+   "contact_page": "https://www.bradenandmcsweeny.com/contact/",
+   "evidence_urls": [
+    "https://www.bradenandmcsweeny.com/",
+    "https://www.bradenandmcsweeny.com/services/",
+    "https://www.bradenandmcsweeny.com/contact/"
+   ],
+   "partition_evidence": "Services page: 'Manufacturer certified to install all of our Toilet Partitions, Toilet Room Accessories, and Lockers'; homepage lists Toilet Partitions; 'Division 10 since 1964'.",
+   "red_flags": [
+    "Distributor that stocks and sells toilet partitions (claims largest stock in Western PA): high buy-around risk"
+   ],
+   "reason": "Long-running Pittsburgh Division 10 distributor that installs the toilet partitions it sells. Strong installer, but a direct competitor on partition supply.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Braden & McSweeny, Inc.",
+    "area": "pittsburgh",
+    "status": "not_found",
+    "registry": "City of Pittsburgh PLI Licensed Contractors (WPRDC open data, 'Business, Contractors & Trades' dataset, resource 7e195511-5219-4d16-84f7-f34a2aedf5b4, updated 2026-11-19)",
+    "source_url": "https://data.wprdc.org/api/3/action/datastore_search?resource_id=7e195511-5219-4d16-84f7-f34a2aedf5b4&q=Braden",
+    "note": "Checked 2026-11-19. No record for 'Braden' or 'McSweeny' among 5,652 current and historical City of Pittsburgh contractor licenses, or in the city's business and trade license tables. Under Pittsburgh's rule, it would need a City general contractor license to work under a commercial building permit inside city limits. Its base, Carnegie, is outside the city, so a license is needed only for jobs in Pittsburgh. The company site lists toilet partitions and toilet room accessories but gives no license number or office city on the homepage. PA Home Improvement Contractor registration (Office of Attorney General, hic.attorneygeneral.gov) could not be checked because the site returned HTTP 503. That registration covers residential work only, so it is not the relevant rule for commercial partitions."
+   },
+   "score": 70
+  },
+  {
+   "name": "Dubin and Company, Inc.",
+   "base_city": "Pittsburgh",
+   "state": "PA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "brands": [
+    "ASI",
+    "General Partitions",
+    "Bobrick",
+    "Scranton Products"
+   ],
+   "within_area": "yes",
+   "website": "http://www.dubinandcompany.com/",
+   "email": "dubinandcompany@gmail.com",
+   "contact_page": "http://www.dubinandcompany.com/about",
+   "evidence_urls": [
+    "http://www.dubinandcompany.com/",
+    "http://www.dubinandcompany.com/products",
+    "http://www.dubinandcompany.com/about"
+   ],
+   "partition_evidence": "Products page lists ASI, General Partitions, Bobrick and Scranton toilet partitions; About page says 'Dubin provides installation of their products with company employees'.",
+   "red_flags": [
+    "Stocking distributor of toilet partitions: high buy-around risk",
+    "No phone number on website; contact is a Gmail address",
+    "Gallery page shows no captioned partition projects"
+   ],
+   "reason": "Pittsburgh Division 10 distributor since 1961 that sells partitions from several brands and installs its products with its own crews; serves construction projects. Strong installer but also a partitions seller.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Dubin and Company, Inc.",
+    "area": "pittsburgh",
+    "status": "not_found",
+    "registry": "City of Pittsburgh PLI Licensed Contractors (WPRDC open data, resource 7e195511-5219-4d16-84f7-f34a2aedf5b4, updated 2026-11-19)",
+    "source_url": "https://data.wprdc.org/api/3/action/datastore_search?resource_id=7e195511-5219-4d16-84f7-f34a2aedf5b4&q=Dubin",
+    "note": "Checked 2026-11-19. No record for 'Dubin' in the City of Pittsburgh contractor, business or trade license tables. The company site (http://www.dubinandcompany.com/) gives Pittsburgh as its base and describes Division 10 specialty products from new construction to remodels. It lists no license number. The only contact shown is a company email, dubinandcompany@gmail.com. Because it is based in the city, a missing City GC license matters if it pulls commercial permits itself. It may instead work under the general contractor's permit; confirm with PLI. The PA AG HIC registry was unavailable (HTTP 503)."
+   },
+   "score": 65
+  },
+  {
+   "name": "Kemmco Sales",
+   "base_city": "Blairsville",
+   "state": "PA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "regional",
+   "website": "https://www.kemmcosales.com/",
+   "phone": "(724) 327-4904",
+   "contact_page": "https://www.kemmcosales.com/contact/",
+   "evidence_urls": [
+    "https://www.kemmcosales.com/",
+    "https://www.kemmcosales.com/project-gallery/bathroom-partitions/",
+    "https://www.kemmcosales.com/about/reviews/"
+   ],
+   "partition_evidence": "Homepage says it specializes in 'sales and installation' of Commercial Bathroom & Toilet Partitions; partitions gallery page offers product selection and installation for schools, restaurants, offices, healthcare.",
+   "red_flags": [
+    "Sells partitions and ships them nationwide: buy-around risk",
+    "Generalist (steel buildings, office furniture, apparel), not a partition specialist",
+    "Listed counties (Indiana, Westmoreland, Cambria etc.) do not name Allegheny; serves 'Western Pennsylvania'"
+   ],
+   "reason": "Commercial seller-installer of toilet partitions about 40 miles east of Pittsburgh that says it serves Western Pennsylvania; partition installation is stated but secondary to other lines.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Kemmco Sales",
+    "area": "pittsburgh",
+    "status": "not_found",
+    "registry": "City of Pittsburgh PLI Licensed Contractors (WPRDC open data, resource 7e195511-5219-4d16-84f7-f34a2aedf5b4, updated 2026-11-19)",
+    "source_url": "https://data.wprdc.org/api/3/action/datastore_search?resource_id=7e195511-5219-4d16-84f7-f34a2aedf5b4&q=Kemmco",
+    "note": "Checked 2026-11-19. No record for 'Kemmco' or 'Kemco' in the City of Pittsburgh contractor, business or trade license tables. The company site (https://www.kemmcosales.com/) gives Blairsville, PA as its base, outside Pittsburgh. It lists Commercial Bathroom & Toilet Partitions and serves businesses, contractors, schools and municipalities. Sales phone: (724) 327-4904. The site shows no license or PA HIC number. It would need a City GC license only for permitted commercial jobs inside Pittsburgh. The PA AG HIC registry was unavailable (HTTP 503)."
+   },
+   "score": 63
+  },
+  {
+   "name": "Partition Systems Inc (PSI PGH)",
+   "base_city": "Pittsburgh",
+   "state": "PA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "website": "http://www.psipgh.com/",
+   "phone": "(412) 343-0940",
+   "contact_page": "http://www.psipgh.com/contact.php",
+   "evidence_urls": [
+    "http://www.psipgh.com/",
+    "http://www.psipgh.com/faq.php"
+   ],
+   "partition_evidence": "None for toilet partitions: installs office systems furniture and demountable office partitions with union carpenters.",
+   "red_flags": [
+    "Office partitions, not restroom partitions"
+   ],
+   "reason": "Office furniture and demountable wall installer; no mention of toilet partitions, restroom stalls or Division 10 on its site.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "KB Contracting Services LLC",
+   "base_city": "unknown",
+   "state": "unknown",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "website": "https://www.facebook.com/KBContractingServicesLLC/",
+   "evidence_urls": [
+    "https://www.facebook.com/KBContractingServicesLLC/"
+   ],
+   "partition_evidence": "None; Facebook page shows only a login wall.",
+   "red_flags": [
+    "No website, location or services could be verified"
+   ],
+   "reason": "Only a Facebook page that could not be read; no evidence of location, partition work or commercial clients.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

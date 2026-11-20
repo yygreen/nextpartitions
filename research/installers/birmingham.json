@@ -1,0 +1,221 @@
+{
+ "area": "birmingham",
+ "found_count": 7,
+ "sources_tried": [
+  "Seed file birmingham.json: worked. Most Maps hits were plumbers, remodelers and stores. Only Building Specialties Co and Division 7 Construction were relevant. The web seeds were mostly unreadable google goto links; AMP Partitions' homepage shows no location or contact details.",
+  "Bobrick find-a-rep: page loads, but the rep data loads through JavaScript and its API route couldn't be reached. No Alabama reps read.",
+  "Bradley find-a-rep: returned an empty or blocked page.",
+  "Scranton Products find-a-rep: 403 or error page. A Scranton case study had no Alabama reps.",
+  "ASI (asi-accuratepartitions.com / globalpartitions), Hadrian, General Partitions, American Specialties: 403 blocked.",
+  "Metpar reps: 404. Ampco: proxy 502.",
+  "The Blue Book (thebluebook.com iProView): 403 blocked. No Blue Book results came up in search.",
+  "BuildingConnected / Procore: not reached (search cap).",
+  "BBB category pages (Birmingham partitions, AL bathroom accessories, Cordova partitions): worked. They gave Custom Installation & Services and out-of-state partition firms (JM Specialties Chattanooga, which turned out to do overhead doors; Southeast Partitions Murfreesboro TN, whose site returned 403; Prestige Distributors GA).",
+  "WebSearch: used all 8 allowed searches. Results were dominated by One Point Partitions (Birmingham 'delivery terminal' pages on a staging domain; its live site is behind Cloudflare and returned 403, so unverified and left out) and Newton Distributing (national, Natick MA, names no Alabama installers; left out).",
+  "Job boards: the career.com post worked (TriMerge). ZipRecruiter: 403.",
+  "Excluded: UDH Group (national, no local base), Holman Inc (Jacksonville FL), Interior Modular Walls / Interior Distributors (drywall and operable walls)."
+ ],
+ "candidates": [
+  {
+   "name": "Restroom Stalls and All (RSA)",
+   "base_city": "Gainesville",
+   "state": "GA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "phone": "1-844-817-8255",
+   "email": "cs@restroomstallsandall.com",
+   "contact_page": "https://restroomstallsandall.com/pages/contact-us",
+   "website": "https://restroomstallsandall.com/",
+   "rating": 4.9,
+   "review_source": "Google (as stated on company homepage; review count not shown); BBB A+ accredited",
+   "partition_evidence": "Homepage: ships commercial restroom partitions and 'installs them with our own crews across the Southeast'. Alabama installation page names Birmingham and Hoover and says 'our own W2, background-checked crews'.",
+   "reason": "Clearly installs commercial toilet partitions and says it covers Birmingham and Hoover with its own crews, but it is based about 190 miles away (beyond the 120-mile regional limit) and is itself an online partition seller with an instant-quote checkout, a direct buy-around competitor.",
+   "red_flags": [
+    "Sells partitions directly online with instant quote and checkout (direct competitor / buy-around risk)",
+    "Based about 190 miles from Birmingham",
+    "Rating is self-reported on its own homepage"
+   ],
+   "evidence_urls": [
+    "https://restroomstallsandall.com/",
+    "https://restroomstallsandall.com/pages/partition-installation-in-alabama"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Restroom Stalls and All (RSA)",
+    "area": "birmingham",
+    "status": "not_found",
+    "registry": "Alabama Licensing Board for General Contractors, License Roster (licensesearch.alabama.gov/genconbd, full roster CSV)",
+    "source_url": "https://licensesearch.alabama.gov/genconbd/FullRosterReport",
+    "note": "Checked 2026-11-19. The full Alabama GC Board roster CSV has no entry with 'Restroom', 'Stalls' or 'RSA' in the name, none matching the company phone (844) 817-8255, and none of the Gainesville, GA licensees is this company. Alabama requires this license only for commercial jobs of $100,000 or more (genconbd.alabama.gov), so most partition installs don't need it. Birmingham's city business license for contractors has no public online lookup that we checked. The company site (restroomstallsandall.com) gives its base as Gainesville, GA, phone 1-844-817-8255, and says it 'installs them with our own crews across the Southeast' (GA, FL, AL, TN, SC, NC). It lists no contractor license numbers. Its Georgia home-state board lookup (verify.sos.ga.gov) returned HTTP 403 to automated access."
+   },
+   "score": 60
+  },
+  {
+   "name": "TriMerge Construction Group LLC",
+   "base_city": "Birmingham",
+   "state": "AL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "Career.com job posting (Birmingham, AL; closed 3/24/2025) titled 'Commercial Restroom Partition Installer': 'Demo and prep area for new restroom partition installation', plus grab bars and dispensers; '100% traveling position'.",
+   "reason": "A Birmingham job ad for a commercial restroom partition installer shows the company does partition installation work. No company website, services page or project photos found, and the role is a travelling one, so the local focus isn't proven.",
+   "red_flags": [
+    "No website or contact details found",
+    "Only evidence is an expired job posting",
+    "Travelling crew; may work mostly outside Birmingham"
+   ],
+   "evidence_urls": [
+    "https://career.com/job/trimerge-construction-group-llc/commercial-restroom-accessories-installer/j202501240159494435967"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "TriMerge Construction Group LLC",
+    "area": "birmingham",
+    "status": "not_found",
+    "registry": "Alabama Licensing Board for General Contractors license roster (licensesearch.alabama.gov/genconbd)",
+    "source_url": "https://licensesearch.alabama.gov/genconbd",
+    "note": "Searched the full board roster on 2026-11-19 (11,145 rows) for TriMerge, Tri-Merge, Tri Merge and Trim* variants: no match. It may hold a license under another legal name, or it may only work below the state threshold. City of Birmingham contractor/business license not checked online. Confirm with the business or the board."
+   },
+   "score": 50
+  },
+  {
+   "name": "Building Specialties Company (BSCO), now CBX Solutions Birmingham branch",
+   "base_city": "Birmingham",
+   "state": "AL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "205-956-1600",
+   "contact_page": "https://www.cbxsolutions.com/contact-us/",
+   "website": "https://www.cbxsolutions.com/branches/birmingham-300/",
+   "partition_evidence": "Branch page lists 'Division 10 Specialties', 'Wall Systems & Operable Partitions' and 'Installation Services' among this location's specialties. It does not name toilet partitions specifically.",
+   "reason": "Long-running (est. 1954) commercial Division 10 distributor in Birmingham whose branch lists installation services. It's mainly a doors/frames/hardware distributor that also supplies Division 10 products, so it is a buy-around risk, and toilet partition installation isn't shown on its own pages.",
+   "red_flags": [
+    "Distributor that supplies Division 10 products itself (buy-around risk)",
+    "Part of the national CBX Solutions network (Cook & Boardman)",
+    "Toilet partition installation not explicitly shown"
+   ],
+   "evidence_urls": [
+    "https://www.cbxsolutions.com/branches/birmingham-300/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Building Specialties Company (BSCO), now CBX Solutions Birmingham branch",
+    "area": "birmingham",
+    "status": "not_found",
+    "registry": "Alabama Licensing Board for General Contractors license roster (licensesearch.alabama.gov/genconbd)",
+    "source_url": "https://licensesearch.alabama.gov/genconbd",
+    "note": "Searched the board roster on 2026-11-19 for Building Specialties, BSCO and CBX: no match. The only near match was Advanced Building Specialties Inc (Petal, MS, license 21728), which is a different company. The CBX branch page (cbxsolutions.com/branches/birmingham-300/) returned 403, so the legal entity name couldn't be confirmed. The branch may be a supplier only, or licensed under a parent entity name. City of Birmingham license not checked online."
+   },
+   "score": 50
+  },
+  {
+   "name": "GC Specialties (GCS)",
+   "base_city": "Mobile",
+   "state": "AL",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "phone": "251-478-1799",
+   "contact_page": "https://www.gcsinc.com/contact",
+   "website": "https://www.gcsinc.com/",
+   "partition_evidence": "Lists 'Toilet Partitions' among services; 'the sale and installation of specialty architectural products'.",
+   "reason": "Installs and sells toilet partitions, but it is based in Mobile, about 230 miles away, and says it serves the Gulf Coast and Southeast, with no mention of Birmingham.",
+   "red_flags": [
+    "Out of area (about 230 miles)",
+    "Sells partitions itself"
+   ],
+   "evidence_urls": [
+    "https://www.gcsinc.com/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Division 10, Inc.",
+   "base_city": "Cordova",
+   "state": "TN",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "phone": "(901) 755-2623",
+   "email": "estimating@division10inc.com",
+   "contact_page": "https://www.division10inc.com/contact",
+   "website": "https://www.division10inc.com/",
+   "partition_evidence": "Homepage offers Division 10 product sales, estimating and installation quotes; partitions not named on the page read.",
+   "reason": "Memphis-area Division 10 supplier about 240 miles away; no mention of serving Alabama or Birmingham.",
+   "red_flags": [
+    "Out of area",
+    "Sells Division 10 products itself"
+   ],
+   "evidence_urls": [
+    "https://www.division10inc.com/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "Custom Installation & Services, LLC",
+   "base_city": "Birmingham",
+   "state": "AL",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(205) 956-9331",
+   "review_source": "BBB (A+ letter grade, accredited)",
+   "partition_evidence": "BBB lists it under Office Furniture Installation, Office Furniture, Furniture Assembly Service; it appears in BBB's 'partition' category only because of office furniture.",
+   "reason": "An office furniture installer. Nothing shows toilet partition or restroom work.",
+   "red_flags": [
+    "Office furniture installer, not restroom partitions"
+   ],
+   "evidence_urls": [
+    "https://www.bbb.org/us/al/birmingham/category/partition"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Division 7 Construction Inc",
+   "base_city": "Birmingham",
+   "state": "AL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "None found. Search results described it only as a general contractor (NAICS 238190); I did not open a page that mentions partitions.",
+   "reason": "No evidence of toilet partition installation; no website found.",
+   "red_flags": [
+    "No website found",
+    "No partition evidence"
+   ],
+   "evidence_urls": [],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

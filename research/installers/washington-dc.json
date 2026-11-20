@@ -1,0 +1,285 @@
+{
+ "area": "washington-dc",
+ "found_count": 14,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/washington-dc.json: worked; 3 plausible maps results (MD Partitions, Accessible Construction Supply, R.B. Fulton); the rest were remodelers, glass shops and stores; web seeds were Google redirect links without domains",
+  "Bobrick Find A Rep (bobrick.com/find-a-rep/): loaded, but listings load dynamically, so no reps could be read",
+  "Hadrian sales rep locator (hadrian-inc.com/sales-rep-locator/): dynamic template, so no reps could be read",
+  "Scranton Products where-to-buy: worked; only a manufacturer territory specialist for DC/MD/VA, not an installer (not included)",
+  "ASI / American Specialties representatives page: dynamic form, so no reps could be read",
+  "General Partitions and Metpar rep pages: 404 at the guessed URLs",
+  "Bradley, Ammco/Ampco, Global Partitions locators: not reached (search cap)",
+  "The Blue Book (thebluebook.com): blocked (403) on WebFetch; profiles were seen only through search snippets (Frank M. Waters, Steel Products, Barranger, Partition Plus, Accessible Construction Supply)",
+  "BuildingConnected / Procore network: not tried (search cap)",
+  "BBB: Partition Plus profile found via search, but the page returned 403",
+  "Yelp: no results surfaced",
+  "MapQuest: pages returned empty",
+  "Houzz: worked (Partition Plus profile)",
+  "WebSearch: 8 of 8 used; general DC/MD/VA Division 10 queries mostly returned Blue Book, One Point Partitions (online supplier, self-install, skipped), Prestige Distribution and Newton Distributing (national/out-of-area, skipped), Kelley Bros (no DC/MD/VA office, skipped)",
+  "One Point Partitions DC page: 403",
+  "Seed file washington-dc.json: worked. Of 42 maps hits, only MD Partitions, R.B. Fulton and Accessible Construction Supply were relevant; the rest were remodelers, glass shops and stores. Web hits were Google redirect links and were not usable.",
+  "Bobrick find-a-rep: the page loads but the rep dropdown is script-driven, so no results were readable.",
+  "Scranton Products find-a-rep: 404 at the URL tried.",
+  "Hadrian find-a-rep: 404 at the URL tried.",
+  "ASI, Bradley, Metpar, General Partitions, Ampco locators: not tried (fetch budget spent on candidate sites).",
+  "The Blue Book: all iProView pages returned 403; usable only through search snippets.",
+  "BuildingConnected / Procore: not tried.",
+  "BBB: worked (Mayo, MD partition category page; Partition Plus profile).",
+  "Houzz: worked (Partition Plus profile).",
+  "MapQuest: pages loaded empty; the aws.mapquest.com subdomain did not resolve.",
+  "ARCAT company pages: 403.",
+  "onepointpartitions.com: 403. It looks like a manufacturer or supplier shipping into the region, not a local installer, and was not included.",
+  "udhgroup.com (Unified Specialty Services): worked, but it is NJ-based with no DC/MD/VA service area stated, so it was excluded.",
+  "Montgomery County Public Schools restroom partition bid PDF: not readable, no bidders found.",
+  "WebSearch: all 8 searches used (DC Division 10; Frank M. Waters; VA cities; MD/VA/DC toilet compartments; MD cities; Barranger; NoVA Division 10). The same few firms came up repeatedly, with no DC- or NoVA-based specialty installer found."
+ ],
+ "candidates": [
+  {
+   "name": "MD Partitions Inc.",
+   "base_city": "Jessup",
+   "state": "MD",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "website": "https://www.mdpartitions.com/",
+   "phone": "301-725-5125",
+   "email": "info@mdpartitions.com",
+   "contact_page": "https://www.mdpartitions.com/contact/",
+   "partition_evidence": "Homepage: 'supplies and installs toilet partitions, stalls, lockers, accessories, and other Division 10 specialties' in MD, DC and VA. Projects page lists US Capitol, State Department, Walter Reed, Ft. Belvoir, Silver Spring Metro and DC schools.",
+   "evidence_urls": [
+    "https://www.mdpartitions.com/",
+    "https://www.mdpartitions.com/projects/",
+    "https://www.mdpartitions.com/contact/"
+   ],
+   "red_flags": [
+    "Supplies partitions itself (stock partitions, 48-hour delivery): buy-around risk"
+   ],
+   "reason": "Jessup is about 20 miles from DC. It supplies and installs toilet partitions for commercial and institutional clients across MD, DC and VA, with many DC-area projects. It's also a partition supplier, so it's a buy-around risk.",
+   "added_by_checker": false,
+   "license": {
+    "name": "MD Partitions Inc.",
+    "area": "washington-dc",
+    "status": "not_online",
+    "registry": "DC DLCP SCOUT (Verify a Business License, scout.dcra.dc.gov); Maryland Home Improvement Commission public query (residential only)",
+    "source_url": "https://dlcp.dc.gov/node/1832226",
+    "note": "Jobs in DC need a DC Basic Business License in a contractor category (DLCP). DLCP's own page names SCOUT (https://scout.dcra.dc.gov/) as the place to verify a business license. SCOUT is a JavaScript single-page app and couldn't be queried automatically; scout.dlcp.dc.gov didn't connect. Maryland has no state license for commercial work. The MHIC lookup (https://www.dllr.state.md.us/cgi-bin/ElectronicLicensing/OP_search/OP_search.cgi?calling_app=HIC::HIC_business_name) covers residential home improvement only and is behind a reCAPTCHA. No license status was read; check SCOUT by hand. Base city: Jessup, MD."
+   },
+   "score": 70
+  },
+  {
+   "name": "Partition Plus, Inc.",
+   "base_city": "Forest Hill",
+   "state": "MD",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Hadrian",
+    "Bradley",
+    "Bobrick",
+    "Scranton Products",
+    "ASI",
+    "Metpar"
+   ],
+   "within_area": "no",
+   "website": "https://www.partitionplus.com/",
+   "phone": "800-298-9696",
+   "email": "sales@partitionplus.com",
+   "contact_page": "https://www.partitionplus.com/about-us/#contact-title",
+   "partition_evidence": "Service areas page: installation covers Baltimore, Washington DC, Delaware, Pennsylvania and Virginia, mostly with in-house crews and some subcontractors. About page: has supplied and installed commercial restroom partitions since 1993.",
+   "evidence_urls": [
+    "https://www.partitionplus.com/",
+    "https://www.partitionplus.com/our-service-areas/",
+    "https://www.partitionplus.com/about-us/"
+   ],
+   "red_flags": [
+    "Online partition reseller of the same brands Next Partitions sells: a direct competitor and a strong buy-around risk",
+    "Base about 60 miles from DC",
+    "Uses subcontractors for some installs"
+   ],
+   "reason": "It does install commercial partitions in DC and Virginia, but it's a direct online competitor selling the same brands, and its Forest Hill base is outside the 30-mile radius.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Partition Plus, Inc.",
+    "area": "washington-dc",
+    "status": "not_online",
+    "registry": "DC DLCP SCOUT (Verify a Business License, scout.dcra.dc.gov); Maryland Home Improvement Commission public query (residential only)",
+    "source_url": "https://dlcp.dc.gov/node/1832226",
+    "note": "Same as the others: DC work needs a DLCP Basic Business License in a contractor category. SCOUT is a JavaScript app that couldn't be queried automatically, and the MD MHIC lookup is behind a reCAPTCHA and covers residential work only. No license status was read; check SCOUT by hand. Base city: Forest Hill, MD."
+   },
+   "score": 60
+  },
+  {
+   "name": "Accessible Construction Supply, Inc.",
+   "base_city": "Huntingtown",
+   "state": "MD",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Privada",
+    "Bobrick",
+    "Hadrian",
+    "Bradley"
+   ],
+   "within_area": "nearby",
+   "website": "http://www.accessiblesupply.com/",
+   "partition_evidence": "Seen in search snippets only: Blue Book project entries for partitions at 277 S. Washington (Alexandria, VA), Latham & Watkins and Patriot Center. Blue Book itself returned 403, and the company site came back empty, so whether it installs or only supplies is unconfirmed.",
+   "evidence_urls": [
+    "https://thebluebook.com/iProView/259507/accessible-construction-supply-inc/material-suppliers//construction-projects/277-s-washington-capital-improvements-457736"
+   ],
+   "red_flags": [
+    "Listed as a material supplier: buy-around risk",
+    "Own website returned no content; no contact details verified"
+   ],
+   "reason": "It has DC-area partition projects with commercial GCs, but it's listed as a material supplier and installation isn't confirmed on a page I could read. Huntingtown is roughly 35 to 40 miles from DC.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Accessible Construction Supply, Inc.",
+    "area": "washington-dc",
+    "status": "not_online",
+    "registry": "DC DLCP SCOUT (Verify a Business License, scout.dcra.dc.gov); Maryland Home Improvement Commission public query (residential only)",
+    "source_url": "https://dlcp.dc.gov/node/1832226",
+    "note": "DC work needs a DLCP Basic Business License in a contractor category. SCOUT couldn't be queried automatically (JavaScript app), and the MD MHIC lookup is behind a reCAPTCHA and covers residential work only. No license status was read; check SCOUT by hand. Base city: Huntingtown, MD."
+   },
+   "score": 45
+  },
+  {
+   "name": "Frank M. Waters, Inc.",
+   "base_city": "unknown",
+   "state": "MD",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "nearby",
+   "partition_evidence": "Seen in search snippets only: Blue Book subcontractor profile describes a family-run toilet partition and restroom accessory business since 1991. It says it works in MD, DC, VA, southern PA, DE and NJ, with projects at Fort Meade/NSA, schools, hospitals and offices. The Blue Book page returned 403 when fetched.",
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/798165/frank-m-waters-inc/subcontractors/"
+   ],
+   "red_flags": [
+    "No company website found",
+    "Base city unknown",
+    "Profile not read directly (403)"
+   ],
+   "reason": "It looks like a commercial toilet partition subcontractor working in DC and VA, but the only evidence is search snippets from a Blue Book page that blocked fetching. No website, contact details or base city were verified.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Frank M. Waters, Inc.",
+    "area": "washington-dc",
+    "status": "not_online",
+    "registry": "DC DLCP SCOUT (Verify a Business License, scout.dcra.dc.gov); Maryland Home Improvement Commission public query (residential only)",
+    "source_url": "https://dlcp.dc.gov/node/1832226",
+    "note": "Base city unknown and no website given. DC work needs a DLCP Basic Business License in a contractor category. SCOUT couldn't be queried automatically, and the MD MHIC lookup is behind a reCAPTCHA. No license status was read; check SCOUT by hand."
+   },
+   "score": 45
+  },
+  {
+   "name": "Steel Products, Inc.",
+   "base_city": "Frederick",
+   "state": "MD",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/393296/steel-products-inc/subcontractors/"
+   ],
+   "partition_evidence": "Per search snippets of its Blue Book profile: sells toilet partitions, cubicles and lockers, with 'factory represented sales and installation in the greater Washington, DC metropolitan area,' covering MD, VA, DE and DC, including Alexandria, Arlington and Fairfax. I couldn't open the page myself (403).",
+   "reason": "Looks like a commercial partition seller and installer serving DC, but the evidence is only search snippets of a blocked directory page. No website or contact details found. The base city of Frederick comes from a separate Blue Book listing snippet.",
+   "red_flags": [
+    "No website found",
+    "Evidence only from search snippets of a directory page",
+    "Sells partitions (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 43
+  },
+  {
+   "name": "American Building Specialties Corp.",
+   "base_city": "Bealeton",
+   "state": "VA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick",
+    "ASI",
+    "Hadrian"
+   ],
+   "within_area": "no",
+   "partition_evidence": "Seen in search snippets only: Blue Book listing describes a wholesale distributor of toilet partitions, accessories and lockers, a master distributor for Bobrick, ASI and Hadrian, with installation 'available in many states'. The page returned 403 when fetched.",
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/393400"
+   ],
+   "red_flags": [
+    "Wholesale distributor and master distributor of the same brands: strong buy-around risk",
+    "Bealeton is about 45 to 50 miles from DC",
+    "No website or contact details verified"
+   ],
+   "reason": "It's a Division 10 wholesale distributor that says installation is available, but no installation projects were seen. The base is outside the 30-mile radius, and its distributor role makes it a buy-around risk.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "R.B. Fulton Co. Inc.",
+   "base_city": "Randallstown",
+   "state": "MD",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "no",
+   "website": "https://rbfulton.com/",
+   "phone": "(410) 467-0750",
+   "email": "info@rbfulton.com",
+   "contact_page": "https://rbfulton.com/contact-us/",
+   "partition_evidence": "Homepage: Division 10 distributor of toilet partitions and accessories, with professional installation in the Baltimore area.",
+   "evidence_urls": [
+    "https://rbfulton.com/"
+   ],
+   "red_flags": [
+    "Distributor that sells partitions: buy-around risk",
+    "Installation offered in the Baltimore area only"
+   ],
+   "reason": "It's a commercial Division 10 distributor, and its site offers installation only in the Baltimore area. Randallstown is about 40 miles from DC, so it falls outside the area.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Barranger Company, Inc.",
+   "base_city": "unknown",
+   "state": "VA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "partition_evidence": "No evidence found. Only a Blue Book subcontractor URL surfaced in search, and it returned 403 with no description.",
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/309888/barranger-company-inc/subcontractors/"
+   ],
+   "red_flags": [
+    "No website, location or service description found"
+   ],
+   "reason": "I found nothing showing what this company does or where it's based, so there's no partition evidence. Treat within_area as unconfirmed; it may be re-checked if a website turns up.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

@@ -1,0 +1,556 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Texas Partition Installers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<style>
+/* Layout: state hub, same 1360px container + 12-col grid as the DFW area page. Hero splits search (6) / Texas map (6).
+   Light-only, nextpartitions.com tokens. */
+:root{
+  --bg:#fbfaf9; --band:#f4f2ee; --surface:#ffffff; --fg:#1c0e05; --muted:#6d6059;
+  --border:#e1ddd7; --accent:#e8630a; --accent-strong:#c95200; --accent-soft:#fdeee3; --on-accent:#ffffff;
+  --ink:#262626; --ink-fg:#f8f8f8; --ink-muted:#c9c2bc; --good:#1f7a4d; --good-soft:#e6f3ec; --gold:#b7791f;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --container:1360px; --gutter:34px; --gap:24px; --section:80px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter)}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--gap)}
+.c12{grid-column:span 12}.c7{grid-column:span 7}.c5{grid-column:span 5}.c8{grid-column:span 8}.c4{grid-column:span 4}.c6{grid-column:span 6}.c3{grid-column:span 3}
+@media (max-width:1024px){.c8,.c4{grid-column:span 12}.c3{grid-column:span 6}}
+@media (max-width:760px){:root{--gutter:16px;--gap:16px;--section:56px}.c6,.c3{grid-column:span 12}}
+.section{padding-block:var(--section)}
+.band{background:var(--band)}
+.mocknote{background:#fff3c4;border-bottom:1px solid #f0d98a;font-size:13px;color:#5c4400;text-align:center;padding:8px 16px}
+
+/* header (same as homepage mockup) */
+.topbar{background:var(--ink);color:var(--ink-fg);font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-block:9px;flex-wrap:wrap}
+.topbar .contact{display:flex;gap:20px;flex-wrap:wrap}
+.nav{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:env(safe-area-inset-top,0px);z-index:40}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:40px;width:auto}
+.brand b{display:block;font-size:19px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.menu{display:flex;gap:28px;font-weight:600}
+.menu a{text-decoration:none}
+.menu a.on{color:var(--accent-strong)}
+@media (max-width:980px){.menu{display:none}.topbar .tagline{display:none}}
+@media (max-width:520px){.brand small{display:none}.brand img{height:34px}.hero .btn{white-space:normal;text-align:center;width:100%}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;background:var(--accent);color:var(--on-accent);font:inherit;font-weight:700;font-size:16px;padding:12px 22px;min-height:46px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--accent-strong)}
+.btn.ghost{background:var(--surface);color:var(--accent-strong);border:2px solid var(--accent)}
+.btn.ghost:hover{background:var(--accent-soft)}
+.btn.sm{font-size:14px;padding:8px 14px;min-height:38px}
+.link{font:inherit;background:none;border:0;padding:0;color:var(--accent-strong);font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* hero */
+.crumbs{font-size:14px;color:var(--muted);padding-top:28px;display:flex;flex-wrap:wrap;gap:6px}
+.crumbs a{text-decoration:none}.crumbs a:hover{text-decoration:underline}
+.hero{padding-block:16px 40px;border-bottom:1px solid var(--border)}
+.hero h1{font-size:clamp(32px,4.2vw,50px);font-weight:900;letter-spacing:-.035em;line-height:1.06;margin:10px 0 14px;text-wrap:balance;max-width:20ch}
+.hero .lead{font-size:18px;color:var(--muted);max-width:62ch;margin:0 0 22px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin:0 0 26px;padding:0;list-style:none}
+.facts li{display:flex;flex-direction:column}
+.facts b{font-size:26px;font-weight:900;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1}
+.facts span{font-size:13px;color:var(--muted)}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.startcfg{background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--accent);padding:20px;margin:0 0 20px;box-shadow:0 10px 30px rgba(28,14,5,.06)}
+.startcfg h2{font-size:21px;font-weight:900;letter-spacing:-.02em;margin:0 0 6px}
+.startcfg p{margin:0 0 14px;color:var(--muted)}
+.startcfg .btn{font-size:17px;min-height:52px;padding:14px 26px}
+@media (max-width:560px){.startcfg .btn{width:100%}}
+.search.secondary label{font-size:14px;color:var(--muted)}
+.mbar{display:none}
+@media (max-width:760px){.mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:45;background:var(--surface);border-top:1px solid var(--border);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}.mbar .btn{width:100%}body{padding-bottom:76px}}
+
+/* footer */
+footer{background:#1a1a1a;color:#d8d2cc;font-size:14px}
+footer .wrap{padding-block:40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.h1{font-size:clamp(32px,4.2vw,50px);font-weight:900;letter-spacing:-.035em;line-height:1.06;margin:10px 0 14px;text-wrap:balance;max-width:16ch}
+.hubhero .lead{font-size:18px;color:var(--muted);max-width:56ch;margin:0 0 22px}
+/* hub: hero search + map */
+.hubhero{padding-block:16px 48px;border-bottom:1px solid var(--border)}
+.hubhero .grid{align-items:start}
+.hubhero .c6{min-width:0}
+@media (max-width:1024px){.hubhero .c6{grid-column:span 12}}
+.search{position:relative;max-width:620px}
+.search label{display:block;font-weight:800;font-size:15px;margin-bottom:6px}
+.srow{display:flex;gap:8px}
+.srow input{flex:1;min-width:0;font:inherit;font-size:18px;color:var(--fg);background:var(--surface);border:1px solid var(--border);padding:9px 12px;min-height:52px}
+.srow .btn{min-height:52px;font-size:17px}
+@media (max-width:560px){.srow{flex-direction:column}.srow .btn{width:100%}}
+.sugg{position:absolute;left:0;right:0;top:100%;margin:4px 0 0;padding:4px 0;list-style:none;background:var(--surface);border:1px solid var(--border);box-shadow:0 12px 30px rgba(28,14,5,.12);z-index:30;max-height:300px;overflow-y:auto}
+.sugg li{display:flex;justify-content:space-between;gap:12px;padding:9px 12px;cursor:pointer;font-size:15px}
+.sugg li small{color:var(--muted);font-size:13px;white-space:nowrap}
+.sugg li[aria-selected="true"],.sugg li:hover{background:var(--accent-soft)}
+.smsg{font-size:14px;color:#9a5b00;margin:8px 0 0}
+.result{margin-top:18px;max-width:620px;background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);padding:18px 20px}
+.result.lim{border-left-color:var(--gold)}
+.result.far{border-left-color:var(--muted)}
+.result h2{font-size:19px;font-weight:800;letter-spacing:-.01em;margin:0 0 4px}
+.result p{margin:0 0 12px;color:var(--muted);font-size:15px}
+.result .row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
+.result form{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;margin-top:4px}
+.result form input{font:inherit;font-size:15px;border:1px solid var(--border);padding:9px 11px;min-height:44px;min-width:0;background:var(--surface);color:var(--fg)}
+@media (max-width:560px){.result form{grid-template-columns:1fr}}
+.mapcard2{background:var(--surface);border:1px solid var(--border);padding:12px}
+#tx{width:100%;height:auto;display:block;background:#f3efe8}
+#tx{cursor:crosshair}
+#tx .st{fill:url(#hatch);stroke:#c9c0b4;stroke-width:1.5}
+#tx .reach{fill:#fdf3e9}
+#tx .town{fill:#8f857b}
+#tx text.tl{font-size:10.5px;font-weight:600;fill:var(--muted)}
+#tx text.zone{font-size:11px;font-weight:700;fill:#7d7268}
+#tx .area{cursor:pointer}
+#tx .area:focus{outline:none}
+#tx .area:focus-visible .ring,#tx .area.on .ring{stroke-width:3}
+#tx text{font-family:var(--font);font-size:12px;font-weight:700;fill:var(--fg);paint-order:stroke;stroke:#fffdfa;stroke-width:3px;stroke-linejoin:round;cursor:pointer}
+#tx text.sub{font-size:10.5px;font-weight:600;fill:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:12px;color:var(--muted);margin:8px 2px 0}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.lg{display:inline-block;width:12px;height:12px;border-radius:50%}
+.lg.cov{background:rgba(232,99,10,.28);border:2px solid var(--accent)}
+.lg.lim{background:rgba(183,121,31,.14);border:2px dashed var(--gold)}
+.lg.none{background:#fff;border:2px solid #b9b0a6}
+.lg.reach{border-radius:2px;background:#fdf3e9;border:1px solid #ecd5bf}
+.lg.hatch{border-radius:2px;border:1px solid #c9c0b4;background:repeating-linear-gradient(45deg,#fffdfa 0 3px,#e4ddd4 3px 4px)}
+.maphint{font-size:12px;color:var(--muted);margin:6px 2px 0}
+.lg.pin{background:var(--ink);border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:10px;height:10px}
+
+/* area cards */
+.areas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
+@media (max-width:1024px){.areas{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.areas{grid-template-columns:1fr}}
+.area-card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--border);padding:20px;min-width:0}
+.area-card.on{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.area-card .top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px}
+.area-card h3{margin:0;font-size:20px;font-weight:800;letter-spacing:-.015em}
+.pill{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border:1px solid;white-space:nowrap}
+.pill.cov{color:var(--good);border-color:#9fd1b7;background:var(--good-soft)}
+.pill.lim{color:#8a5a12;border-color:#e6c98f;background:#fbf3e2}
+.area-card .stat{display:flex;gap:18px;margin:0 0 10px;font-size:14px;color:var(--muted)}
+.area-card .stat b{color:var(--fg);font-size:17px;font-variant-numeric:tabular-nums}
+.area-card .cities{font-size:14px;color:var(--muted);margin:0 0 16px;flex:1}
+.area-card .cities a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--border)}
+.area-card .cities a:hover{border-color:var(--accent)}
+.notyet{grid-column:span 2;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 32px;align-items:center;background:var(--band);border:1px dashed #cfc8bf;padding:22px}
+@media (max-width:1024px){.notyet{grid-column:span 1;grid-template-columns:1fr;align-content:center}}
+.notyet h3{margin:0 0 4px;font-size:18px;font-weight:800}
+.notyet p{margin:0;color:var(--muted);font-size:15px}
+.notyet .opts{margin:10px 0 0;padding-left:18px;font-size:15px;display:grid;gap:6px}
+.q{margin:0 0 12px}.q .lab{display:block;font-size:14px;font-weight:700;margin-bottom:6px}
+.seg{display:inline-grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);border:1px solid var(--border);max-width:100%}
+.seg button{font:inherit;font-size:14px;font-weight:600;background:var(--surface);color:var(--fg);border:0;padding:8px 14px;cursor:pointer;min-height:40px}
+.seg button+button{border-left:1px solid var(--border)}
+.seg button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent-strong)}
+.out{border-top:1px solid var(--border);padding-top:14px;margin-top:4px}
+.out h3{margin:0 0 6px;font-size:17px;font-weight:800}
+.out ul{margin:0 0 12px;padding-left:18px;color:var(--muted);font-size:15px}
+.out .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--border);background:var(--band);color:var(--muted);margin-bottom:8px}
+.out .tag.v{color:var(--good);border-color:#9fd1b7;background:var(--good-soft)}
+.result .ok{color:var(--fg);margin:0 0 4px}
+.disc{font-size:13px;color:var(--muted);border-top:1px solid var(--border);padding-top:10px;margin:14px 0 0}
+.alt{font-size:14px;color:var(--muted);margin:10px 0 0}
+.alt a{color:var(--accent-strong);font-weight:600}
+.notyet .want{margin-top:12px;font-size:14px}
+.notyet .want a{color:var(--accent-strong);font-weight:600}
+.notyet .act{display:flex;flex-direction:column;gap:10px;align-items:stretch}
+
+/* city index */
+.az{columns:4 220px;column-gap:var(--gap)}
+.az section{break-inside:avoid;margin:0 0 18px}
+.az h3{margin:0 0 6px;font-size:13px;font-weight:800;color:var(--accent-strong);letter-spacing:.06em;border-bottom:1px solid var(--border);padding-bottom:4px}
+.az ul{list-style:none;margin:0;padding:0}
+.az li{display:flex;justify-content:space-between;gap:8px;font-size:15px;padding:3px 0}
+.az li a{text-decoration:none;font-weight:600}
+.az li a:hover{color:var(--accent-strong);text-decoration:underline}
+.az li span{color:var(--muted)}
+.aznote{margin:8px 0 0;font-size:15px;color:var(--muted)}
+.aznote a{color:var(--accent-strong);font-weight:600}
+.recruit{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;background:var(--surface);border:1px dashed var(--border);padding:24px}
+.recruit h3{margin:0 0 4px;font-size:20px;font-weight:800}
+.recruit p{margin:0;color:var(--muted);max-width:70ch}
+.az li small{color:var(--muted);font-size:12px;white-space:nowrap}
+.tx3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
+@media (max-width:900px){.tx3{grid-template-columns:1fr}}
+.tx3 article{border-top:2px solid var(--border);padding-top:16px}
+.tx3 h3{font-size:18px;font-weight:800;margin:0 0 8px}
+.tx3 p{margin:0;color:var(--muted)}
+.h2{font-size:clamp(24px,2.6vw,32px);font-weight:900;letter-spacing:-.03em;margin:0 0 8px;line-height:1.15}
+.intro{color:var(--muted);margin:0 0 28px;max-width:720px}
+details{border-bottom:1px solid var(--border);padding:14px 0}
+summary{font-weight:700;cursor:pointer;font-size:17px}
+details p{margin:8px 0 0;color:var(--muted);max-width:75ch}
+.xband{background:var(--ink);color:var(--ink-fg)}
+.xband .wrap{padding-block:56px}
+.xband h2{font-size:clamp(24px,2.6vw,32px);font-weight:900;letter-spacing:-.03em;margin:0 0 6px}
+.xband p{margin:0;color:var(--ink-muted);max-width:640px}
+.xband .grid{align-items:center}
+.xband .act{display:flex;justify-content:flex-end;gap:12px;flex-wrap:wrap}
+@media (max-width:1024px){.xband .act{justify-content:flex-start}}
+.nearby{display:flex;flex-wrap:wrap;gap:8px 24px;font-weight:600}
+.nearby a{color:var(--accent-strong)}
+</style>
+
+<div class="mocknote"><b>Mockup:</b> installer counts, ratings and coverage are examples. Only the Dallas–Fort Worth area page is mocked up; other area links stay on this page.</div>
+
+<div class="topbar"><div class="wrap"><div class="contact"><span>sales@nextpartitions.com</span><span>1-833-997-7489</span></div><div class="tagline">Authorized Distributor — All Major Brands</div></div></div>
+<nav class="nav" aria-label="Main"><div class="wrap">
+  <a class="brand" href="home.html"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Commercial Partitions</small></span></a>
+  <div class="menu"><a href="home.html">Partitions</a><a href="home.html">Mounting Styles</a><a href="home.html">Hardware &amp; Parts</a><a href="home.html">Resources</a></div>
+  <a class="btn" href="configurator.html">Get a Quote</a>
+</div></nav>
+
+<main>
+<div class="wrap">
+  <div class="crumbs" id="top"><a href="home.html">Home</a>›<a href="#top">Installers</a>›<span>Texas</span></div>
+  <header class="hubhero"><div class="grid">
+    <div class="c6">
+      <h1 class="h1">Bathroom Partition Installers in Texas</h1>
+      <p class="lead">Independent, insured installers for toilet partitions and urinal screens in <span id="nAreas"></span> Texas areas. Price your partitions with us and we match the job with the installers who serve it.</p>
+      <ul class="facts" id="facts"></ul>
+      <div class="startcfg">
+        <h2>Start with your partitions</h2>
+        <p>Configure your restroom in about 2 minutes: an instant partitions price plus an installation estimate for your area. Installers price your job through us, and your contact details stay with us until you book.</p>
+        <a class="btn" href="configurator.html">Configure your partitions →</a>
+      </div>
+      <form class="search secondary" id="sForm" novalidate autocomplete="off">
+        <label for="q">Or browse installers by job-site city or ZIP</label>
+        <div class="srow">
+          <input id="q" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="sugg" placeholder="e.g. Plano or 78701">
+          <button class="btn ghost" type="submit">Find installers</button>
+        </div>
+        <ul class="sugg" id="sugg" role="listbox" hidden></ul>
+        <p class="smsg" id="sMsg" hidden></p>
+      </form>
+      <div id="result" aria-live="polite"></div>
+    </div>
+    <div class="c6">
+      <div class="mapcard2">
+        <svg id="tx" role="group" aria-label="Map of Texas installer areas. Select an area to see who serves it."></svg>
+        <div class="legend"><span><i class="lg cov"></i>Covered area</span><span><i class="lg lim"></i>Limited (1 installer)</span><span><i class="lg reach"></i>Travel fee applies</span><span><i class="lg hatch"></i>Ship + install options</span><span id="pinLg" hidden><i class="lg pin"></i>Your job site</span></div>
+        <p class="maphint">Click anywhere in Texas to check coverage.</p>
+      </div>
+    </div>
+  </div></header>
+</div>
+
+<section class="section" id="areas"><div class="wrap">
+  <h2 class="h2">Texas installer areas</h2>
+  <p class="intro">Each area page lists its installers, travel fees, local install prices and recent jobs. Installers travel to most towns within about an hour of their area.</p>
+  <div class="areas" id="areaGrid"></div>
+  <div class="notyet" id="notyet">
+    <div><h3>Everywhere else in Texas</h3><p>We ship statewide from stock. How it gets installed depends on your job:</p>
+      <ul class="opts"><li><b>Larger jobs:</b> approved installers from the nearest area travel: 8 or more stalls within about 3 hours, 20 or more within 6. They quote travel and lodging up front.</li><li><b>You have a contractor:</b> we ship install-ready partitions with guides, a hardware checklist and phone support during the install.</li><li><b>No contractor:</b> we suggest local contractors who've installed for our customers before. We don't check them, and you hire them directly.</li></ul>
+      <p class="want" style="margin-top:8px">Installers and contractors are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work.</p>
+      <p class="want" id="noneList"></p></div>
+    <div class="act"><button class="btn" type="button" id="noneReq">See install options</button><a class="btn ghost" href="configurator.html">Get a partitions quote</a></div>
+  </div>
+</div></section>
+
+<section class="section band" id="cities"><div class="wrap">
+  <h2 class="h2">Find your city</h2>
+  <p class="intro">Texas cities A–Z. Cities with installer coverage link to their area page.</p>
+  <div class="az" id="az"></div>
+  <p class="aznote">No installer near your city? <a href="#notyet">See install options outside our areas</a>.</p>
+</div></section>
+
+<section class="section" id="join" style="padding-bottom:0"><div class="wrap">
+  <div class="recruit"><div><h3>Install partitions in Texas?</h3><p id="joinTxt">Get install requests from customers buying partitions from us, plus trade pricing on partitions for your own jobs. No listing fee. Jobs come through Next Partitions with shop drawings; you get the customer's details once they book you. You contract and invoice them directly.</p></div><a class="btn ghost" href="#join">Apply for a trade account</a></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <h2 class="h2">Hiring a partition installer in Texas</h2>
+  <p class="intro">Three Texas rules that affect a restroom project, and how this directory handles them.</p>
+  <div class="tx3">
+    <article><h3>No statewide contractor license</h3><p>Texas doesn't license general contractors, so a license number proves little. We keep each approved installer's insurance certificate and business registration on file and contact references. That's a record of what we checked, not a guarantee of anyone's work. Some cities also require contractor registration before they issue a permit.</p></article>
+    <article><h3>Texas Accessibility Standards</h3><p>Commercial restrooms in Texas follow the Texas Accessibility Standards (TAS), enforced by TDLR, as well as the ADA. Projects of $50,000 or more must be registered with TDLR and inspected. Ask your installer to confirm accessible stalls, grab bars and door swings follow TAS.</p></article>
+    <article><h3>Sales tax on install labor</h3><p>In Texas, labor to remodel or repair a nonresidential building is generally taxable, and labor on new construction generally is not. Ask your installer to show which applies on their quote.</p></article>
+  </div>
+</div></section>
+
+<section class="section band"><div class="wrap">
+  <h2 class="h2">Questions about partition installers in Texas</h2>
+  <div style="max-width:880px">
+    <details><summary>My city isn't listed. Can I still get an installer?</summary><p>Usually. Installers travel about an hour beyond their area for a travel fee. Search your city or ZIP above to see the nearest area and the drive. If nobody is close, we ship the partitions install-ready and support your own contractor. Approved installers from the nearest area travel for jobs of 8 or more stalls within about 3 hours, or 20 or more within 6.</p></details>
+    <details><summary>What does "approved" mean?</summary><p>The installer confirmed they install partitions customers already bought, and we have their liability insurance certificate and business or city registration on file, with the date we last checked each. We contacted references, they signed our listing agreement, and they completed one job for a Next Partitions customer. It's a record of those facts, not an endorsement or a guarantee of their work. Ratings come only from customers who bought their partitions from us.</p></details>
+    <details><summary>Does Next Partitions sell installation?</summary><p>No. We sell partitions and pass your install request to approved installers who serve your area. Requests come from customers buying partitions from Next Partitions. Approved installers agree to quote installation for those partitions and not to substitute other products. Installers and contractors are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work.</p></details>
+  </div>
+</div></section>
+
+<section class="xband"><div class="wrap"><div class="grid">
+  <div class="c8"><h2>Buying partitions for a Texas project?</h2><p>We ship statewide from stock. Configure your partitions and approved installers who serve your ZIP price the installation through us. You choose, and we line up delivery and install dates.</p></div>
+  <div class="c4 act"><a class="btn" href="configurator.html">Configure your partitions</a></div>
+</div></div></section>
+
+<section class="section" style="padding-block:48px"><div class="wrap">
+  <h2 class="h2" style="font-size:22px">Partition installers in nearby states</h2>
+  <div class="nearby"><a href="#top">Oklahoma</a><a href="#top">Louisiana</a><a href="#top">New Mexico</a><a href="#top">Arkansas</a><a href="#top">All states</a></div>
+</div></section>
+</main>
+
+<div class="mbar"><a class="btn" href="configurator.html">Configure your partitions →</a></div>
+<footer><div class="wrap"><span>© 2026 Next Partitions. All rights reserved.</span><span>Terms &amp; Conditions · Privacy Policy</span></div></footer>
+
+<script>
+const DFW_URL="dfw.html";
+// n = approved installers based in the area; r = service radius in miles
+const M=[
+ {id:"dfw",name:"Dallas–Fort Worth",short:"DFW",lat:32.84,lon:-96.98,r:55,n:4,rating:4.8,jobs:63,lab:"l",url:DFW_URL,cities:[["Dallas",32.78,-96.80],["Fort Worth",32.75,-97.33],["Arlington",32.74,-97.11],["Plano",33.02,-96.70],["Irving",32.81,-96.95],["Garland",32.91,-96.64],["Frisco",33.15,-96.82],["McKinney",33.20,-96.62],["Grand Prairie",32.75,-97.00],["Denton",33.21,-97.13],["Mesquite",32.77,-96.60],["Carrollton",32.98,-96.89],["Richardson",32.95,-96.73],["Lewisville",33.05,-97.00],["Allen",33.10,-96.67],["Rockwall",32.93,-96.46],["Waxahachie",32.39,-96.85],["Mansfield",32.56,-97.14],["Weatherford",32.76,-97.80]]},
+ {id:"hou",name:"Houston",lat:29.85,lon:-95.40,r:55,n:5,rating:4.7,jobs:81,lab:"r",cities:[["Houston",29.76,-95.37],["Pasadena",29.69,-95.21],["Pearland",29.56,-95.29],["Sugar Land",29.62,-95.63],["The Woodlands",30.17,-95.50],["Katy",29.79,-95.82],["League City",29.51,-95.09],["Baytown",29.74,-94.98],["Conroe",30.31,-95.46],["Missouri City",29.62,-95.54],["Galveston",29.30,-94.80],["Spring",30.08,-95.42]]},
+ {id:"aus",name:"Austin",lat:30.35,lon:-97.75,r:45,n:3,rating:4.9,jobs:37,lab:"l",cities:[["Austin",30.27,-97.74],["Round Rock",30.51,-97.68],["Cedar Park",30.51,-97.82],["Georgetown",30.63,-97.68],["Pflugerville",30.44,-97.62],["San Marcos",29.88,-97.94],["Kyle",29.99,-97.88],["Leander",30.58,-97.85]]},
+ {id:"sat",name:"San Antonio",lat:29.46,lon:-98.45,r:45,n:3,rating:4.6,jobs:29,lab:"l",cities:[["San Antonio",29.42,-98.49],["New Braunfels",29.70,-98.12],["Schertz",29.55,-98.27],["Seguin",29.57,-97.96],["Boerne",29.79,-98.73]]},
+ {id:"wac",name:"Waco–Killeen",lat:31.32,lon:-97.40,r:40,n:1,rating:4.8,jobs:9,lab:"l",cities:[["Waco",31.55,-97.15],["Killeen",31.12,-97.73],["Temple",31.10,-97.34],["Belton",31.06,-97.46],["Harker Heights",31.08,-97.66]]},
+ {id:"cc",name:"Corpus Christi",lat:27.75,lon:-97.45,r:40,n:1,rating:4.7,jobs:6,lab:"r",cities:[["Corpus Christi",27.80,-97.40],["Portland",27.88,-97.32],["Kingsville",27.52,-97.86]]},
+ {id:"etx",name:"East Texas",sub:"Tyler–Longview",lat:32.42,lon:-94.90,r:45,n:1,rating:4.9,jobs:7,lab:"r",cities:[["Tyler",32.35,-95.30],["Longview",32.50,-94.74],["Marshall",32.54,-94.37],["Nacogdoches",31.60,-94.66]]},
+ {id:"elp",name:"El Paso",lat:31.74,lon:-106.38,r:35,n:0,lab:"r",cities:[["El Paso",31.76,-106.49],["Socorro",31.65,-106.30],["Horizon City",31.69,-106.21]]},
+ {id:"rgv",name:"Rio Grande Valley",lat:26.17,lon:-97.95,r:40,n:0,lab:"r",cities:[["McAllen",26.20,-98.23],["Edinburg",26.30,-98.16],["Mission",26.22,-98.33],["Harlingen",26.19,-97.70],["Brownsville",25.90,-97.50]]},
+ {id:"lbb",name:"Lubbock",lat:33.58,lon:-101.86,r:30,n:0,lab:"r",cities:[["Lubbock",33.58,-101.86]]},
+ {id:"ama",name:"Amarillo",lat:35.20,lon:-101.83,r:30,n:0,lab:"r",cities:[["Amarillo",35.22,-101.83]]},
+ {id:"mid",name:"Midland–Odessa",lat:31.93,lon:-102.22,r:30,n:0,lab:"r",cities:[["Midland",32.00,-102.08],["Odessa",31.85,-102.37]]}
+];
+// Cities outside any area page: placed by distance to the nearest covered area
+const S=[["Beaumont",30.08,-94.13],["Port Arthur",29.90,-93.93],["College Station",30.63,-96.33],["Bryan",30.67,-96.37],["Huntsville",30.72,-95.55],["Victoria",28.81,-97.00],["Sherman",33.64,-96.61],["Wichita Falls",33.91,-98.49],["Abilene",32.45,-99.73],["San Angelo",31.46,-100.44],["Laredo",27.53,-99.49],["Texarkana",33.43,-94.05]];
+// ZIP3 prefix -> rough location
+const Z={750:["Dallas area",32.9,-96.75],751:["Dallas area",32.75,-96.6],752:["Dallas",32.78,-96.80],753:["Dallas",32.78,-96.80],754:["Greenville area",33.14,-96.11],755:["Texarkana area",33.43,-94.05],756:["Longview area",32.50,-94.74],757:["Tyler area",32.35,-95.30],758:["Palestine area",31.76,-95.63],759:["Lufkin area",31.34,-94.73],760:["Fort Worth area",32.8,-97.4],761:["Fort Worth",32.75,-97.33],762:["Denton area",33.21,-97.13],763:["Wichita Falls area",33.91,-98.49],764:["Stephenville area",32.22,-98.20],765:["Temple area",31.10,-97.34],766:["Waco area",31.55,-97.15],767:["Waco",31.55,-97.15],768:["Brownwood area",31.71,-98.99],769:["San Angelo area",31.46,-100.44],770:["Houston",29.76,-95.37],771:["Houston",29.76,-95.37],772:["Houston",29.76,-95.37],773:["Conroe area",30.31,-95.46],774:["Sugar Land area",29.62,-95.63],775:["Pasadena area",29.69,-95.21],776:["Beaumont area",30.08,-94.13],777:["Beaumont",30.08,-94.13],778:["Bryan area",30.67,-96.37],779:["Victoria area",28.81,-97.00],780:["San Antonio area",29.6,-98.6],781:["San Antonio area",29.5,-98.3],782:["San Antonio",29.42,-98.49],783:["Corpus Christi area",27.8,-97.6],784:["Corpus Christi",27.80,-97.40],785:["McAllen area",26.20,-98.23],786:["Austin area",30.45,-97.7],787:["Austin",30.27,-97.74],788:["Uvalde area",29.21,-99.79],789:["Giddings area",30.18,-96.94],790:["Amarillo area",35.22,-101.83],791:["Amarillo",35.22,-101.83],792:["Childress area",34.43,-100.20],793:["Lubbock area",33.58,-101.86],794:["Lubbock",33.58,-101.86],795:["Abilene area",32.45,-99.73],796:["Abilene",32.45,-99.73],797:["Midland area",32.00,-102.08],798:["El Paso area",31.76,-106.49],799:["El Paso",31.76,-106.49]};
+
+const $=id=>document.getElementById(id);
+const byId=Object.fromEntries(M.map(m=>[m.id,m]));
+const covered=M.filter(m=>m.n>0);
+function miles(a,b,c,d){const R=3959,t=x=>x*Math.PI/180,dl=t(c-a),dn=t(d-b);const h=Math.sin(dl/2)**2+Math.cos(t(a))*Math.cos(t(c))*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(h))}
+// city driving for the first 60 mi, highway beyond
+function driveMin(m){return Math.round(Math.min(m,60)*1.2/48*60+5+Math.max(m-60,0)*1.15/70*60)}
+function drive(m){const min=driveMin(m);return min<60?`${min} min`:`${Math.floor(min/60)} hr ${min%60?min%60+" min":""}`.trim()}
+const areaHref=m=>m.url||"#areas";
+const areaLink=(m,txt)=>`<a class="btn" href="${areaHref(m)}"${m.url?'':""} data-area="${m.id}">${txt}</a>`;
+
+/* places index */
+const P=[];
+M.forEach(m=>m.cities.forEach(([name,lat,lon])=>P.push({name,lat,lon,area:m.id})));
+S.forEach(([name,lat,lon])=>P.push({name,lat,lon,area:null}));
+P.sort((a,b)=>a.name.localeCompare(b.name));
+
+/* facts */
+$("nAreas").textContent=covered.length;
+const sum=k=>covered.reduce((s,m)=>s+m[k],0);
+$("facts").innerHTML=`<li><b>${sum("n")}</b><span>approved installers</span></li><li><b>${covered.length}</b><span>Texas areas covered</span></li><li><b>${sum("jobs")}</b><span>installs completed</span></li>`;
+
+/* map */
+const LON0=-106.75,LAT1=36.65,K=.857*46,PAD=12;
+const px=(lat,lon)=>[PAD+(lon-LON0)*K,PAD+(LAT1-lat)*46];
+const MI=46/69;
+const TX=[[36.5,-103.04],[36.5,-100.0],[34.56,-100.0],[34.38,-99.6],[34.2,-99.2],[34.0,-98.5],[33.85,-97.95],[33.9,-97.2],[33.73,-96.6],[33.85,-96.0],[33.6,-95.3],[33.88,-94.5],[33.55,-94.04],[33.0,-94.04],[31.99,-94.04],[31.5,-93.6],[31.0,-93.55],[30.3,-93.7],[29.7,-93.85],[29.6,-94.3],[29.3,-94.8],[28.9,-95.3],[28.6,-96.0],[28.2,-96.8],[27.8,-97.2],[27.3,-97.4],[26.6,-97.3],[26.0,-97.15],[25.95,-97.4],[26.1,-97.9],[26.4,-98.7],[26.8,-99.2],[27.5,-99.5],[28.2,-100.3],[28.7,-100.5],[29.4,-101.0],[29.77,-101.4],[29.6,-102.0],[29.8,-102.4],[29.2,-102.9],[29.0,-103.2],[29.2,-103.6],[29.6,-104.3],[30.4,-104.7],[30.8,-104.9],[31.1,-105.6],[31.8,-106.5],[32.0,-106.62],[32.0,-103.06]];
+const W=Math.ceil(PAD*2+(-91.9-LON0)*K),H=Math.ceil(PAD*2+(LAT1-25.7)*46);
+const svg=$("tx");svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+let sel=null,pin=null;
+const TOWNS=S.map(([name,lat,lon])=>({name,lat,lon})).filter(t=>resolve(t).kind==="none");
+const cap=t=>t[0].toUpperCase()+t.slice(1);
+function drawMap(){
+  const outline=`M${TX.map(p=>px(...p).map(v=>v.toFixed(1)).join(",")).join("L")}Z`;
+  let h=`<defs><pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#fffdfa"/><line x1="0" y1="0" x2="0" y2="7" stroke="#e4ddd4" stroke-width="1.6"/></pattern>
+    <clipPath id="txclip"><path d="${outline}"/></clipPath></defs><path class="st" d="${outline}"/><g clip-path="url(#txclip)">`;
+  for(const m of covered){const [x,y]=px(m.lat,m.lon);h+=`<circle class="reach" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${((m.r+60)*MI).toFixed(1)}"/>`}
+  h+=`</g>`;
+  {const [zx,zy]=px(30.55,-103.6);h+=`<text class="zone" x="${zx.toFixed(1)}" y="${zy.toFixed(1)}" text-anchor="middle">Rest of Texas</text><text class="tl" x="${zx.toFixed(1)}" y="${(zy+13).toFixed(1)}" text-anchor="middle">ship + install options</text>`}
+  for(const t of TOWNS){const [x,y]=px(t.lat,t.lon);h+=`<circle class="town" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6"/><text class="tl" x="${(t.name==="San Angelo"?x-5:x+5).toFixed(1)}" y="${(y+3.5).toFixed(1)}" text-anchor="${t.name==="San Angelo"?"end":"start"}">${t.name}</text>`}
+  const order=[...M].sort((a,b)=>(a.n>0)-(b.n>0)); // covered on top
+  for(const m of order){
+    const [x,y]=px(m.lat,m.lon),r=m.r*MI,on=sel===m.id;
+    const st=m.n>1?"cov":m.n===1?"lim":"none";
+    const ring=st==="cov"?`fill="rgba(232,99,10,${on?.4:.22})" stroke="#e8630a"`:st==="lim"?`fill="rgba(183,121,31,${on?.3:.12})" stroke="#b7791f" stroke-dasharray="5 4"`:`fill="${on?"#efe9e2":"#fff"}" stroke="#b9b0a6"`;
+    const rr=st==="none"?7:r;
+    const left=m.lab==="l",tx=left?x-rr-5:x+rr+5,anc=left?"end":"start";
+    const subt=m.n>0?`${m.n} installer${m.n>1?"s":""}`:"not covered yet";
+    h+=`<g class="area${on?" on":""}" data-id="${m.id}" tabindex="0" role="button" aria-label="${m.name}: ${subt}">
+      ${st==="none"?`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="16" fill="transparent"/>`:""}<circle class="ring" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${rr.toFixed(1)}" ${ring} stroke-width="${on?3:1.6}"/>
+      ${m.n>0?`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3.5" fill="${st==="cov"?"#c95200":"#b7791f"}"/>`:""}
+      <text x="${tx.toFixed(1)}" y="${(y-2).toFixed(1)}" text-anchor="${anc}">${m.short||m.name}</text>
+      <text class="sub" x="${tx.toFixed(1)}" y="${(y+11).toFixed(1)}" text-anchor="${anc}">${subt}</text></g>`;
+  }
+  if(pin){const [x,y]=px(pin.lat,pin.lon);
+    h+=`<g transform="translate(${x.toFixed(1)},${y.toFixed(1)})"><path d="M0 0 C-6 -8 -9 -12 -9 -16 A9 9 0 1 1 9 -16 C9 -12 6 -8 0 0Z" fill="#262626" stroke="#fff" stroke-width="1.5"/><circle cy="-16" r="3.4" fill="#fff"/></g>`;}
+  svg.innerHTML=h;
+}
+function inTX(x,y){let c=false;const pts=TX.map(p=>px(...p));for(let i=0,j=pts.length-1;i<pts.length;j=i++){const [xi,yi]=pts[i],[xj,yj]=pts[j];if((yi>y)!==(yj>y)&&x<(xj-xi)*(y-yi)/(yj-yi)+xi)c=!c}return c}
+svg.addEventListener("click",e=>{const g=e.target.closest(".area");if(g)return pickArea(g.dataset.id);
+  const pt=new DOMPoint(e.clientX,e.clientY).matrixTransform(svg.getScreenCTM().inverse());
+  if(!inTX(pt.x,pt.y))return;
+  const lat=LAT1-(pt.y-PAD)/46,lon=LON0+(pt.x-PAD)/K;
+  let best=null,bd=40;for(const p of P){const d=miles(lat,lon,p.lat,p.lon);if(d<bd){bd=d;best=p}}
+  q.value="";$("sMsg").hidden=true;
+  show(best||{name:"the pinned spot",lat,lon});});
+svg.addEventListener("keydown",e=>{const g=e.target.closest(".area");if(g&&(e.key==="Enter"||e.key===" ")){e.preventDefault();pickArea(g.dataset.id,true)}});
+
+/* area cards */
+const NY=$("notyet");
+function drawCards(){
+  $("areaGrid").innerHTML=covered.map(m=>{
+    const shown=m.cities.slice(0,6).map(c=>`<a href="${areaHref(m)}"${m.url?'':""}>${c[0]}</a>`).join(", ");
+    const more=m.cities.length>6?` and ${m.cities.length-6} more`:"";
+    return `<article class="area-card${sel===m.id?" on":""}" id="ac-${m.id}">
+      <div class="top"><h3>${m.name}</h3><span class="pill ${m.n>1?"cov":"lim"}">${m.n>1?"Covered":"Limited"}</span></div>
+      <div class="stat"><span><b>${m.n}</b> installer${m.n>1?"s":""}</span><span><b>★ ${m.rating}</b> avg.</span><span><b>${m.jobs}</b> installs</span></div>
+      <p class="cities">${m.sub?m.sub+". ":""}Serves ${shown}${more}.</p>
+      <div>${areaLink(m,`View ${m.short||m.name} installers`).replace('class="btn"','class="btn sm"')}</div></article>`;
+  }).join("");
+  $("areaGrid").appendChild(NY);
+  const gaps=M.filter(m=>m.n===0).map(m=>m.name);
+  const list=gaps.slice(0,-1).join(", ")+" and "+gaps.at(-1);
+  $("noneList").innerHTML=`Installers wanted in ${list}. <a href="#join">Join the network</a>`;
+  $("joinTxt").textContent=`Get install requests from customers buying partitions from us, plus trade pricing on partitions for your own jobs. No listing fee. We're looking for installers in ${list} first.`;
+}
+document.addEventListener("click",e=>{
+  const b=e.target.closest("[data-pick]");if(b){pickArea(b.dataset.pick,true);$("top").scrollIntoView();}
+  const a=e.target.closest("a[href='#areas'][data-area]");if(a){e.preventDefault();pickArea(a.dataset.area);$("ac-"+a.dataset.area)?.scrollIntoView({block:"center"})}
+});
+$("noneReq").addEventListener("click",()=>{$("result").innerHTML="";$("top").scrollIntoView();q.focus({preventScroll:true});$("sMsg").hidden=false;$("sMsg").textContent="Enter your job-site city or ZIP to see install options."});
+
+/* A-Z index */
+function drawAZ(){
+  const g={};P.forEach(p=>{(g[p.name[0]]??=[]).push(p)});
+  $("az").innerHTML=Object.keys(g).sort().map(L=>`<section><h3>${L}</h3><ul>${g[L].map(p=>{
+    const r=resolve(p);const m=r.area;
+    const tag=r.kind==="in"?(m.short||m.name):r.kind==="near"?`via ${r.area.short||r.area.name}`:"install options";
+    if(r.kind==="none")return `<li><span>${p.name}</span><small>${tag}</small></li>`;
+    return `<li><a href="${areaHref(m)}" data-place="${p.name}">${p.name}</a><small>${tag}</small></li>`}).join("")}</ul></section>`).join("");
+}
+$("az").addEventListener("click",e=>{const a=e.target.closest("[data-place]");if(!a)return;
+  const p=P.find(x=>x.name===a.dataset.place);const r=resolve(p);
+  if(r.kind==="in"&&r.area.url)return; // real link to the DFW page
+  e.preventDefault();show(p);$("top").scrollIntoView();});
+
+/* resolve a place to an area */
+function resolve(p){
+  let home=p.area?byId[p.area]:null;
+  if(!home){let best=null,bd=1e9;for(const m of M){const d=miles(p.lat,p.lon,m.lat,m.lon);if(d<=m.r&&d<bd){bd=d;best=m}}home=best}
+  if(home&&home.n>0)return{kind:"in",area:home};
+  let nc=null,nd=1e9;for(const m of covered){const d=miles(p.lat,p.lon,m.lat,m.lon);if(d<nd){nd=d;nc=m}}
+  if(nd<=nc.r+60)return{kind:"near",area:nc,d:nd,home};
+  return{kind:"none",area:nc,d:nd,home};
+}
+function show(p){
+  const r=resolve(p);pin={lat:p.lat,lon:p.lon};$("pinLg").hidden=false;
+  if(r.kind==="in")showIn(r.area,p.name);
+  else if(r.kind==="near"){sel=r.area.id;
+    $("result").innerHTML=`<div class="result lim"><h2>${r.area.name} installers travel to ${p.name}</h2>
+      <p>No installer is based in ${p.name}, but ${r.area.name} installers cover it. It's about ${Math.round(r.d)} mi from the area, roughly ${drive(r.d)} each way, so expect a travel fee on the quote.</p>
+      <div class="row">${areaLink(r.area,`See ${r.area.short||r.area.name} installers`)}</div></div>`;}
+  else showNone(p,r);
+  drawMap();drawCards();
+}
+function showIn(m,place){
+  sel=m.id;const lim=m.n===1;
+  let backup="";
+  if(lim){let nc=null,nd=1e9;for(const o of covered)if(o.n>1){const d=miles(m.lat,m.lon,o.lat,o.lon);if(d<nd){nd=d;nc=o}}
+    backup=` Your request also goes to ${nc.name} installers, about ${Math.round(nd)} mi away, so you get more than one quote.`;}
+  $("result").innerHTML=`<div class="result${lim?" lim":""}"><h2>${place&&place!==m.name?`${cap(place)} is in the ${m.name} area`:`${m.name}`}</h2>
+    <p>${m.n} approved installer${m.n>1?"s":""} · ★ ${m.rating} average · ${m.jobs} installs.${backup}</p>
+    <div class="row">${areaLink(m,`See ${m.short||m.name} installers`)}</div></div>`;
+}
+function showNone(p,r){
+  sel=r?.home?.id||null;
+  const crewFrom=r?.area, dist=r?Math.round(r.d):null;
+  const mins=driveMin(r.d),tier=mins<=180?"near":mins<=360?"mid":"far",crewMin={near:8,mid:20}[tier];
+  const rule=tier==="far"?"It's too far for our approved installers today, so your own or a local contractor installs.":`Approved installers travel here for jobs of ${crewMin} or more stalls.`;
+  const near=` The closest approved installers are in ${crewFrom.name}, about ${drive(r.d)} away. ${rule}`;
+  const st={contractor:null,size:null};
+  const box=document.createElement("div");box.className="result far";
+  box.innerHTML=`<h2>No installer area near ${p.name} yet</h2>
+    <p>We ship partitions there install-ready.${near} Two questions and we'll show what works for your job.</p>
+    <div class="q"><span class="lab" id="qc">Do you have a contractor or maintenance team?</span><div class="seg" role="group" aria-labelledby="qc"><button type="button" data-k="contractor" data-v="yes" aria-pressed="false">Yes</button><button type="button" data-k="contractor" data-v="no" aria-pressed="false">No</button></div></div>
+    <div class="q"><span class="lab" id="qs">How many stalls?</span><div class="seg" role="group" aria-labelledby="qs"><button type="button" data-k="size" data-v="7" aria-pressed="false">1–7</button><button type="button" data-k="size" data-v="19" aria-pressed="false">8–19</button><button type="button" data-k="size" data-v="20" aria-pressed="false">20 or more</button></div></div>
+    <div class="out" id="out" hidden></div>`;
+  $("result").replaceChildren(box);
+  if(tier==="far"){st.size="7";box.querySelectorAll(".q")[1].hidden=true;box.querySelector("p").innerHTML=box.querySelector("p").innerHTML.replace("Two questions","One question")}
+  const from=crewFrom?crewFrom.name:"the nearest area";
+  const DISC="Installers and contractors are independent businesses. You hire, schedule and pay them directly. Next Partitions isn't a party to installation agreements and doesn't perform, supervise or guarantee installation work.";
+  const crew=()=>`<span class="tag v">Approved installers</span><h3>Installers from ${from} travel for larger jobs</h3>
+      <ul><li>The same approved installers as our area pages${dist?`, about ${drive(dist)} away`:""}.</li><li>They quote travel and lodging up front, before you order partitions.</li><li>You hire and pay the installer directly.</li></ul>
+      ${emailForm("Request installer quotes","We'll pass your job to installers from "+from+". They'll reply to {em} within 2 business days.")}<p class="disc">${DISC}</p>`;
+  const own=()=>`<span class="tag">Your contractor installs</span><h3>We ship it install-ready and support your contractor</h3>
+      <ul><li>Pre-drilled panels and a complete hardware kit, checked against your layout.</li><li>Install guide, video and a hardware checklist for your contractor.</li><li>Phone help with product and hardware questions.</li></ul>
+      <div class="row"><a class="btn" href="configurator.html">Price partitions</a></div>`;
+  const sugg=()=>`<span class="tag">Not checked by Next Partitions</span><h3>We'll share local contractor names</h3>
+      <ul><li>Contractors near you who've installed partitions for our customers before.</li><li>We haven't checked their insurance or references. Ask for both before you hire.</li><li>You hire them directly and agree on the price.</li></ul>
+      ${emailForm("Send me contractor names","We'll email {em} up to 3 names within 2 business days.")}<p class="disc">${DISC}</p>`;
+  function emailForm(btn,done){return `<form class="nf" novalidate data-done="${done}"><input type="email" placeholder="Email" aria-label="Email" autocomplete="email"><button class="btn" type="submit">${btn}</button></form><p class="smsg" hidden></p>`}
+  function render(){
+    box.querySelectorAll(".seg button").forEach(b=>b.setAttribute("aria-pressed",String(st[b.dataset.k]===b.dataset.v)));
+    const out=box.querySelector("#out");
+    if(!st.contractor||!st.size){out.hidden=true;return}
+    out.hidden=false;
+    const size=+st.size,useCrew=crewMin&&size>=crewMin;
+    let html=useCrew?crew():st.contractor==="yes"?own():sugg();
+    if(useCrew)html+=`<p class="alt">${st.contractor==="yes"?"Or have your own contractor install it with our guides and phone support.":"Smaller budget? We can also share names of local contractors we haven't checked."}</p>`;
+    else if(tier==="near")html+=`<p class="alt">Prefer an approved installer? Installers from ${from} can still travel for a smaller job, with a higher travel fee per stall. <button type="button" class="link" data-crew>Request installer quotes</button></p>`;
+    else if(tier==="mid")html+=`<p class="alt">Approved installers from ${from} travel this far for jobs of 20 or more stalls.</p>`;
+    else html+=`<p class="alt">This is too far for our approved installers today. We're recruiting installers near you. <a href="#join">Know a good one? Point them here</a></p>`;
+    out.innerHTML=html;
+  }
+  box.addEventListener("click",e=>{const b=e.target.closest(".seg button");if(b){st[b.dataset.k]=b.dataset.v;render()}
+    if(e.target.closest("[data-crew]")){const out=box.querySelector("#out");out.innerHTML=crew()}});
+  box.addEventListener("submit",e=>{e.preventDefault();const f=e.target,em=f.querySelector("input").value.trim(),m=f.nextElementSibling;
+    if(!/^\S+@\S+\.\S+$/.test(em)){m.hidden=false;m.textContent="Enter an email address so we can reply.";return}
+    f.outerHTML=`<p class="ok"><b>Request received.</b> ${f.dataset.done.replace("{em}",em.replace(/</g,"&lt;"))} (Mockup: nothing was sent.)</p>`;m.remove();});
+  drawMap();drawCards();
+}
+function pickArea(id,focusMap){
+  const m=byId[id];pin=null;$("pinLg").hidden=true;$("sMsg").hidden=true;
+  if(m.n>0){showIn(m);drawMap();drawCards()}
+  else{const r=resolve({lat:m.lat,lon:m.lon});showNone({name:m.name},{...r,home:m})}
+  if(focusMap)svg.querySelector(`[data-id="${id}"]`)?.focus();
+}
+
+/* search + suggestions */
+const q=$("q"),ul=$("sugg");let opts=[],act=-1;
+function closeSugg(){ul.hidden=true;q.setAttribute("aria-expanded","false");act=-1}
+function renderSugg(){
+  ul.innerHTML=opts.map((p,i)=>{const r=resolve(p);const t=r.kind==="in"?(r.area.short||r.area.name):r.kind==="near"?`near ${r.area.short||r.area.name}`:"not covered yet";
+    return `<li id="o${i}" role="option" aria-selected="${i===act}" data-i="${i}"><span>${p.name}</span><small>${t}</small></li>`}).join("");
+  ul.hidden=!opts.length;q.setAttribute("aria-expanded",String(!!opts.length));
+  q.setAttribute("aria-activedescendant",act>=0?"o"+act:"");
+}
+q.addEventListener("input",()=>{const v=q.value.trim().toLowerCase();$("sMsg").hidden=true;
+  if(!v||/^\d/.test(v)){opts=[];closeSugg();return}
+  opts=P.filter(p=>p.name.toLowerCase().startsWith(v)).concat(P.filter(p=>!p.name.toLowerCase().startsWith(v)&&p.name.toLowerCase().includes(v))).slice(0,7);
+  act=-1;renderSugg();});
+q.addEventListener("keydown",e=>{
+  if(ul.hidden)return;
+  if(e.key==="ArrowDown"){e.preventDefault();act=(act+1)%opts.length;renderSugg()}
+  else if(e.key==="ArrowUp"){e.preventDefault();act=(act-1+opts.length)%opts.length;renderSugg()}
+  else if(e.key==="Escape")closeSugg();
+  else if(e.key==="Enter"&&act>=0){e.preventDefault();choose(opts[act])}});
+ul.addEventListener("mousedown",e=>{const li=e.target.closest("li");if(li){e.preventDefault();choose(opts[+li.dataset.i])}});
+q.addEventListener("blur",()=>setTimeout(closeSugg,100));
+function choose(p){q.value=p.name;closeSugg();show(p)}
+function msg(t){$("result").innerHTML="";pin=null;$("pinLg").hidden=true;drawMap();$("sMsg").hidden=false;$("sMsg").textContent=t}
+$("sForm").addEventListener("submit",e=>{e.preventDefault();closeSugg();const v=q.value.trim();
+  if(!v)return msg("Enter a Texas city or a 5-digit ZIP.");
+  if(/^\d+$/.test(v)){
+    if(v.length!==5)return msg("ZIP codes have 5 digits.");
+    const z=Z[v.slice(0,3)];
+    if(!z)return msg(`${v} isn't a Texas ZIP. Use "All states" at the bottom of this page to find your state.`);
+    return show({name:`${v} (${z[0]})`,lat:z[1],lon:z[2]});
+  }
+  const lv=v.toLowerCase();const p=P.find(x=>x.name.toLowerCase()===lv)||P.find(x=>x.name.toLowerCase().startsWith(lv));
+  if(!p)return msg(`We couldn't find "${v}". Try a nearby larger city or your 5-digit ZIP.`);
+  q.value=p.name;show(p);
+});
+
+drawMap();drawCards();drawAZ();
+</script>
+
+<script>document.body.insertAdjacentHTML('afterbegin', "<a href=\"../index.html#installers\" style=\"display:block;background:#fe7802;color:#fff;font:600 13px/1.4 Inter,system-ui,sans-serif;padding:8px 16px;text-decoration:none;position:relative;z-index:2000\">← Back to the overview: installer pages and job flow</a>")</script>
+<script>try{history.scrollRestoration='manual'}catch(e){};if(location.hash!=='#installers')addEventListener('load',()=>scrollTo(0,0))</script>

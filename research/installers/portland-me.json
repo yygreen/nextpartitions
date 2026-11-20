@@ -1,0 +1,167 @@
+{
+ "area": "portland-me",
+ "found_count": 4,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/portland-me.json: worked. Only Commercial Installation Corporation (Lewiston) was relevant; the rest were showrooms, bath remodelers, plumbers and big-box stores. Division 10 Specialties, Inc. (Pembroke, MA) site says it serves Massachusetts only and names no partitions, so I excluded it",
+  "cic2010.net (company site): worked",
+  "division10.net (company site): worked, not relevant to Maine",
+  "Bobrick Find a Rep (bobrick.com/find-a-rep): page loads but the rep dropdown is dynamic, so no results came back",
+  "Scranton Products where-to-buy: worked. Lists only a factory product specialist for CT/MA/ME/NH/NY/VT, with no dealers or installers",
+  "Hadrian find-a-rep: 404",
+  "ASI, Bradley, Metpar, General Partitions, Ampco locators: not tried (search and fetch budget spent elsewhere)",
+  "The Blue Book (thebluebook.com) New England toilet partitions category and company profiles: blocked (403)",
+  "BuildingConnected / Procore public profiles: not tried",
+  "bldup.com: blocked (403)",
+  "onepointpartitions.com: blocked (403); it appears to be a national supplier's city landing pages (Lewiston/Bangor/Portland), not a local installer, so I excluded it",
+  "cbxsolutions.com (Exactitude, Bangor door and hardware branch): blocked (403); toilet partitions weren't confirmed in the search snippet",
+  "mapquest.com: empty page",
+  "granitestatespecialties.com: worked",
+  "newtondistributing.com: worked; newtonbsi.com homepage is truncated and /contact returns 404",
+  "metrowalls.com: wrong company (St. Louis retaining walls). The Blue Book's Metro Walls of Manchester, NH could not be verified",
+  "WebSearch: 7 of 7 used. Results were dominated by Portland and Maine public project specs (Division 10 toilet compartment sections) with no installer names; no Yelp or BBB pages for Maine partition installers turned up"
+ ],
+ "candidates": [
+  {
+   "name": "Commercial Installation Corporation",
+   "added_by_checker": false,
+   "base_city": "Lewiston",
+   "state": "ME",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "website": "http://www.cic2010.net/",
+   "phone": "(207) 784-7943",
+   "email": "bill@cic2010.net",
+   "contact_page": "http://www.cic2010.net/",
+   "evidence_urls": [
+    "http://www.cic2010.net/"
+   ],
+   "partition_evidence": "Home page lists toilet partitions and toilet accessories among its services, next to doors, frames, hardware, operable walls and overhead doors. No project list or photos on the site.",
+   "red_flags": [
+    "No project photos or project list",
+    "Only emails shown are named staff addresses (president, project manager); no generic company email",
+    "Supply-and-install arrangement for partitions not stated"
+   ],
+   "reason": "A Lewiston commercial installation company whose own site lists toilet partitions and accessories as services. It sits inside the area, so it is a strong candidate, though the site shows no partition projects.",
+   "license": {
+    "name": "Commercial Installation Corporation",
+    "area": "portland-me",
+    "status": "not_required_online_check",
+    "registry": "None applies: Maine has no state general or specialty contractor license (Maine Attorney General, Home Construction and Repair page); no Portland, ME city contractor registration recorded for this area",
+    "source_url": "https://www.maine.gov/ag/consumer/housing/home_construction.shtml",
+    "note": "Maine does not license general contractors or partition installers at the state level. The Maine AG page says: 'In Maine, general contractors - and trades such as roofing and framing - are not licensed or regulated.' That reading comes from research/state-licensing/states.json (law_verified true, checked 2026-11-19). The Maine PFR professions page returned 403 when fetched on 2026-11-20. The area's local rule is 'none', so there was no registry to search. The company website (http://www.cic2010.net/, read 2026-11-20) says the company is based in Lewiston, ME, was established in 1979, and serves Maine and New England. It lists toilet partitions and accessories, doors, frames, hardware, operable walls and specialty products. The site shows no license numbers. Company phone: (207) 784-7943. No Maine Secretary of State entity search was run."
+   },
+   "score": 70
+  },
+  {
+   "name": "Granite State Specialties",
+   "added_by_checker": false,
+   "base_city": "Raymond",
+   "state": "NH",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "regional",
+   "website": "https://www.granitestatespecialties.com/",
+   "phone": "(866) 966-9113",
+   "email": "info@granitestatespecialties.com",
+   "contact_page": "https://www.granitestatespecialties.com/request-a-quote/",
+   "evidence_urls": [
+    "https://www.granitestatespecialties.com/",
+    "https://www.granitestatespecialties.com/request-a-quote/"
+   ],
+   "partition_evidence": "Toilet partitions are a featured product, the site shows a toilet partition installation (in NYC), and installation is done by OSHA-trained installers. It calls itself New England's leading supplier and installer of Division 10, 11 and 12 specialties.",
+   "red_flags": [
+    "Sells and supplies Division 10 products itself, so there is a buy-around risk",
+    "Maine is not named; it says only New England and the northeast",
+    "Based about 70 miles from Portland"
+   ],
+   "reason": "A regional Division 10 supplier and installer in Raymond, NH (about 70 miles away) that says it serves New England and shows partition installation work. It also sells partitions itself.",
+   "license": {
+    "name": "Granite State Specialties",
+    "area": "portland-me",
+    "status": "not_required_online_check",
+    "registry": "None applies: New Hampshire (base, Raymond) and Maine have no state contractor license for partition installation",
+    "license_type": "",
+    "license_number": "",
+    "source_url": "https://www.maine.gov/ag/consumer/housing/home_construction.shtml",
+    "note": "NH: no state contractor license (OPLC licenses trades like electricians and plumbers only). Maine: no statewide contractor license per the Maine AG page. The task gave no Portland, ME local rule and the repo has no portland-me entry in cities.json, so check whether Portland requires any city registration before work starts. Nothing looked up online."
+   },
+   "score": 63
+  },
+  {
+   "name": "Newton Building Specialties & Installation (Newton BSI)",
+   "added_by_checker": false,
+   "base_city": "Westborough",
+   "state": "MA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Hadrian",
+    "Scranton"
+   ],
+   "within_area": "regional",
+   "website": "https://www.newtonbsi.com/",
+   "phone": "508-439-4941",
+   "contact_page": "",
+   "evidence_urls": [
+    "https://www.newtondistributing.com/toilet-partitions-near-me/",
+    "https://members.agcmass.org/list/member/newton-building-specialties-installation-inc-914"
+   ],
+   "partition_evidence": "The parent company Newton Distributing's page says Newton BSI handles specs, takeoffs and all Division 9 and 10 products and installations, and does the bidding in MA, VT, NH, ME, CT and RI. The AGC Massachusetts listing files it under Div 10 Specialties. No partition project photos were seen.",
+   "red_flags": [
+    "Sister company of Newton Distributing, an online toilet partition seller (Hadrian, Scranton), so the buy-around risk is high",
+    "Based in Westborough, MA (AGC listing), about 120 to 150 miles from Portland, at the edge of the regional limit",
+    "newtonbsi.com showed only a page title, and its /contact page returned a 404"
+   ],
+   "reason": "It says it bids and installs Division 10 work in Maine, but its own site couldn't be read and no partition installs were shown. It is also part of a partition seller, which makes it a direct competitor and a buy-around risk.",
+   "license": {
+    "name": "Newton Building Specialties & Installation (Newton BSI)",
+    "area": "portland-me",
+    "status": "not_required_online_check",
+    "registry": "None applies: Maine has no statewide general or specialty contractor license (Maine Attorney General, Home Construction and Repair page); no Portland, ME city rule is on file in research/local-rules/cities.json and none was given for this area",
+    "source_url": "https://www.maine.gov/ag/consumer/housing/home_construction.shtml",
+    "note": "Checked 2026-11-20. Maine licenses trades such as plumbers and electricians but not partition installers, per research/state-licensing/states.json (law_url read 2026-11-19). The project has no local rule for Portland, ME, so Portland building and code enforcement remains unconfirmed. The business is based in Westborough, MA. Massachusetts home improvement contractor registration covers only owner-occupied homes of 1 to 4 units, and its construction supervisor license applies only to Massachusetts permits, so neither applies to work in Maine. The company homepage (newtonbsi.com) showed only its title, with no license number or service area. No license number was recorded."
+   },
+   "score": 43
+  },
+  {
+   "name": "Door Systems Corp.",
+   "added_by_checker": false,
+   "base_city": "Lewiston",
+   "state": "ME",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://thebluebook.com/iProView/1074024/door-systems-corp/material-suppliers"
+   ],
+   "partition_evidence": "Only a search snippet of its Blue Book profile, listed under material suppliers, which named overhead doors, rolling steel doors and toilet and cubicle partitions and said it serves Maine and Vermont. The profile page returned 403 and could not be read directly.",
+   "red_flags": [
+    "No company website found",
+    "Blue Book profile could not be opened (403), so the details are unverified",
+    "Listed as a material supplier, so it may supply rather than install"
+   ],
+   "reason": "A Lewiston business that a directory snippet lists for toilet partitions, but no own website or install evidence could be read. It needs a manual check.",
+   "license": {
+    "name": "Door Systems Corp.",
+    "area": "portland-me",
+    "status": "not_required_online_check",
+    "registry": "None applies: Maine has no state general or specialty contractor license (Maine Attorney General, Home Construction and Repair page); no Portland, ME city contractor registration recorded for this area",
+    "source_url": "https://thebluebook.com/iProView/1074024/door-systems-corp/material-suppliers",
+    "note": "No state or city license applies to this work in Maine or Portland, ME. Source: https://www.maine.gov/ag/consumer/housing/home_construction.shtml. The source_url is a Blue Book directory listing, not an official registry, and it was seen only as a web search summary, not opened directly. The summary gives Door Systems Corp. in Lewiston, ME with 5-9 employees, serving Maine and Vermont. Its lines include overhead and rolling steel doors and toilet and cubicle partitions. No company website was found, and no phone or license number was read. No Maine Secretary of State entity search was run."
+   },
+   "score": 30
+  }
+ ]
+}

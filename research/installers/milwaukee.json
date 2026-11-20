@@ -1,0 +1,350 @@
+{
+ "area": "milwaukee",
+ "found_count": 11,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/milwaukee.json: read. Only Best Specialties and Solid Partitions were plausible. Solid Partitions was skipped as a manufacturer, and the web entries are unresolvable google.com/goto links.",
+  "Earlier Milwaukee, Madison and Chicago results in research/installers/*.json were reused as leads, and each lead was re-read on its own site.",
+  "Scranton Products where-to-buy: worked, but lists only a regional rep for WI and no dealers or installers.",
+  "Bobrick, Hadrian, Metpar, General Partitions, Bradley, ASI and Ampco locators: not retried this pass (earlier pass: JavaScript-only, 403 or 404).",
+  "UW-Madison purchasing contract wp5737: worked (LaForce, Scranton, installed).",
+  "The Blue Book iProView pages (802033, 393434): 403 blocked.",
+  "BuildingConnected / Procore: no public profiles found through search, and sign-in is required, so skipped.",
+  "downtobid.com Milwaukee carpentry directory: 429 rate-limited through both WebFetch and curl. Search snippets named 'Tekton Construction' (lockers, benches, bathroom partitions), but its city and website couldn't be read, so it's left out. Worth a recheck.",
+  "WebSearch: 8 of 8 used. Results were dominated by One Point Partitions (national online seller, skipped). Other leads were Prestige Distribution (IL), H.J. Martin (Green Bay), Martin Bros (California, skipped) and Newton Distributing (Natick MA, national distributor, skipped).",
+  "BBB/Yelp via search: no Milwaukee partition listings came up. Yelp wasn't reached.",
+  "Company sites checked and skipped: ISI Installation Specialists (Chicago furniture installer, no WI mention), Partition Pros (Bartlett IL, no WI mention), Commercial Specialties (Rolling Meadows IL, online store, no install or WI mention).",
+  "Seed file research/installers/raw/seeds/milwaukee.json: worked. Only Solid Partitions and Best Specialties were plausible. The rest were remodelers, plumbers and stores, and the web results were unresolvable google.com/goto links.",
+  "Scranton Products where-to-buy (scrantonproducts.com/where-to-buy/): worked, but it lists only a regional sales rep for WI (no local dealer or installer).",
+  "Bobrick find-a-rep: page loads, but results are filled in by JavaScript. No WI reps were readable.",
+  "Hadrian sales-rep-locator: template placeholders only through WebFetch; curl got a 403. Blocked.",
+  "Metpar /representatives and General Partitions /find-a-rep: 404.",
+  "Bradley find-a-rep: no content returned.",
+  "ASI, Ampco/Ammco locators: not reached because of time and URL uncertainty.",
+  "The Blue Book (thebluebook.com iProView and search): 403 blocked.",
+  "BuildingConnected / Procore: not tried (require sign-in).",
+  "WebSearch: 8 of 8 used. Results were dominated by One Point Partitions (a national online seller, skipped) and generic remodelers. It surfaced the UW-Madison partitions contract (LaForce) and H.J. Martin and Son (Green Bay, Division 10, outside 30 miles, skipped).",
+  "UW-Madison purchasing contract wp5737: worked (LaForce, Scranton, installed).",
+  "Yellow Pages (milwaukee-wi/partitions and toilet partitions search): worked, giving Syncro Inc, Best Specialties, Solid Partitions, and JWC Building Specialties (Hartland: operable walls and fire curtains, no partitions, skipped).",
+  "BBB Wauwatosa bathroom-accessories category: worked, but no partition installers (Bradley Corp is a manufacturer, skipped).",
+  "Yelp search: 403 blocked.",
+  "Company sites checked and rejected: GSI General and Reliable Team Builders (general contractors, no partition mention), Martin Bros (California), Walsh Door (no partitions)."
+ ],
+ "candidates": [
+  {
+   "name": "Block Iron & Supply Company (Milwaukee branch)",
+   "base_city": "New Berlin",
+   "state": "WI",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Scranton Products",
+    "Gamco",
+    "Claridge",
+    "Koala Kare",
+    "VT Industries"
+   ],
+   "phone": "(262) 439-2200",
+   "email": "quotesmilwaukee@blockiron.com",
+   "contact_page": "https://www.blockiron.com/contact",
+   "website": "https://www.blockiron.com/",
+   "evidence_urls": [
+    "https://www.blockiron.com/",
+    "https://www.blockiron.com/what-we-do",
+    "https://www.blockiron.com/contact"
+   ],
+   "partition_evidence": "Its Division 10 section lists toilet partitions and toilet accessories and says 'we also provide delivery and installation services for our customers', on projects up to large schools and hospitals.",
+   "red_flags": [
+    "Division 10 distributor that sells partitions itself (buy-around risk)",
+    "Brand logos appear on the homepage but aren't tied to partitions",
+    "The page lists a Division 10 email (Div10@blockiron.com) whose link points to a personal address, so I listed the Milwaukee counter-sales email instead"
+   ],
+   "reason": "Commercial Division 8/10 distributor with a Milwaukee-area branch that supplies and installs toilet partitions. Strong on installing, but it is also a supplier competing with us.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Block Iron & Supply Company (Milwaukee branch)",
+    "area": "milwaukee",
+    "status": "not_online",
+    "registry": "City of Milwaukee DNS Licensed Contractors list; Wisconsin DSPS license lookup",
+    "source_url": "https://city.milwaukee.gov/DNS/permits/LicensedContractors",
+    "note": "Based in New Berlin. No state license applies to commercial partition installation. The city registry blocked automated access (403), and the DFI entity search also returned 403. No record was checked."
+   },
+   "score": 70
+  },
+  {
+   "name": "Marz and Associates",
+   "base_city": "Shawano",
+   "state": "WI",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "715-787-4540",
+   "email": "info@marz.build",
+   "contact_page": "https://marz.build/quote-request/",
+   "website": "https://marz.build",
+   "evidence_urls": [
+    "https://marz.build"
+   ],
+   "partition_evidence": "Calls itself a 'Division 10 specialty contractor serving all of Wisconsin' that sells and installs bathroom partitions. Its project photos show a commercial men's restroom with partitions and a school restroom with privacy screens.",
+   "red_flags": [
+    "Based about 120 miles from Milwaukee, at the edge of the regional range",
+    "Sells partitions as well as installing them (buy-around risk)",
+    "No partition brand named"
+   ],
+   "reason": "Commercial Division 10 contractor that installs toilet partitions and says it serves all of Wisconsin, but it's based far away in Shawano.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Marz and Associates",
+    "area": "milwaukee",
+    "status": "not_online",
+    "registry": "City of Milwaukee DNS Licensed Contractors list (https://city.milwaukee.gov/DNS/permits/LicensedContractors); Wisconsin DSPS license lookup",
+    "source_url": "https://city.milwaukee.gov/DNS/permits/LicensedContractors",
+    "note": "Based in Shawano. Wisconsin has no state license for commercial partition installation (DSPS credentials cover 1-2 family dwelling contractors and trades). The Milwaukee DNS licensed-contractors page returned 403 and the city rule is a low-confidence phone-call item, so no record was checked. Search results suggest Milwaukee has no general contractor license for commercial interior work, but no official page confirmed it. Confirm with DNS (414-286-8210 per search snippet, not read on an official page)."
+   },
+   "score": 63
+  },
+  {
+   "name": "Prestige Distribution, Inc.",
+   "base_city": "Northbrook",
+   "state": "IL",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Hadrian",
+    "Bradley",
+    "Thrislington",
+    "ASI",
+    "Bobrick",
+    "JL Industries",
+    "Ketcham",
+    "Koala"
+   ],
+   "phone": "(847) 480-7667",
+   "email": "web@prestigedistribution.com",
+   "contact_page": "https://prestigedistribution.com/pages/contact-us",
+   "website": "https://prestigedistribution.com/",
+   "evidence_urls": [
+    "https://prestigedistribution.com/"
+   ],
+   "partition_evidence": "Sells partitions in many materials and offers field measuring and installation through a contractor network it says has installed 'in every state'.",
+   "red_flags": [
+    "National partition distributor competing with Next Partitions (strong buy-around risk)",
+    "Installs through a contractor network, not its own crews",
+    "Doesn't name Wisconsin or Milwaukee"
+   ],
+   "reason": "It installs partitions and is about 70 miles away, but it is a competing distributor that subcontracts installs and doesn't say it serves Wisconsin.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Prestige Distribution, Inc.",
+    "area": "milwaukee",
+    "status": "not_required_online_check",
+    "registry": "Wisconsin DSPS (state) and City of Milwaukee Department of Neighborhood Services (local); no online registry checked",
+    "source_url": "https://dsps.wi.gov/Pages/Professions/DwellingContractorQualifier/Default.aspx",
+    "note": "Wisconsin has no state contractor license for commercial work. The DSPS Dwelling Contractor credential covers only one- and two-family dwellings (from the repo's research/state-licensing/states.json). Per the repo's research/local-rules/cities.json, Milwaukee licenses electrical, plumbing and home improvement contractors but has no general contractor license for commercial interior work. That rule is low-confidence because the city site could not be opened, so confirm by phone with Milwaukee DNS. The firm is based in Northbrook, IL (https://prestigedistribution.com/), and the site mentions no Wisconsin license."
+   },
+   "score": 63
+  },
+  {
+   "name": "LaForce (Milwaukee office)",
+   "base_city": "Menomonee Falls",
+   "state": "WI",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Allegion",
+    "ASSA ABLOY",
+    "Hager Companies",
+    "Dormakaba"
+   ],
+   "website": "https://laforceinc.com/",
+   "phone": "(262) 252-5150",
+   "contact_page": "https://laforceinc.com/contact/",
+   "evidence_urls": [
+    "https://laforceinc.com/",
+    "https://laforceinc.com/what-we-do/building-specialties/",
+    "https://laforceinc.com/what-we-do/pre-install-install/",
+    "https://laforceinc.com/laforce-locations/"
+   ],
+   "partition_evidence": "The Building Specialties page lists toilet partitions in several materials, shower and dressing compartments, and partition hardware for all manufacturers. The install page covers commercial door and frame installation only. No page says LaForce installs partitions.",
+   "red_flags": [
+    "Supplies toilet partitions itself (buy-around risk)",
+    "Large commercial door and hardware distributor; partition installation not shown",
+    "Brands listed are door-hardware partners, not partition makers"
+   ],
+   "reason": "LaForce is a commercial Division 10 and door supplier with a Milwaukee office in Menomonee Falls and its own install crews for doors and frames. It sells toilet partitions, but no page shows it installing them, so this is unproven. It is also a competing partitions seller.",
+   "added_by_checker": false,
+   "license": {
+    "name": "LaForce (Milwaukee office)",
+    "area": "milwaukee",
+    "status": "not_online",
+    "registry": "City of Milwaukee DNS Licensed Contractors list; Wisconsin DSPS license lookup",
+    "source_url": "https://city.milwaukee.gov/DNS/permits/LicensedContractors",
+    "note": "Based in Menomonee Falls. No state license applies to commercial partition installation. The city registry blocked automated access (403). No record was checked."
+   },
+   "score": 30
+  },
+  {
+   "name": "D & L Specialties, Inc.",
+   "base_city": "Mequon",
+   "state": "WI",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(262) 241-7927",
+   "email": "info@dandlspecialties.com",
+   "contact_page": "https://www.dandlspecialties.com",
+   "website": "https://www.dandlspecialties.com",
+   "evidence_urls": [
+    "https://www.dandlspecialties.com",
+    "https://www.dandlspecialties.com/washrooms.htm"
+   ],
+   "partition_evidence": "Its washrooms page lists bathroom partitions as a product. Installation isn't mentioned.",
+   "red_flags": [
+    "Site footer says copyright 2003, so the business may be out of date or inactive",
+    "No installation mentioned",
+    "Supplies partitions (buy-around risk)"
+   ],
+   "reason": "Nearby specialties supplier that lists bathroom partitions. Its outdated site shows no installation work.",
+   "added_by_checker": false,
+   "license": {
+    "name": "D & L Specialties, Inc.",
+    "area": "milwaukee",
+    "status": "not_online",
+    "registry": "City of Milwaukee DNS Licensed Contractors list; Wisconsin DSPS license lookup",
+    "source_url": "https://city.milwaukee.gov/DNS/permits/LicensedContractors",
+    "note": "Based in Mequon. No state license applies to commercial partition installation. The city registry blocked automated access (403). No record was checked."
+   },
+   "score": 10
+  },
+  {
+   "name": "Solid Partitions",
+   "base_city": "Pewaukee",
+   "state": "WI",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Solid Partitions (own products)"
+   ],
+   "website": "https://solidpartitions.com/",
+   "phone": "(414) 763-0029",
+   "email": "info@solidpartitions.com",
+   "contact_page": "https://solidpartitions.com/contact/",
+   "evidence_urls": [
+    "https://solidpartitions.com/",
+    "https://solidpartitions.com/about/",
+    "https://solidpartitions.com/contact/",
+    "https://solidpartitions.com/featured-projects/"
+   ],
+   "partition_evidence": "It manufactures its own partitions with custom CNC work, in headrail-braced, floor-to-ceiling and ceiling-hung styles, and supplies them to architects and designers. Its only featured project (Lake Country DockHounds) says it 'manufactured' the partitions, not that it installed them. The site offers installation instructions only.",
+   "red_flags": [
+    "Manufactures and sells its own partitions (direct competitor and buy-around risk)",
+    "No installation service shown"
+   ],
+   "reason": "Solid Partitions is a local partition manufacturer and supplier, not an installer. Its site shows no installation service, and it competes directly with Next Partitions on product.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Best Specialties, Inc.",
+   "base_city": "Milwaukee",
+   "state": "WI",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "mostly",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.bestspec.com/",
+   "phone": "414-256-1800",
+   "evidence_urls": [
+    "https://www.bestspec.com/",
+    "https://www.bestspec.com/About/Default.aspx"
+   ],
+   "partition_evidence": "It supplies Division 10 products: toilet partition hardware, washroom accessories, fire extinguishers and cabinets, and lockers. It offers a downloadable partition installation instructions sheet. No installation service is stated.",
+   "red_flags": [
+    "Supplier of Division 10 products and partition hardware; no installation service shown",
+    "No company email on the site"
+   ],
+   "reason": "Best Specialties is a Milwaukee supplier of Division 10 specialties and partition hardware. Neither page read says it installs partitions or accessories, so there is no evidence it does installation work.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Best Specialties, Inc.",
+    "area": "milwaukee",
+    "status": "not_online",
+    "registry": "City of Milwaukee DNS Licensed Contractors list; Wisconsin DSPS license lookup",
+    "source_url": "https://city.milwaukee.gov/DNS/permits/LicensedContractors",
+    "note": "Based in Milwaukee. No state license applies to commercial partition installation. The city registry and the DFI entity search (apps.dfi.wi.gov) both returned 403. No record was checked."
+   },
+   "score": 25
+  },
+  {
+   "name": "H.J. Martin and Son",
+   "base_city": "Green Bay",
+   "state": "WI",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "phone": "920-494-3461",
+   "email": "",
+   "contact_page": "https://www.hjmartin.com/contact-us/",
+   "website": "https://www.hjmartin.com/",
+   "evidence_urls": [
+    "https://www.hjmartin.com/",
+    "https://www.hjmartin.com/commercial/"
+   ],
+   "partition_evidence": "Its commercial page lists 'Doors, Hardware & Specialties' (image alt text 'Doors & Division 10') and operable partitions, but not toilet partitions.",
+   "red_flags": [
+    "Offices in Green Bay, Neenah and West Salem only; no Milwaukee service stated",
+    "No toilet partition evidence"
+   ],
+   "reason": "About 110 miles away with no stated Milwaukee service, and nothing shows it installs toilet partitions.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Syncro Inc",
+   "base_city": "Milwaukee",
+   "state": "WI",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "No website or listing found. Three searches turned up no Milwaukee or Wisconsin business by this name in partitions or Division 10.",
+   "red_flags": [
+    "Could not confirm the business exists",
+    "No website given"
+   ],
+   "reason": "Three searches found no business named Syncro Inc in Milwaukee or Wisconsin connected to partitions or Division 10 work, so it can't be verified.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

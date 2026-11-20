@@ -80,7 +80,7 @@ body{background:var(--bg)}
 .stepbar small{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#bbb;white-space:nowrap}
 .stepbar .cur small{color:#fff}
 .stepbar .new .n{position:relative}
-.stepbar .new .n::after{content:"NEW";position:absolute;top:-6px;left:28px;font-size:9px;font-weight:800;letter-spacing:.04em;background:#fff;color:var(--accent-strong);padding:1px 4px}
+.stepbar .new .n::after{content:"LATER";position:absolute;top:-6px;left:28px;font-size:9px;font-weight:800;letter-spacing:.04em;background:#fff;color:var(--accent-strong);padding:1px 4px}
 @media (max-width:760px){.stepbar ol{justify-content:flex-start}}
 
 .cfgwrap{padding-block:20px 64px}
@@ -177,12 +177,12 @@ body{background:var(--bg)}
 .ok ol{margin:8px 0 0;padding-left:20px;color:var(--muted)}
 </style>
 
-<div class="mocknote"><b>Mockup:</b> a new optional "Installation" step in the live configurator, between Urinal Screens and Request Quote. Job site defaults to Dallas 75201; links from DFW installer profiles carry their choices over. Prices and installers are samples. Nothing is sent.</div>
+<div class="mocknote"><b>Later phase, reserved:</b> an optional "Installation" step for the configurator, between Urinal Screens and Request Quote. It's switched on only once the directory has become an integral part of the site's success: an area with 3+ listed installers pricing on time and first jobs installed well, and then only for ZIP codes those installers cover. Until then the configurator stays as it is, and customers reach installation through the directory pages. <span style="opacity:.8">Mockup: job site defaults to Dallas 75201; prices and installers are samples; nothing is sent.</span></div>
 
 <div class="topbar"><div class="wrap"><div style="display:flex;gap:20px;flex-wrap:wrap"><span>sales@nextpartitions.com</span><span>1-833-997-7489</span></div><div class="tagline">Authorized Distributor — All Major Brands</div></div></div>
 <nav class="nav" aria-label="Main" style="position:static"><div class="wrap">
   <a class="brand" href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener"><img src="img/logo.png" alt=""><span><b>Next Partitions</b><small>Commercial Partitions</small></span></a>
-  <div class="menu"><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Partitions ▾</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Mounting Styles ▾</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Hardware &amp; Parts ▾</a><a href="https://claude.ai/artifact/GTV4xGPD5C53v3ERHQyVAW" target="_blank" rel="noopener">Installers</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Resources ▾</a></div>
+  <div class="menu"><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Partitions ▾</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Mounting Styles ▾</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Hardware &amp; Parts ▾</a><a href="https://claude.ai/artifact/EAVGm8PLp8dyhvnoFTei68" target="_blank" rel="noopener">Resources ▾</a></div>
   <a class="btn" href="#top" style="font-size:14px;min-height:36px;padding:8px 14px">Get a Quote</a>
 </div></nav>
 
@@ -195,12 +195,12 @@ body{background:var(--bg)}
     <!-- STEP 7: INSTALLATION -->
     <section id="s7">
       <h1>Add Installation</h1>
-      <p class="sub">Optional. Get installation quoted by approved installers near your job site, or skip this step.</p>
+      <p class="sub">Optional. Get installation quoted by verified installers near your job site, or skip this step.</p>
       <div class="box">
         <label class="lab" for="zip">Job-site ZIP code</label>
         <input type="text" id="zip" inputmode="numeric" maxlength="5" value="75201" autocomplete="postal-code">
         <div class="opts" role="radiogroup" aria-label="Installation">
-          <label class="opt"><input type="radio" name="inst" value="yes" checked><span><b>Yes, quote installation</b><span>Approved local installers price your exact layout.</span></span></label>
+          <label class="opt"><input type="radio" name="inst" value="yes" checked><span><b>Yes, quote installation</b><span>Verified local installers price your exact layout.</span></span></label>
           <label class="opt"><input type="radio" name="inst" value="own"><span><b>I have my own installer</b><span>We'll include the install packet with your shop drawings.</span></span></label>
           <label class="opt"><input type="radio" name="inst" value="no"><span><b>No installation</b><span>Partitions only. Install instructions are always included.</span></span></label>
         </div>
@@ -318,11 +318,11 @@ function renderEst(){
   const box=$("estbox"),z=$("zip").value.trim(),{a,list}=pool();
   if(inst!=="yes"){box.hidden=true;return;} box.hidden=false;
   if(!/^\d{5}$/.test(z)){box.innerHTML='<span class="k">Installation estimate</span><p>Enter your job-site ZIP to see an estimate.</p>';return;}
-  if(!a){box.innerHTML=`<span class="k">Installation estimate</span><b class="big" style="font-size:20px">No approved installers near ${esc(z)} yet</b><p>Keep this selected and we'll look for an installer and include what we find with your quote. Install instructions are always included.</p>`;return;}
+  if(!a){box.innerHTML=`<span class="k">Installation estimate</span><b class="big" style="font-size:20px">No verified installers near ${esc(z)} yet</b><p>Keep this selected and we'll look for an installer and include what we find with your quote. Install instructions are always included.</p>`;return;}
   const r=instRange(),others=a.inst.filter(i=>i!==from).length;
-  box.innerHTML=`<span class="k">Installation estimate · ${list.length} approved installer${list.length>1?"s":""} near ${esc(z)}</span><b class="big">${rng(r[0],r[1])}</b>
+  box.innerHTML=`<span class="k">Installation estimate · ${list.length} verified installer${list.length>1?"s":""} near ${esc(z)}</span><b class="big">${rng(r[0],r[1])}</b>
     <p>For ${stalls} ${MAT[mat].short} stalls, ${MOUNT[mount].name.toLowerCase()}, from the installers' own rates. They confirm after seeing your layout and invoice you directly.</p>
-    ${from&&a.inst.includes(from)?`<div class="from">✓ <span><b>${from.name}</b> is included, from their profile.</span></div><label class="more"><input type="checkbox" id="alsoChk" ${alsoOthers?"checked":""}> Also ask ${Math.min(2,others)} more approved installers to quote</label>`:""}`;
+    ${from&&a.inst.includes(from)?`<div class="from">✓ <span><b>${from.name}</b> is included, from their profile.</span></div><label class="more"><input type="checkbox" id="alsoChk" ${alsoOthers?"checked":""}> Also ask ${Math.min(2,others)} more verified installers to quote</label>`:""}`;
   const c=$("alsoChk");if(c)c.addEventListener("change",()=>{alsoOthers=c.checked;renderAll();});
 }
 function renderS8(){
@@ -336,7 +336,7 @@ function renderS8(){
   if(r){$("liveInstAmt").textContent=rng(r[0],r[1]);$("liveAmt").textContent=rng(p+r[0],p+r[1]);$("liveNote").textContent="Partitions at list pricing. Installation is an estimate from local installers' rates; they confirm it and invoice you directly. Freight and custom options are quoted separately.";}
   else{$("liveAmt").textContent=money(p);$("liveNote").textContent="Estimate based on list pricing for the options selected. Hardware, freight, and custom options are quoted separately.";}
   const L=[["All hardware included"],["Installation instructions included"],["Ships in 48 hours (in-stock items)"]];
-  if(inst==="yes")L.push([pool().a?`Installation quotes from ${pool().list.length} approved installer${pool().list.length>1?"s":""} near ${$("zip").value}`:"We'll look for an installer near your job site","new"]);
+  if(inst==="yes")L.push([pool().a?`Installation quotes from ${pool().list.length} verified installer${pool().list.length>1?"s":""} near ${$("zip").value}`:"We'll look for an installer near your job site","new"]);
   if(inst==="own")L.push(["Install packet for your installer (layout, hardware list, delivery date)","new"]);
   $("inclList").innerHTML=L.map(l=>`<li class="${l[1]||""}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg>${l[0]}</li>`).join("");
 }
@@ -352,7 +352,7 @@ $("send").addEventListener("click",()=>{
   const {a,list}=pool();
   go(9);
   $("okBox").innerHTML=`<h2>Quote requested</h2><p>Thanks, ${esc(nm.split(" ")[0])}. Shop drawings and your partitions quote arrive at <b>${esc(em)}</b> within 2 business days.</p>
-   ${inst==="yes"&&a?`<p><b>Installation:</b></p><ol><li>${list.length} approved installer${list.length>1?"s":""} near ${esc($("zip").value)} get your layout and ZIP now, not your contact details.</li><li>They confirm their price. You get their names, profiles and confirmed quotes with your shop drawings (<a class="link" href="https://claude.ai/artifact/Hp9kJEgkaRXCtjoxWMkXPx#acme" target="_blank" rel="noopener">example profile</a>).</li><li>You pick one. We share your details with that installer only, and they invoice you directly.</li></ol>`:inst==="own"?"<p>Your quote includes an install packet to forward to your installer.</p>":""}
+   ${inst==="yes"&&a?`<p><b>Installation:</b></p><ol><li>${list.length} verified installer${list.length>1?"s":""} near ${esc($("zip").value)} get your layout and ZIP now, not your contact details.</li><li>They confirm their price. You get their names, profiles and confirmed quotes with your shop drawings (<a class="link" href="https://claude.ai/artifact/Hp9kJEgkaRXCtjoxWMkXPx#acme" target="_blank" rel="noopener">example profile</a>).</li><li>You pick one. We share your details with that installer only, and they invoice you directly.</li></ol>`:inst==="own"?"<p>Your quote includes an install packet to forward to your installer.</p>":""}
    <p style="font-size:13px;margin-top:12px">Mockup: nothing was sent.</p>`;
 });
 renderAll();

@@ -1,0 +1,256 @@
+{
+ "area": "fayetteville-nc",
+ "found_count": 7,
+ "sources_tried": [
+  "Seed file fayetteville-nc.json: worked. About 44 Maps entries, nearly all plumbers, remodelers, flooring and big-box stores. Plausible ones were CAM Contractors, Global Commercial Installation and Division 10 (Raleigh). The web results were mostly Google redirect links to remodelers. Partition Pros (thepartitionpros.com) was opened: its own crew covers only Dallas-Fort Worth, it has no NC base and its phone is a NY number, so it was skipped as a national seller.",
+  "Existing NC area files (raleigh.json, durham.json, charlotte.json, greensboro.json): reused for regional firms within 120 miles.",
+  "Bobrick find-a-rep: the page loaded, but the dropdown didn't render, so no NC rep came back.",
+  "Scranton Products find-a-product-specialist: 404 this time. The Raleigh research found Southern States Architectural Sales covering NC, not local.",
+  "ASI, Hadrian, General Partitions, Metpar, Bradley, Ampco locators: not retried. The Raleigh and Durham research got 404s or no content from them.",
+  "div10csi.com (Division 10, Raleigh): 503.",
+  "The Blue Book (thebluebook.com iProView 970362, Federal Doors): 403. Details come from the search-result summary only.",
+  "BuildingConnected / Procore: not reached.",
+  "BBB Garner commercial-doors category: worked. It shows U.S. Doorways; Global Commercial Installation isn't on the first page.",
+  "NC Secretary of State business profile: 403.",
+  "WebSearch: used 8 of 8. The partition queries for Fayetteville, Lumberton, Spring Lake, Wilmington, Pinehurst, Sanford and Goldsboro returned mostly One Point Partitions (an online seller with delivery terminals in Aberdeen and Leland; it doesn't install, skipped), Newton Distributing and Prestige Distribution (national, skipped), and Angi and Thumbtack remodelers. The 'Division 10 contractor Fayetteville' query found Federal Doors (Spring Lake) and Macade (Clayton). Macade wasn't added: it has no website and its Blue Book page is blocked. 'Carolina Specialties' found nothing.",
+  "Yelp: not tried (blocked in earlier areas)."
+ ],
+ "candidates": [
+  {
+   "name": "Commercial Installations Inc",
+   "base_city": "Raleigh",
+   "state": "NC",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "phone": "(919) 365-5666",
+   "email": "parker@commercialinstall.com",
+   "contact_page": "https://www.commercialinstallations.com/contact",
+   "website": "https://www.commercialinstallations.com/",
+   "evidence_urls": [
+    "https://www.commercialinstallations.com/",
+    "https://www.commercialinstallations.com/contact"
+   ],
+   "partition_evidence": "Homepage: installs Division 2-13 scopes '...including doors and hardware, toilet partitions, specialty equipment, furnishings, finishes, and more' for general contractors and property managers.",
+   "red_flags": [
+    "Stated service area is the Triangle region; it doesn't say it serves Fayetteville (about 60 miles away)",
+    "The contact email appears to be a named person's address (parker@), not a generic company inbox"
+   ],
+   "reason": "Confirms commercial toilet partition installation, but it's based in Raleigh and names only the Triangle as its service area. Ask whether it travels to Fayetteville.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Commercial Installations Inc",
+    "area": "fayetteville-nc",
+    "status": "not_found",
+    "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Checked 2026-11-20. Searches for 'Commercial Installations' and 'Commercial Install' found only 'Commercial Installation & Construction Company' (L.70351, License Not Active), which is not shown to be this Raleigh company. No active license was found under this name. A license is not required below the NC threshold."
+   },
+   "score": 60
+  },
+  {
+   "name": "Precision Walls, Inc.",
+   "base_city": "Cary",
+   "state": "NC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "(919) 832-0380",
+   "contact_page": "https://precisionwalls.com/contact-us/",
+   "website": "https://www.precisionwalls.com/",
+   "evidence_urls": [
+    "https://www.precisionwalls.com/"
+   ],
+   "partition_evidence": "Its services include 'Division 10 & 12 Specialties'. Toilet partitions are not named on the homepage.",
+   "red_flags": [
+    "A large drywall and wall-systems contractor that may only take Division 10 work as part of its own GC packages",
+    "No Fayetteville office (offices in Raleigh, Wilmington, Charlotte and elsewhere)"
+   ],
+   "reason": "A large commercial specialty contractor with offices across NC and Division 10 specialties among its services. Toilet partition installation isn't shown, and it may not take small standalone jobs.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Precision Walls, Inc.",
+    "area": "fayetteville-nc",
+    "status": "found_active",
+    "license_number": "L.12009",
+    "license_type": "NC General Contractor License, Unlimited limitation, Building classification",
+    "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+    "source_url": "https://portal.nclbgc.org/Public/_ShowAccountDetails/?key=GUhzdDMIzyVMgmgeZHBhGg%3d%3d&Source=Search",
+    "note": "Checked 2026-11-20. Board record for Precision Walls, Inc. in Cary, NC: license L.12009, status Active, limitation Unlimited, classification Building. First issued 07/23/1980; expires 12/31/2026. The record lists phone 919-459-2900, and that is the company line on the board record."
+   },
+   "score": 58
+  },
+  {
+   "name": "Federal Doors",
+   "base_city": "Spring Lake",
+   "state": "NC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "910-497-0874",
+   "email": "info@federaldoors.com",
+   "contact_page": "https://federaldoors.com/contact",
+   "website": "https://federaldoors.com/",
+   "evidence_urls": [
+    "https://federaldoors.com/",
+    "https://camcontractors.net/"
+   ],
+   "partition_evidence": "Homepage lists 'restroom partitions, accessories, lockers, and other Division 10 products' under product supply, plus a separate installation service covering Fayetteville, Fort Liberty and Camp Lejeune. It doesn't say the installation covers partitions.",
+   "red_flags": [
+    "Supplies restroom partitions itself (nationwide product supply), so there is a buy-around risk",
+    "Installation of partitions specifically is not confirmed",
+    "Linked from CAM Contractors' site, so the two may be related businesses"
+   ],
+   "reason": "A local Spring Lake commercial door and Division 10 supplier that installs in the Fayetteville area. Partition installation isn't shown outright, and it sells partitions itself.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Federal Doors",
+    "area": "fayetteville-nc",
+    "status": "not_found",
+    "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Checked 2026-11-20. Searches for 'Federal Doors' and 'Federal' found no NC GC license. The company site (https://federaldoors.com/) gives Spring Lake, NC and lists restroom partitions among its Division 10 products, plus installation services. It gives a CAGE number and a UEI, which are federal registrations, not licenses, and no legal entity name. No license is needed under the NC threshold, which is the rule for Fayetteville; there is no local rule."
+   },
+   "score": 50
+  },
+  {
+   "name": "CAM Contractors, Inc.",
+   "base_city": "Fort Bragg (Fort Liberty)",
+   "state": "NC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(910) 475-0012",
+   "contact_page": "https://camcontractors.net/contact",
+   "website": "https://camcontractors.net/",
+   "evidence_urls": [
+    "https://camcontractors.net/"
+   ],
+   "partition_evidence": "Lists Division 10 construction ('installing lockers, wall guards, and more') along with Division 9 and interior demolition for commercial, military and medical buildings. Toilet partitions are not named.",
+   "red_flags": [
+    "No toilet partitions named; the photo galleries have no captions",
+    "Navigation links to Federal Doors, so the two may be related businesses"
+   ],
+   "reason": "A commercial and military renovation contractor at Fort Bragg that installs Division 10 items. Partition work is plausible but not shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "CAM Contractors, Inc.",
+    "area": "fayetteville-nc",
+    "status": "not_found",
+    "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Checked 2026-11-20. Searches for 'CAM Contractors', 'CAM Contract', 'CAM' and 'C.A.M.' found no matching license. The close names were unrelated: 'Amber Nicole McCrory, T/A Cam Contracting' (Pending, Not Active) and Lancam Contracting LLC. The company site (https://camcontractors.net/) gives Fort Bragg, NC and says it does Division 9 and Division 10 installs (lockers, wall guards) and has subcontracted at Fort Bragg since 2009. It says 'licensed and insured' but gives no license number. Work on the federal installation may fall outside state licensing."
+   },
+   "score": 50
+  },
+  {
+   "name": "U.S. Doorways, Inc.",
+   "base_city": "Garner",
+   "state": "NC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "phone": "919-861-6340",
+   "contact_page": "http://www.usdoorways.com/contact.html",
+   "website": "http://www.usdoorways.com/",
+   "evidence_urls": [
+    "http://www.usdoorways.com/",
+    "http://www.usdoorways.com/contact.html",
+    "http://www.usdoorways.com/services.html"
+   ],
+   "partition_evidence": "Homepage lists toilet partitions and toilet accessories among its products, and 'quality installation' among its services. Partition installation is not stated outright.",
+   "red_flags": [
+    "Supplies toilet partitions itself, so there is a buy-around risk",
+    "The page title says Jacksonville NC but the address is Garner; service area not stated",
+    "The website is dated and gives few details"
+   ],
+   "reason": "A door and Division 10 supplier that offers toilet partitions and general installation. It's about 55 miles away in Garner with no stated service area, and it sells partitions.",
+   "added_by_checker": false,
+   "license": {
+    "name": "U.S. Doorways, Inc.",
+    "area": "fayetteville-nc",
+    "status": "not_found",
+    "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Checked 2026-11-20. Searches for 'U.S. Doorways', 'US Doorways' and 'Doorways' returned no results. A license is not required below the NC threshold."
+   },
+   "score": 40
+  },
+  {
+   "name": "Integrated Openings Solutions, Raleigh (formerly B A Hoft & Associates)",
+   "base_city": "Raleigh",
+   "state": "NC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "phone": "(919) 596-4446",
+   "email": "info@integratedopenings.com",
+   "contact_page": "https://integratedopenings.com/locations/",
+   "website": "https://integratedopenings.com/locations/raleigh/",
+   "evidence_urls": [
+    "https://integratedopenings.com/locations/raleigh/"
+   ],
+   "partition_evidence": "The Raleigh location lists 'washroom accessories' alongside door and frame installation. Toilet partitions are not mentioned.",
+   "red_flags": [
+    "Mainly a door, frame and hardware company; partitions are not named",
+    "Part of a multi-state company; Raleigh service area not stated",
+    "The email is company-wide, not specific to the Raleigh office"
+   ],
+   "reason": "A commercial door company whose Raleigh location lists washroom accessories. There's no partition evidence and no stated coverage of Fayetteville.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Integrated Openings Solutions, Raleigh (formerly B A Hoft & Associates)",
+    "area": "fayetteville-nc",
+    "status": "not_found",
+    "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Checked 2026-11-20. Searches for 'Integrated Openings', 'Integrated Opening', 'B A Hoft' and 'B. A. Hoft' found no matching license. 'Hoft' matched only an inactive qualifier record (Q.24964, Donald C. Bernhoft), which is unrelated. A 'Integrated' search returned many unrelated companies. The company may hold a license under a parent entity name that wasn't identified, so that is unknown. A license is not required below the NC threshold."
+   },
+   "score": 40
+  },
+  {
+   "name": "Global Commercial Installation, LLC",
+   "base_city": "Clayton",
+   "state": "NC",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "review_source": "BBB (rating A reported in search results; profile not read)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/nc/category/commercial-doors",
+    "https://bbb.org/us/nc/garner/category/commercial-doors"
+   ],
+   "partition_evidence": "None found. It appears only in BBB's Commercial Doors category; no website found.",
+   "red_flags": [
+    "No website found",
+    "No evidence of partition work",
+    "Facts come from search-result summaries of BBB category pages, not a profile page I read"
+   ],
+   "reason": "Listed by BBB as a commercial door business serving NC and SC (per search results), but there's no website and no evidence of partition installation.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 23
+  }
+ ]
+}

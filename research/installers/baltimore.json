@@ -1,0 +1,250 @@
+{
+ "area": "baltimore",
+ "found_count": 8,
+ "sources_tried": [
+  "Seed file baltimore.json: worked. Maps gave MD Partitions, R.B. Fulton and Partition Plus; the rest were remodelers, plumbers and stores, skipped. Web redirects resolved via curl to Facebook, Procore, D&B and supplier pages.",
+  "Company sites: partitionplus.com, mdpartitions.com, rbfulton.com and topkeyconstruction.com worked; ultimate-installs.com returned 503; frankmwaters.com, fmwaters.com and districtinstallations.com did not resolve (guessed domains, may not exist).",
+  "Bobrick find-a-rep: page loads but results need a JS dropdown, so no reps were shown.",
+  "Scranton Products where-to-buy: worked, but it lists only a product specialist for DC/DE/MD/NJ/VA, with no local installers or dealers.",
+  "Hadrian find-a-rep: 404. Bradley find-a-rep: no content (JS). ASI, Metpar, General Partitions and Ammco locators: not reached before the search budget ran out.",
+  "The Blue Book (thebluebook.com iProView pages): blocked (403). Search snippets showed Frank M. Waters Inc. and Accessible Construction Supply Inc. Accessible Construction Supply is in Huntingtown MD (about 50 mi away, outside the radius), so it was skipped.",
+  "Procore network: the profile page for Installation Services LLC worked; search pages ignore the trade or keyword filter, so nothing came back.",
+  "BuildingConnected: not tried.",
+  "BBB (prod.bbb.org Partition Plus profile): blocked (403). Yelp: no pages came up in search.",
+  "Facebook (District Installations, JJ Partitions): login wall, no data.",
+  "WebSearch: 8 of 8 used. Queries: toilet partition installation Baltimore; Division 10 in Laurel/Jessup/Annapolis/Baltimore; the seed names; Frank M. Waters; Accessible Construction Supply; Division 10 MD; Bowie/College Park/Laurel/Annapolis; Yelp/BBB. Results were dominated by One Point Partitions (a manufacturer with a Baltimore delivery terminal, skipped as a manufacturer) and national or out-of-area firms (Cook & Boardman, UDH Group, Martin Bros CA, Berl's NC, Commercial Door Worx NC), all skipped."
+ ],
+ "candidates": [
+  {
+   "name": "MD Partitions Inc. (MDP)",
+   "base_city": "Jessup",
+   "state": "MD",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "301-725-5125",
+   "email": "info@mdpartitions.com",
+   "contact_page": "https://www.mdpartitions.com/contact/",
+   "website": "http://www.mdpartitions.com/",
+   "evidence_urls": [
+    "http://www.mdpartitions.com/",
+    "https://www.mdpartitions.com/contact/"
+   ],
+   "partition_evidence": "Homepage says it supplies, delivers and installs toilet partitions, lockers and Division 10 specialties. Named commercial projects include the Baltimore Convention Center, the U.S. Capitol and Walter Reed.",
+   "red_flags": [
+    "Supplies partitions itself (in-stock partitions, 48-hour delivery), so it is a buy-around risk"
+   ],
+   "reason": "Commercial toilet partition supply-and-install firm in Jessup, between Baltimore and Laurel, serving MD, DC and VA. It installs partitions, but it also sells them.",
+   "added_by_checker": false,
+   "license": {
+    "name": "MD Partitions Inc. (MDP)",
+    "area": "baltimore",
+    "status": "not_online",
+    "registry": "Baltimore City DHCD E-Permits (Accela Citizen Access) licensee search, https://aca-prod.accela.com/BALTIMORE/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "source_url": "https://aca-prod.accela.com/BALTIMORE/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Maryland has no state license for commercial partition installation (MHIC covers residential home improvement only). Baltimore requires a contractor's license to be registered in E-Permits before the contractor can be added to a permit. The E-Permits licensee search is public and needs no account (DHCD help center: 'you do not need to create an account to search permit or license registration information in E-Permits'), but it is an ASP.NET search form that shows no records until submitted, so automated lookup didn't work. Check by hand by business name. Base city: Jessup. Registration status unknown."
+   },
+   "score": 70
+  },
+  {
+   "name": "R.B. Fulton Co. Inc.",
+   "base_city": "Randallstown",
+   "state": "MD",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(410) 467-0750",
+   "email": "info@rbfulton.com",
+   "contact_page": "https://rbfulton.com/contact-us/",
+   "website": "http://www.rbfulton.com/",
+   "evidence_urls": [
+    "http://www.rbfulton.com/"
+   ],
+   "partition_evidence": "Homepage lists toilet partitions among its Division 10 products and offers professional installation in the Baltimore area.",
+   "red_flags": [
+    "Distributor that sells partitions directly (buy-around risk)",
+    "No installation project photos seen"
+   ],
+   "reason": "Baltimore-area Division 10 distributor since 1938 that installs toilet partitions for commercial general contractors. It is also a seller of partitions.",
+   "added_by_checker": false,
+   "license": {
+    "name": "R.B. Fulton Co. Inc.",
+    "area": "baltimore",
+    "status": "not_online",
+    "registry": "Baltimore City DHCD E-Permits (Accela Citizen Access) licensee search, https://aca-prod.accela.com/BALTIMORE/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "source_url": "https://aca-prod.accela.com/BALTIMORE/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "No state license applies to commercial partition work in Maryland. The Baltimore E-Permits licensee search is public but form-postback only, so automated lookup didn't work. Check by hand by business name. Base city: Randallstown. Registration status unknown."
+   },
+   "score": 70
+  },
+  {
+   "name": "Partition Plus, Inc.",
+   "base_city": "Forest Hill",
+   "state": "MD",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Hadrian",
+    "Bradley",
+    "Bobrick",
+    "Scranton Products",
+    "ASI",
+    "Metpar",
+    "Jacknob",
+    "Hawa"
+   ],
+   "phone": "800-298-9696",
+   "email": "sales@partitionplus.com",
+   "contact_page": "https://www.partitionplus.com/about-us/",
+   "website": "https://www.partitionplus.com/",
+   "review_source": "BBB: A+ rating, not accredited, 0 customer reviews",
+   "evidence_urls": [
+    "https://www.partitionplus.com/",
+    "https://www.partitionplus.com/about-us/",
+    "https://www.bbb.org/us/md/forest-hill/profile/partition/partition-plus-inc-0011-90138446"
+   ],
+   "partition_evidence": "About page says it offers regional installation services (MD, DC, VA, PA, DE). Homepage sells toilet partitions with commercial projects (offices, schools, restaurants, hotels).",
+   "red_flags": [
+    "Direct online competitor: sells the same brands (Bobrick, Scranton, ASI, Metpar, Bradley) nationwide, a high buy-around risk"
+   ],
+   "reason": "Commercial partition seller since 1993 that also installs regionally. Forest Hill is about 25 miles northeast of Baltimore. It is strong on installation but is a direct competitor for partition sales.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Partition Plus, Inc.",
+    "area": "baltimore",
+    "status": "not_online",
+    "registry": "Baltimore City DHCD E-Permits (Accela Citizen Access) licensee search, https://aca-prod.accela.com/BALTIMORE/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "source_url": "https://aca-prod.accela.com/BALTIMORE/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "No state license applies to commercial partition work in Maryland. The Baltimore E-Permits licensee search is public but form-postback only, so automated lookup didn't work. Check by hand by business name. Base city: Forest Hill. Registration status unknown."
+   },
+   "score": 70
+  },
+  {
+   "name": "Frank M. Waters, Inc.",
+   "base_city": "unknown (Maryland)",
+   "state": "MD",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/798165/frank-m-waters-inc/subcontractors/"
+   ],
+   "partition_evidence": "In search snippets of its Blue Book profile, the company says it opened in 1991 'furnishing and installing toilet partitions and toilet room accessories' in Maryland, with government work at NSA and Ft. Meade, plus schools and hospitals. The profile page itself returned 403 and could not be read directly.",
+   "red_flags": [
+    "No company website found",
+    "Base city not confirmed",
+    "Evidence comes only from search-result snippets of one directory profile"
+   ],
+   "reason": "It describes itself as a commercial toilet partition installer, and its Ft. Meade work is inside the area. Without a website, base city or contact details, it can't be confirmed as strong.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Frank M. Waters, Inc.",
+    "area": "baltimore",
+    "status": "not_online",
+    "registry": "Baltimore City DHCD E-Permits (Accela Citizen Access) licensee search, https://aca-prod.accela.com/BALTIMORE/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "source_url": "https://aca-prod.accela.com/BALTIMORE/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "No state license applies to commercial partition work in Maryland. The Baltimore E-Permits licensee search is public but form-postback only, so automated lookup didn't work. Base city wasn't given (Maryland) and wasn't confirmed; no website was given. Check by hand by business name. Registration status unknown."
+   },
+   "score": 65
+  },
+  {
+   "name": "Installation Services LLC (now TopKey Construction)",
+   "base_city": "Laurel",
+   "state": "MD",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "301-245-2070",
+   "website": "https://topkeyconstruction.com/",
+   "contact_page": "https://topkeyconstruction.com/contact/",
+   "evidence_urls": [
+    "https://topkeyconstruction.com/"
+   ],
+   "partition_evidence": "None. The site lists roofing, exterior and interior buildout work. The only related mention is 'restrooms' in an FAQ. There is no toilet partition or Division 10 work.",
+   "red_flags": [
+    "Name change from Installation Services LLC not confirmed on the site"
+   ],
+   "reason": "A commercial general contractor in Laurel with no partition installation shown, so it doesn't fit as a partition installer.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Ultimate Installation LLC",
+   "base_city": "Baltimore",
+   "state": "MD",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "www.ultimate-installs.com",
+   "evidence_urls": [],
+   "partition_evidence": "None found. The website returned HTTP 503 on two tries, and a search found no pages for the company.",
+   "red_flags": [
+    "Website down (503)",
+    "No web presence found"
+   ],
+   "reason": "Couldn't verify that the business exists or what it does.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "District Installations, Inc.",
+   "base_city": "unknown",
+   "state": "MD",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "A search for the name with toilet partitions and Baltimore returned nothing about this company.",
+   "red_flags": [
+    "No website or listing found"
+   ],
+   "reason": "No evidence the business exists or installs partitions.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  },
+  {
+   "name": "JJ Partition's LLC",
+   "base_city": "unknown",
+   "state": "MD",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "A search for 'JJ Partition's' / 'JJ Partitions' in Laurel MD returned no matching business.",
+   "red_flags": [
+    "No website or listing found"
+   ],
+   "reason": "No evidence the business exists or installs partitions.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  }
+ ]
+}

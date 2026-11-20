@@ -1,0 +1,231 @@
+{
+ "area": "tacoma",
+ "found_count": 6,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/tacoma.json: worked. Its maps results gave NWBLDS, Building Specialties NW and Wind NW; the rest were remodelers, supply stores, plumbers and a large set of templated 'X Bathroom Remodeling' sites. Western Partitions Inc. (Sumner) checked: drywall/framing subcontractor headquartered in Portland, OR, with no toilet partitions on its site, so excluded.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads but rep listings are dynamic and none came through. Bobrick Vashon Island HS case study PDF worked (named Wind NW and Barclay Dean).",
+  "Hadrian where-to-buy: 404.",
+  "General Partitions reps page: 404.",
+  "Scranton Products UW Madrona Hall case study: worked (named Barclay Dean).",
+  "ASI, Bradley, Metpar, Ampco/Ammco locators: not tried (ran out of time and budget after the JS and 404 failures).",
+  "The Blue Book (thebluebook.com iProView pages for N.W. Building Specialties, Partition Plus, company 259104): blocked, 403.",
+  "BuildingConnected / Procore public profiles: not tried.",
+  "DJC Specialty Contractor Guide PDF (djc.com/co/scg.pdf): read, but it lists no Division 10 firms.",
+  "BBB partitions category (Granite Falls WA): worked; listed only Ironwood Manufacturing (manufacturer, excluded) and Building Specialties NW.",
+  "WebSearch: used all 8 allowed. Results were dominated by national online sellers (One Point Partitions, Southwest Solutions Group, Newton Distributing) with no local base; those were excluded and onepointpartitions.com returned 403.",
+  "Cook & Boardman JDS / cbxsolutions.com Everett branch: 403. Barclay Dean website: 503. Scott and Company (odoo): 404. CS Installers and Inter-Co: checked, no Washington base, excluded."
+ ],
+ "candidates": [
+  {
+   "name": "Barclay Dean Architectural Products",
+   "base_city": "Woodinville",
+   "state": "WA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "Bobrick case study (Vashon Island High School, WA) names Barclay Dean (Woodinville, WA) as the installing distributor for Bobrick DuraLineSeries partitions.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick",
+    "Scranton Products"
+   ],
+   "within_area": "regional",
+   "website": "https://www.barclaydean.com/",
+   "evidence_urls": [
+    "https://www.bobrick.com/wp-content/uploads/2019/01/BOB-CaseStudy_Vashon_Island_HS_v7.pdf"
+   ],
+   "red_flags": [
+    "Company website returned HTTP 503 on two tries, so contact details and current service area weren't confirmed",
+    "Distributor that supplies partitions (buy-around risk)",
+    "Base city given as Woodinville (2019 case study) and Bothell elsewhere; about 45 miles from Tacoma"
+   ],
+   "reason": "A manufacturer case study confirms it installs commercial partitions in the Puget Sound area (Vashon Island, near Tacoma). Its own site was down, so its contact details and stated service area are unverified.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Barclay Dean Architectural Products",
+    "area": "tacoma",
+    "status": "found_active",
+    "registry": "Washington L&I contractor registration (data.wa.gov m8qx-ubtq); City of Tacoma Tax & License business account dataset",
+    "license_number": "BARCLDA022BE",
+    "license_type": "Construction Contractor, specialty General",
+    "source_url": "https://data.wa.gov/resource/m8qx-ubtq.json?contractorlicensenumber=BARCLDA022BE",
+    "note": "The L&I record is BARCLAY DEAN ARCHTL PRDTS LLC, UBI 601840789, ACTIVE, effective 1998-01-05, expires 2028-01-03. The record city is Bothell, not Woodinville as listed. The Tacoma dataset has a matching account: BARCLAY DEAN ARCHITECTURAL PRODUCTS LLC, Tacoma account 500017983, open since 2002-01-01, site city Bothell. That dataset lists active Tacoma tax and license accounts but does not show whether the license is current for this year, so confirm with Tacoma Tax & License. Source: https://services3.arcgis.com/SCwJH1pD8WSn5T5y/ArcGIS/rest/services/Business_Licenses/FeatureServer/0"
+   },
+   "score": 78
+  },
+  {
+   "name": "NW Blds (NWBLDS)",
+   "base_city": "Kent",
+   "state": "WA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "Homepage describes a commercial restroom partition company that installs, replaces, repairs and supplies commercial toilet partitions; service-area page has a Tacoma/Pierce County page.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Hadrian"
+   ],
+   "within_area": "yes",
+   "phone": "253.765.8151",
+   "email": "contact@nwblds.com",
+   "contact_page": "https://nwblds.com/contact/",
+   "website": "https://nwblds.com/",
+   "evidence_urls": [
+    "https://nwblds.com/",
+    "https://nwblds.com/service-area/"
+   ],
+   "red_flags": [
+    "Supplies partitions itself (buy-around risk)",
+    "Footer mailto points to a different address (kai@nwblds.com) than the listed contact@ address"
+   ],
+   "reason": "Kent-based family-owned commercial partition installer that lists Tacoma, Seattle and Bellevue in its service area. It also sells partitions, so the listing agreement and hidden customer details matter.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 70
+  },
+  {
+   "name": "Building Specialties Northwest LLC",
+   "base_city": "Mercer Island",
+   "state": "WA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "Distributor with a Toilet Partitions & Shower Enclosures category and a 'We Install!' banner linking to its portfolio. The portfolio lists Puget Sound job sites (e.g., IKEA Renton, Thurston County Readiness Center) but doesn't tie partitions or installation to any project.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "ASI Global Partitions",
+    "Daiek",
+    "Hadrian",
+    "Scranton"
+   ],
+   "within_area": "nearby",
+   "phone": "425-486-3693",
+   "email": "bsnwllc@lockedmail.com",
+   "contact_page": "http://www.lockedmail.com/contact",
+   "website": "http://www.lockedmail.com/",
+   "evidence_urls": [
+    "http://www.lockedmail.com/",
+    "http://www.lockedmail.com/portfolio"
+   ],
+   "red_flags": [
+    "Mainly a distributor that ships nationwide (buy-around risk)",
+    "Installation of partitions not confirmed"
+   ],
+   "reason": "A Puget Sound Division 10 distributor that supplies partitions and says it installs, but no partition installation project was shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Building Specialties Northwest LLC",
+    "area": "tacoma",
+    "status": "found_active",
+    "registry": "Washington L&I contractor registration (data.wa.gov m8qx-ubtq); City of Tacoma Tax & License business account dataset",
+    "license_number": "BUILDSN792DC",
+    "license_type": "Construction Contractor, specialty General",
+    "source_url": "https://data.wa.gov/resource/m8qx-ubtq.json?contractorlicensenumber=BUILDSN792DC",
+    "note": "The L&I record is BUILDING SPECIALTIES NW LLC, UBI 602118871, Mercer Island, ACTIVE, expires 2027-03-03. The legal name \"Building Specialties NW\" in Mercer Island comes from the lockedmail.com site's own schema markup. The company does not appear in the City of Tacoma Tax & License business account dataset (searched for BUILDING SPECIALT on 2026-11-19; the only hit was ABC Supply's trade name), so no Tacoma business license was found online. Confirm with Tacoma Tax & License (253-591-5252) before a Tacoma job."
+   },
+   "score": 60
+  },
+  {
+   "name": "Zesbaugh, Inc.",
+   "base_city": "Marysville",
+   "state": "WA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "Calls itself a 'Specialty Commercial Subcontractor & Distributor' with 'the most complete line of bathroom partitions in the Northwest' and offers partition service and repairs. No page read states that it installs partitions.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "regional",
+   "phone": "206-547-1900",
+   "contact_page": "https://zesbaugh.com/contactus/",
+   "website": "https://zesbaugh.com/",
+   "evidence_urls": [
+    "https://zesbaugh.com/",
+    "https://zesbaugh.com/toilet-partitions/"
+   ],
+   "red_flags": [
+    "Distributor of partitions (buy-around risk)",
+    "About 60 miles from Tacoma"
+   ],
+   "reason": "A Pacific Northwest commercial Division 10 subcontractor and distributor (WA, OR and ID licenses listed) that carries and services partitions. Partition installation isn't stated outright.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Zesbaugh, Inc.",
+    "area": "tacoma",
+    "status": "found_active",
+    "registry": "Washington L&I contractor registration (data.wa.gov m8qx-ubtq); City of Tacoma Tax & License business account dataset",
+    "license_number": "ZESBAI*353O1",
+    "license_type": "Construction Contractor, specialty General",
+    "source_url": "https://data.wa.gov/resource/m8qx-ubtq.json?$where=upper(businessname)%20like%20'%25ZESBAUGH%25'",
+    "note": "The L&I record is ZESBAUGH, INC, UBI 578051445, Marysville, ACTIVE construction contractor registration, effective 1965-09-21, expires 2027-10-01. A separate electrical contractor license under the same UBI, ZESBAI*992MU (Doors & Gates specialty), is EXPIRED as of 2026-09-17, with suspend date 2025-08-26. Partitions only need the active construction contractor registration. The Tacoma dataset has a matching account: ZESBAUGH INC, Tacoma account 500003230, open since 1973-02-01, Marysville. The dataset does not confirm current-year license status."
+   },
+   "score": 58
+  },
+  {
+   "name": "Unified Specialty Services (Unified Door & Hardware Group)",
+   "base_city": "unknown",
+   "state": "unknown",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "partition_evidence": "Division 10 page lists toilet partitions, accessories and lockers with fulfillment and installation, but no project or office in Washington was shown.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "no",
+   "phone": "+1 (856) 488-8843",
+   "email": "info@udhgroup.com",
+   "contact_page": "https://udhgroup.com/contact/",
+   "website": "https://udhgroup.com/",
+   "evidence_urls": [
+    "https://udhgroup.com/capabilities/division-10/",
+    "https://udhgroup.com/locations/"
+   ],
+   "red_flags": [
+    "No Washington or Pacific Northwest presence found; phone is a New Jersey area code",
+    "National door and hardware group that also supplies partitions"
+   ],
+   "reason": "A national Division 10 supplier and installer, but nothing read shows that it works in Washington or the Tacoma area.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "Wind Northwest, Inc. (Wind NW)",
+   "base_city": "Tukwila",
+   "state": "WA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "partition_evidence": "Site lists partition lines (Bobrick, Thrislington, privada, All American Metal) but no installation. Bobrick case study names it as an authorized Bobrick sales representative, not the installer.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick",
+    "Thrislington",
+    "privada",
+    "All American Metal",
+    "Gamco",
+    "Koala",
+    "Pressalit",
+    "Spectrum",
+    "Marlite"
+   ],
+   "within_area": "yes",
+   "phone": "(206) 575-7881",
+   "contact_page": "http://windnw.com/contact-us",
+   "website": "http://windnw.com/",
+   "evidence_urls": [
+    "http://windnw.com/",
+    "https://www.bobrick.com/wp-content/uploads/2019/01/BOB-CaseStudy_Vashon_Island_HS_v7.pdf"
+   ],
+   "red_flags": [
+    "Manufacturer's sales rep, not an installer"
+   ],
+   "reason": "A manufacturer's representative agency for restroom products. In the Bobrick case study, a separate distributor did the installing.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  }
+ ]
+}

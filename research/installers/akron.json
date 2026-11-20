@@ -1,0 +1,343 @@
+{
+ "area": "akron",
+ "found_count": 12,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/akron.json: worked. Maps gave W B Becherer Modernfold, Zietlow, Braden and McSweeny, H & K Partitions and Hardline Specialty Systems; the rest were residential bath remodelers, plumbers, HVAC and stores (skipped). Web entries were google.com/goto redirects with no domains; their titles led to Great Lakes Installation (office furniture installer, skipped) and others not relevant.",
+  "Earlier OH runs reused for context: batch-7.json (Cleveland) and batch-4.json (Columbus)",
+  "Company sites: wbbechererinc.com worked; zinstallers.com/toilet-partitions.htm worked; bradenandmcsweeny.com /services and /contact worked; inter-co.com worked; clevelandconstruction.com capabilities page worked, /contact 404; toiletpartition.com (Gratton) 503; cbxsolutions.com Akron branch (Botzum Bros / Cook & Boardman) 403",
+  "Bobrick find-a-rep: page loads but results need a dropdown; no reps in fetched text",
+  "Scranton, Bradley, Hadrian, ASI, General Partitions locators: not retried (404 or empty in earlier OH runs); Metpar and Ampco not tried",
+  "The Blue Book iProView pages: 403; search snippets gave nothing local",
+  "BuildingConnected / Procore: not tried (search cap)",
+  "BBB Akron 'partition' category: worked (Heath Johns, Builders' Hardware, Partition Systems Inc; the rest were glass, doors and other off-topic businesses)",
+  "constructionjobs.com job listing (Stalls Plus): 403, snippet only",
+  "WebSearch: 8 of 8 used (Akron install, Division 10 Akron/Canton/Cuyahoga Falls, Stalls Plus, Hardline/Great Lakes Installation, Canton/Youngstown/Medina, Blue Book NE Ohio, Partition Systems Pittsburgh). Results were dominated by One Point Partitions (online seller, DIY install; competitor, skipped). Kelley Bros (Cincinnati), U.S. Structures (Columbus supplier, no install) and Acoustic Ceiling & Partition of Ohio (no toilet partitions) were excluded."
+ ],
+ "candidates": [
+  {
+   "name": "Zietlow Installers & Distributors",
+   "base_city": "North Ridgeville",
+   "state": "OH",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "Homepage lists toilet partitions among products it supplies and installs; customer testimonial about church bathroom partitions delivered and installed.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "nearby",
+   "website": "http://zinstallers.com/",
+   "phone": "440-355-4460",
+   "email": "info@zinstallers.com",
+   "contact_page": "http://zinstallers.com/contact.htm",
+   "evidence_urls": [
+    "http://zinstallers.com/",
+    "http://zinstallers.com/contact.htm"
+   ],
+   "red_flags": [
+    "Describes itself as a distributor: supplies partitions itself (buy-around risk)"
+   ],
+   "reason": "Commercial installer and distributor since 1970 that installs toilet partitions for schools, churches and offices; serves Cleveland, Medina and Cuyahoga County. It also distributes partitions, so buy-around risk.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Zietlow Installers & Distributors",
+    "area": "akron",
+    "status": "not_online",
+    "registry": "City of Akron contractor registration (Plans and Permits Center, Engineering Bureau), done through the Plan Review and Permits web portal",
+    "note": "Base city North Ridgeville. Akron says it 'requires all contractors regardless of trade to register as a contractor if the work they are preforming requires a permit' (Akron tax registration number, $3 million liability insurance, workers' comp where the contractor has employees). The City publishes no registered-contractor list and no public lookup. Its Cityworks portal offers only sign-in or creating an application as a guest. Confirm registration by phone with the Plans and Permits Center (330-375-2010, the number on the City's renewal form, found via search; not opened).",
+    "source_url": "https://www.akronohio.gov/pnp"
+   },
+   "score": 65
+  },
+  {
+   "name": "Braden and McSweeny, Inc.",
+   "base_city": "Westlake (main office Pittsburgh, PA)",
+   "state": "OH",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "Services page: 'Manufacturer certified to install' toilet partitions and toilet room accessories; turnkey Division 10 package including installation.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "nearby",
+   "website": "https://www.bradenandmcsweeny.com/",
+   "phone": "440-539-8666 (Ohio office); 412-279-3320 (Pittsburgh main)",
+   "contact_page": "https://www.bradenandmcsweeny.com/contact/",
+   "evidence_urls": [
+    "https://www.bradenandmcsweeny.com/",
+    "https://www.bradenandmcsweeny.com/services/",
+    "https://www.bradenandmcsweeny.com/contact/"
+   ],
+   "red_flags": [
+    "Stocks and supplies toilet partitions ('largest stock ... in Western Pennsylvania'): buy-around risk"
+   ],
+   "reason": "Division 10 contractor since 1964 that installs toilet partitions and has a Cleveland-area office in Westlake. It is also a large partition supplier.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Braden and McSweeny, Inc.",
+    "area": "akron",
+    "status": "not_online",
+    "registry": "City of Akron contractor registration (Plans and Permits portal, no public lookup)",
+    "note": "Ohio office in Westlake, main office Pittsburgh, PA. Akron requires every contractor doing permitted work to register, but it has no public registry or search; the portal needs a sign-in. Confirm with Akron Plans and Permits.",
+    "source_url": "https://www.akronohio.gov/pnp"
+   },
+   "score": 65
+  },
+  {
+   "name": "Inter-Co Division 10 (Ohio), Inc.",
+   "base_city": "Columbus",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "partition_evidence": "Homepage: distributor and installer of toilet partitions and washroom accessories; supplies and installs products for offices, hospitals, schools, stadiums.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick (image alt text only)"
+   ],
+   "within_area": "regional",
+   "website": "https://inter-co.com/",
+   "phone": "(614) 875-2959",
+   "email": "ohsales@inter-co.com",
+   "contact_page": "https://inter-co.com/contact/",
+   "evidence_urls": [
+    "https://inter-co.com/"
+   ],
+   "red_flags": [
+    "Distributor of partitions (buy-around risk)",
+    "Columbus is about 110-125 miles from Akron; site has an Ohio office but doesn't name Northeast Ohio as a service area"
+   ],
+   "reason": "Installs and supplies toilet partitions commercially from a Columbus, Ohio office, but at the edge of the radius and without a stated Akron/Cleveland service area.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Inter-Co Division 10 (Ohio), Inc.",
+    "area": "akron",
+    "status": "not_online",
+    "registry": "City of Akron contractor registration (Plans and Permits portal, no public lookup)",
+    "note": "Base city Columbus. Akron requires every contractor doing permitted work to register, but it has no public registry or search; the portal needs a sign-in. Confirm with Akron Plans and Permits. Ohio has no state license for partition installation.",
+    "source_url": "https://www.akronohio.gov/pnp"
+   },
+   "score": 63
+  },
+  {
+   "name": "W.B. Becherer Inc. (Modernfold of Youngstown)",
+   "base_city": "Boardman (Youngstown area)",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "Site lists toilet partitions and washroom accessories among products and says it provides sales, installation and service for Division 10 products; no partition project shown.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Modernfold"
+   ],
+   "within_area": "no",
+   "website": "http://wbbechererinc.com/",
+   "phone": "330-758-6616",
+   "email": "brubech@aol.com",
+   "evidence_urls": [
+    "http://wbbechererinc.com/"
+   ],
+   "red_flags": [
+    "Manufacturers' sales rep for partitions (buy-around risk)",
+    "About 50 miles from Akron and site states no service area",
+    "No contact page; AOL email"
+   ],
+   "reason": "Division 10 sales, installation and service firm that lists toilet partitions, but no partition install shown. It is about 50 miles away, and its site names no service area.",
+   "added_by_checker": false,
+   "license": {
+    "name": "W.B. Becherer Inc. (Modernfold of Youngstown)",
+    "area": "akron",
+    "status": "not_online",
+    "registry": "City of Akron contractor registration (Plans and Permits portal, no public lookup)",
+    "note": "Base city Boardman (Youngstown area). Akron requires every contractor doing permitted work to register, but it has no public registry or search; the portal needs a sign-in. Confirm with Akron Plans and Permits.",
+    "source_url": "https://www.akronohio.gov/pnp"
+   },
+   "score": 40
+  },
+  {
+   "name": "Heath Johns Contracting",
+   "base_city": "Strongsville",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "partition_evidence": "Listed in BBB 'Partitions' category only; no website or project evidence found.",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "phone": "(440) 554-0694",
+   "review_source": "BBB (not accredited, no rating shown on the page read)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/oh/berea/category/partition"
+   ],
+   "red_flags": [
+    "No website found",
+    "Only a directory category listing as evidence",
+    "A search summary said a BBB page lists All Partitions & Parts, LLC at the same phone, but the BBB page read shows that company in Troy, MI"
+   ],
+   "reason": "In-area business listed by BBB under Partitions, but no website, services or projects could be found to confirm partition installation.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Heath Johns Contracting",
+    "area": "akron",
+    "status": "not_online",
+    "registry": "City of Akron contractor registration (Plans and Permits portal, no public lookup)",
+    "note": "Base city Strongsville. Akron requires every contractor doing permitted work to register, but it has no public registry or search; the portal needs a sign-in. Confirm with Akron Plans and Permits.",
+    "source_url": "https://www.akronohio.gov/pnp"
+   },
+   "score": 10
+  },
+  {
+   "name": "Cleveland Construction, Inc. (Interior Trades)",
+   "base_city": "Mason",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "partition_evidence": "Footer mentions 'Division 10 installations' and divisions 5-10 self-perform scopes; toilet partitions not named.",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "website": "https://clevelandconstruction.com/",
+   "phone": "513-398-8900",
+   "contact_page": "https://clevelandconstruction.com/general-contracting/about-us/contact-us/",
+   "evidence_urls": [
+    "https://clevelandconstruction.com/",
+    "https://clevelandconstruction.com/interior-trades/"
+   ],
+   "red_flags": [
+    "Large national general/interior contractor, not a partition installer",
+    "HQ Mason OH (Cincinnati area), about 200 miles away"
+   ],
+   "reason": "National general and interior-trades contractor based near Cincinnati. It mentions Division 10 only in general terms and doesn't serve this area as a partition installer.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "Builders' Hardware & Specialty Co. Inc.",
+   "base_city": "Austintown",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "phone": "(330) 799-8721",
+   "evidence_urls": [
+    "https://www.bbb.org/us/oh/berea/category/partition"
+   ],
+   "red_flags": [
+    "No website found",
+    "BBB category per search is commercial doors/locksmith",
+    "About 45 miles from Akron with no stated service area"
+   ],
+   "reason": "Appears in a BBB partitions list, but its own category is commercial doors and locksmith, and no evidence of partition installation was found.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "H & K Partitions Inc",
+   "base_city": "North Royalton",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "evidence_urls": [],
+   "red_flags": [
+    "No website or listing found; not in BBB Ohio partitions listings returned"
+   ],
+   "reason": "A search found no business by this name in North Royalton, so nothing could be verified.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Stalls Plus Inc.",
+   "base_city": "Cleveland",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "nearby",
+   "evidence_urls": [],
+   "red_flags": [
+    "No website or listing found in search"
+   ],
+   "reason": "A search found no trace of this business, so nothing could be verified.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  },
+  {
+   "name": "Gratton Building Specialties, Inc.",
+   "base_city": "Mentor",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "website": "http://toiletpartition.com/",
+   "evidence_urls": [
+    "http://toiletpartition.com/"
+   ],
+   "red_flags": [
+    "Website returned HTTP 503 on two attempts",
+    "Search found no trace of the company",
+    "Mentor is about 45 miles from Akron"
+   ],
+   "reason": "Website down (503) and a web search found nothing on the company, so nothing could be verified.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  },
+  {
+   "name": "Partition Systems Inc",
+   "base_city": "Pittsburgh",
+   "state": "PA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "evidence_urls": [],
+   "red_flags": [
+    "No Pittsburgh company by this name found; the only match is Partition Systems Inc. in Columbia, SC (a manufacturer)"
+   ],
+   "reason": "Could not find a Pittsburgh business of this name, and the only same-named company found is a South Carolina manufacturer.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  },
+  {
+   "name": "Hardline Specialty Systems",
+   "base_city": "unknown",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "evidence_urls": [],
+   "red_flags": [
+    "No business by this name found; only unrelated Hardline Welding (Akron) and Hardline International (West Unity)",
+    "within_area set to no because base city is unknown"
+   ],
+   "reason": "No business by this name could be found, and the similar names found are unrelated.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

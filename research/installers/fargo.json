@@ -1,0 +1,65 @@
+{
+ "area": "fargo",
+ "found_count": 1,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/fargo.json: worked, but nothing relevant. Every Maps result is a residential bath remodeler, plumber, HVAC company, store or handyman. Web results are aggregator pages and Google redirects to MapQuest. 'Installation Systems', 'Specialized Contracting' and 'Interiors Workshop Inc' redirect to MapQuest pages that came back empty, so they are unverified.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): fetched, but the results are loaded by a dropdown and no ND rep appeared.",
+  "ASI Global Partitions find-a-rep: 404.",
+  "Hadrian find-a-rep: 404.",
+  "Bradley find-a-rep: page came back empty, no rep shown.",
+  "Scranton Products find-a-rep: 404.",
+  "Metpar, General Partitions, Ampco/Ammco locators: not reached (search cap).",
+  "The Blue Book (thebluebook.com ND toilet partitions): 403 blocked.",
+  "Procore network Fargo listing: worked, but no Fargo-based partition or Division 10 installers. The toilet-compartment filter returned only national or out-of-area suppliers (All American Metal, Homestore Directs, US Made Supply). The ND specialties URL was a 404.",
+  "BuildingConnected: not tried (search cap).",
+  "WebSearch: 7 of 7 used. Found nothing local except Construction Supply Inc (csi-fargo.com). One Point Partitions shows up a lot, but it is a national online DIY supplier with only delivery terminals in Fargo and Bismarck. Its site returned 403 and it was skipped as a national seller with no local base.",
+  "Superpages Grand Forks toilet-partitions: worked, but there were no partition installers. Production Specialties and PS Industries make doors and hatches, not partitions.",
+  "W.L. Hall Co (Minneapolis; says it serves ND): the site shows demountable glass partitions and doors but no toilet partitions, so it was excluded.",
+  "Midwest Specialties (Paragon, IN): installs Division 10, but it is out of area with no ND service stated, so it was excluded.",
+  "Yelp and BBB: the BBB Fargo bathroom category, seen in search results only, showed no relevant firms. Yelp was not fetched."
+ ],
+ "candidates": [
+  {
+   "name": "Construction Supply, Inc.",
+   "base_city": "Fargo",
+   "state": "ND",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "added_by_checker": false,
+   "brands": [
+    "AAMCO",
+    "ASI Global",
+    "Flush Metal",
+    "Hadrian",
+    "Bradley",
+    "PSISC",
+    "Scranton",
+    "Solid Partitions",
+    "Bobrick",
+    "Xlerator"
+   ],
+   "partition_evidence": "Toilet Partitions product page lists manufacturers by material but doesn't mention installation. FAQ: 'We will install our products on any project that we are supplying by lining up qualified subcontractors in your area.' About page: 'we have a network of installers to help you out.' No partition projects or photos seen.",
+   "website": "https://www.csi-fargo.com/",
+   "phone": "(701) 235-6605",
+   "contact_page": "https://www.csi-fargo.com/contact",
+   "evidence_urls": [
+    "https://www.csi-fargo.com/",
+    "https://www.csi-fargo.com/toilet-partitions",
+    "https://www.csi-fargo.com/about",
+    "https://www.csi-fargo.com/faq",
+    "https://www.csi-fargo.com/contact"
+   ],
+   "red_flags": [
+    "Competing Division 10 distributor: sells the same brands Next Partitions resells (ASI, Bobrick, Bradley, Scranton, AAMCO), so the buy-around risk is high",
+    "Doesn't install with its own crews. It arranges installation through subcontractors, and only on projects where it supplies the products",
+    "Says it supplies materials nationwide (since 1957)"
+   ],
+   "reason": "A Fargo construction-specialties supplier that sells toilet partitions from our own brands. It installs only products it supplies, through subcontractors. It's a competitor, not an independent installer who would install a customer's Next Partitions order.",
+   "license": null,
+   "score": 50
+  }
+ ]
+}

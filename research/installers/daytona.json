@@ -1,0 +1,362 @@
+{
+ "area": "daytona",
+ "found_count": 9,
+ "sources_tried": [
+  "Seed file daytona.json (Google Maps results): worked; ABS Inc, Florida Specialty Products, Interior Specialties and DDTEN came from it. Install Don't Fall turned out to be residential bathroom safety only (skipped), and most other seeds were remodelers, glass shops or plumbers.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but the results are dropdown-driven, so no Florida reps were readable",
+  "Scranton Products rep locator (/find-a-rep/): 404",
+  "ASI, Bradley, Hadrian, Metpar, General Partitions and Ampco locators: not tried, stopped by time and fetch limits",
+  "The Blue Book (thebluebook.com category and iProView pages): blocked, 403",
+  "BuildingConnected and Procore public profiles: not tried",
+  "BBB partition category pages (Oviedo, Clermont): worked, giving Coyle, Complete Partitions and Hufcor (operable walls only, skipped)",
+  "BBB profiles (Coyle, Hufcor, Complete Partitions): worked",
+  "Jacksonville Chamber member directory: worked (Holman)",
+  "MapQuest listings: Associated Building Specialties worked; Commercial Specialties returned an empty page",
+  "Manta: blocked, 403",
+  "WebSearch: all 8 searches used (Daytona toilet partition installation; Orlando Division 10; FL cities toilet partitions; Complete Partitions; Commercial Specialties; NE FL Division 10; Volusia/Palm Coast/Port Orange/DeLand restroom partitions; Daytona/Ormond/Palm Coast toilet partitions). None found an installer based in Daytona, Port Orange, Deltona, DeLand or Palm Coast; ABS in Ormond Beach is the only local base.",
+  "Yelp: not tried, search cap reached"
+ ],
+ "candidates": [
+  {
+   "name": "Holman, Inc.",
+   "base_city": "Jacksonville",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "reason": "Its toilet partitions page says it sells and installs toilet partitions with its own in-house crew for business owners and general contractors. The same page lists Flagler County and Volusia County among the counties it serves. Jacksonville is about 90 miles from Daytona Beach.",
+   "added_by_checker": false,
+   "brands": [
+    "American Sanitary Partition Corporation",
+    "AAMCO (All American Metal Corp.)",
+    "ASI Accurate Partitions",
+    "Bobrick",
+    "Bradley",
+    "General Partitions",
+    "Gerali Custom Design",
+    "Ironwood",
+    "Metpar",
+    "PRIVADA",
+    "PSiSC",
+    "Sanymetal",
+    "Scranton Products",
+    "Hadrian"
+   ],
+   "partition_evidence": "The toilet-partitions page describes the steps from site measurement by its installation team to an in-house crew install and punch list. The portfolio shows photos of restroom stalls.",
+   "phone": "904-467-8779",
+   "email": "info@holman-inc.com",
+   "contact_page": "https://www.holman-inc.com/contact-us/",
+   "website": "http://www.holman-inc.com",
+   "rating": 4.9,
+   "review_count": 60,
+   "review_source": "Google, as quoted on its own site ('4.9 Stars 60+ Google Reviews'); not checked on Google",
+   "red_flags": [
+    "Sells partitions directly in many brands, including ASI, Bobrick, Bradley, Metpar, Scranton and AAMCO (buy-around risk)",
+    "The site shows a second phone number in the footer: 904-781-4531"
+   ],
+   "evidence_urls": [
+    "https://www.holman-inc.com/",
+    "https://www.holman-inc.com/toilet-partitions/",
+    "https://www.holman-inc.com/division-10-brands-we-sell/"
+   ],
+   "license": {
+    "name": "Holman, Inc.",
+    "area": "daytona",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run. The earlier Jacksonville pass (research/installers/jacksonville.json) found no license number on the company site. No local rule for Daytona Beach. Next step: look up by name by hand."
+   },
+   "score": 73
+  },
+  {
+   "name": "Architectural Building Specialties, Inc. (ABS)",
+   "base_city": "Ormond Beach",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "reason": "The About page says it is a Division 10 specialty contractor that specializes in the supply and installation of toilet compartments, restroom accessories and wall protection for commercial contractors and building owners throughout Florida. The Ormond Beach base comes only from a BBB directory search snippet; the company's own site gives no address.",
+   "added_by_checker": false,
+   "brands": [
+    "Scranton Products",
+    "ASI Partitions",
+    "InPro",
+    "AJW"
+   ],
+   "partition_evidence": "The About page states 'supply and installation of ... toilet compartments'. The toilet-compartments page lists its partition suppliers. The site has no project photos.",
+   "contact_page": "https://www.absincfl.com/contact",
+   "website": "https://www.absincfl.com/",
+   "red_flags": [
+    "The website lists no phone, email or address; contact is by web form only",
+    "Base city not confirmed on its own site (BBB listing seen only in a search snippet)",
+    "Supplies partitions (Scranton, ASI, InPro), so a buy-around risk"
+   ],
+   "evidence_urls": [
+    "https://www.absincfl.com/about",
+    "https://www.absincfl.com/toilet-compartments",
+    "https://www.absincfl.com/contact"
+   ],
+   "license": {
+    "name": "Architectural Building Specialties, Inc. (ABS)",
+    "area": "daytona",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.absincfl.com/",
+    "note": "The company homepage shows no license number and no base city. DBPR search is an interactive POST form, so no automated lookup was run. Next step: look up by name by hand."
+   },
+   "score": 70
+  },
+  {
+   "name": "Associated Building Specialties, Inc.",
+   "base_city": "Orlando",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "reason": "A full-service Division 10 subcontractor since 1986 that lists bathroom partitions and does the work with its own installation crews. It names the Daytona market and lists Daytona projects (One Daytona, Max Daytona). Orlando is about 55 miles away, and it also has a Tampa office.",
+   "added_by_checker": false,
+   "brands": [],
+   "partition_evidence": "The homepage lists bathroom partitions among its Division 10 scopes and says it self-performs with its own installation crews. The page has no project photos of partitions specifically.",
+   "phone": "407-339-2284",
+   "email": "estimating@absfl.net",
+   "contact_page": "https://absfl.net/",
+   "website": "https://absfl.net/",
+   "red_flags": [
+    "Works mostly on large GC-led commercial jobs (hotels, multifamily, theme parks), so it may not take small retrofit jobs",
+    "Says it has relationships with the largest manufacturers and offers products at a competitive price, so it supplies the material itself"
+   ],
+   "evidence_urls": [
+    "https://absfl.net/"
+   ],
+   "license": {
+    "name": "Associated Building Specialties, Inc.",
+    "area": "daytona",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "Same company as the palm-bay entry. DBPR search is an interactive POST form, so no automated lookup was run. Next step: look up by name by hand."
+   },
+   "score": 63
+  },
+  {
+   "name": "George P. Coyle & Sons, Inc.",
+   "base_city": "Jacksonville",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "reason": "It has a dedicated toilet partitions page and says it is a licensed and insured provider that supplies and installs commercial bathroom partitions throughout Northeast Florida. Palm Coast is on its service-area list. It is mainly a fencing and doors company, and Jacksonville is about 90 miles away.",
+   "added_by_checker": false,
+   "brands": [
+    "Bradley",
+    "Bobrick"
+   ],
+   "partition_evidence": "The toilet-partitions page says it supplies and installs code-compliant restroom partitions for schools, offices, hospitals and retail, and describes the mounting types.",
+   "phone": "904-356-4821",
+   "contact_page": "https://coylejax.com/contact/",
+   "website": "https://coylejax.com/",
+   "red_flags": [
+    "Core business is fencing, gates and doors; partitions are a side line",
+    "Supplies partitions itself (Bradley, Bobrick relationships)",
+    "Service area reaches Palm Coast but not Daytona Beach itself"
+   ],
+   "evidence_urls": [
+    "https://coylejax.com/",
+    "https://coylejax.com/toilet-partitions-in-jacksonville-florida/",
+    "https://coylejax.com/service-area/"
+   ],
+   "license": {
+    "name": "George P. Coyle & Sons, Inc.",
+    "area": "daytona",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run. The company site (coylejax.com) came back empty. Next step: look up by name by hand."
+   },
+   "score": 63
+  },
+  {
+   "name": "DDTEN, LLC",
+   "base_city": "Longwood",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "reason": "A Longwood company focused on commercial bathroom partitions and specialty products. Its Services page lists 'Professional Partition Installation' and says it serves commercial spaces in central Florida. Longwood is about 45 miles from Daytona Beach, and the site does not name Volusia or Daytona specifically.",
+   "added_by_checker": false,
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "American Specialties, Inc."
+   ],
+   "partition_evidence": "The Services page lists Professional Partition Installation and Partition Design for clients such as coffee shops, daycares, offices, hotels and apartment complexes. The page carries a Hadrian product image. The site has no project list.",
+   "phone": "(407) 790-4074",
+   "contact_page": "https://ddtenllc.com/contact",
+   "website": "http://ddtenllc.com/",
+   "red_flags": [
+    "Small site with no project list or license number shown",
+    "Appears to supply partition products itself"
+   ],
+   "evidence_urls": [
+    "http://ddtenllc.com/",
+    "https://ddtenllc.com/services",
+    "https://ddtenllc.com/contact"
+   ],
+   "license": {
+    "name": "DDTEN, LLC",
+    "area": "daytona",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+   },
+   "score": 63
+  },
+  {
+   "name": "Florida Specialty Products, LLC",
+   "base_city": "Oviedo",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "reason": "A Division 10 supply-and-install firm since 2006, serving schools, healthcare, banks, offices and retail. Its vendor logos include Scranton, Accurate, Bobrick and Bradley, but the site never names toilet partitions outright. The site states no base city or service area; Oviedo, from the candidate list, is about 45 miles away.",
+   "added_by_checker": false,
+   "brands": [
+    "Scranton",
+    "Accurate",
+    "Bobrick",
+    "Bradley",
+    "AJ Washroom",
+    "Amersan"
+   ],
+   "partition_evidence": "The site says 'Division 10 - Supply and Install' and shows partition-maker logos (Scranton, Accurate). It does not explicitly mention toilet partitions.",
+   "phone": "321-765-4975",
+   "contact_page": "https://www.yourflsp.com/contact/",
+   "website": "https://www.yourflsp.com/",
+   "red_flags": [
+    "Base city and service area not stated on the site",
+    "Supplies Division 10 products itself"
+   ],
+   "evidence_urls": [
+    "https://www.yourflsp.com/",
+    "https://www.yourflsp.com/projects/",
+    "https://www.yourflsp.com/about/"
+   ],
+   "license": {
+    "name": "Florida Specialty Products, LLC",
+    "area": "daytona",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "Same company as the palm-bay entry. DBPR search is an interactive POST form, so no automated lookup was run."
+   },
+   "score": 45
+  },
+  {
+   "name": "Interior Specialties",
+   "base_city": "Altamonte Springs",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "reason": "A Division 10 and 12 specialty subcontractor with over 40 years of experience, working with Florida GCs and construction managers. It has offices in Altamonte Springs, about 50 miles away, and Jensen Beach. Its Division 10 page lists partitions (plastic, stainless, laminate) and toilet accessories but does not explicitly say it installs toilet partitions.",
+   "added_by_checker": false,
+   "brands": [],
+   "partition_evidence": "The Division 10 page lists 'Partitions' in plastic, stainless steel and laminate. The Work page lists ABC award projects such as the Amway Center, Nemours Hospital and Epic Universe, with no partition detail.",
+   "phone": "(407) 539-1303",
+   "contact_page": "https://www.interiorspecialties.com/contact",
+   "website": "https://www.interiorspecialties.com/",
+   "red_flags": [
+    "Has an online 'Shop' product catalog, so it may sell products directly",
+    "No Daytona or Volusia projects named"
+   ],
+   "evidence_urls": [
+    "https://www.interiorspecialties.com/",
+    "https://www.interiorspecialties.com/services-2",
+    "https://www.interiorspecialties.com/work"
+   ],
+   "license": {
+    "name": "Interior Specialties",
+    "area": "daytona",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "Same company as the palm-bay entry. DBPR search is an interactive POST form, so no automated lookup was run."
+   },
+   "score": 43
+  },
+  {
+   "name": "Complete Partitions + Equipment LLC",
+   "base_city": "Lake Mary",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "reason": "Mainly sells and services operable walls and folding partitions, but toilet partitions are among its products. It serves the Southeastern US and the Caribbean from Lake Mary, about 45 miles away. Toilet partition installation is not explicitly stated.",
+   "added_by_checker": false,
+   "brands": [
+    "Scranton Products",
+    "Solar Innovations",
+    "Cascade Architectural",
+    "Sliding Door Company"
+   ],
+   "partition_evidence": "The homepage lists toilet partitions among its products and says it has factory-trained technicians for operable partitions. No toilet partition project photos were seen.",
+   "phone": "(844) 424-7925",
+   "email": "info@completepartitions.com",
+   "contact_page": "https://www.completepartitions.com/contact",
+   "website": "https://www.completepartitions.com/",
+   "red_flags": [
+    "Sells toilet partitions itself (buy-around risk)",
+    "Core business is operable walls, not restroom partitions"
+   ],
+   "evidence_urls": [
+    "https://www.completepartitions.com/"
+   ],
+   "license": {
+    "name": "Complete Partitions + Equipment LLC",
+    "area": "daytona",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.completepartitions.com/",
+    "note": "The company homepage shows no license number; it says 'Corporate Office located in Lake Mary, FL'. DBPR search is an interactive POST form, so no automated lookup was run. Next step: look up by name by hand."
+   },
+   "score": 43
+  },
+  {
+   "name": "Commercial Specialties",
+   "base_city": "Orange Park",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "reason": "No company website was found, and its MapQuest and Blue Book listings could not be loaded. A search snippet calls it a Division 10 supplier and installer in Orange Park, about 100 miles away, with no stated service to the Daytona area.",
+   "added_by_checker": false,
+   "brands": [],
+   "red_flags": [
+    "No website found; nothing verified first-hand"
+   ],
+   "evidence_urls": [],
+   "license": null,
+   "score": 0
+  }
+ ]
+}

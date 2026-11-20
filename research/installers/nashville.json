@@ -1,0 +1,400 @@
+{
+ "area": "nashville",
+ "found_count": 18,
+ "sources_tried": [
+  "Seed file raw/seeds/nashville.json: worked (mostly irrelevant remodelers and plumbers; 6 plausible partition businesses)",
+  "fastpartitions.com: blocked (Cloudflare 403)",
+  "onepointpartitions.com: blocked (403 / JS challenge)",
+  "southeastpartitions.com: intro page only, then 403 'malware detected'",
+  "manningmaterialsinc.com: worked",
+  "pillardoor.com: worked",
+  "allconspec.com and acs.pairsite.com (Allegheny Construction Specialties): worked",
+  "jmspecialties.com: 503",
+  "Bobrick find-a-rep: loads dynamically, no reps readable",
+  "ASI, Scranton, Bradley, Hadrian, Metpar, General Partitions, Ammco locators: not reached (JS locators; search budget prioritized)",
+  "The Blue Book (thebluebook.com): blocked (403)",
+  "BuildingConnected / Procore: not tried (sign-in walls)",
+  "BBB category 'partition' pages for Nashville and Murfreesboro: worked",
+  "Gallatin Chamber member directory: worked",
+  "Kelley Bros: furnishes and installs partitions but has no Tennessee location (excluded)",
+  "Prestige Distribution: Northbrook IL supplier (excluded)",
+  "WebSearch: 8 of 8 used; general searches mostly returned remodelers, plumbers and spec PDFs",
+  "Seed file research/installers/raw/seeds/nashville.json: WORKED. It had 42 maps results and 17 web results. The web results were google.com/goto redirects with no domains, so I couldn't use them. I opened the plausible maps sites: Pillar Door, Soran Group and Southeast Partitions worked. Manning Materials returned 500 and Fast Partitions returned 403. The rest were remodelers, glass shops, plumbers and stores.",
+  "Scranton Products where-to-buy (scrantonproducts.com/where-to-buy/): WORKED. The only rep for TN is Southern States Architectural Sales (678.425.8796, AL/GA/FL/MS/NC/SC/TN), a rep agency, not an installer.",
+  "Bobrick find-a-rep: page loads, but finding a rep needs the dropdown, so I couldn't read any results.",
+  "Bradley find-a-rep: page content was empty.",
+  "Hadrian /where-to-buy, ASI asi-accuratepartitions.com/find-a-rep and Metpar /representatives: all returned 404.",
+  "General Partitions and Ampco/Ammco locators: not tried.",
+  "The Blue Book (thebluebook.com): BLOCKED (403 on search and iProView pages). No Nashville Blue Book profiles showed up in search.",
+  "Procore network: WORKED. The Nashville category page and profiles opened, but the category list was mostly unrelated trades. It surfaced Himmel's Mt. Juliet; The Install Group (Brentwood) is a GC with no partition work.",
+  "BuildingConnected: not tried.",
+  "BBB category page https://www.bbb.org/us/tn/category/partition: WORKED. It surfaced Commercial Installation LLC, Manning Materials, One Point Partitions, Fast Partitions and Southeast Partitions. Prestige and JM Specialties are in Chattanooga, outside the radius, so I left them out.",
+  "Gallatin Chamber member pages (members.gallatintn.org): WORKED, for Fast Partitions.",
+  "Bing search via WebFetch: no relevant results.",
+  "WebSearch: used all 8 of 8 allowed searches. They covered the Nashville toilet partition and Division 10 queries, suburb-name queries, Blue Book Nashville, toilet compartments subcontractor, the restroom partitions installer TN cities query, the specialties/lockers query, the Division 10 furnish-and-install query, and Division X Specialties Franklin. They found Allegheny Construction Specialties and confirmed Pillar Door's Division 10 page.",
+  "onepointpartitions.com: BLOCKED (403).",
+  "Skipped: Restroom Stalls and All (Gainesville, GA). Its FAQ says its own W2 crews install in Tennessee and serve Nashville regularly, but it has no local base; it is worth adding if regional installers are accepted. Also skipped Prestige Distribution (national network), Martin Bros (California), Widener Inc (PA), Division10 Inc (NY/NJ) and Demar Specialties (CA/NV).",
+  "Yelp: not tried (blocked in earlier runs)."
+ ],
+ "candidates": [
+  {
+   "name": "Soran Group Inc",
+   "base_city": "Nashville",
+   "state": "TN",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://sorangroupinc.com/",
+   "phone": "615-949-9059",
+   "email": "info@sorangroupinc.com",
+   "contact_page": "https://sorangroupinc.com/contact/",
+   "partition_evidence": "Homepage lists 'Bathroom Partitions & Hardware Installation' for commercial or residential spaces; contact form has a 'Bathroom Partitions Installation' option and the FAQ covers partition installation in the greater Nashville area.",
+   "red_flags": [
+    "No project photos or named past partition jobs on the pages read",
+    "Also does residential doors and locksmith work, so it's a general door and hardware installer rather than a Division 10 specialist",
+    "Not seen supplying partitions, but confirm"
+   ],
+   "reason": "Nashville installer that names bathroom partition installation as a service and covers commercial doors too. Best fit on the list, but no project evidence was seen.",
+   "evidence_urls": [
+    "https://sorangroupinc.com/",
+    "https://sorangroupinc.com/contact/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Soran Group Inc",
+    "area": "nashville",
+    "status": "not_online",
+    "registry": "Tennessee Board for Licensing Contractors, Verify a License (verify.tn.gov, redirects to search.cloud.commerce.tn.gov)",
+    "source_url": "https://verify.tn.gov/",
+    "note": "Checked 2026-11-19. The state portal is a script-rendered search that uses reCAPTCHA, so it could not be searched automatically. Look this business up by hand there. The company site (https://sorangroupinc.com/) says only 'Licensed & Certified', with no license number or state named. Its header says 'Door Tech Nashville', which may be a trade name, so search both names. The site gives the base city as Nashville, TN and the phone as 615 949 9059. Metro Nashville also requires a permit bond and a Metro business license, but no public online contractor list was found for that."
+   },
+   "score": 70
+  },
+  {
+   "name": "Commercial Installation, LLC",
+   "base_city": "Clarksville",
+   "state": "TN",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [
+    "Bobrick"
+   ],
+   "website": "https://commercialinstallation.com",
+   "phone": "(931) 233-8530",
+   "email": "",
+   "contact_page": "https://commercialinstallation.com/contact/",
+   "review_source": "BBB A+ rating, accredited (https://www.bbb.org/us/tn/nashville/category/partition)",
+   "partition_evidence": "Building specialties installation includes 'restroom partitions'; the FAQ names toilet partitions. Shows supplier logos including Bobrick.",
+   "red_flags": [
+    "Based in Clarksville, about 40+ miles from the area center (beyond the 30-mile limit)",
+    "Says it serves Middle Tennessee and Southern Kentucky but doesn't name Nashville"
+   ],
+   "reason": "Commercial installer that clearly installs toilet partitions. It's just outside the 30-mile radius but serves Middle Tennessee, so it's worth confirming Nashville coverage.",
+   "evidence_urls": [
+    "https://commercialinstallation.com",
+    "https://commercialinstallation.com/contact/",
+    "https://www.bbb.org/us/tn/nashville/category/partition"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Commercial Installation, LLC",
+    "area": "nashville",
+    "status": "not_online",
+    "registry": "Tennessee Board for Licensing Contractors, Verify a License (verify.tn.gov, redirects to search.cloud.commerce.tn.gov)",
+    "source_url": "https://verify.tn.gov/",
+    "note": "Checked 2026-11-19. The state portal uses reCAPTCHA and script rendering, so it could not be searched automatically. Check it by hand. The company site (https://commercialinstallation.com) says it is 'fully licensed, bonded, and insured', with no license number. It gives the base city as Clarksville, TN and says it serves Clarksville, Nashville and Hopkinsville. Phone: (931) 233-8530. Jobs in Metro Nashville also need Metro's permit bond and business license."
+   },
+   "score": 60
+  },
+  {
+   "name": "Pillar Door & Hardware",
+   "base_city": "Nashville",
+   "state": "TN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://pillardoor.com/",
+   "phone": "(615) 535-0678",
+   "email": "info@pillardoor.com",
+   "contact_page": "https://pillardoor.com/contact",
+   "partition_evidence": "Lists 'Division 8 & 10 Installations' covering doors, frames, hardware, glass and partitions. Toilet or restroom partitions aren't named.",
+   "red_flags": [
+    "Toilet partitions not named explicitly",
+    "Mainly a commercial door subcontractor"
+   ],
+   "reason": "Nashville commercial door subcontractor that installs Division 10 items, generic partitions included. Toilet partition work isn't shown.",
+   "evidence_urls": [
+    "https://pillardoor.com/",
+    "https://pillardoor.com/contact"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Pillar Door & Hardware",
+    "area": "nashville",
+    "status": "not_online",
+    "registry": "Tennessee Board for Licensing Contractors, Verify a License (verify.tn.gov, redirects to search.cloud.commerce.tn.gov)",
+    "source_url": "https://verify.tn.gov/",
+    "note": "Checked 2026-11-19. The state portal uses reCAPTCHA and script rendering, so it could not be searched automatically. Check it by hand. The company site (https://pillardoor.com/) says 'Licensed, insured, and Serving Tennessee and surrounding states', with no license number. It gives the base city as Nashville, Tennessee and the phone as (615) 535-0678. No public online list was found for Metro's permit bond or business license."
+   },
+   "score": 50
+  },
+  {
+   "name": "Allegheny Construction Specialties",
+   "base_city": "Nashville",
+   "state": "TN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://allconspec.com",
+   "phone": "615-671-1700",
+   "email": "info@allconspec.com",
+   "contact_page": "https://allconspec.com/#contact",
+   "partition_evidence": "Division 10/11/12 contractor; the products page says it can provide every type of partition from every US manufacturer and that it supplies and installs toilet and bath accessories. Partition installation isn't stated outright.",
+   "red_flags": [
+    "Supplies partitions itself (buy-around risk)",
+    "Offices also in Pittsburgh and South Florida; featured projects are casinos and hotels (larger GC work)"
+   ],
+   "reason": "Nashville-headquartered Division 10 furnish-and-install contractor. It likely installs partitions but also sells them, so it competes with us on supply.",
+   "evidence_urls": [
+    "https://allconspec.com",
+    "https://allconspec.com/products"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Allegheny Construction Specialties",
+    "area": "nashville",
+    "status": "not_online",
+    "registry": "Tennessee Board for Licensing Contractors, Verify a License (verify.tn.gov, redirects to search.cloud.commerce.tn.gov)",
+    "source_url": "https://verify.tn.gov/",
+    "note": "Checked 2026-11-19. The state portal uses reCAPTCHA and script rendering, so it could not be searched automatically. Check it by hand. The company site (https://allconspec.com) says it is headquartered in Nashville, TN, with offices in Pittsburgh and South Florida. The site gives no license number. Phone: 615-671-1700."
+   },
+   "score": 50
+  },
+  {
+   "name": "Himmel's Doors and Hardware (Mt. Juliet branch)",
+   "base_city": "Mt. Juliet",
+   "state": "TN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "ASI"
+   ],
+   "website": "https://www.himmels.com",
+   "phone": "615-622-5777",
+   "email": "",
+   "contact_page": "https://www.himmels.com/request-a-quote",
+   "partition_evidence": "Has a 'Toilet Partitions & Accessories' product category (Division 10) with a school restroom partition photo, and offers installation and maintenance services in general. It isn't clear whether it installs partitions.",
+   "red_flags": [
+    "Nashville/Mt. Juliet office marked 'Coming Soon'",
+    "Sells partitions (Bobrick and ASI among its partners), so it's a buy-around risk",
+    "Multi-location door and hardware distributor"
+   ],
+   "reason": "A door and hardware distributor that sells toilet partitions and may install them. Its Mt. Juliet office isn't open yet.",
+   "evidence_urls": [
+    "https://www.himmels.com"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Himmel's Doors and Hardware (Mt. Juliet branch)",
+    "area": "nashville",
+    "status": "not_online",
+    "registry": "Tennessee Board for Licensing Contractors, Verify a License (verify.tn.gov, redirects to search.cloud.commerce.tn.gov)",
+    "source_url": "https://verify.tn.gov/",
+    "note": "Checked 2026-11-19. The state portal uses reCAPTCHA and script rendering, so it could not be searched automatically. Check it by hand. The company is multi-state (Louisiana, Texas, Tennessee), so the Tennessee license may be held under a different legal entity name. The company site (https://www.himmels.com) shows its Nashville location in Mt. Juliet, TN, with phone 615-622-5777. The site gives no contractor license number."
+   },
+   "score": 50
+  },
+  {
+   "name": "Southeast Partitions LLC",
+   "base_city": "Murfreesboro",
+   "state": "TN",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [
+    "Modernfold",
+    "Renlita",
+    "EURO-WALL",
+    "Cascade Architectural",
+    "Clopay",
+    "Woodfold"
+   ],
+   "website": "https://www.southeastpartitions.com/",
+   "phone": "615.784.5226",
+   "email": "",
+   "contact_page": "https://www.southeastpartitions.com/getintouch",
+   "partition_evidence": "Works on operable partitions, air walls and overhead doors only. Toilet partitions aren't mentioned.",
+   "red_flags": [
+    "Operable wall specialist, not toilet partitions"
+   ],
+   "reason": "Installs operable and folding partitions, not toilet or restroom partitions.",
+   "evidence_urls": [
+    "https://www.southeastpartitions.com/home"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Southeast Partitions",
+    "area": "nashville",
+    "status": "not_online",
+    "registry": "Tennessee Board for Licensing Contractors, Verify license search (verify.tn.gov, redirects to search.cloud.commerce.tn.gov)",
+    "source_url": "https://verify.tn.gov/",
+    "note": "Checked 2026-11-19. The state lookup is a JavaScript app with reCAPTCHA, so I couldn't look up the business automatically and no license record was read. The company site (https://www.southeastpartitions.com/) shows only a splash page with the company name and no license number, city or phone. A third-party NAICS directory (https://naicslist.com/company-profile/southeast-partitions-llc-murfreesboro-tn-37129) lists 'Southeast Partitions LLC' in Murfreesboro, TN (NAICS 238290). That listing isn't official and isn't a license. Search the business name by hand at verify.tn.gov. Work inside Metro Nashville also needs a Metro business license and a permit bond."
+   },
+   "score": 35
+  },
+  {
+   "name": "Manning Materials, Inc.",
+   "base_city": "Nashville",
+   "state": "TN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://www.manningmaterialsinc.com/",
+   "phone": "(615) 248-1001",
+   "email": "",
+   "contact_page": "",
+   "review_source": "BBB: not rated, not accredited",
+   "partition_evidence": "BBB profile: offers toilet partitions, partition hardware, washroom accessories and other architectural specialties. Doesn't say it installs.",
+   "red_flags": [
+    "Website returned HTTP 500, so services couldn't be verified",
+    "Partition distributor, a direct competitor and buy-around risk"
+   ],
+   "reason": "Long-running Nashville distributor of toilet partitions. No installation evidence, and it competes with us on supply.",
+   "evidence_urls": [
+    "https://www.bbb.org/us/tn/nashville/profile/partition/manning-materials-inc-0573-15103109",
+    "https://www.bbb.org/us/tn/nashville/category/partition"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "Gallatin",
+   "state": "TN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "phone": "(800) 756-6817",
+   "email": "",
+   "contact_page": "",
+   "review_source": "BBB A+, accredited, 0 reviews",
+   "review_count": 0,
+   "partition_evidence": "BBB: offers commercial building specialties such as toilet partitions and accessories. The website (HTTP 403 to us) presents it as a national partition seller with pages for many cities.",
+   "red_flags": [
+    "National toilet partition seller and manufacturer, a direct competitor",
+    "Website blocked automated access, so installation couldn't be verified"
+   ],
+   "reason": "National partition seller, not a local installer, and it competes with Next Partitions directly.",
+   "evidence_urls": [
+    "https://www.bbb.org/us/tn/gallatin/profile/partition/one-point-partitions-0573-37019659"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Fast Partitions",
+   "base_city": "Gallatin",
+   "state": "TN",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "ASI",
+    "Bradley"
+   ],
+   "website": "https://www.fastpartitions.com/",
+   "phone": "(877) 296-8862",
+   "email": "",
+   "contact_page": "",
+   "review_count": 18,
+   "review_source": "BBB A+, accredited since 2025, 18 customer reviews",
+   "partition_evidence": "BBB describes it as an online distributor of partitions, hardware and accessories that ships nationwide. Installation isn't mentioned.",
+   "red_flags": [
+    "Online partition distributor, a direct competitor",
+    "Website returned 403"
+   ],
+   "reason": "Online partition seller rather than an installer, and a direct competitor.",
+   "evidence_urls": [
+    "https://www.bbb.org/us/tn/gallatin/profile/bathroom-accessories/fast-partitions-0573-37327521"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Division X Specialties Inc",
+   "base_city": "Franklin",
+   "state": "TN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "No website or listing found.",
+   "red_flags": [
+    "No web presence found; couldn't verify the business exists"
+   ],
+   "reason": "No website, listing or evidence of partition work found in searches.",
+   "evidence_urls": [],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "JM Specialties, Inc.",
+   "base_city": "Chattanooga",
+   "state": "TN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "reason": "The only evidence is a BBB listing under Partitions (A+, not accredited) in Chattanooga, about 115 miles from Nashville. The guessed website didn't respond, and nothing shows installation or a stated Nashville service area.",
+   "partition_evidence": "BBB category 'Partitions' only.",
+   "brands": [],
+   "phone": "(423) 624-6563",
+   "review_source": "BBB rating A+ (not accredited)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/tn/category/partition"
+   ],
+   "red_flags": [
+    "No website found",
+    "No statement that it serves the Nashville area"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 3
+  }
+ ]
+}

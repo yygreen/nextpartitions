@@ -1,0 +1,405 @@
+{
+ "area": "long-island",
+ "found_count": 12,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/long-island.json: worked (maps results useful; most web results were Google redirect links)",
+  "Company sites: csinstallers.com, kspny.com, cmecontractorspecialties.com, mavinewyork.com worked; flushmetal.com, knickerbockerpartition.com, monarchpartition.com, partitioninc.com, jacknob.com read and found to be manufacturers or hardware sellers (excluded as manufacturer plants / stores); privacypartitionsne.com read but thin, its /contact page returned 404",
+  "metsalesinstallations.com and modulexcorp.com: did not resolve (blocked by session network or no longer exist)",
+  "Bobrick find-a-rep: page loads but results need a dropdown/JS, no NY reps shown",
+  "Scranton Products where-to-buy: worked but lists only territory product specialists, not installers",
+  "ASI Global Partitions find-a-rep: redirect to http, not followed further",
+  "Bradley, Hadrian, Metpar, General Partitions, Ammco locators: not tried (fetch budget)",
+  "The Blue Book (thebluebook.com): blocked (403) on every page; only search snippets used",
+  "Thomasnet: blocked (403); Thomasnet news story redirects to generic insights page",
+  "ARCAT company pages: blocked (403)",
+  "CIS Leads (cisleads.com): worked, phones hidden behind registration",
+  "onepointpartitions.com: blocked (403); Jersey City NJ online supplier, not added",
+  "New York Build Expo article: worked",
+  "BuildingConnected / Procore public profiles: not tried",
+  "WebSearch: 8 of 8 used (Long Island installation, Division 10 Long Island, furnish and install Nassau/Suffolk, Partition Servicing/Snappy/ADA, Division 10 Inc Hackensack, Inter-Co Kearny, Nassau city names); Yelp/BBB did not surface"
+ ],
+ "candidates": [
+  {
+   "name": "Construction Specialties Installations (CSI / CS Installers)",
+   "base_city": "Ronkonkoma",
+   "state": "NY",
+   "website": "https://www.csinstallers.com/",
+   "phone": "(866) 746-8849",
+   "contact_page": "https://www.csinstallers.com/contact/",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "Homepage lists toilet partitions and bathroom partition installation as core services; certified installer for Privada, Thrislington, Privacy Plus",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [
+    "Privada",
+    "Thrislington",
+    "Privacy Plus",
+    "Hollman"
+   ],
+   "within_area": "yes",
+   "reason": "Division 10 installer with an office in Ronkonkoma (Long Island) installing toilet partitions for commercial, healthcare and education clients across the Northeast. Site describes installation only, no supply.",
+   "red_flags": [],
+   "evidence_urls": [
+    "https://www.csinstallers.com/",
+    "https://www.csinstallers.com/contact/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Construction Specialties Installations (CSI / CS Installers)",
+    "area": "long-island",
+    "status": "not_online",
+    "registry": "Long Island town/village building department (no central online registry); NYC DOB License Info checked as context",
+    "note": "The area rule is a town or village building department check, and there is no central online registry for it. NYC DOB License Info has no record under 'CS Installers' or 'Construction Specialties Installations'. There is an EXPIRED general contractor record (no. 603318) for a business named 'Construction Specialties' based in Northport, NY. It is not confirmed to be this Ronkonkoma company, so don't link the two.",
+    "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+   },
+   "score": 70
+  },
+  {
+   "name": "Karpen Steel Products, Inc",
+   "base_city": "Ronkonkoma",
+   "state": "NY",
+   "website": "https://www.kspny.com/",
+   "phone": "(631) 841-0028",
+   "email": "Info@kspny.com",
+   "contact_page": "https://www.kspny.com/contact",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "Site says it distributes and installs toilet partitions and bathroom accessories; invites restroom layout sketches for partition quotes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick",
+    "Scranton Products",
+    "AAMCO"
+   ],
+   "within_area": "yes",
+   "reason": "Long Island distributor and installer of toilet partitions for commercial, industrial and healthcare clients. As a distributor of the same brands Next Partitions sells, it is a buy-around risk.",
+   "red_flags": [
+    "Distributor of partitions (buy-around risk)",
+    "Image alt text mentions Amityville, NY while footer says Ronkonkoma",
+    "No project photos on site"
+   ],
+   "evidence_urls": [
+    "https://www.kspny.com/",
+    "https://www.kspny.com/contact"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Karpen Steel Products, Inc",
+    "area": "long-island",
+    "status": "not_online",
+    "registry": "Long Island town/village building department (no central online registry); NYC DOB License Info checked as context",
+    "note": "There is no central online registry for the town or village rule. NYC DOB License Info has no business record for 'Karpen Steel Products'. This is not needed for work outside NYC.",
+    "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+   },
+   "score": 70
+  },
+  {
+   "name": "CME Corp (Contractor Specialties)",
+   "base_city": "Garden City",
+   "state": "NY",
+   "website": "https://cmecontractorspecialties.com/",
+   "phone": "(888) 656-3360",
+   "email": "contractorsales@cmecorp.com",
+   "contact_page": "https://cmecontractorspecialties.com/#contact-us",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "Supplies and installs toilet partitions and lockers, union and non-union",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "ASI Accurate",
+    "Bobrick",
+    "Bradley",
+    "Hadrian",
+    "Metpar",
+    "Privada",
+    "Scranton"
+   ],
+   "within_area": "yes",
+   "reason": "Garden City (Nassau) Division 10 contractor that supplies and installs toilet partitions for general contractors and facility managers in the NY metro area. Also sells partitions, so it is a buy-around risk.",
+   "red_flags": [
+    "Supplies partitions itself (buy-around risk)"
+   ],
+   "evidence_urls": [
+    "https://cmecontractorspecialties.com/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "CME Corp (Contractor Specialties)",
+    "area": "long-island",
+    "status": "not_online",
+    "registry": "Long Island town/village building department (no central online registry); NYC DOB License Info checked as context",
+    "note": "There is no central online registry for the town or village rule. NYC DOB License Info has no match for 'CME Corp' or 'Contractor Specialties'.",
+    "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+   },
+   "score": 70
+  },
+  {
+   "name": "Mavi New York",
+   "base_city": "Long Island City",
+   "state": "NY",
+   "website": "https://mavinewyork.com/",
+   "phone": "718-874-3805",
+   "email": "info@mavinewyork.com",
+   "contact_page": "https://mavinewyork.com/contact-us/",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "Authorized distributor and installer of commercial toilet partitions; union, prevailing wage and non-union installation",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "ASI Group",
+    "Bobrick",
+    "Bradley",
+    "Hadrian",
+    "Metpar",
+    "Scranton Products"
+   ],
+   "within_area": "nearby",
+   "reason": "Queens-based commercial partition distributor and installer serving New York and the Northeast. It stocks partitions in its own warehouse, so it is a strong buy-around risk.",
+   "red_flags": [
+    "Stocks and sells partitions, delivers nationwide (direct competitor / buy-around risk)"
+   ],
+   "evidence_urls": [
+    "https://mavinewyork.com/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Mavi New York",
+    "area": "long-island",
+    "status": "not_online",
+    "registry": "Long Island town/village building department (no central online registry); NYC DOB License Info checked as context",
+    "note": "There is no central online registry for the Long Island town or village rule. NYC DOB License Info shows MAVI NEW YORK, INC (Long Island City) with general contractor registration 626466, status EXPIRED. That matters only for permitted work inside NYC.",
+    "license_number": "626466 (NYC DOB GC, EXPIRED)",
+    "license_type": "NYC DOB General Contractor registration",
+    "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+   },
+   "score": 65
+  },
+  {
+   "name": "Inter-Co Division 10 (New Jersey), Inc.",
+   "base_city": "Kearny",
+   "state": "NJ",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "NY Build Expo interview (Mar 2026): supplies and installs toilet partitions and other Division 10 products on office towers, hospitals, schools; acquired ModuleX Partitions",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "regional",
+   "reason": "Division 10 distributor and installer working mostly for general contractors. Its president says the Kearny facility serves Manhattan and Long Island. Its own website and contact details were not checked.",
+   "red_flags": [
+    "Distributor (buy-around risk)",
+    "Company website and contact details not verified",
+    "Mainly general-contractor work"
+   ],
+   "evidence_urls": [
+    "https://www.newyorkbuildexpo.com/industry-news-1/behind-booth-inter-co-division-10"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Inter-Co Division 10 (New Jersey), Inc.",
+    "area": "long-island",
+    "status": "not_online",
+    "registry": "NJ Division of Consumer Affairs license verification (newjersey.mylicense.com); Long Island county (Nassau/Suffolk) licensing not checked in this NJ batch",
+    "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+    "note": "Kearny, NJ. The NJ search is an interactive form (Home Improvement Contractors is listed as a profession). Submitting forms is outside these research rules, so no record was read. The NJ HIC registration covers residential home improvement, not commercial partition work. No Long Island area rule came with this batch, so the Nassau and Suffolk county license lookups weren't run. Status unknown."
+   },
+   "score": 63
+  },
+  {
+   "name": "Snappy Solutions Inc.",
+   "base_city": "East Hampton",
+   "state": "NY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "Blue Book lists it under Toilet Partitions & Cubicles with project pages titled 'furnish install restroom partitions' (New York, NY, approx. $70,000); page itself returned 403",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "reason": "An East Hampton (Long Island) WBE firm that Blue Book lists as a toilet partition supplier, with furnish-and-install restroom partition projects. Only search snippets were readable, so this is unconfirmed.",
+   "red_flags": [
+    "No company website found",
+    "Blue Book pages blocked (403); evidence from search snippets only",
+    "Listed as material supplier (buy-around risk)"
+   ],
+   "evidence_urls": [
+    "https://thebluebook.com/iProView/1658082/snappy-solutions-inc/material-suppliers/construction-projects/furnish-install-restroom-partitions-349027"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Snappy Solutions Inc.",
+    "area": "long-island",
+    "status": "not_online",
+    "registry": "Long Island town/village building department (no central online registry; East Hampton town/village)",
+    "note": "There is no central online registry for the town or village rule. NYC DOB License Info has no match for 'Snappy'. The Suffolk County home improvement licence covers residential work only and was not checked.",
+    "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+   },
+   "score": 50
+  },
+  {
+   "name": "Sanitary Hygiene Systems",
+   "base_city": "Plainview",
+   "state": "NY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "CIS directory listing says it installs bathroom partitions for residential and commercial properties; no company website found",
+   "commercial": "mostly",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "reason": "A third-party directory says this Plainview (Long Island) company installs bathroom partitions and supplies washroom products. No company website, projects or photos were found to confirm it.",
+   "red_flags": [
+    "No company website found",
+    "Only third-party directory evidence"
+   ],
+   "evidence_urls": [
+    "https://cisleads.com/company/details/410407"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Sanitary Hygiene Systems",
+    "area": "long-island",
+    "status": "not_online",
+    "registry": "Long Island town/village building department (no central online registry); NYC DOB License Info checked as context",
+    "note": "There is no central online registry for the town or village rule. NYC DOB License Info has no match for 'Sanitary Hygiene' or 'Hygiene'.",
+    "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+   },
+   "score": 45
+  },
+  {
+   "name": "ADA Advance Industries (ADA Partitions)",
+   "base_city": "Brooklyn",
+   "state": "NY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "Blue Book lists it as a material supplier specializing in toilet partitions and stalls, Division 10 work specialists",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "nearby",
+   "reason": "A Brooklyn MBE listed as a toilet partition and Division 10 specialist. It is classed as a material supplier, and no website or installation evidence was found.",
+   "red_flags": [
+    "No company website found",
+    "Listed as material supplier (buy-around risk)",
+    "Evidence from Blue Book search snippets only"
+   ],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/393384/ada-advance-industries/material-suppliers/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "ADA Advance Industries (ADA Partitions)",
+    "area": "long-island",
+    "status": "not_online",
+    "registry": "Long Island town/village building department (no central online registry); NYC DOB License Info checked as context",
+    "note": "The company is based in Brooklyn (NYC). There is no central online registry for the Long Island town or village rule. NYC DOB License Info has no match for 'ADA Advance', 'Advance Ind' or 'Partition' under this name, so it has no NYC GC registration that the dataset shows.",
+    "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+   },
+   "score": 45
+  },
+  {
+   "name": "Division 10, Inc.",
+   "base_city": "Hackensack",
+   "state": "NJ",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "Blue Book lists it as a subcontractor under Toilet Partitions & Cubicles; self-description says it supplies bathroom accessories, toilet partitions, lockers in the NY metro area since 2002",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "regional",
+   "reason": "A NY/NJ MBE Division 10 subcontractor and supplier serving the New York metro area. Installation and Long Island service aren't confirmed on a company site.",
+   "red_flags": [
+    "No company website found",
+    "Supplier of partitions (buy-around risk)",
+    "Evidence from Blue Book search snippets only"
+   ],
+   "evidence_urls": [
+    "https://www.thebluebook.com/construction/10-new-jersey-north/3070-toilet-partitions-cubicles/?r=1"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 43
+  },
+  {
+   "name": "Privacy Partitions",
+   "base_city": "West Haven",
+   "state": "CT",
+   "website": "https://privacypartitionsne.com/",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "Site title reads 'Bathroom Partition Supply & Installation'; page content otherwise empty; contact and about pages 404",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "nearby",
+   "reason": "A Connecticut supply-and-install partition firm about 30 miles across the Sound. Its site gives almost no content and doesn't mention New York or Long Island.",
+   "red_flags": [
+    "Website nearly empty; contact/about pages 404",
+    "No mention of serving New York",
+    "Supplies partitions (buy-around risk)"
+   ],
+   "evidence_urls": [
+    "https://privacypartitionsne.com/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Privacy Partitions",
+    "area": "long-island",
+    "status": "not_required_online_check",
+    "registry": "Connecticut DCP State Licenses and Credentials (official open data, data.ct.gov dataset ngch-56tr) and CT Business Registry Business Master (data.ct.gov n7gp-d28j); no Long Island commercial registry applies",
+    "source_url": "https://data.ct.gov/resource/ngch-56tr.json",
+    "note": "Checked 2026-11-19. Connecticut has no state license for commercial partition installation (repo research/state-licensing/states.json, CT: Major Contractor registration only for threshold buildings, HIC registration residential only). For the long-island area, the Nassau and Suffolk county licenses cover home improvement (residential) work; commercial permits come from the individual town or village (repo research/local-rules/cities.json, low confidence, phone-call item), so there is no online registry to check for commercial work. Searches of the official CT license data (name, business name and DBA containing 'PRIVACY', and West Haven names with PARTITION/TOILET/BATH) found no record for Privacy Partitions: no CT Home Improvement Contractor registration under that name. The CT business registry open data also has no entity named 'Privacy Partitions'; the brand may trade under another legal name, which the company site (privacypartitionsne.com) does not state. If they do residential jobs in CT or on Long Island, a CT HIC registration or Nassau/Suffolk home improvement license would be needed; ask for their legal entity name and any HIC number."
+   },
+   "score": 25
+  },
+  {
+   "name": "S & M Partition Co",
+   "base_city": "Yaphank",
+   "state": "NY",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "partition_evidence": "No listing or website found",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "reason": "No web presence found for this name in Yaphank, so it can't be verified as a real or active business.",
+   "red_flags": [
+    "No website or directory listing found"
+   ],
+   "evidence_urls": [],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Met Sales & Installations Corp",
+   "base_city": "Farmingdale",
+   "state": "NY",
+   "website": "http://metsalesinstallations.com/",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "partition_evidence": "Website could not be fetched (host not reachable from this session); NAICS directory lists it only as 'All Other Specialty Trade Contractors'",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "reason": "No partition evidence could be read. The company site isn't reachable from this session, so allow metsalesinstallations.com in the network settings and recheck before dropping it.",
+   "red_flags": [
+    "Website unreachable from this session (network allowlist)",
+    "No partition evidence found"
+   ],
+   "evidence_urls": [
+    "https://naicslist.com/company-profile/met-sales-and-installations-corp-farmingdale-ny-11735"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

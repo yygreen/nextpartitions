@@ -2,6 +2,7 @@
 
 - `semrush-toilet-partition-installer_us_2026-10-14.csv`: raw export, 147 keywords.
 - `keywords-mapped-to-pages.csv`: the same keywords, each assigned a target page and suggested URL.
+- `dfw-variants-2026-11-05.csv`: DataForSEO (Google Ads) search volume for 7 seed terms × place-name variants, in four search locations. See below.
 
 ## Groups
 
@@ -30,3 +31,27 @@
 - **Cross-links:**
   - Cost guide → DFW price table, configurator (with installation added), installer directory.
   - How-to guide → licensing articles (`../installer-regulations.md`), "hire an approved installer" pages, hardware pages.
+
+## DFW place-name test (DataForSEO, 2026-11-05)
+
+Source: DataForSEO Google Ads search volume, language English, average of the 12 months Nov 2025–Oct 2026. Searched from four locations: United States (2840), the Dallas–Ft. Worth DMA (200623), Dallas city (1026339) and Fort Worth city (1026411).
+
+Seeds: toilet partition installers, bathroom partition installers, restroom partition installation, toilet partitions, bathroom partitions, commercial bathroom partitions, bathroom stall installers. Each with no place name, "dallas", "dallas tx", "fort worth", "fort worth tx", "dallas fort worth", "dfw" (as a suffix, and "dallas/fort worth/dfw" as a prefix) and "near me".
+
+Rows with `row_type = total` sum the 7 seeds for one variant in one location.
+
+| Variant | US | DFW DMA |
+|---|---|---|
+| No place name | 8,430 | 310 |
+| near me | 1,090 | 70 |
+| Dallas / Dallas TX | 20 | 20 |
+| Fort Worth / Fort Worth TX | 0 | 0 |
+| Dallas Fort Worth | 0 | 0 |
+| DFW | 0 | 0 |
+
+How to read it:
+
+- Google Ads reports anything under ~10 a month as 10, and 0 means below its threshold, not "never".
+- Google groups close variants, so "toilet partitions dallas", "toilet partitions dallas tx" and "dallas toilet partitions" are the same 10 searches, not 30.
+- People in the DFW area mostly search without a place name (310/mo in the DMA) and Google localises the results. Place names in titles matter less than being an indexable local page with an address and area served.
+- Conclusion: "DFW" and "Dallas Fort Worth" don't beat the city names. Keep the two areas (Dallas, Fort Worth) and use "Dallas–Fort Worth" only as a descriptive phrase on the Texas hub.

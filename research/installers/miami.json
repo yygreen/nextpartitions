@@ -1,0 +1,309 @@
+{
+ "area": "miami",
+ "found_count": 8,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/miami.json: worked; yielded Tri-County Partitions, Diamond Partitions, RTI Supply, Schedule 10, ASD Specialties, One Point, Tropical Glass (rest were glass/shower door shops, remodelers, bath stores: skipped)",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads but results are dropdown/JS driven, no rep shown",
+  "Hadrian find-a-rep and Scranton Products find-a-rep: guessed URLs returned 404; not retried (ASI, Bradley, Metpar, General Partitions, Ampco locators not tried due to effort budget)",
+  "The Blue Book (thebluebook.com): 403 blocked on search and iProView pages; one profile (Tri-County Building Specialties) seen only via web search snippets",
+  "BuildingConnected / Procore: not tried",
+  "WebSearch (8 of 8 used): 'toilet partition installation Miami' mostly One Point Partitions pages; Division 10 / Fort Lauderdale / Broward searches surfaced Tri-County Building Specialties; others returned national firms (Prestige Distribution, Partition Plus, CME, UDH) with no South Florida base",
+  "Miami-Dade Aviation bathroom partitions bid PDF (miami-airport.com): fetched, no contractor names, only acceptable manufacturers",
+  "BBB category page: 404; Yelp search: 403 blocked",
+  "asdspecialties.com: did not resolve in this session (host may need to be allowed in network settings)",
+  "onepointpartitions.com: 403 on direct fetch"
+ ],
+ "candidates": [
+  {
+   "name": "Diamond Partitions, LLC",
+   "base_city": "North Miami",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick (accessories)"
+   ],
+   "website": "https://www.diamondpartitions.com/",
+   "phone": "(786) 209-6607",
+   "email": "sales@diamondpartitions.com",
+   "contact_page": "https://www.diamondpartitions.com/plan-room",
+   "evidence_urls": [
+    "https://www.diamondpartitions.com/",
+    "https://www.diamondpartitions.com/plan-room"
+   ],
+   "partition_evidence": "B2B furnish-and-install of commercial toilet partitions (powder-coated, HPL, HDPE, stainless, phenolic), lockers and accessories for general contractors.",
+   "reason": "Commercial Division 10 furnish-and-install firm in North Miami that installs toilet partitions. Works on a furnish-and-install basis, so it sells partitions too.",
+   "red_flags": [
+    "Furnish-and-install model: sells partitions itself (buy-around risk)",
+    "Marketing claim of 'ADA Pass Guarantee'; no third-party reviews seen"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Diamond Partitions, LLC",
+    "area": "miami",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (state); Miami-Dade BCCO Contractor Inquiry (county, reCAPTCHA)",
+    "license_type": "",
+    "license_number": "",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee?Mode=0",
+    "note": "The DBPR name search for 'DIAMOND PARTITIONS' and 'DIAMOND PARTITION' returned 0 records, so there is no state license or construction business record under that name. A Miami-Dade Certificate of Competency could not be checked because the county search needs a reCAPTCHA. A license held under a different legal name or a qualifier's name was not searched."
+   },
+   "score": 70
+  },
+  {
+   "name": "RTI Supply",
+   "base_city": "Doral",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "AMPCO"
+   ],
+   "website": "http://rtisupply.com/",
+   "phone": "(305) 863-9094",
+   "email": "sales@rtisupply.com",
+   "contact_page": "https://rtisupply.com/contact-us",
+   "evidence_urls": [
+    "http://rtisupply.com/",
+    "https://rtisupply.com/contact-us"
+   ],
+   "partition_evidence": "Homepage describes it as a South Florida distributor and installer of bathroom partitions; commercial sectors listed (restaurants, schools, stadiums, offices, hotels); has an 'Installations' gallery.",
+   "reason": "South Florida distributor and installer of toilet partitions for commercial clients, based in Doral. Primarily a distributor (AMPCO preferred distributor), so a strong buy-around risk.",
+   "red_flags": [
+    "Distributor of partitions (AMPCO): buy-around risk",
+    "Footer lists both Doral and Miami for the same ZIP"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "RTI Supply",
+    "area": "miami",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (state); Miami-Dade BCCO Contractor Inquiry (county, reCAPTCHA)",
+    "license_type": "",
+    "license_number": "",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee?Mode=0",
+    "note": "The DBPR search for 'RTI SUPPLY' returned 0 records. The broader search for 'RTI' found no Doral or supply business: it listed unrelated entities such as RTI Professional Services LLC (roofing and air-conditioning licenses, Miami 33186) and RTI Restoration Technology (Fort Lauderdale), and nothing links them to RTI Supply. RTI Supply may be a supplier rather than an installer. The Miami-Dade county search could not be run (reCAPTCHA)."
+   },
+   "score": 70
+  },
+  {
+   "name": "Tri-County Partitions, LLC",
+   "base_city": "Miami Lakes",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Accurate Partitions (ASI)",
+    "Bobrick",
+    "Hadrian",
+    "Scranton Products",
+    "Bradley"
+   ],
+   "website": "http://www.tricountypartitions.com/",
+   "phone": "(305) 748-5990",
+   "email": "service@tricountypartitions.com",
+   "contact_page": "https://tricountypartitions.com (pricing request form on homepage; no separate contact page)",
+   "evidence_urls": [
+    "http://www.tricountypartitions.com/",
+    "https://tricountypartitions.com/toilet-partitions"
+   ],
+   "partition_evidence": "Site states 'We Supply & Install Toilet Partitions & Restroom Accessories & More'; mentions schools and facilities.",
+   "reason": "Dedicated partition company in Miami Lakes that supplies and installs toilet partitions for facilities such as schools. It also supplies partitions itself, so buy-around risk is high.",
+   "red_flags": [
+    "Sells partitions itself (direct competitor/buy-around risk)",
+    "No service area or project photos shown on pages read"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Tri-County Partitions, LLC",
+    "area": "miami",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (state); Miami-Dade BCCO Contractor Inquiry (county, reCAPTCHA)",
+    "license_type": "Construction Business Information (DBPR business tracking record, not a license)",
+    "license_number": "",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee?Mode=0",
+    "note": "DBPR shows one record, 'TRI-COUNTY PARTITIONS, LLC': type Construction Business Information, rank Business Info, status Current, licensure date 09/28/2018, county Dade, base city Miami Lakes. The detail page says 'This is a business tracking record only'. 'View Related License Information' returned 'There are no related licenses found', so no state contractor license is tied to this business. A Miami-Dade Certificate of Competency could not be checked because the county search needs a reCAPTCHA (https://www.miamidade.gov/Apps/RER/BCCOContractorMenu). Confirm by phone or manually."
+   },
+   "score": 65
+  },
+  {
+   "name": "Tropical Glass & Construction Co",
+   "base_city": "Miami",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.tropicalglassmiami.com/",
+   "phone": "(305) 757-0651",
+   "email": "info@tropicalglassmiami.com",
+   "contact_page": "https://www.tropicalglassmiami.com/contact",
+   "evidence_urls": [
+    "https://www.tropicalglassmiami.com/"
+   ],
+   "partition_evidence": "Lists 'Glass Bathroom Stall Partitions' and interior glass partitions among services; no standard (steel/HDPE/phenolic) toilet partitions mentioned.",
+   "reason": "Glass and glazing company in Miami doing residential and commercial work. It installs glass bathroom stall partitions but shows no standard toilet partition installation, so it's unclear it would install manufacturer partitions like Bobrick or ASI.",
+   "red_flags": [
+    "Glass company; standard toilet partitions not mentioned",
+    "Mixed residential and commercial"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Tropical Glass & Construction Co",
+    "area": "miami",
+    "status": "found_active",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "license_type": "Certified General Contractor",
+    "license_number": "CGC048630",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee?Mode=0",
+    "note": "DBPR lists three Certified General Contractor licenses under the DBA 'TROPICAL GLASS & CONSTRUCTION CO', each 'Current, Active' and expiring 08/31/2028: CGC048630 and CGC025706 (both with a Miami address) and CGC1517677 (Miami). It also has a Current Construction Business Information record (Miami). These are probably separate qualifiers for the same business. A Miami-Dade Certificate of Competency was not checked (reCAPTCHA). A state CGC already meets the state-or-county rule."
+   },
+   "score": 65
+  },
+  {
+   "name": "Schedule 10 Specialists, Inc.",
+   "base_city": "Coral Springs",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [
+    "Accurate Partitions",
+    "Ampco",
+    "Global Partitions",
+    "Hadrian",
+    "Knickerbocker",
+    "Metpar",
+    "PSISC",
+    "Santana/Comtec/Capitol",
+    "Bradley",
+    "Bobrick"
+   ],
+   "website": "http://www.schedule10.com/",
+   "phone": "954-340-3681",
+   "email": "info@schedule10.com",
+   "contact_page": "http://www.schedule10.com/contact.php",
+   "evidence_urls": [
+    "http://www.schedule10.com/",
+    "http://www.schedule10.com/contact.php",
+    "http://www.schedule10.com/manufacturers.php"
+   ],
+   "partition_evidence": "Tagline: 'large-scale installations of division 10 materials'; toilet partitions listed as a product category with eight partition manufacturers; projects in Miami and Deerfield Beach.",
+   "reason": "Commercial Division 10 contractor about 30-35 miles north of the center that installs Division 10 materials and lists toilet partitions, but no page read explicitly shows toilet partition installation. It also sells (Shop Now link).",
+   "red_flags": [
+    "Sells partitions and has an online shop (buy-around risk)",
+    "Coral Springs is at the edge of the 30-mile radius"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Schedule 10 Specialists, Inc.",
+    "area": "miami",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (state); Broward County licensing not checked",
+    "license_type": "",
+    "license_number": "",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee?Mode=0",
+    "note": "The DBPR search for 'SCHEDULE 10' and 'SCHEDULE TEN' returned 0 records. The base city is Coral Springs, which is in Broward County, so Broward County contractor licensing rather than Miami-Dade is the likely local registry. It was not checked. Work in Miami-Dade would need a county or state certificate, and the Miami-Dade search is behind a reCAPTCHA."
+   },
+   "score": 45
+  },
+  {
+   "name": "Tri-County Building Specialties, Inc.",
+   "base_city": "Fort Lauderdale",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/365583/tri-county-building-specialties-inc/material-suppliers/"
+   ],
+   "partition_evidence": "Only a search-result summary of a Blue Book listing (page returned 403): specialties include toilet and cubicle partitions, bathroom accessories, lockers, doors; in business since 1986; serves Broward.",
+   "reason": "Search summaries of a Blue Book listing say it specializes in toilet and cubicle partitions in Fort Lauderdale. No website was found, and I couldn't open the listing, so installation work and current status are unverified.",
+   "red_flags": [
+    "No company website found",
+    "Blue Book page blocked (403); facts come only from search snippets",
+    "Listed under material suppliers: may be supply-only"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Tri-County Building Specialties, Inc.",
+    "area": "miami",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (state); Broward County licensing not checked",
+    "license_type": "",
+    "license_number": "",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee?Mode=0",
+    "note": "The DBPR search for 'TRI-COUNTY BUILDING', 'TRI COUNTY BUILDING' and 'TRI-COUNTY BLDG' returned 0 records. The base city is Fort Lauderdale, in Broward County, and Broward County licensing was not checked. The Miami-Dade county search could not be run (reCAPTCHA). No website was given and none was looked up."
+   },
+   "score": 10
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "Miami",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Hadrian"
+   ],
+   "website": "https://onepointpartitions.com/",
+   "phone": "800-756-6817",
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=1356",
+    "https://onepointpartitions.com/?p=3233",
+    "https://onepointpartitions.com/?p=8348"
+   ],
+   "partition_evidence": "National partition seller; publishes DIY installation guides and says hiring professionals 'isn't necessary'. No installation crew found.",
+   "reason": "Nationwide online partition seller (a direct competitor), not a local installer. Site blocked direct fetch (403); facts come from search-result summaries of its own pages.",
+   "red_flags": [
+    "Direct competitor: sells partitions nationwide",
+    "No installation service found",
+    "Site returned 403; details from search snippets only"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "ASD Specialties Inc",
+   "base_city": "Opa-locka",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://asdspecialties.com/",
+   "evidence_urls": [],
+   "partition_evidence": "None found. Website domain did not resolve, and a web search found no mention of the business.",
+   "reason": "Couldn't verify that the business exists. The website didn't resolve in this session (it may need to be allowed in the session's network settings), and the search found nothing.",
+   "red_flags": [
+    "Website unreachable (DNS failure; may be blocked by session network policy)",
+    "No independent web presence found"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

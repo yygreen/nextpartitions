@@ -1,0 +1,204 @@
+{
+ "area": "bakersfield",
+ "found_count": 7,
+ "sources_tried": [
+  "Seed file bakersfield.json: worked. 42 maps results, mostly irrelevant (plumbers, remodelers, stores); 0 web results. Only R. B. Moss and Old Ironsides looked plausible.",
+  "rbmoss.com: blocked (host not allowed in this session's network; needs allowing to check)",
+  "Bobrick Find-a-Rep page: fetched, but the locator is dynamic and showed no reps. The Bobrick locations page lists only the manufacturer's own plants (North Hollywood CA), which were skipped.",
+  "ASI find-a-rep (asi-globalpartitions.com/find-a-rep/): 404",
+  "Scranton Products find-a-rep: 404",
+  "Bradley, Hadrian, Metpar, General Partitions, Ampco locators: not tried (out of time and budget)",
+  "The Blue Book (thebluebook.com): profile pages return 403. Facts come from search-result snippets only (Delta Specialties, Commercial Specialties Contracting, American Sheet Metal Partition, Valley Fixtures and Installers, Consolidated Partitions).",
+  "Consolidated Partitions (Hayward CA): excluded. Its Blue Book description is lockers and operable partitions, serving north of Bakersfield.",
+  "BuildingConnected / Procore: not tried",
+  "WebSearch: used all 8 searches. Bakersfield toilet partition and Division 10 queries found no Bakersfield-based partition specialist.",
+  "onepointpartitions.com: 403 on fetch",
+  "prelien.co CSLB summary: worked (Commercial Specialities Contracting)",
+  "prestigedistribution.com installer page: worked, but lists no California installers (national dealer, Illinois)",
+  "old-ironsides.com: worked. woodmastersinc.net: worked, no partition mention, excluded. kernglass.com: page came back empty.",
+  "Yelp/BBB: not reached within the search cap"
+ ],
+ "candidates": [
+  {
+   "name": "Delta Specialties Inc.",
+   "base_city": "unknown (Northern California; 209 area code per search snippet)",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "reason": "Search snippets of its Blue Book listing describe it as a Division 10 company, established 2008, serving Northern California including Fresno and Bakersfield/Kern, with toilet partitions among its products. I couldn't open the listing or its own site (Blue Book returned 403; deltaspecialties.net did not resolve), so I didn't see the installation work myself.",
+   "partition_evidence": "Blue Book snippet: Division 10 company supplying toilet partitions and accessories; serves Sacramento, Fresno and Bakersfield regions (snippet only, page not read)",
+   "red_flags": [
+    "Appears to supply partitions itself (buy-around risk)",
+    "Own website not reachable; facts from search snippets only"
+   ],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/393371/delta-specialties-inc/material-suppliers/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Delta Specialties Inc.",
+    "area": "bakersfield",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "932844",
+    "license_type": "C17 Glazing; C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/932844",
+    "note": "CSLB record checked 2026-11-19: DELTA SPECIALTIES INC, Lodi, corporation, issued 05/19/2009, expires 05/31/2027, 'current and active'. D34 (prefabricated equipment) covers toilet partitions. Matched by name; Lodi is in the 209 area code, which fits the search snippet. License number found via a third-party site (prelien.co/contractor/delta-specialties-inc-932844) and confirmed on CSLB. Bakersfield city business license tax: not checked (no online lookup used). Company site deltaspecialties.net could not be reached from this session."
+   },
+   "score": 58
+  },
+  {
+   "name": "Commercial Specialties Contracting, Inc.",
+   "base_city": "Manteca",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "reason": "Its Blue Book listing (seen in search snippets only) describes it as an installation contractor for doors, millwork, FF&E, accessories and Division 10 specialties, with past work in Bakersfield, Fresno and Stockton. I found no explicit toilet partition project. Manteca is roughly 200 miles from Bakersfield, so it qualifies only through the Bakersfield work the listing reports.",
+   "partition_evidence": "Division 10 specialties and toilet accessories (10 28 13.13) installation listed; partitions (10 21 13) not confirmed",
+   "red_flags": [
+    "Base is beyond 120 miles; area coverage from directory snippet only",
+    "Blue Book page returned 403; no company website found"
+   ],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/807564/commercial-specialties-contracting-inc/material-suppliers/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Commercial Specialties Contracting, Inc.",
+    "area": "bakersfield",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "938817",
+    "license_type": "B General Building; C-61/D28 Doors, Gates and Activating Devices",
+    "source_url": "https://www.cslb.ca.gov/938817",
+    "note": "CSLB record checked 2026-11-19: COMMERCIAL SPECIALITIES CONTRACTING INC (CSLB spelling 'Specialities'), Manteca, corporation, issued 10/14/2009, expires 07/31/2028, 'current and active'. The third-party prelien.co page showed an old July 2026 expiry; the official CSLB record shows renewed to 2028. B license covers general building; no D34 classification. Bakersfield city business license tax not checked."
+   },
+   "score": 58
+  },
+  {
+   "name": "American Sheet Metal Partition Co., Inc.",
+   "base_city": "McClellan",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "reason": "Search snippets describe a long-running Division 10 specialties contractor and distributor in McClellan (Sacramento area), with CSLB #277769 and C43 in one directory (not checked on CSLB), and Blue Book coverage listing Sacramento, Fresno and Bakersfield. I couldn't open the listing pages (403) and found no company website to confirm partition installs.",
+   "partition_evidence": "Name and Division 10 specialties description; Blue Book service region includes Bakersfield (snippet only)",
+   "red_flags": [
+    "Distributor history (buy-around risk)",
+    "Based about 270 miles away; coverage from directory snippet only",
+    "Listing pages returned 403"
+   ],
+   "evidence_urls": [
+    "https://thebluebook.com/iProView/259415/american-sheet-metal-partition-co-inc/material-suppliers",
+    "https://levelset.com/subcontractors/california/mcclellan/metal-building/american-sheet-metal-partition-inc"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "American Sheet Metal Partition Co., Inc.",
+    "area": "bakersfield",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "277769",
+    "license_type": "C43 Sheet Metal; C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/277769",
+    "note": "CSLB record checked 2026-11-19: AMERICAN SHEET METAL PARTITION CO, Sacramento (CSLB address city; listings put it in McClellan), corporation, issued 07/28/1972, expires 05/31/2027, 'current and active'. License number from a search snippet of thebluebook.com (page itself returned 403), confirmed on CSLB. Bakersfield city business license tax not checked."
+   },
+   "score": 58
+  },
+  {
+   "name": "Old Ironsides Construction, Inc.",
+   "base_city": "Bakersfield",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "website": "https://www.old-ironsides.com/",
+   "phone": "(661) 237-7200",
+   "email": "estimating@old-ironsides.com",
+   "contact_page": "https://www.old-ironsides.com/contact",
+   "reason": "A Bakersfield commercial general contractor (design-build, tenant improvements, public works), showing CSLB #1073740 on its site. Its homepage doesn't mention toilet partitions or Division 10 specialties, so it isn't a partition installer, though it could be a GC customer.",
+   "partition_evidence": "None on homepage",
+   "red_flags": [
+    "General contractor, not a partition specialist"
+   ],
+   "evidence_urls": [
+    "https://www.old-ironsides.com/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "unknown (online supplier; search snippet mentions Sun Valley, CA)",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "reason": "An online partition supplier that ships, including to Bakersfield, and describes installation as easy with instructions provided. It's a competing seller, not an installer. Its site returned 403, so this comes from search snippets.",
+   "partition_evidence": "Sells and delivers partitions; no installation service seen",
+   "red_flags": [
+    "Competing partition seller (buy-around risk)",
+    "Not an installer"
+   ],
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=11677"
+   ],
+   "website": "https://onepointpartitions.com/",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "R. B. Moss Architectural Specialties",
+   "base_city": "Bakersfield",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "website": "http://rbmoss.com/",
+   "reason": "Couldn't verify. Both rbmoss.com and www.rbmoss.com failed DNS in this session, which may mean the session's network settings block them or that the domain is gone, and a search turned up no listing for the company. Recheck once rbmoss.com is allowed in the session's network settings.",
+   "red_flags": [
+    "Website did not resolve (rbmoss.com, www.rbmoss.com)",
+    "No independent listing found in search"
+   ],
+   "evidence_urls": [],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Valley Fixtures and Installers Inc.",
+   "base_city": "unknown",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "reason": "A search turned up no page for a business by this name, so I couldn't confirm that it exists or what it does.",
+   "red_flags": [
+    "No web presence found"
+   ],
+   "evidence_urls": [],
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

@@ -1,0 +1,147 @@
+{
+ "area": "fort-myers",
+ "found_count": 4,
+ "sources_tried": [
+  "Seed file fort-myers.json: worked. Opened Crowther (confirmed installer), Specialties Direct (distributor that installs) and AAA Specialty Products of FL. AAA's linked site base-spec.com is an unrelated Minnesota mat maker, so AAA could not be verified; IndustryNet returned 403. The other seeds are glass shops, remodelers and plumbers, so they were skipped.",
+  "Bobrick find-a-rep: the page loads but the results are a JavaScript dropdown, so no data came back.",
+  "Scranton Products find-a-rep: 404.",
+  "Bradley find-a-rep: no usable content.",
+  "ASI, Hadrian, Metpar, General Partitions and Ampco locators: not tried because the session ran out of time and budget.",
+  "The Blue Book iProView pages: 403 blocked.",
+  "Procore network search (network.procore.com): worked, but none of the toilet partition or accessory trade matches are within about 120 miles; the nearest is Holman Inc in Jacksonville.",
+  "BuildingConnected: not tried.",
+  "LinkedIn: 403. Manta: 403.",
+  "BBB Lee County 'partition' category: worked. It lists only out-of-area firms (Jacksonville, Dothan AL, Brooksville FL).",
+  "WebSearch: used 8 of 8. The results were mostly residential remodelers, specification documents and out-of-area firms (Holman Inc Jacksonville, Commercial Specialties Orange Park, Tri-County Building Specialties Fort Lauderdale, Elston's Brooksville). All were excluded as beyond about 120 miles or not verified as serving SW Florida.",
+  "Yelp: not reached within the search cap."
+ ],
+ "candidates": [
+  {
+   "name": "Crowther Specialties (Division 10 of Crowther)",
+   "base_city": "Fort Myers",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.crowther.net/division-10",
+   "phone": "(239) 489-0089",
+   "contact_page": "https://crowtherroofs.net/contact",
+   "evidence_urls": [
+    "https://www.crowther.net/division-10"
+   ],
+   "partition_evidence": "Division 10 page: 'Crowther Specialties supplies and installs toilet partition systems in a range of materials and finishes' (phenolic, HDPE, stainless, powder-coated steel, plastic laminate) for schools, churches, offices, healthcare and retail. No project photos or case studies, only one stock photo.",
+   "red_flags": [
+    "Supplies the partitions itself (buy-around risk)",
+    "No partition project examples or photos on the page",
+    "Division of a roofing company; also has Jupiter and Sarasota offices"
+   ],
+   "reason": "Fort Myers-based commercial Division 10 contractor that says it supplies and installs toilet partitions and names Cape Coral, Naples, Bonita Springs and Estero as service areas. Strong fit, but it sells partitions too.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Crowther Specialties (Division 10 of Crowther)",
+    "area": "fort-myers",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "license_type": "Company site lists CILB licenses: General Contractor, Roofing, HVAC (not verified on DBPR)",
+    "license_number": "CGC1524777 (as stated on company site, unverified)",
+    "source_url": "https://www.crowther.net/division-10",
+    "note": "DBPR Verify a Licensee (https://www.myfloridalicense.com/portalsearches/VerifyLicensee) is an interactive POST form with an anti-forgery token; the old wl11.asp search redirects to it, so no automated lookup was run. The company site footer, under 'Florida Construction Industry Licensing Board Licenses', lists 'General Contractor : CGC1524777', 'Roofing : CCC039822', 'HVAC : CMC1250360'. Base city Fort Myers; company phone (239) 489-0089 (company site). Florida has no state category for toilet partitions (state status unclear); no local rule for Fort Myers. Next step: confirm CGC1524777 by hand on DBPR."
+   },
+   "score": 70
+  },
+  {
+   "name": "Specialties Direct (Mardale Specialties Direct Inc), Fort Myers office",
+   "base_city": "Fort Myers",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://specialtiesdirect.com/",
+   "phone": "239-690-1001",
+   "email": "infofort@specialtiesdirect.com",
+   "contact_page": "https://specialtiesdirect.com/contact",
+   "evidence_urls": [
+    "https://specialtiesdirect.com/",
+    "https://specialtiesdirect.com/contact",
+    "https://specialtiesdirect.com/toilet-partitions"
+   ],
+   "partition_evidence": "Homepage says it distributes and installs for commercial and residential building needs. It has a toilet partitions product category, but that page doesn't mention installation, only stock available for same-day pickup.",
+   "red_flags": [
+    "Distributor that sells toilet partitions itself (strong buy-around risk and a direct competitor)",
+    "No partition installation shown specifically"
+   ],
+   "reason": "Multi-state Division 10 distributor with a Fort Myers branch. It sells partitions and mentions installation in general terms, but no partition installation work is shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Specialties Direct (Mardale Specialties Direct Inc), Fort Myers office",
+    "area": "fort-myers",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form with an anti-forgery token, so no automated lookup was run. Company site not read for a license number. No state category for partitions (state status unclear); no local rule for Fort Myers. Next step: look up by name by hand."
+   },
+   "score": 50
+  },
+  {
+   "name": "Square 10 Source",
+   "base_city": "Plant City",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "mostly",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://www.square10source.com/",
+   "phone": "(813) 425-5868",
+   "email": "jline@square10source.com",
+   "contact_page": "https://www.square10source.com/contact-us/",
+   "evidence_urls": [
+    "https://www.square10source.com/",
+    "https://www.square10source.com/contact-us/",
+    "https://www.linkedin.com/company/square10source/"
+   ],
+   "partition_evidence": "Homepage lists '102100 \u2013 Toilet Compartments' under Division 10 Specialties and offers Division 10 estimates. Installation of partitions isn't stated explicitly.",
+   "red_flags": [
+    "The listed email may be a personal staff address",
+    "No stated service in Southwest Florida"
+   ],
+   "reason": "Tampa Bay Division 10 contractor about 120 miles from Fort Myers. A search summary of its LinkedIn listed focus counties of Hillsborough, Pinellas, Manatee, Sarasota, Pasco and Polk (not Lee or Collier), and its site doesn't say it serves this area or the whole state.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "Tampa",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=1447",
+    "https://onepointpartitions.com/?p=3050",
+    "https://onepointpartitions.com/?p=13"
+   ],
+   "partition_evidence": "Its site returned 403 to direct fetches. Search summaries of its pages describe selling and shipping partitions with free delivery from Florida terminals, online install tutorials, and advice to hire a contractor. No company installation crew is shown.",
+   "red_flags": [
+    "Online partition seller and a direct competitor of Next Partitions",
+    "Site blocked direct fetching (403), so contact details weren't read"
+   ],
+   "reason": "Nationwide online partition seller with Tampa and Miami locations. Search results show it sells and ships partitions and leaves installation to the customer or a contractor; no evidence it installs.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  }
+ ]
+}

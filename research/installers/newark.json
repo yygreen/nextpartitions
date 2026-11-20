@@ -1,0 +1,699 @@
+{
+ "area": "newark",
+ "found_count": 17,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/newark.json: worked (most maps entries were glass/remodel shops; plausible partition firms opened)",
+  "Bobrick find-a-representative: page loaded but rep data is JS-rendered, no usable listings",
+  "Hadrian find-a-rep and Metpar representatives: JS-rendered/empty, no data",
+  "Scranton Products find-a-rep: 404",
+  "ASI, Bradley, General Partitions, Ammco locators: not tried (search cap / prior locators unusable)",
+  "The Blue Book (thebluebook.com): blocked (403) on WebFetch; listing facts taken only from search-result snippets (Division 10 Inc, DTS, Locker Man NJ)",
+  "CISLeads public profiles: worked (Modulex, Lang Equipment; phones hidden)",
+  "BuildingConnected / Procore: not tried (search cap)",
+  "WebSearch: 8 of 8 used (Casper Partition Systems Union NJ - not found; NJ Division 10 toilet partitions; Blue Book NJ; Locker Man NJ; NJ city names; Division 10 Inc Hackensack; Westchester/Yonkers; AMP Partitions - not found)",
+  "onepointpartitions.com (Bensalem PA, NJ city pages): blocked 403 / empty, not included",
+  "Company websites via WebFetch/curl: worked for most (inter-co, 10-spec, bencoinc, partitionstalls, onewaypartitions, mavinewyork, v10specialties, langequip, ctrestroom, associatedbuilding, contemporarywalls, jerseyarchitectural); division10.com has no content; knickerbockerpartition.com bot-check",
+  "Skipped after reading: Tri-State Partitions (operable partitions only), CSI Ronkonkoma (NJ not served on page), Nationwide Maintenance (no partitions), manufacturers (Monarch, Partition Manufacturers of America, All American Metal, American Specialties)"
+ ],
+ "candidates": [
+  {
+   "name": "Partition Stalls",
+   "base_city": "Staten Island",
+   "state": "NY",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "ASI Global Partitions",
+    "Hadrian",
+    "Scranton Products",
+    "Metpar",
+    "All American Metal",
+    "General Partitions",
+    "Flush Metal",
+    "American Sanitary Partition"
+   ],
+   "website": "https://partitionstalls.com/",
+   "phone": "646-349-4040",
+   "email": "info@partitionstalls.com",
+   "contact_page": "https://partitionstalls.com/contact-partition-stalls",
+   "evidence_urls": [
+    "https://partitionstalls.com/"
+   ],
+   "partition_evidence": "Offers supply plus installation in NY, NJ, PA, CT and other states, for contractors, property managers and facility owners.",
+   "rating": 4.9,
+   "review_count": 55,
+   "review_source": "Google (as shown on the company's own site)",
+   "reason": "Supplies and installs commercial bathroom partitions in NY and NJ from Staten Island, about 12 miles from Newark.",
+   "red_flags": [
+    "Nationwide partition supplier (buy-around risk)",
+    "The rating is a snapshot on its own site; I did not check it on Google"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Partition Stalls",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark building contractor licence (Ordinance 8:21-1); NYC DOB License Info checked as context",
+    "note": "Newark's building contractor page returned 403 to automated access, and no public online list of licensed contractors was found. Confirm with Newark business licensing by phone. NYC DOB License Info has no match for 'Partition Stalls' (the company is based on Staten Island).",
+    "source_url": "https://www.newarknj.gov/345/Building-Contractor"
+   },
+   "score": 80
+  },
+  {
+   "name": "Inter-Co Division 10 (New Jersey), Inc.",
+   "base_city": "Kearny",
+   "state": "NJ",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick (image alt text only)"
+   ],
+   "website": "https://inter-co.com/",
+   "phone": "(908) 351-4232",
+   "email": "njsales@inter-co.com",
+   "contact_page": "https://inter-co.com/contact/",
+   "evidence_urls": [
+    "https://inter-co.com/",
+    "https://inter-co.com/contact/"
+   ],
+   "partition_evidence": "Homepage says it supplies and installs hundreds of products, with toilet partitions among them; projects are offices, hospitals, schools and hotels.",
+   "reason": "A Division 10 supply-and-install firm with a New York / New Jersey branch in Kearny, about 5 miles from Newark. It is a large distributor, so it is also a partitions seller.",
+   "red_flags": [
+    "Distributor: sells partitions from leading manufacturers (buy-around risk)",
+    "Part of a multi-office Canadian/US group; I did not verify the 'formerly Modulex' link"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Inter-Co Division 10 (New Jersey), Inc.",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+    "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+    "note": "No public online list of Newark contractor licenses was found; one web search turned up no official city registry. The NJ HIC search is form-based and was not submitted, and state registration covers residential home improvement only. Confirm with the Newark Department of Finance or Division of Licensing."
+   },
+   "score": 70
+  },
+  {
+   "name": "Mavi New York",
+   "base_city": "Long Island City",
+   "state": "NY",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "ASI",
+    "Bobrick",
+    "Bradley",
+    "Hadrian",
+    "Metpar",
+    "Scranton Products"
+   ],
+   "website": "https://mavinewyork.com/",
+   "phone": "718-874-3805",
+   "email": "info@mavinewyork.com",
+   "contact_page": "https://mavinewyork.com/contact-us/",
+   "evidence_urls": [
+    "https://mavinewyork.com/"
+   ],
+   "partition_evidence": "Lists bathroom partition installation and Division 10 installation (union, prevailing wage, non-union) in the NY metro and tri-state area, and has a New Jersey service page.",
+   "reason": "An authorized distributor and installer of commercial toilet partitions in NYC, also serving New Jersey.",
+   "red_flags": [
+    "Authorized distributor with stocked partitions (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Mavi New York",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark building contractor licence (Ordinance 8:21-1); NYC DOB License Info checked as context",
+    "note": "The Newark registry is not online (the page returned 403 and no list was found). NYC DOB License Info shows MAVI NEW YORK, INC (Long Island City) with general contractor registration 626466, status EXPIRED.",
+    "license_number": "626466 (NYC DOB GC, EXPIRED)",
+    "license_type": "NYC DOB General Contractor registration",
+    "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+   },
+   "score": 70
+  },
+  {
+   "name": "10-Spec",
+   "base_city": "Marlboro",
+   "state": "NJ",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [
+    "ASI",
+    "Bobrick",
+    "Hadrian",
+    "Scranton"
+   ],
+   "website": "https://10-spec.com/",
+   "phone": "732-992-4899",
+   "email": "sales@10-spec.com",
+   "contact_page": "https://10-spec.com/",
+   "evidence_urls": [
+    "https://10-spec.com/"
+   ],
+   "partition_evidence": "Services include partition installation, field measurement and compartment removal: 'Our skilled and experienced installers complete any commercial bathroom partitions installation'. Site schema says it serves NJ, NY, PA and CT and has since 1979.",
+   "reason": "A dedicated commercial bathroom partition contractor that installs and removes partitions. Based about 35 miles from Newark and says it serves NJ and NY.",
+   "red_flags": [
+    "Also sources and sells partition material (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "10-Spec",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+    "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+    "note": "Marlboro, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown; confirm with the City of Newark."
+   },
+   "score": 65
+  },
+  {
+   "name": "Benco Inc",
+   "base_city": "Fairfield",
+   "state": "NJ",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://bencoinc.com/",
+   "phone": "973.575.4440",
+   "email": "info@bencoinc.com",
+   "contact_page": "https://bencoinc.com/contact/",
+   "evidence_urls": [
+    "https://bencoinc.com/",
+    "https://bencoinc.com/projects/"
+   ],
+   "partition_evidence": "Title reads 'NY, NJ Division 10 product sales and installation'. Toilet partitions are a core product, alongside 'We Are Proud to Sell and Install Products From These Industry Leading Brands' and 'quality installation'.",
+   "reason": "A Division 10 distributor and installer since 1970, about 15 miles from Newark, serving NJ, NY, CT and PA. Certified WBE.",
+   "red_flags": [
+    "Leading Division 10 distributor; sells partitions (buy-around risk)",
+    "Brand logos are present, but no brand names appear in the text I read"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Benco Inc",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+    "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+    "note": "Fairfield, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+   },
+   "score": 65
+  },
+  {
+   "name": "V10 Specialties Corp",
+   "base_city": "Long Island City",
+   "state": "NY",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://v10specialties.com/",
+   "phone": "(646) 777-2589",
+   "email": "estimating@v10specialties.com",
+   "contact_page": "http://v10specialties.com/",
+   "evidence_urls": [
+    "http://v10specialties.com/",
+    "http://v10specialties.com/products"
+   ],
+   "partition_evidence": "'At V10 Specialties we sell, deliver and install products ... toilet partitions and accessories', serving the tri-state area.",
+   "reason": "A NYC Division 10 firm that sells and installs toilet partitions across the tri-state area. The site is thin, with no project photos.",
+   "red_flags": [
+    "Sells partitions (buy-around risk)",
+    "Minimal website, no projects or brands shown"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "V10 Specialties Corp",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark building contractor licence (Ordinance 8:21-1); NYC DOB License Info checked as context",
+    "note": "The Newark registry is not online. NYC DOB License Info has no match for 'V10', 'V 10' or 'V-10', so the dataset shows no NYC GC registration.",
+    "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+   },
+   "score": 65
+  },
+  {
+   "name": "Lang Equipment Co., Inc.",
+   "base_city": "Landing (per candidate list; not confirmed on site)",
+   "state": "NJ",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://www.langequip.com/",
+   "phone": "888-388-5264",
+   "email": "sales@langequip.com",
+   "contact_page": "https://www.langequip.com/about/",
+   "evidence_urls": [
+    "https://www.langequip.com/about/",
+    "https://www.langequip.com/"
+   ],
+   "partition_evidence": "About page: 'We also install and repair lockers, toilet partitions, and security gates in the New Jersey / Southern New York / Eastern Pennsylvania area.' It usually sells to schools and institutions.",
+   "reason": "A family-run firm since 1974 that installs and repairs toilet partitions in NJ and southern NY, mostly for schools and institutions. It also runs a nationwide parts and partitions catalogue.",
+   "red_flags": [
+    "Online catalogue sells toilet partitions and parts (buy-around risk)",
+    "Probably the same business as Locker Man NJ LLC (Blue Book ties them together); avoid listing both",
+    "Base city not shown on the pages read"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Lang Equipment Co., Inc.",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+    "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+    "note": "Base city given as Landing, NJ (not confirmed). No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+   },
+   "score": 65
+  },
+  {
+   "name": "AMP Partitions",
+   "base_city": "Suffern (inferred: site accepts projects within 200 mi of Suffern, NY)",
+   "state": "NY",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [
+    "Bobrick",
+    "Scranton Products"
+   ],
+   "website": "https://amppartitions.com/",
+   "phone": "845-293-5786",
+   "email": "info@amppartitions.com",
+   "contact_page": "https://amppartitions.com/",
+   "evidence_urls": [
+    "https://amppartitions.com/",
+    "https://amppartitions.com/assets/index-BNpawUV6.js"
+   ],
+   "partition_evidence": "The site offers 'expert partition installation' and has project photos named for Brooklyn and NJ addresses. It accepts only projects within 200 miles of Suffern, NY.",
+   "reason": "Claims commercial partition installation near Newark and has project images, but much of the site is templated.",
+   "red_flags": [
+    "Templated pages for every US state with generic 'key projects' (for example Cheyenne, Houston) that conflict with the 200-mile limit",
+    "Claims '30 years' and 'nationwide leaders' without verification",
+    "Built with an AI site generator (Lovable)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "AMP Partitions",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark building contractor licence (Ordinance 8:21-1)",
+    "note": "The Newark registry is not online (the page returned 403 and no public list was found). NYC DOB License Info has no match for 'AMP Partitions'. The base city of Suffern is inferred, not confirmed.",
+    "source_url": "https://www.newarknj.gov/345/Building-Contractor"
+   },
+   "score": 65
+  },
+  {
+   "name": "CME Corp (CME Contractor Specialties)",
+   "base_city": "Garden City",
+   "state": "NY",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [
+    "ASI",
+    "Accurate",
+    "Bobrick",
+    "Bradley",
+    "Hadrian",
+    "Metpar",
+    "Privada",
+    "Scranton"
+   ],
+   "website": "https://cmecontractorspecialties.com/",
+   "phone": "(888) 656-3360",
+   "email": "contractorsales@cmecorp.com",
+   "contact_page": "https://cmecontractorspecialties.com/#contact-us",
+   "evidence_urls": [
+    "https://cmecontractorspecialties.com/"
+   ],
+   "partition_evidence": "Services offered: 'Installation of Toilet Partitions & Lockers (Union & Non Union)' for general contractors in the NY metropolitan area.",
+   "reason": "A Division 10 supplier and installer for NY-metro general contractors, about 30 miles from Newark. It runs its own delivery trucks and crews.",
+   "red_flags": [
+    "Large supplier of partitions (buy-around risk)",
+    "Serves 'NY Metropolitan area'; NJ coverage is not stated explicitly"
+   ],
+   "added_by_checker": true,
+   "license": {
+    "name": "CME Corp (CME Contractor Specialties)",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark building contractor licence (Ordinance 8:21-1)",
+    "note": "The Newark registry is not online. NYC DOB License Info has no match for 'CME Corp' or 'Contractor Specialties'.",
+    "source_url": "https://www.newarknj.gov/345/Building-Contractor"
+   },
+   "score": 65
+  },
+  {
+   "name": "One Way Partitions",
+   "base_city": "unknown (headquartered in New Jersey)",
+   "state": "NJ",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Hadrian",
+    "Bobrick",
+    "Scranton Products",
+    "ASI",
+    "All American",
+    "Global Partitions",
+    "Metpar",
+    "Bradley"
+   ],
+   "website": "https://www.onewaypartitions.com/",
+   "email": "installs@onewaypartitions.com",
+   "contact_page": "https://www.onewaypartitions.com/#contact",
+   "evidence_urls": [
+    "https://www.onewaypartitions.com/"
+   ],
+   "partition_evidence": "A 'What We Install' section covers floor-mounted, ceiling-hung and floor-to-ceiling compartments (10 21 00), with 'expert installation across the tri-state area'.",
+   "reason": "A commercial Division 10 material-sales and installation firm, headquartered in New Jersey and serving NJ, NY, PA and CT. No city or phone is listed.",
+   "red_flags": [
+    "No phone number or street/city on the site",
+    "Sells material and ships nationwide (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "One Way Partitions",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+    "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+    "note": "Base city unknown (NJ). No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+   },
+   "score": 63
+  },
+  {
+   "name": "Connecticut Restroom Specialties (CRS)",
+   "base_city": "Danbury",
+   "state": "CT",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://www.ctrestroom.com/",
+   "phone": "203-205-0170",
+   "contact_page": "https://www.ctrestroom.com/contact",
+   "evidence_urls": [
+    "https://www.ctrestroom.com/",
+    "https://www.ctrestroom.com/about-us",
+    "https://www.ctrestroom.com/projects"
+   ],
+   "partition_evidence": "Toilet partitions are its first product. It offers full service from restroom layout design 'through the final installation' with factory-trained installers, and has a projects photo gallery.",
+   "reason": "A restroom specialties contractor and distributor that says it serves the entire tri-state area. It is about 60 miles from Newark.",
+   "red_flags": [
+    "Major Division 10 distributor (buy-around risk)",
+    "No company email on the site (form only)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Connecticut Restroom Specialties (CRS)",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark building contractor licensing (Ordinance 8:21-1); also checked Connecticut DCP State Licenses and Credentials open data (data.ct.gov ngch-56tr) and CT Business Registry (data.ct.gov n7gp-d28j)",
+    "source_url": "https://www.newarknj.gov/345/Building-Contractor",
+    "note": "Checked 2026-11-19. Newark's Building Contractor page returned HTTP 403 to automated access and Newark publishes no public contractor lookup we could reach, so the city license could not be checked online; confirm with Newark business licensing. New Jersey has no state license for commercial installers (NJ HIC registration is residential only). Connecticut has no state license for commercial partition work. In the official CT license data, no record was found under 'Connecticut Restroom Specialties' or any name containing 'RESTROOM' (the Danbury 'CRS' records found, CRS Group LLC HIC.0606968 inactive and CRS Painting LLC HIC.0656774, are unrelated businesses). The CT business registry open data also has no entity with 'Restroom Specialt' in the name, so the legal entity name is unknown. The company site (https://www.ctrestroom.com/) says it is based in Danbury, CT, phone 203-205-0170, does commercial restroom work (offices, schools, restaurants, retail, government buildings) and says 'We are fully licensed and insured' without giving any license number. Ask them for their legal entity name and Newark license if they take Newark jobs."
+   },
+   "score": 63
+  },
+  {
+   "name": "Associated Building Specialties",
+   "base_city": "Blackwood",
+   "state": "NJ",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Scranton Products (Aria)"
+   ],
+   "website": "https://www.associatedbuilding.com/",
+   "phone": "856-227-3900",
+   "contact_page": "https://www.associatedbuilding.com/location-n-contact",
+   "evidence_urls": [
+    "https://www.associatedbuilding.com/",
+    "https://www.associatedbuilding.com/toilet-partitions",
+    "https://www.associatedbuilding.com/newpage"
+   ],
+   "partition_evidence": "The toilet partitions page says 'See our Services tab for Installation & Repairs'. The services page covers installations, repairs and field checks by technicians across the tri-state area.",
+   "reason": "Installs and repairs partitions, but it is a stocking distributor about 85 miles away, and its home market is Philadelphia and southern NJ rather than the Newark area.",
+   "red_flags": [
+    "Stocking distributor that ships nationwide (buy-around risk)",
+    "Focused on South Jersey and Philadelphia",
+    "The only email shown is an individual's address, so it is left out"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Associated Building Specialties",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+    "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+    "note": "Blackwood, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+   },
+   "score": 63
+  },
+  {
+   "name": "Jersey Architectural Door & Supply Co",
+   "base_city": "Atlantic City",
+   "state": "NJ",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Bobrick",
+    "Comtec",
+    "Global Partitions",
+    "American Specialties"
+   ],
+   "website": "https://jerseyarchitectural.com/",
+   "phone": "(609) 345-0174",
+   "contact_page": "https://jerseyarchitectural.com/",
+   "evidence_urls": [
+    "https://jerseyarchitectural.com/?p=301",
+    "https://jerseyarchitectural.com/"
+   ],
+   "partition_evidence": "Its 'Toilet Partition Installer for all of New Jersey' page lists overhead-braced, floor-to-ceiling, floor-mounted and ceiling-hung installs by union carpenters.",
+   "reason": "A door and glass supplier about 110 miles away that has a partition installer page claiming all of NJ. Partitions are a side line, and it is far from Newark.",
+   "red_flags": [
+    "Primarily a door and window company; partitions are not on the homepage",
+    "About 110 miles from Newark",
+    "Wholesale distributor of partitions (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Jersey Architectural Door & Supply Co",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+    "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+    "note": "Atlantic City, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+   },
+   "score": 63
+  },
+  {
+   "name": "Quality Partitions",
+   "base_city": "Brooklyn",
+   "state": "NY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick"
+   ],
+   "website": "https://www.qualitypartitions.com/",
+   "phone": "718-207-0402",
+   "email": "supplyny@gmail.com",
+   "contact_page": "https://www.qualitypartitions.com/contact",
+   "evidence_urls": [
+    "https://www.qualitypartitions.com/",
+    "https://www.qualitypartitions.com/contact"
+   ],
+   "partition_evidence": "Says it does custom bathroom partition designs, measures spaces and gives 'a seamless experience from design to installation'. The site is mostly an online shop for Bobrick accessories.",
+   "reason": "A small Brooklyn partition seller that implies installation but shows no projects.",
+   "red_flags": [
+    "Gmail address",
+    "Mainly an online store (buy-around risk)",
+    "No project photos"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Quality Partitions",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark building contractor licence (Ordinance 8:21-1); NYC DOB License Info checked as context",
+    "note": "The Newark registry is not online. NYC DOB License Info has no match for 'Quality Partitions' (the company is based in Brooklyn).",
+    "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json"
+   },
+   "score": 50
+  },
+  {
+   "name": "Division 10, Inc.",
+   "base_city": "Hackensack",
+   "state": "NJ",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [
+    "A&J Washroom",
+    "American Specialties (ASI)",
+    "Bobrick",
+    "Bradley"
+   ],
+   "website": "https://www.division10.com/",
+   "phone": "(201) 599-0411",
+   "contact_page": "https://www.division10.com/",
+   "evidence_urls": [
+    "https://www.division10.com/products.html",
+    "https://www.division10.com/services.html",
+    "https://www.division10.com/projects.html",
+    "https://www.division10.com/modules/footer.html"
+   ],
+   "partition_evidence": "Products include toilet partitions, and services list 'on-time installation' for general contractors. The client list is large NYC corporate fit-outs.",
+   "reason": "A Division 10 supplier to general contractors that lists toilet partitions and installation, but never says outright that it installs partitions.",
+   "red_flags": [
+    "Site footer says \u00a92002-2017, so the site may be stale",
+    "Supplies products (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Division 10, Inc.",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+    "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+    "note": "Hackensack, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+   },
+   "score": 45
+  },
+  {
+   "name": "DTS - Division Ten Building Specialties",
+   "base_city": "East Brunswick",
+   "state": "NJ",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/796807/dts-division-ten-building-specialties/subcontractors/"
+   ],
+   "partition_evidence": "Seen only in a search-result summary of its Blue Book subcontractor listing: a Division 10 firm founded in 1989 handling toilet partitions, accessories and lockers. I could not open the page (403).",
+   "reason": "A Division 10 subcontractor about 30 miles from Newark. I found no website, and the evidence is a directory snippet only.",
+   "red_flags": [
+    "No website found; contact details unverified"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "DTS - Division Ten Building Specialties",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+    "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+    "note": "East Brunswick, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+   },
+   "score": 45
+  },
+  {
+   "name": "Locker Man NJ LLC",
+   "base_city": "Middlesex",
+   "state": "NJ",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "evidence_urls": [
+    "https://thebluebook.com/iProView/1534762",
+    "https://www.arcat.com/arcatcos/cos31/arc31926.html"
+   ],
+   "partition_evidence": "Search summaries of its Blue Book listing say it installs and repairs toilet partitions in NJ, southern NY and eastern PA, founded 1974. I could not open the page (403).",
+   "reason": "Looks like the installation arm or alias of Lang Equipment (same wording and founding year). I found no website of its own.",
+   "red_flags": [
+    "Likely a duplicate of Lang Equipment Co.",
+    "No website; details only from directory snippets"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Locker Man NJ LLC",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+    "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+    "note": "Middlesex, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+   },
+   "score": 45
+  },
+  {
+   "name": "Contemporary Wall Systems",
+   "base_city": "Franklin Lakes",
+   "state": "NJ",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://contemporarywalls.com/",
+   "contact_page": "https://contemporarywalls.com/",
+   "evidence_urls": [
+    "https://contemporarywalls.com/"
+   ],
+   "partition_evidence": "The product menu lists Division 10 bathroom partitions and toilet compartments, but the installation it describes is operable walls and space planning.",
+   "reason": "Mainly an operable-wall and glass-wall installer that also sells Division 10 toilet compartments. I saw no restroom partition installation shown.",
+   "red_flags": [
+    "Core business is operable and movable walls, not toilet partitions",
+    "No phone or email captured on the homepage"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Contemporary Wall Systems",
+    "area": "newark",
+    "status": "not_online",
+    "registry": "City of Newark business licensing (Ordinance 8:21-1); NJ Division of Consumer Affairs HIC registration",
+    "source_url": "https://newjersey.mylicense.com/verification/Search.aspx",
+    "note": "Franklin Lakes, NJ. No public Newark contractor registry was found online, and the NJ HIC search is a form that was not submitted. Status unknown."
+   },
+   "score": 45
+  }
+ ]
+}

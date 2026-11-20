@@ -1,0 +1,2336 @@
+{
+ "areas": [
+  {
+   "area": "dayton",
+   "state": "OH",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/dayton.json: worked; mostly irrelevant (remodelers, plumbers, glass shops); Southern Ohio Supply, Doody Door, LaForce kept",
+    "Bobrick Find A Rep (bobrick.com/find-a-rep): page loaded but the rep list needs a dropdown (JS); no results",
+    "Scranton Products where-to-buy: worked, but it lists only the territory product specialist for OH/KY/PA/WV, no dealers",
+    "ASI Global Partitions find-a-rep: 404 after redirect",
+    "Bradley, Hadrian, Metpar, General Partitions, Ammco locators: not tried (WebSearch cap; locator pages are JS-driven)",
+    "The Blue Book (thebluebook.com iProView pages): blocked (403)",
+    "BuildingConnected / Procore public profiles: not reached through search",
+    "BBB category pages: worked (Dayton partitions, Mason partitions, Piqua partitions, Dayton bathroom-accessories)",
+    "One Point Partitions site: blocked (403); search snippets only",
+    "Company sites fetched and worked: southernohiosupply.com, kelleybros.com, clevelandconstruction.com, inter-co.com, consysohio.com, acpohio.com, ohiotrimanddoor.com, usstructures.net, laforceinc.com, martinbros.net (California, no Ohio service; excluded)",
+    "WebSearch: used all 8 calls. Dayton-specific queries returned mostly generic Division 10 content and One Point Partitions pages; no Dayton-based dedicated partition installer found",
+    "Yelp: not reached (no Yelp results surfaced in searches)",
+    "Prior area research (research/installers/cincinnati.json, columbus.json): used to find regional firms, each re-verified on its own site"
+   ],
+   "found_count": 15,
+   "checked": [
+    {
+     "name": "Inter-Co Division 10 (Ohio), Inc.",
+     "base_city": "Columbus (Grove City)",
+     "state": "OH",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Bobrick"
+     ],
+     "website": "https://inter-co.com/",
+     "phone": "(614) 875-2959",
+     "email": "ohsales@inter-co.com",
+     "contact_page": "https://inter-co.com/contact/",
+     "evidence_urls": [
+      "https://inter-co.com/",
+      "https://inter-co.com/contact/"
+     ],
+     "partition_evidence": "Homepage lists toilet partitions and says the company supplies and installs Division 10 products for general contractors; image labels show Bobrick Privada partitions.",
+     "reason": "Commercial Division 10 supply-and-install firm with an Ohio office about 70 miles from Dayton, and it lists Ohio as a service state. Dayton isn't named, and it also distributes partitions, so there is a buy-around risk.",
+     "red_flags": [
+      "Distributor of partitions (buy-around risk)",
+      "Contact page calls the Ohio office a distribution centre; Dayton coverage not stated"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Kelley Bros (Cincinnati branch)",
+     "base_city": "Mason",
+     "state": "OH",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Global Toilet Partitions",
+      "Scranton Products",
+      "Hadrian"
+     ],
+     "website": "https://www.kelleybros.com/",
+     "phone": "(513) 770-0120",
+     "contact_page": "https://www.kelleybros.com/contact-us/",
+     "evidence_urls": [
+      "https://www.kelleybros.com/?p=3224",
+      "https://www.kelleybros.com/locations/",
+      "https://www.kelleybros.com/contact-us/"
+     ],
+     "partition_evidence": "Division 10 page lists toilet partitions (Global, Scranton, Hadrian) and offers a turnkey solution 'from our initial quote to the final Product Installation'.",
+     "reason": "Division 8/10 distributor with a Mason branch inside the area. It claims turnkey installation but shows no partition installs, and it sells partitions itself.",
+     "red_flags": [
+      "Sells partitions (buy-around risk)",
+      "Mainly a distributor"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Cleveland Construction, Inc. (Interior Trades)",
+     "base_city": "Mason",
+     "state": "OH",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://clevelandconstruction.com/",
+     "phone": "513-398-8900",
+     "contact_page": "https://clevelandconstruction.com/general-contracting/about-us/contact-us/",
+     "evidence_urls": [
+      "https://clevelandconstruction.com/interior-trades/",
+      "https://clevelandconstruction.com/"
+     ],
+     "partition_evidence": "Interior trades page lists 'Divisions 5-10 Services', and the footer mentions 'Division 10 installations'. Toilet partitions aren't named.",
+     "reason": "Large commercial self-performing interior contractor based in Mason that installs Division 10. Partition work isn't confirmed, and it's likely geared to large GC projects.",
+     "red_flags": [
+      "Large firm, small partition jobs may not fit"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Construction Systems Inc (CSi)",
+     "base_city": "Columbus",
+     "state": "OH",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "website": "https://www.consysohio.com/",
+     "phone": "(614) 252-0708",
+     "contact_page": "https://www.consysohio.com/contact-csi.php",
+     "evidence_urls": [
+      "https://www.consysohio.com/",
+      "https://www.consysohio.com/contact-csi.php"
+     ],
+     "partition_evidence": "Homepage says CSi crews install Division 10, 11 and 12 specialties, explicitly including toilet partitions.",
+     "reason": "A confirmed commercial partition installer about 70 miles away, but its site says it serves central Ohio and never mentions Dayton, so coverage needs confirming.",
+     "red_flags": [
+      "Service area stated as central Ohio only"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Acoustic Ceiling & Partition of Ohio, Inc.",
+     "base_city": "Westerville",
+     "state": "OH",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://acpohio.com/",
+     "phone": "(614) 718-0722",
+     "email": "info@acpohio.com",
+     "contact_page": "https://acpohio.com/contact/",
+     "review_source": "BBB A+ rating (not accredited), no review count shown",
+     "evidence_urls": [
+      "https://acpohio.com/",
+      "https://acpohio.com/contact/",
+      "https://www.bbb.org/us/oh/dayton/category/partition"
+     ],
+     "partition_evidence": "Its carpentry service includes 'Division 10 accessories'. Toilet partitions aren't named; the 'partition' in its name refers to drywall and framing.",
+     "reason": "Commercial interiors contractor; a testimonial says it builds jobs throughout Ohio. Division 10 work is a minor line item, and toilet partitions aren't confirmed.",
+     "red_flags": [
+      "'Partition' means wall partitions, not restroom stalls"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Ohio Trim & Door",
+     "base_city": "Columbus",
+     "state": "OH",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://ohiotrimanddoor.com/",
+     "phone": "(614) 208-9710",
+     "contact_page": "https://ohiotrimanddoor.com/contact",
+     "evidence_urls": [
+      "https://ohiotrimanddoor.com/"
+     ],
+     "partition_evidence": "Site lists 'Division 10' services and 'Division 6, 8, and 10 Solutions'. Toilet partitions aren't named.",
+     "reason": "A carpentry, door and millwork firm that names Dayton in its service area and lists Division 10 work. Partition installs aren't shown, and it also does residential work.",
+     "red_flags": [
+      "Partly residential; Division 10 scope undefined"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "LaForce (Columbus branch)",
+     "base_city": "Grove City",
+     "state": "OH",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "website": "https://laforceinc.com/",
+     "phone": "1-800-236-8858",
+     "contact_page": "https://laforceinc.com/contact/",
+     "evidence_urls": [
+      "https://laforceinc.com/"
+     ],
+     "partition_evidence": "Building Specialties lists 'Div. 10 Products: Toilet partitions, lockers & more', and the site offers a general Pre-Install & Install service.",
+     "reason": "National Division 8/10 distributor that supplies partitions and offers installation services. The Ohio branch and partition installs weren't confirmed (the locations page returned 404), so area is marked unconfirmed.",
+     "red_flags": [
+      "Sells partitions (buy-around risk)",
+      "Ohio branch not verified"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Southern Ohio Supply, LLC",
+     "base_city": "Dayton (Moraine)",
+     "state": "OH",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "http://www.southernohiosupply.com/",
+     "phone": "937-293-0100",
+     "contact_page": "http://www.southernohiosupply.com/contact/",
+     "evidence_urls": [
+      "http://www.southernohiosupply.com/"
+     ],
+     "partition_evidence": "Supplies toilet partitions and toilet accessories along with doors and hardware; no installation is mentioned.",
+     "reason": "A local door, hardware and partition supplier with no evidence that it installs. It is a competitor or buy-around risk rather than an installer, though worth a phone check to see whether it has install crews.",
+     "red_flags": [
+      "Sells partitions (buy-around risk)",
+      "No installation evidence"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "U.S. Structures Company, Inc.",
+     "base_city": "Stoutsville",
+     "state": "OH",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Bobrick",
+      "Koala",
+      "General Partitions",
+      "Bradley"
+     ],
+     "website": "https://usstructures.net/",
+     "phone": "(614) 833-5650",
+     "contact_page": "https://usstructures.net/contact-us/",
+     "evidence_urls": [
+      "https://usstructures.net/",
+      "https://usstructures.net/contact-us/"
+     ],
+     "partition_evidence": "Sells toilet partitions and washroom accessories as finish packages to general contractors; installation isn't mentioned on the home or contact pages.",
+     "reason": "A supplier that names Dayton and Beavercreek in its service area, but it shows no installation. It is a buy-around risk, not an installer.",
+     "red_flags": [
+      "Sells partitions (buy-around risk)",
+      "Supply only per site"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "One Point Partitions",
+     "base_city": "West Chester",
+     "state": "OH",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "nearby",
+     "brands": [],
+     "website": "https://onepointpartitions.com/",
+     "evidence_urls": [
+      "https://onepointpartitions.com/service-areas/ohio-bathroom-partitions/"
+     ],
+     "partition_evidence": "Its own pages (seen through search; direct fetch returned 403) say products are designed for DIY installation and that it does not install; it has delivery terminals in West Chester and Columbus.",
+     "reason": "An online partition seller and direct competitor that sends customers to self-install, not an installer.",
+     "red_flags": [
+      "Direct competitor selling partitions",
+      "Does not install"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Irwin Enterprises, Inc.",
+     "base_city": "Centerville",
+     "state": "OH",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "review_source": "BBB: no rating shown, not accredited",
+     "evidence_urls": [
+      "https://www.bbb.org/us/oh/dayton/category/partition"
+     ],
+     "partition_evidence": "Only a BBB listing under the 'Partitions' category; no website, services or project photos found.",
+     "reason": "No evidence beyond a BBB category listing. It may be worth a phone check, since it's local.",
+     "red_flags": [
+      "No website found"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Doody Door & Hardware Inc",
+     "base_city": "Dayton",
+     "state": "OH",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "evidence_urls": [],
+     "partition_evidence": "Nothing found in search or the BBB Dayton partitions listing.",
+     "reason": "Couldn't find a website or any listing that shows partition work.",
+     "red_flags": [
+      "No online presence found"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "AllSource Construction Specialties, LLC",
+     "base_city": "Indianapolis",
+     "state": "IN",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "review_source": "BBB A+ (accredited), no review count shown",
+     "evidence_urls": [
+      "https://www.bbb.org/us/oh/dayton/category/partition"
+     ],
+     "partition_evidence": "Appears in the BBB partitions category only; no website or services found.",
+     "reason": "About 110 miles away in Indiana, with no evidence of partition installs and no statement that it serves Ohio.",
+     "red_flags": [
+      "No website found",
+      "Out of state"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "TK Constructors, Inc.",
+     "base_city": "West Chester",
+     "state": "OH",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "no",
+     "sells_partitions": "no",
+     "within_area": "nearby",
+     "brands": [],
+     "website": "https://tkconstructors.com/",
+     "phone": "(513) 217-6900",
+     "contact_page": "https://tkconstructors.com/contact-us/",
+     "evidence_urls": [
+      "https://www.tkconstructors.com/"
+     ],
+     "partition_evidence": "None; the company is a residential home builder.",
+     "reason": "Builds homes from ranch and two-story floor plans. It doesn't do commercial restroom partitions.",
+     "red_flags": [
+      "Residential home builder"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Ascent Contracting",
+     "base_city": "Cincinnati",
+     "state": "OH",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "nearby",
+     "brands": [],
+     "review_source": "BBB A+ (accredited), no review count shown",
+     "evidence_urls": [
+      "https://www.bbb.org/us/oh/dayton/category/partition",
+      "https://www.bbb.org/us/oh/mason/category/partition"
+     ],
+     "partition_evidence": "BBB partitions-category listing only; its tags (contractor equipment, appliances, cabinet supplies) don't indicate partition work.",
+     "reason": "No evidence of toilet partition installation.",
+     "red_flags": [
+      "No website found"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "akron",
+   "state": "OH",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/akron.json: worked. Maps gave W B Becherer Modernfold, Zietlow, Braden and McSweeny, H & K Partitions and Hardline Specialty Systems; the rest were residential bath remodelers, plumbers, HVAC and stores (skipped). Web entries were google.com/goto redirects with no domains; their titles led to Great Lakes Installation (office furniture installer, skipped) and others not relevant.",
+    "Earlier OH runs reused for context: batch-7.json (Cleveland) and batch-4.json (Columbus)",
+    "Company sites: wbbechererinc.com worked; zinstallers.com/toilet-partitions.htm worked; bradenandmcsweeny.com /services and /contact worked; inter-co.com worked; clevelandconstruction.com capabilities page worked, /contact 404; toiletpartition.com (Gratton) 503; cbxsolutions.com Akron branch (Botzum Bros / Cook & Boardman) 403",
+    "Bobrick find-a-rep: page loads but results need a dropdown; no reps in fetched text",
+    "Scranton, Bradley, Hadrian, ASI, General Partitions locators: not retried (404 or empty in earlier OH runs); Metpar and Ampco not tried",
+    "The Blue Book iProView pages: 403; search snippets gave nothing local",
+    "BuildingConnected / Procore: not tried (search cap)",
+    "BBB Akron 'partition' category: worked (Heath Johns, Builders' Hardware, Partition Systems Inc; the rest were glass, doors and other off-topic businesses)",
+    "constructionjobs.com job listing (Stalls Plus): 403, snippet only",
+    "WebSearch: 8 of 8 used (Akron install, Division 10 Akron/Canton/Cuyahoga Falls, Stalls Plus, Hardline/Great Lakes Installation, Canton/Youngstown/Medina, Blue Book NE Ohio, Partition Systems Pittsburgh). Results were dominated by One Point Partitions (online seller, DIY install; competitor, skipped). Kelley Bros (Cincinnati), U.S. Structures (Columbus supplier, no install) and Acoustic Ceiling & Partition of Ohio (no toilet partitions) were excluded."
+   ],
+   "found_count": 12,
+   "checked": [
+    {
+     "name": "Zietlow Installers & Distributors",
+     "base_city": "North Ridgeville",
+     "state": "OH",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "partition_evidence": "Homepage lists toilet partitions among products it supplies and installs; customer testimonial about church bathroom partitions delivered and installed.",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "nearby",
+     "website": "http://zinstallers.com/",
+     "phone": "440-355-4460",
+     "email": "info@zinstallers.com",
+     "contact_page": "http://zinstallers.com/contact.htm",
+     "evidence_urls": [
+      "http://zinstallers.com/",
+      "http://zinstallers.com/contact.htm"
+     ],
+     "red_flags": [
+      "Describes itself as a distributor: supplies partitions itself (buy-around risk)"
+     ],
+     "reason": "Commercial installer and distributor since 1970 that installs toilet partitions for schools, churches and offices; serves Cleveland, Medina and Cuyahoga County. It also distributes partitions, so buy-around risk.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Braden and McSweeny, Inc.",
+     "base_city": "Westlake (main office Pittsburgh, PA)",
+     "state": "OH",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "partition_evidence": "Services page: 'Manufacturer certified to install' toilet partitions and toilet room accessories; turnkey Division 10 package including installation.",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "nearby",
+     "website": "https://www.bradenandmcsweeny.com/",
+     "phone": "440-539-8666 (Ohio office); 412-279-3320 (Pittsburgh main)",
+     "contact_page": "https://www.bradenandmcsweeny.com/contact/",
+     "evidence_urls": [
+      "https://www.bradenandmcsweeny.com/",
+      "https://www.bradenandmcsweeny.com/services/",
+      "https://www.bradenandmcsweeny.com/contact/"
+     ],
+     "red_flags": [
+      "Stocks and supplies toilet partitions ('largest stock ... in Western Pennsylvania'): buy-around risk"
+     ],
+     "reason": "Division 10 contractor since 1964 that installs toilet partitions and has a Cleveland-area office in Westlake. It is also a large partition supplier.",
+     "added_by_checker": false
+    },
+    {
+     "name": "W.B. Becherer Inc. (Modernfold of Youngstown)",
+     "base_city": "Boardman (Youngstown area)",
+     "state": "OH",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "partition_evidence": "Site lists toilet partitions and washroom accessories among products and says it provides sales, installation and service for Division 10 products; no partition project shown.",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "Modernfold"
+     ],
+     "within_area": "no",
+     "website": "http://wbbechererinc.com/",
+     "phone": "330-758-6616",
+     "email": "brubech@aol.com",
+     "evidence_urls": [
+      "http://wbbechererinc.com/"
+     ],
+     "red_flags": [
+      "Manufacturers' sales rep for partitions (buy-around risk)",
+      "About 50 miles from Akron and site states no service area",
+      "No contact page; AOL email"
+     ],
+     "reason": "Division 10 sales, installation and service firm that lists toilet partitions, but no partition install shown. It is about 50 miles away, and its site names no service area.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Gratton Building Specialties, Inc.",
+     "base_city": "Mentor",
+     "state": "OH",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "no",
+     "website": "http://toiletpartition.com/",
+     "evidence_urls": [
+      "http://toiletpartition.com/"
+     ],
+     "red_flags": [
+      "Website returned HTTP 503 on two attempts",
+      "Search found no trace of the company",
+      "Mentor is about 45 miles from Akron"
+     ],
+     "reason": "Website down (503) and a web search found nothing on the company, so nothing could be verified.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Cleveland Construction, Inc. (Interior Trades)",
+     "base_city": "Mason",
+     "state": "OH",
+     "verdict": "reject",
+     "installs_partitions": "likely",
+     "partition_evidence": "Footer mentions 'Division 10 installations' and divisions 5-10 self-perform scopes; toilet partitions not named.",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "no",
+     "website": "https://clevelandconstruction.com/",
+     "phone": "513-398-8900",
+     "contact_page": "https://clevelandconstruction.com/general-contracting/about-us/contact-us/",
+     "evidence_urls": [
+      "https://clevelandconstruction.com/",
+      "https://clevelandconstruction.com/interior-trades/"
+     ],
+     "red_flags": [
+      "Large national general/interior contractor, not a partition installer",
+      "HQ Mason OH (Cincinnati area), about 200 miles away"
+     ],
+     "reason": "National general and interior-trades contractor based near Cincinnati. It mentions Division 10 only in general terms and doesn't serve this area as a partition installer.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Heath Johns Contracting",
+     "base_city": "Strongsville",
+     "state": "OH",
+     "verdict": "possible",
+     "installs_partitions": "unknown",
+     "partition_evidence": "Listed in BBB 'Partitions' category only; no website or project evidence found.",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "yes",
+     "phone": "(440) 554-0694",
+     "review_source": "BBB (not accredited, no rating shown on the page read)",
+     "evidence_urls": [
+      "https://www.bbb.org/us/oh/berea/category/partition"
+     ],
+     "red_flags": [
+      "No website found",
+      "Only a directory category listing as evidence",
+      "A search summary said a BBB page lists All Partitions & Parts, LLC at the same phone, but the BBB page read shows that company in Troy, MI"
+     ],
+     "reason": "In-area business listed by BBB under Partitions, but no website, services or projects could be found to confirm partition installation.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Builders' Hardware & Specialty Co. Inc.",
+     "base_city": "Austintown",
+     "state": "OH",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "no",
+     "phone": "(330) 799-8721",
+     "evidence_urls": [
+      "https://www.bbb.org/us/oh/berea/category/partition"
+     ],
+     "red_flags": [
+      "No website found",
+      "BBB category per search is commercial doors/locksmith",
+      "About 45 miles from Akron with no stated service area"
+     ],
+     "reason": "Appears in a BBB partitions list, but its own category is commercial doors and locksmith, and no evidence of partition installation was found.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Partition Systems Inc",
+     "base_city": "Pittsburgh",
+     "state": "PA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "no",
+     "evidence_urls": [],
+     "red_flags": [
+      "No Pittsburgh company by this name found; the only match is Partition Systems Inc. in Columbia, SC (a manufacturer)"
+     ],
+     "reason": "Could not find a Pittsburgh business of this name, and the only same-named company found is a South Carolina manufacturer.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Inter-Co Division 10 (Ohio), Inc.",
+     "base_city": "Columbus",
+     "state": "OH",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "partition_evidence": "Homepage: distributor and installer of toilet partitions and washroom accessories; supplies and installs products for offices, hospitals, schools, stadiums.",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "Bobrick (image alt text only)"
+     ],
+     "within_area": "regional",
+     "website": "https://inter-co.com/",
+     "phone": "(614) 875-2959",
+     "email": "ohsales@inter-co.com",
+     "contact_page": "https://inter-co.com/contact/",
+     "evidence_urls": [
+      "https://inter-co.com/"
+     ],
+     "red_flags": [
+      "Distributor of partitions (buy-around risk)",
+      "Columbus is about 110-125 miles from Akron; site has an Ohio office but doesn't name Northeast Ohio as a service area"
+     ],
+     "reason": "Installs and supplies toilet partitions commercially from a Columbus, Ohio office, but at the edge of the radius and without a stated Akron/Cleveland service area.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Stalls Plus Inc.",
+     "base_city": "Cleveland",
+     "state": "OH",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "nearby",
+     "evidence_urls": [],
+     "red_flags": [
+      "No website or listing found in search"
+     ],
+     "reason": "A search found no trace of this business, so nothing could be verified.",
+     "added_by_checker": false
+    },
+    {
+     "name": "H & K Partitions Inc",
+     "base_city": "North Royalton",
+     "state": "OH",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "yes",
+     "evidence_urls": [],
+     "red_flags": [
+      "No website or listing found; not in BBB Ohio partitions listings returned"
+     ],
+     "reason": "A search found no business by this name in North Royalton, so nothing could be verified.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Hardline Specialty Systems",
+     "base_city": "unknown",
+     "state": "OH",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "no",
+     "evidence_urls": [],
+     "red_flags": [
+      "No business by this name found; only unrelated Hardline Welding (Akron) and Hardline International (West Unity)",
+      "within_area set to no because base city is unknown"
+     ],
+     "reason": "No business by this name could be found, and the similar names found are unrelated.",
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "grand-rapids",
+   "state": "MI",
+   "sources_tried": [
+    "Seed file grand-rapids.json (Google Maps + web): worked; plausible hits GLBS, Divis10n, Payne-Rosso, S.A. Morman, Partition Systems, LG2; web seeds were residential remodel listings",
+    "Company websites (glbscorp.com, div10sales.com, paynerosso.com, samorman.com, psimi.net, lg2.us, robertbrooke.com): worked",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads but results are dynamic, no reps readable",
+    "Scranton Products find-a-dealer: 404",
+    "ASI, Bradley, Hadrian, Metpar, General Partitions, Ampco locators: not tried (search cap / dynamic locators)",
+    "The Blue Book (thebluebook.com iProView profiles 802033, 805136, 259472): 403 blocked; search snippets only (International Building Products Inc. lists Michigan service, unverified so not included)",
+    "BuildingConnected / Procore network: not tried (search cap)",
+    "BBB category pages (bbb.org/us/mi/category/partition, walker, lansing accredited): worked",
+    "ARCAT company page: 403",
+    "One Point Partitions (onepointpartitions.com / fxstaging): 403; online seller with Wyoming MI delivery terminal per search snippet, not an installer, not included",
+    "rayhavengroup.com and allpartitionsandparts.com: host not reachable (ENOTFOUND, guessed domains, may need network allowlist or may not exist)",
+    "WebSearch: 8 of 8 used (toilet partition installation Grand Rapids; Division 10 West Michigan; toilet partitions installer Holland/Kalamazoo/Muskegon/Lansing; Roberts Installation; Product Resource Company; restroom partitions installer MI lockers; Blue Book toilet partitions Grand Rapids) - few direct installer results"
+   ],
+   "found_count": 9,
+   "checked": [
+    {
+     "name": "Great Lakes Building Specialties (GLBS)",
+     "base_city": "Grand Rapids",
+     "state": "MI",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "ASI Global Partitions"
+     ],
+     "website": "https://www.glbscorp.com/",
+     "phone": "616-350-1977",
+     "email": "Lucas@glbscorp.com",
+     "contact_page": "https://www.glbscorp.com/request-a-quote",
+     "evidence_urls": [
+      "https://www.glbscorp.com/",
+      "https://www.glbscorp.com/toilet-partitions"
+     ],
+     "partition_evidence": "Toilet partitions page says 'Installation Available Throughout West Michigan'; homepage offers Division 10 installation in West Michigan with nationwide supply. No project portfolio, only product photos.",
+     "red_flags": [
+      "Authorized ASI dealer that sells partitions nationwide: buy-around risk and direct competitor",
+      "Listed email is a named person's address"
+     ],
+     "reason": "Grand Rapids commercial Division 10 company that explicitly installs toilet partitions across West Michigan. Also an ASI dealer, so it competes with Next Partitions on supply.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Divis10n (Division 10 Sales)",
+     "base_city": "Wyoming",
+     "state": "MI",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "AJW Washroom",
+      "Bobrick",
+      "Bradley",
+      "General",
+      "Global",
+      "Scranton"
+     ],
+     "website": "https://div10sales.com/",
+     "phone": "616-248-0498",
+     "email": "quotes@div10sales.com",
+     "contact_page": "https://div10sales.com/",
+     "evidence_urls": [
+      "https://div10sales.com/"
+     ],
+     "partition_evidence": "Lists 'Toilet Compartment' among its products and says its technicians can 'install, repair, and replace all of your Division 10 products'. I saw no partition installation project or photo.",
+     "red_flags": [
+      "Sells toilet compartments from several brands, including Bobrick, Bradley and Scranton, which Next Partitions also resells: buy-around risk"
+     ],
+     "reason": "Commercial Division 10 supplier and installer in Wyoming, MI that sells toilet compartments and installs Division 10 products. Partition installation itself isn't shown.",
+     "added_by_checker": false
+    },
+    {
+     "name": "S.A. Morman & Co.",
+     "base_city": "Grand Rapids",
+     "state": "MI",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://www.samorman.com/",
+     "phone": "(616) 245-0583",
+     "email": "info@samorman.com",
+     "contact_page": "https://www.samorman.com/contact",
+     "evidence_urls": [
+      "https://www.samorman.com/",
+      "https://www.samorman.com/contact"
+     ],
+     "partition_evidence": "Its Division 10 Specialties service offers 'Customized toilet partitions and other Division 10 speciality products'. It offers installation services, but the site describes them only for security systems.",
+     "red_flags": [
+      "Supplies toilet partitions itself: buy-around risk",
+      "Mainly a door, frame and hardware company"
+     ],
+     "reason": "Grand Rapids commercial door and hardware firm, with a Kalamazoo office, that supplies toilet partitions under Division 10. Whether it installs them isn't confirmed.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Payne-Rosso Co",
+     "base_city": "Lansing",
+     "state": "MI",
+     "verdict": "reject",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [
+      "Accurate Partitions",
+      "Bobrick",
+      "Metpar",
+      "Hollman",
+      "Penco"
+     ],
+     "website": "https://paynerosso.com/",
+     "phone": "(517) 321-4546",
+     "contact_page": "https://paynerosso.com/contact/",
+     "evidence_urls": [
+      "https://paynerosso.com/",
+      "https://paynerosso.com/contact/"
+     ],
+     "partition_evidence": "Stocks toilet partition material and hardware and says 'If we sell it, we can install and service it for you.' Brands come from the product links on the homepage.",
+     "red_flags": [
+      "Sells partitions, including Bobrick and Metpar: buy-around risk",
+      "Service area not stated",
+      "Homepage carries unrelated spam links, which suggests a compromised site",
+      "Only staff emails are published"
+     ],
+     "reason": "Building specialties rep that likely installs the partitions it sells. It is about 60 miles from Grand Rapids, and the site doesn't say it serves the area. Worth a phone check if West Michigan coverage is confirmed.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Roberts Installation & Repair, Inc.",
+     "base_city": "Scotts",
+     "state": "MI",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "phone": "(269) 370-3131",
+     "rating": 0,
+     "review_source": "BBB A+ rating, accredited since 2013 (letter grade, not a star rating)",
+     "evidence_urls": [
+      "https://www.bbb.org/us/mi/scotts/profile/partition/roberts-installation-repair-inc-0372-38149743",
+      "https://bbb.org/us/mi/walker/category/partition"
+     ],
+     "partition_evidence": "BBB says it does commercial installations specializing in gyms: partition installation and repair, curtains, wall mats, bleacher repair. Restroom partitions aren't mentioned.",
+     "red_flags": [
+      "No website found",
+      "Gym partitions rather than restroom partitions",
+      "BBB lists it as serving the Kalamazoo area, about 55 miles away"
+     ],
+     "reason": "Gym equipment installer near Kalamazoo. There's no evidence of toilet partition work, and its BBB listing names the Kalamazoo area, not Grand Rapids.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Product Resource Company",
+     "base_city": "Lansing",
+     "state": "MI",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "phone": "(517) 484-8400",
+     "review_source": "BBB A+ (not accredited), per a BBB category page",
+     "evidence_urls": [
+      "https://bbb.org/us/mi/walker/category/partition"
+     ],
+     "partition_evidence": "Only a BBB 'Partitions' category listing serving Lansing. No website or services found.",
+     "red_flags": [
+      "No website found",
+      "BBB lists it as serving Lansing only"
+     ],
+     "reason": "Only known from a BBB category listing that names Lansing as its service area. I found no evidence of toilet partition installation or Grand Rapids coverage.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Partition Systems Inc",
+     "base_city": "Cedar Springs",
+     "state": "MI",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [
+      "Hufcor",
+      "NanaWall",
+      "Mobilflex",
+      "Cornell Iron",
+      "Woodfold",
+      "Porter Athletic"
+     ],
+     "website": "http://psimi.net/",
+     "phone": "616-696-1300",
+     "email": "scott@psimi.net",
+     "contact_page": "http://psimi.net/contactus.html",
+     "evidence_urls": [
+      "http://psimi.net/"
+     ],
+     "partition_evidence": "Installs operable walls, glass walls, accordion walls, grills and shutters. Toilet partitions aren't mentioned.",
+     "red_flags": [
+      "Email is a named person's address"
+     ],
+     "reason": "Operable and moveable wall specialist serving West Michigan. Restroom partitions aren't among its services.",
+     "added_by_checker": false
+    },
+    {
+     "name": "LG2, LLC",
+     "base_city": "Grand Rapids",
+     "state": "MI",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [
+      "Modernfold",
+      "Euro-Wall",
+      "Tate"
+     ],
+     "website": "https://www.lg2.us/",
+     "phone": "616-295-1585",
+     "email": "info@lg2.us",
+     "contact_page": "https://www.lg2.us/contact",
+     "evidence_urls": [
+      "https://www.lg2.us/",
+      "https://bbb.org/us/mi/walker/category/partition"
+     ],
+     "partition_evidence": "Operable walls, folding glass, accordion partitions, lockers and raised floors only. No toilet partitions.",
+     "red_flags": [],
+     "reason": "Grand Rapids operable wall, locker and access floor supplier. It doesn't offer restroom partitions.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Robert Brooke & Associates",
+     "base_city": "Troy",
+     "state": "MI",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [
+      "Accurate",
+      "All American",
+      "American Sanitary",
+      "Ampco",
+      "Bobrick",
+      "Comtec/Capitol",
+      "Fiat",
+      "Flush Metal",
+      "General Partitions",
+      "Global",
+      "Hadrian",
+      "Knickerbocker",
+      "Metpar",
+      "Mills",
+      "Sanymetal"
+     ],
+     "website": "https://www.robertbrooke.com/",
+     "phone": "1-800-642-2403",
+     "email": "sales@robertbrooke.com",
+     "contact_page": "https://www.robertbrooke.com/contact",
+     "evidence_urls": [
+      "https://www.robertbrooke.com/"
+     ],
+     "partition_evidence": "Sells toilet partitions and parts and links to installation instructions, but offers no installation service.",
+     "red_flags": [
+      "Partition and parts supplier competing with Next Partitions",
+      "Based in metro Detroit, about 150 miles away"
+     ],
+     "reason": "Hardware and partition parts supplier in Troy that ships nationally. It doesn't install, and it's outside the area.",
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "madison",
+   "state": "WI",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/madison.json: worked, but nothing in it was relevant. The Maps results were remodelers, plumbers, stores and Solid Partitions (Pewaukee manufacturer, already rejected in milwaukee.json), and the web results were unresolvable google.com/goto links.",
+    "research/installers/milwaukee.json reviewed for overlap (LaForce, Solid Partitions, Best Specialties, Syncro).",
+    "Scranton Products where-to-buy: worked, but it lists only a Midwest regional rep (no WI dealer or installer).",
+    "Bobrick find-a-rep: results load by JavaScript, nothing readable.",
+    "ASI find-a-rep (asi-globalpartitions.com/find-a-rep/): 404 after redirect.",
+    "Bradley, Hadrian, Metpar, General Partitions, Ampco: not retried, since the Milwaukee run found them blocked or 404.",
+    "The Blue Book iProView pages: 403 blocked.",
+    "Procore Network public pages (/us/wi/madison/interior-specialties pages 1 and 2, /toilet-compartments, company profiles): worked. This gave Marz and Associates, John Buhler Co, D & L Specialties and Tri City Glass & Door.",
+    "BuildingConnected: not tried (requires sign-in).",
+    "UW-Madison purchasing contract wp5737: worked (LaForce, Scranton, installed).",
+    "Yellow Pages madison-wi/partitions and the 'toilet partitions' Madison search: worked, but only operable-wall firms (Hufcor, JWC, Curtition) and remodelers came up. JWC's site was checked: operable walls only, no toilet partitions.",
+    "Company sites: blockiron.com, laforceinc.com, marz.build, tricityglass-door.com, dandlspecialties.com and daloss.com worked; wisvalleybp.com returned 503; amppartitions.com had no company or location info (skipped).",
+    "WebSearch: 8 of 8 used. Results were dominated by One Point Partitions, toiletpartitions.com and Newton Distributing (national online sellers, skipped) and by out-of-state Division 10 firms. Southwest Solutions Group (Texas-based national, lists Madison as a service area) was skipped because it has no local base.",
+    "Yelp and BBB: not reached (Yelp was 403 in the Milwaukee run; no BBB pages surfaced in search)."
+   ],
+   "found_count": 8,
+   "checked": [
+    {
+     "name": "Marz and Associates",
+     "base_city": "Shawano",
+     "state": "WI",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Scranton Products",
+      "ASI Global Partitions",
+      "ASI Accurate Partitions"
+     ],
+     "phone": "715-787-4540",
+     "email": "info@marz.build",
+     "contact_page": "https://marz.build/quote-request/",
+     "website": "https://marz.build",
+     "evidence_urls": [
+      "https://marz.build",
+      "https://marz.build/bathroom-partitions/"
+     ],
+     "partition_evidence": "Bathroom partitions page says it is a certified dealer and installer, and its gallery shows commercial toilet partitions and urinal screens it installed.",
+     "red_flags": [
+      "Supplies partitions itself as a certified dealer, so it could sell around us",
+      "About 120+ miles from Madison, at the edge of the regional range; service area is stated only as 'all of Wisconsin'"
+     ],
+     "reason": "A Division 10 contractor that installs commercial toilet partitions and says it serves all of Wisconsin. It is based about 120 miles away, so Madison travel should be confirmed.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Block Iron & Supply Company (Madison branch)",
+     "base_city": "Madison",
+     "state": "WI",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Bobrick",
+      "Bradley",
+      "Scranton Products",
+      "ASI Group",
+      "Gamco",
+      "Koala Kare"
+     ],
+     "phone": "(608) 271-2744",
+     "email": "quotesmadison@blockiron.com",
+     "contact_page": "https://www.blockiron.com/contact",
+     "website": "https://www.blockiron.com/",
+     "evidence_urls": [
+      "https://www.blockiron.com/",
+      "https://www.blockiron.com/contact",
+      "https://www.blockiron.com/what-we-do"
+     ],
+     "partition_evidence": "The homepage lists 'Toilet Partitions & Accessories' under Division 10 and offers a general installation service. The pages read don't say it installs partitions; the Division 8 text mentions delivery and installation.",
+     "red_flags": [
+      "A Division 8/10 supplier that sells partitions (Bobrick, Bradley, Scranton, ASI), so it is a buy-around risk and a competitor"
+     ],
+     "reason": "Has a Madison branch and supplies toilet partitions with an installation service, but the pages read don't confirm it installs partitions.",
+     "added_by_checker": false
+    },
+    {
+     "name": "LaForce (Madison office)",
+     "base_city": "Madison",
+     "state": "WI",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(608) 222-2424",
+     "contact_page": "https://laforceinc.com/contact/",
+     "website": "https://laforceinc.com/",
+     "evidence_urls": [
+      "https://laforceinc.com/",
+      "https://laforceinc.com/laforce-locations/"
+     ],
+     "partition_evidence": "Lists 'Div. 10 Products: Toilet partitions, lockers & more' under Building Specialties and offers a separate Pre-Install & Install service. The pages read don't tie installation to partitions.",
+     "red_flags": [
+      "A large door, hardware and Division 10 distributor that sells partitions, so it is a buy-around risk",
+      "Its installation service may cover doors and hardware only"
+     ],
+     "reason": "Has a Madison office and supplies toilet partitions, and it offers installation services, but partition installation isn't shown.",
+     "added_by_checker": false
+    },
+    {
+     "name": "D & L Specialties, Inc.",
+     "base_city": "Mequon",
+     "state": "WI",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "phone": "(262) 241-7927",
+     "email": "info@dandlspecialties.com",
+     "contact_page": "https://www.dandlspecialties.com",
+     "website": "https://www.dandlspecialties.com",
+     "evidence_urls": [
+      "https://www.dandlspecialties.com",
+      "https://www.dandlspecialties.com/washrooms.htm"
+     ],
+     "partition_evidence": "Its Washrooms page lists 'Bathroom Partitions' as a product. Installation isn't mentioned anywhere on the pages read.",
+     "red_flags": [
+      "Product supplier (a Nyholm Company) that sells partitions",
+      "No service area or installation stated",
+      "Dated site (copyright 2003)"
+     ],
+     "reason": "A commercial specialties supplier that sells bathroom partitions, with no evidence that it installs them or serves Madison.",
+     "added_by_checker": false
+    },
+    {
+     "name": "D.A. Loss & Associates",
+     "base_city": "Milwaukee",
+     "state": "WI",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "brands": [
+      "Construction Specialties",
+      "Hadrian",
+      "Franklin Brass",
+      "Corrim",
+      "FRP"
+     ],
+     "phone": "414.384.4448",
+     "contact_page": "https://www.daloss.com/contact",
+     "website": "https://www.daloss.com/",
+     "evidence_urls": [
+      "https://www.daloss.com/",
+      "https://www.daloss.com/contact"
+     ],
+     "partition_evidence": "A Division 08/10 product resource and specification consultant for Wisconsin and Northern Illinois. It names Hadrian among its lines, but doesn't mention installation or toilet partitions.",
+     "red_flags": [
+      "Manufacturers' rep or specification firm, not an installer"
+     ],
+     "reason": "A Division 08/10 sales and specification firm with no installation service.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Tri City Glass & Door",
+     "base_city": "Appleton",
+     "state": "WI",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "mostly",
+     "sells_partitions": "no",
+     "within_area": "no",
+     "brands": [],
+     "website": "https://tricityglass-door.com/",
+     "evidence_urls": [
+      "https://business.foxcitieschamber.com/list/member/tri-city-glass-door-inc-appleton-8238"
+     ],
+     "partition_evidence": "Its website returned no content. Listings describe glass, glazing, window and door work only.",
+     "red_flags": [
+      "Glass and glazing company, not Division 10",
+      "Serves Northeast Wisconsin, about 100+ miles away"
+     ],
+     "reason": "A glass and door company serving Northeast Wisconsin, with no sign of toilet partition work.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Wisconsin Valley Building Products",
+     "base_city": "Wisconsin Rapids",
+     "state": "WI",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "brands": [],
+     "website": "http://www.wisvalleybp.com/",
+     "evidence_urls": [
+      "http://www.wisvalleybp.com/"
+     ],
+     "partition_evidence": "The website returned HTTP 503 twice, and a search found nothing on partitions.",
+     "red_flags": [
+      "Website unavailable",
+      "No verifiable partition evidence"
+     ],
+     "reason": "Couldn't verify anything: the site is down and no partition evidence was found.",
+     "added_by_checker": false
+    },
+    {
+     "name": "John Buhler Co., Inc.",
+     "base_city": "Milwaukee",
+     "state": "WI",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "brands": [],
+     "evidence_urls": [
+      "https://scrantonproducts.com/wp-content/uploads/2024/05/Scranton-Products-Dekoven-Center-Case-Study-Download.pdf"
+     ],
+     "partition_evidence": "Only found as the general contractor on a Scranton Products case study (Dekoven Center). There's no evidence it installs partitions itself.",
+     "red_flags": [
+      "General contractor, not a partition installer",
+      "No website provided or found"
+     ],
+     "reason": "Appears to be a general contractor, with no evidence that it installs partitions.",
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "des-moines",
+   "state": "IA",
+   "sources_tried": [
+    "Seed file des-moines.json: worked, but almost every result was a residential bath remodeler, store or plumber. Plausible leads were J. Laurenzo (Urbandale), Doors Inc and Premier Construction.",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded, but the results come from a JavaScript dropdown, so no reps were readable.",
+    "Scranton Products find-a-distributor: 404. A Scranton case study (Cedar Rapids) named no dealer or installer.",
+    "Hadrian find-a-representative: 404.",
+    "American Specialties find-a-rep: 404.",
+    "ASI, Bradley, Metpar, General Partitions, Ampco locators: not reached before the budget ran out.",
+    "The Blue Book (thebluebook.com search and iProView pages): 403 blocked.",
+    "BuildingConnected / Procore public profiles: not reached (no results surfaced in search).",
+    "Yelp search page: 403 blocked.",
+    "BBB category page: 404.",
+    "WebSearch, 8 calls (the cap): mostly specs, bid documents and national online sellers (One Point Partitions, Partition Pros, Prestige, GCS, CSI). National sellers were skipped as having no local base. Found Walsh Door (Des Moines) and confirmed J. Laurenzo.",
+    "City of Des Moines bid tabulation (Forest Avenue Library restroom, 2025): it read fine but lists only general contractors (Weston Companies, DSM Property Services, BallTeam, GTG, Bergstrom, Neumann Brothers, Trinity, Giardino, Ferris), not partition subcontractors, so none were included.",
+    "Existing repo research batch-6.json (Omaha): gave EPCO (Council Bluffs) and Ruck Specialties (Omaha) as regional leads."
+   ],
+   "found_count": 6,
+   "checked": [
+    {
+     "name": "J. Laurenzo Specialty Products",
+     "added_by_checker": false,
+     "base_city": "Urbandale",
+     "state": "IA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Hadrian",
+      "Bradley",
+      "Bobrick",
+      "ASI Accurate",
+      "ASI Global",
+      "General Commercial",
+      "Scranton",
+      "PSISC",
+      "Metpar",
+      "Koala"
+     ],
+     "website": "https://www.laurenzospecialties.com/",
+     "phone": "515-331-3074",
+     "contact_page": "https://www.laurenzospecialties.com/contact-us",
+     "evidence_urls": [
+      "https://www.laurenzospecialties.com/",
+      "https://www.laurenzospecialties.com/services",
+      "https://www.laurenzospecialties.com/products/toilet-partitions",
+      "https://www.laurenzospecialties.com/about-us"
+     ],
+     "partition_evidence": "Division 10 supplier since 1977; toilet partitions page names 9 brands; services page lists 'Installation' as a bullet after the Division 10 list but never ties it to partitions; no partition install projects or photos seen.",
+     "red_flags": [
+      "Sells toilet partitions itself (direct buy-around risk; same brands incl. ASI, Bobrick, Bradley, Scranton, Metpar)",
+      "Installation of partitions not explicitly confirmed"
+     ],
+     "reason": "Local commercial Division 10 supplier that lists installation as a service, but no page shows it installing partitions, and it is a direct competitor selling the same brands."
+    },
+    {
+     "name": "Doors, Inc.",
+     "added_by_checker": false,
+     "base_city": "Des Moines",
+     "state": "IA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://www.doorsinciowa.com/",
+     "phone": "515-288-8951",
+     "contact_page": "https://www.doorsinciowa.com/contact.php",
+     "evidence_urls": [
+      "https://www.doorsinciowa.com/",
+      "https://www.doorsinciowa.com/profile.php",
+      "https://www.doorsinciowa.com/locations.php",
+      "https://www.doorsinciowa.com/photos.php"
+     ],
+     "partition_evidence": "Profile page lists Toilet Partitions and Toilet Accessories as products and Installation as a service; site has a 'Toilet Stall Locations' download. Project photos are door/frame/hardware jobs, none captioned as partitions.",
+     "red_flags": [
+      "Supplies toilet partitions itself (buy-around risk)",
+      "Primarily a door, frame and hardware distributor; partition installation not shown in projects"
+     ],
+     "reason": "Employee-owned commercial door/hardware firm (Des Moines plus 6 other Iowa offices) that lists toilet partitions and an installation service, but no partition installs are shown."
+    },
+    {
+     "name": "Walsh Door + Security",
+     "added_by_checker": false,
+     "base_city": "Des Moines",
+     "state": "IA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://walshdoor.com/",
+     "phone": "515.262.9822",
+     "contact_page": "https://walshdoor.com/contact",
+     "evidence_urls": [
+      "https://walshdoor.com/",
+      "https://walshdoor.com/page/Toilet-Partitions",
+      "https://walshdoor.com/contact"
+     ],
+     "partition_evidence": "Has a 'Toilet-Partitions' URL whose content says Walsh offers 'a full range of Division 10 products, including restroom accessories, lockers', but partitions are not in the listed products; Division 10 nav item points to a hidden 'do-not-publish' page. Installs doors/frames/hardware.",
+     "red_flags": [
+      "Toilet partitions not actually listed; Division 10 section appears unpublished",
+      "May supply Division 10 products itself"
+     ],
+     "reason": "Commercial door, hardware and security contractor (Des Moines HQ, Iowa City, North Kansas City) with a Division 10 restroom accessories offering and installation services, but no confirmed partition work."
+    },
+    {
+     "name": "EPCO Ltd., Inc.",
+     "added_by_checker": false,
+     "base_city": "Council Bluffs",
+     "state": "IA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "website": "https://epcoltdinc.com/",
+     "phone": "712.322.0308",
+     "evidence_urls": [
+      "https://epcoltdinc.com/"
+     ],
+     "partition_evidence": "Distributes restroom partitions and accessories among Division 10 products (25,000+ projects since 1987); site describes distribution only, no installation.",
+     "red_flags": [
+      "Distributor of partitions (buy-around risk)",
+      "No installation service stated",
+      "About 130 miles from Des Moines and no statement that it serves the Des Moines area"
+     ],
+     "reason": "Division 10 distributor in Council Bluffs; no installation stated and no stated service of the Des Moines area, which is beyond the regional range."
+    },
+    {
+     "name": "Ruck Specialties",
+     "added_by_checker": false,
+     "base_city": "Omaha",
+     "state": "NE",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "website": "http://www.ruckspecialties.com/",
+     "phone": "(833) 444-1733",
+     "email": "info@ruckspecialties.com",
+     "contact_page": "http://www.ruckspecialties.com/home-2/#section-1614-6442",
+     "evidence_urls": [
+      "http://www.ruckspecialties.com/",
+      "https://lycosindustries.com"
+     ],
+     "partition_evidence": "Division 10 supplier listing toilet partitions; describes supplying, storing, delivering and backing layouts for the install team, not installing. Sister company Lycos Finish does commercial finish carpentry in Nebraska and Iowa, but partition installation not stated.",
+     "red_flags": [
+      "Supplier of partitions (buy-around risk)",
+      "No installation stated",
+      "About 135 miles from Des Moines; projects listed are in Omaha"
+     ],
+     "reason": "Omaha Division 10 supplier with no stated installation and no stated Des Moines service; out of range."
+    },
+    {
+     "name": "Premier Construction Services",
+     "added_by_checker": false,
+     "base_city": "West Des Moines",
+     "state": "IA",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "mostly",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://premierconstructiondm.com/",
+     "phone": "515-669-4905",
+     "contact_page": "https://premierconstructiondm.com/contact/",
+     "evidence_urls": [
+      "https://premierconstructiondm.com/"
+     ],
+     "partition_evidence": "None: services are room additions, garages, basements, kitchens, disaster restoration and general commercial build-outs; no toilet partitions or Division 10 mentioned.",
+     "red_flags": [
+      "Largely residential remodeling general contractor",
+      "No partition work shown"
+     ],
+     "reason": "General contractor serving residential and commercial clients since 2005 with no evidence of toilet partition installation."
+    }
+   ]
+  },
+  {
+   "area": "sioux-falls",
+   "state": "SD",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/sioux-falls.json: worked. Combined Building Specialties was the only relevant Maps result; the rest were remodelers, plumbers, stores and portable-toilet rentals. The web seed URLs are Google /goto redirects that did not resolve, so they could not be opened.",
+    "Bobrick Find a Rep (bobrick.com/find-a-rep): no data, because the dropdown loads by script and the page showed no reps.",
+    "Scranton Products where-to-buy / product specialist: worked but lists only a regional product specialist covering IA/IL/IN/MI/MN/ND/NE/SD/WI, not local dealers or installers.",
+    "ASI (Global Partitions), Bradley, Hadrian, Metpar, General Partitions, Ammco locators: not tried because of the fetch budget and locator pages that load by script.",
+    "The Blue Book: blocked (HTTP 403 on iProView pages), and no SD toilet-partition listings came up in search.",
+    "Procore Network (network.procore.com/us/sd/interior and /us/sd/sioux-falls/interior): worked. It found Combined Building Specialties. Tamarack Materials (Sioux Falls) is listed under 'Partitions' but is a drywall and building-materials supplier, and its site shows no toilet partitions, so it was left out. Other specialty firms listed are too far away: Commercial Door & Specialties in Rapid City SD (~340 mi), Kirk Gross Co. in Waterloo IA, and Building Material Supply and Harkraft in the Minneapolis area.",
+    "BBB category pages (bbb.org/us/sd/category/partition, /lockers, /us/sd/canton/category/partition): worked and found Lohan Construction and Combined Building Specialist. Sees Custom Wood Solutions (residential lockers and cabinetry) was skipped.",
+    "WebSearch (8 of 8 used): Sioux Falls toilet partition, Division 10, building specialties, Blue Book, and Sioux City/Brookings/Watertown queries. They mostly returned One Point Partitions, an online national distributor claiming a Sioux Falls 'delivery terminal'. Its site was blocked (403) and it points buyers to self-install or their own contractor, so it was left out as a national chain with no confirmed local installer. Prestige Distribution (Northbrook IL national installer network), Unified Specialty Services/UDH Group (NJ phone, no SD service area stated), Martin Bros (California) and Walsh Door (no location, no partitions listed) were also left out.",
+    "Checked and rejected: Commercial Interior Decor (cidinc.net; hotel interior design and flooring, no partitions) and Formatop (Kitchener ON countertop maker, no partitions)."
+   ],
+   "found_count": 2,
+   "checked": [
+    {
+     "name": "Combined Building Specialties (BBB: Combined Building Specialist, Inc.)",
+     "base_city": "Sioux Falls",
+     "state": "SD",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Scranton Products",
+      "Bradley",
+      "ASI Global",
+      "Bobrick",
+      "General Partitions",
+      "American Specialties"
+     ],
+     "partition_evidence": "Product Lines page lists Toilet & Shower Partitions (Scranton, Bradley, ASI Global, Bobrick, General Partitions); Services page says its technicians professionally install all of the product lines it sells.",
+     "website": "https://combinedbuilding.com/",
+     "phone": "(605) 331-6904",
+     "email": "sales@combinedbuilding.com",
+     "contact_page": "https://combinedbuilding.com/contact-us",
+     "rating": 4.3,
+     "review_count": 7,
+     "review_source": "Birdeye",
+     "evidence_urls": [
+      "https://combinedbuilding.com/",
+      "https://combinedbuilding.com/product-lines",
+      "https://combinedbuilding.com/services",
+      "https://combinedbuilding.com/contact-us",
+      "https://reviews.birdeye.com/d/home-improvements/sioux-falls-sd"
+     ],
+     "red_flags": [
+      "Is itself a dealer of partitions from ASI, Bobrick, Bradley and Scranton (brands Next Partitions resells), so there is a high buy-around risk",
+      "No toilet partition project photos found on the pages read; the gallery is mostly on Facebook (not checked)"
+     ],
+     "reason": "Sioux Falls Division 10 dealer-installer that serves schools, healthcare and other commercial clients across South Dakota. It lists toilet partitions from five manufacturers and says it installs everything it sells. It is a direct competitor on partition supply.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Lohan Construction Services, LLC",
+     "base_city": "Sioux Falls",
+     "state": "SD",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "partition_evidence": "The homepage lists 'Bathroom Partitions' as a service, with project photos, one captioned 'Commercial Bathroom Partitions Sioux Falls SD'. The BBB lists it under the SD 'Partition' category.",
+     "website": "https://www.lohanconstruction.com",
+     "phone": "605-496-8323",
+     "contact_page": "https://www.lohanconstruction.com",
+     "evidence_urls": [
+      "https://www.lohanconstruction.com",
+      "https://www.bbb.org/us/sd/category/partition"
+     ],
+     "red_flags": [
+      "Small remodeler; the rest of the site is residential tile, shower, deck and flooring work",
+      "No separate partitions page; partition evidence is only two homepage photos",
+      "No email listed, only a contact form on the homepage",
+      "BBB shows A+ but not accredited; no numeric review rating seen"
+     ],
+     "reason": "Two homepage photos show bathroom partition installs (one captioned commercial) in Sioux Falls, but the business is mainly a residential tile and remodel contractor and doesn't describe its commercial partition work. That makes it a reasonable candidate to vet, not yet proven.",
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "colorado-springs",
+   "state": "CO",
+   "sources_tried": [
+    "Seed file colorado-springs.json: worked. Of the maps entries, only Advanced Contracting and Epic Specialties (plus the related Epic Haus) were relevant. The rest were remodelers, plumbers, glass and countertop shops, handymen and supply stores. Woods Contracting (wireworkscoinc.com) was opened and is residential only, so it was skipped. All web seeds are opaque Google redirect URLs to remodelers and directories, so none were used.",
+    "Existing Denver research (raw/batch-3.json): reused for regional Front Range leads, all re-checked on their own sites in this run.",
+    "Hadrian find-a-rep (guessed URL): 404",
+    "Scranton Products where-to-buy: worked, but it lists only a regional product specialist (Architectural Cornerstone Group, 972 number), not an installer",
+    "Ampco find-a-rep: empty page. Bobrick, ASI, Bradley, Metpar and General Partitions locators: not tried, because the Denver run found them dynamic or 404",
+    "The Blue Book: search and iProView profiles return 403 (blocked)",
+    "BuildingConnected / Procore: not tried (search cap)",
+    "WebSearch: 8 of 8 used. Results were dominated by One Point Partitions SEO pages (an online seller with a Colorado Springs delivery terminal, excluded as a national supplier). Also seen and excluded: Innergy Interiors (El Paso TX, says it serves Colorado but is more than 120 mi away), Unified Specialty Services/UDH Group (no Colorado presence stated), Newton Distributing (national seller), Total Restroom and Sustainable Supply (online sellers).",
+    "Craigslist installer job postings (toilet partitions, travel in CO/WY): 404, employer unknown",
+    "Tallo and iHireConstruction job pages: loaded but didn't show the Division 10 installer job or its employer",
+    "MapQuest listing for Simpson & Simpson Sales & Service (metal toilet partitions, Colorado, per search snippet): host not in allowed network, so it wasn't read or included",
+    "Yelp/BBB: not reached within the search cap. The Denver run found Yelp blocked and no BBB results"
+   ],
+   "found_count": 5,
+   "checked": [
+    {
+     "name": "Advanced Contracting LLC",
+     "base_city": "Colorado Springs",
+     "state": "CO",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "719-309-6475",
+     "email": "bids@advancedcontractingllc.com",
+     "contact_page": "https://advancedcontractingllc.com/contact",
+     "website": "https://advancedcontractingllc.com/",
+     "evidence_urls": [
+      "https://advancedcontractingllc.com/",
+      "https://advancedcontractingllc.com/contact",
+      "https://advancedcontractingllc.com/toilet-partitions",
+      "https://advancedcontractingllc.com/gallery"
+     ],
+     "partition_evidence": "Homepage offers 'Division 10 commercial construction products and installation services' with toilet partitions listed and installers statewide; a dedicated toilet partitions page covers materials and mounting styles. The gallery photos have no captions, so no partition project could be confirmed.",
+     "red_flags": [
+      "Supplies partitions itself (buy-around risk)",
+      "No named partition projects or brands on its pages"
+     ],
+     "reason": "Colorado Springs-based, woman-owned commercial Division 10 supplier and installer that lists toilet partitions among the products it supplies and installs. Serves Southern Colorado, Denver Metro and the Western Slope.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Epic Specialties",
+     "base_city": "Colorado Springs area (base city not stated; serves Colorado Springs, Denver, Pueblo)",
+     "state": "CO",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Hadrian",
+      "Bobrick",
+      "Bradley",
+      "Scranton",
+      "ASI"
+     ],
+     "phone": "(719) 822-2047",
+     "contact_page": "https://www.epicspecialtiesco.com/contact",
+     "website": "https://www.epicspecialtiesco.com/",
+     "evidence_urls": [
+      "https://www.epicspecialtiesco.com/",
+      "https://www.epicspecialtiesco.com/services",
+      "https://www.epicspecialtiesco.com/contact",
+      "https://www.epicspecialtiesco.com/gallery"
+     ],
+     "partition_evidence": "Calls itself a 'Colorado Division 10: Specialties Supplier & Installer'. Its services page lists bathroom partitions and accessories (Hadrian, Bobrick, Bradley, Scranton, ASI) and says it provides and installs specialties for commercial work.",
+     "red_flags": [
+      "Supplies partitions itself (buy-around risk)",
+      "No base city or street address on the site; the copyright line names EPICHAUS, LLC",
+      "Contact page lists only individual staff emails (Clint@, Marshall@), so no general company email",
+      "Gallery images have no captions"
+     ],
+     "reason": "Small Division 10 supplier and installer that names toilet partition brands and says it serves the Colorado Springs, Denver and Pueblo areas. The legal entity (Epic Haus) should be confirmed during vetting.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Colorado Specialties, Inc.",
+     "base_city": "Golden",
+     "state": "CO",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Hadrian",
+      "ASI",
+      "Scranton",
+      "Metpar",
+      "Privada",
+      "Bradley",
+      "Bobrick"
+     ],
+     "phone": "303-595-9627",
+     "email": "estimating@coloradospecialties.com",
+     "contact_page": "https://coloradospecialties.com/contact-us/",
+     "website": "https://coloradospecialties.com/",
+     "evidence_urls": [
+      "https://coloradospecialties.com/",
+      "https://coloradospecialties.com/contact-us/"
+     ],
+     "partition_evidence": "Its construction division estimates and installs toilet partitions, accessories, FRP and wall protection in Colorado and Wyoming. Listed commercial clients include DIA, the FBI Denver Field Office, Children's Hospital and the Denver VA.",
+     "red_flags": [
+      "Stocking wholesale distributor and manufacturers' rep for the same brands we sell (strong buy-around risk)",
+      "Colorado Springs is not named; it says only that it installs in Colorado and Wyoming",
+      "About 65 miles away"
+     ],
+     "reason": "Proven commercial toilet partition installer that serves all of Colorado, about 65 miles north. It is also a major distributor of the same brands, so the buy-around risk is high.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Continental Partition Systems, LLC",
+     "base_city": "Frederick",
+     "state": "CO",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "ASI",
+      "Bobrick",
+      "American Specialties"
+     ],
+     "phone": "(303) 396-0200",
+     "email": "info@cps-partitions.com",
+     "contact_page": "https://www.cps-partitions.com/Contact",
+     "website": "https://cps-partitions.com/",
+     "evidence_urls": [
+      "https://cps-partitions.com/",
+      "https://www.cps-partitions.com/Lockers-Stalls",
+      "https://www.cps-partitions.com/Contact"
+     ],
+     "partition_evidence": "Its 'Bathroom Stalls, Accessories, and Locker Installation' page lists ASI and Bobrick partitions. The core business is operable walls and gym equipment.",
+     "red_flags": [
+      "Sells partitions (buy-around risk)",
+      "Restroom partitions are a side line next to operable walls",
+      "No restroom partition projects shown",
+      "About 95 miles away; Colorado Springs is not named"
+     ],
+     "reason": "Commercial specialties firm that installs ASI and Bobrick toilet partitions and serves Colorado (also WY, TX, FL, OK), about 95 miles north. Partitions are a secondary line for it.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Associated Building Specialties (ABS)",
+     "base_city": "Broomfield",
+     "state": "CO",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Bradley",
+      "Bobrick",
+      "Hadrian",
+      "ASI",
+      "Thrislington"
+     ],
+     "phone": "303.293.2096",
+     "email": "info@absinc.com",
+     "website": "https://absinc.com/",
+     "evidence_urls": [
+      "https://absinc.com/"
+     ],
+     "partition_evidence": "Calls itself a specialties subcontractor and lists toilet partitions and washroom accessories among its Division 10 products. It is the Hadrian dealer for Colorado. Its homepage does not say outright that it installs partitions.",
+     "red_flags": [
+      "Dealer for Hadrian, ASI, Bobrick and Bradley (strong buy-around risk)",
+      "Large general Division 10 and glazing subcontractor that may not take small jobs",
+      "Colorado Springs is not named; about 80 miles away"
+     ],
+     "reason": "Major Colorado Division 10 subcontractor and partition dealer. I didn't see partition installation stated on a page I could read, and it is a direct competitor as a dealer.",
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "greensboro",
+   "state": "NC",
+   "sources_tried": [
+    "Seed file greensboro.json: worked. Most entries were remodelers, plumbers and stores; the useful ones were RBS, Preferred Bath, Simco, Elite, US Doorways, B A Hoft, Division 10 and RepSouth",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): loaded, but the results come from a dropdown and the page text showed none",
+    "Scranton Products where-to-buy: worked; NC is covered only by the rep firm Southern States Architectural Sales (678.425.8796), no local dealers",
+    "ASI (asipartitions.com): blocked, host not resolvable from this session",
+    "Hadrian and Metpar rep pages: 404 at the URLs tried",
+    "Bradley, General Partitions, Ampco/Ammco locators: not tried (fetch budget)",
+    "The Blue Book: found through search (Macade, Donco, J.S. Archer), but every iProView page returned 403",
+    "BuildingConnected and Procore: not tried (sign-in or not reachable)",
+    "WebSearch: 8 of 8 used. Queries were 'toilet partition installation Greensboro', Division 10 NC, Winston-Salem/High Point/Burlington, furnish-and-install NC, Blue Book Greensboro, Triad Division 10, Charlotte/Raleigh specialties, Greensboro Yelp/BBB. Results were dominated by One Point Partitions, an online seller that doesn't install, so it was skipped",
+    "BBB category pages: worked (Greensboro and Waxhaw partition categories, LockersNMore, CCI Door, Proven Products profiles)",
+    "Yelp: no results came up in search",
+    "Skipped: One Point Partitions (ships nationwide, says it doesn't install), Proven Products in Kinston (operable and accordion partitions only), J.S. Archer in Ashland VA (about 200 miles, Virginia service area), Donco in Peachtree City GA (more than 120 miles), Division10 Distribution in Asheville (site not resolvable, about 150 miles), Unified Door & Hardware Group (national, no NC office shown)"
+   ],
+   "found_count": 12,
+   "checked": [
+    {
+     "name": "Residential Building Specialties, Inc.",
+     "base_city": "Winston-Salem",
+     "state": "NC",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "American Specialties",
+      "AJW Washroom Access",
+      "Cal-Royal",
+      "Philadelphia Hardware Group"
+     ],
+     "website": "https://rbsws.com/",
+     "phone": "(336) 766-5186",
+     "contact_page": "https://rbsws.com/contact-residential-building-specialties-inc/",
+     "evidence_urls": [
+      "https://rbsws.com/",
+      "https://rbsws.com/commercial-products/"
+     ],
+     "partition_evidence": "Commercial products page lists 'Washroom Partitions', a 'Bathroom Stalls' service heading, and 'From a basic installation to a commercial bathroom remodeling project ... quality installation'.",
+     "red_flags": [
+      "Mainly a residential builder supplier; sells partitions itself (buy-around risk)",
+      "No project photos of partition installs seen"
+     ],
+     "reason": "Winston-Salem supplier whose commercial page lists washroom partitions and bathroom stalls with installation; serves Mebane to Statesville, which covers the Triad.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Integrated Openings Solutions, Raleigh (formerly B A Hoft & Associates)",
+     "base_city": "Raleigh",
+     "state": "NC",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://integratedopenings.com/locations/raleigh/",
+     "phone": "(919) 596-4446",
+     "email": "info@integratedopenings.com",
+     "contact_page": "https://integratedopenings.com/locations/",
+     "evidence_urls": [
+      "https://integratedopenings.com/locations/raleigh/",
+      "https://integratedopenings.com/capabilities/"
+     ],
+     "partition_evidence": "Company capabilities page: Division 10 'including washroom accessories, toilet partitions' and 'expert installation for all Division 10 specialties'. Raleigh location page lists Washroom Accessories but not partitions.",
+     "red_flags": [
+      "Partition installation stated company-wide, not on the Raleigh page",
+      "No Triad service area stated; Raleigh is about 75 miles away",
+      "Supplies products (product sourcing), so a buy-around risk"
+     ],
+     "reason": "Commercial door and Division 10 firm stating partition installation company-wide, with an NC office about 75 miles away. It isn't confirmed that the Raleigh office does partitions or serves the Triad.",
+     "added_by_checker": false
+    },
+    {
+     "name": "CCI Door & Hardware, Inc.",
+     "base_city": "Roanoke",
+     "state": "VA",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "website": "https://www.ccidoor.com/",
+     "phone": "(540) 342-4645",
+     "evidence_urls": [
+      "https://www.ccidoor.com/"
+     ],
+     "partition_evidence": "Homepage describes the company as a supplier and commercial installer of 'toilet partitions for restrooms'; 'All Commercial Work'.",
+     "red_flags": [
+      "Virginia-based (about 95 miles); site does not mention serving North Carolina",
+      "Contact page URL returned 404; email obfuscated"
+     ],
+     "reason": "Clearly a commercial partition supplier and installer, but its site names no North Carolina service. It is in range only if it confirms it works in the Triad.",
+     "added_by_checker": false
+    },
+    {
+     "name": "US Doorways Inc",
+     "base_city": "Garner",
+     "state": "NC",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [],
+     "website": "http://www.usdoorways.com/",
+     "phone": "919-861-6340",
+     "contact_page": "https://www.usdoorways.com/contact.html",
+     "evidence_urls": [
+      "http://www.usdoorways.com/",
+      "https://www.usdoorways.com/contact.html",
+      "https://www.usdoorways.com/services.html"
+     ],
+     "partition_evidence": "Homepage lists toilet partitions and toilet accessories among products; services page lists 'quality installation' generally, not partitions specifically.",
+     "red_flags": [
+      "No service area stated; Garner is about 80 miles from Greensboro",
+      "Page title references Jacksonville, NC (location unclear)",
+      "Sells partitions (buy-around risk)"
+     ],
+     "reason": "Commercial door and specialties supplier that sells toilet partitions and offers installation in general. Partition installation and Triad coverage are unconfirmed.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Macade, Inc.",
+     "base_city": "Clayton",
+     "state": "NC",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "evidence_urls": [
+      "https://www.thebluebook.com/iProView/803422/macade-inc/subcontractors/"
+     ],
+     "partition_evidence": "Blue Book subcontractor listing (seen only as a search summary; page returned 403) lists Division 8 and 10 work including toilet partitions and accessories.",
+     "red_flags": [
+      "No website found",
+      "Blue Book page could not be read directly",
+      "Clayton is about 85 miles away; no Triad service stated"
+     ],
+     "reason": "Listed as a Division 10 subcontractor covering toilet partitions, but only a search summary was seen. It has no website and no stated Triad coverage.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Division 10",
+     "base_city": "Raleigh",
+     "state": "NC",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "website": "http://www.div10csi.com/",
+     "evidence_urls": [
+      "http://www.div10csi.com/"
+     ],
+     "partition_evidence": "None seen; site returned HTTP 503 twice and a search found no other page.",
+     "red_flags": [
+      "Website down (503)",
+      "No verifiable information"
+     ],
+     "reason": "Could not verify anything: website unavailable and no other source found.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Berl's Commercial Supply",
+     "base_city": "Mooresville",
+     "state": "NC",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "ASI Global Partitions",
+      "Bradley",
+      "Hadrian",
+      "Metpar"
+     ],
+     "website": "https://berls.com/partitions",
+     "phone": "(704) 937-2673",
+     "email": "sales@berls.com",
+     "evidence_urls": [
+      "https://berls.com/partitions"
+     ],
+     "partition_evidence": "Partitions page sells and quotes partitions; no mention of installation.",
+     "red_flags": [
+      "Partition seller (competitor / buy-around risk)",
+      "No installation service stated"
+     ],
+     "reason": "A partition supplier that quotes and sells. No installation is stated, so it is a competitor, not an installer.",
+     "added_by_checker": false
+    },
+    {
+     "name": "LockersNMore, LLC",
+     "base_city": "Charlotte",
+     "state": "NC",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://lockersnmore.com/",
+     "phone": "704-440-4070",
+     "contact_page": "https://lockersnmore.com/contact-us/",
+     "evidence_urls": [
+      "https://lockersnmore.com/"
+     ],
+     "partition_evidence": "Describes itself as a nationwide 'Storage Lockers and Toilet Partitions Distributor'; installation not mentioned.",
+     "red_flags": [
+      "Distributor and competitor (buy-around risk)",
+      "No installation service stated"
+     ],
+     "reason": "A nationwide partition distributor with no stated installation service.",
+     "added_by_checker": false
+    },
+    {
+     "name": "RepSouth",
+     "base_city": "Pineville",
+     "state": "NC",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [],
+     "website": "https://repsouth.com/",
+     "phone": "704.525.3043",
+     "email": "marketing@repsouth.com",
+     "contact_page": "https://repsouth.com/contact/",
+     "evidence_urls": [
+      "https://repsouth.com/"
+     ],
+     "partition_evidence": "Manufacturers' rep listing toilet partitions under Architectural Specialties; not an installer.",
+     "red_flags": [
+      "Manufacturers' representative, not an installer"
+     ],
+     "reason": "A manufacturers' rep firm covering NC and SC that sells to wholesalers and contractors. It does not install.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Preferred Bath Accessories Inc",
+     "base_city": "Kernersville",
+     "state": "NC",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "unknown",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [
+      "Preferred Bath Accessories (VersaBath, Versa Mount)"
+     ],
+     "website": "http://www.preferredbathinc.com/",
+     "phone": "336-904-2163",
+     "email": "sales@preferredbathinc.com",
+     "contact_page": "https://www.preferredbathinc.com/quote",
+     "evidence_urls": [
+      "http://www.preferredbathinc.com/"
+     ],
+     "partition_evidence": "None; sells grab bars and bath accessories only.",
+     "red_flags": [
+      "Bath accessory products seller; no partitions or installation"
+     ],
+     "reason": "Sells its own bath accessory product lines. Partitions and installation are not mentioned.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Simco Building Products",
+     "base_city": "Kernersville",
+     "state": "NC",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "unknown",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://simcobp.com/",
+     "phone": "336-904-6512",
+     "email": "Office@simcobp.com",
+     "evidence_urls": [
+      "https://simcobp.com/"
+     ],
+     "partition_evidence": "None; shelving, shower enclosures, mirrors, blinds and bath and door hardware installation.",
+     "red_flags": [
+      "Residential builder products; no partitions"
+     ],
+     "reason": "Installs shelving, shower enclosures, mirrors and hardware. There is no evidence of partition work.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Elite Specialty Products of NC, LLC",
+     "base_city": "Clemmons",
+     "state": "NC",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "no",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [],
+     "website": "http://elitespecialtyproducts.com/",
+     "phone": "336.764.5850",
+     "evidence_urls": [
+      "http://elitespecialtyproducts.com/"
+     ],
+     "partition_evidence": "None; custom closets, shower glass, bath hardware for builders and homeowners.",
+     "red_flags": [
+      "Residential focus"
+     ],
+     "reason": "A residential closet, shower glass and bath hardware installer. Partitions are not mentioned.",
+     "added_by_checker": false
+    }
+   ]
+  }
+ ],
+ "licenses": [
+  {
+   "state": "OH",
+   "results": [
+    {
+     "name": "Inter-Co Division 10 (Ohio), Inc.",
+     "area": "dayton",
+     "status": "not_required_online_check",
+     "registry": "City of Dayton Building Inspection Division, Registered Contractors Lists (electrical, heating, pipe laying, plumbing only); Ohio Construction Industry Licensing Board (no state license for this work)",
+     "note": "Base city Columbus (Grove City). Ohio has no state license for partition installation. Dayton publishes registered-contractor lists only for electrical, heating, pipe laying and plumbing. There is no general or building contractor list, so the City has no list to check for toilet partition installation. Dayton's FAQ says some minor work 'may need to be done by a City of Dayton licensed contractor' and to call Building Inspection at 937-333-3883 about a specific project. Confirm with the City before work starts.",
+     "source_url": "https://www.daytonohio.gov/691/Registered-Contractors-Lists"
+    },
+    {
+     "name": "Kelley Bros (Cincinnati branch)",
+     "area": "dayton",
+     "status": "not_required_online_check",
+     "registry": "City of Dayton Registered Contractors Lists (trade lists only); Ohio CILB (no state license for this work)",
+     "note": "Base city Mason. Partition installation isn't one of Dayton's registered trades (electrical, heating, pipe laying, plumbing), and Ohio has no state license for it. Confirm with Dayton Building Inspection (937-333-3883).",
+     "source_url": "https://www.daytonohio.gov/691/Registered-Contractors-Lists"
+    },
+    {
+     "name": "Cleveland Construction, Inc. (Interior Trades)",
+     "area": "dayton",
+     "status": "not_required_online_check",
+     "registry": "City of Dayton Registered Contractors Lists (trade lists only); Ohio CILB (no state license for this work)",
+     "note": "Base city Mason. Partition installation isn't one of Dayton's registered trades (electrical, heating, pipe laying, plumbing), and Ohio has no state license for it. Confirm with Dayton Building Inspection (937-333-3883).",
+     "source_url": "https://www.daytonohio.gov/691/Registered-Contractors-Lists"
+    },
+    {
+     "name": "Construction Systems Inc (CSi)",
+     "area": "dayton",
+     "status": "not_required_online_check",
+     "registry": "City of Dayton Registered Contractors Lists (trade lists only); Ohio CILB (no state license for this work)",
+     "note": "Base city Columbus. Partition installation isn't one of Dayton's registered trades (electrical, heating, pipe laying, plumbing), and Ohio has no state license for it. Confirm with Dayton Building Inspection (937-333-3883).",
+     "source_url": "https://www.daytonohio.gov/691/Registered-Contractors-Lists"
+    },
+    {
+     "name": "Acoustic Ceiling & Partition of Ohio, Inc.",
+     "area": "dayton",
+     "status": "not_required_online_check",
+     "registry": "City of Dayton Registered Contractors Lists (trade lists only); Ohio CILB (no state license for this work)",
+     "note": "Base city Westerville. Partition installation isn't one of Dayton's registered trades (electrical, heating, pipe laying, plumbing), and Ohio has no state license for it. Confirm with Dayton Building Inspection (937-333-3883).",
+     "source_url": "https://www.daytonohio.gov/691/Registered-Contractors-Lists"
+    },
+    {
+     "name": "Ohio Trim & Door",
+     "area": "dayton",
+     "status": "not_required_online_check",
+     "registry": "City of Dayton Registered Contractors Lists (trade lists only); Ohio CILB (no state license for this work)",
+     "note": "Base city Columbus. Partition installation isn't one of Dayton's registered trades (electrical, heating, pipe laying, plumbing), and Ohio has no state license for it. Confirm with Dayton Building Inspection (937-333-3883).",
+     "source_url": "https://www.daytonohio.gov/691/Registered-Contractors-Lists"
+    },
+    {
+     "name": "LaForce (Columbus branch)",
+     "area": "dayton",
+     "status": "not_required_online_check",
+     "registry": "City of Dayton Registered Contractors Lists (trade lists only); Ohio CILB (no state license for this work)",
+     "note": "Base city Grove City. Partition installation isn't one of Dayton's registered trades (electrical, heating, pipe laying, plumbing), and Ohio has no state license for it. Confirm with Dayton Building Inspection (937-333-3883).",
+     "source_url": "https://www.daytonohio.gov/691/Registered-Contractors-Lists"
+    },
+    {
+     "name": "Zietlow Installers & Distributors",
+     "area": "akron",
+     "status": "not_online",
+     "registry": "City of Akron contractor registration (Plans and Permits Center, Engineering Bureau), done through the Plan Review and Permits web portal",
+     "note": "Base city North Ridgeville. Akron says it 'requires all contractors regardless of trade to register as a contractor if the work they are preforming requires a permit' (Akron tax registration number, $3 million liability insurance, workers' comp where the contractor has employees). The City publishes no registered-contractor list and no public lookup. Its Cityworks portal offers only sign-in or creating an application as a guest. Confirm registration by phone with the Plans and Permits Center (330-375-2010, the number on the City's renewal form, found via search; not opened).",
+     "source_url": "https://www.akronohio.gov/pnp"
+    },
+    {
+     "name": "Braden and McSweeny, Inc.",
+     "area": "akron",
+     "status": "not_online",
+     "registry": "City of Akron contractor registration (Plans and Permits portal, no public lookup)",
+     "note": "Ohio office in Westlake, main office Pittsburgh, PA. Akron requires every contractor doing permitted work to register, but it has no public registry or search; the portal needs a sign-in. Confirm with Akron Plans and Permits.",
+     "source_url": "https://www.akronohio.gov/pnp"
+    },
+    {
+     "name": "W.B. Becherer Inc. (Modernfold of Youngstown)",
+     "area": "akron",
+     "status": "not_online",
+     "registry": "City of Akron contractor registration (Plans and Permits portal, no public lookup)",
+     "note": "Base city Boardman (Youngstown area). Akron requires every contractor doing permitted work to register, but it has no public registry or search; the portal needs a sign-in. Confirm with Akron Plans and Permits.",
+     "source_url": "https://www.akronohio.gov/pnp"
+    },
+    {
+     "name": "Heath Johns Contracting",
+     "area": "akron",
+     "status": "not_online",
+     "registry": "City of Akron contractor registration (Plans and Permits portal, no public lookup)",
+     "note": "Base city Strongsville. Akron requires every contractor doing permitted work to register, but it has no public registry or search; the portal needs a sign-in. Confirm with Akron Plans and Permits.",
+     "source_url": "https://www.akronohio.gov/pnp"
+    },
+    {
+     "name": "Inter-Co Division 10 (Ohio), Inc.",
+     "area": "akron",
+     "status": "not_online",
+     "registry": "City of Akron contractor registration (Plans and Permits portal, no public lookup)",
+     "note": "Base city Columbus. Akron requires every contractor doing permitted work to register, but it has no public registry or search; the portal needs a sign-in. Confirm with Akron Plans and Permits. Ohio has no state license for partition installation.",
+     "source_url": "https://www.akronohio.gov/pnp"
+    }
+   ],
+   "registries": [
+    "Ohio Construction Industry Licensing Board: no state license for partition installation (taken from the given state rule). The eLicense lookup was not needed.",
+    "City of Dayton Registered Contractors Lists (https://www.daytonohio.gov/691/Registered-Contractors-Lists): public PDFs, but only for electrical, heating, pipe laying and plumbing. No general or building contractor list, so partition installers have no list to check. The Dayton FAQ (https://daytonohio.gov/m/faq?cat=18) says to call 937-333-3883 about a specific project.",
+    "City of Akron contractor registration (https://www.akronohio.gov/pnp): registration is required for every trade doing permitted work, but no public list or search is published. The Cityworks Plan Review and Permits portal (https://agis.akronohio.gov/CityworksPA/template/login.aspx) offers only sign-in or creating an application as a guest, so the lookup cannot be automated. Marked not_online.",
+    "WebSearch calls used: 2 of 5."
+   ]
+  },
+  {
+   "state": "MI",
+   "results": [
+    {
+     "name": "Great Lakes Building Specialties (GLBS)",
+     "area": "grand-rapids",
+     "status": "not_online",
+     "registry": "City of Grand Rapids Development Center registered contractor list (Power BI directory linked from grandrapidsmi.gov Registered Contractor page)",
+     "source_url": "https://www.grandrapidsmi.gov/grow-and-thrive/development-center/registered-contractor/",
+     "note": "Checked 2026-11-19. The city's registered contractor list is a Power BI report that only shows a loading screen to automated access, so no record could be read. The city's Register Contractor page says registration applies to holders of a State of Michigan license who pull permits in Grand Rapids, plus underground contractors. It mentions no city registration for commercial contractors without a state license. Michigan has no state license for commercial specialty work such as partition installation, and the LARA lookup (Accela) is a search form that could not be run automatically. Confirm by name in the city list or with the Development Center, 616-456-4100 (company-neutral public office line from the city page)."
+    },
+    {
+     "name": "Divis10n (Division 10 Sales)",
+     "area": "grand-rapids",
+     "status": "not_online",
+     "registry": "City of Grand Rapids Development Center registered contractor list (Power BI directory)",
+     "source_url": "https://www.grandrapidsmi.gov/grow-and-thrive/development-center/registered-contractor/",
+     "note": "Checked 2026-11-19. Based in Wyoming, MI, which has its own building department. Only Grand Rapids permits need city registration. The Grand Rapids registered contractor list is a Power BI report that can't be read automatically, so no record was confirmed. City registration applies to holders of a State of Michigan license. Michigan has no state license for commercial partition installation. The LARA Accela lookup was not run because it needs an interactive form search. Check the list by hand."
+    },
+    {
+     "name": "S.A. Morman & Co.",
+     "area": "grand-rapids",
+     "status": "not_online",
+     "registry": "City of Grand Rapids Development Center registered contractor list (Power BI directory)",
+     "source_url": "https://www.grandrapidsmi.gov/grow-and-thrive/development-center/registered-contractor/",
+     "note": "Checked 2026-11-19. The Grand Rapids registered contractor list is a Power BI report that shows only a loading screen to automated access, so no record was read. City registration applies to holders of a State of Michigan license who pull permits, per https://www.grandrapidsmi.gov/grow-and-thrive/development-center/register-contractor. Michigan has no state license for commercial partition installation. If the company holds a LARA Residential Builder license, look it up by hand in the LARA Accela lookup at https://aca-prod.accela.com/LARA/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y (not run automatically)."
+    }
+   ],
+   "registries": [
+    "City of Grand Rapids registered contractor list (https://www.grandrapidsmi.gov/grow-and-thrive/development-center/registered-contractor/, which links to a Power BI report at app.powerbigov.us): automated lookup failed because the report renders only a loading spinner without JavaScript. Mark not_online.",
+    "City of Grand Rapids Register Contractor page (https://www.grandrapidsmi.gov/grow-and-thrive/development-center/register-contractor): read. Registration is for State of Michigan license holders pulling city permits, and underground contractors register with the Water Department. No registration is listed for unlicensed commercial contractors.",
+    "Michigan LARA license lookup (Accela, https://aca-prod.accela.com/LARA/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y): the public search form loads, but results need an interactive ASP.NET search, so no search was run automatically. Michigan has no state license for commercial specialty work. A third-party summary says this but no official page confirmed it in this pass."
+   ]
+  },
+  {
+   "state": "WI",
+   "results": [
+    {
+     "name": "Marz and Associates",
+     "area": "madison",
+     "status": "not_required_online_check",
+     "registry": "Wisconsin DSPS credential list (no commercial general contractor license); City of Madison Building Inspection (no city general contractor license)",
+     "note": "Checked 2026-11-19. Wisconsin has no state license for commercial general or partition installation work. The DSPS credential list shows Dwelling Contractor (one- and two-family homes) and trade contractor credentials (electrical, HVAC, fire sprinkler, elevator, utility), none of which covers commercial toilet partition installation. Madison's code sets no city general contractor license; permit applicants list their subcontractors. No license lookup done. Base city per task: Shawano, WI. A business entity check on Wisconsin DFI was not done.",
+     "source_url": "https://dsps.wi.gov/Pages/Professions/Default.aspx"
+    },
+    {
+     "name": "Block Iron & Supply Company (Madison branch)",
+     "area": "madison",
+     "status": "not_required_online_check",
+     "registry": "Wisconsin DSPS credential list (no commercial general contractor license); City of Madison Building Inspection (no city general contractor license)",
+     "note": "Checked 2026-11-19. No state or city license applies to commercial partition installation in Madison. The DSPS list shows only Dwelling Contractor (homes) and trade credentials. Madison sets no city general contractor license. No license lookup done. Base city: Madison, WI.",
+     "source_url": "https://dsps.wi.gov/Pages/Professions/Default.aspx"
+    },
+    {
+     "name": "LaForce (Madison office)",
+     "area": "madison",
+     "status": "not_required_online_check",
+     "registry": "Wisconsin DSPS credential list (no commercial general contractor license); City of Madison Building Inspection (no city general contractor license)",
+     "note": "Checked 2026-11-19. No state or city license applies to commercial partition installation in Madison. The DSPS list shows only Dwelling Contractor (homes) and trade credentials. Madison sets no city general contractor license. No license lookup done. Base city: Madison, WI.",
+     "source_url": "https://dsps.wi.gov/Pages/Professions/Default.aspx"
+    }
+   ],
+   "registries": [
+    "Wisconsin DSPS credential list (dsps.wi.gov professions page): fetched. No commercial general contractor license, so no lookup was needed. The only general-type credential, Dwelling Contractor, covers one- and two-family homes. The license lookup itself was not used.",
+    "City of Madison Building Inspection: no city general contractor license (from the area rule provided). No registry to check.",
+    "WebSearch: not used (0 of 5 calls)."
+   ]
+  },
+  {
+   "state": "IA",
+   "results": [
+    {
+     "name": "J. Laurenzo Specialty Products",
+     "area": "des-moines",
+     "status": "not_online",
+     "registry": "Iowa DIAL Contractor Registration public search (laborportal.iwd.iowa.gov/iwd_portal/publicSearch/public); City of Des Moines has no city general contractor license",
+     "source_url": "https://dial.iowa.gov/licenses/building/contractor-registration",
+     "note": "Checked 2026-11-19. Iowa requires DIAL contractor registration for anyone earning $2,000+ a year from construction (DIAL page). The official lookup is a JavaScript app that returns HTTP 404 to automated fetches, so registration could not be read; check it by hand in a browser. Des Moines sets no city general contractor license (per area rule). The company site (https://www.laurenzospecialties.com/) names Urbandale, IA as base city, lists toilet partitions and installation, phone 515-331-3074, and shows no registration number."
+    },
+    {
+     "name": "Doors, Inc.",
+     "area": "des-moines",
+     "status": "not_online",
+     "registry": "Iowa DIAL Contractor Registration public search (laborportal.iwd.iowa.gov/iwd_portal/publicSearch/public); City of Des Moines has no city general contractor license",
+     "source_url": "https://dial.iowa.gov/licenses/building/contractor-registration",
+     "note": "Checked 2026-11-19. The DIAL contractor registration lookup is a JavaScript app that could not be read automatically (HTTP 404 to automated fetches); check it by hand. The company homepage (https://www.doorsinciowa.com/) shows no registration number, base city or phone on the homepage. It offers door and frame installation documents and a 'Toilet Stall Locations' download, but toilet partitions aren't named."
+    },
+    {
+     "name": "Walsh Door + Security",
+     "area": "des-moines",
+     "status": "not_online",
+     "registry": "Iowa DIAL Contractor Registration public search (laborportal.iwd.iowa.gov/iwd_portal/publicSearch/public); City of Des Moines has no city general contractor license",
+     "source_url": "https://dial.iowa.gov/licenses/building/contractor-registration",
+     "note": "Checked 2026-11-19. The DIAL contractor registration lookup could not be read automatically (a JavaScript app that returns HTTP 404 to automated fetches); check it by hand. The company homepage (https://walshdoor.com/) shows no registration number, base city or phone, and doesn't mention toilet partitions. It mentions fabrication, pre-installation and installation services."
+    }
+   ],
+   "registries": [
+    "Iowa DIAL Contractor Registration (state; registration required at $2,000+/yr construction income): the official public search at https://laborportal.iwd.iowa.gov/iwd_portal/publicSearch/public (linked from https://dial.iowa.gov/licenses/building/contractor-registration and https://dial.iowa.gov/records) is a JavaScript single-page app that returns HTTP 404 to automated fetches. Automated lookup failed; check by hand in a browser.",
+    "City of Des Moines: no city general contractor license (licenses only electrical, mechanical, plumbing and sign contractors), so there is no city registry to check for partition installers."
+   ]
+  },
+  {
+   "state": "SD",
+   "results": [
+    {
+     "name": "Combined Building Specialties (BBB: Combined Building Specialist, Inc.)",
+     "area": "sioux-falls",
+     "status": "not_required_online_check",
+     "registry": "No state or city contractor license registry applies. South Dakota has no state contractor license, and Sioux Falls does not license commercial building contractors (per the area rule). The SD Department of Revenue contractor's excise tax license has no public online lookup.",
+     "note": "No license registry to check for commercial partition installation in Sioux Falls. The SD contractor's excise tax license (DOR) is required for contractors, but the DOR online services page lists no public license verification tool, only a motor fuel license search (https://dor.sd.gov/online-services/). It can be confirmed by phone with DOR business tax at 1-800-829-9188 or by asking the installer for the license card. Company site (https://combinedbuilding.com/): based in Sioux Falls, SD; sells and installs gym and school equipment (bleachers, lockers, partitions) and lists toilet partitions; company phone (605) 331-6904; no license or registration mentioned on the site. Secretary of State entity search not run.",
+     "source_url": "https://dor.sd.gov/online-services/"
+    },
+    {
+     "name": "Lohan Construction Services, LLC",
+     "area": "sioux-falls",
+     "status": "not_required_online_check",
+     "registry": "No state or city contractor license registry applies. South Dakota has no state contractor license, and Sioux Falls does not license commercial building contractors (per the area rule). The SD Department of Revenue contractor's excise tax license has no public online lookup.",
+     "note": "No license registry to check for commercial partition installation in Sioux Falls. The SD contractor's excise tax license is required but can't be verified online (https://dor.sd.gov/online-services/ lists no license lookup). Confirm by phone with DOR at 1-800-829-9188 or ask for the license card. Company site (https://www.lohanconstruction.com): Sioux Falls, SD; remodeling and tile work, and lists 'Bathroom Partitions' with commercial partition photos; company phone 605-496-8323; no license or registration mentioned on the site. Secretary of State entity search not run.",
+     "source_url": "https://dor.sd.gov/online-services/"
+    }
+   ],
+   "registries": [
+    "South Dakota state contractor license: none exists for this work (state status no_state_license), so there was no state board to check.",
+    "City of Sioux Falls: commercial building contractors are not licensed (per the area rule), so there was no city registry to check. The Sioux Falls licensing page URL I tried (siouxfalls.gov/business-permits/permits-licensing/licensing) returned 404.",
+    "SD Department of Revenue contractor's excise tax license: automated lookup not possible. The DOR online services page (https://dor.sd.gov/online-services/) has no public license verification tool, only a motor fuel license search. Verify by phone at 1-800-829-9188 (business tax) or live chat.",
+    "SD Secretary of State business entity search: not checked."
+   ]
+  },
+  {
+   "state": "CO",
+   "results": [
+    {
+     "name": "Advanced Contracting LLC",
+     "area": "colorado-springs",
+     "status": "not_found",
+     "registry": "Pikes Peak Regional Building Department (PPRBD) Contractor and Mechanic Search",
+     "source_url": "https://www.pprbd.org/Search/ContractorAndMechanic",
+     "license_type": "",
+     "license_number": "",
+     "note": "Checked 2026-11-19. Searches for 'Advanced Contracting' and 'Advanced Contr' returned PPRBD's 'No contractor or mechanic records match this criteria, or their licenses have lapsed.' A broader 'Advanced' search listed about 30 businesses (active, suspended and revoked), none named Advanced Contracting. Colorado has no state general contractor license, so no state lookup applies. PPRBD licenses contractors who pull permits in its jurisdiction. Its license types page (https://www.pprbd.org/Licensing/LicenseTypes) does not mention toilet partitions or say whether subcontractors working under a general contractor's permit need their own license. Ask the installer for its PPRBD license or for how it handles permitted work, and confirm with PPRBD."
+    },
+    {
+     "name": "Epic Specialties",
+     "area": "colorado-springs",
+     "status": "not_found",
+     "registry": "Pikes Peak Regional Building Department (PPRBD) Contractor and Mechanic Search",
+     "source_url": "https://www.pprbd.org/Search/ContractorAndMechanic",
+     "license_type": "",
+     "license_number": "",
+     "note": "Checked 2026-11-19. A search for 'Epic Spec' returned no records. A broader 'Epic' search listed EPIC CONSTRUCTION INCORPORATED (Centennial), EPIC WEST CONSTRUCTION LLC (Denver), EPIC HVAC, EPIC ELECTRIC and others, but nothing named Epic Specialties, either as a business name or as a DBA. The search covers DBA names too. The legal entity name may differ, so ask the installer for its PPRBD license number. Colorado has no state general contractor license."
+    },
+    {
+     "name": "Colorado Specialties, Inc.",
+     "area": "colorado-springs",
+     "status": "not_found",
+     "registry": "Pikes Peak Regional Building Department (PPRBD) Contractor and Mechanic Search",
+     "source_url": "https://www.pprbd.org/Search/ContractorAndMechanic",
+     "license_type": "",
+     "license_number": "",
+     "note": "Checked 2026-11-19. Searches for 'Colorado Specialties' and 'Colorado Spec' returned no records. A 'Specialties' search (it matches anywhere in the name) listed Clark, Electric, LST Interior, On The Level, Pipe Line, Plastering and Replumb Specialties, but not Colorado Specialties. The company is based in Golden, outside PPRBD's area. It may not hold a PPRBD license, or it may work under a general contractor's permit. Colorado has no state general contractor license."
+    },
+    {
+     "name": "Continental Partition Systems, LLC",
+     "area": "colorado-springs",
+     "status": "not_found",
+     "registry": "Pikes Peak Regional Building Department (PPRBD) Contractor and Mechanic Search",
+     "source_url": "https://www.pprbd.org/Search/ContractorAndMechanic",
+     "license_type": "",
+     "license_number": "",
+     "note": "Checked 2026-11-19. A search for 'Continental Partition' returned no records. 'Continental' alone returned only CONTINENTAL FIRE SPRINKLER COMPANY (Omaha, NE) and CONTINENTAL ROOFING LLC (Peyton, CO), both Admin Revoked, and neither is this company. A search for 'Partition' returned no records. The company is based in Frederick, outside PPRBD's area. Colorado has no state general contractor license. Ask the installer how it handles Colorado Springs permitted work."
+    },
+    {
+     "name": "Associated Building Specialties (ABS)",
+     "area": "colorado-springs",
+     "status": "not_found",
+     "registry": "Pikes Peak Regional Building Department (PPRBD) Contractor and Mechanic Search",
+     "source_url": "https://www.pprbd.org/Search/ContractorAndMechanic",
+     "license_type": "",
+     "license_number": "",
+     "note": "Checked 2026-11-19. Searches for 'Associated Building Specialties' and 'Associated Bldg' returned no records. 'ABS' returned ABS PLUMBING, LLC (Parker, revoked), the ABSOLUTE businesses and others, none of them this company. The company is based in Broomfield, outside PPRBD's area. Colorado has no state general contractor license. A record under a different legal entity name is possible, so ask the installer for its PPRBD license number."
+    }
+   ],
+   "registries": [
+    "Pikes Peak Regional Building Department (PPRBD) Contractor and Mechanic Search (https://www.pprbd.org/Search/ContractorAndMechanic): automated lookup worked. It is a public name search with no sign-in (form POST with an anti-forgery token). A 'Smith' control search returned results, and the results include lapsed, suspended and revoked records. None of the 5 businesses were found under their names or name variants.",
+    "Colorado state (DORA): no state general contractor license, so there is no state lookup for this work. DORA licenses only electrical and plumbing trades, which don't apply to partition installation.",
+    "PPRBD license types page (https://www.pprbd.org/Licensing/LicenseTypes): read. It does not address toilet partitions or subcontractors working under a general contractor's permit, so which license class applies, if any, needs a call to PPRBD.",
+    "Colorado Secretary of State business search: not checked (an entity search is not a license)."
+   ]
+  },
+  {
+   "state": "NC",
+   "results": [
+    {
+     "name": "Residential Building Specialties, Inc.",
+     "area": "greensboro",
+     "status": "not_found",
+     "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+     "source_url": "https://portal.nclbgc.org/Public/Search",
+     "note": "Checked 2026-11-19. No licensee found for company name 'Residential Building Specialties' (contains-match), 'Residential Building' (7 other companies, none this one), 'Building Specialties' (4 other companies), or company phone 336-766-5186 (from rbsws.com). Company site (https://rbsws.com/) names it Residential Building Specialties, Inc., Winston-Salem; it sells and installs residential/commercial specialties (closet shelving, door hardware, mirrors, shower doors, bath accessories) and does not mention toilet partitions. NC requires a GC license only for jobs at or above the state threshold ($40,000), so no license may be needed for smaller partition jobs. Greensboro's $2,000 bond rule applies to state-licensed contractors pulling certain city permits; there is no separate city registry to search."
+    },
+    {
+     "name": "Integrated Openings Solutions, Raleigh (formerly B A Hoft & Associates)",
+     "area": "greensboro",
+     "status": "not_found",
+     "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+     "source_url": "https://portal.nclbgc.org/Public/Search",
+     "note": "Checked 2026-11-19. No licensee found for 'Integrated Openings', 'Openings' (only Total Openings, LLC), 'B A Hoft', 'B.A. Hoft', 'BA Hoft', or Raleigh phone 919-596-4446. A 'Hoft' search returned only an inactive qualifier record (Q.24964, Donald C. Bernhoft), which is a different name. The company may hold a license under another legal or parent name not found here. Company page (https://integratedopenings.com/locations/raleigh/) names it Integrated Openings Solutions, LLC (HQ Olathe, KS), with the Raleigh branch focused on commercial doors, frames, hardware, access control and washroom accessories. Toilet partitions aren't mentioned. NC GC license applies only at or above the $40,000 threshold."
+    },
+    {
+     "name": "US Doorways Inc",
+     "area": "greensboro",
+     "status": "not_found",
+     "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+     "source_url": "https://portal.nclbgc.org/Public/Search",
+     "note": "Checked 2026-11-19. No licensee found for 'US Doorways', 'U S Doorways', 'U.S. Doorways', 'USDoorways', or 'Doorways' (contains-match). Company site (http://www.usdoorways.com/) shows US Doorways, Inc. (copyright 2007-2012, so possibly outdated). It lists toilet partitions, toilet accessories, steel and wood doors, frames, hardware and fire extinguisher cabinets. The page title says Jacksonville, NC, while the BBB link points to Garner, NC. No phone appears on the homepage. NC GC license applies only at or above the $40,000 threshold."
+    },
+    {
+     "name": "Macade, Inc.",
+     "area": "greensboro",
+     "status": "not_found",
+     "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+     "source_url": "https://portal.nclbgc.org/Public/Search",
+     "note": "Checked 2026-11-19. No licensee found for 'Macade' or 'Macade, Inc.', including with 'like sounding names' on. No website was given, so no phone or alternate name was available to search. Base city given as Clayton, NC. NC GC license applies only at or above the $40,000 threshold, so its absence doesn't show non-compliance for smaller partition jobs."
+    }
+   ],
+   "registries": [
+    "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (https://portal.nclbgc.org/Public/Search): automated lookup worked. The public form posts to /Public/_Search/ with no sign-in. I searched by company name (contains-match), phone and like-sounding names.",
+    "City of Greensboro: no separate contractor registry to search. The local rule is a $2,000 bond for state-licensed contractors pulling certain permits, so it was not checked online."
+   ]
+  },
+  {
+   "state": "VA",
+   "results": [
+    {
+     "name": "CCI Door & Hardware, Inc.",
+     "area": "greensboro",
+     "status": "not_found",
+     "registry": "North Carolina Licensing Board for General Contractors, public license search (portal.nclbgc.org/Public/Search)",
+     "license_type": "NC general contractor license (required when the whole project is $40,000 or more, G.S. 87-1)",
+     "source_url": "https://portal.nclbgc.org/Public/Search",
+     "note": "Checked 2026-11-19. The Greensboro area is in North Carolina. The NCLBGC public search returned 'No results found for search criteria' for the company names 'CCI Door', 'Door & Hardware' and 'Door and Hardware' and for the company phone 540-342-4645. Searching 'C C I' and 'C.C.I.' returned only an unrelated inactive licensee. Searching 'Croy' turned up no Croy Contracting, Inc., the Roanoke company a Blue Book listing (seen only in a search snippet, not opened) names as the operator of CCI Door. A Roanoke, VA city filter returned many companies, none of them CCI or a door company. As a result, CCI holds no NC GC license under this name, so it can take Greensboro jobs only under $40,000, unless it holds an NC license under another entity name. Greensboro's local rule is a $2,000 contractor bond for state-licensed contractors pulling certain permits (\u00a7 6-4). Not confirmed for this company. Company site (https://www.ccidoor.com/): based in Roanoke, VA; commercial door, frame and hardware work; calls itself a 'commercial installer of' toilet partitions; claims a Virginia 'Class A Contractor License' with no number shown; company phone (540) 342-4645."
+    },
+    {
+     "name": "CCI Door & Hardware, Inc.",
+     "area": "greensboro (home state VA check)",
+     "status": "not_online",
+     "registry": "Virginia DPOR License Lookup, Board for Contractors (dporweb.dpor.virginia.gov/LicenseLookup/)",
+     "license_type": "Virginia contractor license (Class A claimed on company site; not verified)",
+     "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+     "note": "The DPOR lookup page requires a reCAPTCHA before it runs a search, so it can't be queried automatically. The Class A claim on https://www.ccidoor.com/ and the license number need a manual DPOR lookup by business name (try both 'CCI Door & Hardware' and 'Croy Contracting'). A Virginia license does not cover work in Greensboro, NC."
+    }
+   ],
+   "registries": [
+    "North Carolina Licensing Board for General Contractors public search (https://portal.nclbgc.org/Public/Search): automated lookup worked through its public search endpoint. No result for CCI Door, its phone, or Croy Contracting.",
+    "Virginia DPOR License Lookup (https://dporweb.dpor.virginia.gov/LicenseLookup/): blocked by a reCAPTCHA, so not_online. Needs a manual check.",
+    "Greensboro, NC: no city contractor registry to search. The local rule is a contractor bond on file with Development Services (Code \u00a7 6-4), not a public list."
+   ]
+  }
+ ],
+ "dropped": []
+}

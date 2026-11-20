@@ -1,0 +1,213 @@
+{
+ "area": "salt-lake-city",
+ "found_count": 5,
+ "sources_tried": [
+  "Seed file salt-lake-city.json (Google Maps): worked. Most entries are remodelers, plumbers or stores; Beacon, Rex Williams, Cannon Sales, Robert I. Merrill and Architectural Building Supply were the plausible ones.",
+  "Rex Williams site (rexwilliamsd10.com): returned an empty page; the Clutch profile worked.",
+  "Division 10 Sales (division10sales.com): worked, but it's a nationwide shipper with a 704 (North Carolina) phone that mentions no installation, so it's excluded despite the Ogden Maps listing.",
+  "Cook & Boardman / cbxsolutions.com: blocked (403).",
+  "Scranton Products product specialist page: worked; it lists only a regional rep (person, no company) covering UT, so no dealer was added.",
+  "Bobrick find-a-rep: form-based locator, no static results.",
+  "ASI (asi-globalpartitions.com find-a-rep): redirect only, not followed up.",
+  "Bradley, Hadrian, Metpar, General Partitions, Ampco locators: not tried (search and time budget).",
+  "The Blue Book: blocked (403) on the search page and the iProView profile.",
+  "BuildingConnected / Procore: not tried.",
+  "WebSearch (8 of 8 used): toilet partition installation SLC, Division 10 Utah, nearby cities, Rex Williams, Robert I. Merrill. Results were mostly One Point Partitions (an online supplier) and Beacon.",
+  "Innergy Interiors (innergy-interiors.pages.dev): says it supplies and installs Division 10 including toilet partitions in UT, but it's based in El Paso, TX (phone 915-353-2008), well past the 120-mile limit, so it's excluded; a possible regional lead if the range is relaxed.",
+  "Yelp/BBB: no relevant listings surfaced in search."
+ ],
+ "candidates": [
+  {
+   "name": "Beacon Commercial Door and Lock (Beacon CDL)",
+   "base_city": "South Salt Lake",
+   "state": "UT",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bradley"
+   ],
+   "phone": "(801) 486-4884",
+   "contact_page": "https://beaconcdl.com/pages/contact",
+   "website": "https://beaconcdl.com/",
+   "evidence_urls": [
+    "https://beaconcdl.com/",
+    "https://beaconcdl.com/pages/locations/salt-lake-city",
+    "https://beaconcdl.com/pages/locations/provo",
+    "https://beaconcdl.com/pages/project-portfolio"
+   ],
+   "partition_evidence": "The Salt Lake City location page says 'Services can include pre-installed hardware and onsite installation of doors, hardware, bathroom partitions, and bathroom accessories.' The portfolio lists bathroom partitions on the Layton Temple and Pocatello Temple projects, but those entries don't say who installed them.",
+   "red_flags": [
+    "Distributor that sells bathroom partitions itself (Division 10 through its Rex Williams division), so there is a high risk of it buying around us",
+    "Door, frame and hardware business first; partition installation is one service among many"
+   ],
+   "reason": "A commercial Division 08/10 distributor in South Salt Lake that says it offers onsite installation of bathroom partitions and serves Utah and the Intermountain West. It also supplies partitions, so it is a competitor as well as a possible installer.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Beacon Commercial Door and Lock (Beacon CDL)",
+    "area": "salt-lake-city",
+    "status": "not_online",
+    "registry": "Utah Division of Professional Licensing (DOPL) Licensee Lookup and Verification System (secure.utah.gov/llv)",
+    "source_url": "https://secure.utah.gov/llv/search/index.html",
+    "note": "Checked 2026-11-19. You can only search the DOPL lookup by submitting a POST form, and that form carries a Google reCAPTCHA field (g-recaptcha-response). It can't be queried automatically, so the license status is unknown. Confirm manually at secure.utah.gov/llv under the CONTRACTOR profession. Salt Lake City issues commercial permits only to state-licensed contractors and has no separate public contractor registry, so the DOPL record is the one to check. The company site (https://beaconcdl.com/) shows no Utah contractor license number. Its footer gives the location as Salt Lake, UT 84115, which is consistent with South Salt Lake. It lists Bathroom Partitions as a Division 10 product category and has a generic Installation link."
+   },
+   "score": 70
+  },
+  {
+   "name": "Robert I. Merrill Co.",
+   "base_city": "Salt Lake City",
+   "state": "UT",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Hadrian",
+    "A.S.I. Accessories",
+    "Gamco",
+    "Koala Care",
+    "Potter Roemer"
+   ],
+   "phone": "(801) 263-2700",
+   "contact_page": "https://www.rimdoor.com/custom-commercial-door-quote",
+   "website": "https://www.rimdoor.com/",
+   "evidence_urls": [
+    "https://www.rimdoor.com/",
+    "https://www.rimdoor.com/commercial-door-installations-repairs",
+    "https://www.rimdoor.com/commercial-restroom-division-10"
+   ],
+   "partition_evidence": "The installations page says 'we can install and repair everything that we sell, from metal doors to hardware to bathroom partitions.' Its Division 10 page sells toilet partitions and washroom accessories.",
+   "red_flags": [
+    "Distributor that sells partitions itself (buy-around risk)",
+    "Mainly a door, frame and hardware business"
+   ],
+   "reason": "A commercial door and Division 10 distributor in Salt Lake City since 1944 that states it installs the bathroom partitions it sells and delivers throughout Utah.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Robert I. Merrill Co.",
+    "area": "salt-lake-city",
+    "status": "not_online",
+    "registry": "Utah Division of Professional Licensing (DOPL) Licensee Lookup and Verification System (secure.utah.gov/llv)",
+    "source_url": "https://secure.utah.gov/llv/search/index.html",
+    "note": "Checked 2026-11-19. The DOPL lookup is behind reCAPTCHA, so the license status is unknown. Confirm manually under the CONTRACTOR profession. The company site (https://www.rimdoor.com/) shows no Utah contractor license number and says the company is based in Salt Lake City. It lists Division 10 products (Partitions, Washroom Accessories, Lockers, Fire Extinguishers) but doesn't say the company installs them. Its stated services are custom wood and hollow metal door fabrication."
+   },
+   "score": 70
+  },
+  {
+   "name": "Rex Williams Division 10 Specialties",
+   "base_city": "Salt Lake City",
+   "state": "UT",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bradley",
+    "Hadrian",
+    "Metpar"
+   ],
+   "phone": "801.972.6611",
+   "email": "info@rexwilliamsd10.com",
+   "contact_page": "https://www.rexwilliamsd10.com/contact/",
+   "website": "https://www.rexwilliamsd10.com/",
+   "evidence_urls": [
+    "https://www.rexwilliamsd10.com/",
+    "https://www.rexwilliamsd10.com/products/bathroom-partitions/",
+    "https://www.rexwilliamsd10.com/about-us/",
+    "https://www.rexwilliamsd10.com/contact/"
+   ],
+   "partition_evidence": "Its bathroom partitions product page names brands through logos (Bradley, Hadrian, Metpar) and says 'We supply these and other respected Bathroom Partition Brands.' No installation is mentioned on its own site. Since 2019 it has been part of Beacon CDL, which offers partition installation.",
+   "red_flags": [
+    "Supplier and distributor of partitions (buy-around risk)",
+    "The same company as Beacon CDL, so not a separate installer",
+    "Header phone 801.486.4884 (Beacon's number) differs from the contact page's 801.972.6611"
+   ],
+   "reason": "A Division 10 distributor that supplies partitions; it joined Beacon CDL in 2019. Installation would go through Beacon, so treat it as the same business as Beacon, not a separate listing.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Rex Williams Division 10 Specialties",
+    "area": "salt-lake-city",
+    "status": "not_online",
+    "registry": "Utah Division of Professional Licensing (DOPL) Licensee Lookup and Verification System (secure.utah.gov/llv)",
+    "source_url": "https://secure.utah.gov/llv/search/index.html",
+    "note": "Checked 2026-11-19. The DOPL lookup is behind reCAPTCHA (a POST form with a g-recaptcha-response field), so the license status is unknown. Confirm manually under the CONTRACTOR profession. Salt Lake City has no separate registry because it relies on the state license. The company site https://www.rexwilliamsd10.com/ returned no readable content, so no license number could be read from it."
+   },
+   "score": 50
+  },
+  {
+   "name": "Cannon Sales Inc",
+   "base_city": "Centerville",
+   "state": "UT",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "AAMCO",
+    "AMPCO",
+    "AJW",
+    "Bobrick",
+    "Metpar",
+    "Scranton Products",
+    "Bradley",
+    "Gamco"
+   ],
+   "phone": "(801) 299-0800",
+   "contact_page": "https://www.cannonsales.com/contact-us/",
+   "website": "https://www.cannonsales.com/",
+   "evidence_urls": [
+    "https://www.cannonsales.com/",
+    "https://www.cannonsales.com/toilet-partitions/",
+    "https://www.cannonsales.com/all-lines/",
+    "https://www.cannonsales.com/projects/"
+   ],
+   "partition_evidence": "The projects page lists toilet partitions 'provided' on many Salt Lake area jobs (111 South Main, Salt Lake City Public Library, American Stores Tower, Lassonde Studios, IHC Layton Hospital, eBay building in Draper). No page I read says it installs them.",
+   "red_flags": [
+    "Commercial specialties supplier that sells partitions from several manufacturers (buy-around risk)",
+    "Installation is not stated anywhere on the site"
+   ],
+   "reason": "Utah's commercial construction specialties supplier, with a long list of Salt Lake area projects where it provided toilet partitions. It may furnish and install, but the site never says it installs.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Cannon Sales Inc",
+    "area": "salt-lake-city",
+    "status": "not_online",
+    "registry": "Utah Division of Professional Licensing (DOPL) Licensee Lookup and Verification System (secure.utah.gov/llv)",
+    "source_url": "https://secure.utah.gov/llv/search/index.html",
+    "note": "Checked 2026-11-19. The DOPL lookup is behind reCAPTCHA, so the license status is unknown. Confirm manually under the CONTRACTOR profession. The company site (https://www.cannonsales.com/) shows no Utah contractor license number and gives its base city as Centerville, UT. It features toilet partitions as a product line and presents the company as a supplier of commercial construction specialties. It doesn't describe installation services. Confirm whether the company installs or only supplies."
+   },
+   "score": 50
+  },
+  {
+   "name": "Architectural Building Supply (CBX Solutions / Cook & Boardman)",
+   "base_city": "Salt Lake City",
+   "state": "UT",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://cbxsolutions.com/division/abs-doors",
+   "evidence_urls": [
+    "https://www.cookandboardman.com/division/abs-doors"
+   ],
+   "partition_evidence": "None found. The candidate URL redirects to cbxsolutions.com, which returned 403 on the division and Salt Lake City branch pages, so I could not read either. Search results describe it as a commercial door, frame and hardware business.",
+   "red_flags": [
+    "Its own site pages could not be read (403)",
+    "No partition evidence"
+   ],
+   "reason": "A door and hardware distributor that is part of a national group. I could not open a page showing partition supply or installation, so there is no evidence it installs partitions.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  }
+ ]
+}

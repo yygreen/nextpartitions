@@ -1,0 +1,630 @@
+{
+ "area": "riverside",
+ "found_count": 18,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/riverside.json (maps + web): worked, main source of leads",
+  "Company websites via WebFetch: most worked; pnspros.com read via curl after WebFetch 503; masterbuilding.net, ajconstructionspecialties.com, weisrobart.com unreachable (503/TLS/connection reset)",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads but results are dynamic, no reps readable",
+  "ASI Global Partitions rep locator (globalpartitions.com): host not resolvable in this session's network (needs allowing in network settings)",
+  "Scranton Products find-a-rep: 404 at guessed URL",
+  "Bradley, Hadrian, Metpar, General Partitions, Ampco/Ammco locators: not tried (search budget spent; locators are dynamic)",
+  "The Blue Book (thebluebook.com): blocked, 403 on search and iProView pages; only search-result snippets used",
+  "BuildingConnected / Procore network: not tried",
+  "prelien.co contractor pages (CSLB license data): worked",
+  "AGC San Diego directory 10600 Partitions (web.agcsd.org): worked",
+  "WebSearch: 8 of 8 used (Riverside installation, Division 10 Inland Empire, San Bernardino/Ontario/Corona, Temecula/Murrieta/Moreno Valley/Fontana, Empire Partitions, Thomas/United Partition, OC/IE C-61 D-34, Southern California installers); worked",
+  "sweets.construction.com: worked (United Partition Systems, Ontario, is industrial modular and was excluded)",
+  "onepointpartitions.com: 403 (online supplier, excluded)",
+  "Excluded as manufacturers or out of scope: Accu Tec Manufacturing (Santa Ana mfr), YTI/Laminating Technologies (Anaheim mfr), American Partitions (modular offices), Weis/Robart (partition maker), Partition Pros LA (national, own crew in DFW only), United Partition Systems (industrial modular), plus remodelers, plumbers and stores in the seeds"
+ ],
+ "candidates": [
+  {
+   "name": "Inland Empire Architectural Specialties, Inc. (IDEAS)",
+   "base_city": "Riverside",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley/Mills",
+    "Global Partitions",
+    "General Partitions",
+    "Scranton/Comtec",
+    "Penco",
+    "Republic"
+   ],
+   "website": "https://www.ideas-ca.com/",
+   "phone": "951-781-0700",
+   "contact_page": "https://ideas-ca.com/contact/",
+   "evidence_urls": [
+    "https://www.ideas-ca.com/",
+    "https://ideas-ca.com/contact/",
+    "https://web.agcsd.org/atb/DIVISION-10-SPECIALTIES/10600-Partitions"
+   ],
+   "partition_evidence": "Division 10 contractor listing Restroom Partitions; says it has 'provided and installed products' in hospitals, schools, government buildings and offices; listed under AGC 10600 Partitions.",
+   "reason": "Riverside-based commercial Division 10 contractor serving the Inland Empire since 1984 that supplies and installs restroom partitions. Brands shown are 'affiliates', so it supplies partitions itself.",
+   "red_flags": [
+    "Supplies partitions itself (buy-around risk)",
+    "No email readable on site (protected)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Inland Empire Architectural Specialties, Inc. (IDEAS)",
+    "area": "riverside",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "source_url": "https://www.ideas-ca.com/",
+    "note": "CSLB lookup is reCAPTCHA-gated. No license number found on the homepage, the contact-us page or the about-us page. Search CSLB by business name by hand. Riverside also requires a city business license for permits; not checked."
+   },
+   "score": 70
+  },
+  {
+   "name": "Harrigan's Toilet Partitions, Inc.",
+   "base_city": "Rancho Cucamonga",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://www.harrigansinc.com/",
+   "phone": "(909) 879-0400",
+   "email": "harrigans@harrigansinc.com",
+   "contact_page": "http://www.harrigansinc.com/contact",
+   "evidence_urls": [
+    "http://www.harrigansinc.com/"
+   ],
+   "partition_evidence": "Site calls it a 'Distributor & Installer' of toilet partitions and urinal screens with 'Expert Installation' for new construction and renovations; CA license #935358 shown on site.",
+   "reason": "Commercial restroom partition distributor and installer in Rancho Cucamonga, serving Southern California since 2003.",
+   "red_flags": [
+    "Distributor of partitions (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Harrigan's Toilet Partitions, Inc.",
+    "area": "riverside",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "license_number": "935358",
+    "source_url": "http://www.harrigansinc.com/",
+    "note": "The company site shows 'LIC. #935358' as its California contractor license. Status not verified because CSLB is reCAPTCHA-gated; verify #935358 on CSLB by hand. Base: Rancho Cucamonga."
+   },
+   "score": 70
+  },
+  {
+   "name": "Pabst Leyton | Bathroom Partitions & Installation",
+   "base_city": "Southern California (city not stated on site)",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://www.pabstleyton.com/",
+   "phone": "(951) 576-7901",
+   "email": "leytoncpabst@gmail.com",
+   "contact_page": "http://www.pabstleyton.com/request-a-quote",
+   "evidence_urls": [
+    "http://www.pabstleyton.com/"
+   ],
+   "partition_evidence": "Supplies and installs bathroom partitions and shower enclosures, with on-site measurement and full installation, for general contractors and businesses.",
+   "reason": "Commercial partition supplier and installer whose site names Riverside, San Bernardino and the Inland Empire in its service area; 951 phone number.",
+   "red_flags": [
+    "Gmail address as company email",
+    "No base city or business address on site",
+    "Directly imports phenolic panels and sells partitions (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Pabst Leyton | Bathroom Partitions & Installation",
+    "area": "riverside",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "source_url": "http://www.pabstleyton.com/",
+    "note": "No license number found on the homepage or the contact-us page. CSLB is reCAPTCHA-gated; search by name by hand. Base city not confirmed."
+   },
+   "score": 70
+  },
+  {
+   "name": "Penner Partitions Inc",
+   "base_city": "Anaheim",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Weis/Robart",
+    "Hadrian",
+    "Mills",
+    "Bradley",
+    "Bobrick",
+    "AJW"
+   ],
+   "website": "http://www.pennerpartitions.com/",
+   "phone": "(714) 666-0822",
+   "email": "sales@pennerpartitions.com",
+   "contact_page": "https://pennerpartitions.com/contact-us/",
+   "evidence_urls": [
+    "http://www.pennerpartitions.com/",
+    "https://pennerpartitions.com/contact-us/"
+   ],
+   "partition_evidence": "'Let us deliver and install for you'; past projects include school districts, colleges, hotels, airports and office buildings.",
+   "reason": "Stocking toilet partition distributor in Anaheim since 1961 that also delivers and installs for commercial projects; Anaheim is one of the area's cities.",
+   "red_flags": [
+    "Stocking distributor (strong buy-around risk)",
+    "No service area stated"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Penner Partitions Inc",
+    "area": "riverside",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "license_number": "924223",
+    "source_url": "http://www.pennerpartitions.com/",
+    "note": "The company site shows 'License: 924223' and 'DIR: 1000004040' (DIR public works registration). Status not verified because CSLB is reCAPTCHA-gated; verify by hand. Base: Anaheim."
+   },
+   "score": 70
+  },
+  {
+   "name": "Partitions and Specialty Pros",
+   "base_city": "Anaheim (site also shows a Chino P.O. box)",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Global",
+    "Accurate",
+    "Hadrian",
+    "Accu-tec",
+    "Comtec",
+    "Bradley",
+    "Bobrick",
+    "Laminating Technologies",
+    "ASI",
+    "Koala",
+    "Gamco"
+   ],
+   "website": "http://pnspros.com/",
+   "phone": "(714) 927-9658",
+   "email": "info@pnspros.com",
+   "contact_page": "http://pnspros.com/",
+   "evidence_urls": [
+    "http://pnspros.com/",
+    "http://pnspros.com/products.html"
+   ],
+   "partition_evidence": "Products page: 'Division 10 building specialty contractor ... we supply and install ... Toilet compartments in all styles and materials'; CA LIC 956130 on site.",
+   "reason": "Division 10 specialty contractor that supplies and installs toilet compartments; based in Anaheim/Chino, within about 30 miles. Site is dated (Network Solutions template) and HTTPS is broken.",
+   "red_flags": [
+    "Sells partitions from many manufacturers (buy-around risk)",
+    "Two different addresses and two email domains on its own site",
+    "Dated website"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Partitions and Specialty Pros",
+    "area": "riverside",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "license_number": "956130",
+    "source_url": "http://pnspros.com/",
+    "note": "The company site footer shows 'CA LIC#956130'. Status not verified because CSLB is reCAPTCHA-gated; verify by hand."
+   },
+   "score": 65
+  },
+  {
+   "name": "RPS Building Specialties (Ramirez Partition Specialties, Inc.)",
+   "base_city": "Tustin",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://www.rampartitions.com/",
+   "phone": "(714) 381-4196",
+   "contact_page": "https://www.rampartitions.com/#contact",
+   "evidence_urls": [
+    "https://www.rampartitions.com/"
+   ],
+   "partition_evidence": "'Supply & install' commercial restroom partitions in powder-coated steel, HDPE, phenolic, stainless and compact laminate.",
+   "reason": "Tustin-based supply-and-install partition contractor for contractors and property managers; site names Riverside and San Bernardino Counties in its service area.",
+   "red_flags": [
+    "Supplies partitions (buy-around risk)",
+    "Email hidden behind protection"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "RPS Building Specialties (Ramirez Partition Specialties, Inc.)",
+    "area": "riverside",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "source_url": "https://www.rampartitions.com/",
+    "note": "No license number found on the homepage. The /about and /contact pages returned 404. CSLB is reCAPTCHA-gated; search 'Ramirez Partition Specialties' by hand."
+   },
+   "score": 65
+  },
+  {
+   "name": "Anchor Construction Specialties Inc.",
+   "base_city": "San Diego",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://anchorspecialties.com/",
+   "phone": "(858) 452-0562",
+   "email": "info@anchorspecialties.com",
+   "contact_page": "https://anchorspecialties.com/#contact",
+   "evidence_urls": [
+    "https://anchorspecialties.com/"
+   ],
+   "partition_evidence": "Division 10 subcontractor listing toilet partitions as a specialty, turn-key with its own installers, on hotels, universities, hospitals, military projects.",
+   "reason": "Established San Diego Division 10 subcontractor (since 1982) that says it serves Southern California; about 85 miles from Riverside.",
+   "red_flags": [
+    "Sells material-only through restroomwarehouse.com (buy-around risk)",
+    "Riverside / Inland Empire not named specifically"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Anchor Construction Specialties Inc.",
+    "area": "riverside",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "source_url": "https://anchorspecialties.com/",
+    "note": "No license number found on the homepage, contact page or about page. CSLB is reCAPTCHA-gated. Based in San Diego, far from Riverside."
+   },
+   "score": 63
+  },
+  {
+   "name": "Stumbaugh & Associates",
+   "base_city": "Burbank",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://www.stumbaugh.com/",
+   "phone": "818-240-1627",
+   "contact_page": "https://www.stumbaugh.com/contact",
+   "evidence_urls": [
+    "https://www.stumbaugh.com/"
+   ],
+   "partition_evidence": "Says it is 'the largest provider of restroom partitions and accessories in California' and offers 'professional installation services' for partitions.",
+   "reason": "Large California partition provider with offices in Burbank, San Diego and West Sacramento offering installation; about 55 miles from Riverside and presents itself as serving California.",
+   "red_flags": [
+    "Sells partitions and runs showroom sales (buy-around risk)",
+    "No specific mention of Riverside / Inland Empire"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Stumbaugh & Associates",
+    "area": "riverside",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "source_url": "https://www.stumbaugh.com/",
+    "note": "No license number found on the homepage, contact page or about page. CSLB is reCAPTCHA-gated; search by name by hand. Base: Burbank."
+   },
+   "score": 58
+  },
+  {
+   "name": "Empire Partitions And Specialties Inc.",
+   "base_city": "Canyon Lake",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.facebook.com/EmpirePartitionsAndSpecialties/",
+   "evidence_urls": [
+    "https://www.facebook.com/EmpirePartitionsAndSpecialties/",
+    "https://thebluebook.com/iProView/807452/empire-partitions-and-specialties-inc/material-suppliers/construction-projects/palmdale-aerospace-academy-school-212860"
+   ],
+   "partition_evidence": "Only the name and Blue Book project entries (search snippets: school, PREA project, apartments); Facebook page showed only the name; Blue Book page returned 403.",
+   "reason": "Riverside County partitions-and-specialties firm (est. 2010 per Blue Book snippet) with commercial projects, but no website or confirmed service list.",
+   "red_flags": [
+    "No website",
+    "Evidence only from directory snippets"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Empire Partitions And Specialties Inc.",
+    "area": "riverside",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "source_url": "https://www.facebook.com/EmpirePartitionsAndSpecialties/",
+    "note": "Facebook page only, not read. No license number seen. CSLB is reCAPTCHA-gated; search by name by hand."
+   },
+   "score": 50
+  },
+  {
+   "name": "Toilet Partitions Experts Inc",
+   "base_city": "Unknown (714 area code; Santa Ana per candidate list, not confirmed on site)",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://www.toiletpartitionsexperts.com/",
+   "phone": "714 909 8855",
+   "email": "sales@toiletpartitionsexperts.com",
+   "contact_page": "https://www.toiletpartitionsexperts.com/contact-us/",
+   "evidence_urls": [
+    "https://www.toiletpartitionsexperts.com/"
+   ],
+   "partition_evidence": "'Complete installation of new toilet partitions and toilet accessories', removals, modifications, service calls; CSLB Lic. No. 1098283 shown.",
+   "reason": "Installs toilet partitions, but the site gives no base city, service area or commercial project evidence.",
+   "red_flags": [
+    "No city or service area on site",
+    "Keeps materials 'in our inventory' (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Toilet Partitions Experts Inc",
+    "area": "riverside",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "license_number": "1098283",
+    "source_url": "https://www.toiletpartitionsexperts.com/",
+    "note": "The company site shows 'CSLB Lic. No. 1098283'. Status not verified because CSLB is reCAPTCHA-gated; verify by hand. Base city not confirmed on the homepage."
+   },
+   "score": 45
+  },
+  {
+   "name": "Preferred Construction Specialties, Inc.",
+   "base_city": "Anaheim",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "mostly",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Koala Kare",
+    "Seachrome",
+    "Dyson Airblade",
+    "Gamco"
+   ],
+   "website": "http://www.preferredspecialties.com/",
+   "phone": "(714) 528-4300",
+   "email": "office@preferredspecialties.com",
+   "contact_page": "http://www.preferredspecialties.com/contact_us.html",
+   "evidence_urls": [
+    "http://www.preferredspecialties.com/"
+   ],
+   "partition_evidence": "Offers 'a complete range of Division 10 services' through to final installation; toilet partitions not named on the homepage.",
+   "reason": "Anaheim Division 10 installer with accessories brands; partition installation is likely but not shown.",
+   "red_flags": [
+    "Sister site Washroom Direct Sales sells accessories direct"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Preferred Construction Specialties, Inc.",
+    "area": "riverside",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "source_url": "http://www.preferredspecialties.com/",
+    "note": "No license number found on the homepage or the contact page. CSLB is reCAPTCHA-gated; search by name by hand."
+   },
+   "score": 45
+  },
+  {
+   "name": "Thomas Partitions & Specialties, Inc.",
+   "base_city": "Los Angeles",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "ASI"
+   ],
+   "phone": "(323) 256-8666",
+   "evidence_urls": [
+    "https://governmentbidders.com/government_bidders/contractor-5957732-THOMAS-PARTITIONS-AN.htm"
+   ],
+   "partition_evidence": "Government bidder directory: full-line distributor of toilet partitions and restroom accessories, keywords include 'Supply And Install', about 80% construction.",
+   "reason": "Los Angeles partition distributor (est. 1989), about 50 miles away, that appears to supply and install; no website and no stated Inland Empire service area.",
+   "red_flags": [
+    "No website found",
+    "Distributor (buy-around risk)",
+    "Directory shows two different phone numbers"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Thomas Partitions & Specialties, Inc.",
+    "area": "riverside",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "license_number": "613974",
+    "source_url": "http://thompart.com/",
+    "note": "The company site (thompart.com) shows 'CSLB 613974' with an Altadena base. Status not verified because CSLB is reCAPTCHA-gated; verify by hand."
+   },
+   "score": 40
+  },
+  {
+   "name": "Urban Specialties - Toilet Partitions",
+   "base_city": "Tustin",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "http://urbanspecialties.net/",
+   "phone": "(714) 477-1590",
+   "email": "info@urbanspecialties.net",
+   "contact_page": "http://urbanspecialties.net/",
+   "evidence_urls": [
+    "http://urbanspecialties.net/"
+   ],
+   "partition_evidence": "Supplies toilet partitions in all materials and mounting styles 'for any building type'; installation not mentioned.",
+   "reason": "Orange County partition supplier; whether it installs is not stated, so it needs confirming.",
+   "red_flags": [
+    "Supplier of partitions (buy-around risk)",
+    "Installation not stated"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Urban Specialties - Toilet Partitions",
+    "area": "riverside",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "source_url": "http://urbanspecialties.net/",
+    "note": "The company site reset the connection, so it could not be read. CSLB is reCAPTCHA-gated; search by name by hand."
+   },
+   "score": 20
+  },
+  {
+   "name": "Magnum Drywall (Division 10 Specialties group)",
+   "base_city": "San Jose",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [
+    "Bobrick",
+    "SwiftWall"
+   ],
+   "website": "https://magnumdrywall.com/division-10-specialties/",
+   "phone": "(408) 600-0422",
+   "email": "estimators@magnumdrywall.com",
+   "contact_page": "https://magnumdrywall.com/contact-us/",
+   "evidence_urls": [
+    "https://magnumdrywall.com/division-10-specialties/"
+   ],
+   "partition_evidence": "Division 10 page says it specifies and installs toilet partitions for commercial buildings.",
+   "reason": "Installs partitions and says it serves throughout California, but its HQ is about 340 miles away and its new Southern California office city isn't stated.",
+   "red_flags": [
+    "Base far outside 120 miles",
+    "Large drywall GC, partitions a minor line"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "AJ Construction Specialties",
+   "base_city": "Anaheim",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://ajconstructionspecialties.com/",
+   "evidence_urls": [
+    "http://ajconstructionspecialties.com/",
+    "https://www.buildzoom.com/contractor/a-j-construction-specialties-inc"
+   ],
+   "partition_evidence": "None. Website returns 503 / expired certificate; a search summary of its BuildZoom profile describes portable restroom solutions (BuildZoom page itself returned 403).",
+   "reason": "No evidence of partition installation; website down.",
+   "red_flags": [
+    "Website unavailable",
+    "Possibly a portable restroom business"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Master Building Specialties Inc.",
+   "base_city": "Ontario",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.masterbuilding.net/",
+   "evidence_urls": [
+    "https://www.masterbuilding.net/",
+    "https://phoenix.aws.mapquest.com/us/california/master-building-specialties-354771085"
+   ],
+   "partition_evidence": "None read. Website failed (SSL handshake / 503); MapQuest listing (per search summary) marks it closed.",
+   "reason": "Possibly closed and no partition evidence could be read.",
+   "red_flags": [
+    "Listing marked closed",
+    "Website unreachable"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Restroom Specialty CO",
+   "base_city": "Riverside",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "None found; a search for the name in Riverside returned nothing about it.",
+   "reason": "No website or listing found to confirm it exists or installs partitions.",
+   "red_flags": [
+    "No web presence found"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Alan Lewis Inc",
+   "base_city": "Unknown (Santa Ana per candidate list; 714 area code)",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "http://www.alanlewisinc.net/",
+   "phone": "(714) 434-9407",
+   "email": "info@alanlewisinc.net",
+   "evidence_urls": [
+    "http://www.alanlewisinc.net/"
+   ],
+   "partition_evidence": "Sells plastic laminate and phenolic partitions, lockers and hardware ('Contact Us For A Partition Catalog'); no installation mentioned.",
+   "reason": "Appears to be a partition fabricator/supplier with no installation evidence.",
+   "red_flags": [
+    "Supplier only (buy-around risk)",
+    "No location on site"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  }
+ ]
+}

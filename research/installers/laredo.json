@@ -1,0 +1,146 @@
+{
+ "area": "laredo",
+ "found_count": 4,
+ "sources_tried": [
+  "Seed file laredo.json (maps and web): worked. Mostly irrelevant results (portable toilets, remodelers, Lowe's, Walmart). Useful leads: South Central Hardware and Texas Specialties & Installation.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded, but rep results come from a dropdown, so no rep was readable.",
+  "ASI Global Partitions find-a-rep: 404 after redirect.",
+  "Scranton Products where-to-buy: worked. Only one rep listed for all of Texas: Architectural Cornerstone Group, a manufacturer's rep agency and not an installer, so excluded.",
+  "Hadrian where-to-buy: 404.",
+  "Bradley, Metpar, General Partitions, Ampco/Ammco locators: not tried (time and search budget).",
+  "The Blue Book (thebluebook.com search and category pages, iProView profiles): blocked (403).",
+  "BuildingConnected / Procore network: not tried directly. Procore only came up once in search, for an unrelated category.",
+  "onepointpartitions.com: blocked (403). It is an online national partitions reseller (a competitor) that lists delivery to Laredo and Pharr; installation not confirmed, so excluded.",
+  "governmentcontracts.us DEA Specialties page: 404. hireveterans.com: page content empty. govconinabox.com: worked.",
+  "Thumbtack listing for Specialties Specialists: page content empty (only the search snippet was used).",
+  "southwestsolutions.com page: 404. It does lockers, shelving and wire partitions, not toilet partitions; excluded.",
+  "WebSearch: 7 queries used (Laredo Division 10, AMP Partitions, Laredo toilet partitions, San Antonio/South Texas Division 10, DEA Specialties, Laredo restroom accessories installers, McAllen/Corpus Christi/RGV). None found a partition installer based in Laredo. Laredo is about 150 miles from San Antonio, Corpus Christi and McAllen, so almost no specialty contractor is within the 120-mile radius.",
+  "Excluded: national partition distributors with no local base (Prestige Distribution, One Point Partitions, Rocky Duron & Associates of Dallas), Laredo remodelers and handymen, portable toilet rental, SERVPRO, Lowe's."
+ ],
+ "candidates": [
+  {
+   "name": "South Central Hardware Inc.",
+   "base_city": "Laredo",
+   "state": "TX",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.southcentralhardware.com/",
+   "phone": "(956) 723-8234",
+   "email": "southcentralhardware@gmail.com",
+   "contact_page": "https://www.southcentralhardware.com/find-commercial-door-hardware",
+   "evidence_urls": [
+    "https://www.southcentralhardware.com/",
+    "https://www.southcentralhardware.com/toilet-partitions-and-accessories",
+    "https://www.southcentralhardware.com/find-commercial-door-hardware",
+    "https://www.southcentralhardware.com/door-hardware-gallery"
+   ],
+   "partition_evidence": "Homepage lists 'Toilet Partitions and Washroom Accessories' and 'local delivery and installation'. The partition page offers stainless steel and powder-coated partitions to Laredo businesses but does not mention installing them. The gallery has no partition photos.",
+   "red_flags": [
+    "Sells and supplies partitions itself (buy-around risk)",
+    "Site footer and contact section show a Bloomsburg, PA address that conflicts with Laredo (looks like template text)",
+    "No partition project photos",
+    "Mainly a door hardware supplier"
+   ],
+   "reason": "A commercial door hardware and partition supplier in Laredo that advertises local installation in general. It does not show partition installation specifically, and because it sells partitions itself, it is a buy-around risk.",
+   "added_by_checker": false,
+   "license": {
+    "name": "South Central Hardware Inc.",
+    "area": "laredo",
+    "status": "not_required_online_check",
+    "registry": "None applies: no Texas state contractor license; the area rule lists no Laredo city registration",
+    "source_url": "https://gov.texas.gov/uploads/files/business/Texas_Licenses_Permits_Guide.pdf",
+    "note": "State rule read 2026-11-20. The Laredo building department may still require permits for building work; the area rule names no contractor registration."
+   },
+   "score": 50
+  },
+  {
+   "name": "DEA Specialties Co., Inc.",
+   "base_city": "San Antonio",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Bobrick",
+    "American Sanitary Partitions",
+    "Hufcor"
+   ],
+   "evidence_urls": [
+    "https://www.bobrick.com/wp-content/uploads/2019/01/BOB-CaseStudy_HBGConventionCenter_v3-1.pdf"
+   ],
+   "partition_evidence": "A Bobrick case study names DEA Specialties as the installing distributor at the Henry B. Gonzalez Convention Center in San Antonio: 380 stalls and 66 urinal screens installed.",
+   "red_flags": [
+    "No company website found",
+    "Distributor that supplies partitions (buy-around risk)",
+    "About 145 miles from Laredo, beyond the 120-mile regional limit"
+   ],
+   "reason": "A proven commercial partition installer and distributor, but San Antonio is about 145 miles from Laredo, outside the regional limit. Search snippets mention service in South Texas, but I could not open a page that confirms Laredo coverage. Worth a second look if the area is widened.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Texas Specialties & Installation, Inc.",
+   "base_city": "Grand Prairie",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Marlite",
+    "Accurate",
+    "Bobrick",
+    "American Specialties",
+    "Activar"
+   ],
+   "website": "http://www.txspecialties.com/",
+   "phone": "817-701-4200",
+   "contact_page": "http://www.txspecialties.com/contact-us",
+   "evidence_urls": [
+    "http://www.txspecialties.com/",
+    "http://www.txspecialties.com/product/toilet-partitions"
+   ],
+   "partition_evidence": "Sells toilet partitions, partition hardware and bathroom accessories, and 'Installation' is in the company name. The site does not describe any installation services.",
+   "red_flags": [
+    "Distributor that sells partitions to anyone (buy-around risk)",
+    "About 400 miles from Laredo",
+    "No stated service in Laredo or South Texas"
+   ],
+   "reason": "A Division 10 distributor in the Dallas-Fort Worth area, far outside the Laredo area, and it does not say it installs or serves Laredo.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "Specialties Specialists LLC",
+   "base_city": "San Antonio",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "Only a Thumbtack search snippet describes Division 10 work including toilet partitions. The listing page itself returned no content.",
+   "red_flags": [
+    "No website found",
+    "Its only presence is a thin Thumbtack listing that I could not read",
+    "About 145 miles from Laredo",
+    "Under 2 years in business under this name, per a search snippet"
+   ],
+   "reason": "I found no readable evidence of partition installation, and San Antonio is outside the 120-mile limit for Laredo.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

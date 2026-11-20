@@ -1,0 +1,185 @@
+{
+ "area": "richmond",
+ "found_count": 5,
+ "sources_tried": [
+  "Seed file richmond.json (maps + web): worked. Most entries were residential remodelers, shower door shops or stores. Only Barranger was relevant. Complete Interior Package (cipva.com) does residential showers and mirrors, no partitions. Thompson Fixture Installation (tfinstall.com) does store fixtures and signs, no partitions. commercialspecialties.net is Florida-based (904 area code), out of range.",
+  "barranger.com: WebFetch returned 503; curl worked and the pages were read",
+  "Bobrick find-a-rep: page loads, but the dropdown results are rendered by script, so no Virginia rep could be read",
+  "ASI Global Partitions find-a-rep: blocked (403)",
+  "Scranton Products find-a-rep: 404 at the guessed URL",
+  "Bradley, Hadrian, Metpar, General Partitions, Ampco: not reached before the search cap",
+  "The Blue Book (thebluebook.com): blocked (403) on every profile. Only search-result titles and summaries seen (Eastern Partitions, Barranger Company, Frank M. Waters, Partition Plus, Accessible Construction Supply).",
+  "BBB: blocked (403). Section 10 Inc. was seen only through a search summary.",
+  "GlobalSpec local listings: blocked (403)",
+  "BuildingConnected / Procore: not tried (search cap)",
+  "WebSearch: all 8 used. Queries: Division 10 Richmond; Chesterfield/Henrico installers; Section 10 Midlothian; Eastern Partitions; Division 10 Virginia cities; bathroom partition installers Richmond; Hampton Roads/Charlottesville/Fredericksburg; Barranger. Results were dominated by onepointpartitions.com, an online supplier with a Richmond delivery terminal that doesn't install, so it was skipped.",
+  "Excluded after reading: Kelley Bros (no Virginia office), Unified Door & Hardware Group / UDH (NJ, no Virginia mention), Martin Bros (California), Newton Distributing (MA, refers installers only), Frank M. Waters (MD/DC region, Virginia service not confirmed)"
+ ],
+ "candidates": [
+  {
+   "name": "Barranger & Company, Inc.",
+   "base_city": "Richmond",
+   "state": "VA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Global",
+    "Knickerbocker",
+    "Sanymetal",
+    "Scranton Products",
+    "American Sanitary"
+   ],
+   "website": "https://barranger.com/",
+   "phone": "(804) 794-0920",
+   "email": "barranger@barranger.com",
+   "contact_page": "https://barranger.com/",
+   "evidence_urls": [
+    "https://barranger.com/",
+    "https://barranger.com/toilet-partitions/",
+    "https://barranger.com/about-barranger/",
+    "https://barranger.com/manufacturers/"
+   ],
+   "partition_evidence": "Homepage says it supplies and installs folding doors, partitions, toilet accessories and lockers; toilet partitions page has a gallery of installed stalls and urinal screens (e.g. Genworth project photos); about page: toilet compartments 'new, replace existing, refurnish or repair existing'.",
+   "reason": "Richmond-based specialty-products distributor (50+ years) that supplies and installs toilet partitions for commercial, school, church and hospitality clients. Strong installer, but it is itself a partition dealer, so a real buy-around risk.",
+   "red_flags": [
+    "Sells toilet partitions itself (Bobrick, Scranton, Global, etc.): direct competitor and buy-around risk",
+    "No Google/Yelp/BBB rating read"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Barranger & Company, Inc.",
+    "area": "richmond",
+    "status": "not_online",
+    "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+    "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+    "note": "The DPOR lookup needs a reCAPTCHA, so check by hand. Richmond asks for proof of Virginia licensure plus a business license (required above $25,000 a year in city revenue). The city record was not checked online. Checked 2026-11-19."
+   },
+   "score": 70
+  },
+  {
+   "name": "Section 10 Inc.",
+   "base_city": "Midlothian",
+   "state": "VA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [
+    "https://prod.bbb.org/us/va/midlothian/profile/commercial-contractors/section-10-inc-0603-63404554"
+   ],
+   "partition_evidence": "Only a search-result summary of its BBB profile (category commercial contractors; services operable partitions, bathroom partitions, toilet accessories). The BBB page itself returned 403, and no company website was found.",
+   "reason": "Name and BBB categories point to a Division 10 specialties contractor in Midlothian, but I could not open its own site, projects or photos to confirm toilet partition installation.",
+   "red_flags": [
+    "Not BBB accredited (per search summary)",
+    "No company website found",
+    "BBB page not readable (403); phone and rating not verified"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Section 10 Inc.",
+    "area": "richmond",
+    "status": "not_online",
+    "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+    "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+    "note": "The DPOR lookup needs a reCAPTCHA, so check by hand. No company website was given and none was checked. The Richmond business license was not checked online. Checked 2026-11-19."
+   },
+   "score": 50
+  },
+  {
+   "name": "American Building Specialties Corp. (ABS)",
+   "base_city": "Bealeton",
+   "state": "VA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Bobrick",
+    "ASI",
+    "Hadrian"
+   ],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/393400"
+   ],
+   "partition_evidence": "Search-result summary of its Blue Book listing: wholesale distributor of toilet partitions, bathroom accessories and lockers; master distributor for Bobrick, ASI and Hadrian; installation available in many states; Virginia listed as a region served. Blue Book page returned 403 on direct fetch; no company website found.",
+   "reason": "About 75 miles from Richmond and lists Virginia as served, but it is primarily a wholesale partition distributor (a competitor) and installation is mentioned only generally.",
+   "red_flags": [
+    "Wholesale partition distributor: direct competitor and buy-around risk",
+    "No company website read; contact details not verified"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "American Building Specialties Corp. (ABS)",
+    "area": "richmond",
+    "status": "not_online",
+    "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+    "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+    "note": "The DPOR lookup needs a reCAPTCHA, so check by hand. No company website was given and none was checked. The Richmond business license was not checked online. Checked 2026-11-19."
+   },
+   "score": 43
+  },
+  {
+   "name": "Continental Partition Systems Inc",
+   "base_city": "Fredericksburg",
+   "state": "VA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "evidence_urls": [
+    "https://mapquest.com/us/virginia/continental-partition-systems-410358174"
+   ],
+   "partition_evidence": "Only a search-result summary of a MapQuest listing: operable partition walls, glass partition walls, gym equipment, lockers and stalls, with new installation, replacement, repair and maintenance for hotels, churches, schools and recreation centers. MapQuest page returned no content when fetched; no company website found.",
+   "reason": "Division 10 installer that apparently mentions stalls, about 55 miles north of Richmond, but nothing I read says it serves Richmond and its own site could not be found.",
+   "red_flags": [
+    "No company website found",
+    "Service area for Richmond not confirmed",
+    "Phone/contact not verified"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Continental Partition Systems Inc",
+    "area": "richmond",
+    "status": "not_online",
+    "registry": "Virginia DPOR License Lookup (Board for Contractors)",
+    "source_url": "https://dporweb.dpor.virginia.gov/LicenseLookup/",
+    "note": "The DPOR lookup needs a reCAPTCHA, so check by hand. No company website was given and none was checked. The Richmond business license was not checked online. Checked 2026-11-19."
+   },
+   "score": 40
+  },
+  {
+   "name": "Eastern Partitions, Inc.",
+   "base_city": "Midlothian",
+   "state": "VA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/796009/eastern-partitions-inc/subcontractors/construction-projects/bon-secours-hospital-21355/",
+    "https://www.thebluebook.com/iProView/796009/eastern-partitions-inc/subcontractors/construction-projects/village-bank-headquarters-21354/"
+   ],
+   "partition_evidence": "Blue Book lists it as a subcontractor on Richmond-area commercial projects (Bon Secours hospital, about $700,000 contract; Village Bank HQ; Safeway; data centers). No trade scope shown in what I could read; contract sizes suggest drywall/interior wall partitions rather than toilet partitions. Blue Book pages returned 403 on direct fetch.",
+   "reason": "Real local commercial subcontractor, but no evidence of toilet partition work; 'partitions' likely means interior wall framing/drywall. Worth a phone check only if the area is short of installers.",
+   "red_flags": [
+    "No company website found",
+    "Project listings dated around 2012; current status unknown",
+    "Trade scope unconfirmed"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  }
+ ]
+}

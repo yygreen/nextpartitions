@@ -1,0 +1,375 @@
+{
+ "area": "tucson",
+ "found_count": 14,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/tucson.json: worked (Babby, Ralcon, Inter-Co relevant; most others are residential remodelers or plumbers, skipped)",
+  "babbyinc.com: worked",
+  "ralconaz.com: blocked (403)",
+  "inter-co.com home and contact page: worked",
+  "Bobrick find-a-rep: page loaded but rep dropdown results not readable",
+  "Scranton Products where-to-buy: worked; only a regional rep (no AZ dealers or installers listed)",
+  "ASI Global Partitions locator (globalpartitions.com): host not reachable from this session",
+  "Bradley, Hadrian, Metpar, General Partitions, Ampco locators: not tried (search and time budget)",
+  "The Blue Book (thebluebook.com): blocked (403) on all profiles",
+  "BuildingConnected / Procore public profiles: not tried",
+  "BBB partition category (Oro Valley) and BBB profiles: worked",
+  "partitionsco.com: worked",
+  "newtondistributing.com: worked (Massachusetts-based distributor, ships to Tucson; not a local installer, excluded)",
+  "onepointpartitions.com: blocked (403); used search snippets only",
+  "apexwindowsandbath.com: worked (residential only, excluded)",
+  "beachproducts.com: domain parked; excluded",
+  "alleghenyspecialties.com: host not reachable",
+  "cbxsolutions.com (BMSI Phoenix): blocked (403)",
+  "Yelp: no results surfaced through search",
+  "WebSearch: 8 of 8 used (toilet partition installation Tucson; Division 10 Tucson; restroom partitions installer AZ; Partitions & Accessories Mesa; Tucson toilet partitions bathroom accessories; Phoenix Division 10; Tucson/Marana/Oro Valley partition installers); few Tucson-local partition installers found",
+  "Seed file research/installers/raw/seeds/tucson.json: worked. Most Maps results were irrelevant (plumbers, remodelers, restaurants). Plausible ones were opened: babbyinc.com (worked), inter-co.com (worked), hartman-glass.com (worked), ralconaz.com (403 blocked).",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but the rep dropdown is JavaScript, so no Arizona results could be read.",
+  "Scranton Products find-a-rep: 404 at /find-a-rep/. ASI, Bradley, Hadrian, Metpar, General Partitions and Ampco locators were not reached because of time and the search cap.",
+  "The Blue Book (thebluebook.com iProView pages 413560, 1446240, 259104): all blocked with 403. Only search snippets were seen.",
+  "BuildingConnected / Procore: not tried (search cap).",
+  "WebSearch: used all 8. Queries: toilet partition installation Tucson; Division 10 contractor Tucson; 'toilet partitions' Tucson install; restroom partitions installer Arizona; Tucson Division 10 specialties installer; Partitions & Accessories Co Mesa; Tucson subcontractor toilet partitions ROC; Yelp/BBB bathroom partitions Tucson. These found few local hits. Results were dominated by One Point Partitions (an online seller with a Tucson location that does not install, per its own site as quoted in a search summary; excluded), Lowe's and plumbers.",
+  "BBB category page (bbb.org/us/az/elgin/category/partition): worked. It gave the Partitions & Accessories phone and rating plus Tucson drywall or partition firms. Excluded from that page: Hufcor Arizona (Mesa, operable partitions) and drywall firms outside the area.",
+  "onepointpartitions.com Tucson page: 403. partitionsaccessories.com: DNS failure (domain may not exist). newtondistributing.com toilet-partitions-near-me: worked, but it names no Arizona installers.",
+  "Yelp: no Yelp pages appeared in search results."
+ ],
+ "candidates": [
+  {
+   "name": "Babby Building Specialties, Inc.",
+   "base_city": "Tucson",
+   "state": "AZ",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://babbyinc.com/",
+   "phone": "520-624-8837",
+   "contact_page": "https://babbyinc.com/contact-us/",
+   "partition_evidence": "Toilet Partitions is a product category on its site, and the site says customers can schedule an installation under warranty through Babby or buy materials directly. It lists Division 6, 9, 10, 11 and 12 work, including toilet accessories and partitions.",
+   "red_flags": [
+    "Sells and supplies toilet partitions itself (buy-around risk)",
+    "No manufacturer brands named",
+    "No project photos of partition installs seen"
+   ],
+   "reason": "Tucson Division 10 specialty contractor whose own site offers toilet partition supply and warranty installation for commercial building types. It is a strong installer, but it is also a direct partition seller.",
+   "evidence_urls": [
+    "https://babbyinc.com/",
+    "https://babbyinc.com/toilet-partitions/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Babby Building Specialties, Inc.",
+    "area": "tucson",
+    "status": "not_online",
+    "registry": "Arizona Registrar of Contractors (AZ ROC) Contractor Search, https://azroc.my.site.com/AZRoc/s/contractor-search",
+    "license_number": "334946 (self-reported on company site, not confirmed on the ROC record)",
+    "license_type": "unknown (classification not read on the official record)",
+    "source_url": "https://babbyinc.com/",
+    "note": "The AZ ROC contractor search is a Salesforce page that only loads with JavaScript. Automated fetches got only a 'Sorry to interrupt / CSS Error' shell, and the page's security policy loads reCAPTCHA, so the official record could not be read. The company homepage says 'AZ ROC License #334946', phone 520.624.8837, based in Tucson. Someone needs to check license 334946 by hand at the ROC search for status, classification (a commercial specialty class such as partitions or toilet accessories) and expiration. Levelset (third party, not a registry) lists the company as a Tucson specialties contractor: https://levelset.com/subcontractors/arizona/tucson/specialties/babby-building-specialties-inc. Tucson also requires a licensed contractor for commercial work. Whether a city business license is needed was not checked."
+   },
+   "score": 70
+  },
+  {
+   "name": "Partitions & Accessories Co (Partitions Co.)",
+   "base_city": "Mesa",
+   "state": "AZ",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "ASI Group",
+    "Bobrick",
+    "Bradley",
+    "Scranton",
+    "Koala Kare",
+    "Pressalit"
+   ],
+   "website": "https://www.partitionsco.com/",
+   "phone": "480-969-6606",
+   "email": "sales@partitionsco.com",
+   "contact_page": "https://www.partitionsco.com/contact-us/",
+   "review_source": "BBB A+ (https://bbb.org/us/az/oro-valley/category/partition)",
+   "evidence_urls": [
+    "https://www.partitionsco.com/",
+    "https://www.partitionsco.com/contact-us/",
+    "https://bbb.org/us/az/oro-valley/category/partition"
+   ],
+   "partition_evidence": "Homepage: Division 10 specialties 'sales, service, and installation', including toilet partitions and hardware.",
+   "reason": "Arizona Division 10 dealer that sells and installs toilet partitions for general contractors. It is in Mesa (about 100 miles away), and the pages I read don't name Tucson as a service area. It also directly competes with Next Partitions as a reseller of the same brands.",
+   "red_flags": [
+    "Reseller of the same brands as Next Partitions (ASI, Bobrick, Bradley, Scranton): high buy-around risk",
+    "Pages read don't say it serves Tucson; the Tucson Premium Outlets project appeared only in a search snippet I didn't open"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Partitions & Accessories Co (Partitions Co.)",
+    "area": "tucson",
+    "status": "not_online",
+    "license_type": "Arizona ROC contractor license (classification not shown on company site)",
+    "license_number": "110352 (as stated on company website; not confirmed on the official registry)",
+    "registry": "Arizona Registrar of Contractors (ROC) contractor search, azroc.my.site.com/AZRoc/s/contractor-search",
+    "source_url": "https://www.partitionsco.com/",
+    "note": "The ROC search needs JavaScript and can't be read by automated tools (see the first entry). The company website shows 'AZ ROC # 110352', phones 1(480)969-6606 and 1(800)795-6607, and a base city of Mesa, AZ. A low license number suggests an older license, but its status and classification are unknown until checked by hand on the ROC search."
+   },
+   "score": 63
+  },
+  {
+   "name": "Inter-Co Division 10 (Arizona) Inc. / Inter-Co Restroom & Locker Supply",
+   "base_city": "Phoenix",
+   "state": "AZ",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Bobrick"
+   ],
+   "website": "https://inter-co.com/",
+   "phone": "623-398-6295",
+   "email": "azsales@inter-co.com",
+   "contact_page": "https://inter-co.com/contact/",
+   "evidence_urls": [
+    "https://inter-co.com/",
+    "https://inter-co.com/contact/"
+   ],
+   "partition_evidence": "Homepage says it supplies and installs hundreds of Division 10 products; toilet partitions are a product category, and one image is labeled Bobrick Privada partitions. Partition installation isn't shown specifically.",
+   "reason": "Division 10 distributor with a Phoenix office (about 110 miles away) that supplies and installs restroom products. Its site doesn't mention Tucson or name its service areas.",
+   "red_flags": [
+    "Distributor that sells partitions (buy-around risk)",
+    "No Tucson service area stated"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Inter-Co Division 10 (Arizona) Inc. / Inter-Co Restroom & Locker Supply",
+    "area": "tucson",
+    "status": "not_online",
+    "license_type": "",
+    "license_number": "",
+    "registry": "Arizona Registrar of Contractors (ROC) contractor search, azroc.my.site.com/AZRoc/s/contractor-search",
+    "source_url": "https://inter-co.com/",
+    "note": "Neither the homepage nor the contact page (https://inter-co.com/contact/) shows an ROC license number. The ROC search needs JavaScript and can't be read by automated tools. The website gives phone (623) 398-6295, Arizona email azsales@inter-co.com and a base city of Phoenix, AZ. Search the ROC by business name 'Inter-Co Division 10 (Arizona)' by hand to find out whether it holds a license that covers installation, or whether it only supplies products."
+   },
+   "score": 43
+  },
+  {
+   "name": "Partitions & Accessories Co.",
+   "base_city": "Mesa",
+   "state": "AZ",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "ASI Accurate",
+    "Bobrick",
+    "Gamco"
+   ],
+   "phone": "(480) 969-6606",
+   "rating": 0,
+   "review_source": "BBB rating A+, accredited (no review count read)",
+   "partition_evidence": "A search summary of its Blue Book profile (the page returned 403 when fetched) says it stocks toilet partitions, installs about four days after measuring, and lists Tucson Premium Outlets among its projects. The BBB lists it under Partitions.",
+   "red_flags": [
+    "Based in Mesa, about 100 miles from Tucson",
+    "Stocks and sells partitions (buy-around risk)",
+    "Install details came from a search snippet, not a page read directly",
+    "No company website found"
+   ],
+   "reason": "An established Arizona partition supplier and installer that works statewide, Tucson included, but it is based in Mesa, well outside the 30-mile radius. Consider it as a fallback for Tucson jobs if local coverage is thin.",
+   "evidence_urls": [
+    "https://bbb.org/us/az/oro-valley/category/partition",
+    "https://www.thebluebook.com/iProView/413560/partitions-accessories-co/material-suppliers/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "Inter-Co Division 10 (Arizona) Inc.",
+   "base_city": "Phoenix",
+   "state": "AZ",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Bobrick"
+   ],
+   "website": "http://www.inter-co.com/",
+   "phone": "(623) 398-6295",
+   "email": "azsales@inter-co.com",
+   "contact_page": "https://inter-co.com/contact/",
+   "partition_evidence": "Its homepage says it supplies and installs Division 10 products, toilet partitions among them. No partition install project in Arizona was shown.",
+   "red_flags": [
+    "Phoenix office, about 110 miles away",
+    "Toronto-based supplier that sells partitions (buy-around risk)",
+    "No Tucson work mentioned"
+   ],
+   "reason": "A Division 10 supplier and installer whose Arizona office is in Phoenix, outside the area. It is also a partition seller.",
+   "evidence_urls": [
+    "http://www.inter-co.com/",
+    "https://inter-co.com/contact/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "Ralcon LLC",
+   "base_city": "Tucson",
+   "state": "AZ",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://ralconaz.com/",
+   "partition_evidence": "None. Its site is behind a Cloudflare challenge and could not be read. Search listings describe it as a small general contractor (dual building license) and mention no partition work.",
+   "red_flags": [
+    "Website unreadable (403/Cloudflare)",
+    "Search listings show a one-person general contractor",
+    "No partition evidence"
+   ],
+   "reason": "A Tucson general contractor with no evidence of toilet partition installation.",
+   "evidence_urls": [
+    "https://www.thumbtack.com/az/tucson/general-contractors/ralcon-llc/service/554520659363225603",
+    "https://www.buildzoom.com/contractor/ralcon-llc"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Hartman Glass and Mirror",
+   "base_city": "Tucson",
+   "state": "AZ",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://hartman-glass.com/",
+   "phone": "(520) 903-0766",
+   "email": "SP@hartman-glass.com",
+   "contact_page": "https://hartman-glass.com/contact/",
+   "partition_evidence": "None. Its services are shower glass, mirrors, windows, railings and commercial storefront glass, with no partitions or restroom accessories.",
+   "red_flags": [
+    "Glass shop, not a partition installer"
+   ],
+   "reason": "A glass and mirror company with no toilet partition services listed.",
+   "evidence_urls": [
+    "http://hartman-glass.com/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "One Point Partitions (Tucson location)",
+   "base_city": "Tucson",
+   "state": "AZ",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=2687"
+   ],
+   "partition_evidence": "Its site blocked automated access (403). According to search summaries of its own pages, it says it does not install partitions and offers DIY guides and installation advice instead.",
+   "reason": "It is an online partition seller and a competitor to Next Partitions, not an installer. The Tucson page looks like a location landing page.",
+   "red_flags": [
+    "Competing online partition reseller",
+    "States it does not install (per search summary; page itself blocked)"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Hufcor Arizona, Inc.",
+   "base_city": "Mesa",
+   "state": "AZ",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [
+    "Hufcor"
+   ],
+   "phone": "480-464-4437",
+   "review_source": "BBB A+ (https://bbb.org/us/az/oro-valley/category/partition)",
+   "evidence_urls": [
+    "https://bbb.org/us/az/oro-valley/category/partition"
+   ],
+   "partition_evidence": "BBB categories are Partitions, Doors and Gymnasium Equipment. Hufcor makes operable walls, not toilet partitions. No company website found.",
+   "reason": "It works on operable and movable walls, and I saw no toilet partition installation. It is about 100 miles away.",
+   "red_flags": [
+    "Operable wall dealer, not restroom partitions"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 23
+  },
+  {
+   "name": "Statewide Installations LLC",
+   "base_city": "Laveen",
+   "state": "AZ",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "phone": "602-435-9319",
+   "review_source": "BBB A+ (https://bbb.org/us/az/oro-valley/category/partition)",
+   "evidence_urls": [
+    "https://bbb.org/us/az/oro-valley/category/partition"
+   ],
+   "partition_evidence": "BBB categories are Office Furniture Installation, Office Equipment and Partitions, which suggests office cubicle partitions. No website found.",
+   "reason": "It is an office furniture installer in the Phoenix area, with no toilet partition evidence and no stated Tucson service.",
+   "red_flags": [
+    "No website found",
+    "Conflicting addresses in directory listings"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Interior Solutions LLC",
+   "base_city": "Tucson",
+   "state": "AZ",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(520) 288-3937",
+   "review_source": "BBB rating A-, not accredited",
+   "partition_evidence": "The BBB lists it as Drywall Contractors, Drywall Texture and Partitions. 'Partitions' here most likely means drywall partition walls, not toilet partitions. No website found.",
+   "red_flags": [
+    "Drywall contractor",
+    "No website or toilet partition evidence"
+   ],
+   "reason": "Its BBB categories point to a drywall and wall-partition contractor, with no sign of toilet partition work.",
+   "evidence_urls": [
+    "https://bbb.org/us/az/oro-valley/category/partition"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

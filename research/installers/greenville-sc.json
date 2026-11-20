@@ -1,0 +1,333 @@
+{
+ "area": "greenville-sc",
+ "found_count": 9,
+ "sources_tried": [
+  "Seed file raw/seeds/greenville-sc.json: worked, but nearly all entries are residential remodelers, plumbers, shower-door shops and supply stores. ICS Inc. was the only real lead; Palmetto Specialties' site doesn't mention toilet partitions.",
+  "Scranton Products product specialist locator: worked. It lists only a regional sales rep (Southern States Architectural Sales, AL/GA/FL/MS/NC/SC/TN), not installers.",
+  "Bobrick, ASI, Bradley, Hadrian, Metpar, General Partitions and Ampco locators: not tried, because the search and fetch budget went to local leads.",
+  "The Blue Book: profile pages (iProView 1616669) blocked with 403; facts came only from search snippets.",
+  "BuildingConnected and Procore: not tried.",
+  "WebSearch (8 of 8 used): 'toilet partition installation Greenville SC', Spartanburg/Anderson variants, 'Division 10' Greenville, Upstate restroom partitions, Carolina Partitions, the Blue Book Greenville County query. All worked but returned mostly manufacturers and online sellers (One Point Partitions, Sustainable Supply, PSiSC).",
+  "BBB category pages (sc/iva, sc/windsor and nc partition categories): worked. No Upstate SC partition installers were listed; only NC and GA firms (Grier Interiors is office furniture; Berl's is a restroom accessories seller with no stated installation).",
+  "onepointpartitions.com: blocked (403).",
+  "Google goto redirects from the seed file: resolved to Nextdoor (Installation Nation is a handyman, so excluded), officeinteriorsgreenville.com (empty page) and Yahoo Local (not opened).",
+  "Google search page fetch: blocked."
+ ],
+ "candidates": [
+  {
+   "name": "ICS Inc. (Innovative Construction Services)",
+   "base_city": "Greenville",
+   "state": "SC",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.icsdoors.com/",
+   "phone": "864-299-1050",
+   "email": "info@icsdoors.com",
+   "contact_page": "https://www.icsdoors.com/",
+   "evidence_urls": [
+    "https://www.icsdoors.com/",
+    "https://www.icsdoors.com/services"
+   ],
+   "partition_evidence": "Services page lists 'Division 10 - Toilet Partition and Accessory Sales and Installation'; homepage lists toilet partitions and an installation@ email.",
+   "red_flags": [
+    "Sells and supplies partitions itself (buy-around risk)",
+    "No partition brands named",
+    "No service area stated beyond Greenville address",
+    "Contact Us link is a placeholder; no dedicated contact page"
+   ],
+   "reason": "Greenville-based commercial door/hardware and Division 10 contractor that explicitly sells and installs toilet partitions. Inside the area, but it supplies partitions itself.",
+   "added_by_checker": false,
+   "license": {
+    "name": "ICS Inc. (Innovative Construction Services)",
+    "area": "greenville-sc",
+    "status": "not_online",
+    "registry": "South Carolina Contractor's Licensing Board (LLR) Licensee Lookup - Contractors",
+    "source_url": "https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69",
+    "note": "Checked 2026-11-20. SC requires a state contractor license above the $10,000 threshold. The LLR lookup is behind reCAPTCHA, so the record couldn't be read automatically. Look it up by hand by company name ('ICS' or 'Innovative Construction Services'; the lookup says not to use punctuation), city Greenville. The company homepage (https://www.icsdoors.com/) shows no license number. No local Greenville requirement applies."
+   },
+   "score": 70
+  },
+  {
+   "name": "Restroom Stalls and All (RSA)",
+   "base_city": "Gainesville",
+   "state": "GA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Bobrick",
+    "Koala Kare",
+    "XLERATOR"
+   ],
+   "website": "https://restroomstallsandall.com/",
+   "phone": "1-844-817-8255",
+   "email": "cs@restroomstallsandall.com",
+   "contact_page": "https://restroomstallsandall.com/pages/contact-us",
+   "evidence_urls": [
+    "https://restroomstallsandall.com/",
+    "https://restroomstallsandall.com/pages/contact-us"
+   ],
+   "partition_evidence": "States it installs commercial toilet partitions with its own W2 crews in GA, FL, AL, TN, SC and NC.",
+   "red_flags": [
+    "Distributor that sells partitions nationwide (direct competitor / buy-around risk)",
+    "Greenville not named specifically"
+   ],
+   "reason": "Commercial partition distributor and installer about 90 miles from Greenville whose site says its own crews install in South Carolina. Strong installer, but it is also a competing seller.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Restroom Stalls and All (RSA)",
+    "area": "greenville-sc",
+    "status": "not_online",
+    "registry": "South Carolina LLR Contractor's Licensing Board license lookup, verify.llronline.com (and Georgia SOS verify.sos.ga.gov for the home state)",
+    "source_url": "https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69",
+    "note": "Checked 2026-11-20. This is a Gainesville, GA business listed for the Greenville, SC area. The task gave no SC/Greenville rule. The SC LLR contractor lookup page loads, but its search form is protected by reCAPTCHA, so it was not run (no automated search, no form submission). The Georgia lookup returned 403. The website shows no license number. Check the SC requirement for out-of-state partition installers and look the business up manually."
+   },
+   "score": 63
+  },
+  {
+   "name": "Seven Oaks Door and Hardware Inc.",
+   "base_city": "Locust",
+   "state": "NC",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://sevenoakshardware.com/",
+   "phone": "704-485-2014",
+   "contact_page": "https://sevenoakshardware.com/request-a-quote/",
+   "evidence_urls": [
+    "https://sevenoakshardware.com/",
+    "https://sevenoakshardware.com/request-a-quote/"
+   ],
+   "partition_evidence": "Homepage: 'sell, deliver and install brand name, commercial grade doors and hardware; toilet partitions'; lists Bathroom Partitions service and blog on bathroom partition installation.",
+   "red_flags": [
+    "Sells partitions itself (buy-around risk)",
+    "Base is roughly 115-130 miles from Greenville, at the edge of the regional range",
+    "Greenville/Upstate not named; SC blog posts mention Charleston, Columbia, Summerville"
+   ],
+   "reason": "Commercial door/hardware firm that says it sells and installs toilet partitions and serves NC, SC and southern VA. Regional fit at the edge of range.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 63
+  },
+  {
+   "name": "Precision Walls (Greenville-Spartanburg office)",
+   "base_city": "Greenville-Spartanburg",
+   "state": "SC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.precisionwalls.com/",
+   "phone": "919-832-0380",
+   "contact_page": "https://www.precisionwalls.com/contact-us/",
+   "evidence_urls": [
+    "https://www.precisionwalls.com/",
+    "https://www.precisionwalls.com/product/division-10-specialties/"
+   ],
+   "partition_evidence": "Division 10 & 12 Specialties page lists Toilet Partitions/Toilet Accessories; lists a Greenville-Spartanburg, SC location. Installation of partitions not stated explicitly.",
+   "red_flags": [
+    "Large interior contractor (HQ Cary, NC) working for GCs; partition installation not explicit",
+    "Phone is the HQ number; no local SC address shown"
+   ],
+   "reason": "Commercial interiors contractor with a Greenville-Spartanburg office that offers toilet partitions in its Division 10 scope; installation likely but unproven.",
+   "added_by_checker": true,
+   "license": {
+    "name": "Precision Walls (Greenville-Spartanburg office)",
+    "area": "greenville-sc",
+    "status": "not_online",
+    "registry": "South Carolina Contractor's Licensing Board (LLR) Licensee Lookup - Contractors",
+    "source_url": "https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69",
+    "note": "Checked 2026-11-20. The LLR lookup is behind reCAPTCHA, so the record couldn't be read automatically. Look it up by hand as 'Precision Walls' with no city filter, since the license may sit with the parent company's head office rather than the Greenville-Spartanburg branch. The company homepage (https://www.precisionwalls.com/) shows no license number."
+   },
+   "score": 50
+  },
+  {
+   "name": "Coach Partitions, LLC",
+   "base_city": "Columbia",
+   "state": "SC",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://coachpartitions.com/",
+   "phone": "803-381-2937",
+   "email": "coachpartitions@gmail.com",
+   "contact_page": "https://coachpartitions.com/contact/",
+   "evidence_urls": [
+    "https://coachpartitions.com/",
+    "https://coachpartitions.com/about/"
+   ],
+   "partition_evidence": "Site says 'We sell and install toilet partitions' plus accessories (baby changing tables, shower seats, fire extinguisher cabinets).",
+   "red_flags": [
+    "No service area stated; Greenville/Upstate not mentioned",
+    "About 100 miles from Greenville",
+    "Gmail address; About page 'Our Story' is empty",
+    "Sells partitions itself"
+   ],
+   "reason": "Partition specialist that sells and installs, but based in Columbia about 100 miles away and its site does not say it serves the Upstate. Needs a call to confirm coverage.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Coach Partitions, LLC",
+    "area": "greenville-sc",
+    "status": "not_online",
+    "registry": "South Carolina Contractor's Licensing Board (LLR) Licensee Lookup - Contractors",
+    "source_url": "https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69",
+    "note": "Checked 2026-11-20. Based in Columbia. The LLR lookup is behind reCAPTCHA, so the record couldn't be read automatically. Look it up by hand as 'Coach Partitions', city Columbia. The company homepage (https://coachpartitions.com/) shows no license number. A state license is needed only for jobs above the $10,000 threshold."
+   },
+   "score": 43
+  },
+  {
+   "name": "New South Specialties, LLC",
+   "base_city": "Columbia",
+   "state": "SC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "http://www.newsouthspecialties.com/",
+   "phone": "803-796-9595",
+   "contact_page": "https://www.newsouthspecialties.com/contact",
+   "evidence_urls": [
+    "http://www.newsouthspecialties.com/",
+    "https://www.newsouthspecialties.com/contact"
+   ],
+   "partition_evidence": "Lists toilet partitions and washroom accessories among Division 10 specialty product lines; installation not stated.",
+   "red_flags": [
+    "Installation not stated",
+    "No service area stated; Columbia is about 100 miles away",
+    "Supplies partitions itself"
+   ],
+   "reason": "Division 10 specialties supplier in Columbia offering toilet partitions; installation and Upstate coverage unconfirmed.",
+   "added_by_checker": false,
+   "license": {
+    "name": "New South Specialties, LLC",
+    "area": "greenville-sc",
+    "status": "not_online",
+    "registry": "South Carolina Contractor's Licensing Board (LLR) Licensee Lookup - Contractors",
+    "source_url": "https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69",
+    "note": "Checked 2026-11-20. Based in Columbia. The LLR lookup is behind reCAPTCHA, so the record couldn't be read automatically. Look it up by hand as 'New South Specialties', city Columbia. The company homepage (http://www.newsouthspecialties.com/) shows no license number."
+   },
+   "score": 43
+  },
+  {
+   "name": "Carolina Partitions, LLC",
+   "base_city": "Greenville",
+   "state": "SC",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/1616669"
+   ],
+   "partition_evidence": "None found. Blue Book listing (seen in search results; page itself returned 403) describes metal framing, drywall, insulation, acoustical ceilings, EIFS and specialty items; toilet partitions not mentioned.",
+   "red_flags": [
+    "'Partitions' appears to mean drywall/framing, not toilet partitions",
+    "No own website found",
+    "Listing page could not be opened directly"
+   ],
+   "reason": "Greenville interior subcontractor whose listing describes drywall and framing work; no evidence of toilet partition installation.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Greenville Office Supply (GOS)",
+   "base_city": "Greer",
+   "state": "SC",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.gos1.com/",
+   "phone": "800-277-0208",
+   "email": "help@gos1.com",
+   "contact_page": "https://www.gos1.com/contact-us--6",
+   "evidence_urls": [
+    "https://www.gos1.com/"
+   ],
+   "partition_evidence": "None; office, janitorial and furniture supplier. Only a restroom design blog post; no partition products or installation services listed.",
+   "red_flags": [
+    "Office/janitorial supply company, not an installer"
+   ],
+   "reason": "Office and janitorial supply distributor with no toilet partition installation service.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "Greer",
+   "state": "SC",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "phone": "800-756-6817",
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=6259",
+    "https://onepointpartitions.com/?p=3485"
+   ],
+   "partition_evidence": "Site blocked (403); search snippets show an online partition seller with a Greer 'delivery terminal' and copy saying partitions come ready to assemble with no need to hire a special installation team.",
+   "red_flags": [
+    "Online partition seller (direct competitor)",
+    "Greer address is a delivery terminal, not shown as an install crew base",
+    "Site returned 403; could not verify directly"
+   ],
+   "reason": "National online partition seller, not an installer; the Greer location is a delivery terminal. Competitor, not a referral partner.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "LockersNMore, LLC",
+   "base_city": "Charlotte",
+   "state": "NC",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://lockersnmore.com/",
+   "phone": "704-440-4070",
+   "contact_page": "https://lockersnmore.com/contact-us/",
+   "evidence_urls": [
+    "https://lockersnmore.com/",
+    "https://www.bbb.org/us/sc/windsor/category/partition"
+   ],
+   "partition_evidence": "Nationwide distributor selling toilet partitions in five materials; no installation service mentioned.",
+   "review_source": "BBB rating A+ (letter grade, not accredited) per BBB category page",
+   "red_flags": [
+    "Distributor/seller (competitor), installation not offered on site",
+    "South Carolina not mentioned"
+   ],
+   "reason": "National distributor of lockers and toilet partitions with shipping only; no evidence it installs.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 23
+  }
+ ]
+}

@@ -1,0 +1,379 @@
+{
+ "area": "greensboro",
+ "found_count": 12,
+ "sources_tried": [
+  "Seed file greensboro.json: worked. Most entries were remodelers, plumbers and stores; the useful ones were RBS, Preferred Bath, Simco, Elite, US Doorways, B A Hoft, Division 10 and RepSouth",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): loaded, but the results come from a dropdown and the page text showed none",
+  "Scranton Products where-to-buy: worked; NC is covered only by the rep firm Southern States Architectural Sales (678.425.8796), no local dealers",
+  "ASI (asipartitions.com): blocked, host not resolvable from this session",
+  "Hadrian and Metpar rep pages: 404 at the URLs tried",
+  "Bradley, General Partitions, Ampco/Ammco locators: not tried (fetch budget)",
+  "The Blue Book: found through search (Macade, Donco, J.S. Archer), but every iProView page returned 403",
+  "BuildingConnected and Procore: not tried (sign-in or not reachable)",
+  "WebSearch: 8 of 8 used. Queries were 'toilet partition installation Greensboro', Division 10 NC, Winston-Salem/High Point/Burlington, furnish-and-install NC, Blue Book Greensboro, Triad Division 10, Charlotte/Raleigh specialties, Greensboro Yelp/BBB. Results were dominated by One Point Partitions, an online seller that doesn't install, so it was skipped",
+  "BBB category pages: worked (Greensboro and Waxhaw partition categories, LockersNMore, CCI Door, Proven Products profiles)",
+  "Yelp: no results came up in search",
+  "Skipped: One Point Partitions (ships nationwide, says it doesn't install), Proven Products in Kinston (operable and accordion partitions only), J.S. Archer in Ashland VA (about 200 miles, Virginia service area), Donco in Peachtree City GA (more than 120 miles), Division10 Distribution in Asheville (site not resolvable, about 150 miles), Unified Door & Hardware Group (national, no NC office shown)"
+ ],
+ "candidates": [
+  {
+   "name": "Residential Building Specialties, Inc.",
+   "base_city": "Winston-Salem",
+   "state": "NC",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "American Specialties",
+    "AJW Washroom Access",
+    "Cal-Royal",
+    "Philadelphia Hardware Group"
+   ],
+   "website": "https://rbsws.com/",
+   "phone": "(336) 766-5186",
+   "contact_page": "https://rbsws.com/contact-residential-building-specialties-inc/",
+   "evidence_urls": [
+    "https://rbsws.com/",
+    "https://rbsws.com/commercial-products/"
+   ],
+   "partition_evidence": "Commercial products page lists 'Washroom Partitions', a 'Bathroom Stalls' service heading, and 'From a basic installation to a commercial bathroom remodeling project ... quality installation'.",
+   "red_flags": [
+    "Mainly a residential builder supplier; sells partitions itself (buy-around risk)",
+    "No project photos of partition installs seen"
+   ],
+   "reason": "Winston-Salem supplier whose commercial page lists washroom partitions and bathroom stalls with installation; serves Mebane to Statesville, which covers the Triad.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Residential Building Specialties, Inc.",
+    "area": "greensboro",
+    "status": "not_found",
+    "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Checked 2026-11-19. No licensee found for company name 'Residential Building Specialties' (contains-match), 'Residential Building' (7 other companies, none this one), 'Building Specialties' (4 other companies), or company phone 336-766-5186 (from rbsws.com). Company site (https://rbsws.com/) names it Residential Building Specialties, Inc., Winston-Salem; it sells and installs residential/commercial specialties (closet shelving, door hardware, mirrors, shower doors, bath accessories) and does not mention toilet partitions. NC requires a GC license only for jobs at or above the state threshold ($40,000), so no license may be needed for smaller partition jobs. Greensboro's $2,000 bond rule applies to state-licensed contractors pulling certain city permits; there is no separate city registry to search."
+   },
+   "score": 70
+  },
+  {
+   "name": "Integrated Openings Solutions, Raleigh (formerly B A Hoft & Associates)",
+   "base_city": "Raleigh",
+   "state": "NC",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://integratedopenings.com/locations/raleigh/",
+   "phone": "(919) 596-4446",
+   "email": "info@integratedopenings.com",
+   "contact_page": "https://integratedopenings.com/locations/",
+   "evidence_urls": [
+    "https://integratedopenings.com/locations/raleigh/",
+    "https://integratedopenings.com/capabilities/"
+   ],
+   "partition_evidence": "Company capabilities page: Division 10 'including washroom accessories, toilet partitions' and 'expert installation for all Division 10 specialties'. Raleigh location page lists Washroom Accessories but not partitions.",
+   "red_flags": [
+    "Partition installation stated company-wide, not on the Raleigh page",
+    "No Triad service area stated; Raleigh is about 75 miles away",
+    "Supplies products (product sourcing), so a buy-around risk"
+   ],
+   "reason": "Commercial door and Division 10 firm stating partition installation company-wide, with an NC office about 75 miles away. It isn't confirmed that the Raleigh office does partitions or serves the Triad.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Integrated Openings Solutions, Raleigh (formerly B A Hoft & Associates)",
+    "area": "greensboro",
+    "status": "not_found",
+    "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Checked 2026-11-19. No licensee found for 'Integrated Openings', 'Openings' (only Total Openings, LLC), 'B A Hoft', 'B.A. Hoft', 'BA Hoft', or Raleigh phone 919-596-4446. A 'Hoft' search returned only an inactive qualifier record (Q.24964, Donald C. Bernhoft), which is a different name. The company may hold a license under another legal or parent name not found here. Company page (https://integratedopenings.com/locations/raleigh/) names it Integrated Openings Solutions, LLC (HQ Olathe, KS), with the Raleigh branch focused on commercial doors, frames, hardware, access control and washroom accessories. Toilet partitions aren't mentioned. NC GC license applies only at or above the $40,000 threshold."
+   },
+   "score": 63
+  },
+  {
+   "name": "CCI Door & Hardware, Inc.",
+   "base_city": "Roanoke",
+   "state": "VA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://www.ccidoor.com/",
+   "phone": "(540) 342-4645",
+   "evidence_urls": [
+    "https://www.ccidoor.com/"
+   ],
+   "partition_evidence": "Homepage describes the company as a supplier and commercial installer of 'toilet partitions for restrooms'; 'All Commercial Work'.",
+   "red_flags": [
+    "Virginia-based (about 95 miles); site does not mention serving North Carolina",
+    "Contact page URL returned 404; email obfuscated"
+   ],
+   "reason": "Clearly a commercial partition supplier and installer, but its site names no North Carolina service. It is in range only if it confirms it works in the Triad.",
+   "added_by_checker": false,
+   "license": {
+    "name": "CCI Door & Hardware, Inc.",
+    "area": "greensboro",
+    "status": "not_found",
+    "registry": "North Carolina Licensing Board for General Contractors, public license search (portal.nclbgc.org/Public/Search)",
+    "license_type": "NC general contractor license (required when the whole project is $40,000 or more, G.S. 87-1)",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Checked 2026-11-19. The Greensboro area is in North Carolina. The NCLBGC public search returned 'No results found for search criteria' for the company names 'CCI Door', 'Door & Hardware' and 'Door and Hardware' and for the company phone 540-342-4645. Searching 'C C I' and 'C.C.I.' returned only an unrelated inactive licensee. Searching 'Croy' turned up no Croy Contracting, Inc., the Roanoke company a Blue Book listing (seen only in a search snippet, not opened) names as the operator of CCI Door. A Roanoke, VA city filter returned many companies, none of them CCI or a door company. As a result, CCI holds no NC GC license under this name, so it can take Greensboro jobs only under $40,000, unless it holds an NC license under another entity name. Greensboro's local rule is a $2,000 contractor bond for state-licensed contractors pulling certain permits (\u00a7 6-4). Not confirmed for this company. Company site (https://www.ccidoor.com/): based in Roanoke, VA; commercial door, frame and hardware work; calls itself a 'commercial installer of' toilet partitions; claims a Virginia 'Class A Contractor License' with no number shown; company phone (540) 342-4645."
+   },
+   "score": 60
+  },
+  {
+   "name": "US Doorways Inc",
+   "base_city": "Garner",
+   "state": "NC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "website": "http://www.usdoorways.com/",
+   "phone": "919-861-6340",
+   "contact_page": "https://www.usdoorways.com/contact.html",
+   "evidence_urls": [
+    "http://www.usdoorways.com/",
+    "https://www.usdoorways.com/contact.html",
+    "https://www.usdoorways.com/services.html"
+   ],
+   "partition_evidence": "Homepage lists toilet partitions and toilet accessories among products; services page lists 'quality installation' generally, not partitions specifically.",
+   "red_flags": [
+    "No service area stated; Garner is about 80 miles from Greensboro",
+    "Page title references Jacksonville, NC (location unclear)",
+    "Sells partitions (buy-around risk)"
+   ],
+   "reason": "Commercial door and specialties supplier that sells toilet partitions and offers installation in general. Partition installation and Triad coverage are unconfirmed.",
+   "added_by_checker": false,
+   "license": {
+    "name": "US Doorways Inc",
+    "area": "greensboro",
+    "status": "not_found",
+    "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Checked 2026-11-19. No licensee found for 'US Doorways', 'U S Doorways', 'U.S. Doorways', 'USDoorways', or 'Doorways' (contains-match). Company site (http://www.usdoorways.com/) shows US Doorways, Inc. (copyright 2007-2012, so possibly outdated). It lists toilet partitions, toilet accessories, steel and wood doors, frames, hardware and fire extinguisher cabinets. The page title says Jacksonville, NC, while the BBB link points to Garner, NC. No phone appears on the homepage. NC GC license applies only at or above the $40,000 threshold."
+   },
+   "score": 40
+  },
+  {
+   "name": "Macade, Inc.",
+   "base_city": "Clayton",
+   "state": "NC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/803422/macade-inc/subcontractors/"
+   ],
+   "partition_evidence": "Blue Book subcontractor listing (seen only as a search summary; page returned 403) lists Division 8 and 10 work including toilet partitions and accessories.",
+   "red_flags": [
+    "No website found",
+    "Blue Book page could not be read directly",
+    "Clayton is about 85 miles away; no Triad service stated"
+   ],
+   "reason": "Listed as a Division 10 subcontractor covering toilet partitions, but only a search summary was seen. It has no website and no stated Triad coverage.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Macade, Inc.",
+    "area": "greensboro",
+    "status": "not_found",
+    "registry": "North Carolina Licensing Board for General Contractors, Verify License/Qualifier Search (portal.nclbgc.org)",
+    "source_url": "https://portal.nclbgc.org/Public/Search",
+    "note": "Checked 2026-11-19. No licensee found for 'Macade' or 'Macade, Inc.', including with 'like sounding names' on. No website was given, so no phone or alternate name was available to search. Base city given as Clayton, NC. NC GC license applies only at or above the $40,000 threshold, so its absence doesn't show non-compliance for smaller partition jobs."
+   },
+   "score": 40
+  },
+  {
+   "name": "Berl's Commercial Supply",
+   "base_city": "Mooresville",
+   "state": "NC",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "ASI Global Partitions",
+    "Bradley",
+    "Hadrian",
+    "Metpar"
+   ],
+   "website": "https://berls.com/partitions",
+   "phone": "(704) 937-2673",
+   "email": "sales@berls.com",
+   "evidence_urls": [
+    "https://berls.com/partitions"
+   ],
+   "partition_evidence": "Partitions page sells and quotes partitions; no mention of installation.",
+   "red_flags": [
+    "Partition seller (competitor / buy-around risk)",
+    "No installation service stated"
+   ],
+   "reason": "A partition supplier that quotes and sells. No installation is stated, so it is a competitor, not an installer.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 23
+  },
+  {
+   "name": "LockersNMore, LLC",
+   "base_city": "Charlotte",
+   "state": "NC",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://lockersnmore.com/",
+   "phone": "704-440-4070",
+   "contact_page": "https://lockersnmore.com/contact-us/",
+   "evidence_urls": [
+    "https://lockersnmore.com/"
+   ],
+   "partition_evidence": "Describes itself as a nationwide 'Storage Lockers and Toilet Partitions Distributor'; installation not mentioned.",
+   "red_flags": [
+    "Distributor and competitor (buy-around risk)",
+    "No installation service stated"
+   ],
+   "reason": "A nationwide partition distributor with no stated installation service.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 23
+  },
+  {
+   "name": "RepSouth",
+   "base_city": "Pineville",
+   "state": "NC",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://repsouth.com/",
+   "phone": "704.525.3043",
+   "email": "marketing@repsouth.com",
+   "contact_page": "https://repsouth.com/contact/",
+   "evidence_urls": [
+    "https://repsouth.com/"
+   ],
+   "partition_evidence": "Manufacturers' rep listing toilet partitions under Architectural Specialties; not an installer.",
+   "red_flags": [
+    "Manufacturers' representative, not an installer"
+   ],
+   "reason": "A manufacturers' rep firm covering NC and SC that sells to wholesalers and contractors. It does not install.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 23
+  },
+  {
+   "name": "Preferred Bath Accessories Inc",
+   "base_city": "Kernersville",
+   "state": "NC",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "unknown",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [
+    "Preferred Bath Accessories (VersaBath, Versa Mount)"
+   ],
+   "website": "http://www.preferredbathinc.com/",
+   "phone": "336-904-2163",
+   "email": "sales@preferredbathinc.com",
+   "contact_page": "https://www.preferredbathinc.com/quote",
+   "evidence_urls": [
+    "http://www.preferredbathinc.com/"
+   ],
+   "partition_evidence": "None; sells grab bars and bath accessories only.",
+   "red_flags": [
+    "Bath accessory products seller; no partitions or installation"
+   ],
+   "reason": "Sells its own bath accessory product lines. Partitions and installation are not mentioned.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 15
+  },
+  {
+   "name": "Simco Building Products",
+   "base_city": "Kernersville",
+   "state": "NC",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "unknown",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://simcobp.com/",
+   "phone": "336-904-6512",
+   "email": "Office@simcobp.com",
+   "evidence_urls": [
+    "https://simcobp.com/"
+   ],
+   "partition_evidence": "None; shelving, shower enclosures, mirrors, blinds and bath and door hardware installation.",
+   "red_flags": [
+    "Residential builder products; no partitions"
+   ],
+   "reason": "Installs shelving, shower enclosures, mirrors and hardware. There is no evidence of partition work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 15
+  },
+  {
+   "name": "Elite Specialty Products of NC, LLC",
+   "base_city": "Clemmons",
+   "state": "NC",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "no",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://elitespecialtyproducts.com/",
+   "phone": "336.764.5850",
+   "evidence_urls": [
+    "http://elitespecialtyproducts.com/"
+   ],
+   "partition_evidence": "None; custom closets, shower glass, bath hardware for builders and homeowners.",
+   "red_flags": [
+    "Residential focus"
+   ],
+   "reason": "A residential closet, shower glass and bath hardware installer. Partitions are not mentioned.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 15
+  },
+  {
+   "name": "Division 10",
+   "base_city": "Raleigh",
+   "state": "NC",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "website": "http://www.div10csi.com/",
+   "evidence_urls": [
+    "http://www.div10csi.com/"
+   ],
+   "partition_evidence": "None seen; site returned HTTP 503 twice and a search found no other page.",
+   "red_flags": [
+    "Website down (503)",
+    "No verifiable information"
+   ],
+   "reason": "Could not verify anything: website unavailable and no other source found.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

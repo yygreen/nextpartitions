@@ -1,0 +1,244 @@
+{
+ "area": "baton-rouge",
+ "found_count": 6,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/baton-rouge.json: worked; 5 plausible businesses opened (EF Specialties, Werco, X Specialties, Delco, Himmel's; Reigning Glass does glass office partitions only and was dropped)",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads, but results come from a dropdown, so no Louisiana reps could be read",
+  "ASI Global Partitions find-a-rep: 404 page not found",
+  "Hadrian sales rep locator: 404 page not found",
+  "Scranton Products find-a-distributor: 404 page not found",
+  "Bradley, Metpar, General Partitions, Ampco/Ammco locators: not tried (fetch budget spent on the locators above, which failed)",
+  "The Blue Book (thebluebook.com search and iProView pages): blocked, 403",
+  "BuildingConnected / Procore public profiles: not tried",
+  "WebSearch (8 of 8 used): 'toilet partition installation Baton Rouge', Division 10 Louisiana, restroom partitions Baton Rouge/Gonzales/Denham Springs, 'furnish and install' Baton Rouge, New Orleans/Lafayette installers, Exeter of Louisiana, Partitions Inc. Byram. These found mostly vendors (One Point Partitions, an online seller whose pages return 403), state bid PDFs and BBB category pages",
+  "BBB partition category pages (Baton Rouge, Hammond): worked; added Exeter of Louisiana. Partitions, Inc. (Byram, MS) and Jackson Contractors (Brandon, MS) were dropped as more than 120 miles away with no stated Louisiana service",
+  "Lemoine Company (Lafayette) job posting mentioning toilet partition installation: link returned 404, so not verified and not included"
+ ],
+ "candidates": [
+  {
+   "name": "Himmel's Architectural Door & Hardware",
+   "base_city": "Prairieville",
+   "state": "LA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [
+    "Bobrick",
+    "ASI",
+    "GAMCO"
+   ],
+   "phone": "225-673-8777",
+   "website": "https://www.himmels.com/",
+   "contact_page": "https://www.himmels.com/request-a-quote",
+   "review_source": "BBB A+ letter rating (not accredited), no review count shown",
+   "evidence_urls": [
+    "https://www.himmels.com/",
+    "https://www.himmels.com/product/division-10",
+    "https://sites.google.com/view/himmels-commercial-door-repair/home",
+    "https://www.bbb.org/us/la/hammond/category/partition"
+   ],
+   "partition_evidence": "Its commercial doors page says that for 'installing a toilet partition, Himmel's has the certified installer to meet your needs on staff'. The main site lists 'Toilet Partitions & Accessories' (Division 10) and 'Installation & Maintenance' services.",
+   "red_flags": [
+    "Distributes Bobrick and ASI partitions itself, so it could sell around us",
+    "Mainly a door and hardware company"
+   ],
+   "reason": "A commercial Division 8/10 distributor in Prairieville, about 15 miles from Baton Rouge, with branches in New Orleans, Houston, Dallas and Nashville. It says it has a certified toilet partition installer on staff. It also supplies partitions, so the buy-around risk is high.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Himmel's Architectural Door & Hardware",
+    "area": "baton-rouge",
+    "status": "found_active",
+    "registry": "Louisiana State Licensing Board for Contractors (LSLBC) public search, by name",
+    "license_number": "CL.30245",
+    "license_type": "Commercial License Certificate",
+    "source_url": "https://arlspublic.lslbc.louisiana.gov/Public/DetailedSearch/ByName",
+    "note": "Record shows HIMMEL'S ARCHITECTURAL DOOR & HARDWARE, L.L.C., Prairieville LA: status Active, effective 08/16/2024, expires 08/15/2027, first issued 08/15/1996. Classifications: Tower Construction, Carpentry, Limited Specialty Services. Phone on the record is (225) 673-8777. Checked 2026-11-20 with the name search 'Himmel'. Details came from the search's account-details view (/Public/_DisplayOnlineDetails/), which the search page loads via AJAX, so there is no stable per-record URL."
+   },
+   "score": 80
+  },
+  {
+   "name": "Elkins Fontenot Building Specialties",
+   "base_city": "Baton Rouge",
+   "state": "LA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(225) 239-5886",
+   "email": "Info@efspecialties.com",
+   "contact_page": "https://www.efspecialties.com/",
+   "website": "https://www.efspecialties.com/",
+   "evidence_urls": [
+    "https://www.efspecialties.com/",
+    "https://www.efspecialties.com/about-us"
+   ],
+   "partition_evidence": "Lists restroom partitions, washroom accessories, lockers and other Division 10 products, and says 'SERVICE IS OUR SPECIALTY'. Installation is never mentioned.",
+   "red_flags": [
+    "Supplies partitions itself (buy-around risk)",
+    "Installation not stated",
+    "The site is thin (2019 copyright)"
+   ],
+   "reason": "A Baton Rouge Division 10 specialties firm that serves Louisiana and Mississippi and supplies restroom partitions. It doesn't say whether it installs them, so call to confirm.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Elkins Fontenot Building Specialties",
+    "area": "baton-rouge",
+    "status": "found_active",
+    "registry": "Louisiana State Licensing Board for Contractors (LSLBC) public search, by name",
+    "license_number": "CL.69516",
+    "license_type": "Commercial License Certificate",
+    "source_url": "https://arlspublic.lslbc.louisiana.gov/Public/DetailedSearch/ByName",
+    "note": "Record shows Elkins Fontenot Building Specialties LLC, Baton Rouge LA: status Active, Limited Specialty Services classification, first issued 01/17/2020. The record lists effective date 01/18/2027 and expiration 01/17/2030 (as shown on the record; the effective date is after today, which suggests a renewal posted early). Phone on the record is (225) 239-5886. Checked 2026-11-20."
+   },
+   "score": 65
+  },
+  {
+   "name": "Delco Material Handling Inc",
+   "base_city": "Kenner",
+   "state": "LA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "(504) 712-3388",
+   "email": "delco@bellsouth.net",
+   "contact_page": "https://www.delcomaterialhandlingla.com/contact-us",
+   "website": "https://www.delcomaterialhandlingla.com/",
+   "evidence_urls": [
+    "https://www.delcomaterialhandlingla.com/",
+    "https://www.delcomaterialhandlingla.com/restroom-partitions",
+    "https://www.delcomaterialhandlingla.com/contact-us"
+   ],
+   "partition_evidence": "Its restroom partitions page offers 'specialized restroom partition services' for 'a new installation or a retrofit of existing restrooms', in plastic laminate, powder-coated steel, solid plastic, phenolic and stainless steel, with ADA guidance.",
+   "red_flags": [
+    "Partition distributor, so it could sell around us",
+    "No manufacturer brands named",
+    "Uses a bellsouth.net email address"
+   ],
+   "reason": "A commercial partition distributor in Kenner, about 65 miles away, that says it serves New Orleans, Baton Rouge, Lafayette and surrounding areas. Its site covers both new partition installs and retrofits. It sells partitions itself.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Delco Material Handling Inc",
+    "area": "baton-rouge",
+    "status": "not_found",
+    "registry": "Louisiana State Licensing Board for Contractors (LSLBC) public search, by name",
+    "source_url": "https://arlspublic.lslbc.louisiana.gov/Public/DetailedSearch/ByName",
+    "note": "'Delco' returned only Delco Construction LLC (Dermott AR), Delco Contractors, Inc. (Keithville LA) and Delco Services LLC (Thibodaux LA), none in Kenner. 'Delco Material' and 'Delco Mat' returned nothing. The company site (https://www.delcomaterialhandlingla.com/) shows Kenner LA, lists restroom partitions (plastic laminate, solid plastic, phenolic, stainless) and serves Baton Rouge, but shows no license number. The site doesn't say clearly whether the company installs. The LSLBC search lists only current licensees. Checked 2026-11-20."
+   },
+   "score": 63
+  },
+  {
+   "name": "WERCO Building Specialties, Inc.",
+   "base_city": "Baton Rouge",
+   "state": "LA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Scranton Products",
+    "Accurate Partitions",
+    "Penco Products",
+    "AARCO"
+   ],
+   "phone": "(225) 927-8376",
+   "contact_page": "http://www.wercospecs.com/contact-us/",
+   "website": "http://www.wercospecs.com/",
+   "review_source": "BBB A+ letter rating, accredited; no review count shown",
+   "evidence_urls": [
+    "http://www.wercospecs.com/",
+    "http://www.wercospecs.com/about-us/",
+    "http://www.wercospecs.com/contact-us/",
+    "https://www.bbb.org/us/la/category/partition"
+   ],
+   "partition_evidence": "Toilet partitions are the first product category it lists, and it represents Bobrick, Bradley and Scranton among others. It describes itself as a 'wholesale supplier of Division 10 Specialties' and says nothing about installation.",
+   "red_flags": [
+    "Wholesale distributor of the same brands Next Partitions resells (strong buy-around and competitor risk)",
+    "No installation services stated"
+   ],
+   "reason": "A large Baton Rouge Division 10 wholesale distributor that carries partitions from Bobrick, Bradley and Scranton. Installation isn't shown, and it is more of a competitor than an installer.",
+   "added_by_checker": false,
+   "license": {
+    "name": "WERCO Building Specialties, Inc.",
+    "area": "baton-rouge",
+    "status": "not_found",
+    "registry": "Louisiana State Licensing Board for Contractors (LSLBC) public search, by name",
+    "source_url": "https://arlspublic.lslbc.louisiana.gov/Public/DetailedSearch/ByName",
+    "note": "No results for 'WERCO', 'Werco' or 'W.E.R.C.O', and it isn't among the 'Building Specialties' matches. The LSLBC search lists only currently licensed or registered contractors (https://lslbc.louisiana.gov/contractor-search/). The company website (http://www.wercospecs.com/) gives the name as Werco Building Specialties, Inc., Baton Rouge, as a Bobrick and Bradley distributor and shows no license number. Louisiana requires a commercial license only above the $50,000 threshold, so the company may be working below it or as a supplier only. Confirm with LSLBC before listing. Checked 2026-11-20."
+   },
+   "score": 50
+  },
+  {
+   "name": "X Specialties",
+   "base_city": "unknown (225 area code, Baton Rouge region)",
+   "state": "LA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "225.367.0441",
+   "email": "contact@xspecialties.com",
+   "contact_page": "https://www.xspecialties.com/contact",
+   "website": "https://www.xspecialties.com/",
+   "evidence_urls": [
+    "https://www.xspecialties.com/",
+    "https://www.xspecialties.com/about",
+    "https://www.xspecialties.com/contact"
+   ],
+   "partition_evidence": "Its about page lists 'Toilet Partitions' and offers 'Division 10 supply', handling every detail from bidding to closeout documents. Installation is not stated.",
+   "red_flags": [
+    "The site gives no base city or address",
+    "Supplies partitions (buy-around risk)",
+    "Visible email (a named person's address) doesn't match the mailto link (contact@)"
+   ],
+   "reason": "A Division 10 supplier and service provider with a 225 (Baton Rouge) phone number that lists toilet partitions. Neither installation nor its location is confirmed.",
+   "added_by_checker": false,
+   "license": {
+    "name": "X Specialties",
+    "area": "baton-rouge",
+    "status": "not_found",
+    "registry": "Louisiana State Licensing Board for Contractors (LSLBC) public search, by name",
+    "source_url": "https://arlspublic.lslbc.louisiana.gov/Public/DetailedSearch/ByName",
+    "note": "No results for 'X Specialties', 'XSpecialties' or 'X-Specialties'. 'X Spec' returned only unrelated firms (SWX Specialtyworx LLC, Tangeaux Specialty Services, Techniquex Specialty Flooring). The website (https://www.xspecialties.com/) gives no legal name, city or license number, only a 225 phone number and 'Division 10 Specialties'. A web search found no business registration. The legal name is unknown, so a license under another name can't be ruled out. Checked 2026-11-20."
+   },
+   "score": 50
+  },
+  {
+   "name": "Exeter Of Louisiana, Inc.",
+   "base_city": "Hammond",
+   "state": "LA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "phone": "(800) 213-2575",
+   "review_source": "BBB A+ letter rating (not accredited)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/la/hammond/category/partition"
+   ],
+   "partition_evidence": "BBB lists it under the 'Partitions' category only, with no description. No company website was found.",
+   "red_flags": [
+    "No website found",
+    "No service description",
+    "Hammond is about 45 miles away, and nothing says it serves Baton Rouge"
+   ],
+   "reason": "The only evidence is a BBB category listing under 'Partitions'. Nothing shows toilet partition installation or its service area. A phone check is worth it before dropping it fully.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

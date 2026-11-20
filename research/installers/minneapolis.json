@@ -1,0 +1,206 @@
+{
+ "area": "minneapolis",
+ "found_count": 6,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/minneapolis.json: read (58 maps, 28 web). Most results were remodelers, glass shops and stores. The web results were Google redirect URLs without domains, so they couldn't be opened.",
+  "Company sites fetched: bartleysales.com worked (home, vendors, contact); goldenvalleysupply.com worked; bensonclaugherty.com worked; pinnaclewall.com worked (drywall and plaster only, no partitions, excluded); commercialfixtures.com worked (casework, no partitions, excluded); montaggio.net worked (hardware showroom, excluded); vipbathrooms.com worked (residential remodeler, excluded)",
+  "Bobrick find-a-rep: page loads, but the rep list is built by JavaScript (ajax), so no Minnesota reps could be read",
+  "Scranton Products find-a-rep: 404 at the URLs tried",
+  "ASI (asi-accurate.com) locator: proxy 502",
+  "Hadrian, Bradley locators: fetched, but no Minnesota entries in the static HTML",
+  "Metpar, General Partitions, Ampco/Ammco locators: not reached before the search budget ran out",
+  "The Blue Book (thebluebook.com search and iProView pages): blocked, 403",
+  "BuildingConnected / Procore network: not tried (budget)",
+  "Crunchbase: blocked, 403",
+  "MapQuest listing (Tekton Construction): fetch returned an empty page",
+  "cbxsolutions.com branch page: blocked, 403",
+  "onepointpartitions.com: blocked, 403 (online supplier with a New Brighton delivery terminal, sells for DIY install; excluded as a non-installer)",
+  "thepartitionpros.com/service-areas/minnesota: worked (national supplier with no Minnesota office and an unnamed installer network; excluded)",
+  "kendelldoors.com: host not allowed by this session's network settings (ENOTFOUND)",
+  "tektoncon.com, specialtyinstall.com: 503 / JavaScript-only, and not confirmed to be the businesses in question",
+  "WebSearch: all 8 calls used. The queries covered Minneapolis toilet partition installation, Division 10 in MN, Harris-Billings, Tekton, Specialty Install Northfield, and installers in the suburbs. Results were mostly national suppliers; Yelp and BBB pages never came up.",
+  "Seed leads not pursued: Vertical Wall Systems (Brooklyn Park, modular walls) and Specialty Install (Northfield, about 40 miles out, outside the 30-mile radius). Neither showed partition work."
+ ],
+ "candidates": [
+  {
+   "name": "Benson-Claugherty Contracting",
+   "base_city": "Maplewood",
+   "state": "MN",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://bensonclaugherty.com/",
+   "phone": "(651) 313-5766",
+   "email": "Admin@BensonClaugherty.com",
+   "contact_page": "https://bensonclaugherty.com/contact-us",
+   "evidence_urls": [
+    "https://bensonclaugherty.com/",
+    "https://bensonclaugherty.com/contact-us",
+    "https://bensonclaugherty.com/services",
+    "https://bensonclaugherty.com/gallery"
+   ],
+   "partition_evidence": "Homepage service list includes 'Bathroom Partitions and Accessories' under Specialty Items, alongside casework, millwork, doors and frames.",
+   "reason": "DBE/MBE/SBE certified commercial carpentry contractor in Maplewood (about 10 miles from the center) that lists bathroom partitions and accessories among its services. No project photos or brands could be read, so ask for partition references during vetting.",
+   "red_flags": [
+    "Gallery and services pages returned no readable project detail; no partition project photos seen",
+    "Specialty items are a side line to carpentry, doors and hardware"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Benson-Claugherty Contracting",
+    "area": "minneapolis",
+    "status": "found_active",
+    "registry": "Minnesota Department of Labor and Industry, Contractor Registrations data export (official nightly CSV linked from dli.mn.gov/license-and-registration-lookup)",
+    "license_type": "Contractor Registration (Business Entity)",
+    "license_number": "IR758905",
+    "source_url": "https://secure.doli.state.mn.us/ccld/data/MNDLILicRegCertExport_Contractor_Registrations.csv",
+    "note": "Checked 2026-11-19. Record name 'Benson Claugherty Contracting Inc', city Maplewood MN, status Issued, original date 07/19/2019, expires 12/31/2027, enforcement action flag 0. No match in the DLI Residential Contractors export (not needed for commercial partition work). City of Minneapolis license class for partition installation not checked: no public Minneapolis contractor registry was read, so confirm with Minneapolis Construction Code Services."
+   },
+   "score": 85
+  },
+  {
+   "name": "Bartley Sales Co",
+   "base_city": "St. Louis Park (site address reads Minneapolis, MN 55426)",
+   "state": "MN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Accurate Partitions",
+    "Bobrick",
+    "Bradley",
+    "Hadrian",
+    "Ironwood Mfg.",
+    "Scranton Products"
+   ],
+   "website": "http://www.bartleysales.com/",
+   "phone": "952.929.0001",
+   "contact_page": "http://www.bartleysales.com/contact.html",
+   "evidence_urls": [
+    "http://www.bartleysales.com/",
+    "http://www.bartleysales.com/toiletcomp.html",
+    "http://www.bartleysales.com/contact.html"
+   ],
+   "partition_evidence": "Homepage: Division 10 distributor since 1928 that 'also offers product installation if you require a turnkey service'; Toilet Compartments page lists six manufacturers but doesn't mention installation itself.",
+   "reason": "Established Division 10 distributor that sells toilet compartments (including Bobrick and Bradley) and offers installation of its products, but partition installation isn't shown specifically. As a direct seller of the same brands, it's a big risk of buying around us.",
+   "red_flags": [
+    "Distributor that sells toilet partitions itself (Bobrick, Bradley, Scranton and others): high buy-around risk",
+    "No email on contact page"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Bartley Sales Co",
+    "area": "minneapolis",
+    "status": "found_active",
+    "registry": "Minnesota Department of Labor and Industry, Contractor Registrations data export (official nightly CSV linked from dli.mn.gov/license-and-registration-lookup)",
+    "license_type": "Contractor Registration (Business Entity)",
+    "license_number": "IR656363",
+    "source_url": "https://secure.doli.state.mn.us/ccld/data/MNDLILicRegCertExport_Contractor_Registrations.csv",
+    "note": "Checked 2026-11-19. Record name 'BARTLEY SALES COMPANY INC.', city St Louis Park MN (ZIP 55426, matches site), status Issued, original date 09/25/2012, expires 12/31/2027, enforcement action flag 0. No match in the DLI Residential Contractors export. Minneapolis city license not checked (no public city registry read); confirm with Minneapolis Construction Code Services."
+   },
+   "score": 65
+  },
+  {
+   "name": "Golden Valley Supply Co",
+   "base_city": "Minneapolis",
+   "state": "MN",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://goldenvalleysupply.com/",
+   "phone": "763.544.8907",
+   "contact_page": "https://goldenvalleysupply.com/contact-us/",
+   "evidence_urls": [
+    "https://goldenvalleysupply.com/"
+   ],
+   "partition_evidence": "Distributor of interior finish materials and Division 10 specialties ('partitions, restroom elements'); no installation service mentioned.",
+   "reason": "Supplier only. It distributes partitions and doesn't offer installation, and selling partitions makes it a competitor rather than an installer.",
+   "red_flags": [
+    "Sells partitions (competitor/buy-around risk)",
+    "No installation services listed"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "CBX Solutions 630 (Cook & Boardman) - Minneapolis branch",
+   "base_city": "Minneapolis",
+   "state": "MN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.cbxsolutions.com/branches/minneapolis-630/",
+   "evidence_urls": [
+    "https://www.cbxsolutions.com/branches/minneapolis-630/",
+    "https://www.cbxsolutions.com/specialty-solutions/"
+   ],
+   "partition_evidence": "Not verified: both the branch page and the specialty-solutions page returned 403. The old Cook & Boardman URL now redirects to CBX's specialty solutions.",
+   "reason": "Building-material supply branch of a national door, hardware and specialties distributor. Its pages blocked automated access, so no partition installation could be confirmed.",
+   "red_flags": [
+    "Website blocked access (403); nothing verified",
+    "Likely a distributor rather than an installer"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Tekton Construction",
+   "base_city": "Minneapolis",
+   "state": "MN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "",
+   "evidence_urls": [
+    "https://www.mapquest.com/us/minnesota/tekton-construction-372029806"
+   ],
+   "partition_evidence": "Only from search-result snippets of a MapQuest listing ('installation of toilet partitions, lockers and benches'). The listing page itself returned no content, and no company website was found.",
+   "reason": "No company website, and the only evidence is a directory listing that search snippets describe as 'Closed'. Could be worth one phone check, but there's nothing here to list it on.",
+   "red_flags": [
+    "Directory listing reportedly marked 'Closed'",
+    "No company website found",
+    "Partition claim not read on any page directly"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "The Harris-Billings Co., Inc",
+   "base_city": "Plymouth",
+   "state": "MN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "",
+   "evidence_urls": [],
+   "partition_evidence": "None found; two searches returned no website or listing for this name.",
+   "reason": "No website, listing or project evidence found for this business, so it can't be verified as a real partition installer.",
+   "red_flags": [
+    "No online presence found"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

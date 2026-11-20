@@ -1,0 +1,324 @@
+{
+ "area": "stockton",
+ "found_count": 9,
+ "sources_tried": [
+  "Seed file stockton.json: worked. Of the Maps results, only JD Specialties, Demar Specialties and KD Specialty Contractors were relevant; the rest are remodelers, plumbers, stores and portable toilets.",
+  "Bobrick Find a Rep (bobrick.com/find-a-rep): page loads but the locator results are dynamic, so no reps could be read",
+  "Scranton Products rep locator: 404",
+  "Hadrian where-to-buy: 404",
+  "ASI, Bradley, Metpar, General Partitions, Ampco locators: not tried (fetch budget spent on direct sites)",
+  "The Blue Book iProView pages (Commercial Specialties Contracting, Delta Specialties, Consolidated Partitions, Partition Plus): 403 blocked; I used the search snippets only",
+  "BuildingConnected / Procore network: not fetched; Procore Stockton pages appeared in search but weren't opened",
+  "WebSearch: used all 8 calls; it found Commercial Specialties Contracting, Delta Specialties, Stumbaugh, Magnum Drywall and Consolidated Partitions",
+  "BBB partition category pages (Holt, Galt): worked. They found Commercial Restroom Solutions (NV); the others there are a janitorial supply store and a Fresno distributor, both skipped",
+  "prelien.co CSLB mirror: worked. It confirmed JD Specialties' license; Toilet Partitions Experts (Santa Ana), Partitions and Specialty Pros (Chino) and Harrigan's (Rancho Cucamonga) hold C-61/D-34 but are in Southern California, out of range, so I excluded them",
+  "sacvalleycontractors.com: 429 rate limited",
+  "onepointpartitions.com: 403. Snippets say it is an online supplier with Modesto, Stockton and West Sacramento delivery terminals that does not install, so I excluded it",
+  "deltaspecialtiesinc.com: host did not resolve (guessed domain, may not exist)",
+  "atozstores.com (KD Specialty's listed site): 307 redirect, not readable"
+ ],
+ "candidates": [
+  {
+   "name": "JD Specialties",
+   "base_city": "Stockton",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Hadrian",
+    "Accutec",
+    "Scranton",
+    "Koala Kare",
+    "Bradley",
+    "ASI",
+    "GAMCO"
+   ],
+   "website": "http://www.jdspecialtiesco.com/",
+   "phone": "(209) 467-0324",
+   "email": "jdspecialtiesco@sbcglobal.net",
+   "contact_page": "http://www.jdspecialtiesco.com/",
+   "partition_evidence": "Home page: 'Specialize in the Sales & Installation of Commercial Toilet Partitions'; gallery photos of Hadrian, Accutec, Bobrick and Scranton stalls 'taken by our Installers just after finishing installation'.",
+   "evidence_urls": [
+    "http://www.jdspecialtiesco.com/",
+    "http://www.jdspecialtiesco.com/gallery.html"
+   ],
+   "red_flags": [
+    "Stocking distributor of Bobrick and Hadrian partitions: sells partitions itself (buy-around risk)",
+    "Dated website; no ratings seen"
+   ],
+   "reason": "Stockton-based commercial toilet partition sales and installation firm serving Northern California, with install photos. Also a partition distributor, so buy-around risk is high.",
+   "added_by_checker": false,
+   "license": {
+    "name": "JD Specialties",
+    "area": "stockton",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "1128308",
+    "license_type": "B General Building; C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/1128308",
+    "note": "CSLB record checked 2026-11-19: B & T SPECIALTIES INC dba JD SPECIALTIES, Stockton, corporation, issued 10/28/2024, expires 10/31/2028, 'current and active'. The third-party prelien.co page showed it as expired 10/31/2026; the official record shows it renewed. Company phone (209) 467-0324 per http://www.jdspecialtiesco.com/. Stockton city business license tax: not checked online."
+   },
+   "score": 85
+  },
+  {
+   "name": "Demar Specialties, LLC",
+   "base_city": "Manteca",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "ASI Group",
+    "Bradley",
+    "Scranton Products",
+    "JL Industries",
+    "Hallowell",
+    "Metpar"
+   ],
+   "website": "https://www.demarspecialties.com/",
+   "contact_page": "https://www.demarspecialties.com/contact-us",
+   "partition_evidence": "Home page: full Division 10 subcontractor that supplies and installs; toilet partitions listed first; furnish-and-install or supply-only.",
+   "evidence_urls": [
+    "https://www.demarspecialties.com/",
+    "https://www.demarspecialties.com/contact-us"
+   ],
+   "red_flags": [
+    "Authorized distributor that also sells supply-only (buy-around risk)",
+    "No phone or email on site, contact form only"
+   ],
+   "reason": "Manteca-based commercial Division 10 subcontractor that furnishes and installs toilet partitions for Northern/Central California and Reno. Site lists CA license #1062277 (dba Demar Prefabricated Equipment).",
+   "added_by_checker": false,
+   "license": {
+    "name": "Demar Specialties, LLC",
+    "area": "stockton",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "1062277",
+    "license_type": "C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/1062277",
+    "note": "CSLB record checked 2026-11-19: DEMAR SPECIALTIES LLC dba DEMAR PREFABRICATED EQUIPMENT, Ripon CA (CSLB address city; the brief said Manteca), LLC, issued 01/13/2020, expires 01/31/2028, 'current and active'. Workers' comp with State Compensation Insurance Fund through 12/07/2026. The license number appears on https://www.demarspecialties.com/. Stockton city business license tax not checked."
+   },
+   "score": 85
+  },
+  {
+   "name": "Stumbaugh & Associates, Inc. (Northern California office)",
+   "base_city": "West Sacramento",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://www.stumbaugh.com/",
+   "phone": "650-999-0700",
+   "contact_page": "https://www.stumbaugh.com/contact",
+   "partition_evidence": "Home page: supply of bathroom partitions with professional installation tailored to each project; about page calls it a Division 10 contractor/sub-contractor.",
+   "evidence_urls": [
+    "https://www.stumbaugh.com/",
+    "https://www.stumbaugh.com/services",
+    "https://www.stumbaugh.com/about"
+   ],
+   "red_flags": [
+    "Supplies partitions itself (buy-around risk)",
+    "Large statewide subcontractor focused on GC bids; may not want small referral jobs"
+   ],
+   "reason": "California Division 10 subcontractor that supplies and installs bathroom partitions, with a Northern California office in West Sacramento (about 45 miles away) and a statewide focus.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Stumbaugh & Associates, Inc. (Northern California office)",
+    "area": "stockton",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "288724",
+    "license_type": "C-61/D24 Metal Products; C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/288724",
+    "note": "CSLB record checked 2026-11-19: STUMBAUGH & ASSOCIATES INC, Burbank (licensed HQ), corporation, issued 11/19/1973, expires 04/30/2028, 'current and active'. Its website https://www.stumbaugh.com/ lists a Northern California office in West Sacramento, phone 650 999-0700. Stockton city business license tax not checked."
+   },
+   "score": 78
+  },
+  {
+   "name": "Magnum Drywall (Division 10 Specialties)",
+   "base_city": "San Jose",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [
+    "Bobrick (accessories)"
+   ],
+   "website": "https://magnumdrywall.com/division-10-specialties/",
+   "phone": "(408) 600-0422",
+   "email": "estimators@magnumdrywall.com",
+   "contact_page": "https://magnumdrywall.com/contact-us/",
+   "partition_evidence": "Division 10 page: 'works with clients to specify and install toilet partitions'.",
+   "evidence_urls": [
+    "https://magnumdrywall.com/division-10-specialties/"
+   ],
+   "red_flags": [
+    "Primarily a drywall contractor; partitions are a side division",
+    "No partition photos or project list seen"
+   ],
+   "reason": "San Jose commercial contractor (about 65 miles away) whose Division 10 group installs toilet partitions and says it serves clients throughout California.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Magnum Drywall (Division 10 Specialties)",
+    "area": "stockton",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "614200",
+    "license_type": "B General Building; C-9 Drywall; C-61/D34 Prefabricated Equipment; also C-61/D50, C33, C35, C-61/D52",
+    "source_url": "https://www.cslb.ca.gov/614200",
+    "note": "CSLB record checked 2026-11-19: MAGNUM DRYWALL INC, San Jose, corporation, issued 03/04/1991, expires 03/31/2027, 'current and active'. The license number and phone (408) 600-0422 appear on https://magnumdrywall.com/division-10-specialties/. Stockton city business license tax not checked."
+   },
+   "score": 78
+  },
+  {
+   "name": "Commercial Specialties Contracting, Inc.",
+   "base_city": "Manteca",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "Blue Book listing (search snippet; page returned 403): installer of doors, millwork, FF&E, accessories and Division 10 specialties; CSI code listed is toilet accessories (10 28 13), not toilet compartments (10 21 13).",
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/807564/commercial-specialties-contracting-inc/material-suppliers/"
+   ],
+   "red_flags": [
+    "No website found",
+    "Partitions not explicitly listed; mainly doors and hardware"
+   ],
+   "reason": "Manteca-based Division 10 and door installer serving Stockton and the Central Valley per a directory listing. Toilet partition work isn't confirmed.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Commercial Specialties Contracting, Inc.",
+    "area": "stockton",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "938817",
+    "license_type": "B General Building; C-61/D28 Doors, Gates and Activating Devices",
+    "source_url": "https://www.cslb.ca.gov/938817",
+    "note": "CSLB: COMMERCIAL SPECIALITIES CONTRACTING INC, Manteca, issued 10/14/2009, expires 07/31/2028, 'current and active'. Stockton city business license tax not checked."
+   },
+   "score": 65
+  },
+  {
+   "name": "Delta Specialties Inc.",
+   "base_city": "unknown (Lodi per seed, unverified)",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "partition_evidence": "Only a Blue Book directory snippet (seen in search results; the page itself returned 403): Division 10 company, est. 2008, serving Northern California with commercial and hotel/motel toilet accessories and toilet partitions.",
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/393371/delta-specialties-inc/material-suppliers/"
+   ],
+   "red_flags": [
+    "No website found",
+    "Base city not confirmed (Lodi unverified); within_area set to regional on the 'serves Northern California' snippet only",
+    "Installation not confirmed"
+   ],
+   "reason": "A Division 10 directory listing names toilet partitions for Northern California, but there's no website, no confirmed base city and no installation evidence.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Delta Specialties Inc.",
+    "area": "stockton",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "932844",
+    "license_type": "C17 Glazing; C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/932844",
+    "note": "CSLB record: DELTA SPECIALTIES INC, Lodi (the seed city is confirmed by the CSLB address), corporation, issued 05/19/2009, expires 05/31/2027, 'current and active'. Matched by name and region. Stockton city business license tax not checked."
+   },
+   "score": 58
+  },
+  {
+   "name": "Consolidated Partitions, Inc.",
+   "base_city": "Hayward",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "regional",
+   "brands": [
+    "Penco",
+    "Kwik-Wall"
+   ],
+   "website": "https://www.consolidatedpartitions.com/",
+   "phone": "(510) 352-3920",
+   "email": "info@consolidatedpartitions.com",
+   "contact_page": "https://www.consolidatedpartitions.com/contact/",
+   "partition_evidence": "Site covers lockers and operable, accordion and wire mesh partitions only; no toilet or restroom partitions.",
+   "evidence_urls": [
+    "https://www.consolidatedpartitions.com/",
+    "https://www.consolidatedpartitions.com/contact/"
+   ],
+   "red_flags": [
+    "Operable wall and locker distributor, not toilet partitions"
+   ],
+   "reason": "The 'partitions' are folding/operable walls and lockers, not toilet partitions.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 28
+  },
+  {
+   "name": "KD Specialty Contractors, Inc.",
+   "base_city": "unknown",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "partition_evidence": "None found.",
+   "evidence_urls": [],
+   "red_flags": [
+    "No website, listing or location found under this name; within_area 'no' because no location could be established"
+   ],
+   "reason": "Couldn't find any public record of this business, its location or its services.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  },
+  {
+   "name": "Commercial Restroom Solutions, LLC",
+   "base_city": "Gardnerville",
+   "state": "NV",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "review_source": "BBB (not accredited, per search snippet)",
+   "partition_evidence": "BBB category listing under partitions and bathroom remodeling only (search snippet); no website or project evidence.",
+   "evidence_urls": [
+    "https://www.bbb.org/us/nv/category/partition"
+   ],
+   "red_flags": [
+    "No website",
+    "Listing says it serves Douglas County, NV; no sign it serves California"
+   ],
+   "reason": "Nevada business about 100+ miles away with no website, no partition installation evidence and no stated California service.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

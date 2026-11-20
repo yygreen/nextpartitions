@@ -1,0 +1,237 @@
+{
+ "area": "colorado-springs",
+ "found_count": 5,
+ "sources_tried": [
+  "Seed file colorado-springs.json: worked. Of the maps entries, only Advanced Contracting and Epic Specialties (plus the related Epic Haus) were relevant. The rest were remodelers, plumbers, glass and countertop shops, handymen and supply stores. Woods Contracting (wireworkscoinc.com) was opened and is residential only, so it was skipped. All web seeds are opaque Google redirect URLs to remodelers and directories, so none were used.",
+  "Existing Denver research (raw/batch-3.json): reused for regional Front Range leads, all re-checked on their own sites in this run.",
+  "Hadrian find-a-rep (guessed URL): 404",
+  "Scranton Products where-to-buy: worked, but it lists only a regional product specialist (Architectural Cornerstone Group, 972 number), not an installer",
+  "Ampco find-a-rep: empty page. Bobrick, ASI, Bradley, Metpar and General Partitions locators: not tried, because the Denver run found them dynamic or 404",
+  "The Blue Book: search and iProView profiles return 403 (blocked)",
+  "BuildingConnected / Procore: not tried (search cap)",
+  "WebSearch: 8 of 8 used. Results were dominated by One Point Partitions SEO pages (an online seller with a Colorado Springs delivery terminal, excluded as a national supplier). Also seen and excluded: Innergy Interiors (El Paso TX, says it serves Colorado but is more than 120 mi away), Unified Specialty Services/UDH Group (no Colorado presence stated), Newton Distributing (national seller), Total Restroom and Sustainable Supply (online sellers).",
+  "Craigslist installer job postings (toilet partitions, travel in CO/WY): 404, employer unknown",
+  "Tallo and iHireConstruction job pages: loaded but didn't show the Division 10 installer job or its employer",
+  "MapQuest listing for Simpson & Simpson Sales & Service (metal toilet partitions, Colorado, per search snippet): host not in allowed network, so it wasn't read or included",
+  "Yelp/BBB: not reached within the search cap. The Denver run found Yelp blocked and no BBB results"
+ ],
+ "candidates": [
+  {
+   "name": "Advanced Contracting LLC",
+   "base_city": "Colorado Springs",
+   "state": "CO",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "719-309-6475",
+   "email": "bids@advancedcontractingllc.com",
+   "contact_page": "https://advancedcontractingllc.com/contact",
+   "website": "https://advancedcontractingllc.com/",
+   "evidence_urls": [
+    "https://advancedcontractingllc.com/",
+    "https://advancedcontractingllc.com/contact",
+    "https://advancedcontractingllc.com/toilet-partitions",
+    "https://advancedcontractingllc.com/gallery"
+   ],
+   "partition_evidence": "Homepage offers 'Division 10 commercial construction products and installation services' with toilet partitions listed and installers statewide; a dedicated toilet partitions page covers materials and mounting styles. The gallery photos have no captions, so no partition project could be confirmed.",
+   "red_flags": [
+    "Supplies partitions itself (buy-around risk)",
+    "No named partition projects or brands on its pages"
+   ],
+   "reason": "Colorado Springs-based, woman-owned commercial Division 10 supplier and installer that lists toilet partitions among the products it supplies and installs. Serves Southern Colorado, Denver Metro and the Western Slope.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Advanced Contracting LLC",
+    "area": "colorado-springs",
+    "status": "not_found",
+    "registry": "Pikes Peak Regional Building Department (PPRBD) Contractor and Mechanic Search",
+    "source_url": "https://www.pprbd.org/Search/ContractorAndMechanic",
+    "license_type": "",
+    "license_number": "",
+    "note": "Checked 2026-11-19. Searches for 'Advanced Contracting' and 'Advanced Contr' returned PPRBD's 'No contractor or mechanic records match this criteria, or their licenses have lapsed.' A broader 'Advanced' search listed about 30 businesses (active, suspended and revoked), none named Advanced Contracting. Colorado has no state general contractor license, so no state lookup applies. PPRBD licenses contractors who pull permits in its jurisdiction. Its license types page (https://www.pprbd.org/Licensing/LicenseTypes) does not mention toilet partitions or say whether subcontractors working under a general contractor's permit need their own license. Ask the installer for its PPRBD license or for how it handles permitted work, and confirm with PPRBD."
+   },
+   "score": 70
+  },
+  {
+   "name": "Epic Specialties",
+   "base_city": "Colorado Springs area (base city not stated; serves Colorado Springs, Denver, Pueblo)",
+   "state": "CO",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Hadrian",
+    "Bobrick",
+    "Bradley",
+    "Scranton",
+    "ASI"
+   ],
+   "phone": "(719) 822-2047",
+   "contact_page": "https://www.epicspecialtiesco.com/contact",
+   "website": "https://www.epicspecialtiesco.com/",
+   "evidence_urls": [
+    "https://www.epicspecialtiesco.com/",
+    "https://www.epicspecialtiesco.com/services",
+    "https://www.epicspecialtiesco.com/contact",
+    "https://www.epicspecialtiesco.com/gallery"
+   ],
+   "partition_evidence": "Calls itself a 'Colorado Division 10: Specialties Supplier & Installer'. Its services page lists bathroom partitions and accessories (Hadrian, Bobrick, Bradley, Scranton, ASI) and says it provides and installs specialties for commercial work.",
+   "red_flags": [
+    "Supplies partitions itself (buy-around risk)",
+    "No base city or street address on the site; the copyright line names EPICHAUS, LLC",
+    "Contact page lists only individual staff emails (Clint@, Marshall@), so no general company email",
+    "Gallery images have no captions"
+   ],
+   "reason": "Small Division 10 supplier and installer that names toilet partition brands and says it serves the Colorado Springs, Denver and Pueblo areas. The legal entity (Epic Haus) should be confirmed during vetting.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Epic Specialties",
+    "area": "colorado-springs",
+    "status": "not_found",
+    "registry": "Pikes Peak Regional Building Department (PPRBD) Contractor and Mechanic Search",
+    "source_url": "https://www.pprbd.org/Search/ContractorAndMechanic",
+    "license_type": "",
+    "license_number": "",
+    "note": "Checked 2026-11-19. A search for 'Epic Spec' returned no records. A broader 'Epic' search listed EPIC CONSTRUCTION INCORPORATED (Centennial), EPIC WEST CONSTRUCTION LLC (Denver), EPIC HVAC, EPIC ELECTRIC and others, but nothing named Epic Specialties, either as a business name or as a DBA. The search covers DBA names too. The legal entity name may differ, so ask the installer for its PPRBD license number. Colorado has no state general contractor license."
+   },
+   "score": 70
+  },
+  {
+   "name": "Colorado Specialties, Inc.",
+   "base_city": "Golden",
+   "state": "CO",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Hadrian",
+    "ASI",
+    "Scranton",
+    "Metpar",
+    "Privada",
+    "Bradley",
+    "Bobrick"
+   ],
+   "phone": "303-595-9627",
+   "email": "estimating@coloradospecialties.com",
+   "contact_page": "https://coloradospecialties.com/contact-us/",
+   "website": "https://coloradospecialties.com/",
+   "evidence_urls": [
+    "https://coloradospecialties.com/",
+    "https://coloradospecialties.com/contact-us/"
+   ],
+   "partition_evidence": "Its construction division estimates and installs toilet partitions, accessories, FRP and wall protection in Colorado and Wyoming. Listed commercial clients include DIA, the FBI Denver Field Office, Children's Hospital and the Denver VA.",
+   "red_flags": [
+    "Stocking wholesale distributor and manufacturers' rep for the same brands we sell (strong buy-around risk)",
+    "Colorado Springs is not named; it says only that it installs in Colorado and Wyoming",
+    "About 65 miles away"
+   ],
+   "reason": "Proven commercial toilet partition installer that serves all of Colorado, about 65 miles north. It is also a major distributor of the same brands, so the buy-around risk is high.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Colorado Specialties, Inc.",
+    "area": "colorado-springs",
+    "status": "not_found",
+    "registry": "Pikes Peak Regional Building Department (PPRBD) Contractor and Mechanic Search",
+    "source_url": "https://www.pprbd.org/Search/ContractorAndMechanic",
+    "license_type": "",
+    "license_number": "",
+    "note": "Checked 2026-11-19. Searches for 'Colorado Specialties' and 'Colorado Spec' returned no records. A 'Specialties' search (it matches anywhere in the name) listed Clark, Electric, LST Interior, On The Level, Pipe Line, Plastering and Replumb Specialties, but not Colorado Specialties. The company is based in Golden, outside PPRBD's area. It may not hold a PPRBD license, or it may work under a general contractor's permit. Colorado has no state general contractor license."
+   },
+   "score": 63
+  },
+  {
+   "name": "Continental Partition Systems, LLC",
+   "base_city": "Frederick",
+   "state": "CO",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "ASI",
+    "Bobrick",
+    "American Specialties"
+   ],
+   "phone": "(303) 396-0200",
+   "email": "info@cps-partitions.com",
+   "contact_page": "https://www.cps-partitions.com/Contact",
+   "website": "https://cps-partitions.com/",
+   "evidence_urls": [
+    "https://cps-partitions.com/",
+    "https://www.cps-partitions.com/Lockers-Stalls",
+    "https://www.cps-partitions.com/Contact"
+   ],
+   "partition_evidence": "Its 'Bathroom Stalls, Accessories, and Locker Installation' page lists ASI and Bobrick partitions. The core business is operable walls and gym equipment.",
+   "red_flags": [
+    "Sells partitions (buy-around risk)",
+    "Restroom partitions are a side line next to operable walls",
+    "No restroom partition projects shown",
+    "About 95 miles away; Colorado Springs is not named"
+   ],
+   "reason": "Commercial specialties firm that installs ASI and Bobrick toilet partitions and serves Colorado (also WY, TX, FL, OK), about 95 miles north. Partitions are a secondary line for it.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Continental Partition Systems, LLC",
+    "area": "colorado-springs",
+    "status": "not_found",
+    "registry": "Pikes Peak Regional Building Department (PPRBD) Contractor and Mechanic Search",
+    "source_url": "https://www.pprbd.org/Search/ContractorAndMechanic",
+    "license_type": "",
+    "license_number": "",
+    "note": "Checked 2026-11-19. A search for 'Continental Partition' returned no records. 'Continental' alone returned only CONTINENTAL FIRE SPRINKLER COMPANY (Omaha, NE) and CONTINENTAL ROOFING LLC (Peyton, CO), both Admin Revoked, and neither is this company. A search for 'Partition' returned no records. The company is based in Frederick, outside PPRBD's area. Colorado has no state general contractor license. Ask the installer how it handles Colorado Springs permitted work."
+   },
+   "score": 63
+  },
+  {
+   "name": "Associated Building Specialties (ABS)",
+   "base_city": "Broomfield",
+   "state": "CO",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Bradley",
+    "Bobrick",
+    "Hadrian",
+    "ASI",
+    "Thrislington"
+   ],
+   "phone": "303.293.2096",
+   "email": "info@absinc.com",
+   "website": "https://absinc.com/",
+   "evidence_urls": [
+    "https://absinc.com/"
+   ],
+   "partition_evidence": "Calls itself a specialties subcontractor and lists toilet partitions and washroom accessories among its Division 10 products. It is the Hadrian dealer for Colorado. Its homepage does not say outright that it installs partitions.",
+   "red_flags": [
+    "Dealer for Hadrian, ASI, Bobrick and Bradley (strong buy-around risk)",
+    "Large general Division 10 and glazing subcontractor that may not take small jobs",
+    "Colorado Springs is not named; about 80 miles away"
+   ],
+   "reason": "Major Colorado Division 10 subcontractor and partition dealer. I didn't see partition installation stated on a page I could read, and it is a direct competitor as a dealer.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Associated Building Specialties (ABS)",
+    "area": "colorado-springs",
+    "status": "not_found",
+    "registry": "Pikes Peak Regional Building Department (PPRBD) Contractor and Mechanic Search",
+    "source_url": "https://www.pprbd.org/Search/ContractorAndMechanic",
+    "license_type": "",
+    "license_number": "",
+    "note": "Checked 2026-11-19. Searches for 'Associated Building Specialties' and 'Associated Bldg' returned no records. 'ABS' returned ABS PLUMBING, LLC (Parker, revoked), the ABSOLUTE businesses and others, none of them this company. The company is based in Broomfield, outside PPRBD's area. Colorado has no state general contractor license. A record under a different legal entity name is possible, so ask the installer for its PPRBD license number."
+   },
+   "score": 43
+  }
+ ]
+}
