@@ -1,0 +1,234 @@
+{
+ "area": "eugene",
+ "found_count": 7,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/eugene.json: read. Of about 37 Maps results, only Western Partitions looked plausible, and its site shows wall systems, not toilet partitions. The rest were bathroom remodelers, plumbers, supply stores, restoration firms and big-box stores. The web results were Google redirect URLs with no domains. The 'A1 Commercial Specialties Inc' title in the web results has no location and could not be followed.",
+  "Existing area files portland.json, boise.json and spokane.json: read for regional leads (W.H. Cress, BMS, Pinkham), then re-checked live.",
+  "Manufacturer locators: Bobrick /find-a-representative returned 404. Scranton Products /find-a-rep/ returned 404. Earlier runs found Bradley and Bobrick to be JavaScript-only, Hadrian to be 404 or 403, and Global Partitions to be unreachable, so ASI, Bradley, Hadrian, Metpar, General Partitions and Ampco were not retried. No Oregon rep was read.",
+  "The Blue Book: the search page and every iProView profile returned 403 Forbidden. North Country Building Specialties is known only from a search snippet.",
+  "BuildingConnected / Procore: not reached. No public profiles came up in searches.",
+  "Levelset (Western Partitions profile): 403 Forbidden.",
+  "Oregon State University contractor registry (reserve.cpd.oregonstate.edu/contractors/view/428, 900, 1120, 1169): every page returned 404. Facts come only from search snippets.",
+  "Cook & Boardman (cbxsolutions.com speciality solutions): 403 Forbidden.",
+  "Company sites fetched: wpibuilds.com, whcress.com and /contact, buildingmaterialspecialties.com and /services, pinkhamspecialties.com and /contact. All worked.",
+  "WebSearch: used 7 of 7. Results were dominated by One Point Partitions (an online seller with Eugene and Medford delivery terminals that says no Oregon installer is needed, so excluded), Partition Plus (Maryland), Newton Distributing, McMaster-Carr and bid documents. Innergy Interiors (El Paso, TX marketing pages) and SBI Contracting (Boise, over 300 miles away) were excluded as having no local base.",
+  "Yelp / BBB: no relevant listings came up in searches. Not fetched directly."
+ ],
+ "candidates": [
+  {
+   "name": "W.H. Cress Company, Inc.",
+   "base_city": "Tigard",
+   "state": "OR",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "ASI",
+    "Bobrick"
+   ],
+   "phone": "503-620-1664",
+   "contact_page": "https://www.whcress.com/contact/",
+   "website": "https://www.whcress.com/",
+   "evidence_urls": [
+    "https://www.whcress.com/",
+    "https://www.whcress.com/contact/",
+    "https://www.whcress.com/our-work/",
+    "https://www.whcress.com/about/"
+   ],
+   "partition_evidence": "Homepage says 'Our primary building specialty products are commercial washroom partitions and accessories' and calls the firm a 'specialty building products distributor and installation company'. ASI and Bobrick appear only in image file names. No partition project or photo shown.",
+   "red_flags": [
+    "Distributor of partitions (buy-around risk)",
+    "No Eugene/Corvallis/Albany projects listed; Oregon projects in Beaverton, Salem, Bend, Hermiston, Woodburn",
+    "About 105 miles from Eugene; service area only stated as Pacific Northwest"
+   ],
+   "reason": "A Pacific Northwest commercial washroom partition distributor that also installs, with Oregon projects as far as Salem and Bend. It doesn't show partition installs or name the Eugene area, so this is unproven.",
+   "added_by_checker": false,
+   "license": {
+    "name": "W.H. Cress Company, Inc.",
+    "area": "eugene",
+    "status": "not_online",
+    "registry": "Oregon Construction Contractors Board (CCB) License Search, https://search.ccb.state.or.us/search/",
+    "license_number": "",
+    "license_type": "",
+    "source_url": "https://search.ccb.state.or.us/search/search_result.aspx?id=62812",
+    "note": "Checked 2026-11-20. The official CCB name search is an ASP.NET form protected by reCAPTCHA, so it couldn't be run automatically. The direct result URL (search_result.aspx?id=62812) loaded but left License #, Status and First Licensed blank. It did show $0 unpaid claims, $0 unpaid civil penalties, no complaints, no discipline and no administrative suspensions for that record ID. A third-party site (https://www.ccblookup.com/contractor/wh-cress-company-62812/, not official) lists CCB #62812, WH Cress Company Inc, Tigard, Active, CSC2 (Commercial Specialty Contractor Level 2), expiring 2027-01-16. Confirm on the CCB site by hand or by calling the CCB at 503-378-4621. The company site (https://www.whcress.com/) says 'Our primary building specialty products are commercial washroom partitions and accessories', gives Tigard, OR in the footer and a Portland, OR HQ heading, and shows no CCB number or phone."
+   },
+   "score": 43
+  },
+  {
+   "name": "Building Material Specialties, Inc. (BMS)",
+   "base_city": "Hillsboro",
+   "state": "OR",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "American Specialties"
+   ],
+   "phone": "(503) 640-1886",
+   "contact_page": "https://www.buildingmaterialspecialties.com/contact-us/",
+   "website": "https://www.buildingmaterialspecialties.com/",
+   "evidence_urls": [
+    "https://www.buildingmaterialspecialties.com/",
+    "https://www.buildingmaterialspecialties.com/services/"
+   ],
+   "partition_evidence": "Lists Toilet Partitions as a product and says it has 'a crew of in-house installers' plus subcontractors. It doesn't say partitions specifically are installed. The brand logos are general Division 10 brands, not tied to partitions.",
+   "red_flags": [
+    "Supplier of partitions (buy-around risk)",
+    "No service area stated; Hillsboro is about 115 miles from Eugene and doesn't say it serves Eugene"
+   ],
+   "reason": "A Division 10 supplier with in-house installers and a Toilet Partitions product line. It doesn't confirm partition installation or a Eugene service area.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Building Material Specialties, Inc. (BMS)",
+    "area": "eugene",
+    "status": "not_online",
+    "registry": "Oregon Construction Contractors Board (CCB) License Search, https://search.ccb.state.or.us/search/",
+    "license_number": "",
+    "license_type": "",
+    "source_url": "https://search.ccb.state.or.us/search/search_result.aspx?id=58313",
+    "note": "Checked 2026-11-20. The official CCB name search is protected by reCAPTCHA, so it couldn't be run automatically. The direct result URL (search_result.aspx?id=58313) loaded but left license number, status and name blank. It did show $0 unpaid claims and penalties, no complaints, no discipline and no administrative suspensions. A third-party site (https://www.ccblookup.com/contractor/building-material-specialties-58313/, not official) lists CCB #58313, Building Material Specialties Inc, Hillsboro, Active, commercial specialty contractor, valid through 2026-12-12 (so it's due for renewal soon). Confirm on the CCB site by hand or by calling the CCB at 503-378-4621. The company site (https://www.buildingmaterialspecialties.com/) lists Hillsboro, OR, phone (503) 640-1886, and 'Toilet Partitions' as a product category. It doesn't say whether the company installs them. No CCB number is on the site."
+   },
+   "score": 40
+  },
+  {
+   "name": "Western Partitions, Inc. (WPI), Eugene office",
+   "base_city": "Eugene",
+   "state": "OR",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [
+    "WPI PreFab"
+   ],
+   "phone": "541.338.9700",
+   "contact_page": "https://wpibuilds.com/contact/",
+   "website": "https://wpibuilds.com/",
+   "evidence_urls": [
+    "https://wpibuilds.com/",
+    "https://wpibuilds.com/services/"
+   ],
+   "partition_evidence": "Its services list covers drywall, framing, acoustical, EIFS, doors/frames/hardware and fireproofing. Toilet partitions, Division 10 and restroom accessories don't appear. 'Partitions' in its name refers to wall systems.",
+   "red_flags": [
+    "Wall and ceiling contractor, not a toilet partition installer"
+   ],
+   "reason": "A large commercial wall and ceiling contractor with a Eugene office. Its services don't include toilet partitions or Division 10.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Pinkham Specialties",
+   "base_city": "unknown (Central Oregon)",
+   "state": "OR",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "ASI Global",
+    "Hadrian",
+    "Accu-Tec",
+    "Metpar",
+    "Bobrick",
+    "Scranton Products",
+    "Jacknob"
+   ],
+   "phone": "(541) 241-8478",
+   "email": "info@pinkhamspecialties.com",
+   "contact_page": "https://pinkhamspecialties.com/contact/",
+   "website": "https://pinkhamspecialties.com/",
+   "evidence_urls": [
+    "https://pinkhamspecialties.com/",
+    "https://pinkhamspecialties.com/contact/",
+    "https://pinkhamspecialties.com/about/"
+   ],
+   "partition_evidence": "Supplies toilet partitions and hardware to 'Oregon and the Pacific Northwest'. No page mentions installation.",
+   "red_flags": [
+    "Supplier/reseller of the same brands Next Partitions sells (direct competitor, buy-around risk)",
+    "No installation service shown",
+    "Base city not stated"
+   ],
+   "reason": "A partitions supplier serving Oregon, which makes it a competitor. No page shows it installs partitions.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 23
+  },
+  {
+   "name": "Richard's Remodeling LLC",
+   "base_city": "Eugene",
+   "state": "OR",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.buildzoom.com/contractor/richards-remodeling-llc"
+   ],
+   "partition_evidence": "A search snippet says an OSU contractor directory lists 'lockers and partitions' and 'compartments and cubicles' categories. The OSU page returned 404 when opened, so this is unverified. No company website found.",
+   "red_flags": [
+    "No website or project photos",
+    "BuildZoom snippet suggests license entries may be expired; confirm with the Oregon CCB",
+    "Partition claim unverified (source page 404)"
+   ],
+   "reason": "A Eugene remodeler with only an unverified directory category tying it to partitions, and no website or photos.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "3J Construction, LLC",
+   "base_city": "Eugene",
+   "state": "OR",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "None found. A search snippet of an OSU contractor directory listing (page 404 when opened) doesn't mention partitions.",
+   "red_flags": [
+    "No website or partition evidence found"
+   ],
+   "reason": "No evidence it installs toilet partitions.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "North Country Building Specialties LLC",
+   "base_city": "Bend",
+   "state": "OR",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "evidence_urls": [
+    "https://thebluebook.com/iProView/1137647"
+   ],
+   "partition_evidence": "Only a Blue Book directory listing (from search results) lists 'Toilet Partitions & Cubicles' among its lines. No website found.",
+   "red_flags": [
+    "No website, phone or project evidence found",
+    "Bend is about 125 miles by road from Eugene, and nothing says it serves Eugene"
+   ],
+   "reason": "Known only from a directory listing. There is no website, no installation evidence and no stated service area that covers Eugene.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

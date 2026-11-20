@@ -1,0 +1,1862 @@
+{
+ "areas": [
+  {
+   "area": "reno",
+   "state": "NV",
+   "sources_tried": [
+    "Seed file reno.json: worked. 43 maps rows and no web rows. Almost all were plumbers, remodelers, glass and cabinet shops. Western Partitions (wpibuilds.com) is a drywall and wall-systems sub with no toilet partition work (rejected in earlier las-vegas research). Public Restroom Company makes prefab restroom buildings and was excluded. Oswald Construction (oswaldconstruction.net) was checked: carpentry and millwork only, no partitions shown, excluded.",
+    "Existing repo research (stockton.json, las-vegas.json, sacramento.json): worked; found Demar Specialties (serves Reno). Stumbaugh & Associates and Pro West Wall Products (West Sacramento) install partitions, but their sites don't mention Nevada, so they were excluded.",
+    "Bobrick find-a-rep: page loaded but rep dropdown didn't render, no data.",
+    "Scranton Products find-a-rep: 404. Hadrian find-a-rep: 404. General Partitions find-a-rep: 404. Metpar representatives: 404. ASI, Bradley and Ampco were not retried (they failed in earlier areas).",
+    "The Blue Book: 403 blocked.",
+    "Levelset (nevada/specialties and reno/finishes): 403 blocked.",
+    "Procore network public pages: worked (reno/specialties, reno/toilet-and-bath-accessories, reno/partitions, profiles for Reno Door & Trim, American Sheet Metal Partition, and Mee 2 Inc, which is a forklift/equipment firm and was excluded).",
+    "BBB Nevada partition category and profile: worked (Commercial Restroom Solutions).",
+    "One Point Partitions Nevada page: 403 (national online seller, excluded anyway). asmp-div10.com: 503. City of Sparks bid document: 503. renodoorsandtrim.com: loaded but shows a different business (Nevada Trimpak cabinet refacing).",
+    "Performance Contracting Reno branch page: worked; locations index 404.",
+    "WebSearch: 7 of 7 used. Queries: 'toilet partition installation Reno NV'; 'Division 10 specialties contractor Reno Nevada toilet partitions'; 'Reno Door & Trim toilet partitions'; 'restroom partitions installer Northern Nevada Sparks Carson City'; 'toilet partitions Reno/Sparks specialties installer'; 'Commercial Restroom Solutions Gardnerville'; and 'Washoe County School District toilet partitions subcontractor'. They returned mostly residential toilet installers, national online sellers and bid listings, with no dedicated Reno toilet-partition installer found. No Yelp pages came up."
+   ],
+   "found_count": 5,
+   "checked": [
+    {
+     "name": "Demar Specialties, LLC",
+     "base_city": "Manteca",
+     "state": "CA",
+     "verdict": "possible",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "ASI Group",
+      "Bradley",
+      "Scranton Products",
+      "JL Industries",
+      "Hallowell",
+      "Metpar"
+     ],
+     "within_area": "no",
+     "website": "https://www.demarspecialties.com/",
+     "contact_page": "https://www.demarspecialties.com/contact-us",
+     "evidence_urls": [
+      "https://www.demarspecialties.com/",
+      "https://www.demarspecialties.com/contact-us"
+     ],
+     "partition_evidence": "Homepage lists toilet partitions first among its Division 10 products, offered as furnish & install or supply-only, for commercial contractors.",
+     "reason": "A real Division 10 sub that installs toilet partitions and says it serves Northern/Central California and Reno, NV, with a Nevada license number (NV #0086118) on its site. It is based about 140 miles from Reno in a straight line, beyond the 120-mile regional limit, and it supplies partitions itself. That is why it is possible, not strong.",
+     "red_flags": [
+      "Base about 140 mi from Reno (beyond the 120-mi regional limit), though the site names Reno, NV as a service area",
+      "Authorized distributor that sells partitions supply-only: a buy-around risk",
+      "No phone or email published on site; contact form only"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Commercial Restroom Solutions, LLC",
+     "base_city": "Gardnerville",
+     "state": "NV",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "nearby",
+     "phone": "(775) 230-2106",
+     "review_source": "BBB (not accredited, no rating shown)",
+     "evidence_urls": [
+      "https://www.bbb.org/us/nv/category/partition"
+     ],
+     "partition_evidence": "BBB lists it under the Partitions and Bathroom Remodel categories. No website, project photos or service list found.",
+     "reason": "The company name and BBB 'Partitions' category point to restroom partition work, and it is about 15 miles from Carson City. But the BBB gives its service area as Douglas County only, and no website or project evidence confirms commercial partition installation.",
+     "red_flags": [
+      "No website found",
+      "BBB service area listed as Douglas County, NV only",
+      "Not BBB accredited; no rating or reviews shown"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "American Sheet Metal Partition Co., Inc.",
+     "base_city": "McClellan (Sacramento area)",
+     "state": "CA",
+     "verdict": "possible",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "no",
+     "website": "https://www.asmp-div10.com",
+     "evidence_urls": [
+      "https://www.asmp-div10.com"
+     ],
+     "partition_evidence": "Not verified: the company website returned 503 / no connection on every attempt. The name and domain (div10) suggest Division 10 partition work.",
+     "reason": "I couldn't read the company's own site. Search snippets (third-party, not read directly) place it in McClellan, CA, about 110 miles from Reno, with a California license and a California-counties service list. I found no sign that it serves the state of Nevada. Recheck when the site is up.",
+     "red_flags": [
+      "Website unreachable (503) at check time",
+      "No evidence of Nevada service area or Nevada contractor license"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Reno Door & Trim",
+     "base_city": "Reno",
+     "state": "NV",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "unknown",
+     "sells_partitions": "no",
+     "brands": [],
+     "within_area": "yes",
+     "evidence_urls": [
+      "https://www.renodoorandtrim.com/",
+      "https://talents.vaia.com/companies/reno-door-trim"
+     ],
+     "partition_evidence": "None found. Its site returned 503; directory and job-board listings describe only door and trim supply and installation.",
+     "reason": "No evidence of toilet partition or Division 10 work. It appears to be a door and trim business.",
+     "red_flags": [
+      "Website unreachable at check time",
+      "No partition evidence"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Performance Contracting Inc. (PCI), Reno Commercial branch",
+     "base_city": "Reno",
+     "state": "NV",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "brands": [],
+     "within_area": "yes",
+     "website": "https://www.performancecontracting.com/branch/reno/",
+     "phone": "775-412-9800",
+     "contact_page": "https://www.performancecontracting.com/contact-us/",
+     "evidence_urls": [
+      "https://www.performancecontracting.com/branch/reno/",
+      "https://www.performancecontracting.com/",
+      "https://www.performancecontracting.com/service/commercial-doors-hardware/"
+     ],
+     "partition_evidence": "None. The 35 listed services (drywall, ceilings, insulation, doors & hardware and others) don't include toilet partitions, toilet accessories or Division 10 specialties. The Doors & Hardware page lists only doors, hardware, locks and access control.",
+     "reason": "A large commercial interiors and insulation contractor with a Reno branch, but nothing shows toilet partition installation.",
+     "red_flags": [
+      "No partition or Division 10 service listed"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "eugene",
+   "state": "OR",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/eugene.json: read. Of about 37 Maps results, only Western Partitions looked plausible, and its site shows wall systems, not toilet partitions. The rest were bathroom remodelers, plumbers, supply stores, restoration firms and big-box stores. The web results were Google redirect URLs with no domains. The 'A1 Commercial Specialties Inc' title in the web results has no location and could not be followed.",
+    "Existing area files portland.json, boise.json and spokane.json: read for regional leads (W.H. Cress, BMS, Pinkham), then re-checked live.",
+    "Manufacturer locators: Bobrick /find-a-representative returned 404. Scranton Products /find-a-rep/ returned 404. Earlier runs found Bradley and Bobrick to be JavaScript-only, Hadrian to be 404 or 403, and Global Partitions to be unreachable, so ASI, Bradley, Hadrian, Metpar, General Partitions and Ampco were not retried. No Oregon rep was read.",
+    "The Blue Book: the search page and every iProView profile returned 403 Forbidden. North Country Building Specialties is known only from a search snippet.",
+    "BuildingConnected / Procore: not reached. No public profiles came up in searches.",
+    "Levelset (Western Partitions profile): 403 Forbidden.",
+    "Oregon State University contractor registry (reserve.cpd.oregonstate.edu/contractors/view/428, 900, 1120, 1169): every page returned 404. Facts come only from search snippets.",
+    "Cook & Boardman (cbxsolutions.com speciality solutions): 403 Forbidden.",
+    "Company sites fetched: wpibuilds.com, whcress.com and /contact, buildingmaterialspecialties.com and /services, pinkhamspecialties.com and /contact. All worked.",
+    "WebSearch: used 7 of 7. Results were dominated by One Point Partitions (an online seller with Eugene and Medford delivery terminals that says no Oregon installer is needed, so excluded), Partition Plus (Maryland), Newton Distributing, McMaster-Carr and bid documents. Innergy Interiors (El Paso, TX marketing pages) and SBI Contracting (Boise, over 300 miles away) were excluded as having no local base.",
+    "Yelp / BBB: no relevant listings came up in searches. Not fetched directly."
+   ],
+   "found_count": 7,
+   "checked": [
+    {
+     "name": "W.H. Cress Company, Inc.",
+     "base_city": "Tigard",
+     "state": "OR",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "ASI",
+      "Bobrick"
+     ],
+     "phone": "503-620-1664",
+     "contact_page": "https://www.whcress.com/contact/",
+     "website": "https://www.whcress.com/",
+     "evidence_urls": [
+      "https://www.whcress.com/",
+      "https://www.whcress.com/contact/",
+      "https://www.whcress.com/our-work/",
+      "https://www.whcress.com/about/"
+     ],
+     "partition_evidence": "Homepage says 'Our primary building specialty products are commercial washroom partitions and accessories' and calls the firm a 'specialty building products distributor and installation company'. ASI and Bobrick appear only in image file names. No partition project or photo shown.",
+     "red_flags": [
+      "Distributor of partitions (buy-around risk)",
+      "No Eugene/Corvallis/Albany projects listed; Oregon projects in Beaverton, Salem, Bend, Hermiston, Woodburn",
+      "About 105 miles from Eugene; service area only stated as Pacific Northwest"
+     ],
+     "reason": "A Pacific Northwest commercial washroom partition distributor that also installs, with Oregon projects as far as Salem and Bend. It doesn't show partition installs or name the Eugene area, so this is unproven.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Building Material Specialties, Inc. (BMS)",
+     "base_city": "Hillsboro",
+     "state": "OR",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "no",
+     "brands": [
+      "Bobrick",
+      "Bradley",
+      "American Specialties"
+     ],
+     "phone": "(503) 640-1886",
+     "contact_page": "https://www.buildingmaterialspecialties.com/contact-us/",
+     "website": "https://www.buildingmaterialspecialties.com/",
+     "evidence_urls": [
+      "https://www.buildingmaterialspecialties.com/",
+      "https://www.buildingmaterialspecialties.com/services/"
+     ],
+     "partition_evidence": "Lists Toilet Partitions as a product and says it has 'a crew of in-house installers' plus subcontractors. It doesn't say partitions specifically are installed. The brand logos are general Division 10 brands, not tied to partitions.",
+     "red_flags": [
+      "Supplier of partitions (buy-around risk)",
+      "No service area stated; Hillsboro is about 115 miles from Eugene and doesn't say it serves Eugene"
+     ],
+     "reason": "A Division 10 supplier with in-house installers and a Toilet Partitions product line. It doesn't confirm partition installation or a Eugene service area.",
+     "added_by_checker": false
+    },
+    {
+     "name": "North Country Building Specialties LLC",
+     "base_city": "Bend",
+     "state": "OR",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "evidence_urls": [
+      "https://thebluebook.com/iProView/1137647"
+     ],
+     "partition_evidence": "Only a Blue Book directory listing (from search results) lists 'Toilet Partitions & Cubicles' among its lines. No website found.",
+     "red_flags": [
+      "No website, phone or project evidence found",
+      "Bend is about 125 miles by road from Eugene, and nothing says it serves Eugene"
+     ],
+     "reason": "Known only from a directory listing. There is no website, no installation evidence and no stated service area that covers Eugene.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Pinkham Specialties",
+     "base_city": "unknown (Central Oregon)",
+     "state": "OR",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "ASI Global",
+      "Hadrian",
+      "Accu-Tec",
+      "Metpar",
+      "Bobrick",
+      "Scranton Products",
+      "Jacknob"
+     ],
+     "phone": "(541) 241-8478",
+     "email": "info@pinkhamspecialties.com",
+     "contact_page": "https://pinkhamspecialties.com/contact/",
+     "website": "https://pinkhamspecialties.com/",
+     "evidence_urls": [
+      "https://pinkhamspecialties.com/",
+      "https://pinkhamspecialties.com/contact/",
+      "https://pinkhamspecialties.com/about/"
+     ],
+     "partition_evidence": "Supplies toilet partitions and hardware to 'Oregon and the Pacific Northwest'. No page mentions installation.",
+     "red_flags": [
+      "Supplier/reseller of the same brands Next Partitions sells (direct competitor, buy-around risk)",
+      "No installation service shown",
+      "Base city not stated"
+     ],
+     "reason": "A partitions supplier serving Oregon, which makes it a competitor. No page shows it installs partitions.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Western Partitions, Inc. (WPI), Eugene office",
+     "base_city": "Eugene",
+     "state": "OR",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [
+      "WPI PreFab"
+     ],
+     "phone": "541.338.9700",
+     "contact_page": "https://wpibuilds.com/contact/",
+     "website": "https://wpibuilds.com/",
+     "evidence_urls": [
+      "https://wpibuilds.com/",
+      "https://wpibuilds.com/services/"
+     ],
+     "partition_evidence": "Its services list covers drywall, framing, acoustical, EIFS, doors/frames/hardware and fireproofing. Toilet partitions, Division 10 and restroom accessories don't appear. 'Partitions' in its name refers to wall systems.",
+     "red_flags": [
+      "Wall and ceiling contractor, not a toilet partition installer"
+     ],
+     "reason": "A large commercial wall and ceiling contractor with a Eugene office. Its services don't include toilet partitions or Division 10.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Richard's Remodeling LLC",
+     "base_city": "Eugene",
+     "state": "OR",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "evidence_urls": [
+      "https://www.buildzoom.com/contractor/richards-remodeling-llc"
+     ],
+     "partition_evidence": "A search snippet says an OSU contractor directory lists 'lockers and partitions' and 'compartments and cubicles' categories. The OSU page returned 404 when opened, so this is unverified. No company website found.",
+     "red_flags": [
+      "No website or project photos",
+      "BuildZoom snippet suggests license entries may be expired; confirm with the Oregon CCB",
+      "Partition claim unverified (source page 404)"
+     ],
+     "reason": "A Eugene remodeler with only an unverified directory category tying it to partitions, and no website or photos.",
+     "added_by_checker": false
+    },
+    {
+     "name": "3J Construction, LLC",
+     "base_city": "Eugene",
+     "state": "OR",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "evidence_urls": [],
+     "partition_evidence": "None found. A search snippet of an OSU contractor directory listing (page 404 when opened) doesn't mention partitions.",
+     "red_flags": [
+      "No website or partition evidence found"
+     ],
+     "reason": "No evidence it installs toilet partitions.",
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "northwest-arkansas",
+   "state": "AR",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/northwest-arkansas.json: worked. Only D10 Specialties, GoPunchlist and Mid-South Partitions were relevant. The rest were tile, remodel, plumbing and glass businesses: Gatsby Glass and Bentonville Glass were checked and do no restroom partition work.",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads but results come from a dropdown, so no data was readable",
+    "Scranton Products where-to-buy: worked; AR/OK/MO covered by Architectural Cornerstone Group (972.439.3954), a product rep team, not an installer",
+    "Bradley find-a-rep: no readable content",
+    "ASI (americanspecialties.com/find-a-rep): redirect, not followed further",
+    "Hadrian sales rep locator: 404",
+    "ASI Global/Accurate, Metpar, General Partitions, Ampco locators: not tried (fetch budget spent elsewhere)",
+    "The Blue Book (thebluebook.com iProView pages): blocked, 403",
+    "BuildingConnected / Procore public profiles: not tried",
+    "onepointpartitions.com Arkansas page: blocked, 403 (national distributor with Fort Smith/Little Rock delivery terminals per search snippet; not a local installer)",
+    "newtondistributing.com toilet-partitions-near-me: worked; Natick MA distributor that refers installers, no local base, skipped",
+    "BBB partition category pages (AR statewide, Rogers AR, Joplin MO, Tulsa OK): worked. Relevant in-state partition listings (Custom Partitions and Pads, White Hall; Ditta Enterprises, Jonesboro) are about 190+ miles away, outside range.",
+    "WebSearch: 7 of 7 used ('toilet partition installer Northwest Arkansas...', 'toilet partitions contractor Arkansas...', 'Mid-South Partitions Tulsa', 'toilet accessories/compartments subcontractor Fayetteville/Rogers/Fort Smith', 'Division 10 installer Tulsa/Springfield/Joplin serving Arkansas', 'Executive Flooring Solutions Bentonville', 'Architectural Materials Springfield'). Few local results; the area seems to have very few dedicated partition installers.",
+    "Google search via WebFetch: blocked"
+   ],
+   "found_count": 5,
+   "checked": [
+    {
+     "name": "D10 Specialties, LLC",
+     "base_city": "Northwest Arkansas (city not stated)",
+     "state": "AR",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://d10-specialties.com/",
+     "contact_page": "https://d10-specialties.com/",
+     "email": "derek.hill@d10-specialties.com",
+     "partition_evidence": "Homepage service 'Bathroom Accessories & Partitions: install of restroom accessories, partitions, grab bars, and wall protection systems' for general contractors.",
+     "reason": "Commercial Division 10 installer working for general contractors in Northwest Arkansas, and its site names partition installation. It is installation-only as far as the site says. The site gives no base city or office phone, only two named staff with phone numbers (left out as possible personal lines).",
+     "red_flags": [
+      "No base city or main office phone on the site",
+      "Only named-person contacts listed"
+     ],
+     "evidence_urls": [
+      "https://d10-specialties.com/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "GoPunchlist (division of Specialty Construction Solutions, LLC)",
+     "base_city": "Springdale",
+     "state": "AR",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://www.gopunchlist.com/",
+     "contact_page": "https://gopunchlist.com/contact-us/",
+     "email": "info@gopunchlist.com",
+     "phone": "(479) 310-5860",
+     "partition_evidence": "Restrooms page: provides and installs restroom partitions (HDPE, stainless, powder-coated steel, laminate, phenolic) and sells parts (doors, panels, pilasters, headrails, brackets).",
+     "reason": "Springdale-based commercial installer serving all of Northwest Arkansas, and it installs restroom partitions and accessories. It also supplies partitions and parts itself, so there is a buy-around risk.",
+     "red_flags": [
+      "Supplies and sells partitions and parts itself (buy-around risk)"
+     ],
+     "evidence_urls": [
+      "https://www.gopunchlist.com/",
+      "https://gopunchlist.com/restrooms/"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Mid-South Partitions",
+     "base_city": "Tulsa",
+     "state": "OK",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "brands": [],
+     "partition_evidence": "None found.",
+     "reason": "A search found no business by this name in Tulsa, and no website or listing was found. It may not exist under this name.",
+     "red_flags": [
+      "No web presence found; existence unverified"
+     ],
+     "evidence_urls": [],
+     "added_by_checker": false
+    },
+    {
+     "name": "Architectural Materials Co.",
+     "base_city": "Springfield",
+     "state": "MO",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "brands": [],
+     "phone": "(417) 866-2366",
+     "rating": 0,
+     "review_source": "BBB A+ rating (letter grade, not accredited); no review count read",
+     "partition_evidence": "Appears on BBB 'partition' category pages only; its own BBB categories are construction services, windows, storm windows and doors.",
+     "reason": "No company website was found, and nothing shows partition installation or that it serves Arkansas. The BBB partition tag looks like a directory artifact. About 100 miles from the area center.",
+     "red_flags": [
+      "No evidence of partition work",
+      "No website found"
+     ],
+     "evidence_urls": [
+      "https://www.bbb.org/us/ar/rogers/category/partition"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Executive Flooring Solutions, Inc.",
+     "base_city": "Bentonville",
+     "state": "AR",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "phone": "(479) 364-0508",
+     "review_source": "BBB A+ (accredited); no review count read",
+     "partition_evidence": "None. Its BBB categories are flooring contractors, waterproofing contractors and floor installation; it appears on BBB partition category pages only through a directory quirk.",
+     "reason": "A flooring contractor, with no evidence of toilet partition work.",
+     "red_flags": [
+      "Flooring business, not partitions"
+     ],
+     "evidence_urls": [
+      "https://www.bbb.org/us/ar/rogers/category/partition"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "portland-me",
+   "state": "ME",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/portland-me.json: worked. Only Commercial Installation Corporation (Lewiston) was relevant; the rest were showrooms, bath remodelers, plumbers and big-box stores. Division 10 Specialties, Inc. (Pembroke, MA) site says it serves Massachusetts only and names no partitions, so I excluded it",
+    "cic2010.net (company site): worked",
+    "division10.net (company site): worked, not relevant to Maine",
+    "Bobrick Find a Rep (bobrick.com/find-a-rep): page loads but the rep dropdown is dynamic, so no results came back",
+    "Scranton Products where-to-buy: worked. Lists only a factory product specialist for CT/MA/ME/NH/NY/VT, with no dealers or installers",
+    "Hadrian find-a-rep: 404",
+    "ASI, Bradley, Metpar, General Partitions, Ampco locators: not tried (search and fetch budget spent elsewhere)",
+    "The Blue Book (thebluebook.com) New England toilet partitions category and company profiles: blocked (403)",
+    "BuildingConnected / Procore public profiles: not tried",
+    "bldup.com: blocked (403)",
+    "onepointpartitions.com: blocked (403); it appears to be a national supplier's city landing pages (Lewiston/Bangor/Portland), not a local installer, so I excluded it",
+    "cbxsolutions.com (Exactitude, Bangor door and hardware branch): blocked (403); toilet partitions weren't confirmed in the search snippet",
+    "mapquest.com: empty page",
+    "granitestatespecialties.com: worked",
+    "newtondistributing.com: worked; newtonbsi.com homepage is truncated and /contact returns 404",
+    "metrowalls.com: wrong company (St. Louis retaining walls). The Blue Book's Metro Walls of Manchester, NH could not be verified",
+    "WebSearch: 7 of 7 used. Results were dominated by Portland and Maine public project specs (Division 10 toilet compartment sections) with no installer names; no Yelp or BBB pages for Maine partition installers turned up"
+   ],
+   "found_count": 4,
+   "checked": [
+    {
+     "name": "Commercial Installation Corporation",
+     "added_by_checker": false,
+     "base_city": "Lewiston",
+     "state": "ME",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "yes",
+     "website": "http://www.cic2010.net/",
+     "phone": "(207) 784-7943",
+     "email": "bill@cic2010.net",
+     "contact_page": "http://www.cic2010.net/",
+     "evidence_urls": [
+      "http://www.cic2010.net/"
+     ],
+     "partition_evidence": "Home page lists toilet partitions and toilet accessories among its services, next to doors, frames, hardware, operable walls and overhead doors. No project list or photos on the site.",
+     "red_flags": [
+      "No project photos or project list",
+      "Only emails shown are named staff addresses (president, project manager); no generic company email",
+      "Supply-and-install arrangement for partitions not stated"
+     ],
+     "reason": "A Lewiston commercial installation company whose own site lists toilet partitions and accessories as services. It sits inside the area, so it is a strong candidate, though the site shows no partition projects."
+    },
+    {
+     "name": "Granite State Specialties",
+     "added_by_checker": false,
+     "base_city": "Raymond",
+     "state": "NH",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [],
+     "within_area": "regional",
+     "website": "https://www.granitestatespecialties.com/",
+     "phone": "(866) 966-9113",
+     "email": "info@granitestatespecialties.com",
+     "contact_page": "https://www.granitestatespecialties.com/request-a-quote/",
+     "evidence_urls": [
+      "https://www.granitestatespecialties.com/",
+      "https://www.granitestatespecialties.com/request-a-quote/"
+     ],
+     "partition_evidence": "Toilet partitions are a featured product, the site shows a toilet partition installation (in NYC), and installation is done by OSHA-trained installers. It calls itself New England's leading supplier and installer of Division 10, 11 and 12 specialties.",
+     "red_flags": [
+      "Sells and supplies Division 10 products itself, so there is a buy-around risk",
+      "Maine is not named; it says only New England and the northeast",
+      "Based about 70 miles from Portland"
+     ],
+     "reason": "A regional Division 10 supplier and installer in Raymond, NH (about 70 miles away) that says it serves New England and shows partition installation work. It also sells partitions itself."
+    },
+    {
+     "name": "Newton Building Specialties & Installation (Newton BSI)",
+     "added_by_checker": false,
+     "base_city": "Westborough",
+     "state": "MA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "brands": [
+      "Hadrian",
+      "Scranton"
+     ],
+     "within_area": "regional",
+     "website": "https://www.newtonbsi.com/",
+     "phone": "508-439-4941",
+     "contact_page": "",
+     "evidence_urls": [
+      "https://www.newtondistributing.com/toilet-partitions-near-me/",
+      "https://members.agcmass.org/list/member/newton-building-specialties-installation-inc-914"
+     ],
+     "partition_evidence": "The parent company Newton Distributing's page says Newton BSI handles specs, takeoffs and all Division 9 and 10 products and installations, and does the bidding in MA, VT, NH, ME, CT and RI. The AGC Massachusetts listing files it under Div 10 Specialties. No partition project photos were seen.",
+     "red_flags": [
+      "Sister company of Newton Distributing, an online toilet partition seller (Hadrian, Scranton), so the buy-around risk is high",
+      "Based in Westborough, MA (AGC listing), about 120 to 150 miles from Portland, at the edge of the regional limit",
+      "newtonbsi.com showed only a page title, and its /contact page returned a 404"
+     ],
+     "reason": "It says it bids and installs Division 10 work in Maine, but its own site couldn't be read and no partition installs were shown. It is also part of a partition seller, which makes it a direct competitor and a buy-around risk."
+    },
+    {
+     "name": "Door Systems Corp.",
+     "added_by_checker": false,
+     "base_city": "Lewiston",
+     "state": "ME",
+     "verdict": "possible",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "brands": [],
+     "within_area": "yes",
+     "evidence_urls": [
+      "https://thebluebook.com/iProView/1074024/door-systems-corp/material-suppliers"
+     ],
+     "partition_evidence": "Only a search snippet of its Blue Book profile, listed under material suppliers, which named overhead doors, rolling steel doors and toilet and cubicle partitions and said it serves Maine and Vermont. The profile page returned 403 and could not be read directly.",
+     "red_flags": [
+      "No company website found",
+      "Blue Book profile could not be opened (403), so the details are unverified",
+      "Listed as a material supplier, so it may supply rather than install"
+     ],
+     "reason": "A Lewiston business that a directory snippet lists for toilet partitions, but no own website or install evidence could be read. It needs a manual check."
+    }
+   ]
+  },
+  {
+   "area": "manchester-nh",
+   "state": "NH",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/manchester-nh.json: worked. Of its listings, New England Partition, Granite State Specialties, Construction Specialties Installations and Specialty Services of New England were relevant; the rest were remodelers, stores and plumbers.",
+    "restroomremodels.com (Ipswich, MA, from the seeds): returned an empty page and could not be checked",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): the page loaded, but the dropdown locator needs JavaScript, so it showed no results",
+    "Scranton Products where-to-buy: worked, but it only names a factory rep for CT/MA/ME/NH/NY/VT (a person's name with a 570 number), not a local installer, so nothing was added",
+    "ASI Global Partitions find-a-rep: 404 at the URL tried",
+    "Hadrian find-a-rep: 404 at the URL tried",
+    "Bradley, Metpar, General Partitions, Ampco: not tried because the search budget and time went to other sources",
+    "The Blue Book (New England toilet partitions category and iProView pages): blocked (403)",
+    "BuildingConnected / Procore: not tried",
+    "BBB category pages (bbb.org/us/nh/category/partition, /bow/, /troy/): worked",
+    "AGC Massachusetts member directory: worked (Newton BSI)",
+    "Newton Distributing toilet-partitions-near-me: worked",
+    "newtonbsi.com: page content was truncated or empty",
+    "onepointpartitions.com: blocked (403); search results show it as an online supplier only, so it was not included",
+    "bldup.com: blocked (403)",
+    "Kelley Bros site (Division 10 page and locations): worked",
+    "WebSearch: all 7 calls used (NH toilet partition installation; Division 10 NH; Nashua/Concord/Portsmouth; MA/NH/ME specialty contractor; Bow/Concord/Hooksett/Londonderry; Partition Systems North Reading; MA/NH restroom partitions and lockers installer). Yelp was not reached."
+   ],
+   "found_count": 9,
+   "checked": [
+    {
+     "name": "Granite State Specialties",
+     "base_city": "Raymond",
+     "state": "NH",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Privada",
+      "Thrislington",
+      "Privacy Plus",
+      "ASI Global",
+      "Bobrick"
+     ],
+     "website": "https://www.granitestatespecialties.com/",
+     "phone": "(866) 966-9113",
+     "email": "info@granitestatespecialties.com",
+     "contact_page": "https://www.granitestatespecialties.com/request-a-quote/",
+     "partition_evidence": "Toilet partitions page says it supplies and installs commercial toilet partitions, urinal screens and shower stalls, and lists a toilet partition installation project (Crossley Hall, NY).",
+     "evidence_urls": [
+      "https://www.granitestatespecialties.com/",
+      "https://www.granitestatespecialties.com/toilet-partitions/"
+     ],
+     "red_flags": [
+      "Also sells partitions itself (supplier and installer of all major brands): buy-around risk",
+      "FAQ on partitions page is placeholder text"
+     ],
+     "reason": "Raymond, NH Division 10/11/12 supplier-installer about 20 miles from Manchester that explicitly installs commercial toilet partitions across New England. Strong installer but also a competing seller.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Construction Specialties Installations (Construction Specialties, Inc. / CSI)",
+     "base_city": "Salem",
+     "state": "NH",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [
+      "Privada",
+      "Thrislington",
+      "Privacy Plus"
+     ],
+     "website": "https://www.csinstallers.com/",
+     "phone": "866-746-8849",
+     "email": "info@csinstallers.com",
+     "contact_page": "https://www.csinstallers.com/contact/",
+     "partition_evidence": "Site lists Toilet Partitions and a Bathroom Partitions Installation Service; certified installer for Privada, Thrislington and Privacy Plus; NH location page names Manchester, Nashua, Derry.",
+     "evidence_urls": [
+      "https://www.csinstallers.com/locations/nh/",
+      "https://www.csinstallers.com/"
+     ],
+     "red_flags": [
+      "Other offices in Ronkonkoma NY and Fort Lauderdale FL; a large multi-state installer may not take small jobs"
+     ],
+     "reason": "Installation-focused Division 10 company with a Salem, NH office (about 25 miles away) that installs bathroom partitions for commercial, healthcare, education and institutional facilities and names Manchester and Nashua in its service area.",
+     "added_by_checker": false
+    },
+    {
+     "name": "New England Partition & Installation, LLC",
+     "base_city": "Manchester",
+     "state": "NH",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://newenglandpartition.com/",
+     "phone": "603.836.5340",
+     "email": "bids@newenglandpartition.com",
+     "contact_page": "https://newenglandpartition.com/contact/",
+     "partition_evidence": "Describes itself as a Division 10 specialties company that supplies businesses (retail, schools, churches, corporations) and takes field measurements; company name includes Installation; homepage images reference toilet partitions and washroom accessories, but no page I could read states partition installation outright.",
+     "evidence_urls": [
+      "https://newenglandpartition.com/",
+      "https://newenglandpartition.com/contact/"
+     ],
+     "red_flags": [
+      "Supplies specialty products itself: buy-around risk",
+      "Services page returned 404",
+      "No explicit installation text or project photos read"
+     ],
+     "reason": "Manchester-based Division 10 supplier whose name and images point to toilet partition installation, but installation of partitions was not stated on a page I could read.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Specialty Services of New England (SSNE)",
+     "base_city": "Salem",
+     "state": "NH",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [],
+     "website": "https://www.specservne.com/",
+     "phone": "603-386-0159",
+     "email": "info@specservne.com",
+     "contact_page": "https://www.specservne.com/contact",
+     "partition_evidence": "Homepage lists Division 10 Specialties, Division 11 and 12, furnished and installed; toilet partitions not mentioned.",
+     "evidence_urls": [
+      "https://www.specservne.com/"
+     ],
+     "red_flags": [
+      "No mention of toilet partitions, projects or clients",
+      "Furnishes (supplies) products itself, so may also sell partitions",
+      "Footer shows mixed 2022/2024 copyright"
+     ],
+     "reason": "Salem, NH furnish-and-install Division 10 company about 25 miles away; partition work is plausible but not shown.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Kelley Bros (Hudson, NH office)",
+     "base_city": "Hudson",
+     "state": "NH",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Global Toilet Partitions",
+      "Scranton Products",
+      "Hadrian"
+     ],
+     "website": "https://www.kelleybros.com/",
+     "phone": "(603) 881-5559",
+     "email": "",
+     "contact_page": "https://www.kelleybros.com/contact-us/",
+     "partition_evidence": "Division 10 page lists toilet partitions (Global, Scranton, Hadrian) and offers a turnkey solution from quote through product installation; no partition-specific installation projects seen.",
+     "evidence_urls": [
+      "https://www.kelleybros.com/",
+      "https://www.kelleybros.com/?p=3224",
+      "https://www.kelleybros.com/locations/"
+     ],
+     "red_flags": [
+      "Primarily a door, frame and hardware distributor that sells toilet partitions itself: buy-around risk",
+      "Installation offered generally, not shown for partitions"
+     ],
+     "reason": "Commercial Division 8/10 distributor with a Hudson, NH office (about 15 miles away) that sells partitions and mentions installation in its turnkey offer; mainly a competitor-supplier rather than an installer.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Newton Building Specialties & Installation (Newton BSI)",
+     "base_city": "Westborough",
+     "state": "MA",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "brands": [
+      "Hadrian",
+      "Scranton Products"
+     ],
+     "website": "https://newtonbsi.com/",
+     "phone": "(508) 439-4941",
+     "email": "",
+     "contact_page": "",
+     "partition_evidence": "AGC Massachusetts member listing (Div 10 Specialties, Subcontractors) lists bathroom stalls and toilet partitions under 'Total Restroom Solutions'; sister company Newton Distributing sells Hadrian and Scranton partitions and offers installation. Newton BSI's own site did not load, so New Hampshire service was not confirmed on a page I read.",
+     "evidence_urls": [
+      "https://members.agcmass.org/list/member/newton-building-specialties-installation-inc-914",
+      "https://www.newtondistributing.com/architects-electricians-installers/"
+     ],
+     "red_flags": [
+      "Sister company Newton Distributing sells partitions online nationwide: strong buy-around risk",
+      "Own website content could not be read; NH coverage unverified"
+     ],
+     "reason": "Westborough, MA Division 10 subcontractor (about 55 miles away) tied to a partition distributor; likely installs partitions but NH service and installation evidence come only from a directory listing.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Partition Systems Inc",
+     "base_city": "North Reading",
+     "state": "MA",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "nearby",
+     "brands": [],
+     "website": "",
+     "phone": "",
+     "email": "",
+     "contact_page": "",
+     "partition_evidence": "Only a BBB 'Partitions' category listing surfaced in search; no website, services or project photos found, and BBB pages blocked direct fetch.",
+     "evidence_urls": [],
+     "red_flags": [
+      "No website found",
+      "Listing could not be opened to verify"
+     ],
+     "reason": "No evidence of toilet partition installation; only a directory category listing seen in search results.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Doors Unlimited Inc",
+     "base_city": "Leominster",
+     "state": "MA",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "brands": [],
+     "website": "",
+     "phone": "",
+     "email": "",
+     "contact_page": "",
+     "partition_evidence": "Blue Book listing (via search) describes a commercial door, frame and hardware company that also sells toilet and bathroom accessories; no partitions mentioned.",
+     "evidence_urls": [
+      "https://thebluebook.com/iProView/310372"
+     ],
+     "red_flags": [
+      "Door and hardware business, not a partition installer"
+     ],
+     "reason": "Commercial door/frame/hardware contractor; no evidence of toilet partition work.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Metro Walls",
+     "base_city": "Manchester",
+     "state": "NH",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "brands": [],
+     "website": "",
+     "phone": "",
+     "email": "",
+     "contact_page": "",
+     "partition_evidence": "Trade press describes framing, drywall and acoustical ceiling services only.",
+     "evidence_urls": [
+      "https://nerej.com/metro-walls-relocates-manchester-nh-hq-s"
+     ],
+     "red_flags": [
+      "Drywall and ceiling contractor; 'walls' are not toilet partitions"
+     ],
+     "reason": "Commercial framing, drywall and ceiling contractor in Manchester; no toilet partition work.",
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "billings",
+   "state": "MT",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/billings.json: read. It holds only remodelers, plumbers, supply stores and roofers, with no partition installers. Opened Walles Mountain Contracting (windows, doors, glass; no partitions) and Proper Contractors (proper-trades.com is under construction), and excluded both.",
+    "Scranton Products rep locator (scrantonproducts.com/find-a-sales-rep): 404.",
+    "Bobrick find-a-rep: the page loads, but results need a dropdown that isn't readable without a browser. No Montana rep found.",
+    "Hadrian find-a-rep: 503.",
+    "ASI, Bradley, Metpar, General Partitions, Ampco: not reached (search budget spent).",
+    "The Blue Book (thebluebook.com search): 403 blocked.",
+    "Procore Network public directory: WORKED and gave almost every candidate (Billings, Bozeman, Missoula, Great Falls and Helena 'interior' and 'specialties' category pages, plus profiles).",
+    "BuildingConnected: not tried.",
+    "WebSearch, 7 of 7 used: toilet partitions / Division 10 / restroom partitions queries for Billings, Bozeman, Missoula, Helena and Great Falls. They returned mostly One Point Partitions (an online seller with Billings, Butte and Missoula delivery and office pages, installation not stated; its page returned 403), Southwest Solutions Group (demountable office walls only), SBI Contracting (Boise ID, a Division 10 firm but outside range), Montana State University spec manuals and BBB category pages. No local partition specialist turned up.",
+    "Excluded as too far or out of scope: Commercial Door & Specialties, Rapid City SD (Division 10 accessories and lockers, serves MT per Procore, but about 300 miles away); Commercial Contracting and Maintenance, Glasgow MT (northeast MT and western ND); Bloedorns, Miles City MT (supplier); Lime Tree Carpentry (Fort Collins CO); Digital Interior Group (Kent WA); Stevens Door & Specialty (garage doors).",
+    "Yelp, BBB, Google business listings: only BBB category pages showed up in search results, none relevant, and none were opened."
+   ],
+   "found_count": 10,
+   "checked": [
+    {
+     "name": "Vernon's Quality Carpentry, Inc.",
+     "base_city": "Great Falls",
+     "state": "MT",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "unknown",
+     "sells_partitions": "no",
+     "within_area": "no",
+     "reason": "No website found. The directory listing I saw describes a finish carpentry firm (millwork, trim, cabinets, countertops, decking) with no mention of partitions. Great Falls is about 175 miles from Billings.",
+     "evidence_urls": [
+      "https://naicslist.com/company-profile/vernon-quality-carpentry-inc-great-falls-mt-59404",
+      "https://governmentbidders.com/government-bidders/contractor-5232767-VERNON-S-QUALITY-CARPENTR.htm"
+     ],
+     "red_flags": [
+      "No company website",
+      "Directory listings disagree on contact details"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "White Peak Contracting",
+     "base_city": "Billings",
+     "state": "MT",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "website": "https://www.yourwhitepeak.com",
+     "reason": "The website returned HTTP 503 on two tries, so I couldn't check its services. No evidence of partition work.",
+     "evidence_urls": [
+      "https://www.yourwhitepeak.com"
+     ],
+     "red_flags": [
+      "Website unavailable (503)"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Granite Mountain Countertops",
+     "base_city": "Bozeman",
+     "state": "MT",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "unknown",
+     "sells_partitions": "no",
+     "within_area": "regional",
+     "website": "https://granitemountaincountertops.com",
+     "phone": "(406) 586-7160",
+     "email": "info@granitemountaincountertops.com",
+     "contact_page": "https://granitemountaincountertops.com/contact-us/",
+     "reason": "A countertop fabricator and seller (quartz, stone, sinks, cooktops) with offices in Bozeman and Helena that says it serves all of Montana. Its site doesn't mention toilet partitions or Division 10 work.",
+     "evidence_urls": [
+      "https://granitemountaincountertops.com"
+     ],
+     "red_flags": [
+      "Countertop business, not partitions"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Dobrowski Built",
+     "base_city": "Bozeman",
+     "state": "MT",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "no",
+     "sells_partitions": "no",
+     "within_area": "no",
+     "website": "https://dobbuilt.com",
+     "phone": "406-224-0416",
+     "contact_page": "https://dobbuilt.com/#contact",
+     "reason": "A general builder and remodeler (custom homes, residential and commercial remodeling, garages and shops) with no mention of toilet partitions or Division 10 work. Bozeman is about 125 miles from Billings, and the site doesn't say it serves Billings.",
+     "evidence_urls": [
+      "https://dobbuilt.com"
+     ],
+     "red_flags": [
+      "Mainly residential builder",
+      "Email on site is a personal address, omitted"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Smoothrock Contracting",
+     "base_city": "Billings",
+     "state": "MT",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "reason": "Search found no listing under this name. The nearest match is a BBB listing for Smooth Rock Drywall in Billings, a drywall business. No evidence of partition work.",
+     "evidence_urls": [
+      "https://bbb.org/us/mt/billings/category/building-and-construction"
+     ],
+     "red_flags": [
+      "Could not verify the business exists under this name"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "1 Plumbing and Heating LLC",
+     "base_city": "Belgrade",
+     "state": "MT",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "reason": "Not researched beyond the name. It is a plumbing and heating business based in Belgrade, about 120 miles from Billings, with no website given and no partition evidence found.",
+     "evidence_urls": [],
+     "red_flags": [
+      "Plumbing trade, not partitions",
+      "Outside the 30-mile radius"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Eves Engineering and Construction LLC",
+     "base_city": "Billings",
+     "state": "MT",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "mostly",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "website": "https://www.eves2c.com",
+     "phone": "+1-406-690-6883",
+     "reason": "A Billings firm doing industrial, commercial and residential construction. Its site doesn't mention toilet partitions, restroom accessories or Division 10 work.",
+     "evidence_urls": [
+      "https://www.eves2c.com"
+     ],
+     "red_flags": [
+      "Contact email is a personal webmail address, omitted",
+      "No partition evidence"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "3z=c2 (Billings Tile Studio)",
+     "base_city": "Billings",
+     "state": "MT",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "no",
+     "sells_partitions": "no",
+     "within_area": "yes",
+     "website": "https://billingstilestudio.com",
+     "phone": "(406) 565-8368",
+     "email": "info@billingstilestudio.com",
+     "contact_page": "https://billingstilestudio.com/contact/",
+     "reason": "A tile showroom and tile installation company serving homeowners, custom homes and builders. Its site doesn't mention toilet partitions or commercial restroom work.",
+     "evidence_urls": [
+      "https://billingstilestudio.com"
+     ],
+     "red_flags": [
+      "Tile business, not partitions",
+      "Footer phone (406) 564-4392 differs from the displayed number",
+      "Candidate name '3z=c2' doesn't match the business name"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Jacobs Contracting LLC",
+     "base_city": "Billings",
+     "state": "MT",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "mostly",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "reason": "Only BBB directory listings were found (as Jacobs Contracting Co: general, remodel and commercial contractor, accredited with an A+ rating). There's no website and no evidence of partition work.",
+     "evidence_urls": [
+      "https://bbb.org/us/mt/billings/category/commercial-contractors",
+      "https://bbb.org/us/mt/billings/category/general-contractor"
+     ],
+     "red_flags": [
+      "No company website",
+      "BBB listings show several different addresses and phones"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Brownson Construction, Inc.",
+     "base_city": "Billings",
+     "state": "MT",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "mostly",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "phone": "(406) 839-9060",
+     "reason": "A Billings general contractor and construction management firm known only from directory listings (Montana Chamber, BBB, Levelset). There's no website and no evidence of partition work.",
+     "evidence_urls": [
+      "https://members.montanachamber.com/list/category/construction-12",
+      "https://www.levelset.com/contractors/brownson-construction/payment-project-history",
+      "https://bbb.org/us/mt/billings/category/general-contractor"
+     ],
+     "red_flags": [
+      "No company website",
+      "Two different addresses listed"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "fargo",
+   "state": "ND",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/fargo.json: worked, but nothing relevant. Every Maps result is a residential bath remodeler, plumber, HVAC company, store or handyman. Web results are aggregator pages and Google redirects to MapQuest. 'Installation Systems', 'Specialized Contracting' and 'Interiors Workshop Inc' redirect to MapQuest pages that came back empty, so they are unverified.",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): fetched, but the results are loaded by a dropdown and no ND rep appeared.",
+    "ASI Global Partitions find-a-rep: 404.",
+    "Hadrian find-a-rep: 404.",
+    "Bradley find-a-rep: page came back empty, no rep shown.",
+    "Scranton Products find-a-rep: 404.",
+    "Metpar, General Partitions, Ampco/Ammco locators: not reached (search cap).",
+    "The Blue Book (thebluebook.com ND toilet partitions): 403 blocked.",
+    "Procore network Fargo listing: worked, but no Fargo-based partition or Division 10 installers. The toilet-compartment filter returned only national or out-of-area suppliers (All American Metal, Homestore Directs, US Made Supply). The ND specialties URL was a 404.",
+    "BuildingConnected: not tried (search cap).",
+    "WebSearch: 7 of 7 used. Found nothing local except Construction Supply Inc (csi-fargo.com). One Point Partitions shows up a lot, but it is a national online DIY supplier with only delivery terminals in Fargo and Bismarck. Its site returned 403 and it was skipped as a national seller with no local base.",
+    "Superpages Grand Forks toilet-partitions: worked, but there were no partition installers. Production Specialties and PS Industries make doors and hatches, not partitions.",
+    "W.L. Hall Co (Minneapolis; says it serves ND): the site shows demountable glass partitions and doors but no toilet partitions, so it was excluded.",
+    "Midwest Specialties (Paragon, IN): installs Division 10, but it is out of area with no ND service stated, so it was excluded.",
+    "Yelp and BBB: the BBB Fargo bathroom category, seen in search results only, showed no relevant firms. Yelp was not fetched."
+   ],
+   "found_count": 1,
+   "checked": [
+    {
+     "name": "Construction Supply, Inc.",
+     "base_city": "Fargo",
+     "state": "ND",
+     "verdict": "reject",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "added_by_checker": false,
+     "brands": [
+      "AAMCO",
+      "ASI Global",
+      "Flush Metal",
+      "Hadrian",
+      "Bradley",
+      "PSISC",
+      "Scranton",
+      "Solid Partitions",
+      "Bobrick",
+      "Xlerator"
+     ],
+     "partition_evidence": "Toilet Partitions product page lists manufacturers by material but doesn't mention installation. FAQ: 'We will install our products on any project that we are supplying by lining up qualified subcontractors in your area.' About page: 'we have a network of installers to help you out.' No partition projects or photos seen.",
+     "website": "https://www.csi-fargo.com/",
+     "phone": "(701) 235-6605",
+     "contact_page": "https://www.csi-fargo.com/contact",
+     "evidence_urls": [
+      "https://www.csi-fargo.com/",
+      "https://www.csi-fargo.com/toilet-partitions",
+      "https://www.csi-fargo.com/about",
+      "https://www.csi-fargo.com/faq",
+      "https://www.csi-fargo.com/contact"
+     ],
+     "red_flags": [
+      "Competing Division 10 distributor: sells the same brands Next Partitions resells (ASI, Bobrick, Bradley, Scranton, AAMCO), so the buy-around risk is high",
+      "Doesn't install with its own crews. It arranges installation through subcontractors, and only on projects where it supplies the products",
+      "Says it supplies materials nationwide (since 1957)"
+     ],
+     "reason": "A Fargo construction-specialties supplier that sells toilet partitions from our own brands. It installs only products it supplies, through subcontractors. It's a competitor, not an independent installer who would install a customer's Next Partitions order."
+    }
+   ]
+  },
+  {
+   "area": "burlington-vt",
+   "state": "VT",
+   "sources_tried": [
+    "Seeds file research/installers/raw/seeds/burlington-vt.json: read; all maps/web seeds were tile/bath showrooms, remodelers, plumbers, portable toilets, big-box stores; none showed partition installation. Division 10 Specialties Inc (Pembroke MA) is in seeds but ~200 mi away, outside range.",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but rep dropdown is JS, no Vermont result.",
+    "Scranton Products where-to-buy: worked; only a manufacturer's regional rep for New England/VT (not an installer), not included.",
+    "ASI Global Partitions locator (globalpartitions.com): host blocked by session network (ENOTFOUND); must be allowed in network settings to retry.",
+    "Hadrian find-a-rep: 404.",
+    "Bradley, Metpar, General Partitions, Ampco/Ammco locators: not tried (search budget and time).",
+    "The Blue Book New England toilet partitions category page: 403 blocked. Blue Book profile for Commercial Door Co. LLC: 403 (facts taken from search-result summary only).",
+    "BuildingConnected / Procore public profiles: not tried.",
+    "downtobid.com Burlington VT doors contractors: 429 rate-limited (search summary mentioned 'Rapid Door & Trim' supplying/installing bath accessories, location unknown, not included).",
+    "BBB partition category pages (Benson, Morristown VT): worked, but every listing is in MA/NH/CT/NY 150+ mi away (Doors Unlimited Leominster MA, Granite State Specialties Raymond NH, Partition Systems North Reading MA, Connecticut Restroom Specialties Danbury CT, North Star Systems Dover Plains NY, Cubicle Solutions Windham NH), all outside the 120-mile limit. BBB Rutland partition page: 403. BBB Fairfax bathroom accessories and Montpelier commercial doors: worked, no partition installers.",
+    "Granite State Specialties (granitestatespecialties.com): worked; installs toilet partitions and serves 'throughout the northeast', but based in Raymond NH (~150+ mi) and does not name Vermont, so excluded.",
+    "One Point Partitions Vermont/Burlington pages (onepointpartitions.com): 403. Search snippets say it serves Vermont contractors, but it is a supplier based in Glenmont NY / Chicopee MA (outside 120 mi), so excluded.",
+    "Newton BSI (newtonbsi.com): page content did not load.",
+    "WebSearch: 7 of 7 used ('toilet partitions installation Vermont contractor', Division 10 + VT towns, toilet accessories/compartments + VT towns, Division 10 contractor Vermont lockers, Vermont commercial doors hardware toilet partitions, Commercial Door Co Vermont, Plattsburgh/Lebanon NH/Glens Falls partitions). They returned mostly specs, McMaster-Carr and out-of-range MA/NH/CT firms; Vermont has very few dedicated Division 10 installers online."
+   ],
+   "found_count": 2,
+   "checked": [
+    {
+     "name": "Kelley Bros of New England, LLC",
+     "base_city": "Williston",
+     "state": "VT",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Global Toilet Partitions",
+      "Scranton Products",
+      "Hadrian"
+     ],
+     "website": "https://www.kelleybros.com/",
+     "phone": "(802) 865-5133",
+     "contact_page": "https://www.kelleybros.com/contact-us/",
+     "evidence_urls": [
+      "https://www.kelleybros.com/products/division-10/",
+      "https://www.kelleybros.com/locations/",
+      "https://www.kelleybros.com/"
+     ],
+     "partition_evidence": "Its Division 10 page lists toilet partitions in every material and mounting style, names Global, Scranton and Hadrian, and offers a turnkey service from quote to installation. Its locations page lists a Barre, VT installation branch at (802) 923-2004.",
+     "reason": "A commercial Division 8/10 supplier with a Williston office inside the area and a Vermont installation branch, and it says it installs partitions. It also supplies partitions itself (Global, Scranton, Hadrian), so there is a high buy-around risk.",
+     "red_flags": [
+      "Supplies partitions itself (competitor / buy-around risk)",
+      "Large multi-state distributor, not an install-only sub"
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Commercial Door Co. LLC",
+     "base_city": "Williamstown",
+     "state": "VT",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "brands": [],
+     "evidence_urls": [
+      "https://thebluebook.com/iProView/1281251"
+     ],
+     "partition_evidence": "Search snippets of its Blue Book listing name toilet partitions and cubicles among its main lines, along with access doors and hollow metal doors and frames, and give Vermont and Maine as regions served. The page itself returned 403, and I saw no project photos or explicit installation work.",
+     "reason": "A Vermont commercial door and specialties firm about 50 miles from Burlington whose directory listing names toilet partitions as a line of business, but I couldn't confirm installation, a website or contact details.",
+     "red_flags": [
+      "No company website found",
+      "Evidence comes only from search snippets of a directory listing (page blocked)",
+      "Blue Book snippet names Orange County as its Vermont service area, which may not cover Chittenden County"
+     ],
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "charleston-wv",
+   "state": "WV",
+   "sources_tried": [
+    "Seed file charleston-wv.json (maps + web): worked. Nearly all results were residential remodelers, plumbers, stores or chains. Of the two seeds checked, Affordable Contracting Solutions is residential only. Architectural Interior Products is the only plausible seed.",
+    "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded, but the results come from a JS dropdown, so no WV data could be read",
+    "Scranton Products find-product-specialist: worked. It lists only a manufacturer rep for KY/OH/PA/WV and no dealers or installers, so nothing was used",
+    "Scranton /find-a-rep, Hadrian /find-a-rep, ASI (americanspecialties.com/find-a-rep): 404",
+    "Bradley find-a-rep: no content readable (JS)",
+    "General Partitions /distributors: page has no distributor list",
+    "Metpar toilet-partition-installation page: no locator. It says to contact Metpar for a referral to a local distributor",
+    "Ampco/Ammco, ASI Global Partitions/Accurate locators: not reached (no working locator URL found)",
+    "The Blue Book search: 403 blocked. Web search found no WV Blue Book partition installer",
+    "BuildingConnected / Procore public profiles: not reached in search results",
+    "WebSearch (7 of 7 used): Charleston/WV Division 10 and toilet partition queries; Huntington/Morgantown/Parkersburg variant; regional (Pittsburgh/Ohio/Kentucky) Division 10 query; WV bid tabulation query. These found mostly national online sellers with no local base (One Point Partitions, Partition Plus in Forest Hill MD, The Partition Pros, toiletpartitions.com, Southwest Solutions, Newton Distributing), which were skipped. CIH (Indiana/KY, installs nationwide) is beyond 120 miles. Partitions Inc of West Virginia (Marmet) appears only in a 1984 OSHA record, with no current presence.",
+    "WV Purchasing Division bid PDFs (state.wv.us): 503 unavailable",
+    "onepointpartitions.com and accessories.toiletpartitions.com: 403 blocked",
+    "Yelp/BBB: no relevant listings surfaced in searches"
+   ],
+   "found_count": 2,
+   "checked": [
+    {
+     "name": "Charleston Acoustics",
+     "base_city": "Charleston",
+     "state": "WV",
+     "verdict": "possible",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "yes",
+     "brands": [
+      "Metpar",
+      "All American Metal Corp (AAMCO)",
+      "Scranton Products",
+      "Ampco",
+      "Bradley",
+      "General Partitions",
+      "American Specialties (ASI)"
+     ],
+     "website": "https://www.charlestonacoustics.com/",
+     "phone": "(304) 343-1332",
+     "contact_page": "https://www.charlestonacoustics.com/",
+     "partition_evidence": "Lists a 'Toilet Accessories & Partitions' supply category (Metpar, AAMCO, Scranton, Ampco, Bradley, General Partitions, ASI). The partitions page has no installation wording; the business describes itself as a 'Commercial Interior & Specialty Supplier Since 1981'.",
+     "red_flags": [
+      "Supplier and distributor of partitions and the same brands Next Partitions resells: high buy-around risk",
+      "No evidence on its site that it installs",
+      "The only emails on the site belong to named store managers, so no generic company email is given here"
+     ],
+     "evidence_urls": [
+      "https://www.charlestonacoustics.com/",
+      "https://www.charlestonacoustics.com/toilet-accessories-partitions/"
+     ],
+     "reason": "A commercial specialty building-products supplier with branches in Charleston, Huntington and Daniels WV and Gallipolis OH. It sells toilet partitions but shows no installation service, so it is a competitor or supplier rather than a proven installer. It might know or refer local installers.",
+     "added_by_checker": false
+    },
+    {
+     "name": "Architectural Interior Products (now Foundation Building Materials)",
+     "base_city": "Dunbar",
+     "state": "WV",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "brands": [
+      "Armstrong Ceilings"
+     ],
+     "website": "https://myfbm.com/",
+     "phone": "",
+     "contact_page": "",
+     "partition_evidence": "None seen. aipinc.biz now redirects (301) to myfbm.com. FBM's acquisition notice describes AIP as a commercial building-products business (Armstrong Ceilings, commercial doors), with branches in Dunbar, Parkersburg, Morgantown and Huntington.",
+     "red_flags": [
+      "Acquired by Foundation Building Materials (completion announced Jan 2022); the old website redirects to FBM",
+      "Building-materials distributor, not an installer",
+      "No toilet partition evidence found"
+     ],
+     "evidence_urls": [
+      "https://www.aipinc.biz/",
+      "https://www.fbmsales.com/?p=4975"
+     ],
+     "reason": "A commercial building-materials distributor that is now an FBM branch. Nothing seen shows that it installs, or even supplies, toilet partitions.",
+     "added_by_checker": false
+    }
+   ]
+  },
+  {
+   "area": "cheyenne",
+   "state": "WY",
+   "sources_tried": [
+    "Seed file research/installers/raw/seeds/cheyenne.json: read. The Maps results were mostly plumbers, remodelers and stores; the only relevant one was Construction Specialists Inc (Cheyenne). 'Wyoming Install Group' turned up no real business on search.",
+    "csiwyo.net (Construction Specialists Inc): blocked, HTTP 503 on both http and https",
+    "Bobrick find-a-rep: loaded, but the rep dropdown didn't render, so no Wyoming reps could be read",
+    "Scranton Products find-a-rep: 404",
+    "ASI (asi-accuratepartitions.com/find-a-rep): 404 after redirect",
+    "Hadrian find-a-rep: 404",
+    "Bradley, Metpar, General Partitions, Ampco locators: not tried because of time and the search cap",
+    "The Blue Book (thebluebook.com): blocked, HTTP 403",
+    "Procore Network: worked. The Cheyenne and Casper specialties pages and the compartments-and-cubicles page listed no Wyoming-based partition installer; Interior Concepts (Centennial, CO) was found there. Other partition firms there are far away or are manufacturers (All Systems Installations in SLC, Commercial Door & Specialties in Rapid City, Combined Building Specialties in Sioux Falls, All American Metal, US Made Supply).",
+    "BuildingConnected: not tried",
+    "BBB Casper accredited construction: worked; no partition or specialties contractors",
+    "ConstructConnect LCCC restroom renovation bid (Cheyenne): worked, but bidder names are behind a paywall",
+    "Web search, 7 of 7 used: toilet partition installer queries for Cheyenne, Casper, Wyoming and northern Colorado (Fort Collins, Loveland, Greeley). They returned only national online sellers (One Point Partitions, Sustainable Supply, Total Restroom, Partition Plus), which were skipped as national chains with no local base.",
+    "Rio Grande Co. (riograndeco.com): worked; a supplier with a Fort Collins office that sells partitions but shows no installation work, so it was skipped",
+    "Existing research/installers/denver.json was used to find Colorado Front Range firms that serve Wyoming, and each one's site was re-read",
+    "mapquest host (phoenix-0af34b1.aws.mapquest.com): not reachable from this session (DNS blocked). Simpson & Simpson (Broomfield) couldn't be checked.",
+    "heartlandacoustics.com (Heartland Acoustics & Interiors, which lists Cheyenne on Procore): HTTP 503, not checked"
+   ],
+   "found_count": 5,
+   "checked": [
+    {
+     "name": "Colorado Specialties, Inc.",
+     "base_city": "Golden",
+     "state": "CO",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "reason": "Division 10 distributor and installer whose construction side estimates and installs toilet partitions, accessories and FRP in Colorado and Wyoming. Golden is about 105 miles from Cheyenne, and the site names Wyoming as a service area.",
+     "partition_evidence": "Homepage says the construction side installs toilet partitions, FRP, toilet and bath accessories, and wall protection in Colorado and Wyoming.",
+     "brands": [
+      "Hadrian",
+      "ASI",
+      "Scranton",
+      "Metpar",
+      "Privada",
+      "Bradley",
+      "Bobrick",
+      "Gamco",
+      "Koala Kare",
+      "Kohler"
+     ],
+     "phone": "(303) 595-9627",
+     "email": "estimating@coloradospecialties.com",
+     "contact_page": "https://coloradospecialties.com/contact-us/",
+     "website": "https://coloradospecialties.com/",
+     "evidence_urls": [
+      "https://coloradospecialties.com/",
+      "https://coloradospecialties.com/contact-us/"
+     ],
+     "red_flags": [
+      "Stocking distributor of ASI, Scranton, Bobrick, Bradley and Metpar partitions, so there is a high risk it supplies the partitions itself instead of us."
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Continental Partition Systems, LLC",
+     "base_city": "Frederick",
+     "state": "CO",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "regional",
+     "reason": "Partition contractor that installs operable walls and gym equipment, and lists 'Toilet Partitions and Lockers' and 'Bathroom Partitions & Accessories' as products. Its footer says it serves Wyoming. No toilet partition projects or photos are shown. Frederick is about 70 miles from Cheyenne.",
+     "partition_evidence": "Product categories list toilet partitions and bathroom partitions and accessories. No details, projects or photos.",
+     "brands": [
+      "Modernfold",
+      "Hufcor",
+      "Kwik-Wall",
+      "Panelfold",
+      "Emco"
+     ],
+     "phone": "(303) 396-0200",
+     "email": "info@cps-partitions.com",
+     "contact_page": "https://cps-partitions.com/contact",
+     "website": "https://cps-partitions.com/",
+     "evidence_urls": [
+      "https://cps-partitions.com/",
+      "https://cps-partitions.com/toilet-partitions",
+      "https://cps-partitions.com/contact"
+     ],
+     "red_flags": [
+      "Its main business is operable walls; toilet partitions appear only as a category name."
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Associated Building Specialties (ABS)",
+     "base_city": "Broomfield",
+     "state": "CO",
+     "verdict": "possible",
+     "installs_partitions": "likely",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "reason": "Specialties subcontractor since 1985 that lists toilet partitions and washroom accessories, and is a dealer for Bradley, Bobrick, Hadrian and ASI. Wyoming is named in several of its dealer descriptions. The homepage doesn't say outright that it installs partitions. Broomfield is about 85 miles from Cheyenne.",
+     "partition_evidence": "Homepage lists toilet partitions and washroom accessories among its offerings as a specialties subcontractor; partner descriptions name Wyoming.",
+     "brands": [
+      "Bradley",
+      "Bobrick",
+      "Hadrian",
+      "ASI"
+     ],
+     "phone": "303.293.2096",
+     "email": "info@absinc.com",
+     "website": "https://absinc.com/",
+     "evidence_urls": [
+      "https://absinc.com/"
+     ],
+     "red_flags": [
+      "Dealer of Bobrick, Bradley, Hadrian and ASI partitions, so there is a risk it supplies the partitions itself.",
+      "No contact page found; only a mailto link."
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Construction Specialists Inc",
+     "base_city": "Cheyenne",
+     "state": "WY",
+     "verdict": "reject",
+     "installs_partitions": "unknown",
+     "commercial": "unknown",
+     "sells_partitions": "unknown",
+     "within_area": "yes",
+     "reason": "The website returned HTTP 503 on both http and https. A directory listing confirms only a Cheyenne business by this name, with no services shown. There is no evidence of partition work.",
+     "partition_evidence": "None found.",
+     "website": "http://www.csiwyo.net/",
+     "evidence_urls": [
+      "http://www.csiwyo.net/",
+      "https://www.cityof.com/wy/cheyenne/construction-specialists-inc-354518"
+     ],
+     "red_flags": [
+      "Website unreachable (503).",
+      "No evidence of the services it offers."
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Interior Concepts",
+     "base_city": "Centennial (from candidate list; not confirmed on its site)",
+     "state": "CO",
+     "verdict": "reject",
+     "installs_partitions": "no",
+     "commercial": "yes",
+     "sells_partitions": "unknown",
+     "within_area": "no",
+     "reason": "Subcontractor for stretch ceilings, acoustical walls and 'building specialties'. The site doesn't mention toilet partitions, and no service area or Wyoming coverage is stated.",
+     "partition_evidence": "None; only a generic 'building specialties' line.",
+     "phone": "(303) 699-3300",
+     "email": "office@buildwell.com",
+     "website": "https://buildwell.com",
+     "evidence_urls": [
+      "https://buildwell.com"
+     ],
+     "red_flags": [
+      "No partition evidence.",
+      "No service area stated."
+     ],
+     "added_by_checker": false
+    },
+    {
+     "name": "Specialties Contracting, Inc.",
+     "base_city": "Longmont",
+     "state": "CO",
+     "verdict": "strong",
+     "installs_partitions": "yes",
+     "commercial": "yes",
+     "sells_partitions": "yes",
+     "within_area": "regional",
+     "reason": "Division 10 subcontractor that supplies and installs toilet partitions and accessories in commercial buildings and works for general contractors across Colorado and Wyoming. Longmont is about 80 miles from Cheyenne.",
+     "partition_evidence": "Its job posting (PDF hosted by Colorado State University) describes installing toilet partitions and accessories, with travel throughout Colorado and Wyoming, and says it supplies and installs Division 10 products for schools, medical facilities and offices.",
+     "phone": "(970) 535-3010",
+     "email": "info@specialtiescontracting.com",
+     "website": "https://specialtiescontracting.com/",
+     "evidence_urls": [
+      "https://apps.chhs.colostate.edu/cmjobs/publicfiles/viewjobposting/2480/",
+      "https://specialtiescontracting.com/"
+     ],
+     "red_flags": [
+      "Its own website shows only a 'Launching Soon' page; the contact details come from an undated job posting PDF.",
+      "It supplies Division 10 products, so there is a buy-around risk."
+     ],
+     "added_by_checker": true
+    }
+   ]
+  }
+ ],
+ "licenses": [
+  {
+   "state": "CA",
+   "results": [
+    {
+     "name": "Demar Specialties, LLC",
+     "area": "reno (listed base: Manteca, CA)",
+     "status": "found_active",
+     "registry": "California CSLB license lookup (official)",
+     "license_number": "1062277",
+     "license_type": "C-61/D-34 Prefabricated Equipment (DBA Demar Prefabricated Equipment), Limited Liability Company",
+     "source_url": "https://www.cslb.ca.gov/1062277",
+     "note": "CSLB record (data current as of 11/20/2026) shows DEMAR SPECIALTIES LLC, DBA DEMAR PREFABRICATED EQUIPMENT, current and active, issued 01/13/2020, expires 01/31/2028. The CSLB record lists the city as Ripon, CA, not Manteca. $25,000 contractor bond; $100,000 LLC worker bond; workers' comp with State Compensation Insurance Fund through 12/07/2026; $1,000,000 liability policy through 11/22/2026 (both run out within weeks, so recheck before listing). The company site (https://www.demarspecialties.com/) also lists a Nevada license #0086118 and says it supplies and installs toilet partitions. That Nevada number was not checked on the Nevada State Contractors Board, so it is unverified and matters for the Reno area."
+    },
+    {
+     "name": "American Sheet Metal Partition Co., Inc.",
+     "area": "reno (listed base: McClellan, Sacramento area, CA)",
+     "status": "found_active",
+     "registry": "California CSLB license lookup (official)",
+     "license_number": "277769",
+     "license_type": "C-43 Sheet Metal; C-61/D-34 Prefabricated Equipment, Corporation",
+     "source_url": "https://www.cslb.ca.gov/277769",
+     "note": "CSLB record (data current as of 11/20/2026) shows American Sheet Metal Partition Co, current and active, issued 07/28/1972, expires 05/31/2027, city Sacramento, CA. $25,000 contractor bond with American Contractors Indemnity Company. The workers' comp policy shown (Middlesex Insurance Company) ran 10/01/2025 to 10/01/2026, which is before the check date. CSLB says recent updates may not be in the database yet, so confirm current coverage. The company site asmp-div10.com returned HTTP 503 and could not be read. No Nevada license was checked, and that matters for the Reno area."
+    }
+   ],
+   "registries": [
+    "California CSLB license detail (cslb.ca.gov/<license number> short links): worked through WebFetch for both licenses. The CheckLicenseII LicenseDetail.aspx?LicNum= URL only returned the search form. A direct curl fetch was denied by the session's permission classifier and was not retried.",
+    "Nevada State Contractors Board: not checked. The Reno area may need a Nevada license, and Demar's site lists NV #0086118.",
+    "Company websites: demarspecialties.com was readable; asmp-div10.com returned HTTP 503. ASMP's license number 277769 came from a web search, then was confirmed on the official CSLB page."
+   ]
+  },
+  {
+   "state": "NV",
+   "results": [
+    {
+     "name": "Commercial Restroom Solutions, LLC",
+     "area": "reno",
+     "status": "not_online",
+     "registry": "Nevada State Contractors Board (NSCB) License & Disciplinary Search, https://app.nvcontractorsboard.com/Clients/NVSCB/Public/ContractorLicenseSearch/ContractorLicenseSearch.aspx",
+     "license_type": "unknown",
+     "license_number": "",
+     "source_url": "https://app.nvcontractorsboard.com/Clients/NVSCB/Public/ContractorLicenseSearch/ContractorLicenseSearch.aspx",
+     "note": "Nevada requires a state contractor license (NSCB). The NSCB search is an interactive ASP.NET form: you pick Search By (license number, company name or principal) and the page posts back. It can't be queried by URL, and the rules forbid submitting forms, so the license status was not checked. Look it up manually by company name. Two web searches (2026-11-20) found no published NSCB license number for this company. Its BBB profile (https://www.bbb.org/us/nv/gardnerville/profile/partition/commercial-restroom-solutions-llc-1126-90002229) lists it under Partitions, base city Gardnerville, NV, with company phone (775) 230-2106 and legal name Commercial Restroom Solutions, LLC. The profile says not BBB accredited and BBB file opened 12/13/2006. It shows no license info and no website. The company is about 50 miles south of Reno, in Douglas County."
+    }
+   ],
+   "registries": [
+    "Nevada State Contractors Board license search (app.nvcontractorsboard.com ContractorLicenseSearch.aspx): reachable, but it is an interactive postback form with no URL query, so no automated lookup was done (rules forbid form submission)",
+    "Reno local registry: none required per area rules",
+    "WebSearch (2 of 4 used): no license number for the company found in public results",
+    "BBB (bbb.org) profile: business listing only, no license info; not an official registry"
+   ]
+  },
+  {
+   "state": "OR",
+   "results": [
+    {
+     "name": "W.H. Cress Company, Inc.",
+     "area": "eugene",
+     "status": "not_online",
+     "registry": "Oregon Construction Contractors Board (CCB) License Search, https://search.ccb.state.or.us/search/",
+     "license_number": "",
+     "license_type": "",
+     "source_url": "https://search.ccb.state.or.us/search/search_result.aspx?id=62812",
+     "note": "Checked 2026-11-20. The official CCB name search is an ASP.NET form protected by reCAPTCHA, so it couldn't be run automatically. The direct result URL (search_result.aspx?id=62812) loaded but left License #, Status and First Licensed blank. It did show $0 unpaid claims, $0 unpaid civil penalties, no complaints, no discipline and no administrative suspensions for that record ID. A third-party site (https://www.ccblookup.com/contractor/wh-cress-company-62812/, not official) lists CCB #62812, WH Cress Company Inc, Tigard, Active, CSC2 (Commercial Specialty Contractor Level 2), expiring 2027-01-16. Confirm on the CCB site by hand or by calling the CCB at 503-378-4621. The company site (https://www.whcress.com/) says 'Our primary building specialty products are commercial washroom partitions and accessories', gives Tigard, OR in the footer and a Portland, OR HQ heading, and shows no CCB number or phone."
+    },
+    {
+     "name": "Building Material Specialties, Inc. (BMS)",
+     "area": "eugene",
+     "status": "not_online",
+     "registry": "Oregon Construction Contractors Board (CCB) License Search, https://search.ccb.state.or.us/search/",
+     "license_number": "",
+     "license_type": "",
+     "source_url": "https://search.ccb.state.or.us/search/search_result.aspx?id=58313",
+     "note": "Checked 2026-11-20. The official CCB name search is protected by reCAPTCHA, so it couldn't be run automatically. The direct result URL (search_result.aspx?id=58313) loaded but left license number, status and name blank. It did show $0 unpaid claims and penalties, no complaints, no discipline and no administrative suspensions. A third-party site (https://www.ccblookup.com/contractor/building-material-specialties-58313/, not official) lists CCB #58313, Building Material Specialties Inc, Hillsboro, Active, commercial specialty contractor, valid through 2026-12-12 (so it's due for renewal soon). Confirm on the CCB site by hand or by calling the CCB at 503-378-4621. The company site (https://www.buildingmaterialspecialties.com/) lists Hillsboro, OR, phone (503) 640-1886, and 'Toilet Partitions' as a product category. It doesn't say whether the company installs them. No CCB number is on the site."
+    }
+   ],
+   "registries": [
+    "Oregon CCB License Search (https://search.ccb.state.or.us/search/default.aspx): the name search form needs a reCAPTCHA token, so automated lookup didn't work. The direct result URL search_result.aspx?id=<n> loads but leaves name, license number and status blank; only the claims and complaint history shows.",
+    "Eugene: no local contractor license rule given for this area, so no city registry was checked.",
+    "Third-party ccblookup.com (not official) was found by web search and is noted only as a lead for confirming by hand."
+   ]
+  },
+  {
+   "state": "AR",
+   "results": [
+    {
+     "name": "D10 Specialties, LLC",
+     "area": "northwest-arkansas",
+     "status": "not_online",
+     "registry": "Arkansas Contractors Licensing Board, Find a Licensed Contractor (aclb2.arkansas.gov/clbsearch.php)",
+     "license_number": "",
+     "license_type": "",
+     "source_url": "https://labor.arkansas.gov/licensing/arkansas-contractors-licensing-board/find-a-licensed-contractor/",
+     "note": "Could not check the license. The board's only online search, linked from the page above and from portal.arkansas.gov/service/licensed-contractor-search, is http://aclb2.arkansas.gov/clbsearch.php, and it returned HTTP 503 or reset the connection on every try on 2026-11-20. The company site (https://d10-specialties.com/) serves general contractors across Northwest Arkansas and names no base city. It lists 'Bathroom Accessories & Partitions' (install of restroom accessories, partitions, grab bars, wall protection) and shows no license number. Arkansas requires a commercial license for jobs of $50,000 or more, so many partition installs fall under that amount. Next step: confirm by phone with the board, or check the online search again later."
+    },
+    {
+     "name": "GoPunchlist (division of Specialty Construction Solutions, LLC)",
+     "area": "northwest-arkansas",
+     "status": "not_online",
+     "registry": "Arkansas Contractors Licensing Board, Find a Licensed Contractor (aclb2.arkansas.gov/clbsearch.php)",
+     "license_number": "",
+     "license_type": "",
+     "source_url": "https://labor.arkansas.gov/licensing/arkansas-contractors-licensing-board/find-a-licensed-contractor/",
+     "note": "Could not check the license. The board's online search (http://aclb2.arkansas.gov/clbsearch.php) returned HTTP 503 or reset the connection on 2026-11-20. The company site (https://www.gopunchlist.com/) gives Springdale, AR as the base city and says 'Licensed and Insured' but shows no license number. It lists a Restrooms service (supply, service, install, replace) and Misc. Specialties, but does not name toilet partitions. A third-party NAICS directory (https://naicslist.com/company-profile/specialty-construction-solutions-llc-springdale-ar-72765) lists Specialty Construction Solutions, LLC in Springdale as a finish carpentry contractor (NAICS 238350); that is not an official record. Next step: confirm the license under the LLC name by phone with the board, or check the online search again later."
+    }
+   ],
+   "registries": [
+    "Arkansas Contractors Licensing Board online search (http://aclb2.arkansas.gov/clbsearch.php, linked from labor.arkansas.gov and portal.arkansas.gov): automated lookup failed. Every request on 2026-11-20 got HTTP 503 or a connection reset. Mark both businesses for a phone check or a manual check later.",
+    "Local (Northwest Arkansas): no local rule given for the area, so no city registry was checked.",
+    "Arkansas Secretary of State business entity search: not checked."
+   ]
+  },
+  {
+   "state": "ME",
+   "results": [
+    {
+     "name": "Commercial Installation Corporation",
+     "area": "portland-me",
+     "status": "not_required_online_check",
+     "registry": "None applies: Maine has no state general or specialty contractor license (Maine Attorney General, Home Construction and Repair page); no Portland, ME city contractor registration recorded for this area",
+     "source_url": "https://www.maine.gov/ag/consumer/housing/home_construction.shtml",
+     "note": "Maine does not license general contractors or partition installers at the state level. The Maine AG page says: 'In Maine, general contractors - and trades such as roofing and framing - are not licensed or regulated.' That reading comes from research/state-licensing/states.json (law_verified true, checked 2026-11-19). The Maine PFR professions page returned 403 when fetched on 2026-11-20. The area's local rule is 'none', so there was no registry to search. The company website (http://www.cic2010.net/, read 2026-11-20) says the company is based in Lewiston, ME, was established in 1979, and serves Maine and New England. It lists toilet partitions and accessories, doors, frames, hardware, operable walls and specialty products. The site shows no license numbers. Company phone: (207) 784-7943. No Maine Secretary of State entity search was run."
+    },
+    {
+     "name": "Door Systems Corp.",
+     "area": "portland-me",
+     "status": "not_required_online_check",
+     "registry": "None applies: Maine has no state general or specialty contractor license (Maine Attorney General, Home Construction and Repair page); no Portland, ME city contractor registration recorded for this area",
+     "source_url": "https://thebluebook.com/iProView/1074024/door-systems-corp/material-suppliers",
+     "note": "No state or city license applies to this work in Maine or Portland, ME. Source: https://www.maine.gov/ag/consumer/housing/home_construction.shtml. The source_url is a Blue Book directory listing, not an official registry, and it was seen only as a web search summary, not opened directly. The summary gives Door Systems Corp. in Lewiston, ME with 5-9 employees, serving Maine and Vermont. Its lines include overhead and rolling steel doors and toilet and cubicle partitions. No company website was found, and no phone or license number was read. No Maine Secretary of State entity search was run."
+    }
+   ],
+   "registries": [
+    "Maine Dept. of Professional and Financial Regulation, professions page (https://www.maine.gov/pfr/professionallicensing/professions): returned 403 to automated fetch. It doesn't matter here because Maine has no state general or partition contractor license.",
+    "Maine Attorney General, Home Construction and Repair page (https://www.maine.gov/ag/consumer/housing/home_construction.shtml): already verified 2026-11-19 in research/state-licensing/states.json and not re-fetched today. It confirms no statewide GC license.",
+    "Portland, ME local contractor registry: none, because the area rule is 'none (no city contractor registration)'.",
+    "Maine Secretary of State business entity search: not run."
+   ]
+  },
+  {
+   "state": "NH",
+   "registries": [
+    "New Hampshire OPLC: no state contractor license for general or specialty interior work such as partition installation (repo research/state-licensing/states.json, status no_state_license, medium confidence; OPLC site returned 403 to automated access in the earlier research pass). No lookup needed, so none attempted.",
+    "Manchester, NH: no local contractor license or registration rule for this area (per the task's area rules). No registry to check.",
+    "Maine (Portland, ME area): no statewide contractor license (Maine Attorney General Home Construction page, https://www.maine.gov/ag/consumer/housing/home_construction.shtml, cited in states.json). The task gave no Portland, ME local rule and research/local-rules/cities.json has no portland-me entry, so the city rule is unconfirmed.",
+    "NH Secretary of State business search (QuickStart) not checked: no license applies, and it is only a business-entity record."
+   ],
+   "results": [
+    {
+     "name": "Granite State Specialties",
+     "area": "portland-me",
+     "status": "not_required_online_check",
+     "registry": "None applies: New Hampshire (base, Raymond) and Maine have no state contractor license for partition installation",
+     "license_type": "",
+     "license_number": "",
+     "source_url": "https://www.maine.gov/ag/consumer/housing/home_construction.shtml",
+     "note": "NH: no state contractor license (OPLC licenses trades like electricians and plumbers only). Maine: no statewide contractor license per the Maine AG page. The task gave no Portland, ME local rule and the repo has no portland-me entry in cities.json, so check whether Portland requires any city registration before work starts. Nothing looked up online."
+    },
+    {
+     "name": "Granite State Specialties",
+     "area": "manchester-nh",
+     "status": "not_required_online_check",
+     "registry": "None applies: NH OPLC has no state contractor license for this work; Manchester has no local rule",
+     "license_type": "",
+     "license_number": "",
+     "source_url": "",
+     "note": "Based in Raymond, NH. Neither the state nor Manchester requires a contractor license or registration for partition installation, so no registry lookup applies. Checked 2026-11-20 against the task's area rules."
+    },
+    {
+     "name": "Construction Specialties Installations (Construction Specialties, Inc. / CSI)",
+     "area": "manchester-nh",
+     "status": "not_required_online_check",
+     "registry": "None applies: NH OPLC has no state contractor license for this work; Manchester has no local rule",
+     "license_type": "",
+     "license_number": "",
+     "source_url": "",
+     "note": "Based in Salem, NH. Neither the state nor Manchester requires a contractor license or registration for partition installation. Not verified: NH Secretary of State entity status (that is only a business record, not a license)."
+    },
+    {
+     "name": "New England Partition & Installation, LLC",
+     "area": "manchester-nh",
+     "status": "not_required_online_check",
+     "registry": "None applies: NH OPLC has no state contractor license for this work; Manchester has no local rule",
+     "license_type": "",
+     "license_number": "",
+     "source_url": "",
+     "note": "Based in Manchester, NH. Neither the state nor the city requires a contractor license or registration for partition installation. Not verified: NH Secretary of State LLC status."
+    },
+    {
+     "name": "Specialty Services of New England (SSNE)",
+     "area": "manchester-nh",
+     "status": "not_required_online_check",
+     "registry": "None applies: NH OPLC has no state contractor license for this work; Manchester has no local rule",
+     "license_type": "",
+     "license_number": "",
+     "source_url": "",
+     "note": "Based in Salem, NH. Neither the state nor Manchester requires a contractor license or registration for partition installation."
+    },
+    {
+     "name": "Kelley Bros (Hudson, NH office)",
+     "area": "manchester-nh",
+     "status": "not_required_online_check",
+     "registry": "None applies: NH OPLC has no state contractor license for this work; Manchester has no local rule",
+     "license_type": "",
+     "license_number": "",
+     "source_url": "",
+     "note": "Hudson, NH office. Neither the state nor Manchester requires a contractor license or registration for partition installation. If Kelley Bros sends installers from offices in other states, those states' rules apply there."
+    }
+   ]
+  },
+  {
+   "state": "MA",
+   "results": [
+    {
+     "name": "Newton Building Specialties & Installation (Newton BSI)",
+     "area": "portland-me",
+     "status": "not_required_online_check",
+     "registry": "None applies: Maine has no statewide general or specialty contractor license (Maine Attorney General, Home Construction and Repair page); no Portland, ME city rule is on file in research/local-rules/cities.json and none was given for this area",
+     "source_url": "https://www.maine.gov/ag/consumer/housing/home_construction.shtml",
+     "note": "Checked 2026-11-20. Maine licenses trades such as plumbers and electricians but not partition installers, per research/state-licensing/states.json (law_url read 2026-11-19). The project has no local rule for Portland, ME, so Portland building and code enforcement remains unconfirmed. The business is based in Westborough, MA. Massachusetts home improvement contractor registration covers only owner-occupied homes of 1 to 4 units, and its construction supervisor license applies only to Massachusetts permits, so neither applies to work in Maine. The company homepage (newtonbsi.com) showed only its title, with no license number or service area. No license number was recorded."
+    },
+    {
+     "name": "Newton Building Specialties & Installation (Newton BSI)",
+     "area": "manchester-nh",
+     "status": "not_required_online_check",
+     "registry": "None applies: New Hampshire has no statewide general or specialty contractor licensing statute (RSA Title XXX table of contents lists only trade chapters such as electricians 319-C and plumbers 329-A); no Manchester, NH city rule is on file in research/local-rules/cities.json and none was given for this area",
+     "source_url": "https://gc.nh.gov/rsa/html/NHTOC/NHTOC-XXX.htm",
+     "note": "Checked 2026-11-20. New Hampshire's status is no_state_license at medium confidence in research/state-licensing/states.json. No official page says outright that New Hampshire has no contractor license, so this should be confirmed with OPLC. Manchester local permit or registration rules are not confirmed. The business is based in Westborough, MA, and Massachusetts registrations do not govern work in New Hampshire. The company homepage (https://www.newtonbsi.com/) showed only its title, with no license number. No license number was recorded."
+    }
+   ],
+   "registries": [
+    "Maine: no state contractor license registry applies (no statewide contractor license per the Maine AG page cited in research/state-licensing/states.json); no automated lookup needed",
+    "New Hampshire: no state contractor license registry applies (no statute in RSA Title XXX; OPLC pages returned 403 in earlier research); no automated lookup needed",
+    "Portland, ME and Manchester, NH: no city rule was supplied in the task and none is in research/local-rules/cities.json, so no city registry was checked",
+    "Massachusetts (base state, Westborough): construction supervisor license and HIC lookups on mass.gov were not used because work in ME and NH falls outside them; earlier research found mass.gov returns 403 to automated access",
+    "Company site newtonbsi.com fetched: only the page title loaded, with no license details"
+   ]
+  },
+  {
+   "state": "VT",
+   "results": [
+    {
+     "name": "Kelley Bros of New England, LLC",
+     "area": "burlington-vt",
+     "status": "not_required_online_check",
+     "registry": "None applies: Vermont Office of Professional Regulation residential contractor registration covers residential jobs only; Burlington has no city contractor license rule on file",
+     "note": "Vermont has no state contractor license for commercial partition installation. State registration (26 V.S.A. ch. 106, s. 5501) applies only to residential contractors on jobs of $10,000 or more in buildings of four or fewer units. Only electrical and plumbing are state-licensed. The project's local rule for Burlington is 'none'. No lookup was run, and no license number is recorded. The OPR residential contractor page returned HTTP 403 to automated fetch on 2026-11-20. Its registration lookup was not used because commercial partition work falls outside it. Base city: Williston. Checked 2026-11-20.",
+     "source_url": "https://legislature.vermont.gov/statutes/section/26/106/05501"
+    },
+    {
+     "name": "Commercial Door Co. LLC",
+     "area": "burlington-vt",
+     "status": "not_required_online_check",
+     "registry": "None applies: Vermont Office of Professional Regulation residential contractor registration covers residential jobs only; Burlington has no city contractor license rule on file",
+     "note": "Vermont has no state contractor license for commercial partition installation. State registration (26 V.S.A. ch. 106, s. 5501) applies only to residential contractors on residential jobs of $10,000 or more. The project's local rule for Burlington is 'none'. No lookup was run, and no license number is recorded. Base city: Williamstown. Checked 2026-11-20.",
+     "source_url": "https://legislature.vermont.gov/statutes/section/26/106/05501"
+    }
+   ],
+   "registries": [
+    "Vermont Office of Professional Regulation residential contractor page (sos.vermont.gov/residential-contractors/): HTTP 403 to automated fetch on 2026-11-20. Not needed anyway: registration is residential-only, $10,000+ jobs.",
+    "Vermont statute 26 V.S.A. s. 5501 (legislature.vermont.gov): verified earlier in the project's state-licensing research (law_verified true in research/state-licensing/states.json). Not re-fetched in this run.",
+    "Burlington, VT city registry: none, since the area rule is 'none'.",
+    "Vermont Secretary of State business entity search: not checked (optional, and it is not a license)."
+   ]
+  },
+  {
+   "state": "WV",
+   "results": [
+    {
+     "name": "Charleston Acoustics",
+     "area": "charleston-wv",
+     "status": "not_found",
+     "registry": "West Virginia Contractor Licensing Board license verification (wvclboard.wv.gov/verify/)",
+     "source_url": "https://wvclboard.wv.gov/verify/",
+     "license_type": "WV contractor license (state, above threshold)",
+     "note": "Checked 2026-11-20. The board's public search (same endpoint the page's form uses) returned 0 records for company name 'Charleston Acoustics', 0 for 'Charleston Acou', and 0 for DBA 'Charleston Acoustics'. A broader name search for 'Acoustics' returned 1 record, but the result rows would not load outside the browser page, so it's not known whether that record is this company. Confirm with one browser search on the board site or a call to the board at (304) 558-7890. The company website (https://www.charlestonacoustics.com/) describes Charleston Acoustics Inc. as a supplier of commercial interior and specialty products, including toilet partitions and accessories. It lists stores in Charleston WV, Daniels WV, Huntington WV and Gallipolis OH, with Charleston office phone (304) 343-1332, and shows no WV contractor license number. A third-party government bidder directory (https://governmentbidders.com/government-bidders/contractor-5621124-CHARLESTON-ACOUSTIC.htm, from search results only, not opened) lists the company under NAICS 423390, a wholesale supply code. So it may be a distributor that doesn't install, and its install capability needs confirming before listing it as an installer. Local rule for Charleston: no separate city contractor license."
+    }
+   ],
+   "registries": [
+    "West Virginia Contractor Licensing Board verify search (https://wvclboard.wv.gov/verify/): automated name search worked partly. The search returned record counts (0 for 'Charleston Acoustics' and its variants), but the result rows came back empty outside the browser, so the one 'Acoustics' hit could not be identified. I stopped there and did not try to work around the site.",
+    "City of Charleston, WV: no city contractor registry needed (area rule: local none). The city requires proof of an active state license for building permits."
+   ]
+  },
+  {
+   "state": "CO",
+   "results": [
+    {
+     "name": "Colorado Specialties, Inc.",
+     "area": "cheyenne (base: Golden, CO)",
+     "status": "not_online",
+     "registry": "City of Cheyenne contractor licensing search (OpenGov portal, cheyennewy.portal.opengov.com)",
+     "source_url": "https://www.cheyennecity.org/Your-Government/Departments/Compliance-Division/Building-Permitting-Licensing",
+     "license_type": "City of Cheyenne contractor license (Class D specialty or higher, likely)",
+     "note": "The work is in Cheyenne, WY, so Colorado rules don't apply. Wyoming has no state contractor license except electrical (Wyoming Business Council, in states.json). Cheyenne's Contractor Licensing Regulations (rev 03/10/2026) require a contractor license 'in order to perform work in the building construction industry'. Section 19.0 says the Class D license covers 'all other contractors not included within categories above, who perform any type of work on any building'. Toilet partitions aren't named in any category, so the class has to be confirmed with Cheyenne Building Safety, 307-637-6265. The city page says 'Each company is required to have a Contracting Company license and an Individual Qualified Supervisor' and that licenses can be searched on the OpenGov portal (https://cheyennewy.portal.opengov.com/search). That portal is a JavaScript app: the automated fetch returned only the word 'OpenGov', so the license status could not be read. Check it by hand in a browser. Rules PDF: https://www.cheyennecity.org/files/sharedassets/public/v/3/departments/compliance-division/building/contractor-licensing-board-rules-and-regs-3.10.26.pdf. Checked 2026-11-20."
+    },
+    {
+     "name": "Continental Partition Systems, LLC",
+     "area": "cheyenne (base: Frederick, CO)",
+     "status": "not_online",
+     "registry": "City of Cheyenne contractor licensing search (OpenGov portal, cheyennewy.portal.opengov.com)",
+     "source_url": "https://www.cheyennecity.org/Your-Government/Departments/Compliance-Division/Building-Permitting-Licensing",
+     "license_type": "City of Cheyenne contractor license (Class D specialty or higher, likely)",
+     "note": "Same rule as Colorado Specialties: Cheyenne requires a city contractor license (company license plus a qualified supervisor), with Class D as the catch-all category under section 19.0 of the regulations (rev 03/10/2026). The OpenGov license search is a JavaScript app and returned no readable content to an automated fetch, so the status could not be read. Check it by hand at https://cheyennewy.portal.opengov.com/search or call Building Safety at 307-637-6265. Wyoming has no state license for this work. Checked 2026-11-20."
+    },
+    {
+     "name": "Associated Building Specialties (ABS)",
+     "area": "cheyenne (base: Broomfield, CO)",
+     "status": "not_online",
+     "registry": "City of Cheyenne contractor licensing search (OpenGov portal, cheyennewy.portal.opengov.com)",
+     "source_url": "https://www.cheyennecity.org/Your-Government/Departments/Compliance-Division/Building-Permitting-Licensing",
+     "license_type": "City of Cheyenne contractor license (Class D specialty or higher, likely)",
+     "note": "Cheyenne requires a city contractor license for building construction work (regulations rev 03/10/2026; Class D covers 'all other contractors'). The OpenGov license search could not be read automatically because it is a JavaScript app, so the status is unknown. Check it by hand at https://cheyennewy.portal.opengov.com/search or call 307-637-6265. Wyoming has no state license for this work. Checked 2026-11-20."
+    },
+    {
+     "name": "Specialties Contracting, Inc.",
+     "area": "cheyenne (base: Longmont, CO)",
+     "status": "not_online",
+     "registry": "City of Cheyenne contractor licensing search (OpenGov portal, cheyennewy.portal.opengov.com)",
+     "source_url": "https://www.cheyennecity.org/Your-Government/Departments/Compliance-Division/Building-Permitting-Licensing",
+     "license_type": "City of Cheyenne contractor license (Class D specialty or higher, likely)",
+     "note": "Cheyenne requires a city contractor license for building construction work (regulations rev 03/10/2026; Class D covers 'all other contractors'). The OpenGov license search could not be read automatically because it is a JavaScript app, so the status is unknown. Check it by hand at https://cheyennewy.portal.opengov.com/search or call 307-637-6265. Wyoming has no state license for this work. Checked 2026-11-20."
+    }
+   ],
+   "registries": [
+    "Wyoming state: no contractor license except electrical (Wyoming Business Council, already recorded in research/state-licensing/states.json); no state lookup needed for partitions.",
+    "Colorado state: no general or specialty contractor license (DORA); not relevant here because the work is in Cheyenne, WY.",
+    "City of Cheyenne Contractor Licensing Regulations PDF (rev 03/10/2026): read successfully; contractor license required for building construction work, and Class D is the catch-all for other trades. https://www.cheyennecity.org/files/sharedassets/public/v/3/departments/compliance-division/building/contractor-licensing-board-rules-and-regs-3.10.26.pdf",
+    "City of Cheyenne OpenGov license search (https://cheyennewy.portal.opengov.com/search): automated lookup failed. The page is a JavaScript app and returned no content. A direct query to its backing API was blocked by the session's permission policy, and I did not try to get around that. Manual browser check or a call to Building Safety (307-637-6265) is needed."
+   ]
+  }
+ ],
+ "dropped": []
+}

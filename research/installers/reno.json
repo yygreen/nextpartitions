@@ -1,0 +1,163 @@
+{
+ "area": "reno",
+ "found_count": 5,
+ "sources_tried": [
+  "Seed file reno.json: worked. 43 maps rows and no web rows. Almost all were plumbers, remodelers, glass and cabinet shops. Western Partitions (wpibuilds.com) is a drywall and wall-systems sub with no toilet partition work (rejected in earlier las-vegas research). Public Restroom Company makes prefab restroom buildings and was excluded. Oswald Construction (oswaldconstruction.net) was checked: carpentry and millwork only, no partitions shown, excluded.",
+  "Existing repo research (stockton.json, las-vegas.json, sacramento.json): worked; found Demar Specialties (serves Reno). Stumbaugh & Associates and Pro West Wall Products (West Sacramento) install partitions, but their sites don't mention Nevada, so they were excluded.",
+  "Bobrick find-a-rep: page loaded but rep dropdown didn't render, no data.",
+  "Scranton Products find-a-rep: 404. Hadrian find-a-rep: 404. General Partitions find-a-rep: 404. Metpar representatives: 404. ASI, Bradley and Ampco were not retried (they failed in earlier areas).",
+  "The Blue Book: 403 blocked.",
+  "Levelset (nevada/specialties and reno/finishes): 403 blocked.",
+  "Procore network public pages: worked (reno/specialties, reno/toilet-and-bath-accessories, reno/partitions, profiles for Reno Door & Trim, American Sheet Metal Partition, and Mee 2 Inc, which is a forklift/equipment firm and was excluded).",
+  "BBB Nevada partition category and profile: worked (Commercial Restroom Solutions).",
+  "One Point Partitions Nevada page: 403 (national online seller, excluded anyway). asmp-div10.com: 503. City of Sparks bid document: 503. renodoorsandtrim.com: loaded but shows a different business (Nevada Trimpak cabinet refacing).",
+  "Performance Contracting Reno branch page: worked; locations index 404.",
+  "WebSearch: 7 of 7 used. Queries: 'toilet partition installation Reno NV'; 'Division 10 specialties contractor Reno Nevada toilet partitions'; 'Reno Door & Trim toilet partitions'; 'restroom partitions installer Northern Nevada Sparks Carson City'; 'toilet partitions Reno/Sparks specialties installer'; 'Commercial Restroom Solutions Gardnerville'; and 'Washoe County School District toilet partitions subcontractor'. They returned mostly residential toilet installers, national online sellers and bid listings, with no dedicated Reno toilet-partition installer found. No Yelp pages came up."
+ ],
+ "candidates": [
+  {
+   "name": "Demar Specialties, LLC",
+   "base_city": "Manteca",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "ASI Group",
+    "Bradley",
+    "Scranton Products",
+    "JL Industries",
+    "Hallowell",
+    "Metpar"
+   ],
+   "within_area": "no",
+   "website": "https://www.demarspecialties.com/",
+   "contact_page": "https://www.demarspecialties.com/contact-us",
+   "evidence_urls": [
+    "https://www.demarspecialties.com/",
+    "https://www.demarspecialties.com/contact-us"
+   ],
+   "partition_evidence": "Homepage lists toilet partitions first among its Division 10 products, offered as furnish & install or supply-only, for commercial contractors.",
+   "reason": "A real Division 10 sub that installs toilet partitions and says it serves Northern/Central California and Reno, NV, with a Nevada license number (NV #0086118) on its site. It is based about 140 miles from Reno in a straight line, beyond the 120-mile regional limit, and it supplies partitions itself. That is why it is possible, not strong.",
+   "red_flags": [
+    "Base about 140 mi from Reno (beyond the 120-mi regional limit), though the site names Reno, NV as a service area",
+    "Authorized distributor that sells partitions supply-only: a buy-around risk",
+    "No phone or email published on site; contact form only"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Commercial Restroom Solutions, LLC",
+   "base_city": "Gardnerville",
+   "state": "NV",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "nearby",
+   "phone": "(775) 230-2106",
+   "review_source": "BBB (not accredited, no rating shown)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/nv/category/partition"
+   ],
+   "partition_evidence": "BBB lists it under the Partitions and Bathroom Remodel categories. No website, project photos or service list found.",
+   "reason": "The company name and BBB 'Partitions' category point to restroom partition work, and it is about 15 miles from Carson City. But the BBB gives its service area as Douglas County only, and no website or project evidence confirms commercial partition installation.",
+   "red_flags": [
+    "No website found",
+    "BBB service area listed as Douglas County, NV only",
+    "Not BBB accredited; no rating or reviews shown"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Commercial Restroom Solutions, LLC",
+    "area": "reno",
+    "status": "not_online",
+    "registry": "Nevada State Contractors Board (NSCB) License & Disciplinary Search, https://app.nvcontractorsboard.com/Clients/NVSCB/Public/ContractorLicenseSearch/ContractorLicenseSearch.aspx",
+    "license_type": "unknown",
+    "license_number": "",
+    "source_url": "https://app.nvcontractorsboard.com/Clients/NVSCB/Public/ContractorLicenseSearch/ContractorLicenseSearch.aspx",
+    "note": "Nevada requires a state contractor license (NSCB). The NSCB search is an interactive ASP.NET form: you pick Search By (license number, company name or principal) and the page posts back. It can't be queried by URL, and the rules forbid submitting forms, so the license status was not checked. Look it up manually by company name. Two web searches (2026-11-20) found no published NSCB license number for this company. Its BBB profile (https://www.bbb.org/us/nv/gardnerville/profile/partition/commercial-restroom-solutions-llc-1126-90002229) lists it under Partitions, base city Gardnerville, NV, with company phone (775) 230-2106 and legal name Commercial Restroom Solutions, LLC. The profile says not BBB accredited and BBB file opened 12/13/2006. It shows no license info and no website. The company is about 50 miles south of Reno, in Douglas County."
+   },
+   "score": 25
+  },
+  {
+   "name": "American Sheet Metal Partition Co., Inc.",
+   "base_city": "McClellan (Sacramento area)",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "website": "https://www.asmp-div10.com",
+   "evidence_urls": [
+    "https://www.asmp-div10.com"
+   ],
+   "partition_evidence": "Not verified: the company website returned 503 / no connection on every attempt. The name and domain (div10) suggest Division 10 partition work.",
+   "reason": "I couldn't read the company's own site. Search snippets (third-party, not read directly) place it in McClellan, CA, about 110 miles from Reno, with a California license and a California-counties service list. I found no sign that it serves the state of Nevada. Recheck when the site is up.",
+   "red_flags": [
+    "Website unreachable (503) at check time",
+    "No evidence of Nevada service area or Nevada contractor license"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  },
+  {
+   "name": "Performance Contracting Inc. (PCI), Reno Commercial branch",
+   "base_city": "Reno",
+   "state": "NV",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "brands": [],
+   "within_area": "yes",
+   "website": "https://www.performancecontracting.com/branch/reno/",
+   "phone": "775-412-9800",
+   "contact_page": "https://www.performancecontracting.com/contact-us/",
+   "evidence_urls": [
+    "https://www.performancecontracting.com/branch/reno/",
+    "https://www.performancecontracting.com/",
+    "https://www.performancecontracting.com/service/commercial-doors-hardware/"
+   ],
+   "partition_evidence": "None. The 35 listed services (drywall, ceilings, insulation, doors & hardware and others) don't include toilet partitions, toilet accessories or Division 10 specialties. The Doors & Hardware page lists only doors, hardware, locks and access control.",
+   "reason": "A large commercial interiors and insulation contractor with a Reno branch, but nothing shows toilet partition installation.",
+   "red_flags": [
+    "No partition or Division 10 service listed"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Reno Door & Trim",
+   "base_city": "Reno",
+   "state": "NV",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "unknown",
+   "sells_partitions": "no",
+   "brands": [],
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://www.renodoorandtrim.com/",
+    "https://talents.vaia.com/companies/reno-door-trim"
+   ],
+   "partition_evidence": "None found. Its site returned 503; directory and job-board listings describe only door and trim supply and installation.",
+   "reason": "No evidence of toilet partition or Division 10 work. It appears to be a door and trim business.",
+   "red_flags": [
+    "Website unreachable at check time",
+    "No partition evidence"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 15
+  }
+ ]
+}

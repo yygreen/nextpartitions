@@ -1,0 +1,96 @@
+{
+ "area": "charleston-wv",
+ "found_count": 2,
+ "sources_tried": [
+  "Seed file charleston-wv.json (maps + web): worked. Nearly all results were residential remodelers, plumbers, stores or chains. Of the two seeds checked, Affordable Contracting Solutions is residential only. Architectural Interior Products is the only plausible seed.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded, but the results come from a JS dropdown, so no WV data could be read",
+  "Scranton Products find-product-specialist: worked. It lists only a manufacturer rep for KY/OH/PA/WV and no dealers or installers, so nothing was used",
+  "Scranton /find-a-rep, Hadrian /find-a-rep, ASI (americanspecialties.com/find-a-rep): 404",
+  "Bradley find-a-rep: no content readable (JS)",
+  "General Partitions /distributors: page has no distributor list",
+  "Metpar toilet-partition-installation page: no locator. It says to contact Metpar for a referral to a local distributor",
+  "Ampco/Ammco, ASI Global Partitions/Accurate locators: not reached (no working locator URL found)",
+  "The Blue Book search: 403 blocked. Web search found no WV Blue Book partition installer",
+  "BuildingConnected / Procore public profiles: not reached in search results",
+  "WebSearch (7 of 7 used): Charleston/WV Division 10 and toilet partition queries; Huntington/Morgantown/Parkersburg variant; regional (Pittsburgh/Ohio/Kentucky) Division 10 query; WV bid tabulation query. These found mostly national online sellers with no local base (One Point Partitions, Partition Plus in Forest Hill MD, The Partition Pros, toiletpartitions.com, Southwest Solutions, Newton Distributing), which were skipped. CIH (Indiana/KY, installs nationwide) is beyond 120 miles. Partitions Inc of West Virginia (Marmet) appears only in a 1984 OSHA record, with no current presence.",
+  "WV Purchasing Division bid PDFs (state.wv.us): 503 unavailable",
+  "onepointpartitions.com and accessories.toiletpartitions.com: 403 blocked",
+  "Yelp/BBB: no relevant listings surfaced in searches"
+ ],
+ "candidates": [
+  {
+   "name": "Charleston Acoustics",
+   "base_city": "Charleston",
+   "state": "WV",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Metpar",
+    "All American Metal Corp (AAMCO)",
+    "Scranton Products",
+    "Ampco",
+    "Bradley",
+    "General Partitions",
+    "American Specialties (ASI)"
+   ],
+   "website": "https://www.charlestonacoustics.com/",
+   "phone": "(304) 343-1332",
+   "contact_page": "https://www.charlestonacoustics.com/",
+   "partition_evidence": "Lists a 'Toilet Accessories & Partitions' supply category (Metpar, AAMCO, Scranton, Ampco, Bradley, General Partitions, ASI). The partitions page has no installation wording; the business describes itself as a 'Commercial Interior & Specialty Supplier Since 1981'.",
+   "red_flags": [
+    "Supplier and distributor of partitions and the same brands Next Partitions resells: high buy-around risk",
+    "No evidence on its site that it installs",
+    "The only emails on the site belong to named store managers, so no generic company email is given here"
+   ],
+   "evidence_urls": [
+    "https://www.charlestonacoustics.com/",
+    "https://www.charlestonacoustics.com/toilet-accessories-partitions/"
+   ],
+   "reason": "A commercial specialty building-products supplier with branches in Charleston, Huntington and Daniels WV and Gallipolis OH. It sells toilet partitions but shows no installation service, so it is a competitor or supplier rather than a proven installer. It might know or refer local installers.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Charleston Acoustics",
+    "area": "charleston-wv",
+    "status": "not_found",
+    "registry": "West Virginia Contractor Licensing Board license verification (wvclboard.wv.gov/verify/)",
+    "source_url": "https://wvclboard.wv.gov/verify/",
+    "license_type": "WV contractor license (state, above threshold)",
+    "note": "Checked 2026-11-20. The board's public search (same endpoint the page's form uses) returned 0 records for company name 'Charleston Acoustics', 0 for 'Charleston Acou', and 0 for DBA 'Charleston Acoustics'. A broader name search for 'Acoustics' returned 1 record, but the result rows would not load outside the browser page, so it's not known whether that record is this company. Confirm with one browser search on the board site or a call to the board at (304) 558-7890. The company website (https://www.charlestonacoustics.com/) describes Charleston Acoustics Inc. as a supplier of commercial interior and specialty products, including toilet partitions and accessories. It lists stores in Charleston WV, Daniels WV, Huntington WV and Gallipolis OH, with Charleston office phone (304) 343-1332, and shows no WV contractor license number. A third-party government bidder directory (https://governmentbidders.com/government-bidders/contractor-5621124-CHARLESTON-ACOUSTIC.htm, from search results only, not opened) lists the company under NAICS 423390, a wholesale supply code. So it may be a distributor that doesn't install, and its install capability needs confirming before listing it as an installer. Local rule for Charleston: no separate city contractor license."
+   },
+   "score": 30
+  },
+  {
+   "name": "Architectural Interior Products (now Foundation Building Materials)",
+   "base_city": "Dunbar",
+   "state": "WV",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [
+    "Armstrong Ceilings"
+   ],
+   "website": "https://myfbm.com/",
+   "phone": "",
+   "contact_page": "",
+   "partition_evidence": "None seen. aipinc.biz now redirects (301) to myfbm.com. FBM's acquisition notice describes AIP as a commercial building-products business (Armstrong Ceilings, commercial doors), with branches in Dunbar, Parkersburg, Morgantown and Huntington.",
+   "red_flags": [
+    "Acquired by Foundation Building Materials (completion announced Jan 2022); the old website redirects to FBM",
+    "Building-materials distributor, not an installer",
+    "No toilet partition evidence found"
+   ],
+   "evidence_urls": [
+    "https://www.aipinc.biz/",
+    "https://www.fbmsales.com/?p=4975"
+   ],
+   "reason": "A commercial building-materials distributor that is now an FBM branch. Nothing seen shows that it installs, or even supplies, toilet partitions.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  }
+ ]
+}
