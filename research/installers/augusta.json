@@ -1,0 +1,384 @@
+{
+ "area": "augusta",
+ "found_count": 11,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/augusta.json: read. The Maps results were mostly plumbers and remodelers. The only partition-specific hits were Coach Partitions and RSA (restroomstallsandall.com).",
+  "Nearby area files atlanta.json, columbia.json, savannah.json and charlotte.json: used to cross-check regional Division 10 firms.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): worked but returned no rep, because the dropdown results are not in the static page.",
+  "Scranton Products where-to-buy: worked. It shows only the territory rep, Southern States Architectural Sales (678.425.8796), covering GA and SC, with no installers listed.",
+  "ASI, Bradley, Hadrian, Metpar, General Partitions and Ampco locators: not tried separately because of the fetch budget. ASI and Global Partitions turned up only as a manufacturer in search results.",
+  "The Blue Book: listing pages returned 403 (blocked). Only search snippets were seen, for New South Specialties, Partition Plus and Division 10 Specialties South (Trion GA, too far).",
+  "BuildingConnected and Procore: not tried.",
+  "WebSearch: all 8 allowed searches used (Augusta toilet partition installation, Division 10 Augusta, Aiken/North Augusta/Evans, Blue Book Augusta, furnish-and-install Augusta, SC Columbia/Aiken/Lexington, GA Augusta/Macon/Athens, Fort Gordon subcontractor). None found a Division 10 partition installer based in Augusta itself.",
+  "BBB category pages: Augusta GA partitions, Aiken SC partitions and Augusta shower all worked. They list only Atlanta or Charlotte firms, plus residential remodelers such as Southern Industries; no local partition installer.",
+  "One Point Partitions: found in search with an Augusta 'delivery terminal' (Doug Barnard Pkwy). It is an online seller and competitor, not a confirmed installer, so it was excluded.",
+  "Tallo job posting (Precision Walls Division 10 installer, Lexington SC): returned 410. Only the search snippet was seen.",
+  "Company sites fetched: coachpartitions.com, restroomstallsandall.com, terminusspecialties.com, precisionwalls.com, mccarthyinc.com, natspec.net, newsouthspecialties.com, mavenaccessories.com, accessoriesunlimited.net, masonhall.com (no service area; about 150 miles away, so excluded), inexsystems.com (page truncated; excluded), adamsinstalledproducts.com, carpentersinthehome.com."
+ ],
+ "candidates": [
+  {
+   "name": "Restroom Stalls and All (RSA)",
+   "base_city": "Gainesville",
+   "state": "GA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick",
+    "XLERATOR",
+    "Koala Kare"
+   ],
+   "within_area": "regional",
+   "reason": "Its site says it installs restroom partitions across the Southeast with its own W2 crews and lists Georgia in its service area. It is also a distributor that ships nationwide, so it could sell around us. It is about 115 miles from Augusta.",
+   "partition_evidence": "Homepage: 'installs restroom partitions across the Southeast with its own W2 crews'; Division 10 distributor and installer",
+   "website": "https://restroomstallsandall.com/",
+   "phone": "1-844-817-8255",
+   "email": "cs@restroomstallsandall.com",
+   "contact_page": "https://restroomstallsandall.com/pages/contact-us",
+   "rating": 4.9,
+   "review_source": "Google (as shown on company homepage)",
+   "evidence_urls": [
+    "https://restroomstallsandall.com/",
+    "https://members.ghcc.com/member-directory/Details/restroom-stalls-and-all-4018312"
+   ],
+   "red_flags": [
+    "Sells and ships partitions nationwide (buy-around risk)",
+    "Rating is self-reported on its own site; review count not shown"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Restroom Stalls and All (RSA)",
+    "area": "augusta",
+    "status": "not_online",
+    "registry": "Georgia State Licensing Board for Residential and General Contractors via Georgia SOS license verification (verify.sos.ga.gov)",
+    "source_url": "https://verify.sos.ga.gov/verification/",
+    "note": "Checked 2026-11-20. verify.sos.ga.gov and the SOS business search (ecorp.sos.ga.gov) both returned HTTP 403 to automated access, so no record could be read. Repo state research marks Georgia 'unclear': the state requires a license for general contracting over $2,500, but specialty trade work may be exempt. That isn't confirmed. Augusta has no local rule recorded for this area. It isn't on the Alabama GC roster either. Check by hand at verify.sos.ga.gov."
+   },
+   "score": 63
+  },
+  {
+   "name": "Terminus Specialties, Inc.",
+   "base_city": "McDonough",
+   "state": "GA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "regional",
+   "reason": "This Georgia commercial specialty installer lists restroom partitions and partition repair among its services and says it installs 'across the Southeast'. It also supplies products for pickup or delivery. It is about 120 to 135 miles from Augusta, at the edge of the regional range, and its site doesn't name Augusta.",
+   "partition_evidence": "Services list 'Restroom partitions' and 'Restroom partition hardware and repair kits'; 'Expert Specialty Product Installations Across the Southeast'",
+   "website": "https://www.terminusspecialties.com/",
+   "phone": "470-507-0587",
+   "contact_page": "https://www.terminusspecialties.com/contact-1",
+   "evidence_urls": [
+    "https://www.terminusspecialties.com/",
+    "https://www.terminusspecialties.com/contact-1"
+   ],
+   "red_flags": [
+    "Supplies products with optional installation (buy-around risk)",
+    "Near the edge of the 120-mile range; Augusta not named",
+    "Only email shown is a named individual's address, so it was omitted"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Terminus Specialties, Inc.",
+    "area": "augusta",
+    "status": "not_online",
+    "registry": "Georgia State Licensing Board for Residential and General Contractors via Georgia SOS license verification (verify.sos.ga.gov)",
+    "source_url": "https://verify.sos.ga.gov/verification/",
+    "note": "Checked 2026-11-20. The Georgia lookup returned HTTP 403, so no Georgia record could be read. Georgia's rule for partition installs is unclear, and Augusta has no local rule recorded. Separately, the Alabama GC Board roster (https://licensesearch.alabama.gov/genconbd/FullRosterReport) lists TERMINUS SPECIALTIES, Locust Grove, GA, phone (470) 507-0587, license S-62212, 'SUBCONTRACTOR: BATHROOM FIXTURES', expiring 7/31/2027. It's likely the same company: Locust Grove is next to McDonough, but the base city differs from the one given. That is an Alabama license, not a Georgia one. Check Georgia by hand at verify.sos.ga.gov."
+   },
+   "score": 63
+  },
+  {
+   "name": "Coach Partitions, LLC",
+   "base_city": "Columbia",
+   "state": "SC",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "no",
+   "reason": "Its site says 'We sell and install toilet partitions', and the owners install them on commercial and institutional jobs. Columbia is about 70 miles from Augusta, and the site states no service area, so coverage of Augusta is unconfirmed.",
+   "partition_evidence": "Homepage: 'We sell and install toilet partitions'; owners install; example projects include a public works building, a Best Buy and a turkey plant",
+   "website": "https://coachpartitions.com/",
+   "phone": "803-381-2937",
+   "email": "coachpartitions@gmail.com",
+   "contact_page": "https://coachpartitions.com/contact/",
+   "evidence_urls": [
+    "https://coachpartitions.com/",
+    "https://coachpartitions.com/contact/"
+   ],
+   "red_flags": [
+    "Sells partitions itself (buy-around risk)",
+    "No service area stated; Georgia coverage unknown",
+    "Gmail address"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Coach Partitions, LLC",
+    "area": "augusta",
+    "status": "not_online",
+    "registry": "South Carolina LLR Contractor's Licensing Board license lookup (verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69)",
+    "source_url": "https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69",
+    "note": "SC requires a state contractor license for commercial work over $10,000 (states.json, LLR 2023 update). The official LLR lookup requires a Google reCAPTCHA on each search, so it can't be checked by automated means; look it up by hand. The company website (https://coachpartitions.com/) shows no license number or classification. It gives its base as Columbia, SC, with company phone 803-381-2937. No local rule for the augusta area exists in research/local-rules/cities.json. Checked 2026-11-20."
+   },
+   "score": 55
+  },
+  {
+   "name": "Accessories Unlimited Inc (AUI)",
+   "base_city": "Stone Mountain",
+   "state": "GA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "regional",
+   "reason": "This commercial supplier of Division 8 and Division 10 products sells toilet partitions and lists 'Full Service Installation'. Its service area includes Georgia, South Carolina and four other Southeast states. The site doesn't show partition installation specifically.",
+   "partition_evidence": "Toilet Partitions product category plus 'Full Service Installation' under Services",
+   "website": "https://accessoriesunlimited.net/",
+   "phone": "404-298-1779",
+   "email": "sales@accunl.com",
+   "contact_page": "https://accessoriesunlimited.net/contact-us/",
+   "evidence_urls": [
+    "https://accessoriesunlimited.net/"
+   ],
+   "red_flags": [
+    "Primarily a supplier/distributor (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Accessories Unlimited Inc (AUI)",
+    "area": "augusta",
+    "status": "not_online",
+    "registry": "Georgia State Licensing Board for Residential and General Contractors via Georgia SOS license verification (verify.sos.ga.gov)",
+    "source_url": "https://verify.sos.ga.gov/verification/",
+    "note": "Checked 2026-11-20. The Georgia lookup returned HTTP 403, so no Georgia record could be read. Georgia's rule for partition installs is unclear, and Augusta has no local rule recorded. The company holds an Alabama subcontractor license S-54098 (bathroom accessories, cabinet installation, wall protection systems), current to 12/31/2026, per the Alabama GC Board roster (https://licensesearch.alabama.gov/genconbd/FullRosterReport). That isn't a Georgia license. Check Georgia by hand at verify.sos.ga.gov."
+   },
+   "score": 43
+  },
+  {
+   "name": "McCarthy, Inc.",
+   "base_city": "Savannah",
+   "state": "GA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "regional",
+   "reason": "This Southeast commercial supplier of doors, hardware and specialties lists toilet partitions and accessories, along with 'Service and Installation'. It doesn't say outright that it installs partitions. Savannah is about 120 miles from Augusta.",
+   "partition_evidence": "Products: 'Toilet Partitions, Accessories, and More'; services include 'Service and Installation'",
+   "website": "https://www.mccarthyinc.com/",
+   "phone": "912-236-4461",
+   "email": "bids@mccarthyinc.com",
+   "contact_page": "https://www.mccarthyinc.com/contact-us/",
+   "evidence_urls": [
+    "https://www.mccarthyinc.com/"
+   ],
+   "red_flags": [
+    "Supplier of partitions (buy-around risk)",
+    "Mainly a door and hardware distributor"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "McCarthy, Inc.",
+    "area": "augusta",
+    "status": "not_online",
+    "registry": "Georgia State Licensing Board for Residential and General Contractors via Georgia SOS license verification (verify.sos.ga.gov)",
+    "source_url": "https://verify.sos.ga.gov/verification/",
+    "note": "Checked 2026-11-20. The Georgia lookup and the SOS business search returned HTTP 403, so no record could be read. Georgia's rule for partition installs is unclear, and Augusta has no local rule recorded. Earlier repo research (2026-11-19, from mccarthyinc.com) describes the company as a Savannah door, frame and hardware supplier that lists toilet partitions as a product. It may be a supplier, not an installer. Not on the Alabama GC roster under this name. Check by hand at verify.sos.ga.gov."
+   },
+   "score": 43
+  },
+  {
+   "name": "Maven Accessories",
+   "base_city": "Juliette",
+   "state": "GA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "no",
+   "reason": "This Georgia Division 10 specialist works on commercial projects, lists toilet partitions and urinal screens, and was founded by people with commercial finish carpentry backgrounds. Its site doesn't state installation outright or name a service area. Juliette is about 110 miles from Augusta.",
+   "partition_evidence": "Lists toilet partitions, partitions, urinal screens among Division 10 offerings; project managers assigned per job",
+   "website": "https://mavenaccessories.com/",
+   "phone": "770-508-3887",
+   "contact_page": "https://www.mavenaccessories.com",
+   "evidence_urls": [
+    "https://mavenaccessories.com/"
+   ],
+   "red_flags": [
+    "No service area stated",
+    "Only email shown is a named individual's address, so it was omitted",
+    "Supplies products (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Maven Accessories",
+    "area": "augusta",
+    "status": "not_online",
+    "registry": "Georgia State Licensing Board for Residential and General Contractors via Georgia SOS license verification (verify.sos.ga.gov)",
+    "source_url": "https://verify.sos.ga.gov/verification/",
+    "note": "Checked 2026-11-20. The Georgia lookup returned HTTP 403, so no record could be read. Georgia's rule for partition installs is unclear, and Augusta has no local rule recorded. The Alabama GC roster has no 'Maven Accessories'; its Maven entries are unrelated companies in Hoover, AL and Chattanooga, TN. Check by hand at verify.sos.ga.gov."
+   },
+   "score": 40
+  },
+  {
+   "name": "Precision Walls, Inc.",
+   "base_city": "Lexington",
+   "state": "SC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "reason": "This is a large commercial wall and ceiling contractor with offices in Columbia, SC and Savannah, GA. It lists 'Division 10 & 12 Specialties' but never mentions toilet partitions, and its site doesn't name Augusta.",
+   "partition_evidence": "Services list 'Division 10 & 12 Specialties' without detail",
+   "website": "https://www.precisionwalls.com/",
+   "phone": "(919) 832-0380",
+   "contact_page": "https://precisionwalls.com/contact-us/",
+   "evidence_urls": [
+    "https://www.precisionwalls.com/"
+   ],
+   "red_flags": [
+    "Primarily drywall and ceilings; partitions not mentioned",
+    "Headquartered in Cary, NC; phone is HQ"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Precision Walls, Inc.",
+    "area": "augusta",
+    "status": "not_online",
+    "registry": "South Carolina LLR Contractor's Licensing Board license lookup (verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69)",
+    "source_url": "https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69",
+    "note": "The LLR lookup is gated by reCAPTCHA (no automated search). The company homepage (https://www.precisionwalls.com/) shows no license number. Its footer address is in Cary, NC, with phone (919) 832-0380, and it lists locations in Raleigh, Greensboro, Charlotte and Nashville. The homepage didn't show a Lexington, SC office, so confirm which branch serves SC. It may also hold NC licensing (NC Licensing Board for General Contractors), which wasn't checked. Checked 2026-11-20."
+   },
+   "score": 40
+  },
+  {
+   "name": "National Specialties Inc",
+   "base_city": "Columbia",
+   "state": "SC",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "brands": [
+    "PSiSC",
+    "Metpar",
+    "Penco",
+    "Kwik-wall",
+    "Galaxy Hardware",
+    "Bradley",
+    "ASI",
+    "Columbia Lockers"
+   ],
+   "within_area": "no",
+   "reason": "This Division 10 company in Columbia, SC, sells toilet partitions and several other product lines. Its site doesn't mention installation or any Georgia service area, so it is a weak lead.",
+   "partition_evidence": "Self-described 'Division 10 company'; offers toilet partitions, shower and dressing compartments and toilet accessories",
+   "website": "http://www.natspec.net/",
+   "phone": "803.256.9686",
+   "contact_page": "http://www.natspec.net/index.asp#contact",
+   "evidence_urls": [
+    "http://www.natspec.net/"
+   ],
+   "red_flags": [
+    "Supplier/dealer of partitions (buy-around risk)",
+    "No installation or service area stated",
+    "Contact email links are inconsistent and belong to a named person, so they were omitted"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "National Specialties Inc",
+    "area": "augusta",
+    "status": "not_online",
+    "registry": "South Carolina LLR Contractor's Licensing Board license lookup (verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69)",
+    "source_url": "https://verify.llronline.com/LicLookup/Contractors/Contractor.aspx?div=69",
+    "note": "The LLR lookup is gated by reCAPTCHA (no automated search). The company website (http://www.natspec.net/) shows no license number or classification. It gives its base as Columbia, SC, with company phone 803.256.9686. Needs a manual LLR check, likely under General Contractor, a specialty subclassification or Nonstructural Renovation. Checked 2026-11-20."
+   },
+   "score": 20
+  },
+  {
+   "name": "Adams Installed Products",
+   "base_city": "North Augusta",
+   "state": "SC",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "no",
+   "sells_partitions": "no",
+   "brands": [],
+   "within_area": "yes",
+   "reason": "This is a residential home-products installer: gutters, closets, shower glass, blinds, mirrors and bath accessories. The site doesn't mention toilet partitions or commercial work.",
+   "partition_evidence": "None",
+   "website": "http://www.adamsinstalledproducts.com/",
+   "phone": "803-599-5568",
+   "contact_page": "https://www.adamsinstalledproducts.com/about",
+   "evidence_urls": [
+    "http://www.adamsinstalledproducts.com/"
+   ],
+   "red_flags": [
+    "Residential only"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 15
+  },
+  {
+   "name": "Carpenters In the Home Inc",
+   "base_city": "Evans",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "no",
+   "sells_partitions": "no",
+   "brands": [],
+   "within_area": "yes",
+   "reason": "This is a residential company doing custom closets, shower enclosures, mirrors and bath accessories for home builders in the Augusta-Aiken area. The site doesn't mention toilet partitions or commercial work.",
+   "partition_evidence": "None",
+   "website": "https://carpentersinthehome.com/",
+   "contact_page": "https://carpentersinthehome.com/contact/",
+   "evidence_urls": [
+    "https://carpentersinthehome.com/"
+   ],
+   "red_flags": [
+    "Residential only",
+    "Base city not stated on site (Evans from candidate list)"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 15
+  },
+  {
+   "name": "New South Specialties, LLC",
+   "base_city": "Columbia",
+   "state": "SC",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "no",
+   "reason": "This Columbia, SC company supplies washroom and locker specialty products, toilet partitions among them. Its site doesn't mention installation or any Georgia or Augusta service area.",
+   "partition_evidence": "Toilet partitions listed as a product; no installation stated",
+   "website": "http://www.newsouthspecialties.com/",
+   "phone": "(803) 796-9595",
+   "contact_page": "http://www.newsouthspecialties.com/contact",
+   "evidence_urls": [
+    "http://www.newsouthspecialties.com/"
+   ],
+   "red_flags": [
+    "Supplier only as far as shown (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

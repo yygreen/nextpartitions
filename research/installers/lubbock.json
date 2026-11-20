@@ -1,0 +1,296 @@
+{
+ "area": "lubbock",
+ "found_count": 8,
+ "sources_tried": [
+  "Seed file raw/seeds/lubbock.json: read. Most maps hits were residential remodelers, plumbers and stores. RSM Builders Supply and Holt Glass were usable. Web hits were google redirect URLs and couldn't be opened.",
+  "Existing repo research (albuquerque.json, dallas.json, fort-worth.json and others): worked. Led to The Hallgren Company (HQ Lubbock). DFW firms (Partition Pros, Texas Specialties & Installation) are about 300+ miles away and say nothing of Lubbock coverage, so they were excluded.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep/): loaded, but it is a dropdown with no results in the fetched content. No rep found.",
+  "Scranton Products find-a-rep: 404. Scranton case study PDF (Buddy Holly Hall) worked and named Sterling Building Materials.",
+  "Hadrian find-a-rep: 404.",
+  "ASI / Global Partitions (globalpartitions.com): host blocked or unresolvable in this session.",
+  "Bradley, Metpar, General Partitions, Ampco locators: not tried (other locators 404 or blocked; no working locator URLs in the repo).",
+  "The Blue Book (thebluebook.com iProView pages): 403 blocked.",
+  "Procore Network (network.procore.com/us/tx/lubbock/toilet-partitions-and-accessories): worked, but there were no toilet partition specialists among 40 Lubbock listings. Beavco LLC (OKC) checked and dropped.",
+  "BuildingConnected: not tried (requires sign-in).",
+  "WebSearch: 8 of 8 used. Queries: toilet partitions Lubbock, Division 10 Lubbock, Western Building Specialties, Amarillo/Midland/Odessa installers (x2), Sterling Building Materials (x2). Useful results: BBB, the Lubbock Chamber and the mcsmag Scranton article.",
+  "BBB (Lubbock partition, doors and bathroom-accessories categories): worked.",
+  "Lubbock Chamber directory: worked (Western Building Specialties profile).",
+  "Yelp search: 403 blocked.",
+  "One Point Partitions (onepointpartitions.com): 403. Search snippets mention delivery terminals in Amarillo and Odessa, but it is an online partition seller with no confirmed installation, so it was excluded.",
+  "TDLR TABS project records (Lubbock HS toilet renovation): worked, but no contractor is named.",
+  "sterlingbuildingmaterials.com: no such host. aplusopeningsolutions.com and royalarchitectural.com: 503."
+ ],
+ "candidates": [
+  {
+   "name": "Western Building Specialties, Inc.",
+   "base_city": "Lubbock",
+   "state": "TX",
+   "verdict": "strong",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "General Partitions",
+    "Tex-Lam",
+    "Scranton"
+   ],
+   "within_area": "yes",
+   "review_source": "BBB A+ rating (letter grade, no review count read)",
+   "phone": "806-744-4501",
+   "email": "",
+   "contact_page": "https://westernbuildingspecialties.com/contact/",
+   "website": "https://westernbuildingspecialties.com",
+   "evidence_urls": [
+    "https://westernbuildingspecialties.com",
+    "https://westernbuildingspecialties.com/products/",
+    "https://westernbuildingspecialties.com/installation/",
+    "https://westernbuildingspecialties.com/contact/",
+    "https://www.bbb.org/us/tx/lubbock/category/partition"
+   ],
+   "partition_evidence": "Products page lists section 10160 Toilet Compartments & Shower Stalls (General Partitions, Tex-Lam, Scranton); homepage and Installation page say it offers professional installation for its whole product line with its own crew. No page names partition installation specifically. BBB lists it under Partitions.",
+   "red_flags": [
+    "Distributor of toilet partitions (buy-around risk)",
+    "Partition installation is implied by 'installs all products', not shown in project photos"
+   ],
+   "reason": "Lubbock Division 10 and doors distributor since 1947. It sells toilet compartments and says it installs its entire product line for commercial clients across West Texas and the South Plains. This is the best local lead, but it competes as a partition seller.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Western Building Specialties, Inc.",
+    "area": "lubbock",
+    "status": "not_required_online_check",
+    "registry": "None applies: Texas has no state contractor license for this work (Office of the Governor, Texas Business Licenses & Permits Guide); the area rule for Lubbock lists no city registration",
+    "source_url": "https://gov.texas.gov/uploads/files/business/Texas_Licenses_Permits_Guide.pdf",
+    "note": "Guide read 2026-11-20: 'General contractors are not required to obtain a license to practice in Texas. A general contractor may be subject to local (county or city) requirements.' The area rule gives no Lubbock registration, so there is no registry to check. Company site not opened; nothing recorded about the business itself. A Texas SOS entity search was not run (it needs paid SOSDirect access)."
+   },
+   "score": 50
+  },
+  {
+   "name": "DH Pace Company (Lubbock office)",
+   "base_city": "Lubbock",
+   "state": "TX",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "phone": "806-839-6565",
+   "email": "",
+   "contact_page": "https://dhpace.com/contact/",
+   "website": "https://dhpace.com/",
+   "evidence_urls": [
+    "https://dhpace.com/",
+    "https://dhpace.com/locations/"
+   ],
+   "partition_evidence": "Commercial Products menu lists 'Specialty & Division 10 Products'. No toilet partitions named on the pages read.",
+   "red_flags": [
+    "Large national door and security company; partitions may be a minor or unoffered line"
+   ],
+   "reason": "National commercial door, hardware and Division 10 provider with a Lubbock office (806-839-6565) and offices in Amarillo and Midland/Odessa. Division 10 is listed, but toilet partitions aren't shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "DH Pace Company (Lubbock office)",
+    "area": "lubbock",
+    "status": "not_required_online_check",
+    "registry": "None applies: no Texas state contractor license; the area rule lists no Lubbock city registration",
+    "source_url": "https://gov.texas.gov/uploads/files/business/Texas_Licenses_Permits_Guide.pdf",
+    "note": "State rule read 2026-11-20. Electrical or other TDLR trade licenses don't cover partition installation, so none was checked."
+   },
+   "score": 50
+  },
+  {
+   "name": "RSM Builders Supply",
+   "base_city": "Amarillo",
+   "state": "TX",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "phone": "806-785-3363",
+   "email": "contact@rsmbuilderssupply.com",
+   "contact_page": "http://www.rsmbuilderssupply.com/contact.html",
+   "website": "http://www.rsmbuilderssupply.com/",
+   "evidence_urls": [
+    "http://www.rsmbuilderssupply.com/",
+    "http://www.rsmbuilderssupply.com/contact.html"
+   ],
+   "partition_evidence": "Product categories include 'Toilet Partitions/Accessories', and the site says 'RSM Offers Service & Installation on All Products Sold.' No partition projects or photos shown.",
+   "red_flags": [
+    "Sells toilet partitions (buy-around risk)",
+    "Also serves residential customers"
+   ],
+   "reason": "Amarillo-based supplier of doors, hardware and specialties with a Lubbock sales branch (phone 806-785-3363 is the Lubbock office; the Amarillo office is 806-372-8322; the email is the Amarillo one). It lists toilet partitions and says it installs everything it sells, but shows no partition work.",
+   "added_by_checker": false,
+   "license": {
+    "name": "RSM Builders Supply",
+    "area": "lubbock",
+    "status": "not_required_online_check",
+    "registry": "None applies: no Texas state contractor license; the area rule lists no Lubbock or Amarillo city registration",
+    "source_url": "https://gov.texas.gov/uploads/files/business/Texas_Licenses_Permits_Guide.pdf",
+    "note": "Based in Amarillo and listed for the Lubbock area. Same state rule as above (guide read 2026-11-20). The name suggests a building-supply business; not verified."
+   },
+   "score": 45
+  },
+  {
+   "name": "Sterling Building Materials",
+   "base_city": "Lubbock",
+   "state": "TX",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Scranton Products (Hiny Hiders)"
+   ],
+   "within_area": "yes",
+   "phone": "",
+   "email": "",
+   "contact_page": "",
+   "website": "",
+   "evidence_urls": [
+    "https://www.scrantonproducts.com/wp-content/uploads/2021/11/HH-CaseStudy.BuddyHolly.pdf"
+   ],
+   "partition_evidence": "A Scranton Products case study on the Buddy Holly Center in Lubbock quotes its president: the company has 'supplied the construction industry in West Texas with architectural building specialties since 1958'. It was involved in choosing the Hiny Hiders HDPE partitions on that job. The case study doesn't say who installed them.",
+   "red_flags": [
+    "No company website found",
+    "Partition supplier (buy-around risk)",
+    "Installation not confirmed"
+   ],
+   "reason": "A Lubbock architectural specialties supplier with documented partition work on the Buddy Holly Center (Scranton). Installation is unproven and there is no website for contact details. The phone number appeared only in a search summary and was not read on a page, so it is left out.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Sterling Building Materials",
+    "area": "lubbock",
+    "status": "not_required_online_check",
+    "registry": "None applies: no Texas state contractor license; the area rule lists no Lubbock city registration",
+    "source_url": "https://gov.texas.gov/uploads/files/business/Texas_Licenses_Permits_Guide.pdf",
+    "note": "No website was given and none was looked up. State rule read 2026-11-20."
+   },
+   "score": 30
+  },
+  {
+   "name": "The Hallgren Company",
+   "base_city": "Lubbock",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "brands": [
+    "Sargent",
+    "McKinney",
+    "Norton",
+    "Rixson",
+    "Yale",
+    "Corbin-Russwin",
+    "Curries",
+    "Graham",
+    "Algoma",
+    "Best Access",
+    "DCI",
+    "National Guard",
+    "Pemko",
+    "Rockwood",
+    "Rocky Mountain Metals"
+   ],
+   "within_area": "yes",
+   "phone": "",
+   "email": "info@hallgrenco.com",
+   "contact_page": "http://hallgrenco.com/contactus.htm",
+   "website": "http://hallgrenco.com/",
+   "evidence_urls": [
+    "http://hallgrenco.com/index.htm"
+   ],
+   "partition_evidence": "None. The site covers architectural doors, frames, hardware and millwork only.",
+   "red_flags": [],
+   "reason": "Commercial door, frame and hardware house with millwork. Its site does not mention toilet partitions or restroom accessories.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "A+ Opening Solutions Inc",
+   "base_city": "Lubbock",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "review_source": "BBB A+ rating, accredited (letter grade, no review count read)",
+   "phone": "806-722-3667",
+   "email": "",
+   "contact_page": "https://www.bbb.org/us/tx/lubbock/profile/hardware-sales/a-opening-solutions-inc-0875-62200",
+   "website": "",
+   "evidence_urls": [
+    "https://www.bbb.org/us/tx/lubbock/category/partition",
+    "https://www.bbb.org/us/tx/lubbock/category/doors"
+   ],
+   "partition_evidence": "BBB shows it in Lubbock's 'partition' category, but its own BBB categories are Hardware Sales, Doors and Skylights. No partition work shown anywhere.",
+   "red_flags": [
+    "No company website found",
+    "Door and hardware business; partition work unconfirmed"
+   ],
+   "reason": "A Lubbock door, frame and hardware company. Apart from a BBB category listing, nothing shows toilet partition installation.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Holt Glass Company",
+   "base_city": "Wolfforth",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "brands": [],
+   "within_area": "yes",
+   "phone": "(806) 500-9428",
+   "email": "",
+   "contact_page": "https://holtglass.com/contact/",
+   "website": "https://holtglass.com/",
+   "evidence_urls": [
+    "https://holtglass.com/"
+   ],
+   "partition_evidence": "Only glass partitions, under commercial glass and glazing. No restroom partitions or stalls.",
+   "red_flags": [
+    "'Partitions' means glass office partitions, not toilet partitions"
+   ],
+   "reason": "A glass and glazing company (showers, windows, storefronts, glass partitions). It does no toilet partition work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "MIH Remodeling LLC",
+   "base_city": "Lubbock",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "brands": [],
+   "within_area": "yes",
+   "phone": "806-778-1779",
+   "email": "mihremodeling806@gmail.com",
+   "contact_page": "http://www.mihremodeling.com/contact",
+   "website": "http://www.mihremodeling.com/",
+   "evidence_urls": [
+    "http://www.mihremodeling.com/"
+   ],
+   "partition_evidence": "None. Remodeling, decks and electrical services only.",
+   "red_flags": [
+    "Mainly a residential remodeler",
+    "Email link on the site points to a different Gmail address"
+   ],
+   "reason": "A general remodeling contractor (residential and commercial) that does not mention toilet partitions or restroom stalls.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  }
+ ]
+}
