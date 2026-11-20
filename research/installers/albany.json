@@ -1,0 +1,193 @@
+{
+ "area": "albany",
+ "found_count": 6,
+ "sources_tried": [
+  "Seed file albany.json: worked. Most entries were remodelers, supply stores and glass shops. Bobrick's Clifton Park listing is a manufacturer plant (skipped). Division 10 Specialties Inc (Pembroke, MA) serves Massachusetts only (skipped). Seed web results were Google redirect URLs with no domains, so 'United Specialists Inc' (Slingerlands/Albany) could not be opened, and two searches found nothing on it.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but the rep dropdown is interactive; no results.",
+  "Scranton Products find-a-rep: 404.",
+  "Hadrian find-a-rep: 404.",
+  "ASI (americanspecialties.com/find-a-rep): 404.",
+  "Bradley find-a-rep: no rep content returned.",
+  "Metpar via Emerson Swan (emersonswan.com): the rep covers 'New York (Upstate)' but lists no upstate office or installer; manufacturer's rep only.",
+  "General Partitions, Ampco/Ammco locators: not tried (search and fetch budget).",
+  "The Blue Book (thebluebook.com): blocked (403) on all iProView and category pages.",
+  "BuildingConnected / Procore public profiles: not tried.",
+  "WebSearch: 8 of 8 used. Results were dominated by downstate and national firms. CME Corp (Garden City, NY) installs toilet partitions but serves only the NY metro area, about 150 miles away (skipped).",
+  "BBB category pages: worked for Albany lockers, Albany partition, Queensbury lockers and Wilton partition. Schenectady lockers was blocked (403).",
+  "Sites outside the session's network allowlist (would not resolve): ctrestroomspecialties.com, doorsunlimitedinc.com. onepointpartitions.com returned 403."
+ ],
+ "candidates": [
+  {
+   "name": "Connecticut Restroom Specialties, LLC",
+   "base_city": "Danbury",
+   "state": "CT",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.thebluebook.com/westchester-and-the-hudson-valley/articles/the-answer-when-nature-calls.html"
+   ],
+   "partition_evidence": "A search summary of a Blue Book article says CRS installed ceiling-hung stainless toilet partitions at Indeed's Stamford HQ. The article returned 403 and I could not read it directly. No company website found.",
+   "red_flags": [
+    "Calls itself a Division 10 distributor (buy-around risk)",
+    "Service area described as CT, NYC and the tri-state area, not the Capital Region",
+    "Evidence came only from search snippets; source page blocked (403)",
+    "No website, phone or email verified"
+   ],
+   "reason": "Installs partitions commercially, per a Blue Book article seen only in search results. It is about 87 miles from Albany, but its stated area is CT and the NYC tri-state area, not upstate NY.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Connecticut Restroom Specialties, LLC",
+    "area": "albany",
+    "status": "not_required_online_check",
+    "registry": "None applicable; the task gives no rule for the Albany area (only Bridgeport\u2013New Haven is listed). Connecticut Department of Consumer Protection eLicense would apply only to CT residential home improvement work.",
+    "note": "Danbury, CT company listed under the Albany, NY area. The task text gives no Albany rule. Under the Bridgeport\u2013New Haven rule there is no state license for commercial partition installation, so no lookup was run. The Albany area rule needs to be added and checked before this listing counts. No online registry was opened, so no source URL."
+   },
+   "score": 63
+  },
+  {
+   "name": "Milanese Commercial Door LLC",
+   "base_city": "Berlin",
+   "state": "NY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://milanesecommercialdoor.com/",
+   "phone": "(518) 658-0398",
+   "email": "brian@milanesecommercialdoor.com",
+   "contact_page": "https://milanesecommercialdoor.com/index.php?content=contact",
+   "evidence_urls": [
+    "https://milanesecommercialdoor.com/",
+    "https://milanesecommercialdoor.com/index.php?content=contact"
+   ],
+   "partition_evidence": "Homepage lists Toilet Partitions and Toilet Accessories among products, alongside hollow metal doors, hardware, lockers and other Division 10 items. Installation of partitions is not stated anywhere I read.",
+   "red_flags": [
+    "Installation not stated; may be supply only",
+    "Sells partitions itself (buy-around risk)",
+    "No service area stated",
+    "Site lists a personal cell number, left out here"
+   ],
+   "reason": "Commercial door and Division 10 supplier in Berlin, NY, about 25 miles east of Albany, that lists toilet partitions. No installation evidence or project photos, so it is unproven as an installer.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Milanese Commercial Door LLC",
+    "area": "albany",
+    "status": "not_required_online_check",
+    "registry": "None applies: New York has no statewide contractor license (NYS Department of State) and the Albany area rule in research/local-rules records no local contractor license",
+    "license_type": "none required",
+    "note": "Checked 2026-11-20. NY has no statewide licensing agency for this work, and no Albany-area local license is recorded, so no license record to look up. The company site lists the legal name Milanese Commercial Door, LLC, base city Berlin, NY, company phone (518) 658-0398, toilet partitions among its products, and no license numbers. NY DOS entity search not run (JS-only app). Not in the NYC DOB license dataset (searched 'MILANESE').",
+    "source_url": "https://milanesecommercialdoor.com/"
+   },
+   "score": 45
+  },
+  {
+   "name": "Granite State Specialties LLC",
+   "base_city": "Raymond",
+   "state": "NH",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://www.granitestatespecialties.com/",
+   "phone": "(866) 966-9113",
+   "email": "info@granitestatespecialties.com",
+   "contact_page": "https://www.granitestatespecialties.com/request-a-quote/",
+   "evidence_urls": [
+    "https://www.granitestatespecialties.com/"
+   ],
+   "partition_evidence": "Homepage: 'Sales & Installation of Construction Specialties' with Toilet Partitions featured, OSHA-trained installers, and toilet partitions installed on Wall Street in NYC.",
+   "red_flags": [
+    "Sells and supplies partitions (buy-around risk)",
+    "About 140 miles from Albany, beyond the regional limit",
+    "Site says New England and 'throughout the northeast'; it does not name upstate NY or Albany"
+   ],
+   "reason": "A real commercial partition supplier and installer, but based in southern NH, beyond the 120-mile limit, with no stated coverage of the Albany area. Keep it in mind only if New England reach becomes acceptable.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "Glenmont (unverified)",
+   "state": "NY",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=6279",
+    "https://onepointpartitions.com/service-areas/new-york-bathroom-partitions/"
+   ],
+   "partition_evidence": "Its Albany and New York pages (search snippets only; the site returns 403) describe a nationwide online partition supplier that delivers to Albany. The Glenmont address appears among delivery points with Rock Tavern, Blasdell and East Syracuse, which look like freight terminals rather than a local office. No installation service shown.",
+   "red_flags": [
+    "Direct competitor: online partition seller with an online pricing tool",
+    "Site blocked automated access (403); contact details not verified",
+    "Glenmont location looks like a delivery terminal, not a base"
+   ],
+   "reason": "A national online partition seller (competitor), not a local installer. Its Albany page is SEO location content about delivery, and nothing shows installation.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Doors Unlimited Inc",
+   "base_city": "Leominster",
+   "state": "MA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "evidence_urls": [
+    "https://thebluebook.com/iProView/310372"
+   ],
+   "partition_evidence": "A Blue Book listing (per search snippet) covers commercial doors, frames, hardware and toilet/bathroom accessories. Toilet partitions are not mentioned.",
+   "red_flags": [
+    "No partition evidence",
+    "Stated region is New England, not NY",
+    "About 100 miles away"
+   ],
+   "reason": "Commercial door and hardware firm in central Massachusetts serving New England. No toilet partition work and no stated New York service.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "North Star Systems, Corp.",
+   "base_city": "Dover Plains",
+   "state": "NY",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "review_source": "BBB (per search snippet): A+, not accredited",
+   "evidence_urls": [
+    "https://www.bbb.org/us/ny/mohawk/category/partition"
+   ],
+   "partition_evidence": "Only a BBB 'Partition' category listing (per search snippet). No website and nothing about toilet partitions.",
+   "red_flags": [
+    "No website found",
+    "BBB 'Partition' category may mean office or other partitions",
+    "About 63 miles from Albany; no stated service of the Capital Region"
+   ],
+   "reason": "The only evidence is a generic BBB 'Partition' category listing. Nothing shows toilet partition installation or service in the Albany area.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 3
+  }
+ ]
+}

@@ -1,0 +1,328 @@
+{
+ "area": "fort-wayne",
+ "found_count": 10,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/fort-wayne.json: read. Maps results were mostly residential bath remodelers, plumbers and stores. Only Interior Products Supply was relevant. The web results were Google redirect URLs, mostly directory pages.",
+  "Bobrick rep locator (bobrick.com/find-a-representative/): 404, not usable",
+  "ASI, Scranton, Bradley, Hadrian, Metpar, General Partitions and Ampco locators: not attempted separately because the search cap left no budget. CIH's partitions page names the Accurate, Bobrick, General Partitions, Bradley and Scranton brands.",
+  "The Blue Book (thebluebook.com search and iProView pages): blocked, 403",
+  "BuildingConnected: not attempted",
+  "Procore network (network.procore.com/us/in/door-hardware and profiles): worked. It turned up IPS, Moss Building Products and In-Site Construction in Fort Wayne.",
+  "BBB partition categories (Fort Wayne, Fishers, Cromwell, statewide IN): worked, but they list mostly OH, MI and Indianapolis firms",
+  "BuildZoom (Woodruff Contracting): blocked, 403",
+  "One Point Partitions Fort Wayne page (fxstaging.onepointpartitions.com): blocked, 403. It is an online reseller and competitor with a Fort Wayne freight terminal and no confirmed install crews, so it was not included.",
+  "WebSearch: all 8 searches used ('toilet partition installation Fort Wayne', 'Division 10 Fort Wayne', 'Allied Installation Service', 'lockers + partitions NE Indiana', nearby cities, door hardware specialties, Division 10 doors Fort Wayne (extended), Warsaw/Kendallville/Auburn). They mostly returned plumbers and national sellers. No dedicated Fort Wayne partition installer turned up besides TI Source/In-Site.",
+  "Company sites read: ti-source.com, cih-inc.com, ipsfortwayne.com, mossbp.com, d10pro.com, indianawholesalesupply.com, kelleybros.com/locations, midwest-specialties.com. Midwest Specialties (Paragon, IN, about 150 miles away) was excluded as beyond 120 miles. ipsdoordivision.com returned 503.",
+  "Existing repo research (indianapolis, toledo, dayton, grand-rapids files): used to find regional candidates. The Michigan and Ohio firms (Zietlow, GLBS, Tanner Supply, Roberts Installation, Irwin Enterprises) were not included because none states it serves Indiana or Fort Wayne."
+ ],
+ "candidates": [
+  {
+   "name": "Kelley Bros (Indianapolis office)",
+   "added_by_checker": false,
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Global",
+    "Scranton Products",
+    "Hadrian"
+   ],
+   "within_area": "regional",
+   "phone": "(317) 383-0622",
+   "contact_page": "https://www.kelleybros.com/contact-us/",
+   "website": "https://www.kelleybros.com/",
+   "evidence_urls": [
+    "https://www.kelleybros.com/?p=3224",
+    "https://www.kelleybros.com/locations/",
+    "https://www.kelleybros.com/contact-us/"
+   ],
+   "partition_evidence": "Division 10 page lists toilet partitions (Global, Scranton, Hadrian) and offers a turn-key solution from quote through installation.",
+   "red_flags": [
+    "Large Division 8/10 distributor that sells partitions itself (buy-around risk)",
+    "Only Indiana office is Indianapolis (~110 miles); no Fort Wayne office",
+    "Installation may be subcontracted; confirm own crews"
+   ],
+   "reason": "Regional distributor-installer with an Indiana office that supplies and installs toilet partitions turn-key; Indiana is a listed service state. Strong on capability but it competes with us on supply.",
+   "license": {
+    "name": "Kelley Bros (Indianapolis office)",
+    "area": "fort-wayne",
+    "status": "not_online",
+    "registry": "Allen County Building Department contractor licensing (Accela Citizen Access, aca-prod.accela.com/ACFW); Indiana has no state contractor license for this work",
+    "source_url": "https://aca-prod.accela.com/ACFW/default.aspx",
+    "note": "Not looked up. The area rule says no local requirement, but the Allen County/Fort Wayne Accela portal lists a 'Building Department Account Access' licensing contact (449-7342, ACBDLicensing@allencounty.in.gov) and has a licensee search form. The portal says that from November 12, 2026 an account sign-in is required for any search, so it can't be checked automatically. Third-party guides (Procore, Jobber, Harbor Compliance; not official) say Allen County issues general, building and other contractor licenses that renew each year. Whether a partition or toilet accessory installer needs one is unconfirmed: check by phone with the Allen County Building Department. Indiana licenses only plumbing at state level, per secondary sources. Because the company is based in Indianapolis, Indianapolis DBNS contractor licensing may also apply to its home work. That was not checked."
+   },
+   "score": 63
+  },
+  {
+   "name": "Division 10 Professionals (D10 Pro)",
+   "added_by_checker": false,
+   "base_city": "Rochester",
+   "state": "IN",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "phone": "(574) 392-9228",
+   "email": "info@d10pro.com",
+   "contact_page": "https://www.d10pro.com/",
+   "website": "https://www.d10pro.com/",
+   "evidence_urls": [
+    "https://www.d10pro.com/"
+   ],
+   "partition_evidence": "Homepage lists restroom partitions and commercial restroom accessories as services, with a photo of gray restroom stalls.",
+   "red_flags": [
+    "About 60 miles from Fort Wayne and no stated service area",
+    "Mix of residential remodeling, decks and junk removal",
+    "Small site with little project detail"
+   ],
+   "reason": "Lists restroom partition and commercial restroom accessory work, but it is ~60 miles away and doesn't say it serves Fort Wayne; worth a call to confirm service area.",
+   "license": {
+    "name": "Division 10 Professionals (D10 Pro)",
+    "area": "fort-wayne",
+    "status": "not_online",
+    "registry": "Allen County Building Department contractor licensing (Accela Citizen Access, aca-prod.accela.com/ACFW)",
+    "source_url": "https://aca-prod.accela.com/ACFW/default.aspx",
+    "note": "Not looked up. The Allen County/Fort Wayne Accela portal has required a sign-in for searches since November 12, 2026. The company is based in Rochester, IN. Allen County contractor licensing would apply only to work inside its jurisdiction, and whether it covers partition installation is unconfirmed. There is no state contractor license in Indiana for this work."
+   },
+   "score": 60
+  },
+  {
+   "name": "Schricker-CIH (CIH Fort Wayne)",
+   "added_by_checker": false,
+   "base_city": "Fort Wayne",
+   "state": "IN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Schricker"
+   ],
+   "within_area": "yes",
+   "phone": "260-483-7168",
+   "contact_page": "https://cih-inc.com/contact-us/",
+   "website": "https://cih-inc.com/",
+   "evidence_urls": [
+    "https://cih-inc.com/",
+    "https://cih-inc.com/contact-us/",
+    "https://cih-inc.com/toilet-partitions/"
+   ],
+   "partition_evidence": "Lists Toilet Partitions, Accessories and More (Schricker) and calls itself a leader in Division 8, 10 and 28 services; separate Service and Installation offering, but no page ties installation to partitions.",
+   "red_flags": [
+    "Sells toilet partitions itself under the Schricker brand (buy-around risk)",
+    "Partition installation not explicitly stated"
+   ],
+   "reason": "Fort Wayne branch of a Division 8/10 distributor that sells toilet partitions and offers installation services generally; installing partitions is likely but not shown.",
+   "license": {
+    "name": "Schricker-CIH (CIH Fort Wayne)",
+    "area": "fort-wayne",
+    "status": "not_online",
+    "registry": "Allen County Building Department contractor licensing (Accela Citizen Access, aca-prod.accela.com/ACFW)",
+    "source_url": "https://aca-prod.accela.com/ACFW/default.aspx",
+    "note": "Not looked up. The Allen County/Fort Wayne Accela portal has required a sign-in for all searches since November 12, 2026. Allen County appears to license contractors, though this comes from third-party guides and is unverified. That conflicts with the area rule 'local: none'. Whether partition installation needs an Allen County license is unconfirmed. There is no state contractor license in Indiana for this work."
+   },
+   "score": 50
+  },
+  {
+   "name": "AllSource Construction Specialties, LLC",
+   "added_by_checker": false,
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley"
+   ],
+   "within_area": "regional",
+   "phone": "(317) 351-9390",
+   "contact_page": "https://www.allsourcespecialties.com/contact",
+   "website": "https://www.allsourcespecialties.com/",
+   "review_source": "BBB (A+ accredited, letter grade only)",
+   "evidence_urls": [
+    "https://www.allsourcespecialties.com/",
+    "https://www.allsourcespecialties.com/request-a-quote",
+    "https://bbb.org/us/in/auburn/category/partition"
+   ],
+   "partition_evidence": "Describes itself as a Division 10 Specialties supplier and installer for the Midwest; product list includes Partitions (not specified as toilet partitions).",
+   "red_flags": [
+    "Supplies Division 10 products itself (buy-around risk)",
+    "Toilet partitions not explicitly named"
+   ],
+   "reason": "Indianapolis Division 10 supplier-installer serving the Midwest with partitions in its product list; toilet partition installation is likely but not shown.",
+   "license": {
+    "name": "AllSource Construction Specialties, LLC",
+    "area": "fort-wayne",
+    "status": "not_online",
+    "registry": "Allen County Building Department contractor licensing (Accela Citizen Access, aca-prod.accela.com/ACFW)",
+    "source_url": "https://aca-prod.accela.com/ACFW/default.aspx",
+    "note": "Not looked up. The Allen County/Fort Wayne Accela portal has required a sign-in for searches since November 12, 2026. The company is based in Indianapolis, where Indianapolis DBNS licensing may apply to its home work; that was not checked. Whether partition installation needs an Allen County license is unconfirmed. There is no state contractor license in Indiana for this work."
+   },
+   "score": 43
+  },
+  {
+   "name": "Indiana Wholesale Supply Co",
+   "added_by_checker": false,
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "no",
+   "phone": "317-638-3667",
+   "email": "sales@iwsco.com",
+   "contact_page": "https://www.indianawholesalesupply.com/contact",
+   "website": "https://www.indianawholesalesupply.com/",
+   "evidence_urls": [
+    "https://www.indianawholesalesupply.com/",
+    "https://www.indianawholesalesupply.com/contact"
+   ],
+   "partition_evidence": "Distributes and installs bathroom partitions and accessories with its own delivery, demolition and installation crew.",
+   "red_flags": [
+    "Sells partitions itself (buy-around risk)",
+    "Service area is Indianapolis metro and Central Indiana; Fort Wayne only as a custom project"
+   ],
+   "reason": "Real partition installer, but its stated service area is Central Indiana, not the Fort Wayne area; better suited to an Indianapolis page.",
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "TI Source / In-Site Construction LLC",
+   "added_by_checker": false,
+   "base_city": "Fort Wayne",
+   "state": "IN",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "brands": [],
+   "within_area": "yes",
+   "phone": "260 483 1608",
+   "contact_page": "https://ti-source.com/contact",
+   "website": "https://ti-source.com/",
+   "evidence_urls": [
+    "https://ti-source.com/"
+   ],
+   "partition_evidence": "None; services are construction management, rollouts, FF&E and subcontract services.",
+   "red_flags": [
+    "Construction manager, not a partition installer"
+   ],
+   "reason": "Tenant-improvement construction management firm; no toilet partition or Division 10 installation shown.",
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Moss Building Products",
+   "added_by_checker": false,
+   "base_city": "Fort Wayne",
+   "state": "IN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "phone": "260-432-0526",
+   "contact_page": "https://www.mossbp.com/contact/",
+   "website": "https://www.mossbp.com",
+   "evidence_urls": [
+    "https://www.mossbp.com"
+   ],
+   "partition_evidence": "Supplies Division 8 and 10 products; no mention of toilet partitions or installation.",
+   "red_flags": [
+    "Supplier, not an installer"
+   ],
+   "reason": "Fort Wayne Division 8/10 supplier focused on doors and opening kits; no evidence it installs toilet partitions.",
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Interior Products Supply (IPS) Door Division",
+   "added_by_checker": false,
+   "base_city": "Fort Wayne",
+   "state": "IN",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [
+    "Armstrong",
+    "CertainTeed",
+    "USG"
+   ],
+   "within_area": "yes",
+   "email": "sales@ipsfortwayne.com",
+   "contact_page": "https://www.ipsfortwayne.com/spcu/contact",
+   "website": "https://ipsfortwayne.com/",
+   "evidence_urls": [
+    "https://ipsfortwayne.com/"
+   ],
+   "partition_evidence": "None; drywall, acoustical and building-material supplier.",
+   "red_flags": [
+    "Material supplier, not an installer"
+   ],
+   "reason": "Drywall and acoustical materials supplier with delivery; no partition installation.",
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Woodruff Contracting and Sales",
+   "added_by_checker": false,
+   "base_city": "Fort Wayne",
+   "state": "IN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "mostly",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://www.buildzoom.com/contractor/woodruff-contracting-and-sales"
+   ],
+   "partition_evidence": "No evidence found; listing describes general residential and commercial remodeling (seen only in a search summary of BuildZoom, no company website found).",
+   "red_flags": [
+    "No company website found",
+    "No partition work shown"
+   ],
+   "reason": "General remodeling contractor with no evidence of toilet partition installation.",
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "Space Management Installations, Inc.",
+   "added_by_checker": false,
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "brands": [
+    "Modernfold",
+    "Renlita",
+    "Skyfold"
+   ],
+   "within_area": "no",
+   "evidence_urls": [
+    "https://www.crunchbase.com/organization/space-management-installations-inc"
+   ],
+   "partition_evidence": "Installs operable partitions and movable walls for CIH's space management division, not toilet partitions.",
+   "red_flags": [
+    "Operable walls, not toilet partitions",
+    "No website or contact details found"
+   ],
+   "reason": "Movable-wall installer tied to CIH; not a toilet partition installer and based in Indianapolis.",
+   "license": null,
+   "score": 25
+  }
+ ]
+}

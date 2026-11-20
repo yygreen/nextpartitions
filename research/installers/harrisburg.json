@@ -1,0 +1,284 @@
+{
+ "area": "harrisburg",
+ "found_count": 7,
+ "sources_tried": [
+  "Seed file harrisburg.json: worked. 42 maps results, 0 web results. Only Hostetter Supply was relevant. Paramount Contracting (Lancaster) is a weak lead. Kreamer Brothers Glass was checked and does no partition work. The rest are remodelers, plumbers, stores and chains.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but the locator is a dropdown that returned no results via fetch",
+  "Scranton Products find-a-product-specialist: 404 at the guessed URL. Their Shady Maple (Lancaster Co.) project page names no installer.",
+  "Metpar find-a-rep: 404 at the guessed URL",
+  "ASI, Bradley, Hadrian, General Partitions, Ammco locators: not tried. The search cap and failed locator URLs left no budget.",
+  "The Blue Book (thebluebook.com iProView pages): blocked with 403",
+  "LinkedIn (10 SPEC): blocked with 403",
+  "BuildingConnected / Procore public profiles: not reached",
+  "CIS leads (cisleads.com): worked for Widener Inc.",
+  "onepointpartitions.com: blocked with 403. Search snippets mention a York PA delivery terminal, but I could not verify whether they install.",
+  "frankmwaters.com: DNS not resolvable in this session's network",
+  "Company sites read: hostettersupply.com, tristate-material.com, kelleybros.com, widenerinc.com, partitionplus.com, mdpartitions.com (excluded: serves MD/DC/VA only), rbfulton.com (excluded: Baltimore area only), associatedbuilding.com (excluded: no install stated, Philadelphia/South NJ), triadinc.net (excluded: no location or service area on the site), paramountcontracting.biz, kbglass.net",
+  "WebSearch: used 8 of 8. Queries covered Harrisburg/Lancaster/York/Hershey/Carlisle/Lebanon toilet partitions, Division 10 and central PA. Results were dominated by out-of-area firms. No Yelp or BBB pages surfaced."
+ ],
+ "candidates": [
+  {
+   "name": "Hostetter Supply Co., Inc.",
+   "base_city": "Seven Valleys",
+   "state": "PA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Scranton Products",
+    "Penco Products",
+    "Kohler",
+    "Moen",
+    "Dyson"
+   ],
+   "phone": "717-428-4909",
+   "email": "bids@hostettersupply.com",
+   "contact_page": "http://www.hostettersupply.com/contacts.php",
+   "website": "http://www.hostettersupply.com/",
+   "partition_evidence": "Toilet partitions product category for commercial, education, municipal and industrial facilities; gallery shows installed Scranton Aria partitions; site offers professional installation of Division 10 products with an installation contact.",
+   "evidence_urls": [
+    "http://www.hostettersupply.com/",
+    "http://www.hostettersupply.com/contacts.php"
+   ],
+   "red_flags": [
+    "Sells partitions itself (Bobrick, Bradley, Scranton): buy-around risk"
+   ],
+   "reason": "Division 10 supplier-installer since 1928 serving South Central PA and Northern Maryland, about 25 miles from Harrisburg, with installed partitions in its gallery. Strong local fit, but it is also a partition dealer.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Hostetter Supply Co., Inc.",
+    "area": "harrisburg",
+    "status": "not_required_online_check",
+    "registry": "Pennsylvania Office of Attorney General, Home Improvement Contractor Registration",
+    "note": "No PA state license for this work, and Harrisburg has no local rule on file. The AG search returned HTTP 503 on 2026-11-20, so no record was checked. Base city: Seven Valleys. Website (given in input, not fetched): http://www.hostettersupply.com/",
+    "source_url": "https://hicsearch.attorneygeneral.gov/"
+   },
+   "score": 65
+  },
+  {
+   "name": "Partition Plus, Inc.",
+   "base_city": "Forest Hill",
+   "state": "MD",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Hadrian",
+    "Bradley",
+    "Bobrick",
+    "Scranton Products",
+    "ASI",
+    "Metpar",
+    "Jacknob",
+    "Hawa"
+   ],
+   "phone": "800-298-9696",
+   "email": "sales@partitionplus.com",
+   "contact_page": "https://www.partitionplus.com/about-us/#contact-title",
+   "website": "https://www.partitionplus.com/",
+   "review_source": "BBB letter grade A+ (no review count shown), https://bbb.org/us/pa/hershey/category/partition",
+   "partition_evidence": "Sells commercial toilet partitions since 1993 and offers a regional installation service covering MD, DC, VA, PA and DE.",
+   "evidence_urls": [
+    "https://www.partitionplus.com/",
+    "https://www.partitionplus.com/about-us/",
+    "https://bbb.org/us/pa/hershey/category/partition"
+   ],
+   "red_flags": [
+    "Direct online partition seller carrying ASI, Bobrick, Bradley, Scranton, Metpar: a competitor and strong buy-around risk"
+   ],
+   "reason": "Forest Hill MD (about 65 miles) with installation service stated for Pennsylvania; installs partitions commercially. Qualifies, but it is a direct competitor selling the same brands.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Partition Plus, Inc.",
+    "area": "harrisburg",
+    "status": "not_required_online_check",
+    "registry": "Maryland Home Improvement Commission (MHIC) business name search, Maryland Department of Labor; Pennsylvania OAG Home Improvement Contractor registration (hicsearch.attorneygeneral.gov)",
+    "source_url": "https://www.dllr.state.md.us/cgi-bin/ElectronicLicensing/OP_search/OP_search.cgi?calling_app=HIC::HIC_business_name",
+    "note": "No license was found because no lookup was possible. Neither state requires a state license or registration for commercial partition installation, and the repo shows no Harrisburg city rule. Maryland's MHIC licence covers residential home improvement only (research/state-licensing/states.json, citing labor.maryland.gov/LICENSE/oplinks.shtml). Maryland says a Circuit Court clerk construction licence 'may be necessary' for commercial contracts; that is county level and not searchable online. The Harrisburg area is in Pennsylvania, where the Attorney General's Home Improvement Contractor registration also covers residential work only (over $5,000 a year). The repo has no Harrisburg city rule (local_note null in research/installers/extra-areas.json). The MHIC search page is behind Google reCAPTCHA (the search button stays disabled until it is solved), so the business could not be checked there. The PA search at hicsearch.attorneygeneral.gov did not respond to automated access. Repo prospect notes say the company sells and installs commercial partitions (partitionplus.com/about-us/). Its MHIC status is unknown."
+   },
+   "score": 63
+  },
+  {
+   "name": "Frank M. Waters, Inc.",
+   "base_city": "unknown (Maryland)",
+   "state": "MD",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "partition_evidence": "Blue Book profile (via search result; page itself returned 403): family-owned toilet partition and toilet room accessory business since 1991 that furnishes and installs partitions, working regularly in southern Pennsylvania, DE, VA, DC and NJ; schools, hospitals, NSA/Fort Meade.",
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/798165/frank-m-waters-inc/subcontractors/"
+   ],
+   "red_flags": [
+    "Profile could not be opened directly (403); facts from search summary only",
+    "No website, phone or exact base city confirmed",
+    "Furnishes partitions: buy-around risk"
+   ],
+   "reason": "Partition specialist that says it works in southern Pennsylvania, but its base city and contact details are unverified, so it needs a direct check.",
+   "added_by_checker": true,
+   "license": {
+    "name": "Frank M. Waters, Inc.",
+    "area": "harrisburg",
+    "status": "not_required_online_check",
+    "registry": "Maryland Home Improvement Commission (MHIC) business name search, Maryland Department of Labor; Pennsylvania OAG Home Improvement Contractor registration (hicsearch.attorneygeneral.gov)",
+    "source_url": "https://www.dllr.state.md.us/cgi-bin/ElectronicLicensing/OP_search/OP_search.cgi?calling_app=HIC::HIC_business_name",
+    "note": "No license was found because no lookup was possible. Neither state requires a state license or registration for commercial partition installation. Maryland's MHIC covers residential work only, and so does Pennsylvania's HIC registration. The repo has no Harrisburg city rule. Per its Blue Book profile (search snippets only; the page itself returned 403), this is a commercial toilet partition subcontractor. The MHIC search is behind reCAPTCHA, and the PA HIC search did not respond to automated access, so no record was checked. The base city is unknown and no licence number was found. A possible Maryland Circuit Court clerk construction licence for commercial work is not searchable online."
+   },
+   "score": 63
+  },
+  {
+   "name": "Tristate Material Services",
+   "base_city": "Malvern",
+   "state": "PA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "484-913-0010",
+   "contact_page": "https://tristate-material.com/contact/",
+   "website": "https://tristate-material.com/",
+   "partition_evidence": "Homepage says it sells and installs Division 10, 11 and 12 products including toilet partitions; works with large general contractors.",
+   "evidence_urls": [
+    "https://tristate-material.com/",
+    "https://tristate-material.com/contact/"
+   ],
+   "red_flags": [
+    "Distributor that sells partitions: buy-around risk",
+    "Service area stated only as 'Mid-Atlantic'; Harrisburg not named"
+   ],
+   "reason": "Installs toilet partitions but is about 75 miles away near Philadelphia and only claims the Mid-Atlantic generally; coverage of Harrisburg is unconfirmed.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Tristate Material Services",
+    "area": "harrisburg",
+    "status": "not_required_online_check",
+    "registry": "Pennsylvania Office of Attorney General, Home Improvement Contractor Registration",
+    "note": "No PA state license for this work, and Harrisburg has no local rule on file. The AG search returned HTTP 503 on 2026-11-20, so no record was checked. Base city: Malvern.",
+    "source_url": "https://hicsearch.attorneygeneral.gov/"
+   },
+   "score": 58
+  },
+  {
+   "name": "Kelley Bros (Center Valley office)",
+   "base_city": "Center Valley",
+   "state": "PA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "(484) 894-6703",
+   "contact_page": "https://www.kelleybros.com/contact-us/",
+   "website": "https://www.kelleybros.com/",
+   "partition_evidence": "Lists Division 10 products and washroom accessories for general contractors; toilet partitions not named on pages read.",
+   "evidence_urls": [
+    "https://www.kelleybros.com/",
+    "https://www.kelleybros.com/locations/"
+   ],
+   "red_flags": [
+    "Large multi-state distributor (Syracuse NY HQ); partitions not confirmed",
+    "No central PA office; Center Valley is about 90 miles away"
+   ],
+   "reason": "Division 10 supplier with Pennsylvania offices (Center Valley, Clarks Summit) and PA listed as service state, but no evidence it installs toilet partitions.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Kelley Bros (Center Valley office)",
+    "area": "harrisburg",
+    "status": "not_required_online_check",
+    "registry": "Pennsylvania Office of Attorney General, Home Improvement Contractor Registration",
+    "note": "No PA state license for this work, and Harrisburg has no local rule on file. The AG search returned HTTP 503 on 2026-11-20, so no record was checked. Base city: Center Valley.",
+    "source_url": "https://hicsearch.attorneygeneral.gov/"
+   },
+   "score": 43
+  },
+  {
+   "name": "Inter-Co (Division 10 installation)",
+   "base_city": "Kearny",
+   "state": "NJ",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "partition_evidence": "Blue Book lists Inter-Co Division 10 (New Jersey) in Kearny as a toilet partition subcontractor; a 2026 NY Build Expo article says it supplies and installs Division 10 products (seen in search results only).",
+   "evidence_urls": [
+    "https://www.thebluebook.com/construction/10-new-jersey-north/3070-toilet-partitions-cubicles/?r=1",
+    "https://www.newyorkbuildexpo.com/industry-news-1/behind-booth-inter-co-division-10"
+   ],
+   "red_flags": [
+    "About 150 miles from Harrisburg; no statement that it serves central PA",
+    "Supplier: buy-around risk",
+    "Own website not checked"
+   ],
+   "reason": "Supplies and installs partitions, but is based in North Jersey well beyond 120 miles with no sign it serves the Harrisburg area.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Widener Inc. (Widener Specialties & Finishes)",
+   "base_city": "Fairless Hills",
+   "state": "PA",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "phone": "215.949.2400",
+   "email": "info@widenerinc.com",
+   "contact_page": "https://www.widenerinc.com/web-content/pages/contactus.html",
+   "website": "http://www.widenerinc.com/",
+   "partition_evidence": "Toilet partitions listed as a product; installation page says a professional team installs its specialties, but partitions are not named there.",
+   "evidence_urls": [
+    "http://www.widenerinc.com/",
+    "https://www.widenerinc.com/web-content/pages/contactus.html",
+    "https://www.widenerinc.com/web-content/pages/installation.html"
+   ],
+   "red_flags": [
+    "Sells partitions: buy-around risk",
+    "No service area stated; about 110 miles away in Bucks County"
+   ],
+   "reason": "Division 10 specialties supplier-installer near Philadelphia, but its site gives no service area and nothing ties it to the Harrisburg area.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "Paramount Contracting Inc",
+   "base_city": "Lancaster",
+   "state": "PA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "nearby",
+   "brands": [],
+   "phone": "(717) 393-9900",
+   "contact_page": "https://paramountcontracting.biz/contact/",
+   "website": "http://www.paramountcontracting.biz/",
+   "partition_evidence": "None: services are metal framing, insulation, EIFS, drywall, ceilings, masonry veneer, FRP/acoustical panels.",
+   "evidence_urls": [
+    "http://www.paramountcontracting.biz/"
+   ],
+   "red_flags": [],
+   "reason": "Lancaster commercial drywall/framing contractor with no toilet partition or Division 10 work listed.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  }
+ ]
+}

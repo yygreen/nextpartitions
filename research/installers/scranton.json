@@ -1,0 +1,350 @@
+{
+ "area": "scranton",
+ "found_count": 8,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/scranton.json: worked (40 Maps and 46 web results). Most were remodelers, plumbers and stores; Google redirect URLs resolved with curl. The only partition firm based in the area was Third Dimension Specialties (division-10.com)",
+  "Scranton Products find-a-rep (/find-a-rep/): 404",
+  "Bobrick find-a-rep: page loaded, but the rep list is rendered by script, so no listings",
+  "ASI, Bradley, Hadrian, Metpar, General Partitions, Ampco/Ammco locators: not tried (earlier areas found them script-rendered or 404)",
+  "The Blue Book: search page for PA East toilet partitions (thebluebook.com/search.html?region=5&class=3070) blocked with 403; a WebSearch aimed at it returned nothing from thebluebook.com",
+  "BuildingConnected / Procore: not tried",
+  "Yelp (m.yelp.com Advanced Specialties): blocked with 403. A search showed Advanced Specialties Scranton is a cleaning/moving business, so it was excluded",
+  "Facebook (NSA Commercial Door and Hardware post, group posts): login wall, title only; location unknown, not included",
+  "Kelley Bros site (home, locations, Division 10 page): worked",
+  "Company sites fetched: division-10.com, buildersdoor.com, lrinstallations.com, tristate-material.com, triadinc.net, partitionstalls.com and 10-spec.com (via curl) worked. widenerinc.com shows no city, phone or install details, so not included. commercialdoorworx.com is NC/SC/FL, excluded",
+  "WebSearch: 8 of 8 used (toilet partition installation Scranton/Wilkes-Barre; Advanced Specialties x2; Division 10 NE PA; Blue Book Scranton; Lackawanna/Luzerne/Monroe toilet partitions; Poconos/Stroudsburg/Hazleton/Binghamton; Wilkes-Barre/Scranton/Allentown installers). They returned mostly Scranton Products manufacturer pages and national suppliers; no installer based in Scranton or Wilkes-Barre was found",
+  "Excluded: Scranton Products (manufacturer), One Point Partitions (DIY install), Partition Pros, Fast Partitions, Total Restroom (national or no install), Hostetter Supply (south-central PA), CSI Installations (NY/NH), residential remodelers and plumbers from the seeds"
+ ],
+ "candidates": [
+  {
+   "name": "10-SPEC",
+   "added_by_checker": false,
+   "base_city": "Marlboro",
+   "state": "NJ",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "ASI Global",
+    "Bobrick",
+    "Hadrian",
+    "Scranton Products"
+   ],
+   "phone": "732-992-4899",
+   "email": "sales@10-spec.com",
+   "website": "https://10-spec.com/",
+   "contact_page": "https://10-spec.com/",
+   "review_source": "BBB A+ letter grade (not accredited, listed under Sayreville NJ); no review count shown",
+   "evidence_urls": [
+    "https://10-spec.com/",
+    "https://10-spec.com/services/partition-installation/",
+    "https://bbb.org/us/pa/lehighton/category/partition"
+   ],
+   "partition_evidence": "Has a partition installation service page ('Expert Commercial Toilet Partition Installers', installs guaranteed 1 year); site schema calls it a 'Division 10 commercial bathroom partition contractor serving NJ, NY, PA, CT since 1979'.",
+   "red_flags": [
+    "Distributor that sells partitions directly (buy-around risk)",
+    "About 105 miles from Scranton; PA coverage is statewide claim, not NEPA-specific"
+   ],
+   "reason": "Commercial partition installer and distributor whose site says it serves PA; regional at roughly 105 miles.",
+   "license": {
+    "name": "10-SPEC",
+    "area": "scranton",
+    "status": "not_required_online_check",
+    "registry": "NJ Division of Consumer Affairs license verification (newjersey.mylicense.com, Home Improvement Contractors), not searched",
+    "note": "Based in Marlboro, NJ; same business as the 10-SPEC (Atlantic Building Specialties LLC) entry. Company site https://10-spec.com/ (not fetched for license details). New Jersey has no state license for commercial work. NJ Home Improvement Contractor registration covers residential work only. No local rule was supplied for Scranton, PA, and none was researched here. Checked 2026-11-20.",
+    "source_url": "https://newjersey.mylicense.com/verification/Search.aspx"
+   },
+   "score": 63
+  },
+  {
+   "name": "Tristate Material Services",
+   "added_by_checker": false,
+   "base_city": "Malvern",
+   "state": "PA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "484-913-0010",
+   "email": "",
+   "website": "https://tristate-material.com/",
+   "contact_page": "https://tristate-material.com/contact/",
+   "evidence_urls": [
+    "https://tristate-material.com/",
+    "https://tristate-material.com/project-gallery/",
+    "https://tristate-material.com/contact/"
+   ],
+   "partition_evidence": "Homepage says it sells and installs Division 10, 11 and 12 products including toilet partitions; project gallery lists commercial jobs incl. St Luke's Hospital, Lehighton PA (about 45 miles from Scranton).",
+   "red_flags": [
+    "Sells partitions itself (buy-around risk)",
+    "Based about 100 miles away; service area stated only as Mid-Atlantic"
+   ],
+   "reason": "Commercial Division 10 sell-and-install firm with a project near the area (Lehighton); regional Mid-Atlantic coverage includes PA.",
+   "license": {
+    "name": "Tristate Material Services",
+    "area": "scranton",
+    "status": "not_required_online_check",
+    "registry": "Pennsylvania Office of Attorney General, Home Improvement Contractor Registration",
+    "note": "No PA state license for this work, and Scranton has no local rule on file. The AG search returned HTTP 503 on 2026-11-20, so no record was checked. Base city: Malvern.",
+    "source_url": "https://hicsearch.attorneygeneral.gov/"
+   },
+   "score": 63
+  },
+  {
+   "name": "L&R Installations",
+   "added_by_checker": false,
+   "base_city": "Levittown",
+   "state": "PA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Global Partitions"
+   ],
+   "phone": "215-946-0500",
+   "email": "",
+   "website": "https://lrinstallations.com/",
+   "contact_page": "https://lrinstallations.com/book-consultation/",
+   "evidence_urls": [
+    "https://lrinstallations.com/",
+    "https://lrinstallations.com/toilet-partitions/"
+   ],
+   "partition_evidence": "Toilet partitions page: delivers and installs bathroom partitions and urinal screens for schools, gyms, offices, retail, healthcare; 'We carry the full line of Global Partitions'; materials HDPE, phenolic, laminate, powder-coated and stainless steel.",
+   "red_flags": [
+    "Carries/sells Global Partitions (buy-around risk)",
+    "Listed example cities are southeastern PA, NJ and DE; nothing names NEPA",
+    "Also does residential shower enclosures and closets"
+   ],
+   "reason": "Installs commercial toilet partitions and says it works across Pennsylvania; about 100 miles away, so regional.",
+   "license": {
+    "name": "L&R Installations",
+    "area": "scranton",
+    "status": "not_required_online_check",
+    "registry": "Pennsylvania Office of Attorney General, Home Improvement Contractor Registration",
+    "note": "No PA state license for this work, and Scranton has no local rule on file. If this business also does residential home improvement it would need a PA HIC registration (PA######), but that could not be checked because the AG search returned HTTP 503 on 2026-11-20. Base city: Levittown.",
+    "source_url": "https://hicsearch.attorneygeneral.gov/"
+   },
+   "score": 63
+  },
+  {
+   "name": "Mavi New York Inc",
+   "added_by_checker": true,
+   "base_city": "Long Island City",
+   "state": "NY",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "ASI Group",
+    "Bobrick",
+    "Bradley",
+    "Hadrian",
+    "Metpar",
+    "Scranton Products"
+   ],
+   "phone": "718-874-3805",
+   "email": "info@mavinewyork.com",
+   "website": "https://mavinewyork.com/",
+   "contact_page": "https://mavinewyork.com/contact-us/",
+   "evidence_urls": [
+    "https://mavinewyork.com/"
+   ],
+   "partition_evidence": "Site says it is 'an authorized distributor and installer of commercial toilet partitions'; Pennsylvania listed among service states.",
+   "red_flags": [
+    "Distributor that sells partitions (buy-around risk)",
+    "About 115 miles away"
+   ],
+   "reason": "Commercial toilet partition installer whose site lists Pennsylvania in its service area; regional.",
+   "license": {
+    "name": "Mavi New York Inc",
+    "area": "scranton",
+    "status": "found_inactive",
+    "license_number": "626466",
+    "license_type": "NYC DOB General Contractor (NYC registration; does not cover Scranton, PA)",
+    "registry": "NYC DOB License Info (NYC Open Data dataset t8hj-ruu2, updated Nov 2026); City of Scranton General Contractor license (no public search found)",
+    "note": "Checked 2026-11-20. The company site claims NYC DOB GC License #626466. The NYC DOB License Info record for 626466 lists the business as MAVI NEW YORK, INC, Long Island City, with status EXPIRED. The DOB BIS lookup returned 403 to automated access. For the Scranton area, the City of Scranton page says commercial work needs a city General Contractors License. The city's OpenGov portal has no public contractor search that works without JavaScript, so the Scranton license status is unknown and needs a phone check with Scranton Licensing, Inspections and Permits. PA has no state license for commercial work (HIC registration is residential only). Base city Long Island City, NY; company phone 718-874-3805; toilet partitions are a core service.",
+    "source_url": "https://data.cityofnewyork.us/resource/t8hj-ruu2.json?license_number=626466"
+   },
+   "score": 63
+  },
+  {
+   "name": "Builders Door & Hardware, Inc.",
+   "added_by_checker": false,
+   "base_city": "Allentown",
+   "state": "PA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "ASI Global Partitions",
+    "Metpar",
+    "Scranton Products (Hiny Hiders)"
+   ],
+   "phone": "(610) 821-4047",
+   "email": "info@buildersdoor.com",
+   "website": "https://www.buildersdoor.com/",
+   "contact_page": "https://www.buildersdoor.com/contact",
+   "evidence_urls": [
+    "https://www.buildersdoor.com/",
+    "https://www.buildersdoor.com/toilet-partitions"
+   ],
+   "partition_evidence": "Toilet partitions product page titled 'Toilet Partitions | BD&H | PA Sales & Installation Services' and site lists an Installation service, but installation text describes door/hardware work; no partition project photos seen.",
+   "red_flags": [
+    "Primarily a door/frame/hardware supplier",
+    "Sells partitions itself (buy-around risk)"
+   ],
+   "reason": "Pennsylvania commercial Division 8/10 supplier about 60 miles away that sells partitions and offers installation; partition installation itself not shown in projects.",
+   "license": {
+    "name": "Builders Door & Hardware, Inc.",
+    "area": "scranton",
+    "status": "not_required_online_check",
+    "registry": "Pennsylvania Office of Attorney General, Home Improvement Contractor Registration",
+    "note": "No PA state license for this work, and Scranton has no local rule on file. The AG search returned HTTP 503 on 2026-11-20, so no record was checked. Base city: Allentown.",
+    "source_url": "https://hicsearch.attorneygeneral.gov/"
+   },
+   "score": 43
+  },
+  {
+   "name": "Partition Stalls",
+   "added_by_checker": false,
+   "base_city": "Staten Island",
+   "state": "NY",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "ASI Global Partitions",
+    "Hadrian",
+    "Scranton Products",
+    "Metpar",
+    "All American Metal",
+    "General Partitions",
+    "Flush Metal"
+   ],
+   "phone": "646-349-4040",
+   "email": "info@partitionstalls.com",
+   "website": "https://partitionstalls.com/",
+   "contact_page": "https://partitionstalls.com/contact/",
+   "evidence_urls": [
+    "https://partitionstalls.com/",
+    "https://partitionstalls.com/service-areas/pennsylvania/"
+   ],
+   "partition_evidence": "Says supply + installation in NY, NJ, PA, CT, FL, TX, CA and DE; Pennsylvania page lists documented PA projects (incl. a Wilkes-Barre replacement-parts supply reference).",
+   "red_flags": [
+    "Direct online competitor of Next Partitions: nationwide partition seller with free design, instant pricing and kits",
+    "High buy-around risk"
+   ],
+   "reason": "Installs in PA, but it is a nationwide online partition reseller competing directly with Next Partitions, so not suitable as a referral installer.",
+   "license": null,
+   "score": 63
+  },
+  {
+   "name": "Triad Building Specialties Inc",
+   "added_by_checker": false,
+   "base_city": "West Chester",
+   "state": "PA",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Global Partitions",
+    "Scranton Products",
+    "American Specialties",
+    "Bradley",
+    "Bobrick",
+    "Koala"
+   ],
+   "phone": "610.436.6805",
+   "email": "info@triadinc.net",
+   "website": "http://triadinc.net/",
+   "contact_page": "http://triadinc.net/contact.html",
+   "evidence_urls": [
+    "http://triadinc.net/",
+    "http://triadinc.net/about.html",
+    "http://triadinc.net/contact.html"
+   ],
+   "partition_evidence": "Site title and meta: 'Installer of Toilet Partitions and Bathroom Accessories'; About page: Chester County supplier of toilet partitions and accessories to commercial clients since 1976.",
+   "red_flags": [
+    "No service area stated; about 115 miles from Scranton",
+    "Supplies partitions (buy-around risk)",
+    "Dated website"
+   ],
+   "reason": "Real commercial partition installer, but Chester County based and its site does not say it serves NEPA; worth asking only if regional coverage is confirmed.",
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Division 10 (Third Dimension Specialties)",
+   "added_by_checker": false,
+   "base_city": "Scranton",
+   "state": "PA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Duralife",
+    "Tufftec",
+    "Scranton Products (Hiny Hiders link)"
+   ],
+   "phone": "570-969-0623",
+   "email": "",
+   "website": "https://division-10.com/site/",
+   "contact_page": "https://division-10.com/site/contact/",
+   "evidence_urls": [
+    "https://division-10.com/site/"
+   ],
+   "partition_evidence": "Describes itself as a master distributor of toilet partitions, shower stalls, urinal screens, lockers; serves the Northeast US. No installation service or install photos seen.",
+   "red_flags": [
+    "Distributor/supplier, not shown as installer (buy-around risk)"
+   ],
+   "reason": "Local Scranton partition distributor with no evidence it installs; could be a channel for installer referrals but not an installer itself.",
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Kelley Bros (Clarks Summit office)",
+   "added_by_checker": false,
+   "base_city": "Clarks Summit",
+   "state": "PA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "800-856-2550",
+   "email": "",
+   "website": "https://www.kelleybros.com/",
+   "contact_page": "https://www.kelleybros.com/contact-us/",
+   "evidence_urls": [
+    "https://www.kelleybros.com/"
+   ],
+   "partition_evidence": "Site mentions a Division 10 product category and 'washroom accessories and specialty products', but services listed are access control, pre-installation, security and keying; partitions not named.",
+   "red_flags": [
+    "Clarks Summit office not confirmed on pages read (homepage lists PA among states only)",
+    "Door/hardware/access-control distributor"
+   ],
+   "reason": "Commercial Division 8/10/28 distributor; no evidence of toilet partition installation.",
+   "license": null,
+   "score": 30
+  }
+ ]
+}
