@@ -54,6 +54,8 @@ Last checked November 23, 2026. Codes change, so confirm your project with the H
 
 Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
 
+Need an installer? Our directory of [partition installers in Houston](/installers/texas/houston) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+
 Houston does not license or register general contractors. The contractor buys the building permit where one is needed, and trade permits (electrical, plumbing, HVAC) need a state license registered with the City. Texas has no statewide contractor license for this work. Confirm what your project needs with the Houston Permitting Center. You don't need a permit to buy partitions.
 
 Our [installation guide](/guides/how-to-install-toilet-partitions) shows the work step by step, and [how to measure for toilet partitions](/blog/how-to-measure-for-toilet-partitions) covers what to send for an accurate quote.
@@ -82,7 +84,7 @@ Price a standard layout in the configurator, or send your drawings, stall count 
 Yes. Partitions ship by freight carrier to Houston and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
 
 ### Does Next Partitions install partitions in Houston?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. Houston does not license or register general contractors, so check a contractor's insurance and references yourself.
+No. We supply the partitions and the shop drawings; a contractor you hire installs them. Our directory lists [partition installers in Houston](/installers/texas/houston), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Houston's humidity?
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
@@ -110,7 +112,7 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 
 ## Implementation notes
 
-- City page #1 of the February calendar (`/service-area/houston/`, month 1). A buy page: the primary action is "Configure your partitions". It doesn't link to the installer directory; once `/installers/texas/houston` is published, the Installation section gets the small "Installers in Houston" link.
+- City page #1 of the February calendar (`/service-area/houston/`, month 1). A buy page: the primary action is "Configure your partitions". The Installation section and one FAQ answer link to the installer directory page `/installers/texas/houston`: publish this page together with that one, or hold the two links until it is live (it returns 404 today).
 - `:::pricer` is the step-by-step pricer (one question per slide, email before any range, "Get my instant quote range" on the last slide). In the preview it's a working mock with a note where the range goes; on export it's the slot `<!--np-pricer:Houston-->` for the app's pricer component, so nothing unfinished reaches the live site.
 - No prices and no lead times until the price list is in.
 - Schema: BreadcrumbList, FAQPage and Service (provider Next Partitions, areaServed Houston). No LocalBusiness: there is no Houston office.

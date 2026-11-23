@@ -591,6 +591,8 @@ ${shell.match(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/
     // Links: rebuilt pages stay in the preview; everything else goes to the live site.
     .replace(/(href|src)="\/(?!\/)([^"]*)"/g, (_, attr, path) => {
       const clean = '/' + path.replace(/[#?].*$/, '').replace(/\/$/, '')
+      // a city's installer page: the preview has one sample area page (the DFW prototype)
+      if (attr === 'href' && /^\/installers\/[^/]+\/[^/]+$/.test(clean)) return `${attr}="installers/dfw.html"`
       if (attr === 'href' && built.has(clean)) return `${attr}="${fileFor(clean)}${path.includes('#') ? path.slice(path.indexOf('#')) : ''}"`
       return `${attr}="${SITE}/${path}"`
     })
