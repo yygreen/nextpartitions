@@ -31,17 +31,22 @@ function draw(name, W, H, { city, state, lat, lng }) {
   const left = x < cx
   const lx = left ? x - 24 : x + 24, anchor = left ? 'end' : 'start'
   const fs = big ? 20 : 17
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-labelledby="t-${name} d-${name}" font-family="${FONT}">
+  // crop to the drawing itself, so the hero is no taller than the map needs
+  const [[, by0]] = path.bounds(st), tw = city.length * fs * 0.6
+  const vx0 = Math.floor(Math.min(bx0, left ? lx - tw : bx0) - 4), vx1 = Math.ceil(Math.max(bx1, left ? bx1 : lx + tw) + 4)
+  const vy0 = Math.floor(by0 - 4), vy1 = Math.ceil(by1 + 26)
+  const vw = vx1 - vx0, vh = vy1 - vy0
+  return `<svg xmlns="http://www.w3.org/2000/svg" class="np-city-map" viewBox="${vx0} ${vy0} ${vw} ${vh}" width="${vw}" height="${vh}" role="img" aria-labelledby="t-${name} d-${name}" font-family="${FONT}">
 <title id="t-${name}">${esc(city)} on a map of ${esc(state)}</title>
 <desc id="d-${name}">Outline of ${esc(state)} with ${esc(city)} marked in orange and a ring around the nearby cities we deliver to.</desc>
 <defs><pattern id="hatch-${name}" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="${C.struct}"/><line x1="0" y1="0" x2="0" y2="8" stroke="${C.hatch}" stroke-width="1.5"/></pattern>
 <clipPath id="clip-${name}"><path d="${r1(path(st))}"/></clipPath></defs>
-<rect width="${W}" height="${H}" fill="#ffffff"/>
+<rect x="${vx0}" y="${vy0}" width="${vw}" height="${vh}" fill="#ffffff"/>
 <path d="${r1(path(st))}" fill="url(#hatch-${name})" stroke="${C.ink}" stroke-width="1.5" stroke-linejoin="round"/>
 <g clip-path="url(#clip-${name})"><path d="${ring}" fill="${C.tint}" stroke="${C.orange}" stroke-width="1.5" stroke-dasharray="5 4"/></g>
 <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${big ? 7 : 6}" fill="${C.orange}" stroke="#ffffff" stroke-width="2"/>
 <text x="${lx.toFixed(1)}" y="${(y + fs * 0.35).toFixed(1)}" text-anchor="${anchor}" font-size="${fs}" font-weight="700" fill="${C.ink}" stroke="#fff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">${esc(city)}</text>
-<text x="${((bx0 + bx1) / 2).toFixed(1)}" y="${Math.min(H - 6, by1 + 20).toFixed(1)}" text-anchor="middle" font-size="12" font-weight="600" letter-spacing="1.2" fill="${C.muted}">${esc(state.toUpperCase())}</text>
+<text x="${((bx0 + bx1) / 2).toFixed(1)}" y="${(by1 + 18).toFixed(1)}" text-anchor="middle" font-size="12" font-weight="600" letter-spacing="1.2" fill="${C.muted}">${esc(state.toUpperCase())}</text>
 </svg>
 `
 }
