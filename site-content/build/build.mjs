@@ -318,7 +318,9 @@ function heroArt(raw, url) {
   if (ph) return `<figure class="np-hero-photo np-hero-live"><img src="${ph[2]}" alt="${esc(ph[1])}" width="540" height="465"></figure>`
   if (HERO_RENDER[url]) return `<figure class="np-hero-photo"><img src="${renderSrc(HERO_RENDER[url])}" alt="" width="2400" height="1500"></figure>`
   const m = raw.match(/\(\/images\/diagrams\/([a-z0-9-]+)\.svg\)/)
-  const name = HERO_DIAGRAM[url] || (m ? m[1] : HERO_FALLBACK[url])
+  // a city buy page: the state outline with the city marked (city-maps.mjs)
+  const cityMap = /^\/service-area\/[^/]+$/.test(url) && existsSync(`${DIAGRAMS}city-${url.split('/').pop()}.svg`) ? `city-${url.split('/').pop()}` : null
+  const name = HERO_DIAGRAM[url] || cityMap || (m ? m[1] : HERO_FALLBACK[url])
   if (!name) return ''
   const art = (file) => inlineSvg(file).replace(/<title[\s\S]*?<\/title>|<desc[\s\S]*?<\/desc>/g, '').replace(/ aria-labelledby="[^"]*"/, '')
     .replace(/ id="([^"]+)"/g, ' id="h-$1"').replace(/url\(#/g, 'url(#h-')

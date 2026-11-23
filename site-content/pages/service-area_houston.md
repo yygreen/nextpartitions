@@ -5,6 +5,8 @@ meta: Commercial bathroom partitions delivered to Houston job sites. Price your 
 h1: Bathroom Partitions in Houston
 city: Houston
 state: Texas
+lat: 29.7857
+lng: -95.3888
 primary_keyword: bathroom partitions houston (calendar #1, month 1)
 secondary_keywords: [restroom partitions houston, toilet partitions houston, bathroom partitions houston texas, commercial bathroom partitions houston]
 date: 2026-11-23
