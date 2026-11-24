@@ -250,8 +250,11 @@ def check(slug, t):
     if len(meta) > 160: out.append('%s: meta %d chars' % (slug, len(meta)))
     return out
 
+# city packs whose agent stopped before its final check: no page until they are finished (one slug per line)
+DRAFTS = set(open(R('research/city-pages/drafts.txt')).read().split()) if os.path.exists(R('research/city-pages/drafts.txt')) else set()
+
 if __name__ == '__main__':
-    slugs = sys.argv[1:] or [s for s in BASE if s not in HAND and os.path.exists(R('research/city-pages/cities/%s.json' % s)) and os.path.exists(R('research/city-pages/states/%s.json' % BASE[s]['state']))]
+    slugs = sys.argv[1:] or [s for s in BASE if s not in HAND and s not in DRAFTS and os.path.exists(R('research/city-pages/cities/%s.json' % s)) and os.path.exists(R('research/city-pages/states/%s.json' % BASE[s]['state']))]
     probs = []
     for s in slugs:
         if s in HAND: print('skip (hand-written):', s); continue
