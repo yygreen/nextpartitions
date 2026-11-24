@@ -1,0 +1,506 @@
+{
+ "state": "OH",
+ "state_name": "Ohio",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "Ohio Building Code (OAC 4101:1; 2021 International Building Code with Ohio amendments), duplicated as Table 403.1 of the Ohio Plumbing Code (OAC 4101:3; 2021 International Plumbing Code with Ohio amendments)",
+   "edition": "2021 IBC / 2021 IPC as adopted by Ohio; Chapter 29 and plumbing Chapter 4 amendments effective 2025-10-15",
+   "table": "Table 2902.1 (building code) = Table 403.1 (plumbing code), Minimum Number of Required Plumbing Fixtures",
+   "url": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-29-01_eff_10_15_25.pdf",
+   "quote": "Chapter 29 of the International Building Code, 2021 edition, as incorporated by reference and modified in Section 101.1.1 of this code, is further modified as follows: ... (C) Modify table 2902.1 as follows: Relocate the reference to footnote \"f\" to the assembly classification and replace footnote \"f\" with the following: f. The minimum required number, type and location of plumbing fixtures for public swimming pools are to be provided in accordance with Section 3109.3.3 of the building code.",
+   "note": "Ohio's only change to the table is footnote f (swimming pools); the office, restaurant and school rows are the 2021 model code's. The Ohio rule PDFs on codes.ohio.gov print only the amendments, so the table rows themselves were read on UpCodes' consolidated 'Ohio Building Code 2024' (https://up.codes/viewer/ohio/ibc-2021/chapter/29/plumbing-systems)."
+  },
+  "cities_may_amend": true,
+  "cities_may_amend_note": {
+   "text": "The code applies statewide. State law lets a municipality add regulations only where they don't conflict with the state building rules, so a city cannot lower these counts; whether any of the five cities adds anything is for the city agent to check.",
+   "quote": "Chapters 3781. and 3791. of the Revised Code do not prevent the legislative authority of a municipal corporation from making further and additional regulations, not in conflict with those chapters or with the rules the board of building standards adopts.",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3781.01"
+  },
+  "rows": {
+   "office": {
+    "row_label": "2 Business: Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial, ambulatory care and similar uses",
+    "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "urinals": "No urinal column; see Section 424.2 of the plumbing code (substitution)",
+    "quote": "Business | Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial, ambulatory care and similar uses | 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50 | [lavatories] 1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80",
+    "url": "https://up.codes/viewer/ohio/ibc-2021/chapter/29/plumbing-systems"
+   },
+   "restaurant": {
+    "row_label": "1 Assembly: Restaurants, banquet halls and food courts (footnote d)",
+    "wc_male": "1 per 75",
+    "wc_female": "1 per 75",
+    "urinals": "No urinal column; see Section 424.2 of the plumbing code (substitution)",
+    "quote": "Restaurants, banquet halls and food courtsd | 1 per 75 | 1 per 75 | [lavatories] 1 per 200. Footnote d: The occupant load for seasonal outdoor seating and entertainment areas shall be included when determining the minimum number of facilities required.",
+    "url": "https://up.codes/viewer/ohio/ibc-2021/chapter/29/plumbing-systems"
+   },
+   "school": {
+    "row_label": "3 Educational: Educational facilities",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 50",
+    "urinals": "No urinal column; see Section 424.2 of the plumbing code (substitution)",
+    "quote": "Educational | Educational facilities | 1 per 50 | [lavatories] 1 per 50 | [drinking fountains] 1 per 100 | 1 service sink",
+    "url": "https://up.codes/viewer/ohio/ibc-2021/chapter/29/plumbing-systems"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Total occupant load is divided in half, unless approved statistical data shows another split. Rooms designed for all genders are counted on the total occupant load.",
+    "quote": "To determine the occupant load of each sex, the total occupant load shall be divided in half. ... Exceptions: The total occupant load shall not be required to be divided in half where approved statistical data indicates a distribution of the sexes of other than 50 percent of each sex. Where multiple-user facilities are designed to serve all genders, the minimum fixture count shall be calculated 100 percent, based on total occupant load.",
+    "url": "https://up.codes/viewer/ohio/ibc-2021/chapter/29/plumbing-systems"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole number; one fixture for the number of persons shown or any fraction of it.",
+    "quote": "Fractional numbers resulting from applying the fixture ratios of Table 2902.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number.",
+    "url": "https://up.codes/viewer/ohio/ibc-2021/chapter/29/plumbing-systems"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are optional. In each toilet room they may replace up to 67% of the required toilets in assembly (restaurant) and educational occupancies, and up to 50% in all others (offices).",
+    "quote": "424.2 Substitution for Water Closets. In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent of the required water closets in assembly and educational occupancies. Urinals shall not be substituted for more than 50 percent of the required water closets in all other occupancies.",
+    "url": "https://up.codes/viewer/ohio/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "small_occupancy_exception": {
+    "text": "Separate men's and women's rooms aren't required at a total occupant load of 15 or fewer (any use), 25 or fewer in a business occupancy, or 100 or fewer in a mercantile occupancy. Ohio adds: no facilities needed in a building under 100 sq ft if fixtures are available within 500 feet, and the building official may set a different occupant load where the actual one differs significantly.",
+    "quote": "Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. Separate facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer. [Ohio amendment, official text:] When the actual occupant load will be significantly different than that determined by Section 1004, the building official may establish an alternative basis for determining the occupant load. ... Exception: Facilities are not required in buildings less than 100 square feet in area if fixtures are available within 500 feet of the building.",
+    "url": "https://up.codes/viewer/ohio/ibc-2021/chapter/29/plumbing-systems",
+    "official_url": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-29-01_eff_10_15_25.pdf"
+   },
+   "occupant_load": {
+    "text": "Office (business areas): 150 sq ft gross per occupant. Restaurant dining room (assembly, unconcentrated, tables and chairs): 15 sq ft net. Classroom: 20 sq ft net. Ohio's Chapter 10 amendments (official PDF read) don't touch Table 1004.5.",
+    "quote": "Business areas | 150 gross ... Assembly without fixed seats ... Unconcentrated (tables and chairs) | 15 net ... Educational: Classroom area | 20 net",
+    "url": "https://up.codes/viewer/ohio/ibc-2021/chapter/10/means-of-egress",
+    "official_url": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-10-01_eff_10_15_25.pdf"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50/2 = 25 per sex. 1 per 25 for the first 50: 25/25 = 1 each. Urinals may replace up to 50% of the men's 1: 1 x 0.50 = 0.50, so 0 (per toilet room)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100/2 = 50 per sex. 1 per 25 for the first 50: 50/25 = 2 each. Urinals may replace up to 50% of the men's 2: 2 x 0.50 = 1.00, so 1 (per toilet room)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200/2 = 100 per sex. First 50: 50/25 = 2; remaining 50 at 1 per 50 = 1; total 3 each. Urinals may replace up to 50% of the men's 3: 3 x 0.50 = 1.50, so 1 (per toilet room)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400/2 = 200 per sex. First 50: 50/25 = 2; remaining 150 at 1 per 50 = 3; total 5 each. Urinals may replace up to 50% of the men's 5: 5 x 0.50 = 2.50, so 2 (per toilet room)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50/2 = 25 per sex. 1 per 75: 25/75 = 0.33, rounds up to 1 each. Urinals may replace up to 67% of the men's 1: 1 x 0.67 = 0.67, so 0 (per toilet room)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "100/2 = 50 per sex. 1 per 75: 50/75 = 0.67, rounds up to 1 each. Urinals may replace up to 67% of the men's 1: 1 x 0.67 = 0.67, so 0 (per toilet room)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200/2 = 100 per sex. 1 per 75: 100/75 = 1.33, rounds up to 2 each. Urinals may replace up to 67% of the men's 2: 2 x 0.67 = 1.34, so 1 (per toilet room)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400/2 = 200 per sex. 1 per 75: 200/75 = 2.67, rounds up to 3 each. Urinals may replace up to 67% of the men's 3: 3 x 0.67 = 2.01, so 2 (per toilet room)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50/2 = 25 per sex. 1 per 50: 25/50 = 0.5, rounds up to 1 each. Urinals may replace up to 67% of the men's 1: 1 x 0.67 = 0.67, so 0 (per toilet room)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "100/2 = 50 per sex. 1 per 50: 50/50 = 1 each. Urinals may replace up to 67% of the men's 1: 1 x 0.67 = 0.67, so 0 (per toilet room)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200/2 = 100 per sex. 1 per 50: 100/50 = 2 each. Urinals may replace up to 67% of the men's 2: 2 x 0.67 = 1.34, so 1 (per toilet room)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400/2 = 200 per sex. 1 per 50: 200/50 = 4 each. Urinals may replace up to 67% of the men's 4: 4 x 0.67 = 2.68, so 2 (per toilet room)."
+   }
+  ],
+  "confidence": "medium",
+  "confidence_note": "Ohio's amendments were read on the official codes.ohio.gov PDFs and leave these rows and rules as in the 2021 model codes; the rows and sections themselves were read on UpCodes because the official PDFs print amendments only."
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "Ohio Building Code Section 803.9 (2021 IBC, unamended by Ohio), with Section 803.1.1 and the Chapter 2 definition of interior wall and ceiling finish",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. | 803.1.1 Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1. | Definition: INTERIOR WALL AND CEILING FINISH. The exposed interior surfaces of buildings, including but not limited to: fixed or movable walls and partitions; toilet room privacy partitions; columns; ceilings ...",
+  "url": "https://up.codes/viewer/ohio/ibc-2021/chapter/8/interior-finishes",
+  "definition_url": "https://up.codes/viewer/ohio/ibc-2021/chapter/2/definitions",
+  "official_amendments_url": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-8-01_eff_3_1_24.pdf",
+  "note": "Ohio's Chapter 8 rule (official PDF, effective 2024-03-01) changes only a footnote to Table 803.13, so 803.9 stands as in the 2021 IBC. Section text read on UpCodes.",
+  "confidence": "medium"
+ },
+ "access": {
+  "state_standard": "Chapter 11 of the Ohio Building Code (2021 IBC Chapter 11 with Ohio amendments) and ICC A117.1: the 2017 edition for new construction and additions, the 2009 edition for alterations and changes of occupancy. Ohio's one amendment to A117.1 concerns mirror height (603.3).",
+  "standard_quote": "1102.1 Design. Buildings and facilities are to be designed and constructed to be accessible in accordance with this code and ICC A117.1. ... 1102.2 Existing buildings. Existing buildings are to comply with Chapter 34. Where an existing building is required to comply with the provisions of Chapter 11, any reference to ICC A117.1 is to the edition of ICC A117.1 identified in Chapter 35 of this code. | Chapter 35: ICC A117.1-09 Accessible and Usable Buildings and Facilities (for alterations and change of occupancy); ICC A117.1-17 Accessible and Usable Buildings and Facilities (for new construction and additions)",
+  "standard_urls": [
+   "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-11-01_eff_10_15_25.pdf",
+   "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-35-01_eff_10_15_25.pdf"
+  ],
+  "differences": [
+   {
+    "point": "Vertical grab bar on the side wall (new construction, 2017 edition)",
+    "state": "A117.1-2017 604.5.1: side-wall grab bars include a horizontal bar and an 18-inch vertical bar; applies to wheelchair stalls (604.9.6) and to both sides of ambulatory stalls (604.10.4).",
+    "federal": "2010 ADA 604.5.1: a horizontal side wall grab bar only (42 inches long minimum); no vertical bar.",
+    "state_url": "https://up.codes/viewer/ohio/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "Fixed side-wall grab bars shall include a horizontal bar complying with Section 604.5.1.1 and a vertical grab bar complying with Section 604.5.1.2. ... A vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall.",
+    "federal_quote": "604.5.1 Side Wall. The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall."
+   },
+   {
+    "point": "Toe clearance under wheelchair stall partitions (new construction, 2017 edition)",
+    "state": "12 inches high and 8 inches deep; not required at the front if the stall is deeper than 64 in (wall-hung) or 67 in (floor-mounted), nor at the side if wider than 68 in.",
+    "federal": "9 inches high and 6 inches deep (12 inches high for children's stalls); not required beyond 62/65 in deep or 66 in wide.",
+    "state_url": "https://up.codes/viewer/ohio/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "The front partition and at least one side partition of wheelchair accessible toilet compartments shall provide a toe clearance of 12 inches (305 mm) minimum above the floor and extending 8 inches (205 mm) beyond the compartment side face of the partition, exclusive of partition support members. Exceptions: Toe clearance at the front partition is not required in a wheelchair accessible toilet compartment greater than 64 inches (1625 mm) in depth with a wall-hung water closet, or greater than 67 inches (1700 mm) in depth with a floor-mounted water closet. Toe clearance at the side partition is not required in a wheelchair accessible toilet compartment greater than 68 inches (1725 mm) in width.",
+    "federal_quote": "The front partition and at least one side partition shall provide a toe clearance of 9 inches (230 mm) minimum above the finish floor and 6 inches (150 mm) deep minimum beyond the compartment-side face of the partition, exclusive of partition support members. Compartments for children's use shall provide a toe clearance of 12 inches (305 mm) minimum above the finish floor. EXCEPTION: Toe clearance at the front partition is not required in a compartment greater than 62 inches (1575 mm) deep with a wall-hung water closet or 65 inches (1650 mm) deep with a floor-mounted water closet. Toe clearance at the side partition is not required in a compartment greater than 66 inches (1675 mm) wide."
+   },
+   {
+    "point": "How many wheelchair stalls",
+    "state": "At least 5 percent of the compartments in a toilet room (so a second one from 21 compartments up); ambulatory stalls likewise 5 percent where stalls plus urinals total six or more.",
+    "federal": "At least one wheelchair stall, plus at least one ambulatory stall where there are six or more compartments or six or more toilets and urinals combined.",
+    "state_url": "https://up.codes/viewer/ohio/ibc-2021/chapter/11/accessibility",
+    "quote": "1110.2.4 Water Closet Compartment. Where water closet compartments are provided in a toilet room or bathing room, at least 5 percent of the total number of compartments shall be wheelchair accessible. Where the combined total water closet compartments and urinals provided in a toilet room or bathing room is six or more, at least 5 percent of the total number of compartments shall be ambulatory accessible, provided in addition to the wheelchair-accessible compartment.",
+    "federal_quote": "213.3.1 Toilet Compartments. Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1. In addition to the compartment required to comply with 604.8.1, at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures."
+   },
+   {
+    "point": "Where the wheelchair stall door opening may sit (2017 edition)",
+    "state": "Table 604.9.3.1 allows the door opening's far edge either within 4 inches of the far side partition or at least 56 inches from the side wall nearest the toilet (front partition); side-partition doors 52/55 inches from the rear wall or within 4 inches of the front.",
+    "federal": "Door opening 4 inches maximum from the side wall or partition farthest from the water closet (front), or 4 inches maximum from the front partition (side).",
+    "state_url": "https://up.codes/viewer/ohio/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "The farthest edge of the wheelchair accessible toilet compartment door opening shall be located in the front wall or partition or in the side wall or partition as required by Table 604.9.3.1. ... Front Wall or Partition | From the side wall or partition closest to the water closet | 56 inches (1420 mm) minimum | or | From the side wall or partition farthest from the water closet | 4 inches (100 mm) maximum",
+    "federal_quote": "Where located in the front partition, the door opening shall be 4 inches (100 mm) maximum from the side wall or partition farthest from the water closet. Where located in the side wall or partition, the door opening shall be 4 inches (100 mm) maximum from the front partition."
+   },
+   {
+    "point": "Family or assisted-use toilet room",
+    "state": "Required in assembly and mercantile occupancies where six or more toilets (men's and women's together) are required; Ohio also requires an adult changing station there (Section 1110.18, Ohio amendment).",
+    "federal": "No requirement to provide a family or unisex toilet room; 213.2.1 only limits what a unisex room may contain.",
+    "state_url": "https://up.codes/viewer/ohio/ibc-2021/chapter/11/accessibility",
+    "quote": "1110.2.1 Family or Assisted-Use Toilet and Bathing Rooms. In assembly and mercantile occupancies, an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required. | [Ohio, official PDF] 1110.18.1 Where required. At least one adult changing station is to be provided in all the following locations: 1. In assembly and mercantile occupancies, where family or assisted-use toilet or bathing rooms are required by Section 1110.2.1.",
+    "federal_quote": "213.2.1 Unisex (Single-Use or Family) Toilet and Unisex Bathing Rooms. Unisex toilet rooms shall contain not more than one lavatory, and two water closets without urinals or one water closet and one urinal."
+   }
+  ],
+  "same_as_federal": "Read and found the same: wheelchair stall size (60 in wide; 56 in deep wall-hung, 59 in floor-mounted), ambulatory stall (35 to 37 in wide, 60 in deep), self-closing door with pulls on both sides, 42 in latch-side approach clearance.",
+  "process": "No separate state accessibility registration or review step was found. Accessibility is part of the Ohio Building Code, so it is checked in ordinary plan approval by the certified local building department (or the state where there is none). Not read on an official page: confirm with the Ohio Board of Building Standards.",
+  "confidence": "medium"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "Single-user and family or assisted-use toilet rooms count toward the required fixtures and must be identified as available to all persons regardless of sex.",
+   "quote": "2902.1.2 Single-User Toilet and Bathing Room Fixtures. ... Single-user toilet and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified as being available for use by all persons regardless of their sex.",
+   "url": "https://up.codes/viewer/ohio/ibc-2021/chapter/29/plumbing-systems"
+  },
+  "all_gender_shared": {
+   "rule": "Allowed, except in schools (Group E) and institutions of higher education. Every toilet in its own compartment with a door; in Ohio those compartments must meet the Type A privacy rating of IAPMO/ANSI/CAN Z124.10; urinals in a visually separated area or each in a stall. Fixture count is based on the total occupant load.",
+   "quote": "6. In other than Group E occupancies and institutions of higher education, separate facilities are not required where rooms having both water closets and lavatory fixtures are designed for use by both sexes and privacy for water closets is provided in accordance with Section 405.3.4 of the plumbing code. | 2903.1.4 ... Compartments of multiple-user facilities designed to serve all genders are to comply with the Type A privacy rating requirements of IAPMO/ANSI/CAN Z124.10.",
+   "url": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-29-01_eff_10_15_25.pdf",
+   "note": "The Z124.10 standard itself was not read, so what 'Type A' means for a partition (gaps, height) is not stated here."
+  },
+  "use_restrictions": {
+   "rule": "Since February 25, 2025, K-12 schools (district, community, STEM and chartered nonpublic schools, educational service centers) and institutions of higher education must designate each multi-user student restroom for one sex and may not build or keep a multi-occupancy facility open to all genders. Family facilities with one toilet are allowed. No comparable statute for other buildings was found.",
+   "quote": "A school shall designate each student restroom, locker room, changing room, or shower room that is accessible by multiple students at the same time ... for the exclusive use by students of the male biological sex only or by students of the female biological sex only. ... No school shall construct, establish, or maintain a multi-occupancy facility that is designated as nongendered, multigendered, or open to all genders. Nothing in division (B)(3) of this section shall be construed to prohibit a school from constructing, establishing, or maintaining a family facility.",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3319.90",
+   "url_higher_ed": "https://codes.ohio.gov/ohio-revised-code/section-3345.90"
+  },
+  "confidence": "high"
+ },
+ "public_wage": {
+  "has_state_law": true,
+  "law": "Ohio Revised Code 4115.03 to 4115.16 (prevailing wage on public improvements); rates determined by the Director of Commerce from local collective bargaining agreements, by county",
+  "threshold": "Buildings: more than $250,000 for new construction; more than $75,000 for reconstruction, alteration, repair, remodeling, renovation or painting. Does not apply to school district or educational service center projects.",
+  "rates_url": "https://pwr.com.ohio.gov/",
+  "quote": "(B) Sections 4115.03 to 4115.16 of the Revised Code do not apply to: ... (3) Public improvements undertaken by, or under contract for, the board of education of any school district or the governing board of any educational service center | Commerce: Most public improvements: the law applies when the project's total estimated cost is more than $250,000 for new construction or more than $75,000 for reconstruction, enlargement, alteration, repair, remodeling, renovation, or painting. | Portal: This portal contains active, commercial prevailing wage rates for all construction trades in all jurisdictions within the State of Ohio.",
+  "url": "https://codes.ohio.gov/ohio-revised-code/section-4115.04",
+  "other_urls": [
+   "https://codes.ohio.gov/ohio-revised-code/section-4115.03",
+   "https://codes.ohio.gov/ohio-revised-code/section-4115.05",
+   "https://com.ohio.gov/divisions-and-programs/industrial-compliance/wage-and-hour/guides-and-resources/prevailing-wage-contractor-responsibilities"
+  ],
+  "confidence": "high"
+ },
+ "sales_tax": {
+  "state_rate": 0.0575,
+  "local_note": {
+   "text": "Counties and transit authorities add up to 3%; combined rate cannot exceed 8.75%.",
+   "quote": "Counties and regional transit authorities in Ohio can add sales tax in small increments (multiples of 0.05%) up to a maximum of 3 percent. When combined with the state rate—which is 5.75 percent—the overall tax rate (state, local, and transit) cannot exceed 8.75 percent.",
+   "url": "https://tax.ohio.gov/help-center/faqs/sales-and-use-general-information/sales-and-use-general-information"
+  },
+  "shipped_goods": {
+   "rule": "Taxable. An out-of-state seller must register and collect once its Ohio sales pass $100,000 or 200 transactions in the current or previous year; if the seller doesn't collect, the buyer owes use tax directly to the state.",
+   "quote": "You meet \"substantial nexus\" if: Your total sales to Ohio customers were over $100,000 in the current or previous year, OR You made 200 or more separate sales to Ohio customers in the current or previous year. | When the tax is not collected at purchase, the responsibility falls on the buyer to pay the corresponding use tax directly to the state.",
+   "url": "https://tax.ohio.gov/help-center/faqs/sales-and-use-general-information/sales-and-use-general-information",
+   "statute_url": "https://codes.ohio.gov/ohio-revised-code/section-5741.01"
+  },
+  "freight_taxed": true,
+  "freight": {
+   "quote": "Charges by the vendor or seller for preparation and delivery to a location designated by the consumer of taxable tangible personal property or of a taxable service, including charges for transportation, shipping, postage, handling, crating, and packing, are defined as part of the price for determining the tax. Charges paid by a customer to a delivery company, and not imposed or collected by the vendor or seller of the delivered property or service, are not subject to sales or use tax.",
+   "url": "https://codes.ohio.gov/ohio-administrative-code/rule-5703-9-52"
+  },
+  "install_labor": {
+   "rule": "Depends on whether the installed item becomes part of the real property. Installing tangible personal property is a taxable service. Work under a construction contract (property incorporated into real property, new or alteration) is not a sale: the contractor doesn't charge tax on its work. No Department publication read says which side toilet partitions fall on, or how labor is treated when the owner buys the partitions and hires an installer separately.",
+   "quote": "\"Sale\" and \"selling\" include ... All transactions by which: ... (b) An item of tangible personal property is or is to be installed, except property, the purchase of which would not be subject to the tax imposed by section 5739.02 of the Revised Code ... | Department FAQ: Contractors and home remodelers do not collect sales tax on their work. They do however, pay sales tax on the supplies they purchase.",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-5739.01",
+   "faq_url": "https://tax.ohio.gov/help-center/faqs/sales-and-use-applying-the-tax-what-is-and-isnt-taxable/sales-and-use-applying-the-tax"
+  },
+  "furnish_and_install": {
+   "rule": "A contract to supply and incorporate materials into real property (new work or alteration) is a construction contract, not a sale. The contractor is the consumer, pays sales or use tax on the materials and does not charge the customer tax. If the item stays personal property (a business fixture), it is a sale and the contractor charges tax on the whole price, installation included.",
+   "quote": "A \"construction contract\" is any agreement, written or oral, pursuant to which tangible personal property is or is to be transferred and incorporated into real property ... without regard to whether it is new construction or an addition to or alteration of an existing building or structure. ... Tangible personal property that is permanently affixed to real property, but that primarily benefits the business conducted on the premises by the occupant, is a \"business fixture,\" ... An agreement to transfer and install a business fixture is a sale and not a construction contract. ... A construction contractor who purchases materials or taxable services for incorporation into real property is the consumer of those materials or services and shall pay sales or use tax on their purchase price",
+   "url": "https://codes.ohio.gov/assets/laws/administrative-code/authenticated/5703/0/9/5703-9-14_20251113.pdf",
+   "other_urls": [
+    "https://tax.ohio.gov/static/sales_and_use/use_tax_contractors.pdf",
+    "https://tax.ohio.gov/help-center/faqs/sales-and-use-applying-the-tax-what-is-and-isnt-taxable/sales-and-use-applying-the-tax"
+   ],
+   "exemptions_note": "Rule 5703-9-14(D) lets the contractor buy materials tax-free for real property owned by the state or an Ohio political subdivision, houses of public worship, and buildings for 501(c)(3) or charitable use, with an exemption certificate (form STEC CC)."
+  },
+  "agency": "Ohio Department of Taxation",
+  "confidence": "medium"
+ },
+ "page": {
+  "stalls_intro": "Ohio's rules count toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. Half are counted as men and half as women, and any fraction rounds up. Every toilet needs a stall. Urinals are optional: in each men's room they may take the place of up to half of the required toilets in an office, and up to two thirds in a restaurant or school, and each urinal needs a screen.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building, and the men's figures show toilets only, before any are swapped for urinals. An office with 25 people or fewer, or any space with 15 or fewer, can use one shared restroom, and the building official may set a different capacity where the real number of people is very different.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** Ohio's building rules treat toilet partitions as an interior finish and require solid plastic (HDPE) and polypropylene partitions to pass a room-corner fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use, and a room with six or more toilets and urinals also needs a narrower stall with grab bars on both sides. Federal law and Ohio's building rules set the sizes. Ohio has no separate state sign-off for access: your local building department checks it when it approves the plans.",
+  "state_extra_bullet": "- **Ohio extras:** in new buildings and additions, Ohio goes further than the federal rules in three places. The accessible stall needs an 18 inch vertical grab bar on the side wall as well as the horizontal one. Its partitions need 12 inches of toe space above the floor, where the federal rule asks for 9. And in a very large restroom, 5% of the stalls must be wheelchair accessible, which means a second one from 21 stalls up.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to everyone. A shared all-gender room is allowed outside schools and colleges if every toilet sits in its own compartment with a door, the compartments meet a set privacy rating, and urinals are in stalls or screened from view. Since February 2025, Ohio law requires shared student restrooms in schools and colleges to be designated for one sex; one-toilet family restrooms are still allowed there.",
+  "public_jobs": "on state, county and city projects over $250,000 for new construction or $75,000 for remodeling, Ohio law requires at least the wage the state sets for each trade in each county; school district projects are exempt from that law.",
+  "tax_install_bullet": "- **Tax on installation:** in Ohio, a contractor who supplies and installs items that become part of the building doesn't charge sales tax on the job, and pays the tax on the materials instead. Where the installed item stays the occupant's own property rather than part of the building, the installation is taxed along with the item. The state's published guidance doesn't say which applies to toilet partitions, or to an installer fitting partitions you bought yourself, so ask.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable, and so is freight charged by the seller. If the seller doesn't collect the tax, the buyer owes it to the state.",
+  "tax_confirm": "your accountant or the Ohio Department of Taxation",
+  "sources": [
+   "- Toilet counts in Ohio: Ohio Building Code (OAC 4101:1, 2021 International Building Code with Ohio amendments), Table 2902.1 and Sections 2902.1.1 and 2902.2, and Ohio Plumbing Code (OAC 4101:3, 2021 International Plumbing Code with Ohio amendments), Table 403.1 and Section 424.2 (urinals). Ohio's amendments: [rule 4101:1-29-01](https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-29-01_eff_10_15_25.pdf) and [rule 4101:3-4-01](https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/3/4101$3-4-01_eff_10_15_25.pdf), Ohio Board of Building Standards. Table rows, rounding, the 50/50 split, urinal limits and floor area per person (Table 1004.5) were read on a secondary copy, [UpCodes, Ohio Building Code 2024](https://up.codes/viewer/ohio/ibc-2021/chapter/29/plumbing-systems) and [Ohio Plumbing Code 2024](https://up.codes/viewer/ohio/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: Ohio Building Code Section 803.9 with Section 803.1.1 (NFPA 286) and the Chapter 2 definition of interior wall and ceiling finish, read on [UpCodes, Ohio Building Code 2024, Chapter 8](https://up.codes/viewer/ohio/ibc-2021/chapter/8/interior-finishes); Ohio's Chapter 8 amendments, which leave the section unchanged: [rule 4101:1-8-01](https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-8-01_eff_3_1_24.pdf). Checked 2026-11-24.",
+   "- Ohio access rules: [rule 4101:1-11-01, Ohio Building Code Chapter 11](https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-11-01_eff_10_15_25.pdf) and the [referenced standards list, rule 4101:1-35-01](https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-35-01_eff_10_15_25.pdf) (ICC A117.1-2017 for new construction and additions, ICC A117.1-2009 for alterations and change of occupancy). Stall sections 604.5, 604.9 and 604.10 of ICC A117.1-2017 and Section 1110.2.4 were read on [UpCodes](https://up.codes/viewer/ohio/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities); federal text: [2010 ADA Standards](https://www.access-board.gov/ada/), sections 213.3.1, 604.5 and 604.8. Checked 2026-11-24.",
+   "- Single-user and all-gender restrooms: Ohio Building Code Sections 2902.1.2, 2902.2 exception 6 and 2903.1.4 as amended by [rule 4101:1-29-01](https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-29-01_eff_10_15_25.pdf). Schools and colleges: [Ohio Revised Code 3319.90](https://codes.ohio.gov/ohio-revised-code/section-3319.90) and [3345.90](https://codes.ohio.gov/ohio-revised-code/section-3345.90), effective February 25, 2025. Checked 2026-11-24.",
+   "- Wages on public jobs: [Ohio Revised Code 4115.03](https://codes.ohio.gov/ohio-revised-code/section-4115.03), [4115.04](https://codes.ohio.gov/ohio-revised-code/section-4115.04) (school district exemption) and [4115.05](https://codes.ohio.gov/ohio-revised-code/section-4115.05); thresholds on the Ohio Department of Commerce page [Prevailing Wage Contractor Responsibilities](https://com.ohio.gov/divisions-and-programs/industrial-compliance/wage-and-hour/guides-and-resources/prevailing-wage-contractor-responsibilities); rates on the [Ohio Prevailing Wage Portal](https://pwr.com.ohio.gov/). Checked 2026-11-24.",
+   "- Sales tax: Ohio Department of Taxation, [Sales and Use Tax general information](https://tax.ohio.gov/help-center/faqs/sales-and-use-general-information/sales-and-use-general-information) (state rate 5.75%, county and transit add-ons, out-of-state sellers, use tax) and [Sales and Use Taxability](https://tax.ohio.gov/help-center/faqs/sales-and-use-applying-the-tax-what-is-and-isnt-taxable/sales-and-use-applying-the-tax); [Ohio Administrative Code rule 5703-9-14, construction contracts](https://codes.ohio.gov/assets/laws/administrative-code/authenticated/5703/0/9/5703-9-14_20251113.pdf); [rule 5703-9-52, delivery charges](https://codes.ohio.gov/ohio-administrative-code/rule-5703-9-52); [Ohio Revised Code 5739.01](https://codes.ohio.gov/ohio-revised-code/section-5739.01) and [5739.02](https://codes.ohio.gov/ohio-revised-code/section-5739.02); [Use Tax and Contractors](https://tax.ohio.gov/static/sales_and_use/use_tax_contractors.pdf). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; Ohio Building Code (OAC 4101:1, 2021 International Building Code with Ohio amendments, effective March 1, 2024, amended October 15, 2025), Chapter 11 with ICC A117.1-2017 (new construction and additions) and ICC A117.1-2009 (alterations); Ohio Plumbing Code (OAC 4101:3, 2021 International Plumbing Code with Ohio amendments); NFPA 286 for HDPE."
+ },
+ "sources_read": [
+  {
+   "url": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-29-01_eff_10_15_25.pdf",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/3/4101$3-4-01_eff_10_15_25.pdf",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-8-01_eff_3_1_24.pdf",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-10-01_eff_10_15_25.pdf",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-11-01_eff_10_15_25.pdf",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-35-01_eff_10_15_25.pdf",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/ohio/ibc-2021/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/ohio/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/ohio/ibc-2021/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/ohio/ibc-2021/chapter/2/definitions",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/ohio/ibc-2021/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/ohio/ibc-2021/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/ohio/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+   "official": false
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3781.01",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3319.90",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3345.90",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-4115.03",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-4115.04",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-4115.034",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-4115.05",
+   "official": true
+  },
+  {
+   "url": "https://com.ohio.gov/divisions-and-programs/industrial-compliance/wage-and-hour/guides-and-resources/prevailing-wage-contractor-responsibilities",
+   "official": true
+  },
+  {
+   "url": "https://pwr.com.ohio.gov/",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-5739.01",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-5739.02",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-5741.01",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-5741.02",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/assets/laws/administrative-code/authenticated/5703/0/9/5703-9-14_20251113.pdf",
+   "official": true
+  },
+  {
+   "url": "https://codes.ohio.gov/ohio-administrative-code/rule-5703-9-52",
+   "official": true
+  },
+  {
+   "url": "https://tax.ohio.gov/help-center/faqs/sales-and-use-general-information/sales-and-use-general-information",
+   "official": true
+  },
+  {
+   "url": "https://tax.ohio.gov/help-center/faqs/sales-and-use-applying-the-tax-what-is-and-isnt-taxable/sales-and-use-applying-the-tax",
+   "official": true
+  },
+  {
+   "url": "https://tax.ohio.gov/static/sales_and_use/use_tax_contractors.pdf",
+   "official": true
+  }
+ ],
+ "to_confirm": [
+  "Table 2902.1 rows, Sections 2902.1.1, 2902.2, 424.2, 803.9 and Table 1004.5 were read on UpCodes, not on an official full text (codes.ohio.gov prints amendments only; ICC's free viewer needs a browser). Browser check against ICC's Ohio codes before launch.",
+  "ICC A117.1-2009 (the edition Ohio applies to alterations and changes of occupancy) was not read. The vertical grab bar and 12 inch toe clearance in the page text are stated for new buildings and additions only; confirm with the Ohio Board of Building Standards which applies to a partition replacement in an existing restroom.",
+  "What the 'Type A privacy rating' of IAPMO/ANSI/CAN Z124.10 requires of partitions in a shared all-gender room (standard not read): Ohio Board of Building Standards or the manufacturer.",
+  "No official page was read on a state accessibility review or registration step; the 'no separate state sign-off' line rests on not finding one. Confirm with the Ohio Board of Building Standards.",
+  "Sales tax: whether installed toilet partitions are real property (construction contract) or a business fixture (taxable sale and installation), and whether labor is taxable when the owner buys partitions and hires an installer separately. Ohio Department of Taxation; the contractee certification in ORC 5739.03(C) exists for this question.",
+  "Urinal substitution applies 'in each bathroom or toilet room', so the urinals_allowed figures assume all the men's fixtures are in one room.",
+  "Prevailing wage: thresholds for buildings ($250,000 / $75,000) are fixed in ORC 4115.03 and match the Commerce page; county rates for carpenters are for the city agent, from pwr.com.ohio.gov (may need a browser).",
+  "How Next Partitions itself collects Ohio tax (the $100,000 or 200-transaction test) is a question for Abe's accountant."
+ ]
+}

@@ -1,0 +1,516 @@
+{
+ "state": "VA",
+ "state_name": "Virginia",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "Virginia Plumbing Code (2021 International Plumbing Code as amended by the Virginia Uniform Statewide Building Code, 13VAC5-63-320)",
+   "edition": "2021 (effective January 18, 2024)",
+   "table": "Table 403.1, Minimum Number of Required Plumbing Fixtures. Virginia deletes the building code's own Table 2902.1 and points Section 2902.1 to this table.",
+   "url": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section320/",
+   "quote": "2902.1 Minimum number of fixtures. Plumbing fixtures shall be provided in the minimum number as shown in Table 403.1 of the VPC based on the actual use of the building or space. Uses not shown in Table 403.1 of the VPC shall be considered individually by the code official. The number of occupants shall be determined by this code. D. Delete Table 2902.1 and Sections 2902.1.1 through 2902.7."
+  },
+  "cities_may_amend": false,
+  "cities_may_amend_note": {
+   "text": "The statewide code supersedes local building codes, so Norfolk, Richmond and Virginia Beach cannot change the table.",
+   "quote": "Such building code shall supersede the building codes and regulations of the counties, municipalities and other political subdivisions and state agencies.",
+   "url": "https://law.lis.virginia.gov/vacode/title36/chapter6/section36-98/"
+  },
+  "rows": {
+   "office": {
+    "row_label": "2 Business: Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, ambulatory care, light industrial and similar uses",
+    "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "urinals": "See Section 424.2 (optional substitution, up to 50% of required water closets)",
+    "quote": "Business | Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, ambulatory care, light industrial and similar uses | 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50 | [lavatories] 1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80",
+    "url": "https://up.codes/viewer/virginia/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+    "source_note": "Read on UpCodes (secondary). The official Virginia Administrative Code page prints only the Assembly rows of the amended table; the ICC's official viewer did not render."
+   },
+   "restaurant": {
+    "row_label": "1 Assembly: Restaurants, banquet halls and food courts (footnote d)",
+    "wc_male": "1 per 75",
+    "wc_female": "1 per 75",
+    "urinals": "See Section 424.2 (optional substitution, up to 67% of required water closets)",
+    "quote": "Restaurants, banquet halls and food courtsd | 1 per 75 | 1 per 75 | 1 per 200 | — | 1 per 500 | 1 service sink",
+    "url": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section320/",
+    "source_note": "Read on the official Virginia Administrative Code page, 13VAC5-63-320 B 5. Footnote d (read on UpCodes): \"The occupant load for seasonal outdoor seating and entertainment areas shall be included when determining the minimum number of facilities required.\""
+   },
+   "school": {
+    "row_label": "3 Educational: Educational facilities",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 50",
+    "urinals": "See Section 424.2 (optional substitution, up to 67% of required water closets)",
+    "quote": "Educational | Educational facilities | 1 per 50 | [lavatories] 1 per 50 | — | [drinking fountains] 1 per 100 | 1 service sink",
+    "url": "https://up.codes/viewer/virginia/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+    "source_note": "Read on UpCodes (secondary)."
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "The total occupant load is divided in half, one half for each sex, unless approved statistical data show another split, the rooms are multi-user all-gender rooms (count on 100% of the load), or single-user rooms are provided.",
+    "quote": "To determine the occupant load of each sex, the total occupant load shall be divided in half. ... Exceptions: The total occupant load shall not be required to be divided in half where approved statistical data indicate a distribution of the sexes of other than 50 percent of each sex. [Virginia, 13VAC5-63-320 B 7:] 2. Where multiuser facilities are designed to serve all genders, the minimum fixture count shall be calculated 100% based on the total occupant load. 3. The total occupant load shall not be required to be divided in half with a distribution of sexes where single-user water closets and bathing room fixtures are provided in accordance with Section 403.1.2.",
+    "url": "https://up.codes/viewer/virginia/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+    "official_url_for_virginia_exceptions": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section320/"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole number, for each sex. In a mixed-use building the fractions for each use are added first, then rounded up.",
+    "quote": "Fractional numbers resulting from applying the fixture ratios of Table 403.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number.",
+    "url": "https://up.codes/viewer/virginia/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are optional. In each toilet room they may replace up to 67% of the required toilets in assembly (restaurant) and educational uses and up to 50% in all other uses, offices included. Virginia adds lower limits for multi-user all-gender rooms: 22.5% in assembly and educational, 25% elsewhere. The code does not say how a fraction of a urinal rounds; the worked examples round down because the limit is a maximum.",
+    "quote": "424.2 Substitution for Water Closets. In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent of the required water closets in assembly and educational occupancies. Urinals shall not be substituted for more than 50 percent of the required water closets in all other occupancies. Exception: In each multi-user gender-neutral bathroom or toilet room, urinals shall not be substituted for more than 22.5 % of the total number of water closets in Assembly and Educational occupancies. Urinals shall not be substituted for more than 25% of the total number of water closets in all other occupancies.",
+    "url": "https://up.codes/viewer/virginia/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+    "official_url_for_virginia_exception": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section320/"
+   },
+   "small_occupancy_exception": {
+    "text": "Separate rooms for each sex are not required where the total occupant load (staff and customers) is 15 or fewer, in a business occupancy of 25 or fewer, in a mercantile occupancy of 100 or fewer, where single-user rooms are provided, or where multi-user all-gender rooms meet Virginia's compartment rules.",
+    "quote": "403.2 Separate Facilities. Where plumbing fixtures are required, separate facilities shall be provided for each sex. Exceptions: ... Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. Separate facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer. Separate facilities shall not be required to be designated by sex where single-user toilet rooms are provided in accordance with Section 403.1.2. [Virginia:] 6. Separate facilities shall not be required where multi-user gender-neutral facilities are provided in accordance with Section 405.3 and Section 1109.2.6 of the VCC.",
+    "url": "https://up.codes/viewer/virginia/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+    "official_url_for_virginia_exception": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section320/"
+   },
+   "occupant_load": {
+    "text": "Office (business areas): 150 square feet gross per person. Restaurant dining room (assembly, unconcentrated, tables and chairs): 15 square feet net per person. Classroom: 20 square feet net per person.",
+    "quote": "Table 1004.5: Unconcentrated (tables and chairs) 15 net; Business areas 150 gross; Educational, Classroom area 20 net.",
+    "url": "https://up.codes/viewer/virginia/ibc-2021/chapter/10/means-of-egress"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 women, 25 men. 1 per 25 for the first 50: 25/25 = 1 each. Urinals may replace no more than 50% of 1 toilet (0.5), so none."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "50 women, 50 men. 50/25 = 2 each. Urinals: 50% of 2 = 1."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 women, 100 men. First 50 at 1 per 25 = 2, remaining 50 at 1 per 50 = 1; 3 each. Urinals: 50% of 3 = 1.5, so 1."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 women, 200 men. First 50 at 1 per 25 = 2, remaining 150 at 1 per 50 = 3; 5 each. Urinals: 50% of 5 = 2.5, so 2."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 women, 25 men. 25/75 = 0.33, rounded up to 1 each. Urinals: 67% of 1 = 0.67, so none."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 women, 50 men. 50/75 = 0.67, rounded up to 1 each. Urinals: 67% of 1 = 0.67, so none."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 women, 100 men. 100/75 = 1.33, rounded up to 2 each. Urinals: 67% of 2 = 1.34, so 1."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 women, 200 men. 200/75 = 2.67, rounded up to 3 each. Urinals: 67% of 3 = 2.01, so 2."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 girls, 25 boys. 25/50 = 0.5, rounded up to 1 each. Urinals: 67% of 1 = 0.67, so none."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 girls, 50 boys. 50/50 = 1 each. Urinals: 67% of 1 = 0.67, so none."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 girls, 100 boys. 100/50 = 2 each. Urinals: 67% of 2 = 1.34, so 1."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 girls, 200 boys. 200/50 = 4 each. Urinals: 67% of 4 = 2.68, so 2."
+   }
+  ],
+  "confidence": "medium",
+  "confidence_note": "The table's location, the restaurant row and every Virginia amendment were read on the official Virginia Administrative Code page. The office and school rows, Sections 403.1.1, 403.2 and 424.2 and Table 1004.5 were read on UpCodes' copy of the 2021 Virginia codes."
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "Virginia Construction Code 2021 (2021 IBC) Section 803.9, with Sections 803.1.1 and 803.1.1.1. Virginia's only amendment to Chapter 8 is Section 806.2 (13VAC5-63-235), so Section 803.9 applies as the model code prints it. The section number in the 2021 edition is 803.9, not 803.12.",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. ... 803.1.1 Interior Wall and Ceiling Finish Materials Tested in Accordance With NFPA 286. Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1.",
+  "virginia_related_quote": "[13VAC5-63-235, amended 806.2:] Fixed or movable walls and partitions, paneling, wall pads, and crash pads applied structurally or for decoration, acoustical correction, surface insulation, or other purposes shall be considered interior finish, shall comply with Section 803, and shall not be considered decorative materials or furnishings.",
+  "url": "https://up.codes/viewer/virginia/ibc-2021/chapter/8/interior-finishes",
+  "official_url": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section235/",
+  "confidence": "medium"
+ },
+ "access": {
+  "state_standard": "ICC A117.1-2017, referenced by Chapter 11 of the 2021 Virginia Construction Code (2021 IBC Chapter 11 with Virginia amendments in 13VAC5-63-250). Virginia's changes to the referenced standards list (13VAC5-63-360) do not touch A117.1, so the 2021 IBC's reference, \"ICC A117.1—17\", stands (read on UpCodes).",
+  "differences": [
+   {
+    "point": "Toe clearance under the partitions of a wheelchair stall",
+    "state": "12 inches high and 8 inches deep at the front partition and at least one side partition. Not needed at the front when the stall is deeper than 64 inches (wall-hung toilet) or 67 inches (floor-mounted), or at the side when wider than 68 inches.",
+    "federal": "9 inches high and 6 inches deep (12 inches high in children's stalls). Not needed at the front when deeper than 62 inches (wall-hung) or 65 inches (floor-mounted), or at the side when wider than 66 inches.",
+    "state_url": "https://up.codes/viewer/virginia/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "604.9.5.1 ... The front partition and at least one side partition of wheelchair accessible toilet compartments shall provide a toe clearance of 12 inches (305 mm) minimum above the floor and extending 8 inches (205 mm) beyond the compartment side face of the partition, exclusive of partition support members.",
+    "federal_quote": "604.8.1.4 Toe Clearance. The front partition and at least one side partition shall provide a toe clearance of 9 inches (230 mm) minimum above the finish floor and 6 inches (150 mm) deep minimum beyond the compartment-side face of the partition, exclusive of partition support members.",
+    "federal_url": "https://www.access-board.gov/ada/chapter/ch06/"
+   },
+   {
+    "point": "Vertical grab bar on the side wall",
+    "state": "Besides the 42-inch horizontal side bar, an 18-inch vertical bar is required: bottom 39 to 41 inches above the floor, centerline 39 to 41 inches from the rear wall. It applies in wheelchair stalls and on both sides of ambulatory stalls.",
+    "federal": "Horizontal side-wall bar only; no vertical bar.",
+    "state_url": "https://up.codes/viewer/virginia/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "604.5.1 Fixed side-wall grab bars shall include a horizontal bar complying with Section 604.5.1.1 and a vertical grab bar complying with Section 604.5.1.2. ... 604.5.1.2 A vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall.",
+    "federal_quote": "604.5.1 Side Wall. The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall.",
+    "federal_url": "https://www.access-board.gov/ada/chapter/ch06/"
+   },
+   {
+    "point": "How many accessible stalls",
+    "state": "At least 5% of the compartments in a toilet room wheelchair accessible; where toilets and urinals in the room total six or more, at least 5% ambulatory accessible as well.",
+    "federal": "At least one wheelchair stall; one ambulatory stall where there are six or more compartments, or toilets and urinals total six or more. The two rules give the same count until a room has more than 20 stalls.",
+    "state_url": "https://up.codes/viewer/virginia/ibc-2021/chapter/11/accessibility",
+    "quote": "1110.2.4 Water Closet Compartment. Where water closet compartments are provided in a toilet room or bathing room, at least 5 percent of the total number of compartments shall be wheelchair accessible. Where the combined total water closet compartments and urinals provided in a toilet room or bathing room is six or more, at least 5 percent of the total number of compartments shall be ambulatory accessible, provided in addition to the wheelchair-accessible compartment.",
+    "federal_quote": "213.3.1 Toilet Compartments. Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1. In addition to the compartment required to comply with 604.8.1, at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures.",
+    "federal_url": "https://www.access-board.gov/ada/chapter/ch02/"
+   },
+   {
+    "point": "Where the wheelchair stall's door opening sits",
+    "state": "A117.1-2017 gives two choices for a front door: far edge of the opening at least 56 inches from the side wall nearest the toilet, or within 4 inches of the far side wall.",
+    "federal": "Front door opening within 4 inches of the side wall or partition farthest from the toilet. A door placed 4 inches from the far side meets both.",
+    "state_url": "https://up.codes/viewer/virginia/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "604.9.3.1 Door Opening Location. The farthest edge of the wheelchair accessible toilet compartment door opening shall be located in the front wall or partition or in the side wall or partition as required by Table 604.9.3.1. [Front Wall or Partition: From the side wall or partition closest to the water closet 56 inches minimum, or From the side wall or partition farthest from the water closet 4 inches maximum]",
+    "federal_quote": "604.8.1.2 ... Where located in the front partition, the door opening shall be 4 inches (100 mm) maximum from the side wall or partition farthest from the water closet.",
+    "federal_url": "https://www.access-board.gov/ada/chapter/ch06/"
+   },
+   {
+    "point": "Privacy screens at urinals (Virginia amendment, not an access rule)",
+    "state": "Every public or employee urinal needs a wall or partition on each side: at least 30 inches between them, starting no more than 12 inches above the floor, reaching at least 60 inches high, and projecting 18 inches from the wall or 6 inches past the urinal's lip, whichever is greater.",
+    "federal": "No requirement for urinal screens.",
+    "state_url": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section260/",
+    "quote": "1210.3.2.1 Separate facilities. The walls or partitions for urinals in separate facilities shall begin at a height not more than 12 inches (305 mm) from and extend not less than 60 inches (1524 mm) above the finished floor surface. The walls or partitions shall extend from the wall surface at each side of the urinal not less than 18 inches (457 mm) or to a point not less than six inches (152 mm) beyond the outermost front lip of the urinal measured from the finished backwall surface, whichever is greater."
+   },
+   {
+    "point": "Occupancy indicators and all-gender rooms (Virginia amendments)",
+    "state": "Every fully enclosed compartment needs an occupancy indicator. In a multi-user all-gender room at least two of each fixture type must be accessible (one urinal), and accessible compartments need the increased toe clearance.",
+    "federal": "No occupancy indicator rule; one of each fixture type accessible.",
+    "state_url": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section250/",
+    "quote": "1110.2.6 Multi-user gender-neutral toilet facility fixtures. Where multi-user facilities are provided to serve all genders, at least two of each fixture type, but only one urinal if more than one urinal is provided, shall comply with ICC A117.1. Water closet and urinal compartments shall comply with Section 1210.3. [1210.3.1:] All fully-enclosed compartments shall be provided with occupancy indicators."
+   }
+  ],
+  "not_different": "Stall sizes match: wheelchair 60 inches wide by 56 (wall-hung) or 59 (floor-mounted) inches deep; ambulatory 60 deep by 35 to 37 wide; children's wheelchair stall 60 by 59. Doors self-closing with pulls both sides, not swinging into the minimum area, in both.",
+  "process": "No separate state plan review or registration for accessibility was found. Accessibility is part of the statewide building code, and the local building department enforces it through its own plan review and inspections (13VAC5-63-40: \"Enforcement of the provisions of the USBC for construction and rehabilitation shall be the responsibility of the local building department\").",
+  "confidence": "medium"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "Single-user toilet rooms count toward the required fixtures and must be identified as available to everyone regardless of sex. They need no compartment or urinal screen if the door locks.",
+   "quote": "403.1.2 Single-User Toilet and Bathing Room Fixtures. ... Single-user toilet and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified as being available for use by all persons regardless of their sex.",
+   "url": "https://up.codes/viewer/virginia/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "source_note": "Unamended 2021 IPC text, read on UpCodes; Virginia deleted the parallel building code Sections 2902.1.1 to 2902.7 (official, 13VAC5-63-320 D)."
+  },
+  "all_gender_shared": {
+   "rule": "Allowed statewide, in place of separate men's and women's rooms. Each toilet must be in its own compartment whose partitions and door run floor to ceiling with no more than 1/2 inch clear at floor and ceiling and gaps of no more than 1/8 inch; each urinal in the same kind of compartment or all urinals in a separate room with a door; occupancy indicators on every fully enclosed compartment; the fixture count is worked on 100% of the occupants; urinals limited to 22.5% (assembly, educational) or 25% (other) of the toilets; two of each fixture type accessible.",
+   "quote": "405.3.4.2 Multi-user gender-neutral facilities. Each water closet provided in a multi-user, gender-neutral toilet facility shall occupy a separate compartment with walls or partitions, including the doors thereto, that shall extend to the floor and to the ceiling with maximum 1/2-inch (13 mm) clearances at the floor and ceiling, with gaps not exceeding 1/8-inch (3 mm) between the doors and partitions and partitions and walls, and shall comply with Section 405.3.1. Accessible water closet compartments shall comply with ICC A117.1 and the increased toe clearance requirements.",
+   "url": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section320/",
+   "also": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section260/"
+  },
+  "use_restrictions": {
+   "rule": "No Virginia statute restricting who may use which restroom was found. Bills to that effect (HB 1229 in 2024, SB 561 in 2026) were not enacted according to one web search; the 2026 bill was passed by indefinitely in committee on 2026-01-29. Two statutes point the other way: the Virginia Human Rights Act bars discrimination in places of public accommodation on the basis of gender identity, and school boards must adopt policies consistent with the Department of Education's model policies, which cover use of school facilities.",
+   "quote": "§ 2.2-3904 B. It is an unlawful discriminatory practice for any person ... to refuse, withhold from, or deny any individual ... any of the accommodations, advantages, facilities, services, or privileges made available in any place of public accommodation, or to segregate or discriminate against any such person in the use thereof ... on the basis of race, color, religion, ethnic or national origin, sex, pregnancy, childbirth or related medical conditions, age, sexual orientation, gender identity, marital status, disability, or military status.",
+   "url": "https://law.lis.virginia.gov/vacode/title2.2/chapter39/section2.2-3904/",
+   "also": "https://law.lis.virginia.gov/vacode/title22.1/chapter3/section22.1-23.3/"
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": true,
+  "law": "Va. Code § 2.2-4321.3 (Virginia Public Procurement Act): prevailing wage on public works contracts. Mandatory for state agencies; a locality (county, city, town or school division) is covered only if it adopts an ordinance. From contracts initiated after July 1, 2027, public colleges with management agreements are covered at $5 million or more.",
+  "threshold": "Contracts over $250,000 (\"shall not apply to any public contract for public works of $250,000 or less\")",
+  "set_by": "Commissioner of Labor and Industry (Virginia Department of Labor and Industry), never lower than the federal Davis-Bacon rate",
+  "rates_url": "https://doli.virginia.gov/labor-law/prevailing-wage-law/",
+  "rates_note": "DOLI does not post a public rate table: \"Only an official Wage Determination from DOLI, sent to a contracting agency conducting a public works project can be used for official purposes.\" Its page says determinations are based on the U.S. Department of Labor's Davis-Bacon determinations (sam.gov).",
+  "quote": "B. ... each state agency, when procuring services or letting contracts for public works paid for in whole or in part by state funds ... shall ensure that its bid specifications or other public contracts applicable to the public works require bidders, offerors, contractors, and subcontractors to pay wages ... at the prevailing wage rate. C. ... any locality may adopt an ordinance requiring that, when letting contracts for public works paid for in whole or in part by funds of the locality ... N. The provisions of this section shall not apply to any public contract for public works of $250,000 or less.",
+  "url": "https://law.lis.virginia.gov/vacode/title2.2/chapter43/section2.2-4321.3/",
+  "confidence": "high"
+ },
+ "sales_tax": {
+  "state_rate": 0.053,
+  "state_rate_note": "4.3% state (Va. Code § 58.1-603) plus the 1% local tax every city and county levies (§ 58.1-605) gives the 5.3% general rate Virginia Tax publishes. A further 0.7% regional state tax makes it 6% in Hampton Roads (Norfolk and Virginia Beach are listed) and Central Virginia (Richmond City is listed).",
+  "rate_in_pack_cities": {
+   "Norfolk": 0.06,
+   "Virginia Beach": 0.06,
+   "Richmond": 0.06
+  },
+  "rate_quote": "6% Central Virginia: Charles City, Chesterfield, Goochland, Hanover, Henrico, New Kent, Powhatan, and Richmond City. Hampton Roads: Chesapeake, Franklin City, Hampton, Isle of Wight, Newport News, Norfolk, Poquoson, Portsmouth, Southampton, Suffolk, and Virginia Beach ... 5.3% Everywhere else",
+  "rate_url": "https://www.tax.virginia.gov/sales-and-use-tax",
+  "shipped_goods": {
+   "rule": "Taxable. An out-of-state seller with more than $100,000 in annual Virginia gross retail sales or 200 or more transactions must register and collect. If the seller does not collect, the buyer owes consumer's use tax on the cost price.",
+   "quote": "A remote seller or marketplace facilitator has economic nexus if they sell or facilitate the sale of more than $100,000 in annual gross retail sales or 200 or more transactions to Virginia customers. [Sales and use tax page:] The consumer's use tax applies to tangible items used, consumed, or stored in Virginia when the Virginia sales or use tax was not paid at the time of purchase.",
+   "url": "https://www.tax.virginia.gov/remote-sellers-marketplace-facilitators-economic-nexus",
+   "also": "https://www.tax.virginia.gov/sales-and-use-tax"
+  },
+  "freight_taxed": false,
+  "freight": {
+   "rule": "Not taxed when the delivery charge from seller to buyer is separately stated on the invoice. Taxed if it is not separately stated; handling charges are not transportation charges.",
+   "quote": "The tax does not apply to transportation or delivery charges added to a taxable sale provided such transportation charges are separately stated on the invoice to the customer. If the transportation or delivery charges are not separately stated on the invoice, they will become part of the sales price of the property and will be subject to the tax.",
+   "url": "https://law.lis.virginia.gov/admincode/title23/agency10/chapter210/section6000/"
+  },
+  "install_labor": {
+   "rule": "Exempt when separately charged. A retailer who sells and installs charges tax on the goods only if installation is separately stated; if it isn't, tax applies to the total.",
+   "quote": "§ 58.1-609.5: The tax ... shall not apply to the following: ... 2. An amount separately charged for labor or services rendered in installing, applying, remodeling, or repairing property sold or rented. 3. Transportation charges separately stated. [23VAC10-210-410 H:] The tax does not apply to installation charges when separately stated on a sales invoice. If the installation charge is not separately stated, the tax must be computed on the total charge.",
+   "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter6/section58.1-609.5/",
+   "also": "https://law.lis.virginia.gov/admincode/title23/agency10/chapter210/section410/"
+  },
+  "furnish_and_install": {
+   "rule": "A contractor who furnishes and installs property that becomes part of the real estate is the consumer of the materials: it pays sales or use tax on what it buys and does not pass the tax on as a tax. No exemption because the owner is a government body or nonprofit school.",
+   "quote": "Unless otherwise noted, the law treats every contractor as the user or consumer of all tangible personal property furnished to the contractor or by the contractor in connection with real property construction, reconstruction, installation, repair, and similar contracts. ... A contractor, whether the contractor be a prime contractor or subcontractor, does not pass the sales or use tax on to anyone else as a tax. ... If a supplier of a contractor doing work in Virginia does not collect the Virginia tax from the contractor, the contractor will be liable for the use tax on the contractor's purchases from the supplier.",
+   "url": "https://law.lis.virginia.gov/admincode/title23/agency10/chapter210/section410/"
+  },
+  "agency": "Virginia Department of Taxation (Virginia Tax)",
+  "confidence": "high"
+ },
+ "page": {
+  "stalls_intro": "Virginia counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women. Every toilet needs a stall, and Virginia's rules also require a privacy screen on each side of every urinal. Urinals are optional: in a men's room they may replace up to half of the toilets in an office and up to two thirds in a restaurant or school, so the table shows the men's side as stalls.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building, and at least one stall in each room must be wheelchair accessible. A men's room that needs only one toilet can't swap it for a urinal. An office designed for 25 people or fewer, or any space for 15 or fewer, may have one shared restroom instead of separate men's and women's rooms.",
+  "capacity": "To find your building's capacity, Virginia's building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** Virginia's building rules require solid plastic (HDPE) partitions to pass a room-corner fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Virginia's statewide building rules set the sizes. There is no separate state review: your local building department checks access when it reviews the plans.",
+  "state_extra_bullet": "- **Virginia extras:** the accessible stall needs more toe space under its partitions than the federal rule asks for: 12 inches high and 8 inches deep, against 9 and 6. It also needs an 18-inch vertical grab bar on the side wall, next to the horizontal one. Every urinal needs a screen on each side that reaches at least 60 inches above the floor, and any stall enclosed from floor to ceiling needs an occupied indicator on the door.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to everyone. A shared all-gender room is allowed in place of separate men's and women's rooms if every toilet sits in its own compartment that runs from floor to ceiling, with gaps of no more than 1/8 inch around the door and an occupied indicator. Urinals there go in the same kind of compartment or in a separate room with a door. Virginia has no state law limiting who may use which restroom.",
+  "public_jobs": "On state agency projects over $250,000, Virginia law requires at least the prevailing wage set by the state's Commissioner of Labor and Industry, and a city, county or school division has to pay it only if it has passed its own ordinance.",
+  "tax_install_bullet": "- **Tax on installation:** in Virginia, installation labor is not taxed when it is listed separately on the invoice. A contractor who supplies and installs materials that become part of the building pays the tax on those materials itself and does not add sales tax to the contract.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable. Freight is not taxed when it is listed separately on the invoice. If the seller doesn't collect the tax, the buyer owes it to the state as use tax.",
+  "tax_confirm": "your accountant or the Virginia Department of Taxation",
+  "sources": [
+   "- Virginia's building and plumbing codes and their effective date: [Virginia DHCD, Building and Fire Codes](https://www.dhcd.virginia.gov/codes) (\"The effective date of the 2021 Uniform Statewide Building Code ... is Jan. 18, 2024\") and [Code of Virginia § 36-98](https://law.lis.virginia.gov/vacode/title36/chapter6/section36-98/) (the statewide code supersedes local building codes). Checked 2026-11-24.",
+   "- Toilet counts in Virginia: [13VAC5-63-320, Virginia Uniform Statewide Building Code, Chapter 29 Plumbing systems](https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section320/) (Section 2902.1 points to Table 403.1 of the Virginia Plumbing Code; restaurant row; all-gender rules; urinal limits). The office and school rows, the 50/50 split and rounding (Section 403.1.1), separate rooms (Section 403.2) and urinal substitution (Section 424.2) were read on a secondary copy, [UpCodes, 2021 Virginia Plumbing Code, Chapter 4](https://up.codes/viewer/virginia/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings). Checked 2026-11-24.",
+   "- Floor area per person: 2021 Virginia Construction Code, Table 1004.5, read on a secondary copy, [UpCodes, Chapter 10](https://up.codes/viewer/virginia/ibc-2021/chapter/10/means-of-egress). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: 2021 Virginia Construction Code, Sections 803.9 and 803.1.1 (NFPA 286), read on a secondary copy, [UpCodes, Chapter 8](https://up.codes/viewer/virginia/ibc-2021/chapter/8/interior-finishes); Virginia's only change to that chapter is in [13VAC5-63-235](https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section235/). Checked 2026-11-24.",
+   "- Stalls, urinal screens and occupied indicators: [13VAC5-63-260, Chapter 12 Interior environment](https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section260/), Sections 1210.3.1 to 1210.3.2.2, and [13VAC5-63-250, Chapter 11 Accessibility](https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section250/), Section 1110.2.6. Checked 2026-11-24.",
+   "- Virginia stall rules compared with the federal ones: ICC A117.1-2017, Sections 604.5, 604.9 and 604.10, read on a secondary copy, [UpCodes](https://up.codes/viewer/virginia/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities), and the [2010 ADA Standards, Chapter 6](https://www.access-board.gov/ada/chapter/ch06/) and [Chapter 2](https://www.access-board.gov/ada/chapter/ch02/), Sections 213.3.1, 604.5 and 604.8. Checked 2026-11-24.",
+   "- Local enforcement of the building code: [13VAC5-63-40, Section 104 Enforcement, generally](https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section40/). Checked 2026-11-24.",
+   "- Public accommodations and school policies: [Code of Virginia § 2.2-3904](https://law.lis.virginia.gov/vacode/title2.2/chapter39/section2.2-3904/) and [§ 22.1-23.3](https://law.lis.virginia.gov/vacode/title22.1/chapter3/section22.1-23.3/). Checked 2026-11-24.",
+   "- Wages on public jobs: [Code of Virginia § 2.2-4321.3](https://law.lis.virginia.gov/vacode/title2.2/chapter43/section2.2-4321.3/) and [Virginia Department of Labor and Industry, Prevailing Wage Law](https://doli.virginia.gov/labor-law/prevailing-wage-law/). Checked 2026-11-24.",
+   "- Sales tax: Virginia Tax, [Sales and Use Tax](https://www.tax.virginia.gov/sales-and-use-tax) (rates by locality, consumer's use tax) and [Remote Sellers, Marketplace Facilitators, Economic Nexus](https://www.tax.virginia.gov/remote-sellers-marketplace-facilitators-economic-nexus); [Code of Virginia § 58.1-603](https://law.lis.virginia.gov/vacode/title58.1/chapter6/section58.1-603/), [§ 58.1-603.1](https://law.lis.virginia.gov/vacode/title58.1/chapter6/section58.1-603.1/), [§ 58.1-605](https://law.lis.virginia.gov/vacode/title58.1/chapter6/section58.1-605/) and [§ 58.1-609.5](https://law.lis.virginia.gov/vacode/title58.1/chapter6/section58.1-609.5/) (installation labor and transportation charges separately stated); [23VAC10-210-410, Contractors respecting real estate](https://law.lis.virginia.gov/admincode/title23/agency10/chapter210/section410/); [23VAC10-210-4040, Services](https://law.lis.virginia.gov/admincode/title23/agency10/chapter210/section4040/); [23VAC10-210-6000, Transportation or delivery charges](https://law.lis.virginia.gov/admincode/title23/agency10/chapter210/section6000/). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; ICC A117.1-2017 as referenced by the 2021 Virginia Construction Code; 2021 Virginia Uniform Statewide Building Code, Part I, Virginia Construction Code (2021 International Building Code with Virginia amendments, 13VAC5-63), in force since January 18, 2024; 2021 Virginia Plumbing Code (2021 International Plumbing Code with Virginia amendments); NFPA 286 for HDPE."
+ },
+ "sources_read": [
+  {
+   "url": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section320/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section260/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section250/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section235/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section360/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section365/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section40/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/",
+   "official": true
+  },
+  {
+   "url": "https://www.dhcd.virginia.gov/codes",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/vacode/title36/chapter6/section36-98/",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/virginia/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/virginia/ibc-2021/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/virginia/ibc-2021/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/virginia/ibc-2021/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/virginia/ibc-2021/chapter/35/referenced-standards",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/virginia/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+   "official": false
+  },
+  {
+   "url": "https://www.access-board.gov/ada/chapter/ch06/",
+   "official": true
+  },
+  {
+   "url": "https://www.access-board.gov/ada/chapter/ch02/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/vacode/title2.2/chapter43/section2.2-4321.3/",
+   "official": true
+  },
+  {
+   "url": "https://doli.virginia.gov/labor-law/prevailing-wage-law/",
+   "official": true
+  },
+  {
+   "url": "https://www.tax.virginia.gov/sales-and-use-tax",
+   "official": true
+  },
+  {
+   "url": "https://www.tax.virginia.gov/remote-sellers-marketplace-facilitators-economic-nexus",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter6/section58.1-603/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter6/section58.1-603.1/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter6/section58.1-605/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter6/section58.1-609.5/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/admincode/title23/agency10/chapter210/section410/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/admincode/title23/agency10/chapter210/section4040/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/admincode/title23/agency10/chapter210/section6000/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/vacode/title2.2/chapter39/section2.2-3904/",
+   "official": true
+  },
+  {
+   "url": "https://law.lis.virginia.gov/vacode/title22.1/chapter3/section22.1-23.3/",
+   "official": true
+  },
+  {
+   "url": "https://legiscan.com/VA/research/SB561",
+   "official": false
+  }
+ ],
+ "to_confirm": [
+  "Office (Business) and school (Educational) rows of Table 403.1, Sections 403.1.1, 403.1.2, 403.2 and 424.2, and Table 1004.5: read on UpCodes only. The official Virginia Administrative Code page prints only the Assembly rows of the amended table, and codes.iccsafe.org (2021 Virginia Plumbing Code and Virginia Construction Code) did not render to an automated fetch. Browser check on codes.iccsafe.org before launch.",
+  "HDPE fire test: Section 803.9 was read on UpCodes' copy of the 2021 Virginia Construction Code; the official page confirms only that Virginia does not amend it. Browser check on codes.iccsafe.org/content/VACC2021P1.",
+  "A117.1 edition (2017) was read in UpCodes' copy of Chapter 35, and the A117.1-2017 stall text on UpCodes. Confirm on the ICC's own viewer.",
+  "How a fraction of a urinal rounds under Section 424.2 is not stated; the examples round down. Confirm with the local building official (Norfolk, Richmond, Virginia Beach) or DHCD's State Building Codes Office.",
+  "Fixture ratio for multi-user all-gender rooms (footnote g) is printed for some Assembly rows only (for example 1 per 85.5); no ratio was seen for restaurants, offices or schools. Ask DHCD's State Building Codes Office.",
+  "Restroom-use law: the statement that Virginia has no statute limiting who may use which restroom rests on one web search plus the two statutes read. Check the 2026 session's enacted bills on lis.virginia.gov before publishing the sentence, and have the lawyer review it.",
+  "No state accessibility plan review or registration: stated because none appears in the code sections read, not because a page says so. Confirm with DHCD.",
+  "Whether Norfolk, Richmond, Virginia Beach or their school divisions have adopted a prevailing wage ordinance under § 2.2-4321.3 C (city agent).",
+  "Whether installed toilet partitions are treated as real property (contractor pays tax on materials) or as goods sold with installation (retailer rule, 23VAC10-210-410 H) is not addressed by name in the regulation; ask Virginia Tax or an accountant. How Next Partitions itself charges Virginia tax is a question for Abe's accountant.",
+  "Whether a 2024-edition Uniform Statewide Building Code has an effective date: DHCD's codes page still showed the 2021 codes as current on 2026-11-24."
+ ]
+}

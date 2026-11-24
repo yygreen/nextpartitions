@@ -1,0 +1,488 @@
+{
+ "state": "SC",
+ "state_name": "South Carolina",
+ "checked": "2026-11-24",
+ "code_editions": {
+  "in_force_today": "2021 South Carolina Building Code and 2021 South Carolina Plumbing Code (2021 IBC and IPC with SC modifications), implemented January 1, 2023",
+  "scheduled": "2024 South Carolina Building Code and 2024 South Carolina Plumbing Code (2024 IBC and IPC with SC modifications), adopted August 26, 2025, implementation date January 1, 2027",
+  "what_changes_for_this_pack": "Nothing found that changes the stall counts: the office, restaurant and school rows, the 50/50 split, rounding up, the separate-facility exceptions and the HDPE rule (803.9) read the same in the 2024 South Carolina codes on UpCodes. The 2024 plumbing code rewords urinal substitution to 'the required water closets for males according to Table 403.1' (same 67% and 50% limits). The 2024 single-user section adds that single-user fixtures 'shall be deducted proportionately from the required gender ratios'. The deletion of the all-gender multi-user exceptions is carried into 2024 as modifications IBC 2024 11/12 and IPC 2024 05/06.",
+  "quote_today": "The Council established the implementation date for local jurisdictions as January 1, 2023.",
+  "quote_scheduled": "The Council established the implementation date for local jurisdictions as January 1, 2027.",
+  "urls": [
+   "https://llr.sc.gov/bcc/pdffiles/SC-Code-Adoption-Notice.pdf",
+   "https://llr.sc.gov/bcc/PDFfiles/2024%20Code%20Adoption%20Notice.pdf"
+  ]
+ },
+ "fixtures": {
+  "governing_table": {
+   "code": "2021 South Carolina Plumbing Code (2021 International Plumbing Code with SC modifications); the same table is repeated in the 2021 South Carolina Building Code as Table 2902.1",
+   "edition": "2021 (in force since 2023-01-01); 2024 edition from 2027-01-01 with the same rows",
+   "table": "IPC Table 403.1 / IBC Table 2902.1, Minimum Number of Required Plumbing Fixtures",
+   "url": "https://up.codes/viewer/south_carolina/ibc-2021/chapter/29/plumbing-systems",
+   "quote": "Plumbing fixtures shall be provided in the minimum number as shown in Table 2902.1 based on the actual use of the building or space. Uses not shown in Table 2902.1 shall be considered individually by the code official. The number of occupants shall be determined by this code.",
+   "note": "South Carolina's only modification to the table (IPC 2021-05) adds a bottle filling station column for schools; it does not change toilet counts. Table read on UpCodes (secondary); the Educational row is also printed in the Council's own modification index (official)."
+  },
+  "cities_may_amend": false,
+  "cities_may_amend_note": "Cities and counties must enforce the state codes; a local change is valid only if the Building Codes Council approves it. Quote: 'Building code modifications that have not been approved by the Council are invalid and cannot be adopted, employed or enforced by municipalities and counties.' (https://llr.sc.gov/bcc/pdffiles/SC-Code-Adoption-Notice.pdf). Whether Charleston or Columbia holds a Council-approved local modification was not checked (city agent).",
+  "rows": {
+   "office": {
+    "row_label": "2 Business: Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial, ambulatory care and similar uses",
+    "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "urinals": "See Section 424.2 of the South Carolina Plumbing Code (optional substitution, at most 50%)",
+    "quote": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "url": "https://up.codes/viewer/south_carolina/ibc-2021/chapter/29/plumbing-systems"
+   },
+   "restaurant": {
+    "row_label": "1 Assembly: Restaurants, banquet halls and food courts (footnote d)",
+    "wc_male": "1 per 75",
+    "wc_female": "1 per 75",
+    "urinals": "See Section 424.2 (optional substitution, at most 67%)",
+    "quote": "Restaurants, banquet halls and food courts | 1 per 75 | 1 per 75. Footnote d: The occupant load for seasonal outdoor seating and entertainment areas shall be included when determining the minimum number of facilities required.",
+    "url": "https://up.codes/viewer/south_carolina/ibc-2021/chapter/29/plumbing-systems"
+   },
+   "school": {
+    "row_label": "3 Educational: Educational facilities",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 50",
+    "urinals": "See Section 424.2 (optional substitution, at most 67%)",
+    "quote": "3 Educational | Educational Facilities | 1 per 50 (water closets) | 1 per 50 (lavatories)",
+    "url": "https://llr.sc.gov/bcc/PDFfiles/2021-Modification-index.pdf"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Total occupant load is divided in half, unless approved statistical data shows another split.",
+    "quote": "To determine the occupant load of each sex, the total occupant load shall be divided in half. [...] Exceptions: 1. The total occupant load shall not be required to be divided in half where approved statistical data indicates a distribution of the sexes of other than 50 percent of each sex.",
+    "url": "https://llr.sc.gov/bcc/pdffiles/news/Notice-of-Emergency-Code-Modification.pdf"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole number, per sex.",
+    "quote": "Fractional numbers resulting from applying the fixture ratios of Table 2902.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number.",
+    "url": "https://llr.sc.gov/bcc/pdffiles/news/Notice-of-Emergency-Code-Modification.pdf"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are optional. They may replace up to 67% of the required men's toilets in assembly (restaurants) and educational occupancies and up to 50% in all others (offices). The limit is a ceiling, so the urinal count rounds down. Each urinal needs partitions at least 30 inches apart, starting no higher than 12 inches and reaching at least 60 inches above the floor.",
+    "quote": "424.2 Substitution for Water Closets. In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent of the required water closets in assembly and educational occupancies. Urinals shall not be substituted for more than 50 percent of the required water closets in all other occupancies.",
+    "url": "https://up.codes/viewer/south_carolina/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+    "scheduled_2024_quote": "In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent of the required water closets for males according to Table 403.1 in assembly and educational occupancies. Urinals shall not be substituted for more than 50 percent of the required water closets for males according to Table 403.1 in all other occupancies.",
+    "scheduled_2024_url": "https://up.codes/viewer/south_carolina/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "small_occupancy_exception": {
+    "text": "Separate men's and women's rooms are not required where the whole building or tenant space holds 15 or fewer people, in a shop holding 100 or fewer, or in an office (business occupancy) holding 25 or fewer. Single-user rooms need not be designated by sex.",
+    "quote": "[P] 2902.2 Separate facilities. Where plumbing fixtures are required, separate facilities shall be provided for each sex. Exceptions: 1. Separate facilities shall not be required for dwelling units and sleeping units. 2. Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. 3. Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. 4. Separate facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer. 5. Separate facilities shall not be required to be designated by sex where single-user toilets rooms are provided in accordance with Section 2902.1.2.",
+    "url": "https://llr.sc.gov/bcc/pdffiles/news/Notice-of-Emergency-Code-Modification.pdf"
+   },
+   "occupant_load": {
+    "text": "Office: 150 sq ft gross per person. Restaurant dining room (tables and chairs): 15 sq ft net per person. Classroom: 20 sq ft net per person.",
+    "quote": "Table 1004.5: Business areas | 150 gross. Assembly without fixed seats, Unconcentrated (tables and chairs) | 15 net. Educational, Classroom area | 20 net.",
+    "url": "https://up.codes/viewer/south_carolina/ibc-2021/chapter/10/means-of-egress"
+   }
+  },
+  "stall_enclosure": {
+   "text": "Every toilet used by the public or employees needs its own compartment with a door.",
+   "quote": "405.3.4 Water Closet Compartment. Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy.",
+   "url": "https://up.codes/viewer/south_carolina/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings"
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": null,
+    "how": "25 women, 25 men. 1 per 25 for the first 50: 25/25 = 1 each. Urinals may replace at most 50% of 1 = 0.5, so none."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": null,
+    "how": "50 women, 50 men. 50/25 = 2 each. Urinals may replace at most 50% of 2 = 1."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": null,
+    "how": "100 women, 100 men. First 50: 50/25 = 2; remaining 50: 50/50 = 1; total 3 each. Urinals at most 50% of 3 = 1.5, so 1."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 2,
+    "urinals_required": null,
+    "how": "200 women, 200 men. First 50: 2; remaining 150: 150/50 = 3; total 5 each. Urinals at most 50% of 5 = 2.5, so 2."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": null,
+    "how": "25 women, 25 men. 1 per 75: 25/75 = 0.33, rounded up to 1 each. Urinals at most 67% of 1 = 0.67, so none."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": null,
+    "how": "50 women, 50 men. 50/75 = 0.67, rounded up to 1 each. Urinals at most 67% of 1 = 0.67, so none."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": null,
+    "how": "100 women, 100 men. 100/75 = 1.33, rounded up to 2 each. Urinals at most 67% of 2 = 1.34, so 1."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": null,
+    "how": "200 women, 200 men. 200/75 = 2.67, rounded up to 3 each. Urinals at most 67% of 3 = 2.01, so 2."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": null,
+    "how": "25 girls, 25 boys. 1 per 50: 25/50 = 0.5, rounded up to 1 each. Urinals at most 67% of 1 = 0.67, so none."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": null,
+    "how": "50 girls, 50 boys. 50/50 = 1 each. Urinals at most 67% of 1 = 0.67, so none."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": null,
+    "how": "100 girls, 100 boys. 100/50 = 2 each. Urinals at most 67% of 2 = 1.34, so 1."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": null,
+    "how": "200 girls, 200 boys. 200/50 = 4 each. Urinals at most 67% of 4 = 2.68, so 2."
+   }
+  ],
+  "confidence": "medium",
+  "confidence_note": "Calculation rules (50/50 split, rounding, separate-facility exceptions) and the school row were read in the Building Codes Council's own PDFs. The office and restaurant rows, the urinal limits and the floor area per person were read on UpCodes because the ICC site shows the South Carolina code only through scripts."
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "2021 South Carolina Building Code Section 803.9 (same number and wording in the 2024 South Carolina Building Code); definition of Interior Wall and Ceiling Finish in Section 202",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. | 803.1.1 Interior Wall and Ceiling Finish Materials Tested in Accordance With NFPA 286. Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1. | Section 202, Interior Wall and Ceiling Finish: The exposed interior surfaces of buildings, including but not limited to: fixed or movable walls and partitions; toilet room privacy partitions; columns; ceilings; [...]",
+  "url": "https://up.codes/viewer/south_carolina/ibc-2021/chapter/8/interior-finishes",
+  "url_definition": "https://up.codes/viewer/south_carolina/ibc-2021/chapter/2/definitions",
+  "url_2024": "https://up.codes/viewer/south_carolina/ibc-2024/chapter/8/interior-finishes",
+  "note": "South Carolina's 2021 and 2024 modification indexes list no modification to Chapter 8, so the model text applies unchanged.",
+  "confidence": "medium"
+ },
+ "access": {
+  "state_standard": "ICC A117.1, latest edition, made mandatory statewide by the Accessibility Act (S.C. Code Ann. 10-5-210 et seq.) and applied through Chapter 11 of the South Carolina Building Code. The 2021 building code references ICC A117.1-2017; UpCodes publishes it as the 'South Carolina Accessibility Code 2017'. The Council notes a 2026 edition was published in September 2026; it was not read. The federal 2010 ADA Standards apply alongside.",
+  "differences": [
+   {
+    "point": "Vertical grab bar on the side wall",
+    "state": "A117.1-2017 604.5.1.2: a vertical grab bar 18 inches minimum, bottom 39 to 41 inches above the floor, centerline 39 to 41 inches from the rear wall, in addition to the horizontal side bar. Applies in wheelchair stalls (604.9.6) and on both sides of ambulatory stalls (604.10.4).",
+    "federal": "2010 ADA 604.5.1: 'The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall.' No vertical bar.",
+    "state_url": "https://up.codes/viewer/south_carolina/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "Fixed side-wall grab bars shall include a horizontal bar complying with Section 604.5.1.1 and a vertical grab bar complying with Section 604.5.1.2. [...] A vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall."
+   },
+   {
+    "point": "Toe clearance under stall partitions",
+    "state": "A117.1-2017 604.9.5.1: 12 inches high and 8 inches deep at the front and one side partition; not needed where the stall is deeper than 64 inches (wall-hung toilet) or 67 inches (floor-mounted), or wider than 68 inches.",
+    "federal": "2010 ADA 604.8.1.4: 'a toe clearance of 9 inches (230 mm) minimum above the finish floor and 6 inches (150 mm) deep minimum beyond the compartment-side face of the partition'; not required where the compartment is greater than 62 inches deep (wall-hung) or 65 inches (floor-mounted), or greater than 66 inches wide.",
+    "state_url": "https://up.codes/viewer/south_carolina/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "The front partition and at least one side partition of wheelchair accessible toilet compartments shall provide a toe clearance of 12 inches (305 mm) minimum above the floor and extending 8 inches (205 mm) beyond the compartment side face of the partition, exclusive of partition support members."
+   },
+   {
+    "point": "Where the stall door opening may sit",
+    "state": "A117.1-2017 Table 604.9.3.1: in the front partition, the far edge of the opening is 56 inches minimum from the side wall closest to the toilet or 4 inches maximum from the far side wall; in a side partition, 52 inches minimum from the rear wall (wall-hung) or 55 inches (floor-mounted), or 4 inches maximum from the front partition.",
+    "federal": "2010 ADA 604.8.1.2: 'Where located in the front partition, the door opening shall be 4 inches (100 mm) maximum from the side wall or partition farthest from the water closet. Where located in the side wall or partition, the door opening shall be 4 inches (100 mm) maximum from the front partition.'",
+    "state_url": "https://up.codes/viewer/south_carolina/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "The farthest edge of the wheelchair accessible toilet compartment door opening shall be located in the front wall or partition or in the side wall or partition as required by Table 604.9.3.1."
+   },
+   {
+    "point": "Turning space in the restroom of a new building",
+    "state": "A117.1-2017 304.3.1.1: 67-inch circle in new buildings (60 inches in existing buildings); 603.2.1: the turning space may not be inside a stall.",
+    "federal": "2010 ADA 304.3.1: 'The turning space shall be a space of 60 inches (1525 mm) diameter minimum.'",
+    "state_url": "https://up.codes/viewer/south_carolina/icc-a117.1-2017/chapter/3/building-blocks",
+    "quote": "In new buildings and facilities, the turning space shall be a circular space with a 67-inch (1700 mm) minimum diameter. | A turning space shall be provided within the room. The required turning space shall not be provided within a toilet compartment."
+   },
+   {
+    "point": "Family or assisted-use toilet room",
+    "state": "SC Building Code 1110.2.1: required in assembly and mercantile occupancies where six or more toilets in total are required.",
+    "federal": "2010 ADA 213.2.1 sets what a unisex room may contain but does not require one in new construction.",
+    "state_url": "https://up.codes/viewer/south_carolina/ibc-2021/chapter/11/accessibility",
+    "quote": "In assembly and mercantile occupancies, an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required."
+   }
+  ],
+  "same_as_federal": "Wheelchair stall size (60 inches wide, 56 deep wall-hung, 59 deep floor-mounted), ambulatory stall size (60 deep, 35 to 37 wide), self-closing doors with pulls on both sides, and the trigger for an ambulatory stall (six or more toilets and urinals combined in the room; SC Building Code 1110.2.4, ADA 213.3.1) read the same. The building code counts wheelchair stalls as 'at least 5 percent of the total number of compartments', the ADA as 'at least one'.",
+  "process": "No separate state registration. Plans for any new or altered building are reviewed for accessibility by the local building official (S.C. Code 10-5-270(A)(4)); state-owned or leased buildings go to the State Engineer, public elementary and secondary schools to the Office of Facilities Management at the State Department of Education, healthcare facilities to the Department of Public Health. Quote: 'All plans for buildings, structures, and facilities to be constructed or altered must be reviewed and approved for compliance with this chapter and must be submitted to one of the following officials for approval'.",
+  "process_url": "https://www.scstatehouse.gov/code/t10c005.php",
+  "confidence": "medium"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "Single-user and family or assisted-use toilet rooms must be identified as open to everyone regardless of sex, and they count toward the required number of fixtures.",
+   "quote": "Single-user toilet and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified as being available for use by all persons regardless of their sex.",
+   "url": "https://up.codes/viewer/south_carolina/ibc-2021/chapter/29/plumbing-systems"
+  },
+  "all_gender_shared": {
+   "rule": "The state code requires separate facilities for each sex. South Carolina deleted the model code's exception that let a shared multi-user room serve all genders (and the matching fixture-count exception), effective January 1, 2023, and carries the deletion into the 2024 codes. The remaining exceptions are small occupancies and single-user rooms. The code text does not say whether an all-gender multi-user room may be built in addition to the required men's and women's rooms: ask the local building official.",
+   "quote": "At their meeting on November 15, 2022, the S.C. Building Codes Council approved an emergency modification request to delete the below exceptions from the 2021 SC Plumbing Code and 2021 SC Building Code, without substitution. Exception 6 was deleted without substitution from Section 403.2 of the 2021 IPC and from Section [P] 2902.2 of the 2021 IBC. Exception 2 was deleted without substitution from Section 403.1.1 of the 2021 IPC and from Section [P] 2902.1.1 of the 2021 IBC. These modifications will take effect on January 1, 2023, and must be enforced by all municipalities and counties in South Carolina.",
+   "url": "https://llr.sc.gov/bcc/pdffiles/news/Notice-of-Emergency-Code-Modification.pdf",
+   "url_2024": "https://llr.sc.gov/bcc/PDFfiles/2024%20Final%20Modification%20Index%20with%20Hyperlinks.pdf"
+  },
+  "use_restrictions": {
+   "rule": "South Carolina Student Physical Privacy Act (2026 Act No. 152, H.4756, signed and effective May 15, 2026; S.C. Code 59-23-510 to 59-23-560): in public schools and public colleges and universities, multi-occupancy restrooms and changing facilities must be designated for one sex, and each must provide a single-user restroom or an accommodation. No comparable statute for other public or private buildings was found.",
+   "quote": "Section 59-23-540. (A)(1) All public schools and public institutions of higher learning must provide for a single-user restroom and changing facility or an accommodation. [...] (2) Multioccupancy public school or public institution of higher learning restrooms and changing facilities must be designated for use only by members of one sex at a time, on either a permanent basis or temporary or event-based basis. Any public school or public institution of higher learning restrooms and changing facilities that are designated for one sex must be used only by members of that sex.",
+   "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/4756.htm"
+  },
+  "confidence": "high"
+ },
+ "public_wage": {
+  "has_state_law": false,
+  "law": null,
+  "threshold": null,
+  "rates_url": "https://sam.gov/wage-determinations (federal Davis-Bacon determinations, federally funded work only)",
+  "quote": "States without Prevailing Wage Laws: [...] South Carolina. Footnote: Twenty-four states do not have prevailing wage laws.",
+  "url": "https://www.dol.gov/agencies/whd/state/prevailing-wages",
+  "confidence": "medium",
+  "note": "The U.S. Department of Labor page blocks direct download; it was read through a fetch tool that summarises, so the quote is as reported and the page is dated January 1, 2023. No South Carolina statute was read for this point."
+ },
+ "sales_tax": {
+  "state_rate": 0.06,
+  "state_rate_quote": "Tangible goods that have been bought at retail to be used, stored, or consumed in South Carolina are subject to a statewide 6% Use Tax, plus any applicable local taxes.",
+  "shipped_goods": {
+   "rule": "Partitions shipped into South Carolina are taxable at 6% plus local tax. An out-of-state seller with more than $100,000 of South Carolina sales in the previous or current calendar year must hold a retail license and collect state and local tax. If the seller does not collect, the buyer owes use tax.",
+   "quote": "Remote sellers who have economic nexus with South Carolina must have a Retail License to collect, file, and pay Sales Tax to the SCDOR. [...] A seller whose gross revenue exceeds $100,000, in the previous or current calendar year [...] | Use Tax applies when South Carolina Sales Tax hasn't been paid on an out-of-state purchase. [...] The purchaser pays the Use Tax.",
+   "url": "https://dor.sc.gov/sales-use-tax-index/sales-tax/remote-sellers",
+   "url_use_tax": "https://dor.sc.gov/sales-use-tax-index/use-tax"
+  },
+  "freight_taxed": null,
+  "freight": {
+   "rule": "Depends on the shipping terms. Freight is taxed when the seller delivers in its own truck, ships by common carrier F.O.B. destination, or pays the carrier for a shipment direct from the factory. It is not taxed when shipped by common carrier F.O.B. origin (shipping point).",
+   "quote": "Delivery charges are includable in the measure of the sales and use tax where the seller sells tangible personal property and charges a delivery charge for delivery: By use of the retailer's truck; By use of a common carrier and the sale is made F.O.B. point of destination or place of business of the buyer; or By delivery from the factory directly to the seller's customer when the transportation is paid by the seller [...] Delivery charges are not includable in the measure of the sales and use tax where the seller sells tangible personal property and charges a delivery charge for delivery: By use of a common carrier and the sale is made F.O.B. point of origin (shipping point).",
+   "url": "https://dor.sc.gov/sites/dor/files/policies/RR19-9.pdf"
+  },
+  "install_labor": {
+   "rule": "When a retailer sells and installs, installation labor is not taxed if it is separately stated on the customer's bill and reasonable; the materials are taxed.",
+   "quote": "If a person is deemed a retailer, then the purchases of materials for resale are not subject to the tax, but the subsequent sales at retail of such materials are subject to the tax based on the \"gross proceeds of sales\" or \"sales price.\" However, installation labor, if separately stated on the bill to the customer and reasonable, would not be subject to the tax.",
+   "url": "https://dor.sc.gov/sites/dor/files/Documents/Policy%20Manuals/Chapter%2016%20-%20Construction%20Contractors.pdf"
+  },
+  "furnish_and_install": {
+   "rule": "A construction contractor is the consumer of the building materials it buys and pays sales or use tax when it buys them; tax is not charged on the contract with the owner. Materials bought out of state and brought in owe use tax, with credit for tax paid elsewhere. Whether a person is a contractor or a retailer who installs depends on the facts. The Department's list of building materials names doors, builders hardware and built-in cabinets and furniture and ends 'any and all other tangible personal property which becomes a part of real property'; toilet partitions are not named.",
+   "quote": "A construction contractor is the user or consumer of everything he buys. A \"construction contractor\" is a person or business making repairs, alterations, or additions to real property. In general, all purchases by construction contractors, including building materials, are retail purchases and are subject to South Carolina sales or use tax. [...] if a person is deemed to be a contractor, then the sales and use tax is due at the time all materials are purchased.",
+   "url": "https://dor.sc.gov/sites/dor/files/Documents/Policy%20Manuals/Chapter%2016%20-%20Construction%20Contractors.pdf"
+  },
+  "local_rates_note": "Local sales and use taxes administered by the Department run on top of the 6%; the Charleston and Columbia totals are for the city agent.",
+  "agency": "South Carolina Department of Revenue",
+  "confidence": "high"
+ },
+ "page": {
+  "stalls_intro": "South Carolina counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. Half are counted as men and half as women, and any fraction rounds up. Every toilet needs its own stall with a door. Urinals are optional: they can take the place of up to half of the men's toilets in an office, and up to two thirds in a restaurant or school, so the table shows the men's side as stalls.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building, and at least one stall in each room must be wheelchair accessible. An office that holds 25 people or fewer, and any building or tenant space that holds 15 or fewer, doesn't need separate men's and women's rooms. A restaurant counts its seasonal outdoor seating in its capacity.",
+  "capacity": "To find your building's capacity, South Carolina's building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** South Carolina's building rules treat toilet partitions as an interior finish and require solid plastic (HDPE) used that way to pass a room fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and South Carolina's own access standard set the sizes. There is no separate state registration: the local building department reviews the plans, and the state reviews plans for public schools and state buildings.",
+  "state_extra_bullet": "- **South Carolina extras:** the state's access standard asks for more than the federal one in a few places. The accessible stall needs a vertical grab bar on the side wall as well as the horizontal bars, and the gap under its partitions must be 12 inches high where the federal rule asks for 9. A room with six or more toilets and urinals also needs a narrower stall with grab bars on both sides, as under federal law.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to everyone. South Carolina's building rules require separate men's and women's rooms, and the state removed the option of meeting that with a shared all-gender room with stalls. The rules don't say whether one may be added on top of the required rooms, so ask your building department. Since May 2026, state law requires shared restrooms in public schools and public colleges to be designated for one sex, and each school must offer a single-user restroom or an accommodation.",
+  "public_jobs": "South Carolina has no state wage law for public construction, so a set wage applies only on federally funded jobs, under the federal Davis-Bacon Act.",
+  "tax_install_bullet": "- **Tax on installation:** in South Carolina, a seller who also installs doesn't charge tax on installation labor when it is shown separately on the bill and is reasonable. A contractor who supplies and installs under a construction contract pays the tax when buying the partitions and doesn't add sales tax to the contract.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable. Freight is taxed when the seller delivers to your site and isn't taxed when the goods ship by common carrier with the sale made at the shipping point. If the seller doesn't collect the tax, the buyer owes it to the state.",
+  "tax_confirm": "your accountant or the South Carolina Department of Revenue",
+  "sources": [
+   "- South Carolina building and plumbing codes in force and the January 1, 2027 change: South Carolina Building Codes Council, [2021 South Carolina Code Adoptions](https://llr.sc.gov/bcc/pdffiles/SC-Code-Adoption-Notice.pdf), [2024 South Carolina Code Adoptions](https://llr.sc.gov/bcc/PDFfiles/2024%20Code%20Adoption%20Notice.pdf) and [Building Codes in Effect for South Carolina](https://llr.sc.gov/bcc/PDFfiles/Building%20Codes%20in%20Effect%20for%20South%20Carolina%20Final.pdf). Checked 2026-11-24.",
+   "- Toilet counts in South Carolina: 2021 South Carolina Building Code, [Chapter 29, Table 2902.1 and Sections 2902.1.1 to 2902.2](https://up.codes/viewer/south_carolina/ibc-2021/chapter/29/plumbing-systems), and 2021 South Carolina Plumbing Code, [Table 403.1 and Sections 405.3.4, 405.3.5 and 424.2](https://up.codes/viewer/south_carolina/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings), read on UpCodes; the state's changes are in the Building Codes Council's [2021 Modification Index](https://llr.sc.gov/bcc/PDFfiles/2021-Modification-index.pdf). The 2024 editions, in force from January 1, 2027, keep the same counts ([2024 Modification Index](https://llr.sc.gov/bcc/PDFfiles/2024%20Final%20Modification%20Index%20with%20Hyperlinks.pdf)). Checked 2026-11-24.",
+   "- Floor area per person: 2021 South Carolina Building Code, [Table 1004.5](https://up.codes/viewer/south_carolina/ibc-2021/chapter/10/means-of-egress), read on UpCodes. Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: 2021 South Carolina Building Code, [Sections 803.1.1 and 803.9](https://up.codes/viewer/south_carolina/ibc-2021/chapter/8/interior-finishes) and the [definition of interior wall and ceiling finish in Section 202](https://up.codes/viewer/south_carolina/ibc-2021/chapter/2/definitions), read on UpCodes (NFPA 286). Checked 2026-11-24.",
+   "- South Carolina's access standard and plan review: [S.C. Code of Laws Title 10, Chapter 5, Article 3 (Sections 10-5-210 to 10-5-320)](https://www.scstatehouse.gov/code/t10c005.php); stall rules compared in [ICC A117.1-2017, Chapter 6](https://up.codes/viewer/south_carolina/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities) (read on UpCodes), [2021 South Carolina Building Code Chapter 11](https://up.codes/viewer/south_carolina/ibc-2021/chapter/11/accessibility) and the [2010 ADA Standards](https://www.access-board.gov/ada/), sections 213 and 604. Checked 2026-11-24.",
+   "- Single-user restroom signs and separate rooms for each sex: 2021 South Carolina Building Code Sections 2902.1.2 and 2902.2 (link above) and the Building Codes Council's [Notice of Emergency Modification to 2021 SC Building Codes](https://llr.sc.gov/bcc/pdffiles/news/Notice-of-Emergency-Code-Modification.pdf). Checked 2026-11-24.",
+   "- Shared restrooms in public schools and colleges: [South Carolina Student Physical Privacy Act, 2026 Act No. 152 (H.4756)](https://www.scstatehouse.gov/sess126_2025-2026/bills/4756.htm), S.C. Code Sections 59-23-510 to 59-23-560. Checked 2026-11-24.",
+   "- Wages on public jobs: U.S. Department of Labor, [Dollar Threshold Amount for Contract Coverage](https://www.dol.gov/agencies/whd/state/prevailing-wages), which lists South Carolina among the states without a prevailing wage law. Checked 2026-11-24.",
+   "- Sales tax: South Carolina Department of Revenue, [Use Tax](https://dor.sc.gov/sales-use-tax-index/use-tax), [Remote Sellers](https://dor.sc.gov/sales-use-tax-index/sales-tax/remote-sellers), [SC Revenue Ruling #19-9, Delivery Charges](https://dor.sc.gov/sites/dor/files/policies/RR19-9.pdf) and [Sales and Use Tax Manual, Chapter 16, Construction Contractors (September 2025)](https://dor.sc.gov/sites/dor/files/Documents/Policy%20Manuals/Chapter%2016%20-%20Construction%20Contractors.pdf). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; ICC A117.1 (latest edition, adopted by S.C. Code 10-5-210 et seq.; the 2021 building code references the 2017 edition); 2021 South Carolina Building Code and 2021 South Carolina Plumbing Code (2021 International Building Code and International Plumbing Code with South Carolina modifications), in force since January 1, 2023; 2024 South Carolina Building Code and Plumbing Code from January 1, 2027; NFPA 286 for HDPE."
+ },
+ "sources_read": [
+  {
+   "url": "https://llr.sc.gov/bcc/pdffiles/SC-Code-Adoption-Notice.pdf",
+   "official": true
+  },
+  {
+   "url": "https://llr.sc.gov/bcc/PDFfiles/2024%20Code%20Adoption%20Notice.pdf",
+   "official": true
+  },
+  {
+   "url": "https://llr.sc.gov/bcc/PDFfiles/Building%20Codes%20in%20Effect%20for%20South%20Carolina%20Final.pdf",
+   "official": true
+  },
+  {
+   "url": "https://llr.sc.gov/bcc/PDFfiles/2021-Modification-index.pdf",
+   "official": true
+  },
+  {
+   "url": "https://llr.sc.gov/bcc/PDFfiles/2024%20Final%20Modification%20Index%20with%20Hyperlinks.pdf",
+   "official": true
+  },
+  {
+   "url": "https://llr.sc.gov/bcc/pdffiles/news/Notice-of-Emergency-Code-Modification.pdf",
+   "official": true
+  },
+  {
+   "url": "https://llr.sc.gov/bcc/BCAdoption.aspx",
+   "official": true
+  },
+  {
+   "url": "https://www.scstatehouse.gov/code/t10c005.php",
+   "official": true
+  },
+  {
+   "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/4756.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.scstatehouse.gov/code/t59c023.php",
+   "official": true
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://www.dol.gov/agencies/whd/state/prevailing-wages",
+   "official": true
+  },
+  {
+   "url": "https://dor.sc.gov/sites/dor/files/Documents/Policy%20Manuals/Chapter%2016%20-%20Construction%20Contractors.pdf",
+   "official": true
+  },
+  {
+   "url": "https://dor.sc.gov/sites/dor/files/policies/RR19-9.pdf",
+   "official": true
+  },
+  {
+   "url": "https://dor.sc.gov/sales-use-tax-index/sales-tax/remote-sellers",
+   "official": true
+  },
+  {
+   "url": "https://dor.sc.gov/sales-use-tax-index/use-tax",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/south_carolina/ibc-2021/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_carolina/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_carolina/ibc-2021/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_carolina/ibc-2021/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_carolina/ibc-2021/chapter/2/definitions",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_carolina/ibc-2021/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_carolina/ibc-2021/chapter/12/interior-environment",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_carolina/ibc-2021/chapter/35/referenced-standards",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_carolina/ibc-2024/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_carolina/ibc-2024/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_carolina/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_carolina/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_carolina/icc-a117.1-2017/chapter/3/building-blocks",
+   "official": false
+  }
+ ],
+ "to_confirm": [
+  "Which ICC A117.1 edition building officials enforce now: 2017 (referenced by the 2021 building code) or the 2026 edition published in September 2026 (the statute adopts the latest edition). The 2026 edition was not read, so the stall differences above are from 2017. Ask the SC Building Codes Council, (803) 896-4688.",
+  "That the January 1, 2027 switch to the 2024 codes is still on schedule (Building Codes Council). The 2024 rows were read on UpCodes only.",
+  "Office and restaurant rows of Table 403.1 / 2902.1, Section 424.2, Table 1004.5 and Section 803.9 were read on UpCodes, not on an official page: browser check on codes.iccsafe.org (2021 South Carolina Building Code and Plumbing Code) before launch.",
+  "Whether local building officials treat a like-for-like HDPE partition replacement as interior finish needing the NFPA 286 report (local building department).",
+  "Whether an all-gender multi-user room may be built in addition to the required separate rooms (local building official or Building Codes Council).",
+  "Whether Charleston or Columbia holds a Council-approved local modification touching Chapter 29 (city agent; llr.sc.gov/bcc/MODIFICATION_Main.aspx).",
+  "No state prevailing wage law: read on the U.S. Department of Labor page (dated January 1, 2023) through a summarising fetch tool; confirm on a browser.",
+  "Whether the Department of Revenue treats toilet partitions as building materials that become part of real property (contractor pays tax at purchase) or as goods sold and installed by a retailer; and how Next Partitions' freight terms (F.O.B. origin or destination) set the tax on freight. Abe's accountant or SC Department of Revenue.",
+  "The S.C. Student Physical Privacy Act is the subject of news reports of litigation over the earlier budget proviso; check its status before launch. A lawyer reviews the wording."
+ ]
+}
