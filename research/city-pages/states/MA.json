@@ -1,0 +1,500 @@
+{
+ "state": "MA",
+ "state_name": "Massachusetts",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "Uniform State Plumbing Code, 248 CMR 10.00 (Massachusetts-written; not the IPC or UPC)",
+   "edition": "As amended through Mass. Register Issue 1510, effective 12/8/2023 (latest amendment shown on the copy read)",
+   "table": "248 CMR 10.10(15) Minimum Facilities, and 10.10 Table 1: Minimum Facilities for Building Occupancy",
+   "url": "https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10",
+   "quote": "The provisions of 248 CMR shall govern the erection, installation, alteration, repairs, relocation, replacement, addition to, use or maintenance of plumbing equipment and systems. Toilet and bathing rooms shall be constructed in accordance with 248 CMR or if applicable, 780 CMR, Section 1210. (780 CMR 2901.1 as amended by Massachusetts, read on UpCodes: https://up.codes/viewer/massachusetts/ibc-2021/chapter/29/plumbing-systems)",
+   "note": "Read on Cornell LII (secondary copy), because mass.gov returns HTTP 403 to automated access. The building code's own Table 2902.1 does not apply: the Massachusetts amendment to Chapter 29 hands fixture counts to 248 CMR."
+  },
+  "cities_may_amend": false,
+  "cities_may_amend_note": "248 CMR 10.00 is the 'Uniform State Plumbing Code' and nothing read in 10.01 or 10.10 lets a city change Table 1; variances go to the state Board (248 CMR 3.04(2), cited in 10.10(15)(d)2). For the building code, M.G.L. c. 143 s. 98 lets a city or town only 'recommend to the board the adoption of rules and regulations imposing more restrictive standards', which the state board must adopt. No statement was read that says outright 'cities may not amend the plumbing code'; the city agent should check Boston and Worcester for any board-approved local rule.",
+  "rows": {
+   "office": {
+    "row_label": "Places of Business: Buildings Offering Service Type Transactions. Banks, Salons, Laundries, Veterinary Clinics, Offices, Shops, Service Stations, and similar usage (Patrons & Staff)",
+    "wc_male": "1-25 up to 100 Over 100 add 1 for every 50",
+    "wc_female": "1-20 up to 100 Over 100 add 1 for every 50",
+    "urinals": "Up to 50%",
+    "quote": "TOILETS Female: 1-20 up to 100 Over 100 add 1 for every 50 | Male: 1-25 up to 100 Over 100 add 1 for every 50 | URINALS: Up to 50% | Lavatories: 1-50 (female), 1-50 (male) | NOTES: A single set of rest rooms may be used by patrons and employees when figuring the fixture requirements.",
+    "url": "https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10"
+   },
+   "restaurant": {
+    "row_label": "Places of Assembly: Nightclubs and Pubs, Lounges, Restaurants, Food Courts and Service Plazas",
+    "wc_male": "1-50 up to 200 1-100 201 to 500 Over 500 add 1 for every 100",
+    "wc_female": "1-25 up to 200 1-50 201 to 500 Over 500 add 1 for every 100",
+    "urinals": "Up to 50%",
+    "quote": "TOILETS Female: 1-25 up to 200 1-50 201 to 500 Over 500 add 1 for every 100 | Male: 1-50 up to 200 1-100 201 to 500 Over 500 add 1 for every 100 | URINALS: Up to 50% | Lavatories: 1-50, 1-50",
+    "url": "https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10"
+   },
+   "school": {
+    "row_label": "Educational Facilities: Public & Private Schools. Kindergarten, Elementary, Middle & High School (students); separate 'Staff' row",
+    "wc_male": "1-25 up to 100 Over 100 add 1 for every 50 (staff: 1 per 25)",
+    "wc_female": "1-25 up to 100 Over 100 add 1 for every 50 (staff: 1 per 20)",
+    "urinals": "Up to 50% (staff: Up to 33%)",
+    "quote": "Public & Private Schools. Kindergarten, Elementary, Middle & High School | Female: 1-25 up to 100 Over 100 add 1 for every 50 | Male: 1-25 up to 100 Over 100 add 1 for every 50 | URINALS: Up to 50% | Lavatories 1 per 25, 1 per 25 ... Staff | 1 per 20 | 1 per 25 | Up to 33% | 1 per 20 | 1 per 20",
+    "url": "https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Half male, half female, unless statistical data shows the building's users are split differently.",
+    "quote": "Total fixture requirements shall be determined by using 50% male and 50% female. The occupancy ratio of 50% for each sex shall not be required when statistical data indicates the occupancy of the facility would be other than 50% for each sex.",
+    "url": "https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10"
+   },
+   "rounding": {
+    "text": "Any fraction rounds up to the next fixture. The table does not say how the 'up to 50%' urinal share rounds; it is a ceiling, so the worked examples round it down.",
+    "quote": "If a fraction should occur while determining the number of plumbing fixtures required in 248 CMR 10.10(14): Table 1 Minimum Facilities for Building Occupancy, rounding up to the next fixture shall be required.",
+    "url": "https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are optional. They may replace men's toilets up to the percentage in the table's Urinals column: 50% for offices, restaurants and K-12 students, 33% for K-12 staff. Urinals must have side shields.",
+    "quote": "Urinals may be substituted for toilets where indicated in 248 CMR 10.10, Table 1 Minimum Facilities for Building Occupancy and are listed by percentage. ... Urinals shall be side shielded for privacy.",
+    "url": "https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10"
+   },
+   "small_occupancy_exception": {
+    "text": "Separate men's and women's facilities are not required in a non-residential establishment with no more than 20 employees and patrons and no more than 2,000 gross square feet. A business with one employee needs one toilet and one lavatory, or a shared core restroom within 400 feet.",
+    "quote": "Separate facilities shall be provided for each sex. Exception: In establishments other than residential where the maximum number of employees and patrons do not exceed 20 and the total gross square footage does not exceed 2,000. ... In every business or commercial establishment where only one person is employed, there shall be one toilet and one lavatory within the establishment or a core toilet facility located within 400 feet of the establishment.",
+    "url": "https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10"
+   },
+   "occupant_load": {
+    "text": "The Massachusetts plumbing code does not count by floor area for these uses. Restaurants and other places of assembly: seats plus the most employees on duty at once (outdoor seating for patrons included). Offices and other places of business: the average number of patrons at any one time plus the most employees on duty. K-12 schools: student seating capacity, with staff counted separately by the most on duty. Only mercantile (retail) uses a floor-area figure, building square footage divided by 300. For reference, the building code's exit-capacity table (780 CMR Table 1004.5, read on UpCodes) lists business areas at 150 gross sq ft per person, unconcentrated assembly (tables and chairs) at 15 net and classroom area at 20 net, but 248 CMR does not point to it for toilet counts.",
+    "quote": "10. For Places of Assembly, the minimum fixture requirements shall be determined by: a. The number of seats in the establishment; and b. The maximum number of employees on duty at any one time. ... 11. For Places of Business, the minimum fixture requirements shall be determined by: a. The average number of patrons visiting at any one time; and b. The maximum number of employees on duty at any one time. 12. For Educational Facilities ... b. Public and Private Kindergarten through Post-secondary (Students). Seating capacity c. Public and Private Kindergarten through Post-Secondary (Staff). The maximum number of staff on duty at any one time ... 16. For Mercantile Facilities, the minimum fixture requirements for employees when the occupancy exceeds employees and patrons shall be determined using the total square footage of the building divided by 300.",
+    "url": "https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10",
+    "reference_url": "https://up.codes/viewer/massachusetts/ibc-2021/chapter/10/means-of-egress"
+   },
+   "compartments": {
+    "text": "Every toilet in a public or employee restroom needs its own compartment, except in single-user gender-neutral rooms and in childcare facilities for children under six.",
+    "quote": "Toilets in public or employee rest rooms shall be installed using separate compartments to ensure privacy. Exception: 1. Unisex/gender-neutral single user toilet rooms; 2. In childcare facilities where fixtures are provided for use of children younger than six years old.",
+    "url": "https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10"
+   },
+   "scope": {
+    "text": "The minimum counts apply to new buildings, additions and changes where a plumbing permit is required.",
+    "quote": "248 CMR 10.10 shall apply to new buildings, additions, and changes where a plumbing permit is required.",
+    "url": "https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 people split 50/50 = 25 women and 25 men. Table 1: women 1 per 20 up to 100 then 1 more per 50; men 1 per 25 up to 100 then 1 more per 50. Fractions round up: 2 women's toilets, 1 men's fixtures. Urinals may replace up to 50% of the men's toilets: at most 0 (50% of 1, taken as a ceiling and not rounded up)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 people split 50/50 = 25 women and 25 men. Table 1: women 1 per 25 (up to 200); men 1 per 50 (up to 200). Fractions round up: 1 women's toilets, 1 men's fixtures. Urinals may replace up to 50% of the men's toilets: at most 0 (50% of 1, taken as a ceiling and not rounded up)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 people split 50/50 = 25 women and 25 men. Table 1: students: women 1 per 25 up to 100 then 1 more per 50; men the same. Fractions round up: 1 women's toilets, 1 men's fixtures. Urinals may replace up to 50% of the men's toilets: at most 0 (50% of 1, taken as a ceiling and not rounded up)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 3,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 people split 50/50 = 50 women and 50 men. Table 1: women 1 per 20 up to 100 then 1 more per 50; men 1 per 25 up to 100 then 1 more per 50. Fractions round up: 3 women's toilets, 2 men's fixtures. Urinals may replace up to 50% of the men's toilets: at most 1 (50% of 2, taken as a ceiling and not rounded up)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "100 people split 50/50 = 50 women and 50 men. Table 1: women 1 per 25 (up to 200); men 1 per 50 (up to 200). Fractions round up: 2 women's toilets, 1 men's fixtures. Urinals may replace up to 50% of the men's toilets: at most 0 (50% of 1, taken as a ceiling and not rounded up)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 people split 50/50 = 50 women and 50 men. Table 1: students: women 1 per 25 up to 100 then 1 more per 50; men the same. Fractions round up: 2 women's toilets, 2 men's fixtures. Urinals may replace up to 50% of the men's toilets: at most 1 (50% of 2, taken as a ceiling and not rounded up)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 5,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 people split 50/50 = 100 women and 100 men. Table 1: women 1 per 20 up to 100 then 1 more per 50; men 1 per 25 up to 100 then 1 more per 50. Fractions round up: 5 women's toilets, 4 men's fixtures. Urinals may replace up to 50% of the men's toilets: at most 2 (50% of 4, taken as a ceiling and not rounded up)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 4,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200 people split 50/50 = 100 women and 100 men. Table 1: women 1 per 25 (up to 200); men 1 per 50 (up to 200). Fractions round up: 4 women's toilets, 2 men's fixtures. Urinals may replace up to 50% of the men's toilets: at most 1 (50% of 2, taken as a ceiling and not rounded up)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 people split 50/50 = 100 women and 100 men. Table 1: students: women 1 per 25 up to 100 then 1 more per 50; men the same. Fractions round up: 4 women's toilets, 4 men's fixtures. Urinals may replace up to 50% of the men's toilets: at most 2 (50% of 4, taken as a ceiling and not rounded up)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 7,
+    "wc_male_total": 6,
+    "urinals_allowed": 3,
+    "urinals_required": 0,
+    "how": "400 people split 50/50 = 200 women and 200 men. Table 1: women 1 per 20 up to 100 then 1 more per 50; men 1 per 25 up to 100 then 1 more per 50. Fractions round up: 7 women's toilets, 6 men's fixtures. Urinals may replace up to 50% of the men's toilets: at most 3 (50% of 6, taken as a ceiling and not rounded up)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 8,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400 people split 50/50 = 200 women and 200 men. Table 1: women 1 per 25 (up to 200); men 1 per 50 (up to 200). Fractions round up: 8 women's toilets, 4 men's fixtures. Urinals may replace up to 50% of the men's toilets: at most 2 (50% of 4, taken as a ceiling and not rounded up)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 6,
+    "wc_male_total": 6,
+    "urinals_allowed": 3,
+    "urinals_required": 0,
+    "how": "400 people split 50/50 = 200 women and 200 men. Table 1: students: women 1 per 25 up to 100 then 1 more per 50; men the same. Fractions round up: 6 women's toilets, 6 men's fixtures. Urinals may replace up to 50% of the men's toilets: at most 3 (50% of 6, taken as a ceiling and not rounded up)."
+   }
+  ],
+  "worked_examples_note": "Assumes the table's ratios and break points ('1-20 up to 100', '1-25 up to 200') count people of that sex, since each ratio sits in a Female or Male column and the count is first split 50/50. The table does not say this outright. School rows are for students only; staff toilets are added from the Staff row (women 1 per 20, men 1 per 25, urinals up to 33%). 'Occupants' here means the people Massachusetts counts (seats plus staff, patrons plus staff, or student seating capacity), not a floor-area occupant load.",
+  "confidence": "medium"
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "780 CMR (Tenth Edition, 2021 IBC with Massachusetts amendments) Section 803.9, with 803.1.1 and 803.1.1.1 (NFPA 286 room-corner test); the Chapter 2 definition of interior wall and ceiling finish names toilet room privacy partitions",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. | 803.1.1 ... Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1. | [BF] Interior Wall and Ceiling Finish: The exposed interior surfaces of buildings, including but not limited to: fixed or movable walls and partitions; toilet room privacy partitions; ...",
+  "url": "https://up.codes/viewer/massachusetts/ibc-2021/chapter/8/interior-finishes",
+  "definition_url": "https://up.codes/viewer/massachusetts/ibc-2021/chapter/2/definitions",
+  "confidence": "medium",
+  "note": "Read on UpCodes' copy of the Massachusetts Building Code, 10th ed. (secondary; mass.gov blocks automated access). No Massachusetts amendment to Section 803.9 appeared on that copy."
+ },
+ "access": {
+  "state_standard": "521 CMR, Rules and Regulations of the Architectural Access Board (state-written; public toilet rooms are 521 CMR 30.00). The building code does not use ICC A117.1 for this: 780 CMR 1101.1 as amended says public buildings shall 'conform to the requirements of 521 CMR'. The federal 2010 ADA Standards apply alongside, so a stall has to meet the stricter of the two on each point.",
+  "differences": [
+   {
+    "point": "Wheelchair stall depth",
+    "state": "60 in wide and 72 in deep, for any toilet type.",
+    "federal": "60 in wide; 56 in deep for a wall-hung toilet, 59 in deep for a floor-mounted toilet (604.8.1.1).",
+    "state_url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-30-6",
+    "quote": "Standard accessible toilet stalls shall be at least 60 inches (60\" = 1524mm) wide and 72 inches (72\" = 1829mm) deep."
+   },
+   {
+    "point": "Rear grab bar length",
+    "state": "Two 42 in bars in the standard stall, rear and side.",
+    "federal": "Side bar 42 in minimum; rear bar 36 in minimum (604.5.1, 604.5.2).",
+    "state_url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-30-8",
+    "quote": "For the standard accessible toilet stall the water closet shall have two grab bars 42 inches (42\" = 1067mm) long, one on the wall in back of the water closet and one on the side wall closest to the water closet."
+   },
+   {
+    "point": "Grab bar diameter and finish",
+    "state": "1 1/4 to 1 1/2 in outside diameter; non-rusting and acid-etched or roughened.",
+    "federal": "Circular bars 1 1/4 in minimum to 2 in maximum (609.2.1); no finish rule beyond freedom from sharp or abrasive elements (609.5).",
+    "state_url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-30-8",
+    "quote": "Grab bars shall be between 11/4 inches and 11/2 inches ... in outside diameter ... Grab bars shall also be non-rusting and acid-etched or roughened."
+   },
+   {
+    "point": "Nothing above the grab bars",
+    "state": "No dispensers or other devices above the grab bars.",
+    "federal": "Objects above a grab bar are allowed with 12 in of space (609.3).",
+    "state_url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-30-8",
+    "quote": "30.8.5 Dispensers or other devices shall not be mounted above the grab bars."
+   },
+   {
+    "point": "Stall door hardware and coat hook",
+    "state": "Out-swinging or sliding door with 32 in clear opening, automatic self-closing hinge, a pull on both sides, a lock about 36 in above the floor that needs no tight grasping or twisting, 18 in clear on the latch pull side, and a coat hook no higher than 54 in. The federal reach range would put the hook lower, so the federal figure governs the hook.",
+    "federal": "Door self-closing with a pull on both sides near the latch (604.8.1.2); coat hooks within the reach ranges of 308 (604.8.3). A coat hook is not required federally.",
+    "state_url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-30-6",
+    "quote": "b. The stall door shall have an automatic self-closing hinge device, a pull device on both sides of the door to assist in closing and opening the door, and a lock located approximately 36 inches (36\" = 914mm) above the floor ... d. A coat hook shall be provided at a maximum height of 54 inches (54\" = 1372mm) above the floor."
+   },
+   {
+    "point": "Toilet position in the stall",
+    "state": "Centerline 18 in from the nearest side wall (a single figure), at least 42 in from the far wall.",
+    "federal": "Centerline 16 in minimum to 18 in maximum from the side wall (604.2).",
+    "state_url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-30-7",
+    "quote": "The center line of the water closet shall be located 18 inches (18\"= 457mm) from the nearest side wall and at least 42 inches (42\" = 1067mm) from the farthest side wall or the closest edge of an adjacent fixture."
+   },
+   {
+    "point": "Second (narrow) accessible stall",
+    "state": "Required where six or more stalls are in a toilet room; 36 in wide with parallel 42 in grab bars. The state trigger counts stalls only.",
+    "federal": "Required where six or more toilet compartments are provided, or where urinals and toilets together total six or more; 35 to 37 in wide, 60 in deep (213.3.1, 604.8.2.1). The federal trigger is wider, so it governs.",
+    "state_url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-30-6",
+    "quote": "Where six or more stalls are provided in a toilet room, at least one alternate accessible toilet stall (See Fig. 30c) shall be provided in addition to the standard accessible toilet stall. ... Alternate accessible toilet stalls shall be 36 inches (36\" = 914mm) wide with an outward swinging, self-closing door and parallel grab bars."
+   },
+   {
+    "point": "Toe clearance under partitions",
+    "state": "521 CMR 30.6 has no toe-clearance rule for stall partitions.",
+    "federal": "Front and one side partition: 9 in high, 6 in deep toe clearance, unless the stall is deeper than 62 in (wall-hung) or 65 in (floor-mounted) and wider than 66 in (604.8.1.4). A 72 in deep Massachusetts stall meets the depth exception for the front partition.",
+    "state_url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-30-6",
+    "quote": "(no state text; federal 604.8.1.4: 'Toe clearance at the front partition is not required in a compartment greater than 62 inches (1575 mm) deep with a wall-hung water closet or 65 inches (1650 mm) deep with a floor-mounted water closet.')"
+   },
+   {
+    "point": "Children's toilets (schools through grade 6)",
+    "state": "Set by grade band: toilet centerline 11 in (pre-K), 11 to 15 in (K to 3), 15 to 18 in (4 to 6); seat height 11 1/2 to 12 1/2, 12 to 15, 15 to 17 in; grab bars 18 to 20, 20 to 25, 25 to 27 in high. Mandatory where children's toilet rooms are provided.",
+    "federal": "Children's dimensions in 604.9 are an optional alternative with advisory age ranges; grab bars 18 to 27 in (609.4).",
+    "state_url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-30-14",
+    "quote": "Where children's toilet rooms are provided, at least one water closet and one sink in each location shall be accessible to children in wheelchairs ... Children's toilet rooms shall comply with the provisions of 521 CMR 30.14 through 30.20."
+   },
+   {
+    "point": "Restroom door sign height",
+    "state": "On the wall beside the latch side of the door, 60 in above the floor to the centerline of the sign.",
+    "federal": "Tactile characters between 48 in (baseline of lowest) and 60 in (baseline of highest) above the floor (703.4.1).",
+    "state_url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-41-2",
+    "quote": "41.2.2 Mounting height shall be 60 inches (60\" = 1524mm) above the finish floor to the centerline of the sign."
+   }
+  ],
+  "process": "No state plan-review or project-registration step was found. 780 CMR 1101.1 says 521 CMR 'shall be enforced by the building official or the state inspector'. An owner who finds full compliance impracticable applies to the Architectural Access Board for a variance (521 CMR 4.1). Alterations to existing public buildings: work under 30% of the building's full and fair cash value and under $100,000 must itself comply; at $100,000 or more an accessible public entrance and an accessible toilet room must also be provided; at 30% or more the whole building must comply (521 CMR 3.3.1 to 3.3.2). Quote: 'if the work costs $100,000 or more, then the work being performed is required to comply with 521 CMR. In addition, an accessible public entrance and an accessible toilet room, telephone, drinking fountain (if toilets, telephones and drinking fountains are provided) shall also be provided in compliance with 521 CMR.' (https://www.law.cornell.edu/regulations/massachusetts/521-CMR-3-3)",
+  "confidence": "medium"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "The plumbing code lets gender-designated toilets be swapped for single-user gender-neutral rooms: all of them, or in pairs (one men's and one women's fixture at a time) where four or more are required. A single-user gender-neutral room needs no stall. No statewide rule was found that requires every single-user restroom to be signed for all genders. Under the access rules, an accessible unisex room may stand in for accessible men's and women's rooms and must be in the same area as the other toilet rooms.",
+   "quote": "(g) Use of Unisex/Gender Neutral Toilet Rooms. For purposes of the minimum fixture requirements of 248 CMR, wherever 248 CMR 10.00 requires two or more toilet fixtures designated by gender, those facilities may be replaced with single use gender-neutral toilet rooms pursuant to one of the following options: 1. Every gender designated toilet fixture is replaced with an equal number of single use unisex gender-neutral toilet rooms (such that there are no gender designated fixtures); or 2. Where the code requires four or more toilet fixtures combined for males and females, gender designated fixtures may be replaced by single use unisex/gender-neutral toilet rooms in increments of two ...",
+   "url": "https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10"
+  },
+  "all_gender_shared": {
+   "rule": "Allowed in all buildings. Each toilet must be in a lockable compartment with partitions from floor to ceiling, and at least one single-user gender-neutral room must be on the same floor within 300 feet. When an existing men's or women's room is converted, existing partitions that are not full height may stay if they lock; new partitions must be floor to ceiling. The room counts as serving equal numbers of each gender.",
+   "quote": "(h) Multi-user/Gender Neutral Toilet Rooms. For all buildings, the minimum fixture requirements of 248 CMR may be met by the use of one or more multi-user - Gender Neutral Toilet Rooms whereby multiple users may utilize the fixtures regardless of gender. The following rules govern the use of such rooms: 1. At least one Single User/Gender - Neutral Toilet Room must be installed on the same floor and within 300 feet of a Multi-user/Gender Neutral Toilet Room; 2. Each toilet must be separated by lockable partitions that extend from floor to ceiling to provide privacy; ... 4. For conversions of existing gender specific toilet rooms to Multi-user/Gender Neutral Toilet Rooms, existing partitions that are not floor to ceiling may remain so long as they have functional locking mechanisms. New partitions installed in the future must extend from floor to ceiling.",
+   "url": "https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10"
+  },
+  "use_restrictions": {
+   "rule": "No Massachusetts law restricting restroom use by sex in particular buildings was found. State law runs the other way: a place of public accommodation that separates restrooms by sex must let each person use the one consistent with their gender identity.",
+   "quote": "An owner, lessee, proprietor, manager, superintendent, agent or employee of any place of public accommodation, resort or amusement that lawfully segregates or separates access to such place of public accommodation, or a portion of such place of public accommodation, based on a person's sex shall grant all persons admission to, and the full enjoyment of, such place of public accommodation or portion thereof consistent with the person's gender identity.",
+   "url": "https://malegislature.gov/Laws/GeneralLaws/PartIV/TitleI/Chapter272/Section92A"
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": true,
+  "law": "Massachusetts Prevailing Wage Law, M.G.L. c. 149 ss. 26 to 27 (public works construction by the commonwealth, a county, town, authority or district)",
+  "threshold": "None in the statute for contracted public works (the only dollar figure, $1,000, concerns a public body's own employees on building work). A Department of Labor Standards guide is reported in search results as saying the law applies 'regardless of the cost or size of the project'; that page could not be opened.",
+  "rates_url": "https://www.mass.gov/prevailing-wage-program",
+  "rates_url_note": "Not opened (mass.gov returns 403). There is no standing published rate table: the Department of Labor Standards issues a wage schedule for each project at the awarding authority's request, and the authority must give a copy to anyone who asks.",
+  "quote": "The rate per hour of the wages paid to said mechanics and apprentices, teamsters, chauffeurs and laborers in the construction of public works shall not be less than the rate or rates of wages to be determined by the commissioner as hereinafter provided ... (s. 27) Prior to awarding a contract for the construction of public works, said public official or public body shall submit to the commissioner a list of the jobs upon which mechanics and apprentices, teamsters, chauffeurs and laborers are to be employed, and shall request the commissioner to determine the rate of wages to be paid on each job. ... the awarding official or public body shall incorporate said schedule in the advertisement or call for bids by an appropriate reference thereto, and shall furnish a copy of said schedule, without cost, to any person requesting the same.",
+  "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section27",
+  "url_s26": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section26",
+  "confidence": "medium"
+ },
+ "sales_tax": {
+  "state_rate": 0.0625,
+  "local_rates": "None read for general sales of goods; the statute sets one 6.25% rate. Confirm that no city add-on applies to partitions (local options read about concern meals and lodging).",
+  "shipped_goods": {
+   "rule": "Sales of goods delivered into Massachusetts are taxable at 6.25%. A remote seller with no in-state presence must collect once its Massachusetts sales pass $100,000 in a calendar year. Where the seller does not collect, the buyer owes use tax at the same rate.",
+   "quote": "Remote retailers that have no traditional in-state contacts (i.e., generally, stores, employees, inventory, representatives, etc.) are generally required to collect sales or use tax as vendors when they exceed $100,000 in Massachusetts sales in a calendar year. (830 CMR 64H.1.9(1)(b)) | an excise is hereby imposed upon the storage, use or other consumption in the commonwealth of tangible personal property or services purchased from any vendor ... at the rate of 6.25 per cent of the sales price of the property or services. (M.G.L. c. 64I s. 2)",
+   "url": "https://www.law.cornell.edu/regulations/massachusetts/830-CMR-64H-1-9",
+   "url_statute": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter64I/Section2"
+  },
+  "freight_taxed": null,
+  "freight_note": "Depends on the invoice. The statute excludes from the taxable price 'transportation charges separately stated, if the transportation occurs after the sale of the property is made' (M.G.L. c. 64H s. 1, 'Sales price' (c)(v)), and does not allow a deduction for 'the cost of transportation of the property prior to its sale at retail'. Freight shown as its own line for delivery after the sale is not taxed; freight folded into the price is. When the sale 'is made' for a shipped order is a Department of Revenue question.",
+  "install_labor": {
+   "rule": "Not taxed when it is charged for installing the property sold. The statute excludes installation labor from the taxable sales price.",
+   "quote": "there shall be excluded ... (iii) the amount charged for labor or services rendered in installing or applying the property sold",
+   "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter64H/Section1"
+  },
+  "furnish_and_install": {
+   "rule": "Department of Revenue letter rulings treat a contractor who builds, alters or repairs real property as the consumer of the materials: the contractor pays tax on the materials when buying them and does not charge sales tax to the customer on the contract. Materials for buildings owned by government bodies or qualifying exempt organizations are exempt under M.G.L. c. 64H s. 6(f). Whether installed toilet partitions count as part of the real property was not found in any ruling read.",
+   "quote": "(search-result extract of mass.gov letter rulings, pages not opened) 'contractors are the consumers of tangible personal property purchased by them for the performance of their contracts'; statute, opened: '(f) Sales of building materials and supplies to be used in the construction, reconstruction, alteration, remodeling or repair of (1) any building structure, public highway, bridge or other public works owned by or held in trust for the benefit of any governmental body or agency mentioned in paragraph (d) and used exclusively for public purposes'",
+   "url": "https://www.mass.gov/letter-ruling/letter-ruling-94-5-sales-tax-on-various-sales-of-floor-coverings",
+   "url_statute": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter64H/Section6"
+  },
+  "agency": "Massachusetts Department of Revenue",
+  "confidence": "medium"
+ },
+ "page": {
+  "stalls_intro": "Massachusetts's rules count toilets by the people a building is set up for: seats plus staff in a restaurant, staff plus the usual number of visitors in an office, and student seats in a school. Half are counted as men and half as women, and any fraction rounds up. Every toilet in a shared restroom needs its own stall. Urinals are optional: they may replace up to half of the men's toilets, and each needs a side screen.",
+  "stalls_rows": {
+   "50": {
+    "office": "2/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "3/2",
+    "restaurant": "2/1",
+    "school": "2/2"
+   },
+   "200": {
+    "office": "5/4",
+    "restaurant": "4/2",
+    "school": "4/4"
+   },
+   "400": {
+    "office": "7/6",
+    "restaurant": "8/4",
+    "school": "6/6"
+   }
+  },
+  "stalls_after": "School figures are for students; staff toilets are counted separately, one for every 20 women and one for every 25 men on staff. A business with no more than 20 staff and customers and no more than 2,000 square feet does not need separate men's and women's rooms.",
+  "capacity": "Massachusetts's toilet counts do not start from floor area: a restaurant counts its seats and the most staff on duty, an office counts the most staff on duty and its usual number of visitors, and a school counts student seats, so ask your plumbing inspector to confirm the number for your building.",
+  "fire_bullet": "- **Fire safety:** Massachusetts's building rules require solid plastic (HDPE) partitions to pass a room fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Massachusetts's own access rules both apply, and the local building inspector enforces the state rules. On a remodel costing $100,000 or more, the building must also have an accessible toilet room and public entrance. An owner who can't meet a rule can ask the state's Architectural Access Board for a variance.",
+  "state_extra_bullet": "- **Massachusetts extras:** the state's wheelchair stall is deeper than the federal one, at least 60 inches wide and 72 inches deep. It needs two 42-inch grab bars with a roughened, non-rusting finish, nothing mounted above them, a door that swings out and closes itself with a pull on both sides, and a coat hook. A room with six or more stalls also needs a second, 36-inch-wide stall with grab bars on both sides. In schools through sixth grade, toilet and grab bar heights are set by grade.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** Massachusetts lets men's and women's toilets be replaced by single-user rooms open to everyone. A shared all-gender room is allowed if every toilet sits in a lockable compartment with partitions from floor to ceiling and a single-user room open to everyone is on the same floor within 300 feet. When an existing room is converted, partitions that lock may stay, but new ones must be full height. Where restrooms are separated by sex, state law lets each person use the one that matches their gender identity.",
+  "public_jobs": "On state, county, city, town and school district construction, Massachusetts law requires at least the wage rates the state Department of Labor Standards sets for that project, with no minimum project size in the law.",
+  "tax_install_bullet": "- **Tax on installation:** in Massachusetts, a charge for labor to install the partitions is not taxed. A contractor who supplies and installs them as part of the building generally pays the tax on the materials and does not add sales tax to the contract, so ask your contractor how the quote treats it.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable at 6.25%. Freight shown as a separate charge for delivery after the sale is not taxed. If the seller doesn't collect the tax, the buyer owes it to the state.",
+  "tax_confirm": "your accountant or the Massachusetts Department of Revenue",
+  "sources": [
+   "- Toilet counts in Massachusetts: [Uniform State Plumbing Code, 248 CMR 10.10](https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10), section 10.10(15) and Table 1, Minimum Facilities for Building Occupancy (50/50 split, rounding up, urinals up to 50%, the 20-person and 2,000 square foot exception, counting by seats and staff), as amended through December 8, 2023, read on Cornell's Legal Information Institute copy; the official page is [mass.gov, 248 CMR 10.00](https://www.mass.gov/regulations/248-CMR-1000-uniform-state-plumbing-code). The building code hands toilet counts to the plumbing code in [780 CMR section 2901.1](https://up.codes/viewer/massachusetts/ibc-2021/chapter/29/plumbing-systems). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: [Massachusetts State Building Code, 780 CMR, Tenth Edition, section 803.9 with 803.1.1 (NFPA 286)](https://up.codes/viewer/massachusetts/ibc-2021/chapter/8/interior-finishes), read on UpCodes. Checked 2026-11-24.",
+   "- Massachusetts access rules for stalls: Architectural Access Board, 521 CMR 30.00 Public Toilet Rooms, [30.6 Toilet Stalls](https://www.law.cornell.edu/regulations/massachusetts/521-CMR-30-6), [30.8 Grab Bars](https://www.law.cornell.edu/regulations/massachusetts/521-CMR-30-8) and [30.14 Children's Water Closets](https://www.law.cornell.edu/regulations/massachusetts/521-CMR-30-14); remodel thresholds in [521 CMR 3.3](https://www.law.cornell.edu/regulations/massachusetts/521-CMR-3-3); variances in [521 CMR 4.1](https://www.law.cornell.edu/regulations/massachusetts/521-CMR-4-1); compared with the [2010 ADA Standards](https://www.access-board.gov/ada/), sections 213, 604 and 609. Checked 2026-11-24.",
+   "- Single-user and all-gender restrooms: [248 CMR 10.10(15)(g) and (h)](https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10). Use consistent with gender identity: [Massachusetts General Laws chapter 272, section 92A](https://malegislature.gov/Laws/GeneralLaws/PartIV/TitleI/Chapter272/Section92A). Checked 2026-11-24.",
+   "- Wages on public jobs: Massachusetts General Laws chapter 149, [section 26](https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section26) and [section 27](https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section27). Checked 2026-11-24.",
+   "- Sales tax: Massachusetts General Laws [chapter 64H, section 2](https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter64H/Section2) (6.25%), [section 1](https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter64H/Section1) (installation labor and separately stated transportation excluded from the sales price), [chapter 64I, section 2](https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter64I/Section2) (use tax); Department of Revenue regulation [830 CMR 64H.1.9, Remote Retailers and Marketplace Facilitators](https://www.law.cornell.edu/regulations/massachusetts/830-CMR-64H-1-9); contractors as consumers of materials: Department of Revenue [Letter Ruling 94-5](https://www.mass.gov/letter-ruling/letter-ruling-94-5-sales-tax-on-various-sales-of-floor-coverings). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; 521 CMR, Rules and Regulations of the Architectural Access Board (2006 edition); Massachusetts State Building Code, 780 CMR, Tenth Edition (2021 International Building Code with Massachusetts amendments); Uniform State Plumbing Code, 248 CMR 10.00 (as amended effective December 8, 2023); NFPA 286 for HDPE."
+ },
+ "sources_read": [
+  {
+   "url": "https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-10",
+   "official": false,
+   "note": "Cornell LII copy of 248 CMR 10.10, full text and Table 1"
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/massachusetts/248-CMR-10-01",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-30-6",
+   "official": false,
+   "note": "all of 521 CMR 30.1 to 30.20 read on LII"
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-30-8",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-30-14",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-3-3",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-4-1",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-41-1",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/massachusetts/521-CMR-41-2",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/massachusetts/830-CMR-64H-1-9",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/massachusetts/ibc-2021/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/massachusetts/ibc-2021/chapter/2/definitions",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/massachusetts/ibc-2021/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/massachusetts/ibc-2021/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/massachusetts/ibc-2021/chapter/12/interior-environment",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/massachusetts/ibc-2021/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section26",
+   "official": true
+  },
+  {
+   "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section27",
+   "official": true
+  },
+  {
+   "url": "https://malegislature.gov/Laws/GeneralLaws/PartIV/TitleI/Chapter272/Section92A",
+   "official": true
+  },
+  {
+   "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter64H/Section1",
+   "official": true
+  },
+  {
+   "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter64H/Section2",
+   "official": true
+  },
+  {
+   "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter64H/Section6",
+   "official": true
+  },
+  {
+   "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter64I/Section2",
+   "official": true
+  },
+  {
+   "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXX/Chapter143/Section98",
+   "official": true
+  }
+ ],
+ "could_not_open": [
+  "https://www.mass.gov/regulations/248-CMR-1000-uniform-state-plumbing-code",
+  "https://www.mass.gov/guides/sales-and-use-tax",
+  "https://www.mass.gov/info-details/sales-and-use-tax-for-contractors-and-subcontractors",
+  "https://www.mass.gov/letter-ruling/letter-ruling-94-5-sales-tax-on-various-sales-of-floor-coverings (search extract only)",
+  "https://www.mass.gov/info-details/prevailing-wage-law-guide-for-awarding-authorities (search extract only)",
+  "web.archive.org (connection dropped)"
+ ],
+ "to_confirm": [
+  "Every mass.gov page returns HTTP 403 to automated access, so 248 CMR, 521 CMR and 830 CMR were read on Cornell LII and 780 CMR on UpCodes. Browser check on mass.gov before launch: that 248 CMR 10.10 Table 1 and 10.10(15)(g) to (h) read as quoted and that nothing has been amended since December 8, 2023 (the Board's code subcommittee was redrafting 248 CMR 10.00 through 2026 per meeting agendas; no final amendment found). Board of State Examiners of Plumbers and Gas Fitters.",
+  "How the Board reads Table 1's break points: do '1-20 up to 100' and '1-25 up to 200' count people of that sex (assumed in the worked examples) or total occupants? This changes the 400-person restaurant figure (8 women's, 4 men's as assumed). Ask the Board or the local plumbing inspector.",
+  "How the 'up to 50%' urinal share rounds on an odd number of men's fixtures (examples round down).",
+  "Whether the fixture-count internal cross-references '10.10(14): Table 1' and '10.10(15)' on the LII copy match the official numbering.",
+  "780 CMR Tenth Edition section 803.9 on the official text, and whether Massachusetts amended Chapter 8. Board of Building Regulations and Standards, Office of Public Safety and Inspections, 617-727-3200.",
+  "That the 2006 edition of 521 CMR is still in force unamended (the Architectural Access Board's subcommittee was drafting changes in 2026). Whether the Board treats replacing partitions alone as work that must bring the stall up to 521 CMR 30.6.",
+  "Whether any Massachusetts rule requires single-user restrooms to be signed as all-gender (none found in 248 CMR, 521 CMR or 780 CMR chapter 29 as read).",
+  "Prevailing wage: the Department of Labor Standards' statement that there is no dollar threshold, and the page where awarding authorities request wage schedules (mass.gov, not opened).",
+  "Sales tax: the Department of Revenue's contractor guide and letter rulings (not opened; search extracts only), whether installed toilet partitions are treated as part of the real property, when freight on a shipped order counts as transportation 'after the sale', and how Next Partitions itself is treated as a remote seller (the $100,000 threshold). Abe's accountant or the Department of Revenue."
+ ]
+}
