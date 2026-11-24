@@ -10,7 +10,7 @@ lng: -96.7662
 primary_keyword: bathroom partitions dallas (calendar #4, month 1)
 secondary_keywords: [toilet partitions dallas, restroom partitions dallas, commercial bathroom partitions dallas]
 date: 2026-11-24
-words: 800 (1,000 with FAQ)
+words: 1,040 (1,240 with FAQ)
 ---
 
 # Bathroom Partitions in Dallas
@@ -47,10 +47,25 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Texas's own access rules set the sizes. On projects of $50,000 or more, the state reviews the plans; smaller projects must still follow the rules.
 - **Fire safety:** Dallas's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.
-- **How many stalls:** Dallas sets the number of toilets and urinals by how many people use the building, and that decides how many stalls you need.
+- **How many stalls:** Dallas sets the number of toilets and urinals by how many people use the building. The table below shows what that means.
 - **Permits:** Dallas says a building permit is generally needed for work on a building's structure and publishes a list of work that needs none. Ask Dallas Building Inspection whether your replacement is on it. You don't need a permit to buy partitions.
 
 Last checked November 23, 2026. Rules change, so confirm your project with Dallas Building Inspection, TDLR, or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
+
+## How many stalls a Dallas restroom needs
+
+Dallas handles toilet counts differently from most cities. For schools, the counts below are required. For offices and restaurants, the city requires only one toilet for each sex where people work, and says of the usual counts that they are "recommended, but not required". Every toilet needs a stall. Urinals are optional and may stand in for some of the men's toilets.
+
+| People in the building | Office (recommended) | Restaurant (recommended) | School (required) |
+|---|---|---|---|
+| 50 | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall |
+| 100 | 2 women's stalls<br>2 men's stalls | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall |
+| 200 | 3 women's stalls<br>3 men's stalls | 2 women's stalls<br>2 men's stalls | 2 women's stalls<br>2 men's stalls |
+| 400 | 5 women's stalls<br>5 men's stalls | 3 women's stalls<br>3 men's stalls | 4 women's stalls<br>4 men's stalls |
+
+The counts split the people half men and half women. At least one stall in each room must be wheelchair accessible. Confirm what your project needs with Dallas Building Inspection.
+
+Not sure how many people your building holds? The building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or Dallas Building Inspection sets the final number.
 
 ## Installation in Dallas
 
@@ -109,6 +124,7 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Dallas permits: [City of Dallas Building Inspection FAQ](https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/Pages/building_inspection_faqs.aspx). Checked 2026-11-23.
 - Dallas contractor registration: [City of Dallas Development Services guide](https://dallascityhall.com/departments/sustainabledevelopment/guide). Last checked 2026-11-03.
 - Texas has no statewide general contractor license: [Office of the Governor, Texas Business Licenses & Permits Guide](https://gov.texas.gov/uploads/files/business/Texas_Licenses_Permits_Guide.pdf). Last checked 2026-11-19.
+- Toilet counts in Dallas: Dallas's amendments to the 2021 International Plumbing Code ([Ordinance 32422](https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0469.pdf)) and Building Code ([Ordinance 32421](https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0468.pdf)), Section 403.1 ("It is recommended, but not required…"). The table's ratios were read on a secondary copy of the Dallas Plumbing Code ([UpCodes](https://up.codes/viewer/dallas/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings)). Checked 2026-11-24.
 - The rules by their official names: 2010 ADA Standards for Accessible Design; 2012 Texas Accessibility Standards (TDLR registration and review at $50,000 or more); 2021 International Building Code with Dallas amendments, in force since May 12, 2023; 2021 International Plumbing Code with Dallas amendments; work exempt from a permit: Dallas City Code Chapter 52, Section 301(b); NFPA 286 for HDPE.
 
 <!-- For Marc -->
@@ -121,3 +137,4 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Schema: BreadcrumbList, FAQPage and Service (provider Next Partitions, areaServed Dallas). No LocalBusiness: there is no Dallas office. The hero drawing (`city-dallas`) comes from `build/city-maps.mjs`.
 - A lawyer reviews the codes wording.
 - To confirm before launch: whether a partition replacement needs a Dallas permit (Chapter 52, Section 301(b) wasn't read), whether Dallas has adopted newer code editions (its "2025 Code Amendment Process" page couldn't be opened), and the TDLR $50,000 threshold against 16 TAC 68.50.
+- Stall-count table: check the ratios in a browser on the official viewer, and ask Dallas Building Inspection how plan review applies "recommended, but not required". Data in `research/state-codes/fixtures/dallas.json`.

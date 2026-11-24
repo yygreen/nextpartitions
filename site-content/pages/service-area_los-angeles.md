@@ -10,7 +10,7 @@ lng: -118.4108
 primary_keyword: bathroom partitions los angeles (calendar #2, month 1)
 secondary_keywords: [toilet partitions los angeles, restroom partitions los angeles, commercial bathroom partitions los angeles]
 date: 2026-11-24
-words: 860 (1,070 with FAQ)
+words: 1,150 (1,350 with FAQ)
 ---
 
 # Bathroom Partitions in Los Angeles
@@ -47,10 +47,25 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and California's own access rules both set the sizes, and California's are stricter in places. A remodel can also oblige you to bring the restrooms serving that area up to today's rules; on projects under $209,208 (the 2026 figure) that duty is limited.
 - **Fire safety:** building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.
-- **How many stalls:** Los Angeles sets the number of toilets and urinals by how many people use the building, and that decides how many stalls you need.
+- **How many stalls:** Los Angeles sets the number of toilets and urinals by how many people use the building. The table below shows what that means.
 - **Permits:** Los Angeles needs no permit for work worth $2,500 or less, or for "partitions, not over 5 feet 9 inches high", but the city doesn't say whether toilet partitions count. Ask the Department of Building and Safety (LADBS) before a replacement. You don't need a permit to buy partitions.
 
 Last checked November 23, 2026. Rules change, so confirm your project with the Los Angeles Department of Building and Safety (LADBS) or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
+
+## How many stalls a Los Angeles restroom needs
+
+Los Angeles counts toilets by the number of people the building holds, half men and half women, and it requires urinals in the men's room. Every toilet needs a stall, and urinals need screens between them. The women's room must have at least as many toilets as the men's room has toilets and urinals together.
+
+| People in the building | Office | Restaurant | School |
+|---|---|---|---|
+| 50 | 2 women's stalls<br>1 men's stall + 1 urinal | 2 women's stalls<br>1 men's stall + 1 urinal | 2 women's stalls<br>1 men's stall + 1 urinal |
+| 100 | 3 women's stalls<br>1 men's stall + 1 urinal | 2 women's stalls<br>1 men's stall + 1 urinal | 2 women's stalls<br>1 men's stall + 1 urinal |
+| 200 | 4 women's stalls<br>2 men's stalls + 1 urinal | 3 women's stalls<br>2 men's stalls + 1 urinal | 4 women's stalls<br>2 men's stalls + 1 urinal |
+| 400 | 8 women's stalls<br>3 men's stalls + 2 urinals | 4 women's stalls<br>3 men's stalls + 1 urinal | 7 women's stalls<br>4 men's stalls + 2 urinals |
+
+These are minimums for new buildings, additions and changes of use that bring in more people; a remodel that doesn't add people can usually keep the toilets it has. A business with 50 people or fewer may be allowed a single one-person restroom, so ask LADBS. At least one stall in each room must be wheelchair accessible.
+
+Not sure how many people your building holds? Los Angeles counts an office at one person per 150 square feet of floor, and a restaurant dining room or a classroom at one per 30 square feet. Your architect or LADBS sets the final number.
 
 ## Installation in Los Angeles
 
@@ -108,6 +123,7 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Los Angeles building and plumbing codes, and work exempt from a permit (LAMC 91.106.2): [Ordinance No. 188797, on the LADBS site](https://dbs.lacity.gov/sites/default/files/efs/forms/pc17/26-ord-188797-260108.pdf). Checked 2026-11-23.
 - California Building Code Chapter 11B and the 2026 valuation threshold: [LADBS accessibility plan check list for commercial buildings, 2026](https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf). Checked 2026-11-23.
 - California contractor license (C-61/D-34): [Contractors State License Board](https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=D34). Last checked 2026-11-19.
+- Toilet counts in Los Angeles: 2025 California Plumbing Code, Table 422.1 and Table 4-1, read on [IAPMO's code viewer](https://epubs.iapmo.org/2025/CPC/), and [LADBS Information Bulletin P/BC 2026-095, Plumbing Fixtures](https://dbs.lacity.gov/sites/default/files/efs/forms/pc17/plumbing-fixtures-ib-p-bc2014-095.pdf) ("the minimum number of plumbing fixtures are shown in CPC Table 422.1"). Los Angeles makes no changes to the table. Checked 2026-11-24.
 - The rules by their official names: 2010 ADA Standards for Accessible Design; California Building Code Chapter 11B; 2026 Los Angeles Building Code (the 2025 California Building Code with Los Angeles amendments, in force since January 1, 2026); Los Angeles Plumbing Code (the 2025 California Plumbing Code with Los Angeles amendments); NFPA 286 for HDPE under the International Building Code, the model for California's code.
 
 <!-- For Marc -->
@@ -121,3 +137,4 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - A lawyer reviews the codes wording.
 - To confirm by phone before launch: whether a partition replacement needs an LADBS permit (LAMC 91.106.2, items 1 and 15), and Los Angeles's own contractor registration rule (low confidence in `research/local-rules/cities.json`).
 - The $209,208 threshold changes each January: recheck in January 2027.
+- Stall-count table: check the office row against the printed 2025 California Plumbing Code (pages 70-71) and confirm with LADBS how the women's minimum (Table 422.1, note 3) is applied before launch. Data in `research/state-codes/fixtures/los-angeles.json`.

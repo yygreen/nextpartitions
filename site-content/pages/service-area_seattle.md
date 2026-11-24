@@ -10,7 +10,7 @@ lng: -122.3515
 primary_keyword: bathroom partitions seattle (calendar #5, month 1)
 secondary_keywords: [toilet partitions seattle, restroom partitions seattle, commercial bathroom partitions seattle]
 date: 2026-11-24
-words: 860 (1,060 with FAQ)
+words: 1,110 (1,310 with FAQ)
 ---
 
 # Bathroom Partitions in Seattle
@@ -49,10 +49,25 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Washington's own access rules set the sizes.
 - **Fire safety:** Seattle's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.
-- **How many stalls:** the number of toilets and urinals depends on how many people use the building, and that decides how many stalls you need. The county health department, Public Health – Seattle & King County, enforces the plumbing rules.
+- **How many stalls:** the number of toilets and urinals depends on how many people use the building. The table below shows what that means. The county health department, Public Health – Seattle & King County, enforces the plumbing rules.
 - **Permits:** Seattle needs no permit for minor repairs or alterations that cost $6,000 or less in any 6-month period, counting labor and parts at market value. Above that, ask the Seattle Department of Construction and Inspections (SDCI) whether your replacement needs one. You don't need a permit to buy partitions.
 
 Last checked November 23, 2026. Rules change, so confirm your project with SDCI or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
+
+## How many stalls a Seattle restroom needs
+
+Seattle counts toilets by the number of people the building holds, half men and half women. Every toilet needs a stall. Washington sets its own count for schools, with more toilets for girls than for boys. Urinals are optional and may stand in for most of the men's toilets.
+
+| People in the building | Office | Restaurant | School |
+|---|---|---|---|
+| 50 | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall |
+| 100 | 2 women's stalls<br>2 men's stalls | 1 women's stall<br>1 men's stall | 2 women's stalls<br>2 men's stalls |
+| 200 | 3 women's stalls<br>3 men's stalls | 2 women's stalls<br>2 men's stalls | 4 women's stalls<br>3 men's stalls |
+| 400 | 5 women's stalls<br>5 men's stalls | 3 women's stalls<br>3 men's stalls | 8 women's stalls<br>6 men's stalls |
+
+Small businesses may be allowed one shared restroom: up to 25 people in an office and up to 30 in a restaurant. At least one stall in each room must be wheelchair accessible. Confirm your project with SDCI.
+
+Not sure how many people your building holds? The building rules count an office at one person per 150 square feet of floor and a restaurant dining room at one per 15 square feet. A school is counted at one student per 100 square feet of the whole building. Your architect or SDCI sets the final number.
 
 ## Installation in Seattle
 
@@ -111,6 +126,7 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Seattle permits and the $6,000 limit: [SDCI, Do You Need a Permit?](https://www.seattle.gov/construction-and-inspections/permits/do-you-need-a-permit). Checked 2026-11-23.
 - Downtown truck rules: [Seattle Department of Transportation, Downtown Traffic Control Zone](https://www.seattle.gov/transportation/permits-and-services/permits/stt-downtown-traffic-control-zone). Checked 2026-11-23.
 - Contractor registration: [Washington L&I, Register as a Contractor](https://lni.wa.gov/licensing-permits/contractors/register-as-a-contractor/) and [SDCI Tip 333](https://www.seattle.gov/DPD/Publications/CAM/cam333.pdf). Last checked 2026-11-19.
+- Toilet counts in Seattle: [2021 Seattle Building Code, Chapter 29](https://www.seattle.gov/construction-and-inspections/codes/codes-we-enforce-(a-z)/building-code), Table 2902.1, and [WAC 51-50-2902](https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-2902); the plumbing code points there ([WAC 51-56-0400](https://app.leg.wa.gov/WAC/default.aspx?cite=51-56-0400)). Checked 2026-11-24.
 - The rules by their official names: 2010 ADA Standards for Accessible Design; ICC A117.1-2017 with Washington amendments (WAC 51-50, Seattle Building Code Chapter 11); 2021 Seattle Building Code (the 2021 International Building Code with Seattle amendments); 2021 Seattle Plumbing Code (the 2021 Washington State Plumbing Code with Seattle amendments); NFPA 286 for HDPE.
 
 <!-- For Marc -->
@@ -123,3 +139,4 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Schema: BreadcrumbList, FAQPage and Service (provider Next Partitions, areaServed Seattle). No LocalBusiness: there is no Seattle office. The hero drawing (`city-seattle`) comes from `build/city-maps.mjs`.
 - A lawyer reviews the codes wording.
 - To confirm before launch: whether a partition replacement over $6,000 needs an SDCI permit (Seattle Building Code Section 106.2), the Downtown Traffic Control Zone's boundaries, and when Seattle moves to the 2024 code editions.
+- Stall-count table: read on official pages. Recheck when Seattle and Washington move to the 2024 editions. Data in `research/state-codes/fixtures/seattle.json`.

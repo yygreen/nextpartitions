@@ -10,7 +10,7 @@ lng: -80.2086
 primary_keyword: bathroom partitions miami (calendar #3, month 1)
 secondary_keywords: [toilet partitions miami, restroom partitions miami, commercial bathroom partitions miami]
 date: 2026-11-24
-words: 850 (1,060 with FAQ)
+words: 1,120 (1,330 with FAQ)
 ---
 
 # Bathroom Partitions in Miami
@@ -47,11 +47,26 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Florida's own access rules set the sizes.
 - **Fire safety:** building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.
-- **How many stalls:** Florida's plumbing rules set the number of toilets and urinals by how many people use the building, and that decides how many stalls you need.
+- **How many stalls:** Florida's plumbing rules set the number of toilets and urinals by how many people use the building. The table below shows what that means.
 - **New rules on December 31, 2026:** Florida replaces its building rules with a new edition that day. If your project is permitted after that date, ask your architect which edition applies.
 - **Permits:** Miami's list of work that needs no permit covers only partitions that aren't fixed to the building and stand no taller than 5 feet 9 inches. Toilet partitions are anchored, so ask the City of Miami Building Department before a replacement. You don't need a permit to buy partitions.
 
 Last checked November 23, 2026. Rules change, so confirm your project with the City of Miami Building Department or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
+
+## How many stalls a Miami restroom needs
+
+Florida counts toilets by the number of people the building holds, half men and half women. Every toilet needs a stall. Urinals are optional: they may stand in for up to half of the men's toilets in an office, and up to two-thirds in a restaurant or school.
+
+| People in the building | Office | Restaurant | School |
+|---|---|---|---|
+| 50 | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall |
+| 100 | 2 women's stalls<br>2 men's stalls | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall |
+| 200 | 3 women's stalls<br>3 men's stalls | 2 women's stalls<br>2 men's stalls | 2 women's stalls<br>2 men's stalls |
+| 400 | 5 women's stalls<br>5 men's stalls | 3 women's stalls<br>3 men's stalls<br>More women's stalls may apply | 4 women's stalls<br>4 men's stalls |
+
+In restaurants and other gathering places, Florida can require three women's toilets for every two men's toilets and urinals once the men's room has more than two. Licensed restaurants may be exempt, so confirm with the City of Miami Building Department. Outdoor seating counts toward the number of people. At least one stall in each room must be wheelchair accessible.
+
+Not sure how many people your building holds? The building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or the Building Department sets the final number.
 
 ## Installation in Miami
 
@@ -110,6 +125,7 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Work exempt from a permit in Miami: [City of Miami, Work Exempt from Permit](https://www.miami.gov/Permits-Construction/Work-Exempt-from-Permit). Checked 2026-11-23.
 - Miami-Dade certificate of competency: [Miami-Dade County Code, Chapter 10](https://library.municode.com/fl/miami_-_dade_county/codes/code_of_ordinances?nodeId=PTIIICOOR_CH10CO). Last checked 2026-11-03.
 - Florida contractor licensing: [Florida Statutes 489.113](https://www.flsenate.gov/Laws/Statutes/2023/489.113). Last checked 2026-11-19.
+- Toilet counts in Miami: Florida Building Code, Plumbing, 8th Edition (2023), Table 403.1 and Sections 403.1.1, 403.1.3 and 424.2, read on a secondary copy ([UpCodes](https://up.codes/viewer/florida/fl-plumbing-code-2023/chapter/4/fixtures-faucets-and-fixture-fittings)) because the official viewer blocks automated reading. The Florida Building Commission's change documents for the 9th Edition (2026) show the same ratios for these three rows. Checked 2026-11-24.
 - The rules by their official names: 2010 ADA Standards for Accessible Design; Florida Building Code, 8th Edition (2023): Building, Plumbing and Accessibility volumes, replaced by the 9th Edition (2026) on December 31, 2026; NFPA 286 for HDPE under the International Building Code, the model for Florida's code.
 
 <!-- For Marc -->
@@ -123,3 +139,4 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - A lawyer reviews the codes wording.
 - **Update on December 31, 2026:** the 9th Edition (2026) Florida Building Code takes effect. Rewrite the codes bullets and the FAQ answer for the 9th Edition only, and recheck the city's list of applicable codes.
 - To confirm by phone before launch: whether replacing anchored toilet partitions needs a City of Miami permit, and which Miami-Dade certificate of competency covers partition installation (Florida's state status is unclear in `research/state-licensing/states.json`).
+- Stall-count table: read the 8th Edition rows once in a browser on the official viewer, and the published 9th Edition before December 31, 2026. The women's 3-to-2 rule (403.1.3) and its exception for licensed establishments need confirming. Data in `research/state-codes/fixtures/miami.json`.
