@@ -24,10 +24,10 @@ Kansas City
 
 ## The right material for Kansas City's climate
 
-Kansas City gets about 39 inches of rain a year, on roughly 104 days, and relative humidity averages 81% in the morning and 60% in the afternoon. What that means for partitions depends on whether the restroom is heated and ventilated:
+Kansas City gets about 39 inches of rain a year, on roughly 104 days, and relative humidity averages 81% in the morning and 60% in the afternoon. In most Kansas City restrooms the room decides the material, not the weather:
 
-- **Heated, ventilated restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
-- **Unheated restrooms or rooms open to outside air** (parks, stadiums, warehouses, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
+- **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
+- **Restrooms without air conditioning, or that get wet from the inside** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
@@ -116,8 +116,8 @@ Yes. Partitions ship by freight carrier to Kansas City and the surrounding citie
 ### Does Next Partitions install partitions in Kansas City?
 No. We supply the partitions and the shop drawings; a contractor you hire installs them. Missouri has no state license for partition installers, and Kansas City licenses specific trades and residential builders. Our directory lists [partition installers in Kansas City](/installers/missouri/kansas-city), and you can ask for installation prices with your quote.
 
-### Which partition material is best for Kansas City's climate?
-In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
+### Which partition material is best in Kansas City?
+In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What rules does a Kansas City restroom have to meet?
 Federal and Missouri wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with Kansas City's City Planning and Development Department.

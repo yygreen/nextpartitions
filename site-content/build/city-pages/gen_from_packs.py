@@ -15,7 +15,7 @@ BASE = {c['slug']: c for c in json.load(open(R('research/city-base/cities.json')
 LOCAL = {c['slug']: c for c in json.load(open(R('research/local-rules/cities.json')))}
 LIC = {c['code']: c for c in json.load(open(R('research/state-licensing/states.json')))}
 STATE_NAME = lambda b: 'New York' if b['state_slug'] == 'new-york-state' else ' '.join(w if w == 'of' else w.capitalize() for w in b['state_slug'].split('-'))
-DRY_STATES_COLD = set('WA OR AK ID MN WI MI IL IN OH PA NY NJ CT RI MA IA NE SD CO UT MD DC MO KS KY VA'.split())
+DRY_STATES_COLD = set('WA OR AK ID MN WI MI IL IN OH PA NY NJ CT RI MA IA NE SD CO UT'.split())
 
 def poss(city):  # "Houston's climate" / "the Dallas climate"
     return 'the %s climate' % city if city.endswith('s') or ',' in city else "%s's climate" % city

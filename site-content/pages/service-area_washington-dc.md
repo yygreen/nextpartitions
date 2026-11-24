@@ -24,10 +24,10 @@ Washington, DC
 
 ## The right material for the Washington, DC climate
 
-Washington, DC gets about 42 inches of rain a year, on roughly 114 days, and relative humidity averages 74% in the morning and 53% in the afternoon. What that means for partitions depends on whether the restroom is heated and ventilated:
+Washington, DC gets about 42 inches of rain a year, on roughly 114 days, and relative humidity averages 74% in the morning and 53% in the afternoon. In most Washington, DC restrooms the room decides the material, not the weather:
 
-- **Heated, ventilated restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
-- **Unheated restrooms or rooms open to outside air** (parks, stadiums, warehouses, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
+- **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
+- **Restrooms without air conditioning, or that get wet from the inside** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
@@ -116,8 +116,8 @@ Yes. Partitions ship by freight carrier to Washington, DC and the surrounding ci
 ### Does Next Partitions install partitions in Washington, DC?
 No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor working in Washington, DC needs a DC Basic Business License in a contractor category. Our directory lists [partition installers in Washington, DC](/installers/district-of-columbia/washington-dc), and you can ask for installation prices with your quote.
 
-### Which partition material is best for the Washington, DC climate?
-In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
+### Which partition material is best in Washington, DC?
+In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What rules does a Washington, DC restroom have to meet?
 Federal and District of Columbia wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the DC Department of Buildings.
