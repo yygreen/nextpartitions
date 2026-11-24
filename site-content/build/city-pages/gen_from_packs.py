@@ -20,8 +20,18 @@ DRY_STATES_COLD = set('WA OR AK ID MN WI MI IL IN OH PA NY NJ CT RI MA IA NE SD 
 def poss(city):  # "Houston's climate" / "the Dallas climate"
     return 'the %s climate' % city if city.endswith('s') or ',' in city else "%s's climate" % city
 
+# the nearest NOAA station in the published lists is too far away, or in a different climate, to describe these
+# cities: no figures on the page until a local normal is looked up
+NO_FIGURES = {'san-jose', 'riverside', 'ontario'}
+
 def climate(b):
     c, city, st = b['climate'], b['name'], b['state']
+    if b['slug'] in NO_FIGURES:
+        return ('In most %s restrooms the room decides the material, not the weather:' % city,
+                '- **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.',
+                '- **Restrooms without air conditioning, or that get wet from the inside** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.',
+                ('Which partition material is best in %s?' % city, 'In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.'),
+                None)
     place = city if not c.get('nearby_station') else 'The nearest long-term weather station, at %s,' % c['station'].split(',')[0]
     bits = []
     if c.get('precip_in') is not None: bits.append('about %d inches of rain a year' % round(c['precip_in']))
@@ -99,7 +109,7 @@ def page(slug):
     sources = ['- Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.',
         '- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).',
         '- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).',
-        csrc,
+        *([csrc] if csrc else []),
         '- Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).']
     sources += list(C.get('sources') or []) + [s for s in (S.get('sources') or []) if s not in (C.get('sources') or []) and 'official names' not in s and not any(k in s for k in (C.get('skip_state_sources') or []))] + [wsrc]
     if lr.get('source_url') and not C.get('skip_local_rule_source'): sources.append('- %s contractor rule: [%s](%s). Checked 2026-11-03.' % (city, lr.get('authority') or 'city page', lr['source_url']))
@@ -109,7 +119,7 @@ def page(slug):
         '`:::pricer` is the step-by-step pricer (email before any range); on export it is the slot `<!--np-pricer:%s-->`.' % city,
         'No prices and no lead times until the price list is in.',
         'Schema: BreadcrumbList, FAQPage and Service (provider Next Partitions, areaServed %s). No LocalBusiness: there is no %s office.' % (city, city),
-        'Research: `research/city-pages/cities/%s.json` and `research/city-pages/states/%s.json` (2026-11-24). A lawyer reviews the rules wording before launch.' % (slug, st)] + [n for n in (C.get('notes') or []) if 'state pack' not in n.lower()]  # pack housekeeping isn't for Marc
+        'Research: `research/city-pages/cities/%s.json` and `research/city-pages/states/%s.json` (2026-11-24). A lawyer reviews the rules wording before launch.' % (slug, st)] + (['No rainfall or humidity figures on this page: the nearest station in NOAA\'s published lists is in a different climate. Add them from a local NOAA normal before launch.'] if slug in NO_FIGURES else []) + [n for n in (C.get('notes') or []) if 'state pack' not in n.lower()]  # pack housekeeping isn't for Marc
     faq_inst = 'No. We supply the partitions and the shop drawings; a contractor you hire installs them. %sOur directory lists [partition installers in %s](%s), and you can ask for installation prices with your quote.' % ((C.get('faq_install_extra').rstrip() + ' ') if C.get('faq_install_extra') else '', city, inst)
     fire = ', the fire-safety rule for solid plastic partitions' if g('fire_bullet') else ''
     t = f'''---
