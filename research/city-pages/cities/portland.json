@@ -1,0 +1,275 @@
+{
+ "slug": "portland",
+ "city": "Portland",
+ "state": "OR",
+ "checked": "2026-11-24",
+ "codes": {
+  "building": {
+   "name": "Oregon Structural Specialty Code (OSSC)",
+   "edition": "2025 (based on the 2024 International Building Code, with Oregon amendments)",
+   "local_amendments": true,
+   "local_amendments_note": "Portland City Code Title 24 (Building Regulations) adopts the OSSC by reference to the state rule and adds city chapters of its own (administration and permits, flood hazard areas, demolition, clearing and grading, seismic upgrades in Chapter 24.85, and Chapter 32 and parts of Chapter 33 of the International Building Code). The full Title was searched for 'toilet', 'restroom', 'water closet' and 'partition': it holds no rule on toilet counts, toilet partitions or restroom layout. State law (ORS 455.040, state pack) bars a city from setting different requirements on matters the state code covers.",
+   "effective": "2025-10-01 (mandatory 2026-04-01 after a six-month phase-in)",
+   "url": "https://www.portland.gov/code/24/10",
+   "quote": "24.10.040 Codes. (Amended by Ordinances 192077 and 192117, effective November 21, 2025.) A. Except as otherwise provided in this code, the following building codes are adopted as a part of this chapter and are further referred to as the Building Code. 1. The Oregon Structural Specialty Code (OSSC) as adopted by OAR 918-460-0010 and amended by OAR 918-460-0015. [...] 4. The Oregon Plumbing Specialty Code (OPSC) as adopted by OAR 918-750-0110 and amended by 918-750-0115.",
+   "edition_quote": "2025 Oregon Structural Specialty Code (OSSC) Based on the 2024 International Building Code (IBC), International Fire Code (IFC) and International Existing Building Code (IEBC). Administrative provisions (Chapter 1): Effective and mandatory Oct. 1, 2025. Construction provisions: Effective Oct. 1, 2025 with *six-month phase-in period. Mandatory April 1, 2026. *During the phase-in period, use of the 2022 OSSC or the 2025 OSSC is permitted.",
+   "edition_url": "https://www.oregon.gov/bcd/codes-stand/Pages/commercial-structures.aspx",
+   "edition_note": "The city code names no edition: it points to the Oregon Administrative Rule that adopts the code. The city's own link portland.gov/ppd/ossc redirects to the Oregon Building Codes Division page quoted here."
+  },
+  "plumbing": {
+   "name": "Oregon Plumbing Specialty Code (OPSC)",
+   "edition": "2026 (based on the 2024 Uniform Plumbing Code, with Oregon amendments)",
+   "local_amendments": false,
+   "local_amendments_note": "Portland City Code Title 25 (Plumbing Regulations, replaced by Ordinance 191944, effective January 1, 2025) adopts the OPSC by reference and adds permit, registration, appeal and sewer provisions. The full Title was searched: it holds no change to fixture requirements. In Oregon the toilet-count table is in the building code (OSSC Chapter 29), not the plumbing code (state pack).",
+   "effective": "2026-10-01",
+   "url": "https://www.portland.gov/code/25/all",
+   "quote": "25.01.020 Scope - Oregon Plumbing Specialty Code. Except as otherwise provided in this code, the Oregon Plumbing Specialty Code (OPSC) as adopted by OAR 918-750-0110 and amended by 918-750-0115, is adopted by this reference.",
+   "edition_quote": "2026 Oregon Plumbing Specialty Code (OPSC) New. Effective Oct. 1, 2026. Based on the 2024 Uniform Plumbing Code (UPC)",
+   "edition_url": "https://www.oregon.gov/bcd/codes-stand/Pages/plumbing.aspx"
+  },
+  "scheduled_change": null,
+  "scheduled_change_note": "No code change already scheduled was found on the Building Codes Division's structural and plumbing pages or in the 'Upcoming and recent changes' list of Title 25. The one dated city rule ahead is the restroom sign rule (see restrooms_city): compliance by January 1, 2027, enforcement from July 1, 2027.",
+  "authority": "Portland Permitting & Development (PP&D), under the City Administrator; the Building Official acts where the state code requires. Development Services Center, 1900 SW 4th Ave.; general inquiries 503-823-7300",
+  "authority_quote": "24.10.050 Organization. A. Portland Permitting & Development. Portland Permitting & Development is under the jurisdiction of the City Administrator. B. Enforcement of this Title. The City Administrator is authorized and directed to enforce all provisions of this Title except to the extent to which the Building Code empowers and requires the Building Official, as that term is defined in Section 24.15.055, to act.",
+  "authority_url": "https://www.portland.gov/code/24/10",
+  "confidence": "high"
+ },
+ "fixtures": {
+  "city_amends": false,
+  "amendment": null,
+  "basis": "Portland adopts the OSSC and OPSC by reference (City Code 24.10.040 and 25.01.020) and Titles 24 and 25, read in full, hold no change to the toilet-count table or its rules. The city's own Building Code Guide 22-10 applies 'OSSC 2902.1' for the required number of plumbing fixtures. The state pack's worked examples stand. Two city interpretations (not amendments) touch the count: (1) Building Official Determination 16-02: in a multi-user all-gender restroom, urinals 'do not count towards the total required number of plumbing fixtures'; (2) Building Code Guide 22-10: for fixture counts in offices, flexible workspaces, conference rooms and breakrooms larger than 750 sf are counted at 1 person per 15 sf, the rest of the office at 1 per 150 sf gross.",
+  "url": "https://www.portland.gov/ppd/code-policy/commercial-building-code-guides/bcg-22-10-office-space-code-guide",
+  "quote": "Similar to the calculation for egress occupant load, PP&D will use a gross OLF of 1:150 for the full square footage within the exterior walls of office buildings, excluding vent shafts and courts. However, for purposes of determining the required number of plumbing fixtures in OSSC 2902.1 and legal building occupancy for seismic retrofit triggers in Portland City Code Chapter 24.85, flexible workspaces, conference rooms, and breakrooms larger than 750 sf will be subtracted from the gross square footage and calculated using an OLF of 1:15. [...] HISTORY: Implemented March 16, 2022.",
+  "second_url": "https://www.portland.gov/ppd/codes-rules-and-guides/bod-16-02-all-gender-restrooms",
+  "second_quote": "RESPONSE 2: Urinals may be provided in multi-user all-gender restrooms, but do not count towards the total required number of plumbing fixtures. [...] RESPONSE 3: The total number of accessible fixtures in a multi-user all-gender restroom shall be determined based on the requirements for water closet compartments in a multi-user facility in 1110.2.4.",
+  "confidence": "high"
+ },
+ "permit": {
+  "exempt_list_quote": "105.2 Work Exempt From Permit. [...] Permits shall not be required for the following: Building: 1. One-story detached accessory structures used as trash enclosures, provided that the gross floor area is not greater than 120 square feet. 2. One-story detached nonoccupied Group U structures, provided that the gross floor area is not greater than 200 square feet, provided that the structure is not used as a trash enclosure. 3. Fences, other than required swimming pool barriers, not over 7 feet high. 4. Platforms, sidewalks and driveways not more than 30 inches above adjacent grade, and not over any basement or story below and are not part of an accessible route. 5. Painting, papering, tiling, carpeting, cabinets, counter tops and similar finish work. 6. Shade cloth structures constructed for nursery or agricultural purposes, not including service systems. 7. Window awnings in Group R-3 and U occupancies, supported by an exterior wall that do not project more than 54 inches from the exterior wall and do not require additional support. 8. Nonfixed and movable elements not greater than 5 feet 9 inches (1753 mm) in height that do not alter any portion of the required means of egress, including but not limited to: cases, racks, counters, and partitions such as cubicle and workspace walls. 9. Farm- and forest-use agricultural buildings exempted in ORS 455.315 (also see Appendix C). 10. Buildings and facilities exempted in ORS 455.315. Note: Unless otherwise exempted, separate plumbing, electrical and mechanical permits may be required for the exempted items listed in this section.",
+  "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/1/scope-and-administration",
+  "url_note": "2025 Oregon Structural Specialty Code, Section 105.2, read on UpCodes (secondary copy; item numbers added, the copy shows them as a list). Portland publishes no exempt-work list of its own for commercial buildings.",
+  "city_quote": "Alterations to existing structures that require a building permit: Cell phone antenna [...]; Change the Use or Occupancy in an Existing Building; Construct an addition; Demolish a structure; Disabled access upgrades; Install racks/storage shelving; Install siding; Move or construct walls, even if non-bearing partitions; Replace or add new windows or doors; Seismic upgrade; Tenant improvements. [...] Not sure if you need a permit? Schedule a 15-minute appointment.",
+  "city_url": "https://www.portland.gov/ppd/commercial-permitting/do-you-need-permit/commercial-permits",
+  "city_code_quote": "24.10.070 Application for Permits. A. Permits required. No person, firm, or corporation may erect, construct, enlarge, alter, repair, move, improve, remove, convert, change occupancy group of, or demolish any building or structure [...] without first obtaining the proper permit, or where appropriate a minor structural label as outlined in Section 24.10.095. The limitations of Oregon Revised Statutes 455.020 notwithstanding, permits are required to construct, alter, repair or move any structure as identified in this Title or in the Oregon Structural Specialty Code or the Oregon Residential Specialty Code, as adopted in Chapter 24.10 of this Title.",
+  "city_code_url": "https://www.portland.gov/code/24/10",
+  "partitions_named": false,
+  "note": "Neither list names toilet partitions or compartments. The state exemption covers 'nonfixed and movable' partitions up to 5 ft 9 in 'such as cubicle and workspace walls' and 'similar finish work'; toilet partitions are anchored to the floor, wall or ceiling, and whether they fall under either item is not stated. The city's list of work needing a permit names 'Tenant improvements', 'Disabled access upgrades' and 'Move or construct walls, even if non-bearing partitions'. The city's interactive project guide (portland.gov/ppd/commercial-permitting/changing-commercial-space/project-guide) asks whether the project will 'add, remove, or change any fixed structure like a wall, platform, or stage' and tells a user who answers no to every question 'you will not need a permit'; it doesn't mention toilet partitions either.",
+  "office": "Portland Permitting & Development",
+  "phone": "503-823-7300 (general inquiries, Monday to Friday 8 a.m. to 5 p.m.); free 15-minute appointments for permit and code questions are booked online",
+  "confidence": "medium"
+ },
+ "restrooms_city": {
+  "rule": "Two city rules add to the state's. (1) Portland City Code 23.01.071 (Ordinance 192144, passed February 11, 2026, effective March 13, 2026): single-occupant restrooms in places of public accommodation may not be restricted to a sex or gender identity and must carry signs saying they are for any person; existing single-gender signs must be replaced on or before January 1, 2027; enforcement starts July 1, 2027; no physical changes are required. (2) Building Official Determination 16-02 (September 2016, revised August 2, 2024), the city's reading of the state code for multi-user all-gender restrooms: each toilet enclosed by full-height floor-to-ceiling partitions or walls, door bottom no more than 1 inch above the floor, door top at least 84 inches above the floor, jamb overlapping the door so nothing can be seen from outside, lock with an occupied/vacant indicator, separate ventilation for each toilet enclosure; urinals there must be enclosed the same way and don't count toward the required fixtures.",
+  "quote": "23.01.071 Nondiscrimination Requirements for Single-Occupant Restrooms in Places of Public Accommodation. (Added by Ordinance 192144, effective March 13, 2026.) A. Definitions. 1. Place of public accommodation has the same meaning as defined in ORS 659A.400. 2. Appropriate signage means signage that indicates that single-occupant restrooms are not restricted to a single gender. [...] 3. Single-occupant restroom means a fully enclosed, lockable restroom with one toilet, designed for use by one individual at a time. [...] B. Single-occupant restrooms in places of public accommodation may not be restricted to a specific sex or gender identity and must use appropriate signage to indicate such facilities are designated for use by any person, regardless of sex or gender identity. C. Entities covered by this Chapter 23.01 must comply on or before January 1, 2027, by replacing existing signs on the exterior of single-occupant restrooms restricting use to a single gender with signs indicating that they are for use by all users. Enforcement will commence on July 1, 2027. D. Notwithstanding Section 23.01.080, this Section does not create a private right of action [...]",
+  "url": "https://www.portland.gov/code/23/01",
+  "second_quote": "BOD 16-02: All-Gender Restrooms. [...] QUESTION 1: OSSC Chapter 12 requires each water closet to have a separate compartment with \"walls or partitions and a door enclosing the fixtures to ensure privacy.\" What does this mean for all-gender facilities? RESPONSE 1: Each water closet must be enclosed with full height floor to ceiling partitions or walls. The bottom edge of the door shall be located less than or equal to 1\" off the finished floor. The top edge of the door must extend at least 84\" above the finished floor but may leave up to a 4\" gap above that height. The door jamb must overlap the door in the closed position for the full height of the door to prevent any visual observation from the outside of the partition enclosure. Each water closet must have locking hardware that functions with an indicator showing whether it is occupied or vacant. Each water closet must have separate ventilation. QUESTION 2: Are urinals allowed in all-gender restrooms? RESPONSE 2: Urinals may be provided in multi-user all-gender restrooms, but do not count towards the total required number of plumbing fixtures. Each urinal within multi-user all-gender restrooms must be enclosed in a separate compartment meeting the standards outlined in Question 1 with the exception that a urinal may share a compartment with a single water closet. [...] September 2016 Implementation. Aug 2, 2024 Revised from Code Guide OSSC/29/#1 to building official determination format. Updated to reflect code change and FAQ's.",
+  "second_url": "https://www.portland.gov/ppd/codes-rules-and-guides/bod-16-02-all-gender-restrooms",
+  "third_quote": "Ordinance 192144 [...] This ordinance does not mandate the creation of any single-user restrooms or any physical changes to existing restroom facilities. [...] Failure to comply may be reported to Code Review via 311. Portland Permitting and Development will investigate and take further action to enforce this Code for any noncompliant businesses. [...] Passed as amended by Council February 11, 2026",
+  "third_url": "https://www.portland.gov/council/documents/ordinance/passed/192144",
+  "note": "City-owned buildings also follow the city's all-user restroom policy (Resolution 37175 of December 17, 2015, described in the findings of Ordinance 192144; the resolution and Administrative Rule ADM 13.03 were not opened). City Code 23.01.040 C.3 also requires 'reasonable and appropriate accommodations permitting all persons access to restrooms consistent with their expressed gender'.",
+  "confidence": "high"
+ },
+ "sales_tax": {
+  "combined": 0.0,
+  "parts": [
+   {
+    "name": "state",
+    "rate": 0.0
+   },
+   {
+    "name": "Multnomah County",
+    "rate": 0.0
+   },
+   {
+    "name": "city",
+    "rate": 0.0
+   }
+  ],
+  "effective": null,
+  "scheduled_change": null,
+  "url": "https://www.oregon.gov/dor/programs/businesses/Pages/sales-tax.aspx",
+  "quote": "Oregon doesn't have a general sales or use/transaction tax. However, Oregon does have a vehicle use tax that applies to new vehicles purchased outside of the state. [...] The Wayfair decision doesn't affect Oregonians purchasing goods or services online because Oregon doesn't have a general sales tax.",
+  "note": "Re-read on the Department of Revenue page on 2026-11-24. The zero rates for the county and city rest on the Department's statement that Oregon has no general sales tax; no separate county or city page was read. Business taxes on the seller (Oregon Corporate Activity Tax, Portland and Multnomah County business taxes) are not sales taxes charged to the buyer and were not researched.",
+  "confidence": "high"
+ },
+ "public_wage": {
+  "county": "Multnomah",
+  "basis": "state prevailing wage",
+  "classification": "CARPENTER, Group 1, Zone A (projects within 30 miles of the city hall of a reference city; Portland is a reference city)",
+  "basic_hourly": 56.69,
+  "fringe": 17.81,
+  "determination": "Oregon Bureau of Labor and Industries, Prevailing Wage Rates for Public Works Contracts, rate book 'Rates Effective September 3, 2026', with the amendment effective October 5, 2026 (which doesn't change the carpenter rates)",
+  "date": "2026-09-03",
+  "url": "https://www.oregon.gov/boli/workers/Prevailing%20Wage%20Rate%20Books/BOLI%20September%203,%202026%20Prevailing%20Wage%20Rate%20Book.pdf",
+  "amendment_url": "https://www.oregon.gov/boli/workers/Prevailing%20Wage%20Rate%20Books/BOLI%20October%205%2C%202026%20Prevailing%20Wage%20Rate%20Amendment.pdf",
+  "quote": "Rates Effective September 3, 2026 [...] Occupation and Premium/Differential Pay | Base Rate / Fringe Rate. CARPENTER. Zone A (Base Rates): Group 1 56.69 17.81; Group 2 56.86 17.81; Group 3 (Millwrights) 64.82 23.63; Group 4 Eliminated; Group 5 (Bridge & Highway) 58.06 17.81; Group 6 (Piledrivers) 58.06 17.81. Zone Differential for Carpenters - Add to Zone A Base Rate: Zone B: 1.25 per hour [...] Zone A: Projects located within 30 miles of the respective city hall of the cities listed below. [...] Reference Cities for Group 1 and 2 Carpenters: [...] Portland [...] Vancouver",
+  "region_quote": "ORS 279C.800 (3) 'Locality' means the following district in which the public works, or the major portion of the public works, is to be performed: [...] (b) District 2, composed of Clackamas, Multnomah and Washington Counties;",
+  "region_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors279C.html",
+  "city_rule": null,
+  "city_rule_note": "Not looked for.",
+  "note": "The current rate book no longer lists carpenters by region: one statewide carpenter rate applies, with zone pay added by distance from a reference city's city hall. Portland is a reference city, so a job in Portland is Zone A (base rate). Multnomah County is in District 2 under ORS 279C.800. The July 5, 2026 book shows the same carpenter figures; BOLI reissued the book with 'Rates Effective September 3, 2026' (the visible difference in the text is a line about satellite locations), and the October 5, 2026 amendment covers ironworkers, limited energy electricians and line constructors only. The list of books on BOLI's rates page loads by script and could not be read, so which book BOLI shows as current was found through search, not on the page. Group 1 is the general carpenter group; BOLI's Definitions of Covered Occupations (October 5, 2024) doesn't name toilet partitions.",
+  "confidence": "medium"
+ },
+ "contractor": {
+  "quote": "We sell permits in line with State of Oregon requirements. These are set up by the Oregon Construction Contractors Board (CCB), and the State of Oregon Building Codes Division (BCD). They regulate and license the activities of construction contractors in our state. All contractors using the Permits Online system must have a CCB License.",
+  "url": "https://www.portland.gov/ppd/development-permit-processes/contractor-license-requirements",
+  "note": "Re-read 2026-11-24; matches the local-rules entry."
+ },
+ "page": {
+  "meta": "Commercial bathroom partitions delivered to Portland job sites. Price your restroom, pick a material and see the Oregon rules Portland enforces.",
+  "lead": "Commercial bathroom partitions for Portland office buildings, schools, brewpubs and warehouses, shipped by freight to your job site.",
+  "stall_bullet": "- **How many stalls:** Oregon's building rules set the number of toilets by how many people use the building, and they are the same in every Oregon city. Portland enforces them without changes of its own. The table below shows what that means.",
+  "extra_rule_bullets": [
+   "- **Shared all-gender rooms in Portland:** Portland's building official has set out what the state's privacy rule means in a shared all-gender restroom. Each toilet must be enclosed from floor to ceiling. The door may start no more than 1 inch above the floor and must reach at least 84 inches above it, the frame must overlap the door so nobody can see in, and the lock must show whether the stall is occupied. Each enclosure needs its own ventilation. A urinal in that room needs the same kind of enclosure. Tell us in your quote request if the room is all-gender."
+  ],
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to everyone, and its door needs a privacy lock that shows when the room is occupied. A Portland ordinance also covers existing one-person restrooms in places open to the public: signs that limit the room to one gender must be replaced by January 1, 2027, and the city enforces the rule from July 1, 2027. Oregon lets a building meet its toilet count with shared all-gender rooms or with separate men's and women's rooms. Either way, each toilet sits in its own compartment with a door and each urinal has a privacy screen. Oregon law bars discrimination by sex or gender identity in places open to the public and in public schools.",
+  "permit_bullet": "- **Permits:** Portland Permitting & Development issues building permits in Portland. Its list of commercial work that needs a permit includes tenant improvements, disabled access upgrades and moving or building walls, non-bearing partitions included. Oregon's building rules exempt finish work such as painting, tiling and cabinets, and movable partitions no taller than 5 feet 9 inches, such as office cubicles. Neither list names toilet partitions. Ask Portland Permitting & Development (503-823-7300) whether your replacement needs one. You don't need a permit to buy partitions.",
+  "confirm_office": "Portland Permitting & Development",
+  "stalls_after": "These are minimums, and the men's figures show toilets only, before any are swapped for urinals. An office with 50 people or fewer, or any other space with 30 or fewer, can use a single one-person restroom instead. Where a shared restroom is built for all genders, the count is taken on everyone together rather than half and half, and in Portland urinals in that room don't count toward it.",
+  "capacity": "To find your building's capacity, Oregon's building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. For an office's toilet count, Portland counts conference rooms, break rooms and shared work areas larger than 750 square feet at one person per 15 square feet.",
+  "install_rule": "Portland has no city contractor license. Contractors who apply for permits through the city's online system must hold an Oregon Construction Contractors Board license, and Oregon requires that license, with a commercial endorsement, for commercial construction work, specialty trades included. Ask the Construction Contractors Board which endorsement fits the job. You don't need a permit to buy partitions.",
+  "faq_install_extra": "The contractor needs an Oregon Construction Contractors Board license with a commercial endorsement.",
+  "public_jobs_bullet": "- **Public jobs:** on public projects over $50,000, school district and city buildings included, Oregon law requires at least the wage the state's Bureau of Labor and Industries sets for each trade. For a carpenter on a job in Portland that is $56.69 an hour plus $17.81 in benefits.",
+  "sales_tax_bullet": "- **Sales tax:** none in Portland. Oregon has no general sales tax or use tax.",
+  "buyers_extra": "- **Brewpubs, taprooms and food halls:** HDPE or phenolic that takes wet floors and heavy evening traffic, with full-height stalls where the room is shared by all genders.",
+  "sources": [
+   "- Codes enforced in Portland: Portland City Code, [Chapter 24.10, Administration and Enforcement](https://www.portland.gov/code/24/10) (Section 24.10.040, which adopts the Oregon Structural Specialty Code and the Oregon Plumbing Specialty Code, and Section 24.10.050 on Portland Permitting & Development) and [Title 25, Plumbing Regulations](https://www.portland.gov/code/25/all) (Section 25.01.020); editions and dates from the Oregon Building Codes Division, [Commercial structures code program](https://www.oregon.gov/bcd/codes-stand/Pages/commercial-structures.aspx) and [Plumbing code program](https://www.oregon.gov/bcd/codes-stand/Pages/plumbing.aspx). Checked 2026-11-24.",
+   "- Toilet counts are the state's in Portland: Portland City Code [Title 24](https://www.portland.gov/code/24/all) and [Title 25](https://www.portland.gov/code/25/all), which hold no change to them; Portland Permitting & Development, [Building Code Guide 22-10: Office Spaces](https://www.portland.gov/ppd/code-policy/commercial-building-code-guides/bcg-22-10-office-space-code-guide) (applies OSSC Section 2902.1; conference rooms, breakrooms and flexible workspaces over 750 square feet at 1 person per 15 square feet for fixture counts). Checked 2026-11-24.",
+   "- Shared all-gender restrooms in Portland: Portland Permitting & Development, [Building Official Determination 16-02: All-Gender Restrooms](https://www.portland.gov/ppd/codes-rules-and-guides/bod-16-02-all-gender-restrooms) (implemented September 2016, revised August 2, 2024). Checked 2026-11-24.",
+   "- Signs on one-person restrooms in Portland: Portland City Code, [Section 23.01.071, Nondiscrimination Requirements for Single-Occupant Restrooms in Places of Public Accommodation](https://www.portland.gov/code/23/01), added by [Ordinance 192144](https://www.portland.gov/council/documents/ordinance/passed/192144) (passed February 11, 2026, effective March 13, 2026). Checked 2026-11-24.",
+   "- Permits: Portland Permitting & Development, [Do you need a permit for your commercial project?](https://www.portland.gov/ppd/commercial-permitting/do-you-need-permit/commercial-permits) (work that needs a permit; phone 503-823-7300); Portland City Code [Section 24.10.070](https://www.portland.gov/code/24/10); work exempt from a permit: 2025 Oregon Structural Specialty Code, Section 105.2, read on a secondary copy, [UpCodes, Oregon Structural Specialty Code 2025, Chapter 1](https://up.codes/viewer/oregon/ibc-2024/chapter/1/scope-and-administration). Checked 2026-11-24.",
+   "- Carpenter rate on public jobs in Portland: Oregon Bureau of Labor and Industries, [Prevailing Wage Rates for Public Works Contracts, rates effective September 3, 2026](https://www.oregon.gov/boli/workers/Prevailing%20Wage%20Rate%20Books/BOLI%20September%203,%202026%20Prevailing%20Wage%20Rate%20Book.pdf) (Carpenter, Group 1, Zone A: within 30 miles of Portland City Hall) and the [amendment effective October 5, 2026](https://www.oregon.gov/boli/workers/Prevailing%20Wage%20Rate%20Books/BOLI%20October%205%2C%202026%20Prevailing%20Wage%20Rate%20Amendment.pdf), which leaves the carpenter rates unchanged; Multnomah County is in District 2 under [ORS 279C.800](https://www.oregonlegislature.gov/bills_laws/ors/ors279C.html). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; 2025 Oregon Structural Specialty Code (based on the 2024 International Building Code, effective October 1, 2025, mandatory April 1, 2026), Chapter 11 with ICC A117.1-2017 with Supplement 1, and 2026 Oregon Plumbing Specialty Code (based on the 2024 Uniform Plumbing Code, effective October 1, 2026), adopted by reference in Portland City Code Sections 24.10.040 and 25.01.020 and enforced by Portland Permitting & Development; Portland City Code Section 23.01.071 (single-occupant restroom signs, effective March 13, 2026); Building Official Determination 16-02 (all-gender restrooms); NFPA 286 for HDPE.",
+  "notes": [
+   "To confirm by phone before launch: whether replacing or adding anchored toilet partitions in an existing commercial restroom needs a Portland building permit (Portland Permitting & Development, 503-823-7300, or a free 15-minute appointment). The city's list of work needing a permit names tenant improvements and disabled access upgrades; the state's exempt list names neither toilet partitions nor anything fixed.",
+   "Building Official Determination 16-02 was last revised on August 2, 2024, before the 2025 Oregon Structural Specialty Code took effect; it is still on the city's list of determinations. Confirm with Portland Permitting & Development that it stands under the 2025 code, and how it reads the door height ('at least 84 inches above the finished floor but may leave up to a 4 inch gap above that height').",
+   "The all-gender bullet matters for quoting: a shared all-gender room in Portland needs full-height, no-sightline enclosures with occupancy-indicator locks, not standard partitions. Check with Abe which product lines meet it before the page promises anything.",
+   "The exempt-work list (Section 105.2 of the 2025 Oregon Structural Specialty Code) was read on UpCodes, not on the official ICC-hosted copy.",
+   "Carpenter rate: BOLI's page lists its rate books by script, so the current book was found through search. The July 5 and September 3, 2026 books show the same carpenter figures and the October 5, 2026 amendment doesn't touch them. BOLI normally publishes again on January 5: recheck then. The rate is statewide for Carpenter Group 1 with zone pay beyond 30 miles of a reference city's city hall; the current book has no separate regional carpenter rate.",
+   "The buyers bullet on brewpubs and the four building types in the lead are editorial, not sourced.",
+   "Sales tax: Oregon has none, so the section's heading and closing sentence still mention sales tax; the page says there is none. How Next Partitions itself is taxed on Oregon sales (Corporate Activity Tax, Portland and Multnomah County business taxes) is a question for Abe's accountant.",
+   "City-owned buildings follow a separate city all-user restroom policy (Resolution 37175, 2015); it was not opened and is left out of the page."
+  ]
+ },
+ "sources_read": [
+  {
+   "url": "https://www.portland.gov/code/24/10",
+   "official": true
+  },
+  {
+   "url": "https://www.portland.gov/code/24/all",
+   "official": true
+  },
+  {
+   "url": "https://www.portland.gov/code/25",
+   "official": true
+  },
+  {
+   "url": "https://www.portland.gov/code/25/all",
+   "official": true
+  },
+  {
+   "url": "https://www.portland.gov/code/23/01",
+   "official": true
+  },
+  {
+   "url": "https://www.portland.gov/council/documents/ordinance/passed/192144",
+   "official": true
+  },
+  {
+   "url": "https://www.portland.gov/ppd/codes-rules-and-guides/bod-16-02-all-gender-restrooms",
+   "official": true
+  },
+  {
+   "url": "https://www.portland.gov/ppd/code-policy/documents/bod-16-02-all-gender-restrooms/download",
+   "official": true
+  },
+  {
+   "url": "https://www.portland.gov/ppd/code-policy/commercial-building-code-guides/bcg-22-10-office-space-code-guide",
+   "official": true
+  },
+  {
+   "url": "https://www.portland.gov/ppd/code-policy/building-official-determinations",
+   "official": true
+  },
+  {
+   "url": "https://www.portland.gov/bds/codes-rules-and-guides/commercial-building-code-guides",
+   "official": true
+  },
+  {
+   "url": "https://www.portland.gov/bds/codes-rules-and-guides/commercial-plumbing-code-guides",
+   "official": true
+  },
+  {
+   "url": "https://www.portland.gov/ppd/code-policy/codes-rules-and-guides",
+   "official": true
+  },
+  {
+   "url": "https://www.portland.gov/ppd/commercial-permitting/do-you-need-permit/commercial-permits",
+   "official": true
+  },
+  {
+   "url": "https://www.portland.gov/ppd/commercial-permitting/changing-commercial-space/project-guide",
+   "official": true
+  },
+  {
+   "url": "https://www.portland.gov/ppd/development-permit-processes/contractor-license-requirements",
+   "official": true
+  },
+  {
+   "url": "https://www.oregon.gov/bcd/codes-stand/Pages/commercial-structures.aspx",
+   "official": true
+  },
+  {
+   "url": "https://www.oregon.gov/bcd/codes-stand/Pages/plumbing.aspx",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/1/scope-and-administration",
+   "official": false
+  },
+  {
+   "url": "https://www.oregon.gov/boli/employers/Pages/prevailing-wage-rates.aspx",
+   "official": true
+  },
+  {
+   "url": "https://www.oregon.gov/boli/workers/Prevailing%20Wage%20Rate%20Books/BOLI%20September%203,%202026%20Prevailing%20Wage%20Rate%20Book.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.oregon.gov/boli/workers/Prevailing%20Wage%20Rate%20Books/BOLI%20July%205,%202026%20Prevailing%20Wage%20Rate%20Book.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.oregon.gov/boli/workers/Prevailing%20Wage%20Rate%20Books/BOLI%20October%205%2C%202026%20Prevailing%20Wage%20Rate%20Amendment.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.oregon.gov/boli/employers/Documents/Definitions%20of%20Covered%20Occupations%20for%20Public%20Work%20Contracts%20in%20Oregon%20-%20October%205%2c%202024.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors279C.html",
+   "official": true
+  },
+  {
+   "url": "https://www.oregon.gov/dor/programs/businesses/Pages/sales-tax.aspx",
+   "official": true
+  }
+ ],
+ "not_read": [
+  "The list of rate books on BOLI's prevailing wage rates page (loaded by script)",
+  "Resolution 37175 and Administrative Rule ADM 13.03 (all-user restrooms in city-owned buildings)",
+  "The official ICC-hosted 2025 OSSC (codes.iccsafe.org/content/ORSSC2025P1, script-rendered); Section 105.2 was read on UpCodes",
+  "Portland City Code Section 24.10.095 (minor structural labels) in detail"
+ ],
+ "searches_used": 3,
+ "to_confirm": [
+  "Whether replacing or adding anchored toilet partitions in an existing commercial restroom needs a Portland building permit: Portland Permitting & Development, 503-823-7300.",
+  "That Building Official Determination 16-02 (full-height enclosures in shared all-gender restrooms, revised August 2, 2024) still applies under the 2025 Oregon Structural Specialty Code: Portland Permitting & Development.",
+  "Which rate book BOLI lists as current, and the January 5, 2027 update: BOLI Prevailing Wage Rate unit, 971-245-3844.",
+  "Any City of Portland wage rule on city contracts was not looked for.",
+  "Whether the 2026 Oregon Plumbing Specialty Code has a phase-in period (none shown on the Building Codes Division page): Oregon Building Codes Division."
+ ]
+}
