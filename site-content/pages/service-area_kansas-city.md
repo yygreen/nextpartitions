@@ -100,7 +100,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## Nearby cities we deliver to
 
-Overland Park, Olathe, Independence, Lee''s Summit, Shawnee, Blue Springs, Lenexa and Leavenworth, and every other ZIP code in the Kansas City area. We ship to all 50 states: see the full [service area](/service-area).
+Overland Park, Olathe, Independence, Lee's Summit, Shawnee, Blue Springs, Lenexa and Leavenworth, and every other ZIP code in the Kansas City area. We ship to all 50 states: see the full [service area](/service-area).
 
 ## Get a quote
 

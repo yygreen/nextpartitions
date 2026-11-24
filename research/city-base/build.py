@@ -28,7 +28,7 @@ for f in sorted(os.listdir(mig)):
     for m in re.finditer(r"\('([a-z-]+)', '([^']+)', '([^']+)', '([A-Z]{2})', '([a-z-]+)', (-?[\d.]+), (-?[\d.]+), '\{([^}]*)\}'\)", open(os.path.join(mig, f)).read()):
         s, name, short, st, sslug, lat, lng, cities = m.groups()
         areas[s] = dict(slug=s, name=name, city=short, state=st, state_slug=sslug, lat=float(lat), lng=float(lng),
-                        cities=[c.strip('"') for c in cities.split(',')])
+                        cities=[c.strip('"').replace("''", "'") for c in cities.split(',')])
 areas['dallas'] = dict(slug='dallas', name='Dallas', city='Dallas', state='TX', state_slug='texas', lat=32.7936, lng=-96.7662,
                        cities=['Dallas', 'Plano', 'Irving', 'Garland', 'Frisco', 'McKinney', 'Grand Prairie', 'Carrollton', 'Lewisville'])
 areas['fort-worth']['cities'] = ['Fort Worth', 'Arlington', 'Mansfield', 'North Richland Hills', 'Flower Mound', 'Denton']
