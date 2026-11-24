@@ -1,0 +1,344 @@
+{
+ "slug": "seattle",
+ "city": "Seattle",
+ "checked": "2026-11-24",
+ "governing_table": {
+  "code": "2021 Seattle Building Code (2021 International Building Code with Washington State and Seattle amendments), Chapter 29",
+  "edition": "2021",
+  "table": "Table 2902.1, Minimum Number of Required Plumbing Fixtures (the building code's table, not the plumbing code's Table 422.1)",
+  "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter29.pdf",
+  "quote": "Plumbing fixtures shall be provided in the minimum number as shown in Table 2902.1 based on the actual use of the building or space.",
+  "plumbing_code_defers": {
+   "text": "The 2021 Seattle Plumbing Code and the state rule it is built on (WAC 51-56-0400) do not adopt UPC Table 422.1 and send the reader to Building Code Chapter 29.",
+   "quote": "422.0 Minimum Number of Required Fixtures. For minimum number of plumbing fixtures required, see Building Code Chapter 29 and Table 2902.1.",
+   "second_quote": "Sections 422.1 through 422.5 and Table 422.1 are not adopted.",
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-56-0400",
+   "second_url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/PlumbingCode/2021SeattlePlumbingCode.pdf",
+   "note": "Both sentences read on the state rule page (WAC 51-56-0400, effective 3/15/24) and, marked [W], in the 2021 Seattle Plumbing Code PDF published by SDCI."
+  },
+  "state_table": {
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-2902",
+   "note": "WAC 51-50-2902 (effective 3/15/24 and 3/16/24) carries the Washington version of Section 2902 and Table 2902.1. WAC 51-50-2900 itself now reads 'Reserved.'; the content sits in 51-50-2901 and 51-50-2902."
+  },
+  "enforcement_quote": "Note: The Director of Public Health—Seattle and King County is authorized to enforce this chapter."
+ },
+ "amendments": {
+  "found": true,
+  "text": "Seattle's Chapter 29 is the Washington State version of IBC Chapter 29 with Seattle edits; Table 2902.1 is marked [W][S][P]. The water closet and lavatory ratios for business, restaurant and educational occupancies are identical in the Seattle table and in WAC 51-50-2902. State changes against the model 2021 IBC that show in the Seattle text: educational male water closets 1 per 35 instead of 1 per 50 (Seattle prints '1 per ((50)) 35'), educational lavatories split by sex (1 per 85 male, 1 per 50 female), the Group E occupant count for fixtures (footnote e), the urinal substitution rule (2902.1.1.2), the 30-or-fewer exception for drinking and dining spaces, all-gender facilities (2902.2.2), and removal of the drinking fountain and 'other' columns from the table. Seattle's own edits are small: the references to the International Plumbing Code become the Uniform Plumbing Code, Section 2902.1 says 'based on the actual use of the building or space' and gains three exceptions (not normally occupied buildings; unoccupied storage and mechanical spaces; entry lobbies of Group B office and Group R-2 buildings), the two separate-facilities exceptions are numbered differently (the dining exception is No. 7 in Seattle, No. 5 in the state rule), and Section 2902.10 [S] adds a clear-space rule for the water closet. Section 2902.1.1 (halving and rounding) is unamended model text, printed in the Seattle code; the state rule adds only subsections 2902.1.1.1 to 2902.1.1.3.",
+  "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter29.pdf",
+  "quote": "[S] 2902.10 Water closet space requirements. The water closet stool in all occupancies shall be located in a clear space not less than 30 inches (762 mm) in width, with a clear space in front of the stool of not less than 24 inches (610 mm).",
+  "state_url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-2902",
+  "state_quote": "Educational facilities | 1 per 35 | 1 per 25 | 1 per 85 | 1 per 50",
+  "note": "SDCI's '2021 SBC Corrected Code Pages' PDF was downloaded and searched: it contains no Chapter 29 pages."
+ },
+ "occupancies": {
+  "office": {
+   "row_label": "No. 2, Business, B: Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial, and similar uses",
+   "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+   "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+   "urinals": "No urinal column and no required urinals. Urinals are optional and may replace male water closets under Section 2902.1.1.2.",
+   "lavatories": "1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80 (same for male and female)",
+   "quote": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50 [water closets] ... 1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80 [lavatories]",
+   "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter29.pdf",
+   "state_url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-2902",
+   "note": "One cell spans the male and female columns, so the ratio applies to each sex's half of the occupant load. Seattle strikes 'ambulatory care' from the row description."
+  },
+  "restaurant": {
+   "row_label": "No. 1, Assembly, A-2 (footnote d): Restaurants, banquet halls and food courts",
+   "wc_male": "1 per 75",
+   "wc_female": "1 per 75",
+   "urinals": "No urinal column and no required urinals. Urinals are optional and may replace male water closets under Section 2902.1.1.2.",
+   "lavatories": "1 per 200 (same for male and female)",
+   "quote": "Restaurants, banquet halls and food courts | 1 per 75 | 1 per 75 | 1 per 200",
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-2902",
+   "city_url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter29.pdf",
+   "footnote_d": "The occupant load for seasonal outdoor seating and entertainment areas shall be included when determining the minimum number of facilities required.",
+   "note": "Quote is the row as it reads on the state rule page; the Seattle PDF row carries the same three figures. Nightclubs, bars and taverns are a different A-2 row (1 per 40 each sex, lavatories 1 per 75)."
+  },
+  "school": {
+   "row_label": "No. 3, Educational, E (footnote e): Educational facilities",
+   "wc_male": "1 per 35",
+   "wc_female": "1 per 25",
+   "urinals": "No urinal column and no required urinals. Urinals are optional and may replace male water closets under Section 2902.1.1.2.",
+   "lavatories": "Male 1 per 85; female 1 per 50",
+   "quote": "Educational facilities | 1 per 35 | 1 per 25 | 1 per 85 | 1 per 50",
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-2902",
+   "city_url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter29.pdf",
+   "city_quote": "1 per ((50)) 35 ... 1 per 25 ... 1 per 85 ... 1 per 50",
+   "footnote_e": "For Group E occupancies: the number of occupants shall be determined by using a calculation of 100 square feet gross building area per student for the minimum number of plumbing fixtures.",
+   "note": "One row for all Group E; the table does not distinguish elementary from secondary schools. Child day care is a separate row (I-4, 1 per 15)."
+  }
+ },
+ "rules": {
+  "sex_split": {
+   "text": "The total occupant load is divided in half, unless approved statistical data shows another split. A multi-user facility designed for all genders is counted on 100% of the occupant load.",
+   "quote": "To determine the occupant load of each sex, the total occupant load shall be divided in half.",
+   "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter29.pdf",
+   "section": "2902.1.1",
+   "exceptions_quote": "The total occupant load shall not be required to be divided in half where approved statistical data indicates a distribution of the sexes of other than 50 percent of each sex. ... Where multiple-user facilities are designed to serve all genders, the minimum fixture count shall be calculated 100 percent, based on total occupant load."
+  },
+  "rounding": {
+   "text": "Fractions round up to the next whole fixture. In a building with several occupancies, the fractions are added first and then rounded up.",
+   "quote": "Fractional numbers resulting from applying the fixture ratios of Table 2902.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number.",
+   "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter29.pdf",
+   "section": "2902.1.1",
+   "second_quote": "The fixtures shown are based on one fixture being the minimum required for the number of persons indicated or any fraction of the number of persons indicated.",
+   "second_source": "Table 2902.1 footnote a"
+  },
+  "urinal_substitution": {
+   "text": "Urinals are never required. Where they are installed in a men's room, each urinal may take the place of one water closet, but the water closets may not drop below a quarter of the number the table gives. The same rule applies in all-gender rooms.",
+   "quote": "Where urinals in men’s facilities are provided, one water closet less than the number specified may be provided for each urinal installed, except the number of water closets in such cases shall not be reduced to less than one-quarter (25%) of the minimum specified.",
+   "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter29.pdf",
+   "section": "2902.1.1.2 [W]",
+   "state_url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-2902",
+   "note": "This is a Washington amendment; the model IBC/IPC limit (67% in assembly and educational, 50% elsewhere) does not apply. Seattle strikes the table header's reference to IPC Section 424.2."
+  },
+  "small_occupancy_exception": {
+   "text": "Separate men's and women's facilities are not required when the total occupant load (employees and customers) is 15 or fewer; in business occupancies with 25 or fewer; in spaces mainly for drinking or dining with 30 or fewer; in mercantile with 100 or fewer; or where all-gender facilities are provided.",
+   "quote": "2. Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. ... 4. Separate facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer. ... 7. Separate facilities shall not be required in spaces primarily used for drinking or dining with a total occupant load, including both employees and customers, of 30 or fewer.",
+   "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter29.pdf",
+   "section": "2902.2 exceptions (Seattle numbering; the dining exception is No. 5 in WAC 51-50-2902)",
+   "note": "The code has no school-specific exception. Section 2902.2.1 also lets two family or assisted-use toilet rooms serve as the separate facilities where each sex needs only one water closet."
+  },
+  "occupant_load": {
+   "text": "The occupant load comes from the building code's own Table 1004.5 (floor area divided by the factor for the use): business areas 150 sq ft gross per occupant; restaurant seating (assembly without fixed seats, tables and chairs) 15 sq ft net; commercial kitchens 200 sq ft gross. Schools are the exception: for plumbing fixtures the count is the gross building area divided by 100 sq ft per student (Table 2902.1 footnote e), not the 20 sq ft net classroom factor.",
+   "quote": "The number of occupants shall be determined by this code.",
+   "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter29.pdf",
+   "section": "2902.1 and Table 2902.1 footnotes a and e",
+   "second_quote": "For areas without fixed seating, the occupant load shall be not less than that number determined by dividing the floor area under consideration by the occupant load factor assigned to the function of the space as set forth in Table 1004.5.",
+   "second_url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter10.pdf",
+   "factors_quote": "Unconcentrated (tables and chairs) 15 net ... Business areas 150 gross ... Classroom area 20 net ... Kitchens, commercial 200 gross",
+   "school_quote": "For Group E occupancies: the number of occupants shall be determined by using a calculation of 100 square feet gross building area per student for the minimum number of plumbing fixtures."
+  }
+ },
+ "worked_examples": [
+  {
+   "occupancy": "office",
+   "occupants": 50,
+   "male": 25,
+   "female": 25,
+   "wc_male": 1,
+   "urinals_male_min": 0,
+   "urinals_male_max_substituted": 0,
+   "wc_male_min_after_urinal_substitution": 1,
+   "wc_female": 1,
+   "lavatories_male": 1,
+   "lavatories_female": 1,
+   "how": "50/2 = 25 per sex. Water closets, each sex: 25/25 = 1, rounded up to 1. Lavatories, each sex: 25/40 = 0.62, rounded up to 1. Urinals: none required. Section 2902.1.1.2 lets each urinal replace one male water closet as long as the water closets stay at or above 25% of 1 = 0.25, so at least 1 male water closet and at most 0 urinals counted in place of water closets (our reading of the 25% floor, rounded up to a whole fixture)."
+  },
+  {
+   "occupancy": "office",
+   "occupants": 100,
+   "male": 50,
+   "female": 50,
+   "wc_male": 2,
+   "urinals_male_min": 0,
+   "urinals_male_max_substituted": 1,
+   "wc_male_min_after_urinal_substitution": 1,
+   "wc_female": 2,
+   "lavatories_male": 2,
+   "lavatories_female": 2,
+   "how": "100/2 = 50 per sex. Water closets, each sex: 50/25 = 2, rounded up to 2. Lavatories, each sex: 50/40 = 1.25, rounded up to 2. Urinals: none required. Section 2902.1.1.2 lets each urinal replace one male water closet as long as the water closets stay at or above 25% of 2 = 0.50, so at least 1 male water closet and at most 1 urinal counted in place of water closets (our reading of the 25% floor, rounded up to a whole fixture)."
+  },
+  {
+   "occupancy": "office",
+   "occupants": 200,
+   "male": 100,
+   "female": 100,
+   "wc_male": 3,
+   "urinals_male_min": 0,
+   "urinals_male_max_substituted": 2,
+   "wc_male_min_after_urinal_substitution": 1,
+   "wc_female": 3,
+   "lavatories_male": 3,
+   "lavatories_female": 3,
+   "how": "200/2 = 100 per sex. Water closets, each sex: 50/25 + (100-50)/50 = 3, rounded up to 3. Lavatories, each sex: 80/40 + (100-80)/80 = 2.25, rounded up to 3. Urinals: none required. Section 2902.1.1.2 lets each urinal replace one male water closet as long as the water closets stay at or above 25% of 3 = 0.75, so at least 1 male water closet and at most 2 urinals counted in place of water closets (our reading of the 25% floor, rounded up to a whole fixture)."
+  },
+  {
+   "occupancy": "office",
+   "occupants": 400,
+   "male": 200,
+   "female": 200,
+   "wc_male": 5,
+   "urinals_male_min": 0,
+   "urinals_male_max_substituted": 3,
+   "wc_male_min_after_urinal_substitution": 2,
+   "wc_female": 5,
+   "lavatories_male": 4,
+   "lavatories_female": 4,
+   "how": "400/2 = 200 per sex. Water closets, each sex: 50/25 + (200-50)/50 = 5, rounded up to 5. Lavatories, each sex: 80/40 + (200-80)/80 = 3.50, rounded up to 4. Urinals: none required. Section 2902.1.1.2 lets each urinal replace one male water closet as long as the water closets stay at or above 25% of 5 = 1.25, so at least 2 male water closets and at most 3 urinals counted in place of water closets (our reading of the 25% floor, rounded up to a whole fixture)."
+  },
+  {
+   "occupancy": "restaurant",
+   "occupants": 50,
+   "male": 25,
+   "female": 25,
+   "wc_male": 1,
+   "urinals_male_min": 0,
+   "urinals_male_max_substituted": 0,
+   "wc_male_min_after_urinal_substitution": 1,
+   "wc_female": 1,
+   "lavatories_male": 1,
+   "lavatories_female": 1,
+   "how": "50/2 = 25 per sex. Water closets, each sex: 25/75 = 0.33, rounded up to 1. Lavatories, each sex: 25/200 = 0.12, rounded up to 1. Urinals: none required. Section 2902.1.1.2 lets each urinal replace one male water closet as long as the water closets stay at or above 25% of 1 = 0.25, so at least 1 male water closet and at most 0 urinals counted in place of water closets (our reading of the 25% floor, rounded up to a whole fixture)."
+  },
+  {
+   "occupancy": "restaurant",
+   "occupants": 100,
+   "male": 50,
+   "female": 50,
+   "wc_male": 1,
+   "urinals_male_min": 0,
+   "urinals_male_max_substituted": 0,
+   "wc_male_min_after_urinal_substitution": 1,
+   "wc_female": 1,
+   "lavatories_male": 1,
+   "lavatories_female": 1,
+   "how": "100/2 = 50 per sex. Water closets, each sex: 50/75 = 0.67, rounded up to 1. Lavatories, each sex: 50/200 = 0.25, rounded up to 1. Urinals: none required. Section 2902.1.1.2 lets each urinal replace one male water closet as long as the water closets stay at or above 25% of 1 = 0.25, so at least 1 male water closet and at most 0 urinals counted in place of water closets (our reading of the 25% floor, rounded up to a whole fixture)."
+  },
+  {
+   "occupancy": "restaurant",
+   "occupants": 200,
+   "male": 100,
+   "female": 100,
+   "wc_male": 2,
+   "urinals_male_min": 0,
+   "urinals_male_max_substituted": 1,
+   "wc_male_min_after_urinal_substitution": 1,
+   "wc_female": 2,
+   "lavatories_male": 1,
+   "lavatories_female": 1,
+   "how": "200/2 = 100 per sex. Water closets, each sex: 100/75 = 1.33, rounded up to 2. Lavatories, each sex: 100/200 = 0.50, rounded up to 1. Urinals: none required. Section 2902.1.1.2 lets each urinal replace one male water closet as long as the water closets stay at or above 25% of 2 = 0.50, so at least 1 male water closet and at most 1 urinal counted in place of water closets (our reading of the 25% floor, rounded up to a whole fixture)."
+  },
+  {
+   "occupancy": "restaurant",
+   "occupants": 400,
+   "male": 200,
+   "female": 200,
+   "wc_male": 3,
+   "urinals_male_min": 0,
+   "urinals_male_max_substituted": 2,
+   "wc_male_min_after_urinal_substitution": 1,
+   "wc_female": 3,
+   "lavatories_male": 1,
+   "lavatories_female": 1,
+   "how": "400/2 = 200 per sex. Water closets, each sex: 200/75 = 2.67, rounded up to 3. Lavatories, each sex: 200/200 = 1, rounded up to 1. Urinals: none required. Section 2902.1.1.2 lets each urinal replace one male water closet as long as the water closets stay at or above 25% of 3 = 0.75, so at least 1 male water closet and at most 2 urinals counted in place of water closets (our reading of the 25% floor, rounded up to a whole fixture)."
+  },
+  {
+   "occupancy": "school",
+   "occupants": 50,
+   "male": 25,
+   "female": 25,
+   "wc_male": 1,
+   "urinals_male_min": 0,
+   "urinals_male_max_substituted": 0,
+   "wc_male_min_after_urinal_substitution": 1,
+   "wc_female": 1,
+   "lavatories_male": 1,
+   "lavatories_female": 1,
+   "how": "50/2 = 25 per sex. Male water closets: 25/35 = 0.71, rounded up to 1. Female: 25/25 = 1, rounded up to 1. Lavatories: male 25/85 = 0.29, rounded up to 1; female 25/50 = 0.50, rounded up to 1. For plumbing fixtures a Group E occupant count comes from footnote e: gross building area / 100 sq ft per student, so 50 occupants = 5,000 sq ft gross. Urinals: none required. Section 2902.1.1.2 lets each urinal replace one male water closet as long as the water closets stay at or above 25% of 1 = 0.25, so at least 1 male water closet and at most 0 urinals counted in place of water closets (our reading of the 25% floor, rounded up to a whole fixture)."
+  },
+  {
+   "occupancy": "school",
+   "occupants": 100,
+   "male": 50,
+   "female": 50,
+   "wc_male": 2,
+   "urinals_male_min": 0,
+   "urinals_male_max_substituted": 1,
+   "wc_male_min_after_urinal_substitution": 1,
+   "wc_female": 2,
+   "lavatories_male": 1,
+   "lavatories_female": 1,
+   "how": "100/2 = 50 per sex. Male water closets: 50/35 = 1.43, rounded up to 2. Female: 50/25 = 2, rounded up to 2. Lavatories: male 50/85 = 0.59, rounded up to 1; female 50/50 = 1, rounded up to 1. For plumbing fixtures a Group E occupant count comes from footnote e: gross building area / 100 sq ft per student, so 100 occupants = 10,000 sq ft gross. Urinals: none required. Section 2902.1.1.2 lets each urinal replace one male water closet as long as the water closets stay at or above 25% of 2 = 0.50, so at least 1 male water closet and at most 1 urinal counted in place of water closets (our reading of the 25% floor, rounded up to a whole fixture)."
+  },
+  {
+   "occupancy": "school",
+   "occupants": 200,
+   "male": 100,
+   "female": 100,
+   "wc_male": 3,
+   "urinals_male_min": 0,
+   "urinals_male_max_substituted": 2,
+   "wc_male_min_after_urinal_substitution": 1,
+   "wc_female": 4,
+   "lavatories_male": 2,
+   "lavatories_female": 2,
+   "how": "200/2 = 100 per sex. Male water closets: 100/35 = 2.86, rounded up to 3. Female: 100/25 = 4, rounded up to 4. Lavatories: male 100/85 = 1.18, rounded up to 2; female 100/50 = 2, rounded up to 2. For plumbing fixtures a Group E occupant count comes from footnote e: gross building area / 100 sq ft per student, so 200 occupants = 20,000 sq ft gross. Urinals: none required. Section 2902.1.1.2 lets each urinal replace one male water closet as long as the water closets stay at or above 25% of 3 = 0.75, so at least 1 male water closet and at most 2 urinals counted in place of water closets (our reading of the 25% floor, rounded up to a whole fixture)."
+  },
+  {
+   "occupancy": "school",
+   "occupants": 400,
+   "male": 200,
+   "female": 200,
+   "wc_male": 6,
+   "urinals_male_min": 0,
+   "urinals_male_max_substituted": 4,
+   "wc_male_min_after_urinal_substitution": 2,
+   "wc_female": 8,
+   "lavatories_male": 3,
+   "lavatories_female": 4,
+   "how": "400/2 = 200 per sex. Male water closets: 200/35 = 5.71, rounded up to 6. Female: 200/25 = 8, rounded up to 8. Lavatories: male 200/85 = 2.35, rounded up to 3; female 200/50 = 4, rounded up to 4. For plumbing fixtures a Group E occupant count comes from footnote e: gross building area / 100 sq ft per student, so 400 occupants = 40,000 sq ft gross. Urinals: none required. Section 2902.1.1.2 lets each urinal replace one male water closet as long as the water closets stay at or above 25% of 6 = 1.50, so at least 2 male water closets and at most 4 urinals counted in place of water closets (our reading of the 25% floor, rounded up to a whole fixture)."
+  }
+ ],
+ "confidence": "high",
+ "sources_read": [
+  {
+   "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter29.pdf",
+   "official": true,
+   "what": "2021 Seattle Building Code Chapter 29 (SDCI PDF), whole chapter"
+  },
+  {
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-2902",
+   "official": true,
+   "what": "WAC 51-50-2902, Washington Section 2902 and Table 2902.1"
+  },
+  {
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-2901",
+   "official": true,
+   "what": "WAC 51-50-2901, scope"
+  },
+  {
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-2900",
+   "official": true,
+   "what": "WAC 51-50-2900, now 'Reserved.'"
+  },
+  {
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-56-0400",
+   "official": true,
+   "what": "WAC 51-56-0400, state plumbing code Chapter 4 amendments (Section 422)"
+  },
+  {
+   "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/PlumbingCode/2021SeattlePlumbingCode.pdf",
+   "official": true,
+   "what": "2021 Seattle Plumbing Code (SDCI PDF), Section 422.0"
+  },
+  {
+   "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter10.pdf",
+   "official": true,
+   "what": "2021 Seattle Building Code Chapter 10, Section 1004 and Table 1004.5"
+  },
+  {
+   "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCCorrectedCodePages.pdf",
+   "official": true,
+   "what": "2021 SBC corrected pages: no Chapter 29 pages"
+  },
+  {
+   "url": "https://www.seattle.gov/construction-and-inspections/codes/codes-we-enforce-(a-z)/building-code",
+   "official": true,
+   "what": "SDCI building code page (chapter PDF links)"
+  },
+  {
+   "url": "https://www.seattle.gov/construction-and-inspections/codes/codes-we-enforce-(a-z)/plumbing-code",
+   "official": true,
+   "what": "SDCI plumbing code page (PDF link)"
+  }
+ ],
+ "to_confirm": [
+  "Urinal substitution in whole fixtures: we read 'not less than one-quarter (25%) of the minimum specified' as rounding the remaining water closets up (5 required: keep 2, up to 3 urinals). Confirm with Public Health - Seattle & King County plumbing plan review.",
+  "The table and rules apply to new construction and to alterations that trigger them; whether replacing partitions in an existing restroom triggers a fixture recount was not researched.",
+  "Effective date of the 2021 Seattle Building Code was not read (the state rule took effect 3/15/24), and Seattle and Washington will move to the 2024 editions: recheck the table then.",
+  "Schools: the fixture count uses 100 sq ft gross per student (footnote e), so the worked examples treat '50 occupants' as 5,000 sq ft gross; state health rules for schools (not read) may add requirements.",
+  "The Seattle PDF was read through pdftotext; the table's cell layout was cross-checked against the HTML table in WAC 51-50-2902, and all three rows agree."
+ ]
+}
