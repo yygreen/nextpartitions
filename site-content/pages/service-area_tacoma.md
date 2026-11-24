@@ -168,5 +168,4 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - May 3, 2027 is the State Building Code Council's planned implementation date for the 2024 editions (schedule revised 8/14/2026); confirm the rule was filed and recheck the stall table then.
 - Sales tax: 10.5% since July 1, 2026 (Pierce County added 0.1%); the Department of Revenue's January 2027 flyer shows no change for Tacoma.
 - The fire-test rule for HDPE and the 5% and family-restroom points are International Building Code text that Washington adopts without change; Tacoma has no amendment to those chapters, but the text itself wasn't read on a Tacoma or state page (ICC's site blocks scripts).
-- The Sources list repeats the Washington state pack's entries, some of which cite Seattle's code and King County's tax change: trim those from the state pack for non-Seattle pages.
 - The climate figures come from the Seattle-Tacoma airport station, the nearest long-term NOAA station.

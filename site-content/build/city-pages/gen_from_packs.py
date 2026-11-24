@@ -107,7 +107,7 @@ def page(slug):
         '`:::pricer` is the step-by-step pricer (email before any range); on export it is the slot `<!--np-pricer:%s-->`.' % city,
         'No prices and no lead times until the price list is in.',
         'Schema: BreadcrumbList, FAQPage and Service (provider Next Partitions, areaServed %s). No LocalBusiness: there is no %s office.' % (city, city),
-        'Research: `research/city-pages/cities/%s.json` and `research/city-pages/states/%s.json` (2026-11-24). A lawyer reviews the rules wording before launch.' % (slug, st)] + list(C.get('notes') or [])
+        'Research: `research/city-pages/cities/%s.json` and `research/city-pages/states/%s.json` (2026-11-24). A lawyer reviews the rules wording before launch.' % (slug, st)] + [n for n in (C.get('notes') or []) if 'state pack' not in n.lower()]  # pack housekeeping isn't for Marc
     faq_inst = 'No. We supply the partitions and the shop drawings; a contractor you hire installs them. %sOur directory lists [partition installers in %s](%s), and you can ask for installation prices with your quote.' % ((C.get('faq_install_extra').rstrip() + ' ') if C.get('faq_install_extra') else '', city, inst)
     fire = ', the fire-safety rule for solid plastic partitions' if g('fire_bullet') else ''
     t = f'''---

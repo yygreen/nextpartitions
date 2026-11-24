@@ -163,7 +163,6 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - To confirm by phone before launch: whether a like-for-like replacement of anchored toilet partitions needs a Tampa permit (Construction Services, 813-274-3100, option 1, or CSDHelp@tampagov.net).
 - Update on January 1, 2027: the 9th Edition (2026) Florida Building Code applies in Tampa. Rewrite the 'New rules' bullet, recheck the stall table against the published 9th Edition and the city's Adopted Codes list (still dated January 18, 2024).
 - Tampa's notice gives January 1, 2027 for the 9th Edition; the Florida Building Commission's workplan gives December 31, 2026. The page follows the city's notice.
-- The Florida state pack's source bullets name Miami (editions 'enforced in Miami', 'Toilet counts in Miami', Miami-Dade wage determination FL20260215) and print in this page's Sources list: reword them in research/city-pages/states/FL.json.
 - Tampa's Code of Ordinances on Municode could not be opened: read Chapter 5 once in a browser to confirm there is no local technical amendment and no city restroom-sign rule.
 - Sales tax: 7.5% confirmed for 2027 by TIP 26A01-21; read the 2027 Form DR-15DSS when the Department posts it.
 - The Department of Revenue doesn't say whether toilet partitions count as a building fixture or as goods, which decides how an installed job is taxed (same open question as Miami).
