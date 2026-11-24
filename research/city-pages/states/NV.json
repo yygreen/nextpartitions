@@ -1,0 +1,619 @@
+{
+ "state": "NV",
+ "state_name": "Nevada",
+ "checked": "2026-11-24",
+ "notes_for_city_agent": "Nevada has no statewide building code for private buildings (cities and counties adopt their own, NRS 278.580), but it does have a statewide plumbing-code statute: NRS 444.350 makes the Uniform Plumbing Code 'in the form most recently adopted by' IAPMO the standard, with local modifications allowed. So the state default toilet-count table is UPC Table 422.1 (rows identical in the 2024 and 2027 editions). In practice the big jurisdictions swap it out: Clark County's adoption of the Southern Nevada Amendments to the 2024 UPC (effective 2026-01-11) deletes Table 422.1 and sends the count to 'the currently adopted Building Code' (IBC Table 2902.1 as locally amended), and state-owned buildings do the same under NAC 341.045. For Las Vegas, read the City's own adoption of the Southern Nevada amendments to the UPC and to the IBC (Section 2902 and Table 2902.1, including any urinal rule and separate-facilities exceptions) and replace the 'fixtures' and page.stalls_* values here. The block 'fixtures.alt_building_code_table' and 'page.alt_building_code_table' give the unamended 2024 IBC figures as a starting point.",
+ "fixtures": {
+  "statewide_code": "plumbing only (by statute); no statewide building code for private buildings",
+  "governing_table": {
+   "code": "Uniform Plumbing Code (IAPMO), made the statewide standard by NRS 444.350; cities and counties may modify it",
+   "edition": "'the form most recently adopted by that Association': 2024 edition read (the edition Clark County and the State Public Works Division adopted); a 2027 edition is on IAPMO's viewer with the same rows for these three occupancies",
+   "table": "UPC Table 422.1, Minimum Plumbing Facilities (Section 422.1)",
+   "url": "https://www.leg.state.nv.us/NRS/NRS-444.html#NRS444Sec350",
+   "quote": "Any construction, alteration or change in the use of a building or other structure in this State must be in compliance with the Uniform Plumbing Code of the International Association of Plumbing and Mechanical Officials in the form most recently adopted by that Association, unless the State Public Works Board posts a notice of disapproval of any amendment to the Code pursuant to subsection 5.",
+   "other_quotes": [
+    {
+     "url": "https://epubs.iapmo.org/2024/UPC/",
+     "quote": "422.1 Fixture Count. Plumbing fixtures shall be provided for the type of building occupancy and in the minimum number shown in Table 422.1. The total occupant load and occupancy classification shall be determined in accordance with the building code."
+    },
+    {
+     "url": "https://www.leg.state.nv.us/NRS/NRS-444.html#NRS444Sec350",
+     "quote": "Any city or county may adopt such modifications as are deemed reasonably necessary because of its geographic, topographic or climatic conditions. Any city or county desiring to make changes to the Uniform Plumbing Code must, before its adoption, submit the Code with the proposed amendments to the State Public Works Board."
+    },
+    {
+     "url": "https://www.leg.state.nv.us/NAC/NAC-341.html#NAC341Sec045",
+     "note": "state-owned buildings",
+     "quote": "The 2024 Uniform Plumbing Code published by the International Association of Plumbing and Mechanical Officials, except, in section 422.1, \"Table 422.1, Minimum Plumbing Facilities,\" specifying a minimum number of required fixtures, is replaced by \"Table 2902.1, Minimum Number of Required Plumbing Fixtures\" of the 2024 International Building Code."
+    },
+    {
+     "url": "https://www.clarkcountynv.gov/adobe/assets/urn:aaid:aem:ec89671a-c803-4952-adef-ecd6f7310d43/original/as/2024-UPC-Amendments---Clark-County.pdf",
+     "note": "Clark County, Southern Nevada Amendments to the 2024 UPC, effective 2026-01-11",
+     "quote": "422.1 Fixture Count. Plumbing fixtures shall be provided for the type of occupancy and in the minimum number as required by the currently adopted Building Code. 422.2 Reserved. ... Table 422.1 Delete Table 422.1 in its entirety."
+    }
+   ]
+  },
+  "cities_may_amend": true,
+  "rows": {
+   "office": {
+    "row_label": "B Business occupancy (office, professional or service type transactions)- banks, vet clinics, hospitals, car wash, banks, beauty salons, ambulatory health care facilities, laundries and dry cleaning, educational institutions (above high school), or training facilities not located within school, post offices and printing shops",
+    "wc_male": "1: 1-50; 2: 51-100; 3: 101-200; 4: 201-400. Over 400, add 1 fixture for each additional 500 males",
+    "wc_female": "1: 1-15; 2: 16-30; 3: 31-50; 4: 51-100; 8: 101-200; 11: 201-400. Over 400, add 1 fixture for each additional 150 females",
+    "urinals": "Male 1: 1-100; 2: 101-200; 3: 201-400; 4: 401-600. Over 600, add 1 fixture for each additional 300 males",
+    "quote": "Male 1: 1-50 2: 51-100 3: 101-200 4: 201-400 Female 1: 1-15 2: 16-30 3: 31-50 4: 51-100 8: 101-200 11: 201-400 Male 1: 1-100 2: 101-200 3: 201-400 4: 401-600 ... Over 400, add 1 fixture for each additional 500 males and 1 fixture for each additional 150 females. Over 600, add 1 fixture for each additional 300 males.",
+    "url": "https://epubs.iapmo.org/2024/UPC/"
+   },
+   "restaurant": {
+    "row_label": "A-2 Assembly occupancy- restaurants, pubs, lounges, nightclubs and banquet halls",
+    "wc_male": "1: 1-50; 2: 51-150; 3: 151-300; 4: 301-400. Over 400, add 1 fixture for each additional 250 males",
+    "wc_female": "1: 1-25; 2: 26-50; 3: 51-100; 4: 101-200; 6: 201-300; 8: 301-400. Over 400, add 1 fixture for each 125 females",
+    "urinals": "Male 1: 1-200; 2: 201-300; 3: 301-400; 4: 401-600. Over 600, add 1 fixture for each additional 300 males",
+    "quote": "Male 1: 1-50 2: 51-150 3: 151-300 4: 301-400 Female 1: 1-25 2: 26-50 3: 51-100 4: 101-200 6: 201-300 8: 301-400 Male 1: 1-200 2: 201-300 3: 301-400 4: 401-600 ... Over 400, add 1 fixture for each additional 250 males and 1 fixture for each 125 females. Over 600, add 1 fixture for each additional 300 males.",
+    "url": "https://epubs.iapmo.org/2024/UPC/",
+    "note": "Table note 2: 'A restaurant is defined as a business that sells food to be consumed on the premises.'"
+   },
+   "school": {
+    "row_label": "E Educational occupancy- private or public schools",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 30",
+    "urinals": "Male 1 per 100",
+    "quote": "E Educational occupancy- private or public schools Male 1 per 50 Female 1 per 30 Male 1 per 100 Male 1 per 40 Female 1 per 40 -- 1 per 150 1 service sink or laundry sink",
+    "url": "https://epubs.iapmo.org/2024/UPC/",
+    "note": "Colleges ('educational institutions (above high school)') fall under the B row."
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "50 percent male and 50 percent female of the total occupant load, unless information submitted shows a different split. The table's tiers are then read for each sex.",
+    "quote": "422.1.1 Fixture Calculations. The minimum number of fixtures shall be calculated at 50 percent male and 50 percent female based on the total occupant load. Where information submitted indicates a difference in the distribution of the sexes such information shall be used to determine the number of fixtures for each sex.",
+    "url": "https://epubs.iapmo.org/2024/UPC/"
+   },
+   "rounding": {
+    "text": "Fractions round to the next whole number; the table's figures cover the number of persons shown 'or any fraction thereof'.",
+    "quote": "Where applying the fixture ratios in Table 422.1 results in fractional numbers, such numbers shall be rounded to the next whole number. For multiple occupancies, fractional numbers shall be first summed and then rounded to the next whole number. [Table note 1:] The figures shown are based upon one fixture being the minimum required for the number of persons indicated or any fraction thereof.",
+    "url": "https://epubs.iapmo.org/2024/UPC/"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are REQUIRED: the table has its own urinal column for males, on top of the men's toilets. Each urinal beyond the required number may replace one men's toilet, but toilets may not fall below two-thirds of the required number. The women's toilets must be at least the men's toilets plus urinals. Each urinal needs a privacy partition (Section 422.7).",
+    "quote": "3 The total number of required water closets for females shall be not less than the total number of required water closets and urinals for males. 4 For each urinal added in excess of the minimum required, one water closet shall be permitted to be deducted. The number of water closets shall not be reduced to less than two-thirds of the minimum requirement. ... 422.7 Urinal Partitions. Each urinal shall be separated with walls or partitions to provide privacy.",
+    "url": "https://epubs.iapmo.org/2024/UPC/",
+    "note_2027": "The 2027 edition adds: 'The substitution of a water closet for each urinal shall be permitted provided the total number of required fixtures complies with Table 422.1' (422.1.1 and 422.2 exception 5)."
+   },
+   "small_occupancy_exception": {
+    "text": "Separate rooms for each sex are not required: in residential installations; where the total occupant load is 10 or less (one single-user toilet room for both sexes); in business and mercantile occupancies with a total occupant load of 50 or less (one single-user room); or where a room has fixtures for both sexes with toilets in privacy compartments and urinals in privacy compartments.",
+    "quote": "422.2 Separate Facilities. Separate toilet facilities shall be provided for each sex. Exceptions: (1) Residential installations. (2) In occupancies with a total occupant load of 10 or less, including customers and employees, one toilet facility, designed for use by no more than one person at a time, shall be permitted for use by both sexes. (3) In business and mercantile occupancies with a total occupant load of 50 or less including customers and employees, one toilet facility, designed for use by no more than one person at a time, shall be permitted for use by both sexes. (4) Separate facilities shall not be required where rooms have fixtures designed for use by both sexes and the water closets are installed in privacy compartments. Urinals shall be located in a privacy compartment.",
+    "url": "https://epubs.iapmo.org/2024/UPC/",
+    "note": "Clark County's 2024 amendments set 422.2 to 'Reserved', so there the building code's separate-facilities rule applies instead."
+   },
+   "occupant_load": {
+    "text": "The plumbing code sends the occupant load to the building code, which each city or county adopts. 2024 International Building Code Table 1004.5 (the edition the state adopts for state buildings; read on a secondary copy): business areas 150 sq ft gross per person; assembly without fixed seats, unconcentrated (tables and chairs) 15 net; educational classroom area 20 net.",
+    "quote": "Unconcentrated (tables and chairs) | 15 net | ... Business areas | 150 gross | ... Educational | Classroom area | 20 net",
+    "url": "https://up.codes/viewer/nevada/ibc-2024/chapter/10/means-of-egress"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "25 women, 25 men. Women: tier '2: 16-30' = 2. Men: tier '1: 1-50' = 1 toilet, plus urinals tier '1: 1-100' = 1. Note 3 check: women's 2 is not less than men's 1 + 1. (Exception 3 to Section 422.2: a business with 50 or fewer occupants in total may instead have one single-user toilet room for both sexes.)"
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 3,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "50 each. Women: '3: 31-50' = 3. Men: '1: 1-50' = 1 toilet; urinals '1: 1-100' = 1. Note 3: 3 >= 2."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 4,
+    "wc_male_total": 2,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "100 each. Women: '4: 51-100' = 4. Men: '2: 51-100' = 2 toilets; urinals '1: 1-100' = 1. Note 3: 4 >= 3."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 8,
+    "wc_male_total": 3,
+    "urinals_allowed": null,
+    "urinals_required": 2,
+    "how": "200 each. Women: '8: 101-200' = 8. Men: '3: 101-200' = 3 toilets; urinals '2: 101-200' = 2. Note 3: 8 >= 5. Note 4: one more urinal could replace one men's toilet (not below two-thirds of 3 = 2)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "25 each. Women: '1: 1-25' = 1 by the tier, raised to 2 by note 3 (women's toilets not less than men's toilets plus urinals). Men: '1: 1-50' = 1 toilet; urinals '1: 1-200' = 1."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "50 each. Women: '2: 26-50' = 2. Men: '1: 1-50' = 1 toilet; urinals '1: 1-200' = 1. Note 3: 2 >= 2."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 2,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "100 each. Women: '3: 51-100' = 3. Men: '2: 51-150' = 2 toilets; urinals '1: 1-200' = 1. Note 3: 3 >= 3."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 3,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "200 each. Women: '4: 101-200' = 4. Men: '3: 151-300' = 3 toilets; urinals '1: 1-200' = 1. Note 3: 4 >= 4. Note 4: one more urinal could replace one men's toilet (not below two-thirds of 3 = 2)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "25 each. Women: 25/30 = 0.83, rounds to 1, raised to 2 by note 3. Men: 25/50 = 0.5, rounds to 1 toilet; urinals 25/100 = 0.25, rounds to 1."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "50 each. Women: 50/30 = 1.67, rounds to 2. Men: 50/50 = 1 toilet; urinals 50/100 = 0.5, rounds to 1. Note 3: 2 >= 2."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 4,
+    "wc_male_total": 2,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "100 each. Women: 100/30 = 3.33, rounds to 4. Men: 100/50 = 2 toilets; urinals 100/100 = 1. Note 3: 4 >= 3."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 7,
+    "wc_male_total": 4,
+    "urinals_allowed": null,
+    "urinals_required": 2,
+    "how": "200 each. Women: 200/30 = 6.67, rounds to 7. Men: 200/50 = 4 toilets; urinals 200/100 = 2. Note 3: 7 >= 6. Note 4: one more urinal could replace one men's toilet (not below two-thirds of 4 = 2.67, so 3)."
+   }
+  ],
+  "worked_examples_note": "Worked on UPC Table 422.1 (same rows in the 2024 and 2027 editions). These apply only where the city or county has not replaced the table. 'urinals_allowed' is left null: the table requires the urinals shown, and note 4 lets extra urinals replace toilets as described in each line.",
+  "alt_building_code_table": {
+   "applies_to": "State-owned buildings (NAC 341.045) and jurisdictions whose plumbing-code amendments send the count to the building code (Clark County, read; other Southern Nevada jurisdictions per the amendment's preface, not read). Figures are the UNAMENDED 2024 International Building Code Table 2902.1, read on UpCodes' 'Nevada Building Code 2024' (State Public Works adoption). Local amendments to Section 2902 were not read.",
+   "url": "https://up.codes/viewer/nevada/ibc-2024/chapter/29/plumbing-systems",
+   "rows": {
+    "office": "Business: water closets 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "restaurant": "Assembly, Restaurants, banquet halls and food courts: male 1 per 75, female 1 per 75",
+    "school": "Educational facilities: 1 per 50"
+   },
+   "rules_quote": "[P] 2902.1.1 Fixture Calculations. To determine the occupant load of each sex, the total occupant load shall be divided in half. ... Fractional numbers resulting from applying the fixture ratios of Table 2902.1 shall be rounded up to the next whole number. ... Exceptions: ... Where multiple-user facilities are designed to serve all genders, the minimum fixture count shall be calculated 100 percent, based on total occupant load.",
+   "separate_facilities_quote": "Separate toilet facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. Separate toilet facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. Separate toilet facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer.",
+   "urinals": "Not settled at state level. The table header reads 'WATER CLOSETS (URINALS: SEE SECTION 424.2)', a section of the International Plumbing Code, which Nevada replaces with the Uniform Plumbing Code; the UPC has no percentage substitution rule outside Table 422.1's notes. The city agent must read the local amendment.",
+   "worked_examples": [
+    {
+     "occupancy": "office",
+     "occupants": 50,
+     "wc_female": 1,
+     "wc_male_total": 1,
+     "how": "25 each; 25/25 = 1"
+    },
+    {
+     "occupancy": "office",
+     "occupants": 100,
+     "wc_female": 2,
+     "wc_male_total": 2,
+     "how": "50 each; 50/25 = 2"
+    },
+    {
+     "occupancy": "office",
+     "occupants": 200,
+     "wc_female": 3,
+     "wc_male_total": 3,
+     "how": "100 each; first 50: 2, remaining 50 at 1 per 50: 1"
+    },
+    {
+     "occupancy": "office",
+     "occupants": 400,
+     "wc_female": 5,
+     "wc_male_total": 5,
+     "how": "200 each; first 50: 2, remaining 150 at 1 per 50: 3"
+    },
+    {
+     "occupancy": "restaurant",
+     "occupants": 50,
+     "wc_female": 1,
+     "wc_male_total": 1,
+     "how": "25/75 rounds up to 1"
+    },
+    {
+     "occupancy": "restaurant",
+     "occupants": 100,
+     "wc_female": 1,
+     "wc_male_total": 1,
+     "how": "50/75 rounds up to 1"
+    },
+    {
+     "occupancy": "restaurant",
+     "occupants": 200,
+     "wc_female": 2,
+     "wc_male_total": 2,
+     "how": "100/75 = 1.33, rounds up to 2"
+    },
+    {
+     "occupancy": "restaurant",
+     "occupants": 400,
+     "wc_female": 3,
+     "wc_male_total": 3,
+     "how": "200/75 = 2.67, rounds up to 3"
+    },
+    {
+     "occupancy": "school",
+     "occupants": 50,
+     "wc_female": 1,
+     "wc_male_total": 1,
+     "how": "25/50 rounds up to 1"
+    },
+    {
+     "occupancy": "school",
+     "occupants": 100,
+     "wc_female": 1,
+     "wc_male_total": 1,
+     "how": "50/50 = 1"
+    },
+    {
+     "occupancy": "school",
+     "occupants": 200,
+     "wc_female": 2,
+     "wc_male_total": 2,
+     "how": "100/50 = 2"
+    },
+    {
+     "occupancy": "school",
+     "occupants": 400,
+     "wc_female": 4,
+     "wc_male_total": 4,
+     "how": "200/50 = 4"
+    }
+   ]
+  },
+  "confidence": "medium"
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "International Building Code, 2018 edition, Section 803.9 (adopted statewide by the State Fire Marshal, NAC 477.281(1)(b); NAC 477.283(2) lists no change to Chapter 8). The 2024 edition, adopted for state-owned buildings by NAC 341.045, has the same Section 803.9.",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP) Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. [803.1.1:] Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1.",
+  "url": "https://up.codes/viewer/nevada/ibc-2018/chapter/8/interior-finishes",
+  "url_2024": "https://up.codes/viewer/nevada/ibc-2024/chapter/8/interior-finishes",
+  "adoption_quote": "The State Fire Marshal hereby adopts by reference the following nationally recognized codes with additions and deletions as noted in NAC 477.283: ... (b) International Building Code, 2018 edition.",
+  "adoption_url": "https://www.leg.state.nv.us/nac/nac-477.html#NAC477Sec281",
+  "scope_quote": "the regulations of the State Fire Marshal apply throughout the State, but except with respect to state-owned or state-occupied buildings, the State Fire Marshal's authority to enforce them or conduct investigations under this chapter does not extend to a school district except as otherwise provided in NRS 393.110, or a county whose population is 100,000 or more ... [NAC 477.280:] where there is a conflict between this chapter and any code, ordinance or regulation adopted by a local authority, the more stringent requirement providing the greatest safety from fire and for life to the public applies.",
+  "scope_url": "https://www.leg.state.nv.us/NRS/NRS-477.html#NRS477Sec030",
+  "note": "The code text was read on UpCodes (secondary); the adoption was read on the legislature's site. The section says 'used as an interior finish' and does not name toilet partitions. In Clark and Washoe counties the local building and fire departments enforce their own adopted codes; the city agent should confirm the section in the city's edition.",
+  "confidence": "medium"
+ },
+ "access": {
+  "state_standard": "No separate Nevada accessibility standard for private buildings. Public buildings owned by a public body must meet the ADA and its guidelines (NRS 338.180). State-owned buildings: the ADA publication plus the 2024 International Building Code with ICC A117.1-2009 kept in place of the 2017 edition (NAC 341.045). Elsewhere ICC A117.1 applies through the edition of the International Building Code the city or county adopts.",
+  "differences": [
+   {
+    "point": "Restroom corridor signs in public buildings (state, county, city, town, school district)",
+    "state": "Each entrance to a corridor leading to a toilet facility must have a sign with symbols, raised letters and Braille that identifies the toilet facility and the gender of persons who may use it and, where it is for one gender only, says so and gives direction to a facility for the other gender.",
+    "federal": "2010 ADA Standards 216.8 requires directional signs only where existing toilet rooms do not comply: 'Where existing toilet rooms or bathing rooms do not comply with 603, directional signs indicating the location of the nearest toilet room or bathing room complying with 603 within the facility shall be provided.'",
+    "state_url": "https://www.leg.state.nv.us/NRS/NRS-338.html#NRS338Sec180",
+    "quote": "In each public building and facility owned by a public body, each entrance to a corridor which leads to a toilet facility must be marked with a sign which: (a) Conforms to the requirements related to signage contained in §§ 4.30 et seq. of the Americans with Disabilities Act Accessibility Guidelines ...; and (b) Uses symbols, raised letters and Braille to: (1) Identify the toilet facility and the gender of persons who may use the toilet facility; and (2) If the toilet facility is for the exclusive use of persons of one gender: (I) Indicate that the toilet facility is for the exclusive use of persons of that gender; and (II) Provide direction to a toilet facility that may be used by persons of the other gender."
+   },
+   {
+    "point": "Family or assisted-use toilet room (building code, where the International Building Code is adopted; read in the 2024 edition used for state buildings)",
+    "state": "In assembly and mercantile occupancies, an accessible family or assisted-use toilet room is required where six or more male and female water closets in total are required.",
+    "federal": "The 2010 ADA Standards have no requirement to provide a family or assisted-use toilet room (section 213 scopes the toilet rooms that are provided).",
+    "state_url": "https://up.codes/viewer/nevada/ibc-2024/chapter/11/accessibility",
+    "quote": "1110.2.1 Family or Assisted-Use Toilet and Bathing Rooms In assembly and mercantile occupancies, an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required."
+   },
+   {
+    "point": "Number of wheelchair stalls in very large rooms (building code, 2024 International Building Code)",
+    "state": "At least 5 percent of the compartments in a toilet room must be wheelchair accessible, and 5 percent ambulatory accessible where compartments plus urinals total six or more.",
+    "federal": "213.3.1: 'Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1. In addition to the compartment required to comply with 604.8.1, at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures.'",
+    "state_url": "https://up.codes/viewer/nevada/ibc-2024/chapter/11/accessibility",
+    "quote": "1110.2.4 Water Closet Compartment Where water closet compartments are provided in a toilet room or bathing room, at least 5 percent of the total number of compartments shall be wheelchair accessible. Where the combined total water closet compartments and urinals provided in a toilet room or bathing room is six or more, at least 5 percent of the total number of compartments shall be ambulatory accessible, provided in addition to the wheelchair-accessible compartment.",
+    "note": "Differs from the federal rule only in rooms with more than 20 compartments."
+   }
+  ],
+  "icc_a117_1": "Not adopted statewide for private buildings. State-owned buildings: A117.1-2009 (NAC 341.045(1)(a)(4): 'References to ICC Standard A117.1-2017 ... in chapter 35 are replaced with references to ICC Standard A117.1-2009'). The State Fire Marshal's 2018 International Building Code references A117.1-2009 in the model text (not read in Chapter 35 of the 2018 edition). The A117.1 text itself was not read, so its stall dimensions are not compared.",
+  "related_state_rule": {
+   "point": "Baby changing tables",
+   "text": "Each county, city or other body that adopts a building code must require any permanent building used by the public that contains a public restroom and is constructed on or after October 1, 2017 to have at least one baby changing table (one accessible to men and one to women if a single table is not accessible to both). Exception: venues whose permit or license restricts admission of children by age.",
+   "quote": "each county, city and any other governmental entity that adopts a building code shall include in its respective building code a requirement that any permanent building or facility used by the public that contains a public restroom and is constructed on or after October 1, 2017, be equipped with at least one baby changing table.",
+   "url": "https://www.leg.state.nv.us/NRS/NRS-278.html#NRS278Sec584"
+  },
+  "process": "No state plan-review or registration step for accessibility in private buildings was found; the city or county building department reviews plans under its own adopted building code. For public buildings, the State Public Works Division verifies state-owned buildings and each political subdivision verifies its own (NRS 338.180(6)); violations may be reported to the Attorney General (NRS 338.180(7)).",
+  "process_quote": "The Division shall verify that all public buildings and facilities owned by the State of Nevada conform with the requirements of this section. Each political subdivision shall verify that all public buildings and facilities owned by the political subdivision conform with the requirements of this section.",
+  "process_url": "https://www.leg.state.nv.us/NRS/NRS-338.html#NRS338Sec180",
+  "confidence": "medium"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "A place of public accommodation that provides a single-stall restroom to the public must make it as inclusive and accessible as possible to a person of any gender identity or expression, may not label it with gendered signage, and may label it 'All-Gender Bathroom' or 'All-Accessible Bathroom' (NRS 651.072). The same applies to public buildings owned by a public body (NRS 338.180(5)), and every local building code must carry the requirement for buildings constructed on or after October 1, 2021 (NRS 278.5846). 'Single-stall restroom' means a room for individual use with a single toilet or urinal, or a toilet and a urinal not separated by a stall. No private right of action. The plumbing code adds: single-use facilities 'shall be identified with signage indicating use by either sex' (UPC 422.2.1).",
+   "quote": "The owner or operator of a place of public accommodation that provides a single-stall restroom to the public: (a) Shall not label the single-stall restroom with gendered signage; and (b) May label the single-stall restroom as available for use by any person, including, without limitation, by posting a sign that reads \"All-Gender Bathroom\" or \"All-Accessible Bathroom.\"",
+   "url": "https://www.leg.state.nv.us/NRS/NRS-651.html#NRS651Sec072",
+   "other_urls": [
+    "https://www.leg.state.nv.us/NRS/NRS-278.html#NRS278Sec5846",
+    "https://www.leg.state.nv.us/NRS/NRS-338.html#NRS338Sec180"
+   ]
+  },
+  "all_gender_shared": {
+   "rule": "No state statute on shared all-gender rooms was found. Under the statewide plumbing standard (2024 UPC) they are allowed: separate facilities are not required where rooms have fixtures for both sexes, the water closets are in privacy compartments and urinals are in a privacy compartment; compartment partitions in all-gender rooms must meet the Type A security requirements of IAPMO Z124.10, and urinals must be visually separated from the rest of the room or each be in a Type A privacy compartment. Fixture count for all-gender facilities: the aggregate of the female and male counts. Clark County's amendments reserve Section 422.2 (but keep 422.6 and 422.7), so there the building code governs whether separate rooms are needed: unamended 2024 IBC 2902.2 exception 6 allows rooms 'designed for use by all persons regardless of sex' with privacy as set out in Uniform Plumbing Code Sections 405.3.4 and 405.3.5 (the cross-reference as shown in the State Public Works copy); local text not read.",
+   "quote": "(4) Separate facilities shall not be required where rooms have fixtures designed for use by both sexes and the water closets are installed in privacy compartments. Urinals shall be located in a privacy compartment. ... 422.6 ... Partitions for water closets located in all gender toilet or bathrooms shall comply with the Type A security requirements of IAPMO Z124.10. ... 422.7 ... Urinals located in all gender toilet rooms shall be visually separated from the remainder of the room or each urinal shall be installed in a privacy compartment complying with Type A security requirements of IAPMO Z124.10.",
+   "url": "https://epubs.iapmo.org/2024/UPC/"
+  },
+  "use_restrictions": {
+   "rule": "No Nevada statute restricting restroom use by sex in schools or government buildings was found (statute chapters 338, 651 and 278 read; one web search of 2025 session bills found none enacted). Nevada's public accommodations law bars discrimination on the ground of sex or gender identity or expression.",
+   "quote": "All persons are entitled to the full and equal enjoyment of the goods, services, facilities, privileges, advantages and accommodations of any place of public accommodation, without discrimination or segregation on the ground of race, color, religion, national origin, disability, sexual orientation, sex, or gender identity or expression.",
+   "url": "https://www.leg.state.nv.us/NRS/NRS-651.html#NRS651Sec070"
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": true,
+  "law": "NRS 338.010 to 338.090 (public works, prevailing wage). Public bodies: the State, counties, cities, towns, school districts and other public agencies. The Labor Commissioner sets the prevailing wage for each of four regions (Washoe, Northern Rural, Clark, Southern Rural) from a survey; rates run October 1 to September 30. Also applies to Nevada System of Higher Education construction contracts over $100,000 (NRS 338.075).",
+  "threshold": "Contracts with an estimated cost of less than $100,000 are exempt (NRS 338.080); a project may not be split to get under it.",
+  "rates_url": "https://labor.nv.gov/PrevailingWage/2026-2027_Prevailing_Wages/",
+  "rates_clark_pdf": "https://labor.nv.gov/uploadedFiles/labornvgov/content/PrevailingWage/Clark%20County%20Region%202026-2027(2).pdf",
+  "quote": "Every contract to which a public body of this State is a party, requiring the employment of skilled mechanics, skilled workers, semiskilled mechanics, semiskilled workers or unskilled labor in the performance of a public work, must contain in express terms the hourly and daily rate of wages to be paid each of the classes of mechanics and workers. The hourly and daily rate of wages must: (a) Not be less than the rate of such wages then prevailing in the region in which the public work is located ... [NRS 338.080:] none of the provisions of NRS 338.020 to 338.090, inclusive, apply to: ... Any contract for a public work whose estimated cost is less than $100,000.",
+  "rates_quote": "DATE OF DETERMINATION: October 1, 2026 APPLICABLE FOR PUBLIC WORKS PROJECTS OVER $100,000 BID/AWARDED OCTOBER 1, 2026 THROUGH SEPTEMBER 30, 2027",
+  "url": "https://www.leg.state.nv.us/NRS/NRS-338.html",
+  "note": "The Clark County Region rate PDF was linked from the Labor Commissioner's page but not opened; the city agent reads the carpenter (or glazier) rate there.",
+  "confidence": "high"
+ },
+ "sales_tax": {
+  "state_rate": 0.0685,
+  "state_rate_basis": {
+   "text": "The Department of Taxation gives 6.85% as the base statewide rate (the 2% state sales tax of NRS 372.105 plus the statewide school and city-county relief taxes); counties add to it. Clark County's total is 8.375% (effective 2020-01-01).",
+   "quote": "The base State Sales Tax rate in Nevada is 6.85%. However, local jurisdictions can add additional taxes, which can make the total Sales Tax rate vary significantly from one area to another. ... Clark County 8.375 Tax Rate Sheet - effective 1/1/2020",
+   "url": "https://tax.nv.gov/tax-types/sales-tax-use-tax/"
+  },
+  "shipped_goods": {
+   "rule": "Sales of tangible personal property are taxable. A retailer outside Nevada with no physical presence must collect once, in the previous or current calendar year, its gross revenue from retail sales delivered in Nevada exceeds $100,000 or it made 200 or more such sales (NAC 372.856). If the seller is not registered, the buyer owes consumer use tax at the rate for the buyer's location.",
+   "quote": "Does not have a physical presence in this State ... and in the immediately preceding calendar year or the current calendar year: (1) The gross revenue of the retailer from the retail sale of tangible personal property delivered in this State is greater than $100,000; or (2) The retailer made 200 or more retail sales of tangible personal property for delivery in this State [NAC 372.856]. ... If a seller isn't registered to collect Nevada Sales Tax, Nevada buyers are responsible for paying Consumer Use Tax [Department FAQ, quote truncated by the fetch tool].",
+   "url": "https://www.leg.state.nv.us/NAC/NAC-372.html#NAC372Sec856",
+   "agency_url": "https://tax.nv.gov/faqs/sales-tax-faqs/"
+  },
+  "freight_taxed": false,
+  "freight": {
+   "rule": "Transportation, shipping or postage charges stated separately on the invoice are not taxed; if not stated separately they are. Handling, crating or packing charges are taxed whether or not stated separately. The Department's FAQ adds that freight or transportation incurred before the sale is taxable.",
+   "quote": "Delivery charges included in the sale of tangible personal property are subject to sales and use taxes, including, but not limited to, any charges for: (a) Transportation, shipping or postage which are not stated separately on applicable invoices or other billing documents. Any charges for transportation, shipping or postage which are stated separately on applicable invoices or other billing documents shall be deemed not to be included in such a sale and are not subject to sales and use taxes. (b) Handling, crating or packing, whether or not separately stated.",
+   "url": "https://www.leg.state.nv.us/NAC/NAC-372.html#NAC372Sec101"
+  },
+  "install_labor": {
+   "rule": "Installation charges stated separately on the invoice are not part of the taxable sales price. The invoice must state them separately.",
+   "quote": "[NRS 360B.480(2)] The term does not include: ... (b) Any installation charges which are stated separately pursuant to subsection 2 of NRS 360B.290 [NRS 360B.290(2): the invoice 'Must state separately any amount received by the seller for: (a) Any installation charges for the property']. Department FAQ: \"repair, reconditioning, and installation labor are not taxable if these services are listed separately\" (quote truncated by the fetch tool).",
+   "url": "https://www.leg.state.nv.us/NRS/NRS-360B.html#NRS360BSec480",
+   "agency_url": "https://tax.nv.gov/faqs/sales-tax-faqs/"
+  },
+  "furnish_and_install": {
+   "rule": "A construction contractor (including a subcontractor or specialty contractor) who improves, remodels or repairs real property under a construction contract is the consumer of the materials: sales tax applies to the price the contractor pays, or use tax if the vendor did not charge it. The regulation does not tax the contractor's charge to the owner; that inference is not spelled out in the text read.",
+   "quote": "A construction contractor is the consumer of all the tangible personal property purchased for use in improving real property pursuant to a construction contract for improvement to real property and the tax applies to the total sales price of the property to the contractor. 2. If any such purchase is made and the sales tax is not paid because the vendor did not have a valid Nevada seller's permit, or because a resale certificate was properly given, or for any other reason, the use tax applies based upon the sales price of the property to the contractor.",
+   "url": "https://www.leg.state.nv.us/NAC/NAC-372.html#NAC372Sec200"
+  },
+  "agency": "Nevada Department of Taxation",
+  "confidence": "medium"
+ },
+ "page": {
+  "stalls_intro": "Nevada law makes one national plumbing standard the rule across the state, and each city or county may change it. That standard counts toilets by a building's capacity: the most people it is designed to hold at one time, with half counted as men and half as women. Every toilet needs a stall. It also requires urinals in the men's room, each with a screen, and the women's room must have at least as many toilets as the men's room has toilets and urinals together.",
+  "stalls_rows": {
+   "50": {
+    "office": "2/1+1",
+    "restaurant": "2/1+1",
+    "school": "2/1+1"
+   },
+   "100": {
+    "office": "3/1+1",
+    "restaurant": "2/1+1",
+    "school": "2/1+1"
+   },
+   "200": {
+    "office": "4/2+1",
+    "restaurant": "3/2+1",
+    "school": "4/2+1"
+   },
+   "400": {
+    "office": "8/3+2",
+    "restaurant": "4/3+1",
+    "school": "7/4+2"
+   }
+  },
+  "stalls_after": "These are the statewide standard's minimums for the whole building. Clark County takes its count from its building rules instead, and so do state-owned buildings, so confirm the number with the local building department.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "alt_building_code_table": {
+   "use_when": "the city sends the count to its building code and has not amended the table (city agent to confirm and adjust)",
+   "stalls_intro": "{city} counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. Half are counted as men and half as women. Every toilet needs a stall.",
+   "stalls_rows": {
+    "50": {
+     "office": "1/1",
+     "restaurant": "1/1",
+     "school": "1/1"
+    },
+    "100": {
+     "office": "2/2",
+     "restaurant": "1/1",
+     "school": "1/1"
+    },
+    "200": {
+     "office": "3/3",
+     "restaurant": "2/2",
+     "school": "2/2"
+    },
+    "400": {
+     "office": "5/5",
+     "restaurant": "3/3",
+     "school": "4/4"
+    }
+   },
+   "stalls_after": "These are minimums for the whole building. Ask the local building department how many of the men's toilets may be urinals."
+  },
+  "fire_bullet": "- **Fire safety:** Nevada's statewide fire safety rules require solid plastic (HDPE) used as an interior finish to pass a room fire test. Ask for the fire-rated version, and ask the local building department how it applies the rule to partitions.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law sets the sizes. Nevada has no separate access rules of its own for private buildings: the city or county building department checks access under its building rules. State law requires public buildings to meet the federal standards.",
+  "state_extra_bullet": "- **Nevada extras:** in a building owned by the state, a county, a city or a school district, each entrance to a corridor that leads to a restroom needs a sign with symbols, raised letters and Braille. The sign says who may use the restroom and, where it is for one gender, points to the one for the other gender. A building used by the public that has a public restroom and was built on or after October 1, 2017 needs at least one baby changing table, unless its permit or license restricts the admission of children by age.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** in a business open to the public or a public building, a one-person restroom may not carry a men's or women's sign. It may be marked \"All-Gender Bathroom\" or \"All-Accessible Bathroom\". The statewide plumbing standard allows a shared all-gender room where every toilet is in a privacy compartment and urinals are in compartments or screened from view. A city or county may change that standard, so ask the local building department. Nevada law bars discrimination in places open to the public on the ground of sex or gender identity or expression.",
+  "public_jobs": "On state, county, city and school district projects estimated at $100,000 or more, Nevada law requires at least the wage the state Labor Commissioner sets for the region each year from October 1.",
+  "tax_install_bullet": "- **Tax on installation:** in Nevada, installation labor is not taxed when the invoice lists it separately from the partitions. A contractor who supplies and installs partitions as part of the building pays the tax on the materials when buying them.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable. Freight listed separately on the invoice is not taxed, but handling, crating and packing charges are. An out-of-state seller with more than $100,000 in Nevada sales, or 200 or more Nevada sales, in a year collects the tax. If the seller doesn't collect it, the buyer owes use tax to the state.",
+  "tax_confirm": "your accountant or the Nevada Department of Taxation",
+  "sources": [
+   "- Nevada's statewide plumbing standard and local changes to it: [Nevada Revised Statutes 444.340 to 444.430, Uniform Plumbing Code](https://www.leg.state.nv.us/NRS/NRS-444.html#NRS444Sec350). Cities and counties adopt their own building codes: [NRS 278.580](https://www.leg.state.nv.us/NRS/NRS-278.html#NRS278Sec580). Checked 2026-11-24.",
+   "- Toilet and urinal counts, the 50/50 split, rounding, separate rooms, stall and urinal screens: 2024 Uniform Plumbing Code, Table 422.1 and Sections 422.1 to 422.7, read on [IAPMO's code viewer](https://epubs.iapmo.org/2024/UPC/); the same rows appear in the [2027 edition](https://epubs.iapmo.org/2027/UPC/). Checked 2026-11-24.",
+   "- Clark County and state-owned buildings take the count from the building code: [Southern Nevada Amendments to the 2024 Uniform Plumbing Code, Clark County adoption](https://www.clarkcountynv.gov/adobe/assets/urn:aaid:aem:ec89671a-c803-4952-adef-ecd6f7310d43/original/as/2024-UPC-Amendments---Clark-County.pdf) (Section 422.0, Table 422.1 deleted) and [Nevada Administrative Code 341.045](https://www.leg.state.nv.us/NAC/NAC-341.html#NAC341Sec045). Checked 2026-11-24.",
+   "- Floor area per person and the building code's toilet table: 2024 International Building Code, Table 1004.5 and Table 2902.1, read on a secondary copy of the State Public Works adoption ([Chapter 10](https://up.codes/viewer/nevada/ibc-2024/chapter/10/means-of-egress), [Chapter 29](https://up.codes/viewer/nevada/ibc-2024/chapter/29/plumbing-systems)). Checked 2026-11-24.",
+   "- Fire test for solid plastic: [Nevada Administrative Code 477.281 and 477.283](https://www.leg.state.nv.us/nac/nac-477.html#NAC477Sec281) (State Fire Marshal, 2018 International Building Code) and [NRS 477.030](https://www.leg.state.nv.us/NRS/NRS-477.html#NRS477Sec030); Section 803.9 and Section 803.1.1 (NFPA 286) read on a [secondary copy of the 2018 edition](https://up.codes/viewer/nevada/ibc-2018/chapter/8/interior-finishes). Checked 2026-11-24.",
+   "- Access rules for public buildings, restroom corridor signs and single-stall restrooms in public buildings: [NRS 338.180](https://www.leg.state.nv.us/NRS/NRS-338.html#NRS338Sec180); federal rules: [2010 ADA Standards for Accessible Design](https://www.access-board.gov/ada/), sections 213 and 216.8. Checked 2026-11-24.",
+   "- Baby changing tables: [NRS 278.584](https://www.leg.state.nv.us/NRS/NRS-278.html#NRS278Sec584). Checked 2026-11-24.",
+   "- Single-stall restroom signs and equal access to places open to the public: [NRS 651.070 and 651.072](https://www.leg.state.nv.us/NRS/NRS-651.html#NRS651Sec072) and [NRS 278.5846](https://www.leg.state.nv.us/NRS/NRS-278.html#NRS278Sec5846). Checked 2026-11-24.",
+   "- Wages on public jobs: [NRS 338.020, 338.025, 338.030 and 338.080](https://www.leg.state.nv.us/NRS/NRS-338.html) and the Nevada Labor Commissioner's [2026-2027 prevailing wage rates](https://labor.nv.gov/PrevailingWage/2026-2027_Prevailing_Wages/). Checked 2026-11-24.",
+   "- Sales tax: Nevada Department of Taxation, [Sales Tax & Use Tax](https://tax.nv.gov/tax-types/sales-tax-use-tax/) and [Sales Tax FAQs](https://tax.nv.gov/faqs/sales-tax-faqs/); [Nevada Administrative Code 372.101 (delivery charges), 372.190 and 372.200 (construction contractors) and 372.856 (out-of-state retailers)](https://www.leg.state.nv.us/NAC/NAC-372.html); [NRS 360B.290 and 360B.480](https://www.leg.state.nv.us/NRS/NRS-360B.html) (installation charges). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design (NRS 338.180 for public buildings); no statewide building code for private buildings: each city or county adopts an edition of the International Building Code (State Fire Marshal: 2018 edition, NAC 477.281; state-owned buildings: 2024 edition with ICC A117.1-2009, NAC 341.045); Uniform Plumbing Code, statewide under NRS 444.350 with local amendments (2024 edition read); NFPA 286 for HDPE."
+ },
+ "sources_read": [
+  {
+   "url": "https://www.leg.state.nv.us/NRS/NRS-444.html",
+   "official": true
+  },
+  {
+   "url": "https://www.leg.state.nv.us/NRS/NRS-278.html",
+   "official": true
+  },
+  {
+   "url": "https://www.leg.state.nv.us/NRS/NRS-338.html",
+   "official": true
+  },
+  {
+   "url": "https://www.leg.state.nv.us/NRS/NRS-651.html",
+   "official": true
+  },
+  {
+   "url": "https://www.leg.state.nv.us/NRS/NRS-477.html",
+   "official": true
+  },
+  {
+   "url": "https://www.leg.state.nv.us/NRS/NRS-372.html",
+   "official": true
+  },
+  {
+   "url": "https://www.leg.state.nv.us/NRS/NRS-360B.html",
+   "official": true
+  },
+  {
+   "url": "https://www.leg.state.nv.us/NAC/NAC-341.html",
+   "official": true
+  },
+  {
+   "url": "https://www.leg.state.nv.us/nac/nac-477.html",
+   "official": true
+  },
+  {
+   "url": "https://www.leg.state.nv.us/NAC/NAC-372.html",
+   "official": true
+  },
+  {
+   "url": "https://publicworks.nv.gov/uploadedFiles/publicworksnvgov/content/Documents/Permitting_Code_Enforcement/2024%20Adopted_Codes.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.clarkcountynv.gov/adobe/assets/urn:aaid:aem:ec89671a-c803-4952-adef-ecd6f7310d43/original/as/2024-UPC-Amendments---Clark-County.pdf",
+   "official": true
+  },
+  {
+   "url": "https://epubs.iapmo.org/2024/UPC/mobile/javascript/search_config.js",
+   "official": true,
+   "note": "IAPMO, the code's publisher; full text behind its free viewer"
+  },
+  {
+   "url": "https://epubs.iapmo.org/2027/UPC/mobile/javascript/search_config.js",
+   "official": true,
+   "note": "IAPMO; 2027 edition, compared for Section 422 only"
+  },
+  {
+   "url": "https://up.codes/viewer/nevada/ibc-2024/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/nevada/ibc-2024/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/nevada/ibc-2024/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/nevada/ibc-2024/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/nevada/ibc-2024/chapter/35/referenced-standards",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/nevada/ibc-2018/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://tax.nv.gov/tax-types/sales-tax-use-tax/",
+   "official": true
+  },
+  {
+   "url": "https://tax.nv.gov/faqs/sales-tax-faqs/",
+   "official": true,
+   "note": "read through WebFetch; quotes truncated by the tool"
+  },
+  {
+   "url": "https://labor.nv.gov/",
+   "official": true,
+   "note": "read through WebFetch"
+  },
+  {
+   "url": "https://labor.nv.gov/PrevailingWage/Public_Works___Prevailing_Wages/",
+   "official": true,
+   "note": "read through WebFetch"
+  },
+  {
+   "url": "https://labor.nv.gov/PrevailingWage/2026-2027_Prevailing_Wages/",
+   "official": true,
+   "note": "read through WebFetch"
+  }
+ ],
+ "to_confirm": [
+  "Las Vegas's own adopted editions and amendments (city agent): the City's adoption of the Southern Nevada amendments to the Uniform Plumbing Code (is Table 422.1 deleted, as in Clark County?) and to the International Building Code Section 2902 / Table 2902.1, including the urinal rule and the separate-facilities exceptions. Ask the City of Las Vegas Building and Safety Department.",
+  "Which Uniform Plumbing Code edition counts as 'most recently adopted' under NRS 444.350 now that IAPMO has a 2027 edition on its viewer, and whether the State Public Works Board posted any notice of disapproval. The rows for offices, restaurants and schools are the same in 2024 and 2027. Ask the State Public Works Division.",
+  "Whether HDPE toilet partitions are treated as 'interior finish' under Section 803.9 by local plan review (the section does not name partitions), and the section number in the city's adopted edition. Ask the local building department.",
+  "ICC A117.1 stall dimensions against the 2010 ADA Standards: the A117.1 text was not read.",
+  "Sales tax: the Department's FAQ answers were read through a summarising fetch tool with truncated quotes; open the page in a browser before launch. How Next Partitions itself must collect Nevada tax (it is a Streamlined Sales Tax member state; $100,000 or 200 sales threshold) is a question for Abe's accountant.",
+  "Whether a contractor's furnish-and-install invoice to the owner carries no sales tax line: NAC 372.200 makes the contractor the consumer of materials, but no Department publication spelling out the customer-side treatment was read. Ask the Nevada Department of Taxation.",
+  "Restroom use restrictions: none found in NRS chapters 278, 338 and 651 or in one web search; statutes on school facilities (NRS Title 34) were not read.",
+  "Carpenter or glazier prevailing wage for the Clark region (city agent): the 2026-2027 Clark County Region PDF on the Labor Commissioner's site was not opened."
+ ]
+}
