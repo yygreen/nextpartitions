@@ -1,0 +1,449 @@
+{
+ "state": "HI",
+ "state_name": "Hawaii",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "Hawaii State Building Code (2018 International Building Code with Hawaii amendments), reached from the Hawaii State Plumbing Code (2018 Uniform Plumbing Code with Hawaii amendments), section 422.0 as amended",
+   "edition": "2018 IBC; 2018 UPC",
+   "table": "IBC Table 2902.1 (not amended by the state; the state amendment list has no entry for Chapter 29)",
+   "url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/29/plumbing-systems",
+   "quote": "State Plumbing Code amendment: \"422.0 Minimum Number of Required Fixtures. Plumbing fixtures shall be provided for the type of building occupancy and in the minimum number required in the Hawaii State Building Code.\" State Building Code: \"The ICC International Building Code 2018 Edition, is made a part of this chapter, subject to the amendments provided in this code.\" IBC 2902.1: \"Plumbing fixtures shall be provided in the minimum number as shown in Table 2902.1 based on the actual use of the building or space.\"",
+   "adoption_urls": [
+    "https://ags.hawaii.gov/bcc/files/2020/06/StatePlumbingCode_20200519.pdf",
+    "https://ags.hawaii.gov/bcc/files/2021/09/2018StateBuildingCode_20210817.pdf",
+    "https://ags.hawaii.gov/bcc/building-code-rules/"
+   ],
+   "note": "The state amendments (plumbing code PDF, a scan read page by page; building code PDF) were read on the State Building Code Council's site. The table itself was read on UpCodes' Hawaii copy of the 2018 IBC (secondary); the ICC's own site did not load."
+  },
+  "cities_may_amend": true,
+  "cities_may_amend_note": "HRS 107-28: each county 'shall amend, adopt, and update the Hawaii state building codes as they apply within their respective jurisdiction'; if a county does not act within two years the state code applies as an interim county code. The edition and amendments the City and County of Honolulu enforces were not checked here (city agent). A September 2025 governor's proclamation linked on the council's page was noted in research/state-codes/states.json as suspending the two-year deadline; not re-read.",
+  "rows": {
+   "office": {
+    "row_label": "Business: Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial, ambulatory care and similar uses",
+    "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "urinals": "Table header: 'URINALS SEE SECTION 424.2 OF THE INTERNATIONAL PLUMBING CODE'; no urinal column",
+    "quote": "Business | Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial, ambulatory care and similar uses | 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50 [water closets, one figure for both sexes] | 1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80 [lavatories]",
+    "url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/29/plumbing-systems"
+   },
+   "restaurant": {
+    "row_label": "Assembly: Restaurants, banquet halls and food courts",
+    "wc_male": "1 per 75",
+    "wc_female": "1 per 75",
+    "urinals": "Table header: 'URINALS SEE SECTION 424.2 OF THE INTERNATIONAL PLUMBING CODE'; no urinal column",
+    "quote": "Restaurants, banquet halls and food courts d | 1 per 75 [male] | 1 per 75 [female] | 1 per 200 [lavatories]. Note d: \"The occupant load for seasonal outdoor seating and entertainment areas shall be included when determining the minimum number of facilities required.\"",
+    "url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/29/plumbing-systems"
+   },
+   "school": {
+    "row_label": "Educational: Educational facilities",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 50",
+    "urinals": "Table header: 'URINALS SEE SECTION 424.2 OF THE INTERNATIONAL PLUMBING CODE'; no urinal column",
+    "quote": "Educational | Educational facilities | 1 per 50 [water closets, one figure for both sexes] | 1 per 50 [lavatories]",
+    "url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/29/plumbing-systems"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "The total occupant load is divided in half, unless approved statistical data show a different split.",
+    "quote": "To determine the occupant load of each sex, the total occupant load shall be divided in half. ... Exception: The total occupant load shall not be required to be divided in half where approved statistical data indicate a distribution of the sexes of other than 50 percent of each sex.",
+    "url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/29/plumbing-systems"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole number; one fixture is needed for any fraction of the number of persons shown.",
+    "quote": "Fractional numbers resulting from applying the fixture ratios of Table 2902.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number.",
+    "url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/29/plumbing-systems"
+   },
+   "urinal_substitution": {
+    "text": "Not stated in the state code. The table sends the reader to section 424.2 of the International Plumbing Code for urinals, but Hawaii's building code says that 'International Plumbing Code' means the State Plumbing Code, which is the Uniform Plumbing Code and has no matching section 424.2; the state's amended plumbing section 422.0 only points back to the building code. Urinals are therefore neither required nor given a stated substitution limit at state level. County amendments may settle it.",
+    "quote": "Table header: \"WATER CLOSETS (URINALS SEE SECTION 424.2 OF THE INTERNATIONAL PLUMBING CODE)\". State Building Code 101.4.3: \"Plumbing. Whenever the term International Plumbing Code is used in this code it shall mean the adopted State Plumbing Code.\"",
+    "url": "https://ags.hawaii.gov/bcc/files/2021/09/2018StateBuildingCode_20210817.pdf"
+   },
+   "small_occupancy_exception": {
+    "text": "Separate rooms for each sex are not required where the total occupant load, employees and customers together, is 15 or fewer, nor in a business (office) occupancy of 25 or fewer, nor in a store of 100 or fewer.",
+    "quote": "Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. Separate facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer.",
+    "url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/29/plumbing-systems"
+   },
+   "occupant_load": {
+    "text": "Office (business areas): 150 square feet gross per occupant. Restaurant dining room (assembly, unconcentrated, tables and chairs): 15 square feet net. Classroom: 20 square feet net.",
+    "quote": "TABLE 1004.5 MAXIMUM FLOOR AREA ALLOWANCES PER OCCUPANT ... Unconcentrated (tables and chairs) 15 net ... Business areas 150 gross ... Educational: Classroom area 20 net",
+    "url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/10/means-of-egress"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": null,
+    "how": "50 occupants / 2 = 25 of each sex. 1 per 25 for the first 50: 25/25 = 1; total rounded up = 1 toilets for each sex. Urinal substitution is not stated in the state code."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": null,
+    "urinals_required": null,
+    "how": "100 occupants / 2 = 50 of each sex. 1 per 25 for the first 50: 50/25 = 2; total rounded up = 2 toilets for each sex. Urinal substitution is not stated in the state code."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": null,
+    "urinals_required": null,
+    "how": "200 occupants / 2 = 100 of each sex. 1 per 25 for the first 50: 50/25 = 2; 1 per 50 for the remaining 50: 1; total rounded up = 3 toilets for each sex. Urinal substitution is not stated in the state code."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": null,
+    "urinals_required": null,
+    "how": "400 occupants / 2 = 200 of each sex. 1 per 25 for the first 50: 50/25 = 2; 1 per 50 for the remaining 150: 3; total rounded up = 5 toilets for each sex. Urinal substitution is not stated in the state code."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": null,
+    "how": "50 occupants / 2 = 25 of each sex. 1 per 75: 25/75 = 0.33, rounded up = 1 for each sex. Urinal substitution is not stated in the state code."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": null,
+    "how": "100 occupants / 2 = 50 of each sex. 1 per 75: 50/75 = 0.67, rounded up = 1 for each sex. Urinal substitution is not stated in the state code."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": null,
+    "urinals_required": null,
+    "how": "200 occupants / 2 = 100 of each sex. 1 per 75: 100/75 = 1.33, rounded up = 2 for each sex. Urinal substitution is not stated in the state code."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": null,
+    "urinals_required": null,
+    "how": "400 occupants / 2 = 200 of each sex. 1 per 75: 200/75 = 2.67, rounded up = 3 for each sex. Urinal substitution is not stated in the state code."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": null,
+    "how": "50 occupants / 2 = 25 of each sex. 1 per 50: 25/50 = 0.5, rounded up = 1 for each sex. Urinal substitution is not stated in the state code."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": null,
+    "how": "100 occupants / 2 = 50 of each sex. 1 per 50: 50/50 = 1, rounded up = 1 for each sex. Urinal substitution is not stated in the state code."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": null,
+    "urinals_required": null,
+    "how": "200 occupants / 2 = 100 of each sex. 1 per 50: 100/50 = 2, rounded up = 2 for each sex. Urinal substitution is not stated in the state code."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": null,
+    "urinals_required": null,
+    "how": "400 occupants / 2 = 200 of each sex. 1 per 50: 200/50 = 4, rounded up = 4 for each sex. Urinal substitution is not stated in the state code."
+   }
+  ],
+  "confidence": "medium"
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "2018 IBC section 803.9 as numbered on the copy read (High-Density Polyethylene (HDPE) and Polypropylene (PP)), pointing to 803.1.1 (NFPA 286 room corner test); Chapter 8 is not amended by the state",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. / 803.1.1: Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1. / Definition, Interior Wall and Ceiling Finish: \"The exposed interior surfaces of buildings, including but not limited to: fixed or movable walls and partitions; toilet room privacy partitions; columns; ceilings ...\"",
+  "url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/8/interior-finishes",
+  "definition_url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/2/definitions",
+  "confidence": "medium",
+  "note": "Read on UpCodes' Hawaii copy (secondary). The state amendment PDF (official) has no amendment to Chapter 8. Confirm the section number against the ICC's own 2018 text; counties may amend."
+ },
+ "access": {
+  "state_standard": "2010 ADA Standards for Accessible Design. The Hawaii State Building Code deletes IBC Chapter 11 and replaces it with a scope section that names the Department of Justice's ADA Standards, so ICC A117.1 does not come in through the building code. For state and county buildings, HRS 103-50 and HAR 11-216 apply the ADA Accessibility Guidelines (36 CFR Part 1191) as adopted and amended by the Disability and Communication Access Board (DCAB).",
+  "differences": [],
+  "differences_note": "No state stall rule that goes beyond the federal 2010 ADA Standards was found. DCAB's interpretive opinions that touch toilet stalls read the federal text; they do not add to it, and they apply only to state and county projects: 2015-01 (a 60-inch turning space does not replace toe clearance under 604.8.1.4 unless the stall is more than 66 inches wide), 2018-05 (a state or county plumbing rule counts as an 'administrative authority' for the 604.5.2 rear grab bar exception), 2025-01 (braille counts as a tactile character, so the 48-inch minimum sign height is measured from the lowest braille or raised character). HAR 11-216 was read on DCAB's accessible web version; it contains no amended stall dimensions. The federal sections 213 and 604 were not re-read for this pack because no difference is claimed.",
+  "state_quotes": [
+   {
+    "source": "Hawaii State Building Code, amendment 20",
+    "url": "https://ags.hawaii.gov/bcc/files/2021/09/2018StateBuildingCode_20210817.pdf",
+    "quote": "Chapter 11 is deleted in its entirety and replaced to read as follows: \"1101 Scope. Buildings or portions of buildings shall be accessible to persons with disabilities in accordance with the following regulations: 1. For construction of buildings or facilities of the state and county governments, compliance with Section 103-50 HRS, administered by the Disability and Communication Access Board, State of Hawaii. 2. Department of Justice's Americans with Disabilities Act Standards for Accessible Design. ... Prior to the issuance of a building permit, the owner (or the owner's representative, professional architect, or engineer) shall submit a statement that all requirements, relating to accessibility for persons with disabilities, shall be complied with.\""
+   },
+   {
+    "source": "HAR 11-216-4.1",
+    "url": "https://health.hawaii.gov/dcab/hawaii-administrative-rules-title-11-chapter-216-department-of-health-disability-and-communication-access-board-rules-of-practice-and-procedures/",
+    "quote": "Subject to amendment by the board or site specific alternate design granted by the board, the Americans with Disabilities Act Accessibility Guidelines, Title 36 Code of Federal Regulations Part 1191, as they existed on July 23, 2004, and the Fair Housing Amendments Act Accessibility Guidelines ... are hereby adopted as the standards governing all plans and specifications for the construction of public buildings, facilities, and sites by the State or any county, or on behalf of the State or any county"
+   },
+   {
+    "source": "DCAB 2015-01",
+    "url": "https://health.hawaii.gov/dcab/files/2016/08/DCAB-2015-01-Accessible-Toilet-Stall-Toe-Clearance.pdf",
+    "quote": "A 60-inch turning space in an accessible toilet compartment does not provide equivalent facilitation or comply with Section 604.8.1.4 exception that requires the stall be greater than 66 inches wide."
+   }
+  ],
+  "process": "Two steps. (1) Every building permit: the owner or the owner's architect or engineer submits a statement that all accessibility requirements will be complied with (State Building Code section 1101 as amended). (2) State and county buildings, buildings on state or county land that are public accommodations or commercial facilities, and projects using state or county funds: plans and specifications go to the Disability and Communication Access Board for review before construction, with a fee of 0.4% of the first $500,000 of estimated construction cost, 0.2% from there to $2,000,000 and 0.02% above that, minimum $200 (HRS 103-50). Private buildings on private land have no state plan review for accessibility. HRS 103-50(b): \"All state and county agencies subject to this section shall seek advice and recommendations from the disability and communication access board on any construction plans prior to commencing with construction.\"",
+  "confidence": "high"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "The state building code requires single-user toilet rooms to be identified for use by either sex. No separate Hawaii statute on single-user restroom signs was found (bills such as HB2216 of 2016 were introduced; no enacted law was found).",
+   "quote": "2902.1.2 Single-User Toilet Facility and Bathing Room Fixtures. The plumbing fixtures located in single-user toilet facilities and bathing rooms, including family or assisted-use toilet and bathing rooms that are required by Section 1109.2, shall contribute toward the total number of required plumbing fixtures for a building or tenant space. Single-user toilet facilities and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified for use by either sex.",
+   "url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/29/plumbing-systems"
+  },
+  "all_gender_shared": {
+   "rule": "The state code (2018 IBC) has no provision for a shared all-gender room with several stalls. It requires separate facilities for each sex wherever fixtures are required, with the small-occupancy exceptions, and it lets two single-user family or assisted-use rooms stand in where each sex needs only one toilet. Whether a shared all-gender room can count toward the required toilets is a question for the county building department.",
+   "quote": "2902.2 Separate Facilities. Where plumbing fixtures are required, separate facilities shall be provided for each sex. / 2902.2.1: Where a building or tenant space requires a separate toilet facility for each sex and each toilet facility is required to have only one water closet, two family or assisted-use toilet facilities shall be permitted to serve as the required separate facilities.",
+   "url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/29/plumbing-systems"
+  },
+  "use_restrictions": {
+   "rule": "None found. Hawaii's public accommodations law prohibits discrimination on the basis of sex, including gender identity or expression. Two searches found no enacted state law limiting restroom use by sex in any class of building.",
+   "quote": "HRS 489-3: \"Unfair discriminatory practices that deny, or attempt to deny, a person the full and equal enjoyment of the goods, services, facilities, privileges, advantages, and accommodations of a place of public accommodation on the basis of race; sex, including gender identity or expression; sexual orientation; color; religion; ancestry; or disability, including the use of a service animal, are prohibited.\"",
+   "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0489/HRS_0489-0003.htm"
+  },
+  "related_new_law": {
+   "rule": "Act 102 of 2026 (SB 2268), signed June 5, 2026, adds a part to HRS chapter 489: places of public accommodation and public-entity buildings planned and designed after July 31, 2027 must provide a powered, height-adjustable adult changing station in a public restroom: two where restrooms are gender-designated (one for women, one for men) or one accessible to people of any gender. Public school facilities are exempt, and there is an undue-burden exemption. This is about changing stations, not stalls, but it affects restroom layouts.",
+   "quote": "Each new establishment shall provide, at a minimum, one universal changing accommodation within the building in a restroom for public use, as follows: (1) Two universal changing accommodations for establishments utilizing gender-designated restrooms; provided that at least one is designated for or accessible by women and at least one is designated for or accessible by men; or (2) One universal changing accommodation that is accessible to people of any gender identity or expression.",
+   "url": "https://data.capitol.hawaii.gov/sessions/session2026/bills/GM1202_.PDF"
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": true,
+  "law": "Hawaii Revised Statutes chapter 104 (Wages and Hours of Employees on Public Works)",
+  "threshold": "Every contract in excess of $2,000 for construction of a public work project",
+  "rates_url": "https://labor.hawaii.gov/rs/home/wages/wage-rate-schedule/",
+  "quote": "HRS 104-2(a): \"This chapter shall apply to every contract in excess of $2,000 for construction of a public work project to which a governmental contracting agency is a party\". 104-2(b): \"Every laborer and mechanic performing work on the job site for the construction of any public work project shall be paid no less than prevailing wages; provided that: (1) The prevailing wages shall be established by the director\". Department of Labor and Industrial Relations: \"The wage rate schedules are issued on or about the 15th of February and September of each year.\"",
+  "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0104/HRS_0104-0002.htm",
+  "who_sets": "Director of Labor and Industrial Relations (rates are statewide, the modal rate, and not less than the federal rate)",
+  "current_schedule": {
+   "bulletin": "Wage Rate Schedule Bulletin No. 511, September 14, 2026 (addenda 512 and 513 not read)",
+   "url": "https://labor.hawaii.gov/rs/files/2026/09/WRS511.pdf",
+   "carpenter": "Journeyman Carpenter (Form/Framer/Rough/Finish): $87.24 total an hour from 08/31/2026 ($56.75 basic plus $30.49 fringe); $89.29 from 08/30/2027",
+   "note": "Which classification covers toilet partition installation is not stated in the bulletin; ask the Department of Labor and Industrial Relations, Wage Standards Division."
+  },
+  "confidence": "high"
+ },
+ "sales_tax": {
+  "state_rate": 0.04,
+  "rate_note": "Hawaii has no sales tax. The general excise tax (GET) is a tax on the business's gross receipts: 4% on retail sales, services and contracting, plus a county surcharge (City and County of Honolulu 0.5% through December 31, 2030, total 4.5%). A business may visibly pass it on at up to 4.712% in Honolulu. Wholesale rate 0.5%.",
+  "shipped_goods": {
+   "rule": "An out-of-state seller owes GET on sales to Hawaii customers once it has presence in the state: $100,000 or more in annual gross receipts from Hawaii customers, or 200 or more annual transactions, or an office, inventory, employees or representation, or installation, training or repair services provided in the state with the sale. It may pass the tax on. If the seller is not licensed and not subject to GET, the buyer owes use tax at 4.5% (4% plus county surcharge) on the landed value for goods for the buyer's own use.",
+   "quote": "Tax Facts 2019-1: \"if your business has an office, inventory, property, employees, or other representation in the State, or if services in conjunction with the sales of property, such as training, installation, or repairs, are provided in the State, or if your business has annual gross receipts of $100,000 or more from customers in the State, or has 200 or more annual transactions with customers in the State, your business has presence in the State.\" Tax Facts 95-1: \"Use tax is a tax on imported tangible personal property (goods), services, contracting, and intangibles from an unlicensed seller. ... 4.5% on imports for your own use or consumption.\"",
+   "url": "https://files.hawaii.gov/tax/legal/taxfacts/tf2019-1.pdf",
+   "url_2": "https://files.hawaii.gov/tax/legal/taxfacts/tf2025-95-1.pdf"
+  },
+  "freight_taxed": true,
+  "freight_note": "Read for use tax: \"Landed value of goods, services, contracting, and intangibles is the purchase price, shipping and handling fees, insurance costs, customs duty and other related costs.\" (Tax Facts 95-1). For GET the tax is on gross receipts (\"total business income before any business expenses are deducted\", Tax Facts 37-1); no passage that names shipping charges under GET was read.",
+  "install_labor": {
+   "rule": "Taxed. Installing building components is contracting, and gross income from contracting is subject to GET at 4% plus the county surcharge, with no carve-out for labor billed separately. An out-of-state installer is taxed the same way because contracting income is allocated to where the project is.",
+   "quote": "Tax Facts 99-3: \"Gross income from contracting is subject to GET at 4% plus county surcharge.\" and \"an out-of-state contractor, who has no permanent office in Hawaii, is subject to GET on contracting income from a project located in Hawaii.\"",
+   "url": "https://files.hawaii.gov/tax/legal/taxfacts/tf2025-99-3.pdf"
+  },
+  "furnish_and_install": {
+   "rule": "A contractor owes GET at 4% plus county surcharge on the whole contract price, materials and labor, and may deduct amounts paid to subcontractors. A retailer that sells items and hires someone to install them is treated as a contractor on the whole amount; a retailer whose customer finds the installer reports under retailing. Materials a contractor imports and builds into the work carry use tax of 0.5%.",
+   "quote": "Tax Facts 99-3, question 3: \"You are a contractor under section 237-6, HRS, because you provide installation services (by hiring a subcontractor) for the cabinets, windows, hot water heater, carpet, etc. that you sell. You should report the amount you receive from your customer under the contracting classification and may take a deduction for the amount you pay to the subcontractor ... If you are a retailer that sells cabinets, windows, hot water heater, carpet, etc. and your customer is responsible for finding a contractor to install these items, you are not a contractor. You should report the income you receive under the retailing classification.\" Question 28: \"The use tax is 0.5% on the value of goods, such as building materials, which a contractor will incorporate into a finished work or project\"",
+   "url": "https://files.hawaii.gov/tax/legal/taxfacts/tf2025-99-3.pdf"
+  },
+  "county_surcharge": {
+   "quote": "City and County of Honolulu: 0.5% effective January 1, 2007 to December 31, 2030. ... maximum pass-on rates ... City and County of Honolulu: 4.7120%",
+   "url": "https://tax.hawaii.gov/geninfo/get/"
+  },
+  "agency": "Hawaii Department of Taxation",
+  "confidence": "high"
+ },
+ "page": {
+  "stalls_intro": "Hawaii's rules count toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women, and any fraction rounds up. Every toilet needs a stall. Hawaii's state rules don't say how many of the men's toilets urinals may replace, so the table shows toilets only.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "An office for up to 25 people, or any space for up to 15, may use one shared restroom. Each county adopts its own version of the state rules, so confirm the counts and the use of urinals with the county building department.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20 square feet.",
+  "fire_bullet": "- **Fire safety:** Hawaii's building rules require solid plastic (HDPE) and polypropylene partitions to pass a room fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Hawaii applies the federal access rules. With a building permit application, the owner or designer states in writing that the access rules will be met. Plans for state and county buildings, and for buildings on state or county land, also go to the state's Disability and Communication Access Board for review before construction.",
+  "state_extra_bullet": "- **Hawaii and federal stall rules match:** Hawaii uses the federal rules for stalls, doors and grab bars, so a stall that meets one meets the other.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** under Hawaii's building rules a one-person restroom must be marked as open to everyone. Where toilets are required, the rules call for separate men's and women's rooms and don't cover a shared all-gender room with several stalls, so ask the county building department before planning one. State law bars places open to the public from discriminating on the basis of gender identity or expression. Buildings open to the public that are designed after July 31, 2027 must include an adult changing station in a public restroom; public schools are exempt.",
+  "public_jobs": "Hawaii requires state-set wages on public construction contracts over $2,000, and the state labor department publishes the rates each February and September.",
+  "tax_install_bullet": "- **Tax on installation:** Hawaii has no sales tax. It has a general excise tax that the business owes on what it takes in: 4%, plus 0.5% for the county in Honolulu. An installer owes it on the full installation price, labor included, and may add it to the invoice at up to 4.712%.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxed in one of two ways. A seller with enough Hawaii sales (at least $100,000 or 200 sales a year) owes the general excise tax and may pass it on. If the seller isn't licensed in Hawaii, the buyer owes use tax at the same rate on the price plus shipping.",
+  "tax_confirm": "your accountant or the Hawaii Department of Taxation",
+  "sources": [
+   "- Toilet counts and restroom rules: [Hawaii State Plumbing Code, amendments to the 2018 Uniform Plumbing Code](https://ags.hawaii.gov/bcc/files/2020/06/StatePlumbingCode_20200519.pdf), section 422.0, which sends fixture counts to the [Hawaii State Building Code, amendments to the 2018 International Building Code](https://ags.hawaii.gov/bcc/files/2021/09/2018StateBuildingCode_20210817.pdf); Table 2902.1 and sections 2902.1.1 to 2902.2.1 of the 2018 International Building Code, read on a [secondary copy](https://up.codes/viewer/hawaii/ibc-2018/chapter/29/plumbing-systems). Counties adopt and amend the state codes under [HRS 107-28](https://data.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0107/HRS_0107-0028.htm). Checked 2026-11-24.",
+   "- Floor area per person: 2018 International Building Code, Table 1004.5, read on a [secondary copy](https://up.codes/viewer/hawaii/ibc-2018/chapter/10/means-of-egress). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: 2018 International Building Code, sections 803.1.1 and 803.9 and the definition of interior wall and ceiling finish, read on a [secondary copy](https://up.codes/viewer/hawaii/ibc-2018/chapter/8/interior-finishes); the [Hawaii State Building Code](https://ags.hawaii.gov/bcc/files/2021/09/2018StateBuildingCode_20210817.pdf) does not amend Chapter 8. Checked 2026-11-24.",
+   "- Wheelchair access and state review: [Hawaii State Building Code](https://ags.hawaii.gov/bcc/files/2021/09/2018StateBuildingCode_20210817.pdf), Chapter 11 as replaced; [HRS 103-50](https://data.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0103/HRS_0103-0050.htm); [Hawaii Administrative Rules 11-216](https://health.hawaii.gov/dcab/hawaii-administrative-rules-title-11-chapter-216-department-of-health-disability-and-communication-access-board-rules-of-practice-and-procedures/); [Disability and Communication Access Board, Facility Access](https://health.hawaii.gov/dcab/facility-access/) and its [interpretive opinions](https://health.hawaii.gov/dcab/facility-access/interpretive-opinions/), including [DCAB 2015-01 on toe clearance](https://health.hawaii.gov/dcab/files/2016/08/DCAB-2015-01-Accessible-Toilet-Stall-Toe-Clearance.pdf). Federal rules: 2010 ADA Standards for Accessible Design. Checked 2026-11-24.",
+   "- Restroom access and changing stations: [HRS 489-3](https://data.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0489/HRS_0489-0003.htm) and [Act 102, Session Laws of Hawaii 2026 (SB 2268)](https://data.capitol.hawaii.gov/sessions/session2026/bills/GM1202_.PDF). Checked 2026-11-24.",
+   "- Public jobs: [HRS 104-2](https://data.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0104/HRS_0104-0002.htm) and the Department of Labor and Industrial Relations' [Wage Rate Schedule](https://labor.hawaii.gov/rs/home/wages/wage-rate-schedule/), [Bulletin No. 511, September 14, 2026](https://labor.hawaii.gov/rs/files/2026/09/WRS511.pdf). Checked 2026-11-24.",
+   "- General excise and use tax: Hawaii Department of Taxation, [General Excise Tax information](https://tax.hawaii.gov/geninfo/get/), [Tax Facts 37-1, General Excise Tax](https://files.hawaii.gov/tax/legal/taxfacts/tf2025-37-1.pdf), [Tax Facts 95-1, Use Tax](https://files.hawaii.gov/tax/legal/taxfacts/tf2025-95-1.pdf), [Tax Facts 99-3, General Excise and Use Tax Information for Construction Contractors](https://files.hawaii.gov/tax/legal/taxfacts/tf2025-99-3.pdf) and [Tax Facts 2019-1, Information on Hawaii State Taxes for Taxpayers Doing Business in Hawaii](https://files.hawaii.gov/tax/legal/taxfacts/tf2019-1.pdf). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design (HRS 103-50 and HAR 11-216 for state and county buildings); Hawaii State Building Code (2018 International Building Code with Hawaii amendments, adopted April 20, 2021); Hawaii State Plumbing Code (2018 Uniform Plumbing Code with Hawaii amendments, effective May 19, 2020)"
+ },
+ "sources_read": [
+  {
+   "url": "https://ags.hawaii.gov/bcc/building-code-rules/",
+   "official": true
+  },
+  {
+   "url": "https://ags.hawaii.gov/bcc/files/2021/09/2018StateBuildingCode_20210817.pdf",
+   "official": true
+  },
+  {
+   "url": "https://ags.hawaii.gov/bcc/files/2020/06/StatePlumbingCode_20200519.pdf",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/hawaii/ibc-2018/chapter/2/definitions",
+   "official": false
+  },
+  {
+   "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0107/HRS_0107-0028.htm",
+   "official": true
+  },
+  {
+   "url": "https://health.hawaii.gov/dcab/facility-access/",
+   "official": true
+  },
+  {
+   "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0103/HRS_0103-0050.htm",
+   "official": true
+  },
+  {
+   "url": "https://health.hawaii.gov/dcab/hawaii-administrative-rules-title-11-chapter-216-department-of-health-disability-and-communication-access-board-rules-of-practice-and-procedures/",
+   "official": true
+  },
+  {
+   "url": "https://health.hawaii.gov/dcab/facility-access/interpretive-opinions/",
+   "official": true
+  },
+  {
+   "url": "https://health.hawaii.gov/dcab/files/2016/08/DCAB-2015-01-Accessible-Toilet-Stall-Toe-Clearance.pdf",
+   "official": true
+  },
+  {
+   "url": "https://health.hawaii.gov/dcab/files/2019/02/DCAB-2018-05_Grab_Bar_Exception_Ruling.pdf",
+   "official": true
+  },
+  {
+   "url": "https://health.hawaii.gov/dcab/files/2025/05/DCAB-2025-01_Signs_Height_Above_Finish_Floors_04-22-25.pdf",
+   "official": true
+  },
+  {
+   "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0489/HRS_0489-0003.htm",
+   "official": true
+  },
+  {
+   "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0489/HRS_0489-0002.htm",
+   "official": true
+  },
+  {
+   "url": "https://data.capitol.hawaii.gov/sessions/session2026/bills/GM1202_.PDF",
+   "official": true
+  },
+  {
+   "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0104/HRS_0104-0002.htm",
+   "official": true
+  },
+  {
+   "url": "https://labor.hawaii.gov/rs/home/wages/wage-rate-schedule/",
+   "official": true
+  },
+  {
+   "url": "https://labor.hawaii.gov/rs/files/2026/09/WRS511.pdf",
+   "official": true
+  },
+  {
+   "url": "https://tax.hawaii.gov/geninfo/get/",
+   "official": true
+  },
+  {
+   "url": "https://files.hawaii.gov/tax/legal/taxfacts/tf2025-37-1.pdf",
+   "official": true
+  },
+  {
+   "url": "https://files.hawaii.gov/tax/legal/taxfacts/tf2025-95-1.pdf",
+   "official": true
+  },
+  {
+   "url": "https://files.hawaii.gov/tax/legal/taxfacts/tf2025-99-3.pdf",
+   "official": true
+  },
+  {
+   "url": "https://files.hawaii.gov/tax/legal/taxfacts/tf2019-1.pdf",
+   "official": true
+  }
+ ],
+ "to_confirm": [
+  "Honolulu (city agent): which edition of the building and plumbing codes the City and County of Honolulu enforces and its amendments to Table 2902.1, urinals and Chapter 8. Counties adopt and amend the state codes (HRS 107-28), so the state table may not be the one in force. Ask the Honolulu Department of Planning and Permitting.",
+  "Urinals: the state code gives no substitution rule that can be applied (the table points to International Plumbing Code 424.2, which Hawaii replaces with the Uniform Plumbing Code). Ask the State Building Code Council or the county building department how many men's toilets urinals may replace. Whether the state's replacement of UPC 422.0 leaves subsections 422.1 to 422.5 in force was not determined.",
+  "Table 2902.1, Table 1004.5 and section 803.9 were read on UpCodes' Hawaii copy of the 2018 IBC, not on the ICC's site (it did not load). Browser check of the section number for the HDPE rule (803.9 on the copy read) before launch.",
+  "Shared all-gender multi-stall rooms: the 2018 code has no provision; ask the county building department whether one can count toward the required toilets.",
+  "No enacted Hawaii statute on single-user restroom signs or on restricting restroom use was found in two searches; a full check of the Hawaii Revised Statutes index was not done.",
+  "Act 102 of 2026 was read in the governor's transmittal copy (a scan with OCR noise); the final section numbers in HRS chapter 489 were not yet assigned.",
+  "HAR 11-216-4.1 cites the federal guidelines 'as they existed on July 23, 2004'; DCAB's page lists the 2010 ADA Standards as the adopted guideline. Any DCAB amendment that changes a stall dimension was not found, but the board's full list of amendments was not located: ask DCAB, (808) 586-8121.",
+  "Prevailing wage: which classification in the Wage Rate Schedule covers toilet partition installation (carpenter was read: $87.24 total from 08/31/2026). Addenda 512 and 513 were not read.",
+  "Tax: whether GET applies to separately stated shipping charges was not read in a Department of Taxation publication (gross receipts is the base; shipping is named only in the use tax 'landed value'). Tax Facts 2019-1 says installation services provided in Hawaii with a sale create presence, and Tax Facts 99-3 treats a seller who arranges installation through a subcontractor as a contractor: how that applies to Next Partitions' referral-only model, and whether Next Partitions meets the $100,000 or 200-transaction threshold, are questions for Abe's accountant.",
+  "County surcharge rates are set through December 31, 2030."
+ ]
+}
