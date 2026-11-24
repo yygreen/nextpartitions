@@ -1,0 +1,466 @@
+{
+ "state": "WI",
+ "state_name": "Wisconsin",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "Wisconsin Commercial Building Code (Wis. Admin. Code chs. SPS 361 to 366), which adopts the International Building Code with Wisconsin changes in SPS 362.2902. The Wisconsin Plumbing Code (SPS 381 to 387) is state-written and does not set the count.",
+   "edition": "2021 IBC with the DSPS inserts headed 'September 1, 2025 Wisconsin Commercial Building Code, SPS 361 - SPS 366'",
+   "table": "IBC Table 2902.1, as changed by SPS 362.2902 (1) (c) and (d)",
+   "url": "https://dsps.wi.gov/MediaFileLocation/kqidqwpw/sps362insert.pdf",
+   "quote": "Plumbing fixtures shall be provided in the minimum number as shown in Table 2902.1 based on the actual use of the building or space. [IBC 2902.1, read on UpCodes] ... Substitute the following wording for the water closets heading in IBC Table 2902.1: Water closets (see s. SPS 362.2902 (1) (a) 1. for urinals). [SPS 362.2902 (1) (c) 1., DSPS insert]"
+  },
+  "cities_may_amend": false,
+  "cities_may_amend_note": "DSPS Act 270 FAQ: '2013 WI Act 270 which created a uniform commercial building code'; the only exception named is 'preexisting fire detection, prevention or suppression ordinances' that were grandfathered. Wis. Stat. 101.02 (7r) itself could not be opened. https://dsps.wi.gov/a-z-boards-and-councils-list/fire-dues-appeals/2013-wisconsin-act-270-faqs/",
+  "rows": {
+   "office": {
+    "row_label": "2 Business: Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial, ambulatory care and similar uses",
+    "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "urinals": "No urinal column. SPS 362.2902 (1) (a) 1.: urinals may replace up to 50 percent of the men's water closets where more than one is required.",
+    "quote": "Business | Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial, ambulatory care and similar uses | 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50 [water closets] | 1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80 [lavatories]",
+    "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/29/plumbing-systems"
+   },
+   "restaurant": {
+    "row_label": "1 Assembly: Restaurants, banquet halls and food courts (footnote d)",
+    "wc_male": "1 per 75",
+    "wc_female": "1 per 75",
+    "urinals": "No urinal column. Group A: urinals may replace up to 67 percent of the men's water closets where more than one is required.",
+    "quote": "Restaurants, banquet halls and food courts d | 1 per 75 [male] | 1 per 75 [female] | 1 per 200 [lavatories]. Footnote d: The occupant load for seasonal outdoor seating and entertainment areas shall be included when determining the minimum number of facilities required.",
+    "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/29/plumbing-systems"
+   },
+   "school": {
+    "row_label": "3 Educational: Educational facilities",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 50",
+    "urinals": "No urinal column. Group E: urinals may replace up to 67 percent of the men's water closets where more than one is required.",
+    "quote": "Educational | Educational facilities | 1 per 50 [water closets] | 1 per 50 [lavatories] | 1 per 100 [drinking fountains] | 1 service sink",
+    "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/29/plumbing-systems"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Total occupant load is divided in half, unless approved statistical data shows another split. Wisconsin deleted the model code's exception that lets a multi-user all-gender room be counted on 100 percent of the occupant load.",
+    "quote": "To determine the occupant load of each sex, the total occupant load shall be divided in half. [IBC 2902.1.1] ... Exception 2 to IBC section 2902.1.1 is not included as part of this code. [SPS 362.2902 (1) (a) 6.]",
+    "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/29/plumbing-systems ; https://dsps.wi.gov/MediaFileLocation/kqidqwpw/sps362insert.pdf"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole number.",
+    "quote": "Fractional numbers resulting from applying the fixture ratios of Table 2902.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number.",
+    "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/29/plumbing-systems"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are optional. Where the men's side needs more than one toilet, urinals may replace up to 50 percent of them, or up to 67 percent in assembly (restaurants) and educational buildings. The rule does not say how an odd number rounds. Urinals must be against walls at least 6 feet 8 inches high.",
+    "quote": "Where more than one water closet is required for males, urinals may be substituted for up to 50 percent of the required number of water closets, except that urinals may be substituted for up to 67 percent of the required number of water closets in Group A and E occupancies. [SPS 362.2902 (1) (a) 1.] ... Urinals shall be placed against walls at least 6 feet 8 inches high. [SPS 362.2900 (3)]",
+    "url": "https://dsps.wi.gov/MediaFileLocation/kqidqwpw/sps362insert.pdf"
+   },
+   "small_occupancy_exception": {
+    "text": "Separate men's and women's rooms are not required with 15 or fewer occupants in total, in a business occupancy of 25 or fewer, or in a store of 100 or fewer. Wisconsin adds that separate facilities may not be required in any occupancy when the required number of fixtures is provided in individual-user toilet rooms.",
+    "quote": "Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. Separate facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer. [IBC 2902.2] ... This is a department exception to the requirements in IBC section 2902.2: Separate facilities may not be required in all occupancies when the number of fixtures is provided as required under IBC Table 2902.1 in individual user toilet rooms. [SPS 362.2902 (2) (b)]",
+    "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/29/plumbing-systems ; https://dsps.wi.gov/MediaFileLocation/kqidqwpw/sps362insert.pdf"
+   },
+   "occupant_load": {
+    "text": "Office (business areas) 150 square feet gross per person; restaurant dining (assembly, unconcentrated, tables and chairs) 15 net; classroom 20 net. Wisconsin also lets the fixture count rest on the actual occupancy load where the department accepts the justification.",
+    "quote": "Business areas | 150 gross ... Unconcentrated (tables and chairs) | 15 net ... Classroom area | 20 net [IBC Table 1004.5] ... The required number of plumbing fixtures may be based on the actual occupancy load rather than the load determined by square footage per IBC Table 1004.5. The actual occupancy load shall be based on justification found acceptable to the department. [SPS 362.2902 (1) (e)]",
+    "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/10/means-of-egress ; https://dsps.wi.gov/MediaFileLocation/kqidqwpw/sps362insert.pdf"
+   }
+  },
+  "other_state_rules": [
+   {
+    "point": "More than 500 people",
+    "quote": "Footnote g. Wherever more than 500 people congregate and more than the required minimum number of water closets or urinals are provided for males, twice as many of those additional toilet facilities shall be provided for females. [SPS 362.2902 (1) (d)]",
+    "url": "https://dsps.wi.gov/MediaFileLocation/kqidqwpw/sps362insert.pdf"
+   },
+   {
+    "point": "Stadiums and arenas (A-4, A-5), women's toilets",
+    "quote": "1 per 37 for the first 1,500 and 1 per 60 for the remainder exceeding 1,500. [SPS 362.2902 (1) (c) 3.]",
+    "url": "https://dsps.wi.gov/MediaFileLocation/kqidqwpw/sps362insert.pdf"
+   },
+   {
+    "point": "No locked or pay toilets",
+    "quote": "Restriction of access to toilet rooms, such as by use of key locks or other similar devices, is prohibited [SPS 362.1210 (1m)] ... All toilet facilities shall be free of charge. [SPS 362.2902 (6)]",
+    "url": "https://dsps.wi.gov/MediaFileLocation/kqidqwpw/sps362insert.pdf"
+   },
+   {
+    "point": "Alterations",
+    "quote": "SPS 366.0808 Minimum plumbing fixtures [Wisconsin additions to the existing building code require fixture counts per the IBC in some alterations and changes of occupancy; not read in full]",
+    "url": "https://dsps.wi.gov/MediaFileLocation/jcoa5w5e/sps366insert.pdf"
+   }
+  ],
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 women, 25 men. 1 per 25 for the first 50: 25/25 = 1 each. Only one men's toilet is required, so no urinal may replace it."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "50 each. 50/25 = 2 each. Urinals may replace up to 50% of the men's 2 = 1."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 each. First 50: 50/25 = 2; remaining 50 at 1 per 50 = 1; total 3 each. Up to 50% of 3 = 1.5, so 1 urinal (2 would exceed 50%); the rule does not say how to round, so confirm with plan review."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 each. First 50: 2; remaining 150 at 1 per 50 = 3; total 5 each. Up to 50% of 5 = 2.5, so 2 urinals; rounding not stated."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 each. 25/75 = 0.33, rounds up to 1 each. Only one men's toilet required, so no urinal substitution."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 each. 50/75 = 0.67, rounds up to 1 each. No urinal substitution with one toilet."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 each. 100/75 = 1.33, rounds up to 2 each. Group A: urinals may replace up to 67% of 2 = 1.34, so 1."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 each. 200/75 = 2.67, rounds up to 3 each. Up to 67% of 3 = 2.01, so 2 urinals. Six toilets in total are required, so the building code also requires an accessible family or assisted-use toilet room (IBC 1110.2.1), whose fixtures count toward the total."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 each. 25/50 = 0.5, rounds up to 1 each. No urinal substitution with one toilet."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 each. 50/50 = 1 each. No urinal substitution with one toilet."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 each. 100/50 = 2 each. Group E: up to 67% of 2 = 1.34, so 1 urinal."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 each. 200/50 = 4 each. Up to 67% of 4 = 2.68, so 2 urinals."
+   }
+  ],
+  "confidence": "medium",
+  "confidence_note": "Wisconsin's changes were read in the official DSPS insert (high). The unamended IBC 2021 table rows, section 2902.1.1 and Table 1004.5 were read on UpCodes' Wisconsin edition because codes.iccsafe.org and docs.legis.wisconsin.gov did not serve text (medium)."
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "IBC 2021 section 803.9, adopted without change (the DSPS insert has no Chapter 8 pages); toilet room privacy partitions are interior wall and ceiling finish under the IBC section 202 definition",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. ... 803.1.1 Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1. ... [Section 202] Interior Wall and Ceiling Finish. The exposed interior surfaces of buildings, including but not limited to: fixed or movable walls and partitions; toilet room privacy partitions; columns; ceilings ...",
+  "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/8/interior-finishes ; https://up.codes/viewer/wisconsin/ibc-2021/chapter/2/definitions",
+  "confidence": "medium",
+  "note": "Model text read on UpCodes' Wisconsin edition. The official DSPS insert lists inserts for IBC chapters 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 14, 15, 16, 18, 21 to 25, 27, 29 to 33, 35 and 36, none for Chapter 8, so section 803.9 applies as published."
+ },
+ "access": {
+  "state_standard": "IBC 2021 Chapter 11 with Wisconsin changes (SPS 362.1102 to 362.1112), which references ICC A117.1-2017 (IBC Chapter 35: 'ICC A117.1-17'). Wisconsin's Chapter 35 change (SPS 362.3500) does not alter that edition. Wisconsin's Chapter 11 changes do not touch toilet rooms or stalls.",
+  "differences": [
+   {
+    "point": "Toe clearance under the accessible stall's partitions",
+    "state": "12 inches high and 8 inches deep at the front partition and one side partition, unless the stall is deeper than 64 inches (wall-hung toilet) or 67 inches (floor-mounted), or wider than 68 inches",
+    "federal": "604.8.1.4: 'a toe clearance of 9 inches (230 mm) minimum above the finish floor and 6 inches (150 mm) deep minimum beyond the compartment-side face of the partition' (exceptions at 62, 65 and 66 inches); 12 inches only for children's stalls",
+    "state_url": "https://up.codes/viewer/wisconsin/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "604.9.5.1 The front partition and at least one side partition of wheelchair accessible toilet compartments shall provide a toe clearance of 12 inches (305 mm) minimum above the floor and extending 8 inches (205 mm) beyond the compartment side face of the partition, exclusive of partition support members."
+   },
+   {
+    "point": "Vertical grab bar",
+    "state": "The side wall of an accessible stall needs an 18-inch vertical grab bar in addition to the horizontal bar; ambulatory stalls need side-wall bars (horizontal and vertical) on both sides",
+    "federal": "604.5.1: 'The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall.' No vertical bar.",
+    "state_url": "https://up.codes/viewer/wisconsin/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "604.5.1 Fixed side-wall grab bars shall include a horizontal bar complying with Section 604.5.1.1 and a vertical grab bar complying with Section 604.5.1.2. ... 604.5.1.2 A vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall."
+   },
+   {
+    "point": "Family or assisted-use toilet room",
+    "state": "Required in assembly (restaurants included) and mercantile buildings where six or more toilets are required in total",
+    "federal": "No federal requirement to provide one; 213.2.1 only sets what a unisex toilet room may contain.",
+    "state_url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/11/accessibility",
+    "quote": "1110.2.1 In assembly and mercantile occupancies, an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required."
+   },
+   {
+    "point": "Number of accessible stalls (no practical difference)",
+    "state": "5 percent of compartments wheelchair accessible; ambulatory stall where compartments plus urinals total six or more",
+    "federal": "213.3.1: 'at least one toilet compartment shall comply with 604.8.1 ... at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures.'",
+    "state_url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/11/accessibility",
+    "quote": "1110.2.4 Where water closet compartments are provided in a toilet room or bathing room, at least 5 percent of the total number of compartments shall be wheelchair accessible. Where the combined total water closet compartments and urinals provided in a toilet room or bathing room is six or more, at least 5 percent of the total number of compartments shall be ambulatory accessible, provided in addition to the wheelchair-accessible compartment."
+   },
+   {
+    "point": "Stall sizes and doors (same)",
+    "state": "Wheelchair stall 60 inches wide, 56 deep (wall-hung) or 59 (floor-mounted); ambulatory 35 to 37 wide, 60 deep; self-closing door with pulls both sides. A117.1-2017 adds an optional alternate stall, 60 by 84 inches, and more choices for where the door opening sits.",
+    "federal": "604.8.1.1 and 604.8.2.1: same sizes; 604.8.1.2: door opening 4 inches maximum from the side wall or partition farthest from the water closet.",
+    "state_url": "https://up.codes/viewer/wisconsin/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "604.9.2.1 The minimum area of a wheelchair accessible toilet compartment shall be 60 inches (1525 mm) minimum in width measured perpendicular to the side wall, and 56 inches (1420 mm) minimum in depth for wall hung water closets, and 59 inches (1500 mm) minimum in depth for floor mounted water closets"
+   }
+  ],
+  "process": "No separate accessibility registration. Accessibility is checked in commercial building plan review: 'Plan review is required for commercial, industrial, and other public buildings 25,000 cubic feet or larger. Plan review is also needed for any size of school, high-hazard occupancy, and three-unit or larger residential building.' DSPS reviews, or a municipality with delegated authority; 'DSPS does not issue commercial building permits. See the local municipality'. (https://dsps.wi.gov/Pages/Programs/CommercialBuildings/Default.aspx)",
+  "confidence": "medium",
+  "note": "A117.1-2017 and IBC Chapter 11 read on UpCodes (secondary); federal text read on access-board.gov. Door sign rules (A117.1 section 703) were not compared."
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "Single-user toilet rooms must be identified as available to all persons regardless of sex, and count toward the required fixtures. Single-occupant rooms may have privacy locks.",
+   "quote": "Single-user toilet and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified as being available for use by all persons regardless of their sex. [IBC 2902.1.2, not changed by Wisconsin] ... Single-occupant toilet rooms may have privacy locks. [SPS 362.1210 (1m) (c)]",
+   "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/29/plumbing-systems ; https://dsps.wi.gov/MediaFileLocation/kqidqwpw/sps362insert.pdf"
+  },
+  "all_gender_shared": {
+   "rule": "Allowed: the model code's exception for rooms designed for both sexes stands in Wisconsin. Each toilet needs its own compartment with a door, and urinals must be in a stall or visually separated. Wisconsin deleted the calculation exception for all-gender multi-user rooms, so the count is still worked out per sex (half and half).",
+   "quote": "Separate facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by both sexes and privacy for water closets are installed in accordance with Section 405.3.4 of the International Plumbing Code. Urinals shall be located in an area visually separated from the remainder of the facility or each urinal that is provided shall be located in a stall. [IBC 2902.2 exception 6] ... Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy. [IBC 1210.3.1] ... Exception 2 to IBC section 2902.1.1 is not included as part of this code. [SPS 362.2902 (1) (a) 6.]",
+   "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/29/plumbing-systems ; https://up.codes/viewer/wisconsin/ibc-2021/chapter/12/interior-environment ; https://dsps.wi.gov/MediaFileLocation/kqidqwpw/sps362insert.pdf",
+   "note": "In Wisconsin 'International Plumbing Code' means chs. SPS 381 to 387 (SPS 362.2901 note); whether those chapters carry a compartment rule matching IPC 405.3.4 was not read."
+  },
+  "use_restrictions": {
+   "rule": "No Wisconsin statute restricting restroom use by sex was found. Bills on sex-designated school sports teams and locker rooms (2025 AB 100 and AB 102) were vetoed on 2026-03-31 according to news reports; the legislature's site could not be opened to confirm. Wis. Stat. 101.128 ('restroom equity') concerns women's speed of access at large public venues, not who may use a room.",
+   "quote": "Public facilities which meet the requirements of s. 101.128 (3) and (4), Stats., must provide a sufficient number of toilets and fixtures to ensure women have a speed of access equal to that of men when at maximum capacity under s. 101.128 (2), Stats. [SPS 362.2902 (7)]",
+   "url": "https://dsps.wi.gov/MediaFileLocation/kqidqwpw/sps362insert.pdf"
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": false,
+  "law": "None. The 2017-2019 state budget (2017 Wisconsin Act 59) repealed Wisconsin's prevailing wage laws; state building projects advertised after September 23, 2017 are not covered. Only the federal Davis-Bacon Act applies, on federally funded work.",
+  "threshold": null,
+  "rates_url": "https://sam.gov/wage-determinations",
+  "quote": "The 2017 - 2019 state budget repealed Wisconsin's prevailing wage laws. Prevailing Wage rates applicable to state agencies will be those issued by the U.S. Department of Labor under the Davis-Bacon Act, 40 U.S.C. 3142. [DWD] ... Act 59 also repealed Wisconsin's prevailing wage requirements for state building projects. State prevailing wage no longer applies to projects advertised after September 23, 2017. This change did not affect the Federal Davis Bacon Act requirements. [DOA]",
+  "url": "https://www.dwd.wisconsin.gov/er/laborstandards/prevailingwage/default.htm ; https://doa.wi.gov/Pages/DoingBusiness/OtherImportantNotices.aspx",
+  "confidence": "high",
+  "note": "Whether Wis. Stat. 66.0903 bars cities and school districts from setting their own prevailing wage could not be read (legislature site blocked); the city agent should check Madison's and Milwaukee's own wage ordinances."
+ },
+ "sales_tax": {
+  "state_rate": 0.05,
+  "local_note": "Publication 201 lists 0.5% county taxes, a 0.9% Milwaukee County tax and a 2% City of Milwaukee tax (both from January 1, 2024); the city agent confirms the local rate.",
+  "shipped_goods": {
+   "rule": "Taxable. A remote seller must collect Wisconsin tax if its gross sales into Wisconsin exceed $100,000 in the previous or current calendar year; otherwise the buyer owes 5% use tax (plus local).",
+   "quote": "a remote seller is only required to collect and remit sales or use tax if its gross sales into Wisconsin exceed $100,000 in the previous or current calendar year. Gross sales include all sales into Wisconsin, including sales for resale, taxable, and exempt sales. [DOR remote sellers page] ... The Wisconsin use tax is a 5% tax imposed on the purchase price of taxable products or taxable services that are stored, used, or consumed within Wisconsin, and upon which a Wisconsin sales or use tax has not previously been paid. [Publication 201]",
+   "url": "https://www.revenue.wi.gov/Pages/Businesses/remote-sellers.aspx ; https://www.revenue.wi.gov/DOR%20Publications/pb201.pdf"
+  },
+  "freight_taxed": true,
+  "freight": {
+   "quote": "When a retailer sells taxable products or services which are subject to tax and the retailer charges the purchaser for the delivery, the retailer's total charge, including the delivery charge, is taxable. It is immaterial whether delivery is made by the seller's vehicle, a common or contract carrier, or the United States Postal Service. ... The purchase price does not include delivery charges paid by the Wisconsin consumer directly to the carrier.",
+   "url": "https://www.revenue.wi.gov/DOR%20Publications/pb201.pdf"
+  },
+  "install_labor": {
+   "rule": "Not taxed where the partitions are affixed to the building: installing them is a real property construction activity, and the contractor's charges for labor are not subject to sales tax. Free-standing partitions (not affixed) stay personal property and their installation is taxable.",
+   "quote": "A contractor's charges for improvements to real estate are not subject to sales tax on either materials or labor. ... [Appendix A chart] Partitions and Movable Walls (affixed to walls, floor or ceiling of building): Commercial, Real Estate Function, Install RE, Repair RE. Partitions and Moveable Walls (not affixed): P. ... RE-Means that the item is considered real property when used in the manner indicated in the column heading.",
+   "url": "https://www.revenue.wi.gov/DOR%20Publications/pb207.pdf",
+   "note": "The chart assumes items 'sold attached, affixed, installed, or fastened to real property by the contractor'. Publication 207 has no example of labor-only installation of customer-supplied toilet partitions; confirm with the Department of Revenue."
+  },
+  "furnish_and_install": {
+   "rule": "The contractor is the consumer: it pays sales or use tax on the partitions it buys and may not charge sales tax to the customer on the contract.",
+   "quote": "When a contractor is a consumer, its sales price from labor and material related to real property construction activities is not subject to sales tax. Note: A contractor who performs a real property construction activity is not permitted to collect sales tax from its customers on its sales price from sales of real property construction activities. The tax is imposed on the contractor's purchases of the materials used in the real property construction activity ... [Examples] Constructing buildings and structural components and other improvements to buildings. This includes the roof, walls, floors, ceiling, and partitions which are attached to the realty",
+   "url": "https://www.revenue.wi.gov/DOR%20Publications/pb207.pdf"
+  },
+  "exempt_buyers": {
+   "rule": "Schools, governmental units and other exempt entities can buy the materials themselves tax free with an exemption certificate, even where a contractor installs them; materials sold to the contractor for such jobs are generally taxable.",
+   "quote": "purchases of taxable products and services made by Wisconsin exempt entities described under sec. 77.54(9a), Wis. Stats., may be made without payment of Wisconsin sales or use tax. This includes materials and equipment purchased by the exempt entity that will be used by construction contractors in performing real property construction activities for the exempt entity.",
+   "url": "https://www.revenue.wi.gov/DOR%20Publications/pb207.pdf"
+  },
+  "agency": "Wisconsin Department of Revenue",
+  "confidence": "high",
+  "note": "Publication 207 carries the date 1/19 on its cover with rate notices through April 2025; Publication 201 is dated 10/26 as printed."
+ },
+ "page": {
+  "stalls_intro": "Wisconsin counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. Half are counted as men and half as women, and any fraction rounds up. Every toilet needs a stall. Urinals are optional under Wisconsin's rules: where the men's room needs more than one toilet, urinals may replace up to half of them in an office and up to two thirds in a restaurant or school, each with a privacy screen. The table shows the men's side as stalls.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building. A restaurant that needs six or more toilets in total, as at 400 people, must also have a family or assisted-use toilet room, which counts toward the total. Wisconsin's rules don't say how an odd number splits between stalls and urinals, so confirm that with plan review.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20, and Wisconsin may accept the real number of occupants instead where the owner can justify it.",
+  "fire_bullet": "- **Fire safety:** Wisconsin's building rules count toilet partitions as interior finish and require solid plastic (HDPE) and polypropylene finishes to pass a room-corner fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Wisconsin's building rules set the sizes. Plans for commercial buildings of 25,000 cubic feet or more, and for schools of any size, are reviewed by the state or by a city acting for it.",
+  "state_extra_bullet": "- **Wisconsin extras:** Wisconsin's rules ask for more than the federal ones in three places. The front and one side partition of the accessible stall must clear the floor by 12 inches, not 9, unless the stall is built larger than the minimum. Accessible stalls need an 18-inch vertical grab bar on the side wall as well as the horizontal bars. A restaurant or store that needs six or more toilets must add a family or assisted-use toilet room.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to everyone. A shared all-gender room is allowed if every toilet sits in its own compartment with a door and urinals are in stalls or screened from view. The number of toilets is still worked out half for men and half for women.",
+  "public_jobs": "Wisconsin repealed its own wage law for public jobs in 2017, so set wage rates apply only on federally funded work, under the federal Davis-Bacon Act.",
+  "tax_install_bullet": "- **Tax on installation:** in Wisconsin, a contractor's charge to install partitions fixed to the building is not taxed, for labor or materials. A contractor who supplies the partitions pays the tax when buying them and doesn't add sales tax to your bill.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable, and so is the seller's delivery charge. If the seller doesn't collect the tax, the buyer owes it to the state. Schools and government bodies can buy tax free with an exemption certificate.",
+  "tax_confirm": "your accountant or the Wisconsin Department of Revenue",
+  "sources": [
+   "- Toilet counts in Wisconsin: [DSPS, SPS 362 insert for the 2021 International Building Code (September 1, 2025 Wisconsin Commercial Building Code, SPS 361 to 366)](https://dsps.wi.gov/MediaFileLocation/kqidqwpw/sps362insert.pdf), sections SPS 362.2900 and 362.2902 (urinals may replace up to 50 percent of the men's water closets, 67 percent in Group A and E; actual occupancy load), listed on the [DSPS Commercial Buildings reference page](https://dsps.wi.gov/a-z-programs-list/commercial-buildings/references/). Table 2902.1, Section 2902.1.1 (half and half, rounding up) and Table 1004.5 (floor area per person) were read on a secondary copy, [UpCodes, Wisconsin Building Code 2021, Chapter 29](https://up.codes/viewer/wisconsin/ibc-2021/chapter/29/plumbing-systems) and [Chapter 10](https://up.codes/viewer/wisconsin/ibc-2021/chapter/10/means-of-egress). Checked 2026-11-24.",
+   "- One statewide code: [DSPS, 2013 Wisconsin Act 270 FAQs](https://dsps.wi.gov/a-z-boards-and-councils-list/fire-dues-appeals/2013-wisconsin-act-270-faqs/) (\"created a uniform commercial building code\"; only grandfathered local fire ordinances differ). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: 2021 International Building Code Section 803.9 and the Section 202 definition of interior wall and ceiling finish, which Wisconsin adopts without change, read on [UpCodes, Chapter 8](https://up.codes/viewer/wisconsin/ibc-2021/chapter/8/interior-finishes) and [Chapter 2](https://up.codes/viewer/wisconsin/ibc-2021/chapter/2/definitions). Checked 2026-11-24.",
+   "- Wisconsin stall rules compared with the federal ones: ICC A117.1-2017 sections 604.5 and 604.9 to 604.11, read on [UpCodes](https://up.codes/viewer/wisconsin/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities), 2021 International Building Code Sections 1110.2.1 and 1110.2.4, read on [UpCodes, Chapter 11](https://up.codes/viewer/wisconsin/ibc-2021/chapter/11/accessibility), and the [2010 ADA Standards](https://www.access-board.gov/ada/), sections 213, 604.5 and 604.8. Checked 2026-11-24.",
+   "- Plan review: [DSPS, Commercial Buildings](https://dsps.wi.gov/Pages/Programs/CommercialBuildings/Default.aspx). Checked 2026-11-24.",
+   "- Single-user and all-gender restrooms: 2021 International Building Code Sections 2902.1.2, 2902.2 and 1210.3.1, read on [UpCodes, Chapter 29](https://up.codes/viewer/wisconsin/ibc-2021/chapter/29/plumbing-systems) and [Chapter 12](https://up.codes/viewer/wisconsin/ibc-2021/chapter/12/interior-environment), with [SPS 362.2902 (1) (a) 6. and 362.1210](https://dsps.wi.gov/MediaFileLocation/kqidqwpw/sps362insert.pdf). Checked 2026-11-24.",
+   "- Wages on public jobs: [Wisconsin Department of Workforce Development, Prevailing Wage](https://www.dwd.wisconsin.gov/er/laborstandards/prevailingwage/default.htm) and [Department of Administration, Other Important Notices](https://doa.wi.gov/Pages/DoingBusiness/OtherImportantNotices.aspx) (2017 Wisconsin Act 59). Checked 2026-11-24.",
+   "- Sales tax: Wisconsin Department of Revenue, [Publication 207, Sales and Use Tax Information for Contractors](https://www.revenue.wi.gov/DOR%20Publications/pb207.pdf), [Publication 201, Wisconsin Sales and Use Tax Information](https://www.revenue.wi.gov/DOR%20Publications/pb201.pdf) and [Remote Sellers](https://www.revenue.wi.gov/Pages/Businesses/remote-sellers.aspx). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; ICC A117.1-2017, referenced by the Wisconsin Commercial Building Code (Wis. Admin. Code chs. SPS 361 to 366: the 2021 International Building Code with Wisconsin changes, DSPS inserts dated September 1, 2025); Wisconsin Plumbing Code (chs. SPS 381 to 387); NFPA 286 for HDPE."
+ },
+ "sources_read": [
+  {
+   "url": "https://dsps.wi.gov/MediaFileLocation/kqidqwpw/sps362insert.pdf",
+   "official": true
+  },
+  {
+   "url": "https://dsps.wi.gov/MediaFileLocation/oympd3i0/sps361insert.pdf",
+   "official": true
+  },
+  {
+   "url": "https://dsps.wi.gov/MediaFileLocation/jcoa5w5e/sps366insert.pdf",
+   "official": true
+  },
+  {
+   "url": "https://dsps.wi.gov/a-z-programs-list/commercial-buildings/references/",
+   "official": true
+  },
+  {
+   "url": "https://dsps.wi.gov/Pages/Programs/CommercialBuildings/Default.aspx",
+   "official": true
+  },
+  {
+   "url": "https://dsps.wi.gov/a-z-programs-list/commercial-buildings/references/code-edition-applicability/",
+   "official": true
+  },
+  {
+   "url": "https://dsps.wi.gov/a-z-boards-and-councils-list/fire-dues-appeals/2013-wisconsin-act-270-faqs/",
+   "official": true
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://www.revenue.wi.gov/DOR%20Publications/pb207.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.revenue.wi.gov/DOR%20Publications/pb201.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.revenue.wi.gov/Pages/Businesses/remote-sellers.aspx",
+   "official": true
+  },
+  {
+   "url": "https://www.dwd.wisconsin.gov/er/laborstandards/prevailingwage/default.htm",
+   "official": true
+  },
+  {
+   "url": "https://doa.wi.gov/Pages/DoingBusiness/OtherImportantNotices.aspx",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/2/definitions",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/12/interior-environment",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/wisconsin/ibc-2021/chapter/35/referenced-standards",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/wisconsin/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+   "official": false
+  }
+ ],
+ "could_not_open": [
+  "docs.legis.wisconsin.gov (connection reset / 503 on every statute and administrative code URL)",
+  "law.justia.com (403)",
+  "law.cornell.edu Wisconsin regulations (returned only the index page)",
+  "codes.iccsafe.org (no text served)",
+  "web.archive.org (connection reset)"
+ ],
+ "to_confirm": [
+  "Base text of IBC 2021 Table 2902.1, Sections 2902.1.1, 2902.1.2, 2902.2, 803.9, 1110.2 and Table 1004.5, and ICC A117.1-2017 section 604, were read on UpCodes only: browser check on codes.iccsafe.org before launch.",
+  "The date the 2021 edition took effect: the DSPS inserts are headed 'September 1, 2025 Wisconsin Commercial Building Code'; no DSPS page stating the effective date was read. Projects submitted before that date fall under the earlier edition (DSPS: 'The code in effect on the date a valid plan submittal is received'). DSPS Division of Industry Services, 608-266-2112.",
+  "How an odd number of men's toilets splits under 'up to 50 percent' and 'up to 67 percent' (3 or 5 toilets): ask DSPS plan review or the delegated city (Madison, Milwaukee).",
+  "Wis. Stat. 101.02 (7r) (uniform code, no stricter local ordinances) and 101.128 (restroom equity) could not be opened; the uniformity statement rests on the DSPS Act 270 FAQ.",
+  "Whether Wisconsin's plumbing code (SPS 381 to 387) has a compartment rule for all-gender multi-user rooms matching IPC 405.3.4, and whether DSPS accepts such rooms given that it deleted the 100 percent calculation exception: ask DSPS.",
+  "No statute restricting restroom use by sex was found, but the legislature's site was unreachable; the vetoes of 2025 AB 100 and AB 102 (sports teams and locker rooms) are from news reports only.",
+  "Wis. Stat. 66.0903 (whether cities and school districts may set their own prevailing wage) not read.",
+  "Sales tax: labor-only installation of partitions the customer bought separately is not covered by an example in Publication 207; confirm with the Department of Revenue. How Next Partitions itself charges Wisconsin tax (the $100,000 remote seller threshold) is a question for Abe's accountant.",
+  "Restroom door sign rules (A117.1-2017 section 703 against ADA 216 and 703) were not compared."
+ ]
+}

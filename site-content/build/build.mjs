@@ -140,6 +140,9 @@ const stallTable = (block) => { stallTables.push(block.trim()); return `<div dat
 const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`
 const stallCell = (raw) => {
   const [counts, note] = raw.split(';').map((x) => x.trim())
+  const row0 = (label, text) => `<div class="np-st-row"><span class="np-st-who">${label}</span><span class="np-st-n">${text}</span></div>`
+  // "=3" or "=7-8": one total for the whole building, where the rules give no split between women and men
+  if (counts.startsWith('=')) { const [a, b] = counts.slice(1).split('-'); return row0('In all', b ? `${a} or ${b} toilets` : plural(+a, 'toilet')) + (note ? `<p class="np-st-note">${esc(note)}</p>` : '') }
   const [w, men] = counts.split('/')
   const mixed = men.startsWith('~'), [m, u] = men.replace('~', '').split('+').map(Number)
   const row = (label, icons, text) => `<div class="np-st-row"><span class="np-st-who">${label}</span><span class="np-st-n">${text}</span></div>`

@@ -61,11 +61,15 @@ def climate(b):
     source = '- %s climate: NOAA NCEI Comparative Climatic Data, station %s (WBAN %s): %s. Checked 2026-11-24.' % (city, c['station'], c['wban'], '; '.join(src))
     return lead, a, z, faq, source
 
+def tot(c):  # "3 total" / "7 or 8 total" -> "=3" / "=7-8" (one figure for the whole building)
+    m = re.fullmatch(r'\s*(\d+)(?: or (\d+))? total\s*', c)
+    return c if not m else '=%s%s' % (m.group(1), '-' + m.group(2) if m.group(2) else '')
+
 def stalls(p):
     lines = [p.get('stalls_head') or 'head: Office | Restaurant | School']
     if not lines[0].startswith('head:'): lines[0] = 'head: ' + lines[0]
     for n in ('50', '100', '200', '400'):
-        r = p['stalls_rows'][n]; lines.append('%s: %s | %s | %s' % (n, r['office'], r['restaurant'], r['school']))
+        r = {k: tot(v) for k, v in p['stalls_rows'][n].items()}; lines.append('%s: %s | %s | %s' % (n, r['office'], r['restaurant'], r['school']))
     return ':::stalls\n' + '\n'.join(lines) + '\n:::'
 
 def wage(b):
@@ -240,7 +244,7 @@ def check(slug, t):
     out = ['%s: %s: %s' % (slug, why, m.group(0)) for pat, why in BAN for m in [re.search(pat, body)] if m]
     for l in re.search(r':::stalls\n(.*?)\n:::', t, re.S).group(1).split('\n')[1:]:
         for cell in l.split(':', 1)[1].split('|'):
-            if not re.fullmatch(r'\s*\d+/(~?\d+|\d+\+\d+)(;[^|]*)?\s*', cell): out.append('%s: stall cell "%s"' % (slug, cell.strip()))
+            if not re.fullmatch(r'\s*(=\d+(-\d+)?|\d+/(~?\d+|\d+\+\d+))(;[^|]*)?\s*', cell): out.append('%s: stall cell "%s"' % (slug, cell.strip()))
     meta = re.search(r'^meta: (.*)$', t, re.M).group(1)
     if len(meta) > 160: out.append('%s: meta %d chars' % (slug, len(meta)))
     return out
