@@ -44,11 +44,11 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 
 ## The rules a Tulsa restroom has to meet
 
-- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law sets the sizes, and Oklahoma's building rules add a national accessibility standard on top. The city checks access with the building permit. Where no city or county issues building permits, the State Fire Marshal does.
+- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law sets the sizes, and Tulsa's building rules add a national accessibility standard on top. The city checks access with the building permit.
 - **Fire safety:** Oklahoma's building rules require solid plastic (HDPE) partitions to pass a room fire test. Ask for the fire-rated version.
 - **How many stalls:** Tulsa's building rules set the number of toilets by how many people use the building. The city's own amendments don't change the counts. The table below shows what that means.
-- **Beyond the federal rules:** under the 2018 rules in Tulsa's ordinances, the side wall next to the toilet needs an 18 inch vertical grab bar as well as the horizontal one, which the federal rules don't ask for. Oklahoma's 2024 rules add two more things. The front partition and one side partition of the wheelchair stall need 12 inches of clear space above the floor, where the federal rule asks for 9. A new building's restroom needs a 67 inch turning circle, where the federal rule asks for 60.
 - **New rules expected on January 1, 2027:** Tulsa's ordinances still adopt the 2018 editions of the national model codes, with city amendments. Oklahoma made the 2024 editions the statewide minimum on September 14, 2026. The city says its update to the 2024 editions is in progress, with a pending adoption date of January 1, 2027, and that plans submitted after it adopts them must meet the new codes. Ask the Permit Center which edition applies to your project.
+- **Beyond the federal rules:** under the 2018 rules in Tulsa's ordinances, the side wall next to the toilet needs an 18 inch vertical grab bar as well as the horizontal one, which the federal rules don't ask for. Oklahoma's 2024 rules add two more things. The front partition and one side partition of the wheelchair stall need 12 inches of clear space above the floor, where the federal rule asks for 9. A new building's restroom needs a 67 inch turning circle, where the federal rule asks for 60.
 - **Single-user and all-gender restrooms:** a one-person restroom must be marked for use by either sex. Under the 2018 rules in Tulsa's ordinances, a building needs separate men's and women's rooms unless it holds 15 people or fewer (25 for an office, 100 for a store). By city policy, an office, factory, warehouse or storage building that holds 49 people or fewer may have one restroom open to everyone instead, if the owner asks, the code official approves and the owner files a notice on the property record. Oklahoma's 2024 rules allow a shared all-gender room if every toilet sits in its own compartment with a door and every urinal has privacy partitions. Tulsa's 2018 rules don't provide for one, so ask Development Services before planning it. Oklahoma law requires shared restrooms in public schools, from pre-kindergarten to 12th grade, and in state correctional facilities to be designated for one sex.
 - **Permits:** the City of Tulsa's Development Services department issues building permits. The city's list of work that needs no permit includes painting, tiling, carpeting, cabinets, counter tops and similar finish work, and movable fixtures, counters and partitions that are not fixed in place and stand no taller than 5 feet 9 inches. The list doesn't name toilet partitions. The city says a permit is typically needed to build, remodel, move or repair walls, floors, ceilings, windows or doors. Ask the Permit Center (918-596-9456) whether your replacement needs one. You don't need a permit to buy partitions.
 
@@ -97,7 +97,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
 - **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
-- **Aerospace and manufacturing plants:** HDPE or phenolic stalls with heavy-duty hardware, sized for the crowd at shift change.
+- **Arenas, convention halls and event venues:** long runs of stalls with heavy-duty hardware, in a material that takes crowds and nightly cleaning.
 
 ## Nearby cities we deliver to
 
@@ -168,7 +168,7 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - The Tulsa ordinances were read in City Council packets from May 2022 (scanned drafts), not in the codified Tulsa Revised Ordinances: Municode blocks automated access. Browser check of Title 51, Section 101 and Title 56 on Municode, including the ordinance numbers and effective dates.
 - The city's one-restroom policy is an administrative order from 2006 that cites the 2003 codes; the city still lists it among its current building code policies. Confirm with Development Services that it is still applied.
 - No Tulsa ordinance on single-user restroom signs or all-gender rooms was found; the rest of the Tulsa Revised Ordinances was not read.
-- The wheelchair-access bullet and the fire-safety bullet are Oklahoma's standard text; both hold under the 2018 edition too (read on a secondary copy).
+- The fire-safety bullet is Oklahoma's standard text; the same requirement is in the 2018 edition Tulsa's ordinance adopts (read on a secondary copy).
 - Sales tax is for an address in Tulsa County. Parts of Tulsa lie in Osage and Wagoner counties, where the county part of the rate differs. No rate change is listed through March 2027.
 - The federal carpenter rate for Tulsa County ($14.96 plus $1.55) comes from a 2012 survey and sits well below the local median of $22.51.
-- The buyers bullet on aerospace and manufacturing plants and the four building types in the lead are editorial, not sourced.
+- The buyers bullet on arenas and event venues and the four building types in the lead are editorial, not sourced.
