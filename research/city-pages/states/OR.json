@@ -1,0 +1,472 @@
+{
+ "state": "OR",
+ "state_name": "Oregon",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "Oregon Structural Specialty Code (OSSC), Chapter 29",
+   "edition": "2025 OSSC (based on the 2024 International Building Code), effective October 1, 2025, mandatory April 1, 2026",
+   "table": "Table 2902.1, Minimum Number of Required Plumbing Fixtures, with Sections 2902.1.1, 2902.1.2, 2902.2 and 2902.2.1",
+   "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/29/plumbing-systems",
+   "official_amendments_url": "https://www.oregon.gov/bcd/codes-stand/Documents/2025-ossc-matrix.pdf",
+   "quote": "2901.1 Scope. The provisions of this chapter ... shall govern the location, availability, signage and minimum number of plumbing fixtures in buildings and structures covered by this code. ... 2902.1 Minimum Number of Fixtures. Plumbing fixtures shall be provided in the minimum number as shown in Table 2902.1 based on the actual use of the building or space. Uses not specifically listed in Table 2902.1 shall be considered individually by the code official and shall reflect the use of the space being served by the fixtures. The number of occupants shall be determined by this code.",
+   "note": "Table and section text read on UpCodes' copy of the 2025 OSSC (secondary). The official text is published by ICC for the Building Codes Division and could not be read by script. Oregon's amendments were cross-checked on the Building Codes Division's own 2025 OSSC amendment matrix (official PDF): item 29-2 (Table 2902.1: places of worship rows, 'single-user', new footnote g on urinals), item 29-5 (2902.2: thresholds of 30 and 50 occupants, all-gender or separate rooms), item 29-10 (Sections 2902.5 to 2903 deleted). The 2026 Oregon Plumbing Specialty Code (2024 Uniform Plumbing Code base) Chapter 4 was behind a sign-in on UpCodes; its amendment matrix on oregon.gov lists no change to a fixture-count table, and whether it deletes UPC Table 422.1 was not read."
+  },
+  "cities_may_amend": false,
+  "cities_may_amend_note": {
+   "text": "The state building code is uniform statewide. A city may not enforce different requirements on the same matters unless the Director of the Department of Consumer and Business Services authorizes it.",
+   "quote": "455.040 ... (1) The state building code shall be applicable and uniform throughout this state and in all municipalities, and no municipality shall enact or enforce any ordinance, rule or regulation relating to the same matters encompassed by the state building code but which provides different requirements unless authorized by the Director of the Department of Consumer and Business Services.",
+   "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors455.html"
+  },
+  "rows": {
+   "office": {
+    "row_label": "2 Business (footnote f): Buildings for the transaction of business, nonmedical professional services, other services involving merchandise, office buildings, banks, light industrial and similar uses",
+    "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "urinals": "No urinal column. Footnote g to the water closet column: urinals may be substituted for up to 67 percent of the required water closets for males in each male toilet room.",
+    "quote": "Business(f) | Buildings for the transaction of business, nonmedical professional services, other services involving merchandise, office buildings, banks, light industrial and similar uses | 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50 | [lavatories] 1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80",
+    "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/29/plumbing-systems"
+   },
+   "restaurant": {
+    "row_label": "1 Assembly: Restaurants, banquet halls and food courts (footnote d)",
+    "wc_male": "1 per 75",
+    "wc_female": "1 per 75",
+    "urinals": "No urinal column; footnote g (up to 67 percent of the men's water closets in each men's room)",
+    "quote": "Restaurants, banquet halls and food courts(d) | 1 per 75 | 1 per 75 | [lavatories] 1 per 200 | — | 1 per floor. Footnote d: The occupant load for seasonal outdoor seating and entertainment areas shall be included when determining the minimum number of facilities required.",
+    "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/29/plumbing-systems"
+   },
+   "school": {
+    "row_label": "3 Educational: Educational facilities",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 50",
+    "urinals": "No urinal column; footnote g (up to 67 percent of the men's water closets in each men's room)",
+    "quote": "Educational | Educational facilities | 1 per 50 | [lavatories] 1 per 50 | — | [drinking fountain] 1 per floor",
+    "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/29/plumbing-systems"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "The total occupant load is divided in half, unless approved statistical data shows another split. A multi-user room designed for all genders is counted on the total occupant load.",
+    "quote": "2902.1.1 Fixture Calculations. To determine the occupant load of each sex, the total occupant load shall be divided in half. To determine the required number of fixtures, the fixture ratio or ratios for each fixture type shall be applied to the occupant load of each sex in accordance with Table 2902.1. ... Exceptions: The total occupant load shall not be required to be divided in half where approved statistical data indicates a distribution of the sexes of other than 50 percent of each sex. Where multiple-user facilities are designed to serve all genders, the minimum fixture count shall be calculated 100 percent, based on total occupant load. In such multiple-user user facilities, each fixture type shall be in accordance with ICC A117.1.",
+    "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/29/plumbing-systems"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole number. For mixed occupancies, the fractions for each occupancy are summed first, then rounded up.",
+    "quote": "Fractional numbers resulting from applying the fixture ratios of Table 2902.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number. | Footnote a: The fixtures shown are based on one fixture being the minimum required for the number of persons indicated or any fraction of the number of persons indicated.",
+    "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/29/plumbing-systems"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are optional. Where there are separate rooms for each sex, urinals may replace up to 67 percent of the required men's toilets in each men's room. This is an Oregon footnote added to the table by the state's code committee. Each urinal needs a privacy partition.",
+    "quote": "Footnote g: Where separate facilities are provided for each sex, urinals may be substituted for up to 67 percent of the required water closets for males in each male bathroom or toilet room. | Official matrix, item 29-2: 'Committee added another footnote for water closets: fn (g) Where separate facilities are provided for each sex, urinals may be substituted for up to 67 percent of the required water closets for males in each male bathroom or toilet room.' | 1210.3.3 Urinal Partitions. Each urinal utilized by the public or employees shall occupy a separate area with walls or partitions to provide privacy.",
+    "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/29/plumbing-systems",
+    "official_url": "https://www.oregon.gov/bcd/codes-stand/Documents/2025-ossc-matrix.pdf"
+   },
+   "small_occupancy_exception": {
+    "text": "One single-user toilet room is enough for any building or tenant space with a total occupant load (employees and customers) of 30 or fewer, and for a business (Group B) space of 50 or fewer. Oregon's thresholds are higher than the model code's 15 and 20-25.",
+    "quote": "2902.2 Separate Toilet Facilities. Required plumbing fixtures shall be located in all-gender toilet rooms or in separate toilet rooms provided for each sex. 2902.2.1 One Single-User Toilet Room Permitted. One single-user toilet room shall be permitted where any of the following conditions exist: Structures and tenant spaces with a total occupant load, including both employees and customers, of not more than 30. Group B occupancies with a total occupant load, including both employees and customers, of not more than 50.",
+    "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/29/plumbing-systems",
+    "official_url": "https://www.oregon.gov/bcd/codes-stand/Documents/2025-ossc-matrix.pdf"
+   },
+   "occupant_load": {
+    "text": "Office (business areas): 150 square feet gross per occupant. Restaurant dining room (assembly, unconcentrated, tables and chairs): 15 square feet net. Classroom: 20 square feet net.",
+    "quote": "Table 1004.5: Assembly without fixed seats, Unconcentrated (tables and chairs) | 15 net ... Business areas | 150 gross ... Educational, Classroom area | 20 net. | 1004.5 Areas Without Fixed Seating. The number of occupants shall be computed at the rate of one occupant per unit of area as prescribed in Table 1004.5.",
+    "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/10/means-of-egress"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": null,
+    "how": "50 occupants / 2 = 25 of each sex. Ratio 1 per 25 for the first 50 and 1 per 50 for the remainder: 25 gives 1 toilets for women and 1 for men (fractions round up). Footnote g: urinals may replace up to 67 percent of the men's toilets in each men's room: 0.67 x 1 = 0.67, so at most 0 (assuming one men's room; no urinal is required). Section 2902.2.1 also permits one single-user toilet room instead, because a Group B space has 50 occupants or fewer."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": null,
+    "how": "50 occupants / 2 = 25 of each sex. Ratio 1 per 75: 25 gives 1 toilets for women and 1 for men (fractions round up). Footnote g: urinals may replace up to 67 percent of the men's toilets in each men's room: 0.67 x 1 = 0.67, so at most 0 (assuming one men's room; no urinal is required)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": null,
+    "how": "50 occupants / 2 = 25 of each sex. Ratio 1 per 50: 25 gives 1 toilets for women and 1 for men (fractions round up). Footnote g: urinals may replace up to 67 percent of the men's toilets in each men's room: 0.67 x 1 = 0.67, so at most 0 (assuming one men's room; no urinal is required)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": null,
+    "how": "100 occupants / 2 = 50 of each sex. Ratio 1 per 25 for the first 50 and 1 per 50 for the remainder: 50 gives 2 toilets for women and 2 for men (fractions round up). Footnote g: urinals may replace up to 67 percent of the men's toilets in each men's room: 0.67 x 2 = 1.34, so at most 1 (assuming one men's room; no urinal is required)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": null,
+    "how": "100 occupants / 2 = 50 of each sex. Ratio 1 per 75: 50 gives 1 toilets for women and 1 for men (fractions round up). Footnote g: urinals may replace up to 67 percent of the men's toilets in each men's room: 0.67 x 1 = 0.67, so at most 0 (assuming one men's room; no urinal is required)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": null,
+    "how": "100 occupants / 2 = 50 of each sex. Ratio 1 per 50: 50 gives 1 toilets for women and 1 for men (fractions round up). Footnote g: urinals may replace up to 67 percent of the men's toilets in each men's room: 0.67 x 1 = 0.67, so at most 0 (assuming one men's room; no urinal is required)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": null,
+    "how": "200 occupants / 2 = 100 of each sex. Ratio 1 per 25 for the first 50 and 1 per 50 for the remainder: 100 gives 3 toilets for women and 3 for men (fractions round up). Footnote g: urinals may replace up to 67 percent of the men's toilets in each men's room: 0.67 x 3 = 2.01, so at most 2 (assuming one men's room; no urinal is required)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": null,
+    "how": "200 occupants / 2 = 100 of each sex. Ratio 1 per 75: 100 gives 2 toilets for women and 2 for men (fractions round up). Footnote g: urinals may replace up to 67 percent of the men's toilets in each men's room: 0.67 x 2 = 1.34, so at most 1 (assuming one men's room; no urinal is required)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": null,
+    "how": "200 occupants / 2 = 100 of each sex. Ratio 1 per 50: 100 gives 2 toilets for women and 2 for men (fractions round up). Footnote g: urinals may replace up to 67 percent of the men's toilets in each men's room: 0.67 x 2 = 1.34, so at most 1 (assuming one men's room; no urinal is required)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 3,
+    "urinals_required": null,
+    "how": "400 occupants / 2 = 200 of each sex. Ratio 1 per 25 for the first 50 and 1 per 50 for the remainder: 200 gives 5 toilets for women and 5 for men (fractions round up). Footnote g: urinals may replace up to 67 percent of the men's toilets in each men's room: 0.67 x 5 = 3.35, so at most 3 (assuming one men's room; no urinal is required)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": null,
+    "how": "400 occupants / 2 = 200 of each sex. Ratio 1 per 75: 200 gives 3 toilets for women and 3 for men (fractions round up). Footnote g: urinals may replace up to 67 percent of the men's toilets in each men's room: 0.67 x 3 = 2.01, so at most 2 (assuming one men's room; no urinal is required)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": null,
+    "how": "400 occupants / 2 = 200 of each sex. Ratio 1 per 50: 200 gives 4 toilets for women and 4 for men (fractions round up). Footnote g: urinals may replace up to 67 percent of the men's toilets in each men's room: 0.67 x 4 = 2.68, so at most 2 (assuming one men's room; no urinal is required)."
+   }
+  ],
+  "confidence": "medium"
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "2025 Oregon Structural Specialty Code Section 803.9, with Section 803.1.1 (NFPA 286) and the Chapter 2 definition of interior wall and ceiling finish",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. | 803.1.1 Interior Wall and Ceiling Finish Materials Tested in Accordance With NFPA 286. Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1. | Definition: Interior Wall and Ceiling Finish. The exposed interior surfaces of buildings, including but not limited to: fixed or movable walls and partitions; toilet room privacy partitions; columns; ceilings; and interior wainscoting, paneling or other finish applied structurally or for decoration, acoustical correction, surface insulation, structural fire resistance or similar purposes, but not including trim.",
+  "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/8/interior-finishes",
+  "definition_url": "https://up.codes/viewer/oregon/ibc-2024/chapter/2/definitions",
+  "official_amendments_url": "https://www.oregon.gov/bcd/codes-stand/Documents/2025-ossc-matrix.pdf",
+  "note": "Section text read on UpCodes' copy of the 2025 OSSC. The Building Codes Division's official amendment matrix lists one Chapter 8 item only (8-1, Section 803.13, a model-code change), so Section 803.9 stands as in the 2024 IBC.",
+  "confidence": "medium"
+ },
+ "access": {
+  "state_standard": "Chapter 11 of the 2025 Oregon Structural Specialty Code with ICC A117.1-2017 with Supplement 1, as amended by OSSC Section 1102.1.2 (none of Oregon's amendments to the standard touch toilet stalls: they cover elevators, lifts, door opening force, detectable warnings, parking, recreational facilities and dwelling-unit operable parts). Alterations of existing buildings follow OSSC Section 3403.6 and the same edition's alteration provisions. The rules sit in the state building code under ORS 447.210 to 447.280, and apply alongside the federal 2010 ADA Standards.",
+  "standard_quote": "1102.1 Design. Buildings and facilities shall be designed and constructed to be accessible in accordance with this code and ICC A117.1, as detailed in this chapter. | Chapter 35: ICC A117.1—17 with Supplement 1, Standard for Accessible and Usable Buildings and Facilities | 3403.6: Buildings and facilities shall be designed and constructed to be accessible in accordance with this chapter and the alteration and existing building provisions in ICC A117.1, as applicable. | ORS 447.220: ... pursuant to the Americans with Disabilities Act, the Director of the Department of Consumer and Business Services may provide greater protection to individuals with disabilities by adopting more stringent standards than prescribed by the Americans with Disabilities Act.",
+  "standard_urls": [
+   "https://up.codes/viewer/oregon/ibc-2024/chapter/11/accessibility",
+   "https://up.codes/viewer/oregon/ibc-2024/chapter/35/referenced-standards",
+   "https://up.codes/viewer/oregon/ibc-2024/chapter/34/existing-structures",
+   "https://www.oregonlegislature.gov/bills_laws/ors/ors447.html",
+   "https://www.oregon.gov/bcd/codes-stand/Documents/2025-ossc-matrix.pdf"
+  ],
+  "differences": [
+   {
+    "point": "Vertical grab bar on the side wall",
+    "state": "A117.1-2017 604.5.1: the side wall needs a horizontal bar and an 18-inch vertical bar. Applies in wheelchair stalls and on both sides of ambulatory stalls (604.10.4).",
+    "federal": "2010 ADA 604.5.1: a horizontal side wall grab bar only.",
+    "state_url": "https://up.codes/viewer/oregon/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "604.5.1 Fixed Side-Wall Grab Bars. Fixed side-wall grab bars shall include a horizontal bar complying with Section 604.5.1.1 and a vertical grab bar complying with Section 604.5.1.2. ... 604.5.1.2 Vertical Grab Bar. A vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall. | 604.10.4 Grab Bars. ... Side wall grab bars complying with Section 604.5.1 shall be provided on both sides of the compartment.",
+    "federal_quote": "604.5.1 Side Wall. The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall.",
+    "federal_url": "https://www.access-board.gov/ada/chapter/ch06/"
+   },
+   {
+    "point": "Toe clearance under wheelchair stall partitions",
+    "state": "12 inches high and 8 inches deep; not required at the front if the stall is deeper than 64 in (wall-hung toilet) or 67 in (floor-mounted), nor at the side if wider than 68 in.",
+    "federal": "9 inches high and 6 inches deep (12 inches high in children's stalls); not required beyond 62/65 in deep or 66 in wide.",
+    "state_url": "https://up.codes/viewer/oregon/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "604.9.5.1 Toe Clearance at Wheelchair Accessible Toilet Compartments. The front partition and at least one side partition of wheelchair accessible toilet compartments shall provide a toe clearance of 12 inches (305 mm) minimum above the floor and extending 8 inches (205 mm) beyond the compartment side face of the partition, exclusive of partition support members. Exceptions: Toe clearance at the front partition is not required in a wheelchair accessible toilet compartment greater than 64 inches (1625 mm) in depth with a wall-hung water closet, or greater than 67 inches (1700 mm) in depth with a floor-mounted water closet. Toe clearance at the side partition is not required in a wheelchair accessible toilet compartment greater than 68 inches (1725 mm) in width.",
+    "federal_quote": "604.8.1.4 Toe Clearance. The front partition and at least one side partition shall provide a toe clearance of 9 inches (230 mm) minimum above the finish floor and 6 inches (150 mm) deep minimum beyond the compartment-side face of the partition, exclusive of partition support members. Compartments for children's use shall provide a toe clearance of 12 inches (305 mm) minimum above the finish floor. EXCEPTION: Toe clearance at the front partition is not required in a compartment greater than 62 inches (1575 mm) deep with a wall-hung water closet or 65 inches (1650 mm) deep with a floor-mounted water closet. Toe clearance at the side partition is not required in a compartment greater than 66 inches (1675 mm) wide.",
+    "federal_url": "https://www.access-board.gov/ada/chapter/ch06/"
+   },
+   {
+    "point": "How many wheelchair and ambulatory stalls",
+    "state": "At least 5 percent of the compartments in a toilet room must be wheelchair accessible (a second one from 21 compartments up); where compartments plus urinals total six or more, 5 percent must also be ambulatory accessible.",
+    "federal": "At least one wheelchair stall, plus one ambulatory stall where there are six or more compartments, or six or more toilets and urinals combined.",
+    "state_url": "https://up.codes/viewer/oregon/ibc-2024/chapter/11/accessibility",
+    "quote": "1110.2.4 Water Closet Compartment. Where water closet compartments are provided in a toilet room or bathing room, at least 5 percent of the total number of compartments shall be wheelchair accessible. Where the combined total water closet compartments and urinals provided in a toilet room or bathing room is six or more, at least 5 percent of the total number of compartments shall be ambulatory accessible, provided in addition to the wheelchair-accessible compartment.",
+    "federal_quote": "213.3.1 Toilet Compartments. Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1. In addition to the compartment required to comply with 604.8.1, at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures.",
+    "federal_url": "https://www.access-board.gov/ada/chapter/ch02/"
+   },
+   {
+    "point": "Where the wheelchair stall door opening may sit",
+    "state": "Table 604.9.3.1: in the front partition, the far edge of the opening is either within 4 inches of the partition farthest from the toilet or at least 56 inches from the side wall nearest the toilet; in a side partition, 52 inches (wall-hung) or 55 inches (floor-mounted) from the rear wall, or within 4 inches of the front.",
+    "federal": "Door opening 4 inches maximum from the side wall or partition farthest from the toilet (front), or 4 inches maximum from the front partition (side). A stall laid out to the federal 4-inch rule also meets the state table.",
+    "state_url": "https://up.codes/viewer/oregon/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "604.9.3.1 Door Opening Location. The farthest edge of the wheelchair accessible toilet compartment door opening shall be located in the front wall or partition or in the side wall or partition as required by Table 604.9.3.1. ... Front Wall or Partition | From the side wall or partition closest to the water closet | 56 inches (1420 mm) minimum | or | From the side wall or partition farthest from the water closet | 4 inches (100 mm) maximum | Side Wall or Partition Wall-Hung Water Closet | From the rear wall | 52 inches (1320 mm) minimum | or | From the front wall or partition | 4 inches (100 mm) maximum | Side Wall or Partition Floor-Mounted Water Closet | From the rear wall | 55 inches (1395 mm) minimum | or | From the front wall or partition | 4 inches (100 mm) maximum",
+    "federal_quote": "604.8.1.2 Doors. ... Where located in the front partition, the door opening shall be 4 inches (100 mm) maximum from the side wall or partition farthest from the water closet. Where located in the side wall or partition, the door opening shall be 4 inches (100 mm) maximum from the front partition.",
+    "federal_url": "https://www.access-board.gov/ada/chapter/ch06/"
+   },
+   {
+    "point": "Family or assisted-use toilet room",
+    "state": "Required in assembly and mercantile occupancies where six or more toilets (men's and women's together) are required.",
+    "federal": "No requirement to provide one (not read in sections 213 or 604 of the 2010 ADA Standards).",
+    "state_url": "https://up.codes/viewer/oregon/ibc-2024/chapter/11/accessibility",
+    "quote": "1110.2.1 Family or Assisted-Use Toilet and Bathing Rooms. In assembly and mercantile occupancies, an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required."
+   },
+   {
+    "point": "Restroom door signs",
+    "state": "Signs identifying toilet rooms must have visual characters, raised characters and braille; single-user rooms must be identified as available to all persons regardless of sex.",
+    "federal": "ADA 216.2 and 703 (not re-read here) also require raised characters and braille on permanent room signs; the all-persons identification of single-user rooms is a state building code rule.",
+    "state_url": "https://up.codes/viewer/oregon/ibc-2024/chapter/11/accessibility",
+    "quote": "1112.2 Signs Identifying Toilet or Bathing Rooms. Signs required by this code identifying toilet rooms and bathing rooms shall be visual characters, raised characters and braille complying with ICC A117.1. Where pictograms are provided as designations for toilet rooms and bathing rooms, the pictograms shall have visual characters, raised characters and braille complying with ICC A117.1."
+   }
+  ],
+  "process": "No separate state accessibility review or registration was found. ORS 447.280 makes the access rules part of the state building code, so they are checked in the ordinary building permit plan review by the city or county building department (or the Building Codes Division where it runs the program). On alterations, ORS 447.241 and OSSC 3403.6.7.1 require the route, restrooms and drinking fountains serving an altered primary function area to be made accessible, up to 25 percent of the alteration cost.",
+  "process_quote": "447.280 Enforcement powers. The provisions of ORS 447.210 to 447.280 and rules adopted under them shall be considered part of the state building code and violations shall be subject to the provisions of ORS 455.450. | 447.241 (1) Every project for renovation, alteration or modification to affected buildings and related facilities that affects or could affect the usability of or access to an area containing a primary function shall be made to insure that, to the maximum extent feasible, the paths of travel to the altered area and the rest rooms, telephones and drinking fountains serving the altered area are readily accessible to and usable by individuals with disabilities, unless such alterations are disproportionate to the overall alterations in terms of cost and scope. (2) Alterations made to the path of travel to an altered area may be deemed disproportionate to the overall alteration when the cost exceeds 25 percent of the alteration to the primary function area.",
+  "process_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors447.html",
+  "confidence": "medium"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "Single-user toilet rooms, including family or assisted-use rooms, must be identified as available to all persons regardless of sex, and count toward the required fixtures. Their doors need a privacy lock and an occupied indicator.",
+   "quote": "2902.1.2 ... Single-user toilet facilities and bathing rooms, and family or assisted-use toilet facilities and bathing rooms shall be identified as being available for use by all persons regardless of their sex. | 1210.3.2 Single-User Toilet and Bathing Rooms. Doors to single-user toilet and bathing rooms, including family or assisted-use rooms, shall be securable from within the room and shall be provided with a privacy lock and an occupied indicator complying with Section 1010.2. | 2902.4 Signage. Required public toilet facilities shall be provided with signs that indicate whether the facility is to be used by males, by females, or by all persons regardless of sex.",
+   "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/29/plumbing-systems",
+   "url_2": "https://up.codes/viewer/oregon/ibc-2024/chapter/12/interior-environment"
+  },
+  "all_gender_shared": {
+   "rule": "Allowed in any occupancy: the required fixtures may sit in all-gender toilet rooms or in separate rooms for each sex. The count is then taken on the total occupant load. Every toilet used by the public or employees must be in its own compartment with walls or partitions and a door, and every urinal needs privacy partitions; the Oregon text read sets no extra full-height or privacy rating for all-gender rooms.",
+   "quote": "2902.2 Separate Toilet Facilities. Required plumbing fixtures shall be located in all-gender toilet rooms or in separate toilet rooms provided for each sex. | 2902.1.1 Exception 2: Where multiple-user facilities are designed to serve all genders, the minimum fixture count shall be calculated 100 percent, based on total occupant load. In such multiple-user user facilities, each fixture type shall be in accordance with ICC A117.1. | 1210.3.1 Water Closet Compartment. Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy. | 1210.3.3 Urinal Partitions. Each urinal utilized by the public or employees shall occupy a separate area with walls or partitions to provide privacy. The walls or partitions shall begin at a height not more than 12 inches (305 mm) from and extend not less than 60 inches (1524 mm) above the finished floor surface.",
+   "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/29/plumbing-systems",
+   "url_2": "https://up.codes/viewer/oregon/ibc-2024/chapter/12/interior-environment",
+   "official_url": "https://www.oregon.gov/bcd/codes-stand/Documents/2025-ossc-matrix.pdf"
+  },
+  "use_restrictions": {
+   "rule": "No Oregon statute restricting who may use which restroom was found. State law prohibits discrimination on account of sex or gender identity in places of public accommodation (ORS 659A.403) and in public schools and community colleges (ORS 659.850).",
+   "quote": "659A.403 ... (1) Except as provided in subsection (2) of this section, all persons within the jurisdiction of this state are entitled to the full and equal accommodations, advantages, facilities and privileges of any place of public accommodation, without any distinction, discrimination or restriction on account of race, color, religion, sex, sexual orientation, gender identity, national origin, marital status or age if the individual is of age, as described in this section, or older. | 659.850 (1)(a)(A) 'Discrimination' means any act that unreasonably differentiates treatment, intended or unintended, or any act that is fair in form but discriminatory in operation, either of which is based on race, color, religion, sex, sexual orientation, gender identity, national origin, marital status, age or disability. ... (2) A person may not be subjected to discrimination in any public elementary, secondary or community college education program or service, school or interschool activity ...",
+   "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors659A.html",
+   "url_2": "https://www.oregonlegislature.gov/bills_laws/ors/ors659.html"
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": true,
+  "law": "Oregon Prevailing Wage Rate law, ORS 279C.800 to 279C.870, enforced by the Bureau of Labor and Industries (BOLI). The Commissioner of BOLI sets the rates for each trade in each of 14 regions, mainly from collective bargaining agreements. 'Public agency' covers the state, counties, cities and districts, so school district and city buildings are included.",
+  "threshold": "Projects with a contract price of $50,000 or less are exempt. A privately owned project counts as public works where it uses $750,000 or more of public funds.",
+  "rates_url": "https://www.oregon.gov/boli/employers/Pages/prevailing-wage-rates.aspx",
+  "quote": "279C.840 (1) The hourly rate of wage that a contractor or subcontractor must pay to workers upon all public works may not be less than the prevailing rate of wage for an hour's work in the same trade or occupation in the locality where the labor is performed. | 279C.810 (2) ORS 279C.800 to 279C.870 do not apply to: (a) Projects for which the contract price does not exceed $50,000. | 279C.815 (2)(a) The Commissioner of the Bureau of Labor and Industries at least once each year shall determine ... the prevailing rate of wage for workers in each trade or occupation in each locality described in ORS 279C.800 and shall make this information available at least twice each year. | 279C.800 (5) 'Public agency' means the State of Oregon or a political subdivision of the State of Oregon, or a county, city, district, authority, public corporation or public entity organized and existing under law or charter ... | BOLI: 'Prevailing wage rates differ by occupation and region. They are generally updated quarterly on January 5, April 5, July 5, and October 5.' and 'if a project is over $50,000 and meets the definition of a \"public work\" under the PWR law, even if the project is subject to regulation under the Davis-Bacon Act, it is also subject to the state PWR law.'",
+  "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors279C.html",
+  "agency_url": "https://www.oregon.gov/boli/employers/Pages/prevailing-wage.aspx",
+  "confidence": "high"
+ },
+ "sales_tax": {
+  "state_rate": 0.0,
+  "shipped_goods": {
+   "rule": "Oregon has no general sales tax and no general use tax, so no Oregon tax is charged on partitions shipped into the state, whoever the seller is.",
+   "quote": "Oregon doesn't have a general sales or use/transaction tax. However, Oregon does have a vehicle use tax that applies to new vehicles purchased outside of the state. ... The Wayfair decision doesn't affect Oregonians purchasing goods or services online because Oregon doesn't have a general sales tax.",
+   "url": "https://www.oregon.gov/dor/programs/businesses/Pages/sales-tax.aspx"
+  },
+  "freight_taxed": false,
+  "install_labor": {
+   "rule": "No sales tax applies to installation labor: Oregon has no general sales or use/transaction tax. The Department of Revenue page does not discuss installation separately.",
+   "quote": "Oregon doesn't have a general sales or use/transaction tax.",
+   "url": "https://www.oregon.gov/dor/programs/businesses/Pages/sales-tax.aspx"
+  },
+  "furnish_and_install": {
+   "rule": "No sales or use tax applies to a contractor's furnish-and-install contract, for the same reason. The Department of Revenue page does not discuss construction contracts separately.",
+   "quote": "Oregon doesn't have a general sales or use/transaction tax.",
+   "url": "https://www.oregon.gov/dor/programs/businesses/Pages/sales-tax.aspx"
+  },
+  "agency": "Oregon Department of Revenue",
+  "confidence": "high",
+  "note": "Portland-area local business taxes and Oregon's Corporate Activity Tax (a tax on the seller's commercial activity, not a sales tax charged to the buyer) were not researched here; no Department of Revenue page on them was read."
+ },
+ "page": {
+  "stalls_intro": "Oregon's rules count toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. Half are counted as men and half as women, and any fraction rounds up. Every toilet needs a stall with a door. Urinals are optional: in each men's room they may take the place of up to two thirds of the required toilets, and each urinal needs a privacy screen.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums, and the men's figures show toilets only, before any are swapped for urinals. An office with 50 people or fewer, or any other space with 30 or fewer, can use a single one-person restroom instead. Where a shared restroom is built for all genders, the count is taken on everyone together rather than half and half.",
+  "capacity": "To find your building's capacity, Oregon's building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** Oregon's building rules treat toilet partitions as an interior finish and require solid plastic (HDPE) and polypropylene partitions to pass a room-corner fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use, and a room with six or more toilets and urinals also needs a narrower stall with grab bars on both sides. Federal law and Oregon's building rules set the sizes. Oregon has no separate state sign-off for access: your city or county building department checks it when it reviews the plans. When you remodel, the restrooms serving the remodeled area have to be made accessible too, up to a quarter of the remodel's cost.",
+  "state_extra_bullet": "- **Oregon extras:** Oregon goes further than the federal rules in three places. The accessible stall needs an 18 inch vertical grab bar on the side wall as well as the horizontal one. Its partitions need 12 inches of toe space above the floor, where the federal rule asks for 9. And in a very large restroom, 5% of the stalls must be wheelchair accessible, which means a second one from 21 stalls up.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to everyone, and its door needs a privacy lock that shows when the room is occupied. Oregon lets a building meet its toilet count with shared all-gender rooms or with separate men's and women's rooms. Either way, each toilet sits in its own compartment with a door and each urinal has a privacy screen. Oregon law bars discrimination by sex or gender identity in places open to the public and in public schools.",
+  "public_jobs": "on public projects over $50,000, school district and city buildings included, Oregon law requires at least the wage the state's Bureau of Labor and Industries sets for each trade in each region.",
+  "tax_install_bullet": "- **Tax on installation:** Oregon has no general sales tax, so none is added to installation labor or to a contractor's supply-and-install price.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} carry no Oregon sales tax or use tax, on the partitions or on the freight.",
+  "tax_confirm": "your accountant or the Oregon Department of Revenue",
+  "sources": [
+   "- Toilet counts in Oregon: 2025 Oregon Structural Specialty Code (based on the 2024 International Building Code), Table 2902.1 with footnote g (urinals) and Sections 2902.1.1, 2902.2 and 2902.2.1, and Table 1004.5 (floor area per person), read on [UpCodes, Oregon Structural Specialty Code 2025, Chapter 29](https://up.codes/viewer/oregon/ibc-2024/chapter/29/plumbing-systems) and [Chapter 10](https://up.codes/viewer/oregon/ibc-2024/chapter/10/means-of-egress). Oregon's amendments: Oregon Building Codes Division, [2025 OSSC amendment matrix](https://www.oregon.gov/bcd/codes-stand/Documents/2025-ossc-matrix.pdf); adoption dates on [Commercial structures code program](https://www.oregon.gov/bcd/codes-stand/Pages/commercial-structures.aspx). Statewide uniformity: [ORS 455.040](https://www.oregonlegislature.gov/bills_laws/ors/ors455.html). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: 2025 Oregon Structural Specialty Code Section 803.9 with Section 803.1.1 (NFPA 286) and the Chapter 2 definition of interior wall and ceiling finish, read on [UpCodes, Chapter 8](https://up.codes/viewer/oregon/ibc-2024/chapter/8/interior-finishes) and [Chapter 2](https://up.codes/viewer/oregon/ibc-2024/chapter/2/definitions); the Building Codes Division's [amendment matrix](https://www.oregon.gov/bcd/codes-stand/Documents/2025-ossc-matrix.pdf) shows no Oregon change to the section. Checked 2026-11-24.",
+   "- Oregon access rules: 2025 Oregon Structural Specialty Code [Chapter 11](https://up.codes/viewer/oregon/ibc-2024/chapter/11/accessibility) (Sections 1102.1, 1110.2.4 and 1112.2), [Chapter 34](https://up.codes/viewer/oregon/ibc-2024/chapter/34/existing-structures) (Section 3403.6, alterations) and [Chapter 35](https://up.codes/viewer/oregon/ibc-2024/chapter/35/referenced-standards) (ICC A117.1-2017 with Supplement 1); stall Sections 604.5, 604.9 and 604.10 of ICC A117.1-2017 read on [UpCodes](https://up.codes/viewer/oregon/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities); [ORS 447.210 to 447.280](https://www.oregonlegislature.gov/bills_laws/ors/ors447.html). Federal text: 2010 ADA Standards, [Chapter 2](https://www.access-board.gov/ada/chapter/ch02/) (213.3.1) and [Chapter 6](https://www.access-board.gov/ada/chapter/ch06/) (604.5, 604.8), U.S. Access Board. Checked 2026-11-24.",
+   "- Single-user and all-gender restrooms: 2025 Oregon Structural Specialty Code Sections 2902.1.1, 2902.1.2, 2902.2 and 2902.4 ([Chapter 29](https://up.codes/viewer/oregon/ibc-2024/chapter/29/plumbing-systems)) and Sections 1210.3.1 to 1210.3.3 ([Chapter 12](https://up.codes/viewer/oregon/ibc-2024/chapter/12/interior-environment)), read on UpCodes; [ORS 659A.403](https://www.oregonlegislature.gov/bills_laws/ors/ors659A.html) (places of public accommodation) and [ORS 659.850](https://www.oregonlegislature.gov/bills_laws/ors/ors659.html) (education), Oregon Legislature. Checked 2026-11-24.",
+   "- Wages on public jobs: [ORS 279C.800 to 279C.870](https://www.oregonlegislature.gov/bills_laws/ors/ors279C.html) (279C.810 for the $50,000 exemption, 279C.815 for how rates are set, 279C.840 for the duty to pay); Oregon Bureau of Labor and Industries, [Prevailing wage](https://www.oregon.gov/boli/employers/Pages/prevailing-wage.aspx) and [Prevailing wage rates](https://www.oregon.gov/boli/employers/Pages/prevailing-wage-rates.aspx). Checked 2026-11-24.",
+   "- Sales tax: Oregon Department of Revenue, [Sales Tax in Oregon](https://www.oregon.gov/dor/programs/businesses/Pages/sales-tax.aspx) (no general sales or use/transaction tax). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; 2025 Oregon Structural Specialty Code (based on the 2024 International Building Code, effective October 1, 2025, mandatory April 1, 2026), Chapter 11 with ICC A117.1-2017 with Supplement 1; 2026 Oregon Plumbing Specialty Code (based on the 2024 Uniform Plumbing Code, effective October 1, 2026); NFPA 286 for HDPE."
+ },
+ "notes": [
+  "Oregon Department of Education publishes guidance on restroom access for gender expansive students (January 2023, revised March 18, 2025 per a search-result summary of oregon.gov/ode). It is guidance, not statute, and was not opened; it is left out of page text.",
+  "The official amendment matrix words the urinal allowance two ways (an existing Oregon amendment 'Urinals may replace water closets at a ratio of 1 urinal per 2/3 water closet' and the committee's footnote g, 'up to 67 percent'). The adopted table on UpCodes carries footnote g, which is what the worked examples use.",
+  "Worked examples assume one men's room. Footnote g applies the 67 percent limit in each male toilet room, so splitting the men's toilets across several rooms can lower the number of urinals allowed."
+ ],
+ "sources_read": [
+  {
+   "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/2/definitions",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/12/interior-environment",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/34/existing-structures",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/oregon/ibc-2024/chapter/35/referenced-standards",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/oregon/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+   "official": false
+  },
+  {
+   "url": "https://www.oregon.gov/bcd/codes-stand/Documents/2025-ossc-matrix.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.oregon.gov/bcd/codes-stand/Pages/commercial-structures.aspx",
+   "official": true
+  },
+  {
+   "url": "https://www.oregon.gov/bcd/codes-stand/Pages/plumbing.aspx",
+   "official": true
+  },
+  {
+   "url": "https://www.oregon.gov/bcd/codes-stand/Documents/26opsc-matrix.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors455.html",
+   "official": true
+  },
+  {
+   "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors447.html",
+   "official": true
+  },
+  {
+   "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors659A.html",
+   "official": true
+  },
+  {
+   "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors659.html",
+   "official": true
+  },
+  {
+   "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors279C.html",
+   "official": true
+  },
+  {
+   "url": "https://www.oregon.gov/boli/employers/Pages/prevailing-wage.aspx",
+   "official": true
+  },
+  {
+   "url": "https://www.oregon.gov/boli/employers/Pages/prevailing-wage-rates.aspx",
+   "official": true
+  },
+  {
+   "url": "https://www.oregon.gov/dor/programs/businesses/Pages/sales-tax.aspx",
+   "official": true
+  },
+  {
+   "url": "https://www.access-board.gov/ada/chapter/ch06/",
+   "official": true
+  },
+  {
+   "url": "https://www.access-board.gov/ada/chapter/ch02/",
+   "official": true
+  }
+ ],
+ "to_confirm": [
+  "Fixture table, Chapter 8, Chapter 11 and ICC A117.1-2017 text were read on UpCodes, not on the official ICC-hosted 2025 OSSC (codes.iccsafe.org/content/ORSSC2025P1, script-rendered). Confirm Table 2902.1 rows, footnote g and Section 2902.2.1 there or with the Oregon Building Codes Division.",
+  "2026 Oregon Plumbing Specialty Code Chapter 4 could not be read (sign-in wall on UpCodes; official copy at epubs.iapmo.org/2026/OPSC not opened). Confirm with the Building Codes Division that it has no separate fixture-count table (UPC Table 422.1) that competes with OSSC Table 2902.1.",
+  "Whether the Director has authorized any Portland ordinance that differs from the state code on restrooms (ORS 455.040): for the city agent, with Portland Permitting & Development.",
+  "Accessibility process: no separate state review was found, but no Building Codes Division page stating this outright was read. Confirm with the Building Codes Division.",
+  "Section 2902.1.1 exception 2 says fixtures in multi-user all-gender rooms 'shall be in accordance with ICC A117.1'; ask the Building Codes Division whether that means every compartment must be accessible or only the usual share.",
+  "No Oregon statute restricting restroom use was found in ORS 659A or 659; this is an absence finding from the chapters read, not a statement by a state agency.",
+  "Which BOLI region covers Portland and the carpenter rate there: for the city agent, from the current rate book on the BOLI rates page.",
+  "Sales tax: how Next Partitions itself is taxed on Oregon sales (Corporate Activity Tax, local business taxes) is a question for Abe's accountant; not researched."
+ ]
+}
