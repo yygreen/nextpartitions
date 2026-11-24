@@ -97,7 +97,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
 - **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
-- **Resorts, golf clubs and sports venues:** finishes that match the property in guest restrooms, HDPE or phenolic in pool, locker room and concourse restrooms that are hosed down.
+- **Resorts, golf clubs and sports venues:** finishes that match the property in guest restrooms, HDPE or phenolic in pool and locker room restrooms that are hosed down.
 
 ## Nearby cities we deliver to
 
@@ -166,5 +166,5 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - The fire-test section says 'used as an interior finish' and doesn't name toilet partitions (same wording as other cities' pages).
 - Phoenix accepts the Uniform Plumbing Code as an alternative to the International Plumbing Code; its toilet table is replaced by the same table, but how it treats shared all-gender rooms was not read.
 - Phoenix's own prevailing wage ordinance (2024) was ruled unlawful by the Arizona Court of Appeals on February 27, 2026 according to news reports; not read on an official page, so not in the page text.
-- Sales tax: Phoenix's city rate falls to 2.0% on the part of a single item's price over $14,338; left off the page because a partition item doesn't reach it.
+- Sales tax: Phoenix's city rate falls to 2.0% on the part of a single item's price over $14,338; left off the page, add it if single items of that size are ever quoted.
 - What ICC A117.1-2017 changes for stalls compared with the federal standard was not read; the access bullet only says both apply.

@@ -16,6 +16,7 @@ language.
   curl -L -A "Mozilla/5.0"). For PDFs: curl into a new empty folder under your scratchpad, then `pdftotext -layout`.
   **WebSearch is rationed: at most 12 searches in total.** Prefer fetching known URLs directly (the files you are
   given list many) and following links from official pages.
+- Other agents share your scratchpad: keep every working file in a subfolder named after your state or city.
 - Research only: no sign-ins, no forms, no contact with anyone. Don't run git. Write only the one JSON file named
   in your task.
 - Today is 2026-11-24; use it as `checked`.
