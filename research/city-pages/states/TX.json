@@ -1,0 +1,58 @@
+{
+ "state": "TX",
+ "state_name": "Texas",
+ "checked": "2026-11-24",
+ "from_page": "service-area_houston.md",
+ "evidence_files": [
+  "research/state-codes/fixtures/houston.json",
+  "research/city-data/houston.json",
+  "research/state-codes/cities-first-5.json"
+ ],
+ "notes_for_city_agent": "This pack was written from the finished Houston page, so its page text names Houston and may include rules that are the city's own, not the state's. Read the evidence files to tell which is which, then check your own city: Texas has no statewide toilet-count table. Houston uses the Uniform Plumbing Code with its own amendments (half the men's toilets must be urinals); Dallas uses its own amended table (research/state-codes/fixtures/dallas.json). Find which plumbing and building code YOUR city adopted and read its table and amendments; write stalls_intro, stalls_rows and stalls_after for your city from that. The single-user sign rule on the Houston page comes from Houston's building code: check your city's. The fire-safety rule comes from the city's adopted building code: check your city's edition. State-level and reusable as they stand: access_bullet, state_extra_bullet, the Texas law on government buildings in restroom_bullet, public_jobs, tax bullets.",
+ "page": {
+  "stalls_intro": "Houston counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women. Every toilet needs a stall. One Houston rule is unusual: where the men's room needs more than one toilet, half of them must be urinals, so you buy fewer men's stalls and add urinal screens.",
+  "stalls_head": "head: Office | Restaurant | School",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/1+1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/~3",
+    "restaurant": "2/1+1",
+    "school": "2/1+1"
+   },
+   "400": {
+    "office": "5/~5",
+    "restaurant": "3/~3",
+    "school": "4/2+2"
+   }
+  },
+  "stalls_after": "Where the men's side needs 3 or 5, the city doesn't say how \"half\" rounds, so confirm the split of stalls and urinals with Houston plan review. These are minimums for the whole building, and at least one stall in each room must be wheelchair accessible.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or the Houston Permitting Center sets the final number.",
+  "fire_bullet": "- **Fire safety:** Houston's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Texas's own access rules set the sizes. On projects of $50,000 or more, the state reviews the plans; smaller projects must still follow the rules.",
+  "state_extra_bullet": "- **Texas and federal stall rules match:** Texas's own access rules for stalls, doors and grab bars read the same as the federal ones, so a stall that meets one meets the other.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to everyone. In a private building, a shared all-gender room is allowed if every toilet sits in its own compartment with a door and urinals are in stalls or screened from view. Since December 2025, Texas law requires shared restrooms in city, county, school district and public college buildings to be designated for one sex.",
+  "public_jobs": "On city, county and school district projects, Texas law requires at least the locally set wage.",
+  "tax_install_bullet": "- **Tax on installation:** in Texas, labor to remodel an existing commercial building is taxed, even when it's billed separately. Labor on new construction is not.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it to the state.",
+  "tax_confirm": "your accountant or the Texas Comptroller",
+  "sources": [
+   "- Texas Accessibility Standards and the $50,000 registration threshold: [TDLR Architectural Barriers FAQ](https://www.tdlr.texas.gov/ab/abfaq.htm) and [TAS](https://www.tdlr.texas.gov/ab/abtas.htm). Checked 2026-11-23.",
+   "- Texas stall rules compared with the federal ones: [2012 Texas Accessibility Standards](https://www.tdlr.texas.gov/ab/2012TAS/2012tascomplete.pdf) and the [2010 ADA Standards](https://www.access-board.gov/ada/), sections 213, 603 to 604 and 609. Checked 2026-11-24.",
+   "- Shared restrooms in government buildings: [Texas Government Code chapter 3002](https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm). Checked 2026-11-24.",
+   "- Wages on public jobs: [Texas Government Code chapter 2258](https://tcss.legis.texas.gov/resources/GV/htm/GV.2258.htm). Checked 2026-11-24.",
+   "- Sales tax: Texas Comptroller, [city rates](https://comptroller.texas.gov/taxes/sales/city.php), [remote sellers](https://comptroller.texas.gov/taxes/sales/remote-sellers.php), [use tax](https://comptroller.texas.gov/taxes/sales/use-tax.php) and [Publication 94-116, Real Property Repair and Remodeling](https://comptroller.texas.gov/taxes/publications/94-116.php). Checked 2026-11-24.",
+   "- The rules by their official names: 2010 ADA Standards for Accessible Design; 2012 Texas Accessibility Standards (TDLR registration and review at $50,000 or more); 2021 International Building Code with Houston Amendments, in force since January 1, 2024; 2021 Uniform Plumbing Code with Houston Amendments; NFPA 286 for HDPE.",
+   "- Texas has no statewide general contractor license: [Office of the Governor, Texas Business Licenses & Permits Guide](https://gov.texas.gov/uploads/files/business/Texas_Licenses_Permits_Guide.pdf). Last checked 2026-11-19."
+  ],
+  "official_names": "- The rules by their official names: 2010 ADA Standards for Accessible Design; 2012 Texas Accessibility Standards (TDLR registration and review at $50,000 or more); 2021 International Building Code with Houston Amendments, in force since January 1, 2024; 2021 Uniform Plumbing Code with Houston Amendments; NFPA 286 for HDPE."
+ }
+}

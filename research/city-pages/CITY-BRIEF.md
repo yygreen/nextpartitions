@@ -51,6 +51,9 @@ Research these five things for the CITY:
      "stalls_intro": "the state pack's text with the city's name where it fits, changed only if the city amends the counts",
      "stalls_rows": { "50": {"office","restaurant","school"}, "100": {...}, "200": {...}, "400": {...} },
      "stalls_after": "...",
+     "stalls_head": "optional, only if a column needs a qualifier, e.g. 'Office (recommended) | Restaurant (recommended) | School (required)'",
+     "capacity": "optional: only if the city's floor area per person differs from the state pack's sentence",
+     "extra_rule_bullets": [ "optional extra bullets for the rules list, e.g. a code change already scheduled: - **New rules on [date]:** ..." ],
      "install_rule": "2-3 sentences on who may install there: the city's contractor rule (local-rules entry) and the state's licence rule (state-licensing entry), as those files state them; end with: You don't need a permit to buy partitions.",
      "faq_install_extra": "one short sentence for the FAQ answer on installation: what the contractor needs there, or empty",
      "public_jobs_bullet": "- **Public jobs:** the state pack's sentence plus the local rate, e.g. For a carpenter on building work in Harris County that is $33.27 an hour plus $9.73 in benefits.",
@@ -64,6 +67,14 @@ Research these five things for the CITY:
 
 `stalls_rows` cell format: `W/M` (women's stalls / men's stalls; urinals optional), `W/M+U` (men's stalls plus U
 urinals, where urinals are required or the split is fixed), `W/~T` (men's fixtures in total, split not stated).
+
+In `page`, a key you leave out (or set to null) falls back to the state pack's text, so only write `stalls_intro`,
+`stalls_rows`, `stalls_after` and `restroom_bullet` when the state pack's wording needs the city's name or the city's
+own rule. The state pack's text may name another city (see its `notes_for_city_agent`): then you must write your own.
+Before you finish, validate the file with `python3 -m json.tool` and run
+`python3 /home/user/nextpartitions/site-content/build/city-pages/gen_from_packs.py <slug>`; fix anything it reports
+(it writes the page to site-content/pages/service-area_<slug>.md; read that page once from top to bottom and fix
+what reads wrong by editing your JSON, never the page).
 
 Reply with a five-line summary: codes in force, whether the city amends the toilet counts, the permit answer,
 tax rate and wage rate, and what stayed open.

@@ -1,0 +1,59 @@
+{
+ "state": "CA",
+ "state_name": "California",
+ "checked": "2026-11-24",
+ "from_page": "service-area_los-angeles.md",
+ "evidence_files": [
+  "research/state-codes/fixtures/los-angeles.json",
+  "research/city-data/los-angeles.json",
+  "research/state-codes/cities-first-5.json"
+ ],
+ "notes_for_city_agent": "This pack was written from the finished Los Angeles page, so its page text names Los Angeles and may include rules that are the city's own, not the state's. Read the evidence files to tell which is which, then check your own city: California's plumbing code table applies statewide, and Los Angeles adds its own bulletin; check whether your city amends the toilet counts and whether the 50-person and remodel statements in stalls_after hold outside Los Angeles (they cite LADBS). The $209,208 threshold in access_bullet is statewide (2026). State-level and reusable: access_bullet, fire_bullet, state_extra_bullet, restroom_bullet, public_jobs, tax bullets. The carpenter prevailing wage differs by county: read the Department of Industrial Relations determination for your county.",
+ "page": {
+  "stalls_intro": "Los Angeles counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women, and it requires urinals in the men's room. Every toilet needs a stall, and urinals need screens between them. The women's room must have at least as many toilets as the men's room has toilets and urinals together.",
+  "stalls_head": "head: Office | Restaurant | School",
+  "stalls_rows": {
+   "50": {
+    "office": "2/1+1",
+    "restaurant": "2/1+1",
+    "school": "2/1+1"
+   },
+   "100": {
+    "office": "3/1+1",
+    "restaurant": "2/1+1",
+    "school": "2/1+1"
+   },
+   "200": {
+    "office": "4/2+1",
+    "restaurant": "3/2+1",
+    "school": "4/2+1"
+   },
+   "400": {
+    "office": "8/3+2",
+    "restaurant": "4/3+1",
+    "school": "7/4+2"
+   }
+  },
+  "stalls_after": "These are minimums for new buildings, additions and changes of use that bring in more people; a remodel that doesn't add people can usually keep the toilets it has. A business with 50 people or fewer may be allowed a single one-person restroom, so ask LADBS. At least one stall in each room must be wheelchair accessible.",
+  "capacity": "To find your building's capacity, Los Angeles counts an office at one person per 150 square feet of floor, and a restaurant dining room or a classroom at one per 30 square feet. Your architect or LADBS sets the final number.",
+  "fire_bullet": "- **Fire safety:** building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and California's own access rules both set the sizes, and California's are stricter in places. A remodel can also oblige you to bring the restrooms serving that area up to today's rules; on projects under $209,208 (the 2026 figure) that duty is limited.",
+  "state_extra_bullet": "- **California extras:** California asks more of a stall than the federal rules. In a large restroom, 5% of the stalls must be wheelchair accessible, not just one. The accessible stall needs more open floor in front of the toilet, so it's deeper, and the aisle outside its door must be 48 inches wide, against 42. Stall doors need a privacy latch, and every restroom door carries California's circle or triangle symbol. Give your layout to your architect before you order.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be signed as all-gender. A shared all-gender room is allowed in place of separate men's and women's rooms if every toilet is in a floor-to-ceiling privacy compartment whose door locks from the inside and shows when it's occupied.",
+  "public_jobs": "California requires the state-set wage on public jobs over $1,000, including city and school district work.",
+  "tax_install_bullet": "- **Tax on installation:** in California, installation labor billed separately isn't taxed.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable. If the seller doesn't collect the tax, the buyer owes it to the state.",
+  "tax_confirm": "your accountant or the California Department of Tax and Fee Administration",
+  "sources": [
+   "- California Building Code Chapter 11B and the 2026 valuation threshold: [LADBS accessibility plan check list for commercial buildings, 2026](https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf). Checked 2026-11-23.",
+   "- California contractor license (C-61/D-34): [Contractors State License Board](https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=D34). Last checked 2026-11-19.",
+   "- Toilet counts in Los Angeles: 2025 California Plumbing Code, Table 422.1 and Table 4-1, read on [IAPMO's code viewer](https://epubs.iapmo.org/2025/CPC/), and [LADBS Information Bulletin P/BC 2026-095, Plumbing Fixtures](https://dbs.lacity.gov/sites/default/files/efs/forms/pc17/plumbing-fixtures-ib-p-bc2014-095.pdf) (\"the minimum number of plumbing fixtures are shown in CPC Table 422.1\"). Los Angeles makes no changes to the table. Checked 2026-11-24.",
+   "- Public jobs: California Department of Industrial Relations, [prevailing wage FAQ](https://www.dir.ca.gov/OPRL/FAQ_PrevailingWage.html) and [determination SC-23-31-2-2026-2, Carpenter, Los Angeles County](https://www.dir.ca.gov/OPRL/2026-2/PWD/Determinations/Southern/SC-023-31-2.pdf). Checked 2026-11-24.",
+   "- California's stall rules beyond the federal ones: 2025 California Building Code Chapter 11B, Sections 11B-213, 11B-604 and 11B-703, read in the [LADBS accessibility plan check list](https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf) and a [secondary copy of the state's advisory manual](https://www.corada.com/documents/2025CBCPG/11b-604-water-closets-and-toilet-compartments). Checked 2026-11-24.",
+   "- Restroom rules: [Division of the State Architect bulletin BU 17-01](https://www.dgs.ca.gov/-/media/Divisions/DSA/Publications/bulletins/BU_17-01-01.pdf) (single-user restrooms) and 2025 California Plumbing Code Sections 422.2 and 422.6, read on a secondary copy. Checked 2026-11-24.",
+   "- Sales tax: California Department of Tax and Fee Administration, [rates](https://cdtfa.ca.gov/taxes-and-fees/rates.aspx), [out-of-state sellers](https://cdtfa.ca.gov/industry/wayfair.htm) and [Regulation 1546](https://cdtfa.ca.gov/lawguides/vol1/sutr/1546.html). Checked 2026-11-24.",
+   "- The rules by their official names: 2010 ADA Standards for Accessible Design; California Building Code Chapter 11B; 2026 Los Angeles Building Code (the 2025 California Building Code with Los Angeles amendments, in force since January 1, 2026); Los Angeles Plumbing Code (the 2025 California Plumbing Code with Los Angeles amendments); NFPA 286 for HDPE under the International Building Code, the model for California's code."
+  ],
+  "official_names": "- The rules by their official names: 2010 ADA Standards for Accessible Design; California Building Code Chapter 11B; 2026 Los Angeles Building Code (the 2025 California Building Code with Los Angeles amendments, in force since January 1, 2026); Los Angeles Plumbing Code (the 2025 California Plumbing Code with Los Angeles amendments); NFPA 286 for HDPE under the International Building Code, the model for California's code."
+ }
+}
