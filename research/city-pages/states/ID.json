@@ -1,0 +1,677 @@
+{
+ "state": "ID",
+ "state_name": "Idaho",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "International Building Code as adopted by the Idaho Building Code Board (IDAPA 24.39.30.600.01)",
+   "edition": "2018",
+   "table": "Table 2902.1, Minimum Number of Required Plumbing Fixtures, with Idaho footnotes e and f",
+   "url": "https://adminrules.idaho.gov/rules/current/24/243930.pdf",
+   "quote": "International Building Code. The 2018 Edition, including appendices pertaining to building accessibility, with the following amendments: ... e. Table 2902.1 Minimum Number of Required Plumbing Fixtures. Delete footnote e and replace with the following: e For business occupancies, excluding restaurants, and mercantile occupancies with an occupant load of thirty (30) or fewer, service sinks shall not be required. f. Table 2902.1 Minimum Number of Required Plumbing Fixtures. Delete footnote f and replace with the following: f Drinking fountains are not required for an occupant load of thirty (30) or fewer.",
+   "note": "OPEN QUESTION. Idaho has TWO statewide tables in force and no official page was found saying which one prevails. (1) Building code: 2018 IBC Table 2902.1, whose footnotes the Building Code Board amended (so the Board treats the table as in use; Boise City Code 9-1A-61 also amends its footnote e, seen in a search result only). (2) Plumbing code: Table 422.1 of the 2017 Idaho State Plumbing Code (2015 Uniform Plumbing Code), adopted by the Plumbing Board in IDAPA 24.39.20.600 with no amendment to Section 422 or Table 422.1. Table 422.1 requires urinals and more women's toilets than Table 2902.1. Idaho Code 39-4109(1)(a)(ii) adopts the IBC 'excluding the incorporated ... plumbing codes', and the Table 2902.1 heading sends urinal substitution to the International Plumbing Code, which Idaho has not adopted. The page rows use Table 2902.1; the Table 422.1 results are stored beside each worked example and in alt_plumbing_code.",
+   "second_table": {
+    "code": "2017 Idaho State Plumbing Code (2015 Uniform Plumbing Code with Idaho amendments, IDAPA 24.39.20.600)",
+    "table": "Table 422.1, Minimum Plumbing Facilities",
+    "url": "https://epubs.iapmo.org/2017/Idaho/",
+    "adoption_quote": "Pursuant to Section 54-2601, Idaho Code, the Board adopts, as the Idaho State Plumbing Code (ISPC), the 2015 Uniform Plumbing Code, including Appendices A, B, C, D, E, G, I, J, K and L, with the following amendments",
+    "adoption_url": "https://adminrules.idaho.gov/rules/current/24/243920.pdf",
+    "quote": "422.1 Fixture Count. Plumbing fixtures shall be provided for the type of building occupancy and in the minimum number shown in Table 422.1. The total occupant load and occupancy classification shall be determined in accordance with the building code."
+   }
+  },
+  "edition_status": {
+   "text": "The 2018 edition stays in force. The Board's pending rule to adopt the 2024 IBC (Docket 24-3930-2502) did not pass the House in the 2026 session. The Division is drafting legislation that would write the 2024 codes into statute, to take effect July 1, 2028 if passed.",
+   "quote": "Building Code to Statute – The rulemaking ran by the Board at the 2026 Legislative Session did not pass the House. ... The proposed legislation would take effect July 1, 2028 if passed.",
+   "url": "https://dopl.idaho.gov/wp-content/uploads/2026/06/BLD-Minutes-2026-06-09.pdf ; https://dopl.idaho.gov/wp-content/uploads/2026/08/BLD-Minutes-2026-08-11.pdf"
+  },
+  "cities_may_amend": true,
+  "cities_may_amend_basis": {
+   "quote": "Except as provided in this subsection, local governments may amend by ordinance the adopted codes or provisions of referenced codes to reflect local concerns, provided such amendments establish at least an equivalent level of protection to that of the adopted building code. A local jurisdiction shall not have the authority to amend any accessibility provision pursuant to section 39-4109, Idaho Code",
+   "url": "https://legislature.idaho.gov/statutesrules/idstat/Title39/T39CH41/SECT39-4116/"
+  },
+  "rows": {
+   "office": {
+    "row_label": "2 Business: Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial, ambulatory care and similar uses",
+    "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "urinals": "No urinal column. Heading: 'WATER CLOSETS (URINALS SEE SECTION 424.2 OF THE INTERNATIONAL PLUMBING CODE)'. Idaho has not adopted the International Plumbing Code.",
+    "quote": "Business | Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial, ambulatory care and similar uses | 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/29/plumbing-systems",
+    "plumbing_code_table_422_1": {
+     "row_label": "B Business occupancy (office, professional or service type transactions)",
+     "wc_male": "1: 1-50; 2: 51-100; 3: 101-200; 4: 201-400. Over 400, add 1 fixture for each additional 500 males",
+     "wc_female": "1: 1-15; 2: 16-30; 3: 31-50; 4: 51-100; 8: 101-200; 11: 201-400. Over 400, add 1 fixture for each additional 150 females",
+     "urinals": "Male 1: 1-100; 2: 101-200; 3: 201-400; 4: 401-600. Over 600, add 1 fixture for each additional 300 males",
+     "url": "https://epubs.iapmo.org/2017/Idaho/"
+    }
+   },
+   "restaurant": {
+    "row_label": "1 Assembly: Restaurants, banquet halls and food courts (footnote d)",
+    "wc_male": "1 per 75",
+    "wc_female": "1 per 75",
+    "urinals": "No urinal column (see office row).",
+    "quote": "Restaurants, banquet halls and food courts d | 1 per 75 | 1 per 75 | 1 per 200 | — | 1 per 500 | 1 service sink",
+    "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/29/plumbing-systems",
+    "plumbing_code_table_422_1": {
+     "row_label": "A-2 Assembly occupancy- restaurants, pubs, lounges, night clubs and banquet halls",
+     "wc_male": "1: 1-50; 2: 51-150; 3: 151-300; 4: 301-400. Over 400, add 1 fixture for each additional 250 males",
+     "wc_female": "1: 1-25; 2: 26-50; 3: 51-100; 4: 101-200; 6: 201-300; 8: 301-400. Over 400, add 1 fixture for each 125 females",
+     "urinals": "Male 1: 1-200; 2: 201-300; 3: 301-400; 4: 401-600. Over 600, add 1 fixture for each additional 300 males",
+     "url": "https://epubs.iapmo.org/2017/Idaho/"
+    }
+   },
+   "school": {
+    "row_label": "3 Educational: Educational facilities",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 50",
+    "urinals": "No urinal column (see office row).",
+    "quote": "Educational | Educational facilities | 1 per 50 | 1 per 50 | — | 1 per 100 | 1 service sink",
+    "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/29/plumbing-systems",
+    "plumbing_code_table_422_1": {
+     "row_label": "E Educational occupancy-private or public schools",
+     "wc_male": "Male 1 per 50",
+     "wc_female": "Female 1 per 30",
+     "urinals": "Male 1 per 100",
+     "url": "https://epubs.iapmo.org/2017/Idaho/"
+    }
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Half the occupants are counted as male and half as female, unless approved data show a different split. The plumbing code says the same.",
+    "quote": "To determine the occupant load of each sex, the total occupant load shall be divided in half. ... Exception: The total occupant load shall not be required to be divided in half where approved statistical data indicate a distribution of the sexes of other than 50 percent of each sex.",
+    "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/29/plumbing-systems",
+    "plumbing_code_quote": "The minimum number of fixtures shall be calculated at 50 percent male and 50 percent female based on the total occupant load. Where information submitted indicates a difference in distribution of the sexes such information shall be used in order to determine the number of fixtures for each sex.",
+    "plumbing_code_url": "https://epubs.iapmo.org/2017/Idaho/"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole number, per sex. With mixed occupancies, add the fractions first, then round up.",
+    "quote": "Fractional numbers resulting from applying the fixture ratios of Table 2902.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number.",
+    "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/29/plumbing-systems",
+    "plumbing_code_quote": "Where applying the fixture ratios in Table 422.1 results in fractional numbers, such numbers shall be rounded to the next whole number. For multiple occupancies, fractional numbers shall be first summed and then rounded to the next whole number.",
+    "plumbing_code_url": "https://epubs.iapmo.org/2017/Idaho/"
+   },
+   "urinal_substitution": {
+    "text": "Building code table: no urinals are required, and the limit on swapping urinals for toilets sits in the International Plumbing Code, which Idaho has not adopted, so the share of men's toilets that may be urinals is not stated in an Idaho-adopted text (null). Plumbing code table: urinals are REQUIRED in their own column (office 1 for 1-100 males; restaurant 1 for 1-200 males; school 1 per 100 males); each urinal beyond that minimum may replace one toilet, down to two-thirds of the required toilets; and women's toilets may not be fewer than men's toilets plus urinals.",
+    "quote": "3 The total number of required water closets for females shall be not less than the total number of required water closets and urinals for males. 4 For each urinal added in excess of the minimum required, one water closet shall be permitted to be deducted. The number of water closets shall not be reduced to less than two-thirds of the minimum requirement.",
+    "url": "https://epubs.iapmo.org/2017/Idaho/",
+    "building_code_quote": "WATER CLOSETS (URINALS SEE SECTION 424.2 OF THE INTERNATIONAL PLUMBING CODE)",
+    "building_code_url": "https://up.codes/viewer/idaho/ibc-2018/chapter/29/plumbing-systems"
+   },
+   "small_occupancy_exception": {
+    "text": "Building code: one shared room is allowed where the total occupant load, staff and customers together, is 15 or fewer; in business occupancies at 25 or fewer; in mercantile at 100 or fewer. Where each sex needs only one toilet, two family or assisted-use rooms may serve instead. Plumbing code: one single-user room for both sexes at 10 or fewer occupants, or at 50 or fewer in business and mercantile occupancies.",
+    "quote": "Where plumbing fixtures are required, separate facilities shall be provided for each sex. Exceptions: Separate facilities shall not be required for dwelling units and sleeping units. Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. Separate facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer.",
+    "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/29/plumbing-systems",
+    "plumbing_code_quote": "(2) In occupancies with a total occupant load of 10 or less, including customers and employees, one toilet facility, designed for use by no more than one person at a time, shall be permitted for use by both sexes. (3) In business and mercantile occupancies with a total occupant load of 50 or less including customers and employees, one toilet facility, designed for use by no more than one person at a time, shall be permitted for use by both sexes.",
+    "plumbing_code_url": "https://epubs.iapmo.org/2017/Idaho/"
+   },
+   "occupant_load": {
+    "text": "Office (business areas): 150 square feet gross per person. Restaurant dining room (assembly without fixed seats, unconcentrated, tables and chairs): 15 square feet net. Classroom: 20 square feet net.",
+    "quote": "Business areas | 150 gross ... Unconcentrated (tables and chairs) | 15 net ... Classroom area | 20 net",
+    "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/10/means-of-egress"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "table": "2018 IBC Table 2902.1 (building code)",
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "25 women, 25 men. 1 per 25 for the first 50: 25/25 = 1 each.",
+    "plumbing_code_table_422_1": {
+     "wc_female": 2,
+     "wc_male": 1,
+     "urinals_required": 1,
+     "how": "Female 16-30 = 2. Male 1-50 = 1 toilet; urinals 1-100 = 1."
+    }
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "table": "2018 IBC Table 2902.1 (building code)",
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "50 women, 50 men. 1 per 25 for the first 50: 50/25 = 2 each.",
+    "plumbing_code_table_422_1": {
+     "wc_female": 3,
+     "wc_male": 1,
+     "urinals_required": 1,
+     "how": "Female 31-50 = 3. Male 1-50 = 1 toilet; urinals 1-100 = 1."
+    }
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "table": "2018 IBC Table 2902.1 (building code)",
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "100 women, 100 men. First 50 at 1 per 25 = 2; remaining 50 at 1 per 50 = 1; total 3 each.",
+    "plumbing_code_table_422_1": {
+     "wc_female": 4,
+     "wc_male": 2,
+     "urinals_required": 1,
+     "how": "Female 51-100 = 4. Male 51-100 = 2 toilets; urinals 1-100 = 1."
+    }
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "table": "2018 IBC Table 2902.1 (building code)",
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "200 women, 200 men. First 50 at 1 per 25 = 2; remaining 150 at 1 per 50 = 3; total 5 each.",
+    "plumbing_code_table_422_1": {
+     "wc_female": 8,
+     "wc_male": 3,
+     "urinals_required": 2,
+     "how": "Female 101-200 = 8. Male 101-200 = 3 toilets; urinals 101-200 = 2."
+    }
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "table": "2018 IBC Table 2902.1 (building code)",
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "25 women, 25 men. 1 per 75: 25/75 = 0.33, rounds up to 1 each.",
+    "plumbing_code_table_422_1": {
+     "wc_female": 2,
+     "wc_male": 1,
+     "urinals_required": 1,
+     "how": "Female 1-25 = 1, raised to 2 by note 3 (women's toilets not fewer than men's toilets plus urinals). Male 1-50 = 1 toilet; urinals 1-200 = 1."
+    }
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "table": "2018 IBC Table 2902.1 (building code)",
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "50 women, 50 men. 50/75 = 0.67, rounds up to 1 each.",
+    "plumbing_code_table_422_1": {
+     "wc_female": 2,
+     "wc_male": 1,
+     "urinals_required": 1,
+     "how": "Female 26-50 = 2. Male 1-50 = 1 toilet; urinals 1-200 = 1."
+    }
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "table": "2018 IBC Table 2902.1 (building code)",
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "100 women, 100 men. 100/75 = 1.33, rounds up to 2 each.",
+    "plumbing_code_table_422_1": {
+     "wc_female": 3,
+     "wc_male": 2,
+     "urinals_required": 1,
+     "how": "Female 51-100 = 3. Male 51-150 = 2 toilets; urinals 1-200 = 1."
+    }
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "table": "2018 IBC Table 2902.1 (building code)",
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "200 women, 200 men. 200/75 = 2.67, rounds up to 3 each.",
+    "plumbing_code_table_422_1": {
+     "wc_female": 4,
+     "wc_male": 3,
+     "urinals_required": 1,
+     "how": "Female 101-200 = 4. Male 151-300 = 3 toilets; urinals 1-200 = 1."
+    }
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "table": "2018 IBC Table 2902.1 (building code)",
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "25 girls, 25 boys. 1 per 50: 25/50 = 0.5, rounds up to 1 each.",
+    "plumbing_code_table_422_1": {
+     "wc_female": 2,
+     "wc_male": 1,
+     "urinals_required": 1,
+     "how": "Female 1 per 30 = 1, raised to 2 by note 3. Male 1 per 50 = 1 toilet; urinals 1 per 100 = 1."
+    }
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "table": "2018 IBC Table 2902.1 (building code)",
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "50 girls, 50 boys. 50/50 = 1 each.",
+    "plumbing_code_table_422_1": {
+     "wc_female": 2,
+     "wc_male": 1,
+     "urinals_required": 1,
+     "how": "Female 50/30 = 1.67, rounds to 2. Male 50/50 = 1 toilet; urinals 50/100 rounds to 1."
+    }
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "table": "2018 IBC Table 2902.1 (building code)",
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "100 girls, 100 boys. 100/50 = 2 each.",
+    "plumbing_code_table_422_1": {
+     "wc_female": 4,
+     "wc_male": 2,
+     "urinals_required": 1,
+     "how": "Female 100/30 = 3.33, rounds to 4. Male 100/50 = 2 toilets; urinals 100/100 = 1."
+    }
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "table": "2018 IBC Table 2902.1 (building code)",
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "200 girls, 200 boys. 200/50 = 4 each.",
+    "plumbing_code_table_422_1": {
+     "wc_female": 7,
+     "wc_male": 4,
+     "urinals_required": 2,
+     "how": "Female 200/30 = 6.67, rounds to 7. Male 200/50 = 4 toilets; urinals 200/100 = 2."
+    }
+   }
+  ],
+  "alt_plumbing_code": {
+   "table": "2017 Idaho State Plumbing Code Table 422.1",
+   "stalls_rows": {
+    "50": {
+     "office": "2/1+1",
+     "restaurant": "2/1+1",
+     "school": "2/1+1"
+    },
+    "100": {
+     "office": "3/1+1",
+     "restaurant": "2/1+1",
+     "school": "2/1+1"
+    },
+    "200": {
+     "office": "4/2+1",
+     "restaurant": "3/2+1",
+     "school": "4/2+1"
+    },
+    "400": {
+     "office": "8/3+2",
+     "restaurant": "4/3+1",
+     "school": "7/4+2"
+    }
+   },
+   "note": "Format W/M+U, urinals required. Restaurant and school at 50 occupants: women's toilets raised from 1 to 2 by note 3 of the table."
+  },
+  "confidence": "medium",
+  "confidence_note": "Rows and rules were read in full. The building code text was read on UpCodes (the ICC site blocks automated access); the Idaho amendments were read on the official rule; the plumbing code table was read in IAPMO's read-only copy of the 2017 Idaho State Plumbing Code, the copy DOPL points to. What is NOT confirmed is which of the two tables a given Idaho building department applies."
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "2018 IBC Section 803.9, with 803.1.1 and the Chapter 2 definition of interior wall and ceiling finish; adopted without change by IDAPA 24.39.30.600.01 (the Idaho amendments list touches Sections 305, 308, 310, 602, Table 2902.1 and 3113 only)",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. | 803.1.1 Interior Wall and Ceiling Finish Materials Tested in Accordance With NFPA 286. Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1. | [BF] Interior Wall and Ceiling Finish. The exposed interior surfaces of buildings, including but not limited to: fixed or movable walls and partitions; toilet room privacy partitions; columns; ceilings; ...",
+  "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/8/interior-finishes",
+  "definition_url": "https://up.codes/viewer/idaho/ibc-2018/chapter/2/definitions",
+  "amendments_url": "https://adminrules.idaho.gov/rules/current/24/243930.pdf",
+  "confidence": "medium",
+  "note": "Code text read on UpCodes; absence of an Idaho amendment to Chapter 8 read on the official rule."
+ },
+ "access": {
+  "state_standard": "No separate Idaho accessibility standard. Idaho applies Chapter 11 of the 2018 International Building Code and its referenced standard ICC A117.1-2009, alongside the federal 2010 ADA Standards. The Board may not lower the accessibility provisions and cities may not amend them.",
+  "state_standard_quotes": [
+   {
+    "quote": "1102.1 Design. Buildings and facilities shall be designed and constructed to be accessible in accordance with this code and ICC A117.1.",
+    "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/11/accessibility"
+   },
+   {
+    "quote": "ICC A117.1—09 Accessible and Usable Buildings and Facilities",
+    "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/35/referenced-standards"
+   },
+   {
+    "quote": "ICC/ANSI A117.1 2009 Accessible and Usable Buildings and Facilities.",
+    "url": "https://dopl.idaho.gov/wp-content/uploads/2025/06/2025-Updated-Idaho-Adopted-Codes.pdf",
+    "note": "DOPL adopted-codes list; the line sits under the elevator codes heading."
+   },
+   {
+    "quote": "No amendments to the accessibility guidelines shall be made by the Idaho building code board that provide for lower standards of accessibility than those published by the International Code Council.",
+    "url": "https://legislature.idaho.gov/statutesrules/idstat/Title39/T39CH41/SECT39-4109/"
+   }
+  ],
+  "differences": [
+   {
+    "point": "Vertical grab bar on the side wall of an accessible stall",
+    "state": "A117.1-2009 604.5.1: 'In addition, a vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall.' Applies to wheelchair stalls (604.9.6) and to both sides of ambulatory stalls (604.10.4).",
+    "federal": "2010 ADA 604.5.1: 'The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall.' No vertical bar.",
+    "state_url": "https://up.codes/viewer/idaho/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities",
+    "quote": "In addition, a vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor"
+   },
+   {
+    "point": "Width of the ambulatory stall",
+    "state": "A117.1-2009 604.10.2: 'The minimum area of an ambulatory accessible compartment shall be 60 inches (1525 mm) minimum in depth and 36 inches (915 mm) in width.'",
+    "federal": "2010 ADA 604.8.2.1: 'Ambulatory accessible compartments shall have a depth of 60 inches (1525 mm) minimum and a width of 35 inches (890 mm) minimum and 37 inches (940 mm) maximum.'",
+    "state_url": "https://up.codes/viewer/idaho/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities",
+    "quote": "60 inches (1525 mm) minimum in depth and 36 inches (915 mm) in width"
+   },
+   {
+    "point": "How many wheelchair stalls in a large toilet room",
+    "state": "2018 IBC 1109.2.2: 'Where water closet compartments are provided in a toilet room or bathing room, at least 5 percent of the total number of compartments shall be wheelchair accessible. Where the combined total water closet compartments and urinals provided in a toilet room or bathing room is six or more, at least 5 percent of the total number of compartments shall be ambulatory accessible, provided in addition to the wheelchair-accessible compartment.' A room with more than 20 stalls needs a second wheelchair stall.",
+    "federal": "2010 ADA 213.3.1: 'Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1. In addition to the compartment required to comply with 604.8.1, at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures.'",
+    "state_url": "https://up.codes/viewer/idaho/ibc-2018/chapter/11/accessibility",
+    "quote": "at least 5 percent of the total number of compartments shall be wheelchair accessible"
+   },
+   {
+    "point": "Family or assisted-use toilet room in assembly and mercantile buildings",
+    "state": "2018 IBC 1109.2.1: 'In assembly and mercantile occupancies, an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required.'",
+    "federal": "No such requirement in sections 213 or 604 of the 2010 ADA Standards (section 213 was read; it has no family or assisted-use room trigger).",
+    "state_url": "https://up.codes/viewer/idaho/ibc-2018/chapter/11/accessibility",
+    "quote": "an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required"
+   },
+   {
+    "point": "Toilet paper dispenser position in an accessible stall",
+    "state": "A117.1-2009 604.7: 'Where the dispenser is located above the grab bar, the outlet of the dispenser shall be located within an area 24 inches (610 mm) minimum and 36 inches (915 mm) maximum from the rear wall. Where the dispenser is located below the grab bar, the outlet of the dispenser shall be located within an area 24 inches (610 mm) minimum and 42 inches (1065 mm) maximum from the rear wall. The outlet of the dispenser shall be located 18 inches (455 mm) minimum and 48 inches (1220 mm) maximum above the floor.'",
+    "federal": "2010 ADA 604.7: 'Toilet paper dispensers shall comply with 309.4 and shall be 7 inches (180 mm) minimum and 9 inches (230 mm) maximum in front of the water closet measured to the centerline of the dispenser. The outlet of the dispenser shall be 15 inches (380 mm) minimum and 48 inches (1220 mm) maximum above the finish floor and shall not be located behind grab bars.'",
+    "state_url": "https://up.codes/viewer/idaho/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities",
+    "quote": "the outlet of the dispenser shall be located within an area 24 inches (610 mm) minimum and 36 inches (915 mm) maximum from the rear wall"
+   }
+  ],
+  "same_as_federal": "Read and found the same in both: wheelchair stall size (60 in wide; 56 in deep wall-hung, 59 in floor-mounted), toe clearance (9 in high, 6 in deep; 12 in high for children's stalls), self-closing door with pulls on both sides, children's stall size.",
+  "process": "No state accessibility registration or separate state plan review was found. Accessibility is checked in ordinary building plan review by the building department that issues the permit. Idaho Code 39-4116(4)(a): 'A local jurisdiction shall not have the authority to amend any accessibility provision pursuant to section 39-4109, Idaho Code.'",
+  "confidence": "medium",
+  "note": "A117.1-2009 and IBC Chapter 11 were read on UpCodes; the ADA text on access-board.gov. Door-sign and other A117.1 chapters were not compared."
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "Under the building code a single-user toilet room counts toward the required fixtures and must be identified for use by either sex. Where each sex needs only one toilet, two family or assisted-use rooms may replace the separate men's and women's rooms. State law leaves single-occupancy rooms outside its sex-designation rules for schools and state institutions.",
+   "quote": "Single-user toilet facilities and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified for use by either sex.",
+   "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/29/plumbing-systems",
+   "statute_quote": "This chapter shall not apply: (1) To single-occupancy restrooms and changing facilities or restrooms and changing facilities that are conspicuously designated for unisex or family use",
+   "statute_url": "https://legislature.idaho.gov/statutesrules/idstat/Title33/T33CH67/"
+  },
+  "all_gender_shared": {
+   "rule": "Idaho's 2018 building code has no provision for a shared, multi-stall all-gender room: required toilets must be in separate facilities for each sex, with the small-occupancy exceptions only. The plumbing code says the same. In K-12 public schools, and in state colleges, correctional facilities, juvenile correctional centers and state-run domestic violence shelters, state law requires every multi-occupancy restroom to be designated for one sex. Whether a building official would accept a shared all-gender room in a private building as an alternative design was not found on any official page.",
+   "quote": "Where plumbing fixtures are required, separate facilities shall be provided for each sex.",
+   "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/29/plumbing-systems",
+   "plumbing_code_quote": "422.2 Separate Facilities. Separate toilet facilities shall be provided for each sex.",
+   "plumbing_code_url": "https://epubs.iapmo.org/2017/Idaho/"
+  },
+  "use_restrictions": {
+   "rule": "Three statutes. (1) K-12 public schools: multi-occupancy restrooms and changing facilities must be designated male-only or female-only and used only by that sex (Idaho Code 33-6703, 2023). (2) Correctional facilities, juvenile correctional centers, state-operated domestic violence shelters and state colleges and universities: same rule for multi-occupancy restrooms, changing rooms and sleeping quarters (Idaho Code 67-9802, 2025). (3) Since July 1, 2026 it is a misdemeanor to knowingly and willfully enter a restroom or changing room designated for the opposite biological sex in a government-owned building or a place of public accommodation, with listed exceptions; a second conviction within five years is a felony (Idaho Code 18-4117). News reports say a federal judge partly blocked enforcement of 18-4117 on June 16, 2026 (Jackson-Edney v. Labrador, D. Idaho No. 1:26-cv-00261); the order itself was not read.",
+   "quote": "Any person who knowingly and willfully enters a restroom or changing room in a government-owned building or a place of public accommodation, as defined in section 67-5902, Idaho Code, that is designated for use by the opposite biological sex of such person shall be guilty of a misdemeanor and may be imprisoned in the county jail for a period not to exceed one (1) year.",
+   "url": "https://legislature.idaho.gov/statutesrules/idstat/Title18/T18CH41/SECT18-4117/",
+   "other_quotes": [
+    {
+     "quote": "Every public school restroom or changing facility accessible by multiple persons at the same time must be: (a) Designated for use by male persons only or female persons only; and (b) Used only by members of that sex.",
+     "url": "https://legislature.idaho.gov/statutesrules/idstat/Title33/T33CH67/"
+    },
+    {
+     "quote": "Any covered entity shall designate each multi-occupancy restroom, changing room, and sleeping quarters for the exclusive use by either females or males.",
+     "url": "https://legislature.idaho.gov/statutesrules/idstat/Title67/T67CH98/"
+    },
+    {
+     "quote": "\"Covered entity\" means a correctional facility, domestic violence shelter, juvenile correctional center, or state educational institution.",
+     "url": "https://legislature.idaho.gov/statutesrules/idstat/Title67/T67CH98/"
+    }
+   ]
+  },
+  "confidence": "medium",
+  "note": "Statutes read on legislature.idaho.gov (high). Building code text on UpCodes. Injunction status from news search results only."
+ },
+ "public_wage": {
+  "has_state_law": false,
+  "law": "None. Idaho Code 44-2013 (Open Access to Work Act, 2011) bars the state and every political subdivision, school districts included, from requiring a set wage rate or benefits on public works, except where federal law requires prevailing wages on federally funded projects. Only the federal Davis-Bacon Act applies, on federally funded work.",
+  "threshold": null,
+  "rates_url": "https://sam.gov/wage-determinations (federal Davis-Bacon determinations only)",
+  "quote": "Except as provided in subsection (3)(b) of this section or as required by federal or state law, the state or any political subdivision that contracts for the construction, alteration, equipping, furnishing, maintenance, repair or improvement of public works shall not require that a contractor, subcontractor, material supplier or carrier engaged in the construction, alteration, equipping, furnishing, maintenance, repair or improvement of public works pay its employees: (i) A predetermined amount of wages or wage rate; or (ii) A type, amount or rate of employee benefits. (b) Subsection (3)(a) of this section shall not apply when federal law requires the payment of prevailing or minimum wages to persons working on projects funded in whole or in part by federal funds.",
+  "url": "https://legislature.idaho.gov/statutesrules/idstat/Title44/T44CH20/SECT44-2013/",
+  "confidence": "high"
+ },
+ "sales_tax": {
+  "state_rate": 0.06,
+  "state_rate_quote": "Idaho’s sales tax rate is 6%. Idaho’s use tax rate is also 6%.",
+  "state_rate_url": "https://tax.idaho.gov/taxes/sales-use/online-guide/",
+  "local_note": {
+   "text": "Only some resort cities add a local sales tax; Boise is not on the Tax Commission's list of cities with local sales taxes.",
+   "quote": "Some Idaho resort cities have a local sales tax in addition to the state sales tax.",
+   "url": "https://tax.idaho.gov/taxes/sales-use/sales-tax/local-sales-tax/city-sales-tax/"
+  },
+  "shipped_goods": {
+   "rule": "Partitions sold without installation are a retail sale of goods, taxable at 6%. An out-of-state seller with no physical presence must collect Idaho tax once its Idaho sales exceed $100,000 in the current or previous year. If the seller does not collect it, the buyer owes use tax at the same rate.",
+   "quote": "Retailers without a physical presence in Idaho must collect Idaho sales tax when their sales in Idaho exceed $100,000 in the current or previous year. | Use tax applies to goods used or stored in Idaho if: The seller didn’t charge sales tax.",
+   "url": "https://tax.idaho.gov/taxes/sales-use/guides-for-certain-groups/online-sellers/online-guide/ ; https://tax.idaho.gov/taxes/sales-use/online-guide/"
+  },
+  "freight_taxed": false,
+  "freight": {
+   "rule": "Shipping and handling for delivery direct to the buyer is not taxed when it is stated separately on the invoice. Freight-in to the retailer that is passed on to the buyer is taxed.",
+   "quote": "You don’t owe sales or use tax on the following items, if they’re separately stated on the invoice: Shipping and handling. Shipping and handling charges for shipping the goods directly to the buyer | You owe sales or use tax on the following items, even if they’re separately stated on the invoice: Freight-in to the retailer. Fees charged for shipping goods to the retailer, who then passes the charges to the buyer",
+   "url": "https://tax.idaho.gov/taxes/sales-use/online-guide/"
+  },
+  "install_labor": {
+   "rule": "Not taxed. On a retail sale, installation labor stated separately on the invoice is outside the taxable price. A contractor improving real property does not charge the customer sales tax at all.",
+   "quote": "You don’t owe sales or use tax on the following items, if they’re separately stated on the invoice: ... Installation labor. Installation labor, such as the labor to install a television in a home at the time of the sale",
+   "url": "https://tax.idaho.gov/taxes/sales-use/online-guide/"
+  },
+  "furnish_and_install": {
+   "rule": "A contractor who supplies and installs materials that become part of the building is the consumer of those materials: the contractor pays sales or use tax on its cost of materials and does not charge the customer sales tax on the contract. This holds even where the customer is a government body or otherwise exempt. A contractor who sells goods without installing them is a retailer and collects sales tax. Trade fixtures that serve only the business in the space stay personal property, and supplying and installing those is a retail sale.",
+   "quote": "Idaho sales tax law says contractors are the consumers (end users) of all the goods they use. As a result, they must pay sales tax on all purchases ... A contractor doesn’t charge sales tax to the customer, so the bid should be high enough to cover any tax paid on materials without itemizing the sales tax on the bid. | A fixture is considered a real property improvement when it’s affixed to the real estate and its removal would cause significant structural damage to the building itself, or if it’s affixed to the real estate and benefits the land or building regardless of the type of business conducted on the premises. Contractors supplying and installing trade fixtures must register as retailers and charge, collect, and remit sales tax on these retail sales.",
+   "url": "https://tax.idaho.gov/taxes/sales-use/guides-for-certain-groups/contractors/"
+  },
+  "agency": "Idaho State Tax Commission",
+  "confidence": "high",
+  "note": "The Tax Commission guide does not name toilet partitions. They are fixed to the building and serve any occupant, which matches the guide's description of a real property improvement, but that classification is our reading, not a quoted ruling."
+ },
+ "page": {
+  "stalls_intro": "Idaho's building rules count toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. Half are counted as men and half as women, and every toilet used by staff or the public needs its own stall with a door. The building rules give one number of toilets for each sex and do not require urinals, so the table shows the men's side as stalls.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "Idaho's plumbing rules carry a second table that asks for more: at 100 people, an office needs 3 women's toilets and 1 men's toilet plus 1 urinal, and a restaurant or school needs 2 women's toilets and 1 men's toilet plus 1 urinal. Ask your building department which table it applies, and whether urinals may replace any men's toilets. These are minimums for the whole building.",
+  "capacity": "To find your building's capacity, Idaho's building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** Idaho's building rules treat toilet partitions as an interior finish and require solid plastic (HDPE) and polypropylene finishes to pass a room-corner fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Idaho's building rules both set the sizes. Idaho has no separate state review for access: your local building department checks it with the rest of the plans.",
+  "state_extra_bullet": "- **Idaho extras:** the accessible stall needs an 18-inch vertical grab bar on the side wall as well as the horizontal one, which federal rules don't ask for. The narrower stall with grab bars on both sides, required once a room has six or more toilets and urinals, must be 36 inches wide. A room with more than 20 stalls needs a second wheelchair stall. Restaurants, other assembly buildings and stores that need six or more toilets in total must also have a family restroom.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to either sex. Idaho's building rules require separate men's and women's rooms and have no option for a shared all-gender room with stalls, apart from the smallest buildings, which may have a single room. State law requires shared restrooms in public schools, state colleges and correctional facilities to be designated for one sex. Since July 2026 it is also a crime in Idaho to knowingly enter a restroom designated for the opposite sex in a government-owned building or a business open to the public, with listed exceptions. A federal court has put part of that law on hold while a challenge is heard.",
+  "public_jobs": "Idaho has no wage law for public construction and bars the state, cities and school districts from setting wage rates on their projects, so a required wage applies only on federally funded work.",
+  "tax_install_bullet": "- **Tax on installation:** in Idaho, a contractor who supplies and installs partitions that become part of the building pays the 6% tax on the materials and does not add sales tax to your bill. Installation labor is not taxed.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable at 6%. Freight to your address is not taxed when it is listed separately on the invoice. If the seller doesn't collect the tax, the buyer owes it to the state.",
+  "tax_confirm": "your accountant or the Idaho State Tax Commission",
+  "sources": [
+   "- Idaho building code edition and state amendments: [IDAPA 24.39.30, Rules of Building Safety (Building Code Rules), Section 600](https://adminrules.idaho.gov/rules/current/24/243930.pdf) and the [Division of Occupational and Professional Licenses list of Idaho Adopted Codes](https://dopl.idaho.gov/wp-content/uploads/2025/06/2025-Updated-Idaho-Adopted-Codes.pdf). The 2018 edition stays in force: the 2024 edition did not pass the 2026 Legislature ([Idaho Building Code Board minutes, June 9, 2026](https://dopl.idaho.gov/wp-content/uploads/2026/06/BLD-Minutes-2026-06-09.pdf)). Checked 2026-11-24.",
+   "- Toilet counts, building code: 2018 International Building Code, Table 2902.1 and Sections 2902.1.1 and 2902.2, with Idaho's footnotes e and f, read on [UpCodes, Idaho Building Code 2018, Chapter 29](https://up.codes/viewer/idaho/ibc-2018/chapter/29/plumbing-systems), a secondary copy. Floor area per person: Table 1004.5, read on [UpCodes, Chapter 10](https://up.codes/viewer/idaho/ibc-2018/chapter/10/means-of-egress). Checked 2026-11-24.",
+   "- Toilet counts, plumbing code: [2017 Idaho State Plumbing Code](https://epubs.iapmo.org/2017/Idaho/) (2015 Uniform Plumbing Code with Idaho amendments), Section 422 and Table 422.1, adopted by [IDAPA 24.39.20, Rules Governing Plumbing, Section 600](https://adminrules.idaho.gov/rules/current/24/243920.pdf). Checked 2026-11-24.",
+   "- Stalls for every toilet and screens for urinals: 2018 International Building Code Sections 1209.3.1 and 1209.3.2, read on [UpCodes, Chapter 12](https://up.codes/viewer/idaho/ibc-2018/chapter/12/interior-environment). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: 2018 International Building Code Sections 803.9 and 803.1.1 (NFPA 286) and the Chapter 2 definition of interior wall and ceiling finish, read on UpCodes, [Chapter 8](https://up.codes/viewer/idaho/ibc-2018/chapter/8/interior-finishes) and [Chapter 2](https://up.codes/viewer/idaho/ibc-2018/chapter/2/definitions). Checked 2026-11-24.",
+   "- Idaho access rules compared with the federal ones: 2018 International Building Code Sections 1109.2 to 1109.2.2, read on [UpCodes, Chapter 11](https://up.codes/viewer/idaho/ibc-2018/chapter/11/accessibility); ICC A117.1-2009 Sections 604.5, 604.7, 604.9 and 604.10, read on [UpCodes](https://up.codes/viewer/idaho/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities); and the [2010 ADA Standards](https://www.access-board.gov/ada/), sections 213 and 604. No lowering or local amendment of access rules: Idaho Code [39-4109](https://legislature.idaho.gov/statutesrules/idstat/Title39/T39CH41/SECT39-4109/) and [39-4116](https://legislature.idaho.gov/statutesrules/idstat/Title39/T39CH41/SECT39-4116/). Checked 2026-11-24.",
+   "- Single-user restrooms and separate rooms for each sex: 2018 International Building Code Sections 2902.1.2, 2902.2 and 2902.2.1, read on [UpCodes, Chapter 29](https://up.codes/viewer/idaho/ibc-2018/chapter/29/plumbing-systems). Checked 2026-11-24.",
+   "- Restrooms designated by sex: Idaho Code [Title 33, Chapter 67](https://legislature.idaho.gov/statutesrules/idstat/Title33/T33CH67/) (public schools), [Title 67, Chapter 98](https://legislature.idaho.gov/statutesrules/idstat/Title67/T67CH98/) (state colleges, correctional facilities, state-run shelters) and [Section 18-4117](https://legislature.idaho.gov/statutesrules/idstat/Title18/T18CH41/SECT18-4117/) (government-owned buildings and places of public accommodation, in effect July 1, 2026). The federal court order of June 16, 2026 in Jackson-Edney v. Labrador is known from news reports only. Checked 2026-11-24.",
+   "- Wages on public jobs: [Idaho Code Section 44-2013, Open Access to Work Act](https://legislature.idaho.gov/statutesrules/idstat/Title44/T44CH20/SECT44-2013/). Checked 2026-11-24.",
+   "- Sales tax: Idaho State Tax Commission, [Sales and Use Taxes: Basics Guide](https://tax.idaho.gov/taxes/sales-use/online-guide/) (6% rate, shipping and installation labor), [Contractors Working in Idaho](https://tax.idaho.gov/taxes/sales-use/guides-for-certain-groups/contractors/), [Online Sellers Guide](https://tax.idaho.gov/taxes/sales-use/guides-for-certain-groups/online-sellers/online-guide/) and [Use Tax](https://tax.idaho.gov/taxes/sales-use/use-tax/). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; ICC A117.1-2009, Accessible and Usable Buildings and Facilities, through Chapter 11 of the 2018 International Building Code; 2018 International Building Code with Idaho amendments (IDAPA 24.39.30); 2017 Idaho State Plumbing Code, the 2015 Uniform Plumbing Code with Idaho amendments (IDAPA 24.39.20); NFPA 286 for HDPE."
+ },
+ "sources_read": [
+  {
+   "url": "https://adminrules.idaho.gov/rules/current/24/243930.pdf",
+   "official": true
+  },
+  {
+   "url": "https://adminrules.idaho.gov/rules/current/24/243920.pdf",
+   "official": true
+  },
+  {
+   "url": "https://dopl.idaho.gov/wp-content/uploads/2025/06/2025-Updated-Idaho-Adopted-Codes.pdf",
+   "official": true
+  },
+  {
+   "url": "https://dopl.idaho.gov/bld/bld-statutes-and-rules/",
+   "official": true
+  },
+  {
+   "url": "https://dopl.idaho.gov/plb/plb-statutes-rules-and-guidance/",
+   "official": true
+  },
+  {
+   "url": "https://proddfmmainsa.blob.core.windows.net/dfm-admin-website/bulletin/2026/01.pdf",
+   "official": true,
+   "note": "Idaho Administrative Bulletin, January 7, 2026, pending rule Docket 24-3930-2502 (2024 IBC)"
+  },
+  {
+   "url": "https://dopl.idaho.gov/wp-content/uploads/2026/06/BLD-Minutes-2026-06-09.pdf",
+   "official": true
+  },
+  {
+   "url": "https://dopl.idaho.gov/wp-content/uploads/2026/08/BLD-Minutes-2026-08-11.pdf",
+   "official": true
+  },
+  {
+   "url": "https://legislature.idaho.gov/statutesrules/idstat/Title39/T39CH41/SECT39-4109/",
+   "official": true
+  },
+  {
+   "url": "https://legislature.idaho.gov/statutesrules/idstat/Title39/T39CH41/SECT39-4116/",
+   "official": true
+  },
+  {
+   "url": "https://epubs.iapmo.org/2017/Idaho/",
+   "official": true,
+   "note": "IAPMO, the publisher; DOPL's adopted-codes list points to IAPMO for free read-only access. Text read through the book's search index file (mobile/javascript/search_config.js), pages 66 to 72."
+  },
+  {
+   "url": "https://iapmo.org/media/xb4bzwo3/idaho-amendments-packet.pdf",
+   "official": false,
+   "note": "Older 2012-edition Idaho amendment (Table 412.1), used only to check the column layout of Table 422.1."
+  },
+  {
+   "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/2/definitions",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/12/interior-environment",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/idaho/ibc-2018/chapter/35/referenced-standards",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/idaho/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities",
+   "official": false
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://legislature.idaho.gov/wp-content/uploads/statutesrules/idstat/Title33/T33CH67.pdf",
+   "official": true
+  },
+  {
+   "url": "https://legislature.idaho.gov/wp-content/uploads/statutesrules/idstat/Title67/T67CH98.pdf",
+   "official": true
+  },
+  {
+   "url": "https://legislature.idaho.gov/statutesrules/idstat/Title18/T18CH41/SECT18-4117/",
+   "official": true
+  },
+  {
+   "url": "https://legislature.idaho.gov/sessioninfo/2026/legislation/H0752",
+   "official": true
+  },
+  {
+   "url": "https://legislature.idaho.gov/statutesrules/idstat/Title44/T44CH20/SECT44-2013/",
+   "official": true
+  },
+  {
+   "url": "https://tax.idaho.gov/taxes/sales-use/online-guide/",
+   "official": true
+  },
+  {
+   "url": "https://tax.idaho.gov/taxes/sales-use/guides-for-certain-groups/contractors/",
+   "official": true
+  },
+  {
+   "url": "https://tax.idaho.gov/taxes/sales-use/guides-for-certain-groups/online-sellers/online-guide/",
+   "official": true
+  },
+  {
+   "url": "https://tax.idaho.gov/taxes/sales-use/use-tax/",
+   "official": true
+  },
+  {
+   "url": "https://tax.idaho.gov/taxes/sales-use/sales-tax/local-sales-tax/city-sales-tax/",
+   "official": true
+  }
+ ],
+ "to_confirm": [
+  "WHICH TOILET-COUNT TABLE APPLIES. Idaho has two adopted tables: 2018 IBC Table 2902.1 (building code, used for the page rows) and Table 422.1 of the 2017 Idaho State Plumbing Code (requires urinals and more women's toilets; results in fixtures.alt_plumbing_code). No official page says which prevails. Ask DOPL Building Program (208-334-3233) and, for Boise, Boise Planning and Development Services plan review. If they apply Table 422.1, swap page.stalls_rows for fixtures.alt_plumbing_code.stalls_rows and rewrite stalls_intro (urinals required).",
+  "Urinal substitution under Table 2902.1: the limit sits in International Plumbing Code 424.2, which Idaho has not adopted; ask the building department how many men's toilets may be urinals.",
+  "Boise City Code 9-1A-61 amends footnote e of Table 2902.1 (seen in a search result, not read); the city agent should read Boise's Title 9 amendments.",
+  "IBC, A117.1-2009 text was read on UpCodes because codes.iccsafe.org blocks automated access: browser check of Table 2902.1, Section 803.9 and Section 1109.2 before launch.",
+  "Idaho Code 18-4117: read the June 16, 2026 preliminary injunction order (Jackson-Edney v. Labrador, D. Idaho No. 1:26-cv-00261) and check for an appeal; the page sentence on the court hold rests on news reports. Lawyer to review the wording.",
+  "Whether a building official may approve a shared all-gender multi-stall room in a private building as an alternative design: not found.",
+  "Sales tax: confirm with the Idaho State Tax Commission that installed toilet partitions are a real property improvement and not trade fixtures. How Next Partitions itself charges Idaho tax ($100,000 remote-seller threshold) is a question for Abe's accountant.",
+  "Code change ahead: legislation to adopt the 2024 codes is being drafted for the 2027 session, with a proposed effective date of July 1, 2028. Recheck after the session."
+ ]
+}
