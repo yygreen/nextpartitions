@@ -1,0 +1,483 @@
+{
+ "state": "SD",
+ "state_name": "South Dakota",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "South Dakota State Plumbing Code, ARSD 20:54:02:01: the 2024 Uniform Plumbing Code with state exceptions. Table 422.1 is kept; the only state changes inside Section 422 are a wording change to note 6 of the table (service sinks), the deletion of 422.5 (toilets for construction workers) and words added to 422.2 exception 4.",
+   "edition": "2024 Uniform Plumbing Code (rule's source note: 52 SDR 42, effective October 28, 2025; SDCL 36-25-15 names the 2024 edition)",
+   "table": "Table 422.1, Minimum Plumbing Facilities",
+   "url": "https://sdlegislature.gov/Rules/Administrative/20:54:02:01",
+   "quote": "All plumbing materials and plumbing systems or parts of plumbing systems installed must meet or exceed the minimum provisions of the Uniform Plumbing Code, 2024 edition, including Appendices A, B, C, D, E, I, K, L, M, N, O, Q, and R, with the following exceptions: [...] (16) The word \"shall\" is changed to \"may\" in section 407.4 and footnote 6 of Table 422.1; (17) The words \"Unless separate facilities are required by state law,\" are added to the beginning and \"Separate\" is changed to \"separate\" of section 422.2(4);",
+   "table_url": "https://epubs.iapmo.org/2024/UPC/",
+   "table_quote": "422.1 Fixture Count. Plumbing fixtures shall be provided for the type of building occupancy and in the minimum number shown in Table 422.1. The total occupant load and occupancy classification shall be determined in accordance with the building code.",
+   "note": "State rule read on sdlegislature.gov (current text) and as the adopted-rules PDF on rules.sd.gov. Table and section text read in IAPMO's free read-only edition of the 2024 UPC (printed pages 36 to 42), through the reader's own text file. South Dakota has no state building code, so the building code's own fixture table (IBC Table 2902.1) is not a state rule; a city that adopts the IBC decides locally what to do with its Chapter 29."
+  },
+  "cities_may_amend": true,
+  "cities_may_amend_note": "SDCL 36-25-16: a municipality may set its own plumbing requirements by ordinance, provided they meet the minimum standards of the State Plumbing Code. So a city may be stricter, not looser. Quote: \"Any such ordinances shall be deemed the applicable standards as to any plumbing work in such municipality, provided that the standards as contained in such ordinances meet the minimum standards of the State Plumbing Code as adopted by the commission\" (https://sdlegislature.gov/Statutes/36-25-16).",
+  "rows": {
+   "office": {
+    "row_label": "B Business occupancy (office, professional or service type transactions)- banks, vet clinics, hospitals, car wash, banks, beauty salons, ambulatory health care facilities, laundries and dry cleaning, educational institutions (above high school), or training facilities not located within school, post offices and printing shops",
+    "wc_male": "1: 1-50; 2: 51-100; 3: 101-200; 4: 201-400. Over 400, add 1 fixture for each additional 500 males",
+    "wc_female": "1: 1-15; 2: 16-30; 3: 31-50; 4: 51-100; 8: 101-200; 11: 201-400. Over 400, add 1 fixture for each additional 150 females",
+    "urinals": "Male 1: 1-100; 2: 101-200; 3: 201-400; 4: 401-600. Over 600, add 1 fixture for each additional 300 males. Required (a column of the table), not optional.",
+    "quote": "Male 1: 1-50 2: 51-100 3: 101-200 4: 201-400 Female 1: 1-15 2: 16-30 3: 31-50 4: 51-100 8: 101-200 11: 201-400 [urinals] Male 1: 1-100 2: 101-200 3: 201-400 4: 401-600 [...] Over 400, add 1 fixture for each additional 500 males and 1 fixture for each additional 150 females. Over 600, add 1 fixture for each additional 300 males.",
+    "url": "https://epubs.iapmo.org/2024/UPC/"
+   },
+   "restaurant": {
+    "row_label": "A-2 Assembly occupancy- restaurants, pubs, lounges, nightclubs and banquet halls",
+    "wc_male": "1: 1-50; 2: 51-150; 3: 151-300; 4: 301-400. Over 400, add 1 fixture for each additional 250 males",
+    "wc_female": "1: 1-25; 2: 26-50; 3: 51-100; 4: 101-200; 6: 201-300; 8: 301-400. Over 400, add 1 fixture for each 125 females",
+    "urinals": "Male 1: 1-200; 2: 201-300; 3: 301-400; 4: 401-600. Over 600, add 1 fixture for each additional 300 males. Required.",
+    "quote": "Male 1: 1-50 2: 51-150 3: 151-300 4: 301-400 Female 1: 1-25 2: 26-50 3: 51-100 4: 101-200 6: 201-300 8: 301-400 [urinals] Male 1: 1-200 2: 201-300 3: 301-400 4: 401-600 [...] Over 400, add 1 fixture for each additional 250 males and 1 fixture for each 125 females. Over 600, add 1 fixture for each additional 300 males.",
+    "url": "https://epubs.iapmo.org/2024/UPC/",
+    "note": "Table note 2: \"A restaurant is defined as a business that sells food to be consumed on the premises. a. The number of occupants for a drive-in restaurant shall be considered as equal to the number of parking stalls.\""
+   },
+   "school": {
+    "row_label": "E Educational occupancy- private or public schools",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 30",
+    "urinals": "Male 1 per 100. Required.",
+    "quote": "E Educational occupancy- private or public schools Male 1 per 50 Female 1 per 30 [urinals] Male 1 per 100 [lavatories] Male 1 per 40 Female 1 per 40",
+    "url": "https://epubs.iapmo.org/2024/UPC/",
+    "note": "One row for all schools; the table does not separate elementary from secondary."
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Half male, half female, based on the total occupant load, unless information submitted shows a different split. The table's bands are then read with the number of each sex.",
+    "quote": "422.1.1 Fixture Calculations. The minimum number of fixtures shall be calculated at 50 percent male and 50 percent female based on the total occupant load. Where information submitted indicates a difference in the distribution of the sexes such information shall be used to determine the number of fixtures for each sex.",
+    "url": "https://epubs.iapmo.org/2024/UPC/"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole number; one fixture serves the stated number of people or any fraction of it. For several occupancies in one building, sum the fractions first, then round.",
+    "quote": "422.1.1: \"Where applying the fixture ratios in Table 422.1 results in fractional numbers, such numbers shall be rounded to the next whole number. For multiple occupancies, fractional numbers shall be first summed and then rounded to the next whole number.\" | Table 422.1 note 1: \"The figures shown are based upon one fixture being the minimum required for the number of persons indicated or any fraction thereof.\"",
+    "url": "https://epubs.iapmo.org/2024/UPC/"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are required: the table has its own urinal column for males in office, restaurant and school rows. Extra urinals beyond the required number may each replace one men's toilet, but the men's toilets may not fall below two thirds of the table's number. Separately, the women's toilets may not be fewer than the men's toilets and urinals added together. Each urinal needs a partition on each side.",
+    "quote": "Table 422.1 note 3: \"The total number of required water closets for females shall be not less than the total number of required water closets and urinals for males.\" | note 4: \"For each urinal added in excess of the minimum required, one water closet shall be permitted to be deducted. The number of water closets shall not be reduced to less than two-thirds of the minimum requirement.\" | 422.7: \"Each urinal shall be separated with walls or partitions to provide privacy. [...] Walls or partitions shall extend from not less than 12 inches (305 mm) above the finished floor to not less than 60 inches (1524 mm) above the finished floor. Walls shall extend outward from the wall surface not less than 18 inches (457 mm).\"",
+    "url": "https://epubs.iapmo.org/2024/UPC/"
+   },
+   "small_occupancy_exception": {
+    "text": "Separate rooms for each sex are not required: in any occupancy with a total occupant load of 10 or fewer, or in a business or mercantile occupancy with a total of 50 or fewer (customers and employees), where one single-user toilet room serves both sexes; or, unless state law requires separate facilities, where the room's fixtures are designed for both sexes and every toilet and urinal is in a privacy compartment. The words about state law are South Dakota's own addition.",
+    "quote": "422.2 Separate Facilities. Separate toilet facilities shall be provided for each sex. Exceptions: (1) Residential installations. (2) In occupancies with a total occupant load of 10 or less, including customers and employees, one toilet facility, designed for use by no more than one person at a time, shall be permitted for use by both sexes. (3) In business and mercantile occupancies with a total occupant load of 50 or less including customers and employees, one toilet facility, designed for use by no more than one person at a time, shall be permitted for use by both sexes. (4) Separate facilities shall not be required where rooms have fixtures designed for use by both sexes and the water closets are installed in privacy compartments. Urinals shall be located in a privacy compartment. | ARSD 20:54:02:01(17): \"The words \"Unless separate facilities are required by state law,\" are added to the beginning and \"Separate\" is changed to \"separate\" of section 422.2(4)\"",
+    "url": "https://epubs.iapmo.org/2024/UPC/ ; https://sdlegislature.gov/Rules/Administrative/20:54:02:01"
+   },
+   "occupant_load": {
+    "text": "The plumbing code sends the occupant load to 'the building code'. South Dakota has no state building code: a city or county building ordinance for commercial buildings must comply with the 2024 International Building Code (it may amend it), and where there is no ordinance the design standard is based on the 2024 IBC. 2024 IBC Table 1004.5: office (business areas) 150 sq ft gross per occupant; restaurant dining room (assembly without fixed seats, unconcentrated, tables and chairs) 15 sq ft net; classroom 20 sq ft net.",
+    "quote": "UPC 422.1: \"The total occupant load and occupancy classification shall be determined in accordance with the building code.\" | SDCL 11-10-5: \"the ordinance must comply with the 2024 edition of the International Building Code, as published by the International Code Council, Incorporated. The governing body may amend, modify, or delete any portion of the International Building Code before enacting the ordinance.\" | SDCL 11-10-6: \"The design standard for construction [...] of any building commenced after July 1, 2026, within the boundaries of any local unit of government that has not adopted an ordinance prescribing the standards pursuant to § 11-10-5, must be based on the 2024 edition of the International Building Code\" | 2024 IBC Table 1004.5: \"Unconcentrated (tables and chairs) 15 net [...] Business areas 150 gross [...] Educational Classroom area 20 net\"",
+    "url": "https://sdlegislature.gov/Statutes/11-10-5 ; https://sdlegislature.gov/Statutes/11-10-6 ; https://up.codes/viewer/south_dakota/ibc-2024/chapter/10/means-of-egress",
+    "note": "Table 1004.5 read on UpCodes' 'South Dakota Building Code 2024' (2024 IBC without amendments; secondary). A city's own edition and amendments decide locally."
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "50 occupants split in half = 25 of each sex. Table bands for 25 males: 1 toilet(s) and 1 urinal(s). Table band for 25 females: 2 toilet(s). Note 3 check: 2 is not less than 1+1 = 2. Note 4: each urinal added beyond the 1 required may replace one toilet, but men's toilets may not drop below two thirds of 1 (0.67, so at least 1): up to 0 more urinal(s) in place of toilet(s). With a total of 50 or fewer, a business occupancy may instead have one single-user toilet room used by both sexes (422.2 exception 3)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 3,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "100 occupants split in half = 50 of each sex. Table bands for 50 males: 1 toilet(s) and 1 urinal(s). Table band for 50 females: 3 toilet(s). Note 3 check: 3 is not less than 1+1 = 2. Note 4: each urinal added beyond the 1 required may replace one toilet, but men's toilets may not drop below two thirds of 1 (0.67, so at least 1): up to 0 more urinal(s) in place of toilet(s)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 4,
+    "wc_male_total": 2,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "200 occupants split in half = 100 of each sex. Table bands for 100 males: 2 toilet(s) and 1 urinal(s). Table band for 100 females: 4 toilet(s). Note 3 check: 4 is not less than 2+1 = 3. Note 4: each urinal added beyond the 1 required may replace one toilet, but men's toilets may not drop below two thirds of 2 (1.33, so at least 2): up to 0 more urinal(s) in place of toilet(s)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 8,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 2,
+    "how": "400 occupants split in half = 200 of each sex. Table bands for 200 males: 3 toilet(s) and 2 urinal(s). Table band for 200 females: 8 toilet(s). Note 3 check: 8 is not less than 3+2 = 5. Note 4: each urinal added beyond the 2 required may replace one toilet, but men's toilets may not drop below two thirds of 3 (2.00, so at least 2): up to 1 more urinal(s) in place of toilet(s)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "50 occupants split in half = 25 of each sex. Table bands for 25 males: 1 toilet(s) and 1 urinal(s). Table band for 25 females: 1 toilet(s). Note 3 of the table: women's toilets may not be fewer than men's toilets plus urinals (1+1 = 2), so the women's number rises from 1 to 2. Note 4: each urinal added beyond the 1 required may replace one toilet, but men's toilets may not drop below two thirds of 1 (0.67, so at least 1): up to 0 more urinal(s) in place of toilet(s)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "100 occupants split in half = 50 of each sex. Table bands for 50 males: 1 toilet(s) and 1 urinal(s). Table band for 50 females: 2 toilet(s). Note 3 check: 2 is not less than 1+1 = 2. Note 4: each urinal added beyond the 1 required may replace one toilet, but men's toilets may not drop below two thirds of 1 (0.67, so at least 1): up to 0 more urinal(s) in place of toilet(s)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 2,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "200 occupants split in half = 100 of each sex. Table bands for 100 males: 2 toilet(s) and 1 urinal(s). Table band for 100 females: 3 toilet(s). Note 3 check: 3 is not less than 2+1 = 3. Note 4: each urinal added beyond the 1 required may replace one toilet, but men's toilets may not drop below two thirds of 2 (1.33, so at least 2): up to 0 more urinal(s) in place of toilet(s)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 1,
+    "how": "400 occupants split in half = 200 of each sex. Table bands for 200 males: 3 toilet(s) and 1 urinal(s). Table band for 200 females: 4 toilet(s). Note 3 check: 4 is not less than 3+1 = 4. Note 4: each urinal added beyond the 1 required may replace one toilet, but men's toilets may not drop below two thirds of 3 (2.00, so at least 2): up to 1 more urinal(s) in place of toilet(s)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "50 occupants split in half = 25 of each sex. Men's toilets at 1 per 50: 25/50 = 0.50, rounded up to 1. Urinals at 1 per 100 males: 25/100 = 0.25, rounded up to 1. Women's toilets at 1 per 30: 25/30 = 0.83, rounded up to 1. Note 3 of the table: women's toilets may not be fewer than men's toilets plus urinals (1+1 = 2), so the women's number rises from 1 to 2. Note 4: each urinal added beyond the 1 required may replace one toilet, but men's toilets may not drop below two thirds of 1 (0.67, so at least 1): up to 0 more urinal(s) in place of toilet(s)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "100 occupants split in half = 50 of each sex. Men's toilets at 1 per 50: 50/50 = 1.00, rounded up to 1. Urinals at 1 per 100 males: 50/100 = 0.50, rounded up to 1. Women's toilets at 1 per 30: 50/30 = 1.67, rounded up to 2. Note 3 check: 2 is not less than 1+1 = 2. Note 4: each urinal added beyond the 1 required may replace one toilet, but men's toilets may not drop below two thirds of 1 (0.67, so at least 1): up to 0 more urinal(s) in place of toilet(s)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 4,
+    "wc_male_total": 2,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "200 occupants split in half = 100 of each sex. Men's toilets at 1 per 50: 100/50 = 2.00, rounded up to 2. Urinals at 1 per 100 males: 100/100 = 1.00, rounded up to 1. Women's toilets at 1 per 30: 100/30 = 3.33, rounded up to 4. Note 3 check: 4 is not less than 2+1 = 3. Note 4: each urinal added beyond the 1 required may replace one toilet, but men's toilets may not drop below two thirds of 2 (1.33, so at least 2): up to 0 more urinal(s) in place of toilet(s)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 7,
+    "wc_male_total": 4,
+    "urinals_allowed": 1,
+    "urinals_required": 2,
+    "how": "400 occupants split in half = 200 of each sex. Men's toilets at 1 per 50: 200/50 = 4.00, rounded up to 4. Urinals at 1 per 100 males: 200/100 = 2.00, rounded up to 2. Women's toilets at 1 per 30: 200/30 = 6.67, rounded up to 7. Note 3 check: 7 is not less than 4+2 = 6. Note 4: each urinal added beyond the 2 required may replace one toilet, but men's toilets may not drop below two thirds of 4 (2.67, so at least 3): up to 1 more urinal(s) in place of toilet(s)."
+   }
+  ],
+  "confidence": "high",
+  "confidence_note": "Rule and table both read on official pages. Two readings are ours: applying note 3 at 50 occupants (restaurant and school), which lifts the women's number from 1 to 2, and reading the urinal column as a requirement. A plan reviewer may read note 3 differently for very small buildings."
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "2024 International Building Code Section 803.9, pointing to Section 803.1.1 (NFPA 286 room-corner test). Not a state-enforced code: SDCL 11-10-5 makes the 2024 IBC the base of every local commercial building ordinance (the city or county may amend or delete parts), and SDCL 11-10-6 makes it the design standard where no ordinance exists.",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP) Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. | 803.1.1 Interior Wall and Ceiling Finish Materials Tested in Accordance With NFPA 286 Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1.",
+  "url": "https://up.codes/viewer/south_dakota/ibc-2024/chapter/8/interior-finishes",
+  "statute_url": "https://sdlegislature.gov/Statutes/11-10-5",
+  "confidence": "medium",
+  "note": "Section text read on UpCodes' 'South Dakota Building Code 2024' (labelled as the 2024 IBC adopted without amendments; secondary). Whether a given city kept Section 803.9 and which edition it enforces is for the city agent. The State Fire Marshal's fire-safety rules (ARSD 61:15:01:01) still name the 2015 editions of the IBC and IFC; the 2015 IBC's HDPE section was not read."
+ },
+ "access": {
+  "state_standard": "No state accessibility code for private buildings. For buildings used by the public and built with state, county, municipal or other political-subdivision funds, SDCL 5-14-12 and 5-14-13 require the Americans With Disabilities Act Accessibility Guidelines of August 1992 (older than the federal 2010 Standards, so nothing further). Where a city or county has a building code, it is based on the 2024 International Building Code, whose Chapter 11 uses ICC A117.1-2017 with Supplement 1.",
+  "differences": [
+   {
+    "point": "Vertical grab bar beside the toilet (applies where the local building code keeps IBC Chapter 11; not a state rule)",
+    "state": "ICC A117.1-2017 604.5.1: \"Fixed side-wall grab bars shall include a horizontal bar complying with Section 604.5.1.1 and a vertical grab bar complying with Section 604.5.1.2.\" 604.5.1.2: \"A vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall.\"",
+    "federal": "2010 ADA Standards 604.5.1: \"The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall.\" No vertical bar.",
+    "state_url": "https://up.codes/viewer/south_dakota/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "Fixed side-wall grab bars shall include a horizontal bar complying with Section 604.5.1.1 and a vertical grab bar complying with Section 604.5.1.2."
+   },
+   {
+    "point": "Toe clearance under the partitions of a wheelchair stall (same condition)",
+    "state": "ICC A117.1-2017 604.9.5.1: \"The front partition and at least one side partition of wheelchair accessible toilet compartments shall provide a toe clearance of 12 inches (305 mm) minimum above the floor and extending 8 inches (205 mm) beyond the compartment side face of the partition, exclusive of partition support members. Exceptions: Toe clearance at the front partition is not required in a wheelchair accessible toilet compartment greater than 64 inches (1625 mm) in depth with a wall-hung water closet, or greater than 67 inches (1700 mm) in depth with a floor-mounted water closet. Toe clearance at the side partition is not required in a wheelchair accessible toilet compartment greater than 68 inches (1725 mm) in width.\"",
+    "federal": "2010 ADA Standards 604.8.1.4: \"The front partition and at least one side partition shall provide a toe clearance of 9 inches (230 mm) minimum above the finish floor and 6 inches (150 mm) deep minimum beyond the compartment-side face of the partition, exclusive of partition support members. [...] EXCEPTION: Toe clearance at the front partition is not required in a compartment greater than 62 inches (1575 mm) deep with a wall-hung water closet or 65 inches (1650 mm) deep with a floor-mounted water closet. Toe clearance at the side partition is not required in a compartment greater than 66 inches (1675 mm) wide.\"",
+    "state_url": "https://up.codes/viewer/south_dakota/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "a toe clearance of 12 inches (305 mm) minimum above the floor and extending 8 inches (205 mm) beyond the compartment side face of the partition"
+   }
+  ],
+  "same_as_federal": "Read and found the same in A117.1-2017 and the 2010 ADA Standards: wheelchair stall 60 in wide by 56 in (wall-hung) or 59 in (floor-mounted) deep; ambulatory stall 60 in deep and 35 to 37 in wide with grab bars on both sides; self-closing door with pulls on both sides; door not swinging into the minimum stall area. IBC 1110.2.4 counts stalls as the federal rules do (5 percent wheelchair accessible; an ambulatory stall where toilets and urinals in the room total six or more). A117.1-2017 Table 604.9.3.1 adds a second permitted position for the stall door opening (56 in minimum from the side wall nearest the toilet), which is an option, not a stricter rule.",
+  "process": "No state plan review or registration step for accessibility was found. For publicly funded buildings, SDCL 5-14-14 puts enforcement on \"the administrator in charge of, and authorized to contract for, new construction, remodeling, alteration, or addition on behalf of the political subdivision involved\". Elsewhere access is checked with the building plans by the city or county, where it has a building code.",
+  "state_urls": [
+   "https://sdlegislature.gov/Statutes/5-14-12",
+   "https://sdlegislature.gov/Statutes/5-14-13",
+   "https://sdlegislature.gov/Statutes/5-14-14"
+  ],
+  "state_quote": "5-14-13: \"The minimum standards required by § 5-14-12 are set forth in the Americans With Disabilities Act Accessibility Guidelines for Buildings and Facilities published by the U.S. Architectural and Transportation Barriers Compliance Board, August 1992.\"",
+  "confidence": "medium",
+  "note": "A117.1-2017 read on UpCodes' copy (secondary). The differences apply only where the local code keeps IBC Chapter 11 unamended; the city agent confirms. Restroom door sign rules were not compared."
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "The state plumbing code requires single-user toilet rooms and family or assisted-use rooms to carry a sign showing use by either sex (2024 UPC 422.2.1, not amended by South Dakota). One single-user room may stand in for separate men's and women's rooms at a total occupant load of 10 or fewer, or 50 or fewer in a business or mercantile occupancy. No separate state statute on single-user restroom signs was found. The 2025 restroom law covers only multi-occupancy rooms; it defines a 'unisex or family room' as one for a single occupant, a single occupant and caregiver, or one family, with floor-to-ceiling walls and a full locking door.",
+   "quote": "422.2.1 Single Use Facilities. Single use toilet facilities, bathing facilities, and family or assisted use toilet facilities shall be identified with signage indicating use by either sex. 422.2.2 Family or Assisted-Use Toilet Facilities. Where a separate toilet facility is required for each sex, and each toilet facility is required to have only one water closet, two family or assisted-use toilet facilities shall be permitted in place of the required separate toilet facilities.",
+   "url": "https://epubs.iapmo.org/2024/UPC/"
+  },
+  "all_gender_shared": {
+   "rule": "Allowed by the state plumbing code, unless state law requires separate facilities: separate rooms are not required where the room's fixtures are designed for both sexes, every toilet is in a privacy compartment and every urinal is in a privacy compartment. Partitions in an all-gender room must meet the Type A security level of IAPMO Z124.10 (Type B in single-sex rooms). The fixture count is the men's and women's numbers added together. State law does require single-sex designation of multi-occupancy restrooms in public schools and in buildings owned, leased or occupied by the state or a political subdivision (next item), so the option is open only in private buildings.",
+   "quote": "422.2 Exception (4), 2024 UPC: \"Separate facilities shall not be required where rooms have fixtures designed for use by both sexes and the water closets are installed in privacy compartments. Urinals shall be located in a privacy compartment.\" | ARSD 20:54:02:01(17): \"The words \"Unless separate facilities are required by state law,\" are added to the beginning [...] of section 422.2(4)\" | 422.1.1: \"For toilet facilities designed for use by all genders, the minimum number of fixtures shall be the aggregate calculated at 50 percent female and 50 percent male in accordance with Table 422.1.\" | 422.6: \"Partitions for water closets located in separate gender toilet or bathrooms shall comply with the Type B security requirements of IAPMO Z124.10. Partitions for water closets located in all gender toilet or bathrooms shall comply with the Type A security requirements of IAPMO Z124.10.\" | 422.7: \"Urinals located in all gender toilet rooms shall be visually separated from the remainder of the room or each urinal shall be installed in a privacy compartment complying with Type A security requirements of IAPMO Z124.10.\"",
+   "url": "https://epubs.iapmo.org/2024/UPC/ ; https://sdlegislature.gov/Rules/Administrative/20:54:02:01"
+  },
+  "use_restrictions": {
+   "rule": "Two statutes from 2025 (SL 2025, ch 84). Public schools must designate every multi-occupancy restroom, changing room and sleeping quarters for females only or males only (SDCL 13-32-22, 13-32-23). The state and its political subdivisions (counties, cities and the like) must do the same in buildings they own and in space they lease or occupy, except rooms used only by firefighters or law enforcement (SDCL 20-13-59, 20-13-60, amended SL 2026, ch 94). 'Sex' is defined as biological sex. The statutes do not cover privately owned buildings.",
+   "quote": "13-32-22: \"A public school must designate any multi-occupancy changing room, restroom, or sleeping quarters in each facility or space owned or rented by the public school for use exclusively by females or for use exclusively by males.\" | 20-13-59: \"Except as otherwise provided in this section and §§ 13-32-22 and 13-32-23, the state or a political subdivision of this state must designate, as being for the exclusive use of females or males, any multi-occupancy changing room, restroom, or sleeping quarters in: (1) A building or facility owned by the state or by a political subdivision of this state; or (2) A space leased to or occupied by the state or by a political subdivision of this state. This section does not apply to any room used exclusively by firefighters or law enforcement personnel acting in an official capacity.\" | 20-13-60: \"Except as otherwise provided in § 20-13-61, a male may not enter a changing room or restroom designated exclusively for females. Except as otherwise provided in § 20-13-61, a female may not enter a changing room or restroom designated exclusively for males.\"",
+   "url": "https://sdlegislature.gov/Statutes/13-32-22 ; https://sdlegislature.gov/Statutes/20-13-59 ; https://sdlegislature.gov/Statutes/20-13-60"
+  },
+  "confidence": "high"
+ },
+ "public_wage": {
+  "has_state_law": false,
+  "law": null,
+  "threshold": null,
+  "rates_url": "https://sam.gov/wage-determinations",
+  "quote": "Twenty-four states do not have prevailing wage laws. These States are Alabama, Arizona, Arkansas, Florida, Georgia, Idaho, Indiana, Iowa, Kansas, Kentucky, Louisiana, Michigan, Mississippi, New Hampshire, North Carolina, North Dakota, Oklahoma, South Carolina, South Dakota, Utah, West Virginia, Wisconsin.",
+  "url": "https://www.dol.gov/agencies/whd/state/prevailing-wages",
+  "confidence": "high",
+  "note": "U.S. Department of Labor page read through WebFetch (direct download was blocked); its separate list 'States without Prevailing Wage Laws' also names South Dakota. Only the federal Davis-Bacon Act applies, on federally funded work, with rates by county on sam.gov."
+ },
+ "sales_tax": {
+  "state_rate": 0.042,
+  "state_rate_note": "SDCL 10-45-2 as published shows 4.2% now and a second version, 'Effective July 1, 2027', at four and one-half percent. Municipal sales and use tax of 1 to 2% is added where the buyer receives the goods.",
+  "state_rate_url": "https://sdlegislature.gov/Statutes/10-45-2",
+  "shipped_goods": {
+   "rule": "Partitions delivered into South Dakota are taxed where delivered, at the state rate plus the municipal rate. A seller with no physical presence must hold a South Dakota licence and collect once its gross sales into the state pass $100,000 in the previous or current calendar year. If the seller does not collect, the buyer owes use tax at the same rate on the purchase price including freight and handling.",
+   "quote": "\"Products delivered are subject to sales tax where delivered. Delivery may be by the seller or by a transportation company hired by the customer.\" | \"South Dakota law requires any business without a physical presence in South Dakota to obtain a South Dakota sales tax license and pay applicable sales tax if the business has more than $100,000 in gross sales into South Dakota in the previous or current calendar year.\" | \"South Dakota state and municipal use tax applies to all products and services when the applicable sales tax is not collected. The use tax rate is the same as the sales tax rate. The use tax is due on the purchase price, including freight and handling charges.\"",
+   "url": "https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf"
+  },
+  "freight_taxed": true,
+  "freight_quote": "Delivery charges include shipping, postage, handling, crating, packing, and fuel surcharge. Delivery charges are included in the gross receipts and are subject to the same sales or use tax rate as the product or service. If the product or service is not taxable, the delivery charge is not taxable.",
+  "install_labor": {
+   "rule": "Installing a fixture to real property is construction work under the contractor's excise tax, not a sales-taxable service: the installer owes 2% excise tax on gross receipts and construction services taxed that way are not subject to sales tax. Where the owner supplies the material, the prime contractor's taxable receipts include the greater of the cost or fair market value of that material, and the contractor owes use tax on it unless the owner documents that sales or use tax was paid. Services that are not realty improvements are sales-taxable (South Dakota taxes services generally). The guide does not name toilet partitions, so which tax applies to a partition installation is not stated outright.",
+   "quote": "\"Any person entering into a contract for construction services enumerated in Division C of the Standard Industrial Classification Manual of 1987 or engaging in services that include the construction, building, installation, or repair of a fixture to real property must have a South Dakota contractor's excise tax license. This includes repair or remodeling of existing real property or the construction of a new project.\" | \"Gross receipts also include the greater of the cost or fair market value of materials furnished by the owner for the contractor to install.\" | \"Contractors also owe state and applicable municipal use tax on all material furnished for a construction project if they do not have documentation showing sales or use tax was paid. Documentation may include a copy of the invoice showing tax or a written statement from the owner that sales or use tax was paid.\" | Sales Tax Guide: \"Construction services taxed in chapter 10-46A or 10-46B are not subject to sales tax.\" | \"South Dakota's sales and use tax applies to all services unless state law specifically exempts the service.\"",
+   "url": "https://dor.sd.gov/media/1vgljwbp/2026-7-contractors-excise-tax-guide.pdf ; https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf"
+  },
+  "furnish_and_install": {
+   "rule": "The prime contractor owes 2% contractor's excise tax on the whole contract (labor, material and the tax itself; no deduction for materials or subcontractors) and pays sales or use tax on the materials when buying them. The contractor may list the excise tax and use tax as separate lines on the bill, to public and private customers alike. Subcontractors with a prime contractor's exemption certificate owe no excise tax.",
+   "quote": "SDCL 10-46A-1: \"There is imposed an excise tax upon the gross receipts of all prime contractors engaged in realty improvement contracts, at the rate of two percent.\" | Guide: \"All contractors are responsible for paying sales or use tax on all purchases of products or services. This includes materials installed in construction projects and all equipment, tools, and supplies used by the contractor.\" | \"A contractor cannot take a deduction for the cost of the property sold, cost of the materials used, cost of services or labor purchased\" | \"State law allows contractors to list their tax expense as a separate line item on all contracts and bills (SDCL 10-46A-12).\" | \"If 25% or more of the dollar value of the contract is for excise taxable work, charge contractor's excise tax on the entire contract. If the excise taxable work is less than 25% of the dollar value of the contract, charge sales tax on the entire contract.\"",
+   "url": "https://dor.sd.gov/media/1vgljwbp/2026-7-contractors-excise-tax-guide.pdf ; https://sdlegislature.gov/Statutes/10-46A-1"
+  },
+  "agency": "South Dakota Department of Revenue",
+  "confidence": "medium",
+  "confidence_note": "Rates, delivery charges, remote-seller threshold and the excise tax mechanics are read in the Department's July 2026 guides (high). Medium because no Department page says in so many words that a toilet partition is a fixture to real property."
+ },
+ "page": {
+  "stalls_intro": "South Dakota's plumbing rules apply statewide and count toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women, and women get more toilets than men. Every toilet needs a stall. Urinals are required in men's rooms, each with a screen on both sides, and the women's room must have at least as many toilets as the men's room has toilets and urinals together. The table shows women's stalls / men's stalls + urinals.",
+  "stalls_rows": {
+   "50": {
+    "office": "2/1+1",
+    "restaurant": "2/1+1",
+    "school": "2/1+1"
+   },
+   "100": {
+    "office": "3/1+1",
+    "restaurant": "2/1+1",
+    "school": "2/1+1"
+   },
+   "200": {
+    "office": "4/2+1",
+    "restaurant": "3/2+1",
+    "school": "4/2+1"
+   },
+   "400": {
+    "office": "8/3+2",
+    "restaurant": "4/3+1",
+    "school": "7/4+2"
+   }
+  },
+  "stalls_after": "An office or shop designed for 50 people or fewer, or any building designed for 10 or fewer, may have one single-user restroom for everyone instead of separate rooms. A men's room may swap a toilet for each urinal added beyond the required number, as long as two thirds of its required toilets remain. A city may set higher numbers than the state's, never lower.",
+  "capacity": "South Dakota has no state building code, and the national model that every local building code there must be based on counts an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** South Dakota has no state building code, but every city or county building code there must be based on the same national model, and that model requires solid plastic (HDPE) partitions to pass a room fire test. A city may change parts of the model, so confirm with the local building department. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use, under federal law. South Dakota has no access rules of its own for private buildings and no separate state review: access is checked with the building plans by the city or county. Buildings paid for with state or local public money must meet federal access guidelines under state law.",
+  "state_extra_bullet": "- **South Dakota extras:** the state adds nothing to the federal stall sizes. Where a city's building code follows the national model, two details go further than the federal rules: an accessible stall needs an 18 inch vertical grab bar beside the toilet as well as the horizontal one, and the partitions of a wheelchair stall need 12 inches of toe room above the floor instead of 9. The state's plumbing rules also name a security standard for toilet partitions and urinal screens, so ask your plan reviewer whether it applies to your project.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must carry a sign showing that either sex may use it. In a private building, a shared all-gender room is allowed if every toilet and every urinal sits in its own privacy compartment. In public schools and in buildings owned, leased or occupied by the state, a county or a city, South Dakota law requires restrooms for more than one person to be designated for females only or males only.",
+  "public_jobs": "South Dakota has no state wage law for public jobs, so a set wage applies only on work paid for with federal money, where federal law sets it by county.",
+  "tax_install_bullet": "- **Tax on installation:** South Dakota taxes building work with a separate 2 percent tax on the contractor's whole bill, labor and materials together, in place of sales tax on the labor. The contractor pays sales tax on the materials when buying them and may show both taxes as lines on the invoice. If you buy the partitions yourself and hire an installer, the installer's 2 percent also counts the value of the partitions, and the installer will want proof that sales tax was paid on them. The state's guide does not name toilet partitions, so confirm that your job counts as building work.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable at the state rate of 4.2 percent plus the city's rate, and the delivery charge is taxed the same way. A seller with more than $100,000 a year in South Dakota sales must collect it. If the seller doesn't collect the tax, the buyer owes it to the state. State law sets the state rate to return to 4.5 percent on July 1, 2027.",
+  "tax_confirm": "your accountant or the South Dakota Department of Revenue",
+  "sources": [
+   "- Toilet counts in South Dakota: [South Dakota State Plumbing Code, Administrative Rule 20:54:02:01](https://sdlegislature.gov/Rules/Administrative/20:54:02:01) (2024 Uniform Plumbing Code with state exceptions, effective October 28, 2025) under [SDCL 36-25-15](https://sdlegislature.gov/Statutes/36-25-15); Table 422.1 with its notes and Sections 422.1.1, 422.2, 422.6 and 422.7 in the [2024 Uniform Plumbing Code, IAPMO read-only edition](https://epubs.iapmo.org/2024/UPC/). Cities may set stricter plumbing rules: [SDCL 36-25-16](https://sdlegislature.gov/Statutes/36-25-16). Checked 2026-11-24.",
+   "- Building codes, floor area per person and the fire test for solid plastic partitions: [SDCL 11-10-5](https://sdlegislature.gov/Statutes/11-10-5) and [11-10-6](https://sdlegislature.gov/Statutes/11-10-6) (local building codes based on the 2024 International Building Code); Table 1004.5 and Section 803.9 read on a secondary copy of the [2024 International Building Code](https://up.codes/viewer/south_dakota/ibc-2024/chapter/8/interior-finishes). Checked 2026-11-24.",
+   "- Access rules: [SDCL 5-14-12](https://sdlegislature.gov/Statutes/5-14-12), [5-14-13](https://sdlegislature.gov/Statutes/5-14-13) and [5-14-14](https://sdlegislature.gov/Statutes/5-14-14) (publicly funded buildings); the [2010 ADA Standards](https://www.access-board.gov/ada/), sections 213 and 604; ICC A117.1-2017 sections 604.5 and 604.9 read on a [secondary copy](https://up.codes/viewer/south_dakota/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities). Checked 2026-11-24.",
+   "- Restrooms in public schools and government buildings: [SDCL 13-32-21](https://sdlegislature.gov/Statutes/13-32-21) to [13-32-23](https://sdlegislature.gov/Statutes/13-32-23) and [SDCL 20-13-58](https://sdlegislature.gov/Statutes/20-13-58) to [20-13-61](https://sdlegislature.gov/Statutes/20-13-61). Single-user and all-gender rooms: Sections 422.2 and 422.2.1 of the [2024 Uniform Plumbing Code](https://epubs.iapmo.org/2024/UPC/) as amended by [Administrative Rule 20:54:02:01](https://sdlegislature.gov/Rules/Administrative/20:54:02:01). Checked 2026-11-24.",
+   "- Wages on public jobs: [U.S. Department of Labor, Dollar Threshold Amount for Contract Coverage](https://www.dol.gov/agencies/whd/state/prevailing-wages) (South Dakota listed among the states without a prevailing wage law). Checked 2026-11-24.",
+   "- Sales tax and contractor's excise tax: South Dakota Department of Revenue, [Sales and Use Tax Guide, July 2026](https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf) and [Contractor's Excise Tax Guide, July 2026](https://dor.sd.gov/media/1vgljwbp/2026-7-contractors-excise-tax-guide.pdf); [SDCL 10-45-2](https://sdlegislature.gov/Statutes/10-45-2) and [SDCL 10-46A-1](https://sdlegislature.gov/Statutes/10-46A-1). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design (federal); Americans With Disabilities Act Accessibility Guidelines, August 1992, for publicly funded buildings (SDCL 5-14-13); no state building code: local ordinances based on the 2024 International Building Code (SDCL 11-10-5 and 11-10-6), which references ICC A117.1-2017 and NFPA 286 for HDPE; South Dakota State Plumbing Code, ARSD 20:54 (2024 Uniform Plumbing Code with state exceptions, effective October 28, 2025)."
+ },
+ "notes": [
+  "The UPC table is unusual next to the IBC table most states use: urinals have their own required column, women's toilets outnumber men's (note 3 and the female bands), and offices need far more women's toilets (8 for 100 women).",
+  "ARSD 20:54:02:01(17) ties the all-gender exception to state law; the 2025 restroom statutes (SL 2025, ch 84) are that law for public schools and government buildings.",
+  "The Plumbing Commission's page says a further rules package was filed on October 14, 2026 and takes effect 20 days later; the commission describes it as notification, database and clean-up changes. The current rule text on sdlegislature.gov was read on 2026-11-24 and still shows items (16) and (17) as quoted.",
+  "Owner-furnished material: a buyer who purchases partitions from Next Partitions and hires a South Dakota installer should expect the installer to add the partitions' value to the 2% excise base and to ask for proof that sales or use tax was paid. How Next Partitions itself charges South Dakota tax is a question for Abe's accountant."
+ ],
+ "sources_read": [
+  {
+   "url": "https://sdlegislature.gov/api/Rules/Rule/20:54:02:01.html",
+   "official": true
+  },
+  {
+   "url": "https://rules.sd.gov/Uploads/933_AdoptedRules.pdf",
+   "official": true
+  },
+  {
+   "url": "https://dlr.sd.gov/plumbing/laws.aspx",
+   "official": true
+  },
+  {
+   "url": "https://epubs.iapmo.org/2024/UPC/",
+   "official": true
+  },
+  {
+   "url": "https://epubs.iapmo.org/2024/UPC/mobile/javascript/search_config.js",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/36-25-15",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/36-25-16",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/11-10-5",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/11-10-6",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/5-14-12",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/5-14-13",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/5-14-13.1",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/5-14-14",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/13-32-21",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/13-32-22",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/13-32-23",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/20-13-58",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/20-13-59",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/20-13-60",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/20-13-61",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/34-29B-2",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/api/Rules/Rule/61:15:01:01.html",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/10-45-2",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/10-46-2",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/10-46A-1",
+   "official": true
+  },
+  {
+   "url": "https://sdlegislature.gov/Statutes/10-46A-2",
+   "official": true
+  },
+  {
+   "url": "https://dor.sd.gov/media/1vgljwbp/2026-7-contractors-excise-tax-guide.pdf",
+   "official": true
+  },
+  {
+   "url": "https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf",
+   "official": true
+  },
+  {
+   "url": "https://dor.sd.gov/businesses/taxes/sales-use-tax/",
+   "official": true
+  },
+  {
+   "url": "https://www.dol.gov/agencies/whd/state/prevailing-wages",
+   "official": true
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/south_dakota/ibc-2024/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_dakota/ibc-2024/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_dakota/ibc-2024/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_dakota/ibc-2024/chapter/35/referenced-standards",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/south_dakota/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+   "official": false
+  }
+ ],
+ "to_confirm": [
+  "Whether plan reviewers apply note 3 of Table 422.1 (women's toilets not fewer than men's toilets plus urinals) to very small restaurants and schools, which lifts the women's number from 1 to 2 at 50 occupants: South Dakota Plumbing Commission, 605.773.3429.",
+  "Which building code edition the city enforces, whether it kept IBC Sections 803.9 (HDPE fire test), Chapter 11 (A117.1-2017) and Table 1004.5, and whether it amended the plumbing code's fixture table: city building department (city agent). siouxfalls.gov blocked automated access.",
+  "Whether the Department of Revenue treats installing toilet partitions as a realty improvement under contractor's excise tax (assumed from 'installation ... of a fixture to real property') or as a sales-taxable service: South Dakota Department of Revenue, 1-800-829-9188.",
+  "The October 2026 Plumbing Commission rules package (filed October 14, 2026): confirm it changed nothing in Section 422.",
+  "IBC Sections 803.9 and 1004.5 and ICC A117.1-2017 were read on UpCodes, not on the ICC's own site (blocked).",
+  "The State Fire Marshal's rules still cite the 2015 IBC and IFC (ARSD 61:15:01:01); whether its plan reviews apply an HDPE fire test was not read.",
+  "The state sales tax rate returns to 4.5% on July 1, 2027 under SDCL 10-45-2 as now published: recheck before then."
+ ]
+}
