@@ -1,0 +1,447 @@
+{
+ "state": "CT",
+ "state_name": "Connecticut",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "2022 Connecticut State Building Code: 2021 International Building Code portion, Table 2902.1 (the same table is Table 403.1 of the 2021 International Plumbing Code portion)",
+   "edition": "2022 Connecticut State Building Code (2021 IBC and 2021 IPC with Connecticut amendments), permit applications filed from October 1, 2022",
+   "table": "IBC Table 2902.1 / IPC Table 403.1",
+   "url": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf",
+   "quote": "(Amd) 2902.1 Minimum number of fixtures. Plumbing fixtures shall be provided in the minimum number shown in Table 2902.1 based on the actual use of the building or space. Uses not shown in Table 2902.1 shall be considered individually by the building official. The number of occupants shall be determined by this code.",
+   "note": "Connecticut's amendments (official PDF) change Section 2902.1/403.1 text, add bed-and-breakfast and child-care exceptions, add 2902.1.2.1/403.1.2.1 (baby changing), delete IPC 403.2.1 and remove footnote f from the IPC table's stadium row. The rows for business, restaurants and educational are not amended. The table rows themselves were read on UpCodes' Connecticut copy (secondary)."
+  },
+  "cities_may_amend": false,
+  "cities_may_amend_quote": {
+   "quote": "The State Building Code, including any amendment to said code adopted by the State Building Inspector and Codes and Standards Committee, shall be the building code for all towns, cities and boroughs.",
+   "url": "https://prdext3.cga.ct.gov/current/pub/chap_541.htm#sec_29-253",
+   "source": "Conn. Gen. Stat. Sec. 29-253(a)"
+  },
+  "rows": {
+   "office": {
+    "row_label": "Business: Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial, ambulatory care and similar uses",
+    "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "urinals": "See Section 424.2 of the International Plumbing Code (optional substitution, up to 50%)",
+    "quote": "Business | Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial, ambulatory care and similar uses | 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50 [water closets, one figure for male and female] | 1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80 [lavatories]",
+    "url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/29/plumbing-systems"
+   },
+   "restaurant": {
+    "row_label": "Assembly: Restaurants, banquet halls and food courts (footnote d)",
+    "wc_male": "1 per 75",
+    "wc_female": "1 per 75",
+    "urinals": "See Section 424.2 of the International Plumbing Code (optional substitution, up to 67%)",
+    "quote": "Restaurants, banquet halls and food courts(d) | 1 per 75 [male] | 1 per 75 [female] | 1 per 200 [lavatories] | 1 per 500 [drinking fountains] | 1 service sink. Footnote d: The occupant load for seasonal outdoor seating and entertainment areas shall be included when determining the minimum number of facilities required.",
+    "url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/29/plumbing-systems"
+   },
+   "school": {
+    "row_label": "Educational: Educational facilities",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 50",
+    "urinals": "See Section 424.2 of the International Plumbing Code (optional substitution, up to 67%)",
+    "quote": "Educational | Educational facilities | 1 per 50 [water closets] | 1 per 50 [lavatories] | 1 per 100 [drinking fountains] | 1 service sink",
+    "url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/29/plumbing-systems"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Total occupant load is divided in half, unless approved statistical data shows another split. Rooms designed for all genders are counted on the total occupant load.",
+    "quote": "To determine the occupant load of each sex, the total occupant load shall be divided in half. ... Exceptions: The total occupant load shall not be required to be divided in half where approved statistical data indicates a distribution of the sexes of other than 50 percent of each sex. Where multiple-user facilities are designed to serve all genders, the minimum fixture count shall be calculated 100 percent, based on total occupant load. In such multiple-user user facilities, each fixture type shall be in accordance with ICC A117.1 and each urinal that is provided shall be located in a stall. Distribution of the sexes is not required where single-user water closets and bathing room fixtures are provided in accordance with Section 2902.1.2.",
+    "url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/29/plumbing-systems"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole number; one fixture for the number of persons shown or any fraction of it.",
+    "quote": "Fractional numbers resulting from applying the fixture ratios of Table 2902.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number. [Table footnote a:] The fixtures shown are based on one fixture being the minimum required for the number of persons indicated or any fraction of the number of persons indicated.",
+    "url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/29/plumbing-systems"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are optional. In each toilet room they may replace up to 67% of the required toilets in assembly (restaurant) and educational occupancies, and up to 50% in all others (offices). Each urinal needs its own screened area. The code does not say how the percentage rounds; the worked examples round down.",
+    "quote": "424.2 Substitution for Water Closets. In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent of the required water closets in assembly and educational occupancies. Urinals shall not be substituted for more than 50 percent of the required water closets in all other occupancies. [405.3.5:] Each urinal utilized by the public or employees shall occupy a separate area with walls or partitions to provide privacy.",
+    "url": "https://up.codes/viewer/connecticut/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "small_occupancy_exception": {
+    "text": "Separate men's and women's rooms aren't required at a total occupant load of 15 or fewer (any use), 25 or fewer in a business occupancy, or 100 or fewer in a mercantile occupancy. Where each sex needs only one toilet, two family or assisted-use rooms may serve instead.",
+    "quote": "Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. Separate facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer. ... 2902.2.1: Where a building or tenant space requires a separate toilet facility for each sex and each toilet facility is required to have only one water closet, two family or assisted-use toilet facilities shall be permitted to serve as the required separate facilities.",
+    "url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/29/plumbing-systems",
+    "note": "Connecticut deletes the matching section 403.2.1 from the plumbing code portion ('(Del) 403.2.1 Family or assisted-use toilet facilities serving as separate facilities. Delete without substitution.', official PDF) but its amendments to the building code portion do not delete 2902.2.1, and UpCodes still shows it. Ask the local building official before relying on two family rooms."
+   },
+   "occupant_load": {
+    "text": "Office (business areas): 150 square feet gross per person. Restaurant dining room (assembly, unconcentrated, tables and chairs): 15 net. Classroom: 20 net. Connecticut's amended Section 1004.5 keeps the table and lets the building official pick the nearest listed function where a use is not listed.",
+    "quote": "Table 1004.5: Unconcentrated (tables and chairs) | 15 net ... Business areas | 150 gross ... Educational: Classroom area | 20 net. [Connecticut amendment, official PDF:] (Amd) 1004.5 Areas without fixed seating. The number of occupants shall be computed at the rate of one occupant per unit of area as prescribed in Table 1004.5. ... Where an intended function is not listed in Table 1004.5, the building official shall establish a function based on a listed function that most nearly resembles the intended function.",
+    "url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/10/means-of-egress"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50/2 = 25 per sex. 1 per 25 for the first 50: 25/25 = 1 each. Urinals may replace up to 50% of the men's 1: 0.50, so 0."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100/2 = 50 per sex. 1 per 25 for the first 50: 50/25 = 2 each. Urinals may replace up to 50% of the men's 2: 1."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200/2 = 100 per sex. First 50: 50/25 = 2; remaining 50 at 1 per 50 = 1; total 3 each. Urinals may replace up to 50% of the men's 3: 1.50, so 1."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400/2 = 200 per sex. First 50: 2; remaining 150 at 1 per 50 = 3; total 5 each. Urinals may replace up to 50% of the men's 5: 2.50, so 2."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50/2 = 25 per sex. 1 per 75: 25/75 = 0.33, rounds up to 1 each. Urinals may replace up to 67% of the men's 1: 0.67, so 0."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "100/2 = 50 per sex. 1 per 75: 50/75 = 0.67, rounds up to 1 each. Urinals: 67% of 1 = 0.67, so 0."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200/2 = 100 per sex. 1 per 75: 100/75 = 1.33, rounds up to 2 each. Urinals: 67% of 2 = 1.34, so 1."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400/2 = 200 per sex. 1 per 75: 200/75 = 2.67, rounds up to 3 each. Urinals: 67% of 3 = 2.01, so 2."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50/2 = 25 per sex. 1 per 50: 25/50 = 0.50, rounds up to 1 each. Urinals: 67% of 1 = 0.67, so 0."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "100/2 = 50 per sex. 1 per 50: 50/50 = 1 each. Urinals: 67% of 1 = 0.67, so 0."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200/2 = 100 per sex. 1 per 50: 100/50 = 2 each. Urinals: 67% of 2 = 1.34, so 1."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400/2 = 200 per sex. 1 per 50: 200/50 = 4 each. Urinals: 67% of 4 = 2.68, so 2."
+   }
+  ],
+  "confidence": "medium",
+  "confidence_note": "Adoption, edition and Connecticut's amendments read on the official PDF. Table rows, 2902.1.1, 2902.2, IPC 424.2 and Table 1004.5 are unamended model text and were read on UpCodes' Connecticut copy."
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "2021 International Building Code portion of the 2022 Connecticut State Building Code, Section 803.9 with Section 803.1.1 (NFPA 286) and the Chapter 2 definition of interior wall and ceiling finish. Connecticut's amendments contain no changes to Chapter 8 (the official amendment document goes from Chapter 7 to Chapter 9).",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. [803.1.1:] Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1. [Chapter 2:] Interior Wall and Ceiling Finish. The exposed interior surfaces of buildings, including but not limited to: fixed or movable walls and partitions; toilet room privacy partitions; columns; ceilings; and interior wainscoting, paneling or other finish applied structurally or for decoration, acoustical correction, surface insulation, structural fire resistance or similar purposes, but not including trim.",
+  "url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/8/interior-finishes",
+  "definition_url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/2/definitions",
+  "amendments_url": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf",
+  "confidence": "medium"
+ },
+ "access": {
+  "state_standard": "2022 Connecticut State Building Code, Chapter 11 (2021 IBC with Connecticut amendments) with ICC/ANSI A117.1-2017 as amended by Connecticut. Connecticut's amendments to A117.1-2017 put the wheelchair turning circle back to 60 inches and the clear floor space back to 30 by 48 inches; they do not touch Section 604 (toilet compartments). By statute (Sec. 29-269) the code must be in substantial compliance with the ADA.",
+  "differences": [
+   {
+    "point": "Vertical grab bar in the wheelchair stall and the ambulatory stall",
+    "state": "A117.1-2017 604.5.1: Fixed side-wall grab bars shall include a horizontal bar complying with Section 604.5.1.1 and a vertical grab bar complying with Section 604.5.1.2. 604.5.1.2: A vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall.",
+    "federal": "2010 ADA Standards 604.5.1: The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall. (No vertical bar.)",
+    "state_url": "https://up.codes/viewer/connecticut/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "Fixed side-wall grab bars shall include a horizontal bar complying with Section 604.5.1.1 and a vertical grab bar complying with Section 604.5.1.2."
+   },
+   {
+    "point": "Toe clearance under the partitions of the wheelchair stall",
+    "state": "A117.1-2017 604.9.5.1: The front partition and at least one side partition of wheelchair accessible toilet compartments shall provide a toe clearance of 12 inches (305 mm) minimum above the floor and extending 8 inches (205 mm) beyond the compartment side face of the partition, exclusive of partition support members. Exceptions: not required at the front in a compartment greater than 64 inches deep (wall-hung) or 67 inches deep (floor-mounted), or at the side in a compartment greater than 68 inches wide.",
+    "federal": "2010 ADA Standards 604.8.1.4: The front partition and at least one side partition shall provide a toe clearance of 9 inches (230 mm) minimum above the finish floor and 6 inches (150 mm) deep minimum beyond the compartment-side face of the partition, exclusive of partition support members. Exception thresholds: 62 inches deep (wall-hung), 65 inches deep (floor-mounted), 66 inches wide.",
+    "state_url": "https://up.codes/viewer/connecticut/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "The front partition and at least one side partition of wheelchair accessible toilet compartments shall provide a toe clearance of 12 inches (305 mm) minimum above the floor and extending 8 inches (205 mm) beyond the compartment side face of the partition, exclusive of partition support members."
+   },
+   {
+    "point": "Number of wheelchair and ambulatory stalls in a large restroom",
+    "state": "IBC 1110.2.4 (not amended by Connecticut): Where water closet compartments are provided in a toilet room or bathing room, at least 5 percent of the total number of compartments shall be wheelchair accessible. Where the combined total water closet compartments and urinals provided in a toilet room or bathing room is six or more, at least 5 percent of the total number of compartments shall be ambulatory accessible, provided in addition to the wheelchair-accessible compartment.",
+    "federal": "2010 ADA Standards 213.3.1: Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1. In addition to the compartment required to comply with 604.8.1, at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures.",
+    "state_url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/11/accessibility",
+    "quote": "at least 5 percent of the total number of compartments shall be wheelchair accessible",
+    "note": "5 percent means a second accessible stall of each kind from 21 compartments in one room."
+   },
+   {
+    "point": "Extra pull handle on the hinge side of accessible stall doors (Connecticut's own rule)",
+    "state": "(Add) 1110.2.4.1 Pull handle. Where accessible water closet compartments or single-occupancy toilet rooms are provided, the compartment or room doors shall have a pull handle mounted 6 inches from the hinge side on the compartment or room side of the door. This handle shall meet the requirements of Section 404.2.6 of ICC/ANSI A117.1. Exceptions: 1. Compartments or rooms with self-closing, self-latching doors. 2. Doors that swing into the compartment or room.",
+    "federal": "2010 ADA Standards 604.8.1.2: The door shall be self-closing. A door pull complying with 404.2.7 shall be placed on both sides of the door near the latch. (No pull on the hinge side.)",
+    "state_url": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf",
+    "quote": "the compartment or room doors shall have a pull handle mounted 6 inches from the hinge side on the compartment or room side of the door"
+   },
+   {
+    "point": "Accessible single-occupancy toilet rooms: emergency call system (Connecticut's own rule; rooms, not stalls)",
+    "state": "(Add) 1110.2.4.2 Single-occupancy toilet. Required accessible toilet rooms designed for single occupancy in other than Group R shall meet the requirements of ICC/ANSI A117.1. Each such room shall contain both toilet and lavatory, shall have a lever handle privacy lockset and shall have an emergency call system that actuates a visible and audible alarm in a normally occupied area. An alarm pull switch, identified with emergency instruction, shall be provided within 3 feet of the water closet with a pull cord extending to within 12 inches of the floor.",
+    "federal": "No emergency call system requirement in 2010 ADA Standards 603 to 604.",
+    "state_url": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf",
+    "quote": "shall have an emergency call system that actuates a visible and audible alarm in a normally occupied area"
+   },
+   {
+    "point": "Signs: Connecticut's own symbol of access; signs for family and single-occupancy toilet rooms",
+    "state": "(Amd) 703.6.3.1 International Symbol of Accessibility. Pursuant to section 29-269c of the Connecticut General Statutes, references in this code to the International Symbol of Accessibility shall be deemed to mean Connecticut's symbol of access and shall comply with Figure 703.6.3.1. (Amd) 1112.1 Signs. Required accessible elements shall be identified by the International Symbol of Accessibility at the following locations: ... 3. Accessible toilet or bathing rooms where not all toilet or bathing rooms are accessible. ... 6. Family or assisted-use toilet and bathing rooms and single-occupancy toilet rooms. (Add) 1112.6 Interior signage. Interior signs, when provided, that designate permanent rooms and spaces shall be raised text characters and braille, designed and located in accordance with ICC/ANSI A117.1.",
+    "federal": "2010 ADA Standards use the International Symbol of Accessibility (703.7.2.1) and require it at accessible toilet rooms only where not all are accessible (216.8).",
+    "state_url": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf",
+    "quote": "references in this code to the International Symbol of Accessibility shall be deemed to mean Connecticut's symbol of access"
+   }
+  ],
+  "same_as_federal": "Wheelchair stall size (60 inches wide; 56 deep wall-hung, 59 floor-mounted), ambulatory stall (35 to 37 inches wide, 60 deep, bars both sides), self-closing doors with pulls on both sides near the latch, and children's stall sizes read the same in A117.1-2017 Section 604.9 to 604.11 and in the 2010 ADA Standards 604.8 to 604.9.",
+  "process": "No separate state plan review or registration for accessibility. The local building official enforces the State Building Code. Any variation from or exemption to an accessibility provision can be granted only by the State Building Inspector (Conn. Gen. Stat. Sec. 29-269(b); code Section 104.10.2): the applicant files a Request for Building Code Modification with the local building official, who sends it to the Office of the State Building Inspector, which decides within 30 days; appeal to the Codes and Standards Committee within 30 days.",
+  "process_quote": "Any variation of or exemption from any provision of (1) the State Building Code relating to accessibility to, and use of, buildings and structures by persons with disabilities ... shall be permitted only when approved by the State Building Inspector. ... The State Building Inspector shall, within thirty days of receipt, review the application, and render a decision to accept or reject the application in whole or in part.",
+  "process_url": "https://prdext3.cga.ct.gov/current/pub/chap_541.htm#sec_29-269",
+  "confidence": "medium"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "Single-user toilet rooms and family or assisted-use rooms must be identified as available to all persons regardless of sex, and they count toward the required fixtures. Connecticut adds: where several single-user rooms are clustered, at least one must have a baby changing station and be marked as such; a required accessible single-occupancy room (outside residential buildings) needs a lever privacy lockset and an emergency call system. No separate Connecticut statute on single-user restroom signs was found.",
+   "quote": "2902.1.2: Single-user toilet and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified as being available for use by all persons regardless of their sex. [Connecticut, official PDF:] (Add) 2902.1.2.1 Baby changing facilities. Where multiple single-user toilet rooms or bathing rooms are clustered at a single location, at least one room at each cluster shall contain baby changing facilities and shall be identified as containing such facilities.",
+   "url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/29/plumbing-systems",
+   "official_url": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf"
+  },
+  "all_gender_shared": {
+   "rule": "Allowed. Separate men's and women's rooms are not required where a room with toilets and lavatories is designed for use by both sexes and every toilet is in its own compartment with walls or partitions and a door; urinals must be in a visually separated area or each in a stall. Fixture counts for such rooms are worked out on the total occupant load, each fixture type must meet the accessibility standard, and each urinal must be in a stall. Connecticut does not amend these provisions.",
+   "quote": "2902.2 Exception 6: Separate facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by both sexes and privacy for water closets are installed in accordance with Section 405.3.4 of the International Plumbing Code. Urinals shall be located in an area visually separated from the remainder of the facility or each urinal that is provided shall be located in a stall. [IPC 405.3.4:] Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy.",
+   "url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/29/plumbing-systems"
+  },
+  "use_restrictions": {
+   "rule": "No Connecticut statute restricting restroom use by sex in government buildings or schools was found (two searches plus a read of the public accommodations statute; not an exhaustive review). The public accommodations law prohibits discrimination on the basis of sex and gender identity or expression, and says the sex discrimination ban does not apply to separate bathrooms or locker rooms based on sex. The Commission on Human Rights and Opportunities told schools in April 2024 that students must be allowed to use facilities that correspond with their gender identity.",
+   "quote": "Sec. 46a-64(a): It shall be a discriminatory practice in violation of this section: (1) To deny any person within the jurisdiction of this state full and equal accommodations in any place of public accommodation, resort or amusement because of race, creed, color, national origin, ancestry, sex, gender identity or expression ... (b)(1) The provisions of this section with respect to the prohibition of sex discrimination shall not apply to ... (B) separate bathrooms or locker rooms based on sex. [CHRO letter, April 29, 2024:] State and federal laws permit schools to have restrooms, locker rooms, and athletic teams separated by sex. Nevertheless, schools must allow students to access and use the facilities, opportunities, and activities that correspond with their gender identity",
+   "url": "https://prdext3.cga.ct.gov/current/pub/chap_814c.htm#sec_46a-64",
+   "chro_url": "https://portal.ct.gov/-/media/chro/publications/2024-04-29-dear-colleague-letter.pdf"
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": true,
+  "law": "Conn. Gen. Stat. Sec. 31-53 (public works projects of the state or any political subdivision, which covers towns, cities and school districts' projects). The Labor Commissioner sets the rates for each trade in each town, from collective bargaining agreements or, where there is none, federal Davis-Bacon determinations; rates adjust each July 1.",
+  "threshold": "Applies where the total cost of all work is $1,000,000 or more for new construction, or $100,000 or more for remodeling, refinishing, refurbishing, rehabilitation, alteration or repair.",
+  "rates_url": "https://portal.ct.gov/dol/divisions/wage-and-workplace-standards/prevailing-wage",
+  "rates_pdf_building_2026": "https://portal.ct.gov/dol/-/media/dol/2022-new-design-system/divisions/wage-and-workplace-standards/buildingrates_7-1-2026_update.pdf",
+  "quote": "(h) (1) The provisions of this section shall not apply where (A) the combined total cost or total bond authorization for all work to be performed by all contractors and subcontractors in connection with new construction of any public works project is less than one million dollars, or (B) the combined total cost of all work to be performed by all contractors and subcontractors in connection with any remodeling, refinishing, refurbishing, rehabilitation, alteration or repair of any public works project is less than one hundred thousand dollars. ... (a) ... shall be at a rate equal to the rate customary or prevailing for the same work in the same trade or occupation in the town in which such public works project is being constructed.",
+  "url": "https://prdext3.cga.ct.gov/current/pub/chap_557.htm#sec_31-53",
+  "note": "The Department of Labor page says Public Acts 25-168 and 25-174 changed the law from July 1, 2025: some off-site fabrication is now covered and all projects get the annual July 1 rate adjustment. The page lists 2026 Building Rates by town (PDF, not opened: the city agent reads the Hartford carpenter rate).",
+  "confidence": "high"
+ },
+ "sales_tax": {
+  "state_rate": 0.0635,
+  "local_rates": {
+   "rule": "No local sales taxes in Connecticut: 6.35% everywhere.",
+   "quote": "The sales tax rate of 6.35% applies to the retail sale, lease, or rental of most goods ... and taxable services. ... There are no additional sales taxes imposed by local jurisdictions in Connecticut.",
+   "url": "https://portal.ct.gov/drs/sales-tax/tax-information"
+  },
+  "shipped_goods": {
+   "rule": "Taxable. An out-of-state seller must collect Connecticut tax once it has at least $100,000 of gross receipts and 200 or more retail sales into Connecticut in the 12 months ended September 30. If the seller doesn't collect, a business buyer owes use tax at the same rate and reports it on Form OS-114.",
+   "quote": "[Sec. 12-407(a)(12)(G):] Every person making retail sales of tangible personal property or services from outside this state to a destination within this state, provided such person has gross receipts of at least one hundred thousand dollars and made two hundred or more retail sales from outside this state to destinations within this state during the twelve-month period ended on the September thirtieth immediately preceding ... [DRS:] Any business that purchases goods or taxable services for use in Connecticut and does not pay Connecticut sales tax must pay the Connecticut use tax. The use tax rates are identical to the sales tax rates.",
+   "url": "https://portal.ct.gov/drs/sales-tax/tax-information",
+   "statute_url": "https://prdext3.cga.ct.gov/current/pub/chap_219.htm#sec_12-407"
+  },
+  "freight_taxed": true,
+  "freight": {
+   "rule": "Shipping and delivery charges by the seller are part of the taxable sales price, whether or not separately stated and whoever carries the goods.",
+   "quote": "[Sec. 12-407(a)(8)(A) 'Sales price' ... without any deduction on account of:] any charges by the retailer to the purchaser for shipping or delivery, notwithstanding whether such charges are separately stated in a written contract, or on a bill or invoice rendered to such purchaser or whether such shipping or delivery is provided by the retailer or a third party.",
+   "url": "https://prdext3.cga.ct.gov/current/pub/chap_219.htm#sec_12-407"
+  },
+  "install_labor": {
+   "rule": "Taxable on an existing commercial building. Services to existing commercial, industrial or income-producing real property are taxable (the guide's list includes carpentry and 'is not limited to' the listed trades); the usual exclusion for separately stated installation charges does not apply where the installation is itself such a service. Labor on new construction is not taxed. The guide does not name toilet partitions.",
+   "quote": "The sale of tangible personal property is taxable. However, separately stated charges to install tangible personal property are not taxable, provided that such installation is not itself a service to existing commercial, industrial or income-producing real property. ... A contractor's labor is subject to tax when the service is to: Existing commercial real property; Existing industrial real property; Existing income-producing real property ... A contractor's labor is not subject to tax when the service is performed on: New construction (except for services listed in Services Taxable to All Real Property)",
+   "url": "https://portal.ct.gov/-/media/drs/publications/pubsip/2018/ip-2018(2).pdf",
+   "statute_quote": "Sec. 12-407(a)(37)(I): Services to industrial, commercial or income-producing real property, including, but not limited to, such services as management, electrical, plumbing, painting and carpentry ...; Sec. 12-407(a)(8)(B)(iv): 'Sales price' does not include ... the amount charged for labor rendered in installing or applying the property sold, provided such charge is separately stated and exclusive of such charge for any service rendered within the purview of subparagraph (I) of subdivision (37) of this subsection",
+   "statute_url": "https://prdext3.cga.ct.gov/current/pub/chap_219.htm#sec_12-407"
+  },
+  "furnish_and_install": {
+   "rule": "The contractor is the consumer of the materials and pays sales or use tax when buying them. If the service is taxable (existing commercial, industrial or income-producing property), the contractor also charges tax to the customer: on the stated contract price in a lump sum contract, or on the labor where labor and materials are billed separately (the guide's example taxes the $600 labor line only). On new construction the contractor charges no tax on labor.",
+   "quote": "Contractors are relatively unique in that they are both the consumer of materials and retailers of their services. Therefore, contractors must generally: 1. Pay sales and use tax on materials, supplies, and equipment used in their construction contracts; and 2. Charge and remit sales tax on their taxable services and certain sales of related materials. ... [Lump Sum or Fixed Fee Contract:] Contractors pay sales or use tax on their purchase of materials for completion of the contract. Contractors must charge sales tax to the purchaser on the stated contract price, if the contractor's service is subject to tax and the purchaser is not exempt.",
+   "url": "https://portal.ct.gov/-/media/drs/publications/pubsip/2018/ip-2018(2).pdf"
+  },
+  "agency": "Connecticut Department of Revenue Services",
+  "confidence": "medium"
+ },
+ "page": {
+  "stalls_intro": "Connecticut's rules count toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. Half are counted as men and half as women, and any fraction rounds up. Every toilet needs a stall. Urinals are optional: in each men's room they may take the place of up to half of the required toilets in an office, and up to two thirds in a restaurant or school, and each urinal needs a screen.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building, and the men's figures show toilets only, before any are swapped for urinals. An office with 25 people or fewer, or any space with 15 or fewer, can use one shared restroom. The same rules apply in every Connecticut town, because towns cannot change the state's building rules.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** Connecticut's building rules treat toilet partitions as an interior finish and require solid plastic (HDPE) and polypropylene partitions to pass a room-corner fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use, and a room with six or more toilets and urinals also needs a narrower stall with grab bars on both sides. Federal law and Connecticut's building rules set the sizes. Connecticut has no separate state sign-off for access: your local building official checks it with the permit, and only the State Building Inspector can approve an exception to an access rule.",
+  "state_extra_bullet": "- **Connecticut extras:** Connecticut goes further than the federal rules in four places. The accessible stall needs an 18 inch vertical grab bar on the side wall as well as the horizontal one. Its partitions need 12 inches of toe space above the floor, where the federal rule asks for 9. An accessible stall door that swings out needs an extra pull handle on the inside, 6 inches from the hinge side, unless the door closes and latches by itself. And in a very large restroom, 5% of the stalls must be wheelchair accessible, which means a second one from 21 stalls up.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to everyone, and where several sit side by side, one needs a baby changing station. A shared all-gender room is allowed if every toilet sits in its own compartment with a door and urinals are in stalls or screened from view. Connecticut's public accommodations law bars discrimination based on sex or gender identity or expression, and it allows separate bathrooms based on sex.",
+  "public_jobs": "on state, city, town and school projects costing $100,000 or more for remodeling or repair, or $1 million or more for new construction, Connecticut law requires at least the wage the state Labor Commissioner sets for each trade in each town.",
+  "tax_install_bullet": "- **Tax on installation:** in Connecticut, labor on an existing commercial building is taxed, even when it's billed separately from the partitions. Labor on new construction is not. A contractor who supplies and installs pays tax on the materials and charges tax on the taxable job.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable at 6.35%, freight included, and Connecticut has no city or county sales tax on top. If the seller doesn't collect the tax, the buyer owes it to the state.",
+  "tax_confirm": "your accountant or the Connecticut Department of Revenue Services",
+  "sources": [
+   "- Toilet counts in Connecticut: [2022 Connecticut State Building Code](https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf) (Office of the State Building Inspector; 2021 International Building Code and 2021 International Plumbing Code with Connecticut amendments), amended Sections 2902.1 and 403.1; it is the code for every town under [Connecticut General Statutes Section 29-253](https://prdext3.cga.ct.gov/current/pub/chap_541.htm#sec_29-253). Table 2902.1, Sections 2902.1.1 and 2902.2, plumbing code Section 424.2 (urinals) and Table 1004.5 (floor area per person) are not amended by Connecticut and were read on a secondary copy: UpCodes, [Connecticut Building Code, Chapter 29](https://up.codes/viewer/connecticut/ibc-2021/chapter/29/plumbing-systems), [Chapter 10](https://up.codes/viewer/connecticut/ibc-2021/chapter/10/means-of-egress) and [Connecticut Plumbing Code, Chapter 4](https://up.codes/viewer/connecticut/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: 2021 International Building Code as adopted in Connecticut, Section 803.9 with Section 803.1.1 (NFPA 286) and the Chapter 2 definition of interior wall and ceiling finish, read on UpCodes, [Connecticut Building Code, Chapter 8](https://up.codes/viewer/connecticut/ibc-2021/chapter/8/interior-finishes) and [Chapter 2](https://up.codes/viewer/connecticut/ibc-2021/chapter/2/definitions). The [2022 Connecticut State Building Code](https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf) amendments make no change to Chapter 8. Checked 2026-11-24.",
+   "- Connecticut access rules: [2022 Connecticut State Building Code](https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf), added Sections 1110.2.4.1 (pull handle), 1110.2.4.2 and 104.10.2, and its amendments to ICC/ANSI A117.1-2017; Section 1110.2.4 read on UpCodes, [Connecticut Building Code, Chapter 11](https://up.codes/viewer/connecticut/ibc-2021/chapter/11/accessibility); ICC A117.1-2017 Sections 604.5, 604.9 and 604.10 read on [UpCodes](https://up.codes/viewer/connecticut/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities); federal text: [2010 ADA Standards](https://www.access-board.gov/ada/), sections 213.3.1, 604.5 and 604.8. Exceptions to access rules: [Connecticut General Statutes Section 29-269](https://prdext3.cga.ct.gov/current/pub/chap_541.htm#sec_29-269) and the Office of the State Building Inspector's [code modification page](https://portal.ct.gov/das/office-of-state-building-inspector/building-and-fire-code-modifications-exemptions-and-waivers/how-to). Checked 2026-11-24.",
+   "- Single-user and all-gender restrooms: 2021 International Building Code as adopted in Connecticut, Sections 2902.1.2 and 2902.2 exception 6, read on UpCodes, [Connecticut Building Code, Chapter 29](https://up.codes/viewer/connecticut/ibc-2021/chapter/29/plumbing-systems); Connecticut's added Section 2902.1.2.1 in the [2022 Connecticut State Building Code](https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf); [Connecticut General Statutes Section 46a-64](https://prdext3.cga.ct.gov/current/pub/chap_814c.htm#sec_46a-64). Checked 2026-11-24.",
+   "- Wages on public jobs: [Connecticut General Statutes Section 31-53](https://prdext3.cga.ct.gov/current/pub/chap_557.htm#sec_31-53); rates by town on the Connecticut Department of Labor page [Prevailing Wage Information](https://portal.ct.gov/dol/divisions/wage-and-workplace-standards/prevailing-wage). Checked 2026-11-24.",
+   "- Sales tax: Connecticut Department of Revenue Services, [Sales and Use Tax Information](https://portal.ct.gov/drs/sales-tax/tax-information) (6.35%, no local sales taxes, use tax) and [Informational Publication 2018(2), Building Contractors' Guide to Sales and Use Taxes](https://portal.ct.gov/-/media/drs/publications/pubsip/2018/ip-2018(2).pdf); [Connecticut General Statutes Section 12-407](https://prdext3.cga.ct.gov/current/pub/chap_219.htm#sec_12-407) (delivery charges, installation charges, services to commercial real property, out-of-state sellers). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; 2022 Connecticut State Building Code (2021 International Building Code with Connecticut amendments, permit applications from October 1, 2022), Chapter 11 with ICC/ANSI A117.1-2017 as amended by Connecticut; 2021 International Plumbing Code with Connecticut amendments (part of the 2022 Connecticut State Building Code); NFPA 286 for HDPE."
+ },
+ "sources_read": [
+  {
+   "url": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf",
+   "official": true
+  },
+  {
+   "url": "https://portal.ct.gov/das/services-for-agencies-and-municipalities/safety-codes-and-inspections",
+   "official": true
+  },
+  {
+   "url": "https://portal.ct.gov/das/office-of-state-building-inspector/building-and-fire-code-modifications-exemptions-and-waivers/how-to",
+   "official": true
+  },
+  {
+   "url": "https://prdext3.cga.ct.gov/current/pub/chap_541.htm",
+   "official": true
+  },
+  {
+   "url": "https://prdext3.cga.ct.gov/current/pub/chap_557.htm#sec_31-53",
+   "official": true
+  },
+  {
+   "url": "https://prdext3.cga.ct.gov/current/pub/chap_814c.htm#sec_46a-64",
+   "official": true
+  },
+  {
+   "url": "https://prdext3.cga.ct.gov/current/pub/chap_219.htm#sec_12-407",
+   "official": true
+  },
+  {
+   "url": "https://portal.ct.gov/dol/divisions/wage-and-workplace-standards/prevailing-wage",
+   "official": true
+  },
+  {
+   "url": "https://portal.ct.gov/drs/sales-tax/tax-information",
+   "official": true
+  },
+  {
+   "url": "https://portal.ct.gov/-/media/drs/publications/pubsip/2018/ip-2018(2).pdf",
+   "official": true
+  },
+  {
+   "url": "https://portal.ct.gov/-/media/chro/publications/2024-04-29-dear-colleague-letter.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/2/definitions",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/connecticut/ibc-2021/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/connecticut/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/connecticut/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+   "official": false
+  }
+ ],
+ "to_confirm": [
+  "Model-code text (Table 2902.1 rows, 2902.1.1, 2902.2, IPC 424.2, 803.9, Table 1004.5, A117.1-2017 Section 604) was read on UpCodes' Connecticut copy, not on ICC's own site: browser check on codes.iccsafe.org before launch. Connecticut's amendments were read on the official PDF and leave these parts unchanged.",
+  "Statutes were read on prdext3.cga.ct.gov (the General Assembly's server); www.cga.ct.gov failed TLS verification from this environment. Same official text, but link-check the public URLs.",
+  "Whether a newer State Building Code is scheduled: the Office of the State Building Inspector's page listed the 2022 code as current on 2026-11-24 (DAS.osbi@ct.gov).",
+  "Whether two family or assisted-use rooms can still replace separate men's and women's rooms: Connecticut deletes IPC 403.2.1 but not IBC 2902.2.1. Ask the local building official or the Office of the State Building Inspector.",
+  "How the urinal percentage rounds (the code doesn't say); the worked examples round down. Ask the local building official.",
+  "Whether typical partition doors (self-closing hinges, manual latch) count as 'self-closing, self-latching' under Section 1110.2.4.1, i.e. whether outswing accessible stall doors need the hinge-side pull handle: Office of the State Building Inspector.",
+  "Sales tax on installing toilet partitions in an existing commercial building: the DRS guide taxes services to existing commercial property but doesn't name partitions, and how tax applies when an installer fits partitions the customer bought elsewhere isn't spelled out. Confirm with the Department of Revenue Services (IP 2018(2) is dated 2018). How Next Partitions itself charges Connecticut tax (the $100,000 and 200-sale test) is a question for Abe's accountant.",
+  "Restroom-use law: no restricting statute was found, but the search was not exhaustive; the status of 2025 bills was not checked.",
+  "City agent (Hartford): read the carpenter rate on the Department of Labor's 2026 Building Rates PDF (linked from the prevailing wage page); Public Acts 25-168 and 25-174 changed the wage law from July 1, 2025 and the amended text was not compared line by line."
+ ]
+}

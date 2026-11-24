@@ -1,0 +1,439 @@
+{
+ "state": "AK",
+ "state_name": "Alaska",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "Uniform Plumbing Code (IAPMO), adopted statewide by 8 AAC 63.010(1)",
+   "edition": "2018",
+   "table": "Table 422.1, Minimum Plumbing Facilities, with Sections 422.1 and 422.2",
+   "url": "https://epubs.iapmo.org/2018/UPC/",
+   "quote": "8 AAC 63.010: \"The codes set out in this section are adopted in accordance with AS 18.60.705 as the minimum plumbing standards to be followed throughout the state. ... (1) Uniform Plumbing Code. 2018 edition, sections 101.0-103.2, 103.3.1 -103.4, 105.0 - 105.2.2, and 105.3 - 106.6 of chapter 1, chapters 2 - 10, chapter 11 excluding the requirements of section 1101.5, chapters 12 - 17, and appendices A - L, with the following revisions\" (the two revisions are to Sections 1210.2.3 and 612.2; Chapter 4 is adopted unchanged). UPC 422.1: \"Plumbing fixtures shall be provided for the type of building occupancy and in the minimum number shown in Table 422.1.\"",
+   "adoption_url": "https://www.law.cornell.edu/regulations/alaska/8-AAC-63.010",
+   "note": "The state building code does not set toilet counts: 13 AAC 50.020 adopts \"The International Building Code 2021 Edition (IBC), Chapters 1 - 12, 14 - 28, and 30 - 35, and Appendix C\", leaving out Chapter 29 (Plumbing Systems), and replaces references to the International Plumbing Code with \"Plumbing Code as adopted by 8 AAC 63.010\". The UPC text was read on the publisher's own free online edition (its page text is extracted from a multi-column table, so the row and column each figure belongs to was matched by reading order; check against the printed table)."
+  },
+  "cities_may_amend": null,
+  "cities_may_amend_note": "Not read in statute. The state labor department says its plumbing \"Inspection authority is deferred to local government inspectors in the Municipality of Anchorage through a memorandum of agreement\" and that the state has jurisdiction over plumbing work \"in communities with populations of 2,500 and above\". The building regulation refers to \"deferred jurisdictions as allowed under 13 AAC 50.075\". The city agent must read Anchorage's own code (Title 23) for local amendments to the plumbing table and for whether Anchorage adopts IBC Chapter 29.",
+  "rows": {
+   "office": {
+    "row_label": "B Business occupancy (office, professional or service type transactions)- banks, vet clinics, hospitals, car wash, banks, beauty salons, ambulatory health care facilities, laundries and dry cleaning, educational institutions (above high school), or training facilities not located within school, post offices and printing shops",
+    "wc_male": "1: 1-50; 2: 51-100; 3: 101-200; 4: 201-400. Over 400, add 1 fixture for each additional 500 males",
+    "wc_female": "1: 1-15; 2: 16-30; 3: 31-50; 4: 51-100; 8: 101-200; 11: 201-400. Over 400, add 1 fixture for each additional 150 females",
+    "urinals": "Male 1: 1-100; 2: 101-200; 3: 201-400; 4: 401-600. Over 600, add 1 fixture for each additional 300 males",
+    "quote": "Male 1: 1-50 2: 51-100 3: 101-200 4: 201-400 ... Female 1: 1-15 2: 16-30 3: 31-50 4: 51-100 8: 101-200 11: 201-400 Over 400, add 1 fixture for each additional 500 males and 1 fixture for each additional 150 females. ... [urinals] Male 1: 1-100 2: 101-200 3: 201-400 4: 401-600 Over 600, add 1 fixture for each additional 300 males.",
+    "url": "https://epubs.iapmo.org/2018/UPC/"
+   },
+   "restaurant": {
+    "row_label": "A-2 Assembly occupancy- restaurants, pubs, lounges, nightclubs and banquet halls",
+    "wc_male": "1: 1-50; 2: 51-150; 3: 151-300; 4: 301-400. Over 400, add 1 fixture for each additional 250 males",
+    "wc_female": "1: 1-25; 2: 26-50; 3: 51-100; 4: 101-200; 6: 201-300; 8: 301-400. Over 400, add 1 fixture for each 125 females",
+    "urinals": "Male 1: 1-200; 2: 201-300; 3: 301-400; 4: 401-600. Over 600, add 1 fixture for each additional 300 males",
+    "quote": "Male 1: 1-50 2: 51-150 3: 151-300 4: 301-400 ... Female 1: 1-25 2: 26-50 3: 51-100 4: 101-200 6: 201-300 8: 301-400 Over 400, add 1 fixture for each additional 250 males and 1 fixture for each 125 females. ... [urinals] Male 1: 1-200 2: 201-300 3: 301-400 4: 401-600 Over 600, add 1 fixture for each additional 300 males.",
+    "url": "https://epubs.iapmo.org/2018/UPC/"
+   },
+   "school": {
+    "row_label": "E Educational occupancy- private or public schools",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 30",
+    "urinals": "Male 1 per 100",
+    "quote": "Male 1 per 50 ... Female 1 per 30 ... [urinals] Male 1 per 100",
+    "url": "https://epubs.iapmo.org/2018/UPC/"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Half men, half women, unless information submitted shows a different split.",
+    "quote": "The minimum number of fixtures shall be calculated at 50 percent male and 50 percent female based on the total occupant load. Where information submitted indicates a difference in the distribution of the sexes such information shall be used to determine the number of fixtures for each sex.",
+    "url": "https://epubs.iapmo.org/2018/UPC/"
+   },
+   "rounding": {
+    "text": "Always up to the next whole fixture; in a mixed-use building the fractions are added first.",
+    "quote": "Where applying the fixture ratios in Table 422.1 results in fractional numbers, such numbers shall be rounded to the next whole number. For multiple occupancies, fractional numbers shall be first summed and then rounded to the next whole number. [Table note 1] The figures shown are based upon one fixture being the minimum required for the number of persons indicated or any fraction thereof.",
+    "url": "https://epubs.iapmo.org/2018/UPC/"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are required: the table has its own urinal column with minimums for men, on top of the men's toilets. Extra urinals beyond that minimum may each replace one men's toilet, but the men's toilets may not drop below two-thirds of the minimum. Women's toilets must at least equal the men's toilets and urinals together.",
+    "quote": "3 The total number of required water closets for females shall be not less than the total number of required water closets and urinals for males. 4 For each urinal added in excess of the minimum required, one water closet shall be permitted to be deducted. The number of water closets shall not be reduced to less than two-thirds of the minimum requirement.",
+    "url": "https://epubs.iapmo.org/2018/UPC/"
+   },
+   "small_occupancy_exception": {
+    "text": "One single-user toilet room for both sexes is allowed in any occupancy with 10 people or fewer, and in a business or mercantile occupancy with 50 or fewer.",
+    "quote": "422.2 Separate Facilities. Separate toilet facilities shall be provided for each sex. Exceptions: (1) Residential installations. (2) In occupancies with a total occupant load of 10 or less, including customers and employees, one toilet facility, designed for use by no more than one person at a time, shall be permitted for use by both sexes. (3) In business and mercantile occupancies with a total occupant load of 50 or less including customers and employees, one toilet facility, designed for use by no more than one person at a time, shall be permitted for use by both sexes.",
+    "url": "https://epubs.iapmo.org/2018/UPC/"
+   },
+   "occupant_load": {
+    "text": "The plumbing code takes the occupant load from the building code. 2021 IBC Table 1004.5 (not amended by Alaska): business areas 150 square feet gross per person, assembly with tables and chairs 15 net, classrooms 20 net.",
+    "quote": "UPC 422.1: \"The total occupant load and occupancy classification shall be determined in accordance with the building code.\" IBC Table 1004.5 (secondary copy): \"Business areas 150 gross\"; \"Unconcentrated (tables and chairs) 15 net\"; \"Educational Classroom area 20 net\".",
+    "url": "https://up.codes/viewer/alaska/ibc-2021/chapter/10/means-of-egress"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "25 women, 25 men. Women 16-30 = 2 toilets. Men 1-50 = 1 toilet, plus 1 urinal (1-100). Women's 2 is not less than men's 1+1. An office with 50 people or fewer in total may instead have one single-user toilet room for both sexes (Section 422.2 exception 3)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 3,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "50 women, 50 men. Women 31-50 = 3. Men 1-50 = 1 toilet, plus 1 urinal (1-100)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 4,
+    "wc_male_total": 2,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "100 women, 100 men. Women 51-100 = 4. Men 51-100 = 2 toilets, plus 1 urinal (1-100). Two-thirds of 2 is 1.33, so no toilet can be swapped for an extra urinal."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 8,
+    "wc_male_total": 3,
+    "urinals_allowed": 3,
+    "urinals_required": 2,
+    "how": "200 women, 200 men. Women 101-200 = 8. Men 101-200 = 3 toilets, plus 2 urinals (101-200). Footnote 4: one men's toilet may be replaced by an extra urinal (not below two-thirds of 3 = 2), giving 2 toilets and 3 urinals."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "25 women, 25 men. Women 1-25 = 1, raised to 2 by footnote 3 (women's toilets not less than men's toilets plus urinals). Men 1-50 = 1 toilet, plus 1 urinal (1-200)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "50 women, 50 men. Women 26-50 = 2. Men 1-50 = 1 toilet, plus 1 urinal (1-200)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 2,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "100 women, 100 men. Women 51-100 = 3. Men 51-150 = 2 toilets, plus 1 urinal (1-200)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": 1,
+    "how": "200 women, 200 men. Women 101-200 = 4. Men 151-300 = 3 toilets, plus 1 urinal (1-200). Footnote 4: one men's toilet may be replaced by an extra urinal (not below two-thirds of 3 = 2), giving 2 toilets and 2 urinals."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "25 girls, 25 boys. Girls 1 per 30 = 0.83, rounds to 1, raised to 2 by footnote 3. Boys 1 per 50 = 0.5, rounds to 1 toilet; urinals 1 per 100 = 0.25, rounds to 1."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "50 girls, 50 boys. Girls 50/30 = 1.67, rounds to 2. Boys 50/50 = 1 toilet; urinals 50/100 = 0.5, rounds to 1."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 4,
+    "wc_male_total": 2,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "100 girls, 100 boys. Girls 100/30 = 3.33, rounds to 4. Boys 100/50 = 2 toilets; urinals 100/100 = 1."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 7,
+    "wc_male_total": 4,
+    "urinals_allowed": 3,
+    "urinals_required": 2,
+    "how": "200 girls, 200 boys. Girls 200/30 = 6.67, rounds to 7. Boys 200/50 = 4 toilets; urinals 200/100 = 2. Footnote 4: one boys' toilet may be replaced by an extra urinal (not below two-thirds of 4 = 2.67, so 3), giving 3 toilets and 3 urinals."
+   }
+  ],
+  "confidence": "medium"
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "2021 International Building Code Section 803.9 (with 803.1.1), adopted without amendment by 13 AAC 50.020",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP) Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. ... 803.1.1 Interior Wall and Ceiling Finish Materials Tested in Accordance With NFPA 286 Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1.",
+  "url": "https://up.codes/viewer/alaska/ibc-2021/chapter/8/interior-finishes",
+  "adoption_url": "https://www.law.cornell.edu/regulations/alaska/13-AAC-50.020",
+  "confidence": "medium",
+  "note": "Read on UpCodes' copy of the Alaska Building Code 2021 (secondary). 13 AAC 50.020 (Cornell LII copy) lists no amendment to Chapter 8; the State Fire Marshal's own page returned HTTP 429. The section applies to HDPE \"used as an interior finish\"; the code text does not name toilet partitions."
+ },
+ "access": {
+  "state_standard": "ICC A117.1-2017, through Chapter 11 of the 2021 International Building Code as adopted by 13 AAC 50.020. Alaska has no separate state accessibility code for private buildings; the federal 2010 ADA Standards apply alongside.",
+  "differences": [
+   {
+    "point": "Second, vertical grab bar on the side wall",
+    "state": "A117.1-2017 604.5.1: \"Fixed side-wall grab bars shall include a horizontal bar complying with Section 604.5.1.1 and a vertical grab bar complying with Section 604.5.1.2.\" 604.5.1.2: \"A vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall.\"",
+    "federal": "2010 ADA 604.5.1: \"The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall.\" (no vertical bar)",
+    "state_url": "https://up.codes/viewer/alaska/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "Fixed side-wall grab bars shall include a horizontal bar complying with Section 604.5.1.1 and a vertical grab bar complying with Section 604.5.1.2."
+   },
+   {
+    "point": "Toe clearance under the partitions of a wheelchair stall: 12 inches high and 8 inches deep, against 9 and 6",
+    "state": "A117.1-2017 604.9.5.1: \"The front partition and at least one side partition of wheelchair accessible toilet compartments shall provide a toe clearance of 12 inches (305 mm) minimum above the floor and extending 8 inches (205 mm) beyond the compartment side face of the partition, exclusive of partition support members.\" Not required at the front where the compartment is deeper than 64 inches (wall-hung toilet) or 67 inches (floor-mounted), nor at the side where it is wider than 68 inches.",
+    "federal": "2010 ADA 604.8.1.4: \"The front partition and at least one side partition shall provide a toe clearance of 9 inches (230 mm) minimum above the finish floor and 6 inches (150 mm) deep minimum beyond the compartment-side face of the partition, exclusive of partition support members.\"",
+    "state_url": "https://up.codes/viewer/alaska/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+    "quote": "toe clearance of 12 inches (305 mm) minimum above the floor and extending 8 inches (205 mm) beyond the compartment side face of the partition"
+   },
+   {
+    "point": "Number of accessible stalls: 5 percent of the compartments, not just one",
+    "state": "IBC 2021 1110.2.4: \"Where water closet compartments are provided in a toilet room or bathing room, at least 5 percent of the total number of compartments shall be wheelchair accessible. Where the combined total water closet compartments and urinals provided in a toilet room or bathing room is six or more, at least 5 percent of the total number of compartments shall be ambulatory accessible, provided in addition to the wheelchair-accessible compartment.\"",
+    "federal": "2010 ADA 213.3.1: \"Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1. In addition to the compartment required to comply with 604.8.1, at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures.\"",
+    "state_url": "https://up.codes/viewer/alaska/ibc-2021/chapter/11/accessibility",
+    "quote": "at least 5 percent of the total number of compartments shall be wheelchair accessible"
+   },
+   {
+    "point": "Family or assisted-use toilet room in assembly and mercantile buildings",
+    "state": "IBC 2021 1110.2.1: \"In assembly and mercantile occupancies, an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required.\"",
+    "federal": "The 2010 ADA Standards have no such requirement; 213.2.1 only describes what a unisex toilet room may contain.",
+    "state_url": "https://up.codes/viewer/alaska/ibc-2021/chapter/11/accessibility",
+    "quote": "an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required"
+   }
+  ],
+  "same_as_federal": "Wheelchair stall size is the same (A117.1-2017 604.9.2.1: 60 inches wide, 56 inches deep with a wall-hung toilet, 59 with a floor-mounted one). Ambulatory stall: 60 inches deep, 35 to 37 inches wide (604.10.2). Doors self-closing with a pull on both sides (604.9.3).",
+  "process": "No state accessibility plan review or registration was found. Alaska rewrote the scope of the building code's accessibility chapter (13 AAC 50.020(40)): \"Compliance with the requirements of this chapter and other provisions within this code for accessibility of persons with disabilities is the exclusive responsibility of the owner of the structure or design professional of record.\" For buildings of the state and its political subdivisions, AS 35.10.015(a) has the Department of Transportation and Public Facilities adopt and enforce accessibility regulations that \"must conform to a standard comparable to applicable provisions of federal law, regulations, and standards\" (those regulations were not read).",
+  "process_urls": [
+   "https://www.law.cornell.edu/regulations/alaska/13-AAC-50.020",
+   "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=35.10.015&secEnd=35.10.015"
+  ],
+  "confidence": "medium"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "Single-user toilet rooms must carry a sign showing they are for either sex. Where each sex needs only one toilet, two single-user (family or assisted-use) rooms may replace the separate men's and women's rooms.",
+   "quote": "422.2.1 Single Use Toilet Facilities. Single use toilet facilities and family or assisted use toilet facilities shall be identified with signage indicating use by either sex. 422.2.2 Family or Assisted-Use Toilet Facilities. Where a separate toilet facility is required for each sex, and each toilet facility is required to have only one water closet, two family or assisted-use toilet facilities shall be permitted in place of the required separate toilet facilities.",
+   "url": "https://epubs.iapmo.org/2018/UPC/"
+  },
+  "all_gender_shared": {
+   "rule": "The state plumbing code requires separate toilet facilities for each sex and has no provision for a shared, multi-stall all-gender room. Alaska did not adopt IBC Chapter 29, so the model building code's all-gender provisions are not state rules. Whether a shared all-gender room can count toward the required toilets is a question for the local building department. For stalls in any shared room the adopted building code says (IBC 1210.3.1): \"Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy.\"",
+   "quote": "422.2 Separate Facilities. Separate toilet facilities shall be provided for each sex.",
+   "url": "https://epubs.iapmo.org/2018/UPC/",
+   "url_2": "https://up.codes/viewer/alaska/ibc-2021/chapter/12/interior-environment"
+  },
+  "use_restrictions": {
+   "rule": "No Alaska statute restricting who may use which restroom was found. One web search found no enacted law, only bills that did not pass; the legislature's site was not searched bill by bill.",
+   "quote": null,
+   "url": null
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": true,
+  "law": "Alaska Statutes chapter 36.05 (Wages and Hours of Labor on public construction), AS 36.05.005 to 36.05.900",
+  "threshold": "Public construction contracts that exceed $25,000",
+  "who_sets": "Alaska Department of Labor and Workforce Development (Wage and Hour), in Pamphlet 600, issued twice a year; the issue in force 10 days before the final bid date applies",
+  "rates_url": "https://labor.alaska.gov/lss/pamp600.htm",
+  "quote": "Sec. 36.05.005. Applicability. This chapter applies only to a public construction contract that exceeds $25,000. Sec. 36.05.010. Wage rates on public construction. A contractor or subcontractor who performs work on a public construction contract in the state shall pay not less than the current prevailing rate of wages for work of a similar nature in the region in which the work is done. The current prevailing rate of wages is that contained in the latest determination of prevailing rate of wages issued by the Department of Labor and Workforce Development at least 10 days before the final date for submission of bids for the contract.",
+  "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=36.05.005&secEnd=36.05.070",
+  "for_city_agent": "Pamphlet 600 Issue 53, effective September 1, 2026 (latest on the page): \"Carpenters, Region II (South of N63 latitude) S0301 Carpenter (journeyman)\" basic hourly rate $52.54, health and welfare 9.00, pension 18.34, training 0.77, other 0.10, total hourly rate $80.75. Region I (north of 63 latitude) total $80.21. Covers \"the state or a political subdivision of the state\" (AS 36.05.900). PDF: https://labor.alaska.gov/lss/forms/Pamphlet_600_Issue_53.pdf",
+  "confidence": "high"
+ },
+ "sales_tax": {
+  "state_rate": 0.0,
+  "state_rule": {
+   "rule": "Alaska has no state sales tax and no state use tax. Cities and boroughs may levy their own.",
+   "quote": "The State of Alaska currently does not have a sales and use tax; however, some local jurisdictions impose local sales taxes. For more information on local taxes, each year the Alaska Department of Commerce, Community and Economic Development publishes Alaska Taxable, an overview of each community, whether it collects taxes, and if it does, its tax rates.",
+   "url": "https://tax.alaska.gov/programs/programs/index.aspx?10002"
+  },
+  "local_authority": {
+   "rule": "State law lets a borough tax sales, rents and services, and a use tax on goods used in the borough at the same rate; cities may do the same.",
+   "quote": "AS 29.45.650(a): \"a borough may levy and collect a sales tax on sales, rents, and services provided in the borough. The sales tax may apply to any or all of these sources. Notwithstanding other statutes, exemptions may be granted by ordinance.\" (b): \"A borough levying a sales tax may also by ordinance levy a use tax on the storage, use, or consumption of tangible personal property in the borough. The use tax rate must equal the sales tax rate and the use tax shall be levied only on buyers.\" AS 29.45.700(c): \"A city outside a borough may levy and collect sales and use taxes in the manner provided for boroughs.\"",
+   "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.650&secEnd=29.45.700"
+  },
+  "shipped_goods": {
+   "rule": "No state tax. An out-of-state seller with $100,000 or more a year in sales delivered into Alaska must register with the Alaska Remote Seller Sales Tax Commission (a body of local governments, not a state agency) and collect the local tax of the member city or borough where the goods are delivered. Deliveries to places with no local sales tax carry none.",
+   "quote": "ARSSTC: \"Remote Sellers and Market Place Facilitators who meet the statewide threshold of $100,000 gross sales (the 200 transaction threshold was removed effective 1/1/2025) annually into Alaska either last year or this year, regardless of destination or taxability status of end buyer, must register with ARSSTC.\" Remote Seller Sales Tax Code, Section 030.A: \"the sales tax levied and assessed by the member jurisdiction shall be collected on all remote sales where delivery is made within the member jurisdiction, within the state of Alaska.\" Section 040.A.1: \"statewide gross sales ... from the sale(s) of property, products or services delivered in the state meets or exceeds one hundred thousand dollars ($100,000).\"",
+   "url": "https://arsstc.org/business-sellers/",
+   "code_url": "https://arsstc.org/wp-content/uploads/2024/09/Uniform-Code_2024-revisions_final_070824.pdf"
+  },
+  "freight_taxed": null,
+  "freight_note": "No state tax, so no state rule. In member cities and boroughs the Remote Seller Sales Tax Code counts freight in the taxed price: \"Sales price ... means the total amount of consideration ... without any deduction for the following: ... D. Delivery charges; E. Installation charges\", and \"Delivery Charges means charges by the seller of personal property or services for preparation and delivery to a location designated by the purchaser ... including, but not limited to, transportation, shipping, postage, handling, crating and packing.\" Each municipality's own code and exemptions still apply.",
+  "install_labor": {
+   "rule": "No state tax on labor. Whether installation labor is taxed depends on the city or borough where the work is done: state law lets them tax services.",
+   "quote": "AS 29.45.650(a): \"a borough may levy and collect a sales tax on sales, rents, and services provided in the borough.\"",
+   "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.650&secEnd=29.45.700"
+  },
+  "furnish_and_install": {
+   "rule": "No state tax. Local codes decide. The remote seller code used by member municipalities treats construction material sold to a licensed building contractor as a sale for resale where it becomes part of the permanent structure, but a municipality need not adopt that exemption.",
+   "quote": "Remote Seller Sales Tax Code, definition of goods for resale: \"C. Sale of personal property as construction material to a licensed building contractor where the property sold becomes part of the permanent structure.\" Also: \"Adoption of definitions does not compel an individual municipality to exempt certain defined\" items.",
+   "url": "https://arsstc.org/wp-content/uploads/2024/09/Uniform-Code_2024-revisions_final_070824.pdf"
+  },
+  "for_city_agent": "Anchorage: the ARSSTC member list (read through a fetch summary, so confirm on the page) shows \"Anchorage, Municipality of\" with an Alcoholic Beverage entry only (5%, effective 2021/02/01) and no General Retail entry, i.e. no general sales tax on partitions. Confirm on the Municipality of Anchorage treasury page and in Alaska Taxable (the DCCED page blocked automated access). https://arsstc.org/business-sellers/member-jurisdictions/",
+  "agency": "Alaska Department of Revenue, Tax Division (no state tax to administer); local taxes: the city or borough, and the Alaska Remote Seller Sales Tax Commission for remote sales",
+  "confidence": "medium"
+ },
+ "page": {
+  "stalls_intro": "Alaska counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women. Every toilet needs a stall. Alaska's rules also require urinals in the men's room, counted on top of the men's toilets, so you buy urinal screens as well as stalls.",
+  "stalls_head": "head: Office | Restaurant | School",
+  "stalls_rows": {
+   "50": {
+    "office": "2/1+1",
+    "restaurant": "2/1+1",
+    "school": "2/1+1"
+   },
+   "100": {
+    "office": "3/1+1",
+    "restaurant": "2/1+1",
+    "school": "2/1+1"
+   },
+   "200": {
+    "office": "4/2+1",
+    "restaurant": "3/2+1",
+    "school": "4/2+1"
+   },
+   "400": {
+    "office": "8/3+2",
+    "restaurant": "4/3+1",
+    "school": "7/4+2"
+   }
+  },
+  "stalls_after": "The women's room must have at least as many toilets as the men's room has toilets and urinals together. Where the men's side needs three or more toilets, an extra urinal may replace one of them. An office or shop with 50 people or fewer may have one single-user restroom instead. These are minimums for the whole building, and at least one stall in each room must be wheelchair accessible.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** Alaska's building rules require solid plastic (HDPE) used as an interior finish to pass a room fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Alaska's building rules set the sizes. Alaska has no state review of access plans: its rules make the building owner or the designer responsible for meeting them.",
+  "state_extra_bullet": "- **Alaska extras:** accessible stalls here need a second, upright grab bar on the side wall, and a wheelchair stall needs more toe room under its partitions (12 inches high, against 9 under the federal rules). In a large restroom, 5% of the stalls must be wheelchair accessible, not just one. Restaurants, venues and stores that need six or more toilets also need a family restroom.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be signed as open to either sex. Alaska's rules call for separate men's and women's rooms and say nothing about shared all-gender rooms, so ask your local building department before planning one.",
+  "public_jobs": "On state, city, borough and school district construction contracts over $25,000, Alaska law requires at least the wage rates the state labor department publishes for the region.",
+  "tax_install_bullet": "- **Tax on installation:** Alaska has no state sales tax, so the state adds nothing to installation labor. Cities and boroughs may tax services, so it depends on where the work is done.",
+  "tax_ship_bullet": "- **Buying without installation:** Alaska has no state sales tax, so partitions shipped to {city} carry no state tax. Where a city or borough has its own sales tax, it follows the delivery address and freight counts as part of the taxed price.",
+  "tax_confirm": "your accountant or your city or borough tax office",
+  "sources": [
+   "- Toilet counts in Alaska: [2018 Uniform Plumbing Code](https://epubs.iapmo.org/2018/UPC/), Sections 422.1 and 422.2 and Table 422.1 with its notes 1, 3 and 4, adopted statewide without changes to that chapter by [8 AAC 63.010](https://www.law.cornell.edu/regulations/alaska/8-AAC-63.010) (read on Cornell's copy of the Alaska Administrative Code); adopted codes listed by [Alaska Department of Labor and Workforce Development, Mechanical Inspection](https://labor.alaska.gov/lss/mihome.htm). The state building code leaves out the model code's plumbing chapter: [13 AAC 50.020](https://www.law.cornell.edu/regulations/alaska/13-AAC-50.020). Checked 2026-11-24.",
+   "- Floor area per person and a stall for every toilet: 2021 International Building Code as adopted by 13 AAC 50.020, [Table 1004.5](https://up.codes/viewer/alaska/ibc-2021/chapter/10/means-of-egress) and [Section 1210.3.1](https://up.codes/viewer/alaska/ibc-2021/chapter/12/interior-environment) (read on a secondary copy). Checked 2026-11-24.",
+   "- Fire test for solid plastic: 2021 International Building Code, [Sections 803.9 and 803.1.1](https://up.codes/viewer/alaska/ibc-2021/chapter/8/interior-finishes) (NFPA 286; read on a secondary copy), adopted by [13 AAC 50.020](https://www.law.cornell.edu/regulations/alaska/13-AAC-50.020). Checked 2026-11-24.",
+   "- Alaska's stall rules beyond the federal ones: [2021 International Building Code Chapter 11](https://up.codes/viewer/alaska/ibc-2021/chapter/11/accessibility), Sections 1101.1 (as rewritten by 13 AAC 50.020), 1110.2.1 and 1110.2.4, and [ICC A117.1-2017](https://up.codes/viewer/alaska/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities), Sections 604.5.1 and 604.9.5.1 (secondary copies), against the [2010 ADA Standards](https://www.access-board.gov/ada/), sections 213.3.1, 604.5.1 and 604.8.1.4. Public buildings: [AS 35.10.015](https://www.akleg.gov/basis/statutes.asp?media=print&secStart=35.10.015&secEnd=35.10.015). Checked 2026-11-24.",
+   "- Single-user restroom signs and separate rooms for each sex: [2018 Uniform Plumbing Code](https://epubs.iapmo.org/2018/UPC/), Sections 422.2, 422.2.1 and 422.2.2. Checked 2026-11-24.",
+   "- Wages on public jobs: [Alaska Statutes 36.05.005 and 36.05.010](https://www.akleg.gov/basis/statutes.asp?media=print&secStart=36.05.005&secEnd=36.05.070) and [Alaska Department of Labor and Workforce Development, Laborers' and Mechanics' Minimum Rates of Pay (Pamphlet 600)](https://labor.alaska.gov/lss/pamp600.htm). Checked 2026-11-24.",
+   "- Sales tax: [Alaska Department of Revenue, Tax Division, Sales and Use Tax](https://tax.alaska.gov/programs/programs/index.aspx?10002); [Alaska Statutes 29.45.650 and 29.45.700](https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.650&secEnd=29.45.700); [Alaska Remote Seller Sales Tax Commission, information for sellers](https://arsstc.org/business-sellers/) and its [Remote Seller Sales Tax Code, amended July 2024](https://arsstc.org/wp-content/uploads/2024/09/Uniform-Code_2024-revisions_final_070824.pdf). Checked 2026-11-24.",
+   "- The rules by their official names: 2010 ADA Standards for Accessible Design; ICC A117.1-2017 through Chapter 11 of the 2021 International Building Code with Alaska amendments (13 AAC 50.020); 2018 Uniform Plumbing Code (8 AAC 63.010); NFPA 286 for HDPE."
+  ],
+  "official_names": "- The rules by their official names: 2010 ADA Standards for Accessible Design; ICC A117.1-2017 through Chapter 11 of the 2021 International Building Code with Alaska amendments (13 AAC 50.020); 2018 Uniform Plumbing Code (8 AAC 63.010); NFPA 286 for HDPE."
+ },
+ "notes_for_city_agent": "Anchorage enforces building and plumbing codes itself (the state defers plumbing inspection to it by agreement) and adopts its own code editions and amendments in Title 23; a 2026 Assembly work session on building code updates (AO 2026-33) turned up in a search. Read Anchorage's adopted plumbing code and amendments to Table 422.1 before using stalls_rows, and check whether Anchorage adopts IBC Chapter 29 or a newer IBC and A117.1 edition. Anchorage appears to have no general sales tax (see sales_tax.for_city_agent). The state file research/state-codes/states.json cites the plumbing regulation as 8 AAC 63.101, as the labor department's page does; the regulation itself is 8 AAC 63.010.",
+ "sources_read": [
+  {
+   "url": "https://epubs.iapmo.org/2018/UPC/",
+   "official": true,
+   "note": "IAPMO's own free online edition of the 2018 UPC (publisher of the model code); page text taken from its search index"
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/alaska/8-AAC-63.010",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/alaska/13-AAC-50.020",
+   "official": false
+  },
+  {
+   "url": "https://labor.alaska.gov/lss/mihome.htm",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/alaska/ibc-2021/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/alaska/ibc-2021/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/alaska/ibc-2021/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/alaska/ibc-2021/chapter/12/interior-environment",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/alaska/ibc-2021/chapter/35/referenced-standards",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/alaska/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+   "official": false
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=36.05.005&secEnd=36.05.070",
+   "official": true
+  },
+  {
+   "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=35.10.015&secEnd=35.10.015",
+   "official": true
+  },
+  {
+   "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.650&secEnd=29.45.700",
+   "official": true
+  },
+  {
+   "url": "https://labor.alaska.gov/lss/pamp600.htm",
+   "official": true
+  },
+  {
+   "url": "https://labor.alaska.gov/lss/forms/Pamphlet_600_Issue_53.pdf",
+   "official": true
+  },
+  {
+   "url": "https://tax.alaska.gov/programs/programs/index.aspx?10002",
+   "official": true
+  },
+  {
+   "url": "https://arsstc.org/business-sellers/",
+   "official": true,
+   "note": "intergovernmental commission of Alaska municipalities, not a state agency; read through WebFetch"
+  },
+  {
+   "url": "https://arsstc.org/business-sellers/member-jurisdictions/",
+   "official": true,
+   "note": "read through WebFetch summary"
+  },
+  {
+   "url": "https://arsstc.org/wp-content/uploads/2024/09/Uniform-Code_2024-revisions_final_070824.pdf",
+   "official": true
+  }
+ ],
+ "to_confirm": [
+  "The Alaska Administrative Code was read on Cornell LII (8 AAC 63.010, last amended 4/24/2020, Register 234; 13 AAC 50.020, last amended 10/28/2022, Register 244). Confirm with the Department of Labor and Workforce Development, Mechanical Inspection, and the State Fire Marshal (Division of Fire and Life Safety, whose site returned HTTP 429) that no newer edition has been adopted since.",
+  "Table 422.1 figures were matched to rows from the publisher's extracted page text; check the office, restaurant and school rows against the printed 2018 Uniform Plumbing Code table.",
+  "Whether cities may amend the state plumbing minimums, and Anchorage's own amendments: ask the Municipality of Anchorage Development Services (Building Safety).",
+  "HDPE fire test (IBC 803.9), IBC Chapter 11 and A117.1-2017 text were read on UpCodes, not on an official copy. Ask the State Fire Marshal's plan review office whether it applies Section 803.9 to toilet partitions.",
+  "A117.1-2017 also enlarges turning space and clear floor space in new buildings; those sections were not read. An architect should confirm room layouts.",
+  "No Alaska statute on restroom use by sex or gender was found, on one web search only. Confirm on akleg.gov (for example the status of 2025 HB 141 on universal changing facilities, and any school restroom bills).",
+  "Whether a shared all-gender multi-stall room can count toward required toilets under the state plumbing code: ask the local building department or state Mechanical Inspection.",
+  "The accessibility regulations for public buildings under AS 35.10.015 (Department of Transportation and Public Facilities) were not read.",
+  "Local sales tax: Alaska Taxable (Department of Commerce, Community and Economic Development, Office of the State Assessor) blocked automated access. Confirm each city's rate and whether it taxes installation labor and freight with the city or borough tax office; confirm Anchorage has no general sales tax."
+ ]
+}
