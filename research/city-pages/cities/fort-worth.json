@@ -1,0 +1,263 @@
+{
+ "slug": "fort-worth",
+ "city": "Fort Worth",
+ "state": "TX",
+ "checked": "2026-11-24",
+ "codes": {
+  "building": {
+   "name": "2021 International Building Code with Fort Worth local amendments (Fort Worth City Code Chapter 7, Section 7-47; Ordinance No. 25382-03-2022)",
+   "edition": "2021",
+   "local_amendments": true,
+   "effective": "2022-04-01",
+   "url": "https://www.fortworthtexas.gov/departments/development-services/permits/building-energy-codes",
+   "quote": "City page (as reported by the fetch tool, not a verbatim line): the city has adopted the 2021 International Building, Mechanical, Plumbing, Fuel Gas, Fire, and Existing Building Codes, each with local amendments. Council memo attached to Ordinance 25385-03-2022: \"The construction code ordinances will have an effective date of April 1, 2022.\"",
+   "note": "The building code amendment ordinance itself (a scanned PDF of more than 10 MB) could not be read: the city site refuses curl and the fetch tool's size limit is 10 MB. Its Chapter 8, 10, 12 and 29 amendments are therefore unread. The effective date comes from the council memo bound into the plumbing ordinance, which covers all the construction code ordinances adopted on March 8, 2022."
+  },
+  "plumbing": {
+   "name": "2021 International Plumbing Code with Fort Worth local amendments (Fort Worth City Code Chapter 26, Sections 26-1 and 26-2; Ordinance No. 25385-03-2022)",
+   "edition": "2021",
+   "local_amendments": true,
+   "effective": "2022-04-01",
+   "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/ipc-and-ifgc-2021-amendments-ordinance-25385-03-2022.pdf",
+   "quote": "The Plumbing Code of the City of Fort Worth is hereby revised and amended to conform, with certain exceptions as specified below, to the 2021 International Plumbing Code and the 2021 International Fuel Gas Code of the International Code Council (ICC), and the same as amended are hereby adopted as the City's Plumbing Code. ... This ordinance shall take effect upon April 1, 2022."
+  },
+  "scheduled_change": null,
+  "scheduled_change_note": "The city's Building & Energy Codes page lists no 2024 editions and no adoption schedule. The 2022 council memo says Fort Worth \"has historically adopted newly published Codes every six years\" (2015 codes in 2016, 2021 codes in 2022).",
+  "authority": "City of Fort Worth Development Services Department (Building Official)",
+  "confidence": "medium"
+ },
+ "fixtures": {
+  "city_amends": true,
+  "amendment": {
+   "text": "Fort Worth rewrote Sections 403.1, 403.2 and 403.3 of the plumbing code and did not change the ratios in Table 403.1. (1) The table counts are required, \"based on the actual use of the building or space\", and outside schools (Group E) the building official may approve fewer on a written request with reasons. (2) Separate men's and women's rooms are not required where the total occupant load, employees and customers together, is 50 or fewer (the model code says 15), in shops of 100 or fewer and in business occupancies of 25 or fewer; single-user toilet rooms need not be designated by sex. The rewritten exception list has no exception for multiple-user rooms designed for all genders. (3) Section 403.1.1 (half men, half women) and Section 424.2 (urinals in place of some water closets) are not amended; the city added only 424.3 (wall and floor finish around urinals) and 424.4 (waterless urinals). No urinals are required. Table footnote g and Sections 403.1.4 and 413.4 concern drinking fountains, food service sinks and floor drains.",
+   "quote": "403.1 Minimum number of fixtures. Plumbing fixtures shall be provided for the type of occupancy and in the minimum number shown in Table 403.1, based on the actual use of the building or space and as follows: ... Uses not shown in Table 403.1 shall be considered individually by the code official. The number of occupants shall be determined by the International Building Code. In other than E occupancies, the minimum number of fixtures in Table 2902.1 may be lowered, if requested in writing, by the applicant sating reasons for a reduced number and approved by the code official. || 403.2 Separate facilities. Where plumbing fixtures are required, separate facilities shall be provided for each sex. Exceptions: 1. Separate facilities shall not be required for private dwelling units or sleeping units. 2. Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 50 or fewer. 3. Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or less. 4. Separate facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer. 5. Separate facilities shall not be required to be designated by sex where single-user toilets rooms are provided in accordance with Section 403.1.2. 6. Self-service storage facilities need only provide one unisex restroom for storage tenant usage. ... 7. Aircraft T-hangar facilities need not install tenant restrooms when in compliance with the following: ...",
+   "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/ipc-and-ifgc-2021-amendments-ordinance-25385-03-2022.pdf",
+   "pages": "9 to 12 of the ordinance (read as page images)"
+  },
+  "table_ratios": {
+   "office": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50 (each sex)",
+   "restaurant": "1 per 75 (each sex)",
+   "school": "1 per 50 (each sex)",
+   "urinals": "none required; Section 424.2 lets urinals replace part of the men's water closets",
+   "source": "Not read on a Fort Worth source: the ordinance does not reprint the table. Taken from research/state-codes/fixtures/dallas.json, which read the unamended 2021 IPC Table 403.1 rows on UpCodes.",
+   "url": "https://up.codes/viewer/dallas/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings"
+  },
+  "worked_examples": [
+   {
+    "occupants": 50,
+    "office": "1 women / 1 men",
+    "restaurant": "1 / 1",
+    "school": "1 / 1"
+   },
+   {
+    "occupants": 100,
+    "office": "2 / 2",
+    "restaurant": "1 / 1",
+    "school": "1 / 1"
+   },
+   {
+    "occupants": 200,
+    "office": "3 / 3",
+    "restaurant": "2 / 2",
+    "school": "2 / 2"
+   },
+   {
+    "occupants": 400,
+    "office": "5 / 5",
+    "restaurant": "3 / 3",
+    "school": "4 / 4"
+   }
+  ],
+  "worked_examples_note": "Half the occupants counted as each sex, fractions rounded up. Same arithmetic as the Dallas examples (same unamended table); in Fort Worth the counts are required for all three uses, and reducible on written request except in schools. At 50 occupants separate rooms are not required (403.2 exception 2).",
+  "confidence": "medium"
+ },
+ "permit": {
+  "exempt_list_quote": "105.2 Work exempt from permit. ... Permits shall not be required for the following: Building: ... 7. Painting, papering, tiling, carpeting, cabinet replacement, counter top replacement, and similar finish work. ... 13. Non-fixed and movable fixtures, cases, racks, counters and partitions not over five (5) feet nine (9) inches (1753 mm) in height.",
+  "rule_quote": "105.1 Required. Any owner, individual, contractor or authorized agent who intends to construct, enlarge, alter, repair, move, demolish, or change the occupancy of a building or structure, or to erect, install, enlarge, alter, repair, remove, convert or replace any electrical, gas, mechanical or plumbing system, the installation of which is regulated by the Technical Codes, or to cause any such work to be done, shall first make application to the Building Official and obtain the required building permit.",
+  "city_page_quote": "Permits are not required for \"cosmetic\" remodels (floor or wall covering, cabinets, counter tops, shelving, etc.)",
+  "city_page_url": "https://www.fortworthtexas.gov/departments/development-services/permits/commercial",
+  "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/administrative-code-2021-ordinance-25387-03-2022.pdf",
+  "partitions_named": false,
+  "note": "The 19-item Building list names \"partitions\" only as non-fixed and movable ones up to 5 ft 9 in. Toilet partitions, which are anchored to the floor, wall or ceiling, are not named, and the list does not say whether replacing them is \"similar finish work\".",
+  "office": "City of Fort Worth Development Services Department, Permits",
+  "phone": "817-392-2222",
+  "confidence": "high"
+ },
+ "restrooms_city": {
+  "rule": "Fort Worth's plumbing code says single-user toilet rooms need not be designated by sex. Its rewritten list of exceptions to separate men's and women's facilities contains no exception for a shared multiple-user all-gender room. No separate city ordinance on restroom signs was looked for beyond the code amendments.",
+  "quote": "5. Separate facilities shall not be required to be designated by sex where single-user toilets rooms are provided in accordance with Section 403.1.2.",
+  "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/ipc-and-ifgc-2021-amendments-ordinance-25385-03-2022.pdf",
+  "confidence": "medium",
+  "note": "Section 403.1.2 itself is not amended by Fort Worth and was not read here. The building code's parallel section (2902.2) in Ordinance 25382-03-2022 was not read, so whether it also omits the all-gender exception is open."
+ },
+ "sales_tax": {
+  "combined": 0.0825,
+  "parts": [
+   {
+    "name": "state",
+    "rate": 0.0625
+   },
+   {
+    "name": "city",
+    "rate": 0.01
+   },
+   {
+    "name": "Fort Worth MTA (transit authority)",
+    "rate": 0.005
+   },
+   {
+    "name": "Fort Worth Crime Control district",
+    "rate": 0.005
+   }
+  ],
+  "effective": null,
+  "effective_note": "The Comptroller's city rates page gives no effective date for these rates.",
+  "scheduled_change": null,
+  "scheduled_change_note": "The Comptroller's quarterly updates index lists changes up to October 1, 2026; the quarterly detail pages were not opened, and no Fort Worth change appears on the index.",
+  "url": "https://comptroller.texas.gov/taxes/sales/city.php",
+  "quote": "Fort Worth (Tarrant Co) | 2220031 | .010000 | .082500 ; Fort Worth MTA | 3220996 | .005000 ; Fort Worth Crime Control | 5220503 | .005000. Total includes the state's sales and use tax rate of 6.25%.",
+  "confidence": "high"
+ },
+ "public_wage": {
+  "county": "Tarrant",
+  "basis": "Davis-Bacon",
+  "basic_hourly": 15.47,
+  "fringe": 1.82,
+  "determination": "TX20260270, modification 1 (Building)",
+  "date": "2026-05-18",
+  "url": "https://sam.gov/wage-determination/TX20260270/1",
+  "api_url": "https://sam.gov/api/prod/wdol/v1/wd/TX20260270/1",
+  "quote": "General Decision Number: TX20260270 05/18/2026 ... Construction Types: Building ... Counties: Texas Counties of Tarrant ... SUTX2014-048 07/21/2014 ... CARPENTER, EXCLUDES DRYWALL HANGING, FORM WORK, AND METAL STUD INSTALLATION.............................$ 15.47 1.82",
+  "city_rule": null,
+  "city_rule_note": "Not looked for. Under Texas Government Code chapter 2258 each public body sets its own rates; the City of Fort Worth's and Fort Worth ISD's own wage schedules were not read.",
+  "confidence": "high"
+ },
+ "page": {
+  "meta": "Commercial bathroom partitions delivered to Fort Worth job sites. Price your restroom, pick the right material and see the Fort Worth and Texas rules.",
+  "lead": "Commercial bathroom partitions for Fort Worth offices, schools, restaurants and distribution centers, shipped by freight to your job site.",
+  "fire_bullet": "- **Fire safety:** Fort Worth's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.",
+  "stall_bullet": "- **How many stalls:** Fort Worth sets the number of toilets by how many people use the building. The table below shows what that means.",
+  "permit_bullet": "- **Permits:** Fort Worth requires a permit to alter or repair a building unless the work is exempt. Its exempt list covers \"similar finish work\" and movable partitions up to 5 feet 9 inches high, without naming toilet partitions, so ask Fort Worth Development Services whether your replacement needs one. You don't need a permit to buy partitions.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom doesn't have to be designated for men or women. For larger restrooms, Fort Worth's plumbing rules call for separate men's and women's rooms and list no exception for a shared all-gender room, so ask Fort Worth Development Services before you plan one. Since December 2025, Texas law requires shared restrooms in city, county, school district and public college buildings to be designated for one sex.",
+  "confirm_office": "Fort Worth Development Services",
+  "stalls_intro": "Fort Worth counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women. Every toilet needs a stall. Urinals are optional and may stand in for some of the men's toilets. Outside schools, the city may approve fewer toilets if the applicant asks in writing and gives reasons.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building. Where a building or tenant space holds 50 people or fewer, staff and customers together, Fort Worth doesn't require separate men's and women's rooms. At least one stall in each room must be wheelchair accessible.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or Fort Worth Development Services sets the final number.",
+  "install_rule": "Anyone who obtains a Fort Worth building permit must have a contractor registration on file with the City. Texas has no statewide contractor license for this work. Confirm what your project needs with Fort Worth Development Services. You don't need a permit to buy partitions.",
+  "faq_install_extra": "A contractor who obtains a Fort Worth building permit must be registered with the City.",
+  "public_jobs_bullet": "- **Public jobs:** on city, county and school district projects, Texas law requires at least the locally set wage. The federal rate for a carpenter on building work in Tarrant County is $15.47 an hour plus $1.82 in benefits.",
+  "sales_tax_bullet": "- **Sales tax:** 8.25% in Fort Worth: 6.25% state, 1% city, 0.5% transit authority and 0.5% crime control district.",
+  "buyers_extra": "- **Arenas, event halls and Stockyards venues:** HDPE or phenolic for restrooms that take big crowds and frequent washdown.",
+  "sources": [
+   "- Fort Worth building and plumbing codes: [City of Fort Worth, Building & Energy Codes](https://www.fortworthtexas.gov/departments/development-services/permits/building-energy-codes) and [Ordinance No. 25385-03-2022](https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/ipc-and-ifgc-2021-amendments-ordinance-25385-03-2022.pdf), adopting the 2021 International Plumbing Code with local amendments, effective April 1, 2022; its council memo gives the same effective date for all the 2021 construction code ordinances. Checked 2026-11-24.",
+   "- Toilet counts in Fort Worth: [Fort Worth amendments to the 2021 International Plumbing Code, Ordinance No. 25385-03-2022](https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/ipc-and-ifgc-2021-amendments-ordinance-25385-03-2022.pdf), Sections 403.1 (\"the minimum number of fixtures in Table 2902.1 may be lowered, if requested in writing\") and 403.2 (separate facilities not required at \"a total occupant load, including both employees and customers, of 50 or fewer\"). The ordinance leaves the table's ratios unchanged; they were read on a secondary copy of the 2021 International Plumbing Code ([UpCodes](https://up.codes/viewer/dallas/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings)). Checked 2026-11-24.",
+   "- Single-user and shared restrooms in Fort Worth: [Ordinance No. 25385-03-2022](https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/ipc-and-ifgc-2021-amendments-ordinance-25385-03-2022.pdf), Section 403.2, exceptions 1 to 7. Checked 2026-11-24.",
+   "- Fort Worth permits and exempt work: [Fort Worth Building Administrative Code, Ordinance No. 25387-03-2022](https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/administrative-code-2021-ordinance-25387-03-2022.pdf), Sections 105.1 and 105.2, and [City of Fort Worth, Commercial Permits](https://www.fortworthtexas.gov/departments/development-services/permits/commercial). Checked 2026-11-24.",
+   "- Fort Worth contractor registration: [Fort Worth Building Administrative Code, Ordinance No. 25387-03-2022](https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/administrative-code-2021-ordinance-25387-03-2022.pdf), Section 118.1, and [City of Fort Worth, Contractor Registration](https://www.fortworthtexas.gov/departments/development-services/permits/contractor-registration). Checked 2026-11-24.",
+   "- Tarrant County carpenter rate: [federal wage determination TX20260270, modification 1, May 18, 2026](https://sam.gov/wage-determination/TX20260270/1). Checked 2026-11-24.",
+   "- Fort Worth sales tax rate: Texas Comptroller, [city sales and use tax rates](https://comptroller.texas.gov/taxes/sales/city.php) (Fort Worth 1%, Fort Worth MTA 0.5%, Fort Worth Crime Control 0.5%, total 8.25% with the state's 6.25%). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; 2012 Texas Accessibility Standards (TDLR registration and review at $50,000 or more); 2021 International Building Code with Fort Worth amendments (Ordinance No. 25382-03-2022), in force since April 1, 2022; 2021 International Plumbing Code with Fort Worth amendments (Ordinance No. 25385-03-2022), in force since April 1, 2022; work exempt from a permit: Fort Worth Building Administrative Code, Section 105.2 (Ordinance No. 25387-03-2022); NFPA 286 for HDPE.",
+  "notes": [
+   "To confirm by phone before launch: whether a like-for-like toilet partition replacement needs a Fort Worth permit (Development Services, 817-392-2222).",
+   "The building code amendment ordinance (No. 25382-03-2022, a scanned PDF over 10 MB) could not be read: open it in a browser and check Chapter 29 (toilet counts, separate rooms, single-user signs), the interior finish section behind the HDPE fire test and the floor area per person table against this page.",
+   "The stall table's ratios come from the unamended 2021 plumbing code table as read for Dallas on UpCodes: check them in a browser on the official viewer.",
+   "Ask Fort Worth Development Services whether a shared all-gender restroom is accepted; the plumbing ordinance's exception list has none for it.",
+   "The Tarrant County carpenter rate is the federal one; the City of Fort Worth's and Fort Worth ISD's own wage schedules for public jobs were not read.",
+   "The Comptroller's rate page gives no effective date for the Fort Worth rates; its quarterly change pages were not opened.",
+   "The climate figures come from the Dallas station, the nearest long-term one in the NOAA tables."
+  ]
+ },
+ "sources_read": [
+  {
+   "url": "https://www.fortworthtexas.gov/departments/development-services/permits/building-energy-codes",
+   "official": true,
+   "note": "through the fetch tool's summary; curl is refused (HTTP 403)"
+  },
+  {
+   "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/ipc-and-ifgc-2021-amendments-ordinance-25385-03-2022.pdf",
+   "official": true,
+   "note": "scanned PDF; pages 1 to 14 read as images, effective date and memo from its text layer"
+  },
+  {
+   "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/administrative-code-2021-ordinance-25387-03-2022.pdf",
+   "official": true,
+   "note": "Sections 105.1, 105.2, 118.1 from the PDF's text layer (OCR spacing tidied in quotes)"
+  },
+  {
+   "url": "https://www.fortworthtexas.gov/departments/development-services/permits/commercial",
+   "official": true,
+   "note": "fetch tool; sentence openings quoted"
+  },
+  {
+   "url": "https://www.fortworthtexas.gov/departments/development-services/permits/contractor-registration",
+   "official": true,
+   "note": "fetch tool"
+  },
+  {
+   "url": "https://www.fortworthtexas.gov/departments/development-services/permits",
+   "official": true,
+   "note": "phone 817-392-2222"
+  },
+  {
+   "url": "https://comptroller.texas.gov/taxes/sales/city.php",
+   "official": true
+  },
+  {
+   "url": "https://comptroller.texas.gov/taxes/sales/quarterly-updates/",
+   "official": true,
+   "note": "index only"
+  },
+  {
+   "url": "https://sam.gov/api/prod/wdol/v1/wd/TX20260270/1",
+   "official": true
+  },
+  {
+   "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/ibc-amendments-2021-ordinance-25382-03-2022.pdf",
+   "official": true,
+   "note": "NOT read (over the fetch tool's 10 MB limit; city site refuses curl)"
+  },
+  {
+   "url": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-5970",
+   "official": true,
+   "note": "NOT read (HTTP 403)"
+  },
+  {
+   "url": "https://up.codes/viewer/dallas/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false,
+   "note": "not opened in this session; ratios taken from research/state-codes/fixtures/dallas.json"
+  }
+ ],
+ "to_confirm": [
+  "Read Ordinance No. 25382-03-2022 (building code amendments) in a browser: Sections 2902.1, 2902.1.2, 2902.2 and Table 2902.1, the HDPE partition finish section and Table 1004.5. None of it was read; the page's fire-safety bullet and floor-area sentence rest on Fort Worth having adopted the same 2021 edition as Houston and Dallas.",
+  "Fort Worth Development Services, 817-392-2222: does replacing toilet partitions in an existing commercial restroom need a permit (Administrative Code 105.2 items 7 and 13 don't name them)?",
+  "Fort Worth Development Services: is a shared multiple-user all-gender restroom accepted, given that amended Section 403.2 lists no exception for one?",
+  "Check the Table 403.1 ratios and Section 424.2 on codes.iccsafe.org (2021 IPC Chapter 4).",
+  "Whether Fort Worth has scheduled the 2024 codes: nothing on the city page; the 2022 memo describes a six-year cycle.",
+  "Effective date of the current Fort Worth local sales tax parts and any change in the Comptroller's next quarterly notice.",
+  "City of Fort Worth and Fort Worth ISD prevailing wage schedules for building work (Texas Government Code chapter 2258 lets each public body set its own).",
+  "The Administrative Code names the 'Department of Planning and Development' for contractor registration; the city site now calls it Development Services."
+ ]
+}

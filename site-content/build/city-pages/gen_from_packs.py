@@ -95,7 +95,7 @@ def page(slug):
         '- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).',
         csrc,
         '- Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).']
-    sources += list(C.get('sources') or []) + [s for s in (S.get('sources') or []) if s not in (C.get('sources') or [])] + [wsrc]
+    sources += list(C.get('sources') or []) + [s for s in (S.get('sources') or []) if s not in (C.get('sources') or []) and 'official names' not in s] + [wsrc]
     if lr.get('source_url'): sources.append('- %s contractor rule: [%s](%s). Checked 2026-11-03.' % (city, lr.get('authority') or 'city page', lr['source_url']))
     if lic.get('source_url') or lic.get('url'): sources.append('- %s contractor licensing: [%s](%s). Checked 2026-11-19.' % (state, lic.get('authority') or 'state licensing board', lic.get('source_url') or lic.get('url')))
     sources.append('- The rules by their official names: ' + re.sub(r'^- The rules by their official names: ', '', (C.get('official_names') or S.get('official_names') or '').strip()))

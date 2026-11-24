@@ -27,6 +27,8 @@ Written for a facility manager or contractor, not a code official.
 - Everyday language: say what a rule means for the buyer ("a restroom with stalls needs at least one stall a
   wheelchair user can enter"), never the code's formal name, edition or section number. Formal names go only in
   `sources` and `official_names`.
+- State only what the source says, and only from official sources or reliable copies of them. Something known
+  only from a news report, a bill not yet law or a vote not yet certified stays out of page text: put it in `notes`.
 - State only what the source says. No advice, no opinion, no commentary on laws; state them neutrally.
 - Short, plain sentences. No dashes used as punctuation (use commas, colons or full stops). No sentence that
   announces what the text will do ("below we cover…"). No "last checked" dates in page text.
