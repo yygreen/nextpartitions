@@ -83,7 +83,7 @@ def apply(slug):
     a="- **Permits:**"
     assert s.count(a)==1
     s=s.replace(a,"\n".join(d['rules'])+"\n"+a,1)
-    sec=f"## What installation labor and sales tax add in {city}\n\n"+"\n".join(x.replace('{city}',city) for x in d['money'])+f"\n\nFigures checked November 24, 2026. How tax applies depends on your contract, so confirm with {d['confirm']}.\n\n"
+    sec=f"## What installation labor and sales tax add in {city}\n\n"+"\n".join(x.replace('{city}',city) for x in d['money'])+f"\n\nHow tax applies depends on your contract, so confirm with {d['confirm']}.\n\n"
     a=f"## What {city} buyers order partitions for"
     assert a in s; s=s.replace(a,sec+a,1)
     a="- The rules by their official names:"

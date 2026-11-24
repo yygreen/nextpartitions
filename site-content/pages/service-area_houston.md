@@ -52,7 +52,7 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 - **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to everyone. In a private building, a shared all-gender room is allowed if every toilet sits in its own compartment with a door and urinals are in stalls or screened from view. Since December 2025, Texas law requires shared restrooms in city, county, school district and public college buildings to be designated for one sex.
 - **Permits:** Houston requires a permit for remodels and alterations unless the work is exempt. Its exempt list covers "similar finish work" without naming toilet partitions, so ask the Houston Permitting Center whether your replacement needs one. You don't need a permit to buy partitions.
 
-Last checked November 23, 2026. Rules change, so confirm your project with the Houston Permitting Center or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
+Rules change, so confirm your project with the Houston Permitting Center or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
 
 ## How many stalls a Houston restroom needs
 
@@ -88,7 +88,7 @@ Our [installation guide](/guides/how-to-install-toilet-partitions) shows the wor
 - **Tax on installation:** in Texas, labor to remodel an existing commercial building is taxed, even when it's billed separately. Labor on new construction is not.
 - **Buying without installation:** partitions shipped to Houston are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it to the state.
 
-Figures checked November 24, 2026. How tax applies depends on your contract, so confirm with your accountant or the Texas Comptroller.
+How tax applies depends on your contract, so confirm with your accountant or the Texas Comptroller.
 
 ## What Houston buyers order partitions for
 

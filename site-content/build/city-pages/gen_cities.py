@@ -158,7 +158,7 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 {c['rules']}
 - **Permits:** {c['permit_plain']} You don't need a permit to buy partitions.
 
-Last checked November 23, 2026. Rules change, so confirm your project with {c['confirm']}. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
+Rules change, so confirm your project with {c['confirm']}. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
 
 ## How many stalls a {city} restroom needs
 

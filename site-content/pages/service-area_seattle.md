@@ -54,7 +54,7 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 - **Single-user and all-gender restrooms:** one-person restrooms in public places must be open to anyone and signed that way. A shared all-gender room is allowed if every toilet and urinal is in its own compartment with full-height walls and a door that locks from the inside.
 - **Permits:** Seattle needs no permit for minor repairs or alterations that cost $6,000 or less in any 6-month period, counting labor and parts at market value. Above that, ask the Seattle Department of Construction and Inspections (SDCI) whether your replacement needs one. You don't need a permit to buy partitions.
 
-Last checked November 23, 2026. Rules change, so confirm your project with SDCI or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
+Rules change, so confirm your project with SDCI or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
 
 ## How many stalls a Seattle restroom needs
 
@@ -90,7 +90,7 @@ Our [installation guide](/guides/how-to-install-toilet-partitions) shows the wor
 - **Tax on installation:** in Washington, installation labor is taxed like the partitions themselves, at the job site's rate.
 - **Buying without installation:** partitions shipped to Seattle are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it to the state.
 
-Figures checked November 24, 2026. How tax applies depends on your contract, so confirm with your accountant or the Washington Department of Revenue.
+How tax applies depends on your contract, so confirm with your accountant or the Washington Department of Revenue.
 
 ## What Seattle buyers order partitions for
 

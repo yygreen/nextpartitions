@@ -52,7 +52,7 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 - **Single-user and all-gender restrooms:** a one-person restroom must be signed as all-gender. A shared all-gender room is allowed in place of separate men's and women's rooms if every toilet is in a floor-to-ceiling privacy compartment whose door locks from the inside and shows when it's occupied.
 - **Permits:** Los Angeles needs no permit for work worth $2,500 or less, or for "partitions, not over 5 feet 9 inches high", but the city doesn't say whether toilet partitions count. Ask the Department of Building and Safety (LADBS) before a replacement. You don't need a permit to buy partitions.
 
-Last checked November 23, 2026. Rules change, so confirm your project with the Los Angeles Department of Building and Safety (LADBS) or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
+Rules change, so confirm your project with the Los Angeles Department of Building and Safety (LADBS) or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
 
 ## How many stalls a Los Angeles restroom needs
 
@@ -88,7 +88,7 @@ Our [installation guide](/guides/how-to-install-toilet-partitions) shows the wor
 - **Tax on installation:** in California, installation labor billed separately isn't taxed.
 - **Buying without installation:** partitions shipped to Los Angeles are taxable. If the seller doesn't collect the tax, the buyer owes it to the state.
 
-Figures checked November 24, 2026. How tax applies depends on your contract, so confirm with your accountant or the California Department of Tax and Fee Administration.
+How tax applies depends on your contract, so confirm with your accountant or the California Department of Tax and Fee Administration.
 
 ## What Los Angeles buyers order partitions for
 

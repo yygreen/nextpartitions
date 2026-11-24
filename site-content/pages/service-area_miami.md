@@ -53,7 +53,7 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 - **Single-user and all-gender restrooms:** one-person and family restrooms must be marked as open to everyone. A shared all-gender room is allowed if every toilet sits in its own compartment with a door and urinals are in stalls or screened from view. A 2023 Florida law sets separate rules for schools, colleges, jails and government buildings; private businesses aren't covered by it.
 - **Permits:** Miami's list of work that needs no permit covers only partitions that aren't fixed to the building and stand no taller than 5 feet 9 inches. Toilet partitions are anchored, so ask the City of Miami Building Department before a replacement. You don't need a permit to buy partitions.
 
-Last checked November 23, 2026. Rules change, so confirm your project with the City of Miami Building Department or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
+Rules change, so confirm your project with the City of Miami Building Department or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
 
 ## How many stalls a Miami restroom needs
 
@@ -89,7 +89,7 @@ Our [installation guide](/guides/how-to-install-toilet-partitions) shows the wor
 - **Tax on installation:** on a supply-and-install contract for work that becomes part of the building, the contractor pays the tax on the materials and charges you none on the contract.
 - **Buying without installation:** partitions shipped to Miami are taxable. If the seller doesn't collect the tax, the buyer owes it to the state.
 
-Figures checked November 24, 2026. How tax applies depends on your contract, so confirm with your accountant or the Florida Department of Revenue.
+How tax applies depends on your contract, so confirm with your accountant or the Florida Department of Revenue.
 
 ## What Miami buyers order partitions for
 
