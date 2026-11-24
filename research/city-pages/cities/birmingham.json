@@ -1,0 +1,377 @@
+{
+ "slug": "birmingham",
+ "city": "Birmingham",
+ "state": "AL",
+ "checked": "2026-11-24",
+ "codes": {
+  "building": {
+   "name": "Technical Code of the City of Birmingham, 2024: International Building Code, 2021 Edition, as amended in Article II (existing buildings: 2021 International Existing Building Code)",
+   "edition": "2021",
+   "local_amendments": true,
+   "effective": "2024-10-01",
+   "url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/migrated-files/documents/2024/07/PEPDOC_2024TechCode.pdf",
+   "quote": "(a) Building The provisions of the International Building Code 2021 Edition published by International Code Council as amended in Article II shall apply to the construction, alteration, repair, equipment, use and occupancy, location, maintenance, removal, and demolition, of every building or structure [...] 2. Existing buildings undergoing repair, alterations or additions and change of occupancy shall comply with the International Existing Building Code.",
+   "effective_quote": "2024 Technical Code (effective 10/1/2024)",
+   "effective_url": "https://www.birminghamal.gov/work/building-codes",
+   "amendments_note": "Article II amends the IBC only for a new residential Group R-X (Sections 302.1, 310.6, 429, 903.2.8), Chapter 4 operating features, Section 1010.2.12, Chapters 13, 27, 31, 32 and 33 and Appendix D. Chapter 1 of every code is replaced by the city's own administration chapter. Nothing in the Technical Code amends IBC Chapter 8 (interior finishes), Table 1004.5 (floor area per occupant), Chapter 11 or Chapter 29 (Section 429.11 only points Group R-X to Chapter 29). The whole 77-page PDF was text-searched and Articles I and II read."
+  },
+  "plumbing": {
+   "name": "Technical Code of the City of Birmingham, 2024: International Plumbing Code, 2021 Edition",
+   "edition": "2021",
+   "local_amendments": false,
+   "effective": "2024-10-01",
+   "url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/migrated-files/documents/2024/07/PEPDOC_2024TechCode.pdf",
+   "quote": "(c) Plumbing The provisions of the International Plumbing Code, 2021 Edition, published by International Code Council shall apply to every plumbing installation, including alterations, repairs, replacement, equipment, appliances, fixtures, fittings and/or appurtenances within the City.",
+   "amendments_note": "The only change to the plumbing code is that its Chapter 1 (administration) is deleted and replaced by the city's ('Chapters l of the 2021 editions of International Building, Plumbing, Fuel Gas, Fire, Existing Building, Residential, Mechanical, and Energy Conservation Codes, are hereby deleted and the following Chapter 1 is substituted'). No amendment to Chapter 4 (fixtures) appears anywhere in the Technical Code."
+  },
+  "plan_review_sheet": {
+   "url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-03/SubmittalforBuildingPlanReviewSheet2024_0.pdf",
+   "quote": "Applicable Codes: International Building Code (IBC) 2021; International Plumbing Code (IPC) 2021 [...] International Fire Code (IFC) 2021 [...] International Existing Building Code 2021; ICC/ANSI A117.1 2017 [...] Technical Codes City of Birmingham, Alabama 2024"
+  },
+  "scheduled_change": null,
+  "scheduled_change_note": "None found on the city's Building Codes page or in the Technical Code. The city's Building Permit brochure (file dated 2026-07) still lists the 2015 editions; it predates the 2024 Technical Code in content and was not relied on for editions.",
+  "authority": "City of Birmingham Department of Planning, Engineering and Permits (Permitting and Inspection Division; the Building Official)",
+  "confidence": "high"
+ },
+ "fixtures": {
+  "city_amends": false,
+  "basis": "Alabama has no statewide code for private commercial buildings, so Birmingham's Technical Code decides for offices and restaurants. It adopts the 2021 International Plumbing Code with no change to Chapter 4, the same edition and table the State Building Code uses for schools, hotels and state buildings. So the city's counts equal the state pack's worked examples, and they are restated here as Birmingham's own. The table and sections were read on UpCodes' copy of the unamended 2021 IPC (secondary), which the state pack also used.",
+  "amendment": null,
+  "table_rows": {
+   "office": {
+    "quote": "Business: 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "url": "https://up.codes/viewer/alabama/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "restaurant": {
+    "quote": "Restaurants, banquet halls and food courts: 1 per 75 | 1 per 75",
+    "url": "https://up.codes/viewer/alabama/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "school": {
+    "quote": "Educational facilities: 1 per 50 | 1 per 50",
+    "url": "https://up.codes/viewer/alabama/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "split_rounding_quote": "To determine the occupant load of each sex, the total occupant load shall be divided in half. [...] Fractional numbers resulting from applying the fixture ratios of Table 403.1 shall be rounded up to the next whole number.",
+   "urinal_quote": "In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent of the required water closets in assembly and educational occupancies. Urinals shall not be substituted for more than 50 percent of the required water closets in all other occupancies.",
+   "separate_rooms_quote": "Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. Separate facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer.",
+   "stall_quote": "Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy. [...] Each urinal utilized by the public or employees shall occupy a separate area with walls or partitions to provide privacy."
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 women, 25 men. 1 per 25 for the first 50: 1 each. Urinals: up to 50% of 1, so none."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "50 each. 50/25 = 2 each. Urinals: 50% of 2 = 1."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 each. First 50: 2; remaining 50 at 1 per 50: 1; total 3 each. Urinals: 50% of 3 = 1.5, so 1."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 each. First 50: 2; remaining 150 at 1 per 50: 3; total 5 each. Urinals: 50% of 5 = 2.5, so 2."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 each. 25/75 rounds up to 1 each. Urinals: 67% of 1, so none."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 each. 50/75 rounds up to 1 each. Urinals: none."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 each. 100/75 = 1.33, rounds up to 2 each. Urinals: 67% of 2 = 1.34, so 1."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 each. 200/75 = 2.67, rounds up to 3 each. Urinals: 67% of 3 = 2.01, so 2."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 each. 25/50 rounds up to 1 each. Urinals: none."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 each. 50/50 = 1 each. Urinals: none."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 each. 100/50 = 2 each. Urinals: 67% of 2 = 1.34, so 1."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 each. 200/50 = 4 each. Urinals: 67% of 4 = 2.68, so 2."
+   }
+  ],
+  "worked_examples_note": "Same figures as the Alabama state pack (same 2021 table). K-12 schools fall under the State Building Code, which uses the same table. The urinal limit applies 'in each bathroom or toilet room'; the figures assume one men's room holds all the men's fixtures.",
+  "occupant_load": {
+   "quote": "Unconcentrated (tables and chairs) | 15 net ... Business areas | 150 gross ... Educational | Classroom area | 20 net",
+   "url": "https://up.codes/viewer/alabama/ibc-2021/chapter/10/means-of-egress",
+   "note": "2021 IBC Table 1004.5, not amended by the Technical Code (its only Chapter 10 amendment is Section 1010.2.12). Quote as read by the state pack on UpCodes (secondary); the city's plan review sheet asks for the occupant load under 'IBC Section 1004'."
+  },
+  "hdpe_fire": {
+   "required": true,
+   "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. | 803.1.1 Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1.",
+   "url": "https://up.codes/viewer/alabama/ibc-2021/chapter/8/interior-finishes",
+   "note": "2021 IBC Section 803.9, adopted by Birmingham with no amendment to Chapter 8; the same sentence is in the 2021 International Fire Code, which the city adopts (Article I(g)) and the State Fire Marshal adopts statewide. Quote as read by the state pack on UpCodes (secondary). The 2021 definition of interior wall and ceiling finish names 'toilet room privacy partitions' (state pack)."
+  },
+  "confidence": "medium",
+  "confidence_note": "Adoption and the absence of amendments are from the city's own Technical Code (high). The model code text was read on UpCodes, not on ICC's site."
+ },
+ "permit": {
+  "exempt_list_quote": "103.1.1 When Required. Any owner, authorized agent, or contractor who desires to construct, enlarge, alter, repair, move, demolish, or change the occupancy of a building or structure [...] shall first make application to the Building and/or Fire Official and obtain the required permit for the work. EXCEPTION: Permits shall not be required for the following work except as noted herein: 1. Any portable heating, ventilation, evaporator coil or cooling equipment. [...] 4. Repair or replacement of components with similar equipment which does not enlarge, move, convert, or replace the mechanical system and which does not create an unsafe condition. [...] 10. Repair of commercial roofing including gutters and downspouts, if repair does not include changing the type of roof material. [...] 12. Painting, papering, carpeting, cabinets, counter tops, and similar finish work in single family residences. [...] 14. Playground equipment. 15. Nonfixed and movable fixtures, cases, racks, and counters. [...] 103.1.3 Minor Repairs. Ordinary minor repairs may be made with the approval of the Building, Code, and Fire Official without a permit, provided that such repairs shall not violate any of the provisions of this Code.",
+  "url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/migrated-files/documents/2024/07/PEPDOC_2024TechCode.pdf",
+  "partitions_named": false,
+  "note": "The 15-item list was read in full. Item 15 drops the model code's 'partitions not over 5 feet 9 inches'; item 12 (finish work) is limited to single family residences. Toilet partitions are not named. The city's Building Permit brochure adds: 'All commercial construction work regardless of size of the project requires a building permit as per the Technical Code of the City of Birmingham.' Neither text says whether swapping toilet partitions counts as construction work, an alteration or an ordinary minor repair.",
+  "brochure_quote": "All commercial construction work regardless of size of the project requires a building permit as per the Technical Code of the City of Birmingham.",
+  "brochure_url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-07/PEP_BR_BuildingPermits.pdf",
+  "office": "City of Birmingham Department of Planning, Engineering and Permits, City Hall, 710 20th Street North, Room 210",
+  "phone": "205-254-2211",
+  "phone_quote": "A permit may be obtained from the Department of Planning, Engineering and Permits located in Room 210, 2nd floor of City Hall, telephone number 254-2211. (brochure) | Phone: 205-254-2211 (plan review sheet)",
+  "confidence": "high"
+ },
+ "restrooms_city": {
+  "rule": null,
+  "note": "No city ordinance or code amendment on single-user restroom signs or shared all-gender rooms was found. The Technical Code doesn't amend the plumbing code's Chapter 4, so the 2021 model rules apply in the city as adopted: single-user rooms identified as available to all persons regardless of sex (403.1.2) and a shared room allowed where each toilet is in a compartment and urinals are in stalls or visually separated (403.2 exception 6). Birmingham's non-discrimination ordinance (No. 17-121) covers gender identity in public accommodations but has no restroom provision (text searched for restroom, bathroom, toilet, locker, shower). The Birmingham City Code on Municode was not searched (blocks automated access).",
+  "quote": "Single-user toilet and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified as being available for use by all persons regardless of their sex. [2021 IPC 403.1.2, UpCodes copy]",
+  "url": "https://up.codes/viewer/alabama/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+  "url_ordinance": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-06/ebba724f-ordinance-no.-17-121-non-discrimination.pdf",
+  "confidence": "medium"
+ },
+ "sales_tax": {
+  "combined": 0.1,
+  "parts": [
+   {
+    "name": "state",
+    "rate": 0.04
+   },
+   {
+    "name": "Jefferson County",
+    "rate": 0.02,
+    "effective": "2025-01-01",
+    "note": "1% county plus 1% county special revenue until 2024-12-31, shown as one 2% county rate since 2025-01-01; the total did not change"
+   },
+   {
+    "name": "City of Birmingham",
+    "rate": 0.04,
+    "effective": "2008-01-01",
+    "note": "4% since 2008-01-01 (3% before); the current rows carry an Active Date of 2024-09-01, when the city took over its own tax administration"
+   }
+  ],
+  "effective": "2025-01-01 (date of the newest row; the 10% total itself has applied since 2008-01-01 per the Department's history file)",
+  "scheduled_change": null,
+  "scheduled_change_note": "No future-dated or end-dated row for Birmingham (9137) or Jefferson County (7037) general sales tax in the Department's files, last modified 2026-10-28.",
+  "url": "https://www.revenue.alabama.gov/wp-content/uploads/2024/03/taxrates_current.csv",
+  "url_page": "https://www.revenue.alabama.gov/sales-use/local-cities-and-counties-tax-rates-text-file/",
+  "url_state_rate": "https://www.revenue.alabama.gov/sales-use/state-sales-use-tax-rates/",
+  "url_history": "https://www.revenue.alabama.gov/wp-content/uploads/2024/03/taxrates.csv",
+  "quote": "7037,JEFFERSON COUNTY,37,ST,GENER,SELF,20250101,,2,RC,,, | 9137,BIRMINGHAM,69,ST,GENER,SELF,20240901,,4,AC,N,7037,0 | 9137,BIRMINGHAM,69,SU,GENER,SELF,20240901,,4,AC,N,7037,0 | 7037,JEFFERSON COUNTY,37,SU,GENER,SELF,20250101,,2,RC,,, | [state page] General: 4%",
+  "use_tax_note": "Seller's use tax rows show the same rates (county 2%, city 4%). An out-of-state seller in the Simplified Sellers Use Tax program collects a flat 8% instead (state pack).",
+  "not_done": "The Department's address lookup (alabamainteractive.org) is a form and was not used; a downtown address is inside the city limits (locality 9137), not its police jurisdiction (PJ flag N).",
+  "confidence": "high"
+ },
+ "public_wage": {
+  "county": "Jefferson",
+  "basis": "Davis-Bacon",
+  "classification": "CARPENTER, INCLUDES DRYWALL FINISHING/TAPING, DRYWALL HANGING, FORM WORK, AND SCAFFOLD BUILDER",
+  "basic_hourly": 18.43,
+  "fringe": 0.0,
+  "determination": "AL20260087, modification 1 (Building)",
+  "date": "2026-05-18",
+  "rate_id": "SUAL2015-015 08/02/2017",
+  "url": "https://sam.gov/wage-determination/AL20260087/1",
+  "api_url": "https://sam.gov/api/prod/wdol/v1/wd/AL20260087/1",
+  "quote": "General Decision Number: AL20260087 05/18/2026. State: Alabama. Construction Types: Building. Counties: Alabama Counties of Jefferson. [...] SUAL2015-015 08/02/2017 [...] CARPENTER, INCLUDES DRYWALL FINISHING/TAPING, DRYWALL HANGING, FORM WORK, AND SCAFFOLD BUILDER....$ 18.43 0.00",
+  "city_rule": null,
+  "city_rule_note": "No city wage rule was met in the sources read; not searched for.",
+  "confidence": "high"
+ },
+ "page": {
+  "meta": "Commercial bathroom partitions delivered to Birmingham job sites. Price your restroom, pick a material for Alabama humidity and see the city rules.",
+  "lead": "Commercial bathroom partitions for Birmingham offices, hospitals, schools and manufacturing plants, shipped by freight to your job site.",
+  "fire_bullet": "- **Fire safety:** Birmingham's building rules, like Alabama's state rules, require solid plastic (HDPE) partitions to pass a room fire test. Ask for the fire-rated version.",
+  "stall_bullet": "- **How many stalls:** Birmingham sets the number of toilets by how many people use the building. The table below shows what that means.",
+  "extra_rule_bullets": [
+   "- **Birmingham access rules:** the list of rules Birmingham reviews plans against also names a national accessibility standard, in its 2017 edition."
+  ],
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** under Birmingham's plumbing rules, as under the state's, a one-person restroom is marked as open to everyone, and a shared all-gender room is allowed if every toilet sits in its own compartment with a door and urinals are in stalls or screened from view. Alabama law requires shared restrooms in public K-12 schools and public colleges to be designated for one sex.",
+  "permit_bullet": "- **Permits:** Birmingham requires a permit to alter or repair a building, and the city's permit guide says all commercial construction work needs one, whatever the size of the project. The list of work that needs no permit covers \"nonfixed and movable fixtures, cases, racks, and counters\" and doesn't name toilet partitions. Ordinary minor repairs may be made without a permit if the city's building official approves. Ask the Department of Planning, Engineering and Permits (205-254-2211) whether your replacement needs one. You don't need a permit to buy partitions.",
+  "confirm_office": "Birmingham's Department of Planning, Engineering and Permits",
+  "stalls_intro": "Alabama's state building rules cover schools, hotels, movie theaters and state-funded buildings. For other buildings, such as private offices and restaurants, Birmingham's own rules decide. Both use the same table, so the counts match. Birmingham counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women, and fractions round up. Every toilet needs a stall. Urinals are optional: in a men's room they may replace up to two thirds of the toilets in a restaurant or school and up to half in an office, and each urinal needs a privacy screen. The table shows men's toilets as stalls.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building, and at least one stall in each room must be wheelchair accessible. An office designed for 25 people or fewer, a shop designed for 100 or fewer, and any building designed for 15 or fewer, doesn't need separate men's and women's rooms. Confirm the count with Birmingham's Department of Planning, Engineering and Permits.",
+  "capacity": "To find your building's capacity, Birmingham's building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or the Department of Planning, Engineering and Permits sets the final number.",
+  "install_rule": "Contractors on permitted building work in Birmingham pay city license fees set by ordinance. Alabama requires a state general contractor license for commercial jobs of $100,000 or more. Birmingham's permit guide still gives $50,000, the figure before the state raised it, as the point where a state-licensed general contractor must take out the permit, so confirm what your project needs with the Department of Planning, Engineering and Permits. You don't need a permit to buy partitions.",
+  "faq_install_extra": "A contractor on a commercial job of $100,000 or more in Alabama needs a state general contractor license.",
+  "public_jobs_bullet": "- **Public jobs:** Alabama has no state wage law for public jobs, so a set wage applies only on federally funded work. For a carpenter on building work in Jefferson County that is $18.43 an hour, with no separate benefits amount.",
+  "sales_tax_bullet": "- **Sales tax:** 10% in Birmingham: 4% state, 2% Jefferson County and 4% city.",
+  "buyers_extra": "- **Hospitals, clinics and university buildings:** phenolic or stainless steel where restrooms are cleaned many times a day, with accessible stalls in every room.",
+  "sources": [
+   "- Codes Birmingham enforces: City of Birmingham, Department of Planning, Engineering and Permits, [Building Codes](https://www.birminghamal.gov/work/building-codes) (\"2024 Technical Code (effective 10/1/2024)\"), the [Technical Code of the City of Birmingham, 2024](https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/migrated-files/documents/2024/07/PEPDOC_2024TechCode.pdf), Article I, Part 1 (International Building Code, International Plumbing Code, International Fire Code and International Existing Building Code, 2021 editions) and Article II (building code amendments), and the [Building Plans Review Sheet](https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-03/SubmittalforBuildingPlanReviewSheet2024_0.pdf) (applicable codes, including ICC/ANSI A117.1-2017). Checked 2026-11-24.",
+   "- Toilet counts in Birmingham: the [Technical Code of the City of Birmingham, 2024](https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/migrated-files/documents/2024/07/PEPDOC_2024TechCode.pdf) adopts the 2021 International Plumbing Code and changes only its Chapter 1; Table 403.1 and Sections 403.1.1, 403.1.2, 403.2, 405.3.4, 405.3.5 and 424.2 were read on a [secondary copy of the 2021 International Plumbing Code, Chapter 4](https://up.codes/viewer/alabama/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings) (UpCodes). Floor area per person: 2021 International Building Code, Table 1004.5, not amended by the city, read on a [secondary copy of Chapter 10](https://up.codes/viewer/alabama/ibc-2021/chapter/10/means-of-egress). Checked 2026-11-24.",
+   "- Fire test for solid plastic in Birmingham: the [Technical Code of the City of Birmingham, 2024](https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/migrated-files/documents/2024/07/PEPDOC_2024TechCode.pdf) adopts the 2021 International Building Code and International Fire Code without amending their interior finish chapters; Sections 803.1.1 and 803.9 were read on a [secondary copy of the 2021 International Building Code, Chapter 8](https://up.codes/viewer/alabama/ibc-2021/chapter/8/interior-finishes) (UpCodes). Checked 2026-11-24.",
+   "- Permits and work exempt from a permit in Birmingham: [Technical Code of the City of Birmingham, 2024](https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/migrated-files/documents/2024/07/PEPDOC_2024TechCode.pdf), Sections 103, 103.1.1 (exceptions 1 to 15), 103.1.3 and 103.4.1; City of Birmingham, [Building Permit brochure](https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-07/PEP_BR_BuildingPermits.pdf) (\"All commercial construction work regardless of size of the project requires a building permit\"; office in Room 210, City Hall, 205-254-2211). Checked 2026-11-24.",
+   "- Contractor license fees and the state license check at permit issue in Birmingham: [Technical Code of the City of Birmingham, 2024](https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/migrated-files/documents/2024/07/PEPDOC_2024TechCode.pdf), Sections 103.4.1 and 103.5, and the [Building Permit brochure](https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-07/PEP_BR_BuildingPermits.pdf). Checked 2026-11-24.",
+   "- Sales tax in Birmingham: Alabama Department of Revenue, [Local Cities and Counties Tax Rates Text File](https://www.revenue.alabama.gov/sales-use/local-cities-and-counties-tax-rates-text-file/) ([current rates file](https://www.revenue.alabama.gov/wp-content/uploads/2024/03/taxrates_current.csv), updated October 28, 2026: Birmingham general sales tax 4%, Jefferson County 2%) and [State Sales and Use Tax Rates](https://www.revenue.alabama.gov/sales-use/state-sales-use-tax-rates/) (general rate 4%). Checked 2026-11-24.",
+   "- Jefferson County carpenter rate on federally funded building work: [federal wage determination AL20260087, modification 1, May 18, 2026](https://sam.gov/wage-determination/AL20260087/1). Checked 2026-11-24.",
+   "- City restroom ordinances: none found; Birmingham's [Ordinance No. 17-121 (non-discrimination)](https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-06/ebba724f-ordinance-no.-17-121-non-discrimination.pdf) has no restroom provision. Checked 2026-11-24."
+  ],
+  "skip_state_sources": [
+   "Toilet counts in Alabama"
+  ],
+  "official_names": "- The rules by their official names: 2010 ADA Standards for Accessible Design (adopted by Alabama in place of ICC A117.1 within the State Building Code); ICC/ANSI A117.1-2017 (listed on Birmingham's Building Plans Review Sheet); Technical Code of the City of Birmingham, 2024 (effective October 1, 2024): 2021 International Building Code as amended in Article II, 2021 International Existing Building Code, 2021 International Plumbing Code and 2021 International Fire Code, with the city's own Chapter 1 (Section 103.1.1 for work exempt from permits); Alabama State Building Code: 2021 International Building Code with Alabama exceptions and 2021 International Plumbing Code (schools, hotels, movie theaters, state-owned or state-funded buildings); NFPA 286 for HDPE (International Building Code Section 803.9).",
+  "notes": [
+   "To confirm by phone before launch: whether replacing or adding toilet partitions in an existing commercial restroom needs a Birmingham building permit, or counts as an ordinary minor repair under Section 103.1.3 (Planning, Engineering and Permits, 205-254-2211; pre-construction meetings 205-254-2224).",
+   "Birmingham's Technical Code (Section 103.4.1) and its Building Permit brochure still give $50,000 as the commercial job size above which the contractor must hold a state general contractor license; the state threshold has been $100,000 since October 1, 2024 and the code says 'or as same may be amended'. Ask the department which figure its counter applies.",
+   "The ordinance number and adoption date of the 2024 Technical Code were not found (a June 18, 2024 council agenda listing it is no longer online); the city's Building Codes page gives the effective date, October 1, 2024.",
+   "The city's Building Permit brochure still lists the 2015 code editions; the Technical Code and the plan review sheet say 2021. The page follows the Technical Code.",
+   "The 2021 model code text (toilet table, floor area per person, the HDPE fire-test section, single-user restroom signs) was read on UpCodes, not on ICC's site: check once in a browser at codes.iccsafe.org.",
+   "The fire-test section says 'used as an interior finish'; the 2021 definition of interior finish names toilet room privacy partitions. Whether Birmingham's plan reviewers ask for the test report on toilet partitions was not confirmed.",
+   "What ICC A117.1-2017 changes for stalls compared with the federal standard was not read; the access bullet only says the city lists it.",
+   "The local contractor rule's source link is the Municode copy of the city code, which blocks automated access; the same text (Section 103.5) is in the Technical Code PDF cited in Sources.",
+   "The federal carpenter rate for Jefferson County ($18.43, no fringe) is a 2017 survey rate, below the area's median carpenter wage on the page ($24.23); both figures are as published.",
+   "Sales tax: an out-of-state seller in Alabama's simplified program collects a flat 8%, not Birmingham's 10%; which applies to Next Partitions is a question for Abe's accountant."
+  ]
+ },
+ "sources_read": [
+  {
+   "url": "https://www.birminghamal.gov/work/building-codes",
+   "official": true
+  },
+  {
+   "url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/migrated-files/documents/2024/07/PEPDOC_2024TechCode.pdf",
+   "official": true
+  },
+  {
+   "url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-03/SubmittalforBuildingPlanReviewSheet2024_0.pdf",
+   "official": true
+  },
+  {
+   "url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-07/PEP_BR_BuildingPermits.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.birminghamal.gov/government/city-departments/pep",
+   "official": true
+  },
+  {
+   "url": "https://www.birminghamal.gov/government/city-departments/pep/about-pep/pep-faq",
+   "official": true
+  },
+  {
+   "url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-06/ebba724f-ordinance-no.-17-121-non-discrimination.pdf",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/alabama/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://www.revenue.alabama.gov/sales-use/local-cities-and-counties-tax-rates-text-file/",
+   "official": true
+  },
+  {
+   "url": "https://www.revenue.alabama.gov/wp-content/uploads/2024/03/taxrates_current.csv",
+   "official": true
+  },
+  {
+   "url": "https://www.revenue.alabama.gov/wp-content/uploads/2024/03/taxrates.csv",
+   "official": true
+  },
+  {
+   "url": "https://sam.gov/api/prod/wdol/v1/wd/AL20260087/1",
+   "official": true
+  }
+ ],
+ "to_confirm": [
+  "Whether replacing or adding toilet partitions in an existing commercial restroom needs a Birmingham building permit: Department of Planning, Engineering and Permits, 205-254-2211.",
+  "Which contractor license threshold the permit counter applies to commercial work ($50,000 in the city's text, $100,000 in state law since October 1, 2024).",
+  "Ordinance number and adoption date of the Technical Code of the City of Birmingham, 2024 (City Clerk or the department).",
+  "2021 IPC Chapter 4, IBC Table 1004.5 and IBC 803.9 against ICC's own text (read on UpCodes; Table 1004.5 and 803.9 quotes are the state pack's reading).",
+  "Birmingham City Code (Municode) was not searched for restroom sign or all-gender restroom ordinances; none surfaced in one web search or in Ordinance 17-121.",
+  "Whether the State Building Code or the city's Technical Code is applied to a hotel or private school project in Birmingham in practice (same 2021 editions either way)."
+ ]
+}
