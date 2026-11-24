@@ -6,7 +6,7 @@ A state is done when `states/<ST>.json` exists; a city when `cities/<slug>.json`
 
 State packs: all 43 done (39 researched 2026-11-24, plus TX, CA, FL, WA from the finished pages).
 
-**Run paused 2026-11-24: the account's model usage limit was reached (resets 2026-11-29 16:00 UTC).** Agents stopped mid-work.
+Resumed later on 2026-11-24 at the user's word (the interrupted agents were resumed with SendMessage; tucson finished). Earlier: **Run paused 2026-11-24: the account's model usage limit was reached (resets 2026-11-29 16:00 UTC).** Agents stopped mid-work.
 
 Cities done and in the preview (23): atlanta, boise, charlotte, cleveland, columbus, denver, detroit, fort-worth, grand-rapids, indianapolis, kansas-city, las-vegas, nashville, new-orleans, newark, phoenix, providence, raleigh, salt-lake-city, san-diego, tacoma, tampa, washington-dc.
 Drafts (pack written, agent stopped before its final check; listed in drafts.txt, no page generated): durham, shreveport, sioux-falls, tucson.
