@@ -1,0 +1,314 @@
+{
+ "slug": "houston",
+ "city": "Houston",
+ "checked": "2026-11-24",
+ "governing_table": {
+  "code": "City of Houston Building Code (2021 International Building Code with Houston Amendments), Chapter 29",
+  "edition": "2021 (Houston Amendments adopted by Ord. No. 2023-907, effective 2024-01-01)",
+  "table": "Table 2902.1, Minimum Number of Required Plumbing Fixtures (Houston-amended)",
+  "url": "https://www.houstonpermittingcenter.org/media/9071/download",
+  "quote": "422.1 Fixture Count. Each building shall have sanitary facilities as prescribed in Chapter 29, Table 2902.1, of the Building Code.",
+  "table_url": "https://www.houstonpermittingcenter.org/media/9031/download",
+  "table_quote": "[P] TABLE 2902.1 MINIMUM NUMBER OF REQUIRED PLUMBING FIXTURES a (See Sections 2902.1.1 and 2902.2)",
+  "note": "Houston's plumbing code is the 2021 Uniform Plumbing Code, but the Houston amendment to UPC Section 422.1 (printed page 20 of the UPC amendments PDF) strikes the whole model paragraph, including the 50/50 and rounding sentences, replaces it with the one sentence quoted, and ends with '[EDITORIAL NOTE: DELETE TABLE 422.1.]'. So UPC Table 422.1 is not in force in Houston; the count comes from the building code's Table 2902.1 (pages 93-95 of the IBC amendments PDF). Strike-through and underline were checked on the rendered PDF pages, not only the extracted text."
+ },
+ "amendments": {
+  "found": true,
+  "text": "Two amendments matter. (1) Plumbing code: UPC Table 422.1 is deleted and Section 422.1 points to Building Code Table 2902.1. (2) Building code: Houston reprints Table 2902.1 with its own changes and adds Section 2902.8. The office (Business), restaurant and school (Educational) rows are unchanged from the 2021 IBC. Houston's changes to the table are elsewhere: female water closets 1 per 60 instead of 65 for theaters and for auditoriums/museums/libraries/gymnasiums, 1 per 35 instead of 40 for arenas and stadiums, a new 'Daycares' row (1 per 17), a congregate-living row, new footnotes g, h, i, and the heading now sends urinals to Houston Section 2902.8 instead of Section 419.2 of the International Plumbing Code. New Section 2902.8 makes half of the male water closets urinals whenever more than one is required (mandatory, not optional as in the model codes). Houston does not amend Sections 2902.1, 2902.1.1, 2902.2 or 1004.5, so the 2021 IBC text of those stays in force.",
+  "url": "https://www.houstonpermittingcenter.org/media/9031/download",
+  "quote": "2902.8 Fixture types. All water closets shall be either a dual flush or a high efficiency water closet. For males, when more than one water closet is required, 50% of the water closets shall be urinals. Urinals shall be of the non-water type or high efficiency urinals.",
+  "second_url": "https://www.houstonpermittingcenter.org/media/9071/download",
+  "second_quote": "[EDITORIAL NOTE: DELETE TABLE 422.1.]"
+ },
+ "occupancies": {
+  "office": {
+   "row_label": "2 Business: Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial and similar uses",
+   "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+   "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+   "urinals": "No urinal column in the table; the heading says 'URINALS SEE SECTION 2902.8'. Section 2902.8: for males, when more than one water closet is required, 50% of the water closets shall be urinals.",
+   "lavatories": "1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80 (same for male and female)",
+   "quote": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50 ... 1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80",
+   "url": "https://www.houstonpermittingcenter.org/media/9031/download",
+   "note": "One merged cell covers male and female for both water closets and lavatories. Also: drinking fountains 1 per 100, 1 service sink (footnote e: not required at 15 or fewer occupants). Unchanged from the 2021 IBC."
+  },
+  "restaurant": {
+   "row_label": "1 Assembly: Restaurants, banquet halls and food courts (footnote d)",
+   "wc_male": "1 per 75",
+   "wc_female": "1 per 75",
+   "urinals": "No urinal column; 'URINALS SEE SECTION 2902.8': for males, when more than one water closet is required, 50% of the water closets shall be urinals.",
+   "lavatories": "1 per 200 (same for male and female)",
+   "quote": "Restaurants, banquet halls and food courts d   1 per 75   1 per 75   1 per 200   —   1 per 500   1 service sink",
+   "url": "https://www.houstonpermittingcenter.org/media/9031/download",
+   "note": "Footnote d: 'The occupant load for seasonal outdoor seating and entertainment areas shall be included when determining the minimum number of facilities required.' Bars and nightclubs are a different row (1 per 40 each sex). Unchanged from the 2021 IBC."
+  },
+  "school": {
+   "row_label": "3 Educational: Educational facilities",
+   "wc_male": "1 per 50",
+   "wc_female": "1 per 50",
+   "urinals": "No urinal column; 'URINALS SEE SECTION 2902.8': for males, when more than one water closet is required, 50% of the water closets shall be urinals.",
+   "lavatories": "1 per 50 (same for male and female)",
+   "quote": "3 Educational   Educational facilities   1 per 50   1 per 50   —   1 per 100   1 service sink",
+   "url": "https://www.houstonpermittingcenter.org/media/9031/download",
+   "note": "One row for all K-12: the table does not separate elementary from secondary schools. Houston adds a separate 'Daycares' row under Educational: 1 per 17 male, 1 per 17 female. Educational row itself unchanged from the 2021 IBC."
+  }
+ },
+ "rules": {
+  "sex_split": {
+   "text": "Divide the total occupant load in half, then apply the ratio to each half. Exceptions: approved statistical data showing a different split; multi-user all-gender rooms (count on 100% of the load); single-user rooms.",
+   "quote": "To determine the occupant load of each sex, the total occupant load shall be divided in half. To determine the required number of fixtures, the fixture ratio or ratios for each fixture type shall be applied to the occupant load of each sex in accordance with Table 2902.1.",
+   "url": "https://up.codes/viewer/houston/ibc-2021/chapter/29/plumbing-systems",
+   "official_url": "https://www.houstonpermittingcenter.org/media/9556/download?inline",
+   "source_note": "2021 IBC Section 2902.1.1, not amended by Houston (absent from the amendments PDF). Clean text read on UpCodes' Houston Building Code 2021 (secondary); the same section appears in the city's own '2021 IBC Code Comparison' PDF, middle column, with 2015-to-2021 edit marks. Houston struck the UPC's own 50/50 sentence in Section 422.1, so this IBC sentence is the one that applies."
+  },
+  "rounding": {
+   "text": "Always round up, per sex. In a building with several occupancies, add the fractions first, then round up.",
+   "quote": "Fractional numbers resulting from applying the fixture ratios of Table 2902.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number.",
+   "url": "https://up.codes/viewer/houston/ibc-2021/chapter/29/plumbing-systems",
+   "official_url": "https://www.houstonpermittingcenter.org/media/9031/download",
+   "official_quote": "a. The fixtures shown are based on one fixture being the minimum required for the number of persons indicated or any fraction of the number of persons indicated. The number of occupants shall be determined by this code.",
+   "source_note": "Section 2902.1.1 read on UpCodes (secondary) and in the city's comparison PDF; footnote a, which says the same thing, is in the city's own amendments PDF (official)."
+  },
+  "urinal_substitution": {
+   "text": "Houston-specific and mandatory: when the table requires more than one male water closet, half of them must be urinals. This replaces the model code's optional substitution limit (the table heading's reference to Section 419.2 of the International Plumbing Code is struck and replaced by Section 2902.8). It does not say how to round half of an odd number.",
+   "quote": "For males, when more than one water closet is required, 50% of the water closets shall be urinals.",
+   "url": "https://www.houstonpermittingcenter.org/media/9031/download"
+  },
+  "small_occupancy_exception": {
+   "text": "Separate men's and women's rooms are not required at a total occupant load of 15 or fewer (any use), in a business occupancy of 25 or fewer, or in a mercantile occupancy of 100 or fewer. Single-user rooms need not be designated by sex.",
+   "quote": "Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. ... Separate facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer.",
+   "url": "https://up.codes/viewer/houston/ibc-2021/chapter/29/plumbing-systems",
+   "official_url": "https://www.houstonpermittingcenter.org/media/9556/download?inline",
+   "source_note": "2021 IBC Section 2902.2, exceptions 2 and 4; not amended by Houston. Read on UpCodes (secondary) and in the city's comparison PDF. Houston's UPC amendments leave UPC Section 422.2 (the plumbing code's own separate-facilities rule) untouched, and I could not read the 2021 UPC text of 422.2 (UpCodes shows no UPC text; IAPMO's viewer was not opened). If its thresholds differ from 15 / 25, the city has to say which applies."
+  },
+  "occupant_load": {
+   "text": "From the building code: floor area divided by the factor in Table 1004.5. Business areas 150 sq ft gross per occupant; restaurant seating (assembly, tables and chairs) 15 net; standing space 5 net; commercial kitchens 200 gross; classrooms 20 net; shops and vocational rooms 50 net.",
+   "quote": "The number of occupants shall be computed at the rate of one occupant per unit of area as prescribed in Table 1004.5. For areas without fixed seating, the occupant load shall be not less than that number determined by dividing the floor area under consideration by the occupant load factor assigned to the function of the space as set forth in Table 1004.5.",
+   "table_quote": "Assembly without fixed seats: Concentrated (chairs only—not fixed) 7 net; Standing space 5 net; Unconcentrated (tables and chairs) 15 net ... Business areas 150 gross ... Educational: Classroom area 20 net; Shops and other vocational room areas 50 net ... Kitchens, commercial 200 gross",
+   "url": "https://up.codes/viewer/houston/ibc-2021/chapter/10/means-of-egress",
+   "official_url": "https://www.houstonpermittingcenter.org/media/9031/download",
+   "official_quote": "The number of occupants shall be determined by this code.",
+   "source_note": "2021 IBC Section 1004.5 and Table 1004.5, not amended by Houston (no 1004 section in the amendments PDF); read on UpCodes (secondary). Table 2902.1 footnote a (official PDF) ties the fixture count to the building code's occupant load."
+  }
+ },
+ "worked_examples": [
+  {
+   "occupancy": "office",
+   "occupants": 50,
+   "male": 25,
+   "female": 25,
+   "wc_male": 1,
+   "urinals_male_min": 0,
+   "male_toilet_stalls_after_urinals": 1,
+   "wc_female": 1,
+   "lavatories_male": 1,
+   "lavatories_female": 1,
+   "how": "Each sex 25. Water closets, 1 per 25 for the first 50 and 1 per 50 for the remainder: 25/25 = 1, rounded up to 1. Same for women. Only one male water closet is required, so the Houston 50% urinal rule (Section 2902.8, 'when more than one water closet is required') does not apply. Lavatories, 1 per 40 for the first 80 and 1 per 80 for the remainder: 25/40 = 0.625, rounded up to 1 per sex.",
+   "note": "wc_male is the Table 2902.1 count of male water-closet fixtures before the urinal rule; urinals_male_min is how many of those Section 2902.8 turns into urinals (null where the 50% of an odd number is not defined)."
+  },
+  {
+   "occupancy": "office",
+   "occupants": 100,
+   "male": 50,
+   "female": 50,
+   "wc_male": 2,
+   "urinals_male_min": 1,
+   "male_toilet_stalls_after_urinals": 1,
+   "wc_female": 2,
+   "lavatories_male": 2,
+   "lavatories_female": 2,
+   "how": "Each sex 50. Water closets, 1 per 25 for the first 50 and 1 per 50 for the remainder: 50/25 = 2, rounded up to 2. Same for women. Houston Section 2902.8: 50% of the 2 male water closets shall be urinals = 1 urinals and 1 toilets in the men's room. Lavatories, 1 per 40 for the first 80 and 1 per 80 for the remainder: 50/40 = 1.25, rounded up to 2 per sex.",
+   "note": "wc_male is the Table 2902.1 count of male water-closet fixtures before the urinal rule; urinals_male_min is how many of those Section 2902.8 turns into urinals (null where the 50% of an odd number is not defined)."
+  },
+  {
+   "occupancy": "office",
+   "occupants": 200,
+   "male": 100,
+   "female": 100,
+   "wc_male": 3,
+   "urinals_male_min": null,
+   "male_toilet_stalls_after_urinals": null,
+   "wc_female": 3,
+   "lavatories_male": 3,
+   "lavatories_female": 3,
+   "how": "Each sex 100. Water closets, 1 per 25 for the first 50 and 1 per 50 for the remainder: first 50 at 1 per 25 = 2, remaining 50 at 1 per 50 = 1; 2 + 1 = 3, rounded up to 3. Same for women. Houston Section 2902.8: 50% of the 3 male water closets shall be urinals = 1.5; the section does not say how to round an odd count, so the men's room is either 2 toilets + 1 urinals or 1 toilets + 2 urinals. Confirm with the city. Lavatories, 1 per 40 for the first 80 and 1 per 80 for the remainder: first 80 at 1 per 40 = 2, remaining 20 at 1 per 80 = 0.25; total 2.25, rounded up to 3 per sex.",
+   "note": "wc_male is the Table 2902.1 count of male water-closet fixtures before the urinal rule; urinals_male_min is how many of those Section 2902.8 turns into urinals (null where the 50% of an odd number is not defined)."
+  },
+  {
+   "occupancy": "office",
+   "occupants": 400,
+   "male": 200,
+   "female": 200,
+   "wc_male": 5,
+   "urinals_male_min": null,
+   "male_toilet_stalls_after_urinals": null,
+   "wc_female": 5,
+   "lavatories_male": 4,
+   "lavatories_female": 4,
+   "how": "Each sex 200. Water closets, 1 per 25 for the first 50 and 1 per 50 for the remainder: first 50 at 1 per 25 = 2, remaining 150 at 1 per 50 = 3; 2 + 3 = 5, rounded up to 5. Same for women. Houston Section 2902.8: 50% of the 5 male water closets shall be urinals = 2.5; the section does not say how to round an odd count, so the men's room is either 3 toilets + 2 urinals or 2 toilets + 3 urinals. Confirm with the city. Lavatories, 1 per 40 for the first 80 and 1 per 80 for the remainder: first 80 at 1 per 40 = 2, remaining 120 at 1 per 80 = 1.5; total 3.5, rounded up to 4 per sex.",
+   "note": "wc_male is the Table 2902.1 count of male water-closet fixtures before the urinal rule; urinals_male_min is how many of those Section 2902.8 turns into urinals (null where the 50% of an odd number is not defined)."
+  },
+  {
+   "occupancy": "restaurant",
+   "occupants": 50,
+   "male": 25,
+   "female": 25,
+   "wc_male": 1,
+   "urinals_male_min": 0,
+   "male_toilet_stalls_after_urinals": 1,
+   "wc_female": 1,
+   "lavatories_male": 1,
+   "lavatories_female": 1,
+   "how": "Each sex 25. Water closets, 1 per 75: 25/75 = 0.33, rounded up to 1. Same for women. Only one male water closet is required, so the Houston 50% urinal rule (Section 2902.8, 'when more than one water closet is required') does not apply. Lavatories, 1 per 200: 25/200 = 0.125, rounded up to 1 per sex.",
+   "note": "wc_male is the Table 2902.1 count of male water-closet fixtures before the urinal rule; urinals_male_min is how many of those Section 2902.8 turns into urinals (null where the 50% of an odd number is not defined)."
+  },
+  {
+   "occupancy": "restaurant",
+   "occupants": 100,
+   "male": 50,
+   "female": 50,
+   "wc_male": 1,
+   "urinals_male_min": 0,
+   "male_toilet_stalls_after_urinals": 1,
+   "wc_female": 1,
+   "lavatories_male": 1,
+   "lavatories_female": 1,
+   "how": "Each sex 50. Water closets, 1 per 75: 50/75 = 0.67, rounded up to 1. Same for women. Only one male water closet is required, so the Houston 50% urinal rule (Section 2902.8, 'when more than one water closet is required') does not apply. Lavatories, 1 per 200: 50/200 = 0.25, rounded up to 1 per sex.",
+   "note": "wc_male is the Table 2902.1 count of male water-closet fixtures before the urinal rule; urinals_male_min is how many of those Section 2902.8 turns into urinals (null where the 50% of an odd number is not defined)."
+  },
+  {
+   "occupancy": "restaurant",
+   "occupants": 200,
+   "male": 100,
+   "female": 100,
+   "wc_male": 2,
+   "urinals_male_min": 1,
+   "male_toilet_stalls_after_urinals": 1,
+   "wc_female": 2,
+   "lavatories_male": 1,
+   "lavatories_female": 1,
+   "how": "Each sex 100. Water closets, 1 per 75: 100/75 = 1.33, rounded up to 2. Same for women. Houston Section 2902.8: 50% of the 2 male water closets shall be urinals = 1 urinals and 1 toilets in the men's room. Lavatories, 1 per 200: 100/200 = 0.5, rounded up to 1 per sex.",
+   "note": "wc_male is the Table 2902.1 count of male water-closet fixtures before the urinal rule; urinals_male_min is how many of those Section 2902.8 turns into urinals (null where the 50% of an odd number is not defined)."
+  },
+  {
+   "occupancy": "restaurant",
+   "occupants": 400,
+   "male": 200,
+   "female": 200,
+   "wc_male": 3,
+   "urinals_male_min": null,
+   "male_toilet_stalls_after_urinals": null,
+   "wc_female": 3,
+   "lavatories_male": 1,
+   "lavatories_female": 1,
+   "how": "Each sex 200. Water closets, 1 per 75: 200/75 = 2.67, rounded up to 3. Same for women. Houston Section 2902.8: 50% of the 3 male water closets shall be urinals = 1.5; the section does not say how to round an odd count, so the men's room is either 2 toilets + 1 urinals or 1 toilets + 2 urinals. Confirm with the city. Lavatories, 1 per 200: 200/200 = 1, rounded up to 1 per sex.",
+   "note": "wc_male is the Table 2902.1 count of male water-closet fixtures before the urinal rule; urinals_male_min is how many of those Section 2902.8 turns into urinals (null where the 50% of an odd number is not defined)."
+  },
+  {
+   "occupancy": "school",
+   "occupants": 50,
+   "male": 25,
+   "female": 25,
+   "wc_male": 1,
+   "urinals_male_min": 0,
+   "male_toilet_stalls_after_urinals": 1,
+   "wc_female": 1,
+   "lavatories_male": 1,
+   "lavatories_female": 1,
+   "how": "Each sex 25. Water closets, 1 per 50: 25/50 = 0.5, rounded up to 1. Same for women. Only one male water closet is required, so the Houston 50% urinal rule (Section 2902.8, 'when more than one water closet is required') does not apply. Lavatories, 1 per 50: 1 per sex.",
+   "note": "wc_male is the Table 2902.1 count of male water-closet fixtures before the urinal rule; urinals_male_min is how many of those Section 2902.8 turns into urinals (null where the 50% of an odd number is not defined)."
+  },
+  {
+   "occupancy": "school",
+   "occupants": 100,
+   "male": 50,
+   "female": 50,
+   "wc_male": 1,
+   "urinals_male_min": 0,
+   "male_toilet_stalls_after_urinals": 1,
+   "wc_female": 1,
+   "lavatories_male": 1,
+   "lavatories_female": 1,
+   "how": "Each sex 50. Water closets, 1 per 50: 50/50 = 1, rounded up to 1. Same for women. Only one male water closet is required, so the Houston 50% urinal rule (Section 2902.8, 'when more than one water closet is required') does not apply. Lavatories, 1 per 50: 1 per sex.",
+   "note": "wc_male is the Table 2902.1 count of male water-closet fixtures before the urinal rule; urinals_male_min is how many of those Section 2902.8 turns into urinals (null where the 50% of an odd number is not defined)."
+  },
+  {
+   "occupancy": "school",
+   "occupants": 200,
+   "male": 100,
+   "female": 100,
+   "wc_male": 2,
+   "urinals_male_min": 1,
+   "male_toilet_stalls_after_urinals": 1,
+   "wc_female": 2,
+   "lavatories_male": 2,
+   "lavatories_female": 2,
+   "how": "Each sex 100. Water closets, 1 per 50: 100/50 = 2, rounded up to 2. Same for women. Houston Section 2902.8: 50% of the 2 male water closets shall be urinals = 1 urinals and 1 toilets in the men's room. Lavatories, 1 per 50: 2 per sex.",
+   "note": "wc_male is the Table 2902.1 count of male water-closet fixtures before the urinal rule; urinals_male_min is how many of those Section 2902.8 turns into urinals (null where the 50% of an odd number is not defined)."
+  },
+  {
+   "occupancy": "school",
+   "occupants": 400,
+   "male": 200,
+   "female": 200,
+   "wc_male": 4,
+   "urinals_male_min": 2,
+   "male_toilet_stalls_after_urinals": 2,
+   "wc_female": 4,
+   "lavatories_male": 4,
+   "lavatories_female": 4,
+   "how": "Each sex 200. Water closets, 1 per 50: 200/50 = 4, rounded up to 4. Same for women. Houston Section 2902.8: 50% of the 4 male water closets shall be urinals = 2 urinals and 2 toilets in the men's room. Lavatories, 1 per 50: 4 per sex.",
+   "note": "wc_male is the Table 2902.1 count of male water-closet fixtures before the urinal rule; urinals_male_min is how many of those Section 2902.8 turns into urinals (null where the 50% of an odd number is not defined)."
+  }
+ ],
+ "confidence": "medium",
+ "confidence_note": "High for which table governs, the three rows and the urinal rule: all read on the City of Houston's own amendment PDFs, with strike-through/underline checked on page images. Medium for the unamended 2021 IBC rules (50/50 split, separate-facilities exceptions, Table 1004.5), read on UpCodes because codes.iccsafe.org returned 403 to WebFetch and an empty JavaScript shell to curl; the city's IBC comparison PDF confirms 2902.1.1 and 2902.2 but carries edit marks.",
+ "sources_read": [
+  {
+   "url": "https://www.houstonpermittingcenter.org/media/9071/download",
+   "official": true,
+   "what": "Houston Amendments to the 2021 Uniform Plumbing Code (Exhibit H), Section 422.1, printed page 20"
+  },
+  {
+   "url": "https://www.houstonpermittingcenter.org/media/9031/download",
+   "official": true,
+   "what": "Houston Amendments to the 2021 International Building Code (Exhibit A), Chapter 29, printed pages 93-95"
+  },
+  {
+   "url": "https://www.houstonpermittingcenter.org/media/9556/download?inline",
+   "official": true,
+   "what": "City of Houston '2021 IBC Code Comparison' PDF: 2021 IBC Sections 2902.1.1 and 2902.2 with edit marks"
+  },
+  {
+   "url": "https://www.houstonpermittingcenter.org/building-code-enforcement/code-development",
+   "official": true,
+   "what": "Code Development page listing the 2021 amendment exhibits"
+  },
+  {
+   "url": "https://up.codes/viewer/houston/ibc-2021/chapter/29/plumbing-systems",
+   "official": false,
+   "what": "UpCodes, Houston Building Code 2021, Chapter 29 (clean text of 2902.1, 2902.1.1, 2902.2; its table matches the city PDF)"
+  },
+  {
+   "url": "https://up.codes/viewer/houston/ibc-2021/chapter/10/means-of-egress",
+   "official": false,
+   "what": "UpCodes, Houston Building Code 2021, Chapter 10 (Section 1004.5 and Table 1004.5)"
+  },
+  {
+   "url": "https://codes.iccsafe.org/content/IBC2021P2/chapter-29-plumbing-systems",
+   "official": true,
+   "what": "Not readable: 403 to WebFetch, JavaScript shell to curl"
+  },
+  {
+   "url": "https://www.houstonpermittingcenter.org/media/9541/download",
+   "official": true,
+   "what": "Adopting ordinance 2023-907: scanned image, no text extracted, not read"
+  }
+ ],
+ "to_confirm": [
+  "Odd male counts under Section 2902.8: when the table gives 3 or 5 male water closets, is '50%' rounded toward toilets or urinals (3 = 2 toilets + 1 urinal, or 1 + 2)? Ask Houston Permitting Center plumbing plan review (832-394-9494). Affects the office examples at 200 and 400 occupants and the restaurant example at 400.",
+  "UPC Section 422.2 (separate facilities) is not amended by Houston and was not read; confirm that the building code's thresholds (15 total, 25 business, 100 mercantile) are what plan review applies.",
+  "Read 2021 IBC Sections 2902.1.1, 2902.2 and Table 1004.5 on codes.iccsafe.org in a browser to replace the UpCodes citations with the official viewer.",
+  "The city's '2021 IBC Code Comparison' PDF is marked 'confidential' in its header although it is posted publicly on the Code Development page; cite the amendments PDF, not the comparison, on the site.",
+  "School counts use the single 'Educational facilities' row (1 per 50); Texas Education Agency facility standards may ask for more in public schools: not researched."
+ ]
+}
