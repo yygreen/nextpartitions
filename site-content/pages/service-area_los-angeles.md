@@ -56,7 +56,7 @@ Last checked November 23, 2026. Rules change, so confirm your project with the L
 
 ## How many stalls a Los Angeles restroom needs
 
-Los Angeles counts toilets by the number of people the building holds, half men and half women, and it requires urinals in the men's room. Every toilet needs a stall, and urinals need screens between them. The women's room must have at least as many toilets as the men's room has toilets and urinals together.
+Los Angeles counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women, and it requires urinals in the men's room. Every toilet needs a stall, and urinals need screens between them. The women's room must have at least as many toilets as the men's room has toilets and urinals together.
 
 :::stalls
 head: Office | Restaurant | School
@@ -68,7 +68,7 @@ head: Office | Restaurant | School
 
 These are minimums for new buildings, additions and changes of use that bring in more people; a remodel that doesn't add people can usually keep the toilets it has. A business with 50 people or fewer may be allowed a single one-person restroom, so ask LADBS. At least one stall in each room must be wheelchair accessible.
 
-Not sure how many people your building holds? Los Angeles counts an office at one person per 150 square feet of floor, and a restaurant dining room or a classroom at one per 30 square feet. Your architect or LADBS sets the final number.
+To find your building's capacity, Los Angeles counts an office at one person per 150 square feet of floor, and a restaurant dining room or a classroom at one per 30 square feet. Your architect or LADBS sets the final number.
 
 ## Installation in Los Angeles
 

@@ -58,7 +58,7 @@ Last checked November 23, 2026. Rules change, so confirm your project with SDCI 
 
 ## How many stalls a Seattle restroom needs
 
-Seattle counts toilets by the number of people the building holds, half men and half women. Every toilet needs a stall. Washington sets its own count for schools, with more toilets for girls than for boys. Urinals are optional and may stand in for most of the men's toilets.
+Seattle counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women. Every toilet needs a stall. Washington sets its own count for schools, with more toilets for girls than for boys. Urinals are optional and may stand in for most of the men's toilets.
 
 :::stalls
 head: Office | Restaurant | School
@@ -70,7 +70,7 @@ head: Office | Restaurant | School
 
 Small businesses may be allowed one shared restroom: up to 25 people in an office and up to 30 in a restaurant. At least one stall in each room must be wheelchair accessible. Confirm your project with SDCI.
 
-Not sure how many people your building holds? The building rules count an office at one person per 150 square feet of floor and a restaurant dining room at one per 15 square feet. A school is counted at one student per 100 square feet of the whole building. Your architect or SDCI sets the final number.
+To find your building's capacity, the building rules count an office at one person per 150 square feet of floor and a restaurant dining room at one per 15 square feet. A school is counted at one student per 100 square feet of the whole building. Your architect or SDCI sets the final number.
 
 ## Installation in Seattle
 

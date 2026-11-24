@@ -56,7 +56,7 @@ Last checked November 23, 2026. Rules change, so confirm your project with Dalla
 
 ## How many stalls a Dallas restroom needs
 
-Dallas handles toilet counts differently from most cities. For schools, the counts below are required. For offices and restaurants, the city requires only one toilet for each sex where people work, and says of the usual counts that they are "recommended, but not required". Every toilet needs a stall. Urinals are optional and may stand in for some of the men's toilets.
+Toilet counts go by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area, not the number of staff or of visitors in a day. Dallas handles those counts differently from most cities. For schools, the counts below are required. For offices and restaurants, the city requires only one toilet for each sex where people work, and says of the usual counts that they are "recommended, but not required". Every toilet needs a stall. Urinals are optional and may stand in for some of the men's toilets.
 
 :::stalls
 head: Office (recommended) | Restaurant (recommended) | School (required)
@@ -68,7 +68,7 @@ head: Office (recommended) | Restaurant (recommended) | School (required)
 
 The counts split the people half men and half women. At least one stall in each room must be wheelchair accessible. Confirm what your project needs with Dallas Building Inspection.
 
-Not sure how many people your building holds? The building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or Dallas Building Inspection sets the final number.
+To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or Dallas Building Inspection sets the final number.
 
 ## Installation in Dallas
 

@@ -56,7 +56,7 @@ Last checked November 23, 2026. Rules change, so confirm your project with the H
 
 ## How many stalls a Houston restroom needs
 
-Houston counts toilets by the number of people the building holds, half men and half women. Every toilet needs a stall. One Houston rule is unusual: where the men's room needs more than one toilet, half of them must be urinals, so you buy fewer men's stalls and add urinal screens.
+Houston counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women. Every toilet needs a stall. One Houston rule is unusual: where the men's room needs more than one toilet, half of them must be urinals, so you buy fewer men's stalls and add urinal screens.
 
 :::stalls
 head: Office | Restaurant | School
@@ -68,7 +68,7 @@ head: Office | Restaurant | School
 
 Where the men's side needs 3 or 5, the city doesn't say how "half" rounds, so confirm the split of stalls and urinals with Houston plan review. These are minimums for the whole building, and at least one stall in each room must be wheelchair accessible.
 
-Not sure how many people your building holds? The building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or the Houston Permitting Center sets the final number.
+To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or the Houston Permitting Center sets the final number.
 
 ## Installation in Houston
 

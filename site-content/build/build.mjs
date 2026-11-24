@@ -154,8 +154,8 @@ const stallTableHtml = (block) => {
   const head = (h) => { const m = h.match(/^(.*?)\s*\((.*)\)$/); return m ? `${esc(m[1])}<small>${esc(m[2])}</small>` : esc(h) }
   const rows = lines.map((l) => { const i = l.indexOf(':'); return { n: l.slice(0, i).trim(), cells: l.slice(i + 1).split('|').map((c) => c.trim()) } })
   return `<div class="np-st" role="table" aria-label="Stalls needed by building type and number of people"><div class="np-st-in">`
-    + `<div class="np-st-head" role="row"><span role="columnheader">People in the building</span>${heads.map((h) => `<span role="columnheader">${head(h)}</span>`).join('')}</div>`
-    + rows.map((r) => `<div class="np-st-line" role="row"><div class="np-st-people" role="rowheader"><b>${esc(r.n)}</b><span>people</span></div>${r.cells.map((c, i) => `<div class="np-st-cell" role="cell"><span class="np-st-type">${head(heads[i])}</span>${stallCell(c)}</div>`).join('')}</div>`).join('')
+    + `<div class="np-st-head" role="row"><span role="columnheader">Building capacity</span>${heads.map((h) => `<span role="columnheader">${head(h)}</span>`).join('')}</div>`
+    + rows.map((r) => `<div class="np-st-line" role="row"><div class="np-st-people" role="rowheader"><b>${esc(r.n)}</b><span>people at one time</span></div>${r.cells.map((c, i) => `<div class="np-st-cell" role="cell"><span class="np-st-type">${head(heads[i])}</span>${stallCell(c)}</div>`).join('')}</div>`).join('')
     + `</div></div>`
 }
 const withStallTables = (html) => html.replace(/<div data-np-stalls="(\d+)"><\/div>/g, (_, i) => stallTableHtml(stallTables[+i]))
