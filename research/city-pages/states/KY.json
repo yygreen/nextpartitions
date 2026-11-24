@@ -1,0 +1,459 @@
+{
+ "state": "KY",
+ "state_name": "Kentucky",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "Kentucky State Plumbing Code, 815 KAR 20:191 (Minimum fixture requirements), reached through Kentucky Building Code Section 2902.1",
+   "edition": "815 KAR 20:191 as amended effective 2020-07-28; 2018 Kentucky Building Code, Fourth Edition (February 2024), which deletes IBC Chapter 29 except Sections 2901.1 and 2902.1",
+   "table": "815 KAR 20:191 Section 3(1), fixture chart (Kentucky does not use IBC Table 2902.1 or IPC Table 403.1)",
+   "url": "https://apps.legislature.ky.gov/law/kar/titles/815/020/191/",
+   "quote": "2902.1 Minimum fixture requirements. In a building accommodating males and females, it shall be presumed that the occupants will be equally divided between males and females, unless otherwise denoted. Each building shall have the minimum fixture requirements established by 815 KAR 20:191. [Kentucky Building Code, https://dhbc.ky.gov/Documents/2018%20Kentucky%20Building%20Code%204th%20Ed.pdf]"
+  },
+  "cities_may_amend": false,
+  "cities_may_amend_note": "The Kentucky Building Code calls itself a 'mini/maxi' code: 'a statewide, uniform, mandatory building code and local governments shall not adopt or enforce any other building code governing commercial construction.' The plumbing code is a state regulation. (https://dhbc.ky.gov/Documents/2018%20Kentucky%20Building%20Code%204th%20Ed.pdf)",
+  "rows": {
+   "office": {
+    "row_label": "B: Office buildings (note c)",
+    "wc_male": "combined with female: 1 for 1 to 15; 2 for 16 to 35; 3 for 36 to 55; 4 for 56 to 80; 5 for 81 to 110; 6 for 111 to 150; 1 for each additional 40 afterwards",
+    "wc_female": "combined with male (same cell)",
+    "urinals": "Optional",
+    "quote": "Office buildings (note c): [one cell spanning the male and female water closet columns] 1 for 1 to 15; 2 for 16 to 35; 3 for 36 to 55; 4 for 56 to 80; 5 for 81 to 110; 6 for 111 to 150; 1 for each additional 40 afterwards. Urinals (males): Optional.",
+    "url": "https://apps.legislature.ky.gov/law/kar/titles/815/020/191/"
+   },
+   "restaurant": {
+    "row_label": "A-2: Banquet halls, casinos, dance halls, night clubs, restaurants, cafeterias, taverns, and bars",
+    "wc_male": "1 per up to 200; 2 for 201 to 400; 1 per additional 200 afterwards",
+    "wc_female": "1 per up to 100; 2 for 101 to 200; 1 per additional 200 afterwards",
+    "urinals": "1 for 50 to 200; 1 per additional 150 afterwards",
+    "quote": "A-2 Banquet halls, casinos, dance halls, night clubs, restaurants, cafeterias, taverns, and bars. Water Closet (males): 1 per up to 200; 2 for 201 to 400; 1 per additional 200 afterwards. Water Closet (females): 1 per up to 100; 2 for 101 to 200; 1 per additional 200 afterwards. Urinals (males): 1 for 50 to 200; 1 per additional 150 afterwards.",
+    "url": "https://apps.legislature.ky.gov/law/kar/titles/815/020/191/"
+   },
+   "school": {
+    "row_label": "E: School buildings (not including higher-education facilities",
+    "wc_male": "1 for up to 25; 2 for 26 to 100; 1 for each 100 afterwards",
+    "wc_female": "2 for up to 25; 3 for 26 to 50; 6 for 51 to 100; 8 101 to 200; 10 for 201 to 300; 12 for 301 to 400; 14 for 401 to 500; 1 additional for each 40 afterwards",
+    "urinals": "1 for 1 to 25; 2 for 26 to 50; 4 for 51 to 100; 6 for 101 to 200; 8 for 201 to 300; 10 for 301 to 400; 12 for 401 to 500; 1 for each additional 50 afterwards",
+    "quote": "E School buildings (not including higher-education facilities. Water Closet (males): 1 for up to 25; 2 for 26 to 100; 1 for each 100 afterwards. Water Closet (females): 2 for up to 25; 3 for 26 to 50; 6 for 51 to 100; 8 101 to 200; 10 for 201 to 300; 12 for 301 to 400; 14 for 401 to 500; 1 additional for each 40 afterwards. Urinals (males): 1 for 1 to 25; 2 for 26 to 50; 4 for 51 to 100; 6 for 101 to 200; 8 for 201 to 300; 10 for 301 to 400; 12 for 401 to 500; 1 for each additional 50 afterwards.",
+    "url": "https://apps.legislature.ky.gov/law/kar/titles/815/020/191/"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Occupants are presumed half male, half female unless the plan documents say otherwise. Table note a: each ratio is per number of male or female occupants.",
+    "quote": "In a building accommodating males and females, it shall be presumed that the occupants will be equally divided between males and females, unless otherwise denoted on the plan application documents. ... Notes: a. The ratio equals the number of fixtures per the number of male occupants or female occupants.",
+    "url": "https://apps.legislature.ky.gov/law/kar/titles/815/020/191/"
+   },
+   "rounding": {
+    "text": "No general rounding rule. The chart is written in bands ('2 for 26 to 100'), so no rounding is needed inside a band. For the open-ended steps ('1 for each additional 40 afterwards') the regulation does not say whether a part of the increment adds a fixture; 'or fraction thereof' appears only in the park, camp, laundry and shower provisions, not in the chart.",
+    "quote": "1 for each additional 40 afterwards",
+    "url": "https://apps.legislature.ky.gov/law/kar/titles/815/020/191/"
+   },
+   "urinal_substitution": {
+    "text": "The chart has its own urinal column: in restaurants and schools the listed urinals are required in addition to the men's water closets; for offices urinals are 'Optional'. Separately, urinals may replace up to one third of the required men's water closets.",
+    "quote": "(10) Urinal Substitution. A urinal may be substituted for a water closet for males if the substituted urinals do not exceed one third (1/3) of the required number of water closets for males.",
+    "url": "https://apps.legislature.ky.gov/law/kar/titles/815/020/191/"
+   },
+   "small_occupancy_exception": {
+    "text": "A restaurant with 1 to 15 occupants may have one unisex room (one toilet, one lavatory). Employee facilities: separate facilities for each sex once more than five persons are employed. Offices (note c) do not need separate male and female water closets under the chart. Listed historic buildings with 100 occupants or fewer may use unisex facilities. A tenant space of 3,000 sq ft or less needs no employee facilities if central ones are within 500 ft. Public facilities are required once a building has 5,000 sq ft or more.",
+    "quote": "(5) A restaurant with an occupancy of one (1) to fifteen (15) persons shall: (a) Comply with the requirements for Group A-2 buildings; or (b) Provide at least one (1) unisex facility consisting of one (1) water closet and one (1) lavatory. (6) Employee Facilities. ... (b) If more than five (5) persons are employed, separate facilities for each sex shall be provided. ... Notes: c. Separate male and female water closets or male and female lavatories are not required in these occupancy types.",
+    "url": "https://apps.legislature.ky.gov/law/kar/titles/815/020/191/"
+   },
+   "occupant_load": {
+    "text": "Occupant load comes from the Kentucky Building Code, Table 1004.1.2: business areas 100 gross sq ft per person; assembly without fixed seats, unconcentrated (tables and chairs) 15 net; classroom area 20 net.",
+    "quote": "(2) The occupancy load factor used to determine the total number of plumbing fixtures required in a building shall be the load denoted in the Kentucky Building Code [815 KAR 20:191]. TABLE 1004.1.2: Unconcentrated (tables and chairs) 15 net; Business areas 100 gross; Educational, Classroom area 20 net [2018 Kentucky Building Code, 4th Ed.]",
+    "url": "https://dhbc.ky.gov/Documents/2018%20Kentucky%20Building%20Code%204th%20Ed.pdf"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": null,
+    "wc_male_total": null,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "50 occupants falls in '3 for 36 to 55': 3 water closets in total. Urinals optional. The office row is one figure for the building (note c: separate male and female water closets not required in the table), read here against total occupants; the split between women's and men's rooms is not stated, though Section 3(6)(b) requires separate facilities for each sex where more than five persons are employed. If the Division of Plumbing applies the row to each sex instead, the figures would be: 25 per sex = 2 each.",
+    "wc_total": 3
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": null,
+    "wc_male_total": null,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "100 occupants falls in '5 for 81 to 110': 5 water closets in total. Urinals optional. The office row is one figure for the building (note c: separate male and female water closets not required in the table), read here against total occupants; the split between women's and men's rooms is not stated, though Section 3(6)(b) requires separate facilities for each sex where more than five persons are employed. If the Division of Plumbing applies the row to each sex instead, the figures would be: 50 per sex = 3 each.",
+    "wc_total": 5
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": null,
+    "wc_male_total": null,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "6 for the first 150, then '1 for each additional 40 afterwards': 50 more people is one full 40 plus 10. 7 if only full 40s count, 8 if a part of 40 counts; the regulation does not say. Urinals optional. The office row is one figure for the building (note c: separate male and female water closets not required in the table), read here against total occupants; the split between women's and men's rooms is not stated, though Section 3(6)(b) requires separate facilities for each sex where more than five persons are employed. If the Division of Plumbing applies the row to each sex instead, the figures would be: 100 per sex = 5 each.",
+    "wc_total": "7 or 8"
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": null,
+    "wc_male_total": null,
+    "urinals_allowed": null,
+    "urinals_required": 0,
+    "how": "6 for the first 150, then 250 more people / 40 = 6.25: 12 if only full 40s count, 13 if a part of 40 counts; the regulation does not say. Urinals optional. The office row is one figure for the building (note c: separate male and female water closets not required in the table), read here against total occupants; the split between women's and men's rooms is not stated, though Section 3(6)(b) requires separate facilities for each sex where more than five persons are employed. If the Division of Plumbing applies the row to each sex instead, the figures would be: 200 per sex = 6 + 1 or 2 = 7 or 8 each.",
+    "wc_total": "12 or 13"
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 women: '1 per up to 100' = 1. 25 men: '1 per up to 200' = 1 water closet; urinal column starts at 50 males ('1 for 50 to 200'), so none required. Substitution: one third of 1 is less than 1, so none."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "50 women: 1. 50 men: 1 water closet plus 1 urinal ('1 for 50 to 200'). The urinal is in addition to the water closet."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "100 women: '1 per up to 100' = 1. 100 men: 1 water closet plus 1 urinal ('1 for 50 to 200')."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "200 women: '2 for 101 to 200' = 2. 200 men: '1 per up to 200' = 1 water closet plus 1 urinal ('1 for 50 to 200')."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "25 girls: '2 for up to 25' = 2. 25 boys: '1 for up to 25' = 1 water closet plus '1 for 1 to 25' = 1 urinal."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 3,
+    "wc_male_total": 2,
+    "urinals_allowed": 0,
+    "urinals_required": 2,
+    "how": "50 girls: '3 for 26 to 50' = 3. 50 boys: '2 for 26 to 100' = 2 water closets plus '2 for 26 to 50' = 2 urinals. Substitution: one third of 2 is less than 1, so none."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 6,
+    "wc_male_total": 2,
+    "urinals_allowed": 0,
+    "urinals_required": 4,
+    "how": "100 girls: '6 for 51 to 100' = 6. 100 boys: '2 for 26 to 100' = 2 water closets plus '4 for 51 to 100' = 4 urinals."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 8,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 6,
+    "how": "200 girls: '8 101 to 200' = 8. 200 boys: 2 for the first 100 plus '1 for each 100 afterwards' = 3 water closets, plus '6 for 101 to 200' = 6 urinals. Substitution: one third of 3 = 1 water closet may be swapped for a further urinal (2 stalls and 7 urinals)."
+   }
+  ],
+  "confidence": "medium",
+  "confidence_note": "The regulation and the building code were read on official sites (high for restaurant and school rows). Medium overall because the office row is a single merged cell and the regulation does not say whether it counts total occupants or each sex, nor how 'each additional 40' rounds."
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "2015 International Building Code Section 803.9 (with 803.1.2 and the Chapter 2 definition of interior wall and ceiling finish), in force in Kentucky unamended: the 2018 Kentucky Building Code has no Chapter 8 amendments",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish it shall comply with Section 803.1.2. | 803.1.2 Room Corner Test for Interior Wall or Ceiling Finish Materials. Interior wall or ceiling finish materials shall be permitted to be tested in accordance with NFPA 286. Interior wall or ceiling finish materials tested in accordance with NFPA 286 shall comply with Section 803.1.2.1. | Interior Wall and Ceiling Finish: The exposed interior surfaces of buildings, including but not limited to: fixed or movable walls and partitions; toilet room privacy partitions; columns; ceilings ...",
+  "url": "https://up.codes/viewer/kentucky/ibc-2015/chapter/8/interior-finishes",
+  "confidence": "medium",
+  "note": "The official Kentucky amendment document (https://dhbc.ky.gov/Documents/2018%20Kentucky%20Building%20Code%204th%20Ed.pdf) was read and contains no Chapter 8 (it runs Chapter 7 to Chapter 9), and 815 KAR 7:120 Section 2 makes the 2015 IBC the state code except where the Kentucky amendments conflict. The IBC text itself was read on UpCodes' Kentucky Building Code 2018 copy (secondary), hence medium."
+ },
+ "access": {
+  "state_standard": "ICC A117.1-2009, referenced by Chapter 11 of the 2018 Kentucky Building Code (2015 IBC Chapter 11 with Kentucky amendments). KRS 198B.260 requires the accessibility rules to be part of the Kentucky Building Code.",
+  "differences": [
+   {
+    "point": "Vertical grab bar",
+    "state": "A117.1-2009 604.5.1: besides the 42 inch side-wall bar, 'a vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall.' It applies in wheelchair stalls (604.9.6) and on both sides of ambulatory stalls (604.10.4).",
+    "federal": "2010 ADA Standards 604.5.1: 'The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall.' No vertical bar.",
+    "state_url": "https://up.codes/viewer/kentucky/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities",
+    "quote": "In addition, a vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor"
+   },
+   {
+    "point": "Number of accessible stalls in large rooms",
+    "state": "IBC 2015 1109.2.2 as adopted: 'at least 5 percent of the total number of compartments shall be wheelchair accessible. Where the combined total water closet compartments and urinals provided in a toilet room or bathing room is six or more, at least 5 percent of the total number of compartments shall be ambulatory accessible, provided in addition to the wheelchair-accessible compartment.'",
+    "federal": "2010 ADA Standards 213.3.1: 'at least one toilet compartment shall comply with 604.8.1. In addition ... at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures.' The two match until a single room has more than 20 compartments.",
+    "state_url": "https://up.codes/viewer/kentucky/ibc-2015/chapter/11/accessibility",
+    "quote": "at least 5 percent of the total number of compartments shall be wheelchair accessible"
+   },
+   {
+    "point": "Family or assisted-use toilet room",
+    "state": "IBC 2015 1109.2.1 as adopted: 'In assembly and mercantile occupancies, an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required.' The room has one water closet and one lavatory (a urinal may be added) and a door securable from within.",
+    "federal": "The 2010 ADA Standards do not require a family or unisex toilet room in new construction; 213.2.1 only sets what a unisex room contains where one is provided.",
+    "state_url": "https://up.codes/viewer/kentucky/ibc-2015/chapter/11/accessibility",
+    "quote": "In assembly and mercantile occupancies, an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required."
+   },
+   {
+    "point": "Ambulatory stall width",
+    "state": "A117.1-2009 604.10.2: 'The minimum area of an ambulatory accessible compartment shall be 60 inches (1525 mm) minimum in depth and 36 inches (915 mm) in width.'",
+    "federal": "2010 ADA Standards 604.8.2.1: 'a depth of 60 inches (1525 mm) minimum and a width of 35 inches (890 mm) minimum and 37 inches (940 mm) maximum.' A 36 inch stall meets both.",
+    "state_url": "https://up.codes/viewer/kentucky/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities",
+    "quote": "60 inches (1525 mm) minimum in depth and 36 inches (915 mm) in width"
+   }
+  ],
+  "same": "Wheelchair stall size (60 in wide; 56 in deep wall-hung, 59 in floor-mounted; children's 59 in), toe clearance (9 in high, 6 in deep, with the same exceptions for deeper or wider stalls), self-closing door with pulls on both sides, and the 42 inch latch-side approach read the same in A117.1-2009 604.9 and the 2010 ADA Standards 604.8.",
+  "process": "No separate accessibility registration or state accessibility review. Accessibility is checked in ordinary building plan review: KRS 198B.260(3) says no building permit is valid unless the plans comply with the accessibility requirements in the Kentucky Building Code. Under Kentucky Building Code Sections 104.15 and 104.16 the local building department reviews smaller buildings (for example business, assembly and mercantile buildings holding up to 100 people), and the state Department of Housing, Buildings and Construction reviews larger ones, all educational and institutional buildings and state-owned property. Kentucky exempts church buildings from its accessibility chapter (KBC 1103.2.15).",
+  "confidence": "medium",
+  "note": "Kentucky's amendments and KRS 198B.260 read on official sites; A117.1-2009 and IBC 2015 Chapter 11 read on UpCodes' Kentucky copies (secondary)."
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "No Kentucky statute or code section requires single-user restrooms to be open to all genders. Kentucky deleted IBC Chapter 29 (so no IBC single-user provisions apply) and its plumbing regulation only requires that toilet rooms be marked. A single-occupant room with a lockable door needs no toilet compartment.",
+   "quote": "(6) Toilet rooms for males, females, and unisex shall be clearly marked. [815 KAR 20:191 Section 1] | Exceptions: Water closet compartments shall not be required in a single-occupant toilet room with a lockable door. [IBC 2015 1210.3.1]",
+   "url": "https://apps.legislature.ky.gov/law/kar/titles/815/020/191/"
+  },
+  "all_gender_shared": {
+   "rule": "Not addressed as such. The fixture chart counts men's and women's fixtures separately and employee facilities must be separate for each sex once more than five persons are employed. Unisex facilities in place of separate ones are named only for restaurants with 1 to 15 occupants and for listed historic buildings with 100 occupants or fewer; offices are exempt from separate male and female water closets under chart note c. Wherever toilets are shared, each water closet used by the public or employees must be in its own compartment with a door, and each urinal needs partitions (12 in max above the floor to 60 in min high).",
+   "quote": "(b) If more than five (5) persons are employed, separate facilities for each sex shall be provided. | (4) Unisex Facilities in Historic Buildings. A building or structure that is listed in the National Register of Historic Places or designated as historic under Kentucky statute may provide the required number of plumbing fixtures in unisex facilities if the overall occupant load is 100 persons or less ... [815 KAR 20:191] | 1210.3.1 Water Closet Compartment. Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy. [IBC 2015]",
+   "url": "https://apps.legislature.ky.gov/law/kar/titles/815/020/191/",
+   "url_2": "https://up.codes/viewer/kentucky/ibc-2015/chapter/12/interior-environment"
+  },
+  "use_restrictions": {
+   "rule": "KRS 158.189 (effective 2023-03-29) applies to public K-12 schools and charter schools: board policies must not allow students to use restrooms, locker rooms or shower rooms reserved for students of a different biological sex; single-stall restrooms are a named accommodation. No enacted Kentucky law was found for other buildings: 2026 HB 867 (public building multi-occupancy private spaces) and 2026 SB 179 did not pass (last actions: committee referral, March and February 2026).",
+   "quote": "Those policies shall, at a minimum, not allow students to use restrooms, locker rooms, or shower rooms that are reserved for students of a different biological sex. ... (b) Acceptable accommodations may include but are not limited to access to single-stall restrooms or controlled use of faculty bathrooms, locker rooms, or shower rooms.",
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=53553"
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": false,
+  "law": "None. Kentucky's prevailing wage law (KRS 337.505 to 337.550) was repealed by 2017 Ky. Acts ch. 3, sec. 14, effective January 9, 2017. Only the federal Davis-Bacon Act applies, on federally funded work.",
+  "threshold": null,
+  "rates_url": "https://sam.gov/wage-determinations",
+  "quote": "337.505 Repealed, 2017. Catchline at repeal: Definition of \"prevailing wage\" -- Fringe benefits included. History: Repealed 2017 Ky. Acts ch. 3, sec. 14, effective January 9, 2017.",
+  "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=45490",
+  "confidence": "high",
+  "note": "KRS 337.505 and 337.510 were opened; the chapter list shows 337.520 and 337.530 also 'Repealed, 2017'. sam.gov is given as the place federal Davis-Bacon rates are published; it was not opened in this session."
+ },
+ "sales_tax": {
+  "state_rate": 0.06,
+  "local_tax": "None: 'There are no local sales and use taxes in Kentucky.' (https://revenue.ky.gov/Business/Sales-Use-Tax/Pages/default.aspx)",
+  "shipped_goods": {
+   "rule": "Taxable at 6%. A remote seller must register and collect once its Kentucky gross receipts exceed $100,000 in the previous or current calendar year (the 200-transaction test was repealed effective 2026-08-01). If the seller does not collect, the buyer owes 6% use tax to the Department of Revenue.",
+   "quote": "Kentucky Sales and Use Tax is imposed at the rate of 6 percent of gross receipts or purchase price. There are no local sales and use taxes in Kentucky. | Effective August 1, 2026, the Legislature repealed the \"200 or more transactions\" provision. After this date, only remote retailers that surpass the \"$100,000 in gross receipts\" threshold have economic nexus in Kentucky | When a web-based retailer or any out-of-state retailer does not collect the 6 percent Kentucky sales and use tax, the consumer is responsible for reporting and paying use tax on those untaxed purchases, in accordance with KRS 139.330.",
+   "url": "https://revenue.ky.gov/Business/Sales-Use-Tax/Pages/default.aspx",
+   "url_2": "https://taxanswers.ky.gov/Sales-and-Excise-Taxes/Pages/Remote-Retailers-Marketplace-Providers-FAQs.aspx",
+   "url_3": "https://revenue.ky.gov/Individual/Consumer-Use-Tax/Pages/default.aspx"
+  },
+  "freight_taxed": true,
+  "freight": {
+   "quote": "\"Gross receipts\" and \"sales price\" mean the total amount or consideration ... without any deduction for any of the following: ... 4. Delivery charges, which are defined as charges by the retailer for the preparation and delivery to a location designated by the purchaser including transportation, shipping, postage, handling, crating, and packing; [KRS 139.010(18)(a)]",
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58185"
+  },
+  "install_labor": {
+   "rule": "A contractor's labor to improve or repair real property is not a taxable service, whether or not billed separately. Different case: when a retailer sells tangible personal property and charges to install it, the installation charge is part of the taxable sales price (KRS 139.010(18)(a)6).",
+   "quote": "Does a plumbing or HVAC contractor need to charge sales tax for services? No, contractors are making improvements or repairs to real property, and improvements or repairs to real property are not services that are subject to sales tax. However, contractors will still pay sales and use tax on their purchases of tangible personal property (i.e., materials) to complete their construction contracts. ... Nothing in the new law changes the current tax treatment of construction contractor services or labor. | 6. The amount charged for labor or services rendered in installing or applying the tangible personal property, digital property, or service sold. [KRS 139.010(18)(a), items not deductible from sales price]",
+   "url": "https://taxanswers.ky.gov/Sales-and-Excise-Taxes/Pages/Labor-Charges-for-Installation-FAQs.aspx",
+   "url_2": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58185"
+  },
+  "furnish_and_install": {
+   "rule": "A contractor is the consumer of the materials and fixtures it installs: it pays sales or use tax when it buys them (to the supplier, or directly to the state if the out-of-state supplier does not collect) and does not bill sales tax to the customer on the construction contract. A construction contract includes 'replacing, furnishing, or installing materials or fixtures permanently to real property', lump sum or time and materials.",
+   "quote": "All sales to contractors, subcontractors, builders, or owners of building materials, fixtures, and supplies which are to be incorporated or fabricated into any structure or improvement to real estate by the process of erecting, remodeling, replacing, or repairing the structure or improvement are subject to the sales or use tax at the time of sale to the contractor, subcontractor, builder, or owner. ... The contractor shall not bill sales tax as a separate charge to the customer on the cost of the construction contract. [103 KAR 26:070 Sections 2 and 8]",
+   "url": "https://apps.legislature.ky.gov/law/kar/titles/103/026/070/"
+  },
+  "agency": "Kentucky Department of Revenue",
+  "confidence": "high",
+  "note": "High for rate, freight, remote sellers and the contractor rule (statute, regulation and agency pages read). No Kentucky source read names toilet partitions as materials or fixtures that become part of the building: see to_confirm."
+ },
+ "page": {
+  "stalls_intro": "Kentucky counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. Half are counted as men and half as women unless the plans show otherwise. Every toilet needs a stall. In restaurants and schools, Kentucky's rules set a number of urinals for the men's room on top of the men's toilets, and each urinal needs a privacy screen. For offices the rules give one total for the building, urinals are optional, and a workplace with more than five employees needs separate facilities for each sex.",
+  "stalls_rows": {
+   "50": {
+    "office": "3 total",
+    "restaurant": "1/1",
+    "school": "2/1+1"
+   },
+   "100": {
+    "office": "5 total",
+    "restaurant": "1/1+1",
+    "school": "3/2+2"
+   },
+   "200": {
+    "office": "7 or 8 total",
+    "restaurant": "1/1+1",
+    "school": "6/2+4"
+   },
+   "400": {
+    "office": "12 or 13 total",
+    "restaurant": "2/1+1",
+    "school": "8/3+6"
+   }
+  },
+  "stalls_after": "Kentucky's office figures are totals for the building. Its rules don't say how they divide between the women's and men's rooms, or whether part of the next 40 people adds a toilet, so confirm both with the Kentucky Division of Plumbing. Where the men's room needs three or more toilets, up to a third may be swapped for extra urinals. These are minimums, and at least one stall in each room must be wheelchair accessible.",
+  "capacity": "To find your building's capacity, Kentucky's building rules count an office at one person per 100 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** Kentucky's building rules require solid plastic (HDPE) partitions to pass a room-corner fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Kentucky's building rules set the sizes. Kentucky has no separate access registration: the plans are checked for access when the building permit is reviewed, by the local building department or, for larger buildings and all schools, by the state.",
+  "state_extra_bullet": "- **Kentucky extras:** Kentucky's rules add an 18 inch vertical grab bar on the side wall of each accessible stall, which the federal rules don't ask for. A restroom with six or more toilets and urinals also needs a narrower stall with grab bars on both sides for people who walk with aids, as under federal law. Restaurants, other assembly buildings and stores that need six or more toilets in total must add a family or assisted-use restroom.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** Kentucky requires men's, women's and unisex toilet rooms to be clearly marked, and has no rule that a one-person restroom be open to everyone. Its rules count toilets separately for men and women, and name unisex rooms in place of separate ones only for restaurants holding up to 15 people and listed historic buildings holding 100 or fewer. They don't say whether a shared all-gender room is allowed elsewhere, so ask the Kentucky Division of Plumbing. In public schools, state law says students may not use restrooms reserved for the other biological sex, and names single-stall restrooms as an accommodation.",
+  "public_jobs": "Kentucky repealed its wage law for public construction in 2017, so a set wage applies only on federally funded jobs, under the federal Davis-Bacon Act.",
+  "tax_install_bullet": "- **Tax on installation:** in Kentucky, a contractor's labor to improve or repair a building is not taxed. A contractor who supplies and installs the partitions pays the 6% tax on the materials and does not add sales tax to the contract.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxed at Kentucky's 6%, freight included. Kentucky has no city or county sales tax. If the seller doesn't collect the tax, the buyer owes it to the state.",
+  "tax_confirm": "your accountant or the Kentucky Department of Revenue",
+  "sources": [
+   "- Kentucky building, plumbing and accessibility codes in force: [Kentucky Department of Housing, Buildings and Construction, Codes Currently Adopted by Kentucky](https://dhbc.ky.gov/Documents/Find%20Currently%20Enforced%20Code.pdf), [815 KAR 7:120, Kentucky Building Code](https://apps.legislature.ky.gov/law/kar/titles/815/007/120/) and the [2018 Kentucky Building Code, Fourth Edition, February 2024](https://dhbc.ky.gov/Documents/2018%20Kentucky%20Building%20Code%204th%20Ed.pdf), which is statewide and may not be replaced by a local code. Checked 2026-11-24.",
+   "- Toilet and urinal counts, the half-men half-women split, urinal substitution and unisex exceptions: [815 KAR 20:191, Minimum fixture requirements](https://apps.legislature.ky.gov/law/kar/titles/815/020/191/) (Kentucky State Plumbing Code, effective July 28, 2020), which Section 2902.1 of the [2018 Kentucky Building Code](https://dhbc.ky.gov/Documents/2018%20Kentucky%20Building%20Code%204th%20Ed.pdf) points to. Checked 2026-11-24.",
+   "- Floor area per person: [2018 Kentucky Building Code, Fourth Edition](https://dhbc.ky.gov/Documents/2018%20Kentucky%20Building%20Code%204th%20Ed.pdf), Table 1004.1.2. Checked 2026-11-24.",
+   "- A stall for every toilet and screens at urinals: 2015 International Building Code Sections 1210.3.1 and 1210.3.2, read on a secondary copy, [UpCodes, Kentucky Building Code 2018, Chapter 12](https://up.codes/viewer/kentucky/ibc-2015/chapter/12/interior-environment). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: 2015 International Building Code Sections 803.9 and 803.1.2 (NFPA 286) and the Chapter 2 definition of interior wall and ceiling finish, which Kentucky adopts without change, read on a secondary copy, [UpCodes, Kentucky Building Code 2018, Chapter 8](https://up.codes/viewer/kentucky/ibc-2015/chapter/8/interior-finishes) and [Chapter 2](https://up.codes/viewer/kentucky/ibc-2015/chapter/2/definitions). Checked 2026-11-24.",
+   "- Accessible stalls, Kentucky compared with federal: ICC A117.1-2009 Sections 604.5, 604.9 and 604.10 and 2015 International Building Code Sections 1109.2.1 and 1109.2.2, read on secondary copies ([UpCodes, Kentucky Accessibility Code 2009, Chapter 6](https://up.codes/viewer/kentucky/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities); [Kentucky Building Code 2018, Chapter 11](https://up.codes/viewer/kentucky/ibc-2015/chapter/11/accessibility)), against the [2010 ADA Standards](https://www.access-board.gov/ada/), sections 213 and 604. Checked 2026-11-24.",
+   "- Access checked at permit and who reviews plans: [KRS 198B.260](https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=46908) and Sections 104.15 and 104.16 of the [2018 Kentucky Building Code](https://dhbc.ky.gov/Documents/2018%20Kentucky%20Building%20Code%204th%20Ed.pdf). Checked 2026-11-24.",
+   "- School restrooms: [KRS 158.189](https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=53553). Checked 2026-11-24.",
+   "- Wages on public jobs: [KRS 337.505, repealed effective January 9, 2017](https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=45490). Checked 2026-11-24.",
+   "- Sales tax: Kentucky Department of Revenue, [Sales & Use Tax](https://revenue.ky.gov/Business/Sales-Use-Tax/Pages/default.aspx), [Consumer Use Tax](https://revenue.ky.gov/Individual/Consumer-Use-Tax/Pages/default.aspx), [Remote Retailers and Marketplace Providers FAQs](https://taxanswers.ky.gov/Sales-and-Excise-Taxes/Pages/Remote-Retailers-Marketplace-Providers-FAQs.aspx) and [Labor Charges for Installation FAQs](https://taxanswers.ky.gov/Sales-and-Excise-Taxes/Pages/Labor-Charges-for-Installation-FAQs.aspx); [KRS 139.010](https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58185) (delivery and installation charges in the sales price), [KRS 139.200](https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58186), [KRS 139.330](https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=47349) and [KRS 139.340](https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58190); [103 KAR 26:070, Contractors](https://apps.legislature.ky.gov/law/kar/titles/103/026/070/). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; ICC A117.1-2009 as referenced by the 2018 Kentucky Building Code, Fourth Edition (2015 International Building Code with Kentucky amendments, 815 KAR 7:120); Kentucky State Plumbing Code (815 KAR Chapter 20; fixture counts in 815 KAR 20:191); NFPA 286 for HDPE."
+ },
+ "sources_read": [
+  {
+   "url": "https://apps.legislature.ky.gov/law/kar/titles/815/020/191/",
+   "official": true
+  },
+  {
+   "url": "https://dhbc.ky.gov/Documents/2018%20Kentucky%20Building%20Code%204th%20Ed.pdf",
+   "official": true
+  },
+  {
+   "url": "https://apps.legislature.ky.gov/law/kar/titles/815/007/120/",
+   "official": true
+  },
+  {
+   "url": "https://dhbc.ky.gov/Documents/Find%20Currently%20Enforced%20Code.pdf",
+   "official": true
+  },
+  {
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=53553",
+   "official": true
+  },
+  {
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=45490",
+   "official": true
+  },
+  {
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=45491",
+   "official": true
+  },
+  {
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=46908",
+   "official": true
+  },
+  {
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58185",
+   "official": true
+  },
+  {
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58186",
+   "official": true
+  },
+  {
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58189",
+   "official": true
+  },
+  {
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=47349",
+   "official": true
+  },
+  {
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58190",
+   "official": true
+  },
+  {
+   "url": "https://apps.legislature.ky.gov/law/kar/titles/103/026/070/",
+   "official": true
+  },
+  {
+   "url": "https://revenue.ky.gov/Business/Sales-Use-Tax/Pages/default.aspx",
+   "official": true
+  },
+  {
+   "url": "https://revenue.ky.gov/Individual/Consumer-Use-Tax/Pages/default.aspx",
+   "official": true
+  },
+  {
+   "url": "https://taxanswers.ky.gov/Sales-and-Excise-Taxes/Pages/Labor-Charges-for-Installation-FAQs.aspx",
+   "official": true
+  },
+  {
+   "url": "https://taxanswers.ky.gov/Sales-and-Excise-Taxes/Pages/Remote-Retailers-Marketplace-Providers-FAQs.aspx",
+   "official": true
+  },
+  {
+   "url": "https://revenue.ky.gov/Business/Sales-Use-Tax/PublishingImages/Pages/default/Sales%20of%20Taxable%20Services%20to%20Builders%20and%20Contractors%20-%205-30-19.pdf",
+   "official": true
+  },
+  {
+   "url": "https://apps.legislature.ky.gov/record/26RS/HB867.html",
+   "official": true
+  },
+  {
+   "url": "https://apps.legislature.ky.gov/record/26RS/SB179.html",
+   "official": true
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/kentucky/ibc-2015/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/kentucky/ibc-2015/chapter/2/definitions",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/kentucky/ibc-2015/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/kentucky/ibc-2015/chapter/12/interior-environment",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/kentucky/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities",
+   "official": false
+  }
+ ],
+ "to_confirm": [
+  "Office row of 815 KAR 20:191: whether the single merged figure counts total occupants (used here) or each sex, how it divides between women's and men's rooms, and whether a part of 'each additional 40' adds a water closet. Ask the Kentucky Division of Plumbing (Department of Housing, Buildings and Construction, 502-573-0365). On the per-sex reading the office totals would be 4, 6, 10 and 14 to 16 instead of 3, 5, 7 or 8 and 12 or 13.",
+  "The 'stalls_rows' office cells use 'N total' because Kentucky gives no women's/men's split; this is outside the W/M, W/M+U and W/~T formats in the brief, so the table builder must accept it or the cells need a decision.",
+  "815 KAR 20:191 shows '7-Year Expiration: 7/28/2027': recheck the regulation before then.",
+  "IBC 2015 Chapters 2, 8, 11 and 12 and ICC A117.1-2009 were read on UpCodes, not on an official copy: browser check on codes.iccsafe.org before launch. Kentucky's own amendment document was read officially and has no Chapter 8 changes.",
+  "A117.1-2009 Table 604.9.3.1 (where the stall door opening may sit) differs in form from ADA 604.8.1.2 ('4 inches maximum'); only part of the table was read, so it is not listed as a difference.",
+  "Whether Kentucky plan review allows a shared all-gender multi-stall room outside the two named unisex cases: ask the Division of Plumbing.",
+  "Sales tax: no Kentucky source read says outright that toilet partitions become part of the building (materials or fixtures under 103 KAR 26:070) rather than staying tangible personal property; if treated as tangible personal property sold and installed by a retailer, the installation charge is taxable under KRS 139.010(18)(a)6. Ask the Department of Revenue, Division of Sales and Use Tax (502-564-5170). How Next Partitions itself charges Kentucky tax is a question for Abe's accountant.",
+  "The Department of Revenue's Sales & Use Tax landing page still describes the remote-seller test as '200 or more sales ... or $100,000'; its FAQ and KRS 139.340 (effective 2026-08-01) show $100,000 only.",
+  "Kentucky Building Code Section 105.2 exempts from permits 'Non-fixed and movable fixtures, cases, racks, counters, and partitions not over 5 feet 9 inches' and 'similar finish work'; it does not name toilet partitions. Whether a partition replacement needs a permit is for the city agents and a phone call to each building department.",
+  "Whether a newer Kentucky Building Code edition is in rulemaking (the Fourth Edition, February 2024, took effect 2024-12-03)."
+ ]
+}
