@@ -47,10 +47,25 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Texas's own access rules set the sizes. On projects of $50,000 or more, the state reviews the plans; smaller projects must still follow the rules.
 - **Fire safety:** Houston's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.
-- **How many stalls:** Houston sets the number of toilets and urinals by how many people use the building, and that decides how many stalls you need.
+- **How many stalls:** Houston sets the number of toilets and urinals by how many people use the building. The table below shows what that means.
 - **Permits:** Houston requires a permit for remodels and alterations unless the work is exempt. Its exempt list covers "similar finish work" without naming toilet partitions, so ask the Houston Permitting Center whether your replacement needs one. You don't need a permit to buy partitions.
 
 Last checked November 23, 2026. Rules change, so confirm your project with the Houston Permitting Center or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
+
+## How many stalls a Houston restroom needs
+
+Houston counts toilets by the number of people the building holds, half men and half women. Every toilet needs a stall. One Houston rule is unusual: where the men's room needs more than one toilet, half of them must be urinals, so you buy fewer men's stalls and add urinal screens.
+
+| People in the building | Office | Restaurant | School |
+|---|---|---|---|
+| 50 | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall |
+| 100 | 2 women's stalls<br>1 men's stall + 1 urinal | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall |
+| 200 | 3 women's stalls<br>3 for men: stalls and urinals | 2 women's stalls<br>1 men's stall + 1 urinal | 2 women's stalls<br>1 men's stall + 1 urinal |
+| 400 | 5 women's stalls<br>5 for men: stalls and urinals | 3 women's stalls<br>3 for men: stalls and urinals | 4 women's stalls<br>2 men's stalls + 2 urinals |
+
+Where the men's side needs 3 or 5, the city doesn't say how "half" rounds, so confirm the split of stalls and urinals with Houston plan review. These are minimums for the whole building, and at least one stall in each room must be wheelchair accessible.
+
+Not sure how many people your building holds? The building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or the Houston Permitting Center sets the final number.
 
 ## Installation in Houston
 
@@ -107,6 +122,7 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Houston building and plumbing codes: [City of Houston, List of Adopted Codes (form CE-1199, revised September 2026)](https://www.houstonpermittingcenter.org/media/2001/download) and [Code Development](https://www.houstonpermittingcenter.org/building-code-enforcement/code-development). Checked 2026-11-23.
 - Texas Accessibility Standards and the $50,000 registration threshold: [TDLR Architectural Barriers FAQ](https://www.tdlr.texas.gov/ab/abfaq.htm) and [TAS](https://www.tdlr.texas.gov/ab/abtas.htm). Checked 2026-11-23.
 - Houston permits and exempt work: [Houston Permitting Center, plan review](https://www.houstonpermittingcenter.org/building-code-enforcement/plan-review). Checked 2026-11-23.
+- Toilet counts in Houston: [Houston amendments to the 2021 Uniform Plumbing Code](https://www.houstonpermittingcenter.org/media/9071/download) (Section 422.1 points to the building code's table) and [Houston amendments to the 2021 International Building Code](https://www.houstonpermittingcenter.org/media/9031/download), Table 2902.1 and Section 2902.8 ("when more than one water closet is required, 50% of the water closets shall be urinals"). The 50/50 split, rounding up and floor area per person (Section 2902.1.1 and Table 1004.5) were read on a secondary copy of the Houston Building Code. Checked 2026-11-24.
 - The rules by their official names: 2010 ADA Standards for Accessible Design; 2012 Texas Accessibility Standards (TDLR registration and review at $50,000 or more); 2021 International Building Code with Houston Amendments, in force since January 1, 2024; 2021 Uniform Plumbing Code with Houston Amendments; NFPA 286 for HDPE.
 - Houston contractor rule: [Houston Permitting Center, Commercial Permitting 101](https://www.houstonpermittingcenter.org/sites/g/files/nwywnm431/files/2025-10/Commercial%20Permitting%20101%20_BuildExpo%202025_06_04_2025_0.pdf) ("The City does not license or register general contractors"). Last checked 2026-11-03.
 - Texas has no statewide general contractor license: [Office of the Governor, Texas Business Licenses & Permits Guide](https://gov.texas.gov/uploads/files/business/Texas_Licenses_Permits_Guide.pdf). Last checked 2026-11-19.
