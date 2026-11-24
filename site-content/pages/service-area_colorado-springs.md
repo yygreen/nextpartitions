@@ -96,7 +96,7 @@ How tax applies depends on your contract, so confirm with your accountant, the C
 - **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
 - **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
-- **Gyms, training centers and sports venues:** HDPE or phenolic in locker rooms and shower areas, where water and heavy use are hard on stalls.
+- **Sports venues and training centers:** HDPE or phenolic in locker rooms and shower areas, where water and heavy use are hard on stalls.
 
 ## Nearby cities we deliver to
 

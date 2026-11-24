@@ -1,0 +1,247 @@
+{
+ "slug": "savannah",
+ "city": "Savannah",
+ "state": "GA",
+ "checked": "2026-11-24",
+ "access_note": "savannahga.gov and agenda.savannahga.gov could not be opened from this environment (connection refused by the proxy for curl, DNS failure for the fetch tool; web.archive.org also blocked). City facts come from the City of Savannah Code of Ordinances on the city's code publisher (online.encodeplus.com/regs/savannah-ga, read in full for Part 8, Chapter 1, Building Regulations) and from Georgia state pages. Text of city web pages known only from web search is marked 'search result only' and is not used in page text.",
+ "codes": {
+  "building": {
+   "name": "Georgia State Minimum Standard Building Code (International Building Code with Georgia State Amendments), adopted by reference in Savannah Code of Ordinances Sec. 8-1001",
+   "edition": "2024 Edition, Georgia amendments effective January 1, 2026 (the city code adopts 'the latest editions as adopted and amended by the Georgia Department of Community Affairs')",
+   "local_amendments": false,
+   "local_amendments_note": "Sec. 8-1002 (Local code amendments) holds amendments to the International Property Maintenance Code and the International Plumbing Code only; none to the building code. The city's administrative rules (permits, enforcement) are in Secs. 8-1031 to 8-1042; Georgia deletes Chapter 1 of the model code and leaves administration to local governments.",
+   "effective": "2026-01-01",
+   "url": "https://online.encodeplus.com/regs/savannah-ga/doc-viewer.aspx#secid-2347",
+   "quote": "It is the intent of the City of Savannah that the following Codes, the latest editions as adopted and amended by the Georgia Department of Community Affairs, are hereby adopted by reference as though they were copied herein fully. It is the intent of the City of Savannah to enforce the latest edition of the following Georgia State Minimum and Permissive Standard Codes, as adopted and amended by the Georgia Department of Community Affairs: Standard Building Code (International Building Code with Georgia State Amendments. [...] Standard Plumbing Code (International Plumbing Code with Georgia State Amendments) Further amended by the adoption of Appendix C, Gray Water Recycling Systems [...]",
+   "state_quote": "The following are the current state minimum standard codes for construction as adopted by the Board of Community Affairs. Current Mandatory Codes as Adopted by DCA: International Building Code, 2024 Edition, with Georgia Amendments [...] International Plumbing Code, 2024 Edition, with Georgia Amendments",
+   "state_url": "https://dca.georgia.gov/community-assistance/construction-codes/current-state-minimum-codes-construction",
+   "admin_quote": "*Delete Chapter 1 'Scope and Administration' entirely without substitution. Chapter 1 to remain in the Code as a reference and guide for local governments to use in the development of their own Administrative Procedures. (Effective January 1, 2026)",
+   "admin_url": "https://dca.georgia.gov/document/document/ibc-2026-amendment-packet-2024-edition/download",
+   "city_page_search_result_only": {
+    "urls": [
+     "https://www.savannahga.gov/379/Permits-for-Construction",
+     "http://www.savannahga.gov/documentcenter/view/3961"
+    ],
+    "text": "As summarised by web search, not read on the page: the city's 2026 code sheet says that effective January 1, 2026 all construction within Savannah's limits must comply with the 2024 International Building Code and 2024 International Residential Code; the Permits for Construction page lists the 2024 editions of the plumbing, mechanical, fuel gas, fire and swimming pool codes and NFPA 101, the 2023 National Electrical Code, the 2015 International Energy Conservation Code and the 2010 ADA Standards, with Georgia amendments. A proposed ordinance revising Sec. 8-1001 appears on agenda.savannahga.gov (https://agenda.savannahga.gov/content/files/proposed-ordinance-section-8-1001.pdf); its date and status were not read."
+   }
+  },
+  "plumbing": {
+   "name": "Georgia State Minimum Standard Plumbing Code (International Plumbing Code with Georgia State Amendments), adopted by reference in Savannah Code of Ordinances Sec. 8-1001, with Savannah amendments in Sec. 8-1002",
+   "edition": "2024 Edition, Georgia amendments effective January 1, 2026",
+   "local_amendments": true,
+   "local_amendments_note": "Sec. 8-1001 also adopts Appendix C (gray water recycling). Sec. 8-1002 amends Sections 403.1.2 and 403.2 and adds 405.3.4.1, written against the 2018 edition (last ordinance July 14, 2022). The section has not been rewritten for the 2024 edition, in which Georgia deleted Exception 6 to 403.2 on January 1, 2026.",
+   "effective": "2026-01-01",
+   "url": "https://online.encodeplus.com/regs/savannah-ga/doc-viewer.aspx#secid-2347",
+   "quote": "Standard Plumbing Code (International Plumbing Code with Georgia State Amendments) Further amended by the adoption of Appendix C, Gray Water Recycling Systems"
+  },
+  "scheduled_change": {
+   "what": "The Georgia Board of Community Affairs adopted codes and Georgia amendments effective January 1, 2027, among them the 2024 International Building Code and 2024 International Plumbing Code with Georgia Amendments. Savannah's code adopts the latest state editions by reference, so they apply in the city from that date. DCA asks cities with local amendments on file to review them.",
+   "date": "2027-01-01",
+   "url": "https://dca.georgia.gov/announcement/2025-12-09/new-codes-jan-2027",
+   "quote": "The Georgia Department of Community Affairs (DCA) Board, upon recommendation of the State Codes Advisory Committee (SCAC), voted to adopt the following codes with an effective date of January 1, 2027: [...] 2024 International Building Code with Georgia Amendments [...] 2024 International Plumbing Code with Georgia Amendments [...] DCA recommends that all city and county governments with local amendments on file review those amendments with regard to the newly adopted 2024 State Minimum Standard Codes and associated Georgia Amendments."
+  },
+  "authority": "City of Savannah Development Services Department; its director is the building official (Sec. 8-1034)",
+  "authority_quote": "The development services director or authorized representative is designated as the building official and shall enforce the provisions of the building, electrical, gas, mechanical, plumbing, energy, swimming pool, life safety and residential codes.",
+  "authority_url": "https://online.encodeplus.com/regs/savannah-ga/doc-viewer.aspx#secid-2357",
+  "confidence": "high",
+  "confidence_note": "The adopting ordinance was read in the city code and the current state editions on DCA's page. The city's own web page listing editions was not read (search result only)."
+ },
+ "fixtures": {
+  "city_amends": true,
+  "counts_changed": false,
+  "amendment": {
+   "text": "Savannah's Sec. 8-1002 does not touch the toilet-count table, the half-and-half split, rounding or urinals. It restates the single-user rule (403.1.2) and the separate-facilities rule (403.2) with the same small-occupancy exceptions as the state (15 or fewer in total; mercantile 100 or fewer; business 25 or fewer), and adds two exceptions: single-user rooms need not be designated by sex, and a shared room for both sexes may replace separate rooms if each toilet is in a floor-to-ceiling compartment with a lockable door (new 405.3.4.1), urinals are in a visually separated area or in stalls, and the common sink area is not closed off by a door. The amendment is written against the 2018 edition. Georgia's 2026 amendments to the 2024 edition delete Exception 6 to 403.2 (the shared all-gender option) statewide, and state law requires a local amendment to be no less stringent than the state code. Whether Savannah still applies its Exception 6 was not found in anything read.",
+   "quote": "Pursuant to §OCGA 8-2-25 the following additions, deletions, or revisions to the International Plumbing Code 2018 edition, as amended by the State of Georgia and this article constitute the minimum Standard Plumbing Code for the City of Savannah, Georgia. Section 403.1.2 of the International Plumbing Code is revised to read as follows: 403.1.2 Single-user toilet and bathing room fixtures. The plumbing fixtures located in single-user toilet and bathing rooms, including family or assisted use toilet and bathing rooms that are required by Section 1109.2.1 of the International Building Code, shall contribute toward the total number of required plumbing fixtures for a building or tenant space. Single-user toilet and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified as being available for use by all persons regardless of their sex. Section 403.2 of the International Plumbing Code is amended by adding exceptions (5) & (6): 403.2 Separate facilities. Where plumbing fixtures are required, separate facilities shall be provided for each sex. Exceptions: Separate facilities shall not be required for dwelling units and sleeping units. Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. Separate facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer. Separate facilities shall not be required to be designated by sex where single-user toilet rooms are provided in accordance with Section 403.1.2. Separate facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by both sexes and privacy for water closets is provided in accordance with Section 405.3.4. Urinals shall be located in an area visually separated from the remainder of the facility or each urinal that is provided shall be located in a stall. Section 405.3.4.1 is added to the 2018 International Plumbing Code: 405.3.4.1 Privacy for Non-Separated Facilities. Where shared facilities are provided per Section 403.2 (6), each water closet utilized by the public or employees shall occupy a separate compartment with walls that extend from the floor to the ceiling and a lockable door enclosing the fixtures to ensure privacy. The common lavatory area shall not be closed off by a door to the remainder of the building. (Ord. of 1-19-2017(5); Ord. of 7-20-2017(1); Ord. of 7-18-2019(31), § 1, Ord. of 12-5-2019(48), § 2, Ord. of 02-25-2021(36), § 1, Ord. of 5-12-2022(14), § 1, Ord. of 7-14-2022(15), § 1) Effective on: 7/14/2022",
+   "url": "https://online.encodeplus.com/regs/savannah-ga/doc-viewer.aspx#secid-2348",
+   "state_quote": "*Delete 403.2 'Separate facilities' Exception 6 without substitution. (Effective January 1, 2026)",
+   "state_url": "https://dca.georgia.gov/document/document/ipc-2026-amendment-packet-2024-edition/download",
+   "stringency_quote": "The requirements in the proposed local amendment cannot be less stringent than the requirements in the state minimum standard code.",
+   "stringency_url": "https://dca.georgia.gov/community-assistance/construction-codes/enforcement-state-minimum-codes"
+  },
+  "worked_examples": [],
+  "worked_examples_note": "Not redone: the city amendment changes no ratio, split, rounding or urinal rule, so the Georgia examples (office, restaurant, school at 50/100/200/400) stand.",
+  "confidence": "high",
+  "confidence_note": "The whole of Savannah's Building Regulations chapter was read; the only plumbing amendments are those quoted. The state rows themselves rest on the Georgia research (UpCodes copy, medium)."
+ },
+ "permit": {
+  "exempt_list_quote": "When required. Any owner, authorized agent, or contractor who desires to construct, enlarge, alter, repair, move, demolish, or change the occupancy of a building or structure or to erect, install, enlarge, alter, repair, remove, convert or replace any electrical, gas, mechanical, or plumbing system, the installation of which is regulated by the minimum codes, or to cause any such work to be done shall first make application to the building official and obtain the required permit for the work. [...] Minor repairs. Ordinary minor repairs may be made without a permit, provided that such repairs shall not violate any of the provisions of the minimum codes.",
+  "url": "https://online.encodeplus.com/regs/savannah-ga/doc-viewer.aspx#secid-2361",
+  "partitions_named": false,
+  "note": "Savannah's code has no itemised list of exempt work: Sec. 8-1038 requires a permit to 'construct, enlarge, alter, repair' a building and exempts only 'ordinary minor repairs', which it does not define. Georgia deletes Chapter 1 of the model building code (with its Section 105.2 exempt list), so that list does not apply unless the city adopts it. Toilet partitions are not named anywhere in the chapter. Web search shows the city publishes lists of residential projects that do and do not need a permit (DocumentCenter 7708 and 7709), a commercial checklist (17178) and a requirement that commercial interior renovations file a Water and Sewer Approval Form; none of these was read on the page.",
+  "office": "City of Savannah Development Services Department (building official)",
+  "phone": "912-651-6530 (permit line) or 912-651-6510 (general): search result only, not read on a city page",
+  "phone_read_on_page": false,
+  "confidence": "medium"
+ },
+ "restrooms_city": {
+  "rule": "Savannah's city code (Sec. 8-1002) says a single-user toilet room must be identified as available to all persons regardless of sex, that single-user rooms need not be designated by sex, and that separate men's and women's rooms are not required where a shared room for both sexes has each toilet in a compartment with floor-to-ceiling walls and a lockable door, urinals in a visually separated area or in stalls, and a common sink area not closed off by a door. The text amends the 2018 edition; the state deleted the shared-room exception from the 2024 edition on January 1, 2026, and the city text has not been updated since July 14, 2022.",
+  "quote": "Pursuant to §OCGA 8-2-25 the following additions, deletions, or revisions to the International Plumbing Code 2018 edition, as amended by the State of Georgia and this article constitute the minimum Standard Plumbing Code for the City of Savannah, Georgia. Section 403.1.2 of the International Plumbing Code is revised to read as follows: 403.1.2 Single-user toilet and bathing room fixtures. The plumbing fixtures located in single-user toilet and bathing rooms, including family or assisted use toilet and bathing rooms that are required by Section 1109.2.1 of the International Building Code, shall contribute toward the total number of required plumbing fixtures for a building or tenant space. Single-user toilet and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified as being available for use by all persons regardless of their sex. Section 403.2 of the International Plumbing Code is amended by adding exceptions (5) & (6): 403.2 Separate facilities. Where plumbing fixtures are required, separate facilities shall be provided for each sex. Exceptions: Separate facilities shall not be required for dwelling units and sleeping units. Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. Separate facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer. Separate facilities shall not be required to be designated by sex where single-user toilet rooms are provided in accordance with Section 403.1.2. Separate facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by both sexes and privacy for water closets is provided in accordance with Section 405.3.4. Urinals shall be located in an area visually separated from the remainder of the facility or each urinal that is provided shall be located in a stall. Section 405.3.4.1 is added to the 2018 International Plumbing Code: 405.3.4.1 Privacy for Non-Separated Facilities. Where shared facilities are provided per Section 403.2 (6), each water closet utilized by the public or employees shall occupy a separate compartment with walls that extend from the floor to the ceiling and a lockable door enclosing the fixtures to ensure privacy. The common lavatory area shall not be closed off by a door to the remainder of the building. (Ord. of 1-19-2017(5); Ord. of 7-20-2017(1); Ord. of 7-18-2019(31), § 1, Ord. of 12-5-2019(48), § 2, Ord. of 02-25-2021(36), § 1, Ord. of 5-12-2022(14), § 1, Ord. of 7-14-2022(15), § 1) Effective on: 7/14/2022",
+  "url": "https://online.encodeplus.com/regs/savannah-ga/doc-viewer.aspx#secid-2348",
+  "confidence": "medium",
+  "confidence_note": "The city text was read in full (high). Whether it still has effect against the state's 2026 deletion is open: ask Development Services."
+ },
+ "sales_tax": {
+  "combined": 0.07,
+  "parts": [
+   {
+    "name": "state",
+    "rate": 0.04
+   },
+   {
+    "name": "LOST (local option sales tax, Chatham County)",
+    "rate": 0.01,
+    "effective": "1976-04-01"
+   },
+   {
+    "name": "ELOST (educational)",
+    "rate": 0.01,
+    "effective": "2025-10-01",
+    "expires": "2030-09-30"
+   },
+   {
+    "name": "SPLOST (special purpose)",
+    "rate": 0.01,
+    "effective": "2026-10-01",
+    "expires": "2032-09-30"
+   }
+  ],
+  "jurisdiction": "025 Chatham. The chart has no separate line for the City of Savannah and no city or district tax.",
+  "effective": "2026-10-01 (current SPLOST term; the same three 1% local taxes have run back to back since at least January 1, 2007, so the 7% total is unchanged; chart read is the one effective October 1, 2026)",
+  "scheduled_change": null,
+  "scheduled_change_note": "The Department's 'County Tax Rate Changes Effective January 1, 2027' bulletin has no Chatham entry. No Chatham TSPLOST appears in the historical chart.",
+  "url": "https://dor.georgia.gov/document/document/httpsdorgeorgiagovdocumentdocumentgeneral-rate-chart-effective-october-1-2026/download",
+  "quote": "GEORGIA SALES AND USE TAX RATE CHART Effective October 1, 2026. Code 000 - The state sales and use tax rate of 4% is included in all jurisdictions other than 803 Fulton (Cent. Yards) and 805 Fulton (S. Downtn). [...] 025 Chatham 7 L E S [...] L = LOST; E = Educational; S = SPLOST",
+  "other_quotes": [
+   {
+    "url": "https://dor.georgia.gov/document/document/october-2026-historical-sales-tax-charts/download",
+    "quote": "025 Chatham: ELOST 10/01/2025 09/30/2030 1 [earlier terms back to 01/01/2007]; LOST 04/01/1976 1; SPLOST 10/01/2026 09/30/2032 1 [earlier terms back to 10/01/1985]"
+   },
+   {
+    "url": "https://dor.georgia.gov/document/document/rate-changes-effective-january-1-2027/download",
+    "quote": "IMPORTANT BULLETINS. COUNTY TAX RATE CHANGES EFFECTIVE January 1, 2027 [Brooks, Catoosa, Clarke, Clayton, Crisp, Dade, Dawson, Grady, Greene, Habersham, Haralson, Henry, Lamar, Laurens, Randolph, Rockdale, Spalding, Wilkinson; no Chatham entry]"
+   }
+  ],
+  "not_done": "No address lookup was used. The rate is the chart's line for Chatham County, which covers downtown Savannah.",
+  "confidence": "high"
+ },
+ "public_wage": {
+  "county": "Chatham",
+  "basis": "Davis-Bacon",
+  "classification": "CARPENTER",
+  "basic_hourly": 19.13,
+  "fringe": 0.3,
+  "determination": "GA20260317, modification 2 (Building; Bryan, Chatham and Effingham Counties)",
+  "date": "2026-05-18",
+  "rate_id": "SUGA2017-032 04/15/2021 (survey rate)",
+  "url": "https://sam.gov/wage-determination/GA20260317/2",
+  "api_url": "https://sam.gov/api/prod/wdol/v1/wd/GA20260317/2",
+  "quote": "General Decision Number: GA20260317 05/18/2026. State: Georgia. Construction Types: Building. Counties: Georgia Counties of Bryan, Chatham and Effingham. Modification Number 1: 01/23/2026; 2: 05/18/2026. [...] SUGA2017-032 04/15/2021 [...] CARPENTER...........................................$ 19.13 0.30",
+  "city_rule": null,
+  "city_rule_note": "Not looked for. Nothing on a City of Savannah wage rule for its construction contracts turned up on the way.",
+  "note": "Applies only to federally funded or assisted building work; Georgia has no state prevailing wage law.",
+  "confidence": "high"
+ },
+ "contractor": {
+  "quote": "Contractor's responsibilities. It shall be the duty of every contractor who shall make contracts for the installation or repairs of building, structure, electrical, gas, mechanical, sprinkler or plumbing systems, for which a permit is required, to comply with state or local rules and regulations concerning licensing which the applicable governing authority may have adopted. Where the state requires a contractor to have obtained a state license before they are permitted to perform work, the contractor shall supply the local government with their license number before receiving a permit for work to be performed.",
+  "url": "https://online.encodeplus.com/regs/savannah-ga/doc-viewer.aspx#secid-2361",
+  "note": "Read 2026-11-24 in Savannah Code of Ordinances Sec. 8-1038 (the local-rules entry had this citation with code_text_read false). State licence status is 'unclear' in research/state-licensing/states.json; the $2,500 threshold is not verified and is left off the page. Web search (not read on the page) says the city's commercial permit instructions require a Georgia licensed contractor to pick up a commercial building permit."
+ },
+ "page": {
+  "meta": "Commercial bathroom partitions delivered to Savannah job sites. Price your restroom, pick a material for coastal humidity and see the rules that apply.",
+  "lead": "Commercial bathroom partitions for Savannah hotels, restaurants, schools and port warehouses, shipped by freight to your job site.",
+  "stall_bullet": "- **How many stalls:** Georgia's plumbing rules set the number of toilets by how many people use the building, and Savannah enforces them without changing the counts. The table below shows what that means.",
+  "permit_bullet": "- **Permits:** Savannah requires a permit to build, alter or repair a building, and lets ordinary minor repairs go ahead without one. The city code doesn't say which work counts as a minor repair and doesn't name toilet partitions, so ask Savannah Development Services whether your replacement needs one. You don't need a permit to buy partitions.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to everyone. Georgia's rules call for separate men's and women's rooms for the toilets a building must have, and in 2026 the state removed the option that lets a shared all-gender room take their place. Savannah's city code still carries its own version of that option, written for an earlier edition of the plumbing rules: a shared room where every toilet sits in a compartment with floor-to-ceiling walls and a lockable door, urinals are in stalls or screened from view, and the sink area is not closed off by a door. Ask Savannah Development Services which rule applies before planning one. State law requires public schools, and private schools that compete against them, to provide separate shared restrooms for each sex.",
+  "confirm_office": "Savannah Development Services",
+  "stalls_after": "These are state minimums for the whole building, and Savannah's city code does not change them. An office that holds 25 people or fewer, or any space that holds 15 or fewer, may use one restroom for everyone.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or Savannah Development Services sets the final number.",
+  "install_rule": "A contractor who does work that needs a Savannah permit must follow the state and local licensing rules, and where Georgia requires a license, gives the city the license number before the permit is issued. Georgia licenses general contractors, and limited specialty trade work may be exempt, so confirm with the Georgia State Licensing Board for Residential and General Contractors whether your installer needs a state license. You don't need a permit to buy partitions.",
+  "faq_install_extra": "Where Georgia requires a contractor license, the contractor gives Savannah the license number before a permit is issued.",
+  "public_jobs_bullet": "- **Public jobs:** Georgia has no state wage law for public construction, so a set wage applies only on federally funded projects, under federal law. For a carpenter on building work in Chatham County that rate is $19.13 an hour plus $0.30 in benefits.",
+  "sales_tax_bullet": "- **Sales tax:** 7% in Savannah: 4% state, 1% local option, 1% schools and 1% special purpose tax, all three collected across Chatham County.",
+  "buyers_extra": "- **Hotels and visitor attractions:** finishes that match the property in guest-facing restrooms, HDPE or phenolic where crowds and frequent cleaning are hard on stalls.",
+  "sources": [
+   "- Codes Savannah enforces, and the office that enforces them: City of Savannah Code of Ordinances, Division II, Part 8, Chapter 1, Building Regulations, [Sec. 8-1001, Title; adoption of codes](https://online.encodeplus.com/regs/savannah-ga/doc-viewer.aspx#secid-2347) (the latest editions of the Georgia State Minimum Standard Codes, adopted by reference) and [Sec. 8-1034, Code enforcement](https://online.encodeplus.com/regs/savannah-ga/doc-viewer.aspx#secid-2357); Georgia Department of Community Affairs, [Current State Minimum Codes for Construction](https://dca.georgia.gov/community-assistance/construction-codes/current-state-minimum-codes-construction) (International Building Code and International Plumbing Code, 2024 Editions, with Georgia Amendments). Checked 2026-11-24.",
+   "- Savannah's amendments on single-user and shared restrooms: City of Savannah Code of Ordinances, [Sec. 8-1002, Local code amendments](https://online.encodeplus.com/regs/savannah-ga/doc-viewer.aspx#secid-2348), revising Sections 403.1.2 and 403.2 of the International Plumbing Code, 2018 edition, and adding Section 405.3.4.1 (last amended July 14, 2022); the state's deletion of Exception 6 to Section 403.2, effective January 1, 2026, is in the [Georgia State Amendments to the International Plumbing Code (2024 Edition)](https://dca.georgia.gov/document/document/ipc-2026-amendment-packet-2024-edition/download). Sec. 8-1002 makes no change to the toilet counts. Checked 2026-11-24.",
+   "- Permits and the contractor's license number in Savannah: City of Savannah Code of Ordinances, [Sec. 8-1038, Permits](https://online.encodeplus.com/regs/savannah-ga/doc-viewer.aspx#secid-2361) (when required; minor repairs; contractor's responsibilities). Checked 2026-11-24.",
+   "- Sales tax in Savannah: Georgia Department of Revenue, [Sales and Use Tax Rate Chart effective October 1, 2026](https://dor.georgia.gov/document/document/httpsdorgeorgiagovdocumentdocumentgeneral-rate-chart-effective-october-1-2026/download) (025 Chatham, 7%), [Historical Sales Tax Charts, October 2026](https://dor.georgia.gov/document/document/october-2026-historical-sales-tax-charts/download) for each part and its dates, and [Rate Changes Effective January 1, 2027](https://dor.georgia.gov/document/document/rate-changes-effective-january-1-2027/download) (no change for Chatham County). Checked 2026-11-24.",
+   "- Chatham County carpenter rate on federally funded building work: [federal wage determination GA20260317, modification 2, May 18, 2026](https://sam.gov/wage-determination/GA20260317/2). Checked 2026-11-24."
+  ],
+  "official_names": "- The rules by their official names: 2010 ADA Standards for Accessible Design; Georgia Accessibility Code (Rules of the Safety Fire Commissioner, Chapter 120-3-20, effective January 1, 2015); Georgia State Minimum Standard Building Code (2024 International Building Code with Georgia Amendments, effective January 1, 2026) and Georgia State Minimum Standard Plumbing Code (2024 International Plumbing Code with Georgia Amendments, effective January 1, 2026), adopted by reference in Savannah Code of Ordinances Sec. 8-1001 and enforced by the Development Services Department; Savannah Code of Ordinances Sec. 8-1002 (local plumbing code amendments) and Sec. 8-1038 (permits); NFPA 286 for HDPE.",
+  "notes": [
+   "Read in a browser before launch: savannahga.gov refused automated access, so the city's web pages (Permits for Construction, the 2026 code sheet, the commercial permit instructions and checklist) were not read. The page rests on the city's Code of Ordinances, which was read in full for the building chapter, and on state pages.",
+   "To confirm by phone: whether a like-for-like replacement of toilet partitions in a commercial restroom is an 'ordinary minor repair' or needs a Savannah permit (Development Services; web search gives 912-651-6530 for permits and 912-651-6510 general, neither read on a city page).",
+   "To confirm by phone: whether Savannah still allows a shared all-gender restroom under its own code text (Sec. 8-1002, floor-to-ceiling compartments), now that Georgia removed that option from the state plumbing code on January 1, 2026. The city text amends the 2018 edition and was last changed in July 2022. Ask the building official at Development Services.",
+   "A proposed ordinance revising Sec. 8-1001 shows in web search on agenda.savannahga.gov; its date and whether it passed, or whether it touches Sec. 8-1002, were not read.",
+   "Georgia amendments dated January 1, 2027 take effect then, and Savannah adopts the latest state editions automatically. Recheck the restroom bullet against them.",
+   "Sales tax: the 1% schools tax runs to September 30, 2030 and the 1% special purpose tax to September 30, 2032. No change for Chatham County is listed for January 1, 2027.",
+   "State license: the page leaves out the $2,500 threshold because the statute was not verified; confirm with the Georgia State Licensing Board for Residential and General Contractors whether partition installation needs a license. Web search says Savannah requires a Georgia licensed contractor to pick up a commercial building permit; confirm on the city's page."
+  ]
+ },
+ "sources_read": [
+  {
+   "url": "https://online.encodeplus.com/regs/savannah-ga/doc-view.aspx?secid=2345",
+   "official": true
+  },
+  {
+   "url": "https://online.encodeplus.com/regs/savannah-ga/doc-viewer.aspx",
+   "official": true
+  },
+  {
+   "url": "https://dca.georgia.gov/community-assistance/construction-codes/current-state-minimum-codes-construction",
+   "official": true
+  },
+  {
+   "url": "https://dca.georgia.gov/community-assistance/construction-codes/enforcement-state-minimum-codes",
+   "official": true
+  },
+  {
+   "url": "https://dca.georgia.gov/announcement/2025-12-09/new-codes-jan-2027",
+   "official": true
+  },
+  {
+   "url": "https://dca.georgia.gov/document/document/ipc-2026-amendment-packet-2024-edition/download",
+   "official": true
+  },
+  {
+   "url": "https://dca.georgia.gov/document/document/ibc-2026-amendment-packet-2024-edition/download",
+   "official": true
+  },
+  {
+   "url": "https://dor.georgia.gov/document/document/httpsdorgeorgiagovdocumentdocumentgeneral-rate-chart-effective-october-1-2026/download",
+   "official": true
+  },
+  {
+   "url": "https://dor.georgia.gov/document/document/october-2026-historical-sales-tax-charts/download",
+   "official": true
+  },
+  {
+   "url": "https://dor.georgia.gov/document/document/rate-changes-effective-january-1-2027/download",
+   "official": true
+  },
+  {
+   "url": "https://sam.gov/api/prod/wdol/v1/wd/GA20260317/2",
+   "official": true
+  }
+ ],
+ "not_read": [
+  "https://www.savannahga.gov/379/Permits-for-Construction (blocked; search result only)",
+  "http://www.savannahga.gov/documentcenter/view/3961 (2026 code sheet; blocked; search result only)",
+  "https://savannahga.gov/1644/How-to-Apply-for-Commercial-Building-Per (blocked)",
+  "https://savannahga.gov/DocumentCenter/View/17178/Commercial-Checklist (blocked)",
+  "https://savannahga.gov/DocumentCenter/View/7709/Residential-Projects-that-DO-NOT-Need-a-Permit (blocked; residential only)",
+  "https://agenda.savannahga.gov/content/files/proposed-ordinance-section-8-1001.pdf (blocked)",
+  "https://library.municode.com/ga/savannah (403)",
+  "web.archive.org copies (blocked)"
+ ],
+ "searches_used": 3,
+ "to_confirm": [
+  "Whether replacing toilet partitions in an existing commercial restroom needs a permit or counts as an 'ordinary minor repair' under Sec. 8-1038: City of Savannah Development Services (912-651-6530 or 912-651-6510 per web search; confirm the number on savannahga.gov).",
+  "Whether Savannah's Sec. 8-1002 exception for shared all-gender rooms (floor-to-ceiling compartments) still applies after Georgia deleted Exception 6 to IPC 403.2 on January 1, 2026: Development Services building official; DCA Construction Codes for whether the local amendment is on file.",
+  "The city's own page of codes in force and its 2026 code sheet: read https://www.savannahga.gov/379/Permits-for-Construction in a browser.",
+  "The proposed ordinance revising Sec. 8-1001 on agenda.savannahga.gov: date, status and content.",
+  "Any commercial list of work exempt from a permit on savannahga.gov (only residential lists turned up in search).",
+  "City of Savannah wage terms on its own construction contracts: not looked for.",
+  "State license threshold for partition installers (Georgia State Licensing Board for Residential and General Contractors)."
+ ]
+}
