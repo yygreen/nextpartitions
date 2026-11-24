@@ -66,7 +66,7 @@ head: Office | Restaurant | School
 400: 5/5 | 3/3 | 4/4
 :::
 
-These are minimums for the whole building. An office that holds 25 people or fewer, or any other space that holds 15 or fewer, staff and customers together, doesn't need separate men's and women's rooms. At least one stall in each room must be wheelchair accessible.
+These are minimums for the whole building. An office that holds 25 people or fewer, a store that holds 100 or fewer, or any other space that holds 15 or fewer, staff and customers together, doesn't need separate men's and women's rooms. At least one stall in each room must be wheelchair accessible.
 
 To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or San Antonio Development Services sets the final number.
 
