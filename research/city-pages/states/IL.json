@@ -1,0 +1,547 @@
+{
+ "state": "IL",
+ "state_name": "Illinois",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "Illinois Plumbing Code (77 Ill. Adm. Code 890), Illinois Department of Public Health, adopted under Section 35 of the Illinois Plumbing License Law (225 ILCS 320/35). A state-written code, not a model-code edition.",
+   "edition": "Part 890 as last amended at 38 Ill. Reg. 9940, effective April 24, 2014 (source note on the official Section 890.810 and Appendix A pages, read 2026-11-24)",
+   "table": "Section 890.810 and Appendix A, Table B, Minimum Number of Plumbing Fixtures",
+   "url": "https://www.ilga.gov/commission/jcar/admincode/077/07700890ZZ9996abR.html",
+   "section_url": "https://ilga.gov/ftp/JCAR/AdminCode/077/077008900F08100R.html",
+   "pdf_url": "https://idph.illinois.gov/envhealth/pdf/SOS%20Official%20Version%20Part%20890%20Plumbing%20Code%20A5%20Paper%206%2018%2014.pdf",
+   "quote": "Plumbing fixtures shall be provided, for each building type and occupant load, in the minimum numbers shown in Appendix A.Table B, Minimum Number of Plumbing Fixtures, except as noted in footnote 2. Questions concerning the minimum numbers of fixtures required for building types not listed in Appendix A.Table B, shall be referred to the Department in writing prior to construction for a decision concerning the minimum numbers (and types) of plumbing fixtures required.",
+   "note": "Illinois has no statewide building code (see hdpe_fire), and where the state's default International Building Code applies, its Chapter 29 (plumbing fixture counts) is excluded by statute, so the Illinois Plumbing Code table governs. Rows were read on the official ilga.gov page and on the Department of Public Health's PDF of the code; both agree."
+  },
+  "cities_may_amend": true,
+  "cities_may_amend_note": {
+   "text": "A city or county that regulates plumbing may adopt its own plumbing code if it is at least as stringent as the state code. Chicago has its own construction codes (for the city agent).",
+   "quote": "Governmental units which are authorized to regulate plumbing and the fixtures, materials, design and installation methods of plumbing systems may adopt a minimum code of standards pursuant to local ordinance at least as stringent as the minimum code of standards promulgated by the Department, or may by ordinance or resolution, adopt the minimum code of standards, promulgated by the Department.",
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/022503200K36.htm"
+  },
+  "rows": {
+   "office": {
+    "row_label": "Office Buildings/Public Buildings",
+    "wc_male": "1: 1-15; 2: 16-35; 3: 36-55; 4: 56-80; 5: 81-110. Over 110, add 1 fixture per restroom for each additional 50 males/females.",
+    "wc_female": "1: 1-15; 2: 16-35; 3: 36-55; 4: 56-80; 5: 81-110. Over 110, add 1 fixture per restroom for each additional 50 males/females.",
+    "urinals": "See Footnote #2 (optional substitution for up to half of the men's water closets)",
+    "quote": "Office Buildings/Public Buildings | Water Closet (Fixtures per person) | Male 1: 1-15, 2: 16-35, 3: 36-55, 4: 56-80, 5: 81-110 | Female 1: 1-15, 2: 16-35, 3: 36-55, 4: 56-80, 5: 81-110 | Over 110, add 1 fixture per restroom for each additional 50 males/females. See Footnote #1 | Urinals (Fixtures per person): See Footnote #2",
+    "url": "https://www.ilga.gov/commission/jcar/admincode/077/07700890ZZ9996abR.html"
+   },
+   "restaurant": {
+    "row_label": "Food Service Establishments, Pubs, Lounges, Nightclubs, and Places Serving Food or Liquid to be Consumed on the Premises (footnote 8)",
+    "wc_male": "1: 1-100; 2: 101-300. Over 300, add 1 fixture for each additional 200 males.",
+    "wc_female": "1: 1-50; 2: 51-100; 3: 101-150; 4: 151-300. Over 300, add 1 fixture per each 100 females.",
+    "urinals": "Male: 1: 1-150. Over 150, add 1 fixture for each added 150 males. Female: See Footnote #2.",
+    "quote": "Food Service Establishments, Pubs, Lounges, Nightclubs, and Places Serving Food or Liquid to be Consumed on the Premises8 | Water Closet (Fixtures per person) | Male 1: 1-100, 2: 101-300 | Female 1: 1-50, 2: 51-100, 3: 101-150, 4: 151-300 | Over 300, add 1 fixture for each additional 200 males and 1 fixture per each 100 females. See Footnotes #1. | Urinals (Fixtures per person) | [Male] 1: 1-150. Over 150, add 1 fixture for each added 150 males. | [Female] See Footnote #2",
+    "url": "https://www.ilga.gov/commission/jcar/admincode/077/07700890ZZ9996abR.html",
+    "note": "The table lists urinals for men as their own line with numbers, next to a lower men's water closet count than the women's. Read here as required in addition to the men's water closets (1 toilet plus 1 urinal up to 100 men). The table does not say so in words: confirm with the Department of Public Health or the local plumbing inspector."
+   },
+   "school": {
+    "row_label": "Schools-Student Use: Elementary",
+    "wc_male": "1: 1-20; 2: 21-50. Over 50, add 1 fixture per restroom for each additional 50 persons.",
+    "wc_female": "1: 1-20; 2: 21-50. Over 50, add 1 fixture per restroom for each additional 50 persons.",
+    "urinals": "See Footnote #2 (optional substitution for up to half)",
+    "quote": "Schools-Student Use: Elementary | Water Closets (Fixtures per person) | Male 1: 1-20, 2: 21-50 | Female 1: 1-20, 2: 21-50 | Over 50, add 1 fixture per restroom for each additional 50 persons. See Footnote #1 | Urinals: See Footnote #2 | See Footnote #2",
+    "url": "https://www.ilga.gov/commission/jcar/admincode/077/07700890ZZ9996abR.html"
+   },
+   "school_secondary": {
+    "row_label": "Schools-Student Use: Secondary, Colleges, Universities, Adult Centers, Etc.",
+    "wc_male": "1 per 40",
+    "wc_female": "1 per 20",
+    "urinals": "Male: 1 per 40, See Footnote #2. Female: See Footnote #2.",
+    "quote": "Schools-Student Use: Secondary, Colleges, Universities, Adult Centers, Etc. | Water Closets (Fixtures per person) | Male 1 per 40 | Female 1 per 20 | See Footnote #1 | Urinals (Fixtures per person) | [Male] 1 per 40 See Footnote #2 | [Female] See Footnote #2",
+    "url": "https://www.ilga.gov/commission/jcar/admincode/077/07700890ZZ9996abR.html"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Half the occupants are counted as male and half as female; the fixtures for each are then read from the table.",
+    "quote": "1. The figures shown are the minimum number of fixtures required for the number of persons indicated or any fraction of that number. Based on the total occupant load determined, the number of fixtures shall be calculated assuming 50 percent of the occupants are male and 50percent are female. The total male/female occupants shall be calculated first; then the number of fixtures for each (males/females) shall be determined from the appropriate table.",
+    "url": "https://www.ilga.gov/commission/jcar/admincode/077/07700890ZZ9996abR.html"
+   },
+   "rounding": {
+    "text": "One fixture for the number of persons shown or any fraction of that number, so a part-group counts as a whole one.",
+    "quote": "The figures shown are the minimum number of fixtures required for the number of persons indicated or any fraction of that number.",
+    "url": "https://www.ilga.gov/commission/jcar/admincode/077/07700890ZZ9996abR.html"
+   },
+   "urinal_substitution": {
+    "text": "Where the table shows 'See Footnote #2' (offices, elementary schools), urinals are optional and may replace up to half of the men's required water closets. Where the table gives urinal numbers for men (food service: 1 for 1-150 males; secondary schools and colleges: 1 per 40 males), they are listed as their own required line next to a lower men's water closet count.",
+    "quote": "2. Urinals may be substituted for water closets for males, not to exceed half of the required total number of water closets. Comparable fixtures for females may be substituted for water closets for females, not to exceed half of the required total number of water closets.",
+    "url": "https://www.ilga.gov/commission/jcar/admincode/077/07700890ZZ9996abR.html"
+   },
+   "small_occupancy_exception": {
+    "text": "Staff restrooms are always required; with no more than five employees working at one time, one restroom may serve both sexes. Public restrooms are required only in buildings with 5,000 square feet of gross public area or an occupancy of 100 or more, except that every food service establishment serving food or drink on the premises needs public restrooms (those with no more than 10 employees and seats combined may open the staff restroom to the public). Where public restrooms are required, they must be separate for males and females.",
+    "quote": "i) If there are more than five employees working at any one time, separate restrooms for men and women shall be provided. ii) If there are no more than five employees working at any time, one restroom may serve both sexes. A restroom shall have a minimum of one water closet and one lavatory. ... Buildings with 5,000 square feet of gross public area or with occupancies of 100 or more persons shall provide public restrooms and drinking fountains as shown in Appendix A.Table B. Buildings other than those exceptions in subsection (b)(2)(B), with less than 5,000 square feet of gross public area, or with occupancies of fewer than 100 persons, need not provide public restrooms and drinking fountains. ... iii) When public restroom facilities are required by this Part, separate facilities for males and females shall be provided. ... Exception: Food service establishments with no more than 10 combined employees and seats (for patrons) at any one time need not provide public restrooms, provided that the employee restrooms are accessible and made available to the public.",
+    "url": "https://ilga.gov/ftp/JCAR/AdminCode/077/077008900F08100R.html"
+   },
+   "occupant_load": {
+    "text": "The plumbing code uses the building's estimated total occupant load (employees and public). If it is not known, the code gives its own figures by gross floor area: office buildings 200 sq ft per person, food service establishments 30 sq ft, schools 50 sq ft; rooms with fixed seating count the seats. These differ from the model building code's figures (150, 15 and 20), which a local building code may use for exits.",
+    "quote": "If the building's occupant load is not known or determinable, the following shall be used to estimate the total occupant load: ... ii) In rooms or spaces without fixed seating, the occupant load shall be determined by dividing the gross floor area by the estimated floor area per person shown in the following table: ... Schools 50 ... Office Buildings 200 | Food Service Establishments, Clubs, Taverns, and Other Eating/Drinking Facilities 30",
+    "url": "https://ilga.gov/ftp/JCAR/AdminCode/077/077008900F08100R.html"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "50/2 = 25 per sex. Office row: 2 fixtures for 16-35 persons, so 2 each. Urinals may replace up to half of the men's 2: 1."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100/2 = 50 per sex. Office row: 3 fixtures for 36-55, so 3 each. Urinals may replace up to half of 3 = 1.5, so 1."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200/2 = 100 per sex. Office row: 5 fixtures for 81-110, so 5 each. Urinals may replace up to half of 5 = 2.5, so 2."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 7,
+    "wc_male_total": 7,
+    "urinals_allowed": 3,
+    "urinals_required": 0,
+    "how": "400/2 = 200 per sex. Office row: 5 fixtures for the first 110, then 1 for each additional 50 or fraction: 200 - 110 = 90, 90/50 = 1.8, so 2 more = 7 each. Urinals may replace up to half of 7 = 3.5, so 3."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "50/2 = 25 per sex. Food service row: women 1 for 1-50; men 1 water closet for 1-100, and the urinal line lists 1 urinal for 1-150 males. Read as 1 women's toilet, 1 men's toilet plus 1 urinal."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "100/2 = 50 per sex. Women 1 for 1-50; men 1 water closet for 1-100 plus 1 urinal for 1-150."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "200/2 = 100 per sex. Women 2 for 51-100; men 1 water closet for 1-100 plus 1 urinal for 1-150."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 2,
+    "urinals_allowed": null,
+    "urinals_required": 2,
+    "how": "400/2 = 200 per sex. Women 4 for 151-300; men 2 water closets for 101-300; urinals 1 for 1-150 plus 1 for each added 150 males or fraction (200 - 150 = 50), so 2. If a part of 150 does not count, the urinal figure is 1: confirm with the plumbing inspector."
+   },
+   {
+    "occupancy": "school (elementary)",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "50/2 = 25 per sex. Elementary row: 2 fixtures for 21-50, so 2 each. Urinals may replace up to half of the boys' 2: 1."
+   },
+   {
+    "occupancy": "school (elementary)",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100/2 = 50 per sex. Elementary row: 2 fixtures for 21-50, so 2 each. Urinals may replace 1."
+   },
+   {
+    "occupancy": "school (elementary)",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200/2 = 100 per sex. Elementary row: 2 for the first 50, then 1 for each additional 50: (100 - 50)/50 = 1, so 3 each. Urinals may replace up to half of 3 = 1.5, so 1."
+   },
+   {
+    "occupancy": "school (elementary)",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400/2 = 200 per sex. Elementary row: 2 for the first 50, then (200 - 50)/50 = 3 more, so 5 each. Urinals may replace up to half of 5 = 2.5, so 2."
+   },
+   {
+    "occupancy": "school (secondary, college)",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": null,
+    "urinals_required": 1,
+    "how": "50/2 = 25 per sex. Secondary row: women 1 per 20: 25/20 = 1.25, so 2. Men 1 water closet per 40 (25/40, so 1) plus 1 urinal per 40 (1)."
+   },
+   {
+    "occupancy": "school (secondary, college)",
+    "occupants": 100,
+    "wc_female": 3,
+    "wc_male_total": 2,
+    "urinals_allowed": null,
+    "urinals_required": 2,
+    "how": "100/2 = 50 per sex. Women 50/20 = 2.5, so 3. Men 50/40 = 1.25, so 2 water closets plus 2 urinals."
+   },
+   {
+    "occupancy": "school (secondary, college)",
+    "occupants": 200,
+    "wc_female": 5,
+    "wc_male_total": 3,
+    "urinals_allowed": null,
+    "urinals_required": 3,
+    "how": "200/2 = 100 per sex. Women 100/20 = 5. Men 100/40 = 2.5, so 3 water closets plus 3 urinals."
+   },
+   {
+    "occupancy": "school (secondary, college)",
+    "occupants": 400,
+    "wc_female": 10,
+    "wc_male_total": 5,
+    "urinals_allowed": null,
+    "urinals_required": 5,
+    "how": "400/2 = 200 per sex. Women 200/20 = 10. Men 200/40 = 5 water closets plus 5 urinals."
+   }
+  ],
+  "confidence": "medium",
+  "confidence_note": "Table and rules read on the official text (high). Marked medium because the table does not say in words whether the men's urinal numbers for food service and secondary schools are in addition to the water closets, or how 'add 1 fixture per restroom' works where there are several restrooms."
+ },
+ "hdpe_fire": {
+  "required": null,
+  "section": "No statewide section. Illinois has no statewide building code; each city or county adopts its own. Where none is adopted (and for state-funded buildings), 20 ILCS 3105/10.09-1 applies the current or most recent preceding edition of the International Building Code to new or substantially improved commercial buildings. In the 2021 IBC the rule is Section 803.9, with Section 803.1.1 and the Chapter 2 definition of interior wall and ceiling finish.",
+  "quote": "CDB: Until then, units of local government such as cities and counties can adopt codes of their choice. The best and most accurate answers to building code questions must be answered by your city, village, or county code official. ... Commercial buildings in jurisdictions that have not adopted a building code AND state funded buildings. New or substantially improved buildings: IEBC and IBC (1/1/25 Incl. App G., Excl. Ch 11, 13, 29). Current edition or most recent preceeding edition. | IBC 2021: 803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. | 803.1.1 Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1. | Definition: Interior Wall and Ceiling Finish. The exposed interior surfaces of buildings, including but not limited to: fixed or movable walls and partitions; toilet room privacy partitions; columns; ceilings ...",
+  "url": "https://cdb.illinois.gov/business/codes/buildingcodesregulations.html",
+  "statute_url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/002031050K10.09-1.htm",
+  "model_code_url": "https://up.codes/viewer/illinois/ibc-2021/chapter/8/interior-finishes",
+  "definition_url": "https://up.codes/viewer/illinois/ibc-2021/chapter/2/definitions",
+  "note": "The rule applies in a given place only through the locally adopted building code, or through the state default where there is none. IBC text read on UpCodes (secondary copy); the 2024 edition was not read. Chicago's own code is for the city agent.",
+  "confidence": "medium"
+ },
+ "access": {
+  "state_standard": "Illinois Accessibility Code (71 Ill. Adm. Code 400), 2018 edition, effective October 23, 2018, adopted by the Capital Development Board under the Environmental Barriers Act (410 ILCS 25). It is written on the 2010 ADA Standards with Illinois changes, not on ICC A117.1, and has the force of a building code statewide.",
+  "standard_quote": "This Code is also intended to resolve areas of difference between federal accessible design standards such as the 2010 Americans With Disabilities Act (ADA), standards for accessible design (28 CFR 36 [2010]) and this Code. The drafters of this Code compared and primarily adopted the stricter of State or federal accessible design standards to provide the greatest access throughout the State. | 410 ILCS 25/5(a)(5): This Act, together with the Illinois Accessibility Code, 71 Ill. Adm. Code 400, has the force of a building code and as such is law in the State of Illinois.",
+  "standard_urls": [
+   "https://cdb.illinois.gov/content/dam/soi/en/web/cdb/business/codes/illinoisaccessibilitycode/documents/2018-illinois-accessibility-code.pdf",
+   "https://www.ilga.gov/Documents/legislation/ilcs/documents/041000250K5.htm"
+  ],
+  "method": "Sections 213, 603 to 605, 609, 216.8 and 703.7 of the Illinois PDF were compared sentence by sentence with the same sections of the 2010 ADA Standards on ada.gov. Stall sizes, door rules, toe clearance, grab bars, ambulatory stalls and children's stalls read the same.",
+  "differences": [
+   {
+    "point": "Floor inside the toilet clearance must be level",
+    "state": "Section 604.3.3 (Illinois addition): no changes in level within the required clearance around the toilet; slope no steeper than 1:48.",
+    "federal": "2010 ADA Section 604.3 has no 604.3.3; it ends at 604.3.2 Overlap.",
+    "state_url": "https://cdb.illinois.gov/content/dam/soi/en/web/cdb/business/codes/illinoisaccessibilitycode/documents/2018-illinois-accessibility-code.pdf",
+    "quote": "604.3.3 Changes in Level. Floor or ground surface within the required clearance shall comply with 302. Changes in level are not permitted. EXCEPTION: Slopes not steeper than 1:48 shall be permitted.",
+    "federal_quote": "604.3.2 Overlap. The required clearance around the water closet shall be permitted to overlap the water closet, associated grab bars, dispensers, sanitary napkin disposal units, coat hooks, shelves, accessible routes, clear floor space and clearances required at other fixtures, and the turning space. No other fixtures or obstructions shall be located within the required water closet clearance. [no 604.3.3 follows]"
+   },
+   {
+    "point": "Historic buildings: no separate toilet room exception in Section 213",
+    "state": "Section 213.2 Exception 2 is deleted; historic buildings are handled through Section 202.5 and a Capital Development Board determination.",
+    "federal": "213.2 Exception 2 lets an altered qualified historic building provide one toilet room for each sex or one unisex room.",
+    "state_url": "https://cdb.illinois.gov/content/dam/soi/en/web/cdb/business/codes/illinoisaccessibilitycode/documents/2018-illinois-accessibility-code.pdf",
+    "quote": "213.2 ... EXCEPTIONS: ... 2. [Deleted].",
+    "federal_quote": "Where exceptions for alterations to qualified historic buildings or facilities are permitted by 202.5, no fewer than one toilet room for each sex complying with 603 or one unisex toilet room complying with 213.2.1 shall be provided."
+   }
+  ],
+  "same_as_federal": "213.3.1 (one wheelchair compartment; an ambulatory one too at six or more compartments or six or more toilets and urinals combined), 604.8.1.1 (60 in wide; 56 in deep wall-hung, 59 in floor-mounted), 604.8.1.2 (self-closing door, pulls both sides, no swing into the minimum area), 604.8.1.4 (toe clearance 9 in high, 6 in deep; 12 in for children), 604.8.2 (ambulatory 35 to 37 in wide, 60 in deep, bars both sides), 604.5, 604.9 and 609.",
+  "process": "No state plan review. The local authority that issues the building permit examines the plans for compliance. For a public facility, construction or alteration costing $50,000 or more needs a statement (or seal) from an Illinois-registered architect or engineer that the plans comply, filed with the permit office, or with the county clerk where no permits are issued. The Attorney General enforces the code. The requirements cannot be waived.",
+  "process_quote": "410 ILCS 25/5(d): No public facility may be constructed or altered and no multi-story housing may be constructed without the statement of an architect registered in the State of Illinois that the plans for the work to be performed comply with the provisions of this Act and the Code promulgated hereunder unless the cost of such construction or alteration is less than $50,000. ... (e) The requirements found in the Code cannot be waived by any party. | IAC 101.9: Where permits are required for the construction or alteration of any public facility or multi-story housing unit, the plans and specifications submitted by the owner to obtain such a permit shall be examined for compliance with this Code by the administrative authority which issues the permit for construction.",
+  "process_url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/041000250K5.htm",
+  "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+  "confidence": "high"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "Every single-occupancy restroom in a place of public accommodation or public building, existing or new, must be identified as all-gender, with an exterior sign that marks it as a restroom and shows no specific gender. A single-occupancy restroom is a fully enclosed, user-locked room with a sink, a toilet stall and no more than one urinal. In effect since January 1, 2020.",
+   "quote": "(c) Notwithstanding any other provision of law, every single-occupancy restroom in a place of public accommodation or public building shall be identified as all-gender and designated for use by no more than one person at a time or for family or assisted use. Each single-occupancy restroom shall be outfitted with exterior signage that marks the single-occupancy restroom as a restroom and does not indicate any specific gender.",
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/041000350K25.htm",
+   "law": "Equitable Restrooms Act, 410 ILCS 35/25 (P.A. 101-165)"
+  },
+  "all_gender_shared": {
+   "rule": "Allowed since August 11, 2023: any multiple-occupancy restroom may be designated all-gender. It must have floor-to-ceiling stall dividers with a user-controlled lock and a privacy cover or strip closing the gap between divider and door, inclusive signage outside, and no urinals. If converted, or built in new construction or an alteration of more than 50% of the facility, it must also meet the ADA and the Illinois Accessibility Code and have a small covered trash receptacle in each stall, at least one menstrual supply vending device and at least one baby changing station. An adjacent restroom for a different gender must be converted or designated all-gender too. Each fixture may count toward either the female or the male minimum, not both.",
+   "quote": "(c) Notwithstanding any other provision of law, any multiple-occupancy restroom may be identified as an all-gender multiple-occupancy restroom and designated for use by any person of any gender. An all-gender multiple-occupancy restroom must include the following: (1) Inclusive signage that is prominently displayed at the exterior of the multiple-occupancy restroom for all who are entering the restroom, that does not indicate any specific gender, and that indicates any component that is present in the multiple-occupancy restroom and is required under this subsection or subsection (e). (2) Floor-to-ceiling stall dividers equipped with a sturdy and functioning locking mechanism controlled by the user and a partition privacy cover or strip that ensures that no one is able to see through the space between the stall divider and door. An all-gender multiple-occupancy restroom shall not contain urinals. (d) Any multiple-occupancy restroom may be converted into an all-gender multiple-occupancy restroom. If a multiple-occupancy restroom is to be converted into an all-gender multiple-occupancy restroom and a multiple-occupancy restroom serving a different gender is located adjacent or in proximity to the all-gender multiple-occupancy restroom, then both multiple-occupancy restrooms must be converted into all-gender multiple-occupancy restrooms. ... (g) ... each individual fixture in an all-gender multiple-occupancy restroom may be counted toward the required number of either female or male fixtures until the minimum requirement is met.",
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/041000350K30.htm",
+   "law": "Equitable Restrooms Act, 410 ILCS 35/30 (P.A. 103-518)",
+   "note": "The Illinois Plumbing Code itself still says public restrooms must be separate for males and females and limits a 'unisex restroom' to one water closet (890.810(b)(2)(A)(iii), 890.120); Section 30 applies 'notwithstanding any other provision of law'. Whether the Department of Public Health has adopted the implementing rules Section 30(i) calls for was not checked."
+  },
+  "use_restrictions": {
+   "rule": "No Illinois statute restricting which restroom a person may use in government, school or other buildings was found in the Equitable Restrooms Act or the public accommodations article of the Illinois Human Rights Act. The Human Rights Act makes it a civil rights violation to deny full and equal enjoyment of a place of public accommodation on the basis of unlawful discrimination, and exempts 'distinctly private' facilities such as restrooms as to discrimination based on sex.",
+   "quote": "775 ILCS 5/5-102: It is a civil rights violation for any person on the basis of unlawful discrimination to: (A) Enjoyment of Facilities, Goods, and Services. Deny or refuse to another the full and equal enjoyment of the facilities, goods, and services of any public place of accommodation | 775 ILCS 5/5-103(B): Facilities Distinctly Private. Any facility, as to discrimination based on sex, which is distinctly private in nature such as restrooms, shower rooms, bath houses, health clubs and other similar facilities for which the Department, in its rules and regulations, may grant exemptions based on bona fide considerations of public policy.",
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/077500050K5-102.htm",
+   "url_exemption": "https://www.ilga.gov/Documents/legislation/ilcs/documents/077500050K5-103.htm",
+   "note": "A negative finding from the acts read, not from a search of every Illinois statute. Not used in page text."
+  },
+  "other": {
+   "rule": "The Act's toilet ratios in Section 15 (1 women's stall per 200, 1 men's stall per 700, 1 urinal per 250 of legal capacity) apply only to arenas, stadiums, convention halls and similar venues, not hotels, restaurants or schools.",
+   "quote": "\"place of public accommodation\" means a publicly or privately owned sports or entertainment arena, stadium, community or convention hall, special event center, amusement facility or a special event center in a public park. This definition does not include hotels, restaurants or schools.",
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/041000350K10.htm"
+  },
+  "confidence": "high"
+ },
+ "public_wage": {
+  "has_state_law": true,
+  "law": "Illinois Prevailing Wage Act, 820 ILCS 130. Applies to all fixed works constructed by a public body (the State, counties, cities, school districts and other political subdivisions, and institutions supported by public funds) or paid for wholly or in part out of public funds. The Illinois Department of Labor ascertains the rates for each county, by craft, from collective bargaining agreements.",
+  "threshold": "None found: Sections 2, 3 and 4 of the Act and the Department of Labor's FAQ state no dollar threshold.",
+  "rates_url": "https://labor.illinois.gov/laws-rules/conmed/current-prevailing-rates.html",
+  "quote": "820 ILCS 130/3: Not less than the general prevailing rate of hourly wages for work of a similar character on public works in the locality in which the work is performed, and not less than the general prevailing rate of hourly wages for legal holiday and overtime work, shall be paid to all laborers, workers and mechanics employed by or on behalf of any public body engaged in the construction or demolition of public works. | 820 ILCS 130/2: \"Public works\" means all fixed works constructed or demolished by any public body, or paid for wholly or in part out of public funds. ... \"Public body\" means the State or any officer, board or commission of the State or any political subdivision or department thereof, or any institution supported in whole or in part by public funds, and includes every county, city, town, village, township, school district ... | IDOL: The following are the prevailing wage classifications and rates the Department of Labor ascertained for each county within the State of Illinois.",
+  "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/082001300K3.htm",
+  "other_urls": [
+   "https://www.ilga.gov/Documents/legislation/ilcs/documents/082001300K2.htm",
+   "https://www.ilga.gov/Documents/legislation/ilcs/documents/082001300K4.htm",
+   "https://labor.illinois.gov/laws-rules/conmed/prevailing-wage-act.html",
+   "https://labor.illinois.gov/faqs/prevailing-wage-faq.html"
+  ],
+  "confidence": "high"
+ },
+ "sales_tax": {
+  "state_rate": 0.0625,
+  "state_rate_quote": {
+   "quote": "Unless otherwise provided in this Section, the tax imposed by this Act is at the rate of 6.25% of gross receipts from sales, which, on and after January 1, 2025, includes leases, of tangible personal property made in the course of business.",
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003501200K2-10.htm"
+  },
+  "local_note": {
+   "text": "Local taxes (home rule, mass transit, county and others) are added on top; the Department's Tax Rate Finder gives the rate by address.",
+   "quote": "Depending upon the location of the sale, the actual sales tax rate may be higher than the fundamental rate because of home rule, non-home rule, mass transit, park district, county public safety, public facilities or transportation, and county school facility tax. Local tax rates are generally subject to change twice a year on January 1 and July 1.",
+   "url": "https://tax.illinois.gov/research/taxinformation/sales/rot.html"
+  },
+  "shipped_goods": {
+   "rule": "Taxable. An out-of-state seller with no physical presence in Illinois must collect state and local tax at the rate of the delivery address once it has $100,000 or more in sales, or 200 or more separate transactions, to Illinois purchasers in the preceding 12 months. If the seller doesn't collect, the buyer must pay use tax directly to the state.",
+   "quote": "A remote retailer is an out-of-state retailer with no physical presence in Illinois who meets a tax remittance threshold of $100,000 or more in cumulative gross receipts from sales of tangible personal property to purchasers in Illinois; or 200 or more separate transactions for the sale of tangible personal property to purchasers in Illinois. ... Remote retailers must collect and remit state and local retailers' occupation tax at the destination rate. | If a retailer does not collect use tax on a sale of tangible personal property to a customer who will use that property in Illinois, the customer must pay the use tax directly to the State of Illinois.",
+   "url": "https://tax.illinois.gov/research/taxinformation/sales/rot.html"
+  },
+  "freight_taxed": true,
+  "freight": {
+   "rule": "Delivery charges are taxed when they are not shown separately on the contract or invoice, or when the seller offers no way to get the goods without paying them (no pickup or free delivery option). Otherwise a separately identified delivery charge is a separate service and not taxed.",
+   "quote": "i) Outgoing transportation and delivery charges are part of the gross receipts subject to Retailers' Occupation Tax when there is an inseparable link between the sale of tangible personal property and the outgoing transportation and delivery of the property. ii) An inseparable link exists when the transportation and delivery charges are not separately identified to the purchaser on the contract or invoice or when the transportation and delivery charges are separately identified to the purchaser on the contract or invoice, but the seller does not offer the purchaser the option to receive the tangible personal property in any manner except by the payment of transportation and delivery charges added to the selling price of the item ... iii) Except for cases in which an inseparable link exists as provided in subsection (b)(1)(B)(ii), outgoing transportation and delivery is considered a service separate and distinct from the sale of tangible personal property that is being transported or delivered and is excluded from the gross receipts subject to the Retailers' Occupation Tax.",
+   "url": "https://www.ilga.gov/commission/jcar/admincode/086/086001300D04150R.html",
+   "note": "freight_taxed is true for freight quoted inside the price or with no pickup option; it is not taxed when separately identified and the buyer could have taken the goods without it."
+  },
+  "install_labor": {
+   "rule": "Illinois sales tax is on selling tangible personal property. Where a seller also installs what it sells, the installation charge is taxed if it is part of the selling price, and not taxed where seller and buyer agree on it separately from the price. Billing it as a separate line is not enough unless the buyer signs the itemized invoice. No rule read addresses an installer who sells nothing and only fits partitions the owner bought.",
+   "quote": "b) When Not Taxable. On the other hand, where the seller and the buyer agree upon the installation, alteration or other special service charges separately from the selling price of the tangible personal property which is sold, then the receipts from the installation, alteration or other special service charge are not a part of the \"selling price\" of the tangible personal property which is sold, but instead such charge is a service charge, separately contracted for, and need not be included in the figure upon which the seller computes his Retailers' Occupation Tax liability. | a) ... This is true whether the charge for the property which is sold and the charge for installation, alteration or other special services are billed by the seller to his customers as separate items (except when the purchaser signs an itemized invoice so as to make it a contract reflecting the intention of both the seller and the purchaser), or whether both items are included in a single billed price.",
+   "url": "https://www.ilga.gov/commission/jcar/admincode/086/086001300D04500R.html"
+  },
+  "furnish_and_install": {
+   "rule": "A construction contractor (including a subcontractor) who furnishes and installs materials and fixtures that are incorporated into the structure under a construction contract, which includes repair, renovation and remodeling, does not charge sales tax on the job. The contractor owes use tax on the cost of the materials, and a supplier selling to the contractor charges tax. Items that stay personal property, such as furniture, furnishings and trade fixtures, are taxable sales even when installed under a construction contract. The rule's examples do not name toilet partitions.",
+   "quote": "c) Construction Contractors - When Not Liable For Tax. A construction contractor does not incur Retailers' Occupation Tax liability as to receipts from labor furnished and tangible personal property (materials and fixtures) incorporated into a structure as an integral part thereof for an owner when furnished and installed as an incident of a construction contract. The construction contractor incurs Use Tax on the cost price of the tangible personal property that is incorporated into real estate. | b) 1) Construction contractors incur Retailers' Occupation Tax liability when they engage in selling any kind of tangible personal property without installation to purchasers for use or consumption. 2) A construction contractor incurs Retailers' Occupation Tax liability when he sells furniture and furnishings, curtains, drapes, floor covering (except when he cements or otherwise permanently affixes the floor covering to a portion of the building), trade fixtures and machinery ... with or without installation by the seller, whether or not the seller furnishes and installs such items as a part of a construction contract. | a) 3) \"Construct\" means build, erect, construct, reconstruct, install, plant, repair, renovate or remodel.",
+   "url": "https://www.ilga.gov/commission/jcar/admincode/086/086001300S19400R.html",
+   "supplier_url": "https://www.ilga.gov/commission/jcar/admincode/086/086001300S20750R.html"
+  },
+  "agency": "Illinois Department of Revenue",
+  "confidence": "medium",
+  "confidence_note": "All rules read on official text. Medium because no Department ruling was read on whether installed toilet partitions count as incorporated into the structure or as trade fixtures, or on labor-only installation."
+ },
+ "page": {
+  "stalls_intro": "Illinois's rules count toilets by a building's capacity: the most people it is designed to hold at one time, staff and public together. Half are counted as men and half as women, and any part of a group counts as a whole one. Every toilet needs a stall. In offices and elementary schools urinals are optional: they may take the place of up to half of the men's toilets. For restaurants and bars the state table lists one men's toilet plus one urinal for up to 100 men.",
+  "stalls_rows": {
+   "50": {
+    "office": "2/2",
+    "restaurant": "1/1+1",
+    "school": "2/2"
+   },
+   "100": {
+    "office": "3/3",
+    "restaurant": "1/1+1",
+    "school": "2/2"
+   },
+   "200": {
+    "office": "5/5",
+    "restaurant": "2/1+1",
+    "school": "3/3"
+   },
+   "400": {
+    "office": "7/7",
+    "restaurant": "4/2+2",
+    "school": "5/5"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building. The school column is for elementary schools: high schools and colleges need one women's toilet for every 20 women, and one toilet plus one urinal for every 40 men, which at 400 people is 10 women's stalls, 5 men's stalls and 5 urinals. A workplace with no more than five employees at one time may use one shared restroom, and outside food service a building needs public restrooms only from 5,000 square feet of public area or 100 people. A city may set stricter numbers than the state.",
+  "capacity": "Where a building's capacity isn't already known, Illinois's plumbing rules estimate it at one person per 200 square feet of floor for an office, one per 30 for a restaurant or bar and one per 50 for a school, or by the number of fixed seats.",
+  "fire_bullet": "- **Fire safety:** Illinois has no single statewide building code: each city or county adopts its own. Where none is adopted, the model code the state applies to new and substantially improved commercial buildings treats toilet partitions as an interior finish and requires solid plastic (HDPE) and polypropylene partitions to pass a room-corner fire test. Ask your local building department which code applies, and ask for the fire-rated version where it does.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use, and a room with six or more toilets and urinals also needs a narrower stall with grab bars on both sides. Federal law and Illinois's own access rules set the sizes, and the state rules can't be waived. On work costing $50,000 or more, an Illinois architect or engineer must state in writing that the plans comply, and the office that issues the building permit checks them.",
+  "state_extra_bullet": "- **Illinois and federal stall rules match:** Illinois's access rules for stall sizes, doors, toe space and grab bars read the same as the federal ones, so a stall that meets one meets the other. Illinois adds that the floor around the toilet must be level.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** in Illinois every one-person restroom in a public building or a place open to the public must be marked as a restroom for all genders, with no gender on the sign. A shared restroom may be made all-gender if the stall dividers run from floor to ceiling, each stall locks from inside, a privacy strip closes the gap between divider and door, and the room has no urinals. A newly built or converted one also needs a covered trash bin in each stall, a menstrual supply dispenser and a baby changing station, and a neighboring restroom for another gender must become all-gender too.",
+  "public_jobs": "on state, county, city and school district projects, and other work paid for with public funds, Illinois law requires at least the wage the Illinois Department of Labor sets for each trade in each county.",
+  "tax_install_bullet": "- **Tax on installation:** in Illinois, a contractor who supplies and installs items that become part of the building doesn't charge sales tax on the job, and pays tax on the materials instead. Where a seller installs what it sells, the installation charge is not taxed if you agree it separately from the price. The state's rule doesn't name toilet partitions, so ask how it applies to your contract.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable at the rate for the delivery address. Freight is taxed too when it is part of the price or there is no way to receive the goods without paying it. If the seller doesn't collect the tax, the buyer owes it to the state.",
+  "tax_confirm": "your accountant or the Illinois Department of Revenue",
+  "sources": [
+   "- Toilet and urinal counts, the half-and-half split, urinal substitution, small-building exceptions and floor area per person: [Illinois Plumbing Code, 77 Ill. Adm. Code 890, Appendix A, Table B, Minimum Number of Plumbing Fixtures](https://www.ilga.gov/commission/jcar/admincode/077/07700890ZZ9996abR.html) and [Section 890.810](https://ilga.gov/ftp/JCAR/AdminCode/077/077008900F08100R.html), Illinois Department of Public Health, as amended effective April 24, 2014. Checked 2026-11-24.",
+   "- Cities and counties may adopt a plumbing code at least as strict as the state's: [Illinois Plumbing License Law, 225 ILCS 320/36](https://www.ilga.gov/Documents/legislation/ilcs/documents/022503200K36.htm). Checked 2026-11-24.",
+   "- No statewide building code, and the model code that applies where none is adopted: [Capital Development Board, Building Codes and Regulations](https://cdb.illinois.gov/business/codes/buildingcodesregulations.html) and [Capital Development Board Act, 20 ILCS 3105/10.09-1](https://www.ilga.gov/Documents/legislation/ilcs/documents/002031050K10.09-1.htm). Fire test for solid plastic partitions: 2021 International Building Code, Sections 803.9 and 803.1.1 and the definition of interior wall and ceiling finish, read on [UpCodes](https://up.codes/viewer/illinois/ibc-2021/chapter/8/interior-finishes). Checked 2026-11-24.",
+   "- Accessible stalls: [2018 Illinois Accessibility Code, 71 Ill. Adm. Code 400](https://cdb.illinois.gov/content/dam/soi/en/web/cdb/business/codes/illinoisaccessibilitycode/documents/2018-illinois-accessibility-code.pdf), Sections 213 and 604, compared with the [2010 ADA Standards for Accessible Design](https://www.ada.gov/law-and-regs/design-standards/2010-stds/). Architect's statement on work of $50,000 or more: [Environmental Barriers Act, 410 ILCS 25/5](https://www.ilga.gov/Documents/legislation/ilcs/documents/041000250K5.htm). Checked 2026-11-24.",
+   "- Single-user and all-gender restrooms: [Equitable Restrooms Act, 410 ILCS 35/25](https://www.ilga.gov/Documents/legislation/ilcs/documents/041000350K25.htm) and [410 ILCS 35/30](https://www.ilga.gov/Documents/legislation/ilcs/documents/041000350K30.htm). Checked 2026-11-24.",
+   "- Wages on public jobs: [Illinois Prevailing Wage Act, 820 ILCS 130/3](https://www.ilga.gov/Documents/legislation/ilcs/documents/082001300K3.htm) and the [Illinois Department of Labor's current prevailing rates](https://labor.illinois.gov/laws-rules/conmed/current-prevailing-rates.html). Checked 2026-11-24.",
+   "- Sales tax rate, out-of-state sellers and use tax: [Retailers' Occupation Tax Act, 35 ILCS 120/2-10](https://www.ilga.gov/Documents/legislation/ilcs/documents/003501200K2-10.htm) and [Illinois Department of Revenue, Sales & Use Taxes](https://tax.illinois.gov/research/taxinformation/sales/rot.html). Delivery charges: [86 Ill. Adm. Code 130.415](https://www.ilga.gov/commission/jcar/admincode/086/086001300D04150R.html). Installation charges: [86 Ill. Adm. Code 130.450](https://www.ilga.gov/commission/jcar/admincode/086/086001300D04500R.html). Construction contractors: [86 Ill. Adm. Code 130.1940](https://www.ilga.gov/commission/jcar/admincode/086/086001300S19400R.html). Checked 2026-11-24."
+  ],
+  "official_names": "Illinois Accessibility Code (71 Ill. Adm. Code 400), 2018 edition, with the 2010 ADA Standards for Accessible Design; no statewide building code (locally adopted codes; the current or most recent preceding International Building Code, excluding Chapters 11, 13 and 29, where none is adopted, under 20 ILCS 3105/10.09-1); Illinois Plumbing Code (77 Ill. Adm. Code 890), as amended effective April 24, 2014; Equitable Restrooms Act (410 ILCS 35)."
+ },
+ "sources_read": [
+  {
+   "url": "https://www.ilga.gov/commission/jcar/admincode/077/07700890ZZ9996abR.html",
+   "official": true
+  },
+  {
+   "url": "https://ilga.gov/ftp/JCAR/AdminCode/077/077008900F08100R.html",
+   "official": true
+  },
+  {
+   "url": "https://idph.illinois.gov/envhealth/pdf/SOS%20Official%20Version%20Part%20890%20Plumbing%20Code%20A5%20Paper%206%2018%2014.pdf",
+   "official": true
+  },
+  {
+   "url": "https://dph.illinois.gov/content/dam/soi/en/web/idph/files/890-plumbing-dph-second-notice-text-112219.pdf",
+   "official": true,
+   "note": "2019 rulemaking text; searched for Table B and 890.810 changes, none found"
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/illinois/Ill-Admin-Code-tit-77-SS-890.810",
+   "official": false
+  },
+  {
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/022503200K35.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/022503200K36.htm",
+   "official": true
+  },
+  {
+   "url": "https://cdb.illinois.gov/business/codes/buildingcodesregulations.html",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/002031050K10.09-1.htm",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/illinois/ibc-2021/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/illinois/ibc-2021/chapter/2/definitions",
+   "official": false
+  },
+  {
+   "url": "https://cdb.illinois.gov/content/dam/soi/en/web/cdb/business/codes/illinoisaccessibilitycode/documents/2018-illinois-accessibility-code.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/041000250K5.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/041000350K10.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/041000350K15.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/041000350K20.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/041000350K25.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/041000350K30.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/077500050K5-102.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/077500050K5-103.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/082001300K2.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/082001300K3.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/082001300K4.htm",
+   "official": true
+  },
+  {
+   "url": "https://labor.illinois.gov/laws-rules/conmed/prevailing-wage-act.html",
+   "official": true
+  },
+  {
+   "url": "https://labor.illinois.gov/faqs/prevailing-wage-faq.html",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003501200K2-10.htm",
+   "official": true
+  },
+  {
+   "url": "https://tax.illinois.gov/research/taxinformation/sales/rot.html",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/commission/jcar/admincode/086/086001300D04150R.html",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/commission/jcar/admincode/086/086001300D04500R.html",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/commission/jcar/admincode/086/086001300S19400R.html",
+   "official": true
+  },
+  {
+   "url": "https://www.ilga.gov/commission/jcar/admincode/086/086001300S20750R.html",
+   "official": true
+  }
+ ],
+ "access_note_for_agents": "ilga.gov serves its certificate without the intermediate (Sectigo Public Server Authentication CA OV R40), so curl fails with 'unable to get local issuer certificate' and WebFetch returns 503. The pages were read with full verification by adding that intermediate (from the certificate's own issuer URL, verified against the trusted root) to the CA file. A browser opens them normally.",
+ "to_confirm": [
+  "Chicago has its own plumbing and building codes; the state table is the floor. The city agent should read Chicago's fixture table, interior finish rule and any all-gender restroom ordinance.",
+  "Whether the men's urinal numbers in Table B for food service (1 for 1-150 males) and secondary schools (1 per 40) are required in addition to the men's water closets, as read here, and whether a part of 150 adds a second urinal at 200 men: Illinois Department of Public Health, Plumbing Program, or the local plumbing inspector.",
+  "How 'add 1 fixture per restroom for each additional 50' works where a building has several restrooms per sex (read here as one more fixture per sex): same office.",
+  "Public K-12 schools fall under the Illinois State Board of Education's Health/Life Safety Code (per the Capital Development Board page); it was not read. Confirm which fixture counts and building code apply to a public school project with the regional office of education.",
+  "The local building code decides whether the HDPE fire test applies; the 2024 IBC wording was not read, and the 2021 text was read on UpCodes, not on ICC's site.",
+  "Whether the Department of Public Health has adopted rules implementing 410 ILCS 35/25 and 35/30 (signage wording, stall divider details), and how the plumbing code's 'separate facilities for males and females' line is applied alongside Section 30.",
+  "Use restrictions: no restricting statute was found in the acts read; this is not a search of every Illinois statute or of school rules.",
+  "Prevailing wage: no dollar threshold appears in Sections 2 to 4 or the Department's FAQ; the rest of the Act was not read. County carpenter rates are for the city agent, from the Department of Labor's rates page.",
+  "Sales tax: whether installed toilet partitions are 'incorporated into a structure' (contractor pays use tax, no tax to the customer) or trade fixtures (taxable sale), and how labor-only installation by a separate installer is treated: Illinois Department of Revenue. The $100,000 or 200-transaction test is quoted from the Department's page as read on 2026-11-24; how Next Partitions itself collects Illinois tax is for Abe's accountant.",
+  "The Illinois Accessibility Code comparison covered Sections 213, 603 to 605, 609, 216.8 and 703.7 by text; figures and other sections (signs in 216 and 703 beyond 703.7, baby changing) were not compared."
+ ]
+}
