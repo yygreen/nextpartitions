@@ -1,0 +1,469 @@
+{
+ "slug": "miami",
+ "city": "Miami",
+ "state": "Florida",
+ "checked": "2026-11-24",
+ "labor": {
+  "confidence": "medium",
+  "confidence_note": "U.S. figures read in the BLS May 2025 national file (official). Metro figures read on a secondary copy of the BLS May 2025 metro file (wagedex.com), because bls.gov blocked the metro file, the data.bls.gov table and the public API (daily limit reached). The secondary page's U.S. figures (employment 670,090; median annual $60,580) match the BLS file exactly. The metro mean HOURLY wage is not shown on the secondary page: it is derived from the mean annual wage ($54,030 / 2,080 hours, the BLS convention).",
+  "occupation": "47-2031 Carpenters",
+  "release": "May 2025 OEWS (published 2026-05-15)",
+  "metro": {
+   "bls_area_name": "Miami-Fort Lauderdale-West Palm Beach, FL",
+   "bls_area_code": "33100",
+   "employment": 10100,
+   "mean_hourly": 25.98,
+   "mean_hourly_derived": true,
+   "mean_annual": 54030,
+   "median_hourly": 24.79,
+   "median_annual": 51570,
+   "pct10_hourly": 18.51,
+   "pct25_hourly": 21.65,
+   "pct75_hourly": 29.32,
+   "pct90_hourly": 34.87,
+   "url": "https://wagedex.com/jobs/carpenters/metro/miami-fort-lauderdale-west-palm-beach-fl",
+   "official": false,
+   "quote": "Occupational Employment and Wage Statistics, metropolitan and nonmetropolitan area file, May 2025",
+   "official_url_to_verify": "https://data.bls.gov/oes/#/area/0033100/2025"
+  },
+  "us": {
+   "employment": 670090,
+   "mean_hourly": 31.55,
+   "mean_annual": 65630,
+   "median_hourly": 29.12,
+   "median_annual": 60580,
+   "url": "https://www.bls.gov/oes/special-requests/oesm25nat.zip",
+   "official": true,
+   "quote": "national_M2025_dl.xlsx row: U.S. | 47-2031 | Carpenters | TOT_EMP 670090 | H_MEAN 31.55 | A_MEAN 65630 | H_MEDIAN 29.12 | A_MEDIAN 60580"
+  },
+  "pct_vs_us_mean": -17.7,
+  "pct_vs_us_median": -14.9,
+  "context": {
+   "fact": "BLS's own Miami release gives the wider construction and extraction group: $27.95 mean hourly in the Miami metro against $31.42 nationally (May 2025). It does not list carpenters.",
+   "url": "https://www.bls.gov/regions/southeast/news-release/2026/occupationalemploymentandwages_miami_20260707.htm",
+   "official": true,
+   "quote": "Construction and extraction ... 3.9 [percent of Miami employment] ... $27.95 [Miami mean hourly wage] ... $31.42 [United States] (Table A, May 2025; figures as read through a page summary, not copied character for character)"
+  }
+ },
+ "public_job_wage": {
+  "confidence": "high",
+  "summary": "No state prevailing wage law (repealed 1979). State law now bars counties, cities and school districts from setting wage rates on public works paid with state or local money. Miami-Dade County's Responsible Wages and Benefits ordinance still publishes a schedule, but by the county's own account it now reaches only county contracts awarded before 2024-07-01 and certain surtax-funded projects and leases awarded before 2026-09-30. On federally funded or assisted work over $2,000 the Davis-Bacon rate applies.",
+  "state_law": {
+   "fact": "Florida has no state prevailing wage law; it was repealed in 1979.",
+   "url": "https://www.dol.gov/agencies/whd/state/prevailing-wages",
+   "official": true,
+   "quote": "Florida - repealed in 1979",
+   "note": "The DOL page says it was last revised January 1, 2023."
+  },
+  "state_preemption": [
+   {
+    "fact": "The state and any political subdivision (the definition names counties, cities and school districts) may not require a contractor on a public works project paid with state or local funds to pay a set wage or provide set benefits, except as required by federal or state law.",
+    "section": "s. 255.0992(2)(b), Florida Statutes (2025)",
+    "url": "https://www.flsenate.gov/Laws/Statutes/2025/255.0992",
+    "official": true,
+    "quote": "Except as required by federal or state law, the state or any political subdivision that contracts for a public works project may not take the following actions: ... (b) Require that a contractor, subcontractor, or material supplier or carrier engaged in a public works project: 1. Pay employees a predetermined amount of wages or prescribe any wage rate; 2. Provide employees a specified type, amount, or rate of employee benefits",
+    "definition_quote": "“Public works project” means an activity that is paid for with any local or state-appropriated funds and that consists of the construction, maintenance, repair, renovation, remodeling, or improvement of a building ... owned in whole or in part by any political subdivision.",
+    "exception_quote": "This section does not apply to the following: (a) Contracts executed under chapter 337. (b) A use authorized by s. 212.055(1) which is approved by a majority vote of the electorate of the county or by a charter amendment approved by a majority vote of the electorate of the county."
+   },
+   {
+    "fact": "From 2026-09-30 a political subdivision may not use its purchasing or contracting to control the wages or benefits its contractors pay. Contracts entered into before that date are not impaired.",
+    "section": "s. 218.077(2), Florida Statutes, as amended by s. 2, ch. 2024-80, effective September 30, 2026",
+    "url": "https://www.flsenate.gov/Laws/Statutes/2025/218.077",
+    "official": true,
+    "quote": "A political subdivision may not through its purchasing or contracting procedures seek to control or affect the wages or employment benefits provided by its vendors, contractors, service providers, or other parties doing business with the political subdivision.",
+    "saving_quote": "“[t]he amendments to s. 218.077, Florida Statutes, by this act, do not impair any contract entered into before September 30, 2026.”"
+   }
+  ],
+  "county_ordinance": {
+   "name": "Miami-Dade County Responsible Wages and Benefits, s. 2-11.16, Code of Miami-Dade County",
+   "threshold": "County construction contracts worth more than $100,000; privately funded construction on county-owned land valued at more than $5 million",
+   "current_reach": "County construction contracts awarded before July 1, 2024; surtax-funded county projects and leases awarded before Sept. 30, 2026",
+   "url": "https://www.miamidade.gov/global/strategic-procurement/responsible-wages-benefits.page",
+   "official": true,
+   "quote": "These standards apply to: County construction contracts worth more than $100,000 Privately funded construction on County-owned land valued at more than $5 million",
+   "quote_limits": "A 2024 change to Florida law, Section 255.0992, limited Responsible Wages and Benefits requirements to: County construction contracts awarded before July 1, 2024 Surtax-funded County projects Leases for privately funded construction on County-owned land Another change to state law, Section 218.077, effective Sept. 30, further prevents the County from requiring these wages and benefits on new contracts or leases. However, this did not impact: Contracts awarded before July 1, 2024 Surtax-funded projects and leases awarded before Sept. 30, 2026",
+   "carpenter_rate_2026": {
+    "schedule": "Miami-Dade County Responsible Wages and Benefits Schedule 2026, \"Building Construction\", Carpenters (pages 2-4)",
+    "classification": "Carpenter",
+    "basic_hourly": 28.2,
+    "health_per_hour": 5.65,
+    "pension_per_hour": 8.15,
+    "fringe_total": 13.8,
+    "combined": 42.0,
+    "effective": "2026-01-01 (rates are reviewed each January 1; the rate in force on January 1 of the year the work is done applies)",
+    "url": "https://www.miamidade.gov/resources/management/documents/2026-rwb-building-schedule.pdf",
+    "official": true,
+    "quote": "Carpenter $ 28.20 $ 5.65 $ 8.15 $ 42.00",
+    "covers_toilet_partitions_quote": "Windows, Walls and Partitions The installation, erection and/or application of all material component parts of wall and partitions ... all toilet partitions and insulated translucent wall and ceiling systems, and all other necessary or related work.",
+    "rule_quote": "For any classification of workers, the hourly rate paid must equal the sum of the base rate and the fringe benefit rates listed for that classification in the Wages and Benefits Schedule."
+   }
+  },
+  "davis_bacon": {
+   "applies_to": "Federally funded or assisted construction contracts over $2,000",
+   "threshold_usd": 2000,
+   "threshold_url": "https://www.dol.gov/agencies/whd/government-contracts/construction",
+   "threshold_quote": "apply to contractors and subcontractors performing on federally funded or assisted contracts in excess of $2,000",
+   "determination": "General Decision Number FL20260215, Modification 1, published 05/18/2026 (Modification 0: 01/02/2026). State: Florida. Construction type: Building. County: Miami-Dade.",
+   "classification": "CARPENTER, INCLUDES ACOUSTICAL CEILING INSTALLATION, DRYWALL FINISHING/TAPING, DRYWALL HANGING, FORM WORK, METAL STUD INSTALLATION",
+   "rate_identifier": "SUFL2014-024 08/16/2016 (survey rate)",
+   "basic_hourly": 18.04,
+   "fringe": 3.24,
+   "total": 21.28,
+   "url": "https://sam.gov/wage-determination/FL20260215/1",
+   "data_url": "https://sam.gov/api/prod/wdol/v1/wd/FL20260215/1",
+   "official": true,
+   "quote": "CARPENTER, INCLUDES ACOUSTICAL CEILING INSTALLATION, DRYWALL FINISHING/TAPING, DRYWALL HANGING, FORM WORK, METAL STUD INSTALLATION.........$ 18.04 3.24",
+   "note": "Toilet partition installation is not named in the federal classification (the county schedule does name it under Carpenters); the contracting agency decides the classification. The determination also notes Executive Order 13658's $13.65 minimum applies only to certain older contracts."
+  },
+  "schools_and_city_buildings": "A Miami-Dade public school or City of Miami project paid with state or local money carries no required wage rate (s. 255.0992 names school districts and municipalities). A required rate comes only from federal funding (Davis-Bacon) or from a county contract still under the Responsible Wages ordinance. No Miami-Dade County Public Schools or City of Miami page was read on this."
+ },
+ "access_differences": [
+  {
+   "point": "Sink inside the wheelchair accessible stall (new construction)",
+   "state_section": "s. 553.504(5)(a), Florida Statutes; carried in the Florida accessibility code as 604.8.1.6 Lavatory (section number read in the official 2012 edition)",
+   "state_requirement": "In new construction the wheelchair accessible toilet compartment must contain its own accessible lavatory, wall-mounted, at least 19 by 17 inches nominal, placed so it does not overlap the stall's required clear floor space. It counts toward the building's required fixture count. Practical effect: the stall has to be larger than the federal 60-inch minimum.",
+   "state_quote": "The wheelchair accessible toilet compartment must contain an accessible lavatory within it, which must be at least 19 inches wide by 17 inches deep, nominal size, and wall-mounted. The lavatory shall be mounted so as not to overlap the clear floor space areas required by s. 604 of the standards for the wheelchair accessible toilet compartment and comply with s. 606 of the standards. Such lavatories shall be counted as part of the required fixture count for the building.",
+   "state_url": "https://www.flsenate.gov/Laws/Statutes/2025/553.504",
+   "federal_section": "2010 ADA Standards 604.8.1, 213.3.4 and Advisory 213.3.1",
+   "federal_requirement": "No lavatory is required inside the compartment. One may be there, but the room's required accessible lavatory may not be the one in the compartment.",
+   "federal_quote": "A toilet compartment may also contain a lavatory. ... 213.3.4 Lavatories Where lavatories are provided, at least one shall comply with 606 and shall not be located in a toilet compartment.",
+   "federal_url": "https://www.access-board.gov/ada/#ada-604_8",
+   "applies_to": "New construction only (statute: \"required bathing rooms and toilet rooms in new construction\")",
+   "official": true
+  },
+  {
+   "point": "Toilet position in the wheelchair accessible stall (new construction)",
+   "state_section": "s. 553.504(5)(b), Florida Statutes; carried in the Florida accessibility code as 604.8.1.7 Water closet (section number read in the official 2012 edition)",
+   "state_requirement": "In new construction the toilet in the wheelchair accessible stall must sit in the corner diagonal to the stall door.",
+   "state_quote": "The accessible water closet within the wheelchair accessible toilet compartment must be located in the corner, diagonal to the door.",
+   "state_url": "https://www.flsenate.gov/Laws/Statutes/2025/553.504",
+   "federal_section": "2010 ADA Standards 604.8.1.2 and 604.8.1.3",
+   "federal_requirement": "The door goes in the front partition or in the side wall or partition farthest from the toilet, within 4 inches of the far corner; a left-hand or right-hand approach is allowed. The federal text does not use the 'corner, diagonal to the door' rule.",
+   "federal_quote": "Doors shall be located in the front partition or in the side wall or partition farthest from the water closet. Where located in the front partition, the door opening shall be 4 inches (100 mm) maximum from the side wall or partition farthest from the water closet.",
+   "federal_url": "https://www.access-board.gov/ada/#ada-604_8",
+   "applies_to": "New construction only",
+   "official": true
+  }
+ ],
+ "access_notes": {
+  "confidence": "medium",
+  "confidence_note": "The two differences are read in the current Florida Statutes (official) and the federal text on access-board.gov (official). The 8th Edition (2023) code volume itself could not be opened (codes.iccsafe.org returned 403; UpCodes showed the accessibility volume only behind a sign-in), so the code section numbers 604.8.1.6 and 604.8.1.7 and the 'same as federal' finding for the other points rest on the official 2012 edition PDF on floridabuilding.org.",
+  "basis": "s. 553.504 says the federal ADA Standards are adopted (s. 553.503) and Florida's additional requirements apply 'if such requirements provide increased accessibility'. Its stall-related additions are only the two in subsection (5).",
+  "basis_quote": "Notwithstanding the adoption of the Americans with Disabilities Act Standards for Accessible Design pursuant to s. 553.503, all buildings, structures, and facilities in this state must meet the following additional requirements if such requirements provide increased accessibility",
+  "basis_url": "https://www.flsenate.gov/Laws/Statutes/2025/553.504",
+  "code_text_2012": {
+   "url": "https://www.floridabuilding.org/fbc/committees/accessibility/aac/changes_to_law/florida_accessibility_code_2012_icc_final.pdf",
+   "official": true,
+   "quote": "604.8.1.6 Lavatory. In new construction, the wheelchair accessible toilet compartment shall contain an accessible lavatory within it, which must be at least 19 inches wide by 17 inches deep, nominal size, and wall-mounted. ... 604.8.1.7 Water closet. In new construction, the accessible water closet within the wheelchair accessible compartment shall be located in the corner, diagonal to the door.",
+   "advisory_quote": "While the Florida lavatory requirement and water closet placement apply only to new construction, they are desirable for all wheelchair accessible compartments and should be considered where feasible."
+  },
+  "same_as_federal": "In the official 2012 edition, stall size (604.8.1.1), doors (604.8.1.2), toe clearance (604.8.1.4), grab bars (604.8.1.5), the count of accessible and ambulatory stalls (213.3.1) and unisex toilet rooms (213.2.1) carry the federal wording. Ambulatory stalls, children's stalls and door signs: no Florida difference found. Not re-read in the 8th Edition.",
+  "waiver": "The Florida Building Commission may waive Florida-specific requirements down to the federal standard, not below it (2012 and 2026 prefaces).",
+  "ninth_edition": {
+   "fact": "The Florida Building Code, Accessibility, 9th Edition (2026) takes effect December 31, 2026. Its text was not read (only the publisher's contents and preface). s. 553.504(5) is unchanged (last amended 2011), so the two stall rules stand; whether the 9th Edition changes anything else for stalls is not confirmed. The Commission's published 'Analysis of Changes' set has no Accessibility volume.",
+   "url": "https://shop.iccsafe.org/media/wysiwyg/material/5603L26-TOC.pdf",
+   "official": false,
+   "quote": "indicate a change from the requirements of the Florida Building Code, Accessibility, 8th Edition (2023) to the Florida Building Code, Accessibility, 9th Edition (2026) effective December 31, 2026."
+  }
+ },
+ "restroom_rules": {
+  "confidence": "medium",
+  "confidence_note": "The statute is read in full on the Florida Senate site (official). The 8th Edition plumbing code sections are read on UpCodes (secondary) because codes.iccsafe.org returned 403; the 9th Edition changes are read in the Florida Building Commission's own Analysis of Changes (official). No Miami-Dade County or City of Miami restroom-designation ordinance was found; neither code was read (Municode blocks automated access).",
+  "single_user": {
+   "fact": "Under the 8th Edition (2023) plumbing code, single-user toilet rooms and family or assisted-use toilet rooms must be identified as available to all persons regardless of sex, and they count toward the required fixture total.",
+   "section": "Florida Building Code, Plumbing, 8th Edition (2023), 403.1.2 (the Building volume carries the same provision as 2902.1.2)",
+   "url": "https://up.codes/viewer/florida/fl-plumbing-code-2023/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false,
+   "quote": "Single-user toilet and bathing rooms, and family or assisted-use toilet and bathing rooms, shall be identified as being available for use by all persons regardless of their sex.",
+   "related": [
+    {
+     "section": "403.2 exception 5",
+     "quote": "Separate facilities shall not be required to be designated by sex where single-user toilets rooms are provided in accordance with Section 403.1.2."
+    },
+    {
+     "section": "403.2.1",
+     "quote": "Family or assisted-use toilet facilities shall not be required to be identified for exclusive use by either sex"
+    },
+    {
+     "section": "405.3.4 exception 1",
+     "quote": "Water closet compartments shall not be required in a single-occupant toilet room with a lockable door."
+    },
+    {
+     "section": "403.4 Signage",
+     "quote": "Required public facilities shall be provided with signs that designate the sex, as required by Section 403.2. Signs shall be readily visible and located near the entrance to each toilet facility."
+    }
+   ],
+   "federal_accessibility_note": "Unisex toilet room doors need privacy latches (2010 ADA Standards and Florida code 213.2.1: \"Doors to unisex toilet rooms and unisex bathing rooms shall have privacy latches.\")"
+  },
+  "multi_user_all_gender": {
+   "fact": "The 8th Edition plumbing code allows a multi-user room designed for both sexes in place of separate rooms, if each toilet is in a compartment with walls or partitions and a door that ensure privacy, and urinals are visually separated or each in a stall. The code text read does not call for full-height partitions, gap-free doors or occupancy indicators.",
+   "section": "Florida Building Code, Plumbing, 8th Edition (2023), 403.2 exception 6 and 405.3.4",
+   "url": "https://up.codes/viewer/florida/fl-plumbing-code-2023/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false,
+   "quote": "Separate facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by both sexes and privacy for water closets is provided in accordance with Section 405.3.4. Urinals shall be located in an area visually separated from the remainder of the facility or each urinal that is provided shall be located in a stall.",
+   "compartment_quote": "Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy.",
+   "urinal_partition_quote": "The walls or partitions shall begin at a height not greater than 12 inches (305 mm) from and extend not less than 60 inches (1524 mm) above the finished floor surface.",
+   "door_locking_quote": "Where a toilet room is provided for the use of multiple occupants, the egress door for the room shall not be lockable from the inside of the room.",
+   "covered_entities_note": "In buildings covered by s. 553.865 (below), the statute's only all-gender option is a 'unisex restroom', defined as a room for a single occupant or a family with floor-to-ceiling walls and a full, locking door. A multi-user room is a 'restroom' under the statute and must be designated for females or for males."
+  },
+  "ninth_edition_changes": {
+   "effective": "2026-12-31",
+   "url": "https://www.floridabuilding.org/fbc/thecode/2026_Code_Development/Analysis_Code_Changes/Analysis_of_Changes_9th_Edition-2026_FBC_Plumbing.pdf",
+   "official": true,
+   "items": [
+    {
+     "section": "403.4 Signage",
+     "quote": "Section revised to require public toilet facilities to be provided with signs that indicate whether the facility is to be used by males, by females, or by all persons regardless of sex."
+    },
+    {
+     "section": "403.1.2",
+     "quote": "New language has been added requiring the number of fixtures in single-user toilets, single-user bathing fixtures and family or assisted-use toilets to be deducted proportionately from the required gender ratios of Table 403.1."
+    },
+    {
+     "section": "403.2.1 Family or assisted-use toilet facilities serving as separate facilities",
+     "quote": "Section deleted."
+    },
+    {
+     "section": "403.2 / 405.3.5",
+     "quote": "Privacy requirements for urinals in Exception 6 have been deleted and relocated ... Privacy requirements for urinals have been added."
+    },
+    {
+     "section": "403.3.6 Door locking",
+     "quote": "A new exception permits the egress door of a multiple-occupant toilet room to be lockable from inside the room where three criteria are met."
+    },
+    {
+     "section": "202 Definitions",
+     "quote": "Two new sub-definitions of toilet facility have been added – Multiple-user toilet facility and single-user toilet facility."
+    }
+   ],
+   "note": "The Building volume's analysis lists the same changes at 2902.1.2, 2902.2, 2902.2.1, 2902.3.6 and 2902.4 (https://www.floridabuilding.org/fbc/thecode/2026_Code_Development/Analysis_Code_Changes/Analysis_of_changes_9th_Edition-2026-FBC-Building.pdf). The 9th Edition code text itself was not read."
+  },
+  "state_law_restricting_use": {
+   "name": "Safety in Private Spaces Act, s. 553.865, Florida Statutes (ch. 2023-106, in force July 1, 2023; amended 2024)",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2025/553.865",
+   "official": true,
+   "covered_buildings": "Correctional institutions, detention facilities, educational institutions (K-12 public, charter and private schools; state universities, Florida College System institutions, career centers, licensed independent colleges), juvenile justice residential and detention facilities, and public buildings (owned or leased by the state, a state agency or a political subdivision). Privately owned commercial buildings such as offices, restaurants and shops are not in the list.",
+   "covered_quote": "“Covered entity” means any: 1. Correctional institution; 2. Detention facility; 3. Educational institution; 4. Maximum-risk residential facility ... or 5. Public building.",
+   "public_building_quote": "“Public building” means a building comfort-conditioned for occupancy which is owned or leased by the state, a state agency, or a political subdivision.",
+   "what_owner_must_provide_quote": "A covered entity that maintains a water closet must, at a minimum, have: (a) A restroom designated for exclusive use by females and a restroom designated for exclusive use by males; or (b) A unisex restroom.",
+   "unisex_restroom_quote": "“Unisex restroom” means a room that includes one or more water closets and that is intended for a single occupant or a family, is enclosed by floor-to-ceiling walls, and is accessed by a full door with a secure lock that prevents another individual from entering while the room is in use.",
+   "restroom_quote": "“Restroom” means a room that includes one or more water closets. This term does not include a unisex restroom.",
+   "water_closet_quote": "“Water closet” means a toilet or urinal.",
+   "use_rule_quote": "For purposes of this section, a person may only enter a restroom or changing facility designated for the opposite sex under the following circumstances:",
+   "use_exceptions": "Assisting or chaperoning a child under 12, an elderly person or a person with a disability; law enforcement or regulatory purposes; emergency help; custodial, maintenance or inspection work when not in use; or the designated room is out of order and the other contains no person of the opposite sex.",
+   "sex_definition_quote": "“Sex” means the classification of a person as either female or male based on the organization of the body of such person for a specific reproductive role, as indicated by the person’s sex chromosomes, naturally occurring sex hormones, and internal and external genitalia present at birth.",
+   "enforcement_quote": "Beginning July 1, 2024, the Attorney General may bring a civil action to enforce this section against any covered entity. The Attorney General may seek injunctive relief, and, for any covered entity found to have willfully violated this section, the Attorney General may seek to impose a fine of up to $10,000.",
+   "changing_facilities_quote": "A covered entity that maintains a changing facility must, at a minimum, have: (a) A changing facility designated for exclusive use by females and a changing facility designated for exclusive use by males; or (b) A unisex changing facility."
+  },
+  "city_and_county": {
+   "fact": null,
+   "note": "No Miami-Dade County or City of Miami ordinance on single-user or all-gender restroom designation was found in one search; the county and city codes were not read. Ask Miami-Dade County Regulatory and Economic Resources (building) or the City of Miami Building Department."
+  }
+ },
+ "sales_tax": {
+  "confidence": "high",
+  "rate": {
+   "combined_pct": 7.0,
+   "parts": [
+    {
+     "level": "state",
+     "pct": 6.0
+    },
+    {
+     "level": "county (Miami-Dade discretionary sales surtax)",
+     "pct": 1.0,
+     "components": [
+      {
+       "pct": 0.5,
+       "effective": "1992-01-01",
+       "expires": null
+      },
+      {
+       "pct": 0.5,
+       "effective": "2003-01-01",
+       "expires": null
+      }
+     ]
+    },
+    {
+     "level": "city",
+     "pct": 0.0,
+     "note": "The Department's rate table lists surtax by county only; no City of Miami sales tax appears."
+    }
+   ],
+   "effective": "Current 1% county total in place since 2003-01-01; unchanged for calendar year 2026",
+   "state_url": "https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx",
+   "state_quote": "Florida's general state sales tax rate is 6%",
+   "surtax_url": "https://floridarevenue.com/Forms_library/current/dr15dss_26.pdf",
+   "surtax_quote": "Discretionary Sales Surtax Information for Calendar Year 2026 (DR-15DSS, R. 11/25): Miami-Dade 1% (.5%) Jan 1, 1992 None (.5%) Jan 1, 2003 None",
+   "official": true,
+   "surtax_cap": {
+    "fact": "The county surtax is charged only on the first $5,000 of the sales amount of an item of tangible personal property, so on a large order the 1% county part stops at $50 per item; the 6% state tax has no cap.",
+    "url": "https://floridarevenue.com/taxes/taxesfees/Pages/discretionary.aspx",
+    "quote": "Discretionary sales surtax applies to the first $5,000 of the sales amount on the sale, use, lease, rental, or license to use any item of tangible personal property."
+   },
+   "which_county_rate": {
+    "url": "https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx",
+    "quote": "The county surtax rate applies to a taxable item or service delivered into a county imposing a surtax."
+   },
+   "not_done": "The Department's address lookup (pointmatch.floridarevenue.com) was not used for a specific downtown address (it is a form); 2027 rates (form due November 2026) were not yet posted at the expected address."
+  },
+  "applies_to": {
+   "shipped_without_installation_by_out_of_state_seller": {
+    "taxable": true,
+    "fact": "An out-of-state seller with more than $100,000 of taxable remote sales into Florida in the previous calendar year must collect the tax, county surtax included. If the seller does not collect it, the buyer owes use tax.",
+    "url": "https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx",
+    "quote": "Effective July 1, 2021, Florida law requires businesses making remote sales into the state to collect and electronically remit sales and use tax, including any applicable discretionary sales surtax, on those transactions if the business has made taxable remote sales in excess of $100,000 over the previous calendar year.",
+    "use_tax_quote": "If you buy a taxable item outside Florida and bring it into (or have it delivered into) Florida, and you did not pay sales tax on the item, you owe use tax.",
+    "surtax_quote": "If an out-of-state selling dealer sells and delivers into a Florida county with a discretionary surtax, surtax is collected at the county rate where delivery is made",
+    "surtax_url": "https://floridarevenue.com/taxes/taxesfees/Pages/discretionary.aspx"
+   },
+   "installation_labor_billed_separately": {
+    "taxable": "depends on how the job is classed",
+    "fact": "If the work is an improvement to real property under a lump-sum, cost-plus, fixed-fee, guaranteed-price or time-and-materials contract, the contractor charges the customer no tax (labor included) and pays tax on the materials it buys. If the item stays tangible personal property, tax is charged on the full price including installation. The publication does not name toilet partitions; it lists built-in cabinets, counters and lockers as fixtures (real property).",
+    "url": "https://floridarevenue.com/Forms_library/current/gt800067.pdf",
+    "quote": "Contractors and manufacturers who provide and install items of tangible personal property are considered to be retail dealers and: Should buy the materials tax-exempt for resale. Should charge sales tax on the full price, including installation, materials and any other charges.",
+    "fixture_quote": "When installing fixtures, the contractor: Should pay sales tax when buying the materials. Should not charge the customer tax on materials or labor. Types of fixtures include: Built-in cabinets, counters, or lockers",
+    "labor_only_quote": "If the job is “labor only” it is not taxable, but the repairer must document that no parts or other items were incorporated into or attached to the repaired item. [said of tangible personal property]"
+   },
+   "furnish_and_install_real_property_contract": {
+    "taxable": "contractor pays tax on materials; customer is not charged tax",
+    "url": "https://floridarevenue.com/Forms_library/current/gt800067.pdf",
+    "quote": "Under lump sum, cost plus, fixed fee, guaranteed price, or time-and-materials real property contracts, the contractor is the final consumer of materials and supplies and: Must pay sales tax to suppliers on all purchases, including those made for the contractor’s own use. Should not charge tax to the customer.",
+    "retail_sale_plus_installation_quote": "Retail sale plus installation contracts are contracts for improvements to real property where the contractor or subcontractor lists and prices in the contract all materials to be used before the work begins. ... A contractor who performs retail sale plus installation contracts: Should buy the materials tax-exempt for resale. Should charge the customer tax on all materials.",
+    "exempt_entities_quote": "The contractor cannot use an entity’s tax-exempt status to purchase materials used under a construction contract for the entity. Contractors owe tax on these purchases. However, the tax-exempt entity may buy the materials directly from the materials vendor and pay no tax when certain conditions are met",
+    "publication": "Florida Department of Revenue, GT-800067 R.09/14, Sales and Use Tax on Construction, Improvements, Installations and Repairs (in the Department's current forms library)"
+   }
+  }
+ },
+ "sources_read": [
+  {
+   "url": "https://www.bls.gov/oes/special-requests/oesm25nat.zip",
+   "official": true,
+   "note": "BLS OEWS May 2025 national file; carpenter row read from the spreadsheet."
+  },
+  {
+   "url": "https://wagedex.com/jobs/carpenters/metro/miami-fort-lauderdale-west-palm-beach-fl",
+   "official": false,
+   "note": "Copy of the BLS May 2025 metro file for carpenters in the Miami metro; used because bls.gov blocked the metro data. No mean hourly shown."
+  },
+  {
+   "url": "https://www.bls.gov/regions/southeast/news-release/2026/occupationalemploymentandwages_miami_20260707.htm",
+   "official": true,
+   "note": "BLS Miami release, May 2025: construction and extraction group only."
+  },
+  {
+   "url": "https://www.bls.gov/oes/2025/may/oessrcma.htm",
+   "official": true,
+   "note": "Confirms the area name and that the Miami table lives at data.bls.gov/oes/#/area/0033100/2025 (a script-driven page that could not be read)."
+  },
+  {
+   "url": "https://www.dol.gov/agencies/whd/state/prevailing-wages",
+   "official": true,
+   "note": "Florida prevailing wage law repealed in 1979 (page last revised 2023-01-01)."
+  },
+  {
+   "url": "https://www.flsenate.gov/Laws/Statutes/2025/255.0992",
+   "official": true,
+   "note": "No wage requirements on state or locally funded public works."
+  },
+  {
+   "url": "https://www.flsenate.gov/Laws/Statutes/2025/218.077",
+   "official": true,
+   "note": "Local wage preemption; contracting amendment effective 2026-09-30."
+  },
+  {
+   "url": "https://www.miamidade.gov/global/strategic-procurement/responsible-wages-benefits.page",
+   "official": true,
+   "note": "County page: thresholds and what state law left of the ordinance."
+  },
+  {
+   "url": "https://www.miamidade.gov/resources/management/documents/2026-rwb-building-schedule.pdf",
+   "official": true,
+   "note": "2026 county building wage schedule; carpenter rate and the scope naming toilet partitions."
+  },
+  {
+   "url": "https://sam.gov/wage-determination/FL20260215/1",
+   "official": true,
+   "note": "Davis-Bacon building determination for Miami-Dade, read through sam.gov's public data address (https://sam.gov/api/prod/wdol/v1/wd/FL20260215/1)."
+  },
+  {
+   "url": "https://www.dol.gov/agencies/whd/government-contracts/construction",
+   "official": true,
+   "note": "Davis-Bacon $2,000 threshold."
+  },
+  {
+   "url": "https://www.flsenate.gov/Laws/Statutes/2025/553.504",
+   "official": true,
+   "note": "Florida's additions to the federal accessibility standards."
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true,
+   "note": "2010 ADA Standards 213 and 604 text."
+  },
+  {
+   "url": "https://www.floridabuilding.org/fbc/committees/accessibility/aac/changes_to_law/florida_accessibility_code_2012_icc_final.pdf",
+   "official": true,
+   "note": "Official 2012 Florida accessibility code: section numbers 604.8.1.6/604.8.1.7 and the rest of 213/604. Older edition."
+  },
+  {
+   "url": "https://shop.iccsafe.org/media/wysiwyg/material/5603L26-TOC.pdf",
+   "official": false,
+   "note": "Publisher's contents and preface of the 9th Edition (2026) Accessibility volume: effective December 31, 2026."
+  },
+  {
+   "url": "https://www.flsenate.gov/Laws/Statutes/2025/553.865",
+   "official": true,
+   "note": "Safety in Private Spaces Act, full text."
+  },
+  {
+   "url": "https://up.codes/viewer/florida/fl-plumbing-code-2023/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false,
+   "note": "Florida Building Code, Plumbing, 8th Edition (2023) ch. 4 text (403, 405.3.4, 405.3.5). Secondary; ICC's site returned 403."
+  },
+  {
+   "url": "https://www.floridabuilding.org/fbc/thecode/2026_Code_Development/Analysis_Code_Changes/Analysis_of_Changes_9th_Edition-2026_FBC_Plumbing.pdf",
+   "official": true,
+   "note": "Commission's analysis of 9th Edition plumbing changes."
+  },
+  {
+   "url": "https://www.floridabuilding.org/fbc/thecode/2026_Code_Development/Analysis_Code_Changes/Analysis_of_changes_9th_Edition-2026-FBC-Building.pdf",
+   "official": true,
+   "note": "Commission's analysis of 9th Edition building changes (2902, 1210.2.2)."
+  },
+  {
+   "url": "https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx",
+   "official": true,
+   "note": "6% state rate, use tax, remote sales rule."
+  },
+  {
+   "url": "https://floridarevenue.com/taxes/taxesfees/Pages/discretionary.aspx",
+   "official": true,
+   "note": "County surtax rules and the $5,000 cap."
+  },
+  {
+   "url": "https://floridarevenue.com/Forms_library/current/dr15dss_26.pdf",
+   "official": true,
+   "note": "Surtax rates for calendar year 2026 (the 2025 form at .../dr15dss.pdf shows the same Miami-Dade line)."
+  },
+  {
+   "url": "https://floridarevenue.com/Forms_library/current/gt800067.pdf",
+   "official": true,
+   "note": "Contractors, real property improvements and installation (R.09/14)."
+  }
+ ],
+ "to_confirm": [
+  "Labor: read the Miami metro carpenter row on BLS's own table (https://data.bls.gov/oes/#/area/0033100/2025) in a browser and replace the derived mean hourly wage ($25.98 = $54,030 / 2,080) and the secondary median ($24.79).",
+  "Public jobs: ask Miami-Dade County Internal Compliance, Contracts Compliance & Monitoring (305-375-3153) whether a given county project still carries the Responsible Wages schedule; the county page's wording on surtax-funded projects after 2026-09-30 is brief. s. 2-11.16 of the county code itself was not read (Municode).",
+  "Public jobs: Miami-Dade County Public Schools and City of Miami procurement pages were not read; the statement that their locally funded jobs carry no wage rate rests on s. 255.0992.",
+  "Davis-Bacon: whether toilet partition installation falls under the listed CARPENTER classification on a federal job is for the contracting agency; the federal rate ($18.04 + $3.24) is a 2016 survey rate.",
+  "Accessibility: read 213 and 604.8 in the 8th Edition (2023) and 9th Edition (2026) Accessibility volumes (codes.iccsafe.org, browser) to confirm the section numbers 604.8.1.6 and 604.8.1.7 and that nothing else differs for stalls, ambulatory stalls, children's stalls or door signs.",
+  "Accessibility: the two Florida rules are for new construction; how the local building department treats a like-for-like partition replacement in an existing restroom is a phone-call item (Miami-Dade RER or City of Miami Building Department).",
+  "Restrooms: read Florida Building Code, Building 2902 and Plumbing 403/405 on ICC's site (8th Edition now; 9th Edition from 2026-12-31) to confirm the UpCodes text and the new 9th Edition signage wording.",
+  "Restrooms: how s. 553.865 and plumbing code 403.2 exception 6 (multi-user rooms for both sexes) fit together in a covered building is a question for the building official or counsel; the statute does not mention the code exception.",
+  "Restrooms: Miami-Dade County Code and City of Miami Code not read for any local single-user restroom signage rule.",
+  "Sales tax: whether installed toilet partitions are a 'fixture' (real property) or tangible personal property for Florida sales tax is not stated in GT-800067; confirm with the Florida Department of Revenue (Taxpayer Services 850-488-6800) or Rule 12A-1.051, F.A.C., which was not read.",
+  "Sales tax: confirm a specific delivery address in the Department's Address/Jurisdiction Database (pointmatch.floridarevenue.com), and check the 2027 DR-15DSS when posted."
+ ]
+}

@@ -1,0 +1,563 @@
+{
+ "slug": "seattle",
+ "city": "Seattle",
+ "state": "WA",
+ "checked": "2026-11-24",
+ "labor": {
+  "occupation": "47-2031 Carpenters",
+  "release": "May 2025 (BLS OEWS; the API labels the estimates year 2025, period A01 Annual)",
+  "metro_name": "Seattle-Tacoma-Bellevue, WA",
+  "metro_area_code": "0042660",
+  "metro_mean_hourly": 40.42,
+  "metro_median_hourly": 36.74,
+  "metro_employment": 14970,
+  "us_mean_hourly": 31.55,
+  "us_median_hourly": 29.12,
+  "pct_vs_us_mean": 28.1,
+  "pct_vs_us_median": 26.2,
+  "calc": "40.42 / 31.55 = 1.281 (mean); 36.74 / 29.12 = 1.262 (median)",
+  "url": "https://data.bls.gov/oes/#/area/0042660/2025",
+  "series": [
+   {
+    "id": "OEUM004266000000047203103",
+    "what": "Seattle metro, hourly mean wage",
+    "value": 40.42,
+    "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUM004266000000047203103?latest=true"
+   },
+   {
+    "id": "OEUM004266000000047203108",
+    "what": "Seattle metro, hourly median wage",
+    "value": 36.74,
+    "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUM004266000000047203108?latest=true"
+   },
+   {
+    "id": "OEUM004266000000047203101",
+    "what": "Seattle metro, employment",
+    "value": 14970,
+    "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUM004266000000047203101?latest=true"
+   },
+   {
+    "id": "OEUN000000000000047203103",
+    "what": "U.S., hourly mean wage",
+    "value": 31.55,
+    "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000047203103?latest=true"
+   },
+   {
+    "id": "OEUN000000000000047203108",
+    "what": "U.S., hourly median wage",
+    "value": 29.12,
+    "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000047203108?latest=true"
+   }
+  ],
+  "quote": "seriesID OEUM004266000000047203103, year 2025, period A01, periodName Annual, value 40.42",
+  "note": "Read from the BLS public API (v2, one series per request), which returned REQUEST_SUCCEEDED for each series. The bls.gov OEWS HTML tables returned 403 to scripts and now point to the JavaScript query tool at data.bls.gov/oes, which could not be read; the area name and code come from the link on BLS's May 2025 metropolitan area index (https://www.bls.gov/oes/2025/may/oessrcma.htm). The series ID was built by hand (OEU + M + area 0042660 + industry 000000 + occupation 472031 + datatype 03 mean / 08 median / 01 employment); the median matches the figure a secondary site (wagedex.com) publishes for this metro and occupation. The API response carries no table title, so open the query tool once in a browser to confirm the row before publishing.",
+  "confidence": "high"
+ },
+ "public_job_wage": {
+  "law": "Washington prevailing wage law, chapter 39.12 RCW, applies to public works of the state, counties, cities and school districts. The federal Davis-Bacon Act applies in addition where federal money is in the project.",
+  "law_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=39.12.020",
+  "law_quote": "The hourly wages to be paid to laborers, workers, or mechanics, upon all public works and under all public building service maintenance contracts of the state or any county, municipality or political subdivision created by its laws, shall be not less than the prevailing rate of wage for an hour's work in the same trade or occupation in the locality within the state where such labor is performed.",
+  "threshold": {
+   "amount": null,
+   "text": "No dollar threshold: the state law covers public works of any size.",
+   "url": "https://lni.wa.gov/licensing-permits/public-works-projects/awarding-agencies/",
+   "quote": "Small projects (no minimum dollar amount) such as maintenance and repairs including \"small works\" roster contracts.",
+   "related": "RCW 39.12.020 sets $10,000 only as the contract size above which the wage statement must be posted at the jobsite: \"For a contract in excess of ten thousand dollars, a contractor required to pay the prevailing rate of wage shall post in a location readily visible to workers at the jobsite\""
+  },
+  "trigger": {
+   "url": "https://lni.wa.gov/licensing-permits/public-works-projects/awarding-agencies/",
+   "quote": "Funded by any public dollars (direct or indirect) for any portion of the project?",
+   "second_quote": "A turn-key project? A turn-key project is private construction resulting from government agency agreement(s) to rent, lease, or purchase at least 50% of the project space."
+  },
+  "which_rate_applies": {
+   "url": "https://www.lni.wa.gov/licensing-permits/public-works-projects/prevailing-wage-rates/how-prevailing-wage-rates-are-developed",
+   "quote": "Prevailing wage rates are updated the first business day in August and February and take effect 30 days after publication.",
+   "second_quote": "The effective date for prevailing wage rate(s) is the date the prime contractor's bid is due",
+   "note": "Quotes relayed by the fetch tool's reader, not read as raw page text."
+  },
+  "trade_scope": {
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=296-127-01310",
+   "quote": "Build stairs and layout and install partitions and cabinets.",
+   "note": "WAC 296-127-01310, scope of work for Carpenters. It says 'partitions' in general, not toilet partitions; L&I decides the classification."
+  },
+  "state_rate": {
+   "county": "King",
+   "trade": "Carpenters",
+   "classification": "Carpenter (journey level)",
+   "total_hourly": null,
+   "basic_hourly": null,
+   "fringe_hourly": null,
+   "effective": null,
+   "url": "https://secure.lni.wa.gov/wagelookup/rates/journey-level-rates",
+   "status": "NOT READ. L&I publishes the rate only through its JavaScript lookup tool, which could not be read by script; no official copy of the current King County carpenter line was found.",
+   "format_note": "L&I publishes one combined figure per classification, not a basic rate and a fringe rate.",
+   "format_quote": "The PREVAILING WAGES listed here include both the hourly wage rate and the hourly rate of fringe benefits. On public works projects, worker's wage and benefit rates must add to not less than this total.",
+   "format_quote_url": "https://www.federalwaywa.gov/sites/default/files/2026-08/3_APX%20B_Journey%20Level%20Wages.pdf",
+   "latest_publications": {
+    "url": "https://secure.lni.wa.gov/wagelookup/wageCorrection/RatesPublication.aspx",
+    "quote": "09/09/2026 10/09/2026 Correction to prevailing wage rates for several counties throughout Washington. Trades impacted include Carpenters, Roofers, Ironworkers, Power Equipment Operators, and Power Equipment Operators - Underground Sewer & Water.",
+    "note": "Columns are Publish Date, Effective Date, Comment. The regular update before it was published 08/03/2026, effective 09/02/2026. The page doesn't say whether King County is one of the corrected counties, so any carpenter figure dated before 10/09/2026 may be out of date."
+   },
+   "who_to_ask": "L&I Prevailing Wage Section, 360-902-5335, PW1@Lni.wa.gov; or open the journey-level lookup in a browser: King County, Carpenters, today's date."
+  },
+  "federal_rate": {
+   "applies": "Only to work paid for with federal money (Davis-Bacon Act); shown because the state figure could not be read. Not the state rate.",
+   "determination": "WA20260108",
+   "modification": 1,
+   "date": "2026-05-18",
+   "construction_type": "Building",
+   "county": "King",
+   "classification": "CARPENTER (INCLUDES ACOUSTICAL CEILING MECHANIC & DRY HANGER)",
+   "identifier": "CARP0206-001 06/01/2025",
+   "basic_hourly": 63.98,
+   "fringe_hourly": 19.13,
+   "total_hourly": 83.11,
+   "url": "https://sam.gov/wage-determination/WA20260108/1",
+   "quote": "CARPENTER (INCLUDES ACOUSTICAL CEILING MECHANIC & DRY HANGER).........................................$ 63.98 19.13",
+   "note": "Read from sam.gov's own data service (https://sam.gov/api/prod/wdol/v1/wd/WA20260108/1), header 'General Decision Number: WA20260108 05/18/2026 ... Construction Types: Building ... Counties: Washington Counties of King'. sam.gov's search listed modification 1 as the active one on 2026-11-23. The rate block is dated 06/01/2025, so a newer modification may follow."
+  },
+  "confidence": "high for the law, the absence of a threshold and the federal rate; low for the state carpenter rate (not read, left null)"
+ },
+ "access_differences": [
+  {
+   "point": "Vertical grab bar beside the toilet",
+   "state_section": "ICC A117.1-2017 sections 604.5.1 and 604.5.1.2 (adopted by WAC 51-50-005 and 51-50-1101; applied to stalls by 604.9.6 and 604.10.4)",
+   "state_requirement": "The side wall needs an 18-inch vertical grab bar in addition to the horizontal one, in wheelchair stalls and on both sides of ambulatory stalls.",
+   "state_quote": "A vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall.",
+   "state_url": "https://up.codes/viewer/washington/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+   "federal_section": "2010 ADA Standards 604.5.1",
+   "federal_requirement": "Horizontal side wall bar only; no vertical bar.",
+   "federal_quote": "The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall.",
+   "federal_url": "https://www.access-board.gov/ada/",
+   "partition_impact": "The side partition or wall of an accessible stall needs backing for a second, vertical bar."
+  },
+  {
+   "point": "Toe clearance under the partitions of a wheelchair stall",
+   "state_section": "ICC A117.1-2017 section 604.9.5.1",
+   "state_requirement": "12 inches high and 8 inches deep under the front partition and one side partition, unless the stall is deeper than 64 inches (wall-hung toilet) or 67 inches (floor-mounted), or wider than 68 inches.",
+   "state_quote": "The front partition and at least one side partition of wheelchair accessible toilet compartments shall provide a toe clearance of 12 inches (305 mm) minimum above the floor and extending 8 inches (205 mm) beyond the compartment side face of the partition, exclusive of partition support members.",
+   "state_quote_2": "Toe clearance at the front partition is not required in a wheelchair accessible toilet compartment greater than 64 inches (1625 mm) in depth with a wall-hung water closet, or greater than 67 inches (1700 mm) in depth with a floor-mounted water closet.",
+   "state_quote_3": "Toe clearance at the side partition is not required in a wheelchair accessible toilet compartment greater than 68 inches (1725 mm) in width.",
+   "state_url": "https://up.codes/viewer/washington/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+   "federal_section": "2010 ADA Standards 604.8.1.4",
+   "federal_requirement": "9 inches high and 6 inches deep (12 inches high only in children's stalls); not required when the stall is deeper than 62 or 65 inches, or wider than 66 inches.",
+   "federal_quote": "The front partition and at least one side partition shall provide a toe clearance of 9 inches (230 mm) minimum above the finish floor and 6 inches (150 mm) deep minimum beyond the compartment-side face of the partition, exclusive of partition support members.",
+   "federal_quote_2": "Toe clearance at the front partition is not required in a compartment greater than 62 inches (1575 mm) deep with a wall-hung water closet or 65 inches (1650 mm) deep with a floor-mounted water closet. Toe clearance at the side partition is not required in a compartment greater than 66 inches (1675 mm) wide.",
+   "federal_url": "https://www.access-board.gov/ada/",
+   "partition_impact": "A standard-size wheelchair stall needs partitions mounted 12 inches off the floor, not 9; or a stall 2 inches deeper and wider than the federal no-toe-clearance sizes."
+  },
+  {
+   "point": "Share of stalls that must be accessible",
+   "state_section": "Seattle Building Code 1110.2.4 (2021 International Building Code text, adopted statewide through WAC 51-50)",
+   "state_requirement": "5 percent of the stalls in a restroom must be wheelchair accessible, and where toilets plus urinals total six or more, 5 percent must also be ambulatory stalls.",
+   "state_quote": "Where water closet compartments are provided in a toilet room or bathing room, at least 5 percent of the total number of compartments shall be wheelchair accessible. Where the combined total water closet compartments and urinals provided in a toilet room or bathing room is six or more, at least 5 percent of the total number of compartments shall be ambulatory accessible, provided in addition to the wheelchair-accessible compartment.",
+   "state_url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter11.pdf",
+   "federal_section": "2010 ADA Standards 213.3.1",
+   "federal_requirement": "One wheelchair stall per restroom, plus one ambulatory stall where there are six or more stalls or six or more toilets and urinals combined, whatever the size of the room.",
+   "federal_quote": "Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1. In addition to the compartment required to comply with 604.8.1, at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures.",
+   "federal_url": "https://www.access-board.gov/ada/",
+   "partition_impact": "The difference only shows above 20 stalls in one room: 21 to 40 stalls need two wheelchair and two ambulatory stalls in Washington, one of each federally."
+  },
+  {
+   "point": "Flush control height (Washington amendment)",
+   "state_section": "WAC 51-50-1101, subsection 1101.2.5, amending ICC A117.1 section 604.6 (Seattle Building Code 1102.1.3)",
+   "state_requirement": "Hand-operated flush controls no higher than 44 inches above the floor.",
+   "state_quote": "Flush controls shall be hand operated or automatic. Hand operated flush controls shall comply with Section 309, except the maximum height above the floor shall be 44 inches. Flush controls shall be located on the open side of the water closet.",
+   "state_url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-1101",
+   "federal_section": "2010 ADA Standards 604.6",
+   "federal_requirement": "Flush controls must meet the general rule for operable parts (section 309), with no 44-inch limit.",
+   "federal_quote": "Flush controls shall be hand operated or automatic. Hand operated flush controls shall comply with 309. Flush controls shall be located on the open side of the water closet except in ambulatory accessible compartments complying with 604.8.2.",
+   "federal_url": "https://www.access-board.gov/ada/",
+   "note": "The height section 309 itself allows (through the reach ranges of section 308) was not read; only the absence of a 44-inch limit in 604.6 was.",
+   "partition_impact": "None on the partitions; a plumbing fixture point."
+  },
+  {
+   "point": "Toilet paper dispenser position",
+   "state_section": "ICC A117.1-2017 section 604.7.1",
+   "state_requirement": "Dispenser outlet 24 to 42 inches from the rear wall (24 to 36 if above the grab bar) and at least 18 inches above the floor. Small dispensers (up to two rolls of 5 inches) may use the federal position instead.",
+   "state_quote": "Where the dispenser is located above the grab bar, the outlet of the dispenser shall be located within an area 24 inches (610 mm) minimum and 36 inches (915 mm) maximum from the rear wall. Where the dispenser is located below the grab bar, the outlet of the dispenser shall be located within an area 24 inches (610 mm) minimum and 42 inches (1065 mm) maximum from the rear wall. The outlet of the dispenser shall be located 18 inches (455 mm) minimum and 48 inches (1220 mm) maximum above the floor.",
+   "state_quote_2": "Exception: Toilet paper dispensers that accommodate a maximum of 2 toilet paper rolls of not more than 5-inch (125 mm) diameter each shall be permitted to be located 7 inches (180 mm) minimum and 9 inches (230 mm) maximum in front of the water closet measured to the centerline of the dispenser.",
+   "state_url": "https://up.codes/viewer/washington/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+   "federal_section": "2010 ADA Standards 604.7",
+   "federal_requirement": "Dispenser centerline 7 to 9 inches in front of the toilet; outlet 15 to 48 inches above the floor.",
+   "federal_quote": "Toilet paper dispensers shall comply with 309.4 and shall be 7 inches (180 mm) minimum and 9 inches (230 mm) maximum in front of the water closet measured to the centerline of the dispenser. The outlet of the dispenser shall be 15 inches (380 mm) minimum and 48 inches (1220 mm) maximum above the finish floor and shall not be located behind grab bars.",
+   "federal_url": "https://www.access-board.gov/ada/",
+   "partition_impact": "A large (jumbo-roll) dispenser on the side partition has to satisfy both rules at once; a small two-roll dispenser placed 7 to 9 inches in front of the toilet satisfies both."
+  },
+  {
+   "point": "Wheelchair symbol colours on signs (Washington amendment)",
+   "state_section": "WAC 51-50-1101, subsection 1101.2.6 (Seattle Building Code 1102.1.4)",
+   "state_requirement": "The wheelchair symbol must be white on blue.",
+   "state_quote": "All interior and exterior signs depicting the International Symbol of Accessibility shall be white on a blue background.",
+   "state_url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-1101",
+   "federal_section": "2010 ADA Standards 703.7.1",
+   "federal_requirement": "Any light-on-dark or dark-on-light contrast.",
+   "federal_quote": "Symbols of accessibility shall contrast with their background with either a light symbol on a dark background or a dark symbol on a light background.",
+   "federal_url": "https://www.access-board.gov/ada/",
+   "partition_impact": "Applies to restroom door signs that carry the symbol."
+  },
+  {
+   "point": "Family or assisted-use toilet room in large stores and assembly buildings",
+   "state_section": "Seattle Building Code 1110.2.1 and 1110.2.1.6 (2021 International Building Code text)",
+   "state_requirement": "Assembly and mercantile buildings that need six or more toilets in total must also have an accessible family or assisted-use toilet room, with a door that locks from inside and shows 'occupied'.",
+   "state_quote": "In assembly and mercantile occupancies, an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required.",
+   "state_quote_2": "Doors to family or assisted-use toilet and bathing rooms shall be securable from within the room and be provided with an “occupied” indicator.",
+   "state_url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter11.pdf",
+   "federal_section": "2010 ADA Standards 213.2 and 213.2.1",
+   "federal_requirement": "No requirement to provide a unisex room in new construction; where one is provided its door needs a privacy latch.",
+   "federal_quote": "Doors to unisex toilet rooms and unisex bathing rooms shall have privacy latches.",
+   "federal_url": "https://www.access-board.gov/ada/",
+   "partition_impact": "None on stall partitions; affects the room count in a remodel."
+  }
+ ],
+ "access_summary": {
+  "adoption": "Washington adopts ICC A117.1-2017 through the State Building Code (2021 International Building Code, chapter 11) with a short list of state amendments in WAC 51-50-1101; Seattle carries the same amendments in Seattle Building Code 1102.1. Of the state amendments, only the 44-inch flush control height and the white-on-blue symbol touch restrooms.",
+  "adoption_url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-1101",
+  "adoption_quote": "Buildings and facilities shall be designed and constructed to be accessible in accordance with this code and ICC A117.1, except those portions of ICC A117.1 amended by this section.",
+  "same_as_federal": [
+   "Wheelchair stall size (60 inches wide; 56 deep wall-hung, 59 deep floor-mounted)",
+   "Ambulatory stall size (60 deep, 35 to 37 wide) and grab bars on both sides",
+   "Self-closing door with a pull on both sides; 42 inches outside clearance for a latch-side approach",
+   "Children's stalls: 12-inch toe clearance, 59-inch depth, optional children's dimensions"
+  ],
+  "less_strict_than_federal_note": "A117.1-2017 also offers options the 2010 ADA Standards do not: an 'alternate' wheelchair stall 60 by 84 inches whose door may swing in (604.9.2.3 and 604.9.3 exception 3), and a second permitted door position (Table 604.9.3.1, 56 inches minimum from the side wall closest to the toilet). The ADA still applies to most commercial buildings, so the federal door position (within 4 inches of the far side partition, not swinging into the minimum stall area) governs there.",
+  "source_note": "A117.1-2017 text was read on UpCodes ('Washington Accessibility Code 2017', the ICC text with Washington's amendments merged in), a secondary copy: ICC's own site (codes.iccsafe.org) returned 403. The Washington amendments were read on the official WAC page and in Seattle's official code PDF. The 2010 ADA Standards were read on the U.S. Access Board's site.",
+  "confidence": "medium (state amendments and federal text: official; A117.1-2017 text: secondary copy)"
+ },
+ "restroom_rules": {
+  "single_user": {
+   "seattle_ordinance": {
+    "law": "Seattle Municipal Code chapter 14.07 (All-Gender Restroom Ordinance, in effect since August 14, 2015; signs required since March 9, 2016)",
+    "requirement": "In City buildings and places open to the public, a single-occupant restroom must be open to anyone and may not be signed for one sex; the sign must say so.",
+    "url": "https://seattle.gov/civilrights/laws-we-enforce/all-gender-restrooms",
+    "quote": "This law applies to City of Seattle buildings and public places in Seattle. Single occupant restrooms:",
+    "quote_2": "Must allow anyone to use them, regardless of sex or gender identity",
+    "quote_3": "Cannot be restricted to a specific sex or gender identity",
+    "signage_url": "https://seattle.gov/documents/Departments/CivilRights/Enforcement/all_gender-restrooms-rules-100515.pdf",
+    "signage_quote": "Signage should be permanent and clearly indicate that the restroom is open to all genders, with terms including but not limited to: All-Gender Restroom, Gender-Neutral Restroom, Unisex Restroom, Toilet, WC;",
+    "penalty_quote": "Failure to comply will result in a notice of violation and civil penalty of $125. If the respondent does not submit proof of compliance within 15 days of the first notice of violation, SOCR will issue a subsequent violation and a civil penalty of $300.",
+    "dates_url": "https://www.seattle.gov/documents/departments/gender/ocr-allgenderrestrooms-faq.pdf",
+    "dates_quote": "The ordinance allows business 180 days to voluntarily comply after the effective date of the ordinance, which was on August 14, 2015. All businesses must have appropriate signage as of March 9, 2016.",
+    "multi_stall_quote": "No, this legislation will only impact single-occupant restrooms - i.e. restrooms that are designed for use by one person at a time.",
+    "note": "Read on the Seattle Office for Civil Rights page, its FAQ (updated 02/03/16) and its administrative rules (the PDF is titled 'Proposed Administrative Rules', SHRR 100-010 to 100-030). The ordinance text itself (SMC 14.07 on Municode, Ordinance 124829 on the City Clerk's site) could not be opened: both block scripts. Section numbers inside chapter 14.07 are therefore not recorded."
+   },
+   "building_code": {
+    "section": "Seattle Building Code 2902.1.2 (2021 International Building Code text)",
+    "requirement": "Single-user toilet rooms count toward the required fixture total and must be identified as open to everyone.",
+    "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter29.pdf",
+    "quote": "Single-user toilet and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified as being available for use by all persons regardless of their sex.",
+    "no_stall_needed_quote": "Compartments shall not be required in a single-occupant toilet room with a lockable door."
+   }
+  },
+  "multi_user_all_gender": {
+   "allowed": true,
+   "section": "WAC 51-50-2902, subsections 2902.2 exception 6 and 2902.2.2 (Washington amendment, effective March 15, 2024); same text in Seattle Building Code 2902.2.2, marked [W]",
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-2902",
+   "seattle_url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter29.pdf",
+   "allowed_quote": "Separate facilities shall not be required when all-gender facilities are provided in accordance with Section 2902.2.2.",
+   "requirements": [
+    {
+     "what": "No fewer fixtures than separate rooms would need",
+     "quote": "There is no reduction in the number of fixtures required to be provided for male and female in the type of occupancy and in the minimum number shown in Table 2902.1."
+    },
+    {
+     "what": "Every toilet and every urinal in its own stall",
+     "quote": "All-gender multiuser toilet rooms shall have water closets and urinals located in toilet compartments in accordance with ICC A117.1."
+    },
+    {
+     "what": "Full-height walls and a door",
+     "quote": "All-gender multiuser toilet room water closet and urinal compartments shall have full-height walls and a door enclosing the fixture to ensure privacy."
+    },
+    {
+     "what": "Stall door locks from inside",
+     "quote": "All-gender toilet room water closet and urinal compartment doors shall be securable from within the compartment."
+    },
+    {
+     "what": "Room door can't be locked from inside",
+     "quote": "All-gender toilet rooms provided for the use of multiple occupants, the egress door from the room shall not be lockable from the inside of the room."
+    }
+   ],
+   "not_stated_in_code": "The section does not define 'full-height' (no maximum gap at floor, ceiling or door edge is given) and does not require an occupancy indicator on stall doors. An 'occupied' indicator is required only on family or assisted-use toilet room doors (Seattle Building Code 1110.2.1.6).",
+   "ordinary_stalls_for_comparison": {
+    "section": "WAC 51-50-1210, subsection 1210.3.1 (Seattle Building Code 1210.3.1)",
+    "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-1210",
+    "seattle_url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter12.pdf",
+    "quote": "Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy. Gender-neutral toilet room water closet compartments shall be in accordance with Section 2902.2.2.",
+    "urinal_quote": "The walls or partitions shall begin at a height not more than 12 inches (305 mm) from and extend not less than 60 inches (1524 mm) above the finished floor surface."
+   },
+   "seattle_fixture_count": {
+    "section": "Seattle Building Code 2902.1.1, exception 2",
+    "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter29.pdf",
+    "quote": "Where multiple-user facilities are designed to serve all genders, the minimum fixture count shall be calculated 100 percent, based on total occupant load. In such multiple-user user facilities, each fixture type shall be in accordance with ICC A117.1 and each urinal that is provided shall be located in a stall."
+   }
+  },
+  "use_restrictions": {
+   "summary": "No Washington statute or Seattle code section read here limits which restroom a person may use. The state rule points the other way: places open to the public and employers must let people use the restroom that matches their gender identity.",
+   "rule": "WAC 162-32-060 (Washington State Human Rights Commission, effective December 26, 2015)",
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=162-32-060",
+   "quote": "All covered entities shall allow individuals the use of gender-segregated facilities, such as restrooms, locker rooms, dressing rooms, and homeless or emergency shelters, that are consistent with that individual's gender expression or gender identity.",
+   "second_quote": "A covered entity shall not request or require an individual to use a gender-segregated facility that is inconsistent with that individual's gender expression or gender identity, or request or require an individual to use a separate or gender-neutral facility.",
+   "third_quote": "Whenever feasible, covered entities are encouraged to provide options for privacy, such as single-use gender-neutral bathrooms or private changing areas, that are available to any individual desiring privacy.",
+   "seattle": {
+    "url": "https://www.seattle.gov/documents/departments/gender/ocr-allgenderrestrooms-faq.pdf",
+    "quote": "Under SMC 14.06, public places cannot deny people’s rights to use gender-specific restrooms and other gender-specific facilities that are consistent with their gender identity or expression."
+   },
+   "note": "'None found' covers only the sources read (WAC 162-32-060, RCW 49.60.215, the building code sections above and Seattle's civil rights pages); no full search of the Revised Code of Washington was made."
+  },
+  "confidence": "high (state rules and Seattle Building Code read on official pages; Seattle's ordinance read on the enforcing office's pages, not in the code itself)"
+ },
+ "sales_tax": {
+  "rate": {
+   "address_checked": "600 4th Ave, Seattle, WA 98104 (Seattle City Hall)",
+   "location_code": "1726",
+   "combined": 0.1055,
+   "combined_pct": "10.55%",
+   "parts": {
+    "state": 0.065,
+    "local": 0.0405,
+    "county": null,
+    "city": null,
+    "district": null
+   },
+   "parts_note": "The Department of Revenue publishes Seattle's local rate as one figure (4.05%) and does not split it into county, city and transit shares on the pages read. Its lookup marks the address as inside the Regional Transit Authority area (rta=\"Y\").",
+   "period": "October 1 - December 31, 2026",
+   "effective": "2026-01-01",
+   "effective_note": "10.55% has applied since January 1, 2026, when Seattle and King County each added 0.1% for local law enforcement programs.",
+   "url": "https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf",
+   "quote": "King Seattle 1726 .0405 .0650 .1055",
+   "lookup_url": "https://webgis.dor.wa.gov/webapi/AddressRates.aspx?output=xml&addr=600%204th%20Ave&city=Seattle&zip=98104",
+   "lookup_quote": "<rate name=\"SEATTLE\" code=\"1726\" staterate=\".0650\" localrate=\".0405\" />",
+   "lookup_note": "Lookup returned period=\"Q42026\", rate=\".1055\", result code 2.",
+   "effective_url": "https://dor.wa.gov/sites/default/files/2025-11/Seattle-LLEP-Q1-26.pdf",
+   "effective_quote": "Effective January 1, 2026, local sales and use tax within the City of Seattle will increase one-tenth of one percent (.001). The tax will be used for local law enforcement programs.",
+   "index_url": "https://dor.wa.gov/taxes-rates/sales-use-tax-rates/local-sales-use-tax"
+  },
+  "upcoming_change": {
+   "effective": "2027-01-01",
+   "combined": 0.1066,
+   "combined_pct": "10.66%",
+   "local": 0.0416,
+   "state": 0.065,
+   "url": "https://dor.wa.gov/sites/default/files/2026-11/Q127_King_County_CFS_TBD.pdf",
+   "quote": "Effective January 1, 2027, local sales and use tax within King County will increase one-hundredth of one percent (.0001) for Children and Family Services and will increase one-tenth of one percent (.001) for Transportation Benefit District for a total increase of .0011.",
+   "row_quote": "Seattle 1726 .0416 .0650 .1066",
+   "note": "The page must show 10.66% from January 1, 2027."
+  },
+  "shipped_without_installation": {
+   "summary": "Taxable. A seller outside Washington must register and collect Washington sales tax once it has more than $100,000 a year of Washington receipts (or a physical presence); if the seller doesn't collect, the buyer owes use tax at the same rate, on the price including freight. The rate is the one at the delivery address.",
+   "url": "https://dor.wa.gov/education/industry-guides/out-state-businesses-reporting-thresholds-and-nexus",
+   "quote": "Starting Jan. 1, 2020, a business must register to report B&O tax and collect/submit applicable sales tax, if the business meets any of the following thresholds in the current or prior year: Has physical presence nexus in Washington. Has more than $100,000 in combined gross receipts sourced or attributed to Washington. Is organized or commercially domiciled in Washington.",
+   "use_tax_url": "https://dor.wa.gov/taxes-rates/use-tax",
+   "use_tax_quote": "Goods are purchased by subscription, online, or from a mail-order catalog company. Many of these companies collect Washington’s sales tax, but if the company from which you order does not, you must report and pay use tax on the purchase.",
+   "freight_quote": "Generally, this is the purchase price, which includes any freight, delivery, or shipping charges paid to the seller.",
+   "sourcing_url": "https://dor.wa.gov/taxes-rates/sales-use-tax-rates",
+   "sourcing_quote": "Sales tax collection is based on the location where the customer receives the merchandise or service (destination-based sales tax)."
+  },
+  "installation_labor_billed_separately": {
+   "summary": "Taxable. Washington treats installing anything in or onto a building as a retail sale, so an installer hired directly by the building owner or tenant charges sales tax on its labor at the job site's rate, whether or not the labor is itemised.",
+   "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.050",
+   "quote": "The constructing, repairing, decorating, or improving of new or existing buildings or other structures under, upon, or above real property of or for consumers, including the installing or attaching of any article of tangible personal property therein or thereto, whether or not such personal property becomes a part of the realty by virtue of installation",
+   "context_quote": "The term \"sale at retail\" or \"retail sale\" includes the sale of or charge made for tangible personal property consumed and/or for labor and services rendered in respect to the following:",
+   "guide_url": "https://dor.wa.gov/education/industry-guides/construction/overview",
+   "guide_quote": "Businesses selling goods at retail or performing retail services (such as custom prime construction) must also collect and remit retail sales tax on their total charges unless a specific exemption applies. The taxable amount includes charges for permits and other fees, labor, profit, materials and charges for subcontractors.",
+   "sourcing_url": "https://dor.wa.gov/education/industry-guides/construction/custom-construction",
+   "sourcing_quote": "Retail construction services are sourced to the location where the construction takes place. This means construction that takes place in Seattle is sourced to Seattle (location code 1726) and taxed at Seattle’s combined state and local sales tax rate."
+  },
+  "furnish_and_install_contract": {
+   "summary": "The contractor hired by the owner (the prime contractor) charges sales tax on the whole contract price, materials and labor together, and buys the partitions tax-free for resale with a reseller permit. A subcontractor working for that contractor doesn't charge sales tax. Work for the federal government or a housing authority is treated differently.",
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=458-20-170",
+   "quote": "Prime contractors are required to collect from consumers the retail sales tax measured by the full contract price.",
+   "resale_quote": "Sales to prime contractors and subcontractors of materials such as concrete, tie rods, lumber, finish hardware, etc., which become part of the structure being built or improved are sales for resale and are not subject to the retail sales tax.",
+   "guide_url": "https://dor.wa.gov/education/industry-guides/construction/custom-construction",
+   "guide_quote": "Prime contractors must collect retail sales tax from the landowner on the gross contract price (without deduction of costs incurred). Billing invoices must separately state the sales tax.",
+   "subcontractor_url": "https://dor.wa.gov/education/industry-guides/construction/overview",
+   "subcontractor_quote": "Subcontractors on custom construction projects (a wholesaling activity) must obtain a reseller permit from the prime contractor or another subcontractor.",
+   "federal_exception_quote": "The term does not include the sale of or charge made for labor and services rendered in respect to the constructing, repairing, decorating, or improving of new or existing buildings or other structures under, upon, or above real property of or for the United States, any instrumentality thereof, or a county or city housing authority created pursuant to chapter 35.82 RCW",
+   "federal_exception_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.050"
+  },
+  "confidence": "high"
+ },
+ "sources_read": [
+  {
+   "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUM004266000000047203103?latest=true",
+   "official": true,
+   "note": "BLS public API; five OEWS series read one by one (metro mean, median, employment; U.S. mean, median). All 2025 / A01."
+  },
+  {
+   "url": "https://www.bls.gov/oes/2025/may/oessrcma.htm",
+   "official": true,
+   "note": "BLS May 2025 metro area index: gives the area name and the query-tool link for area 0042660. The table pages themselves return 403 to scripts or are JavaScript only."
+  },
+  {
+   "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=39.12.020",
+   "official": true,
+   "note": "State prevailing wage law; $10,000 posting clause."
+  },
+  {
+   "url": "https://lni.wa.gov/licensing-permits/public-works-projects/awarding-agencies/",
+   "official": true,
+   "note": "L&I: when prevailing wage applies; 'no minimum dollar amount'."
+  },
+  {
+   "url": "https://www.lni.wa.gov/licensing-permits/public-works-projects/prevailing-wage-rates/how-prevailing-wage-rates-are-developed",
+   "official": true,
+   "note": "L&I: update dates and the bid-due-date rule (read through the fetch tool's summary)."
+  },
+  {
+   "url": "https://secure.lni.wa.gov/wagelookup/wageCorrection/RatesPublication.aspx",
+   "official": true,
+   "note": "L&I list of rate publications; 09/09/2026 carpenter correction effective 10/09/2026."
+  },
+  {
+   "url": "https://secure.lni.wa.gov/wagelookup/rates/journey-level-rates",
+   "official": true,
+   "note": "L&I rate lookup: JavaScript only, NOT read."
+  },
+  {
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=296-127-01310",
+   "official": true,
+   "note": "L&I scope of work, Carpenters."
+  },
+  {
+   "url": "https://www.federalwaywa.gov/sites/default/files/2026-08/3_APX%20B_Journey%20Level%20Wages.pdf",
+   "official": true,
+   "note": "City of Federal Way bid appendix: a printout of L&I's King County table (electricians only). Used for the header wording, not for a rate."
+  },
+  {
+   "url": "https://sam.gov/wage-determination/WA20260108/1",
+   "official": true,
+   "note": "Davis-Bacon building determination for King County, modification 1 of 05/18/2026, read via sam.gov's data service."
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true,
+   "note": "2010 ADA Standards, sections 213, 216.8, 604, 703.7 (U.S. Access Board)."
+  },
+  {
+   "url": "https://up.codes/viewer/washington/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities",
+   "official": false,
+   "note": "ICC A117.1-2017 chapter 6 with Washington amendments, on UpCodes. Secondary: codes.iccsafe.org returned 403."
+  },
+  {
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-50&full=true",
+   "official": true,
+   "note": "WAC 51-50 in full: sections 1101, 1110, 1210, 2902."
+  },
+  {
+   "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter11.pdf",
+   "official": true,
+   "note": "2021 Seattle Building Code chapter 11: 1102.1, 1110.2, 1110.2.1, 1110.2.4, 1112."
+  },
+  {
+   "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter12.pdf",
+   "official": true,
+   "note": "2021 Seattle Building Code chapter 12: 1210.3."
+  },
+  {
+   "url": "https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter29.pdf",
+   "official": true,
+   "note": "2021 Seattle Building Code chapter 29: 2902.1.1, 2902.1.2, 2902.2, 2902.2.2, 2902.4."
+  },
+  {
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=162-32-060",
+   "official": true,
+   "note": "Human Rights Commission rule on gender-segregated facilities."
+  },
+  {
+   "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=49.60.215",
+   "official": true,
+   "note": "Public accommodation discrimination statute (read for context; not quoted)."
+  },
+  {
+   "url": "https://seattle.gov/civilrights/laws-we-enforce/all-gender-restrooms",
+   "official": true,
+   "note": "Seattle Office for Civil Rights: all-gender restroom law."
+  },
+  {
+   "url": "https://www.seattle.gov/documents/departments/gender/ocr-allgenderrestrooms-faq.pdf",
+   "official": true,
+   "note": "SOCR FAQ, updated 02/03/16."
+  },
+  {
+   "url": "https://seattle.gov/documents/Departments/CivilRights/Enforcement/all_gender-restrooms-rules-100515.pdf",
+   "official": true,
+   "note": "SOCR administrative rules SHRR 100-010 to 100-030 (signage, penalties)."
+  },
+  {
+   "url": "https://library.municode.com/wa/seattle/codes/municipal_code?nodeId=TIT14HURI_CH14.07ALNDRE",
+   "official": true,
+   "note": "SMC 14.07 itself: 403, NOT read. The City Clerk's ordinance page showed a CAPTCHA."
+  },
+  {
+   "url": "https://dor.wa.gov/taxes-rates/sales-use-tax-rates/local-sales-use-tax",
+   "official": true,
+   "note": "DOR index of quarterly rate flyers and change notices."
+  },
+  {
+   "url": "https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf",
+   "official": true,
+   "note": "Rates effective October 1 - December 31, 2026."
+  },
+  {
+   "url": "https://dor.wa.gov/sites/default/files/2026-11/Q127_LSU-flyer-by-county.pdf",
+   "official": true,
+   "note": "Rates effective January 1, 2027: Seattle .0416 / .0650 / .1066."
+  },
+  {
+   "url": "https://dor.wa.gov/sites/default/files/2026-11/Q127_King_County_CFS_TBD.pdf",
+   "official": true,
+   "note": "King County change notice for January 1, 2027."
+  },
+  {
+   "url": "https://dor.wa.gov/sites/default/files/2025-11/Seattle-LLEP-Q1-26.pdf",
+   "official": true,
+   "note": "Seattle change notice for January 1, 2026."
+  },
+  {
+   "url": "https://webgis.dor.wa.gov/webapi/AddressRates.aspx?output=xml&addr=600%204th%20Ave&city=Seattle&zip=98104",
+   "official": true,
+   "note": "DOR address rate lookup for Seattle City Hall."
+  },
+  {
+   "url": "https://dor.wa.gov/taxes-rates/use-tax",
+   "official": true,
+   "note": "Use tax."
+  },
+  {
+   "url": "https://dor.wa.gov/education/industry-guides/out-state-businesses-reporting-thresholds-and-nexus",
+   "official": true,
+   "note": "Out-of-state seller thresholds (page dated April 2020)."
+  },
+  {
+   "url": "https://dor.wa.gov/education/industry-guides/construction/overview",
+   "official": true,
+   "note": "DOR construction guide (updated February 2023): overview."
+  },
+  {
+   "url": "https://dor.wa.gov/education/industry-guides/construction/custom-construction",
+   "official": true,
+   "note": "DOR construction guide: custom construction."
+  },
+  {
+   "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=458-20-170",
+   "official": true,
+   "note": "DOR rule on construction contractors."
+  },
+  {
+   "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.050",
+   "official": true,
+   "note": "Definition of retail sale."
+  }
+ ],
+ "to_confirm": [
+  "State prevailing wage for a journey-level Carpenter in King County (one combined wage-and-benefits figure, with its effective date): open https://secure.lni.wa.gov/wagelookup/rates/journey-level-rates in a browser, or ask L&I's Prevailing Wage Section (360-902-5335, PW1@Lni.wa.gov). Check whether the correction effective 10/09/2026 changed King County.",
+  "Ask L&I which classification covers installing toilet partitions on a public job (Carpenters is the likely one; the scope says 'partitions' only).",
+  "Open https://data.bls.gov/oes/#/area/0042660/2025 in a browser and confirm the Carpenters row ($40.42 mean, $36.74 median) and the U.S. figures ($31.55, $29.12).",
+  "Read A117.1-2017 sections 604.5 to 604.10 on ICC's own site (codes.iccsafe.org) in a browser; the text here comes from UpCodes.",
+  "Read SMC chapter 14.07 on Municode in a browser to record its section numbers and its definition of a single-occupant restroom.",
+  "Ask the Seattle Department of Construction and Inspections what it accepts as 'full-height walls' for all-gender multi-user stalls (floor and ceiling gaps, door edge gaps); the code gives no dimension.",
+  "Sales tax rises to 10.66% in Seattle on January 1, 2027: update the page then.",
+  "The Department of Revenue's out-of-state seller page is dated April 2020 and its construction guide February 2023; confirm with the Department (360-705-6705) that the $100,000 threshold and the treatment of separately billed installation still stand, and ask Abe whether Next Partitions is registered to collect Washington sales tax.",
+  "Whether the 2024 code cycle has replaced the 2021 Washington State Building Code and 2021 Seattle Building Code read here (no effective date found; carried over from research/state-codes)."
+ ]
+}
