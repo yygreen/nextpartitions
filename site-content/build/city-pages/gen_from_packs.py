@@ -87,6 +87,7 @@ def page(slug):
     city, state = b['name'], STATE_NAME(b)
     inst = '/installers/%s/%s' % (b['state_slug'], slug)
     art = 'an' if city[0] in 'AEIO' else 'a'
+    prep = 'on' if slug == 'long-island' else 'in'
     lead, ca, cz, faq_mat, csrc = climate(b)
     wb, wsrc = wage(b)
     office = C['confirm_office']
@@ -113,9 +114,9 @@ def page(slug):
     fire = ', the fire-safety rule for solid plastic partitions' if g('fire_bullet') else ''
     t = f'''---
 url: /service-area/{slug}
-title: Bathroom Partitions in {city}{'' if ',' in city else ', ' + st} | Next Partitions
+title: Bathroom Partitions {prep} {city}{'' if ',' in city else ', ' + st} | Next Partitions
 meta: {C['meta']}
-h1: Bathroom Partitions in {city}
+h1: Bathroom Partitions {prep} {city}
 city: {city}
 state: {state}
 lat: {b['lat']}
@@ -125,7 +126,7 @@ secondary_keywords: [restroom partitions {city.lower().replace(',', '')}, toilet
 date: 2026-11-24
 ---
 
-# Bathroom Partitions in {city}
+# Bathroom Partitions {prep} {city}
 
 {C['lead']}
 
@@ -171,17 +172,17 @@ Rules change, so confirm your project with {office} or your architect. The acces
 
 {g('capacity')}
 
-## Installation in {city}
+## Installation {prep} {city}
 
 Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
 
-Need an installer? Our directory of [partition installers in {city}]({inst}) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Need an installer? Our directory of [partition installers {prep} {city}]({inst}) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
 
 {C['install_rule']}
 
 Our [installation guide](/guides/how-to-install-toilet-partitions) shows the work step by step, and [how to measure for toilet partitions](/blog/how-to-measure-for-toilet-partitions) covers what to send for an accurate quote.
 
-## What installation labor and sales tax add in {city}
+## What installation labor and sales tax add {prep} {city}
 
 {chr(10).join(m for m in money if m)}
 
@@ -211,7 +212,7 @@ Price a standard layout in the configurator, or send your drawings, stall count 
 ### Do you deliver bathroom partitions to {city}?
 Yes. Partitions ship by freight carrier to {city} and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
 
-### Does Next Partitions install partitions in {city}?
+### Does Next Partitions install partitions {prep} {city}?
 {faq_inst}
 
 ### {faq_mat[0]}

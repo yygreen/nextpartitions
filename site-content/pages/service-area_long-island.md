@@ -1,8 +1,8 @@
 ---
 url: /service-area/long-island
-title: Bathroom Partitions in Long Island, NY | Next Partitions
+title: Bathroom Partitions on Long Island, NY | Next Partitions
 meta: Commercial bathroom partitions delivered to Long Island job sites. Price your restroom, pick a material and see the rules in Nassau and Suffolk counties.
-h1: Bathroom Partitions in Long Island
+h1: Bathroom Partitions on Long Island
 city: Long Island
 state: New York
 lat: 40.8366
@@ -12,7 +12,7 @@ secondary_keywords: [restroom partitions long island, toilet partitions long isl
 date: 2026-11-24
 ---
 
-# Bathroom Partitions in Long Island
+# Bathroom Partitions on Long Island
 
 Commercial bathroom partitions for Long Island schools, hospitals, office parks and shopping centers, shipped by freight to your job site in Nassau or Suffolk County.
 
@@ -69,17 +69,17 @@ These are minimums for the whole building. An office for 25 people or fewer, or 
 
 To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room with tables and chairs at one per 15 square feet and a classroom at one per 20.
 
-## Installation in Long Island
+## Installation on Long Island
 
 Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
 
-Need an installer? Our directory of [partition installers in Long Island](/installers/new-york-state/long-island) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Need an installer? Our directory of [partition installers on Long Island](/installers/new-york-state/long-island) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
 
 Building permits and local contractor rules on Long Island come from the town, village or city where the building stands, so check with its building department before work starts. Nassau County and Suffolk County license home improvement contractors, which covers work on homes: Nassau's license is for residential home improvement businesses, and Suffolk's covers one- and two-family houses. New York State doesn't license commercial installers like this. You don't need a permit to buy partitions.
 
 Our [installation guide](/guides/how-to-install-toilet-partitions) shows the work step by step, and [how to measure for toilet partitions](/blog/how-to-measure-for-toilet-partitions) covers what to send for an accurate quote.
 
-## What installation labor and sales tax add in Long Island
+## What installation labor and sales tax add on Long Island
 
 - **Local labor rates:** carpenters in the New York–Newark–Jersey City area earn a median of $35.72 an hour, about 23% above the national median of $29.12. It's a guide to local labor rates, not a quote: installers set their own prices.
 - **Public jobs:** on public work, such as school, town, village, county and state projects, New York law requires at least the prevailing wage for the trade, with no minimum contract size; the state Department of Labor publishes the rates by county each July. For a carpenter on building work in Suffolk County and most of Nassau County that is $55.06 an hour plus $35.43 in benefits. The southwest corner of Nassau County, south of the Southern State Parkway and west of Seaford Creek, has a higher rate of $60.05 an hour.
@@ -113,7 +113,7 @@ Price a standard layout in the configurator, or send your drawings, stall count 
 ### Do you deliver bathroom partitions to Long Island?
 Yes. Partitions ship by freight carrier to Long Island and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
 
-### Does Next Partitions install partitions in Long Island?
+### Does Next Partitions install partitions on Long Island?
 No. We supply the partitions and the shop drawings; a contractor you hire installs them. Check with the town or village building department whether it asks anything of the contractor. Our directory lists [partition installers in Long Island](/installers/new-york-state/long-island), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Long Island's climate?
