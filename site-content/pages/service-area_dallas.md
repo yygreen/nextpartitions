@@ -48,6 +48,8 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Texas's own access rules set the sizes. On projects of $50,000 or more, the state reviews the plans; smaller projects must still follow the rules.
 - **Fire safety:** Dallas's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.
 - **How many stalls:** Dallas sets the number of toilets and urinals by how many people use the building. The table below shows what that means.
+- **Texas and federal stall rules match:** Texas's own access rules for stalls, doors and grab bars read the same as the federal ones, so a stall that meets one meets the other.
+- **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to everyone. In a private building, a shared all-gender room is allowed if every toilet sits in its own compartment with a door and urinals are in stalls or screened from view. Since December 2025, Texas law requires shared restrooms in city, county, school district and public college buildings to be designated for one sex.
 - **Permits:** Dallas says a building permit is generally needed for work on a building's structure and publishes a list of work that needs none. Ask Dallas Building Inspection whether your replacement is on it. You don't need a permit to buy partitions.
 
 Last checked November 23, 2026. Rules change, so confirm your project with Dallas Building Inspection, TDLR, or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
@@ -76,6 +78,16 @@ Need an installer? Our directory of [partition installers in Dallas](/installers
 Contractors register with the City of Dallas in DallasNow before pulling building permits, and permits are not issued to unregistered contractors. Texas has no statewide contractor license for this work. Confirm what your project needs with City of Dallas Development Services. You don't need a permit to buy partitions.
 
 Our [installation guide](/guides/how-to-install-toilet-partitions) shows the work step by step, and [how to measure for toilet partitions](/blog/how-to-measure-for-toilet-partitions) covers what to send for an accurate quote.
+
+## What installation labor and sales tax add in Dallas
+
+- **Local labor rates:** carpenters in the Dallas–Fort Worth area earn a median of $23.44 an hour, about 20% below the national median of $29.12. It's a guide to local labor rates, not a quote: installers set their own prices.
+- **Public jobs:** on city, county and school district projects, Texas law requires at least the locally set wage. The federal rate for a carpenter on building work in Dallas County is $17.13 an hour plus $2.97 in benefits, and City of Dallas contracts pay at least the city's living wage, $23.06 an hour.
+- **Sales tax:** 8.25% in Dallas: 6.25% state, 1% city and 1% transit authority (DART).
+- **Tax on installation:** in Texas, labor to remodel an existing commercial building is taxed, even when it's billed separately. Labor on new construction is not.
+- **Buying without installation:** partitions shipped to Dallas are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it to the state.
+
+Figures checked November 24, 2026. How tax applies depends on your contract, so confirm with your accountant or the Texas Comptroller.
 
 ## What Dallas buyers order partitions for
 
@@ -125,6 +137,13 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Dallas contractor registration: [City of Dallas Development Services guide](https://dallascityhall.com/departments/sustainabledevelopment/guide). Last checked 2026-11-03.
 - Texas has no statewide general contractor license: [Office of the Governor, Texas Business Licenses & Permits Guide](https://gov.texas.gov/uploads/files/business/Texas_Licenses_Permits_Guide.pdf). Last checked 2026-11-19.
 - Toilet counts in Dallas: Dallas's amendments to the 2021 International Plumbing Code ([Ordinance 32422](https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0469.pdf)) and Building Code ([Ordinance 32421](https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0468.pdf)), Section 403.1 ("It is recommended, but not required…"). The table's ratios were read on a secondary copy of the Dallas Plumbing Code ([UpCodes](https://up.codes/viewer/dallas/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings)). Checked 2026-11-24.
+- Carpenter wages, May 2025: U.S. Bureau of Labor Statistics, [national release](https://www.bls.gov/news.release/archives/ocwage_05152026.pdf) and [Dallas–Fort Worth area release](https://www.bls.gov/regions/southwest/news-release/2026/occupationalemploymentandwages_dallasfortworth_20260813.htm); metro median from O*NET OnLine, which republishes the Bureau's figures. Checked 2026-11-24.
+- Dallas County carpenter rate: [federal wage determination TX20260241](https://sam.gov/wage-determination/TX20260241/1); City of Dallas living wage: [annual update memo](https://dallascityhall.com/government/citymanager/Documents/FY24-25%20Memos/Living%20Wage%20Annual%20Update.pdf). Checked 2026-11-24.
+- Single-user restroom signs and shared all-gender rooms: Dallas Building Code and Plumbing Code amendments ([Ordinance 32421](https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0468.pdf), [Ordinance 32422](https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0469.pdf)). Checked 2026-11-24.
+- Texas stall rules compared with the federal ones: [2012 Texas Accessibility Standards](https://www.tdlr.texas.gov/ab/2012TAS/2012tascomplete.pdf) and the [2010 ADA Standards](https://www.access-board.gov/ada/), sections 213, 603 to 604 and 609. Checked 2026-11-24.
+- Shared restrooms in government buildings: [Texas Government Code chapter 3002](https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm). Checked 2026-11-24.
+- Wages on public jobs: [Texas Government Code chapter 2258](https://tcss.legis.texas.gov/resources/GV/htm/GV.2258.htm). Checked 2026-11-24.
+- Sales tax: Texas Comptroller, [city rates](https://comptroller.texas.gov/taxes/sales/city.php), [remote sellers](https://comptroller.texas.gov/taxes/sales/remote-sellers.php), [use tax](https://comptroller.texas.gov/taxes/sales/use-tax.php) and [Publication 94-116, Real Property Repair and Remodeling](https://comptroller.texas.gov/taxes/publications/94-116.php). Checked 2026-11-24.
 - The rules by their official names: 2010 ADA Standards for Accessible Design; 2012 Texas Accessibility Standards (TDLR registration and review at $50,000 or more); 2021 International Building Code with Dallas amendments, in force since May 12, 2023; 2021 International Plumbing Code with Dallas amendments; work exempt from a permit: Dallas City Code Chapter 52, Section 301(b); NFPA 286 for HDPE.
 
 <!-- For Marc -->
@@ -138,3 +157,4 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - A lawyer reviews the codes wording.
 - To confirm before launch: whether a partition replacement needs a Dallas permit (Chapter 52, Section 301(b) wasn't read), whether Dallas has adopted newer code editions (its "2025 Code Amendment Process" page couldn't be opened), and the TDLR $50,000 threshold against 16 TAC 68.50.
 - Stall-count table: check the ratios in a browser on the official viewer, and ask Dallas Building Inspection how plan review applies "recommended, but not required". Data in `research/state-codes/fixtures/dallas.json`.
+- City data (2026-11-24, `research/city-data/dallas.json`): read the metro wage once in a browser on the Bureau's own table (area 0019100); Dallas ISD's wage schedule wasn't read; a reported change to the city's living wage policy in September 2026 wasn't found in a city document. How Next Partitions itself charges Texas tax is a question for Abe's accountant.

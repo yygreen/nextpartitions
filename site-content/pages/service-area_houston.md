@@ -48,6 +48,8 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Texas's own access rules set the sizes. On projects of $50,000 or more, the state reviews the plans; smaller projects must still follow the rules.
 - **Fire safety:** Houston's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.
 - **How many stalls:** Houston sets the number of toilets and urinals by how many people use the building. The table below shows what that means.
+- **Texas and federal stall rules match:** Texas's own access rules for stalls, doors and grab bars read the same as the federal ones, so a stall that meets one meets the other.
+- **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to everyone. In a private building, a shared all-gender room is allowed if every toilet sits in its own compartment with a door and urinals are in stalls or screened from view. Since December 2025, Texas law requires shared restrooms in city, county, school district and public college buildings to be designated for one sex.
 - **Permits:** Houston requires a permit for remodels and alterations unless the work is exempt. Its exempt list covers "similar finish work" without naming toilet partitions, so ask the Houston Permitting Center whether your replacement needs one. You don't need a permit to buy partitions.
 
 Last checked November 23, 2026. Rules change, so confirm your project with the Houston Permitting Center or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
@@ -76,6 +78,16 @@ Need an installer? Our directory of [partition installers in Houston](/installer
 Houston does not license or register general contractors. The contractor buys the building permit where one is needed, and trade permits (electrical, plumbing, HVAC) need a state license registered with the City. Texas has no statewide contractor license for this work. Confirm what your project needs with the Houston Permitting Center. You don't need a permit to buy partitions.
 
 Our [installation guide](/guides/how-to-install-toilet-partitions) shows the work step by step, and [how to measure for toilet partitions](/blog/how-to-measure-for-toilet-partitions) covers what to send for an accurate quote.
+
+## What installation labor and sales tax add in Houston
+
+- **Local labor rates:** carpenters in the Houston area earn a median of $23.88 an hour, about 18% below the national median of $29.12. It's a guide to local labor rates, not a quote: installers set their own prices.
+- **Public jobs:** on city, county and school district projects, Texas law requires at least the locally set wage. For a carpenter on building work in Harris County that is $33.27 an hour plus $9.73 in benefits, and the City of Houston uses the same rate.
+- **Sales tax:** 8.25% in Houston: 6.25% state, 1% city and 1% transit authority.
+- **Tax on installation:** in Texas, labor to remodel an existing commercial building is taxed, even when it's billed separately. Labor on new construction is not.
+- **Buying without installation:** partitions shipped to Houston are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it to the state.
+
+Figures checked November 24, 2026. How tax applies depends on your contract, so confirm with your accountant or the Texas Comptroller.
 
 ## What Houston buyers order partitions for
 
@@ -123,6 +135,13 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Texas Accessibility Standards and the $50,000 registration threshold: [TDLR Architectural Barriers FAQ](https://www.tdlr.texas.gov/ab/abfaq.htm) and [TAS](https://www.tdlr.texas.gov/ab/abtas.htm). Checked 2026-11-23.
 - Houston permits and exempt work: [Houston Permitting Center, plan review](https://www.houstonpermittingcenter.org/building-code-enforcement/plan-review). Checked 2026-11-23.
 - Toilet counts in Houston: [Houston amendments to the 2021 Uniform Plumbing Code](https://www.houstonpermittingcenter.org/media/9071/download) (Section 422.1 points to the building code's table) and [Houston amendments to the 2021 International Building Code](https://www.houstonpermittingcenter.org/media/9031/download), Table 2902.1 and Section 2902.8 ("when more than one water closet is required, 50% of the water closets shall be urinals"). The 50/50 split, rounding up and floor area per person (Section 2902.1.1 and Table 1004.5) were read on a secondary copy of the Houston Building Code. Checked 2026-11-24.
+- Carpenter wages, May 2025: U.S. Bureau of Labor Statistics, [Houston area release](https://www.bls.gov/regions/southwest/news-release/2026/occupationalemploymentandwages_houston_20260813.htm) and [national release](https://www.bls.gov/news.release/archives/ocwage_05152026.pdf); metro median from [O*NET OnLine](https://www.onetonline.org/link/localwages/47-2031.00?zip=77002), which republishes the Bureau's figures. Checked 2026-11-24.
+- Harris County carpenter rate: [federal wage determination TX20260253](https://sam.gov/wage-determination/TX20260253/1) and the [City of Houston 2026 building wage scale](https://houstontx.gov/sites/default/files/migrated/obo/contractcomplianceforms/2026-Wage-Scale-for-Building-Construction.pdf). Checked 2026-11-24.
+- Single-user restroom signs: [Houston's 2021 building code comparison](https://www.houstonpermittingcenter.org/media/9556/download), Section 2902.1.2. Checked 2026-11-24.
+- Texas stall rules compared with the federal ones: [2012 Texas Accessibility Standards](https://www.tdlr.texas.gov/ab/2012TAS/2012tascomplete.pdf) and the [2010 ADA Standards](https://www.access-board.gov/ada/), sections 213, 603 to 604 and 609. Checked 2026-11-24.
+- Shared restrooms in government buildings: [Texas Government Code chapter 3002](https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm). Checked 2026-11-24.
+- Wages on public jobs: [Texas Government Code chapter 2258](https://tcss.legis.texas.gov/resources/GV/htm/GV.2258.htm). Checked 2026-11-24.
+- Sales tax: Texas Comptroller, [city rates](https://comptroller.texas.gov/taxes/sales/city.php), [remote sellers](https://comptroller.texas.gov/taxes/sales/remote-sellers.php), [use tax](https://comptroller.texas.gov/taxes/sales/use-tax.php) and [Publication 94-116, Real Property Repair and Remodeling](https://comptroller.texas.gov/taxes/publications/94-116.php). Checked 2026-11-24.
 - The rules by their official names: 2010 ADA Standards for Accessible Design; 2012 Texas Accessibility Standards (TDLR registration and review at $50,000 or more); 2021 International Building Code with Houston Amendments, in force since January 1, 2024; 2021 Uniform Plumbing Code with Houston Amendments; NFPA 286 for HDPE.
 - Houston contractor rule: [Houston Permitting Center, Commercial Permitting 101](https://www.houstonpermittingcenter.org/sites/g/files/nwywnm431/files/2025-10/Commercial%20Permitting%20101%20_BuildExpo%202025_06_04_2025_0.pdf) ("The City does not license or register general contractors"). Last checked 2026-11-03.
 - Texas has no statewide general contractor license: [Office of the Governor, Texas Business Licenses & Permits Guide](https://gov.texas.gov/uploads/files/business/Texas_Licenses_Permits_Guide.pdf). Last checked 2026-11-19.
@@ -136,3 +155,4 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - No prices and no lead times until the price list is in.
 - Schema: BreadcrumbList, FAQPage and Service (provider Next Partitions, areaServed Houston). No LocalBusiness: there is no Houston office.
 - To confirm by phone before launch: whether a like-for-like partition replacement needs a Houston permit (Houston Permitting Center, 832-394-9494), and the TDLR $50,000 threshold against 16 TAC 68.50. A lawyer reviews the codes wording.
+- City data (2026-11-24, `research/city-data/houston.json`): Houston ISD's own wage schedule wasn't found; what Houston plan review requires of stalls in a shared all-gender room is open (Houston enforces the Uniform Plumbing Code); Comptroller Publication 94-116 is dated 2007. How Next Partitions itself charges Texas tax is a question for Abe's accountant.

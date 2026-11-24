@@ -50,6 +50,8 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Washington's own access rules set the sizes.
 - **Fire safety:** Seattle's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.
 - **How many stalls:** the number of toilets and urinals depends on how many people use the building. The table below shows what that means. The county health department, Public Health – Seattle & King County, enforces the plumbing rules.
+- **Washington extras:** stalls here need a second, upright grab bar on the side wall, and a wheelchair stall needs more toe room under its partitions (12 inches high, against 9 under the federal rules). In a large restroom, 5% of the stalls must be wheelchair accessible, not just one. Large stores and venues also need a family restroom.
+- **Single-user and all-gender restrooms:** one-person restrooms in public places must be open to anyone and signed that way. A shared all-gender room is allowed if every toilet and urinal is in its own compartment with full-height walls and a door that locks from the inside.
 - **Permits:** Seattle needs no permit for minor repairs or alterations that cost $6,000 or less in any 6-month period, counting labor and parts at market value. Above that, ask the Seattle Department of Construction and Inspections (SDCI) whether your replacement needs one. You don't need a permit to buy partitions.
 
 Last checked November 23, 2026. Rules change, so confirm your project with SDCI or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
@@ -78,6 +80,16 @@ Need an installer? Our directory of [partition installers in Seattle](/installer
 Washington requires every construction contractor to register with the Department of Labor & Industries (L&I), and Seattle will not issue a building permit until the contractor's current L&I registration is verified and recorded on the permit. Look a contractor up on the L&I website before you hire. You don't need a registration or a permit to buy partitions.
 
 Our [installation guide](/guides/how-to-install-toilet-partitions) shows the work step by step, and [how to measure for toilet partitions](/blog/how-to-measure-for-toilet-partitions) covers what to send for an accurate quote.
+
+## What installation labor and sales tax add in Seattle
+
+- **Local labor rates:** carpenters in the Seattle–Tacoma–Bellevue area earn a median of $36.74 an hour, about 26% above the national median of $29.12. It's a guide to local labor rates, not a quote: installers set their own prices.
+- **Public jobs:** Washington requires the state-set wage on every public job, with no minimum project size. The Department of Labor & Industries publishes the current King County carpenter rate in its online wage lookup.
+- **Sales tax:** 10.55% in Seattle (6.5% state and 4.05% local), rising to 10.66% on January 1, 2027.
+- **Tax on installation:** in Washington, installation labor is taxed like the partitions themselves, at the job site's rate.
+- **Buying without installation:** partitions shipped to Seattle are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it to the state.
+
+Figures checked November 24, 2026. How tax applies depends on your contract, so confirm with your accountant or the Washington Department of Revenue.
 
 ## What Seattle buyers order partitions for
 
@@ -127,6 +139,11 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Downtown truck rules: [Seattle Department of Transportation, Downtown Traffic Control Zone](https://www.seattle.gov/transportation/permits-and-services/permits/stt-downtown-traffic-control-zone). Checked 2026-11-23.
 - Contractor registration: [Washington L&I, Register as a Contractor](https://lni.wa.gov/licensing-permits/contractors/register-as-a-contractor/) and [SDCI Tip 333](https://www.seattle.gov/DPD/Publications/CAM/cam333.pdf). Last checked 2026-11-19.
 - Toilet counts in Seattle: [2021 Seattle Building Code, Chapter 29](https://www.seattle.gov/construction-and-inspections/codes/codes-we-enforce-(a-z)/building-code), Table 2902.1, and [WAC 51-50-2902](https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-2902); the plumbing code points there ([WAC 51-56-0400](https://app.leg.wa.gov/WAC/default.aspx?cite=51-56-0400)). Checked 2026-11-24.
+- Carpenter wages, May 2025: U.S. Bureau of Labor Statistics, Occupational Employment and Wage Statistics, [Seattle-Tacoma-Bellevue area](https://data.bls.gov/oes/#/area/0042660/2025). Checked 2026-11-24.
+- Public jobs: [Washington L&I, awarding agencies](https://lni.wa.gov/licensing-permits/public-works-projects/awarding-agencies/) and its [wage lookup](https://secure.lni.wa.gov/wagelookup/rates/journey-level-rates). Checked 2026-11-24.
+- Washington's stall rules beyond the federal ones: [WAC 51-50-1101](https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-1101), [Seattle Building Code Chapter 11](https://www.seattle.gov/documents/Departments/SDCI/Codes/SeattleBuildingCode/2021SBCChapter11.pdf) and ICC A117.1-2017 (read on a [secondary copy](https://up.codes/viewer/washington/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities)). Checked 2026-11-24.
+- Restroom rules: [Seattle Office for Civil Rights, all-gender restrooms](https://seattle.gov/civilrights/laws-we-enforce/all-gender-restrooms) and [WAC 51-50-2902](https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-2902). Checked 2026-11-24.
+- Sales tax: Washington Department of Revenue, [local rates by county](https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf), [King County change on January 1, 2027](https://dor.wa.gov/sites/default/files/2026-11/Q127_King_County_CFS_TBD.pdf), [out-of-state businesses](https://dor.wa.gov/education/industry-guides/out-state-businesses-reporting-thresholds-and-nexus) and [RCW 82.04.050](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.050). Checked 2026-11-24.
 - The rules by their official names: 2010 ADA Standards for Accessible Design; ICC A117.1-2017 with Washington amendments (WAC 51-50, Seattle Building Code Chapter 11); 2021 Seattle Building Code (the 2021 International Building Code with Seattle amendments); 2021 Seattle Plumbing Code (the 2021 Washington State Plumbing Code with Seattle amendments); NFPA 286 for HDPE.
 
 <!-- For Marc -->
@@ -140,3 +157,4 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - A lawyer reviews the codes wording.
 - To confirm before launch: whether a partition replacement over $6,000 needs an SDCI permit (Seattle Building Code Section 106.2), the Downtown Traffic Control Zone's boundaries, and when Seattle moves to the 2024 code editions.
 - Stall-count table: read on official pages. Recheck when Seattle and Washington move to the 2024 editions. Data in `research/state-codes/fixtures/seattle.json`.
+- City data (2026-11-24, `research/city-data/seattle.json`): **update the sales tax line on January 1, 2027** (10.66%); the state wage for a King County carpenter is only in L&I's interactive lookup and wasn't read (phone 360-902-5335); the code gives no dimension for "full-height" (ask SDCI).

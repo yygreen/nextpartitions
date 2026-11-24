@@ -48,6 +48,8 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and California's own access rules both set the sizes, and California's are stricter in places. A remodel can also oblige you to bring the restrooms serving that area up to today's rules; on projects under $209,208 (the 2026 figure) that duty is limited.
 - **Fire safety:** building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.
 - **How many stalls:** Los Angeles sets the number of toilets and urinals by how many people use the building. The table below shows what that means.
+- **California extras:** California asks more of a stall than the federal rules. In a large restroom, 5% of the stalls must be wheelchair accessible, not just one. The accessible stall needs more open floor in front of the toilet, so it's deeper, and the aisle outside its door must be 48 inches wide, against 42. Stall doors need a privacy latch, and every restroom door carries California's circle or triangle symbol. Give your layout to your architect before you order.
+- **Single-user and all-gender restrooms:** a one-person restroom must be signed as all-gender. A shared all-gender room is allowed in place of separate men's and women's rooms if every toilet is in a floor-to-ceiling privacy compartment whose door locks from the inside and shows when it's occupied.
 - **Permits:** Los Angeles needs no permit for work worth $2,500 or less, or for "partitions, not over 5 feet 9 inches high", but the city doesn't say whether toilet partitions count. Ask the Department of Building and Safety (LADBS) before a replacement. You don't need a permit to buy partitions.
 
 Last checked November 23, 2026. Rules change, so confirm your project with the Los Angeles Department of Building and Safety (LADBS) or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
@@ -76,6 +78,16 @@ Need an installer? Our directory of [partition installers in Los Angeles](/insta
 California requires a CSLB contractor license, usually the C-61/D-34 Prefabricated Equipment classification, for partition installs of $1,000 or more; jobs needing workers or permits require a license at any price. Check a contractor's license on the CSLB website, and check local contractor licensing or registration with LADBS before work starts. You don't need a license or a permit to buy partitions.
 
 Our [installation guide](/guides/how-to-install-toilet-partitions) shows the work step by step, and [how to measure for toilet partitions](/blog/how-to-measure-for-toilet-partitions) covers what to send for an accurate quote.
+
+## What installation labor and sales tax add in Los Angeles
+
+- **Local labor rates:** carpenters in the Los Angeles–Long Beach–Anaheim area earn a median of $36.41 an hour, about 25% above the national median of $29.12. It's a guide to local labor rates, not a quote: installers set their own prices.
+- **Public jobs:** California requires the state-set wage on public jobs over $1,000, including city and school district work. For a carpenter in Los Angeles County that is $54.41 an hour plus $29.91 in benefits.
+- **Sales tax:** 10.25% in Los Angeles since October 1, 2026: 7.25% statewide plus 3% in county district taxes.
+- **Tax on installation:** in California, installation labor billed separately isn't taxed.
+- **Buying without installation:** partitions shipped to Los Angeles are taxable. If the seller doesn't collect the tax, the buyer owes it to the state.
+
+Figures checked November 24, 2026. How tax applies depends on your contract, so confirm with your accountant or the California Department of Tax and Fee Administration.
 
 ## What Los Angeles buyers order partitions for
 
@@ -124,6 +136,11 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - California Building Code Chapter 11B and the 2026 valuation threshold: [LADBS accessibility plan check list for commercial buildings, 2026](https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf). Checked 2026-11-23.
 - California contractor license (C-61/D-34): [Contractors State License Board](https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=D34). Last checked 2026-11-19.
 - Toilet counts in Los Angeles: 2025 California Plumbing Code, Table 422.1 and Table 4-1, read on [IAPMO's code viewer](https://epubs.iapmo.org/2025/CPC/), and [LADBS Information Bulletin P/BC 2026-095, Plumbing Fixtures](https://dbs.lacity.gov/sites/default/files/efs/forms/pc17/plumbing-fixtures-ib-p-bc2014-095.pdf) ("the minimum number of plumbing fixtures are shown in CPC Table 422.1"). Los Angeles makes no changes to the table. Checked 2026-11-24.
+- Carpenter wages, May 2025: U.S. Bureau of Labor Statistics, [national table](https://www.bls.gov/news.release/ocwage.t01.htm); metro median from [O*NET OnLine](https://www.onetonline.org/link/localwages/47-2031.00?zip=90012), which republishes the Bureau's figures. Checked 2026-11-24.
+- Public jobs: California Department of Industrial Relations, [prevailing wage FAQ](https://www.dir.ca.gov/OPRL/FAQ_PrevailingWage.html) and [determination SC-23-31-2-2026-2, Carpenter, Los Angeles County](https://www.dir.ca.gov/OPRL/2026-2/PWD/Determinations/Southern/SC-023-31-2.pdf). Checked 2026-11-24.
+- California's stall rules beyond the federal ones: 2025 California Building Code Chapter 11B, Sections 11B-213, 11B-604 and 11B-703, read in the [LADBS accessibility plan check list](https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf) and a [secondary copy of the state's advisory manual](https://www.corada.com/documents/2025CBCPG/11b-604-water-closets-and-toilet-compartments). Checked 2026-11-24.
+- Restroom rules: [Division of the State Architect bulletin BU 17-01](https://www.dgs.ca.gov/-/media/Divisions/DSA/Publications/bulletins/BU_17-01-01.pdf) (single-user restrooms) and 2025 California Plumbing Code Sections 422.2 and 422.6, read on a secondary copy. Checked 2026-11-24.
+- Sales tax: California Department of Tax and Fee Administration, [rates](https://cdtfa.ca.gov/taxes-and-fees/rates.aspx), [out-of-state sellers](https://cdtfa.ca.gov/industry/wayfair.htm) and [Regulation 1546](https://cdtfa.ca.gov/lawguides/vol1/sutr/1546.html). Checked 2026-11-24.
 - The rules by their official names: 2010 ADA Standards for Accessible Design; California Building Code Chapter 11B; 2026 Los Angeles Building Code (the 2025 California Building Code with Los Angeles amendments, in force since January 1, 2026); Los Angeles Plumbing Code (the 2025 California Plumbing Code with Los Angeles amendments); NFPA 286 for HDPE under the International Building Code, the model for California's code.
 
 <!-- For Marc -->
@@ -138,3 +155,4 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - To confirm by phone before launch: whether a partition replacement needs an LADBS permit (LAMC 91.106.2, items 1 and 15), and Los Angeles's own contractor registration rule (low confidence in `research/local-rules/cities.json`).
 - The $209,208 threshold changes each January: recheck in January 2027.
 - Stall-count table: check the office row against the printed 2025 California Plumbing Code (pages 70-71) and confirm with LADBS how the women's minimum (Table 422.1, note 3) is applied before launch. Data in `research/state-codes/fixtures/los-angeles.json`.
+- City data (2026-11-24, `research/city-data/los-angeles.json`): Chapter 11B and the Plumbing Code were read on secondary copies and in LADBS's checklist (browser check on the official viewer before launch); the state tax agency doesn't say whether toilet partitions are "materials" or "fixtures", which decides who pays tax on a supply-and-install contract; whether LADBS accepts all-gender compartments that aren't full height is open.

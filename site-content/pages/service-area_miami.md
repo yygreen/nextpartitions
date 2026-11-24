@@ -49,6 +49,8 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 - **Fire safety:** building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.
 - **How many stalls:** Florida's plumbing rules set the number of toilets and urinals by how many people use the building. The table below shows what that means.
 - **New rules on December 31, 2026:** Florida replaces its building rules with a new edition that day. If your project is permitted after that date, ask your architect which edition applies.
+- **Florida extras, in new buildings:** the wheelchair-accessible stall needs its own sink inside it, which makes the stall larger than in most states, and the toilet must sit in the corner diagonally across from the stall door.
+- **Single-user and all-gender restrooms:** one-person and family restrooms must be marked as open to everyone. A shared all-gender room is allowed if every toilet sits in its own compartment with a door and urinals are in stalls or screened from view. A 2023 Florida law sets separate rules for schools, colleges, jails and government buildings; private businesses aren't covered by it.
 - **Permits:** Miami's list of work that needs no permit covers only partitions that aren't fixed to the building and stand no taller than 5 feet 9 inches. Toilet partitions are anchored, so ask the City of Miami Building Department before a replacement. You don't need a permit to buy partitions.
 
 Last checked November 23, 2026. Rules change, so confirm your project with the City of Miami Building Department or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
@@ -77,6 +79,16 @@ Need an installer? Our directory of [partition installers in Miami](/installers/
 In Miami-Dade County, contractors and subcontractors need a current certificate of competency or eligibility, from the state or the county, for their type of work. Florida has no state license category specifically for toilet partitions, so confirm with the Miami-Dade Construction Trades Qualifying Board which certificate covers your job. You don't need a license or a permit to buy partitions.
 
 Our [installation guide](/guides/how-to-install-toilet-partitions) shows the work step by step, and [how to measure for toilet partitions](/blog/how-to-measure-for-toilet-partitions) covers what to send for an accurate quote.
+
+## What installation labor and sales tax add in Miami
+
+- **Local labor rates:** carpenters in the Miami–Fort Lauderdale area earn a median of $24.79 an hour, about 15% below the national median of $29.12. It's a guide to local labor rates, not a quote: installers set their own prices.
+- **Public jobs:** Florida has no state wage law for public construction and doesn't let cities or school districts set one. On federally funded work the federal rate applies: $18.04 an hour plus $3.24 in benefits for a carpenter on building work in Miami-Dade County.
+- **Sales tax:** 7% in Miami: 6% state and 1% county. The county's 1% applies only to the first $5,000 of each item.
+- **Tax on installation:** on a supply-and-install contract for work that becomes part of the building, the contractor pays the tax on the materials and charges you none on the contract.
+- **Buying without installation:** partitions shipped to Miami are taxable. If the seller doesn't collect the tax, the buyer owes it to the state.
+
+Figures checked November 24, 2026. How tax applies depends on your contract, so confirm with your accountant or the Florida Department of Revenue.
 
 ## What Miami buyers order partitions for
 
@@ -126,6 +138,11 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Miami-Dade certificate of competency: [Miami-Dade County Code, Chapter 10](https://library.municode.com/fl/miami_-_dade_county/codes/code_of_ordinances?nodeId=PTIIICOOR_CH10CO). Last checked 2026-11-03.
 - Florida contractor licensing: [Florida Statutes 489.113](https://www.flsenate.gov/Laws/Statutes/2023/489.113). Last checked 2026-11-19.
 - Toilet counts in Miami: Florida Building Code, Plumbing, 8th Edition (2023), Table 403.1 and Sections 403.1.1, 403.1.3 and 424.2, read on a secondary copy ([UpCodes](https://up.codes/viewer/florida/fl-plumbing-code-2023/chapter/4/fixtures-faucets-and-fixture-fittings)) because the official viewer blocks automated reading. The Florida Building Commission's change documents for the 9th Edition (2026) show the same ratios for these three rows. Checked 2026-11-24.
+- Carpenter wages, May 2025: U.S. Bureau of Labor Statistics national figures; the Miami metro median was read on a secondary copy of the Bureau's metro file ([wagedex](https://wagedex.com/jobs/carpenters/metro/miami-fort-lauderdale-west-palm-beach-fl)). Checked 2026-11-24.
+- Public jobs: [Florida Statutes 255.0992](https://www.flsenate.gov/Laws/Statutes/2025/255.0992) and [federal wage determination FL20260215](https://sam.gov/wage-determination/FL20260215/1). Checked 2026-11-24.
+- Florida's stall rules beyond the federal ones: [Florida Statutes 553.504(5)](https://www.flsenate.gov/Laws/Statutes/2025/553.504). Checked 2026-11-24.
+- Restroom rules: Florida Building Code, Plumbing, 8th Edition, Sections 403.1.2 and 403.2, read on a [secondary copy](https://up.codes/viewer/florida/fl-plumbing-code-2023/chapter/4/fixtures-faucets-and-fixture-fittings); [Florida Statutes 553.865](https://www.flsenate.gov/Laws/Statutes/2025/553.865). Checked 2026-11-24.
+- Sales tax: Florida Department of Revenue, [sales and use tax](https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx), [discretionary sales surtax](https://floridarevenue.com/taxes/taxesfees/Pages/discretionary.aspx) and [GT-800067, Sales and Use Tax on Building Contractors](https://floridarevenue.com/Forms_library/current/gt800067.pdf). Checked 2026-11-24.
 - The rules by their official names: 2010 ADA Standards for Accessible Design; Florida Building Code, 8th Edition (2023): Building, Plumbing and Accessibility volumes, replaced by the 9th Edition (2026) on December 31, 2026; NFPA 286 for HDPE under the International Building Code, the model for Florida's code.
 
 <!-- For Marc -->
@@ -140,3 +157,4 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - **Update on December 31, 2026:** the 9th Edition (2026) Florida Building Code takes effect. Rewrite the codes bullets and the FAQ answer for the 9th Edition only, and recheck the city's list of applicable codes.
 - To confirm by phone before launch: whether replacing anchored toilet partitions needs a City of Miami permit, and which Miami-Dade certificate of competency covers partition installation (Florida's state status is unclear in `research/state-licensing/states.json`).
 - Stall-count table: read the 8th Edition rows once in a browser on the official viewer, and the published 9th Edition before December 31, 2026. The women's 3-to-2 rule (403.1.3) and its exception for licensed establishments need confirming. Data in `research/state-codes/fixtures/miami.json`.
+- City data (2026-11-24, `research/city-data/miami.json`): read the Miami metro wage once in a browser on the Bureau's own table (area 0033100); the Department of Revenue doesn't say whether toilet partitions count as a building fixture or as goods, which decides how an installed job is taxed (ask the Department); the 9th Edition changes the restroom sign wording on December 31, 2026.
