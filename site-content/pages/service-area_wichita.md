@@ -100,7 +100,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## Nearby cities we deliver to
 
-Derby, and every other ZIP code in the Wichita area. We ship to all 50 states: see the full [service area](/service-area).
+Derby and every other ZIP code in the Wichita area. We ship to all 50 states: see the full [service area](/service-area).
 
 ## Get a quote
 

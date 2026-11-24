@@ -101,7 +101,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## Nearby cities we deliver to
 
-Socorro, and every other ZIP code in the El Paso area. We ship to all 50 states: see the full [service area](/service-area).
+Socorro and every other ZIP code in the El Paso area. We ship to all 50 states: see the full [service area](/service-area).
 
 ## Get a quote
 

@@ -100,7 +100,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## Nearby cities we deliver to
 
-Petersburg, and every other ZIP code in the Richmond area. We ship to all 50 states: see the full [service area](/service-area).
+Petersburg and every other ZIP code in the Richmond area. We ship to all 50 states: see the full [service area](/service-area).
 
 ## Get a quote
 

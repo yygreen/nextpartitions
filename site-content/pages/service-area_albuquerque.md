@@ -100,7 +100,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## Nearby cities we deliver to
 
-Rio Rancho, and every other ZIP code in the Albuquerque area. We ship to all 50 states: see the full [service area](/service-area).
+Rio Rancho and every other ZIP code in the Albuquerque area. We ship to all 50 states: see the full [service area](/service-area).
 
 ## Get a quote
 

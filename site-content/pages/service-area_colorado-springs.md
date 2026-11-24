@@ -100,7 +100,7 @@ How tax applies depends on your contract, so confirm with your accountant, the C
 
 ## Nearby cities we deliver to
 
-Fountain, and every other ZIP code in the Colorado Springs area. We ship to all 50 states: see the full [service area](/service-area).
+Fountain and every other ZIP code in the Colorado Springs area. We ship to all 50 states: see the full [service area](/service-area).
 
 ## Get a quote
 

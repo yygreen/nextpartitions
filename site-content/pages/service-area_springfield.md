@@ -101,7 +101,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## Nearby cities we deliver to
 
-Nixa, and every other ZIP code in the Springfield area. We ship to all 50 states: see the full [service area](/service-area).
+Nixa and every other ZIP code in the Springfield area. We ship to all 50 states: see the full [service area](/service-area).
 
 ## Get a quote
 
