@@ -59,12 +59,13 @@ Last checked November 23, 2026. Rules change, so confirm your project with the C
 
 Florida counts toilets by the number of people the building holds, half men and half women. Every toilet needs a stall. Urinals are optional: they may stand in for up to half of the men's toilets in an office, and up to two-thirds in a restaurant or school.
 
-| People in the building | Office | Restaurant | School |
-|---|---|---|---|
-| 50 | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall |
-| 100 | 2 women's stalls<br>2 men's stalls | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall |
-| 200 | 3 women's stalls<br>3 men's stalls | 2 women's stalls<br>2 men's stalls | 2 women's stalls<br>2 men's stalls |
-| 400 | 5 women's stalls<br>5 men's stalls | 3 women's stalls<br>3 men's stalls<br>More women's stalls may apply | 4 women's stalls<br>4 men's stalls |
+:::stalls
+head: Office | Restaurant | School
+50: 1/1 | 1/1 | 1/1
+100: 2/2 | 1/1 | 1/1
+200: 3/3 | 2/2 | 2/2
+400: 5/5 | 3/3;More women's stalls may apply | 4/4
+:::
 
 In restaurants and other gathering places, Florida can require three women's toilets for every two men's toilets and urinals once the men's room has more than two. Licensed restaurants may be exempt, so confirm with the City of Miami Building Department. Outdoor seating counts toward the number of people. At least one stall in each room must be wheelchair accessible.
 

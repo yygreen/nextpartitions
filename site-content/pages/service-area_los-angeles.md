@@ -58,12 +58,13 @@ Last checked November 23, 2026. Rules change, so confirm your project with the L
 
 Los Angeles counts toilets by the number of people the building holds, half men and half women, and it requires urinals in the men's room. Every toilet needs a stall, and urinals need screens between them. The women's room must have at least as many toilets as the men's room has toilets and urinals together.
 
-| People in the building | Office | Restaurant | School |
-|---|---|---|---|
-| 50 | 2 women's stalls<br>1 men's stall + 1 urinal | 2 women's stalls<br>1 men's stall + 1 urinal | 2 women's stalls<br>1 men's stall + 1 urinal |
-| 100 | 3 women's stalls<br>1 men's stall + 1 urinal | 2 women's stalls<br>1 men's stall + 1 urinal | 2 women's stalls<br>1 men's stall + 1 urinal |
-| 200 | 4 women's stalls<br>2 men's stalls + 1 urinal | 3 women's stalls<br>2 men's stalls + 1 urinal | 4 women's stalls<br>2 men's stalls + 1 urinal |
-| 400 | 8 women's stalls<br>3 men's stalls + 2 urinals | 4 women's stalls<br>3 men's stalls + 1 urinal | 7 women's stalls<br>4 men's stalls + 2 urinals |
+:::stalls
+head: Office | Restaurant | School
+50: 2/1+1 | 2/1+1 | 2/1+1
+100: 3/1+1 | 2/1+1 | 2/1+1
+200: 4/2+1 | 3/2+1 | 4/2+1
+400: 8/3+2 | 4/3+1 | 7/4+2
+:::
 
 These are minimums for new buildings, additions and changes of use that bring in more people; a remodel that doesn't add people can usually keep the toilets it has. A business with 50 people or fewer may be allowed a single one-person restroom, so ask LADBS. At least one stall in each room must be wheelchair accessible.
 

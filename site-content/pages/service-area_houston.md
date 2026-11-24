@@ -58,12 +58,13 @@ Last checked November 23, 2026. Rules change, so confirm your project with the H
 
 Houston counts toilets by the number of people the building holds, half men and half women. Every toilet needs a stall. One Houston rule is unusual: where the men's room needs more than one toilet, half of them must be urinals, so you buy fewer men's stalls and add urinal screens.
 
-| People in the building | Office | Restaurant | School |
-|---|---|---|---|
-| 50 | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall |
-| 100 | 2 women's stalls<br>1 men's stall + 1 urinal | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall |
-| 200 | 3 women's stalls<br>3 for men: stalls and urinals | 2 women's stalls<br>1 men's stall + 1 urinal | 2 women's stalls<br>1 men's stall + 1 urinal |
-| 400 | 5 women's stalls<br>5 for men: stalls and urinals | 3 women's stalls<br>3 for men: stalls and urinals | 4 women's stalls<br>2 men's stalls + 2 urinals |
+:::stalls
+head: Office | Restaurant | School
+50: 1/1 | 1/1 | 1/1
+100: 2/1+1 | 1/1 | 1/1
+200: 3/~3 | 2/1+1 | 2/1+1
+400: 5/~5 | 3/~3 | 4/2+2
+:::
 
 Where the men's side needs 3 or 5, the city doesn't say how "half" rounds, so confirm the split of stalls and urinals with Houston plan review. These are minimums for the whole building, and at least one stall in each room must be wheelchair accessible.
 

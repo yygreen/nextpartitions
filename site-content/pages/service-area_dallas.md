@@ -58,12 +58,13 @@ Last checked November 23, 2026. Rules change, so confirm your project with Dalla
 
 Dallas handles toilet counts differently from most cities. For schools, the counts below are required. For offices and restaurants, the city requires only one toilet for each sex where people work, and says of the usual counts that they are "recommended, but not required". Every toilet needs a stall. Urinals are optional and may stand in for some of the men's toilets.
 
-| People in the building | Office (recommended) | Restaurant (recommended) | School (required) |
-|---|---|---|---|
-| 50 | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall |
-| 100 | 2 women's stalls<br>2 men's stalls | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall |
-| 200 | 3 women's stalls<br>3 men's stalls | 2 women's stalls<br>2 men's stalls | 2 women's stalls<br>2 men's stalls |
-| 400 | 5 women's stalls<br>5 men's stalls | 3 women's stalls<br>3 men's stalls | 4 women's stalls<br>4 men's stalls |
+:::stalls
+head: Office (recommended) | Restaurant (recommended) | School (required)
+50: 1/1 | 1/1 | 1/1
+100: 2/2 | 1/1 | 1/1
+200: 3/3 | 2/2 | 2/2
+400: 5/5 | 3/3 | 4/4
+:::
 
 The counts split the people half men and half women. At least one stall in each room must be wheelchair accessible. Confirm what your project needs with Dallas Building Inspection.
 

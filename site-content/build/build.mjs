@@ -128,6 +128,39 @@ const expert = (block) => {
     + `<figcaption class="np-tb-strip"><div class="np-tb-cell"><span class="np-tb-val">${esc(name || '[Name]')}</span><span class="np-tb-role">${esc(role || '[Role], Next Partitions')}</span></div>`
     + `<div class="np-tb-cell np-tb-brand"><img src="${LOGO}" alt="" width="26" height="27"><span><b>Next Partitions</b><br>Expert advice</span></div></figcaption></figure>`
 }
+// Stall counts on a city buy page (":::stalls" … ":::"): a "head:" line with the building types, then one line per
+// number of people, each cell "women/men", "women/men+urinals" or "women/~total" (men's side a mix of stalls and
+// urinals the city doesn't split), with an optional ";note". Drawn in the pricer's frame, with one small stall or
+// urinal icon per fixture, so the counts read at a glance; the same numbers are in the text beside the icons.
+const ST_STALL = '<svg viewBox="0 0 12 18" width="12" height="18" aria-hidden="true"><rect x="1" y="1" width="10" height="14" fill="#fff" stroke="#2d1e14" stroke-width="1.5"/><circle cx="8.3" cy="8.5" r="1.1" fill="#fe7802"/><path d="M2.5 15v2M9.5 15v2" stroke="#2d1e14" stroke-width="1.5"/></svg>'
+const ST_URINAL = '<svg viewBox="0 0 12 18" width="12" height="18" aria-hidden="true"><path d="M2.5 2.5h7v7a3.5 3.5 0 0 1-7 0z" fill="#fff1e5" stroke="#2d1e14" stroke-width="1.5"/><path d="M6 13v3.5" stroke="#2d1e14" stroke-width="1.5"/></svg>'
+const ST_EITHER = '<svg viewBox="0 0 12 18" width="12" height="18" aria-hidden="true"><rect x="1" y="1" width="10" height="14" fill="#fff" stroke="#2d1e14" stroke-width="1.5" stroke-dasharray="2.5 2"/></svg>'
+const stallTables = []
+const stallTable = (block) => { stallTables.push(block.trim()); return `<div data-np-stalls="${stallTables.length - 1}"></div>` }
+const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`
+const stallCell = (raw) => {
+  const [counts, note] = raw.split(';').map((x) => x.trim())
+  const [w, men] = counts.split('/')
+  const mixed = men.startsWith('~'), [m, u] = men.replace('~', '').split('+').map(Number)
+  const row = (label, icons, text) => `<div class="np-st-row"><span class="np-st-who">${label}</span><span class="np-st-icons">${icons}</span><span class="np-st-n">${text}</span></div>`
+  return row('Women', ST_STALL.repeat(+w), plural(+w, 'stall'))
+    + (mixed ? row('Men', ST_EITHER.repeat(m), `${m} stalls and urinals`)
+      : row('Men', ST_STALL.repeat(m) + (u ? ST_URINAL.repeat(u) : ''), plural(m, 'stall') + (u ? ` + ${plural(u, 'urinal')}` : '')))
+    + (note ? `<p class="np-st-note">${esc(note)}</p>` : '')
+}
+const stallTableHtml = (block) => {
+  const lines = block.split('\n').map((l) => l.trim()).filter(Boolean)
+  const heads = lines.shift().replace(/^head:\s*/, '').split('|').map((h) => h.trim())
+  const head = (h) => { const m = h.match(/^(.*?)\s*\((.*)\)$/); return m ? `${esc(m[1])}<small>${esc(m[2])}</small>` : esc(h) }
+  const rows = lines.map((l) => { const i = l.indexOf(':'); return { n: l.slice(0, i).trim(), cells: l.slice(i + 1).split('|').map((c) => c.trim()) } })
+  return `<div class="np-st" role="table" aria-label="Stalls needed by building type and number of people"><div class="np-st-in">`
+    + `<div class="np-st-head" role="row"><span role="columnheader">People in the building</span>${heads.map((h) => `<span role="columnheader">${head(h)}</span>`).join('')}</div>`
+    + rows.map((r) => `<div class="np-st-line" role="row"><div class="np-st-people" role="rowheader"><b>${esc(r.n)}</b><span>people</span></div>${r.cells.map((c, i) => `<div class="np-st-cell" role="cell"><span class="np-st-type">${head(heads[i])}</span>${stallCell(c)}</div>`).join('')}</div>`).join('')
+    + `<p class="np-st-key">${ST_STALL}<span>stall</span>${ST_URINAL}<span>urinal</span>${block.includes('~') ? `${ST_EITHER}<span>stall or urinal</span>` : ''}</p></div></div>`
+}
+const withStallTables = (html) => html.replace(/<div data-np-stalls="(\d+)"><\/div>/g, (_, i) => stallTableHtml(stallTables[+i]))
+const STALLS_CSS = `.np-st{margin:8px 0 24px;border:1.5px solid #2d1e14;background:#fff}.np-st-in{border-top:4px solid #fe7802}.np-st-head,.np-st-line{display:grid;grid-template-columns:110px repeat(3,minmax(0,1fr))}.np-st-head{background:#2d1e14;color:#fff;font-size:14px;font-weight:600}.np-st-head span{padding:10px 14px}.np-st-head small,.np-st-type small{display:block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#ffb877}.np-st-line{border-top:1px solid var(--border,#e5e0da)}.np-st-line:first-of-type{border-top:0}.np-st-people{padding:14px;display:flex;flex-direction:column;justify-content:center;background:var(--accent,#f2f0ec)}.np-st-people b{font-size:24px;font-weight:800;line-height:1;color:#1c0e05}.np-st-people span{font-size:12px;color:#7a6a5e;margin-top:2px}.np-st-cell{padding:12px 14px;border-left:1px solid var(--border,#e5e0da);min-width:0}.np-st-type{display:none}.np-st-row{display:flex;flex-wrap:wrap;align-items:center;column-gap:8px;row-gap:2px;padding:4px 0}.np-st-who{width:52px;flex:none}.np-st-who{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#7a6a5e}.np-st-icons{display:flex;flex-wrap:wrap;gap:3px;min-height:18px}.np-st-n{font-size:13px;line-height:1.3;color:#1c0e05}.np-st-note{margin:4px 0 0!important;font-size:12px!important;line-height:1.3;color:#8a4300}.np-st-key{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0!important;padding:8px 14px;border-top:1px solid var(--border,#e5e0da);font-size:12px!important;color:#7a6a5e}.np-st-key span{margin-right:12px}@media(max-width:640px){.np-st-head{display:none}.np-st-line{display:block;border-top:1.5px solid #2d1e14}.np-st-people{flex-direction:row;align-items:baseline;justify-content:flex-start;gap:6px;padding:10px 14px}.np-st-cell{border-left:0;border-top:1px solid var(--border,#e5e0da);padding:10px 14px}.np-st-type{display:block;font-size:14px;font-weight:700;color:#1c0e05;margin:0 0 4px}.np-st-type small{color:#8a4300}}`
+
 // "Price your restroom" on a city buy page (":::pricer" … ":::"; the block's text is the city name): the configurator's
 // first questions one slide at a time. No price, total or per-stall rate shows before the visitor enters an email; the
 // last slide's button is "Get my instant quote range", and the choices carry over to /get-a-quote. In the preview the
@@ -318,7 +351,7 @@ out.push(row('check','Hardware','Latch and pulls work with one hand, without tig
 list.innerHTML=out.join('');const fails=list.querySelectorAll('.np-chk-fail').length,checks=list.querySelectorAll('.np-chk-check').length;
 sum.textContent=fails?fails+(fails>1?' rules fail':' rule fails')+', '+checks+' to check on your drawing':'No problems found. '+checks+' items to check on your drawing'}
 f.addEventListener('input',run);f.addEventListener('change',run);run()})()</script>`
-const md = (s) => withPricers(withCheckers(ctas(inlineRenders(legends(cards(styled(marked.parse(s.replace(/^:::pricer\n([\s\S]*?)\n:::$/gm, (_, b) => pricer(b)).replace(/^:::checker\n([\s\S]*?)\n:::$/gm, (_, b) => checker(b)).replace(/^:::expert\n([\s\S]*?)\n:::$/gm, (_, b) => expert(b)).replace(/^:::advice\n([\s\S]*?)\n:::$/gm, (_, b) => advice(b)).replace(/^:::gallery\n([\s\S]*?)\n:::$/gm, (_, b) => gallery(b)), { gfm: true }))))))))
+const md = (s) => withStallTables(withPricers(withCheckers(ctas(inlineRenders(legends(cards(styled(marked.parse(s.replace(/^:::stalls\n([\s\S]*?)\n:::$/gm, (_, b) => stallTable(b)).replace(/^:::pricer\n([\s\S]*?)\n:::$/gm, (_, b) => pricer(b)).replace(/^:::checker\n([\s\S]*?)\n:::$/gm, (_, b) => checker(b)).replace(/^:::expert\n([\s\S]*?)\n:::$/gm, (_, b) => expert(b)).replace(/^:::advice\n([\s\S]*?)\n:::$/gm, (_, b) => advice(b)).replace(/^:::gallery\n([\s\S]*?)\n:::$/gm, (_, b) => gallery(b)), { gfm: true })))))))))
 
 function faqItems(section) {
   return section.md.split(/^### /m).filter((x) => x.trim()).map((q) => { const nl = q.indexOf('\n'); return { q: q.slice(0, nl).trim(), a: q.slice(nl + 1).trim() } })
@@ -612,7 +645,7 @@ ${shell.match(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(fm.title)}</title>`)
     .replace(/<meta name="description"[^>]*>/, '')
     .replace(/<link rel="canonical"[^>]*>/, '')
-    .replace('</head>', `<meta name="description" content="${esc(fm.meta)}"/>\n<link rel="canonical" href="${SITE}${url}"/>\n<meta name="robots" content="noindex"/>\n${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join('\n')}\n<style>${PAGE_CSS}${HUBS.has(url) || url === '/blog' ? HUB_CSS : ''}${url === '/blog' ? BLOG_CSS : ''}${CATEGORY.has(url.split('/')[1]) ? CAT_CSS : ''}${main.includes('np-chk') ? CHECKER_CSS : ''}${main.includes('np-pr') ? PRICER_CSS : ''}${MOBILE_CSS}</style>\n</head>`)
+    .replace('</head>', `<meta name="description" content="${esc(fm.meta)}"/>\n<link rel="canonical" href="${SITE}${url}"/>\n<meta name="robots" content="noindex"/>\n${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join('\n')}\n<style>${PAGE_CSS}${HUBS.has(url) || url === '/blog' ? HUB_CSS : ''}${url === '/blog' ? BLOG_CSS : ''}${CATEGORY.has(url.split('/')[1]) ? CAT_CSS : ''}${main.includes('np-chk') ? CHECKER_CSS : ''}${main.includes('np-pr') ? PRICER_CSS : ''}${main.includes('np-st') ? STALLS_CSS : ''}${MOBILE_CSS}</style>\n</head>`)
     .replace(/<body([^>]*)>/, `<body$1><div style="background:#111;color:#fff;font:12px/1.4 Inter,system-ui,sans-serif;padding:6px 16px;text-align:center">Preview of new page content for nextpartitions.com${url} · not the live site · <a href="index.html" style="color:#fff;text-decoration:underline">all preview pages</a></div>`)
     // Links: rebuilt pages stay in the preview; everything else goes to the live site.
     .replace(/(href|src)="\/(?!\/)([^"]*)"/g, (_, attr, path) => {
@@ -736,7 +769,7 @@ if (EXPORT) {
   for (const n of renders) cpSync(`${RENDERS}${n}.jpg`, `${EXPORT}/public/images/renders/${n}.jpg`)
   cpSync('../../prototypes/img/logo.png', `${EXPORT}/public/images/content/np-logo.png`)
   // The page CSS, scoped to .np-content (CSS nesting; Tailwind's build flattens it) so it can't touch other pages.
-  const css = [PAGE_CSS, HUB_CSS, CAT_CSS, CHECKER_CSS, PRICER_CSS, MOBILE_CSS].join('').replace(/(^|[},])\s*main /g, '$1')
+  const css = [PAGE_CSS, HUB_CSS, CAT_CSS, CHECKER_CSS, PRICER_CSS, STALLS_CSS, MOBILE_CSS].join('').replace(/(^|[},])\s*main /g, '$1')
   writeFileSync(`${EXPORT}/src/content/content.css`, `/* Generated by site-content/build/build.mjs --export in yygreen/nextpartitions. Don't edit by hand. */\n.np-content{${css}}\n`)
   const js = (s) => s.replace(/^<script>/, '').replace(/<\/script>$/, '')
   writeFileSync(`${EXPORT}/src/content/widgets.ts`, `// Generated by site-content/build/build.mjs --export in yygreen/nextpartitions. Don't edit by hand.\n// The content pages' small scripts: "Read more" on category pages and the ADA layout checker. Run in the browser\n// after the page HTML is in the document; each does nothing when its element isn't on the page.\n/* eslint-disable */\n// @ts-nocheck\nexport function initContentWidgets(): void {\n  try { ${js(RM_JS)} } catch (e) { console.error(e) }\n  try { ${js(CHECKER_JS)} } catch (e) { console.error(e) }\n}\n`)

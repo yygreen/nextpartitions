@@ -60,12 +60,13 @@ Last checked November 23, 2026. Rules change, so confirm your project with SDCI 
 
 Seattle counts toilets by the number of people the building holds, half men and half women. Every toilet needs a stall. Washington sets its own count for schools, with more toilets for girls than for boys. Urinals are optional and may stand in for most of the men's toilets.
 
-| People in the building | Office | Restaurant | School |
-|---|---|---|---|
-| 50 | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall | 1 women's stall<br>1 men's stall |
-| 100 | 2 women's stalls<br>2 men's stalls | 1 women's stall<br>1 men's stall | 2 women's stalls<br>2 men's stalls |
-| 200 | 3 women's stalls<br>3 men's stalls | 2 women's stalls<br>2 men's stalls | 4 women's stalls<br>3 men's stalls |
-| 400 | 5 women's stalls<br>5 men's stalls | 3 women's stalls<br>3 men's stalls | 8 women's stalls<br>6 men's stalls |
+:::stalls
+head: Office | Restaurant | School
+50: 1/1 | 1/1 | 1/1
+100: 2/2 | 1/1 | 2/2
+200: 3/3 | 2/2 | 4/3
+400: 5/5 | 3/3 | 8/6
+:::
 
 Small businesses may be allowed one shared restroom: up to 25 people in an office and up to 30 in a restaurant. At least one stall in each room must be wheelchair accessible. Confirm your project with SDCI.
 
