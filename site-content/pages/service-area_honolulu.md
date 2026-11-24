@@ -24,10 +24,10 @@ Honolulu
 
 ## The right material for Honolulu's climate
 
-Honolulu gets about 16 inches of rain a year, on roughly 92 days, and relative humidity averages 74% in the morning and 56% in the afternoon. The weather rarely decides the material here. The room does:
+Honolulu gets about 16 inches of rain a year, on roughly 92 days, and relative humidity averages 74% in the morning and 56% in the afternoon. In most Honolulu restrooms the room decides the material, not the weather:
 
-- **Most restrooms** (offices, restaurants, retail, clinics, schools): all five materials work. Choose on looks, cleaning routine and budget.
-- **Rooms that get wet from the inside** (pool facilities, gym locker rooms, restrooms that are hosed down): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
+- **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
+- **Restrooms without air conditioning, or that get wet from the inside** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
@@ -117,7 +117,7 @@ Yes. Partitions ship by freight carrier to Honolulu and the surrounding cities, 
 No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor needs a Hawaii state license for any job over $1,500. Our directory lists [partition installers in Honolulu](/installers/hawaii/honolulu), and you can ask for installation prices with your quote.
 
 ### Which partition material is best in Honolulu?
-The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
+In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What rules does a Honolulu restroom have to meet?
 Federal and Hawaii wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the Honolulu Department of Planning and Permitting.

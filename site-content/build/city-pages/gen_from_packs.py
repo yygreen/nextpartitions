@@ -40,7 +40,7 @@ def climate(b):
     hum = ('relative humidity averages %d%% in the morning and %d%% in the afternoon' % (c['humidity_morning'], c['humidity_afternoon'])) if c.get('humidity_morning') else ''
     verb = 'records' if c.get('nearby_station') else 'gets'
     p, h = c.get('precip_in') or 30, c.get('humidity_morning') or 75
-    if p < 20:
+    if p < 20 and st != 'HI':  # Honolulu is dry by rainfall but humid: it gets the mixed wording
         kind = 'dry'
         lead = '%s %s %s%s. The weather rarely decides the material here. The room does:' % (place, verb, rain, (', and ' + hum) if hum else '')
         a = '- **Most restrooms** (offices, restaurants, retail, clinics, schools): all five materials work. Choose on looks, cleaning routine and budget.'
