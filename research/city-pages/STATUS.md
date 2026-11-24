@@ -10,7 +10,8 @@ State packs: all 43 done (39 researched 2026-11-24, plus TX, CA, FL, WA from the
 
 Cities done and in the preview (23): atlanta, boise, charlotte, cleveland, columbus, denver, detroit, fort-worth, grand-rapids, indianapolis, kansas-city, las-vegas, nashville, new-orleans, newark, phoenix, providence, raleigh, salt-lake-city, san-diego, tacoma, tampa, washington-dc.
 Drafts (pack written, agent stopped before its final check; listed in drafts.txt, no page generated): durham, shreveport, sioux-falls, tucson.
-Stopped early, restart from scratch or resume (15): chicago, omaha, greensboro, cincinnati, st-louis, savannah, memphis, colorado-springs, akron, dayton, chattanooga, knoxville, springfield, mesa, norfolk.
+Finished after the pause and added to the preview: chicago, omaha, greensboro.
+Stopped early, restart from scratch or resume (12): cincinnati, st-louis, savannah, memphis, colorado-springs, akron, dayton, chattanooga, knoxville, springfield, mesa, norfolk.
 Not yet launched (52): albuquerque, anchorage, austin, bakersfield, baltimore, birmingham, boston, buffalo, charleston, columbia, corpus-christi, des-moines, el-paso, fresno, hartford, honolulu, jackson, jacksonville, lexington, little-rock, long-beach, long-island, louisville, madison, milwaukee, minneapolis, mobile, modesto, new-york, oklahoma-city, ontario, orange-county, orlando, pensacola, philadelphia, pittsburgh, portland, richmond, riverside, rochester, sacramento, san-antonio, san-francisco, san-jose, spokane, st-petersburg, stockton, tallahassee, tulsa, virginia-beach, wichita, worcester.
 
 City agent prompt: "Research and writing task for the city of <City>, <State> (slug, state). Follow research/city-pages/CITY-BRIEF.md exactly... Write to research/city-pages/cities/<slug>.json. A finished example in the same state: ... County for tax and wage rates. Keep working files in a scratchpad subfolder named <slug>. Read the finished page top to bottom."
