@@ -1,0 +1,514 @@
+{
+ "state": "CO",
+ "state_name": "Colorado",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "Colorado Plumbing Code (State Plumbing Board rules, 3 CCR 720-1, Rule 1.2): the 2024 International Plumbing Code, 1st printing (June 2023), with Colorado amendments. Current rule version effective 2026-08-14 (adopted 2026-06-24).",
+   "edition": "2024 International Plumbing Code with Colorado amendments",
+   "table": "Table 403.1, Minimum Number of Required Plumbing Fixtures (not amended by Colorado; Colorado adds one sentence to Section 403.1 and one paragraph to Section 403.3)",
+   "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12668&fileName=3%20CCR%20720-1",
+   "quote": "The Board hereby adopts and incorporates by reference, with certain additions, revisions, and deletions, the following chapters, sections, and appendices of the International Plumbing Code (“IPC”) and International Residential Code (“IRC”). ... The Colorado Plumbing Code sets forth the minimum standards governing the inspection, installation, alteration, and repair of the plumbing fixtures, appliances, and systems throughout Colorado. ... 1. Chapter 1, Sections 101.2, 102, 105, 106.1, 106.3, 106.4, 106.5, 106.5.5, 106.6.1, 107, 108.1, 110.3 Chapters 2-13, 15; and Appendices B, C, D, and E of the IPC, 2024 edition promulgated by the International Code Council 1st printing (June 2023).",
+   "note": "The adoption and the Colorado amendments were read in the official rule PDF on the Secretary of State's site. The table rows and Sections 403.1.1, 403.2, 405.3.4, 405.3.5 and 424.2 were read on UpCodes' copy ('Division of Professions and Occupations (DPO) Plumbing Code 2026, adopts with amendments IPC 2024'), a secondary source that shows the Colorado amendments in place. The entry in research/state-codes/states.json (2021 IPC, effective May 15, 2023) is out of date: the Board moved to the 2024 edition in the version effective 2026-02-14 or 2026-08-14 (the 2026-08-14 PDF was the one read)."
+  },
+  "cities_may_amend": true,
+  "cities_may_amend_quote": {
+   "text": "Cities and counties may amend the state plumbing code if their version is at least as strict.",
+   "quote": "Local governments are permitted to amend the code for their jurisdictions as long as the amendments are at least equal to the minimum requirements set forth in the Colorado plumbing code.",
+   "url": "https://colorado.public.law/statutes/crs_12-155-106",
+   "note": "C.R.S. 12-155-106(2), read on colorado.public.law (secondary copy of the 2024 statutes; leg.colorado.gov blocks automated access)."
+  },
+  "rows": {
+   "office": {
+    "row_label": "2 | Business | Buildings for the transaction of business, nonmedical professional services, other services involving merchandise, office buildings, banks, light industrial and similar uses",
+    "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "urinals": "See Section 424.2 (optional substitution, up to 50% of men's water closets in each toilet room)",
+    "quote": "Business | Buildings for the transaction of business, nonmedical professional services, other services involving merchandise, office buildings, banks, light industrial and similar uses | 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50 | 1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80 [lavatories] | — | 1 per 100 | 1 service sink",
+    "url": "https://up.codes/viewer/colorado/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "restaurant": {
+    "row_label": "1 | Assembly | Restaurants, banquet halls and food courts (footnote d)",
+    "wc_male": "1 per 75",
+    "wc_female": "1 per 75",
+    "urinals": "See Section 424.2 (optional substitution, up to 67% of men's water closets in each toilet room)",
+    "quote": "Restaurants, banquet halls and food courts[d] | 1 per 75 | 1 per 75 | 1 per 200 [lavatories] | — | 1 per 500 | 1 service sink. Footnote d: The occupant load for seasonal outdoor seating and entertainment areas shall be included when determining the minimum number of facilities required.",
+    "url": "https://up.codes/viewer/colorado/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "school": {
+    "row_label": "3 | Educational | Educational facilities",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 50",
+    "urinals": "See Section 424.2 (optional substitution, up to 67% of men's water closets in each toilet room)",
+    "quote": "Educational | Educational facilities | 1 per 50 | 1 per 50 [lavatories] | — | 1 per 100 | 1 service sink",
+    "url": "https://up.codes/viewer/colorado/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Half the occupants are counted as each sex, unless approved data show another split. A shared all-gender room is counted on the whole occupant load.",
+    "quote": "To determine the occupant load of each sex, the total occupant load shall be divided in half. ... Exceptions: The total occupant load shall not be required to be divided in half where approved statistical data indicate a distribution of the sexes of other than 50 percent of each sex. Where multiple-user facilities are designed to serve all genders, the minimum fixture count shall be calculated 100 percent, based on total occupant load. In such multiple-user facilities, each fixture type shall be in accordance with ICC A117.1.",
+    "url": "https://up.codes/viewer/colorado/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole fixture; one fixture is needed for any fraction of the stated number of people.",
+    "quote": "Fractional numbers resulting from applying the fixture ratios of Table 403.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number. [Table footnote a:] The fixtures shown are based on one fixture being the minimum required for the number of persons indicated or any fraction of the number of persons indicated.",
+    "url": "https://up.codes/viewer/colorado/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are optional. In each toilet room they may replace up to 67% of the men's required toilets in assembly (restaurant) and educational buildings and up to 50% elsewhere (offices). The code does not say how the cap rounds; the worked examples round down.",
+    "quote": "424.2 Substitution for Water Closets. In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent of the required water closets for males according to Table 403.1 in assembly and educational occupancies. Urinals shall not be substituted for more than 50 percent of the required water closets for males according to Table 403.1 in all other occupancies.",
+    "url": "https://up.codes/viewer/colorado/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "small_occupancy_exception": {
+    "text": "Separate men's and women's rooms are not required where the whole space holds 15 people or fewer, in a business (office) space holding 25 or fewer, or in a store holding 100 or fewer. Single-user rooms need not be designated by sex, and a shared room for all genders is allowed where each toilet has a compartment and each urinal a partition.",
+    "quote": "403.2 Separate Facilities. Where plumbing fixtures are required, separate toilet facilities shall be provided for each sex. Exceptions: Separate toilet facilities shall not be required for dwelling units and sleeping units. Separate toilet facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. Separate toilet facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. Separate toilet facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer. Separate toilet facilities shall not be required to be designated by sex where single-user toilet rooms are provided in accordance with Section 403.1.2. Separate toilet facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by all persons regardless of sex and privacy is provided for water closets in accordance with Section 405.3.4 and for urinals in accordance with Section 405.3.5.",
+    "url": "https://up.codes/viewer/colorado/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "occupant_load": {
+    "text": "The plumbing code takes the number of occupants from the building code. Colorado has no statewide building code, so the city's or county's adopted code sets the figures. In the 2021 International Building Code (the edition the state applies to public schools and that the State Architect uses for state buildings) the table gives 150 gross sq ft per person for business areas, 15 net sq ft for assembly with tables and chairs, and 20 net sq ft for classrooms. Each city agent should confirm the table in the city's own edition.",
+    "quote": "[Colorado Plumbing Code 403.1:] The number of occupants shall be determined by the International Building Code. [2021 IBC Table 1004.5, as read by a fetch tool on UpCodes' DFPC Building Code 2021:] Business areas: 150 gross. Assembly without fixed seats, Unconcentrated (tables and chairs): 15 net. Educational, Classroom area: 20 net.",
+    "url": "https://up.codes/viewer/colorado/ibc-2021/chapter/10/means-of-egress"
+   },
+   "colorado_amendments": {
+    "text": "Colorado adds two things to Section 403: lavatory ratios must be kept in every restroom, and newly built or remodeled state, county and city buildings (not K-12 schools) must provide an accessible single-user or multi-user non-gendered restroom. Toilets and sinks inside a classroom for that classroom's students do not count toward the table.",
+    "quote": "s. IPC Section 403.1 Minimum number of fixtures. Add a new sentence to the end of the section to read as follows: Lavatory to water closet or urinal ratios in accordance with Table 403.1 shall be maintained in all restrooms. t. IPC Section 403.3 Employee and public toilet facilities, effective January 1, 2024. Add a new paragraph to the end of the section to read as follows: All state departments (excluding K-12 schools), state agencies, state institutions of higher education, counties, cities, or municipality buildings that are newly constructed or are being remodeled shall provide an ADA-compliant single-user or an ADA-compliant multi-user non-gendered restrooms as required by section 9-5.7-103, C.R.S. u. IPC Section 405.3.2 Public Lavatories. Add a new exception reading: Exception: Lavatories located outside toilet facilities located within a classroom serving students from that classroom only. These toilet facilities and lavatories shall not count toward the total fixture count required by Table 403.1.",
+    "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12668&fileName=3%20CCR%20720-1"
+   },
+   "every_toilet_needs_a_stall": {
+    "text": "Each toilet used by the public or employees needs its own compartment with a door; each urinal needs partitions, at least 30 inches apart, starting no more than 12 inches above the floor and reaching at least 60 inches high. Single-occupant rooms with a lockable door are exempt.",
+    "quote": "405.3.4 Water Closet Compartment. Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy. ... 405.3.5 Urinal Partitions. Each urinal utilized by the public or employees shall occupy a separate area with walls or partitions to provide privacy. The horizontal dimension between walls or partitions at each urinal shall be not less than 30 inches (762 mm). The walls or partitions shall begin at a height not greater than 12 inches (305 mm) from and extend not less than 60 inches (1524 mm) above the finished floor surface. The walls or partitions shall extend from the wall surface at each side of the urinal not less than 18 inches (457 mm) or to a point not less than 6 inches (152 mm) beyond the outermost front lip of the urinal measured from the finished backwall surface, whichever is greater.",
+    "url": "https://up.codes/viewer/colorado/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 women, 25 men. 25/25 = 1 each. 50% of 1 = 0.5, so no urinal substitution. Office: 1 per 25 for the first 50 of each sex, then 1 per 50. Urinals may replace up to 50% of the men's toilets in each room, rounded down."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "50 women, 50 men. 50/25 = 2 each. 50% of 2 = 1 urinal may replace 1 men's toilet. Office: 1 per 25 for the first 50 of each sex, then 1 per 50. Urinals may replace up to 50% of the men's toilets in each room, rounded down."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 of each sex. First 50: 2. Remaining 50/50 = 1. Total 3 each. 50% of 3 = 1.5, so 1 urinal at most. Office: 1 per 25 for the first 50 of each sex, then 1 per 50. Urinals may replace up to 50% of the men's toilets in each room, rounded down."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 of each sex. First 50: 2. Remaining 150/50 = 3. Total 5 each. 50% of 5 = 2.5, so 2 urinals at most. Office: 1 per 25 for the first 50 of each sex, then 1 per 50. Urinals may replace up to 50% of the men's toilets in each room, rounded down."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 of each sex. 25/75 = 0.33, rounded up to 1 each. 67% of 1 = 0.67, so no substitution. Restaurant: 1 per 75 of each sex, fractions rounded up. Urinals may replace up to 67% of the men's toilets in each room, rounded down."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 of each sex. 50/75 = 0.67, rounded up to 1 each. 67% of 1 = 0.67, so no substitution. Restaurant: 1 per 75 of each sex, fractions rounded up. Urinals may replace up to 67% of the men's toilets in each room, rounded down."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 of each sex. 100/75 = 1.33, rounded up to 2 each. 67% of 2 = 1.34, so 1 urinal at most. Restaurant: 1 per 75 of each sex, fractions rounded up. Urinals may replace up to 67% of the men's toilets in each room, rounded down."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 of each sex. 200/75 = 2.67, rounded up to 3 each. 67% of 3 = 2.01, so 2 urinals at most. Restaurant: 1 per 75 of each sex, fractions rounded up. Urinals may replace up to 67% of the men's toilets in each room, rounded down."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 of each sex. 25/50 = 0.5, rounded up to 1 each. 67% of 1 = 0.67, so no substitution. School: 1 per 50 of each sex, fractions rounded up. Urinals may replace up to 67% of the men's toilets in each room, rounded down."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 of each sex. 50/50 = 1 each. 67% of 1 = 0.67, so no substitution. School: 1 per 50 of each sex, fractions rounded up. Urinals may replace up to 67% of the men's toilets in each room, rounded down."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 of each sex. 100/50 = 2 each. 67% of 2 = 1.34, so 1 urinal at most. School: 1 per 50 of each sex, fractions rounded up. Urinals may replace up to 67% of the men's toilets in each room, rounded down."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 of each sex. 200/50 = 4 each. 67% of 4 = 2.68, so 2 urinals at most. School: 1 per 50 of each sex, fractions rounded up. Urinals may replace up to 67% of the men's toilets in each room, rounded down."
+   }
+  ],
+  "confidence": "medium",
+  "confidence_note": "Edition and Colorado amendments read on the official rule PDF; table rows and rules read on UpCodes (secondary, per RULES.md that makes the item medium). Cities may amend (Denver and Colorado Springs each adopt their own codes): the city agent must check."
+ },
+ "hdpe_fire": {
+  "required": null,
+  "required_public_schools": true,
+  "scope": "Colorado has no statewide building code, so for most buildings the answer depends on the code the city or county adopted. The state does adopt a building code for the buildings it oversees: the Division of Fire Prevention and Control applies the 2021 International Building Code, unamended, to public schools, charter schools and junior colleges (8 CCR 1507-30 Article 3.2.1 pointing to 8 CCR 1507-101 Article 3.2.1). That edition has the rule in Section 803.9. State-owned buildings also use the 2021 IBC per C.R.S. 9-5.7-101(1)(f) and the State Architect's code list (the State Architect's site could not be opened).",
+  "section": "2021 International Building Code Section 803.9, with 803.1.1 (NFPA 286 room-corner test), as adopted without amendment by the Colorado Division of Fire Prevention and Control in 8 CCR 1507-101",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. [803.1.1:] Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1. Materials complying with Section 803.1.1.1 shall be considered to also comply with the requirements of Class A. [8 CCR 1507-101, 3.2.1:] The following Building Codes are adopted by these regulations. ... International Building Code - 2021 Edition, First Printing: October 2020 (Copyright 2020 by International Code Council, Inc. Washington D.C.).",
+  "url": "https://up.codes/viewer/colorado/ibc-2021/chapter/8/interior-finishes",
+  "adoption_url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12302&fileName=8%20CCR%201507-101",
+  "confidence": "medium",
+  "note": "Adoption read on the official rule PDFs; the section text on UpCodes ('Division of Fire Prevention and Control (DFPC) Building Code 2021, adopts without amendments IBC 2021'). The section speaks of HDPE or polypropylene 'used as an interior finish'; whether a plan reviewer treats toilet partitions as interior finish is the reviewer's call, as in the model code."
+ },
+ "access": {
+  "state_standard": "No separate Colorado accessibility standard for commercial restrooms was found. The state's accessibility statute (C.R.S. Title 9, Article 5) covers housing and points to ICC/ANSI A117.1. For other buildings, access rules come through the building code each city or county adopted (which references ICC A117.1) and, statewide, through the Colorado Plumbing Code, whose Section 404 sends accessible fixtures to International Building Code Chapter 11 and ICC A117.1 (the 2024 IPC's referenced edition is ICC A117.1-2017 with Supplement 1). Public schools, charter schools and junior colleges: 2021 IBC Chapter 11 with ICC A117.1-2017 (state Division of Fire Prevention and Control). The federal 2010 ADA Standards apply everywhere.",
+  "differences": [
+   {
+    "point": "How many wheelchair stalls (public schools, and any city on the International Building Code)",
+    "state": "2021 IBC 1110.2.4: at least 5 percent of the compartments in a toilet room must be wheelchair accessible, and where toilets plus urinals in a room total six or more, at least 5 percent must be ambulatory accessible, in addition.",
+    "federal": "2010 ADA Standards 213.3.1: at least one wheelchair accessible compartment; at least one ambulatory compartment where six or more toilet compartments are provided, or where urinals and water closets total six or more.",
+    "state_url": "https://up.codes/viewer/colorado/ibc-2021/chapter/11/accessibility",
+    "quote": "1110.2.4 Water Closet Compartment. Where water closet compartments are provided in a toilet room or bathing room, at least 5 percent of the total number of compartments shall be wheelchair accessible. Where the combined total water closet compartments and urinals provided in a toilet room or bathing room is six or more, at least 5 percent of the total number of compartments shall be ambulatory accessible, provided in addition to the wheelchair-accessible compartment. [ADA 213.3.1:] Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1. In addition to the compartment required to comply with 604.8.1, at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures.",
+    "note": "The two only differ in rooms with more than 20 compartments. Applies statewide only to the buildings the state regulates (public schools, charter schools, junior colleges); elsewhere it depends on the city's code."
+   },
+   {
+    "point": "Stall and room dimensions in ICC A117.1-2017 (turning space, clear floor space, compartment details)",
+    "state": "Not read: the ICC's online copy of A117.1-2017 returned HTTP 403. The 2021 IBC and the Colorado Plumbing Code (2024 IPC) both reference ICC A117.1-2017.",
+    "federal": "2010 ADA Standards 604.8.1 (wheelchair compartment) and 604.8.2.1: 'Ambulatory accessible compartments shall have a depth of 60 inches (1525 mm) minimum and a width of 35 inches (890 mm) minimum and 37 inches (940 mm) maximum.'",
+    "state_url": "https://up.codes/viewer/colorado/ibc-2021/chapter/35/referenced-standards",
+    "quote": "ICC A117.1—17 Accessible and Usable Buildings and Facilities [referenced in 2021 IBC sections 1102.1, 1110.2 and others]. [2021 IBC 1102.1:] Buildings and facilities shall be designed and constructed to be accessible in accordance with this code and ICC A117.1.",
+    "note": "Left open. Do not put A117.1-2017 dimensions on a page until someone reads the standard."
+   }
+  ],
+  "process": "No state accessibility plan review or registration step for private commercial work was found. Review happens with the building permit at the city or county building department. For public schools, charter schools and junior colleges, the state Division of Fire Prevention and Control (or a building department it has prequalified) reviews plans and issues the permit (8 CCR 1507-30). State-owned buildings go through the Office of the State Architect. Cities may set stricter access rules than the state housing statute (C.R.S. 9-5-103(4)).",
+  "process_quote": "[8 CCR 1507-30, 1.3.1:] Sections 22-32-124, 23-71-122, and 24-33.5-1203, C.R.S. establish the authority and duty of the Division to conduct or oversee the necessary plan reviews, issue building permits, and cause the necessary inspections to be performed as required by the adopted codes for buildings and structures of public schools, institute charter schools, charter schools, and junior colleges.",
+  "process_url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=11809&fileName=8%20CCR%201507-30",
+  "confidence": "medium"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "Statewide, through the Colorado Plumbing Code: single-user toilet rooms and family or assisted-use rooms must be identified as available to all persons regardless of sex, and they count toward the required fixtures. In buildings owned by the state, a state college, a county or a city (not K-12 schools), a single-stall restroom may not be gender-specific when the building is newly built or its restroom is renovated, and signs must use a pictogram without gender.",
+   "quote": "[Colorado Plumbing Code 403.1.2:] Single-user toilet facilities and bathing rooms, and family or assisted-use toilet facilities and bathing rooms shall be identified as being available for use by all persons regardless of their sex. [C.R.S. 9-5.7-103(1)(a)(II):] Ensure that any single-stall restroom is not a gender-specific restroom; [9-5.7-103(3)(b):] Any non-gendered multi-stall restroom or single-gendered or non-gendered single-stall restroom must have signage with a pictogram void of gender;",
+   "url": "https://up.codes/viewer/colorado/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "statute_url": "https://colorado.public.law/statutes/crs_9-5.7-103"
+  },
+  "all_gender_shared": {
+   "rule": "Allowed statewide by the Colorado Plumbing Code: a multi-user room for all genders is permitted where each toilet is in its own compartment with a door (405.3.4) and each urinal has partitions (405.3.5). The fixture count is then worked out on the total occupant load, and each fixture type must meet ICC A117.1. In public-entity buildings (state, state colleges, counties, cities; not K-12 schools) that are newly built or have a restroom renovated, a non-gendered single-stall or multi-stall restroom must be provided where a restroom is open to the public (from 2024-01-01), and for employees or enrolled students (from 2025-07-01).",
+   "quote": "[403.2 exception:] Separate toilet facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by all persons regardless of sex and privacy is provided for water closets in accordance with Section 405.3.4 and for urinals in accordance with Section 405.3.5. [C.R.S. 9-5.7-102(5):] “Non-gendered multi-stall restroom” means a restroom with multiple toilets that is available for use by people of any gender, including a restroom with shared sinks but each toilet is in a private compartment. [C.R.S. 9-5.7-103(1):] On and after January 1, 2024, a building that is wholly or partially owned by a public entity that is: (a) Scheduled for renovation of a restroom must: (I) Provide a non-gendered single-stall restroom or a non-gendered multi-stall restroom where a restroom is accessible to the public;",
+   "url": "https://up.codes/viewer/colorado/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "statute_url": "https://colorado.public.law/statutes/crs_9-5.7-103",
+   "note": "'Renovation of a restroom' in the statute means permitted construction that changes the structure (more floor area, plumbing or electrical changes, moving exterior restroom walls, HVAC); replacing fixtures or features to restore their function is not a renovation (C.R.S. 9-5.7-102(7)). 'Public entity' excludes buildings operated as education facilities by the department of education, a school district or a charter school (9-5.7-102(8))."
+  },
+  "use_restrictions": {
+   "rule": "No Colorado law restricting restroom use by sex was found. The Colorado Civil Rights Commission's rules allow sex-separated facilities and require covered entities to let people use the facility consistent with their gender identity.",
+   "quote": "Rule 81.9 – Gender-Segregated Facilities. (A) Nothing in the Act prohibits segregation of facilities on the basis of gender. (B) All covered entities shall allow individuals the use of gender-segregated facilities that are consistent with their gender identity. Gender-segregated facilities include, but are not limited to, restrooms, locker rooms, dressing rooms, and dormitories.",
+   "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=11202&fileName=3%20CCR%20708-1"
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": true,
+  "law": "C.R.S. Title 24, Article 92, Part 2 (C.R.S. 24-92-201 to 24-92-210; enacted by Senate Bill 19-196, named in the Division of Labor Standards and Statistics rules as the Colorado Quality Apprenticeship Training Act of 2019, the 'Prevailing Wage Act'). It covers public projects of state agencies only: counties, cities, towns, school districts and special districts are outside it, as are projects with federal funding and Department of Transportation projects (which follow Davis-Bacon). The director of the Department of Personnel sets the rates from U.S. Department of Labor Davis-Bacon wage determinations for the project's locality and updates them by July 1 each year. Enforcement rules: 7 CCR 1103-6.",
+  "threshold": "Contracts of $500,000 or more awarded by a state agency, without federal funding",
+  "rates_url": "https://osa.colorado.gov/state-buildings/prevailing-wage-and-apprenticeship/wage-determinations",
+  "quote": "[24-92-202(1):] any contractor who is awarded a contract for a public project by an agency of government in the amount of five hundred thousand dollars or more, and any subcontractors working on the public project, shall pay their employees at weekly intervals ... This part 2 does not apply to contracts for public projects that receive federal funding. [24-92-201(1):] “Agency of government” does not include any county, city and county, city, municipality, town, school district, special district, or any other political subdivision of the state. [24-92-205(1):] the director shall use appropriate wage determinations issued by the United States department of labor in accordance with the “Davis-Bacon Act”, 40 U.S.C. sec. 3141, et seq., to establish the prevailing wage rates for the applicable trades or occupation for the geographic locality of the public project.",
+  "url": "https://colorado.public.law/statutes/crs_24-92-202",
+  "confidence": "medium",
+  "note": "Statutes read on colorado.public.law (copy of the 2024 C.R.S.; the General Assembly's site blocks automated access), so amendments from the 2025 and 2026 sessions were not checked. The rates page on the State Architect's site (osa.colorado.gov) could not be opened; its address and the statement that determinations are refreshed from sam.gov each January and July come from a search result. Cities can have their own wage ordinances (the city agent checks Denver and Colorado Springs)."
+ },
+ "sales_tax": {
+  "state_rate": 0.029,
+  "shipped_goods": {
+   "rule": "Partitions delivered into Colorado are taxable. A seller with no Colorado location must hold a licence and collect once its sales into Colorado pass $100,000 in the previous or current calendar year; below that it need not collect. If the seller does not collect, the buyer owes consumer use tax at the same 2.9% directly to the Department of Revenue (return DR 0252). Local taxes come on top; home-rule cities (Denver and Colorado Springs among them) run their own sales and use taxes outside the state's system. Separately, a retail delivery fee ($0.31 per delivery from July 2026 to June 2027) applies to deliveries by motor vehicle that include at least one taxable item; the retailer owes it, and retailers with $500,000 or less in Colorado retail sales in the previous year are exempt.",
+   "quote": "[Sales Tax Guide:] Colorado state sales tax is imposed at a rate of 2.9%. ... Any retailer who does not maintain a physical location in Colorado is exempted from state sales tax licensing ... if the retail sales of tangible personal property, commodities, and/or services made annually by the retailer into Colorado in both the current and previous calendar years are less than $100,000. [Consumer Use Tax Guide:] The Colorado use tax rate is 2.9%, the same as the sales tax rate in Colorado. ... the consumer must pay use tax directly to the Department if the seller did not collect the applicable tax for any reason. [1 CCR 201-4, Rule 39-26-102(3), para (3)(a)(i):] for the entire calendar year if the person made more than one hundred thousand dollars of retail sales in Colorado in the preceding calendar year",
+   "url": "https://tax.colorado.gov/sales-tax-guide",
+   "more_urls": [
+    "https://tax.colorado.gov/consumer-use-tax-guide",
+    "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12693&fileName=1%20CCR%20201-4",
+    "https://tax.colorado.gov/retail-delivery-fee-rates",
+    "https://tax.colorado.gov/special-topics-retail-delivery-fees"
+   ]
+  },
+  "freight_taxed": null,
+  "freight_rule": {
+   "rule": "It depends on the invoice. A delivery charge is part of the taxable price unless it is both separable (the buyer could decline the service) and separately stated as its own line. Freight built into the partition price, or freight the buyer cannot opt out of, is taxed with the partitions.",
+   "quote": "[Sales Tax Guide, 'Associated service charges', sentence fragments as returned by the fetch tool:] Service charges associated with the sale of tangible personal property, such as charges for installation or delivery, are generally included in the taxable purchase price ... both separable from the sale of the property and separately stated from the price of the property sold ... the purchaser has the option not to purchase the associated service ... An associated service charge is separately stated if it appears as a distinct line item. [1 CCR 201-4, Rule 39-26-102(7)(a): “Purchase price” includes:] (5) Installation, delivery and wheeling-in charges included in the purchase price and not separately stated.",
+   "url": "https://tax.colorado.gov/sales-tax-guide"
+  },
+  "install_labor": {
+   "rule": "Colorado does not generally tax services. Installation labor is not taxed when the charge is separable and listed separately on the bid, invoice or contract; installation folded into the price of goods is taxed with them.",
+   "quote": "[Sales Tax Guide:] In general, the tax does not apply to sales of services, except for those services specifically taxed by law. [FYI Sales 6:] A retailer-contractor should not collect tax on installation or labor charges if such charges are listed separately on the bid proposal, sales invoice, or contract.",
+   "url": "https://tax.colorado.gov/sites/default/files/documents/FYI_Sales6.pdf"
+  },
+  "furnish_and_install": {
+   "rule": "Under a lump-sum contract (one price for materials and labor) the contractor is the consumer of the building materials: the contractor pays sales or use tax on them and charges the customer no sales tax. Under a time-and-materials contract (materials priced separately from labor) the contractor is a retailer: it collects sales tax from the customer on the marked-up materials price and not on labor. Materials built into structures owned and used by governments, charities and non-profit schools are exempt when the contractor holds an exemption certificate for the project. The Department's publication does not say whether toilet partitions count as 'construction and building materials' or as separately sold units.",
+   "quote": "For lump-sum contracts, the contractor is treated as the consumer of all construction and building materials included in and associated with the contract. Therefore, the contractor pays sales tax on the purchase of such materials or use tax if the seller did not collect sales tax from the contractor at the time of the sale. ... Time-and-materials contracts state the price for construction and building materials separately from the price of labor. Under this type of contract, the contractor is treated as a retailer, not the consumer, of the construction and building materials. ... the contractor must collect sales tax from its customer on the marked up price of the materials included in the time-and-materials contract ... The contractor does not collect sales tax from the homeowner on the price of labor stated in the time-and-materials contract. ... Construction and building materials are materials that are incorporated into real property to such an extent that they lose their identity as tangible personal property and become an integral, permanent, and inseparable part of real property.",
+   "url": "https://tax.colorado.gov/sites/default/files/documents/FYI_Sales6.pdf",
+   "rule_url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12694&fileName=1%20CCR%20201-5"
+  },
+  "agency": "Colorado Department of Revenue",
+  "confidence": "medium",
+  "note": "FYI Sales 6 (dated 03/20) was read in full as a PDF, and the regulations on the Secretary of State's site. The Sales Tax Guide, Consumer Use Tax Guide and retail delivery fee pages on tax.colorado.gov could only be read through a fetch tool that returns short quoted fragments, so those quotes are fragments, not full sentences. The $500,000 retail delivery fee exemption was returned as a paraphrase."
+ },
+ "page": {
+  "stalls_intro": "Colorado's rules count toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women, and every toilet needs a stall. Urinals are optional: in each men's room they may replace up to half of the toilets in an office and up to two thirds in a restaurant or school, and each urinal then needs a screen.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are the state's minimums for the whole building, and a city may set stricter ones. An office that holds 25 people or fewer, or any space that holds 15 or fewer, does not need separate men's and women's rooms.",
+  "capacity": "To find your building's capacity, the building rules most Colorado cities use count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** Colorado has no statewide building code, so the city's or county's rules decide for most buildings. In public schools, charter schools and junior colleges, the state's building rules require solid plastic (HDPE) used as an interior finish to pass a room fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law sets the sizes, and Colorado's plumbing rules and the local building rules add their own access standard. Colorado has no separate state review step: the city or county building department checks access with the permit, and the state reviews public school projects.",
+  "state_extra_bullet": "- **Colorado extras:** Colorado has no access rules of its own for commercial restroom stalls. In very large restrooms, the building rules the state applies to public schools ask for 5% of the stalls to be wheelchair accessible, where federal law asks for at least one.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to everyone. A shared all-gender room is allowed if every toilet sits in its own compartment with a door and every urinal has a screen. In buildings owned by the state, a state college, a county or a city, a new building or a renovated restroom must include an all-gender restroom; K-12 schools are outside that law. Colorado's civil rights rules allow separate men's and women's rooms and require that people may use the one that matches their gender identity.",
+  "public_jobs": "Colorado's wage law for public jobs covers state agency projects of $500,000 or more without federal money, at rates the state takes from the federal wage tables for the county; it does not cover city, county or school district projects.",
+  "tax_install_bullet": "- **Tax on installation:** Colorado does not tax installation labor that is listed separately on the bid, invoice or contract. Under a single-price contract for materials and labor, the contractor pays the tax on the materials and charges the customer none.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable. Freight is taxed too unless it is an optional charge shown on its own line. If the seller doesn't collect the tax, the buyer owes it as use tax.",
+  "tax_confirm": "your accountant or the Colorado Department of Revenue",
+  "sources": [
+   "- Toilet counts in Colorado: [State Plumbing Board, Plumbing Rules and Regulations, 3 CCR 720-1 (version effective August 14, 2026)](https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12668&fileName=3%20CCR%20720-1), Rule 1.2 (adopts the 2024 International Plumbing Code as the Colorado Plumbing Code, with amendments to Sections 403.1, 403.3 and 405.3.2). Table 403.1 and Sections 403.1.1, 403.2, 405.3.4, 405.3.5 and 424.2 were read on a [secondary copy of the Colorado Plumbing Code](https://up.codes/viewer/colorado/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings). Cities may amend the code if at least as strict: [C.R.S. 12-155-106](https://colorado.public.law/statutes/crs_12-155-106). Checked 2026-11-24.",
+   "- Floor area per person: 2021 International Building Code, Table 1004.5, read on a [secondary copy](https://up.codes/viewer/colorado/ibc-2021/chapter/10/means-of-egress); the city's adopted edition governs. Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions in public schools: [Division of Fire Prevention and Control, 8 CCR 1507-101](https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12302&fileName=8%20CCR%201507-101) (adopts the 2021 International Building Code) and [8 CCR 1507-30](https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=11809&fileName=8%20CCR%201507-30) (public schools, charter schools and junior colleges); Section 803.9 read on a [secondary copy](https://up.codes/viewer/colorado/ibc-2021/chapter/8/interior-finishes). Checked 2026-11-24.",
+   "- Wheelchair-accessible stalls: [2010 ADA Standards for Accessible Design](https://www.access-board.gov/ada/), sections 213.3.1 and 604.8, and 2021 International Building Code Section 1110.2.4, read on a [secondary copy](https://up.codes/viewer/colorado/ibc-2021/chapter/11/accessibility). Checked 2026-11-24.",
+   "- Single-user and all-gender restrooms: Colorado Plumbing Code Sections 403.1.1, 403.1.2 and 403.2 (links above); [C.R.S. 9-5.7-102](https://colorado.public.law/statutes/crs_9-5.7-102) and [9-5.7-103](https://colorado.public.law/statutes/crs_9-5.7-103) (public-entity buildings); [Colorado Civil Rights Commission Rules, 3 CCR 708-1, Rule 81.9](https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=11202&fileName=3%20CCR%20708-1). Checked 2026-11-24.",
+   "- Wages on public jobs: [C.R.S. 24-92-201](https://colorado.public.law/statutes/crs_24-92-201), [24-92-202](https://colorado.public.law/statutes/crs_24-92-202), [24-92-203](https://colorado.public.law/statutes/crs_24-92-203) and [24-92-205](https://colorado.public.law/statutes/crs_24-92-205); [Prevailing Wage and Residency Rules, 7 CCR 1103-6](https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=11207&fileName=7%20CCR%201103-6). Checked 2026-11-24.",
+   "- Sales tax: Colorado Department of Revenue, [Colorado Sales Tax Guide](https://tax.colorado.gov/sales-tax-guide), [Consumer Use Tax Guide](https://tax.colorado.gov/consumer-use-tax-guide), [FYI Sales 6: Contractors and Retailer-Contractors](https://tax.colorado.gov/sites/default/files/documents/FYI_Sales6.pdf), [Retail Delivery Fee Rates](https://tax.colorado.gov/retail-delivery-fee-rates); [Sales and Use Tax rules, 1 CCR 201-4](https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12693&fileName=1%20CCR%20201-4) and [Special Rule 10, Contractors, 1 CCR 201-5](https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12694&fileName=1%20CCR%20201-5). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; ICC A117.1-2017 (referenced by the Colorado Plumbing Code and the 2021 International Building Code); no statewide building code (2021 International Building Code for public schools, charter schools and junior colleges under 8 CCR 1507-101, and for state-owned buildings); Colorado Plumbing Code: 2024 International Plumbing Code with State Plumbing Board amendments, 3 CCR 720-1, version effective August 14, 2026; NFPA 286 for HDPE."
+ },
+ "sources_read": [
+  {
+   "url": "https://www.sos.state.co.us/CCR/DisplayRule.do?action=ruleinfo&ruleId=2255&deptID=18&agencyID=33&deptName=Department%20of%20Regulatory%20Agencies&agencyName=Division%20of%20Professions%20and%20Occupations%20-%20State%20Plumbing%20Board&seriesNum=3%20CCR%20720-1",
+   "official": true,
+   "note": "Secretary of State rule page: version history of 3 CCR 720-1 (current version effective 08/14/2026)"
+  },
+  {
+   "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12668&fileName=3%20CCR%20720-1",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/colorado/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/colorado/ipc-2024/chapter/15/referenced-standards",
+   "official": false
+  },
+  {
+   "url": "https://colorado.public.law/statutes/crs_12-155-106",
+   "official": false
+  },
+  {
+   "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12302&fileName=8%20CCR%201507-101",
+   "official": true
+  },
+  {
+   "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=11809&fileName=8%20CCR%201507-30",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/colorado/ibc-2021/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/colorado/ibc-2021/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/colorado/ibc-2021/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/colorado/ibc-2021/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/colorado/ibc-2021/chapter/35/referenced-standards",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/colorado/ibc-2021/chapter/12/interior-environment",
+   "official": false
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://colorado.public.law/statutes/crs_9-5.7-101",
+   "official": false
+  },
+  {
+   "url": "https://colorado.public.law/statutes/crs_9-5.7-102",
+   "official": false
+  },
+  {
+   "url": "https://colorado.public.law/statutes/crs_9-5.7-103",
+   "official": false
+  },
+  {
+   "url": "https://colorado.public.law/statutes/crs_9-5.7-104",
+   "official": false
+  },
+  {
+   "url": "https://colorado.public.law/statutes/crs_9-5-101",
+   "official": false
+  },
+  {
+   "url": "https://colorado.public.law/statutes/crs_9-5-103",
+   "official": false
+  },
+  {
+   "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=11202&fileName=3%20CCR%20708-1",
+   "official": true
+  },
+  {
+   "url": "https://colorado.public.law/statutes/crs_24-92-201",
+   "official": false
+  },
+  {
+   "url": "https://colorado.public.law/statutes/crs_24-92-202",
+   "official": false
+  },
+  {
+   "url": "https://colorado.public.law/statutes/crs_24-92-203",
+   "official": false
+  },
+  {
+   "url": "https://colorado.public.law/statutes/crs_24-92-204",
+   "official": false
+  },
+  {
+   "url": "https://colorado.public.law/statutes/crs_24-92-205",
+   "official": false
+  },
+  {
+   "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=11207&fileName=7%20CCR%201103-6",
+   "official": true
+  },
+  {
+   "url": "https://tax.colorado.gov/sales-tax-guide",
+   "official": true
+  },
+  {
+   "url": "https://tax.colorado.gov/consumer-use-tax-guide",
+   "official": true
+  },
+  {
+   "url": "https://tax.colorado.gov/sites/default/files/documents/FYI_Sales6.pdf",
+   "official": true
+  },
+  {
+   "url": "https://tax.colorado.gov/special-topics-retail-delivery-fees",
+   "official": true
+  },
+  {
+   "url": "https://tax.colorado.gov/retail-delivery-fee-rates",
+   "official": true
+  },
+  {
+   "url": "https://tax.colorado.gov/retail-delivery-fee",
+   "official": true
+  },
+  {
+   "url": "https://tax.colorado.gov/sales-use-tax-guidance-publications",
+   "official": true
+  },
+  {
+   "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12693&fileName=1%20CCR%20201-4",
+   "official": true
+  },
+  {
+   "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12694&fileName=1%20CCR%20201-5",
+   "official": true
+  }
+ ],
+ "could_not_open": [
+  "https://dpo.colorado.gov/Plumbing (403)",
+  "https://osa.colorado.gov/building-codes and the State Architect's code list PDF (403)",
+  "https://leg.colorado.gov (406)",
+  "https://codes.iccsafe.org (ICC A117.1-2017 and IPC 2024: 403 or script-only)",
+  "https://regulations.justia.com (challenge page)",
+  "https://spco.colorado.gov (no connection)"
+ ],
+ "to_confirm": [
+  "Colorado Plumbing Code table rows and Sections 403.1.1, 403.2, 405.3.4, 405.3.5, 424.2 were read on UpCodes, not on the ICC's own copy: open the 2024 International Plumbing Code in a browser (codes.iccsafe.org) or ask the State Plumbing Board, 303-894-2309.",
+  "research/state-codes/states.json still lists the 2021 IPC for Colorado; the Board's rule now adopts the 2024 IPC (version effective 2026-08-14). Update that file. The date the 2024 edition first took effect (2026-02-14 or 2026-08-14 version) was not checked.",
+  "Denver and Colorado Springs adopt their own building and plumbing codes and may amend the toilet table, the urinal rule and the HDPE fire rule: the city agent must read each city's amendments (Denver Building and Fire Code; Pikes Peak Regional Building Code).",
+  "How the urinal cap rounds (67% of 3 toilets, 50% of 3 or 5) is not stated in the code; the worked examples round down. Confirm with the local plan reviewer.",
+  "Floor area per person was read from the 2021 International Building Code (via a fetch tool on UpCodes); confirm the same figures in each city's adopted edition.",
+  "ICC A117.1-2017 could not be read, so its stall dimensions are not compared with the 2010 ADA Standards. Read sections 603 and 604 before stating any dimension difference.",
+  "State-owned buildings: the State Architect's list of approved codes (osa.colorado.gov) could not be opened; the 2021 International Building Code for state buildings rests on C.R.S. 9-5.7-101(1)(f) and the 2026-11-23 states.json entry.",
+  "Statutes (C.R.S. 9-5.7, 12-155-106, 24-92-201 to 205) were read on colorado.public.law, a copy of the 2024 statutes: check for 2025 and 2026 amendments on leg.colorado.gov in a browser, in particular whether the prevailing wage law still excludes cities, counties and school districts and still starts at $500,000.",
+  "Prevailing wage rates page (osa.colorado.gov/state-buildings/prevailing-wage-and-apprenticeship/wage-determinations) could not be opened; confirm the address and the current county tables with the Office of the State Architect.",
+  "No law restricting restroom use by sex was found in the sources read; this was not searched exhaustively. Confirm against the current C.R.S. before launch.",
+  "Sales Tax Guide, Consumer Use Tax Guide and retail delivery fee quotes are fragments returned by a fetch tool: open the pages in a browser to copy the full sentences. Confirm the $500,000 retail delivery fee exemption and whether the fee applies to freight carrier deliveries from out of state.",
+  "Whether toilet partitions are 'construction and building materials' (tax follows the contract type) or a separately sold unit like ready-made cabinets (the seller collects tax on the goods, not on separately stated installation) is not stated by the Department of Revenue: ask the Department or an accountant.",
+  "Denver and Colorado Springs are home-rule cities that collect their own sales and use tax under their own codes: the city agent must check freight, installation labor and contractor rules there.",
+  "How Next Partitions itself charges Colorado tax (whether its Colorado sales pass $100,000 and whether the retail delivery fee applies to it) is a question for Abe's accountant."
+ ]
+}
