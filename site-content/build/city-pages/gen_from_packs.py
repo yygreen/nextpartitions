@@ -86,6 +86,7 @@ def page(slug):
     g = lambda k, d=None: C.get(k) or S.get(k) or d
     city, state = b['name'], STATE_NAME(b)
     inst = '/installers/%s/%s' % (b['state_slug'], slug)
+    art = 'an' if city[0] in 'AEIO' else 'a'
     lead, ca, cz, faq_mat, csrc = climate(b)
     wb, wsrc = wage(b)
     office = C['confirm_office']
@@ -154,13 +155,13 @@ Toilet partitions for {city} ship by freight carrier, crated, palletized and tra
 
 Freight is quoted with the partitions, so the number you get covers delivery to your {city} address.
 
-## The rules a {city} restroom has to meet
+## The rules {art} {city} restroom has to meet
 
 {chr(10).join(r for r in rules if r)}
 
 Rules change, so confirm your project with {office} or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
 
-## How many stalls a {city} restroom needs
+## How many stalls {art} {city} restroom needs
 
 {g('stalls_intro')}
 
@@ -216,7 +217,7 @@ Yes. Partitions ship by freight carrier to {city} and the surrounding cities, cr
 ### {faq_mat[0]}
 {faq_mat[1]}
 
-### What rules does a {city} restroom have to meet?
+### What rules does {art} {city} restroom have to meet?
 Federal and {state} wheelchair-access rules{fire}, and the rules on how many toilets a building needs. Confirm your project with {office}.
 
 ### How do I get a price for my {city} restroom?
