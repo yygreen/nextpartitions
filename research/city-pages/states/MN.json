@@ -1,0 +1,552 @@
+{
+ "state": "MN",
+ "state_name": "Minnesota",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "2020 Minnesota Building Code (Minnesota Rules chapter 1305: 2018 International Building Code with Minnesota amendments). The Minnesota Plumbing Code (Minnesota Rules chapter 4714: 2018 Uniform Plumbing Code with amendments) deletes its own table and points to the building code.",
+   "edition": "2018 IBC as adopted by Minnesota, effective March 31, 2020",
+   "table": "IBC Table 2902.1, Minimum Number of Required Plumbing Fixtures, as amended by Minnesota Rules part 1305.2902 (footnotes replaced; body rows for business, restaurant and educational unchanged)",
+   "url": "https://www.revisor.mn.gov/rules/1305.2902/",
+   "quote": "2902.1 Minimum number of fixtures. Plumbing fixtures shall be provided for the type of occupancy and in the minimum number shown in Table 2902.1. Types of occupancies not shown in Table 2902.1 shall be considered individually by the building official. The number of occupants shall be determined by this code. | Minnesota Rules 4714.0422: 422.1 Required Minimum Number of Fixtures. For all premises subject to Minnesota Rules, chapter 4714, plumbing fixtures shall be provided for the type of building occupancy and in the minimum number listed in Minnesota Rules, chapter 1305, Minnesota Building Code. ... UPC Table 422.1 is deleted in its entirety.",
+   "plumbing_code_url": "https://www.revisor.mn.gov/rules/4714.0422/",
+   "note": "The revisor's site prints only Minnesota's amendments (official). The table rows themselves and Section 2902.1.1 were read on UpCodes' consolidated 'Minnesota Building Code 2020' (https://up.codes/viewer/minnesota/ibc-2018/chapter/29/plumbing-systems), which shows the Minnesota footnotes g to l in place, matching part 1305.2902."
+  },
+  "cities_may_amend": false,
+  "cities_may_amend_note": {
+   "text": "The State Building Code applies statewide and supersedes any municipal building code. A municipality may not require building code provisions that differ from it (the one exception is for geological conditions, with state approval). So Minneapolis cannot change these counts.",
+   "quote": "(a) The State Building Code is the standard that applies statewide for the construction, reconstruction, alteration, repair, and use of buildings and other structures of the type governed by the code. (b) The State Building Code supersedes the building code of any municipality. ... (c) A municipality must not by ordinance, or through development agreement, require building code provisions regulating components or systems of any structure that are different from any provision of the State Building Code.",
+   "url": "https://www.revisor.mn.gov/statutes/cite/326B.121"
+  },
+  "rows": {
+   "office": {
+    "row_label": "2 Business: Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial, ambulatory care and similar uses",
+    "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "urinals": "No urinal column. Minnesota footnote k to the Water Closets heading: urinals may replace up to 67 percent of the required water closets in each toilet room.",
+    "quote": "2 | Business | Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial, ambulatory care and similar uses | 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50 | [lavatories] 1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80 | — | [drinking fountains] 1 per 100 | 1 service sink(e)",
+    "url": "https://up.codes/viewer/minnesota/ibc-2018/chapter/29/plumbing-systems"
+   },
+   "restaurant": {
+    "row_label": "1 Assembly: Restaurants, banquet halls and food courts (footnote d)",
+    "wc_male": "1 per 75",
+    "wc_female": "1 per 75",
+    "urinals": "No urinal column. Footnote k: up to 67 percent of required water closets in each toilet room.",
+    "quote": "Restaurants, banquet halls and food courts(d) | 1 per 75 | 1 per 75 | [lavatories] 1 per 200 | — | [drinking fountains] 1 per 500 | 1 service sink. Footnote d: The occupant load for seasonal outdoor seating and entertainment areas shall be included when determining the minimum number of facilities required.",
+    "url": "https://up.codes/viewer/minnesota/ibc-2018/chapter/29/plumbing-systems"
+   },
+   "school": {
+    "row_label": "3 Educational: Educational facilities",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 50",
+    "urinals": "No urinal column. Footnote k: up to 67 percent of required water closets in each toilet room.",
+    "quote": "3 | Educational | Educational facilities | 1 per 50 | [lavatories] 1 per 50 | — | [drinking fountains] 1 per 100 | 1 service sink",
+    "url": "https://up.codes/viewer/minnesota/ibc-2018/chapter/29/plumbing-systems"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Total occupant load is divided in half, unless approved statistical data shows another split. Minnesota did not amend this section.",
+    "quote": "2902.1.1 Fixture Calculations. To determine the occupant load of each sex, the total occupant load shall be divided in half. To determine the required number of fixtures, the fixture ratio or ratios for each fixture type shall be applied to the occupant load of each sex in accordance with Table 2902.1. ... Exception: The total occupant load shall not be required to be divided in half where approved statistical data indicate a distribution of the sexes of other than 50 percent of each sex.",
+    "url": "https://up.codes/viewer/minnesota/ibc-2018/chapter/29/plumbing-systems"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole number: one fixture for the number of persons shown or any fraction of it.",
+    "quote": "Fractional numbers resulting from applying the fixture ratios of Table 2902.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number. | Minnesota footnote a (official): The fixtures shown are based on one fixture being the minimum required for the number of persons indicated or any fraction of the number of persons indicated. The number of occupants shall be determined by this code.",
+    "url": "https://up.codes/viewer/minnesota/ibc-2018/chapter/29/plumbing-systems",
+    "official_url": "https://www.revisor.mn.gov/rules/1305.2902/"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are optional. In each toilet room they may replace up to 67% of the required toilets, in every occupancy (Minnesota's own footnote; the model code's plumbing-code reference allows 67% only in assembly and educational uses and 50% elsewhere). The code does not say how the 67% rounds; the worked examples round down.",
+    "quote": "k In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent of the required water closets.",
+    "url": "https://www.revisor.mn.gov/rules/1305.2902/"
+   },
+   "small_occupancy_exception": {
+    "text": "Separate men's and women's rooms aren't required at a total occupant load of 25 or less (any use, employees and customers together), or 100 or less in a mercantile (retail) occupancy. Normally unoccupied structures (picnic shelters, kiosks, utility sheds and similar) may go without restrooms when the building official approves. Two family or assisted-use rooms may serve as the separate facilities where each sex needs only one toilet.",
+    "quote": "2902.2 Separate facilities. Where plumbing fixtures are required, separate facilities shall be provided for each sex. Exceptions: 1. Separate facilities shall not be required for dwelling units and sleeping units. 2. Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 25 or less. 3. Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or less.",
+    "url": "https://www.revisor.mn.gov/rules/1305.2902/"
+   },
+   "occupant_load": {
+    "text": "Office (business areas): 150 sq ft gross per occupant. Restaurant dining room (assembly without fixed seats, unconcentrated, tables and chairs): 15 sq ft net. Classroom: 20 sq ft net. Chapter 1305 has no Minnesota amendment to Table 1004.5 (part 1305.1004 is repealed; Chapter 10 amendments start at Section 1006).",
+    "quote": "Assembly without fixed seats ... Unconcentrated (tables and chairs) | 15 net ... Business areas | 150 gross ... Educational: Classroom area | 20 net",
+    "url": "https://up.codes/viewer/minnesota/ibc-2018/chapter/10/means-of-egress",
+    "official_url": "https://www.revisor.mn.gov/rules/1305/full"
+   }
+  },
+  "other_rules": {
+   "large_venues_ratio": {
+    "text": "A separate statute sets a 3 to 2 ratio of women's toilets to men's toilets plus urinals in arenas, stadiums, theaters, convention halls and similar venues designed for 200 or more people, when built new or altered by more than 50% of replacement value. It does not name offices, restaurants or schools.",
+    "quote": "In a place of public accommodation subject to this section, the ratio of water closets for women to the total of water closets and urinals provided for men must be at least three to two, unless there are two or fewer fixtures for men.",
+    "url": "https://www.revisor.mn.gov/statutes/cite/326B.109"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50/2 = 25 per sex. 1 per 25 for the first 50: 1 each. Urinals may replace up to 67% of the men's 1: 1 x 0.67 = 0.67, so 0 (per toilet room)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100/2 = 50 per sex. 1 per 25 for the first 50: 2 each. Urinals may replace up to 67% of the men's 2: 2 x 0.67 = 1.34, so 1 (per toilet room)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200/2 = 100 per sex. 1 per 25 for the first 50 (2) and 1 per 50 for the remaining 50 (1, rounds up to 1): 3 each. Urinals may replace up to 67% of the men's 3: 3 x 0.67 = 2.01, so 2 (per toilet room)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 3,
+    "urinals_required": 0,
+    "how": "400/2 = 200 per sex. 1 per 25 for the first 50 (2) and 1 per 50 for the remaining 150 (3, rounds up to 3): 5 each. Urinals may replace up to 67% of the men's 5: 5 x 0.67 = 3.35, so 3 (per toilet room)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50/2 = 25 per sex. 1 per 75: 25/75 = 0.33, rounds up to 1 each. Urinals may replace up to 67% of the men's 1: 1 x 0.67 = 0.67, so 0 (per toilet room)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "100/2 = 50 per sex. 1 per 75: 50/75 = 0.67, rounds up to 1 each. Urinals may replace up to 67% of the men's 1: 1 x 0.67 = 0.67, so 0 (per toilet room)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200/2 = 100 per sex. 1 per 75: 100/75 = 1.33, rounds up to 2 each. Urinals may replace up to 67% of the men's 2: 2 x 0.67 = 1.34, so 1 (per toilet room)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400/2 = 200 per sex. 1 per 75: 200/75 = 2.67, rounds up to 3 each. Urinals may replace up to 67% of the men's 3: 3 x 0.67 = 2.01, so 2 (per toilet room)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50/2 = 25 per sex. 1 per 50: 25/50 = 0.5, rounds up to 1 each. Urinals may replace up to 67% of the men's 1: 1 x 0.67 = 0.67, so 0 (per toilet room)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "100/2 = 50 per sex. 1 per 50: 50/50 = 1, rounds up to 1 each. Urinals may replace up to 67% of the men's 1: 1 x 0.67 = 0.67, so 0 (per toilet room)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200/2 = 100 per sex. 1 per 50: 100/50 = 2, rounds up to 2 each. Urinals may replace up to 67% of the men's 2: 2 x 0.67 = 1.34, so 1 (per toilet room)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400/2 = 200 per sex. 1 per 50: 200/50 = 4, rounds up to 4 each. Urinals may replace up to 67% of the men's 4: 4 x 0.67 = 2.68, so 2 (per toilet room)."
+   }
+  ],
+  "confidence": "medium"
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "Section 803.9 of the 2018 International Building Code as adopted in the 2020 Minnesota Building Code (Minnesota's only amendment to Section 803 is to 803.3, heavy timber), with Section 803.1.1 and the Chapter 2 definition of interior wall and ceiling finish",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. | 803.1.1 Interior Wall and Ceiling Finish Materials Tested in Accordance With NFPA 286. Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1. | Definition: Interior Wall and Ceiling Finish. The exposed interior surfaces of buildings, including but not limited to: fixed or movable walls and partitions; toilet room privacy partitions; columns; ceilings ...",
+  "url": "https://up.codes/viewer/minnesota/ibc-2018/chapter/8/interior-finishes",
+  "definition_url": "https://up.codes/viewer/minnesota/ibc-2018/chapter/2/definitions",
+  "official_amendments_url": "https://www.revisor.mn.gov/rules/1305.0803/",
+  "note": "Section text read on UpCodes' Minnesota Building Code 2020. The official revisor page for part 1305.0803 shows Minnesota amends only 803.3, and part 1305.0202 does not change the definition, so 803.9 stands as in the 2018 IBC.",
+  "confidence": "medium"
+ },
+ "access": {
+  "state_standard": "2020 Minnesota Accessibility Code (Minnesota Rules chapter 1341): Chapter 11 of the 2018 IBC, Section 305 of the 2018 International Existing Building Code and ICC/ANSI A117.1-2009, each with Minnesota amendments. Effective March 31, 2020.",
+  "standard_quote": "For purposes of this chapter, \"ICC A117.1\" means the 2009 edition of ICC/ANSI A117.1 ... ICC A117.1 is incorporated by reference in IBC chapter 11 and made part of the Minnesota State Building Code except as amended in this chapter.",
+  "standard_urls": [
+   "https://www.revisor.mn.gov/rules/1341/full",
+   "https://www.dli.mn.gov/sites/default/files/pdf/fs-2020-accessibility-code.pdf"
+  ],
+  "differences": [
+   {
+    "point": "Narrower stall with grab bars on both sides (ambulatory stall): needed much sooner",
+    "state": "Where a toilet room has two or more stalls, at least 5% of them must be ambulatory-accessible stalls, in addition to the wheelchair stall. So a two-stall room needs one wheelchair stall and one ambulatory stall.",
+    "federal": "An ambulatory stall is required only where six or more stalls are provided, or where toilets and urinals together total six or more.",
+    "state_url": "https://www.revisor.mn.gov/rules/1341/full",
+    "quote": "1109.2.2 Water closet compartment. Where water closet compartments are provided in a toilet room or bathing room, at least five percent of the total number of compartments shall be wheelchair-accessible compartments. Where two or more water closet compartments are provided in a toilet room or bathing room, at least five percent of the total number of compartments shall be ambulatory-accessible water closet compartments in addition to the wheelchair-accessible compartments.",
+    "federal_quote": "213.3.1 Toilet Compartments. Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1. In addition to the compartment required to comply with 604.8.1, at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures."
+   },
+   {
+    "point": "Number of wheelchair stalls in large rooms",
+    "state": "At least 5% of the stalls in a room, rounded up (Minnesota 1101.3: fractions go to the next greater whole number), so a second wheelchair stall from 21 stalls.",
+    "federal": "At least one wheelchair stall per toilet room, whatever the number of stalls.",
+    "state_url": "https://www.revisor.mn.gov/rules/1341/full",
+    "quote": "at least five percent of the total number of compartments shall be wheelchair-accessible compartments. | 1101.3 Calculation of percentages. Where the required number of elements or facilities to be provided is determined by calculations of ratios or percentages and remainders or fractions result, the next greater whole number of such elements or facilities shall be provided.",
+    "federal_quote": "Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1."
+   },
+   {
+    "point": "Depth of the wheelchair stall",
+    "state": "Minnesota deletes the model standard's stall sizes and makes the stall as large as the clearance around the toilet: 60 inches wide and either 78 inches deep overall, or 48 inches plus the depth of the toilet fixture. The door may swing in only if a 30 by 48 inch clear floor space is left beyond its arc.",
+    "federal": "60 inches wide and 56 inches deep (wall-hung toilet) or 59 inches deep (floor-mounted toilet).",
+    "state_url": "https://www.revisor.mn.gov/rules/1341.0604/",
+    "quote": "604.9.2 Size. Toilet compartment clearance shall comply with section 604.3. | 604.3.2.1 Overall clearance. The overall clearance around the water closet shall be 78 inches (1980 mm) minimum in depth. 604.3.2.2 Water closet clearance. The depth of the clearance around the water closet shall be 48 inches (1220 mm) minimum plus the depth of the water closet fixture. | [A117.1-2009, read on UpCodes] 604.3.1 Clearance Width. Clearance around a water closet shall be 60 inches (1525 mm) minimum in width, measured perpendicular from the sidewall. | 604.9.2.1 Minimum Area: Deleted. 604.9.2.2 Compartment for Children's Use: Deleted.",
+    "federal_quote": "604.8.1.1 Size. Wheelchair accessible compartments shall be 60 inches (1525 mm) wide minimum measured perpendicular to the side wall, and 56 inches (1420 mm) deep minimum for wall hung water closets and 59 inches (1500 mm) deep minimum for floor mounted water closets measured perpendicular to the rear wall."
+   },
+   {
+    "point": "Vertical grab bar on the side wall",
+    "state": "Side wall needs the 42 inch horizontal bar and an 18 inch vertical bar (bottom 39 to 41 inches above the floor, centerline 39 to 41 inches from the rear wall). Applies to the wheelchair stall and, through 604.10.4, to both sides of an ambulatory stall. Children's stalls have their own vertical bar heights.",
+    "federal": "A horizontal side wall bar only; no vertical bar.",
+    "state_url": "https://www.revisor.mn.gov/rules/1341.0604/",
+    "quote": "604.5.1 Fixed Side Wall Grab Bars. Fixed side wall grab bars shall comply with sections 604.5.1.1 and 604.5.1.2. ... 604.5.1.2 Vertical fixed side wall grab bars. Vertical fixed side wall grab bars shall be 18 inches (455 mm) minimum in length and shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, with the centerline of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall.",
+    "federal_quote": "604.5.1 Side Wall. The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall."
+   },
+   {
+    "point": "Baby changing tables",
+    "state": "Diaper changing tables may not be placed inside a toilet stall.",
+    "federal": "The 2010 ADA Standards have no such rule for stalls (sections 213 and 604 don't mention changing tables).",
+    "state_url": "https://www.revisor.mn.gov/rules/1341.0603/",
+    "quote": "603.5 Diaper Changing Tables. Diaper changing tables shall comply with sections 309 and 902. Diaper changing tables shall not be located within toilet compartments.",
+    "federal_quote": null
+   },
+   {
+    "point": "Alterations to existing restrooms",
+    "state": "When an existing toilet room is altered under the existing-building accessibility section, an ambulatory stall must also be provided unless technically infeasible; where a fully accessible room or a family room is infeasible, an ambulatory stall with 48 inches clear in front of the toilet is required unless that too is infeasible.",
+    "federal": "In alterations where compliance is technically infeasible, one unisex accessible toilet room in the same area is permitted (213.2 exception 1); no added ambulatory stall rule.",
+    "state_url": "https://www.revisor.mn.gov/rules/1341/full",
+    "quote": "305.8.10.1 Ambulatory compartment. In addition to the provisions of Section 305.8.10, an ambulatory compartment shall be provided within the existing toilet room or bathing room, unless technically infeasible. 305.8.10.2 Ambulatory compartment. Where it is technically infeasible to alter the existing toilet rooms and bathing rooms to be accessible or provide a family or assisted-use toilet room or bathing room in compliance with Section 305.8.10, an ambulatory compartment with a minimum clear floor space of 48 inches in front of the water closet shall be provided in the existing toilet room or bathing room, unless technically infeasible.",
+    "federal_quote": null
+   }
+  ],
+  "same_as_federal": "Toe clearance (9 inches high, 6 inches deep; 12 inches high in children's stalls), self-closing doors with pulls on both sides, the 42 inch latch-side approach and the ambulatory stall's 60 inch depth read the same as the federal text (ambulatory width: Minnesota 36 inches, federal 35 to 37). Read on UpCodes' Minnesota Accessibility Code 2020, sections 604.9.5 and 604.10.",
+  "process": "No state registration or separate accessibility sign-off. The accessibility code is part of the State Building Code, checked by the municipal building official with the permit. The Department of Labor and Industry itself reviews plans for buildings funded by the state or a state agency, public school district buildings and state-licensed buildings such as hospitals and prisons.",
+  "process_quote": "We examine construction documents and supporting documentation for buildings funded by the state or a state agency and public school district as well as buildings licensed by state agencies like hospitals and prisons to ensure they meet State Building Code requirements.",
+  "process_url": "https://www.dli.mn.gov/business/get-licenses-and-permits/building-plan-review",
+  "confidence": "high"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "Single-user toilet rooms and family or assisted-use rooms count toward the required fixtures and must be identified for use by either sex. Where each sex needs only one toilet, two family or assisted-use rooms may serve as the separate facilities.",
+   "quote": "2902.1.2 Single-User Toilet Facility and Bathing Room Fixtures. The plumbing fixtures located in single-user toilet facilities and bathing rooms, including family or assisted-use toilet and bathing rooms that are required by Section 1109.2, shall contribute toward the total number of required plumbing fixtures for a building or tenant space. Single-user toilet facilities and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified for use by either sex. | 2902.2.1 ... two family or assisted-use toilet facilities shall be permitted to serve as the required separate facilities.",
+   "url": "https://up.codes/viewer/minnesota/ibc-2018/chapter/29/plumbing-systems",
+   "note": "2018 IBC text, not amended by part 1305.2902; read on UpCodes."
+  },
+  "all_gender_shared": {
+   "rule": "The code in force has no provision for a shared all-gender room with stalls to serve as the required facilities. It requires separate facilities for each sex, with exceptions only for dwelling and sleeping units, an occupant load of 25 or less, and mercantile occupancies of 100 or less. Signs for required public facilities must designate the sex. No stall specification for all-gender multi-user rooms exists in the adopted code.",
+   "quote": "2902.2 Separate facilities. Where plumbing fixtures are required, separate facilities shall be provided for each sex. Exceptions: 1. Separate facilities shall not be required for dwelling units and sleeping units. 2. Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 25 or less. 3. Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or less. | 2902.4 Signage. Required public facilities shall be provided with signs that designate the sex as required by Section 2902.2.",
+   "url": "https://www.revisor.mn.gov/rules/1305.2902/"
+  },
+  "use_restrictions": {
+   "rule": "No Minnesota statute was found that restricts who may use which restroom in government, school or other buildings. The Human Rights Act's public accommodations section exempts restrooms from its provisions relating to sex. School facilities law points the other way on single-user rooms: a district's ten-year facilities plan must address providing a gender-neutral single-user restroom at each school site, and school construction proposals sent for state review must describe plans for them.",
+   "quote": "363A.24 Subdivision 1. Restrooms, locker rooms, and similar places. The provisions of section 363A.11 relating to sex, shall not apply to such facilities as restrooms, locker rooms, and other similar places. | 123B.595: For planning purposes, the plan must also address provisions for providing a gender-neutral single-user restroom at each school site. | 123B.71: (5) a description of the project's plans for gender-neutral single-user restrooms, locker room privacy stalls, or other spaces with privacy features, including single-user shower stalls, changing stalls, or other single-user facilities;",
+   "url": "https://www.revisor.mn.gov/statutes/cite/363A.24",
+   "other_urls": [
+    "https://www.revisor.mn.gov/statutes/cite/123B.595",
+    "https://www.revisor.mn.gov/statutes/cite/123B.71"
+   ]
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": true,
+  "law": "Minnesota Prevailing Wage Act, Minnesota Statutes 177.41 to 177.44 (rules: Minnesota Rules 5200.1000 to 5200.1120). Covers projects financed in whole or part by state funds. Rates are certified by the Department of Labor and Industry, by county, with separate commercial and highway/heavy schedules.",
+  "threshold": "Applies when the estimated total cost is $2,500 or more with one trade, or $25,000 or more with more than one trade. Only state-funded projects: a city or school district job with no state money is outside the state act (local ordinances are for the city agent).",
+  "rates_url": "https://www.dli.mn.gov/business/employment-practices/prevailing-wage-commercial-rates",
+  "quote": "177.42 Subd. 2. \"Project\" means demolition, erection, construction, alteration, improvement, restoration, remodeling, or repairing of a public building, structure, facility, land, or other public work, which includes any work suitable for and intended for use by the public, or for the public benefit, financed in whole or part by state funds. | 177.43 Subd. 7. This section does not apply to a contract, or work under a contract, under which: (1) the estimated total cost of completing the project is less than $2,500 and only one trade or occupation is required to complete it, or (2) the estimated total cost of completing the project is less than $25,000 and more than one trade or occupation is required to complete it. | DLI: Commercial construction prevailing-wage rates must be paid on state-funded building projects, including state-owned buildings, colleges and schools.",
+  "url": "https://www.revisor.mn.gov/statutes/cite/177.43",
+  "other_urls": [
+   "https://www.revisor.mn.gov/statutes/cite/177.42",
+   "https://www.revisor.mn.gov/statutes/cite/177.41",
+   "https://www.dli.mn.gov/business/employment-practices/prevailing-wage-information"
+  ],
+  "confidence": "high"
+ },
+ "sales_tax": {
+  "state_rate": 0.06875,
+  "rate_quote": {
+   "quote": "To figure the sales tax rate, combine the state general tax rate (6.875%) and all applicable local tax rates (local taxes, special local taxes, and special taxes).",
+   "url": "https://www.revenue.state.mn.us/guide/taxes-and-rates"
+  },
+  "shipped_goods": {
+   "rule": "Taxable. A remote seller must register and collect Minnesota state and local tax once its retail sales shipped to Minnesota in the prior 12 months reach 200 or more sales or exceed $100,000. If the seller doesn't collect, the buyer owes use tax at the same rate.",
+   "quote": "Remote sellers are required to file and collect Minnesota state and local sales tax if their total sales over the prior 12-month period total exceed either: 200 or more retail sales shipped to Minnesota; More than $100,000 in retail sales shipped to Minnesota. | Fact Sheet 146: If the seller ships items to you in Minnesota and does not collect Minnesota Sales Tax, you owe Minnesota Use Tax. ... Use tax and sales tax rates are identical.",
+   "url": "https://www.revenue.state.mn.us/sales-tax-faqs-remote-sellers",
+   "use_tax_url": "https://www.revenue.state.mn.us/sites/default/files/2023-01/FS146.pdf"
+  },
+  "freight_taxed": true,
+  "freight": {
+   "quote": "When the item or service sold is taxable, the delivery charges are also taxable. Delivery charges are part of the sales price, even if separately stated. Examples include: ... Crating ... Handling ... Incoming and outgoing freight ... Transportation, shipping and postage. Note: Delivery services furnished and billed by a third party are not taxable except when delivering aggregate materials or concrete block.",
+   "url": "https://www.revenue.state.mn.us/guide/delivery-charges"
+  },
+  "install_labor": {
+   "rule": "Depends on whether the installed item becomes part of the real property. Labor to permanently attach an item to real property is construction labor and is not taxable. If the item stays tangible personal property and is taxable, the charge to install it is taxable too, even when separately stated and even when a third party does the installing. No Department publication read says which side toilet partitions fall on; it names bleachers and lockers as tangible items whose installation is taxed, 'regardless of how they are incorporated'.",
+   "quote": "Installation labor occurs when you set an item into position, or to connect, adjust, or program it for use. If the item being sold is taxable, charges to install it are also taxable. Installation charges are part of the sales price of the item, even if separately stated. Installation charges by a third party are a taxable service if the installation would be taxable when provided by the seller of the taxable item. ... Labor to install tangible personal property into real property is not taxable. | Construction Labor: Labor to permanently attach an item to real property is construction labor, which is not taxable because it is an improvement to real property. | Guide: Bleachers and lockers, regardless of how they are incorporated, are tangible items. You must charge sales tax on the item and the labor to install the item.",
+   "url": "https://www.revenue.state.mn.us/sites/default/files/2023-01/FS152.pdf",
+   "statute_url": "https://www.revisor.mn.gov/statutes/cite/297A.61"
+  },
+  "furnish_and_install": {
+   "rule": "A construction contract to furnish materials and labor to build, alter or improve real property is not a retail sale. The contractor pays sales or use tax on the materials and does not charge sales tax on the contract or itemize tax on the invoice. An item is real property when it is incorporated into the building, intended as a permanent benefit given the building's present use, and cannot be removed without substantial damage.",
+   "quote": "Contractors and subcontractors enter into construction contracts to furnish materials and labor to build, alter, or improve real property. ... You must pay sales and use tax on the cost of all materials, supplies, and equipment used to complete a construction contract. ... When invoicing improvements to real property: Pass the sales or use tax paid as part of the materials cost. Do not itemize sales tax separately on the invoice. Do not charge sales tax on construction contracts. | Minn. Stat. 297A.61 subd. 58: \"Real property\" includes: ... (3) improvements and fixtures if incorporated into and intended to be of a permanent benefit to a building or structure given its present use, and that cannot be removed without causing substantial damage to the building or structure.",
+   "url": "https://www.revenue.state.mn.us/guide/general-contractors-and-subcontractors-applies-all-contractor-types",
+   "other_urls": [
+    "https://www.revenue.state.mn.us/guide/defining-real-property",
+    "https://www.revenue.state.mn.us/guide/contractor-retailer-sales-tax-guidelines",
+    "https://www.revenue.state.mn.us/sites/default/files/2018-12/RN%2018-04.pdf"
+   ]
+  },
+  "agency": "Minnesota Department of Revenue",
+  "confidence": "medium"
+ },
+ "page": {
+  "stalls_intro": "Minnesota's rules count toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. Half are counted as men and half as women, and any fraction rounds up. Every toilet needs a stall. Urinals are optional: in each men's room they may take the place of up to two thirds of the required toilets, and each urinal needs a screen.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building, and the men's figures show toilets only, before any are swapped for urinals. A space that holds 25 people or fewer can use one shared restroom. The same rules apply in every Minnesota city, because cities may not change the state building rules.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** Minnesota's building rules treat toilet partitions as an interior finish and require solid plastic (HDPE) and polypropylene partitions to pass a room-corner fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Minnesota's own access rules set the sizes. Minnesota has no separate state sign-off for access: your local building department checks it with the permit, and the state reviews the plans itself for state-funded buildings, public schools and state-licensed buildings such as hospitals.",
+  "state_extra_bullet": "- **Minnesota extras:** Minnesota goes further than the federal rules in four places. A restroom with two or more stalls needs a second, narrower accessible stall with grab bars on both sides, where the federal rule asks for one only from six toilets and urinals. The wheelchair stall is deeper: 78 inches, or 48 inches plus the depth of the toilet, against 56 to 59 inches federally. Its side wall needs an 18 inch vertical grab bar as well as the horizontal one. And a baby changing table may not sit inside a stall.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be marked for use by either sex. Minnesota's building rules call for separate men's and women's rooms once a space holds more than 25 people, and they don't yet set out how a shared all-gender room with stalls can take their place, so ask your local building official before planning one. No Minnesota law limits who may use which restroom.",
+  "public_jobs": "on projects paid for in whole or in part with state money, including state buildings, colleges and schools, Minnesota law requires at least the wage the state certifies for each trade in each county, once the job costs $2,500 with one trade or $25,000 with several.",
+  "tax_install_bullet": "- **Tax on installation:** in Minnesota, labor to permanently attach an item to a building is not taxed, and a contractor who supplies and installs items that become part of the building doesn't charge sales tax on the job, paying it on the materials instead. Where an installed item stays the owner's movable property, the item and the labor to install it are both taxed, even on separate invoices. The Department of Revenue's guides don't say which applies to toilet partitions, so ask before you budget.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it to the state as use tax at the same rate.",
+  "tax_confirm": "your accountant or the Minnesota Department of Revenue",
+  "sources": [
+   "- Toilet counts in Minnesota: [Minnesota Rules part 1305.2902](https://www.revisor.mn.gov/rules/1305.2902/) (Minnesota's amendments to Section 2902 and Table 2902.1 of the 2018 International Building Code, including footnote k on urinals and the 25-person exception) and [part 4714.0422](https://www.revisor.mn.gov/rules/4714.0422/) (the plumbing code points to the building code's table). The table rows, the 50/50 split, rounding up (Section 2902.1.1) and floor area per person (Table 1004.5) were read on a secondary copy, the [2020 Minnesota Building Code on UpCodes](https://up.codes/viewer/minnesota/ibc-2018/chapter/29/plumbing-systems). Checked 2026-11-24.",
+   "- The state code applies in every city: [Minnesota Statutes 326B.121](https://www.revisor.mn.gov/statutes/cite/326B.121). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: 2020 Minnesota Building Code, Section 803.9 and the definition of interior wall and ceiling finish, read on [UpCodes](https://up.codes/viewer/minnesota/ibc-2018/chapter/8/interior-finishes); Minnesota's only amendment to Section 803 is in [part 1305.0803](https://www.revisor.mn.gov/rules/1305.0803/). Checked 2026-11-24.",
+   "- Minnesota stall rules compared with the federal ones: [Minnesota Rules chapter 1341](https://www.revisor.mn.gov/rules/1341/full) (Sections 1109.2.2 and 1101.3, and parts 1341.0603 and 1341.0604 amending ICC/ANSI A117.1-2009 sections 603 and 604), the [2020 Minnesota Accessibility Code on UpCodes](https://up.codes/viewer/minnesota/mn-accessibility-code-2020/chapter/6/plumbing-elements-and-facilities) and the [2010 ADA Standards](https://www.access-board.gov/ada/), sections 213 and 604. Checked 2026-11-24.",
+   "- State plan review: [Minnesota Department of Labor and Industry, Building plan review](https://www.dli.mn.gov/business/get-licenses-and-permits/building-plan-review). Checked 2026-11-24.",
+   "- Single-user restroom signs and separate facilities: 2020 Minnesota Building Code, Sections 2902.1.2 and 2902.2 ([part 1305.2902](https://www.revisor.mn.gov/rules/1305.2902/); Section 2902.1.2 read on [UpCodes](https://up.codes/viewer/minnesota/ibc-2018/chapter/29/plumbing-systems)); [Minnesota Statutes 363A.24](https://www.revisor.mn.gov/statutes/cite/363A.24). Checked 2026-11-24.",
+   "- Wages on public jobs: [Minnesota Statutes 177.42](https://www.revisor.mn.gov/statutes/cite/177.42) and [177.43](https://www.revisor.mn.gov/statutes/cite/177.43) (Minnesota Prevailing Wage Act) and [Department of Labor and Industry, Prevailing-wage information](https://www.dli.mn.gov/business/employment-practices/prevailing-wage-information). Checked 2026-11-24.",
+   "- Sales tax: Minnesota Department of Revenue, [Taxes and Rates](https://www.revenue.state.mn.us/guide/taxes-and-rates), [Delivery Charges](https://www.revenue.state.mn.us/guide/delivery-charges), [Remote Sellers](https://www.revenue.state.mn.us/sales-tax-faqs-remote-sellers), [Fact Sheet 146, Use Tax for Businesses](https://www.revenue.state.mn.us/sites/default/files/2023-01/FS146.pdf), [Fact Sheet 152, Labor: Installation, Fabrication, Construction, and Repair](https://www.revenue.state.mn.us/sites/default/files/2023-01/FS152.pdf) and the [Contractors and Other Property Installers Industry Guide](https://www.revenue.state.mn.us/guide/general-contractors-and-subcontractors-applies-all-contractor-types); [Minnesota Statutes 297A.61](https://www.revisor.mn.gov/statutes/cite/297A.61), subdivisions 7, 30 and 58. Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; 2020 Minnesota Accessibility Code (Minnesota Rules chapter 1341: 2018 IBC Chapter 11 and ICC/ANSI A117.1-2009 with Minnesota amendments); 2020 Minnesota Building Code (Minnesota Rules chapter 1305: 2018 International Building Code with Minnesota amendments, in force since March 31, 2020); 2020 Minnesota Plumbing Code (Minnesota Rules chapter 4714: 2018 Uniform Plumbing Code with Minnesota amendments); NFPA 286 for HDPE."
+ },
+ "notes": [
+  "Not law yet, keep out of page text: the Department of Labor and Industry is in rulemaking to replace the 2020 code with one based on the 2024 International Building Code. The chapter 1305 docket shows a Request for Comments published 2025-01-21 and every later step 'To be determined' (https://dli.mn.gov/about-department/rulemaking/rulemaking-docket-minnesota-rules-chapter-1305). A DLI 2026 update presentation says the advisory council has made its recommendations and staff is posting the notices for rule adoption, and lists proposed rules for multi-user toilet rooms not separated by sex: compartment walls floor to ceiling, doors undercut by no more than 3/4 inch, a lock that shows as locked from both sides, extra rules for schools, plus changes from ICC A117.1-2017 (https://dli.mn.gov/sites/default/files/pdf/2026-ccld-update.pdf). When adopted, the fixture table, urinal rule, all-gender rooms and stall access rules in this pack all need re-reading.",
+  "Minn. Stat. 326B.109 (3 to 2 women's to men's fixture ratio) applies to arenas, stadiums, theaters, convention halls and amusement facilities for 200 or more people, not to the three occupancies in the table."
+ ],
+ "sources_read": [
+  {
+   "url": "https://www.revisor.mn.gov/rules/1305.2902/",
+   "official": true
+  },
+  {
+   "url": "https://www.revisor.mn.gov/rules/4714.0422/",
+   "official": true
+  },
+  {
+   "url": "https://www.revisor.mn.gov/rules/1305.0803/",
+   "official": true
+  },
+  {
+   "url": "https://www.revisor.mn.gov/rules/1305.0202/",
+   "official": true
+  },
+  {
+   "url": "https://www.revisor.mn.gov/rules/1305/full",
+   "official": true
+  },
+  {
+   "url": "https://www.revisor.mn.gov/rules/1341/full",
+   "official": true
+  },
+  {
+   "url": "https://www.revisor.mn.gov/statutes/cite/326B.121",
+   "official": true
+  },
+  {
+   "url": "https://www.revisor.mn.gov/statutes/cite/326B.106",
+   "official": true
+  },
+  {
+   "url": "https://www.revisor.mn.gov/statutes/cite/326B.109",
+   "official": true
+  },
+  {
+   "url": "https://www.revisor.mn.gov/statutes/cite/363A.24",
+   "official": true
+  },
+  {
+   "url": "https://www.revisor.mn.gov/statutes/cite/123B.595",
+   "official": true
+  },
+  {
+   "url": "https://www.revisor.mn.gov/statutes/cite/123B.71",
+   "official": true
+  },
+  {
+   "url": "https://www.revisor.mn.gov/statutes/cite/177.41",
+   "official": true
+  },
+  {
+   "url": "https://www.revisor.mn.gov/statutes/cite/177.42",
+   "official": true
+  },
+  {
+   "url": "https://www.revisor.mn.gov/statutes/cite/177.43",
+   "official": true
+  },
+  {
+   "url": "https://www.revisor.mn.gov/statutes/cite/297A.61",
+   "official": true
+  },
+  {
+   "url": "https://www.dli.mn.gov/business/codes-and-laws/2020-minnesota-state-building-codes",
+   "official": true
+  },
+  {
+   "url": "https://www.dli.mn.gov/sites/default/files/pdf/fs-2020-accessibility-code.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.dli.mn.gov/business/get-licenses-and-permits/building-plan-review",
+   "official": true
+  },
+  {
+   "url": "https://www.dli.mn.gov/business/employment-practices/prevailing-wage-information",
+   "official": true
+  },
+  {
+   "url": "https://dli.mn.gov/about-department/rulemaking/rulemaking-docket-minnesota-rules-chapter-1305",
+   "official": true
+  },
+  {
+   "url": "https://dli.mn.gov/sites/default/files/pdf/2026-ccld-update.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.revenue.state.mn.us/guide/taxes-and-rates",
+   "official": true
+  },
+  {
+   "url": "https://www.revenue.state.mn.us/guide/delivery-charges",
+   "official": true
+  },
+  {
+   "url": "https://www.revenue.state.mn.us/sales-tax-faqs-remote-sellers",
+   "official": true
+  },
+  {
+   "url": "https://www.revenue.state.mn.us/sites/default/files/2023-01/FS146.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.revenue.state.mn.us/sites/default/files/2023-01/FS152.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.revenue.state.mn.us/guide/general-contractors-and-subcontractors-applies-all-contractor-types",
+   "official": true
+  },
+  {
+   "url": "https://www.revenue.state.mn.us/guide/defining-real-property",
+   "official": true
+  },
+  {
+   "url": "https://www.revenue.state.mn.us/guide/contractor-retailer-sales-tax-guidelines",
+   "official": true
+  },
+  {
+   "url": "https://www.revenue.state.mn.us/sites/default/files/2018-12/RN%2018-04.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/minnesota/ibc-2018/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/minnesota/ibc-2018/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/minnesota/ibc-2018/chapter/2/definitions",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/minnesota/ibc-2018/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/minnesota/mn-accessibility-code-2020/chapter/6/plumbing-elements-and-facilities",
+   "official": false
+  }
+ ],
+ "to_confirm": [
+  "Table 2902.1 rows, Sections 2902.1.1, 2902.1.2, 803.9, the interior finish definition and Table 1004.5 were read on UpCodes, not on an official full text (the revisor prints Minnesota's amendments only; ICC's free viewer of the 2020 Minnesota Building Code needs a browser). Browser check against codes.iccsafe.org before launch.",
+  "New code: DLI is adopting a code based on the 2024 IBC (and A117.1-2017 for access); no effective date is published. Ask DLI Construction Codes and Licensing, 651-284-5012, for the effective date, and re-read this pack when it is set.",
+  "Urinals: footnote k doesn't say how 67% rounds; the urinals_allowed figures round down and assume all the men's fixtures are in one toilet room. Local building official.",
+  "Shared all-gender rooms with stalls: the adopted code has no provision for them as required facilities. Whether a building official will approve one as an alternative today, and on what stall terms, is a question for the local building official or DLI.",
+  "Restroom use law: the finding that no Minnesota statute restricts restroom use by sex rests on not finding one in two searches; the Human Rights Act's treatment of gender identity (363A.03, 363A.11) was not analysed. Lawyer review.",
+  "Stall depth: Minnesota's 78 inch overall depth or 48 inches plus fixture depth comes from parts 1341.0604 subparts 1 and 4 (official); the 60 inch width is unamended A117.1-2009 604.3.1, read on UpCodes. The page text's 78 inch figure should be checked with DLI's accessibility staff for a partition replacement in an existing restroom.",
+  "Sales tax: whether installed toilet partitions are an improvement to real property (construction contract, labor not taxed) or tangible personal property like lockers and bleachers (item and installation taxed), and how labor is treated when the owner buys the partitions and hires an installer separately. Minnesota Department of Revenue, 651-296-6181, salesuse.taxes@state.mn.us.",
+  "Prevailing wage: the state act covers state-funded projects only; whether Minneapolis, Hennepin County or Minneapolis Public Schools apply their own prevailing wage rule to locally funded jobs, and the county carpenter rate, are for the city agent (DLI commercial rates page).",
+  "How Next Partitions itself collects Minnesota tax (the $100,000 or 200-sale test) is a question for Abe's accountant."
+ ]
+}
