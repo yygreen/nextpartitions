@@ -10,7 +10,7 @@ lng: -122.3515
 primary_keyword: bathroom partitions seattle (calendar #5, month 1)
 secondary_keywords: [toilet partitions seattle, restroom partitions seattle, commercial bathroom partitions seattle]
 date: 2026-11-24
-words: 870 (1,070 with FAQ)
+words: 860 (1,060 with FAQ)
 ---
 
 # Bathroom Partitions in Seattle
@@ -45,14 +45,14 @@ Freight is quoted with the partitions, so the number you get covers delivery to 
 
 **Downtown Seattle:** inside the Downtown Traffic Control Zone, trucks 30 feet or longer can't move during the weekday curfews (6 to 9 a.m. and 3 to 7 p.m.) and need a city permit between 9 a.m. and 3 p.m. Tell us if your site is downtown, so the carrier can plan the delivery window.
 
-## Codes that apply in Seattle
+## The rules a Seattle restroom has to meet
 
-- **Accessibility:** the federal 2010 ADA Standards and ICC A117.1-2017 with Washington amendments, through Chapter 11 of the Seattle Building Code.
-- **Building code:** the 2021 Seattle Building Code, which is the 2021 International Building Code with Seattle amendments. If you choose HDPE, the building code requires it to pass the NFPA 286 fire test, so ask for the fire-rated version.
-- **Plumbing code:** the 2021 Seattle Plumbing Code, which is the 2021 Washington State Plumbing Code with Seattle amendments. Public Health – Seattle & King County enforces it. It sets how many toilets and urinals a building needs, and so how many stalls.
+- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Washington's own access rules set the sizes.
+- **Fire safety:** Seattle's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.
+- **How many stalls:** the number of toilets and urinals depends on how many people use the building, and that decides how many stalls you need. The county health department, Public Health – Seattle & King County, enforces the plumbing rules.
 - **Permits:** Seattle needs no permit for minor repairs or alterations that cost $6,000 or less in any 6-month period, counting labor and parts at market value. Above that, ask the Seattle Department of Construction and Inspections (SDCI) whether your replacement needs one. You don't need a permit to buy partitions.
 
-Last checked November 23, 2026. Codes change, so confirm your project with SDCI or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
+Last checked November 23, 2026. Rules change, so confirm your project with SDCI or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
 
 ## Installation in Seattle
 
@@ -93,8 +93,8 @@ No. We supply the partitions and the shop drawings; a contractor you hire instal
 ### Which partition material is best for Seattle's damp climate?
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### Which codes apply to restroom partitions in Seattle?
-The 2010 ADA Standards, ICC A117.1-2017 with Washington amendments, the 2021 Seattle Building Code and the 2021 Seattle Plumbing Code. Confirm your project with SDCI.
+### What rules does a Seattle restroom have to meet?
+Federal and Washington wheelchair-access rules, the city's fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with SDCI.
 
 ### How do I get a price for my Seattle restroom?
 Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
@@ -111,6 +111,7 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Seattle permits and the $6,000 limit: [SDCI, Do You Need a Permit?](https://www.seattle.gov/construction-and-inspections/permits/do-you-need-a-permit). Checked 2026-11-23.
 - Downtown truck rules: [Seattle Department of Transportation, Downtown Traffic Control Zone](https://www.seattle.gov/transportation/permits-and-services/permits/stt-downtown-traffic-control-zone). Checked 2026-11-23.
 - Contractor registration: [Washington L&I, Register as a Contractor](https://lni.wa.gov/licensing-permits/contractors/register-as-a-contractor/) and [SDCI Tip 333](https://www.seattle.gov/DPD/Publications/CAM/cam333.pdf). Last checked 2026-11-19.
+- The rules by their official names: 2010 ADA Standards for Accessible Design; ICC A117.1-2017 with Washington amendments (WAC 51-50, Seattle Building Code Chapter 11); 2021 Seattle Building Code (the 2021 International Building Code with Seattle amendments); 2021 Seattle Plumbing Code (the 2021 Washington State Plumbing Code with Seattle amendments); NFPA 286 for HDPE.
 
 <!-- For Marc -->
 

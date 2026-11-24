@@ -10,7 +10,7 @@ lng: -118.4108
 primary_keyword: bathroom partitions los angeles (calendar #2, month 1)
 secondary_keywords: [toilet partitions los angeles, restroom partitions los angeles, commercial bathroom partitions los angeles]
 date: 2026-11-24
-words: 880 (1,080 with FAQ)
+words: 860 (1,070 with FAQ)
 ---
 
 # Bathroom Partitions in Los Angeles
@@ -43,14 +43,14 @@ Toilet partitions for Los Angeles ship by freight carrier, crated, palletized an
 
 Freight is quoted with the partitions, so the number you get covers delivery to your Los Angeles address.
 
-## Codes that apply in Los Angeles
+## The rules a Los Angeles restroom has to meet
 
-- **Accessibility:** the federal 2010 ADA Standards and Chapter 11B of the California Building Code. An alteration can also trigger upgrades to the path of travel, including the restrooms that serve the altered area; below a valuation threshold ($209,208 as of January 2026) that obligation is limited.
-- **Building code:** the 2026 Los Angeles Building Code, which is the 2025 California Building Code with Los Angeles amendments, in force since January 1, 2026. If you choose HDPE, ask for the version that passes the NFPA 286 fire test, which the International Building Code requires and the California code is based on.
-- **Plumbing code:** the Los Angeles Plumbing Code, which is the 2025 California Plumbing Code with Los Angeles amendments. It sets how many toilets and urinals a building needs, and so how many stalls.
-- **Permits:** the Los Angeles code exempts work valued at $2,500 or less and "partitions, not over 5 feet 9 inches high" from a permit, but no LADBS page says whether toilet partitions count. Ask LADBS before a replacement. You don't need a permit to buy partitions.
+- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and California's own access rules both set the sizes, and California's are stricter in places. A remodel can also oblige you to bring the restrooms serving that area up to today's rules; on projects under $209,208 (the 2026 figure) that duty is limited.
+- **Fire safety:** building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.
+- **How many stalls:** Los Angeles sets the number of toilets and urinals by how many people use the building, and that decides how many stalls you need.
+- **Permits:** Los Angeles needs no permit for work worth $2,500 or less, or for "partitions, not over 5 feet 9 inches high", but the city doesn't say whether toilet partitions count. Ask the Department of Building and Safety (LADBS) before a replacement. You don't need a permit to buy partitions.
 
-Last checked November 23, 2026. Codes change, so confirm your project with the Los Angeles Department of Building and Safety (LADBS) or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
+Last checked November 23, 2026. Rules change, so confirm your project with the Los Angeles Department of Building and Safety (LADBS) or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
 
 ## Installation in Los Angeles
 
@@ -92,8 +92,8 @@ No. We supply the partitions and the shop drawings; a contractor you hire instal
 ### Which partition material is best in Los Angeles?
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, beach facilities, locker rooms and restrooms that are hosed down.
 
-### Which codes apply to restroom partitions in Los Angeles?
-The 2010 ADA Standards, Chapter 11B of the California Building Code, the 2026 Los Angeles Building Code and the Los Angeles Plumbing Code. Confirm your project with LADBS.
+### What rules does a Los Angeles restroom have to meet?
+Federal and California wheelchair-access rules, the city's fire-safety rule for solid plastic partitions, and its rules on how many toilets a building needs. Confirm your project with LADBS.
 
 ### How do I get a price for my Los Angeles restroom?
 Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
@@ -108,6 +108,7 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Los Angeles building and plumbing codes, and work exempt from a permit (LAMC 91.106.2): [Ordinance No. 188797, on the LADBS site](https://dbs.lacity.gov/sites/default/files/efs/forms/pc17/26-ord-188797-260108.pdf). Checked 2026-11-23.
 - California Building Code Chapter 11B and the 2026 valuation threshold: [LADBS accessibility plan check list for commercial buildings, 2026](https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf). Checked 2026-11-23.
 - California contractor license (C-61/D-34): [Contractors State License Board](https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=D34). Last checked 2026-11-19.
+- The rules by their official names: 2010 ADA Standards for Accessible Design; California Building Code Chapter 11B; 2026 Los Angeles Building Code (the 2025 California Building Code with Los Angeles amendments, in force since January 1, 2026); Los Angeles Plumbing Code (the 2025 California Plumbing Code with Los Angeles amendments); NFPA 286 for HDPE under the International Building Code, the model for California's code.
 
 <!-- For Marc -->
 

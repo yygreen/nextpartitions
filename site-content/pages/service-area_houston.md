@@ -43,14 +43,14 @@ Toilet partitions for Houston ship by freight carrier, crated, palletized and tr
 
 Freight is quoted with the partitions, so the number you get covers delivery to your Houston address.
 
-## Codes that apply in Houston
+## The rules a Houston restroom has to meet
 
-- **Accessibility:** the federal 2010 ADA Standards and the 2012 Texas Accessibility Standards (TAS). Projects with a total estimated cost of $50,000 or more are registered with the Texas Department of Licensing and Regulation (TDLR) and submitted for review; smaller projects must still comply with TAS.
-- **Building code:** the 2021 International Building Code with Houston Amendments, in force since January 1, 2024. If you choose HDPE, the building code requires it to pass the NFPA 286 fire test, so ask for the fire-rated version.
-- **Plumbing code:** the 2021 Uniform Plumbing Code with Houston Amendments. It sets how many toilets and urinals a building needs, and so how many stalls.
-- **Permits:** Houston requires a permit for alterations and remodels unless the work is exempt, and its exempt list covers "similar finish work" without naming toilet partitions. Ask the Houston Permitting Center whether your replacement needs one. You don't need a permit to buy partitions.
+- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Texas's own access rules set the sizes. On projects of $50,000 or more, the state reviews the plans; smaller projects must still follow the rules.
+- **Fire safety:** Houston's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.
+- **How many stalls:** Houston sets the number of toilets and urinals by how many people use the building, and that decides how many stalls you need.
+- **Permits:** Houston requires a permit for remodels and alterations unless the work is exempt. Its exempt list covers "similar finish work" without naming toilet partitions, so ask the Houston Permitting Center whether your replacement needs one. You don't need a permit to buy partitions.
 
-Last checked November 23, 2026. Codes change, so confirm your project with the Houston Permitting Center, TDLR, or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
+Last checked November 23, 2026. Rules change, so confirm your project with the Houston Permitting Center or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
 
 ## Installation in Houston
 
@@ -91,8 +91,8 @@ No. We supply the partitions and the shop drawings; a contractor you hire instal
 ### Which partition material is best for Houston's humidity?
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### Which codes apply to restroom partitions in Houston?
-The 2010 ADA Standards, the 2012 Texas Accessibility Standards, the 2021 International Building Code and the 2021 Uniform Plumbing Code, the last two with Houston Amendments. Confirm your project with the Houston Permitting Center.
+### What rules does a Houston restroom have to meet?
+Federal and Texas wheelchair-access rules, the city's fire-safety rule for solid plastic partitions, and its rules on how many toilets a building needs. Confirm your project with the Houston Permitting Center.
 
 ### How do I get a price for my Houston restroom?
 Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
@@ -107,6 +107,7 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Houston building and plumbing codes: [City of Houston, List of Adopted Codes (form CE-1199, revised September 2026)](https://www.houstonpermittingcenter.org/media/2001/download) and [Code Development](https://www.houstonpermittingcenter.org/building-code-enforcement/code-development). Checked 2026-11-23.
 - Texas Accessibility Standards and the $50,000 registration threshold: [TDLR Architectural Barriers FAQ](https://www.tdlr.texas.gov/ab/abfaq.htm) and [TAS](https://www.tdlr.texas.gov/ab/abtas.htm). Checked 2026-11-23.
 - Houston permits and exempt work: [Houston Permitting Center, plan review](https://www.houstonpermittingcenter.org/building-code-enforcement/plan-review). Checked 2026-11-23.
+- The rules by their official names: 2010 ADA Standards for Accessible Design; 2012 Texas Accessibility Standards (TDLR registration and review at $50,000 or more); 2021 International Building Code with Houston Amendments, in force since January 1, 2024; 2021 Uniform Plumbing Code with Houston Amendments; NFPA 286 for HDPE.
 - Houston contractor rule: [Houston Permitting Center, Commercial Permitting 101](https://www.houstonpermittingcenter.org/sites/g/files/nwywnm431/files/2025-10/Commercial%20Permitting%20101%20_BuildExpo%202025_06_04_2025_0.pdf) ("The City does not license or register general contractors"). Last checked 2026-11-03.
 - Texas has no statewide general contractor license: [Office of the Governor, Texas Business Licenses & Permits Guide](https://gov.texas.gov/uploads/files/business/Texas_Licenses_Permits_Guide.pdf). Last checked 2026-11-19.
 

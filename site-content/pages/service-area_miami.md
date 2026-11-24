@@ -10,7 +10,7 @@ lng: -80.2086
 primary_keyword: bathroom partitions miami (calendar #3, month 1)
 secondary_keywords: [toilet partitions miami, restroom partitions miami, commercial bathroom partitions miami]
 date: 2026-11-24
-words: 830 (1,040 with FAQ)
+words: 850 (1,060 with FAQ)
 ---
 
 # Bathroom Partitions in Miami
@@ -43,14 +43,15 @@ Toilet partitions for Miami ship by freight carrier, crated, palletized and trac
 
 Freight is quoted with the partitions, so the number you get covers delivery to your Miami address.
 
-## Codes that apply in Miami
+## The rules a Miami restroom has to meet
 
-- **Accessibility:** the federal 2010 ADA Standards and the Florida Building Code, Accessibility.
-- **Building code:** the Florida Building Code, Building, 8th Edition (2023). The 9th Edition (2026) replaces it on December 31, 2026, for the Building, Plumbing and Accessibility volumes alike. If you choose HDPE, ask for the version that passes the NFPA 286 fire test, which the International Building Code requires and the Florida code is based on.
-- **Plumbing code:** the Florida Building Code, Plumbing, 8th Edition (2023) until then. It sets how many toilets and urinals a building needs, and so how many stalls.
-- **Permits:** Miami's list of work that needs no permit covers only partitions "not fixed to the structure" and no taller than 5 feet 9 inches. Toilet partitions are anchored, so ask the City of Miami Building Department before a replacement. You don't need a permit to buy partitions.
+- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Florida's own access rules set the sizes.
+- **Fire safety:** building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.
+- **How many stalls:** Florida's plumbing rules set the number of toilets and urinals by how many people use the building, and that decides how many stalls you need.
+- **New rules on December 31, 2026:** Florida replaces its building rules with a new edition that day. If your project is permitted after that date, ask your architect which edition applies.
+- **Permits:** Miami's list of work that needs no permit covers only partitions that aren't fixed to the building and stand no taller than 5 feet 9 inches. Toilet partitions are anchored, so ask the City of Miami Building Department before a replacement. You don't need a permit to buy partitions.
 
-Last checked November 23, 2026. Codes change, so confirm your project with the City of Miami Building Department or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
+Last checked November 23, 2026. Rules change, so confirm your project with the City of Miami Building Department or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
 
 ## Installation in Miami
 
@@ -92,8 +93,8 @@ No. We supply the partitions and the shop drawings; a contractor you hire instal
 ### Which partition material is best for Miami's humidity?
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### Which codes apply to restroom partitions in Miami?
-The 2010 ADA Standards and the Florida Building Code: the Building, Plumbing and Accessibility volumes, 8th Edition (2023) until December 30, 2026 and 9th Edition (2026) from December 31. Confirm your project with the City of Miami Building Department.
+### What rules does a Miami restroom have to meet?
+Federal and Florida wheelchair-access rules, the fire-safety rule for solid plastic partitions, and Florida's rules on how many toilets a building needs. Florida's building rules change to a new edition on December 31, 2026. Confirm your project with the City of Miami Building Department.
 
 ### How do I get a price for my Miami restroom?
 Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
@@ -109,6 +110,7 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Work exempt from a permit in Miami: [City of Miami, Work Exempt from Permit](https://www.miami.gov/Permits-Construction/Work-Exempt-from-Permit). Checked 2026-11-23.
 - Miami-Dade certificate of competency: [Miami-Dade County Code, Chapter 10](https://library.municode.com/fl/miami_-_dade_county/codes/code_of_ordinances?nodeId=PTIIICOOR_CH10CO). Last checked 2026-11-03.
 - Florida contractor licensing: [Florida Statutes 489.113](https://www.flsenate.gov/Laws/Statutes/2023/489.113). Last checked 2026-11-19.
+- The rules by their official names: 2010 ADA Standards for Accessible Design; Florida Building Code, 8th Edition (2023): Building, Plumbing and Accessibility volumes, replaced by the 9th Edition (2026) on December 31, 2026; NFPA 286 for HDPE under the International Building Code, the model for Florida's code.
 
 <!-- For Marc -->
 

@@ -10,7 +10,7 @@ lng: -96.7662
 primary_keyword: bathroom partitions dallas (calendar #4, month 1)
 secondary_keywords: [toilet partitions dallas, restroom partitions dallas, commercial bathroom partitions dallas]
 date: 2026-11-24
-words: 820 (1,020 with FAQ)
+words: 800 (1,000 with FAQ)
 ---
 
 # Bathroom Partitions in Dallas
@@ -43,14 +43,14 @@ Toilet partitions for Dallas ship by freight carrier, crated, palletized and tra
 
 Freight is quoted with the partitions, so the number you get covers delivery to your Dallas address.
 
-## Codes that apply in Dallas
+## The rules a Dallas restroom has to meet
 
-- **Accessibility:** the federal 2010 ADA Standards and the 2012 Texas Accessibility Standards (TAS). Projects with a total estimated cost of $50,000 or more are registered with the Texas Department of Licensing and Regulation (TDLR) and submitted for review; smaller projects must still comply with TAS.
-- **Building code:** the 2021 International Building Code with Dallas amendments, in force since May 12, 2023. If you choose HDPE, the building code requires it to pass the NFPA 286 fire test, so ask for the fire-rated version.
-- **Plumbing code:** the 2021 International Plumbing Code with Dallas amendments. It sets how many toilets and urinals a building needs, and so how many stalls.
-- **Permits:** Dallas says a building permit is generally needed for work involving structural elements, and lists the work that needs none in Chapter 52, Section 301(b) of the Dallas City Code. Ask Dallas Building Inspection whether your replacement needs one. You don't need a permit to buy partitions.
+- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Texas's own access rules set the sizes. On projects of $50,000 or more, the state reviews the plans; smaller projects must still follow the rules.
+- **Fire safety:** Dallas's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.
+- **How many stalls:** Dallas sets the number of toilets and urinals by how many people use the building, and that decides how many stalls you need.
+- **Permits:** Dallas says a building permit is generally needed for work on a building's structure and publishes a list of work that needs none. Ask Dallas Building Inspection whether your replacement is on it. You don't need a permit to buy partitions.
 
-Last checked November 23, 2026. Codes change, so confirm your project with Dallas Building Inspection, TDLR, or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
+Last checked November 23, 2026. Rules change, so confirm your project with Dallas Building Inspection, TDLR, or your architect. The accessible stall's sizes are in our [ADA compliance guide](/guides/ada-compliance), and fixture spacing is in the [restroom layout guide](/guides/restroom-layout).
 
 ## Installation in Dallas
 
@@ -91,8 +91,8 @@ No. We supply the partitions and the shop drawings; a contractor you hire instal
 ### Which partition material is best in Dallas?
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic.
 
-### Which codes apply to restroom partitions in Dallas?
-The 2010 ADA Standards, the 2012 Texas Accessibility Standards, the 2021 International Building Code and the 2021 International Plumbing Code, the last two with Dallas amendments. Confirm your project with Dallas Building Inspection.
+### What rules does a Dallas restroom have to meet?
+Federal and Texas wheelchair-access rules, the city's fire-safety rule for solid plastic partitions, and its rules on how many toilets a building needs. Confirm your project with Dallas Building Inspection.
 
 ### How do I get a price for my Dallas restroom?
 Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
@@ -109,6 +109,7 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 - Dallas permits: [City of Dallas Building Inspection FAQ](https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/Pages/building_inspection_faqs.aspx). Checked 2026-11-23.
 - Dallas contractor registration: [City of Dallas Development Services guide](https://dallascityhall.com/departments/sustainabledevelopment/guide). Last checked 2026-11-03.
 - Texas has no statewide general contractor license: [Office of the Governor, Texas Business Licenses & Permits Guide](https://gov.texas.gov/uploads/files/business/Texas_Licenses_Permits_Guide.pdf). Last checked 2026-11-19.
+- The rules by their official names: 2010 ADA Standards for Accessible Design; 2012 Texas Accessibility Standards (TDLR registration and review at $50,000 or more); 2021 International Building Code with Dallas amendments, in force since May 12, 2023; 2021 International Plumbing Code with Dallas amendments; work exempt from a permit: Dallas City Code Chapter 52, Section 301(b); NFPA 286 for HDPE.
 
 <!-- For Marc -->
 

@@ -94,4 +94,5 @@ All installers, rates, reviews and photos in the prototypes are fictional sample
 - Present local rules in plain language without implying a permit is needed to **buy** partitions.
 - **No signposting sentences, ever** (2026-11-16): don't announce what the text is about to do ("Each is covered below, in this order:", "This guide takes them in the order…", "The sections below cover…"). Say the thing, or let the heading and the list do it.
 - **Don't mention that Next Partitions doesn't install** in blog posts unless the post is about installation.
+- **Rules in everyday language (2026-11-24):** on city pages, say what a rule means for the buyer ("a restroom with stalls needs at least one stall a wheelchair user can enter"), not the code's formal name. Formal code names and editions go in the Sources list only.
 - Year-variant keywords ("2025/2026 … cost installed") target **one permanent page**. Update the year in the title every January.
