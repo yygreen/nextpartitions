@@ -53,6 +53,7 @@ Research these five things for the CITY:
      "stalls_after": "...",
      "stalls_head": "optional, only if a column needs a qualifier, e.g. 'Office (recommended) | Restaurant (recommended) | School (required)'",
      "capacity": "optional: only if the city's floor area per person differs from the state pack's sentence",
+     "skip_state_sources": [ "optional: a distinctive phrase from each state-pack source bullet that does not apply to your city (e.g. a model-code copy you replaced with the city's own code); those bullets are left off the page" ],
      "extra_rule_bullets": [ "optional extra bullets for the rules list, e.g. a code change already scheduled: - **New rules on [date]:** ..." ],
      "install_rule": "2-3 sentences on who may install there: the city's contractor rule (local-rules entry) and the state's licence rule (state-licensing entry), as those files state them; end with: You don't need a permit to buy partitions.",
      "faq_install_extra": "one short sentence for the FAQ answer on installation: what the contractor needs there, or empty",
