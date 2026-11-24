@@ -14,4 +14,4 @@ City agent prompt: "Research and writing task for the city of <City>, <State> (s
 
 After new pages: `python3 city-pages/gen_from_packs.py && node city-maps.mjs && node build.mjs` in site-content/build, then publish the preview (files map of the new service-area_*.html). Preview last published with 46 new cities (through louisville).
 
-Installer directory entries to update from this research: shreveport, akron, san-antonio (contractor rules); washington-dc (office name on the DLCP link).
+Installer directory entries to update from this research: shreveport, akron, san-antonio, oklahoma-city (contractor rules; lexington registration now confirmed); washington-dc (office name on the DLCP link).

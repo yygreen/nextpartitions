@@ -53,6 +53,7 @@ Research these five things for the CITY:
      "stalls_after": "...",
      "stalls_head": "optional, only if a column needs a qualifier, e.g. 'Office (recommended) | Restaurant (recommended) | School (required)'",
      "capacity": "optional: only if the city's floor area per person differs from the state pack's sentence",
+     "skip_local_rule_source": "optional, true when the local-rules entry's source link is dead or you found it wrong (then cite your own source for the contractor rule in `sources`)",
      "skip_state_sources": [ "optional: a distinctive phrase from each state-pack source bullet that does not apply to your city (e.g. a model-code copy you replaced with the city's own code); those bullets are left off the page" ],
      "extra_rule_bullets": [ "optional extra bullets, only for rules that affect toilet stalls or partitions (not changing tables, signs about other subjects or drinking fountains), e.g. a code change already scheduled: - **New rules on [date]:** ..." ],
      "install_rule": "2-3 sentences on who may install there: the city's contractor rule (local-rules entry) and the state's licence rule (state-licensing entry), as those files state them; end with: You don't need a permit to buy partitions.",
