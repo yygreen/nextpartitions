@@ -1,0 +1,239 @@
+{
+ "slug": "washington-dc",
+ "city": "Washington, DC",
+ "state": "DC",
+ "checked": "2026-11-24",
+ "note": "The District is both state and city. Codes, toilet counts, access rules and restroom rules are in research/city-pages/states/DC.json and were not redone. This pack adds the permit question, the Davis-Bacon carpenter rate, the sales tax bullet, the contractor rule and the page text.",
+ "codes": {
+  "building": {
+   "name": "2017 District of Columbia Building Code (2015 International Building Code as amended by 12-A DCMR)",
+   "edition": "2017 (2015 IBC)",
+   "local_amendments": true,
+   "effective": "2020-05-29",
+   "url": "https://dob.dc.gov/page/dc-construction-codes",
+   "quote": "The 2017 DC Construction Codes consist of the 2015 International Code Council (ICC) family of model codes, the 2014 National Electrical Code, and 2013 ASHRAE 90.1, as amended by the District of Columbia Municipal Regulations (DCMR) Title 12, Sections A through M. The 2017 DC Construction Code takes effect on May 29, 2020."
+  },
+  "plumbing": {
+   "name": "2017 District of Columbia Plumbing Code (2015 International Plumbing Code as amended by 12-F DCMR)",
+   "edition": "2017 (2015 IPC)",
+   "local_amendments": true,
+   "effective": "2020-05-29",
+   "url": "https://dob.dc.gov/page/dc-construction-codes",
+   "quote": "The 2017 DC Construction Codes consist of the 2015 International Code Council (ICC) family of model codes, the 2014 National Electrical Code, and 2013 ASHRAE 90.1, as amended by the District of Columbia Municipal Regulations (DCMR) Title 12, Sections A through M. The 2017 DC Construction Code takes effect on May 29, 2020.",
+   "note": "The page names the ICC 'family of model codes' rather than the plumbing code by itself; the plumbing edition rests on that sentence (as in research/state-codes/states.json)."
+  },
+  "scheduled_change": null,
+  "scheduled_change_note": {
+   "what": "Not scheduled by law. DOB, now the lead agency for the construction codes, is reviewing all 12 code categories (Building and Plumbing included) and publishes an estimated timeline only: first notice of proposed rulemaking in fall 2026, second notice in summer 2027, Council review in fall 2027, final codes published in late 2027. No edition or effective date is named.",
+   "date": null,
+   "url": "https://dob.dc.gov/page/construction-code-development",
+   "quote": "Estimated Timeline. Phase 1: First Notice of Proposed Rulemaking. Summer 2026: Hold Listening Sessions. Fall 2026: Publish First Notice of Proposed Rulemaking. Public Comment Period (45 Days). Phase 2: Second Notice of Proposed Rulemaking. Early 2027: Prepare content for second notice of proposed rulemaking. Summer 2027: Publish 2nd Notice of Proposed Rulemaking. Public Comment Period (30 Days). Phase 3: Final Codes. Summer 2027: Prepare final codes. Fall 2027: Council Review Period (~80 Days). Late 2027: Publish final codes."
+  },
+  "authority": "DC Department of Buildings (DOB)",
+  "confidence": "high",
+  "caveat": "DOB's integrated PDFs don't show amendments adopted after May 29, 2020; Title 12 DCMR on dcregs.dc.gov is the official text and was not opened (needs a browser)."
+ },
+ "fixtures": {
+  "city_amends": false,
+  "amendment": null,
+  "basis": "Not applicable: there is no city layer under the District. The DC pack's counts (2017 DC Building Code Table 2902.1) are the city's counts. Not re-researched.",
+  "confidence": "high"
+ },
+ "permit": {
+  "exempt_list_quote": "105.2 Work exempted from permit. This section sets forth exemptions from permit requirements, subject to historic and flood hazard area restrictions set forth in Sections 105.2.5 and 105.2.6 respectively. Exemptions from permit requirements of the Construction Codes shall not be deemed to grant authorization for any work to be done in any manner in violation of the provisions of the Construction Codes or of any other laws, regulations or ordinances of the District of Columbia. Building: 1. Brick pointing. 2. Caulking, patching and plaster repair of nonrated assemblies. 3. Installation of window screens and storm windows. 4. Repair in kind of existing fences. 5. Application of a paint, sealant, stain or other coating [...] 6. Papering, tiling, carpeting, floor covering, cabinets, countertops and similar finish work. 7. Replacement in kind of one of the items listed hereafter. For the purpose of this section, \"replacement in kind\" means replacement with a feature of like material that replicates the existing feature in proportion, appearance, texture, design, detail and dimensions. 7.1. Roof covering or coping. 7.2. Siding. 7.3. Gutters and downspouts and fascia. 7.4. Private sidewalks and driveways [...] 7.5. Patios [...] 7.6. Nonrated suspended ceiling tile. 7.7. Not more than 160 square feet (14.9 m2) of gypsum board excluding installation of fire-rated gypsum wall board or shaft liner. 8. A single garden storage shed [...] 9. Prefabricated pools, spas or water features [...] 10. Retaining walls [...] 11. Shade cloth structures [...] 12. Swings and other playground equipment [...] 13. A tree house or playhouse [...] 14. Movable fixtures, cases, racks, counters and partitions not over five feet nine inches (1753 mm) in height. 15. A one-story mausoleum [...] 16. [certain signs] 17. Structures erected for a period of less than 180 days [...] 18. Tents and other membrane structures [...] 19. Erection or replacement of fixed or retractable awnings [...] | 105.2.2 Ordinary repairs. Permits are not required for ordinary repairs to buildings, other structures or equipment. Ordinary repairs shall not include any of the following: 1. The cutting away of any wall, partition or portion thereof, the removal or cutting of any structural beam or load bearing support, or the removal or change of any required means of egress, or rearrangement of parts of a structure affecting the egress requirements. 2. Addition to, alteration of, replacement or relocation of any standpipe, water supply, sewer, drainage, drain leader, gas, soil, waste, vent or similar piping, electric wiring or mechanical or other work affecting public health or general safety.",
+  "url": "https://dob.dc.gov/sites/default/files/dc/sites/dob/publication/attachments/2017%20District%20of%20Columbia%20Building%20Code_Part%201.pdf",
+  "partitions_named": false,
+  "note": "Toilet partitions or compartments are not named. The only 'partitions' in the list are 'movable fixtures, cases, racks, counters and partitions not over five feet nine inches in height' (item 14); the code doesn't say whether a toilet partition anchored to the floor, wall or ceiling counts as movable, and this file doesn't decide it. Item 7's replacement-in-kind list doesn't include partitions. Read in DOB's integrated PDF (Part 1, pages 17 to 19), which doesn't show amendments after May 29, 2020; DOB's current 'How to Get a Permit' page repeats the same list.",
+  "second_url": "https://dob.dc.gov/page/get-permit",
+  "second_quote": "What Projects Require a Permit? New buildings, additions, and structures. Interior alterations (including finished basements) [...] Layout of interior space in new or existing commercial buildings [...] New plumbing fixtures [...] What Projects Do Not Require a Permit? Unless you are in a historic district, the following work does not require a building permit: [...] Papering, tiling, carpeting, floor covering, cabinets, countertops, and similar finish work [...] Movable fixtures, cases, racks, counters, and partitions not over 5 feet 9 inches (1753 mm) in height",
+  "office": "DC Department of Buildings (DOB)",
+  "phone": "(202) 671-3500",
+  "phone_url": "https://dob.dc.gov/",
+  "confidence": "high"
+ },
+ "restrooms_city": {
+  "rule": null,
+  "quote": null,
+  "url": null,
+  "confidence": "medium",
+  "note": "No separate city layer. The District's rules (gender-neutral signs on single-occupancy rooms, Building Code 2902.4 and 4 DCMR 802.2) are in the DC pack and were not re-researched."
+ },
+ "sales_tax": {
+  "combined": 0.06,
+  "parts": [
+   {
+    "name": "District of Columbia",
+    "rate": 0.06
+   }
+  ],
+  "effective": null,
+  "effective_note": "The 6.00% general rate was written into D.C. Code 47-2002(a) by D.C. Law 22-168 (Fiscal Year 2019 Budget Support Act of 2018, effective October 30, 2018), section 6004(a)(2), replacing 5.75%. The date from which it applied was not read.",
+  "scheduled_change": {
+   "what": "General rate rises from 6.0% to 7.0%. The date was moved once already: the Fiscal Year 2027 Budget Support Emergency Act of 2026 (D.C. Act 26-416) changed 'October 1, 2026' to 'October 1, 2027'.",
+   "date": "2027-10-01",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/47-2002"
+  },
+  "url": "https://code.dccouncil.gov/us/dc/council/code/sections/47-2002",
+  "quote": "The rate of such tax on the gross receipts from sales of or charges for such tangible personal property and services shall be 6.0% before October 1, 2027, and 7.0% beginning on October 1, 2027, and continuing thereafter",
+  "other_quotes": [
+   {
+    "url": "https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs",
+    "quote": "What are the sales tax rate(s)? The District of Columbia sales tax rate can vary depending on the service or item subject to sales tax. [...] General Sale or Medical Marijuana - Tax Rate: 6%"
+   },
+   {
+    "url": "https://otr.cfo.dc.gov/page/taxable-and-non-taxable-services",
+    "quote": "Generally, the tax rate on the gross receipts from sales of or charges for tangible personal property and services shall be 6.0%, except for certain enumerated services specified under the DC Code, until September 30, 2027 and then 7.0% beginning October 1, 2027."
+   },
+   {
+    "url": "https://code.dccouncil.gov/us/dc/council/acts/26-416",
+    "quote": "The lead-in language of section 47-2002(a) is amended by striking the phrase \"shall be 6.0% before October 1, 2026, and 7.0% beginning on October 1, 2026,\" and inserting the phrase \"shall be 6.0% before October 1, 2027, and 7.0% beginning on October 1, 2027,\" in its place."
+   }
+  ],
+  "note": "One rate across the District: the statute sets a single general rate and names no county, city or district add-on. OTR's rates page (otr.cfo.dc.gov/page/dc-tax-rates) returned HTTP 403 and was not read.",
+  "confidence": "high"
+ },
+ "public_wage": {
+  "county": "District of Columbia (Washington, D.C.)",
+  "basis": "Davis-Bacon",
+  "classification": "CARPENTER: INCLUDES DRYWALL HANGING, FORM WORK, AND SOFT FLOOR LAYING-CARPET",
+  "basic_hourly": 34.41,
+  "fringe": 14.33,
+  "determination": "DC20260002, modification 3 (Building)",
+  "date": "2026-05-18",
+  "rate_id": "CARP0197-011 05/01/2024 (union rate)",
+  "url": "https://sam.gov/wage-determination/DC20260002/3",
+  "api_url": "https://sam.gov/api/prod/wdol/v1/wd/DC20260002/3",
+  "quote": "General Decision Number: DC20260002 05/18/2026. State: District of Columbia. Construction Types: Building. Counties: District of Columbia Counties of Washington, D.C. [...] CARP0197-011 05/01/2024 [...] CARPENTER: INCLUDES DRYWALL HANGING, FORM WORK, AND SOFT FLOOR LAYING-CARPET............................$ 34.41 14.33",
+  "city_rule": null,
+  "city_rule_note": "Not looked for (District living wage, First Source hiring and project labor agreement rules were not researched).",
+  "note": "Modification 3 is the latest: the sam.gov API returns 'active: true' for it and 404 for modification 4. The carpenter rate identifier is dated May 1, 2024, so a newer union rate may appear in a later modification.",
+  "confidence": "high"
+ },
+ "contractor": {
+  "quote": "I am a sub-contractor and am only here for one contract. Do I need to get a Basic Business License (BBL)? Yes, you are required to obtain a Basic Business License (BBL) (i.e., General Contractor/Construction Manager, Home Improvement Contractor or Home Improvement Salesperson); the licensure of the contractor for whom you are working is not valid for your contracting business. To learn which category of licensure is required, please contact the Business Licensing Division.",
+  "url": "https://dlcp.dc.gov/page/business-licensing-faqs",
+  "category_quote": "Contractor and Construction Services. Services that involve the planning, acquiring, building, equipping, altering, repairing, improving, or demolishing of any structure or appurtenance. Business Activity: General Contractor (A, B, C, G & H)/Construction Manager; Home Improvement Contractor. Requirements, General Contractor (A, B, C, G, and H)/Construction Manager: Certificate of Liability Insurance; Certificate of Occupancy/Home Occupation Permit; Contract; Corporate Registration (if applicable); Tax Registration & Clean Hands Certificate.",
+  "category_url": "https://dlcp.dc.gov/page/contractor-and-construction-services",
+  "insurance_quote": "applicants for the General Contractor/Construction Manager license are required to provide a Certificate of Insurance issued by an insurer authorized to insure in the District with a credit rating of B+ or higher by A.M Best Company, evidencing commercial general liability per 17 D.C. Municipal Regulation § 3902.",
+  "insurance_url": "https://dlcp.dc.gov/page/license-types-requiring-insurance-1",
+  "office": "DLCP Business Licensing Division",
+  "phone": "(202) 671-4500",
+  "note": "Matches research/state-licensing/states.json (status license_required, law_verified false). DLCP doesn't say which category a commercial partition installer falls under, or what the classes A, B, C, G and H mean. DOB's permit page adds: 'Only licensed DC contractors for the specific trade may apply for these [trade] permits.'",
+  "confidence": "medium"
+ },
+ "page": {
+  "meta": "Commercial bathroom partitions delivered to Washington, DC job sites. Price your restroom and see the District's stall counts, permit and license rules.",
+  "lead": "Commercial bathroom partitions for Washington, DC offices, schools, hotels and museums, shipped by freight to your job site.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use, and a room with six or more stalls and urinals also needs a narrower stall with grab bars on both sides. Federal law and the District's own building rules set the sizes, and the DC Department of Buildings applies them when it reviews permit plans.",
+  "fire_bullet": "- **Fire safety:** the District's building rules require solid plastic (HDPE) partitions to pass a room-corner fire test. Ask for the fire-rated version.",
+  "stall_bullet": "- **How many stalls:** the District's building rules set the number of toilets and urinals by how many people use the building. The table below shows what that means.",
+  "state_extra_bullet": "- **District extras:** the District's rules add an 18-inch vertical grab bar beside the toilet in accessible stalls, which the federal rules don't require, and set the narrower stall at 36 inches wide. A restaurant, store or other public venue that needs six or more toilets in total must also have a one-person family restroom.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** in Washington, DC a one-person public restroom must have a gender-neutral sign, such as \"Restroom\". A building may provide one-person restrooms open to everyone in place of separate men's and women's rooms. Rooms with several stalls are signed for men or women, and the District's building rules don't describe a shared all-gender room with stalls, so ask the DC Department of Buildings before planning one.",
+  "permit_bullet": "- **Permits:** the DC Department of Buildings requires a permit for interior alterations. Its list of work that needs no permit covers tiling, carpeting, cabinets, countertops and similar finish work, and movable partitions no taller than 5 feet 9 inches. It doesn't name toilet partitions. Ask the Department of Buildings whether your replacement needs one. You don't need a permit to buy partitions.",
+  "confirm_office": "the DC Department of Buildings",
+  "stalls_intro": "Washington, DC counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women. Every toilet needs a stall, and every urinal needs a screen on each side. Urinals are optional: in a men's room they may replace up to half of the toilets in an office and up to two thirds in a restaurant or school, so the table shows the men's side as stalls.",
+  "capacity": "To find your building's capacity, the District's building rules count an office at one person per 100 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "install_rule": "A contractor working in Washington, DC needs a DC Basic Business License in a contractor category, such as General Contractor/Construction Manager, with liability insurance on file. A subcontractor in the District for a single job needs one too. It is a business license, not a trade exam, so ask the Business Licensing Division of the Department of Licensing and Consumer Protection which category fits partition installation. You don't need a permit to buy partitions.",
+  "faq_install_extra": "A contractor working in Washington, DC needs a DC Basic Business License in a contractor category.",
+  "public_jobs_bullet": "- **Public jobs:** on District government construction contracts over $2,000, schools and city buildings included, federal law requires at least the wage the U.S. Department of Labor sets for Washington, DC. For a carpenter on building work that is $34.41 an hour plus $14.33 in benefits.",
+  "sales_tax_bullet": "- **Sales tax:** 6% in Washington, DC. The District has one rate, with no county or city tax on top. The rate is set to rise to 7% on October 1, 2027.",
+  "tax_install_bullet": "- **Tax on installation:** in Washington, DC, installation labor is left out of the taxed price when it is listed separately on the invoice. Minor repair and maintenance work on a building is taxed as a service, but work done as part of construction or major repairs is not. A contractor who supplies materials that become part of the building pays the tax when buying them.",
+  "buyers_extra": "- **Hotels, museums and universities:** finishes that match the building in visitor restrooms, HDPE or phenolic where crowds are hard on stalls.",
+  "sources": [
+   "- Work that needs a permit in Washington, DC and work that doesn't: 2017 District of Columbia Building Code (12-A DCMR), Sections 105.1 and 105.2, in [DOB's integrated code, Part 1](https://dob.dc.gov/sites/default/files/dc/sites/dob/publication/attachments/2017%20District%20of%20Columbia%20Building%20Code_Part%201.pdf), and DC Department of Buildings, [How to Get a Permit](https://dob.dc.gov/page/get-permit). Checked 2026-11-24.",
+   "- Contractor licenses: DC Department of Licensing and Consumer Protection, [Business Licensing FAQs](https://dlcp.dc.gov/page/business-licensing-faqs) (subcontractors need their own Basic Business License), [Contractor and Construction Services](https://dlcp.dc.gov/page/contractor-and-construction-services) and [License Types Requiring Insurance](https://dlcp.dc.gov/page/license-types-requiring-insurance-1) (17 DCMR 3902). Checked 2026-11-24.",
+   "- Carpenter rate on District government building work: [federal wage determination DC20260002, modification 3, May 18, 2026](https://sam.gov/wage-determination/DC20260002/3) (Building, Washington, D.C.). Checked 2026-11-24.",
+   "- Sales tax rate and the change on October 1, 2027: [D.C. Code 47-2002(a)](https://code.dccouncil.gov/us/dc/council/code/sections/47-2002), as amended by the [Fiscal Year 2027 Budget Support Emergency Act of 2026 (D.C. Act 26-416)](https://code.dccouncil.gov/us/dc/council/acts/26-416), and DC Office of Tax and Revenue, [Taxable and Non-Taxable Services](https://otr.cfo.dc.gov/page/taxable-and-non-taxable-services). Checked 2026-11-24."
+  ],
+  "official_names": "- The rules by their official names: 2010 ADA Standards for Accessible Design; ICC A117.1-2009 as referenced by Chapter 11 of the 2017 District of Columbia Building Code; 2017 District of Columbia Building Code (2015 International Building Code as amended by 12-A DCMR), in force since May 29, 2020, with Section 105.2 for work exempted from permit; 2017 District of Columbia Plumbing Code (2015 International Plumbing Code as amended by 12-F DCMR); 4 DCMR 802 for restroom signs; NFPA 286 for HDPE.",
+  "notes": [
+   "To confirm by phone before launch: whether replacing or adding anchored toilet partitions in an existing commercial restroom needs a DOB permit, and whether DOB treats them as 'movable partitions not over 5 feet 9 inches' (DC Department of Buildings, (202) 671-3500).",
+   "The permit list was read in DOB's integrated PDF, which doesn't show amendments after May 29, 2020; DOB's current 'How to Get a Permit' page repeats the same list. Read 12-A DCMR 105.2 on dcregs.dc.gov in a browser.",
+   "In historic districts DOB's page says the no-permit list doesn't apply as written; the code limits that to listed exterior items. The page text leaves this out: check with DOB for a building in a historic district.",
+   "DOB is rewriting the construction codes and estimates final codes in late 2027 (first proposed rules due fall 2026). Nothing is adopted, so the page doesn't mention it: recheck every figure when the new codes are published.",
+   "Sales tax rises to 7% on October 1, 2027 (D.C. Code 47-2002(a)); the date was already moved once from October 1, 2026, so recheck in summer 2027 and update the bullet.",
+   "DLCP doesn't say which Basic Business License category covers a commercial partition installer or what the General Contractor classes A, B, C, G and H mean: ask the Business Licensing Division, (202) 671-4500.",
+   "Federal buildings in Washington follow federal standards, not the District's codes, and federal contracts carry their own wage rules: not researched, so the page doesn't say it.",
+   "The carpenter rate in determination DC20260002 is dated May 1, 2024: check sam.gov for a newer modification before launch."
+  ]
+ },
+ "sources_read": [
+  {
+   "url": "https://dob.dc.gov/page/dc-construction-codes",
+   "official": true
+  },
+  {
+   "url": "https://dob.dc.gov/page/construction-code-development",
+   "official": true
+  },
+  {
+   "url": "https://dob.dc.gov/sites/default/files/dc/sites/dob/publication/attachments/2017%20District%20of%20Columbia%20Building%20Code_Part%201.pdf",
+   "official": true
+  },
+  {
+   "url": "https://dob.dc.gov/page/get-permit",
+   "official": true
+  },
+  {
+   "url": "https://dob.dc.gov/instantpermits",
+   "official": true
+  },
+  {
+   "url": "https://dob.dc.gov/page/overview-permitting-process",
+   "official": true
+  },
+  {
+   "url": "https://dob.dc.gov/",
+   "official": true
+  },
+  {
+   "url": "https://dlcp.dc.gov/page/business-licensing-faqs",
+   "official": true
+  },
+  {
+   "url": "https://dlcp.dc.gov/page/contractor-and-construction-services",
+   "official": true
+  },
+  {
+   "url": "https://dlcp.dc.gov/page/license-types-requiring-insurance-1",
+   "official": true
+  },
+  {
+   "url": "https://sam.gov/api/prod/wdol/v1/wd/DC20260002/3",
+   "official": true
+  },
+  {
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/47-2002",
+   "official": true
+  },
+  {
+   "url": "https://code.dccouncil.gov/us/dc/council/acts/26-416",
+   "official": true
+  },
+  {
+   "url": "https://code.dccouncil.gov/us/dc/council/laws/22-168",
+   "official": true
+  },
+  {
+   "url": "https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs",
+   "official": true
+  },
+  {
+   "url": "https://otr.cfo.dc.gov/page/taxable-and-non-taxable-services",
+   "official": true
+  }
+ ],
+ "not_read": [
+  "https://otr.cfo.dc.gov/page/dc-tax-rates (403)",
+  "https://dob.dc.gov/service/get-building-permit-what-you-need-know (403)",
+  "dcregs.dc.gov, Title 12 DCMR official text (needs a browser)"
+ ],
+ "to_confirm": [
+  "Whether replacing or adding anchored toilet partitions in an existing commercial restroom needs a DOB permit: DC Department of Buildings, (202) 671-3500.",
+  "12-A DCMR 105.2 as amended after May 29, 2020: read on dcregs.dc.gov in a browser.",
+  "Which Basic Business License category a commercial partition installer needs and the meaning of classes A, B, C, G and H: DLCP Business Licensing Division, (202) 671-4500.",
+  "The date from which the 6% rate applied (D.C. Law 22-168) was not read; the rate itself is confirmed by the statute and OTR.",
+  "District living wage, First Source and project labor agreement rules on District contracts: not researched.",
+  "New construction codes: DOB estimates late 2027; no edition or date adopted."
+ ]
+}

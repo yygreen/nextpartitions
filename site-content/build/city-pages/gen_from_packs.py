@@ -92,7 +92,7 @@ def page(slug):
     office = C['confirm_office']
     rules = [g('access_bullet'), g('fire_bullet'), C['stall_bullet'], g('code_change_bullet'), g('state_extra_bullet')] + list(C.get('extra_rule_bullets') or []) + [g('restroom_bullet'), C['permit_bullet']]
     money = [wb, C['public_jobs_bullet'], C['sales_tax_bullet'], g('tax_install_bullet'), (g('tax_ship_bullet') or '').replace('{city}', city)]
-    near = [c for c in b['cities'] if c != city and c != b['city']]
+    near = [c for c in b['cities'] if c != city and c != b['city'] and not city.startswith(c)]
     near_s = (', '.join(near[:-1]) + ' and ' + near[-1]) if len(near) > 1 else (near[0] if near else '')
     lr = LOCAL.get(slug, {}); lic = LIC.get(st, {})
     sources = ['- Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.',
