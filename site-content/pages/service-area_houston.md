@@ -1,7 +1,7 @@
 ---
 url: /service-area/houston
 title: Bathroom Partitions in Houston, TX | Next Partitions
-meta: Commercial bathroom partitions delivered to Houston job sites. Price your restroom in five questions, pick a material for Gulf Coast humidity and see the codes that apply.
+meta: Commercial bathroom partitions delivered to Houston job sites. Price your restroom, pick a material for Gulf Coast humidity and see the codes that apply.
 h1: Bathroom Partitions in Houston
 city: Houston
 state: Texas
