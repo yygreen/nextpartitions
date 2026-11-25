@@ -31,17 +31,6 @@ Shreveport gets about 51 inches of rain a year, on roughly 99 days, and relative
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Shreveport job sites
-
-Toilet partitions for Shreveport ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Shreveport address.
-
 ## The rules a Shreveport restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law sets the sizes, and Louisiana enforces the same federal rules: the State Fire Marshal reviews plans for commercial buildings that are built, renovated or repaired. Ask its Plan Review Division whether your project needs a review.
@@ -99,38 +88,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Casinos and hotels:** finishes that match the property in guest-facing restrooms, HDPE or phenolic where crowds and nightly washdown are hard on stalls.
 
-## Nearby cities we deliver to
+## Delivery to Shreveport and nearby cities
 
-Bossier City and every other ZIP code in the Shreveport area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Shreveport ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Bossier City and every other ZIP code in the Shreveport area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Shreveport?
-Yes. Partitions ship by freight carrier to Shreveport and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Shreveport?
+Shreveport requires a permit to alter or remodel a building. Its permit guide lists work that needs none, including painting, papering, tiling, carpeting, cabinets, counter tops and similar finish work. The list doesn't name toilet partitions, so ask Shreveport Permits and Inspections (318-673-6100) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Shreveport?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. On a commercial project of $50,000 or more, the contractor needs a Louisiana state license. Our directory lists [partition installers in Shreveport](/installers/louisiana/shreveport), and you can ask for installation prices with your quote.
+### How many stalls does a Shreveport restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with Shreveport Permits and Inspections.
+
+### Who can install toilet partitions in Shreveport?
+A contractor you hire. We supply the partitions and the shop drawings. On a commercial project of $50,000 or more, the contractor needs a Louisiana state license. Our directory lists [partition installers in Shreveport](/installers/louisiana/shreveport), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Shreveport's humidity?
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Shreveport restroom have to meet?
-Federal and Louisiana wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with Shreveport Permits and Inspections.
-
-### How do I get a price for my Shreveport restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Shreveport?
+9.6% in Shreveport: 5% state, 2.75% city, 1.5% Caddo Parish School Board and 0.35% parish law enforcement. Addresses in the city's Mall Economic Development District pay 1% more. Partitions shipped to Shreveport are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Shreveport climate: NOAA NCEI Comparative Climatic Data, station Shreveport, LA (WBAN 13957): [annual precipitation, 51.43 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 87% in the morning and 58% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 99 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Shreveport enforces and the office that enforces them: City of Shreveport, [Building Codes](https://www.shreveportla.gov/475/Building-Codes) (2021 International Building Code and 2021 International Plumbing Code with the Louisiana State Uniform Construction Code amendments; the page gives no effective date) and [Permits & Inspections](https://www.shreveportla.gov/473/Permits-Inspections). Checked 2026-11-24.

@@ -31,17 +31,6 @@ Chattanooga gets about 55 inches of rain a year, on roughly 121 days, and relati
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Chattanooga job sites
-
-Toilet partitions for Chattanooga ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Chattanooga address.
-
 ## The rules a Chattanooga restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Tennessee law uses the federal access standards as its own for public buildings. Chattanooga's building rules also apply a national accessibility standard, in its 2009 edition, and the plans are approved by the office that reviews the project.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Visitor attractions, hotels and event venues:** HDPE or phenolic for restrooms that take big crowds and frequent cleaning.
 
-## Nearby cities we deliver to
+## Delivery to Chattanooga and nearby cities
 
-Cleveland and Dalton, and every other ZIP code in the Chattanooga area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Chattanooga ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Cleveland and Dalton, and every other ZIP code in the Chattanooga area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Chattanooga?
-Yes. Partitions ship by freight carrier to Chattanooga and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Chattanooga?
+Chattanooga requires a commercial building permit to alter or repair a commercial building. Its list of work that needs no permit includes painting, tiling, cabinets, countertops and similar finish work, and movable partitions no taller than 5 feet 9 inches. It doesn't name toilet partitions. Ask the Land Development Office (423-643-5894) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Chattanooga?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. Chattanooga's city code sets no general contractor license of its own, and Tennessee requires a state contractor license for commercial projects of $25,000 or more. Our directory lists [partition installers in Chattanooga](/installers/tennessee/chattanooga), and you can ask for installation prices with your quote.
+### How many stalls does a Chattanooga restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with the Chattanooga Land Development Office.
+
+### Who can install toilet partitions in Chattanooga?
+A contractor you hire. We supply the partitions and the shop drawings. Chattanooga's city code sets no general contractor license of its own, and Tennessee requires a state contractor license for commercial projects of $25,000 or more. Our directory lists [partition installers in Chattanooga](/installers/tennessee/chattanooga), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Chattanooga's humidity?
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Chattanooga restroom have to meet?
-Federal and Tennessee wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the Chattanooga Land Development Office.
-
-### How do I get a price for my Chattanooga restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Chattanooga?
+9.25% in Chattanooga: 7% state and 2.25% Hamilton County. The 2.25% local part applies only to the first $1,600 of the price of each single item, and the state adds 2.75% on the part of an item's price between $1,600 and $3,200. Partitions shipped to Chattanooga are taxable, freight included when the seller bills it. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Chattanooga climate: NOAA NCEI Comparative Climatic Data, station Chattanooga, TN (WBAN 13882): [annual precipitation, 55.0 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 85% in the morning and 55% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 121 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Chattanooga building and plumbing codes: [City of Chattanooga, Building Codes (Adopted Codes)](https://chattanooga.gov/stay-informed/city-codes), [Ordinance No. 13921](https://chattanooga.gov/sites/default/files/resources/13921-202018-20Building-20Code-20Adoption-20v3.pdf) (amending Chattanooga City Code, Part II, Chapter 10 to adopt the International Building Code, 2018 Edition, with city amendments; passed December 6, 2022, in effect on passage) and [Ordinance No. 13924](https://chattanooga.gov/sites/default/files/resources/13924-202018-20Plumbing-20Code-20Adoption-20v4.pdf) (amending Chapter 27 to adopt the 2018 International Plumbing Code with city amendments; passed December 6, 2022); latest amendment, [Ordinance No. 14373](https://chattanooga.gov/sites/default/files/resources/14373-2026.05.22-Building-Code-Amendment-Section-423-Storm-Shelters-PAN-rev-05212026-v2.pdf) (June 16, 2026, deleting Section 423). Checked 2026-11-24.

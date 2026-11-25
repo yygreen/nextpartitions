@@ -31,17 +31,6 @@ The nearest long-term weather station, at Tampa, records about 49 inches of rain
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to St. Petersburg job sites
-
-Toilet partitions for St. Petersburg ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your St. Petersburg address.
-
 ## The rules a St. Petersburg restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Florida's own access rules set the sizes.
@@ -99,38 +88,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Parks, marinas and beach facilities:** HDPE or phenolic for restrooms that are open to outside air and hosed down.
 
-## Nearby cities we deliver to
+## Delivery to St. Petersburg and nearby cities
 
-Tampa, Clearwater, Largo, Sarasota, Bradenton, Pinellas Park, Dunedin and Temple Terrace, and every other ZIP code in the St. Petersburg area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for St. Petersburg ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Tampa, Clearwater, Largo, Sarasota, Bradenton, Pinellas Park, Dunedin and Temple Terrace, and every other ZIP code in the St. Petersburg area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to St. Petersburg?
-Yes. Partitions ship by freight carrier to St. Petersburg and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in St. Petersburg?
+St. Petersburg's list of work that needs no building permit covers movable cases, counters and partitions up to 10 feet high, and cabinetry, counter tops, painting and tiling. It doesn't name toilet partitions or say whether partitions anchored to the building count as movable. Ask St. Petersburg Construction Services and Permitting whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in St. Petersburg?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor who pulls a permit in St. Petersburg registers a Florida or Pinellas County license with the city first. Our directory lists [partition installers in St. Petersburg](/installers/florida/st-petersburg), and you can ask for installation prices with your quote.
+### How many stalls does a St. Petersburg restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with St. Petersburg Construction Services and Permitting.
+
+### Who can install toilet partitions in St. Petersburg?
+A contractor you hire. We supply the partitions and the shop drawings. A contractor who pulls a permit in St. Petersburg registers a Florida or Pinellas County license with the city first. Our directory lists [partition installers in St. Petersburg](/installers/florida/st-petersburg), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for St. Petersburg's humidity?
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a St. Petersburg restroom have to meet?
-Federal and Florida wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with St. Petersburg Construction Services and Permitting.
-
-### How do I get a price for my St. Petersburg restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to St. Petersburg?
+7% in St. Petersburg: 6% state and 1% Pinellas County. The county's 1% applies only to the first $5,000 of each item. Partitions shipped to St. Petersburg are taxable. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - St. Petersburg climate: NOAA NCEI Comparative Climatic Data, station Tampa, FL (WBAN 12842): [annual precipitation, 49.48 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 86% in the morning and 58% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 107 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes St. Petersburg enforces: [City of St. Petersburg Construction Services & Permitting, Current Building Codes Adopted by the City of St. Petersburg (effective December 31, 2023)](https://www.stpete.org/Business/Building%20Forms%20&%20Applications/Current_Codes_Adopted.pdf), listing the 8th Edition (2023) Florida Building Code Building, Plumbing, Existing Building and Accessibility volumes, linked from the city's [Building Permits page](https://www.stpete.org/business/building_permitting/building_permits.php). Checked 2026-11-24.

@@ -31,17 +31,6 @@ Omaha gets about 32 inches of rain a year, on roughly 100 days, and relative hum
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Omaha job sites
-
-Toilet partitions for Omaha ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Omaha address.
-
 ## The rules an Omaha restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use, and a room with six or more toilets and urinals also needs a narrower stall with grab bars on both sides. Federal law sets the sizes, and Nebraska's own access rules adopt the federal ones. In Omaha the city checks plans for commercial work against them, and a building can't get its occupancy permit until it complies.
@@ -99,38 +88,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hospitals and medical campuses:** stainless steel or phenolic where restrooms are disinfected often.
 
-## Nearby cities we deliver to
+## Delivery to Omaha and nearby cities
 
-Bellevue, Council Bluffs and Fremont, and every other ZIP code in the Omaha area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Omaha ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Bellevue, Council Bluffs and Fremont, and every other ZIP code in the Omaha area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Omaha?
-Yes. Partitions ship by freight carrier to Omaha and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Omaha?
+Ask Omaha Permits and Inspections (402-444-5350) whether replacing or adding partitions in an existing restroom needs a building permit. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Omaha?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. In Nebraska that contractor registers with the state Department of Labor, and you check Omaha's own licensing rule with Omaha Permits and Inspections. Our directory lists [partition installers in Omaha](/installers/nebraska/omaha), and you can ask for installation prices with your quote.
+### How many stalls does an Omaha restroom need?
+For a building that holds 100 people, an office needs at least 4 women's stalls, 1 men's stall and 1 urinal, a restaurant needs at least 2 women's and 1 men's stall and an elementary school needs at least 2 women's stalls and 2 men's stalls or urinals. The table above covers other sizes. Confirm the number for your building with Omaha Permits and Inspections.
+
+### Who can install toilet partitions in Omaha?
+A contractor you hire. We supply the partitions and the shop drawings. In Nebraska that contractor registers with the state Department of Labor, and you check Omaha's own licensing rule with Omaha Permits and Inspections. Our directory lists [partition installers in Omaha](/installers/nebraska/omaha), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Omaha's climate?
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does an Omaha restroom have to meet?
-Federal and Nebraska wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with Omaha Permits and Inspections.
-
-### How do I get a price for my Omaha restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Omaha?
+7% in Omaha: 5.5% state and 1.5% city. Partitions shipped to Omaha are taxable, and so is freight charged by the seller. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Omaha climate: NOAA NCEI Comparative Climatic Data, station Omaha, NE (WBAN 14942): [annual precipitation, 31.86 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 81% in the morning and 59% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 100 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Omaha enforces: [Omaha Building Code 2018](https://up.codes/viewer/omaha/ibc-2018) (2018 International Building Code with Omaha amendments, Omaha Municipal Code Chapter 43; its Chapter 29 reads "Plumbing systems shall be installed in accordance with Chapter 49 of the Omaha Municipal Code") and the [Omaha Plumbing Code](https://up.codes/viewer/omaha/om-plumbing-code) (Omaha Municipal Code Chapter 49, Ordinance No. 40524 of October 20, 2015, amended by Ordinance No. 42654 of August 13, 2021), both read on UpCodes, a secondary copy; list of Omaha codes and dates at [UpCodes, Omaha Building Codes](https://up.codes/codes/omaha). Checked 2026-11-24.

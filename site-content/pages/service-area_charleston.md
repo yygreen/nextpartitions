@@ -31,17 +31,6 @@ Charleston gets about 44 inches of rain a year, on roughly 107 days. In most Cha
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Charleston job sites
-
-Toilet partitions for Charleston ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Charleston address.
-
 ## The rules a Charleston restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and South Carolina's own access standard set the sizes. There is no separate state registration: the local building department reviews the plans, and the state reviews plans for public schools and state buildings.
@@ -99,38 +88,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hotels, hospitals and port buildings:** phenolic or stainless steel where restrooms are cleaned many times a day, HDPE or phenolic where the room is open to outside air.
 
-## Nearby cities we deliver to
+## Delivery to Charleston and nearby cities
 
-North Charleston, Mount Pleasant, Summerville and Goose Creek, and every other ZIP code in the Charleston area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Charleston ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to North Charleston, Mount Pleasant, Summerville and Goose Creek, and every other ZIP code in the Charleston area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Charleston?
-Yes. Partitions ship by freight carrier to Charleston and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Charleston?
+South Carolina leaves permit procedures to each city. Charleston's commercial alteration permit covers interior renovations, including ones with no floor plan changes. In the city's flood zones (AE and VE on the flood map), the City says all work on an existing building needs a permit, non-structural interior renovations included. The City's permit pages don't name toilet partitions, so ask the City of Charleston Permit Center (843-577-5550) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Charleston?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. On a permitted job in Charleston the contractor needs a City business license and a South Carolina contractor license. Our directory lists [partition installers in Charleston](/installers/south-carolina/charleston), and you can ask for installation prices with your quote.
+### How many stalls does a Charleston restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with the City of Charleston Permit Center.
+
+### Who can install toilet partitions in Charleston?
+A contractor you hire. We supply the partitions and the shop drawings. On a permitted job in Charleston the contractor needs a City business license and a South Carolina contractor license. Our directory lists [partition installers in Charleston](/installers/south-carolina/charleston), and you can ask for installation prices with your quote.
 
 ### Which partition material is best in Charleston?
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Charleston restroom have to meet?
-Federal and South Carolina wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the City of Charleston Permit Center.
-
-### How do I get a price for my Charleston restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Charleston?
+9% in Charleston: 6% state plus 3% in Charleston County taxes, which are 1% local option, 1% for school buildings and the rest for transportation. The part of the city in Berkeley County is also at 9%. Partitions shipped to Charleston are taxable. Freight is taxed when the seller delivers to your site and isn't taxed when the goods ship by common carrier with the sale made at the shipping point. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Charleston climate: NOAA NCEI Comparative Climatic Data, station Charleston, SC (WBAN 13782): [annual precipitation, 44.26 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [days with 0.01 in or more of precipitation, 107 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Charleston enforces and the January 1, 2027 change: City of Charleston, [Building Inspections](https://www.charleston-sc.gov/324/Building-Inspections) (Current Codes: 2021 South Carolina Building Code, 2021 South Carolina Plumbing Code, 2021 International Existing Building Code, 2017 ICC A117.1), [Notice to Construction Industry](https://www.charleston-sc.gov/1466/Notice-to-Construction-Industry) and [Permit Center](https://www.charleston-sc.gov/856/Permit-Center). Checked 2026-11-24.

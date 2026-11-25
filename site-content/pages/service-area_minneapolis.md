@@ -31,17 +31,6 @@ Minneapolis gets about 32 inches of rain a year, on roughly 115 days, and relati
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Minneapolis job sites
-
-Toilet partitions for Minneapolis ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Minneapolis address.
-
 ## The rules a Minneapolis restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Minnesota's own access rules set the sizes. Minnesota has no separate state sign-off for access: your local building department checks it with the permit, and the state reviews the plans itself for state-funded buildings, public schools and state-licensed buildings such as hospitals.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Downtown office towers and skyway-level tenants:** one material and finish repeated floor after floor, with ceiling-hung or overhead braced stalls for restrooms that see heavy weekday traffic.
 
-## Nearby cities we deliver to
+## Delivery to Minneapolis and nearby cities
 
-St. Paul, Bloomington, Brooklyn Park, Woodbury, Plymouth, Lakeville, Blaine and Maple Grove, and every other ZIP code in the Minneapolis area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Minneapolis ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to St. Paul, Bloomington, Brooklyn Park, Woodbury, Plymouth, Lakeville, Blaine and Maple Grove, and every other ZIP code in the Minneapolis area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Minneapolis?
-Yes. Partitions ship by freight carrier to Minneapolis and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Minneapolis?
+Minneapolis says almost all projects need a building permit before work starts. The work that needs none is listed in the state building rules, which the city points to. That list includes "painting, papering, tiling, carpeting, cabinets, countertops, and similar finish work" and "movable cases, counters, and partitions not over five feet, nine inches" in height. It doesn't name toilet partitions, and neither do the city's own examples of exempt interior work. Ask Minneapolis Construction Code Services (612-673-3000) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Minneapolis?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor doing commercial work in Minnesota registers with the state Department of Labor and Industry. Our directory lists [partition installers in Minneapolis](/installers/minnesota/minneapolis), and you can ask for installation prices with your quote.
+### How many stalls does a Minneapolis restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with Minneapolis Construction Code Services.
+
+### Who can install toilet partitions in Minneapolis?
+A contractor you hire. We supply the partitions and the shop drawings. A contractor doing commercial work in Minnesota registers with the state Department of Labor and Industry. Our directory lists [partition installers in Minneapolis](/installers/minnesota/minneapolis), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for the Minneapolis climate?
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Minneapolis restroom have to meet?
-Federal and Minnesota wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with Minneapolis Construction Code Services.
-
-### How do I get a price for my Minneapolis restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Minneapolis?
+9.025% in Minneapolis: 6.875% state, 0.5% city, 0.15% Hennepin County, 0.5% county transit and 1% in two metro area taxes (0.75% for transportation and 0.25% for housing). Partitions shipped to Minneapolis are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it to the state as use tax at the same rate.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Minneapolis climate: NOAA NCEI Comparative Climatic Data, station Minneapolis-St.Paul, MN (WBAN 14922): [annual precipitation, 31.62 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 79% in the morning and 59% in the afternoon, 1945–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 115 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes enforced in Minneapolis: City of Minneapolis, [Construction Code Services](https://www.minneapolismn.gov/government/departments/cped/development-services/construction-code-services/) and [Building code plan review](https://www.minneapolismn.gov/business-services/licenses-permits-inspections/construction-permits/building-safety/plan-review/), which lists the 2020 Minnesota State Building Code; editions and dates from the Minnesota Department of Labor and Industry, [2020 Minnesota State Building Codes](https://www.dli.mn.gov/business/codes-and-laws/2020-minnesota-state-building-codes), the [Plumbing Board](https://www.dli.mn.gov/about-department/boards-and-councils/plumbing-board) page and the [2020 Minnesota Plumbing Code fact sheet](https://www.dli.mn.gov/sites/default/files/pdf/fs-2020-plumbing-code.pdf). The adopting ordinance (Minneapolis Code of Ordinances, Title 5) was not read. Checked 2026-11-24.

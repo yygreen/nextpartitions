@@ -31,17 +31,6 @@ Nashville gets about 51 inches of rain a year, on roughly 121 days, and relative
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Nashville job sites
-
-Toilet partitions for Nashville ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Nashville address.
-
 ## The rules a Nashville restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Tennessee law uses the federal access standards as its own for public buildings. Metro Nashville's building rules also apply a national accessibility standard, in its 2017 edition, and the plans are approved by the office that reviews the project.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Music venues, honky-tonks and event halls:** HDPE or phenolic for restrooms that take big crowds and frequent cleaning.
 
-## Nearby cities we deliver to
+## Delivery to Nashville and nearby cities
 
-Murfreesboro, Franklin, Hendersonville, Smyrna, Gallatin, Lebanon, Brentwood and Mount Juliet, and every other ZIP code in the Nashville area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Nashville ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Murfreesboro, Franklin, Hendersonville, Smyrna, Gallatin, Lebanon, Brentwood and Mount Juliet, and every other ZIP code in the Nashville area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Nashville?
-Yes. Partitions ship by freight carrier to Nashville and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Nashville?
+Metro Nashville requires a commercial renovation permit for renovation or maintenance work in an existing business. Its list of that work includes doors and walls and doesn't name toilet partitions. Normal maintenance repairs, such as painting and floor finishing, may be made without a permit if the building official approves. Ask Metro Codes and Building Safety (615-862-6500) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Nashville?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor who takes out a Metro Nashville commercial permit needs a Tennessee license, a permit bond and a Metro business license. Our directory lists [partition installers in Nashville](/installers/tennessee/nashville), and you can ask for installation prices with your quote.
+### How many stalls does a Nashville restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with Metro Codes and Building Safety.
+
+### Who can install toilet partitions in Nashville?
+A contractor you hire. We supply the partitions and the shop drawings. A contractor who takes out a Metro Nashville commercial permit needs a Tennessee license, a permit bond and a Metro business license. Our directory lists [partition installers in Nashville](/installers/tennessee/nashville), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Nashville's humidity?
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Nashville restroom have to meet?
-Federal and Tennessee wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with Metro Codes and Building Safety.
-
-### How do I get a price for my Nashville restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Nashville?
+9.75% in Nashville: 7% state, 2.25% Davidson County and a 0.5% transit surcharge. The 2.75% local part applies only to the first $1,600 of the price of each single item, and the state adds 2.75% on the part of an item's price between $1,600 and $3,200. Partitions shipped to Nashville are taxable, freight included when the seller bills it. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Nashville climate: NOAA NCEI Comparative Climatic Data, station Nashville, TN (WBAN 13897): [annual precipitation, 50.51 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 84% in the morning and 56% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 121 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Nashville building and plumbing codes: [Metro Nashville Codes and Building Safety, Adopted Codes for Metro Nashville](https://www.nashville.gov/departments/codes/codes-administration/adopted-codes-list), [Ordinance BL2025-898](https://nashville.legistar.com/ViewReport.ashx?M=R&N=Master&GID=787&ID=7433986&GUID=B8491A2F-6B1C-4507-A310-2058064BA422&Extra=WithText&Title=Legislation+Details+(With+Text)) (amending Title 16 of the Metropolitan Code of Laws to adopt the 2024 International Building Code, the 2017 ICC A117.1 and the 2024 International Plumbing Code with Metro amendments, approved July 16, 2025) and [Metro Adopts 2024 International Building Codes](https://www.nashville.gov/departments/codes/news/metro-adopts-2024-international-building-codes) (in effect for plans and applications submitted after July 16, 2025). Checked 2026-11-24.

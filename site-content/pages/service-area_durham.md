@@ -31,17 +31,6 @@ The nearest long-term weather station, at Raleigh, records about 46 inches of ra
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Durham job sites
-
-Toilet partitions for Durham ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Durham address.
-
 ## The rules a Durham restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. A restroom with six or more toilets and urinals combined also needs a narrower stall with grab bars on both sides. Federal law and North Carolina's building rules set the sizes, and the state rules are the same in every city.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Universities, hospitals and research labs:** one material and one hardware standard across many buildings, in finishes that stand up to frequent cleaning.
 
-## Nearby cities we deliver to
+## Delivery to Durham and nearby cities
 
-Raleigh, Cary, Apex, Chapel Hill, Wake Forest, Holly Springs, Fuquay-Varina and Garner, and every other ZIP code in the Durham area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Durham ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Raleigh, Cary, Apex, Chapel Hill, Wake Forest, Holly Springs, Fuquay-Varina and Garner, and every other ZIP code in the Durham area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Durham?
-Yes. Partitions ship by freight carrier to Durham and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Durham?
+The Durham City-County Building & Safety Department issues building permits for both the city and the county. Under North Carolina law, work in a commercial building that costs $40,000 or less needs no permit unless it involves load-bearing structure, a change to the plumbing, heating, air conditioning or electrical systems, materials the building rules don't allow, new roofing or anything the fire rules cover. The list doesn't name toilet partitions. Ask the department (919-560-4144) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Durham?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. On a project valued at $40,000 or more, the contractor needs a North Carolina general contractor license. Our directory lists [partition installers in Durham](/installers/north-carolina/durham), and you can ask for installation prices with your quote.
+### How many stalls does a Durham restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 2 women's and 2 men's stalls. The table above covers other sizes. Confirm the number for your building with the Durham City-County Building & Safety Department.
+
+### Who can install toilet partitions in Durham?
+A contractor you hire. We supply the partitions and the shop drawings. On a project valued at $40,000 or more, the contractor needs a North Carolina general contractor license. Our directory lists [partition installers in Durham](/installers/north-carolina/durham), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Durham's humidity?
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Durham restroom have to meet?
-Federal and North Carolina wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the Durham City-County Building & Safety Department.
-
-### How do I get a price for my Durham restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Durham?
+7.5% in Durham: 4.75% state, 2.25% Durham County and 0.5% transit. Partitions shipped to Durham are taxable, freight included. An out-of-state seller with more than $100,000 a year in North Carolina sales must collect the tax. If the seller doesn't collect it, the buyer owes use tax to the state at the same rate.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Durham climate: NOAA NCEI Comparative Climatic Data, station Raleigh, NC (WBAN 13722): [annual precipitation, 46.07 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 83% in the morning and 53% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 114 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes enforced in Durham: Durham Unified Development Ordinance, [Section 2.8, Durham City-County Inspections Department](https://udo.durhamnc.gov/udo/2_8_Durham%20City%20County%20Inspections.htm) (the department enforces the North Carolina State Building Code and decides local interpretation); Durham County, [City-County Building & Safety](https://dconc.gov/county-departments/departments-a-e/city-county-inspections) (the department's name, address and phone, and its enforcement of the North Carolina State Building Code for the city and the county); the State Building Code applies throughout the state: [N.C.G.S. 143-138(e)](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_143/GS_143-138.html); editions and dates from the North Carolina Office of State Fire Marshal, [Codes, current and past](https://www.ncosfm.gov/codes/codes-current-and-past). Checked 2026-11-24.

@@ -31,17 +31,6 @@ Honolulu gets about 16 inches of rain a year, on roughly 92 days, and relative h
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Honolulu job sites
-
-Toilet partitions for Honolulu ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Honolulu address.
-
 ## The rules a Honolulu restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Hawaii applies the federal access rules. With a building permit application, the owner or designer states in writing that the access rules will be met. Plans for state and county buildings, and for buildings on state or county land, also go to the state's Disability and Communication Access Board for review before construction.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hotels and resorts:** phenolic or stainless steel for lobby and restaurant restrooms, HDPE for pool and beach restrooms that stay wet.
 
-## Nearby cities we deliver to
+## Delivery to Honolulu and nearby cities
 
-Every ZIP code in the Honolulu area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Honolulu ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We deliver to every ZIP code in the Honolulu area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Honolulu?
-Yes. Partitions ship by freight carrier to Honolulu and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Honolulu?
+Honolulu requires a building permit to alter or repair a building and lists the work that needs none. The list covers like-for-like repairs for maintenance worth up to $10,000 in any 12 months, and interior remodeling that leaves rooms, walls and windows where they are, such as painting, floor covering, cabinets, countertops and replacing existing fixtures. Both apply only where no electrical, plumbing or mechanical work is involved. It also covers movable partitions no taller than 5 feet 9 inches. It doesn't name toilet partitions fixed to the floor or wall, so ask the Department of Planning and Permitting's Building Division (808-768-8232) whether your replacement needs one. Work done for a government agency needs a permit only if the agency asks for one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Honolulu?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor needs a Hawaii state license for any job over $1,500. Our directory lists [partition installers in Honolulu](/installers/hawaii/honolulu), and you can ask for installation prices with your quote.
+### How many stalls does a Honolulu restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with the Honolulu Department of Planning and Permitting.
+
+### Who can install toilet partitions in Honolulu?
+A contractor you hire. We supply the partitions and the shop drawings. A contractor needs a Hawaii state license for any job over $1,500. Our directory lists [partition installers in Honolulu](/installers/hawaii/honolulu), and you can ask for installation prices with your quote.
 
 ### Which partition material is best in Honolulu?
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Honolulu restroom have to meet?
-Federal and Hawaii wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the Honolulu Department of Planning and Permitting.
-
-### How do I get a price for my Honolulu restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Honolulu?
+Hawaii has no sales tax. Its general excise tax is charged to the business, not the buyer: 4% for the state plus 0.5% for the City and County of Honolulu, 4.5% in all. A business may pass the tax on, and in Honolulu the most it may add to an invoice is 4.712%. Partitions shipped to Honolulu are taxed in one of two ways. A seller with enough Hawaii sales (at least $100,000 or 200 sales a year) owes the general excise tax and may pass it on. If the seller isn't licensed in Hawaii, the buyer owes use tax at the same rate on the price plus shipping.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Honolulu climate: NOAA NCEI Comparative Climatic Data, station Honolulu, HI (WBAN 22521): [annual precipitation, 16.41 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 74% in the morning and 56% in the afternoon, 1949–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 92 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Honolulu enforces: City and County of Honolulu Department of Planning and Permitting, [Building Permits](https://www.honolulu.gov/dpp/permitting/building-permits-home/), "Codes Currently in Effect" (Building Code, Chapter 16: 2018 IBC with State and City amendments, 08/09/24, City Addendum #1 03/11/25; Plumbing Code, Chapter 19: 2021 UPC, interim, 03/01/24) and [Ordinances (ROH)](https://www.honolulu.gov/dpp/resources/ordinances/); [Ordinance 24-15, Relating to the Adoption of the State Building Code](https://files.amlegal.com/pdffiles/Honolulu/ORD24-015.pdf) (Revised Ordinances of Honolulu 2021, Chapter 16, Article 1). Checked 2026-11-24.

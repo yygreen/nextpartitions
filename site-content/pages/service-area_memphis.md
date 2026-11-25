@@ -31,17 +31,6 @@ Memphis gets about 55 inches of rain a year, on roughly 109 days, and relative h
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Memphis job sites
-
-Toilet partitions for Memphis ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Memphis address.
-
 ## The rules a Memphis restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Tennessee law uses the federal access standards as its own for public buildings. Memphis and Shelby County's building rules also apply a national accessibility standard, in its 2017 edition, and the plans are approved by the office that reviews the project.
@@ -99,38 +88,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Freight terminals and logistics hubs:** HDPE or stainless steel for restrooms that drivers and shift crews use around the clock.
 
-## Nearby cities we deliver to
+## Delivery to Memphis and nearby cities
 
-Southaven, Bartlett, Collierville, Olive Branch, Germantown and Horn Lake, and every other ZIP code in the Memphis area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Memphis ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Southaven, Bartlett, Collierville, Olive Branch, Germantown and Horn Lake, and every other ZIP code in the Memphis area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Memphis?
-Yes. Partitions ship by freight carrier to Memphis and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Memphis?
+Memphis and Shelby County require a permit to alter or repair a building. Their list of work that needs no permit includes painting, tiling, cabinets, counter tops and similar finish work, and movable partitions not over 5 feet 9 inches high. It doesn't name toilet partitions. Ordinary repairs need no application as long as no wall or partition is cut away. Ask Construction Enforcement (901-222-8300) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Memphis?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor who takes out a permit in Memphis registers a Tennessee license with Construction Enforcement. Our directory lists [partition installers in Memphis](/installers/tennessee/memphis), and you can ask for installation prices with your quote.
+### How many stalls does a Memphis restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with Memphis and Shelby County Construction Enforcement.
+
+### Who can install toilet partitions in Memphis?
+A contractor you hire. We supply the partitions and the shop drawings. A contractor who takes out a permit in Memphis registers a Tennessee license with Construction Enforcement. Our directory lists [partition installers in Memphis](/installers/tennessee/memphis), and you can ask for installation prices with your quote.
 
 ### Which partition material is best in Memphis?
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Memphis restroom have to meet?
-Federal and Tennessee wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with Memphis and Shelby County Construction Enforcement.
-
-### How do I get a price for my Memphis restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Memphis?
+9.75% in Memphis: 7% state and 2.75% local. The local part applies only to the first $1,600 of the price of each single item, and the state adds 2.75% on the part of an item's price between $1,600 and $3,200. Partitions shipped to Memphis are taxable, freight included when the seller bills it. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Memphis climate: NOAA NCEI Comparative Climatic Data, station Memphis, TN (WBAN 13893): [annual precipitation, 54.94 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 80% in the morning and 56% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 109 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Memphis building and plumbing codes: [Memphis and Shelby County Division of Planning and Development, Construction Enforcement](https://www.develop901.com/construction-enforcement) (Adopted Construction Codes: 2021 International Building Code and 2021 International Plumbing Code with local amendments; 2017 ICC A117.1 by reference) and [New Codes Effective January 1, 2022](https://www.develop901.com/news/new-codes-effective-january-1-2022). Adopting ordinances as placed before the Shelby County Board of Commissioners on October 6, 2021: [joint ordinance adopting the 2021 International Building Code](https://shelby.granicus.com/MetaViewer.php?view_id=4&clip_id=2024&meta_id=386407) and [joint ordinance adopting the 2021 International Plumbing Code](https://shelby.granicus.com/MetaViewer.php?view_id=4&clip_id=2024&meta_id=386422) (2021 Memphis and Shelby County Building Code and Plumbing Code, effective December 31, 2021). Checked 2026-11-24.

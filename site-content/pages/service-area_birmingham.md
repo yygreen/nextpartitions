@@ -31,17 +31,6 @@ Birmingham gets about 57 inches of rain a year, on roughly 117 days, and relativ
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Birmingham job sites
-
-Toilet partitions for Birmingham ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Birmingham address.
-
 ## The rules a Birmingham restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Alabama uses the federal access rules as its own, so one set of sizes applies. The state reviews plans for schools, hotels, movie theaters and state-funded buildings, and checks city and county owned projects for access.
@@ -99,38 +88,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hospitals, clinics and university buildings:** phenolic or stainless steel where restrooms are cleaned many times a day, with accessible stalls in every room.
 
-## Nearby cities we deliver to
+## Delivery to Birmingham and nearby cities
 
-Hoover, Vestavia Hills, Alabaster, Homewood, Trussville, Pelham and Bessemer, and every other ZIP code in the Birmingham area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Birmingham ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Hoover, Vestavia Hills, Alabaster, Homewood, Trussville, Pelham and Bessemer, and every other ZIP code in the Birmingham area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Birmingham?
-Yes. Partitions ship by freight carrier to Birmingham and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Birmingham?
+Birmingham requires a permit to alter or repair a building, and the city's permit guide says all commercial construction work needs one, whatever the size of the project. The list of work that needs no permit covers "nonfixed and movable fixtures, cases, racks, and counters" and doesn't name toilet partitions. Ordinary minor repairs may be made without a permit if the city's building official approves. Ask the Department of Planning, Engineering and Permits (205-254-2211) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Birmingham?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor on a commercial job of $100,000 or more in Alabama needs a state general contractor license. Our directory lists [partition installers in Birmingham](/installers/alabama/birmingham), and you can ask for installation prices with your quote.
+### How many stalls does a Birmingham restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with Birmingham's Department of Planning, Engineering and Permits.
+
+### Who can install toilet partitions in Birmingham?
+A contractor you hire. We supply the partitions and the shop drawings. A contractor on a commercial job of $100,000 or more in Alabama needs a state general contractor license. Our directory lists [partition installers in Birmingham](/installers/alabama/birmingham), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Birmingham's humidity?
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Birmingham restroom have to meet?
-Federal and Alabama wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with Birmingham's Department of Planning, Engineering and Permits.
-
-### How do I get a price for my Birmingham restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Birmingham?
+10% in Birmingham: 4% state, 2% Jefferson County and 4% city. Partitions shipped to Birmingham are taxable. An out-of-state seller in Alabama's simplified program collects a flat 8% in place of state and local tax. Freight by common carrier is not taxed when it is billed as a separate line. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Birmingham climate: NOAA NCEI Comparative Climatic Data, station Birmingham, AL (WBAN 13876): [annual precipitation, 56.62 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 84% in the morning and 55% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 117 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Birmingham enforces: City of Birmingham, Department of Planning, Engineering and Permits, [Building Codes](https://www.birminghamal.gov/work/building-codes) ("2024 Technical Code (effective 10/1/2024)"), the [Technical Code of the City of Birmingham, 2024](https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/migrated-files/documents/2024/07/PEPDOC_2024TechCode.pdf), Article I, Part 1 (International Building Code, International Plumbing Code, International Fire Code and International Existing Building Code, 2021 editions) and Article II (building code amendments), and the [Building Plans Review Sheet](https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-03/SubmittalforBuildingPlanReviewSheet2024_0.pdf) (applicable codes, including ICC/ANSI A117.1-2017). Checked 2026-11-24.

@@ -75,6 +75,29 @@ def tot(c):  # "3 total" / "7 or 8 total" -> "=3" / "=7-8" (one figure for the w
     m = re.fullmatch(r'\s*(\d+)(?: or (\d+))? total\s*', c)
     return c if not m else '=%s%s' % (m.group(1), '-' + m.group(2) if m.group(2) else '')
 
+def unlabel(bullet):  # "- **Permits:** text" -> "Text"
+    t = re.sub(r'^- \*\*[^*]+\*\*\s*', '', (bullet or '').strip())
+    return t[:1].upper() + t[1:]
+
+def cell_words(c):
+    c = tot(c).split(';')[0].strip()
+    pl = lambda n, w: '%s %s%s' % (n, w, '' if str(n) == '1' else 's')
+    if c.startswith('='):
+        a, _, b = c[1:].partition('-')
+        return ('%s or %s toilets in all' % (a, b)) if b else pl(a, 'toilet') + ' in all'
+    w, m = c.split('/')
+    if m.startswith('~'): return "%s and %s men's stalls or urinals" % (pl(w, "women's stall"), m[1:])
+    if '+' in m:
+        st, u = m.split('+'); return "%s, %s and %s" % (pl(w, "women's stall"), pl(st, "men's stall"), pl(u, 'urinal'))
+    return "%s women's and %s" % (w, pl(m, "men's stall"))
+
+def stall_faq(p):
+    heads = [re.sub(r'\s*\(.*\)$', '', h).strip().lower() for h in (p.get('stalls_head') or 'Office | Restaurant | School').replace('head:', '').split('|')]
+    r = p['stalls_rows']['100']
+    an = lambda w: ('an ' if w[0] in 'aeio' else 'a ') + w
+    parts = ['%s needs at least %s' % (an(h), cell_words(r[k])) for h, k in zip(heads, ('office', 'restaurant', 'school'))]
+    return 'For a building that holds 100 people, %s, %s and %s.' % tuple(parts)
+
 def stalls(p):
     lines = [p.get('stalls_head') or 'head: Office | Restaurant | School']
     if not lines[0].startswith('head:'): lines[0] = 'head: ' + lines[0]
@@ -107,8 +130,6 @@ def page(slug):
     near_s = (', '.join(near[:-1]) + ' and ' + near[-1]) if len(near) > 1 else (near[0] if near else '')
     lr = LOCAL.get(slug, {}); lic = LIC.get(st, {})
     sources = ['- Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.',
-        '- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).',
-        '- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).',
         *([csrc] if csrc else []),
         '- Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).']
     sources += list(C.get('sources') or []) + [s for s in (S.get('sources') or []) if s not in (C.get('sources') or []) and 'official names' not in s and not any(k in s for k in (C.get('skip_state_sources') or []))] + [wsrc]
@@ -120,7 +141,7 @@ def page(slug):
         'No prices and no lead times until the price list is in.',
         'Schema: BreadcrumbList, FAQPage and Service (provider Next Partitions, areaServed %s). No LocalBusiness: there is no %s office.' % (city, city),
         'Research: `research/city-pages/cities/%s.json` and `research/city-pages/states/%s.json` (2026-11-24). A lawyer reviews the rules wording before launch.' % (slug, st)] + (['No rainfall or humidity figures on this page: the nearest station in NOAA\'s published lists is in a different climate. Add them from a local NOAA normal before launch.'] if slug in NO_FIGURES else []) + [n for n in (C.get('notes') or []) if 'state pack' not in n.lower()]  # pack housekeeping isn't for Marc
-    faq_inst = 'No. We supply the partitions and the shop drawings; a contractor you hire installs them. %sOur directory lists [partition installers in %s](%s), and you can ask for installation prices with your quote.' % ((C.get('faq_install_extra').rstrip() + ' ') if C.get('faq_install_extra') else '', city, inst)
+    faq_inst = 'A contractor you hire. We supply the partitions and the shop drawings. %sOur directory lists [partition installers in %s](%s), and you can ask for installation prices with your quote.' % ((C.get('faq_install_extra').rstrip() + ' ') if C.get('faq_install_extra') else '', city, inst)
     fire = ', the fire-safety rule for solid plastic partitions' if g('fire_bullet') else ''
     t = f'''---
 url: /service-area/{slug}
@@ -154,17 +175,6 @@ date: 2026-11-24
 {cz}
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
-
-## Delivery to {city} job sites
-
-Toilet partitions for {city} ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your {city} address.
 
 ## The rules {art} {city} restroom has to meet
 
@@ -207,32 +217,30 @@ How tax applies depends on your contract, so confirm with {g('tax_confirm')}.
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 {C.get('buyers_extra') or ''}
 
-## Nearby cities we deliver to
+## Delivery to {city} and nearby cities
 
-{(near_s + (' and' if len(near) == 1 else ', and') + ' every other ZIP code') if near_s else 'Every ZIP code'} in the {city} area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for {city} ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+{('We also deliver to ' + near_s + (' and' if len(near) == 1 else ', and') + ' every other ZIP code') if near_s else 'We deliver to every ZIP code'} in the {city} area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to {city}?
-Yes. Partitions ship by freight carrier to {city} and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions {prep} {city}?
+{unlabel(C['permit_bullet'])}
 
-### Does Next Partitions install partitions {prep} {city}?
+### How many stalls does {art} {city} restroom need?
+{stall_faq({**S, **{k: v for k, v in C.items() if v}})} The table above covers other sizes. Confirm the number for your building with {office}.
+
+### Who can install toilet partitions {prep} {city}?
 {faq_inst}
 
 ### {faq_mat[0]}
 {faq_mat[1]}
 
-### What rules does {art} {city} restroom have to meet?
-Federal and {state} wheelchair-access rules{fire}, and the rules on how many toilets a building needs. Confirm your project with {office}.
-
-### How do I get a price for my {city} restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to {city}?
+{' '.join(x for x in (unlabel(C['sales_tax_bullet']), unlabel((g('tax_ship_bullet') or '').replace('{city}', city))) if x)}
 
 ## Sources
 
@@ -250,7 +258,7 @@ Answer the five questions at the top of this page, or send your drawings. Standa
 BAN = [(r' — |—', 'em dash'), (r'[Ll]ast checked|[Cc]hecked (19|20)\d\d|[Ff]igures checked', 'check date in body'),
        (r'International (Building|Plumbing|Existing)|Uniform Plumbing Code|\bI[BP]C\b|\bUPC\b|A117|§|\bSection \d|\bTable \d|\bChapter \d', 'formal code name in body'),
        (r'\bcheckout\b|place (an|your) order|order now', 'order/checkout wording'),
-       (r'\b(below|following sections?) (we|covers?)\b|in this (guide|section) we', 'signposting'), (r'\{city\}|\bNone\b|\bnull\b|TODO', 'unfilled value')]
+       (r'\b(below|following sections?) (we|covers?)\b|in this (guide|section) we', 'signposting'), (r'\{city\}|: None\b|\bNone,|\bnull\b|TODO', 'unfilled value')]
 def check(slug, t):
     body = t.split('\n## Sources')[0].split('---', 2)[2]
     out = ['%s: %s: %s' % (slug, why, m.group(0)) for pat, why in BAN for m in [re.search(pat, body)] if m]

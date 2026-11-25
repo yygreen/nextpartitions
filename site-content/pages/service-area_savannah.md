@@ -31,17 +31,6 @@ Savannah gets about 48 inches of rain a year, on roughly 110 days, and relative 
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Savannah job sites
-
-Toilet partitions for Savannah ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Savannah address.
-
 ## The rules a Savannah restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Georgia's own access rules adopt the federal standards, and the State Fire Marshal or the local building department enforces them. A stall that is replaced, not just repaired, must meet the current rules.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hotels and visitor attractions:** finishes that match the property in guest-facing restrooms, HDPE or phenolic where crowds and frequent cleaning are hard on stalls.
 
-## Nearby cities we deliver to
+## Delivery to Savannah and nearby cities
 
-Hilton Head Island, Hinesville, Bluffton and Pooler, and every other ZIP code in the Savannah area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Savannah ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Hilton Head Island, Hinesville, Bluffton and Pooler, and every other ZIP code in the Savannah area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Savannah?
-Yes. Partitions ship by freight carrier to Savannah and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Savannah?
+Savannah requires a permit to build, alter or repair a building, and lets ordinary minor repairs go ahead without one. The city code doesn't say which work counts as a minor repair and doesn't name toilet partitions, so ask Savannah Development Services whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Savannah?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. Where Georgia requires a contractor license, the contractor gives Savannah the license number before a permit is issued. Our directory lists [partition installers in Savannah](/installers/georgia/savannah), and you can ask for installation prices with your quote.
+### How many stalls does a Savannah restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with Savannah Development Services.
+
+### Who can install toilet partitions in Savannah?
+A contractor you hire. We supply the partitions and the shop drawings. Where Georgia requires a contractor license, the contractor gives Savannah the license number before a permit is issued. Our directory lists [partition installers in Savannah](/installers/georgia/savannah), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Savannah's humidity?
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Savannah restroom have to meet?
-Federal and Georgia wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with Savannah Development Services.
-
-### How do I get a price for my Savannah restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Savannah?
+7% in Savannah: 4% state, 1% local option, 1% schools and 1% special purpose tax, all three collected across Chatham County. Partitions shipped to Savannah are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Savannah climate: NOAA NCEI Comparative Climatic Data, station Savannah, GA (WBAN 03822): [annual precipitation, 48.12 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 86% in the morning and 54% in the afternoon, 1950–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 110 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Savannah enforces, and the office that enforces them: City of Savannah Code of Ordinances, Division II, Part 8, Chapter 1, Building Regulations, [Sec. 8-1001, Title; adoption of codes](https://online.encodeplus.com/regs/savannah-ga/doc-viewer.aspx#secid-2347) (the latest editions of the Georgia State Minimum Standard Codes, adopted by reference) and [Sec. 8-1034, Code enforcement](https://online.encodeplus.com/regs/savannah-ga/doc-viewer.aspx#secid-2357); Georgia Department of Community Affairs, [Current State Minimum Codes for Construction](https://dca.georgia.gov/community-assistance/construction-codes/current-state-minimum-codes-construction) (International Building Code and International Plumbing Code, 2024 Editions, with Georgia Amendments). Checked 2026-11-24.

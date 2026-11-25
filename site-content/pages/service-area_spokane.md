@@ -31,17 +31,6 @@ Spokane gets about 16 inches of rain a year, on roughly 111 days, and relative h
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Spokane job sites
-
-Toilet partitions for Spokane ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Spokane address.
-
 ## The rules a Spokane restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Washington's own access rules set the sizes.
@@ -99,38 +88,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hospitals, medical offices and university buildings:** phenolic or stainless steel where restrooms are cleaned often, with accessible stalls in every room.
 
-## Nearby cities we deliver to
+## Delivery to Spokane and nearby cities
 
-Spokane Valley, Coeur d'Alene and Post Falls, and every other ZIP code in the Spokane area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Spokane ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Spokane Valley, Coeur d'Alene and Post Falls, and every other ZIP code in the Spokane area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Spokane?
-Yes. Partitions ship by freight carrier to Spokane and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Spokane?
+Spokane requires a building permit to alter or repair a building unless the work is on the exempt list in the state building rules. The list covers "similar finish work" and movable partitions up to 5 feet 9 inches high, without naming toilet partitions, so ask the Spokane Development Services Center (509-625-6300) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Spokane?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor who takes out a Spokane permit needs a Washington L&I registration and a City of Spokane business license. Our directory lists [partition installers in Spokane](/installers/washington/spokane), and you can ask for installation prices with your quote.
+### How many stalls does a Spokane restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 2 women's and 2 men's stalls. The table above covers other sizes. Confirm the number for your building with the Spokane Development Services Center.
+
+### Who can install toilet partitions in Spokane?
+A contractor you hire. We supply the partitions and the shop drawings. A contractor who takes out a Spokane permit needs a Washington L&I registration and a City of Spokane business license. Our directory lists [partition installers in Spokane](/installers/washington/spokane), and you can ask for installation prices with your quote.
 
 ### Which partition material is best in Spokane?
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
-### What rules does a Spokane restroom have to meet?
-Federal and Washington wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the Spokane Development Services Center.
-
-### How do I get a price for my Spokane restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Spokane?
+9.1% in Spokane: 6.5% state and 2.6% local. On January 1, 2027 it rises to 9.3%, when the city and the county each add 0.1%. Partitions shipped to Spokane are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Spokane climate: NOAA NCEI Comparative Climatic Data, station Spokane, WA (WBAN 24157): [annual precipitation, 16.45 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 74% in the morning and 52% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 111 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Spokane building and plumbing codes: City of Spokane, [Commercial Codes](https://my.spokanecity.org/business/commercial/codes/) ("Current Codes": 2021 International Building Code with ICC/ANSI A117.1-2017; 2021 Uniform Plumbing Code), Spokane Municipal Code [17F.040.010](https://my.spokanecity.org/smc/?Section=17F.040.010), Adoption of Building Codes and Related Washington State Codes, and [17F.100.010](https://my.spokanecity.org/smc/?Section=17F.100.010), Adoption of Uniform Plumbing Code (both Ordinance C35899, effective June 14, 2020; each adopts the "current adopted Edition"). The 2021 editions took effect statewide on March 15, 2024 (WAC 51-50 and 51-56). Checked 2026-11-24.

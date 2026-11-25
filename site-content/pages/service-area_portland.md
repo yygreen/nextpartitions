@@ -31,17 +31,6 @@ Portland gets about 37 inches of rain a year, on roughly 153 days, and relative 
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Portland job sites
-
-Toilet partitions for Portland ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Portland address.
-
 ## The rules a Portland restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use, and a room with six or more toilets and urinals also needs a narrower stall with grab bars on both sides. Federal law and Oregon's building rules set the sizes. Oregon has no separate state sign-off for access: your city or county building department checks it when it reviews the plans. When you remodel, the restrooms serving the remodeled area have to be made accessible too, up to a quarter of the remodel's cost.
@@ -99,38 +88,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Brewpubs, taprooms and food halls:** HDPE or phenolic that takes wet floors and heavy evening traffic, with full-height stalls where the room is shared by all genders.
 
-## Nearby cities we deliver to
+## Delivery to Portland and nearby cities
 
-Vancouver, Gresham, Hillsboro, Beaverton, Tigard, Lake Oswego, Oregon City and Woodburn, and every other ZIP code in the Portland area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Portland ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Vancouver, Gresham, Hillsboro, Beaverton, Tigard, Lake Oswego, Oregon City and Woodburn, and every other ZIP code in the Portland area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Portland?
-Yes. Partitions ship by freight carrier to Portland and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Portland?
+Portland Permitting & Development issues building permits in Portland. Its list of commercial work that needs a permit includes tenant improvements, disabled access upgrades and moving or building walls, non-bearing partitions included. Oregon's building rules exempt finish work such as painting, tiling and cabinets, and movable partitions no taller than 5 feet 9 inches, such as office cubicles. Neither list names toilet partitions. Ask Portland Permitting & Development (503-823-7300) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Portland?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. The contractor needs an Oregon Construction Contractors Board license with a commercial endorsement. Our directory lists [partition installers in Portland](/installers/oregon/portland), and you can ask for installation prices with your quote.
+### How many stalls does a Portland restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with Portland Permitting & Development.
+
+### Who can install toilet partitions in Portland?
+A contractor you hire. We supply the partitions and the shop drawings. The contractor needs an Oregon Construction Contractors Board license with a commercial endorsement. Our directory lists [partition installers in Portland](/installers/oregon/portland), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Portland's climate?
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Portland restroom have to meet?
-Federal and Oregon wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with Portland Permitting & Development.
-
-### How do I get a price for my Portland restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Portland?
+None in Portland. Oregon has no general sales tax or use tax. Partitions shipped to Portland carry no Oregon sales tax or use tax, on the partitions or on the freight.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Portland climate: NOAA NCEI Comparative Climatic Data, station Portland, OR (WBAN 24229): [annual precipitation, 36.91 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 82% in the morning and 59% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 153 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes enforced in Portland: Portland City Code, [Chapter 24.10, Administration and Enforcement](https://www.portland.gov/code/24/10) (Section 24.10.040, which adopts the Oregon Structural Specialty Code and the Oregon Plumbing Specialty Code, and Section 24.10.050 on Portland Permitting & Development) and [Title 25, Plumbing Regulations](https://www.portland.gov/code/25/all) (Section 25.01.020); editions and dates from the Oregon Building Codes Division, [Commercial structures code program](https://www.oregon.gov/bcd/codes-stand/Pages/commercial-structures.aspx) and [Plumbing code program](https://www.oregon.gov/bcd/codes-stand/Pages/plumbing.aspx). Checked 2026-11-24.

@@ -31,17 +31,6 @@ Providence gets about 48 inches of rain a year, on roughly 125 days, and relativ
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Providence job sites
-
-Toilet partitions for Providence ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Providence address.
-
 ## The rules a Providence restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Rhode Island's building rules both set the sizes, and the local building official checks them with the building permit. No separate state review step was found.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Colleges, universities and hospitals:** phenolic or HDPE in dormitory, classroom and public restrooms that see heavy daily use, stainless steel where the finish matters.
 
-## Nearby cities we deliver to
+## Delivery to Providence and nearby cities
 
-Brockton, New Bedford, Fall River, Warwick, Cranston, Pawtucket, Taunton and East Providence, and every other ZIP code in the Providence area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Providence ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Brockton, New Bedford, Fall River, Warwick, Cranston, Pawtucket, Taunton and East Providence, and every other ZIP code in the Providence area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Providence?
-Yes. Partitions ship by freight carrier to Providence and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Providence?
+Rhode Island law requires a permit to alter a building but not for ordinary repairs. Providence's list of work that needs no permit covers painting, tiling, cabinets, counter tops "and similar finish work", and movable partitions up to 5 feet 9 inches high. It doesn't name toilet partitions, so ask the Providence Department of Inspection and Standards whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Providence?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor who pulls a commercial permit in Providence must be registered with the Rhode Island Contractors' Registration and Licensing Board. Our directory lists [partition installers in Providence](/installers/rhode-island/providence), and you can ask for installation prices with your quote.
+### How many stalls does a Providence restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with the Providence Department of Inspection and Standards.
+
+### Who can install toilet partitions in Providence?
+A contractor you hire. We supply the partitions and the shop drawings. A contractor who pulls a commercial permit in Providence must be registered with the Rhode Island Contractors' Registration and Licensing Board. Our directory lists [partition installers in Providence](/installers/rhode-island/providence), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Providence's climate?
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Providence restroom have to meet?
-Federal and Rhode Island wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the Providence Department of Inspection and Standards.
-
-### How do I get a price for my Providence restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Providence?
+7% in Providence, which is Rhode Island's state rate. No city or county sales tax on goods was found. Partitions shipped to Providence are taxable at 7%, freight included. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Providence climate: NOAA NCEI Comparative Climatic Data, station Providence, RI (WBAN 14765): [annual precipitation, 47.54 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 75% in the morning and 55% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 125 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Providence enforces: City of Providence Department of Inspection and Standards, [Rhode Island Building & Energy Codes: Current Standards](https://www.providenceri.gov/inspection/rhode-island-building-energy-codes-current-standards/) (2021 International Code Council codes with Rhode Island amendments, in effect since December 1, 2025), and the department's [Codes & Ordinances page](https://www.providenceri.gov/inspection/codes-ordinances/). Checked 2026-11-24.

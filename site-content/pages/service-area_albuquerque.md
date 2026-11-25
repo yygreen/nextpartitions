@@ -31,17 +31,6 @@ Albuquerque gets about 9 inches of rain a year, on roughly 59 days, and relative
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Albuquerque job sites
-
-Toilet partitions for Albuquerque ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Albuquerque address.
-
 ## The rules an Albuquerque restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and New Mexico's own building rules set the sizes, and the building department checks them when it reviews the plans.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hospitals, university and research buildings:** phenolic or stainless steel where restrooms are cleaned many times a day.
 
-## Nearby cities we deliver to
+## Delivery to Albuquerque and nearby cities
 
-Rio Rancho and every other ZIP code in the Albuquerque area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Albuquerque ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Rio Rancho and every other ZIP code in the Albuquerque area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Albuquerque?
-Yes. Partitions ship by freight carrier to Albuquerque and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Albuquerque?
+Albuquerque requires a permit to alter or repair a building and lists the work that needs none. The list covers painting, papering, tiling, carpeting, cabinets, countertops and similar finish work, movable partitions no taller than 5 feet 9 inches, and repairs worth less than $1,000. It doesn't name toilet partitions fixed to the floor or wall, so ask the city's Building Safety Division (505-924-3320) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Albuquerque?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. The contractor needs a New Mexico contractor license. Our directory lists [partition installers in Albuquerque](/installers/new-mexico/albuquerque), and you can ask for installation prices with your quote.
+### How many stalls does an Albuquerque restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with Albuquerque's Building Safety Division.
+
+### Who can install toilet partitions in Albuquerque?
+A contractor you hire. We supply the partitions and the shop drawings. The contractor needs a New Mexico contractor license. Our directory lists [partition installers in Albuquerque](/installers/new-mexico/albuquerque), and you can ask for installation prices with your quote.
 
 ### Which partition material is best in Albuquerque?
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
-### What rules does an Albuquerque restroom have to meet?
-Federal and New Mexico wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with Albuquerque's Building Safety Division.
-
-### How do I get a price for my Albuquerque restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Albuquerque?
+7.625% in Albuquerque: the 4.875% state rate plus 2.75% in local taxes. Rates normally change only on July 1. Partitions shipped to Albuquerque are taxable, including freight billed by the seller. If the seller doesn't charge the tax, the buyer owes the matching compensating tax to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Albuquerque climate: NOAA NCEI Comparative Climatic Data, station Albuquerque, NM (WBAN 23050): [annual precipitation, 8.84 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 53% in the morning and 29% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 59 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Albuquerque enforces: City of Albuquerque, Building Safety Division, [Current Building Codes](https://www.cabq.gov/planning/building-safety-division/current-building-codes) and the [Uniform Administrative Code of the City of Albuquerque, 2024 Edition](https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf) (City of Albuquerque amendments to the New Mexico building codes, effective January 1, 2025: it adopts the 2021 New Mexico Commercial Building Code, the 2021 New Mexico Existing Building Code and the 2021 New Mexico Plumbing Code, and amends Chapters 1, 18, 30 and 35 of the building code only). Checked 2026-11-24.

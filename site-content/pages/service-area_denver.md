@@ -31,17 +31,6 @@ Denver gets about 15 inches of rain a year, on roughly 79 days, and relative hum
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Denver job sites
-
-Toilet partitions for Denver ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Denver address.
-
 ## The rules a Denver restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law sets the sizes, and Colorado's plumbing rules and the local building rules add their own access standard. Colorado has no separate state review step: the city or county building department checks access with the permit, and the state reviews public school projects.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant, the D
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Breweries, music venues and stadiums:** HDPE or phenolic where crowds and nightly washdown are hard on stalls, stainless steel in premium public restrooms.
 
-## Nearby cities we deliver to
+## Delivery to Denver and nearby cities
 
-Aurora, Lakewood, Thornton, Arvada, Westminster, Centennial, Boulder and Castle Rock, and every other ZIP code in the Denver area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Denver ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Aurora, Lakewood, Thornton, Arvada, Westminster, Centennial, Boulder and Castle Rock, and every other ZIP code in the Denver area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Denver?
-Yes. Partitions ship by freight carrier to Denver and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Denver?
+Denver requires a permit to alter or remodel a building and lists the work that needs none. The list covers repairs, painting, tiling, floor coverings, countertops and cabinets, and movable partitions no taller than 5 feet 9 inches. It doesn't name toilet partitions fixed to the floor or wall, so ask Denver Community Planning and Development (720-865-2700) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Denver?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor who pulls a permit in Denver needs a Denver contractor license. Our directory lists [partition installers in Denver](/installers/colorado/denver), and you can ask for installation prices with your quote.
+### How many stalls does a Denver restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with Denver Community Planning and Development.
+
+### Who can install toilet partitions in Denver?
+A contractor you hire. We supply the partitions and the shop drawings. A contractor who pulls a permit in Denver needs a Denver contractor license. Our directory lists [partition installers in Denver](/installers/colorado/denver), and you can ask for installation prices with your quote.
 
 ### Which partition material is best in Denver?
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
-### What rules does a Denver restroom have to meet?
-Federal and Colorado wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with Denver Community Planning and Development.
-
-### How do I get a price for my Denver restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Denver?
+9.15% in Denver: 5.15% city, 2.9% state, 1% transit district and 0.1% cultural district. Denver collects its own 5.15% under its own tax rules. Partitions shipped to Denver are taxable. Denver taxes freight that the seller charges or arranges as part of the price; the state taxes it unless it is an optional charge shown on its own line. If the seller doesn't collect the tax, the buyer owes it as use tax.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Denver climate: NOAA NCEI Comparative Climatic Data, station Denver, CO (WBAN 23062): [annual precipitation, 15.36 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 50% in the morning and 43% in the afternoon, 1995–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 79 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Denver enforces: City and County of Denver, Community Planning and Development, [Building Codes, Policies and Guides](https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development/Building-Codes-Policies-and-Guides) (2025 Denver Building and Fire Codes adopted June 13, 2025; second printing adopted November 24, 2025); [2025 Denver Building Code, 2nd Printing](https://denvergov.org/files/assets/public/v/1/community-planning-and-development/documents/ds/building-codes/2025_Denver_Building_Code.pdf) (Denver Commercial Building Code and Denver Plumbing Code: Denver amendments to the 2024 International Building Code and 2024 International Plumbing Code); [Commercial Building Permit Guide, revised August 3, 2026](https://www.denvergov.org/files/assets/public/v/16/community-planning-and-development/documents/ds/other-forms-and-guides/commercial-permitting-guide.pdf) (effective January 1, 2026); [Building Permit Policy 25-DCBC 131.2, Code Transition Rules](https://www.denvergov.org/files/assets/public/v/4/community-planning-and-development/documents/ds/building-codes/policies/dcbc-131.2-transition-rules-application-expiration.pdf). Checked 2026-11-24.

@@ -31,17 +31,6 @@ Boston gets about 44 inches of rain a year, on roughly 127 days, and relative hu
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Boston job sites
-
-Toilet partitions for Boston ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Boston address.
-
 ## The rules a Boston restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Massachusetts's own access rules both apply, and the local building inspector enforces the state rules. On a remodel costing $100,000 or more, the building must also have an accessible toilet room and public entrance. An owner who can't meet a rule can ask the state's Architectural Access Board for a variance.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hospitals, universities and labs:** phenolic or stainless steel where restrooms are cleaned many times a day, HDPE in student buildings that see hard use.
 
-## Nearby cities we deliver to
+## Delivery to Boston and nearby cities
 
-Cambridge, Lowell, Brockton, Quincy, Lynn, Newton, Lawrence and Somerville, and every other ZIP code in the Boston area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Boston ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Cambridge, Lowell, Brockton, Quincy, Lynn, Newton, Lawrence and Somerville, and every other ZIP code in the Boston area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Boston?
-Yes. Partitions ship by freight carrier to Boston and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Boston?
+In Boston, as everywhere in Massachusetts, a permit is needed to alter or repair a building, and the state's building rules list the work that needs none. The list covers painting, papering, tiling, carpeting, cabinets, countertops and similar finish work, movable partitions no taller than 5 feet 9 inches, and ordinary repairs. It doesn't name toilet partitions fixed to the floor or wall. Boston issues a Short-Form Permit for minor alterations, repairs and replacements that don't change a building's structure or use, so ask the Inspectional Services Department (617-635-5300) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Boston?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. In Boston the contractor applies for any permit the work needs. Our directory lists [partition installers in Boston](/installers/massachusetts/boston), and you can ask for installation prices with your quote.
+### How many stalls does a Boston restroom need?
+For a building that holds 100 people, an office needs at least 3 women's and 2 men's stalls, a restaurant needs at least 2 women's and 1 men's stall and a school needs at least 2 women's and 2 men's stalls. The table above covers other sizes. Confirm the number for your building with Boston's Inspectional Services Department.
+
+### Who can install toilet partitions in Boston?
+A contractor you hire. We supply the partitions and the shop drawings. In Boston the contractor applies for any permit the work needs. Our directory lists [partition installers in Boston](/installers/massachusetts/boston), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Boston's climate?
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Boston restroom have to meet?
-Federal and Massachusetts wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with Boston's Inspectional Services Department.
-
-### How do I get a price for my Boston restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Boston?
+6.25% in Boston. That is the Massachusetts state rate, set by state law for sales of goods across the state. Partitions shipped to Boston are taxable at 6.25%. Freight shown as a separate charge for delivery after the sale is not taxed. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Boston climate: NOAA NCEI Comparative Climatic Data, station Boston, MA (WBAN 14739): [annual precipitation, 43.59 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 72% in the morning and 57% in the afternoon, 1945–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 127 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Boston enforces: Massachusetts State Building Code, 780 CMR, Tenth Edition, [section 101.1, Adoption and Title](https://www.law.cornell.edu/regulations/massachusetts/780-CMR-101-101-1), [section 101.2, Scope](https://www.law.cornell.edu/regulations/massachusetts/780-CMR-101-101-2) (the building code for all cities and towns), [section 101.4, Referenced Codes and Standards](https://www.law.cornell.edu/regulations/massachusetts/780-CMR-101-101-4) (plumbing is 248 CMR) and [section 103.1, Municipal and State Enforcement](https://www.law.cornell.edu/regulations/massachusetts/780-CMR-103-103-1), amended effective October 11, 2024, read on Cornell's Legal Information Institute copy; the official page is [mass.gov, Tenth Edition of the MA State Building Code 780](https://www.mass.gov/handbook/tenth-edition-of-the-ma-state-building-code-780). Plumbing rules are uniform in all cities and towns: [Massachusetts General Laws chapter 142, section 13](https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXX/Chapter142/Section13). Checked 2026-11-24.

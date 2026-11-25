@@ -31,17 +31,6 @@ In most San Jose restrooms the room decides the material, not the weather:
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to San Jose job sites
-
-Toilet partitions for San Jose ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your San Jose address.
-
 ## The rules a San Jose restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and California's own access rules both set the sizes, and California's are stricter in places. A remodel can also oblige you to bring the restrooms serving that area up to today's rules; on projects under $209,208 (the 2026 figure) that duty is limited.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Tech campuses and research buildings:** phenolic or stainless steel in a finish that matches the rest of the fit-out.
 
-## Nearby cities we deliver to
+## Delivery to San Jose and nearby cities
 
-Fremont, Hayward, Sunnyvale, Santa Clara, Livermore, Mountain View, Redwood City and Milpitas, and every other ZIP code in the San Jose area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for San Jose ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Fremont, Hayward, Sunnyvale, Santa Clara, Livermore, Mountain View, Redwood City and Milpitas, and every other ZIP code in the San Jose area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to San Jose?
-Yes. Partitions ship by freight carrier to San Jose and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in San Jose?
+San Jose requires a building permit to alter or repair a building unless the work is on its exempt list. The list covers "painting, papering, tiling, carpeting, cabinets, counter tops and similar finish work" and movable "partitions not over five feet nine inches" high. It doesn't name toilet partitions, so ask the city's Permit Center (408-535-3555) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in San Jose?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. In San Jose the contractor needs a California contractor license for jobs of $1,000 or more. Our directory lists [partition installers in San Jose](/installers/california/san-jose), and you can ask for installation prices with your quote.
+### How many stalls does a San Jose restroom need?
+For a building that holds 100 people, an office needs at least 3 women's stalls, 1 men's stall and 1 urinal, a restaurant needs at least 2 women's stalls, 1 men's stall and 1 urinal and a school needs at least 2 women's stalls, 1 men's stall and 1 urinal. The table above covers other sizes. Confirm the number for your building with the City of San Jose Building Division.
+
+### Who can install toilet partitions in San Jose?
+A contractor you hire. We supply the partitions and the shop drawings. In San Jose the contractor needs a California contractor license for jobs of $1,000 or more. Our directory lists [partition installers in San Jose](/installers/california/san-jose), and you can ask for installation prices with your quote.
 
 ### Which partition material is best in San Jose?
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a San Jose restroom have to meet?
-Federal and California wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the City of San Jose Building Division.
-
-### How do I get a price for my San Jose restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to San Jose?
+10% in San Jose: 7.25% statewide, 2.5% in Santa Clara County district taxes and 0.25% city. Partitions shipped to San Jose are taxable. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - San Jose building and plumbing codes: City of San Jose, Council agenda of October 28, 2025, item 8.2 (file 25-1131), [memorandum on adopting the 2025 California Building Standards](https://legistar.granicus.com/sanjose/attachments/e510141a-9efb-4447-9aa2-c50d35ec91cd.pdf) and [ordinance amending Title 24 (Technical Codes) of the San Jose Municipal Code](https://legistar.granicus.com/sanjose/attachments/2eb27e77-9320-464a-9254-4c7451d3abfb.pdf) (sections 24.03.100 and 24.04.100); the city's permit portal, [SJPermits.org](https://sjpermits.org/permits/) ("As of Jan. 1, 2026, the 2025 Building Codes are in effect"); San Jose Municipal Code Chapters 24.01, [24.03](https://gocodebook.com/library/us/ca/san-jose/title-24-technical-codes/chapter-24.03-building-code/part-1-adoption-of-cbc-provisions) and [24.04](https://gocodebook.com/library/us/ca/san-jose/title-24-technical-codes/chapter-24.04-plumbing-code/part-1-adoption-of-cpc-provisions) as amended by Ordinance 31256, read on a secondary copy (GoCodebook). Checked 2026-11-24.
 - Toilet counts in San Jose: the same [memorandum](https://legistar.granicus.com/sanjose/attachments/e510141a-9efb-4447-9aa2-c50d35ec91cd.pdf) ("Chapter 24.04 adopts the California Plumbing Code with no local amendments"), so California Plumbing Code Table 422.1 applies unchanged. Checked 2026-11-24.

@@ -31,17 +31,6 @@ Chicago gets about 38 inches of rain a year, on roughly 126 days, and relative h
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Chicago job sites
-
-Toilet partitions for Chicago ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Chicago address.
-
 ## The rules a Chicago restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use, and a room with six or more toilets and urinals also needs a narrower stall with grab bars on both sides. Federal law and Illinois's own access rules set the sizes, and the state rules can't be waived. On work costing $50,000 or more, an Illinois architect or engineer must state in writing that the plans comply, and the office that issues the building permit checks them.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Arenas, convention halls and event venues:** HDPE or phenolic where crowds and nightly washdown are hard on stalls. Illinois law sets its own toilet numbers for these venues.
 
-## Nearby cities we deliver to
+## Delivery to Chicago and nearby cities
 
-Naperville, Cicero, Hammond, Schaumburg, Evanston, Arlington Heights, Bolingbrook and Gary, and every other ZIP code in the Chicago area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Chicago ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Naperville, Cicero, Hammond, Schaumburg, Evanston, Arlington Heights, Bolingbrook and Gary, and every other ZIP code in the Chicago area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Chicago?
-Yes. Partitions ship by freight carrier to Chicago and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Chicago?
+Chicago requires a building permit for most construction, alteration and repair work. Its list of work that needs none covers painting, tiling, cabinets, countertops and similar finish work, and movable partitions no taller than 7 feet that aren't fixed in place. It doesn't name fixed toilet partitions, so ask the Chicago Department of Buildings (312-744-3449) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Chicago?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. Chicago requires a city-licensed and insured general contractor for most building work. Our directory lists [partition installers in Chicago](/installers/illinois/chicago), and you can ask for installation prices with your quote.
+### How many stalls does a Chicago restroom need?
+For a building that holds 100 people, an office needs at least 3 women's and 3 men's stalls, a restaurant needs at least 2 women's and 2 men's stalls and a school needs at least 3 women's and 3 men's stalls. The table above covers other sizes. Confirm the number for your building with the Chicago Department of Buildings.
+
+### Who can install toilet partitions in Chicago?
+A contractor you hire. We supply the partitions and the shop drawings. Chicago requires a city-licensed and insured general contractor for most building work. Our directory lists [partition installers in Chicago](/installers/illinois/chicago), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Chicago's climate?
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Chicago restroom have to meet?
-Federal and Illinois wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the Chicago Department of Buildings.
-
-### How do I get a price for my Chicago restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Chicago?
+10.5% in Chicago: 6.25% state, 1.75% Cook County, 1.25% city and 1.25% regional transit. The transit part rose by a quarter point on August 1, 2026. Partitions shipped to Chicago are taxable at the rate for the delivery address. Freight is taxed too when it is part of the price or there is no way to receive the goods without paying it. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Chicago climate: NOAA NCEI Comparative Climatic Data, station Chicago, IL (WBAN 94846): [annual precipitation, 37.86 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 80% in the morning and 60% in the afternoon, 1958–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 126 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Chicago enforces: City of Chicago Department of Buildings, [Chicago Construction Codes](https://www.chicago.gov/city/en/depts/bldgs/provdrs/bldg_code/svcs/chicago_buildingcodeonline.html) (2019 Chicago Building Code, Title 14B, based on the 2018 International Building Code, for permit applications started on or after August 1, 2020; plumbing in Chapter 18-29 of the Municipal Code, referenced by the Interim Chicago Plumbing Code, Title 14P), [2021 Amendments to the Chicago Plumbing Code](https://www.chicago.gov/city/en/depts/bldgs/provdrs/bldg_code/alerts/2021/october/plumbingamendments.html) (mandatory from March 1, 2022) and [Implementation of Phase 3 Construction Codes Modernization Ordinance](https://www.chicago.gov/city/en/depts/bldgs/provdrs/bldg_code/alerts/2026/october/phase3.html) (amendments mandatory for permit applications started on or after December 1, 2026). Checked 2026-11-24.

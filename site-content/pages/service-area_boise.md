@@ -31,17 +31,6 @@ Boise gets about 12 inches of rain a year, on roughly 90 days, and relative humi
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Boise job sites
-
-Toilet partitions for Boise ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Boise address.
-
 ## The rules a Boise restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Idaho's building rules both set the sizes. Idaho has no separate state review for access: your local building department checks it with the rest of the plans.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **State offices, colleges and hospitals:** phenolic or stainless steel for busy public restrooms, with accessible stalls in every room.
 
-## Nearby cities we deliver to
+## Delivery to Boise and nearby cities
 
-Meridian, Nampa, Caldwell, Eagle and Kuna, and every other ZIP code in the Boise area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Boise ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Meridian, Nampa, Caldwell, Eagle and Kuna, and every other ZIP code in the Boise area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Boise?
-Yes. Partitions ship by freight carrier to Boise and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Boise?
+Boise's list of work that needs no permit covers painting, tiling, carpeting, cabinets, counter tops and similar finish work, and movable partitions up to 5 feet 9 inches high. It doesn't name toilet partitions, which are fixed in place. The city handles interior alterations to commercial spaces as tenant improvement permits. Ask the Boise Building Division whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Boise?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor on a job over $2,000 needs an Idaho contractor registration. Our directory lists [partition installers in Boise](/installers/idaho/boise), and you can ask for installation prices with your quote.
+### How many stalls does a Boise restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with the Boise Building Division.
+
+### Who can install toilet partitions in Boise?
+A contractor you hire. We supply the partitions and the shop drawings. A contractor on a job over $2,000 needs an Idaho contractor registration. Our directory lists [partition installers in Boise](/installers/idaho/boise), and you can ask for installation prices with your quote.
 
 ### Which partition material is best in Boise?
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
-### What rules does a Boise restroom have to meet?
-Federal and Idaho wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the Boise Building Division.
-
-### How do I get a price for my Boise restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Boise?
+6% in Boise. That is the state rate: Boise and Ada County add no sales tax of their own. Partitions shipped to Boise are taxable at 6%. Freight to your address is not taxed when it is listed separately on the invoice. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Boise climate: NOAA NCEI Comparative Climatic Data, station Boise, ID (WBAN 24131): [annual precipitation, 11.51 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 64% in the morning and 42% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 90 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Boise enforces: City of Boise Planning and Development Services, [Current Building Codes](https://www.cityofboise.org/departments/planning-and-development-services/building/building-permits/general-building-information-300/301-current-codes/) (2018 International Building Code and 2017 Idaho State Plumbing Code, for projects submitted on or after January 1, 2021). Checked 2026-11-24.

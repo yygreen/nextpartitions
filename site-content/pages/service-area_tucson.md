@@ -31,17 +31,6 @@ Tucson gets about 11 inches of rain a year, on roughly 51 days, and relative hum
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Tucson job sites
-
-Toilet partitions for Tucson ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Tucson address.
-
 ## The rules a Tucson restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Arizona's disability law uses the federal sizes, and state law writes them into every local building code, so the city or county building department checks them.
@@ -99,38 +88,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Campus buildings, resorts and spas:** finishes that match the property in guest and public restrooms, HDPE or phenolic in pool, gym and locker room restrooms that are hosed down.
 
-## Nearby cities we deliver to
+## Delivery to Tucson and nearby cities
 
-Marana, Oro Valley and Sahuarita, and every other ZIP code in the Tucson area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Tucson ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Marana, Oro Valley and Sahuarita, and every other ZIP code in the Tucson area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Tucson?
-Yes. Partitions ship by freight carrier to Tucson and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Tucson?
+Tucson requires a permit to alter a building unless the work is on its exempt list, and the city says commercial tenant improvements need one. The list covers painting, tiling, carpeting, cabinets, counter tops and similar finish work, and "nonfixed and movable fixtures, cases, racks, counters and partitions not over 5 feet 9 inches" high, but it doesn't name toilet partitions. Ask Tucson Planning and Development Services whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Tucson?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor on a commercial job of $1,000 or more in Arizona needs a state Registrar of Contractors license. Our directory lists [partition installers in Tucson](/installers/arizona/tucson), and you can ask for installation prices with your quote.
+### How many stalls does a Tucson restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with Tucson Planning and Development Services.
+
+### Who can install toilet partitions in Tucson?
+A contractor you hire. We supply the partitions and the shop drawings. A contractor on a commercial job of $1,000 or more in Arizona needs a state Registrar of Contractors license. Our directory lists [partition installers in Tucson](/installers/arizona/tucson), and you can ask for installation prices with your quote.
 
 ### Which partition material is best in Tucson?
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
-### What rules does a Tucson restroom have to meet?
-Federal and Arizona wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with Tucson Planning and Development Services.
-
-### How do I get a price for my Tucson restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Tucson?
+8.7% in Tucson: 5.6% state, 0.5% Pima County and 2.6% city. Partitions shipped to Tucson are taxable. A delivery charge listed separately on the invoice is not. An out-of-state seller with more than $100,000 a year in Arizona sales collects the tax. If the seller doesn't collect it, the buyer owes use tax to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Tucson climate: NOAA NCEI Comparative Climatic Data, station Tucson, AZ (WBAN 23160): [annual precipitation, 10.61 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 47% in the morning and 24% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 51 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Tucson enforces: City of Tucson Planning and Development Services, [Building Codes](https://www.tucsonaz.gov/Departments/Planning-Development-Services/Building-Safety/Building-Codes) (2024 International Building Code and 2024 International Plumbing Code, effective January 1, 2026; ICC A117.1-2017; local amendments under Ordinance 12171) and [Updated Building Codes Now in Effect](https://www.tucsonaz.gov/Departments/Planning-Development-Services/PDSD-News/Updated-Building-Codes-Now-in-Effect) (approved by Mayor and Council June 3, 2025). Checked 2026-11-24.

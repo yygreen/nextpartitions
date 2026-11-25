@@ -31,17 +31,6 @@ Cincinnati gets about 45 inches of rain a year, on roughly 132 days, and relativ
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Cincinnati job sites
-
-Toilet partitions for Cincinnati ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Cincinnati address.
-
 ## The rules a Cincinnati restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use, and a room with six or more toilets and urinals also needs a narrower stall with grab bars on both sides. Federal law and Ohio's building rules set the sizes. Ohio has no separate state sign-off for access: your local building department checks it when it approves the plans.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hospitals and medical offices:** stainless steel, phenolic or HDPE that stands up to frequent disinfecting, with accessible stalls in every room.
 
-## Nearby cities we deliver to
+## Delivery to Cincinnati and nearby cities
 
-Hamilton, Middletown, Fairfield, Covington, Mason, Florence and Independence, and every other ZIP code in the Cincinnati area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Cincinnati ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Hamilton, Middletown, Fairfield, Covington, Mason, Florence and Independence, and every other ZIP code in the Cincinnati area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Cincinnati?
-Yes. Partitions ship by freight carrier to Cincinnati and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Cincinnati?
+Cincinnati requires a permit for alterations and building repairs, and says permits are needed for all work except minor repairs and decorating. Neither the city nor Ohio's list of exempt work names toilet partitions. Ask the Cincinnati Department of Buildings & Inspections whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Cincinnati?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor working in Cincinnati needs a current city contractor registration. Our directory lists [partition installers in Cincinnati](/installers/ohio/cincinnati), and you can ask for installation prices with your quote.
+### How many stalls does a Cincinnati restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with the Cincinnati Department of Buildings & Inspections.
+
+### Who can install toilet partitions in Cincinnati?
+A contractor you hire. We supply the partitions and the shop drawings. A contractor working in Cincinnati needs a current city contractor registration. Our directory lists [partition installers in Cincinnati](/installers/ohio/cincinnati), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Cincinnati's climate?
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Cincinnati restroom have to meet?
-Federal and Ohio wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the Cincinnati Department of Buildings & Inspections.
-
-### How do I get a price for my Cincinnati restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Cincinnati?
+7.8% in Cincinnati: 5.75% state, 1.25% Hamilton County and 0.8% transit authority. Partitions shipped to Cincinnati are taxable, and so is freight charged by the seller. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Cincinnati climate: NOAA NCEI Comparative Climatic Data, station Cincinnati, OH (WBAN 93814): [annual precipitation, 45.26 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 81% in the morning and 59% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 132 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Cincinnati enforces: City of Cincinnati Buildings & Inspections, [Relevant Codes](https://www.cincinnati-oh.gov/buildings/building-plan-examination/relevant-codes/), listing the Ohio Building Code 2024, the Ohio Plumbing Code 2024 and the Cincinnati Building Code (Cincinnati Municipal Code Title XI) as a local supplement; state text: [Ohio Administrative Code rule 4101:1-1-01, effective October 15, 2025](https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/1/4101$1-1-01_eff_10_15_25.pdf), Section 101.1. Checked 2026-11-24.

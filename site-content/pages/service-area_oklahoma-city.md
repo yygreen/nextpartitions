@@ -31,17 +31,6 @@ Oklahoma City gets about 36 inches of rain a year, on roughly 82 days, and relat
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Oklahoma City job sites
-
-Toilet partitions for Oklahoma City ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Oklahoma City address.
-
 ## The rules an Oklahoma City restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law sets the sizes, and Oklahoma's building rules add a national accessibility standard on top. The city checks access with the building permit. Where no city or county issues building permits, the State Fire Marshal does.
@@ -99,38 +88,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **State agencies and public buildings:** one material and one hardware standard across many buildings, with heavy-duty hardware for restrooms that serve the public all day.
 
-## Nearby cities we deliver to
+## Delivery to Oklahoma City and nearby cities
 
-Norman, Edmond, Moore, Midwest City and Yukon, and every other ZIP code in the Oklahoma City area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Oklahoma City ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Norman, Edmond, Moore, Midwest City and Yukon, and every other ZIP code in the Oklahoma City area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Oklahoma City?
-Yes. Partitions ship by freight carrier to Oklahoma City and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Oklahoma City?
+Oklahoma City requires a permit to construct, alter or repair a structure. Its list of work that needs no building permit includes painting, papering, tiling, carpeting, cabinets, counter tops and similar finish work, and movable partitions up to 5 feet 9 inches high that aren't fixed in place. The list doesn't name toilet partitions. Ask the city's Development Center Plan Review (405-297-2525) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Oklahoma City?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. Oklahoma has no state license for partition installers, and Oklahoma City's Business Licensing office can tell you whether the contractor needs a city registration. Our directory lists [partition installers in Oklahoma City](/installers/oklahoma/oklahoma-city), and you can ask for installation prices with your quote.
+### How many stalls does an Oklahoma City restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with the City of Oklahoma City Development Center.
+
+### Who can install toilet partitions in Oklahoma City?
+A contractor you hire. We supply the partitions and the shop drawings. Oklahoma has no state license for partition installers, and Oklahoma City's Business Licensing office can tell you whether the contractor needs a city registration. Our directory lists [partition installers in Oklahoma City](/installers/oklahoma/oklahoma-city), and you can ask for installation prices with your quote.
 
 ### Which partition material is best in Oklahoma City?
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does an Oklahoma City restroom have to meet?
-Federal and Oklahoma wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the City of Oklahoma City Development Center.
-
-### How do I get a price for my Oklahoma City restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Oklahoma City?
+8.625% in Oklahoma City: 4.5% state and 4.125% city. Oklahoma County adds no sales tax. The parts of the city in Canadian and Cleveland counties also pay a county tax. Partitions shipped to Oklahoma City are taxable at the rate for the delivery address. Freight is not taxed when it is listed separately on the invoice. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Oklahoma City climate: NOAA NCEI Comparative Climatic Data, station Oklahoma City, OK (WBAN 13967): [annual precipitation, 36.39 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 80% in the morning and 55% in the afternoon, 1945–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 82 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Oklahoma City lists as adopted: City of Oklahoma City, Development Center, [Adopted Building Safety Codes](https://www.okc.gov/Infrastructure-Development/Development-Planning/Development-Center/Adopted-Building-Safety-Codes) (International Building Code, 2018 and International Plumbing Code, 2018, with OKC supplements); the city's supplements, [2018 IBC amendments, state included](https://www.okc.gov/files/assets/city/v/1/development-services/documents/2018-ibc-amendments-state-included.pdf) and [2018 IPC amendments, state included](https://www.okc.gov/files/assets/city/v/1/development-services/documents/2018-ipc-amendments-state-included.pdf); elevator standards updated from January 1, 2026: [public notice of December 1, 2025](https://www.okc.gov/files/assets/city/v/1/development-services/documents/elevator-standards-update-january-2026.pdf). Checked 2026-11-24.

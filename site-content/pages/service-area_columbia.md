@@ -31,17 +31,6 @@ Columbia gets about 45 inches of rain a year, on roughly 109 days, and relative 
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Columbia job sites
-
-Toilet partitions for Columbia ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Columbia address.
-
 ## The rules a Columbia restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and South Carolina's own access standard set the sizes. There is no separate state registration: the local building department reviews the plans, and the state reviews plans for public schools and state buildings.
@@ -99,38 +88,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **State offices, university buildings and hospitals:** phenolic or stainless steel where restrooms are cleaned many times a day, HDPE where heavy traffic is hard on stalls.
 
-## Nearby cities we deliver to
+## Delivery to Columbia and nearby cities
 
-Every ZIP code in the Columbia area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Columbia ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We deliver to every ZIP code in the Columbia area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Columbia?
-Yes. Partitions ship by freight carrier to Columbia and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Columbia?
+Columbia requires a permit for all regulated work. The City says painting, flooring and other cosmetic work doesn't need a building permit and points to the building rules' list of exempt work. That list covers painting, papering, tiling, carpeting, cabinets, countertops and similar finish work, and movable partitions no taller than 5 feet 9 inches. It doesn't name toilet partitions fixed to the floor or wall, so ask the City of Columbia Development Center (803-545-3483) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Columbia?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. In Columbia the contractor needs a city business license, and a state contractor license when the project's total cost is over $10,000. Our directory lists [partition installers in Columbia](/installers/south-carolina/columbia), and you can ask for installation prices with your quote.
+### How many stalls does a Columbia restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with the City of Columbia Development Center.
+
+### Who can install toilet partitions in Columbia?
+A contractor you hire. We supply the partitions and the shop drawings. In Columbia the contractor needs a city business license, and a state contractor license when the project's total cost is over $10,000. Our directory lists [partition installers in Columbia](/installers/south-carolina/columbia), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Columbia's humidity?
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Columbia restroom have to meet?
-Federal and South Carolina wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the City of Columbia Development Center.
-
-### How do I get a price for my Columbia restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Columbia?
+8% in Columbia: 6% state, 1% Richland County local option tax and 1% Richland County transportation tax. The part of Columbia in Lexington County is taxed at 7%. Partitions shipped to Columbia are taxable. Freight is taxed when the seller delivers to your site and isn't taxed when the goods ship by common carrier with the sale made at the shipping point. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Columbia climate: NOAA NCEI Comparative Climatic Data, station Columbia, SC (WBAN 13883): [annual precipitation, 45.24 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 84% in the morning and 50% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 109 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Columbia enforces, the access standard it applies and the January 1, 2027 change: City of Columbia Planning and Development Services, [Building Codes & Regulations](https://planninganddevelopment.columbiasc.gov/building-codes-regulations/) and [Development Review, Permitting, & Building Inspections](https://planninganddevelopment.columbiasc.gov/development-inspections/), with the South Carolina Building Codes Council's [2024 South Carolina Code Adoptions](https://planninganddevelopment.columbiasc.gov/wp-content/uploads/2026/09/2024-Code-Adoption-Notice.pdf) notice the City links to. Checked 2026-11-24.

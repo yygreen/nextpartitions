@@ -31,17 +31,6 @@ The nearest long-term weather station, at Seattle, records about 39 inches of ra
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Tacoma job sites
-
-Toilet partitions for Tacoma ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Tacoma address.
-
 ## The rules a Tacoma restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Washington's own access rules set the sizes.
@@ -99,38 +88,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Port terminals, marine shops and waterfront parks:** solid plastic or phenolic for unheated restrooms and rooms open to outside air.
 
-## Nearby cities we deliver to
+## Delivery to Tacoma and nearby cities
 
-Seattle, Bellevue, Kent, Renton, Federal Way, Auburn, Lakewood and Lacey, and every other ZIP code in the Tacoma area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Tacoma ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Seattle, Bellevue, Kent, Renton, Federal Way, Auburn, Lakewood and Lacey, and every other ZIP code in the Tacoma area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Tacoma?
-Yes. Partitions ship by freight carrier to Tacoma and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Tacoma?
+Tacoma requires a permit for most construction work unless it is on the city's exempt list. The list covers "similar finish work" and movable partitions up to 5 feet 9 inches high, without naming toilet partitions, so ask Tacoma Planning and Development Services (253-591-5030) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Tacoma?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. In Tacoma that contractor needs a Washington L&I registration and a City of Tacoma business license. Our directory lists [partition installers in Tacoma](/installers/washington/tacoma), and you can ask for installation prices with your quote.
+### How many stalls does a Tacoma restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 2 women's and 2 men's stalls. The table above covers other sizes. Confirm the number for your building with Tacoma Planning and Development Services.
+
+### Who can install toilet partitions in Tacoma?
+A contractor you hire. We supply the partitions and the shop drawings. In Tacoma that contractor needs a Washington L&I registration and a City of Tacoma business license. Our directory lists [partition installers in Tacoma](/installers/washington/tacoma), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Tacoma's climate?
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Tacoma restroom have to meet?
-Federal and Washington wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with Tacoma Planning and Development Services.
-
-### How do I get a price for my Tacoma restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Tacoma?
+10.5% in Tacoma: 6.5% state and 4% local. Partitions shipped to Tacoma are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Tacoma climate: NOAA NCEI Comparative Climatic Data, station Seattle, WA (WBAN 24233): [annual precipitation, 39.34 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 82% in the morning and 63% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 156 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Tacoma building and plumbing codes: City of Tacoma, [Building Code Library](https://tacomapermits.org/building-code-library) ("2021 Tacoma Building Codes, for permits vested after March 15, 2024"), and [Ordinance No. 28957](https://legistar.granicus.com/cityoftacoma/attachments/a72b3cab-7165-4e15-85c3-2d13544a2509.pdf), which amended Tacoma Municipal Code chapters 2.02 (Building Code) and 2.06 (Plumbing Code) for the 2021 editions, effective March 18, 2024. Later changes: City Clerk, [Tacoma Municipal Code revision dates](https://ecode360.com/TA6977/document/753234415.pdf). Checked 2026-11-24.

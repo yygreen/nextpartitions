@@ -31,17 +31,6 @@ Pittsburgh gets about 40 inches of rain a year, on roughly 154 days, and relativ
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Pittsburgh job sites
-
-Toilet partitions for Pittsburgh ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Pittsburgh address.
-
 ## The rules a Pittsburgh restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use, and a room with six or more toilets and urinals also needs a narrower stall with grab bars on both sides. Federal law and Pennsylvania's building rules set the sizes. Access is checked with the building permit, by your local code office or, where it has no certified access inspector, by the state Department of Labor & Industry. Only the state can approve an exception.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hospitals and university campuses:** one material and one hardware standard across many buildings, in solid plastic or phenolic for restrooms that are cleaned many times a day.
 
-## Nearby cities we deliver to
+## Delivery to Pittsburgh and nearby cities
 
-Bethel Park, Monroeville and Plum, and every other ZIP code in the Pittsburgh area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Pittsburgh ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Bethel Park, Monroeville and Plum, and every other ZIP code in the Pittsburgh area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Pittsburgh?
-Yes. Partitions ship by freight carrier to Pittsburgh and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Pittsburgh?
+The city's Department of Permits, Licenses and Inspections (PLI) issues building permits in Pittsburgh. Its list of work that needs no permit includes ordinary repairs, painting, tiling, cabinets, countertops and similar finish work, and movable partitions no taller than 5 feet 9 inches. Cutting away a wall or partition is not an ordinary repair. The list doesn't name toilet partitions fixed to the floor or wall, so ask PLI (412-255-2175) whether your replacement needs one. Plumbing is the county's: installing, moving or replacing a toilet or urinal needs a plumbing permit from the Allegheny County Health Department's Plumbing Program (412-578-8036). You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Pittsburgh?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. For work under a commercial building permit, the contractor needs a City of Pittsburgh general contractor license. Our directory lists [partition installers in Pittsburgh](/installers/pennsylvania/pittsburgh), and you can ask for installation prices with your quote.
+### How many stalls does a Pittsburgh restroom need?
+For a building that holds 100 people, an office needs at least 3 women's stalls, 2 men's stalls and 2 urinals, a restaurant needs at least 2 women's stalls, 1 men's stall and 1 urinal and an elementary school needs at least 2 women's stalls, 1 men's stall and 1 urinal. The table above covers other sizes. Confirm the number for your building with the Pittsburgh Department of Permits, Licenses and Inspections and the Allegheny County Health Department's Plumbing Program.
+
+### Who can install toilet partitions in Pittsburgh?
+A contractor you hire. We supply the partitions and the shop drawings. For work under a commercial building permit, the contractor needs a City of Pittsburgh general contractor license. Our directory lists [partition installers in Pittsburgh](/installers/pennsylvania/pittsburgh), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Pittsburgh's climate?
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Pittsburgh restroom have to meet?
-Federal and Pennsylvania wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the Pittsburgh Department of Permits, Licenses and Inspections and the Allegheny County Health Department's Plumbing Program.
-
-### How do I get a price for my Pittsburgh restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Pittsburgh?
+7% in Pittsburgh: 6% state and 1% Allegheny County. Partitions shipped to Pittsburgh are taxable, and so is delivery charged by the seller. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Pittsburgh climate: NOAA NCEI Comparative Climatic Data, station Pittsburgh, PA (WBAN 94823): [annual precipitation, 39.61 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 79% in the morning and 57% in the afternoon, 1952–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 154 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes enforced in Pittsburgh: City of Pittsburgh Department of Permits, Licenses and Inspections, [External Policy EP-2025-01, UCC 2021 Code Adoption, revised December 15, 2025](https://www.pittsburghpa.gov/files/assets/city/v/1/pli/documents/pli-bulletins/ucc-2021-code-adoption_12152025.pdf) (the 2021 codes apply from January 1, 2026, with the 2018 accessibility provisions; the Allegheny County Health Department has sole authority over the plumbing code; local amendments are in Section 1002.02 of the Pittsburgh City Code) and [References, Resources, and Forms](https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/References-Resources-and-Forms). Checked 2026-11-24.

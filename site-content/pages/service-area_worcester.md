@@ -31,17 +31,6 @@ Worcester gets about 48 inches of rain a year, on roughly 134 days, and relative
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Worcester job sites
-
-Toilet partitions for Worcester ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Worcester address.
-
 ## The rules a Worcester restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Massachusetts's own access rules both apply, and the local building inspector enforces the state rules. On a remodel costing $100,000 or more, the building must also have an accessible toilet room and public entrance. An owner who can't meet a rule can ask the state's Architectural Access Board for a variance.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Colleges and hospitals:** phenolic or stainless steel where restrooms are cleaned many times a day, HDPE where student traffic is hard on stalls.
 
-## Nearby cities we deliver to
+## Delivery to Worcester and nearby cities
 
-Framingham, Leominster, Woonsocket, Fitchburg, Marlborough and Franklin, and every other ZIP code in the Worcester area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Worcester ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Framingham, Leominster, Woonsocket, Fitchburg, Marlborough and Franklin, and every other ZIP code in the Worcester area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Worcester?
-Yes. Partitions ship by freight carrier to Worcester and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Worcester?
+Worcester enforces the Massachusetts building rules, which require a permit to alter or repair a building and list the work that needs none. The list covers painting, papering, tiling, carpeting, cabinets, counter tops and similar finish work, and movable partitions no taller than 5 feet 9 inches. Ordinary repairs need no permit either. The list doesn't name toilet partitions fixed to the floor or wall, so ask Worcester's Building and Zoning Division (508-799-1198) whether your replacement needs one. Worcester fines work done without a required permit, $1,000 on a commercial property. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Worcester?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. Where a permit is needed, Worcester asks for the contractor's license and workers' compensation proof with the application. Our directory lists [partition installers in Worcester](/installers/massachusetts/worcester), and you can ask for installation prices with your quote.
+### How many stalls does a Worcester restroom need?
+For a building that holds 100 people, an office needs at least 3 women's and 2 men's stalls, a restaurant needs at least 2 women's and 1 men's stall and a school needs at least 2 women's and 2 men's stalls. The table above covers other sizes. Confirm the number for your building with Worcester's Building and Zoning Division at Inspectional Services.
+
+### Who can install toilet partitions in Worcester?
+A contractor you hire. We supply the partitions and the shop drawings. Where a permit is needed, Worcester asks for the contractor's license and workers' compensation proof with the application. Our directory lists [partition installers in Worcester](/installers/massachusetts/worcester), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Worcester's climate?
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Worcester restroom have to meet?
-Federal and Massachusetts wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with Worcester's Building and Zoning Division at Inspectional Services.
-
-### How do I get a price for my Worcester restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Worcester?
+6.25% in Worcester. That is Massachusetts's state rate, and no city or county sales tax on goods was found. Partitions shipped to Worcester are taxable at 6.25%. Freight shown as a separate charge for delivery after the sale is not taxed. If the seller doesn't collect the tax, the buyer owes it to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Worcester climate: NOAA NCEI Comparative Climatic Data, station Worcester, MA (WBAN 94746): [annual precipitation, 48.26 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 75% in the morning and 57% in the afternoon, 1949–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 134 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Worcester enforces: [Massachusetts State Building Code, 780 CMR, Tenth Edition, section 101.1](https://www.law.cornell.edu/regulations/massachusetts/780-CMR-101-101-1) and [section 101.2](https://www.law.cornell.edu/regulations/massachusetts/780-CMR-101-101-2) (the 2021 International Building Code with Massachusetts amendments, the building code for all cities and towns, effective October 11, 2024) and [section 101.4](https://www.law.cornell.edu/regulations/massachusetts/780-CMR-101-101-4) (plumbing follows 248 CMR, access follows 521 CMR), read on Cornell's Legal Information Institute copy; City of Worcester, [Building & Zoning](https://www.worcesterma.gov/building-zoning) (permits, the fine for work without a permit, license and workers' compensation proof on file, phone 508-799-1198) and [Revised Ordinances of 2015, Part Two](https://www.worcesterma.gov/city-clerk/document-center/revised-ordinances-2015-2.pdf), Inspectional Services, section 7 (the building commissioner enforces the state building code and the access rules). Checked 2026-11-24.

@@ -31,17 +31,6 @@ Las Vegas gets about 4 inches of rain a year, on roughly 26 days, and relative h
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Las Vegas job sites
-
-Toilet partitions for Las Vegas ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Las Vegas address.
-
 ## The rules a Las Vegas restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law sets the sizes. Nevada has no separate access rules of its own for private buildings: the city or county building department checks access under its building rules. State law requires public buildings to meet the federal standards.
@@ -99,38 +88,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hotels, casinos and convention venues:** finishes that match the property in guest-facing restrooms, HDPE or phenolic where crowds and round-the-clock cleaning are hard on stalls.
 
-## Nearby cities we deliver to
+## Delivery to Las Vegas and nearby cities
 
-Henderson and North Las Vegas, and every other ZIP code in the Las Vegas area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Las Vegas ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Henderson and North Las Vegas, and every other ZIP code in the Las Vegas area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Las Vegas?
-Yes. Partitions ship by freight carrier to Las Vegas and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Las Vegas?
+Las Vegas requires a permit to alter a building unless the work is on its exempt list. The list covers "partitions that do not exceed 5 feet 9 inches in height" and "similar finish work" without naming toilet partitions, so ask the Las Vegas Building & Safety Division whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Las Vegas?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. The contractor needs a Nevada contractor's license and a Las Vegas business license. Our directory lists [partition installers in Las Vegas](/installers/nevada/las-vegas), and you can ask for installation prices with your quote.
+### How many stalls does a Las Vegas restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with the Las Vegas Building & Safety Division.
+
+### Who can install toilet partitions in Las Vegas?
+A contractor you hire. We supply the partitions and the shop drawings. The contractor needs a Nevada contractor's license and a Las Vegas business license. Our directory lists [partition installers in Las Vegas](/installers/nevada/las-vegas), and you can ask for installation prices with your quote.
 
 ### Which partition material is best in Las Vegas?
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
-### What rules does a Las Vegas restroom have to meet?
-Federal and Nevada wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the Las Vegas Building & Safety Division.
-
-### How do I get a price for my Las Vegas restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Las Vegas?
+8.375% in Las Vegas: the 6.85% statewide rate plus 1.525% in Clark County taxes. Partitions shipped to Las Vegas are taxable. Freight listed separately on the invoice is not taxed, but handling, crating and packing charges are. An out-of-state seller with more than $100,000 in Nevada sales, or 200 or more Nevada sales, in a year collects the tax. If the seller doesn't collect it, the buyer owes use tax to the state.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Las Vegas climate: NOAA NCEI Comparative Climatic Data, station Las Vegas, NV (WBAN 23169): [annual precipitation, 4.18 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 36% in the morning and 20% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 26 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Las Vegas enforces: City of Las Vegas Building & Safety, [Resources, Codes tab](https://www.lasvegasnevada.gov/Government/Departments/Building-Safety/Building-Safety-Resources?tab=1) ("The city of Las Vegas has adopted the following codes 2024 IBC, IRC, IEBC, ISPSC, UPC, UMC ..."), [Industry Advisory, Adoption of the 2024 Code](https://files.lasvegasnevada.gov/building-safety/2025/Industry_Notice-2024_Code_Adoption.pdf) (approved July 16, 2025, effective January 5, 2026) and [Code Adoption History](https://files.lasvegasnevada.gov/building-safety/CLV-Code-History-updated-Sept-29-2026.pdf) (Ordinance 6910, 2024 International Building Code; Ordinance 6916, 2024 Uniform Plumbing Code). Checked 2026-11-24.

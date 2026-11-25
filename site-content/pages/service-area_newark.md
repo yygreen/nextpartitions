@@ -31,17 +31,6 @@ Newark gets about 47 inches of rain a year, on roughly 122 days, and relative hu
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Newark job sites
-
-Toilet partitions for Newark ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Newark address.
-
 ## The rules a Newark restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and New Jersey's own access rules set the sizes. In an existing building that has to be accessible, installing or moving partitions means creating a wheelchair-accessible stall where that can be done without moving the toilets. There is no separate state review: the local construction office checks access with the construction permit.
@@ -99,38 +88,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **College and hospital buildings:** phenolic or solid plastic in busy public restrooms, with extra-privacy stalls where the owner asks for them.
 
-## Nearby cities we deliver to
+## Delivery to Newark and nearby cities
 
-New York City, Jersey City, Yonkers, Paterson, Elizabeth, Clifton, New Rochelle and Mount Vernon, and every other ZIP code in the Newark area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Newark ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to New York City, Jersey City, Yonkers, Paterson, Elizabeth, Clifton, New Rochelle and Mount Vernon, and every other ZIP code in the Newark area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Newark?
-Yes. Partitions ship by freight carrier to Newark and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Newark?
+New Jersey's statewide permit rules apply in Newark. Their list of ordinary maintenance that needs no permit covers attached furnishings, cabinets and bathroom accessories, and doesn't name toilet partitions. The rules also treat replacing a non-structural part "such as a partition" without changing the layout of the space as minor work, where you tell the construction office before work starts and file a permit application within five business days. They don't say which of the two a toilet partition is, so ask the Newark construction office (973-733-5632) about your replacement. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Newark?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. Newark licenses building contractors under a city ordinance. Our directory lists [partition installers in Newark](/installers/new-jersey/newark), and you can ask for installation prices with your quote.
+### How many stalls does a Newark restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 2 women's and 2 men's stalls. The table above covers other sizes. Confirm the number for your building with the Newark construction office.
+
+### Who can install toilet partitions in Newark?
+A contractor you hire. We supply the partitions and the shop drawings. Newark licenses building contractors under a city ordinance. Our directory lists [partition installers in Newark](/installers/new-jersey/newark), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Newark's climate?
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Newark restroom have to meet?
-Federal and New Jersey wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the Newark construction office.
-
-### How do I get a price for my Newark restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Newark?
+6.625% in Newark. New Jersey has one rate for the whole state, with no city or county sales tax. Newark has an Urban Enterprise Zone, where certified sellers can charge half the rate, but only on orders placed in person at the seller's place of business in the zone. Partitions shipped to Newark are taxed at New Jersey's 6.625% rate, delivery charges included. If the seller doesn't collect the tax, the buyer owes it to the state as use tax.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Newark climate: NOAA NCEI Comparative Climatic Data, station Newark, NJ (WBAN 14734): [annual precipitation, 46.6 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 72% in the morning and 53% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 122 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes in force in Newark: New Jersey Department of Community Affairs, [Current Construction Codes](https://www.nj.gov/dca/codes/codreg/current.shtml) (International Building Code/2024, New Jersey edition, and National Standard Plumbing Code/2024, New Jersey edition, both adopted August 17, 2026); the previous editions and the six-month grace period: [Previously Adopted UCC Model Codes](https://www.nj.gov/dca/codes/codreg/previous.shtml) and [N.J.A.C. 5:23-1.6](https://www.nj.gov/dca/codes/codreg/pdf_regs/njac_5_23_1.pdf). One code for every municipality, with no local amendments: [State Uniform Construction Code Act, N.J.S.A. 52:27D-119 et seq.](https://www.nj.gov/dca/codes/codreg/pdf_regs/52_27D_119.pdf), section 52:27D-139. Checked 2026-11-24.

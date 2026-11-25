@@ -31,17 +31,6 @@ Rochester gets about 35 inches of rain a year, on roughly 163 days, and relative
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Rochester job sites
-
-Toilet partitions for Rochester ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Rochester address.
-
 ## The rules a Rochester restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and New York's building rules both set the sizes. New York has no separate state review for access: your local building department checks it with the building permit.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Universities, hospitals and manufacturing plants:** phenolic or stainless steel where restrooms are cleaned many times a day, HDPE where stalls take hard use.
 
-## Nearby cities we deliver to
+## Delivery to Rochester and nearby cities
 
-Every ZIP code in the Rochester area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Rochester ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We deliver to every ZIP code in the Rochester area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Rochester?
-Yes. Partitions ship by freight carrier to Rochester and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Rochester?
+Rochester requires a building permit for work that has to meet the building rules. New York lets each city exempt some small jobs, such as painting, tiling and similar finish work, and partitions or movable cases under 5 feet 9 inches tall. That list doesn't name toilet partitions, and Rochester keeps its own list, so ask the City of Rochester Permit Office (585-428-6526) whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Rochester?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. Rochester has no general contractor license, and New York State doesn't license this work. Our directory lists [partition installers in Rochester](/installers/new-york-state/rochester), and you can ask for installation prices with your quote.
+### How many stalls does a Rochester restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with the City of Rochester Permit Office.
+
+### Who can install toilet partitions in Rochester?
+A contractor you hire. We supply the partitions and the shop drawings. Rochester has no general contractor license, and New York State doesn't license this work. Our directory lists [partition installers in Rochester](/installers/new-york-state/rochester), and you can ask for installation prices with your quote.
 
 ### Which partition material is best for Rochester's climate?
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Rochester restroom have to meet?
-Federal and New York wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the City of Rochester Permit Office.
-
-### How do I get a price for my Rochester restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Rochester?
+8% in Rochester: 4% state and 4% Monroe County. The city adds no sales tax of its own. Partitions shipped to Rochester are taxable, freight included when the seller bills it. If the seller doesn't collect the tax, the buyer owes it to the state. Materials are taxed even when they go into a permanent improvement.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Rochester climate: NOAA NCEI Comparative Climatic Data, station Rochester, NY (WBAN 14768): [annual precipitation, 35.09 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 80% in the morning and 61% in the afternoon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 163 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Codes Rochester enforces: New York State Department of State, [Notice of Adoption](https://dos.ny.gov/notice-adoption) (2025 code books, in force for permit applications from December 31, 2025); [Rochester Municipal Code, Chapter 39, Building Code, Article I](https://ecode360.com/13765161), New York State Uniform Fire Prevention and Building Code and State Energy Conservation Construction Code (the code site blocks automated access; seen as a search excerpt, to be read in a browser). No stricter local standard for Rochester is listed by the [State Fire Prevention and Building Code Council](https://dos.ny.gov/state-fire-prevention-and-building-code-council) (More Restrictive Local Standards). Checked 2026-11-24.

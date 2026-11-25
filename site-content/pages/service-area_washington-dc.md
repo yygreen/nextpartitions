@@ -31,17 +31,6 @@ Washington, DC gets about 42 inches of rain a year, on roughly 114 days, and rel
 
 [Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
 
-## Delivery to Washington, DC job sites
-
-Toilet partitions for Washington, DC ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Washington, DC address.
-
 ## The rules a Washington, DC restroom has to meet
 
 - **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use, and a room with six or more stalls and urinals also needs a narrower stall with grab bars on both sides. Federal law and the District's own building rules set the sizes, and the DC Department of Buildings applies them when it reviews permit plans.
@@ -98,38 +87,34 @@ How tax applies depends on your contract, so confirm with your accountant or the
 - **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hotels, museums and universities:** finishes that match the building in visitor restrooms, HDPE or phenolic where crowds are hard on stalls.
 
-## Nearby cities we deliver to
+## Delivery to Washington, DC and nearby cities
 
-Alexandria, Gaithersburg, Rockville, Bowie, Manassas, Annapolis, College Park and Laurel, and every other ZIP code in the Washington, DC area. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Washington, DC ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Alexandria, Gaithersburg, Rockville, Bowie, Manassas, Annapolis, College Park and Laurel, and every other ZIP code in the Washington, DC area. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Washington, DC?
-Yes. Partitions ship by freight carrier to Washington, DC and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Washington, DC?
+The DC Department of Buildings requires a permit for interior alterations. Its list of work that needs no permit covers tiling, carpeting, cabinets, countertops and similar finish work, and movable partitions no taller than 5 feet 9 inches. It doesn't name toilet partitions. Ask the Department of Buildings whether your replacement needs one. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Washington, DC?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor working in Washington, DC needs a DC Basic Business License in a contractor category. Our directory lists [partition installers in Washington, DC](/installers/district-of-columbia/washington-dc), and you can ask for installation prices with your quote.
+### How many stalls does a Washington, DC restroom need?
+For a building that holds 100 people, an office needs at least 2 women's and 2 men's stalls, a restaurant needs at least 1 women's and 1 men's stall and a school needs at least 1 women's and 1 men's stall. The table above covers other sizes. Confirm the number for your building with the DC Department of Buildings.
+
+### Who can install toilet partitions in Washington, DC?
+A contractor you hire. We supply the partitions and the shop drawings. A contractor working in Washington, DC needs a DC Basic Business License in a contractor category. Our directory lists [partition installers in Washington, DC](/installers/district-of-columbia/washington-dc), and you can ask for installation prices with your quote.
 
 ### Which partition material is best in Washington, DC?
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
-### What rules does a Washington, DC restroom have to meet?
-Federal and District of Columbia wheelchair-access rules, the fire-safety rule for solid plastic partitions, and the rules on how many toilets a building needs. Confirm your project with the DC Department of Buildings.
-
-### How do I get a price for my Washington, DC restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Washington, DC?
+6% in Washington, DC. The District has one rate, with no county or city tax on top. The rate is set to rise to 7% on October 1, 2027. Partitions shipped to Washington, DC are taxable. A freight charge listed separately on the invoice is left out of the taxed price when the shipping happens after the sale. If the seller doesn't collect the tax, the buyer owes it to the District as use tax.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Washington, DC climate: NOAA NCEI Comparative Climatic Data, station Washington Nat'L, DC (WBAN 13743): [annual precipitation, 41.82 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 74% in the morning and 53% in the afternoon, 1941–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 114 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-24.
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Work that needs a permit in Washington, DC and work that doesn't: 2017 District of Columbia Building Code (12-A DCMR), Sections 105.1 and 105.2, in [DOB's integrated code, Part 1](https://dob.dc.gov/sites/default/files/dc/sites/dob/publication/attachments/2017%20District%20of%20Columbia%20Building%20Code_Part%201.pdf), and DC Department of Buildings, [How to Get a Permit](https://dob.dc.gov/page/get-permit). Checked 2026-11-24.
