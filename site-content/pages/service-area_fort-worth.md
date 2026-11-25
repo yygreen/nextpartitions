@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Fort Worth job sites. Price yo
 h1: Bathroom Partitions in Fort Worth
 city: Fort Worth
 state: Texas
+state_url: /service-area/texas
 lat: 32.782
 lng: -97.3486
 primary_keyword: bathroom partitions fort worth
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Fort Worth ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Arlington, Mansfield, North Richland Hills, Flower Mound and Denton, and every other ZIP code in the Fort Worth area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Arlington, Mansfield, North Richland Hills, Flower Mound and Denton, and every other ZIP code in the Fort Worth area. Other cities are on the [Texas page](/service-area/texas). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

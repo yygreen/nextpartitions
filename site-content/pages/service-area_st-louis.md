@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to St. Louis job sites. Price you
 h1: Bathroom Partitions in St. Louis
 city: St. Louis
 state: Missouri
+state_url: /service-area/missouri
 lat: 38.6357
 lng: -90.2446
 primary_keyword: bathroom partitions st. louis
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for St. Louis ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to O'Fallon, St. Charles, St. Peters, Florissant, Chesterfield, Belleville, Wildwood and University City, and every other ZIP code in the St. Louis area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to O'Fallon, St. Charles, St. Peters, Florissant, Chesterfield, Belleville, Wildwood and University City, and every other ZIP code in the St. Louis area. Other cities are on the [Missouri page](/service-area/missouri). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

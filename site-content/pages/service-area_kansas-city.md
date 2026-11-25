@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Kansas City job sites. Price y
 h1: Bathroom Partitions in Kansas City
 city: Kansas City
 state: Missouri
+state_url: /service-area/missouri
 lat: 39.1252
 lng: -94.5503
 primary_keyword: bathroom partitions kansas city
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Kansas City ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Overland Park, Olathe, Independence, Lee's Summit, Shawnee, Blue Springs, Lenexa and Leavenworth, and every other ZIP code in the Kansas City area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Overland Park, Olathe, Independence, Lee's Summit, Shawnee, Blue Springs, Lenexa and Leavenworth, and every other ZIP code in the Kansas City area. Other cities are on the [Missouri page](/service-area/missouri). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

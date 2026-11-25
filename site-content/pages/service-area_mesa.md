@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Mesa job sites. Price your res
 h1: Bathroom Partitions in Mesa
 city: Mesa
 state: Arizona
+state_url: /service-area/arizona
 lat: 33.4006
 lng: -111.7165
 primary_keyword: bathroom partitions mesa
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Mesa ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Phoenix, Chandler, Gilbert, Glendale, Scottsdale, Tempe, Queen Creek and Maricopa, and every other ZIP code in the Mesa area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Phoenix, Chandler, Gilbert, Glendale, Scottsdale, Tempe, Queen Creek and Maricopa, and every other ZIP code in the Mesa area. Other cities are on the [Arizona page](/service-area/arizona). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

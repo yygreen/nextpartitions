@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Colorado Springs job sites. Pr
 h1: Bathroom Partitions in Colorado Springs
 city: Colorado Springs
 state: Colorado
+state_url: /service-area/colorado
 lat: 38.8673
 lng: -104.7607
 primary_keyword: bathroom partitions colorado springs
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant, the C
 
 Toilet partitions for Colorado Springs ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Fountain and every other ZIP code in the Colorado Springs area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Fountain and every other ZIP code in the Colorado Springs area. Other cities are on the [Colorado page](/service-area/colorado). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

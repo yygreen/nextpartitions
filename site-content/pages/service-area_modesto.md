@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Modesto job sites. Price your 
 h1: Bathroom Partitions in Modesto
 city: Modesto
 state: California
+state_url: /service-area/california
 lat: 37.6375
 lng: -121.003
 primary_keyword: bathroom partitions modesto
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Modesto ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Stockton, Tracy, Manteca, Turlock, Ceres, Lathrop, Atwater and Patterson, and every other ZIP code in the Modesto area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Stockton, Tracy, Manteca, Turlock, Ceres, Lathrop, Atwater and Patterson, and every other ZIP code in the Modesto area. Other cities are on the [California page](/service-area/california). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

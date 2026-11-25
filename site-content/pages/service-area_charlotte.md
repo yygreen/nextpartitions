@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Charlotte job sites. Price you
 h1: Bathroom Partitions in Charlotte
 city: Charlotte
 state: North Carolina
+state_url: /service-area/north-carolina
 lat: 35.209
 lng: -80.831
 primary_keyword: bathroom partitions charlotte
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Charlotte ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Concord, Gastonia, Rock Hill, Huntersville, Kannapolis, Mooresville, Indian Trail and Monroe, and every other ZIP code in the Charlotte area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Concord, Gastonia, Rock Hill, Huntersville, Kannapolis, Mooresville, Indian Trail and Monroe, and every other ZIP code in the Charlotte area. Other cities are on the [North Carolina page](/service-area/north-carolina). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

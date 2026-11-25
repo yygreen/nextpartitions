@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Lexington job sites. Price you
 h1: Bathroom Partitions in Lexington
 city: Lexington
 state: Kentucky
+state_url: /service-area/kentucky
 lat: 38.0407
 lng: -84.4583
 primary_keyword: bathroom partitions lexington
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Lexington ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Georgetown, Richmond, Nicholasville and Frankfort, and every other ZIP code in the Lexington area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Georgetown, Richmond, Nicholasville and Frankfort, and every other ZIP code in the Lexington area. Other cities are on the [Kentucky page](/service-area/kentucky). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

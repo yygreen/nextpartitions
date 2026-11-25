@@ -426,13 +426,14 @@ function hubCard(item, big, filter) {
   const page = existsSync(`${PAGES}/${item.href.replace(/^\//, '').replace(/\//g, '_')}.md`) ? parse(`${item.href.replace(/^\//, '').replace(/\//g, '_')}.md`) : null
   const raw = page ? readFileSync(`${PAGES}/${item.href.replace(/^\//, '').replace(/\//g, '_')}.md`, 'utf8').split('<!-- For Marc -->')[0] : ''
   const summary = item.summary || page?.fm.meta || ''
-  const type = HUB_TYPE[item.href.split('/')[1]] || 'Guide'
+  const type = item.href.startsWith('/service-area/') ? 'City' : HUB_TYPE[item.href.split('/')[1]] || 'Guide'
   const mount = item.href.match(/^\/mounting-styles\/(.+)$/)
   let thumb
   if (mount) thumb = `<img src="${renderSrc(`${mount[1]}-hero`)}" alt="" loading="lazy">`
   else {
     const m = raw.match(/\(\/images\/diagrams\/([a-z0-9-]+)\.svg\)/)
-    const name = (HERO_DIAGRAM[item.href] || (m ? m[1] : HUB_THUMB[item.href] || 'partition-anatomy')).replace(/-m\d?$/, '')
+    const city = item.href.match(/^\/service-area\/([a-z-]+)$/)  // a city buy page: its state map
+    const name = (city && existsSync(`${DIAGRAMS}city-${city[1]}.svg`) ? `city-${city[1]}` : HERO_DIAGRAM[item.href] || (m ? m[1] : HUB_THUMB[item.href] || 'partition-anatomy')).replace(/-m\d?$/, '')
     const file = existsSync(`${DIAGRAMS}${name}.svg`) ? `${name}.svg` : `${m[1]}.svg`
     const pre = `c${hubN++}-`
     thumb = inlineSvg(file).replace(/<title[\s\S]*?<\/title>|<desc[\s\S]*?<\/desc>/g, '').replace(/ aria-labelledby="[^"]*"/, ' aria-hidden="true"')
@@ -440,16 +441,16 @@ function hubCard(item, big, filter) {
   }
   const date = page?.fm.date && type === 'Blog' ? `<span class="np-hc-date">${esc(page.fm.date)}</span>` : ''
   const data = filter ? ` data-cat="${esc(item.cat || '')}" data-text="${esc(`${item.label} ${summary} ${item.cat || ''}`.toLowerCase())}"` : ''
-  return `<a class="np-hc${big ? ' np-hc-big' : ''}" href="${item.href}"${data}><div class="np-hc-media">${thumb}</div><div class="np-hc-body"><div class="np-hc-meta"><span class="np-hc-type">${esc(item.cat || type)}</span>${date}</div><h3>${esc(item.label)}</h3><p>${esc(summary)}</p><span class="np-hc-go">${type === 'Blog' ? 'Read the post' : 'Read more'} ${ICON_ARROW}</span></div></a>`
+  return `<a class="np-hc${big ? ' np-hc-big' : ''}" href="${item.href}"${data}><div class="np-hc-media">${thumb}</div><div class="np-hc-body"><div class="np-hc-meta"><span class="np-hc-type">${esc(item.cat || type)}</span>${date}</div><h3>${esc(item.label)}</h3><p>${esc(summary)}</p><span class="np-hc-go">${type === 'Blog' ? 'Read the post' : type === 'City' ? 'See the city page' : 'Read more'} ${ICON_ARROW}</span></div></a>`
 }
 const HUB_CSS = `.np-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.np-chips a{padding:6px 14px;border-radius:999px;border:1px solid rgba(251,250,249,.3);font-size:14px;font-weight:500;color:#fbfaf9}.np-chips a:hover{border-color:#fe7802;color:#fe7802}
 .np-hs{padding:48px 0;border-bottom:1px solid var(--border,#e5e0da);scroll-margin-top:120px}.np-hs:last-of-type{border-bottom:0}.np-hs h2{font-size:26px;font-weight:700;margin:0 0 6px}.np-hs>div>p{color:var(--muted-foreground,#7a6a5e);margin:0 0 24px;max-width:46rem}
 .np-hg{display:grid;gap:20px}@media(min-width:640px){.np-hg{grid-template-columns:repeat(2,1fr)}}@media(min-width:1024px){.np-hg{grid-template-columns:repeat(3,1fr)}}.np-hs-note{margin:16px 0 0;font-size:13px;line-height:1.55;color:var(--muted-foreground,#7a6a5e);max-width:52rem}.np-hs-note a,.np-hs>div>p a{color:#fe7802;font-weight:500}
 .np-hc{display:flex;flex-direction:column;background:#fff;border:1px solid var(--border,#e5e0da);border-radius:10px;overflow:hidden;transition:border-color .15s,box-shadow .15s;min-width:0}.np-hc:hover{border-color:#fe7802;box-shadow:0 8px 24px rgba(28,14,5,.08)}
-.np-hc-media{aspect-ratio:16/9;max-width:100%;display:flex;align-items:center;justify-content:center;background:#fff;border-bottom:1px solid var(--border,#e5e0da);padding:12px;overflow:hidden}.np-hc-media svg{width:100%;height:100%}.np-hc-media .co,.np-hc-media .dn{display:none}.np-hc-media img{width:100%;height:100%;object-fit:contain}
+.np-hc-media{aspect-ratio:16/9;max-width:100%;display:flex;align-items:center;justify-content:center;background:#fff;border-bottom:1px solid var(--border,#e5e0da);padding:12px;overflow:hidden}.np-hc-media svg{width:100%;height:100%}.np-hc-media svg.np-city-map{width:auto!important;height:170px!important;max-width:100%;flex:0 0 auto}.np-hc-media .co,.np-hc-media .dn{display:none}.np-hc-media img{width:100%;height:100%;object-fit:contain}
 .np-hc-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}.np-hc-meta{display:flex;gap:10px;align-items:center;font-size:12px}.np-hc-type{font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fe7802}.np-hc-date{color:var(--muted-foreground,#7a6a5e)}
 .np-hc h3{font-size:18px;line-height:1.3;font-weight:700;margin:0;color:var(--foreground,#1c0e05)}.np-hc p{margin:0;font-size:15px;line-height:1.55;color:var(--muted-foreground,#7a6a5e)}.np-hc-go{margin-top:auto;padding-top:6px;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:#fe7802}.np-hc-go svg{width:15px;height:15px}`
-function hub(fm, intro, sections, url, faq, sources) {
+function hub(fm, intro, sections, url, faq, sources, crumbs) {
   const items = (s) => [...s.md.matchAll(/^- \[([^\]]+)\]\(([^)]+)\)(?::\s*(.+))?$/gm)].map((m) => ({ label: m[1], href: m[2], summary: m[3] }))
   const lists = sections.filter((s) => items(s).length)
   const latest = lists.find((s) => /^Latest/i.test(s.title)), topics = lists.filter((s) => s !== latest)
@@ -458,10 +459,10 @@ function hub(fm, intro, sections, url, faq, sources) {
   const end = sections.find((s) => !items(s).length)
   return `<main class="flex-1">
 <div class="relative bg-primary text-primary-foreground overflow-hidden"><div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-<nav aria-label="Breadcrumb" class="py-3"><ol class="flex items-center gap-1.5 text-sm text-primary-foreground/60 flex-wrap"><li class="flex items-center gap-1.5"><a class="hover:text-primary-foreground/90 transition-colors" href="/">Home</a></li><li class="flex items-center gap-1.5">${ICON_CHEVRON}<span class="text-primary-foreground font-medium" aria-current="page">${esc(SECTION[url.slice(1)][0])}</span></li></ol></nav>
+<nav aria-label="Breadcrumb" class="py-3"><ol class="flex items-center gap-1.5 text-sm text-primary-foreground/60 flex-wrap"><li class="flex items-center gap-1.5"><a class="hover:text-primary-foreground/90 transition-colors" href="/">Home</a></li>${(crumbs && crumbs.length > 2 ? crumbs.slice(1, -1) : []).map(([n, h]) => `<li class="flex items-center gap-1.5">${ICON_CHEVRON}<a class="hover:text-primary-foreground/90 transition-colors" href="${h}">${esc(n)}</a></li>`).join('')}<li class="flex items-center gap-1.5">${ICON_CHEVRON}<span class="text-primary-foreground font-medium" aria-current="page">${esc(crumbs && crumbs.length > 2 ? crumbs[crumbs.length - 1][0] : SECTION[url.slice(1)][0])}</span></li></ol></nav>
 <h1 class="text-3xl md:text-4xl font-bold mt-2 mb-3">${esc(fm.h1)}</h1>
 <p class="text-lg opacity-90 max-w-3xl">${strip(md(lead))}</p>
-<nav class="np-chips" aria-label="Topics">${topics.map((s) => `<a href="#${slug(s.title)}">${esc(s.title)}</a>`).join('')}</nav>
+${topics.length > 1 ? `<nav class="np-chips" aria-label="Topics">${topics.map((s) => `<a href="#${slug(s.title)}">${esc(s.title)}</a>`).join('')}</nav>` : ''}
 </div></div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 ${latest ? `<section class="np-hs"><div><h2>${esc(latest.title)}</h2><p>New articles, newest first.</p></div><div class="np-hg">${items(latest).map((i) => hubCard(i)).join('')}</div></section>` : ''}
@@ -545,6 +546,8 @@ function build(file, built) {
   const seg = url.split('/').filter(Boolean)
   const crumbs = [['Home', '/']]
   if (seg.length > 1 && SECTION[seg[0]]) crumbs.push(SECTION[seg[0]])
+  // a city buy page in a state that has a hub page: Home > Service Area > Texas > the city
+  if (fm.state_url && fm.state) crumbs.push([fm.state, fm.state_url])
   if (url !== '/') crumbs.push([fm.h1, url])
 
   // Hero: the first paragraph, and the first CTA line as the button.
@@ -577,7 +580,7 @@ function build(file, built) {
   const noSrc = isCat || ['/brands', '/industries', '/guides', '/blog'].includes(url)
   const srcHtml = sources && !noSrc ? `<section class="np-sources mt-10 border-t border-border pt-6 text-xs text-muted-foreground"><h2 class="text-sm font-semibold text-foreground mb-2">Sources</h2>${md(sources.md).replace(/text-muted-foreground leading-relaxed mb-4/g, 'mb-2').replace(/space-y-2 text-muted-foreground leading-relaxed mb-4/g, 'space-y-1')}</section>` : ''
 
-  let main = url === '/blog' ? blogHub(fm, intro, content) : HUBS.has(url) ? hub(fm, intro, content, url, items, null) : `<main class="flex-1">
+  let main = url === '/blog' ? blogHub(fm, intro, content) : (HUBS.has(url) || fm.hub) ? hub(fm, intro, content, url, items, null, crumbs) : `<main class="flex-1">
 <div class="relative bg-primary text-primary-foreground overflow-hidden"><div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 <nav aria-label="Breadcrumb" class="py-3"><ol class="flex items-center gap-1.5 text-sm text-primary-foreground/60" style="flex-wrap:nowrap;white-space:nowrap;min-width:0;overflow:hidden">${crumbs.map(([n, h], i) => i === crumbs.length - 1
     // one row: the current page's name is cut off with an ellipsis when it doesn't fit
@@ -648,7 +651,7 @@ ${shell.match(/<section class="border-t border-border bg-accent\/30">[\s\S]*?<\/
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(fm.title)}</title>`)
     .replace(/<meta name="description"[^>]*>/, '')
     .replace(/<link rel="canonical"[^>]*>/, '')
-    .replace('</head>', `<meta name="description" content="${esc(fm.meta)}"/>\n<link rel="canonical" href="${SITE}${url}"/>\n<meta name="robots" content="noindex"/>\n${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join('\n')}\n<style>${PAGE_CSS}${HUBS.has(url) || url === '/blog' ? HUB_CSS : ''}${url === '/blog' ? BLOG_CSS : ''}${CATEGORY.has(url.split('/')[1]) ? CAT_CSS : ''}${main.includes('np-chk') ? CHECKER_CSS : ''}${main.includes('np-pr') ? PRICER_CSS : ''}${main.includes('np-st') ? STALLS_CSS : ''}${MOBILE_CSS}</style>\n</head>`)
+    .replace('</head>', `<meta name="description" content="${esc(fm.meta)}"/>\n<link rel="canonical" href="${SITE}${url}"/>\n<meta name="robots" content="noindex"/>\n${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join('\n')}\n<style>${PAGE_CSS}${HUBS.has(url) || fm.hub || url === '/blog' ? HUB_CSS : ''}${url === '/blog' ? BLOG_CSS : ''}${CATEGORY.has(url.split('/')[1]) ? CAT_CSS : ''}${main.includes('np-chk') ? CHECKER_CSS : ''}${main.includes('np-pr') ? PRICER_CSS : ''}${main.includes('np-st') ? STALLS_CSS : ''}${MOBILE_CSS}</style>\n</head>`)
     .replace(/<body([^>]*)>/, `<body$1><div style="background:#111;color:#fff;font:12px/1.4 Inter,system-ui,sans-serif;padding:6px 16px;text-align:center">Preview of new page content for nextpartitions.com${url} · not the live site · <a href="index.html" style="color:#fff;text-decoration:underline">all preview pages</a></div>`)
     // Links: rebuilt pages stay in the preview; everything else goes to the live site.
     .replace(/(href|src)="\/(?!\/)([^"]*)"/g, (_, attr, path) => {

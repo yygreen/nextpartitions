@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Raleigh job sites. Price your 
 h1: Bathroom Partitions in Raleigh
 city: Raleigh
 state: North Carolina
+state_url: /service-area/north-carolina
 lat: 35.8319
 lng: -78.641
 primary_keyword: bathroom partitions raleigh
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Raleigh ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Durham, Cary, Apex, Chapel Hill, Wake Forest, Holly Springs, Fuquay-Varina and Garner, and every other ZIP code in the Raleigh area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Durham, Cary, Apex, Chapel Hill, Wake Forest, Holly Springs, Fuquay-Varina and Garner, and every other ZIP code in the Raleigh area. Other cities are on the [North Carolina page](/service-area/north-carolina). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Tulsa job sites. Price your re
 h1: Bathroom Partitions in Tulsa
 city: Tulsa
 state: Oklahoma
+state_url: /service-area/oklahoma
 lat: 36.1279
 lng: -95.9023
 primary_keyword: bathroom partitions tulsa
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Tulsa ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Broken Arrow, Owasso, Bixby and Jenks, and every other ZIP code in the Tulsa area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Broken Arrow, Owasso, Bixby and Jenks, and every other ZIP code in the Tulsa area. Other cities are on the [Oklahoma page](/service-area/oklahoma). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

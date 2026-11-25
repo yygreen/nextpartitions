@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Rochester job sites. Price you
 h1: Bathroom Partitions in Rochester
 city: Rochester
 state: New York
+state_url: /service-area/new-york-state
 lat: 43.1699
 lng: -77.6169
 primary_keyword: bathroom partitions rochester
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Rochester ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We deliver to every ZIP code in the Rochester area. We ship to all 50 states: see the full [service area](/service-area).
+We deliver to every ZIP code in the Rochester area. Other cities are on the [New York page](/service-area/new-york-state). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Oklahoma City job sites. Price
 h1: Bathroom Partitions in Oklahoma City
 city: Oklahoma City
 state: Oklahoma
+state_url: /service-area/oklahoma
 lat: 35.4671
 lng: -97.5137
 primary_keyword: bathroom partitions oklahoma city
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Oklahoma City ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Norman, Edmond, Moore, Midwest City and Yukon, and every other ZIP code in the Oklahoma City area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Norman, Edmond, Moore, Midwest City and Yukon, and every other ZIP code in the Oklahoma City area. Other cities are on the [Oklahoma page](/service-area/oklahoma). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Norfolk job sites. Price your 
 h1: Bathroom Partitions in Norfolk
 city: Norfolk
 state: Virginia
+state_url: /service-area/virginia
 lat: 36.923
 lng: -76.2446
 primary_keyword: bathroom partitions norfolk
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Norfolk ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Virginia Beach, Chesapeake, Newport News, Hampton, Suffolk and Portsmouth, and every other ZIP code in the Norfolk area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Virginia Beach, Chesapeake, Newport News, Hampton, Suffolk and Portsmouth, and every other ZIP code in the Norfolk area. Other cities are on the [Virginia page](/service-area/virginia). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

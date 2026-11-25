@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Philadelphia job sites. Price 
 h1: Bathroom Partitions in Philadelphia
 city: Philadelphia
 state: Pennsylvania
+state_url: /service-area/pennsylvania
 lat: 40.0094
 lng: -75.1333
 primary_keyword: bathroom partitions philadelphia
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Philadelphia ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Trenton, Wilmington, Camden, Norristown and Chester, and every other ZIP code in the Philadelphia area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Trenton, Wilmington, Camden, Norristown and Chester, and every other ZIP code in the Philadelphia area. Other cities are on the [Pennsylvania page](/service-area/pennsylvania). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

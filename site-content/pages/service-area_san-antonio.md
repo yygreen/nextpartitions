@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to San Antonio job sites. Price y
 h1: Bathroom Partitions in San Antonio
 city: San Antonio
 state: Texas
+state_url: /service-area/texas
 lat: 29.4628
 lng: -98.5246
 primary_keyword: bathroom partitions san antonio
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for San Antonio ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to New Braunfels, Schertz, Cibolo and Converse, and every other ZIP code in the San Antonio area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to New Braunfels, Schertz, Cibolo and Converse, and every other ZIP code in the San Antonio area. Other cities are on the [Texas page](/service-area/texas). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

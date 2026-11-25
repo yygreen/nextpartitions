@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Springfield, MO job sites. Pri
 h1: Bathroom Partitions in Springfield
 city: Springfield
 state: Missouri
+state_url: /service-area/missouri
 lat: 37.1942
 lng: -93.2926
 primary_keyword: bathroom partitions springfield
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Springfield ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Nixa and every other ZIP code in the Springfield area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Nixa and every other ZIP code in the Springfield area. Other cities are on the [Missouri page](/service-area/missouri). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

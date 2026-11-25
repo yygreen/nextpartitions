@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Greensboro job sites. Price yo
 h1: Bathroom Partitions in Greensboro
 city: Greensboro
 state: North Carolina
+state_url: /service-area/north-carolina
 lat: 36.0949
 lng: -79.8236
 primary_keyword: bathroom partitions greensboro
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Greensboro ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Winston-Salem, High Point, Burlington, Kernersville, Asheboro and Thomasville, and every other ZIP code in the Greensboro area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Winston-Salem, High Point, Burlington, Kernersville, Asheboro and Thomasville, and every other ZIP code in the Greensboro area. Other cities are on the [North Carolina page](/service-area/north-carolina). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Birmingham job sites. Price yo
 h1: Bathroom Partitions in Birmingham
 city: Birmingham
 state: Alabama
+state_url: /service-area/alabama
 lat: 33.5272
 lng: -86.797
 primary_keyword: bathroom partitions birmingham
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Birmingham ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Hoover, Vestavia Hills, Alabaster, Homewood, Trussville, Pelham and Bessemer, and every other ZIP code in the Birmingham area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Hoover, Vestavia Hills, Alabaster, Homewood, Trussville, Pelham and Bessemer, and every other ZIP code in the Birmingham area. Other cities are on the [Alabama page](/service-area/alabama). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

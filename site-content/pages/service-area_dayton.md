@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Dayton job sites. Price your r
 h1: Bathroom Partitions in Dayton
 city: Dayton
 state: Ohio
+state_url: /service-area/ohio
 lat: 39.7847
 lng: -84.1996
 primary_keyword: bathroom partitions dayton
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Dayton ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Springfield, Kettering, Middletown, Beavercreek, Huber Heights, Mason, Fairborn and Troy, and every other ZIP code in the Dayton area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Springfield, Kettering, Middletown, Beavercreek, Huber Heights, Mason, Fairborn and Troy, and every other ZIP code in the Dayton area. Other cities are on the [Ohio page](/service-area/ohio). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

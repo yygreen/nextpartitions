@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to New York City job sites. Price
 h1: Bathroom Partitions in New York City
 city: New York City
 state: New York
+state_url: /service-area/new-york-state
 lat: 40.6627
 lng: -73.9387
 primary_keyword: bathroom partitions new york city
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for New York City ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Newark, Jersey City, Yonkers, Paterson, Elizabeth, Clifton, New Rochelle and Mount Vernon, and every other ZIP code in the New York City area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Newark, Jersey City, Yonkers, Paterson, Elizabeth, Clifton, New Rochelle and Mount Vernon, and every other ZIP code in the New York City area. Other cities are on the [New York page](/service-area/new-york-state). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

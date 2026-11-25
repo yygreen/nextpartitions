@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Akron job sites. Price your re
 h1: Bathroom Partitions in Akron
 city: Akron
 state: Ohio
+state_url: /service-area/ohio
 lat: 41.0805
 lng: -81.5214
 primary_keyword: bathroom partitions akron
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Akron ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Cleveland, Parma, Canton, Cuyahoga Falls, Strongsville, Cleveland Heights, Brunswick and Stow, and every other ZIP code in the Akron area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Cleveland, Parma, Canton, Cuyahoga Falls, Strongsville, Cleveland Heights, Brunswick and Stow, and every other ZIP code in the Akron area. Other cities are on the [Ohio page](/service-area/ohio). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

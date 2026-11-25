@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Denver job sites. Price your r
 h1: Bathroom Partitions in Denver
 city: Denver
 state: Colorado
+state_url: /service-area/colorado
 lat: 39.7619
 lng: -104.8811
 primary_keyword: bathroom partitions denver
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant, the D
 
 Toilet partitions for Denver ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Aurora, Lakewood, Thornton, Arvada, Westminster, Centennial, Boulder and Castle Rock, and every other ZIP code in the Denver area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Aurora, Lakewood, Thornton, Arvada, Westminster, Centennial, Boulder and Castle Rock, and every other ZIP code in the Denver area. Other cities are on the [Colorado page](/service-area/colorado). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

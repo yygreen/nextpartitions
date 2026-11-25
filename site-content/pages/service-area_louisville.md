@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Louisville job sites. Price yo
 h1: Bathroom Partitions in Louisville
 city: Louisville
 state: Kentucky
+state_url: /service-area/kentucky
 lat: 38.1654
 lng: -85.6474
 primary_keyword: bathroom partitions louisville
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Louisville ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Jeffersonville, New Albany and Jeffersontown, and every other ZIP code in the Louisville area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Jeffersonville, New Albany and Jeffersontown, and every other ZIP code in the Louisville area. Other cities are on the [Kentucky page](/service-area/kentucky). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

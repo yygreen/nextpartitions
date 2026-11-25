@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Tampa job sites. Price your re
 h1: Bathroom Partitions in Tampa
 city: Tampa
 state: Florida
+state_url: /service-area/florida
 lat: 27.9701
 lng: -82.4797
 primary_keyword: bathroom partitions tampa
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Tampa ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to St. Petersburg, Clearwater, Largo, Pinellas Park, Plant City, Dunedin, Temple Terrace and Tarpon Springs, and every other ZIP code in the Tampa area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to St. Petersburg, Clearwater, Largo, Pinellas Park, Plant City, Dunedin, Temple Terrace and Tarpon Springs, and every other ZIP code in the Tampa area. Other cities are on the [Florida page](/service-area/florida). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

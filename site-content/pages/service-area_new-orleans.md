@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to New Orleans job sites. Price y
 h1: Bathroom Partitions in New Orleans
 city: New Orleans
 state: Louisiana
+state_url: /service-area/louisiana
 lat: 30.0534
 lng: -89.9345
 primary_keyword: bathroom partitions new orleans
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for New Orleans ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Kenner and Slidell, and every other ZIP code in the New Orleans area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Kenner and Slidell, and every other ZIP code in the New Orleans area. Other cities are on the [Louisiana page](/service-area/louisiana). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

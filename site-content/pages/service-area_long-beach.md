@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Long Beach job sites. Price yo
 h1: Bathroom Partitions in Long Beach
 city: Long Beach
 state: California
+state_url: /service-area/california
 lat: 33.7808
 lng: -118.1682
 primary_keyword: bathroom partitions long beach
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Long Beach ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Los Angeles, Anaheim, Irvine, Santa Ana, Huntington Beach, Glendale, Garden Grove and Fullerton, and every other ZIP code in the Long Beach area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Los Angeles, Anaheim, Irvine, Santa Ana, Huntington Beach, Glendale, Garden Grove and Fullerton, and every other ZIP code in the Long Beach area. Other cities are on the [California page](/service-area/california). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

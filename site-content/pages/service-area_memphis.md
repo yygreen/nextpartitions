@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Memphis job sites. Price your 
 h1: Bathroom Partitions in Memphis
 city: Memphis
 state: Tennessee
+state_url: /service-area/tennessee
 lat: 35.1092
 lng: -89.9685
 primary_keyword: bathroom partitions memphis
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Memphis ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Southaven, Bartlett, Collierville, Olive Branch, Germantown and Horn Lake, and every other ZIP code in the Memphis area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Southaven, Bartlett, Collierville, Olive Branch, Germantown and Horn Lake, and every other ZIP code in the Memphis area. Other cities are on the [Tennessee page](/service-area/tennessee). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

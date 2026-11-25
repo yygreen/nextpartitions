@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to San Francisco job sites. Price
 h1: Bathroom Partitions in San Francisco
 city: San Francisco
 state: California
+state_url: /service-area/california
 lat: 37.7749
 lng: -122.4194
 primary_keyword: bathroom partitions san francisco
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for San Francisco ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Oakland, Hayward, Vallejo, Concord, Berkeley, Richmond, San Mateo and Daly City, and every other ZIP code in the San Francisco area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Oakland, Hayward, Vallejo, Concord, Berkeley, Richmond, San Mateo and Daly City, and every other ZIP code in the San Francisco area. Other cities are on the [California page](/service-area/california). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

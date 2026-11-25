@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Austin job sites. Price your r
 h1: Bathroom Partitions in Austin
 city: Austin
 state: Texas
+state_url: /service-area/texas
 lat: 30.2986
 lng: -97.7541
 primary_keyword: bathroom partitions austin
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Austin ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Round Rock, Georgetown, Leander, Cedar Park, Pflugerville, Kyle and Hutto, and every other ZIP code in the Austin area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Round Rock, Georgetown, Leander, Cedar Park, Pflugerville, Kyle and Hutto, and every other ZIP code in the Austin area. Other cities are on the [Texas page](/service-area/texas). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

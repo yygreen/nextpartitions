@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Chattanooga job sites. Price y
 h1: Bathroom Partitions in Chattanooga
 city: Chattanooga
 state: Tennessee
+state_url: /service-area/tennessee
 lat: 35.066
 lng: -85.2484
 primary_keyword: bathroom partitions chattanooga
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Chattanooga ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Cleveland and Dalton, and every other ZIP code in the Chattanooga area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Cleveland and Dalton, and every other ZIP code in the Chattanooga area. Other cities are on the [Tennessee page](/service-area/tennessee). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

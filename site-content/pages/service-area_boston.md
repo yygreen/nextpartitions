@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Boston job sites. Price your r
 h1: Bathroom Partitions in Boston
 city: Boston
 state: Massachusetts
+state_url: /service-area/massachusetts
 lat: 42.3386
 lng: -71.0183
 primary_keyword: bathroom partitions boston
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Boston ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Cambridge, Lowell, Brockton, Quincy, Lynn, Newton, Lawrence and Somerville, and every other ZIP code in the Boston area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Cambridge, Lowell, Brockton, Quincy, Lynn, Newton, Lawrence and Somerville, and every other ZIP code in the Boston area. Other cities are on the [Massachusetts page](/service-area/massachusetts). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

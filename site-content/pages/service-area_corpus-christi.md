@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Corpus Christi job sites. Pric
 h1: Bathroom Partitions in Corpus Christi
 city: Corpus Christi
 state: Texas
+state_url: /service-area/texas
 lat: 27.7543
 lng: -97.1734
 primary_keyword: bathroom partitions corpus christi
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Corpus Christi ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We deliver to every ZIP code in the Corpus Christi area. We ship to all 50 states: see the full [service area](/service-area).
+We deliver to every ZIP code in the Corpus Christi area. Other cities are on the [Texas page](/service-area/texas). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Milwaukee job sites. Price you
 h1: Bathroom Partitions in Milwaukee
 city: Milwaukee
 state: Wisconsin
+state_url: /service-area/wisconsin
 lat: 43.0633
 lng: -87.9667
 primary_keyword: bathroom partitions milwaukee
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Milwaukee ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Racine, Waukesha, West Allis, Wauwatosa, Brookfield, New Berlin, Menomonee Falls and Oak Creek, and every other ZIP code in the Milwaukee area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Racine, Waukesha, West Allis, Wauwatosa, Brookfield, New Berlin, Menomonee Falls and Oak Creek, and every other ZIP code in the Milwaukee area. Other cities are on the [Wisconsin page](/service-area/wisconsin). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

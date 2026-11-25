@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Cleveland job sites. Price you
 h1: Bathroom Partitions in Cleveland
 city: Cleveland
 state: Ohio
+state_url: /service-area/ohio
 lat: 41.4785
 lng: -81.6794
 primary_keyword: bathroom partitions cleveland
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Cleveland ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Akron, Parma, Lorain, Elyria, Cuyahoga Falls, Lakewood, Euclid and Mentor, and every other ZIP code in the Cleveland area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Akron, Parma, Lorain, Elyria, Cuyahoga Falls, Lakewood, Euclid and Mentor, and every other ZIP code in the Cleveland area. Other cities are on the [Ohio page](/service-area/ohio). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Columbia, SC job sites. Price 
 h1: Bathroom Partitions in Columbia
 city: Columbia
 state: South Carolina
+state_url: /service-area/south-carolina
 lat: 34.0405
 lng: -80.9061
 primary_keyword: bathroom partitions columbia
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Columbia ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We deliver to every ZIP code in the Columbia area. We ship to all 50 states: see the full [service area](/service-area).
+We deliver to every ZIP code in the Columbia area. Other cities are on the [South Carolina page](/service-area/south-carolina). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

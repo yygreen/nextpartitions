@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Worcester job sites. Price you
 h1: Bathroom Partitions in Worcester
 city: Worcester
 state: Massachusetts
+state_url: /service-area/massachusetts
 lat: 42.2695
 lng: -71.8078
 primary_keyword: bathroom partitions worcester
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Worcester ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Framingham, Leominster, Woonsocket, Fitchburg, Marlborough and Franklin, and every other ZIP code in the Worcester area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Framingham, Leominster, Woonsocket, Fitchburg, Marlborough and Franklin, and every other ZIP code in the Worcester area. Other cities are on the [Massachusetts page](/service-area/massachusetts). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

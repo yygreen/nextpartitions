@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Jacksonville job sites. Price 
 h1: Bathroom Partitions in Jacksonville
 city: Jacksonville
 state: Florida
+state_url: /service-area/florida
 lat: 30.3369
 lng: -81.6616
 primary_keyword: bathroom partitions jacksonville
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Jacksonville ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We deliver to every ZIP code in the Jacksonville area. We ship to all 50 states: see the full [service area](/service-area).
+We deliver to every ZIP code in the Jacksonville area. Other cities are on the [Florida page](/service-area/florida). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

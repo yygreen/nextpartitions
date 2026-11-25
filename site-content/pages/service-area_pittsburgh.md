@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Pittsburgh job sites. Price yo
 h1: Bathroom Partitions in Pittsburgh
 city: Pittsburgh
 state: Pennsylvania
+state_url: /service-area/pennsylvania
 lat: 40.4399
 lng: -79.9757
 primary_keyword: bathroom partitions pittsburgh
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Pittsburgh ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Bethel Park, Monroeville and Plum, and every other ZIP code in the Pittsburgh area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Bethel Park, Monroeville and Plum, and every other ZIP code in the Pittsburgh area. Other cities are on the [Pennsylvania page](/service-area/pennsylvania). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

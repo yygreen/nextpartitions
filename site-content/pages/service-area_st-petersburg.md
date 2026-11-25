@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to St. Petersburg job sites. Pric
 h1: Bathroom Partitions in St. Petersburg
 city: St. Petersburg
 state: Florida
+state_url: /service-area/florida
 lat: 27.7627
 lng: -82.6441
 primary_keyword: bathroom partitions st. petersburg
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for St. Petersburg ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Tampa, Clearwater, Largo, Sarasota, Bradenton, Pinellas Park, Dunedin and Temple Terrace, and every other ZIP code in the St. Petersburg area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Tampa, Clearwater, Largo, Sarasota, Bradenton, Pinellas Park, Dunedin and Temple Terrace, and every other ZIP code in the St. Petersburg area. Other cities are on the [Florida page](/service-area/florida). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

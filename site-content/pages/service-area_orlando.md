@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Orlando job sites. Price your 
 h1: Bathroom Partitions in Orlando
 city: Orlando
 state: Florida
+state_url: /service-area/florida
 lat: 28.4087
 lng: -81.2548
 primary_keyword: bathroom partitions orlando
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Orlando ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Kissimmee, St. Cloud, Sanford, Apopka, Titusville, Ocoee, Clermont and Winter Garden, and every other ZIP code in the Orlando area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Kissimmee, St. Cloud, Sanford, Apopka, Titusville, Ocoee, Clermont and Winter Garden, and every other ZIP code in the Orlando area. Other cities are on the [Florida page](/service-area/florida). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Ontario, CA job sites. Price y
 h1: Bathroom Partitions in Ontario
 city: Ontario
 state: California
+state_url: /service-area/california
 lat: 34.0376
 lng: -117.6044
 primary_keyword: bathroom partitions ontario
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Ontario ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Anaheim, Riverside, Irvine, Santa Ana, San Bernardino, Fontana, Moreno Valley and Rancho Cucamonga, and every other ZIP code in the Ontario area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Anaheim, Riverside, Irvine, Santa Ana, San Bernardino, Fontana, Moreno Valley and Rancho Cucamonga, and every other ZIP code in the Ontario area. Other cities are on the [California page](/service-area/california). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

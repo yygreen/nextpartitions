@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Atlanta job sites. Price your 
 h1: Bathroom Partitions in Atlanta
 city: Atlanta
 state: Georgia
+state_url: /service-area/georgia
 lat: 33.7629
 lng: -84.4227
 primary_keyword: bathroom partitions atlanta
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Atlanta ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to South Fulton, Sandy Springs, Roswell, Johns Creek, Alpharetta, Marietta, Stonecrest and Brookhaven, and every other ZIP code in the Atlanta area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to South Fulton, Sandy Springs, Roswell, Johns Creek, Alpharetta, Marietta, Stonecrest and Brookhaven, and every other ZIP code in the Atlanta area. Other cities are on the [Georgia page](/service-area/georgia). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

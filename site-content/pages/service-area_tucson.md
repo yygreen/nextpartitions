@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Tucson job sites. Price your r
 h1: Bathroom Partitions in Tucson
 city: Tucson
 state: Arizona
+state_url: /service-area/arizona
 lat: 32.153
 lng: -110.8708
 primary_keyword: bathroom partitions tucson
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Tucson ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Marana, Oro Valley and Sahuarita, and every other ZIP code in the Tucson area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Marana, Oro Valley and Sahuarita, and every other ZIP code in the Tucson area. Other cities are on the [Arizona page](/service-area/arizona). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

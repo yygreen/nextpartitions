@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Cincinnati job sites. Price yo
 h1: Bathroom Partitions in Cincinnati
 city: Cincinnati
 state: Ohio
+state_url: /service-area/ohio
 lat: 39.1402
 lng: -84.5058
 primary_keyword: bathroom partitions cincinnati
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Cincinnati ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Hamilton, Middletown, Fairfield, Covington, Mason, Florence and Independence, and every other ZIP code in the Cincinnati area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Hamilton, Middletown, Fairfield, Covington, Mason, Florence and Independence, and every other ZIP code in the Cincinnati area. Other cities are on the [Ohio page](/service-area/ohio). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

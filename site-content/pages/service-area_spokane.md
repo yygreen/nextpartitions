@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Spokane job sites. Price your 
 h1: Bathroom Partitions in Spokane
 city: Spokane
 state: Washington
+state_url: /service-area/washington
 lat: 47.6669
 lng: -117.4333
 primary_keyword: bathroom partitions spokane
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Spokane ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Spokane Valley, Coeur d'Alene and Post Falls, and every other ZIP code in the Spokane area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Spokane Valley, Coeur d'Alene and Post Falls, and every other ZIP code in the Spokane area. Other cities are on the [Washington page](/service-area/washington). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

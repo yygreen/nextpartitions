@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Long Island job sites. Price y
 h1: Bathroom Partitions on Long Island
 city: Long Island
 state: New York
+state_url: /service-area/new-york-state
 lat: 40.8366
 lng: -73.1408
 primary_keyword: bathroom partitions long island
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Long Island ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Hempstead, Freeport, Glen Cove, Lindenhurst and Rockville Centre, and every other ZIP code in the Long Island area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Hempstead, Freeport, Glen Cove, Lindenhurst and Rockville Centre, and every other ZIP code in the Long Island area. Other cities are on the [New York page](/service-area/new-york-state). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

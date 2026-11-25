@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Savannah job sites. Price your
 h1: Bathroom Partitions in Savannah
 city: Savannah
 state: Georgia
+state_url: /service-area/georgia
 lat: 32.018
 lng: -81.1965
 primary_keyword: bathroom partitions savannah
@@ -85,7 +86,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Savannah ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Hilton Head Island, Hinesville, Bluffton and Pooler, and every other ZIP code in the Savannah area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Hilton Head Island, Hinesville, Bluffton and Pooler, and every other ZIP code in the Savannah area. Other cities are on the [Georgia page](/service-area/georgia). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

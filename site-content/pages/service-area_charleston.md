@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Charleston job sites. Price yo
 h1: Bathroom Partitions in Charleston
 city: Charleston
 state: South Carolina
+state_url: /service-area/south-carolina
 lat: 32.828
 lng: -79.9729
 primary_keyword: bathroom partitions charleston
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Charleston ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to North Charleston, Mount Pleasant, Summerville and Goose Creek, and every other ZIP code in the Charleston area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to North Charleston, Mount Pleasant, Summerville and Goose Creek, and every other ZIP code in the Charleston area. Other cities are on the [South Carolina page](/service-area/south-carolina). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

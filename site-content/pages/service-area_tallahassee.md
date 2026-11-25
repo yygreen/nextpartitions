@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Tallahassee job sites. Price y
 h1: Bathroom Partitions in Tallahassee
 city: Tallahassee
 state: Florida
+state_url: /service-area/florida
 lat: 30.4535
 lng: -84.2523
 primary_keyword: bathroom partitions tallahassee
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Tallahassee ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We deliver to every ZIP code in the Tallahassee area. We ship to all 50 states: see the full [service area](/service-area).
+We deliver to every ZIP code in the Tallahassee area. Other cities are on the [Florida page](/service-area/florida). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 

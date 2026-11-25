@@ -5,6 +5,7 @@ meta: Commercial bathroom partitions delivered to Phoenix job sites. Price your 
 h1: Bathroom Partitions in Phoenix
 city: Phoenix
 state: Arizona
+state_url: /service-area/arizona
 lat: 33.5722
 lng: -112.0901
 primary_keyword: bathroom partitions phoenix
@@ -86,7 +87,7 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 Toilet partitions for Phoenix ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-We also deliver to Mesa, Chandler, Gilbert, Glendale, Scottsdale, Peoria, Tempe and Surprise, and every other ZIP code in the Phoenix area. We ship to all 50 states: see the full [service area](/service-area).
+We also deliver to Mesa, Chandler, Gilbert, Glendale, Scottsdale, Peoria, Tempe and Surprise, and every other ZIP code in the Phoenix area. Other cities are on the [Arizona page](/service-area/arizona). We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
