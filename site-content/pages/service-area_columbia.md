@@ -24,12 +24,12 @@ Columbia
 
 ## The right material for Columbia's climate
 
-Columbia gets about 45 inches of rain a year, on roughly 109 days, and relative humidity averages 84% in the morning and 50% in the afternoon. What that means for partitions depends on whether the restroom is air-conditioned:
+Columbia gets about 45 inches of rain a year, on roughly 109 days, and relative humidity averages 84% in the morning and 50% in the afternoon. On average the wettest month is July (about 5.3 inches) and the driest is November (about 2.8 inches). What that means for partitions depends on whether the restroom is air-conditioned:
 
 - **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Restrooms open to outside air or without air conditioning** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Columbia restroom has to meet
 
@@ -61,9 +61,7 @@ To find your building's capacity, South Carolina's building rules count an offic
 
 ## Installation in Columbia
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Columbia](/installers/south-carolina/columbia) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Columbia](/installers/south-carolina/columbia) lists local installers, and you can ask for their prices in your quote request.
 
 Installers need a City of Columbia business license and must show their credentials to the building official before a permit is issued. With a commercial permit application the City asks for a copy of the contractor's state license, the current city business license and the signed contract. South Carolina requires a state contractor license when a commercial project's total construction cost is over $10,000. You don't need a permit to buy partitions.
 
@@ -81,12 +79,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Columbia buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **State offices, university buildings and hospitals:** phenolic or stainless steel where restrooms are cleaned many times a day, HDPE where heavy traffic is hard on stalls.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Columbia and nearby cities
 
@@ -111,7 +105,7 @@ A contractor you hire. We supply the partitions and the shop drawings. In Columb
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Columbia?
-8% in Columbia: 6% state, 1% Richland County local option tax and 1% Richland County transportation tax. The part of Columbia in Lexington County is taxed at 7%. Partitions shipped to Columbia are taxable. Freight is taxed when the seller delivers to your site and isn't taxed when the goods ship by common carrier with the sale made at the shipping point. If the seller doesn't collect the tax, the buyer owes it to the state.
+8% in Columbia: 6% state, 1% Richland County local option tax and 1% Richland County transportation tax. The part of Columbia in Lexington County is taxed at 7%. How tax applies to installation depends on your contract, so confirm with your accountant or the South Carolina Department of Revenue.
 
 ## Sources
 

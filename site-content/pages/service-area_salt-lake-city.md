@@ -24,12 +24,12 @@ Salt Lake City
 
 ## The right material for Salt Lake City's climate
 
-Salt Lake City gets about 16 inches of rain a year, on roughly 92 days, and relative humidity averages 63% in the morning and 43% in the afternoon. The weather rarely decides the material here. The room does:
+Salt Lake City gets about 16 inches of rain a year, on roughly 92 days, and relative humidity averages 63% in the morning and 43% in the afternoon. On average the wettest month is April (about 2.2 inches) and the driest is July (about 0.5 inches). The weather rarely decides the material here. The room does:
 
 - **Most restrooms** (offices, restaurants, retail, clinics, schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Rooms that get wet from the inside** (pool facilities, gym locker rooms, restrooms that are hosed down): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Salt Lake City restroom has to meet
 
@@ -60,9 +60,7 @@ To find your building's capacity, Utah's building rules count an office at one p
 
 ## Installation in Salt Lake City
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Salt Lake City](/installers/utah/salt-lake-city) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Salt Lake City](/installers/utah/salt-lake-city) lists local installers, and you can ask for their prices in your quote request.
 
 On a commercial property, Salt Lake City issues permits only to state-licensed contractors, and the contractor obtains the permit where one is needed. Utah requires a contractor license for alteration or remodel work valued at $7,000 or more, labor and materials included; between $3,000 and $7,000 the contractor files a one-time insurance statement with the state. You don't need a permit to buy partitions.
 
@@ -80,12 +78,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Salt Lake City buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hospitals and university buildings:** phenolic or stainless steel where restrooms are cleaned often, with full-height privacy options.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Salt Lake City and nearby cities
 
@@ -110,7 +104,7 @@ A contractor you hire. We supply the partitions and the shop drawings. On a job 
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
 ### What tax applies to partitions delivered to Salt Lake City?
-8.45% in Salt Lake City: 4.85% state, 1% local, 0.25% county, 1.25% in transit and transportation taxes, 0.1% for botanical, cultural and zoo organizations, a 0.5% correctional facility tax and a 0.5% capital city revitalization tax. Partitions shipped to Salt Lake City are taxable. Freight is not taxed if it is listed separately on the invoice. If the seller doesn't collect the tax, the buyer owes it to the state as use tax.
+8.45% in Salt Lake City: 4.85% state, 1% local, 0.25% county, 1.25% in transit and transportation taxes, 0.1% for botanical, cultural and zoo organizations, a 0.5% correctional facility tax and a 0.5% capital city revitalization tax. How tax applies to installation depends on your contract, so confirm with your accountant or the Utah State Tax Commission.
 
 ## Sources
 

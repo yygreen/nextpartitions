@@ -24,12 +24,12 @@ Nashville
 
 ## The right material for Nashville's climate
 
-Nashville gets about 51 inches of rain a year, on roughly 121 days, and relative humidity averages 84% in the morning and 56% in the afternoon. What that means for partitions depends on whether the restroom is air-conditioned:
+Nashville gets about 51 inches of rain a year, on roughly 121 days, and relative humidity averages 84% in the morning and 56% in the afternoon. On average the wettest month is May (about 5.0 inches) and the driest is October (about 3.4 inches). What that means for partitions depends on whether the restroom is air-conditioned:
 
 - **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Restrooms open to outside air or without air conditioning** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Nashville restroom has to meet
 
@@ -60,9 +60,7 @@ To find your building's capacity, the building rules count an office at one pers
 
 ## Installation in Nashville
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Nashville](/installers/tennessee/nashville) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Nashville](/installers/tennessee/nashville) lists local installers, and you can ask for their prices in your quote request.
 
 Where a permit is needed, Metro Nashville issues commercial permits only to a contractor who is licensed in Tennessee, has a permit bond and holds a Metro business license. Tennessee requires a state contractor license to bid or take commercial projects of $25,000 or more. Confirm what your project needs with Metro Codes and Building Safety. You don't need a permit to buy partitions.
 
@@ -80,12 +78,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Nashville buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Music venues, honky-tonks and event halls:** HDPE or phenolic for restrooms that take big crowds and frequent cleaning.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Nashville and nearby cities
 
@@ -110,7 +104,7 @@ A contractor you hire. We supply the partitions and the shop drawings. A contrac
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Nashville?
-9.75% in Nashville: 7% state, 2.25% Davidson County and a 0.5% transit surcharge. The 2.75% local part applies only to the first $1,600 of the price of each single item, and the state adds 2.75% on the part of an item's price between $1,600 and $3,200. Partitions shipped to Nashville are taxable, freight included when the seller bills it. If the seller doesn't collect the tax, the buyer owes it to the state.
+9.75% in Nashville: 7% state, 2.25% Davidson County and a 0.5% transit surcharge. The 2.75% local part applies only to the first $1,600 of the price of each single item, and the state adds 2.75% on the part of an item's price between $1,600 and $3,200. How tax applies to installation depends on your contract, so confirm with your accountant or the Tennessee Department of Revenue.
 
 ## Sources
 

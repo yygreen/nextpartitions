@@ -24,12 +24,12 @@ Sacramento
 
 ## The right material for Sacramento's climate
 
-Sacramento gets about 18 inches of rain a year, on roughly 57 days, and relative humidity averages 78% in the morning and 45% in the afternoon. The weather rarely decides the material here. The room does:
+Sacramento gets about 18 inches of rain a year, on roughly 57 days, and relative humidity averages 78% in the morning and 45% in the afternoon. On average the wettest month is January (about 3.7 inches) and the driest is July (almost none). The weather rarely decides the material here. The room does:
 
 - **Most restrooms** (offices, restaurants, retail, clinics, schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Rooms that get wet from the inside** (pool facilities, gym locker rooms, restrooms that are hosed down): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Sacramento restroom has to meet
 
@@ -60,9 +60,7 @@ To find your building's capacity, California's plumbing rules count an office at
 
 ## Installation in Sacramento
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Sacramento](/installers/california/sacramento) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Sacramento](/installers/california/sacramento) lists local installers, and you can ask for their prices in your quote request.
 
 In Sacramento, contractors pay the city's business operations tax when a building permit is issued, and permits go to the owner, the owner's agent or a licensed contractor. California requires its contractor license, usually the C-61/D-34 class, for partition installs of $1,000 or more, and at any price when the job needs workers or a permit. You don't need a permit to buy partitions.
 
@@ -80,12 +78,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Sacramento buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Government offices and public buildings:** stainless steel or phenolic that stands up to heavy daily use.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Sacramento and nearby cities
 
@@ -110,7 +104,7 @@ A contractor you hire. We supply the partitions and the shop drawings. In Sacram
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
 ### What tax applies to partitions delivered to Sacramento?
-8.75% in Sacramento: 7.25% statewide, 0.5% for the county transportation authority and 1% city. Partitions shipped to Sacramento are taxable. If the seller doesn't collect the tax, the buyer owes it to the state.
+8.75% in Sacramento: 7.25% statewide, 0.5% for the county transportation authority and 1% city. How tax applies to installation depends on your contract, so confirm with your accountant or the California Department of Tax and Fee Administration.
 
 ## Sources
 

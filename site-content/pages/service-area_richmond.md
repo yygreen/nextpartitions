@@ -24,12 +24,12 @@ Richmond
 
 ## The right material for Richmond's climate
 
-Richmond gets about 46 inches of rain a year, on roughly 115 days, and relative humidity averages 81% in the morning and 53% in the afternoon. In most Richmond restrooms the room decides the material, not the weather:
+Richmond gets about 46 inches of rain a year, on roughly 115 days, and relative humidity averages 81% in the morning and 53% in the afternoon. On average the wettest month is August (about 4.9 inches) and the driest is February (about 2.6 inches). In most Richmond restrooms the room decides the material, not the weather:
 
 - **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Restrooms without air conditioning, or that get wet from the inside** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Richmond restroom has to meet
 
@@ -60,9 +60,7 @@ To find your building's capacity, Virginia's building rules count an office at o
 
 ## Installation in Richmond
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Richmond](/installers/virginia/richmond) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Richmond](/installers/virginia/richmond) lists local installers, and you can ask for their prices in your quote request.
 
 Virginia requires a state contractor license for commercial jobs over $1,000: Class C covers single jobs up to $30,000, Class B up to $150,000, and Class A $150,000 and above. Richmond confirms the license before it reviews a building permit application, and asks for a City of Richmond business license from a contractor whose work in the city came to $25,000 or more over the past 12 months. Confirm with the Bureau of Permits and Inspections and the Virginia Board for Contractors. You don't need a permit to buy partitions.
 
@@ -80,12 +78,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Richmond buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **State offices, courts and university buildings:** phenolic or stainless steel with heavy-duty hardware, for restrooms that serve the public all day.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Richmond and nearby cities
 
@@ -110,7 +104,7 @@ A contractor you hire. We supply the partitions and the shop drawings. On a job 
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Richmond?
-6% in Richmond: 4.3% state, 1% city and a 0.7% regional tax that applies across Central Virginia. Partitions shipped to Richmond are taxable. Freight is not taxed when it is listed separately on the invoice. If the seller doesn't collect the tax, the buyer owes it to the state as use tax.
+6% in Richmond: 4.3% state, 1% city and a 0.7% regional tax that applies across Central Virginia. How tax applies to installation depends on your contract, so confirm with your accountant or the Virginia Department of Taxation.
 
 ## Sources
 

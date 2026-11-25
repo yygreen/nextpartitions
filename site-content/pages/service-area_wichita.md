@@ -24,12 +24,12 @@ Wichita
 
 ## The right material for Wichita's climate
 
-Wichita gets about 34 inches of rain a year, on roughly 86 days, and relative humidity averages 80% in the morning and 55% in the afternoon. In most Wichita restrooms the room decides the material, not the weather:
+Wichita gets about 34 inches of rain a year, on roughly 86 days, and relative humidity averages 80% in the morning and 55% in the afternoon. On average the wettest month is May (about 5.2 inches) and the driest is January (about 0.8 inches). In most Wichita restrooms the room decides the material, not the weather:
 
 - **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Restrooms without air conditioning, or that get wet from the inside** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Wichita restroom has to meet
 
@@ -60,9 +60,7 @@ To find your building's capacity, Wichita's building rules count an office at on
 
 ## Installation in Wichita
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Wichita](/installers/kansas/wichita) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Wichita](/installers/kansas/wichita) lists local installers, and you can ask for their prices in your quote request.
 
 Wichita and Sedgwick County license general contractors through MABCD, in Classes A to D. The licensing rules don't apply to a subcontractor working under a general contractor, or to a nonstructural job that costs $2,500 or less. Kansas has no state license for this work. Confirm what your project needs with MABCD. You don't need a permit to buy partitions.
 
@@ -80,12 +78,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Wichita buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Aircraft plants and their suppliers:** HDPE or phenolic in shop-floor restrooms and locker rooms, powder coated steel or laminate in the office areas.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Wichita and nearby cities
 
@@ -110,7 +104,7 @@ A contractor you hire. We supply the partitions and the shop drawings. A contrac
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Wichita?
-7.5% in Wichita: 6.5% state and 1% Sedgwick County. Wichita has no city sales tax. Some addresses, several of them downtown, sit in special districts that add 1% to 2%. Partitions shipped to Wichita are taxable at the rate for the delivery address. Delivery charges listed separately on the invoice are not taxed. If the seller doesn't collect the tax, the buyer owes it to the state.
+7.5% in Wichita: 6.5% state and 1% Sedgwick County. Wichita has no city sales tax. Some addresses, several of them downtown, sit in special districts that add 1% to 2%. How tax applies to installation depends on your contract, so confirm with your accountant or the Kansas Department of Revenue.
 
 ## Sources
 

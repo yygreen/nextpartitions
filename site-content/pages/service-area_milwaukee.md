@@ -24,12 +24,12 @@ Milwaukee
 
 ## The right material for Milwaukee's climate
 
-Milwaukee gets about 35 inches of rain a year, on roughly 125 days, and relative humidity averages 79% in the morning and 63% in the afternoon. What that means for partitions depends on whether the restroom is heated and ventilated:
+Milwaukee gets about 35 inches of rain a year, on roughly 125 days, and relative humidity averages 79% in the morning and 63% in the afternoon. On average the wettest month is June (about 4.4 inches) and the driest is February (about 1.7 inches). What that means for partitions depends on whether the restroom is heated and ventilated:
 
 - **Heated, ventilated restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Unheated restrooms or rooms open to outside air** (parks, stadiums, warehouses, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Milwaukee restroom has to meet
 
@@ -60,9 +60,7 @@ To find your building's capacity, the building rules count an office at one pers
 
 ## Installation in Milwaukee
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Milwaukee](/installers/wisconsin/milwaukee) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Milwaukee](/installers/wisconsin/milwaukee) lists local installers, and you can ask for their prices in your quote request.
 
 Building permits in Milwaukee come from the city's Department of Neighborhood Services, which also reviews plans for commercial buildings in place of the state. Check local contractor licensing or registration with the department before work starts. Wisconsin does not license contractors for commercial work at the state level: state licensing covers one- and two-family dwelling contractors and certain trades, such as electrical and HVAC. You don't need a permit to buy partitions.
 
@@ -80,12 +78,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Milwaukee buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Breweries, taprooms and food plants:** solid plastic or stainless steel for rooms with wet floors and regular washdown.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Milwaukee and nearby cities
 
@@ -110,7 +104,7 @@ A contractor you hire. We supply the partitions and the shop drawings. Wisconsin
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Milwaukee?
-7.9% in Milwaukee: 5% state, 0.9% Milwaukee County and 2% city. Partitions shipped to Milwaukee are taxable, and so is the seller's delivery charge. If the seller doesn't collect the tax, the buyer owes it to the state. Schools and government bodies can buy tax free with an exemption certificate.
+7.9% in Milwaukee: 5% state, 0.9% Milwaukee County and 2% city. How tax applies to installation depends on your contract, so confirm with your accountant or the Wisconsin Department of Revenue.
 
 ## Sources
 

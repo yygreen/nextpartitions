@@ -24,12 +24,12 @@ Charleston
 
 ## The right material for Charleston's climate
 
-Charleston gets about 44 inches of rain a year, on roughly 107 days. In most Charleston restrooms the room decides the material, not the weather:
+Charleston gets about 44 inches of rain a year, on roughly 107 days. On average the wettest month is August (about 6.1 inches) and the driest is November (about 2.3 inches). In most Charleston restrooms the room decides the material, not the weather:
 
 - **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Restrooms without air conditioning, or that get wet from the inside** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Charleston restroom has to meet
 
@@ -61,9 +61,7 @@ To find your building's capacity, South Carolina's building rules count an offic
 
 ## Installation in Charleston
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Charleston](/installers/south-carolina/charleston) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Charleston](/installers/south-carolina/charleston) lists local installers, and you can ask for their prices in your quote request.
 
 Charleston asks installers for proof of their South Carolina contractor license. Its commercial alteration permit lists two licenses: a City of Charleston business license and a South Carolina contractor license. South Carolina requires a state contractor license when a commercial project's total construction cost is over $10,000. Confirm what your project needs with the City of Charleston Permit Center. You don't need a permit to buy partitions.
 
@@ -81,12 +79,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Charleston buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hotels, hospitals and port buildings:** phenolic or stainless steel where restrooms are cleaned many times a day, HDPE or phenolic where the room is open to outside air.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Charleston and nearby cities
 
@@ -111,7 +105,7 @@ A contractor you hire. We supply the partitions and the shop drawings. On a perm
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Charleston?
-9% in Charleston: 6% state plus 3% in Charleston County taxes, which are 1% local option, 1% for school buildings and the rest for transportation. The part of the city in Berkeley County is also at 9%. Partitions shipped to Charleston are taxable. Freight is taxed when the seller delivers to your site and isn't taxed when the goods ship by common carrier with the sale made at the shipping point. If the seller doesn't collect the tax, the buyer owes it to the state.
+9% in Charleston: 6% state plus 3% in Charleston County taxes, which are 1% local option, 1% for school buildings and the rest for transportation. The part of the city in Berkeley County is also at 9%. How tax applies to installation depends on your contract, so confirm with your accountant or the South Carolina Department of Revenue.
 
 ## Sources
 

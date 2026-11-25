@@ -24,12 +24,12 @@ Honolulu
 
 ## The right material for Honolulu's climate
 
-Honolulu gets about 16 inches of rain a year, on roughly 92 days, and relative humidity averages 74% in the morning and 56% in the afternoon. In most Honolulu restrooms the room decides the material, not the weather:
+Honolulu gets about 16 inches of rain a year, on roughly 92 days, and relative humidity averages 74% in the morning and 56% in the afternoon. On average the wettest month is March (about 2.4 inches) and the driest is June (about 0.5 inches). In most Honolulu restrooms the room decides the material, not the weather:
 
 - **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Restrooms without air conditioning, or that get wet from the inside** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Honolulu restroom has to meet
 
@@ -60,9 +60,7 @@ To find your building's capacity, the building rules count an office at one pers
 
 ## Installation in Honolulu
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Honolulu](/installers/hawaii/honolulu) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Honolulu](/installers/hawaii/honolulu) lists local installers, and you can ask for their prices in your quote request.
 
 Building permit applications in Honolulu list each contractor's Hawaii license number. Hawaii requires a state contractor license unless the whole job, labor and materials together, is $1,500 or less and needs no building permit. The state's institutional and commercial equipment specialty license (C-25) covers stationary metal partitions. You don't need a permit to buy partitions.
 
@@ -80,12 +78,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Honolulu buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hotels and resorts:** phenolic or stainless steel for lobby and restaurant restrooms, HDPE for pool and beach restrooms that stay wet.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Honolulu and nearby cities
 
@@ -110,7 +104,7 @@ A contractor you hire. We supply the partitions and the shop drawings. A contrac
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Honolulu?
-Hawaii has no sales tax. Its general excise tax is charged to the business, not the buyer: 4% for the state plus 0.5% for the City and County of Honolulu, 4.5% in all. A business may pass the tax on, and in Honolulu the most it may add to an invoice is 4.712%. Partitions shipped to Honolulu are taxed in one of two ways. A seller with enough Hawaii sales (at least $100,000 or 200 sales a year) owes the general excise tax and may pass it on. If the seller isn't licensed in Hawaii, the buyer owes use tax at the same rate on the price plus shipping.
+Hawaii has no sales tax. Its general excise tax is charged to the business, not the buyer: 4% for the state plus 0.5% for the City and County of Honolulu, 4.5% in all. A business may pass the tax on, and in Honolulu the most it may add to an invoice is 4.712%. How tax applies to installation depends on your contract, so confirm with your accountant or the Hawaii Department of Taxation.
 
 ## Sources
 

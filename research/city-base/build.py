@@ -79,6 +79,7 @@ for s in want:
         ref = (P.get(p) or H.get(h) or D.get(d))
         a['climate'] = dict(station=ref['name'] + ', ' + ref['state'], wban=p or h or d, nearby_station=s in NEARBY,
                             precip_in=float(P[p]['nums'][-1]) if p else None,
+                            precip_monthly=[float(x) for x in P[p]['nums'][-13:-1]] if p else None,
                             rain_days=int(D[d]['nums'][-1]) if d else None, rain_days_period='%s–%s' % D[d]['por'] if d else None,
                             humidity_morning=int(H[h]['nums'][-2]) if h else None, humidity_afternoon=int(H[h]['nums'][-1]) if h else None,
                             humidity_period='%s–%s' % H[h]['por'] if h else None, sources=NOAA)

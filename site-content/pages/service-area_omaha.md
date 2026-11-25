@@ -24,12 +24,12 @@ Omaha
 
 ## The right material for Omaha's climate
 
-Omaha gets about 32 inches of rain a year, on roughly 100 days, and relative humidity averages 81% in the morning and 59% in the afternoon. What that means for partitions depends on whether the restroom is heated and ventilated:
+Omaha gets about 32 inches of rain a year, on roughly 100 days, and relative humidity averages 81% in the morning and 59% in the afternoon. On average the wettest month is May (about 4.7 inches) and the driest is January (about 0.8 inches). What that means for partitions depends on whether the restroom is heated and ventilated:
 
 - **Heated, ventilated restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Unheated restrooms or rooms open to outside air** (parks, stadiums, warehouses, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules an Omaha restroom has to meet
 
@@ -61,9 +61,7 @@ To find your building's capacity, Omaha's plumbing rules count a professional of
 
 ## Installation in Omaha
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Omaha](/installers/nebraska/omaha) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Omaha](/installers/nebraska/omaha) lists local installers, and you can ask for their prices in your quote request.
 
 Check local contractor licensing or registration with Omaha Permits and Inspections before work starts. Nebraska has no state contractor license: installers working on other people's property register with the Nebraska Department of Labor, with proof of workers' compensation cover if they have employees. You don't need a permit to buy partitions.
 
@@ -81,12 +79,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Omaha buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hospitals and medical campuses:** stainless steel or phenolic where restrooms are disinfected often.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Omaha and nearby cities
 
@@ -111,7 +105,7 @@ A contractor you hire. We supply the partitions and the shop drawings. In Nebras
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Omaha?
-7% in Omaha: 5.5% state and 1.5% city. Partitions shipped to Omaha are taxable, and so is freight charged by the seller. If the seller doesn't collect the tax, the buyer owes it to the state.
+7% in Omaha: 5.5% state and 1.5% city. How tax applies to installation depends on your contract, so confirm with your accountant or the Nebraska Department of Revenue.
 
 ## Sources
 

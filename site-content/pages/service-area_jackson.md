@@ -24,12 +24,12 @@ Jackson
 
 ## The right material for Jackson's climate
 
-Jackson gets about 57 inches of rain a year, on roughly 110 days, and relative humidity averages 90% in the morning and 57% in the afternoon. What that means for partitions depends on whether the restroom is air-conditioned:
+Jackson gets about 57 inches of rain a year, on roughly 110 days, and relative humidity averages 90% in the morning and 57% in the afternoon. On average the wettest month is April (about 5.8 inches) and the driest is September (about 3.5 inches). What that means for partitions depends on whether the restroom is air-conditioned:
 
 - **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Restrooms open to outside air or without air conditioning** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Jackson restroom has to meet
 
@@ -60,9 +60,7 @@ To find your building's capacity, the model rules count an office at one person 
 
 ## Installation in Jackson
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Jackson](/installers/mississippi/jackson) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Jackson](/installers/mississippi/jackson) lists local installers, and you can ask for their prices in your quote request.
 
 Commercial general contractors register with Jackson's building official, show their Mississippi license before a permit is issued, and carry liability insurance. Mississippi requires a state contractor license for commercial jobs of $50,000 or more, including subcontracts. Confirm what your project needs with Jackson's Building Permits Division. You don't need a permit to buy partitions.
 
@@ -80,12 +78,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Jackson buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hospitals, colleges and state office buildings:** stalls that stand up to heavy daily traffic, in a finish that matches the building's standard.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Jackson and nearby cities
 
@@ -110,7 +104,7 @@ A contractor you hire. We supply the partitions and the shop drawings. A contrac
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Jackson?
-7% state. Jackson adds 1% on goods sold from a business located in the city, which makes 8% there. Goods delivered into Jackson by a seller outside the city don't carry the extra 1%. Mississippi has no county sales tax. Partitions shipped to Jackson are taxable at the state rate of 7%, freight included. If the seller doesn't collect the tax, the buyer owes it to the state.
+7% state. Jackson adds 1% on goods sold from a business located in the city, which makes 8% there. Goods delivered into Jackson by a seller outside the city don't carry the extra 1%. Mississippi has no county sales tax. How tax applies to installation depends on your contract, so confirm with your accountant or the Mississippi Department of Revenue.
 
 ## Sources
 

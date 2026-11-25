@@ -24,12 +24,12 @@ Albuquerque
 
 ## The right material for Albuquerque's climate
 
-Albuquerque gets about 9 inches of rain a year, on roughly 59 days, and relative humidity averages 53% in the morning and 29% in the afternoon. The weather rarely decides the material here. The room does:
+Albuquerque gets about 9 inches of rain a year, on roughly 59 days, and relative humidity averages 53% in the morning and 29% in the afternoon. On average the wettest month is July (about 1.6 inches) and the driest is January (about 0.4 inches). The weather rarely decides the material here. The room does:
 
 - **Most restrooms** (offices, restaurants, retail, clinics, schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Rooms that get wet from the inside** (pool facilities, gym locker rooms, restrooms that are hosed down): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules an Albuquerque restroom has to meet
 
@@ -60,9 +60,7 @@ To find your building's capacity, the building rules count an office at one pers
 
 ## Installation in Albuquerque
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Albuquerque](/installers/new-mexico/albuquerque) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Albuquerque](/installers/new-mexico/albuquerque) lists local installers, and you can ask for their prices in your quote request.
 
 Albuquerque issues commercial building permits only to a general contractor licensed by the State of New Mexico. New Mexico requires a state contractor license for construction work. Partition installation is not named in the state's list of license classes, so installers typically hold a general building license (GB-98) or the miscellaneous specialty license (GS-29); confirm which applies with the state's Construction Industries Division. You don't need a permit to buy partitions.
 
@@ -80,12 +78,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Albuquerque buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hospitals, university and research buildings:** phenolic or stainless steel where restrooms are cleaned many times a day.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Albuquerque and nearby cities
 
@@ -110,7 +104,7 @@ A contractor you hire. We supply the partitions and the shop drawings. The contr
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
 ### What tax applies to partitions delivered to Albuquerque?
-7.625% in Albuquerque: the 4.875% state rate plus 2.75% in local taxes. Rates normally change only on July 1. Partitions shipped to Albuquerque are taxable, including freight billed by the seller. If the seller doesn't charge the tax, the buyer owes the matching compensating tax to the state.
+7.625% in Albuquerque: the 4.875% state rate plus 2.75% in local taxes. Rates normally change only on July 1. How tax applies to installation depends on your contract, so confirm with your accountant or the New Mexico Taxation and Revenue Department.
 
 ## Sources
 

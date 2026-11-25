@@ -24,12 +24,12 @@ Tacoma
 
 ## The right material for Tacoma's climate
 
-The nearest long-term weather station, at Seattle, records about 39 inches of rain a year, on roughly 156 days, and relative humidity averages 82% in the morning and 63% in the afternoon. What that means for partitions depends on whether the restroom is heated and ventilated:
+The nearest long-term weather station, at Seattle, records about 39 inches of rain a year, on roughly 156 days, and relative humidity averages 82% in the morning and 63% in the afternoon. On average the wettest month there is November (about 6.3 inches) and the driest is July (about 0.6 inches). What that means for partitions depends on whether the restroom is heated and ventilated:
 
 - **Heated, ventilated restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Unheated restrooms or rooms open to outside air** (parks, stadiums, warehouses, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Tacoma restroom has to meet
 
@@ -61,9 +61,7 @@ To find your building's capacity, the building rules count an office at one pers
 
 ## Installation in Tacoma
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Tacoma](/installers/washington/tacoma) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Tacoma](/installers/washington/tacoma) lists local installers, and you can ask for their prices in your quote request.
 
 Washington requires every construction contractor to register with the Department of Labor & Industries (L&I). Tacoma adds its own business license: the general contractor and every subcontractor working on a Tacoma job site need one, and the city checks licensing when it issues a building permit. Look a contractor up on the L&I website before you hire. You don't need a permit to buy partitions.
 
@@ -81,12 +79,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Tacoma buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Port terminals, marine shops and waterfront parks:** solid plastic or phenolic for unheated restrooms and rooms open to outside air.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Tacoma and nearby cities
 
@@ -111,7 +105,7 @@ A contractor you hire. We supply the partitions and the shop drawings. In Tacoma
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Tacoma?
-10.5% in Tacoma: 6.5% state and 4% local. Partitions shipped to Tacoma are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it to the state.
+10.5% in Tacoma: 6.5% state and 4% local. How tax applies to installation depends on your contract, so confirm with your accountant or the Washington Department of Revenue.
 
 ## Sources
 

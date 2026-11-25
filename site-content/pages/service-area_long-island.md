@@ -24,12 +24,12 @@ Long Island
 
 ## The right material for Long Island's climate
 
-The nearest long-term weather station, at Islip, records about 46 inches of rain a year, on roughly 116 days, and relative humidity averages 76% in the morning and 58% in the afternoon. What that means for partitions depends on whether the restroom is heated and ventilated:
+The nearest long-term weather station, at Islip, records about 46 inches of rain a year, on roughly 116 days, and relative humidity averages 76% in the morning and 58% in the afternoon. On average the wettest month there is December (about 4.7 inches) and the driest is July (about 3.3 inches). What that means for partitions depends on whether the restroom is heated and ventilated:
 
 - **Heated, ventilated restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Unheated restrooms or rooms open to outside air** (parks, stadiums, warehouses, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Long Island restroom has to meet
 
@@ -60,9 +60,7 @@ To find your building's capacity, the building rules count an office at one pers
 
 ## Installation on Long Island
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers on Long Island](/installers/new-york-state/long-island) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers on Long Island](/installers/new-york-state/long-island) lists local installers, and you can ask for their prices in your quote request.
 
 Building permits and local contractor rules on Long Island come from the town, village or city where the building stands, so check with its building department before work starts. Nassau County and Suffolk County license home improvement contractors, which covers work on homes: Nassau's license is for residential home improvement businesses, and Suffolk's covers one- and two-family houses. New York State doesn't license commercial installers like this. You don't need a permit to buy partitions.
 
@@ -80,12 +78,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Long Island buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hospitals, shopping centers and park and beach facilities:** phenolic or stainless steel where restrooms are cleaned many times a day, HDPE where the room is unheated or hosed down.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Long Island and nearby cities
 
@@ -110,7 +104,7 @@ A contractor you hire. We supply the partitions and the shop drawings. Check wit
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Long Island?
-8.625% in Nassau County: 4% state, 4.25% county and 0.375% for the regional transit district. 8.75% in Suffolk County: 4% state, 4.375% county and 0.375% for the transit district. The rate is the one where the partitions are delivered. Partitions shipped to Long Island are taxable, freight included when the seller bills it. If the seller doesn't collect the tax, the buyer owes it to the state. Materials are taxed even when they go into a permanent improvement.
+8.625% in Nassau County: 4% state, 4.25% county and 0.375% for the regional transit district. 8.75% in Suffolk County: 4% state, 4.375% county and 0.375% for the transit district. The rate is the one where the partitions are delivered. How tax applies to installation depends on your contract, so confirm with your accountant or the New York State Department of Taxation and Finance.
 
 ## Sources
 

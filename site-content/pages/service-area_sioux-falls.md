@@ -24,12 +24,12 @@ Sioux Falls
 
 ## The right material for the Sioux Falls climate
 
-Sioux Falls gets about 28 inches of rain a year, on roughly 97 days, and relative humidity averages 82% in the morning and 60% in the afternoon. What that means for partitions depends on whether the restroom is heated and ventilated:
+Sioux Falls gets about 28 inches of rain a year, on roughly 97 days, and relative humidity averages 82% in the morning and 60% in the afternoon. On average the wettest month is June (about 4.2 inches) and the driest is January (about 0.6 inches). What that means for partitions depends on whether the restroom is heated and ventilated:
 
 - **Heated, ventilated restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Unheated restrooms or rooms open to outside air** (parks, stadiums, warehouses, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Sioux Falls restroom has to meet
 
@@ -60,9 +60,7 @@ To find your building's capacity, Sioux Falls's building rules count an office a
 
 ## Installation in Sioux Falls
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Sioux Falls](/installers/south-dakota/sioux-falls) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Sioux Falls](/installers/south-dakota/sioux-falls) lists local installers, and you can ask for their prices in your quote request.
 
 Sioux Falls does not license commercial building contractors. The city reviews plans and issues permits for commercial projects. South Dakota has no state contractor license for this work, but contractors need a state contractor's tax license from the Department of Revenue. Confirm what your project needs with Sioux Falls Building Services. You don't need a permit to buy partitions.
 
@@ -80,12 +78,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Sioux Falls buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hospitals and medical offices:** stainless steel or phenolic in public restrooms that are cleaned many times a day.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Sioux Falls and nearby cities
 
@@ -110,7 +104,7 @@ A contractor you hire. We supply the partitions and the shop drawings. Sioux Fal
 In a heated, ventilated restroom, any of the five. In an unheated restroom or one open to outside air, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Sioux Falls?
-6.2% in Sioux Falls: 4.2% state and 2% city. Partitions shipped to Sioux Falls are taxable at the state rate of 4.2 percent plus the city's rate, and the delivery charge is taxed the same way. A seller with more than $100,000 a year in South Dakota sales must collect it. If the seller doesn't collect the tax, the buyer owes it to the state. State law sets the state rate to return to 4.5 percent on July 1, 2027.
+6.2% in Sioux Falls: 4.2% state and 2% city. How tax applies to installation depends on your contract, so confirm with your accountant or the South Dakota Department of Revenue.
 
 ## Sources
 

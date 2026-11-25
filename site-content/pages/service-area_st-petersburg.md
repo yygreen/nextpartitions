@@ -24,12 +24,12 @@ St. Petersburg
 
 ## The right material for St. Petersburg's climate
 
-The nearest long-term weather station, at Tampa, records about 49 inches of rain a year, on roughly 107 days, and relative humidity averages 86% in the morning and 58% in the afternoon. What that means for partitions depends on whether the restroom is air-conditioned:
+The nearest long-term weather station, at Tampa, records about 49 inches of rain a year, on roughly 107 days, and relative humidity averages 86% in the morning and 58% in the afternoon. On average the wettest month there is August (about 9.0 inches) and the driest is November (about 1.4 inches). What that means for partitions depends on whether the restroom is air-conditioned:
 
 - **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Restrooms open to outside air or without air conditioning** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a St. Petersburg restroom has to meet
 
@@ -61,9 +61,7 @@ To find your building's capacity, the building rules count an office at one pers
 
 ## Installation in St. Petersburg
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in St. Petersburg](/installers/florida/st-petersburg) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in St. Petersburg](/installers/florida/st-petersburg) lists local installers, and you can ask for their prices in your quote request.
 
 Contractors register with St. Petersburg Construction Services and Permitting before they pull permits: a signed affidavit, a Florida or Pinellas County license and proof of insurance, plus a city business tax license if the business is based in the city. Florida has no state license category specifically for toilet partitions, and a contractor whose work falls in a licensed category needs that license, so confirm with St. Petersburg Construction Services and Permitting which one covers your job. You don't need a permit to buy partitions.
 
@@ -81,12 +79,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What St. Petersburg buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Parks, marinas and beach facilities:** HDPE or phenolic for restrooms that are open to outside air and hosed down.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to St. Petersburg and nearby cities
 
@@ -111,7 +105,7 @@ A contractor you hire. We supply the partitions and the shop drawings. A contrac
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to St. Petersburg?
-7% in St. Petersburg: 6% state and 1% Pinellas County. The county's 1% applies only to the first $5,000 of each item. Partitions shipped to St. Petersburg are taxable. If the seller doesn't collect the tax, the buyer owes it to the state.
+7% in St. Petersburg: 6% state and 1% Pinellas County. The county's 1% applies only to the first $5,000 of each item. How tax applies to installation depends on your contract, so confirm with your accountant or the Florida Department of Revenue.
 
 ## Sources
 

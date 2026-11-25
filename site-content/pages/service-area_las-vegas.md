@@ -24,12 +24,12 @@ Las Vegas
 
 ## The right material for the Las Vegas climate
 
-Las Vegas gets about 4 inches of rain a year, on roughly 26 days, and relative humidity averages 36% in the morning and 20% in the afternoon. The weather rarely decides the material here. The room does:
+Las Vegas gets about 4 inches of rain a year, on roughly 26 days, and relative humidity averages 36% in the morning and 20% in the afternoon. On average the wettest month is February (about 0.8 inches) and the driest is June (almost none). The weather rarely decides the material here. The room does:
 
 - **Most restrooms** (offices, restaurants, retail, clinics, schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Rooms that get wet from the inside** (pool facilities, gym locker rooms, restrooms that are hosed down): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Las Vegas restroom has to meet
 
@@ -61,9 +61,7 @@ To find your building's capacity, the building rules count an office at one pers
 
 ## Installation in Las Vegas
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Las Vegas](/installers/nevada/las-vegas) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Las Vegas](/installers/nevada/las-vegas) lists local installers, and you can ask for their prices in your quote request.
 
 Only a Nevada licensed contractor may obtain a building permit for commercial construction in Las Vegas, and state-licensed contractors working in the city hold a city business license in the contractor category. Nevada requires a state contractor's license, and toilet partitions fall under the C-8 Glass and Glazing classification; only small repair jobs under $1,000 that need no permit are exempt. Confirm the classification with the Nevada State Contractors Board. You don't need a permit to buy partitions.
 
@@ -81,12 +79,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Las Vegas buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hotels, casinos and convention venues:** finishes that match the property in guest-facing restrooms, HDPE or phenolic where crowds and round-the-clock cleaning are hard on stalls.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Las Vegas and nearby cities
 
@@ -111,7 +105,7 @@ A contractor you hire. We supply the partitions and the shop drawings. The contr
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
 ### What tax applies to partitions delivered to Las Vegas?
-8.375% in Las Vegas: the 6.85% statewide rate plus 1.525% in Clark County taxes. Partitions shipped to Las Vegas are taxable. Freight listed separately on the invoice is not taxed, but handling, crating and packing charges are. An out-of-state seller with more than $100,000 in Nevada sales, or 200 or more Nevada sales, in a year collects the tax. If the seller doesn't collect it, the buyer owes use tax to the state.
+8.375% in Las Vegas: the 6.85% statewide rate plus 1.525% in Clark County taxes. How tax applies to installation depends on your contract, so confirm with your accountant or the Nevada Department of Taxation.
 
 ## Sources
 

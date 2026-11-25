@@ -24,12 +24,12 @@ Denver
 
 ## The right material for Denver's climate
 
-Denver gets about 15 inches of rain a year, on roughly 79 days, and relative humidity averages 50% in the morning and 43% in the afternoon. The weather rarely decides the material here. The room does:
+Denver gets about 15 inches of rain a year, on roughly 79 days, and relative humidity averages 50% in the morning and 43% in the afternoon. On average the wettest month is May (about 2.3 inches) and the driest is January (about 0.5 inches). The weather rarely decides the material here. The room does:
 
 - **Most restrooms** (offices, restaurants, retail, clinics, schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Rooms that get wet from the inside** (pool facilities, gym locker rooms, restrooms that are hosed down): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Denver restroom has to meet
 
@@ -60,9 +60,7 @@ To find your building's capacity, Denver's building rules count an office at one
 
 ## Installation in Denver
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Denver](/installers/colorado/denver) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Denver](/installers/colorado/denver) lists local installers, and you can ask for their prices in your quote request.
 
 Denver requires a Denver-issued building contractor license (Class A, B or a specialty class, backed by a supervisor certificate) to pull permits, and it doesn't accept licenses from other states or counties. Colorado doesn't license general or specialty contractors at the state level. You don't need a permit to buy partitions.
 
@@ -80,12 +78,8 @@ How tax applies depends on your contract, so confirm with your accountant, the D
 
 ## What Denver buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Breweries, music venues and stadiums:** HDPE or phenolic where crowds and nightly washdown are hard on stalls, stainless steel in premium public restrooms.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Denver and nearby cities
 
@@ -110,7 +104,7 @@ A contractor you hire. We supply the partitions and the shop drawings. A contrac
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
 ### What tax applies to partitions delivered to Denver?
-9.15% in Denver: 5.15% city, 2.9% state, 1% transit district and 0.1% cultural district. Denver collects its own 5.15% under its own tax rules. Partitions shipped to Denver are taxable. Denver taxes freight that the seller charges or arranges as part of the price; the state taxes it unless it is an optional charge shown on its own line. If the seller doesn't collect the tax, the buyer owes it as use tax.
+9.15% in Denver: 5.15% city, 2.9% state, 1% transit district and 0.1% cultural district. Denver collects its own 5.15% under its own tax rules. How tax applies to installation depends on your contract, so confirm with your accountant, the Denver Treasury Division or the Colorado Department of Revenue.
 
 ## Sources
 

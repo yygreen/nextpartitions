@@ -24,12 +24,12 @@ Colorado Springs
 
 ## The right material for the Colorado Springs climate
 
-Colorado Springs gets about 16 inches of rain a year, on roughly 89 days, and relative humidity averages 58% in the morning and 40% in the afternoon. The weather rarely decides the material here. The room does:
+Colorado Springs gets about 16 inches of rain a year, on roughly 89 days, and relative humidity averages 58% in the morning and 40% in the afternoon. On average the wettest month is July (about 3.1 inches) and the driest is December (about 0.2 inches). The weather rarely decides the material here. The room does:
 
 - **Most restrooms** (offices, restaurants, retail, clinics, schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Rooms that get wet from the inside** (pool facilities, gym locker rooms, restrooms that are hosed down): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Colorado Springs restroom has to meet
 
@@ -60,9 +60,7 @@ To find your building's capacity, the building rules used in Colorado Springs co
 
 ## Installation in Colorado Springs
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Colorado Springs](/installers/colorado/colorado-springs) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Colorado Springs](/installers/colorado/colorado-springs) lists local installers, and you can ask for their prices in your quote request.
 
 Colorado Springs permits and contractor licenses are handled by the Pikes Peak Regional Building Department. A contractor needs one of its licenses to do any work that requires a permit; ask the department which license class covers partition installation. Colorado doesn't license general or specialty contractors at the state level. You don't need a permit to buy partitions.
 
@@ -80,12 +78,8 @@ How tax applies depends on your contract, so confirm with your accountant, the C
 
 ## What Colorado Springs buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Sports venues and training centers:** HDPE or phenolic in locker rooms and shower areas, where water and heavy use are hard on stalls.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Colorado Springs and nearby cities
 
@@ -110,7 +104,7 @@ A contractor you hire. We supply the partitions and the shop drawings. A contrac
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
 ### What tax applies to partitions delivered to Colorado Springs?
-8.2% in Colorado Springs: 3.07% city, 2.9% state, 1.23% El Paso County and 1% Pikes Peak Rural Transportation Authority. Colorado Springs collects its own 3.07% under its own tax rules. Partitions shipped to Colorado Springs are taxable. Colorado Springs counts freight and delivery charges as part of the taxed price; the state taxes freight unless it is an optional charge shown on its own line. If the seller doesn't collect the tax, the buyer owes it as use tax.
+8.2% in Colorado Springs: 3.07% city, 2.9% state, 1.23% El Paso County and 1% Pikes Peak Rural Transportation Authority. Colorado Springs collects its own 3.07% under its own tax rules. How tax applies to installation depends on your contract, so confirm with your accountant, the City of Colorado Springs sales tax office (719-385-5903) or the Colorado Department of Revenue.
 
 ## Sources
 

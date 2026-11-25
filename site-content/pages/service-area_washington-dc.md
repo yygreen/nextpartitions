@@ -24,12 +24,12 @@ Washington, DC
 
 ## The right material for the Washington, DC climate
 
-Washington, DC gets about 42 inches of rain a year, on roughly 114 days, and relative humidity averages 74% in the morning and 53% in the afternoon. In most Washington, DC restrooms the room decides the material, not the weather:
+Washington, DC gets about 42 inches of rain a year, on roughly 114 days, and relative humidity averages 74% in the morning and 53% in the afternoon. On average the wettest month is July (about 4.3 inches) and the driest is February (about 2.6 inches). In most Washington, DC restrooms the room decides the material, not the weather:
 
 - **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Restrooms without air conditioning, or that get wet from the inside** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Washington, DC restroom has to meet
 
@@ -60,9 +60,7 @@ To find your building's capacity, the District's building rules count an office 
 
 ## Installation in Washington, DC
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Washington, DC](/installers/district-of-columbia/washington-dc) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Washington, DC](/installers/district-of-columbia/washington-dc) lists local installers, and you can ask for their prices in your quote request.
 
 A contractor working in Washington, DC needs a DC Basic Business License in a contractor category, such as General Contractor/Construction Manager, with liability insurance on file. A subcontractor in the District for a single job needs one too. It is a business license, not a trade exam, so ask the Business Licensing Division of the Department of Licensing and Consumer Protection which category fits partition installation. You don't need a permit to buy partitions.
 
@@ -80,12 +78,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Washington, DC buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hotels, museums and universities:** finishes that match the building in visitor restrooms, HDPE or phenolic where crowds are hard on stalls.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Washington, DC and nearby cities
 
@@ -110,7 +104,7 @@ A contractor you hire. We supply the partitions and the shop drawings. A contrac
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Washington, DC?
-6% in Washington, DC. The District has one rate, with no county or city tax on top. The rate is set to rise to 7% on October 1, 2027. Partitions shipped to Washington, DC are taxable. A freight charge listed separately on the invoice is left out of the taxed price when the shipping happens after the sale. If the seller doesn't collect the tax, the buyer owes it to the District as use tax.
+6% in Washington, DC. The District has one rate, with no county or city tax on top. The rate is set to rise to 7% on October 1, 2027. How tax applies to installation depends on your contract, so confirm with your accountant or the DC Office of Tax and Revenue.
 
 ## Sources
 

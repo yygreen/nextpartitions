@@ -24,12 +24,12 @@ Oklahoma City
 
 ## The right material for Oklahoma City's climate
 
-Oklahoma City gets about 36 inches of rain a year, on roughly 82 days, and relative humidity averages 80% in the morning and 55% in the afternoon. In most Oklahoma City restrooms the room decides the material, not the weather:
+Oklahoma City gets about 36 inches of rain a year, on roughly 82 days, and relative humidity averages 80% in the morning and 55% in the afternoon. On average the wettest month is May (about 5.3 inches) and the driest is January (about 1.3 inches). In most Oklahoma City restrooms the room decides the material, not the weather:
 
 - **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Restrooms without air conditioning, or that get wet from the inside** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules an Oklahoma City restroom has to meet
 
@@ -61,9 +61,7 @@ Oklahoma's building rules count an office at one person per 150 square feet of f
 
 ## Installation in Oklahoma City
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Oklahoma City](/installers/oklahoma/oklahoma-city) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Oklahoma City](/installers/oklahoma/oklahoma-city) lists local installers, and you can ask for their prices in your quote request.
 
 Oklahoma City registers contractors through its Business Licensing office. The city's registration page marks the building contractor registration as residential only, so ask Business Licensing (405-297-2606) whether your installer needs to register for a commercial job. Oklahoma has no state license for general construction or most specialty installers: the state licenses plumbing, electrical, mechanical and roofing work only. You don't need a permit to buy partitions.
 
@@ -81,12 +79,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Oklahoma City buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **State agencies and public buildings:** one material and one hardware standard across many buildings, with heavy-duty hardware for restrooms that serve the public all day.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Oklahoma City and nearby cities
 
@@ -111,7 +105,7 @@ A contractor you hire. We supply the partitions and the shop drawings. Oklahoma 
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Oklahoma City?
-8.625% in Oklahoma City: 4.5% state and 4.125% city. Oklahoma County adds no sales tax. The parts of the city in Canadian and Cleveland counties also pay a county tax. Partitions shipped to Oklahoma City are taxable at the rate for the delivery address. Freight is not taxed when it is listed separately on the invoice. If the seller doesn't collect the tax, the buyer owes it to the state.
+8.625% in Oklahoma City: 4.5% state and 4.125% city. Oklahoma County adds no sales tax. The parts of the city in Canadian and Cleveland counties also pay a county tax. How tax applies to installation depends on your contract, so confirm with your accountant or the Oklahoma Tax Commission.
 
 ## Sources
 

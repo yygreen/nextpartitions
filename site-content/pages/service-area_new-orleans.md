@@ -24,12 +24,12 @@ New Orleans
 
 ## The right material for the New Orleans climate
 
-New Orleans gets about 63 inches of rain a year, on roughly 114 days, and relative humidity averages 87% in the morning and 62% in the afternoon. What that means for partitions depends on whether the restroom is air-conditioned:
+New Orleans gets about 63 inches of rain a year, on roughly 114 days, and relative humidity averages 87% in the morning and 62% in the afternoon. On average the wettest month is June (about 7.6 inches) and the driest is October (about 3.7 inches). What that means for partitions depends on whether the restroom is air-conditioned:
 
 - **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Restrooms open to outside air or without air conditioning** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a New Orleans restroom has to meet
 
@@ -61,9 +61,7 @@ To find your building's capacity, the building rules count an office at one pers
 
 ## Installation in New Orleans
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in New Orleans](/installers/louisiana/new-orleans) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in New Orleans](/installers/louisiana/new-orleans) lists local installers, and you can ask for their prices in your quote request.
 
 New Orleans licenses electrical and mechanical contractors itself. For other construction work the city points to the Louisiana State Licensing Board for Contractors, and a permit application asks for the contractor's license information. Louisiana requires a state commercial contractor license for commercial projects of $50,000 or more, labor and materials included, so smaller jobs fall below the state requirement. You don't need a permit to buy partitions.
 
@@ -81,12 +79,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What New Orleans buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hotels and convention venues:** finishes that match the property in guest-facing restrooms, HDPE or phenolic where crowds and nightly washdown are hard on stalls.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to New Orleans and nearby cities
 
@@ -111,7 +105,7 @@ A contractor you hire. We supply the partitions and the shop drawings. On a comm
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to New Orleans?
-10% in New Orleans: 5% state and 5% Orleans Parish. Three small districts add their own tax: 0.245% in the French Quarter district, 1% at Magnolia Marketplace and 2% at Riverwalk-Spanish Plaza. Partitions shipped to New Orleans are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it.
+10% in New Orleans: 5% state and 5% Orleans Parish. Three small districts add their own tax: 0.245% in the French Quarter district, 1% at Magnolia Marketplace and 2% at Riverwalk-Spanish Plaza. How tax applies to installation depends on your contract, so confirm with your accountant or the Louisiana Department of Revenue.
 
 ## Sources
 

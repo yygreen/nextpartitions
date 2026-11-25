@@ -24,12 +24,12 @@ Phoenix
 
 ## The right material for Phoenix's climate
 
-Phoenix gets about 7 inches of rain a year, on roughly 35 days, and relative humidity averages 46% in the morning and 23% in the afternoon. The weather rarely decides the material here. The room does:
+Phoenix gets about 7 inches of rain a year, on roughly 35 days, and relative humidity averages 46% in the morning and 23% in the afternoon. On average the wettest month is August (about 0.9 inches) and the driest is June (almost none). The weather rarely decides the material here. The room does:
 
 - **Most restrooms** (offices, restaurants, retail, clinics, schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Rooms that get wet from the inside** (pool facilities, gym locker rooms, restrooms that are hosed down): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Phoenix restroom has to meet
 
@@ -61,9 +61,7 @@ To find your building's capacity, Phoenix's building rules count an office at on
 
 ## Installation in Phoenix
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Phoenix](/installers/arizona/phoenix) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Phoenix](/installers/arizona/phoenix) lists local installers, and you can ask for their prices in your quote request.
 
 Phoenix issues building permits only for work by state-licensed contractors, and the Arizona contractor's license number goes on the application. Arizona requires a state Registrar of Contractors license for commercial installation work of $1,000 or more. Confirm what your project needs with Phoenix Planning and Development. You don't need a permit to buy partitions.
 
@@ -81,12 +79,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Phoenix buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Resorts, golf clubs and sports venues:** finishes that match the property in guest restrooms, HDPE or phenolic in pool and locker room restrooms that are hosed down.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Phoenix and nearby cities
 
@@ -111,7 +105,7 @@ A contractor you hire. We supply the partitions and the shop drawings. A contrac
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
 ### What tax applies to partitions delivered to Phoenix?
-9.1% in Phoenix: 5.6% state, 0.7% Maricopa County and 2.8% city. Partitions shipped to Phoenix are taxable. A delivery charge listed separately on the invoice is not. An out-of-state seller with more than $100,000 a year in Arizona sales collects the tax. If the seller doesn't collect it, the buyer owes use tax to the state.
+9.1% in Phoenix: 5.6% state, 0.7% Maricopa County and 2.8% city. How tax applies to installation depends on your contract, so confirm with your accountant or the Arizona Department of Revenue.
 
 ## Sources
 

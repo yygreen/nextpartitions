@@ -25,23 +25,12 @@ Dallas
 
 ## The right material for the Dallas climate
 
-Dallas gets about 38 inches of rain a year, on roughly 79 days, and relative humidity averages 78% at 6 a.m. and 54% at noon. In most Dallas restrooms the room decides the material, not the weather:
+Dallas gets about 38 inches of rain a year, on roughly 79 days, and relative humidity averages 78% at 6 a.m. and 54% at noon. On average the wettest month is October (about 4.8 inches) and the driest is July (about 1.7 inches). In most Dallas restrooms the room decides the material, not the weather:
 
 - **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Restrooms without air conditioning, or that get wet from the inside** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
-
-## Delivery to Dallas job sites
-
-Toilet partitions for Dallas ship by freight carrier, crated, palletized and tracked. Delivery is curbside, with a liftgate on request if the site has no loading dock. Tell us in your quote request:
-
-- **The delivery address,** and whether it's a job site, a warehouse or an occupied building.
-- **Dock or liftgate.** A building without a dock needs a liftgate truck.
-- **Who receives it.** Crates are heavy: a published 3-stall powder coated steel kit weighs about 300 lb.
-- **Where the crates wait.** Store panels flat, not leaned against a wall. Solid plastic may need about 24 hours at room temperature before it's installed, so check the manufacturer's instructions.
-
-Freight is quoted with the partitions, so the number you get covers delivery to your Dallas address.
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Dallas restroom has to meet
 
@@ -72,9 +61,7 @@ To find your building's capacity, the building rules count an office at one pers
 
 ## Installation in Dallas
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Dallas](/installers/texas/dallas) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Dallas](/installers/texas/dallas) lists local installers, and you can ask for their prices in your quote request.
 
 Contractors register with the City of Dallas in DallasNow before pulling building permits, and permits are not issued to unregistered contractors. Texas has no statewide contractor license for this work. Confirm what your project needs with City of Dallas Development Services. You don't need a permit to buy partitions.
 
@@ -92,44 +79,37 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Dallas buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
 - **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
-## Nearby cities we deliver to
+## Delivery to Dallas and nearby cities
 
-Plano, Irving, Garland, Frisco, McKinney, Grand Prairie, Carrollton and Lewisville, and every other ZIP code on the Dallas side of the Metroplex. We ship to all 50 states: see the full [service area](/service-area).
+Toilet partitions for Dallas ship by freight carrier, crated, palletized and tracked, and freight is quoted with the partitions. Delivery is curbside, with a liftgate on request if the site has no loading dock, so give the delivery address and say whether it has a dock in your quote request.
 
-## Get a quote
-
-Price a standard layout in the configurator, or send your drawings, stall count and the material you have in mind. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+We also deliver to Plano, Irving, Garland, Frisco, McKinney, Grand Prairie, Carrollton and Lewisville, and every other ZIP code on the Dallas side of the Metroplex. We ship to all 50 states: see the full [service area](/service-area).
 
 [Configure your partitions](/get-a-quote)
 
 ## FAQ
 
-### Do you deliver bathroom partitions to Dallas?
-Yes. Partitions ship by freight carrier to Dallas and the surrounding cities, crated, palletized and tracked. Curbside and liftgate delivery are available on request.
+### Do I need a permit to replace toilet partitions in Dallas?
+Dallas says a building permit is generally needed for work on a building's structure and publishes a list of work that needs none. Ask Dallas Building Inspection whether your replacement is on it. You don't need a permit to buy partitions.
 
-### Does Next Partitions install partitions in Dallas?
-No. We supply the partitions and the shop drawings; a contractor you hire installs them. A contractor who pulls a Dallas building permit must be registered with the City. Our directory lists [partition installers in Dallas](/installers/texas/dallas), and you can ask for installation prices with your quote.
+### How many stalls does a Dallas restroom need?
+For a building that holds 100 people, a school needs at least 1 women's and 1 men's stall. For offices and restaurants Dallas requires only one toilet for each sex where people work; the usual counts, 2 women's and 2 men's stalls for an office and 1 of each for a restaurant, are recommended, not required. The table above covers other sizes. Confirm the number for your building with Dallas Building Inspection.
+
+### Who can install toilet partitions in Dallas?
+A contractor you hire. We supply the partitions and the shop drawings. A contractor who pulls a Dallas building permit must be registered with the City. Our directory lists [partition installers in Dallas](/installers/texas/dallas), and you can ask for installation prices with your quote.
 
 ### Which partition material is best in Dallas?
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic.
 
-### What rules does a Dallas restroom have to meet?
-Federal and Texas wheelchair-access rules, the city's fire-safety rule for solid plastic partitions, and its rules on how many toilets a building needs. Confirm your project with Dallas Building Inspection.
-
-### How do I get a price for my Dallas restroom?
-Answer the five questions at the top of this page, or send your drawings. Standard configurations are quoted within 2 business hours; custom projects within 24–48 hours.
+### What tax applies to partitions delivered to Dallas?
+8.25% in Dallas: 6.25% state, 1% city and 1% transit authority (DART). How tax applies to installation depends on your contract, so confirm with your accountant or the Texas Comptroller.
 
 ## Sources
 
 - Freight by carrier, crated, palletized and tracked; curbside and liftgate on request: current site, [/service-area](/service-area) and [/faq](/faq). Checked 2026-11-02.
-- Kit weight (3-stall powder coated steel, 299.7 lb) and freight quoted with the partitions: as used and sourced on the [cost guide](/blog/bathroom-partition-cost).
-- Storing panels flat and letting solid plastic reach room temperature: as used and sourced on the [installation guide](/guides/how-to-install-toilet-partitions).
 - Laminate core swelling, painted steel rust, phenolic and HDPE for moisture, NFPA 286 for HDPE: as used and sourced on the [partitions page](/partitions) and the [HDPE page](/partitions/solid-plastic-hdpe).
 - Dallas climate: NOAA NCEI Comparative Climatic Data, station Dallas, TX (WBAN 13960): [annual precipitation, 38.32 in, 1991–2020 normal](https://www.ncei.noaa.gov/sites/default/files/2025-02/nrmpcp.txt); [relative humidity, 78% at 6 a.m. and 54% at noon, 1948–2018](https://www.ncei.noaa.gov/sites/default/files/2024-11/relhum23.txt); [days with 0.01 in or more of precipitation, 79 a year](https://www.ncei.noaa.gov/sites/default/files/2024-11/prge0123.txt). Checked 2026-11-23.
 - Dallas building and plumbing codes: [City of Dallas Building Inspection, construction codes](https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/Pages/know_code.aspx). Checked 2026-11-23.

@@ -24,12 +24,12 @@ El Paso
 
 ## The right material for El Paso's climate
 
-El Paso gets about 9 inches of rain a year, on roughly 48 days, and relative humidity averages 50% in the morning and 27% in the afternoon. The weather rarely decides the material here. The room does:
+El Paso gets about 9 inches of rain a year, on roughly 48 days, and relative humidity averages 50% in the morning and 27% in the afternoon. On average the wettest month is August (about 1.7 inches) and the driest is April (about 0.2 inches). The weather rarely decides the material here. The room does:
 
 - **Most restrooms** (offices, restaurants, retail, clinics, schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Rooms that get wet from the inside** (pool facilities, gym locker rooms, restrooms that are hosed down): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules an El Paso restroom has to meet
 
@@ -61,9 +61,7 @@ To find your building's capacity, the building rules count an office at one pers
 
 ## Installation in El Paso
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in El Paso](/installers/texas/el-paso) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in El Paso](/installers/texas/el-paso) lists local installers, and you can ask for their prices in your quote request.
 
 A contractor registers with El Paso Planning and Inspections before pulling a building permit. Registration takes an annual fee, proof of insurance and a $50,000 bond. Texas has no statewide contractor license for this work. Confirm what your project needs with El Paso Planning and Inspections. You don't need a permit to buy partitions.
 
@@ -81,12 +79,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What El Paso buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Truck terminals and border freight buildings:** HDPE or phenolic for driver and crew restrooms that take hard use and washdown.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to El Paso and nearby cities
 
@@ -111,7 +105,7 @@ A contractor you hire. We supply the partitions and the shop drawings. A contrac
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
 ### What tax applies to partitions delivered to El Paso?
-8.25% in El Paso: 6.25% state, 1% city, 0.5% county and 0.5% transit. Partitions shipped to El Paso are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it to the state.
+8.25% in El Paso: 6.25% state, 1% city, 0.5% county and 0.5% transit. How tax applies to installation depends on your contract, so confirm with your accountant or the Texas Comptroller.
 
 ## Sources
 

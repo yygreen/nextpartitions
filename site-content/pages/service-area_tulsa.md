@@ -24,12 +24,12 @@ Tulsa
 
 ## The right material for Tulsa's climate
 
-Tulsa gets about 41 inches of rain a year, on roughly 91 days, and relative humidity averages 81% in the morning and 56% in the afternoon. In most Tulsa restrooms the room decides the material, not the weather:
+Tulsa gets about 41 inches of rain a year, on roughly 91 days, and relative humidity averages 81% in the morning and 56% in the afternoon. On average the wettest month is May (about 5.7 inches) and the driest is February (about 1.6 inches). In most Tulsa restrooms the room decides the material, not the weather:
 
 - **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Restrooms without air conditioning, or that get wet from the inside** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Tulsa restroom has to meet
 
@@ -61,9 +61,7 @@ Tulsa's building rules count an office at one person per 150 square feet of floo
 
 ## Installation in Tulsa
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Tulsa](/installers/oklahoma/tulsa) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Tulsa](/installers/oklahoma/tulsa) lists local installers, and you can ask for their prices in your quote request.
 
 Tulsa's Permit Center takes a Contractor Registration form from installers, and only a licensed tradesperson may apply for trade permits. Oklahoma has no state license for general construction or most specialty installers. The state licenses plumbing, electrical, mechanical and roofing work only. Confirm with the City of Tulsa Development Services Permit Center. You don't need a permit to buy partitions.
 
@@ -81,12 +79,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Tulsa buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Arenas, convention halls and event venues:** long runs of stalls with heavy-duty hardware, in a material that takes crowds and nightly cleaning.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Tulsa and nearby cities
 
@@ -111,7 +105,7 @@ A contractor you hire. We supply the partitions and the shop drawings. Oklahoma 
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Tulsa?
-8.517% in Tulsa: 4.5% state, 3.65% city and 0.367% Tulsa County. Partitions shipped to Tulsa are taxable at the rate for the delivery address. Freight is not taxed when it is listed separately on the invoice. If the seller doesn't collect the tax, the buyer owes it to the state.
+8.517% in Tulsa: 4.5% state, 3.65% city and 0.367% Tulsa County. How tax applies to installation depends on your contract, so confirm with your accountant or the Oklahoma Tax Commission.
 
 ## Sources
 

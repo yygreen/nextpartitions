@@ -24,12 +24,12 @@ Orlando
 
 ## The right material for Orlando's climate
 
-Orlando gets about 51 inches of rain a year, on roughly 117 days, and relative humidity averages 88% in the morning and 55% in the afternoon. What that means for partitions depends on whether the restroom is air-conditioned:
+Orlando gets about 51 inches of rain a year, on roughly 117 days, and relative humidity averages 88% in the morning and 55% in the afternoon. On average the wettest month is June (about 8.1 inches) and the driest is November (about 1.8 inches). What that means for partitions depends on whether the restroom is air-conditioned:
 
 - **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Restrooms open to outside air or without air conditioning** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules an Orlando restroom has to meet
 
@@ -61,9 +61,7 @@ To find your building's capacity, the building rules count an office at one pers
 
 ## Installation in Orlando
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Orlando](/installers/florida/orlando) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Orlando](/installers/florida/orlando) lists local installers, and you can ask for their prices in your quote request.
 
 Contractors who get permits in Orlando register with the city's Permitting Services Division first, with a business tax receipt, their state certification and proof of workers' compensation cover. Florida has no state license category specifically for toilet partitions, and a contractor whose work falls in a licensed category needs that license, so confirm with Orlando Permitting Services which one covers your job. You don't need a permit to buy partitions.
 
@@ -81,12 +79,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Orlando buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hotels, attractions and convention venues:** HDPE or phenolic where crowds are heavy and stalls are washed down every night, and finishes that match the property in guest-facing restrooms.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Orlando and nearby cities
 
@@ -111,7 +105,7 @@ A contractor you hire. We supply the partitions and the shop drawings. A contrac
 In an air-conditioned restroom, any of the five. In a restroom open to outside air or without air conditioning, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Orlando?
-6.5% in Orlando: 6% state and 0.5% Orange County. The county's 0.5% applies only to the first $5,000 of each item. Partitions shipped to Orlando are taxable. If the seller doesn't collect the tax, the buyer owes it to the state.
+6.5% in Orlando: 6% state and 0.5% Orange County. The county's 0.5% applies only to the first $5,000 of each item. How tax applies to installation depends on your contract, so confirm with your accountant or the Florida Department of Revenue.
 
 ## Sources
 

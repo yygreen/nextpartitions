@@ -24,12 +24,12 @@ Tucson
 
 ## The right material for Tucson's climate
 
-Tucson gets about 11 inches of rain a year, on roughly 51 days, and relative humidity averages 47% in the morning and 24% in the afternoon. The weather rarely decides the material here. The room does:
+Tucson gets about 11 inches of rain a year, on roughly 51 days, and relative humidity averages 47% in the morning and 24% in the afternoon. On average the wettest month is July (about 2.2 inches) and the driest is May (about 0.2 inches). The weather rarely decides the material here. The room does:
 
 - **Most restrooms** (offices, restaurants, retail, clinics, schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Rooms that get wet from the inside** (pool facilities, gym locker rooms, restrooms that are hosed down): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Tucson restroom has to meet
 
@@ -61,9 +61,7 @@ To find your building's capacity, Tucson's building rules count an office at one
 
 ## Installation in Tucson
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Tucson](/installers/arizona/tucson) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Tucson](/installers/arizona/tucson) lists local installers, and you can ask for their prices in your quote request.
 
 Tucson requires a licensed contractor to perform all commercial construction work, and the permit application asks for the contractor's Arizona license number. Arizona requires a state Registrar of Contractors license for commercial installation work of $1,000 or more. Confirm what your project needs with Tucson Planning and Development Services. You don't need a permit to buy partitions.
 
@@ -81,12 +79,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Tucson buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Campus buildings, resorts and spas:** finishes that match the property in guest and public restrooms, HDPE or phenolic in pool, gym and locker room restrooms that are hosed down.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Tucson and nearby cities
 
@@ -111,7 +105,7 @@ A contractor you hire. We supply the partitions and the shop drawings. A contrac
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
 ### What tax applies to partitions delivered to Tucson?
-8.7% in Tucson: 5.6% state, 0.5% Pima County and 2.6% city. Partitions shipped to Tucson are taxable. A delivery charge listed separately on the invoice is not. An out-of-state seller with more than $100,000 a year in Arizona sales collects the tax. If the seller doesn't collect it, the buyer owes use tax to the state.
+8.7% in Tucson: 5.6% state, 0.5% Pima County and 2.6% city. How tax applies to installation depends on your contract, so confirm with your accountant or the Arizona Department of Revenue.
 
 ## Sources
 

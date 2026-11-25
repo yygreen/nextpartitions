@@ -24,12 +24,12 @@ Kansas City
 
 ## The right material for Kansas City's climate
 
-Kansas City gets about 39 inches of rain a year, on roughly 104 days, and relative humidity averages 81% in the morning and 60% in the afternoon. In most Kansas City restrooms the room decides the material, not the weather:
+Kansas City gets about 39 inches of rain a year, on roughly 104 days, and relative humidity averages 81% in the morning and 60% in the afternoon. On average the wettest month is May (about 5.3 inches) and the driest is January (about 1.2 inches). In most Kansas City restrooms the room decides the material, not the weather:
 
 - **Air-conditioned restrooms** (offices, restaurants, clinics, most schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Restrooms without air conditioning, or that get wet from the inside** (warehouses, plants, parks, stadiums, pool and locker rooms): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Kansas City restroom has to meet
 
@@ -60,9 +60,7 @@ To find your building's capacity, Kansas City's building rules count an office a
 
 ## Installation in Kansas City
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Kansas City](/installers/missouri/kansas-city) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Kansas City](/installers/missouri/kansas-city) lists local installers, and you can ask for their prices in your quote request.
 
 Kansas City licenses specific trades and residential builders before they pull permits; confirm with City Planning and Development what applies to partition installation. Missouri has no state license for general or specialty interior contractors such as partition installers. You don't need a permit to buy partitions.
 
@@ -80,12 +78,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Kansas City buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Stadiums, arenas and convention halls:** HDPE or phenolic stalls that stand up to event crowds and nightly washdown.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Kansas City and nearby cities
 
@@ -110,7 +104,7 @@ A contractor you hire. We supply the partitions and the shop drawings. Missouri 
 In an air-conditioned restroom, any of the five. Where the room has no air conditioning or gets wet from the inside, choose solid plastic (HDPE) or phenolic, which handle constant moisture.
 
 ### What tax applies to partitions delivered to Kansas City?
-8.975% at most Kansas City addresses in Jackson County: 4.225% state, 1.5% county and zoo district and 3.25% city. Addresses inside the Main Street rail district pay 9.975%, and some shopping districts add their own tax. Partitions shipped in from a seller outside Missouri fall under the use tax instead, 7.475% at those addresses. The parts of the city in Clay, Platte and Cass counties have their own rates. Partitions shipped to Kansas City are taxable. Usual delivery charges listed separately on the invoice are not taxed. If the seller doesn't collect the tax, the buyer owes it to the state.
+8.975% at most Kansas City addresses in Jackson County: 4.225% state, 1.5% county and zoo district and 3.25% city. Addresses inside the Main Street rail district pay 9.975%, and some shopping districts add their own tax. Partitions shipped in from a seller outside Missouri fall under the use tax instead, 7.475% at those addresses. The parts of the city in Clay, Platte and Cass counties have their own rates. How tax applies to installation depends on your contract, so confirm with your accountant or the Missouri Department of Revenue.
 
 ## Sources
 

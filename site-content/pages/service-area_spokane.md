@@ -24,12 +24,12 @@ Spokane
 
 ## The right material for Spokane's climate
 
-Spokane gets about 16 inches of rain a year, on roughly 111 days, and relative humidity averages 74% in the morning and 52% in the afternoon. The weather rarely decides the material here. The room does:
+Spokane gets about 16 inches of rain a year, on roughly 111 days, and relative humidity averages 74% in the morning and 52% in the afternoon. On average the wettest month is December (about 2.3 inches) and the driest is July (about 0.4 inches). The weather rarely decides the material here. The room does:
 
 - **Most restrooms** (offices, restaurants, retail, clinics, schools): all five materials work. Choose on looks, cleaning routine and budget.
 - **Rooms that get wet from the inside** (pool facilities, gym locker rooms, restrooms that are hosed down): choose [solid plastic (HDPE)](/partitions/solid-plastic-hdpe) or [phenolic](/partitions/phenolic). Both are solid all the way through and handle constant moisture.
 
-[Plastic laminate](/partitions/plastic-laminate) has a particleboard core that may swell with excessive moisture, and [powder coated steel](/partitions/powder-coated-steel) can rust where the coating is damaged, so keep both for dry rooms. [Stainless steel](/partitions/stainless-steel) resists corrosion and suits premium public restrooms. Compare all five on the [partitions page](/partitions).
+Keep [plastic laminate](/partitions/plastic-laminate) and [powder coated steel](/partitions/powder-coated-steel) for dry rooms; [stainless steel](/partitions/stainless-steel) resists corrosion. Compare all five on the [partitions page](/partitions).
 
 ## The rules a Spokane restroom has to meet
 
@@ -61,9 +61,7 @@ To find your building's capacity, the building rules count an office at one pers
 
 ## Installation in Spokane
 
-Next Partitions supplies the partitions; a contractor you hire installs them. Every order comes with shop drawings: a plan of your room with every panel, door and pilaster sized, which the installer sets out from.
-
-Need an installer? Our directory of [partition installers in Spokane](/installers/washington/spokane) lists local installers. Ask for installation in your quote request and we collect their prices for your job.
+Next Partitions supplies the partitions and the shop drawings; a contractor you hire installs them. Our directory of [partition installers in Spokane](/installers/washington/spokane) lists local installers, and you can ask for their prices in your quote request.
 
 Washington requires every construction contractor to register with the Department of Labor & Industries (L&I). To take out a Spokane building permit, a contractor also needs a City of Spokane business license. Look a contractor up on the L&I website before you hire. You don't need a permit to buy partitions.
 
@@ -81,12 +79,8 @@ How tax applies depends on your contract, so confirm with your accountant or the
 
 ## What Spokane buyers order partitions for
 
-- **[Schools](/industries/schools):** HDPE or phenolic, heights by age group, vandal-resistant hardware.
-- **Restaurants and bars:** a finish that matches the dining room, in a material that survives the nightly clean.
-- **Offices and tenant build-outs:** overhead braced stalls that work with any ceiling.
-- **Warehouses, plants and distribution centers:** stalls that take hard use and washdown.
-- **Churches, gyms and clinics:** privacy options and accessible stalls sized to the 2010 ADA Standards.
 - **Hospitals, medical offices and university buildings:** phenolic or stainless steel where restrooms are cleaned often, with accessible stalls in every room.
+- **Schools, restaurants, offices, warehouses and clinics:** what each usually chooses is on the [schools page](/industries/schools) and the other [industry pages](/industries).
 
 ## Delivery to Spokane and nearby cities
 
@@ -111,7 +105,7 @@ A contractor you hire. We supply the partitions and the shop drawings. A contrac
 The dry climate suits all five. Choose HDPE or phenolic only where the room itself gets wet: pools, locker rooms and restrooms that are hosed down.
 
 ### What tax applies to partitions delivered to Spokane?
-9.1% in Spokane: 6.5% state and 2.6% local. On January 1, 2027 it rises to 9.3%, when the city and the county each add 0.1%. Partitions shipped to Spokane are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it to the state.
+9.1% in Spokane: 6.5% state and 2.6% local. On January 1, 2027 it rises to 9.3%, when the city and the county each add 0.1%. How tax applies to installation depends on your contract, so confirm with your accountant or the Washington Department of Revenue.
 
 ## Sources
 
