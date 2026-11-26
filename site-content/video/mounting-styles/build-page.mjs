@@ -18,7 +18,7 @@ const svg = (n) => readFileSync(join(D, n + '.svg'), 'utf8').replace(/<title[\s\
 // "Best for" scenes: the style's product render with an orange overlay that shows the benefit.
 // Coordinates are pixels of the 2400 x 1500 render (../../design/renders/*-angle.jpg).
 const tag = (x, y, t, a = 'start') => { const w = t.length * 27 + 56, x0 = a === 'end' ? x - w : a === 'middle' ? x - w / 2 : x
-  return `<rect x="${x0}" y="${y - 58}" width="${w}" height="84" rx="12" fill="#fe7802" stroke="none"/><text x="${x0 + 28}" y="${y}" font-size="58" font-weight="700" fill="#fff">${esc(t)}</text>` }
+  return `<rect data-a="${a}" x="${x0}" y="${y - 58}" width="${w}" height="84" rx="12" fill="#fe7802" stroke="none"/><text x="${x0 + 28}" y="${y}" font-size="58" font-weight="700" fill="#fff">${esc(t)}</text>` }
 const ring = (x, y) => `<circle cx="${x}" cy="${y}" r="34" fill="none" stroke="#fe7802" stroke-width="9"/>`
 const arrow = (x1, y1, x2, y2) => { const a = Math.atan2(y2 - y1, x2 - x1), h = 34
   return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#fe7802" stroke-width="8"/><polyline points="${x2 - h * Math.cos(a - .45)},${y2 - h * Math.sin(a - .45)} ${x2},${y2} ${x2 - h * Math.cos(a + .45)},${y2 - h * Math.sin(a + .45)}" fill="none" stroke="#fe7802" stroke-width="8"/>` }
@@ -109,6 +109,8 @@ const JS = `
 const S=[...document.querySelectorAll('.scene')],cap=document.querySelector('#cap span'),dots=[...document.querySelectorAll('#dots i')],brand=document.getElementById('brand')
 const SAY=${JSON.stringify(scenes.map((s) => ({ say: s.say, style: s.style })))}
 const clamp=(x)=>Math.max(0,Math.min(1,x)),ease=(x)=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2
+// size each overlay label box to its text
+for(const t of document.querySelectorAll('.ov text')){const r=t.previousElementSibling,w=t.getComputedTextLength()+56;if(r.dataset.a==='end')r.setAttribute('x',+r.getAttribute('x')+(+r.getAttribute('width'))-w);r.setAttribute('width',w)}
 // prepare the line drawings: every stroked shape gets a dash as long as itself
 for(const s of S) if(s.dataset.draw){ s._g=[]; for(const el of s.querySelectorAll('.dwg line,.dwg path,.dwg rect,.dwg polyline,.dwg polygon,.dwg circle,.dwg ellipse')){
   let L=0; try{L=el.getTotalLength()}catch(e){}
