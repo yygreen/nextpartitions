@@ -48,7 +48,7 @@ Floor mounted is the thinnest style: Bradley's floor-anchored Series 500 guides,
 
 ### Where sources differ
 
-- **Headrail timing.** Everyone puts the headrail before the doors. Bobrick, Bradley, AAMCO and AMPCO fix it after all pilasters are plumbed and fastened; ASI Global and Metpar plumb each pilaster and "lock" it with the headrail as they go; Metpar's plastic manual alternates headrail anchoring with hanging one door at a time; Scranton Eclipse puts the headrail up first, with the posts, before any panel.
+- **Headrail timing.** Most put the headrail before the doors; Hadrian (04a, 04b) hangs each stall's door first and fits the headrail last. Bobrick, Bradley, AAMCO and AMPCO fix it after all pilasters are plumbed and fastened; ASI Global and Metpar plumb each pilaster and "lock" it with the headrail as they go; Metpar's plastic manual alternates headrail anchoring with hanging one door at a time; Scranton Eclipse puts the headrail up first, with the posts, before any panel.
 - **Headrail as a leveling aid.** ASI Global, Metpar and Bobrick (composite) lay a headrail loosely across pilaster tops to check level before fixing anything.
 - **Shoes.** Before the headrail (AAMCO, Bradley phenolic, Global steel); after the headrail (Bradley steel, ASI plastic, Metpar, AMPCO); last of all, after the doors (Bobrick). All agree the shoe is slid onto the pilaster early and only dropped and fixed once the pilaster is in its final position.
 - **Panels all at once vs. alternating.** Bobrick, ASI Global, AAMCO, Metpar and AMPCO set panels on supports first, then stand pilasters. Bradley starts with the wall pilaster and alternates panel, pilaster, panel. Bobrick's composite booklet works compartment by compartment from the wall.
@@ -295,3 +295,7 @@ What it confirms or changes:
 - **Ceiling hung bracing.** Scranton (plastic) braces behind the pilasters instead of a headrail and won't cover failures without it; Bradley adds cross bracing on tall ceilings; ASI plastic attaches it last, after the doors. The guide now says to fit any bracing the manufacturer calls for, and that solid plastic and tall ceilings usually need it.
 - **Safety additions.** Eye protection when fitting spring-loaded hinge pins (Scranton); overhead structure must be structural steel, not wood, masonry or a drop ceiling (Scranton); plastic left at room temperature before and after installing (Hadrian); panels are not always on the pilaster centreline, so work from the layout drawings (Hadrian).
 - Still not reached: General Partitions (no public instructions); Metpar copies on manualmachine.com (403).
+
+## Full-manual check, 2026-11-26
+
+The guides were checked step by step against the full text of the 11 manuals (Scranton ×2, Bradley ×3, Hadrian ×3, ASI ×3; copies kept outside this repo). Changes made: shoe handling on solid plastic systems (the shoe is fixed to the floor first and the pilaster stands in it), headrail joints over a pilaster and a return piece where the run ends away from a wall, firmness check reworded, stiffeners on wide pilasters, bracing on solid plastic ceiling-hung systems stated as required, ceiling hung pilasters made to length, height adjustment on floor-to-ceiling pilasters, "sturdiest" dropped, floors added to the "can it hold the fixing" check, and two sentences reworded that sat close to manual wording.
