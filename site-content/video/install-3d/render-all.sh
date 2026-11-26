@@ -4,7 +4,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 mkdir -p out/chunks
-DUR=75; STEP=5
+DUR=140; STEP=5
 for mode in ${1:-h v}; do
   [ "$mode" = both ] && continue
   list=out/chunks/list-$mode.txt; : > "$list"
