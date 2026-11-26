@@ -23,7 +23,7 @@ const RUN = 168.5, MID = RUN / 2
 const STYLE_SHOTS = {
   'overhead-braced': {
     held: 'Floor anchors and a headrail', best: 'Most restrooms',
-    say: [[0, 'Overhead braced is the most common.'], [3.5, 'Pilasters anchor to the floor, and a headrail ties their tops to the walls.'], [7.5, 'Nothing is needed above the ceiling.']],
+    say: [[0, 'Overhead braced is the most common.'], [3.5, 'A headrail ties the pilaster tops to the walls.'], [7.5, 'Nothing is needed above the ceiling.']],
     cam: [[0, [MID + 30, 64, 290], [MID, 50, -14], 40], [5.5, [RUN * 0.28, 64, 205], [MID, 76, -10], 40], [11, [MID - 10, 66, 262], [MID, 64, -14], 40]],
     labels: [{ t: [4.6, 7.4], at: [RUN * 0.4, 83.5, 0.5], text: 'Headrail ties the tops to the walls', dx: 40, dy: -150 },
       { t: [8.1, 11], at: [MID, 95, -20], text: 'Nothing needed above the ceiling', dx: 120, dy: 90, noRing: true }],
@@ -66,7 +66,7 @@ SHOTS.push({ kind: 'recap', start: T0, dur: RECAP }); T0 += RECAP
 SHOTS.push({ kind: 'end', style: 'floor-to-ceiling', start: T0, dur: END, cam: [[0, [RUN + 40, 62, 230], [MID, 48, -14], 40], [END, [RUN + 10, 60, 205], [MID, 48, -14], 40]] }); T0 += END
 export const DURATION = T0
 export const CAPTIONS = [
-  [0.4, 'Toilet partitions are held up in one of four ways.'], [3.2, 'Here is how each one works.'],
+  [0.3, 'Toilet partitions are mounted one of four ways.'], [3.6, 'Here is how each one works.'],
   ...SHOTS.filter((s) => s.kind === 'style').flatMap((s) => s.say.map(([t, x]) => [s.start + t, x])),
   [HOOK + 4 * PER, 'Here are all four, side by side.'],
   [HOOK + 4 * PER + RECAP, 'Send us your style, material and stall count, and we\'ll quote it.'],
