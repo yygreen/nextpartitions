@@ -43,7 +43,7 @@ ul{padding-left:1.1em}li{margin:.04in 0}
 .order span{flex:0 0 22px;height:22px;border-radius:50%;background:#fe7802;color:#fff;font-size:9pt;font-weight:800;display:inline-flex;align-items:center;justify-content:center}
 .step{margin-bottom:.26in}
 .step .img{position:relative}
-.step img.s{width:100%;display:block;border-top:5px solid #fe7802}
+.step img.s{width:100%;height:3.25in;object-fit:cover;display:block;border-top:5px solid #fe7802}.step .two img.s{height:2.3in}
 .step .two{display:grid;grid-template-columns:1fr 1fr;gap:.1in}
 .step .hd{display:flex;align-items:center;gap:12px;margin:.12in 0 .04in}
 .step .n{flex:0 0 34px;height:34px;border-radius:50%;background:#fe7802;color:#fff;font-weight:800;font-size:14pt;display:flex;align-items:center;justify-content:center}
