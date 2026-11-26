@@ -214,7 +214,6 @@ window.frameAt = function (t) {
   if (shot.kind === 'hook') {
     $('#hook .tag').textContent = NAMES[shot.style]
     $('#hook .q').style.opacity = clamp((t - 2.6) / 0.4)
-    $('#hook .flash').style.opacity = 1 - clamp(lt / 0.18)
   }
   // style card
   const st = shot.kind === 'style'
