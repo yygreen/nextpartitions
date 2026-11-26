@@ -203,6 +203,7 @@ function room(scene, spec, M) {
   tilePlane(scene, run, run + O, 0, ceiling, A + 0.05)
   const ceil = box(M.ceiling, -O - 6, run + O + 6, ceiling, ceiling + 2, -depth - 6, F + 6)
   ceil.castShadow = false
+  ceil.userData.part = 'ceiling'
   scene.add(ceil)
   const base = new THREE.MeshStandardMaterial({ color: '#97a399', roughness: 0.8 })
   wallBox(0, run, 0, 4, -depth, -depth + 0.4, base)
@@ -304,8 +305,10 @@ function rampH(darkLeft) {
 // recessed downlight: trim ring and a glowing lens, flush with the ceiling
 function downlight(scene, M, x, z, ceiling) {
   const ring = new THREE.Mesh(new THREE.CylinderGeometry(3.6, 3.6, 0.25, 48), M.trim)
+  ring.userData.part = 'downlight'
   ring.position.set(x, ceiling - 0.1, z); scene.add(ring)
   const lens = new THREE.Mesh(new THREE.CylinderGeometry(2.8, 2.8, 0.3, 48), M.lamp)
+  lens.userData.part = 'downlight'
   lens.position.set(x, ceiling - 0.12, z); scene.add(lens)
 }
 
@@ -354,14 +357,19 @@ function toilet(scene, M, cx, depth) {
 }
 
 // ---------- the partitions ----------
-function partitions(scene, spec, M) {
+function partitions(scene0, spec, M) {
+  // every part is tagged (userData.part, .idx) so the video can animate or highlight it; still renders ignore the tags
+  let PART = 'pilaster', IDX = 0
+  const scene = { add: (...o) => { for (const x of o) Object.assign(x.userData, { part: PART, idx: IDX }); scene0.add(...o) } }
   const { pilasters, doors, panels, door, panel, pil, depth, run } = spec
   const T = pil.t, zb = -T, zf = 0 // pilaster plane
   const E = 0.12 // edge radius: phenolic/solid plastic edges are eased
-  for (const p of pilasters) scene.add(box(M.panel, p.x, p.x + p.w, pil.y0, pil.y1, zb, zf, E))
+  pilasters.forEach((p, i) => { IDX = i; scene.add(box(M.panel, p.x, p.x + p.w, pil.y0, pil.y1, zb, zf, E)) })
+  PART = 'door'
   // doors in the pilaster plane, drawn like front(): from x + gap to x + w - gap
   const dz0 = -T / 2 - door.t / 2, dz1 = dz0 + door.t
   for (const d of doors) {
+    IDX = doors.indexOf(d)
     const x0 = d.x + door.gap, x1 = d.x + d.w - door.gap
     scene.add(box(M.panel, x0, x1, door.y0, door.y1, dz0, dz1, E))
     if (d.out) {
@@ -392,7 +400,9 @@ function partitions(scene, spec, M) {
     scene.add(box(M.dark, lx - 0.08, lx + 0.08, L.y - L.r * 0.75, L.y - L.r * 0.2, dz1 + 0.16, dz1 + 0.18))
   }
   // dividing panels at the compartment lines, from just behind the pilaster to the back wall; brackets at 18"/64"
+  PART = 'panel'
   for (const px of panels) {
+    IDX = panels.indexOf(px)
     const z0 = -depth + panel.backGap, z1 = -panel.front
     scene.add(box(M.panel, px - panel.t / 2, px + panel.t / 2, panel.y0, panel.y1, z0, z1, E))
     for (const y of [18, 64]) for (const s of [-1, 1]) {
@@ -407,6 +417,7 @@ function partitions(scene, spec, M) {
     const m = new THREE.Mesh(new THREE.CylinderGeometry(0.75, 0.75, len, 24), M.stainless)
     m.position.copy(pos); m.rotation.set(rotX, 0, rotZ); m.castShadow = true; scene.add(m)
   }
+  PART = 'grab'; IDX = 0
   const tc = spec.toilets[0], pFace = panels[0] - panel.t / 2
   bar(42, new THREE.Vector3(pFace - 2.25, 34.5, -depth + 33), 0, Math.PI / 2)
   bar(36, new THREE.Vector3(tc - 6, 34.5, -depth + 2.25), Math.PI / 2, 0)
@@ -417,21 +428,27 @@ function partitions(scene, spec, M) {
     const m = new THREE.Mesh(new THREE.PlaneGeometry(w + 6, 9), new THREE.MeshBasicMaterial({ map: blobTex(), transparent: true, opacity: 0.7, depthWrite: false, color: '#000', polygonOffset: true, polygonOffsetFactor: -2 }))
     m.rotation.x = -Math.PI / 2; m.position.set(cx, 0.03, -T / 2); m.renderOrder = 3; scene.add(m)
   }
-  if (spec.shoe) for (const p of pilasters) { scene.add(shoe(p, 0, spec.shoe)); contact(p.x + p.w / 2, p.w) }
-  if (spec.ceilingShoe) for (const p of pilasters) scene.add(shoe(p, spec.ceiling - spec.ceilingShoe, spec.ceiling))
+  if (spec.shoe) pilasters.forEach((p, i) => { IDX = i; PART = 'shoe'; scene.add(shoe(p, 0, spec.shoe)); PART = 'contact'; contact(p.x + p.w / 2, p.w) })
+  PART = 'cshoe'
+  if (spec.ceilingShoe) pilasters.forEach((p, i) => { IDX = i; scene.add(shoe(p, spec.ceiling - spec.ceilingShoe, spec.ceiling)) })
   if (spec.hanger) {
     // ceiling hung: a stainless sleeve covers the hanger rod and spacer between the stile top and the ceiling; above
     // the ceiling (seen only in the front section) the rods run up to the steel support
-    for (const p of pilasters) scene.add(shoe(p, pil.y1, spec.ceiling))
+    PART = 'sleeve'
+    pilasters.forEach((p, i) => { IDX = i; scene.add(shoe(p, pil.y1, spec.ceiling)) })
+    PART = 'steel'; IDX = 0
     const galv = new THREE.MeshStandardMaterial({ color: '#9da3a8', metalness: 0.6, roughness: 0.5 })
     const [s0, s1] = spec.hanger.steel
     scene.add(box(galv, 0, run, s0, s1, zb - 1.0, zf + 1.0, 0.05))
+    PART = 'rod'
     for (const p of pilasters) {
+      IDX = pilasters.indexOf(p)
       const rod = new THREE.Mesh(new THREE.CylinderGeometry(0.25, 0.25, s0 - pil.y1, 16), galv)
       rod.position.set(p.x + p.w / 2, (s0 + pil.y1) / 2, -T / 2); scene.add(rod)
     }
   }
   if (spec.rail) {
+    PART = 'rail'; IDX = 0
     // headrail: extruded aluminum with a sloping top and a raised grip-resistant face edge, clamped over the stile
     // tops; drawn in front() from rail + 2 px down 2"
     const top = spec.rail + 2 / spec.frame.S, bot = top - 2, w = 1.75
