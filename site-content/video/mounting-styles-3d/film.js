@@ -50,7 +50,7 @@ const STYLE_SHOTS = {
     held: 'Floor and ceiling anchors', best: 'Heavy use, such as schools',
     say: [[0, 'Floor to ceiling partitions are anchored at both ends.'], [3.5, 'Every pilaster goes into the floor and into the ceiling.'], [7.5, 'It\'s the sturdiest choice for heavy use, like schools.']],
     cam: [[0, [MID - 30, 64, 290], [MID, 48, -14], 40], [4.5, [RUN * 0.66, 48, 178], [RUN * 0.6, 22, -4], 40], [7, [RUN * 0.66, 50, 178], [RUN * 0.6, 78, -4], 40], [11, [RUN * 0.82, 60, 255], [MID, 50, -14], 40]],
-    labels: [{ t: [3.9, 7.6], at: [RUN * 0.6, 2, 0.8], text: 'Anchored to the floor', dx: 90, dy: -110, pick: 'shoe' },
+    labels: [{ t: [3.9, 5.9], at: [RUN * 0.6, 2, 0.8], text: 'Anchored to the floor', dx: 90, dy: -110, pick: 'shoe' },
       { t: [5.2, 7.6], at: [RUN * 0.6, 94, 0.8], text: 'and to the ceiling', dx: 60, dy: 70, pick: 'cshoe' }],
     glow: { shoe: [3.8, 7.6], cshoe: [3.8, 7.6] },
   },
@@ -175,11 +175,28 @@ function project(v) {
 // ---------- overlay ----------
 const $ = (s) => document.querySelector(s)
 const ov = $('#ov'), cap = $('#cap span'), card = $('#card'), hookEl = $('#hook'), recap = $('#recap'), endEl = $('#end'), dots = [...document.querySelectorAll('#dots i')]
+// with `pick`, the pointer lands on the front face of the tagged part (e.g. a pilaster shoe) nearest to `at`,
+// so it always touches the part instead of the floor between parts
+const anchors = new Map()
+function pickAnchor(l) {
+  const key = sceneStyle + '|' + l.pick + '|' + l.at
+  if (!anchors.has(key)) {
+    let best = null, bd = Infinity
+    for (const o of tagged) {
+      if (o.userData.part !== l.pick) continue
+      const b = new THREE.Box3().setFromObject(o), c = b.getCenter(new THREE.Vector3())
+      const d = Math.hypot(c.x - l.at[0], c.y - l.at[1])
+      if (d < bd) { bd = d; best = [c.x, c.y, b.max.z] }
+    }
+    anchors.set(key, best ?? l.at)
+  }
+  return anchors.get(key)
+}
 function label(i, l, lt) {
   const el = document.getElementById('l' + i)
   const r = clamp((lt - l.t[0]) / 0.4) * clamp((l.t[1] - lt) / 0.3)
   if (r <= 0) { el.style.opacity = 0; return '' }
-  const [x, y] = project(l.at), v = P.vertical, s = v ? 0.8 : 1
+  const [x, y] = project(l.pick ? pickAnchor(l) : l.at), v = P.vertical, s = v ? 0.8 : 1
   const bx = x + l.dx * s, by = y + l.dy * s
   el.textContent = l.text; el.style.opacity = r
   const w = el.offsetWidth, h = el.offsetHeight
