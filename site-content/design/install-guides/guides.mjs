@@ -1,5 +1,5 @@
-// The four installation overview guides, one per mounting style. Step order and advice are the consensus of 25
-// installation documents from 7 manufacturers (research/install-guides/consensus.md), written in our own words: no
+// The four installation overview guides, one per mounting style. Step order and advice are the consensus of the
+// installation documents of 8 manufacturers (research/install-guides/consensus.md), written in our own words: no
 // manufacturer text, drawings or figures. Each step has one or more shots (shot.js: installed parts, this step's parts
 // in orange, camera). Build: node render-shots.mjs && node build.mjs. Wording goes to the lawyer before it is shared.
 const RUN = 168.5, MID = RUN / 2
@@ -21,6 +21,7 @@ export const COMMON = {
     'Wear proper protective equipment, and check the site for hazards before starting.',
     'Panels, doors and pilasters are heavy. Handle them with two people and hold them on solid temporary supports until they are fastened.',
     'Don\'t fasten into a wall or ceiling until the backing or structure behind it is confirmed. If it isn\'t there, stop and tell the general contractor.',
+    'Wear eye protection when fitting spring-loaded hinge pins.',
     'Before handover, check that every latch can be opened from outside in an emergency.',
   ],
   disclaimer: 'Installers are independent businesses. You hire, schedule and pay them directly. Next Partitions isn\'t a party to installation agreements and doesn\'t perform, supervise or guarantee installation work. Local code compliance rests with the installer and the building owner.',
@@ -28,6 +29,7 @@ export const COMMON = {
   before: [
     'Read the manufacturer\'s instructions and the approved shop drawings from start to finish before drilling anything.',
     'Measure the room, wall to wall and floor to ceiling, and compare it with the drawings.',
+    'Work from the layout drawings, not by eye: panels don\'t always sit on the centre of a pilaster.',
     'Unpack and count every part. Report freight damage straight away, and don\'t start with parts missing.',
     'Floor, walls and ceiling should be finished, clean and free of debris and sticking-out fasteners.',
     'Store panels and doors flat, not leaning, and leave the protective film on until the end.',
@@ -77,13 +79,13 @@ export const GUIDES = {
   'ceiling-hung': {
     intro: 'Each pilaster hangs from structural steel above the ceiling, so nothing touches the floor and it can be cleaned in one pass. Everything depends on that overhead structure.',
     before: ['Structural steel above the ceiling has to be in place at every pilaster position, designed for the load, before the ceiling is closed. It is installed by others. If it isn\'t there, don\'t hang anything: stop and tell the general contractor.', 'Agree with the general contractor who fits the hanging rods; on some jobs the steel contractor does, on others the partition installer does.', 'Solid backing has to be in the walls wherever a bracket is fastened.'],
-    safety: ['Never hang a pilaster from the ceiling grid, drywall or framing that wasn\'t designed for it.'],
+    safety: ['Hang pilasters only from structural steel. Never use the ceiling grid, drywall, wood framing or masonry.'],
     steps: [
       { title: 'Confirm the structure above the ceiling', text: 'The steel support has to run above every pilaster position, as the drawings show. Check it is there, and that the hanging rods come through the ceiling where the pilasters will hang.', shots: [{ show: ['steel'], hi: ['steel'], cutaway: true, cam: CAM.above }] },
       { title: 'Lay out the stalls', text: 'Mark the pilaster line and each dividing panel line on the floor from the drawings, and check the marks line up plumb with the hanging points above.', shots: [{ show: ['steel'], marks: true, cam: CAM.room }] },
       { title: 'Put up the wall brackets and panels', text: 'Fasten the wall brackets into the backing and set the dividing panels into them on temporary supports at the right height, without tightening.', shots: [{ show: ['steel', 'panel'], hi: ['panel'], noCeiling: true, cam: CAM.panels }] },
       { title: 'Hang the pilasters', text: 'Slide the trim sleeve onto the pilaster top, then hang the pilaster on its rod and support hardware and connect it to the panel. Support it from below until it is set.', shots: [{ show: [...CH, 'panel'], hi: ['pilaster', 'rod'], cutaway: true, cam: CAM.above }] },
-      { title: 'Plumb, level, then tighten', text: 'Adjust the hanging hardware until each pilaster is plumb both ways and its bottom sits level with the others, clear of the floor. Set every door opening to the drawings, then tighten. Fit any extra bracing the manufacturer calls for on a tall ceiling.', shots: [{ show: [...CH, 'panel'], cam: CAM.floor }] },
+      { title: 'Plumb, level, then tighten', text: 'Adjust the hanging hardware until each pilaster is plumb both ways and its bottom sits level with the others, clear of the floor. Set every door opening to the drawings, then tighten. Fit any bracing the manufacturer calls for; solid plastic systems and tall ceilings usually need it.', shots: [{ show: [...CH, 'panel'], cam: CAM.floor }] },
       { title: 'Raise the sleeves to the ceiling', text: 'Push each trim sleeve up so it meets the ceiling and covers the hanging hardware, and secure it.', shots: [{ show: [...CH, 'panel', 'sleeve'], hi: ['sleeve'], cam: CAM.top }] },
       { title: 'Hang the doors', text: 'Hang each door on its hinges and adjust it until the gaps are even, it swings freely and the latch meets its keeper. Set each door\'s resting position; the accessible stall\'s door closes on its own.', shots: [{ show: [...CH, 'panel', 'sleeve', 'door'], hi: ['door'], cam: CAM.door }] },
       { title: 'Check the finished run', text: 'Check every pilaster is still plumb and level, the floor below is clear, and every fastening is tight. Test each door and latch, including opening it from outside. Fit any accessories the drawings show.', shots: [{ show: [...CH, 'panel', 'sleeve', 'door', 'grab'], cam: CAM.overview }] },

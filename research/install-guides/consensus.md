@@ -271,3 +271,27 @@ Many copies are on dealer sites (cdn.shopify.com stores, onepointpartitions.com)
 - **Scranton Products' site** hosts only the Eclipse quick guide and hardware sheets in search results; no Hiny Hiders manual found there.
 - **General Partitions**: no public installation instructions found.
 - **ASI Accurate**: not searched separately; ASI Global's booklets were used for ASI.
+
+## Browser read, 2026-11-26 (Claude in Chrome)
+
+The sources the first pass couldn't reach, read in a browser. Summaries are ours. The ded1740.inmotionhosting.com links later returned "not found"; the same files are on that dealer's public site, partitionplus.com. Copies of the 11 manuals sit in the user's own Toilet_Partition_Installation_Manuals.zip, kept out of this repo (manufacturer copyright).
+
+| Manufacturer | Document | Material | Styles | Where |
+|---|---|---|---|---|
+| Scranton Products | Hiny Hiders Toilet Compartments Installation Instructions (SP.F.031.00) | HDPE | overhead braced, ceiling hung, floor to ceiling | Scranton's own copy (Dropbox, linked from scrantonproducts.com, Installation Resources); dealer copy ded1740.inmotionhosting.com/…/2019/07/Hiny-Hiders-Partitions.pdf |
+| Bradley (Mills) | Series 500 floor-braced, HDWT-INSTR-010 Rev E (2015) and phenolic HDWC-INSTR-042 Rev A (2021) | powder-coated and stainless steel; phenolic | floor mounted | dealer copies …/2022/01/Bradley-Series-500-*.pdf |
+| Bradley | Series 600 ceiling-hung, HDWC-INSTR-043 Rev A (2021) | phenolic | ceiling hung | dealer copy …/2022/01/Bradley-Series-600-Phenolic-Installation-Guide.pdf |
+| Hadrian | Solid Plastic (4/2014), Standard Series (6/19), Elite (6/19) | HDPE; powder-coated and stainless steel | overhead braced (main), appendices for the others | dealer copies …/2019/07/*.pdf |
+| ASI Global | Integrated Privacy, powder-coated and stainless | steel | overhead braced, floor anchored, ceiling anchored, floor and ceiling | dealer copy …/2022/01/ASI-Powder-Coated-and-Stainless-Steel-Installation-Instructions.pdf |
+| ASI Global | Solid Plastic Installation Guide, rev. 2/26/22 | HDPE | overhead braced, ceiling anchored | cdn.shopify.com/s/files/1/0629/7229/7433/files/Solid-Plastic-Installation-Guide.pdf |
+
+New counts: overhead braced 7 manufacturers (+ AMPCO), floor mounted 4 (Bobrick, ASI, Hadrian, Bradley), ceiling hung 5 (Bobrick, ASI, Bradley, Metpar, Scranton; Hadrian appendix), floor to ceiling 5 (adds Scranton; Hadrian appendix).
+
+What it confirms or changes:
+- **Consensus order holds.** Layout, wall brackets, floor (or ceiling) hardware, panels and pilasters, plumb and level, headrail where there is one, shoes, doors.
+- **Floor fixings first.** Scranton, Hadrian and ASI's plastic system fix the shoe or floor bracket to the floor before any pilaster stands; Bradley sets and levels its floor hardware from the highest point of the floor before any pilaster goes on it. The guides say "floor hardware", which covers both.
+- **Headrail.** Scranton and ASI lay it on loose first as a leveling aid and fasten it once the pilasters are set; Hadrian fastens it last, after the doors. Most still fasten it before the doors.
+- **Doors.** Hadrian hangs each stall's door as it goes (stall by stall); Bradley hangs doors only once every pilaster is plumb and secured. The guides keep doors after the frame is complete.
+- **Ceiling hung bracing.** Scranton (plastic) braces behind the pilasters instead of a headrail and won't cover failures without it; Bradley adds cross bracing on tall ceilings; ASI plastic attaches it last, after the doors. The guide now says to fit any bracing the manufacturer calls for, and that solid plastic and tall ceilings usually need it.
+- **Safety additions.** Eye protection when fitting spring-loaded hinge pins (Scranton); overhead structure must be structural steel, not wood, masonry or a drop ceiling (Scranton); plastic left at room temperature before and after installing (Hadrian); panels are not always on the pilaster centreline, so work from the layout drawings (Hadrian).
+- Still not reached: General Partitions (no public instructions); Metpar copies on manualmachine.com (403).
