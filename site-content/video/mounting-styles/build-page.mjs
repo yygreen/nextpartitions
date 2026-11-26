@@ -93,7 +93,7 @@ for(const s of S) if(s.dataset.draw){ s._g=[]; for(const el of s.querySelectorAl
 window.frameAt=function(t){
   let cur=0
   S.forEach((s,i)=>{const a=+s.dataset.start,d=+s.dataset.dur,lt=t-a,last=i===S.length-1
-    const o=lt<0||lt>d?0:Math.min(clamp(lt/.45),last?1:clamp((d-lt)/.45)); s.style.opacity=o; if(o>0&&lt>=0&&lt<=d)cur=i
+    const o=lt<0||lt>d+.5?0:(i===0?1:clamp(lt/.5)); s.style.opacity=o; if(lt>=0&&lt<d)cur=i  // crossfade: each scene fades in over the one before, which stays fully visible underneath until it's covered
     if(o<=0)return
     const p=clamp(lt/d)
     if(s.dataset.zoom){const im=s.querySelector('.bg img');im.style.transform='scale('+(1.02+.08*p)+') translateX('+(-1.2*p)+'%)'}
