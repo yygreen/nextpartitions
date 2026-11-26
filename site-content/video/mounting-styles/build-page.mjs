@@ -15,6 +15,27 @@ const img = (n) => `data:image/jpeg;base64,${readFileSync(join(R, n + '.jpg')).t
 const svg = (n) => readFileSync(join(D, n + '.svg'), 'utf8').replace(/<title[\s\S]*?<\/title>|<desc[\s\S]*?<\/desc>/g, '')
   .replace(/<svg /, '<svg class="dwg" preserveAspectRatio="xMidYMid meet" ')
 
+// "Best for" scenes: the style's product render with an orange overlay that shows the benefit.
+// Coordinates are pixels of the 2400 x 1500 render (../../design/renders/*-angle.jpg).
+const tag = (x, y, t, a = 'start') => { const w = t.length * 27 + 56, x0 = a === 'end' ? x - w : a === 'middle' ? x - w / 2 : x
+  return `<rect x="${x0}" y="${y - 58}" width="${w}" height="84" rx="12" fill="#fe7802" stroke="none"/><text x="${x0 + 28}" y="${y}" font-size="58" font-weight="700" fill="#fff">${esc(t)}</text>` }
+const ring = (x, y) => `<circle cx="${x}" cy="${y}" r="34" fill="none" stroke="#fe7802" stroke-width="9"/>`
+const arrow = (x1, y1, x2, y2) => { const a = Math.atan2(y2 - y1, x2 - x1), h = 34
+  return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#fe7802" stroke-width="8"/><polyline points="${x2 - h * Math.cos(a - .45)},${y2 - h * Math.sin(a - .45)} ${x2},${y2} ${x2 - h * Math.cos(a + .45)},${y2 - h * Math.sin(a + .45)}" fill="none" stroke="#fe7802" stroke-width="8"/>` }
+const OVERLAY = {
+  'overhead-braced-angle': `<line x1="592" y1="466" x2="1922" y2="386" stroke="#fe7802" stroke-width="16" stroke-linecap="round"/>`
+    + arrow(1100, 250, 1180, 425) + tag(820, 220, 'Headrail ties it to the walls')
+    + tag(240, 1330, 'Offices · restaurants · schools · stores'),
+  'floor-mounted-angle': `<polygon points="600,548 1920,522 1920,332 880,398 600,388" fill="rgba(254,120,2,.16)" stroke="none"/>`
+    + arrow(1400, 532, 1400, 352) + arrow(1400, 352, 1400, 532) + tag(1440, 300, 'Open above: no headrail'),
+  'ceiling-hung-angle': `<polygon points="620,1078 1900,1236 1900,1290 620,1112" fill="rgba(254,120,2,.28)" stroke="none"/>`
+    + ring(948, 1080) + ring(1188, 1110) + ring(1490, 1146) + ring(1860, 1176)
+    + arrow(1180, 1330, 1300, 1190) + tag(700, 1400, 'Nothing touches the floor'),
+  'floor-to-ceiling-angle': [[895, 336], [1188, 306], [1498, 280], [1860, 252], [898, 1112], [1188, 1150], [1492, 1196], [1840, 1246]].map(([x, y]) => ring(x, y)).join('')
+    + tag(300, 220, 'Anchored to the ceiling') + tag(300, 1360, 'and to the floor'),
+}
+const shot = (n) => `<div class="shot"><div class="shotin"><img src="${img(n)}" alt=""><svg class="dwg ov" viewBox="0 0 2400 1500" preserveAspectRatio="xMidYMid slice" font-family="Inter, sans-serif">${OVERLAY[n]}</svg></div></div>`
+
 let t0 = 0
 const scenes = T.scenes.map((s) => {
   const start = t0; t0 += s.dur
@@ -22,12 +43,12 @@ const scenes = T.scenes.map((s) => {
   if (s.image) inner += `<div class="bg"><img src="${img(s.image)}" alt=""></div>`
   if (s.id === 'intro') inner += `<div class="shade"></div><div class="intro"><div class="kick">${esc(s.kicker)}</div><h1>${esc(s.title)}</h1><p>The four ways a stall is held up</p></div>`
   if (s.num) inner += `<div class="shade side"></div><div class="stylecard"><span class="num">${s.num}</span><h2>${esc(s.style)}</h2></div>`
-  if (s.drawing) inner += `<div class="paper${s.facts ? '' : ' wide'}"><div class="dwgbox">${svg(s.drawing)}</div></div>`
+  if (s.drawing || s.shot) inner += (s.shot ? shot(s.shot) : `<div class="paper${s.facts ? '' : ' wide'}"><div class="dwgbox">${svg(s.drawing)}</div></div>`)
     + (s.facts ? `<div class="facts"><div class="kick">${esc(s.style)}</div>${s.facts.map(([k, v]) => `<div class="fact"><span>${esc(k)}</span><b>${esc(v)}</b></div>`).join('')}</div>` : '')
   if (s.choose) inner += `<div class="choose"><div class="kick">How to choose</div>${s.choose.map(([q, a]) => `<div class="row"><span>${esc(q)}</span><b>${esc(a)}</b></div>`).join('')}</div>`
   if (s.end) inner += `<div class="shade"></div><div class="endcard"><img src="${logo}" alt=""><h2>Price your restroom</h2><p>nextpartitions.com/get-a-quote</p><div class="note">Partitions shipped to job sites in all 50 states</div></div>`
   const style = s.num ? s.num : s.style ? { 'Overhead braced': 1, 'Floor mounted': 2, 'Ceiling hung': 3, 'Floor to ceiling': 4 }[s.style] : 0
-  return { start, dur: s.dur, say: s.say, style, html: `<section class="scene s-${s.id}" data-start="${start}" data-dur="${s.dur}"${s.image ? ' data-zoom="1"' : ''}${s.drawing ? ' data-draw="1"' : ''}>${inner}</section>` }
+  return { start, dur: s.dur, say: s.say, style, html: `<section class="scene s-${s.id}" data-start="${start}" data-dur="${s.dur}"${s.image ? ' data-zoom="1"' : ''}${s.drawing || s.shot ? ' data-draw="1"' : ''}>${inner}</section>` }
 })
 
 const CSS = `
@@ -52,6 +73,9 @@ body.v .stylecard{left:72px;bottom:760px;flex-direction:column;align-items:flex-
 .paper{position:absolute;left:70px;top:100px;width:1100px;height:730px;background:#fff;border:1.5px solid #2d1e14;border-top:6px solid #fe7802;display:flex;align-items:center;justify-content:center;padding:48px}
 .paper.wide{left:110px;width:1700px}
 .paper .dwg{max-height:100%}
+.shot{position:absolute;left:70px;top:100px;width:1100px;height:730px;overflow:hidden;border:1.5px solid #2d1e14;border-top:6px solid #fe7802;background:#fff}
+.shotin,.shotin img,.shotin svg{position:absolute;inset:0;width:100%;height:100%}.shotin img{object-fit:cover}
+body.v .shot{left:40px;width:1000px;top:150px;height:700px}
 .dwgbox{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
 .dwg{width:100%;height:100%}
 .dwg .co,.dwg .dn{display:none}
@@ -100,7 +124,7 @@ window.frameAt=function(t){
     if(s.dataset.draw){const q=ease(clamp((lt-.25)/(Math.min(d,6)*.62)));
       s._g.forEach(([el,L,k],j)=>{const share=clamp(q*1.25-j/s._n*.25); if(k==='s')el.style.strokeDashoffset=L*(1-share); el.style.fillOpacity=clamp(q*1.6-.6); el.style.opacity=1})
       s._t.forEach(x=>x.style.opacity=clamp(q*2.2-1.2))
-      s.querySelector('.dwg').style.transform='scale('+(1+.03*p)+')'}
+      const z=s.querySelector('.shotin')||s.querySelector('.dwg'); z.style.transform='scale('+(1+.04*p)+')'}
     s.querySelectorAll('.fact,.choose .row').forEach((f,j)=>{const r=clamp((lt-.6-j*(s.classList.contains('s-choose')?1.4:.9))/.5);f.style.opacity=r;f.style.transform='translateY('+(18*(1-r))+'px)'})
     s.querySelectorAll('.intro>*,.stylecard,.endcard>*').forEach((f,j)=>{const r=clamp((lt-.2-j*.35)/.6);f.style.opacity=r;f.style.transform='translateY('+(24*(1-ease(r)))+'px)'})
   })
