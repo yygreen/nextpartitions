@@ -6,6 +6,7 @@
 // Serves site-content/ on localhost so the page can load three.js and the scene from design/render3d.
 import { createServer } from 'node:http'
 import { readFile, mkdir } from 'node:fs/promises'
+import { renameSync } from 'node:fs'
 import { spawn } from 'node:child_process'
 import { createRequire } from 'node:module'
 import { extname, join, normalize } from 'node:path'
@@ -57,10 +58,11 @@ try {
     }
   } else {
     const from = +arg('--from', 0), to = +arg('--to', dur)
-    const name = `mounting-styles-3d-${mode === 'v' ? '9x16' : '16x9-4k'}${from || to !== dur ? `-${from}-${to}` : ''}.mp4`
+    const name = arg('--name') ?? `mounting-styles-3d-${mode === 'v' ? '9x16' : '16x9-4k'}${from || to !== dur ? `-${from}-${to}` : ''}.mp4`
     const out = join(HERE, 'out', name)
+    // written under a temporary name and renamed when complete, so an interrupted run never leaves a finished-looking file
     const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-c:v', 'mjpeg', '-i', '-',
-      '-c:v', 'libx264', '-preset', 'medium', '-crf', '16', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', '-r', String(fps), out], { stdio: ['pipe', 'inherit', 'inherit'] })
+      '-c:v', 'libx264', '-preset', 'medium', '-crf', '16', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', '-r', String(fps), '-f', 'mp4', out + '.part'], { stdio: ['pipe', 'inherit', 'inherit'] })
     const n0 = Math.round(from * fps), n1 = Math.round(to * fps), t0 = Date.now()
     for (let i = n0; i < n1; i++) {
       await page.evaluate((t) => window.frameAt(t), i / fps)
@@ -68,7 +70,9 @@ try {
       if (!ff.stdin.write(buf)) await new Promise((r) => ff.stdin.once('drain', r))
       if ((i - n0) % 60 === 0) console.log(`${mode} frame ${i}/${n1}, ${((Date.now() - t0) / 1000).toFixed(0)}s`)
     }
-    ff.stdin.end(); await new Promise((r) => ff.on('close', r))
+    ff.stdin.end(); const code = await new Promise((r) => ff.on('close', r))
+    if (code !== 0) throw new Error('ffmpeg failed: ' + code)
+    renameSync(out + '.part', out)
     console.log('wrote', out, `${((Date.now() - t0) / 1000).toFixed(0)}s`)
   }
 } finally {
