@@ -43,7 +43,7 @@ await page.waitForFunction(() => window.__ready === true)
 await page.evaluate(() => document.fonts.ready)
 await page.evaluate(() => Promise.all([...document.images].map((i) => i.decode().catch(() => {}))))
 const specs = Object.fromEntries(STYLES.map((s) => [s, specFor(s)]))
-await page.evaluate((p) => window.setupFilm(p), { specs, width: W, height: H, dpr })
+await page.evaluate((p) => window.setupFilm(p), { specs, width: W, height: H, dpr, gl: +arg('--gl', 1) })
 const dur = await page.evaluate(() => window.DURATION)
 const stage = await page.$('#stage')
 

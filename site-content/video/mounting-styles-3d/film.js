@@ -24,7 +24,7 @@ const STYLE_SHOTS = {
   'overhead-braced': {
     held: 'Floor anchors and a headrail', best: 'Most restrooms',
     say: [[0, 'Overhead braced is the most common.'], [3.5, 'Pilasters anchor to the floor, and a headrail ties their tops to the walls.'], [7.5, 'Nothing is needed above the ceiling.']],
-    cam: [[0, [MID + 40, 80, 330], [MID, 45, -20], 40], [3.5, [RUN + 30, 62, 215], [MID, 50, -14], 40], [5.6, [-6, 58, 120], [RUN * 0.62, 82, -2], 42], [7.6, [MID - 30, 64, 170], [MID + 10, 84, -10], 44], [11, [MID + 20, 58, 300], [MID, 66, -20], 40]],
+    cam: [[0, [MID + 30, 64, 290], [MID, 50, -14], 40], [5.5, [RUN * 0.28, 64, 205], [MID, 76, -10], 40], [11, [MID - 10, 66, 262], [MID, 64, -14], 40]],
     labels: [{ t: [4.6, 7.4], at: [RUN * 0.4, 83.5, 0.5], text: 'Headrail ties the tops to the walls', dx: 40, dy: -150 },
       { t: [8.1, 11], at: [MID, 95, -20], text: 'Nothing needed above the ceiling', dx: 120, dy: 90, noRing: true }],
     glow: { rail: [4.4, 11] },
@@ -32,7 +32,7 @@ const STYLE_SHOTS = {
   'floor-mounted': {
     held: 'Floor anchors only', best: 'An open look and high ceilings',
     say: [[0, 'Floor mounted partitions drop the headrail.'], [3.5, 'Each pilaster is bolted into a structural concrete floor.'], [7.5, 'The space above the stalls stays open.']],
-    cam: [[0, [MID - 40, 80, 330], [MID, 45, -20], 40], [3.5, [RUN + 20, 50, 200], [MID, 36, -14], 40], [5.8, [RUN * 0.72, 16, 62], [RUN * 0.5, 4, -2], 44], [8, [RUN + 10, 60, 210], [MID, 76, -20], 42], [11, [MID + 30, 66, 290], [MID, 74, -20], 40]],
+    cam: [[0, [MID - 30, 64, 290], [MID, 46, -14], 40], [5.5, [RUN * 0.7, 32, 150], [MID, 14, -6], 40], [11, [RUN * 0.78, 64, 250], [MID, 62, -14], 40]],
     labels: [{ t: [4.4, 7.4], at: [RUN * 0.45, 2, 0.8], text: 'Bolted into a concrete floor', dx: 90, dy: -170, pick: 'shoe' },
       { t: [8.2, 11], at: [MID, 84, -10], text: 'Open above: no headrail', dx: 60, dy: -150, noRing: true }],
     glow: { shoe: [4, 7.6] },
@@ -40,7 +40,7 @@ const STYLE_SHOTS = {
   'ceiling-hung': {
     held: 'Steel above the ceiling', best: 'A clear floor that\'s easy to clean',
     say: [[0, 'Ceiling hung partitions hang from steel above the ceiling.'], [3.5, 'The steel has to be engineered to carry them.'], [7.5, 'Nothing touches the floor, so cleaning is fast.']],
-    cam: [[0, [MID + 40, 70, 330], [MID, 50, -20], 40], [3.5, [MID + 30, 62, 230], [MID, 80, -14], 42], [6, [MID + 10, 58, 175], [MID, 98, -10], 46], [8.2, [RUN * 0.15, 20, 175], [RUN * 0.6, 8, -10], 40], [11, [RUN * 0.55, 18, 165], [RUN * 0.95, 8, -10], 40]],
+    cam: [[0, [MID + 30, 64, 290], [MID, 52, -14], 40], [5.5, [MID + 10, 60, 215], [MID, 88, -10], 40], [9, [RUN * 0.32, 28, 205], [RUN * 0.56, 10, -10], 40], [11, [RUN * 0.4, 26, 198], [RUN * 0.62, 10, -10], 40]],
     labels: [{ t: [4.6, 7.4], at: [MID, 103.5, 0], text: 'Hung from structural steel', dx: 80, dy: -110 },
       { t: [8.6, 11], at: [RUN * 0.62, 2, 4], text: 'Nothing touches the floor', dx: 40, dy: -170, noRing: true }],
     glow: { steel: [4.2, 7.6], rod: [4.2, 7.6], sleeve: [4.2, 7.6] },
@@ -49,30 +49,24 @@ const STYLE_SHOTS = {
   'floor-to-ceiling': {
     held: 'Floor and ceiling anchors', best: 'Heavy use, such as schools',
     say: [[0, 'Floor to ceiling partitions are anchored at both ends.'], [3.5, 'Every pilaster goes into the floor and into the ceiling.'], [7.5, 'It\'s the sturdiest choice for heavy use, like schools.']],
-    cam: [[0, [MID - 30, 70, 330], [MID, 48, -20], 40], [3.5, [RUN * 0.66, 46, 150], [RUN * 0.6, 14, -4], 44], [5.6, [RUN * 0.66, 50, 150], [RUN * 0.6, 84, -4], 44], [7.8, [RUN + 40, 60, 205], [MID, 48, -14], 40], [11, [RUN * 0.15, 60, 235], [MID + 10, 48, -14], 40]],
+    cam: [[0, [MID - 30, 64, 290], [MID, 48, -14], 40], [4.5, [RUN * 0.66, 48, 178], [RUN * 0.6, 22, -4], 40], [7, [RUN * 0.66, 50, 178], [RUN * 0.6, 78, -4], 40], [11, [RUN * 0.82, 60, 255], [MID, 50, -14], 40]],
     labels: [{ t: [3.9, 7.6], at: [RUN * 0.6, 2, 0.8], text: 'Anchored to the floor', dx: 90, dy: -110, pick: 'shoe' },
       { t: [5.2, 7.6], at: [RUN * 0.6, 94, 0.8], text: 'and to the ceiling', dx: 60, dy: 70, pick: 'cshoe' }],
     glow: { shoe: [3.8, 7.6], cshoe: [3.8, 7.6] },
   },
 }
-// hook: four quick looks, then the four styles one after another, a side-by-side recap and the end card
-const HOOK = 5, PER = 11, RECAP = 6, END = 5
+// a calm opening shot, the four styles one after another, a side-by-side recap and the end card
+const HOOK = 6, PER = 11, RECAP = 5, END = 5
 const SHOTS = []
 let T0 = 0
-const hookCams = [
-  [[0, [RUN + 70, 66, 250], [MID, 48, -14], 40], [1.25, [RUN + 20, 62, 205], [MID, 48, -14], 40]],
-  [[0, [-40, 60, 230], [MID, 46, -14], 40], [1.25, [0, 58, 195], [MID, 46, -14], 40]],
-  [[0, [MID, 40, 260], [MID, 60, -14], 40], [1.25, [MID + 30, 36, 215], [MID, 62, -14], 40]],
-  [[0, [RUN * 0.3, 70, 250], [MID, 50, -14], 40], [1.25, [RUN * 0.15, 66, 215], [MID, 50, -14], 40]],
-]
-STYLES.forEach((style, i) => SHOTS.push({ kind: 'hook', style, start: i * 1.25, dur: 1.25, cam: hookCams[i] }))
+SHOTS.push({ kind: 'hook', style: 'floor-to-ceiling', start: 0, dur: HOOK, cam: [[0, [RUN + 46, 62, 250], [MID, 50, -14], 40], [HOOK, [RUN + 14, 60, 222], [MID, 48, -14], 40]] })
 T0 = HOOK
 STYLES.forEach((style, i) => { SHOTS.push({ kind: 'style', style, num: i + 1, start: T0, dur: PER, ...STYLE_SHOTS[style] }); T0 += PER })
 SHOTS.push({ kind: 'recap', start: T0, dur: RECAP }); T0 += RECAP
 SHOTS.push({ kind: 'end', style: 'floor-to-ceiling', start: T0, dur: END, cam: [[0, [RUN + 40, 62, 230], [MID, 48, -14], 40], [END, [RUN + 10, 60, 205], [MID, 48, -14], 40]] }); T0 += END
 export const DURATION = T0
 export const CAPTIONS = [
-  [0, 'There are four ways to hold up a toilet partition.'], [2.6, 'Which one fits your restroom?'],
+  [0.4, 'Toilet partitions are held up in one of four ways.'], [3.2, 'Here is how each one works.'],
   ...SHOTS.filter((s) => s.kind === 'style').flatMap((s) => s.say.map(([t, x]) => [s.start + t, x])),
   [HOOK + 4 * PER, 'Here are all four, side by side.'],
   [HOOK + 4 * PER + RECAP, 'Send us your style, material and stall count, and we\'ll quote it.'],
@@ -94,10 +88,10 @@ function spline(keys, t) {
 // ---------- 3D ----------
 let renderer, composer, ao, camera, scene = null, sceneStyle = null, tagged = [], P = {}
 const CANVAS = document.getElementById('gl')
-export function setup({ specs, width, height, dpr }) {
-  P = { specs, width, height, dpr, vertical: height > width }
+export function setup({ specs, width, height, dpr, gl = 1 }) {
+  P = { specs, width, height, dpr, gl, vertical: height > width }
   renderer = new THREE.WebGLRenderer({ canvas: CANVAS, antialias: false, preserveDrawingBuffer: true })
-  renderer.setPixelRatio(1); renderer.setSize(width, height) // the 3D layer renders at page size; the overlay text gets the full device scale
+  renderer.setPixelRatio(1); renderer.setSize(width * gl, height * gl, false) // the 3D layer renders at page size; the overlay text gets the full device scale
   renderer.outputColorSpace = THREE.SRGBColorSpace
   renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 0.85
   renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap
@@ -118,7 +112,7 @@ function useStyle(style) {
     o.material = o.material.clone(); o.material.transparent = true
     o.userData.p0 = o.position.clone(); tagged.push(o)
   })
-  const W = P.width, H = P.height
+  const W = P.width * P.gl, H = P.height * P.gl
   composer = new EffectComposer(renderer)
   composer.setPixelRatio(1); composer.setSize(W, H)
   composer.addPass(new RenderPass(scene, camera))
@@ -210,10 +204,9 @@ window.frameAt = function (t) {
   for (let i = 0; i < 3; i++) if (!shot.labels || !shot.labels[i]) document.getElementById('l' + i).style.opacity = 0
   ov.innerHTML = svg
   // hook
-  hookEl.style.opacity = shot.kind === 'hook' ? 1 : 0
+  hookEl.style.opacity = shot.kind === 'hook' ? clamp((HOOK - t) / 0.6) : 0
   if (shot.kind === 'hook') {
-    $('#hook .tag').textContent = NAMES[shot.style]
-    $('#hook .q').style.opacity = clamp((t - 2.6) / 0.4)
+    $('#hook .txt').style.opacity = clamp((t - 0.3) / 0.8) * clamp((HOOK - t) / 0.5)
   }
   // style card
   const st = shot.kind === 'style'
@@ -238,6 +231,7 @@ window.frameAt = function (t) {
   endEl.style.opacity = shot.kind === 'end' ? clamp(lt / 0.5) : 0
   endEl.querySelectorAll('.e').forEach((el, j) => { const a = easeOut((lt - 0.3 - j * 0.3) / 0.6); el.style.opacity = a; el.style.transform = `translateY(${20 * (1 - a)}px)` })
   $('#brand').style.opacity = shot.kind === 'end' ? 0 : 1
+  $('#brand').style.color = shot.kind === 'hook' ? '#fbfaf9' : '#1c0e05'
   // captions
   let c = CAPTIONS[0]; for (const x of CAPTIONS) if (t >= x[0]) c = x
   cap.textContent = c[1]
