@@ -299,3 +299,7 @@ What it confirms or changes:
 ## Full-manual check, 2026-11-26
 
 The guides were checked step by step against the full text of the 11 manuals (Scranton ×2, Bradley ×3, Hadrian ×3, ASI ×3; copies kept outside this repo). Changes made: shoe handling on solid plastic systems (the shoe is fixed to the floor first and the pilaster stands in it), headrail joints over a pilaster and a return piece where the run ends away from a wall, firmness check reworded, stiffeners on wide pilasters, bracing on solid plastic ceiling-hung systems stated as required, ceiling hung pilasters made to length, height adjustment on floor-to-ceiling pilasters, "sturdiest" dropped, floors added to the "can it hold the fixing" check, and two sentences reworded that sat close to manual wording.
+
+## Floor mounted recheck, 2026-11-27
+
+A second read of the floor mounted procedures (`floor-mounted-check.md`) adds Bradley Series 500 as a full floor mounted source (4 manufacturers + AMPCO). Corrections to section 2: Bobrick **and Bradley** set all anchor nuts to one level first; shoes go down once the pilasters are tight, before the doors (Bradley, ASI) or after them (Bobrick, AMPCO); Hadrian's floor mounted method is a short appendix, so its compartment-by-compartment advice belongs to its headrail steps; stiffeners aren't mentioned by any floor mounted source; Bradley measures wall bracket heights from the highest floor point. The video follows the majority: shoes before doors.

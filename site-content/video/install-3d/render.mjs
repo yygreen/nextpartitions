@@ -38,7 +38,7 @@ const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--ena
 const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: dpr })
 page.on('pageerror', (e) => console.log('[page error]', e.message))
 page.on('console', (m) => { if (m.type() === 'error') console.log('[page]', m.text()) })
-await page.goto(`http://127.0.0.1:${server.address().port}/video/install-3d/install.html${process.env.Q ? '?' + process.env.Q : ''}${mode === 'v' ? '#v' : ''}`)
+await page.goto(`http://127.0.0.1:${server.address().port}/video/install-3d/${arg('--page', 'install.html')}${process.env.Q ? '?' + process.env.Q : ''}${mode === 'v' ? '#v' : ''}`)
 await page.waitForFunction(() => window.__ready === true)
 await page.evaluate(() => document.fonts.ready)
 await page.evaluate(() => Promise.all([...document.images].map((i) => i.decode().catch(() => {}))))
@@ -58,7 +58,7 @@ try {
     }
   } else {
     const from = +arg('--from', 0), to = +arg('--to', dur)
-    const name = arg('--name') ?? `install-overhead-braced-${mode === 'v' ? '9x16' : '16x9-4k'}${from || to !== dur ? `-${from}-${to}` : ''}.mp4`
+    const name = arg('--name') ?? `install-${arg('--style', 'overhead-braced')}-${mode === 'v' ? '9x16' : '16x9-4k'}${from || to !== dur ? `-${from}-${to}` : ''}.mp4`
     const out = join(HERE, 'out', name)
     // written under a temporary name and renamed when complete, so an interrupted run never leaves a finished-looking file
     const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-c:v', 'mjpeg', '-i', '-',
