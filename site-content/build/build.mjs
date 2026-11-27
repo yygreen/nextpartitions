@@ -356,6 +356,8 @@ sum.textContent=fails?fails+(fails>1?' rules fail':' rule fails')+', '+checks+' 
 f.addEventListener('input',run);f.addEventListener('change',run);run()})()</script>`
 const md = (s) => withStallTables(withPricers(withCheckers(ctas(inlineRenders(legends(cards(styled(marked.parse(s.replace(/^:::stalls\n([\s\S]*?)\n:::$/gm, (_, b) => stallTable(b)).replace(/^:::pricer\n([\s\S]*?)\n:::$/gm, (_, b) => pricer(b)).replace(/^:::checker\n([\s\S]*?)\n:::$/gm, (_, b) => checker(b)).replace(/^:::expert\n([\s\S]*?)\n:::$/gm, (_, b) => expert(b)).replace(/^:::advice\n([\s\S]*?)\n:::$/gm, (_, b) => advice(b)).replace(/^:::gallery\n([\s\S]*?)\n:::$/gm, (_, b) => gallery(b)), { gfm: true })))))))))
 
+// The site shows FAQ answers (and their FAQ schema) as plain text, so links and bold are reduced to their words on export
+const plainFaq = (s) => s.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*([^*]+)\*\*/g, '$1').replace(/\*([^*]+)\*/g, '$1')
 function faqItems(section) {
   return section.md.split(/^### /m).filter((x) => x.trim()).map((q) => { const nl = q.indexOf('\n'); return { q: q.slice(0, nl).trim(), a: q.slice(nl + 1).trim() } })
 }
@@ -717,7 +719,7 @@ if (EXPORT_BLOG) {
       const name = HERO_DIAGRAM[fm.url] || (m ? m[1] : HERO_FALLBACK[fm.url])
       if (name) { heroes.add(name); cover = `/images/heroes/${name}.svg` }
     }
-    rows.push({ handle: fm.url.split('/').pop(), title: fm.h1, excerpt: fm.meta, body, seo_title: fm.title, seo_description: fm.meta, faq: faq ? faqItems(faq) : [], cover })
+    rows.push({ handle: fm.url.split('/').pop(), title: fm.h1, excerpt: fm.meta, body, seo_title: fm.title, seo_description: fm.meta, faq: faq ? faqItems(faq).map(({ q, a }) => ({ q, a: plainFaq(a) })) : [], cover })
   }
   // phone versions of the drawings the posts show (the app's renderer swaps them in on small screens)
   for (const img of [...images]) {

@@ -158,7 +158,7 @@ Tell us your stall count, measurements, material and mounting style. Standard co
 Commercial bathroom stalls are made of powder coated steel, stainless steel, plastic laminate, phenolic or solid plastic (HDPE). Steel partitions wrap a honeycomb core, plastic laminate is bonded to particleboard, phenolic is fused layers of resin-soaked kraft paper, and HDPE is one solid sheet of plastic.
 
 ### What is the best material for a wet restroom?
-Phenolic or solid plastic (HDPE). Manufacturers position both for showers, pools and areas that are hosed down. Plastic laminate's particleboard core can swell with too much moisture, and painted steel can rust. See [HDPE vs phenolic partitions](/blog/hdpe-vs-phenolic-partitions) for how the two compare.
+Phenolic or solid plastic (HDPE). Manufacturers position both for showers, pools and areas that are hosed down. Plastic laminate's particleboard core can swell with too much moisture, and painted steel can rust. Our HDPE vs phenolic post compares the two in detail.
 
 ### Is phenolic the same as compact laminate?
 Yes, in practice. Bobrick calls its phenolic material compact grade laminate (CGL): melamine faces and colored face sheets bonded to a black phenolic-resin core.
