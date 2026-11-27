@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Floor to ceiling partitions: how they go together</title>
+<script type="importmap">
+{ "imports": { "three": "/design/render3d/node_modules/three/build/three.module.js", "three/addons/": "/design/render3d/node_modules/three/examples/jsm/" } }
+</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#000;overflow:hidden}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden;background:#e9ebe7;font-family:Inter,system-ui,sans-serif;color:#1c0e05}
+body.v #stage{width:1080px;height:1920px}
+#gl{position:absolute;inset:0;width:100%;height:100%}
+#ov{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:6}
+.lbl{position:absolute;z-index:6;opacity:0;background:#fe7802;color:#fff;font-weight:700;font-size:38px;line-height:1;padding:16px 22px;border-radius:10px;white-space:nowrap;box-shadow:0 6px 24px rgba(28,14,5,.25)}
+body.v .lbl{font-size:36px}
+#brand{position:absolute;left:56px;top:40px;display:flex;align-items:center;gap:14px;font-weight:700;font-size:26px;z-index:5;color:#1c0e05}
+#brand img{width:40px}
+body.v #brand{left:60px;top:70px}
+#dots{position:absolute;right:60px;top:50px;display:flex;gap:12px;z-index:5}
+#dots i{width:44px;height:8px;border-radius:4px;background:rgba(120,106,94,.35)}#dots i.on{background:#fe7802}
+body.v #dots{top:86px}
+#card{position:absolute;left:56px;bottom:140px;width:500px;z-index:4;background:rgba(251,250,249,.94);border-top:6px solid #fe7802;padding:22px 28px 24px;box-shadow:0 10px 40px rgba(28,14,5,.18);opacity:0}
+#card .head{display:flex;align-items:center;gap:20px}
+#card .num{width:52px;height:52px;flex:0 0 52px;border-radius:50%;background:#fe7802;color:#fff;font-size:30px;font-weight:800;display:flex;align-items:center;justify-content:center}
+#card h2{font-family:'Inter Display',Inter;font-size:44px;font-weight:800;letter-spacing:-.02em;line-height:1}
+#card .row{margin-top:0;padding-top:0;max-height:0;overflow:hidden;border-top:2px solid #e5e0da;opacity:0}
+#card .row span{display:block;font-size:17px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#7a6a5e;margin-bottom:6px}
+#card .row b{display:block;font-size:30px;line-height:1.15;font-weight:700}
+body.v #card{left:40px;right:40px;width:auto;bottom:260px}
+#hook{position:absolute;inset:0;opacity:0;pointer-events:none}
+#hook .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,14,5,.72) 0%,rgba(28,14,5,.38) 50%,rgba(28,14,5,0) 100%)}
+body.v #hook .shade{background:linear-gradient(0deg,rgba(28,14,5,.85) 0%,rgba(28,14,5,.55) 50%,rgba(28,14,5,.1) 100%)}
+#hook .txt{position:absolute;left:110px;top:300px;width:1000px;color:#fbfaf9}
+#hook h1{font-family:'Inter Display',Inter;font-size:88px;line-height:1;font-weight:800;letter-spacing:-.025em}
+#hook .q{font-size:40px;font-weight:500;color:#fbfaf9;opacity:.9;margin-top:26px}
+#hook .tag{position:absolute;right:70px;bottom:150px;background:#fe7802;color:#fff;font-size:34px;font-weight:700;padding:12px 22px;border-radius:8px}
+body.v #hook .txt{left:60px;right:60px;width:auto;top:auto;bottom:700px}body.v #hook h1{font-size:104px}
+body.v #hook .tag{right:auto;left:60px;top:200px;bottom:auto}
+#recap{position:absolute;inset:0;background:#fbfaf9;opacity:0;padding:120px 70px 150px}
+#recap .grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;height:100%}
+#recap .tile{position:relative;overflow:hidden;background:#fff;border-top:6px solid #fe7802;opacity:0}
+#recap .tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#recap .tile .t{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(0deg,rgba(28,14,5,.85),rgba(28,14,5,0));color:#fff;padding:60px 26px 20px}
+#recap .tile b{display:block;font-size:38px;font-weight:800}
+#recap .tile span{font-size:26px;font-weight:600;color:#ffd2ad}
+body.v #recap{padding:180px 40px 360px}body.v #recap .grid{grid-template-columns:1fr;gap:18px}
+body.v #recap .tile .t{padding:30px 22px 14px}body.v #recap .tile b{font-size:34px}body.v #recap .tile span{font-size:24px}
+#end{position:absolute;inset:0;opacity:0;background:linear-gradient(90deg,rgba(28,14,5,.85) 0%,rgba(28,14,5,.55) 55%,rgba(28,14,5,.2) 100%)}
+body.v #end{background:linear-gradient(0deg,rgba(28,14,5,.9) 0%,rgba(28,14,5,.6) 60%,rgba(28,14,5,.3) 100%)}
+#end .in{position:absolute;left:120px;top:290px;color:#fbfaf9}
+#end img{width:96px;margin-bottom:36px}
+#end h2{font-family:'Inter Display',Inter;font-size:104px;font-weight:800;letter-spacing:-.02em}
+#end p{font-size:48px;font-weight:700;color:#fe7802;margin-top:18px}
+#end .note{font-size:30px;margin-top:28px;opacity:.85}
+body.v #end .in{left:60px;right:60px;top:auto;bottom:640px}body.v #end h2{font-size:92px}body.v #end p{font-size:44px}
+#cap{position:absolute;left:50%;bottom:46px;transform:translateX(-50%);width:1680px;text-align:center;z-index:6}
+#cap span{display:inline;background:rgba(28,14,5,.86);color:#fff;font-size:36px;line-height:1.55;font-weight:600;padding:6px 16px;box-decoration-break:clone;-webkit-box-decoration-break:clone;border-radius:6px}
+body.v #cap{bottom:120px;width:960px}body.v #cap span{font-size:42px}
+</style>
+<style>
+#step{position:absolute;left:56px;bottom:140px;z-index:7;background:rgba(251,250,249,.94);border-top:6px solid #fe7802;padding:20px 28px;box-shadow:0 10px 40px rgba(28,14,5,.18);opacity:0;display:flex;align-items:center;gap:20px;max-width:760px}
+#step .num{width:52px;height:52px;flex:0 0 52px;border-radius:50%;background:#fe7802;color:#fff;font-size:30px;font-weight:800;display:flex;align-items:center;justify-content:center}
+#step .of{display:block;font-size:17px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#7a6a5e;margin-bottom:4px}
+#step h2{font-family:'Inter Display',Inter;font-size:40px;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+#dots i{width:30px}
+#hook .note,#end .note2{font-size:26px;font-weight:500;opacity:.8;margin-top:34px;max-width:900px;line-height:1.35}
+#kit{position:absolute;inset:0;z-index:3;opacity:0;pointer-events:none}
+#kit .kt{position:absolute;left:110px;top:120px}
+#kit .kt span{display:block;font-size:20px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fe7802;margin-bottom:10px}
+#kit .kt h2{font-family:'Inter Display',Inter;font-size:72px;font-weight:800;letter-spacing:-.02em;color:#1c0e05}
+#kit .names b{position:absolute;transform:translateX(-50%);font-size:30px;font-weight:700;color:#1c0e05;white-space:nowrap;border-top:4px solid #fe7802;padding-top:10px}
+#flash{position:absolute;inset:0;background:#f4f1ec;opacity:0;z-index:2;pointer-events:none}
+</style>
+</head>
+<body>
+<div id="stage">
+<canvas id="gl"></canvas>
+<div id="flash"></div><div id="kit"><div class="kt"><span>Parts for this step</span><h2></h2></div><div class="names"></div></div>
+<svg id="ov"></svg>
+<div class="lbl" id="l0"></div><div class="lbl" id="l1"></div><div class="lbl" id="l2"></div>
+<div id="hook"><div class="shade"></div><div class="txt"><h1>Floor to ceiling partitions</h1><div class="q">How they go together</div><div class="note">An overview, not installation instructions. Follow the manufacturer's instructions supplied with your order.</div></div></div>
+<div id="step"><span class="num"></span><div><span class="of"></span><h2></h2></div></div>
+<div id="end"><div class="in"><img class="e" src="/prototypes-logo.png"><h2 class="e">Price your restroom</h2><p class="e">nextpartitions.com/get-a-quote</p><div class="note2 e">This video is an overview. Install to the manufacturer's instructions supplied with your order and to the approved shop drawings.</div></div></div>
+<div id="brand"><img src="/prototypes-logo.png">Next Partitions</div>
+<div id="dots"></div>
+<div id="cap"><span></span></div>
+</div>
+<script type="module" src="./install-ftcd.js"></script>
+</body>
+</html>
