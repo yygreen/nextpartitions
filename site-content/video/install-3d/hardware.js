@@ -54,6 +54,24 @@ export function stud(len = 3, r = 0.25) {
   return g
 }
 
+// barrel nut: the female half of a through-bolt (a screw comes in from the far side); low round head at the origin,
+// plain sleeve down -y
+export function barrelNut(len = 0.5, r = 0.13) {
+  return group(at(cyl(r * 2.3, 0.1, MAT.chrome, 24), 0, 0.05, 0), at(cyl(r * 1.4, 0.04, MAT.chrome, 24), 0, 0.11, 0), at(cyl(r, len, MAT.steel, 14), 0, -len / 2, 0))
+}
+// leveling bolt for a solid pilaster's foot: origin at the seat (the pilaster's bottom face); `len` of thread goes in
+// along -y, `out` stands proud along +y and ends in a hex head that sits on the floor
+export function levelBolt(len = 1.2, out = 1, r = 0.16) {
+  const g = group(at(cyl(r, len + out - 0.3, MAT.zinc, 14), 0, (out - 0.3 - len) / 2, 0), at(cyl(r * 2.4, 0.3, MAT.zinc, 6), 0, out - 0.15, 0))
+  for (let y = -len + 0.1; y < out - 0.35; y += 0.14) g.add(at(cyl(r * 1.08, 0.04, MAT.zinc, 14), 0, y, 0))
+  return g
+}
+// pilaster shoe (for the kit card): an open-ended stainless sleeve
+export function shoe(w = 6, d = 1.4, h = 3) {
+  const t = 0.06, m = MAT.chrome
+  return group(at(boxm(w, h, t, m), 0, h / 2, d / 2), at(boxm(w, h, t, m), 0, h / 2, -d / 2), at(boxm(t, h, d, m), -w / 2, h / 2, 0), at(boxm(t, h, d, m), w / 2, h / 2, 0))
+}
+
 // ---------- brackets ----------
 // angle bracket: leg A flat on the fixing surface (x-z plane at y = 0, extending +x), leg B standing up along +y.
 // Holes are drawn as dark dots so the screws have somewhere to go.
