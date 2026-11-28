@@ -1,0 +1,476 @@
+{
+ "area": "indianapolis",
+ "found_count": 16,
+ "sources_tried": [
+  "Seeds file research/installers/raw/seeds/indianapolis.json: worked; maps yielded Midwest Specialties, Division 10 Solutions/D10 Pro, CIH, LaForce, Indiana Wholesale Supply; web seeds were irrelevant directory/flooring results",
+  "Scranton Products where-to-buy: worked but lists only a regional product specialist (IA/IL/IN/MI/...), no dealers or installers",
+  "Bobrick find-a-rep: page loads but rep data is in a dropdown not rendered; /find-a-representative 404",
+  "Hadrian find-a-rep: 404",
+  "Metpar representatives: 404",
+  "General Partitions representatives: 404",
+  "ASI Global Partitions find-a-rep: 404",
+  "Bradley find-a-rep: empty page",
+  "Ampco/Ammco: not tried (cap/time)",
+  "The Blue Book (thebluebook.com iProView pages): blocked, 403",
+  "BuildingConnected / Procore: not tried",
+  "BBB partition category pages (Indianapolis, Fishers, Carmel): worked; surfaced AllSource and Space Management Installations (operable walls only, excluded)",
+  "Kelley Bros, LaForce, CIH location pages: worked",
+  "onepointpartitions.com: blocked, 403",
+  "WebSearch: 8 of 8 used (Division 10 Indianapolis, toilet compartments IN, manufacturer reps IN, AllSource, nearby cities, Space Management, restroom partitions installer IN, washroom accessories lockers IN)",
+  "Yelp: not reached within search cap",
+  "Seed file research/installers/raw/seeds/indianapolis.json: worked. Of the 45 Maps results, about 6 were plausible; most were residential bath remodelers, plumbers, HVAC and glass shops. The 17 web results were Google redirect links pointing to directories and remodelers.",
+  "Seed websites checked: allsourcespecialties.com, midwest-specialties.com, indianawholesalesupply.com, cih-inc.com and laforceinc.com worked. Excluded after checking: lyoninc.com (glass block only), locations.irvmat.com Specialties Company (ground stabilization, not Division 10), division10solutions.com (redirects to d10pro.com, based in Rochester IN, about 95 miles away; it does list restroom partitions).",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but the rep dropdown didn't come through; no Indiana rep found.",
+  "Scranton Products where-to-buy: worked, but it lists only a regional sales rep (a person, so not added), no Indianapolis dealers.",
+  "Hadrian find-a-rep: 404.",
+  "ASI, Bradley, Metpar, General Partitions and Ampco locators: not tried (search and fetch budget).",
+  "The Blue Book (thebluebook.com): 403, blocked on search page and iProView profiles.",
+  "BuildingConnected / Procore public profiles: not tried.",
+  "BBB category pages (Indianapolis Partitions, Fishers Partitions, Franklin Lockers): worked. These gave Space Management Installations, AllSource and RS Locker Repair.",
+  "Florence Mailboxes dealer page for AllSource: worked.",
+  "WebSearch (8 of 8 used): 'toilet partition installation Indianapolis', 'Division 10 specialties contractor Indianapolis toilet compartments', 'restroom partitions installer Indiana Carmel Fishers Noblesville', 'AllSource Construction Specialties Indianapolis Division 10', 'Aptura Group Indianapolis Division 10...', 'Space Management Installations Indianapolis partitions', 'commercial toilet partitions lockers installer ... yelp' (no Yelp results), and the furnish-and-install query. Leads not added: Aptura Group (only job ads for a Division 10 installer in Indianapolis; the job page returned 410 and the company site wasn't found), Indiana Door & Hardware Specialties (Bloomington, outside 30 miles), One Point Partitions (online seller with a Greenwood delivery terminal; a search snippet says it doesn't install; its site returned 403), Innovate Commercial Interiors (named in a search summary with AllSource's phone number, not checked).",
+  "onepointpartitions.com: 403. Google search fetch: blocked (error page). indychamber.com: 404."
+ ],
+ "candidates": [
+  {
+   "name": "Indiana Wholesale Supply Co",
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Metpar",
+    "Bobrick",
+    "FlushMetal"
+   ],
+   "partition_evidence": "Bathroom Partitions page says it supplies and installs partitions, with layout design and professional installation. It lists projects: Shindig Restaurant in Indianapolis (Metpar, 6 stalls), Harding-Poorman office building in Indianapolis (Metpar, 5 stalls, removed the old partitions) and Kingsway Christian Church in Avon (FlushMetal stainless, 10 stalls).",
+   "reason": "Commercial Division 8/10 supplier in Indianapolis with named local partition installation projects. It sells partitions itself, so the buy-around risk is high.",
+   "red_flags": [
+    "Wholesale partition distributor: buy-around risk"
+   ],
+   "phone": "317-638-3667",
+   "email": "sales@iwsco.com",
+   "website": "http://www.indianawholesalesupply.com/",
+   "contact_page": "https://www.indianawholesalesupply.com/contact",
+   "evidence_urls": [
+    "http://www.indianawholesalesupply.com/",
+    "https://www.indianawholesalesupply.com/products/bathroom-partitions",
+    "https://www.indianawholesalesupply.com/contact"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Indiana Wholesale Supply Co",
+    "area": "indianapolis",
+    "status": "not_online",
+    "registry": "City of Indianapolis/Marion County Department of Business and Neighborhood Services (BNS) licensed/listed contractor records, Accela Citizen Access portal (aca-prod.accela.com/INDY)",
+    "source_url": "https://aca-prod.accela.com/INDY/GeneralProperty/PropertyLookUp.aspx?isLicensees=true",
+    "note": "Indiana has no state license for this work; Indianapolis requires contractors to be listed with BNS. The BNS licensee search runs only in the Accela portal as an ASP.NET postback form. Automated requests were rejected ('Potential cross-site request forgery attacks. The Referer and Origin headers are missing'), and a retry was blocked, so no record was read. Check by hand in the Accela portal (Search for Licensee) or ask BNS (contractors@indy.gov, a third-party listing gives this address; not verified on indy.gov). This business may be a distributor rather than an installer, so it may not need to be listed at all. Checked 2026-11-19."
+   },
+   "score": 70
+  },
+  {
+   "name": "Schricker-CIH (CIH / Central Indiana Hardware)",
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Accurate",
+    "Bobrick",
+    "General Partitions",
+    "Mills Bradley",
+    "Scranton Products",
+    "Showershapes"
+   ],
+   "partition_evidence": "Its toilet partitions page says it ships and installs partitions anywhere in the USA, offers installation for every product it sells and includes layout drawings with every partition shipment.",
+   "reason": "Long-running commercial Division 8/10/28 company with an Indianapolis office. It states it installs toilet partitions. As a large distributor it also sells partitions, so the buy-around risk is high.",
+   "red_flags": [
+    "Sells partitions itself: buy-around risk",
+    "Multi-state distributor with 5 locations, not a dedicated installer"
+   ],
+   "phone": "317-558-5700",
+   "website": "https://cih-inc.com/",
+   "contact_page": "https://cih-inc.com/contact-us/",
+   "evidence_urls": [
+    "https://cih-inc.com/",
+    "https://cih-inc.com/solutions/toiletpartitions-accessories/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Schricker-CIH (CIH / Central Indiana Hardware)",
+    "area": "indianapolis",
+    "status": "not_online",
+    "registry": "City of Indianapolis/Marion County Department of Business and Neighborhood Services (BNS) licensed/listed contractor records, Accela Citizen Access portal (aca-prod.accela.com/INDY)",
+    "source_url": "https://aca-prod.accela.com/INDY/GeneralProperty/PropertyLookUp.aspx?isLicensees=true",
+    "note": "No state license applies. The BNS licensee search in the Accela portal rejects automated requests (anti-CSRF Referer/Origin check), so no record was read. Check by hand in the portal. Checked 2026-11-19."
+   },
+   "score": 70
+  },
+  {
+   "name": "Kelley Bros (Indianapolis office)",
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Global Toilet Partitions",
+    "Scranton Products",
+    "Hadrian"
+   ],
+   "website": "https://www.kelleybros.com/",
+   "phone": "(317) 383-0622 (Indianapolis); 800-856-2550 (main)",
+   "contact_page": "https://www.kelleybros.com/contact-us/",
+   "evidence_urls": [
+    "https://www.kelleybros.com/products/division-10/",
+    "https://www.kelleybros.com/locations/",
+    "https://www.kelleybros.com/"
+   ],
+   "partition_evidence": "Its Division 10 page lists toilet partitions in metal, plastic laminate and phenolic, plus a turnkey service 'from our initial quote to the final Product Installation'.",
+   "red_flags": [
+    "Multi-state Division 8/10/28 distributor that sells partitions (buy-around risk)",
+    "Mainly works for general contractors"
+   ],
+   "reason": "Has an Indianapolis office, supplies toilet partitions and offers turnkey installation for commercial projects. It is a large distributor that competes on supply.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Kelley Bros (Indianapolis office)",
+    "area": "indianapolis",
+    "status": "not_online",
+    "registry": "City of Indianapolis BNS Licensed Contractors lists (indy.gov)",
+    "source_url": "https://www.indy.gov/activity/licensed-contractors",
+    "note": "Not checked. The BNS list page is drawn by JavaScript and its list files couldn't be reached by automated fetch. Verify on the list in a browser or by calling BNS at 317.327.8700."
+   },
+   "score": 70
+  },
+  {
+   "name": "AllSource Construction Specialties, LLC",
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley"
+   ],
+   "partition_evidence": "Calls itself a Division 10 specialties supplier and installer with its own installation crews in the greater Indianapolis area. The About page lists 'partitions' among its products without saying toilet partitions. Bobrick and Bradley appear among its vendor logos.",
+   "reason": "Local commercial and multi-family Division 10 installer that supplies materials too. Toilet partition work isn't explicitly shown, and its listed projects are mostly multi-family.",
+   "red_flags": [
+    "Supplies Division 10 materials itself (partitions not confirmed)"
+   ],
+   "phone": "(317) 351-9390",
+   "website": "https://www.allsourcespecialties.com/",
+   "contact_page": "https://www.allsourcespecialties.com/contact",
+   "review_source": "BBB A+ (accredited) on the BBB Partitions category listing",
+   "evidence_urls": [
+    "https://www.allsourcespecialties.com/",
+    "https://www.allsourcespecialties.com/about",
+    "https://www.bbb.org/us/in/fishers/category/partition"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "AllSource Construction Specialties, LLC",
+    "area": "indianapolis",
+    "status": "not_online",
+    "registry": "City of Indianapolis/Marion County Department of Business and Neighborhood Services (BNS) licensed/listed contractor records, Accela Citizen Access portal (aca-prod.accela.com/INDY)",
+    "source_url": "https://aca-prod.accela.com/INDY/GeneralProperty/PropertyLookUp.aspx?isLicensees=true",
+    "note": "No state license applies. The BNS licensee search in the Accela portal rejects automated requests (anti-CSRF Referer/Origin check), so no record was read. Check by hand in the portal. Checked 2026-11-19."
+   },
+   "score": 50
+  },
+  {
+   "name": "LaForce",
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "Building Specialties page lists Div. 10 products: toilet partitions, lockers and more, plus partition hardware. The company offers pre-install and install services, but nothing ties installation to partitions.",
+   "reason": "Large commercial door, frame and hardware supplier headquartered in Green Bay, WI, with an Indianapolis branch. It sells toilet partitions, but partition installation is unproven.",
+   "red_flags": [
+    "Sells partitions: buy-around risk",
+    "National distributor, not an installer"
+   ],
+   "phone": "(317) 415-2070",
+   "website": "https://laforceinc.com/",
+   "contact_page": "https://laforceinc.com/contact/",
+   "evidence_urls": [
+    "https://laforceinc.com/",
+    "https://laforceinc.com/what-we-do/building-specialties/",
+    "https://laforceinc.com/laforce-locations/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "LaForce",
+    "area": "indianapolis",
+    "status": "not_online",
+    "registry": "City of Indianapolis/Marion County Department of Business and Neighborhood Services (BNS) licensed/listed contractor records, Accela Citizen Access portal (aca-prod.accela.com/INDY)",
+    "source_url": "https://aca-prod.accela.com/INDY/GeneralProperty/PropertyLookUp.aspx?isLicensees=true",
+    "note": "No state license applies. The BNS licensee search in the Accela portal rejects automated requests (anti-CSRF Referer/Origin check), so no record was read. Check by hand in the portal. The Indianapolis entity may be a branch of a company based elsewhere (not verified). Checked 2026-11-19."
+   },
+   "score": 50
+  },
+  {
+   "name": "Schricker-CIH (CIH)",
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Schricker",
+    "Modernfold",
+    "Skyfold"
+   ],
+   "website": "https://cih-inc.com/",
+   "phone": "317-558-5700",
+   "contact_page": "https://cih-inc.com/contact-us/",
+   "evidence_urls": [
+    "https://cih-inc.com/",
+    "https://cih-inc.com/contact-us/",
+    "https://career.com/job/aptura-group/division-10-installer/j202403102225574774374"
+   ],
+   "partition_evidence": "Lists 'Toilet Partitions' under the Schricker line and has a general Service and Installation offering. Its parent APTURA Group posted an Indianapolis 'Division 10 Installer' job in 2025 to install commercial bathroom partitions.",
+   "red_flags": [
+    "A large door/hardware distributor that sells partitions (buy-around risk)",
+    "The CIH site itself doesn't confirm partition installation"
+   ],
+   "reason": "An Indianapolis commercial distributor that sells toilet partitions. Installation is likely, based on its parent company's installer job posting, but its own site doesn't confirm it.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Schricker-CIH (CIH)",
+    "area": "indianapolis",
+    "status": "not_online",
+    "registry": "City of Indianapolis BNS Licensed Contractors lists (indy.gov)",
+    "source_url": "https://www.indy.gov/activity/licensed-contractors",
+    "note": "Not checked. The BNS list page is drawn by JavaScript and its list files couldn't be reached by automated fetch. Verify on the list in a browser or by calling BNS at 317.327.8700."
+   },
+   "score": 50
+  },
+  {
+   "name": "LaForce (Indianapolis location)",
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://laforceinc.com/",
+   "phone": "(317) 415-2070 (Indianapolis); 1-800-236-8858 (main)",
+   "contact_page": "https://laforceinc.com/contact/",
+   "evidence_urls": [
+    "https://laforceinc.com/",
+    "https://laforceinc.com/laforce-locations/"
+   ],
+   "partition_evidence": "Its Building Specialties section lists 'Div. 10 Products: Toilet partitions, lockers & more', and it has a Pre-Install & Install service, but partition installation isn't confirmed.",
+   "red_flags": [
+    "A national Division 8/10 distributor that sells partitions (buy-around risk)",
+    "Partition installation not confirmed"
+   ],
+   "reason": "Supplies toilet partitions from an Indianapolis location and offers installation services in general. Partition installation is unproven.",
+   "added_by_checker": false,
+   "license": {
+    "name": "LaForce (Indianapolis location)",
+    "area": "indianapolis",
+    "status": "not_online",
+    "registry": "City of Indianapolis BNS Licensed Contractors lists (indy.gov)",
+    "source_url": "https://www.indy.gov/activity/licensed-contractors",
+    "note": "Not checked. The BNS list page is drawn by JavaScript and its list files couldn't be reached by automated fetch. Verify on the list in a browser or by calling BNS at 317.327.8700."
+   },
+   "score": 50
+  },
+  {
+   "name": "Midwest Specialties LLC",
+   "base_city": "Paragon",
+   "state": "IN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [
+    "ASI Accurate Partitions",
+    "Bradley",
+    "Flush Metal",
+    "General Partitions",
+    "Hadrian",
+    "Metpar",
+    "Scranton Products"
+   ],
+   "partition_evidence": "The homepage calls it a Division 10 distributor and installer and says it installs the products it sells. It has a Toilet Compartments page in five materials with manufacturer logos, but that page doesn't explicitly say it installs partitions. Listed projects include Gainbridge Fieldhouse and Indianapolis Motor Speedway.",
+   "reason": "Woman-owned Division 10 distributor and installer that calls itself Indianapolis' leading Division 10 distributor. Paragon is roughly 35 to 40 miles southwest of the area center, at the edge of the 30-mile radius, and partition installation isn't shown explicitly.",
+   "red_flags": [
+    "Distributor of partitions: buy-around risk",
+    "Base town about 35-40 miles from the center (edge of radius)"
+   ],
+   "phone": "(765) 913-9400",
+   "website": "http://www.midwest-specialties.com/",
+   "contact_page": "https://midwest-specialties.com/contact/",
+   "evidence_urls": [
+    "http://www.midwest-specialties.com/",
+    "https://midwest-specialties.com/services-products/toilet-compartments/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Midwest Specialties LLC",
+    "area": "indianapolis",
+    "status": "not_online",
+    "registry": "City of Indianapolis/Marion County Department of Business and Neighborhood Services (BNS) licensed/listed contractor records, Accela Citizen Access portal (aca-prod.accela.com/INDY)",
+    "source_url": "https://aca-prod.accela.com/INDY/GeneralProperty/PropertyLookUp.aspx?isLicensees=true",
+    "note": "Based in Paragon, IN (outside Marion County). Its Indianapolis listing could not be checked because the BNS licensee search in the Accela portal rejects automated requests. It only needs to be listed for work inside Indianapolis (Beech Grove, Lawrence, Southport and Speedway are excepted). Checked 2026-11-19."
+   },
+   "score": 45
+  },
+  {
+   "name": "Division 10 Professionals (D10 Pro)",
+   "base_city": "Rochester",
+   "state": "IN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "mostly",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://www.d10pro.com/",
+   "phone": "(574) 392-9228",
+   "email": "info@d10pro.com",
+   "evidence_urls": [
+    "https://www.d10pro.com/"
+   ],
+   "partition_evidence": "The site says it specializes in 'bathroom remodels, flooring, commercial restroom accessories, restroom partitions and deck remodels'.",
+   "red_flags": [
+    "Its site places it in Rochester, IN, about 95 miles away, and states no service area",
+    "The Google listing that puts it in Franklin, IN was not verified",
+    "Mixes residential remodel and deck work with commercial work",
+    "A second email (devin@ address) appears in the estimate popup; only the info@ address is listed here"
+   ],
+   "reason": "Lists restroom partitions among its services, but its site base is about 95 miles away with no stated service area for Indianapolis. The Franklin location needs checking.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Division 10 Professionals (D10 Pro)",
+    "area": "indianapolis",
+    "status": "not_online",
+    "registry": "City of Indianapolis BNS Licensed Contractors lists (indy.gov)",
+    "source_url": "https://www.indy.gov/activity/licensed-contractors",
+    "note": "Not checked. Based in Rochester, IN, outside Indianapolis; it needs a BNS listing only for work inside the Consolidated City. The BNS list page is drawn by JavaScript and couldn't be read automatically. Verify in a browser or by calling BNS at 317.327.8700."
+   },
+   "score": 35
+  },
+  {
+   "name": "APTURA Group",
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [
+    "https://career.com/job/aptura-group/division-10-installer/j202403102225574774374"
+   ],
+   "partition_evidence": "An expired Jan 2025 Indianapolis job posting for a Division 10 Installer to install commercial bathroom partitions, accessories and lockers.",
+   "red_flags": [
+    "Holding company of Central Indiana Hardware (CIH) and H&G Sales (per search results on its 2021 formation), not a separate installer",
+    "Duplicate of the Schricker-CIH entry"
+   ],
+   "reason": "APTURA is CIH's parent holding company, and the installers in its job posting work for CIH. Evaluate it under the Schricker-CIH entry instead of listing it separately.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 70
+  },
+  {
+   "name": "Space Management Installations, Inc.",
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "Listed under the BBB 'Partitions' category. A search summary (not a page I read) describes it as installing operable partitions and movable walls for CIH's Space Management division. I found no toilet partition evidence.",
+   "reason": "Appears to be an operable wall and movable partition installer tied to CIH, not a toilet partition installer. I found no website.",
+   "red_flags": [
+    "No website found",
+    "Operable walls, not restroom partitions"
+   ],
+   "phone": "(317) 752-4846",
+   "review_source": "BBB A+ (not accredited)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/in/fishers/category/partition"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "Greenwood (per candidate list; unverified)",
+   "state": "IN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Ironwood",
+    "Hadrian"
+   ],
+   "website": "https://onepointpartitions.com/",
+   "phone": "800-756-6817",
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=3366"
+   ],
+   "partition_evidence": "Search snippets of its Indianapolis page describe selling toilet partitions with free delivery in 5 to 7 days and 'easy to install' products. No installation by its own crews was confirmed, and the site returned 403 so it could not be read.",
+   "red_flags": [
+    "Online partition reseller and direct competitor of Next Partitions (strong buy-around risk)",
+    "Templated city pages; local presence (Greenwood base) unverified, within_area set to no for that reason",
+    "Site blocked automated reading (403)"
+   ],
+   "reason": "Appears to be a national online partitions seller rather than a local installer. It competes with Next Partitions and no local installation was confirmed.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "RS Locker Repair & Installation, Inc.",
+   "base_city": "Greenwood",
+   "state": "IN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "None found. Search results only showed BBB 'Lockers' category listings, and I didn't open those pages.",
+   "reason": "I found no website and no evidence of toilet partition work. It appears to be a locker repair and installation business.",
+   "red_flags": [
+    "No website found",
+    "Locker-only listings"
+   ],
+   "evidence_urls": [],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

@@ -1,0 +1,301 @@
+{
+ "slug": "long-island",
+ "city": "Long Island",
+ "state": "NY",
+ "checked": "2026-11-24",
+ "area_note": "Long Island here means Nassau and Suffolk counties: 2 cities (Glen Cove, Long Beach), 13 towns and many incorporated villages were not researched one by one. The pack covers what applies across the area (state Uniform Code, state permit framework, county sales tax, county wage schedules, county contractor licences). No town or village code was read.",
+ "codes": {
+  "building": {
+   "name": "2025 Building Code of New York State (part of the New York State Uniform Fire Prevention and Building Code)",
+   "edition": "2025 code books (ICC describes them as based on the 2024 International codes, per the state pack)",
+   "local_amendments": false,
+   "effective": "2025-12-31",
+   "url": "https://dos.ny.gov/notice-adoption",
+   "quote": "The effective date of the 2025 NYS Uniform Code is December 31, 2025. [...] [NYS Department of State, Legal Memorandum LG07] The Uniform Code is applicable in all parts of the State except New York City (which has its own construction code).",
+   "note": "The Department of State's notice describes the transition period, in which either the 2020 or the 2025 Uniform Code could be used, as running between publication of the Notice of Adoption and the effective date, so it ended on December 31, 2025 (as summarised by the fetch tool; the page returns 403 to curl)."
+  },
+  "plumbing": {
+   "name": "2025 Plumbing Code of New York State (part of the New York State Uniform Fire Prevention and Building Code)",
+   "edition": "2025 code books",
+   "local_amendments": false,
+   "effective": "2025-12-31",
+   "url": "https://dos.ny.gov/notice-adoption",
+   "quote": "The effective date of the 2025 NYS Uniform Code is December 31, 2025."
+  },
+  "local_standards": {
+   "finding": "The State Fire Prevention and Building Code Council's page lists the approved more restrictive local standards. The only Uniform Code entry is the Village of Saltaire, Local Law No. 4 of 2022, automatic fire sprinkler systems in single-family residential buildings (Saltaire is a Fire Island village in Suffolk County; the page does not state the county). No Nassau or Suffolk town, city or village is listed with a standard on plumbing fixtures or toilet rooms. The page excludes pending, denied and withdrawn petitions.",
+   "url": "https://dos.ny.gov/state-fire-prevention-and-building-code-council",
+   "quote": "Executive Law §379 and Energy Law §11-109 individually provide a process for adoption of more restrictive standards [...] Saltaire, Village of | Automatic Fire Sprinkler Systems, Single Family Residential | LL No. 4 of 2022 [approved]",
+   "nassau_note": "Legal Memorandum LG07, footnote 1: Executive Law section 379 \"authorizes Nassau County to enact or adopt local laws or ordinances imposing higher or more restrictive standards\"; \"No other county has such authority.\" No Nassau County standard appears on the Council's list."
+  },
+  "scheduled_change": null,
+  "scheduled_change_note": "None found on the Department of State's notice page. Its later notices are a court-ordered suspension of the fossil-fuel equipment provisions (July 2, 2026) and an amendment to 19 NYCRR Part 1203 effective October 7, 2026, which changes sections 1203.2(b) and 1203.3(h)(2) (inspection records and the lead rental registry) and leaves the building permit rules in 1203.3(a) as they were.",
+  "authority": "The building department of the city, town or village where the building stands (for example the Town of Hempstead Building Department, the Town of Oyster Bay Building Division, the Town of Brookhaven and the Town of Islip; an incorporated village enforces the code inside its own boundaries). The code itself is written by the New York State Department of State, Division of Building Standards and Codes.",
+  "authority_quote": "[Legal Memorandum LG07] Article 18 \"charges each local government (city, town, or village)\" with \"the duty of administering and enforcing the Uniform Code within its municipal boundaries.\" [Town of Hempstead Building Department page] \"administration and enforcement of building, plumbing, electrical, and housing codes\"",
+  "confidence": "medium"
+ },
+ "fixtures": {
+  "city_amends": false,
+  "amendment": null,
+  "city_amends_note": "A town, village or city on Long Island cannot change the state's toilet counts on its own: a local standard must be higher or more restrictive than the Uniform Code and takes effect only after the State Fire Prevention and Building Code Council approves it (Executive Law section 379; Legal Memorandum LG07: a local standard \"will not be effective until and unless the Code Council approves\" it). The Council's list of approved standards shows none on plumbing fixtures for any Nassau or Suffolk municipality. Individual town and village codes were not read. The state pack's table and worked examples stand.",
+  "worked_examples": [],
+  "confidence": "medium"
+ },
+ "permit": {
+  "exempt_list_quote": "[19 NYCRR 1203.3(a)(1)] Each authority having jurisdiction shall include in its code enforcement program provisions requiring building permits to be required for work that must conform to either or both of the Codes. Where expressly set forth in their code enforcement program, an authority having jurisdiction may exempt from the requirement for a building permit any one or more of the categories of work listed in section 1203.3 (a)(1)(i) through (viii). An exemption from the requirement to obtain a building permit shall not be deemed an authorization for work to be performed in violation of either or both of the Codes. The following categories of work may be exempted from the requirement for a building permit: (i) construction or installation of one-story detached structures associated with one- or two-family dwellings or multiple single-family dwellings (townhouses), which are used for tool and storage sheds, playhouses, or similar uses, provided the gross floor area does not exceed 144 square feet; (ii) construction of temporary sets and scenery associated with motion picture, television, and theater uses; (iii) installation of window awnings supported by an exterior wall of a one-or two-family dwelling or multiple single-family dwellings (townhouses); (iv) installation of partitions or movable cases less than 5'-9\" in height; (v) painting, wallpapering, tiling, carpeting, or other similar finish work; (vi) installation of listed portable electrical, plumbing, heating, ventilation, or cooling equipment or appliances; (vii) replacement of any equipment provided the replacement does not alter the equipment's listing or render it inconsistent with the equipment's original specifications; and (viii) repairs, provided that the work does not have an impact on fire and life safety, such as: (a) any part of the structural system; (b) the required means of egress; or (c) the fire protection system or the removal from service of any part of the fire protection system for any period of time.",
+  "quote_note": "Read on Cornell's Legal Information Institute copy (secondary; dos.ny.gov returns 403 to curl and its Part 1203 page serves an outreach bulletin, not the rule text). The copy prints the height in item (iv) with garbled foot and inch marks (\"5²-9³\"); it is given here as 5'-9\". Notes on the copy: adopted State Register December 29, 2021, effective 12/30/2021. The October 7, 2026 amendment to Part 1203 (official rule text read) does not touch subdivision (a).",
+  "url": "https://www.law.cornell.edu/regulations/new-york/19-NYCRR-1203.3",
+  "partitions_named": false,
+  "partitions_named_note": "The state list names \"partitions or movable cases\" under 5 feet 9 inches, not toilet partitions, and it is only a menu: each town, village or city decides which of the eight categories its own code enforcement law exempts. No town or village code was read (as instructed), so whether a given building department exempts toilet partitions is open.",
+  "office": "The building department of the town, village or city where the building stands. Examples: Town of Hempstead Building Department, One Washington Street, 2nd Floor, Hempstead; Town of Oyster Bay, Department of Planning and Development, Building Division; Town of Brookhaven and Town of Islip building divisions (their pages returned 403 and were not read).",
+  "phone": "Town of Hempstead Building Department 516-538-8500 (plans examiners 516-812-3073, 9 am to noon); Town of Oyster Bay Department of Planning and Development 516-624-6200. Brookhaven and Islip: not read.",
+  "office_urls": [
+   "https://hempsteadny.gov/191/Building-Department",
+   "https://oysterbaytown.com/departments/planning-and-development/"
+  ],
+  "confidence": "medium"
+ },
+ "restrooms_city": {
+  "rule": null,
+  "quote": null,
+  "url": null,
+  "note": "No Nassau County or Suffolk County law on single-user restroom signs or shared all-gender rooms was found in one web search; the county codes and the town and village codes were not searched. The state rule (Civil Rights Law 79-p and the state codes, in the state pack) applies.",
+  "confidence": "low"
+ },
+ "sales_tax": {
+  "combined": 0.08625,
+  "combined_note": "Two rates: 8.625% in Nassau County (the figure in \"combined\") and 8.75% in Suffolk County. Publication 718 lists each county with no \"except\" lines, so the cities of Glen Cove and Long Beach and every town and village take their county's rate.",
+  "by_county": {
+   "Nassau": {
+    "combined": 0.08625,
+    "reporting_code": "2811",
+    "effective": "2005-06-01",
+    "effective_note": "Date of the last change to a component: the state rate returned to 4% and the MCTD rate rose to 3/8% on 1 June 2005 (Publication 718-A). The county's 4 1/4% dates from 1 September 1991.",
+    "parts": [
+     {
+      "name": "state",
+      "rate": 0.04
+     },
+     {
+      "name": "county",
+      "rate": 0.0425
+     },
+     {
+      "name": "district",
+      "rate": 0.00375,
+      "note": "Metropolitan Commuter Transportation District"
+     }
+    ]
+   },
+   "Suffolk": {
+    "combined": 0.0875,
+    "reporting_code": "4711",
+    "effective": "2025-03-01",
+    "effective_note": "The county rate rose from 4 1/4% to 4 3/8% on 1 March 2025 (enacted 17 December 2024); the extra 1/8% expires 29 February 2060 (Publication 718-A, footnote K).",
+    "parts": [
+     {
+      "name": "state",
+      "rate": 0.04
+     },
+     {
+      "name": "county",
+      "rate": 0.04375
+     },
+     {
+      "name": "district",
+      "rate": 0.00375,
+      "note": "Metropolitan Commuter Transportation District"
+     }
+    ]
+   }
+  },
+  "parts": [
+   {
+    "name": "state",
+    "rate": 0.04
+   },
+   {
+    "name": "county",
+    "rate": 0.0425,
+    "note": "Nassau; Suffolk is 0.04375"
+   },
+   {
+    "name": "city",
+    "rate": 0.0
+   },
+   {
+    "name": "district",
+    "rate": 0.00375,
+    "note": "Metropolitan Commuter Transportation District"
+   }
+  ],
+  "effective": "Nassau 2005-06-01; Suffolk 2025-03-01",
+  "scheduled_change": {
+   "what": "Publication 718-A marks the current county rate of both Nassau (4 1/4%) and Suffolk (4 1/4%, before the extra 1/8%) with footnote C: \"Additional rate will expire effective 30 Nov. 2027.\" The publication does not say how much of each county's rate is the \"additional rate\" or whether it will be renewed.",
+   "date": "2027-11-30",
+   "url": "https://www.tax.ny.gov/pdf/publications/sales/pub718a.pdf"
+  },
+  "url": "https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf",
+  "history_url": "https://www.tax.ny.gov/pdf/publications/sales/pub718a.pdf",
+  "quote": "[Publication 718 (2/25), New York State Sales and Use Tax Rates by Jurisdiction, Effective March 1, 2025] New York State only 4 0021 [...] *Nassau 8⅝ 2811 [...] *Suffolk 8¾ 4711 [...] *Rates in these jurisdictions include 3/8% imposed for the benefit of the Metropolitan Commuter Transportation District. [Publication 718-A (12/25)] New York State [...] F 4 15 May 2003 1 June 2005 [...] Nassau County [...] C 4¼ 23 July 1991 1 Sep. 1991 [...] Suffolk County [...] C 4¼ 8 May 2001 1 June 2001; K 4⅜ 17 Dec. 2024 1 Mar. 2025 [...] A Additional ¼% imposed to benefit Metropolitan Commuter Transportation District enacted 11 July 1981, effective 1 Sep. 1981. Increase to ⅜% enacted 12 Apr. 2005, effective 1 June 2005. [...] C Additional rate will expire effective 30 Nov. 2027. [...] K Additional ⅛% rate will expire 29 Feb. 2060.",
+  "confidence": "high"
+ },
+ "public_wage": {
+  "county": "Nassau County and Suffolk County",
+  "basis": "state prevailing wage",
+  "classification": "Carpenter - Building / Heavy&Highway, District 4: Carpenter (Building)",
+  "basic_hourly": 55.06,
+  "fringe": 35.43,
+  "applies_to": "All of Suffolk County, and Nassau County except the part that lies both west of Seaford Creek and south of the Southern State Parkway.",
+  "nassau_southwest": {
+   "classification": "Carpenter, District 8: Bldg. Carpenter",
+   "basic_hourly": 60.05,
+   "wage_addition": 8.39,
+   "fringe": 42.24,
+   "note": "The schedule prints \"$ 60.05 + 8.39**\" under WAGES and notes \"**This portion of the benefit is NOT subject to the SAME PREMIUM as shown for overtime\"; supplemental benefits per hour worked are $42.24. How the $8.39 is paid was not interpreted here.",
+   "applies_to": "Nassau: the portion of the county that lies west of Seaford Creek and south of the Southern State Parkway."
+  },
+  "determination": "No single determination number: New York issues a schedule with its own PRC number for each project. Rates are from the Department of Labor's generic Article 8 county schedules, \"Prevailing Wage Rates for 07/01/2026 - 06/30/2027\", Nassau County and Suffolk County, last published Nov 01 2026.",
+  "date": "2026-11-01 (schedule year from 2026-07-01)",
+  "url": "https://apps.labor.ny.gov/wpp/publicViewPWChanges.do?method=showIt",
+  "url_note": "The county PDFs open from the \"Generic Prevailing Wage Schedule By County\" list on this page (the list posts the county to /wpp/viewPrevailingWageSchedule.do; there is no fixed link to a county file).",
+  "quote": "[Nassau County and Suffolk County schedules, 11/01/2026] JOB DESCRIPTION Carpenter - Building / Heavy&Highway DISTRICT 4 ENTIRE COUNTIES Suffolk PARTIAL COUNTIES Nassau: Entire County EXCEPT for the portion of Nassau County that lies both west of Seaford Creek AND south of the Southern State Parkway. WAGES Per Hour: 07/01/2026 Carpenter (Building) $ 55.06 [...] SUPPLEMENTAL BENEFITS Per Hour: Journeyworker $ 35.43 [Nassau County schedule] JOB DESCRIPTION Carpenter DISTRICT 8 ENTIRE COUNTIES Bronx, Kings, New York, Putnam, Queens, Richmond PARTIAL COUNTIES Nassau: The portion of the county that lies west of Seaford Creek and south of the Southern State Parkway. WAGES Per hour: 07/01/2026 [...] Bldg. Carpenter* $ 60.05 + 8.39** [...] SUPPLEMENTAL BENEFITS Per hour worked: [...] Bldg. Carpenter 42.24 [index page] The Prevailing Wage Schedules / Updates posted on this site are provided for informational and annual determination purposes ONLY. An Original Wage Schedule MUST BE REQUESTED from the Bureau of Public Work.",
+  "city_rule": null,
+  "city_rule_note": "No county or town wage rule was looked for.",
+  "confidence": "high"
+ },
+ "contractor_rule": {
+  "nassau": {
+   "rule": "Nassau County licenses residential home improvement businesses (Local Law 6-1970). The county's archived licensing FAQ says a contractor who works only on commercial buildings does not need the licence.",
+   "quote": "[About Licensing] DCA licenses all persons operating residential home improvement businesses in Nassau County. [archived FAQ] Do commercial contractors need a license? No. Anyone who works only on COMMERCIAL buildings does NOT need a license.",
+   "urls": [
+    "https://www.nassaucountyny.gov/3464/About-Licensing",
+    "https://archive.nassaucountyny.gov/agencies/OCA/Licensing/FAQ.html"
+   ],
+   "phone": "516-571-2600"
+  },
+  "suffolk": {
+   "rule": "Suffolk County licenses home improvement contractors under County Code Chapter 563. Home improvement contracting is work on residential property, defined as one- or two-family houses and property associated with them. The county's licence list (electricians, plumbers, home improvement, commercial painting, sign hangers and others) shows no general licence for commercial carpentry or partition work.",
+   "quote": "[§ 563-2] HOME IMPROVEMENT CONTRACTOR: A person who engages in home improvement contracting upon residential property. [...] RESIDENTIAL PROPERTY: One- or two-family houses and property associated therewith.",
+   "urls": [
+    "https://suffolkcountyny.gov/Portals/0/documentsforms/consumeraffairs/CA-L01a%20Home%20Improvement%20License%20Law.pdf",
+    "https://www.suffolkcountyny.gov/Departments/Consumer-Affairs/Type-of-License"
+   ],
+   "phone": "631-853-4600"
+  },
+  "confidence": "medium",
+  "note": "This is firmer than the low-confidence entry in research/local-rules/cities.json (both county rules were read on county pages this time). Town and village contractor registration rules were not researched."
+ },
+ "page": {
+  "meta": "Commercial bathroom partitions delivered to Long Island job sites. Price your restroom, pick a material and see the rules in Nassau and Suffolk counties.",
+  "lead": "Commercial bathroom partitions for Long Island schools, hospitals, office parks and shopping centers, shipped by freight to your job site in Nassau or Suffolk County.",
+  "stall_bullet": "- **How many stalls:** New York's building rules set the number of toilets by how many people use the building. The same state rules apply in every town, village and city in Nassau and Suffolk counties. The table below shows what that means.",
+  "permit_bullet": "- **Permits:** on Long Island the building department of the town, village or city where the building stands issues permits. The Town of Hempstead, Town of Oyster Bay, Town of Brookhaven and Town of Islip each have their own, and so do the incorporated villages. State rules require a permit for work the building rules cover and let each local government exempt a short list of work. That list includes installing partitions or movable cases under 5 feet 9 inches high, finish work such as painting and tiling, and repairs that don't affect fire and life safety. It doesn't name toilet partitions, and each town or village chooses which exemptions it adopts, so ask the local building department whether your replacement needs a permit. You don't need a permit to buy partitions.",
+  "confirm_office": "the building department of the town, village or city where the building stands",
+  "extra_rule_bullets": [],
+  "install_rule": "Building permits and local contractor rules on Long Island come from the town, village or city where the building stands, so check with its building department before work starts. Nassau County and Suffolk County license home improvement contractors, which covers work on homes: Nassau's license is for residential home improvement businesses, and Suffolk's covers one- and two-family houses. New York State doesn't license commercial installers like this. You don't need a permit to buy partitions.",
+  "faq_install_extra": "Check with the town or village building department whether it asks anything of the contractor.",
+  "public_jobs_bullet": "- **Public jobs:** on public work, such as school, town, village, county and state projects, New York law requires at least the prevailing wage for the trade, with no minimum contract size; the state Department of Labor publishes the rates by county each July. For a carpenter on building work in Suffolk County and most of Nassau County that is $55.06 an hour plus $35.43 in benefits. The southwest corner of Nassau County, south of the Southern State Parkway and west of Seaford Creek, has a higher rate of $60.05 an hour.",
+  "sales_tax_bullet": "- **Sales tax:** 8.625% in Nassau County: 4% state, 4.25% county and 0.375% for the regional transit district. 8.75% in Suffolk County: 4% state, 4.375% county and 0.375% for the transit district. The rate is the one where the partitions are delivered.",
+  "buyers_extra": "- **Hospitals, shopping centers and park and beach facilities:** phenolic or stainless steel where restrooms are cleaned many times a day, HDPE where the room is unheated or hosed down.",
+  "sources": [
+   "- Who enforces the building rules on Long Island: New York State Department of State, [Legal Memorandum LG07, The Uniform Code and Local Authority](https://dos.ny.gov/legal-memorandum-lg07-uniform-code-and-local-authority) (the Uniform Code applies everywhere in the state except New York City; each city, town and village administers and enforces it; local standards may only be more restrictive and need the Code Council's approval). Approved local standards: [State Fire Prevention and Building Code Council](https://dos.ny.gov/state-fire-prevention-and-building-code-council), which lists none on plumbing fixtures for a Nassau or Suffolk municipality. Checked 2026-11-24.",
+   "- Permits: [19 NYCRR 1203.3(a), Minimum Standards for Administration and Enforcement, building permits](https://www.law.cornell.edu/regulations/new-york/19-NYCRR-1203.3) (the work a local government may exempt from a permit, items (i) to (viii)), read on Cornell's Legal Information Institute copy; [Town of Hempstead Building Department](https://hempsteadny.gov/191/Building-Department) (516-538-8500) and [Town of Oyster Bay, Department of Planning and Development, Building Division](https://oysterbaytown.com/departments/planning-and-development/) (516-624-6200). Town and village codes were not read. Checked 2026-11-24.",
+   "- Sales tax rates: New York State Department of Taxation and Finance, [Publication 718, New York State Sales and Use Tax Rates by Jurisdiction (effective March 1, 2025)](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) (Nassau 8⅝%, Suffolk 8¾%, each including ⅜% for the Metropolitan Commuter Transportation District) and [Publication 718-A, Enactment and Effective Dates of Sales and Use Tax Rates](https://www.tax.ny.gov/pdf/publications/sales/pub718a.pdf) (state 4%, Nassau County 4¼%, Suffolk County 4⅜% from March 1, 2025). Checked 2026-11-24.",
+   "- Wages on public jobs in Nassau and Suffolk counties: New York State Department of Labor, [Article 8 Prevailing Wage Schedules for 07/01/2026 to 06/30/2027](https://apps.labor.ny.gov/wpp/publicViewPWChanges.do?method=showIt), generic schedules for Nassau County and Suffolk County, last published November 1, 2026: Carpenter, Building / Heavy and Highway, District 4, Carpenter (Building) $55.06 with supplemental benefits of $35.43; Carpenter, District 8, Building Carpenter $60.05 in the part of Nassau County west of Seaford Creek and south of the Southern State Parkway. Checked 2026-11-24.",
+   "- County contractor licenses: Nassau County Department of Consumer Affairs, [About Licensing](https://www.nassaucountyny.gov/3464/About-Licensing) (Local Law 6-1970) and its [archived licensing FAQ](https://archive.nassaucountyny.gov/agencies/OCA/Licensing/FAQ.html); Suffolk County, [Home Improvement License Law, County Code Chapter 563](https://suffolkcountyny.gov/Portals/0/documentsforms/consumeraffairs/CA-L01a%20Home%20Improvement%20License%20Law.pdf) (section 563-2 definitions) and [license types](https://www.suffolkcountyny.gov/Departments/Consumer-Affairs/Type-of-License). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; ICC A117.1-2017 with Supplement 1, as referenced by Chapter 11 of the 2025 Building Code of New York State; 2025 Building Code of New York State and 2025 Plumbing Code of New York State (New York State Uniform Fire Prevention and Building Code, effective December 31, 2025), enforced in Nassau and Suffolk counties by each city, town and village; 19 NYCRR Part 1203 (administration and enforcement, building permits); Labor Law Article 8, section 220 (prevailing wage); Nassau County Local Law 6-1970 and Suffolk County Code Chapter 563 (home improvement licenses); NFPA 286 for HDPE.",
+  "notes": [
+   "Long Island is an area page for Nassau and Suffolk counties, not one city: no town or village code was read. Before launch, phone the largest building departments (Town of Hempstead 516-538-8500, Town of Oyster Bay 516-624-6200, Town of Brookhaven, Town of Islip) and ask whether replacing toilet partitions in an existing commercial restroom needs a permit and whether the town registers commercial contractors.",
+   "The permit rule (19 NYCRR 1203.3(a)) was read on Cornell's copy, which garbles the foot and inch marks in the partition height; confirm \"5 feet 9 inches\" on the official text.",
+   "Publication 718-A marks both counties' current sales tax rate with a footnote: the additional rate expires on November 30, 2027. It doesn't say how much would lapse or whether it will be renewed: recheck the rates in autumn 2027.",
+   "The wage figures are from the Department of Labor's generic county schedules for July 2026 to June 2027 (last published November 1, 2026); a project's own schedule binds, and new rates come out each July. The southwest Nassau rate also carries $8.39 an hour that the schedule lists with the wage and benefits of $42.24, left off the page.",
+   "The Town of Brookhaven and Town of Islip sites, the Department of State's list page and ecode360 (town and county codes) blocked automated access.",
+   "No Nassau or Suffolk county law on restroom signs was found in one search; the county codes were not searched."
+  ]
+ },
+ "sources_read": [
+  {
+   "url": "https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.tax.ny.gov/pdf/publications/sales/pub718a.pdf",
+   "official": true
+  },
+  {
+   "url": "https://apps.labor.ny.gov/wpp/publicViewPWChanges.do?method=showIt",
+   "official": true
+  },
+  {
+   "url": "https://apps.labor.ny.gov/wpp/viewPrevailingWageSchedule.do (Nassau County and Suffolk County generic schedules, PDF)",
+   "official": true
+  },
+  {
+   "url": "https://dos.ny.gov/notice-adoption",
+   "official": true
+  },
+  {
+   "url": "https://dos.ny.gov/system/files/documents/2026/10/part1203ruletextstaterentalregistryforleadhazardsnoa.pdf",
+   "official": true
+  },
+  {
+   "url": "https://dos.ny.gov/legal-memorandum-lg07-uniform-code-and-local-authority",
+   "official": true
+  },
+  {
+   "url": "https://dos.ny.gov/state-fire-prevention-and-building-code-council",
+   "official": true
+  },
+  {
+   "url": "https://dos.ny.gov/code/code-development",
+   "official": true
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/new-york/19-NYCRR-1203.3",
+   "official": false
+  },
+  {
+   "url": "https://hempsteadny.gov/191/Building-Department",
+   "official": true
+  },
+  {
+   "url": "https://oysterbaytown.com/departments/planning-and-development/",
+   "official": true
+  },
+  {
+   "url": "https://www.nassaucountyny.gov/3464/About-Licensing",
+   "official": true
+  },
+  {
+   "url": "https://archive.nassaucountyny.gov/agencies/OCA/Licensing/FAQ.html",
+   "official": true
+  },
+  {
+   "url": "https://suffolkcountyny.gov/Portals/0/documentsforms/consumeraffairs/CA-L01a%20Home%20Improvement%20License%20Law.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.suffolkcountyny.gov/Departments/Consumer-Affairs/Type-of-License",
+   "official": true
+  }
+ ],
+ "could_not_open": [
+  "https://dos.ny.gov/more-restrictive-local-standards (403)",
+  "https://ecode360.com/14947467 and https://ecode360.com/15509942 (403: Suffolk County Code and Town of Hempstead Code)",
+  "https://www.brookhavenny.gov (403)",
+  "https://islipny.gov (403)",
+  "https://dos.ny.gov/19-nycrr-part-1203-... (serves a 2022 outreach bulletin, not the rule text)"
+ ],
+ "to_confirm": [
+  "Whether replacing or adding toilet partitions in an existing commercial restroom needs a permit: each town, village and city decides which of the state's exempt categories it adopts. Phone the building department for the job's address (Town of Hempstead 516-538-8500; Town of Oyster Bay 516-624-6200; Brookhaven and Islip numbers not read).",
+  "Read 19 NYCRR 1203.3(a)(1)(iv) on the official text to confirm the height \"5'-9\"\" (garbled on Cornell's copy).",
+  "Whether any town, village or city in Nassau or Suffolk registers or licenses contractors for commercial interior work (town codes not read). Nassau County's statement that commercial-only contractors need no county licence is from an archived county FAQ; the current page says only that the county licenses residential home improvement businesses: confirm with Nassau County Consumer Affairs, 516-571-2600.",
+  "Publication 718-A footnote C: the additional county sales tax rate in Nassau and Suffolk expires 30 November 2027 unless renewed; amount not stated.",
+  "Publication 718 on the tax department's site is dated 2/25 (effective March 1, 2025) and Publication 718-A 12/25; confirm no newer rate change with the department's jurisdiction lookup before launch.",
+  "South-west Nassau carpenter rate (District 8): how the \"+ 8.39\" printed with the wage is paid; ask the Bureau of Public Work district office.",
+  "Whether Nassau County, Suffolk County or any town has its own rule on single-user restroom signs (one search, nothing found; codes not searched).",
+  "Public schools: the state pack notes the State Education Department may apply its own toilet ratios to school district projects; not researched here."
+ ]
+}

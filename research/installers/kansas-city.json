@@ -1,0 +1,83 @@
+{
+ "area": "kansas-city",
+ "found_count": 2,
+ "sources_tried": [
+  "Seed file kansas-city.json: read; 48 Maps results were mostly residential bath remodelers, shower-glass shops and supply stores; web results were Google redirect links with no domains. Opened Meyer Construction Specialties (site only shows 'Loading...', ww1 subdomain redirects to a parked page), Portals Hardware (glass/shower hardware, no partitions, skipped), Modernfold / Abbey-Simons (operable walls and daylighting, no toilet partitions, skipped)",
+  "Scranton Products where-to-buy: worked; KS/MO covered only by product specialist Architectural Cornerstone Group (972.439.3954, Texas-based rep agency for AR/CO/KS/LA/MO/NM/OK/TX), no local dealers or installers",
+  "Bobrick find-a-representative: 404",
+  "Scranton find-a-rep URL: 404 (where-to-buy worked instead)",
+  "Metpar find-a-rep: 404",
+  "Bradley find-a-rep: page loaded with title only, no rep data",
+  "Hadrian where-to-buy: 404",
+  "ASI, General Partitions, Ampco locators: not reached",
+  "The Blue Book (thebluebook.com search): 403 blocked",
+  "BuildingConnected / Procore public profiles: not tried (search cap)",
+  "WebSearch (8 of 8 used): Division 10 / toilet partition installation Kansas City and nearby cities; surfaced DH Pace and One Point Partitions; Kelley Bros (no KS/MO office, excluded), Martin Bros (California, excluded), Unified Specialty Services (no KC location shown), MJ Products and Commercial Bathwares (St. Louis, outside 30 miles)",
+  "One Point Partitions: national online distributor with a Kansas City, KS delivery terminal per search snippets; its pages promote DIY installation, site returned 403 on fetch; not added (no install service shown)",
+  "Cook & Boardman (cbxsolutions.com): redirect, not fetched (403 in other areas)",
+  "BBB category pages: worked. Kansas City MO / Overland Park / Lenexa 'partition' gave Meyer Specialties (others in Springfield MO and Lincoln NE, outside area); 'bathroom-accessories' and 'lockers' gave only remodelers, plumbers and stores",
+  "Yelp search: 403 blocked",
+  "Lee's Summit permit documents (devservices.cityofls.net): redirect then HTTP 500",
+  "LevelSet J.E.D. Installation profile: 403",
+  "Southwest Solutions Group Kansas City page: content truncated, storage/lockers focus, not added"
+ ],
+ "candidates": [
+  {
+   "name": "DH Pace Company (Construction Services Group; J.E.D. Installation is a DH Pace company)",
+   "base_city": "Olathe",
+   "state": "KS",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "816-221-0072",
+   "contact_page": "https://www.dhpace.com/contact/",
+   "website": "https://www.dhpace.com/",
+   "evidence_urls": [
+    "https://www.dhpace.com/services/commercial-services/carpentry/",
+    "https://www.dhpace.com/products/commercial-products/specialty-and-division-10-products/",
+    "https://www.dhpace.com/states/kansas"
+   ],
+   "partition_evidence": "Carpentry services page: Construction Services Group does 'furnishing and installing all products associated with divisions 6, 8, & 10' in and around the Kansas City metro; product list includes 'Toilet Partitions', 'Privacy Screens', 'Shower Compartments'. No project photos of partitions seen.",
+   "red_flags": [
+    "Supplies Division 10 packages itself, including 'supply only' (buy-around risk: it can furnish the partitions)",
+    "Large multi-trade door/dock company; partitions are one line among many, likely GC-sub work rather than small owner jobs",
+    "J.E.D. Installation (913-724-4600, Olathe) appears lab-casework focused; no evidence it does toilet partitions",
+    "No public rating or review count read"
+   ],
+   "reason": "Its own carpentry page says it furnishes and installs Division 10 products, toilet partitions listed, for commercial projects in the Kansas City metro, from its Olathe main office. Strong on capability, but it also sells partitions, so buy-around risk is high.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 70
+  },
+  {
+   "name": "Meyer Specialties LLC (Meyer Construction Specialties)",
+   "base_city": "Belton",
+   "state": "MO",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(816) 331-7333",
+   "website": "http://www.meyerconstructionspecialties.com/",
+   "evidence_urls": [
+    "https://www.bbb.org/us/mo/corder/category/partition",
+    "http://www.meyerconstructionspecialties.com/"
+   ],
+   "partition_evidence": "Only a BBB directory listing under the 'Partition' category (Belton, MO). Its website did not load content (homepage 'Loading...', /contact redirects to a parked-style ww547 subdomain), so no services, projects or photos could be checked.",
+   "red_flags": [
+    "Website appears parked or dead",
+    "No first-hand evidence of toilet partition installation",
+    "No rating read on a fetched page"
+   ],
+   "reason": "Listed by BBB under Partitions in Belton (about 20 miles from the center), and the name suggests construction specialties, but nothing confirms restroom partition installation or that the business is active. Needs a phone check before any outreach decision.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

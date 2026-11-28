@@ -1,0 +1,266 @@
+{
+ "area": "wichita",
+ "found_count": 8,
+ "sources_tried": [
+  "Seed file wichita.json: worked. Useful leads were M Divisions, Evans Supply and Solutions (Haysville) and SGH Concepts. The rest were remodelers, plumbers, glass shops and stores. The web results were remodelers or out-of-area pages.",
+  "Bobrick find-a-rep: page loads, but the rep list comes from a dropdown, so no Kansas rep was readable.",
+  "Scranton Products find-a-rep: 404. Hadrian find-a-rep: 404. Metpar /representatives: 404.",
+  "ASI/Global Partitions find-a-rep: 403. General Partitions find-a-rep: 403.",
+  "Bradley find-a-rep: 200, but the content is dynamic and shows no Kansas reps. Ampco/Ammco: not tried.",
+  "The Blue Book: search URL blocked (403); no Blue Book results came up in WebSearch.",
+  "BuildingConnected / Procore public profiles: not tried (search cap).",
+  "WebSearch: 8 of 8 used. The searches were dominated by One Point Partitions (an online seller with a Wichita 'delivery terminal' and no installation shown, excluded). They also surfaced Southwest Solutions Group, The Partition Pros (DFW crew, excluded), Q4 Industries (Lenexa, about 190 mi, excluded) and DSD Drywall (kept). The bid-tabulation and Bing searches gave nothing useful.",
+  "BBB category pages (Wichita and Newton, partition): worked, giving Engineered Door Products.",
+  "Superpages and YellowPages searches ('toilet partitions', Wichita): worked, giving J F Custom Woods and Claco Supply. The rest were remodelers.",
+  "Company sites fetched: mdivisions.com, evanssupplyandsolutionsco.com (via curl), sghconcepts.com, dsdrywall.com, dhpace.com/locations, southwestsolutions.com (via curl), milestoneconstructioninc.com (a GC with no partition work, excluded), mckinneydoor.com (American Doors, TX/CO only, excluded) and newtondistributing.com (Natick MA, excluded). clacosupply.com returned 503. engineereddoorproducts.com didn't resolve. The dhpace.com carpentry and state pages were blocked by Cloudflare.",
+  "Also excluded: Newton Distributing (national online seller), Martin Bros (California), Partition Plus (no Kansas link), and the remodelers, plumbers and handymen from the Maps seed."
+ ],
+ "candidates": [
+  {
+   "name": "Danny Satterfield Drywall Corporation (DSD)",
+   "base_city": "Wichita",
+   "state": "KS",
+   "website": "https://dsdrywall.com/",
+   "phone": "(316) 942-5155",
+   "contact_page": "https://dsdrywall.com/contact/",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "partition_evidence": "Construction Specialties page: 'Our Division 10 services include: Toilet partitions and restroom components', plus corner guards and accessories installation.",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "reason": "A Wichita commercial drywall contractor whose own Division 10 page lists toilet partition and restroom component installation; works in Kansas, Oklahoma and Missouri. It's a GC-facing subcontractor, so check whether it takes small direct jobs.",
+   "red_flags": [
+    "Primarily a drywall/framing sub; partition work may be bundled in larger GC bid scopes"
+   ],
+   "evidence_urls": [
+    "https://dsdrywall.com/construction-specialties/",
+    "https://dsdrywall.com/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Danny Satterfield Drywall Corporation (DSD)",
+    "area": "wichita",
+    "status": "not_online",
+    "registry": "Metropolitan Area Building and Construction Department (MABCD), City of Wichita / Sedgwick County, contractor licensing",
+    "license_type": "MABCD general contractor license (Class A-D); class for commercial interior work unconfirmed",
+    "note": "Kansas has no state contractor license; Wichita/Sedgwick County license general contractors through MABCD. MABCD's contractor licensing page (https://www.sedgwickcounty.org/mabcd/contractor-licensing/) offers no public license search or list, and the MABCD portal (https://mabcdportal.sedgwickcounty.org/) is a sign-in portal for permits and renewals. To verify a license, call MABCD at 316-660-1840 (number listed on the portal page). The company site (https://dsdrywall.com/) gives a Wichita, KS base and states no license number. No Kansas SOS entity check done.",
+    "source_url": "https://www.sedgwickcounty.org/mabcd/contractor-licensing/"
+   },
+   "score": 70
+  },
+  {
+   "name": "Southwest Solutions Group (Wichita market)",
+   "base_city": "Lenexa",
+   "state": "KS",
+   "website": "https://www.southwestsolutions.com/products/toilet-partition-systems/",
+   "phone": "(800) 803-1083",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "partition_evidence": "The toilet partition systems page offers 'sales, design, installation, and maintenance support for toilet partition systems'; it lists Kansas (office in Lenexa) with installation coverage statewide, including Wichita.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Scranton"
+   ],
+   "reason": "A national storage and specialties dealer that sells and installs toilet partitions, with a Kansas page saying 'From Wichita, SSG supports projects across south central Kansas'. Its Kansas office is in Lenexa, beyond 120 miles, and it competes with us as a partition seller.",
+   "red_flags": [
+    "Sells partitions itself (direct competitor / buy-around risk)",
+    "Office in Lenexa, about 170+ miles from Wichita; Wichita presence unclear",
+    "National generic service-area pages"
+   ],
+   "evidence_urls": [
+    "https://www.southwestsolutions.com/products/toilet-partition-systems/",
+    "https://www.southwestsolutions.com/locations/ks/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Southwest Solutions Group (Wichita market)",
+    "area": "wichita",
+    "status": "not_online",
+    "registry": "Metropolitan Area Building and Construction Department (MABCD), City of Wichita / Sedgwick County, contractor licensing",
+    "license_type": "MABCD general contractor license (Class A-D) if they install in Wichita; class unconfirmed",
+    "note": "The company is based in Lenexa, KS (per the task brief, not read on their site). Work in Wichita would need an MABCD license, but MABCD has no public online lookup. Verify by phone with MABCD at 316-660-1840. The company site was not fetched for a license number.",
+    "source_url": "https://www.sedgwickcounty.org/mabcd/contractor-licensing/"
+   },
+   "score": 63
+  },
+  {
+   "name": "M Divisions",
+   "base_city": "unknown (316 area code; Wichita-area projects)",
+   "state": "KS",
+   "website": "https://mdivisions.com/",
+   "phone": "(316) 260-5251",
+   "contact_page": "https://mdivisions.com/contact-us/",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "'Division 10 is our Specialty'; products include toilet partitions and toilet accessories; a client testimonial mentions a 'seamless installation process'. No explicit partition installation service.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "reason": "A Division 10 specialties supplier selling toilet partitions and accessories, with Wichita-area projects (Wichita Furniture, Embassy Suites, Wesley Rehab Hospital via Eby). Installation is implied but not stated, and Eby's testimonial calls it a supplier.",
+   "red_flags": [
+    "Sells partitions itself (buy-around risk)",
+    "No city or address on the site",
+    "Installation not explicitly offered"
+   ],
+   "evidence_urls": [
+    "https://mdivisions.com/",
+    "https://mdivisions.com/about-us/",
+    "https://mdivisions.com/products/",
+    "https://mdivisions.com/services/",
+    "https://mdivisions.com/portfolio/",
+    "https://mdivisions.com/contact-us/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "M Divisions",
+    "area": "wichita",
+    "status": "not_online",
+    "registry": "Metropolitan Area Building and Construction Department (MABCD), City of Wichita / Sedgwick County, contractor licensing",
+    "license_type": "MABCD general contractor license (Class A-D); class unconfirmed",
+    "note": "MABCD has no public online contractor license lookup (the portal at mabcdportal.sedgwickcounty.org requires sign-in). Verify by phone with MABCD at 316-660-1840. The company site (https://mdivisions.com/) lists phone (316) 260-5251 but no city and no license number, so its base city is unknown.",
+    "source_url": "https://www.sedgwickcounty.org/mabcd/contractor-licensing/"
+   },
+   "score": 50
+  },
+  {
+   "name": "Evans Supply and Solutions Co.",
+   "base_city": "Haysville",
+   "state": "KS",
+   "website": "https://www.evanssupplyandsolutionsco.com/",
+   "phone": "(316) 302-9433",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "partition_evidence": "Home page lists Toilet Partitions and Bathroom Accessories among Division 10 trade items; 'Warranties on labor and materials' and '(Labor is by request only.)'.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "reason": "A Haysville (Wichita suburb) Division 10 commercial specialties distributor that supplies toilet partitions and offers labor on request. It's mainly a distributor, so installation is unproven.",
+   "red_flags": [
+    "Distributor that sells partitions (buy-around risk)",
+    "Labor only by request"
+   ],
+   "evidence_urls": [
+    "https://www.evanssupplyandsolutionsco.com/"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Evans Supply and Solutions Co.",
+    "area": "wichita",
+    "status": "not_online",
+    "registry": "Metropolitan Area Building and Construction Department (MABCD), City of Wichita / Sedgwick County, contractor licensing",
+    "license_type": "MABCD general contractor license (Class A-D); class unconfirmed",
+    "note": "MABCD has no public online contractor license lookup. Verify by phone with MABCD at 316-660-1840. Haysville may fall under MABCD's small-cities jurisdiction or may issue its own permits; this wasn't confirmed. The company homepage (https://www.evanssupplyandsolutionsco.com/) returned only its title, with no city or license number readable.",
+    "source_url": "https://www.sedgwickcounty.org/mabcd/contractor-licensing/"
+   },
+   "score": 50
+  },
+  {
+   "name": "SGH Concepts, Wichita office (formerly Claco Supply)",
+   "base_city": "Wichita (HQ Omaha, NE)",
+   "state": "KS",
+   "website": "https://www.sghconcepts.com/",
+   "phone": "402.493.9393",
+   "contact_page": "https://sghconcepts.com/contact-us/",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "partition_evidence": "Products are exterior panels, daylighting, operable walls (Modernfold, Skyfold) and smoke guards; toilet partitions aren't mentioned.",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [
+    "Modernfold",
+    "Skyfold",
+    "Smoke Guard",
+    "Kawneer",
+    "Kalwall"
+   ],
+   "reason": "An architectural products supplier and installer for exterior and operable walls. Its site shows no toilet partition work.",
+   "red_flags": [],
+   "evidence_urls": [
+    "https://www.sghconcepts.com/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "DH Pace Company (Wichita branch)",
+   "base_city": "Wichita",
+   "state": "KS",
+   "website": "https://www.dhpace.com/",
+   "phone": "316-944-3667",
+   "contact_page": "https://commercial.overheaddoorswichita.com/contact/",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "partition_evidence": "The main site lists a 'Specialty & Division 10 Products' category without detail; the Wichita commercial site covers doors, loading dock equipment and security only.",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "reason": "The Wichita branch (Overhead Door Company of Wichita) handles doors, docks and security. Its site shows nothing on toilet partitions.",
+   "red_flags": [],
+   "evidence_urls": [
+    "https://www.dhpace.com/",
+    "https://www.dhpace.com/locations/",
+    "https://commercial.overheaddoorswichita.com/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Engineered Door Products, Inc.",
+   "base_city": "Wichita",
+   "state": "KS",
+   "phone": "(316) 267-1984",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "partition_evidence": "BBB lists it under the partition category, but describes it as Doors, Windows and Door Repair; no toilet partition evidence found.",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "review_source": "BBB (A+ rating, accredited; letter grade, no review count read)",
+   "reason": "A door business that BBB lists under 'partition'. No website found and no evidence of toilet partition work.",
+   "red_flags": [
+    "No website found"
+   ],
+   "evidence_urls": [
+    "https://www.bbb.org/us/ks/wichita/category/partition"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "J F Custom Woods",
+   "base_city": "Wichita",
+   "state": "KS",
+   "website": "http://jfcustomwoods.localsearch.com/",
+   "phone": "316-942-1793",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "partition_evidence": "A localsearch listing page lists only 'Partitions' as a service, with no detail on type.",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "reason": "The only source is a one-line directory page saying 'Partitions'. Nothing shows toilet partitions or commercial work, and the name suggests millwork, so a phone check is needed before considering it.",
+   "red_flags": [
+    "Directory-generated page only; no real website"
+   ],
+   "evidence_urls": [
+    "http://jfcustomwoods.localsearch.com/"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

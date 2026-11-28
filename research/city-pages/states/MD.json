@@ -1,0 +1,521 @@
+{
+ "state": "MD",
+ "state_name": "Maryland",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "State Plumbing Code (COMAR 09.20.01): the International Plumbing Code, \"most recent version\", as adopted by the Maryland State Board of Plumbing. The state building code (Maryland Building Performance Standards, 2021 IBC) puts its own Chapter 29 and Table 2902.1 outside its scope and sends the reader to the plumbing code.",
+   "edition": "The regulation names no year. It was last amended effective November 24, 2025, when the Board's own modifications to the IPC (Regulations .02 to .04) were repealed. UpCodes lists the Board's code as the 2024 IPC adopted without amendments (secondary). The state Model Performance Code (COMAR 09.12.50.02-1) still names the 2021 IPC. The office, restaurant and school rows read the same in both editions.",
+   "table": "Table 403.1, Minimum Number of Required Plumbing Fixtures",
+   "url": "https://regs.maryland.gov/us/md/exec/comar/09.20.01.01",
+   "quote": "[COMAR 09.20.01.01B] In compliance with Business Occupations and Professions Article, §§12-101(p) and 12-205(a), Annotated Code of Maryland, the Board adopts the most recent version of the following Codes as they may be amended, modified, or updated from time to time. (1) The International Plumbing Code ... [COMAR 09.12.51.04B(10)] Chapter 29. PLUMBING SYSTEMS. Add note to Section 2901.1 Scope: The subject matter of this chapter is not within the scope of the Maryland Building Performance Standards. For the applicable requirements concerning the plumbing systems, refer to the local plumbing code and the plumbing code adopted pursuant to the provisions of Business Occupations and Professions Article, Title 12, Annotated Code of Maryland. [IPC 403.1, on UpCodes] Plumbing fixtures shall be provided in the minimum number as shown in Table 403.1, based on the actual use of the building or space.",
+   "building_code_url": "https://labor.maryland.gov/labor/build/comar091251.pdf"
+  },
+  "cities_may_amend": true,
+  "cities_may_amend_note": {
+   "text": "Yes. The state building standards point to \"the local plumbing code\" as well as the state one, and local jurisdictions may amend the building standards. Baltimore County and the Washington Suburban Sanitary Commission area (Montgomery and Prince George's counties) are outside the State Plumbing Code and have their own. Baltimore City publishes its own Section 2902, Minimum Plumbing Facilities, in its building code (seen in search results at codes.baltimorecity.gov, not read): the city agent must read it.",
+   "quote": "Both of these types of licenses are required for work throughout the state except for Baltimore County and the areas served by the Washington Suburban Sanitary Committee - \"WSSC\" (Prince George's and Montgomery Counties). These two jurisdictions issue their own licenses and have their own plumbing code.",
+   "url": "https://labor.maryland.gov/license/pl/"
+  },
+  "rows": {
+   "office": {
+    "row_label": "2 Business: Buildings for the transaction of business, nonmedical professional services, other services involving merchandise, office buildings, banks, light industrial and similar uses (2024 IPC wording; the 2021 IPC row reads \"professional services ... ambulatory care, light industrial and similar uses\")",
+    "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "urinals": "See Section 424.2 (optional substitution, up to 50% of the required men's water closets)",
+    "quote": "2 Business | Buildings for the transaction of business, nonmedical professional services, other services involving merchandise, office buildings, banks, light industrial and similar uses | 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50 | [lavatories] 1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80 | — | 1 per 100 | 1 service sink",
+    "url": "https://up.codes/viewer/maryland/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+    "source_note": "Read on UpCodes (secondary), \"MD Board of Plumbing, Plumbing Code 2024\". Same ratios in UpCodes' copy of the 2021 IPC for Maryland."
+   },
+   "restaurant": {
+    "row_label": "1 Assembly: Restaurants, banquet halls and food courts (footnote d)",
+    "wc_male": "1 per 75",
+    "wc_female": "1 per 75",
+    "urinals": "See Section 424.2 (optional substitution, up to 67% of the required men's water closets)",
+    "quote": "Restaurants, banquet halls and food courts d | 1 per 75 | 1 per 75 | 1 per 200 | — | 1 per 500 | 1 service sink",
+    "url": "https://up.codes/viewer/maryland/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+    "source_note": "Read on UpCodes (secondary). Same in the 2021 edition. Footnote d was not read."
+   },
+   "school": {
+    "row_label": "3 Educational: Educational facilities",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 50",
+    "urinals": "See Section 424.2 (optional substitution, up to 67% of the required men's water closets)",
+    "quote": "3 Educational | Educational facilities | 1 per 50 | [lavatories] 1 per 50 | — | 1 per 100 | 1 service sink",
+    "url": "https://up.codes/viewer/maryland/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+    "source_note": "Read on UpCodes (secondary). Same in the 2021 edition."
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "The total occupant load is divided in half, one half for each sex, unless approved statistical data show another split. Multi-user rooms that serve all genders are counted on 100% of the load.",
+    "quote": "403.1.1 Fixture Calculations. To determine the occupant load of each sex, the total occupant load shall be divided in half. To determine the required number of fixtures, the fixture ratio or ratios for each fixture type shall be applied to the occupant load of each sex in accordance with Table 403.1. ... Exceptions: The total occupant load shall not be required to be divided in half where approved statistical data indicate a distribution of the sexes of other than 50 percent of each sex. Where multiple-user facilities are designed to serve all genders, the minimum fixture count shall be calculated 100 percent, based on total occupant load. In such multiple-user facilities, each fixture type shall be in accordance with ICC A117.1.",
+    "url": "https://up.codes/viewer/maryland/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole number, for each sex. In a mixed-use building the fractions for each use are added first, then rounded up.",
+    "quote": "Fractional numbers resulting from applying the fixture ratios of Table 403.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number.",
+    "url": "https://up.codes/viewer/maryland/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are optional. In each toilet room they may replace up to 67% of the required men's toilets in assembly (restaurant) and educational uses and up to 50% in all other uses, offices included. The code does not say how a fraction of a urinal rounds; the worked examples round down because the limit is a maximum.",
+    "quote": "424.2 Substitution for Water Closets. In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent of the required water closets for males according to Table 403.1 in assembly and educational occupancies. Urinals shall not be substituted for more than 50 percent of the required water closets for males according to Table 403.1 in all other occupancies.",
+    "url": "https://up.codes/viewer/maryland/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+    "edition_note": "2021 IPC wording is the same without the words \"for males according to Table 403.1\"."
+   },
+   "small_occupancy_exception": {
+    "text": "Separate rooms for each sex are not required where the total occupant load (staff and customers) is 15 or fewer, in a business occupancy of 25 or fewer, in a mercantile occupancy of 100 or fewer, where single-user rooms are provided, or where a shared room for all persons gives each toilet a compartment and each urinal a partitioned space.",
+    "quote": "403.2 Separate Facilities. Where plumbing fixtures are required, separate toilet facilities shall be provided for each sex. Exceptions: Separate toilet facilities shall not be required for dwelling units and sleeping units. Separate toilet facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. Separate toilet facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. Separate toilet facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer. Separate toilet facilities shall not be required to be designated by sex where single-user toilet rooms are provided in accordance with Section 403.1.2. Separate toilet facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by all persons regardless of sex and privacy is provided for water closets in accordance with Section 405.3.4 and for urinals in accordance with Section 405.3.5.",
+    "url": "https://up.codes/viewer/maryland/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "occupant_load": {
+    "text": "Office (business areas): 150 square feet gross per person. Restaurant dining room (assembly without fixed seats, unconcentrated, tables and chairs): 15 square feet net per person. Classroom: 20 square feet net per person. The plumbing code takes the number of occupants from the building code.",
+    "quote": "[IPC 403.1] The number of occupants shall be determined by the International Building Code. [2021 IBC Table 1004.5, Maximum Floor Area Allowances per Occupant] Assembly without fixed seats ... Unconcentrated (tables and chairs) 15 net; Business areas 150 gross; Educational, Classroom area 20 net.",
+    "url": "https://up.codes/viewer/maryland/ibc-2021/chapter/10/means-of-egress"
+   },
+   "stall_and_urinal_privacy": {
+    "text": "Every toilet used by the public or employees needs its own compartment with a door, and every urinal needs a partition on each side, at least 60 inches high and starting no more than 12 inches above the floor. Single-occupant rooms with a lockable door are exempt.",
+    "quote": "405.3.4 Water Closet Compartment. Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy. Exceptions: Water closet compartments shall not be required in a single-occupant toilet room with a lockable door. ... 405.3.5 Urinal Partitions. Each urinal utilized by the public or employees shall occupy a separate area with walls or partitions to provide privacy. The horizontal dimension between walls or partitions at each urinal shall be not less than 30 inches (762 mm). The walls or partitions shall begin at a height not greater than 12 inches (305 mm) from and extend not less than 60 inches (1524 mm) above the finished floor surface. The walls or partitions shall extend from the wall surface at each side of the urinal not less than 18 inches (457 mm) or to a point not less than 6 inches (152 mm) beyond the outermost front lip of the urinal measured from the finished backwall surface, whichever is greater. Exceptions: Urinal partitions shall not be required in a single occupant or family/assisted-use toilet room with a lockable door.",
+    "url": "https://up.codes/viewer/maryland/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 women, 25 men. 1 per 25 for the first 50: 25/25 = 1 each. Urinals may replace no more than 50% of 1 toilet (0.5), so none."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "50 women, 50 men. 50/25 = 2 each. Urinals: 50% of 2 = 1."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 women, 100 men. First 50 at 1 per 25 = 2, remaining 50 at 1 per 50 = 1; 3 each. Urinals: 50% of 3 = 1.5, so 1."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 women, 200 men. First 50 at 1 per 25 = 2, remaining 150 at 1 per 50 = 3; 5 each. Urinals: 50% of 5 = 2.5, so 2."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 women, 25 men. 25/75 = 0.33, rounded up to 1 each. Urinals: 67% of 1 = 0.67, so none."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 women, 50 men. 50/75 = 0.67, rounded up to 1 each. Urinals: 67% of 1 = 0.67, so none."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 women, 100 men. 100/75 = 1.33, rounded up to 2 each. Urinals: 67% of 2 = 1.34, so 1."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 women, 200 men. 200/75 = 2.67, rounded up to 3 each. Urinals: 67% of 3 = 2.01, so 2."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 girls, 25 boys. 25/50 = 0.5, rounded up to 1 each. Urinals: 67% of 1 = 0.67, so none."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 girls, 50 boys. 50/50 = 1 each. Urinals: 67% of 1 = 0.67, so none."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 girls, 100 boys. 100/50 = 2 each. Urinals: 67% of 2 = 1.34, so 1."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 girls, 200 boys. 200/50 = 4 each. Urinals: 67% of 4 = 2.68, so 2."
+   }
+  ],
+  "confidence": "medium",
+  "confidence_note": "That the State Plumbing Code is the IPC, and that the building code's Chapter 29 is out of scope, were read on official pages (COMAR 09.20.01.01 and 09.12.51.04). The table rows and Sections 403.1.1, 403.2, 405.3.4, 405.3.5 and 424.2 were read on UpCodes' copy of the 2024 IPC (and cross-read on its 2021 copy), a secondary source. Which edition the Board enforces today is not stated on any official page read; the rows used here are identical in both. Local plumbing codes can differ."
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "2021 International Building Code Section 803.9, with Sections 803.1.1 and 803.1.1.1 (NFPA 286), as adopted by the Maryland Building Performance Standards (COMAR 09.12.51.04A(1)). The state's modifications in COMAR 09.12.51.04B do not touch Chapter 8, so the section applies as the model code prints it. Local jurisdictions may amend.",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. ... 803.1.1 Interior Wall and Ceiling Finish Materials Tested in Accordance With NFPA 286. Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1.",
+  "url": "https://up.codes/viewer/maryland/ibc-2021/chapter/8/interior-finishes",
+  "official_url": "https://labor.maryland.gov/labor/build/comar091251.pdf",
+  "note": "Section text read on UpCodes (secondary). The absence of a Maryland change to Chapter 8 was read in the official COMAR 09.12.51 text (effective May 29, 2023; no later amendment in the chapter's administrative history). Work in existing buildings falls under the Maryland Building Rehabilitation Code (2021 International Existing Building Code, COMAR 09.12.58); how that code treats new interior finish in an alteration was not read.",
+  "confidence": "medium"
+ },
+ "access": {
+  "state_standard": "Maryland Accessibility Code, COMAR 09.12.53, which replaces Chapter 11 of the IBC statewide. For state and local government buildings and for all other buildings it requires the 2010 ADA Standards plus a short list of \"additional Maryland requirements\". ICC A117.1 is not the statewide standard (a local jurisdiction may adopt IBC Chapter 11 only where it meets or exceeds the Maryland code; the 2024 IPC calls on ICC A117.1 for fixtures in multi-user all-gender rooms).",
+  "differences": [
+   {
+    "point": "Wheelchair stall size: no real difference in new work",
+    "state": "60 inches wide and 56 inches deep for wall-hung toilets, 59 inches deep for floor-mounted toilets.",
+    "federal": "2010 ADA Standards 604.8.1.1: \"Wheelchair accessible compartments shall be 60 inches (1525 mm) wide minimum measured perpendicular to the side wall, and 56 inches (1420 mm) deep minimum for wall hung water closets and 59 inches (1500 mm) deep minimum for floor mounted water closets measured perpendicular to the rear wall.\"",
+    "state_url": "https://regs.maryland.gov/us/md/exec/comar/09.12.53.07",
+    "quote": "(e) Accessibility for toilet stalls shall be assured as follows: (i) The size of a wheelchair-accessible toilet stall shall be a minimum of 60 inches wide and 56 inches deep for wall-hung water closets, and 59 inches deep for floor-mounted water closets"
+   },
+   {
+    "point": "Alterations: Maryland's text names a smaller fallback stall, but it is not a stricter rule",
+    "state": "Where the full-size stall is structurally impracticable in an alteration, or plumbing rules prevent combining stalls, the Maryland text allows 48 inches wide by 66 inches deep (wall-hung) or 69 inches deep (floor-mounted). Under Regulation .04A federal law controls where it is more restrictive.",
+    "federal": "Section 604.8.1.1 as quoted above gives one size, 60 inches wide. Whether the 2010 Standards allow any smaller stall in alterations was not read.",
+    "state_url": "https://regs.maryland.gov/us/md/exec/comar/09.12.53.07",
+    "quote": "(ii) In instances of alteration work when provision of this minimum stall is structurally impracticable or when plumbing code requirements prevent combining existing stalls to provide space, the minimum dimensions of the wheelchair accessible stall shall be 48 inches wide and 66 inches deep for wall-hung water closets, and 69 inches deep for floor-mounted water closets. [09.12.53.04A] ... to the extent federal law is more restrictive than this Code, federal law shall control."
+   }
+  ],
+  "other_maryland_additions_not_about_stalls": "Second-story access in two-story nonresidential buildings over 4,000 square feet, one in four accessible parking spaces van accessible, parking sign heights (COMAR 09.12.53.07C(2) and D).",
+  "process": "No state plan review or registration. The local jurisdiction applies and enforces the code (COMAR 09.12.53.06A). The Maryland Department of Labor interprets it, decides waiver requests for the Maryland additions (a waiver request form is on the Building Codes Administration page), and must approve any alternative design claimed as substantially equivalent to the 2010 ADA Standards before work starts (09.12.53.08D). The code does not cover existing buildings that are not being added to, altered or changed in use (09.12.53.03A(6)).",
+  "process_quote": "[09.12.53.06A(1)] Except as set forth in §A(2) of this regulation, application and enforcement of this Code is the responsibility of the local subdivision or other governmental agency having primary jurisdiction over a building, structure, facility, or site. [06B] The Maryland Department of Labor shall decide all questions relating to interpretation of this Code and shall determine whether any requests for waivers or exemptions from this Code may be approved.",
+  "process_url": "https://regs.maryland.gov/us/md/exec/comar/09.12.53.06",
+  "agency_quote": "The 2010 ADA Standards for Accessible Design is part of the Maryland Accessibility Code and it becomes effective on January 1, 2012 in Maryland. ... Local jurisdictions may not modify this code to a lesser requirement.",
+  "agency_url": "https://labor.maryland.gov/labor/build/buildaccess.shtml",
+  "confidence": "high"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "Under the State Plumbing Code a single-user toilet room must be identified as available to all persons regardless of sex. No state statute on single-occupancy restroom signs was found: bills in 2020, 2022 and 2023 did not pass (2023 HB 40 and SB 84 show hearings only on the General Assembly site). Baltimore City and Montgomery County have their own ordinances (city agent).",
+   "quote": "403.1.2 Fixtures in Single-User Toilet Facilities and Bathing Rooms. ... Single-user toilet facilities and bathing rooms, and family or assisted-use toilet facilities and bathing rooms shall be identified as being available for use by all persons regardless of their sex.",
+   "url": "https://up.codes/viewer/maryland/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+  },
+  "all_gender_shared": {
+   "rule": "Allowed in place of separate men's and women's rooms where each toilet is in its own compartment with a door and each urinal has partitions. The fixture count is then based on the whole occupant load, and signs must say whether a room is for males, females or all persons.",
+   "quote": "[403.2 exception] Separate toilet facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by all persons regardless of sex and privacy is provided for water closets in accordance with Section 405.3.4 and for urinals in accordance with Section 405.3.5. [403.1.1 exception] Where multiple-user facilities are designed to serve all genders, the minimum fixture count shall be calculated 100 percent, based on total occupant load. [403.4] Required public toilet facilities shall be provided with signs that indicate whether the facility is to be used by males, by females, or by all persons regardless of sex.",
+   "url": "https://up.codes/viewer/maryland/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "edition_note": "The 2021 IPC version of this exception requires urinals in a shared room to be \"in an area visually separated from the remainder of the facility\" or each \"located in a stall\"."
+  },
+  "use_restrictions": {
+   "rule": "No state law restricting who may use which restroom was found. Maryland's public accommodations law bars denying facilities because of gender identity; it does not apply, as to gender identity, to a multi-user single-sex facility where it is customary to disrobe in view of others if an equivalent private space is offered.",
+   "quote": "§20-304. An owner or operator of a place of public accommodation or an agent or employee of the owner or operator may not refuse, withhold from, or deny to any person any of the accommodations, advantages, facilities, or privileges of the place of public accommodation because of the person's race, sex, age, color, creed, national origin, marital status, sexual orientation, gender identity, or disability. [§20-303(b)(3)] This subtitle does not apply, with respect to gender identity, to a private facility, if the place of public accommodation in which the private facility is located makes available, for the use of persons whose gender identity is different from their assigned sex at birth, an equivalent private space.",
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsg&section=20-304&enactments=false",
+   "url_2": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsg&section=20-303&enactments=false"
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": true,
+  "law": "Maryland Prevailing Wage Law, State Finance and Procurement Article, Title 17, Subtitle 2 (§§17-201 to 17-226)",
+  "threshold": "Public work contracts of $250,000 or more. It covers state projects with any state funding, and projects of a county, city, school board or other body where the State pays 25% or more of the construction money, school construction included. A political subdivision may also opt in by ordinance.",
+  "who_sets_rates": "The Commissioner of Labor and Industry (Maryland Department of Labor), from an annual wage survey; determinations are issued for each county and Baltimore City, separately for building and highway work, and last one year.",
+  "rates_url": "https://www.dllr.state.md.us/PrevWage/web/content/PWRequestRates.aspx",
+  "quote": "[§17-202(b)] ... this subtitle does not apply to: (1) a public work contract of less than $250,000 ... [§17-201(p)(1)(iii)] any political subdivision, agency, person, or entity with respect to the construction of any public work for which 25% or more of the money used for construction is State money [§17-208(a)(1)] For each public work to which this subtitle applies, the Commissioner shall determine the prevailing wage rate for each classification of worker engaged in work of the same or a similar character. [Department of Labor] The Prevailing Wage law applies to a construction project valued at $250,000 or more if either of the following criteria are met: the contracting public body is a unit of State Government or an instrumentality of the State, and there is any State funding for the project; or the contracting public body is a political subdivision, agency, person or entity (such as a county) and the State funds 25% or more of the project including school construction.",
+  "url": "https://labor.maryland.gov/labor/prev/prevoverview.shtml",
+  "statute_urls": [
+   "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsf&section=17-201&enactments=false",
+   "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsf&section=17-202&enactments=false",
+   "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsf&section=17-208&enactments=false"
+  ],
+  "note": "Baltimore City and several counties have their own prevailing wage laws for locally funded work: city agent.",
+  "confidence": "high"
+ },
+ "sales_tax": {
+  "state_rate": 0.06,
+  "state_rate_note": "6% statewide. Counties and cities may not levy a general retail sales tax (Tax-General §11-102(c), opening words read), so the rate in Baltimore is 6%.",
+  "rate_quote": "[Tax-General §11-104(a)(2)] for a taxable price of $1 or more: (i) 6 cents for each exact dollar [Business Tax Tip #18] With limited exceptions, the Maryland sales tax rate is currently at 6 percent.",
+  "rate_url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-104&enactments=false",
+  "shipped_goods": {
+   "rule": "Taxable. An out-of-state seller must collect Maryland tax if its sales delivered into Maryland exceed $100,000 or number 200 or more transactions in the previous or current calendar year. Tax is imposed on use in the State as well as on sale, so goods bought out of state and delivered into Maryland without tax collected are taxable to the buyer.",
+   "quote": "[COMAR 03.06.01.33] A. A person who engages in the business of an out-of-State vendor shall collect and remit sales and use tax on all taxable sales for use in the State. B. A person engages in the business of an out-of-State vendor if the person: ... (5) Sells tangible personal property ... for delivery in the State, if, during the previous calendar year or the current calendar year, the person satisfies either of the following criteria: (a) The person's gross revenue from the sale of tangible personal property ... delivered in the State exceeds $100,000; or (b) The person sold tangible personal property ... for delivery into the State in 200 or more separate transactions. [Tax-General §11-102(a)] a tax is imposed on: (1) a retail sale in the State; and (2) a use, in the State, of tangible personal property ... [Business Tax Tip #18] Items purchased out-of-state, either directly, by mail, Internet or telephone, are also taxable if they are delivered in or brought into Maryland for use in this State.",
+   "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.33"
+  },
+  "freight_taxed": false,
+  "freight_note": {
+   "rule": "Not taxed when the delivery charge is stated separately and the delivery is direct to the buyer by the seller or its carrier. Included in the taxable price if not stated separately.",
+   "quote": "[COMAR 03.06.01.08D] Each of the following items, if made in connection with the sale and clearly identified with the consideration stated separately from any other item by documentary evidence in existence and made known to the buyer at the time of sale, is not a part of the \"taxable price\" ... (4) A charge for a delivery, freight, or other transportation service for delivery directly to the buyer by the vendor or by another person acting for the vendor.",
+   "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.08"
+  },
+  "install_labor": {
+   "rule": "Not taxed. Labor to install or repair real property is not taxable however it is billed. Labor to install personal property is not taxable when stated separately; if it is not stated separately, the whole price is taxable. Fabrication labor is always taxable.",
+   "quote": "Labor charges (whether separately stated or lump-sum billed) to install, erect, assemble, or repair real property are not taxable. Separately stated labor charges for installing personal property are not taxable either. But when the installation charge is not separately stated, the entire sales price for the personal property, including the installation, is taxable. On the other hand, labor charges for fabricating tangible personal property are taxable whether it is charged separately or on a lump-sum basis.",
+   "url": "https://www.marylandtaxes.gov/forms/Business_Tax_Tips/bustip18.pdf",
+   "regulation_url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.08"
+  },
+  "furnish_and_install": {
+   "rule": "A contractor who installs materials that become part of the building pays the 6% tax when buying the materials and charges no sales tax to the customer, whatever the contract says. This holds for government-owned buildings too; only certain nonprofit, religious and educational owners' exemption certificates can be used. Whether toilet partitions are real property or personal property once installed is not stated: the regulation treats doors and built-ins in commercial spaces as realty and commercial counters and cabinetry as personal property.",
+   "quote": "[COMAR 03.06.01.19A] The sale of tangible personal property to a person who will use or resell it in the form of real property is taxable. Therefore, a person who constructs, improves, alters, or repairs real property shall pay the tax on all materials purchased, which will be incorporated into real property in such a manner that the materials will lose their identity as tangible personal property. [C(5)] As a general rule, counters, countertops, and cabinetry installed in commercial spaces will be treated as tangible personal property. Doors, windows, molding, built-ins, and kitchen cabinetry installed in residential or commercial spaces will be treated as realty. [Business Tax Tip #18] The purchase of the materials is taxable to the contractor and no tax is charged to the customer.",
+   "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.19",
+   "tip_url": "https://www.marylandtaxes.gov/forms/Business_Tax_Tips/bustip18.pdf"
+  },
+  "agency": "Comptroller of Maryland",
+  "confidence": "high",
+  "confidence_note": "Regulations and statutes read on official sites. Business Tax Tip #18 is dated February 14, 2022."
+ },
+ "page": {
+  "stalls_intro": "Maryland counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women. Every toilet needs a stall, and every urinal needs a screen on each side. Urinals are optional: in a men's room they may replace up to half of the toilets in an office and up to two thirds in a restaurant or school, so the table shows the men's side as stalls.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building under Maryland's statewide plumbing rules, and at least one stall in each room must be wheelchair accessible. A men's room that needs only one toilet can't swap it for a urinal. An office designed for 25 people or fewer, or any space for 15 or fewer, may have one shared restroom instead of separate men's and women's rooms.",
+  "capacity": "To find your building's capacity, Maryland's building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** Maryland's building rules require solid plastic (HDPE) partitions to pass a room-corner fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Maryland's own access rules set the sizes. There is no separate state review: your local building department checks access when it reviews the plans.",
+  "state_extra_bullet": "- **Maryland and federal stall rules match:** Maryland's access rules adopt the federal ones and give the same size for a wheelchair stall: at least 60 inches wide, and 56 inches deep with a wall-hung toilet or 59 inches with a floor-mounted one.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** under Maryland's statewide plumbing rules a one-person restroom must be marked as open to everyone. A shared all-gender room is allowed in place of separate men's and women's rooms if every toilet sits in its own compartment with a door and every urinal has a screen on each side. Maryland has no state law limiting who may use which restroom, and its public accommodations law bars turning someone away because of gender identity.",
+  "public_jobs": "On public projects of $250,000 or more that are run by the State, or where the State pays at least a quarter of the cost, school construction included, Maryland law requires at least the prevailing wage set by the state's Commissioner of Labor and Industry for each county and for Baltimore City.",
+  "tax_install_bullet": "- **Tax on installation:** in Maryland, installation labor is not taxed when it is listed separately on the invoice. A contractor who supplies and installs materials that become part of the building pays the tax when buying those materials and does not add sales tax to the contract.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable. Freight is not taxed when it is listed separately on the invoice. If the seller doesn't collect the tax, the buyer owes it to the state as use tax.",
+  "tax_confirm": "your accountant or the Comptroller of Maryland",
+  "sources": [
+   "- Maryland's building code and what it leaves to the plumbing code: [COMAR 09.12.51, Maryland Building Performance Standards](https://labor.maryland.gov/labor/build/comar091251.pdf) (2021 International Building Code; Regulation .04B(10) puts Chapter 29, Plumbing Systems, outside its scope; .04B(6) replaces Chapter 11 with the Maryland Accessibility Code) and [Maryland Department of Labor, Building Codes Administration](https://labor.maryland.gov/labor/build/buildcodes.shtml). Checked 2026-11-24.",
+   "- Toilet counts in Maryland: [COMAR 09.20.01.01, State Plumbing Code](https://regs.maryland.gov/us/md/exec/comar/09.20.01.01) (the State Board of Plumbing adopts the most recent version of the International Plumbing Code) and the [State Board of Plumbing](https://labor.maryland.gov/license/pl/) (Baltimore County and the Washington Suburban Sanitary Commission area have their own plumbing code). Table 403.1 and Sections 403.1.1, 403.1.2, 403.2, 403.4, 405.3.4, 405.3.5 and 424.2 were read on a secondary copy, [UpCodes, MD Board of Plumbing, Plumbing Code 2024, Chapter 4](https://up.codes/viewer/maryland/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings). Checked 2026-11-24.",
+   "- Floor area per person: 2021 International Building Code, Table 1004.5, read on a secondary copy, [UpCodes, Maryland Building Code 2021, Chapter 10](https://up.codes/viewer/maryland/ibc-2021/chapter/10/means-of-egress). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: 2021 International Building Code, Sections 803.9 and 803.1.1 (NFPA 286), read on a secondary copy, [UpCodes, Maryland Building Code 2021, Chapter 8](https://up.codes/viewer/maryland/ibc-2021/chapter/8/interior-finishes); Maryland makes no change to that chapter in [COMAR 09.12.51.04](https://regs.maryland.gov/us/md/exec/comar/09.12.51.04). Checked 2026-11-24.",
+   "- Maryland's access rules and stall size: [COMAR 09.12.53.07, Maryland Accessibility Code, Applicable Standards](https://regs.maryland.gov/us/md/exec/comar/09.12.53.07), [09.12.53.04](https://regs.maryland.gov/us/md/exec/comar/09.12.53.04) and [09.12.53.06](https://regs.maryland.gov/us/md/exec/comar/09.12.53.06) (local enforcement), the [Building Codes Administration's accessibility page](https://labor.maryland.gov/labor/build/buildaccess.shtml), and the [2010 ADA Standards, Chapter 6](https://www.access-board.gov/ada/chapter/ch06/), Section 604.8.1.1. Checked 2026-11-24.",
+   "- Public accommodations and gender identity: [Maryland Code, State Government § 20-304](https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsg&section=20-304&enactments=false) and [§ 20-303](https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsg&section=20-303&enactments=false). Checked 2026-11-24.",
+   "- Wages on public jobs: [Maryland Code, State Finance and Procurement § 17-201](https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsf&section=17-201&enactments=false), [§ 17-202](https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsf&section=17-202&enactments=false) and [§ 17-208](https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsf&section=17-208&enactments=false); [Maryland Department of Labor, Prevailing Wage overview](https://labor.maryland.gov/labor/prev/prevoverview.shtml) and [rates](https://www.dllr.state.md.us/PrevWage/web/content/PWRequestRates.aspx). Checked 2026-11-24.",
+   "- Sales tax: [Maryland Code, Tax-General § 11-102](https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-102&enactments=false) and [§ 11-104](https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-104&enactments=false) (6% rate); [COMAR 03.06.01.08, \"Taxable Price\" Defined](https://regs.maryland.gov/us/md/exec/comar/03.06.01.08) (installation and delivery charges stated separately); [COMAR 03.06.01.19, Real Property Construction, Improvement, Alteration, and Repair](https://regs.maryland.gov/us/md/exec/comar/03.06.01.19); [COMAR 03.06.01.33, Out-of-State Vendor](https://regs.maryland.gov/us/md/exec/comar/03.06.01.33); Comptroller of Maryland, [Business Tax Tip #18, Real Property Contractors and Maryland Taxes](https://www.marylandtaxes.gov/forms/Business_Tax_Tips/bustip18.pdf). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; Maryland Accessibility Code (COMAR 09.12.53), which adopts the 2010 ADA Standards and replaces Chapter 11 of the building code; Maryland Building Performance Standards (COMAR 09.12.51): 2021 International Building Code with Maryland modifications, regulation text effective May 29, 2023; State Plumbing Code (COMAR 09.20.01): International Plumbing Code, most recent version as adopted by the State Board of Plumbing (2024 edition per a secondary source); NFPA 286 for HDPE."
+ },
+ "sources_read": [
+  {
+   "url": "https://labor.maryland.gov/labor/build/comar091251.pdf",
+   "official": true
+  },
+  {
+   "url": "https://regs.maryland.gov/us/md/exec/comar/09.12.51.04",
+   "official": true
+  },
+  {
+   "url": "https://regs.maryland.gov/us/md/exec/comar/09.12.51",
+   "official": true
+  },
+  {
+   "url": "https://regs.maryland.gov/us/md/exec/comar/09.12.50.02-1",
+   "official": true
+  },
+  {
+   "url": "https://regs.maryland.gov/us/md/exec/comar/09.20.01.01",
+   "official": true
+  },
+  {
+   "url": "https://regs.maryland.gov/us/md/exec/comar/09.20.01",
+   "official": true
+  },
+  {
+   "url": "https://regs.maryland.gov/us/md/exec/comar/09.12.58.03",
+   "official": true
+  },
+  {
+   "url": "https://regs.maryland.gov/us/md/exec/comar/09.12.53.03",
+   "official": true
+  },
+  {
+   "url": "https://regs.maryland.gov/us/md/exec/comar/09.12.53.04",
+   "official": true
+  },
+  {
+   "url": "https://regs.maryland.gov/us/md/exec/comar/09.12.53.06",
+   "official": true
+  },
+  {
+   "url": "https://regs.maryland.gov/us/md/exec/comar/09.12.53.07",
+   "official": true
+  },
+  {
+   "url": "https://regs.maryland.gov/us/md/exec/comar/09.12.53.08",
+   "official": true
+  },
+  {
+   "url": "https://labor.maryland.gov/labor/build/buildcodes.shtml",
+   "official": true
+  },
+  {
+   "url": "https://labor.maryland.gov/labor/build/buildmech.shtml",
+   "official": true
+  },
+  {
+   "url": "https://labor.maryland.gov/labor/build/buildaccess.shtml",
+   "official": true
+  },
+  {
+   "url": "https://labor.maryland.gov/license/pl/",
+   "official": true
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gbo&section=12-205&enactments=false",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/maryland/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/maryland/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/maryland/ibc-2021/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/maryland/ibc-2021/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/codes/maryland",
+   "official": false
+  },
+  {
+   "url": "https://www.access-board.gov/ada/chapter/ch06/",
+   "official": true
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsg&section=20-301&enactments=false",
+   "official": true
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsg&section=20-303&enactments=false",
+   "official": true
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsg&section=20-304&enactments=false",
+   "official": true
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsf&section=2-803&enactments=false",
+   "official": true
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/hb0040?ys=2023RS",
+   "official": true
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/sb0084?ys=2023RS",
+   "official": true
+  },
+  {
+   "url": "https://labor.maryland.gov/labor/prev/",
+   "official": true
+  },
+  {
+   "url": "https://labor.maryland.gov/labor/prev/prevoverview.shtml",
+   "official": true
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsf&section=17-201&enactments=false",
+   "official": true
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsf&section=17-202&enactments=false",
+   "official": true
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsf&section=17-208&enactments=false",
+   "official": true
+  },
+  {
+   "url": "https://www.marylandtaxes.gov/forms/Business_Tax_Tips/bustip18.pdf",
+   "official": true
+  },
+  {
+   "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.08",
+   "official": true
+  },
+  {
+   "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.19",
+   "official": true
+  },
+  {
+   "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.33",
+   "official": true
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-102&enactments=false",
+   "official": true
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-104&enactments=false",
+   "official": true
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-701&enactments=false",
+   "official": true
+  }
+ ],
+ "to_confirm": [
+  "Which International Plumbing Code edition the State Board of Plumbing enforces today (the regulation says \"most recent version\"; UpCodes shows 2024 without amendments; the Model Performance Code names 2021). Ask the Board of Plumbing or the Building Codes Administration, 410-767-2227. The office, restaurant and school rows are the same in both editions.",
+  "Baltimore City's own plumbing and building code amendments, including its Section 2902 (codes.baltimorecity.gov) and its single-user restroom ordinance (City Code Article 15, Subtitle 43): city agent.",
+  "Whether Maryland has adopted the 2024 International Building Code since the May 29, 2023 regulation text (COMAR 09.12.51's history shows no later amendment). The HDPE section number would change with the edition.",
+  "Table 403.1 footnote d (restaurants) and how plan reviewers round a fraction of a urinal under Section 424.2: not read or not stated.",
+  "How the Maryland Building Rehabilitation Code (2021 IEBC) applies the interior finish fire test to replacement partitions in an existing restroom: ask the local building department.",
+  "Whether the 2010 ADA Standards permit any stall smaller than 60 inches wide in alterations (Maryland's 48-inch fallback text): not read on the federal side. Ask the Building Codes Administration.",
+  "No state single-occupancy restroom statute was found (2020, 2022 and 2023 bills failed); the 2024 to 2026 sessions were checked by one web search only, not by the General Assembly's subject index.",
+  "Sales tax: whether installed toilet partitions count as real property (contractor pays tax on materials) or as personal property (tax charged to the customer, installation exempt only if listed separately) under COMAR 03.06.01.19C. Ask the Comptroller of Maryland. How Next Partitions itself charges Maryland tax is for Abe's accountant.",
+  "Business Tax Tip #18 is dated February 14, 2022; the Comptroller proposed new sales and use tax regulations in December 2025 (seen in search results, not read)."
+ ]
+}

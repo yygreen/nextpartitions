@@ -1,0 +1,368 @@
+{
+ "area": "west-palm-beach",
+ "found_count": 10,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/west-palm-beach.json: worked. Most Maps hits were shower-glass, remodeling and supply shops. The partition-relevant ones were Schedule 10, Sunshine State Specialties, Lotspeich and Florida State Glass. Division 7 Specialty Contractors (Riviera Beach) does fireproofing and waterproofing only. Atlantic Interior Services (Palm Beach Gardens) shows no partitions. Advanced Glass and ICU2 Glass show no restroom stalls.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but the results are dynamic and nothing was returned",
+  "Scranton Products find-a-rep: 404",
+  "Hadrian find-a-rep: 404",
+  "Bradley find-a-rep: no content returned (dynamic)",
+  "Global Partitions (globalpartitions.com): DNS blocked in this session; the host would need to be allowed in the session's network settings",
+  "ASI, Metpar, General Partitions and Ampco locators: not reached (search budget used and no known locator URLs)",
+  "The Blue Book: iProView and category pages return 403. Only search-result summaries were used (Tri-County Building Specialties, Hugh Robinson). Hugh Robinson is a demountable office-partition company and was excluded.",
+  "BuildingConnected and Procore: not tried (search budget)",
+  "WebSearch (8 of 8 used): Division 10 West Palm Beach (nothing local); toilet partitions Palm Beach (nothing local); Boca/Jupiter/Treasure Coast (led to the BBB partitions category); Blue Book West Palm Beach (Tri-County Building Specialties); Palm Beach/Treasure Coast/Broward specialties (same); Hugh Robinson (office partitions, excluded); Port St. Lucie/Stuart/Vero/Fort Pierce (no local installer found)",
+  "BBB Florida 'Partitions' category (bbb.org/us/fl/category/partition): worked (Air Walls Systems, Hugh Robinson)",
+  "One Point Partitions: 403. It is a national online seller (competitor) and was excluded.",
+  "asdspecialties.com: DNS blocked in this session",
+  "Earlier repo research reused as leads and re-checked by fetching: miami.json (Tri-County Partitions, Diamond, RTI, Tropical Glass). Orlando and Tampa Division 10 firms are 150+ miles away and were excluded."
+ ],
+ "candidates": [
+  {
+   "name": "Lotspeich Co. of Florida, Inc.",
+   "added_by_checker": false,
+   "base_city": "Fort Lauderdale",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "regional",
+   "website": "http://lcfinc.com/",
+   "phone": "(954) 978-2388",
+   "email": "Info@lcfinc.com",
+   "contact_page": "https://lcfinc.com/contact-us/",
+   "evidence_urls": [
+    "http://lcfinc.com/",
+    "https://lcfinc.com/building-specialties/"
+   ],
+   "partition_evidence": "Building Specialties page lists Bathroom Partitions and shows photos captioned 'Seminole Hard Rock Casino bathroom stalls' and 'bathroom stall door'.",
+   "red_flags": [
+    "Site says 'Serving: Miami & Fort Lauderdale' and lists one Fort Lauderdale office; I found no Riviera Beach office on the site",
+    "Large specialty/GC firm (GC License CGC1507337 shown on site); partitions are one of many trades"
+   ],
+   "reason": "Commercial specialty contractor that shows its own bathroom stall installations. Its featured projects include Burns Road Community Center (Palm Beach Gardens) and The Boca Raton, so it works inside the area. Its base is about 40 miles south.",
+   "license": {
+    "name": "Lotspeich Co. of Florida, Inc.",
+    "area": "west-palm-beach",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "license_type": "Certified General Contractor (per company site, unverified)",
+    "license_number": "CGC1507337 (as stated on company site, unverified)",
+    "source_url": "http://lcfinc.com/",
+    "note": "Company site footer shows 'GC License # CGC1507337'; base city Fort Lauderdale (company site). DBPR Verify a Licensee is an interactive POST form, so the number wasn't checked against DBPR. No local rule for West Palm Beach. Next step: confirm CGC1507337 by hand on DBPR."
+   },
+   "score": 63
+  },
+  {
+   "name": "RTI Supply",
+   "added_by_checker": false,
+   "base_city": "Doral",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Ampco"
+   ],
+   "within_area": "regional",
+   "website": "http://rtisupply.com/",
+   "phone": "(305) 863-9094",
+   "email": "sales@rtisupply.com",
+   "contact_page": "http://rtisupply.com/contact-us",
+   "evidence_urls": [
+    "http://rtisupply.com/",
+    "http://rtisupply.com/contact-us"
+   ],
+   "partition_evidence": "The homepage says it distributes and installs restroom compartments in 8 materials and offers installation, with a project photo gallery.",
+   "red_flags": [
+    "Distributor ('preferred AMPCO distributor'), quick-ship program: high buy-around risk",
+    "Serves 'South Florida' generally; Palm Beach not named; base about 70 miles away"
+   ],
+   "reason": "Installs commercial partitions and says it serves South Florida, but it is primarily a distributor based in Miami-Dade.",
+   "license": {
+    "name": "RTI Supply",
+    "area": "west-palm-beach",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+   },
+   "score": 63
+  },
+  {
+   "name": "Diamond Partitions, LLC",
+   "added_by_checker": false,
+   "base_city": "North Miami",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick"
+   ],
+   "within_area": "regional",
+   "website": "https://www.diamondpartitions.com/",
+   "phone": "+1 (786) 209-6607",
+   "email": "sales@diamondpartitions.com",
+   "contact_page": "https://www.diamondpartitions.com/plan-room",
+   "evidence_urls": [
+    "https://www.diamondpartitions.com/",
+    "https://www.diamondpartitions.com/portfolio"
+   ],
+   "partition_evidence": "Says it does 'supply and installation (Furnish & Install) of commercial toilet partitions'. Portfolio: Matter Academy (Miami), 22 stalls installed.",
+   "red_flags": [
+    "Furnish-and-install model for GCs (supplies partitions: buy-around risk)",
+    "No stated service area; portfolio projects are Miami and Sarasota, none in Palm Beach County"
+   ],
+   "reason": "A proven commercial partition installer with projects elsewhere in Florida (Miami, Sarasota), about 65 miles away. Palm Beach coverage is not stated.",
+   "license": {
+    "name": "Diamond Partitions, LLC",
+    "area": "west-palm-beach",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+   },
+   "score": 63
+  },
+  {
+   "name": "Tri-County Partitions, LLC",
+   "added_by_checker": false,
+   "base_city": "Miami Lakes",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Accurate Partitions (ASI)",
+    "Bobrick",
+    "Hadrian",
+    "Scranton Products",
+    "Bradley"
+   ],
+   "within_area": "no",
+   "website": "http://www.tricountypartitions.com/",
+   "phone": "(305) 748-5990",
+   "email": "service@tricountypartitions.com",
+   "contact_page": "http://www.tricountypartitions.com/",
+   "evidence_urls": [
+    "http://www.tricountypartitions.com/"
+   ],
+   "partition_evidence": "The homepage banner reads 'We Supply & Install Toilet Partitions & Restroom Accessories & More'.",
+   "red_flags": [
+    "Supplies and sells partitions with its own online store (strong buy-around risk)",
+    "No stated service area; base is about 60 miles from West Palm Beach"
+   ],
+   "reason": "A dedicated toilet partition supply-and-install company for facilities and schools, but in Miami-Dade and without any statement that it covers Palm Beach County.",
+   "license": {
+    "name": "Tri-County Partitions, LLC",
+    "area": "west-palm-beach",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "http://www.tricountypartitions.com/",
+    "note": "The company homepage shows no license number; base city Miami Lakes (company site). DBPR search is an interactive POST form, so no automated lookup was run. Next step: look up by name by hand."
+   },
+   "score": 60
+  },
+  {
+   "name": "Florida State Glass & Mirror",
+   "added_by_checker": false,
+   "base_city": "Boca Raton",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "website": "https://www.flglassandmirror.com/",
+   "phone": "561-997-6990",
+   "email": "info@flglassandmirror.com",
+   "contact_page": "https://www.flglassandmirror.com/contact/",
+   "evidence_urls": [
+    "https://www.flglassandmirror.com/"
+   ],
+   "partition_evidence": "Lists 'Glass Toilet Partitions' under Glass Partitions; no standard (phenolic/steel/HDPE) stall work was seen.",
+   "red_flags": [
+    "Glass shop: shower enclosures, mirrors and railings make up most of its work, with a big residential side",
+    "Glass partitions only; probably can't install standard partition brands"
+   ],
+   "reason": "In the area and does commercial glass, including glass toilet partitions, but nothing shows it installs standard toilet partitions like the ones Next Partitions sells.",
+   "license": {
+    "name": "Florida State Glass & Mirror",
+    "area": "west-palm-beach",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+   },
+   "score": 45
+  },
+  {
+   "name": "Sunshine State Specialties",
+   "added_by_checker": false,
+   "base_city": "unknown",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "regional",
+   "website": "https://sunstatespec.com/",
+   "phone": "754-755-6044",
+   "contact_page": "https://sunstatespec.com/contact/",
+   "evidence_urls": [
+    "https://sunstatespec.com/",
+    "https://sunstatespec.com/services/toilet-partitions/",
+    "https://sunstatespec.com/about/",
+    "https://sunstatespec.com/contact/"
+   ],
+   "partition_evidence": "The toilet partitions service page says it is a 'one-stop shop for the supply & installation of Toilet Partitions', with OSHA-trained installers.",
+   "red_flags": [
+    "No city, address, service area, projects or email anywhere on the site",
+    "Supplies partitions itself (buy-around risk)"
+   ],
+   "reason": "Says it supplies and installs toilet partitions and other Division 10 items, but shows no location, no projects and no service area. The 754 number is a Broward area code, which suggests it is near, but that is unconfirmed.",
+   "license": {
+    "name": "Sunshine State Specialties",
+    "area": "west-palm-beach",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form with an anti-forgery token, so no automated lookup was run. Company site not read for a license number; base city unknown. Next step: look up by name by hand."
+   },
+   "score": 43
+  },
+  {
+   "name": "Schedule 10 Specialists, Inc.",
+   "added_by_checker": false,
+   "base_city": "Coral Springs",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Accurate Partitions",
+    "Ampco",
+    "Bobrick",
+    "Bradley",
+    "Global Partitions",
+    "Hadrian",
+    "Metpar",
+    "General Cubicle"
+   ],
+   "within_area": "regional",
+   "website": "http://www.schedule10.com/",
+   "phone": "954-340-3681",
+   "email": "info@schedule10.com",
+   "contact_page": "http://www.schedule10.com/contact.php",
+   "evidence_urls": [
+    "http://www.schedule10.com/",
+    "http://www.schedule10.com/manufacturers.php"
+   ],
+   "partition_evidence": "'Specializing in large-scale installations of division 10 materials'. It has a Toilet Partitions product category and a manufacturers list with partition brands, but no explicit partition install photo was seen.",
+   "red_flags": [
+    "Has an online shop and represents many manufacturers (supplier and buy-around risk)",
+    "No stated service area; the projects listed are in Deerfield Beach, Miami and Coral Springs FL, and Batavia NY"
+   ],
+   "reason": "A Division 10 installer for commercial work (hospitals, schools, hotels, offices) about 40 miles from West Palm Beach, with a Deerfield Beach project near the area's south edge. I didn't see partition installation specifically.",
+   "license": {
+    "name": "Schedule 10 Specialists, Inc.",
+    "area": "west-palm-beach",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read for a license number. Next step: look up by name by hand."
+   },
+   "score": 43
+  },
+  {
+   "name": "Tri-County Building Specialties, Inc.",
+   "added_by_checker": false,
+   "base_city": "Fort Lauderdale",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "regional",
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/365583/tri-county-building-specialties-inc/material-suppliers/"
+   ],
+   "partition_evidence": "Only a search-result summary of its Blue Book listing: toilet and cubicle partitions, bathroom accessories and lockers; regions served reportedly include Palm Beach and Saint Lucie. The listing page itself returned 403, so I couldn't read it.",
+   "red_flags": [
+    "No website found",
+    "Evidence comes only from a search summary of a directory listing I could not open",
+    "Listed under material suppliers"
+   ],
+   "reason": "Possibly a Division 10 partition firm serving Palm Beach County, but I couldn't verify installation, contact details or activity from a page I read.",
+   "license": {
+    "name": "Tri-County Building Specialties, Inc.",
+    "area": "west-palm-beach",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run. No website given. Next step: look up by name by hand."
+   },
+   "score": 23
+  },
+  {
+   "name": "Tropical Glass & Construction Co",
+   "added_by_checker": false,
+   "base_city": "Miami",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "regional",
+   "website": "https://www.tropicalglassmiami.com/",
+   "phone": "(305) 757-0651",
+   "email": "info@tropicalglassmiami.com",
+   "contact_page": "https://www.tropicalglassmiami.com/contact",
+   "evidence_urls": [
+    "https://www.tropicalglassmiami.com/"
+   ],
+   "partition_evidence": "Lists 'Glass Bathroom Stall Partitions' among its commercial services; no standard partition work seen.",
+   "red_flags": [
+    "Glass and mirror company; glass stalls only",
+    "Based in Miami, about 70 miles away"
+   ],
+   "reason": "A glass contractor serving Key West to Orlando. Glass stall partitions are a sideline, and nothing shows it installs standard toilet partitions.",
+   "license": null,
+   "score": 38
+  },
+  {
+   "name": "Air Walls Systems, Inc.",
+   "added_by_checker": false,
+   "base_city": "Jupiter",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "unknown",
+   "sells_partitions": "no",
+   "brands": [],
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://naicslist.com/company-profile/air-wall-systems-inc-jupiter-fl-33458"
+   ],
+   "partition_evidence": "None. The only match found (Air Wall Systems Inc., Jupiter) is classified as a poured concrete foundation and structure contractor.",
+   "red_flags": [
+    "No website found",
+    "Directory classification is concrete foundations, not partitions"
+   ],
+   "reason": "No evidence of any partition or Division 10 work. The only matching business is a small concrete contractor.",
+   "license": null,
+   "score": 15
+  }
+ ]
+}

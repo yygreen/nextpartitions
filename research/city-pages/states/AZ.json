@@ -1,0 +1,480 @@
+{
+ "state": "AZ",
+ "state_name": "Arizona",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "statewide_code": false,
+  "note": "Arizona has no statewide building or plumbing code. Every figure in this block is the MODEL International Plumbing Code (2018 and 2024 editions give the same toilet ratios), read on secondary copies of other states' unamended adoptions. Each Arizona city adopts its own edition with amendments, so the city agent must replace these with the city's own table and rules. Example of a local change already seen: the Phoenix copy of the 2018 IPC caps urinals at 50% in all occupancies and sets the separate-rooms exception at 50 occupants for business and mercantile.",
+  "governing_table": {
+   "code": "No statewide code. Model code most Arizona cities use: International Plumbing Code (and International Building Code Table 2902.1, which repeats it)",
+   "edition": "varies by city or county (model 2018 and 2024 editions read)",
+   "table": "IPC Table 403.1, Minimum Number of Required Plumbing Fixtures",
+   "url": "https://www.iccsafe.org/advocacy/adoptions-map/arizona/",
+   "quote": "Codes are adopted locally in Arizona and are predominantly the I-codes."
+  },
+  "cities_may_amend": true,
+  "rows": {
+   "office": {
+    "row_label": "2 Business: Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, ambulatory care, light industrial and similar uses",
+    "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "urinals": "See Section 424.2 (substitution, not required)",
+    "quote": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "url": "https://up.codes/viewer/kansas/ipc-2018/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "restaurant": {
+    "row_label": "1 Assembly: Restaurants, banquet halls and food courts",
+    "wc_male": "1 per 75",
+    "wc_female": "1 per 75",
+    "urinals": "See Section 424.2 (substitution, not required)",
+    "quote": "Restaurants, banquet halls and food courts d 1 per 75 1 per 75 1 per 200 — 1 per 500 1 service sink",
+    "url": "https://up.codes/viewer/kansas/ipc-2018/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "school": {
+    "row_label": "3 Educational: Educational facilities",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 50",
+    "urinals": "See Section 424.2 (substitution, not required)",
+    "quote": "3 Educational Educational facilities 1 per 50 1 per 50 — 1 per 100 1 service sink",
+    "url": "https://up.codes/viewer/kansas/ipc-2018/chapter/4/fixtures-faucets-and-fixture-fittings"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Total occupant load divided in half, unless approved statistical data show another split. The 2024 model edition adds that a multiple-user room for all genders is counted on 100% of the occupant load.",
+    "quote": "To determine the occupant load of each sex, the total occupant load shall be divided in half.",
+    "url": "https://up.codes/viewer/kansas/ipc-2018/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole number, per sex and per fixture type.",
+    "quote": "Fractional numbers resulting from applying the fixture ratios of Table 403.1 shall be rounded up to the next whole number.",
+    "url": "https://up.codes/viewer/kansas/ipc-2018/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are optional. Model 2018 IPC 424.2: in each toilet room, urinals may replace up to 67% of the required water closets in assembly and educational occupancies and up to 50% in all others. The 2024 edition says the same, 'for males according to Table 403.1'. Phoenix's 2018 copy reads 50% in all occupancies.",
+    "quote": "In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent of the required water closets in assembly and educational occupancies. Urinals shall not be substituted for more than 50 percent of the required water closets in all other occupancies.",
+    "url": "https://up.codes/viewer/kansas/ipc-2018/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "small_occupancy_exception": {
+    "text": "Model 2018 and 2024 IPC 403.2: separate rooms for each sex are not required at 15 or fewer total occupants, in mercantile at 100 or fewer, or in business at 25 or fewer. Phoenix's 2018 copy reads 50 or fewer for both business and mercantile.",
+    "quote": "Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. Separate facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer.",
+    "url": "https://up.codes/viewer/kansas/ipc-2018/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "occupant_load": {
+    "text": "Model IBC Table 1004.5 (2018 and 2024 the same for these rows): business areas 150 sq ft gross per person; assembly without fixed seats, unconcentrated (tables and chairs) 15 net; educational classroom area 20 net.",
+    "quote": "Unconcentrated (tables and chairs) 15 net ... Business areas 150 gross ... Educational Classroom area 20 net",
+    "url": "https://up.codes/viewer/new_hampshire/ibc-2018/chapter/10/means-of-egress"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 women, 25 men. 1 per 25 for the first 50: 25/25 = 1 each. Urinals: not more than 50% of 1 = 0.5, so 0. (Model code: separate rooms are needed above 25 occupants.)"
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "50 each. 50/25 = 2 each. Urinals: 50% of 2 = 1."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 each. First 50: 2; remaining 50 at 1 per 50: 1; total 3 each. Urinals: 50% of 3 = 1.5, so 1."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 each. First 50: 2; remaining 150 at 1 per 50: 3; total 5 each. Urinals: 50% of 5 = 2.5, so 2."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 each. 25/75 = 0.33, rounds up to 1 each. Urinals: 67% of 1 = 0.67, so 0."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 each. 50/75 = 0.67, rounds up to 1 each. Urinals: 67% of 1 = 0.67, so 0."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 each. 100/75 = 1.33, rounds up to 2 each. Urinals: 67% of 2 = 1.34, so 1."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 each. 200/75 = 2.67, rounds up to 3 each. Urinals: 67% of 3 = 2.01, so 2."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 each. 25/50 = 0.5, rounds up to 1 each. Urinals: 67% of 1 = 0.67, so 0."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 each. 50/50 = 1 each. Urinals: 67% of 1 = 0.67, so 0."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 each. 100/50 = 2 each. Urinals: 67% of 2 = 1.34, so 1."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 each. 200/50 = 4 each. Urinals: 67% of 4 = 2.68, so 2."
+   }
+  ],
+  "worked_examples_note": "Urinal limits are worked on the building's total men's toilets; the model rule applies 'in each bathroom or toilet room', so the split per room can differ.",
+  "confidence": "medium"
+ },
+ "hdpe_fire": {
+  "required": null,
+  "section": "No statewide building code. Model IBC Section 803.9 (same number and wording in the 2018 and 2024 editions), which sends HDPE and polypropylene interior finish to Section 803.1.1 (NFPA 286 room-corner test)",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP) Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. [803.1.1:] Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1.",
+  "url": "https://up.codes/viewer/new_hampshire/ibc-2018/chapter/8/interior-finishes",
+  "url_2024": "https://up.codes/viewer/new_hampshire/ibc-2024/chapter/8/interior-finishes",
+  "note": "The rule applies only where a city or county has adopted an IBC edition that contains it (2018 and 2024 both do) without deleting it. The Phoenix copy of the 2018 IBC carries the same 803.9. The model text says 'used as an interior finish' and does not name toilet partitions. City agent to confirm per city.",
+  "confidence": "medium"
+ },
+ "access": {
+  "state_standard": "2010 ADA Standards for Accessible Design, adopted by reference under the Arizonans with Disabilities Act (A.R.S. 41-1492 et seq.; A.A.C. R10-3-404). No state-specific stall rules.",
+  "differences": [],
+  "no_differences_basis": {
+   "quote": "Compliance with titles II and III of the Americans with disabilities act and its implementing regulations shall be deemed in compliance with this article. The rules adopted under this article shall not exceed the regulations, guidelines and standards issued by the United States departments of transportation and justice relating to titles II and III of the Americans with disabilities act.",
+   "url": "https://www.azleg.gov/ars/41/01492-06.htm",
+   "rule_quote": "Places of public accommodations and commercial facilities shall comply with the 2010 Standards and the provisions of 28 CFR 36.101 through 36.104 ... and no further amendments, which are adopted and incorporated herein by reference.",
+   "rule_url": "https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R10-3-404"
+  },
+  "icc_a117_1": "Not adopted statewide. It applies only through each city's building code: the model 2018 IBC references ICC A117.1-2009 and the model 2024 IBC references ICC A117.1-2017 with Supplement 1 (read in IBC Chapter 35 on a secondary copy). The A117.1 text itself was not read, so its stall changes are not listed.",
+  "cities_may_exceed": {
+   "quote": "Nothing in this article is intended to limit the power of any political subdivision of this state to adopt rules or codes that exceed the requirements of this article.",
+   "url": "https://www.azleg.gov/ars/41/01492-06.htm"
+  },
+  "process": "No state plan-review or registration step for accessibility was found. A.R.S. 41-1492.03 requires the standards to be incorporated in any building code of the state or a political subdivision, so the city or county building department checks them at plan review. The Attorney General's Civil Rights Division takes complaints (180-day filing limit per its page), and an aggrieved person may sue in superior court within two years (A.R.S. 41-1492.08).",
+  "process_quote": "The standards and specifications referred to in this article and its implementing rules as applying to public accommodations and commercial facilities shall be incorporated in any building code in existence on or adopted subsequent to the effective date of this article by this state or any agency, department, or political subdivision of this state.",
+  "process_url": "https://www.azleg.gov/ars/41/01492-03.htm",
+  "confidence": "medium"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "No state statute or statewide code on single-user restroom signs was found; Arizona has no statewide building or plumbing code, so the city's adopted code decides. Model text for reference: 2018 IPC 403.1.2 says single-user rooms 'shall be identified for use by either sex'; 2024 IPC 403.1.2 says 'identified as being available for use by all persons regardless of their sex'.",
+   "quote": "Single-user toilet facilities and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified for use by either sex. (model 2018 IPC 403.1.2, not state law)",
+   "url": "https://up.codes/viewer/kansas/ipc-2018/chapter/4/fixtures-faucets-and-fixture-fittings"
+  },
+  "all_gender_shared": {
+   "rule": "No state law for or against shared all-gender rooms in private buildings was found; the city's code decides. Model text for reference: the 2018 IPC requires separate facilities for each sex (403.2) with small-occupancy exceptions; the 2024 IPC adds an exception allowing rooms designed for all persons where each water closet is in a compartment with walls or partitions and a door (405.3.4) and each urinal is in a partitioned area (405.3.5).",
+   "quote": "Separate toilet facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by all persons regardless of sex and privacy is provided for water closets in accordance with Section 405.3.4 and for urinals in accordance with Section 405.3.5. (model 2024 IPC 403.2 exception 6, not state law)",
+   "url": "https://up.codes/viewer/new_hampshire/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+  },
+  "use_restrictions": {
+   "rule": "Proposition 318 (House Concurrent Resolution 2003, 2026), approved by voters on 2026-11-03 (58.73% yes per Ballotpedia, which reports the results as officially certified), amends A.R.S. 15-120.02. From 2027-01-01, a school (public or private K-12, or an institution of higher education) or athletic association that provides restrooms, locker rooms, shower rooms or other private spaces 'integral to athletic engagement' may not authorize anyone to use one not designated for that person's sex, defined by the original birth certificate. It becomes law on the Governor's proclamation. It is not a general rule for all school or public-building restrooms. Earlier school restroom bills (SB 1001 in 2023, SB 1003 in 2025) were vetoed. No state restriction for other buildings was found.",
+   "quote": "D. Beginning on January 1, 2027, if a school or athletic association provides and maintains restrooms, locker rooms, shower rooms or other private spaces that are integral to athletic engagement, the school or athletic association, including employees of the school or athletic association, may not authorize any individual to use a restroom, locker room, shower room or other private space that is not designated for that individual's sex.",
+   "url": "https://www.azleg.gov/legtext/57leg/2R/bills/HCR2003H.htm",
+   "result_url": "https://ballotpedia.org/Arizona_Proposition_318,_Require_All_Schools_and_Athletic_Associations_to_Restrict_Sports_Participation_and_Access_to_Private_Spaces_Based_on_Sex_Measure_(2026)"
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": false,
+  "law": "A.R.S. 34-321: no state prevailing wage law; the statute bars state agencies and political subdivisions (cities, counties, school districts) from requiring prevailing wages in public works contracts. Only the federal Davis-Bacon Act applies, on federally funded work.",
+  "threshold": null,
+  "rates_url": null,
+  "quote": "Agencies and political subdivisions of this state shall not by regulation, ordinance or in any other manner require public works contracts to contain a provision requiring the wages paid by the contractor or any subcontractor to be not less than the prevailing rate of wages for work of a similar nature in the state or political subdivision where the project is located.",
+  "url": "https://www.azleg.gov/ars/34/00321.htm",
+  "note": "Phoenix and Tucson passed prevailing wage ordinances in January 2024; per news reports (search results only, not read in full) a Maricopa County judge struck them down in June 2024, the Court of Appeals affirmed in early 2026, and Phoenix said it would not appeal. City agents should check current status.",
+  "confidence": "high"
+ },
+ "sales_tax": {
+  "state_rate": 0.056,
+  "state_rate_basis": {
+   "text": "Transaction privilege tax (TPT): 5% under A.R.S. 42-5010(A)(1) plus a 0.6% increment under A.R.S. 42-5010.01 through 2041-06-30, for the retail and prime contracting classifications. Counties and cities add their own rates.",
+   "quote": "an additional rate increment is imposed and shall be collected. The additional tax rate increment is levied at the rate of six-tenths of one percent of the tax base",
+   "url": "https://www.azleg.gov/ars/42/05010-01.htm",
+   "url_base_rate": "https://www.azleg.gov/ars/42/05010.htm"
+  },
+  "shipped_goods": {
+   "rule": "Retail sales of tangible personal property are subject to TPT. A remote seller with more than $100,000 a year in direct sales into Arizona must hold a TPT license and remit the tax; below that, the customer owes use tax (A.R.S. 42-5155).",
+   "quote": "A remote seller has economic nexus if in the previous or current year, the gross sales generated from direct sales into Arizona is more than: ... $100,000 (2021 and beyond) ... A remote seller or marketplace facilitator that has not met the threshold should inform Arizona customers they are not collecting tax and the customer should remit a use tax.",
+   "url": "https://azdor.gov/transaction-privilege-tax/retail-sales-subject-tpt/out-state-sellers"
+  },
+  "freight_taxed": false,
+  "freight": {
+   "rule": "A retailer's delivery charge from its location to the purchaser, separately stated on the invoice, is not taxable. Freight incurred before the retail sale (freight-in) is part of the taxable price. Read on Cornell LII, a secondary copy of the Arizona Administrative Code. How this applies to a drop shipment from the manufacturer's plant was not read.",
+   "quote": "A charge by a retailer for delivery from the retailer's location to the purchaser's location, if separately stated on the sales invoice, is not taxable. When the freight cost is incurred any time prior to the time of the retail sale, such cost is part of the gross sale and, therefore, subject to the tax.",
+   "url": "https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R15-5-133"
+  },
+  "install_labor": {
+   "rule": "On maintenance, repair, replacement or alteration (MRRA) of existing property, the contract is outside prime contracting TPT and labor is not taxed; the contractor pays retail TPT on the materials and puts no tax line on the invoice. For commercial property an alteration stays MRRA only if the contract is $750,000 or less (A.R.S. 42-5075(S)(1)(b)). Separately, services rendered in addition to a retail sale are not taxed if shown separately on the invoice (A.R.S. 42-5061(A)(2); A.A.C. R15-5-105).",
+   "quote": "For Maintenance, Repair, Replacement or Alteration (MRRA) projects, is labor taxable? No, labor is not taxable and a contractor's invoice for MRRA projects should not include a line item for tax as neither the labor or the materials are taxable (although a contractor will pay tax on the materials when they are purchased).",
+   "url": "https://azdor.gov/transaction-privilege-tax/contracting-guidelines/contracting-faqs"
+  },
+  "furnish_and_install": {
+   "rule": "New construction and other 'modification' work (including a commercial alteration contract above $750,000) is taxed under the prime contracting classification on 65% of the gross contract, labor and materials together, at the state rate plus county and city rates; the prime contractor buys materials tax exempt. A furnish-and-install contract that is MRRA on an existing building is not taxed as contracting; the contractor pays retail TPT on the materials.",
+   "quote": "The tax base for the prime contracting classification is sixty-five percent of the gross proceeds of sales or gross income derived from the business. [42-5075(B)] ... The gross proceeds of sales or gross income derived from a contract with the owner of real property or improvements to real property for the maintenance, repair, replacement or alteration of existing property is not subject to tax under this section if the contract does not include modification activities [42-5075(P)]",
+   "url": "https://www.azleg.gov/ars/42/05075.htm",
+   "agency_url": "https://azdor.gov/transaction-privilege-tax/contracting-guidelines/mrra-contracting"
+  },
+  "agency": "Arizona Department of Revenue",
+  "confidence": "medium"
+ },
+ "page": {
+  "stalls_intro": "Arizona has no statewide building rules: each city or county sets its own, mostly from the same national model. That model counts toilets by a building's capacity, the most people it is designed to hold at one time, with half counted as men and half as women. Every toilet needs a stall. Urinals are optional: in the men's room they may take the place of up to half of the toilets, or up to two thirds in restaurants and schools, so the table shows men's toilets as stalls.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are the national model's minimums for the whole building. Arizona cities amend the model, so confirm the count with the city's building department.",
+  "capacity": "To find your building's capacity, the model rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": null,
+  "fire_bullet_if_city_adopts": "- **Fire safety:** the building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Arizona's disability law uses the federal sizes, and state law writes them into every local building code, so the city or county building department checks them.",
+  "state_extra_bullet": "- **Arizona and federal stall rules match:** Arizona adopts the federal standards for stalls, doors and grab bars, and state law says its rules may not go beyond them. A city may set stricter rules of its own.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** Arizona has no statewide rule on signs for one-person restrooms or on shared all-gender rooms, so the city's building rules decide. A measure Arizona voters approved in November 2026 says that from January 1, 2027, a school or athletic association may not authorize anyone to use a restroom, locker room or shower room that is part of its athletics facilities and is not designated for that person's sex.",
+  "public_jobs": "Arizona has no wage law for public jobs, and state law bars cities, counties and school districts from requiring prevailing wages in their contracts, so the federal wage rule applies only on federally funded work.",
+  "tax_install_bullet": "- **Tax on installation:** in Arizona, a contractor's labor to repair, replace or alter part of an existing building is not taxed. The contractor pays tax on the materials and adds no tax line to the invoice. New construction, and alterations to a commercial building under a contract above $750,000, are taxed as contracting on 65% of the contract price.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable. A delivery charge listed separately on the invoice is not. An out-of-state seller with more than $100,000 a year in Arizona sales collects the tax. If the seller doesn't collect it, the buyer owes use tax to the state.",
+  "tax_confirm": "your accountant or the Arizona Department of Revenue",
+  "sources": [
+   "- Arizona has no statewide building or plumbing code: [International Code Council, Arizona adoptions](https://www.iccsafe.org/advocacy/adoptions-map/arizona/) (\"Codes are adopted locally in Arizona and are predominantly the I-codes\"). Checked 2026-11-24.",
+   "- Model toilet counts, the 50/50 split, rounding up, urinal substitution and separate rooms: International Plumbing Code, Table 403.1 and Sections 403.1.1, 403.2 and 424.2, read on secondary copies of the [2018 edition](https://up.codes/viewer/kansas/ipc-2018/chapter/4/fixtures-faucets-and-fixture-fittings) and the [2024 edition](https://up.codes/viewer/new_hampshire/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings). Checked 2026-11-24.",
+   "- Floor area per person: International Building Code, Table 1004.5, read on a [secondary copy of the 2018 edition](https://up.codes/viewer/new_hampshire/ibc-2018/chapter/10/means-of-egress). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions in the model code: International Building Code, Sections 803.9 and 803.1.1 (NFPA 286), read on a [secondary copy of the 2018 edition](https://up.codes/viewer/new_hampshire/ibc-2018/chapter/8/interior-finishes). Checked 2026-11-24.",
+   "- Arizona's accessibility standard: Arizonans with Disabilities Act, [A.R.S. 41-1492.03](https://www.azleg.gov/ars/41/01492-03.htm) and [41-1492.06](https://www.azleg.gov/ars/41/01492-06.htm), and [Arizona Administrative Code R10-3-404](https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R10-3-404) (2010 ADA Standards for Accessible Design, read on Cornell LII). Checked 2026-11-24.",
+   "- School athletics restrooms from January 1, 2027: Proposition 318 (2026), [House Concurrent Resolution 2003](https://www.azleg.gov/legtext/57leg/2R/bills/HCR2003H.htm), amending A.R.S. 15-120.02; result on [Ballotpedia](https://ballotpedia.org/Arizona_2026_ballot_measures). Checked 2026-11-24.",
+   "- Wages on public jobs: [A.R.S. 34-321](https://www.azleg.gov/ars/34/00321.htm). Checked 2026-11-24.",
+   "- Sales tax: [A.R.S. 42-5010](https://www.azleg.gov/ars/42/05010.htm) and [42-5010.01](https://www.azleg.gov/ars/42/05010-01.htm) (state rate), [42-5061](https://www.azleg.gov/ars/42/05061.htm) (retail), [42-5075](https://www.azleg.gov/ars/42/05075.htm) (contracting) and [42-5155](https://www.azleg.gov/ars/42/05155.htm) (use tax); Arizona Department of Revenue, [Remote Sales Into Arizona](https://azdor.gov/transaction-privilege-tax/retail-sales-subject-tpt/out-state-sellers), [MRRA Contracting](https://azdor.gov/transaction-privilege-tax/contracting-guidelines/mrra-contracting) and [Contracting FAQ](https://azdor.gov/transaction-privilege-tax/contracting-guidelines/contracting-faqs); delivery charges, [Arizona Administrative Code R15-5-133](https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R15-5-133) (read on Cornell LII). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design (adopted by A.A.C. R10-3-404 under the Arizonans with Disabilities Act, A.R.S. 41-1492 et seq.); no statewide building or plumbing code: each city or county adopts its own edition of the International Building Code and the International Plumbing Code (or Uniform Plumbing Code) with local amendments."
+ },
+ "sources_read": [
+  {
+   "url": "https://www.iccsafe.org/advocacy/adoptions-map/arizona/",
+   "official": false,
+   "note": "ICC, the model code publisher"
+  },
+  {
+   "url": "https://up.codes/viewer/kansas/ipc-2018/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_hampshire/ipc-2018/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_hampshire/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/oklahoma/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/phoenix/ipc-2018/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/phoenix/ibc-2018/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_hampshire/ibc-2018/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_hampshire/ibc-2024/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/phoenix/ibc-2018/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_hampshire/ibc-2018/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_hampshire/ibc-2018/chapter/35/referenced-standards",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_hampshire/ibc-2024/chapter/35/referenced-standards",
+   "official": false
+  },
+  {
+   "url": "https://www.azleg.gov/ars/41/01492.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.azleg.gov/ars/41/01492-03.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.azleg.gov/ars/41/01492-06.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.azleg.gov/ars/41/01492-08.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R10-3-404",
+   "official": false
+  },
+  {
+   "url": "https://www.azag.gov/civil-rights/discrimination/public-accommodation",
+   "official": true
+  },
+  {
+   "url": "https://www.azleg.gov/legtext/57leg/2R/bills/HCR2003H.htm",
+   "official": true
+  },
+  {
+   "url": "https://ballotpedia.org/Arizona_2026_ballot_measures",
+   "official": false
+  },
+  {
+   "url": "https://ballotpedia.org/Arizona_Proposition_318,_Require_All_Schools_and_Athletic_Associations_to_Restrict_Sports_Participation_and_Access_to_Private_Spaces_Based_on_Sex_Measure_(2026)",
+   "official": false
+  },
+  {
+   "url": "https://www.azleg.gov/legtext/57leg/1R/summary/H.SB1003_051225_VETOED.DOCX.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.azleg.gov/legtext/57leg/2R/bills/SCR1006S.htm",
+   "official": true,
+   "note": "a separate 2026 school restroom resolution; not found among the measures decided on 2026-11-03"
+  },
+  {
+   "url": "https://www.azleg.gov/ars/34/00321.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.azleg.gov/ars/42/05010.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.azleg.gov/ars/42/05010-01.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.azleg.gov/ars/42/05061.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.azleg.gov/ars/42/05075.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.azleg.gov/ars/42/05155.htm",
+   "official": true
+  },
+  {
+   "url": "https://azdor.gov/transaction-privilege-tax/retail-sales-subject-tpt/out-state-sellers",
+   "official": true
+  },
+  {
+   "url": "https://azdor.gov/transaction-privilege-tax/contracting-guidelines",
+   "official": true
+  },
+  {
+   "url": "https://azdor.gov/transaction-privilege-tax/contracting-guidelines/mrra-contracting",
+   "official": true
+  },
+  {
+   "url": "https://azdor.gov/transaction-privilege-tax/contracting-guidelines/modification-contracting",
+   "official": true
+  },
+  {
+   "url": "https://azdor.gov/transaction-privilege-tax/contracting-guidelines/contracting-faqs",
+   "official": true
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R15-5-133",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R15-5-105",
+   "official": false
+  }
+ ],
+ "to_confirm": [
+  "Fixtures: Arizona has no statewide code, so the table and worked examples are the model IPC only (ICC's own site returned 403; read on UpCodes copies of Kansas, New Hampshire and Oklahoma adoptions, which agree with each other). Each city agent must read the city's adopted edition and amendments (Phoenix, Mesa and Tucson building departments). Phoenix's 2018 copy already differs: urinals 50% in all occupancies; separate rooms not required at 50 or fewer in business and mercantile. UpCodes also lists 2024 Phoenix codes.",
+  "HDPE fire test: depends on each city's adopted IBC edition and amendments; ask the city building department whether Section 803.9 is in force and applied to toilet partitions.",
+  "Proposition 318: the text quoted is the House-engrossed HCR 2003; the Secretary of State's site (azsos.gov) blocked automated access, so the final ballot text, the official canvass and the Governor's proclamation were not read on an official page. Confirm with the Arizona Secretary of State, and confirm how 'integral to athletic engagement' is being applied (Arizona Department of Education).",
+  "Single-user restroom signs and shared all-gender rooms: no state statute was found, but absence was not confirmed by an official statement; school facility rules (Arizona School Facilities Oversight Board) and health department rules were not searched.",
+  "Accessibility: no state plan-review step was found, but no official page says so outright; R10-3-404 was read on Cornell LII. Ask the Arizona Attorney General, Civil Rights Division.",
+  "Sales tax: whether replacing toilet partitions counts as 'replacement' (MRRA) or installing them in a new build-out counts as 'alteration' or 'modification' is ADOR's call (Tax Policy); R15-5-133 and R15-5-105 were read on Cornell LII, and the delivery rule's fit to drop shipments from the manufacturer was not read. The ADOR use tax page URL returned 'page not found'; the use tax rate was not read on an ADOR page. City and county TPT rates are for the city agents. How Next Partitions itself is taxed in Arizona is a question for Abe's accountant.",
+  "Public jobs: the Phoenix and Tucson prevailing wage ordinances and the court rulings against them were seen in search results only; city agents should confirm current status with each city's procurement office."
+ ]
+}

@@ -1,0 +1,286 @@
+{
+ "slug": "san-antonio",
+ "city": "San Antonio",
+ "state": "TX",
+ "checked": "2026-11-24",
+ "codes": {
+  "building": {
+   "name": "2024 International Building Code with San Antonio amendments (San Antonio City Code Chapter 10, Article III, Sections 10-29 and 10-30; Ordinance No. 2025-01-30-0075)",
+   "edition": "2024",
+   "local_amendments": true,
+   "effective": "2025-05-01",
+   "url": "https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf",
+   "quote": "Sec. 10-29. Adoption of International Building Code (2024). The 2024 edition of the International Building Code, promulgated by the International Code Council, Chapters 2 through 35, and Appendices H and P is hereby adopted and incorporated in this article by reference as if fully set forth, except as it is amended by the following provisions of Section 10-30. || Cover of the city's Chapter 10 print: \"EFFECTIVE DATE: MAY 1, 2025\". || City page (fetch tool): \"On January 30, 2025, the City Council adopted the 2024 International Code Council (ICC) codes\"."
+  },
+  "plumbing": {
+   "name": "2024 International Plumbing Code with San Antonio amendments (San Antonio City Code Chapter 10, Article IX, Sections 10-81 and 10-82; Ordinance No. 2025-01-30-0075)",
+   "edition": "2024",
+   "local_amendments": true,
+   "effective": "2025-05-01",
+   "url": "https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf",
+   "quote": "Sec. 10-81. Adoption of International Plumbing Code (2024). The 2024 edition of the International Plumbing Code, Chapters 2 through 15 and Appendices B through E, promulgated by the International Code Council, is adopted, and incorporated in this article by reference as if fully set forth, except as it is amended by the following provisions of section 10-82."
+  },
+  "scheduled_change": null,
+  "scheduled_change_note": "The city's Codes & Ordinances page names no next edition and no adoption schedule. It says the energy code \"was excluded from this cycle and is currently under 2021 codes\", which does not touch partitions.",
+  "authority": "City of San Antonio Development Services Department (the Director of Development Services is the Building Official, Sec. 10-1)",
+  "confidence": "high"
+ },
+ "fixtures": {
+  "city_amends": false,
+  "amendment": {
+   "text": "San Antonio leaves the toilet ratios of Table 403.1, the half-and-half split (403.1.1), the single-user rule (403.1.2), the small-occupancy exceptions (403.2 exceptions 2 to 5) and the urinal substitution rule (424.2) as the 2024 International Plumbing Code prints them. Its only changes in Section 403 are table note e (service sinks) and exception 6 of Section 403.2 on rooms shared by all sexes, which now asks for \"walls and a door enclosing the fixtures\" for water closets and urinals in place of the model code's reference to the partition privacy sections 405.3.4 and 405.3.5. The building code's parallel exception (2902.2 exception 6) is amended the same way and drops the urinal sentence. Because Texas has no statewide table, the page needs its own stall table, read from the 2024 code as San Antonio adopted it.",
+   "quote": "Table 403.1, MINIMUM NUMBER OF REQUIRED PLUMBING FIXTURES, note e is deleted in its entirety and replaced with the following text and shall apply to all Classifications in the Table: e. Service sinks are not required for an occupant load of 15 or fewer or as otherwise approved by the code official. || Section 403.2, Separate facilities, Exception 6 is amended as follows, all other code text remains as is: Exceptions: 6. Separate toilet facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by all persons regardless of sex and privacy is provided for water closets and urinals [in accordance with Section 405.3.4. and for urinals in accordance with Section 405.3.5] with walls and a door enclosing the fixtures.",
+   "url": "https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf",
+   "pages": "104 and 105 of 146 (plumbing), 63 of 146 (building, Section 2902.2)"
+  },
+  "table_ratios": {
+   "office": "Business: water closets 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50 (each sex)",
+   "restaurant": "Restaurants, banquet halls and food courts: 1 per 75 male, 1 per 75 female",
+   "school": "Educational facilities: 1 per 50 (each sex)",
+   "split": "403.1.1: \"To determine the occupant load of each sex, the total occupant load shall be divided in half. ... Fractional numbers resulting from applying the fixture ratios of Table 403.1 shall be rounded up to the next whole number.\"",
+   "urinals": "None required. 424.2: \"In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent of the required water closets for males according to Table 403.1 in assembly and educational occupancies. Urinals shall not be substituted for more than 50 percent of the required water closets for males according to Table 403.1 in all other occupancies.\"",
+   "small_occupancy": "403.2 exception 2: \"Separate toilet facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer.\" Exception 4: business occupancies of 25 or fewer. Exception 3: mercantile of 100 or fewer.",
+   "source": "Secondary copy: UpCodes, San Antonio Plumbing Code 2024 (the 2024 International Plumbing Code with the city's amendments merged in). The official ICC viewer loads its text by script and could not be read.",
+   "url": "https://up.codes/viewer/san-antonio/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+  },
+  "worked_examples": [
+   {
+    "occupants": 50,
+    "office": "1 women / 1 men",
+    "restaurant": "1 / 1",
+    "school": "1 / 1"
+   },
+   {
+    "occupants": 100,
+    "office": "2 / 2",
+    "restaurant": "1 / 1",
+    "school": "1 / 1"
+   },
+   {
+    "occupants": 200,
+    "office": "3 / 3",
+    "restaurant": "2 / 2",
+    "school": "2 / 2"
+   },
+   {
+    "occupants": 400,
+    "office": "5 / 5",
+    "restaurant": "3 / 3",
+    "school": "4 / 4"
+   }
+  ],
+  "worked_examples_note": "Half the occupants counted as each sex, fractions rounded up (403.1.1). Office at 200: 100 each sex, 2 for the first 50 plus 1 for the next 50. Office at 400: 200 each sex, 2 plus 3. Restaurant at 400: 200/75 = 2.67, so 3. Urinals may replace up to 50% of the men's toilets in offices and up to 67% in restaurants and schools (424.2). An office of 25 or fewer needs no separate rooms (403.2 exception 4); for other uses the limit is 15, so the 50 row keeps separate rooms.",
+  "confidence": "medium"
+ },
+ "permit": {
+  "exempt_list_quote": "Sec. 10-6 (e) Work exempt from permit. Exemptions from permit requirements of this chapter shall not be deemed to grant authorization for any work to be done in any manner in violation of the provisions of this chapter or any other laws or ordinances of the city or state. Permits shall not be required for the following: (1) Building: a. One-story detached accessory structures ... b. Minor repairs to fences ... c. Oil derricks. d. Retaining walls ... e. Water tanks ... f. Sidewalks and driveways ... g. Painting, papering, tiling, carpeting, cabinets, counter tops, and similar finish work. h. Temporary motion picture, television and theater stage sets and scenery. i. Prefabricated swimming pools ... j. Shade cloth structures ... k. Swings and other playground equipment ... l. Window awnings ... m. Nonfixed and movable fixtures, cases, racks, counters, and partitions not over five (5) feet nine (9) inches (1,753 mm) in height. n. Uncovered patios ... o. Uncovered decks ...",
+  "rule_quote": "Sec. 10-6 (a) Required. Any owner or authorized agent who intends to construct, enlarge, alter, repair, move, demolish, or change the occupancy of a building or structure, to include a sign or billboard, or to erect, install, enlarge, alter, repair, remove, convert or replace any electrical, gas, mechanical or plumbing system, the installation of which is regulated by this chapter, who performs site work or causes any such work to be done, shall first make application to the Building Official and obtain the required permit.",
+  "bulletin_quote": "Information Bulletin 189 (revised April 7, 2025): \"Finish work only: i.e. work that does not require a permit under the International Building Code (such as painting, wall paper, tiling, carpeting, cabinets, countertops and other similar work). This work does not require a permit by themselves but are generally included with permits with more extensive work.\" A commercial remodel permit covers \"New building systems such as new interior walls, ceilings, raised or lowered floors, new interior doors\".",
+  "bulletin_url": "https://docsonline.sanantonio.gov/FileUploads/dsd/IB189.pdf",
+  "city_page_quote": "Listed as not requiring a permit (fetch tool): \"Painting walls and adding floor tiling or carpeting\"; \"Install minor millwork and cabinetry\"; \"Replacing existing windows to same size and location\".",
+  "city_page_url": "https://www.sa.gov/Directory/Departments/DSD/Constructing/Business-Commercial/Permit-Process",
+  "url": "https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf",
+  "partitions_named": false,
+  "note": "The 15-item Building list names partitions only as nonfixed and movable ones up to 5 ft 9 in. Toilet partitions, which are anchored to the floor, wall or ceiling, are not named in the code, in Information Bulletin 189 or on the permit process page, and none of them says whether replacing them is \"similar finish work\" or a repair.",
+  "office": "City of San Antonio Development Services Department, Cliff Morton Development and Business Services Center, 1901 S. Alamo St.",
+  "phone": "210-207-1111",
+  "confidence": "high"
+ },
+ "restrooms_city": {
+  "rule": "No separate city ordinance on single-user restroom signs or all-gender rooms was found. The city's code amendments change one thing: a room shared by all sexes is allowed in place of separate men's and women's rooms where the water closets and urinals have \"walls and a door enclosing the fixtures\" (plumbing code 403.2 exception 6 as amended; the building code's 2902.2 exception 6 says the same for water closets and drops its urinal sentence). The model code's reference to the partition privacy sections is struck out. Single-user rooms follow the unamended 2024 code: identified as available to all persons regardless of sex. Two other city restroom rules were found on the way: a baby changing station in public restrooms of assembly and mercantile buildings, hospitals and city buildings when a restroom is built, enlarged by 50 square feet or more or given more fixtures (building code 1210.4 as added), and a domestic violence resource sign in every restroom of a public place (City Code Sec. 15-285, posting required by October 1, 2024).",
+  "quote": "Section 2902.2, Separate facilities, Exception 6 is amended as follows, all other code text remains as is: 6. Separate facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by both sexes and privacy for water closets [in accordance with Section 405.3.4 of the International Plumbing Code. Urinals shall be located in an area visually separated from the remainder of the facility or each urinal that is provided shall be located in a stall] with walls and a door enclosing the fixtures. || 403.1.2 (unamended, UpCodes copy): \"Single-user toilet facilities and bathing rooms, and family or assisted-use toilet facilities and bathing rooms shall be identified as being available for use by all persons regardless of their sex.\" || 1210.4 Baby changing stations. Each publicly available and accessible restroom serving Group A and Group M occupancy type areas, hospitals, and city owned buildings shall be equipped with a minimum of one (1) safe, sanitary, and convenient baby changing station under the following circumstances: 1. New building ... 2. Existing building ... and any of the following changes are made: a. A new restroom is built b. The square footage of an existing restroom is increased by fifty (50) square feet or more c. The number of fixtures of an existing restroom is increased",
+  "url": "https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf",
+  "dv_signs_url": "https://www.sa.gov/Directory/Departments/SAMHD/Healthy-Living/Violence-Prevention/Domestic-Violence/Domestic-Violence-Signs",
+  "dv_signs_quote": "City health department page (fetch tool): signs go in \"all female, male, unisex, and family restrooms used by the public or employees\"; posting was required by October 1, 2024.",
+  "confidence": "medium",
+  "note": "Section 15-285 itself (Municode) was not read; the health department page was read through the fetch tool. Whether standard toilet partitions count as \"walls and a door\" in a shared all-gender room is not stated."
+ },
+ "sales_tax": {
+  "combined": 0.0825,
+  "parts": [
+   {
+    "name": "state",
+    "rate": 0.0625
+   },
+   {
+    "name": "city",
+    "rate": 0.01125
+   },
+   {
+    "name": "San Antonio MTA (transit authority)",
+    "rate": 0.005
+   },
+   {
+    "name": "San Antonio ATD (Advanced Transportation District)",
+    "rate": 0.00375
+   }
+  ],
+  "effective": "2026-01-01",
+  "effective_note": "The city part fell from 1.25% to 1.125% and the Advanced Transportation District part rose from 0.25% to 0.375% on January 1, 2026 (the earlier figures are implied by the notice, not printed in it); the 8.25% total did not change.",
+  "scheduled_change": null,
+  "scheduled_change_note": "The Comptroller's notices for April, July and October 2026 show no change to the rates inside San Antonio in Bexar County. No notice for January 2027 was posted on the index.",
+  "url": "https://comptroller.texas.gov/taxes/sales/city.php",
+  "quote": "City rates page: San Antonio (Bexar Co) | 2015012 | .011250 | .082500 ; San Antonio ATD | 3015664 | .003750 ; San Antonio MTA | 3015995 | .005000. \"Total includes the state's sales and use tax rate of 6.25%.\" || Quarterly notice \"Effective Jan. 1, 2026\": \"The following city has abolished the additional city sales and use tax for the purpose listed below: San Antonio (Bexar Co) | 2015012 | .011250 | .082500 | SV\" and \"The following transit district has increased a local sales and use tax: San Antonio Advanced Transportation District | 3015664 | .003750. The boundaries of the San Antonio Advanced Transportation District (ATD) are the same as the city of San Antonio.\"",
+  "quarterly_url": "https://comptroller.texas.gov/taxes/sales/quarterly-updates/jan-2026.php",
+  "confidence": "high"
+ },
+ "public_wage": {
+  "county": "Bexar",
+  "basis": "Davis-Bacon",
+  "basic_hourly": 16.86,
+  "fringe": 4.17,
+  "determination": "TX20260231, modification 1 (Building)",
+  "date": "2026-05-18",
+  "url": "https://sam.gov/wage-determination/TX20260231/1",
+  "api_url": "https://sam.gov/api/prod/wdol/v1/wd/TX20260231/1",
+  "quote": "General Decision Number: TX20260231 05/18/2026 ... Construction Types: Building ... Counties: Texas Counties of Bexar ... SUTX2014-006 07/21/2014 ... CARPENTER, EXCLUDES ACOUSTICAL CEILING INSTALLATION, DRYWALL HANGING, FORM WORK, AND METAL STUD INSTALLATION...................................$ 16.86 4.17",
+  "city_rule": null,
+  "city_rule_note": "Not looked for. Under Texas Government Code chapter 2258 each public body sets its own rates; the City of San Antonio's, Bexar County's and the school districts' own wage schedules were not read.",
+  "confidence": "high"
+ },
+ "page": {
+  "meta": "Commercial bathroom partitions delivered to San Antonio job sites. Price your restroom, pick the right material and see the San Antonio and Texas rules.",
+  "lead": "Commercial bathroom partitions for San Antonio offices, schools, hotels and restaurants, shipped by freight to your job site.",
+  "fire_bullet": "- **Fire safety:** San Antonio's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.",
+  "stall_bullet": "- **How many stalls:** San Antonio sets the number of toilets by how many people use the building. The table below shows what that means.",
+  "permit_bullet": "- **Permits:** San Antonio requires a permit to alter or repair a building unless the work is exempt. Its exempt list covers \"similar finish work\" and movable partitions up to 5 feet 9 inches high, without naming toilet partitions, so ask San Antonio Development Services whether your replacement needs one. You don't need a permit to buy partitions.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to everyone. In a private building, San Antonio allows a shared all-gender room where every toilet and urinal is enclosed by walls and a door. The city's rules say walls, not partitions, so ask San Antonio Development Services what it accepts before you plan one. Since December 2025, Texas law requires shared restrooms in city, county, school district and public college buildings to be designated for one sex.",
+  "confirm_office": "San Antonio Development Services",
+  "stalls_intro": "San Antonio counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women. Every toilet needs a stall. Urinals are optional. They may stand in for up to half of the men's toilets in an office, and up to two thirds in a restaurant or school.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building. An office that holds 25 people or fewer, a store that holds 100 or fewer, or any other space that holds 15 or fewer, staff and customers together, doesn't need separate men's and women's rooms. At least one stall in each room must be wheelchair accessible.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or San Antonio Development Services sets the final number.",
+  "extra_rule_bullets": [],
+  "install_rule": "San Antonio has no license or registration requirement for commercial general contractors. It registers residential building, home improvement and trade contractors. Texas has no statewide contractor license for this work. Confirm what your project needs with San Antonio Development Services. You don't need a permit to buy partitions.",
+  "faq_install_extra": "San Antonio has no license or registration requirement for commercial general contractors.",
+  "public_jobs_bullet": "- **Public jobs:** on city, county and school district projects, Texas law requires at least the locally set wage. The federal rate for a carpenter on building work in Bexar County is $16.86 an hour plus $4.17 in benefits.",
+  "sales_tax_bullet": "- **Sales tax:** 8.25% in San Antonio: 6.25% state, 1.125% city, 0.5% transit authority and 0.375% advanced transportation district.",
+  "buyers_extra": "- **Hotels, convention venues and River Walk restaurants:** phenolic or stainless steel for guest restrooms that stay busy all day and are cleaned often.",
+  "sources": [
+   "- San Antonio building and plumbing codes: [City of San Antonio, Codes & Ordinances](https://www.sa.gov/Directory/Departments/DSD/Codes-Ordinances) and [San Antonio City Code Chapter 10, Building-Related Codes](https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf) (Ordinance No. 2025-01-30-0075), Sections 10-29 and 10-81, adopting the 2024 International Building Code and the 2024 International Plumbing Code with local amendments, effective May 1, 2025. Checked 2026-11-24.",
+   "- Toilet counts in San Antonio: [San Antonio City Code Chapter 10](https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf), Section 10-82, which amends only note e of Table 403.1 and exception 6 of Section 403.2; the table's ratios and Sections 403.1.1, 403.2 and 424.2 were read on a secondary copy of the code with the city's amendments ([UpCodes, San Antonio Plumbing Code 2024, Chapter 4](https://up.codes/viewer/san-antonio/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings)). Checked 2026-11-24.",
+   "- Single-user and shared restrooms in San Antonio: [San Antonio City Code Chapter 10](https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf), Section 10-30 (building code Section 2902.2, exception 6) and Section 10-82 (plumbing code Section 403.2, exception 6: \"walls and a door enclosing the fixtures\"); Section 403.1.2 on [UpCodes](https://up.codes/viewer/san-antonio/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings). Checked 2026-11-24.",
+   "- Baby changing stations and restroom signs: [San Antonio City Code Chapter 10](https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf), Section 10-30 (building code Sections 1210.4 to 1210.4.2), and [City of San Antonio Metropolitan Health District, Domestic Violence Signs](https://www.sa.gov/Directory/Departments/SAMHD/Healthy-Living/Violence-Prevention/Domestic-Violence/Domestic-Violence-Signs) (City Code Section 15-285). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions and floor area per person: 2024 International Building Code, Sections 803.9 and 803.1.1 and Table 1004.5, on [UpCodes, San Antonio Building Code 2024, Chapter 8](https://up.codes/viewer/san-antonio/ibc-2024/chapter/8/interior-finishes) and [Chapter 10](https://up.codes/viewer/san-antonio/ibc-2024/chapter/10/means-of-egress); San Antonio's amendment to Section 1004.5 in [City Code Chapter 10](https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf), Section 10-30. Checked 2026-11-24.",
+   "- San Antonio permits and exempt work: [San Antonio City Code Chapter 10](https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf), Section 10-6(a) and (e); [Development Services Information Bulletin 189](https://docsonline.sanantonio.gov/FileUploads/dsd/IB189.pdf), revised April 7, 2025; and [City of San Antonio, Business & Commercial Permit Process](https://www.sa.gov/Directory/Departments/DSD/Constructing/Business-Commercial/Permit-Process). Checked 2026-11-24.",
+   "- San Antonio contractor registration: [City of San Antonio, Building & Home Improvement contractors](https://www.sa.gov/Directory/Departments/DSD/Contractor/Building-Home-Improvement) (\"There are no license or registration requirements for commercial general contractors.\") and [City Code Chapter 10](https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf), Article XIII. Checked 2026-11-24.",
+   "- Bexar County carpenter rate: [federal wage determination TX20260231, modification 1, May 18, 2026](https://sam.gov/wage-determination/TX20260231/1). Checked 2026-11-24.",
+   "- San Antonio sales tax rate: Texas Comptroller, [city sales and use tax rates](https://comptroller.texas.gov/taxes/sales/city.php) (San Antonio 1.125%, San Antonio MTA 0.5%, San Antonio ATD 0.375%, total 8.25% with the state's 6.25%) and [local rate changes effective January 1, 2026](https://comptroller.texas.gov/taxes/sales/quarterly-updates/jan-2026.php). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; 2012 Texas Accessibility Standards (TDLR registration and review at $50,000 or more); 2024 International Building Code with San Antonio amendments (City Code Chapter 10, Article III; Ordinance No. 2025-01-30-0075), in force since May 1, 2025; 2024 International Plumbing Code with San Antonio amendments (City Code Chapter 10, Article IX), in force since May 1, 2025; work exempt from a permit: San Antonio City Code Section 10-6(e); NFPA 286 for HDPE.",
+  "notes": [
+   "To confirm by phone before launch: whether a like-for-like toilet partition replacement needs a San Antonio permit (Development Services, 210-207-1111); the code, Information Bulletin 189 and the permit process page don't name toilet partitions.",
+   "Ask San Antonio Development Services whether standard toilet partitions meet \"walls and a door enclosing the fixtures\" in a shared all-gender restroom; the city struck out the model code's reference to partition privacy.",
+   "The stall table's ratios, the single-user sign rule, the HDPE fire test section and the floor area per person were read on UpCodes' San Antonio 2024 copies, not on the official ICC viewer (it loads by script): check them in a browser.",
+   "The domestic violence sign rule was read on the city health department's page; City Code Section 15-285 itself (Municode) was not opened.",
+   "The Bexar County carpenter rate is the federal one; the City of San Antonio's, Bexar County's and the school districts' own wage schedules for public jobs were not read.",
+   "Sales tax: the city and Advanced Transportation District parts changed on January 1, 2026 (total unchanged at 8.25%); check the Comptroller's January 2027 notice when it is posted."
+  ]
+ },
+ "sources_read": [
+  {
+   "url": "https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf",
+   "official": true,
+   "note": "PDF text layer, all 146 pages searched; Sections 10-1, 10-6, 10-29, 10-30 (1004.5, 1210.4, 2902.2), 10-81, 10-82 (403), 10-116 read"
+  },
+  {
+   "url": "https://www.sa.gov/Directory/Departments/DSD/Codes-Ordinances",
+   "official": true,
+   "note": "through the fetch tool; curl is refused (HTTP 403)"
+  },
+  {
+   "url": "https://docsonline.sanantonio.gov/FileUploads/dsd/IB189.pdf",
+   "official": true
+  },
+  {
+   "url": "https://docsonline.sanantonio.gov/FileUploads/dsd/CommercialMinorRepairsApplication.pdf",
+   "official": true,
+   "note": "minor commercial repair permit application; does not name partitions"
+  },
+  {
+   "url": "https://www.sa.gov/Directory/Departments/DSD/Constructing/Business-Commercial/Permit-Process",
+   "official": true,
+   "note": "fetch tool; phone 210-207-1111"
+  },
+  {
+   "url": "https://www.sa.gov/Directory/Departments/DSD/Contractor/Building-Home-Improvement",
+   "official": true,
+   "note": "fetch tool"
+  },
+  {
+   "url": "https://www.sa.gov/Directory/Departments/SAMHD/Healthy-Living/Violence-Prevention/Domestic-Violence/Domestic-Violence-Signs",
+   "official": true,
+   "note": "fetch tool"
+  },
+  {
+   "url": "https://up.codes/viewer/san-antonio/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false,
+   "note": "2024 IPC Chapter 4 with San Antonio amendments merged"
+  },
+  {
+   "url": "https://up.codes/viewer/san-antonio/ibc-2024/chapter/29/plumbing-systems",
+   "official": false,
+   "note": "Section 2902.2 exception list checked"
+  },
+  {
+   "url": "https://up.codes/viewer/san-antonio/ibc-2024/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/san-antonio/ibc-2024/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://codes.iccsafe.org/content/IPC2024P1/chapter-4-fixtures-faucets-and-fixture-fittings",
+   "official": true,
+   "note": "NOT read: text loads by script"
+  },
+  {
+   "url": "https://comptroller.texas.gov/taxes/sales/city.php",
+   "official": true
+  },
+  {
+   "url": "https://comptroller.texas.gov/taxes/sales/quarterly-updates/jan-2026.php",
+   "official": true
+  },
+  {
+   "url": "https://comptroller.texas.gov/taxes/sales/quarterly-updates/",
+   "official": true,
+   "note": "index and the April, July and October 2026 notices searched for San Antonio"
+  },
+  {
+   "url": "https://sam.gov/api/prod/wdol/v1/wd/TX20260231/1",
+   "official": true
+  }
+ ],
+ "to_confirm": [
+  "San Antonio Development Services, 210-207-1111: does replacing toilet partitions in an existing commercial restroom need a permit (City Code 10-6(e)(1) items g and m don't name them; a Minor Commercial Repair permit exists for like-for-like repairs)?",
+  "San Antonio Development Services: do standard toilet partitions satisfy \"walls and a door enclosing the fixtures\" for a shared all-gender room (amended 403.2 and 2902.2, exception 6)?",
+  "Check Table 403.1, Sections 403.1.1, 403.1.2, 403.2 and 424.2 of the 2024 IPC, and Sections 803.9, 803.1.1 and Table 1004.5 of the 2024 IBC, on codes.iccsafe.org in a browser (read here on UpCodes).",
+  "City Code Section 15-285 (domestic violence signs in restrooms): read the ordinance text on Municode.",
+  "Whether San Antonio has scheduled the next code edition: nothing on the city page.",
+  "City of San Antonio, Bexar County and school district prevailing wage schedules for building work (Texas Government Code chapter 2258 lets each public body set its own).",
+  "The local-rules entry for San Antonio (research/local-rules/cities.json, medium, quote null) can be raised: the city's Building & Home Improvement page says outright \"There are no license or registration requirements for commercial general contractors.\""
+ ]
+}

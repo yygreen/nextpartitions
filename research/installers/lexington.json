@@ -1,0 +1,268 @@
+{
+ "area": "lexington",
+ "found_count": 7,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/lexington.json: read; the maps and web results were almost all remodelers, plumbers, glass or tile shops and stores. Web URLs were Google redirects with no domain. Checked Spraymasters (residential refinishing, no partitions) and Economy Glass (commercial glazing, no partitions). croakernorge.com failed DNS resolution (outside the session's allowed network domains or doesn't exist).",
+  "Existing research/installers/louisville.json and cincinnati.json: used for regional candidates within about 75 miles (Atlas, U.S. Specialties, MiD, CIH).",
+  "ASI find-a-rep: 404 after redirect (blocked/failed)",
+  "Bobrick rep locator: only found through search, no Kentucky rep named; not fetched",
+  "Scranton Products: the page reached was a Lexington DoubleTree case study that names no dealer or installer",
+  "Bradley, Hadrian, Metpar, General Partitions, Ampco locators: not tried (search cap)",
+  "The Blue Book: 403 on both the profile and search pages; Contractors Choice details came only from search snippets",
+  "BuildingConnected / Procore: not tried (search cap)",
+  "BBB partition category pages (Clay KY, Lexington KY): worked; results were mostly out of the area (TN, OH, IN, Bowling Green KY)",
+  "Commerce Lexington directory: page loads by JavaScript, no content",
+  "CDF Distributors Lexington: worked; doors, frames and hardware only, no partitions",
+  "WebSearch: 8 of 8 used: toilet partition installation Lexington; Division 10 contractor Lexington; restroom partitions installer KY; Bobrick rep KY; nearby cities (Frankfort/Richmond/Georgetown); Contractors Choice; toilet compartments subcontractor Lexington; KY installers Lexington/Louisville. Results were dominated by One Point Partitions pages; no local Lexington partition installer with its own website was found.",
+  "Yelp: not reached (search cap)"
+ ],
+ "candidates": [
+  {
+   "name": "CIH (Independence, KY branch; Schricker brand)",
+   "base_city": "Independence",
+   "state": "KY",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Accurate",
+    "Bobrick",
+    "General Partitions",
+    "Mills Bradley",
+    "Scranton Products",
+    "Showershapes",
+    "ASI (accessories)",
+    "Bradley (accessories)"
+   ],
+   "website": "https://cih-inc.com/",
+   "phone": "513-538-2705",
+   "contact_page": "https://cih-inc.com/contact-us/",
+   "partition_evidence": "Schricker page lists toilet partitions in several materials and says CIH will 'ship and install anywhere in the USA', with installation available for every product it sells.",
+   "evidence_urls": [
+    "https://cih-inc.com/",
+    "https://cih-inc.com/schricker/",
+    "https://cih-inc.com/toilet-partitions/",
+    "https://cih-inc.com/contact-us/"
+   ],
+   "red_flags": [
+    "Sells and supplies partitions itself (buy-around risk)",
+    "Independence KY is about 75 miles from Lexington; no Lexington-specific service area stated, only a nationwide ship-and-install claim",
+    "Main office is Indianapolis; KY branch phone is a 513 number"
+   ],
+   "reason": "Supplies and installs toilet partitions from several major brands, has a Kentucky branch, and says it installs anywhere in the USA. It is also a partition distributor, so the buy-around risk is high.",
+   "added_by_checker": false,
+   "license": {
+    "name": "CIH (Independence, KY branch; Schricker brand)",
+    "area": "lexington",
+    "status": "not_found",
+    "registry": "Lexington-Fayette Urban County Government (LFUCG) contractor registration, Accela Citizen Access 'Search for Licensee' (Division of Building Inspection)",
+    "source_url": "https://aca-prod.accela.com/LEXKY/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Checked 2026-11-19. Business-name searches for 'CIH', 'CIH INC', 'C.I.H', 'C I H' and 'Schricker' all returned 'Your search returned no results.' The search appears to match on how a name begins, so CIH may be registered under a legal name we don't know. Kentucky has no state license for general or partition installation work (state licenses cover electrical, plumbing and HVAC only). LFUCG requires all contractors to register with Building Inspection (occupational license plus insurance certificate), and unregistered contractors cannot get building permits (https://www.lexingtonky.gov/departments/building-inspection; https://www.lexingtonky.gov/working/bids-quotes-rfps/how-register-contractor). Ask CIH for its Lexington registration number before work in Fayette County."
+   },
+   "score": 63
+  },
+  {
+   "name": "The Atlas Companies (Atlas Co.)",
+   "base_city": "Louisville",
+   "state": "KY",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://www.atlas-co.com",
+   "phone": "502-714-9867",
+   "contact_page": "https://www.atlas-co.com/contact/",
+   "partition_evidence": "Division 10 page lists 'toilet compartments and accessories' and says Atlas is 'proud to supply and install most items specified here'.",
+   "evidence_urls": [
+    "https://www.atlas-co.com",
+    "https://www.atlas-co.com/division-10/",
+    "https://www.atlas-co.com/contact/"
+   ],
+   "red_flags": [
+    "Supplies the Division 10 items it installs (buy-around risk)",
+    "Service area not stated; project examples are in Kentucky and Indiana",
+    "Louisville is about 75 miles from Lexington",
+    "Email obfuscated on site"
+   ],
+   "reason": "Commercial Division 10 contractor that supplies and installs toilet compartments. Its Kentucky project work puts it within regional reach, but it hasn't confirmed Lexington service.",
+   "added_by_checker": false,
+   "license": {
+    "name": "The Atlas Companies (Atlas Co.)",
+    "area": "lexington",
+    "status": "not_found",
+    "registry": "LFUCG contractor registration, Accela Citizen Access 'Search for Licensee'",
+    "source_url": "https://aca-prod.accela.com/LEXKY/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Checked 2026-11-19. A search for 'Atlas' returned 4 records, none of them this company: Atlas Roofing and Siding LLC, Atlas Window Co Inc, Atlas Landscapes LLC and Atlas Comfort Air (Nicholasville). Searches for 'The Atlas' and 'Atlas Co' found no record for The Atlas Companies of Louisville ('Atlas Co' resolved to Atlas Comfort Air, an unrelated HVAC business). It may be registered under a different legal name. Ask for its Lexington registration number."
+   },
+   "score": 63
+  },
+  {
+   "name": "Contractors Choice, Inc.",
+   "base_city": "Lexington",
+   "state": "KY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "Only from search-result snippets of a Blue Book profile: lists toilet partitions and CSI 10 21 13 Toilet Compartments, 10 28 13 toilet accessories, hollow metal doors and finishing hardware. Lexington KY 40511, operating since 1990. The profile itself returned 403 and could not be read.",
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/1072823/contractors-choice-inc/subcontractors/"
+   ],
+   "red_flags": [
+    "No company website found",
+    "Blue Book page could not be opened directly; details come only from search snippets",
+    "Install vs supply-only not confirmed"
+   ],
+   "reason": "Lexington-based Division 10 subcontractor whose directory listing includes toilet compartments. Installation and contact details are unverified because the company has no website and the listing could not be opened.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Contractors Choice, Inc.",
+    "area": "lexington",
+    "status": "not_found",
+    "registry": "LFUCG contractor registration, Accela Citizen Access 'Search for Licensee'",
+    "source_url": "https://aca-prod.accela.com/LEXKY/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Checked 2026-11-19. Searches for 'Contractors Choice', 'Contractor's Choice', 'Contractors' Choice' and 'Contractors C' all returned no results. This is a Lexington-based business, so a missing registration is worth asking about. It may be registered under another legal or DBA name."
+   },
+   "score": 50
+  },
+  {
+   "name": "Schiller Hardware & Door Systems (Lexington office)",
+   "base_city": "Lexington",
+   "state": "KY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://goschiller.com/",
+   "phone": "859-233-4427",
+   "contact_page": "https://goschiller.com/contact/",
+   "partition_evidence": "Homepage 'Divisions 8 & 10' lists washroom accessories alongside doors, frames and hardware; toilet partitions are not named.",
+   "evidence_urls": [
+    "https://goschiller.com/",
+    "https://goschiller.com/contact/"
+   ],
+   "red_flags": [
+    "Mainly a door and hardware distributor; partitions not mentioned",
+    "No email listed"
+   ],
+   "reason": "Commercial Division 8/10 supplier with a Lexington office that lists washroom accessories, but there is no evidence of toilet partition installation.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Schiller Hardware & Door Systems (Lexington office)",
+    "area": "lexington",
+    "status": "found_inactive",
+    "license_number": "17703",
+    "license_type": "General Contractor (LFUCG contractor registration)",
+    "registry": "LFUCG contractor registration, Accela Citizen Access 'Search for Licensee'",
+    "source_url": "https://aca-prod.accela.com/LEXKY/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Checked 2026-11-19. Found one record: Schiller Hardware Inc, General Contractor, registration no. 17703, base city Lexington KY. The record was issued 03/06/2017 and expired 12/31/2017. Its related record, 'Contractor Registration ALFRED L SCHILLER HARDWARE', is marked Complete. The page shows the status field as 'Issued', but the expiration date is 12/31/2017, and no current-year registration was found under 'Schiller' or 'Schiller Hardware'. Treat it as lapsed unless the company shows a current registration. Lexington registration renews every calendar year."
+   },
+   "score": 50
+  },
+  {
+   "name": "U.S. Specialties",
+   "base_city": "Louisville",
+   "state": "KY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://www.usspecialties.com",
+   "phone": "(502) 587-9000",
+   "email": "info@usspecialties.com",
+   "contact_page": "https://usspecialties.com/us-specialties/",
+   "partition_evidence": "Lists 'Specialties' among products and 'Installation' among services; toilet partitions are not named.",
+   "evidence_urls": [
+    "https://www.usspecialties.com",
+    "https://usspecialties.com/us-specialties/"
+   ],
+   "red_flags": [
+    "Toilet partitions not explicitly mentioned",
+    "Louisville is about 75 miles from Lexington"
+   ],
+   "reason": "Commercial specialties supplier and installer that says it serves Kentucky, Ohio and Indiana. Its site does not show toilet partition work.",
+   "added_by_checker": false,
+   "license": {
+    "name": "U.S. Specialties",
+    "area": "lexington",
+    "status": "found_inactive",
+    "license_number": "11052",
+    "license_type": "Specialty Contractor (LFUCG contractor registration)",
+    "registry": "LFUCG contractor registration, Accela Citizen Access 'Search for Licensee'",
+    "source_url": "https://aca-prod.accela.com/LEXKY/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Checked 2026-11-19. A search for 'U S Specialties' found one record: U S Specialties, Specialty Contractor, registration no. 11052, base city Louisville KY, with company phone 502-587-9000. The record lists 'The Paul Bickel Co Inc' and a 'DIV 10 SPECIALITY PRODUCTS' description, and its expiration date is 12/31/2016. Searches for 'US Specialties', 'U.S. Specialties' and 'Bickel' returned no other records. The registration has lapsed, so the company would need to re-register before taking permitted work in Fayette County."
+   },
+   "score": 43
+  },
+  {
+   "name": "MiD Inc.",
+   "base_city": "Louisville",
+   "state": "KY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "mostly",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://www.midinc.net",
+   "phone": "(502) 210-3411",
+   "email": "contact@midinc.net",
+   "contact_page": "https://www.midinc.net/contact",
+   "partition_evidence": "Division 10 Bath Accessories page offers turnkey purchase and installation (grab bars, toilet paper holders and the like) for commercial and multifamily projects; toilet partitions are not mentioned.",
+   "evidence_urls": [
+    "https://www.midinc.net",
+    "https://www.midinc.net/products/division-10-bath-accessories"
+   ],
+   "red_flags": [
+    "No toilet partition evidence",
+    "Focus includes multifamily shower doors, closets and appliances"
+   ],
+   "reason": "Installs Division 10 bath accessories for commercial and multifamily projects in Kentucky, but nothing shows partition installation.",
+   "added_by_checker": false,
+   "license": {
+    "name": "MiD Inc.",
+    "area": "lexington",
+    "status": "not_found",
+    "registry": "LFUCG contractor registration, Accela Citizen Access 'Search for Licensee'",
+    "source_url": "https://aca-prod.accela.com/LEXKY/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Checked 2026-11-19. A search for 'MiD' returned 16 unrelated businesses beginning with 'Mid' (Midwest, MidSouth, Mid-America and others). Searches for 'MID INC', 'MID, INC', 'M I D' and 'MID INCORPORATED' returned no results. No record was found for MiD Inc. of Louisville, though it may be registered under another legal name."
+   },
+   "score": 38
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "Gallatin",
+   "state": "TN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "partition_evidence": "Site returned 403. Search snippets describe an online partition distributor with a Lexington delivery terminal that ships stalls in 4 to 6 days, with video tutorials for buyers who install themselves. No installation service was confirmed.",
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=2839"
+   ],
+   "red_flags": [
+    "Direct competitor: sells partitions (high buy-around risk)",
+    "Site blocked automated access (403)",
+    "No installation service seen; DIY tutorials suggest supply-only"
+   ],
+   "reason": "An online partition seller that competes with Next Partitions. There is no evidence that it installs.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 23
+  }
+ ]
+}

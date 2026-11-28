@@ -1,0 +1,406 @@
+{
+ "area": "lincoln",
+ "found_count": 13,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/lincoln.json: worked. Maps results were mostly bathroom remodelers, plumbers, stores and portable-toilet rentals; relevant ones were Omaha/Council Bluffs suppliers (Ruck, Total Marketing, EPCO) and Contour. Web seed URLs are Google /goto redirects that could not be opened (Interior Systems Inc, Paul Daniels & Associates, Redlin Contracting, Ceiling Crew, Duey Enterprises not verified; a search for Interior Systems 402-420-5585 found nothing).",
+  "Bobrick find-a-rep: page loaded but no rep shown (script dropdown).",
+  "Bradley find-a-rep: no rep data in page.",
+  "Scranton Products where-to-buy: worked, but only a regional product specialist covering NE and 8 other states; no local dealer/installer.",
+  "Hadrian find-a-rep: 404. General Partitions find-a-rep: 404.",
+  "ASI, Metpar, Ampco/Ammco locators: not tried (earlier areas found them script-based or 404).",
+  "The Blue Book (Omaha toilet partitions category and iProView pages): 403 blocked.",
+  "Procore Network /us/ne/lincoln/interior (pages 1-2): worked; found Hartley Companies, In-State Interiors, Midwest Door & Hardware, AG Drywall Solutions, Liberato's, Erwin Construction.",
+  "BuildingConnected: not tried.",
+  "BBB Nebraska partition category: worked but only office-furniture firms (All Makes, AOI); skipped.",
+  "Lincoln County clerk agenda PDFs (c-19-0548, c-18-0736): 403.",
+  "governmentbidders.com: worked (Total Marketing Inc). totalpartitions.com: 503.",
+  "Company sites read: contour-construct.com, ptc-co.com, ruckspecialties.com, lycosindustries.com, epcoltdinc.com, hartleycompanies.com, midwestdoor.net, instateinteriors.com, sghconcepts.com (no partitions; skipped), dhpace.com.",
+  "Southwest Solutions Group: toilet partition page and NE page read via curl; national dealer with nearest office in Lenexa KS (~190 mi) and no Nebraska base; skipped.",
+  "Newton Distributing/Newton BSI: Massachusetts-based, NE bids only; skipped. One Point Partitions dominated searches: online seller with no local base; skipped.",
+  "WebSearch: 8 of 8 used (toilet partition installation Lincoln Nebraska; Lincoln Division 10 specialties; quoted toilet partitions Lincoln contractor; Interior Systems phone; Nebraska furnish-and-install toilet compartments; Lincoln finish carpentry toilet partitions; Grand Island/Kearney/Hastings/Fremont partitions installer; Lincoln building specialties toilet partitions lockers). No Lincoln-based dedicated toilet partition installer found."
+ ],
+ "candidates": [
+  {
+   "name": "Contour Construction Inc.",
+   "base_city": "Omaha",
+   "state": "NE",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "brands": [],
+   "within_area": "regional",
+   "partition_evidence": "Site says it installs 'all types of washroom accessories including towel dispensers and receptacles, toilet partitions, grab bars, mirrors' for schools, offices and healthcare.",
+   "phone": "402-238-2362",
+   "email": "info@contour-construct.com",
+   "contact_page": "https://contour-construct.com/contact/",
+   "website": "https://contour-construct.com/",
+   "evidence_urls": [
+    "https://contour-construct.com/",
+    "https://contour-construct.com/contact/"
+   ],
+   "red_flags": [
+    "Stated service area is 'Omaha and surrounding areas'; Lincoln and 'the entire Nebraska region' appear only in the hiring section"
+   ],
+   "reason": "A commercial carpentry and specialties installer that explicitly installs toilet partitions and doesn't sell them. It is based in Omaha, about 55 miles away, and the site doesn't clearly say it works in Lincoln.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Contour Construction Inc.",
+    "area": "lincoln",
+    "status": "found_active",
+    "registry": "Nebraska Department of Labor Contractor Registration",
+    "license_type": "Nebraska contractor registration",
+    "license_number": "46320-26",
+    "source_url": "https://dol.nebraska.gov/conreg/Contractor/Details/4632026",
+    "note": "The registry lists the business as 'Contour Construction LLC' (an LLC, Omaha NE), but the website says 'Contour Construction Inc.'. The match rests on the same street location and phone: 402-238-2362 appears both in the registry and on contour-construct.com. Registration expires 9/1/2027. Workers' comp certificate on file, 28 employees. Confirm the legal entity name with the company."
+   },
+   "score": 83
+  },
+  {
+   "name": "Porter Trustin Carlson Company (PTC Co.)",
+   "base_city": "Omaha",
+   "state": "NE",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bradley",
+    "Bobrick",
+    "ASI/Accurate",
+    "Scranton Products"
+   ],
+   "within_area": "regional",
+   "partition_evidence": "Site lists 'Bathrooms Partitions + Accessories' and describes the company as 'a distributor and premium installer' that will source, spec and install.",
+   "phone": "(402) 453-2000",
+   "email": "Solutions@ptc-co.com",
+   "contact_page": "https://www.ptc-co.com/contact/",
+   "website": "https://ptc-co.com/",
+   "evidence_urls": [
+    "https://ptc-co.com/"
+   ],
+   "red_flags": [
+    "Distributor of the same brands Next Partitions resells (Bobrick, ASI, Scranton, Bradley): high buy-around risk"
+   ],
+   "reason": "A commercial Division 10 supplier and installer that says it serves Nebraska and Iowa and installs partitions. It is about 55 miles from Lincoln. It also distributes partitions, so it competes with us on supply.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Porter Trustin Carlson Company (PTC Co.)",
+    "area": "lincoln",
+    "status": "found_active",
+    "registry": "Nebraska Department of Labor Contractor Registration",
+    "license_type": "Nebraska contractor registration",
+    "license_number": "20992-26",
+    "source_url": "https://dol.nebraska.gov/conreg/Contractor/Details/2099226",
+    "note": "Registry record: PORTER TRUSTIN CARLSON COMPANY, corporation, Omaha NE. Registration expires 11/1/2027. Workers' comp certificate on file, 12 employees. The registry phone (402-453-2000) matches the phone on ptc-co.com."
+   },
+   "score": 78
+  },
+  {
+   "name": "DH Pace Company (Omaha branch)",
+   "base_city": "La Vista",
+   "state": "NE",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "regional",
+   "partition_evidence": "Division 10 product list includes Toilet Partitions, and the bathroom partitions page says 'We offer a complete line of bathroom partitions and replacement hardware'. The site offers installation services generally, but the Division 10 page mentions 'supply only packages'.",
+   "phone": "402-331-3667",
+   "contact_page": "https://www.dhpace.com/contact/",
+   "website": "https://www.dhpace.com/",
+   "evidence_urls": [
+    "https://www.dhpace.com/products/commercial-products/specialty-and-division-10-products/",
+    "https://www.dhpace.com/products/commercial-products/specialty-and-division-10-products/bathroom-partitions",
+    "https://www.dhpace.com/locations/"
+   ],
+   "red_flags": [
+    "Sells partitions itself (buy-around risk)",
+    "Division 10 page describes supply-only packages; partition installation not confirmed",
+    "No mention of Lincoln"
+   ],
+   "reason": "A national door and specialties company with an Omaha-area branch in La Vista (commercial line 402-331-3667). It sells partitions. Its installation of partitions and its coverage of Lincoln are both unproven.",
+   "added_by_checker": false,
+   "license": {
+    "name": "DH Pace Company (Omaha branch)",
+    "area": "lincoln",
+    "status": "found_active",
+    "registry": "Nebraska Department of Labor Contractor Registration",
+    "license_type": "Nebraska contractor registration",
+    "license_number": "25212-26",
+    "source_url": "https://dol.nebraska.gov/conreg/Contractor/Details/2521226",
+    "note": "The registration is in the corporation's name, 'D. H. Pace Company, Inc.' (DBA 'D.H. Pace Door Services'), at its Olathe, KS headquarters. Expires 2/15/2027, workers' comp on file. A second registration, 75525-26 (DBA 'Norm's Door Service', same corporation, expires 11/3/2027), is at https://dol.nebraska.gov/conreg/Contractor/Details/7552526. Neither search by the Omaha branch phone (402-331-3667, from https://www.dhpace.com/locations/) nor by ZIP 68138 found a separate La Vista record. The branch appears to work under the corporate registration. dhpace.com lists the branch as Omaha (La Vista)."
+   },
+   "score": 58
+  },
+  {
+   "name": "Lycos Finish (Lycos Industries)",
+   "base_city": "Omaha",
+   "state": "NE",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "brands": [],
+   "within_area": "regional",
+   "partition_evidence": "A finish carpentry and solid surface contractor whose scope includes 'accessories, and other specialty items for the commercial construction industry'. Partitions are not named. It is the sister company of Ruck Specialties, which supplies toilet partitions.",
+   "phone": "(402) 201-2283",
+   "email": "info@lycosfinish.com",
+   "contact_page": "https://www.lycosfinish.com/contact-us/",
+   "website": "https://lycosfinish.com",
+   "evidence_urls": [
+    "https://lycosindustries.com",
+    "https://lycosfinish.com"
+   ],
+   "red_flags": [
+    "Partition installation not stated",
+    "Contact links on the site are partly broken (a phone link points to support@example.com)"
+   ],
+   "reason": "A commercial specialty installer serving Nebraska and Iowa, paired with a Division 10 supplier. It may be the install arm for Ruck's partitions, but its site doesn't say so.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Lycos Finish (Lycos Industries)",
+    "area": "lincoln",
+    "status": "found_active",
+    "registry": "Nebraska Department of Labor Contractor Registration",
+    "license_type": "Nebraska contractor registration",
+    "license_number": "87580-26",
+    "source_url": "https://dol.nebraska.gov/conreg/Contractor/Details/8758026",
+    "note": "Registry record: 'Lycos Finish, LLC', Omaha NE. Expires 5/4/2027. Workers' comp on file but does not cover owners or officers. Two related registrations share the same phone (402-201-2283, which is also on lycosfinish.com): parent 'LYCOS, INC' 33881-26, expires 1/15/2027 (https://dol.nebraska.gov/conreg/Contractor/Details/3388126), and 'Lycos Manufacturing, LLC' 84017-26, expires 7/12/2027 (https://dol.nebraska.gov/conreg/Contractor/Details/8401726). The website names the parent Lycos, Inc., not 'Lycos Industries'."
+   },
+   "score": 43
+  },
+  {
+   "name": "Ruck Specialties",
+   "base_city": "Omaha",
+   "state": "NE",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "no",
+   "partition_evidence": "A Division 10 supplier listing Toilet Partitions and Restroom Accessories. It says 'We perform backing layouts for the install team'. Named projects are all in Omaha (Children's Hospital Omaha, Norris Middle School).",
+   "phone": "(833) 444-1733",
+   "email": "info@ruckspecialties.com",
+   "contact_page": "http://www.ruckspecialties.com/",
+   "website": "http://www.ruckspecialties.com/",
+   "evidence_urls": [
+    "https://www.ruckspecialties.com/",
+    "https://lycosindustries.com"
+   ],
+   "red_flags": [
+    "Supplies partitions (buy-around risk)",
+    "No service area stated; only Omaha projects shown",
+    "Who installs isn't clear"
+   ],
+   "reason": "An Omaha Division 10 supplier that has an install team or works with one, likely its sister company Lycos. The site states no service area that covers Lincoln.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Ruck Specialties",
+    "area": "lincoln",
+    "status": "not_found",
+    "registry": "Nebraska Department of Labor Contractor Registration",
+    "source_url": "https://dol.nebraska.gov/conreg/Search",
+    "note": "No record found. Searched corporation and DBA names 'Ruck Specialties' and 'Ruck Spec', and phone 833-444-1733 (from ruckspecialties.com). Searching 'Ruck' alone returned only unrelated 'Trucking' businesses. The website describes Ruck Specialties LLC (Omaha) as a Division 10 product supplier offering estimating, warehousing and delivery, so it may not do installation itself. If it does install in Nebraska, it would need a registration."
+   },
+   "score": 40
+  },
+  {
+   "name": "Midwest Door & Hardware",
+   "base_city": "Lincoln",
+   "state": "NE",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "partition_evidence": "Product lines are hollow metal doors and frames, wood doors, hardware and fire-rated assemblies. Partitions are not mentioned.",
+   "phone": "(402) 464-6348",
+   "email": "info@midwestdoor.net",
+   "contact_page": "https://www.midwestdoor.net/contact",
+   "website": "https://www.midwestdoor.net",
+   "evidence_urls": [
+    "https://www.midwestdoor.net"
+   ],
+   "red_flags": [],
+   "reason": "A Lincoln commercial door and hardware supplier with no toilet partition installation shown.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "In-State Interiors, LLC",
+   "base_city": "Omaha",
+   "state": "NE",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "brands": [],
+   "within_area": "regional",
+   "partition_evidence": "Scopes are metal framing, drywall, acoustical ceilings, doors and hardware, insulation, millwork and specialties. Toilet partitions are not mentioned.",
+   "phone": "402-707-0575",
+   "contact_page": "https://www.instateinteriors.com/request-a-bid.html",
+   "website": "https://www.instateinteriors.com",
+   "evidence_urls": [
+    "https://www.instateinteriors.com",
+    "https://www.instateinteriors.com/request-a-bid.html"
+   ],
+   "red_flags": [
+    "Only email shown is a named individual's address, so it's omitted",
+    "Candidate list said Council Bluffs; site says Omaha"
+   ],
+   "reason": "An interiors subcontractor that does serve Lincoln, but its site shows no toilet partition or washroom accessory work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 28
+  },
+  {
+   "name": "EPCO Ltd., Inc.",
+   "base_city": "Council Bluffs",
+   "state": "IA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "no",
+   "partition_evidence": "Says it 'distribute[s]' Division 10 specialties including Restroom Partitions & Accessories. No installation stated.",
+   "phone": "712.322.0308",
+   "website": "https://epcoltdinc.com/",
+   "evidence_urls": [
+    "https://epcoltdinc.com/"
+   ],
+   "red_flags": [
+    "Distributor only (buy-around risk)",
+    "No service area stated"
+   ],
+   "reason": "A Council Bluffs distributor of partitions that shows no installation and claims no service area covering Lincoln.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Hartley Companies",
+   "base_city": "Omaha (per candidate list; not confirmed on site)",
+   "state": "NE",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "partition_evidence": "Homepage says it provides 'Division 10 products for commercial construction' as a supplier to GCs. Partitions and installation are not mentioned.",
+   "phone": "402-873-8189",
+   "contact_page": "https://www.hartleycompanies.com/contact-us",
+   "website": "https://www.hartleycompanies.com",
+   "evidence_urls": [
+    "https://www.hartleycompanies.com",
+    "https://www.hartleycompanies.com/contact-us"
+   ],
+   "red_flags": [
+    "Supplier, no installation stated",
+    "Base city and service area not stated"
+   ],
+   "reason": "Describes itself as a Division 10 supplier, with no partition installation or service area shown.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "AG Drywall Solutions LLC",
+   "base_city": "Crete",
+   "state": "NE",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "unknown",
+   "sells_partitions": "no",
+   "brands": [],
+   "within_area": "yes",
+   "partition_evidence": "Found only in a BBB listing (via search snippet) as a drywall contractor. No website and no partition work found.",
+   "evidence_urls": [
+    "https://bbb.org/us/ne/crete/category/drywall-contractors"
+   ],
+   "red_flags": [
+    "No website",
+    "Drywall only"
+   ],
+   "reason": "A drywall contractor with no evidence of partition installation.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 15
+  },
+  {
+   "name": "Total Marketing Inc",
+   "base_city": "Omaha",
+   "state": "NE",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "partition_evidence": "totalpartitions.com returned HTTP 503. A search snippet from a government-bidders directory (page not opened) says it markets section 10 material and specializes in toilet partitions and accessories, which reads as a supplier.",
+   "website": "http://totalpartitions.com/",
+   "evidence_urls": [
+    "http://totalpartitions.com/",
+    "https://governmentbidders.com/government-bidders/contractor-5706541-TOTAL-MARKETING-INC.htm"
+   ],
+   "red_flags": [
+    "Website down (503)",
+    "Appears to be a supplier, not an installer"
+   ],
+   "reason": "Its own site couldn't be read, and the only evidence points to a supplier, with no installation or Lincoln coverage shown.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  },
+  {
+   "name": "Erwin Construction",
+   "base_city": "Kennard",
+   "state": "NE",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "partition_evidence": "No listing or website found in search.",
+   "evidence_urls": [],
+   "red_flags": [
+    "Could not confirm the business exists"
+   ],
+   "reason": "No trace of the business was found, and Kennard is about 65 miles from Lincoln.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  },
+  {
+   "name": "Liberato's Construction",
+   "base_city": "Grand Island",
+   "state": "NE",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "partition_evidence": "The Facebook page could not be read beyond its title (Grand Island NE). Search found no partition work.",
+   "website": "https://www.facebook.com/people/Liberatos-Construction/100075844494073/",
+   "evidence_urls": [
+    "https://www.facebook.com/people/Liberatos-Construction/100075844494073/"
+   ],
+   "red_flags": [
+    "Facebook page only",
+    "No evidence of partition work"
+   ],
+   "reason": "No services or partition work could be verified, and it is about 90 miles away.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

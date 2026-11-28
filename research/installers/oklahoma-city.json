@@ -1,0 +1,284 @@
+{
+ "area": "oklahoma-city",
+ "found_count": 11,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/oklahoma-city.json: worked. The maps results gave 4 plausible leads (Jim Austin Sales, LDS Building Specialties, Trinity Commercial Sales, All Commercial Openings). The rest were remodelers, glass shops, plumbers and toilet rentals. The web results were all remodelers or unusable redirect links.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but no Oklahoma rep shown without using the dropdown.",
+  "Scranton Products where-to-buy: worked. The Oklahoma region rep is Architectural Cornerstone Group (972.439.3954, a Dallas-area number). It is a manufacturer's rep, not an installer, so it isn't listed as a candidate. The /find-a-rep/ URL returned 404.",
+  "Bradley find-a-rep: page content didn't load (JavaScript-rendered).",
+  "Hadrian where-to-buy: 404.",
+  "ASI / Metpar / General Partitions / Ampco locators: not tried (fetch budget focused on local sites).",
+  "The Blue Book (thebluebook.com iProView and search): blocked, HTTP 403.",
+  "Downtobid Oklahoma City doors page: blocked, HTTP 429. A search snippet listed LDS Building Specialties and Commercial Door there.",
+  "BuildingConnected / Procore public profiles: not reached (no results surfaced in search).",
+  "WebSearch: all 8 allowed calls used. Results were dominated by One Point Partitions (online seller with an OKC delivery terminal; its pages say it does not install) and Prestige Distribution (Northbrook IL, offices in Chicago and Dallas, national installer network; Oklahoma not mentioned; excluded as no local base). Out-of-state Division 10 firms that surfaced (Allegheny Construction Specialties of Nashville TN, UDH/Unified, Martin Bros) were excluded.",
+  "Newton Distributing 'toilet partitions near me' page: says it has a list of installers in Tulsa and Lawton, but no names appear on the page.",
+  "Southwest Solutions Group OKC page: content truncated; it does storage, lockers and wire partitions, not toilet partitions; excluded.",
+  "Burgess Building Company (seed, maps: division 10 specialties contractor): site lists fire and life safety, space management and daylighting, with no toilet partitions; excluded.",
+  "Yelp / BBB: no Yelp or BBB pages for OKC partition installers surfaced in search.",
+  "Seed file oklahoma-city.json: worked. The maps results gave 4 relevant leads; the web results were all remodelers or irrelevant.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): fetched, but results load from a dropdown, so no Oklahoma reps were readable.",
+  "Scranton Products find-a-rep: 404.",
+  "Hadrian find-a-rep: 404.",
+  "ASI/Global Partitions, Bradley, Metpar, General Partitions, Ampco locators: not reached because of time and the search cap.",
+  "The Blue Book (thebluebook.com search and iProView pages): blocked with 403.",
+  "BuildingConnected / Procore public profiles: not tried.",
+  "WebSearch (8 of 8 used): 'toilet partition installation Oklahoma City' was dominated by One Point Partitions, an online seller with no local base, which I skipped. The Division 10 and 'building specialties' searches found the Superpages listing for Central Building Specialties. The manufacturer-rep, furnish-and-install and Edmond/Norman searches gave nothing new.",
+  "Superpages: worked (Construction/Central Building Specialties).",
+  "Company sites fetched: toiletpartitionsokc.com, ldsbuilding.com, tornadodoors.com, burgess-co.com, pdhgroup.com: all worked. Southwest Solutions Group came back truncated; it's a lockers and storage company and I excluded it.",
+  "Excluded: PDH Group (Irving TX, outside 30 mi), Allegheny Construction Specialties (Nashville TN), One Point Partitions (online, no local base), and the remodelers, glass shops, plumbers and handymen from the maps seed."
+ ],
+ "candidates": [
+  {
+   "name": "Jim Austin Sales",
+   "added_by_checker": false,
+   "base_city": "Oklahoma City",
+   "state": "OK",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://toiletpartitionsokc.com/",
+   "phone": "(405) 239-2640",
+   "contact_page": "https://toiletpartitionsokc.com/contact-us/",
+   "evidence_urls": [
+    "https://toiletpartitionsokc.com/",
+    "https://toiletpartitionsokc.com/partitions-and-accessories/",
+    "https://toiletpartitionsokc.com/contact-us/"
+   ],
+   "partition_evidence": "Partitions page says it helps with 'selection, service, and installation' of commercial restroom partitions; homepage covers partitions in plastic to stainless steel for businesses and facilities and names Norman, Moore, Edmond, Midwest City and Yukon in its service area.",
+   "reason": "Commercial restroom partition specialist in Oklahoma City that says it installs and has served the metro for more than 20 years. It also sells partitions itself, so it is a buy-around risk.",
+   "red_flags": [
+    "Sells and supplies partitions itself (buy-around risk)",
+    "No project photos (only inventory images)",
+    "Homepage also shows a second number, (405) 495-0849",
+    "No brands named"
+   ],
+   "license": {
+    "name": "Jim Austin Sales",
+    "area": "oklahoma-city",
+    "status": "not_online",
+    "registry": "City of Oklahoma City contractor registration (Development Services, Accela Citizen Access 'Search Licenses'); Oklahoma Construction Industries Board does not license general or partition work",
+    "license_type": "City contractor registration (if required)",
+    "source_url": "https://aca-prod.accela.com/OKC/Cap/CapHome.aspx?module=Licenses&TabName=Licenses",
+    "note": "Not looked up. The OKC Accela license search is an interactive ASP.NET search form, and this research does not submit forms. The city's Contractor Registration page (https://www.okc.gov/Infrastructure-Development/Business-Licensing/Contractor-Registration, read 2026-11-19) lists registration for boiler, building (residential only), electrical, fence, house moving, insulation, mechanical, plumbing, sidewalk and sign contractors and has no public list. Commercial toilet partition installation may therefore need no city registration; confirm with OKC Development Services by phone. The company site (https://toiletpartitionsokc.com/) gives the base city as Oklahoma City and company phone (405) 239-2640. It shows no license number and doesn't say outright that they install."
+   },
+   "score": 70
+  },
+  {
+   "name": "Central Building Specialties (Construction Building Specialties Inc / CBS Door and Hardware, part of PDH Group)",
+   "added_by_checker": false,
+   "base_city": "Oklahoma City",
+   "state": "OK",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Global",
+    "Mills",
+    "Santana",
+    "Milcor",
+    "Hager",
+    "Cornell Ironworks",
+    "GreenSteel"
+   ],
+   "website": "https://www.pdhgroup.com/company/cbs/",
+   "phone": "405-528-7030",
+   "contact_page": "https://www.pdhgroup.com/contact/",
+   "evidence_urls": [
+    "https://cars.superpages.com/oklahoma-city-ok/bpp/construction-building-specialties-inc-1462074",
+    "https://www.pdhgroup.com/company/cbs/",
+    "https://www.pdhgroup.com/"
+   ],
+   "partition_evidence": "Superpages listing says it offers toilet partitions and installs rolling fire doors, folding doors and walls, and names the partition brands Global, Mills and Santana as suppliers. The PDH Group CBS page lists an Oklahoma City office with 'product solutions and installation' and a Specialties category, but never names toilet partitions.",
+   "reason": "Long-running Oklahoma City door and specialties supplier (since 1969), now part of PDH Group of Irving, TX, with an Oklahoma City office. It supplies partitions, but installing them is not confirmed.",
+   "red_flags": [
+    "Sells partitions (buy-around risk)",
+    "Owned by a larger Division 8/10 group in Irving, TX",
+    "Partition installation not confirmed on its own site",
+    "cbsdoors.com redirects to pdhgroup.com"
+   ],
+   "license": {
+    "name": "Central Building Specialties (Construction Building Specialties Inc / CBS Door and Hardware, part of PDH Group)",
+    "area": "oklahoma-city",
+    "status": "not_online",
+    "registry": "City of Oklahoma City contractor registration (Development Services, Accela Citizen Access 'Search Licenses'); Oklahoma Construction Industries Board does not license general or partition work",
+    "license_type": "City contractor registration (if required)",
+    "source_url": "https://aca-prod.accela.com/OKC/Cap/CapHome.aspx?module=Licenses&TabName=Licenses",
+    "note": "Not looked up, because the OKC Accela license search needs an interactive form submission. The city's registration page lists building contractor registration for residential work only, so commercial partition installation may not require it; confirm with OKC Development Services. The PDH Group page (https://www.pdhgroup.com/company/cbs/) names the company 'CBS Door and Hardware, a PDHGroup company', with locations in Tonganoxie KS, Manhattan KS and Oklahoma City OK. It lists 'Operable Partitions' and 'Specialties' but doesn't mention toilet partitions or installation, and shows no license number."
+   },
+   "score": 50
+  },
+  {
+   "name": "Construction Building Specialties Inc (CBS Door and Hardware, now part of PDH Group)",
+   "base_city": "Oklahoma City",
+   "state": "OK",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Scranton Products (Resistall)"
+   ],
+   "website": "https://www.pdhgroup.com/",
+   "phone": "(405) 528-7030",
+   "email": "estimating@pdhgroup.com",
+   "contact_page": "https://www.pdhgroup.com/contact/",
+   "evidence_urls": [
+    "https://cars.superpages.com/oklahoma-city-ok/bpp/construction-building-specialties-inc-1462074",
+    "https://www.pdhgroup.com/?p=226",
+    "https://www.pdhgroup.com/",
+    "https://cleanlink.com/news/article.aspx?id=22271"
+   ],
+   "partition_evidence": "Superpages lists toilet partitions among products and says it furnishes and installs doors and folding walls; a Clean Link article has its project manager recommending Scranton Resistall partitions for a Norman restaurant; PDH Group offers Division 10 'Specialties' with installation.",
+   "reason": "A long-running Oklahoma City door, hardware and Division 10 firm, now under PDH Group, which installs Division 08/10 products. None of these sources shows it installing toilet partitions.",
+   "red_flags": [
+    "Supplies partitions (buy-around risk)",
+    "Website redirects to Texas-based parent PDH Group; email and contact page are the parent's (Irving, TX)",
+    "Phone (405) 528-7030 comes from a Superpages listing, not the company site"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Construction Building Specialties Inc (CBS Door and Hardware, now part of PDH Group)",
+    "area": "oklahoma-city",
+    "status": "not_online",
+    "registry": "City of Oklahoma City Online Business Licensing (Accela Citizen Access, Licenses > Search Licenses)",
+    "source_url": "https://aca-prod.accela.com/OKC/Cap/CapHome.aspx?module=Licenses&TabName=Licenses",
+    "note": "Oklahoma has no state general contractor license. The city's Accela license search is an interactive postback form that can't be queried automatically, so no record was read. Search it under both the CBS name and the PDH Group name. The city's registration page lists Building Contractor as 'Residential Only' (https://www.okc.gov/Infrastructure-Development/Business-Licensing/Contractor-Registration), so commercial partition work may not require city registration. Confirm by phone, (405) 297-2606. Checked 2026-11-19."
+   },
+   "score": 50
+  },
+  {
+   "name": "LDS Building Specialties, LLC",
+   "added_by_checker": false,
+   "base_city": "Oklahoma City",
+   "state": "OK",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://www.ldsbuilding.com/",
+   "phone": "(405) 917-9901",
+   "email": "ldsoffice@ldsbuilding.com",
+   "contact_page": "http://www.ldsbuilding.com/contact-us.html",
+   "evidence_urls": [
+    "http://www.ldsbuilding.com/",
+    "http://www.ldsbuilding.com/contact-us.html",
+    "https://startpage.mapquest.com/us/oklahoma/lds-building-specialties-8829334"
+   ],
+   "partition_evidence": "Website says it specializes in the sales and service of Division 8 and 10 products, including toilet partitions and accessories, and has a Division 10 project manager. Installation is not stated.",
+   "reason": "An Oklahoma City Division 10 supplier that has specialized in toilet partitions since 2004. It is a seller first, and the site never says it installs.",
+   "red_flags": [
+    "Sells partitions (buy-around risk)",
+    "Installation not stated",
+    "A MapQuest search snippet showed the listing as closed; operating status not confirmed"
+   ],
+   "license": {
+    "name": "LDS Building Specialties, LLC",
+    "area": "oklahoma-city",
+    "status": "not_online",
+    "registry": "City of Oklahoma City contractor registration (Development Services, Accela Citizen Access 'Search Licenses'); Oklahoma Construction Industries Board does not license general or partition work",
+    "license_type": "City contractor registration (if required)",
+    "source_url": "https://aca-prod.accela.com/OKC/Cap/CapHome.aspx?module=Licenses&TabName=Licenses",
+    "note": "Not looked up, because the OKC Accela license search needs an interactive form submission. The city's registration categories (https://www.okc.gov/Infrastructure-Development/Business-Licensing/Contractor-Registration) cover building contractors for residential work only, so commercial partition work may not require city registration; confirm with OKC Development Services. The company site (http://www.ldsbuilding.com/) gives the base city as Oklahoma City and says it specializes in toilet partitions and accessories, offering sales and service of Division 8 and 10 products. It shows no license number and doesn't say outright that it installs."
+   },
+   "score": 45
+  },
+  {
+   "name": "Burgess Building Company, LLC",
+   "added_by_checker": false,
+   "base_city": "Oklahoma City",
+   "state": "OK",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [
+    "Moderco",
+    "Kalwall",
+    "Tate",
+    "Smoke Guard",
+    "McKeon"
+   ],
+   "website": "http://www.burgess-co.com/",
+   "phone": "405.252.2192",
+   "contact_page": "http://www.burgess-co.com/",
+   "evidence_urls": [
+    "http://www.burgess-co.com/"
+   ],
+   "partition_evidence": "Its site covers operable walls, fire doors, chutes, access floors and daylighting, with no mention of toilet partitions.",
+   "reason": "A commercial specialty subcontractor with no toilet partition work shown; its 'partitions' are operable walls.",
+   "red_flags": [
+    "No toilet partition work",
+    "Header shows placeholder phone and email"
+   ],
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Trinity Commercial Sales",
+   "added_by_checker": false,
+   "base_city": "Oklahoma City",
+   "state": "OK",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Mesker",
+    "Design Hardware",
+    "USA Steel"
+   ],
+   "website": "https://tornadodoors.com/",
+   "phone": "(405) 619-9080",
+   "contact_page": "https://tornadodoors.com/",
+   "evidence_urls": [
+    "https://tornadodoors.com/"
+   ],
+   "partition_evidence": "Lists 'Toilet Partitions' under hardware and specialty items it sells; no installation mentioned.",
+   "reason": "A Division 8 and 10 supplier and storm-shelter door company. It sells toilet partitions but shows no installation, so it is a supplier and a competitor rather than an installer.",
+   "red_flags": [
+    "Supplier only, sells partitions (buy-around risk)",
+    "No installation evidence"
+   ],
+   "license": {
+    "name": "Trinity Commercial Sales",
+    "area": "oklahoma-city",
+    "status": "not_online",
+    "registry": "City of Oklahoma City Online Business Licensing (Accela Citizen Access, Licenses > Search Licenses)",
+    "source_url": "https://aca-prod.accela.com/OKC/Cap/CapHome.aspx?module=Licenses&TabName=Licenses",
+    "note": "Oklahoma has no state general contractor license. The city's Accela license search is an interactive postback form that can't be queried automatically, so no record was read. The city's registration page lists Building Contractor as 'Residential Only' (https://www.okc.gov/Infrastructure-Development/Business-Licensing/Contractor-Registration), so commercial partition work may not require city registration. Confirm by phone, (405) 297-2606. Checked 2026-11-19."
+   },
+   "score": 25
+  },
+  {
+   "name": "All Commercial Openings",
+   "added_by_checker": false,
+   "base_city": "Oklahoma City",
+   "state": "OK",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "No website or listing found in two searches.",
+   "reason": "I couldn't find a website, listing or any public evidence that this business exists or does partition work.",
+   "red_flags": [
+    "Not found online"
+   ],
+   "license": null,
+   "score": 10
+  }
+ ]
+}

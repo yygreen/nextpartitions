@@ -1,0 +1,181 @@
+{
+ "area": "buffalo",
+ "found_count": 6,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/buffalo.json: worked; most Maps hits are residential bath remodelers/plumbers (skipped); J&R Specialties, McClain Associates, Gypsum Systems kept",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads but results are JS/dropdown-driven, no reps readable",
+  "Scranton Products find-a-rep: 404",
+  "Hadrian find-a-rep: 503",
+  "ASI, Bradley, Metpar, General Partitions, Ampco locators: not reached (no working locator URLs found within limits)",
+  "The Blue Book (thebluebook.com region page and iProView profiles): 403 blocked",
+  "Thomasnet Upstate NY toilet partitions listing: 403 blocked",
+  "BuildingConnected / Procore public profiles: not tried (search cap)",
+  "WebSearch: 8 of 8 used; found J&R Specialties, Grosso Door & Hardware, McClain Associates, 10-SPEC, Fancher Sales (Yellow Pages)",
+  "grossodoor.com: 503/connection timeout, could not read",
+  "mcclainassociatesinc.com: site returns PHP parse error on every page, could not read",
+  "web.archive.org: blocked by bot verification",
+  "Yellow Pages Buffalo 'toilet partition installers': worked, one listing (Superior Steel Door & Trim, Jamestown)",
+  "Yelp / BBB: no listings surfaced in search",
+  "Excluded: 10-SPEC (Marlboro NJ, ~350 mi; https://10-spec.com/bathroom-partitions-buffalo-ny/ says it installs across Buffalo/Niagara Falls/Tonawanda, (732) 992-4899, sales@10-spec... ) - outside 120-mile radius, could be added as a regional exception",
+  "Excluded as online sellers/national with no local base: One Point Partitions (403), The Partition Pros, AMP Partitions, toiletpartitions.com, Mavi New York (NYC), Division 10 Inc (NYC), CSI installers"
+ ],
+ "candidates": [
+  {
+   "name": "J&R Specialties Inc",
+   "base_city": "Akron",
+   "state": "NY",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "General Partitions",
+    "ASI Global Partitions",
+    "Scranton Products",
+    "Bobrick",
+    "Metpar",
+    "Bradley"
+   ],
+   "website": "https://www.jandrspecialties.com/",
+   "phone": "(716) 442-5040",
+   "email": "info@jrbuffalo.com",
+   "contact_page": "https://www.jandrspecialties.com/contact",
+   "evidence_urls": [
+    "https://www.jandrspecialties.com/",
+    "https://www.jandrspecialties.com/section-10-specialties"
+   ],
+   "partition_evidence": "Section 10 Specialties page: supplies and installs toilet partitions; projects Seneca One (downtown Buffalo), Northtown Jaguar Land Rover (Bobrick partitions), 500 Pearl.",
+   "reason": "Commercial Section 10 subcontractor about 20 miles east of Buffalo that supplies and installs toilet partitions, with named Buffalo projects; serves Western NY, NYS, PA, CT and OH.",
+   "red_flags": [
+    "Supplies partitions itself (dealer for ASI, Bobrick, Scranton, Bradley, Metpar): high buy-around risk"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "J&R Specialties Inc",
+    "area": "buffalo",
+    "status": "not_found",
+    "registry": "City of Buffalo Licensed Contractors (General, Home Improvement, Handyman, Light Commercial), Open Data Buffalo dataset xu7s-vsr5",
+    "note": "There is no current City of Buffalo contractor licence under 'J&R', 'J & R', 'J and R' or 'Specialties' matching this company. The dataset lists active licences only, refreshed 2026-11-19. The company's site (jandrspecialties.com) gives its legal name as J&R Specialties Inc., based in Akron, NY. It lists toilet partitions with installation among its Division 10 specialties and says it serves Buffalo. Before it works inside Buffalo city limits, confirm with the Buffalo Office of Licenses whether a licence is needed or held under another name.",
+    "source_url": "https://data.buffalony.gov/resource/xu7s-vsr5.json"
+   },
+   "score": 70
+  },
+  {
+   "name": "Gypsum Systems, LLC",
+   "base_city": "Elma",
+   "state": "NY",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "website": "http://www.gypsumsys.com/",
+   "phone": "(716) 652-5700",
+   "contact_page": "http://www.gypsumsys.com/contact-us",
+   "evidence_urls": [
+    "http://www.gypsumsys.com/",
+    "http://www.gypsumsys.com/contact-us"
+   ],
+   "partition_evidence": "None; services are drywall, framing, ceilings, doors/frames, exteriors, plus an unexplained 'Specialty Items' bullet.",
+   "reason": "Commercial drywall and exteriors contractor; no toilet partition or Division 10 work shown on its site.",
+   "red_flags": [],
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "McClain Associates Inc.",
+   "base_city": "Rochester",
+   "state": "NY",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "website": "http://mcclainassociatesinc.com/",
+   "evidence_urls": [
+    "http://mcclainassociatesinc.com/"
+   ],
+   "partition_evidence": "Website shows only a PHP parse error. A search snippet describes specialty products such as folding walls and operable partitions, not toilet partitions.",
+   "reason": "About 70 miles away, no stated Buffalo service area and no toilet partition evidence; site broken.",
+   "red_flags": [
+    "Website broken (PHP error)",
+    "Operable walls, not toilet partitions"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Superior Steel Door & Trim Company, Inc.",
+   "base_city": "Jamestown",
+   "state": "NY",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [
+    "ADANLOCK"
+   ],
+   "website": "https://ssdtinc.com/",
+   "phone": "(716) 665-3256",
+   "contact_page": "https://ssdtinc.com/request-a-quote/",
+   "evidence_urls": [
+    "https://ssdtinc.com/"
+   ],
+   "partition_evidence": "Lists 'Partition Systems' linking to ADANLOCK; not stated to be toilet partitions.",
+   "reason": "Custom architectural metal fabricator about 60 miles away; partition systems are not shown to be restroom partitions and no Buffalo service area is stated.",
+   "red_flags": [
+    "Manufacturer/fabricator rather than installer"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Fancher Sales Co Inc",
+   "base_city": "Buffalo",
+   "state": "NY",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "evidence_urls": [],
+   "partition_evidence": "None found; no website or listing located.",
+   "reason": "No web presence found for this name. Possibly connected to Jeff Fancher, VP of Sales at J&R Specialties (jandrspecialties.com/section-10-specialties), but that is unconfirmed; if so it duplicates J&R.",
+   "red_flags": [
+    "No website or listing found",
+    "Possible duplicate or affiliate of J&R Specialties (unconfirmed)"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Grosso Door & Hardware, Inc.",
+   "base_city": "unknown",
+   "state": "NY",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "website": "http://www.grossodoor.com/",
+   "evidence_urls": [
+    "http://www.grossodoor.com/"
+   ],
+   "partition_evidence": "Website returned HTTP 503 on both http and https; nothing could be verified.",
+   "reason": "Site unreachable and no other evidence found of location or partition work.",
+   "red_flags": [
+    "Website down (503)",
+    "Base city unconfirmed"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

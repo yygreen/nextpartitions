@@ -1,0 +1,503 @@
+{
+ "area": "san-diego",
+ "found_count": 16,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/san-diego.json: worked (maps results; web empty); most were remodelers or stores; Anchor, J&M, Fry, Stumbaugh, QNS and 10-SPEC kept",
+  "Company websites: anchorspecialties.com, jandm-interior.com, fryspecialty.com, stumbaugh.com, qnsdistributors.net, swcs-inc.com, grahovacconstruction.com, raymondgroup.com: worked; 10-spec.com returned empty; marconeng.com 503; fusebuilds.com placeholder",
+  "ArmorShield Partitions (El Cajon): read; it's a manufacturer (J&M's partition line), so skipped as a manufacturer's own plant",
+  "Bobrick find-a-rep: page loaded but the rep dropdown data wasn't readable (no results)",
+  "Scranton Products find-a-rep: 404",
+  "ASI Global Partitions find-a-rep: redirect then 404",
+  "Hadrian, Bradley, Metpar, General Partitions, Ampco locators: not tried (ran out of time and search budget)",
+  "The Blue Book (thebluebook.com search and iProView): blocked 403",
+  "BuildZoom (Triton Install Corp): blocked 403; Triton not included because partition scope unverified",
+  "BuildingConnected / Procore public profiles: not tried",
+  "AGC San Diego Division 10 '10600 Partitions' directory (web.agcsd.org): worked, 10 firms listed",
+  "sandiegolineup.com listing for 10-SPEC: worked",
+  "Magnum Drywall: installs toilet partitions but based in San Jose with no San Diego office listed; excluded as outside the area",
+  "Unified Door & Hardware Group: Division 10 incl. partitions but no San Diego location shown; excluded",
+  "Harrigan's Toilet Partitions (Rialto/Rancho Cucamonga): outside 30 miles; excluded",
+  "Yelp / BBB: no pages surfaced in search",
+  "WebSearch: 8 of 8 used (cap reached)"
+ ],
+ "candidates": [
+  {
+   "name": "Anchor Construction Specialties, Inc.",
+   "base_city": "San Diego",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://anchorspecialties.com/",
+   "phone": "(858) 452-0562",
+   "email": "info@anchorspecialties.com",
+   "contact_page": "https://anchorspecialties.com/#contact",
+   "partition_evidence": "Homepage lists Toilet Partitions and Washroom Accessories among its specialties as a commercial Division 10 subcontractor offering turn-key general trades on commercial projects.",
+   "red_flags": [
+    "Runs an online material-only shop (restroomwarehouse.com) selling partitions: buy-around risk",
+    "No project photos, license number or reviews shown on the homepage"
+   ],
+   "evidence_urls": [
+    "https://anchorspecialties.com/"
+   ],
+   "reason": "San Diego commercial Division 10 subcontractor that lists toilet partitions as a core specialty. It also sells partitions online, which is a buy-around risk to manage.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Anchor Construction Specialties, Inc.",
+    "area": "san-diego",
+    "status": "not_online",
+    "registry": "California Contractors State License Board (CSLB) Check a License",
+    "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+    "note": "CSLB lookup only works by submitting its search form; direct GET to a detail URL returns the blank search page, so no automated check. The company site (https://anchorspecialties.com/) shows no CSLB license number; head office in San Diego. No license number found on any page read. Confirm by CSLB business-name search, and City of San Diego business tax certificate."
+   },
+   "score": 70
+  },
+  {
+   "name": "J and M Interior Specialties",
+   "base_city": "El Cajon",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "ArmorShield Partitions",
+    "own-brand plastic laminate"
+   ],
+   "website": "https://jandm-interior.com/",
+   "phone": "(619) 401-3220",
+   "contact_page": "https://jandm-interior.com/contact-jandm/",
+   "partition_evidence": "Restroom partitions page: 'We also supply and install Solid Plastic and Stainless Steel partition', 35 years installing and designing restroom partitions; serves San Diego County.",
+   "red_flags": [
+    "Manufactures its own laminate partitions and distributes ArmorShield: strong buy-around risk",
+    "Email hidden on site"
+   ],
+   "evidence_urls": [
+    "https://jandm-interior.com/",
+    "https://jandm-interior.com/restroom-partitions-san-diego/",
+    "https://jandm-interior.com/contact-jandm/"
+   ],
+   "reason": "El Cajon multi-trade subcontractor that explicitly supplies and installs restroom partitions for government, commercial, education and medical clients. It makes and sells its own partitions, so it competes on supply. Site shows CA license 572769.",
+   "added_by_checker": false,
+   "license": {
+    "name": "J and M Interior Specialties",
+    "area": "san-diego",
+    "status": "not_online",
+    "registry": "California Contractors State License Board (CSLB) Check a License",
+    "license_number": "572769",
+    "source_url": "https://jandm-interior.com/",
+    "note": "Company site footer shows \"California Lic.# 572769\"; base city El Cajon. CSLB detail page (https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=572769) returned only the search form, so status, classification and expiry are not confirmed from the official record. Check number 572769 on CSLB manually."
+   },
+   "score": 70
+  },
+  {
+   "name": "Stumbaugh & Associates Inc",
+   "base_city": "San Diego",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://stumbaugh.com/",
+   "phone": "(858) 444-1683",
+   "email": "Estimating@stumbaugh.com",
+   "contact_page": "https://stumbaugh.com/contact",
+   "partition_evidence": "Homepage describes partitions and accessories in California and 'professional installation services tailored to your specific needs'; gallery includes a Hyatt Regency job.",
+   "red_flags": [
+    "HQ is Burbank; San Diego is a branch office",
+    "Also sells material-only and walk-in orders: buy-around risk"
+   ],
+   "evidence_urls": [
+    "http://stumbaugh.com/",
+    "https://stumbaugh.com/contact"
+   ],
+   "reason": "California partitions and accessories specialist with a San Diego office that installs partitions for commercial settings. It also sells material only.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Stumbaugh & Associates Inc",
+    "area": "san-diego",
+    "status": "not_online",
+    "registry": "California Contractors State License Board (CSLB) Check a License",
+    "source_url": "http://stumbaugh.com/",
+    "note": "Company homepage shows no CSLB license number. It lists an LA corporate office in Burbank plus offices in San Diego and West Sacramento, so the San Diego location is a branch. CSLB lookup needs form submission; not checked."
+   },
+   "score": 70
+  },
+  {
+   "name": "Fry Specialty Inc.",
+   "base_city": "San Diego",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick"
+   ],
+   "website": "https://fryspecialty.com/",
+   "phone": "(619) 333-6879",
+   "email": "info@fryspecialty.com",
+   "contact_page": "https://fryspecialty.com/contact",
+   "partition_evidence": "Homepage: 'Industry Leader in Furnish and Installation of Toilet Partitions and Restroom Accessories'; title 'Division 10 Contractor in San Diego & Arizona'; featured Class A office project.",
+   "red_flags": [
+    "Only mailing address on contact page is a P.O. Box in Yuma, AZ; San Diego/Encinitas base not confirmed beyond page title and 619 phone",
+    "Links to online stores (washroominc.com, toiletpartitions.com) selling partitions: buy-around risk"
+   ],
+   "evidence_urls": [
+    "https://fryspecialty.com/",
+    "https://fryspecialty.com/contact"
+   ],
+   "reason": "Furnishes and installs toilet partitions as a Division 10 contractor serving San Diego and Arizona. Confirm the local base, since the only address shown is in Yuma.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Fry Specialty Inc.",
+    "area": "san-diego",
+    "status": "not_online",
+    "registry": "California Contractors State License Board (CSLB) Check a License",
+    "source_url": "https://fryspecialty.com/",
+    "note": "Company homepage shows no CSLB license number and no base city (title mentions San Diego & Arizona). CSLB lookup needs form submission; not checked. Confirm by CSLB business-name search."
+   },
+   "score": 65
+  },
+  {
+   "name": "Daryl Griffis Acoustics, Inc.",
+   "base_city": "San Diego",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(619) 275-3060",
+   "partition_evidence": "Listed under AGC San Diego 10600 Partitions; MapQuest listing describes Division 9 and 10 commercial subcontractor since 1975.",
+   "red_flags": [
+    "No website found; evidence is directory self-categorization only"
+   ],
+   "evidence_urls": [
+    "https://web.agcsd.org/atb/DIVISION-10-SPECIALTIES/10600-Partitions",
+    "https://phoenix-0af34b1.aws.mapquest.com/us/california/daryl-griffis-acoustics-11269878"
+   ],
+   "reason": "Long-running San Diego Division 9/10 commercial subcontractor listed under partitions in the AGC directory, but no partition work was seen directly.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Daryl Griffis Acoustics, Inc.",
+    "area": "san-diego",
+    "status": "not_online",
+    "registry": "California Contractors State License Board (CSLB) Check a License",
+    "source_url": "https://www.prelien.co/contractor/griffis-daryl-acoustics-inc-402601",
+    "note": "No company website given. Search results show third-party aggregator pages (prelien.co, sacvalleycontractors.com/contractor/402601) whose URLs point to CSLB license 402601 for 'Griffis Daryl Acoustics Inc'. I could not open them (429 error), and they are not official, so the number, status and classification are unverified. CSLB lookup needs form submission; confirm 402601 on CSLB manually."
+   },
+   "score": 50
+  },
+  {
+   "name": "SWCS, Inc. dba Southwest Construction Services",
+   "base_city": "Lakeside",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://www.swcs-inc.com",
+   "phone": "(619) 258-9944",
+   "email": "info@swcs-inc.com",
+   "contact_page": "http://www.swcs-inc.com/contact",
+   "partition_evidence": "Homepage lists Division 10 Specialties as an in-house capability; contact page lists Restroom Renovations; AGC 10600 Partitions listing.",
+   "red_flags": [
+    "Appears to be a general contractor; partitions not named specifically"
+   ],
+   "evidence_urls": [
+    "http://www.swcs-inc.com",
+    "https://www.swcs-inc.com/contact",
+    "https://web.agcsd.org/atb/DIVISION-10-SPECIALTIES/10600-Partitions"
+   ],
+   "reason": "Commercial builder that self-performs Division 10 specialties and restroom renovations, but no toilet partition installation is shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "SWCS, Inc. dba Southwest Construction Services",
+    "area": "san-diego",
+    "status": "not_online",
+    "registry": "California Contractors State License Board (CSLB) Check a License",
+    "license_number": "967347",
+    "source_url": "http://www.swcs-inc.com",
+    "note": "Company site footer shows \"CA License No. 967347\"; base city Lakeside. CSLB detail page (https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=967347) returned only the search form, so status and classification are not confirmed from the official record. Check 967347 on CSLB manually."
+   },
+   "score": 50
+  },
+  {
+   "name": "Johnson, Finch & McClure Construction, Inc.",
+   "base_city": "Lakeside",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(619) 938-9727",
+   "partition_evidence": "AGC 10600 Partitions listing; Blue Book lists acoustical, hollow metal doors/frames and drywall.",
+   "red_flags": [
+    "No website; main trades are acoustical/drywall/doors, not partitions"
+   ],
+   "evidence_urls": [
+    "https://web.agcsd.org/atb/DIVISION-10-SPECIALTIES/10600-Partitions",
+    "https://www.thebluebook.com/iProView/933802/johnson-finch-mcclure-construction-inc/subcontractors/"
+   ],
+   "reason": "Commercial interiors subcontractor serving San Diego and Imperial counties that lists itself under partitions; no partition installation was seen.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Johnson, Finch & McClure Construction, Inc.",
+    "area": "san-diego",
+    "status": "not_online",
+    "registry": "California Contractors State License Board (CSLB) Check a License",
+    "note": "No website given. A search summary mentioned a Lakeside 'B General Building' CSLB record from a third-party aggregator, but I did not read that page, so no license number is recorded here. CSLB lookup needs form submission; confirm by CSLB business-name search."
+   },
+   "score": 30
+  },
+  {
+   "name": "Caldwell Specialties",
+   "base_city": "Lakeside",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(858) 842-3888",
+   "partition_evidence": "Only seen in AGC San Diego 10600 Partitions / Division 10 listing.",
+   "red_flags": [
+    "No website or other listing found"
+   ],
+   "evidence_urls": [
+    "https://web.agcsd.org/atb/DIVISION-10-SPECIALTIES/10600-Partitions"
+   ],
+   "reason": "Name and AGC partitions category suggest a Division 10 specialty firm, but nothing else about it could be verified.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Caldwell Specialties",
+    "area": "san-diego",
+    "status": "not_online",
+    "registry": "California Contractors State License Board (CSLB) Check a License",
+    "note": "No website given and the web search returned nothing for this name. No license number found. CSLB lookup needs form submission; confirm by CSLB business-name search (Lakeside)."
+   },
+   "score": 10
+  },
+  {
+   "name": "10-SPEC Atlantic Building Specialties",
+   "base_city": "Marlboro",
+   "state": "NJ",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "website": "http://www.10-spec.com/",
+   "phone": "732-992-4899",
+   "email": "sales@10-spec.com",
+   "rating": 5,
+   "review_count": 1,
+   "review_source": "Google (via sandiegolineup.com)",
+   "partition_evidence": "Website: Division 10 commercial bathroom partition contractor, supply and installation.",
+   "red_flags": [
+    "Website says it serves NJ, NY, PA, CT and is based in Marlboro, NJ",
+    "San Diego (Point Loma) directory listing uses an NJ 732 phone; local presence unverified"
+   ],
+   "evidence_urls": [
+    "http://www.10-spec.com/",
+    "https://sandiegolineup.com/point-loma/general-contractor/10-spec-atlantic-building-specialties"
+   ],
+   "reason": "Real partition installer, but its own site places it in New Jersey serving the Northeast. The San Diego listing looks spurious.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Raymond Group (San Diego & Arizona office)",
+   "base_city": "San Diego",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.raymondgroup.com/",
+   "phone": "(858) 292-4499",
+   "contact_page": "https://www.raymondgroup.com/office-locations/",
+   "partition_evidence": "Self-performs framing, drywall, lath, plaster, exterior finish; no Division 10 or partitions.",
+   "red_flags": [],
+   "evidence_urls": [
+    "https://www.raymondgroup.com/",
+    "https://www.raymondgroup.com/office-locations/"
+   ],
+   "reason": "Large commercial framing/drywall/plaster contractor; no partition work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Grahovac Construction Company, Inc.",
+   "base_city": "La Mesa",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://www.grahovacconstruction.com",
+   "phone": "(619) 466-6693",
+   "contact_page": "http://www.grahovacconstruction.com/#contact",
+   "partition_evidence": "Commercial GC (renovations, tenant improvements); partitions not mentioned.",
+   "red_flags": [
+    "Website email uses an unusual third-party domain (agentmail.to); not reported"
+   ],
+   "evidence_urls": [
+    "http://www.grahovacconstruction.com",
+    "https://web.agcsd.org/atb/DIVISION-10-SPECIALTIES/10600-Partitions"
+   ],
+   "reason": "Commercial general contractor; only a directory category links it to partitions.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Comprehensive Glass Works",
+   "base_city": "Santee",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://www.cgwsd.com",
+   "phone": "(619) 589-8858",
+   "partition_evidence": "Site title: 'Custom Glazers & Commercial Window Contractor'.",
+   "red_flags": [],
+   "evidence_urls": [
+    "http://www.cgwsd.com",
+    "https://web.agcsd.org/atb/DIVISION-10-SPECIALTIES/10600-Partitions"
+   ],
+   "reason": "Commercial glazing/window contractor, not a toilet partition installer.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "DLG Contractors, Inc.",
+   "base_city": "Santee",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(619) 456-2992",
+   "partition_evidence": "Only an AGC 10600 Partitions self-listing; directories describe a commercial and institutional builder.",
+   "red_flags": [
+    "No website; general builder"
+   ],
+   "evidence_urls": [
+    "https://web.agcsd.org/atb/DIVISION-10-SPECIALTIES/10600-Partitions",
+    "https://naicslist.com/company-profile/dlg-contractors-inc-santee-ca-92071"
+   ],
+   "reason": "Small commercial general builder with no evidence of partition installation beyond a directory category.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "QNS Distributors",
+   "base_city": "San Diego",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Scranton Products",
+    "Knickerbocker Partition",
+    "A & J Washroom Accessories"
+   ],
+   "website": "https://qnsdistributors.net/",
+   "phone": "619-501-9602",
+   "email": "info@qnsdistributors.com",
+   "contact_page": "https://qnsdistributors.net/",
+   "partition_evidence": "Supplies Scranton and Knickerbocker partitions; no installation mentioned.",
+   "red_flags": [
+    "Distributor of partitions: competitor/buy-around risk",
+    "No installation services shown"
+   ],
+   "evidence_urls": [
+    "https://qnsdistributors.net/"
+   ],
+   "reason": "A commercial supply distributor that sells partitions but shows no installation work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "MarCon Engineering, Inc.",
+   "base_city": "Escondido",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://www.marconeng.com",
+   "phone": "760-877-4146",
+   "partition_evidence": "None; website returned 503.",
+   "red_flags": [
+    "Website unavailable"
+   ],
+   "evidence_urls": [
+    "https://web.agcsd.org/atb/DIVISION-10-SPECIALTIES/10600-Partitions"
+   ],
+   "reason": "No evidence of partition work; site down and only an AGC directory category.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "FUSE Builds LLC dba Liberty BUILDS",
+   "base_city": "San Diego",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://www.fusebuilds.com",
+   "phone": "(619) 297-4156",
+   "partition_evidence": "None; website is an under-construction placeholder.",
+   "red_flags": [
+    "Placeholder website"
+   ],
+   "evidence_urls": [
+    "http://www.fusebuilds.com",
+    "https://web.agcsd.org/atb/DIVISION-10-SPECIALTIES/10600-Partitions"
+   ],
+   "reason": "No verifiable business information or partition work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "state": "WA",
+ "state_name": "Washington",
+ "checked": "2026-11-24",
+ "from_page": "service-area_seattle.md",
+ "evidence_files": [
+  "research/state-codes/fixtures/seattle.json",
+  "research/city-data/seattle.json",
+  "research/state-codes/cities-first-5.json"
+ ],
+ "notes_for_city_agent": "This pack was written from the finished Seattle page, so its page text names Seattle and may include rules that are the city's own, not the state's. Read the evidence files to tell which is which, then check your own city: Seattle amends the state building code and has its own all-gender restroom ordinance (Seattle Office for Civil Rights) and its own $6,000 permit rule; none of those apply in your city. Read the state rule (WAC 51-50-2902 and 51-50-1101) and your city's own amendments, and rewrite restroom_bullet and stalls text for your city. In King County the health department enforces plumbing; check who does in your county. State-level and reusable: access_bullet, state_extra_bullet (check each point is in the WAC, not only in the Seattle code), public_jobs, tax bullets.",
+ "page": {
+  "stalls_intro": "Seattle counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women. Every toilet needs a stall. Washington sets its own count for schools, with more toilets for girls than for boys. Urinals are optional and may stand in for most of the men's toilets.",
+  "stalls_head": "head: Office | Restaurant | School",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "2/2"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "4/3"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "8/6"
+   }
+  },
+  "stalls_after": "Small businesses may be allowed one shared restroom: up to 25 people in an office and up to 30 in a restaurant. At least one stall in each room must be wheelchair accessible. Confirm your project with SDCI.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor and a restaurant dining room at one per 15 square feet. A school is counted at one student per 100 square feet of the whole building. Your architect or SDCI sets the final number.",
+  "fire_bullet": "- **Fire safety:** Seattle's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Washington's own access rules set the sizes.",
+  "state_extra_bullet": "- **Washington extras:** stalls here need a second, upright grab bar on the side wall, and a wheelchair stall needs more toe room under its partitions (12 inches high, against 9 under the federal rules). In a large restroom, 5% of the stalls must be wheelchair accessible, not just one. Large stores and venues also need a family restroom.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** one-person restrooms in public places must be open to anyone and signed that way. A shared all-gender room is allowed if every toilet and urinal is in its own compartment with full-height walls and a door that locks from the inside.",
+  "public_jobs": "Washington requires the state-set wage on every public job, with no minimum project size.",
+  "tax_install_bullet": "- **Tax on installation:** in Washington, installation labor is taxed like the partitions themselves, at the job site's rate.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable, freight included. If the seller doesn't collect the tax, the buyer owes it to the state.",
+  "tax_confirm": "your accountant or the Washington Department of Revenue",
+  "sources": [
+   "- ICC A117.1-2017 in Washington: [WAC 51-50, Washington State Building Code](https://app.leg.wa.gov/WAC/default.aspx?cite=51-50&full=true). Checked 2026-11-23.",
+   "- Contractor registration: [Washington L&I, Register as a Contractor](https://lni.wa.gov/licensing-permits/contractors/register-as-a-contractor/) and [SDCI Tip 333](https://www.seattle.gov/DPD/Publications/CAM/cam333.pdf). Last checked 2026-11-19.",
+   "- Washington toilet counts: [WAC 51-50-2902](https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-2902); the plumbing code points there ([WAC 51-56-0400](https://app.leg.wa.gov/WAC/default.aspx?cite=51-56-0400)). Checked 2026-11-24.",
+   "- Public jobs: [Washington L&I, awarding agencies](https://lni.wa.gov/licensing-permits/public-works-projects/awarding-agencies/) and its [wage lookup](https://secure.lni.wa.gov/wagelookup/rates/journey-level-rates). Checked 2026-11-24.",
+   "- Washington's stall rules beyond the federal ones: [WAC 51-50-1101](https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-1101) and ICC A117.1-2017 (read on a [secondary copy](https://up.codes/viewer/washington/icc-a117.1-2017/chapter/6/plumbing-elements-and-facilities)). Checked 2026-11-24.",
+   "- Washington restroom rules: [WAC 51-50-2902](https://app.leg.wa.gov/WAC/default.aspx?cite=51-50-2902). Checked 2026-11-24.",
+   "- Sales tax: Washington Department of Revenue, [local rates by county](https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf), [out-of-state businesses](https://dor.wa.gov/education/industry-guides/out-state-businesses-reporting-thresholds-and-nexus) and [RCW 82.04.050](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.050). Checked 2026-11-24."
+  ],
+  "official_names": "- The rules by their official names: 2010 ADA Standards for Accessible Design; ICC A117.1-2017 with Washington amendments (WAC 51-50, Seattle Building Code Chapter 11); 2021 Seattle Building Code (the 2021 International Building Code with Seattle amendments); 2021 Seattle Plumbing Code (the 2021 Washington State Plumbing Code with Seattle amendments); NFPA 286 for HDPE."
+ }
+}

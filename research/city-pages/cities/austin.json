@@ -1,0 +1,246 @@
+{
+ "slug": "austin",
+ "city": "Austin",
+ "state": "TX",
+ "checked": "2026-11-24",
+ "codes": {
+  "building": {
+   "name": "2024 International Building Code with City of Austin local amendments (City Code Chapter 25-12, Article 1, Division 1; Ordinance No. 20250410-045)",
+   "edition": "2024",
+   "local_amendments": true,
+   "effective": "2025-07-10",
+   "url": "https://services.austintexas.gov/edims/document.cfm?id=453143",
+   "quote": "§ 25-12-1 INTERNATIONAL BUILDING CODE. (A) The International Building Code, 2024 Edition, published by the International Code Council (\"2024 International Building Code\") is adopted and incorporated by reference into this section with the deletions in Subsection (B) and the amendments in Section 25-11-3 [sic] (Local Amendments to the International Building Code). ... PART 3. This ordinance takes effect on July 10, 2025.",
+   "note": "The ordinance is a scanned PDF read through its text layer (some OCR noise). The city's Building Technical Codes page lists \"International Building Code (IBC) 2024\" under \"Local Amendment Effective July 10, 2025\". Austin deletes and replaces Sections 105.2 (work exempt from permit), Table 1004.5 (floor area per occupant), Chapter 9 and 2901.1, among others; it does not amend Chapter 8 (interior finishes) or Sections 2902 and 2903."
+  },
+  "plumbing": {
+   "name": "2024 Uniform Plumbing Code with City of Austin local amendments (City Code Chapter 25-12, Article 6; Ordinance No. 20250410-042)",
+   "edition": "2024",
+   "local_amendments": true,
+   "effective": "2025-07-10",
+   "url": "https://services.austintexas.gov/edims/document.cfm?id=453142",
+   "quote": "§ 25-12-151 UNIFORM PLUMBING CODE. (A) The Uniform Plumbing Code, 2024 Edition, published by the International Association of Plumbing and Mechanical Officials (\"2024 Uniform Plumbing Code\") and Appendices A, B, C, D, E, G, I, J, K, M, and N are adopted and incorporated by reference into this section with the deletions in Subsection (B) and the amendments in Section 25-12-153 ... PART 2. This ordinance takes effect on July 10, 2025."
+  },
+  "scheduled_change": null,
+  "scheduled_change_note": "The city's Building Technical Codes page shows one later change, unrelated to partitions: the 2026 National Electrical Code, effective September 1, 2026. No later building or plumbing edition is listed.",
+  "authority": "Austin Development Services (the building official)",
+  "confidence": "high"
+ },
+ "fixtures": {
+  "city_amends": true,
+  "amendment": {
+   "text": "Austin adopts the Uniform Plumbing Code but replaces its Section 422.0 so that the number of fixtures comes from Chapter 29 of the Building Code (the 2024 International Building Code), not from the Uniform Plumbing Code's own table. Austin also replaces UPC 422.2 (separate facilities in the model code) with a rule on toilets for construction workers. Austin does not amend IBC Sections 2902.1 to 2902.3 or Table 2902.1; it only rewrites 2901.1 (scope). So the counts are the unamended 2024 IBC ones: offices 1 per 25 for the first 50 and 1 per 50 after that, restaurants 1 per 75, schools 1 per 50, each sex, with the occupants divided in half and fractions rounded up. No urinals are required; the table heading points to Section 424.2 of the International Plumbing Code for urinals, which caps urinals at 67 percent of the men's water closets in assembly and educational occupancies and 50 percent elsewhere. Separate men's and women's rooms are not required at a total occupant load of 15 or fewer, in business occupancies of 25 or fewer or in shops of 100 or fewer. Single-user rooms must be identified as available to all persons, and a multiple-user room designed for all persons is allowed with compartments for water closets and partitions for urinals.",
+   "quote": "Austin UPC amendment: \"422.0 Minimum number of required fixtures. Minimum number of required fixtures is based on Chapter 29 (Plumbing Systems) of the Building Code. Each building must be provided with sanitary facilities, including facilities designed for an individual with a disability.\" || Austin IBC amendment: \"2901.1 Scope. The provisions of this chapter and the Plumbing Code shall govern the design, construction, erection and installation of plumbing components, appliances, equipment, and systems used in buildings and structures covered by this code.\" || 2024 IBC as adopted by Austin (UpCodes copy): \"2902.1.1 Fixture Calculations. To determine the occupant load of each sex, the total occupant load shall be divided in half. ... Fractional numbers resulting from applying the fixture ratios of Table 2902.1 shall be rounded up to the next whole number.\" Table 2902.1: Restaurants, banquet halls and food courts 1 per 75 / 1 per 75; Business 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50; Educational facilities 1 per 50 / 1 per 50. \"2902.2 Separate Facilities ... Exceptions: ... 2. Separate toilet facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. ... 4. Separate toilet facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer.\"",
+   "url": "https://services.austintexas.gov/edims/document.cfm?id=453142",
+   "table_url": "https://up.codes/viewer/austin/ibc-2024/chapter/29/plumbing-systems",
+   "note": "The amendments were read on the city's ordinances (official). The table and Sections 2902.1 to 2902.2 were read on UpCodes' 'Austin Building Code 2024' copy (secondary): the official ICC viewer returned no chapter text to curl. IPC 424.2, 405.3.4 and 405.3.5 were read on UpCodes' copy of the 2024 International Plumbing Code as adopted in Colorado (no Texas copy of the 2024 IPC exists there)."
+  },
+  "worked_examples": [
+   {
+    "occupants": 50,
+    "office": "1 women / 1 men",
+    "restaurant": "1 / 1",
+    "school": "1 / 1"
+   },
+   {
+    "occupants": 100,
+    "office": "2 / 2",
+    "restaurant": "1 / 1",
+    "school": "1 / 1"
+   },
+   {
+    "occupants": 200,
+    "office": "3 / 3",
+    "restaurant": "2 / 2",
+    "school": "2 / 2"
+   },
+   {
+    "occupants": 400,
+    "office": "5 / 5",
+    "restaurant": "3 / 3",
+    "school": "4 / 4"
+   }
+  ],
+  "worked_examples_note": "Half the occupants counted as each sex, fractions rounded up (2902.1.1). Office at 200: 100 per sex = 2 for the first 50 plus 1 for the next 50. Office at 400: 200 per sex = 2 + 3. Urinals may replace part of the men's count only if IPC 424.2 applies in Austin, which uses the Uniform Plumbing Code: open question.",
+  "confidence": "medium"
+ },
+ "permit": {
+  "exempt_list_quote": "[A] 105.2 Work Exempt from Permit. A permit is not required for the work described in this provision. Work exempt from a permit shall still comply with this code and all other applicable laws and City Code requirements. Building: ... 7. Painting, papering, tiling, carpeting, cabinets, countertops, and similar finish work. ... 13. Non-fixed and movable fixtures, cases, racks, counters, and partitions not over five feet nine inches (1,753 mm) in height. ... 17. Other work as determined by the building official.",
+  "city_page_quote": "A building permit is not required for the work described below; however, work exempt from a permit must still comply with applicable Building Codes, City Codes, and all other applicable ordinances. ... Commercial: These work exemptions apply to Commercial Projects ... Painting, papering, tiling, carpeting, cabinets, countertops, and similar finish work. ... Non-fixed and movable fixtures, cases, racks, counters, and partitions are not over 5 feet 9 inches (1,753 mm) in height. ... Other work as determined by the building official.",
+  "city_page_url": "https://www.austintexas.gov/page/work-exempt-building-permits",
+  "url": "https://services.austintexas.gov/edims/document.cfm?id=453143",
+  "partitions_named": false,
+  "note": "The 17-item commercial Building list names partitions only as non-fixed and movable ones up to 5 ft 9 in. Toilet partitions, which are anchored, are not named, and the list does not say whether replacing them is \"similar finish work\". Item 17 leaves other work to the building official.",
+  "office": "Austin Development Services",
+  "phone": "512-978-4000",
+  "phone_url": "https://www.austintexas.gov/development-services/contact",
+  "confidence": "high"
+ },
+ "restrooms_city": {
+  "rule": "City Code Chapter 4-16, Article 1 (added by Ordinance No. 20141211-211, effective December 22, 2014) requires gender-neutral signage on every single-user restroom in a commercial facility, other than private-use restrooms; the person in control of the facility must install and maintain the sign; a violation is a Class C misdemeanor. The adopted 2024 building code says the same of single-user toilet rooms (2902.1.2) and allows a multiple-user room for all persons with compartments and urinal partitions (2902.2 exception 6). The city has no rule found on shared all-gender rooms beyond the building code.",
+  "quote": "§ 4-16-2 APPLICABILITY. This article applies to single-user restrooms within commercial facilities that are not private or private use restrooms. ... § 4-16-3 SIGNAGE REQUIRED. (A) A single-user restroom subject to this article must have gender-neutral signage. (B) A person with control over a commercial facility with at least one single-user restroom shall install and maintain gender-neutral signage for each single-user restroom. ... (3) SINGLE-USER RESTROOM means a lockable restroom available for an individual for use with or without assistance.",
+  "url": "https://services.austintexas.gov/edims/document.cfm?id=223869",
+  "confidence": "medium",
+  "note": "Read as enacted in 2014 on the city's ordinance PDF. The current codified text of Chapter 4-16 on Municode could not be opened (automated access blocked), so later amendments or a repeal were not checked. Texas Government Code chapter 3002 (state pack) governs city-owned buildings since December 2025."
+ },
+ "sales_tax": {
+  "combined": 0.0825,
+  "parts": [
+   {
+    "name": "state",
+    "rate": 0.0625
+   },
+   {
+    "name": "city",
+    "rate": 0.01
+   },
+   {
+    "name": "Austin MTA (transit authority)",
+    "rate": 0.01
+   }
+  ],
+  "effective": null,
+  "effective_note": "The Comptroller's city rates page gives no effective date for these rates.",
+  "scheduled_change": null,
+  "scheduled_change_note": "None shown on the city rates page; the Comptroller's quarterly change notices were not opened.",
+  "url": "https://comptroller.texas.gov/taxes/sales/city.php",
+  "quote": "Austin (Travis Co) | 2227016 | .010000 | .082500 ; Austin MTA | 3227999 | .010000",
+  "note": "Parts of Austin lie in Williamson and Hays counties and in library districts; each row on the page totals 8.25%.",
+  "confidence": "high"
+ },
+ "public_wage": {
+  "county": "Travis",
+  "basis": "Davis-Bacon",
+  "basic_hourly": 31.8,
+  "fringe": 9.56,
+  "determination": "TX20260271, modification 1 (Building)",
+  "date": "2026-05-18",
+  "url": "https://sam.gov/wage-determination/TX20260271/1",
+  "api_url": "https://sam.gov/api/prod/wdol/v1/wd/TX20260271/1",
+  "quote": "General Decision Number: TX20260271 05/18/2026 ... Construction Types: Building ... Counties: Texas Counties of Travis ... CARP1266-002 06/01/2025 ... CARPENTER (EXCLUDES ACOUSTICAL CEILING INSTALLATION, DRYWALL HANGING, FORM WORK, AND METAL STUD INSTALLATION)..................................$ 31.80 9.56",
+  "city_rule": null,
+  "city_rule_note": "Not looked for. Under Texas Government Code chapter 2258 each public body sets its own rates; the City of Austin's, Travis County's and Austin ISD's own wage schedules and any city living wage rule were not read.",
+  "confidence": "high"
+ },
+ "page": {
+  "meta": "Commercial bathroom partitions delivered to Austin job sites. Price your restroom, pick the right material and see the Austin and Texas rules.",
+  "lead": "Commercial bathroom partitions for Austin offices, schools, restaurants and music venues, shipped by freight to your job site.",
+  "fire_bullet": "- **Fire safety:** Austin's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.",
+  "stall_bullet": "- **How many stalls:** Austin sets the number of toilets by how many people use the building. The table below shows what that means.",
+  "permit_bullet": "- **Permits:** Austin lists the work that needs no building permit. The list covers \"similar finish work\" and movable partitions up to 5 feet 9 inches high, without naming toilet partitions, so ask Austin Development Services whether your replacement needs one. You don't need a permit to buy partitions.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a lockable one-person restroom in a commercial building must carry a gender-neutral sign. Austin has required this since December 2014, and the person in charge of the building must put the sign up and keep it there. In a private building, a shared all-gender room is allowed if every toilet sits in its own compartment with a door and every urinal sits between partitions. Since December 2025, Texas law requires shared restrooms in city, county, school district and public college buildings to be designated for one sex.",
+  "confirm_office": "Austin Development Services",
+  "stalls_intro": "Austin counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women. Every toilet needs a stall. The city's table counts toilets and requires no urinals. Ask Austin Development Services how many of the men's toilets may be urinals.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building. Where a building or tenant space holds 15 people or fewer, staff and customers together, or an office holds 25 or fewer, Austin doesn't require separate men's and women's rooms. At least one stall in each room must be wheelchair accessible.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or Austin Development Services sets the final number.",
+  "install_rule": "A contractor must register with the City's Building and Trade Contractor Services before Austin will issue or activate a building permit for the work. Texas has no statewide contractor license for this work. Confirm what your project needs with Austin Development Services. You don't need a permit to buy partitions.",
+  "faq_install_extra": "A contractor assigned to an Austin building permit must be registered with the City.",
+  "public_jobs_bullet": "- **Public jobs:** on city, county and school district projects, Texas law requires at least the locally set wage. The federal rate for a carpenter on building work in Travis County is $31.80 an hour plus $9.56 in benefits.",
+  "sales_tax_bullet": "- **Sales tax:** 8.25% in Austin: 6.25% state, 1% city and 1% transit authority.",
+  "buyers_extra": "- **Music venues, event halls and festival sites:** HDPE or phenolic for restrooms that take big crowds and frequent washdown.",
+  "sources": [
+   "- Austin building and plumbing codes: [Austin Development Services, Building Technical Codes](https://www.austintexas.gov/page/building-technical-codes) (local amendments effective July 10, 2025); [Ordinance No. 20250410-045](https://services.austintexas.gov/edims/document.cfm?id=453143), adopting the 2024 International Building Code with local amendments; [Ordinance No. 20250410-042](https://services.austintexas.gov/edims/document.cfm?id=453142), adopting the 2024 Uniform Plumbing Code with local amendments. Checked 2026-11-24.",
+   "- Toilet counts in Austin: [Ordinance No. 20250410-042](https://services.austintexas.gov/edims/document.cfm?id=453142), Section 422.0 (\"Minimum number of required fixtures is based on Chapter 29 (Plumbing Systems) of the Building Code\"); 2024 International Building Code, Table 2902.1 and Sections 2902.1.1 and 2902.2, which Austin leaves unamended, read on a secondary copy ([UpCodes, Austin Building Code 2024, Chapter 29](https://up.codes/viewer/austin/ibc-2024/chapter/29/plumbing-systems)). Checked 2026-11-24.",
+   "- Floor area per person in Austin: [Ordinance No. 20250410-045](https://services.austintexas.gov/edims/document.cfm?id=453143), Table 1004.5 as replaced by the City. Checked 2026-11-24.",
+   "- Fire test for HDPE in Austin: 2024 International Building Code, Section 803.9, not amended by Austin, read on a secondary copy ([UpCodes, Austin Building Code 2024, Chapter 8](https://up.codes/viewer/austin/ibc-2024/chapter/8/interior-finishes)). Checked 2026-11-24.",
+   "- Single-user restroom signs in Austin: [Ordinance No. 20141211-211](https://services.austintexas.gov/edims/document.cfm?id=223869), adding City Code Chapter 4-16, Article 1 (Gender-Neutral Signage for Single-User Restrooms), effective December 22, 2014; 2024 International Building Code, Sections 2902.1.2 and 2902.2 ([UpCodes copy](https://up.codes/viewer/austin/ibc-2024/chapter/29/plumbing-systems)); compartment and urinal partition rules: 2024 International Plumbing Code, Sections 405.3.4 and 405.3.5, read on a [secondary copy](https://up.codes/viewer/colorado/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings). Checked 2026-11-24.",
+   "- Austin permits and exempt work: [Austin Development Services, Work Exempt from Building Permits](https://www.austintexas.gov/page/work-exempt-building-permits) and [Ordinance No. 20250410-045](https://services.austintexas.gov/edims/document.cfm?id=453143), Section 105.2. Checked 2026-11-24.",
+   "- Austin contractor registration: [Austin Development Services, Contractor Registration](https://www.austintexas.gov/page/contractor-registration). Checked 2026-11-24.",
+   "- Travis County carpenter rate: [federal wage determination TX20260271, modification 1, May 18, 2026](https://sam.gov/wage-determination/TX20260271/1). Checked 2026-11-24.",
+   "- Austin sales tax rate: Texas Comptroller, [city sales and use tax rates](https://comptroller.texas.gov/taxes/sales/city.php) (Austin 1%, Austin MTA 1%, total 8.25% with the state's 6.25%). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; 2012 Texas Accessibility Standards (TDLR registration and review at $50,000 or more); 2024 International Building Code with City of Austin amendments (City Code Chapter 25-12, Article 1; Ordinance No. 20250410-045), in force since July 10, 2025; 2024 Uniform Plumbing Code with City of Austin amendments (City Code Chapter 25-12, Article 6; Ordinance No. 20250410-042), in force since July 10, 2025, whose Section 422.0 sends toilet counts to Chapter 29 of the building code; City Code Chapter 4-16 (single-user restroom signage, Ordinance No. 20141211-211); work exempt from a permit: Building Code Section 105.2 as amended by Austin; NFPA 286 for HDPE.",
+  "notes": [
+   "To confirm by phone before launch: whether a like-for-like toilet partition replacement needs an Austin building permit (Austin Development Services, 512-978-4000).",
+   "Ask Austin Development Services how many of the men's toilets may be urinals: the building code's table points to a section of the International Plumbing Code, and Austin's plumbing code is the Uniform Plumbing Code.",
+   "The stall table, the single-user rule and the HDPE fire test were read on UpCodes' copy of Austin's 2024 building code: check them in a browser on the official ICC viewer.",
+   "Open City Code Chapter 4-16 on Municode in a browser to confirm the 2014 single-user restroom sign rule is still in force as enacted (Municode blocks automated access).",
+   "The Travis County carpenter rate is the federal one; the City of Austin's, Travis County's and Austin ISD's own wage schedules for public jobs were not read.",
+   "The Comptroller's rate page gives no effective date for the Austin rates; its quarterly change notices were not opened."
+  ]
+ },
+ "sources_read": [
+  {
+   "url": "https://www.austintexas.gov/page/building-technical-codes",
+   "official": true
+  },
+  {
+   "url": "https://services.austintexas.gov/edims/document.cfm?id=453143",
+   "official": true
+  },
+  {
+   "url": "https://services.austintexas.gov/edims/document.cfm?id=453142",
+   "official": true
+  },
+  {
+   "url": "https://www.austintexas.gov/page/work-exempt-building-permits",
+   "official": true
+  },
+  {
+   "url": "https://www.austintexas.gov/page/contractor-registration",
+   "official": true
+  },
+  {
+   "url": "https://www.austintexas.gov/development-services/contact",
+   "official": true
+  },
+  {
+   "url": "https://services.austintexas.gov/edims/document.cfm?id=223869",
+   "official": true
+  },
+  {
+   "url": "https://www.austintexas.gov/department/city-council/2014/20141211-reg.htm",
+   "official": true
+  },
+  {
+   "url": "https://comptroller.texas.gov/taxes/sales/city.php",
+   "official": true
+  },
+  {
+   "url": "https://sam.gov/api/prod/wdol/v1/wd/TX20260271/1",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/austin/ibc-2024/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/austin/ibc-2024/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/colorado/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  }
+ ],
+ "to_confirm": [
+  "Austin Development Services, 512-978-4000: does replacing toilet partitions in an existing commercial restroom need a building permit (Section 105.2 items 7 and 13 don't name them; item 17 leaves other work to the building official)?",
+  "Austin Development Services: which urinal rule applies, given that Table 2902.1 cites IPC Section 424.2 and Austin's plumbing code is the 2024 UPC (amended IBC 101.4.3 says the IPC applies and the Plumbing Code supersedes it in a conflict); and whether UPC Table 422.1 has any remaining role now that Section 422.0 points to the building code.",
+  "Check Table 2902.1, Sections 2902.1.2 and 2902.2 and Section 803.9 of the 2024 IBC on codes.iccsafe.org; they were read on UpCodes.",
+  "Current text of City Code Chapter 4-16 on Municode (read here only as enacted in 2014), and how the City applies it in its own buildings under Texas Government Code chapter 3002.",
+  "Effective date of the current Austin local sales tax parts and any change in the Comptroller's next quarterly notice.",
+  "City of Austin, Travis County and Austin ISD prevailing wage schedules for building work, and any City of Austin living wage rule on city contracts (not looked for)."
+ ]
+}

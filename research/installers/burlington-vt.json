@@ -1,0 +1,92 @@
+{
+ "area": "burlington-vt",
+ "found_count": 2,
+ "sources_tried": [
+  "Seeds file research/installers/raw/seeds/burlington-vt.json: read; all maps/web seeds were tile/bath showrooms, remodelers, plumbers, portable toilets, big-box stores; none showed partition installation. Division 10 Specialties Inc (Pembroke MA) is in seeds but ~200 mi away, outside range.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but rep dropdown is JS, no Vermont result.",
+  "Scranton Products where-to-buy: worked; only a manufacturer's regional rep for New England/VT (not an installer), not included.",
+  "ASI Global Partitions locator (globalpartitions.com): host blocked by session network (ENOTFOUND); must be allowed in network settings to retry.",
+  "Hadrian find-a-rep: 404.",
+  "Bradley, Metpar, General Partitions, Ampco/Ammco locators: not tried (search budget and time).",
+  "The Blue Book New England toilet partitions category page: 403 blocked. Blue Book profile for Commercial Door Co. LLC: 403 (facts taken from search-result summary only).",
+  "BuildingConnected / Procore public profiles: not tried.",
+  "downtobid.com Burlington VT doors contractors: 429 rate-limited (search summary mentioned 'Rapid Door & Trim' supplying/installing bath accessories, location unknown, not included).",
+  "BBB partition category pages (Benson, Morristown VT): worked, but every listing is in MA/NH/CT/NY 150+ mi away (Doors Unlimited Leominster MA, Granite State Specialties Raymond NH, Partition Systems North Reading MA, Connecticut Restroom Specialties Danbury CT, North Star Systems Dover Plains NY, Cubicle Solutions Windham NH), all outside the 120-mile limit. BBB Rutland partition page: 403. BBB Fairfax bathroom accessories and Montpelier commercial doors: worked, no partition installers.",
+  "Granite State Specialties (granitestatespecialties.com): worked; installs toilet partitions and serves 'throughout the northeast', but based in Raymond NH (~150+ mi) and does not name Vermont, so excluded.",
+  "One Point Partitions Vermont/Burlington pages (onepointpartitions.com): 403. Search snippets say it serves Vermont contractors, but it is a supplier based in Glenmont NY / Chicopee MA (outside 120 mi), so excluded.",
+  "Newton BSI (newtonbsi.com): page content did not load.",
+  "WebSearch: 7 of 7 used ('toilet partitions installation Vermont contractor', Division 10 + VT towns, toilet accessories/compartments + VT towns, Division 10 contractor Vermont lockers, Vermont commercial doors hardware toilet partitions, Commercial Door Co Vermont, Plattsburgh/Lebanon NH/Glens Falls partitions). They returned mostly specs, McMaster-Carr and out-of-range MA/NH/CT firms; Vermont has very few dedicated Division 10 installers online."
+ ],
+ "candidates": [
+  {
+   "name": "Kelley Bros of New England, LLC",
+   "base_city": "Williston",
+   "state": "VT",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Global Toilet Partitions",
+    "Scranton Products",
+    "Hadrian"
+   ],
+   "website": "https://www.kelleybros.com/",
+   "phone": "(802) 865-5133",
+   "contact_page": "https://www.kelleybros.com/contact-us/",
+   "evidence_urls": [
+    "https://www.kelleybros.com/products/division-10/",
+    "https://www.kelleybros.com/locations/",
+    "https://www.kelleybros.com/"
+   ],
+   "partition_evidence": "Its Division 10 page lists toilet partitions in every material and mounting style, names Global, Scranton and Hadrian, and offers a turnkey service from quote to installation. Its locations page lists a Barre, VT installation branch at (802) 923-2004.",
+   "reason": "A commercial Division 8/10 supplier with a Williston office inside the area and a Vermont installation branch, and it says it installs partitions. It also supplies partitions itself (Global, Scranton, Hadrian), so there is a high buy-around risk.",
+   "red_flags": [
+    "Supplies partitions itself (competitor / buy-around risk)",
+    "Large multi-state distributor, not an install-only sub"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Kelley Bros of New England, LLC",
+    "area": "burlington-vt",
+    "status": "not_required_online_check",
+    "registry": "None applies: Vermont Office of Professional Regulation residential contractor registration covers residential jobs only; Burlington has no city contractor license rule on file",
+    "note": "Vermont has no state contractor license for commercial partition installation. State registration (26 V.S.A. ch. 106, s. 5501) applies only to residential contractors on jobs of $10,000 or more in buildings of four or fewer units. Only electrical and plumbing are state-licensed. The project's local rule for Burlington is 'none'. No lookup was run, and no license number is recorded. The OPR residential contractor page returned HTTP 403 to automated fetch on 2026-11-20. Its registration lookup was not used because commercial partition work falls outside it. Base city: Williston. Checked 2026-11-20.",
+    "source_url": "https://legislature.vermont.gov/statutes/section/26/106/05501"
+   },
+   "score": 70
+  },
+  {
+   "name": "Commercial Door Co. LLC",
+   "base_city": "Williamstown",
+   "state": "VT",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "evidence_urls": [
+    "https://thebluebook.com/iProView/1281251"
+   ],
+   "partition_evidence": "Search snippets of its Blue Book listing name toilet partitions and cubicles among its main lines, along with access doors and hollow metal doors and frames, and give Vermont and Maine as regions served. The page itself returned 403, and I saw no project photos or explicit installation work.",
+   "reason": "A Vermont commercial door and specialties firm about 50 miles from Burlington whose directory listing names toilet partitions as a line of business, but I couldn't confirm installation, a website or contact details.",
+   "red_flags": [
+    "No company website found",
+    "Evidence comes only from search snippets of a directory listing (page blocked)",
+    "Blue Book snippet names Orange County as its Vermont service area, which may not cover Chittenden County"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Commercial Door Co. LLC",
+    "area": "burlington-vt",
+    "status": "not_required_online_check",
+    "registry": "None applies: Vermont Office of Professional Regulation residential contractor registration covers residential jobs only; Burlington has no city contractor license rule on file",
+    "note": "Vermont has no state contractor license for commercial partition installation. State registration (26 V.S.A. ch. 106, s. 5501) applies only to residential contractors on residential jobs of $10,000 or more. The project's local rule for Burlington is 'none'. No lookup was run, and no license number is recorded. Base city: Williamstown. Checked 2026-11-20.",
+    "source_url": "https://legislature.vermont.gov/statutes/section/26/106/05501"
+   },
+   "score": 43
+  }
+ ]
+}

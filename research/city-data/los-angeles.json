@@ -1,0 +1,767 @@
+{
+ "slug": "los-angeles",
+ "city": "Los Angeles",
+ "state": "CA",
+ "checked": "2026-11-24",
+ "labor": {
+  "occupation": "47-2031 Carpenters",
+  "release": "May 2025 (OEWS; national release dated May 15, 2026)",
+  "metro_name": "Los Angeles-Long Beach-Anaheim, CA",
+  "metro_area_code": "31080",
+  "metro_mean_hourly": null,
+  "metro_median_hourly": 36.41,
+  "us_mean_hourly": 31.55,
+  "us_median_hourly": 29.12,
+  "pct_vs_us_mean": null,
+  "pct_vs_us_median": 25.0,
+  "pct_note": "Metro mean could not be read, so pct_vs_us_mean is null. Medians: (36.41 - 29.12) / 29.12 = 25.03%, i.e. the metro median is about 25% above the U.S. median.",
+  "facts": [
+   {
+    "fact": "U.S. carpenters, May 2025: employment 670,090; mean hourly $31.55; mean annual $65,630; median hourly $29.12.",
+    "url": "https://www.bls.gov/news.release/ocwage.t01.htm",
+    "official": true,
+    "quote": "Table 1. National employment and wage data from the Occupational Employment and Wage Statistics survey by occupation, May 2025 ... Carpenters 670,090 31.55 65,630 29.12",
+    "note": "Read through WebFetch (page text past character 100,000); columns are Employment, Mean hourly, Mean annual, Median hourly."
+   },
+   {
+    "fact": "Los Angeles-Long Beach-Anaheim, CA carpenters, 2025 BLS wage data: median hourly $36.41 (10th pct $22.53, 25th $28.59, 75th $48.37, 90th $56.46). Same table shows California median $36.50 and U.S. median $29.12.",
+    "url": "https://www.onetonline.org/link/localwages/47-2031.00?zip=90012",
+    "official": false,
+    "quote": "Los Angeles-Long Beach-Anaheim, CA | $22.53 | $28.59 | $36.41 | $48.37 | $56.46 ... Source: Bureau of Labor Statistics 2025 wage data",
+    "note": "O*NET OnLine is sponsored by the U.S. Department of Labor and republishes BLS OEWS figures; it shows percentiles only, no mean. Its U.S. median ($29.12) matches the BLS national table, which supports that it carries the May 2025 release."
+   },
+   {
+    "fact": "Context only (all construction and extraction occupations, not carpenters): Los Angeles metro mean hourly $37.07 vs U.S. $31.42, May 2025.",
+    "url": "https://www.bls.gov/regions/west/news-release/2026/occupationalemploymentandwages_losangeles_20260709.htm",
+    "official": true,
+    "quote": "Occupational Employment and Wages in Los Angeles-Long Beach-Anaheim — May 2025 (Table A: construction and extraction, $37.07 Los Angeles, $31.42 United States)",
+    "note": "Figures relayed by WebFetch from BLS Table A; the release has no carpenter row."
+   },
+   {
+    "fact": "Older reference: May 2023 carpenter mean hourly was $35.06 in the Los Angeles metro and $29.31 nationally (19.6% higher). Not the latest release; do not publish as current.",
+    "url": "https://www.bls.gov/oes/2023/may/oes472031.htm",
+    "official": true,
+    "quote": "Los Angeles-Long Beach-Anaheim, CA | 26,400 | 4.27 | 0.93 | $ 35.06 | $ 72,920"
+   }
+  ],
+  "metro_table_url": "https://data.bls.gov/oes/#/area/0031080/2025",
+  "confidence": "medium",
+  "confidence_note": "U.S. mean and median read on bls.gov (high). Metro median read on O*NET, a DOL-sponsored secondary (medium). Metro MEAN not read: bls.gov returns 403 to scripts, the public API hit its daily request limit, and the May 2025 area table is a JavaScript app (data.bls.gov/oes) that WebFetch cannot render."
+ },
+ "public_job_wage": {
+  "law": "California prevailing wage law (Labor Code sections 1720-1861) applies to public works paid for in whole or in part with public funds, including school district and city projects. The federal Davis-Bacon Act applies in addition only where federal money is in the project.",
+  "applies_to_installing_partitions": "\"Public works\" covers \"construction, alteration, demolition, installation, or repair work done under contract and paid for in whole or in part out of public funds\"; a supply-only sale of partitions with no installation is not itself construction labor.",
+  "threshold": {
+   "amount_usd": 1000,
+   "rule": "Prevailing wage must be paid on public works projects over $1,000.",
+   "quote": "Except for public works projects of one thousand dollars ($1,000) or less, not less than the general prevailing rate of per diem wages for work of a similar character in the locality in which the public work is performed ... shall be paid to all workers employed on public works.",
+   "section": "Labor Code section 1771",
+   "url": "https://california.public.law/codes/labor_code_section_1771",
+   "official": false,
+   "official_confirmation": {
+    "url": "https://www.dir.ca.gov/OPRL/FAQ_PrevailingWage.html",
+    "quote": "Prevailing wages must be paid to all workers employed on a public works project ... the public works project is over $1,000 (FAQ 15, as relayed by WebFetch)"
+   }
+  },
+  "other_thresholds": [
+   {
+    "what": "DIR contractor registration not required on small projects (wages still owed above $1,000)",
+    "amount": "$25,000 or less for construction, alteration, demolition, installation or repair; $15,000 or less for maintenance",
+    "quote": "This section does not apply to work performed on a public works project of twenty-five thousand dollars ($25,000) or less when the project is for construction, alteration, demolition, installation, or repair work or to work performed on a public works project of fifteen thousand dollars ($15,000) or less when the project is for maintenance work.",
+    "section": "Labor Code section 1725.5(f)",
+    "url": "https://california.public.law/codes/labor_code_section_1725.5",
+    "official": false
+   },
+   {
+    "what": "Apprenticeship requirements",
+    "amount": "$30,000 or more",
+    "quote": "Projects of $30,000 or more must meet DIR's apprenticeship requirements.",
+    "url": "https://www.dir.ca.gov/Public-Works/PublicWorks.html",
+    "official": true
+   },
+   {
+    "what": "DIR registration fee",
+    "amount": "$400, $800 or $1,200 for one, two or three fiscal years",
+    "quote": "for a fee of $400, $800 or $1,200",
+    "url": "https://www.dir.ca.gov/Public-Works/Contractor-Registration.html",
+    "official": true
+   }
+  ],
+  "who_is_covered": {
+   "quote": "The awarding body can be any kind of public agency or official (state, county, city, school board, water district, etc.)",
+   "url": "https://www.dir.ca.gov/Public-Works/Awarding-Bodies.html",
+   "official": true
+  },
+  "charter_city_note": {
+   "text": "Los Angeles is a charter city. Labor Code section 1782 bars a charter city from state construction funding if it lets contractors skip prevailing wage; its definition of a public works contract leaves out projects of $25,000 or less (construction) and $15,000 or less (alteration, demolition, repair, maintenance). The City of Los Angeles's own prevailing wage rule for purely city-funded work was not read.",
+   "quote": "A charter city shall not receive or use state funding or financial assistance for a construction project if the city has a charter provision or ordinance that authorizes a contractor to not comply with the provisions of this article on any public works contract.",
+   "url": "https://california.public.law/codes/labor_code_section_1782",
+   "official": false
+  },
+  "carpenter_rate": {
+   "determination": "SC-23-31-2-2026-2",
+   "issue_date": "2026-08-22",
+   "expiration": "2027-06-30 (double asterisk: a new rate after this date has already been determined and must be paid if work runs past it)",
+   "scope": "Commercial building, highway, heavy construction and dredging projects; all localities within Imperial, Inyo, Kern, Los Angeles, Mono, Orange, Riverside, San Bernardino, San Luis Obispo, Santa Barbara and Ventura counties",
+   "classification": "Carpenter, Cabinet Installer, Insulation Installer, Hardwood Floor Worker, Acoustical Installer (journeyperson)",
+   "basic_hourly": 54.41,
+   "fringe": {
+    "health_and_welfare": 10.25,
+    "pension": 6.41,
+    "vacation_and_holiday": 7.57,
+    "training": 0.79,
+    "other": 4.89,
+    "total_fringe": 29.91
+   },
+   "total_hourly": 84.32,
+   "daily_overtime_1_5x": 111.525,
+   "saturday_overtime_1_5x": 111.525,
+   "sunday_holiday_2x": 138.73,
+   "hours": 8.0,
+   "quote": "Carpenter e f, Cabinet Installer, Insulation Installer, Hardwood Floor Worker, Acoustical Installer $54.41 $10.25 $6.41 $7.57 $0.79 $4.89 8.0 $84.32 $111.525 $111.525 $138.73",
+   "quote_header": "Determination: SC-23-31-2-2026-2 Issue Date: August 22, 2026 Expiration date of determination: June 30, 2027**",
+   "url": "https://www.dir.ca.gov/OPRL/2026-2/PWD/Determinations/Southern/SC-023-31-2.pdf",
+   "official": true,
+   "index_url": "https://www.dir.ca.gov/OPRL/2026-2/PWD/SC-4-List.htm",
+   "which_determination_applies": "The determination in effect on the date the awarding body advertises for bids stays in effect for the life of the project (DIR FAQ 7: determinations \"which are in effect on the date of advertisement for bids, remain in effect for the life of the project\"; https://www.dir.ca.gov/OPRL/FAQ_PrevailingWage.html)."
+  },
+  "comparison": "Basic prevailing rate $54.41/hour is 49% above the metro median carpenter wage ($36.41); with fringe the public-job cost is $84.32/hour.",
+  "confidence": "high",
+  "confidence_note": "Rate, fringe, determination number and dates read in DIR's own PDF. The $1,000 threshold is on DIR's FAQ; statute wording quoted from california.public.law because leginfo.legislature.ca.gov returns 403 to scripts."
+ },
+ "access_differences_basis": {
+  "state_standard": "2025 California Building Code (Title 24, Part 2), Chapter 11B, effective 2026-01-01; Los Angeles enforces it as the 2026 Los Angeles Building Code (LADBS checklist CL-BC-2026-026, effective 01/01/2026, revised 09/23/2026).",
+  "federal_standard": "2010 ADA Standards for Accessible Design, sections 213, 216.8, 604, 703.7",
+  "how_read": "California does not adopt the federal text or ICC A117.1 for public accommodations; Chapter 11B is its own text built on the 2010 ADA Standards with California changes. 11B wording was read on Corada's copy of DSA's 2025 California Access Compliance Advisory Reference Manual (secondary; the ICC code site returns 403 and the DSA manual page returned 404), which prints the 2010 ADA text beside each changed section. Federal wording was read on ada.gov. Points marked confirmed_on_official_page were also read in the City of Los Angeles LADBS plan check checklist, which restates the 11B sections.",
+  "confidence": "medium"
+ },
+ "access_differences": [
+  {
+   "point": "How many wheelchair accessible and ambulatory stalls",
+   "state_section": "11B-213.3.1.1",
+   "state_requirement": "At least 5% of toilet compartments (never fewer than one) must be wheelchair accessible; where there are 6 or more compartments (or 6 or more toilets plus urinals), the number of ambulatory stalls must equal the number of wheelchair accessible stalls.",
+   "state_quote": "Where toilet compartments are provided, at least five percent of the toilet compartments, or five percent of the combination of toilet compartments and urinals, but no fewer than one toilet compartment shall comply with Section 11B-604.8.1. In addition ... where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures, toilet compartments complying with Section 11B-604.8.2 shall be provided in the same quantity as the toilet compartments required to comply with Section 11B-604.8.1.",
+   "state_url": "https://www.corada.com/documents/2025CBCPG/11b-213-toilet-facilities-and-bathing-facilities",
+   "federal_section": "213.3.1",
+   "federal_requirement": "One wheelchair accessible compartment per toilet room, plus one ambulatory compartment at six or more.",
+   "federal_quote": "Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1. In addition to the compartment required to comply with 604.8.1, at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures.",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "Rooms with 21 or more stalls need a second wheelchair stall and a second ambulatory stall in California; federally one of each is enough.",
+   "confirmed_on_official_page": {
+    "url": "https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf",
+    "quote": "Where only toilet compartments are provided, at least 5 percent but no fewer than one toilet compartment shall comply with Section 11B-604.8.1 ... ambulatory toilet compartments complying with Section 11B-604.8.2 shall be provided in the same quantity ... (11B-213.3.1)"
+   }
+  },
+  {
+   "point": "Clear space in front of the toilet",
+   "state_section": "11B-604.3.1 and 11B-604.8.1.1.1 to .3",
+   "state_requirement": "On top of the 60 x 56 inch clearance, a 60 inch wide by 48 inch deep maneuvering space in front of the toilet; inside a wheelchair stall: 60 x 36 inches in front of the compartment clearance with an in-swinging door, 60 x 60 with a side-opening door, 60 x 48 with an end-opening door.",
+   "state_quote": "A minimum 60 inches (1524 mm) wide and 48 inches (1219 mm) deep maneuvering space shall be provided in front of the water closet. // In a wheelchair accessible compartment with a door located in the front wall or partition (facing the water closet), either in-swinging or out-swinging, a minimum 60 inches (1524 mm) wide and 48 inches (1219 mm) deep maneuvering space shall be provided in front of the water closet.",
+   "state_url": "https://www.corada.com/documents/2025CBCPG/11b-604-water-closets-and-toilet-compartments",
+   "federal_section": "604.3.1, 604.8.1.1",
+   "federal_requirement": "Only the 60 x 56 inch (wall-hung) or 60 x 59 inch (floor-mounted) compartment; no added maneuvering space in front of the toilet.",
+   "federal_quote": "Wheelchair accessible compartments shall be 60 inches (1525 mm) wide minimum measured perpendicular to the side wall, and 56 inches (1420 mm) deep minimum for wall hung water closets and 59 inches (1500 mm) deep minimum for floor mounted water closets measured perpendicular to the rear wall.",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "California wheelchair stalls are deeper than federal ones (the guide's editor notes larger compartments are needed with out-swinging doors); stall layouts drawn to the federal minimum fail plan check.",
+   "confirmed_on_official_page": {
+    "url": "https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf",
+    "quote": "In a wheel chair accessible compartment with end-opening door located in the front wall or partition (facing water closet), either in-swinging or out-swinging, a minimum 60 inches wide and 48 inches deep maneuvering space shall be provided in front of the water closet. (11B-604.8.1.1.3)"
+   }
+  },
+  {
+   "point": "Toilet distance from the side wall or partition",
+   "state_section": "11B-604.2",
+   "state_requirement": "Centerline 17 to 18 inches from the side wall or partition (17 to 19 in an ambulatory stall).",
+   "state_quote": "The centerline of the water closet shall be 17 inches (432 mm) minimum to 18 inches (457 mm) maximum from the side wall or partition",
+   "state_url": "https://www.corada.com/documents/2025CBCPG/11b-604-water-closets-and-toilet-compartments",
+   "federal_section": "604.2",
+   "federal_requirement": "16 to 18 inches.",
+   "federal_quote": "The centerline of the water closet shall be 16 inches (405 mm) minimum to 18 inches (455 mm) maximum from the side wall or partition",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "A one-inch window instead of two: partition panel positions have to be set out precisely against the existing toilet.",
+   "confirmed_on_official_page": {
+    "url": "https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf",
+    "quote": "The centerline of the water closet shall be 17 inches minimum to 18 inches maximum from the side wall or partition (11B-604.2)"
+   }
+  },
+  {
+   "point": "Clearance outside the wheelchair stall door",
+   "state_section": "11B-604.8.1.2",
+   "state_requirement": "48 inches clear in front of the stall door when approached from the push side, measured perpendicular to the closed door.",
+   "state_quote": "if the approach is from the push side of the compartment door, clearance between the door side of the compartment and any obstruction shall be 48 inches (1219 mm) minimum measured perpendicular to the compartment door in its closed position",
+   "state_url": "https://www.corada.com/documents/2025CBCPG/11b-604-water-closets-and-toilet-compartments",
+   "federal_section": "604.8.1.2",
+   "federal_requirement": "42 inches, and only for a latch-side approach.",
+   "federal_quote": "if the approach is to the latch side of the compartment door, clearance between the door side of the compartment and any obstruction shall be 42 inches (1065 mm) minimum",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "The aisle between the stall fronts and the opposite wall or lavatories must be wider.",
+   "confirmed_on_official_page": {
+    "url": "https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf",
+    "quote": "clearance between the door side of the compartment and any obstruction shall be 48 inches minimum measured perpendicular to the compartment door in its closed position (11B-604.8.1.2, 11B-605.5.3)"
+   }
+  },
+  {
+   "point": "Clearance outside the ambulatory stall door",
+   "state_section": "11B-604.8.2.2",
+   "state_requirement": "44 inches for a latch-side approach.",
+   "state_quote": "if the approach is to the latch side of the compartment door, clearance between the door side of the compartment and any obstruction shall be 44 inches (1118 mm) minimum",
+   "state_url": "https://www.corada.com/documents/2025CBCPG/11b-604-water-closets-and-toilet-compartments",
+   "federal_section": "604.8.2.2",
+   "federal_requirement": "42 inches.",
+   "federal_quote": "if the approach is to the latch side of the compartment door, clearance between the door side of the compartment and any obstruction shall be 42 inches (1065 mm) minimum",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "Two more inches of aisle in front of ambulatory stalls."
+  },
+  {
+   "point": "Privacy latch on accessible stall doors",
+   "state_section": "11B-604.8.1.2 and 11B-604.8.2.2",
+   "state_requirement": "Door must be self-closing and have a privacy latch (DSA advisory: flip-over, sliding or other type that needs no grasping or twisting).",
+   "state_quote": "The door shall be self-closing and have a privacy latch.",
+   "state_url": "https://www.corada.com/documents/2025CBCPG/11b-604-water-closets-and-toilet-compartments",
+   "federal_section": "604.8.1.2, 604.8.2.2",
+   "federal_requirement": "Self-closing door and door pulls; no latch requirement in the text.",
+   "federal_quote": "The door shall be self-closing.",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "Hardware kits for accessible stalls must include a latch usable without grasping or twisting.",
+   "confirmed_on_official_page": {
+    "url": "https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf",
+    "quote": "Toilet or urinal compartment doors shall be self-closing and have a privacy latch (11B-604.8.1.2, 11B-605.5.3)"
+   }
+  },
+  {
+   "point": "Side-opening stall door: position and width",
+   "state_section": "11B-604.8.1.2 and its Exception",
+   "state_requirement": "A door in the side partition must be at least 54 inches from the rear wall and give 34 inches clear width.",
+   "state_quote": "Where located in the side wall or partition, the door opening shall be farthest from the water closet and shall be 54 inches (1372 mm) minimum from the rear wall. // Exception: When located at the side of a toilet compartment, the toilet compartment door opening shall provide a clear width of 34 inches (864 mm) minimum.",
+   "state_url": "https://www.corada.com/documents/2025CBCPG/11b-604-water-closets-and-toilet-compartments",
+   "federal_section": "604.8.1.2 (and 404.2.3)",
+   "federal_requirement": "Side door only has to be within 4 inches of the front partition; standard 32 inch clear door width.",
+   "federal_quote": "Where located in the side wall or partition, the door opening shall be 4 inches (100 mm) maximum from the front partition.",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "Side-entry accessible stalls need a wider door and a deeper stall than the federal layout."
+  },
+  {
+   "point": "Where the stall door may swing",
+   "state_section": "11B-604.8.1.2",
+   "state_requirement": "Door may not swing into the clear floor space or clearance of any fixture; it may swing into the part of the maneuvering space that does not overlap the toilet clearance.",
+   "state_quote": "Doors shall not swing into the clear floor space or clearance required for any fixture. Doors may swing into that portion of maneuvering space which does not overlap the clearance required at a water closet.",
+   "state_url": "https://www.corada.com/documents/2025CBCPG/11b-604-water-closets-and-toilet-compartments",
+   "federal_section": "604.8.1.2",
+   "federal_requirement": "Door may not swing into the minimum required compartment area.",
+   "federal_quote": "Toilet compartment doors shall not swing into the minimum required compartment area.",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "In-swinging doors are possible in California only with the extra 36 inches of depth in 11B-604.8.1.1.1."
+  },
+  {
+   "point": "Toe clearance under partitions",
+   "state_section": "11B-604.8.1.4",
+   "state_requirement": "Required on at least one side partition (9 inches high, 6 inches deep), with smooth edges; waived only if the stall is more than 66 inches wide. No requirement or exception for the front partition.",
+   "state_quote": "At least one side partition shall provide a toe clearance of 9 inches (229 mm) minimum above the finish floor and 6 inches (152 mm) deep minimum beyond the compartment-side face of the partition, exclusive of partition support members. Partition components at toe clearances shall be smooth without sharp edges or abrasive surfaces.",
+   "state_url": "https://www.corada.com/documents/2025CBCPG/11b-604-water-closets-and-toilet-compartments",
+   "federal_section": "604.8.1.4",
+   "federal_requirement": "Required at the front partition and at least one side partition, with depth-based exceptions for the front.",
+   "federal_quote": "The front partition and at least one side partition shall provide a toe clearance of 9 inches (230 mm) minimum above the finish floor and 6 inches (150 mm) deep minimum beyond the compartment-side face of the partition, exclusive of partition support members.",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "California adds a finish requirement (no sharp or abrasive edges at the bottom of panels) and drops the front-partition rule because its stalls are already deeper. A project must meet both codes, so the federal front-partition toe clearance still applies unless the stall depth exceeds the federal exception.",
+   "confirmed_on_official_page": {
+    "url": "https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf",
+    "quote": "At least one side partition shall provide a toe clearance of 9 inches minimum above the finish floor and 6 inches deep minimum ... Partition components at toe clearances shall be smooth without sharp edges or abrasive surfaces. (11B-604.8.1.4, 11B-605.5.4)"
+   }
+  },
+  {
+   "point": "Side grab bar position",
+   "state_section": "11B-604.5.1",
+   "state_requirement": "Same 42 inch bar, and its front end must be at least 24 inches in front of the toilet.",
+   "state_quote": "extending 54 inches (1372 mm) minimum from the rear wall with the front end positioned 24 inches (610 mm) minimum in front of the water closet",
+   "state_url": "https://www.corada.com/documents/2025CBCPG/11b-604-water-closets-and-toilet-compartments",
+   "federal_section": "604.5.1",
+   "federal_requirement": "42 inch bar, 12 inches max from the rear wall, extending 54 inches from the rear wall.",
+   "federal_quote": "The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall.",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "Blocking or reinforcement in the side partition has to reach further forward; California also expressly permits an L-shaped bar (11B-604.5).",
+   "confirmed_on_official_page": {
+    "url": "https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf",
+    "quote": "extending 54 inches minimum from the rear wall with the front end positioned 24 inches minimum in front of the water closet (11B-604.5.1)"
+   }
+  },
+  {
+   "point": "Toilet paper dispenser and disposal unit",
+   "state_section": "11B-604.7.1 and 11B-604.7.2",
+   "state_requirement": "Dispenser outlet below the grab bar and at least 19 inches above the floor; a sanitary napkin disposal unit, if provided, wall mounted on the side wall between the rear wall and the dispenser, below the grab bar, opening at least 19 inches high.",
+   "state_quote": "The outlet of the dispenser shall be below the grab bar, 19 inches (483 mm) minimum above the finish floor and shall not be located behind grab bars. // The disposal unit shall be located below the grab bar with the opening of the disposal unit 19 inches minimum (483 mm) above the finish floor.",
+   "state_url": "https://www.corada.com/documents/2025CBCPG/11b-604-water-closets-and-toilet-compartments",
+   "federal_section": "604.7",
+   "federal_requirement": "Outlet anywhere from 15 to 48 inches above the floor (may be above the bar); no disposal unit rule.",
+   "federal_quote": "The outlet of the dispenser shall be 15 inches (380 mm) minimum and 48 inches (1220 mm) maximum above the finish floor and shall not be located behind grab bars.",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "Accessories mounted on the partition must sit in the band between 19 inches and the underside of the grab bar.",
+   "confirmed_on_official_page": {
+    "url": "https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf",
+    "quote": "The outlet of the dispenser shall be below the grab bar, 19 inches minimum above the finish floor and shall not be located behind the grab bars. (11B-604.7.1)"
+   }
+  },
+  {
+   "point": "Flush control height (context for stall layout)",
+   "state_section": "11B-604.6",
+   "state_requirement": "Hand-operated flush control at most 44 inches above the floor.",
+   "state_quote": "Hand operated flush controls shall comply with Section 11B-309 except they shall be located 44 inches (1118 mm) maximum above the floor.",
+   "state_url": "https://www.corada.com/documents/2025CBCPG/11b-604-water-closets-and-toilet-compartments",
+   "federal_section": "604.6",
+   "federal_requirement": "Within general reach range (48 inches).",
+   "federal_quote": "Hand operated flush controls shall comply with 309.",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "Plumbing, not partitions; listed because it comes up on the same inspection."
+  },
+  {
+   "point": "Geometric symbols on restroom doors",
+   "state_section": "11B-216.8.1 and 11B-703.7.2.6",
+   "state_requirement": "Every restroom entrance carries a 1/4 inch thick, 12 inch geometric symbol centred on the door 58 to 60 inches high: triangle for men, circle for women, triangle inside a circle for unisex/all-gender.",
+   "state_quote": "Geometric symbols complying with Section 11B-703.7.2.6 shall be provided at entrances to toilet and bathing rooms. // An equilateral triangle, ¼ inch (6.4 mm) thick with edges 12 inches (305 mm) long and a vertex pointing upward, shall be located at entrances to men's toilet and bathing facilities. // A circle, ¼ inch (6.4 mm) thick and 12 inches (305 mm) in diameter, shall be located at entrances to women's toilet and bathing facilities.",
+   "state_url": "https://www.corada.com/documents/2025CBCPG/11b-216-signs ; https://www.corada.com/documents/2025CBCPG/11b-703-signs",
+   "federal_section": "216.8, 703.7",
+   "federal_requirement": "No geometric door symbols; only the International Symbol of Accessibility and directional signs where some restrooms are not accessible.",
+   "federal_quote": "Where existing toilet rooms or bathing rooms do not comply with 603, directional signs indicating the location of the nearest toilet room or bathing room complying with 603 within the facility shall be provided.",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "A California-only sign item on every restroom door; applies whether or not the room is accessible.",
+   "confirmed_on_official_page": {
+    "url": "https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf",
+    "quote": "Entrances leading to toilet rooms and bathing rooms complying with 11B-603 Toilet and Bathing Rooms shall be identified by a geometric symbol complying with 11B-703.7.2.6 Toilet and Bathing Room Geometric Symbols."
+   }
+  },
+  {
+   "point": "All-gender multi-user rooms and urinal compartments",
+   "state_section": "11B-213.2.4, 11B-213.3.1.2, 11B-216.8.2, 11B-216.8.3, 11B-605.5",
+   "state_requirement": "Multi-user all-gender rooms follow the stall-count rules above; where urinals are in compartments, 10% of urinal compartments (at least one) must be wheelchair accessible (66 x 66 inch maneuvering space), non-accessible compartment doors must swing in and self-close, the entrance needs the unisex symbol plus an \"ALL-GENDER MULTI-USER\" sign, and each compartment a \"TOILET\" or \"URINAL\" sign.",
+   "state_quote": "Where both toilet compartments and urinal compartments are provided, at least five percent of toilet compartments, but no fewer than one, shall comply with Section 11B-604.8.1 and at least ten percent of urinal compartments, but no fewer than one, shall comply with Section 11B-605.5. ... At all compartments not required to comply with Section 11B-604.8 or Section 11B-605.5, compartment doors shall be in-swinging and self-closing. // In addition, a sign complying with Sections 11B-703.1 through 11B-703.5 shall be provided stating \"ALL-GENDER MULTI-USER\".",
+   "state_url": "https://www.corada.com/documents/2025CBCPG/11b-213-toilet-facilities-and-bathing-facilities ; https://www.corada.com/documents/2025CBCPG/11b-216-signs ; https://www.corada.com/documents/2025CBCPG/11b-605-urinals",
+   "federal_section": "(none)",
+   "federal_requirement": "The 2010 ADA Standards have no provisions for all-gender multi-user rooms or urinal compartments.",
+   "federal_quote": "213.3.3 Urinals. Where more than one urinal is provided, at least one shall comply with 605.",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "Enclosed urinal stalls and per-stall signs are California-only scope.",
+   "confirmed_on_official_page": {
+    "url": "https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf",
+    "quote": "Entrances to all-gender multi-user toilet facilities shall be identified by a geometric symbol complying with 11B-703.7.2.6.3. as well as a sign complying with 11B-703.1 through 703.5 stating \"ALL-GENDER MULTI-USER\". (11B-216.8.2)"
+   }
+  },
+  {
+   "point": "Clustered single-user toilet rooms",
+   "state_section": "11B-213.2 Exception 4",
+   "state_requirement": "At least 50% of clustered single-user toilet rooms, and never fewer than one, must be accessible.",
+   "state_quote": "Where multiple single user toilet rooms are clustered at a single location, 50 percent, but no fewer than one, of the single user toilet rooms for each use at each cluster shall comply with Section 11B-603.",
+   "state_url": "https://www.corada.com/documents/2025CBCPG/11b-213-toilet-facilities-and-bathing-facilities",
+   "federal_section": "213.2 Exception 4",
+   "federal_requirement": "Same 50% but stated as a cap, with no one-room minimum in the text.",
+   "federal_quote": "Where multiple single user toilet rooms are clustered at a single location, no more than 50 percent of the single user toilet rooms for each use at each cluster shall be required to comply with 603.",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "Minor wording difference; relevant where single rooms replace stalls."
+  },
+  {
+   "point": "Baby changing stations in stalls",
+   "state_section": "11B-226.4",
+   "state_requirement": "A baby changing station may not be placed inside a wheelchair accessible toilet compartment or accessible urinal compartment in a multi-stall room.",
+   "state_quote": "Baby diaper changing stations shall not be located in toilet compartments complying with Section 11B-604.8 or urinal compartments complying with 11B-605.5 within a multiple accommodation toilet facility. (LADBS checklist item 24, restating 11B-226.4)",
+   "state_url": "https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf",
+   "federal_section": "604.8.1.1 advisory",
+   "federal_requirement": "Not prohibited; the advisory only says the station may not obstruct the minimum stall space.",
+   "federal_quote": "This space cannot be obstructed by baby changing tables or other fixtures or conveniences, except as specified at 604.3.2 (Overlap).",
+   "federal_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "what_it_means_for_partitions": "Changing stations go outside the accessible stall."
+  }
+ ],
+ "access_same_as_federal": [
+  "Ambulatory stall size (60 inches deep, 35 to 37 inches wide): 11B-604.8.2.1 matches 604.8.2.1.",
+  "Wheelchair stall minimum compartment size 60 x 56 (wall-hung) / 60 x 59 (floor-mounted) before the added California maneuvering space.",
+  "Toilet seat height 17 to 19 inches.",
+  "Children's stalls: 12 inch toe clearance and the children's dimensions in 11B-604.9 match 604.9 (California prints the age-group table as Table 11B-604.9).",
+  "Door pulls on both sides near the latch; coat hook and shelf heights."
+ ],
+ "restroom_rules": {
+  "single_user": {
+   "rule": "Every single-user toilet facility in a business, place of public accommodation or government agency must be identified as all-gender with signage that meets Title 24 (the unisex geometric symbol). The law does not require anyone to build a single-user restroom.",
+   "section": "Health and Safety Code section 118600 (AB 1732, operative 2017-03-01; subdivision (e) exempting construction jobsites added later)",
+   "quote": "All single-user toilet facilities in any business establishment, place of public accommodation, or state or local government agency shall be identified as all-gender toilet facilities by signage that complies with Title 24 of the California Code of Regulations, and designated for use by no more than one occupant at a time or for family or assisted use. ... \"single-user toilet facility\" means a toilet facility with no more than one water closet and one urinal with a locking mechanism controlled by the user.",
+   "url": "https://www.dgs.ca.gov/-/media/Divisions/DSA/Publications/bulletins/BU_17-01-01.pdf",
+   "official": true,
+   "also_read": "https://california.public.law/codes/health_and_safety_code_section_118600 (current text incl. subdivision (e): \"This section does not apply to construction jobsites, as described in subdivision (a) of Section 6722 of the Labor Code.\")",
+   "dsa_guidance_quote": "The law does not require a single-user toilet facility available to all genders to be constructed if a gender-specific single-user facility does not already exist.",
+   "plumbing_code": {
+    "section": "2025 California Plumbing Code 422.2.1",
+    "quote": "Single use toilet facilities, bathing facilities, and family or assisted use toilet facilities shall be identified with signage indicating use by either sex.",
+    "url": "https://gocodebook.com/library/us/ca/ca-plumbing-code/chapter-4-plumbing-fixtures-and-fixture-fittings/422.2-separate-facilities.-separate-toilet-facilities-shall",
+    "official": false
+   },
+   "building_code": {
+    "section": "CBC 11B-213.2.1 and 11B-703.7.2.6.3",
+    "quote": "Doors to unisex (single-user or family) toilet rooms and unisex bathing rooms shall have privacy latches. // A circle, ¼ inch (6.4 mm) thick and 12 inches (305 mm) in diameter with a ¼ inch (6.4 mm) thick triangle with a vertex pointing upward, superimposed on and geometrically inscribed within the circle ... shall be provided at entrances to unisex toilet and bathing facilities.",
+    "url": "https://www.corada.com/documents/2025CBCPG/11b-213-toilet-facilities-and-bathing-facilities ; https://www.corada.com/documents/2025CBCPG/11b-703-signs",
+    "official": false
+   }
+  },
+  "multi_user_all_gender": {
+   "allowed": true,
+   "rule": "Separate men's and women's rooms are the default, but a room with fixtures for all genders may replace them if every toilet is in a privacy compartment and urinals are in a privacy compartment or a visually separated private area. Compartment doors must lock from inside with a lock that shows \"locked\" from outside. A privacy compartment is floor-to-ceiling; the enforcing agency (in Los Angeles, LADBS) may allow compartments and doors that are not full height.",
+   "separate_facilities": {
+    "section": "2025 California Plumbing Code 422.2, Exception 4",
+    "quote": "Separate facilities shall not be required where rooms have fixtures designed for use by both sexes and the water closets are installed in privacy compartments. Urinals shall be located in a privacy compartment [BSC & DSA-SS], as defined, or separate private area and be visually separated from the remainder of the room. Water closet and urinal compartments shall comply with sections 422.6 and 422.7 respectively.",
+    "url": "https://gocodebook.com/library/us/ca/ca-plumbing-code/chapter-4-plumbing-fixtures-and-fixture-fittings/422.2-separate-facilities.-separate-toilet-facilities-shall",
+    "official": false
+   },
+   "stall_requirements": {
+    "section": "2025 California Plumbing Code 422.6, Exception 3 [BSC & DSA-SS]",
+    "quote": "Type A Security Requirements of IAPMO Z124.10 in all gender toilet or bathrooms shall not be allowed. Compartments for water closets located in all-gender multi-user bathrooms shall be privacy compartments, as defined. Each compartment door shall be lockable from the inside of the compartment, with a door locking device that is readily distinguishable as locked from the outside of the compartment. Privacy compartments and doors which are not full height or floor to ceiling may be permitted by the enforcing agency.",
+    "url": "https://gocodebook.com/library/us/ca/ca-plumbing-code/chapter-4-plumbing-fixtures-and-fixture-fittings/422.6-water-closet-compartment.-public-water-closets",
+    "official": false
+   },
+   "privacy_compartment_definition": {
+    "section": "2025 California Plumbing Code 218.0 [BSC & DSA-SS]",
+    "quote": "Privacy Compartment. A compartment enclosing a water closet or urinal provided with floor-to-ceiling pre-manufactured panels, continuous brackets at abutting panels, and a floor-to-ceiling door with continuous hinges and full height astragals. Privacy compartments may also be constructed with full-height walls and door with head jamb casing.",
+    "url": "https://gocodebook.com/library/us/ca/ca-plumbing-code/chapter-2-definitions/218.0-p",
+    "official": false,
+    "official_confirmation": {
+     "url": "https://www.dgs.ca.gov/-/media/Divisions/BSC/03-Rulemaking/2022-Intervening-Cycle/Commission-Meetings/2023-08-01/DSASS-05-22-FET-PT5.docx",
+     "note": "Same definition word for word in DSA's Final Express Terms for the 2022 intervening cycle (the text first adopted, effective 2024-07-01)."
+    }
+   },
+   "urinals": {
+    "section": "2025 California Plumbing Code 422.7 and Exception 2",
+    "quote": "Walls or partitions shall extend from not less than 12 inches (305 mm) above the finished floor to not less than 60 inches (1524 mm) above the finished floor. Walls shall extend outward from the wall surface not less than 18 inches (457 mm). ... Urinals in all gender toilet rooms not located in a separate private area shall be privacy compartments, as defined.",
+    "url": "https://gocodebook.com/library/us/ca/ca-plumbing-code/chapter-4-plumbing-fixtures-and-fixture-fittings/422.7-urinal-partitions",
+    "official": false
+   },
+   "ordinary_stalls": {
+    "section": "2025 California Plumbing Code 422.6",
+    "quote": "Public water closets shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy.",
+    "url": "https://gocodebook.com/library/us/ca/ca-plumbing-code/chapter-4-plumbing-fixtures-and-fixture-fittings/422.6-water-closet-compartment.-public-water-closets",
+    "official": false
+   },
+   "signage_and_access": {
+    "section": "CBC 11B-213.2.4 and 11B-216.8.2",
+    "quote": "Where multi-user all-gender toilet facilities are provided, they shall comply with Section 11B-213.3.1. // Geometric symbols complying with Section 11B-703.7.2.6.3 shall be provided at the entrance to all-gender multi-user toilet facilities. In addition, a sign complying with Sections 11B-703.1 through 11B-703.5 shall be provided stating \"ALL-GENDER MULTI-USER\".",
+    "url": "https://www.corada.com/documents/2025CBCPG/11b-213-toilet-facilities-and-bathing-facilities ; https://www.corada.com/documents/2025CBCPG/11b-216-signs",
+    "official": false,
+    "confirmed_on_official_page": {
+     "url": "https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf",
+     "quote": "Entrances to all-gender multi-user toilet facilities shall be identified by a geometric symbol complying with 11B-703.7.2.6.3. as well as a sign complying with 11B-703.1 through 703.5 stating \"ALL-GENDER MULTI-USER\". (11B-216.8.2)"
+    }
+   },
+   "occupancy_indicator": "Required in effect: the lock must be \"readily distinguishable as locked from the outside of the compartment\".",
+   "local_option_statute": {
+    "section": "Health and Safety Code section 118507 (SB 1194, 2022)",
+    "quote": "a city, county, or city and county may require new or renovated public toilet facilities within its jurisdiction to be designed, constructed, and identified for use by all genders ... This section shall become inoperative on the date that standards that address all-gender, multiuser facilities take effect in the California Building Standards Code",
+    "url": "https://california.public.law/codes/health_and_safety_code_section_118507",
+    "official": false,
+    "note": "Written to lapse once Title 24 has all-gender multi-user standards; whether it has lapsed was not confirmed on an official page."
+   }
+  },
+  "schools": {
+   "section": "Education Code section 35292.5(b) (SB 760, 2023)",
+   "rule": "By 2026-07-01 each public school (grades 1-12) that has more than one female and more than one male pupil restroom must provide at least one all-gender pupil restroom with Title 24 signage; an existing restroom may be used; use is voluntary.",
+   "quote": "On or before July 1, 2026, each school district, county office of education, and charter school ... shall ... Provide and maintain at least one all-gender restroom for pupil use that meets the following requirements: (i) Has signage identifying the bathroom facility as being open to all genders and in conformity with Title 24 of the California Code of Regulations.",
+   "url": "https://california.public.law/codes/education_code_section_35292.5",
+   "official": false
+  },
+  "restrictions_on_use": {
+   "rule": "No California statute or City of Los Angeles rule was found that restricts which restroom a person may use by sex assigned at birth. State guidance runs the other way: employees may use the restroom that corresponds to their gender identity.",
+   "quote": "All employees have a right to safe and appropriate restroom and locker room facilities. This includes the right to use a restroom or locker room that corresponds to the employee's gender identity, regardless of the employee's sex assigned at birth.",
+   "url": "https://calcivilrights.ca.gov/wp-content/uploads/sites/32/2022/11/The-Rights-of-Employees-who-are-Transgender-or-Gender-Nonconforming-Fact-Sheet_ENG.pdf",
+   "official": true,
+   "note": "California Civil Rights Department fact sheet. For pupils, Education Code 35292.5(b)(5) says the all-gender restroom rule \"shall not supplant subdivision (f) of Section 221.5\"; section 221.5(f) itself was not read."
+  },
+  "city_of_los_angeles": {
+   "rule": "No City of Los Angeles ordinance on all-gender restrooms was found (one search; nothing on LADBS pages). LADBS plan check applies the state rules: checklist items 17 and 67 cite 11B-213.2.4 and 11B-216.8.2. Los Angeles County has a policy for its own county buildings (single-user all-gender restrooms in new, leased or renovated county buildings), which does not bind private owners or the City.",
+   "url": "https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf",
+   "quote": "Where multi-user all gender toilet facilities and provided, they shall comply with 11B-213.3.1. (11B-213.2.4)",
+   "official": true
+  },
+  "confidence": "medium",
+  "confidence_note": "HSC 118600 read in DSA's official bulletin (high). Plumbing Code 422.2/422.6/422.7/218.0 and the other statutes read on secondary copies (gocodebook.com, california.public.law) because IAPMO/ICC and leginfo block scripts; the privacy compartment definition matches DSA's official express terms."
+ },
+ "sales_tax": {
+  "rate": {
+   "combined_pct": 10.25,
+   "effective": "2026-10-01",
+   "location": "City of Los Angeles (no city district tax, so a downtown address has the Los Angeles County rate)",
+   "quote": "California City & County Sales & Use Tax Rates (effective October 1, 2026) ... Los Angeles 10.250% Los Angeles City",
+   "url": "https://cdtfa.ca.gov/taxes-and-fees/rates.aspx",
+   "official": true,
+   "parts": [
+    {
+     "part": "Statewide base (state 6.00% + local 1.25%, of which 1.00% city/county operations and 0.25% county transportation)",
+     "pct": 7.25,
+     "quote": "Total: 7.25% State/Local Total Statewide Base Sales and Use Tax Rate",
+     "url": "https://cdtfa.ca.gov/taxes-and-fees/sut-rates-description.htm"
+    },
+    {
+     "part": "Los Angeles County Transportation Commission (district)",
+     "pct": 0.5,
+     "effective": "1982-07-01"
+    },
+    {
+     "part": "Los Angeles County Transportation Commission (district)",
+     "pct": 0.5,
+     "effective": "1991-04-01"
+    },
+    {
+     "part": "Los Angeles County Metro Transportation Authority (district)",
+     "pct": 0.5,
+     "effective": "2009-07-01"
+    },
+    {
+     "part": "Los Angeles County Traffic Improvement Plan (district)",
+     "pct": 0.5,
+     "effective": "2017-07-01"
+    },
+    {
+     "part": "Los Angeles County Affordable Housing, Homelessness Solutions, and Prevention Now Transactions and Use Tax (district; replaced the 0.25% Measure H, which ended 2025-03-31)",
+     "pct": 0.5,
+     "effective": "2025-04-01"
+    },
+    {
+     "part": "Los Angeles County General Retail Transactions and Use Tax (district)",
+     "pct": 0.5,
+     "effective": "2026-10-01"
+    }
+   ],
+   "parts_sum_check": "7.25 + 6 x 0.50 = 10.25",
+   "parts_url": "https://cdtfa.ca.gov/formspubs/cdtfa105.pdf",
+   "parts_quote": "Los Angeles County General Retail Transactions and Use Tax 0.50% 10-01-2026 (CDTFA-105 REV. 41 (10-26), District Taxes, Rates, and Effective Dates)",
+   "city_district_tax": "None listed for Los Angeles (City) in CDTFA-105; neighbouring cities differ (Santa Monica 11.25%, Long Beach 11.00%).",
+   "note": "The rate was 9.75% until 2026-09-30. The address lookup (maps.cdtfa.ca.gov) is an interactive map and was not run; the city rate comes from CDTFA's city and county table."
+  },
+  "shipped_without_installation_by_out_of_state_seller": {
+   "taxable": true,
+   "rule": "A supply-only sale of partitions is a retail sale of goods, not a construction contract, so tax applies to the selling price. An out-of-state seller with no California presence must register and collect California use tax, including the Los Angeles County district taxes, once its sales for delivery into California exceed $500,000 in the current or previous calendar year. Below that, the buyer owes the use tax directly.",
+   "quotes": [
+    {
+     "quote": "AB 147 amended Revenue and Taxation Code (RTC) section 6203 to require retailers located outside of California (remote sellers, including foreign sellers located outside of the United States) to register with the California Department of Tax and Fee Administration (CDTFA) and collect California use tax if, during the preceding or current calendar year, the total combined sales of tangible personal property for delivery in California by the retailer and all persons related to the retailer exceed $500,000.",
+     "url": "https://cdtfa.ca.gov/industry/wayfair.htm"
+    },
+    {
+     "quote": "AB 147 also amended RTC section 7262 to require all retailers, whether located inside or outside of California, to collect district use tax on all sales made for delivery in any district that imposes a district tax if, during the preceding or current calendar year, the total combined sales of tangible personal property in California or for delivery in California by the retailer and all persons related to the retailer exceed $500,000.",
+     "url": "https://cdtfa.ca.gov/industry/wayfair.htm"
+    },
+    {
+     "quote": "\"Construction contract\" does not include: ... 2. The furnishing of tangible personal property under what is otherwise a construction contract if the person furnishing the property is not responsible under the construction contract for the final affixation or installation of the property furnished.",
+     "url": "https://cdtfa.ca.gov/lawguides/vol1/sutr/1521.html",
+     "section": "Regulation 1521(a)(1)(B)"
+    },
+    {
+     "quote": "In the case of materials purchased without tax from out-of-state vendors for use (not resale) in California, the tax liability arises when the materials enter California.",
+     "url": "https://cdtfa.ca.gov/formspubs/pub9.pdf",
+     "section": "Publication 9 (February 2025)"
+    }
+   ],
+   "official": true,
+   "not_read": "Whether separately stated freight is taxable (Regulation 1628) and the exemption for sales to the U.S. government were not read."
+  },
+  "installation_labor_billed_separately": {
+   "taxable": false,
+   "rule": "Charges for labor to install property are excluded from the taxable amount; fabricating property in place is not installation.",
+   "quote": "Charges for labor or services used in installing or applying the property sold are excluded from the measure of the tax. Such labor and services do not include the fabrication of property in place.",
+   "section": "Regulation 1546(a)",
+   "url": "https://cdtfa.ca.gov/lawguides/vol1/sutr/1546.html",
+   "official": true
+  },
+  "furnish_and_install_contract": {
+   "rule": "Depends on whether installed partitions count as \"materials\" or \"fixtures\". Materials: under a lump sum contract the contractor is the consumer, pays tax on its cost of the partitions and charges the customer no sales tax. Fixtures: the contractor is the retailer and tax applies to the fixture's selling price (or the contractor's cost if no price is stated), not to installation labor.",
+   "quotes": [
+    {
+     "quote": "Construction contractors are always the consumers of materials that they furnish and install in the performance of a lump sum contract. Tax applies to the cost of materials to the construction contractor.",
+     "url": "https://cdtfa.ca.gov/formspubs/pub9.pdf",
+     "section": "Publication 9"
+    },
+    {
+     "quote": "Construction contractors are retailers of fixtures which they furnish and install in the performance of construction contracts and tax applies to their sales of the fixtures. ... If the contract does not state the sale price of the fixture, the sale price shall be deemed to be the cost price of the fixture to the contractor.",
+     "url": "https://cdtfa.ca.gov/lawguides/vol1/sutr/1521.html",
+     "section": "Regulation 1521(b)(2)(B)"
+    },
+    {
+     "quote": "\"Fixtures\" means and includes items which are accessory to a building or other structure and do not lose their identity as accessories when installed.",
+     "url": "https://cdtfa.ca.gov/lawguides/vol1/sutr/1521.html",
+     "section": "Regulation 1521(a)(5)"
+    },
+    {
+     "quote": "The contractor will also be considered the retailer of the materials if the contract explicitly provides for: 1. The transfer of title to the materials prior to installation, and 2. Separately state the sales price of the materials from the installation charge.",
+     "url": "https://cdtfa.ca.gov/formspubs/pub9.pdf",
+     "section": "Publication 9, time and material contracts"
+    }
+   ],
+   "classification_of_toilet_partitions": null,
+   "classification_note": "Toilet partitions are in neither list: Appendix A (materials) has doors, wallboard, builders' hardware; Appendix B (fixtures) has \"Cabinets, counters, and lockers (prefabricated)\" and \"Plumbing fixtures\". Annotation 190.1924 (a 1990 memo on a storage mezzanine, https://cdtfa.ca.gov/lawguides/annotations/190-1924.pdf) was opened but its conclusion on partitions was not read in full. Ask CDTFA.",
+   "official": true
+  },
+  "confidence": "high",
+  "confidence_note": "Rate, parts, remote seller rule, installation labor rule and contractor rules all read on cdtfa.ca.gov. The one open point is whether CDTFA treats installed toilet partitions as materials or fixtures."
+ },
+ "sources_read": [
+  {
+   "url": "https://www.bls.gov/news.release/ocwage.t01.htm",
+   "official": true,
+   "note": "BLS national OEWS table, May 2025: carpenters row"
+  },
+  {
+   "url": "https://www.onetonline.org/link/localwages/47-2031.00?zip=90012",
+   "official": false,
+   "note": "O*NET (DOL-sponsored) local wages for carpenters from BLS 2025 data: metro, state and U.S. percentiles"
+  },
+  {
+   "url": "https://www.bls.gov/regions/west/news-release/2026/occupationalemploymentandwages_losangeles_20260709.htm",
+   "official": true,
+   "note": "BLS Los Angeles area release, May 2025; major groups only"
+  },
+  {
+   "url": "https://www.bls.gov/oes/2023/may/oes472031.htm",
+   "official": true,
+   "note": "May 2023 carpenter page (older reference)"
+  },
+  {
+   "url": "https://www.bls.gov/oes/tables.htm",
+   "official": true,
+   "note": "Confirms May 2025 is the latest release and that area tables now live at data.bls.gov/oes"
+  },
+  {
+   "url": "https://www.dir.ca.gov/OPRL/2026-2/PWD/Determinations/Southern/SC-023-31-2.pdf",
+   "official": true,
+   "note": "DIR general prevailing wage determination SC-23-31-2-2026-2, Carpenter and Related Trades"
+  },
+  {
+   "url": "https://www.dir.ca.gov/OPRL/2026-2/PWD/SC-4-List.htm",
+   "official": true,
+   "note": "DIR 2026-2 carpenter determination index"
+  },
+  {
+   "url": "https://www.dir.ca.gov/OPRL/FAQ_PrevailingWage.html",
+   "official": true,
+   "note": "$1,000 threshold; bid advertisement date rule"
+  },
+  {
+   "url": "https://www.dir.ca.gov/Public-Works/PublicWorks.html",
+   "official": true,
+   "note": "Definition of public works; $30,000 apprenticeship threshold"
+  },
+  {
+   "url": "https://www.dir.ca.gov/Public-Works/Awarding-Bodies.html",
+   "official": true,
+   "note": "Awarding body includes city and school board"
+  },
+  {
+   "url": "https://www.dir.ca.gov/Public-Works/Contractor-Registration.html",
+   "official": true,
+   "note": "Registration fee"
+  },
+  {
+   "url": "https://california.public.law/codes/labor_code_section_1771",
+   "official": false,
+   "note": "Labor Code 1771, 1720, 1725.5, 1782 (leginfo returns 403)"
+  },
+  {
+   "url": "https://www.corada.com/documents/2025CBCPG/11b-604-water-closets-and-toilet-compartments",
+   "official": false,
+   "note": "Corada copy of DSA's 2025 advisory manual: 11B-213, 11B-216, 11B-604, 11B-605, 11B-703 with 2010 ADA text side by side"
+  },
+  {
+   "url": "https://dbs.lacity.gov/sites/default/files/efs/forms_and_publications/publications/checklists/building-code/2026/CL-BC-2026-026-Acc_Commercial.pdf",
+   "official": true,
+   "note": "LADBS Commercial Accessibility Plan Check Correction Sheets (2026 LABC), restating 11B sections"
+  },
+  {
+   "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "official": true,
+   "note": "2010 ADA Standards, sections 213, 216.8, 604"
+  },
+  {
+   "url": "https://www.dgs.ca.gov/BSC/Resources/2025-Title-24-California-Code-Changes/2025-Part-2-Chapter-11B-Accessibility-to-Public-Buildings",
+   "official": true,
+   "note": "BSC summary of 2025 Chapter 11B changes (nothing on stalls beyond removal of 11B-213.2 Exception 5)"
+  },
+  {
+   "url": "https://www.dgs.ca.gov/-/media/Divisions/DSA/Publications/bulletins/BU_17-01-01.pdf",
+   "official": true,
+   "note": "DSA bulletin quoting HSC 118600 and answering FAQs"
+  },
+  {
+   "url": "https://california.public.law/codes/health_and_safety_code_section_118600",
+   "official": false,
+   "note": "HSC 118600, 118507; Education Code 35292.5"
+  },
+  {
+   "url": "https://gocodebook.com/library/us/ca/ca-plumbing-code/chapter-4-plumbing-fixtures-and-fixture-fittings/422.2-separate-facilities.-separate-toilet-facilities-shall",
+   "official": false,
+   "note": "2025 California Plumbing Code 422.2, 422.6, 422.7, 218.0 (third-party copy)"
+  },
+  {
+   "url": "https://www.dgs.ca.gov/-/media/Divisions/BSC/03-Rulemaking/2022-Intervening-Cycle/Commission-Meetings/2023-08-01/DSASS-05-22-FET-PT5.docx",
+   "official": true,
+   "note": "DSA final express terms that first added the privacy compartment definition and 422.2 Exception 4"
+  },
+  {
+   "url": "https://www.cityofgrassvalley.com/sites/main/files/file-attachments/part_5_cpc.pdf",
+   "official": false,
+   "note": "Building officials' summary of 2025 Plumbing Code changes to 422.1, 422.2, 422.6"
+  },
+  {
+   "url": "https://calcivilrights.ca.gov/wp-content/uploads/sites/32/2022/11/The-Rights-of-Employees-who-are-Transgender-or-Gender-Nonconforming-Fact-Sheet_ENG.pdf",
+   "official": true,
+   "note": "Civil Rights Department fact sheet on restroom access at work"
+  },
+  {
+   "url": "https://cdtfa.ca.gov/taxes-and-fees/rates.aspx",
+   "official": true,
+   "note": "City and county rates effective 2026-10-01"
+  },
+  {
+   "url": "https://cdtfa.ca.gov/formspubs/cdtfa105.pdf",
+   "official": true,
+   "note": "District taxes, rates and effective dates (REV. 41, 10-26)"
+  },
+  {
+   "url": "https://cdtfa.ca.gov/taxes-and-fees/sut-rates-description.htm",
+   "official": true,
+   "note": "Parts of the 7.25% statewide rate"
+  },
+  {
+   "url": "https://cdtfa.ca.gov/industry/wayfair.htm",
+   "official": true,
+   "note": "Remote seller use tax collection, $500,000 threshold"
+  },
+  {
+   "url": "https://cdtfa.ca.gov/lawguides/vol1/sutr/1521.html",
+   "official": true,
+   "note": "Regulation 1521, construction contractors, appendices A and B"
+  },
+  {
+   "url": "https://cdtfa.ca.gov/lawguides/vol1/sutr/1546.html",
+   "official": true,
+   "note": "Regulation 1546, installation labor"
+  },
+  {
+   "url": "https://cdtfa.ca.gov/lawguides/vol1/sutr/1684.html",
+   "official": true,
+   "note": "Regulation 1684(b)(4), $500,000 rule"
+  },
+  {
+   "url": "https://cdtfa.ca.gov/formspubs/pub9.pdf",
+   "official": true,
+   "note": "Publication 9, Construction and Building Contractors (February 2025)"
+  }
+ ],
+ "blocked_sources": [
+  "bls.gov OEWS area and occupation pages, download files and the public API (403 / daily limit / JavaScript app)",
+  "leginfo.legislature.ca.gov (403)",
+  "codes.iccsafe.org 2025 CBC (403)",
+  "DSA Access Compliance Reference Materials page (404)",
+  "labormarketinfo.edd.ca.gov (503)"
+ ],
+ "to_confirm": [
+  "BLS: May 2025 MEAN hourly wage for carpenters in Los Angeles-Long Beach-Anaheim (open https://data.bls.gov/oes/#/area/0031080/2025 in a browser, row 47-2031) and confirm the $36.41 median there; then fill pct_vs_us_mean against the U.S. mean of $31.55.",
+  "DIR Office of the Director - Research Unit, (415) 703-4774: the predetermined carpenter rate after 2027-06-30, and whether DIR classifies toilet partition installation under Carpenter or another craft's scope of work in Los Angeles County.",
+  "City of Los Angeles Bureau of Contract Administration: the City's own prevailing wage rule for city-funded work and any dollar threshold; LAUSD for its labor compliance program.",
+  "Read 2025 CBC Chapter 11B on the ICC site or in DSA's manual in a browser to confirm the quoted 11B wording (read here on Corada's copy), including whether any 2025 intervening-cycle supplement changes 11B-604.",
+  "Read 2025 California Plumbing Code 422.2, 422.6, 422.7 and 218.0 on the official IAPMO/BSC publication (read here on gocodebook.com).",
+  "LADBS: whether it accepts all-gender multi-user compartments that are not full height (the code leaves this to the enforcing agency), and whether the 2026 Los Angeles Plumbing Code amends section 422.",
+  "leginfo.legislature.ca.gov in a browser: current text of HSC 118600 and Education Code 35292.5 and 221.5(f); whether HSC 118507 has lapsed.",
+  "Los Angeles City Clerk / LAMC: confirm there is no city ordinance on all-gender restrooms (none found in one search).",
+  "CDTFA, 1-800-400-7115: are installed toilet partitions 'materials' or 'fixtures' under Regulation 1521; is separately stated freight taxable; confirm 10.25% for the specific delivery address at maps.cdtfa.ca.gov."
+ ]
+}

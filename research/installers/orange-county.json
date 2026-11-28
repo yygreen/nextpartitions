@@ -1,0 +1,513 @@
+{
+ "area": "orange-county",
+ "found_count": 16,
+ "sources_tried": [
+  "Seed file orange-county.json (maps + web): worked; main source of candidates",
+  "Company websites via WebFetch: worked for Penner, RPS, Toilet Partitions Experts, Urban Specialties, Harrigan's, Preferred, Thomas, Pabst Leyton, Accu Tec (lockers manufacturer only, excluded), American Partitions (modular offices, excluded), PSI3G (operable walls, excluded), Partition Pros (DFW crew, excluded), IDEAS; returned 503 / connection reset for pnspros.com, weisrobart.com, ajconstructionspecialties.com, masterbuilding.net, laminatingtech.com",
+  "Bobrick Find-a-Rep: page loaded but dropdown results empty (JS); no reps read",
+  "Hadrian rep locator: 404",
+  "ASI, Scranton, Bradley, Metpar, General Partitions, Ampco locators: not tried (search cap / time)",
+  "The Blue Book (thebluebook.com iProView): 403 blocked",
+  "MapQuest listing (Anchor Construction Specialties): host blocked by session network",
+  "prelien.co (public CSLB data aggregator): worked for license/city checks",
+  "AGC San Diego member directory 10600 Partitions: worked (IDEAS found; others mostly SD general contractors, not included)",
+  "Raymond Group site: worked",
+  "Magnum Drywall Division 10: worked but HQ San Jose, SoCal office city not stated; excluded",
+  "Facebook (Empire Partitions): loaded but no usable details",
+  "WebSearch: 8 of 8 used (toilet partition installation OC; Division 10 contractor Anaheim/Santa Ana/Irvine; Anchor Construction Specialties; restroom partitions installer SoCal; Yelp/BBB OC cities (no Yelp/BBB hits); C-61 license OC; prelien named firms; bathroom partition installers Santa Ana/Tustin/Irvine)",
+  "Yelp/BBB: no relevant pages surfaced in search",
+  "BuildingConnected / Procore public profiles: not reached"
+ ],
+ "candidates": [
+  {
+   "name": "Penner Partitions Inc",
+   "base_city": "Anaheim",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Weis/Robart",
+    "Hadrian",
+    "Mills",
+    "Bradley",
+    "Bobrick",
+    "AJW"
+   ],
+   "phone": "(714) 666-0822",
+   "email": "sales@pennerpartitions.com",
+   "contact_page": "https://pennerpartitions.com/contact-us/",
+   "website": "https://www.pennerpartitions.com/",
+   "partition_evidence": "Homepage says it provides and installs toilet partitions and offers to deliver and install; project list includes LAUSD, airports, hotels, Federal Reserve Bank.",
+   "red_flags": [
+    "Stocking distributor of partitions: strong buy-around risk",
+    "Same Anaheim address as Weis/Robart Partitions (manufacturer); likely affiliated"
+   ],
+   "evidence_urls": [
+    "https://www.pennerpartitions.com/",
+    "https://pennerpartitions.com/contact-us/",
+    "https://sweets.construction.com/swts_content_files/2166/P276252.htm"
+   ],
+   "reason": "Anaheim partition distributor that also installs for commercial and public clients; qualifies on installation but sells partitions itself (license 924223 listed on contact page).",
+   "added_by_checker": false,
+   "license": {
+    "name": "Penner Partitions Inc",
+    "area": "orange-county",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "license_number": "924223",
+    "source_url": "http://www.pennerpartitions.com/",
+    "note": "The site shows 'License: 924223' and 'DIR: 1000004040'. CSLB is reCAPTCHA-gated; verify by hand. Unincorporated OC has no county license."
+   },
+   "score": 70
+  },
+  {
+   "name": "RPS Building Specialties (Ramirez Partition Specialties, Inc.)",
+   "base_city": "Tustin",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(714) 381-4196",
+   "contact_page": "https://www.rampartitions.com/#contact",
+   "website": "https://www.rampartitions.com/",
+   "rating": 5,
+   "review_source": "Google (as shown on company site)",
+   "partition_evidence": "Site says it specializes in supply and installation of commercial restroom partitions (powder-coated, HDPE, phenolic, stainless, compact laminate).",
+   "red_flags": [
+    "Supplies partitions as well as installs (buy-around risk)",
+    "Rating shown on own site only; review count not stated"
+   ],
+   "evidence_urls": [
+    "https://www.rampartitions.com/"
+   ],
+   "reason": "Tustin-based commercial restroom partition supplier and installer serving Orange, LA, San Diego, Riverside and San Bernardino counties.",
+   "added_by_checker": false,
+   "license": {
+    "name": "RPS Building Specialties (Ramirez Partition Specialties, Inc.)",
+    "area": "orange-county",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "source_url": "https://www.rampartitions.com/",
+    "note": "No license number found on the site. CSLB is reCAPTCHA-gated; search by name by hand. Base: Tustin."
+   },
+   "score": 70
+  },
+  {
+   "name": "Toilet Partitions Experts Inc",
+   "base_city": "Santa Ana",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "714 909 8855",
+   "email": "sales@toiletpartitionsexperts.com",
+   "contact_page": "https://www.toiletpartitionsexperts.com/contact-us/",
+   "website": "https://www.toiletpartitionsexperts.com/",
+   "partition_evidence": "Site offers complete installation of new toilet partitions and accessories, removal, modification and service calls; CSLB Lic. 1098283 (C-61/D-34 per prelien.co).",
+   "red_flags": [
+    "Says all material types are in inventory (sells partitions)",
+    "Third-party license listing shows expiration Oct 31, 2026, conflicting status; confirm on CSLB"
+   ],
+   "evidence_urls": [
+    "https://www.toiletpartitionsexperts.com/",
+    "https://www.toiletpartitionsexperts.com/contact-us/",
+    "https://www.prelien.co/contractor/toilet-partitions-experts-inc-1098283"
+   ],
+   "reason": "Santa Ana partition installer with a C-61/D-34 license; installs and services toilet partitions. License renewal should be confirmed.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Toilet Partitions Experts Inc",
+    "area": "orange-county",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "license_number": "1098283",
+    "source_url": "https://www.toiletpartitionsexperts.com/",
+    "note": "The site shows 'CSLB Lic. No. 1098283'. CSLB is reCAPTCHA-gated; verify by hand."
+   },
+   "score": 65
+  },
+  {
+   "name": "Harrigan's Toilet Partitions, Inc.",
+   "base_city": "Rancho Cucamonga",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "phone": "(909) 879-0400",
+   "email": "harrigans@harrigansinc.com",
+   "contact_page": "http://www.harrigansinc.com/contact",
+   "website": "http://www.harrigansinc.com/",
+   "partition_evidence": "Homepage: 'Distributor & Installer', expert installation of toilet partitions and urinal screens for commercial restroom projects; CA License #935358.",
+   "red_flags": [
+    "Distributor of partitions (buy-around risk)"
+   ],
+   "evidence_urls": [
+    "http://www.harrigansinc.com/",
+    "http://www.harrigansinc.com/contact"
+   ],
+   "reason": "Commercial toilet partition distributor and installer serving Southern California since 2003, about 30 miles from the area center.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Harrigan's Toilet Partitions, Inc.",
+    "area": "orange-county",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "license_number": "935358",
+    "source_url": "http://www.harrigansinc.com/",
+    "note": "The site shows 'LIC. #935358'. CSLB is reCAPTCHA-gated; verify by hand."
+   },
+   "score": 65
+  },
+  {
+   "name": "Inland Empire Architectural Specialties, Inc. (IDEAS)",
+   "base_city": "Riverside",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [
+    "Bobrick",
+    "Bradley/Mills",
+    "General Partitions",
+    "Global Partitions",
+    "Accu Tec",
+    "Scranton/Comtec"
+   ],
+   "phone": "951-781-0700",
+   "contact_page": "https://ideas-ca.com/contact/",
+   "website": "http://www.ideas-ca.com",
+   "partition_evidence": "Restroom Partitions listed under its Division 10 services; mission says it has provided and installed products; installer photo on homepage.",
+   "red_flags": [
+    "Provides products from partition manufacturers (supplier, buy-around risk)",
+    "Service area not stated"
+   ],
+   "evidence_urls": [
+    "http://www.ideas-ca.com"
+   ],
+   "reason": "Riverside commercial Division 10 contractor listing restroom partitions and installing what it provides; about 30 miles from the area center.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Inland Empire Architectural Specialties, Inc. (IDEAS)",
+    "area": "orange-county",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "source_url": "https://www.ideas-ca.com/",
+    "note": "No license number found on the site. CSLB is reCAPTCHA-gated; search by name by hand."
+   },
+   "score": 65
+  },
+  {
+   "name": "Pabst Leyton | Bathroom Partitions & Installation",
+   "base_city": "unknown (Southern California)",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "(951) 576-7901",
+   "email": "leytoncpabst@gmail.com",
+   "contact_page": "https://www.pabstleyton.com/request-a-quote",
+   "website": "http://www.pabstleyton.com/",
+   "partition_evidence": "Site says it delivers and installs bathroom partitions for commercial facilities as a specialized commercial contractor for GCs.",
+   "red_flags": [
+    "Direct importer of phenolic panels (sells partitions)",
+    "Base city not stated",
+    "Uses a Gmail address"
+   ],
+   "evidence_urls": [
+    "http://www.pabstleyton.com/"
+   ],
+   "reason": "Commercial partition supply-and-install contractor that lists Orange County in its service area; base city unconfirmed.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Pabst Leyton | Bathroom Partitions & Installation",
+    "area": "orange-county",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "source_url": "http://www.pabstleyton.com/",
+    "note": "No license number found on the site. CSLB is reCAPTCHA-gated; search by name by hand."
+   },
+   "score": 63
+  },
+  {
+   "name": "Thomas Partitions and Specialties, Inc.",
+   "base_city": "Altadena",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Bobrick",
+    "Hadrian",
+    "Accu-Tec",
+    "ASI",
+    "Bradley",
+    "Scranton Products",
+    "Metpar"
+   ],
+   "phone": "323-256-8666",
+   "email": "estimating@thompart.com",
+   "contact_page": "http://thompart.com/contact",
+   "website": "http://thompart.com/",
+   "partition_evidence": "Services page: 'From selection to installation', factory-certified installers; commercial restroom partitions. CSLB 613974.",
+   "red_flags": [
+    "Distributes all major washroom lines (sells partitions)",
+    "Service area not stated; about 40 miles from area center"
+   ],
+   "evidence_urls": [
+    "http://thompart.com/",
+    "http://thompart.com/services",
+    "http://thompart.com/contact"
+   ],
+   "reason": "Commercial partition distributor and installer in Altadena; just beyond 30 miles and the site doesn't say it serves Orange County.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Thomas Partitions and Specialties, Inc.",
+    "area": "orange-county",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "license_number": "613974",
+    "source_url": "http://thompart.com/",
+    "note": "The site shows 'CSLB 613974' and an Altadena base. CSLB is reCAPTCHA-gated; verify by hand."
+   },
+   "score": 60
+  },
+  {
+   "name": "Preferred Construction Specialties, Inc.",
+   "base_city": "Anaheim",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Koala Kare",
+    "Gamco"
+   ],
+   "phone": "(714) 528-4300",
+   "email": "office@preferredspecialties.com",
+   "contact_page": "http://www.preferredspecialties.com/contact_us.html",
+   "website": "http://www.preferredspecialties.com/",
+   "partition_evidence": "Homepage says it provides a complete range of Division 10 services; toilet partitions not named on pages read.",
+   "red_flags": [
+    "Sister site sells washroom accessories"
+   ],
+   "evidence_urls": [
+    "http://www.preferredspecialties.com/",
+    "http://www.preferredspecialties.com/contact_us.html"
+   ],
+   "reason": "Anaheim Division 10 contractor; partition installation likely but not shown on pages read (services page returned not found).",
+   "added_by_checker": false,
+   "license": {
+    "name": "Preferred Construction Specialties, Inc.",
+    "area": "orange-county",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "source_url": "http://www.preferredspecialties.com/",
+    "note": "No license number found on the site. CSLB is reCAPTCHA-gated; search by name by hand."
+   },
+   "score": 30
+  },
+  {
+   "name": "Urban Specialties - Toilet Partitions",
+   "base_city": "Tustin",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(714) 477-1590",
+   "email": "info@urbanspecialties.net",
+   "contact_page": "http://urbanspecialties.net/",
+   "website": "http://urbanspecialties.net/",
+   "partition_evidence": "Site says it supplies toilet partitions for any building type; no installation service stated.",
+   "red_flags": [
+    "Supplier of partitions; installation not confirmed"
+   ],
+   "evidence_urls": [
+    "http://urbanspecialties.net/"
+   ],
+   "reason": "Orange County partition supplier; whether it installs is unproven.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Urban Specialties - Toilet Partitions",
+    "area": "orange-county",
+    "status": "not_online",
+    "registry": "California CSLB license lookup",
+    "source_url": "http://urbanspecialties.net/",
+    "note": "The site reset the connection, so it could not be read. CSLB is reCAPTCHA-gated; search by name by hand."
+   },
+   "score": 10
+  },
+  {
+   "name": "Raymond Group (Orange office)",
+   "base_city": "Orange",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "website": "https://www.raymondgroup.com/",
+   "evidence_urls": [
+    "https://www.raymondgroup.com/",
+    "https://www.raymondgroup.com/office-locations/"
+   ],
+   "reason": "Framing, drywall, lath and plaster contractor; no toilet partition or Division 10 work mentioned.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Weis/Robart Partitions, Inc.",
+   "base_city": "Anaheim",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Weis/Robart"
+   ],
+   "website": "http://weisrobart.com/",
+   "red_flags": [
+    "Partition manufacturer, not an installer",
+    "Website returned 503"
+   ],
+   "evidence_urls": [
+    "https://www.arcat.com/company/weis-robart-partitions-inc-36477",
+    "https://sweets.construction.com/swts_content_files/2166/P276252.htm"
+   ],
+   "reason": "Listed on Arcat/Sweets as a toilet partition manufacturer/supplier; no installation evidence. Installation runs through affiliate Penner Partitions.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Partitions & Specialty Pros",
+   "base_city": "Chino",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "website": "http://pnspros.com/",
+   "red_flags": [
+    "Website returned 503; no other listing found"
+   ],
+   "evidence_urls": [
+    "http://pnspros.com/"
+   ],
+   "reason": "No evidence could be read: site unavailable and search found nothing. Recheck later.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  },
+  {
+   "name": "Empire Partitions And Specialties Inc.",
+   "base_city": "Canyon Lake",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "website": "https://www.facebook.com/EmpirePartitionsAndSpecialties/",
+   "red_flags": [
+    "Facebook page showed only the name; Bluebook listing blocked (403)"
+   ],
+   "evidence_urls": [
+    "https://www.facebook.com/EmpirePartitionsAndSpecialties/"
+   ],
+   "reason": "Name suggests partitions and a search snippet shows an Orange County project, but no scope or installation evidence could be read. Recheck later.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  },
+  {
+   "name": "AJ Construction Specialties",
+   "base_city": "unknown",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "website": "http://ajconstructionspecialties.com/",
+   "red_flags": [
+    "Website returned 503; no listing found in search"
+   ],
+   "evidence_urls": [
+    "http://ajconstructionspecialties.com/"
+   ],
+   "reason": "No evidence of the business or its work could be found.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  },
+  {
+   "name": "YTI Enterprises, Inc. (Laminating Technologies)",
+   "base_city": "unknown",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "website": "http://laminatingtech.com/",
+   "red_flags": [
+    "Website returned 503"
+   ],
+   "evidence_urls": [
+    "http://laminatingtech.com/"
+   ],
+   "reason": "Website unavailable; no evidence of partition installation found.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  },
+  {
+   "name": "Anchor Construction Specialties Inc.",
+   "base_city": "unknown",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "red_flags": [
+    "No website given; search found nothing"
+   ],
+   "evidence_urls": [],
+   "reason": "No trace of the business found in search.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

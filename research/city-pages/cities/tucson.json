@@ -1,0 +1,321 @@
+{
+ "slug": "tucson",
+ "city": "Tucson",
+ "state": "AZ",
+ "checked": "2026-11-24",
+ "codes": {
+  "building": {
+   "name": "2024 International Building Code with City of Tucson amendments",
+   "edition": "2024",
+   "local_amendments": true,
+   "effective": "2026-01-01",
+   "url": "https://www.tucsonaz.gov/Departments/Planning-Development-Services/Building-Safety/Building-Codes",
+   "quote": "\"The 2023/2024 editions of these publications became effective January 1, 2026\" \"with the energy code following on July 1, 2026.\" [...] \"Local amendments to these model codes are listed below.\" \"Adopting Local Amendments to the Building Code is authorized by Ordinance #12171.\" [table] International Building Code | 2024 | 1/1/26",
+   "quote_note": "The city's site refuses direct downloads (HTTP 403 to curl); the page was read through the WebFetch tool, which returns the page's sentences in short quoted segments. The amendment PDFs were retrieved the same way and read in full with pdftotext.",
+   "amendments_url": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-building-code-amendments.pdf",
+   "amendments_quote": "City of Tucson Amendments to the 2024 International Building Code. Note: This document contains amendments from Ordinance 12171 and 12210",
+   "adoption_url": "https://www.tucsonaz.gov/Departments/Planning-Development-Services/PDSD-News/Updated-Building-Codes-Now-in-Effect",
+   "adoption_quote": "[news item dated January 1, 2026] \"approved updates to the National Fire Protection Association and International Code Council model building codes\" \"on June 3 2025, with an effective date of January 1, 2026.\" [...] \"All permit applications submitted after January 1, 2026, must comply with the 2024 Codes.\"",
+   "transition_quote": "\"All permit applications and related submittals received on or after July 1, 2026, must comply with\" \"the 2024 International Codes and amendments as adopted by the City of Tucson and in effect as of that date,\" \"including the 2023 National Electrical Code where applicable.\" \"Applications and related submittals received before July 1, 2026, will continue to be reviewed under the code editions\" \"in effect at the time of submittal, unless approved by the Building Official.\"",
+   "transition_note": "The codes page (July 1, 2026) and the January 1, 2026 news item (January 1, 2026) give different cut-over dates for permit submittals. Both dates have passed, so the 2024 codes apply to any new submittal today."
+  },
+  "plumbing": {
+   "name": "2024 International Plumbing Code with City of Tucson amendments (Appendix B adopted)",
+   "edition": "2024",
+   "local_amendments": true,
+   "effective": "2026-01-01",
+   "url": "https://www.tucsonaz.gov/Departments/Planning-Development-Services/Building-Safety/Building-Codes",
+   "quote": "[table] International Plumbing Code | 2024 | 1/1/26",
+   "amendments_url": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-plumbing-code-amendments.pdf",
+   "amendments_quote": "Exhibit E. City of Tucson Amendments to the 2024 International Plumbing Code. Chapter 1 Administration. DELETE Chapter 1 with the exception of Section 111. (Deleted sections are administered by the 2024 IBC, Chapter 1)",
+   "note": "Tucson uses the International Plumbing Code only; unlike Phoenix it does not offer the Uniform Plumbing Code as an alternative (IBC 101.4.3 is amended only to drop the private sewage disposal sentence)."
+  },
+  "accessibility_quote": "[codes page, Other Adopted Regulations] ICC A117.1 (Accessible and Usable Buildings and Facilities) | 2017 | 1/1/26. [IBC amendments] ADOPT all the following Appendices in their entirety: E (Supplemental Accessibility Requirements), G (Flood-Resistant Construction), I (Patio Covers), and J (Grading).",
+  "scheduled_change": null,
+  "scheduled_change_note": "None found. The last step of this code cycle, the 2024 International Energy Conservation Code, took effect July 1, 2026. The page says the city adopts model codes on a six-year cycle.",
+  "authority": "City of Tucson Planning and Development Services Department (PDSD), Tucson Development Center, 201 N. Stone Avenue; (520) 791-5550; pdsdinquiries@tucsonaz.gov",
+  "confidence": "high"
+ },
+ "fixtures": {
+  "city_amends": false,
+  "basis": "Arizona has no statewide code, so Tucson's adopted code sets the counts. Tucson adopts the 2024 International Plumbing Code and its amendment document (6 pages, read in full) changes nothing in Section 403, Table 403.1, Section 403.1.1, 403.1.2, 403.2 or 424.2. The only Chapter 4 amendments are 405.3.2 (shared lavatories for a bank of single-user rooms), 410.4 (drinking fountain substitute), new 412.13 (automatic faucets) and 423.3 (footbaths). The Tucson amendments to the 2024 International Building Code (10 pages, read in full) contain nothing on Chapter 29. So the unamended 2024 model text applies, and the Arizona state pack's model worked examples and table rows stand unchanged for Tucson. The model text was read on UpCodes' copy of the 2024 IPC as adopted by New Hampshire (secondary; UpCodes has no Tucson copy and ICC's site blocks automated access).",
+  "amendment": null,
+  "table_rows": {
+   "office": {
+    "quote": "2 | Business | Buildings for the transaction of business, nonmedical professional services, other services involving merchandise, office buildings, banks, light industrial and similar uses | 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "url": "https://up.codes/viewer/new_hampshire/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "restaurant": {
+    "quote": "Restaurants, banquet halls and food courts d | 1 per 75 | 1 per 75",
+    "url": "https://up.codes/viewer/new_hampshire/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "school": {
+    "quote": "3 | Educational | Educational facilities | 1 per 50 | 1 per 50",
+    "url": "https://up.codes/viewer/new_hampshire/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "split_rounding_quote": "To determine the occupant load of each sex, the total occupant load shall be divided in half. [...] Fractional numbers resulting from applying the fixture ratios of Table 403.1 shall be rounded up to the next whole number.",
+   "urinal_quote": "424.2 Substitution for Water Closets. In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent of the required water closets for males according to Table 403.1 in assembly and educational occupancies. Urinals shall not be substituted for more than 50 percent of the required water closets for males according to Table 403.1 in all other occupancies.",
+   "separate_rooms_quote": "403.2 Separate Facilities. Where plumbing fixtures are required, separate toilet facilities shall be provided for each sex. Exceptions: [...] Separate toilet facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. Separate toilet facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. Separate toilet facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer.",
+   "all_gender_count_quote": "Where multiple-user facilities are designed to serve all genders, the minimum fixture count shall be calculated 100 percent, based on total occupant load."
+  },
+  "worked_examples": [],
+  "worked_examples_note": "Not amended, so none are redone: the 12 worked examples in research/city-pages/states/AZ.json (model code, urinals up to 67% of men's toilets in restaurants and schools and 50% in offices) apply to Tucson as they stand. Toilet counts: office 1/1, 2/2, 3/3, 5/5; restaurant 1/1, 1/1, 2/2, 3/3; school 1/1, 1/1, 2/2, 4/4 at 50, 100, 200 and 400 occupants.",
+  "occupant_load": {
+   "quote": "Unconcentrated (tables and chairs) | 15 net [...] Business areas | 150 gross [...] Educational: Classroom area | 20 net",
+   "url": "https://up.codes/viewer/new_hampshire/ibc-2024/chapter/10/means-of-egress",
+   "note": "IBC Table 1004.5, 2024 edition, on UpCodes' New Hampshire copy (secondary). Tucson's IBC amendments have no amendment to Chapter 10."
+  },
+  "hdpe_fire": {
+   "required": true,
+   "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. [803.1.1:] Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1.",
+   "url": "https://up.codes/viewer/new_hampshire/ibc-2024/chapter/8/interior-finishes",
+   "note": "2024 IBC on UpCodes' New Hampshire copy (secondary). Tucson's IBC amendments jump from Chapter 7 (717.6) to Chapter 9 (903.2.3): nothing in Chapter 8 is amended or deleted. The text says 'used as an interior finish' and doesn't name toilet partitions."
+  },
+  "confidence": "medium",
+  "confidence_note": "That Tucson leaves these sections unamended is from the city's own amendment PDFs (high). The model text itself was read on UpCodes' New Hampshire copy of the 2024 editions, not on ICC's site and not on a Tucson-specific copy."
+ },
+ "permit": {
+  "exempt_list_quote": "[2024 IBC 105.2, model text, UpCodes copy] Exemptions from permit requirements of this code shall not be deemed to grant authorization for any work to be done in any manner in violation of the provisions of this code or any other laws or ordinances. Permits shall not be required for the following: Building: [...] 7. Painting, papering, tiling, carpeting, cabinets, counter tops and similar finish work. [...] 13. Nonfixed and movable fixtures, cases, racks, counters and partitions not over 5 feet 9 inches (1753 mm) in height. [Tucson amendments, city PDF] Section 105.2 Work exempt from permit (Building). REVISE item number 1 [...] REVISE item number 5 [...] REVISE item number 6 [...] REVISE item number 9 [...] REVISE the Building Section by ADDING new items number 14 to 19 as follows: 14. Any work accomplished under the auspices of and owned and controlled by the United States of America or the State of Arizona. 15. Amusement devices or structures located on a site for no more than 30 calendar days. 16. Devices used in manufacturing, processing, or fabricating normally used in industrial facilities. 17. Tents or membrane structures [...] 18. Replacement of roof covering for legally existing buildings with similar materials [...] 19. Detached ramadas/gazebos [...] 20. Residential window and door replacements in buildings legally permitted.",
+  "url": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-building-code-amendments.pdf",
+  "url_model_text": "https://up.codes/viewer/new_hampshire/ibc-2024/chapter/1/scope-and-administration",
+  "partitions_named": false,
+  "note": "Tucson leaves model items 7 and 13 as they are. Item 13 exempts only 'nonfixed and movable' partitions not over 5 feet 9 inches; toilet partitions or compartments are not named anywhere in the list or in the city's two plain-language exemption pages. The city's pages say interior finishes ('paint, tile, carpet, cabinets, or countertops') need no permit and that 'Commercial permits are required for tenant improvements, certificates of occupancy, and new commercial buildings.' The list doesn't decide the question for toilet partitions. Item 14 exempts work owned and controlled by the United States or the State of Arizona from city permits.",
+  "required_quote": "[2024 IBC 105.1, model text] Any owner or owner's authorized agent who intends to construct, enlarge, alter, repair, move, demolish or change the occupancy of a building or structure [...] shall first make application to the building official and obtain the required permit. [Tucson amendment] Section 105.1 Required. AMEND Section by ADDING the following sentence to the end of the paragraph to read: See amendments to Section 3303 for demolition permit requirements.",
+  "city_pages": [
+   {
+    "url": "https://www.tucsonaz.gov/Departments/Planning-Development-Services/Permits/Tucson-Permit-Exemptions",
+    "quote": "Interior finishes: \"Installing or replacing finishes like paint, tile, carpet, cabinets, or countertops does not require a permit\" (as long as plumbing or electrical systems aren't affected). The page does not mention partitions."
+   },
+   {
+    "url": "https://www.tucsonaz.gov/Departments/Planning-Development-Services/Permits/Building-Permit-Exemptions",
+    "quote": "Same table; no mention of partitions, cases, racks or counters."
+   },
+   {
+    "url": "https://www.tucsonaz.gov/Departments/Planning-Development-Services/Permits/Commercial-Permits",
+    "quote": "Commercial permits are required for tenant improvements, certificates of occupancy, and new commercial buildings."
+   }
+  ],
+  "office": "City of Tucson Planning and Development Services, Tucson Development Center, 201 N. Stone Avenue",
+  "phone": "520-791-5550",
+  "email": "pdsdinquiries@tucsonaz.gov",
+  "contact_url": "https://www.tucsonaz.gov/Shared-Contact-Content/PDSD-Contact",
+  "confidence": "medium",
+  "confidence_note": "The Tucson amendments are from the city's PDF; the unamended items 7 and 13 were read on UpCodes' New Hampshire copy of the 2024 IBC (New Hampshire adds items of its own after 13, which are not Tucson's)."
+ },
+ "restrooms_city": {
+  "rule": "No separate city ordinance on restroom signs was found. Tucson's adopted plumbing code (2024 IPC, these sections not amended) sets both rules: single-user and family toilet rooms must be identified as available to all persons regardless of sex, and a shared room for all persons is allowed in place of separate rooms where each toilet is in a compartment with a door and each urinal is in its own partitioned area; the count for such a room is worked on 100% of the occupants. Tucson adds one amendment of its own: where gender-neutral restrooms are a continuous bank of single-user rooms, the rooms may share lavatories placed directly outside them, provided the number of lavatories is not reduced.",
+  "quote": "[Tucson amendment, city PDF] Section 405.3.2 Public lavatories. REVISE Section by ADDING an exception as follows: Gender neutral restroom configurations that consist of a continuous bank of single user rooms may share lavatories provided the quantity of lavatories is not reduced and the lavatories are located directly outside the single user rooms. [...] [2024 IPC 403.1.2, UpCodes copy] Single-user toilet facilities and bathing rooms, and family or assisted-use toilet facilities and bathing rooms shall be identified as being available for use by all persons regardless of their sex. [...] [2024 IPC 403.2 exception 6, UpCodes copy] Separate toilet facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by all persons regardless of sex and privacy is provided for water closets in accordance with Section 405.3.4 and for urinals in accordance with Section 405.3.5. [405.3.4] Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy. [405.3.5] Each urinal utilized by the public or employees shall occupy a separate area with walls or partitions to provide privacy.",
+  "url": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-plumbing-code-amendments.pdf",
+  "url_secondary": "https://up.codes/viewer/new_hampshire/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+  "confidence": "medium",
+  "note": "One web search found no Tucson ordinance on single-user restroom signs. The Tucson City Code on American Legal Publishing returned HTTP 403 and was not searched, so absence is not confirmed."
+ },
+ "sales_tax": {
+  "combined": 0.087,
+  "parts": [
+   {
+    "name": "state",
+    "rate": 0.056
+   },
+   {
+    "name": "Pima County",
+    "rate": 0.005,
+    "note": "6.1% state and county combined in the Department's table (region code PMA), less the 5.6% state rate; combined rate dated 2017-08-01 in the Department's file"
+   },
+   {
+    "name": "City of Tucson",
+    "rate": 0.026,
+    "effective": "2018-03-01"
+   }
+  ],
+  "effective": "2018-03-01 (Tucson's 2.6% retail rate; the Pima County combined 6.1% row is dated 2017-08-01)",
+  "special_district": "The Department's Tucson table lists 'County Code: PMA/PAD': part of the city is in the Rio Nuevo District (PAD) instead of Pima (PMA). The Department's file gives the same 6.1% retail rate for PAD as for PMA, so the total is 8.7% in both. Which addresses fall in the district (the brief's downtown address) was not checked.",
+  "scheduled_change": null,
+  "scheduled_change_note": "The December 1, 2026 table lists changes only for Palo District, Camp Verde and Winslow. Tucson's rows in the November 2026 file have no end date.",
+  "url": "https://azdor.gov/sites/default/files/document/TPT_RATETABLE_12012026.pdf",
+  "url_csv": "https://azdor.gov/sites/default/files/document/TPT_RATETABLE_ALL_11012026.csv",
+  "quote": "Table 1 provides the tax rates which combine the state's transaction privilege tax rate of 5.6% and the county excise tax rate. [...] [Table 1, Pima (PMA)] 017 Retail 6.10% [...] [Table 5] Tucson TU PMA [...] Retail Sales 017 2.60 [...] Use Tax Purchases 029 2.60 [...] [CSV] PMA,PIMA,017,RETAIL,6.1,Percent,8/01/2017 [...] PAD,\"RIO NUEVO DISTRICT, PIMA\",017,RETAIL,6.1,Percent,8/01/2017 [...] TU,TUCSON,017,RETAIL,2.6,Percent,3/01/2018",
+  "not_done": "The Department's address lookup (aztaxes.gov) is a form and was not used.",
+  "confidence": "high"
+ },
+ "public_wage": {
+  "county": "Pima",
+  "basis": "Davis-Bacon",
+  "classification": "CARPENTER",
+  "basic_hourly": 33.19,
+  "fringe": 19.2,
+  "determination": "AZ20260040, modification 1 (Building)",
+  "date": "2026-05-18",
+  "rate_id": "CARP1912-001 07/01/2025",
+  "url": "https://sam.gov/wage-determination/AZ20260040/1",
+  "api_url": "https://sam.gov/api/prod/wdol/v1/wd/AZ20260040/1",
+  "quote": "General Decision Number: AZ20260040 05/18/2026. State: Arizona. Construction Types: Building. Counties: Arizona Counties of Pima. [...] Modification Number 1, Publication Date 05/18/2026 [...] CARP1912-001 07/01/2025 [...] CARPENTER...$ 33.19 19.20",
+  "city_rule": "Tucson has a living wage for 'employees of city contractors and sub-contractors providing services to the city', for hours worked on city property: $17.65 an hour where the contractor pays at least half the health premium, $19.40 otherwise, for calendar year 2026 (Tucson Procurement Code, Article XIV). The city's page doesn't say whether construction contracts are covered. Kept out of page text.",
+  "city_rule_url": "https://www.tucsonaz.gov/Departments/Business-Services-Department/Procurement/Living-Wage",
+  "city_rule_note": "Tucson passed a prevailing wage ordinance in January 2024 for larger city contracts. Per news reports and the Goldwater Institute seen in search results only (not read), the Arizona Court of Appeals ruled on February 27, 2026 that Phoenix and Tucson cannot require prevailing wages on city-funded work, and Tucson had not put its ordinance into effect. Kept out of page text.",
+  "confidence": "high"
+ },
+ "contractor": {
+  "quote": "Section 105.3 Application for Permit. REVISE Section by ADDING new items 8 as follows: 8. Identify the name of the person or contractor who will perform the work. When a licensed contractor is required by A.R.S., identify the license number or state the exemption of A.R.S. 32-1121 claimed which exempts the requirement for a licensed contractor to do the proposed work. [...] [Commercial Permits page] A licensed contractor must perform all commercial construction work.",
+  "note": "No city contractor licence appears in Tucson's amendments; the permit application asks for the state licence number or the claimed state exemption. The commercial submittal checklist asks for a letter with 'the contractor's R.O.C. number'. The install text follows research/local-rules and research/state-licensing as written.",
+  "url": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-building-code-amendments.pdf"
+ },
+ "page": {
+  "meta": "Commercial bathroom partitions delivered to Tucson job sites. Price your restroom, pick a material for the desert climate and see the rules that apply.",
+  "lead": "Commercial bathroom partitions for Tucson schools, campus buildings, clinics and resorts, shipped by freight to your job site.",
+  "fire_bullet": "- **Fire safety:** Tucson's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.",
+  "stall_bullet": "- **How many stalls:** Tucson sets the number of toilets by how many people use the building, and caps how many of the men's toilets may be urinals. The table below shows what that means.",
+  "extra_rule_bullets": [
+   "- **Tucson access rules:** alongside the federal standard, Tucson has adopted a national accessibility standard for buildings, in its 2017 edition."
+  ],
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** under Tucson's plumbing rules a one-person restroom must be marked as open to everyone. A shared all-gender room may take the place of separate men's and women's rooms if every toilet sits in its own compartment with a door and every urinal has its own partitioned area. Where a row of one-person rooms serves everyone, Tucson lets the rooms share sinks placed directly outside them, as long as the number of sinks is not reduced. A measure Arizona voters approved in November 2026 says that from January 1, 2027, a school or athletic association may not authorize anyone to use a restroom, locker room or shower room that is part of its athletics facilities and is not designated for that person's sex.",
+  "permit_bullet": "- **Permits:** Tucson requires a permit to alter a building unless the work is on its exempt list, and the city says commercial tenant improvements need one. The list covers painting, tiling, carpeting, cabinets, counter tops and similar finish work, and \"nonfixed and movable fixtures, cases, racks, counters and partitions not over 5 feet 9 inches\" high, but it doesn't name toilet partitions. Ask Tucson Planning and Development Services whether your replacement needs one. You don't need a permit to buy partitions.",
+  "confirm_office": "Tucson Planning and Development Services",
+  "stalls_intro": "Arizona has no statewide building rules, so Tucson's own rules decide. Tucson counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women. Every toilet needs a stall. Urinals are optional: in the men's room they may take the place of up to half of the toilets, or up to two thirds in restaurants and schools, so the table shows men's toilets as stalls.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building, and at least one stall in each room must be wheelchair accessible. An office designed for 25 people or fewer, a shop designed for 100 or fewer, and any building designed for 15 or fewer, doesn't need separate men's and women's rooms. Confirm the count with Tucson Planning and Development Services.",
+  "capacity": "To find your building's capacity, Tucson's building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or Tucson Planning and Development Services sets the final number.",
+  "install_rule": "Tucson requires a licensed contractor to perform all commercial construction work, and the permit application asks for the contractor's Arizona license number. Arizona requires a state Registrar of Contractors license for commercial installation work of $1,000 or more. Confirm what your project needs with Tucson Planning and Development Services. You don't need a permit to buy partitions.",
+  "faq_install_extra": "A contractor on a commercial job of $1,000 or more in Arizona needs a state Registrar of Contractors license.",
+  "public_jobs_bullet": "- **Public jobs:** Arizona has no wage law for public jobs, and state law bars cities, counties and school districts from requiring prevailing wages in their contracts. On federally funded work the federal rate applies: $33.19 an hour plus $19.20 in benefits for a carpenter on building work in Pima County.",
+  "sales_tax_bullet": "- **Sales tax:** 8.7% in Tucson: 5.6% state, 0.5% Pima County and 2.6% city.",
+  "buyers_extra": "- **Campus buildings, resorts and spas:** finishes that match the property in guest and public restrooms, HDPE or phenolic in pool, gym and locker room restrooms that are hosed down.",
+  "sources": [
+   "- Codes Tucson enforces: City of Tucson Planning and Development Services, [Building Codes](https://www.tucsonaz.gov/Departments/Planning-Development-Services/Building-Safety/Building-Codes) (2024 International Building Code and 2024 International Plumbing Code, effective January 1, 2026; ICC A117.1-2017; local amendments under Ordinance 12171) and [Updated Building Codes Now in Effect](https://www.tucsonaz.gov/Departments/Planning-Development-Services/PDSD-News/Updated-Building-Codes-Now-in-Effect) (approved by Mayor and Council June 3, 2025). Checked 2026-11-24.",
+   "- Toilet counts in Tucson: [City of Tucson Amendments to the 2024 International Plumbing Code](https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-plumbing-code-amendments.pdf) (no change to Table 403.1 or Sections 403.1.1, 403.1.2, 403.2 and 424.2; exception added to Section 405.3.2). The unamended table and sections were read on a [secondary copy of the 2024 International Plumbing Code](https://up.codes/viewer/new_hampshire/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings). Checked 2026-11-24.",
+   "- Floor area per person and the fire test for solid plastic: 2024 International Building Code as adopted by Tucson, Table 1004.5 and Sections 803.9 and 803.1.1 (NFPA 286), not amended by the [City of Tucson Amendments to the 2024 International Building Code](https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-building-code-amendments.pdf), read on a secondary copy of the 2024 edition ([Chapter 10](https://up.codes/viewer/new_hampshire/ibc-2024/chapter/10/means-of-egress), [Chapter 8](https://up.codes/viewer/new_hampshire/ibc-2024/chapter/8/interior-finishes)). Checked 2026-11-24.",
+   "- Permits and work exempt from a permit in Tucson: [City of Tucson Amendments to the 2024 International Building Code](https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-building-code-amendments.pdf), Sections 105.1, 105.2 and 105.3; the unamended items of Section 105.2 on a [secondary copy of the 2024 International Building Code](https://up.codes/viewer/new_hampshire/ibc-2024/chapter/1/scope-and-administration); City of Tucson, [Do I Need a Permit?](https://www.tucsonaz.gov/Departments/Planning-Development-Services/Permits/Tucson-Permit-Exemptions), [Commercial Permits](https://www.tucsonaz.gov/Departments/Planning-Development-Services/Permits/Commercial-Permits) and [Planning and Development Services contacts](https://www.tucsonaz.gov/Shared-Contact-Content/PDSD-Contact). Checked 2026-11-24.",
+   "- Sales tax in Tucson: Arizona Department of Revenue, [Transaction Privilege and Other Tax Rate Tables, effective December 1, 2026](https://azdor.gov/sites/default/files/document/TPT_RATETABLE_12012026.pdf) (5.6% state; 6.1% state and Pima County combined; Tucson retail 2.6%) and the [rate file for all business classifications, November 2026](https://azdor.gov/sites/default/files/document/TPT_RATETABLE_ALL_11012026.csv) (Tucson rate in effect since March 1, 2018). Checked 2026-11-24.",
+   "- Pima County carpenter rate on federally funded building work: [federal wage determination AZ20260040, modification 1, May 18, 2026](https://sam.gov/wage-determination/AZ20260040/1). Checked 2026-11-24."
+  ],
+  "official_names": "- The rules by their official names: 2010 ADA Standards for Accessible Design (adopted by A.A.C. R10-3-404 under the Arizonans with Disabilities Act, A.R.S. 41-1492 et seq.); ICC A117.1-2017 as adopted by the City of Tucson; 2024 International Building Code with City of Tucson amendments (Ordinances 12171 and 12210, in force since January 1, 2026), including Section 105.2 for work exempt from permits and Appendix E (Supplemental Accessibility Requirements); 2024 International Plumbing Code with City of Tucson amendments (in force since January 1, 2026); NFPA 286 for HDPE (International Building Code Section 803.9).",
+  "notes": [
+   "To confirm by phone before launch: whether replacing or adding toilet partitions in an existing commercial restroom needs a Tucson permit; the exempt list names only 'nonfixed and movable' partitions not over 5 feet 9 inches (Planning and Development Services, 520-791-5550, pdsdinquiries@tucsonaz.gov).",
+   "Tucson has no copy on UpCodes and ICC's site blocks automated access, so the unamended parts of Tucson's code (toilet table, urinal and separate-room rules, single-user signs, floor area per person, the HDPE fire-test section, exempt items 7 and 13) were read on UpCodes' New Hampshire copy of the 2024 editions: check once in a browser at codes.iccsafe.org.",
+   "The fire-test section says 'used as an interior finish' and doesn't name toilet partitions (same wording as other cities' pages).",
+   "tucsonaz.gov refuses direct downloads; its pages were read through a fetch tool that returns sentences in short quoted segments, and the amendment PDFs were read in full. Recheck the codes page wording in a browser.",
+   "The codes page says submittals from July 1, 2026 must follow the 2024 codes; the city's January 1, 2026 news item says applications after January 1, 2026. Both dates have passed.",
+   "Tucson's permit exempt list adds work 'owned and controlled by the United States of America or the State of Arizona'; left off the page.",
+   "Tucson's own prevailing wage ordinance (2024) was ruled unenforceable by the Arizona Court of Appeals on February 27, 2026 according to news reports; not read on an official page, so not in the page text.",
+   "Tucson has a living wage for employees of contractors providing services to the city ($17.65 or $19.40 an hour in 2026, by health cover); the city's page doesn't say whether construction is covered, so it is not on the page.",
+   "Part of Tucson is in the Rio Nuevo District (the Department of Revenue lists Tucson under county codes PMA and PAD); its file gives both the same combined state and county rate (6.1%), so 8.7% holds in both. Which addresses are in the district was not checked.",
+   "Tucson also requires automatic faucets on new or replacement lavatory faucets in commercial buildings and water-saving toilets and urinals (1.28 and 0.5 gallons a flush); not about partitions, left off the page.",
+   "What ICC A117.1-2017 changes for stalls compared with the federal standard was not read; the access bullet only says both apply."
+  ],
+  "skip_state_sources": [
+   "Model toilet counts",
+   "Floor area per person: International",
+   "in the model code"
+  ]
+ },
+ "sources_read": [
+  {
+   "url": "https://www.tucsonaz.gov/Departments/Planning-Development-Services/Building-Safety/Building-Codes",
+   "official": true
+  },
+  {
+   "url": "https://www.tucsonaz.gov/Departments/Planning-Development-Services/PDSD-News/Updated-Building-Codes-Now-in-Effect",
+   "official": true
+  },
+  {
+   "url": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-building-code-amendments.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-plumbing-code-amendments.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.tucsonaz.gov/Departments/Planning-Development-Services/Permits/Commercial-Permits",
+   "official": true
+  },
+  {
+   "url": "https://www.tucsonaz.gov/Departments/Planning-Development-Services/Permits",
+   "official": true
+  },
+  {
+   "url": "https://www.tucsonaz.gov/Departments/Planning-Development-Services/Permits/Tucson-Permit-Exemptions",
+   "official": true
+  },
+  {
+   "url": "https://www.tucsonaz.gov/Departments/Planning-Development-Services/Permits/Building-Permit-Exemptions",
+   "official": true
+  },
+  {
+   "url": "https://www.tucsonaz.gov/Shared-Contact-Content/PDSD-Contact",
+   "official": true
+  },
+  {
+   "url": "https://www.tucsonaz.gov/files/sharedassets/public/v/2/pdsd/documents/permits/commercial-permits/commercial_submittal_requirements_092526.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.tucsonaz.gov/Departments/Business-Services-Department/Procurement/Living-Wage",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/new_hampshire/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_hampshire/ibc-2024/chapter/1/scope-and-administration",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_hampshire/ibc-2024/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_hampshire/ibc-2024/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://azdor.gov/sites/default/files/document/TPT_RATETABLE_12012026.pdf",
+   "official": true
+  },
+  {
+   "url": "https://azdor.gov/sites/default/files/document/TPT_RATETABLE_ALL_11012026.csv",
+   "official": true
+  },
+  {
+   "url": "https://sam.gov/api/prod/wdol/v1/wd/AZ20260040/1",
+   "official": true
+  }
+ ],
+ "not_read": [
+  "Ordinances 12171 and 12210 themselves",
+  "https://codelibrary.amlegal.com/codes/tucson/latest/tucson_az/0-0-0-4144 (Tucson Code Chapter 6; HTTP 403)",
+  "https://codes.iccsafe.org (blocks automated access); no Tucson copy on up.codes",
+  "https://www.tucsonaz.gov/Departments/Planning-Development-Services/PDSD-News/Updated-Building-Codes-Adopted-Effective-January-1 (404)",
+  "Tucson Procurement Code Article XIV (living wage) and the Court of Appeals opinion on prevailing wage"
+ ],
+ "to_confirm": [
+  "Whether replacing or adding toilet partitions in an existing commercial restroom needs a Tucson permit: Planning and Development Services, 520-791-5550.",
+  "Table 403.1, Sections 403.1.2, 403.2 and 424.2, Table 1004.5, Section 803.9 and Section 105.2 items 7 and 13 of the 2024 model codes: read on UpCodes' New Hampshire copy only; confirm on ICC Digital Codes in a browser.",
+  "Whether Tucson plan review applies the HDPE fire-test section to toilet partitions.",
+  "Whether any Tucson City Code section adds a restroom sign rule (the code library blocked automated access; one web search found none).",
+  "Current status of Tucson's prevailing wage ordinance on an official page, and whether the living wage covers construction contracts: City of Tucson Procurement.",
+  "Combined 8.7% at a downtown address, and whether that address is in the Rio Nuevo District, through the Department of Revenue's lookup at aztaxes.gov (a form, not used)."
+ ]
+}

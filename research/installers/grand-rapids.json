@@ -1,0 +1,325 @@
+{
+ "area": "grand-rapids",
+ "found_count": 9,
+ "sources_tried": [
+  "Seed file grand-rapids.json (Google Maps + web): worked; plausible hits GLBS, Divis10n, Payne-Rosso, S.A. Morman, Partition Systems, LG2; web seeds were residential remodel listings",
+  "Company websites (glbscorp.com, div10sales.com, paynerosso.com, samorman.com, psimi.net, lg2.us, robertbrooke.com): worked",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loads but results are dynamic, no reps readable",
+  "Scranton Products find-a-dealer: 404",
+  "ASI, Bradley, Hadrian, Metpar, General Partitions, Ampco locators: not tried (search cap / dynamic locators)",
+  "The Blue Book (thebluebook.com iProView profiles 802033, 805136, 259472): 403 blocked; search snippets only (International Building Products Inc. lists Michigan service, unverified so not included)",
+  "BuildingConnected / Procore network: not tried (search cap)",
+  "BBB category pages (bbb.org/us/mi/category/partition, walker, lansing accredited): worked",
+  "ARCAT company page: 403",
+  "One Point Partitions (onepointpartitions.com / fxstaging): 403; online seller with Wyoming MI delivery terminal per search snippet, not an installer, not included",
+  "rayhavengroup.com and allpartitionsandparts.com: host not reachable (ENOTFOUND, guessed domains, may need network allowlist or may not exist)",
+  "WebSearch: 8 of 8 used (toilet partition installation Grand Rapids; Division 10 West Michigan; toilet partitions installer Holland/Kalamazoo/Muskegon/Lansing; Roberts Installation; Product Resource Company; restroom partitions installer MI lockers; Blue Book toilet partitions Grand Rapids) - few direct installer results"
+ ],
+ "candidates": [
+  {
+   "name": "Great Lakes Building Specialties (GLBS)",
+   "base_city": "Grand Rapids",
+   "state": "MI",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "ASI Global Partitions"
+   ],
+   "website": "https://www.glbscorp.com/",
+   "phone": "616-350-1977",
+   "email": "Lucas@glbscorp.com",
+   "contact_page": "https://www.glbscorp.com/request-a-quote",
+   "evidence_urls": [
+    "https://www.glbscorp.com/",
+    "https://www.glbscorp.com/toilet-partitions"
+   ],
+   "partition_evidence": "Toilet partitions page says 'Installation Available Throughout West Michigan'; homepage offers Division 10 installation in West Michigan with nationwide supply. No project portfolio, only product photos.",
+   "red_flags": [
+    "Authorized ASI dealer that sells partitions nationwide: buy-around risk and direct competitor",
+    "Listed email is a named person's address"
+   ],
+   "reason": "Grand Rapids commercial Division 10 company that explicitly installs toilet partitions across West Michigan. Also an ASI dealer, so it competes with Next Partitions on supply.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Great Lakes Building Specialties (GLBS)",
+    "area": "grand-rapids",
+    "status": "not_online",
+    "registry": "City of Grand Rapids Development Center registered contractor list (Power BI directory linked from grandrapidsmi.gov Registered Contractor page)",
+    "source_url": "https://www.grandrapidsmi.gov/grow-and-thrive/development-center/registered-contractor/",
+    "note": "Checked 2026-11-19. The city's registered contractor list is a Power BI report that only shows a loading screen to automated access, so no record could be read. The city's Register Contractor page says registration applies to holders of a State of Michigan license who pull permits in Grand Rapids, plus underground contractors. It mentions no city registration for commercial contractors without a state license. Michigan has no state license for commercial specialty work such as partition installation, and the LARA lookup (Accela) is a search form that could not be run automatically. Confirm by name in the city list or with the Development Center, 616-456-4100 (company-neutral public office line from the city page)."
+   },
+   "score": 70
+  },
+  {
+   "name": "Divis10n (Division 10 Sales)",
+   "base_city": "Wyoming",
+   "state": "MI",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "AJW Washroom",
+    "Bobrick",
+    "Bradley",
+    "General",
+    "Global",
+    "Scranton"
+   ],
+   "website": "https://div10sales.com/",
+   "phone": "616-248-0498",
+   "email": "quotes@div10sales.com",
+   "contact_page": "https://div10sales.com/",
+   "evidence_urls": [
+    "https://div10sales.com/"
+   ],
+   "partition_evidence": "Lists 'Toilet Compartment' among its products and says its technicians can 'install, repair, and replace all of your Division 10 products'. I saw no partition installation project or photo.",
+   "red_flags": [
+    "Sells toilet compartments from several brands, including Bobrick, Bradley and Scranton, which Next Partitions also resells: buy-around risk"
+   ],
+   "reason": "Commercial Division 10 supplier and installer in Wyoming, MI that sells toilet compartments and installs Division 10 products. Partition installation itself isn't shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Divis10n (Division 10 Sales)",
+    "area": "grand-rapids",
+    "status": "not_online",
+    "registry": "City of Grand Rapids Development Center registered contractor list (Power BI directory)",
+    "source_url": "https://www.grandrapidsmi.gov/grow-and-thrive/development-center/registered-contractor/",
+    "note": "Checked 2026-11-19. Based in Wyoming, MI, which has its own building department. Only Grand Rapids permits need city registration. The Grand Rapids registered contractor list is a Power BI report that can't be read automatically, so no record was confirmed. City registration applies to holders of a State of Michigan license. Michigan has no state license for commercial partition installation. The LARA Accela lookup was not run because it needs an interactive form search. Check the list by hand."
+   },
+   "score": 50
+  },
+  {
+   "name": "S.A. Morman & Co.",
+   "base_city": "Grand Rapids",
+   "state": "MI",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.samorman.com/",
+   "phone": "(616) 245-0583",
+   "email": "info@samorman.com",
+   "contact_page": "https://www.samorman.com/contact",
+   "evidence_urls": [
+    "https://www.samorman.com/",
+    "https://www.samorman.com/contact"
+   ],
+   "partition_evidence": "Its Division 10 Specialties service offers 'Customized toilet partitions and other Division 10 speciality products'. It offers installation services, but the site describes them only for security systems.",
+   "red_flags": [
+    "Supplies toilet partitions itself: buy-around risk",
+    "Mainly a door, frame and hardware company"
+   ],
+   "reason": "Grand Rapids commercial door and hardware firm, with a Kalamazoo office, that supplies toilet partitions under Division 10. Whether it installs them isn't confirmed.",
+   "added_by_checker": false,
+   "license": {
+    "name": "S.A. Morman & Co.",
+    "area": "grand-rapids",
+    "status": "not_online",
+    "registry": "City of Grand Rapids Development Center registered contractor list (Power BI directory)",
+    "source_url": "https://www.grandrapidsmi.gov/grow-and-thrive/development-center/registered-contractor/",
+    "note": "Checked 2026-11-19. The Grand Rapids registered contractor list is a Power BI report that shows only a loading screen to automated access, so no record was read. City registration applies to holders of a State of Michigan license who pull permits, per https://www.grandrapidsmi.gov/grow-and-thrive/development-center/register-contractor. Michigan has no state license for commercial partition installation. If the company holds a LARA Residential Builder license, look it up by hand in the LARA Accela lookup at https://aca-prod.accela.com/LARA/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y (not run automatically)."
+   },
+   "score": 50
+  },
+  {
+   "name": "Payne-Rosso Co",
+   "base_city": "Lansing",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Accurate Partitions",
+    "Bobrick",
+    "Metpar",
+    "Hollman",
+    "Penco"
+   ],
+   "website": "https://paynerosso.com/",
+   "phone": "(517) 321-4546",
+   "contact_page": "https://paynerosso.com/contact/",
+   "evidence_urls": [
+    "https://paynerosso.com/",
+    "https://paynerosso.com/contact/"
+   ],
+   "partition_evidence": "Stocks toilet partition material and hardware and says 'If we sell it, we can install and service it for you.' Brands come from the product links on the homepage.",
+   "red_flags": [
+    "Sells partitions, including Bobrick and Metpar: buy-around risk",
+    "Service area not stated",
+    "Homepage carries unrelated spam links, which suggests a compromised site",
+    "Only staff emails are published"
+   ],
+   "reason": "Building specialties rep that likely installs the partitions it sells. It is about 60 miles from Grand Rapids, and the site doesn't say it serves the area. Worth a phone check if West Michigan coverage is confirmed.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "Partition Systems Inc",
+   "base_city": "Cedar Springs",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [
+    "Hufcor",
+    "NanaWall",
+    "Mobilflex",
+    "Cornell Iron",
+    "Woodfold",
+    "Porter Athletic"
+   ],
+   "website": "http://psimi.net/",
+   "phone": "616-696-1300",
+   "email": "scott@psimi.net",
+   "contact_page": "http://psimi.net/contactus.html",
+   "evidence_urls": [
+    "http://psimi.net/"
+   ],
+   "partition_evidence": "Installs operable walls, glass walls, accordion walls, grills and shutters. Toilet partitions aren't mentioned.",
+   "red_flags": [
+    "Email is a named person's address"
+   ],
+   "reason": "Operable and moveable wall specialist serving West Michigan. Restroom partitions aren't among its services.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "LG2, LLC",
+   "base_city": "Grand Rapids",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [
+    "Modernfold",
+    "Euro-Wall",
+    "Tate"
+   ],
+   "website": "https://www.lg2.us/",
+   "phone": "616-295-1585",
+   "email": "info@lg2.us",
+   "contact_page": "https://www.lg2.us/contact",
+   "evidence_urls": [
+    "https://www.lg2.us/",
+    "https://bbb.org/us/mi/walker/category/partition"
+   ],
+   "partition_evidence": "Operable walls, folding glass, accordion partitions, lockers and raised floors only. No toilet partitions.",
+   "red_flags": [],
+   "reason": "Grand Rapids operable wall, locker and access floor supplier. It doesn't offer restroom partitions.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Roberts Installation & Repair, Inc.",
+   "base_city": "Scotts",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "phone": "(269) 370-3131",
+   "rating": 0,
+   "review_source": "BBB A+ rating, accredited since 2013 (letter grade, not a star rating)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/mi/scotts/profile/partition/roberts-installation-repair-inc-0372-38149743",
+    "https://bbb.org/us/mi/walker/category/partition"
+   ],
+   "partition_evidence": "BBB says it does commercial installations specializing in gyms: partition installation and repair, curtains, wall mats, bleacher repair. Restroom partitions aren't mentioned.",
+   "red_flags": [
+    "No website found",
+    "Gym partitions rather than restroom partitions",
+    "BBB lists it as serving the Kalamazoo area, about 55 miles away"
+   ],
+   "reason": "Gym equipment installer near Kalamazoo. There's no evidence of toilet partition work, and its BBB listing names the Kalamazoo area, not Grand Rapids.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Robert Brooke & Associates",
+   "base_city": "Troy",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Accurate",
+    "All American",
+    "American Sanitary",
+    "Ampco",
+    "Bobrick",
+    "Comtec/Capitol",
+    "Fiat",
+    "Flush Metal",
+    "General Partitions",
+    "Global",
+    "Hadrian",
+    "Knickerbocker",
+    "Metpar",
+    "Mills",
+    "Sanymetal"
+   ],
+   "website": "https://www.robertbrooke.com/",
+   "phone": "1-800-642-2403",
+   "email": "sales@robertbrooke.com",
+   "contact_page": "https://www.robertbrooke.com/contact",
+   "evidence_urls": [
+    "https://www.robertbrooke.com/"
+   ],
+   "partition_evidence": "Sells toilet partitions and parts and links to installation instructions, but offers no installation service.",
+   "red_flags": [
+    "Partition and parts supplier competing with Next Partitions",
+    "Based in metro Detroit, about 150 miles away"
+   ],
+   "reason": "Hardware and partition parts supplier in Troy that ships nationally. It doesn't install, and it's outside the area.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Product Resource Company",
+   "base_city": "Lansing",
+   "state": "MI",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "phone": "(517) 484-8400",
+   "review_source": "BBB A+ (not accredited), per a BBB category page",
+   "evidence_urls": [
+    "https://bbb.org/us/mi/walker/category/partition"
+   ],
+   "partition_evidence": "Only a BBB 'Partitions' category listing serving Lansing. No website or services found.",
+   "red_flags": [
+    "No website found",
+    "BBB lists it as serving Lansing only"
+   ],
+   "reason": "Only known from a BBB category listing that names Lansing as its service area. I found no evidence of toilet partition installation or Grand Rapids coverage.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

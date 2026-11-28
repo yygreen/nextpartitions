@@ -1,0 +1,403 @@
+{
+ "area": "seattle",
+ "found_count": 17,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/seattle.json: worked. Maps results gave NWBLDS, Li'l Chief, Building Specialties NW, Wind NW, Northwest Partitions, Western Partitions and Seattle Interiors. Web results were opaque google.com/goto links and weren't used. Most Maps entries were remodelers and showrooms.",
+  "Bobrick find-a-rep: the page loaded but the rep dropdown wasn't in the fetched text. The Bobrick Vashon Island HS case study PDF worked: Wind NW is the rep and Barclay Dean the installing distributor.",
+  "Scranton Products find-a-rep: 404. The Scranton UW Aria case study PDF worked: Barclay Dean (Bothell) is the supplier.",
+  "ASI (asi-globalpartitions.com/find-a-rep): 404.",
+  "Hadrian find-a-rep: 404.",
+  "General Partitions find-a-rep: 404.",
+  "Bradley find-a-rep: only the page title came back, no rep data.",
+  "Metpar, Ampco/Ammco: not reached.",
+  "The Blue Book: profiles found through search (N.W. Building Specialties Inc, Green Latrine, Partition Plus) return 403 to fetches. A snippet said N.W. Building Specialties supplies and installs Division 10 for greater Seattle, probably the same firm as NWBLDS (not confirmed).",
+  "BuildingConnected / Procore: not reached.",
+  "Web search: 8 of 8 used. Southwest Solutions Group was the only new installer, from snippets only: its pages return 404 or truncated text. Not included: One Point Partitions (supplier with Everett/Kent/Auburn delivery terminals; WA page 403), Prestige Distribution (national), Innergy Interiors (El Paso TX), Unified Specialty Services (NJ, no WA office found).",
+  "Yelp / BBB: no relevant partition-installer pages in the search results.",
+  "DJC Specialty Contractor Guide PDF: read; it lists no Division 10 partition firm.",
+  "Facilitiesnet Vashon case study: doesn't name the installer.",
+  "Western Partitions (wpibuilds.com): read; no toilet partitions or Division 10, so excluded.",
+  "barclaydean.com: 503 / proxy tunnel errors.",
+  "Seed file seattle.json: worked. Its Maps results gave NWBLDS, Li'l Chief, Building Specialties NW, Wind NW, Northwest Partitions, Western Partitions and Seattle Interiors. Its web results were mostly opaque google.com/goto links and weren't used.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded but its rep dropdown isn't in the fetched text, so no result. The Bobrick Vashon Island case study PDF worked: it names Wind NW (rep) and Barclay Dean (installing distributor).",
+  "Scranton Products find-a-rep: 404 at the URL tried.",
+  "Hadrian find-a-rep: 404 at the URL tried.",
+  "ASI, Bradley, Metpar, General Partitions, Ampco: no locator pages reached within the limits. One web search for WA reps of Scranton, Bradley, Hadrian and ASI returned none.",
+  "The Blue Book (thebluebook.com): found through search (Partition Plus Inc, Partitions & Accessories Co, iProView/1745367), but the profiles return 403 to automated fetches. Partition Plus appears to be in Maryland and Partitions & Accessories Co in Arizona: not local.",
+  "BuildingConnected / Procore public profiles: not reached (search cap).",
+  "Web search: 8 of 8 searches used. Useful results: Southwest Solutions Group (snippets only; the page returned 404) and Barclay Dean (Bobrick and Scranton case studies). Not local or not installers: One Point Partitions (supplier with delivery terminals), Innergy Interiors (El Paso TX), Newton Distributing and Prestige Distribution (national), Cook & Boardman / CBX Everett branch (403; a door and hardware supplier that lists toilet partition supply).",
+  "Yelp / BBB: no relevant pages came up in search results.",
+  "barclaydean.com: 503 Service Unavailable.",
+  "Interior Technology Modernfold NW: only search snippets (operable partitions, glass, fire and smoke egress). Toilet partitions aren't mentioned, so it was left out."
+ ],
+ "candidates": [
+  {
+   "name": "NW Blds (Northwest Building Specialties)",
+   "base_city": "Kent",
+   "state": "WA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Hadrian",
+    "JL Industries"
+   ],
+   "website": "https://nwblds.com/",
+   "phone": "253.765.8151",
+   "email": "contact@nwblds.com",
+   "contact_page": "https://nwblds.com/contact/",
+   "evidence_urls": [
+    "https://nwblds.com/",
+    "https://nwblds.com/restroom-partitions/",
+    "https://nwblds.com/service-area/"
+   ],
+   "partition_evidence": "Site offers commercial toilet stall installation, partition replacement, repair, removal and hardware installation; serves Seattle, Tacoma, Bellevue, Olympia from Kent.",
+   "red_flags": [
+    "Also supplies partitions, parts and hardware itself (buy-around risk)",
+    "Second office in Roseburg, OR",
+    "No project photos or reviews on the pages read"
+   ],
+   "reason": "Dedicated commercial restroom partition installer and repairer based in Kent, inside the area. It also sells partitions, so the listing agreement matters.",
+   "added_by_checker": false,
+   "license": {
+    "name": "NW Blds (Northwest Building Specialties)",
+    "area": "seattle",
+    "status": "found_active",
+    "registry": "Washington L&I contractor registration (official L&I Contractor License Data on data.wa.gov, dataset m8qx-ubtq)",
+    "license_number": "NWBUIBS836BP",
+    "license_type": "Construction Contractor, specialty GENERAL",
+    "source_url": "https://data.wa.gov/resource/m8qx-ubtq.json?contractorlicensenumber=NWBUIBS836BP",
+    "note": "PROBABLE MATCH, NOT CONFIRMED. L&I record: NW BUILDING SPECIALTIES INC (corporation), base city Maple Valley WA, UBI 604071112, status ACTIVE, effective 2017-01-17, expires 2027-01-18. The company site (nwblds.com) shows only the brand 'NW Blds', says its home base is Kent, WA, and lists phone 253.765.8151. The L&I record has a different phone (503 area code) and city, and the site shows no L&I number. Confirm the legal name or L&I number with the company before listing. No L&I record was found for 'Northwest Building Specialties' or 'NW Blds' spelled out."
+   },
+   "score": 85
+  },
+  {
+   "name": "Barclay Dean Architectural Products",
+   "base_city": "Woodinville",
+   "state": "WA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Scranton Products"
+   ],
+   "evidence_urls": [
+    "https://www.bobrick.com/wp-content/uploads/2019/01/BOB-CaseStudy_Vashon_Island_HS_v7.pdf",
+    "https://www.scrantonproducts.com/?p=13096"
+   ],
+   "partition_evidence": "Bobrick case study names it the 'Installing Distributor (Woodinville, WA)' for DuraLineSeries partitions at Vashon Island High School; Scranton case study names it supplier of Aria partitions at UW Madrona Hall (gives Bothell).",
+   "red_flags": [
+    "Distributor that sells partitions (buy-around risk)",
+    "Own website (barclaydean.com) returned 503, so contact details not read",
+    "Base city inconsistent: Woodinville (Bobrick) vs Bothell (Scranton)"
+   ],
+   "reason": "Manufacturer case studies show it installing and supplying commercial toilet partitions in the Seattle area. Contact details could not be read from its own site.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Barclay Dean Architectural Products",
+    "area": "seattle",
+    "status": "found_active",
+    "registry": "Washington L&I contractor registration (official L&I Contractor License Data on data.wa.gov, dataset m8qx-ubtq)",
+    "license_number": "BARCLDA022BE",
+    "license_type": "Construction Contractor, specialty GENERAL",
+    "source_url": "https://data.wa.gov/resource/m8qx-ubtq.json?contractorlicensenumber=BARCLDA022BE",
+    "note": "L&I record: BARCLAY DEAN ARCHTL PRDTS LLC, city Bothell WA (the task lists Woodinville, a neighbouring city), UBI 601840789, status ACTIVE, registered since 1998-01-05, expires 2028-01-03. Name match is clear; the difference in city is likely an address change."
+   },
+   "score": 85
+  },
+  {
+   "name": "Southwest Solutions Group (Seattle office)",
+   "base_city": "Seattle",
+   "state": "WA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.southwestsolutions.com/",
+   "phone": "(800) 803-1083",
+   "evidence_urls": [
+    "https://www.southwestsolutions.com/?p=15531"
+   ],
+   "partition_evidence": "Its toilet partition page covers stainless, HDPE and phenolic systems for commercial restrooms and its site lists 'Sales, design, and installation coverage statewide' for Washington including Seattle.",
+   "red_flags": [
+    "National seller of partitions: direct competitor and buy-around risk",
+    "Seattle office address/phone only seen in search snippets, not read on its own page",
+    "Not clear whether Seattle installs are by own crews or subcontractors"
+   ],
+   "reason": "Sells and claims to install commercial toilet partitions statewide with a Seattle office, but it is a competing partition seller and local install crews are unproven.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Southwest Solutions Group (Seattle office)",
+    "area": "seattle",
+    "status": "found_active",
+    "registry": "Washington L&I contractor registration (official L&I Contractor License Data on data.wa.gov, dataset m8qx-ubtq)",
+    "license_number": "SOUTHSG846JJ",
+    "license_type": "Construction Contractor, specialty GENERAL",
+    "source_url": "https://data.wa.gov/resource/m8qx-ubtq.json?contractorlicensenumber=SOUTHSG846JJ",
+    "note": "L&I record: SOUTHWEST SOLUTIONS GROUP INC (corporation), registered address The Colony, TX (company headquarters, not the Seattle office), UBI 603389213, status ACTIVE, effective 2016-04-11, expires 2028-04-11."
+   },
+   "score": 65
+  },
+  {
+   "name": "Li'l Chief Specialties, Inc.",
+   "base_city": "Seattle",
+   "state": "WA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.lilchief.com/",
+   "phone": "206-364-1244",
+   "email": "administrator@lilchief.com",
+   "contact_page": "https://www.lilchief.com/contact-us",
+   "evidence_urls": [
+    "https://www.lilchief.com/",
+    "https://www.lilchief.com/our-work",
+    "https://www.lilchief.com/contact-us"
+   ],
+   "partition_evidence": "Architectural specialties distributor listing toilet partitions and washroom accessories among products and offering 'complete installation services'; no partition project shown.",
+   "red_flags": [
+    "Distributor that sells toilet partitions (buy-around risk)",
+    "No specific partition installation project or photo"
+   ],
+   "reason": "Seattle Division 10 distributor with installation services and partitions in its product line, but partition installation itself isn't shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Li'l Chief Specialties, Inc.",
+    "area": "seattle",
+    "status": "found_active",
+    "registry": "Washington L&I contractor registration (official L&I Contractor License Data on data.wa.gov, dataset m8qx-ubtq)",
+    "license_number": "LILCHSI052P7",
+    "license_type": "Construction Contractor, specialty Framing and Rough Carpentry",
+    "source_url": "https://data.wa.gov/resource/m8qx-ubtq.json?contractorlicensenumber=LILCHSI052P7",
+    "note": "L&I record: LI'L CHIEF SPECIALTIES INC (corporation), Seattle WA, UBI 178068131, status ACTIVE, registered since 1995-10-27, expires 2027-12-28."
+   },
+   "score": 65
+  },
+  {
+   "name": "Building Specialties Northwest, LLC",
+   "base_city": "Mercer Island",
+   "state": "WA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "ASI Global Partitions",
+    "Daiek",
+    "Hadrian",
+    "Scranton"
+   ],
+   "website": "http://www.lockedmail.com/",
+   "phone": "425-486-3693",
+   "email": "bsnwllc@lockedmail.com",
+   "contact_page": "http://www.lockedmail.com/contact",
+   "evidence_urls": [
+    "http://www.lockedmail.com/",
+    "http://www.lockedmail.com/portfolio"
+   ],
+   "partition_evidence": "Sells toilet partitions and toilet accessories (Division 10) and has a 'We Install!' banner linking to a portfolio of commercial projects, but no project is tied to partition installation.",
+   "red_flags": [
+    "Supplier that sells partitions, ships nationwide (buy-around risk)",
+    "Install claim not specific to partitions"
+   ],
+   "reason": "Division 10 supplier with an install claim and commercial portfolio near Seattle; partition installation not proven.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Building Specialties Northwest, LLC",
+    "area": "seattle",
+    "status": "found_active",
+    "registry": "Washington L&I contractor registration (official L&I Contractor License Data on data.wa.gov, dataset m8qx-ubtq)",
+    "license_number": "BUILDSN792DC",
+    "license_type": "Construction Contractor, specialty GENERAL",
+    "source_url": "https://data.wa.gov/resource/m8qx-ubtq.json?contractorlicensenumber=BUILDSN792DC",
+    "note": "L&I record: BUILDING SPECIALTIES NW LLC, Mercer Island WA, UBI 602118871, status ACTIVE, effective 2021-03-03, expires 2027-03-03. The name and city match. lockedmail.com was not opened to cross-check."
+   },
+   "score": 65
+  },
+  {
+   "name": "Northwest Partitions, Inc.",
+   "base_city": "Woodinville",
+   "state": "WA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://www.nwpart.com/",
+   "phone": "(425) 375-2500",
+   "email": "mail@nwpart.com",
+   "contact_page": "https://www.nwpart.com/contact/",
+   "evidence_urls": [
+    "http://www.nwpart.com/",
+    "https://www.nwpart.com/specialty-systems/"
+   ],
+   "partition_evidence": "Commercial wall and ceiling contractor; Specialty Systems page lists 'Division 10 Specialties' but does not mention toilet partitions.",
+   "red_flags": [
+    "'Partitions' in name means drywall/framing walls, not toilet partitions",
+    "Large GC-facing subcontractor; small restroom jobs may not fit"
+   ],
+   "reason": "Commercial drywall contractor that lists Division 10 specialties; no toilet partition work shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Northwest Partitions, Inc.",
+    "area": "seattle",
+    "status": "found_active",
+    "registry": "Washington L&I contractor registration (official L&I Contractor License Data on data.wa.gov, dataset m8qx-ubtq)",
+    "license_number": "NORTHPI169QA",
+    "license_type": "Construction Contractor, specialty GENERAL",
+    "source_url": "https://data.wa.gov/resource/m8qx-ubtq.json?contractorlicensenumber=NORTHPI169QA",
+    "note": "L&I record: NORTHWEST PARTITIONS INC (corporation), Woodinville WA, UBI 600456915, status ACTIVE, registered since 1984-11-01, expires 2027-11-15."
+   },
+   "score": 65
+  },
+  {
+   "name": "Zesbaugh, Inc.",
+   "base_city": "Marysville",
+   "state": "WA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Global Steel",
+    "Hadrian",
+    "Ironwood",
+    "Jacknob",
+    "Metpar",
+    "Scranton Products"
+   ],
+   "website": "https://zesbaugh.com/",
+   "phone": "(206) 547-1900; toll free (877) 340-6020",
+   "contact_page": "https://zesbaugh.com/contactus/",
+   "evidence_urls": [
+    "https://zesbaugh.com/",
+    "https://zesbaugh.com/about-us/",
+    "https://zesbaugh.com/division-10/",
+    "https://zesbaugh.com/division-10-manufacturers/",
+    "https://zesbaugh.com/contactus/"
+   ],
+   "partition_evidence": "Calls itself a 'Specialty Commercial Subcontractor & Distributor' with 'factory-trained, union technicians' for 'service & installation'. It lists Toilet Partitions & Accessories (laminate, steel, phenolic), has a Division 10 manufacturers page, and has a Service & Repairs request page. No page explicitly shows partition installs or project photos.",
+   "reason": "A long-running (since 1956) Division 10 subcontractor and distributor near Seattle that installs its products, partitions included in its lines. Partition installation is implied, not shown. It also sells partitions.",
+   "red_flags": [
+    "Distributor that sells partitions (buy-around risk)",
+    "No company email listed"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Zesbaugh, Inc.",
+    "area": "seattle",
+    "status": "found_active",
+    "registry": "Washington L&I contractor registration (data.wa.gov official L&I Contractor License Data dataset m8qx-ubtq)",
+    "license_number": "ZESBAI*353O1",
+    "license_type": "Construction Contractor, specialty General",
+    "source_url": "https://data.wa.gov/resource/m8qx-ubtq.json?$where=upper(businessname)%20like%20%27%25ZESBAUGH%25%27",
+    "note": "L&I record: ZESBAUGH, INC, UBI 578051445, construction contractor registration ACTIVE, effective 1965-09-21, expires 2027-10-01, city Marysville. A separate electrical contractor license (ZESBAI*992MU, Doors & Gates specialty) is EXPIRED (expired 2026-09-17); not needed for partition installation."
+   },
+   "score": 65
+  },
+  {
+   "name": "Western Partitions, Inc. (WPI)",
+   "base_city": "Sumner",
+   "state": "WA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://wpibuilds.com/",
+   "phone": "503.620.1600",
+   "contact_page": "https://wpibuilds.com/contact/",
+   "evidence_urls": [
+    "http://wpibuilds.com/"
+   ],
+   "partition_evidence": "Large wall/framing, prefab exterior wall and mission-critical subcontractor; toilet partitions not mentioned.",
+   "red_flags": [
+    "HQ in Oregon; 'partitions' means interior walls"
+   ],
+   "reason": "Large framing and wall-systems subcontractor; no toilet partition work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "Wind Northwest, Inc.",
+   "base_city": "Tukwila",
+   "state": "WA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "privada",
+    "Thrislington",
+    "All American Metal",
+    "Gamco",
+    "Koala",
+    "Pressalit",
+    "Spectrum",
+    "Marlite"
+   ],
+   "website": "http://windnw.com/",
+   "phone": "(206) 575-7881",
+   "contact_page": "http://windnw.com/contact-us",
+   "evidence_urls": [
+    "http://windnw.com/",
+    "https://www.bobrick.com/wp-content/uploads/2019/01/BOB-CaseStudy_Vashon_Island_HS_v7.pdf"
+   ],
+   "partition_evidence": "Manufacturer sales representative (Bobrick rep per Bobrick case study); the installer on that project was Barclay Dean, not Wind NW.",
+   "red_flags": [
+    "Manufacturer rep, not an installer"
+   ],
+   "reason": "Represents partition brands to specifiers; no evidence it installs. Could be a source of installer referrals rather than a listing.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Seattle Interiors LLC",
+   "base_city": "Seattle",
+   "state": "WA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "unknown",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.seattleinteriors.com/",
+   "phone": "206.633.2900",
+   "contact_page": "https://seattleinteriors.com/contact/",
+   "evidence_urls": [
+    "https://www.seattleinteriors.com/",
+    "https://seattleinteriors.com/products/"
+   ],
+   "partition_evidence": "Bath, shower and kitchen fixtures and hardware showroom; no partitions or installation mentioned.",
+   "red_flags": [
+    "Showroom, not an installer"
+   ],
+   "reason": "Plumbing fixture and hardware showroom with no partition or installation services.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 15
+  }
+ ]
+}

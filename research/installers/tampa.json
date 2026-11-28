@@ -1,0 +1,310 @@
+{
+ "area": "tampa",
+ "found_count": 9,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/tampa.json: worked. Of the plausible entries, Specialty Installations, Watkins, Centar and Tampa Accessory Corp were kept. Major Partitions sells wire mesh partitions, not toilet partitions. Comres Manufacturing redirects to the Metpar manufacturer site. Elston's is a manufacturer that BBB says is believed to be out of business. Most other entries were remodelers, glass shops and plumbers.",
+  "Bobrick find-a-rep: blocked; results load from a dropdown with no static data.",
+  "ASI / Global Partitions find-a-rep: 404.",
+  "Scranton Products find-a-rep: 404.",
+  "Hadrian find-a-rep: 404.",
+  "Metpar site: worked but lists no Florida dealers or installers. Bradley, General Partitions and Ampco locators were not reached before the search cap.",
+  "The Blue Book search: 403 blocked.",
+  "Procore network Florida list for toilet, bath and laundry accessories: worked. network.procore.com/p/ profiles also worked; www.procore.com/p/ links returned 404.",
+  "BuildingConnected: not tried.",
+  "BBB Tampa partition category: worked (the other listings are Orlando-area or South Florida operable-wall firms). BBB profile for Holman Inc: 403.",
+  "LinkedIn (Square 10 Source): 403; its text came through in WebSearch results.",
+  "One Point Partitions Tampa page: 403 (it ships partitions; installation unclear).",
+  "Restroom Stalls and All: worked but left out as an out-of-area chain. It is based in Gainesville, GA, with no Florida office, though it says its own W2 crews install in Tampa Bay.",
+  "Unified Door & Hardware Group: does Division 10 installs, but its location isn't stated and its phone is a New Jersey number. Left out.",
+  "WebSearch: 8 of 8 used (cap reached)."
+ ],
+ "candidates": [
+  {
+   "name": "Bell Architectural Specialties",
+   "base_city": "Riverview",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Moderco (operable walls)",
+    "Mecho Shade (roller shades)"
+   ],
+   "website": "https://belldiv10.com/",
+   "phone": "(813) 741-9926",
+   "email": "Dabell2355@gmail.com",
+   "contact_page": "https://belldiv10.com/contact/",
+   "evidence_urls": [
+    "https://belldiv10.com/",
+    "https://belldiv10.com/toilet-partitions/",
+    "https://belldiv10.com/contact/"
+   ],
+   "partition_evidence": "Toilet partitions page says Bell supplies and installs commercial toilet partitions across Florida (solid plastic, phenolic, powder-coated steel, stainless, laminate); projects include Blue Heron Rehab (Tampa) and AdventHealth (Riverview).",
+   "red_flags": [
+    "Supplies partitions itself (furnish-and-install), so it could buy around us",
+    "Company email is a Gmail address"
+   ],
+   "reason": "Division 10 contractor founded in 1990, based in Riverview just south of Tampa, that states it supplies and installs commercial toilet partitions and names Tampa-area projects.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Bell Architectural Specialties",
+    "area": "tampa",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (myfloridalicense.com/portalsearches/VerifyLicensee); City of Tampa Construction Services contractor registration (Accela)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is a token-protected POST form; automated lookup was not run (blocked for this session), so no license result. Tampa has no public contractor registration list; per tampa.gov guides, license records are handled in Accela Citizen Access (login) and by email registration. Whether Florida requires any state license for toilet partition installation is unclear (no partitions category found; repo research/state-licensing FL = unclear, low confidence). belldiv10.com shows no license number and names no base city (lists service areas across Florida); Riverview not confirmed on the home page."
+   },
+   "score": 70
+  },
+  {
+   "name": "Florida Division 10, LLC",
+   "base_city": "St. Petersburg",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://floridadivision10.com/",
+   "phone": "689-221-3228",
+   "email": "info@floridadivision10.com",
+   "contact_page": "https://www.floridadivision10.com/contact/",
+   "evidence_urls": [
+    "https://www.floridadivision10.com/",
+    "https://www.floridadivision10.com/contact/"
+   ],
+   "partition_evidence": "Homepage describes it as an installation company for specialty products, listing toilet partitions, bathroom accessories, lockers and wall protection; installs only and quotes per piece.",
+   "red_flags": [
+    "Homepage mentions Orlando while the contact page gives a St. Petersburg office; base city should be confirmed",
+    "Phone has a 689 (Orlando) area code",
+    "No project photos seen"
+   ],
+   "reason": "Install-only Division 10 company (does not furnish products, which suits our model) that lists toilet partitions and serves general contractors, with a St. Petersburg office.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Florida Division 10, LLC",
+    "area": "tampa",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee; City of Tampa Construction Services contractor registration (Accela)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR lookup not run automatically (form POST with anti-forgery token). No public Tampa registered-contractor list. Company site floridadivision10.com returned HTTP 503 on 2026-11-19, so no license number or base city read. State licensing need for partitions in FL is unclear."
+   },
+   "score": 70
+  },
+  {
+   "name": "Specialty Installations & Sales Inc",
+   "base_city": "Port Richey",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [
+    "Metpar/Comres",
+    "Accurate Partitions",
+    "American Sanitary Partitions",
+    "Bobrick",
+    "Global Partitions",
+    "Scranton Products",
+    "ASI (accessories/storage)"
+   ],
+   "website": "http://www.specialtyinstallations.com/",
+   "phone": "727-849-8846",
+   "email": "Frontdesk.sis@tampabay.rr.com",
+   "contact_page": "",
+   "evidence_urls": [
+    "http://www.specialtyinstallations.com/"
+   ],
+   "partition_evidence": "Homepage offers toilet compartments from listed partition manufacturers, quotes from plans and on-site measuring, and states 'We provide A+ Installation within the State of Florida.'",
+   "red_flags": [
+    "Dealer for many partition brands, so it could buy around us",
+    "No separate contact page; quote requests go to Plansforsis@tampabay.rr.com",
+    "Port Richey is roughly 30-35 miles north of the area center"
+   ],
+   "reason": "Operating since 1979, a dealer-installer of toilet compartments from Bobrick, Scranton, Metpar and others, installing within Florida from Port Richey on the edge of the area.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Specialty Installations & Sales Inc",
+    "area": "tampa",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee; City of Tampa Construction Services contractor registration (Accela)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR lookup not run automatically; no public Tampa contractor list. Company site not read for a license number. Port Richey is outside Tampa city limits; Tampa registration applies only to permits pulled in the City of Tampa. State licensing need for partitions is unclear."
+   },
+   "score": 60
+  },
+  {
+   "name": "Watkins Accessories",
+   "base_city": "Brooksville",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://watkinsaccessories.com/",
+   "phone": "352-777-4105",
+   "email": "ivan@watkinsaccessories.com",
+   "contact_page": "https://watkinsaccessories.com/contact/",
+   "evidence_urls": [
+    "https://watkinsaccessories.com/"
+   ],
+   "partition_evidence": "Homepage: 'From restroom partitions to lockers, we supply and install' and a 'Commercial Restrooms: Partitions & Stalls' service for schools, gyms, medical and government buildings.",
+   "red_flags": [
+    "Brooksville is about 45 miles north of Tampa, beyond the 30-mile radius",
+    "Supplies partitions itself (buy-around risk)",
+    "Email is a personal-name address"
+   ],
+   "reason": "A real commercial partition installer, but based in Brooksville outside the 30-mile radius. Keep it only as a backup if it confirms it covers Tampa Bay.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Watkins Accessories",
+    "area": "tampa",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee; City of Tampa Construction Services contractor registration (Accela)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR lookup not run automatically; no public Tampa contractor list. Company site not read for a license number. State licensing need for partitions is unclear."
+   },
+   "score": 60
+  },
+  {
+   "name": "Square 10 Source (Square10source, LLC)",
+   "base_city": "Plant City",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.square10source.com/",
+   "phone": "(813) 425-5868",
+   "email": "jline@square10source.com",
+   "contact_page": "https://www.square10source.com/contact-us/",
+   "evidence_urls": [
+    "https://www.square10source.com/",
+    "https://www.square10source.com/scopeofservices/",
+    "https://www.square10source.com/about-us/",
+    "https://www.square10source.com/past-projects/",
+    "https://www.square10source.com/contact-us/"
+   ],
+   "partition_evidence": "Scope of services lists 102100 Toilet Compartments; About page says its VP of field operations has been installing Division 10 products for 20 years. No page I could read says it installs toilet partitions specifically. A LinkedIn search snippet mentions toilet partitions, but the page returned 403.",
+   "red_flags": [
+    "Site does not say whether it furnishes, installs or both",
+    "Contact email is a personal-name address; prefer the company phone"
+   ],
+   "reason": "Tampa Bay Division 10 contractor (incorporated 2016) doing hospital and senior-living work for general contractors, with toilet compartments in its scope, but partition installation isn't stated outright on its own pages.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Square 10 Source (Square10source, LLC)",
+    "area": "tampa",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee; City of Tampa Construction Services contractor registration (Accela)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR lookup not run automatically; no public Tampa contractor list. Company site not read for a license number. State licensing need for partitions is unclear. A Sunbiz entity search was not done."
+   },
+   "score": 50
+  },
+  {
+   "name": "Centar Industries Inc",
+   "base_city": "unknown",
+   "state": "unknown",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "website": "http://www.centarind.com/",
+   "phone": "800-843-7878",
+   "email": "custservice@centarind.com",
+   "contact_page": "https://centarind.com/locker-quotes/",
+   "evidence_urls": [
+    "http://www.centarind.com/",
+    "https://centarind.com/about-us/"
+   ],
+   "partition_evidence": "Online shop sells complete bathroom partitions, doors, panels and hardware; its services cover locker refurbishing and repair, not partition installation.",
+   "red_flags": [
+    "Supplier and online shop, a direct competitor rather than an installer",
+    "Founded in St. Louis; no Pinellas Park base found on its site"
+   ],
+   "reason": "Sells partitions and parts but shows no installation service, and its site gives no Tampa-area base.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Hanlon Acoustical Ceilings Co. LLC",
+   "base_city": "Tampa",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "unknown",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://hanlonceilings.com/",
+   "phone": "1-855-442-6566",
+   "email": "",
+   "contact_page": "https://www.hanlonceilings.com/contact/",
+   "evidence_urls": [
+    "https://hanlonceilings.com/"
+   ],
+   "partition_evidence": "Homepage lists ceilings, soundproofing insulation and wall panels only; no toilet partitions or Division 10.",
+   "red_flags": [
+    "Ceiling contractor, not a partition installer",
+    "Base city not stated on site (title references Tampa Bay)"
+   ],
+   "reason": "An acoustical ceiling installer with no sign of toilet partition or Division 10 work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 15
+  },
+  {
+   "name": "Tampa Accessory Corporation",
+   "base_city": "Tampa",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "No website or listing found; a search for the name returned no matching business.",
+   "red_flags": [
+    "No website or verifiable listing found"
+   ],
+   "reason": "No evidence the business exists or does partition work; could not verify.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "L&N Custom Trim and Hardware Installation LLC",
+   "base_city": "Lakeland",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "No website or listing found; the search returned only generic partition hardware pages.",
+   "red_flags": [
+    "No website or verifiable listing found",
+    "Name suggests trim and hardware carpentry rather than partitions"
+   ],
+   "reason": "Nothing found online showing this business or any partition installation work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  }
+ ]
+}

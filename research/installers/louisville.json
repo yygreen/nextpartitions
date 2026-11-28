@@ -1,0 +1,458 @@
+{
+ "area": "louisville",
+ "found_count": 14,
+ "sources_tried": [
+  "Seed file louisville.json: worked. Maps results are mostly residential remodelers and plumbers; the only relevant one is D.A.W. Company. Web results had only Google redirect URLs and generic titles, with nothing usable.",
+  "Bobrick rep locator (bobrick.com/sales-representatives): 404",
+  "Scranton Products find-a-rep: guessed URL returned 404. The Scranton case study page worked and named Atlas Co. for the KFC Yum! Center partitions.",
+  "Hadrian find-a-rep: guessed URL returned 404",
+  "General Partitions find-a-representative: guessed URL returned 404",
+  "ASI, Bradley, Metpar, Ampco locators: not tried, because the WebSearch cap was reached and their URLs weren't known",
+  "The Blue Book (thebluebook.com iProView): blocked with 403",
+  "Procore network: worked. The KY door-hardware list surfaced Atlas Companies and US Specialties. The Louisville toilet-compartments and specialties category pages returned irrelevant or out-of-state firms. Baylor Commercial Door (Corbin) and Accurate Door & Hardware (Paducah) were listed but are beyond 120 miles.",
+  "BuildingConnected: not tried",
+  "WebSearch: all 8 calls used. Queries covered toilet partitions and Division 10 in Louisville, Kentucky Division 10 specialties, Atlas Co, furnish-and-install for KY/S. Indiana/Cincinnati, Louisville door hardware Division 10 (this one produced the best leads), and regional Lexington/Indianapolis/Cincinnati. Results were mostly national online suppliers.",
+  "Superpages Louisville toilet partitions: worked, but it is mostly plumbers and remodelers; only D.A.W. is relevant",
+  "Bing via WebFetch: returned irrelevant results",
+  "One Point Partitions site: 403",
+  "Cook & Boardman (cbxsolutions.com): 403",
+  "Yelp/BBB: not reached because of the search cap",
+  "Seed file research/installers/raw/seeds/louisville.json: read. Maps results are mostly remodelers, plumbers and stores; only D.A.W. Company was relevant. Web seed URLs are Google redirect links with no domains.",
+  "Bobrick Find a Rep (bobrick.com/find-a-rep): page loaded, but the rep dropdown and results didn't render, so no KY reps were readable.",
+  "Scranton Products where-to-buy: worked, but it lists only regional product specialists (KY covered from an out-of-state territory rep), no local dealers.",
+  "ASI find-a-rep (americanspecialties.com/find-a-rep/): 404.",
+  "General Partitions find-a-rep: 404.",
+  "Hadrian find-a-representative: 404.",
+  "Bradley, Metpar, Ampco/Ammco locators: not reached (budget).",
+  "The Blue Book search (thebluebook.com): 403, blocked.",
+  "Procore Network public pages: worked. The KY door-hardware and KY compartments-and-cubicles categories surfaced Atlas, US Specialties, Schiller and MiD. The Louisville toilet-compartments filter showed unrelated firms. Baylor Commercial Door (Corbin, KY), Accurate Door & Hardware (Paducah) and CHOSEN Commercial Contract (Erlanger) list toilet compartments but are well outside 30 miles.",
+  "BuildingConnected: not tried.",
+  "WebSearch: 8 of 8 used. Generic searches mostly returned national online sellers (One Point Partitions, toiletpartitions.com, Prestige, Newton) and residential plumbers. The door hardware plus Division 10 search was the most productive.",
+  "Superpages Louisville toilet-partitions page: worked. It confirmed D.A.W. and showed WireCrafters, Dant Clayton and Vanderbur, which are manufacturers or industrial firms and were skipped.",
+  "Kelley Bros locations: worked. No KY or southern Indiana office (nearest are Indianapolis and Mason, OH), so it was skipped.",
+  "Cook & Boardman / CBX specialty page: 403.",
+  "One Point Partitions Louisville page: 403. It is a national online seller with a delivery terminal, so it was skipped.",
+  "Yelp and BBB: none surfaced in searches."
+ ],
+ "candidates": [
+  {
+   "name": "The Atlas Companies (Atlas Co.)",
+   "base_city": "Louisville",
+   "state": "KY",
+   "website": "https://www.atlas-co.com",
+   "contact_page": "https://www.atlas-co.com/contact/",
+   "phone": "502-714-9867",
+   "email": "",
+   "brands": [
+    "Scranton Products (Hiny Hiders, per Scranton case study)"
+   ],
+   "installs_partitions": "yes",
+   "partition_evidence": "Division 10 page lists 'toilet compartments and accessories' and says Atlas supplies and installs most items listed; Scranton Products case study says Atlas Co. sourced the Hiny Hiders partitions for the KFC Yum! Center (the installer isn't named).",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://www.atlas-co.com",
+    "https://www.atlas-co.com/products/division-10/",
+    "https://scrantonproducts.com/?p=5784"
+   ],
+   "red_flags": [
+    "Supplies partitions itself (buy-around risk)",
+    "Large Division 8/10/12 distributor-contractor, mostly bid work; installation of partitions stated generally, not shown project by project",
+    "Email obscured on site"
+   ],
+   "verdict": "strong",
+   "reason": "Louisville commercial Division 10 contractor that lists toilet compartments among the items it supplies and installs, and supplied the Yum! Center partitions. It also sells partitions, so the listing agreement terms matter.",
+   "added_by_checker": false,
+   "license": {
+    "name": "The Atlas Companies (Atlas Co.)",
+    "area": "louisville",
+    "status": "not_online",
+    "registry": "Louisville Metro Construction Review (Develop Louisville) contractor identification licenses; open-data snapshot 'Louisville Metro KY - Active Contractors' (LOJIC)",
+    "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/Louisville_Metro_KY_Active_Contractors/FeatureServer/0",
+    "note": "Checked 2026-11-19. Kentucky has no state license for this work; Louisville Metro requires a building contractor identification. No current official online lookup found: louisvilleky.gov returned 403 to automated access. The only public dataset (LOJIC open data, last updated 2022-06-19 per data.gov, licence expirations 2015-2020) has no 'Atlas Companies'/'Atlas Co.' record (only an unrelated 'Atlas Siding & Window Co.'). The dataset is stale, so absence proves nothing. Confirm with Construction Review by phone or email."
+   },
+   "score": 70
+  },
+  {
+   "name": "U.S. Specialties",
+   "base_city": "Louisville",
+   "state": "KY",
+   "website": "https://www.usspecialties.com",
+   "contact_page": "https://usspecialties.com/us-specialties/",
+   "phone": "(502) 587-9000",
+   "email": "info@usspecialties.com",
+   "brands": [
+    "Bobrick",
+    "ASI Accurate Partitions",
+    "Scranton Products"
+   ],
+   "installs_partitions": "yes",
+   "partition_evidence": "Specialties page lists Toilet Compartments with project photos; Services menu lists Installation alongside Sales, Budgeting and Quotations. Manufacturers page shows Bobrick, ASI Accurate and Scranton.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://www.usspecialties.com",
+    "https://www.usspecialties.com/specialties",
+    "https://www.usspecialties.com/manufacturers",
+    "https://usspecialties.com/us-specialties/"
+   ],
+   "red_flags": [
+    "Dealer for Bobrick, ASI and Scranton: sells partitions directly (buy-around risk)",
+    "Also has a Columbus, OH office"
+   ],
+   "verdict": "strong",
+   "reason": "Louisville Division 10 dealer and installer showing toilet compartment projects and an installation service for commercial clients. As an ASI/Bobrick/Scranton dealer it competes with Next Partitions on supply.",
+   "added_by_checker": false,
+   "license": {
+    "name": "U.S. Specialties",
+    "area": "louisville",
+    "status": "not_online",
+    "registry": "Louisville Metro Construction Review (Develop Louisville) contractor identification licenses; open-data snapshot 'Louisville Metro KY - Active Contractors' (LOJIC)",
+    "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/Louisville_Metro_KY_Active_Contractors/FeatureServer/0",
+    "note": "Checked 2026-11-19. Kentucky has no state license for this work; Louisville Metro requires a building contractor identification. No current official online lookup found (louisvilleky.gov returned 403). The stale 2022 LOJIC dataset (expirations 2015-2020) has no 'U.S. Specialties' record. Absence there doesn't show they're unlicensed. Confirm with Construction Review."
+   },
+   "score": 70
+  },
+  {
+   "name": "The Atlas Companies",
+   "base_city": "Louisville",
+   "state": "KY",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "+1 502-714-9867",
+   "contact_page": "https://www.atlas-co.com/contact/",
+   "website": "https://www.atlas-co.com/",
+   "evidence_urls": [
+    "https://www.atlas-co.com/",
+    "https://www.atlas-co.com/division-10/"
+   ],
+   "partition_evidence": "Division 10 page lists 'toilet compartments and accessories' and says Atlas is 'proud to supply and install most items specified here'.",
+   "red_flags": [
+    "Supplies partitions itself (furnish-and-install), so a buy-around risk",
+    "Email obfuscated on site; no partition brands named"
+   ],
+   "reason": "Louisville-based commercial Division 10 contractor that supplies and installs toilet compartments; portfolio covers Kentucky and Indiana projects.",
+   "added_by_checker": false,
+   "license": {
+    "name": "The Atlas Companies",
+    "area": "louisville",
+    "status": "not_online",
+    "registry": "Louisville Metro Construction Review building contractor licensing (Type A/B); open-data snapshot 'Louisville Metro KY - Active Contractors' (LOJIC ArcGIS)",
+    "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/Louisville_Metro_KY_Active_Contractors/FeatureServer/0",
+    "note": "Kentucky has no state license for this work; Louisville Metro requires a building contractor ID. The official Louisville Metro contractor licensing page (louisvilleky.gov) returned HTTP 403 to automated access, and no live public lookup was found. The only machine-readable official list is the LOJIC open-data 'Active Contractors' table (3,231 rows, data last edited 2022-06-19, so stale). It has no record for 'The Atlas Companies'; the only 'ATLAS' match is 'ATLAS SIDING & WINDOW CO., INC' (Louisville, licence 16648, Type A, expired 2016-12-31), a different-sounding business that should not be treated as a match. Confirm with Louisville Metro Construction Review, (502) 574-3321 (number from third-party listing, not verified on an official page)."
+   },
+   "score": 70
+  },
+  {
+   "name": "Schiller Hardware & Door Systems (Louisville office)",
+   "base_city": "Louisville",
+   "state": "KY",
+   "website": "https://goschiller.com/",
+   "contact_page": "https://goschiller.com/contact/",
+   "phone": "",
+   "email": "",
+   "brands": [],
+   "installs_partitions": "likely",
+   "partition_evidence": "Louisville/Lexington page lists Washroom Accessories under 'Divisions 8 & 10' with doors, frames and hardware; toilet partitions are not mentioned.",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://goschiller.com/"
+   ],
+   "red_flags": [
+    "No toilet partitions listed; door hardware and security focus",
+    "No phone or email shown on the page read; contact button points to schillerhardware.com"
+   ],
+   "verdict": "possible",
+   "reason": "Commercial Division 8/10 door and hardware firm with a Louisville office that handles washroom accessories, but no evidence of toilet partition work.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Schiller Hardware & Door Systems (Louisville office)",
+    "area": "louisville",
+    "status": "not_online",
+    "registry": "Louisville Metro Construction Review (Develop Louisville) contractor identification licenses; open-data snapshot 'Louisville Metro KY - Active Contractors' (LOJIC)",
+    "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/Louisville_Metro_KY_Active_Contractors/FeatureServer/0",
+    "note": "Checked 2026-11-19. Kentucky has no state license for this work; Louisville Metro requires a building contractor identification. No current official online lookup found (louisvilleky.gov returned 403). The stale 2022 LOJIC dataset has no 'Schiller' record. Confirm with Construction Review."
+   },
+   "score": 50
+  },
+  {
+   "name": "Willis Klein Commercial",
+   "base_city": "Louisville",
+   "state": "KY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(502) 895-8708",
+   "email": "info@wk-commercial.com",
+   "contact_page": "https://www.williskleincommercial.com/contact.html",
+   "website": "https://www.williskleincommercial.com/",
+   "evidence_urls": [
+    "https://www.williskleincommercial.com/",
+    "https://www.williskleincommercial.com/division-10.html",
+    "https://www.williskleincommercial.com/contact.html"
+   ],
+   "partition_evidence": "Division 10 page lists restroom partitions; products are 'specified, supplied and supported' and delivered packaged by opening 'for installers', which suggests others install.",
+   "red_flags": [
+    "Primarily a Division 8/10 supplier; sells partitions (buy-around risk)",
+    "No install claim for partitions",
+    "Header email (info@willisklein.com) differs from contact page email"
+   ],
+   "reason": "Louisville commercial Division 8/10 supplier serving Kentuckiana that supplies restroom partitions; installation of partitions not shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Willis Klein Commercial",
+    "area": "louisville",
+    "status": "not_online",
+    "registry": "Louisville Metro Construction Review building contractor licensing; LOJIC open-data 'Active Contractors' snapshot",
+    "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/Louisville_Metro_KY_Active_Contractors/FeatureServer/0",
+    "note": "No 'WILLIS' entry in the 2022 open-data snapshot. The 'KLEIN' matches (Kleinholter Construction Co; Klein Lawson Company LLC, Salem IN) are other businesses. The current official registry page on louisvilleky.gov blocks automated access (HTTP 403). Status unknown; confirm with Louisville Metro Construction Review."
+   },
+   "score": 50
+  },
+  {
+   "name": "Schiller (Louisville office)",
+   "base_city": "Louisville",
+   "state": "KY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "contact_page": "https://goschiller.com/contact/",
+   "website": "https://goschiller.com/",
+   "evidence_urls": [
+    "https://goschiller.com/"
+   ],
+   "partition_evidence": "Lists Washroom Accessories under Divisions 8 & 10 and says it handles commercial door work from 'installation to maintenance'; partitions not mentioned.",
+   "red_flags": [
+    "Mainly a commercial door/hardware company",
+    "No phone or email shown on homepage",
+    "Louisville office address not confirmed in page text"
+   ],
+   "reason": "Commercial door and hardware firm (Louisville and Lexington) listing Division 10 washroom accessories with installation services; no toilet partition evidence.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Schiller (Louisville office)",
+    "area": "louisville",
+    "status": "not_online",
+    "registry": "Louisville Metro Construction Review building contractor licensing; LOJIC open-data 'Active Contractors' snapshot",
+    "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/Louisville_Metro_KY_Active_Contractors/FeatureServer/0",
+    "note": "No 'SCHILLER' entry in the 2022 open-data snapshot, and the current official registry blocks automated access (HTTP 403). Status unknown; confirm with Louisville Metro Construction Review."
+   },
+   "score": 50
+  },
+  {
+   "name": "Kelley Bros (Cincinnati/Mason office)",
+   "base_city": "Mason",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Global Toilet Partitions",
+    "Scranton Products",
+    "Hadrian"
+   ],
+   "phone": "(513) 770-0120",
+   "contact_page": "https://www.kelleybros.com/contact-us/",
+   "website": "https://www.kelleybros.com/",
+   "evidence_urls": [
+    "https://www.kelleybros.com/",
+    "https://www.kelleybros.com/locations/",
+    "https://www.kelleybros.com/?p=3224"
+   ],
+   "partition_evidence": "Division 10 page lists toilet partitions (Global, Scranton, Hadrian) and offers a turnkey service 'from our initial quote to the final Product Installation'.",
+   "red_flags": [
+    "Large multi-state Division 8/10 distributor; sells partitions (buy-around risk)",
+    "No Kentucky office; Indiana (Indianapolis) and Ohio offices only, about 100 miles away"
+   ],
+   "reason": "Supplies and offers installation of Division 10 including toilet partitions; serves Indiana (covering Jeffersonville/New Albany) and Ohio, but not Kentucky by its own list.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Kelley Bros (Cincinnati/Mason office)",
+    "area": "louisville",
+    "status": "not_online",
+    "registry": "Louisville Metro (KY) local rule: not provided in this task and not checked. Ohio state: OCILB, which covers trades only",
+    "source_url": "https://www.columbus.gov/Business-Development/Business-Licenses-Resources/Contractor-Licenses",
+    "note": "This row is for the Louisville area, but the task gave only the Columbus rule, so no Kentucky or Louisville Metro registry was checked. The office is in Mason, Ohio. Ohio has no state license for this kind of work, so there is nothing to look up at the Ohio state level. The Louisville or Kentucky rule needs a separate check. Checked 2026-11-19."
+   },
+   "score": 43
+  },
+  {
+   "name": "Contractors Choice, Inc.",
+   "base_city": "Lexington",
+   "state": "KY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/1072823/contractors-choice-inc/subcontractors/"
+   ],
+   "partition_evidence": "Blue Book listing (seen only in search results; page itself returned 403) says it specializes in hollow metal doors, hardware, toilet partitions and toilet accessories since 1990.",
+   "red_flags": [
+    "No website found; listing not read directly",
+    "No contact details verified",
+    "About 75 miles from Louisville; no statement it serves Louisville"
+   ],
+   "reason": "Lexington Division 8/10 subcontractor reported to handle toilet partitions and accessories, but evidence is second-hand and service to Louisville unconfirmed.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Contractors Choice, Inc.",
+    "area": "louisville",
+    "status": "not_online",
+    "registry": "Louisville Metro Construction Review building contractor licensing; LOJIC open-data 'Active Contractors' snapshot",
+    "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/Louisville_Metro_KY_Active_Contractors/FeatureServer/0",
+    "note": "Based in Lexington, but listed for the Louisville area, so the Louisville Metro building contractor ID applies to work there. There is no 'CONTRACTORS CHOICE' or 'CONTRACTOR'S CHOICE' entry in the 2022 open-data snapshot. The current official registry blocks automated access (HTTP 403). Lexington's own rules were not checked. Status unknown."
+   },
+   "score": 43
+  },
+  {
+   "name": "MiD Inc.",
+   "base_city": "Louisville",
+   "state": "KY",
+   "website": "https://www.midinc.net",
+   "contact_page": "https://www.midinc.net/contact",
+   "phone": "(502) 210-3411",
+   "email": "contact@midinc.net",
+   "brands": [],
+   "installs_partitions": "likely",
+   "partition_evidence": "Interior Specialties lists 'Division 10 Bath Accessories' along with shower doors, surrounds, pans, mirrors and closets; toilet partitions are not mentioned. The company describes itself as an appliance delivery and installation logistics firm.",
+   "commercial": "unknown",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://www.midinc.net",
+    "https://www.midinc.net/products/interior-specialties"
+   ],
+   "red_flags": [
+    "Main business is appliance delivery and installation",
+    "No toilet partitions or commercial work shown"
+   ],
+   "verdict": "possible",
+   "reason": "Lists Division 10 bath accessories installation, which meets the 'likely' bar, but shows no partitions or commercial work. Weak candidate.",
+   "added_by_checker": false,
+   "license": {
+    "name": "MiD Inc.",
+    "area": "louisville",
+    "status": "not_online",
+    "registry": "Louisville Metro Construction Review (Develop Louisville) contractor identification licenses; open-data snapshot 'Louisville Metro KY - Active Contractors' (LOJIC)",
+    "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/Louisville_Metro_KY_Active_Contractors/FeatureServer/0",
+    "note": "Checked 2026-11-19. Kentucky has no state license for this work; Louisville Metro requires a building contractor identification. No current official online lookup found (louisvilleky.gov returned 403). The stale 2022 LOJIC dataset has no 'MiD Inc.' record; it has only unrelated 'Mid America ...'/'Mid Kentucky ...' names. Confirm with Construction Review."
+   },
+   "score": 35
+  },
+  {
+   "name": "LaForce, LLC (Cincinnati office)",
+   "base_city": "Cincinnati",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "phone": "(513) 242-1100",
+   "contact_page": "https://laforceinc.com/contact/",
+   "website": "https://laforceinc.com/",
+   "evidence_urls": [
+    "https://laforceinc.com/",
+    "https://laforceinc.com/laforce-locations/"
+   ],
+   "partition_evidence": "Homepage lists toilet partitions among Div. 10 products and mentions an installer team; partition installation not shown specifically.",
+   "red_flags": [
+    "No Kentucky office; site does not say it serves Louisville or Kentucky",
+    "Large Division 8/10 distributor that sells partitions (buy-around risk)"
+   ],
+   "reason": "Supplies Division 10 products including toilet partitions, but its nearest offices are Cincinnati and Indianapolis (about 100 miles away) and it doesn't say it serves this area.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "D.A.W. Company, Inc.",
+   "base_city": "Louisville",
+   "state": "KY",
+   "website": "http://www.dawcompany.com/",
+   "contact_page": "http://www.dawcompany.com/contact-us",
+   "phone": "(502) 635-1210",
+   "email": "",
+   "brands": [
+    "Scranton Products",
+    "American Sanitary",
+    "General Partitions",
+    "Accurate Partitions"
+   ],
+   "installs_partitions": "unknown",
+   "partition_evidence": "Toilet partitions page says the company 'can furnish all your toilet partition needs' from four manufacturers; neither that page nor the contact page mentions installation.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "evidence_urls": [
+    "http://www.dawcompany.com/",
+    "http://www.dawcompany.com/toilet-partitions",
+    "http://www.dawcompany.com/contact-us"
+   ],
+   "red_flags": [
+    "Partition supplier (buy-around risk)",
+    "No installation service stated anywhere on site"
+   ],
+   "verdict": "reject",
+   "reason": "Louisville supplier of doors, hardware and toilet partitions, but the site shows no installation work. A phone check could change this.",
+   "added_by_checker": false,
+   "license": {
+    "name": "D.A.W. Company, Inc.",
+    "area": "louisville",
+    "status": "not_online",
+    "registry": "Louisville Metro Construction Review building contractor licensing; LOJIC open-data 'Active Contractors' snapshot",
+    "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/Louisville_Metro_KY_Active_Contractors/FeatureServer/0",
+    "note": "No match for 'D.A.W', 'D A W' or 'DAW ' in the 2022 open-data snapshot. A specialties installer may work under a general contractor's permit rather than hold its own building contractor ID. The current official registry blocks automated access (HTTP 403). Status unknown."
+   },
+   "score": 30
+  },
+  {
+   "name": "One Point Partitions (Louisville delivery terminal)",
+   "base_city": "Louisville",
+   "state": "KY",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Ironwood"
+   ],
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=2842",
+    "https://onepointpartitions.com/?p=13"
+   ],
+   "partition_evidence": "Site returned 403; search snippets describe a Louisville delivery terminal with free delivery and self-installation guidance, not installation crews.",
+   "red_flags": [
+    "Online partitions seller: a direct competitor of Next Partitions",
+    "No evidence it installs",
+    "Site blocked automated access, so facts come from search snippets only"
+   ],
+   "reason": "A partitions reseller with a Louisville delivery terminal, not an installer; it competes with Next Partitions rather than installing for it.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  }
+ ]
+}

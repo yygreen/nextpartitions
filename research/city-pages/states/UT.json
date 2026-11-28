@@ -1,0 +1,485 @@
+{
+ "state": "UT",
+ "state_name": "Utah",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "Utah State Construction Code: the 2024 International Plumbing Code as adopted by Utah Code 15A-2-103(1)(d), with the statewide amendments in Utah Code 15A-3-304. The 2024 International Building Code (15A-2-103(1)(a)) repeats the same table as Table 2902.1, amended by Utah Code 15A-3-112.",
+   "edition": "2024 International Plumbing Code with Utah amendments (statute version effective 2026-07-01)",
+   "table": "IPC Table 403.1, Minimum Number of Required Plumbing Fixtures (mirrored in IBC Table 2902.1). Utah's amendments to the table only add or replace footnotes f, g, h (and i in the IBC copy): pools, diaper changing stations, child care sinks. The water closet ratios are not amended.",
+   "url": "https://le.utah.gov/xcode/Title15A/Chapter2/C15A-2-S103_2026050620260701.html",
+   "quote": "(1) Subject to the other provisions of this part, the following construction codes are incorporated by reference, and together with the amendments specified in Chapter 3, Statewide Amendments Incorporated as Part of State Construction Code, and Chapter 4, Local Amendments Incorporated as Part of State Construction Code, are the construction standards to be applied to building construction, alteration, remodeling, and repair, and in the regulation of building construction, alteration, remodeling, and repair in the state: (a) the 2024 edition of the International Building Code, including Appendices C and J, issued by the International Code Council; ... (d) the 2024 edition of the International Plumbing Code, issued by the International Code Council;",
+   "note": "The adoption (15A-2-103) and every Utah amendment (15A-3-304, 15A-3-112) were read on the Legislature's site, le.utah.gov. The table rows and the unamended model sections (403.1.1, 403.1.2, 403.2, 405.3.4, 405.3.5, 424.2) were read on UpCodes' 'Utah Plumbing Code 2024' (adopts with amendments IPC 2024), a secondary copy that shows the Utah amendments in place; ICC's own site was not used. The version of 15A-2-103 read is marked 'Superseded 1/1/2027'; per research/state-codes/states.json the 2027 version keeps the 2024 IBC and IPC (not re-read here)."
+  },
+  "cities_may_amend": false,
+  "cities_may_amend_quote": {
+   "text": "Cities and counties must follow the State Construction Code and may not adopt or enforce a requirement that is more restrictive on a subject the code addresses. Local amendments exist only where the Legislature writes them into Utah Code Title 15A, Chapter 4 (Part 1 for the building code, Part 3 for the plumbing code). The city agent should check Chapter 4 for a Salt Lake City entry.",
+   "quote": "(1)(a) The State Construction Code is the construction codes adopted with any modifications in accordance with this section that the state and each political subdivision of the state shall follow. ... (8) Except as provided in Subsections (6), (7), (9), and (10), or as expressly provided in state law, a state executive branch entity or political subdivision of the state may not, after December 1, 2016, adopt or enforce a rule, ordinance, or requirement that applies to a subject specifically addressed by, and that is more restrictive than, the State Construction Code.",
+   "url": "https://le.utah.gov/xcode/Title15A/Chapter1/C15A-1-S204_2025110620251206.html"
+  },
+  "rows": {
+   "office": {
+    "row_label": "2 | Business | Buildings for the transaction of business, nonmedical professional services, other services involving merchandise, office buildings, banks, light industrial and similar uses",
+    "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "urinals": "See Section 424.2 (optional substitution, not more than 50% of the men's required water closets in each toilet room)",
+    "quote": "2 | Business | Buildings for the transaction of business, nonmedical professional services, other services involving merchandise, office buildings, banks, light industrial and similar uses | 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50 | [lavatories] 1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80 | — | 1 per 100 | 1 service sink e",
+    "note": "The row gives one water closet ratio for the business classification; it applies to each sex after the 50/50 split (Section 403.1.1).",
+    "url": "https://up.codes/viewer/utah/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "restaurant": {
+    "row_label": "1 | Assembly | Restaurants, banquet halls and food courts d",
+    "wc_male": "1 per 75",
+    "wc_female": "1 per 75",
+    "urinals": "See Section 424.2 (optional substitution, not more than 67% of the men's required water closets in each toilet room)",
+    "quote": "Restaurants, banquet halls and food courts d | 1 per 75 | 1 per 75 | [lavatories] 1 per 200 | — | 1 per 500 | 1 service sink. [Footnote d:] The occupant load for seasonal outdoor seating and entertainment areas shall be included when determining the minimum number of facilities required.",
+    "url": "https://up.codes/viewer/utah/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "school": {
+    "row_label": "3 | Educational | Educational facilities",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 50",
+    "urinals": "See Section 424.2 (optional substitution, not more than 67% of the men's required water closets in each toilet room)",
+    "quote": "3 | Educational | Educational facilities | 1 per 50 | 1 per 50 | — | 1 per 100 | 1 service sink h. [Utah footnote h, 15A-3-304(1)(e):] Non-residential child care facilities shall comply with the additional sink requirements of Utah Administrative Code, R381-60-9, Hourly Child Care Centers, R381-70-9, Out of School Time Child Care Programs, and R381-100-9, Child Care Centers.",
+    "url": "https://up.codes/viewer/utah/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "The occupant load is divided in half, 50% men and 50% women, unless approved statistical data show another split. Utah replaces the model exception for all-gender rooms: a shared all-gender room may account for at most half of the occupant load, and the other half of the required fixtures must be in separate men's and women's rooms.",
+    "quote": "To determine the occupant load of each sex, the total occupant load shall be divided in half. To determine the required number of fixtures, the fixture ratio or ratios for each fixture type shall be applied to the occupant load of each sex in accordance with Table 403.1. ... Exceptions: 1. The total occupant load shall not be required to be divided in half where approved statistical data indicate a distribution of the sexes of other than 50 percent of each sex. [Utah, 15A-3-304(2):] 2. Where multiple-user facilities are designed to serve all genders, the following shall apply: 2.1. The maximum fixture count to serve all genders shall be calculated at 50% of the total occupant load. The maximum fixture count for the multiple user all gender facility shall be calculated at 50% female and 50% male. 2.2 The remaining 50% of the required restroom fixtures shall be provided as required by Table 403.1.",
+    "url": "https://up.codes/viewer/utah/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+    "more_urls": [
+     "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S304_2026050620260701.html"
+    ]
+   },
+   "rounding": {
+    "text": "Any fraction rounds up to the next whole fixture, for each sex. For a building with several occupancies, the fractions are added first and then rounded up.",
+    "quote": "Fractional numbers resulting from applying the fixture ratios of Table 403.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number. [Table 403.1 footnote a:] The fixtures shown are based on one fixture being the minimum required for the number of persons indicated or any fraction of the number of persons indicated. The number of occupants shall be determined by the International Building Code.",
+    "url": "https://up.codes/viewer/utah/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are optional. In each men's room they may replace not more than 67% of the required men's toilets in assembly (restaurants) and educational occupancies, and not more than 50% in all other occupancies (offices). Utah does not amend this section. Each urinal needs a privacy screen.",
+    "quote": "424.2 Substitution for Water Closets. In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent of the required water closets for males according to Table 403.1 in assembly and educational occupancies. Urinals shall not be substituted for more than 50 percent of the required water closets for males according to Table 403.1 in all other occupancies. [405.3.5:] Each urinal utilized by the public or employees shall occupy a separate area with walls or partitions to provide privacy.",
+    "url": "https://up.codes/viewer/utah/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "small_occupancy_exception": {
+    "text": "Separate men's and women's rooms are not required where the total occupant load (employees and customers) is 15 or fewer, in a business occupancy with 25 or fewer, or in a mercantile occupancy with 100 or fewer.",
+    "quote": "403.2 Separate Facilities. Where plumbing fixtures are required, separate toilet facilities shall be provided for each sex. Exceptions: ... 2. Separate toilet facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. 3. Separate toilet facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. 4. Separate toilet facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer.",
+    "url": "https://up.codes/viewer/utah/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "occupant_load": {
+    "text": "Office (business areas): 150 square feet gross per person. Restaurant dining room (assembly without fixed seats, unconcentrated, tables and chairs): 15 square feet net. Classroom: 20 square feet net. Utah's amendments to Chapter 10 of the building code (15A-3-105) do not change the table.",
+    "quote": "[2024 IBC Table 1004.5, Maximum Floor Area Allowances per Occupant:] Assembly without fixed seats ... Unconcentrated (tables and chairs) | 15 net ... Business areas | 150 gross ... Educational | Classroom area | 20 net",
+    "url": "https://up.codes/viewer/utah/ibc-2024/chapter/10/means-of-egress",
+    "more_urls": [
+     "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S105_2026050620260701.html"
+    ]
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 women, 25 men. Each sex: 25/25 = 1, rounded up to 1. 50% of 1 = 0.5, so at most 0 urinal(s) may replace men's toilets (not more than 50%, so rounded down; this assumes one men's room, since the limit applies in each toilet room). Office: 1 per 25 for the first 50 of each sex, then 1 per 50."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "50 women, 50 men. Each sex: 50/25 = 2, rounded up to 2. 50% of 2 = 1, so at most 1 urinal(s) may replace men's toilets (not more than 50%, so rounded down; this assumes one men's room, since the limit applies in each toilet room). Office: 1 per 25 for the first 50 of each sex, then 1 per 50."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 women, 100 men. Each sex: first 50: 2; remaining 50/50 = 1, rounded up to 1; total 3. 50% of 3 = 1.5, so at most 1 urinal(s) may replace men's toilets (not more than 50%, so rounded down; this assumes one men's room, since the limit applies in each toilet room). Office: 1 per 25 for the first 50 of each sex, then 1 per 50."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 women, 200 men. Each sex: first 50: 2; remaining 150/50 = 3, rounded up to 3; total 5. 50% of 5 = 2.5, so at most 2 urinal(s) may replace men's toilets (not more than 50%, so rounded down; this assumes one men's room, since the limit applies in each toilet room). Office: 1 per 25 for the first 50 of each sex, then 1 per 50."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 women, 25 men. Each sex: 25/75 = 0.33, rounded up to 1. 67% of 1 = 0.67, so at most 0 urinal(s) may replace men's toilets (not more than 67%, so rounded down; this assumes one men's room, since the limit applies in each toilet room). Restaurant: 1 per 75 of each sex."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 women, 50 men. Each sex: 50/75 = 0.67, rounded up to 1. 67% of 1 = 0.67, so at most 0 urinal(s) may replace men's toilets (not more than 67%, so rounded down; this assumes one men's room, since the limit applies in each toilet room). Restaurant: 1 per 75 of each sex."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 women, 100 men. Each sex: 100/75 = 1.33, rounded up to 2. 67% of 2 = 1.34, so at most 1 urinal(s) may replace men's toilets (not more than 67%, so rounded down; this assumes one men's room, since the limit applies in each toilet room). Restaurant: 1 per 75 of each sex."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 women, 200 men. Each sex: 200/75 = 2.67, rounded up to 3. 67% of 3 = 2.01, so at most 2 urinal(s) may replace men's toilets (not more than 67%, so rounded down; this assumes one men's room, since the limit applies in each toilet room). Restaurant: 1 per 75 of each sex."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "25 women, 25 men. Each sex: 25/50 = 0.5, rounded up to 1. 67% of 1 = 0.67, so at most 0 urinal(s) may replace men's toilets (not more than 67%, so rounded down; this assumes one men's room, since the limit applies in each toilet room). School: 1 per 50 of each sex."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 women, 50 men. Each sex: 50/50 = 1, rounded up to 1. 67% of 1 = 0.67, so at most 0 urinal(s) may replace men's toilets (not more than 67%, so rounded down; this assumes one men's room, since the limit applies in each toilet room). School: 1 per 50 of each sex."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 women, 100 men. Each sex: 100/50 = 2, rounded up to 2. 67% of 2 = 1.34, so at most 1 urinal(s) may replace men's toilets (not more than 67%, so rounded down; this assumes one men's room, since the limit applies in each toilet room). School: 1 per 50 of each sex."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "200 women, 200 men. Each sex: 200/50 = 4, rounded up to 4. 67% of 4 = 2.68, so at most 2 urinal(s) may replace men's toilets (not more than 67%, so rounded down; this assumes one men's room, since the limit applies in each toilet room). School: 1 per 50 of each sex."
+   }
+  ],
+  "confidence": "medium",
+  "confidence_note": "Adoption and all Utah amendments read on the official statute site (high). Table rows and unamended model sections read on UpCodes' Utah copy (secondary), so the item is medium under RULES.md."
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "2024 International Building Code Section 803.9 (with 803.1.1, NFPA 286 room-corner test), in force in Utah under Utah Code 15A-2-103(1)(a). Utah's amendments to IBC Chapters 7 through 9 (Utah Code 15A-3-104) touch only Chapters 7 and 9 (Sections 506, 606, 902 onward were the only section numbers found in it), so Chapter 8 applies as published.",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. [803.1.1:] Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1. Materials complying with Section 803.1.1.1 shall be considered to also comply with the requirements of Class A. [Chapter 2 definition, Interior Wall and Ceiling Finish:] The exposed interior surfaces of buildings, including but not limited to: fixed or movable walls and partitions; toilet room privacy partitions; columns; ceilings; and interior wainscoting, paneling or other finish applied structurally or for decoration, acoustical correction, surface insulation, structural fire resistance or similar purposes, but not including trim.",
+  "url": "https://up.codes/viewer/utah/ibc-2024/chapter/8/interior-finishes",
+  "more_urls": [
+   "https://up.codes/viewer/utah/ibc-2024/chapter/2/definitions",
+   "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S104_2026050620260701.html",
+   "https://le.utah.gov/xcode/Title15A/Chapter2/C15A-2-S103_2026050620260701.html"
+  ],
+  "confidence": "medium",
+  "note": "Section text read on UpCodes' 'Utah Building Code 2024' (secondary). The absence of a Utah amendment to Chapter 8 was read on le.utah.gov (official)."
+ },
+ "access": {
+  "state_standard": "ICC A117.1-2009, through Chapter 11 of the 2024 International Building Code. Utah Code 15A-3-113(1) replaces the 2017 edition the 2024 IBC references with the 2009 edition. Utah has no separate state accessibility code; the federal 2010 ADA Standards apply alongside.",
+  "state_standard_quote": {
+   "quote": "(1) In IBC, Chapter 35, the referenced standard \"ICC A117.1-17: Accessible and Usable Buildings and Facilities\" is deleted and replaced with \"ICC A117.1-09: Accessible and Usable Buildings and Facilities.\" (2) In IBC, Chapter 35, the referenced standard ICCA117.1-09, Section 606.2, Exception 1, is modified to include the following sentence at the end of the exception: \"The minimum clear floor space shall be centered on the sink assembly.\"",
+   "url": "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S113_2024021620240501.html"
+  },
+  "differences": [
+   {
+    "point": "Vertical grab bar. Utah's standard requires an extra 18-inch vertical grab bar on the side wall of the wheelchair stall, and on both side walls of an ambulatory stall (which must have side wall bars 'complying with Section 604.5.1' on both sides). The federal standard requires only the horizontal side bar.",
+    "state": "A117.1-2009 604.5.1: Fixed side-wall grab bars shall be 42 inches (1065 mm) minimum in length, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall. In addition, a vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall.",
+    "federal": "2010 ADA Standards 604.5.1: The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall.",
+    "state_url": "https://up.codes/viewer/utah/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities",
+    "quote": "In addition, a vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall."
+   },
+   {
+    "point": "Number of accessible stalls in very large restrooms. The building code asks for 5% of the stalls in a room to be wheelchair accessible, and 5% more to be ambulatory where stalls plus urinals total six or more. Federal law asks for at least one of each. The two differ only in a room with more than 20 stalls.",
+    "state": "2024 IBC 1110.2.4: Where water closet compartments are provided in a toilet room or bathing room, at least 5 percent of the total number of compartments shall be wheelchair accessible. Where the combined total water closet compartments and urinals provided in a toilet room or bathing room is six or more, at least 5 percent of the total number of compartments shall be ambulatory accessible, provided in addition to the wheelchair-accessible compartment.",
+    "federal": "2010 ADA Standards 213.3.1: Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1. In addition to the compartment required to comply with 604.8.1, at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures.",
+    "state_url": "https://up.codes/viewer/utah/ibc-2024/chapter/11/accessibility",
+    "quote": "at least 5 percent of the total number of compartments shall be wheelchair accessible"
+   },
+   {
+    "point": "Family or assisted-use toilet room. In assembly (restaurants, theaters, arenas) and mercantile occupancies that need six or more toilets in total, the building code requires an extra accessible single-user family or assisted-use room. The federal standards have no such requirement (no matching section was found in the 2010 ADA Standards sections 213 or 604).",
+    "state": "2024 IBC 1110.2.1: In assembly and mercantile occupancies, an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required. ... Fixtures located within family or assisted-use toilet and bathing rooms shall be included in determining the number of fixtures provided in an occupancy.",
+    "federal": "No equivalent requirement in sections 213 and 604 of the 2010 ADA Standards.",
+    "state_url": "https://up.codes/viewer/utah/ibc-2024/chapter/11/accessibility",
+    "quote": "In assembly and mercantile occupancies, an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required."
+   }
+  ],
+  "same_as_federal": "Read and found to match the federal text: toe clearance (A117.1-2009 604.9.5.1 and ADA 604.8.1.4: 9 inches high, 6 inches deep, 12 inches high for children's stalls, same depth and width exceptions); ambulatory stall grab bars on both sides; self-closing door with a pull on both sides near the latch; left- or right-hand approach.",
+  "process": "No state accessibility plan review or registration step was found in Utah Code Title 15A. Accessibility is part of the State Construction Code, which the state and each political subdivision must follow (Utah Code 15A-1-204(1)(a)), so the local building department checks it with the building permit.",
+  "confidence": "medium",
+  "note": "A117.1-2009 and IBC Chapter 11 read on UpCodes (secondary: 'Utah Accessibility Code 2009' and 'Utah Building Code 2024'). Utah's substitution of the 2009 edition read on le.utah.gov. ADA text read on access-board.gov."
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "Single-user and family or assisted-use toilet rooms must be identified as available to all persons regardless of sex, and they count toward the required fixtures. Required public toilet rooms need a sign saying whether the room is for males, females or all persons. Utah does not amend these sections.",
+   "quote": "[IPC 403.1.2:] Single-user toilet facilities and bathing rooms, and family or assisted-use toilet facilities and bathing rooms shall be identified as being available for use by all persons regardless of their sex. [IPC 403.4:] Required public toilet facilities shall be provided with signs that indicate whether the facility is to be used by males, by females, or by all persons regardless of sex.",
+   "url": "https://up.codes/viewer/utah/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+  },
+  "all_gender_shared": {
+   "rule": "Allowed, with three Utah conditions. (1) A shared all-gender room may account for at most 50% of the building's occupant load; the other 50% of the required fixtures must be in separate men's and women's rooms. (2) Stall partitions in a shared all-gender room must run from the floor to the ceiling. (3) Urinals there must be in a separate room or visually separated area, or each in a stall with floor-to-ceiling partitions.",
+   "quote": "[15A-3-112(2), IBC 2902.1.1 Exception 2:] Where multiple-user facilities are designed to serve all genders the following shall apply: 2.1 The maximum fixture count to serve all genders shall be calculated at 50 percent of the total occupant load. ... 2.2 The remaining 50 percent of the required restroom fixtures shall be provided as required by Table 2902.1 in separate toilet facilities. [15A-3-112(3), IBC 2902.2 Exception 6:] ... Urinals in multiple-user all gender toilet facilities shall be located in an area visually separated from the remainder of the facility or each urinal that is provided shall be located in a stall ... [15A-3-112(5), IBC 2903.1.4:] For restroom facilities designed to serve all genders, the partitions of the stalls shall extend from the floor to the ceiling. [15A-3-112(6), IBC 2903.1.5:] For facilities designed for use by all genders in the same room, urinals shall be located in a separate room or in stalls with partitions that extend from the floor to the ceiling. [15A-3-304(3), IPC 405.3.4:] For facilities designed for use by all genders in the same room, the partitions of the stalls shall extend from the floor to the ceiling.",
+   "url": "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S112_2023050320230701.html",
+   "more_urls": [
+    "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S304_2026050620260701.html"
+   ]
+  },
+  "use_restrictions": {
+   "rule": "Utah Code Title 63G, Chapter 31 applies to publicly owned or controlled facilities. In public schools, a student may use a sex-designated restroom or changing room designated for student use only if the student's sex corresponds with its designation; unisex and single-occupant facilities are outside the rule. In a government entity's facility open to the general public, the access restriction read covers sex-designated changing rooms (locker rooms, shower rooms, and a restroom that contains or is attached to a changing room). For construction: a government entity building a new facility with a restroom or changing room open to the general public must include a single-occupant facility (floor-to-ceiling walls, an entirely encased and locking door, designated for single occupancy), and for existing ones it must consider retrofits such as floor-to-ceiling walls and doors and may cut the state-required fixture count by up to 20% to make room. The chapter does not apply these rules to private buildings.",
+   "quote": "[63G-31-301(1):] To preserve the individual privacy of male and female students in the public education system, a student may only access an operational sex-designated privacy space within a public school that is designated for student use if the student's sex corresponds with the sex designation of the privacy space. [63G-31-302(1)(a):] ... an individual may only access an operational sex-designated changing room in a government entity's facility that is open to the general public if: (i) the individual's sex corresponds with the sex designation of the changing room; or (ii) ... [63G-31-304(2)(b):] for construction of a new facility with a privacy space that is open to the general public, the government entity that has authority over construction or remodeling of the facility shall ensure that the new construction includes a single-occupant facility; and (c) for existing privacy spaces ... (i) shall consider the feasibility of retrofitting or remodeling to include: (A) floor-to-ceiling walls and doors or similar privacy protections; (B) curtains; ... (ii) may reduce the number of fixtures that state law requires by up to 20% to provide adequate space for the retrofitting or remodeling ... [63G-31-101(11):] \"Single-occupant\" means ... that the facility or privacy space: (a) has floor-to-ceiling walls; (b) has an entirely encased and locking door; and (c) is designated for single occupancy.",
+   "url": "https://le.utah.gov/xcode/Title63G/Chapter31/C63G-31-S301_2025021420250507.html",
+   "more_urls": [
+    "https://le.utah.gov/xcode/Title63G/Chapter31/C63G-31-S101_2025060120250507.html",
+    "https://le.utah.gov/xcode/Title63G/Chapter31/C63G-31-S302_2025050720250507.html",
+    "https://le.utah.gov/xcode/Title63G/Chapter31/C63G-31-S304_2025060120250507.html"
+   ]
+  },
+  "confidence": "high",
+  "note": "All Utah amendments and Title 63G Chapter 31 sections 101, 301 to 305 read on le.utah.gov. Sections 63G-31-201 to 204 (athletics and other provisions in Part 2) and Part 4 (enforcement) were not opened. IPC 403.1.2 and 403.4 read on UpCodes."
+ },
+ "public_wage": {
+  "has_state_law": false,
+  "law": "None. The U.S. Department of Labor lists Utah among the states without a prevailing wage law (repealed in 1981). Only the federal Davis-Bacon Act applies, on federally funded or assisted construction.",
+  "threshold": null,
+  "rates_url": "https://sam.gov/wage-determinations",
+  "quote": "Utah - repealed in 1981. [as reported from the page's list of states without prevailing wage laws; the page was read through the fetch tool, which returns a summary, because dol.gov refused a direct download]",
+  "url": "https://www.dol.gov/agencies/whd/state/prevailing-wages",
+  "confidence": "medium",
+  "note": "The DOL page title is 'Dollar Threshold Amount for Contract Coverage'. The Utah statute books were not searched for a repealed chapter; the Utah Labor Commission page tried returned 404."
+ },
+ "sales_tax": {
+  "state_rate": 0.0485,
+  "state_rate_quote": {
+   "quote": "Chart 2: Taxes in the Combined Rate ... State Sales and Use | State | 4.85%",
+   "url": "https://files.tax.utah.gov/tax/forms/pubs/pub-25.pdf",
+   "note": "4.85% is the state part only. Local option, county option and other local taxes are added to make the combined rate at the delivery address (tax.utah.gov/sales/rates); the city agent supplies the combined rate."
+  },
+  "shipped_goods": {
+   "rule": "Partitions sold without installation are tangible personal property and taxable to the buyer. An out-of-state seller with more than $100,000 of Utah sales in the current or prior year must register and collect at the combined rate for the delivery location. If the seller does not collect, the buyer owes use tax to the Tax Commission. The same applies when a business sells goods shipped direct from a wholesaler (third-party drop shipping).",
+   "quote": "You have an economic presence in Utah if you have sales of more than $100,000 in Utah during the year or the prior year. ... Sellers with a physical presence, economic presence, or a related business in Utah must collect and pay sales tax and file returns. ... Non-nexus sellers do not have to register or collect Utah sales tax. ... When a seller does not collect sales tax on taxable sales, the buyer must pay use tax on purchases brought into Utah for storage, use or consumption. [Use Tax:] Use tax is applied to purchases of tangible personal property, products transferred electronically, and certain services when sales tax is due but not collected by the seller. [Third-party Drop Shipping:] If the business is not required to have a Utah sales tax license, it does not have to collect the tax. However, the customer must report and pay the tax directly to the Tax Commission. [Pub 42, Example 2:] Under their agreement, the homeowner buys all the building materials and makes them available to the contractor. The homeowner must pay sales tax on the purchase of the building materials.",
+   "url": "https://files.tax.utah.gov/tax/forms/pubs/pub-25.pdf",
+   "more_urls": [
+    "https://files.tax.utah.gov/tax/forms/pubs/pub-42.pdf"
+   ]
+  },
+  "freight_taxed": false,
+  "freight_rule": {
+   "rule": "Delivery charges (transportation, shipping, postage, handling, crating and packing) are not taxed if stated separately on the invoice. Freight built into the price of the goods is taxed with them.",
+   "quote": "Delivery charges are not subject to sales tax if stated separately on the invoice. The delivery charge does not include the cost of transportation to the seller (typically called \"freight-in\"). [Definitions:] Delivery charges include (but are not limited to): transportation, shipping, postage, handling, crating and packing. Purchase price and sales price of tangible personal property do not include delivery charges if stated separately.",
+   "url": "https://files.tax.utah.gov/tax/forms/pubs/pub-25.pdf"
+  },
+  "install_labor": {
+   "rule": "Not taxed. Labor to install tangible personal property to real property is exempt if listed separately on the invoice, and labor to improve or renovate real property is exempt.",
+   "quote": "Charges for labor to install tangible personal property to real property are not subject to sales tax, even if the personal property is not actually converted to real property. The exemption for installation charges applies if the charges are listed separately on the invoice. [What is Exempt:] Labor to service, repair, renovate or improve real property. Installation, if separately stated on an invoice.",
+   "url": "https://files.tax.utah.gov/tax/forms/pubs/pub-42.pdf"
+  },
+  "furnish_and_install": {
+   "rule": "A contractor who furnishes and installs materials that become part of the building is the final consumer: the contractor pays sales or use tax on the materials and may not charge sales tax to the property owner on the contract. If the owner buys the materials for a contractor to install, the owner pays the tax on them.",
+   "quote": "Under a furnish-and-install contract, a seller converts tangible personal property to real property (the seller becomes a real property contractor). The contractor is the last person to own the materials as tangible personal property. The contractor must pay sales tax on the purchase of the materials, while the transaction between the contractor and the real property owner is not taxable. But, if the property owner purchases construction materials for use by a third-party contractor, it is the property owner and not the contractor who must pay the sales tax. ... A contractor who sells tangible personal property under a furnish-and-install contract may not: 1. collect sales tax on the transaction;",
+   "url": "https://files.tax.utah.gov/tax/forms/pubs/pub-42.pdf",
+   "note": "Publication 42 does not name toilet partitions. It treats construction materials and fixtures (sinks, tubs, built-in systems) as real property once installed, and 'trade fixtures' that 'can vary from one tenant to another without major change to the building' as personal property. Which side partitions fall on is a question for the Tax Commission; the answer does not change the tax on a supply-only sale."
+  },
+  "agency": "Utah State Tax Commission",
+  "confidence": "high",
+  "note": "Publication 42 (Rev. 7/26) and Publication 25 (Rev. 9/26) read as PDFs from files.tax.utah.gov, linked from the Tax Commission's current publication pages. Statute 59-12-102/103 and Rule R865-19S-58 were not opened."
+ },
+ "page": {
+  "stalls_intro": "Utah's rules count toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women, and every toilet needs a stall. Urinals are optional: in each men's room they may replace up to half of the toilets in an office and up to two thirds in a restaurant or school, and each urinal then needs a screen.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building, and Utah's rules are the same in every city. An office that holds 25 people or fewer, or any space that holds 15 or fewer, does not need separate men's and women's rooms.",
+  "capacity": "To find your building's capacity, Utah's building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** Utah's building rules require solid plastic (HDPE) partitions to pass a room fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law sets the sizes, and Utah's building rules add their own access standard. Utah has no separate state review step: the local building department checks access with the permit.",
+  "state_extra_bullet": "- **Utah extras:** Utah's access standard asks for a vertical grab bar, at least 18 inches long, on the side wall next to the toilet, in addition to the horizontal bars federal law requires. A restaurant or store that needs six or more toilets in total must also have a single-user family restroom. In a room with more than 20 stalls, 5% of them must be wheelchair accessible, where federal law asks for at least one.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must be marked as open to everyone. A shared all-gender room is allowed for up to half of a building's required toilets, with the rest in separate men's and women's rooms. In a shared all-gender room, Utah requires stall partitions that run from the floor to the ceiling, and urinals must be in a separate area or in floor-to-ceiling stalls. In public schools, state law limits each men's or women's student restroom to students of that sex, and a new government building with public restrooms must include a single-occupant restroom with floor-to-ceiling walls and a locking door.",
+  "public_jobs": "Utah has no state wage law for public construction, so set wage rates apply only on federally funded projects, under the federal Davis-Bacon Act.",
+  "tax_install_bullet": "- **Tax on installation:** Utah does not tax installation labor that is listed separately on the invoice. Under a furnish-and-install contract for work that becomes part of the building, the contractor pays the tax on the materials and charges the customer none.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable. Freight is not taxed if it is listed separately on the invoice. If the seller doesn't collect the tax, the buyer owes it to the state as use tax.",
+  "tax_confirm": "your accountant or the Utah State Tax Commission",
+  "sources": [
+   "- Toilet counts in Utah: [Utah Code 15A-2-103](https://le.utah.gov/xcode/Title15A/Chapter2/C15A-2-S103_2026050620260701.html) (adopts the 2024 International Plumbing Code and 2024 International Building Code) and [Utah Code 15A-3-304](https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S304_2026050620260701.html) (Utah amendments to Chapter 4 of the plumbing code). Table 403.1 and Sections 403.1.1, 403.2, 405.3.5 and 424.2 were read on a [secondary copy of the Utah Plumbing Code 2024](https://up.codes/viewer/utah/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings). Cities may not be stricter: [Utah Code 15A-1-204](https://le.utah.gov/xcode/Title15A/Chapter1/C15A-1-S204_2025110620251206.html). Checked 2026-11-24.",
+   "- Floor area per person: 2024 International Building Code, Table 1004.5, read on a [secondary copy of the Utah Building Code 2024](https://up.codes/viewer/utah/ibc-2024/chapter/10/means-of-egress). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: 2024 International Building Code Sections 803.9 and 803.1.1 (NFPA 286) and the Chapter 2 definition of interior wall and ceiling finish, read on a [secondary copy of the Utah Building Code 2024](https://up.codes/viewer/utah/ibc-2024/chapter/8/interior-finishes); Utah's amendments to Chapters 7 through 9 leave Chapter 8 unchanged: [Utah Code 15A-3-104](https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S104_2026050620260701.html). Checked 2026-11-24.",
+   "- Wheelchair-accessible stalls: [2010 ADA Standards for Accessible Design](https://www.access-board.gov/ada/), sections 213.3.1, 604.5 and 604.8; [Utah Code 15A-3-113](https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S113_2024021620240501.html) (ICC A117.1-2009 replaces the 2017 edition); ICC A117.1-2009 Sections 604.5.1, 604.9 and 604.10, read on a [secondary copy](https://up.codes/viewer/utah/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities); 2024 International Building Code Sections 1110.2.1 and 1110.2.4, read on a [secondary copy](https://up.codes/viewer/utah/ibc-2024/chapter/11/accessibility). Checked 2026-11-24.",
+   "- Single-user and all-gender restrooms: [Utah Code 15A-3-112](https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S112_2023050320230701.html) (amendments to building code Sections 2902.1.1, 2902.2, 2903.1.4 and 2903.1.5) and [Utah Code 15A-3-304](https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S304_2026050620260701.html) (plumbing code Sections 403.1.1, 405.3.4 and 405.3.5); plumbing code Sections 403.1.2 and 403.4 on the [secondary copy](https://up.codes/viewer/utah/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings); Utah Code [63G-31-101](https://le.utah.gov/xcode/Title63G/Chapter31/C63G-31-S101_2025060120250507.html), [63G-31-301](https://le.utah.gov/xcode/Title63G/Chapter31/C63G-31-S301_2025021420250507.html), [63G-31-302](https://le.utah.gov/xcode/Title63G/Chapter31/C63G-31-S302_2025050720250507.html) and [63G-31-304](https://le.utah.gov/xcode/Title63G/Chapter31/C63G-31-S304_2025060120250507.html). Checked 2026-11-24.",
+   "- Wages on public jobs: U.S. Department of Labor, Wage and Hour Division, [Dollar Threshold Amount for Contract Coverage](https://www.dol.gov/agencies/whd/state/prevailing-wages) (lists Utah's prevailing wage law as repealed in 1981). Federal rates: [sam.gov wage determinations](https://sam.gov/wage-determinations). Checked 2026-11-24.",
+   "- Sales tax: Utah State Tax Commission, [Publication 25, Sales and Use Tax General Information (Rev. 9/26)](https://files.tax.utah.gov/tax/forms/pubs/pub-25.pdf) and [Publication 42, Sales Tax Information for Sales, Installation and Repair of Tangible Personal Property Attached to Real Property (Rev. 7/26)](https://files.tax.utah.gov/tax/forms/pubs/pub-42.pdf). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; ICC A117.1-2009 (Utah Code 15A-3-113, in place of the 2017 edition); Utah State Construction Code: 2024 International Building Code with Utah amendments (Utah Code 15A-2-103, 15A-3-101 to 113); 2024 International Plumbing Code with Utah amendments (Utah Code 15A-3-301 to 315); NFPA 286 for HDPE."
+ },
+ "notes": [
+  "The existing entry in research/state-codes/states.json says the A117.1 edition is 'not confirmed'. It is the 2009 edition: Utah Code 15A-3-113(1).",
+  "Utah's floor-to-ceiling partition rule for shared all-gender rooms matters for product selection: standard partitions with floor and head gaps do not meet it.",
+  "Utah Code 63G-31-304(2)(c)(ii) lets a government entity cut the required fixture count by up to 20% when retrofitting existing public restrooms for privacy; this is not reflected in the stall table.",
+  "Utah also adds IPC 413.5: every public toilet room needs at least one floor drain (15A-3-304(7)). Not a partition rule."
+ ],
+ "sources_read": [
+  {
+   "url": "https://le.utah.gov/xcode/Title15A/Chapter2/C15A-2-S103_2026050620260701.html",
+   "official": true
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S304_2026050620260701.html",
+   "official": true
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S112_2023050320230701.html",
+   "official": true
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S113_2024021620240501.html",
+   "official": true
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S104_2026050620260701.html",
+   "official": true
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S105_2026050620260701.html",
+   "official": true
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title15A/Chapter1/C15A-1-S204_2025110620251206.html",
+   "official": true
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title15A/Chapter4/15A-4.html",
+   "official": true
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title63G/Chapter31/C63G-31-S101_2025060120250507.html",
+   "official": true
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title63G/Chapter31/C63G-31-S301_2025021420250507.html",
+   "official": true
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title63G/Chapter31/C63G-31-S302_2025050720250507.html",
+   "official": true
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title63G/Chapter31/C63G-31-S303_2024013020240501.html",
+   "official": true
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title63G/Chapter31/C63G-31-S304_2025060120250507.html",
+   "official": true
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title63G/Chapter31/C63G-31-S305_2025101420251206.html",
+   "official": true
+  },
+  {
+   "url": "https://up.codes/viewer/utah/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/utah/ibc-2024/chapter/2/definitions",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/utah/ibc-2024/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/utah/ibc-2024/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/utah/ibc-2024/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/utah/ibc-2024/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/utah/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities",
+   "official": false
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://files.tax.utah.gov/tax/forms/pubs/pub-42.pdf",
+   "official": true
+  },
+  {
+   "url": "https://files.tax.utah.gov/tax/forms/pubs/pub-25.pdf",
+   "official": true
+  },
+  {
+   "url": "https://tax.utah.gov/forms-pubs/pub-42/",
+   "official": true
+  },
+  {
+   "url": "https://www.dol.gov/agencies/whd/state/prevailing-wages",
+   "official": true
+  }
+ ],
+ "could_not_open": [
+  "https://tax.utah.gov/sales/remote-sellers (403 to curl)",
+  "https://www.dol.gov/agencies/whd/state/prevailing-wages (403 to curl; read through the fetch tool's summary only)",
+  "Utah Labor Commission wage page (404)",
+  "codes.iccsafe.org was not used; all model code text comes from UpCodes' Utah copies"
+ ],
+ "to_confirm": [
+  "Table 403.1 rows and Sections 403.1.2, 403.2, 424.2, 803.9, 1110.2.1, 1110.2.4 and Table 1004.5 against ICC's own text of the 2024 codes (read on UpCodes only). Ask the Utah Division of Professional Licensing, Uniform Building Code Commission, or the Salt Lake City Building Services division.",
+  "Whether Utah Code Title 15A, Chapter 4 (local amendments) has any Salt Lake City amendment to the building or plumbing code that touches toilet rooms. Only the chapter's part list was read; the city agent should open Parts 1 and 3.",
+  "A117.1-2009 against the 2010 ADA Standards for children's stalls, door location and restroom signs: only grab bars, toe clearance, doors and stall counts were compared.",
+  "No state accessibility plan-review step was found in Title 15A; state-owned buildings may have their own review (Division of Facilities Construction and Management, not read).",
+  "The DOL statement that Utah repealed its prevailing wage law in 1981 was read through a summarizing fetch, not the raw page. Confirm with the Utah Labor Commission that no state prevailing wage applies to school district and city projects.",
+  "Whether the Utah State Tax Commission treats installed toilet partitions as real property (contractor pays tax on materials under a furnish-and-install contract) or as tangible personal property that stays taxable to the customer. Publication 42 does not name them. Ask the Tax Commission (801-297-2200).",
+  "The version of Utah Code 15A-2-103 that takes effect 2027-01-01 (recheck then), and whether Title 63G Chapter 31 Part 2 adds any restroom rule beyond those read."
+ ]
+}

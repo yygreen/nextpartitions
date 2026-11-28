@@ -1,0 +1,161 @@
+{
+ "area": "pensacola",
+ "found_count": 5,
+ "sources_tried": [
+  "Seed file pensacola.json: read. The Maps results were almost all residential remodelers, plumbers, glass shops and stores; only Molaison Building Solutions was kept, as a weak lead. Web result URLs are Google goto redirects that don't resolve, so seed leads such as 'Coastal Specialties Construction', 'Commander Specialty', 'Specialty Products INC' and 'Craftsmen Specialist of NW Florida' could only be followed by name.",
+  "Seed follow-up: coastalspecialties.com is a parked domain. A web search for 'Coastal Specialties Construction' found no matching company, only Montes Coastal Specialties Inc (NAICS listing, industrial building; not kept). Specialty Products, Pensacola (Procore) does coiling doors only, so not relevant. BCK Specialties, Gulf Breeze does heavy construction, so not relevant. Peacock Shower Systems sells glass shower walls, so not relevant. Southern Tide Construction is a residential remodeler in Baldwin County, so not relevant.",
+  "Bobrick find-a-rep: page loads, but rep data is JavaScript-only; no Florida/Alabama reps extracted (sales reps, not installers).",
+  "ASI Global Partitions find-a-rep: 404 at guessed URL.",
+  "Scranton Products find-product-specialist: page loads, but data is JavaScript-only; no reps extracted.",
+  "Bradley find-a-rep: 403 blocked.",
+  "Hadrian find-a-rep: TLS error, not reached.",
+  "Metpar representatives: page loads, no Florida/Alabama content in static HTML.",
+  "General Partitions reps: 404 at guessed URL. Ampco/Ammco: not tried (out of time).",
+  "The Blue Book (thebluebook.com): 403 blocked on every iProView page.",
+  "Procore Network public pages: worked. Interior-specialties listings for Bellview/Pensacola plus toilet-partitions and accessories category pages for Pensacola, Milton and Gulf Breeze surfaced May Creek Construction (Milton). Other Division 10 subs listed (Maven Accessories, Macon GA; Ten 6 Installs, Hahira GA; Terminus Specialties, McDonough GA; Weatherford Construction Specialties, Jonesboro GA; Werco, Baton Rouge LA) are all well over 120 mi away, so they were left out.",
+  "BuildingConnected: not tried.",
+  "WebSearch: used all 8 of 8 calls. Useful hits were GC Specialties (Mobile), Restroom Stalls and All, One Point Partitions and the Procore listings. Generic Pensacola partition searches returned mostly spec documents and national suppliers.",
+  "Yelp/BBB: no relevant Pensacola partition-installer pages came up in search; not fetched directly."
+ ],
+ "candidates": [
+  {
+   "name": "G.C. Specialties, Inc. (GCS)",
+   "base_city": "Mobile",
+   "state": "AL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Scranton Products",
+    "Bobrick",
+    "Metpar",
+    "Hadrian",
+    "ASI"
+   ],
+   "phone": "251-478-1799",
+   "contact_page": "https://www.gcsinc.com/contact",
+   "website": "https://www.gcsinc.com/",
+   "evidence_urls": [
+    "https://www.gcsinc.com/",
+    "https://www.gcsinc.com/services/bathroom-partitions"
+   ],
+   "partition_evidence": "Toilet partitions service page says GCS sells and installs plastic laminate, stainless and HDPE partitions; project photos include Pensacola Beach, FL and Orange Beach, AL.",
+   "reason": "Commercial specialty-products installer founded 1997 in Mobile (about 60 miles from Pensacola) that serves the Gulf Coast and shows a Pensacola Beach partition project. It also sells partitions from several brands, so buy-around risk applies.",
+   "red_flags": [
+    "Sells partitions itself (dealer for Scranton, Bobrick, Metpar, Hadrian, ASI)",
+    "Florida not named as a service area in text; only a Pensacola Beach project photo"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "G.C. Specialties, Inc. (GCS)",
+    "area": "pensacola",
+    "status": "not_found",
+    "registry": "Florida DBPR Construction Industry Licensing Board: public licensee download file (CONSTRUCTIONLICENSE_1.csv)",
+    "license_type": "Florida certified or registered contractor (CILB)",
+    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts//CONSTRUCTIONLICENSE_1.csv",
+    "note": "The Pensacola rule says the city issues permits to Florida-licensed contractors (https://cityofpensacola.com/3341/Frequently-Asked-Questions). The official DBPR construction licensee file (47 MB, downloaded 2026-11-19) has no record matching G.C. Specialties / GC Specialties, 2735 Mauvilla Dr, or 478-1799. Per the DBPR public-records page, the file includes active, inactive and voluntarily inactive licensees but leaves out delinquent and null-and-void records. GCS could still work in Florida as a subcontractor under a Florida-licensed GC, or under a license held in a qualifier's name that doesn't show the company name. Florida has no statewide license category for partitions (states.json marks FL 'unclear', low confidence). The interactive DBPR Verify Licensee search is a POST form with a verification token, so it was not used. Confirm by phone with DBPR or City of Pensacola Building Services."
+   },
+   "score": 63
+  },
+  {
+   "name": "Restroom Stalls and All",
+   "base_city": "Gainesville",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Bobrick"
+   ],
+   "phone": "1-844-817-8255",
+   "email": "cs@restroomstallsandall.com",
+   "contact_page": "https://restroomstallsandall.com/pages/contact-us",
+   "website": "https://restroomstallsandall.com/",
+   "rating": 4.9,
+   "review_source": "Google (as shown on company site); BBB A+ accredited",
+   "evidence_urls": [
+    "https://restroomstallsandall.com/"
+   ],
+   "partition_evidence": "Homepage says its own W2 crews install commercial toilet partitions across GA, FL, AL, TN, SC/NC.",
+   "reason": "A real commercial partition installer that names Florida among its install states, but it is based about 300 miles from Pensacola, beyond the 120-mile regional limit. It also sells partitions directly, which is a strong buy-around risk.",
+   "red_flags": [
+    "Sells and ships partitions nationwide (direct competitor)",
+    "Based about 300 miles away"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "Loxley",
+   "state": "AL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "phone": "800-756-6817",
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=2678",
+    "https://onepointpartitions.com/?p=13",
+    "https://www.trustpilot.com/review/onepointpartitions.com"
+   ],
+   "partition_evidence": "Site (Cloudflare-blocked; seen only through search snippets) markets partitions as easy to install yourself and offers installation help by phone. No evidence of its own install crews.",
+   "reason": "An online partition seller with delivery terminals in several states, including a Loxley, AL location about 35 miles from Pensacola. It is a direct competitor to Next Partitions, not an installer, and the site could not be read directly. The phone number comes from a search summary of its Trustpilot profile.",
+   "red_flags": [
+    "Direct competitor selling partitions online",
+    "Site blocked automated access; facts from search snippets only",
+    "No evidence of installation crews"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "May Creek Construction, LLC",
+   "base_city": "Milton",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "website": "https://www.maycreek.net",
+   "evidence_urls": [],
+   "partition_evidence": "None found. The website did not resolve from this session, and two searches found no listing for the company.",
+   "reason": "No evidence of partition installation or of the business itself. The site could not be loaded (host not reachable from this session), and searches returned no mention of it.",
+   "red_flags": [
+    "Website unreachable from research session",
+    "No listings found"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Molaison Building Solutions LLC",
+   "base_city": "Westville",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "evidence_urls": [],
+   "partition_evidence": "None found; no website given and a search returned no listing for the name.",
+   "reason": "No website or listing could be found, so there is no evidence it installs partitions or is an active business. Westville is about 80 miles from Pensacola.",
+   "red_flags": [
+    "No website or listings found"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 3
+  }
+ ]
+}

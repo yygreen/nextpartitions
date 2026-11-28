@@ -1,0 +1,220 @@
+{
+ "area": "des-moines",
+ "found_count": 6,
+ "sources_tried": [
+  "Seed file des-moines.json: worked, but almost every result was a residential bath remodeler, store or plumber. Plausible leads were J. Laurenzo (Urbandale), Doors Inc and Premier Construction.",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): page loaded, but the results come from a JavaScript dropdown, so no reps were readable.",
+  "Scranton Products find-a-distributor: 404. A Scranton case study (Cedar Rapids) named no dealer or installer.",
+  "Hadrian find-a-representative: 404.",
+  "American Specialties find-a-rep: 404.",
+  "ASI, Bradley, Metpar, General Partitions, Ampco locators: not reached before the budget ran out.",
+  "The Blue Book (thebluebook.com search and iProView pages): 403 blocked.",
+  "BuildingConnected / Procore public profiles: not reached (no results surfaced in search).",
+  "Yelp search page: 403 blocked.",
+  "BBB category page: 404.",
+  "WebSearch, 8 calls (the cap): mostly specs, bid documents and national online sellers (One Point Partitions, Partition Pros, Prestige, GCS, CSI). National sellers were skipped as having no local base. Found Walsh Door (Des Moines) and confirmed J. Laurenzo.",
+  "City of Des Moines bid tabulation (Forest Avenue Library restroom, 2025): it read fine but lists only general contractors (Weston Companies, DSM Property Services, BallTeam, GTG, Bergstrom, Neumann Brothers, Trinity, Giardino, Ferris), not partition subcontractors, so none were included.",
+  "Existing repo research batch-6.json (Omaha): gave EPCO (Council Bluffs) and Ruck Specialties (Omaha) as regional leads."
+ ],
+ "candidates": [
+  {
+   "name": "J. Laurenzo Specialty Products",
+   "added_by_checker": false,
+   "base_city": "Urbandale",
+   "state": "IA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Hadrian",
+    "Bradley",
+    "Bobrick",
+    "ASI Accurate",
+    "ASI Global",
+    "General Commercial",
+    "Scranton",
+    "PSISC",
+    "Metpar",
+    "Koala"
+   ],
+   "website": "https://www.laurenzospecialties.com/",
+   "phone": "515-331-3074",
+   "contact_page": "https://www.laurenzospecialties.com/contact-us",
+   "evidence_urls": [
+    "https://www.laurenzospecialties.com/",
+    "https://www.laurenzospecialties.com/services",
+    "https://www.laurenzospecialties.com/products/toilet-partitions",
+    "https://www.laurenzospecialties.com/about-us"
+   ],
+   "partition_evidence": "Division 10 supplier since 1977; toilet partitions page names 9 brands; services page lists 'Installation' as a bullet after the Division 10 list but never ties it to partitions; no partition install projects or photos seen.",
+   "red_flags": [
+    "Sells toilet partitions itself (direct buy-around risk; same brands incl. ASI, Bobrick, Bradley, Scranton, Metpar)",
+    "Installation of partitions not explicitly confirmed"
+   ],
+   "reason": "Local commercial Division 10 supplier that lists installation as a service, but no page shows it installing partitions, and it is a direct competitor selling the same brands.",
+   "license": {
+    "name": "J. Laurenzo Specialty Products",
+    "area": "des-moines",
+    "status": "not_online",
+    "registry": "Iowa DIAL Contractor Registration public search (laborportal.iwd.iowa.gov/iwd_portal/publicSearch/public); City of Des Moines has no city general contractor license",
+    "source_url": "https://dial.iowa.gov/licenses/building/contractor-registration",
+    "note": "Checked 2026-11-19. Iowa requires DIAL contractor registration for anyone earning $2,000+ a year from construction (DIAL page). The official lookup is a JavaScript app that returns HTTP 404 to automated fetches, so registration could not be read; check it by hand in a browser. Des Moines sets no city general contractor license (per area rule). The company site (https://www.laurenzospecialties.com/) names Urbandale, IA as base city, lists toilet partitions and installation, phone 515-331-3074, and shows no registration number."
+   },
+   "score": 50
+  },
+  {
+   "name": "Doors, Inc.",
+   "added_by_checker": false,
+   "base_city": "Des Moines",
+   "state": "IA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.doorsinciowa.com/",
+   "phone": "515-288-8951",
+   "contact_page": "https://www.doorsinciowa.com/contact.php",
+   "evidence_urls": [
+    "https://www.doorsinciowa.com/",
+    "https://www.doorsinciowa.com/profile.php",
+    "https://www.doorsinciowa.com/locations.php",
+    "https://www.doorsinciowa.com/photos.php"
+   ],
+   "partition_evidence": "Profile page lists Toilet Partitions and Toilet Accessories as products and Installation as a service; site has a 'Toilet Stall Locations' download. Project photos are door/frame/hardware jobs, none captioned as partitions.",
+   "red_flags": [
+    "Supplies toilet partitions itself (buy-around risk)",
+    "Primarily a door, frame and hardware distributor; partition installation not shown in projects"
+   ],
+   "reason": "Employee-owned commercial door/hardware firm (Des Moines plus 6 other Iowa offices) that lists toilet partitions and an installation service, but no partition installs are shown.",
+   "license": {
+    "name": "Doors, Inc.",
+    "area": "des-moines",
+    "status": "not_online",
+    "registry": "Iowa DIAL Contractor Registration public search (laborportal.iwd.iowa.gov/iwd_portal/publicSearch/public); City of Des Moines has no city general contractor license",
+    "source_url": "https://dial.iowa.gov/licenses/building/contractor-registration",
+    "note": "Checked 2026-11-19. The DIAL contractor registration lookup is a JavaScript app that could not be read automatically (HTTP 404 to automated fetches); check it by hand. The company homepage (https://www.doorsinciowa.com/) shows no registration number, base city or phone on the homepage. It offers door and frame installation documents and a 'Toilet Stall Locations' download, but toilet partitions aren't named."
+   },
+   "score": 50
+  },
+  {
+   "name": "Walsh Door + Security",
+   "added_by_checker": false,
+   "base_city": "Des Moines",
+   "state": "IA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://walshdoor.com/",
+   "phone": "515.262.9822",
+   "contact_page": "https://walshdoor.com/contact",
+   "evidence_urls": [
+    "https://walshdoor.com/",
+    "https://walshdoor.com/page/Toilet-Partitions",
+    "https://walshdoor.com/contact"
+   ],
+   "partition_evidence": "Has a 'Toilet-Partitions' URL whose content says Walsh offers 'a full range of Division 10 products, including restroom accessories, lockers', but partitions are not in the listed products; Division 10 nav item points to a hidden 'do-not-publish' page. Installs doors/frames/hardware.",
+   "red_flags": [
+    "Toilet partitions not actually listed; Division 10 section appears unpublished",
+    "May supply Division 10 products itself"
+   ],
+   "reason": "Commercial door, hardware and security contractor (Des Moines HQ, Iowa City, North Kansas City) with a Division 10 restroom accessories offering and installation services, but no confirmed partition work.",
+   "license": {
+    "name": "Walsh Door + Security",
+    "area": "des-moines",
+    "status": "not_online",
+    "registry": "Iowa DIAL Contractor Registration public search (laborportal.iwd.iowa.gov/iwd_portal/publicSearch/public); City of Des Moines has no city general contractor license",
+    "source_url": "https://dial.iowa.gov/licenses/building/contractor-registration",
+    "note": "Checked 2026-11-19. The DIAL contractor registration lookup could not be read automatically (a JavaScript app that returns HTTP 404 to automated fetches); check it by hand. The company homepage (https://walshdoor.com/) shows no registration number, base city or phone, and doesn't mention toilet partitions. It mentions fabrication, pre-installation and installation services."
+   },
+   "score": 50
+  },
+  {
+   "name": "Premier Construction Services",
+   "added_by_checker": false,
+   "base_city": "West Des Moines",
+   "state": "IA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://premierconstructiondm.com/",
+   "phone": "515-669-4905",
+   "contact_page": "https://premierconstructiondm.com/contact/",
+   "evidence_urls": [
+    "https://premierconstructiondm.com/"
+   ],
+   "partition_evidence": "None: services are room additions, garages, basements, kitchens, disaster restoration and general commercial build-outs; no toilet partitions or Division 10 mentioned.",
+   "red_flags": [
+    "Largely residential remodeling general contractor",
+    "No partition work shown"
+   ],
+   "reason": "General contractor serving residential and commercial clients since 2005 with no evidence of toilet partition installation.",
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "EPCO Ltd., Inc.",
+   "added_by_checker": false,
+   "base_city": "Council Bluffs",
+   "state": "IA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://epcoltdinc.com/",
+   "phone": "712.322.0308",
+   "evidence_urls": [
+    "https://epcoltdinc.com/"
+   ],
+   "partition_evidence": "Distributes restroom partitions and accessories among Division 10 products (25,000+ projects since 1987); site describes distribution only, no installation.",
+   "red_flags": [
+    "Distributor of partitions (buy-around risk)",
+    "No installation service stated",
+    "About 130 miles from Des Moines and no statement that it serves the Des Moines area"
+   ],
+   "reason": "Division 10 distributor in Council Bluffs; no installation stated and no stated service of the Des Moines area, which is beyond the regional range.",
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Ruck Specialties",
+   "added_by_checker": false,
+   "base_city": "Omaha",
+   "state": "NE",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "website": "http://www.ruckspecialties.com/",
+   "phone": "(833) 444-1733",
+   "email": "info@ruckspecialties.com",
+   "contact_page": "http://www.ruckspecialties.com/home-2/#section-1614-6442",
+   "evidence_urls": [
+    "http://www.ruckspecialties.com/",
+    "https://lycosindustries.com"
+   ],
+   "partition_evidence": "Division 10 supplier listing toilet partitions; describes supplying, storing, delivering and backing layouts for the install team, not installing. Sister company Lycos Finish does commercial finish carpentry in Nebraska and Iowa, but partition installation not stated.",
+   "red_flags": [
+    "Supplier of partitions (buy-around risk)",
+    "No installation stated",
+    "About 135 miles from Des Moines; projects listed are in Omaha"
+   ],
+   "reason": "Omaha Division 10 supplier with no stated installation and no stated Des Moines service; out of range.",
+   "license": null,
+   "score": 20
+  }
+ ]
+}

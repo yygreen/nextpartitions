@@ -1,0 +1,124 @@
+{
+ "area": "tallahassee",
+ "found_count": 3,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/tallahassee.json: worked. Of the maps entries, only Cushing Specialty was relevant. Brownlee Glass (Bainbridge, GA) does residential glass and storefronts with no partitions. Exterior Specialties (Quincy) redirects to an unrelated site. Whole Home Professionals returned 403. The rest were remodelers, plumbers, stores and a gas station. The web seed entries were google.com/goto redirects with no domain, so they couldn't be used.",
+  "cushingspecialty.com: WebFetch got a 503, but curl over http worked (home page and Bath Partitions page); https has a self-signed certificate",
+  "Bobrick find-a-rep: page loads, but the reps come from a script with no static data; a direct query to the backing rep service was denied by the permission system and not pursued",
+  "Scranton Products rep locator (scrantonproducts.com/where-to-buy/): worked; Florida is covered by the regional rep Southern States Architectural Sales (AL/GA/FL/MS/NC/SC/TN, 678.425.8796), a rep, not an installer",
+  "ASI find-a-rep: http/https redirect loop, not read",
+  "Bradley find-a-rep: page held no rep data",
+  "Hadrian, Metpar, General Partitions, Ampco/Ammco locators: not tried",
+  "The Blue Book search: 403 blocked",
+  "Procore network: the FL toilet-bath-and-laundry-accessories and FL partitions lists worked, with no Panhandle firms on page 1. The GA toilet-bath list worked and turned up Ten 6 Installs (Hahira). The location-filtered search for Tallahassee and Panama City ignored the location and returned national firms. The Ten 6 profile page worked.",
+  "BuildingConnected: not tried",
+  "BBB category pages worked: Tallahassee partition (Coyle, Jacksonville; Dothan Commercial Doors), Tallahassee lockers, Cairo GA partition (Terrell Enterprises, Greenville AL, about 170 miles, left out) and Dothan lockers",
+  "mapquest Cushing listing: empty page; cisleads (Widener, PA) and scott-and-company odoo (404): not relevant",
+  "newtondistributing.com: worked; it's a national distributor in Natick, MA that refers customers to installers, left out",
+  "Yelp: not tried",
+  "WebSearch: 8 of 8 used (Tallahassee Division 10; Tallahassee toilet partitions/lockers; Panama City; Valdosta/Thomasville/Albany; Leon County subcontractor lists; Dothan; Panhandle cities). Results were dominated by One Point Partitions, Prestige, Partition Plus and spec PDFs. Holman (Jacksonville, about 165 miles) and Restroom Stalls and All (Gainesville, GA) came up but are beyond about 120 miles, so they were left out."
+ ],
+ "candidates": [
+  {
+   "name": "Cushing Specialty Company",
+   "base_city": "Tallahassee",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Knickerbocker Partitions",
+    "Scranton Products",
+    "Bobrick",
+    "Bradley",
+    "Moen Creative Specialties",
+    "Penco",
+    "Tufftec"
+   ],
+   "phone": "(850) 562-2367",
+   "contact_page": "http://cushingspecialty.com/contact-us/",
+   "website": "http://cushingspecialty.com/",
+   "evidence_urls": [
+    "http://cushingspecialty.com/",
+    "http://cushingspecialty.com/commercial/bath-partitions/",
+    "http://cushingspecialty.com/contact-us/",
+    "https://www.mapquest.com/us/florida/cushing-specialty-co-4096989"
+   ],
+   "partition_evidence": "Commercial Bath Partitions page: 'At Cushing Specialty Company, we install what we sell', listing Knickerbocker (powder-coated steel) and Scranton Products (solid plastic) partitions available for installation. Homepage says it has been installing specialty building products since 1984.",
+   "red_flags": [
+    "Sells and installs partitions itself (Knickerbocker, Scranton, Bobrick, Bradley), so it is a buy-around risk",
+    "Website footer still says copyright 2018, so the site may be out of date",
+    "The bath partitions page gives a different phone number, (850) 562-6592, from the main number",
+    "The site shows no email address, only a contact form",
+    "The site does not load over HTTPS (it returns 503); plain HTTP works"
+   ],
+   "reason": "A Tallahassee Division 10 installer, family-run since 1984, whose own site says it installs the commercial toilet partitions it sells. It also supplies partitions, which is a buy-around risk.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Cushing Specialty Company",
+    "area": "tallahassee",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (myfloridalicense.com/portalsearches/VerifyLicensee); City of Tallahassee Building Inspection contractor registration (no public online list found)",
+    "note": "I couldn't do an automated lookup. The DBPR search only returns results after a POST form submission, and the research rules don't allow submitting forms. The Sunbiz entity search (search.sunbiz.org) returned a Cloudflare 'Enable JavaScript and cookies' challenge. The company website (cushingspecialty.com) returned HTTP 503, so I couldn't read any license number or contact details. One web search found no official license record. Next step: run a manual DBPR name search, and ask Tallahassee Building Inspection whether the company is registered. Checked 2026-11-19.",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee"
+   },
+   "score": 65
+  },
+  {
+   "name": "Dothan Commercial Doors, LLC",
+   "base_city": "Dothan",
+   "state": "AL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "phone": "334-699-3667",
+   "email": "Info@dothancommercialdoors.com",
+   "contact_page": "https://www.dothancommercialdoors.com/contact-us/",
+   "website": "https://dothancommercialdoors.com/",
+   "evidence_urls": [
+    "https://dothancommercialdoors.com/",
+    "https://www.dothancommercialdoors.com/toilet-partitions/",
+    "https://www.dothancommercialdoors.com/about-us/"
+   ],
+   "partition_evidence": "Supplies toilet partitions (powder-coated steel, plastic laminate, HDPE, stainless, phenolic) and restroom accessories. Neither the partitions page nor the About page mentions installation.",
+   "red_flags": [
+    "Supplier and distributor of partitions, which is a buy-around risk",
+    "No installation services shown on any page read",
+    "Service area names North Florida, the Florida Panhandle, Marianna and Panama City, but not Tallahassee"
+   ],
+   "reason": "A commercial door, hardware and partition supplier about 95 miles away that serves North Florida. No page shows that it installs, only that it supplies partitions.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 23
+  },
+  {
+   "name": "Ten 6 Installs, LLC",
+   "base_city": "Hahira",
+   "state": "GA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://www.ten6installs.com/",
+   "evidence_urls": [
+    "https://www.ten6installs.com/"
+   ],
+   "partition_evidence": "None. The website is a Squarespace 'Coming Soon / under construction' placeholder.",
+   "red_flags": [
+    "Website is only a placeholder with no services or contact details",
+    "A web search for the business name returned nothing about it"
+   ],
+   "reason": "I found no public evidence of what this business does, of partition work, or of contact details, so it cannot be verified.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  }
+ ]
+}

@@ -1,0 +1,382 @@
+{
+ "area": "modesto",
+ "found_count": 10,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/modesto.json: read. Maps results were mostly remodelers, plumbers, porta-potty rentals and supply stores; the relevant ones were J D Specialties, Demar Specialties and KD Specialty Contractors (atozstores.com). Web seeds were google.com/goto redirects to residential remodelers and tile shops.",
+  "Earlier area files (sacramento, san-francisco, san-jose, fresno .json) checked for Northern California leads; leads re-checked on company sites where possible.",
+  "Bobrick, ASI, Scranton, Bradley, Metpar, Hadrian locators: not retried; earlier agents found them 404, empty or dropdown-only (JS).",
+  "General Partitions find-a-rep: 404. Ampco where-to-buy: empty page.",
+  "The Blue Book: 403 on profile pages (Commercial Specialties Contracting); only search snippets used (Delta Specialties, American Sheet Metal Partition, Commercial Specialties Contracting).",
+  "Procore network (network.procore.com/search?location=Modesto): loaded, but the trade filter was ignored and the first page held no partition contractors. BuildingConnected: not tried.",
+  "BBB Holt 'partition' category: worked; only Commercial Restroom Solutions LLC (Gardnerville NV, serves Douglas County NV; excluded as out of state and about 130 miles away), Shelco Industries (Fresno wholesaler) and a janitorial supply store.",
+  "Yelp: no Yelp pages came up in search.",
+  "Company sites read: jdspecialtiesco.com, demarspecialties.com (+contact), atozstores.com (+about-us, via curl; WebFetch got 307), prowestwall.com (+contact), stumbaugh.com (+contact), magnumdrywall.com, repcold.com, rebarber.net (Bay Area only, no Central Valley mention; excluded), tphsupply.com (installs but no base or installation area stated; excluded), prelien.co (American Sheet Metal Partition).",
+  "onepointpartitions.com: 403. It's a national online seller with Modesto and Stockton delivery terminals per search snippets, and installation isn't confirmed; excluded.",
+  "WebSearch: 8 of 8 used (toilet partition installation Modesto/Stockton Division 10; toilet partitions Central Valley cities; Delta Specialties Lodi; Division 10 subcontractor Stockton/Modesto/Tracy/Manteca; Commercial Specialties Contracting Manteca; Yelp toilet partitions nearby cities; Commercial Restroom Solutions Gardnerville; Division 10 Northern California/Central Valley). Results were mostly national sellers (One Point Partitions, Newton Distributing, Prestige Distribution) and spec documents."
+ ],
+ "candidates": [
+  {
+   "name": "J D Specialties",
+   "base_city": "Stockton",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick",
+    "Hadrian",
+    "Scranton Products",
+    "Accutec"
+   ],
+   "within_area": "yes",
+   "website": "http://www.jdspecialtiesco.com/",
+   "phone": "(209) 467-0324",
+   "email": "jdspecialtiesco@sbcglobal.net",
+   "contact_page": "http://www.jdspecialtiesco.com/",
+   "evidence_urls": [
+    "http://www.jdspecialtiesco.com/",
+    "http://www.jdspecialtiesco.com/partitions.html"
+   ],
+   "partition_evidence": "Homepage: 'Sales & Installation of Commercial Toilet Partitions'; partitions page lists Bobrick, Scranton, Accutec, Hadrian lines.",
+   "reason": "Stockton company that sells and installs commercial toilet partitions and serves Northern California. It is also a stocking distributor for Bobrick and Hadrian, so there is a buy-around risk.",
+   "red_flags": [
+    "Stocking distributor of partitions (Bobrick, Hadrian): buy-around risk",
+    "Uses an sbcglobal.net email; site looks dated"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "J D Specialties",
+    "area": "modesto",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "1128308",
+    "license_type": "B General Building; C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/1128308",
+    "note": "Same business as JD Specialties (Stockton): B & T SPECIALTIES INC dba JD SPECIALTIES, issued 10/28/2024, expires 10/31/2028, 'current and active'. Modesto's tax applies only to contractors with a place of business in Modesto; it is based in Stockton. Not checked."
+   },
+   "score": 85
+  },
+  {
+   "name": "Demar Specialties, LLC",
+   "base_city": "Manteca",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "ASI Group",
+    "Bradley",
+    "Scranton Products",
+    "JL Industries",
+    "Hallowell",
+    "Metpar"
+   ],
+   "within_area": "yes",
+   "website": "https://www.demarspecialties.com/",
+   "contact_page": "https://www.demarspecialties.com/contact-us",
+   "evidence_urls": [
+    "https://www.demarspecialties.com/",
+    "https://www.demarspecialties.com/contact-us"
+   ],
+   "partition_evidence": "Division 10 subcontractor offering furnish-and-install; toilet partitions listed first among products.",
+   "reason": "Manteca-based commercial Division 10 subcontractor that furnishes and installs toilet partitions in Northern and Central California. It is also an authorized distributor offering supply-only sales.",
+   "red_flags": [
+    "Authorized distributor with supply-only option (ASI, Bradley, Scranton, Metpar): buy-around risk",
+    "No phone or email on the site, only a form"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Demar Specialties, LLC",
+    "area": "modesto",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "1062277",
+    "license_type": "C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/1062277",
+    "note": "CSLB: DEMAR SPECIALTIES LLC dba DEMAR PREFABRICATED EQUIPMENT, Ripon, expires 01/31/2028, 'current and active'. Modesto business license tax (only for a place of business in Modesto) not checked."
+   },
+   "score": 85
+  },
+  {
+   "name": "Magnum Drywall (Division 10 Specialties)",
+   "base_city": "San Jose",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "brands": [
+    "Bobrick"
+   ],
+   "within_area": "regional",
+   "website": "https://magnumdrywall.com/division-10-specialties/",
+   "phone": "(408) 600-0422",
+   "email": "estimators@magnumdrywall.com",
+   "contact_page": "https://magnumdrywall.com/contact-us/",
+   "evidence_urls": [
+    "https://magnumdrywall.com/division-10-specialties/"
+   ],
+   "partition_evidence": "Division 10 page says Magnum will 'specify and install toilet partitions'.",
+   "reason": "A commercial drywall and Division 10 contractor in San Jose (about 70 miles away) that installs toilet partitions and says it serves clients throughout California.",
+   "red_flags": [
+    "Primarily a drywall contractor; partitions are a side line"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Magnum Drywall (Division 10 Specialties)",
+    "area": "modesto",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "614200",
+    "license_type": "B General Building; C-9 Drywall; C-61/D34 Prefabricated Equipment; others",
+    "source_url": "https://www.cslb.ca.gov/614200",
+    "note": "CSLB: MAGNUM DRYWALL INC, San Jose, expires 03/31/2027, 'current and active'. Modesto business license tax not checked."
+   },
+   "score": 83
+  },
+  {
+   "name": "Stumbaugh & Associates, Inc. (Northern California office)",
+   "base_city": "West Sacramento",
+   "state": "CA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "website": "https://www.stumbaugh.com/",
+   "phone": "(650) 999-0700",
+   "email": "Estimating@stumbaugh.com",
+   "contact_page": "https://www.stumbaugh.com/contact",
+   "evidence_urls": [
+    "https://www.stumbaugh.com/",
+    "https://www.stumbaugh.com/contact"
+   ],
+   "partition_evidence": "Homepage says it is 'the largest provider of restroom partitions and accessories in California' and offers professional installation of partitions.",
+   "reason": "A statewide California supplier and installer of restroom partitions, with a Northern California office in West Sacramento about 75 miles away. It also sells material-only, so there is a buy-around risk.",
+   "red_flags": [
+    "Sells partitions material-only, including walk-in orders: buy-around risk",
+    "Service area for Modesto/Stockton not stated explicitly"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Stumbaugh & Associates, Inc. (Northern California office)",
+    "area": "modesto",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "288724",
+    "license_type": "C-61/D24 Metal Products; C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/288724",
+    "note": "CSLB: STUMBAUGH & ASSOCIATES INC, Burbank HQ, expires 04/30/2028, 'current and active'. Northern California office in West Sacramento, 650 999-0700, per https://www.stumbaugh.com/. Modesto business license tax not checked."
+   },
+   "score": 78
+  },
+  {
+   "name": "Pro West Wall Products",
+   "base_city": "West Sacramento",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [
+    "CS",
+    "Inpro",
+    "Bradley",
+    "Crane",
+    "Panolam",
+    "LSP"
+   ],
+   "within_area": "no",
+   "website": "https://www.prowestwall.com/",
+   "phone": "(916) 572-0742",
+   "email": "ryan@prowestwall.com",
+   "contact_page": "https://www.prowestwall.com/contact",
+   "evidence_urls": [
+    "https://www.prowestwall.com/"
+   ],
+   "partition_evidence": "Homepage lists toilet partitions and accessories among the specialty products it provides and installs.",
+   "reason": "A West Sacramento commercial specialty installer that lists toilet partitions, but its site gives no service area, and Modesto is about 75 miles away.",
+   "red_flags": [
+    "Lists 'material distribution' as a service",
+    "Email shown is a named individual's address",
+    "Service area not stated"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Pro West Wall Products",
+    "area": "modesto",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "1014800",
+    "license_type": "B General Building; C-61/D12 Synthetic Products",
+    "source_url": "https://www.cslb.ca.gov/1014800",
+    "note": "CSLB record checked 2026-11-19: PRO WEST WALL PRODUCTS INC, West Sacramento, corporation, issued 06/03/2016, expires 09/30/2027, 'current and active'. Workers' comp with Security National Insurance Co. through 07/19/2027 (the third-party prelien.co page wrongly flagged no workers' comp). No D34 classification; partitions would fall under its B license. Phone (916) 572-0742 per https://www.prowestwall.com/. License number found via prelien.co. Modesto business license tax not checked."
+   },
+   "score": 75
+  },
+  {
+   "name": "Repcold Distributors",
+   "base_city": "Fremont",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "website": "https://www.repcold.com/",
+   "phone": "(510) 498-8786",
+   "email": "info@repcold.com",
+   "contact_page": "https://www.repcold.com/contact",
+   "evidence_urls": [
+    "https://www.repcold.com/"
+   ],
+   "partition_evidence": "Homepage About section mentions getting 'restroom partitions to shower enclosures installed'; Toilet Partitions appears in the menu. No partition project detail.",
+   "reason": "A Fremont distributor-installer (about 60 miles away) serving Northern and Southern California that lists toilet partitions. But its focus is shower enclosures and mirrors, its partition page was not found, and as a distributor it may sell partitions directly.",
+   "red_flags": [
+    "Distributor: likely sells partitions (buy-around risk)",
+    "Toilet partitions page returned 404; thin partition evidence"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Repcold Distributors",
+    "area": "modesto",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "929392",
+    "license_type": "C17 Glazing; C-61/D34 Prefabricated Equipment; C-61/D28 Doors, Gates and Activating Devices",
+    "source_url": "https://www.cslb.ca.gov/929392",
+    "note": "CSLB record checked 2026-11-19: GARLAND SHOWER DOOR INC dba REPCOLD DISTRIBUTORS, Fremont, corporation, issued 03/03/2009, expires 03/31/2027, 'current and active'. https://www.repcold.com/ lists toilet partitions among its products; corporate phone (510) 498-8786. License number found via prelien.co. Modesto business license tax not checked."
+   },
+   "score": 73
+  },
+  {
+   "name": "Commercial Specialties Contracting, Inc.",
+   "base_city": "Manteca",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/807564/commercial-specialties-contracting-inc/material-suppliers/"
+   ],
+   "partition_evidence": "A search summary of its Blue Book profile shows it installs doors and Division 10 specialties and accessories. The listed products include toilet accessories but not toilet partitions. I couldn't read the page directly (HTTP 403).",
+   "reason": "A Manteca installer of doors and Division 10 specialties serving the Central Valley, but nothing I could check shows toilet partition work, and I found no website.",
+   "red_flags": [
+    "No website found",
+    "Blue Book page blocked (403); evidence only from a search summary"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Commercial Specialties Contracting, Inc.",
+    "area": "modesto",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "938817",
+    "license_type": "B General Building; C-61/D28 Doors, Gates and Activating Devices",
+    "source_url": "https://www.cslb.ca.gov/938817",
+    "note": "CSLB: COMMERCIAL SPECIALITIES CONTRACTING INC, Manteca, expires 07/31/2028, 'current and active'. Modesto business license tax not checked."
+   },
+   "score": 65
+  },
+  {
+   "name": "Delta Specialties Inc.",
+   "base_city": "unknown",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/393371/delta-specialties-inc/material-suppliers/"
+   ],
+   "partition_evidence": "A search summary of its Blue Book profile shows a Division 10 company (founded 2008) serving Northern California with toilet accessories and toilet partitions, with a 209-area phone. The profile was blocked (HTTP 403), so I couldn't confirm installation.",
+   "reason": "Probably a Central Valley Division 10 firm handling toilet partitions, but I found no website or base city and couldn't confirm installation. within_area is set to 'no' only because the location is unconfirmed (the 209 phone suggests it's local).",
+   "red_flags": [
+    "No website found",
+    "Base city unconfirmed (Lodi not verified)",
+    "Blue Book page blocked (403)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Delta Specialties Inc.",
+    "area": "modesto",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "932844",
+    "license_type": "C17 Glazing; C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/932844",
+    "note": "CSLB: DELTA SPECIALTIES INC, Lodi, expires 05/31/2027, 'current and active'. Matched by name and region. Modesto business license tax not checked."
+   },
+   "score": 55
+  },
+  {
+   "name": "American Sheet Metal Partition Co., Inc.",
+   "base_city": "Sacramento",
+   "state": "CA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [
+    "Hadrian",
+    "InPro"
+   ],
+   "within_area": "no",
+   "evidence_urls": [
+    "https://www.thebluebook.com/iProView/259415/american-sheet-metal-partition-co-inc/material-suppliers/",
+    "https://sacvalleycontractors.com/contractor/277769",
+    "https://www.prelien.co/contractor/american-sheet-metal-partition-co-277769"
+   ],
+   "partition_evidence": "Search summaries of third-party listings show CSLB license 277769 with C43 and D34 (prefabricated equipment) classes, Blue Book coverage including Central Valley counties, and Hadrian/InPro as preferred brands. I could not open these pages myself (403/429).",
+   "reason": "A long-established Sacramento-area (McClellan) partition company with a D34 license, but I found no website and couldn't read its listings to confirm installation. The Central Valley coverage comes only from a search summary, so within_area is 'no' until confirmed.",
+   "red_flags": [
+    "No website found",
+    "Evidence only from search summaries of third-party directories",
+    "Founded as a multiple product distributor: may supply partitions"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "American Sheet Metal Partition Co., Inc.",
+    "area": "modesto",
+    "status": "found_active",
+    "registry": "California CSLB license detail",
+    "license_number": "277769",
+    "license_type": "C43 Sheet Metal; C-61/D34 Prefabricated Equipment",
+    "source_url": "https://www.cslb.ca.gov/277769",
+    "note": "CSLB: AMERICAN SHEET METAL PARTITION CO, Sacramento, issued 07/28/1972, expires 05/31/2027, 'current and active'. Modesto business license tax not checked."
+   },
+   "score": 55
+  },
+  {
+   "name": "KD Specialty Contractors, Inc. (AtoZ Stores)",
+   "base_city": "unknown",
+   "state": "CA",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "website": "https://atozstores.com/",
+   "phone": "1.888.767.7006",
+   "contact_page": "https://atozstores.com/contact",
+   "evidence_urls": [
+    "https://atozstores.com/",
+    "https://atozstores.com/our-company"
+   ],
+   "partition_evidence": "None. The company history says KD Specialty Contractors (1999) installed whiteboards in Northern California schools; it now runs an online store that sells toilet partitions and accessories nationwide.",
+   "reason": "Now an online store selling visual display products and toilet partitions. Nothing shows it installs partitions, and as a partition seller it is a competitor.",
+   "red_flags": [
+    "Online retailer of toilet partitions: competitor",
+    "No partition installation evidence"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 15
+  }
+ ]
+}

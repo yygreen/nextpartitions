@@ -1,0 +1,457 @@
+{
+ "state": "IN",
+ "state_name": "Indiana",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "2014 Indiana Building Code (675 IAC 13-2.6): 2012 International Building Code with Indiana amendments. The 2012 Indiana Plumbing Code (675 IAC 16-1.4, 2006 International Plumbing Code) deletes its own Section 403 and points here.",
+   "edition": "2012 IBC, first printing, effective in Indiana December 1, 2014 (readopted 2020)",
+   "table": "Table 2902.1, Minimum Number of Required Plumbing Fixtures, as amended by 675 IAC 13-2.6-29(b)",
+   "url": "https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-29",
+   "quote": "Chapter 29 is amended as follows: ... (b) Amend Table 2902.1, Minimum number of required plumbing fixtures as follows ... [675 IAC 16-1.4-5:] Chapter 4 is amended as follows: (a) Delete Section 403 in its entirety and insert: See Chapter 29 of the Indiana Building Code.",
+   "note": "Indiana's amendments were read on Cornell LII's copy of the Indiana Administrative Code (the official site iar.iga.in.gov is a script-driven app that blocked automated reading). The unamended rows of the model table were read on UpCodes, which shows the table with the Indiana amendments merged in; the two agree."
+  },
+  "cities_may_amend": null,
+  "cities_may_amend_note": "675 IAC 12-10-4 says the Commission's building rules 'are collectively a code of building laws required to be enforced at the local level of government under IC 36-7-2-9' and that political subdivisions 'may incorporate by reference building rules of the commission in local building codes established by ordinance in accordance with IC 22-13-2-3'. Whether and how a city ordinance may differ (Commission approval under IC 22-13-2-5) was not read: the Indiana Code site could not be opened.",
+  "rows": {
+   "office": {
+    "row_label": "2 Business, B: Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial and similar uses",
+    "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "urinals": "Optional: footnote i, not more than 50% of the required male water closets in each toilet room",
+    "quote": "Business B Buildings for the transaction of business, professional services, other services involving merchandise, office buildings, banks, light industrial and similar uses: [water closets] 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50; [lavatories] 1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80; [drinking fountains] 1 per 100; 1 service sink",
+    "url": "https://up.codes/viewer/indiana/ibc-2012/chapter/29/plumbing-systems"
+   },
+   "restaurant": {
+    "row_label": "1 Assembly, A-2: Restaurants, banquet halls and food courts",
+    "wc_male": "1 per 75",
+    "wc_female": "1 per 75",
+    "urinals": "Optional: footnote i, not more than 67% of the required male water closets in each toilet room",
+    "quote": "A-2 ... Restaurants, banquet halls and food courts: [water closets] male 1 per 75, female 1 per 75; [lavatories] 1 per 200; [drinking fountains] 1 per 500; 1 service sink",
+    "url": "https://up.codes/viewer/indiana/ibc-2012/chapter/29/plumbing-systems"
+   },
+   "school": {
+    "row_label": "3 Educational, E: Educational facilities",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 50",
+    "urinals": "Optional: footnote i, not more than 67% of the required male water closets in each toilet room",
+    "quote": "Educational E Educational facilities: [water closets] 1 per 50; [lavatories] 1 per 50; [drinking fountains] 1 per 100; 1 service sink",
+    "url": "https://up.codes/viewer/indiana/ibc-2012/chapter/29/plumbing-systems"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Total occupant load is divided in half, unless approved statistical data shows another split. Indiana adds that the actual number of occupants a space is designed for may be used where it is lower than the calculated figure.",
+    "quote": "To determine the occupant load of each sex, the total occupant load shall be divided in half. ... Exceptions: 1. The total occupant load shall not be required to be divided in half where approved statistical data indicate a distribution of the sexes of other than 50 percent of each sex. [Indiana, 675 IAC 13-2.6-29(c):] 2. The actual number of occupants for whom each occupied space, floor or building is designed, although less than those determined by calculation, shall be permitted to be used in the determination of the design occupant load for fixture calculations.",
+    "url": "https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-29"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole number; one fixture for the number of persons shown or any fraction of it.",
+    "quote": "Fractional numbers resulting from applying the fixture ratios of Table 2902.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number. [Table footnote a:] The fixtures shown are based on one fixture being the minimum required for the number of persons indicated or any fraction of the number of persons indicated.",
+    "url": "https://up.codes/viewer/indiana/ibc-2012/chapter/29/plumbing-systems"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are optional. In each toilet room they may replace up to 67% of the required men's toilets in assembly (restaurant) and educational occupancies, and up to 50% in all others (offices). Indiana writes this into the building code table as its own footnote i.",
+    "quote": "(7) Add a new footnote \"i\" at the end of the table after footnote \"h\" to read as follows: i. Urinals may be substituted for required water closets. In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent (67%) of the required male water closets in assembly and educational occupancies. Urinals shall not be substituted for more than fifty percent (50%) of the required male water closets in all other occupancies.",
+    "url": "https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-29"
+   },
+   "small_occupancy_exception": {
+    "text": "Separate men's and women's rooms aren't required at a total occupant load of 15 or fewer (any use) or 100 or fewer in a mercantile occupancy. Indiana adds: separate employee facilities aren't required where 15 or fewer people are employed per shift, and public toilets aren't required in a space with an occupant load under 150 that serves no food or drink to be consumed there. The 2012 edition has no 25-occupant exception for business occupancies.",
+    "quote": "Where plumbing fixtures are required, separate facilities shall be provided for each sex. Exceptions: 1. Separate facilities shall not be required for dwelling units and sleeping units. 2. Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or less. 3. Separate facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or less. [Indiana, 675 IAC 13-2.6-29(d):] 4. Separate employee facilities shall not be required in occupancies in which fifteen (15) or fewer people per shift are employed. [Indiana, 675 IAC 13-2.6-29(g), Section 2902.3:] 2. Public facilities are not required in structures or tenant spaces with an occupant load of less than one hundred fifty (150) and which do not serve food or beverages to be consumed within the structure or tenant space.",
+    "url": "https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-29"
+   },
+   "occupant_load": {
+    "text": "Table 1004.1.2 of the 2012 edition: business areas 100 sq ft gross per occupant (not the 150 of later editions); assembly without fixed seats, unconcentrated (tables and chairs) 15 sq ft net; educational classroom area 20 sq ft net.",
+    "quote": "TABLE 1004.1.2 MAXIMUM FLOOR AREA ALLOWANCES PER OCCUPANT ... Assembly without fixed seats ... Unconcentrated (tables and chairs) 15 net ... Business areas 100 gross ... Educational: Classroom area 20 net",
+    "url": "https://up.codes/viewer/indiana/ibc-2012/chapter/10/means-of-egress"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50/2 = 25 per sex. 1 per 25 for the first 50: 25/25 = 1 each. Urinals may replace up to 50% of the men's 1: 1 x 0.50 = 0.50, so 0 (per toilet room)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100/2 = 50 per sex. 1 per 25 for the first 50: 50/25 = 2 each. Urinals may replace up to 50% of the men's 2: 2 x 0.50 = 1.00, so 1 (per toilet room)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200/2 = 100 per sex. First 50: 50/25 = 2; remaining 50 at 1 per 50 = 1; total 3 each. Urinals may replace up to 50% of the men's 3: 3 x 0.50 = 1.50, so 1 (per toilet room)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400/2 = 200 per sex. First 50: 50/25 = 2; remaining 150 at 1 per 50 = 3; total 5 each. Urinals may replace up to 50% of the men's 5: 5 x 0.50 = 2.50, so 2 (per toilet room)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50/2 = 25 per sex. 1 per 75: 25/75 = 0.33, rounds up to 1 each. Urinals may replace up to 67% of the men's 1: 0.67, so 0."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "100/2 = 50 per sex. 1 per 75: 50/75 = 0.67, rounds up to 1 each. Urinals may replace up to 67% of the men's 1: 0.67, so 0."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200/2 = 100 per sex. 1 per 75: 100/75 = 1.33, rounds up to 2 each. Urinals may replace up to 67% of the men's 2: 1.34, so 1 (per toilet room)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400/2 = 200 per sex. 1 per 75: 200/75 = 2.67, rounds up to 3 each. Urinals may replace up to 67% of the men's 3: 2.01, so 2 (per toilet room)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50/2 = 25 per sex. 1 per 50: 25/50 = 0.50, rounds up to 1 each. Urinals may replace up to 67% of the men's 1: 0.67, so 0."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "100/2 = 50 per sex. 1 per 50: 50/50 = 1 each. Urinals may replace up to 67% of the men's 1: 0.67, so 0."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200/2 = 100 per sex. 1 per 50: 100/50 = 2 each. Urinals may replace up to 67% of the men's 2: 1.34, so 1 (per toilet room)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400/2 = 200 per sex. 1 per 50: 200/50 = 4 each. Urinals may replace up to 67% of the men's 4: 2.68, so 2 (per toilet room)."
+   }
+  ],
+  "confidence": "medium"
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "2014 Indiana Building Code (2012 IBC) Section 803.12, with Section 803.1.2 (NFPA 286 room corner test) and the Chapter 2 definition of interior wall and ceiling finish, which names toilet room privacy partitions",
+  "quote": "803.12 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish it shall comply with Section 803.1.2. ... 803.1.2 Room Corner Test for Interior Wall or Ceiling Finish Materials. Interior wall or ceiling finish materials shall be permitted to be tested in accordance with NFPA 286. Interior wall or ceiling finish materials tested in accordance with NFPA 286 shall comply with Section 803.1.2.1. ... [Chapter 2:] Interior Wall and Ceiling Finish. The exposed interior surfaces of buildings, including but not limited to: fixed or movable walls and partitions; toilet room privacy partitions; columns; ceilings ...",
+  "url": "https://up.codes/viewer/indiana/ibc-2012/chapter/8/interior-finishes",
+  "note": "Model text read on UpCodes (Indiana Building Code, 2014 Edition). Indiana's Chapter 8 amendments (675 IAC 13-2.6-9, read on Cornell LII: https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-9) delete Section 801.5, change a footnote to Table 803.9 and replace Section 806; they leave Section 803.12 as it is.",
+  "confidence": "medium"
+ },
+ "access": {
+  "state_standard": "ICC A117.1-2009, adopted by reference with Indiana amendments in 675 IAC 13-2.6-13, applied through Chapter 11 of the 2014 Indiana Building Code (2012 IBC) to Class 1 structures. The federal 2010 ADA Standards apply alongside; Indiana's Section 1101.1.1 says Chapter 11 'does not necessarily constitute total compliance with federal law'.",
+  "differences": [
+   {
+    "point": "Vertical grab bar in the wheelchair stall and the ambulatory stall",
+    "state": "ICC A117.1-2009 Section 604.5.1 adds an 18 inch vertical grab bar on the side wall; Section 604.9.6 applies it to the wheelchair stall and Section 604.10.4 to both sides of the ambulatory stall.",
+    "federal": "2010 ADA Standards 604.5.1: 'The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall.' No vertical bar.",
+    "state_url": "https://up.codes/viewer/indiana/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities",
+    "quote": "604.5.1 Fixed Side Wall Grab Bars. Fixed side-wall grab bars shall be 42 inches (1065 mm) minimum in length, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall. In addition, a vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall."
+   },
+   {
+    "point": "Minimum size of every toilet stall (a building-code rule, not an access rule)",
+    "state": "Indiana's own Section 2902.3.6 sets a minimum for all water closet compartments: 30 inches wide and 60 inches deep, with the toilet at least 15 inches from its centre to any side wall or partition.",
+    "federal": "The 2010 ADA Standards size only the wheelchair accessible compartment (604.8.1.1: 60 inches wide, 56 or 59 inches deep) and the ambulatory compartment (604.8.2.1: 60 inches deep, 35 to 37 inches wide). They set no size for standard stalls.",
+    "state_url": "https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-29",
+    "quote": "(j) Add a new subsection 2902.3.6, Convenience and function ... A water closet, lavatory, or bidet shall not be set closer than fifteen (15) inches ... from its center to any side wall, partition, vanity, or other obstruction, nor closer than thirty (30) inches ... clearance in front of the water closet or bidet to any wall, fixture, or door. Water closet compartments shall not be less than thirty (30) inches (seven hundred sixty-two (762) millimeters) wide and sixty (60) inches (one thousand five hundred twenty-four (1,524) millimeters) deep."
+   }
+  ],
+  "same_as_federal": "Read and found to match the federal text: wheelchair stall size 60 by 56/59 inches (A117.1 604.9.2.1); children's wheelchair stall 60 by 59 inches (604.9.2.2); toe clearance 9 inches, 12 inches for children's stalls (604.9.5); self-closing door with a pull on both sides (604.9.3); ambulatory stall 60 inches deep and 35 to 37 inches wide (Indiana amended 604.10.2 to this range, which is the federal 604.8.2.1 range); one ambulatory stall where a room has six or more toilets and urinals combined (IBC 1109.2.2 and ADA 213.3.1).",
+  "process": "No separate accessibility registration. The state step is the Construction Design Release from the Indiana Department of Homeland Security's Building Plan Review section for construction on Class 1 structures (buildings used by the public or employees), which covers the whole building code including Chapter 11. 675 IAC 12-6-4(b) exempts remodeling work limited to listed items, among them '(5)(B) Cases, counters, and partitions not over six (6) feet in height' and replacement of plumbing fixtures without relocation; exempt work must still meet the code, and IDHS says 'All work, including that exempted from filing with the state, may require local permits.' IDHS answers exemption questions at planreview@dhs.in.gov. Whether a toilet partition replacement falls under the six-foot partition exemption is not stated.",
+  "process_url": "https://www.in.gov/dhs/building-plan-review/building-plan-review-process",
+  "process_quote": "To determine if your project may be exempt from filing with the state, please send an email to planreview@dhs.in.gov. ... All work must comply with all applicable codes whether or not it is required to be filed. All work, including that exempted from filing with the state, may require local permits.",
+  "confidence": "medium"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "Indiana's 2012-based code has no rule that a single-user restroom be signed as open to all genders (that rule entered the model code in 2021). It requires signs for each sex on required public facilities, lets two family or assisted-use rooms stand in for the men's and women's rooms where each needs only one toilet, without a sex designation, and defines a 'unisex toilet room' as one toilet and one lavatory; a separate-sex room with no more than two toilets, or one toilet and one urinal, may be treated as unisex.",
+   "quote": "2902.4 Signage. Required public facilities shall be designated by a legible sign for each sex. ... 2902.2.1 ... Where a building or tenant space requires a separate toilet facility for each sex and each toilet facility is required to have only one water closet, two family/assisted-use toilet facilities shall be permitted to serve as the required separate facilities. Family or assisted-use toilet facilities shall not be required to be identified for exclusive use by either sex as required by Section 2902.4. [Indiana, 675 IAC 13-2.6-29(e):] 2902.2.2, Unisex toilet rooms ... Unisex toilet rooms shall include only one (1) water closet and only one (1) lavatory. ... Exception: A separate sex toilet room containing not more than two (2) water closets without urinals, or containing only one (1) water closet and one (1) urinal, may be considered a unisex toilet room.",
+   "url": "https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-29"
+  },
+  "all_gender_shared": {
+   "rule": "Not provided for. Where toilets are required, the code requires separate facilities for each sex, with exceptions only for small occupant loads, and its unisex room is limited to one toilet (two under the exception). It has no provision for a multi-stall all-gender room counting toward the required fixtures; that would need a variance from the Fire Prevention and Building Safety Commission. Every toilet used by the public or employees needs its own compartment with a door, and each urinal a screen (Section 1210.3).",
+   "quote": "2902.2 Separate Facilities. Where plumbing fixtures are required, separate facilities shall be provided for each sex. ... 1210.3.1 Water Closet Compartment. Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy. ... 1210.3.2 Urinal Partitions. Each urinal utilized by the public or employees shall occupy a separate area with walls or partitions to provide privacy. The walls or partitions shall begin at a height not more than 12 inches (305 mm) from and extend not less than 60 inches (1524 mm) above the finished floor surface.",
+   "url": "https://up.codes/viewer/indiana/ibc-2012/chapter/29/plumbing-systems",
+   "url_2": "https://up.codes/viewer/indiana/ibc-2012/chapter/12/interior-environment"
+  },
+  "use_restrictions": {
+   "rule": "No Indiana statute restricting who may use which restroom was found. Senate Bill 182 of the 2026 session, which would have required public schools to designate shared restrooms by sex, passed the Senate and did not advance in the House. This rests on news reports: the Indiana Code itself could not be opened.",
+   "quote": "SB 182, which would have required public school students to use restrooms that match their sex rather than their gender identity, did not move forward after passing the Senate.",
+   "url": "https://www.chalkbeat.org/indiana/2026/02/28/education-bills-passed-in-2026-legislative-session/",
+   "url_2": "https://www.wfyi.org/news/articles/a-wide-ranging-restrictive-gender-bill-failed-this-legislative-session"
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": false,
+  "law": "None in force. Indiana's Common Construction Wage Act (IC 5-16-7) was repealed effective July 1, 2015 (P.L.252-2015); IC 5-16-7.2-5 now bars public agencies from setting a wage scale for public works contracts. Only the federal Davis-Bacon Act applies, on federally funded work.",
+  "threshold": null,
+  "rates_url": null,
+  "quote": "IC 5-16-7.2-5: Unless federal or state law provides otherwise, a public agency may not: (1) establish; (2) mandate; or (3) otherwise require; a wage scale or wage schedule for a public works contract awarded by the public agency. As added by P.L.252-2015, SEC.11. [U.S. Department of Labor, Dollar Threshold Amount for Contract Coverage, footnote 3:] Indiana. Indiana repealed its Common Construction Wage Statute in 2015.",
+  "url": "https://getpocketlaw.com/law/state_indiana/section-5-16-7-2-5-prohibition-against-public-agency-establishing-mandating-or-requiring-wage-scale-or-schedule-for-public-works-project_fe0dcb2755f9",
+  "url_2": "https://www.dol.gov/agencies/whd/state/prevailing-wages",
+  "note": "Statute read on a secondary copy (getpocketlaw.com); the Indiana Code site (iga.in.gov) and the Indiana Department of Labor's former Common Construction Wage page (now 404) could not be opened. The U.S. Department of Labor table was read through a summarising fetch and is dated January 1, 2023.",
+  "confidence": "medium"
+ },
+ "sales_tax": {
+  "state_rate": 0.07,
+  "rate_quote": "If your business sells goods or tangible personal property, you'll need to register to collect a seven percent sales tax.",
+  "rate_url": "https://www.in.gov/dor/i-am-a/business-corp/sales-tax/",
+  "shipped_goods": {
+   "rule": "Taxable. A remote seller with more than $100,000 of gross revenue from sales into Indiana in the current or preceding calendar year must register and collect Indiana sales tax. Where tax was not paid, use tax applies to property used in Indiana.",
+   "quote": "Sellers must get a registered retail merchant's certificate and collect and remit applicable sales tax(es) if its gross revenue from sales into Indiana exceeds $100,000 in the previous or current calendar year. [Sales Tax Information Bulletin #60:] In general, the storage, use, or consumption of tangible personal property in Indiana is subject to use tax if the property was acquired in a retail transaction, regardless of where the transaction took place, and where Indiana sales tax had not been paid on that property.",
+   "url": "https://www.in.gov/dor/i-am-a/business-corp/remote-sellers/",
+   "url_2": "https://www.in.gov/dor/files/sib60.pdf"
+  },
+  "freight_taxed": true,
+  "freight": {
+   "rule": "Delivery charges by the seller are part of the taxable price, whether or not listed separately. Delivery billed and furnished by a third party (the buyer's own carrier) is exempt.",
+   "quote": "\"Delivery charges\" consist of transportation, shipping, crating, handling, and packing, whether or not separately stated on the invoice, bill of sale, or similar document. ... Delivery charges that are incurred on behalf of the seller of tangible personal property continue to fall within the definition of \"gross retail income\" and are subject to sales tax, regardless of the shipping terms used. However, delivery charges billed and furnished by a third party are exempt.",
+   "url": "https://www.in.gov/dor/files/sib92.pdf"
+  },
+  "install_labor": {
+   "rule": "Not taxed when stated separately and performed after delivery. Taxed if not separately stated from the price of the goods.",
+   "quote": "Separately stated charges for installation that occurs after delivery and transfer of the tangible personal property are not subject to sales tax. Installation charges that are not separately stated from the selling price of tangible personal property or any other charge on the invoice, bill of sale, or similar document given to the purchaser are subject to sales tax.",
+   "url": "https://www.in.gov/dor/files/sib92.pdf"
+  },
+  "furnish_and_install": {
+   "rule": "Depends on the contract form. Under a lump sum contract the contractor pays sales or use tax on the materials and does not charge the customer tax. Under a time and material contract (materials and labor stated separately) the contractor is a retail merchant and collects tax on the material portion; separately stated installation is not taxed. This applies to 'construction material' converted into real property (permanently affixed); the bulletin's examples include doors and cabinets and do not name toilet partitions.",
+   "quote": "Generally, a contractor operating under a time and material contract is a retail merchant that is selling the construction material that it incorporates into real property, and must be registered with the department and collect sales tax on the material portion of their contracts. ... Conversely, contractors operating under any other type of construction or installation contract (e.g., \"lump sum\" contracts) are not acting as retail merchants selling construction material. They must pay sales or use tax on their construction material (unless their customer could have purchased the material exempt themselves), but they consequently do not collect sales tax from their customers on the contracts to convert the construction material into real property. ... NOTE: Installation charges separately stated on an invoice are not included in gross retail income.",
+   "url": "https://www.in.gov/dor/files/sib60.pdf"
+  },
+  "agency": "Indiana Department of Revenue",
+  "confidence": "high"
+ },
+ "page": {
+  "stalls_intro": "Indiana's rules count toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. Half are counted as men and half as women, and any fraction rounds up. Every toilet needs a stall. Urinals are optional: in each men's room they may take the place of up to half of the required toilets in an office, and up to two thirds in a restaurant or school, and each urinal needs a screen.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building, and the men's figures show toilets only, before any are swapped for urinals. A space that holds 15 people or fewer can use one shared restroom, and Indiana lets the count rest on the number of people the space is actually designed for where that is lower than the floor area figure.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 100 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** Indiana's building rules treat toilet partitions as an interior finish and require solid plastic (HDPE) and polypropylene partitions to pass a room-corner fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use, and a room with six or more toilets and urinals also needs a narrower stall with grab bars on both sides. Federal law and Indiana's building rules set the sizes. Indiana has no separate access sign-off: for buildings used by the public or employees the state reviews construction plans as a whole, and it exempts some small remodeling work, so ask the state's Building Plan Review section whether yours needs filing.",
+  "state_extra_bullet": "- **Indiana extras:** Indiana goes further than the federal rules in two places. The accessible stalls need an 18 inch vertical grab bar on the side wall as well as the horizontal one. And every toilet stall, not only the accessible one, must be at least 30 inches wide and 60 inches deep.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** Indiana's rules call for separate men's and women's rooms, each with a sign, once a space holds more than 15 people. A one-toilet room can serve everyone, and two such rooms can stand in for the men's and women's rooms where each needs only one toilet. The rules make no provision for a shared all-gender room with several stalls, so ask your building department before planning one. No Indiana law was found that restricts who may use which restroom.",
+  "public_jobs": "Indiana repealed its wage law for public construction in 2015 and state law now stops public agencies from setting their own wage scales, so a required wage applies only on federally funded projects.",
+  "tax_install_bullet": "- **Tax on installation:** in Indiana, an installation charge listed separately on the invoice is not taxed when the work is done after delivery. A contractor who quotes one lump sum to supply and install work that becomes part of the building doesn't charge sales tax on the job, and pays the tax on the materials instead. Where the contractor lists materials and labor separately, the materials are taxed and the labor is not.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable, and so is freight charged by the seller. If the seller doesn't collect the tax, the buyer owes it to the state.",
+  "tax_confirm": "your accountant or the Indiana Department of Revenue",
+  "sources": [
+   "- Toilet counts in Indiana: 2014 Indiana Building Code (675 IAC 13-2.6, 2012 International Building Code with Indiana amendments), Table 2902.1 and Sections 2902.1.1, 2902.2 and 2902.3.6; the 2012 Indiana Plumbing Code (675 IAC 16-1.4) refers to it. Indiana's amendments: [675 IAC 13-2.6-29](https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-29) and [675 IAC 16-1.4-5](https://www.law.cornell.edu/regulations/indiana/675-IAC-16-1.4-5), read on Cornell Legal Information Institute's copy of the Indiana Administrative Code; official text: [Indiana Register, Title 675](https://iar.iga.in.gov/code/2026/675/13#675-13-2.6), listed by the [Fire Prevention and Building Safety Commission](https://www.in.gov/dhs/boards-and-commissions/fpbsc-rules). Table rows, rounding, the 50/50 split and floor area per person (Table 1004.1.2) were read on a secondary copy, [UpCodes, Indiana Building Code, 2014 Edition, Chapter 29](https://up.codes/viewer/indiana/ibc-2012/chapter/29/plumbing-systems) and [Chapter 10](https://up.codes/viewer/indiana/ibc-2012/chapter/10/means-of-egress). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: 2014 Indiana Building Code Section 803.12 with Section 803.1.2 (NFPA 286) and the Chapter 2 definition of interior wall and ceiling finish, read on [UpCodes, Indiana Building Code, 2014 Edition, Chapter 8](https://up.codes/viewer/indiana/ibc-2012/chapter/8/interior-finishes); Indiana's Chapter 8 amendments, which leave the section unchanged: [675 IAC 13-2.6-9](https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-9). Checked 2026-11-24.",
+   "- Indiana access rules: [675 IAC 13-2.6-12, Chapter 11](https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-12) and [675 IAC 13-2.6-13, adoption of ICC A117.1-2009 with Indiana amendments](https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-13). Stall sections 604.5, 604.9 and 604.10 of ICC A117.1-2009 were read on [UpCodes](https://up.codes/viewer/indiana/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities); federal text: [2010 ADA Standards](https://www.access-board.gov/ada/), sections 213.3.1, 604.5 and 604.8. Checked 2026-11-24.",
+   "- State plan review: Indiana Department of Homeland Security, [Building Plan Review Process](https://www.in.gov/dhs/building-plan-review/building-plan-review-process); exemptions for remodeling work: [675 IAC 12-6-4](https://www.law.cornell.edu/regulations/indiana/675-IAC-12-6-4). Checked 2026-11-24.",
+   "- Single-user and shared restrooms: 2014 Indiana Building Code Sections 2902.2, 2902.2.1, 2902.2.2 and 2902.4 ([675 IAC 13-2.6-29](https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-29)) and Section 1210.3 ([UpCodes, Chapter 12](https://up.codes/viewer/indiana/ibc-2012/chapter/12/interior-environment)). Senate Bill 182 of 2026 did not pass: [Chalkbeat Indiana, February 28, 2026](https://www.chalkbeat.org/indiana/2026/02/28/education-bills-passed-in-2026-legislative-session/). Checked 2026-11-24.",
+   "- Wages on public jobs: Indiana Code 5-16-7.2-5 (added by P.L.252-2015), read on a [secondary copy](https://getpocketlaw.com/law/state_indiana/section-5-16-7-2-5-prohibition-against-public-agency-establishing-mandating-or-requiring-wage-scale-or-schedule-for-public-works-project_fe0dcb2755f9); U.S. Department of Labor, [Dollar Threshold Amount for Contract Coverage](https://www.dol.gov/agencies/whd/state/prevailing-wages) (Indiana repealed its Common Construction Wage statute in 2015). Checked 2026-11-24.",
+   "- Sales tax: Indiana Department of Revenue, [Sales Tax](https://www.in.gov/dor/i-am-a/business-corp/sales-tax/) (seven percent), [Remote Sellers](https://www.in.gov/dor/i-am-a/business-corp/remote-sellers/), [Sales Tax Information Bulletin #92, Delivery Charges, Installation Charges, and other Elements of Gross Retail Income (June 2025)](https://www.in.gov/dor/files/sib92.pdf), [Bulletin #60, Contractors and Construction Material (March 2024)](https://www.in.gov/dor/files/sib60.pdf) and [Bulletin #89, Remote Sellers and Marketplace Facilitators (April 2024)](https://www.in.gov/dor/files/sib89.pdf). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; 2014 Indiana Building Code (675 IAC 13-2.6, 2012 International Building Code with Indiana amendments, effective December 1, 2014), Chapter 11 with ICC A117.1-2009 as amended by 675 IAC 13-2.6-13; 2012 Indiana Plumbing Code (675 IAC 16-1.4, 2006 International Plumbing Code with Indiana amendments); NFPA 286 for HDPE."
+ },
+ "sources_read": [
+  {
+   "url": "https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-29",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/indiana/675-IAC-16-1.4-5",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-9",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-12",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-13",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/indiana/675-IAC-13-2.6-1",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/indiana/675-IAC-12-6-4",
+   "official": false
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/indiana/675-IAC-12-10-4",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/indiana/ibc-2012/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/indiana/ibc-2012/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/indiana/ibc-2012/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/indiana/ibc-2012/chapter/2/definitions",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/indiana/ibc-2012/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/indiana/ibc-2012/chapter/12/interior-environment",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/indiana/ibc-2012/chapter/35/referenced-standards",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/indiana/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/indiana/ipc-2006/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://www.in.gov/dhs/boards-and-commissions/fpbsc-rules",
+   "official": true
+  },
+  {
+   "url": "https://www.in.gov/dhs/building-plan-review/building-plan-review-process",
+   "official": true
+  },
+  {
+   "url": "https://www.in.gov/dhs/building-plan-review/building-plan-review-faqs",
+   "official": true
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://www.in.gov/dor/i-am-a/business-corp/sales-tax/",
+   "official": true
+  },
+  {
+   "url": "https://www.in.gov/dor/i-am-a/business-corp/remote-sellers/",
+   "official": true
+  },
+  {
+   "url": "https://www.in.gov/dor/i-am-a/business-corp/business-faq/remote-seller-faqs/",
+   "official": true
+  },
+  {
+   "url": "https://www.in.gov/dor/files/sib60.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.in.gov/dor/files/sib92.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.in.gov/dor/files/sib89.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.dol.gov/agencies/whd/state/prevailing-wages",
+   "official": true
+  },
+  {
+   "url": "https://getpocketlaw.com/law/state_indiana/section-5-16-7-2-5-prohibition-against-public-agency-establishing-mandating-or-requiring-wage-scale-or-schedule-for-public-works-project_fe0dcb2755f9",
+   "official": false
+  },
+  {
+   "url": "https://www.chalkbeat.org/indiana/2026/02/28/education-bills-passed-in-2026-legislative-session/",
+   "official": false
+  },
+  {
+   "url": "https://www.wfyi.org/news/articles/a-wide-ranging-restrictive-gender-bill-failed-this-legislative-session",
+   "official": false
+  }
+ ],
+ "to_confirm": [
+  "Official text of 675 IAC 13-2.6 and 16-1.4: iar.iga.in.gov is a script-driven app whose data service refused automated requests, so Indiana's amendments were read on Cornell LII's quarterly copy and the model 2012 IBC text (Table 2902.1 rows, Table 1004.1.2, Sections 803.12 and 1210.3) and ICC A117.1-2009 on UpCodes. Browser check of Table 2902.1 and Section 803.12 before launch.",
+  "Whether a newer Indiana Building Code is in rulemaking (the 2012 edition is older than most states'): Indiana Fire Prevention and Building Safety Commission, buildingcommission@dhs.in.gov.",
+  "Office capacity is one person per 100 gross square feet in Indiana's 2012 edition, not the 150 used in later editions and on other city pages. Page generators should not default to 150.",
+  "Whether cities (Indianapolis) may amend the fixture table and how local ordinances are approved (IC 22-13-2-3 and 22-13-2-5 not read): the city agent, or IDHS.",
+  "Whether replacing toilet partitions is exempt from the state Construction Design Release under 675 IAC 12-6-4(b)(5)(B) ('partitions not over six (6) feet in height'): IDHS Building Plan Review, planreview@dhs.in.gov, 317-232-6422. Local permits are separate.",
+  "Whether a multi-stall all-gender restroom can count toward required fixtures (the code has no provision; a variance would go to the Fire Prevention and Building Safety Commission): IDHS.",
+  "Restroom use restrictions: no statute was found, but the Indiana Code (iga.in.gov) could not be opened, and the failure of SB 182 (2026) rests on Chalkbeat and WFYI reports. An executive order by Governor Braun on gender was mentioned in coverage and not read. Confirm on iga.in.gov that no restroom chapter was enacted.",
+  "Prevailing wage: IC 5-16-7.2-5 was read on a secondary copy and the Indiana Department of Labor's Common Construction Wage page now returns 404. Confirm on iga.in.gov. Federal Davis-Bacon rates for Marion County are for the city agent (sam.gov).",
+  "Sales tax: whether installed toilet partitions count as 'construction material' converted into real property (Bulletin #60 names doors and cabinets, not partitions), which decides the lump sum rule: Indiana Department of Revenue, 317-232-2240. Indiana's local add-on taxes, if any apply in Indianapolis, are for the city agent.",
+  "Urinal substitution applies 'in each bathroom or toilet room', so the urinals_allowed figures assume all the men's fixtures are in one room.",
+  "How Next Partitions itself collects Indiana tax (the $100,000 test) is a question for Abe's accountant."
+ ]
+}

@@ -1,0 +1,414 @@
+{
+ "area": "palm-bay",
+ "found_count": 11,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/palm-bay.json: read. It had 45 maps results and 35 web results. None was a partition installer: they were remodelers, plumbers, tile and flooring shops, stores and a portable-toilet supplier. The web results were Google redirect links without domains.",
+  "Existing area files orlando.json, miami.json and tampa.json: read for Florida regional firms. I reopened the Orlando-area firms' sites to check scope and service areas.",
+  "Bobrick find-a-rep: the page loaded but rep results need the JS dropdown, so no reps were read.",
+  "Metpar find-a-rep and General Partitions find-a-representative: both returned 404.",
+  "ASI, Scranton, Hadrian and Bradley locators: not retried this run (other area runs got 404 or empty pages). Ampco/Ammco: not tried.",
+  "The Blue Book (search.html?region=4&class=3070 and iProView/802033): 403, blocked.",
+  "Procore Network: worked, but its city category pages (Melbourne, Port St. Lucie and Vero Beach toilet-bath-and-laundry-accessories; Palm Bay interior-specialties) list statewide or national firms, not local ones. BLS Building (Fort Lauderdale, 'Partitions' trade, unclear) and Smith General Trades (Gainesville, accessories only) were not included.",
+  "BuildingConnected: not tried.",
+  "WebSearch: used 8 of 8. Useful results: 'Melbourne FL commercial carpentry specialties ... toilet partitions lockers Division 10' (found Mako Millwork) and the Treasure Coast and Port St. Lucie searches (confirmed there are almost no local specialists). Searches for Brevard, Palm Bay and Space Coast returned mostly plumbers.",
+  "Excluded as more than 120 miles away or national: Restroom Stalls and All (Gainesville GA; own crews install in FL), Specialty Installations & Sales (Port Richey FL; installs statewide), Watkins Accessories (Brooksville FL), Bell Architectural Specialties (Riverview FL), CS Installers (Fort Lauderdale office; site says it serves the Northeast), RTI Supply, Tri-County Partitions and Schedule 10 (South Florida), Holman (Jacksonville), and online sellers One Point Partitions, toiletpartitions.com, Partition Pros and US Partitions.",
+  "Yelp and BBB: none surfaced in the searches, so none were read."
+ ],
+ "candidates": [
+  {
+   "name": "Florida Division 10, LLC",
+   "base_city": "Orlando",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "no",
+   "reason": "Install-only Division 10 firm that names toilet partitions and bathroom accessories and states 'WE DO NOT FURNISH', a good fit for us. But its service area isn't defined, and the contact page gives a St. Petersburg address (about 150 miles away).",
+   "partition_evidence": "Homepage lists Toilet Partitions, Bathroom Accessories and Lockers installation for general contractors",
+   "brands": [],
+   "phone": "689-221-3228",
+   "email": "info@floridadivision10.com",
+   "contact_page": "https://www.floridadivision10.com/contact/",
+   "website": "https://www.floridadivision10.com/",
+   "evidence_urls": [
+    "https://www.floridadivision10.com/",
+    "https://www.floridadivision10.com/contact/"
+   ],
+   "red_flags": [
+    "Base unclear: Orlando per list, St. Petersburg address on contact page",
+    "Service area not stated"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Florida Division 10, LLC",
+    "area": "palm-bay",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.floridadivision10.com/",
+    "note": "The company homepage shows no license number; it says 'Located in Orlando, FL.' DBPR search is an interactive POST form, so no automated lookup was run. Next step: look up by name by hand."
+   },
+   "score": 65
+  },
+  {
+   "name": "HFM Construction Solutions",
+   "base_city": "Apopka",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "reason": "Division 10-only specialty installation contractor listing toilet partitions, compartments and restroom accessory sets for K-12, healthcare, government and commercial work; says it serves Florida and the Southeast. Apopka is about 75 miles from Palm Bay.",
+   "partition_evidence": "Homepage services: toilet partitions and accessories, shower and toilet compartments for institutional restrooms",
+   "brands": [],
+   "phone": "(689) 249-5751",
+   "email": "info@hfmcs.com",
+   "contact_page": "https://hfmcs.com/#contact",
+   "website": "https://hfmcs.com/",
+   "evidence_urls": [
+    "https://hfmcs.com/"
+   ],
+   "red_flags": [
+    "Site doesn't say whether it also supplies product"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "HFM Construction Solutions",
+    "area": "palm-bay",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://hfmcs.com/",
+    "note": "The company homepage doesn't mention a license; base city Apopka (company site). DBPR search is an interactive POST form, so no automated lookup was run. No local rule for Palm Bay. Next step: look up by name by hand."
+   },
+   "score": 63
+  },
+  {
+   "name": "Associated Building Specialties, Inc. (ABS)",
+   "base_city": "Orlando",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "reason": "Division 10 subcontractor since 1986 that furnishes bathroom partitions and accessories and self-performs installation with its own crews. Covers Central and West Florida (Orlando, Daytona, Tampa); Orlando is about 65 miles away.",
+   "partition_evidence": "Homepage lists bathroom partitions and bath accessories, installed by its own crews",
+   "brands": [],
+   "phone": "407-339-2284",
+   "email": "estimating@absfl.net",
+   "contact_page": "http://www.absfl.net/",
+   "website": "http://www.absfl.net/",
+   "evidence_urls": [
+    "http://www.absfl.net/"
+   ],
+   "red_flags": [
+    "Furnishes partitions itself (buy-around risk)",
+    "Stated focus markets don't name Brevard or the Treasure Coast"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Associated Building Specialties, Inc. (ABS)",
+    "area": "palm-bay",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read for a license number. Next step: look up by name by hand."
+   },
+   "score": 63
+  },
+  {
+   "name": "Mills & Nebraska",
+   "base_city": "Orlando",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "reason": "Division 8 and 10 supplier (since 1933) that sells toilet partitions and restroom accessories and offers installation of Division 10 products. Serves 24 Florida counties with its own delivery fleet.",
+   "partition_evidence": "Homepage lists Toilet Partitions and Restroom Accessories under Division 10 Specialties, and its installation service covers Division 10 products",
+   "brands": [],
+   "phone": "(866) 304-3667",
+   "email": "info@millsnebraska.com",
+   "contact_page": "https://www.millsnebraska.com/contact",
+   "website": "https://www.millsnebraska.com/",
+   "evidence_urls": [
+    "https://www.millsnebraska.com/"
+   ],
+   "red_flags": [
+    "Supplier of partitions (strong buy-around risk)",
+    "Mainly a door, frame and hardware distributor"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Mills & Nebraska",
+    "area": "palm-bay",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run (same finding as the earlier Orlando pass). Next step: look up by name by hand."
+   },
+   "score": 63
+  },
+  {
+   "name": "Clear Choice Glass & Specialties",
+   "base_city": "Kissimmee",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "reason": "Glass contractor whose Commercial Bathroom Partitions page says it has designed and installed commercial bathroom partitions (glass, with metal stalls mentioned) in Orlando. The service area named is Orlando and Central Florida, with no mention of Brevard or the Treasure Coast.",
+   "partition_evidence": "Commercial Bathroom Partitions page: 'designed and installed commercial bathroom partitions in Orlando'",
+   "brands": [],
+   "phone": "407-846-2337",
+   "email": "info@clearchoiceglassorlando.com",
+   "contact_page": "https://clearchoiceglassorlando.com/contact-us/",
+   "website": "https://clearchoiceglassorlando.com/",
+   "evidence_urls": [
+    "https://clearchoiceglassorlando.com/",
+    "https://clearchoiceglassorlando.com/commercial-bathroom-partitions/"
+   ],
+   "red_flags": [
+    "Mainly a glass and shower-door company; partition work may be glass-focused",
+    "Site shows two different emails"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Clear Choice Glass & Specialties",
+    "area": "palm-bay",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run. Glass work may fall under a separate DBPR category; company site not read. Next step: look up by name by hand."
+   },
+   "score": 60
+  },
+  {
+   "name": "Spec 10 Solutions",
+   "base_city": "unknown",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "reason": "Division 10 sales and installation firm 'Serving Florida' that lists toilet partitions and restroom accessories among the products it supplies and installs. No base city is given and the phone has a Miami-area code, so it is likely more than 120 miles away.",
+   "partition_evidence": "Homepage 'Products We Supply & Install' includes Toilet Partitions and Restroom Accessories",
+   "brands": [
+    "American Specialties",
+    "Larsen's",
+    "Bobrick",
+    "Inpro",
+    "Koala Bear",
+    "Nystrom",
+    "Potter-Roemer",
+    "Metpar",
+    "Bradley"
+   ],
+   "phone": "+1 (786) 402-0695",
+   "email": "estimating@spec10solutions.com",
+   "contact_page": "https://www.spec10solutions.com#contact-us",
+   "website": "https://www.spec10solutions.com/",
+   "evidence_urls": [
+    "https://www.spec10solutions.com/"
+   ],
+   "red_flags": [
+    "Base location not disclosed",
+    "Sells partitions, including Bobrick, Bradley and Metpar, which Next Partitions resells (buy-around risk)"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Spec 10 Solutions",
+    "area": "palm-bay",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run. Base city unknown; company site not read. Next step: look up by name by hand."
+   },
+   "score": 60
+  },
+  {
+   "name": "SJ Woodwork & Cabinetry LLC",
+   "base_city": "Orlando",
+   "state": "FL",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "reason": "Millwork company that installs with its own crews and lists Division 10 specialty installations, including toilet partitions and bathroom accessories, for commercial and institutional projects. It says it serves Central Florida and statewide.",
+   "partition_evidence": "Homepage Division 10 section: 'Toilet partitions, bathroom accessories, lockers'",
+   "brands": [],
+   "phone": "786-915-1719",
+   "email": "Smartins@sjwoodworkfl.com",
+   "contact_page": "https://sjwoodworkfl.com/contact",
+   "website": "https://sjwoodworkfl.com/",
+   "evidence_urls": [
+    "https://sjwoodworkfl.com/"
+   ],
+   "red_flags": [
+    "Partitions are a side line; main business is millwork and cabinetry, including residential",
+    "Listed phone has a Miami-area code",
+    "Contact email is a named person's address"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "SJ Woodwork & Cabinetry LLC",
+    "area": "palm-bay",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+   },
+   "score": 58
+  },
+  {
+   "name": "Mako Millwork Inc.",
+   "base_city": "Melbourne",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "reason": "Local Melbourne supplier whose Division 10 page lists toilet partitions and toilet accessories. It names supply and install for lockers, flagpoles and shelving, but not explicitly for partitions. It is the only candidate based in the area.",
+   "partition_evidence": "Division 10 page lists Toilet Partitions (stainless, baked enamel, resilient plastic) and Toilet Accessories; installation is stated only for other items",
+   "brands": [
+    "Plastpro",
+    "RSL Doors",
+    "Steves & Sons",
+    "Taylor Entrance Systems",
+    "Jeld-Wen"
+   ],
+   "phone": "(321) 725-2121",
+   "email": "Kara@MakoMillwork.com",
+   "contact_page": "https://makomillworkinc.com/contact/",
+   "website": "https://makomillworkinc.com/",
+   "evidence_urls": [
+    "https://makomillworkinc.com/",
+    "https://makomillworkinc.com/division-10/",
+    "https://makomillworkinc.com/commercial/"
+   ],
+   "red_flags": [
+    "Sells partitions (buy-around risk)",
+    "Partition installation not confirmed",
+    "Brands named are door brands, not partition brands"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Mako Millwork Inc.",
+    "area": "palm-bay",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+   },
+   "score": 45
+  },
+  {
+   "name": "Interior Specialties",
+   "base_city": "Altamonte Springs",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "reason": "Division 10 and 12 specialty subcontractor working for Florida general contractors. Its second office in Jensen Beach is about 10 miles from Port St. Lucie. Toilet partitions aren't named on the pages read.",
+   "partition_evidence": "Homepage: 'Division 10 Specialties' subcontractor; no partition products named",
+   "brands": [],
+   "phone": "(407) 539-1303",
+   "contact_page": "https://www.interiorspecialties.com/contact",
+   "website": "https://www.interiorspecialties.com/",
+   "evidence_urls": [
+    "https://www.interiorspecialties.com/"
+   ],
+   "red_flags": [
+    "No product list or project photos seen"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Interior Specialties",
+    "area": "palm-bay",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+   },
+   "score": 43
+  },
+  {
+   "name": "Florida Specialty Products, LLC",
+   "base_city": "Oviedo",
+   "state": "FL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "reason": "Division 10 'supply and install' firm since 2006 with institutional projects (Nemours, UF). It doesn't name toilet partitions or state a service area. Oviedo is about 60 miles away.",
+   "partition_evidence": "Homepage: 'Division 10 - Supply and Install' of brand-name specialty items; partitions not named",
+   "brands": [],
+   "phone": "321-765-4975",
+   "email": "info@yourFLSP.com",
+   "contact_page": "https://www.yourflsp.com/contact/",
+   "website": "https://www.yourflsp.com/",
+   "evidence_urls": [
+    "https://www.yourflsp.com/",
+    "https://www.yourflsp.com/contact/"
+   ],
+   "red_flags": [
+    "Supplies products (buy-around risk)",
+    "Address is a suite number, possibly a mailbox",
+    "Service area not stated"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Florida Specialty Products, LLC",
+    "area": "palm-bay",
+    "status": "not_online",
+    "registry": "Florida DBPR Verify a Licensee (Construction Industry Licensing Board)",
+    "source_url": "https://www.myfloridalicense.com/portalsearches/VerifyLicensee",
+    "note": "DBPR search is an interactive POST form, so no automated lookup was run. Company site not read. Next step: look up by name by hand."
+   },
+   "score": 40
+  },
+  {
+   "name": "C & S Supply",
+   "base_city": "Orlando",
+   "state": "FL",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "reason": "Division 8 and 10 supplier that sells toilet compartments and washroom partitions, but installation is offered only for doors and hardware. Its service area is greater Orlando and Central Florida. This is a supplier, not an installer.",
+   "partition_evidence": "Homepage lists 'Toilet Compartments & Accessories' and 'Washroom Partitions & Accessories' as supplied products only",
+   "brands": [
+    "Bobrick",
+    "ASSA ABLOY",
+    "Hager",
+    "Rockwood",
+    "dormakaba",
+    "Masonite"
+   ],
+   "phone": "407-540-1115",
+   "email": "bdewulf@cssupplyorl.com",
+   "contact_page": "https://cssupplyfl.com/contact/",
+   "website": "https://cssupplyfl.com/",
+   "evidence_urls": [
+    "https://cssupplyfl.com/"
+   ],
+   "red_flags": [
+    "Competing partition supplier",
+    "No partition installation shown"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  }
+ ]
+}

@@ -1,0 +1,242 @@
+{
+ "area": "portland",
+ "found_count": 8,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/portland.json: worked. Of about 60 Maps results, W.H. Cress, Accurate Toilet Partitions (same phone as W.H. Cress) and Building Material Specialties were relevant. The rest were remodelers, plumbers, glass shops and stores. The web results were unresolvable google.com/goto links.",
+  "Company sites fetched: whcress.com (worked), buildingmaterialspecialties.com and its /services page (worked: in-house installers), nwblds.com (worked), zesbaugh.com and its /toilet-partitions page (worked, but Marysville WA is about 190 miles away and no installation is stated, so skipped), lilchief.com (Seattle, serves WA/OR/AK, about 170 miles away, so skipped), nwpart.com (Woodinville WA wall and ceiling contractor with no partitions, so skipped).",
+  "Manufacturer locators: Metpar /representatives returned 404; General Partitions /representatives returned 404; Scranton Products /find-a-representative returned 404. Bobrick, ASI, Bradley and Hadrian locators failed in the earlier run (JS-only, redirected or 403), so they weren't retried. A web search for Bobrick/Scranton/Hadrian/Bradley reps in Portland found no rep.",
+  "The Blue Book: a web search returned no thebluebook.com Portland toilet-partition listings (the earlier run's direct fetch was 403).",
+  "BuildingConnected / Procore public profiles: none came up in searches.",
+  "Yelp / BBB: none came up in searches (Yelp gave 403 in the earlier run).",
+  "WebSearch: used 8 of the 8 allowed searches. Results were dominated by One Point Partitions (an online supplier with Portland and Eugene delivery terminals that promotes self-install, so skipped), Newton Distributing, Partition Plus (MD), Prestige Distribution (national) and Southwest Solutions Group (WA cities only), all skipped as national or non-local. Stumbaugh & Associates (Burbank CA, licensed in CA only) was also skipped.",
+  "Cook & Boardman specialty page redirected to cbxsolutions.com, which returned 403 (Portland office not confirmed).",
+  "reserve.cpd.oregonstate.edu contractor page returned 404.",
+  "Seed file research/installers/raw/seeds/portland.json: worked. 3 of about 60 Maps results were relevant (W.H. Cress, Accurate Toilet Partitions, Building Material Specialties). The rest were remodelers, plumbers, glass shops and stores. The web results were unresolvable google.com/goto links.",
+  "Checked seed sites that turned out not relevant: Western Partitions Inc. (wpibuilds.com, Wilsonville; wall systems, no toilet partitions mentioned), Green Flush Restrooms (prefab restroom buildings), Nexus Contracting Solutions (Beaverton GC, no partitions), K and H Construction (Portland GC, no partitions).",
+  "Bobrick Find a Rep (bobrick.com/find-a-rep): page loaded, but results load from a dropdown, so no Oregon rep could be read.",
+  "Scranton Products find-a-rep: 404.",
+  "Hadrian sales rep locator: 403 blocked.",
+  "Bradley find-a-rep: loaded with no content (JS).",
+  "American Specialties (ASI) find-a-rep: redirected to http, not followed. No Oregon rep read.",
+  "Metpar, General Partitions, Ampco: not tried (search and fetch budget).",
+  "The Blue Book (thebluebook.com search): 403 blocked. Web search found no Portland toilet-compartment listings on it.",
+  "BuildingConnected / Procore public profiles: not reached. No results came up in search.",
+  "Yelp search page: 403 blocked.",
+  "BBB / BuildZoom: no listings came up in search.",
+  "WebSearch: used all 8 of the 8 allowed searches. Results were mostly national online sellers with no local base (The Partition Pros, One Point Partitions, Partition Plus, toiletpartitions.com, Prestige Distribution), so they were skipped, plus out-of-region Division 10 firms (Demar Specialties CA/NV, Division 10 Inc. Memphis, Division 10 Specialists Southport NC, CIP Finishes location unknown), also skipped.",
+  "Pinkham Specialties (pinkhamspecialties.com): a Central Oregon Division 10 supplier (phone 541), with no Portland office and no installation stated. Outside the radius, so skipped."
+ ],
+ "candidates": [
+  {
+   "name": "W.H. Cress Company, Inc.",
+   "added_by_checker": false,
+   "base_city": "Tigard",
+   "state": "OR",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "American Specialties (ASI)",
+    "Ironwood"
+   ],
+   "website": "https://www.whcress.com/",
+   "phone": "503-620-1664",
+   "contact_page": "https://www.whcress.com/contact/",
+   "evidence_urls": [
+    "https://www.whcress.com/",
+    "https://www.whcress.com/manufacturers/",
+    "https://www.whcress.com/our-work/",
+    "https://www.whcress.com/contact/"
+   ],
+   "partition_evidence": "Homepage calls it a 'Commercial Building Specialties Distributor & Subcontractor' and an 'installation company' with washroom partitions as its primary product; manufacturers page lists Bobrick, ASI and Ironwood partitions. Project list (Portland, Beaverton, Lake Oswego, Woodburn jobs) does not say partitions were installed; no partition install photos seen.",
+   "red_flags": [
+    "Distributor of partitions (Bobrick, ASI): buy-around risk",
+    "No explicit statement or photos of partition installation",
+    "No public email on site (form only)"
+   ],
+   "reason": "Portland-metro Division 10 distributor and subcontractor whose main product is washroom partitions and which calls itself an installation company, but partition installation is not shown explicitly. Also a direct partition seller, so a buy-around risk.",
+   "license": {
+    "name": "W.H. Cress Company, Inc.",
+    "area": "portland",
+    "status": "found_active",
+    "registry": "Oregon Construction Contractors Board (CCB) active license data, published on data.oregon.gov (dataset g77e-6bhs)",
+    "license_number": "62812",
+    "license_type": "CSC2: Commercial Specialty Contractor Level 2 (Nonexempt)",
+    "source_url": "https://data.oregon.gov/resource/g77e-6bhs.json?license_number=62812",
+    "note": "Checked 2026-11-19. The CCB record lists 'WH CRESS COMPANY INC' in Tigard (Washington County). The license was first registered 01/16/1990 and expires 01/16/2027. Bond: $25,000 with Ohio Casualty, expiring 01/16/2027. Liability insurance: $1,000,000 with The Cincinnati Ins Co, expiring 01/01/2027. RMI: Scott Philip Cress. The record lists phone 503-620-1664. The record comes from the CCB active-licenses open dataset. The interactive search at search.ccb.state.or.us needs a form postback, and a direct details URL returned no record, so it was not used. The company website (https://www.whcress.com/) says its primary specialty is commercial washroom partitions and accessories. It describes the company as a distributor and installation company, with HQ in Portland and an address in Tigard. The website shows no CCB number. Portland has no city contractor license, so the state CCB license is the record that applies. The third-party site ccblookup.com shows the same data, but it is not official."
+   },
+   "score": 65
+  },
+  {
+   "name": "NW Blds",
+   "added_by_checker": false,
+   "base_city": "Kent",
+   "state": "WA",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Hadrian"
+   ],
+   "website": "https://nwblds.com/",
+   "phone": "253.765.8151",
+   "email": "contact@nwblds.com",
+   "contact_page": "https://nwblds.com/contact/",
+   "evidence_urls": [
+    "https://nwblds.com/",
+    "https://nwblds.com/service-areas/"
+   ],
+   "partition_evidence": "Homepage says it will 'install, replace, repair and supply commercial toilet partitions across Western Washington and Oregon'.",
+   "red_flags": [
+    "Based in Kent, WA (about 150 miles away), with a second office in Roseburg, OR; listed service areas omit Portland and Vancouver",
+    "Supplies partitions itself: buy-around risk"
+   ],
+   "reason": "A real commercial toilet partition installer, but based in Kent, WA with a Roseburg, OR office. The service areas it lists (Seattle, Tacoma, Bellevue, Olympia, Eugene, Medford, Bend and others) do not include the Portland area. Worth a call later if Portland coverage is confirmed.",
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "NW Blds (Northwest Building Specialties)",
+   "base_city": "Kent",
+   "state": "WA",
+   "verdict": "reject",
+   "installs_partitions": "yes",
+   "partition_evidence": "The homepage says it will 'install, replace, repair and supply commercial toilet partitions' under the heading 'Commercial Restroom Partitions \u00b7 Washington & Oregon'.",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Hadrian"
+   ],
+   "within_area": "no",
+   "phone": "253.765.8151",
+   "email": "contact@nwblds.com",
+   "contact_page": "https://nwblds.com/contact/",
+   "website": "https://nwblds.com/",
+   "evidence_urls": [
+    "https://nwblds.com/",
+    "https://nwblds.com/contact/",
+    "https://nwblds.com/service-area/"
+   ],
+   "red_flags": [
+    "Based about 150 miles from Portland (Kent, WA), with a second location in Roseburg, OR",
+    "Service-area page lists Eugene, Medford, Bend and Puget Sound cities, but not Portland or Vancouver",
+    "Email link points to a different address than the one displayed",
+    "Also supplies partitions"
+   ],
+   "reason": "A real commercial toilet partition installer, but it is based outside the 120-mile range and its service-area page does not list Portland or Vancouver. It only says it takes projects throughout Western Washington and Oregon. It could be a fallback if no local installers are found.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 60
+  },
+  {
+   "name": "Building Material Specialties, Inc. (BMS)",
+   "added_by_checker": false,
+   "base_city": "Hillsboro",
+   "state": "OR",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "American Specialties",
+    "Hadrian",
+    "Curries",
+    "Eggers Industries",
+    "Construction Specialties",
+    "JL Industries",
+    "Bilco",
+    "Florence",
+    "Ives",
+    "Falcon"
+   ],
+   "website": "https://www.buildingmaterialspecialties.com/",
+   "phone": "(503) 640-1886",
+   "contact_page": "https://www.buildingmaterialspecialties.com/contact-us/",
+   "evidence_urls": [
+    "https://www.buildingmaterialspecialties.com/"
+   ],
+   "partition_evidence": "Homepage lists toilet partitions among its Division 8 and 10 products held in inventory; no mention of installation.",
+   "red_flags": [
+    "Supplier of partitions (Bobrick, Bradley, ASI, Hadrian): buy-around risk",
+    "No installation services shown"
+   ],
+   "reason": "Hillsboro commercial door, hardware and Division 10 supplier that stocks toilet partitions, but its site shows supply only and no installation work.",
+   "license": {
+    "name": "Building Material Specialties, Inc. (BMS)",
+    "area": "portland",
+    "status": "found_active",
+    "registry": "Oregon Construction Contractors Board (CCB) Contractor License Search",
+    "license_number": "58313",
+    "license_type": "Oregon CCB contractor license (endorsement and class not read; detail page not retrieved)",
+    "source_url": "https://search.ccb.state.or.us/search/default.aspx",
+    "note": "Checked 2026-11-19. A name search for 'Building Material Specialties' returned one record: 'BUILDING MATERIAL SPECIALTIES INC', license 58313, status Active, base city Hillsboro OR. The search is a POST form without query-string URLs, so the source URL opens the blank search page: search '58313' or the name to reproduce. Portland has no city contractor license, so the state CCB license is the record that applies. Endorsement, bond and insurance details were not read."
+   },
+   "score": 45
+  },
+  {
+   "name": "Innergy Interiors LLC",
+   "base_city": "El Paso",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "partition_evidence": "The site lists Division 10 specialties including 'toilet accessories, partitions'. It shows no partition project photos and no Oregon projects.",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "phone": "915-353-2008",
+   "contact_page": "https://innergy-interiors.pages.dev/contact/",
+   "website": "https://innergy-interiors.pages.dev/",
+   "evidence_urls": [
+    "https://innergy-interiors.pages.dev/",
+    "https://innergy-interiors.pages.dev/locations/oregon/"
+   ],
+   "red_flags": [
+    "Based in El Paso, TX, about 1,300 miles away",
+    "Website hosted on a pages.dev subdomain, with no own domain",
+    "Oregon page lists AZ, TX, CO and WA license numbers but no Oregon CCB license, which Oregon requires",
+    "No named Oregon projects, photos or reviews"
+   ],
+   "reason": "An out-of-state multi-division interiors subcontractor whose Oregon coverage is a marketing claim without an Oregon CCB license or local projects. It is out of area.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "Accurate Toilet Partitions",
+   "added_by_checker": false,
+   "base_city": "unknown",
+   "state": "OR",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Accurate"
+   ],
+   "evidence_urls": [
+    "https://www.robertbrooke.com/manufacturers/accurate-toilet-partition"
+   ],
+   "partition_evidence": "Search found only Accurate Partitions Corp., a partition manufacturer whose products are resold by dealers such as Robert Brooke; no Portland business by this name was found.",
+   "red_flags": [
+    "No Portland business by this name found; appears to be a manufacturer brand, not a local installer"
+   ],
+   "reason": "No Portland-based installer called Accurate Toilet Partitions could be found. The name matches a partition manufacturer brand sold through dealers.",
+   "license": null,
+   "score": 0
+  }
+ ]
+}

@@ -1,0 +1,196 @@
+{
+ "slug": "milwaukee",
+ "city": "Milwaukee",
+ "state": "WI",
+ "checked": "2026-11-24",
+ "access_note": "city.milwaukee.gov (the city's website, including the Code of Ordinances PDFs and the Department of Neighborhood Services permit pages) returned 403 to curl and to WebFetch, as it did for the local-rules research on 2026-11-03. Nothing was read on that site. City facts below come from ordinance texts as passed by the Common Council, read through the city's public legislation system (Legistar, milwaukee.legistar.com, API at webapi.legistar.com), and from Wisconsin DSPS and Department of Revenue pages. The current consolidated text of the Milwaukee Code was not read.",
+ "codes": {
+  "building": {
+   "name": "Wisconsin Commercial Building Code (Wis. Admin. Code chs. SPS 361 to 366), adopted in Milwaukee Code of Ordinances s. 262-01",
+   "edition": "2021 International Building Code with Wisconsin changes (DSPS inserts headed 'September 1, 2025 Wisconsin Commercial Building Code, SPS 361 - SPS 366'; state pack)",
+   "local_amendments": true,
+   "local_amendments_note": "The city's adopting section takes ch. SPS 362 (new construction) and ch. SPS 366 (additions, alterations, change of use and repairs) 'as amended' and adds two International Building Code sections, 907.1.1 and 414.1.3. Neither is in the plumbing-fixture chapter (Chapter 29) and their text was not read. No city change to toilet counts, stalls or interior finish was found. State law gives Wisconsin one uniform commercial building code (state pack, DSPS Act 270 FAQ).",
+   "effective": "2025-09-01 for the state code edition, per the heading of the DSPS inserts (not confirmed on a DSPS page; state pack). The city's adopting section was recreated by Common Council file 220693, passed 2022-09-20.",
+   "url": "https://milwaukee.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=63054",
+   "api_url": "https://webapi.legistar.com/v1/milwaukee/matters/63054/texts/62577",
+   "quote": "262-01. Adoption of State and International Building Codes. 1. NEW CONSTRUCTION. The city of Milwaukee adopts ch. SPS 362, Wis. Adm. Code, as amended, s. 907.1.1, International Building Code, and s. 414.1.3, International Building Code as part of this code. 2. ADDITIONS, ALTERATIONS, CHANGE OF USE, AND REPAIRS. The city of Milwaukee adopts ch. SPS 366, Wis. Adm. Code, as amended, s. 907.1.1, International Building Code, and s. 414.1.3, International Building Code as part of this code.",
+   "quote_source": "City of Milwaukee Common Council file 220693, 'An ordinance relating to increasing fees for plan examinations, updating building code procedures and adopting portions of the Wisconsin administrative code and International Building Code', Part 10; status Passed, 2022-09-20. Text as passed, not the current consolidated code."
+  },
+  "plumbing": {
+   "name": "Wisconsin Plumbing Code (Wis. Admin. Code chs. SPS 381 to 387), a state-written code; Milwaukee Code of Ordinances ch. 225 (Plumbing and Drainage) holds the city's permit and licensing rules",
+   "edition": "current Wisconsin Administrative Code (state-codes entry)",
+   "local_amendments": null,
+   "local_amendments_note": "Chapter 225 of the Milwaukee Code could not be opened, so the section that adopts the state plumbing code and any city additions were not read. What was read: s. 225-3-1 as amended in 2013 (plumbing permits) and s. 225-31-1 as amended in 2022 (gas piping follows NFPA 54 / ANSI Z223.1, 2015). In Wisconsin the toilet count is in the building code (SPS 362.2902), not the plumbing code (state pack).",
+   "effective": null,
+   "url": "https://milwaukee.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=37197",
+   "api_url": "https://webapi.legistar.com/v1/milwaukee/matters/37197/texts/44583",
+   "quote": "225-3. Plumbing Permits Required. 1. ISSUANCE. No permit for plumbing shall be issued by the commissioner to any person not duly licensed, registered and bonded. Permits issued shall be subject to the rules and regulations of the commissioner, and it shall be unlawful to do any plumbing without a permit with the exception of work regulated in sub. 3 and work exempted under s. 200-24-1.5."
+  },
+  "scheduled_change": null,
+  "scheduled_change_note": "None found. Common Council file 261050 (introduced 2026-11-04, 'An ordinance relating to plumbing and drainage systems for accessory dwelling units', status In Council-Passage) concerns dwellings, not commercial restrooms.",
+  "authority": "City of Milwaukee Department of Neighborhood Services (permits are issued by its commissioner). DSPS lists the City of Milwaukee as a delegated agent for plan review of commercial buildings of all sizes (delegation type 2, first- or second-class city), contact the Commissioner of Neighborhood Services.",
+  "authority_quote": "2. Structural and HVAC Plan Review of All Commercial Buildings in a First- or Second-Class City. Cities with a First- or Second-Class City status have the authority to review and inspect commercial projects of all sizes. [...] 63. City of Milwaukee, In Multiple Counties (40251) | 2 | Jezamil Arroyo-Vega, Commissioner of Neighborhood Services, at 414-286-6344 [...]",
+  "authority_url": "https://dsps.wi.gov/MediaFileLocation/tdpn5ido/delegatedagentscbpr.pdf",
+  "authority_note": "DSPS, 'Commercial Building/HVAC Plan Review Delegated Agents', dated November 20, 2026.",
+  "confidence": "medium"
+ },
+ "fixtures": {
+  "city_amends": false,
+  "amendment": null,
+  "basis": "Milwaukee's adopting section (s. 262-01, as recreated in 2022) takes ch. SPS 362 'as amended', which is where Wisconsin's toilet-count changes sit (SPS 362.2902), and adds only International Building Code sections 907.1.1 and 414.1.3, which are outside the plumbing-fixture chapter. Wisconsin has one uniform commercial building code (state pack). The state pack's worked examples stand. The current text of chapter 262 was not read on the city's site, so a later city change cannot be ruled out from the code itself.",
+  "url": "https://milwaukee.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=63054",
+  "quote": "262-01. [...] 1. NEW CONSTRUCTION. The city of Milwaukee adopts ch. SPS 362, Wis. Adm. Code, as amended, s. 907.1.1, International Building Code, and s. 414.1.3, International Building Code as part of this code.",
+  "confidence": "medium"
+ },
+ "permit": {
+  "exempt_list_quote": "1.5. EXCEPTIONS. No permit shall be required for: a. Decorative landscaping edging, as regulated in s. 116-54-3. b. Installation of wiring or equipment that operates at less than 100 volts, or is for networked powered broadband communications systems, except when any such installation is located in a plenum, penetrates fire-rated or smoke-protected construction or is a component of any the following: [fire alarm, detection, suppression, smoke control, elevator fire safety control, access or egress control, fire damper and door control systems]. c. Detached accessory structures used as tool or storage sheds or similar uses, provided the floor areas do not exceed 150 square feet and the structures are not accessory to Group F or H occupancies and are at least 3 feet from the property lines. d. Tents or air-supported structures, or both, that cover areas of 400 square feet or less, provided such structures have occupant loads of less than 50. e. Retaining walls supporting less than 32 inches of unbalanced fill. [...] f. Ordinary repairs, including the following: f-1. Window replacement in a one- or 2-family dwelling, unless [...]. f-2. Replacement of plumbing fixtures in one- or 2-family dwellings without alteration of water supply and distribution systems, sanitary drainage systems or vent systems. f-3. Replacement of general-use snap switches, dimmer and control switches, and luminaries (lighting fixtures) in one- or 2-family dwellings. f-4. Replacement of mechanical appliances, provided the equipment is not fueled by gas or oil, in one- or 2-family dwellings. f-5. Replacement of unlimited quantities of roof covering or siding for one- and 2-family dwellings, and replacement of 100 square feet or less of roof covering in all other use groups. f-6. Replacement of roof decking on one-and 2-family dwellings without modification to framing members. f-7. Installation or replacement of floor finishes in all occupancies. f-8. Painting, papering, tiling, carpeting, cabinet or countertop installation, and similar finish work. f-9. Replacement of Class C interior wall or ceiling finishes in institutional, educational and assembly uses, and replacement of all classes of interior wall and ceiling finishes in all other occupancies. f-10. Other repair work deemed by the commissioner to be minor and ordinary and which does not adversely affect public health or safety.",
+  "required_quote": "200-24. Permit Required. 1. REQUIRED. No person may erect, construct, enlarge, alter, repair, move, improve, convert to new uses, raze or demolish any building or structure, nor install therein any equipment, occupy and use any building, structure, equipment or premises or cause the same to be done or commence any excavation on any premises without first obtaining a permit from the commissioner and paying the fee as prescribed by this code. [...] Exemptions from permit requirements under this section and the rules of the department shall not be deemed to authorize any work to be done in any manner in violation of any provisions of this code or any other law or rule.",
+  "url": "https://milwaukee.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=37197",
+  "api_url": "https://webapi.legistar.com/v1/milwaukee/matters/37197/texts/44583",
+  "source": "City of Milwaukee Common Council file 121804, substitute 3, 'A substitute ordinance relating to exceptions to department of neighborhood services permit requirements', Parts 1 and 2 (ss. 200-24-1 and 200-24-1.5); status Passed, 2013-12-17.",
+  "partitions_named": false,
+  "note": "The list is the text as passed in December 2013. Title searches of the city's legislation system found no later ordinance on permit exceptions, but the current s. 200-24-1.5 on the city's site could not be opened, so later changes are not ruled out. The list does not name toilet partitions or compartments. Items f-8 ('similar finish work'), f-9 (replacement of interior wall finishes) and f-10 (minor repair the commissioner accepts) are the nearest; whether any covers a partition replacement is not stated. Adding partitions is not on the list.",
+  "office": "City of Milwaukee Department of Neighborhood Services, Permit and Development Center",
+  "phone": "414-286-8210",
+  "phone_note": "Not read on a page: the Permit and Development Center's name, its number (414) 286-8210 and its address, 809 N. Broadway, 1st Floor, come from two web-search summaries of city documents on city.milwaukee.gov, which blocks automated reading. The number is left out of the page text until checked in a browser. Read on an official page: the Commissioner of Neighborhood Services, 414-286-6344 (DSPS delegated agent list).",
+  "confidence": "medium"
+ },
+ "restrooms_city": {
+  "rule": null,
+  "quote": "Resolved, By the Common Council of the City of Milwaukee, that the City expresses its commitment to creating gender-inclusive restrooms and other facilities, such as locker rooms and changing rooms, in properties owned or operated by the City; and, be it Further Resolved, That the City urges other municipalities and entities that control places of public accommodation throughout the city and surrounding areas to create gender-inclusive restrooms and other facilities [...]",
+  "url": "https://milwaukee.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=53035",
+  "api_url": "https://webapi.legistar.com/v1/milwaukee/matters/53035/texts/74914",
+  "note": "No city ordinance on single-user restroom signs or shared all-gender rooms in private buildings was found (one web search; title search of the city's legislation system for 'restroom'). Common Council resolution 191168, passed 2019-11-26, covers buildings the city owns or operates and only urges others to follow; it sets no rule for private buildings. Chapter 109 of the Milwaukee Code (equal rights), which the resolution cites, was not read. This is 'none found', not 'none exists'.",
+  "confidence": "medium"
+ },
+ "sales_tax": {
+  "combined": 0.079,
+  "parts": [
+   {
+    "name": "state",
+    "rate": 0.05
+   },
+   {
+    "name": "Milwaukee County",
+    "rate": 0.009,
+    "effective": "2024-01-01"
+   },
+   {
+    "name": "City of Milwaukee",
+    "rate": 0.02,
+    "effective": "2024-01-01"
+   }
+  ],
+  "effective": "2024-01-01",
+  "scheduled_change": null,
+  "url": "https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx",
+  "quote": "Milwaukee County sales and use tax increases from 0.5% to 0.9%, effective January 1, 2024. [...] The city of Milwaukee is the only municipality that imposes a city sales and use tax. The 2% city of Milwaukee sales and use tax is effective January 1, 2024. [...] [rate chart] Milwaukee | 40 | 5% | 0.90% (1/24) 0.50% (4/91-12/31/23) | (City of Milwaukee)* 2% (1/24) [...] * The city of Milwaukee is located in multiple counties",
+  "note": "Wisconsin Department of Revenue, 'Tax Rates' FAQ (guidance document 100047, dated November 23, 2026). The combined 7.9% is the sum of the three parts; the page lists them separately. The Department's address lookup was not used: downtown Milwaukee is in Milwaukee County. The chart also shows the 2% city tax against Washington and Waukesha counties, where small parts of the city lie; the county part differs there (0.5% in Washington County, no county tax shown for Waukesha County). The page announces no change to these rates.",
+  "confidence": "high"
+ },
+ "public_wage": {
+  "county": "Milwaukee",
+  "basis": "Davis-Bacon",
+  "classification": "CARPENTER & SOFT FLOOR LAYER (INCLUDING ACOUSTICAL WORK AND DRYWALL HANGING; EXCLUDING BATT INSULATION)",
+  "basic_hourly": 45.46,
+  "fringe": 31.52,
+  "determination": "WI20260001, modification 1 (Building)",
+  "date": "2026-05-18",
+  "rate_id": "CARP0231-001 06/01/2025 (union rate)",
+  "url": "https://sam.gov/wage-determination/WI20260001/1",
+  "api_url": "https://sam.gov/api/prod/wdol/v1/wd/WI20260001/1",
+  "quote": "General Decision Number: WI20260001 05/18/2026. State: Wisconsin. Construction Types: Building. Counties: Wisconsin Counties of Milwaukee, Ozaukee, Washington and Waukesha. [...] Modification Number 1, Publication Date 05/18/2026 [...] CARP0231-001 06/01/2025 [...] CARPENTER & SOFT FLOOR LAYER (INCLUDING ACOUSTICAL WORK AND DRYWALL HANGING; EXCLUDING BATT INSULATION)...$ 45.46 31.52",
+  "city_rule": null,
+  "city_rule_note": "Not hunted for. Title searches of the city's legislation system for 'prevailing wage' and 'living wage' ordinances since 2012 returned nothing; the Milwaukee Code's wage chapters were not read, and Wis. Stat. 66.0903 (whether a city may set its own prevailing wage) is unread (state pack).",
+  "note": "Modification 1 was the latest on sam.gov on 2026-11-24 (requests for modifications 2 and 3 returned 404). Found through sam.gov's search (Milwaukee, Wisconsin, Building).",
+  "confidence": "high"
+ },
+ "page": {
+  "meta": "Commercial bathroom partitions delivered to Milwaukee job sites. Price your restroom, pick a material and see the Wisconsin rules Milwaukee enforces.",
+  "lead": "Commercial bathroom partitions for Milwaukee breweries, manufacturing plants, schools and medical offices, shipped by freight to your job site.",
+  "stall_bullet": "- **How many stalls:** Wisconsin's building rules set the number of toilets by how many people use the building. Milwaukee adopts them as the state writes them. The table below shows what that means.",
+  "permit_bullet": "- **Permits:** Milwaukee requires a permit from the Department of Neighborhood Services to alter or repair a building or install equipment in it, unless the work is on the city's exempt list. The list covers \"painting, papering, tiling, carpeting, cabinet or countertop installation, and similar finish work\" and repairs the department's commissioner judges minor, without naming toilet partitions. Ask the Department of Neighborhood Services whether your replacement needs one. You don't need a permit to buy partitions.",
+  "confirm_office": "the City of Milwaukee Department of Neighborhood Services",
+  "install_rule": "Building permits in Milwaukee come from the city's Department of Neighborhood Services, which also reviews plans for commercial buildings in place of the state. Check local contractor licensing or registration with the department before work starts. Wisconsin does not license contractors for commercial work at the state level: state licensing covers one- and two-family dwelling contractors and certain trades, such as electrical and HVAC. You don't need a permit to buy partitions.",
+  "faq_install_extra": "Wisconsin has no state contractor license for commercial work, so check what the city asks of contractors with the Department of Neighborhood Services.",
+  "public_jobs_bullet": "- **Public jobs:** Wisconsin repealed its own wage law for public jobs in 2017, so set wage rates apply only on federally funded work, under the federal Davis-Bacon Act. For a carpenter on building work in Milwaukee County that rate is $45.46 an hour plus $31.52 in benefits.",
+  "sales_tax_bullet": "- **Sales tax:** 7.9% in Milwaukee: 5% state, 0.9% Milwaukee County and 2% city.",
+  "buyers_extra": "- **Breweries, taprooms and food plants:** solid plastic or stainless steel for rooms with wet floors and regular washdown.",
+  "sources": [
+   "- Codes enforced in Milwaukee: Milwaukee Code of Ordinances s. 262-01, Adoption of State and International Building Codes (ch. SPS 362 for new construction and ch. SPS 366 for additions, alterations, change of use and repairs, with International Building Code ss. 907.1.1 and 414.1.3), as recreated by [Common Council file 220693](https://milwaukee.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=63054), passed September 20, 2022, read in the city's legislation system; plan review authority: Wisconsin DSPS, [Commercial Building/HVAC Plan Review Delegated Agents, November 20, 2026](https://dsps.wi.gov/MediaFileLocation/tdpn5ido/delegatedagentscbpr.pdf) (City of Milwaukee, all commercial buildings). Checked 2026-11-24.",
+   "- Milwaukee permits and exempt work: Milwaukee Code of Ordinances ss. 200-24-1 (permit required) and 200-24-1.5 (exceptions), as amended by [Common Council file 121804](https://milwaukee.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=37197), \"A substitute ordinance relating to exceptions to department of neighborhood services permit requirements\", passed December 17, 2013, read in the city's legislation system. Checked 2026-11-24.",
+   "- Sales tax in Milwaukee: Wisconsin Department of Revenue, [Tax Rates](https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx) (5% state; Milwaukee County 0.9% from January 1, 2024; City of Milwaukee 2% from January 1, 2024). Checked 2026-11-24.",
+   "- Milwaukee County carpenter rate on federally funded building work: [federal wage determination WI20260001, modification 1, May 18, 2026](https://sam.gov/wage-determination/WI20260001/1). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; ICC A117.1-2017, referenced by the Wisconsin Commercial Building Code (Wis. Admin. Code chs. SPS 361 to 366: the 2021 International Building Code with Wisconsin changes, DSPS inserts dated September 1, 2025), adopted in Milwaukee Code of Ordinances s. 262-01 and enforced by the City of Milwaukee Department of Neighborhood Services; Wisconsin Plumbing Code (chs. SPS 381 to 387) and Milwaukee Code of Ordinances ch. 225; Milwaukee Code of Ordinances s. 200-24 for permits; NFPA 286 for HDPE.",
+  "notes": [
+   "city.milwaukee.gov blocks automated reading (403), so no page of the city's website was read: the city facts come from ordinances as passed, read in the city's legislation system (Legistar), and from state pages. Check in a browser that s. 200-24-1.5 (permit exceptions, as passed in 2013) and s. 262-01 (code adoption, as passed in 2022) still read the same in the current Milwaukee Code of Ordinances.",
+   "To confirm by phone before launch: whether a like-for-like replacement of toilet partitions in a commercial restroom needs a Milwaukee permit, and whether adding stalls does (Department of Neighborhood Services, Permit and Development Center; web-search summaries of city documents give 414-286-8210 and 809 N. Broadway, not read on a page, so the number is not in the page text).",
+   "Contractor rule: still the neutral line from the local-rules file (low confidence, phone-call item). Chapter 200 and the city's licence chapters could not be read. One fact was read: plumbing permits go only to a person 'duly licensed, registered and bonded' (s. 225-3-1), which doesn't concern partition installers.",
+   "City restroom rules: none found for private buildings. Common Council resolution 191168 (passed November 26, 2019) commits the city to gender-inclusive restrooms in buildings it owns or operates; it is a resolution, not a rule for buyers, so it stays out of the page text. Chapter 109 (equal rights) was not read.",
+   "Sales tax: 7.9% applies in the part of the city in Milwaukee County, which includes downtown. The city also reaches into Washington and Waukesha counties, where the county part differs.",
+   "The wage rate is the union carpenter rate in the federal determination for Milwaukee, Ozaukee, Washington and Waukesha counties; it applies on federally funded work only. Any City of Milwaukee wage rule on city contracts was not looked for.",
+   "The two extra building-code sections Milwaukee adopts (International Building Code 907.1.1 and 414.1.3) were not read; they are outside the plumbing-fixture chapter.",
+   "The four building types in the lead and the buyers bullet on breweries, taprooms and food plants are editorial, not sourced."
+  ]
+ },
+ "sources_read": [
+  {
+   "url": "https://webapi.legistar.com/v1/milwaukee/matters/63054/texts/62577",
+   "official": true,
+   "what": "Common Council file 220693, ordinance text (Legistar API; public page https://milwaukee.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=63054)"
+  },
+  {
+   "url": "https://webapi.legistar.com/v1/milwaukee/matters/37197/texts/44583",
+   "official": true,
+   "what": "Common Council file 121804, substitute 3, ordinance text (public page https://milwaukee.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=37197)"
+  },
+  {
+   "url": "https://webapi.legistar.com/v1/milwaukee/matters/53035/texts/74914",
+   "official": true,
+   "what": "Common Council file 191168, resolution text (public page https://milwaukee.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=53035)"
+  },
+  {
+   "url": "https://webapi.legistar.com/v1/milwaukee/matters",
+   "official": true,
+   "what": "title searches: building code, plumbing, permit requirement, restroom, prevailing wage, living wage, contractor, administrative code"
+  },
+  {
+   "url": "https://dsps.wi.gov/MediaFileLocation/tdpn5ido/delegatedagentscbpr.pdf",
+   "official": true
+  },
+  {
+   "url": "https://dsps.wi.gov/Pages/Programs/CommercialBuildings/Default.aspx",
+   "official": true
+  },
+  {
+   "url": "https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx",
+   "official": true
+  },
+  {
+   "url": "https://sam.gov/api/prod/wdol/v1/wd/WI20260001/1",
+   "official": true
+  },
+  {
+   "url": "https://sam.gov/api/prod/sgs/v1/search/?index=dbra&q=Milwaukee&state=WI",
+   "official": true
+  }
+ ],
+ "not_read": [
+  "https://city.milwaukee.gov/ImageLibrary/Groups/ccClerk/Ordinances/Volume-2/CH200-sub3.pdf and the other Code of Ordinances chapters (200, 225, 262, 109) (403)",
+  "https://city.milwaukee.gov/DNS/permits, https://city.milwaukee.gov/DNS/permits/PermitChecklist ('Does It Need a Permit?') and https://city.milwaukee.gov/ImageLibrary/Groups/dnsAuthors/permits/Documents/Commercial-Repairs.pdf (403; seen only as web-search summaries)",
+  "International Building Code ss. 907.1.1 and 414.1.3",
+  "Wisconsin Department of Revenue address lookup (not used)"
+ ],
+ "searches_used": 3,
+ "to_confirm": [
+  "Whether replacing or adding toilet partitions in an existing commercial restroom needs a City of Milwaukee permit: Department of Neighborhood Services, Permit and Development Center (414-286-8210 per web-search summaries of city documents; confirm the number in a browser).",
+  "That Milwaukee Code s. 200-24-1.5 (permit exceptions) still reads as passed in 2013 and s. 262-01 as passed in 2022: read the current chapters 200 and 262 in a browser at city.milwaukee.gov.",
+  "The city's 'Does It Need a Permit?' page and 'Commercial Repairs' handout (April 2026 per a search summary) may answer the partition question more directly: read in a browser.",
+  "Which section of Milwaukee Code ch. 225 adopts the Wisconsin Plumbing Code, and whether the chapter adds anything on fixtures: read in a browser.",
+  "Whether Milwaukee requires any contractor licence or registration for commercial interior work (local-rules entry is low confidence): Department of Neighborhood Services.",
+  "That Milwaukee Code ch. 109 holds no rule on restroom signs or all-gender rooms in private buildings: read in a browser.",
+  "Any City of Milwaukee wage rule on city construction contracts: not looked for.",
+  "Effective date of the 2021 edition of the Wisconsin Commercial Building Code (state pack item): DSPS, 608-266-2112."
+ ]
+}

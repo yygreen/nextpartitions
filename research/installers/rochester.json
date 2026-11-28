@@ -1,0 +1,236 @@
+{
+ "area": "rochester",
+ "found_count": 5,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/rochester.json: worked; Maps hits are almost all residential bath remodelers, plumbers and stores (skipped). The Google goto links in 'web' resolve with curl via www.google.com, which turned up Weswood Specialties (weswood-specialties.com), its installer job ad, the McClain 'our business' page and the Procore interior-specialties listing",
+  "Bobrick / Scranton / Metpar / General Partitions / Ampco locators: not retried (Buffalo run found Bobrick JS-only, Scranton 404)",
+  "Bradley find-a-rep: page loads with no rep content",
+  "ASI Global Partitions find-a-rep: 404",
+  "Hadrian find-a-rep: 404",
+  "The Blue Book iProView pages: 403 blocked",
+  "Procore Network (Rochester toilet-accessories and partitions lists, NY interior specialties, profiles): worked; gave JP Construction Specialties, Milestone, Lehmann Construction (drywall/partitions, no toilet partitions: skipped), Workplace Interiors (office partitions: skipped)",
+  "BuildingConnected: not tried",
+  "WebSearch: 8 of 8 used; mostly returned One Point Partitions, national online sellers (Newton Distributing, Partition Plus, CME Corp, Prestige Distribution, Benco, Division 10 Inc NJ) and NYC Blue Book lists, none with a confirmed Rochester-area base",
+  "One Point Partitions: search snippets show a Rochester delivery terminal (91 Norman St) but say buyers install themselves or use their own contractor; site returns 403, so not read; excluded as an online seller with no installation",
+  "Greater Rochester Chamber member directory: 403 blocked",
+  "BBB Rochester partitions category: 404",
+  "weswoodspecialties.com: DNS failure (correct domain is weswood-specialties.com, which worked)",
+  "aaccontracting.com: 'Launching soon' placeholder",
+  "mcclainassociatesinc.com: PHP parse error on every page",
+  "Rochester Door Company: doors only, no partitions (skipped)",
+  "Inter-Co Restroom & Locker Supply: snippet says supply and install toilet partitions, but no location was found and the cap was hit; worth checking"
+ ],
+ "candidates": [
+  {
+   "name": "J&R Specialties Inc",
+   "base_city": "Akron",
+   "state": "NY",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick",
+    "General Partitions",
+    "ASI Global Partitions",
+    "Scranton Products",
+    "Metpar",
+    "Bradley"
+   ],
+   "within_area": "regional",
+   "website": "https://www.jandrspecialties.com/",
+   "phone": "(716) 442-5040",
+   "email": "info@jrbuffalo.com",
+   "contact_page": "https://www.jandrspecialties.com/contact",
+   "partition_evidence": "Section 10 page lists Toilet Partitions as a supply-and-install service. Named projects: Seneca One (installed toilet partitions), Northtown Jaguar Land Rover (supplied and installed Bobrick partitions) and 500 Pearl.",
+   "evidence_urls": [
+    "https://www.jandrspecialties.com/",
+    "https://www.jandrspecialties.com/section-10-specialties"
+   ],
+   "red_flags": [
+    "Supplies partitions itself (supply and install), which is a buy-around risk"
+   ],
+   "reason": "Commercial Division 10 subcontractor with named toilet partition installs. About 65 miles from Rochester, and its site lists Rochester in its Western NY service area.",
+   "added_by_checker": false,
+   "license": {
+    "name": "J&R Specialties Inc",
+    "area": "rochester",
+    "status": "not_required_online_check",
+    "registry": "None applies: New York has no statewide contractor license for this work; City of Rochester (Bureau of Zoning & Permitting) sets no general contractor license",
+    "note": "Checked 2026-11-19. Under the area rule, partition installation needs no state or Rochester city contractor license, so there is no license registry to look up. The base city is Akron NY, which is outside Rochester. Rochester permit forms ask for job-specific NYS workers' comp proof (C-105.2/U-26.3, CE-200 exemption) with each permit, and require licensed contractors only for plumbing and electrical work (seen in search-result summaries of cityofrochester.gov permit PDFs; the PDF itself returned 403 when fetched). No NY DOS entity search was run because that site is a script-driven app.",
+    "source_url": "https://cityofrochester.gov/sites/default/files/2024-11/Interior-exterior%20work%20OCTOBER%202024.pdf"
+   },
+   "score": 63
+  },
+  {
+   "name": "Weswood Specialties, Inc.",
+   "base_city": "Farmington",
+   "state": "NY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "website": "https://www.weswood-specialties.com/",
+   "phone": "(585) 232-1986",
+   "email": "info@weswood-specialties.com",
+   "contact_page": "https://www.weswood-specialties.com/contact",
+   "partition_evidence": "Toilet Partitions is a featured product page. Its About page calls it an installation company for leading manufacturers' products, covering Divisions 10, 12 and 14. No partition project is named.",
+   "evidence_urls": [
+    "https://www.weswood-specialties.com/",
+    "https://www.weswood-specialties.com/toilet-partitions-accessories",
+    "https://www.weswood-specialties.com/about",
+    "https://www.weswood-specialties.com/projects"
+   ],
+   "red_flags": [
+    "Offers partitions as a product (likely supplies them)",
+    "The 'an AAC Company' tie is not confirmed on the pages read"
+   ],
+   "reason": "Greater Rochester commercial Division 10/12/14 installer with a toilet partitions product page. Its listed projects (RIT dorms, Nazareth library and others) don't show partition installs.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Weswood Specialties, Inc.",
+    "area": "rochester",
+    "status": "not_required_online_check",
+    "registry": "None applies: New York has no statewide contractor license for this work; City of Rochester (Bureau of Zoning & Permitting) sets no general contractor license",
+    "note": "Checked 2026-11-19. Under the area rule there is no state or Rochester city license registry for partition installation. The base city is Farmington NY. For work inside Rochester city limits, the city asks for NYS workers' comp proof with each permit. No entity search was run.",
+    "source_url": "https://cityofrochester.gov/sites/default/files/2024-11/Interior-exterior%20work%20OCTOBER%202024.pdf"
+   },
+   "score": 50
+  },
+  {
+   "name": "JP Construction Specialties, LLC",
+   "base_city": "Syracuse",
+   "state": "NY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "regional",
+   "website": "https://jpconstructionspecialties.com/",
+   "phone": "(315) 373-0004",
+   "partition_evidence": "Homepage says it provides Division 10 specialty construction materials for private, commercial, state and federal projects. Image filenames suggest stall photos, but the text never names toilet partitions.",
+   "evidence_urls": [
+    "https://jpconstructionspecialties.com/"
+   ],
+   "red_flags": [
+    "The only emails on the site are personal AOL/Hotmail addresses (left out)",
+    "Doesn't mention serving Rochester or Western NY",
+    "No contact page"
+   ],
+   "reason": "A Division 10 specialties firm about 85 miles away. Partition installation is unproven and it doesn't say it serves Rochester.",
+   "added_by_checker": false,
+   "license": {
+    "name": "JP Construction Specialties, LLC",
+    "area": "rochester",
+    "status": "not_required_online_check",
+    "registry": "None applies: New York has no statewide contractor license for this work; City of Rochester (Bureau of Zoning & Permitting) sets no general contractor license",
+    "note": "Checked 2026-11-19. The business is based in Syracuse and listed for the Rochester area. There is no state or Rochester license registry for this work. Syracuse's own local rules were not part of this area's rule and were not researched. No entity search was run.",
+    "source_url": "https://cityofrochester.gov/sites/default/files/2024-11/Interior-exterior%20work%20OCTOBER%202024.pdf"
+   },
+   "score": 43
+  },
+  {
+   "name": "Kelley Bros",
+   "base_city": "Syracuse",
+   "state": "NY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Global Toilet Partitions",
+    "Scranton Products",
+    "Hadrian"
+   ],
+   "within_area": "regional",
+   "website": "https://www.kelleybros.com/",
+   "phone": "800-856-2550",
+   "contact_page": "https://www.kelleybros.com/contact-us/",
+   "partition_evidence": "Its Division 10 page lists toilet partitions (Global, Scranton, Hadrian) and offers a turnkey service 'from initial quote to final Product Installation'. Partition installs aren't stated outright.",
+   "evidence_urls": [
+    "https://www.kelleybros.com/?p=3224",
+    "https://www.kelleybros.com/locations/"
+   ],
+   "red_flags": [
+    "Large distributor that sells partitions (a competitor and buy-around risk)",
+    "No Rochester office; nearest are Buffalo and Syracuse"
+   ],
+   "reason": "A multi-state Division 10 distributor with NY offices (Syracuse headquarters, Buffalo) that offers installation. Not a strong fit: it is a partitions seller and partition installs are not proven.",
+   "added_by_checker": true,
+   "license": {
+    "name": "Kelley Bros",
+    "area": "rochester",
+    "status": "not_required_online_check",
+    "registry": "None applies: New York has no statewide contractor license for this work; City of Rochester (Bureau of Zoning & Permitting) sets no general contractor license",
+    "note": "Checked 2026-11-19. The business is based in Syracuse and listed for the Rochester area. There is no state or Rochester license registry for this work. Syracuse's local rules were not researched. No entity search was run.",
+    "source_url": "https://cityofrochester.gov/sites/default/files/2024-11/Interior-exterior%20work%20OCTOBER%202024.pdf"
+   },
+   "score": 43
+  },
+  {
+   "name": "McClain Associates Inc.",
+   "base_city": "Rochester",
+   "state": "NY",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [
+    "Moderco"
+   ],
+   "within_area": "yes",
+   "website": "http://mcclainassociatesinc.com/",
+   "email": "info@mcclainassociatesinc.com",
+   "contact_page": "https://www.moderco.com/?p=2999",
+   "partition_evidence": "The Moderco dealer page says McClain is a regional distributor of specialty building products (folding walls, operable partitions) for Rochester and nine Western NY counties, and that it can install. Toilet partitions are not mentioned.",
+   "evidence_urls": [
+    "https://www.moderco.com/?p=2999"
+   ],
+   "red_flags": [
+    "Own website returns a PHP error",
+    "No toilet partition evidence; operable walls only",
+    "Distributor (sells products)"
+   ],
+   "reason": "A Rochester specialty-products distributor and installer, but nothing shows toilet partition work and its own site is broken.",
+   "added_by_checker": false,
+   "license": {
+    "name": "McClain Associates Inc.",
+    "area": "rochester",
+    "status": "not_required_online_check",
+    "registry": "None applies: New York has no statewide contractor license for this work; City of Rochester (Bureau of Zoning & Permitting) sets no general contractor license",
+    "note": "Checked 2026-11-19. The business is based in Rochester. Neither the state nor the city has a general contractor license registry that covers partition installation. Each Rochester permit needs job-specific NYS workers' comp proof. No entity search was run.",
+    "source_url": "https://cityofrochester.gov/sites/default/files/2024-11/Interior-exterior%20work%20OCTOBER%202024.pdf"
+   },
+   "score": 30
+  },
+  {
+   "name": "Milestone Construction Partners",
+   "base_city": "Rochester",
+   "state": "NY",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "brands": [],
+   "within_area": "yes",
+   "website": "https://milestoneconstructionpartners.com/",
+   "phone": "(585) 247-5179",
+   "email": "info@milestoneconstructionpartners.com",
+   "contact_page": "https://milestoneconstructionpartners.com/contact",
+   "partition_evidence": "None. General contractor, and no partition work is mentioned.",
+   "evidence_urls": [
+    "https://milestoneconstructionpartners.com/"
+   ],
+   "red_flags": [
+    "General contractor, not a partition installer"
+   ],
+   "reason": "A commercial general contractor with no evidence of toilet partition installation.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  }
+ ]
+}

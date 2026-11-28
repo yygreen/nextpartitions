@@ -1,0 +1,203 @@
+{
+ "area": "cheyenne",
+ "found_count": 5,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/cheyenne.json: read. The Maps results were mostly plumbers, remodelers and stores; the only relevant one was Construction Specialists Inc (Cheyenne). 'Wyoming Install Group' turned up no real business on search.",
+  "csiwyo.net (Construction Specialists Inc): blocked, HTTP 503 on both http and https",
+  "Bobrick find-a-rep: loaded, but the rep dropdown didn't render, so no Wyoming reps could be read",
+  "Scranton Products find-a-rep: 404",
+  "ASI (asi-accuratepartitions.com/find-a-rep): 404 after redirect",
+  "Hadrian find-a-rep: 404",
+  "Bradley, Metpar, General Partitions, Ampco locators: not tried because of time and the search cap",
+  "The Blue Book (thebluebook.com): blocked, HTTP 403",
+  "Procore Network: worked. The Cheyenne and Casper specialties pages and the compartments-and-cubicles page listed no Wyoming-based partition installer; Interior Concepts (Centennial, CO) was found there. Other partition firms there are far away or are manufacturers (All Systems Installations in SLC, Commercial Door & Specialties in Rapid City, Combined Building Specialties in Sioux Falls, All American Metal, US Made Supply).",
+  "BuildingConnected: not tried",
+  "BBB Casper accredited construction: worked; no partition or specialties contractors",
+  "ConstructConnect LCCC restroom renovation bid (Cheyenne): worked, but bidder names are behind a paywall",
+  "Web search, 7 of 7 used: toilet partition installer queries for Cheyenne, Casper, Wyoming and northern Colorado (Fort Collins, Loveland, Greeley). They returned only national online sellers (One Point Partitions, Sustainable Supply, Total Restroom, Partition Plus), which were skipped as national chains with no local base.",
+  "Rio Grande Co. (riograndeco.com): worked; a supplier with a Fort Collins office that sells partitions but shows no installation work, so it was skipped",
+  "Existing research/installers/denver.json was used to find Colorado Front Range firms that serve Wyoming, and each one's site was re-read",
+  "mapquest host (phoenix-0af34b1.aws.mapquest.com): not reachable from this session (DNS blocked). Simpson & Simpson (Broomfield) couldn't be checked.",
+  "heartlandacoustics.com (Heartland Acoustics & Interiors, which lists Cheyenne on Procore): HTTP 503, not checked"
+ ],
+ "candidates": [
+  {
+   "name": "Colorado Specialties, Inc.",
+   "base_city": "Golden",
+   "state": "CO",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "reason": "Division 10 distributor and installer whose construction side estimates and installs toilet partitions, accessories and FRP in Colorado and Wyoming. Golden is about 105 miles from Cheyenne, and the site names Wyoming as a service area.",
+   "partition_evidence": "Homepage says the construction side installs toilet partitions, FRP, toilet and bath accessories, and wall protection in Colorado and Wyoming.",
+   "brands": [
+    "Hadrian",
+    "ASI",
+    "Scranton",
+    "Metpar",
+    "Privada",
+    "Bradley",
+    "Bobrick",
+    "Gamco",
+    "Koala Kare",
+    "Kohler"
+   ],
+   "phone": "(303) 595-9627",
+   "email": "estimating@coloradospecialties.com",
+   "contact_page": "https://coloradospecialties.com/contact-us/",
+   "website": "https://coloradospecialties.com/",
+   "evidence_urls": [
+    "https://coloradospecialties.com/",
+    "https://coloradospecialties.com/contact-us/"
+   ],
+   "red_flags": [
+    "Stocking distributor of ASI, Scranton, Bobrick, Bradley and Metpar partitions, so there is a high risk it supplies the partitions itself instead of us."
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 63
+  },
+  {
+   "name": "Specialties Contracting, Inc.",
+   "base_city": "Longmont",
+   "state": "CO",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "reason": "Division 10 subcontractor that supplies and installs toilet partitions and accessories in commercial buildings and works for general contractors across Colorado and Wyoming. Longmont is about 80 miles from Cheyenne.",
+   "partition_evidence": "Its job posting (PDF hosted by Colorado State University) describes installing toilet partitions and accessories, with travel throughout Colorado and Wyoming, and says it supplies and installs Division 10 products for schools, medical facilities and offices.",
+   "phone": "(970) 535-3010",
+   "email": "info@specialtiescontracting.com",
+   "website": "https://specialtiescontracting.com/",
+   "evidence_urls": [
+    "https://apps.chhs.colostate.edu/cmjobs/publicfiles/viewjobposting/2480/",
+    "https://specialtiescontracting.com/"
+   ],
+   "red_flags": [
+    "Its own website shows only a 'Launching Soon' page; the contact details come from an undated job posting PDF.",
+    "It supplies Division 10 products, so there is a buy-around risk."
+   ],
+   "added_by_checker": true,
+   "license": null,
+   "score": 63
+  },
+  {
+   "name": "Continental Partition Systems, LLC",
+   "base_city": "Frederick",
+   "state": "CO",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "reason": "Partition contractor that installs operable walls and gym equipment, and lists 'Toilet Partitions and Lockers' and 'Bathroom Partitions & Accessories' as products. Its footer says it serves Wyoming. No toilet partition projects or photos are shown. Frederick is about 70 miles from Cheyenne.",
+   "partition_evidence": "Product categories list toilet partitions and bathroom partitions and accessories. No details, projects or photos.",
+   "brands": [
+    "Modernfold",
+    "Hufcor",
+    "Kwik-Wall",
+    "Panelfold",
+    "Emco"
+   ],
+   "phone": "(303) 396-0200",
+   "email": "info@cps-partitions.com",
+   "contact_page": "https://cps-partitions.com/contact",
+   "website": "https://cps-partitions.com/",
+   "evidence_urls": [
+    "https://cps-partitions.com/",
+    "https://cps-partitions.com/toilet-partitions",
+    "https://cps-partitions.com/contact"
+   ],
+   "red_flags": [
+    "Its main business is operable walls; toilet partitions appear only as a category name."
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 43
+  },
+  {
+   "name": "Associated Building Specialties (ABS)",
+   "base_city": "Broomfield",
+   "state": "CO",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "reason": "Specialties subcontractor since 1985 that lists toilet partitions and washroom accessories, and is a dealer for Bradley, Bobrick, Hadrian and ASI. Wyoming is named in several of its dealer descriptions. The homepage doesn't say outright that it installs partitions. Broomfield is about 85 miles from Cheyenne.",
+   "partition_evidence": "Homepage lists toilet partitions and washroom accessories among its offerings as a specialties subcontractor; partner descriptions name Wyoming.",
+   "brands": [
+    "Bradley",
+    "Bobrick",
+    "Hadrian",
+    "ASI"
+   ],
+   "phone": "303.293.2096",
+   "email": "info@absinc.com",
+   "website": "https://absinc.com/",
+   "evidence_urls": [
+    "https://absinc.com/"
+   ],
+   "red_flags": [
+    "Dealer of Bobrick, Bradley, Hadrian and ASI partitions, so there is a risk it supplies the partitions itself.",
+    "No contact page found; only a mailto link."
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 43
+  },
+  {
+   "name": "Interior Concepts",
+   "base_city": "Centennial (from candidate list; not confirmed on its site)",
+   "state": "CO",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "reason": "Subcontractor for stretch ceilings, acoustical walls and 'building specialties'. The site doesn't mention toilet partitions, and no service area or Wyoming coverage is stated.",
+   "partition_evidence": "None; only a generic 'building specialties' line.",
+   "phone": "(303) 699-3300",
+   "email": "office@buildwell.com",
+   "website": "https://buildwell.com",
+   "evidence_urls": [
+    "https://buildwell.com"
+   ],
+   "red_flags": [
+    "No partition evidence.",
+    "No service area stated."
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Construction Specialists Inc",
+   "base_city": "Cheyenne",
+   "state": "WY",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "reason": "The website returned HTTP 503 on both http and https. A directory listing confirms only a Cheyenne business by this name, with no services shown. There is no evidence of partition work.",
+   "partition_evidence": "None found.",
+   "website": "http://www.csiwyo.net/",
+   "evidence_urls": [
+    "http://www.csiwyo.net/",
+    "https://www.cityof.com/wy/cheyenne/construction-specialists-inc-354518"
+   ],
+   "red_flags": [
+    "Website unreachable (503).",
+    "No evidence of the services it offers."
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

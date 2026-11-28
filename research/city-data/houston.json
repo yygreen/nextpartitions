@@ -1,0 +1,546 @@
+{
+ "slug": "houston",
+ "city": "Houston",
+ "state": "TX",
+ "checked": "2026-11-24",
+ "labor": {
+  "occupation": "47-2031 Carpenters",
+  "release": "OEWS May 2025 (national release 2026-05-15; Houston area release 2026-08-13)",
+  "metro_name": "Houston-Pasadena-The Woodlands, TX Metropolitan Statistical Area",
+  "metro_bls_area_code": "0026420",
+  "metro_mean_hourly": 25.48,
+  "metro_median_hourly": 23.88,
+  "metro_employment": 9600,
+  "metro_annual_mean": 53000,
+  "us_mean_hourly": 31.55,
+  "us_median_hourly": 29.12,
+  "us_employment": 670090,
+  "us_annual_mean": 65630,
+  "pct_vs_us_mean": -19.2,
+  "pct_vs_us_median": -18.0,
+  "facts": [
+   {
+    "fact": "Houston metro carpenters: mean hourly wage $25.48, employment 9,600, annual mean $53,000 (May 2025).",
+    "url": "https://www.bls.gov/regions/southwest/news-release/2026/occupationalemploymentandwages_houston_20260813.htm",
+    "official": true,
+    "quote": "Carpenters 9,600 0.68 25.48 53,000",
+    "note": "BLS Southwest Information Office release 26-1365-DAL, 'Occupational Employment and Wages in Houston-Pasadena-The Woodlands — May 2025', Table 1 (columns: employment, location quotient, mean hourly, mean annual). The table has no median."
+   },
+   {
+    "fact": "U.S. carpenters: mean hourly $31.55, median hourly $29.12, employment 670,090, annual mean $65,630 (May 2025).",
+    "url": "https://www.bls.gov/news.release/archives/ocwage_05152026.pdf",
+    "official": true,
+    "quote": "Carpenters ... 670,090 31.55 65,630 29.12",
+    "note": "BLS news release USDL-26-0725, 'Occupational Employment and Wages — May 2025', Table 1 (columns: employment, mean hourly, mean annual, median hourly). Read from the PDF with pdftotext."
+   },
+   {
+    "fact": "Houston metro carpenters: median hourly wage $23.88 (10th pct $18.98, 25th $22.40, 75th $28.94, 90th $32.93); U.S. median $29.12.",
+    "url": "https://www.onetonline.org/link/localwages/47-2031.00?zip=77002",
+    "official": true,
+    "quote": "Houston-Pasadena-The Woodlands, TX | $18.98 | $22.40 | $23.88 | $28.94 | $32.93",
+    "note": "O*NET OnLine (sponsored by the U.S. Department of Labor) Local Wages page, which republishes BLS OEWS '2025 wage data'. Used for the metro median because the BLS area table itself could not be opened by script (see to_confirm). Its U.S. median ($29.12) matches the BLS release."
+   },
+   {
+    "fact": "BLS's exact name for the metro and where the area table lives.",
+    "url": "https://www.bls.gov/oes/2025/may/oessrcma.htm",
+    "official": true,
+    "quote": "Houston-Pasadena-The Woodlands, TX",
+    "note": "Links to https://data.bls.gov/oes/#/area/0026420/2025 (a JavaScript table)."
+   },
+   {
+    "fact": "Context: all construction and extraction occupations in the Houston metro average $27.41 an hour against $31.42 nationally.",
+    "url": "https://www.bls.gov/regions/southwest/news-release/2026/occupationalemploymentandwages_houston_20260813.htm",
+    "official": true,
+    "quote": "The average hourly wage for this occupational group locally was $27.41, compared to the national wage of $31.42."
+   }
+  ],
+  "calc": "(25.48 - 31.55) / 31.55 = -19.2%; median (23.88 - 29.12) / 29.12 = -18.0%",
+  "confidence": "high",
+  "confidence_note": "Both means and the U.S. median were read on bls.gov. The metro median comes from O*NET OnLine (U.S. DOL), not from the BLS table itself."
+ },
+ "public_job_wage": {
+  "law": "Texas Government Code chapter 2258 (state prevailing wage law). It covers public works of the state and of political subdivisions (cities, counties, school districts), so a City of Houston building or a public school job is covered whether or not federal money is involved. The federal Davis-Bacon Act applies separately to federally funded or assisted contracts over $2,000.",
+  "who_sets_rate": "The public body awarding the contract (city council, school board, county), by its own wage survey or by adopting the U.S. Department of Labor's Davis-Bacon rates. Rates therefore differ between owners in the same county.",
+  "state_dollar_threshold": null,
+  "state_threshold_note": "Chapter 2258 has no dollar threshold; the whole chapter was read. Its limits are: it does not apply to maintenance work (2258.021(b)), and a contractor is not in violation if the public body did not determine the rates and put them in the contract (2258.023(c)).",
+  "federal_dollar_threshold_usd": 2000,
+  "penalty": "$60 per worker per calendar day underpaid, paid to the public body (2258.023(b)).",
+  "carpenter_building_harris_county": {
+   "classification": "CARPENTER (EXCLUDES ACOUSTICAL CEILING INSTALLATION, DRYWALL HANGING, FORM WORK AND METAL STUD INSTALLATION)",
+   "basic_hourly_rate": 33.27,
+   "fringe": 9.73,
+   "total": 43.0,
+   "determination": "General Decision Number TX20260253 (Building, Harris County, Texas), Modification 1, published 2026-05-18; carpenter rate identifier CARP0551-008, dated 04/01/2025",
+   "determination_active_on": "2026-11-24",
+   "url": "https://sam.gov/wage-determination/TX20260253/1",
+   "data_url": "https://sam.gov/api/prod/wdol/v1/wd/TX20260253/1",
+   "quote": "CARP0551-008 04/01/2025 ... CARPENTER (EXCLUDES ACOUSTICAL CEILING INSTALLATION,DRYWALL HANGING, FORM WORK AND METAL STUD INSTALLATION)..................................$ 33.27 9.73",
+   "note": "Read from sam.gov's own record for the determination ('active': true, publishDate 2026-05-18; no Modification 2 exists) and on Harris County's posted copy. The determination does not name toilet partition installation; which classification an owner applies to that work is the owner's call (see to_confirm)."
+  },
+  "city_of_houston": {
+   "basic_hourly_rate": 33.27,
+   "fringe": 9.73,
+   "total": 43.0,
+   "document": "City of Houston Standard Document 00821, 'Wage Scale and Payroll Requirements for Building Construction', Edition Date 02-01-2026 (the 2026 Wage Scale for Building Construction); Exhibit A reproduces General Decision TX20260253 dated 01/02/2026 (Modification 0)",
+   "url": "https://houstontx.gov/sites/default/files/migrated/obo/contractcomplianceforms/2026-Wage-Scale-for-Building-Construction.pdf",
+   "index_url": "https://www.houstontx.gov/obo/contract-compliance",
+   "quote": "Contractor and its Subcontractors must pay the general prevailing wage rates for building construction for each craft or type of worker or mechanic employed in the execution of any building construction or repair under the Contract in accordance with Chapter 2258 of the Texas Government Code and City of Houston, Texas Ordinance Nos. 85-2070, 2000-1114, 2001-152, 2006-91 and 2006-168, and 2009-247",
+   "rate_quote": "Carpenter (excludes acoustical ceiling installation, drywall hanging, form work and metal stud installation) Ratio 2/1 – Apprentice $33.27 $9.73 $43.00",
+   "scope_quote": "The wage scale for building construction is to be applied to work on a building including an area within 5 feet of the exterior wall.",
+   "carpenter_description_quote": "Builds stairs and lays out and installs partitions and cabinetwork.",
+   "note": "The city's carpenter job description (same document) includes installing partitions. Apprentice ratio: 2 journeymen to 1 apprentice."
+  },
+  "harris_county": {
+   "url": "https://oce.harriscountytx.gov/Services/Consultants-Resources-and-Specifications/Construction/Prevailing-Wage-Rates",
+   "document_url": "https://oce.harriscountytx.gov/Portals/43/Documents/Publications/TX20260253_Mod%201_Building.pdf",
+   "quote": "No worker on a Harris County construction project may make less than the Harris County Contractor Minimum Wage or the applicable Prevailing Wage.",
+   "county_minimum_wage_quote": "pay all workers on county projects at least Harris County's Contractor Minimum Wage (currently $21.65/hour)",
+   "note": "Harris County posts TX20260253 Mod 1 for its building projects and adds its own contractor minimum wage."
+  },
+  "school_districts": {
+   "houston_isd_carpenter_rate": null,
+   "note": "A school district is a political subdivision under chapter 2258 and adopts its own schedule (many Houston-area districts adopt a school-trades wage survey rather than the Davis-Bacon rates, and those rates are different). Houston ISD's current adopted carpenter rate was not found on an official page: ask HISD Construction Services / Procurement for the prevailing wage schedule in the project manual."
+  },
+  "facts": [
+   {
+    "fact": "Who is covered",
+    "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.2258.htm",
+    "official": true,
+    "quote": "A worker employed on a public work by or on behalf of the state or a political subdivision of the state shall be paid: (1) not less than the general prevailing rate of per diem wages for work of a similar character in the locality in which the work is performed"
+   },
+   {
+    "fact": "What counts as a public work",
+    "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.2258.htm",
+    "official": true,
+    "quote": "This chapter applies only to the construction of a public work, including a building, highway, road, excavation, and repair work or other project development or improvement, paid for in whole or in part from public funds"
+   },
+   {
+    "fact": "Maintenance is excluded",
+    "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.2258.htm",
+    "official": true,
+    "quote": "Subsection (a) does not apply to maintenance work."
+   },
+   {
+    "fact": "How the rate is set",
+    "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.2258.htm",
+    "official": true,
+    "quote": "(1) conducting a survey of the wages received by classes of workers employed on projects of a character similar to the contract work in the political subdivision of the state in which the public work is to be performed; or (2) using the prevailing wage rate as determined by the United States Department of Labor in accordance with the Davis-Bacon Act"
+   },
+   {
+    "fact": "Penalty",
+    "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.2258.htm",
+    "official": true,
+    "quote": "$60 for each worker employed for each calendar day or part of the day that the worker is paid less than the wage rates stipulated in the contract"
+   },
+   {
+    "fact": "Federal Davis-Bacon threshold",
+    "url": "https://www.dol.gov/agencies/whd/government-contracts/construction",
+    "official": true,
+    "quote": "apply to contractors and subcontractors performing on federally funded or assisted contracts in excess of $2,000"
+   }
+  ],
+  "statute_public_url": "https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2258.htm",
+  "confidence": "high",
+  "confidence_note": "Statute read in full on the Texas Legislature's server; rate read on sam.gov's record, the City of Houston's 2026 wage scale and Harris County's copy. Houston ISD's own schedule not found (null)."
+ },
+ "access_differences": [
+  {
+   "point": "Mirrors in the restroom (the one wording difference found in the toilet-room sections)",
+   "state_section": "2012 TAS 213.3.5",
+   "state_requirement": "At least one mirror must be accessible, and accessible mirrors must be placed consistently with the other mirrors in the same room.",
+   "state_quote": "213.3.5 Mirrors. Where mirrors are provided, at least one shall comply with 603.3. Accessible mirrors shall be provided at locations that are consistent with the location of other mirrors in the same room.",
+   "federal_section": "2010 ADA Standards 213.3.5",
+   "federal_quote": "213.3.5 Mirrors. Where mirrors are provided, at least one shall comply with 603.3.",
+   "url": "https://www.tdlr.texas.gov/ab/2012TAS/2012tascomplete.pdf",
+   "federal_url": "https://www.ada.gov/assets/pdfs/2010-design-standards.pdf",
+   "affects_partitions": false
+  },
+  {
+   "point": "Who decides when full compliance in an alteration is not feasible",
+   "state_section": "2012 TAS 202.3 Exception 2 (also 203.1 and 202.5)",
+   "state_requirement": "In Texas the decision that compliance is technically infeasible is made by TDLR through its variance procedure, not by the owner or designer alone.",
+   "state_quote": "For purposes of ensuring compliance with Texas Government Code, Chapter 469, all determinations of technical infeasibility and maximum extent feasible are made by the Department in accordance with the variance procedures contained in Chapter 68, Texas Administrative Code.",
+   "federal_section": "2010 ADA Standards 202.3 Exception 2",
+   "federal_quote": "In alterations, where compliance with applicable requirements is technically infeasible, the alteration shall comply with the requirements to the maximum extent feasible.",
+   "url": "https://www.tdlr.texas.gov/ab/2012TAS/2012tascomplete.pdf",
+   "federal_url": "https://www.ada.gov/assets/pdfs/2010-design-standards.pdf",
+   "affects_partitions": true,
+   "note": "Relevant when an existing restroom cannot fit a 60-inch wheelchair stall. Both quotes checked against the PDF text."
+  },
+  {
+   "point": "State registration and plan review (procedure, not a stall dimension)",
+   "state_section": "Texas Government Code ch. 469; 16 Texas Administrative Code ch. 68 (Rule 68.50), as stated in TDLR's FAQ",
+   "state_requirement": "Projects with an estimated cost of $50,000 or more are registered with TDLR and reviewed and inspected; smaller projects must still meet TAS.",
+   "state_quote": "If your project's total estimated cost is less than $50,000.00, you are not required to submit the project to the Department for registration and review, however, the project is still required to comply with TAS.",
+   "federal_section": "none",
+   "federal_quote": null,
+   "federal_requirement": "The ADA has no plan review or registration; it is enforced by complaint and lawsuit.",
+   "url": "https://www.tdlr.texas.gov/ab/abfaq.htm",
+   "affects_partitions": true,
+   "note": "Carried over from research/state-codes/cities-first-5.json (read 2026-11-23); not re-read today."
+  }
+ ],
+ "access_summary": {
+  "adopts_federal_text": true,
+  "finding": "The 2012 Texas Accessibility Standards (effective March 15, 2012) use the 2010 ADA Standards' own text and section numbers. A word-level comparison of the two PDFs found no difference in section 213 (apart from the mirror sentence), 216 (signs), 404 (doors), 603 (toilet rooms), 604 (water closets and toilet compartments, including 604.8.1 wheelchair stalls, 604.8.2 ambulatory stalls, doors, toe clearance and 604.9 children's stalls), 605, 606, 609 (grab bars) or 703 (signs). Texas does not go further than the federal standard on stall size, doors, toe clearance, grab bars, restroom door signs or children's stalls. It does not use ICC A117.1.",
+  "same_in_both_quote": "213.3.1 Toilet Compartments. Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1. In addition to the compartment required to comply with 604.8.1, at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures.",
+  "method": "pdftotext on both PDFs, running page headers stripped, whitespace/hyphen/fraction glyphs normalised, then difflib comparison section by section. Figures (drawings) were not compared.",
+  "url": "https://www.tdlr.texas.gov/ab/2012TAS/2012tascomplete.pdf",
+  "federal_url": "https://www.ada.gov/assets/pdfs/2010-design-standards.pdf",
+  "other_texas_wording": "TAS 202.4 adds Texas text on path-of-travel work (safe harbor for elements built to the April 1, 1994 TAS; a tenant's alterations in its own space do not trigger path-of-travel work in the landlord's areas). These mirror the U.S. Department of Justice regulations rather than go beyond them.",
+  "other_texas_quote": "those alterations by the tenant in areas that only the tenant occupies do not trigger a path of travel obligation upon the landlord with respect to areas of the facility under the landlord's authority, if those areas are not otherwise being altered",
+  "city_layer": "Houston's building code separately cites ICC A117.1 for multi-user all-gender rooms (see restroom_rules), and the city sends accessibility questions to TDLR.",
+  "confidence": "high",
+  "confidence_note": "Both standards read in full text from the official PDFs. TDLR's technical memoranda page returned 404 (https://www.tdlr.texas.gov/ab/abtechmemos.htm), so any memo that interprets a stall rule was not checked."
+ },
+ "restroom_rules": {
+  "single_user": {
+   "summary": "Under the 2021 International Building Code as adopted by Houston (section 2902.1.2, not amended by the city), single-user toilet rooms and family or assisted-use toilet rooms must be identified as available to all persons regardless of sex, and they count toward the required fixture total. They do not have to be designated by sex (2902.2 exception 5). No Texas statute requires a private owner to make single-user restrooms all-gender; no separate City of Houston ordinance on the subject was found.",
+   "url": "https://www.houstonpermittingcenter.org/media/9556/download",
+   "quote": "Single-user toilet facility and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified as being available for use either by all persons regardless of their sex.",
+   "quote_note": "Copied from the City of Houston's '2015 Houston IBC Amendments / 2021 International Building Code' comparison PDF, whose text layer keeps struck-out words: the words 'facility' and 'either' are deletions in the 2021 text, which reads '...shall be identified as being available for use by all persons regardless of their sex.' Check against the printed 2021 IBC before quoting.",
+   "second_quote": "5. Separate facilities shall not be required to be designated by sex where single-user toilet rooms are provided in accordance with Section 2902.1.2.",
+   "privacy_quote": "Exception: Visual screening shall not be required for single-occupant toilet rooms with a lockable door.",
+   "state_law_note": "Texas Government Code 3002.052(a)(2) says the 2025 law on public buildings does not stop a public body from 'establishing a single-occupancy private space, family restroom, or changing room'; 3002.001(9)(A) defines the term as 'a single toilet restroom with a locking door that is designed or designated as unisex or for use based on sex'.",
+   "state_url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm"
+  },
+  "multi_user_all_gender": {
+   "allowed_by_building_code": true,
+   "summary": "The 2021 IBC as adopted by Houston allows a multi-user room designed for all genders in place of separate men's and women's rooms. Conditions in the code text: fixture count worked out on 100% of the occupant load; each fixture type meets ICC A117.1; every urinal in a stall (or, under 2902.2 exception 6, in a visually separated area); water closet privacy 'in accordance with Section 405.3.4 of the International Plumbing Code'. The general rule (2903.1.4) is that each water closet has its own compartment with walls or partitions and a door 'to ensure privacy'. The code text read does not require full-height partitions, gap-free doors or occupancy indicators by name; locks are mentioned only for single-occupant rooms.",
+   "url": "https://www.houstonpermittingcenter.org/media/9556/download",
+   "quote": "6. Separate facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by both sexes and privacy for water closets are installed in accordance with Section 405.3.4 of the International Plumbing Code. Urinals shall be located in an area visually separated from the remainder of the facility or each urinal that is provided shall be located in a stall.",
+   "fixture_count_quote": "2. Where multiple-user facilities are designed to serve all genders, the minimum fixture count shall be calculated 100 percent, based on total occupant load. In such multiple-user user facilities, each fixture type shall be in accordance with ICC A117.1 and each urinal that is provided shall be located in a stall.",
+   "compartment_quote": "[P] 2903.1.4 Water closet compartment. Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy.",
+   "base_rule_quote": "[P] 2902.2 Separate facilities. Where plumbing fixtures are required, separate facilities shall be provided for each sex.",
+   "limits": [
+    "Not available in buildings owned, operated or controlled by a Texas political subdivision or state agency: Government Code 3002.051 requires every multiple-occupancy restroom there to be designated for one sex (see restricting_law).",
+    "Houston enforces the 2021 Uniform Plumbing Code, not the International Plumbing Code that exception 6 points to. UPC section 422.2 (the plumbing code's own separate-facilities rule) is not amended by Houston and was not read; ask plumbing plan review which privacy standard it applies to an all-gender multi-user room."
+   ],
+   "accessible_stall_note": "Advisory text printed in both TAS and the ADA Standards: 'Full-height partitions and door assemblies can comprise toilet compartments where the minimum required spaces are provided within the compartment.' (Advisory 213.3.1)"
+  },
+  "restricting_law": {
+   "name": "Texas Government Code chapter 3002 (Senate Bill 8, 89th Legislature, 2nd Called Session, 2025; short title 'Texas Women's Privacy Act')",
+   "effective": "2025-12-04",
+   "applies_to": "Buildings owned, operated or controlled by a political subdivision (county, city, special district, school district, open-enrollment charter school, junior college district) or a state agency (including public universities). It places no duty on private building owners.",
+   "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm",
+   "public_url": "https://statutes.capitol.texas.gov/Docs/GV/htm/GV.3002.htm",
+   "quote": "A political subdivision or state agency shall designate each multiple-occupancy private space in a building the political subdivision or state agency owns, operates, or controls for use only by individuals of one sex.",
+   "second_quote": "A political subdivision or state agency shall take every reasonable step to ensure an individual whose sex is opposite to the sex designated for a multiple-occupancy private space under Subsection (a) does not enter the private space.",
+   "definition_quote": "\"Multiple-occupancy private space\" means a facility designed or designated for simultaneous use by more than one individual and in which an individual may be in a state of undress in the presence of another individual, regardless of whether the facility provides curtains or partial walls for privacy. The term includes a restroom, locker room, changing room, or shower room.",
+   "sex_definition_quote": "\"Sex\" means an individual's biological sex, either male or female.",
+   "exceptions_quote": "a child who is: (A) nine years of age or younger entering a multiple-occupancy private space designated for the exclusive use of individuals of the sex opposite to the child's sex; and (B) accompanied by an individual caring for the child",
+   "other_exceptions": "Entry for custodial, maintenance or inspection, medical or emergency, assistance, and law enforcement purposes (3002.053(1)).",
+   "penalty_quote": "(1) $25,000 for the first violation; and (2) $125,000 for the second or a subsequent violation.",
+   "penalty_note": "Civil penalty on the political subdivision or state agency; each day of a continuing violation is a separate violation (3002.101). Complaints go to the attorney general after written notice and three business days to cure (3002.102)."
+  },
+  "city_code": {
+   "found": false,
+   "note": "No City of Houston ordinance on restroom designation was found beyond the adopted building code. The city's Code of Ordinances (Municode) was not read: it blocks automated access."
+  },
+  "confidence": "medium",
+  "confidence_note": "High for the state statute (read in full on the Legislature's server). Medium for the building code: the 2021 IBC sections were read in the City of Houston's own comparison PDF, which carries edit marks, not in a clean ICC copy; IPC 405.3.4 and UPC 422.2 were not read."
+ },
+ "sales_tax": {
+  "combined_rate_pct": 8.25,
+  "parts": {
+   "state_pct": 6.25,
+   "county_pct": 0,
+   "city_pct": 1.0,
+   "district": {
+    "name": "Houston MTA (Metropolitan Transit Authority of Harris County)",
+    "pct": 1.0
+   }
+  },
+  "effective": {
+   "state": null,
+   "city": null,
+   "houston_mta": "1978-10-01"
+  },
+  "effective_note": "The Comptroller's transit page gives Oct. 1, 1978 for the Houston MTA 1%. No effective date for the city's 1% or the state's 6.25% was shown on the pages read. 8.25% is the legal maximum, so no further local tax can apply at a Houston address.",
+  "address_note": "Rate read from the Comptroller's city table for Houston (Harris Co), not from the address lookup tool (a form). Harris County has no county sales tax line in the Houston rate; the Houston MTA row covers the transit tax.",
+  "facts": [
+   {
+    "fact": "City of Houston total rate",
+    "url": "https://comptroller.texas.gov/taxes/sales/city.php",
+    "official": true,
+    "quote": "Houston (Harris Co) | 2101017 | .010000 | .082500",
+    "note": "Columns: Name, Local Code, Local Rate, Total Rate."
+   },
+   {
+    "fact": "Houston MTA",
+    "url": "https://comptroller.texas.gov/taxes/sales/mta.php",
+    "official": true,
+    "quote": "Houston MTA | 3101990 | 1% (.010000) | Oct. 1, 1978",
+    "note": "Columns: transit area, local code, rate, effective date."
+   },
+   {
+    "fact": "State rate and cap",
+    "url": "https://comptroller.texas.gov/taxes/sales/",
+    "official": true,
+    "quote": "Texas imposes a 6.25 percent state sales and use tax on all retail sales, leases and rentals of most goods",
+    "second_quote": "can also impose up to 2 percent sales and use tax for a maximum combined rate of 8.25 percent."
+   }
+  ],
+  "shipped_without_installation": {
+   "taxable": true,
+   "summary": "Partitions are taxable goods. An out-of-state seller with more than $500,000 of Texas revenue in the preceding twelve calendar months must hold a Texas permit and collect state and local use tax. Such a remote seller may collect the actual local rate at the delivery address (2% in Houston, 8.25% total) or elect the single local use tax rate (currently 1.75%, 8.00% total). If the seller does not charge Texas tax, the buyer owes use tax to the Comptroller.",
+   "facts": [
+    {
+     "url": "https://comptroller.texas.gov/taxes/sales/remote-sellers.php",
+     "official": true,
+     "quote": "Remote sellers with total Texas revenue of less than $500,000 in the preceding twelve calendar months",
+     "note": "Start of the safe-harbor sentence; the page tool returned only the first part of the sentence."
+    },
+    {
+     "url": "https://comptroller.texas.gov/taxes/sales/remote-sellers.php",
+     "official": true,
+     "quote": "you are required to obtain a permit and begin collecting and remitting state and local use tax"
+    },
+    {
+     "url": "https://comptroller.texas.gov/taxes/sales/remote-sellers.php",
+     "official": true,
+     "quote": "The current single local use tax rate is 1.75 percent",
+     "note": "Described on the page as 'an alternative local tax rate' used 'instead of collecting and remitting the total local tax in effect at the destination address', 'published in the Texas Register by Jan. 1 of each year'. Not available to marketplace providers."
+    },
+    {
+     "url": "https://comptroller.texas.gov/taxes/sales/use-tax.php",
+     "official": true,
+     "quote": "A Texas purchaser owes state and local use tax if they buy taxable goods and services from a seller who does not charge Texas sales tax."
+    },
+    {
+     "url": "https://comptroller.texas.gov/taxes/sales/use-tax.php",
+     "official": true,
+     "quote": "A nonpermitted Texas purchaser that does not have a Texas Sales and Use Tax Permit must report and pay any use tax owed to the Comptroller's office on Form 01-156, Texas Use Tax Return"
+    },
+    {
+     "url": "https://tcss.legis.texas.gov/resources/TX/htm/TX.151.htm",
+     "official": true,
+     "quote": "\"sales price\" or \"receipts\" means the total amount for which a taxable item is sold, leased, or rented, valued in money, without a deduction for the cost of: ... (3) the transportation or installation of tangible personal property",
+     "note": "Tax Code 151.007(a): freight charged by the seller is part of the taxable price."
+    }
+   ]
+  },
+  "installation_labor_commercial_remodel": {
+   "taxable": true,
+   "summary": "In Texas, labor to repair, remodel or restore nonresidential real property is itself a taxable service. Replacing or upgrading partitions in an existing commercial restroom is taxed on the whole charge, materials and labor, even when labor is billed separately. Labor is not taxed on new construction (new buildings, completing unfinished structures, initial finish-out) or on residential property.",
+   "facts": [
+    {
+     "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+     "official": true,
+     "quote": "the total amount charged for remodeling, repairing, or restoring nonresidential real property is taxable.",
+     "note": "Texas Comptroller Publication 94-116, 'Real Property Repair and Remodeling' (revision date shown: 03/2007; still published)."
+    },
+    {
+     "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+     "official": true,
+     "quote": "When you do any of the following types of jobs on nonresidential real property, the job is taxable: rebuilding real property; upgrading any part of an existing structure; replacing any part of an existing structure, except for minor replacement of parts during maintenance of the real property"
+    },
+    {
+     "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+     "official": true,
+     "quote": "you should collect state sales tax plus any local tax on your total charge for the job."
+    },
+    {
+     "url": "https://tcss.legis.texas.gov/resources/TX/htm/TX.151.htm",
+     "official": true,
+     "quote": "\"Real property repair and remodeling\" means the repair, restoration, remodeling, or modification of an improvement to real property other than: (1) a structure or separate part of a structure used as a residence",
+     "note": "Tax Code 151.0047(a); 151.0101(a)(13) lists 'real property repair and remodeling' among taxable services."
+    }
+   ]
+  },
+  "furnish_and_install_contract": {
+   "summary": "Depends on the job. Existing nonresidential building (remodel or replacement): the contractor collects tax from the customer on the total contract price and may buy the partitions tax-free with a resale certificate. New construction: under a lump-sum contract the contractor pays tax on the materials when buying them and charges the customer no tax; under a separated contract the contractor buys materials on a resale certificate and collects tax on the materials charge only; construction labor is not taxed. A single contract that mixes new square footage and remodeling is presumed fully taxable when the remodeling part is more than 5% of the price.",
+   "facts": [
+    {
+     "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+     "official": true,
+     "quote": "Under a lump-sum contract, you pay tax on all your supplies, materials, equipment, and taxable services when you buy them. You don't charge your customer tax."
+    },
+    {
+     "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+     "official": true,
+     "quote": "Under a separated contract, you give your suppliers resale certificates instead of paying tax on materials you incorporate into the customer's real property"
+    },
+    {
+     "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+     "official": true,
+     "quote": "The construction labor is not taxable."
+    },
+    {
+     "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+     "official": true,
+     "quote": "If you have a contract to add new square footage and to remodel existing footage in nonresidential realty for a single charge and the portion relating to the remodeling is more than five percent of the total charge, the total charge is presumed to be taxable."
+    },
+    {
+     "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+     "official": true,
+     "quote": "You may give your suppliers resale certificates instead of paying tax on materials that will be incorporated into the customer's real property.",
+     "note": "From the nonresidential repair and remodeling part: the remodeler buys materials for resale and taxes the whole job."
+    },
+    {
+     "url": "https://tcss.legis.texas.gov/resources/TX/htm/TX.151.htm",
+     "official": true,
+     "quote": "A contractor is the consumer of tangible personal property furnished by him and incorporated into the property of his customer if the contract between the contractor and his customer contains a lump-sum price covering both the performance of the service and the furnishing of the necessary incidental material.",
+     "note": "Tax Code 151.056(a); (b) covers separated contracts."
+    }
+   ]
+  },
+  "exempt_buyers_note": "Not researched: exemption certificates for schools, governments and nonprofits.",
+  "confidence": "high",
+  "confidence_note": "Rates and rules read on comptroller.texas.gov and in the Tax Code. The Comptroller's pages block curl, so they were read through the page-fetch tool, which returns sentences in pieces of up to about 120 characters: longer quotes here are those pieces joined in order, and the remote-seller threshold sentence is partial. Recheck wording in a browser before publishing. Publication 94-116 carries a 2007 revision date."
+ },
+ "sources_read": [
+  {
+   "url": "https://www.bls.gov/regions/southwest/news-release/2026/occupationalemploymentandwages_houston_20260813.htm",
+   "official": true,
+   "note": "BLS Houston area release, May 2025 OEWS: carpenters row, metro name."
+  },
+  {
+   "url": "https://www.bls.gov/news.release/archives/ocwage_05152026.pdf",
+   "official": true,
+   "note": "BLS national OEWS release, May 2025, Table 1: carpenters mean and median."
+  },
+  {
+   "url": "https://www.bls.gov/oes/2025/may/oessrcma.htm",
+   "official": true,
+   "note": "BLS list of metro areas: exact name and area code 0026420."
+  },
+  {
+   "url": "https://www.bls.gov/ooh/Construction-and-Extraction/Carpenters.htm",
+   "official": true,
+   "note": "Occupational Outlook Handbook: carpenters median $29.12/hour, May 2025 (cross-check)."
+  },
+  {
+   "url": "https://www.onetonline.org/link/localwages/47-2031.00?zip=77002",
+   "official": true,
+   "note": "O*NET OnLine (U.S. DOL) local wages from BLS 2025 data: Houston metro percentiles including median."
+  },
+  {
+   "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.2258.htm",
+   "official": true,
+   "note": "Texas Government Code ch. 2258, full text, from the Legislature's server (the public page https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2258.htm is a JavaScript app that loads this file)."
+  },
+  {
+   "url": "https://sam.gov/api/prod/wdol/v1/wd/TX20260253/1",
+   "official": true,
+   "note": "sam.gov record behind https://sam.gov/wage-determination/TX20260253/1: Building, Harris County, Mod 1, 2026-05-18, active."
+  },
+  {
+   "url": "https://oce.harriscountytx.gov/Portals/43/Documents/Publications/TX20260253_Mod%201_Building.pdf",
+   "official": true,
+   "note": "Harris County Engineer's posted copy of TX20260253 Mod 1 with the county minimum wage notice."
+  },
+  {
+   "url": "https://houstontx.gov/sites/default/files/migrated/obo/contractcomplianceforms/2026-Wage-Scale-for-Building-Construction.pdf",
+   "official": true,
+   "note": "City of Houston Document 00821, 2026 building wage scale (edition 02-01-2026)."
+  },
+  {
+   "url": "https://www.houstontx.gov/obo/contract-compliance",
+   "official": true,
+   "note": "City of Houston Office of Business Opportunity: index of wage scales."
+  },
+  {
+   "url": "https://www.dol.gov/agencies/whd/government-contracts/construction",
+   "official": true,
+   "note": "U.S. DOL: Davis-Bacon $2,000 threshold."
+  },
+  {
+   "url": "https://www.tdlr.texas.gov/ab/2012TAS/2012tascomplete.pdf",
+   "official": true,
+   "note": "2012 Texas Accessibility Standards, complete PDF (215 pages), compared by text."
+  },
+  {
+   "url": "https://www.ada.gov/assets/pdfs/2010-design-standards.pdf",
+   "official": true,
+   "note": "2010 ADA Standards for Accessible Design, U.S. Department of Justice PDF, compared by text."
+  },
+  {
+   "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm",
+   "official": true,
+   "note": "Texas Government Code ch. 3002 (SB 8, effective 2025-12-04), full text."
+  },
+  {
+   "url": "https://www.houstonpermittingcenter.org/media/9556/download",
+   "official": true,
+   "note": "City of Houston comparison PDF of the 2021 IBC against Houston amendments: sections 1210.3, 2902.1.1, 2902.1.2, 2902.2, 2903.1.4. Carries edit marks."
+  },
+  {
+   "url": "https://www.houstonpermittingcenter.org/media/9031/download",
+   "official": true,
+   "note": "Houston Amendments to the 2021 IBC: checked that 2902.1.2, 2902.2 and 2903.1.4 are not amended (only Table 2902.1 and new 2902.8)."
+  },
+  {
+   "url": "https://www.houstonpermittingcenter.org/media/9071/download",
+   "official": true,
+   "note": "Houston Amendments to the 2021 UPC: 422.1 amended, 422.2 not amended."
+  },
+  {
+   "url": "https://comptroller.texas.gov/taxes/sales/city.php",
+   "official": true,
+   "note": "Comptroller city rate table: Houston 1% local, 8.25% total."
+  },
+  {
+   "url": "https://comptroller.texas.gov/taxes/sales/mta.php",
+   "official": true,
+   "note": "Comptroller transit table: Houston MTA 1%, effective Oct. 1, 1978."
+  },
+  {
+   "url": "https://comptroller.texas.gov/taxes/sales/",
+   "official": true,
+   "note": "State rate 6.25%, local cap 2%."
+  },
+  {
+   "url": "https://comptroller.texas.gov/taxes/sales/remote-sellers.php",
+   "official": true,
+   "note": "Remote sellers: $500,000 safe harbor, single local use tax rate 1.75%."
+  },
+  {
+   "url": "https://comptroller.texas.gov/taxes/sales/use-tax.php",
+   "official": true,
+   "note": "Use tax owed by the purchaser; Form 01-156."
+  },
+  {
+   "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+   "official": true,
+   "note": "Publication 94-116, Real Property Repair and Remodeling."
+  },
+  {
+   "url": "https://tcss.legis.texas.gov/resources/TX/htm/TX.151.htm",
+   "official": true,
+   "note": "Texas Tax Code ch. 151: sections 151.0047, 151.007, 151.0101, 151.056."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://data.bls.gov/oes/#/area/0026420/2025",
+   "note": "JavaScript table; bls.gov OEWS pages and data files return 403 to scripts and the BLS public API had reached its daily limit."
+  },
+  {
+   "url": "https://comptroller.texas.gov/data/edi/sales-tax/taxrates264.txt",
+   "note": "Quarterly rate file: 403 to curl, 404 to the fetch tool (file name guessed)."
+  },
+  {
+   "url": "https://www.tdlr.texas.gov/ab/abtechmemos.htm",
+   "note": "404."
+  },
+  {
+   "url": "https://codes.iccsafe.org",
+   "note": "Not retried today; blocked in the 2026-11-24 fixtures research."
+  }
+ ],
+ "to_confirm": [
+  "Labor: open https://data.bls.gov/oes/#/area/0026420/2025 in a browser and confirm the Houston carpenters row (mean $25.48, median $23.88). The mean is from the BLS area release; the median from O*NET OnLine.",
+  "Public jobs: Houston ISD's own adopted prevailing wage schedule (carpenter rate, date) was not found. Ask HISD Construction Services / Procurement; other districts (Cypress-Fairbanks, Katy, Aldine, Spring Branch) each adopt their own.",
+  "Public jobs: which classification the City of Houston Office of Business Opportunity (obocontractcompliance@houstontx.gov) applies to toilet partition installation: Carpenter ($33.27 + $9.73) is the fit by its job description, but the wage scale does not name partitions of this kind.",
+  "Public jobs: the City's 2026 wage scale reproduces Modification 0 (01/02/2026) of TX20260253; sam.gov shows Modification 1 (05/18/2026). The carpenter rate is the same in both. Recheck sam.gov in January 2027 for the TX2027 decision.",
+  "Access: TDLR technical memoranda were not read (page 404). Ask TDLR Architectural Barriers (techinfo@tdlr.texas.gov, 512-539-5669) whether any memo interprets TAS 604.8 or 604.9. Phone number and email not verified today.",
+  "Restrooms: read the clean 2021 IBC text of 2902.1.2, 2902.2 and 2903.1.4 on codes.iccsafe.org in a browser (the city's comparison PDF keeps struck-out words such as 'either').",
+  "Restrooms: 2021 UPC section 422.2 (Houston's plumbing code, not amended) and IPC section 405.3.4 (cited by IBC 2902.2 exception 6 but not a code Houston adopts) were not read. Ask Houston Permitting Center plumbing plan review what it requires of stalls in a multi-user all-gender room (partition height, door gaps, locks).",
+  "Restrooms: Houston Code of Ordinances not read (Municode blocks automated access); a search found no city ordinance on restroom designation.",
+  "Sales tax: confirm 8.25% for the delivery address with the Comptroller's Sales Tax Rate Locator; effective dates of the state 6.25% and the city 1% were not on the pages read.",
+  "Sales tax: confirm in a browser the calendar year the 1.75% single local use tax rate applies to (the page says 'current'; the rate is republished each January), and read the full $500,000 safe-harbor sentence.",
+  "Sales tax: Publication 94-116 is dated 03/2007. Confirm against Comptroller Rule 3.357 (34 Texas Administrative Code 3.357, nonresidential real property repair, remodeling and restoration), which was not read, especially how installing partitions in a tenant's first build-out ('initial finish out') is treated versus a replacement.",
+  "Sales tax: how Next Partitions itself should charge Texas tax (whether it is over the $500,000 threshold, and whether it elects the single local rate) is a question for Abe's accountant."
+ ]
+}

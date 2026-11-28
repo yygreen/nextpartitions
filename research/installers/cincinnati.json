@@ -1,0 +1,401 @@
+{
+ "area": "cincinnati",
+ "found_count": 12,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/cincinnati.json: worked; only 'Cincinnati Partitions' was relevant, the rest were bath remodelers, plumbers and stores",
+  "Bobrick find-a-rep: blocked in practice (results load by dropdown/JS, nothing in the static page)",
+  "Scranton Products find-a-rep (/find-a-rep/): 404",
+  "Hadrian sales reps (/sales-representatives): 404",
+  "General Partitions find-a-rep: 404",
+  "ASI, Bradley, Metpar, Ampco/Ammco locators: not tried (cap and time)",
+  "The Blue Book (thebluebook.com): blocked (403 on profile and regional category pages); only search snippets used",
+  "BuildingConnected / Procore public profiles: not tried",
+  "WebSearch: worked, 8 of 8 calls used (cap reached); results dominated by One Point Partitions pages and plumbers",
+  "BBB category pages (bbb.org partition, bathroom-accessories): worked",
+  "Yelp: blocked (403); search snippet only",
+  "Company sites: worked for performancecontracting.com, ohiotrimanddoor.com, cih-inc.com, inter-co.com, kelleybros.com, clevelandconstruction.com, udhgroup.com, hamiltonparker.com; onepointpartitions.com 403; manningmaterialsinc.com 500; allsourcecs.com did not resolve (outside network allowlist or nonexistent)",
+  "Ruled out after reading: Walsh Door (no location, no partitions named), Unified Specialty Services (NJ, no locations shown), Martin Bros (California), GCS (Mobile AL), CSI Installers (Northeast), Hamilton Parker (no Division 10 partitions shown)"
+ ],
+ "candidates": [
+  {
+   "name": "Performance Contracting (PCI) Cincinnati",
+   "base_city": "Cincinnati",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "website": "https://www.performancecontracting.com/branch/cincinnati-commercial/",
+   "phone": "513-725-0525",
+   "contact_page": "https://www.performancecontracting.com/contact-us/",
+   "evidence_urls": [
+    "https://www.performancecontracting.com/branch/cincinnati-commercial/"
+   ],
+   "partition_evidence": "Branch page lists 'Division 10 Specialties' under Miscellaneous Carpentry; toilet partitions not named.",
+   "red_flags": [
+    "Large interiors contractor (drywall/ceilings); unlikely to take small partition-only jobs"
+   ],
+   "reason": "Cincinnati commercial branch self-performs Division 10 specialties, but toilet partitions aren't specifically mentioned.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Performance Contracting (PCI) Cincinnati",
+    "area": "cincinnati",
+    "status": "found_active",
+    "registry": "City of Cincinnati Registered Contractor Lookup (Chapter 1106, Dept. of Buildings & Inspections, CAGIS OPAL)",
+    "license_number": "CBRC008685",
+    "license_type": "City contractor registration, type General",
+    "source_url": "https://cagis.hamilton-co.org/opal/registeredContractors.aspx?entcode=cinc",
+    "note": "Listed as PERFORMANCE CONTRACTING INC, phone 513-725-0525, ZIP 45223, type General. The city's lookup table lists registered contractors but shows no expiration date, so 'active' means currently listed. Confirm the expiration date with the city at 513-352-3271 if needed."
+   },
+   "score": 65
+  },
+  {
+   "name": "Cleveland Construction (Interior Trades)",
+   "base_city": "Mason",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "website": "https://clevelandconstruction.com/",
+   "phone": "513-398-8900",
+   "contact_page": "https://clevelandconstruction.com/general-contracting/about-us/contact-us/",
+   "evidence_urls": [
+    "https://clevelandconstruction.com/",
+    "https://clevelandconstruction.com/interior-trades/"
+   ],
+   "partition_evidence": "Interior trades page says it self-performs 'Divisions 5-10 services' and installs Division 10 work; toilet partitions not named.",
+   "red_flags": [
+    "Large general/interiors contractor; partition-only jobs unlikely"
+   ],
+   "reason": "Self-performing interior trades contractor near Cincinnati that lists Division 10 work, but no toilet partition installation shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Cleveland Construction (Interior Trades)",
+    "area": "cincinnati",
+    "status": "found_active",
+    "registry": "City of Cincinnati Registered Contractor Lookup (Chapter 1106, Dept. of Buildings & Inspections, CAGIS OPAL)",
+    "license_number": "CBRC002962",
+    "license_type": "City contractor registration, type General",
+    "source_url": "https://cagis.hamilton-co.org/opal/registeredContractors.aspx?entcode=cinc",
+    "note": "Listed as CLEVELAND CONSTRUCTION INC, phone 440-255-8000, ZIP 44060 (Mentor), type General. This is the same company as the Cleveland-area entry, which also holds Cleveland registration GEN14-100086, expiring 12/31/2026. The lookup table shows no expiration date."
+   },
+   "score": 65
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "West Chester",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://onepointpartitions.com/service-areas/ohio-bathroom-partitions/",
+    "https://fxstaging.onepointpartitions.com/?p=3086",
+    "https://onepointpartitions.com/?p=13"
+   ],
+   "partition_evidence": "Search results show a 'Bathroom Partition Installation' page and Cincinnati page (West Chester delivery terminal, 4-6 day delivery); the Ohio page reportedly says 'no professional crew needed'. Site returned 403 so pages could not be read directly.",
+   "red_flags": [
+    "Online partition seller: a direct competitor and buy-around risk",
+    "Site blocked automated access (403); facts come from search snippets only",
+    "West Chester address may be only a delivery terminal"
+   ],
+   "reason": "Sells partitions to Cincinnati-area businesses and appears to offer installation, but it is a competing reseller and installation could not be confirmed on its own pages.",
+   "added_by_checker": false,
+   "license": {
+    "name": "One Point Partitions",
+    "area": "cincinnati",
+    "status": "not_found",
+    "registry": "City of Cincinnati Registered Contractor Lookup (Chapter 1106, Dept. of Buildings & Inspections, CAGIS OPAL)",
+    "source_url": "https://cagis.hamilton-co.org/opal/registeredContractors.aspx?entcode=cinc",
+    "note": "'Contains' searches for 'One Point', 'OnePoint', 'Point Partition' and 'Partition' returned no rows. The business is based in West Chester, outside city limits. Cincinnati registration is needed only for work inside city limits."
+   },
+   "score": 50
+  },
+  {
+   "name": "CIH (Independence, KY branch)",
+   "base_city": "Independence",
+   "state": "KY",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Schricker",
+    "Modernfold",
+    "Renlita",
+    "Skyfold"
+   ],
+   "within_area": "yes",
+   "website": "https://cih-inc.com/",
+   "phone": "513-538-2705",
+   "contact_page": "https://cih-inc.com/contact-us/",
+   "evidence_urls": [
+    "https://cih-inc.com/",
+    "https://cih-inc.com/contact-us/",
+    "https://cih-inc.com/toilet-partitions/"
+   ],
+   "partition_evidence": "Lists toilet partitions and accessories (Schricker brand) and a separate 'Service and Installation' offering; doesn't say installation covers partitions.",
+   "red_flags": [
+    "Supplies partitions itself (buy-around risk)",
+    "Primarily a door/hardware/access-control supplier"
+   ],
+   "reason": "Commercial Division 10 supplier with an Independence, KY branch that lists toilet partitions and installation services, but partition installation isn't explicitly shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "CIH (Independence, KY branch)",
+    "area": "cincinnati",
+    "status": "not_found",
+    "registry": "City of Cincinnati Registered Contractors lookup (Hamilton County CAGIS ezTrak), Municipal Code Chapter 1106",
+    "source_url": "https://cagis.hamilton-co.org/opal/registeredContractors.aspx?entcode=cinc",
+    "license_type": "Cincinnati contractor registration (Chapter 1106), any trade",
+    "note": "Checked 2026-11-19. Name searches ('Contains', all contractor types) for 'CIH', 'C.I.H', 'C I H', 'Central Indiana Hardware' and 'Hardware' each returned '0 Contractors Found!'. A control search for 'Indiana' returned 4 rows and 'Construction' returned 970, so the search works. The company may be registered under another legal name; nothing found under these names. Cincinnati requires registration only for work inside city limits, and the city won't issue building permits until every contractor on the job is registered (https://www.cincinnati-oh.gov/buildings/building-permit-forms-applications/contractor-registration/). The branch is in Independence, KY, and Kentucky has no state general or specialty contractor license that covers partition installation (research/state-licensing/states.json, medium confidence, law_verified false). Nobody checked whether Independence or Kenton County has a local rule. Company site (https://cih-inc.com/): CIH = Central Indiana Hardware. It sells doors, frames, hardware, toilet partitions and accessories, and offers 'Service and Installation'. The site doesn't confirm that it installs partitions. Independence is listed among its locations; the site shows no license numbers."
+   },
+   "score": 50
+  },
+  {
+   "name": "Kelley Bros (Cincinnati branch)",
+   "base_city": "Mason",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "yes",
+   "website": "https://www.kelleybros.com/",
+   "phone": "(513) 770-0120",
+   "contact_page": "https://www.kelleybros.com/contact-us/",
+   "evidence_urls": [
+    "https://www.kelleybros.com/",
+    "https://www.kelleybros.com/locations/"
+   ],
+   "partition_evidence": "Lists a 'Division 10' product category and washroom accessories; toilet partitions not mentioned.",
+   "red_flags": [
+    "Mainly a door, frame and hardware distributor",
+    "No toilet partition evidence"
+   ],
+   "reason": "Commercial Division 10 supplier with a Mason (Cincinnati) branch, but no toilet partition supply or installation shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Kelley Bros (Cincinnati branch)",
+    "area": "cincinnati",
+    "status": "not_found",
+    "registry": "City of Cincinnati Registered Contractor Lookup (Chapter 1106, Dept. of Buildings & Inspections, CAGIS OPAL)",
+    "source_url": "https://cagis.hamilton-co.org/opal/registeredContractors.aspx?entcode=cinc",
+    "note": "'Kelley Bros' returned no rows. 'Kelley' returned only KELLEY BROTHERS ROOFING, INC (CBRC001298, ZIP 45014) and Kelley Construction Inc / Joe Kelley Construction (CBRC001090). Both appear to be different companies from Kelley Bros (kelleybros.com, doors and hardware), but this is unconfirmed. Treat Kelley Bros as not found unless the company confirms one of these numbers is theirs."
+   },
+   "score": 50
+  },
+  {
+   "name": "Inter-Co Division 10 (Columbus office)",
+   "base_city": "Columbus",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick (image alt text only)",
+    "Modernfold (image filename only)"
+   ],
+   "within_area": "regional",
+   "website": "https://inter-co.com/",
+   "phone": "(614) 875-2959",
+   "email": "ohsales@inter-co.com",
+   "contact_page": "https://inter-co.com/contact/",
+   "evidence_urls": [
+    "https://inter-co.com/"
+   ],
+   "partition_evidence": "Homepage lists toilet partitions ('Toilet partitions for any budget and need') and says they 'supply and install hundreds of different products'; no partition project photos seen.",
+   "red_flags": [
+    "Distributor that sells partitions itself (buy-around risk)",
+    "Site does not name Cincinnati or a service area; Columbus is about 100 miles away"
+   ],
+   "reason": "Commercial Division 10 distributor/installer with a Columbus office that handles toilet partitions, but the site doesn't say it serves Cincinnati and installation of partitions specifically isn't shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Inter-Co Division 10 (Columbus office)",
+    "area": "cincinnati",
+    "status": "not_found",
+    "registry": "City of Cincinnati Registered Contractor Lookup (Chapter 1106, Dept. of Buildings & Inspections, CAGIS OPAL)",
+    "source_url": "https://cagis.hamilton-co.org/opal/registeredContractors.aspx?entcode=cinc",
+    "note": "'Contains' searches for 'Inter-Co', 'Inter Co', 'Interco' and 'Inter-' returned no rows. No current Cincinnati registration under this name. Confirm with Contractor Registration at 513-352-3271 (phone number from the city FAQ)."
+   },
+   "score": 43
+  },
+  {
+   "name": "AllSource Construction Specialties, LLC",
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "regional",
+   "phone": "(317) 351-9390",
+   "review_source": "BBB",
+   "evidence_urls": [
+    "https://www.bbb.org/us/oh/dayton/category/partition"
+   ],
+   "partition_evidence": "BBB lists it under Partitions and Bathroom Accessories (A+, accredited); own website could not be reached.",
+   "red_flags": [
+    "Website unreachable from this session",
+    "No statement that it serves Cincinnati or Ohio, though it appears in BBB's Dayton partitions listing"
+   ],
+   "reason": "Indianapolis specialties firm in BBB partitions/bathroom accessories categories with an A+ rating, but partition installation and Cincinnati coverage are unconfirmed.",
+   "added_by_checker": false,
+   "license": {
+    "name": "AllSource Construction Specialties, LLC",
+    "area": "cincinnati",
+    "status": "not_found",
+    "registry": "City of Cincinnati registered contractor lookup (ezTrak, hosted by CAGIS / Hamilton County), linked from the Cincinnati Department of Buildings and Inspections contractor registration page",
+    "source_url": "https://cagis.hamilton-co.org/opal/registeredContractors.aspx?entcode=cinc",
+    "license_type": "Cincinnati contractor registration (Chapter 1106, renewed annually)",
+    "note": "Checked 2026-11-19. Searched by name with 'Contains' and all contractor types for 'AllSource', 'All Source', 'ALL-SOURCE', 'Allsource Construction' and 'Construction Specialties': 0 contractors found each time. A broad search for 'Source' returned 8 rows (Core Resources, Infrasource Construction, Midwest Construction Resources, Pride Resources) and none was AllSource. I tested the search with a known registrant (Messer Construction Co, CBRC000140), so the lookup works. Cincinnati requires a current city contractor registration for commercial work inside city limits (https://www.cincinnati-oh.gov/buildings/building-permit-forms-applications/contractor-registration/). The company is based in Indianapolis, so it would need to register before doing work in Cincinnati. It may be registered under a different trade or DBA name; the city's Contractor Registration Section (513-352-3271, option 1) can confirm. Ohio licenses only five trades at state level (electrical, HVAC, hydronics, plumbing, refrigeration), and partition installation isn't one of them. Indiana has no state general contractor license. I did not check the Indiana Secretary of State business entity record."
+   },
+   "score": 23
+  },
+  {
+   "name": "Irwin Enterprises, Inc.",
+   "base_city": "Centerville",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "regional",
+   "phone": "(937) 433-2360",
+   "review_source": "BBB",
+   "evidence_urls": [
+    "https://www.bbb.org/us/oh/dayton/category/partition"
+   ],
+   "partition_evidence": "Listed in BBB's 'Partitions' category (Dayton/Centerville listings); no website or services found.",
+   "red_flags": [
+    "No website found",
+    "BBB not accredited, no rating shown",
+    "Partition category may mean demountable/office partitions"
+   ],
+   "reason": "Only a BBB partitions-category listing about 45 miles from Cincinnati; no evidence of toilet partition installation.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Irwin Enterprises, Inc.",
+    "area": "cincinnati",
+    "status": "not_found",
+    "registry": "City of Cincinnati Registered Contractor Lookup (Chapter 1106, Dept. of Buildings & Inspections, CAGIS OPAL)",
+    "source_url": "https://cagis.hamilton-co.org/opal/registeredContractors.aspx?entcode=cinc",
+    "note": "'Contains' searches for 'Irwin' and 'Irwin E' returned no rows. The business is based in Centerville, outside Cincinnati. Registration is needed only for work inside city limits."
+   },
+   "score": 3
+  },
+  {
+   "name": "Ohio Trim & Door",
+   "base_city": "Columbus",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "brands": [
+    "Schlage",
+    "Jeld-Wen",
+    "Masonite",
+    "Von Duprin",
+    "Therma-Tru",
+    "Steelcraft"
+   ],
+   "within_area": "regional",
+   "website": "https://ohiotrimanddoor.com/",
+   "phone": "(614) 208-9710",
+   "evidence_urls": [
+    "https://ohiotrimanddoor.com/"
+   ],
+   "partition_evidence": "None: doors, hardware and trim only; serves Cincinnati per site.",
+   "red_flags": [
+    "Doors and millwork company, no partitions"
+   ],
+   "reason": "Carpentry and door supplier that lists Cincinnati in its service area but shows no toilet partition work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 28
+  },
+  {
+   "name": "Lewis Property Contracting LLC",
+   "base_city": "Marysville",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "no",
+   "brands": [],
+   "within_area": "no",
+   "evidence_urls": [
+    "https://angi.com/companylist/us/oh/marysville/lewis-property-contracting-llc-reviews-1.htm",
+    "https://www.thebluebook.com/iProView/1648156/lewis-property-contracting-llc/subcontractors/"
+   ],
+   "partition_evidence": "Angi lists it as a basement contractor in Marysville; a Blue Book page shows demountable-partition CSI codes, but not clearly for this firm.",
+   "red_flags": [
+    "Residential basement contractor",
+    "Marysville is about 110 miles away with no stated Cincinnati coverage"
+   ],
+   "reason": "Residential contractor near Columbus with no toilet partition evidence.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  },
+  {
+   "name": "Space Management Installations, Inc.",
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "phone": "(317) 752-4846",
+   "review_source": "BBB",
+   "evidence_urls": [],
+   "partition_evidence": "Only seen in a search summary of BBB partition listings (A+); likely tied to operable walls (Space Management is CIH's Modernfold/Skyfold dealer brand).",
+   "red_flags": [
+    "No website reached",
+    "Likely operable-wall installer, not toilet partitions",
+    "About 100 miles away with no stated Cincinnati coverage"
+   ],
+   "reason": "No evidence of toilet partition installation or of serving Cincinnati.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  },
+  {
+   "name": "Cincinnati Partitions",
+   "base_city": "Cincinnati",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "evidence_urls": [],
+   "partition_evidence": "No business by this name found; search returns only One Point Partitions' 'Cincinnati Bathroom Partitions' page.",
+   "red_flags": [
+    "Probably not a real business; likely a page title from One Point Partitions"
+   ],
+   "reason": "No company by this name could be found; appears to be One Point Partitions' Cincinnati landing page.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

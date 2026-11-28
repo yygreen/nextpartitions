@@ -1,0 +1,343 @@
+{
+ "area": "huntsville",
+ "found_count": 8,
+ "sources_tried": [
+  "Seed file huntsville.json: read; maps results were residential remodelers, plumbers and stores, web results were unresolvable google goto links; no plausible partition installers",
+  "Bobrick find-a-rep: page loaded but rep list is JS dropdown, no results readable",
+  "Scranton Products where-to-buy: only regional rep Southern States Architectural Sales (AL/GA/FL/MS/NC/SC/TN, 678.425.8796), a manufacturer rep, not an installer",
+  "Hadrian find-a-rep: 404",
+  "ASI, Bradley, Metpar, General Partitions, Ampco locators: not tried (search cap)",
+  "The Blue Book: search page 403 blocked; site-restricted web search found only Huntsville retail outlets (Home Outlet, Surplus Warehouse) and RSA",
+  "Procore network: worked (AL toilet-bath-accessories, AL partitions, Huntsville partitions lists; profiles readable)",
+  "BuildingConnected: not tried",
+  "BBB category pages (AL Tanner/Eva/Huntsville partition, Huntsville bathroom accessories): worked but returned mostly irrelevant or online distributors (Fast Partitions, One Point Partitions: online sellers, no install shown; Southeast Partitions and JM Specialties: operable walls only)",
+  "WebSearch: 8 of 8 used; results dominated by RSA, Newton Distributing (MA, national) and Partition Pros (network-only, no base) pages; no Huntsville-based partition specialty contractor found",
+  "Yelp: not tried (search cap)"
+ ],
+ "candidates": [
+  {
+   "name": "Restroom Stalls and All LLC (RSA)",
+   "base_city": "Gainesville",
+   "state": "GA",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick"
+   ],
+   "within_area": "no",
+   "phone": "1-844-817-8255",
+   "email": "cs@restroomstallsandall.com",
+   "contact_page": "https://restroomstallsandall.com/pages/contact-us",
+   "website": "https://restroomstallsandall.com/",
+   "evidence_urls": [
+    "https://restroomstallsandall.com/",
+    "https://restroomstallsandall.com/pages/contact-us"
+   ],
+   "partition_evidence": "Its site offers sales, distribution and installation of toilet partitions, done by its own W2 crews in GA, FL, AL, TN, SC and NC. It lists commercial projects including a stadium, hospitals and universities.",
+   "red_flags": [
+    "Sells partitions itself, so it could buy around us",
+    "About 190 miles from Huntsville, beyond the 120-mile regional limit"
+   ],
+   "reason": "A proven commercial partition installer that says it installs in Alabama with its own crews. It is based about 190 miles away and is also a partition seller, so it is a fallback rather than a strong local pick.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Restroom Stalls and All LLC (RSA)",
+    "area": "huntsville",
+    "status": "not_found",
+    "registry": "Alabama Licensing Board for General Contractors, full license roster",
+    "source_url": "https://licensesearch.alabama.gov/genconbd/FullRosterReport",
+    "note": "Checked 2026-11-20. The Alabama GC Board roster CSV has no entry with 'Restroom', 'Stalls' or 'RSA' in the name. None of the Gainesville, GA licensees on the roster is this company. Alabama needs this license only for jobs of $100,000 or more (genconbd.alabama.gov, per repo state research), so most partition installs don't need it. Huntsville isn't one of the 99 areas in the repo's local-rules research, so no city rule was checked. The company's home-state Georgia board lookup (verify.sos.ga.gov) returned HTTP 403."
+   },
+   "score": 60
+  },
+  {
+   "name": "Accessories Unlimited, Inc.",
+   "base_city": "Stone Mountain",
+   "state": "GA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "no",
+   "phone": "404-298-1779",
+   "email": "sales@accunl.com",
+   "contact_page": "https://accessoriesunlimited.net/contact-us/",
+   "website": "https://accessoriesunlimited.net/",
+   "evidence_urls": [
+    "https://accessoriesunlimited.net/",
+    "https://accessoriesunlimited.net/contact-us/"
+   ],
+   "partition_evidence": "It supplies Division 10 products, including toilet partitions, and offers 'Full Service Installation' with a one-year installation warranty. The site doesn't say partitions are among the products it installs.",
+   "red_flags": [
+    "Supplies partitions itself, so it could buy around us",
+    "About 200 miles from Huntsville"
+   ],
+   "reason": "A Division 10 supplier and installer that lists Alabama in its service area. Partition installation isn't stated outright, and it is based far outside the area.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Accessories Unlimited, Inc.",
+    "area": "huntsville",
+    "status": "found_active",
+    "registry": "Alabama Licensing Board for General Contractors, full license roster",
+    "license_number": "S-54098",
+    "license_type": "Subcontractor: Bathroom Accessories, Cabinet Installation, Wall Protection Systems",
+    "source_url": "https://licensesearch.alabama.gov/genconbd/FullRosterReport",
+    "note": "Checked 2026-11-20. The roster lists ACCESSORIES UNLIMITED INC, Stone Mountain, GA, company phone (404) 298-1779, license S-54098, specialty 'SUBCONTRACTOR: BATHROOM ACCESSORIES, CABINET INSTALLATION, WALL PROTECTION SYSTEMS'. It expires 12/31/2026, so it's current on the check date. Toilet partitions aren't named in the specialty. Alabama needs this license only for jobs of $100,000 or more."
+   },
+   "score": 55
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "Gallatin",
+   "state": "TN",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "regional",
+   "review_source": "BBB A+ (accredited)",
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://www.bbb.org/us/al/decatur/category/partition",
+    "https://www.bbb.org/us/al/gurley/category/partition"
+   ],
+   "partition_evidence": "BBB lists it under Partitions and Bathroom Accessories (A+, accredited). In search summaries its pages say it designs and installs bathroom partitions across Alabama, with a delivery terminal in Decatur, AL. Its site returned 403, so I couldn't read it directly.",
+   "red_flags": [
+    "Also a partition distributor, so it could buy around us",
+    "Gallatin is about 125 miles away",
+    "Couldn't read its site (403)"
+   ],
+   "reason": "A partition installer and distributor that claims Alabama coverage, including a Decatur terminal. Its site couldn't be loaded to confirm.",
+   "added_by_checker": true,
+   "license": {
+    "name": "One Point Partitions",
+    "area": "huntsville",
+    "status": "not_online",
+    "registry": "Tennessee Department of Commerce and Insurance Verify (Board for Licensing Contractors), verify.tn.gov",
+    "license_type": "Tennessee contractor license (required for prime contracts of $25,000 or more)",
+    "source_url": "https://verify.tn.gov/",
+    "note": "Verify is a JavaScript app, and my automated query was blocked in this environment, so I didn't look this up. Check it by hand under Organization Name 'One Point Partitions', city Gallatin."
+   },
+   "score": 43
+  },
+  {
+   "name": "Service Systems",
+   "base_city": "Chattanooga",
+   "state": "TN",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "regional",
+   "contact_page": "https://servicesystems.org/contact-us/",
+   "website": "https://servicesystems.org/",
+   "evidence_urls": [
+    "https://servicesystems.org/"
+   ],
+   "partition_evidence": "It supplies toilet partitions and restroom accessories. The installation it lists is for doors, hardware and frame welding repair, not partitions.",
+   "red_flags": [
+    "Supplies partitions itself, so it could buy around us",
+    "No phone or email on the homepage"
+   ],
+   "reason": "A commercial door-and-hardware supplier about 100 miles away that serves TN, AL and GA. It supplies partitions, but the site doesn't show it installing them.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Service Systems",
+    "area": "huntsville",
+    "status": "not_online",
+    "registry": "Tennessee Department of Commerce and Insurance Verify (Board for Licensing Contractors), verify.tn.gov",
+    "license_type": "Tennessee contractor license (required for prime contracts of $25,000 or more)",
+    "source_url": "https://verify.tn.gov/",
+    "note": "Applies to their Tennessee base. Verify is a JavaScript app (it redirects to search.cloud.commerce.tn.gov), and WebFetch can't read its results. My automated query of the search was blocked in this environment, so I didn't look this up. Check it by hand under Organization Name 'Service Systems', city Chattanooga."
+   },
+   "score": 23
+  },
+  {
+   "name": "3rd Gen LLC",
+   "base_city": "Hartselle",
+   "state": "AL",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "mostly",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "nearby",
+   "phone": "(256) 938-0702",
+   "email": "support@3rdgenpro.com",
+   "contact_page": "https://3rdgenpro.com/contact",
+   "website": "https://3rdgenpro.com",
+   "evidence_urls": [
+    "https://3rdgenpro.com"
+   ],
+   "partition_evidence": "It installs insulation, shower enclosures, shelving, mirrors, bath hardware, door hardware and blinds for residential and commercial builders. Toilet partitions aren't mentioned.",
+   "red_flags": [
+    "Seems to serve home builders mainly",
+    "No partition work shown"
+   ],
+   "reason": "A nearby installer of bath hardware for North Alabama and Central Tennessee, but nothing shows it installs toilet partitions. Worth a check only as a local option.",
+   "added_by_checker": false,
+   "license": {
+    "name": "3rd Gen LLC",
+    "area": "huntsville",
+    "status": "not_found",
+    "registry": "Alabama Licensing Board for General Contractors license roster (licensesearch.alabama.gov/genconbd)",
+    "source_url": "https://licensesearch.alabama.gov/genconbd",
+    "note": "Checked 2026-11-20. The board's public roster (about 11,100 entries, all embedded in the page) has no entry for '3rd Gen' or 'Third Gen' and no matching firm in Hartselle. Alabama requires a general contractor license only for jobs at or above the state threshold ($50,000 commercial). Huntsville has no local installer rule, so a typical partition job below that amount needs no state license. The company site (https://3rdgenpro.com) shows the name '3rd Gen LLC' in the footer and lists bath hardware, shower enclosures, mirrors and shelving across Northern Alabama and Central Tennessee. The site does not mention toilet partitions or give a license number. Its base city is not stated there."
+   },
+   "score": 20
+  },
+  {
+   "name": "JM Specialties, Inc.",
+   "base_city": "Chattanooga",
+   "state": "TN",
+   "verdict": "possible",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "regional",
+   "review_source": "BBB A+ (not accredited)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/al/decatur/category/partition",
+    "https://www.bbb.org/us/al/gurley/category/partition"
+   ],
+   "partition_evidence": "Listed in BBB's Partitions category (A+, not accredited). I didn't read its own website.",
+   "red_flags": [
+    "No website checked",
+    "Doesn't say it serves Alabama"
+   ],
+   "reason": "A Chattanooga partitions business about 100 miles away, found only in BBB's partitions category. Its installation work and Alabama coverage are unverified.",
+   "added_by_checker": true,
+   "license": {
+    "name": "JM Specialties, Inc.",
+    "area": "huntsville",
+    "status": "not_online",
+    "registry": "Tennessee Department of Commerce and Insurance Verify (Board for Licensing Contractors), verify.tn.gov",
+    "license_type": "Tennessee contractor license (required for prime contracts of $25,000 or more)",
+    "source_url": "https://verify.tn.gov/",
+    "note": "Verify is a JavaScript app, and my automated query was blocked in this environment, so I didn't look this up. Check it by hand under Organization Name 'JM Specialties', city Chattanooga."
+   },
+   "score": 3
+  },
+  {
+   "name": "Dison Group, LLC",
+   "base_city": "Moulton",
+   "state": "AL",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "brands": [],
+   "within_area": "nearby",
+   "evidence_urls": [
+    "https://govtribe.com/vendors/dison-group-llc-63n42",
+    "https://naicslist.com/company-profile/dison-group-llc-moulton-al-35650"
+   ],
+   "partition_evidence": "Seen only in search-result summaries, not on its pages: a federal prime contractor for minor construction and facility repairs (NAICS 236210), with awards from NASA Marshall in Huntsville. Nothing about partitions.",
+   "red_flags": [
+    "No website found",
+    "No partition evidence",
+    "Listed addresses don't agree (Moulton, Rogersville, Decatur)"
+   ],
+   "reason": "A general federal facility contractor with no sign of toilet partition work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Manning Materials, Inc.",
+   "base_city": "Nashville",
+   "state": "TN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Accurate Partitions",
+    "AJW Architectural Products",
+    "Bobrick",
+    "Global Partitions",
+    "Metpar",
+    "Privada",
+    "Scranton Products",
+    "Thrislington",
+    "American Specialties",
+    "Bradley"
+   ],
+   "within_area": "no",
+   "phone": "1-877-431-7078",
+   "contact_page": "https://www.manningmaterialsinc.com/contact-us/",
+   "website": "https://www.manningmaterialsinc.com",
+   "evidence_urls": [
+    "https://www.manningmaterialsinc.com",
+    "https://www.bbb.org/us/al/decatur/category/partition"
+   ],
+   "partition_evidence": "A partition supplier that ships nationwide. Its own site offers no installation service; only a customer testimonial mentions installing with Manning's help.",
+   "red_flags": [
+    "Direct partition supplier and competitor, so a buy-around risk",
+    "Doesn't say it serves Alabama"
+   ],
+   "reason": "A competing supplier with no stated installation service and no stated Alabama coverage.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Division 10, Inc.",
+   "base_city": "Cordova",
+   "state": "TN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "mostly",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "no",
+   "phone": "(901) 755-2623",
+   "email": "estimating@division10inc.com",
+   "contact_page": "https://www.division10inc.com/contact",
+   "website": "https://www.division10inc.com/",
+   "evidence_urls": [
+    "https://www.division10inc.com/"
+   ],
+   "partition_evidence": "The homepage lists product sales, estimating and installation quotes. It doesn't mention toilet partitions or any service area.",
+   "red_flags": [
+    "Memphis area, about 210 miles away",
+    "No stated service in Alabama"
+   ],
+   "reason": "No evidence that it works on partitions, and it is outside the area, with no stated Alabama coverage.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 15
+  },
+  {
+   "name": "Johnston Enterprises",
+   "base_city": "Chattanooga",
+   "state": "TN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "brands": [],
+   "within_area": "regional",
+   "website": "https://repairmaintain.com",
+   "evidence_urls": [
+    "https://repairmaintain.com"
+   ],
+   "partition_evidence": "The site returned no content, and a web search found nothing on the company.",
+   "red_flags": [
+    "Website empty or not loading",
+    "Couldn't verify it exists",
+    "Service area unknown; regional is based only on the listed Chattanooga location"
+   ],
+   "reason": "The business couldn't be verified: the site is empty and searches show nothing.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 3
+  }
+ ]
+}

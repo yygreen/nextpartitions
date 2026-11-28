@@ -1,0 +1,294 @@
+{
+ "slug": "corpus-christi",
+ "city": "Corpus Christi",
+ "state": "TX",
+ "checked": "2026-11-24",
+ "codes": {
+  "building": {
+   "name": "2021 International Building Code with Corpus Christi amendments (Corpus Christi Code Chapter 14, Article II, Section 14-231)",
+   "edition": "2021",
+   "local_amendments": true,
+   "effective": "2023-08-01",
+   "url": "https://www.corpuschristitx.gov/department-directory/development-services/construction-codes-and-ordinances/",
+   "quote": "City page: \"The City of Corpus Christi has adopted, with local amendments effective August 1, 2023, The International Code Council (ICC), 2021 editions of the International Building Code, Existing Building Code, Fuel Gas Code, Mechanical Code, Plumbing Code, and Residential Code for One- and Two-Family Dwellings and International Swimming Pool and Spa Code 2021 and the National Fire Prevention Association (NFPA) National Electric Code 2020.\" || Ordinance: \"Sec. 14-231. Building code. The International Building Code, 2021 Edition, as published by the International Code Council, is incorporated by reference and adopted as the Building Code for the City of Corpus Christi with the following local amendments\"",
+   "ordinance_url": "https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf"
+  },
+  "plumbing": {
+   "name": "2021 International Plumbing Code with Corpus Christi amendments (Corpus Christi Code Chapter 14, Article II, Section 14-281)",
+   "edition": "2021",
+   "local_amendments": true,
+   "effective": "2023-08-01",
+   "url": "https://www.corpuschristitx.gov/department-directory/development-services/construction-codes-and-ordinances/",
+   "quote": "Ordinance: \"Sec. 14-281. - Plumbing code. The International Plumbing Code, 2021 Edition, as published by the International Code Council, is incorporated by reference and adopted as the Plumbing Code for the City of Corpus Christi with the following local amendments\"",
+   "ordinance_url": "https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf"
+  },
+  "scheduled_change": null,
+  "scheduled_change_note": "The city's codes page names no next edition. Informational Bulletin 021 (January 26, 2026) covers only the Texas Department of Insurance's windstorm design criteria from the 2024 codes for submittals on or after April 1, 2026, which does not touch partitions. The May 2026 Development Services newsletter mentions no code adoption.",
+  "ordinance_note": "The ordinance PDF the city posts is the unsigned Legistar copy (file 23-0077, dated 12.21.22, vote lines blank, 2023): its ordinance number and passage date were not read. The effective date is from the city's codes page. The codified text on Municode could not be opened (HTTP 403).",
+  "authority": "City of Corpus Christi Development Services Department, Building Inspection Division (\"The Building Inspection Division maintains and enforces the technical construction codes adopted by the City of Corpus Christi.\")",
+  "confidence": "high"
+ },
+ "fixtures": {
+  "city_amends": false,
+  "amendment": {
+   "text": "Corpus Christi's amendments to the 2021 International Plumbing Code (Section 14-281) touch Chapters 1, 3, 6, 7 and 9 and nothing in Chapter 4: Table 403.1, the half-and-half split (403.1.1), the single-user rule (403.1.2), the separate-facilities exceptions (403.2) and the urinal substitution rule (424.2) stand as the model code prints them. Its amendments to the 2021 International Building Code (Section 14-231) touch Chapter 1, Sections 1101.2, 1612.3 and a new Section 3116 (boat docks), and nothing in Chapter 29. Because Texas has no statewide table, the page needs its own stall table, read from the unamended 2021 code.",
+   "quote": "All plumbing amendments in the ordinance, by section number: 101.1, 102.8.3, 103.1, 108.2, 109.2, 110.1.1, 114 (deleted), 115 (deleted), 305.4.1, 312.10.1, 606.2, 608.1.2, 608.15, 608.17.4, 614, 708.1.1, 708.1.2, 708.1.3, 903.1.1. None is in Chapter 4.",
+   "url": "https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf"
+  },
+  "table_ratios": {
+   "office": "Business: water closets \"1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50\"",
+   "restaurant": "Restaurants, banquet halls and food courts: 1 per 75 male, 1 per 75 female",
+   "school": "Educational facilities: 1 per 50",
+   "split": "403.1.1: \"To determine the occupant load of each sex, the total occupant load shall be divided in half. ... Fractional numbers resulting from applying the fixture ratios of Table 403.1 shall be rounded up to the next whole number.\"",
+   "urinals": "None required. 424.2: \"In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent of the required water closets in assembly and educational occupancies. Urinals shall not be substituted for more than 50 percent of the required water closets in all other occupancies.\"",
+   "small_occupancy": "403.2 exception 2: \"Separate facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer.\" Exception 3: mercantile occupancies of 100 or fewer. Exception 4: business occupancies of 25 or fewer.",
+   "source": "Secondary copy: UpCodes, Texas IHB Plumbing Code 2021 (the 2021 International Plumbing Code as adopted with amendments for Texas industrialized housing and buildings; UpCodes has no Corpus Christi edition). The official ICC viewer refused the request (HTTP 403).",
+   "url": "https://up.codes/viewer/texas/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings"
+  },
+  "worked_examples": [
+   {
+    "occupants": 50,
+    "office": "1 women / 1 men",
+    "restaurant": "1 / 1",
+    "school": "1 / 1"
+   },
+   {
+    "occupants": 100,
+    "office": "2 / 2",
+    "restaurant": "1 / 1",
+    "school": "1 / 1"
+   },
+   {
+    "occupants": 200,
+    "office": "3 / 3",
+    "restaurant": "2 / 2",
+    "school": "2 / 2"
+   },
+   {
+    "occupants": 400,
+    "office": "5 / 5",
+    "restaurant": "3 / 3",
+    "school": "4 / 4"
+   }
+  ],
+  "worked_examples_note": "Half the occupants counted as each sex, fractions rounded up (403.1.1). Office at 200: 100 each sex, 2 for the first 50 plus 1 for the next 50. Office at 400: 200 each sex, 2 plus 3. Restaurant at 400: 200/75 = 2.67, so 3. Urinals may replace up to 50% of the men's toilets in offices and up to 67% in restaurants and schools (424.2).",
+  "confidence": "medium"
+ },
+ "permit": {
+  "exempt_list_quote": "2021 International Building Code 105.2 (not amended by Corpus Christi's ordinance): \"Exemptions from permit requirements of this code shall not be deemed to grant authorization for any work to be done in any manner in violation of the provisions of this code or any other laws or ordinances of this jurisdiction. Permits shall not be required for the following: Building: 1. One-story detached accessory structures ... 2. Fences not over 7 feet high. 3. Oil derricks. 4. Retaining walls ... 5. Water tanks ... 6. Sidewalks and driveways ... 7. Painting, papering, tiling, carpeting, cabinets, counter tops and similar finish work. 8. Temporary motion picture, television and theater stage sets and scenery. 9. Prefabricated swimming pools ... 10. Shade cloth structures ... 11. Swings and other playground equipment ... 12. Window awnings ... 13. Nonfixed and movable fixtures, cases, racks, counters and partitions not over 5 feet 9 inches (1753 mm) in height.\"",
+  "rule_quote": "105.1: \"Any owner or owner's authorized agent who intends to construct, enlarge, alter, repair, move, demolish or change the occupancy of a building or structure ... shall first make application to the building official and obtain the required permit.\"",
+  "city_amendments_quote": "The ordinance adds 105.1.3 (excavation and fill), 105.1.4 (governmental property), 105.8 (temporary event permit) and 105.9 (demolition permits) and leaves 105.2 as printed.",
+  "city_page_quote": "Commercial Remodels page: \"Remodeling, Interior Remodeling, Renovations, and Demolitions. A complete submission includes: Building Permit Application ... Floor Plan (existing & proposed) ... Detail Scope of Work\"; \"All Commercial projects greater than or equal to $50,000 must be registered with TDLR and issued an EAB # in order to obtain building permits for accessibility compliance.\" The page does not name partitions.",
+  "city_page_url": "https://www.corpuschristitx.gov/department-directory/development-services/applications-permits-and-guidance/commercial-remodels/",
+  "url": "https://up.codes/viewer/texas/ibc-2021/chapter/1/scope-and-administration",
+  "ordinance_url": "https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf",
+  "partitions_named": false,
+  "note": "The list names partitions only as nonfixed and movable ones up to 5 ft 9 in. Toilet partitions are not named in the list, in the city's amendments or on the Commercial Remodels page. The administrative sections of the city's own code (Chapter 14, Article II, Division 1, on Municode) could not be opened and may add permit rules.",
+  "office": "City of Corpus Christi Development Services, 2406 Leopard St., Corpus Christi, TX 78408",
+  "phone": "361-826-3240",
+  "confidence": "medium"
+ },
+ "restrooms_city": {
+  "rule": null,
+  "quote": "No city amendment to building code Sections 1210 or 2902 or to plumbing code Sections 403 or 405 appears in the adopting ordinance. The unamended 2021 code applies: 2902.1.2 \"Single-user toilet and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified as being available for use by all persons regardless of their sex.\" 2902.2 exception 6: \"Separate facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by both sexes and privacy for water closets are installed in accordance with Section 405.3.4 of the International Plumbing Code. Urinals shall be located in an area visually separated from the remainder of the facility or each urinal that is provided shall be located in a stall.\" 1210.3.1: \"Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy.\"",
+  "url": "https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf",
+  "code_url": "https://up.codes/viewer/texas/ibc-2021/chapter/29/plumbing-systems",
+  "confidence": "medium",
+  "note": "The state pack's restroom bullet matches the 2021 code Corpus Christi adopted, so it is used unchanged. Other chapters of the city code (outside Chapter 14, Article II) were not searched for a restroom ordinance: Municode refused automated access."
+ },
+ "sales_tax": {
+  "combined": 0.0825,
+  "parts": [
+   {
+    "name": "state",
+    "rate": 0.0625
+   },
+   {
+    "name": "city",
+    "rate": 0.01375
+   },
+   {
+    "name": "Corpus Christi MTA (transit authority)",
+    "rate": 0.005
+   },
+   {
+    "name": "Corpus Christi Crime Control District",
+    "rate": 0.00125
+   }
+  ],
+  "effective": null,
+  "effective_note": "The Comptroller's rate page gives no start date for these rates. Its notices for January, April, July and October 2026 do not mention Corpus Christi, so the rates are unchanged at least since before January 1, 2026.",
+  "scheduled_change": null,
+  "scheduled_change_note": "No notice for January 2027 was posted on the Comptroller's quarterly updates index.",
+  "url": "https://comptroller.texas.gov/taxes/sales/city.php",
+  "quote": "Corpus Christi (Nueces Co) | 2178015 | .013750 | .082500 ; Corpus Christi MTA | 3178998 | .005000 ; Corpus Christi Crime Con | 5178505 | .001250. (Read through the fetch tool; curl is refused. The state's 6.25% is the remainder of the .082500 total; the page's sentence on it was not in the part returned.)",
+  "confidence": "high"
+ },
+ "public_wage": {
+  "county": "Nueces",
+  "basis": "Davis-Bacon",
+  "basic_hourly": 15.21,
+  "fringe": 0.0,
+  "determination": "TX20260288, modification 1 (Building)",
+  "date": "2026-05-18",
+  "url": "https://sam.gov/wage-determination/TX20260288/1",
+  "api_url": "https://sam.gov/api/prod/wdol/v1/wd/TX20260288/1",
+  "quote": "General Decision Number: TX20260288 05/18/2026 ... State: Texas ... Construction Types: Building ... Counties: Texas Counties of Aransas, Nueces and San Patricio ... SUTX2014-068 07/21/2014 ... CARPENTER...........................................$ 15.21 0.00",
+  "city_rule": null,
+  "city_rule_note": "Not looked for. Under Texas Government Code chapter 2258 each public body sets its own rates; the City of Corpus Christi's, Nueces County's and the school districts' own wage schedules were not read.",
+  "confidence": "high"
+ },
+ "page": {
+  "meta": "Commercial bathroom partitions delivered to Corpus Christi job sites. Price your restroom, pick a material for Gulf Coast humidity and see the local rules.",
+  "lead": "Commercial bathroom partitions for Corpus Christi offices, schools, hotels and industrial plants, shipped by freight to your job site.",
+  "fire_bullet": "- **Fire safety:** Corpus Christi's building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.",
+  "stall_bullet": "- **How many stalls:** Corpus Christi sets the number of toilets by how many people use the building. The table below shows what that means.",
+  "permit_bullet": "- **Permits:** Corpus Christi requires a permit to alter or repair a building unless the work is exempt. The exempt list covers \"similar finish work\" and movable partitions up to 5 feet 9 inches high, without naming toilet partitions, so ask Corpus Christi Development Services whether your replacement needs one. You don't need a permit to buy partitions.",
+  "confirm_office": "Corpus Christi Development Services",
+  "stalls_intro": "Corpus Christi counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women. Every toilet needs a stall. Urinals are optional. They may stand in for up to half of the men's toilets in an office, and up to two thirds in a restaurant or school.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building. An office that holds 25 people or fewer, a store that holds 100 or fewer, or any other space that holds 15 or fewer, staff and customers together, doesn't need separate men's and women's rooms. At least one stall in each room must be wheelchair accessible.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or Corpus Christi Development Services sets the final number.",
+  "extra_rule_bullets": [],
+  "install_rule": "Corpus Christi's contractor registration program is voluntary. Texas has no statewide contractor license for this work. Confirm what your project needs with Corpus Christi Development Services. You don't need a permit to buy partitions.",
+  "faq_install_extra": "Corpus Christi's contractor registration program is voluntary.",
+  "public_jobs_bullet": "- **Public jobs:** on city, county and school district projects, Texas law requires at least the locally set wage. The federal rate for a carpenter on building work in Nueces County is $15.21 an hour, with no benefits amount listed.",
+  "sales_tax_bullet": "- **Sales tax:** 8.25% in Corpus Christi: 6.25% state, 1.375% city, 0.5% transit authority and 0.125% crime control district.",
+  "buyers_extra": "- **Beach, marina and park restrooms:** solid plastic (HDPE) or phenolic for rooms that are open to the weather and hosed down.",
+  "sources": [
+   "- Corpus Christi building and plumbing codes: [City of Corpus Christi, Construction Codes and Ordinances](https://www.corpuschristitx.gov/department-directory/development-services/construction-codes-and-ordinances/) and the city's [ordinance adopting the 2021 International Codes](https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf) (Corpus Christi Code Sections 14-231 and 14-281), adopting the 2021 International Building Code and the 2021 International Plumbing Code with local amendments, effective August 1, 2023. Checked 2026-11-24.",
+   "- Toilet counts in Corpus Christi: the city's [ordinance adopting the 2021 International Codes](https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf), Section 14-281, which amends nothing in Chapter 4 of the plumbing code; Table 403.1 and Sections 403.1.1, 403.2 and 424.2 of the 2021 International Plumbing Code were read on a secondary copy ([UpCodes, Texas IHB Plumbing Code 2021, Chapter 4](https://up.codes/viewer/texas/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings)). Checked 2026-11-24.",
+   "- Single-user and shared restrooms: 2021 International Building Code, Sections 2902.1.2, 2902.2 and 1210.3.1, on [UpCodes, Texas IHB Building Code 2021, Chapter 29](https://up.codes/viewer/texas/ibc-2021/chapter/29/plumbing-systems) and [Chapter 12](https://up.codes/viewer/texas/ibc-2021/chapter/12/interior-environment); Corpus Christi's [ordinance](https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf) leaves them unamended. Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions and floor area per person: 2021 International Building Code, Sections 803.9 and 803.1.1 and Table 1004.5, on [UpCodes, Texas IHB Building Code 2021, Chapter 8](https://up.codes/viewer/texas/ibc-2021/chapter/8/interior-finishes) and [Chapter 10](https://up.codes/viewer/texas/ibc-2021/chapter/10/means-of-egress). Checked 2026-11-24.",
+   "- Corpus Christi permits and exempt work: 2021 International Building Code, Sections 105.1 and 105.2, on [UpCodes, Texas IHB Building Code 2021, Chapter 1](https://up.codes/viewer/texas/ibc-2021/chapter/1/scope-and-administration); the city's [ordinance](https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf), Section 14-231, which adds Sections 105.1.3, 105.1.4, 105.8 and 105.9 and leaves 105.2 unamended; and [City of Corpus Christi, Commercial Remodels](https://www.corpuschristitx.gov/department-directory/development-services/applications-permits-and-guidance/commercial-remodels/). Checked 2026-11-24.",
+   "- Corpus Christi contractor registration: [Development Services Informational Bulletin 016, Safety, Training, Accountability and Registration (STAR)](https://www.corpuschristitx.gov/media/1tgpxw4s/ib016-contractor-registration-lf-hba.pdf) (\"This is a voluntary program, and contractors are not required to participate.\"). Checked 2026-11-24.",
+   "- Nueces County carpenter rate: [federal wage determination TX20260288, modification 1, May 18, 2026](https://sam.gov/wage-determination/TX20260288/1). Checked 2026-11-24.",
+   "- Corpus Christi sales tax rate: Texas Comptroller, [city sales and use tax rates](https://comptroller.texas.gov/taxes/sales/city.php) (Corpus Christi 1.375%, Corpus Christi MTA 0.5%, Corpus Christi Crime Control District 0.125%, total 8.25%). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; 2012 Texas Accessibility Standards (TDLR registration and review at $50,000 or more); 2021 International Building Code with Corpus Christi amendments (Corpus Christi Code Section 14-231), in force since August 1, 2023; 2021 International Plumbing Code with Corpus Christi amendments (Corpus Christi Code Section 14-281), in force since August 1, 2023; work exempt from a permit: 2021 International Building Code Section 105.2; NFPA 286 for HDPE.",
+  "notes": [
+   "To confirm by phone before launch: whether a like-for-like toilet partition replacement needs a Corpus Christi permit (Development Services, 361-826-3240); the exempt list, the city's amendments and the Commercial Remodels page don't name toilet partitions.",
+   "The city code's own administrative sections on permits (Chapter 14, Article II, Division 1, on Municode) could not be opened (HTTP 403): read them in a browser for any permit rule beyond the adopted building code.",
+   "The stall table's ratios, the single-user sign rule, the exempt-work list, the HDPE fire test section and the floor area per person were read on UpCodes' Texas IHB 2021 copies of the model codes, not on the official ICC viewer (HTTP 403): check them in a browser.",
+   "The ordinance PDF on the city's site is the unsigned Legistar copy (file 23-0077): get the ordinance number and passage date from Municode or the City Secretary.",
+   "The Nueces County carpenter rate is the federal one ($15.21, fringe $0.00, a 2014 survey rate); the City of Corpus Christi's, Nueces County's and the school districts' own wage schedules for public jobs were not read.",
+   "Sales tax: the Comptroller's page gives no start date for Corpus Christi's parts; check its January 2027 notice when it is posted."
+  ]
+ },
+ "sources_read": [
+  {
+   "url": "https://www.corpuschristitx.gov/department-directory/development-services/construction-codes-and-ordinances/",
+   "official": true
+  },
+  {
+   "url": "https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf",
+   "official": true,
+   "note": "PDF text layer, all 30 pages; Sections 14-201, 14-231, 14-232, 14-281 and 14-207 read"
+  },
+  {
+   "url": "https://www.corpuschristitx.gov/department-directory/development-services/construction-codes-and-ordinances/2021-adopted-code-amendments/",
+   "official": true
+  },
+  {
+   "url": "https://www.corpuschristitx.gov/department-directory/development-services/applications-permits-and-guidance/commercial-remodels/",
+   "official": true
+  },
+  {
+   "url": "https://www.corpuschristitx.gov/department-directory/development-services/informational-bulletins/",
+   "official": true
+  },
+  {
+   "url": "https://www.corpuschristitx.gov/media/iiflluoc/tdi-windstorm-update-to-2024-icc-codes.pdf",
+   "official": true,
+   "note": "windstorm criteria only; phone 361-826-3240 on the letterhead"
+  },
+  {
+   "url": "https://www.corpuschristitx.gov/media/1tgpxw4s/ib016-contractor-registration-lf-hba.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.corpuschristitx.gov/media/nrlcmllz/may-2026-dsd-newsletter-english-1.pdf",
+   "official": true,
+   "note": "no code adoption mentioned"
+  },
+  {
+   "url": "https://library.municode.com/tx/corpus_christi/codes/code_of_ordinances?nodeId=PTIIITHCOOR_CH14DESE_ARTIICICOCHTECO",
+   "official": true,
+   "note": "NOT read: HTTP 403"
+  },
+  {
+   "url": "https://codes.iccsafe.org/content/IPC2021P1/chapter-4-fixtures-faucets-and-fixture-fittings",
+   "official": true,
+   "note": "NOT read: HTTP 403"
+  },
+  {
+   "url": "https://up.codes/viewer/texas/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/texas/ibc-2021/chapter/1/scope-and-administration",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/texas/ibc-2021/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/texas/ibc-2021/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/texas/ibc-2021/chapter/12/interior-environment",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/texas/ibc-2021/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://comptroller.texas.gov/taxes/sales/city.php",
+   "official": true,
+   "note": "fetch tool"
+  },
+  {
+   "url": "https://comptroller.texas.gov/taxes/sales/quarterly-updates/",
+   "official": true,
+   "note": "index and the January, April, July and October 2026 notices: no mention of Corpus Christi"
+  },
+  {
+   "url": "https://sam.gov/api/prod/wdol/v1/wd/TX20260288/1",
+   "official": true
+  }
+ ],
+ "to_confirm": [
+  "Corpus Christi Development Services, 361-826-3240: does replacing toilet partitions in an existing commercial restroom need a permit (2021 IBC 105.2 items 7 and 13 don't name them)?",
+  "Read Corpus Christi Code Chapter 14, Article II, Division 1 (administration and permits) on Municode in a browser: not opened here.",
+  "Check Table 403.1 and Sections 403.1.1, 403.1.2, 403.2 and 424.2 of the 2021 IPC, and Sections 105.2, 803.9, 803.1.1, 1210.3.1, 2902.1.2, 2902.2 and Table 1004.5 of the 2021 IBC, on codes.iccsafe.org in a browser (read here on UpCodes' Texas IHB copies).",
+  "Ordinance number and passage date of the 2021 code adoption (the posted PDF is unsigned).",
+  "Whether Corpus Christi has scheduled adoption of the 2024 codes: nothing on the city's pages.",
+  "The date Corpus Christi's current local sales tax parts took effect (Texas Comptroller).",
+  "City of Corpus Christi, Nueces County and school district prevailing wage schedules for building work (Texas Government Code chapter 2258).",
+  "Any city ordinance on restroom signs outside the construction codes: not searched (Municode refused access)."
+ ]
+}

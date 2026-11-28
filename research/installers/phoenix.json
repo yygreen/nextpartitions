@@ -1,0 +1,396 @@
+{
+ "area": "phoenix",
+ "found_count": 9,
+ "sources_tried": [
+  "WebSearch (all queries): blocked. This run had already used its 200-search limit, so no web search ran for Phoenix",
+  "Bobrick find-a-rep (bobrick.com/find-a-rep): loaded, but the rep is picked from a dropdown, so no Arizona rep showed in the fetched page",
+  "Scranton Products find-a-rep (scrantonproducts.com/find-a-rep/): 404, wrong URL guessed without search",
+  "ASI Global Partitions find-a-rep (asi-globalpartitions.com/find-a-rep/): 301 redirect, then 404",
+  "Hadrian find-a-rep (hadrian-inc.com/find-a-rep): 404",
+  "Metpar representatives (metpar.com/representatives): 404",
+  "General Partitions reps (generalpartitions.com/reps): 404",
+  "The Blue Book (thebluebook.com search): 403 Forbidden",
+  "Not attempted because of the search limit: Bradley, Ampco/Ammco locators, BuildingConnected and Procore profiles, Google/Yelp/BBB listings. Rerun phoenix in a new turn with a fresh search budget",
+  "Seed file phoenix.json: worked. Opened the websites of the plausible maps results (Beach, Partitions & Accessories, AZ Washroom, J's Partitions, Black Scale, Inter-Co, Division Nine, Arizona Partition). Division Nine (stucco/GC) and Arizona Partition (drywall) don't show partition work and were dropped.",
+  "Bobrick find-a-rep: page loaded but the Arizona results are filled in by a dropdown, so no data came back.",
+  "Scranton Products where-to-buy: worked. It lists only an individual regional rep for AZ (not a business), and no dealers or installers.",
+  "Scranton find-a-rep URL: 404.",
+  "Hadrian find-a-rep URL: 404.",
+  "ASI, Bradley, Metpar, General Partitions, Ampco: not tried, because of time and the search cap.",
+  "The Blue Book (thebluebook.com iProView pages): blocked (403).",
+  "BuildingConnected / Procore: not tried (search cap).",
+  "WebSearch: used all 8 of 8. The useful results were the Division 10 Phoenix and installer queries, which turned up Inter-Co, Allegheny, TENCO/Millennium Designs (not verified), CBX Solutions and One Point Partitions.",
+  "One Point Partitions pages: blocked (403). It's a national online supplier with a Phoenix delivery terminal, so I skipped it.",
+  "CBX Solutions Phoenix branch page: blocked (403). It's a Division 10 supplier, and I couldn't confirm whether it installs.",
+  "TENCO / Millennium Designs: only in a Blue Book snippet and couldn't be verified, so not listed.",
+  "West Coast Partitions and Midwest Partitions (Scottsdale): their sites show drywall, framing and specialty wall work, not toilet partitions, so I dropped them.",
+  "BBB Mesa 'partition' category: worked. It gave Hufcor Arizona and Statewide Installations; the rest are drywall firms.",
+  "City of Phoenix solicitation page: worked, but it doesn't show the restroom partition contract or who was awarded it.",
+  "ADA Compliant Fixtures (netlify site, Scottsdale): looks like a lead-generation page with no license number, so I excluded it.",
+  "monster.com job posting host: couldn't resolve, because the host isn't allowed in this session's network settings.",
+  "Yelp: not reached (search cap)."
+ ],
+ "candidates": [
+  {
+   "name": "Partitions & Accessories Co.",
+   "base_city": "Mesa",
+   "state": "AZ",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "ASI Group",
+    "Bobrick",
+    "ASI Accurate",
+    "Scranton",
+    "Bradley",
+    "Ironwood",
+    "Kwik Wall",
+    "Koala Kare",
+    "Construction Specialties",
+    "Inpro",
+    "Penco"
+   ],
+   "website": "https://partitionsco.com/",
+   "phone": "(480) 969-6606",
+   "email": "sales@partitionsco.com",
+   "contact_page": "https://partitionsco.com/contact-us/",
+   "review_source": "BBB: A+ rating, BBB Accredited (letter grade, no review count shown)",
+   "evidence_urls": [
+    "https://partitionsco.com/",
+    "https://partitionsco.com/contact-us/",
+    "https://www.bbb.org/us/az/mesa/category/partition"
+   ],
+   "partition_evidence": "Homepage says 'We Deliver and Install High Quality Products', lists Installation as a service and sells toilet partitions and hardware to general contractors and end users. Contact page shows AZ ROC# 110352.",
+   "reason": "Mesa Division 10 supplier that delivers and installs toilet partitions for contractors, with an Arizona ROC license on its site. It also sells partitions, including the brands we resell, so there is a buy-around risk.",
+   "red_flags": [
+    "Sells and stocks the same brands Next Partitions resells (Bobrick, ASI, Scranton, Bradley): direct competitor and buy-around risk",
+    "Brand list read from logo image filenames"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Partitions & Accessories Co.",
+    "area": "phoenix",
+    "status": "not_online",
+    "registry": "Arizona Registrar of Contractors (ROC) contractor search, azroc.my.site.com/AZRoc/s/contractor-search",
+    "license_number": "AZ ROC 110352 (as shown on the company's own website, not confirmed on the ROC record)",
+    "license_type": "unknown",
+    "source_url": "https://partitionsco.com/",
+    "note": "Arizona ROC licenses this work (above threshold), and Phoenix issues permits only to state-licensed contractors. The ROC search is a Salesforce page that only shows 'Loading' / 'CSS Error' to automated fetches, and scripted access was not allowed, so the license number, class and status could not be read on the official record. The company site shows 'AZ ROC # 110352' and lists 'Installation' as a service ('We Deliver and Install High Quality Products'), with toilet partitions under Products. Confirm 110352 manually at the ROC search."
+   },
+   "score": 70
+  },
+  {
+   "name": "Black Scale Inc.",
+   "base_city": "Scottsdale",
+   "state": "AZ",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "ASI",
+    "Bobrick",
+    "Hadrian",
+    "Bradley",
+    "Koala Kare",
+    "World Dryer",
+    "CS Acrovyn",
+    "Marlite"
+   ],
+   "website": "https://blackscaleinc.com/",
+   "phone": "(888) 399-6274",
+   "email": "info@blackscaleinc.com",
+   "contact_page": "https://blackscaleinc.com/contact/",
+   "evidence_urls": [
+    "https://blackscaleinc.com/",
+    "https://blackscaleinc.com/contact/"
+   ],
+   "partition_evidence": "Site offers 'complete supply and installation of commercial restroom partition systems' for schools, healthcare, offices, retail and hospitality. Testimonials cite a HonorHealth restroom installation and solid plastic partitions for Revel Surf. ROC 354075 listed.",
+   "reason": "Licensed Division 10 contractor in Scottsdale that installs commercial restroom partitions across the Phoenix metro. It is also a distributor for ASI, Hadrian and Bobrick.",
+   "red_flags": [
+    "Distributor for ASI, Bobrick and Hadrian: buy-around risk",
+    "Phone shown on the site as vanity number (888) 3996-BSI"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Black Scale Inc.",
+    "area": "phoenix",
+    "status": "not_online",
+    "registry": "Arizona Registrar of Contractors (ROC) contractor search, azroc.my.site.com/AZRoc/s/contractor-search",
+    "license_number": "ROC 354075 (as shown on the company's own website, not confirmed on the ROC record)",
+    "license_type": "unknown",
+    "source_url": "https://blackscaleinc.com/",
+    "note": "The ROC search can't be read automatically (a Salesforce page that only returns 'Loading' / 'CSS Error'). The company site footer says 'ROC: 354075' and 'Licensed, Bonded & Insured'. Its services include 'Complete supply and installation of commercial restroom partition systems'. Confirm 354075 manually at the ROC search."
+   },
+   "score": 70
+  },
+  {
+   "name": "Inter-Co Division 10 (Arizona) Inc. (Inter-Co Restroom & Locker Supply)",
+   "base_city": "Phoenix",
+   "state": "AZ",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick"
+   ],
+   "website": "https://inter-co.com/",
+   "phone": "(623) 398-6295",
+   "email": "azsales@inter-co.com",
+   "contact_page": "https://inter-co.com/contact/",
+   "evidence_urls": [
+    "https://inter-co.com/",
+    "https://inter-co.com/contact/"
+   ],
+   "partition_evidence": "Homepage says Inter-Co supplies and installs hundreds of products, including toilet partitions, for offices, hospitals, schools and hotels. A Phoenix office is listed.",
+   "reason": "Multi-branch Division 10 supply-and-install firm with a Phoenix office. It sells and installs toilet partitions on commercial projects.",
+   "red_flags": [
+    "Supplies partitions itself: buy-around risk",
+    "Part of a large multi-office chain headquartered in Toronto",
+    "No Arizona ROC number seen on the pages read",
+    "The site doesn't say whether installation is done by its own crews"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Inter-Co Division 10 (Arizona) Inc. (Inter-Co Restroom & Locker Supply)",
+    "area": "phoenix",
+    "status": "not_online",
+    "registry": "Arizona Registrar of Contractors (ROC) contractor search, azroc.my.site.com/AZRoc/s/contractor-search",
+    "source_url": "https://inter-co.com/",
+    "note": "The ROC search can't be read automatically. The company homepage shows no ROC number. It lists a Phoenix office and says it 'supply[ies] and install[s] hundreds of different products', with toilet partitions among its product lines. Search ROC by name manually, trying both 'Inter-Co Division 10' and 'Inter-Co Restroom'."
+   },
+   "score": 70
+  },
+  {
+   "name": "Beach Building Specialties (Beach Products)",
+   "base_city": "Phoenix",
+   "state": "AZ",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://beachproductsonline.com/",
+   "phone": "(602) 272-6754",
+   "contact_page": "https://beachproductsonline.com/#contact-form",
+   "evidence_urls": [
+    "https://beachproductsonline.com/"
+   ],
+   "partition_evidence": "Site sells toilet partitions, accessories, lockers and wall protection for Division 10 construction work and says 'We will visit the site prior to beginning installation if needed'.",
+   "reason": "Phoenix Division 10 distributor that supplies toilet partitions and mentions doing installation on its site. Its work looks commercial, though the site doesn't say so outright.",
+   "red_flags": [
+    "Distributor of partitions: buy-around risk",
+    "The site states installation only briefly and names no brands",
+    "No email listed, contact form only",
+    "Site lists two different Phoenix addresses"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Beach Building Specialties (Beach Products)",
+    "area": "phoenix",
+    "status": "not_online",
+    "registry": "Arizona Registrar of Contractors (ROC) contractor search, azroc.my.site.com/AZRoc/s/contractor-search",
+    "source_url": "https://beachproductsonline.com/",
+    "note": "The ROC search can't be read automatically. The company homepage shows no ROC number. It implies it installs ('We will visit the site prior to beginning installation if needed'). Search ROC by name manually."
+   },
+   "score": 65
+  },
+  {
+   "name": "J's Partitions LLC",
+   "base_city": "Tolleson",
+   "state": "AZ",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://jspartitionsllc.com/",
+   "phone": "602-497-7477",
+   "contact_page": "https://jspartitionsllc.com/contact",
+   "evidence_urls": [
+    "https://jspartitionsllc.com/",
+    "https://jspartitionsllc.com/contact"
+   ],
+   "partition_evidence": "Site lists Toilet Partitions as a service and mentions restrooms at businesses and 'manufacturing and installation of high-quality partitions'.",
+   "reason": "Tolleson business that claims to make and install toilet partitions within 100 miles. The gallery holds only placeholder images, it shows no license number, and it describes no commercial projects, so its work is unproven.",
+   "red_flags": [
+    "Gallery has placeholder images only, no real project photos",
+    "No ROC license number shown",
+    "Mentions serving 'businesses and homes'",
+    "Says it manufactures partitions: possible buy-around risk",
+    "Email hidden behind obfuscation; a second phone number appears in the footer"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "J's Partitions LLC",
+    "area": "phoenix",
+    "status": "not_online",
+    "registry": "Arizona Registrar of Contractors (ROC) contractor search, azroc.my.site.com/AZRoc/s/contractor-search",
+    "source_url": "https://jspartitionsllc.com/",
+    "note": "The ROC search can't be read automatically. The company homepage shows no ROC number. It describes itself as 'the leading expert in the manufacturing and installation of high-quality partitions'. Search ROC by name manually."
+   },
+   "score": 50
+  },
+  {
+   "name": "Kelley Bros (Phoenix)",
+   "base_city": "Phoenix",
+   "state": "AZ",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "ASI",
+    "Global Toilet Partitions",
+    "Scranton Products",
+    "Hadrian",
+    "Claridge",
+    "Bommer",
+    "Construction Specialties",
+    "JL Industries"
+   ],
+   "website": "https://www.kelleybros.com/",
+   "phone": "(602) 254-5967",
+   "contact_page": "https://www.kelleybros.com/contact-us/",
+   "evidence_urls": [
+    "https://www.kelleybros.com/?p=3224",
+    "https://www.kelleybros.com/locations/"
+   ],
+   "partition_evidence": "Division 10 page lists toilet partitions and offers a 'complete Turn Key Solution' through final product installation. A Phoenix location is listed.",
+   "reason": "Multi-state door, hardware and Division 10 supplier with a Phoenix branch that offers installation. Toilet partition installation by its Phoenix crews isn't shown directly.",
+   "red_flags": [
+    "Supplier of the same brands we resell: buy-around risk",
+    "Large distributor; partition installation not confirmed for the Phoenix branch"
+   ],
+   "added_by_checker": true,
+   "license": {
+    "name": "Kelley Bros (Phoenix)",
+    "area": "phoenix",
+    "status": "not_online",
+    "registry": "Arizona Registrar of Contractors (ROC) contractor search, azroc.my.site.com/AZRoc/s/contractor-search",
+    "source_url": "https://www.kelleybros.com/service-area/az/",
+    "note": "The ROC search can't be read automatically. Kelley Bros' Arizona page shows no ROC number and no Phoenix office address, only 'support for businesses in Phoenix'. It says it is 'a one-stop source for all things Division 8, 10 and 28'. Toilet partitions aren't named on the pages read. Search ROC by name manually."
+   },
+   "score": 50
+  },
+  {
+   "name": "Allegheny Construction Specialties",
+   "base_city": "Nashville",
+   "state": "TN",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://allconspec.com/",
+   "phone": "615-671-1700",
+   "email": "info@allconspec.com",
+   "contact_page": "https://allconspec.com/#contact",
+   "evidence_urls": [
+    "https://acs.pairsite.com/?p=18",
+    "https://allconspec.com/"
+   ],
+   "partition_evidence": "Site says ACS provides every type of partition and handles Division 10 work 'from sourcing to installation'. A Phoenix carpenter/installer job ad appeared in search results but could not be opened.",
+   "reason": "Division 10 firm with offices in Nashville, Pittsburgh and South Florida. Its own site lists no Arizona office, so it isn't a local installer.",
+   "red_flags": [
+    "No Arizona office on its own site",
+    "Sources and sells partitions: buy-around risk",
+    "Phoenix presence rests on a job ad that couldn't be opened (job-openings.youthopps.monster.com did not resolve in this session)"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "Hufcor Arizona, Inc.",
+   "base_city": "Mesa",
+   "state": "AZ",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [
+    "Hufcor"
+   ],
+   "phone": "(480) 464-4437",
+   "review_source": "BBB: A+ rating, not accredited (no review count shown)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/az/mesa/category/partition"
+   ],
+   "partition_evidence": "BBB lists it under partitions, doors and gymnasium equipment. Hufcor is an operable-wall maker, and nothing seen mentions toilet partitions.",
+   "reason": "Appears to be an operable or folding wall dealer, not a toilet partition installer, and no company website was found. There is no evidence of restroom partition work.",
+   "red_flags": [
+    "Operable walls, not toilet partitions",
+    "No website found; information is from BBB only"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Statewide Installations LLC",
+   "base_city": "Laveen",
+   "state": "AZ",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "phone": "(602) 435-9319",
+   "review_source": "BBB: A+ rating, not accredited (no review count shown)",
+   "evidence_urls": [
+    "https://www.bbb.org/us/az/mesa/category/partition"
+   ],
+   "partition_evidence": "BBB lists it under office furniture installation, office equipment and partitions. These look like office-furniture partitions, not restroom stalls.",
+   "reason": "BBB listing only, in the office furniture installation categories, with no website and no evidence of toilet partition work.",
+   "red_flags": [
+    "Office furniture installer, not restroom partitions",
+    "No website found"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Arizona Washroom Partitions",
+   "base_city": "unknown (602 area code suggests Phoenix)",
+   "state": "AZ",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "http://www.azwashroom.com/",
+   "phone": "602-437-8036",
+   "contact_page": "http://azwashroom.com/contact/",
+   "evidence_urls": [
+    "http://www.azwashroom.com/",
+    "http://azwashroom.com/find_us/"
+   ],
+   "partition_evidence": "Site navigation lists toilet partitions and washroom accessories as products. Nothing about installation.",
+   "reason": "The website says it is under construction and lists products only. It shows no installation, projects, city or license, so nothing proves it installs partitions.",
+   "red_flags": [
+    "Website under construction",
+    "No location shown",
+    "No installation evidence"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  }
+ ]
+}

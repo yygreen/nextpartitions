@@ -1,0 +1,541 @@
+{
+  "slug": "dallas",
+  "city": "Dallas",
+  "state": "Texas",
+  "checked": "2026-11-24",
+  "labor": {
+    "occupation": "47-2031 Carpenters",
+    "release": "May 2025 (OEWS, published 2026-05-15)",
+    "metro_name": "Dallas-Fort Worth-Arlington, TX",
+    "metro": {
+      "median_hourly": 23.44,
+      "median_annual": 48740,
+      "median_url": "https://www.onetonline.org/link/localwages/47-2031.00?zip=75201",
+      "median_quote": "Dallas-Fort Worth-Arlington, TX | Hourly | $17.52 | $20.98 | $23.44 | $27.40 | $30.71 (low 10%, 25%, median, 75%, high 90%); \"Source: Bureau of Labor Statistics 2025 wage data\"",
+      "median_source_note": "O*NET OnLine (sponsored by the U.S. Department of Labor), which republishes BLS OEWS percentiles. bls.gov and its zip downloads refused scripted access (HTTP 403), the public API was over its daily limit, and the May 2025 metro file is too large for WebFetch.",
+      "mean_annual": 50240,
+      "mean_hourly_read": null,
+      "mean_hourly_derived": 24.15,
+      "mean_url": "https://wagedex.com/jobs/carpenters/metro/dallas-fort-worth-arlington-tx",
+      "mean_quote": "Mean annual: $50,240 ... Jobs on record: 9,480 ... U.S. Bureau of Labor Statistics, Occupational Employment and Wage Statistics, metropolitan and nonmetropolitan area file, May 2025",
+      "mean_source_note": "SECONDARY (wagedex.com; hyring.com shows the same $50,240). The BLS mean hourly figure itself was not read. mean_hourly_derived = 50,240 / 2,080 hours (the BLS annual-wage convention); confirm on https://data.bls.gov/oes/#/area/0019100/2025 before publishing a mean.",
+      "employment": 9480
+    },
+    "us": {
+      "mean_hourly": 31.55,
+      "mean_annual": 65630,
+      "median_hourly": 29.12,
+      "employment": 670090,
+      "url": "https://www.bls.gov/news.release/archives/ocwage_05152026.pdf",
+      "quote": "Carpenters ... 670,090  31.55  65,630  29.12 (Table 1. National employment and wage data from the Occupational Employment and Wage Statistics survey by occupation, May 2025: employment, mean hourly, mean annual, median hourly)"
+    },
+    "pct_vs_us_mean": -23.4,
+    "pct_vs_us_mean_basis": "Annual means: 50,240 vs 65,630 = -23.4% (metro mean from a secondary source). Identical on the derived hourly mean (24.15 vs 31.55).",
+    "pct_vs_us_median": -19.5,
+    "pct_vs_us_median_basis": "Median hourly 23.44 vs 29.12 = -19.5%; both figures read on U.S. government pages (O*NET OnLine; BLS news release). Safer figure to publish.",
+    "context": {
+      "text": "All construction and extraction occupations: mean hourly $27.03 in Dallas-Fort Worth-Arlington vs $31.42 in the U.S., May 2025.",
+      "url": "https://www.bls.gov/regions/southwest/news-release/2026/occupationalemploymentandwages_dallasfortworth_20260813.htm",
+      "quote": "Construction and extraction 4.1 4.0 31.42 27.03"
+    },
+    "confidence": "medium"
+  },
+  "public_job_wage": {
+    "law": "Texas Government Code Chapter 2258 (state prevailing wage law) covers any public work paid for in whole or part with public funds, including city and school district projects. The awarding public body sets the rates, either from its own survey or by using the U.S. Department of Labor's Davis-Bacon determination. The federal Davis-Bacon Act applies separately to federally funded or assisted contracts.",
+    "state_law": [
+      {
+        "section": "Tex. Gov't Code 2258.002(a)",
+        "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.2258.htm",
+        "quote": "This chapter applies only to the construction of a public work, including a building, highway, road, excavation, and repair work or other project development or improvement, paid for in whole or in part from public funds"
+      },
+      {
+        "section": "Tex. Gov't Code 2258.021",
+        "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.2258.htm",
+        "quote": "A worker employed on a public work by or on behalf of the state or a political subdivision of the state shall be paid: (1) not less than the general prevailing rate of per diem wages for work of a similar character in the locality in which the work is performed",
+        "note": "2258.021(b): \"Subsection (a) does not apply to maintenance work.\""
+      },
+      {
+        "section": "Tex. Gov't Code 2258.022(a)",
+        "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.2258.htm",
+        "quote": "the public body shall determine the general prevailing rate of per diem wages ... by: (1) conducting a survey of the wages received by classes of workers employed on projects of a character similar to the contract work in the political subdivision ...; or (2) using the prevailing wage rate as determined by the United States Department of Labor in accordance with the Davis-Bacon Act"
+      },
+      {
+        "section": "Tex. Gov't Code 2258.023(b)",
+        "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.2258.htm",
+        "quote": "A contractor or subcontractor who violates this section shall pay to the state or a political subdivision of the state on whose behalf the contract is made, $60 for each worker employed for each calendar day or part of the day that the worker is paid less than the wage rates stipulated in the contract."
+      }
+    ],
+    "threshold": {
+      "state": null,
+      "state_note": "Chapter 2258 as read states no dollar threshold; it excludes maintenance work (2258.021(b)) and a contractor is not in violation if the public body did not determine the rates and put them in the contract (2258.023(c)).",
+      "federal": 2000,
+      "federal_url": "https://www.dol.gov/agencies/whd/government-contracts/construction",
+      "federal_quote": "The Davis-Bacon and Related Acts apply to contractors and subcontractors performing on federally funded or assisted contracts in excess of $2,000 for the construction, alteration, or repair (including painting and decorating) of public buildings or public works."
+    },
+    "davis_bacon_dallas_county_building": {
+      "determination": "TX20260241",
+      "modification": 1,
+      "date": "2026-05-18",
+      "construction_type": "Building",
+      "county": "Dallas",
+      "classification": "CARPENTER, EXCLUDES DRYWALL HANGING, FORM WORK, AND METAL STUD INSTALLATION",
+      "basic_hourly_rate": 17.13,
+      "fringe": 2.97,
+      "total": 20.1,
+      "rate_identifier": "SUTX2014-017 07/21/2014 (survey rate)",
+      "url": "https://sam.gov/wage-determination/TX20260241/1",
+      "api_url_read": "https://sam.gov/api/prod/wdol/v1/wd/TX20260241/1",
+      "quote": "General Decision Number: TX20260241 05/18/2026 ... State: Texas ... Construction Types: Building ... Counties: Texas Counties of Dallas ... CARPENTER, EXCLUDES DRYWALL HANGING, FORM WORK, AND METAL STUD INSTALLATION.............................$ 17.13 2.97",
+      "note": "Modification 1 was the latest on 2026-11-24 (modification 2 not found). Related rows in the same decision: DRYWALL HANGER AND METAL STUD INSTALLER $15.45 + 0.00; MILLWRIGHT (CARP1421-002 10/01/2023) $32.02 + 11.27. Toilet partition installers are not a listed classification; which class applies is the contracting agency's call."
+    },
+    "city_of_dallas_contracts": {
+      "rule": "On City of Dallas construction contracts the required wage is the greater of the City's living wage and the Davis-Bacon rate, fringe included. FY26 living wage: $23.06/hour for solicitations issued on or after 2025-10-01. The Davis-Bacon carpenter rate plus fringe ($20.10) is below $23.06, so the living wage is the floor for a carpenter on a City building contract solicited in FY26.",
+      "living_wage": 23.06,
+      "living_wage_effective": "2025-10-01",
+      "url": "https://dallascityhall.com/government/citymanager/Documents/FY24-25%20Memos/Living%20Wage%20Annual%20Update.pdf",
+      "quote": "In accordance with Resolution No. 21-903 (effective October 1, 2021), the City requires that construction contracts adhere to the greater of the MIT Living Wage or the Davis-Bacon Prevailing Wage, including fringe benefits. This requirement applies to both public building construction and highway/heavy construction projects.",
+      "quote_rate": "For FY26, the living wage for an individual in Dallas County is $23.06 per hour (memo dated August 14, 2025)",
+      "note": "The $50,000 contract threshold on the City's living-wage flyer (Resolution 15-2141) is stated for general service contracts; the memo states no threshold for construction contracts."
+    },
+    "dallas_isd": {
+      "rule": null,
+      "note": "Not read. A search result describes a 2025 Dallas ISD bond board item recommending the City of Dallas Building Construction Wage Rates scale; the rates are in each project's bid documents. Ask Dallas ISD Construction Services / Procurement."
+    },
+    "confidence": "high"
+  },
+  "access_differences": [],
+  "access_summary": {
+    "state_standard": "2012 Texas Accessibility Standards (TDLR), effective March 15, 2012",
+    "finding": "For toilet stalls the Texas standard does not go further than the 2010 ADA Standards. Sections 213.3.1, 603, 604 (including 604.8 toilet compartments and 604.9 children's compartments) and 609 (grab bars), and the sign sections 216.8 and 703, were compared subsection by subsection, advisories included: the text is the same apart from fraction typography. TAS uses the same section numbers as the 2010 Standards; it does not adopt ICC A117.1.",
+    "method": "Both PDFs downloaded from the official sites, converted with pdftotext and compared programmatically (213; 603-604; 609; 216; 703; 206.2.3).",
+    "identical_quote": {
+      "tas_url": "https://www.tdlr.texas.gov/ab/2012TAS/2012tascomplete.pdf",
+      "ada_url": "https://www.ada.gov/assets/pdfs/2010-design-standards.pdf",
+      "section": "213.3.1",
+      "quote": "Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1. In addition to the compartment required to comply with 604.8.1, at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures."
+    },
+    "differences_near_stalls_not_stalls": [
+      {
+        "section": "TAS 213.3.5 Mirrors",
+        "state": "Where mirrors are provided, at least one shall comply with 603.3. Accessible mirrors shall be provided at locations that are consistent with the location of other mirrors in the same room.",
+        "federal": "Where mirrors are provided, at least one shall comply with 603.3.",
+        "url": "https://www.tdlr.texas.gov/ab/2012TAS/2012tascomplete.pdf",
+        "federal_url": "https://www.ada.gov/assets/pdfs/2010-design-standards.pdf",
+        "note": "Texas adds the second sentence. Not a stall rule."
+      },
+      {
+        "section": "TAS 206.2.3 Exception 1 (referenced by 213.1)",
+        "state": "...or another type of facility as determined by the U. S. Attorney General. In transportation facilities, any area housing passenger services, including boarding and debarking, loading and unloading, baggage claim, dining facilities, and other common areas open to the public must be on an accessible route from an accessible entrance.",
+        "federal": "...or another type of facility as determined by the Attorney General.",
+        "url": "https://www.tdlr.texas.gov/ab/2012TAS/2012tascomplete.pdf",
+        "federal_url": "https://www.ada.gov/assets/pdfs/2010-design-standards.pdf",
+        "note": "Texas adds the transportation-facility sentence. Not a stall rule."
+      }
+    ],
+    "texas_process_differences": [
+      {
+        "point": "State plan review and registration",
+        "section": "Tex. Gov't Code 469.101",
+        "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.469.htm",
+        "quote": "All plans and specifications for the construction of or for the substantial renovation or modification of a building or facility must be submitted to the department for review and approval if: (1) the building or facility is subject to this chapter; and (2) the estimated construction cost is at least $50,000.",
+        "federal": "The ADA has no plan submission or pre-approval step."
+      },
+      {
+        "point": "Inspection within a year of completion",
+        "section": "Tex. Gov't Code 469.105(a)",
+        "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.469.htm",
+        "quote": "The owner of a building or facility described by Section 469.101 is responsible for having the building or facility inspected for compliance with the standards and specifications adopted by the commission under this chapter not later than the first anniversary of the date the construction or substantial renovation or modification of the building or facility is completed."
+      },
+      {
+        "point": "Texas standards must track federal ones",
+        "section": "Tex. Gov't Code 469.052(a)",
+        "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.469.htm",
+        "quote": "The commission shall adopt standards, specifications, and other rules under this chapter that are consistent with standards, specifications, and other rules adopted under federal law."
+      }
+    ],
+    "city_note": "The Dallas Building Code (2021 IBC with Dallas amendments, Chapter 11) applies alongside TAS; Dallas amended IBC 1110.2.1 (family or assisted-use toilet rooms in assembly and mercantile occupancies). The IBC references ICC A117.1 for technical provisions; its stall provisions were not compared here.",
+    "confidence": "high"
+  },
+  "restroom_rules": {
+    "single_user": {
+      "rule": "In Dallas, single-user toilet rooms and family or assisted-use toilet rooms must be identified as available to all persons regardless of sex (Dallas Building Code 2902.1.2 and Dallas Plumbing Code 403.1.2: the 2021 I-code text, kept in the Dallas ordinances). No Texas statute requires private owners to make single-user restrooms all-gender; state law expressly lets government bodies provide single-occupancy and family restrooms.",
+      "facts": [
+        {
+          "source": "Dallas Building Code 2902.1.2 (Ordinance No. 32421)",
+          "url": "https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0468.pdf",
+          "quote": "Single-user toilet and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified as being available for use by all persons regardless of their sex."
+        },
+        {
+          "source": "Dallas Plumbing Code 403.1.2 (Ordinance No. 32422)",
+          "url": "https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0469.pdf",
+          "quote": "Single-user toilet and bathing rooms, and family or assisted-use toilet rooms and bathing rooms shall be identified as being available for use by all persons regardless of their sex."
+        },
+        {
+          "source": "Dallas Building Code 2902.2 exception 5",
+          "url": "https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0468.pdf",
+          "quote": "Separate facilities shall not be required to be designated by sex where single-user toilets rooms are provided in accordance with Section 2902.1.2."
+        },
+        {
+          "source": "Tex. Gov't Code 3002.052(a)(2)",
+          "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm",
+          "quote": "Section 3002.051 does not prohibit a political subdivision or state agency from: ... (2) establishing a single-occupancy private space, family restroom, or changing room"
+        },
+        {
+          "source": "2012 TAS 213.2.1 (same as 2010 ADA)",
+          "url": "https://www.tdlr.texas.gov/ab/2012TAS/2012tascomplete.pdf",
+          "quote": "Doors to unisex toilet rooms and unisex bathing rooms shall have privacy latches."
+        }
+      ]
+    },
+    "multi_user_all_gender": {
+      "rule": "The Dallas codes allow a multi-user room serving both sexes in place of separate men's and women's rooms if every water closet is in its own compartment with walls or partitions and a door, and urinals are visually separated or each in a stall. The code text read sets no partition height, no-gap, lock or occupancy-indicator requirement for those compartments. Fixture count is then based on 100 percent of the occupant load. In buildings owned, operated or controlled by a Texas political subdivision or state agency (cities, counties, school districts, public colleges), state law requires every multiple-occupancy restroom to be designated for one sex, so a multi-user all-gender room is not available there.",
+      "facts": [
+        {
+          "source": "Dallas Building Code 2902.2 exception 6 (Ordinance No. 32421)",
+          "url": "https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0468.pdf",
+          "quote": "Separate facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by both sexes and privacy for water closets are installed in accordance with Section 405.3.4 of the Dallas Plumbing Code. Urinals shall be located in an area visually separated from the remainder of the facility or each urinal that is provided shall be located in a stall.",
+          "note": "OCR of the ordinance shows 'Dallas [International] Plumbing Code' with 'International' struck."
+        },
+        {
+          "source": "Dallas Plumbing Code 405.3.4 (2021 IPC text, not amended by Dallas)",
+          "url": "https://up.codes/viewer/dallas/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+          "official": false,
+          "quote": "Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy.",
+          "note": "Read on UpCodes (secondary): Section 405.3.4 is not reprinted in the Dallas amendment ordinance and codes.iccsafe.org does not serve text to scripts. As read, it says nothing on partition height, gaps, locks or occupancy indicators."
+        },
+        {
+          "source": "Dallas Plumbing Code 403.1.1 exception 2 (Ordinance No. 32422)",
+          "url": "https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0469.pdf",
+          "quote": "Where multiple-user facilities are designed to serve all genders, the minimum fixture count shall be calculated 100 percent, based on total occupant load."
+        },
+        {
+          "source": "Tex. Gov't Code 3002.051(a)",
+          "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm",
+          "quote": "A political subdivision or state agency shall designate each multiple-occupancy private space in a building the political subdivision or state agency owns, operates, or controls for use only by individuals of one sex."
+        },
+        {
+          "source": "Tex. Gov't Code 3002.001(6)",
+          "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm",
+          "quote": "\"Multiple-occupancy private space\" means a facility designed or designated for simultaneous use by more than one individual and in which an individual may be in a state of undress in the presence of another individual, regardless of whether the facility provides curtains or partial walls for privacy. The term includes a restroom, locker room, changing room, or shower room."
+        }
+      ]
+    },
+    "use_restrictions": {
+      "rule": "Texas Government Code Chapter 3002 (S.B. 8, 89th Legislature, 2nd Called Session; effective December 4, 2025) applies to buildings a political subdivision or state agency owns, operates or controls. Multiple-occupancy restrooms there must be designated for one sex, defined as biological sex, and the agency must take every reasonable step to keep individuals of the opposite sex out. Penalties fall on the political subdivision or agency, not on individuals. The chapter as read does not regulate privately owned buildings.",
+      "facts": [
+        {
+          "source": "Tex. Gov't Code 3002.051(b)",
+          "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm",
+          "quote": "A political subdivision or state agency shall take every reasonable step to ensure an individual whose sex is opposite to the sex designated for a multiple-occupancy private space under Subsection (a) does not enter the private space."
+        },
+        {
+          "source": "Tex. Gov't Code 3002.001(8)",
+          "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm",
+          "quote": "\"Sex\" means an individual's biological sex, either male or female."
+        },
+        {
+          "source": "Tex. Gov't Code 3002.001(7)",
+          "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm",
+          "quote": "\"Political subdivision\" means a governmental entity of this state, including a county, municipality, special purpose district or authority, school district, open-enrollment charter school, or junior college district."
+        },
+        {
+          "source": "Tex. Gov't Code 3002.053",
+          "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm",
+          "quote": "A designation of a multiple-occupancy private space under Section 3002.051 does not apply to: (1) an individual entering ... (A) for a custodial purpose; (B) for a maintenance or inspection purpose; (C) to render medical or other emergency assistance; (D) to accompany and provide assistance to an individual who needs assistance in using the facility; ... or (2) a child who is: (A) nine years of age or younger ... and (B) accompanied by an individual caring for the child."
+        },
+        {
+          "source": "Tex. Gov't Code 3002.101(a)",
+          "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm",
+          "quote": "A political subdivision or state agency that violates this chapter is liable for a civil penalty of: (1) $25,000 for the first violation; and (2) $125,000 for the second or a subsequent violation."
+        },
+        {
+          "source": "Effective date",
+          "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm",
+          "quote": "Added by Acts 2025, 89th Leg., 2nd C.S., Ch. 20 (S.B. 8), Sec. 2, eff. December 4, 2025."
+        }
+      ]
+    },
+    "city_ordinance": {
+      "rule": "Dallas City Code Chapter 46 bars places of public accommodation from denying facilities because of sexual orientation or gender identity and expression. The copy read has no restroom-specific provision; it does not apply to state or local government, and it is a defense that an exclusion was required by law.",
+      "facts": [
+        {
+          "source": "Dallas City Code Sec. 46-6.1(a)",
+          "url": "https://dallascityhall.com/departments/fairhousing/PublishingImages/Pages/fair_housing_links/Chapter%2046%20Unlawful%20Discriminatory%20Practices%20Relating%20to%20Sexual%20Orientation%20and%20Gender%20Identity%20and%20Expression.pdf",
+          "quote": "It is unlawful for any owner, proprietor, or lessee of any place of public accommodation, because of sexual orientation or gender identity and expression: (1) to directly or indirectly exclude, segregate, limit, refuse, or deny to any person any of the accommodations, advantages, facilities, benefits, privileges, services, or goods offered to the general public at that place"
+        },
+        {
+          "source": "Dallas City Code Sec. 46-6.1(b)",
+          "url": "https://dallascityhall.com/departments/fairhousing/PublishingImages/Pages/fair_housing_links/Chapter%2046%20Unlawful%20Discriminatory%20Practices%20Relating%20to%20Sexual%20Orientation%20and%20Gender%20Identity%20and%20Expression.pdf",
+          "quote": "It is a defense to prosecution under this section that the refusal to admit a person to a place of public accommodation or the expulsion of a person from a place of public accommodation was required by law."
+        },
+        {
+          "source": "Dallas City Code Sec. 46-5",
+          "url": "https://dallascityhall.com/departments/fairhousing/PublishingImages/Pages/fair_housing_links/Chapter%2046%20Unlawful%20Discriminatory%20Practices%20Relating%20to%20Sexual%20Orientation%20and%20Gender%20Identity%20and%20Expression.pdf",
+          "quote": "This chapter does not apply to: (1) a religious organization; (2) the United States government ...; or (3) the government of the State of Texas or any of its departments, agencies, or political subdivisions."
+        },
+        {
+          "source": "Dallas City Code Sec. 46-4(b)",
+          "url": "https://dallascityhall.com/departments/fairhousing/PublishingImages/Pages/fair_housing_links/Chapter%2046%20Unlawful%20Discriminatory%20Practices%20Relating%20to%20Sexual%20Orientation%20and%20Gender%20Identity%20and%20Expression.pdf",
+          "quote": "For purposes of this chapter, an individual's gender is determined solely by that individual's own perception of their gender."
+        }
+      ],
+      "note": "Read in the PDF copy on dallascityhall.com (ordinance history through Ord. 29942); the code library (codelibrary.amlegal.com) returned HTTP 403, so later amendments were not checked. The section number 46-4(b) is inferred from position in the PDF."
+    },
+    "confidence": "high",
+    "confidence_note": "High for Chapter 3002 and the Dallas Building/Plumbing Code amendments (official text). Medium for Plumbing Code 405.3.4 (UpCodes) and for the currency of Chapter 46."
+  },
+  "sales_tax": {
+    "rate": {
+      "combined": 0.0825,
+      "state": 0.0625,
+      "county": 0.0,
+      "city": 0.01,
+      "district": 0.01,
+      "district_name": "Dallas MTA (Dallas Area Rapid Transit), local code 3057994",
+      "city_local_code": "2057011",
+      "url": "https://comptroller.texas.gov/taxes/sales/city.php",
+      "quote": "Dallas (Dallas Co) 2057011 .010000 .082500 / Dallas MTA 3057994 .010000 ... * Total includes the state's sales and use tax rate of 6.25%.",
+      "state_quote": "Texas imposes a 6.25 percent state sales and use tax on all retail sales, leases and rentals of most goods, as well as taxable services. Local taxing jurisdictions (cities, counties, special purpose districts and transit authorities) can also impose up to 2 percent sales and use tax for a maximum combined rate of 8.25 percent.",
+      "state_url": "https://comptroller.texas.gov/taxes/sales/",
+      "effective": null,
+      "effective_note": "The Comptroller's city table gives no effective date for the combined rate or the city's 1%. The transit page gives the Dallas MTA 1%: \"Effective - Jan. 1, 1984\" (https://comptroller.texas.gov/taxes/sales/mta.php). Dallas County does not appear on the Comptroller's county sales tax list; the special purpose districts listed under Dallas County are in other cities (Cedar Hill, Coppell, Grand Prairie...). 8.25% is the state maximum, so no downtown district can add to it.",
+      "address_check": "Rate read from the Comptroller's city rate table for Dallas (Dallas Co), not from the address-level Sales Tax Rate Locator (a JavaScript tool)."
+    },
+    "shipped_no_install_out_of_state_seller": {
+      "rule": "Taxable. A remote seller with more than $500,000 of Texas revenue in the preceding twelve months must hold a permit and collect Texas use tax: either the local rate at the delivery address (Dallas: 6.25% + 2% = 8.25%) or the single local use tax rate (6.25% + 1.75% = 8.0%). If the seller doesn't charge Texas tax, the buyer owes use tax to the Comptroller.",
+      "facts": [
+        {
+          "url": "https://comptroller.texas.gov/taxes/sales/remote-sellers.php",
+          "quote": "Remote sellers with total Texas revenue of less than $500,000 in the preceding twelve calendar months are not required to obtain a tax permit or collect, report and remit state and local use tax."
+        },
+        {
+          "url": "https://comptroller.texas.gov/taxes/sales/remote-sellers.php",
+          "quote": "Local use tax is due at the location in Texas where the order is shipped or delivered when the order is not received or fulfilled from a Texas place of business."
+        },
+        {
+          "url": "https://comptroller.texas.gov/taxes/sales/remote-sellers.php",
+          "quote": "The current single local use tax rate is 1.75 percent, and the rate is published in the Texas Register by Jan. 1 of each year."
+        },
+        {
+          "url": "https://comptroller.texas.gov/taxes/sales/use-tax.php",
+          "quote": "A Texas purchaser owes state and local use tax if they buy taxable goods and services that are stored, used or consumed in Texas from a seller who does not charge Texas sales tax. If the seller does not have a permit or fails to charge sales and use tax, the purchaser must pay the use tax directly to our office unless an exemption applies."
+        },
+        {
+          "url": "https://comptroller.texas.gov/taxes/sales/use-tax.php",
+          "quote": "If you purchase an item from a remote seller and pay the state use tax and single local use tax, you do not owe any additional taxes."
+        }
+      ]
+    },
+    "installation_labor_commercial_remodel": {
+      "rule": "Taxable in Texas, even when billed separately. Repairing, remodeling or restoring nonresidential real property (replacing or upgrading part of an existing structure) is a taxable service, and tax is due on the total charge, labor included. Labor is not taxable on new construction (including initial finish-out) or on residential property.",
+      "facts": [
+        {
+          "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+          "quote": "the total amount charged for remodeling, repairing, or restoring nonresidential real property is taxable. Examples of nonresidential real property are hospitals, office buildings, refineries, warehouses, parking garages, retail shops, restaurants, manufacturing facilities, and other commercial establishments."
+        },
+        {
+          "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+          "quote": "When you repair or remodel nonresidential real property, you should collect state sales tax plus any local tax on your total charge for the job. ... This figure includes all costs passed on to your customer, except separately stated building permit fees you pay on your customer's behalf."
+        },
+        {
+          "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+          "quote": "When your contract is for any of the following jobs, you are acting as a contractor and your construction labor is not taxable: building new structures; completing unfinished structures; initial finish out work to the interior or exterior of a structure"
+        },
+        {
+          "url": "https://tcss.legis.texas.gov/resources/TX/htm/TX.151.htm",
+          "quote": "Sec. 151.007 ... \"sales price\" or \"receipts\" means the total amount for which a taxable item is sold, leased, or rented, valued in money, without a deduction for the cost of: ... (3) the transportation or installation of tangible personal property",
+          "note": "When the seller of the goods also charges for installing them, the installation charge is part of the taxable sales price."
+        }
+      ]
+    },
+    "furnish_and_install_contract": {
+      "rule": "Depends on the job. Remodel of an existing nonresidential building: the contractor collects tax from the customer on the whole charge (materials and labor) and can buy the partitions tax-free with a resale certificate. New construction: under a lump-sum contract the contractor pays tax on materials when buying them and charges the customer none; under a separated contract the contractor buys on a resale certificate and collects tax on the materials charge only, and the labor is not taxed. Jobs for federal, State of Texas or Texas local government bodies (cities, school districts) are not taxed.",
+      "facts": [
+        {
+          "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+          "quote": "You may give your suppliers resale certificates instead of paying tax on materials that will be incorporated into the customer's real property.",
+          "note": "Under 'Nonresidential Repair and Remodeling'."
+        },
+        {
+          "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+          "quote": "Under a lump-sum contract, you pay tax on all your supplies, materials, equipment, and taxable services when you buy them. You don't charge your customer tax.",
+          "note": "Under 'Collecting Tax on New Construction'."
+        },
+        {
+          "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+          "quote": "You then collect state sales tax, plus any local tax, from your customer on the amount you charge for the materials and those services. Your charge for the materials must be at least as much as you paid for them. The construction labor is not taxable.",
+          "note": "Separated contract, new construction."
+        },
+        {
+          "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+          "quote": "If you have a contract to add new square footage and to remodel existing footage in nonresidential realty for a single charge and the portion relating to the remodeling is more than five percent of the total charge, the total charge is presumed to be taxable."
+        },
+        {
+          "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+          "quote": "You don't need to charge tax when you do a job for a governmental agency - federal, State of Texas, or Texas local government."
+        },
+        {
+          "url": "https://tcss.legis.texas.gov/resources/TX/htm/TX.151.htm",
+          "quote": "Sec. 151.056 ... (a) A contractor is the consumer of tangible personal property furnished by him and incorporated into the property of his customer if the contract between the contractor and his customer contains a lump-sum price covering both the performance of the service and the furnishing of the necessary incidental material."
+        }
+      ],
+      "note": "Publication 94-116 is dated 03/2007 on the Comptroller's site; it cites Rules 3.291 and 3.357 (34 Tex. Admin. Code), which were not read."
+    },
+    "confidence": "high"
+  },
+  "sources_read": [
+    {
+      "url": "https://www.bls.gov/news.release/archives/ocwage_05152026.pdf",
+      "official": true,
+      "note": "BLS news release USDL-26-0725, Occupational Employment and Wages - May 2025, Table 1: Carpenters row (PDF text extracted)"
+    },
+    {
+      "url": "https://www.onetonline.org/link/localwages/47-2031.00?zip=75201",
+      "official": true,
+      "note": "O*NET OnLine local wages, Carpenters, ZIP 75201 (U.S. DOL-sponsored; BLS 2025 wage data): metro, Texas and U.S. percentiles"
+    },
+    {
+      "url": "https://www.bls.gov/ooh/construction-and-extraction/carpenters.htm",
+      "official": true,
+      "note": "BLS Occupational Outlook Handbook: U.S. median $60,580 / $29.12 per hour, May 2025"
+    },
+    {
+      "url": "https://www.bls.gov/regions/southwest/news-release/2026/occupationalemploymentandwages_dallasfortworth_20260813.htm",
+      "official": true,
+      "note": "BLS Southwest release for the Dallas metro, May 2025: metro name, counties, construction group means (carpenters not listed)"
+    },
+    {
+      "url": "https://wagedex.com/jobs/carpenters/metro/dallas-fort-worth-arlington-tx",
+      "official": false,
+      "note": "Secondary: metro mean annual $50,240 and employment 9,480 for carpenters (BLS blocked scripted access)"
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.2258.htm",
+      "official": true,
+      "note": "Texas Government Code ch. 2258 on the Texas Legislature's site (statutes.capitol.texas.gov now serves a script-only shell)"
+    },
+    {
+      "url": "https://sam.gov/wage-determination/TX20260241/1",
+      "official": true,
+      "note": "SAM.gov Davis-Bacon general decision TX20260241 mod 1 (Dallas County, Building), read through sam.gov's public document endpoint"
+    },
+    {
+      "url": "https://www.dol.gov/agencies/whd/government-contracts/construction",
+      "official": true,
+      "note": "Davis-Bacon applicability and $2,000 threshold"
+    },
+    {
+      "url": "https://dallascityhall.com/government/citymanager/Documents/FY24-25%20Memos/Living%20Wage%20Annual%20Update.pdf",
+      "official": true,
+      "note": "City of Dallas memo 'Living Wage Annual Update', August 14, 2025 (filed under FY24-25 memos): FY26 rate and construction rule"
+    },
+    {
+      "url": "https://dallascityhall.com/departments/procurement/Documents/Living%20Wage%20Flyer%20FY26.pdf",
+      "official": true,
+      "note": "Living wage flyer FY26: $23.06, $50,000 general service contract threshold"
+    },
+    {
+      "url": "https://www.tdlr.texas.gov/ab/2012TAS/2012tascomplete.pdf",
+      "official": true,
+      "note": "2012 Texas Accessibility Standards, complete PDF (TDLR)"
+    },
+    {
+      "url": "https://www.tdlr.texas.gov/ab/abtas.htm",
+      "official": true,
+      "note": "TDLR page: 2012 TAS, 'Effective March 15, 2012'"
+    },
+    {
+      "url": "https://www.ada.gov/assets/pdfs/2010-design-standards.pdf",
+      "official": true,
+      "note": "2010 ADA Standards for Accessible Design (ada.gov PDF)"
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.469.htm",
+      "official": true,
+      "note": "Texas Government Code ch. 469 (Elimination of Architectural Barriers)"
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/GV/htm/GV.3002.htm",
+      "official": true,
+      "note": "Texas Government Code ch. 3002 (S.B. 8, eff. 2025-12-04)"
+    },
+    {
+      "url": "https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0468.pdf",
+      "official": true,
+      "note": "Dallas Ordinance No. 32421 (Chapter 53, Building Code): 2902.1.2, 2902.2 and exceptions, 2902.2.1, 1110.2.1 (scanned; OCR text)"
+    },
+    {
+      "url": "https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0469.pdf",
+      "official": true,
+      "note": "Dallas Ordinance No. 32422 (Chapter 54, Plumbing Code): 403.1.1, 403.1.2"
+    },
+    {
+      "url": "https://up.codes/viewer/dallas/ipc-2021/chapter/4/fixtures-faucets-and-fixture-fittings",
+      "official": false,
+      "note": "UpCodes copy of the Dallas Plumbing Code 2021: 403.2, 403.4, 405.3.4, 405.3.5"
+    },
+    {
+      "url": "https://dallascityhall.com/departments/fairhousing/PublishingImages/Pages/fair_housing_links/Chapter%2046%20Unlawful%20Discriminatory%20Practices%20Relating%20to%20Sexual%20Orientation%20and%20Gender%20Identity%20and%20Expression.pdf",
+      "official": true,
+      "note": "Dallas City Code Chapter 46, PDF copy on dallascityhall.com (through Ord. 29942)"
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/sales/city.php",
+      "official": true,
+      "note": "Texas Comptroller city sales and use tax rate table"
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/sales/mta.php",
+      "official": true,
+      "note": "Texas Comptroller transit sales and use tax: Dallas MTA 1%, effective Jan. 1, 1984"
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/sales/county.php",
+      "official": true,
+      "note": "County sales tax list: no Dallas County entry"
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/sales/spd.php",
+      "official": true,
+      "note": "Special purpose districts: Dallas County entries are in other cities"
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/sales/",
+      "official": true,
+      "note": "State rate 6.25%, local cap 2%"
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/sales/remote-sellers.php",
+      "official": true,
+      "note": "Remote sellers: $500,000 safe harbor, single local use tax rate 1.75%"
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/sales/use-tax.php",
+      "official": true,
+      "note": "Use tax owed by purchaser"
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/publications/94-116.php",
+      "official": true,
+      "note": "Publication 94-116, Real Property Repair and Remodeling (03/2007)"
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/TX/htm/TX.151.htm",
+      "official": true,
+      "note": "Texas Tax Code ch. 151: 151.007, 151.056, 151.101"
+    }
+  ],
+  "to_confirm": [
+    "BLS: read the Dallas-Fort Worth-Arlington carpenter mean hourly wage on https://data.bls.gov/oes/#/area/0019100/2025 in a browser (expected about $24.15, from the $50,240 annual mean on secondary sites). Until then publish the median comparison (-19.5%), which was read on government pages.",
+    "City of Dallas living wage for FY27 (from 2026-10-01): a news aggregator reports the Council froze the rate at $23.06 instead of raising it to $23.33 and amended the policy in September 2026 (Dallas Morning News). No city document was found; ask the Office of Procurement Services (214-670-3326) whether $23.06 still applies and whether the construction rule (Resolution 21-903) changed.",
+    "Dallas ISD: which prevailing wage schedule its construction contracts use and the carpenter rate (ask Dallas ISD Construction Services / Procurement). Same question for Dallas County and Dallas College projects.",
+    "Which Davis-Bacon classification an agency assigns to toilet partition installation (carpenter $17.13 + $2.97 assumed).",
+    "SAM.gov: confirm TX20260241 modification 1 (2026-05-18) is still current at bid time; a new TX2027 decision is normally published in early January.",
+    "Dallas Plumbing Code 405.3.4 and 403.2 exception 6: check the wording on codes.iccsafe.org (read on UpCodes), and ask Dallas Building Inspection whether plan review asks for anything more of all-gender multi-user stalls (partition height, gaps, locks).",
+    "Dallas City Code Chapter 46: check the current text on codelibrary.amlegal.com for amendments after Ord. 29942.",
+    "Chapter 3002 (S.B. 8): check for pending litigation or attorney general guidance before describing its effect on leased space (\"owns, operates, or controls\").",
+    "Sales tax: run a downtown address (e.g. 1500 Marilla St, 75201) through the Comptroller's Sales Tax Rate Locator to confirm 8.25% and the jurisdictions, and get the effective date of the City of Dallas 1% from the Comptroller (800-252-5555).",
+    "Sales tax: whether a given partition replacement is 'remodeling' (taxable labor) or new construction / initial finish-out (labor not taxable), and the treatment when an out-of-state seller ships goods and a separate Texas installer bills the labor: confirm against Rules 3.291 and 3.357 or with the Comptroller. Publication 94-116 is dated 03/2007.",
+    "Whether Next Partitions itself must collect Texas tax (the $500,000 remote-seller safe harbor, or physical presence) is a question for Abe's accountant."
+  ]
+}

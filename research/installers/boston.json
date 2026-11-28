@@ -1,0 +1,418 @@
+{
+ "area": "boston",
+ "found_count": 12,
+ "sources_tried": [
+  "Seed file boston.json (maps and web): worked. Plausible leads checked on company sites. Most web seed URLs were opaque google.com/goto redirects, so they were not usable.",
+  "Bobrick find-a-rep: page loaded, but the locator is a dropdown with no results in static HTML, so no MA reps found.",
+  "Scranton Products find-a-rep (/find-a-rep/): 404.",
+  "ASI (americanspecialties.com/find-a-rep/): 404.",
+  "Bradley, Hadrian, Metpar, General Partitions, Ampco locators: not reached within the effort budget.",
+  "The Blue Book (thebluebook.com): blocked (403) on both the category page and iProView profiles. Only search snippets were used (New England toilet partitions list names KDH Commercial Doors & Hardware, Auburn MA, and Metro Walls, Manchester NH, both over 30 mi; The Northern Corp profile).",
+  "BuildingConnected / Procore: not tried.",
+  "bldup.com (Granite State Specialties): blocked (403).",
+  "onepointpartitions.com Massachusetts page: blocked (403).",
+  "AGC Massachusetts member directory: worked (Newton Building Specialties & Installation).",
+  "Florence mailboxes dealer page: worked (Automation Solutions).",
+  "BBB Lowell 'Partitions' category: worked (Granite State Specialties, Raymond NH; Doors Unlimited, Leominster MA, out of radius; Partition Systems Inc, North Reading MA, likely office partitions, not included).",
+  "WebSearch: used all 8 allowed searches. Useful queries were 'toilet partition installation contractor Massachusetts Division 10' and '\"toilet partitions\" \"lockers\" install Massachusetts specialties contractor Boston'.",
+  "Restroom Remodels (Ipswich) site: returned an empty page, so it was not verified and not included."
+ ],
+ "candidates": [
+  {
+   "name": "CK Gallagher Installations LLC",
+   "base_city": "Wilmington",
+   "state": "MA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.ckgallagherinstallations.com/",
+   "phone": "781-838-2726",
+   "email": "Ckgallagherinstall@gmail.com",
+   "contact_page": "https://www.ckgallagherinstallations.com/",
+   "evidence_urls": [
+    "https://www.ckgallagherinstallations.com/"
+   ],
+   "partition_evidence": "Site lists 'Bathroom Partition Installation & Repair' in metal, stainless, plastic, phenolic and laminate, plus bathroom accessories and commercial lockers.",
+   "red_flags": [
+    "Uses a Gmail address"
+   ],
+   "reason": "Independent install-only contractor for commercial bathroom partitions and accessories, based about 15 miles north of Boston; best fit for installing customer-bought partitions.",
+   "added_by_checker": false,
+   "license": {
+    "name": "CK Gallagher Installations LLC",
+    "area": "boston",
+    "status": "not_online",
+    "registry": "Massachusetts OPSI construction supervisor license check (mass.gov)",
+    "note": "Not checked: mass.gov returned HTTP 403 to automated access. The license is held by individuals, not companies. Check by hand on mass.gov.",
+    "source_url": "https://www.mass.gov/how-to/check-a-construction-supervisor-license"
+   },
+   "score": 75
+  },
+  {
+   "name": "Automation Solutions, Inc.",
+   "base_city": "Boston",
+   "state": "MA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.automationsolutionsinc.com/",
+   "phone": "617-681-6700",
+   "contact_page": "https://www.automationsolutionsinc.com/contact/",
+   "evidence_urls": [
+    "https://www.automationsolutionsinc.com/"
+   ],
+   "partition_evidence": "Homepage lists toilet partitions and toilet accessories among products it furnishes and installs; describes itself as a Division 10 building specialties company.",
+   "red_flags": [
+    "Furnishes partitions itself (supplier as well as installer)"
+   ],
+   "reason": "Boston-based Division 10 subcontractor that furnishes and installs toilet partitions for commercial offices, retail, schools, hospitals and airports.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Automation Solutions, Inc.",
+    "area": "boston",
+    "status": "not_online",
+    "registry": "Massachusetts Office of Public Safety and Inspections (OPSI) construction supervisor license check (mass.gov)",
+    "note": "Not checked: mass.gov returned HTTP 403 to automated access, so the lookup page could not be read. Massachusetts issues construction supervisor licenses to individuals, not companies. Boston's rule only requires one where the work calls for it, so a company-level license may not apply to commercial partition installs. Confirm by hand on the OPSI 'check a license' page or by asking the installer for their supervisor's license number.",
+    "source_url": "https://www.mass.gov/how-to/check-a-construction-supervisor-license"
+   },
+   "score": 70
+  },
+  {
+   "name": "Unlimited Specialties Co",
+   "base_city": "Quincy",
+   "state": "MA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://www.unlimitedspecialties1.com/",
+   "phone": "(617) 471-7070",
+   "email": "bobm@unlimitedspecialties1.com",
+   "contact_page": "http://www.unlimitedspecialties1.com/contactus.html",
+   "evidence_urls": [
+    "http://www.unlimitedspecialties1.com/",
+    "http://www.unlimitedspecialties1.com/contactus.html",
+    "https://www.thebluebook.com/iProView/800991/unlimited-specialties-co-inc/subcontractors//construction-projects/100-technology-center-drive-toliet-partions-230624/"
+   ],
+   "partition_evidence": "Division 10 subcontractor; toilet partitions are the first item listed for provision and installation; Blue Book lists a completed toilet partitions project at an office building in Stoughton, MA (seen in search result only).",
+   "red_flags": [
+    "Provides (supplies) partitions as well as installing"
+   ],
+   "reason": "Quincy Division 10 subcontractor that provides and installs toilet partitions; commercial office project on record.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Unlimited Specialties Co",
+    "area": "boston",
+    "status": "not_online",
+    "registry": "Massachusetts OPSI construction supervisor license check (mass.gov)",
+    "note": "Not checked: mass.gov returned HTTP 403 to automated access. The license is held by individuals, not companies. Check by hand on mass.gov. A Secretary of the Commonwealth corporation search would show whether the company is active, but it is a form search and was not submitted.",
+    "source_url": "https://www.mass.gov/how-to/check-a-construction-supervisor-license"
+   },
+   "score": 70
+  },
+  {
+   "name": "J. Sallese & Sons",
+   "base_city": "Woburn",
+   "state": "MA",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://www.jsallese.com/",
+   "phone": "(781) 246-3508",
+   "email": "jsallese@jsallese.com",
+   "contact_page": "https://www.jsallese.com/contact-us.html",
+   "evidence_urls": [
+    "http://www.jsallese.com/",
+    "https://www.jsallese.com/contact-us.html"
+   ],
+   "partition_evidence": "Says it provides, installs and repairs restroom partitions and washroom accessories; self-described Division 10 subcontractor for general contractors.",
+   "red_flags": [
+    "Sells partitions itself (Washroom Partitions & Accessories product category)"
+   ],
+   "reason": "Woburn Division 10 subcontractor with 40+ years installing and repairing restroom partitions, mainly for schools and universities.",
+   "added_by_checker": false,
+   "license": {
+    "name": "J. Sallese & Sons",
+    "area": "boston",
+    "status": "not_online",
+    "registry": "Massachusetts OPSI construction supervisor license check (mass.gov)",
+    "note": "Not checked: mass.gov returned HTTP 403 to automated access. The license is held by individuals, not companies. Check by hand on mass.gov.",
+    "source_url": "https://www.mass.gov/how-to/check-a-construction-supervisor-license"
+   },
+   "score": 70
+  },
+  {
+   "name": "Construction Specialties Installations (CSI)",
+   "base_city": "Salem",
+   "state": "NH",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "nearby",
+   "brands": [
+    "Privada",
+    "Thrislington",
+    "Privacy Plus",
+    "Hollman"
+   ],
+   "website": "https://www.csinstallers.com/",
+   "phone": "(866) 746-8849",
+   "contact_page": "https://www.csinstallers.com/contact/",
+   "evidence_urls": [
+    "https://www.csinstallers.com/"
+   ],
+   "partition_evidence": "Lists toilet partition installation as a core service; certified installer for Privada, Thrislington and Privacy Plus partitions.",
+   "red_flags": [
+    "Multi-office firm (Ronkonkoma NY, Salem NH, Fort Lauderdale FL); headquarters not stated"
+   ],
+   "reason": "Install-only construction specialties firm with a Salem, NH office about 30 miles from Boston; installs toilet partitions for commercial, healthcare and education clients across the Northeast.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Construction Specialties Installations (CSI)",
+    "area": "boston",
+    "status": "not_online",
+    "registry": "Massachusetts Division of Occupational Licensure 'Check a license' (construction supervisor licenses), https://www.mass.gov/check-a-license; NH has no state contractor license",
+    "source_url": "https://www.csinstallers.com/",
+    "note": "New Hampshire has no state license for general or specialty contractors (research/state-licensing/states.json, medium confidence, not verified against an official page), so there's no NH board to check. Jobs in the Boston area fall under Boston's rule: the contractor applies for the permit, and a Massachusetts construction supervisor license (CSL) holder is needed where the work requires one. The CSL is held by a person, not the company. The MA lookup returned HTTP 403 to automated access on 2026-11-19, so it was not searched. The NH SOS QuickStart business search also returned 403, so the company's registration wasn't checked. The company site names offices in Ronkonkoma, NY; Salem, NH; and Fort Lauderdale, FL, and shows no license or registration number. Next step: by hand or by phone, confirm who holds the MA CSL for Boston permits."
+   },
+   "score": 70
+  },
+  {
+   "name": "Division 10 Specialties, Inc.",
+   "base_city": "Pembroke",
+   "state": "MA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "ASI Global Partitions"
+   ],
+   "website": "http://www.division10.net/",
+   "phone": "(781) 829-0546",
+   "email": "estimating@division10.net",
+   "contact_page": "https://division10.net/contact/",
+   "evidence_urls": [
+    "https://division10.net/",
+    "https://division10.net/suppliers/"
+   ],
+   "partition_evidence": "Supplies and installs specialty construction products; suppliers page lists Bobrick, Bradley/Mills and ASI Global partitions, but no page read states partition installation outright.",
+   "red_flags": [
+    "Supplies partitions from the same manufacturers Next Partitions resells (buy-around risk)"
+   ],
+   "reason": "Commercial Division 10 supplier/installer about 25 miles from Boston carrying partition brands; installation of partitions specifically not shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Division 10 Specialties, Inc.",
+    "area": "boston",
+    "status": "not_online",
+    "registry": "Massachusetts OPSI construction supervisor license check (mass.gov)",
+    "note": "Not checked: mass.gov returned HTTP 403 to automated access. The license is held by individuals, not companies. Check by hand on mass.gov.",
+    "source_url": "https://www.mass.gov/how-to/check-a-construction-supervisor-license"
+   },
+   "score": 50
+  },
+  {
+   "name": "Newton Distributing Company / Newton Building Specialties & Installation Inc",
+   "base_city": "Natick",
+   "state": "MA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Hadrian",
+    "Scranton"
+   ],
+   "website": "https://www.newtondistributing.com/",
+   "phone": "877-837-7745",
+   "email": "sales@newtondistributing.com",
+   "contact_page": "https://www.newtondistributing.com/contact-newton/",
+   "evidence_urls": [
+    "https://www.newtondistributing.com/",
+    "https://www.newtondistributing.com/contact-newton/",
+    "https://www.newtondistributing.com/toilet-partitions-near-me/",
+    "https://business.agcmass.org/list/category/div-10-specialties-17"
+   ],
+   "partition_evidence": "Newton Distributing sells toilet partitions nationwide and refers installers; sister company Newton BSI (AGC Mass lists it in Westborough, MA; phone 508-439-4941 per Newton's site) handles Division 9 and 10 products and installations in New England.",
+   "red_flags": [
+    "Online partition retailer: a direct competitor of Next Partitions and a strong buy-around risk",
+    "Installation done by sister company Newton BSI, not shown doing partition installs on a page read"
+   ],
+   "reason": "Division 10 distributor whose sister company installs in New England; competitor that sells partitions, so unsuitable unless it agrees to install only.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Newton Distributing Company / Newton Building Specialties & Installation Inc",
+    "area": "boston",
+    "status": "not_online",
+    "registry": "Massachusetts OPSI construction supervisor license check (mass.gov)",
+    "note": "Not checked: mass.gov returned HTTP 403 to automated access. The license is held by individuals, not companies. Check by hand on mass.gov.",
+    "source_url": "https://www.mass.gov/how-to/check-a-construction-supervisor-license"
+   },
+   "score": 50
+  },
+  {
+   "name": "Goldense Building Products Inc",
+   "base_city": "Norfolk",
+   "state": "MA",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://goldensebuildingproducts.com/",
+   "phone": "(508) 384-2666",
+   "email": "Paul@goldensebuildingproducts.com",
+   "contact_page": "https://goldensebuildingproducts.com/",
+   "evidence_urls": [
+    "https://goldensebuildingproducts.com/"
+   ],
+   "partition_evidence": "Distributes, fabricates and installs commercial building products; lists 'Toilet Partitions & Accessories' as a product category, but focus is doors, frames and hardware.",
+   "red_flags": [
+    "Distributor of partitions (buy-around risk)",
+    "Listed email is an individual's address"
+   ],
+   "reason": "Commercial door and hardware specialist about 27 miles from Boston that lists toilet partitions; partition installation not explicitly shown.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Goldense Building Products Inc",
+    "area": "boston",
+    "status": "not_online",
+    "registry": "Massachusetts OPSI construction supervisor license check (mass.gov)",
+    "note": "Not checked: mass.gov returned HTTP 403 to automated access. The license is held by individuals, not companies. Check by hand on mass.gov.",
+    "source_url": "https://www.mass.gov/how-to/check-a-construction-supervisor-license"
+   },
+   "score": 50
+  },
+  {
+   "name": "Specialty Services of New England (SSNE)",
+   "base_city": "Salem",
+   "state": "NH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://www.specservne.com/",
+   "phone": "603-386-0159",
+   "email": "info@specservne.com",
+   "contact_page": "https://www.specservne.com/contact",
+   "evidence_urls": [
+    "https://www.specservne.com/"
+   ],
+   "partition_evidence": "Furnishes and installs Division 10, 11 and 12 specialties; no specific products such as toilet partitions named. Also has a Boston office/showroom.",
+   "red_flags": [
+    "No partition work shown"
+   ],
+   "reason": "Division 10 furnish-and-install firm headquartered in Salem, NH with a Boston office; partition installation unproven.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Specialty Services of New England (SSNE)",
+    "area": "boston",
+    "status": "not_online",
+    "registry": "Massachusetts Division of Occupational Licensure 'Check a license' (construction supervisor licenses), https://www.mass.gov/check-a-license; NH has no state contractor license",
+    "source_url": "https://www.specservne.com/",
+    "note": "No NH state contractor license exists to check. For the Boston area, permits need a Massachusetts construction supervisor license (CSL) holder where the work requires one. The MA lookup returned HTTP 403 on 2026-11-19, and the NH SOS QuickStart business search also returned 403. The company site gives its main headquarters in Salem, NH and a Boston office and showroom, and shows no license or registration number. Next step: confirm the CSL holder by hand or by phone."
+   },
+   "score": 25
+  },
+  {
+   "name": "Granite State Specialties LLC",
+   "base_city": "Raymond",
+   "state": "NH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.bldup.com/organizations/granite-state-specialties",
+    "https://bbb.org/us/nh/category/partition"
+   ],
+   "partition_evidence": "Search snippets only (BLDUP profile describes it as a supplier and installer of specialty construction products including toilet partitions; BBB lists it under partitions). Pages themselves blocked (403); no company website found.",
+   "red_flags": [
+    "No company website found",
+    "Conflicting addresses (Raymond vs Windham, NH)",
+    "Raymond, NH is about 45 miles from Boston"
+   ],
+   "reason": "Possible partition supplier/installer but evidence comes from search snippets only and the base is likely outside the 30-mile radius.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Granite State Specialties LLC",
+    "area": "boston",
+    "status": "not_online",
+    "registry": "Massachusetts Division of Occupational Licensure 'Check a license' (construction supervisor licenses), https://www.mass.gov/check-a-license; NH has no state contractor license",
+    "note": "Base city: Raymond, NH (from the task input). No website was given and none was fetched. There's no NH state contractor license to check. The MA CSL lookup and the NH SOS QuickStart business search both returned HTTP 403 on 2026-11-19, so neither the CSL nor the LLC's registration status could be read. Next step: confirm by hand."
+   },
+   "score": 20
+  },
+  {
+   "name": "Kelley Bros",
+   "base_city": "unknown",
+   "state": "MA",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://www.kelleybros.com/",
+   "phone": "800-856-2550",
+   "contact_page": "https://www.kelleybros.com/contact-us/",
+   "evidence_urls": [
+    "https://www.kelleybros.com/"
+   ],
+   "partition_evidence": "Door, frame and hardware distributor that mentions Division 10 and washroom accessories; no toilet partitions or installation of them mentioned.",
+   "red_flags": [
+    "Multi-state distributor; Lakeville, MA base not confirmed on site"
+   ],
+   "reason": "Primarily a commercial door/hardware and security supplier; no evidence of partition installation.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "The Northern Corp",
+   "base_city": "unknown",
+   "state": "unknown",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "evidence_urls": [
+    "https://thebluebook.com/iProView/798470/the-northern-corp/subcontractors"
+   ],
+   "partition_evidence": "Search snippet of a Blue Book profile calls it a Division 10 and 11 subcontractor providing and installing building specialties and a large New England Division 10 distributor; profile blocked (403).",
+   "red_flags": [
+    "No website found",
+    "Base city unknown",
+    "Evidence from search snippet only"
+   ],
+   "reason": "Could not verify location, website or partition work; revisit if a website turns up.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  }
+ ]
+}

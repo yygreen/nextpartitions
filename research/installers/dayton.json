@@ -1,0 +1,462 @@
+{
+ "area": "dayton",
+ "found_count": 15,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/dayton.json: worked; mostly irrelevant (remodelers, plumbers, glass shops); Southern Ohio Supply, Doody Door, LaForce kept",
+  "Bobrick Find A Rep (bobrick.com/find-a-rep): page loaded but the rep list needs a dropdown (JS); no results",
+  "Scranton Products where-to-buy: worked, but it lists only the territory product specialist for OH/KY/PA/WV, no dealers",
+  "ASI Global Partitions find-a-rep: 404 after redirect",
+  "Bradley, Hadrian, Metpar, General Partitions, Ammco locators: not tried (WebSearch cap; locator pages are JS-driven)",
+  "The Blue Book (thebluebook.com iProView pages): blocked (403)",
+  "BuildingConnected / Procore public profiles: not reached through search",
+  "BBB category pages: worked (Dayton partitions, Mason partitions, Piqua partitions, Dayton bathroom-accessories)",
+  "One Point Partitions site: blocked (403); search snippets only",
+  "Company sites fetched and worked: southernohiosupply.com, kelleybros.com, clevelandconstruction.com, inter-co.com, consysohio.com, acpohio.com, ohiotrimanddoor.com, usstructures.net, laforceinc.com, martinbros.net (California, no Ohio service; excluded)",
+  "WebSearch: used all 8 calls. Dayton-specific queries returned mostly generic Division 10 content and One Point Partitions pages; no Dayton-based dedicated partition installer found",
+  "Yelp: not reached (no Yelp results surfaced in searches)",
+  "Prior area research (research/installers/cincinnati.json, columbus.json): used to find regional firms, each re-verified on its own site"
+ ],
+ "candidates": [
+  {
+   "name": "Inter-Co Division 10 (Ohio), Inc.",
+   "base_city": "Columbus (Grove City)",
+   "state": "OH",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Bobrick"
+   ],
+   "website": "https://inter-co.com/",
+   "phone": "(614) 875-2959",
+   "email": "ohsales@inter-co.com",
+   "contact_page": "https://inter-co.com/contact/",
+   "evidence_urls": [
+    "https://inter-co.com/",
+    "https://inter-co.com/contact/"
+   ],
+   "partition_evidence": "Homepage lists toilet partitions and says the company supplies and installs Division 10 products for general contractors; image labels show Bobrick Privada partitions.",
+   "reason": "Commercial Division 10 supply-and-install firm with an Ohio office about 70 miles from Dayton, and it lists Ohio as a service state. Dayton isn't named, and it also distributes partitions, so there is a buy-around risk.",
+   "red_flags": [
+    "Distributor of partitions (buy-around risk)",
+    "Contact page calls the Ohio office a distribution centre; Dayton coverage not stated"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Inter-Co Division 10 (Ohio), Inc.",
+    "area": "dayton",
+    "status": "not_required_online_check",
+    "registry": "City of Dayton Building Inspection Division, Registered Contractors Lists (electrical, heating, pipe laying, plumbing only); Ohio Construction Industry Licensing Board (no state license for this work)",
+    "note": "Base city Columbus (Grove City). Ohio has no state license for partition installation. Dayton publishes registered-contractor lists only for electrical, heating, pipe laying and plumbing. There is no general or building contractor list, so the City has no list to check for toilet partition installation. Dayton's FAQ says some minor work 'may need to be done by a City of Dayton licensed contractor' and to call Building Inspection at 937-333-3883 about a specific project. Confirm with the City before work starts.",
+    "source_url": "https://www.daytonohio.gov/691/Registered-Contractors-Lists"
+   },
+   "score": 63
+  },
+  {
+   "name": "Construction Systems Inc (CSi)",
+   "base_city": "Columbus",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://www.consysohio.com/",
+   "phone": "(614) 252-0708",
+   "contact_page": "https://www.consysohio.com/contact-csi.php",
+   "evidence_urls": [
+    "https://www.consysohio.com/",
+    "https://www.consysohio.com/contact-csi.php"
+   ],
+   "partition_evidence": "Homepage says CSi crews install Division 10, 11 and 12 specialties, explicitly including toilet partitions.",
+   "reason": "A confirmed commercial partition installer about 70 miles away, but its site says it serves central Ohio and never mentions Dayton, so coverage needs confirming.",
+   "red_flags": [
+    "Service area stated as central Ohio only"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Construction Systems Inc (CSi)",
+    "area": "dayton",
+    "status": "not_required_online_check",
+    "registry": "City of Dayton Registered Contractors Lists (trade lists only); Ohio CILB (no state license for this work)",
+    "note": "Base city Columbus. Partition installation isn't one of Dayton's registered trades (electrical, heating, pipe laying, plumbing), and Ohio has no state license for it. Confirm with Dayton Building Inspection (937-333-3883).",
+    "source_url": "https://www.daytonohio.gov/691/Registered-Contractors-Lists"
+   },
+   "score": 60
+  },
+  {
+   "name": "Kelley Bros (Cincinnati branch)",
+   "base_city": "Mason",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Global Toilet Partitions",
+    "Scranton Products",
+    "Hadrian"
+   ],
+   "website": "https://www.kelleybros.com/",
+   "phone": "(513) 770-0120",
+   "contact_page": "https://www.kelleybros.com/contact-us/",
+   "evidence_urls": [
+    "https://www.kelleybros.com/?p=3224",
+    "https://www.kelleybros.com/locations/",
+    "https://www.kelleybros.com/contact-us/"
+   ],
+   "partition_evidence": "Division 10 page lists toilet partitions (Global, Scranton, Hadrian) and offers a turnkey solution 'from our initial quote to the final Product Installation'.",
+   "reason": "Division 8/10 distributor with a Mason branch inside the area. It claims turnkey installation but shows no partition installs, and it sells partitions itself.",
+   "red_flags": [
+    "Sells partitions (buy-around risk)",
+    "Mainly a distributor"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Kelley Bros (Cincinnati branch)",
+    "area": "dayton",
+    "status": "not_required_online_check",
+    "registry": "City of Dayton Registered Contractors Lists (trade lists only); Ohio CILB (no state license for this work)",
+    "note": "Base city Mason. Partition installation isn't one of Dayton's registered trades (electrical, heating, pipe laying, plumbing), and Ohio has no state license for it. Confirm with Dayton Building Inspection (937-333-3883).",
+    "source_url": "https://www.daytonohio.gov/691/Registered-Contractors-Lists"
+   },
+   "score": 50
+  },
+  {
+   "name": "Cleveland Construction, Inc. (Interior Trades)",
+   "base_city": "Mason",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://clevelandconstruction.com/",
+   "phone": "513-398-8900",
+   "contact_page": "https://clevelandconstruction.com/general-contracting/about-us/contact-us/",
+   "evidence_urls": [
+    "https://clevelandconstruction.com/interior-trades/",
+    "https://clevelandconstruction.com/"
+   ],
+   "partition_evidence": "Interior trades page lists 'Divisions 5-10 Services', and the footer mentions 'Division 10 installations'. Toilet partitions aren't named.",
+   "reason": "Large commercial self-performing interior contractor based in Mason that installs Division 10. Partition work isn't confirmed, and it's likely geared to large GC projects.",
+   "red_flags": [
+    "Large firm, small partition jobs may not fit"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Cleveland Construction, Inc. (Interior Trades)",
+    "area": "dayton",
+    "status": "not_required_online_check",
+    "registry": "City of Dayton Registered Contractors Lists (trade lists only); Ohio CILB (no state license for this work)",
+    "note": "Base city Mason. Partition installation isn't one of Dayton's registered trades (electrical, heating, pipe laying, plumbing), and Ohio has no state license for it. Confirm with Dayton Building Inspection (937-333-3883).",
+    "source_url": "https://www.daytonohio.gov/691/Registered-Contractors-Lists"
+   },
+   "score": 50
+  },
+  {
+   "name": "Acoustic Ceiling & Partition of Ohio, Inc.",
+   "base_city": "Westerville",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://acpohio.com/",
+   "phone": "(614) 718-0722",
+   "email": "info@acpohio.com",
+   "contact_page": "https://acpohio.com/contact/",
+   "review_source": "BBB A+ rating (not accredited), no review count shown",
+   "evidence_urls": [
+    "https://acpohio.com/",
+    "https://acpohio.com/contact/",
+    "https://www.bbb.org/us/oh/dayton/category/partition"
+   ],
+   "partition_evidence": "Its carpentry service includes 'Division 10 accessories'. Toilet partitions aren't named; the 'partition' in its name refers to drywall and framing.",
+   "reason": "Commercial interiors contractor; a testimonial says it builds jobs throughout Ohio. Division 10 work is a minor line item, and toilet partitions aren't confirmed.",
+   "red_flags": [
+    "'Partition' means wall partitions, not restroom stalls"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Acoustic Ceiling & Partition of Ohio, Inc.",
+    "area": "dayton",
+    "status": "not_required_online_check",
+    "registry": "City of Dayton Registered Contractors Lists (trade lists only); Ohio CILB (no state license for this work)",
+    "note": "Base city Westerville. Partition installation isn't one of Dayton's registered trades (electrical, heating, pipe laying, plumbing), and Ohio has no state license for it. Confirm with Dayton Building Inspection (937-333-3883).",
+    "source_url": "https://www.daytonohio.gov/691/Registered-Contractors-Lists"
+   },
+   "score": 48
+  },
+  {
+   "name": "Ohio Trim & Door",
+   "base_city": "Columbus",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://ohiotrimanddoor.com/",
+   "phone": "(614) 208-9710",
+   "contact_page": "https://ohiotrimanddoor.com/contact",
+   "evidence_urls": [
+    "https://ohiotrimanddoor.com/"
+   ],
+   "partition_evidence": "Site lists 'Division 10' services and 'Division 6, 8, and 10 Solutions'. Toilet partitions aren't named.",
+   "reason": "A carpentry, door and millwork firm that names Dayton in its service area and lists Division 10 work. Partition installs aren't shown, and it also does residential work.",
+   "red_flags": [
+    "Partly residential; Division 10 scope undefined"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "Ohio Trim & Door",
+    "area": "dayton",
+    "status": "not_required_online_check",
+    "registry": "City of Dayton Registered Contractors Lists (trade lists only); Ohio CILB (no state license for this work)",
+    "note": "Base city Columbus. Partition installation isn't one of Dayton's registered trades (electrical, heating, pipe laying, plumbing), and Ohio has no state license for it. Confirm with Dayton Building Inspection (937-333-3883).",
+    "source_url": "https://www.daytonohio.gov/691/Registered-Contractors-Lists"
+   },
+   "score": 43
+  },
+  {
+   "name": "LaForce (Columbus branch)",
+   "base_city": "Grove City",
+   "state": "OH",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [],
+   "website": "https://laforceinc.com/",
+   "phone": "1-800-236-8858",
+   "contact_page": "https://laforceinc.com/contact/",
+   "evidence_urls": [
+    "https://laforceinc.com/"
+   ],
+   "partition_evidence": "Building Specialties lists 'Div. 10 Products: Toilet partitions, lockers & more', and the site offers a general Pre-Install & Install service.",
+   "reason": "National Division 8/10 distributor that supplies partitions and offers installation services. The Ohio branch and partition installs weren't confirmed (the locations page returned 404), so area is marked unconfirmed.",
+   "red_flags": [
+    "Sells partitions (buy-around risk)",
+    "Ohio branch not verified"
+   ],
+   "added_by_checker": false,
+   "license": {
+    "name": "LaForce (Columbus branch)",
+    "area": "dayton",
+    "status": "not_required_online_check",
+    "registry": "City of Dayton Registered Contractors Lists (trade lists only); Ohio CILB (no state license for this work)",
+    "note": "Base city Grove City. Partition installation isn't one of Dayton's registered trades (electrical, heating, pipe laying, plumbing), and Ohio has no state license for it. Confirm with Dayton Building Inspection (937-333-3883).",
+    "source_url": "https://www.daytonohio.gov/691/Registered-Contractors-Lists"
+   },
+   "score": 40
+  },
+  {
+   "name": "Southern Ohio Supply, LLC",
+   "base_city": "Dayton (Moraine)",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://www.southernohiosupply.com/",
+   "phone": "937-293-0100",
+   "contact_page": "http://www.southernohiosupply.com/contact/",
+   "evidence_urls": [
+    "http://www.southernohiosupply.com/"
+   ],
+   "partition_evidence": "Supplies toilet partitions and toilet accessories along with doors and hardware; no installation is mentioned.",
+   "reason": "A local door, hardware and partition supplier with no evidence that it installs. It is a competitor or buy-around risk rather than an installer, though worth a phone check to see whether it has install crews.",
+   "red_flags": [
+    "Sells partitions (buy-around risk)",
+    "No installation evidence"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "West Chester",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://onepointpartitions.com/service-areas/ohio-bathroom-partitions/"
+   ],
+   "partition_evidence": "Its own pages (seen through search; direct fetch returned 403) say products are designed for DIY installation and that it does not install; it has delivery terminals in West Chester and Columbus.",
+   "reason": "An online partition seller and direct competitor that sends customers to self-install, not an installer.",
+   "red_flags": [
+    "Direct competitor selling partitions",
+    "Does not install"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "U.S. Structures Company, Inc.",
+   "base_city": "Stoutsville",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "Bobrick",
+    "Koala",
+    "General Partitions",
+    "Bradley"
+   ],
+   "website": "https://usstructures.net/",
+   "phone": "(614) 833-5650",
+   "contact_page": "https://usstructures.net/contact-us/",
+   "evidence_urls": [
+    "https://usstructures.net/",
+    "https://usstructures.net/contact-us/"
+   ],
+   "partition_evidence": "Sells toilet partitions and washroom accessories as finish packages to general contractors; installation isn't mentioned on the home or contact pages.",
+   "reason": "A supplier that names Dayton and Beavercreek in its service area, but it shows no installation. It is a buy-around risk, not an installer.",
+   "red_flags": [
+    "Sells partitions (buy-around risk)",
+    "Supply only per site"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 23
+  },
+  {
+   "name": "Irwin Enterprises, Inc.",
+   "base_city": "Centerville",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "review_source": "BBB: no rating shown, not accredited",
+   "evidence_urls": [
+    "https://www.bbb.org/us/oh/dayton/category/partition"
+   ],
+   "partition_evidence": "Only a BBB listing under the 'Partitions' category; no website, services or project photos found.",
+   "reason": "No evidence beyond a BBB category listing. It may be worth a phone check, since it's local.",
+   "red_flags": [
+    "No website found"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Doody Door & Hardware Inc",
+   "base_city": "Dayton",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [],
+   "partition_evidence": "Nothing found in search or the BBB Dayton partitions listing.",
+   "reason": "Couldn't find a website or any listing that shows partition work.",
+   "red_flags": [
+    "No online presence found"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "TK Constructors, Inc.",
+   "base_city": "West Chester",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "no",
+   "sells_partitions": "no",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://tkconstructors.com/",
+   "phone": "(513) 217-6900",
+   "contact_page": "https://tkconstructors.com/contact-us/",
+   "evidence_urls": [
+    "https://www.tkconstructors.com/"
+   ],
+   "partition_evidence": "None; the company is a residential home builder.",
+   "reason": "Builds homes from ranch and two-story floor plans. It doesn't do commercial restroom partitions.",
+   "red_flags": [
+    "Residential home builder"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Ascent Contracting",
+   "base_city": "Cincinnati",
+   "state": "OH",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "review_source": "BBB A+ (accredited), no review count shown",
+   "evidence_urls": [
+    "https://www.bbb.org/us/oh/dayton/category/partition",
+    "https://www.bbb.org/us/oh/mason/category/partition"
+   ],
+   "partition_evidence": "BBB partitions-category listing only; its tags (contractor equipment, appliances, cabinet supplies) don't indicate partition work.",
+   "reason": "No evidence of toilet partition installation.",
+   "red_flags": [
+    "No website found"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  },
+  {
+   "name": "AllSource Construction Specialties, LLC",
+   "base_city": "Indianapolis",
+   "state": "IN",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "brands": [],
+   "review_source": "BBB A+ (accredited), no review count shown",
+   "evidence_urls": [
+    "https://www.bbb.org/us/oh/dayton/category/partition"
+   ],
+   "partition_evidence": "Appears in the BBB partitions category only; no website or services found.",
+   "reason": "About 110 miles away in Indiana, with no evidence of partition installs and no statement that it serves Ohio.",
+   "red_flags": [
+    "No website found",
+    "Out of state"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

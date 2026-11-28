@@ -1,0 +1,58 @@
+{
+ "state": "FL",
+ "state_name": "Florida",
+ "checked": "2026-11-24",
+ "from_page": "service-area_miami.md",
+ "evidence_files": [
+  "research/state-codes/fixtures/miami.json",
+  "research/city-data/miami.json",
+  "research/state-codes/cities-first-5.json"
+ ],
+ "notes_for_city_agent": "This pack was written from the finished Miami page, so its page text names Miami and may include rules that are the city's own, not the state's. Read the evidence files to tell which is which, then check your own city: The Florida Building Code applies statewide, so the toilet counts carry over unless your city or county amends them; stalls_after names the City of Miami Building Department, so replace it with your city's office. Florida moves to the 9th Edition on 2026-12-31: keep the 'New rules on December 31, 2026' bullet (it is in the Miami page). Miami-Dade has its own contractor certificate rule; yours is in research/local-rules/cities.json. The county surtax and its $5,000 cap differ by county: read the Department of Revenue's surtax table for your county.",
+ "page": {
+  "stalls_intro": "Florida counts toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. It isn't the number of staff or of visitors in a day. Half are counted as men and half as women. Every toilet needs a stall. Urinals are optional: they may stand in for up to half of the men's toilets in an office, and up to two-thirds in a restaurant or school.",
+  "stalls_head": "head: Office | Restaurant | School",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3;More women's stalls may apply",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "In restaurants and other gathering places, Florida can require three women's toilets for every two men's toilets and urinals once the men's room has more than two. Licensed restaurants may be exempt, so confirm with the City of Miami Building Department. Outdoor seating counts toward the number of people. At least one stall in each room must be wheelchair accessible.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20. Your architect or the Building Department sets the final number.",
+  "fire_bullet": "- **Fire safety:** building rules require solid plastic (HDPE) partitions to pass a fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and Florida's own access rules set the sizes.",
+  "state_extra_bullet": "- **Florida extras, in new buildings:** the wheelchair-accessible stall needs its own sink inside it, which makes the stall larger than in most states, and the toilet must sit in the corner diagonally across from the stall door.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** one-person and family restrooms must be marked as open to everyone. A shared all-gender room is allowed if every toilet sits in its own compartment with a door and urinals are in stalls or screened from view. A 2023 Florida law sets separate rules for schools, colleges, jails and government buildings; private businesses aren't covered by it.",
+  "public_jobs": "Florida has no state wage law for public construction and doesn't let cities or school districts set one. On federally funded work the federal rate applies.",
+  "tax_install_bullet": "- **Tax on installation:** on a supply-and-install contract for work that becomes part of the building, the contractor pays the tax on the materials and charges you none on the contract.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable. If the seller doesn't collect the tax, the buyer owes it to the state.",
+  "tax_confirm": "your accountant or the Florida Department of Revenue",
+  "sources": [
+   "- Florida contractor licensing: [Florida Statutes 489.113](https://www.flsenate.gov/Laws/Statutes/2023/489.113). Last checked 2026-11-19.",
+   "- Florida toilet counts: Florida Building Code, Plumbing, 8th Edition (2023), Table 403.1 and Sections 403.1.1, 403.1.3 and 424.2, read on a secondary copy ([UpCodes](https://up.codes/viewer/florida/fl-plumbing-code-2023/chapter/4/fixtures-faucets-and-fixture-fittings)) because the official viewer blocks automated reading. The Florida Building Commission's change documents for the 9th Edition (2026) show the same ratios for these three rows. Checked 2026-11-24.",
+   "- Public jobs: [Florida Statutes 255.0992](https://www.flsenate.gov/Laws/Statutes/2025/255.0992). Checked 2026-11-24.",
+   "- Florida's stall rules beyond the federal ones: [Florida Statutes 553.504(5)](https://www.flsenate.gov/Laws/Statutes/2025/553.504). Checked 2026-11-24.",
+   "- Restroom rules: Florida Building Code, Plumbing, 8th Edition, Sections 403.1.2 and 403.2, read on a [secondary copy](https://up.codes/viewer/florida/fl-plumbing-code-2023/chapter/4/fixtures-faucets-and-fixture-fittings); [Florida Statutes 553.865](https://www.flsenate.gov/Laws/Statutes/2025/553.865). Checked 2026-11-24.",
+   "- Sales tax: Florida Department of Revenue, [sales and use tax](https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx), [discretionary sales surtax](https://floridarevenue.com/taxes/taxesfees/Pages/discretionary.aspx) and [GT-800067, Sales and Use Tax on Building Contractors](https://floridarevenue.com/Forms_library/current/gt800067.pdf). Checked 2026-11-24."
+  ],
+  "official_names": "- The rules by their official names: 2010 ADA Standards for Accessible Design; Florida Building Code, 8th Edition (2023): Building, Plumbing and Accessibility volumes, replaced by the 9th Edition (2026) on December 31, 2026; NFPA 286 for HDPE under the International Building Code, the model for Florida's code.",
+  "code_change_bullet": "- **New rules on December 31, 2026:** Florida replaces its building rules with a new edition that day. If your project is permitted after that date, ask your architect which edition applies."
+ }
+}

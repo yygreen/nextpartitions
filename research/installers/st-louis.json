@@ -1,0 +1,198 @@
+{
+ "area": "st-louis",
+ "found_count": 5,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/st-louis.json: worked; maps results gave Commercial Bathwares, MJ Products, EIP, Commercial Door & Hardware; web results were unusable google redirect links; rest were remodelers, glass shops, plumbers",
+  "Restroom Specialties (restroomspecialties.com, from seeds): blocked, host not resolvable from this session (needs allowing in network settings)",
+  "StallStash (from seeds): domain parked/for sale",
+  "Bobrick find-a-rep: page loaded but rep dropdown not readable, no MO rep shown",
+  "Scranton Products find-a-rep: 404",
+  "Bradley find-a-rep: no rep data readable",
+  "Hadrian find-a-rep: 404",
+  "General Partitions find-a-rep: 404",
+  "ASI Global Partitions (globalpartitions.com): blocked, host not resolvable",
+  "Metpar, Ampco/Ammco locators: not tried (cap/time)",
+  "The Blue Book: found via search (Commercial Bathwares listing), but iProView pages return 403",
+  "BuildingConnected / Procore public profiles: not tried",
+  "BBB partition category St. Louis: worked, only office furniture/glass firms, none relevant",
+  "Arcat (Prospec US): 403",
+  "LaForce LLC: checked locations page, no Missouri/St. Louis office, excluded",
+  "Martin Bros (Division 10 furnish & install): no St. Louis presence shown, excluded",
+  "WebSearch: 8 of 8 used (toilet partition installation St. Louis; Division 10 St. Louis; partitions St. Louis lockers; St. Charles/O'Fallon/Chesterfield; Blue Book St. Louis; Division 10 fire extinguisher cabinets St. Louis; MO/IL Belleville/Springfield/Columbia; furnish and install St. Louis). Results were dominated by One Point Partitions (national online supplier, skipped) and out-of-area firms"
+ ],
+ "candidates": [
+  {
+   "name": "Commercial Bathwares, LLC",
+   "base_city": "St. Louis",
+   "state": "MO",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://commercialbathwareslc.com/",
+   "phone": "314-256-0985",
+   "contact_page": "https://commercialbathwareslc.com/contact-us/",
+   "evidence_urls": [
+    "https://commercialbathwareslc.com/",
+    "https://commercialbathwareslc.com/contact-us/"
+   ],
+   "partition_evidence": "The homepage says it supplies and installs commercial restroom products, including toilet and urinal partitions in powder-coated steel, HDPE, phenolic and stainless steel. It says its installers are licensed, insured and union. The seven project photos on the homepage have no captions.",
+   "red_flags": [
+    "Supplies the partitions itself (buy-around risk)",
+    "No email listed, contact form only",
+    "No reviews shown on the site"
+   ],
+   "reason": "A St. Louis-based commercial restroom specialist that supplies and installs toilet partitions. It serves St. Louis, Columbia MO, Springfield IL and the surrounding region.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Commercial Bathwares, LLC",
+    "area": "st-louis",
+    "status": "found_active",
+    "registry": "City of St. Louis License Collector, Business License Search (current-year graduated business licenses, updated nightly)",
+    "license_type": "City of St. Louis graduated business license; business type listed as \"Other Business Services\" (not a contract construction category)",
+    "note": "Searched 2026-11-19 for \"Commercial Bathwares\" and \"Bathware\". Both returned 1 match: \"Commercial Bathwares Lc\", business type \"Other Business Services\", with an address in the City of St. Louis. The search lists only currently licensed businesses for the current year. No license number is shown. The listed category is not the building or carpentry contractor category, so whether this license covers installation work should be confirmed with the License Collector at (314) 622-4528.",
+    "source_url": "https://www.stlouis-mo.gov/government/departments/license/business-license-search.cfm"
+   },
+   "score": 85
+  },
+  {
+   "name": "MJ Products Inc",
+   "base_city": "Fenton",
+   "state": "MO",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "ASI",
+    "ASI Global Partitions",
+    "General Partitions",
+    "Bobrick",
+    "Scranton Products",
+    "Koala Kare",
+    "Kimberly-Clark"
+   ],
+   "website": "https://mjproductsco.com/",
+   "phone": "(636) 349-0290",
+   "contact_page": "https://mjproductsco.com/pages/contact",
+   "evidence_urls": [
+    "https://mjproductsco.com/",
+    "https://mjproductsco.com/pages/project-gallery"
+   ],
+   "partition_evidence": "The project gallery shows many toilet partition installations: Bobrick Sierra ceiling-hung, Global phenolic, Bobrick plastic laminate and stainless steel partitions. The site describes the company as a distributor and installer, with local installation in St. Louis.",
+   "red_flags": [
+    "A family-owned distributor since 1964 that also ships nationwide, so it competes directly with Next Partitions (high buy-around risk)",
+    "No email listed"
+   ],
+   "reason": "Confirmed commercial toilet partition installer with local installation in St. Louis. It is also a direct partition distributor, so it is a strong installer but a competitor.",
+   "added_by_checker": false,
+   "license": {
+    "name": "MJ Products Inc",
+    "area": "st-louis",
+    "status": "found_active",
+    "registry": "City of St. Louis License Collector, Business License Search (current-year graduated business licenses, updated nightly)",
+    "license_type": "City of St. Louis graduated business license; business type listed as \"Wholesale Trade\"",
+    "note": "Searched 2026-11-19. \"MJ Products\", \"MJ Prod\", \"M.J. Products\" and \"MJP\" found nothing. \"M J Products\" returned 1 match: \"M J Products Co\", business type \"Wholesale Trade\". The website domain is mjproductsco.com, so this is likely the same company, but the registry record does not confirm it is the Fenton entity \"MJ Products Inc\". The category is wholesale, not contract construction. Fenton is in St. Louis County, outside the city, and a city license matters only for work inside the City of St. Louis. Confirm the match and the license scope with the License Collector at (314) 622-4528.",
+    "source_url": "https://www.stlouis-mo.gov/government/departments/license/business-license-search.cfm"
+   },
+   "score": 85
+  },
+  {
+   "name": "Engineered Industrial Products, Inc. (EIP)",
+   "base_city": "High Ridge",
+   "state": "MO",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://www.eipstl.com/",
+   "phone": "636-376-2900",
+   "email": "eip@eipstl.com",
+   "contact_page": "https://www.eipstl.com/contact-us/",
+   "evidence_urls": [
+    "https://www.eipstl.com/",
+    "https://www.eipstl.com/bathroom-partitions/",
+    "https://www.eipstl.com/contact-us/"
+   ],
+   "partition_evidence": "Its bathroom partitions page says EIP furnishes and installs partitions in HDPE, stainless steel, powder-coated steel, plastic laminate and phenolic, in all mounting styles. It serves schools, gyms, retail and industrial clients, with installation offered throughout the US.",
+   "red_flags": [
+    "Supplies the partitions itself (buy-around risk)",
+    "Mainly a material handling and industrial interiors company",
+    "No project photos or reviews seen"
+   ],
+   "reason": "A St. Louis-area commercial contractor (High Ridge) that says it furnishes and installs bathroom partitions. Its main business is industrial interiors.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Engineered Industrial Products, Inc. (EIP)",
+    "area": "st-louis",
+    "status": "found_active",
+    "registry": "City of St. Louis License Collector, Business License Search (current-year graduated business licenses, updated nightly)",
+    "license_type": "City of St. Louis graduated business license; business type listed as \"Contract Construction Services\"",
+    "note": "Searched 2026-11-19 for \"Engineered Industrial\". It returned 1 match: \"Engineered Industrial Products\", business type \"Contract Construction Services\". This is the construction contractor category that the city's rule covers. The search lists only currently licensed businesses for the current year, and no license number is shown. The base is High Ridge (Jefferson County), outside the city. The license covers work inside the City of St. Louis.",
+    "source_url": "https://www.stlouis-mo.gov/government/departments/license/business-license-search.cfm"
+   },
+   "score": 80
+  },
+  {
+   "name": "Commercial Door & Hardware Service LLC",
+   "base_city": "Belleville",
+   "state": "IL",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Accurate Partitions",
+    "General Partitions"
+   ],
+   "website": "https://www.commercialdoorhardwareservice.com/",
+   "phone": "618-235-5678",
+   "contact_page": "https://www.commercialdoorhardwareservice.com/contact",
+   "evidence_urls": [
+    "https://www.commercialdoorhardwareservice.com/",
+    "https://www.commercialdoorhardwareservice.com/toilet-partitions"
+   ],
+   "partition_evidence": "Lists toilet partitions and washroom accessories as product lines, naming Accurate Partitions and General Partitions. The pages read do not say it installs them. Its core business is commercial doors, frames and hardware.",
+   "red_flags": [
+    "Installation of partitions not stated",
+    "Sells partitions itself (buy-around risk)",
+    "No service area stated"
+   ],
+   "reason": "A Belleville, IL Division 10 supplier (doors, hardware, toilet partitions) serving commercial clients. Partition installation is likely but not shown.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 50
+  },
+  {
+   "name": "Prospec US Inc.",
+   "base_city": "St. Louis",
+   "state": "MO",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.arcat.com/company/prospec-us-inc-49862"
+   ],
+   "partition_evidence": "Only an ARCAT product-directory listing (shown in search results) for lockers, shower/toilet compartments and benches. The ARCAT page itself returned 403. No company website, installation services or projects found.",
+   "red_flags": [
+    "No website found",
+    "Only a directory listing",
+    "The listed address appears to be a residential estate address",
+    "Possibly a manufacturer's rep rather than an installer"
+   ],
+   "reason": "No evidence that it installs partitions and no company website. It looks like a product listing or rep entry only.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

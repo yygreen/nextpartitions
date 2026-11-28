@@ -1,0 +1,556 @@
+{
+ "state": "NE",
+ "state_name": "Nebraska",
+ "checked": "2026-11-24",
+ "fixtures": {
+  "governing_table": {
+   "code": "Nebraska state building code (Neb. Rev. Stat. 71-6403), which adopts the Uniform Plumbing Code by reference and leaves out Chapter 29 of the International Building Code",
+   "edition": "2018 Uniform Plumbing Code, no state amendments",
+   "table": "Table 422.1, Minimum Plumbing Facilities",
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=71-6403",
+   "quote": "The Legislature hereby adopts by reference: (a) The International Building Code (IBC), 2018 edition, except section 101.4.3 and chapter 29, published by the International Code Council [...] (d) The Uniform Plumbing Code, 2018 edition, designated by the American National Standards Institute as an American National Standard.",
+   "table_url": "https://epubs.iapmo.org/2018/UPC/#p=70",
+   "table_quote": "422.1 Fixture Count. Plumbing fixtures shall be provided for the type of building occupancy and in the minimum number shown in Table 422.1. The total occupant load and occupancy classification shall be determined in accordance with the building code.",
+   "note": "Table read on IAPMO's own free read-only edition of the 2018 UPC (official publisher): the page text from the viewer's text index, and the rows checked against the page images for printed pages 35 and 36 because the text index scrambles table columns. The statute adopts the UPC with no amendments. Because IBC Chapter 29 is excluded from the state code, Table 2902.1 is not the state table (a city may adopt it, 71-6406(2)(c)(ii))."
+  },
+  "cities_may_amend": true,
+  "cities_may_amend_note": {
+   "text": "The state code is the legally applicable code in state-owned buildings, and in any county, city or village that has not adopted its own conforming code within two years of a state update. A city may adopt its own plumbing code, may adopt IBC Chapter 29, and may amend. Public buildings of cities, counties and school districts follow the applicable local code. So the city agent must check which plumbing code and table the city uses.",
+   "quote": "A local building or construction code shall be deemed to conform generally with the state building code if it: (a) Adopts a special or differing building standard by amending, modifying, or deleting any portion of the state building code [...] (c) Adopts any of the following: [...] (ii) Section 101.4.3 or any portion of chapter 29 of the 2018 edition of the International Building Code; [...] (d) Adopts a plumbing code, an electrical code, a fire prevention code, or any other standard code as authorized under section 14-419, 15-905, 18-132, or 23-172 | (9) Notwithstanding the provisions of the Building Construction Act, a public building of any political subdivision shall be built in accordance with the applicable local building or construction code.",
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=71-6406",
+   "second_quote": "The state building code shall be the legally applicable code in all buildings and structures owned by the state or any state agency",
+   "second_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=71-6405"
+  },
+  "rows": {
+   "office": {
+    "row_label": "B Business occupancy (office, professional or service type transactions)- banks, vet clinics, hospitals, car wash, banks, beauty salons, ambulatory health care facilities, laundries and dry cleaning, educational institutions (above high school), or training facilities not located within school, post offices and printing shops",
+    "wc_male": "1: 1-50; 2: 51-100; 3: 101-200; 4: 201-400. Over 400, add 1 fixture for each additional 500 males",
+    "wc_female": "1: 1-15; 2: 16-30; 3: 31-50; 4: 51-100; 8: 101-200; 11: 201-400. Over 400, add 1 fixture for each additional 150 females",
+    "urinals": "Male 1: 1-100; 2: 101-200; 3: 201-400; 4: 401-600. Over 600, add 1 fixture for each additional 300 males",
+    "quote": "Male 1: 1-50 2: 51-100 3: 101-200 4: 201-400 | Female 1: 1-15 2: 16-30 3: 31-50 4: 51-100 8: 101-200 11: 201-400 | Over 400, add 1 fixture for each additional 500 males and 1 fixture for each additional 150 females. | Urinals: Male 1: 1-100 2: 101-200 3: 201-400 4: 401-600 Over 600, add 1 fixture for each additional 300 males.",
+    "url": "https://epubs.iapmo.org/2018/UPC/#p=71"
+   },
+   "restaurant": {
+    "row_label": "A-2 Assembly occupancy- restaurants, pubs, lounges, nightclubs and banquet halls",
+    "wc_male": "1: 1-50; 2: 51-150; 3: 151-300; 4: 301-400. Over 400, add 1 fixture for each additional 250 males",
+    "wc_female": "1: 1-25; 2: 26-50; 3: 51-100; 4: 101-200; 6: 201-300; 8: 301-400. Over 400, add 1 fixture for each 125 females",
+    "urinals": "Male 1: 1-200; 2: 201-300; 3: 301-400; 4: 401-600. Over 600, add 1 fixture for each additional 300 males",
+    "quote": "Male 1: 1-50 2: 51-150 3: 151-300 4: 301-400 | Female 1: 1-25 2: 26-50 3: 51-100 4: 101-200 6: 201-300 8: 301-400 | Over 400, add 1 fixture for each additional 250 males and 1 fixture for each 125 females. | Urinals: Male 1: 1-200 2: 201-300 3: 301-400 4: 401-600 Over 600, add 1 fixture for each additional 300 males.",
+    "url": "https://epubs.iapmo.org/2018/UPC/#p=70",
+    "note": "Table note 2: \"A restaurant is defined as a business that sells food to be consumed on the premises. a. The number of occupants for a drive-in restaurant shall be considered as equal to the number of parking stalls.\" Bars and nightclubs share this row."
+   },
+   "school": {
+    "row_label": "E Educational occupancy- private or public schools",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 30",
+    "urinals": "Male 1 per 100",
+    "quote": "E Educational occupancy- private or public schools | Male 1 per 50 | Female 1 per 30 | Male 1 per 100",
+    "url": "https://epubs.iapmo.org/2018/UPC/#p=71",
+    "note": "One row for all schools; the table does not separate elementary from secondary. Colleges and training above high school fall in the Business row."
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Half men, half women, based on the total occupant load, unless information submitted shows a different split.",
+    "quote": "The minimum number of fixtures shall be calculated at 50 percent male and 50 percent female based on the total occupant load. Where information submitted indicates a difference in the distribution of the sexes such information shall be used to determine the number of fixtures for each sex.",
+    "url": "https://epubs.iapmo.org/2018/UPC/#p=68"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole number; one fixture covers the stated number of people or any fraction of it. With several occupancies in one building, add the fractions first, then round.",
+    "quote": "Where applying the fixture ratios in Table 422.1 results in fractional numbers, such numbers shall be rounded to the next whole number. For multiple occupancies, fractional numbers shall be first summed and then rounded to the next whole number. | Note 1: The figures shown are based upon one fixture being the minimum required for the number of persons indicated or any fraction thereof.",
+    "url": "https://epubs.iapmo.org/2018/UPC/#p=68",
+    "second_url": "https://epubs.iapmo.org/2018/UPC/#p=74"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are REQUIRED: the table has its own urinal column for men, on top of the men's toilets. Women's toilets must at least equal the men's toilets plus urinals. Beyond the required urinals, each extra urinal may replace one men's toilet, but the men's toilets may not fall below two thirds of the table minimum.",
+    "quote": "3 The total number of required water closets for females shall be not less than the total number of required water closets and urinals for males. 4 For each urinal added in excess of the minimum required, one water closet shall be permitted to be deducted. The number of water closets shall not be reduced to less than two-thirds of the minimum requirement.",
+    "url": "https://epubs.iapmo.org/2018/UPC/#p=74"
+   },
+   "small_occupancy_exception": {
+    "text": "Separate men's and women's rooms are not required where the total occupant load is 10 or less, or in an office or store (business and mercantile) with a total occupant load of 50 or less: one single-user toilet room may serve both sexes. Where each sex needs only one toilet, two family or assisted-use rooms may replace the separate rooms.",
+    "quote": "422.2 Separate Facilities. Separate toilet facilities shall be provided for each sex. Exceptions: (1) Residential installations. (2) In occupancies with a total occupant load of 10 or less, including customers and employees, one toilet facility, designed for use by no more than one person at a time, shall be permitted for use by both sexes. (3) In business and mercantile occupancies with a total occupant load of 50 or less including customers and employees, one toilet facility, designed for use by no more than one person at a time, shall be permitted for use by both sexes. | 422.2.2 Family or Assisted-Use Toilet Facilities. Where a separate toilet facility is required for each sex, and each toilet facility is required to have only one water closet, two family or assisted-use toilet facilities shall be permitted in place of the required separate toilet facilities.",
+    "url": "https://epubs.iapmo.org/2018/UPC/#p=69"
+   },
+   "occupant_load": {
+    "text": "From the building code (2018 IBC Table 1004.5, part of the state code): office (business areas) 150 sq ft gross per occupant; restaurant dining room (assembly without fixed seats, unconcentrated, tables and chairs) 15 sq ft net; classroom 20 sq ft net.",
+    "quote": "Unconcentrated (tables and chairs) 15 net [...] Business areas 150 gross [...] Classroom area 20 net",
+    "url": "https://up.codes/viewer/nebraska/ibc-2018/chapter/10/means-of-egress",
+    "note": "Read on UpCodes' Nebraska copy of the 2018 IBC (secondary)."
+   },
+   "stall_required": {
+    "text": "Each toilet used by the public or employees needs its own compartment with a door; each urinal needs side partitions (2018 IBC 1209.3, part of the state code).",
+    "quote": "Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy. | Each urinal utilized by the public or employees shall occupy a separate area with walls or partitions to provide privacy. The walls or partitions shall begin at a height not more than 12 inches (305 mm) from and extend not less than 60 inches (1524 mm) above the finished floor surface.",
+    "url": "https://up.codes/viewer/nebraska/ibc-2018/chapter/12/interior-environment"
+   },
+   "applies_to": {
+    "text": "The table applies to new buildings, additions and changes of occupancy that raise the occupant load, not to a like-for-like replacement of partitions.",
+    "quote": "Table 422.1 applies to new buildings, additions to a building, and changes of occupancy or type in an existing building resulting in increased occupant load.",
+    "url": "https://epubs.iapmo.org/2018/UPC/#p=70"
+   }
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "50 occupants at 50/50 = 25 men and 25 women. Business row: men's toilets for 25 males = 1; urinals for 25 males = 1; women's toilets for 25 females = 2. Note 3 check: 2 women's toilets is not less than 1+1 men's fixtures. Note 4: men's toilets may not drop below two thirds of 1 = 0.67, so at most 0 more may be swapped for added urinals (our arithmetic; the note does not say how the two-thirds figure rounds)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 3,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "100 occupants at 50/50 = 50 men and 50 women. Business row: men's toilets for 50 males = 1; urinals for 50 males = 1; women's toilets for 50 females = 3. Note 3 check: 3 women's toilets is not less than 1+1 men's fixtures. Note 4: men's toilets may not drop below two thirds of 1 = 0.67, so at most 0 more may be swapped for added urinals (our arithmetic; the note does not say how the two-thirds figure rounds)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 4,
+    "wc_male_total": 2,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "200 occupants at 50/50 = 100 men and 100 women. Business row: men's toilets for 100 males = 2; urinals for 100 males = 1; women's toilets for 100 females = 4. Note 3 check: 4 women's toilets is not less than 2+1 men's fixtures. Note 4: men's toilets may not drop below two thirds of 2 = 1.33, so at most 0 more may be swapped for added urinals (our arithmetic; the note does not say how the two-thirds figure rounds)."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 8,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 2,
+    "how": "400 occupants at 50/50 = 200 men and 200 women. Business row: men's toilets for 200 males = 3; urinals for 200 males = 2; women's toilets for 200 females = 8. Note 3 check: 8 women's toilets is not less than 3+2 men's fixtures. Note 4: men's toilets may not drop below two thirds of 3 = 2.00, so at most 1 more may be swapped for added urinals (our arithmetic; the note does not say how the two-thirds figure rounds)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "50 occupants at 50/50 = 25 men and 25 women. A-2 row: men's toilets for 25 males = 1; urinals for 25 males = 1; women's toilets for 25 females = 1. Note 3 then lifts the women's toilets from 1 to 2, the men's toilets plus urinals. Note 4: men's toilets may not drop below two thirds of 1 = 0.67, so at most 0 more may be swapped for added urinals (our arithmetic; the note does not say how the two-thirds figure rounds)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "100 occupants at 50/50 = 50 men and 50 women. A-2 row: men's toilets for 50 males = 1; urinals for 50 males = 1; women's toilets for 50 females = 2. Note 3 check: 2 women's toilets is not less than 1+1 men's fixtures. Note 4: men's toilets may not drop below two thirds of 1 = 0.67, so at most 0 more may be swapped for added urinals (our arithmetic; the note does not say how the two-thirds figure rounds)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 2,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "200 occupants at 50/50 = 100 men and 100 women. A-2 row: men's toilets for 100 males = 2; urinals for 100 males = 1; women's toilets for 100 females = 3. Note 3 check: 3 women's toilets is not less than 2+1 men's fixtures. Note 4: men's toilets may not drop below two thirds of 2 = 1.33, so at most 0 more may be swapped for added urinals (our arithmetic; the note does not say how the two-thirds figure rounds)."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 1,
+    "how": "400 occupants at 50/50 = 200 men and 200 women. A-2 row: men's toilets for 200 males = 3; urinals for 200 males = 1; women's toilets for 200 females = 4. Note 3 check: 4 women's toilets is not less than 3+1 men's fixtures. Note 4: men's toilets may not drop below two thirds of 3 = 2.00, so at most 1 more may be swapped for added urinals (our arithmetic; the note does not say how the two-thirds figure rounds)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "50 occupants at 50/50 = 25 men and 25 women. Educational row: men's toilets 25/50 = 0.50, rounded up to 1; urinals 25/100 = 0.25, rounded up to 1; women's toilets 25/30 = 0.83, rounded up to 1. Note 3 then lifts the women's toilets from 1 to 2, the men's toilets plus urinals. Note 4: men's toilets may not drop below two thirds of 1 = 0.67, so at most 0 more may be swapped for added urinals (our arithmetic; the note does not say how the two-thirds figure rounds)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "100 occupants at 50/50 = 50 men and 50 women. Educational row: men's toilets 50/50 = 1.00, rounded up to 1; urinals 50/100 = 0.50, rounded up to 1; women's toilets 50/30 = 1.67, rounded up to 2. Note 3 check: 2 women's toilets is not less than 1+1 men's fixtures. Note 4: men's toilets may not drop below two thirds of 1 = 0.67, so at most 0 more may be swapped for added urinals (our arithmetic; the note does not say how the two-thirds figure rounds)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 4,
+    "wc_male_total": 2,
+    "urinals_allowed": 0,
+    "urinals_required": 1,
+    "how": "200 occupants at 50/50 = 100 men and 100 women. Educational row: men's toilets 100/50 = 2.00, rounded up to 2; urinals 100/100 = 1.00, rounded up to 1; women's toilets 100/30 = 3.33, rounded up to 4. Note 3 check: 4 women's toilets is not less than 2+1 men's fixtures. Note 4: men's toilets may not drop below two thirds of 2 = 1.33, so at most 0 more may be swapped for added urinals (our arithmetic; the note does not say how the two-thirds figure rounds)."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 7,
+    "wc_male_total": 4,
+    "urinals_allowed": 1,
+    "urinals_required": 2,
+    "how": "400 occupants at 50/50 = 200 men and 200 women. Educational row: men's toilets 200/50 = 4.00, rounded up to 4; urinals 200/100 = 2.00, rounded up to 2; women's toilets 200/30 = 6.67, rounded up to 7. Note 3 check: 7 women's toilets is not less than 4+2 men's fixtures. Note 4: men's toilets may not drop below two thirds of 4 = 2.67, so at most 1 more may be swapped for added urinals (our arithmetic; the note does not say how the two-thirds figure rounds)."
+   }
+  ],
+  "confidence": "high",
+  "confidence_note": "High for the state table (statute on the Legislature's site; table on the publisher's own read-only edition, rows checked on the page images). The table that actually applies in a given city is a city question: Omaha and other cities may adopt their own plumbing code."
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "2018 International Building Code Section 803.9 (with 803.1.1), in force through Neb. Rev. Stat. 71-6403, which adopts the 2018 IBC without excluding or amending Chapter 8",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP) Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. | 803.1.1 Interior Wall and Ceiling Finish Materials Tested in Accordance With NFPA 286 Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1.",
+  "url": "https://up.codes/viewer/nebraska/ibc-2018/chapter/8/interior-finishes",
+  "adoption_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=71-6403",
+  "confidence": "medium",
+  "note": "Adoption read on the Legislature's site (official); section text read on UpCodes' Nebraska copy (secondary), hence medium. A city with its own conforming code may amend; city agent to confirm the city's edition keeps 803.9."
+ },
+ "access": {
+  "state_standard": "Nebraska Accessibility Guidelines, 156 Neb. Admin. Code chapters 1 to 6 (State Fire Marshal), under Neb. Rev. Stat. 81-5,147. Chapter 4 adopts the federal ADA design standards by reference (it cites Appendix A to 28 CFR Part 36; the Fire Marshal's Nebraska Accessibility Guidelines page links the 2010 ADA Standards for Accessible Design). No Nebraska-written stall rules were found in Title 156. Separately, the state building code keeps Chapter 11 of the 2018 IBC, which sends technical requirements to ICC A117.1 (2009 edition, the edition UpCodes lists for Nebraska and the one the 2018 IBC references).",
+  "state_standard_quote": "001. Appendix A to Chapter 1 of Title 28 of the Code of Federal Regulations (CFR), Part 36 is hereby adopted by reference.",
+  "state_standard_url": "https://sfm.nebraska.gov/sites/default/files/doc/title156-ch4.pdf",
+  "statute_quote": "The State Fire Marshal shall adopt and promulgate: (1) Standards, specifications, and exclusions which are consistent with the most current uniform guidelines and standards set by the federal Americans with Disabilities Act of 1990, as amended, for (a) buildings and facilities which are newly constructed for first occupancy and (b) alterations of existing buildings and facilities used by the public.",
+  "statute_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=81-5,147",
+  "differences": [
+   {
+    "point": "Vertical grab bar at the toilet (through ICC A117.1-2009, referenced by the building code)",
+    "state": "ICC A117.1-2009 604.5.1: an 18 inch minimum vertical grab bar on the side wall in addition to the 42 inch horizontal bar.",
+    "federal": "2010 ADA 604.5.1: \"The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall.\" No vertical bar.",
+    "state_url": "https://up.codes/viewer/nebraska/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities",
+    "quote": "In addition, a vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall."
+   },
+   {
+    "point": "Ambulatory stall width",
+    "state": "ICC A117.1-2009 604.10.2: 60 inches minimum depth and 36 inches in width (one figure, inside the federal range).",
+    "federal": "2010 ADA 604.8.2.1: \"Ambulatory accessible compartments shall have a depth of 60 inches (1525 mm) minimum and a width of 35 inches (890 mm) minimum and 37 inches (940 mm) maximum.\"",
+    "state_url": "https://up.codes/viewer/nebraska/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities",
+    "quote": "The minimum area of an ambulatory accessible compartment shall be 60 inches (1525 mm) minimum in depth and 36 inches (915 mm) in width."
+   },
+   {
+    "point": "Number of accessible stalls in large restrooms (building code scoping)",
+    "state": "2018 IBC 1109.2.2: at least 5 percent of compartments wheelchair accessible; where toilets plus urinals in a room total six or more, at least 5 percent ambulatory accessible in addition. A second wheelchair stall is therefore needed from 21 compartments (our arithmetic).",
+    "federal": "2010 ADA 213.3.1: \"Where toilet compartments are provided, at least one toilet compartment shall comply with 604.8.1. In addition to the compartment required to comply with 604.8.1, at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures.\"",
+    "state_url": "https://up.codes/viewer/nebraska/ibc-2018/chapter/11/accessibility",
+    "quote": "Where water closet compartments are provided in a toilet room or bathing room, at least 5 percent of the total number of compartments shall be wheelchair accessible. Where the combined total water closet compartments and urinals provided in a toilet room or bathing room is six or more, at least 5 percent of the total number of compartments shall be ambulatory accessible, provided in addition to the wheelchair-accessible compartment."
+   },
+   {
+    "point": "Family or assisted-use toilet room in restaurants and stores (building code scoping, affects room layout rather than stalls)",
+    "state": "2018 IBC 1109.2.1: required in assembly and mercantile occupancies where six or more male and female toilets in total are required.",
+    "federal": "2010 ADA has no requirement to provide a unisex room; 213.2.1 only limits what one may contain: \"Unisex toilet rooms shall contain not more than one lavatory, and two water closets without urinals or one water closet and one urinal.\"",
+    "state_url": "https://up.codes/viewer/nebraska/ibc-2018/chapter/11/accessibility",
+    "quote": "In assembly and mercantile occupancies, an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required."
+   }
+  ],
+  "not_compared": "Toe clearance, door swing, children's stalls and door signs in ICC A117.1-2009 were not compared line by line with the 2010 ADA Standards. Title 156 exempts private clubs and religious entities (156 NAC 1-002), as the federal Title III rules do.",
+  "process": "Yes, a plan review step. Commercial construction and alterations are reviewed for accessibility under Title 156. Where a city or county reviews plans for its building code, its building officials enforce Title 156; otherwise the State Fire Marshal does, together with its fire code review, for a fee based on project cost. No occupancy permit may be approved unless the building complies. The Fire Marshal's list of 'Authorities Conducting Title 156 Reviews' (updated 2025-09-02) includes Omaha (listed with a 3 mile jurisdiction) and Lincoln. Title 156 treats changes in the plan or height of walls or partitions as an alteration; normal maintenance is not.",
+  "process_quote": "No official of any governing body of the state government or its political subdivisions responsible for such enforcement shall approve or authorize an occupancy permit unless such building, facility, or dwelling complies with the standards and specifications prescribed by such section. | FAQ: A review is conducted for both Fire Code and Accessibility unless there is a local jurisdiction that performs accessibility reviews. | 156 NAC 6: When plans are reviewed by a political subdivision for building code regulations, enforcement of this title shall be the responsibility of the building code officials of the political subdivision.",
+  "process_urls": [
+   "https://nebraskalegislature.gov/laws/statutes.php?statute=81-5,148",
+   "https://sfm.nebraska.gov/plans/faq",
+   "https://sfm.nebraska.gov/sites/default/files/doc/title156-ch6.pdf",
+   "https://sfm.nebraska.gov/sites/default/files/doc/Title%20156-ADA%20UPDATED%2009-02-2025.pdf"
+  ],
+  "confidence": "medium"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "Under the state plumbing code, single-use toilet rooms and family or assisted-use rooms must have a sign showing use by either sex. No Nebraska statute on single-user restrooms was found.",
+   "quote": "422.2.1 Single Use Toilet Facilities. Single use toilet facilities and family or assisted use toilet facilities shall be identified with signage indicating use by either sex.",
+   "url": "https://epubs.iapmo.org/2018/UPC/#p=69"
+  },
+  "all_gender_shared": {
+   "rule": "The state code has no provision for a shared multi-stall all-gender room. It requires separate toilet facilities for each sex, with exceptions only for residential work, very small occupancies and single-user rooms. IBC Chapter 29, where later model editions added a shared-room exception, is not part of the state code. A city with its own code may differ; otherwise a shared room would need the building official's approval.",
+   "quote": "422.2 Separate Facilities. Separate toilet facilities shall be provided for each sex.",
+   "url": "https://epubs.iapmo.org/2018/UPC/#p=69"
+  },
+  "use_restrictions": {
+   "rule": "None in force. The Stand With Women Act (LB 89, approved 2025-06-04) as enacted covers school and college sports teams only; its text has no restroom or locker room section. LB 730 (2026), which would have required schools and state agencies to designate restrooms and locker rooms by sex, was indefinitely postponed on 2026-04-17.",
+   "quote": "LB730 - Require schools and state agencies to designate restrooms and locker rooms based on sex and require state agencies to define an individual's sex as either male or female [...] Apr 17, 2026 Indefinitely postponed",
+   "url": "https://www.nebraskalegislature.gov/bills/view_bill.php?DocumentID=62661",
+   "second_url": "https://www.nebraskalegislature.gov/FloorDocs/109/PDF/Slip/LB89.pdf",
+   "second_quote": "Sec. 4. (1) For an interscholastic athletic team or sport sponsored by a public school [...] the team or sport shall be expressly designated as one of the following based on sex"
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": true,
+  "law": "Neb. Rev. Stat. 73-102 to 73-104 (fair labor standards on public works, 1939). It is not a rate-setting prevailing wage law: no agency sets or publishes wage rates. Contractors bidding on public works of the state or any governmental subdivision file a statement that they comply with fair labor standards, defined as the wages and conditions paid by at least fifty percent of contractors in the same field. The section does not apply where the awarding body writes its own pay provisions into the contract. On federally funded work the federal Davis-Bacon Act applies (not read here).",
+  "threshold": "None in the statute",
+  "rates_url": null,
+  "rates_note": "No state rates are published. Federal Davis-Bacon wage determinations are on sam.gov.",
+  "quote": "All governing authorities of the State of Nebraska, and governmental subdivisions thereof [...] shall, in awarding contracts for public works, require all contractors bidding on public works to file with such authority a statement that he is complying with, and will continue to comply with, fair labor standards in the pursuit of his business and in the execution of the contract on which he is bidding. [...] This section shall not apply to such governing authorities that prescribe, in the terms of their contracts for public works, provisions governing the hours of labor, rates of pay, and conditions of employment. | 73-104: Fair labor standards [...] shall be construed to mean such a scale of wages and conditions of employment as are paid and maintained by at least fifty percent of the contractors in the same business or field of endeavor as the contractor filing such statement.",
+  "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=73-102",
+  "second_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=73-104",
+  "federal_table": "The U.S. Department of Labor's table of state prevailing wage thresholds lists Nebraska with threshold 'None' (page last revised 2023-01-01; read through a summarising fetch tool, curl was blocked).",
+  "federal_table_url": "https://www.dol.gov/agencies/whd/state/prevailing-wages",
+  "confidence": "medium"
+ },
+ "sales_tax": {
+  "state_rate": 0.055,
+  "state_rate_quote": "The Nebraska state sales and use tax rate is 5.5% (.055).",
+  "state_rate_url": "https://revenue.nebraska.gov/businesses/sales-and-use-tax",
+  "local_note": {
+   "text": "Cities and counties may add 0.5% to 2%. The rate is the one at the delivery address.",
+   "quote": "The Nebraska state sales and use tax rate is 5.5%. In addition, local sales and use taxes can be set at 0.5%, 1%, 1.5%, 1.75%, or 2%, as adopted by city or county governments. | The point of delivery determines the location of the sale. The sales tax rate is calculated at the rate in effect at that location.",
+   "url": "https://revenue.nebraska.gov/about/frequently-asked-questions/nebraska-sales-and-use-tax-faqs"
+  },
+  "shipped_goods": {
+   "rule": "Taxable at the delivery address. A seller with no physical presence in Nebraska must collect once its Nebraska retail sales exceed $100,000, or reach 200 or more separate transactions, in the previous or current calendar year. If the seller doesn't collect, the buyer owes use tax to the Department of Revenue (businesses on Form 10 or Form 2).",
+   "quote": "A retailer who lacks a physical presence in this state [...] shall be deemed to be engaged in business in this state if: (a) Such retailer made total retail sales of property in this state that exceeded one hundred thousand dollars in the previous or current calendar year; or (b) Such retailer made retail sales in this state in two hundred or more separate transactions in the previous or current calendar year. | FAQ: If the seller is not licensed to collect Nebraska sales tax or fails to collect the sales tax, then the customer becomes personally liable for the tax and must pay it directly to DOR as use tax.",
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-2701.13",
+   "second_url": "https://revenue.nebraska.gov/about/frequently-asked-questions/nebraska-sales-and-use-tax-faqs"
+  },
+  "freight_taxed": true,
+  "freight": {
+   "quote": "Are delivery, freight, postage, shipping, handling, and other service charges for transportation of the item purchased taxable? Except for separately stated charges for U.S. postage on direct mail, these charges are taxable whenever the item purchased is taxable and the charges are paid to the retailer of the item.",
+   "url": "https://revenue.nebraska.gov/about/frequently-asked-questions/nebraska-sales-and-use-tax-faqs",
+   "statute_quote": "Sales price [...] means the total amount of consideration [...] without any deduction for the following: [...] (d) Delivery charges; and (e) Installation charges.",
+   "statute_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-2701.35"
+  },
+  "install_labor": {
+   "rule": "It depends on whether the item is annexed to the building. Labor by a contractor annexing building materials or fixtures to real estate is 'contractor labor': not taxed for Option 2 and Option 3 contractors, and not taxed for an Option 1 contractor when stated separately on the invoice. Labor to install property that stays tangible personal property is taxed when the property is taxable. The Department's guidance does not name toilet partitions, and does not address an installer fitting partitions the customer bought elsewhere.",
+   "quote": "Option 1. Option 1 contractor labor charges that are separately stated on the billing invoice are not taxable. [...] Option 2. Option 2 contractor labor charges are not taxable. [...] Option 3. Option 3 contractor labor charges are not taxable. | FAQ: Charges for repair and installation labor are taxable when the property being repaired, replaced, or installed is taxable. | Contractor FAQ: Since a built-in dishwasher is annexed to real estate, the general rules on taxing labor to install tangible personal property do not apply. The person \"installing\" the dishwasher is a contractor.",
+   "url": "https://revenue.nebraska.gov/sites/revenue.nebraska.gov/files/doc/info/6-346.pdf",
+   "second_url": "https://revenue.nebraska.gov/about/frequently-asked-questions/nebraska-construction-contractors-faqs",
+   "third_url": "https://revenue.nebraska.gov/about/frequently-asked-questions/nebraska-sales-and-use-tax-faqs"
+  },
+  "furnish_and_install": {
+   "rule": "Depends on the option the contractor chose when registering with the Department of Labor (unregistered = Option 1). Option 1 (retailer): buys materials tax-free, collects sales tax from the customer on separately stated building materials and fixtures, no tax on separately stated labor; if not separated, tax on the whole invoice. Option 2: pays tax when buying materials, collects none from the customer. Option 3: buys tax-free into inventory, remits use tax when materials are withdrawn, collects none from the customer. A sale where the seller neither annexes nor arranges annexation is an over-the-counter retail sale, taxed in full.",
+   "quote": "Option 1 [...] Collect sales tax on separately stated building materials and fixtures. Do not collect sales tax on separately stated contractor labor charges. If charges for building materials and fixtures are not separately stated from contractor labor, sales tax must be collected on the total amount invoiced. | Option 2 [...] Do not collect sales tax from customers. [...] Must pay sales or use tax at the time of purchase | Option 3 [...] Remit consumer's use tax on all building materials and fixtures at the rate in effect at the time and place of withdrawal from inventory. Do not collect sales tax from customers. | Over-the-counter sales are transactions where the terms of the sale do not require the seller to annex building materials or fixtures to real estate, or to arrange for such annexation.",
+   "url": "https://revenue.nebraska.gov/sites/revenue.nebraska.gov/files/doc/info/6-496.pdf",
+   "second_url": "https://revenue.nebraska.gov/sites/revenue.nebraska.gov/files/doc/info/6-346.pdf"
+  },
+  "agency": "Nebraska Department of Revenue",
+  "confidence": "medium"
+ },
+ "page": {
+  "stalls_intro": "Nebraska's rules count toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. Half are counted as men and half as women, and any fraction rounds up. Every toilet needs a stall. Nebraska's rules also require urinals in the men's room, counted separately from the men's toilets, and each urinal needs a screen. The women's room must have at least as many toilets as the men's toilets and urinals added together.",
+  "stalls_rows": {
+   "50": {
+    "office": "2/1+1",
+    "restaurant": "2/1+1",
+    "school": "2/1+1"
+   },
+   "100": {
+    "office": "3/1+1",
+    "restaurant": "2/1+1",
+    "school": "2/1+1"
+   },
+   "200": {
+    "office": "4/2+1",
+    "restaurant": "3/2+1",
+    "school": "4/2+1"
+   },
+   "400": {
+    "office": "8/3+2",
+    "restaurant": "4/3+1",
+    "school": "7/4+2"
+   }
+  },
+  "stalls_after": "These are the state's minimums for the whole building. A city may adopt its own plumbing rules, so check which table your building department uses. An office or store with 50 people or fewer, or any space with 10 or fewer, can use one single-user restroom, and each urinal added beyond the minimum may replace one men's toilet, down to two thirds of the men's toilets.",
+  "capacity": "Nebraska's rules count an office at one person per 150 square feet of floor, a restaurant dining room at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** Nebraska's building rules treat toilet partitions as an interior finish and require solid plastic (HDPE) and polypropylene partitions to pass a room-corner fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use, and a room with six or more toilets and urinals also needs a narrower stall with grab bars on both sides. Federal law sets the sizes, and Nebraska's own access rules adopt the federal ones. Plans for commercial work are checked against them, by the city's building department where it reviews plans and by the State Fire Marshal elsewhere, and a building can't get its occupancy permit until it complies.",
+  "state_extra_bullet": "- **Nebraska extras:** the state's building rules add a national accessibility standard on top of the federal one. It asks for an 18 inch vertical grab bar on the side wall next to the toilet, which the federal rules do not. In a very large restroom, 5% of the stalls must be wheelchair accessible, which means a second one from 21 stalls up.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** a one-person restroom must have a sign showing it is for either sex. Nebraska's rules call for separate men's and women's rooms above the smallest sizes and say nothing about a shared all-gender room with stalls, so ask your building department before planning one. Nebraska has no state law on who may use which restroom.",
+  "public_jobs": "Nebraska does not set wage rates for public jobs: state law has contractors bidding on public works confirm that they pay what at least half of the contractors in their trade pay, and federal wage rates apply where federal money is involved.",
+  "tax_install_bullet": "- **Tax on installation:** in Nebraska it depends on how the installer is registered with the state. Some contractors charge sales tax on the partitions and none on labor shown as a separate line; if the two aren't separated, the whole invoice is taxed. Others pay the tax when they buy the partitions and add none to the job. The state's guidance doesn't name toilet partitions, or cover an installer fitting partitions you bought yourself, so ask.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable, and so is freight charged by the seller. If the seller doesn't collect the tax, the buyer owes it to the state.",
+  "tax_confirm": "your accountant or the Nebraska Department of Revenue",
+  "sources": [
+   "- Nebraska's state building code and where it applies: Nebraska Revised Statutes [71-6403](https://nebraskalegislature.gov/laws/statutes.php?statute=71-6403) (adopts the 2018 International Building Code, except Section 101.4.3 and Chapter 29, and the 2018 Uniform Plumbing Code), [71-6405](https://nebraskalegislature.gov/laws/statutes.php?statute=71-6405) and [71-6406](https://nebraskalegislature.gov/laws/statutes.php?statute=71-6406) (cities and counties may adopt their own conforming codes, including a plumbing code). Checked 2026-11-24.",
+   "- Toilet and urinal counts: [2018 Uniform Plumbing Code](https://epubs.iapmo.org/2018/UPC/), Sections 422.1 and 422.2 and Table 422.1, Minimum Plumbing Facilities, with notes 1, 3 and 4 (IAPMO's read-only edition, printed pages 33 to 39). Checked 2026-11-24.",
+   "- Floor area per person and the stall and urinal screen rule: 2018 International Building Code, [Table 1004.5](https://up.codes/viewer/nebraska/ibc-2018/chapter/10/means-of-egress) and [Section 1209.3](https://up.codes/viewer/nebraska/ibc-2018/chapter/12/interior-environment), read on UpCodes, a secondary copy. Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: 2018 International Building Code, [Sections 803.9 and 803.1.1 (NFPA 286)](https://up.codes/viewer/nebraska/ibc-2018/chapter/8/interior-finishes), read on UpCodes. Checked 2026-11-24.",
+   "- Access rules and plan review: Nebraska Revised Statutes [81-5,147](https://nebraskalegislature.gov/laws/statutes.php?statute=81-5,147) and [81-5,148](https://nebraskalegislature.gov/laws/statutes.php?statute=81-5,148); Nebraska Administrative Code Title 156, [Chapter 1](https://sfm.nebraska.gov/sites/default/files/doc/title156-ch1.pdf), [Chapter 4](https://sfm.nebraska.gov/sites/default/files/doc/title156-ch4.pdf) and [Chapter 6](https://sfm.nebraska.gov/sites/default/files/doc/title156-ch6.pdf); Nebraska State Fire Marshal, [Nebraska Accessibility Guidelines and Fair Housing Act](https://sfm.nebraska.gov/plans/nebraska-accessibility-guidelines-and-fair-housing-act), [plan review FAQ](https://sfm.nebraska.gov/plans/faq) and [Authorities Conducting Title 156 Reviews](https://sfm.nebraska.gov/sites/default/files/doc/Title%20156-ADA%20UPDATED%2009-02-2025.pdf). Checked 2026-11-24.",
+   "- Stall rules compared: [ICC A117.1-2009, Section 604](https://up.codes/viewer/nebraska/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities) and [2018 International Building Code, Sections 1102.1 and 1109.2](https://up.codes/viewer/nebraska/ibc-2018/chapter/11/accessibility) (read on UpCodes), against the [2010 ADA Standards for Accessible Design](https://www.access-board.gov/ada/), sections 213 and 604. Checked 2026-11-24.",
+   "- Single-user restroom signs and separate rooms: [2018 Uniform Plumbing Code](https://epubs.iapmo.org/2018/UPC/), Sections 422.2 and 422.2.1. No restroom-use law: [LB 89 (2025), Stand With Women Act, as enacted](https://www.nebraskalegislature.gov/FloorDocs/109/PDF/Slip/LB89.pdf) and [LB 730 (2026), Nebraska Legislature bill page](https://www.nebraskalegislature.gov/bills/view_bill.php?DocumentID=62661) (indefinitely postponed). Checked 2026-11-24.",
+   "- Wages on public jobs: Nebraska Revised Statutes [73-102](https://nebraskalegislature.gov/laws/statutes.php?statute=73-102), [73-103](https://nebraskalegislature.gov/laws/statutes.php?statute=73-103) and [73-104](https://nebraskalegislature.gov/laws/statutes.php?statute=73-104) (fair labor standards on public works). Checked 2026-11-24.",
+   "- Sales tax: Nebraska Department of Revenue, [Sales and Use Tax](https://revenue.nebraska.gov/businesses/sales-and-use-tax) (5.5% state rate), [Nebraska Sales and Use Tax FAQs](https://revenue.nebraska.gov/about/frequently-asked-questions/nebraska-sales-and-use-tax-faqs) (delivery charges, installation labor, use tax), [Construction Contractor Fact Sheet](https://revenue.nebraska.gov/sites/revenue.nebraska.gov/files/doc/info/6-496.pdf), [Nebraska Taxation of Contractors, General Information](https://revenue.nebraska.gov/sites/revenue.nebraska.gov/files/doc/info/6-346.pdf) and [Construction Contractors FAQs](https://revenue.nebraska.gov/about/frequently-asked-questions/nebraska-construction-contractors-faqs); Nebraska Revised Statutes [77-2701.13](https://nebraskalegislature.gov/laws/statutes.php?statute=77-2701.13) (out-of-state sellers) and [77-2701.35](https://nebraskalegislature.gov/laws/statutes.php?statute=77-2701.35) (sales price). Checked 2026-11-24."
+  ],
+  "official_names": "Nebraska Accessibility Guidelines (156 Neb. Admin. Code, adopting the federal ADA Standards for Accessible Design; 2010 ADA Standards) and ICC A117.1-2009 through the building code; Nebraska state building code under Neb. Rev. Stat. 71-6403: 2018 International Building Code (without Chapter 29); 2018 Uniform Plumbing Code; NFPA 286 for HDPE."
+ },
+ "notes": [
+  "Unusual for the series: Nebraska's state table is the Uniform Plumbing Code's Table 422.1, which REQUIRES urinals in their own column and has a 'women's toilets not less than men's toilets plus urinals' note. That note raises the women's count from 1 to 2 for a restaurant or school of 50.",
+  "Office at 50 occupants: UPC 422.2 exception 3 allows one single-user room for both sexes in business and mercantile occupancies of 50 or fewer, so the 2/1+1 figure applies only if separate rooms are built.",
+  "LB 730 (2026) on restroom designation in schools and state agencies was indefinitely postponed on 2026-04-17 (Legislature's bill page). Kept out of page text beyond 'no state law'.",
+  "Title 156 chapter 4 cites 'Appendix A to ... 28 CFR Part 36', the location of the 1991 ADA standards when the rule took effect in 1994; the Fire Marshal's page now links the 2010 ADA Standards and the statute calls for the most current federal standards. The page text says only that Nebraska adopts the federal rules.",
+  "For the Omaha agent: the Fire Marshal's list names Omaha as doing its own Title 156 accessibility reviews (402-444-5350 ext. 2126, 3 mile jurisdiction). Omaha is a city of the metropolitan class and may adopt its own plumbing code (71-6406(2)(d), section 14-419): confirm which plumbing code and fixture table Omaha uses before using the state rows. The Revenue page notes Omaha's 1.5% local sales tax and a Good Life District inside Omaha with different rates."
+ ],
+ "sources_read": [
+  {
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=71-6403",
+   "official": true
+  },
+  {
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=71-6405",
+   "official": true
+  },
+  {
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=71-6406",
+   "official": true
+  },
+  {
+   "url": "https://epubs.iapmo.org/2018/UPC/",
+   "official": true,
+   "note": "IAPMO read-only edition; text index mobile/javascript/search_config.js and page images files/mobile/70.jpg, 71.jpg"
+  },
+  {
+   "url": "https://up.codes/viewer/nebraska/ibc-2018/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/nebraska/ibc-2018/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/nebraska/ibc-2018/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/nebraska/ibc-2018/chapter/12/interior-environment",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/nebraska/icc-a117.1-2009/chapter/6/plumbing-elements-and-facilities",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/nebraska/upc-2018/chapter/4/plumbing-fixtures-and-fixture-fittings",
+   "official": false,
+   "note": "only the heading 'Nebraska Plumbing Code 2018, Adopts Without Amendments, UPC 2018' is readable without an account"
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=81-5,147",
+   "official": true
+  },
+  {
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=81-5,148",
+   "official": true
+  },
+  {
+   "url": "https://sfm.nebraska.gov/plans/nebraska-accessibility-guidelines-and-fair-housing-act",
+   "official": true
+  },
+  {
+   "url": "https://sfm.nebraska.gov/plans/faq",
+   "official": true
+  },
+  {
+   "url": "https://sfm.nebraska.gov/node/210",
+   "official": true
+  },
+  {
+   "url": "https://sfm.nebraska.gov/sites/default/files/doc/title156-ch1.pdf",
+   "official": true
+  },
+  {
+   "url": "https://sfm.nebraska.gov/sites/default/files/doc/title156-ch2.pdf",
+   "official": true
+  },
+  {
+   "url": "https://sfm.nebraska.gov/sites/default/files/doc/title156-ch3.pdf",
+   "official": true
+  },
+  {
+   "url": "https://sfm.nebraska.gov/sites/default/files/doc/title156-ch4.pdf",
+   "official": true
+  },
+  {
+   "url": "https://sfm.nebraska.gov/sites/default/files/doc/title156-ch5.pdf",
+   "official": true
+  },
+  {
+   "url": "https://sfm.nebraska.gov/sites/default/files/doc/title156-ch6.pdf",
+   "official": true
+  },
+  {
+   "url": "https://sfm.nebraska.gov/sites/default/files/doc/Title%20156-ADA%20UPDATED%2009-02-2025.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.nebraskalegislature.gov/FloorDocs/109/PDF/Slip/LB89.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.nebraskalegislature.gov/bills/view_bill.php?DocumentID=62661",
+   "official": true
+  },
+  {
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=73-101",
+   "official": true
+  },
+  {
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=73-102",
+   "official": true
+  },
+  {
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=73-103",
+   "official": true
+  },
+  {
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=73-104",
+   "official": true
+  },
+  {
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=73-106",
+   "official": true
+  },
+  {
+   "url": "https://www.dol.gov/agencies/whd/state/prevailing-wages",
+   "official": true,
+   "note": "read through a summarising fetch only"
+  },
+  {
+   "url": "https://revenue.nebraska.gov/businesses/sales-and-use-tax",
+   "official": true
+  },
+  {
+   "url": "https://revenue.nebraska.gov/about/frequently-asked-questions/nebraska-sales-and-use-tax-faqs",
+   "official": true
+  },
+  {
+   "url": "https://revenue.nebraska.gov/about/frequently-asked-questions/nebraska-construction-contractors-faqs",
+   "official": true
+  },
+  {
+   "url": "https://revenue.nebraska.gov/businesses/information-construction-contractors",
+   "official": true
+  },
+  {
+   "url": "https://revenue.nebraska.gov/sites/revenue.nebraska.gov/files/doc/info/6-346.pdf",
+   "official": true
+  },
+  {
+   "url": "https://revenue.nebraska.gov/sites/revenue.nebraska.gov/files/doc/info/6-496.pdf",
+   "official": true
+  },
+  {
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-2701.13",
+   "official": true
+  },
+  {
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-2701.35",
+   "official": true
+  }
+ ],
+ "to_confirm": [
+  "Which plumbing code and fixture table each city uses (Omaha first): cities may adopt their own plumbing code or IBC Chapter 29 under 71-6406. Ask the city's building department; city agent to read the city code.",
+  "Whether the city's building code keeps IBC 803.9 (HDPE fire test) and Chapter 11 unamended. Section text here was read on UpCodes, not on an official copy: confirm with the city building department or the State Fire Marshal, 402-471-2027.",
+  "Which edition of the federal standards the State Fire Marshal applies in Title 156 reviews (chapter 4 cites 'Appendix A to 28 CFR Part 36'; the agency page links the 2010 ADA Standards). State Fire Marshal plans division, 402-471-9465.",
+  "Whether a like-for-like partition replacement counts as an 'alteration' needing Title 156 plan review (the rule lists changes in the plan or height of walls or partitions as alterations, and excludes normal maintenance). State Fire Marshal or the city's reviewer.",
+  "Whether a building official will accept a shared multi-stall all-gender room under UPC 422.2 (no exception in the 2018 text). City building department.",
+  "Sales tax: whether the Department of Revenue treats installed toilet partitions as annexed to real estate (contractor options apply) and how it taxes labor-only installation of customer-bought partitions; Reg-1-017, Reg-1-079 and Reg-1-082 themselves were not read (only the Department's FAQs and guides, the contractor guides dated 2007 to 2019). Nebraska Department of Revenue, 800-742-7474.",
+  "Public wages: the U.S. Department of Labor table could only be read through a summary tool. Whether a given city or school district writes its own wage provisions into contracts (73-102 allows it) is a city question.",
+  "ICC A117.1-2009 toe clearance, door and children's stall provisions were not compared line by line with the 2010 ADA Standards."
+ ]
+}

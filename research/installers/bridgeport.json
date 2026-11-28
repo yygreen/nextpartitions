@@ -1,0 +1,388 @@
+{
+ "area": "bridgeport",
+ "found_count": 12,
+ "sources_tried": [
+  "Seeds file research/installers/raw/seeds/bridgeport.json: worked. Maps results gave several leads; the 'web' results were all irrelevant remodelers or Google redirect links",
+  "Scranton Products find-a-rep (scrantonproducts.com/find-a-rep/): 404",
+  "Bobrick find-a-representative (bobrick.com/find-a-representative): 404",
+  "Global Partitions/ASI locator (globalpartitions.com): host not reachable from this session (DNS/network allowlist)",
+  "Metpar representatives (metpar.com/representatives/): 404",
+  "Hadrian find-a-rep: 404",
+  "Bradley, General Partitions, Ampco/Ammco locators: not tried (search cap / earlier locator URLs failing)",
+  "The Blue Book (thebluebook.com) category and article pages: 403 blocked on fetch; content seen only via search snippets",
+  "BuildingConnected / Procore public profiles: not tried (search cap reached)",
+  "ConstructConnect (via constructionjournal redirect): worked, but details paywalled",
+  "BBB category pages (bbb.org/us/ct/category/partition, milford/category/partition) and CRS profile: worked",
+  "Superpages Bridgeport partitions: worked",
+  "One Point Partitions site: 403 blocked",
+  "WebSearch: 8 of 8 used (CT toilet partition installation/Division 10; New Haven/Bridgeport/Stamford toilet partitions; CRS Danbury; CT washroom accessories specialties; Elite Construction Resources; Stamford/Norwalk/Danbury installers; Division 10 CT toilet compartments). Worked, but results were mostly directories and spec documents",
+  "Company sites fetched: ctrestroom.com, csnellc.com, westhartfordlock.com, csinstallers.com, newtondistributing.com, elitecr (squarespace), decesares.com, flushmetal.com and knickerbockerpartition.com (manufacturers, excluded), privacypartitionsne.com (minimal content), interiorpartitions.net (503), cadistributors.com (empty, excluded)"
+ ],
+ "candidates": [
+  {
+   "name": "Connecticut Restroom Specialties, LLC (CRS)",
+   "base_city": "Danbury",
+   "state": "CT",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.ctrestroom.com/",
+   "phone": "203-205-0170",
+   "contact_page": "https://www.ctrestroom.com/#contact-section",
+   "review_source": "BBB rating A+ (not accredited); no review count shown",
+   "evidence_urls": [
+    "https://www.ctrestroom.com/",
+    "https://www.bbb.org/us/ct/category/partition"
+   ],
+   "partition_evidence": "Own site lists toilet partitions among its products and says its installers are factory trained and ADA-aware. It covers restroom projects from layout to installation for offices, schools, restaurants, government buildings and stadiums.",
+   "red_flags": [
+    "Distributor of Division 10 products, so a buy-around risk",
+    "Site lists two different fax numbers"
+   ],
+   "reason": "Danbury-based Division 10 distributor and installer serving the tri-state area, with commercial restroom installation stated on its own site. It sells partitions itself, so it competes on supply.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Connecticut Restroom Specialties, LLC (CRS)",
+    "area": "bridgeport",
+    "status": "not_required_online_check",
+    "registry": "Connecticut Department of Consumer Protection (rule: no_state_license); no local rule for Bridgeport\u2013New Haven",
+    "note": "The area rule says neither the state nor the city requires a license for this work, so no license lookup was run. A Connecticut Secretary of State (CONCORD/business.ct.gov) entity search was not done. The Home Improvement Contractor registration applies only to residential work and was not checked.",
+    "source_url": "https://www.ctrestroom.com/"
+   },
+   "score": 70
+  },
+  {
+   "name": "Privacy Partitions",
+   "base_city": "West Haven",
+   "state": "CT",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://privacypartitionsne.com/",
+   "phone": "(332) 228-8424",
+   "email": "info@privacypartitionsne.com",
+   "evidence_urls": [
+    "https://privacypartitionsne.com/"
+   ],
+   "partition_evidence": "Site metadata describes 'Full-service commercial toilet partition supply and installation company serving Connecticut and the entire East Coast', in steel, stainless, HDPE, phenolic and laminate. It says it is based in West Haven.",
+   "red_flags": [
+    "Very thin, apparently new site whose content only appears in metadata",
+    "No projects, photos or reviews seen",
+    "Phone is a 332 (New York City) area code despite the West Haven base",
+    "Supplies partitions itself, so a buy-around risk"
+   ],
+   "reason": "Its own site says it supplies and installs commercial toilet partitions from West Haven, but the site shows no projects. Its legitimacy needs checking before outreach.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Privacy Partitions",
+    "area": "bridgeport",
+    "status": "not_required_online_check",
+    "registry": "Connecticut Department of Consumer Protection (rule: no_state_license); no local rule for Bridgeport\u2013New Haven",
+    "note": "The area rule needs no state or local license, so no lookup was run. Based in West Haven, CT. The legal entity name was not confirmed.",
+    "source_url": "https://privacypartitionsne.com/"
+   },
+   "score": 70
+  },
+  {
+   "name": "Construction Specialties Installations (CSI)",
+   "base_city": "Ronkonkoma",
+   "state": "NY",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://www.csinstallers.com/locations/ny/",
+   "phone": "866-746-8849",
+   "email": "info@csinstallers.com",
+   "contact_page": "https://www.csinstallers.com/contact/",
+   "evidence_urls": [
+    "https://www.csinstallers.com/locations/ny/"
+   ],
+   "partition_evidence": "NY location page lists a bathroom partitions installation service and full-height toilet partitions.",
+   "red_flags": [
+    "Long Island base: about 27 miles straight-line but a long drive or ferry crossing to the area",
+    "Its page names Connecticut only in a heading and lists no CT towns"
+   ],
+   "reason": "Installation company offering bathroom partition installation, with a page headed 'Serving New York, Connecticut, and Beyond'. Its actual Connecticut coverage is unproven.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Construction Specialties Installations (CSI)",
+    "area": "bridgeport",
+    "status": "not_required_online_check",
+    "registry": "Connecticut DCP eLicense lookup (Major Contractor / Home Improvement registration); City of Bridgeport building permits",
+    "license_type": "none confirmed for commercial partition work",
+    "note": "Checked 2026-11-20. Per research/state-licensing, CT has no state license for commercial partition installation: Major Contractor registration covers only large structural work, and HIC covers residential. Bridgeport's permit page asks permit applicants for a HIC, New Home or Major Contractor registration card, so the permit holder (usually the GC) may need one. The CT eLicense lookup is an ASP.NET postback form and wasn't queried. The company site lists Construction Specialties, Inc. (CSI), Ronkonkoma, NY, phone 866-746-8849, 'Serving New York, Connecticut, and Beyond', and no license numbers. The NYC DOB dataset has an EXPIRED GC record 603318 for 'CONSTRUCTION SPECIALTIES', but it isn't confirmed to be this company.",
+    "source_url": "https://www.csinstallers.com/locations/ny/"
+   },
+   "score": 65
+  },
+  {
+   "name": "CSNE LLC (Construction Specialties of New England)",
+   "base_city": "South Windsor",
+   "state": "CT",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [
+    "American Specialties",
+    "Scranton Products",
+    "ASI Global Partitions",
+    "Lyon Workspace",
+    "Bobrick"
+   ],
+   "website": "https://www.csnellc.com/",
+   "phone": "(860) 290-9260",
+   "contact_page": "https://www.csnellc.com/contact-us",
+   "evidence_urls": [
+    "https://www.csnellc.com/",
+    "https://www.csnellc.com/contact-us"
+   ],
+   "partition_evidence": "Own site says it supplies and installs toilet partitions, bathroom accessories and lockers as a Division 10 subcontractor, with manufacturer links to Scranton, ASI and Bobrick.",
+   "red_flags": [
+    "Supplies partitions itself, so a buy-around risk",
+    "Contact page lists only named staff emails, no general company email"
+   ],
+   "reason": "Division 10 subcontractor that supplies and installs toilet partitions across Connecticut, Massachusetts and Rhode Island. It is about 50 miles from the area center.",
+   "added_by_checker": false,
+   "license": {
+    "name": "CSNE LLC (Construction Specialties of New England)",
+    "area": "bridgeport",
+    "status": "not_required_online_check",
+    "registry": "Connecticut Department of Consumer Protection (rule: no_state_license); no local rule for Bridgeport\u2013New Haven",
+    "note": "The area rule needs no state or local license for partition installation, so no lookup was run. Based in South Windsor, CT. No business entity search was done.",
+    "source_url": "https://www.csnellc.com/"
+   },
+   "score": 63
+  },
+  {
+   "name": "West Hartford Lock / Lindquist Doors & Hardware",
+   "base_city": "Trumbull",
+   "state": "CT",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://www.westhartfordlock.com/",
+   "phone": "(203) 381-5557",
+   "email": "info@NEDoorSecurity.com",
+   "contact_page": "https://www.westhartfordlock.com/contact",
+   "evidence_urls": [
+    "https://www.westhartfordlock.com/"
+   ],
+   "partition_evidence": "Site says its retail stores sell bathroom partitions and that restroom accessories come 'with installation if requested'. Partition installation is not stated.",
+   "red_flags": [
+    "Sells partitions itself, so a buy-around risk",
+    "Mainly a door, hardware and security firm"
+   ],
+   "reason": "Commercial door and hardware supplier with a Trumbull location. It sells bathroom partitions and installs accessories, but partition installation is unproven.",
+   "added_by_checker": false,
+   "license": {
+    "name": "West Hartford Lock / Lindquist Doors & Hardware",
+    "area": "bridgeport",
+    "status": "not_required_online_check",
+    "registry": "Connecticut Department of Consumer Protection (rule: no_state_license); no local rule for Bridgeport\u2013New Haven",
+    "note": "The area rule needs no state or local license, so no lookup was run. Listed in Trumbull, CT. It is a door and hardware company, and its trade name differs from the listing name. Confirm that it installs partitions.",
+    "source_url": "https://www.westhartfordlock.com/"
+   },
+   "score": 50
+  },
+  {
+   "name": "Elite Construction Resources LLC",
+   "base_city": "Wallingford",
+   "state": "CT",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://elitecr.com/",
+   "phone": "860-290-9421",
+   "evidence_urls": [
+    "https://thomas-moore-lyjb.squarespace.com/general-trades"
+   ],
+   "partition_evidence": "General Trades page lists Division 10, 11 and 12 materials, including toilet compartments and toilet accessories, among roughly 30 specialty items. The Blue Book lists it under Toilet Accessories & Partitions (search snippet only).",
+   "red_flags": [
+    "elitecr.com returned 503; page read on its Squarespace mirror",
+    "Mainly a framing, drywall and general-trades firm"
+   ],
+   "reason": "General-trades subcontractor that lists toilet compartments in a long Division 10 list. No partition projects or photos were seen.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Elite Construction Resources LLC",
+    "area": "bridgeport",
+    "status": "not_required_online_check",
+    "registry": "Connecticut Department of Consumer Protection (rule: no_state_license); no local rule for Bridgeport\u2013New Haven",
+    "note": "The area rule needs no state or local license, so no lookup was run. Based in Wallingford, CT. CT Major Contractor registration covers only large structural projects and was not checked.",
+    "source_url": "https://elitecr.com/"
+   },
+   "score": 45
+  },
+  {
+   "name": "Newton Building Specialties & Installation (Newton Distributing Company)",
+   "base_city": "Natick",
+   "state": "MA",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "no",
+   "brands": [
+    "Hadrian",
+    "Scranton"
+   ],
+   "website": "https://newtondistributing.com/",
+   "phone": "877-837-7745",
+   "email": "sales@newtondistributing.com",
+   "contact_page": "https://newtondistributing.com/contact-newton/",
+   "evidence_urls": [
+    "https://newtondistributing.com/",
+    "https://www.newtondistributing.com/architects-electricians-installers/"
+   ],
+   "partition_evidence": "Sells Hadrian and Scranton partitions. Its FAQ says installation services are offered, but not specifically for partitions.",
+   "red_flags": [
+    "Distributor that sells partitions online, so a direct competitor",
+    "No stated Connecticut service area"
+   ],
+   "reason": "Massachusetts distributor about 120+ miles away that does not say it serves Connecticut. It is mainly a partition seller.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "Hamden Partitions & Acoustical",
+   "base_city": "New Haven",
+   "state": "CT",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://hpa45966.wixsite.com/my-site",
+   "phone": "(203) 745-5723",
+   "email": "hpa45966@gmail.com",
+   "contact_page": "https://hpa45966.wixsite.com/my-site",
+   "evidence_urls": [
+    "https://hpa45966.wixsite.com/my-site"
+   ],
+   "partition_evidence": "Services are framing, drywall, taping, acoustical ceilings, and doors, frames and hardware. 'Partitions' refers to wall partitions, not toilet partitions.",
+   "red_flags": [
+    "Site's Call Now button uses a placeholder number"
+   ],
+   "reason": "Drywall and acoustical ceiling contractor; toilet partitions are not among its services.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 35
+  },
+  {
+   "name": "DeCesare's Building Hardware",
+   "base_city": "Bridgeport",
+   "state": "CT",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [],
+   "website": "http://decesares.com/",
+   "contact_page": "http://decesares.com/contact",
+   "evidence_urls": [
+    "http://decesares.com/",
+    "http://decesares.com/products-sold-here"
+   ],
+   "partition_evidence": "Products page lists steel, plastic and stainless steel partitions. No installation services are mentioned.",
+   "red_flags": [
+    "Hardware supplier that sells partitions, so a buy-around risk"
+   ],
+   "reason": "Building hardware store that sells partitions. Nothing on its site shows installation.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "Middletown",
+   "state": "CT",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://onepointpartitions.com/?p=2704"
+   ],
+   "partition_evidence": "Site blocked automated access (403). Search snippets show a national online partition seller with city landing pages promising 5-7 day delivery. No installation work was seen.",
+   "red_flags": [
+    "National online partition seller, so a direct competitor",
+    "Middletown address comes only from a search snippet; city pages look like SEO landing pages",
+    "Site not readable (Cloudflare 403)"
+   ],
+   "reason": "Appears to be a nationwide partition retailer, not a local installer. No installation evidence could be read.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "Interior Partitions Specialists LLC",
+   "base_city": "Meriden",
+   "state": "CT",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "http://interiorpartitions.net/",
+   "evidence_urls": [
+    "http://interiorpartitions.net/"
+   ],
+   "partition_evidence": "Website is a Network Solutions 'under construction' placeholder; no business listing found in search.",
+   "red_flags": [
+    "No working website",
+    "Business not found in search"
+   ],
+   "reason": "Nothing shows this business installs toilet partitions, or that it operates at all.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  },
+  {
+   "name": "Russell Partition Co",
+   "base_city": "North Haven",
+   "state": "CT",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "evidence_urls": [
+    "https://naicslist.com/company-profile/russell-partition-co-llc-north-haven-ct-06473"
+   ],
+   "partition_evidence": "Only a NAICS directory listing (showcase, partition, shelving and locker manufacturer) and a 2008 obituary of its founder appeared in search. No website and no toilet partition work were found.",
+   "red_flags": [
+    "No website",
+    "Current operating status unknown"
+   ],
+   "reason": "No evidence of toilet partition installation; it may be a manufacturer of partitions or shelving and may be inactive.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  }
+ ]
+}

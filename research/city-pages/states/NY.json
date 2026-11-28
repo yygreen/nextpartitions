@@ -1,0 +1,504 @@
+{
+ "state": "NY",
+ "state_name": "New York",
+ "checked": "2026-11-24",
+ "scope_note": "Covers the New York State Uniform Fire Prevention and Building Code (2025 code books), which applies outside New York City. New York City keeps its own construction codes (NYC Building Code and NYC Plumbing Code) under Executive Law section 383(1)(c); nothing in the fixtures, hdpe_fire or access blocks was checked against the NYC codes, and a later agent covers NYC. The state statutes in restrooms, public_wage and sales_tax apply statewide, New York City included (in NYC the city comptroller, not the Commissioner of Labor, sets prevailing rates). For this pack: Buffalo, Rochester and Long Island (Nassau and Suffolk counties) are under the state Uniform Code; New York City is not.",
+ "fixtures": {
+  "governing_table": {
+   "code": "2025 Plumbing Code of New York State (repeated as Table 2902.1 in the 2025 Building Code of New York State)",
+   "edition": "2025 (publication date July 2025; effective December 31, 2025; ICC describes the books as based on the 2024 International codes)",
+   "table": "[NY] Table 403.1, Minimum Number of Required Plumbing Fixtures",
+   "url": "https://up.codes/viewer/new_york/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "quote": "403.1 Minimum Number of Fixtures. Plumbing fixtures shall be provided in the minimum number as shown in Table 403.1, based on the actual use of the building or space. Uses not shown in Table 403.1 shall be considered individually by the code official. The number of occupants shall be determined by the Building Code of New York State.",
+   "official_url": "https://codes.iccsafe.org/codes/united-states/new-york",
+   "note": "Read on UpCodes (secondary copy titled 'Plumbing Code of New York State 2025'); the official free viewer at codes.iccsafe.org returned a captcha page to automated access. The table is marked [NY], but the NY changes seen are footnotes on public swimming pool showers and mass gatherings and wording in the institutional rows; the business, restaurant and educational rows read as the model text. The Building Code copy (Chapter 29) carries the same table and the same Sections 2902.1.1, 2902.1.2 and 2902.2."
+  },
+  "cities_may_amend": true,
+  "cities_may_amend_note": "Executive Law section 379 lets a local government adopt 'higher or more restrictive standards for construction' only with the State Fire Prevention and Building Code Council's approval. Whether Buffalo, Rochester or any Long Island town holds an approved more restrictive standard on plumbing fixtures was not checked (city agent). New York City is outside the Uniform Code altogether (Executive Law section 383(1)(c): 'in cities with a population of over one million' 'the existing building and fire prevention codes shall continue in full force and effect').",
+  "rows": {
+   "office": {
+    "row_label": "2 Business: Buildings for the transaction of business, nonmedical professional services, other services involving merchandise, office buildings, banks, light industrial and similar uses",
+    "wc_male": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "wc_female": "1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50",
+    "urinals": "No urinal column. Header: 'WATER CLOSETS (URINALS: SEE SECTION 424.2)'",
+    "quote": "Buildings for the transaction of business, nonmedical professional services, other services involving merchandise, office buildings, banks, light industrial and similar uses | 1 per 25 for the first 50 and 1 per 50 for the remainder exceeding 50 | [lavatories] 1 per 40 for the first 80 and 1 per 80 for the remainder exceeding 80 | [bathtubs/showers] — | [drinking fountain] 1 per 100 | 1 service sink (note e)",
+    "url": "https://up.codes/viewer/new_york/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "restaurant": {
+    "row_label": "1 Assembly: Restaurants, banquet halls and food courts (note d)",
+    "wc_male": "1 per 75",
+    "wc_female": "1 per 75",
+    "urinals": "No urinal column. Header: 'WATER CLOSETS (URINALS: SEE SECTION 424.2)'",
+    "quote": "Restaurants, banquet halls and food courts(d) | 1 per 75 | 1 per 75 | [lavatories] 1 per 200 | — | [drinking fountain] 1 per 500 | 1 service sink. Note d: The occupant load for seasonal outdoor seating and entertainment areas shall be included when determining the minimum number of facilities required.",
+    "url": "https://up.codes/viewer/new_york/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "school": {
+    "row_label": "3 Educational: Educational facilities",
+    "wc_male": "1 per 50",
+    "wc_female": "1 per 50",
+    "urinals": "No urinal column. Header: 'WATER CLOSETS (URINALS: SEE SECTION 424.2)'",
+    "quote": "Educational facilities | 1 per 50 | [lavatories] 1 per 50 | — | [drinking fountain] 1 per 100 | 1 service sink",
+    "url": "https://up.codes/viewer/new_york/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   }
+  },
+  "rules": {
+   "sex_split": {
+    "text": "Half the occupants are counted as male and half as female, unless approved statistical data shows another split. Where a shared (multiple-user) room is designed for all genders, the count is worked out on the whole occupant load instead.",
+    "quote": "403.1.1 Fixture Calculations. To determine the occupant load of each sex, the total occupant load shall be divided in half. ... Exceptions: 1. The total occupant load shall not be required to be divided in half where approved statistical data indicate a distribution of the sexes of other than 50 percent of each sex. 2. Where multiple-user facilities are designed to serve all genders, the minimum fixture count shall be calculated 100 percent, based on total occupant load. In such multiple-user facilities, each fixture type shall be in accordance with ICC A117.1.",
+    "url": "https://up.codes/viewer/new_york/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "rounding": {
+    "text": "Fractions round up to the next whole fixture. Table note a says one fixture is the minimum for the number of persons shown 'or any fraction'.",
+    "quote": "Fractional numbers resulting from applying the fixture ratios of Table 403.1 shall be rounded up to the next whole number. For calculations involving multiple occupancies, such fractional numbers for each occupancy shall first be summed and then rounded up to the next whole number.",
+    "url": "https://up.codes/viewer/new_york/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "urinal_substitution": {
+    "text": "Urinals are optional. In each toilet room they may replace up to 67% of the required men's water closets in assembly (restaurants) and educational occupancies, and up to 50% in all other occupancies (offices). No urinals are required.",
+    "quote": "424.2 Substitution for Water Closets. In each bathroom or toilet room, urinals shall not be substituted for more than 67 percent of the required water closets for males according to Table 403.1 in assembly and educational occupancies. Urinals shall not be substituted for more than 50 percent of the required water closets for males according to Table 403.1 in all other occupancies.",
+    "url": "https://up.codes/viewer/new_york/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "small_occupancy_exception": {
+    "text": "Separate men's and women's rooms are not required where the total occupant load (employees and customers) is 15 or fewer, in business occupancies of 25 or fewer, in mercantile occupancies of 100 or fewer, where single-user toilet rooms are provided, or where a shared room is designed for everyone with a compartment for each water closet and partitions at each urinal.",
+    "quote": "403.2 Separate Facilities. Where plumbing fixtures are required, separate toilet facilities shall be provided for each sex. Exceptions: 1. Separate toilet facilities shall not be required for dwelling units and sleeping units. 2. Separate toilet facilities shall not be required in structures or tenant spaces with a total occupant load, including both employees and customers, of 15 or fewer. 3. Separate toilet facilities shall not be required in mercantile occupancies in which the maximum occupant load is 100 or fewer. 4. Separate toilet facilities shall not be required in business occupancies in which the maximum occupant load is 25 or fewer. 5. Separate toilet facilities shall not be required to be designated by sex where single-user toilet rooms are provided in accordance with Section 403.1.2. 6. Separate toilet facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by all persons regardless of sex and privacy is provided for water closets in accordance with Section 405.3.4 and for urinals in accordance with Section 405.3.5.",
+    "url": "https://up.codes/viewer/new_york/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   },
+   "occupant_load": {
+    "text": "Building Code Table 1004.5: business areas 150 gross square feet per occupant; assembly without fixed seats, unconcentrated (tables and chairs) 15 net; educational classroom area 20 net. The building official may approve the actual designed number where it is lower.",
+    "quote": "TABLE 1004.5 MAXIMUM FLOOR AREA ALLOWANCES PER OCCUPANT ... Assembly without fixed seats: Concentrated (chairs only—not fixed) 7 net; Standing space 5 net; Unconcentrated (tables and chairs) 15 net ... Business areas 150 gross ... Educational: Classroom area 20 net; Shops and other vocational room areas 50 net",
+    "url": "https://up.codes/viewer/new_york/ibc-2024/chapter/10/means-of-egress"
+   }
+  },
+  "every_toilet_needs_a_stall": {
+   "text": "Each water closet used by the public or employees needs its own compartment with a door, except in a single-occupant room with a lockable door. Each urinal needs partitions (start no higher than 12 in above the floor, reach at least 60 in, 30 in between them), except in a single-occupant or family room.",
+   "quote": "405.3.4 Water Closet Compartment. Each water closet utilized by the public or employees shall occupy a separate compartment with walls or partitions and a door enclosing the fixtures to ensure privacy. ... 405.3.5 Urinal Partitions. Each urinal utilized by the public or employees shall occupy a separate area with walls or partitions to provide privacy. The horizontal dimension between walls or partitions at each urinal shall be not less than 30 inches (762 mm). The walls or partitions shall begin at a height not greater than 12 inches (305 mm) from and extend not less than 60 inches (1524 mm) above the finished floor surface.",
+   "url": "https://up.codes/viewer/new_york/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "compartment_size_quote": "405.3.1 ... Water closet compartments shall be not less than 30 inches (762 mm) in width and not less than 60 inches (1524 mm) in depth for floor-mounted water closets and not less than 30 inches (762 mm) in width and 56 inches (1422 mm) in depth for wall-hung water closets."
+  },
+  "worked_examples": [
+   {
+    "occupancy": "office",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 / 2 = 25 of each sex. Water closets at 1 per 25 for the first 50, then 1 per 50: 25 people need 1 per sex (fractions round up). Urinals may replace up to 50% of the men's water closets in each toilet room: 0.5 x 1 = 0.5, so at most 0 (a share of a fixture cannot be substituted, so the limit is read as rounding down; the code does not state the rounding for this limit). Urinals are never required."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 100,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "100 / 2 = 50 of each sex. Water closets at 1 per 25 for the first 50, then 1 per 50: 50 people need 2 per sex (fractions round up). Urinals may replace up to 50% of the men's water closets in each toilet room: 0.5 x 2 = 1.0, so at most 1 (a share of a fixture cannot be substituted, so the limit is read as rounding down; the code does not state the rounding for this limit). Urinals are never required."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 200,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200 / 2 = 100 of each sex. Water closets at 1 per 25 for the first 50, then 1 per 50: 100 people need 3 per sex (fractions round up). Urinals may replace up to 50% of the men's water closets in each toilet room: 0.5 x 3 = 1.5, so at most 1 (a share of a fixture cannot be substituted, so the limit is read as rounding down; the code does not state the rounding for this limit). Urinals are never required."
+   },
+   {
+    "occupancy": "office",
+    "occupants": 400,
+    "wc_female": 5,
+    "wc_male_total": 5,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400 / 2 = 200 of each sex. Water closets at 1 per 25 for the first 50, then 1 per 50: 200 people need 5 per sex (fractions round up). Urinals may replace up to 50% of the men's water closets in each toilet room: 0.5 x 5 = 2.5, so at most 2 (a share of a fixture cannot be substituted, so the limit is read as rounding down; the code does not state the rounding for this limit). Urinals are never required."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 / 2 = 25 of each sex. Water closets at 1 per 75: 25 people need 1 per sex (fractions round up). Urinals may replace up to 67% of the men's water closets in each toilet room: 0.67 x 1 = 0.67, so at most 0 (a share of a fixture cannot be substituted, so the limit is read as rounding down; the code does not state the rounding for this limit). Urinals are never required."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "100 / 2 = 50 of each sex. Water closets at 1 per 75: 50 people need 1 per sex (fractions round up). Urinals may replace up to 67% of the men's water closets in each toilet room: 0.67 x 1 = 0.67, so at most 0 (a share of a fixture cannot be substituted, so the limit is read as rounding down; the code does not state the rounding for this limit). Urinals are never required."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200 / 2 = 100 of each sex. Water closets at 1 per 75: 100 people need 2 per sex (fractions round up). Urinals may replace up to 67% of the men's water closets in each toilet room: 0.67 x 2 = 1.34, so at most 1 (a share of a fixture cannot be substituted, so the limit is read as rounding down; the code does not state the rounding for this limit). Urinals are never required."
+   },
+   {
+    "occupancy": "restaurant",
+    "occupants": 400,
+    "wc_female": 3,
+    "wc_male_total": 3,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400 / 2 = 200 of each sex. Water closets at 1 per 75: 200 people need 3 per sex (fractions round up). Urinals may replace up to 67% of the men's water closets in each toilet room: 0.67 x 3 = 2.01, so at most 2 (a share of a fixture cannot be substituted, so the limit is read as rounding down; the code does not state the rounding for this limit). Urinals are never required."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 50,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "50 / 2 = 25 of each sex. Water closets at 1 per 50: 25 people need 1 per sex (fractions round up). Urinals may replace up to 67% of the men's water closets in each toilet room: 0.67 x 1 = 0.67, so at most 0 (a share of a fixture cannot be substituted, so the limit is read as rounding down; the code does not state the rounding for this limit). Urinals are never required."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 100,
+    "wc_female": 1,
+    "wc_male_total": 1,
+    "urinals_allowed": 0,
+    "urinals_required": 0,
+    "how": "100 / 2 = 50 of each sex. Water closets at 1 per 50: 50 people need 1 per sex (fractions round up). Urinals may replace up to 67% of the men's water closets in each toilet room: 0.67 x 1 = 0.67, so at most 0 (a share of a fixture cannot be substituted, so the limit is read as rounding down; the code does not state the rounding for this limit). Urinals are never required."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 200,
+    "wc_female": 2,
+    "wc_male_total": 2,
+    "urinals_allowed": 1,
+    "urinals_required": 0,
+    "how": "200 / 2 = 100 of each sex. Water closets at 1 per 50: 100 people need 2 per sex (fractions round up). Urinals may replace up to 67% of the men's water closets in each toilet room: 0.67 x 2 = 1.34, so at most 1 (a share of a fixture cannot be substituted, so the limit is read as rounding down; the code does not state the rounding for this limit). Urinals are never required."
+   },
+   {
+    "occupancy": "school",
+    "occupants": 400,
+    "wc_female": 4,
+    "wc_male_total": 4,
+    "urinals_allowed": 2,
+    "urinals_required": 0,
+    "how": "400 / 2 = 200 of each sex. Water closets at 1 per 50: 200 people need 4 per sex (fractions round up). Urinals may replace up to 67% of the men's water closets in each toilet room: 0.67 x 4 = 2.68, so at most 2 (a share of a fixture cannot be substituted, so the limit is read as rounding down; the code does not state the rounding for this limit). Urinals are never required."
+   }
+  ],
+  "confidence": "medium"
+ },
+ "hdpe_fire": {
+  "required": true,
+  "section": "2025 Building Code of New York State, Section 803.9 (with Section 803.1.1 and the Chapter 2 definition of Interior Wall and Ceiling Finish)",
+  "quote": "803.9 High-Density Polyethylene (HDPE) and Polypropylene (PP). Where high-density polyethylene or polypropylene is used as an interior finish, it shall comply with Section 803.1.1. | 803.1.1 Interior Wall and Ceiling Finish Materials Tested in Accordance With NFPA 286. Interior wall and ceiling finish materials shall be classified in accordance with NFPA 286 and comply with Section 803.1.1.1. | Chapter 2: [BF] Interior Wall and Ceiling Finish. The exposed interior surfaces of buildings, including but not limited to: fixed or movable walls and partitions; toilet room privacy partitions; columns; ceilings; and interior wainscoting, paneling or other finish ...",
+  "url": "https://up.codes/viewer/new_york/ibc-2024/chapter/8/interior-finishes",
+  "definition_url": "https://up.codes/viewer/new_york/ibc-2024/chapter/2/definitions",
+  "confidence": "medium",
+  "note": "Read on UpCodes (secondary). No [NY] marker on 803.9, 803.1.1 or the definition, so the model text applies unamended. Applies outside New York City only; NYC Building Code not checked."
+ },
+ "access": {
+  "state_standard": "Chapter 11 of the 2025 Building Code of New York State, which requires design 'in accordance with this code and ICC A117.1'; Chapter 35 references ICC A117.1-17 with Supplement 1. New York has no separate state accessibility code. The federal 2010 ADA Standards apply alongside.",
+  "differences": [
+   {
+    "point": "Vertical grab bar on the side wall of every accessible toilet, in addition to the horizontal bar",
+    "state": "ICC A117.1-2017 604.5.1: side-wall grab bars include a horizontal bar and a vertical bar 18 in minimum, bottom 39 to 41 in above the floor, centerline 39 to 41 in from the rear wall.",
+    "federal": "2010 ADA 604.5.1: 'The side wall grab bar shall be 42 inches (1065 mm) long minimum, located 12 inches (305 mm) maximum from the rear wall and extending 54 inches (1370 mm) minimum from the rear wall.' No vertical bar.",
+    "state_url": "https://up.codes/viewer/new_york/icc-a117.1-2017-s1/chapter/6/plumbing-elements-and-facilities",
+    "quote": "604.5.1 Fixed Side-Wall Grab Bars. Fixed side-wall grab bars shall include a horizontal bar complying with Section 604.5.1.1 and a vertical grab bar complying with Section 604.5.1.2. ... 604.5.1.2 Vertical Grab Bar. A vertical grab bar 18 inches (455 mm) minimum in length shall be mounted with the bottom of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum above the floor, and with the center line of the bar located 39 inches (990 mm) minimum and 41 inches (1040 mm) maximum from the rear wall."
+   },
+   {
+    "point": "Toe clearance under the wheelchair stall's front and side partitions is higher and deeper",
+    "state": "12 in minimum above the floor, extending 8 in beyond the partition; not required at the front if the stall is deeper than 64 in (wall-hung) or 67 in (floor-mounted), nor at the side if wider than 68 in.",
+    "federal": "2010 ADA 604.8.1.4: 'a toe clearance of 9 inches (230 mm) minimum above the finish floor and 6 inches (150 mm) deep minimum beyond the compartment-side face of the partition' (12 in only for children's stalls); exceptions at more than 62 in / 65 in deep and 66 in wide.",
+    "state_url": "https://up.codes/viewer/new_york/icc-a117.1-2017-s1/chapter/6/plumbing-elements-and-facilities",
+    "quote": "604.9.5.1 Toe Clearance at Wheelchair Accessible Toilet Compartments. The front partition and at least one side partition of wheelchair accessible toilet compartments shall provide a toe clearance of 12 inches (305 mm) minimum above the floor and extending 8 inches (205 mm) beyond the compartment side face of the partition, exclusive of partition support members. Exceptions: Toe clearance at the front partition is not required in a wheelchair accessible toilet compartment greater than 64 inches (1625 mm) in depth with a wall-hung water closet, or greater than 67 inches (1700 mm) in depth with a floor-mounted water closet. Toe clearance at the side partition is not required in a wheelchair accessible toilet compartment greater than 68 inches (1725 mm) in width."
+   },
+   {
+    "point": "The wheelchair turning space may not be inside a stall",
+    "state": "A117.1-2017 603.2.1: the turning space must be in the room and not within a toilet compartment.",
+    "federal": "2010 ADA 603.2.1: 'Turning space complying with 304 shall be provided within the room.' (no ban on using compartment space)",
+    "state_url": "https://up.codes/viewer/new_york/icc-a117.1-2017-s1/chapter/6/plumbing-elements-and-facilities",
+    "quote": "603.2.1 Turning Space. A turning space shall be provided within the room. The required turning space shall not be provided within a toilet compartment."
+   },
+   {
+    "point": "Number of ambulatory stalls in large rooms",
+    "state": "Building Code 1110.2.4: 5 percent of compartments wheelchair accessible, and where compartments plus urinals total six or more, 5 percent ambulatory in addition (more than one of each once a room passes 20 compartments).",
+    "federal": "2010 ADA 213.3.1: 'at least one toilet compartment shall comply with 604.8.1. In addition ... at least one compartment shall comply with 604.8.2 where six or more toilet compartments are provided, or where the combination of urinals and water closets totals six or more fixtures.'",
+    "state_url": "https://up.codes/viewer/new_york/ibc-2024/chapter/11/accessibility",
+    "quote": "1110.2.4 Water Closet Compartment. Where water closet compartments are provided in a toilet room or bathing room, at least 5 percent of the total number of compartments shall be wheelchair accessible. Where the combined total water closet compartments and urinals provided in a toilet room or bathing room is six or more, at least 5 percent of the total number of compartments shall be ambulatory accessible, provided in addition to the wheelchair-accessible compartment."
+   },
+   {
+    "point": "Wheelchair stall door position has a second option",
+    "state": "A117.1-2017 Table 604.9.3.1: door opening in the front partition either 4 in maximum from the side wall farthest from the toilet or 56 in minimum from the side wall closest to it; in a side partition 4 in maximum from the front or 52 in (wall-hung) / 55 in (floor-mounted) minimum from the rear wall. A stall that meets the federal 4 in rule also meets the state rule.",
+    "federal": "2010 ADA 604.8.1.2: 'Where located in the front partition, the door opening shall be 4 inches (100 mm) maximum from the side wall or partition farthest from the water closet. Where located in the side wall or partition, the door opening shall be 4 inches (100 mm) maximum from the front partition.'",
+    "state_url": "https://up.codes/viewer/new_york/icc-a117.1-2017-s1/chapter/6/plumbing-elements-and-facilities",
+    "quote": "604.9.3.1 Door Opening Location. The farthest edge of the wheelchair accessible toilet compartment door opening shall be located in the front wall or partition or in the side wall or partition as required by Table 604.9.3.1. [Front Wall or Partition: From the side wall or partition closest to the water closet 56 inches (1420 mm) minimum, or From the side wall or partition farthest from the water closet 4 inches (100 mm) maximum]"
+   },
+   {
+    "point": "Family or assisted-use toilet room in larger assembly and mercantile buildings",
+    "state": "Building Code 1110.2.1 requires an accessible family or assisted-use toilet room where six or more water closets are required in an assembly or mercantile occupancy.",
+    "federal": "No federal requirement to provide one; 2010 ADA 213.2.1 only limits what a unisex room may contain ('Unisex toilet rooms shall contain not more than one lavatory, and two water closets without urinals or one water closet and one urinal').",
+    "state_url": "https://up.codes/viewer/new_york/ibc-2024/chapter/11/accessibility",
+    "quote": "1110.2.1 Family or Assisted-Use Toilet and Bathing Rooms. In assembly and mercantile occupancies, an accessible family or assisted-use toilet room shall be provided where an aggregate of six or more male and female water closets is required."
+   }
+  ],
+  "same_as_federal": "Stall sizes match: wheelchair stall 60 in wide and 56 in (wall-hung) or 59 in (floor-mounted) deep; ambulatory stall 60 in deep and 35 to 37 in wide; self-closing doors with pulls on both sides (A117.1-2017 604.9.2.1, 604.10.2, 604.9.3 against 2010 ADA 604.8.1.1, 604.8.2.1, 604.8.1.2).",
+  "process": "No state accessibility registration or separate state plan review was found. Accessibility is part of the Uniform Code, which the Department of State says is administered and enforced by 'every city, town, village, and county' within its jurisdiction (the State for property in the custody of a state agency), so the review happens with the local building permit.",
+  "confidence": "medium"
+ },
+ "restrooms": {
+  "single_user": {
+   "rule": "State law requires every single-occupancy bathroom in a public place (restaurants, bars, stores, factories are named) to be designated gender neutral, with a sign on or near the door. The same rule applies to state-owned buildings (Public Buildings Law 145) and to schools (Education Law 409-m: school districts, charter schools, nonpublic schools, BOCES). The state codes repeat it: single-user rooms 'shall be identified as being available for use by all persons regardless of their sex' and 'shall be designated as gender neutral'. A water closet in a single-occupant room with a lockable door needs no compartment.",
+   "quote": "Civil Rights Law 79-p*2: 'All single-occupancy bathroom facilities located in public places' ... 'designated as gender neutral for use by no more than one occupant at a time or for family or assisted use' ... 'shall be clearly designated by the posting of such on or near the entry door of each facility.' | Building Code of NYS [P][NY] 2902.4 Signage, Exceptions: 'Single-user facilities shall be designated as gender neutral. Multi-user facilities designed to serve all genders shall not be designated by sex.' | Plumbing Code of NYS 403.1.2: 'Single-user toilet facilities and bathing rooms, and family or assisted-use toilet facilities and bathing rooms shall be identified as being available for use by all persons regardless of their sex.'",
+   "url": "https://www.nysenate.gov/legislation/laws/CVR/79-P*2",
+   "other_urls": [
+    "https://www.nysenate.gov/legislation/laws/PBB/145",
+    "https://www.nysenate.gov/legislation/laws/EDN/409-M",
+    "https://up.codes/viewer/new_york/ibc-2024/chapter/29/plumbing-systems",
+    "https://up.codes/viewer/new_york/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings"
+   ],
+   "note": "Statute text was read through a fetch tool that returns short excerpts only; the full wording of 79-p*2 (there are two sections numbered 79-p) should be read once in a browser."
+  },
+  "all_gender_shared": {
+   "rule": "Allowed. Separate men's and women's rooms are not required where a room with toilets and sinks is designed for everyone, each water closet is in its own compartment with a door and each urinal has privacy partitions. The fixture count is then worked out on the whole occupant load, the fixtures follow the accessibility standard, and the room is not signed by sex.",
+   "quote": "403.2 Exception 6: Separate toilet facilities shall not be required where rooms having both water closets and lavatory fixtures are designed for use by all persons regardless of sex and privacy is provided for water closets in accordance with Section 405.3.4 and for urinals in accordance with Section 405.3.5. | 403.1.1 Exception 2: Where multiple-user facilities are designed to serve all genders, the minimum fixture count shall be calculated 100 percent, based on total occupant load. In such multiple-user facilities, each fixture type shall be in accordance with ICC A117.1.",
+   "url": "https://up.codes/viewer/new_york/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "note": "The code asks for a compartment 'with walls or partitions and a door enclosing the fixtures to ensure privacy'; it does not call for floor-to-ceiling partitions in a shared all-gender room."
+  },
+  "use_restrictions": {
+   "rule": "No New York statute restricting restroom use by sex was found. The Attorney General's guidance says the Human Rights Law, which bars discrimination on the basis of gender identity or expression, gives people the right to use the restroom most consistent with their gender identity.",
+   "quote": "NY Attorney General, LGBTQIA+ rights: 'You have the right to use the one most consistent with your gender identity'. 9 NYCRR 466.13(c): 'discrimination on the basis of gender identity or expression is unlawful in all areas of jurisdiction'.",
+   "url": "https://ag.ny.gov/resources/individuals/civil-rights/lgbtqia-rights",
+   "other_urls": [
+    "https://www.law.cornell.edu/regulations/new-york/9-NYCRR-466.13"
+   ]
+  },
+  "confidence": "medium"
+ },
+ "public_wage": {
+  "has_state_law": true,
+  "law": "New York Labor Law Article 8, section 220 (public work)",
+  "threshold": "None: section 220 sets no dollar minimum for public work contracts.",
+  "rates_url": "https://dol.ny.gov/prevailing-wage",
+  "quote": "Labor Law 220(3)(a): 'The wages to be paid for a legal day's work, as hereinbefore defined, to laborers, workmen or mechanics' 'upon such public works, shall be not less than the prevailing rate of wages as hereinafter defined.' 220(5)(a): 'shall be annually determined in accordance herewith by the fiscal officer' [the Commissioner of Labor; for a city of over one million people, 'the comptroller or other analogous officer of such city']. NYS DOL: 'enforcing New York State's prevailing wage laws, which are found in Articles 8 & 9 of the Labor Law.'",
+  "url": "https://www.nysenate.gov/legislation/laws/LAB/220",
+  "who_sets": "NYS Department of Labor, Bureau of Public Work (Commissioner of Labor), by county, each July 1; in New York City the City Comptroller.",
+  "schedules": "County schedules (Article 8, public construction): https://apps.labor.ny.gov/wpp/publicViewPWChanges.do?method=showIt . A project gets its own schedule and PRC number through https://dol.ny.gov/obtain-wage-schedule.",
+  "confidence": "medium"
+ },
+ "sales_tax": {
+  "state_rate": 0.04,
+  "state_rate_quote": "The combined rate equals the state rate (currently 4%) plus any local tax rate imposed by a city, county, or school district (plus the MCTD rate, if applicable). The jurisdiction (locality) where the item is delivered usually determines the local rate.",
+  "state_rate_url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/sales_tax_rates_additional_sales_taxes_and_fees.htm",
+  "shipped_goods": {
+   "rule": "Partitions shipped to a New York address are taxable at the rate where they are delivered. A seller with no physical presence in New York must register and collect once, in the previous four sales tax quarters, it had more than $500,000 of sales of goods delivered into the state and more than 100 such sales. If the seller doesn't collect, the buyer owes use tax, shipping included; a business not registered for sales tax reports it on Form ST-130 within 20 days.",
+   "quote": "TB-ST-175: 'in the immediately preceding four sales tax quarters, your cumulative total of gross receipts from sales of tangible personal property delivered into the state exceeded $500,000, and you made more than 100 sales of tangible personal property delivered in the state'. TB-ST-910: 'You buy a computer through a retail Web site from a business that does not collect New York sales tax. It is delivered by a freight company to your business in New York State. You owe New York State and local use tax on the cost of the computer, including any charge for shipping and handling.'",
+   "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/use_tax_for_businesses.htm",
+   "other_urls": [
+    "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/do_i_need_to_register_for_sales_tax.htm",
+    "https://www.tax.ny.gov/pubs_and_bulls/publications/sales/nexus.htm"
+   ]
+  },
+  "freight_taxed": true,
+  "freight": {
+   "quote": "TB-ST-838: 'When a taxable product or service is sold, any charges for shipping or delivery that the seller includes on the bill become part of the receipt subject to sales tax.' ... 'if a delivery service is sold independently from the sale of the taxable property being transported, the charge for the delivery service is not taxable. For the sale of the delivery service to be independent of the sale of the property, the customer must have arranged for the transportation and the customer must be charged for the delivery on a separate invoice.'",
+   "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/shipping_and_delivery_charges.htm"
+  },
+  "install_labor": {
+   "rule": "It depends on whether the job is a capital improvement. Labor on a capital improvement to real property is not taxed (the customer gives the contractor Form ST-124). Labor that is repair, maintenance or installation of property that stays tangible personal property is taxed. Billing labor separately does not change this. Work for a tenant is presumed temporary and so taxable, unless the lease or other facts show it is meant to be permanent. The Department's list of examples does not mention toilet partitions.",
+   "quote": "TB-ST-104: 'A capital improvement is any addition or alteration to real property that meets all three of the following conditions: It substantially adds to the value of the real property, or appreciably prolongs the useful life of the real property. It becomes part of the real property or is permanently affixed to the real property so that removal would cause material damage to the property or article itself. It is intended to become a permanent installation.' Publication 862: 'when a contractor performs a job that constitutes a repair, maintenance, or installation service to real property, sales tax must be collected from the customer' ... 'As a general rule, additions or alterations to real property for or by a tenant with respect to leased premises are presumed to be temporary in nature. Consequently, they do not qualify as capital improvements.'",
+   "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/capital_improvements.htm",
+   "other_urls": [
+    "https://www.tax.ny.gov/pdf/publications/sales/pub862.pdf"
+   ]
+  },
+  "furnish_and_install": {
+   "rule": "On a capital improvement the contractor pays sales tax on the materials when buying them and charges the customer no tax on the job. On a repair, maintenance or installation job the contractor charges tax on the whole bill. Materials are taxable either way, whoever buys them.",
+   "quote": "TB-ST-104: 'Building materials and other tangible personal property purchased for capital improvement work are taxable, whether purchased by a contractor, subcontractor, repairman (hereafter contractor), or homeowner.' ... 'because the work is a capital improvement, there is no sales tax due on the charge to the customer.' ... 'there is no exemption from sales tax on the purchase of materials used in a capital improvement project. Purchases of materials are taxable, regardless of whether a property owner or a contractor buys them.' Publication 862 (repair or maintenance, owner who 'purchases materials and supplies and labor from a contractor'): 'you pay tax to the contractor on the total charge.'",
+   "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/capital_improvements.htm",
+   "other_urls": [
+    "https://www.tax.ny.gov/pdf/publications/sales/pub862.pdf"
+   ]
+  },
+  "agency": "New York State Department of Taxation and Finance",
+  "confidence": "high"
+ },
+ "page": {
+  "stalls_intro": "New York's rules count toilets by a building's capacity: the most people it is designed to hold at one time, worked out from its floor area. Half are counted as men and half as women, and any fraction rounds up. Every toilet needs its own stall with a door. Urinals are optional: in each men's room they can replace up to half of the toilets in an office and up to two thirds in a restaurant or school, and each urinal needs a privacy screen.",
+  "stalls_rows": {
+   "50": {
+    "office": "1/1",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "100": {
+    "office": "2/2",
+    "restaurant": "1/1",
+    "school": "1/1"
+   },
+   "200": {
+    "office": "3/3",
+    "restaurant": "2/2",
+    "school": "2/2"
+   },
+   "400": {
+    "office": "5/5",
+    "restaurant": "3/3",
+    "school": "4/4"
+   }
+  },
+  "stalls_after": "These are minimums for the whole building. An office for 25 people or fewer, or any space for 15 or fewer, doesn't need separate men's and women's rooms. A restaurant's count includes seasonal outdoor seating. These figures apply outside New York City, which has its own building rules.",
+  "capacity": "To find your building's capacity, the building rules count an office at one person per 150 square feet of floor, a restaurant dining room with tables and chairs at one per 15 square feet and a classroom at one per 20.",
+  "fire_bullet": "- **Fire safety:** New York's building rules treat toilet partitions as an interior wall finish and require solid plastic (HDPE) and polypropylene partitions to pass a room-corner fire test. Ask for the fire-rated version.",
+  "access_bullet": "- **Wheelchair access:** a restroom with stalls needs at least one stall a wheelchair user can enter and use. Federal law and New York's building rules both set the sizes. New York has no separate state review for access: your local building department checks it with the building permit.",
+  "state_extra_bullet": "- **New York extras:** stall sizes match the federal ones, but New York adds a vertical grab bar, 18 inches or longer, on the side wall beside each accessible toilet. The open space under the wheelchair stall's front and side partitions must be 12 inches high, where federal rules ask for 9. The wheelchair turning space in the room can't be inside a stall.",
+  "restroom_bullet": "- **Single-user and all-gender restrooms:** New York law requires every one-person restroom in a public place, school or state building to be marked gender neutral, with the sign on or near the door. A shared all-gender room is allowed if every toilet sits in its own stall with a door and each urinal is screened; it is not signed by sex, and its toilets are counted from the building's whole capacity.",
+  "public_jobs": "On public work, such as school, city, county and state projects, New York law requires at least the prevailing wage for the trade, with no minimum contract size; the state Department of Labor publishes the rates by county each July.",
+  "tax_install_bullet": "- **Tax on installation:** in New York, installation that counts as a permanent improvement to the building is not taxed, and the owner gives the contractor a capital improvement certificate (Form ST-124). Repair, maintenance and other installation labor is taxed, even when billed separately. Work done for a tenant is treated as temporary, and so taxed, unless the lease shows it stays with the building. The state's list of examples doesn't name toilet partitions.",
+  "tax_ship_bullet": "- **Buying without installation:** partitions shipped to {city} are taxable, freight included when the seller bills it. If the seller doesn't collect the tax, the buyer owes it to the state. Materials are taxed even when they go into a permanent improvement.",
+  "tax_confirm": "your accountant or the New York State Department of Taxation and Finance",
+  "sources": [
+   "- Toilet counts in New York outside New York City: [2025 Plumbing Code of New York State, Chapter 4](https://up.codes/viewer/new_york/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings), Table 403.1 and Sections 403.1.1 (half men and half women, fractions round up), 403.2 (separate rooms and exceptions), 405.3.4 and 405.3.5 (a compartment for each toilet, partitions at urinals) and 424.2 (urinals may replace up to 67% of men's toilets in assembly and educational buildings, 50% elsewhere); the same table is Table 2902.1 of the [2025 Building Code of New York State, Chapter 29](https://up.codes/viewer/new_york/ibc-2024/chapter/29/plumbing-systems). Read on UpCodes, a secondary copy; the official text is free to view at [ICC, New York codes](https://codes.iccsafe.org/codes/united-states/new-york). Checked 2026-11-24.",
+   "- Floor area per person: [2025 Building Code of New York State, Chapter 10](https://up.codes/viewer/new_york/ibc-2024/chapter/10/means-of-egress), Table 1004.5. Checked 2026-11-24.",
+   "- Code books in force and their effective date (December 31, 2025): [New York State Department of State, Notice of Adoption](https://dos.ny.gov/notice-adoption). New York City keeps its own codes: [Executive Law section 383](https://www.nysenate.gov/legislation/laws/EXC/383). Local more restrictive standards need state approval: [Executive Law section 379](https://www.nysenate.gov/legislation/laws/EXC/379). Checked 2026-11-24.",
+   "- Fire test for solid plastic partitions: [2025 Building Code of New York State, Chapter 8](https://up.codes/viewer/new_york/ibc-2024/chapter/8/interior-finishes), Sections 803.9 and 803.1.1 (NFPA 286), and the definition of Interior Wall and Ceiling Finish in [Chapter 2](https://up.codes/viewer/new_york/ibc-2024/chapter/2/definitions). Checked 2026-11-24.",
+   "- New York stall rules compared with the federal ones: [2025 Building Code of New York State, Chapter 11](https://up.codes/viewer/new_york/ibc-2024/chapter/11/accessibility), Sections 1102.1 and 1110.2.4; [ICC A117.1-2017 with Supplement 1, Chapter 6](https://up.codes/viewer/new_york/icc-a117.1-2017-s1/chapter/6/plumbing-elements-and-facilities), Sections 603.2.1, 604.5.1, 604.9 and 604.10 (edition named in [Chapter 35](https://up.codes/viewer/new_york/ibc-2024/chapter/35/referenced-standards)); and the [2010 ADA Standards](https://www.access-board.gov/ada/), sections 213.3.1, 603.2.1, 604.5.1 and 604.8. Checked 2026-11-24.",
+   "- Single-user restrooms: [Civil Rights Law section 79-p (gender neutral single-occupancy bathroom facilities)](https://www.nysenate.gov/legislation/laws/CVR/79-P*2), [Public Buildings Law section 145](https://www.nysenate.gov/legislation/laws/PBB/145) and [Education Law section 409-m](https://www.nysenate.gov/legislation/laws/EDN/409-M); 2025 Building Code of New York State, Section 2902.4, and 2025 Plumbing Code of New York State, Section 403.1.2. Shared all-gender rooms: Plumbing Code Sections 403.1.1 and 403.2. Checked 2026-11-24.",
+   "- Wages on public work: [Labor Law section 220](https://www.nysenate.gov/legislation/laws/LAB/220) and New York State Department of Labor, [Public Work and Prevailing Wage](https://dol.ny.gov/public-work-and-prevailing-wage) and [prevailing wage schedules](https://dol.ny.gov/prevailing-wage). Checked 2026-11-24.",
+   "- Sales tax: New York State Department of Taxation and Finance, [Capital Improvements (TB-ST-104)](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/capital_improvements.htm), [Publication 862, Classifications of Capital Improvements and Repairs to Real Property](https://www.tax.ny.gov/pdf/publications/sales/pub862.pdf), [Shipping and Delivery Charges (TB-ST-838)](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/shipping_and_delivery_charges.htm), [Use Tax for Businesses (TB-ST-910)](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/use_tax_for_businesses.htm), [Do I Need to Register for Sales Tax? (TB-ST-175)](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/do_i_need_to_register_for_sales_tax.htm), [businesses with no physical presence in New York](https://www.tax.ny.gov/pubs_and_bulls/publications/sales/nexus.htm) and [sales tax rates (TB-ST-825)](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/sales_tax_rates_additional_sales_taxes_and_fees.htm). Checked 2026-11-24."
+  ],
+  "official_names": "2010 ADA Standards for Accessible Design; ICC A117.1-2017 with Supplement 1, as referenced by Chapter 11 of the 2025 Building Code of New York State; 2025 Building Code of New York State and 2025 Plumbing Code of New York State (New York State Uniform Fire Prevention and Building Code, effective December 31, 2025; not in force in New York City, which has its own construction codes); NFPA 286 for HDPE."
+ },
+ "sources_read": [
+  {
+   "url": "https://up.codes/viewer/new_york/ipc-2024/chapter/4/fixtures-faucets-and-fixture-fittings",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_york/ibc-2024/chapter/29/plumbing-systems",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_york/ibc-2024/chapter/8/interior-finishes",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_york/ibc-2024/chapter/2/definitions",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_york/ibc-2024/chapter/10/means-of-egress",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_york/ibc-2024/chapter/11/accessibility",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_york/ibc-2024/chapter/35/referenced-standards",
+   "official": false
+  },
+  {
+   "url": "https://up.codes/viewer/new_york/icc-a117.1-2017-s1/chapter/6/plumbing-elements-and-facilities",
+   "official": false
+  },
+  {
+   "url": "https://www.access-board.gov/ada/",
+   "official": true
+  },
+  {
+   "url": "https://dos.ny.gov/notice-adoption",
+   "official": true
+  },
+  {
+   "url": "https://dos.ny.gov/building-standards-and-codes",
+   "official": true
+  },
+  {
+   "url": "https://www.nysenate.gov/legislation/laws/EXC/383",
+   "official": true
+  },
+  {
+   "url": "https://www.nysenate.gov/legislation/laws/EXC/379",
+   "official": true
+  },
+  {
+   "url": "https://www.nysenate.gov/legislation/laws/CVR/79-P*2",
+   "official": true
+  },
+  {
+   "url": "https://www.nysenate.gov/legislation/laws/PBB/145",
+   "official": true
+  },
+  {
+   "url": "https://www.nysenate.gov/legislation/laws/EDN/409-M",
+   "official": true
+  },
+  {
+   "url": "https://www.nysenate.gov/legislation/laws/LAB/220",
+   "official": true
+  },
+  {
+   "url": "https://dol.ny.gov/prevailing-wage",
+   "official": true
+  },
+  {
+   "url": "https://dol.ny.gov/public-work-and-prevailing-wage",
+   "official": true
+  },
+  {
+   "url": "https://ag.ny.gov/resources/individuals/civil-rights/lgbtqia-rights",
+   "official": true
+  },
+  {
+   "url": "https://www.law.cornell.edu/regulations/new-york/9-NYCRR-466.13",
+   "official": false
+  },
+  {
+   "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/capital_improvements.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.tax.ny.gov/pdf/publications/sales/pub862.pdf",
+   "official": true
+  },
+  {
+   "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/shipping_and_delivery_charges.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/use_tax_for_businesses.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/do_i_need_to_register_for_sales_tax.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.tax.ny.gov/pubs_and_bulls/publications/sales/nexus.htm",
+   "official": true
+  },
+  {
+   "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/sales_tax_rates_additional_sales_taxes_and_fees.htm",
+   "official": true
+  }
+ ],
+ "could_not_open": [
+  "https://codes.iccsafe.org/content/NYSPC2025P1/chapter-4-fixtures-faucets-and-fixture-fittings (captcha / 403)",
+  "https://dos.ny.gov/rule-text-uniform-code-0 (403 to curl; not retried)",
+  "https://dhr.ny.gov/system/files/documents/2022/04/nysdhr-genda-guidance-2020.pdf (403)",
+  "https://www.nysed.gov/facilities-planning (503) and www.p12.nysed.gov (no connection)"
+ ],
+ "to_confirm": [
+  "All code text (Plumbing Code Chapter 4, Building Code Chapters 2, 8, 10, 11, 29, 35, and ICC A117.1-2017) was read on UpCodes because codes.iccsafe.org blocks automated access: browser check of Table 403.1, Sections 403.1.1, 403.2, 424.2, 803.9 and 2902.4 on the official ICC viewer before launch. Also check 19 NYCRR Parts 1220 to 1228 (the adopting rule, dos.ny.gov/rule-text-uniform-code-0) for any amendment to these sections that the published books do not show.",
+  "New York City is not covered here: it uses the NYC Building Code and NYC Plumbing Code (Executive Law 383(1)(c) read; NYC Department of Buildings pages not read). The fixture table, urinal rule, HDPE fire rule and accessibility edition must be researched separately for the NYC page.",
+  "Public schools: the State Education Department (Office of Facilities Planning, 518-474-3906) is understood to review school district projects outside the large cities under its own Manual of Planning Standards, which may set different toilet ratios from the 1 per 50 in Table 403.1. The SED site could not be opened; nothing about it is in the page text. Confirm before quoting the school column for a public school.",
+  "Transition period: the Department of State's notice says the 2025 Uniform Code took effect December 31, 2025 with a period in which either the 2020 or 2025 code could be used; the end date of that period was not read.",
+  "Urinal substitution limit: the code says 'not more than' 67% or 50% and gives no rounding rule; the worked examples round down (e.g. 50% of 3 = 1). Confirm with the local code enforcement official if a design depends on it.",
+  "Whether Buffalo, Rochester or the Long Island towns and villages hold any approved more restrictive local standard (Executive Law 379) affecting toilets: city agents.",
+  "ICC A117.1-2017 Chapter 3 (larger turning space and clear floor space in new buildings) and Chapter 7 (restroom door signs) were not read; only Chapter 6 was compared with the federal standard.",
+  "Civil Rights Law 79-p*2, Public Buildings Law 145, Education Law 409-m and Labor Law 220 were read as short excerpts through a fetch tool (nysenate.gov returns 403 to curl): read the full sections once in a browser. Not read: Labor Law 224-a (prevailing wage on some publicly subsidised private projects) and whether any other statute covers colleges.",
+  "Restroom use: the Division of Human Rights' own guidance on gender identity (2020) could not be opened; the statement used is from the Attorney General's page. A lawyer should review this wording.",
+  "Sales tax: Publication 862 (dated 4/01) does not list toilet partitions as either a capital improvement or an installation service. Ask the Department of Taxation and Finance (Sales Tax Information Center, 518-485-2889) or an accountant how bolted-in toilet partitions in an owner-occupied building and in a tenant space are classified. How Next Partitions itself collects New York tax (the $500,000 and 100 sales registration test) is a question for Abe's accountant.",
+  "Local sales tax rates (and the 0.375% Metropolitan Commuter Transportation District rate that applies in New York City and on Long Island) are for the city agents."
+ ]
+}

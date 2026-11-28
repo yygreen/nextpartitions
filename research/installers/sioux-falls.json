@@ -1,0 +1,101 @@
+{
+ "area": "sioux-falls",
+ "found_count": 2,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/sioux-falls.json: worked. Combined Building Specialties was the only relevant Maps result; the rest were remodelers, plumbers, stores and portable-toilet rentals. The web seed URLs are Google /goto redirects that did not resolve, so they could not be opened.",
+  "Bobrick Find a Rep (bobrick.com/find-a-rep): no data, because the dropdown loads by script and the page showed no reps.",
+  "Scranton Products where-to-buy / product specialist: worked but lists only a regional product specialist covering IA/IL/IN/MI/MN/ND/NE/SD/WI, not local dealers or installers.",
+  "ASI (Global Partitions), Bradley, Hadrian, Metpar, General Partitions, Ammco locators: not tried because of the fetch budget and locator pages that load by script.",
+  "The Blue Book: blocked (HTTP 403 on iProView pages), and no SD toilet-partition listings came up in search.",
+  "Procore Network (network.procore.com/us/sd/interior and /us/sd/sioux-falls/interior): worked. It found Combined Building Specialties. Tamarack Materials (Sioux Falls) is listed under 'Partitions' but is a drywall and building-materials supplier, and its site shows no toilet partitions, so it was left out. Other specialty firms listed are too far away: Commercial Door & Specialties in Rapid City SD (~340 mi), Kirk Gross Co. in Waterloo IA, and Building Material Supply and Harkraft in the Minneapolis area.",
+  "BBB category pages (bbb.org/us/sd/category/partition, /lockers, /us/sd/canton/category/partition): worked and found Lohan Construction and Combined Building Specialist. Sees Custom Wood Solutions (residential lockers and cabinetry) was skipped.",
+  "WebSearch (8 of 8 used): Sioux Falls toilet partition, Division 10, building specialties, Blue Book, and Sioux City/Brookings/Watertown queries. They mostly returned One Point Partitions, an online national distributor claiming a Sioux Falls 'delivery terminal'. Its site was blocked (403) and it points buyers to self-install or their own contractor, so it was left out as a national chain with no confirmed local installer. Prestige Distribution (Northbrook IL national installer network), Unified Specialty Services/UDH Group (NJ phone, no SD service area stated), Martin Bros (California) and Walsh Door (no location, no partitions listed) were also left out.",
+  "Checked and rejected: Commercial Interior Decor (cidinc.net; hotel interior design and flooring, no partitions) and Formatop (Kitchener ON countertop maker, no partitions)."
+ ],
+ "candidates": [
+  {
+   "name": "Combined Building Specialties (BBB: Combined Building Specialist, Inc.)",
+   "base_city": "Sioux Falls",
+   "state": "SD",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Scranton Products",
+    "Bradley",
+    "ASI Global",
+    "Bobrick",
+    "General Partitions",
+    "American Specialties"
+   ],
+   "partition_evidence": "Product Lines page lists Toilet & Shower Partitions (Scranton, Bradley, ASI Global, Bobrick, General Partitions); Services page says its technicians professionally install all of the product lines it sells.",
+   "website": "https://combinedbuilding.com/",
+   "phone": "(605) 331-6904",
+   "email": "sales@combinedbuilding.com",
+   "contact_page": "https://combinedbuilding.com/contact-us",
+   "rating": 4.3,
+   "review_count": 7,
+   "review_source": "Birdeye",
+   "evidence_urls": [
+    "https://combinedbuilding.com/",
+    "https://combinedbuilding.com/product-lines",
+    "https://combinedbuilding.com/services",
+    "https://combinedbuilding.com/contact-us",
+    "https://reviews.birdeye.com/d/home-improvements/sioux-falls-sd"
+   ],
+   "red_flags": [
+    "Is itself a dealer of partitions from ASI, Bobrick, Bradley and Scranton (brands Next Partitions resells), so there is a high buy-around risk",
+    "No toilet partition project photos found on the pages read; the gallery is mostly on Facebook (not checked)"
+   ],
+   "reason": "Sioux Falls Division 10 dealer-installer that serves schools, healthcare and other commercial clients across South Dakota. It lists toilet partitions from five manufacturers and says it installs everything it sells. It is a direct competitor on partition supply.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Combined Building Specialties (BBB: Combined Building Specialist, Inc.)",
+    "area": "sioux-falls",
+    "status": "not_required_online_check",
+    "registry": "No state or city contractor license registry applies. South Dakota has no state contractor license, and Sioux Falls does not license commercial building contractors (per the area rule). The SD Department of Revenue contractor's excise tax license has no public online lookup.",
+    "note": "No license registry to check for commercial partition installation in Sioux Falls. The SD contractor's excise tax license (DOR) is required for contractors, but the DOR online services page lists no public license verification tool, only a motor fuel license search (https://dor.sd.gov/online-services/). It can be confirmed by phone with DOR business tax at 1-800-829-9188 or by asking the installer for the license card. Company site (https://combinedbuilding.com/): based in Sioux Falls, SD; sells and installs gym and school equipment (bleachers, lockers, partitions) and lists toilet partitions; company phone (605) 331-6904; no license or registration mentioned on the site. Secretary of State entity search not run.",
+    "source_url": "https://dor.sd.gov/online-services/"
+   },
+   "score": 70
+  },
+  {
+   "name": "Lohan Construction Services, LLC",
+   "base_city": "Sioux Falls",
+   "state": "SD",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "brands": [],
+   "partition_evidence": "The homepage lists 'Bathroom Partitions' as a service, with project photos, one captioned 'Commercial Bathroom Partitions Sioux Falls SD'. The BBB lists it under the SD 'Partition' category.",
+   "website": "https://www.lohanconstruction.com",
+   "phone": "605-496-8323",
+   "contact_page": "https://www.lohanconstruction.com",
+   "evidence_urls": [
+    "https://www.lohanconstruction.com",
+    "https://www.bbb.org/us/sd/category/partition"
+   ],
+   "red_flags": [
+    "Small remodeler; the rest of the site is residential tile, shower, deck and flooring work",
+    "No separate partitions page; partition evidence is only two homepage photos",
+    "No email listed, only a contact form on the homepage",
+    "BBB shows A+ but not accredited; no numeric review rating seen"
+   ],
+   "reason": "Two homepage photos show bathroom partition installs (one captioned commercial) in Sioux Falls, but the business is mainly a residential tile and remodel contractor and doesn't describe its commercial partition work. That makes it a reasonable candidate to vet, not yet proven.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Lohan Construction Services, LLC",
+    "area": "sioux-falls",
+    "status": "not_required_online_check",
+    "registry": "No state or city contractor license registry applies. South Dakota has no state contractor license, and Sioux Falls does not license commercial building contractors (per the area rule). The SD Department of Revenue contractor's excise tax license has no public online lookup.",
+    "note": "No license registry to check for commercial partition installation in Sioux Falls. The SD contractor's excise tax license is required but can't be verified online (https://dor.sd.gov/online-services/ lists no license lookup). Confirm by phone with DOR at 1-800-829-9188 or ask for the license card. Company site (https://www.lohanconstruction.com): Sioux Falls, SD; remodeling and tile work, and lists 'Bathroom Partitions' with commercial partition photos; company phone 605-496-8323; no license or registration mentioned on the site. Secretary of State entity search not run.",
+    "source_url": "https://dor.sd.gov/online-services/"
+   },
+   "score": 50
+  }
+ ]
+}

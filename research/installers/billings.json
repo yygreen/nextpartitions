@@ -1,0 +1,244 @@
+{
+ "area": "billings",
+ "found_count": 10,
+ "sources_tried": [
+  "Seed file research/installers/raw/seeds/billings.json: read. It holds only remodelers, plumbers, supply stores and roofers, with no partition installers. Opened Walles Mountain Contracting (windows, doors, glass; no partitions) and Proper Contractors (proper-trades.com is under construction), and excluded both.",
+  "Scranton Products rep locator (scrantonproducts.com/find-a-sales-rep): 404.",
+  "Bobrick find-a-rep: the page loads, but results need a dropdown that isn't readable without a browser. No Montana rep found.",
+  "Hadrian find-a-rep: 503.",
+  "ASI, Bradley, Metpar, General Partitions, Ampco: not reached (search budget spent).",
+  "The Blue Book (thebluebook.com search): 403 blocked.",
+  "Procore Network public directory: WORKED and gave almost every candidate (Billings, Bozeman, Missoula, Great Falls and Helena 'interior' and 'specialties' category pages, plus profiles).",
+  "BuildingConnected: not tried.",
+  "WebSearch, 7 of 7 used: toilet partitions / Division 10 / restroom partitions queries for Billings, Bozeman, Missoula, Helena and Great Falls. They returned mostly One Point Partitions (an online seller with Billings, Butte and Missoula delivery and office pages, installation not stated; its page returned 403), Southwest Solutions Group (demountable office walls only), SBI Contracting (Boise ID, a Division 10 firm but outside range), Montana State University spec manuals and BBB category pages. No local partition specialist turned up.",
+  "Excluded as too far or out of scope: Commercial Door & Specialties, Rapid City SD (Division 10 accessories and lockers, serves MT per Procore, but about 300 miles away); Commercial Contracting and Maintenance, Glasgow MT (northeast MT and western ND); Bloedorns, Miles City MT (supplier); Lime Tree Carpentry (Fort Collins CO); Digital Interior Group (Kent WA); Stevens Door & Specialty (garage doors).",
+  "Yelp, BBB, Google business listings: only BBB category pages showed up in search results, none relevant, and none were opened."
+ ],
+ "candidates": [
+  {
+   "name": "Eves Engineering and Construction LLC",
+   "base_city": "Billings",
+   "state": "MT",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "website": "https://www.eves2c.com",
+   "phone": "+1-406-690-6883",
+   "reason": "A Billings firm doing industrial, commercial and residential construction. Its site doesn't mention toilet partitions, restroom accessories or Division 10 work.",
+   "evidence_urls": [
+    "https://www.eves2c.com"
+   ],
+   "red_flags": [
+    "Contact email is a personal webmail address, omitted",
+    "No partition evidence"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 30
+  },
+  {
+   "name": "Jacobs Contracting LLC",
+   "base_city": "Billings",
+   "state": "MT",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "mostly",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "reason": "Only BBB directory listings were found (as Jacobs Contracting Co: general, remodel and commercial contractor, accredited with an A+ rating). There's no website and no evidence of partition work.",
+   "evidence_urls": [
+    "https://bbb.org/us/mt/billings/category/commercial-contractors",
+    "https://bbb.org/us/mt/billings/category/general-contractor"
+   ],
+   "red_flags": [
+    "No company website",
+    "BBB listings show several different addresses and phones"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "Brownson Construction, Inc.",
+   "base_city": "Billings",
+   "state": "MT",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "mostly",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "phone": "(406) 839-9060",
+   "reason": "A Billings general contractor and construction management firm known only from directory listings (Montana Chamber, BBB, Levelset). There's no website and no evidence of partition work.",
+   "evidence_urls": [
+    "https://members.montanachamber.com/list/category/construction-12",
+    "https://www.levelset.com/contractors/brownson-construction/payment-project-history",
+    "https://bbb.org/us/mt/billings/category/general-contractor"
+   ],
+   "red_flags": [
+    "No company website",
+    "Two different addresses listed"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "3z=c2 (Billings Tile Studio)",
+   "base_city": "Billings",
+   "state": "MT",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "no",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "website": "https://billingstilestudio.com",
+   "phone": "(406) 565-8368",
+   "email": "info@billingstilestudio.com",
+   "contact_page": "https://billingstilestudio.com/contact/",
+   "reason": "A tile showroom and tile installation company serving homeowners, custom homes and builders. Its site doesn't mention toilet partitions or commercial restroom work.",
+   "evidence_urls": [
+    "https://billingstilestudio.com"
+   ],
+   "red_flags": [
+    "Tile business, not partitions",
+    "Footer phone (406) 564-4392 differs from the displayed number",
+    "Candidate name '3z=c2' doesn't match the business name"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 15
+  },
+  {
+   "name": "White Peak Contracting",
+   "base_city": "Billings",
+   "state": "MT",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "website": "https://www.yourwhitepeak.com",
+   "reason": "The website returned HTTP 503 on two tries, so I couldn't check its services. No evidence of partition work.",
+   "evidence_urls": [
+    "https://www.yourwhitepeak.com"
+   ],
+   "red_flags": [
+    "Website unavailable (503)"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Smoothrock Contracting",
+   "base_city": "Billings",
+   "state": "MT",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "reason": "Search found no listing under this name. The nearest match is a BBB listing for Smooth Rock Drywall in Billings, a drywall business. No evidence of partition work.",
+   "evidence_urls": [
+    "https://bbb.org/us/mt/billings/category/building-and-construction"
+   ],
+   "red_flags": [
+    "Could not verify the business exists under this name"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Granite Mountain Countertops",
+   "base_city": "Bozeman",
+   "state": "MT",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "unknown",
+   "sells_partitions": "no",
+   "within_area": "regional",
+   "website": "https://granitemountaincountertops.com",
+   "phone": "(406) 586-7160",
+   "email": "info@granitemountaincountertops.com",
+   "contact_page": "https://granitemountaincountertops.com/contact-us/",
+   "reason": "A countertop fabricator and seller (quartz, stone, sinks, cooktops) with offices in Bozeman and Helena that says it serves all of Montana. Its site doesn't mention toilet partitions or Division 10 work.",
+   "evidence_urls": [
+    "https://granitemountaincountertops.com"
+   ],
+   "red_flags": [
+    "Countertop business, not partitions"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 8
+  },
+  {
+   "name": "Vernon's Quality Carpentry, Inc.",
+   "base_city": "Great Falls",
+   "state": "MT",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "unknown",
+   "sells_partitions": "no",
+   "within_area": "no",
+   "reason": "No website found. The directory listing I saw describes a finish carpentry firm (millwork, trim, cabinets, countertops, decking) with no mention of partitions. Great Falls is about 175 miles from Billings.",
+   "evidence_urls": [
+    "https://naicslist.com/company-profile/vernon-quality-carpentry-inc-great-falls-mt-59404",
+    "https://governmentbidders.com/government-bidders/contractor-5232767-VERNON-S-QUALITY-CARPENTR.htm"
+   ],
+   "red_flags": [
+    "No company website",
+    "Directory listings disagree on contact details"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  },
+  {
+   "name": "Dobrowski Built",
+   "base_city": "Bozeman",
+   "state": "MT",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "no",
+   "sells_partitions": "no",
+   "within_area": "no",
+   "website": "https://dobbuilt.com",
+   "phone": "406-224-0416",
+   "contact_page": "https://dobbuilt.com/#contact",
+   "reason": "A general builder and remodeler (custom homes, residential and commercial remodeling, garages and shops) with no mention of toilet partitions or Division 10 work. Bozeman is about 125 miles from Billings, and the site doesn't say it serves Billings.",
+   "evidence_urls": [
+    "https://dobbuilt.com"
+   ],
+   "red_flags": [
+    "Mainly residential builder",
+    "Email on site is a personal address, omitted"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  },
+  {
+   "name": "1 Plumbing and Heating LLC",
+   "base_city": "Belgrade",
+   "state": "MT",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "no",
+   "reason": "Not researched beyond the name. It is a plumbing and heating business based in Belgrade, about 120 miles from Billings, with no website given and no partition evidence found.",
+   "evidence_urls": [],
+   "red_flags": [
+    "Plumbing trade, not partitions",
+    "Outside the 30-mile radius"
+   ],
+   "added_by_checker": false,
+   "license": null,
+   "score": 0
+  }
+ ]
+}

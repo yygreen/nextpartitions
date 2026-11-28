@@ -1,0 +1,463 @@
+{
+ "area": "dallas",
+ "found_count": 13,
+ "sources_tried": [
+  "Manufacturer locators (Bobrick, ASI, Scranton, Hadrian, Metpar, Bradley) via web search: no Dallas dealer or rep found; the locator pages themselves were not reached. Search only turned up Texas Specialties as a former Accurate/ASI rep.",
+  "The Blue Book (thebluebook.com): blocked (HTTP 403 for WebFetch and curl); search snippets only, which gave Southwest Architectural Sales and Texas Specialties & Installation",
+  "Procore Network (network.procore.com): worked; gave Chatham Worth, D10 Specialties, Specialty Building Materials/Klemco, Buffalo Contract, PreFab Pros and Partition Pros",
+  "BuildingConnected: not tried",
+  "Downtobid: blocked (HTTP 429); search snippets only, and the candidates found (Willco, CTI Specialties) were outside the area",
+  "Levelset: search snippet only (Texas Specialties & Installation)",
+  "TEXO association Division 10 member directory: worked (Post L Group)",
+  "BBB (bbb.org Texas partitions category and profile): worked (Blue Sky Sales)",
+  "Yelp: no Yelp pages came up in search",
+  "MapQuest: returned empty pages",
+  "Web search (toilet partition installation Dallas, Division 10 contractor Dallas, nearby-city variants, restroom partitions installer TX): worked",
+  "Company websites: worked for thepartitionpros.com, chathamworth.com, rockyduron.com, dtenspecialties.com, specialtybuildingmaterialsco.com, txspecialties.com, div-x.com and prestigedistribution.com. onepointpartitions.com returned 403, blueskysalesinc.com returned 503, and buffalocontract.com and d10commercialspecialties.com did not resolve (may be outside the session's allowed network).",
+  "Excluded: One Point Partitions (dealer with a Dallas delivery terminal; its page was blocked, so installation could not be confirmed), Partition Stalls (Staten Island, NY), Cross Timbers Specialties (Bryan-College Station), BC Partitions (Houston), Willco (Taylor)"
+ ],
+ "candidates": [
+  {
+   "name": "Partition Pros",
+   "base_city": "Garland",
+   "state": "TX",
+   "verdict": "possible",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "ASI",
+    "Bobrick",
+    "Bradley",
+    "Hadrian",
+    "AAMCO"
+   ],
+   "within_area": "yes",
+   "phone": "(646) 453-4564",
+   "email": "info@thepartitionpros.com",
+   "contact_page": "https://www.thepartitionpros.com/contact",
+   "website": "https://www.thepartitionpros.com",
+   "rating": 5,
+   "review_count": 57,
+   "review_source": "Google (as shown on company website)",
+   "evidence_urls": [
+    "https://www.thepartitionpros.com",
+    "https://www.thepartitionpros.com/contact"
+   ],
+   "partition_evidence": "Homepage: 'Our crew serves Dallas\u2013Fort Worth'; offers installation or material-only; commercial washroom projects shown.",
+   "red_flags": [
+    "Online partition reseller shipping nationwide: a direct competitor of Next Partitions",
+    "Runs its own 'Installer Program' network",
+    "New York (646) phone number for a Garland business"
+   ],
+   "reason": "Its own crew installs partitions in DFW, which meets the strong bar, but it's a nationwide partition seller competing with Next Partitions, so it's downgraded to possible. Unlikely to install customer-bought partitions without a buy-around.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Partition Pros",
+    "area": "dallas",
+    "status": "not_online",
+    "registry": "City of Dallas contractor registration (DallasNow, Accela licensee search)",
+    "source_url": "https://aca-prod.accela.com/DALLASTX/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Based in Garland. The DallasNow search needs an interactive form postback, so it couldn't be checked automatically. Check it by hand. No state license applies. The 2017 Dallas open-data list has no match. Checked 2026-11-19."
+   },
+   "score": 80
+  },
+  {
+   "name": "Rocky Duron & Associates, Inc.",
+   "base_city": "Dallas",
+   "state": "TX",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Accurate Partitions",
+    "Ampco by AJW",
+    "Bradley",
+    "Bobrick",
+    "Scranton Products",
+    "Metpar",
+    "Ironwood",
+    "Global Partitions",
+    "Knickerbocker",
+    "All American Partitions",
+    "American Sanitary",
+    "Carvart"
+   ],
+   "within_area": "yes",
+   "phone": "214-358-3455",
+   "email": "info@rockyduron.com",
+   "contact_page": "https://www.rockyduron.com/contact",
+   "website": "https://www.rockyduron.com",
+   "evidence_urls": [
+    "https://www.rockyduron.com",
+    "https://www.rockyduron.com/manufacturers"
+   ],
+   "partition_evidence": "Manufacturers page: toilet partition lines 'we supply and install, stocked in Dallas'; homepage says its factory-trained crews install every product line it represents.",
+   "red_flags": [
+    "Sells and stocks partitions (incl. Bobrick, Bradley, Scranton, Metpar): buy-around risk"
+   ],
+   "reason": "Dallas Division 10 contractor that supplies and installs toilet partitions with its own crews on commercial jobs (DFW Airport, Baylor, Marriott Dallas). Strong installer but also a partition dealer.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Rocky Duron & Associates, Inc.",
+    "area": "dallas",
+    "status": "not_online",
+    "registry": "City of Dallas contractor registration (DallasNow, Accela licensee search)",
+    "source_url": "https://aca-prod.accela.com/DALLASTX/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Texas has no state license for partition installation. Dallas requires city contractor registration before building permits (https://dallascityhall.com/departments/sustainabledevelopment/guide). The DallasNow licensee search loads without sign-in, but it returns results only through an interactive ASP.NET form postback, so it couldn't be queried automatically. Check it by hand or call Dallas Development Services at (214) 948-4480, the number the Dallas guide gives. The Dallas Open Data 'Active Contractors' list (jhgk-eg9m) was last updated in 2017, is too old to rely on and has no match. Checked 2026-11-19."
+   },
+   "score": 70
+  },
+  {
+   "name": "D10 Specialties, LLC",
+   "base_city": "Irving",
+   "state": "TX",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [],
+   "within_area": "yes",
+   "phone": "(469) 293-8784",
+   "email": "bids@dtenspecialties.com",
+   "contact_page": "https://dtenspecialties.com/contact",
+   "website": "https://dtenspecialties.com",
+   "evidence_urls": [
+    "https://dtenspecialties.com",
+    "https://dtenspecialties.com/contact"
+   ],
+   "partition_evidence": "Homepage: 'Complete Division 10 restroom packages, furnished and installed'; links a toilet partition page; bid form has 'Partitions & Washroom' scope.",
+   "red_flags": [
+    "Furnish-and-install model: supplies partitions itself",
+    "Second listed email looks like a named person's address; only the bids address is given here"
+   ],
+   "reason": "Irving Division 10 contractor furnishing and installing restroom packages including toilet partitions for commercial and institutional clients across DFW. Google rating shown on site was ambiguous, so it's left out.",
+   "added_by_checker": false,
+   "license": {
+    "name": "D10 Specialties, LLC",
+    "area": "dallas",
+    "status": "not_online",
+    "registry": "City of Dallas contractor registration (DallasNow, Accela licensee search)",
+    "source_url": "https://aca-prod.accela.com/DALLASTX/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Based in Irving, but work inside Dallas city limits needs Dallas registration. The DallasNow search needs an interactive form postback, so it couldn't be checked automatically. Check it by hand. No state license applies. The 2017 Dallas open-data list has no match. Checked 2026-11-19."
+   },
+   "score": 70
+  },
+  {
+   "name": "Chatham Worth Specialties, Inc.",
+   "base_city": "Flower Mound",
+   "state": "TX",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Hadrian",
+    "Moderco",
+    "Thrislington",
+    "Bradley",
+    "Bobrick",
+    "ASI",
+    "Scranton Products",
+    "Ironwood",
+    "Privada",
+    "GP",
+    "JL Industries"
+   ],
+   "within_area": "yes",
+   "phone": "972-241-2331",
+   "email": "estimating@chathamworth.com",
+   "contact_page": "https://chathamworth.com/contact-us/",
+   "website": "https://www.chathamworth.com",
+   "evidence_urls": [
+    "https://www.chathamworth.com"
+   ],
+   "partition_evidence": "Homepage: they 'distribute, sell and install Division 10 commercial construction products in the Dallas Fort Worth area'; toilet partitions are a product category.",
+   "red_flags": [
+    "Distributor of partitions including ASI, Bobrick, Bradley, Scranton: strong buy-around risk"
+   ],
+   "reason": "Large Flower Mound Division 10 distributor and installer of toilet partitions for commercial construction in DFW (48 employees). It installs partitions, but it's a direct supplier of the same brands.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Chatham Worth Specialties, Inc.",
+    "area": "dallas",
+    "status": "not_online",
+    "registry": "City of Dallas contractor registration (DallasNow, Accela licensee search)",
+    "source_url": "https://aca-prod.accela.com/DALLASTX/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Based in Flower Mound. The DallasNow search needs an interactive form postback, so it couldn't be checked automatically. Check it by hand. No state license applies. The 2017 Dallas open-data list has no match. Checked 2026-11-19."
+   },
+   "score": 70
+  },
+  {
+   "name": "Division-X Solutions LLC",
+   "base_city": "unknown (serves DFW and North Texas)",
+   "state": "TX",
+   "verdict": "strong",
+   "installs_partitions": "yes",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley",
+    "Comtec",
+    "Scranton Products",
+    "Hadrian"
+   ],
+   "within_area": "nearby",
+   "phone": "940-277-6904",
+   "email": "Sales@div-x.com",
+   "contact_page": "https://www.div-x.com/quote",
+   "website": "https://www.div-x.com/",
+   "evidence_urls": [
+    "https://www.div-x.com/",
+    "https://www.div-x.com/toiletcompartments"
+   ],
+   "partition_evidence": "Toilet compartments page offers 'Professional Installation' by their own team; homepage says they furnish and install Division 10 products.",
+   "red_flags": [
+    "No street or base city published",
+    "Email link on the site points to a placeholder address (info@mysite.com)",
+    "No completed-project photos, only product images",
+    "Furnishes partitions itself"
+   ],
+   "reason": "Says its own team installs toilet compartments in the DFW area and North Texas, but the base city is unpublished and the site is thin, with no project photos.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Division-X Solutions LLC",
+    "area": "dallas",
+    "status": "not_online",
+    "registry": "City of Dallas contractor registration (DallasNow, Accela licensee search)",
+    "source_url": "https://aca-prod.accela.com/DALLASTX/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Base city unknown. The DallasNow search needs an interactive form postback, so it couldn't be checked automatically. Check it by hand. No state license applies. The 2017 Dallas open-data list has no match. Checked 2026-11-19."
+   },
+   "score": 60
+  },
+  {
+   "name": "Texas Specialties & Installation, Inc.",
+   "base_city": "Grand Prairie",
+   "state": "TX",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Marlite",
+    "Accurate Partitions",
+    "Bobrick",
+    "American Specialties",
+    "Activar"
+   ],
+   "within_area": "yes",
+   "phone": "817-701-4200",
+   "contact_page": "https://www.txspecialties.com/contact-us",
+   "website": "https://www.txspecialties.com/",
+   "evidence_urls": [
+    "https://www.txspecialties.com/",
+    "https://www.txspecialties.com/about-us"
+   ],
+   "partition_evidence": "Supplies toilet partitions and hardware; about page mentions material-and-labor contracts and installation assistance (clients include DFW Airport, Dallas Convention Center, Parkland Hospital).",
+   "red_flags": [
+    "Mainly a materials supplier of partitions: buy-around risk",
+    "No email listed"
+   ],
+   "reason": "Grand Prairie supplier of toilet partitions that has done material-and-labor contracts, but partition installation isn't shown explicitly.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Texas Specialties & Installation, Inc.",
+    "area": "dallas",
+    "status": "not_online",
+    "registry": "City of Dallas contractor registration (DallasNow, Accela licensee search)",
+    "source_url": "https://aca-prod.accela.com/DALLASTX/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Based in Grand Prairie. The DallasNow search needs an interactive form postback, so it couldn't be checked automatically. Check it by hand. No state license applies. The 2017 Dallas open-data list has no match. Checked 2026-11-19."
+   },
+   "score": 50
+  },
+  {
+   "name": "Specialty Building Materials (Klemco)",
+   "base_city": "Dallas",
+   "state": "TX",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "mostly",
+   "sells_partitions": "yes",
+   "brands": [
+    "Wilsonart",
+    "Formica",
+    "Pionite",
+    "Nevamar",
+    "Chemetal",
+    "Octolam"
+   ],
+   "within_area": "yes",
+   "phone": "(972) 241-0183",
+   "contact_page": "https://specialtybuildingmaterialsco.com/contact/",
+   "website": "https://specialtybuildingmaterialsco.com",
+   "evidence_urls": [
+    "https://specialtybuildingmaterialsco.com"
+   ],
+   "partition_evidence": "Homepage: specializes in 'providing and installing high-quality Division 10 specialty items'; sells toilet partitions from major manufacturers and makes custom laminate partitions in-house.",
+   "red_flags": [
+    "Makes its own laminate partitions and resells major brands: buy-around risk",
+    "No email listed"
+   ],
+   "reason": "Dallas Division 10 supplier that says it installs, and partitions are a core product, but no partition installation project was seen.",
+   "added_by_checker": false,
+   "license": {
+    "name": "Specialty Building Materials (Klemco)",
+    "area": "dallas",
+    "status": "not_online",
+    "registry": "City of Dallas contractor registration (DallasNow, Accela licensee search)",
+    "source_url": "https://aca-prod.accela.com/DALLASTX/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y",
+    "note": "Based in Dallas. The DallasNow search needs an interactive form postback, so it couldn't be checked automatically. Check it by hand, searching under both names. No state license applies. The 2017 Dallas open-data list has no match for 'Klemco' or 'Specialty Building'. Checked 2026-11-19."
+   },
+   "score": 45
+  },
+  {
+   "name": "Prestige Distribution, Inc.",
+   "base_city": "Northbrook",
+   "state": "IL",
+   "verdict": "reject",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "brands": [
+    "Thrislington",
+    "Privada",
+    "ASI",
+    "Bradley",
+    "Bobrick",
+    "Hadrian",
+    "JL Industries",
+    "Ketcham",
+    "Koala"
+   ],
+   "within_area": "no",
+   "phone": "(847) 480-7667",
+   "email": "web@prestigedistribution.com",
+   "contact_page": "https://prestigedistribution.com/pages/contact-us",
+   "website": "https://prestigedistribution.com",
+   "evidence_urls": [
+    "https://prestigedistribution.com"
+   ],
+   "partition_evidence": "Calls itself 'Commercial Bathroom Partition Distributor & Installer' with a nationwide contractor network.",
+   "red_flags": [
+    "National partition distributor competing with Next Partitions",
+    "No Dallas office shown on its website; only the Northbrook, IL address",
+    "Installs through subcontracted network, not own local crew"
+   ],
+   "reason": "Illinois-based national distributor with no Dallas office on its site. It's a competitor and installs through a subcontracted network.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 40
+  },
+  {
+   "name": "Post L Group Drywall",
+   "base_city": "Fort Worth",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "phone": "682-312-7888",
+   "email": "bids@postlgroup.com",
+   "contact_page": "https://postlgroup.com/contact/",
+   "website": "https://postlgroup.com",
+   "evidence_urls": [
+    "https://postlgroup.com"
+   ],
+   "partition_evidence": "Drywall and general construction contractor; no toilet partition work mentioned.",
+   "red_flags": [
+    "Drywall contractor, not a partition installer"
+   ],
+   "reason": "Commercial drywall and general contractor with no toilet partition installation on its site.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "PreFab Pros LLC",
+   "base_city": "Cleburne",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "contact_page": "https://prefabpros.com/contact/",
+   "website": "https://prefabpros.com",
+   "evidence_urls": [
+    "https://prefabpros.com"
+   ],
+   "partition_evidence": "Homepage has no mention of toilet partitions; only generic commercial design services.",
+   "red_flags": [
+    "HomeAdvisor badges suggest residential focus",
+    "No phone or address on homepage"
+   ],
+   "reason": "Nothing on its site about toilet partitions or Division 10 work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 20
+  },
+  {
+   "name": "Blue Sky Sales, Inc.",
+   "base_city": "Mesquite",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "website": "https://blueskysalesinc.com/",
+   "evidence_urls": [],
+   "partition_evidence": "Website returned HTTP 503 twice; nothing verified.",
+   "red_flags": [
+    "Website unavailable"
+   ],
+   "reason": "Couldn't verify anything: the site was down and no search budget was left. Recheck later before discarding.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Buffalo Contract Inc",
+   "base_city": "Dallas",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "website": "buffalocontract.com",
+   "evidence_urls": [],
+   "partition_evidence": "Domain did not resolve (DNS failure on both buffalocontract.com and www).",
+   "red_flags": [
+    "Website domain does not resolve"
+   ],
+   "reason": "No evidence: the website doesn't resolve and couldn't be checked otherwise. It may be closed or have moved.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Southwest Architectural Sales LLC",
+   "base_city": "Dallas",
+   "state": "TX",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "yes",
+   "evidence_urls": [],
+   "partition_evidence": "No website given; web search budget was exhausted, so nothing was verified.",
+   "red_flags": [
+    "No website",
+    "Name suggests a sales rep or distributor rather than an installer"
+   ],
+   "reason": "No evidence found. Unverified, needs a manual check.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  }
+ ]
+}

@@ -1,0 +1,182 @@
+{
+ "area": "little-rock",
+ "found_count": 6,
+ "sources_tried": [
+  "Seed file little-rock.json: read; only American Building Specialties and Central Specialty Supply plausible, rest remodelers/plumbers/stores",
+  "Bobrick find-a-rep: page loaded but no Arkansas results rendered (dropdown not readable)",
+  "Scranton Products find-a-rep: 404",
+  "ASI (americanspecialties.com/find-a-rep): redirect then 404",
+  "Hadrian find-a-rep: 404",
+  "Bradley find-a-rep: no content rendered",
+  "General Partitions find-a-rep: 404",
+  "Metpar, Ampco: not tried (search cap and locator failures)",
+  "The Blue Book: search and iProView pages 403 blocked",
+  "Procore network (network.procore.com/us/ar/partitions pages 1-4, little-rock toilet accessories, little-rock compartments): worked, main source",
+  "BuildingConnected: not tried",
+  "WebSearch: 8 of 8 used; results dominated by national online sellers (One Point Partitions, Newton Distributing, toiletpartitions.com), no Little Rock-based dedicated partition installer found",
+  "BBB bathroom accessories category (Beebe): worked, no partition installers",
+  "contractorspecialty.com (Traf-Mark, seed): host blocked by session network, unverified, excluded",
+  "onepointpartitions.com: 403",
+  "abspecialties.net: 503",
+  "Excluded as too far (>120 mi) though listing Arkansas service: Partition Pros (Garland TX), Wood Systems (Tulsa OK), Werco Building Specialties (Baton Rouge LA), Specialized Products Group (Fayetteville AR), Allegheny Construction Specialties (Nashville TN), Newton Distributing (MA, national)"
+ ],
+ "candidates": [
+  {
+   "name": "American Building Specialties",
+   "base_city": "North Little Rock",
+   "state": "AR",
+   "verdict": "possible",
+   "installs_partitions": "likely",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "yes",
+   "brands": [
+    "Bobrick",
+    "Bradley"
+   ],
+   "website": "http://americanbuildingspecialties.blogspot.com/",
+   "evidence_urls": [
+    "http://americanbuildingspecialties.blogspot.com/",
+    "https://talkbusiness.net/2000/08/american-building-specialties/"
+   ],
+   "partition_evidence": "Blog says ABS 'furnishes' toilet partitions and toilet accessories (Bobrick, Bradley) along with doors, hardware, lockers; no installation stated. Blog appears dated ~2011; 2000 Talk Business article places it in North Little Rock as a commercial hardware distributor.",
+   "red_flags": [
+    "Supplier/distributor of partitions (buy-around risk)",
+    "Only web presence is an old blogspot page (~2011); current status unconfirmed",
+    "Contact page returns 404; no phone/email found"
+   ],
+   "reason": "Commercial Division 10 supplier in North Little Rock that furnishes toilet partitions; installation not shown and the business may be inactive. Worth a phone check, but it is also a partition seller.",
+   "added_by_checker": false,
+   "license": {
+    "name": "American Building Specialties",
+    "area": "little-rock",
+    "status": "not_online",
+    "registry": "Arkansas Contractors Licensing Board contractor search (aclb2.arkansas.gov/clbsearch.php), linked from the board's 'Find A Licensed Contractor' page",
+    "source_url": "https://labor.arkansas.gov/licensing/arkansas-contractors-licensing-board/find-a-licensed-contractor/",
+    "note": "Checked 2026-11-19. The board's own lookup page links to http://aclb2.arkansas.gov/clbsearch.php, which did not load from here: HTTP 503 'upstream connect error ... connection timeout' over http, and a connection reset over https. A third-party page mentions a nightly CSV roster from the board, but no contractor roster link appears on labor.arkansas.gov/resources/rosters/ or on the find-a-contractor page. License status is unknown and no license number was found. Two web searches turned up no license record for this name, which does not prove there isn't one. Context: the company's blog (americanbuildingspecialties.blogspot.com) describes it as a supplier of commercial building products, including hollow metal doors and frames, hardware, toilet partitions and accessories, lockers and signage. It lists no city, phone or license number and does not say the company installs. A 2000 Talk Business profile (https://talkbusiness.net/2000/08/american-building-specialties/, per search snippet only, not opened) places it in North Little Rock with a Springdale branch, as a commercial hardware distributor. Arkansas requires a state commercial license only at or above the threshold ($50,000 per the board's law, as summarized in search results). Little Rock contractor cards are issued by the city when permits are pulled, and no public online registry for them was found. Next step: check the ACLB search by hand when it is back up, or call the board (501-372-4661, per search result snippet)."
+   },
+   "score": 50
+  },
+  {
+   "name": "Alford Handyman & Construction",
+   "base_city": "Searcy",
+   "state": "AR",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "mostly",
+   "sells_partitions": "no",
+   "within_area": "nearby",
+   "brands": [],
+   "website": "https://alfordsystems.com",
+   "phone": "501-230-9148",
+   "contact_page": "https://alfordsystems.com/contact/",
+   "evidence_urls": [
+    "https://alfordsystems.com"
+   ],
+   "partition_evidence": "Site lists handyman, remodeling, commercial repair/maintenance and tenant finish; no mention of toilet partitions or Division 10.",
+   "red_flags": [],
+   "reason": "Commercial handyman/tenant-finish firm serving Little Rock, Conway, Cabot and Jacksonville, but no partition work shown. Could be a fallback lead only.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 25
+  },
+  {
+   "name": "One Point Partitions",
+   "base_city": "unknown (national distributor; Little Rock delivery terminal)",
+   "state": "AR",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "yes",
+   "sells_partitions": "yes",
+   "within_area": "regional",
+   "brands": [],
+   "website": "https://onepointpartitions.com/",
+   "evidence_urls": [
+    "https://onepointpartitions.com/service-areas/arkansas-bathroom-partitions/little-rock-bathroom-partitions/",
+    "https://onepointpartitions.com/service-areas/arkansas-bathroom-partitions/"
+   ],
+   "partition_evidence": "Search snippets of its own pages describe it as a bathroom partition distributor (since 2007) with delivery terminals in Little Rock, Fort Smith and Texarkana; site says customers need not pay for professional installation. Site returned 403 to direct fetch.",
+   "red_flags": [
+    "Direct competitor: sells partitions online",
+    "Delivery terminal is a freight terminal, not an office",
+    "Site blocked direct fetch; facts from search snippets only"
+   ],
+   "reason": "Online partition distributor and a direct competitor to Next Partitions, not an installer.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 23
+  },
+  {
+   "name": "All-Star Renovations",
+   "base_city": "Conway",
+   "state": "AR",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "no",
+   "sells_partitions": "no",
+   "within_area": "yes",
+   "brands": [],
+   "website": "https://allstarreno.com",
+   "phone": "(501) 504-3398",
+   "email": "info@allstarreno.com",
+   "contact_page": "https://allstarreno.com/contact",
+   "evidence_urls": [
+    "https://allstarreno.com"
+   ],
+   "partition_evidence": "None; residential bathroom/kitchen remodeling and handyman for homeowners.",
+   "red_flags": [
+    "Residential only"
+   ],
+   "reason": "Residential remodeler for homeowners; no commercial or partition work.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 15
+  },
+  {
+   "name": "Collie's Custom Designs",
+   "base_city": "Ward",
+   "state": "AR",
+   "verdict": "reject",
+   "installs_partitions": "no",
+   "commercial": "unknown",
+   "sells_partitions": "no",
+   "within_area": "nearby",
+   "brands": [],
+   "evidence_urls": [
+    "https://www.bbb.org/us/ar/ward/category/woodworking"
+   ],
+   "partition_evidence": "BBB lists it under ornamental metal work and woodworking; no partition work found, no website.",
+   "red_flags": [
+    "No website",
+    "Category unrelated to partitions"
+   ],
+   "reason": "Ornamental metal/woodworking shop per BBB; no evidence of toilet partition installation.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 10
+  },
+  {
+   "name": "Central Specialty Supply, LLC",
+   "base_city": "Malvern",
+   "state": "AR",
+   "verdict": "reject",
+   "installs_partitions": "unknown",
+   "commercial": "unknown",
+   "sells_partitions": "unknown",
+   "within_area": "nearby",
+   "brands": [],
+   "evidence_urls": [
+    "https://naicslist.com/company-profile/central-specialty-supply-llc-malvern-ar-72104"
+   ],
+   "partition_evidence": "None found. Only aggregator directory listings (NAICS 423440 commercial equipment wholesale, ~2 employees); no website.",
+   "red_flags": [
+    "No website or project evidence",
+    "Directory data conflicting"
+   ],
+   "reason": "No evidence of partition installation; only aggregated directory listings describing a small wholesaler.",
+   "added_by_checker": false,
+   "license": null,
+   "score": 5
+  }
+ ]
+}
