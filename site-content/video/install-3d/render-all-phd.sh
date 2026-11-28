@@ -9,7 +9,13 @@ list=out/chunks/phd-list.txt; : > "$list"
 for ((s = 0; s < DUR; s += STEP)); do
   e=$((s + STEP > DUR ? DUR : s + STEP))
   f=phd-$(printf %03d $s).mp4
-  [ -f out/chunks/$f ] || Q=ao=8 node render.mjs h --page install-phd.html --dpr 1.3333334 --gl 1 --from $s --to $e --name chunks/$f
+  # headless Chromium now and then drops the stage element mid-chunk; retry the chunk instead of stopping the run
+  for try in 1 2 3; do
+    [ -f out/chunks/$f ] && break
+    rm -f out/chunks/$f.part
+    Q=ao=8 node render.mjs h --page install-phd.html --dpr 1.3333334 --gl 1 --from $s --to $e --name chunks/$f || echo "chunk $f failed (try $try)"
+  done
+  [ -f out/chunks/$f ]
   echo "file '$f'" >> "$list"
 done
 ffmpeg -y -loglevel error -f concat -safe 0 -i "$list" -c copy -movflags +faststart out/install-phenolic-1440p.mp4
